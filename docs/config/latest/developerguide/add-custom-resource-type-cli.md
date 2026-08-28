@@ -23,3 +23,7 @@ Ensure you register the resource type `MyCustomNamespace::Testing::WordPress` wi
 
 **Note**
 As defined in the type schema, `writeOnlyProperties` will be removed from the configuration prior to being recorded by AWS Config. This means that these values will not be present when the configuration is obtained from read APIs. For more information on `writeOnlyProperties`, see [Resource type schema](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/resource-type-schema.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

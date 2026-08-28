@@ -123,3 +123,7 @@ As an example, let's say that your game defines difficulty levels: `Novice`, `Ea
 + [GameProperty data type](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_GameProperty.html)
 + [SearchGameSessions() examples](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_SearchGameSessions.html#API_SearchGameSessions_Examples)
 + [UpdateGameSession() GameProperties parameter](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_UpdateGameSession.html#gamelift-UpdateGameSession-request-GameProperties)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

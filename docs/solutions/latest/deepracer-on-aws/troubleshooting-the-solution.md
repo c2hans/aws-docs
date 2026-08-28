@@ -178,3 +178,7 @@ filter @message like /(?i)(Exception|error)/| fields @timestamp, @message | sort
 <a name="using-point-in-time-recovery-to-restore-data-from-a-backup"></a>
 
 DeepRacer on AWS uses an Amazon DynamoDB table that is configured with point-in-time recovery and continuous backups enabled by default. In the event that data in the table is accidentally deleted, lost, or otherwise corrupted, you can use the service’s backup recovery features to restore normal operation. See [Restoring a DynamoDB table from a backup](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Restore.Tutorial.html) for directions on how to restore your table to a certain point using the console or AWS CLI.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

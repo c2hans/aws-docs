@@ -19,3 +19,7 @@ For an interactive workshop using ServiceNow, review the [ServiceNow Connector w
 + [Using service integration features to validate AWS Service Catalog integration in ServiceNow](sn-sc-validate.md)
 + [Viewing products in the Standard User Interface (Fulfiller View)](view-products.md)
 + [Ordering Service Catalog products through the ServiceNow Service portal](service-portal.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

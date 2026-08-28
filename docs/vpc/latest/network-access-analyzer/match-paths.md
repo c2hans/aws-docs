@@ -19,3 +19,7 @@ If a match condition has a destination but no source, it produces findings for t
 If a match condition has both a source and destination, the network path must at the source entry and end at the destination.
 
 If a Network Access Scope has multiple match conditions, it produces findings for any path that satisfies at least one of the match conditions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Virtual Private Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

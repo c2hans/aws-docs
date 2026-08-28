@@ -42,3 +42,7 @@ When you stop a channel, you stop accruing charges for the channel. But you stil
 1. On the **Programs** pane, choose the program or programs, choose **Multiplex actions**, and then choose **Stop channel**.
 
 You can also stop a channel in the multiplex in the same way as you stop a regular channel. For more information, see [Starting, stopping, and pausing a channel](starting-stopping-deleting-a-channel.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

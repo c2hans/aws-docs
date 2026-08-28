@@ -35,3 +35,7 @@ This section describes how to configure Support in Jira Service Management Cloud
 **Note**
 You can use baseline AWS CloudFormation templates for the Connector for JSM Cloud to automate the Support integration features. For more information, see [Setting baseline permissions for AWS Service Management Connector for ServiceNow](sn-base-perms.md).
 To create the required Amazon SQS queue and EventBridge rule, use Connector for JSM Cloud - [AWS Support Commercial Regions](https://servicecatalogconnector.s3.amazonaws.com/SMC_ConnectorforJSMCloud-AWS_Support_Commercial.json) and Connector for Service Management - [AWS Support for GovCloud West Region](https://servicecatalogconnector.s3.amazonaws.com/SMC_ConnectorforJSMCloud-AWS_Support_Gov.json).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

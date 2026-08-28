@@ -35,3 +35,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/php.html
 <a name="php-modules"></a>
 
  AL2023 includes many PHP modules that are included in PHP Core. AL2023 does not aim to include all of the packages in the [PHP Extension Community Library (PECL)](https://pecl.php.net/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

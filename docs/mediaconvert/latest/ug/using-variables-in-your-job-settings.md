@@ -101,3 +101,7 @@ For example, suppose that your video frame height is 720 and you want to specify
 
 **Note**
 Values that are too large to be expressed in the number of digits you specify resolve with more digits.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

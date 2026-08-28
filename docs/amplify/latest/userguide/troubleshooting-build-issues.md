@@ -51,3 +51,7 @@ For a full example of the build specification settings for an Amplify app, see [
 The default build timeout is 30 minutes. You can override the default build timeout using the `_BUILD_TIMEOUT` environment variable. The minimum build timeout is 5 minutes. The maximum build timeout is 120 minutes.
 
 For instructions on setting an environment variable for an app in the Amplify console, see [Setting environment variables](setting-env-vars.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

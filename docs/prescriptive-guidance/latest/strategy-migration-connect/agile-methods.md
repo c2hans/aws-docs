@@ -27,3 +27,7 @@ After teams and stakeholders agree on a multi-phase migration and transformation
 + Creating a DevOps operational runbook.
 
 These elements are the building blocks for delivering operational fundamentals with next-generation capabilities to elevate the customer experience and reduce operational costs. They are the first items to be used by a project, so they should be prioritized. The foundation is the catalyst for additional sprints and becomes the enabler for continuous experimentation and improvement.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,3 +36,7 @@ For more information, see [Tutorial: Create an unmanaged compute environment usi
 **Amazon EKS Auto Mode compatibility**
 AWS Batch does not run jobs on [Amazon EKS Auto Mode](https://docs.aws.amazon.com/eks/latest/userguide/automode.html) worker nodes today — AWS Batch's unmanaged Amazon EKS compute environment requires persistent, customer-labeled nodes, whereas Auto Mode provisions nodes dynamically via Karpenter based on pending-pod pressure.
 An unmanaged Amazon EKS compute environment can coexist with an Amazon EKS cluster that has Auto Mode enabled for other workloads, as long as the AWS Batch compute environment points at a dedicated node group not managed by Auto Mode. Auto Mode will continue to manage the non-AWS Batch workloads independently without interfering with the AWS Batch node group.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

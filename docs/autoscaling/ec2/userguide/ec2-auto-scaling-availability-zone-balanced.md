@@ -20,6 +20,10 @@ During scale in, Auto Scaling removes instances that are not in a reservation fi
 
 The Availability Zone distribution strategy selection is in the **Network** section of the AWS Management Console or you can use the [create-auto-scaling-group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/create-auto-scaling-group.html) or [update-auto-scaling-group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/update-auto-scaling-group.html) commands.
 
-When you choose the **Reservations then balanced** strategy, you must also specify the Capacity Reservations to prioritize, either by Capacity Reservation group or by individual Capacity Reservation ID.
+When you choose the **Reservations then balanced** strategy, you must also specify the Capacity Reservations to prioritize, either by Capacity Reservation Resource Group or by individual Capacity Reservation ID.
 
 For more information, see [Create Auto Scaling groups using launch templates](create-auto-scaling-groups-launch-template.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

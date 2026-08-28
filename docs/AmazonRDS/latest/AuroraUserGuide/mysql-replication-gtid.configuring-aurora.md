@@ -16,3 +16,7 @@ When GTID-based replication is enabled for an Aurora MySQL DB cluster, the GTID 
 1. Associate the DB cluster parameter group with the Aurora MySQL cluster. To do so, follow the procedures in [Parameter groups for Amazon Aurora](USER_WorkingWithParamGroups.md).
 
 1. (Optional) Specify how to assign GTIDs to transactions that don't include them. To do so, call the stored procedure in [mysql.rds\_assign\_gtids\_to\_anonymous\_transactions (Aurora MySQL version 3)](mysql-stored-proc-gtid.md#mysql_assign_gtids_to_anonymous_transactions).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

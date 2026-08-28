@@ -292,3 +292,7 @@ You can use the following optional features when configuring a container fleet:
 + Set up your game servers to access other AWS resources. See [Connect your Amazon GameLift Servers hosted game server to other AWS resources](gamelift-sdk-server-resources.md).
 + Protect game sessions with active players from terminating prematurely during a scale-down event.
 + Limit the number of game sessions that one individual can create on the fleet within a limited span of time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

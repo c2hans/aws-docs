@@ -51,3 +51,7 @@ The fields in the line of code that you added to the `/etc/fstab` file do the fo
 | `x-systemd.automount,x-systemd.requires=network.service` | These options ensure that the auto mounter does not run until the network connectivity is online.For Ubuntu 22.04, use the `x-systemd.requires=systemd-networkd-wait-online.service` option instead of the `x-systemd.requires=network.service` option. |
 | `0` | A value that indicates whether the cache should be backed up by `dump`. This value should be `0`. |
 | `0` | A value that indicates the order in which `fsck` checks caches at boot. For caches, this value should be `0` to indicate that `fsck` should not run at startup. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

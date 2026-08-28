@@ -25,3 +25,7 @@ For instructions about how to set up your AWS Control Tower landing zone, see [G
   + We recommend that you rename the centralized logging AWS account from **Log Archive** to **log-archive-prod**.
   + We recommend that you rename the audit account from **Audit** to **security-tooling-prod**.
 + To help prevent fraud, AWS requires that AWS accounts have a history of use before they can be added to an AWS Control Tower landing zone. If you are using a new AWS account without any usage history, in the new account, you can launch an Amazon Elastic Compute Cloud (Amazon EC2) instance that is not in the AWS Free Tier. Let the instance run for a few minutes and then terminate it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

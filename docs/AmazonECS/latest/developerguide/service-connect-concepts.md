@@ -65,3 +65,7 @@ The behavior of the initial health check accounts for potential delays with reac
 + If a task is `UNHEALTHY`, Amazon ECS may launch replacement tasks. If no healthy tasks are available, your deployment might be rolled back based on your service's configuration.
 
 For all ongoing traffic, Service Connect uses passive health checks based on outlier detection to route traffic efficiently.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

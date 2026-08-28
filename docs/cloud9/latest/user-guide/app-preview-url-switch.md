@@ -10,3 +10,7 @@ source_url: https://docs.aws.amazon.com/cloud9/latest/user-guide/app-preview-url
 To switch to a different preview URL, choose the following option:
 
 On the application preview tab, enter the path to a different URL in the address bar. The address bar is located between the **Refresh** button and the preview type list.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

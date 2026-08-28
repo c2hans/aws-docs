@@ -58,3 +58,7 @@ As a provider, you must identify the attributes in your provider service product
 AWS Entity Resolution has an OpenAPI specification that you as a provider can use as a handshake that contains the APIs involved in the integration. For more information, see [Using the AWS Entity Resolution OpenAPI specification](entity-resolution-open-api.md).
 
 To request the OpenAPI definition, contact the AWS Entity Resolution Business Development team at aws-entity-resolution-bd@amazon.com.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Entity Resolution. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query entityresolution` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

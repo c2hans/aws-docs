@@ -200,7 +200,56 @@ Choose your compute environment from the following installation options.
 ------
 #### [ Amazon EC2 ]
 
-**To install the AWS Workload Credentials Provider on Amazon EC2**
+On Amazon EC2 Linux instances, you can install the AWS Workload Credentials Provider using either the RPM package (available for AL2023) or the manual install script.
+
+**Option A: Install the RPM package (AL2023)**
+
+1.
+
+**Install the package**
+Install the RPM package. The package manager finds the latest version for you:
+
+   ```
+   sudo dnf install aws-workload-credentials-provider
+   ```
+
+   The RPM package automatically sets up the following:
+   + The `aws-wcp` service user, along with the `awscreds` and `aws-wcp-token` groups.
+   + The binary and helper scripts in `/opt/aws/workload-credentials-provider/`.
+   + The AWS Secrets Manager and token systemd services, which it starts automatically.
+   + A random SSRF token at `/var/run/awssmatoken`.
+
+   The Secrets Manager capability is available immediately after install. When you install with the RPM package, the AWS Workload Credentials Provider reads configuration options from the default path `/etc/aws-workload-credentials-provider/config.toml`. To customize the configuration, create or edit that file.
+
+1.
+
+**(Optional) Enable the Certificate Management capability**
+To retrieve and refresh certificates from AWS Certificate Manager, see [Certificate automation](https://docs.aws.amazon.com/acm/latest/userguide/acm-certificate-automation.html) in the *AWS Certificate Manager User Guide*.
+
+1.
+
+**Configure application permissions**
+To allow your application to read the SSRF token file, add the application's user account to the `aws-wcp-token` group:
+
+   ```
+   sudo usermod -aG aws-wcp-token {{APP_USER}}
+   ```
+
+   Replace {{APP\_USER}} with the user ID under which your application runs.
+
+1.
+
+**(Optional) Grant access to provider logs**
+To read provider logs, add your user to the `awscreds` group, and then log out and back in (or run `newgrp awscreds`) for the change to take effect:
+
+   ```
+   sudo usermod -aG awscreds {{APP_USER}}
+   ```
+
+**Uninstall the AWS Workload Credentials Provider**
+To uninstall the AWS Workload Credentials Provider, run `sudo dnf remove aws-workload-credentials-provider`. Uninstalling stops all services and removes the binaries and service units. The uninstall process preserves the `aws-wcp` user, the groups, and the logs directory.
+
+**Option B: Run the install script (any Linux)**
 
 1.
 
@@ -781,3 +830,7 @@ For a local provider architecture, the domain of trust is where the provider end
 
 **Important**
 Security conscious applications that are not already using a provider-based solution with the Secrets Manager credentials locked down to the application should consider using the language-specific AWS SDKs or caching solutions. For more information, see [Get secrets](https://docs.aws.amazon.com/secretsmanager/latest/userguide/retrieving-secrets.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

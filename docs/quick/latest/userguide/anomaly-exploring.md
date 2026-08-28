@@ -24,3 +24,7 @@ The following sections provide detailed information for each aspect of exploring
 + [Setting controls for anomaly detection](exploring-anomalies-controls.md)
 + [Showing and hiding anomalies by date](exploring-anomalies-by-date.md)
 + [Exploring anomalies per category or dimension](exploring-anomalies-per-category-or-dimension.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

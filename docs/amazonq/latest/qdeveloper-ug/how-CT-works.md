@@ -86,3 +86,7 @@ After you review the transformation summary, you can view the changes Amazon Q i
 Depending on the complexity and specifics of your codebase, there might be instances where the transformation is partially successful. This means that Amazon Q was able to transform only certain files or areas of code in your project. In this case, you have to manually update the remaining code for your project to be buildable in the updated language version.
 
 To help transform the rest of your code, you can use Amazon Q chat in the IDE. You can ask Amazon Q to review the partially updated files and provide new code to address issues, such as compilation errors. You can also use features like [Feature development](q-in-IDE-chat.md#develop-code) and [Workspace context](workspace-context.md) to include more of your project as context and get suggestions for multiple files at a time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

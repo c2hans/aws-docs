@@ -25,3 +25,7 @@ To manually remove only the associated on-premises instance tags, see [Manually 
   After you deregister an on-premises instance:
   +  It stops appearing in the console immediately.
   +  You can create another instance with the same name immediately.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

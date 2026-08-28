@@ -43,3 +43,7 @@ If you have additional questions, please contact us through the AWS Support or r
 1. **What are the alternatives customers can explore?** The self-managed version of AWS Mainframe Modernization Service provides runtime functionality for both Rocket Software (replatform) and AWS Transform for mainframe (refactor) capabilities.
 
 1. **How can customers migrate off of AWS Mainframe Modernization Service (Managed Runtime Environment experience)?** Customers using the managed runtime today will continue to be supported. To migrate existing environments, AWS ProServe can be enlisted to assist with the transition to using self-managed options.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

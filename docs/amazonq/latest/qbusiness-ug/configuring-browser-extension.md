@@ -88,3 +88,7 @@ After enabling the browser extension, complete these steps to activate and deplo
    1. Edge policy settings: [https://learn.microsoft.com/en-us/DeployEdge/microsoft-edge-policies\#extensionsettings](https://learn.microsoft.com/en-us/DeployEdge/microsoft-edge-policies#extensionsettings) and guide: [https://learn.microsoft.com/en-us/deployedge/microsoft-edge-manage-extensions-ref-guide](https://learn.microsoft.com/en-us/deployedge/microsoft-edge-manage-extensions-ref-guide)
 
 1. Provide your selected users the browser store URL \+ Web experience URL so they can download and install the browser extension and connect to Amazon Q.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

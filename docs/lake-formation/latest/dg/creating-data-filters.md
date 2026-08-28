@@ -78,3 +78,7 @@ You can create one or more data filters for each Data Catalog table.
 1. Choose **Create filter**.
 
    When you grant `SELECT` permission on this filter, the principal receives access to all rows in the `customerName`, and `customerId` fields except the cell where the value is 5 in the `customerId` column.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

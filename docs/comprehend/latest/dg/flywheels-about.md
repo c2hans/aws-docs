@@ -71,3 +71,7 @@ When you obtain new training or test data for a flywheel model, you create one o
 You then run the flywheel to create a new flywheel iteration. The flywheel iteration evaluates the current active model version using the new data and stores the results in the data lake. The flywheel also creates and trains a new model version.
 
  If the new model exhibits better performance than the current active model version, you can promote the new model version to be the active model version. You can use the [ console](flywheels-iterate.md#flywheels-iterate-console-promote) or the [UpdateFlywheel](https://docs.aws.amazon.com/comprehend/latest/APIReference/API_UpdateFlywheel.html) API operation to update the active model version.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

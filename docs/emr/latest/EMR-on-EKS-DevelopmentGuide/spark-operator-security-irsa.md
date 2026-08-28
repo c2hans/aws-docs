@@ -258,3 +258,7 @@ INFO DAGScheduler: Job 0 finished: collect at JavaWordCount.java:53, took 5.1465
 ```
 
 For more information on how to submit applications to Spark through the Spark operator, see [Using a SparkApplication](https://www.kubeflow.org/docs/components/spark-operator/user-guide/using-sparkapplication/) in the *Kubernetes Operator for Apache Spark (spark-on-k8s-operator)* documentation on GitHub.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

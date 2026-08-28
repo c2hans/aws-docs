@@ -22,3 +22,7 @@ Your AWS account has the following quotas related to the AWS Marketplace Discove
 | ListFulfillmentOptions | 5 per second |
 | SearchListings | 10 per second |
 | SearchFacets | 10 per second |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

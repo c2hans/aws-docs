@@ -53,3 +53,7 @@ The following table describes the releases for AWS Direct Connect. For notificat
 | [Support for the EU (Ireland), Asia Pacific (Singapore), and Asia Pacific (Tokyo) Regions](#AboutThisGuide) | Added a new troubleshooting section and updated topics to include the addition of four new Direct Connect locations serving the US West (Northern California), EU (Ireland), Asia Pacific (Singapore), and Asia Pacific (Tokyo) Regions. | January 10, 2012 |
 | [Support for the US West (Northern California) Region](#AboutThisGuide) | Updated topics to include the addition of the US West (Northern California) Region. | September 8, 2011 |
 | [Public release](#AboutThisGuide) | The first release of Direct Connect. | August 3, 2011 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ Security is a shared responsibility between AWS and you. The [shared responsibil
 + **Security in the cloud** – Your responsibility is determined by the AWS service that you use. You are also responsible for other factors including the sensitivity of your data, your company’s requirements and applicable laws and regulations.
 
 Because Amazon Nova is available through Amazon Bedrock, follow all security guidance at [Security in Amazon Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/security.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

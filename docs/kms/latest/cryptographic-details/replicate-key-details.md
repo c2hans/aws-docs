@@ -20,3 +20,7 @@ The cross-Region replication process to copy key material from Region A to Regio
 1. The HSM in Region B receives the public component of RAKA and the key material encrypted using the RWK. The HSM derives by RWK by running the ECDH key establishment scheme on RAKB and the public component of RAKA.
 
 1. The HSM in Region B use the RWK to decrypt the key material from Region A.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ By default, users and roles have no permissions. An IAM administrator creates IA
 + [Identity-Based Policies](security_iam_access-manage-id-based-policies.md)
 + [Other Policy Types](security_iam_access-manage-other-policies.md)
 + [Multiple Policy Types](security_iam_access-manage-multiple-policies.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,3 +31,7 @@ The following table describes the major updates and new features for the *Amazon
 | [New topic](#doc-history) | This user guide now includes a tutorial that shows you how to create a repository association with a GitHub repository that has example code. The example code is intentionally suboptimal, so CodeGuru Reviewer generates a recommendation on a pull request you create. For more information, see [Tutorial: monitor source code in a GitHub repository](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/tutorial-github-reviewer.html). | June 19, 2020 |
 | [New topic](#doc-history) | This user guide now includes a security section. Learn about data retention, IAM policies, monitoring your profiling groups with AWS CloudTrail, and more. For more information, see [Security in CodeGuru Reviewer](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/security.html). | June 11, 2020 |
 | [Preview release](#doc-history) | This is the preview release of the *Amazon CodeGuru Reviewer User Guide*. | December 3, 2019 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -189,3 +189,7 @@ Following are common issues you might encounter and suggestions for resolving th
   + Make sure the user is added to the Wickr application you registered in Microsoft Entra.
   + Make sure the user is using the correct company ID, including the prefix. *E.g. UE1-DemoNetworkW\_drqtva*.
   + The **Client Secret** may not be set correctly in the **AWS Wickr SSO Configuration**. Re-set it by creating another **Client secret** in Microsoft Entra and set the new **Client secret** in the **Wickr SSO Configuration**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

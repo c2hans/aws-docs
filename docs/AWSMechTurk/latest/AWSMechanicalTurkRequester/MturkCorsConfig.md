@@ -39,3 +39,7 @@ You can add a CORS policy to an S3 bucket that contains input data in the S3 con
 The following image demonstrates the instructions found in the Amazon S3 documentation to add a CORS header policy using the Amazon S3 console. For procedures on adding a CORS configuration to an S3 bucket using the S3 console, AWS SDKs, and REST API, see [Configuring cross-origin resource sharing (CORS)](https://docs.aws.amazon.com/AmazonS3/latest/userguide/enabling-cors-examples.html) in the Amazon Simple Storage Service User Guide.
 
 ![](http://docs.aws.amazon.com/AWSMechTurk/latest/AWSMechanicalTurkRequester/images/cors-config.gif)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

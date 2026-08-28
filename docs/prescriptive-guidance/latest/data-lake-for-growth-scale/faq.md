@@ -26,3 +26,7 @@ The data lake reference architecture would benefit your organization in the long
 <a name="should-my-organization-follow-the-onboarding-and-access-granting-workflow-without-making-changes-to-it-.2cf0f6f6-5b1b-5cb6-9115-11bb073691a8"></a>
 
 No, the main purpose of that section is to illustrate the logical activity blocks required during the onboarding process. All organizations should customize the process and might even have multiple processes, depending on the sensitivity of their data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

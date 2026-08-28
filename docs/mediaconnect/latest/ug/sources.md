@@ -24,3 +24,7 @@ From the MediaConnect console, you can view Amazon CloudWatch metrics to [monito
 + [Removing a source from a MediaConnect flow](source-remove.md)
 + [Source ports on MediaConnect flows](source-ports.md)
 + [Determining a source's peer IP address](source-ip-address.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

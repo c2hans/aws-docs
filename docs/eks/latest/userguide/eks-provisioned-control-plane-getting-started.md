@@ -310,3 +310,7 @@ Response:
 1. Select the control plane scaling tier that you would like to provision for the cluster from various scaling tier options such as XL, 2XL, 4XL, and 8XL.
 
 1. Select other cluster configuration options as needed. On the final step select **Create cluster**. Note it may take several minutes for cluster creation to complete.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

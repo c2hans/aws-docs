@@ -26,3 +26,7 @@ Slurm must already be installed on the instance (equivalent to [step 3](working-
 + [Prerequisites for the AWS PCS multi-cluster login node configuration script](multi-cluster-login-script-prerequisites.md)
 + [AWS PCS multi-cluster login node configuration script code](multi-cluster-login-script-code.md)
 + [Using the AWS PCS multi-cluster login node configuration script](multi-cluster-login-script-usage.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

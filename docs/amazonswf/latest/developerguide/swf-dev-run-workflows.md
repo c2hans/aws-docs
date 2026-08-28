@@ -16,3 +16,7 @@ A workflow execution can be started by any process or application, even another 
 With Amazon SWF, you can associate an identifier—called a `workflowId`—with your workflow executions, so you can integrate your existing business identifiers into your workflow. In the e-commerce example, each workflow execution might be identified using the customer invoice number.
 
 In addition to the identifier that you provide, Amazon SWF associates a unique system-generated identifier—a `runId`—with each workflow execution. Amazon SWF allows only one workflow execution with this identifier to run at any given time; although you can have multiple workflows executions of the same workflow type, each workflow execution has a distinct `runId`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

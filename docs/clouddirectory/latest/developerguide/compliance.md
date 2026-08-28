@@ -21,3 +21,7 @@ Amazon Cloud Directory has undergone auditing for the following standards and ca
 <a name="compliance_sharedresponsibility"></a>
 
 Security, including HIPAA and PCI compliance, is a [shared responsibility](https://aws.amazon.com/compliance/shared-responsibility-model/). It is important to understand that Cloud Directory compliance status does not automatically apply to applications that you run in the AWS Cloud. You must ensure that your use of AWS services complies with the standards.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

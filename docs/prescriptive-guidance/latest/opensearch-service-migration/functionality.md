@@ -33,3 +33,7 @@ OpenSearch has several plugins that provide enterprise-grade features equivalent
 <a name="custom-plugins"></a>
 
 At the time of writing this guide, custom plugins are not supported. Therefore, you will need to consider alternate ways to deliver the custom plugin function and experience. If your solution uses custom plugins, analyze the functionality to determine whether you can port the custom plugins to the target environment using Amazon OpenSearch Service supported plugins or native features within OpenSearch. We recommend testing and proving all plugin choices during the PoC stage. Migration is a good time to evaluate current solution functionality to determine whether it is critical to your business.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

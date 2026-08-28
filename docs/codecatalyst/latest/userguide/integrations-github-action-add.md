@@ -92,3 +92,7 @@ For a tutorial that shows you how to use the **GitHub Actions** action, see [Tut
 <a name="integrations-github-action-add-definition"></a>
 
 The **GitHub Actions** action is defined as a set of YAML properties inside your workflow definition file. For information about these properties, see ['GitHub Actions' action YAML](github-action-ref.md) in the [Workflow YAML definition](workflow-reference.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -145,3 +145,7 @@ You can display a list of all your user’s devices and their properties. For ex
 You can delete a user’s device key. You might want to do this when you determine that your user no longer uses a device, or when you detect unusual activity and want to prompt a user to complete MFA again. To register the device again later, you must generate and store a new device key.
 + In a public-client app, submit your user’s device key and access token in [ForgetDevice](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_ForgetDevice.html) API request.
 + In a confidential-client app, submit your user’s device key and access token in [AdminForgetDevice](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminForgetDevice.html) API request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

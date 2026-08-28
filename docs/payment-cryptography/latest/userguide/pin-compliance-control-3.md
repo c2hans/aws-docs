@@ -16,3 +16,7 @@ When exchanging public keys with your business partners using asymmetric methods
 *Requirement 10:* The service enforces relative key strength of protecting keys for conveyance. You are responsible for key conveyance prior to import to and after export from AWS Payment Cryptography and using API and TR-31 parameters that are accurate for key import, export, and generation. You should have documented procedures to describe the key conveyance mechanisms and the list of cryptographic keys used for the conveyance.
 
 *Requirement 11:* Documentation of your procedures must specify how keys are conveyed. Procedures for key conveyance using the AWS Payment Cryptography API should include use of roles with key import and export permissions and approvals for running scripts or other code that creates keys. AWS CloudTrail logs contain all [ImportKey](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_ImportKey) and [ExportKey](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_ExportKey) events.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

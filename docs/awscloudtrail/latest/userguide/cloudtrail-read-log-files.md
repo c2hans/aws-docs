@@ -34,3 +34,7 @@ AWS partners with third-party specialists in logging and analysis to provide sol
 **Note**
 You can also use the **Event history** feature to look up events for create, update, and delete API activity during the last 90 days.
 For more information, see [Working with CloudTrail event history](view-cloudtrail-events.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

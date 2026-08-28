@@ -44,3 +44,7 @@ You can only upgrade packs that are enabled. To find the list of packs that are 
 1. When you're done deploying new versions, choose **Done**.
 
 If you're experiencing problems upgrading the packs, see [Unable to deploy packs to SiteWise Edge gateways](troubleshooting-gateway.md#gateway-issue-ggv2-packs).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

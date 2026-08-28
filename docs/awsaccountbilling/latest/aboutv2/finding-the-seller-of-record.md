@@ -58,3 +58,7 @@ If you have questions about your SOR, create an **Account and billing** [support
 For more information about tax help, see [Amazon Web Services Tax Help](https://aws.amazon.com/tax-help).
 
 For more information about the AWS Customer Agreement, see the [AWS Customer Agreement](https://aws.amazon.com/agreement).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

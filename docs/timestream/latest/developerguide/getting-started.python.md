@@ -15,3 +15,7 @@ Once you've completed the necessary prerequisites for the Python SDK, you can ge
 <a name="getting-started.python.prereqs"></a>
 
 To use Python, install and configure Boto3, following the instructions [here](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

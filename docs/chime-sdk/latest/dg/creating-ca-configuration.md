@@ -26,3 +26,7 @@ The following sections explain the prerequisites for creating a call analytics c
 For more information about call analytics configurations, refer to [Managing call analytics](https://docs.aws.amazon.com/chime-sdk/latest/ag/ag-call-analytics.html) in the *Amazon Chime SDK Administrator Guide*.
 
 For more information about using call analytics configurations to enable different workflows, refer to [Using call analytics configurations for the Amazon Chime SDK](using-call-analytics-configurations.md), later in this section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

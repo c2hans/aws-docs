@@ -197,3 +197,7 @@ We're returning `Person` with a `name` and `age` fields. When running this query
 ![Query tree diagram showing Person object with name and age fields as child nodes.](http://docs.aws.amazon.com/appsync/latest/devguide/images/ast-1.png)
 
 From the tree, it appears that this request will search the root for the `Query` in the schema. Inside of the query, the `Person` field will be resolved. From previous examples, we know that this could be an input from the user, a list of values, etc. `Person` is most likely tied to an object type holding the fields we need (`name` and `age`). Once these two child fields are found, they are resolved in the order given (`name` followed by `age`). Once the tree is completely resolved, the request is completed and will be sent back to the client.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

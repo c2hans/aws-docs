@@ -59,3 +59,7 @@ Verify that logging is turned on to assist in identifying the cause of failure. 
 + Yes/No splits based on an event criterion and following custom AWS Lambda activities have an implicit wait time of 15 minutes to accrue and process the event outcomes.
 + Yes/No splits based on an event criterion and following channel activities (SMS, EMAIL, PNS) have a wait time of 1 hour to accrue and process the delivery event statuses for channel message deliveries.
 + Only standard events specific to channel delivery statuses are supported for Yes/No splits.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

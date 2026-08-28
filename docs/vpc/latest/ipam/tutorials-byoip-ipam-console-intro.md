@@ -17,3 +17,7 @@ Once you bring an IPv4 address range to AWS, you can use all of the IP addresses
 **Topics**
 + [Bring your own IPv4 CIDR to IPAM using both the AWS Management Console and the AWS CLI](tutorials-byoip-ipam-console-ipv4.md)
 + [Bring your own IPv6 CIDR to IPAM using the AWS Management Console](tutorials-byoip-ipam-console-ipv6.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

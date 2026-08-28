@@ -484,3 +484,7 @@ You can use the following example CloudFormation template for creating a Systems
 **Automation for an Amazon EC2 automatic scaling trigger**
 
 The process of setting up a scaling policy for Enterprise Server instances requires an understanding of the application behavior. In most cases, you can set up target tracking scaling policies. For example, you can use the average CPU utilization as the Amazon CloudWatch metric to set for the automatic scaling policy. For more information, see [Target tracking scaling policies for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scaling-target-tracking.html). For applications that have regular traffic patterns, consider using a predictive scaling policy. For more information, see [Predictive scaling for Amazon EC2 Auto Scaling](https://docs.aws.amazon.com/autoscaling/ec2/userguide/ec2-auto-scaling-predictive-scaling.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

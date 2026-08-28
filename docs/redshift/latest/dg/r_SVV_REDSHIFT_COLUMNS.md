@@ -58,3 +58,7 @@ database_name | schema_name |       table_name      | column_name | ordinal_posi
    tickit_db  |   public    | tickit_sales_redshift |   eventid   |        5         |  integer  |                |      NO     |   az64   |  False  |    0    |	      |
    tickit_db  |   public    | tickit_sales_redshift |   listid    |        2         |  integer  |                |      NO     |   az64   |  True   |    0    |             |
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

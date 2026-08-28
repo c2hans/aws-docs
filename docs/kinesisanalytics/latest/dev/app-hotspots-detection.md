@@ -64,3 +64,7 @@ The exercise uses the US West (Oregon) (`us-west-2`) to create these streams and
 + [Step 2: Create the Kinesis Data Analytics Application](app-hotspot-create-app.md)
 + [Step 3: Configure the Application Output](app-hotspots-create-ka-app-config-destination.md)
 + [Step 4: Verify the Application Output](app-hotspots-verify-output.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

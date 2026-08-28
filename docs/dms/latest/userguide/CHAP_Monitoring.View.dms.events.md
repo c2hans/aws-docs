@@ -101,3 +101,7 @@ The following sample output shows the status of a replication instance:
 <a name="CHAP_Monitoring.View.dms.events.api"></a>
 
 You can view all AWS DMS instance events for the past 14 days by running the `[DescribeEvents](https://docs.aws.amazon.com/dms/latest/APIReference/API_DescribeEvents.html)` DMS API operation and setting the `--duration` parameter to **20160**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

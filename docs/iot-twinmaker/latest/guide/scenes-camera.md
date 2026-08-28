@@ -23,3 +23,7 @@ You can attach fixed camera views to your entities within your AWS IoT TwinMaker
 1. To access your camera after you have placed it. Select the entity you added the camera to in the hierarchy. Look for the camera name listed under the entity.
 
 1. Once you select the placed camera from your entity, the scenes camera view will snap to the set perspective of the placed camera.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

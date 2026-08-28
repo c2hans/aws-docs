@@ -151,3 +151,7 @@ The following tables list the checksums for recent versions of the installers. R
 | Slurm 23.11.10-2 (deprecated) |  <pre>https://aws-pcs-repo-{{us-east-1}}.s3.{{us-east-1}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-23.11-installer-23.11.10-2.tar.gz</pre>  |  <pre>0bbe85423305c05987931168caf98da08a34c25f9eec0690e8e74de0b7bc8752</pre>  |
 | Slurm 23.11.10-1 (deprecated) |  <pre>https://aws-pcs-repo-{{us-east-1}}.s3.{{us-east-1}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-23.11-installer-23.11.10-1.tar.gz</pre>  |  <pre>27e8faa9980e92cdfd8cfdc71f937777f0934552ce61e33dac4ecf5a20321e44</pre>  |
 | Slurm 23.11.9-1 (deprecated) |  <pre>https://aws-pcs-repo-{{us-east-1}}.s3.{{us-east-1}}.amazonaws.com/aws-pcs-slurm/aws-pcs-slurm-23.11-installer-23.11.9-1.tar.gz</pre>  |  <pre>1de7d919c8632fe8e2806611bed4fde1005a4fadc795412456e935c7bba2a9b8</pre>  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

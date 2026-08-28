@@ -277,3 +277,7 @@ Now that you have added the resource-based policy to your custom model, you have
 + If your model is encrypted with a customer managed key, then you must provide the ARN of the KMS key. Anyone who imports your model must include the ARN in an IAM service role in their AWS account. This role authorizes Amazon Comprehend to use the KMS key to decrypt the model during the import.
 
 For more information about how other users import your model, see [Importing a custom model from another AWS account](custom-copy-importing.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ The following topics include information for troubleshooting and debugging App S
 + [Troubleshooting in the Testing environment](troubleshooting-testing.md)
 + [Debugging with logs from published apps in Amazon CloudWatch Logs](troubleshooting-cloudwatch.md)
 + [Troubleshooting connectors](troubleshooting-connectors.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

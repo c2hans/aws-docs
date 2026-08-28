@@ -242,3 +242,7 @@ GET /audit/backup-job-summaries/
 ```
 
 To obtain a job count for jobs with a status of `completed with issues`, subtract the job count of `COMPLETED` jobs with a `MessageCategory` of `SUCCESS` from the total number of `COMPLETED`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

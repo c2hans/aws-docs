@@ -22,3 +22,7 @@ The use of hard links in a file system that has data repository associations (DR
 Deleting and recreating a released file that has multiple hard links may cause the content of all hard links to be overwritten.
 Deleting a released file will delete content from all hard links that reside outside of a data repository association.
 Creating a hard link to a released file whose corresponding S3 object is in either of the S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive storage classes will not create a new object in S3 for the hard link.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

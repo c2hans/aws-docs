@@ -86,3 +86,7 @@ Each device that receives an OTA update using HTTP must be registered as a thing
 + The `iot:Connect` permissions allow your device to connect to AWS IoT over MQTT.
 + The `iot:Subscribe` and `iot:Publish` permissions on the topics of AWS IoT jobs (`.../jobs/*`) allow the connected device to receive job notifications and job documents, and to publish the completion state of a job execution.
 + The `iot:Receive` permissions allow AWS IoT Core to publish messages on those topics to the current connected device. This permission is checked on every delivery of an MQTT message. You can use this permission to revoke access to clients that are currently subscribed to a topic.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

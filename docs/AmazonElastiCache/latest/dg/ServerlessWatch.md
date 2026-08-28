@@ -70,3 +70,7 @@ Every client connection can watch up to 1000 keys at the same time.
 <a name="SupportedCommandsWatch"></a>
 
 [WATCH](https://valkey.io/commands/watch/) and [UNWATCH](https://valkey.io/commands/unwatch/) commands are documented on the [Valkey.io](https://valkey.io/) website. It provides a comprehensive overview of the commands, including its syntax, behavior, return values, and potential error conditions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

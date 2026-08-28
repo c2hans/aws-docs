@@ -357,3 +357,7 @@ On Hold
    1.  Make sure that you’ve repeated these steps for all required fields: Name, Label, Display Name, and Extends table.
 
 1.  Repeat the steps from 4.1 on Change, Incident, and any other non-CMDB tables that you want to query from Grafana. Do not repeat the steps from 4.2; that step is only required for sys\_db\_object.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

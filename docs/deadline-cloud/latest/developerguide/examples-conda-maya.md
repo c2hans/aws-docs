@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 # Build an Autodesk Maya conda package for Deadline Cloud
 <a name="examples-conda-maya"></a>
 
-The samples repository includes the following Maya conda recipes. Each recipe configures the `MAYA_MODULE_PATH` environment variable so that Maya loads plugin `.mod` files placed in the standard plugin paths:
+The samples repository on the GitHub website includes the following Maya conda recipes. Each recipe configures the `MAYA_MODULE_PATH` environment variable so that Maya loads plugin `.mod` files placed in the standard plugin paths:
 
-[maya-2025](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-2025), [maya-2026](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-2026)
-Recipes for Autodesk Maya 2025 and 2026.
+[maya-2025](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-2025), [maya-2026](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-2026), [maya-2027](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-2027)
+Recipes for Autodesk Maya 2025, 2026, and 2027.
 
-[maya-mtoa-2025](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-mtoa-2025), [maya-mtoa-2026](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-mtoa-2026)
+[maya-mtoa-2025](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-mtoa-2025), [maya-mtoa-2026](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-mtoa-2026), [maya-mtoa-2027](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-mtoa-2027)
 Maya to Arnold (MtoA) renderer plugin. The MtoA package also provides the `kick` standalone renderer, which the [Render Arnold .ass files on Deadline Cloud](examples-jb-arnold-render.md) bundle uses.
 
 [maya-vray-2025](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-vray-2025), [maya-vray-2026](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-vray-2026), [maya-vray-7.2-2025](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-vray-7.2-2025), [maya-vray-7.2-2026](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-vray-7.2-2026)
@@ -36,3 +36,7 @@ Submit the build:
 ```
 
 For details on the Maya packaging approach, see the [maya-2026 recipe README](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/maya-2026).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

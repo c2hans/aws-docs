@@ -79,8 +79,8 @@ To run a penetration test with a VPC, your Agent Space service role must include
 }
 ```
 
-## To select a specific VPC configuration for a Continuum penetration test in the Security Agent web application
-<a name="_to_select_a_specific_vpc_configuration_for_a_continuum_penetration_test_in_the_security_agent_web_application"></a>
+## To select a specific VPC configuration for a penetration test in the Security Agent web application
+<a name="_to_select_a_specific_vpc_configuration_for_a_penetration_test_in_the_security_agent_web_application"></a>
 
 1. Navigate to the Penetration Tests overview page
 
@@ -95,8 +95,8 @@ To run a penetration test with a VPC, your Agent Space service role must include
 **Note**
 Cross-account penetration testing is currently supported for VPC resources (subnets and security groups) shared using AWS Resource Access Manager. Secrets Manager secrets and Lambda functions used for authentication credentials must be configured in the same AWS account as your AWS Security Agent setup.
 
-## Running a Continuum penetration test against VPC resources in another AWS account
-<a name="_running_a_continuum_penetration_test_against_vpc_resources_in_another_aws_account"></a>
+## Running a penetration test against VPC resources in another AWS account
+<a name="_running_a_penetration_test_against_vpc_resources_in_another_aws_account"></a>
 
 You can run penetration tests against VPC resources shared with your account using AWS Resource Access Manager. Both accounts must be part of the same AWS Organization.
 
@@ -130,3 +130,7 @@ aws ram create-resource-share \
 1. Select the penetration test that you need to add VPC configuration for, and then choose **Modify pentest details**
 
 1. Update the penetration test to use the shared VPC resources
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

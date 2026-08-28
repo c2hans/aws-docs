@@ -18,3 +18,7 @@ You can request a custom IAM role with the Deployment \| Advanced stack componen
 
 **Note**
 AMS has an IAM policy, `customer_deny_policy` that blocks out dangerous namespaces and actions. This policy is attached to all AMS customer roles by default and is rarely a problem for users. Your IAM user and role requests don't include this policy, but automatic inclusion of the `customer_deny_policy` in requests for IAM roles helps AMS deploy new IAM instance profiles more quickly. You can request the exclusion of the `customer_deny_policy` policy. However, this request will go through a weighty security review and is likely to be declined due to security reasons.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

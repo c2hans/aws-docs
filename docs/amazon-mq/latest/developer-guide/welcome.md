@@ -62,3 +62,7 @@ To learn about Amazon MQ AWS CLI commands, see [Amazon MQ in the *AWS CLI Comman
 We welcome and encourage your feedback on the documentation. You can use the thumbs up and thumbs down icons on the right hand side to submit feedback, or you can use the "Provide feedback" form linked below.
 
 To contact the Amazon MQ team, use the [Amazon MQ Discussion Forum](https://forums.aws.amazon.com/forum.jspa?forumID=279).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -93,3 +93,7 @@ For more information on allocating IP addresses, see [IP addressing](https://doc
 **IPv6 Support:**
 
  Amazon Redshift Serverless supports configuring your Amazon Redshift workgroups with both IPv4 and IPv6 addresses (dual-stack) or IPv4-only configurations within your AWS Virtual Private Clouds (VPCs). You can enable IPv6 support when creating new Amazon Redshift Serverless workgroups or modify existing workgroups to support IPv6 addressing. With this capability, you can deploy Amazon Redshift Serverless warehouses in IPv6-enabled VPC subnets and configure network settings to support the expanding address space requirements of your applications. Your applications can now communicate with Amazon Redshift Serverless warehouses using either IPv4 or IPv6 protocols, ensuring compatibility with both existing and future network architectures.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

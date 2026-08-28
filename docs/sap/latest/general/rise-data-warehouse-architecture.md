@@ -49,3 +49,7 @@ Delta data loaded into S3 via Glue job is used to generate Slowly Changing Dimen
 Architected data mart models are created using Materialized Views in Redshift. Transactional data is enriched with master data (attributes and text), building data models that are ready for data consumption.
 
 The [Building SAP Data Warehouse on AWS Solution Guidance](https://aws.amazon.com/solutions/guidance/building-a-sap-cloud-data-warehouse-on-aws/) provides a detailed architecture, steps to implement and accelerators to fast track the implementation of a Data Warehouse for SAP.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

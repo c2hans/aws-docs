@@ -28,3 +28,7 @@ For information about tagging KMS keys, see [Tags in AWS KMS](https://docs.aws.a
 1. In the **Session preferences** section, select **Edit**.
 
 1. Update your general and logging preferences as needed and select **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

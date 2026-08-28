@@ -203,3 +203,7 @@ The base image of the Windows Server Core 2019 contains the following runtimes.
 | powershell | 7.1 | 7.2 | 7.4 |
 | python | 3.8 | 3.10 | 3.10<br />3.11<br />3.12<br />3.13 |
 | ruby | 2.7 | 3.1 | 3.2<br />3.3<br />3.4 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

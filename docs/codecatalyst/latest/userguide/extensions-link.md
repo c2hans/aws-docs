@@ -187,3 +187,7 @@ After linking your Jira project to your CodeCatalyst project, and linking a pull
 <a name="extensions-link-repositories-creation"></a>
 
 You can link a GitHub repository, Bitbucket repository, or GitLab project respository to a new CodeCatalyst project when creating the new CodeCatalyst project. For more information, see [Creating a project with a linked third-party repository](projects-create.md#projects-create-3p-repo).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

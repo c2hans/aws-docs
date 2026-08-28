@@ -21,3 +21,7 @@ For more information about working with the directory buckets in Local Zones, se
 + [Private connectivity from your VPC](connectivity-lz-directory-buckets.md)
 + [Creating a directory bucket in a Local Zone](create-directory-bucket-LZ.md)
 + [Authenticating and authorizing for directory buckets in Local Zones](iam-directory-bucket-LZ.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

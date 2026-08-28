@@ -59,3 +59,7 @@ Please check the following for further details:
 + [Attribution](https://docs.aws.amazon.com/location/latest/developerguide/data-attribution.html): Information on data attribution requirements for Amazon Location Service.
 + [SLA](https://aws.amazon.com/location/sla/): The service level agreement for Amazon Location Service, including uptime commitments and response times.
 + [Service Terms](https://aws.amazon.com/service-terms/): Terms governing the use of Amazon Location Service, including restrictions and limitations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

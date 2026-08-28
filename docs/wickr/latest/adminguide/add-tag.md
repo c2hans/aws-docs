@@ -18,3 +18,7 @@ Complete the following procedure to add a tag to your Wickr network. For more in
 1. In the blank **Key** and **Value** fields that appear, enter the new tag key and value.
 
 1. Choose **Save changes** to save the new tags.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

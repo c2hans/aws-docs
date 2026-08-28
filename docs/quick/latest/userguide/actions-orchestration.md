@@ -153,3 +153,7 @@ Best practices for handling HITL resolution:
 + Structure your logic to handle both new cases and those returning from HITL
 + Consider implementing different processing paths based on human decisions
 + Include error handling for missing or invalid resolution data
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

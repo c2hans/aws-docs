@@ -84,3 +84,7 @@ Query OK, 0 rows affected (0.22 sec)
 Use double quotation marks with `SELECT` for cleaner display. Otherwise, messages are displayed twice, both as header and value.
 
 For more information, see [SELECT Statement](https://dev.mysql.com/doc/refman/5.7/en/select.html) in the *MySQL documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ Users in self-moderated group conversations and moderators of room conversations
 + [Navigate between folders in the Wickr client](navigate-between-folders.md)
 + [Move a file or folder in the Wickr client](move-folder.md)
 + [Remove a folder or file in the Wickr client](remove-folder.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

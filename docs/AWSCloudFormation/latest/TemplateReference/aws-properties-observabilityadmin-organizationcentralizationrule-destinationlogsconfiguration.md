@@ -21,7 +21,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 {
   "[BackupConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration-backupconfiguration)" : {{LogsBackupConfiguration}},
   "[LogGroupNameConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration-loggroupnameconfiguration)" : {{LogGroupNameConfiguration}},
-  "[LogsEncryptionConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration-logsencryptionconfiguration)" : {{LogsEncryptionConfiguration}}
+  "[LogsEncryptionConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration-logsencryptionconfiguration)" : {{LogsEncryptionConfiguration}},
+  "[TagPropagationConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration-tagpropagationconfiguration)" : {{TagPropagationConfiguration}}
 }
 ```
 
@@ -35,6 +36,8 @@ To declare this entity in your CloudFormation template, use the following syntax
     LogGroupNameConfiguration}}
   [LogsEncryptionConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration-logsencryptionconfiguration): {{
     LogsEncryptionConfiguration}}
+  [TagPropagationConfiguration](#cfn-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration-tagpropagationconfiguration): {{
+    TagPropagationConfiguration}}
 ```
 
 ## Properties
@@ -57,3 +60,13 @@ The encryption configuration for centralization destination log groups.
 *Required*: No
 *Type*: [LogsEncryptionConfiguration](aws-properties-observabilityadmin-organizationcentralizationrule-logsencryptionconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`TagPropagationConfiguration`  <a name="cfn-observabilityadmin-organizationcentralizationrule-destinationlogsconfiguration-tagpropagationconfiguration"></a>
+Specifies the tag propagation configuration for this centralization rule. When present, `LogGroupNameConfiguration` must use a `LogGroupNamePattern` that contains `${source.logGroup}`, `${source.accountId}`, and `${source.region}`.
+*Required*: No
+*Type*: [TagPropagationConfiguration](aws-properties-observabilityadmin-organizationcentralizationrule-tagpropagationconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

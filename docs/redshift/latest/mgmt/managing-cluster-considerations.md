@@ -316,3 +316,7 @@ RG nodes have different supported cursor size compared to RA3 and DC2. Refer to 
 **Concurrency Scaling eligibility**
 
 If your cluster uses Concurrency Scaling and has more than 32 nodes, and you want to migrate to rg.12xlarge, use elastic resize or snapshot restore to maintain Concurrency Scaling support. If your cluster has more than 32 nodes and you perform a classic resize to rg.12xlarge, the cluster loses Concurrency Scaling support. Freshly created rg.12xlarge clusters with more than 32 nodes do not support Concurrency Scaling. For more information, see [Concurrency scaling candidates](https://docs.aws.amazon.com/redshift/latest/dg/concurrency-scaling.html#concurrency-scaling-candidates).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ If you are setting up your own ITSM, you will need to use the AWS Support API (S
 
 **Important**
 To set up a Forest trust, AMS requires your domain controller **Local Policies -> Security Options -> Network Access: Named Pipes that can be accessed anonymously**, have the **Netlogon** and **lsarpc** pipes listed. These pipes are listed by default, but are sometimes removed for security concerns. Once the trust is established, they can be removed from the list again.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

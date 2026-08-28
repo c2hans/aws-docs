@@ -91,3 +91,7 @@ The following table describes the version history and changelog for the Elastic 
 | 1.5.0 |  + Update Libfabric to version 1.8.0amzn1.1.<br />+ Update `rmda-core` to version 25.0.  | August 2019 |
 | 1.4.1 |  + Add Libfabric and Open MPI library paths (`/opt/amazon/efa/lib64` and `/opt/amazon/efa/openmpi/lib`) to `/etc/ld.so.conf.d/efa.conf` to ensure the Open MPI and Libfabric shared libraries are properly located.  | July 2019 |
 | 1.4.0 |  + Update EFA kernel module to version 1.3.0.<br />+ Update Libfabric to version 1.8.0amzn1.0<br />+ First release to support Intel MPI 2019 Update 4.  | July 2019 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 + [LSREL13-BP01 Implement comprehensive monitoring for regulated systems](lsrel13-bp01.md)
 + [LSREL13-BP02 Monitor data integrity across scientific processing pipelines](lsrel13-bp02.md)
 + [LSREL13-BP03 Track reliability metrics aligned to regulatory needs](lsrel13-bp03.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -466,3 +466,7 @@ AWS IoT provides endpoints that support the [Federal Information Processing Stan
 | Rate of UpdateManagedThing requests | Each supported Region: 10 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotmanagedintegrations/quotas/L-B4E52FA0)  | The maximum number of transactions per second (TPS) that can be made for the UpdateManagedThing API. |
 | Rate of UpdateNotificationConfiguration requests | Each supported Region: 10 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotmanagedintegrations/quotas/L-CAC26558)  | The maximum number of transactions per second (TPS) that can be made for the UpdateNotificationConfiguration API. |
 | Rate of UpdateOtaTask requests | Each supported Region: 10 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/iotmanagedintegrations/quotas/L-21405E39)  | The maximum number of transactions per second (TPS) that can be made for UpdateOtaTask API. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

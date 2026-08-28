@@ -9,6 +9,7 @@ The following table provides an overview of the important changes to Amazon Linu
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Updated packages](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20260825.html) |  Amazon Linux 2 2.0.20260825.0 includes updated packages for this release. | August 25, 2026 |
 | [Updated packages](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20260817.html) |  Amazon Linux 2 2.0.20260817.0 includes updated packages for this release. | August 17, 2026 |
 | [Updated packages](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20260803.html) |  Amazon Linux 2 2.0.20260803.1 includes updated packages for this release. | August 3, 2026 |
 | [Updated packages](https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-20260727.html) |  Amazon Linux 2 2.0.20260727.0 includes updated packages for this release. | July 27, 2026 |
@@ -169,3 +170,7 @@ The following table provides an overview of the important changes to Amazon Linu
 + [Release notes for 2022](relnotes-al2-2022.md)
 + [Release notes for 2021](relnotes-al2-2021.md)
 + [Release notes for 2020 and earlier](relnotes-al2-2020.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux 2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AL2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ To learn more about how to integrate these solutions with Amazon Elastic Contain
 +  [Anchore, scanning images on Amazon Elastic Container Registry (ECR)](https://anchore.com/blog/scanning-images-on-amazon-elastic-container-registry/)
 +  [PaloAlto, scanning images on Amazon Elastic Container Registry (ECR)](https://docs.paloaltonetworks.com/prisma/prisma-cloud/prisma-cloud-admin-compute/vulnerability_management/registry_scanning0/scan_ecr.html)
 +  [TrendMicro, scanning images on Amazon Elastic Container Registry (ECR)](https://cloudone.trendmicro.com/docs/container-security/sc-about/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

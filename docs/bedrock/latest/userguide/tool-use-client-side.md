@@ -276,3 +276,7 @@ if __name__ == "__main__":
 **Using Invoke APIs for client-side tool use**
 
 It is possible to use tools with the base inference operations ([InvokeModel](bedrock/latest/APIReference/API_runtime_InvokeModel.html) or [InvokeModelWithResponseStream](bedrock/latest/APIReference/API_runtime_InvokeModelWithResponseStream.html)). To find the inference parameters that you pass in the request body, see the [inference parameters](bedrock/latest/userguide/model-parameters.html) for the model that you want to use.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

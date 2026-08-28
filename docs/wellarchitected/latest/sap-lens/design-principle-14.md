@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/design-p
 | ☐ BP 14.3 | Recommended | Evaluate Amazon EFS and Amazon FSx performance suitability for your SAP use case |
 | ☐ BP 14.4 | Recommended | Consider memory as an alternative to storage |
 | ☐ BP 14.5 | Recommended | Choose appropriate backup solutions and schedule |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

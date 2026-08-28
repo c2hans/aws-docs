@@ -12,3 +12,7 @@ When the root user email address is changed centrally by a management account ad
 To update the root user email address of a member account in your organization, your organization must have previously enabled [all features](orgs_getting-started_concepts.md#feature-set-all) mode. AWS Organizations in consolidated billing mode or accounts that are not part of an organization, cannot update their root user email address centrally. Users that want to change the root user email address for accounts that are unsupported by the API should continue to use the Billing Console to manage their root user email address.
 
 For step-by-step instructions on how to update your member account's root user email address, see [Update the root user email for any AWS account in your organization](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-root-user-email.html#root-user-email-orgs) in the *AWS Account Management Reference Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

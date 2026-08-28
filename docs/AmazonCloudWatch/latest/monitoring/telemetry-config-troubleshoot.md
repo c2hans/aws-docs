@@ -44,3 +44,7 @@ To resolve home Region conflicts:
 + Check the informational alert displayed on the rule in the console. The alert identifies the home Region for the rule.
 + Navigate to the home Region in the CloudWatch console to edit or delete the rule.
 + If you need to create a different rule in the spoke Region, create a new rule with a different name and scope that does not conflict with the replicated rule.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

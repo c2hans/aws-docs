@@ -16,3 +16,7 @@ There are multiple ways to establish network connections to ensure the traffic w
  Keeping the traffic within your cloud environment can help you reduce unnecessary data transfer costs between networks when you communicate with a partner, a SaaS provider, or to your data centers, since the traffic does not leave your network, and no internet connectivity is required. Additionally, it can help you to enhance your network security, reliability, and reduce latency when using private connection, since you will not be sharing bandwidth through the internet.
 
 To improve discoverability of your workloads, services, and any possible partner product you are consuming, you need to plan and build your internal and external DNS configurations for private and public access.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

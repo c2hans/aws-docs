@@ -21,3 +21,7 @@ For more information, see [Global resources in AWS CodeConnections](welcome-conn
 **Note**
 If you use the connections feature to enable connection for your resources in Regions that do not require first being enabled, we will store and process information as detailed in the preceding topics.
 For connections established in Regions that must first be enabled, such as the Europe (Milan) Region, we will only store and process information for that connection in that Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

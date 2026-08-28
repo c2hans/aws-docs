@@ -44,3 +44,7 @@ Scalable Analytics using Apache Druid on AWS is available in the following AWS R
  **Federal Risk and Authorization Management Program (FedRAMP) compliance**
 
 This guidance meets FedRAMP moderate baseline requirements (and subsequently Department of Defense (DoD) Cloud Computing Security Requirements Guide (SRG) Impact Level 2 (IL2)) for AWS US East-West Regions. For more information, see our [FedRAMP compliance](https://aws.amazon.com/compliance/fedramp/) page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Scalable Analytics Using Apache Druid on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

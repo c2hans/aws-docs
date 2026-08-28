@@ -74,3 +74,7 @@ The following table shows the actions in IAM that relate to access for the Param
 | Select | Systems Manager | GetParameters |
 | Create  | Systems Manager | PutParameter |
 | Modify and Delete  | Systems Manager | DeleteParameter`DeleteParameters`<br />`DescribeParameters`<br />`GetParameter`<br />`GetParameterHistory`<br />`GetParameters`<br />`GetParametersByPath` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -123,3 +123,7 @@ Because the request is explicitly denied within one of the accounts, the final d
 Assume that Carlos then realizes his mistake and tries to save the file to the `Production` bucket. AWS first checks account `111111111111` to determine if the request is allowed. Only the identity-based policy applies, and it allows the request. AWS then checks account `222222222222`. Only the resource-based policy attached to the `Production` bucket applies, and it allows the request. Because both accounts allow the request, the final decision is to allow the request.
 
 ![Request to Production bucket.](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/policy_cross-account-eval-example-correct.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

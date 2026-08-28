@@ -38,3 +38,7 @@ If your fleet includes Spot Instances, it can automatically request replacement 
 
 **Reserve On-Demand capacity**
 A fleet can use an [On-Demand Capacity Reservation](ec2-fleet-on-demand-capacity-reservations.md) to reserve On-Demand capacity. A fleet can also include [Capacity Blocks for ML](ec2-capacity-blocks.md), allowing you to reserve GPU instances on a future date to support short duration machine learning (ML) workloads.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

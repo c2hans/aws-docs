@@ -31,3 +31,7 @@ You can use a custom permissions file to define the features that specific users
 To use a custom permissions file, you must first create the permissions file. Next, specify it when you start the session using the `--permissions-file` option with the `dcv create-session` command. For more information about starting sessions, see [Starting Amazon DCV sessions](managing-sessions-start.md).
 
 For information about creating a custom permissions file, see [Understanding permissions files](security-authorization-file-create.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -111,3 +111,7 @@ SELECT * FROM INFORMATION_SCHEMA.FILES;
 | Tablespace data encryption |  **Supported** +  Supported using transparent data encryption. <br />+  Encryption and decryption are handled seamlessly. Users don’t have to modify the application to access the data.  |  **Supported** +  Encrypt using keys managed through AWS KMS. <br />+  Encryption and decryption are handled seamlessly. Users doesn’t have to modify the application to access the data. <br />+  Enable encryption while deploying a new cluster with the AWS Management Console or API operations.  |
 
 For more information, see [Encrypting Amazon RDS resources](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Overview.Encryption.html) in the *Amazon Relational Database Service User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

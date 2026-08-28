@@ -136,3 +136,7 @@ You can easily delete your object and bucket from the Amazon S3 console. In fact
 <a name="congratulations"></a>
 
 You have backed up your first file to the cloud by creating an Amazon S3 bucket and uploading your file as an S3 object. Amazon S3 is designed for 99.999999999% durability to help ensure that your data is always available when you want it. You’ve also learned how to retrieve your backed up file and how to delete the file and bucket.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

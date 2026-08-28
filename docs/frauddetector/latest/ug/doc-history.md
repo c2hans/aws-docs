@@ -31,3 +31,7 @@ The following table describes important changes in Amazon Fraud Detector User Gu
 | [Batch predictions](https://docs.aws.amazon.com/frauddetector/latest/ug/batch-predictions.html) | Use **Batch predictions** to get predictions for a set of events that do not require real-time scoring. | March 31, 2021 |
 | [Chapter rework](https://docs.aws.amazon.com/frauddetector/latest/ug/get-started.html) | Rework of Get started and other sections | July 17, 2020 |
 | [Initial release](https://docs.aws.amazon.com/frauddetector/latest/ug/what-is-frauddetector.html) | Initial release | December 2, 2019 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

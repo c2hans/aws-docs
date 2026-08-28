@@ -33,3 +33,7 @@ You can also implement Hooks using Lambda functions, allowing you to leverage th
 <a name="hook-custom-hooks"></a>
 
 For advanced use cases, you can write your own evaluation logic using programming languages supported by the [CloudFormation CLI](https://docs.aws.amazon.com/cloudformation-cli/latest/userguide/what-is-cloudformation-cli.html). This approach provides maximum flexibility for implementing organization-specific governance requirements. As a supported extension type in the [CloudFormation registry](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/registry.html), your custom Hooks can be distributed and activated both publicly and privately.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

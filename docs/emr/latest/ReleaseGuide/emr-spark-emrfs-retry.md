@@ -68,3 +68,7 @@ You can configure the properties listed in the following table to refine retry b
 | fs.s3.aimd.initialRate | 5500 | Sets the initial request rate, which then changes according to the values that you specify for fs.s3.aimd.increaseIncrement and fs.s3.aimd.reductionFactor.The initial rate is also used for GET requests, and scaled proportionally (3500/5500) for PUT requests. |
 | fs.s3.aimd.adjustWindow | 2 | Controls how frequently the request rate is adjusted, measured in number of responses. |
 | fs.s3.aimd.maxAttempts | 100 | Sets the maximum number of attempts to try a request. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

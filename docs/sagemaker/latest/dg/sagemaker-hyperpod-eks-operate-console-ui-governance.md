@@ -24,3 +24,7 @@ The following sections cover how to set up, understand key concepts, and use Hyp
 + [Upgrade the task governance add-on](sagemaker-hyperpod-eks-operate-console-ui-governance-upgrade.md)
 + [Troubleshoot](sagemaker-hyperpod-eks-operate-console-ui-governance-troubleshoot.md)
 + [Attribution document for Amazon SageMaker HyperPod task governance](sagemaker-hyperpod-eks-operate-console-ui-governance-attributions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

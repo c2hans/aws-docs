@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/cloud-c
 
 The automation assume role is the role Automation assumes when it runs the runbook that onboards an Azure virtual machine as a managed node. The role can call the core Systems Manager APIs needed for hybrid activation. It can also pass a service role to Systems Manager and assume the Azure federation role to obtain Azure credentials.
 
-**Role name pattern:** `SSM-AzureAssumeRole-{{connector-name}}-{{id8}}`
+**Role name pattern:** `SSM-AzureAssumeRole-{{connector-name}}`
 
 The trust policy lets the Systems Manager service principal assume the role, scoped to your AWS account. Replace `123456789012` with your AWS account ID.
 
@@ -33,7 +33,7 @@ The trust policy lets the Systems Manager service principal assume the role, sco
 }
 ```
 
-The permissions policy grants the actions Automation needs to execute the onboarding runbooks. Replace `123456789012` with your AWS account ID, `us-east-1` with the AWS Region that the Cloud Connector is created in, `SSM-AzureRole-MyConnector-a1b2c3d4` with the name of the Azure federation role, `AmazonEC2RunCommandRoleForManagedInstances` with the name of the managed instance role attached to the Cloud Connector, and `connector-id` with the ID of the Cloud Connector.
+The permissions policy grants the actions Automation needs to execute the onboarding runbooks. Replace `123456789012` with your AWS account ID, `us-east-1` with the AWS Region that the Cloud Connector is created in, `SSM-AzureRole-MyConnector` with the name of the Azure federation role, `AmazonEC2RunCommandRoleForManagedInstances` with the name of the managed instance role attached to the Cloud Connector, and `connector-id` with the ID of the Cloud Connector.
 
 **Permissions details**
 
@@ -50,7 +50,7 @@ This policy includes the following permissions.
         {
             "Effect": "Allow",
             "Action": "sts:AssumeRole",
-            "Resource": "arn:aws:iam::123456789012:role/service-role/SSM-AzureRole-MyConnector-a1b2c3d4"
+            "Resource": "arn:aws:iam::123456789012:role/service-role/SSM-AzureRole-MyConnector"
         },
         {
             "Effect": "Allow",
@@ -89,3 +89,7 @@ This policy includes the following permissions.
     ]
 }
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

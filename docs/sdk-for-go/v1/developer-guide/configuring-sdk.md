@@ -279,3 +279,7 @@ svc := dynamodb.New(sess, &aws.Config{Endpoint: aws.String("https://test.us-west
 See [aws.Config](https://docs.aws.amazon.com/sdk-for-go/api/aws/#Config) for details.
 
 **Topics**
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Go. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-go` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

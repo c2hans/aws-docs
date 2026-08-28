@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/perf-re
 +  [AWS re:Invent 2019: Connectivity to AWS and hybrid AWS network architectures (NET317-R1)](https://www.youtube.com/watch?v=eqW6CPb58gs&ref=wellarchitected-wp)
 +  [AWS re:Invent 2019: Powering next-gen Amazon EC2: Deep dive into the Nitro system (CMP303-R2)](https://www.youtube.com/watch?v=rUY-00yFlE4&ref=wellarchitected-wp)
 +  [AWS re:Invent 2019: Scaling up to your first 10 million users (ARC211-R)](https://www.youtube.com/watch?v=kKjm4ehYiMs&ref=wellarchitected-wp)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

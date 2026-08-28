@@ -21,3 +21,7 @@ There are several options for how to proceed after you've finished transforming 
 When you export your data from a data flow and save it either as a Canvas dataset or to Amazon S3, Canvas creates a new destination node in your data flow, which is a final node that shows you where your processed data is stored. You can add additional destination nodes to your flow if you'd like to perform multiple export operations. For example, you can export the data from different points in your data flow to only apply some of the transformations, or you can export transformed data to different Amazon S3 locations. For more information about how to add or edit a destination node, see [Add destination nodes](canvas-destination-nodes-add.md) and [Edit a destination node](canvas-destination-nodes-edit.md).
 
 For more information about setting up a schedule with Amazon EventBridge to automatically process and export your data on a schedule, see [Create a schedule to automatically process new data](canvas-data-export-schedule-job.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

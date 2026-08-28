@@ -30,3 +30,7 @@ You and the operator of each downstream system must discuss details about the ou
 1. If you are delivering to a MediaConnect flow, ask the MediaConnect operator to create their flow now.
 
    Ask the operator to give you the one or two addresses that are in the Inbound IP address field for that flow. These addresses are the destinations for the SRT output. For example, `srt://203.0.113.22:5000` and `srt://203.0.113.88:5001`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

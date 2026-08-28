@@ -32,3 +32,7 @@ You also can use the native [IBM Db2 native database encryption feature](https:/
 Because it’s easy to scale up or scale down your Amazon EC2 instances on AWS, consider the following while sizing your SAP environment on AWS.
 + You don’t need to over-provision storage to meet future demand.
 + SAP Quick Sizer tools provide sizing guidance based on assumptions that on 100% load (as per your inputs to tool), system utilization will not be more than 65%, so there is some buffer built into SAP Quick Sizer recommendation. See SAP’s [Quick Sizer guidance](https://apps.support.sap.com/sap(bD1lbiZjPTAwMQ==)/bc/bsp/sap/qs_oberflaeche/pdf1.htm?area=QSDOC&filename=QS_for_beg_classic.pdf) for details. (Login required.)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

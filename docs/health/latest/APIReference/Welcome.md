@@ -25,4 +25,8 @@ When you use the AWS Health API operations to return AWS Health events, see the 
 Use the [eventScopeCode](https://docs.aws.amazon.com/health/latest/APIReference/API_Event.html#AWSHealth-Type-Event-eventScopeCode) parameter to specify whether to return AWS Health events that are public or account-specific.
 Use pagination to view all events from the response. For example, if you call the `DescribeEventsForOrganization` operation to get all events in your organization, you might receive several page results. Specify the `nextToken` in the next request to return more results.
 
-This document was last published on August 24, 2026.
+This document was last published on August 28, 2026.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query health` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

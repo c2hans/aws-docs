@@ -186,3 +186,7 @@ You can't use edge functions with a CloudFront distribution that you're using fo
 <a name="function-restrictions-tagging"></a>
 
 You can't add tags to edge functions. For more information about tagging in CloudFront, see [Tag a CloudFront resource](tagging.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

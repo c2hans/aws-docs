@@ -307,3 +307,7 @@ A. If you run into an error during the backup steps, look at the step logs locat
 Q. **I ran into an error while a restore step was running. What do I do?**
 
 A. If you run into an error during the restore steps, look at the step logs located inside the S3 bucket shown in the error message. If you have taken a full backup after the workflow started, the backup chain is broken and hence this workflow cannot be recovered. You will have to delete the workflow, wipe your target SQL server and re-create the workflow.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Hub Orchestrator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-orchestrator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

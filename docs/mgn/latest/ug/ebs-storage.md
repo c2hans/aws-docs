@@ -17,7 +17,7 @@ These settings are configured in the replication template and apply to all sourc
 ### Amazon EBS volume type
 <a name="ebs-volume-type"></a>
 
-Choose the default Amazon **Amazon EBS volume type** to be used by the replication servers for large disks.
+Choose the default **Amazon EBS volume type** to be used by the replication servers for large disks.
 
 Each disk has minimum and maximum sizes and varying performance metrics and pricing. Learn more about Amazon EBS volume types in [this Amazon EBS article.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSVolumeTypes.html)
 
@@ -203,3 +203,7 @@ Choose **Change** to confirm the change.
 For **General Purpose SSD (gp3)** disks, you can also set the **Throughput**. General Purpose SSD (gp3) volumes have a baseline performance of 125 MiB/s. You can provision additional throughput of 0.25 MiB/s per provisioned IOPS up to a maximum of 1,000 MiB/s (at 4,000 IOPS or higher).
 
 Choose **Change** to confirm the change.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

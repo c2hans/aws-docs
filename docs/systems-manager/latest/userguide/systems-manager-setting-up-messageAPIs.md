@@ -122,3 +122,7 @@ SSM Agent calls the Systems Manager service in the cloud every 5 minutes to prov
 
 `ExecuteApi`
 Systems Manager delegated administrators who manage OpsItems in OpsCenter require access to this API action so they can view related resource details about OpsItems across multiple AWS accounts. Specifically, this API gives a delegated administrator permission to view the following OpsItem details in the AWS Management Console: the OpsItem description, tags, CloudFormation template, AWS Config changes, CloudWatch Logs alarms, and AWS CloudTrail events. For more information about working with OpsItems across accounts, see [(Optional) Manually set up OpsCenter to centrally manage OpsItems across accounts](OpsCenter-getting-started-multiple-accounts.md). For more information about related resource details for OpsItems, see [Adding related resources to an OpsItem](OpsCenter-working-with-OpsItems-adding-related-resources.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

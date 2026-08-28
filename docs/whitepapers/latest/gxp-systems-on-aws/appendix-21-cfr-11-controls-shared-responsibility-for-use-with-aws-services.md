@@ -46,3 +46,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/ap
 [1] In computing, JSON (JavaScript Object Notation) is the open-standard syntax used for CloudFormation templates, [https://aws.amazon.com/documentation/cloudformation/](https://docs.aws.amazon.com/cloudformation/).
 
  [2] [https://www.continuousvalidation.com/](https://www.continuousvalidation.com/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

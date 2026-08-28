@@ -36,3 +36,7 @@ You can also access your stack details through the [CloudFormation console](http
 Stacks with a **CREATE\_IN\_PROGRESS** status are in the process of creating Amazon EC2 resources from your exported Lightsail snapshots. Stacks with a **CREATE\_COMPLETED** status have completed the process of creating Amazon EC2 resources. To view the resources created by a stack, choose the checkbox next to the stack name, and then choose the **Resources** tab.
 
 ![CloudFormation stack details.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-cloud-formation-stack-details.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

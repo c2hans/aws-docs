@@ -36,3 +36,7 @@ Keeping data in Amazon RDS increases storage cost and requires higher IOPS. If y
 <a name="organized-data.744e13aa-8021-5ebf-9aeb-474701e3b6ab"></a>
 
 It's good to keep informative data that will be accessed frequently by application in the database. However, applications generate a large quantity of data that isn't required very often or becomes stale. These records can be archived and kept in place, which is cost-effective and doesn't impact application performance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

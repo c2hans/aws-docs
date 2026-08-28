@@ -117,3 +117,7 @@ View details about updates to AWS managed policies for Deadline Cloud since this
 | [AWSDeadlineCloud-WorkerHost](#security-iam-awsmanpol-WorkerHost) – Change | Deadline Cloud added new actions `deadline:TagResource` and `deadline:ListTagsForResource` to allow you to add and view tags associated with workers in your fleet. | May 30, 2025 |
 | [AWSDeadlineCloud-UserAccessFarms](#security-iam-awsmanpol-UserAccessFarms) – Change<br />[AWSDeadlineCloud-UserAccessJobs](#security-iam-awsmanpol-UserAccessJobs) – Change<br />[AWSDeadlineCloud-UserAccessQueues](#security-iam-awsmanpol-UserAccessQueues) – Change | Deadline Cloud added new actions `deadline:GetJobTemplate` and `deadline:ListJobParameterDefinitions` to allow you to resubmit jobs. | October 7, 2024 |
 | Deadline Cloud started tracking changes | Deadline Cloud started tracking changes to its AWS managed policies. | April 2, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

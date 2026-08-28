@@ -32,3 +32,7 @@ This diagram illustrates the change in the group after one node fails. This diag
 + The two nodes must have identical capabilities.
 + You should have a policy in place for recovering after a node failure. Decide whether you will immediately try to get the failed node back into production.
 + When you get a failed node back into production, you must restart each channel or MPTS that was running on that node. You will then be back to a redundant setup for the nodes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

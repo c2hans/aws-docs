@@ -53,3 +53,7 @@ If your Amazon Pinpoint account doesn't contain any projects, you should complet
 **Note**
 You can configure additional channels in this project later. You aren't limited to only sending messages through the channel that you configured during this process.
 If you prefer to set up channels later, choose **Skip this step**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

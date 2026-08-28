@@ -110,3 +110,7 @@ The `removeconfig` command removes the default configuration for the container s
 The default configuration might change in future versions of the Node.js platform. Use the latest version of the configuration as a base for your customizations to ensure compatibility.
 
 If you override the default configuration, you must define any static file mappings and GZIP compression. This is because the platform can't apply the [standard settings](create_deploy_nodejs.container.md#nodejs-namespaces).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

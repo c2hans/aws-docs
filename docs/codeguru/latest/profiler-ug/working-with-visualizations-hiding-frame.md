@@ -26,3 +26,7 @@ When you hide a frame, the visualization no longer shows that frame or its calle
 1. Choose **X Hidden frames** in the upper-left corner. It opens the **Hidden frames** menu with the list of already hidden frames. **X** is how many frames are currently hidden.
 
 1. Choose **Show** on any of the hidden frames to stop hiding it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,3 +41,7 @@ View details about updates to AWS managed policies for MediaPackage since this s
 | `AWSElementalMediaPackageV2FullAccess` – New policy | MediaPackage added a new full-access policy for live resources.<br />This policy allows all actions on all live resources in MediaPackage. | July 25, 2023 |
 | `AWSElementalMediaPackageV2ReadOnly` – New policy | MediaPackage added a new read-only pollicy for live resources.<br />This policy allows read-only actions on all live resources in MediaPackage. | July 25, 2023 |
 | MediaPackage started tracking changes | MediaPackage started tracking changes for its AWS managed policies. | July 25, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

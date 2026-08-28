@@ -249,3 +249,7 @@ After configuring the three data publish flow nodes, follow these steps to deplo
 1. Ensure **Alias prefix** is selected in the dropdown menu. Then, search for the `/Renton/WindFarm/Turbine/WindSpeed` alias.
 
 If you see the correct alias in your search, you have deployed the flow and verified data transmission.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

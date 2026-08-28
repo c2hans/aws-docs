@@ -250,3 +250,7 @@ Now that you have set up the AWS Mobile SDK for .NET and Xamarin, you can:
 +  **Run the demos.** View our [sample Xamarin applications](https://github.com/awslabs/aws-sdk-net-samples/tree/master/XamarinSamples) that demonstrate common use cases. To run the sample apps, set up the AWS Mobile SDK for .NET and Xamarin as described previously, and then follow the instructions contained in the README files of the individual samples.
 +  **Learn the APIs.** View the [\|sdk-xamarin-ref\|\_](https://docs.aws.amazon.com/sdkfornet/v3/apidocs/).
 +  **Ask questions**: Post questions on the [AWS Mobile SDK Forums](https://forums.aws.amazon.com/forum.jspa?forumID=88) or [open an issue on GitHub](https://github.com/awslabs/aws-sdk-xamarin/issues).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mobile SDK for Xamarin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mobile` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

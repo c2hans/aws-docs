@@ -9,6 +9,7 @@ The following table describes the important changes to the documentation since t
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Updated AWSBatchServiceRole policy](https://docs.aws.amazon.com/batch/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | The `AWSBatchServiceRole` managed policy now includes the `ecs:UpdateCluster` permission. | August 25, 2026 |
 | [Added Amazon ECS Managed Instances compute environments](https://docs.aws.amazon.com/batch/latest/userguide/ecs_managed_instances.html) | Added support for Amazon ECS Managed Instances as a new compute environment type. Amazon ECS Managed Instances provides fully managed Amazon EC2 capacity with broader compute flexibility than Fargate, including GPU instances, bare metal, and specific instance type selection. | August 24, 2026 |
 | [Updated BatchServiceRolePolicy](https://docs.aws.amazon.com/batch/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | Updated the `BatchServiceRolePolicy` managed policy to add Amazon ECS capacity provider permissions, cluster update permissions, and tagging permissions for capacity provider resources. | August 5, 2026 |
 | [Updated AWSBatchServiceRolePolicyForSageMaker](https://docs.aws.amazon.com/batch/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-updates) | Updated the `AWSBatchServiceRolePolicyForSageMaker` managed policy to add `sagemaker:DeleteTrainingJob` permission. | April 16, 2026 |
@@ -50,3 +51,7 @@ The following table describes the important changes to the documentation since t
 | [AWS Batch event stream for EventBridge](https://docs.aws.amazon.com/batch/latest/userguide/cloudwatch_event_stream.html) | AWS Batch adds the event stream for EventBridge. You can use AWS Batch event stream to receive near real-time notifications regarding the state of jobs that are submitted to your job queues. | October 24, 2017 |
 | [Automated job retries](https://docs.aws.amazon.com/batch/latest/userguide/job_retries.html) | AWS Batch adds support for job retries. With this update, you can apply a retry strategy to your jobs and job definitions that allows your jobs to be automatically retried if they fail. | March 28, 2017 |
 | [AWS Batch general availability](#document_history) | AWS Batch is introduced, designed as a means for you to run batch computing workloads on the AWS Cloud. | January 5, 2017 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -271,3 +271,7 @@ The following sections list the Graviton image IDs for each platform branch that
 | 64bit Amazon Linux 2 v3.3.8 running Python 3.7 | ami-06e0953a29e1bbbb9 | ami-0a7b77eaef16adc4b |
 | 64bit Amazon Linux 2 v3.4.0 running Ruby 3.0 | ami-0456af2f62e5aa685 | ami-0bea9b9d4ae0560d9 |
 | 64bit Amazon Linux 2 v3.4.0 running Ruby 2.7 | ami-06b4eb87313c5a30e | ami-0630c0a0cafcd6707 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

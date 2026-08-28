@@ -92,3 +92,7 @@ Here is the Output section.
 Here is the Streams section.
 
 ![Four stream configurations showing video and audio encoding settings with codec and bitrate options.](http://docs.aws.amazon.com/elemental-live/latest/ug/images/hls-rendition-groups-create-example-streams-1.png)![Four stream configurations showing video and audio encoding settings with codec and bitrate options.](http://docs.aws.amazon.com/elemental-live/latest/ug/images/hls-rendition-groups-create-example-streams-2.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -75,3 +75,7 @@ The pool that you create must be in the same AWS account and AWS Region as the A
 1. On the **Review and create** page, review all the information present then press **Create identity pool**.
 
 1. Open the **Identity pools** page, and select the identity pool you just created. Then copy or write down the IdentityPoolId that you will use later in your browser script.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

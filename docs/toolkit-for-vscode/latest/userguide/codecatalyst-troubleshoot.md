@@ -35,3 +35,7 @@ If you receive the following error when attempting to connect to a Dev Environme
 + From the **Editor**, select and delete the contents of the `Host aws-devenv-*` section.
 + Save the changes you made to the `Host aws-devenv-*` of `~/.ssh/config`. Then, close the file.
 + Reattempt to connect to a Dev Environment from the Toolkit for VS Code.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  If AWS detects an irreparable issue with hardware hosting EC2 instances running on your Outpost, AWS sends an instance-retirement notice for the affected instance. For more information, see [Outposts rack maintenance](https://docs.aws.amazon.com/outposts/latest/userguide/outpost-maintenance.html). When the AWS installation team arrives on site, they replace the unhealthy hosts, switches, or rack elements and bring the new capacity online.
 
  AWS Health events such as instance-retirement are surfaced using [AWS EventBridge and](https://aws.amazon.com/eventbridge/) the [AWS Health API](https://docs.aws.amazon.com/health/latest/ug/health-api.html). We recommend updating the correct contact information, especially the operations contact as described [in our accounts documentation so that the correct individuals receive these events.](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-update-contact.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

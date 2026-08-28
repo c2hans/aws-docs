@@ -42,3 +42,7 @@ The following diagram illustrates this process:
 To learn more about resiliency for Connect Customer, the following resources from AWS Workshop Studio are highly recommended:
 + [Connect Customer Global Resiliency Best Practices](https://catalog.workshops.aws/amazon-connect-global-resiliency/en-US/connectbestpractices)
 + [Connect Customer Global Resiliency and AWS Services Multi-Region Best Practices](https://catalog.workshops.aws/amazon-connect-global-resiliency/en-US/awsservicesbestpractices)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

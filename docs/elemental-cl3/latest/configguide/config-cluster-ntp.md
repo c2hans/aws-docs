@@ -73,3 +73,7 @@ PTP applies only to Elemental Live, and only starting with version 2.21.3, which
 1. On the **Host, DNS & Timing Server** tab, select the Enable PTP check box and choose Save.
 
    When you save, PTP is enabled on the Elemental Live node. If NTP was previously enabled, it is automatically disabled on the Elemental Live node. But the Conductor Live nodes and the Elemental Statmux nodes in the cluster will continue to use NTP.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,3 +27,7 @@ The mailbox owner appears in both the **From:** and **Sender:** headers.
 
 **Note**
 If you have not been granted **Send As** permissions for the person or group you specified in the **From** field, you receive an email message in your own inbox indicating that you don't have the required permissions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

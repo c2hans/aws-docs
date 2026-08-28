@@ -163,3 +163,7 @@ The number of publish requests that were rejected by AWS AppSync because of clie
 `PublishServerError `
 The number of publish requests that originated from AWS AppSync while processing publish requests on a WebSocket connection. This is usually caused by an unexpected server-side issue.
 **Unit**: *Count*. Use the Sum statistic to get the total occurrences of these errors.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

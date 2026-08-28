@@ -71,3 +71,7 @@ Write permissions aren’t granted at the authorizing step. Authorizing a datash
 You can change the authorization of a datashare consumer by calling `authorize-data-share` again, but with a different value. The old authorization is overwritten by the new authorization. So if you originally authorize and allow writes, but re-authorize and specify `no-allow-writes` or simply do not specify a value, the consumer will have their write permissions revoked.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

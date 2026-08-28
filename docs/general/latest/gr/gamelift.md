@@ -115,3 +115,7 @@ Amazon GameLift Servers UDP ping beacons allow you to measure network latency be
 | Scripts per region | Each supported Region: 1,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/gamelift/quotas/L-293B0017)  | The maximum number of game server scripts allowed per region. |
 | Server processes per instance (Server SDK v3 and up) | Each supported Region: 50 | No | The maximum number of concurrent server processes that can run on a single instance when using the Server SDK for Amazon GameLift Servers version 3 or later. |
 | Strings per string list matchmaking player attribute | Each supported Region: 100 | No | The maximum number of strings in a string list (SL) matchmaking player attribute. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

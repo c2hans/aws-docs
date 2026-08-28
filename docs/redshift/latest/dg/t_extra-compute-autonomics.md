@@ -155,3 +155,7 @@ You can see how many RPU-seconds that your serverless workgroup is using for ext
 For more information, see [ Amazon Redshift Serverless console ](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-console.html) in the *Amazon Redshift Management Guide*.
 
 You can also check the [SYS\_SERVERLESS\_USAGE](SYS_SERVERLESS_USAGE.md) system view to find the `charged_extra_compute_for_automatic_optimization_seconds`, which records accumulated compute unit (RPU) seconds charged for automatic optimizations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

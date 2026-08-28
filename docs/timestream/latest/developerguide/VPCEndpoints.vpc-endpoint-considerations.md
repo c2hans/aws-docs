@@ -19,3 +19,7 @@ Consider the following when creating a VPC endpoint for Timestream:
 + Because of Timestream's architecture, access to both Write and Query actions requires the creation of two VPC interface endpoints, one for each SDK. Additionally, you must specify a cell endpoint (you will only be able to create an endpoint for the Timestream cell that you are mapped to). Detailed information can be found in the [create an interface VPC endpoint for Timestream for LiveAnalytics](VPCEndpoints.vpc-endpoint-create.md) section of this guide.
 
 Now that you understand how Timestream for LiveAnalytics works with VPC endpoints, [create an interface VPC endpoint for Timestream for LiveAnalytics](VPCEndpoints.vpc-endpoint-create.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

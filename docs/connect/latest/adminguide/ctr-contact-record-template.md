@@ -105,3 +105,7 @@ For information on using the API, see [PutProfileObjectType](https://docs.aws.am
 <a name="add-email-names-to-profile"></a>
 
 You can set up a flow to populate a name from an email contact to the customer's profile. Use the [Customer profiles](customer-profiles-block.md) block, configured to use the [Update profile](customer-profiles-block.md#customer-profiles-block-properties-update-profile) action.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,3 +52,7 @@ Athena introduces the flag `QueryExternalCatalogs` for querying external catalog
 When you test an ODBC 1.x driver connection, the driver runs a `SELECT 1` query that generates two files in your Amazon S3 bucket: one for the result set, and one for the metadata. The test connection is charged according to the [Amazon Athena Pricing](https://aws.amazon.com/athena/pricing/) policy.
 
 When you test an ODBC 2.x driver connection, the driver calls the [GetWorkGroup](https://docs.aws.amazon.com/athena/latest/APIReference/API_GetWorkGroup.html) Athena API action. The call uses the authentication type and corresponding credentials provider that you specified to retrieve the credentials. There is no charge for the connection test when you use the ODBC 2.x driver, and the test does not generate query results in your Amazon S3 bucket.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

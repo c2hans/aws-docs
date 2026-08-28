@@ -14,3 +14,7 @@ The collection, centralization, and analysis of data from various sources. With 
 + [[O.DIP.4] Aggregate health and status metrics across workloads](o.dip.4-aggregate-health-and-status-metrics-across-workloads.md)
 + [[O.DIP.5] Optimize telemetry data storage and costs](o.dip.5-optimize-telemetry-data-storage-and-costs.md)
 + [[O.DIP.6] Standardize telemetry data with common formats](o.dip.6-standardize-telemetry-data-with-common-formats.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

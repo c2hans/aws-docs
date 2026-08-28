@@ -126,3 +126,7 @@ Across the value stream, you can add lead times or process times for all steps t
 After you have identified and prioritized the constraints in the development value stream map, you can use them to drive improvement in your software development process. With the stakeholders and step owners, work to improve speed and quality by eliminating handoffs, wasted time, and excessive processing.
 
 After you implement changes, revisit the DVSM with the step owners and assess whether the changes have been successful. Update the DVSM based on the changes, and then identify and prioritize new constraints in order to drive continuous improvement. It's common for new constraints to appear in a different part of the map or for constraints to escalate from low to high priority.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,7 +30,9 @@ Properties:
   [PropagateTags](#sam-capacityprovider-propagatetags): {{Boolean}}
   [InstanceRequirements](#sam-capacityprovider-instancerequirements): {{InstanceRequirements}}
   [ScalingConfig](#sam-capacityprovider-scalingconfig): {{ScalingConfig}}
+  [LoggingConfig](#sam-capacityprovider-loggingconfig): {{[CapacityProviderLoggingConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-capacityprovider-capacityproviderloggingconfig.html)}}
   [KmsKeyArn](#sam-capacityprovider-kmskeyarn): {{String}}
+  [ManagedResourceTags](#sam-capacityprovider-managedresourcetags): {{ManagedResourceTags}}
 ```
 
 ## Properties
@@ -80,15 +82,21 @@ A map of key-value pairs to apply to the capacity provider and its associated re
 
  `LoggingConfig`   <a name="sam-capacityprovider-loggingconfig"></a>
  Use `LoggingConfig` to configure system logging for the capacity provider. System logs capture scaling activity and operational events and send them to a Amazon CloudWatch log group at a configurable log level.
-*Type*: [CapacityProviderLoggingConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-capacityprovider-capacityprovidertelemetryconfig.html#cfn-lambda-capacityprovider-capacityprovidertelemetryconfig-loggingconfig)
+*Type*: [CapacityProviderLoggingConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-capacityprovider-capacityproviderloggingconfig.html)
 *Required*: No
-*CloudFormation compatibility*: This property is passed directly to the [LoggingConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-capacityprovider-capacityprovidertelemetryconfig.html#cfn-lambda-capacityprovider-capacityprovidertelemetryconfig-loggingconfig) property of [TelemetryConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-capacityprovider.html#cfn-lambda-capacityprovider-telemetryconfig) of an `AWS::Lambda::CapacityProvider` resource.
+*CloudFormation compatibility*: This property is passed directly to the `[LoggingConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-lambda-capacityprovider-capacityprovidertelemetryconfig.html#cfn-lambda-capacityprovider-capacityprovidertelemetryconfig-loggingconfig)` property of `[TelemetryConfig](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-capacityprovider.html#cfn-lambda-capacityprovider-telemetryconfig)` of an `AWS::Lambda::CapacityProvider` resource.
 
  `KmsKeyArn`   <a name="sam-capacityprovider-kmskeyarn"></a>
 The ARN of the AWS KMS key used to encrypt data at rest and in transit for the capacity provider.
 *Type*: String
 *Required*: No
 *CloudFormation compatibility*: This property is passed directly to the `[KmsKeyArn](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-capacityprovider.html#cfn-lambda-capacityprovider-kmskeyarn)` property of an `AWS::Lambda::CapacityProvider` resource.
+
+ `ManagedResourceTags`   <a name="sam-capacityprovider-managedresourcetags"></a>
+ Applies explicit tags to the Amazon Elastic Compute Cloud instances and other managed resources that the capacity provider provisions on your behalf.
+*Type*: [ManagedResourceTags](sam-property-capacityprovider-managedresourcetags.md)
+*Required*: No
+*CloudFormation compatibility*: AWS SAM uses this property to construct the `[PropagateTags](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-lambda-capacityprovider.html#cfn-lambda-capacityprovider-propagatetags)` property of an `AWS::Lambda::CapacityProvider` resource.
 
 ## Return Values
 <a name="sam-resource-capacityprovider-return-values"></a>
@@ -165,7 +173,15 @@ AdvancedCapacityProvider:
     LoggingConfig:
       LogGroup: /aws/lambda/capacity-provider/{{advanced-capacity-provider}}
       SystemLogLevel: INFO
+    ManagedResourceTags:
+      Tags:
+        CostCenter: {{cc-1234}}
+        Environment: {{Production}}
     Tags:
       Environment: Production
       CostCenter: Engineering
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

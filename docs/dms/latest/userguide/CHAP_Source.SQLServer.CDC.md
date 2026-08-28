@@ -1192,3 +1192,7 @@ Because of this, on databases with transaction volumes lower than the MS-CDC cap
 [SOURCE_CAPTURE ]E: Failed to access LSN '0000dbd9:0006f9ad:0003' in the backup log sets since BACKUP/LOG-s are not available. [1020465] (sqlserver_endpoint_capture.c:764)
 ```
 To mitigate this issue, set the `maxtrans` and `maxscans` values as recommended prior.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

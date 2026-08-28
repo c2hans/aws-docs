@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 1.  Open **Recent queries** tab and look for the records run around the time indicated by the timestamp in DynamoDB table.
 
 1.  Click on the **Execution ID** attribute which will redirect you to the query editor populating the query that was run at the time. You can run and deconstruct this query to further analyse what drove specific components that added to the final score.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

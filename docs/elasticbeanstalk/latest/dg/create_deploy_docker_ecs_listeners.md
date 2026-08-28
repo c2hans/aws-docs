@@ -49,3 +49,7 @@ For more information on the configuration file format, see [Adding and customizi
 ```
 
 See [`Dockerrun.aws.json` v2](create_deploy_docker_v2config.md#create_deploy_docker_v2config_dockerrun) for details about the `Dockerrun.aws.json` v2 file format.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ When submitting a request, specify the version of the XML in the header of the r
 
 **Compatibility between Conductor Live and AWS Elemental Live/Statmux**
 Each Conductor Live version is compatible with a specific range of AWS Elemental Live or AWS Elemental Statmux versions. For example, an AWS Conductor Live version 3.6.x is compatible with AWS Elemental Live API version 2.13.x for any x.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

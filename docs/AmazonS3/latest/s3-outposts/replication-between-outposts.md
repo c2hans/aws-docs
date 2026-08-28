@@ -253,3 +253,7 @@ To set up a replication configuration when both the source and destination Outpo
 **Note**
 The amount of time that it takes for S3 on Outposts to replicate an object depends on the size of the object. For information about how to see the status of replication, see [Getting replication status information](manage-outposts-replication.md#outposts-replication-status).
       + On the object's **Properties** tab, the **Replication status** is set to **Replica** (identifying this as a replica object).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,3 +31,7 @@ If you choose the same **Caption Selector** in the **Caption Source** field in m
 | Shadow Opacity | The opacity of the shadow, in pixels. Range 0 (transparent) to 255 (opaque). Empty means 0. |
 | Shadow X Offset | The horizontal offset of the shadow, in pixels. A value of -2 results in a shadow offset 2 pixels to the left. A value of 2 results in a shadow offset 2 pixels to the right. |
 | Shadow Y Offset | The vertical offset of the shadow, in pixels. A value of -2 results in a shadow offset 2 pixels above the text. A value of 2 results in a shadow offset 2 pixels above the text. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

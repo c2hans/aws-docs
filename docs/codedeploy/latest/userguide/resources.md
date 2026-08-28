@@ -41,3 +41,7 @@ The following AWS SDKs and tools support solution development with CodeDeploy:
 + [CodeDeploy cmdlets in the AWS Tools for PowerShell](https://docs.aws.amazon.com/powershell/latest/reference/items/AWS_CodeDeploy_cmdlets.html) — A set of Windows PowerShell cmdlets that expose the functionality of CodeDeploy in the PowerShell environment.
 + [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) — A uniform command line syntax for accessing AWS services. The AWS CLI uses a single setup process to enable access for all supported services.
 + [AWS developer tools](https://aws.amazon.com/developertools/) — Links to developer tools and resources that provide documentation, code samples, release notes, and other information to help you build innovative applications with CodeDeploy and AWS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

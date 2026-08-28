@@ -98,3 +98,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/per
  **Related examples:**
 +  [Gateway Load Balancer](https://catalog.workshops.aws/gwlb-networking/en-US)
 +  [CDK and CloudFormation samples for Log Analysis with Amazon Athena ](https://github.com/aws/elastic-load-balancing-tools/tree/master/log-analysis-elb-cdk-cf-template)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

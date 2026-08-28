@@ -16,3 +16,7 @@ Customers with data stored on Cloud Directory are able to continue using Cloud D
 Amazon Neptune, a graph database service, and Amazon DynamoDB, a serverless NoSQL database service, are AWS alternatives to Cloud Directory's hierarchical databases. Amazon Neptune serves applications with interconnected data, powering fraud detection, knowledge graphs, and recommendation engines. Amazon DynamoDB manages key-value and document data structures for applications requiring high scalability and performance. Migration from Cloud Directory requires data transfer and updates to your application to the different APIs and query patterns supported by the new service.
 
 If you need help choosing the right alternative for your use case, or for any other questions, please contact [AWS Support](https://aws.amazon.com/support/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

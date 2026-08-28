@@ -17,3 +17,7 @@ The following table shows key consideration for when you connect to your new AWS
 | AWS Direct Connect - VPC | Static, BGP | AWS Direct Connect limits (supports bonding), individual instances limited to 5 GB-seconds | Both | No | No | No |
 | AWS Direct Connect - gateway | Static, BGP | AWS Direct Connect limits (supports bonding), individual instances limited to 5 GB-seconds | Both | No | Yes | Yes |
 | AWS Direct Connect gateway - AWS Transit Gateway (limited to several AWS Regions) | Static, BGP | AWS Direct Connect limits (supports bonding), individual instances limited to 5 GB-seconds | Verbal confirmation from AWS architect team | Yes | Yes | Limited to several Regions |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

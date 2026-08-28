@@ -23,3 +23,7 @@ In a normal situation, your application processes incoming data continuously. Ki
 When your application restarts, Kinesis Data Analytics ensures that it continues to process and write output from a point before or equal to when the failure occurred. This helps ensure that it doesn't miss delivering any application output to the configured destinations.
 
 Suppose that you configured multiple destinations from the same in-application stream. After the application recovers from failure, Kinesis Data Analytics resumes persisting output to the configured destinations from the last record that was delivered to the slowest destination. This might result in the same output record delivered more than once to other destinations. In this case, you must handle potential duplications in the destination externally.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

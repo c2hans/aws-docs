@@ -120,3 +120,7 @@ Device Farm continues the session until you stop it manually or the 150-minute t
 <a name="how-to-use-session-tips"></a>
 
 You might experience performance issues with the remote access session if you are located in a region geographically distant from us-west-2. This is due, in part, to latency in some Regions. If you experience performance issues, give the remote access session a chance to catch up before you interact with the app again.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

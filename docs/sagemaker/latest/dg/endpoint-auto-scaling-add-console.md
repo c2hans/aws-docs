@@ -39,3 +39,7 @@ This procedure registers a model as a scalable target with Application Auto Scal
 + You aren't registering a variant with an instance that is a burstable performance instance such as T2
 **Note**
 SageMaker AI doesn't support auto scaling for burstable instances such as T2, because they already allow for increased capacity under increased workloads. For information about burstable performance instances, see [Amazon EC2 instance types](https://aws.amazon.com/ec2/instance-types/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

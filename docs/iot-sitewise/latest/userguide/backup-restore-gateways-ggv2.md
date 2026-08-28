@@ -129,3 +129,7 @@ This procedure requires that you have installed AWS OpsHub for AWS IoT SiteWise.
 1. Validate your past data on the portal dashboard to check that the past data and the new data are both properly setup. There will be a downtime between past and new data. You should except to see a duration where no data points are collected.
 
 If you run into issues with backing up or restoring a SiteWise Edge gateway see the following troubleshooting topics [Troubleshooting an AWS IoT SiteWise Edge gateway](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/troubleshooting-gateway.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

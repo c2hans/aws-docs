@@ -10,3 +10,7 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/example
 This blog post shows different ways to notify customers with estimated delivery times. It explains using routes to show estimated driving time, and then using trackers and geofences to notify when a driver gets close to the customer. Uses Amplify, React, Amazon EventBridge, and Amazon Simple Notification Service (Amazon SNS).
 
 Blog link: [Estimated Time of Arrival and Proximity Notifications](https://aws.amazon.com/blogs/mobile/implementing-estimated-time-of-arrival-and-proximity-notifications-for-delivery-using-amazon-location-service/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -117,3 +117,7 @@ The following image shows the architecture during the data migration. In this sa
 **Oracle references**
 + [Oracle Data Guard Configurations](https://docs.oracle.com/en/database/oracle/oracle-database/21/sbydb/introduction-to-oracle-data-guard-concepts.html#GUID-AB9DF863-2C7E-4767-81F2-56AD0FA30B49)
 + [Data Pump Import](https://docs.oracle.com/database/121/SUTIL/GUID-D11E340E-14C6-43B8-AB09-6335F0C1F71B.htm#SUTIL300)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

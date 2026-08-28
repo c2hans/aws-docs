@@ -19,3 +19,7 @@ The **Update Code** dialog box contains the following items:
 
 **ECR Repository**
 (Required for `Image` package type only) Choose an existing Amazon Elastic Container Registry (Amazon ECR) repository in the connected AWS account for the AWS SAM CLI to use to deploy the function to Lambda.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

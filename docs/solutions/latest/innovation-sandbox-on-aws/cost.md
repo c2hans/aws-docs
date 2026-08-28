@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 # Cost
 <a name="cost"></a>
 
-You are responsible for the cost of the AWS services provisioned while running this solution. As of this revision, the cost for running this solution using the single instance deployment option in the US East (N. Virginia) Region is approximately **USD $65.25 per month**.
+You are responsible for the cost of the AWS services provisioned while running this solution. As of this revision, the cost for running this solution at a medium scale in the US East (N. Virginia) Region is approximately **USD $65.25 per month**.
 
 **Note**
 The cost for running Innovation Sandbox on AWS in the AWS Cloud depends on the deployment configuration you choose. The following examples provide cost breakdown for various deployment configurations in the US East (N. Virginia) Region. AWS services listed in the example tables below are billed (in US$) on a monthly basis.
@@ -28,7 +28,7 @@ We recommend creating a [budget](https://docs.aws.amazon.com/cost-management/lat
 | AWS Step Functions | $0.18 | $0.91 | $3.04 |
 | Amazon CloudFront | $0.21 | $0.22 | $0.22 |
 | Amazon Simple Email Service | $0.02 | $0.11 | $0.35 |
-| AWS CostExplorer | $7.20 | $7.20 | $7.20 |
+| AWS Cost Explorer | $7.20 | $7.20 | $7.20 |
 |  **Total Cost per month (USD)**  | \~**$36.40**  | \~**$65.25**  | \~**$149.20**  |
 
 **Important**
@@ -36,3 +36,7 @@ This estimate does not include the costs incurred by sandbox account usage or bl
 
 **Note**
 Blueprint deployments may incur additional costs depending on the resources defined in your CloudFormation StackSets. Consider the cost of blueprint resources when planning your deployment and setting lease budget limits. For example, a blueprint that deploys Amazon RDS databases, Amazon ElastiCache clusters, or Amazon EC2 instances will incur ongoing costs for the duration of the lease.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

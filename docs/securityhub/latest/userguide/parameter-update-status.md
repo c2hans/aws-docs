@@ -14,3 +14,7 @@ Programmatically, if your request to update a parameter is valid, the value of t
 The `UpdateSecurityControl` operation returns an `InvalidInputException` response for invalid parameter values. The response provides additional details about the reason for failure. For example, you might have specified a value that's outside the valid range for a parameter. Or, you might have specified a value that doesn't use the correct data type. Submit your request again with valid input.
 
 If an internal failure occurs when you try to update a parameter value, Security Hub CSPM automatically retries if you have AWS Config enabled. For more information, see [Considerations before enabling and configuring AWS Config](securityhub-setup-prereqs.md#securityhub-prereq-config).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

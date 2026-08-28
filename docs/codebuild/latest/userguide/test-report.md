@@ -23,3 +23,7 @@ Each test case returns a status. The status for a test case can be one of the fo
 + `UNKNOWN`: The test case returned a status other than `SUCCEEDED`, `FAILED`, `ERROR`, or `SKIPPED`.
 
 A test report can have a maximum of 500 test case results. If more than 500 test cases are run, CodeBuild prioritizes tests with the status `FAILED` and truncates the test case results.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

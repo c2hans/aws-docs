@@ -41,3 +41,7 @@ The retrieval rate for thumbnails is as follows:
 <a name="thumbnails-api-limits"></a>
 
 There is a limit to the number of thumbnails that you can view or retrieve. This limit is the TPS (transactions per second). The thumbnails feature shares the global limits for MediaConnect. For more details, see [Limits for API requests](quotas.md#limits-api).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

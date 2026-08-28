@@ -82,3 +82,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/ops
 + [ Workshop \| EKS GitOps with ArgoCD ](https://catalog.workshops.aws/eksgitops-argocd-githubactions)
 + [ Workshop \| CI/CD on AWS Workshop ](https://catalog.workshops.aws/cicdonaws/en-US)
 + [ Implementing cross-account CI/CD with AWS SAM for container-based Lambda functions ](https://aws.amazon.com/blogs/compute/implementing-cross-account-cicd-with-aws-sam-for-container-based-lambda/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

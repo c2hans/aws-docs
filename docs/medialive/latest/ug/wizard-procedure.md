@@ -47,3 +47,7 @@ You can delete the workflow. MediaLive handles the resources that belong to the 
 + It deletes the MediaPackage channel (if there is one) and its endpoints.
 + It attempts to delete the MediaStore container, if there is one and if the workflow wizard created it. Deletion will fail if the container has any objects in it, including objects that aren't associated with this workflow.
 + It deletes the CloudFront distribution, if the workflow wizard created it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

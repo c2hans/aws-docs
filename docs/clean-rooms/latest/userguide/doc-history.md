@@ -83,3 +83,7 @@ For notification about updates to this documentation, you can subscribe to the R
 | [Update to existing policy](#doc-history) | The following new permissions have been added to the `AWSCleanRoomsFullAccessNoQuerying` managed policy: `cleanrooms:ListTagsForResource`, `cleanrooms:UntagResource`, and `cleanrooms:TagResource`. For more information, see [AWS managed policies](https://docs.aws.amazon.com/clean-rooms/latest/userguide/security-iam-awsmanpol.html). | March 21, 2023 |
 | [General availability](#doc-history) | AWS Clean Rooms is now generally available. | March 21, 2023 |
 | [Preview release](#doc-history) | Preview release of the AWS Clean Rooms User Guide | January 12, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ Secrets Manager and SSM  Parameter Store are AWS services that provide secure 
 App Runner only stores reference to the Amazon Resource Name (ARN) of the secret or parameter stored in Secrets Manager or SSM  Parameter Store. This ensures that your sensitive data isn't visible to others in App Runner service configurations and application logs. As such, secrets and parameters are managed in a way that's completely isolated from your App Runner application code and your App Runner service configuration.
 
 For more information, see [Referencing environment variables](https://docs.aws.amazon.com/apprunner/latest/dg/env-variable.html) in the *AWS App Runner Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

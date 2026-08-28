@@ -29,3 +29,7 @@ HealthImaging attempts to import all your medical imaging data. If data non-conf
   <tr><td>0xBFFF</td><td>47513</td><td>OTHER</td><td>This warning occurs when there an uncaught warning that HealthImaging does not capture as a specific warning code.</td><td>Pixel data was malformed and cannot be retrieved, use <code>GetDICOMInstance</code> to retrieve the entire instance</td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

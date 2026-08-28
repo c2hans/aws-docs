@@ -28,3 +28,7 @@ Amazon S3 backs both Parquet files and inverted-index segments for durability. U
 
 **Important**
 On the Optimized engine, the warm tier is *read-only*. Although the general multi-tier storage architecture supports writes to the warm tier, Optimized domains do not support write operations in the warm tier. Ingest data into the hot tier and use Index State Management (ISM) policies to transition it to warm.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ The way users consume your workloads and other resources can help you identify i
 + [SUS02-BP03 Stop the creation and maintenance of unused assets](sus_sus_user_a4.md)
 + [SUS02-BP04 Optimize geographic placement of workloads for user locations](sus_sus_user_a5.md)
 + [SUS02-BP05 Optimize team member resources for activities performed](sus_sus_user_a6.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

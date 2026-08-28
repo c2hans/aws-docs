@@ -86,3 +86,7 @@ You can now create a backup plan or perform on-demand backups. For more informat
 For details about backup and restore of your SAP HANA databases on AWS Backup, see [SAP HANA databases on Amazon EC2 instances backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-saphana.html#saphanabackupconsole).
 
  AWS Backup supports PrivateLink for SAP HANA on AWS. To create a backup dataplane VPC endpoint, see [Create an AWS Backup VPC endpoint](https://docs.aws.amazon.com/aws-backup/latest/devguide/backup-network.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

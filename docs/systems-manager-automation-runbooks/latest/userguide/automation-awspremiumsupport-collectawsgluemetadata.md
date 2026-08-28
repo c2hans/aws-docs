@@ -365,3 +365,7 @@ The following example policy shows the least-privilege permissions required for 
 1.  **aws:executeAwsApi** - Describes the CloudFormation Stack events if the runbook fails to create or update the CloudFormation Stack.
 
 1.  **aws:deleteStack** - Deletes the CloudFormation Stack.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,3 +28,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 + [EUCSEC10-BP02 Restrict access to open ports on instances to reduce risks](eucsec10-bp02.md)
 + [EUCSEC11-BP01 Perform vulnerability scanning on EUC instances](eucsec11-bp01.md)
 + [EUCSEC12-BP01 Allow user access to only the software binaries needed to perform their job](eucsec12-bp01.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

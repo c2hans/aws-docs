@@ -57,3 +57,7 @@ Enabling your emails to display a BIMI logo requires some prerequisites to be in
 The final step in this process is to have a regular sending pattern to the ESPs that support BIMI logo placement. Your domain should have a regular delivery cadence and should have a good reputation with the ESPs that you're sending to. BIMI logo placement may take time to populate to ESPs where you don’t have an established reputation or sending cadence.
 
 You can find more information and resources pertaining to BIMI through the [BIMI Group](https://bimigroup.org/) organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

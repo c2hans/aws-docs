@@ -73,3 +73,7 @@ Before creating an App Runner service, make sure that you completed all the [pre
 1. After your service starts running, right-click it and choose **Copy Service URL**.
 
 1. To access your deployed application, paste the copied URL into the address bar of your web browser.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

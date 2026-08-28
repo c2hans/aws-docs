@@ -59,3 +59,7 @@ You can also create and set up application by using the [API](https://docs.aws.a
 <a name="integrate-push-services"></a>
 
 After you obtain the credentials that are required to send push notifications, you can update your application so that they're able to receive push notifications. For more information, see [Push notifications—Getting started](https://docs.amplify.aws/lib/push-notifications/getting-started/) in the AWS Amplify documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Push. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query push-notifications` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -64,3 +64,7 @@ Use the following AWS CLI commands to share an IPAM pool using RAM:
 ------
 
 As a result of creating the resource share in RAM, other principals can now allocate CIDRs to resources using the IPAM pool. For information on monitoring resources created by principals, see [Monitor CIDR usage by resource](monitor-cidr-compliance-ipam.md). For more information on how to create a VPC and allocate a CIDR from a shared IPAM pool, see [Create a VPC](https://docs.aws.amazon.com/vpc/latest/userguide/create-vpc.html) in the *Amazon VPC User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

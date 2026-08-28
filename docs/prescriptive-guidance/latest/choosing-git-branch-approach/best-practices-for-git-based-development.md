@@ -16,3 +16,7 @@ To successfully adopt Git-based development, it's important to follow a set of b
 + **Refactor continuously** – Regularly refactor the code base to improve its maintainability and reduce technical debt. Encourage developers to leave the code in a better state than they found it.
 + **Use short-lived branches for complex tasks** – For larger or more complex tasks, use short-lived branches (also known as *task branches*) to work on the changes. However, make sure to keep the branch lifespan short, typically less than a day. Merge the changes back into the `develop` branch (Gitflow) or `main` branch (Trunk or GitHub Flow) as soon as possible. Smaller and more frequent merges and reviews are easier for a team to consume and process than one large merge request.
 + **Train and support the team** – Provide training and support to developers who are new to Git-based development or who require guidance in adopting its best practices.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

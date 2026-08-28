@@ -23,3 +23,7 @@ When a registration is denied, AWS End User Messaging provides a denial reason t
 | CONTACT\_DETAILS\_MISSING | At least one contact method (phone, email, or website) is required in the agent profile, and each contact value must have a corresponding label. | Add at least one contact method to your agent profile. Ensure each contact value has a corresponding label (for example, if you provide a phone number, also provide a phone label). Update the registration and resubmit. |
 
 For denial reasons that require AWS Support assistance, create a support case in the [AWS Support Center](https://console.aws.amazon.com/support/home#/case/create?issueType=service-limit-increase). Include your AWS RCS Agent ID and registration ID in the case description.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -62,3 +62,7 @@ App Runner provides a revised build process for specific major runtimes that hav
 - ** Node.js 12 (nodejs12) **
   - ****Minor versions**:** 12.22.12 / ****Included packages**:**  npm 6.14.16, yarn 1.22.22
   - ****Minor versions**:** 12.21.0 / ****Included packages**:**  npm 6.14.16, yarn \*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

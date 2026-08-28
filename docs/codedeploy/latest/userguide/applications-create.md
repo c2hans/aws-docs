@@ -41,3 +41,7 @@ To view a list of applications already registered to your AWS account, see [View
 + [Create an application for an Amazon ECS service deployment (console)](applications-create-ecs.md)
 + [Create an application for an AWS Lambda function deployment (console)](applications-create-lambda.md)
 + [Create an application (CLI)](applications-create-cli.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ By continuing to scale generative AI solutions across the organization, enterpri
 + **Enhanced decision-making** – With real-time insights and predictive capabilities from generative AI, organizations can make faster, data-driven decisions.
 + **Strategic competitive advantage** – By using generative AI for innovation and optimization, organizations can differentiate themselves from competitors and open new revenue streams.
 + **Mature generative AI platform/blueprints and optimized resource management** – By automating processes and improving management of generative solutions, you can reduce operational costs and improve scalability.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ The RFDK uses CDK’s IAM concepts to grant access that is required from princip
 + The Deadline Worker Fleet’s IAM role is granted access to stream logs to the CloudWatch log group that it is configured to use
 
 When building a CDK application, it is important to take care when working with IAM resources. As a general rule, it is best to subscribe to the principle of least-privilege and only grant access as minimally required. In the CDK, this is done by scoping IAM policies to minimally required resources and principals. Please refer to [Security Best Practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html) for more details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Render Farm Deployment Kit on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rfdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

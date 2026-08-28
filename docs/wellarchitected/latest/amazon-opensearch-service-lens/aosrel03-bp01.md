@@ -31,3 +31,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
   +  Locate OpenSearch Service Quotas.
   +  Search for Amazon OpenSearch Service.
   +  Select the desired quota you want to increase, and choose **Request increase at account level**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

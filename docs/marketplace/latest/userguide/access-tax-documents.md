@@ -22,3 +22,7 @@ Tax documents are only available after you have completed sales transactions and
 
 **Sellers in India**
 Sellers in India receive GST tax invoices and Seller Listing Fee tax invoices via email from AWS Marketplace Operations usually within 2 weeks of the transaction. For questions, contact [AWS Marketplace support](https://aws.amazon.com/marketplace/management/contact-us/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

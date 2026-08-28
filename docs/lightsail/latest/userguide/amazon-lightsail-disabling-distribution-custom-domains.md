@@ -33,3 +33,7 @@ Complete the following procedure to disable custom domains for your distribution
 1. Your request to disable custom domains is submitted, and the status of your distribution is changed to **In progress**. After a while, the status of your distribution changes to **Enabled**.
 
 After you disable custom domains, your distribution accepts traffic only for the default domain that is associated with your distribution when you first create it (e.g., `123456abcdef.cloudfront.net`), and traffic for the previously associated custom domains will see a 403 error. You should update the DNS records of the domains so that traffic for those domains is directed to another resource.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

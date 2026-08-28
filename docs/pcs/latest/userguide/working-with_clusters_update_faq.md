@@ -30,3 +30,7 @@ For more information, see [Update the scheduler version of an AWS PCS cluster](w
 
 **How is billing affected during updates?**
 Standard hourly charges continue during update operations. When disabling accounting, billing stops when the cluster enters `UPDATING` state. When enabling accounting, billing begins when the cluster successfully returns to `ACTIVE` state.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,3 +53,7 @@ During provisioning of an ETL job, you provide input data sources and output dat
 AWS Glue creates elastic network interfaces in your subnet using private IP addresses. Jobs use these elastic network interfaces to access your data sources and data targets. Traffic in, out, and within the job run environment is governed by your VPC and networking policies with one exception: Calls made to AWS Glue libraries can proxy traffic to AWS Glue API operations through the AWS Glue VPC. All AWS Glue API calls are logged; thus, data owners can audit API access by enabling [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/), which delivers audit logs to your account.
 
 AWS Glue managed environments that run your ETL jobs are protected with the same security practices followed by other AWS services. For an overview of the practices and shared security responsibilities, see the [Introduction to AWS Security Processes](https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/welcome.html) whitepaper.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -93,3 +93,7 @@ For example:
   No. Priority 5 agents receive calls from that queue only if their other priority queues are empty. One agent's priority setting for a queue does not impact when the queue is routed a contact relative to other agents, but relative to other queues in the agent's profile.
 
 For instructions on how to set priority and delay for a routing profile, see [Create a routing profile in Connect Customer to link queues to agents](routing-profiles.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

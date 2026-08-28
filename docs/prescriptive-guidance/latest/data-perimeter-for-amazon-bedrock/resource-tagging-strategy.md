@@ -66,3 +66,7 @@ For identity-based tagging policies that control which resources identities can 
 + **Enforcement** – Bucket-level protection - even if IAM allows access, bucket policy can deny
 + **Use case** – Protecting specific data repositories from unauthorized access
 + **Perimeter** – Identity perimeter (controls which identities can access resources)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

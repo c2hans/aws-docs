@@ -48,3 +48,7 @@ When you create an app authorization, AppFabric might ask you for the tenant ID 
 
 **Tenant name**
 When you create an app authorization, AppFabric might ask you for the tenant ID and tenant name of your app. The *tenant name* is a unique name that you give to the tenant ID, to be used within an app bundle. This value is used to label the app authorization and any related ingestion.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,3 +59,7 @@ Example use cases include:
 <a name="ssc-getting-started-custom-participant-ordering-backward-compatibility"></a>
 
 Custom participant ordering is an optional feature and is fully backward compatible. Existing compositions without `participantOrderAttribute` continue to work unchanged, using arrival-time ordering. When `participantOrderAttribute` is set to an empty string, the system ignores custom ordering entirely and falls back to default behavior.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

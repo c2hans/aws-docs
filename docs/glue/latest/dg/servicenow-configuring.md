@@ -93,3 +93,7 @@ To configure OAuth in a non-production developer account:
 1. If there are multiple clients, then you need to create multiple authentication profiles to set the required OAuth entity in the authentication profile.
 
 1. If not configured, create a REST API access policy, to give access to the TABLE API. See [Create REST API access policy](https://docs.servicenow.com/bundle/washingtondc-platform-security/page/integrate/authentication/task/create-api-access-policy.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

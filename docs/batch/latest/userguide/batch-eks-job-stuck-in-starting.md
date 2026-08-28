@@ -41,3 +41,7 @@ Consider configuring your EKS cluster to [Send control plane logs to CloudWatch 
 <a name="batch-eks-job-stuck-in-starting-scenario"></a>
 
 Jobs using Persistent Volume Claims where the volume fails to attach or mount are candidates for termination. This can be a result of an incorrectly configured Job Definition. See [Create a single-node job definition on Amazon EKS resources](create-job-definition-eks.md) for more details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

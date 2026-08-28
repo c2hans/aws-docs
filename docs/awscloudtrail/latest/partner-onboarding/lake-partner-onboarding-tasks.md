@@ -59,3 +59,7 @@ As you integrate partner solution events, be aware of the following best practic
 
   You can add event fields that do not map to the schema to the `additionalEventData` field. Some partners use this field to include the entire, raw event.
 + **Batching events:** When you call the `PutAuditEvents` API, you can batch up to 100 events in a single API call, as long as each event is not greater than 256 kB in size, and the total size of all events is less than 1 MB. For more information about quotas in CloudTrail, see [Quotas in AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) in the *AWS CloudTrail User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

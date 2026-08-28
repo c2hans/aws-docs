@@ -18,3 +18,7 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 + AWS IAM user or role Amazon resource name (ARN) for Trend Micro Deep Security Subscription (Role ARN: arn:aws:iam::{{ACCOUNT\_ID}}:role/{{ROLE\_NAME}})
 
   Provide us an IAM role; ARN, or an IAM user ARN from one of your existing AWS accounts to which you have access. AMS creates an IAM role; in your AMS multi-account landing zone Shared Services account and adds the role or user provided in the trust of an IAM role in Shared Services so that the role can be assumed by you to subscribe to the Trend Micro Deep Security in AWS Marketplace.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

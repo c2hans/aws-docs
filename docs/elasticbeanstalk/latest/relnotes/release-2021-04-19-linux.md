@@ -55,3 +55,7 @@ The following tables list all supported platform branches for each platform. Onl
 |  ** Python 3.8 AL2 version 3.2.1** <br /> * 64bit Amazon Linux 2 v3.2.1 running Python 3.8 *  | 2.0.20210326 | Python 3.8.5 | pipenv 2020.8.13 |  |  | 3.2.0 | nginx 1.18.0 (default), Apache 2.4.46 |
 |  ** Python 3.7 AL2 version 3.2.1** <br /> * 64bit Amazon Linux 2 v3.2.1 running Python 3.7 *  | 2.0.20210326 | Python 3.7.9 | pipenv 2020.8.13 |  |  | 3.2.0 | nginx 1.18.0 (default), Apache 2.4.46 |
 |  ** Python 3.6 version 2.10.0** <br /> * 64bit Amazon Linux 2018.03 v2.10.0 running Python 3.6 *  | 2018.03.0 | Python 3.6.12 | pip 9.0.3 | setuptools 56.0.0 | meld3 1.0.2 | 3.1.0 | Apache 2.4.46 with mod\_wsgi 3.5 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

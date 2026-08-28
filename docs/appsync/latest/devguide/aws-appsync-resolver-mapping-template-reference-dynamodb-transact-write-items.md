@@ -266,3 +266,7 @@ If the transaction fails due to condition check failure of the `PutItem` request
 The `$ctx.error` contains details about the error. The keys **keys** and **cancellationReasons** are guaranteed to be present in `$ctx.result`.
 
 For a more complete example, follow the DynamoDB Transaction tutorial with AppSync here [Tutorial: DynamoDB transaction resolvers](tutorial-dynamodb-transact.md#aws-appsync-tutorial-dynamodb-transact).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

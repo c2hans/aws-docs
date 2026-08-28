@@ -307,3 +307,7 @@ RTB Fabric provides CloudWatch metrics for monitoring traffic through the Fabric
 Metrics collected from the Prebid Server application running on ECS are stored in the `MetricsEtl` S3 bucket for querying with Athena.
 
 This section details information on the [metric definitions](metric-definitions.md), [Glue table schemas](glue-table-schemas.md), and [example queries](example-queries.md) to get started.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying a Prebid Server on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

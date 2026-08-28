@@ -273,3 +273,7 @@ Use the following decision guide to choose the right workflow type for your use 
 + [Insert personalized ads and ad breaks in a channel stream](channel-assembly-integrating-mediatailor-ssai.md) – Monetization with SSAI
 + [Build MediaTailor linear channels with channel assembly and CDN](ca-cdn-wflw.md) – CDN integration for scale and cost savings
 + [Time-shifting a channel's playback](channel-assembly-time-shift.md) – Enable catch-up and start-over functionality
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -126,3 +126,7 @@ After they create a reader generated report, Amazon Quick readers can use the **
 1. Use the toggle to set the report schedule to **Active** or **Inactive**.
 
 1. When you are finished making changes to the report schedule, close the **Schedules** pane.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

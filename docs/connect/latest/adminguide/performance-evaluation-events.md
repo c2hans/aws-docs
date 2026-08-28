@@ -93,3 +93,7 @@ The following errors might occur when the system eventually fails to process eva
 | S3\_BUCKET\_ACCESS\_DENIED | Contact evaluation JSON export failed due to insufficient permissions. |
 | S3\_STORAGE\_NOT\_CONFIGURED | The export S3 bucket is not configured for your instance. |
 | INTERNAL\_SERVER\_ERROR | Contact evaluation JSON export failed due to an internal server error. Please expect delayed delivery of the export file. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

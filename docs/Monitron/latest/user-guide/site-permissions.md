@@ -12,3 +12,7 @@ To give a user access to all of the resources in a project, including those in a
 For example: Olga is an admin user associated with the entire project. As a project-level admin user, she can manage users and resources anywhere within the project, including those within sites A, B, and C. Sam is an admin user associated with Site B. As a site-level admin user, he can manage users and resources within Site B but can't see or manage those within sites A and C. Sensors at Site B can use any gateway within the project.
 
 Similarly, if Ed is a project-level technician, he can monitor any sensor in the project. However, Tom, who is a site-level technician for Site C, can see and monitor only sensors at that site.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

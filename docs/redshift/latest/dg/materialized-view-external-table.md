@@ -39,3 +39,7 @@ General limitations on materialized views still apply for materialized views on 
 + Autonomics features are not supported. These include [automated materialized views](https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-auto-mv.html) and [automatic query rewrite](https://docs.aws.amazon.com/redshift/latest/dg/materialized-view-auto-rewrite.html).
 + When an incremental materialized view is refreshed, IAM permissions apply only to the accessed portions of the Amazon Redshift base tables.
 + Changes in permissions managed by Lake Formation are not verified on querying a materialized view. This means that if a materialized view is defined on a data lake table and select privileges are removed from the table with Lake Formation, then you can still query the materialized view.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

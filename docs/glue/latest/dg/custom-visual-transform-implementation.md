@@ -102,3 +102,7 @@ DynamicFrame.myTransform = myTransform
 1.  In AWS Glue Studio, open a visual job and add the transform to the job by selecting it from the list of available **Transforms**.
 
     To reuse this transform in a Python script code, add the Amazon S3 path to the .py file in the job under “Referenced files path” and in the script, import the name of the python file (without the extension) by adding it to the top of the file. For example: `import` <name of the file (without the extension)>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

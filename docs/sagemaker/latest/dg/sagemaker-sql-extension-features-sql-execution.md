@@ -18,3 +18,7 @@ To see the details of the magic command parameters and supported formats, run `%
 **Important**
 To use Snowflake, users of the SageMaker distribution image version 1.6 must install the Snowflake Python dependency by running the following `micromamba install snowflake-connector-python -c conda-forge` command in a terminal of their JupyterLab application. Restart the JupyterLab server by running `restart-jupyter-server` in the terminal after the installation is complete.
 For SageMaker distribution image versions 1.7 and later, the Snowflake dependency is pre-installed. No action is needed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

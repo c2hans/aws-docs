@@ -34,3 +34,7 @@ You create hosted zones for both `child.example.com` with name servers <ns1>, <n
 
 **Scenario 5:**
 You delegate a domain or subdomain to Route 53 name servers before creating a corresponding hosted zone, this creates dangling delegation records. This is similar to the case in Scenario 3, but the risk also applies when no reusable delegation set is created. For example, you delegate the domain `example.com` to name servers <ns1>, <ns2>, <ns3>, and <ns4> in the parent domain `.com`, but none of these name servers has ever hosted `example.com`. Route 53 cannot protect against this because no hosted zone has ever existed to establish a hold on those name servers for that domain name. To mitigate the risk, only delegate to Route 53 name servers that belong to a public hosted zone that you control.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,3 +33,7 @@ To open Threat Composer, open an existing threat-model file (extension `.tc.json
 1. In the search field, enter **Threat Composer** and choose **Create New Threat Composer File** when it populates in the results.
 
 1. When prompted, enter a `file name`, then press the **enter** key to open Threat Composer and create a visualization of your empty threat-model file in a new VS Code editor window.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

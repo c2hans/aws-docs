@@ -378,3 +378,7 @@ The `ContextAssertion` uses the “sts:identity\_context” object from the clai
    ```
 **Important**
 As a security best practice, the credentials should not be hard coded in your scripts or code. For more information, refer to [Boto 3 documentation on using credentials](https://boto3.amazonaws.com/v1/documentation/api/1.9.156/guide/configuration.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

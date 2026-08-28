@@ -34,3 +34,7 @@ To calculate the size of an attachment (artifactSizeInBytes), use a third-party 
 If a file type is rejected when uploading an attachment, verify that the file extension has been added to the allowed file extensions list for your instance. For information about configuring custom file extensions, see [Enable attachments in your CCP so customers and agents can share and upload files](enable-attachments.md).
 
 For a list of default supported file types, see [Connect Customer feature specifications](feature-limits.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

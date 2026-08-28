@@ -14,3 +14,7 @@ FlexMatch processes match requests as either small match or large match, based o
 + *quantity* (optional) – Specify the number of team to make with this definition. When FlexMatch creates a match, it gives these teams the provided name with an appended number. For example `Red-Team1`, `Red-Team2`, and `Red-Team3`.
 
 FlexMatch attempts to fill teams to the maximum player size but does create teams with fewer players. If you want all teams in the match to be equally sized, you can create a rule for that. See the [FlexMatch rule set examples](match-examples.md) topic for an example of an `EqualTeamSizes` rule.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

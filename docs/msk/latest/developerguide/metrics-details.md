@@ -170,3 +170,7 @@ When you set the monitoring level to `PER_TOPIC_PER_PARTITION`, you get the metr
 | RollingEstimatedTimeLag\* | After consumer group consumes from a topic. | Rolling time estimate (in seconds) to drain the partition offset lag. |
 
 \* Consumer lag metrics require ASCII-only consumer group names and have specific emission requirements. For more information, see [Monitor consumer lags](consumer-lag.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

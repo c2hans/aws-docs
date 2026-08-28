@@ -61,3 +61,7 @@ Follow these steps to enable the Amazon FSx for Lustre module.
 
 **Note**
 MCS deploys a SCRATCH filesystem and does not automatically create a backup when the module is disabled. However, if a Data Repository Association is deployed, data is bidirectionally synchronized between S3 and Lustre, and the data remains in S3 after module disablement.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

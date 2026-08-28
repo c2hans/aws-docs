@@ -159,3 +159,7 @@ Where latency is measured as the average query latency in seconds and concurrenc
 The [Neptune Serverless](neptune-serverless.md) feature can scale instance size dynamically based on a workload's resource needs. Instead of calculating how many vCPUs are needed for your application, Neptune Serverless lets you [set lower and upper limits on compute capacity](neptune-serverless-capacity-scaling.md) (measured in Neptune Capacity Units) for the instances in your DB cluster. Workloads with varying utilization can be cost-optimized by using serverless rather than provsioned instances.
 
 You can set up both provisioned and serverless instances in the same DB cluster to achieve an optimal cost-performance configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ For more information, see the documentation for your virtualization environment.
 + **Citrix** — [Importing and Exporting VMs](https://docs.citrix.com/en-us/xencenter/current-release/vms-exportimport.html) on the Citrix website.
 + **Microsoft Hyper-V** — [Overview of exporting and importing a virtual machine](https://technet.microsoft.com/en-us/library/hh831535.aspx) on the Microsoft website.
 + **Microsoft Azure** — [Download a Windows VHD from Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/windows/download-vhd) or [Download a Linux VHD from Azure](https://docs.microsoft.com/en-us/azure/virtual-machines/linux/download-vhd) on the Microsoft website. From the Azure Portal, choose the VM to migrate, and then choose **Disks**. Select each disk (either OS or data) and choose **Create Snapshot**. On the completed snapshot resource, choose **Export**. This creates a URL that you can use to download the virtual image.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vm-import` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

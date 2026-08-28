@@ -41,3 +41,7 @@ The following table provides information about error codes you may see for the Z
 | ZND-5501 | Unable to generate access token. | Check your Zendesk configuration and try again. |
 | ZND-5502 | There was an error parsing the field value. The size has exceeded the maximum allowable limit. | The maximum size permitted is 1000 characters for the fields. |
 | ZND-5503 | The url is invalid. | Provide valid URL. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -60,3 +60,7 @@ To prevent new buyers from using an instance, you can restrict the instance. You
 1. Verify that the **Requests** tab shows the **Request status** as **Under review**. When the request completes, the status becomes **Succeeded**.
 **Note**
 If the check box is shaded, this means the instance is associated with one to several versions as a recommended instance type. To restrict such instances, use **Update versions** to choose a different recommended instance type. After the change requests complete and the instance you want to restrict is no longer a recommended instance type, you can return to **Restrict instance** to restrict your chosen instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

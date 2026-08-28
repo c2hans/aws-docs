@@ -146,3 +146,7 @@ The game hosting management system is the operational backbone that coordinates 
 + **Player connects to the game session**: The game client uses the connection information to connect directly to the game server and begin gameplay.
 + **Amazon GameLift Servers monitors game session status**: The game server process reports health status, optional player connection status, and game session status to track ongoing game session availability.
 + **Game server process shuts down**: The game server process ends the game session, reports status, and then shuts itself down.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

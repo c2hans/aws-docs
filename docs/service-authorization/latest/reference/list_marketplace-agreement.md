@@ -217,3 +217,7 @@ AWS Marketplace defines the following condition keys that can be used in the `Co
 |   [aws-marketplace:AgreementType](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-iam-users-groups-policies.html)  | Filters access by the type of the agreement | ArrayOfString |
 |   [aws-marketplace:PartyType](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-iam-users-groups-policies.html)  | Filters access by the party type of the agreement | String |
 |   [aws-marketplace:ProductId](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-iam-users-groups-policies.html)  | Filters access by product id for AWS Marketplace purchases | ArrayOfString |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

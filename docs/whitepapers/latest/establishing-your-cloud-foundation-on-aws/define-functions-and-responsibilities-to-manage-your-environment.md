@@ -28,3 +28,7 @@ When establishing your environment, you need to set the following functions in y
 These functions with the appropriate permissions and boundaries should be assigned to the user groups which job family needs to perform tasks related to the roles above. This will allow them to access, monitor, operate, update, and secure the environment as needed to meet your business requirements. These functions represent responsibilities within your cloud environment, and multiple functions can be assumed by the same team or person.
 
 To achieve this, you will need to build isolation boundaries to limit the access from each group to the services and tools needed to build, deploy, and operate. In some cases, these groups will need to work together to establish a connection to consume services between the boundaries isolating the resources, to create a cohesive environment that is secure and scalable, and provide access to these services to workloads or other foundational services within the environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

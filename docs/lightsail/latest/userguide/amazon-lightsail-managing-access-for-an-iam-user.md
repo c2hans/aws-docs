@@ -151,3 +151,7 @@ This is your only opportunity to view or download the secret access keys, and yo
 
    1. Choose **Send email** to send an email to the user letting them know they now have access to Lightsail.
 ![Confirmation that an IAM user was successfully created.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-iam-user-successfully-created.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

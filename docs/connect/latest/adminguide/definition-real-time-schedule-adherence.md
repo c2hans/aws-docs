@@ -41,3 +41,7 @@ This metric measures the amount of time an agent is adherent or non-adherent. Wh
 <a name="agent-adherence-percentage"></a>
 
 This metric measures the percentage of time an agent is adherent to their schedule. For a definition of adherence, see [Adherence](scheduling-metrics.md#adherence-hmetric).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -318,3 +318,7 @@ Depending on your initial requirements, you might not need to establish all of t
  The following example structure represents the recommended Infrastructure OU at a basic level. For general guidance on separating production and non-production workloads, refer to [Organizing workload-oriented OUs](advanced-ous.md#organizing-workload-oriented-ous).
 
 ![Diagram showing an example structure of Infrastructure OU](http://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/images/example-infrastructure-ou.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,3 +65,7 @@ For Amazon EMR releases 7.2 and higher, if your cluster uses managed scaling wit
 For example, if you use Amazon EMR releases 7.2 or higher and restrict application process to `ON_DEMAND` nodes, managed scaling scales up `ON_DEMAND` nodes if application process demand increases. Similarly, if you restrict application process to `CORE` nodes, managed scaling scales up `CORE` nodes if application process demand increases.
 
 For information about specific properties, see [Amazon EMR settings to prevent job failure because of task node Spot Instance termination](emr-plan-instances-guidelines.md#emr-plan-spot-YARN).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

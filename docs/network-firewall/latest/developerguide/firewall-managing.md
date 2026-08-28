@@ -22,3 +22,7 @@ Changes to stateful rules are applied only to new traffic flows. Other firewall 
 + [Updating a firewall in AWS Network Firewall](firewall-updating.md)
 + [Deleting a firewall in AWS Network Firewall](deleting-firewall.md)
 + [Deleting a VPC endpoint association in AWS Network Firewall](deleting-vpc-endpoint-association.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

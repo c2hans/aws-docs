@@ -20,3 +20,7 @@ Perform the following steps to uninstall the GuardDuty security agent from your 
 1. After you provide all the details and choose **Run**, GuardDuty removes the security agent from the targeted Bottlerocket instances.
 
 1. To also delete the VPC endpoint associated with this security agent, see [To delete a VPC endpoint](clean-up-guardduty-agent-resources-process.md#runtime-monitoring-delete-vpc-endpoint).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

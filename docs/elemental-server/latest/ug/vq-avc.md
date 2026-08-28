@@ -34,3 +34,7 @@ This is version 2.18 of the AWS Elemental Server documentation. This is the late
 | Streams – Video > Advanced > CABAC | stream\_assembly/video\_description/h264\_settings>/cabac |
 | Streams – Video > Advanced > Slices | stream\_assembly/video\_description/h264\_settings/slices |
 | Streams – Video > Advanced > Flicker Reduction | stream\_assembly/video\_description/h264\_settings/flicker\_reduction |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

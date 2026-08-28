@@ -119,3 +119,7 @@ The following table shows who to contact for the country you are shipping from:
   <tr><td>All other countries</td><td>Contact <a href="https://www.dhl.com">DHL</a>.<br />You can return the server in the following ways:<ul><li> Drop-off the server at a <a href="https://mydhl.express.dhl/us/en/locator.html#/find-locations">DHL location</a>. </li><li> Schedule a <a href="https://returns.dhl.co.uk/ereturns/">pickup</a> for a date and time you prefer. Enter the DHL Waybill number from the AWS-provided return label for free shipping. <br />If you get the following error <code>Courier pickup can't be scheduled for an import shipment</code>, it usually means that the pickup country that you selected does not match the pickup country on the return shipment label. Select the country where the shipment originates from and try again. </li></ul></td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

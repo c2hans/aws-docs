@@ -17,3 +17,7 @@ Have a mechanism to validate that you have the appropriate number of trained per
   +  SUSE Documentation: [SUSE Enterprise Linux Certifications](https://training.suse.com/certification/)
   +  Red Hat Documentation: [Red Hat Enterprise Linux Certifications](https://www.redhat.com/en/services/certifications)
   +  Microsoft Documentation: [Microsoft Windows Certifications](https://docs.microsoft.com/en-us/learn/certifications/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ For Agent Builder deployments, be aware of the following Amazon [Bedrock AgentCo
 | Active Session workloads per account | 1000 | 500 |
 | Total agents per account | 1,000 | 1,000 |
 | Versions per account | 1,000 | 1,000 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Generative AI Application Builder on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

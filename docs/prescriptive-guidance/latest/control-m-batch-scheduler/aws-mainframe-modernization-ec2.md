@@ -17,3 +17,7 @@ This following topics cover the setup required for integration between Control-M
 + [Create a Control-M connection profile](create-control-m-connection-profile.md)
 + [Create jobs and schedules in Control-M Planning](create-jobs-schedules-control-m-planning.md)
 + [Manage job runs in Control-M by using Monitoring](monitor.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -92,3 +92,7 @@ If you have one Jira site, this step won't appear, and you'll automatically be d
      After connecting your Jira site to CodeCatalyst, you can view the connected site in the **Connected Jira sites** tab of the **Jira Software** extension details page.
 
 If you no longer want to use GitHub repositories, Bitbucket repositories, or GitLab project repositories, or manage Jira issues in CodeCatalyst, you can disconnect your third-party source. When a GitHub account, Bitbucket workspace, or GitLab user is disconnected, events in the third-party repositories will not start workflow runs, and you will not be able to use those repositories with CodeCatalyst Dev Environments. When a Jira site is disconnected, Jira issues from the site's projects will not be available in the CodeCatalyst projects, and CodeCatalyst **Issues** will be the issue provider again. For more information, see [Disconnecting GitHub accounts, Bitbucket workspaces, GitLab users, and Jira sites CodeCatalyst](extensions-disconnect.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

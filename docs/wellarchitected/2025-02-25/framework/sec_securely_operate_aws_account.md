@@ -119,3 +119,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/sec
 +  [Enable AWS adoption at scale with automation and governance](https://youtu.be/GUMSgdB-l6s)
 +  [Security Best Practices the Well-Architected Way](https://youtu.be/u6BCVkXkPnM)
 +  [Limiting use of AWS root credentials](https://youtu.be/SMjvtxXOXdU?t=979) from AWS re:inforce 2022 – Security best practices with AWS IAM
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

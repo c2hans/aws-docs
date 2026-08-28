@@ -40,3 +40,7 @@ Understand the devices and equipment used in your architecture and use strategie
 +  Perform power studies to enable keeping long lived connections, while using the least amount of power.
 +  To wake up the device from deep-sleep (like the TCUs), use TCP/IP-based wake up instead of SMS message wake up through the mobile network.
 +  Encourage teams to implement Software Defined Vehicle Architectures with Virtualized Hardware development. With this, customers can benefit from unwanted hardware sample manufacturing and decrease carbon footprint.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

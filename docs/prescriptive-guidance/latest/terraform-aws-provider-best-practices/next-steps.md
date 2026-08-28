@@ -12,3 +12,7 @@ Here are some potential next steps after reading this guide:
 + Enable linting, security scans, policy checks, and automated testing tools to reinforce some of the best practices around security, compliance, and code quality. Tools such as TFLint, tfsec, and Checkov can help.
 + Review the latest AWS Provider documentation to see if there are any new resources or functionality that could help optimize your Terraform usage. Stay up to date on new versions of the AWS Provider.
 + For additional guidance, see the [Terraform documentation](https://developer.hashicorp.com/terraform/language), [best practices guide](https://developer.hashicorp.com/terraform/cloud-docs/recommended-practices), and [style guide](https://developer.hashicorp.com/terraform/language/style) on the HashiCorp website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

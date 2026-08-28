@@ -159,3 +159,7 @@ When you use the console to add a destination, AWS IoT Core for LoRaWAN automati
 1. To save your changes and exit, choose **Update Trust Policy**.
 
 With this role defined, you can find it in the list of roles when you configure your AWS IoT Core for LoRaWAN destinations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5697,3 +5697,7 @@ Amazon SageMaker defines the following condition keys that can be used in the `C
 |   [sagemaker:VpcSubnets](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the list of all VPC subnets associated with the resource in the request | ArrayOfString |
 |   [sagemaker:WorkteamArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the workteam arn associated to the request | ARN |
 |   [sagemaker:WorkteamType](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsagemaker.html#amazonsagemaker-policy-keys)  | Filters access by the workteam type associated to the request. This can be public-crowd, private-crowd or vendor-crowd | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

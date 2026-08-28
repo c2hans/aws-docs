@@ -81,3 +81,7 @@ After you submit your request:
 + MACsec encryption is enabled by default between AWS and partner devices at the Interconnect location.
 + Multiple first-mile connectivity options are supported depending on what the partner offers, such as Ethernet and MPLS.
 + You can attach a last mile Interconnect to an existing Direct Connect Gateway that already has Private Virtual Interfaces or Transit Virtual Interfaces attached to it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Interconnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query interconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

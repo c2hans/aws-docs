@@ -18,3 +18,7 @@ Building ML applications is an iterative process that involves a sequence of ste
 1. Feed the resulting features to the learning algorithm to build models and evaluate the quality of the models on data that was held out from model building.
 
 1. Use the model to generate predictions of the target answer for new data instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

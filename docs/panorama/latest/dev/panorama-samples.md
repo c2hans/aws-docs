@@ -74,3 +74,7 @@ The [aws-panorama-samples](https://github.com/aws-samples/aws-panorama-samples) 
 The AWS community has also developed tools and guidance for AWS Panorama. Check out the following open source projects on GitHub.
 + [cookiecutter-panorama](https://github.com/mrtj/cookiecutter-panorama) – A Cookiecutter template for AWS Panorama applications.
 + [backpack](https://github.com/Neosperience/backpack) – Python modules for accessing runtime environment details, profiling, and additional video output options.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -130,3 +130,7 @@ In this example:
 1. After both calls complete (within 1500 ms), the Output block writes the combined results to `player_params`.
 
 1. If the 1500 ms timeout is exceeded, MediaTailor discards all output and proceeds without the enrichment data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,3 +38,7 @@ Consider the following when you use a per-container swap configuration.
 + This feature is only supported for Linux containers. Windows containers are not supported currently.
 + If the `maxSwap` and `swappiness` container definition parameters are omitted from a task definition, each container has a default `swappiness` value of `60`. Moreover, the total swap usage is limited to two times the memory of the container.
 + If you're using tasks on Amazon Linux 2023 the `swappiness` parameter isn't supported.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,3 +37,7 @@ Event metadata provides details of the event being evaluated. Each event you wan
 + ENTITY\_TYPE – The entity that performs the event, such as a merchant or a customer.
 + ENTITY\_ID - An identifier for the entity performing the event. The ENTITY\_ID must satisfy the following regular expression pattern: `^[0-9a-z_-]+$`. If the ENTITY\_ID is not available at the time of evaluation, pass the string unknown.
 + EVENT\_TIMESTAMP - The timestamp when the event occurred. The timestamp must be in ISO 8601 standard in UTC.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

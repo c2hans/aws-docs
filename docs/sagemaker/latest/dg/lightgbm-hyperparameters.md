@@ -37,3 +37,7 @@ By default, the SageMaker AI LightGBM algorithm automatically chooses an evaluat
 | tweedie\_variance\_power | Controls the variance of the Tweedie distribution. Set this closer to `2.0` to shift toward a gamma distribution. Set this closer to `1.0` to shift toward a Poisson distribution. Used only for regression tasks.<br />Valid values: float, range: [`1.0`, `2.0`).<br />Default value: `1.5`. |
 | num\_threads | Number of parallel threads used to run LightGBM. Value 0 means default number of threads in OpenMP.<br />Valid values: integer, range: Non-negative integer.<br />Default value: `0`. |
 | verbosity | The verbosity of print messages. If the `verbosity` is less than `0`, then print messages only show fatal errors. If `verbosity` is set to `0`, then print messages include errors and warnings. If `verbosity` is `1`, then print messages show more information. A `verbosity` greater than `1` shows the most information in print messages and can be used for debugging.<br />Valid values: integer.<br />Default value: `1`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

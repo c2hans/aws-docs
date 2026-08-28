@@ -63,3 +63,7 @@ If you deploy the optional MCP Server integration, AI agents can access and anal
 1.  **Read-only API access** - The DLT MCP Tools Lambda function calls the existing DLT API Gateway endpoints to retrieve test data from DynamoDB and Amazon S3. The Lambda function provides read-only tools for retrieving test scenarios, test runs, baseline comparisons, and test run artifacts. For more information about the available tools and their parameters, refer to [MCP tools specification](mcp-tools-specification.md) in the Developer Guide.
 
 The MCP Server integration leverages the existing DLT infrastructure (API Gateway, Cognito, DynamoDB, S3) to provide secure, read-only access to test data for AI-powered analysis and insights.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

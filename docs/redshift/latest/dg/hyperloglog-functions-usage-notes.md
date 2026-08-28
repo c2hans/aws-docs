@@ -24,3 +24,7 @@ The following are considerations for using HyperLogLog in Amazon Redshift:
   ```
 + You can import text or CSV data into Amazon Redshift using the COPY command. For more information, see [Loading the HLLSKETCH data type](copy-usage_notes-hll.md).
 + The default encoding for HLLSKETCH is RAW. For more information, see [Compression encodings](c_Compression_encodings.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

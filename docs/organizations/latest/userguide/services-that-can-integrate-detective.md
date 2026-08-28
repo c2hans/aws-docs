@@ -124,3 +124,7 @@ If you want to configure a delegated administrator account using the AWS CLI or 
 <a name="integrate-disable-da-detective"></a>
 
 You can remove the delegated administrator using either the Detective console or API, or by using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation. For information on how to remove a delegated administrator using the Detective console or API, or the Organizations API, see [Designating a Detective administrator account for an organization](https://docs.aws.amazon.com/detective/latest/adminguide/accounts-designate-admin.html) in the *Amazon Detective Administration Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,3 +41,7 @@ After you create a CDK project, import and use constructs from the AWS CDK Libra
 <a name="develop-next"></a>
 
 When ready to deploy your application, use the CDK CLI `cdk deploy` command. For instructions, see [Deploy AWS CDK applications](deploy.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

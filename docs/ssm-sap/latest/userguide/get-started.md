@@ -171,3 +171,7 @@ To backup and restore your SAP HANA databases running on Amazon EC2 instance, at
 <a name="install-agents"></a>
 
 Follow along the steps described in AWS Backint Agent for SAP HANA documentation. For more information, see [Install and configure AWS Backint Agent for SAP HANA](https://docs.aws.amazon.com/sap/latest/sap-hana/aws-backint-agent-backup.html#backint-backup-install).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ssm-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

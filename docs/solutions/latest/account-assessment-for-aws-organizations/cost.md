@@ -35,3 +35,7 @@ The cost is based on the following assumptions:
 | AWS WAF | 1 web ACL, 1 custom rule, 7 managed rule groups | fixed | $13.00 |
 | AWS X-Ray | \~150 traces recorded (3,000 API calls with default 5% sampling rate) | variable | <$0.01 |
 |  |  |  **Total monthly cost:**  |  **$44.64**  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Account Assessment for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

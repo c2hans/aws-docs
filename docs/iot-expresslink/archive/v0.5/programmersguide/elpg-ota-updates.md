@@ -396,3 +396,7 @@ All ExpressLink modules are pre-provisioned with a long-lived AWS server root ce
 Server root certificate updates performed using the OTA mechanism do not require the host to accept the update nor to control its run timing.
 
 Server Root certificates are NOT deleted upon a factory reset
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

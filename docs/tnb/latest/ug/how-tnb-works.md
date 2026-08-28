@@ -51,3 +51,7 @@ Your AWS account has the following quotas related to AWS TNB.
 | Concurrent ongoing network service operations | The maximum number of concurrent ongoing network service operations in one Region. | 40 | Yes |
 | Network packages | The maximum number of network packages in one Region. | 40 | Yes |
 | Function packages | The maximum number of function packages in one Region. | 200 | Yes |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Telco Network Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tnb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

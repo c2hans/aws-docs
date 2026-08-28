@@ -59,3 +59,7 @@ The following response overrides the KID to `22222222-2222-2222-2222-22222222222
       </cpix:ContentKeyUsageRuleList>
      </cpix:CPIX>
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Packager and Encoder Key Exchange API Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query speke` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

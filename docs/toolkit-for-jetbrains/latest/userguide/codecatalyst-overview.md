@@ -139,3 +139,7 @@ To open and edit your `devfile` from your JetBrains Gateway Dev Environment inst
 1. Upon saving your changes, the **Amazon CodeCatalyst Dev Environment** node displays an alert indicating that your Dev Environment requires a rebuild.
 
 1. Expand the **Amazon CodeCatalyst Dev Environment** node and choose the **Rebuild Dev Environment** node from the **Configure Dev Environment** tab.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

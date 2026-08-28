@@ -78,3 +78,7 @@ The following is an example that shows how the scaling of dynamic nodes behaves 
 + A **best-effort** Amazon EC2 launch instance API is called, requesting 40 instances, which is the total capacity requested by all the jobs. This results in the launch of 30 instances.
 + A **best-effort** assignment of 20 of the launched instances to Slurm nodes for the first job is successful.
 + Another **best-effort** assignment of the remaining 10 launched instances to Slurm nodes for the second job is successful, even if the total requested capacity was 20. But since the job was requesting the 20 nodes, and it was possible to assign Amazon EC2 instances to only 10 of them, the job cannot start and the instances are left running idle, until enough capacity is found to start the missing 10 instances at a later call of the scaling process, or the scheduler schedules the job on other, already running, compute nodes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

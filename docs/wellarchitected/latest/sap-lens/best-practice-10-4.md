@@ -32,3 +32,7 @@ For each failure, assess the risk of an outage and the cost to your business. Fo
 + Performance — Does replication or the backup activity impact user performance?
 + Cost optimization — Does the cost of the solution align with the assumed risk?
 + Sustainability — Does the solution align with your sustainability and environmental impact initiatives?
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

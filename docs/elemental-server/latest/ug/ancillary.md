@@ -22,3 +22,7 @@ If your content includes 608 XDS data, see [Setting Up Input Captions With 608 X
 + In each captions selector, for **CC channel**, choose the channel number for the track that is associated with the selector.
 
   For example, the input captions have English in CC channel 1 and Spanish in CC channel 2. To use these captions, create Captions selector 1, and then choose 1 in the **CC channel** dropdown list. Next, create Captions selector 2, and then choose 2 in the **CC channel** dropdown list.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

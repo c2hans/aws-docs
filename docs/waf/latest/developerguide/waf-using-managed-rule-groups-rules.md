@@ -19,3 +19,7 @@ You can retrieve a list of the rules in a managed rule group. The API and CLI ca
     + Select the rule group you want to see a rules list for, then choose **Edit**. AWS WAF shows the list of rules in the rule group.
 + **API** – `DescribeManagedRuleGroup`
 + **CLI** – `aws wafv2 describe-managed-rule-group --scope=<CLOUDFRONT|REGIONAL> --vendor-name <vendor> --name <managedrule_name>`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

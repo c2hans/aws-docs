@@ -59,3 +59,7 @@ Pricing is based on the instances you use, not the number of fleets. Running fiv
 + **Apply a queue prioritization strategy.** You can customize how a queue prioritizes where to place game sessions (see [Prioritize game session placement](queues-design-priority.md) for more details). For Spot-optimized queues, prioritizing by cost ensures that low-cost Spot fleets are used whenever possible.
 
   You can also prioritize certain fleets by specifying a destination order. For example, some users designate a set of primary fleets for regular use and also a set of secondary fleets as backup. In this scenario, set the queue's destination order to list the primary fleets first. Then configure the queue's priority order with destination followed by cost.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

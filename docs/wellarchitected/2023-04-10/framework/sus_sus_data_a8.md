@@ -56,3 +56,7 @@ Use shared file systems or object storage to access common data and minimize the
 
  **Related examples:**
 + [ Architecting for sustainability - Minimize data movement across networks ](https://catalog.us-east-1.prod.workshops.aws/workshops/7c4f8394-8081-4737-aa1b-6ae811d46e0a/en-US)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

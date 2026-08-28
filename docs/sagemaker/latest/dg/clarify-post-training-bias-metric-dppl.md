@@ -28,3 +28,7 @@ For binary and multicategory facet labels, the normalized DPL values range over 
   This is referred to as *positive bias*.
 + Values of DPPL near zero indicate a more equal proportion of predicted positive outcomes between facets *a* and *d* and a value of zero indicates perfect demographic parity.
 + Negative DPPL values indicate that facet *d* has a higher proportion of predicted positive outcomes when compared with facet *a*. This is referred to as *negative bias*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

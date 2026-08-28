@@ -23,3 +23,7 @@ If you are creating a connection to an installed provider type, such as GitHub E
 To create or update a connection using the console, you use the CodePipeline edit action page on the console to choose your third-party provider. The console prompts you to create an installation or use an existing installation for the connection, and then use the console to create the connection. The console completes the handshake and moves the connection from `pending` to an `available` state automatically.
 
 ![Diagram showing the workflow of creating a connection to third-party provider.](http://docs.aws.amazon.com/dtconsole/latest/userguide/images/Connections-flowchart.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

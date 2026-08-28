@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances-monitoring-system-logs.html
 ---
 
-# Working with capacity provider system logs
+# Capacity provider system logs for Lambda Managed Instances
 <a name="lambda-managed-instances-monitoring-system-logs"></a>
 
 To help you monitor and troubleshoot your Lambda Managed Instances environment, Lambda automatically generates system logs for your capacity providers. You can view logs for capacity providers using the Lambda console, the CloudWatch console, the AWS Command Line Interface (AWS CLI), or the CloudWatch API. You can also route logs to Amazon S3 and Firehose using CloudWatch Logs subscription filters.
@@ -38,3 +38,7 @@ For more information about configuring logging controls, see the following topic
 + [Log-level filtering for capacity provider system logs](lambda-managed-instances-monitoring-log-levels.md)
 + [Capacity provider system log format](lambda-managed-instances-monitoring-log-format.md)
 + [Capacity provider system log event reference](lambda-managed-instances-monitoring-system-log-events.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

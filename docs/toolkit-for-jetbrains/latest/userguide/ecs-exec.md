@@ -102,3 +102,7 @@ To run commands against a container from within a shell, using the AWS Explorer,
 1. When you are satisfied with your settings, choose **Execute**.
 
 1. When the shell opens in a terminal, you can enter commands to interact with the container.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

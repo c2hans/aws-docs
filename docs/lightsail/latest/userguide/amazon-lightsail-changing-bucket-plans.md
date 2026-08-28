@@ -60,3 +60,7 @@ You must install the AWS CLI and configure it for Lightsail and Amazon S3 before
 
    You should see a result similar to the following example:
 ![Result of the update bucket bundle request](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-update-bucket-bundle-cli.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,4 +22,8 @@ You can also use the AWS Management Console instead of the Support App API to ma
 You must have a Business or Enterprise Support plan to use the Support App API.
 For more information about the Support App endpoints, see the [Support App in Slack endpoints](https://docs.aws.amazon.com/general/latest/gr/awssupport.html#awssupport_app_region) in the * AWS General Reference*.
 
-This document was last published on August 24, 2026.
+This document was last published on August 28, 2026.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support App in Slack. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query supportapp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ We strongly advise that you mount a remote folder as the location for backups. I
 1. Mount that folder to the AWS Elemental Conductor File node, as described in [Add Mount Points to AWS Elemental Conductor File Nodes](config-cond-cf-cg-mount.md).
 
 1. In **Path to Store Management** in the Conductor File's settings, type the path to the mount folder. The path will always start with `/data/mnt/`. For example: `/data/mnt/conductor1_backup`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor File. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cf2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

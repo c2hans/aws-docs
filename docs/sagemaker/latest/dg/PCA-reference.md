@@ -15,3 +15,7 @@ In the `CreateTrainingJob` request, you specify the training algorithm. You can 
 | algorithm\_mode | Mode for computing the principal components. <br />**Optional**<br />Valid values: *regular* or *randomized*<br />Default value: *regular* |
 | extra\_components | As the value increases, the solution becomes more accurate but the runtime and memory consumption increase linearly. The default, -1, means the maximum of 10 and `num_components`. Valid for *randomized* mode only.<br />**Optional**<br />Valid values: Non-negative integer or -1<br />Default value: -1 |
 | subtract\_mean | Indicates whether the data should be unbiased both during training and at inference. <br />**Optional**<br />Valid values: One of *true* or *false*<br />Default value: *true* |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

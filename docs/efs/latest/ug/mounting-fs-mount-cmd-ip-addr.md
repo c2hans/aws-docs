@@ -42,3 +42,7 @@ You must use `mountport=2049` in order to successfully connect to the EFS file s
 <a name="mount-fs-ip-addr-cloudformation"></a>
 
 You can also mount your file system using an IP address in an CloudFormation template. For more information, see [storage-efs-mountfilesystem-ip-addr.config](https://github.com/awsdocs/elastic-beanstalk-samples/blob/master/configuration-files/community-provided/instance-configuration/storage-efs-mountfilesystem-ip-addr.config) in the **awsdocs/elastic-beanstalk-samples** repository for community-provided configuration files on GitHub.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

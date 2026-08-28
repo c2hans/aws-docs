@@ -15,3 +15,7 @@ Datasimplifier error codes, prefixed with `BA-D`
 | --- | --- | --- | --- |
 | BA-D0001 | Fatal | Invalid parameterized GDG generation reference. Use signed integer format (-nnn to \+nnn) or 0. |  |
 | BA-D1001 | Fatal | Invalid empty union: Union must contain at least one child field. Ensure Union field is well-formed and follows the expected structure. |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

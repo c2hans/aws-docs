@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/upgradeguide/upgra
 1. Repeat the download to any other nodes that are changing versions. If you're changing versions on several nodes, copy the download file to every hardware unit at once. Doing so reduces downtime on each node as you start installing the new software.
 
 For detailed downloading steps, see [Downloading AWS Elemental Live software](detailed-dl-lv-upg.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

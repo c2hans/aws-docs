@@ -32,3 +32,7 @@ The migrate phase uses the patterns, processes, tools, resources, and methodolog
  Regardless of where you are in your migration journey, you can apply the Well-Architected Framework and Migration Lens perspectives. Each pillar of the Migration Lens has specific questions and best practices aligned per migration phase, so you can navigate to the most relevant recommendations related to your current migration phase, or review all recommendations per pillar across all the phases. The Well-Architected migration lifecycle, shown in Figure 2, takes the migration phases described and applies the Well-Architected Framework pillars to each phase.
 
 ![Figure 2- Well-Architected Migration](http://docs.aws.amazon.com/wellarchitected/latest/migration-lens/images/well-architected-migration.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

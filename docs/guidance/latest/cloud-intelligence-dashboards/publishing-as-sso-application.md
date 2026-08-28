@@ -85,3 +85,7 @@ Please follow the gif below for an overview of the process and also note the fol
 ![Quick Sight Sign-up process using IAM Identity Center](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/customizations/ssoapp/qs-portal.gif)
 
 For a more in-depth walkthrough of setting up AWS IAM Identity Center, please follow the blog [Simplify business intelligence identity management with Amazon Quick Sight and AWS IAM Identity Center](https://aws.amazon.com/blogs/business-intelligence/simplify-business-intelligence-identity-management-with-amazon-quicksight-and-aws-iam-identity-center/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

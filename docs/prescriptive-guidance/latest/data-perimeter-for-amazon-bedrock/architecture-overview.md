@@ -23,3 +23,7 @@ The resource perimeter ensures your AI identities only access trusted resources 
 + **VPC endpoint policies for AI traffic** - Secure Amazon Bedrock API calls carrying sensitive prompts and responses through private connectivity, with policies that validate both the calling application and target model are within your trust boundary
 
 These policies addressAmazon Bedrock's unique service integrations, such as when the service automatically accesses your Amazon S3 buckets for model training or when knowledge bases query your Amazon OpenSearch clusters during inference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

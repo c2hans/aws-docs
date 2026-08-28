@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-mysql-on-e
  If you have mission critical MySQL workloads that need more consistent IOPS, then you should use Provisioned IOPS volumes (io1 or io2).
 
  To maximize the benefit of both General Purpose and Provisioned IOPS volume types, AWS recommends using EBS-optimized EC2 instances and tuning your database parameters to optimize storage consumption. This ensures dedicated network bandwidth for your EBS volumes. You can cost effectively operate your MySQL database in AWS without sacrificing performance by taking advantage of the durability, availability, and elasticity of the EBS volumes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

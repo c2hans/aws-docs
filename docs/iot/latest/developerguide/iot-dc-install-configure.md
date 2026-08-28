@@ -137,3 +137,7 @@ This procedure runs the AWS IoT Device Client so that it publishes a single MQTT
 1. In the terminal window, enter **^C** (Ctrl-C) to stop the AWS IoT Device Client.
 
 After you've demonstrated that the AWS IoT Device Client is running correctly on your Raspberry Pi and can communicate with AWS IoT, you can continue to the [Tutorial: Demonstrate MQTT message communication with the AWS IoT Device Client](iot-dc-testconn.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

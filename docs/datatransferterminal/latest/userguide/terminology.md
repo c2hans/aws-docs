@@ -34,3 +34,7 @@ Data transfer specialist
 <a name="facilities"></a>
 
 Data Transfer Terminal facilities are data hubs, co-owned and managed by one or more service providers. Each facility requires Data Transfer Terminal Data transfer specialists to provide a government issued, proof of identity that must match their reservation records to access the Data Transfer Terminal suite.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Transfer Terminal. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datatransferterminal` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

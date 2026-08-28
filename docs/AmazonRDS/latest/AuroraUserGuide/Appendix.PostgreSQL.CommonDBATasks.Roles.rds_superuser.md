@@ -44,3 +44,7 @@ In the following list, you find some of the other predefined roles that are crea
 **Note**
  Aurora PostgreSQL versions 15.2 and 14.7 introduced restrictive behavior of the `rds_superuser` role. An Aurora PostgreSQL user needs to be granted the `CONNECT` privilege on the corresponding database to connect even if the user is granted the `rds_superuser` role. Prior to Aurora PostgreSQL versions 14.7 and 15.2, a user was able to connect to any database and system table if the user was granted the `rds_superuser` role. This restrictive behavior aligns with the AWS and Amazon Aurora commitments to the continuous improvement of security.
 Please update the respective logic in your applications if the above enhancement has an impact.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

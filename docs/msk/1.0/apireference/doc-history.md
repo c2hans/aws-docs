@@ -15,3 +15,7 @@ The following table describes the documentation for this release of the *Amazon 
 | Amazon MSK GA release | This is the general-availability release of the Amazon MSK API Reference to support tiered storage. | October 26, 2022 |
 | Amazon MSK GA release | This is the general-availability release of the Amazon MSK API Reference. | May 30, 2019 |
 | Amazon MSK preview release | This is the preview release of the Amazon MSK API Reference. | November 29, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

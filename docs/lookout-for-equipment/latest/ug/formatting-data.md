@@ -129,3 +129,7 @@ The dataset that you submit should cover a period of time during which your asse
 If your dataset does not include examples of all of your asset's normal operating modes, then Lookout for Equipment may find more false positives. In other words, it may identify some of your operating modes, with which it is not familiar, as anomalies.
 
 In such cases, you can help Lookout for Equipment accurately identify anomalies by labeling your data. For more information, see [Understanding labeling](understanding-labeling.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

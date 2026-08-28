@@ -23,3 +23,7 @@ Follow the procedure in [Set up inputs to correct metadata](color-space-input-se
 During ingest, MediaLive will create metadata of the specific color space for all missing, unmarked, and unknown video content. It won't change any supported color space metadata. (It will *fall back *to the existing metadata.) Therefore, it won't change the accurately marked Rec. 601 or the accurately marked HDR10 or HLG content.
 
 After ingest, all the content in the input will be consistently marked, even though the content is in several color spaces.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

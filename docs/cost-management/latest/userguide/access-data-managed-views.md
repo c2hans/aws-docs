@@ -32,3 +32,7 @@ source_url: https://docs.aws.amazon.com/cost-management/latest/userguide/access-
 1. Select the desired billing view and select **Choose**.
 
 You can analyze billing transfer showback/chargeback views and billing group views in AWS Cost and Usage Report (during beta, only legacy AWS Cost and Usage Report is supported), Cost Explorer, and the **Bills** page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

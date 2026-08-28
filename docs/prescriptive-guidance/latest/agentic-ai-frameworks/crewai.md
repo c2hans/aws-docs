@@ -48,3 +48,7 @@ Key elements of the implementation include:
 + **Blueprints and open sourcing** – AWS and CrewAI released [reference designs](https://aws.amazon.com/blogs/machine-learning/build-agentic-systems-with-crewai-and-amazon-bedrock) that map CrewAI agents to Amazon Bedrock models and observability tools. They also released exemplar systems such as a multi‑agent AWS security audit crew, code modernization flows, and consumer packaged goods (CPG) back‑office automation.
 + **Observability stack integration** – The solution embeds monitoring with Amazon CloudWatch, AgentOps, and LangFuse, enabling traceability and debugging from proof‑of‑concept to production.
 + **Demonstrated return on investment (ROI)** – Early pilots showcase major improvements—70 percent faster execution for a large code modernization project and about 90 percent reduction in processing time for a CPG back‑office flow.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

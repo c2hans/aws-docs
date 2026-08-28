@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 +  Amazon Elastic File System (Amazon EFS) — Amazon EFS supports network file system version 4 protocol and allows multiple Amazon EC2 instances to interact with EFS. However, the maximum throughput I/O is 500 MB per second per instance. For more information on limits, refer to the [EFS documentation](https://docs.aws.amazon.com/efs/latest/ug/limits.html#limits-efs-resources-per-account-per-region).
 
  Multiple EFS file systems per instance are required to overcome this I/O throughput limitation in addition to a single NIC per AWS EC2 instance. These file systems cannot be striped together. These file systems have a total of 512 hard locks for any particular file across all users and instances connected to this system.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

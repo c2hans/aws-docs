@@ -55,3 +55,7 @@ The `pg_replication_slots` view shows you the current state of your replication 
 + **`TransactionLogsDiskUsage`** – Shows how much storage is being used for WAL data. When a read replica lags significantly, the value of this metric can increase substantially.
 
 To learn more about using Amazon CloudWatch and its metrics for RDS for PostgreSQL, see [Monitoring Amazon RDS metrics with Amazon CloudWatch](monitoring-cloudwatch.md). For more information about monitoring streaming replication on your RDS for PostgreSQL DB instances, see [Best practices for Amazon RDS PostgreSQL replication](https://aws.amazon.com/blogs/database/best-practices-for-amazon-rds-postgresql-replication/) on the *AWS Database Blog*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

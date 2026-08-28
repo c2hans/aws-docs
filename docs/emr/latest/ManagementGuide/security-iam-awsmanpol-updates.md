@@ -21,3 +21,7 @@ View details about updates to AWS managed policies for Amazon EMR since this ser
 | [`AmazonEMRServicePolicy_v2`](emr-iam-role.md) – New policy | Adds a prerequisite that users must add user tags to resources before they can use this policy. | March 11, 2021 |
 | [`AmazonEMRReadOnlyAccessPolicy_v2`](emr-managed-policy-readonly-v2.md) – New policy | Permissions allow only specified elasticmapreduce read-only actions. Access to Amazon S3 is access not allowed by default. | March 11, 2021 |
 | Amazon EMR started tracking changes | Amazon EMR started tracking changes for its AWS managed policies. | March 11, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

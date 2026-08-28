@@ -20,3 +20,7 @@ Complete the following procedure to configure a subscription target in an AWS se
      + For Amazon Redshift, choose either **Cluster** or **Serverless**, and then specify the **Redshift Credentials**, including a new or existing AWS secret, a cluster or serverless workgroup you want to use when creating environments, the database you want to use when creating environments, and the schema within the specified database.
    + **Permissions** - specify a manage access role that will provide Amazon DataZone with authorization to ingest and manage access to tables in AWS Lake Formation (for AWS Glue) or that will provide Amazon DataZone with authorization to ingest and manage access to tables in Amazon Redshift.
    + **Use for data consumption** - in Amazon DataZone, you can publish data to the data catalog through a data source that allows for metadata ingestion. Specify whether to also add this subscription target as a data source.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ Based on your scenario, do one of the following:
 + To retain the subscriber but stop future notifications to the subscriber, use the [DeleteSubscriberNotification](https://docs.aws.amazon.com/security-lake/latest/APIReference/API_DeleteSubscriberNotification.html) operation of the Security Lake API. If you're using the AWS Command Line Interface (AWS CLI), run the run the [delete-subscriber-notification](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/securitylake/delete-subscriber-notification.html) command.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

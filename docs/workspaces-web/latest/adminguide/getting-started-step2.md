@@ -22,3 +22,7 @@ If you already completed these steps in [Configuring your identity provider for 
 1. The web browser launches, displaying your startup URL and any other additional behavior configured through your browser policy settings.
 
 1. You can now browse to connected websites by choosing links or enter URLs into the address bar.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

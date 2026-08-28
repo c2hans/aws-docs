@@ -19,11 +19,11 @@ Capacity provider level metrics provide visibility into overall resource utiliza
 + **CapacityProviderName** - The name of your capacity provider
 + **InstanceType** - The EC2 instance type
 
-**Resource utilization metrics:**
+The following resource utilization metrics are available:
 + **CPUUtilization** - The percentage of CPU utilization across instances in the capacity provider
 + **MemoryUtilization** - The percentage of memory utilization across instances in the capacity provider
 
-**Capacity metrics:**
+The following capacity metrics are available:
 + **vCPUAvailable** - The amount of vCPU available on instances for allocation (in count)
 + **MemoryAvailable** - The amount of memory available on instances for allocation (in bytes)
 + **vCPUAllocated** - The amount of vCPU allocated on instances for execution environments (in count)
@@ -92,3 +92,7 @@ Monitor capacity metrics to verify sufficient resources are available for your w
 + Review runtime-specific guides for [Java](lambda-managed-instances-java-runtime.md), [Node.js](lambda-managed-instances-nodejs-runtime.md), and [Python](lambda-managed-instances-python-runtime.md)
 + Configure [VPC connectivity for your capacity providers](lambda-managed-instances-networking.md)
 + Understand [security and permissions for Lambda Managed Instances](lambda-managed-instances-security.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

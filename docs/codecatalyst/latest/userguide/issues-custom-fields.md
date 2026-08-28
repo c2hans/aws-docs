@@ -20,3 +20,7 @@ In CodeCatalyst, you create custom fields by either adding them when you create 
 <a name="issues-delete-custom-field"></a>
 
  To delete a custom field, you must remove the custom field from each issue it is added to. When a custom field is deleted, you will no longer see the custom field in **Filter**. You can use filters to view all issues with a custom field, and remove them by editing the issues. For more information, see [Finding and viewing issues](issues-view.md) and [Editing an issue](issues-edit-issue.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

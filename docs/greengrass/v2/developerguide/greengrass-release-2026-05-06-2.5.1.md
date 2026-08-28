@@ -24,3 +24,7 @@ The following table lists components provided by AWS that include new and update
 | **Component** | **Details** |
 | --- | --- |
 | [Greengrass nucleus lite](greengrass-nucleus-lite-component.md)<br />Version 2.5.1 | <a name="changelog-nucleus-lite-2.5.1"></a> **Bug fixes and improvements**<br />   Fixes an issue where `SubscribeToConfigurationUpdate` could notify subscribers when a configuration value did not actually change.   Fixes an issue where the deployment source ARN of components could be overwritten by unrelated deployments.   Fixes an issue where HTTP artifact download retries did not trigger on retryable error codes such as 5xx and 429.     |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

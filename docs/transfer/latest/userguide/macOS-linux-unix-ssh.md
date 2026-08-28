@@ -82,3 +82,7 @@ However, if you are generating a server host key, you *must* specify an empty pa
 
       The new key is listed in the SSH public key pane.
 ![The AWS Transfer Family console, showing the newly added public key in the SSH public keys section.](http://docs.aws.amazon.com/transfer/latest/userguide/images/edit-user-add-key-03.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

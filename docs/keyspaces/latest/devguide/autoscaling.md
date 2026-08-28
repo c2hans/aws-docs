@@ -64,3 +64,7 @@ Before you begin using Amazon Keyspaces automatic scaling, you should be aware o
 + If you use the console to create a table with provisioned throughput capacity, Amazon Keyspaces automatic scaling is enabled by default. You can modify your automatic scaling settings at any time. For more information, see [Turn off Amazon Keyspaces auto scaling for a table](autoscaling.turnoff.md).
 + If you're using CloudFormation to create scaling policies, you should manage the scaling policies from CloudFormation so that the stack is in sync with the stack template. If you change scaling policies from Amazon Keyspaces, they will get overwritten with the original values from the CloudFormation stack template when the stack is reset.
 + If you use CloudTrail to monitor Amazon Keyspaces automatic scaling, you might see alerts for calls made by Application Auto Scaling as part of its configuration validation process. You can filter out these alerts by using the `invokedBy` field, which contains `application-autoscaling.amazonaws.com` for these validation checks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

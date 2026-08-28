@@ -250,3 +250,7 @@ This section provides steps to help you resolve common errors returned by the Ap
 | --- | --- | --- | --- |
 | Unable to add more than 60 monitor metrics. | `Component cannot have more than 60 monitored metric` | The current metric limit is 60 monitored metrics per component. | Remove unnecessary metrics to adhere to the limit. |
 | No SAP metrics or alarms appear after the onboarding process | The `run` command on the `AWS-ConfigureAWSPackage` failed in AWS Systems Manager. The output shows the error: `CT-LIBRARY error:``ct_connect(): protocol specific layer: external error: The attempt to connect to the server failed` | The username and password might be incorrect. | Verify that the username and password are valid, then rerun the onboarding process. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

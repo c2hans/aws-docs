@@ -291,3 +291,7 @@ Customers are responsible for:
 AWS does not use agent data, chat messages, or data from integrated data sources to train models or improve the product. The AWS DevOps Agent Space uses customer in-product feedback to improve the agent’s responses and investigations, but AWS does not use it to improve the service itself.
 
 To provide the service and assess its performance, we may collect operational signals about your use of AWS DevOps Agent's Release Manager, such as metrics based on your feedback to the release readiness review comments (such as whether you fixed a flagged issue, agreed to address it later, disagreed with it, or implemented a suggested code change).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

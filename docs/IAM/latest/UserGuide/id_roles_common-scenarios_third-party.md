@@ -85,3 +85,7 @@ The following resources can help you learn more about providing access to AWS ac
 + To learn how to allow others to perform actions in your AWS account, see [Create a role using custom trust policies](id_roles_create_for-custom.md).
 + To learn how to grant permission to switch to a role, see [Grant a user permissions to switch roles](id_roles_use_permissions-to-switch.md)
 + To learn how to create and provide trusted users with temporary security credentials, see [Permissions for temporary security credentials](id_credentials_temp_control-access.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

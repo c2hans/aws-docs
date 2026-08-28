@@ -106,3 +106,7 @@ On February 11, 2022, AWS IoT Greengrass ended maintenance for the option to [in
 <a name="apt-repository-end-of-maintenance"></a>
 
 <a name="gg-snap-support-ends"></a>On December 31, 2023, AWS IoT Greengrass will end maintenance for the AWS IoT Greengrass core software version 1.11.x Snap that is published on [ snapcraft.io ](https://snapcraft.io/aws-iot-greengrass). Devices currently running the Snap will continue to work until further notice. However, the AWS IoT Greengrass core Snap will no longer receive security patches or bug fixes after maintenance ends.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

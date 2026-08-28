@@ -42,3 +42,7 @@ You can view log data for the AWS AppConfig Agent Lambda extension in the AWS La
 ```
 [appconfig agent] 2024/05/07 04:19:01 ERROR retrieve failure for 'SourceEventConfig:SourceEventConfigEnvironment:SourceEventConfigProfile': StartConfigurationSession: api error AccessDenied: User: arn:aws:sts::0123456789:assumed-role/us-east-1-LambdaRole/extension1 is not authorized to perform: sts:AssumeRole on resource: arn:aws:iam::0123456789:role/test1 (retry in 60s)
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,3 +42,7 @@ To Edit or Bulk Edit:
 You cannot configure per-channel auto-accept on user creation when creating users through importing a .csv template; instead, first create the users then use Bulk Edit to modify their per-channel auto-accept settings.
 
 You can't use the CSV template to edit information for existing users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

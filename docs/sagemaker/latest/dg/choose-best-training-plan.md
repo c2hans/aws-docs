@@ -21,3 +21,7 @@ Training plans cannot be shared across AWS accounts or within your AWS Organizat
    + Once payment is successfully processed, the plan status changes to `Scheduled` and the plan becomes available for use.
 
 ![SageMaker AI console showing the "Review and purchase" page for a training plan. The page displays training plan details, segment information, price, plan name, and tags. Options to edit, cancel, go back, or create the plan are available.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/training-plans/tp-review-and-purchase-training-plan.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

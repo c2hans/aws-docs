@@ -12,3 +12,7 @@ Now that you've on boarded an AMS account, you'll want to read more AMS document
 + [AMS User Guide](https://docs.aws.amazon.com/managedservices/latest/userguide/index.html): The AMS User Guide describes AMS functionality, lists key terms, operations, interfaces and provides an overview of a typical AMS managed-infrastructure architecture. Additionally, access management details and AMS defaults are given. Also provided are detailed descriptions of how to use the AMS change management system and several walkthroughs are provided. Additional management concepts are described as well.
 + [AMS API Reference](https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/index.html): This API reference provides descriptions of all API calls, including request, response, and examples.
 + [AMS Application Guide](https://docs.aws.amazon.com/managedservices/latest/appguide/index.html): The AMS Application Guide describes different options and methods for deploying and maintaining your applications in AMS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

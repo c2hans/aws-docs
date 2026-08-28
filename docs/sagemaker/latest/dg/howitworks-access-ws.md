@@ -23,3 +23,7 @@ The URL that you get from a call to [  `CreatePresignedNotebookInstanceUrl`](h
   To get the URL for the notebook instance, call the [ `CreatePresignedNotebookInstanceUrl`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreatePresignedNotebookInstanceUrl.html) API and use the URL that the API returns to open the notebook instance.
 
 Use the Jupyter notebook dashboard to create and manage notebooks and to write code. For more information about Jupyter notebooks, see [http://jupyter.org/documentation.html](http://jupyter.org/documentation.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

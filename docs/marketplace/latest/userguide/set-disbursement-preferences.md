@@ -47,3 +47,7 @@ After setting your disbursement preferences, you may need to complete additional
 + [Complete bank account verification](complete-bank-verification.md) to begin receiving payments
 
 For detailed information about managing your disbursement preferences, schedules, and currencies after registration, see [Managing disbursements](managing-disbursements.md) in [Managing your seller account](seller-account-management.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

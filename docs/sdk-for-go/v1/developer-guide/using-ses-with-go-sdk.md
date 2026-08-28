@@ -15,3 +15,7 @@ Amazon Simple Email Service (Amazon SES) is an email platform that provides an e
 + [Sending a Message to an Email Address in Amazon SES](ses-example-send-email.md)
 + [Deleting an Email Address in Amazon SES](ses-example-delete-address.md)
 + [Getting Amazon SES Statistics](ses-example-get-statistics.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Go. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-go` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

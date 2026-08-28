@@ -68,3 +68,7 @@ The document generation component uses the following workflow:
 <a name="ui-view-doc-generation"></a>
 
 The AI-generated Markdown analysis report is shown directly in the UI with a structured, readable format. Users can preview findings, risks, and recommendations in the browser and download the full Markdown file for offline reference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

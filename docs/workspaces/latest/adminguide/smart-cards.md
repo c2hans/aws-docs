@@ -410,3 +410,7 @@ KRB5_TRACE=/dev/stdout kinit -V mmajor
 If this command succeeds, the issue is most likely in the mapping from the WorkSpace username to the Kerberos principal name. Check the `[appdefaults]/pam/mappings` section in the `/etc/krb5.conf` file.
 
 If this command doesn't succeed, but a password-based `kinit` command does succeed, check the `pkinit_`-related configurations in the `/etc/krb5.conf` file. For example, if the smart card contains more than one certificate, you might need to make changes to `pkinit_cert_match`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

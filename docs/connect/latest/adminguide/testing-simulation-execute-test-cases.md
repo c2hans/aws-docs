@@ -41,3 +41,7 @@ To prevent simulated contacts from reaching live agents, consider these approach
 You can also view all the test runs across all test cases in the **Test runs** tab. This page lists all of the test executions in the same Connect Customer instance. You will only see the detail test results for the test cases you created or test cases you have permission to view.
 
 ![Test runs tab showing eight test executions with names, dates, and pass or fail outcomes.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-run-list-page.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

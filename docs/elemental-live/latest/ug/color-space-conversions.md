@@ -35,3 +35,7 @@ We can't make any promises about handling of video that uses an unsupported colo
 + Or it might fail to ingest the input, so that the event follows the input loss behavior routine (for example, it might display a slate in the output).
 
 Elemental Live is never able to convert an unsupported color space to another color space.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

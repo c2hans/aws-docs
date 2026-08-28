@@ -25,3 +25,7 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Working with AWS Systems Manager Incident Manager and interface VPC endpoints (AWS PrivateLink)](vpc-interface-endpoints.md)
 + [Configuration and vulnerability analysis in Incident Manager](vulnerability.md)
 + [Security best practices in AWS Systems Manager Incident Manager](security-best-practices.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

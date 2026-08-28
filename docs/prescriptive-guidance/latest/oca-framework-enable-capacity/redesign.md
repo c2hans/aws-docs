@@ -51,3 +51,7 @@ During a transformation effort, the OCA Framework includes the following organiz
 1. Assess the effectiveness of the organization design.
 
 Workstream and role redesign is crucial for aligning your organization with new cloud operating models. By focusing on variety, ownership, autonomy, task identity, recognition, and collaboration, you can create roles that support your cloud transformation goals. Regular review and adjustment of roles, along with the appropriate training and development plans, will help ensure that your workforce remains aligned with your evolving cloud strategy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

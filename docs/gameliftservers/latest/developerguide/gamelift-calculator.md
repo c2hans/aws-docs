@@ -82,3 +82,7 @@ On the [Configure Amazon GameLift Servers page](https://calculator.aws/#/createC
   If you chose the **Per player** DTO estimate type, then enter your game's estimated DTO usage per player in KB/sec. The default value is **4**.
 
 When you're done configuring your Amazon GameLift Servers pricing estimate, choose **Add to my estimate**. For more information about creating and managing estimates in AWS Pricing Calculator, see [Create an estimate, configure a service, and add more services](https://docs.aws.amazon.com/pricing-calculator/latest/userguide/create-estimate.html) in the *AWS Pricing Calculator User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

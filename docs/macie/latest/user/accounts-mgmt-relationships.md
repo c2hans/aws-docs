@@ -77,3 +77,7 @@ A dash (–) indicates that the account can’t perform the task.
    For a member of an AWS Organizations organization to disable Macie, the administrator must first disassociate the member's account from their administrator account. In an invitation-based organization, the member can disassociate their account from its administrator account, and then disable Macie.
 
 1. <a name="accounts-mgmt-relationships-note-delete"></a>The administrator for an organization in AWS Organizations can delete an association with a member account after they disassociate the account from their administrator account. The account continues to appear in the administrator's account inventory, but its status indicates that it's not a member account. In an invitation-based organization, an administrator and a member can delete an association with another account after they disassociate their account from the other account. The other account then stops appearing in their account inventory.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

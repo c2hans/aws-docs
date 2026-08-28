@@ -79,3 +79,7 @@ The following links take you to GitHub.
 + [SFDC apex s3 sample.txt](https://github.com/aws-samples/partner-crm-integration-samples/blob/main/code-snippets/SFDC_apex_s3_sample.txt)
 + [Apex\_get\_files\_from\_s3\_ace\_partner\_test.cls](https://github.com/aws-samples/partner-crm-integration-samples/blob/main/code-snippets/Apex_get_files_from_s3_ace_partner_test.cls)
 + [s3\_ace\_partner\_test.cls](https://github.com/aws-samples/partner-crm-integration-samples/blob/main/code-snippets/s3_ace_partner_test.cls)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

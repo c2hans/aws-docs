@@ -40,15 +40,6 @@ After promotion, the promoted instance inherits the following settings from the 
 + Preferred backup window
 + Multi-AZ configuration
 
-## What is evaluated as part of plan evaluation
-<a name="rds-promote-read-replica-block-eval"></a>
+## See also
 
-When Region switch evaluates your plan, Region switch performs several checks on your Amazon RDS execution block configuration and permissions. Region switch verifies that the following is correct:
-+ The Amazon RDS database instances specified in the configuration exist.
-+ The database instances in the non-primary Regions are read replicas.
-+ The read replicas are in an available state.
-+ The database instances are properly configured for cross-Region replication.
-
-Region switch also validates that the plan's IAM role has the required permissions for Amazon RDS read replica promotion. For more information about the required permissions for Region switch execution blocks, see [Identity-based policy examples for Region switch in ARC](security_iam_id-based-policy-examples-region-switch.md).
-
-The correct IAM permissions are essential for the proper functioning of the Amazon RDS execution block. If any of these validations fail, Region switch returns warnings that there are issues, and provides specific error messages to help you resolve the permissions or configuration issues. This ensures that your plan has the necessary access to manage and interact with Amazon RDS during when this step runs during a plan execution.
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

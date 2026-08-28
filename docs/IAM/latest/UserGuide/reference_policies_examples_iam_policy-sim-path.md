@@ -32,3 +32,7 @@ This example shows how you might create an identity-based policy that allows usi
 
 **Note**
 To create a policy that allows using the policy simulator console for those users that have the path `Department/Development`, see [IAM: Access the policy simulator console based on user path](reference_policies_examples_iam_policy-sim-path-console.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

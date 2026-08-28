@@ -23,3 +23,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
 <a name="aws-elemental-mediaconvert-quotas"></a>
 
  All MediaConvert jobs run in a queue. If you don't specify a queue when you create your job, MediaConvert sends it to the default on-demand queue. For information about how many queues you can create and how many jobs those queues can run, refer to [How queues work in AWS Elemental MediaConvert](https://docs.aws.amazon.com/mediaconvert/latest/ug/working-with-queues.html) in the *MediaConvert User Guide* and see [Service quotas](https://docs.aws.amazon.com/general/latest/gr/mediaconvert.html#limits_mediaconvert) in the *AWS General Reference Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Video on Demand on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

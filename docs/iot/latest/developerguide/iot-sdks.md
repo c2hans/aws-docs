@@ -158,3 +158,7 @@ These are earlier versions of AWS IoT Device SDKs that have been replaced by the
 + [AWS IoT Device SDK for Java Readme](https://github.com/aws/aws-iot-device-sdk-java#new-version-available)
 + [AWS IoT Device SDK for JavaScript on GitHub](https://github.com/aws/aws-iot-device-sdk-js)
 + [AWS IoT Device SDK for JavaScript Readme](https://github.com/aws/aws-iot-device-sdk-js#new-version-available)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

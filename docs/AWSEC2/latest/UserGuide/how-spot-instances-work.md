@@ -97,3 +97,7 @@ To run a Dedicated Spot Instance, do one of the following:
 + Request a Spot Instance in a VPC with an instance tenancy of `dedicated`. For more information, see [Launch Dedicated Instances into a VPC with default tenancy](dedicatedinstancesintovpc.md). You can't request a Spot Instance with a tenancy of `default` if you request it in a VPC with an instance tenancy of `dedicated`.
 
 All instance families support Dedicated Spot Instances except T instances. For each supported instance family, only the largest instance size or metal size supports Dedicated Spot Instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

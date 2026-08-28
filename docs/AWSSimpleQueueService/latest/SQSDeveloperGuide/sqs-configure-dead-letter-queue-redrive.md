@@ -331,3 +331,7 @@ Follow these steps to configure the minimum permissions required for handling a 
 The BoolIfExists operator with `aws:ViaAWSService` condition ensures that requests are allowed when they come from services while maintaining VPC restrictions for direct access. This can be simpler to understand and maintain, as it directly checks if the request is made by an AWS service rather than checking which service made the last call.
 
  For more information on condition keys used in IAM and resource policies, see IAM JSON policy elements: Condition.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

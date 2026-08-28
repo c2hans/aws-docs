@@ -36,3 +36,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 1.  Configure S3 Replication with replication metrics enabled to verify data consistency across buckets.
 
 1.  For sensitive research workloads, embed integrity checks directly into processing pipelines (for example, validating SHA-256 digests before and after transformation).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

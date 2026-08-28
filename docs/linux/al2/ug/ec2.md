@@ -170,3 +170,7 @@ For AL2023, the repository configuration has changed compared to AL1 and AL2. Fo
 Versions up to AL2023 were configured to deliver a continuous flow of updates to roll from one minor version of Amazon Linux to the next version, also called *rolling releases*. As a best practice, we recommend you update your AMI to the latest available AMI rather than launching old AMIs and applying updates.
 
 In-place upgrades are not supported between major Amazon Linux versions, such as from AL1 to AL2 or from AL2 to AL2023. For more information, see [Amazon Linux availability](what-is-amazon-linux.md#amazon-linux-availability).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

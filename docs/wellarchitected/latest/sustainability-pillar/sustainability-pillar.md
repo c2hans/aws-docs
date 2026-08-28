@@ -25,3 +25,7 @@ Publication date: **November 6, 2024** ([Document revisions](document-revisions.
  This document focuses on the sustainability pillar, and within the scope of sustainability, it focuses on environmental sustainability. It’s intended for those in technology roles, such as chief technology officers (CTOs), architects, developers, and operations team members.
 
  After reading this document, you will understand current AWS recommendations and strategies to use when designing cloud architectures with sustainability in mind. By adopting the practices in this paper, you can build architectures that maximize efficiency and reduce waste.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

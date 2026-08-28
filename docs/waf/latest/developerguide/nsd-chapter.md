@@ -32,3 +32,7 @@ AWS accounts have default quotas, formerly referred to as limits, for each AWS s
 | Maximum Q prompts per organization per month | 200 |
 
 When network security director reaches the maximum number of resources that it can process in a network analysis or the maximum number of edges per resource, the network analysis fails. You are not charged for the failed network analysis.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ The AWS Systems Manager Change Manager integration for AWS Service Management Co
 | Default role name that allows the Automation to perform the actions on your behalf  | The setting contains the default role to create change requests from AWS change templates. The setting is available if the user does not fill in the `AutomationAssumeRole` field when requesting a change from AWS Systems Manager Change Manager. <br />The value is case-sensitive and must exist in every account using the AWS Systems Manager Change Manager. |
 | AWS CloudTrail Lake: Event Data Store Name | Defines the Name of the AWS CloudTrail Lake: Event Data Store Name to target.<br />Note that to use AWS Systems Manager Change Manager's CloudTrail Lake Event integration an Event Data Store with this Name MUST exist in all regions defined in AWS Accounts with AWS Systems Manager Change Manager enabled. |
 | AWS CloudTrail Lake: Maximum number of events to retrieve per synchronization | Default : 1000 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

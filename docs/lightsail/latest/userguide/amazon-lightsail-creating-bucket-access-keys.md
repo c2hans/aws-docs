@@ -42,3 +42,7 @@ Store your access key ID and secret access key in a secure location. If it becom
    The new access key is listed in the **Access keys** section of the page. If your access key becomes compromised, or lost, delete it and create a new one.
 **Note**
 The **Last used** column displayed next to each access key identifies when the key was last used. A dash is displayed when the key has not been used. Expand the access key node to view the service and AWS Region where the key was last used.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

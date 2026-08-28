@@ -66,3 +66,7 @@ Multi-Region Access Points use a similar accelerated transfer mechanism as Trans
 + [Configuring replication for use with Multi-Region Access Points](MultiRegionAccessPointBucketReplication.md)
 + [Using Multi-Region Access Points with supported API operations](MrapOperations.md)
 + [Monitoring and logging requests made through a Multi-Region Access Point to underlying resources](MultiRegionAccessPointMonitoring.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

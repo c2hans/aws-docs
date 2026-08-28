@@ -207,3 +207,7 @@ If you know the specific directories where you are updating Amazon S3 content ou
 + Send an HTTP POST request to invoke the `RefreshCache` operation with your desired parameters through the Storage Gateway API. For more information, see [RefreshCache](https://docs.aws.amazon.com/storagegateway/latest/APIReference/API_RefreshCache.html) in the *AWS Storage Gateway API Reference*.
 **Note**
 Sending the `RefreshCache` request only initiates the cache refresh operation. When the cache refresh completes, it doesn't necessarily mean that the file refresh is complete. To determine that the file refresh operation is complete before you check for new files on the gateway file share, use the `refresh-complete` notification. To do this, you can subscribe to be notified through an Amazon CloudWatch event. For more information, see [Getting notified about file operations](monitoring-file-gateway.md#get-notification).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

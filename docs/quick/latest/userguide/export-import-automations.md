@@ -64,3 +64,7 @@ To import an automation version, complete the following steps.
 + You can export one automation version per operation.
 + Action connectors, credentials, and other dependencies are not included in the export. You must configure these separately in the destination environment.
 + For cross-account transfers, both the source and destination accounts must have Amazon Quick Automate enabled.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

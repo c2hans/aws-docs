@@ -17,3 +17,7 @@ While IAM is the primary AWS service you will use to manage IAM resources, all o
   The AWS SDKs work with IAM by handling the authentication and authorization process, managing AWS credentials, and respecting the permissions and policies defined in IAM to ensure your application can only access the resources it is authorized to use. The SDKs provide mechanisms for obtaining and using temporary security credentials, as well as validating the permissions required for your application's operations.
 
 For a list of AWS services that work with IAM and the IAM features the services support, see [AWS services that work with IAM](reference_aws-services-that-work-with-iam.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ For information about copying, sharing, or exporting DB snapshots, see the follo
 + [Exporting DB snapshot data to Amazon S3 for Amazon RDS](USER_ExportSnapshot.md)
 
 For information about viewing automated backups managed by AWS Backup, see [Using AWS Backup to manage automated backups for Amazon RDS](AutomatedBackups.AWSBackup.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

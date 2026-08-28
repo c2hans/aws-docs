@@ -31,7 +31,7 @@ The following considerations apply when splitting off capacity from one reservat
 + When you split the used capacity, the eligible instances are randomly selected. You cannot specify which running instances are split. If a sufficient number of eligible instances are not found to fulfill the split quantity, the split operation will fail.
 + The maximum quantity of instances to split from an existing reservation is the size of the reservation minus one. For example, if your reservation's total capacity is 5 instances, you can split a maximum of 4 instances into a new reservation.
 + **Future-dated Capacity Reservations ** – You can't split capacity for a future-dated Capacity Reservation during the commitment period.
-+ **Resource groups** – If the existing Capacity Reservation belongs to a resource group, the new Capacity Reservation will not be automatically added to the resource group. You can add the new Capacity Reservation to a resource group after it is created, if necessary.
++ **Capacity Reservation Resource Groups** – If the existing Capacity Reservation belongs to a Capacity Reservation Resource Group, the new Capacity Reservation will not be automatically added to the Capacity Reservation Resource Group. You can add the new Capacity Reservation to a Capacity Reservation Resource Group after it is created, if necessary.
 + **Sharing** – If the existing Capacity Reservation is shared with a consumer account, the new Capacity Reservation will not be automatically shared with the consumer account. You can share the new Capacity Reservation after it is created, if necessary.
 + **Cluster placement group** – If the existing Capacity Reservation is part of a cluster placement group, the new Capacity Reservation will be created in the same cluster placement group.
 
@@ -123,3 +123,7 @@ New-EC2CapacityReservationBySplitting `
 ```
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

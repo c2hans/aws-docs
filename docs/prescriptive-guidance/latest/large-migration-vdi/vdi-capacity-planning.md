@@ -24,3 +24,7 @@ When developing a capacity reservation model, consider and answer the following:
 To answer these questions, you can use the following matrix. The matrix includes an example of how you might distribute instance types for a total of 5,000 VDI users.
 
 ![Decision chart for how plan reservations for EC2 instances for VDI users](http://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-vdi/images/guide-img/4216869b-a3c7-4a1b-8529-279b6b36f090/images/6c283fb5-936a-4e28-a7d0-dab2a44f888d.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

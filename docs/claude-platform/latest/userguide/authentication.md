@@ -55,3 +55,7 @@ For the authoritative precedence order, supported environment variables, and con
 <a name="_workspace_id"></a>
 
 Every data plane request must include the workspace ID in the `anthropic-workspace-id` header. The Anthropic SDKs read this from the `ANTHROPIC_AWS_WORKSPACE_ID` environment variable by default, or you can pass `workspaceId` / `workspace_id` to the client constructor. If you use the base `Anthropic` client (not the Claude-on-AWS client), pass the header explicitly. See [Making requests](making-requests.md) for per-language examples and [Workspaces](workspaces.md) for how to locate your workspace ID.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Claude Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query claude-platform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpr
  However, WordPress was originally designed to run on a single server. As a result, it stores some data on the server’s local file system. When running WordPress in a multi-server configuration, this creates a problem because there is inconsistency across web servers. For example, if a user uploads a new image, it is only stored on one of the servers.
 
  This demonstrates why we need to improve the default WordPress running configuration to move important data to shared storage. The best practice architecture has a database as a separate layer outside the web server and makes use of shared storage to store user uploads, themes, and plugins.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

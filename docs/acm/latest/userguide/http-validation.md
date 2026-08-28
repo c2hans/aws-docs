@@ -93,3 +93,7 @@ To avoid validation problems, make sure that the content at the **Redirect From*
 Unlike DNS validation, you can't programmatically request that ACM automatically create your HTTP redirects. You must configure these redirects through your CloudFront distribution settings.
 
 For more information about how HTTP validation works, see [How HTTP redirects for ACM work](#http-redirects-overview).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

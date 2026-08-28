@@ -84,3 +84,7 @@ The following lists the extensions that can be installed by a user who has the `
 + [uuid-ossp](http://www.postgresql.org/docs/current/uuid-ossp.html)
 
 For lists of PostgreSQL extensions and versions that are supported by each available RDS for PostgreSQL version, see [PostgreSQL extensions supported on Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-extensions.html) in *Amazon RDS for PostgreSQL Release Notes*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

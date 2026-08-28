@@ -26,3 +26,7 @@ To get started using Global Accelerator, you follow these general steps:
    + For a custom routing accelerator, you add one or more Amazon VPC (VPC) subnets with up to thousands of Amazon EC2 instance destinations.
 
 For detailed steps about how to create a standard accelerator or a custom routing accelerator using the AWS Global Accelerator console, see [Getting started with AWS Global Accelerator](getting-started.md). To work with API operations, see [Common API actions for AWS Global Accelerator](global-accelerator-actions.md) and the [AWS Global Accelerator API Reference](https://docs.aws.amazon.com/global-accelerator/latest/api/Welcome.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

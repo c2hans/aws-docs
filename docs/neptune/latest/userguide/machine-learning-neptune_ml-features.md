@@ -306,3 +306,7 @@ If you don't include `datetime_parts`, by default Neptune ML encodes the year, m
 If one of the parts does not have more than one unique value in the training set, it is not encoded.
 
 See [Datetime features in Neptune ML](machine-learning-feature-encoding.md#machine-learning-datetime-features).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,3 +50,7 @@ Amazon RDS supports the following database engines, each designed for specific u
 Now that you selected the database engine that best suits your needs, it's time to create your first Amazon RDS DB instance.
 
 **Next step**: [Creating your first DB instance](create-instance-overview.md#create-instance)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

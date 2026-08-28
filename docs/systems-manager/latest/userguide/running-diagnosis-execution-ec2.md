@@ -66,3 +66,7 @@ Choosing to execute the runbook would incur charges. Review the preview informat
       + Choose **Execute** to run the runbook with the options you have already selected.
 
    If you choose to run the operation, choose **View progress** or **View executions** to monitor the current state of the execution. For more information, see [Viewing execution progress and history for remediations in Systems Manager](diagnose-and-remediate-execution-history.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -88,3 +88,7 @@ Amazon EMR on EKS now supports integration with SageMaker Unified Studio through
 + **Lake Formation Integration**: Supports data access control with two modes a) Fine-Grained Access Control b) Full Table Access (Compatibility Mode)
 + **Identity Management**: Flexible authentication options a) IAM role-based access control b) based access control.
 + **User Background Sessions with integration**: Supports long-running Spark workloads to continue running even after users log off from SageMaker Unified Studio, supporting sessions up to 90 days
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ You should collect monitoring data from all of the parts of your AWS solution so
 See the following topics to learn how to use Amazon CloudWatch Logs and AWS CloudTrail to monitor Connect Customer and describes the Connect Customer metrics sent to CloudWatch:
 + [Monitoring your Connect Customer instance using CloudWatch](monitoring-cloudwatch.md)
 + [Log Connect Customer API calls with AWS CloudTrail](logging-using-cloudtrail.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

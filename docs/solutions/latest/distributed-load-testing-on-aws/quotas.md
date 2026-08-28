@@ -45,3 +45,7 @@ You are responsible for running load tests in accordance with the [Amazon EC2 Te
 <a name="amazon-cloudfront-load-testing-policy"></a>
 
 If you plan on load testing a CloudFront endpoint, refer to the [load testing guidelines](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/load-testing.html) in the *Amazon CloudFront Developer Guide*. We also recommended spreading the traffic across multiple tasks and Regions. Provide at least 30 minutes of ramp-up time for the load test. For load tests sending more than 500,000 requests per second or demanding more than 300 Gbps data, we recommend first obtaining a pre-approval for sending the traffic. CloudFront may throttle unapproved load test traffic that impacts CloudFront service availability.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

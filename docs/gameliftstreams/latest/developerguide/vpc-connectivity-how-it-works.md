@@ -28,3 +28,7 @@ The resource share invitation expires after 7 days. If the invitation expires be
 1. **Adding routes in your VPC route tables** – Directs traffic destined for the Amazon GameLift Streams service-managed VPC through the transit gateway.
 
 1. **(Optional) Updating security groups** – Allows inbound traffic from the Amazon GameLift Streams service-managed VPC CIDR block to reach your private resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

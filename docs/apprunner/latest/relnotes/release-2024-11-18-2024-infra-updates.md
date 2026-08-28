@@ -19,3 +19,7 @@ App Runner is updating its compute and networking infrastructure to enhance over
 These updates will be released gradually across App Runner supported regions.
 
 To transition your App Runner services to this new infrastructure, we will initiate an update operation on your behalf. We will contact you prior to performing this operation. No action is required from you at this time and there are no price increases as part of this change. Review your IP address usage in the subnets that host your App Runner services to ensure there are sufficient allocated addresses for the new networking structure. If you have any questions or need further information about how these changes might affect your specific use case, contact Support.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

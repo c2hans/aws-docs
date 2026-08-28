@@ -27,3 +27,7 @@ The following table maps each data type to the serialization. Note that all poli
 | IpAddress | String adhering to [RFC 4632](https://datatracker.ietf.org/doc/html/rfc4632) |
 | List | Array |
 | Object | Object |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

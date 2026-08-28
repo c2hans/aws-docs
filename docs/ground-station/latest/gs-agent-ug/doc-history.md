@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/doc-hi
 | [Documentation Update](#doc-history) |  Removed support for older instance family: m4.  | September 30, 2024 |
 | [Documentation Update](#doc-history) |  Added comment about keeping the subnet and the Amazon EC2 instance in the same availability zone in [Agent Requirements](https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug/agent-requirements.html).  | July 18, 2024 |
 | [Documentation Update](#doc-history) | Split the AWS Ground Station Agent into its own user guide. For prior changes, please refer to: [Document history for the AWS Ground Station user guide](https://docs.aws.amazon.com/ground-station/latest/ug/doc-history.html).  | July 18, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

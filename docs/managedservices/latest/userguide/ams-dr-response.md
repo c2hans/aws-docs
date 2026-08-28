@@ -22,3 +22,7 @@ If you experience a disaster and need to initiate a recovery, follow these gener
 1. Restore the application functionality and use AMS assistance to troubleshoot infrastructure-related issues.
 
 AMS can help you with preparing for this event and with creating a DR plan for your organization to cover these questions. For more details, contact your cloud service delivery manager (CSDM) or cloud architect (CA).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ The following is an overview of the topics you'll find on this page:
 + If you are getting started using Ground Truth, or you do not require granular permissions for your use case, it is recommended that you use the IAM managed policies described in [Use IAM Managed Policies with Ground Truth](sms-security-permissions-get-started.md).
 + Learn about the permissions required to use the Ground Truth console in [Grant IAM Permission to Use the Amazon SageMaker Ground Truth Console](sms-security-permission-console-access.md). This section includes policy examples that grant an IAM entity permission to create and modify private work teams, subscribe to vendor work teams, and create custom labeling workflows.
 + When you create a labeling job, you must provide an execution role. Use [Create a SageMaker AI Execution Role for a Ground Truth Labeling Job](sms-security-permission-execution-role.md) to learn about the permissions required for this role.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

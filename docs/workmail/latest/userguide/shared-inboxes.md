@@ -66,3 +66,7 @@ The shared inboxes are stored in your Amazon WorkMail web application profile. T
 If you receive a message saying `You have insufficient privileges to open this folder`, contact your administrator and ask them to grant you access.
 
 To close a shared inbox, open the context (right-click) menu for the shared inbox, and then choose **Close store**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

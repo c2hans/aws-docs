@@ -35,3 +35,7 @@ Software stacks are [ Amazon Machine Images (AMIs)](https://docs.aws.amazon.com/
 Virtual desktop instance (VDI) hosts allow project members to access project-specific data and compute environments, ensuring secure and isolated workspaces.
 
 For a general reference of AWS terms, see the [AWS Glossary](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

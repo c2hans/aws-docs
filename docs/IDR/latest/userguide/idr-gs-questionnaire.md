@@ -65,7 +65,7 @@ Provide the following information to identify the set of alarms that will engage
 
 **AWS Incident Detection and Response Critical alarm criteria**:
 + AWS Incident Detection and Response alarms should only enter "Alarm" state upon significant business impact to the monitored workload (loss of revenue/degraded customer experience) that requires immediate operator attention.
-+ AWS Incident Detection and Response alarms must also engage your resolvers for the workload at the same time or prior to engagement. AWS Incident Managers collaborate with your resolvers in the mitigation process, and do not serve as a first-line responders who then escalate to you.
++ AWS Incident Detection and Response alarms must also engage your resolvers for the workload at the same time or prior to engagement. AWS Incident Managers collaborate with your resolvers in the mitigation process, and do not serve as first-line responders who then escalate to you.
 + AWS Incident Detection and Response alarm thresholds must be set to an appropriate threshold and duration so that any time an alarm fires an investigation must take place. If an alarm is moving between the "Alarm" and "OK" state, sufficient impact is occurring to warrant operator response and attention.
 
 **AWS Incident Detection and Response Policy for criteria violations**:
@@ -73,7 +73,7 @@ Provide the following information to identify the set of alarms that will engage
 These criteria can only be evaluated on a case-by-case basis as events occur. The Incident Management team works with your technical account managers (TAMs) to adjust alarms and in rare cases disable monitoring if it is suspected that customer alarms do not adhere to this criteria and is engaging the Incident Management team unnecessarily at a regular rate.
 
 **Important**
-Provide a group distribution email addresses when supplying contact addresses, so that you can control recipient additions and deletions without runbook updates.
+Provide a group distribution email address when supplying contact addresses, so that you can control recipient additions and deletions without runbook updates.
 Provide the contact phone number for your site reliability engineering (SRE) team if you would like the AWS Incident Detection and Response team to call them after sending an initial engagement email.
 
 **Alarm matrix table for CloudWatch alarms**
@@ -92,3 +92,7 @@ Provide the contact phone number for your site reliability engineering (SRE) tea
   <tr><td>Example:<br />ALB_5xx_Target_Response<br />Account ID: 123456789012<br />Region: us-east-1</td><td>Example:<br />This metric represents transaction responses from the targets behind the ALB. If 5XX errors exceeds threshold, it represents a critical failure to process business transactions.</td><td>Example:<br />Sam Smith - Application Manager<br />sam.smith@example.com<br />+61 2 3456 7890</td><td>Example:<br />ECS</td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

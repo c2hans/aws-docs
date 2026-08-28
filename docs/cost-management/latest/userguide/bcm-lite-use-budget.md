@@ -90,3 +90,7 @@ You can use tags to help organize your AWS Budgets resources. You can add, updat
 <a name="bcm-lite-create-spend-limit-settings"></a>
 
 You can create a spend limit to set the most you'll ever pay per month for each project. This feature is only available using the AWS Settings console, but you can view your spend limit and service-related costs in the AWS Billing and Cost Management console. Anyone with access to a project can view a spend limit, but only project owners can modify them. Your account must be on the Paid Plan to access a spend limit. For more information, see [Upgrade your account in AWS Settings](https://docs.aws.amazon.com/accounts/latest/reference/upgrade-account.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

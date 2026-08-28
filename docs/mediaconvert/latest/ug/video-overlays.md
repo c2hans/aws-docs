@@ -17,3 +17,7 @@ Video overlays allow for many creative possibilities. Some examples of common wo
 + [How to shrink content during ad playback (picture-in-picture)](overlay-shrink-pip.md)
 + [How to shrink content during ad playback (merge squeeze)](overlay-shrink.md)
 + [Video overlay feature limitations](video-overlays-restrictions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

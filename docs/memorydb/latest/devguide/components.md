@@ -95,3 +95,7 @@ For more detailed information on MemoryDB Access Control Lists, see [Authenticat
 <a name="whatis.components.user"></a>
 
 A user has a user name and password, and is used to access data and issue commands on your MemoryDB cluster. A user is a member of an Access Control List (ACL), which you can use to determine permissions for that user on MemoryDB clusters. For more information, see [Authenticating users with Access Control Lists (ACLs)](clusters.acls.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

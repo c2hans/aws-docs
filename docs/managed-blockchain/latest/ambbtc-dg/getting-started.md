@@ -240,3 +240,7 @@ You can send Bitcoin JSON-RPC requests to AMB Access Bitcoin over AWS PrivateLin
 For the *Service name*, look for *Amazon Managed Blockchain* in the *AWS service* column. For more information, see [AWS services that integrate with AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/aws-services-privatelink-support.html). The service name for the endpoint will be in the following format: `com.amazonaws.{{AWS-REGION}}.managedblockchain.bitcoin.{{NETWORK-TYPE}}`.
 
  For example: `com.amazonaws.{{us-east-1}}.managedblockchain.bitcoin.{{testnet}}`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

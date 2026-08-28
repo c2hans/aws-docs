@@ -212,3 +212,7 @@ Agents can handle multiple email contacts simultaneously, up to the limits confi
 + [Managing contacts](#accept-emails-managing)
 + [Select From address](agent-select-from-email.md)
 + [Forward emails](agent-forward-email.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

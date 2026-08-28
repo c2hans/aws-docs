@@ -97,3 +97,7 @@ The Nitro Security Key (NSK) is required to decrypt data on the server. When you
 
 1. Use the hex tool to turn the small screw under the sticker three full turns. This action destroys the NSK and cryptographically shreds all data on the server.
 ![An NSK with labels identifying the hex tool and the thumbscrew where you insert the hex tool.](http://docs.aws.amazon.com/outposts/latest/server-userguide/images/nsk-details.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

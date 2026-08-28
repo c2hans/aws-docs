@@ -13,3 +13,7 @@ Scenarios target an intermediate level of experience to help you understand serv
 + [Get started with image sets and image frames](example_medical-imaging_Scenario_ImageSetsAndFrames_section.md)
 + [Tagging a data store](example_medical-imaging_Scenario_TaggingDataStores_section.md)
 + [Tagging an image set](example_medical-imaging_Scenario_TaggingImageSets_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

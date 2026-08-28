@@ -17,3 +17,7 @@ This tutorial guides you through creating your first Hyperledger Fabric network 
 + [Step 6: Create a Channel](get-started-create-channel.md)
 + [Step 7: Run Chaincode](get-started-chaincode.md)
 + [Step 8: Invite a Member and Create a Multi-Member Channel](get-started-joint-channel.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

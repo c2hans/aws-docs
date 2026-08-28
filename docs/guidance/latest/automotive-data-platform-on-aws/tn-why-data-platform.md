@@ -13,3 +13,7 @@ The distinction is identical to the platform’s posture on BI tooling or conver
 
 **Important**
  **This is a bring-your-own-compute pattern, not a foundation feature.** Implementing the normalization architecture described here is materially more complex than deploying the ADP platform foundation alone. It requires designing and operating a stateful stream processor (Flink or equivalent), a low-latency key-value cache (Redis/Valkey), and an ingestion transport capable of carrying multi-vendor schemas at scale (Kafka or Kinesis). The foundation layer provides the durable analytical sink and governed data product surface that the normalization pipeline writes into — it does not deploy the pipeline itself.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

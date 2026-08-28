@@ -94,3 +94,7 @@ For notiﬁcation about updates to this documentation, you can subscribe to the 
 | [Updated Security on AWS Marketplace](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-security.html) | Updated IAM policies information, restructured section for readability. | March 25, 2019 |
 | [Added content for the private marketplace feature](https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-marketplace.html) | Added content supporting the release of *Private Marketplace*. | November 27, 2018 |
 | [Initial release of the user guide for buyers](https://docs.aws.amazon.com/marketplace/latest/buyerguide/) | Initial release of the *AWS Marketplace Buyer Guide*. | November 16, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ To move beyond ad-hoc experimentation, a structured and automated development lo
 + **Optimization mechanism** – The final, most advanced stage of the loop involves feeding the evaluation results back into an automatic prompt-optimization component. This system can analyze failures and suggest or automatically generate a new, improved prompt version. You then check this prompt into the prompt management system to begin the next iteration. This creates a powerful, data-driven feedback mechanism that accelerates the path to a high-quality application. Automatic prompt optimization is discussed in more detail in the [Optimizing prompts](dev-experimenting-prompt-optimization.md) section of this guide.
 
 For more information about developing rapid evaluation and experimentat loops, see [Generative AI app developer workflow](https://docs.databricks.com/aws/en/generative-ai/tutorials/ai-cookbook/genai-developer-workflow) (Databricks).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

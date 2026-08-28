@@ -19,3 +19,7 @@ You can customize how missing data points are visualized in your line charts and
 1. Open the **Y axis** pane of the format visual menu and navigate to the **Missing data** section.
 
 1. Select the missing data format that you want.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

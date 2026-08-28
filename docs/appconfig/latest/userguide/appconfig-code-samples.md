@@ -16,3 +16,7 @@ This section includes code samples for programmatically performing common AWS Ap
 + [Using AWS AppConfig Agent to retrieve a feature flag with variants](appconfig-code-samples-agent-read-feature-flag-with-variants.md)
 + [Using the GetLatestConfiguration API action to read a freeform configuration profile](appconfig-code-samples-using-API-read-configuration.md)
 + [Cleaning up your environment](appconfig-code-samples-clean-up.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

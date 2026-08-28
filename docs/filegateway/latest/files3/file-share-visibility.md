@@ -19,3 +19,7 @@ This setting is not an effective method for securing access to the file shares i
 1. From the **Actions** drop-down menu, choose **Edit SMB settings**, then choose **File share visibility settings**.
 
 1. For **Visibility status**, select the check box if you want the shares on this gateway to appear when the gateway lists shares to users. Keep the check box cleared if you do not want the shares on this gateway to appear when the gateway lists shares to users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

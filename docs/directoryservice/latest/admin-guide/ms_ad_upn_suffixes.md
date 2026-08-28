@@ -20,3 +20,7 @@ You can simplify the management of Active Directory (AD) login names and improve
 1. In the **UPN Suffixes** tab, type an alternative UPN suffix (such as **sales.example.com**). Choose **Add** and then choose **Apply**.
 
 1. If you need to add additional alternative UPN suffixes, repeat step 5 until you have the UPN suffixes you require.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

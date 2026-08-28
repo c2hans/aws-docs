@@ -86,3 +86,7 @@ For user profile resilience information, see [AWS Identity Center](https://docs.
 <a name="disaster-recovery-resiliency-domain"></a>
 
 In Amazon DataZone, a domain cannot be deleted if it contains projects or data sources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

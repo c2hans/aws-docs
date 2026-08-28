@@ -16,3 +16,7 @@ To get started using AWS Data Transfer Terminal, you need to have an AWS account
 1. Ensure that the details of the reservation are correct before submitting your request. Once submitted, a reservation request cannot be modified for at least 24 hours. For more information, see [Review and confirm your reservation](confirmreservation.md).
 
 Once your reservation is processed and confirmed, your Transfer team will be able to access the Data Transfer Terminal facility at the scheduled time. For more information, see [Make a data transfer at the Data Transfer Terminal facility](accessing-site.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Transfer Terminal. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datatransferterminal` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

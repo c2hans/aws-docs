@@ -22,3 +22,7 @@ Instead of having individual workload owners invest in security specific to thei
 + [SEC01-BP06 Automate deployment of standard security controls](sec_securely_operate_automate_security_controls.md)
 + [SEC01-BP07 Identify threats and prioritize mitigations using a threat model](sec_securely_operate_threat_model.md)
 + [SEC01-BP08 Evaluate and implement new security services and features regularly](sec_securely_operate_implement_services_features.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

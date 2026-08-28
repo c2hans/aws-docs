@@ -14,3 +14,7 @@ After you capture the information, you can display it to the agent through the C
 To create the form, you create a custom view and use the connect action button component. For more information on views, see [Use the UI builder in Connect Customer for resources in step-by-step guides](no-code-ui-builder.md).
 
 The connect action button allows you to take in user input from the form and select what action to take when the form is submitted - start a task/email or chat.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

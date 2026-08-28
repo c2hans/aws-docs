@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-rig
 +  **Standard performance** (includes the M3 and M4 instance types) – Designed for general-purpose database workloads that don’t run many in-memory functions. This family has the most options for provisioning increased IOPS.
 +  **Burstable performance** (includes T2 instance types) – For workloads that require burstable performance capacity.
 +  **Memory optimized** (includes the R3 and R4 instance types) – Optimized for in-memory functions and big data analysis.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

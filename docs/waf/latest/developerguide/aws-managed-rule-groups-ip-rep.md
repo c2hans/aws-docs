@@ -54,3 +54,7 @@ This managed rule group adds labels to the web requests that it evaluates, which
 | --- | --- |
 | AnonymousIPList | Inspects for a list of IP addresses of sources known to anonymize client information, like TOR nodes, temporary proxies, and other masking services. <br />Rule action: Block<br />Label: `awswaf:managed:aws:anonymous-ip-list:AnonymousIPList` |
 | HostingProviderIPList | Inspects for a list of IP addresses from web hosting and cloud providers, which are less likely to source end-user traffic. The IP list does not include AWS IP addresses.<br />Rule action: Block<br />Label: `awswaf:managed:aws:anonymous-ip-list:HostingProviderIPList` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

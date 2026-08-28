@@ -12,3 +12,7 @@ Data catalog integration provides the following benefits:
 + **Always-fresh data** – All datasets created through the catalog integration use DirectQuery, so data is queried at the source with no duplication or staleness.
 + **Governance inheritance** – Optionally enable identity propagation to enforce per-user data permissions defined in your upstream catalog at query time, without recreating row-level security (RLS) or column-level security (CLS) rules in Quick.
 + **Combined enterprise context** – After you establish a context boundary with datasets and topics, Quick can combine catalog data with other enterprise knowledge sources such as Slack conversations, Outlook emails, and Google Drive documents. This unified context enables AI agents to deliver more comprehensive insights across structured and unstructured data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

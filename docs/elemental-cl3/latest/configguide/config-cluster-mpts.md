@@ -34,3 +34,7 @@ You must perform an extra configuration step on every Elemental Statmux node and
    + In the **Cluster Multicast Address** field, enter a multicast address. A multicast address ensures that communications will resume if either the Elemental Statmux or the Elemental Live node fails over.
 
 1. Repeat steps 3 to 5 on every Elemental Statmux node and on every affected Elemental Live node.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

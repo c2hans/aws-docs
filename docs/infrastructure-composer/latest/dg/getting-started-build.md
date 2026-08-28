@@ -215,3 +215,7 @@ Use the template file and project directories that Infrastructure Composer creat
 <a name="getting-started-build-next"></a>
 
 You're now ready to build your own applications with Infrastructure Composer. For in-depth details on using Infrastructure Composer, refer to [How to compose in AWS Infrastructure Composer](using-composer-basics.md). When you are ready to deploy your application, refer to [Deploy your Infrastructure Composer serverless application to the AWS Cloud](other-services-cfn.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,3 +25,7 @@ Follow these steps to deploy the Amazon Kinesis Video Streams Edge Agent to AWS 
 + [Install the AWS IoT Greengrass Secret Manager component on the device](gs-install-secrets-manager.md)
 + [Deploy the Amazon Kinesis Video Streams Edge Agent AWS IoT Greengrass component on the device](gs-deploy-edge.md)
 + [Install the AWS IoT Greengrass log manager component on the device](gs-publish-edge.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

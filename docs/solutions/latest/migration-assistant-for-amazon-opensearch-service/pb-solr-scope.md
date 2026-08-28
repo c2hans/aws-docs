@@ -22,3 +22,7 @@ Migration Assistant supports Apache Solr 6.x–9.x as a source. This playbook us
 
 **Note**
 This playbook targets an Amazon OpenSearch Service domain by default. To target an Amazon OpenSearch Serverless NextGen collection instead, change only the target configuration in [Step 2](pb-solr-step2.md) — set `service: aoss` in the SigV4 `authConfig` and add the migration IAM role to the collection’s data access policy. The backup and backfill steps are identical.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

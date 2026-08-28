@@ -28,3 +28,7 @@ A comparison of data on the source and target systems is fundamental for a succe
 + Agree on a percentage of valid differences between the source and target (old and new) databases. For example, you might decide that a difference of less than 1% is acceptable.
 + List all the validation rules to be covered.
 + Automate the comparison as much as possible, and cover all the rules.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

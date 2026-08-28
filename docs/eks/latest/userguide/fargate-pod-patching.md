@@ -68,3 +68,7 @@ You can create a desired action based on this event. For example, you can adjust
 A suitable target can be set for the event to capture it. For a complete list of available targets, see [Amazon EventBridge targets](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-targets.html) in the *Amazon EventBridge User Guide*. You can also create a notification configuration in AWS User Notifications. When using the AWS Management Console to create the notification, under **Event Rules**, choose **Elastic Kubernetes Service (EKS)** for ** AWS service name** and **EKS Fargate Pod Scheduled Termination** for **Event type**. For more information, see [Getting started with AWS User Notifications](https://docs.aws.amazon.com/notifications/latest/userguide/getting-started.html) in the AWS User Notifications User Guide.
 
 See [FAQs: Fargate Pod eviction notice](https://repost.aws/knowledge-center/fargate-pod-eviction-notice) in * AWS re:Post* for frequently asked questions regarding EKS Pod Evictions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,3 +27,7 @@ You can use Athena to query these log files directly from Amazon S3, specifying 
 + [Create a table for an organization wide trail using manual partitioning](create-cloudtrail-table-org-wide-trail.md)
 + [Create the table for CloudTrail logs in Athena using partition projection](create-cloudtrail-table-partition-projection.md)
 + [Example CloudTrail log queries](query-examples-cloudtrail-logs.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

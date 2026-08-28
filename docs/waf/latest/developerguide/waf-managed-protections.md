@@ -26,3 +26,7 @@ The guidance provided in this section is intended for users who know generally h
 + [AWS WAF Distributed Denial of Service (DDoS) prevention](waf-anti-ddos.md)
 + [Client application integrations in AWS WAF](waf-application-integration.md)
 + [CAPTCHA and Challenge in AWS WAF](waf-captcha-and-challenge.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

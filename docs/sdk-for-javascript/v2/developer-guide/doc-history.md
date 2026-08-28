@@ -47,3 +47,7 @@ The following table describes important changes in each release of the AWS SDK f
 | New Amazon EC2 Code Examples | The section with SDK code examples has been updated to include five new examples for working with Amazon EC2. For more information about these code examples, see [Amazon EC2 Examples](ec2-examples.md). | December 15, 2016 |
 | List of supported browsers made more visible | The list of browsers supported by the SDK for JavaScript, which was previously found in the topic on Prerequisites, has been given its own topic to make it more visible in the table of contents. | November 16, 2016 |
 | Initial publication of the new Developer Guide | The previous Developer Guide is now deprecated. The new Developer Guide has been reorganized to make information easier to find. When either Node.js or browser JavaScript scenarios present special considerations, those are identified as appropriate. The guide also provides additional code examples that are better organized to make them easier and faster to find. | October 28, 2016 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for JavaScript SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

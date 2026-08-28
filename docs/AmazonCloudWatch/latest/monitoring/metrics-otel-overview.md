@@ -23,3 +23,7 @@ Use OpenTelemetry metrics when:
 | [Query metrics with PromQL](CloudWatch-PromQL.md) | Query, aggregate, and filter OTel metrics using the Prometheus Query Language |
 | [OTel metrics pricing and storage](metrics-otel-pricing.md) | Per-GB ingestion pricing, included 15-month retention, no per-metric or API charges |
 | [Migrate from Classic to OTel metrics](metrics-otel-migrate.md) | Incremental migration from PutMetricData/EMF to OTLP |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

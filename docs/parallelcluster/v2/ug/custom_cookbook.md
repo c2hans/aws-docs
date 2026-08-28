@@ -50,3 +50,7 @@ The following are instructions for using a custom version of the AWS ParallelClu
    ```
 **Note**
 Starting with AWS ParallelCluster version 2.6.1, most of the install recipes are skipped by default when launching nodes to improve startup times. To skip most of the install recipes for better startup times at the expense of backwards compatibility, remove `"skip_install_recipes" : "no"` from the `cluster` key in the [`extra_json`](cluster-definition.md#extra-json) setting.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

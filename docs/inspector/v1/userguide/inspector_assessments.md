@@ -252,3 +252,7 @@ Amazon Simple Notification Service (Amazon SNS) is a web service that sends mess
 1. Create a subscription to the topic that you created. For more information, see [Tutorial: Subscribing an Endpoint to an Amazon SNS Topic](https://docs.aws.amazon.com/sns/latest/dg/sns-tutorial-create-subscribe-endpoint-to-topic.html).
 
 1. To confirm that the subscription is configured correctly, publish a message to the topic. For more information, see [Tutorial: Publishing a Message to an Amazon SNS Topic](https://docs.aws.amazon.com/sns/latest/dg/sns-tutorial-publish-message-to-topic.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

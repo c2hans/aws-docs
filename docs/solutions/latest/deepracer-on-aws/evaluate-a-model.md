@@ -35,3 +35,7 @@ After the evaluation finishes, you can download the logs for that evaluation by 
 Logs are exported in .tar.gz format. If you are using Windows, you will need to install 7-Zip or another program that is capable of extracting this type of file.
 
 To view an existing evaluation, select the evaluation from the list in the **Evaluations** **selector**, then click **Load evaluation** button. This will load details of the selected evaluation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

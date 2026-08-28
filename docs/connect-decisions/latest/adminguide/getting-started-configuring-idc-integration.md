@@ -34,3 +34,7 @@ This can be used if your organization has an established IdC instance that you w
    + **To create an instance using a custom configuration** – Select **Edit in advanced setup**. See [Use advanced configuration](https://docs.aws.amazon.com/aws-supply-chain/latest/adminguide/create-instance-advanced.html).
 
 When used in conjunction with IAM Identity Center, Amazon Connect Decisions retrieves the 'username' and 'email' fields from IAM Identity Center directory. None of these attributes are stored natively in your Amazon Connect Decisions instance and are always retrieved at runtime. Amazon Connect Decisions encrypts these identity attributes at rest using an AWS owned KMS key by default. Customer managed KMS keys are not supported in Amazon Connect Decisions. If you delete a user in your AWS IAM Identity Center instance, Amazon Connect Decisions deletes that user from your instance as well.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

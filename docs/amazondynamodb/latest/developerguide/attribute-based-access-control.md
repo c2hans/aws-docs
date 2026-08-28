@@ -79,3 +79,7 @@ When you use ABAC with DynamoDB tables or indexes, the following considerations 
 + For information about using ABAC with DynamoDB Streams, see [Using attribute-based access control with DynamoDB Streams](abac-streams.md).
 + Tagging and ABAC aren't supported for DynamoDB backups. To use ABAC with backups, we recommend that you use [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html).
 + Tags aren't preserved in restored tables. You need to add tags to restored tables before you can use tag-based conditions in your policies.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

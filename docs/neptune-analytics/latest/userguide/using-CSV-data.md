@@ -67,3 +67,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/using
 +  Float and double values in scientific notation are currently not supported. However, `Infinity`, `INF`, `-Infinity`, `-INF`, and `NaN` (`Not-a-number`) values are supported.
 +  The maximum length of the strings supported is limited to 1,048,062 bytes. The limit is lower for strings with unicode characters since some unicode characters are represented using multiple bytes.
 +  The `allowEmptyStrings` parameter is not supported. Empty string values ("") are not treated as null or missing value, and are stored as a property value.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

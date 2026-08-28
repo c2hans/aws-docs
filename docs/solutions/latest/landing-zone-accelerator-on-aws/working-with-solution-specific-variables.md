@@ -270,3 +270,7 @@ To support the previous dynamic Amazon EC2 firewall customer gateway and site-to
 This reference variable is only available for Amazon EC2 firewall network interfaces that have the `associateElasticIp` property set to `true`. It is not supported for Amazon EC2 firewall autoscaling groups.
 
 Example usage: `${ACCEL_LOOKUP::EC2:ENI_0:accelerator-firewall}` - translates to the primary public IP address of the primary network interface of a firewall named `accelerator-firewall`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

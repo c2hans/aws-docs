@@ -49,3 +49,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
  In addition to these game-centric environment OUs, there are also the shared services OU and security OU. These OUs should be organization-wide, not for each individual game. That way the games would consume the shared services for development tools and data and analytics as in this example. Then, send application and system logs to the AWS account set up for logs in the security OU.
 
 ![Example of account structure for game environments](http://docs.aws.amazon.com/wellarchitected/latest/games-industry-lens/images/image9.jpeg)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

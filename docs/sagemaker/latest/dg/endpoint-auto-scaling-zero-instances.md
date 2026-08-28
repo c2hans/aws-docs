@@ -138,3 +138,7 @@ For each inference component that the endpoint hosts, do the following:
    This example sets the `--metric-name` parameter to `NoCapacityInvocationFailures`. SageMaker AI emits this metric when an endpoint receives an inference request, but the endpoint has no active instances to serve the request. When that event occurs, the alarm initiates the step scaling policy in the previous step.
 
    For more information about this command and each of its parameters, see [put-metric-alarm](https://docs.aws.amazon.com/cli/latest/reference/cloudwatch/put-metric-alarm.html) in the *AWS CLI Command Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

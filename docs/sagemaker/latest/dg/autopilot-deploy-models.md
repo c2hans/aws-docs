@@ -15,3 +15,7 @@ After you train your Autopilot models, you can deploy them to get predictions in
 
 **Note**
 To avoid incurring unnecessary charges: After the endpoints and resources that were created from model deployment are no longer needed, you can delete them. For information about pricing of instances by Region, see [Amazon SageMaker Pricing](https://aws.amazon.com/sagemaker/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

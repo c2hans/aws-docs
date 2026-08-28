@@ -30,3 +30,7 @@ The high-level process flow for the ECS architecture is as follows:
 1.  [Amazon Cognito](https://aws.amazon.com/cognito/) provides authentication and authorization for the administrative interface.
 
 1. (Optional) Amazon Rekognition integration for smart cropping and content moderation features.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

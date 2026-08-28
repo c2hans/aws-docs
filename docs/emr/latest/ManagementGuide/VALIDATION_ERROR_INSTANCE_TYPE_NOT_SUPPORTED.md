@@ -46,3 +46,7 @@ Perform the following steps to identify and fix the error:
    1. Create a new cluster in the same Region and Amazon EC2 subnet as the cluster that failed, but with an instance type that is supported in that location by Amazon EMR.
 
 For a list of instance types and Regions that Amazon EMR supports, see [Supported instance types with Amazon EMR](emr-supported-instance-types.md). To compare the capabilities of the instance types, see [Amazon EC2 instance types](https://aws.amazon.com/ec2/instance-types).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

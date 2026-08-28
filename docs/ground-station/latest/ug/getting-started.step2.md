@@ -30,3 +30,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/getting-started
 The following shows the communication path if you are using the AWS Ground Station Agent configuration.
 
 ![Communication flow between AWS Ground Station antenna and customer destination region components.](http://docs.aws.amazon.com/ground-station/latest/ug/images/digif-data-delivery-overview.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

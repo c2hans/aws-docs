@@ -96,3 +96,7 @@ We encourage you to choose this option to make sure that your nodes are always r
 1. Choose **Submit**.
 
 Depending on the size of your organization, it can take an extended amount of time to set up the Systems Manager unified console experience.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

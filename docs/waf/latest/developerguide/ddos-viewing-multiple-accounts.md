@@ -26,3 +26,7 @@ The following screenshot highlights the information that you can see for a Shiel
 ![The screenshot shows the Security Hub CSPM console Findings page, subtitled A finding is a security issue or a failed security check.. The section has red outlines highlighting the strings: Title EQUALS Shield Advanced detected attack against monitored resource and Product name EQUAL Firewall Manager. The screen shows a set of details about the specific attack and its status.](http://docs.aws.amazon.com/waf/latest/developerguide/images/shield-console-security-hub-event.png)
 
 To learn how to integrate Firewall Manager and Security Hub CSPM with Shield Advanced to centralize event and compliance monitoring across your protected accounts, see the AWS security blog [Set up centralized monitoring for DDoS events and auto-remediate noncompliant resources](https://aws.amazon.com/blogs/security/set-up-centralized-monitoring-for-ddos-events-and-auto-remediate-noncompliant-resources/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

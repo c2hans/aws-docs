@@ -71,3 +71,7 @@ Output:
 ```
 
 In the preceding example, the stopped task ({{090eff9b-1ce3-4db6-848a-a8d14064fd24}}) has two containers. You can use **docker inspect {{container-ID}}** to view detailed information on each container. For more information, see [Amazon ECS container introspection](ecs-agent-introspection.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

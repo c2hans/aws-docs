@@ -1156,3 +1156,7 @@ The following table describes the changes in each version of the component.
 | 2.1.1 |  <a name="changelog-log-manager-2.1.1"></a>**Bug fixes and improvements**<br />   Fixes an issue where the system log configuration wasn't updated in certain cases.     |
 | 2.1.0 |  <a name="changelog-log-manager-2.1.0"></a>**Bug fixes and improvements**<br />   Use defaults for `logFileDirectoryPath` and `logFileRegex` that work for Greengrass components that print to standard output (stdout) and standard error (stderr).   Correctly route traffic through a configured network proxy when uploading logs to CloudWatch Logs.   Correctly handle colon characters (`:`) in log stream names. CloudWatch Logs log stream names don't support colons.   Simplify log stream names by removing thing group names from the log stream.   Remove an error log message that prints during normal behavior.     |
 | 2.0.x | Initial version. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

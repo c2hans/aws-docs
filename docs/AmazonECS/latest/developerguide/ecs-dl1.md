@@ -30,3 +30,7 @@ You have three options for running an AMI on Amazon EC2 DL1 instances for Amazon
 + AWS Marketplace AMIs that are provided by Habana [here](https://aws.amazon.com/marketplace/pp/prodview-h24gzbgqu75zq).
 + Habana Deep Learning AMIs that are provided by Amazon Web Services. Because it's not included, you need to install the Amazon ECS container agent separately.
 + Use Packer to build a custom AMI that's provided by the [GitHub repo](https://github.com/aws-samples/aws-habana-baseami-pipeline). For more information, see [the Packer documentation](https://developer.hashicorp.com/packer/docs).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

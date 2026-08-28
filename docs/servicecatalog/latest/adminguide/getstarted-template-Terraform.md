@@ -38,3 +38,7 @@ The configuration file declares the resources to be created when AWS Service Cat
 + **Provider** (optional) – The cloud service provider for resource provisioning, which is `AWS`. AWS Service Catalog only supports `AWS` as the provider. As a result, the Terraform provisioning engine overrides any other listed provider to `AWS`.
 + **Resource** (required) – The AWS infrastructure resource for provisioning. For this tutorial, the Terraform configuration file specifies Amazon S3.
 + **Output** (optional) – The returned information or value, similar to returned values in a programming language. You can use outputs data to configure infrastructure workflow with automation tools.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

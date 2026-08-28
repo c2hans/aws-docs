@@ -25,3 +25,7 @@ Your ADS can handle 500 TPS, and you expect 100,000 concurrent viewers during pe
 + Peak TPS: 500
 + Peak concurrent users: 100,000
 MediaTailor automatically distributes prefetch requests across time to stay within your specified TPS limit, regardless of the number of concurrent sessions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

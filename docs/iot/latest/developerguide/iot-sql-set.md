@@ -138,3 +138,7 @@ The following limits apply to SET variables:
 + Maximum total value size of 128 KiB for all variables
 + Variable names limited to 64 characters
 + Variables can accept JSON payloads directly as is (non-JSON payloads must first be encoded/decoded)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

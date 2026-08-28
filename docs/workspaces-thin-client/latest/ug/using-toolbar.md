@@ -60,3 +60,7 @@ When the toolbar is expanded, a list of functions is available for you to use. T
 |  ![Restart button with circular arrow icon.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/restart.png)  | Restart | Restarts the device. For more information, see [Rebooting by using the toolbar](rebooting-device.md#reboot-ui). |
 |  ![Power icon with "Shutdown" text, indicating a shutdown or power off option.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/shutdown.png)  | Shutdown | Logs you out of the session and shuts down the device. |
 |  ![Bell icon representing notifications in a user interface.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/notifications.png)  | Notifications | Accesses the Notifications for your device. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

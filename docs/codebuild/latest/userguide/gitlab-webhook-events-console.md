@@ -51,3 +51,7 @@ In this example, a webhook filter group triggers a build only when a change is m
 In this example, a webhook filter group triggers a build for a push event when the head commit message matches the regular expression `\[CodeBuild\]`.
 
 ![A webhook filter group that triggers a build for a push event when the head commit message matches the regular expression.](http://docs.aws.amazon.com/codebuild/latest/userguide/images/pull-request-webhook-filter-commit-message-gitlab.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

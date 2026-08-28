@@ -192,3 +192,7 @@ request_url = endpoint + canonical_uri + "?" + canonical_querystring
 <a name="network-analyzer-request-next"></a>
 
 You can now use the request URL with your WebSocket library to make the request to the service and observe the messages. For more information, see [WebSocket messages and status codes](network-analyzer-messages-status.md). For a sample Python code that shows how to generate a presigned request, see [Sample Python code to generate presigned URL](network-analyzer-request-sample.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

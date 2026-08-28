@@ -275,3 +275,7 @@ Parameter Descriptions for the StepOutlier Rule
 | mode | Mode under which steps have been saved and on which Rule should run on. Per default rule will run on steps from EVAL and TRAIN phase**Optional**<br />Valid values: Integer<br />Default value: `5` (in minutes) |
 | n\_outliers | How many outliers to ignore before rule returns True**Optional**<br />Valid values: Integer<br />Default value: `10` |
 | scan\_interval\_us | Time interval with which timeline files are scanned.<br />**Optional**<br />Valid values: Integer<br />Default values: `60000000` (in microseconds) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

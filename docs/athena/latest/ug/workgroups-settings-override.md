@@ -15,3 +15,7 @@ Because overriding client-side settings can break custom automation that is base
 **Important**
 If you use API actions, the AWS CLI, or the JDBC and ODBC drivers to run queries in a workgroup that overrides client-side settings, make sure that you either omit the client-side settings in your queries or update them to match the settings of the workgroup.
 If you specify client-side settings in your queries but run them in a workgroup that overrides the settings, the queries will run, but the workgroup settings will be used. For information about viewing the settings for a workgroup, see [View the workgroup's details](viewing-details-workgroups.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

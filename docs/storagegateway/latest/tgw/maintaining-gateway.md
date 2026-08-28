@@ -13,3 +13,7 @@ Maintaining your Tape Gateway includes tasks such as sizing and configuring loca
 + [Managing gateway updates](MaintenanceManagingUpdate-common.md) - Learn how to turn maintenance updates on or off, and modify the maintenance window schedule for your Tape Gateway.
 + [Shutting Down Your Gateway VM](MaintenanceShutDown-common.md) - Learn about what to do if you need to shutdown or reboot your gateway virtual machine for maintenance, such as when applying a patch to your hypervisor.
 + [Deleting your gateway and removing associated resources](deleting-gateway-common.md) - Learn how to delete your gateway using the AWS Storage Gateway console and clean up associated resources to avoid being charged for their continued use.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,3 +46,7 @@ If your private workflow uses Sentieon software, you need a Senieon license. Fol
 + Build your private workflow using the Sentieon container and the Sentieon license script.
   + For additional instructions on using Sentieon tools inside private workflows, see [Sentieon-Amazon-Omics](https://github.com/Sentieon/sentieon-amazon-omics) in GitHub.
 + Sentieon software version 202112.07 and higher support the HealthOmics licensing server proxy. To use Sentieon software versions earlier than 202112.07, contact Sentieon support.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

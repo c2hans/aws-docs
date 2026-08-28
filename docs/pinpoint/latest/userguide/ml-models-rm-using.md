@@ -102,3 +102,7 @@ If you remove recommendations from a template, Amazon Pinpoint doesn't necessari
 1. When you finish, do one of the following:
    + To save your changes as a new version of the template, choose **Save as new version**.
    + To save your changes as an update to the most recent version of the template, choose **Update version**. This option is available only if you chose the most recent version of the template in step 4.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -115,3 +115,7 @@ SageMaker AI provides several built-in machine learning algorithms that you can 
 Reinforcement learning is a type of learning that is based on interaction with the environment. This type of learning is used by an agent that must learn behavior through trial-and-error interactions with a dynamic environment in which the goal is to maximize the long-term rewards that the agent receives as a result of its actions. Rewards are maximized by trading off exploring actions that have uncertain rewards with exploiting actions that have known rewards.
 
 For more information on SageMaker AI's frameworks, toolkits, and environments for reinforcement learning, see [Use Reinforcement Learning with Amazon SageMaker AI](reinforcement-learning.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

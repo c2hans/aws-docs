@@ -52,3 +52,7 @@ The following are the service endpoints and service quotas for this service.
 | Requests without authentication token per IP address | Each supported Region: 600 | No | The maximum number of requests per second without an authentication token from a single IP address. |
 | Upstream repositories searched | Each supported Region: 25 | No | The maximum number of upstream repositories searched when resolving a package. |
 | Write requests per second from a single AWS account | Each supported Region: 100 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/codeartifact/quotas/L-A649E766)  | The maximum number of write requests from one AWS account per second. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

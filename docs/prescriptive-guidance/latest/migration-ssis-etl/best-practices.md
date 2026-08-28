@@ -21,3 +21,7 @@ The following illustration shows a sample XML parser.
 + Decommission the existing environment only after all jobs are stable on AWS for a period of time.
 + Use Amazon CloudWatch for logging, to reduce logging customization efforts.
 + Use Amazon Simple Notification Service (Amazon SNS) to replace custom tasks for sending notifications. Use Amazon Simple Email Service (Amazon SES) to replace custom email tasks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

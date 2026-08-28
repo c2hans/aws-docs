@@ -12,3 +12,7 @@ To start using AWS FinOps Agent, sign in to the AWS Management Console, switch t
 After the agent is created, open its web application to upload your initial context (an account-to-owner mapping and any organization-specific instructions such as known exceptions, prioritization rules, and review cadence), run your first query, and set up your first event-triggered cost anomaly detection automation. The agent acts only on the data sources and integrations you connect during setup.
 
 If your IAM administrator manages permissions centrally, or if you want to author the agent's roles and policies yourself, see the [AWS FinOps Agent IAM setup guide](setting-up.md) for the full list of IAM policies, roles, and trust relationships.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS FinOps Agent (preview). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finops-agent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

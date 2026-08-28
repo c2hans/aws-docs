@@ -127,3 +127,7 @@ The following example shows a complete service execution role policy for a repli
 
 **Tip**
 Start with the [Topic replication permissions](msk-replicator-perms-topic-replication.md) policy and only add the statements for optional features you have enabled. This follows the principle of least privilege and makes it easier to audit your permissions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

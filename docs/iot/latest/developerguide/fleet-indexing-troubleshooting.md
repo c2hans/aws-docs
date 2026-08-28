@@ -102,3 +102,7 @@ aws iot create-fleet-metric --metric-name "example_FM" --query-string "thingName
 If you don't have a thing that meets the query string criteria `--query-string "thingName:TempSensor* AND attributes.temperature>80"`:
 + With `values=count`, you'll be able to create a fleet metric and there'll be data points to show in CloudWatch. The data points of the value `count` is always 0.
 + With `values` other than `count`, you'll be able to create a fleet metric but you won't see the fleet metric in CloudWatch and there'll be no data points to show in CloudWatch.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

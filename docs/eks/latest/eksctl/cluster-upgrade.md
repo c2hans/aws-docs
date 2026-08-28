@@ -57,3 +57,7 @@ eksctl upgrade cluster --config-file cluster1.yaml
 
 **Warning**
 The only values allowed for the `--version` and `metadata.version` arguments are the current version of the cluster or one version higher. Upgrades of more than one Kubernetes version are not supported.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

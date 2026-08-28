@@ -55,3 +55,7 @@ With AWS Managed Microsoft AD and Active Directory Certificate Services, you mus
 Active Directory must distribute the CA to the Trusted Root Certification Authorities and Enterprise NTAuth stores automatically for WorkSpaces in WorkSpaces Pools when they join the domain.
 **Note**
 Active Directory domain controllers must be in Compatibility mode for certificate strong enforcement to support certificate-based authentication. For more information, see [KB5014754—Certificate-based authentication changes on Windows domain controllers](https://support.microsoft.com/en-us/topic/kb5014754-certificate-based-authentication-changes-on-windows-domain-controllers-ad2c23b0-15d8-4340-a468-4d4f3b188f16) in the Microsoft Support documentation. If you are using AWS Managed Microsoft AD, see [Configure directory security settings](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_directory_settings.html) for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

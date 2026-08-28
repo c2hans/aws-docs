@@ -15,3 +15,7 @@ These scripts are meant to ease the adoption of AWS Partner Revenue Measurement 
 Under the Shared Responsibility Model, partners and customers using this project need to enhance the templates to adapt them to their own environments, including but not limited to securing IAM permissions, enabling encryption, implementing log immutability, and monitoring security events.
 
 Access the samples repository: [AWS Partner Revenue Measurement Samples on GitHub](https://github.com/aws-samples/samples-aws-prm)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

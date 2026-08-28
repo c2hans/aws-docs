@@ -91,3 +91,7 @@ From the AWS Support portal, you can:
 
 **Tip**
 You can also access support resources from within Amazon Quick by choosing your username, then choosing **Help** in the profile menu. The Help submenu includes links to Getting Started guides, Quick Documentation, the Quick Community forum, and How to Videos.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

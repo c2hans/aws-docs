@@ -176,3 +176,7 @@ Because the Principal required for `CreateSession` is `*`, consider adding two s
 ```
 
 This policy demonstrates a common pattern for separating session creation from administrative operations. The first statement allows any workload with a certificate from `ExampleCorp` to create sessions through the VPC endpoint, while the second statement restricts trust anchor and profile management to a specific IAM role. This approach provides broad access for authentication while maintaining tight control over configuration changes. Replace the organization name, region, account ID, and IAM role ARN with your values.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

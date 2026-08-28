@@ -22,3 +22,7 @@ The XML file for the captions will include the following style information:
 | Font size  | Match size of source captions, if specified. Otherwise, set to 80% of the available height available for captions. | Left blank. |
 | Font family | Match family of source captions, if specified. Otherwise, set to monospaceSansSerif. | Left blank. |
 | Line gap  | Set to leave the line gap unfilled. | Set to leave the gap unfilled. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

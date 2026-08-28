@@ -19,3 +19,7 @@ The topics in this section provide content on defining your infrastructure in yo
 + [Orchestrating AWS SAM resources with AWS Step Functions](serverless-step-functions-in-sam.md)
 + [Set up code signing for your AWS SAM application](authoring-codesigning.md)
 + [Validate AWS SAM template files](serverless-sam-cli-using-validate.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

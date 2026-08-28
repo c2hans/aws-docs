@@ -297,3 +297,7 @@ Use as a Service Control Policy (SCP) to prevent AdvPO usage across an organizat
 <a name="advanced-prompt-optimization-prereqs-cris"></a>
 
 The service may use cross-region inference (CRIS) for evaluation and prompt rewriting. For European regions, the service will use eu CRIS regions. For the following regions, it may use global CRIS: ap-south-1 (Mumbai), sa-east-1 (Sao Paulo), ap-northeast-2 (Seoul), ap-southeast-1 (Singapore).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

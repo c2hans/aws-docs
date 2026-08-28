@@ -98,3 +98,7 @@ User replicate from hsm2m.medium to hsm1.medium is not supported. If replicating
 
 **Resolution**
 + Use [user management](manage-hsm-users-chsm-cli.md) with CloudHSM CLI to manually recreate the missing users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

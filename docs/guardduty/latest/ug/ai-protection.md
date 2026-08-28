@@ -63,3 +63,7 @@ The GuardDuty Foundational plan monitors AWS CloudTrail management events to det
 + Exfiltrated Amazon Elastic Compute Cloud credentials that might have been used to call APIs in Amazon Bedrock, Amazon SageMaker AI, or self-managed AI workloads on Amazon EC2 instances, Amazon EKS clusters, or Amazon ECS tasks.
 
 GuardDuty Lambda Protection can help detect potential threats related to Amazon Bedrock agents. This might include suspicious network activity such as cryptomining, and communication with malicious command and control servers. These threats can be caused by a supply chain attack or complex prompting.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

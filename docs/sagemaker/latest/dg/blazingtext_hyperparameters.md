@@ -49,3 +49,7 @@ Although some of the parameters are common between the Text Classification and W
 | patience | The number of epochs to wait before applying early stopping when no progress is made on the validation set. Used only when `early_stopping` is `True`.<br />**Optional**<br />Valid values: Positive integer<br />Default value: 4 |
 | vector\_dim | The dimension of the embedding layer.<br />**Optional**<br />Valid values: Positive integer<br />Default value: 100 |
 | word\_ngrams | The number of word n-gram features to use.<br />**Optional**<br />Valid values: Positive integer<br />Default value: 2 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

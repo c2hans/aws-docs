@@ -207,3 +207,7 @@ After you configure your resource tags, access control tags, and permissions, Co
 To use agent hierarchy-based access control for the Login/Logout report, you must first complete several configuration steps. Configure agent hierarchy in Connect Customer, assign users to a hierarchy, configure resource permissions, and set up hierarchy-based access controls. For more information, see [Apply hierarchy-based access control to dashboards and reports in Connect Customer](dashboard-access-control.md).
 
 After you configure the agent hierarchy, assign users to a hierarchy, and configure user permissions, Connect Customer applies hierarchy-based access controls to users for the Login/Logout report.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

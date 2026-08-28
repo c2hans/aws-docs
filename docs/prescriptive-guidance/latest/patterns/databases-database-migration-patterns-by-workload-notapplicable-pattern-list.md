@@ -9,3 +9,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 + [Create an approval process for firewall requests during a rehost migration to AWS](create-an-approval-process-for-firewall-requests-during-a-rehost-migration-to-aws.md)
 + [Encrypt an existing Amazon RDS for PostgreSQL DB instance](encrypt-an-existing-amazon-rds-for-postgresql-db-instance.md)
 + [Implement cross-Region disaster recovery with AWS DMS and Amazon Aurora](implement-cross-region-disaster-recovery-with-aws-dms-and-amazon-aurora.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

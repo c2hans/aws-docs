@@ -177,3 +177,7 @@ Use the following steps to configure Apache Flink on Apache Zeppelin to run on a
 
 1. Choosing **FLINK JOB** routes to the Flink Web Console in another tab of your browser.
 ![Choosing FLINK JOB opens the Flink Web Console in another tab of your browser.](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/images/flink-web-console.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

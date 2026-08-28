@@ -206,3 +206,7 @@ The following table describes the document history for the *Amazon Q Developer U
 | [New data protection topic](#doc-history) | Amazon Q now uses content for [service improvement purposes](https://docs.aws.amazon.com/amazonq/latest/aws-builder-use-ug/service-improvement.html).  | January 25, 2024 |
 | [New topic](#doc-history) | Added instructions for how to [add Amazon Q to Slack and Microsoft Teams channels](https://docs.aws.amazon.com/amazonq/latest/aws-builder-use-ug/q-in-chat-applications.html) that are configured with Amazon Q Developer in chat applications. | January 18, 2024 |
 | [Preview release](#doc-history) | This is the initial preview release of the *Amazon Q Developer User Guide*.  | November 28, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

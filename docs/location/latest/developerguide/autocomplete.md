@@ -65,3 +65,7 @@ The following is a short list of some of the more important result item attribut
 Provides analysis data for each result in relation to the input query.
 +  `Distance`: If a `BiasPosition` was provided in the request, each result item contains a `Distance` attribute giving the distance, in meters, of that result from the `BiasPosition`. Requires `AdditionalFeatures` to be set to `["Core"]`.
 +  `Highlights` shows where words, phrases, and substrings from the input `QueryText` appear exactly in a result attribute, enabling applications to provide helpful user experiences that highlight matches for their users. Requires `AdditionalFeatures` to be set to `["Core"]`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

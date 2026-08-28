@@ -114,3 +114,7 @@ Additionally, the manifest can declare Windows PowerShell scripts to run before 
 <a name="tkv-deploy-beanstalk-custom-netcore-ebextensions"></a>
 
 The Elastic Beanstalk **.ebextensions** configuration files are supported as with all the other Elastic Beanstalk containers. To include .ebextensions in an ASP.NET Core application, add the `.ebextensions` directory to the `include` section under `publishOptions` in the `project.json` file. For further information about .ebextensions checkout the [Elastic Beanstalk Developer Guide](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ebextensions.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

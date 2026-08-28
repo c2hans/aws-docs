@@ -223,3 +223,7 @@ In the IAM Principal ARN format (**arn:partition:iam:::resource-type/resource-pa
 The "\*" character also matches the "/" character, allowing paths to be formed *within* the resource-id. For example:
 
 **arn:aws:iam:::role/**\***/ResourceName\_?** matches both **arn:aws:iam:::role/pathA/pathB/ResourceName\_1** and **arn:aws:iam:::role/pathA/ResourceName\_1**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

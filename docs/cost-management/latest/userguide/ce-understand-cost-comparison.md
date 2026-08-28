@@ -32,3 +32,7 @@ You can use Cost Comparison in two main ways:
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/cost-management/latest/userguide/ce-understand-cost-comparison.html)
 
 If you need to analyze cost changes for specific areas of your business, choose filters to focus on other dimensions like tags or cost categories. Cost Comparison supports all of the available cost metrics (unblended, net unblended, net amortized, etc.) options in Cost Explorer, giving you flexibility to view the data in the way that is most meaningful for your needs. Cost Comparison dynamically updates the drivers based on the specific cost metrics or dimensions you select.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

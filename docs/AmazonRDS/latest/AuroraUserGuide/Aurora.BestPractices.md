@@ -77,3 +77,7 @@ Always use caution when modifying DB engine parameters, and back up your DB clus
 The AWS Online Tech Talks channel on YouTube includes a video presentation on best practices for creating and configuring an Amazon Aurora DB cluster to be more secure and highly available.
 
 [![AWS Videos](http://img.youtube.com/vi/ydzd95r4_VQ/0.jpg)](http://www.youtube.com/watch?v=ydzd95r4_VQ)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

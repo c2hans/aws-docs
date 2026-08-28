@@ -53,3 +53,7 @@ Runtime joins in analysis use inner join semantics. Only rows with matching keys
 + **Reuse across analyses.** A single Topic with defined relationships serves multiple analytical use cases without rebuilding datasets.
 + **Independent refresh schedules.** Each dataset can be refreshed at different cadences (hourly, daily, monthly) based on data volatility.
 + **Row-level security at runtime.** RLS rules are enforced during runtime joins, so data-access policies apply consistently across datasets.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

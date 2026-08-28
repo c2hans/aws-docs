@@ -30,3 +30,7 @@ If you need to establish communication between applications in different account
 + Use [AWS Resource Access Manager](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html) (AWS RAM) to share the transit gateway, VPC Lattice service networks, and IPAM pools with the rest of the organization. This allows any AWS account within your organization to interact with these services.
 + By using IPAM pools to centrally manage IPv4 and IPv6 address allocations, you can allow your end-users to self-provision VPCs by using [AWS Service Catalog](https://aws.amazon.com/servicecatalog/). This helps you appropriately size VPCs and prevent overlapping IP address spaces.
 + Use a centralized egress approach for traffic bound to the internet, and use a decentralized ingress approach for traffic coming into your environment from the internet. For more information, see [Centralized egress](centralized-egress.md) and [Decentralized ingress](decentralized-ingress.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

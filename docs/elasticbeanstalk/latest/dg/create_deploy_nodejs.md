@@ -21,3 +21,7 @@ Follow the [QuickStart for Node.js](nodejs-quickstart.md) for step-by-step instr
 + [Deploying a Node.js application with DynamoDB to Elastic Beanstalk](nodejs-dynamodb-tutorial.md)
 + [Adding an Amazon RDS DB instance to your Node.js Elastic Beanstalk environment](create-deploy-nodejs.rds.md)
 + [Node.js tools and resources](create_deploy_nodejs.resources.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

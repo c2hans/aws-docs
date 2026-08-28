@@ -168,3 +168,7 @@ The following sections provide details on some optional parameters that you can 
 + `EndTimeBefore`: Specify the requested end time of the plan in a `timestamp` or an `ISO 8601 date/time` format. The `EndTimeBefore` should be at least 24 hours after the start time .
 + `UltraServerType` : Specify the type of UltraServer to search for. For more information about UltraServers, see [UltraServers in SageMaker AI](reserve-capacity-with-training-plans.md#training-plans-ultraservers).
 + `UltraServerCount`: Specify the number of UltraServers to search for.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

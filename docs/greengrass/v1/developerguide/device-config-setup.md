@@ -157,3 +157,7 @@ The following topics describe how to configure your devices to run IDT tests for
 + [Configure your device to test optional features](#optional-feature-config)
 + [Optional: Configuring your Docker container for IDT for AWS IoT Greengrass](docker-config-setup.md)
 + [Optional: Configuring your device for ML qualification](idt-ml-qualification.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

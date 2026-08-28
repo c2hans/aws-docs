@@ -17,3 +17,7 @@ A blueprint with which the project profile is created defines what AWS tools and
 + [Enable Tooling blueprint](enable-tooling-blueprint.md)
 + [Manage Tooling blueprint parameters](manage-tooling-blueprint.md)
 + [Modify the OnDemandWorkflows blueprint for creating workflow environments in a shared VPC](modify-on-demand-workflows-blueprint.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

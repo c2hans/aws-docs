@@ -146,3 +146,7 @@ The following are AWS resources and third-party applications that you can back u
 <a name="pricing"></a>
 
 With AWS Backup, you pay for backup storage, data restored, restore testing, cross-Region data transfer, and AWS Backup Audit Manager. For more information, see [AWS Backup Pricing](https://aws.amazon.com/backup/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

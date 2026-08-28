@@ -27,3 +27,7 @@ To learn more about securing network access on HyperPod, see [Setting up SageMak
 The high-level architecture of Amazon EKS support in HyperPod involves a 1-to-1 mapping between an EKS cluster (control plane) and a HyperPod cluster (worker nodes) within a VPC, as shown in the following diagram.
 
 ![EKS control plane connected to HyperPod cluster nodes via cross-account ENIs within VPCs.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/hyperpod-eks-diagram.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

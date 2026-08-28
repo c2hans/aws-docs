@@ -375,3 +375,7 @@ The response represents the transaction details. Note that the `blockHash` and `
 
 **Tip**
 While the preceding code examples illustrate how to use Node.js, Ethers, and Axios to utilize a few of the supported JSON-RPCs on AMB Access Polygon, you can modify the examples and write other code to build your applications on Polygon using this service. For a full list of supported JSON-RPCs on AMB Access Polygon, see [Managed Blockchain API and the JSON-RPCs supported with AMB Access Polygon](polygon-api.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

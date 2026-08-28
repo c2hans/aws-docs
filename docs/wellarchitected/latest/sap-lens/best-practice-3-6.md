@@ -26,3 +26,7 @@ Consider third-party automation tools where complex or deep integration between 
 +  AWS Documentation: [AWS Launch Wizard for SAP](https://aws.amazon.com/launchwizard/)
 +  AWS Documentation: [AWS Systems Manager Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-automation.html)
 +  AWS Marketplace: [Products and Tools for DevOps](https://aws.amazon.com/marketplace/search/results?page=1&searchTerms=sap&category=45c68cc2-ccd6-426b-94bd-92a791004dc2)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

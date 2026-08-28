@@ -791,3 +791,7 @@ Amazon Simple Email Service - Mail Manager defines the following condition keys 
 |   [ses:MailManagerIngressPointType](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsesmailmanager.html#amazonsesmailmanager-policy-keys)  | Filters access by SES Mail Manager ingress point type, for example OPEN or AUTH | String |
 |   [ses:MailManagerRuleSetArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsesmailmanager.html#amazonsesmailmanager-policy-keys)  | Filters access by SES Mail Manager rule set ARN | ARN |
 |   [ses:MailManagerTrafficPolicyArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonsesmailmanager.html#amazonsesmailmanager-policy-keys)  | Filters access by SES Mail Manager traffic policy ARN | ARN |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

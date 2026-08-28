@@ -23,3 +23,7 @@ The following sections explain how to create a media stream pipeline. Follow the
 + [Example code for Amazon Chime SDK media stream pipelines](pipeline-creation-code.md)
 + [Using Event Bridge notifications for Amazon Chime SDK media stream pipelines](media-stream-event-bridge.md)
 + [Using Amazon Chime SDK media stream pipelines data](media-stream-tips-tricks.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

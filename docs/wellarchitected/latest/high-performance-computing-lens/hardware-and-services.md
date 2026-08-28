@@ -30,3 +30,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 +  [Deep dive on AWS Graviton2 processor-powered Amazon EC2 instances](https://www.youtube.com/watch?v=NLysl0QvqXU)
 +  [Deep dive into AWS Graviton3 and Amazon EC2 C7g instances](https://www.youtube.com/watch?v=WDKwwFQKfSI&ab_channel=AWSEvents)
 +  [AWS Graviton4-based Amazon EC2 R8g instances: best price performance in Amazon EC2](https://aws.amazon.com/blogs/aws/aws-graviton4-based-amazon-ec2-r8g-instances-best-price-performance-in-amazon-ec2)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

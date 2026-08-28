@@ -235,3 +235,7 @@ Insufficient permissions or incorrect bucket or AWS Identity and Access Manageme
 For common causes of Access Denied (403 Forbidden) errors, see [Troubleshoot access denied (403 Forbidden) errors in Amazon S3](troubleshoot-403-errors.md).
 
 If you're getting a 404 NoSuchKey error when trying to access an object, see [How can I troubleshoot the 404 NoSuchKey error from Amazon S3?](https://repost.aws/knowledge-center/404-error-nosuchkey-s3) in the AWS re:Post Knowledge Center.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

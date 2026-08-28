@@ -114,3 +114,7 @@ If an event contains a resource that doesn’t belong to the event Region, Cloud
    For more information about these settings, see [Create an integration with a CloudTrail partner with the console](query-event-data-store-integration-partner.md).
 
 1. To add, change, or remove tags, choose **Edit** in **Tags**. You can add up to 50 tag key pairs to help you identify, sort, and control access to your event data store. Choose **Save changes** when you're finished.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

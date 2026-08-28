@@ -23,3 +23,7 @@ After careful consideration, we decided to end support for Amazon FinSpace, effe
    + **Nodes** tab – Displays a list of nodes in this cluster along with their status. All the nodes that are active will have a **Running** status and nodes that are being prepared or stuck due to lack of resources have the status as **Provisioning**. From here you could also delete a node. For this, select a node and choose **Delete**.
    + **Logs** section – Displays the activity logs for your clusters.
    + **Tags** tab – Displays a list of key-value pairs associated with the clusters. If you did not provide tags during cluster creation, choose **Manage tags** to add new tags.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

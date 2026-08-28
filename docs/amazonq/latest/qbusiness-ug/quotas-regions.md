@@ -74,3 +74,7 @@ The following table shows the quotas that are related to Amazon Q Business for y
 | Maximum duration limit for video files extraction  | 4 hours | No |
 | Maximum duration limit for audio files extraction  | 4 hours | No |
 | Maximum number of groups per user supported by Amazon Q Business | 1000 | No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

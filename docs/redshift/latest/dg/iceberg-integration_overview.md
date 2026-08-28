@@ -57,3 +57,7 @@ When using Amazon Redshift catalogs in the AWS Glue Data Catalog, consider the f
 +  To access tables in data warehouses registered to the AWS Glue Data Catalog, the database’s isolation level must be SNAPSHOT. Attempting to access tables with an isolation level of SERIALIZABLE will result in an error. For more information on serializable isolation, see [Isolation levels in Amazon Redshift](c_serial_isolation.md). For information on changing the isolation level of a database, see [ALTER DATABASE](r_ALTER_DATABASE.md).
 
    Note that the isolation level of the default `dev` database can’t be altered. Consequently, this means that tables in the `dev` database won’t be included in the accessible data when registering data warehouses to the AWS Glue Data Catalog.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

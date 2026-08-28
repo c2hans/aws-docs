@@ -43,3 +43,7 @@ The following table describes important changes to the *AWS Snowball Edge Develo
 | [New AWS Region supported](#doc-history) | Snowball Edge devices are now available in the Asia Pacific (Mumbai). Note that compute instances and AWS Lambda powered by AWS IoT Greengrass are not supported in this region. | September 24, 2018 |
 | [Introducing support for Amazon EC2-compatible compute instances on Snowball Edge devices](#doc-history) | AWS Snowball Edge now supports local jobs using [Amazon EC2 compute instances](https://docs.aws.amazon.com/snowball/latest/developer-guide/using-ec2.html) running on Snowball Edge devices.  | July 17, 2018 |
 | [Improved troubleshooting content](#doc-history) | The troubleshooting chapter has been updated and reorganized. | July 11, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -444,3 +444,7 @@ This example uses a `Catch` field. When a timeout occurs, the state machine tran
 
 **Preserving state input and error in JSONPath**
 In JSONPath, you can preserve the state input and the error by using `ResultPath`. See [Use ResultPath to include both error and input in a `Catch`](input-output-resultpath.md#input-output-resultpath-catch).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

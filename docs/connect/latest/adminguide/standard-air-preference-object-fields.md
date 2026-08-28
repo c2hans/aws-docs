@@ -242,3 +242,7 @@ For example, you can use `_airPreferenceId` as a key name with the [SearchProfil
 | BaggageType | String | Specifies the preferred type of baggage handling (for example, carry-on only, checked baggage, oversized). |
 | Assistance | String | Indicates whether the traveler requires assistance with carrying or managing their baggage, such as airport porter services or curbside luggage help. |
 | PreferenceLevel | String | Level of preference for Baggage fields |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

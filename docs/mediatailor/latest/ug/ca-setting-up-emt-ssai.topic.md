@@ -39,3 +39,7 @@ The following shows how to configure MediaTailor console settings so that you ca
 1. On the navigation bar, choose **Create configuration**.
 
 Now that you've set up MediaTailor for ad insertion, you can also set up ad breaks. For detailed instructions, see [Getting started with MediaTailor ad insertion](getting-started-ad-insertion.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

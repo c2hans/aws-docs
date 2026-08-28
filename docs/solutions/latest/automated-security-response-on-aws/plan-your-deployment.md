@@ -11,7 +11,7 @@ This section describes the cost, network security, supported AWS Regions, quotas
 <a name="supported-aws-regions"></a>
 
 **Important**
-Enabling optional features in the solution may reduce the list of regions supported for deployment. In other words, the list below only applies to the core components of the solution. For example, if you choose to enable the Web UI, you will not be able to deploy the solution in GovCloud regions since [CloudFront is not supported in GovCloud (US), as of November 2025](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/setting-up-cloudfront.html).
+Enabling optional features in the solution may reduce the list of regions supported for deployment. In other words, the list below only applies to the core components of the solution. For example, if you choose to enable the Web UI, you will not be able to deploy the solution in GovCloud regions since [CloudFront is not supported in GovCloud (US)](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/setting-up-cloudfront.html).
 
 | Region name | Region code |
 | --- | --- |
@@ -51,6 +51,12 @@ Enabling optional features in the solution may reduce the list of regions suppor
 | Mexico (Mexico City) | mx-central-1 |
 | Asia Pacific (Thailand) | ap-southeast-7 |
 | Asia Pacific (Malaysia) | ap-southeast-5 |
+| Asia Pacific (Taipei) | ap-east-2 |
+| Asia Pacific (New Zealand) | ap-southeast-6 |
 
 **Note**
 Any new AWS regions not listed may be supported via local deployment but not one-click deployment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,3 +27,7 @@ Cancelled capacity is not guaranteed to be re-reservable at a future date. Capac
    The reservation's status changes to **Cancelling**, and a progress banner informs you that the cancellation is in progress.
 
    When the cancellation is complete, the capacity reservation remains, but its status shows as **Cancelled**. The reservation will be deleted 45 days after cancellation. During the 45 days, you cannot re-purpose or reuse a reservation that has been cancelled, but you can refer to its tags and view it for historical reference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

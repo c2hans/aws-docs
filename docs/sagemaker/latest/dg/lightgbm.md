@@ -26,3 +26,7 @@ The following table outlines a variety of sample notebooks that address differen
 | [Amazon SageMaker AI LightGBM Distributed training using Dask](https://sagemaker-examples.readthedocs.io/en/latest/introduction_to_applying_machine_learning/sagemaker_lightgbm_distributed_training_dask/sagemaker-lightgbm-distributed-training-dask.html) | This notebook demonstrates distributed training with the Amazon SageMaker AI LightGBM algorithm using the Dask framework. |
 
 For instructions on how to create and access Jupyter notebook instances that you can use to run the example in SageMaker AI, see [Amazon SageMaker notebook instances](nbi.md). After you have created a notebook instance and opened it, choose the **SageMaker AI Examples** tab to see a list of all of the SageMaker AI samples. To open a notebook, choose its **Use** tab and choose **Create copy**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

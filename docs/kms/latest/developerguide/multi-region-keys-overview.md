@@ -128,3 +128,7 @@ You can also think of the primary and replica designations of related multi-Regi
 All other properties of multi-Region keys are *independent properties*, including the key description, [key policy](key-policies.md), [grants](grants.md), [enabled and disabled key states](enabling-keys.md), [aliases](kms-alias.md), and [tags](tagging-keys.md). You can set the same values for these properties on all related multi-Region keys, but if you change the value of an independent property, AWS KMS does not synchronize it.
 
 You can track the synchronization of the shared properties of your multi-Region keys. In your AWS CloudTrail log, look for the [SynchronizeMultiRegionKey](ct-synchronize-multi-region-key.md) event.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

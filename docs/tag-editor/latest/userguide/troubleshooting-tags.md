@@ -19,3 +19,7 @@ The following checklist might be helpful if errors occur when you try to apply o
 <a name="tagging-resources-retry"></a>
 
 If tag changes fail on at least one of your selected resources, Tag Editor displays a red banner at the bottom of the page. The banner shows an error message for each type of failure that occurs. For each error, the banner identifies the specific resources on which Tag Editor couldn't make tag changes. After you review and [troubleshoot the errors](#troubleshooting-tags), choose **Retry failed tag changes on resources** to retry changes on only those resources on which tag changes failed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Tagging and Tag Editor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tag-editor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

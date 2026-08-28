@@ -37,3 +37,7 @@ You can only end active sessions that are loaded. If a user has many sessions, c
 1. A dialog box appears that confirms you are ending active sessions for this user. Review the information, and if you want to continue, type `confirm`, and then choose **End sessions**.
 
 1. You are returned to the user's page. A green notification message appears to indicate that the selected sessions were successfully ended.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

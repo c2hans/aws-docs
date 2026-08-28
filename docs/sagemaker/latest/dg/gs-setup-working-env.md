@@ -70,3 +70,7 @@ The following tutorial video shows how to set up and use SageMaker notebook inst
 [![AWS Videos](http://img.youtube.com/vi/X5CLunIzj3U/0.jpg)](http://www.youtube.com/watch?v=X5CLunIzj3U)
 
 For complete documentation about SageMaker notebook instance, see [Use Amazon SageMaker notebook Instances](https://docs.aws.amazon.com/sagemaker/latest/dg/nbi.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ Voice analytics tries to ensure at least one delivery of each task result. Howev
 The `GetVoiceToneAnalysisTask` API only returns a task's status. It doesn't return task results. To see results, use an Amazon SQS, Amazon SNS, or AWS Lambda notification target.
 
 The `GetSpeakerSearchTask` API gets the latest results synchronously for a task ID, delayed messages, or messages that arrive out of order. However, we recommend using notification targets and asynchronous processing. Doing so consumes fewer computing resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

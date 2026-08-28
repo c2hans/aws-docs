@@ -38,3 +38,7 @@ When you are finished with a tag, you can remove it.
 
 **To update the tags for a target group using the AWS CLI**
 Use the [add-tags](https://docs.aws.amazon.com/cli/latest/reference/elbv2/add-tags.html) and [remove-tags](https://docs.aws.amazon.com/cli/latest/reference/elbv2/remove-tags.html) commands.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -309,3 +309,7 @@ Yes. Buyers can accept private offers in different currencies, but they will rec
 <a name="listing-fee-non-usd"></a>
 
 The listing fee is calculated and deducted in the offer currency. Sellers also receive disbursements in the offer currency. For example, if the offer currency is EUR, the listing fee is deducted in EUR and seller disbursements are made in EUR.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

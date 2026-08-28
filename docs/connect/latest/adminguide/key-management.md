@@ -47,3 +47,7 @@ After you enable Data Vault, you can't update KMS keys for your domain or Object
 <a name="key-management-outboundcampaigns"></a>
 
 Outbound campaigns encrypts all sensitive data using an AWS owned key or a customer managed key. As the customer managed key is created, owned, and managed by the you, you have full control over the customer managed key (AWS KMS charges apply).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

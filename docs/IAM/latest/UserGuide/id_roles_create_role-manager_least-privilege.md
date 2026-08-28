@@ -62,3 +62,7 @@ IAM limits the number of managed policies that you can attach to a role. If appl
 + [Create roles automatically with role manager](id_roles_create_role-manager.md)
 + [Manage access to role manager](id_roles_create_role-manager_enable-use.md)
 + [Overview of role templates](id_roles_create_role-template.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

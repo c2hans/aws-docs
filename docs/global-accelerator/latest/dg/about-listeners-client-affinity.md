@@ -16,3 +16,7 @@ If you want to maintain client affinity by routing a specific user—identified 
 On occasion, network maintenance or disruptions created by variations in internet traffic routing can cause client traffic to shift to different Global Accelerator edge locations. When this happens, if the edge location that now serves the client traffic prefers a different AWS Region, then client affinity is not guaranteed to be maintained.
 
 In addition, be aware that when you've set endpoint weights in your accelerator, in specific, limited scenarios, Global Accelerator overrides those weights, to help ensure availability. When Global Accelerator is load balancing traffic across endpoints in an endpoint group, it must, in certain circumstances, choose between preserving availability for client traffic and abiding by endpoint weights. For example, with accelerators where the client IP address is preserved, Global Accelerator might need to override an endpoint weight setting to help avoid connection collisions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

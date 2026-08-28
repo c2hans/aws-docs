@@ -71,3 +71,7 @@ Additional differences:
 <a name="account-scope-limitation"></a>
 
 Cloud Control API provides a set of APIs for performing CRUDL (Create, Read, Update, Delete, List) operations on AWS resources. When using the Cloud Control API, you can only perform CRUDL operations on AWS resources within your own AWS account. You cannot perform these operations on AWS resources that belong to other AWS accounts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Control API. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudcontrolapi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,3 +43,7 @@ Instances after isolation will have:
 
 **Note**
 On isolation, instances sharing the same role with the compromised instance would be impacted as the credentials will be invalidated. If your application does not have the correct retry mechanism to renew new credentials, it can result in failure of the application. For more information, refer to the [Using temporary credentials with AWS resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_use-resources.html#using-temp-creds-sdk-ec2-instances) topic about creating new credentials. Applications using AWS CLI will not be impacted as the credentials will be refreshed automatically
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Forensics Orchestrator for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

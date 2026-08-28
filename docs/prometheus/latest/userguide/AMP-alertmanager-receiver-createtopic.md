@@ -19,3 +19,7 @@ Whether you use a new or existing Amazon SNS topic, you will need the Amazon Res
 + [Configure alert manager to send messages to Amazon SNS as JSON](AMP-alertmanager-receiver-JSON.md)
 + [Configure Amazon SNS to send messages for alerts to other destinations](AMP-alertmanager-SNS-otherdestinations.md)
 + [Understanding Amazon SNS message validation rules](AMP-alertmanager-receiver-validation-truncation.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Service for Prometheus. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prometheus` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

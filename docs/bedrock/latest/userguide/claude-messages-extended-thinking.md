@@ -631,3 +631,7 @@ When using summarized thinking, keep the following information in mind:
 + **No charge**: Tokens used to generate the summary
 + The `summary_status` field can indicate if token limits aﬀected summarization
 + The billed output token count will not match the visible token count in the response. You are billed for the full thinking process, not the summary you see.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

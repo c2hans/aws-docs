@@ -18,3 +18,7 @@ Use the reference links in the following table to help you diagnose and fix issu
 | I can't sign into my new account after it has been created | [https://docs.aws.amazon.com/signin/latest/userguide/troubleshooting-sign-in-issues.html](https://docs.aws.amazon.com/signin/latest/userguide/troubleshooting-sign-in-issues.html) | AWS Sign-In User Guide |
 
 For additional help, we recommend that you search [AWS re:Post](https://forums.aws.amazon.com/) for content related to your specific issue. If you still need assistance, contact [AWS Support](https://console.aws.amazon.com/support/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

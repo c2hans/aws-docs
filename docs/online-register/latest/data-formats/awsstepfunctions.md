@@ -25,3 +25,7 @@ AWS Step Functions provides the following APIs for data retrieval.
 | <a name="states-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ListTagsForResource.html) | List tags for an AWS Step Functions resource | List |
 | <a name="states-RevealSecrets"></a>[RevealSecrets](https://docs.aws.amazon.com/step-functions/latest/dg/test-state-isolation.html) | Reveal sensitive data from an execution | Read |
 | <a name="states-ValidateStateMachineDefinition"></a>[ValidateStateMachineDefinition](https://docs.aws.amazon.com/step-functions/latest/apireference/API_ValidateStateMachineDefinition.html) | Validate a state machine definition | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

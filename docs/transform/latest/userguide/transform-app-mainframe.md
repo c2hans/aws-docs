@@ -88,3 +88,7 @@ For a list for supported Regions, see [Supported Regions for AWS Transform](regi
 Your data might be processed in a different Region from the Region where you use AWS Transform. For information on cross-region processing, see [Cross-region processing in AWS Transform](cross-region-processing.md).
 
 For the quota limits, see [Quotas for AWS Transform](transform-limits.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

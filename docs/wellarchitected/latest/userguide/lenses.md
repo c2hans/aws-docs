@@ -16,3 +16,7 @@ A workload can have one or more lenses applied. Each lens has its own set of que
 Five lenses can be added at a time to a workload, with a maximum of 20 lenses applied to one workload.
 
 If a lens is removed from a workload, the data associated with the lens is retained. The data is restored if you add the lens back to the workload.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

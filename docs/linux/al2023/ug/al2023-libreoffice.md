@@ -185,3 +185,7 @@ find /opt -name "soffice" 2>/dev/null
 If you encounter other issues, refer to the official LibreOffice installation documentation for Linux:
 + [LibreOffice Linux Installation Guide](https://wiki.documentfoundation.org/Documentation/Install/Linux)
 + [LibreOffice Download Page](https://www.libreoffice.org/download/download-libreoffice/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

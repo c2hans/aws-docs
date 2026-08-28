@@ -42,3 +42,7 @@ Some of the ways you can deploy applications in AMS. Details on each method foll
   <tr><td>CodeDeploy application deployment</td><td>CodeDeploy</td><td>Application -&gt; CodeDeploy application -&gt; CodeDeploy deployment group -&gt; CodeDeploy deployment.</td><td>Depending on usage, In-place or Blue/Green application deployment. For details, see <a href="service-create-codedeploy.md">CodeDeploy requests</a>.</td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

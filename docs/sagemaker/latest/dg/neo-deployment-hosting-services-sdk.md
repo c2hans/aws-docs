@@ -117,3 +117,7 @@ with tf.python_io.TFRecordWriter("tf_serving_warmup_requests") as writer:
 ```
 
 For more information on how to “warm up” your model, see the [TensorFlow TFX page](https://www.tensorflow.org/tfx/serving/saved_model_warmup).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

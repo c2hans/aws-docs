@@ -21,3 +21,7 @@ Blocking a Worker prevents the Worker from accepting more of your HITs. However,
 1. In the **Block Worker** dialog box, enter a reason for blocking the Worker and then choose **Block**.
 
 The Worker receives a message with the reason you are blocking them.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

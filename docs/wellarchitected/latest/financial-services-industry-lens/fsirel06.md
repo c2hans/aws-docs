@@ -31,3 +31,7 @@ Capture data that measures the experience of your workload's clients to understa
 <a name="fsirel06-bp05"></a>
 
  To understand conditions of high or unexpected network traffic, you must establish a steady state of metrics for the expected data flows between your workload and its users as well as between the components within your workload. This baseline should initiate an operational response when a workload is suddenly seeing abnormal traffic throughput that exceeds the expected steady state ranges. Understanding the steady state is key in creating the knowledge of normal communication patterns between and within the workload components. Knowing which network communications patterns are outside of normal ranges helps operations teams troubleshoot and isolate impacted components.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

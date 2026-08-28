@@ -117,3 +117,7 @@ $ aws resource-explorer-2 get-index \
 However, if you want users to be able to search for resources in ***only*** the newly indexed Region, then you can also create a view for users in that Region and grant your users permissions to that view or users can search using the service view in that Region. For instructions on how to create a view, see [Configuring a Resource Explorer view to provide access to resource searches](customer-views.md#configure-views).
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resource Explorer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resource-explorer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

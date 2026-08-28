@@ -77,3 +77,7 @@ This section provides solutions for common issues when working with Lambda Micro
 | InvalidSecurityGroup | The security group ID does not exist, has been deleted, or does not belong to the same VPC as the specified subnets. | Verify all security group IDs exist and belong to the same VPC as the subnets. Use aws ec2 describe-security-groups --group-ids <sg-id> to validate. |
 | InvalidSubnet | The subnet ID does not exist, has been deleted, or belongs to a different VPC than expected. | Verify all subnet IDs exist and belong to the correct VPC. Use aws ec2 describe-subnets --subnet-ids <subnet-id> to validate. |
 | SubnetOutOfIPAddresses | The subnet's CIDR block is exhausted – all IPs are allocated to ENIs, instances, and other resources, so Lambda cannot create a network interface. | Free up IP addresses by removing unused ENIs/instances, or use a different subnet with available capacity. Consider larger subnets (for example, /24 or larger) for network connectors. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

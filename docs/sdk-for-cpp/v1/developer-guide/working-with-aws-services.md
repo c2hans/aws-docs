@@ -17,3 +17,7 @@ You can find more code examples in the [Code examples](cpp_code_examples.md) cha
 + [Getting started on code examples](getting-started-code-examples.md)
 + [Getting started troubleshooting runtime errors](troubleshooting-runtime-errors.md)
 + [Guided examples](programming-services.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for C++. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-cpp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

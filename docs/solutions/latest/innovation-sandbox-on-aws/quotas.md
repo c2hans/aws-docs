@@ -36,10 +36,22 @@ Make sure you are aware of AWS CloudFormation quotas when [launching the stack](
 
 Your account has an AWS Lambda concurrent execution quota of 1000. If the solution is used in an account where there are other workloads running and using Lambda, set this quota to an appropriate value. This value is adjustable; for more information, see [AWS Lambda quotas](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html) in the *AWS Lambda User’s Guide*.
 
+## AWS IAM Identity Center quotas
+<a name="iam-identity-center-quotas"></a>
+
+When you share leases with additional users and groups, the solution creates account assignments in AWS IAM Identity Center. If you plan to use lease sharing extensively, be aware of the following IAM Identity Center quotas that apply to account assignments:
++ A maximum of 100 groups can be assigned to a permission set for a single AWS account. This quota cannot be increased. In practice, the solution’s limit of 20 principals per lease is reached first, so this quota is unlikely to be a binding constraint.
+
+The solution processes assignment operations asynchronously. It rate-limits its calls to stay within the IAM Identity Center API throttling limits (a collective limit of 20 transactions per second across IAM Identity Center APIs). During periods of very high assignment volume, individual grant and removal operations might be queued and take longer to complete. For more information, refer to [Quotas for IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/limits.html) in the *AWS IAM Identity Center User Guide*.
+
 ## AWS CodeBuild quotas
 <a name="aws-codebuild-quotas"></a>
 
 Make sure you are aware of [AWS CodeBuild quotas](https://docs.aws.amazon.com/codebuild/latest/userguide/limits.html) when [launching the stack](launch-the-stack.md) in this solution.
 
 **Note**
-By default, concurrent CodeBuild quotas are low. To efficiently handle account recycling with this solution, we recommend you request a higher concurrent build quota before you launch the solution.
+By default, concurrent AWS CodeBuild quotas are low. To efficiently handle account recycling with this solution, we recommend you request a higher concurrent build quota before you launch the solution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

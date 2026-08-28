@@ -7,7 +7,7 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 # Document history for user guide
 <a name="doc-history"></a>
 
-The following is the latest major policy updates for AWS Transform MGN. We also update the documentation frequently to address the feedback that you send us.
+The following are the latest major policy updates for AWS Transform MGN. We also update the documentation frequently to address the feedback that you send us.
 
 For additional details regarding new features and major updates, [see the MGN release notes](mgn-release-notes.md).
 
@@ -15,9 +15,9 @@ For additional details regarding new features and major updates, [see the MGN re
 | --- | --- | --- |
 | Added Oracle Linux 9.6 support | Added Oracle Linux 9.6 to the list of supported Linux operating systems. | August 23, 2026 |
 | Added Amazon Linux 2023 with kernel 6.18 support | Added Amazon Linux 2023 with kernel 6.18 to the list of supported Linux operating systems. | August 5, 2026 |
+| Added RHEL, Rocky Linux, and AlmaLinux 9.8 support | Added RHEL 9.8, Rocky Linux 9.8, and AlmaLinux 9.8 to the list of supported Linux operating systems. | July 12, 2026 |
 | Added Windows 11 to the no-rescan upon reboot supported OS list | Added Windows 11 to the [no-rescan upon reboot](Agent-Related-FAQ.md#agent-no-rescan) supported OS list. | June 18, 2026 |
 | Updated no-rescan supported OS list | Added Windows Server 2025, CentOS Stream 9, and CentOS Stream 10 to the [no-rescan upon reboot](Agent-Related-FAQ.md#agent-no-rescan) supported OS list. | June 17, 2026 |
-| Added RHEL, Rocky Linux, and AlmaLinux 9.8 support | Added RHEL 9.8, Rocky Linux 9.8, and AlmaLinux 9.8 to the list of supported Linux operating systems. | July 12, 2026 |
 | Added Oracle Linux 10.1 support | Added Oracle Linux 10.1 to the list of supported Linux operating systems. | June 16, 2026 |
 | Added FSx for ONTAP as a target storage type (Public Preview) | You can now choose FSx for ONTAP as the target storage type for migrated workloads (Public Preview). Added [FSx for ONTAP configuration](fsx-ontap.md) and [Troubleshooting FSx for ONTAP issues](fsx-ontap-troubleshooting.md). | June 16, 2026 |
 | Updated support matrix with new OS | Added Windows 11 to the list of supported Windows operating systems. | June 10, 2026 |
@@ -26,10 +26,10 @@ For additional details regarding new features and major updates, [see the MGN re
 | Updated network requirements | Added Amazon Linux 2023 package repository Amazon S3 bucket to the firewall allowlist and Amazon S3 VPC endpoint policy requirements for staging area subnet connectivity. | May 6, 2026 |
 | Updated supported operating systems content. | Deprecation notices updated with new entries. | December 14, 2025 |
 | Added IPv6 support. | Added IPv6 support | December 09, 2025 |
-| Created AWS managed policy | Created the [AWSApplicationMigrationNetworkMigrationMultiAccount](security-iam-awsmanpol-AWSApplicationMigrationNetworkMigrationMultiAccount.md#security-iam-awsmanpol-AWSApplicationMigrationNetworkMigrationMultiAccount.title) policy to provide permissions to automate VMware to AWS network infrastructure migration through CloudFormation. | November 10, 2025 |
 | Created AWS managed policy | Created the [AWSApplicationMigrationNetworkMigrationCustomResource](security-iam-awsmanpol-AWSApplicationMigrationNetworkMigrationCustomResource.md#security-iam-awsmanpol-AWSApplicationMigrationNetworkMigrationCustomResource.title) policy to provide permissions for Network Migration custom resource. | December 2, 2025 |
+| Created AWS managed policy | Created the [AWSApplicationMigrationNetworkMigrationMultiAccount](security-iam-awsmanpol-AWSApplicationMigrationNetworkMigrationMultiAccount.md#security-iam-awsmanpol-AWSApplicationMigrationNetworkMigrationMultiAccount.title) policy to provide permissions to automate VMware to AWS network infrastructure migration through CloudFormation. | November 10, 2025 |
 | Updated AWS managed policy | Updated multiple topics to reflect MGN adding support for IPv6 | October 30, 2025 |
-| Updated the [AWSApplicationMigrationSSMAccess ](security-iam-awsmanpol-AWSApplicationMigrationSSMAccess.md#security-iam-awsmanpol-AWSApplicationMigrationSSMAccess.title) and [AWSApplicationMigrationFullAccess ](security-iam-awsmanpol-AWSApplicationMigrationFullAccess.md#security-iam-awsmanpol-AWSApplicationMigrationFullAccess.title) policies to support changes in SSM. | July 3, 2025 |
+| Updated AWS managed policy | Updated the [AWSApplicationMigrationSSMAccess ](security-iam-awsmanpol-AWSApplicationMigrationSSMAccess.md#security-iam-awsmanpol-AWSApplicationMigrationSSMAccess.title) and [AWSApplicationMigrationFullAccess ](security-iam-awsmanpol-AWSApplicationMigrationFullAccess.md#security-iam-awsmanpol-AWSApplicationMigrationFullAccess.title) policies to support changes in SSM. | July 3, 2025 |
 | Updated AWS managed policy | Updated the [AWSApplicationMigrationServiceRolePolicy](security-iam-awsmanpol-AWSApplicationMigrationServiceRolePolicy.md) policy to support tagging network interfaces during RunInstances. | March 13, 2025 |
 | Updated AWS managed policy | Updated the [AWSApplicationMigrationEC2Access](security-iam-awsmanpol-AWSApplicationMigrationEC2Access.md) policy to support tagging network interfaces during RunInstances. | February 11, 2025 |
 | Updated AWS managed policies |  Created new revisions of the following managed policies to support a change in authentication with EBS APIs: +   [ AWSApplicationMigrationServiceRolePolicy ](security-iam-awsmanpol-AWSApplicationMigrationServiceRolePolicy.md)  <br />+   [ AWSApplicationMigrationEC2Access ](security-iam-awsmanpol-AWSApplicationMigrationEC2Access.md)   | January 08, 2025 |
@@ -37,8 +37,12 @@ For additional details regarding new features and major updates, [see the MGN re
 | Updated AWS managed policy | Updated the [AWSApplicationMigrationServiceEc2InstancePolicy](security-iam-awsmanpol-AWSApplicationMigrationServiceEc2InstancePolicy.md) to support MGN to GovCloud and added SID to statements in the managed policy. | December 28, 2023 |
 | Created AWS managed policy | Created the [AWSApplicationMigrationServiceEc2InstancePolicy](security-iam-awsmanpol-AWSApplicationMigrationServiceEc2InstancePolicy.md). | August 21, 2023 |
 | Updated AWS managed policy | Updated the [AWSApplicationMigrationServiceRolePolicy](security-iam-awsmanpol-AWSApplicationMigrationServiceRolePolicy.md) policy to support the global view feature. | June 4, 2023 |
-| Updated AWS managed policy | Updated the [AWSApplicationMigrationServiceRolePolicy](security-iam-awsmanpol-AWSApplicationMigrationFullAccess.md) policy to support specific automation SSM documents. | April 1, 2023 |
+| Updated AWS managed policy | Updated the [AWSApplicationMigrationFullAccess](security-iam-awsmanpol-AWSApplicationMigrationFullAccess.md) policy to support specific automation SSM documents. | April 1, 2023 |
 | Updated AWS managed policy | Updated the [AWSApplicationMigrationFullAccess](security-iam-awsmanpol-AWSApplicationMigrationFullAccess.md) policy to support both command and automation SSM documents for post-migration framework actions. | March 21, 2023 |
 | Updated AWS managed policy | Updated the [AWSApplicationMigrationSSMAccess](security-iam-awsmanpol-AWSApplicationMigrationSSMAccess.md) policy to support both command and automation SSM documents for the custom actions feature. | March 21, 2023 |
 | Updated AWS managed policy | Updated the [AWSApplicationMigrationReadOnlyAccess](security-iam-awsmanpol-AWSApplicationMigrationReadOnlyAccess.md) policy to support the new import and export feature. | March 21, 2023 |
 | Updated AWS managed policy | Updated the [AWSApplicationMigrationEC2Access](security-iam-awsmanpol-AWSApplicationMigrationEC2Access.md) policy to support: DescribeSnapshots, DescribeImages, DescribeVolumes.  | January 29, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

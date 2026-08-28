@@ -97,3 +97,7 @@ The table below shows supported conditions and the value expressions you can use
   - **Condition:** Is not missing / **valueExpression:** \!isMissing(`column`) / **Description:** Condition to test if the value in column is not missing
   - **Condition:** Is valid / **valueExpression:** isValid(`column`, datatype) / **Description:** Condition to test if the value in column is valid(the value is of datatype or it can be converted to datatype)
   - **Condition:** Is not valid / **valueExpression:** \!isValid(`column`, datatype) / **Description:** Condition to test if the value in column is not valid(the value is of datatype or it can be converted to datatype)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

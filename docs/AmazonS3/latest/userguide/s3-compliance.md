@@ -25,3 +25,7 @@ Your compliance responsibility when using Amazon S3 is determined by the sensiti
 + [AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) provides you with a comprehensive view of your security state within AWS and helps you check your compliance with security industry standards and best practices.
 + [Locking objects with Object Lock](object-lock.md) can help you meet technical requirements of financial services regulators (such as the SEC, FINRA, and CFTC) that require write once, read many (WORM) data storage for certain types of books and records information.
 + [Cataloging and analyzing your data with S3 Inventory](storage-inventory.md) can help you audit and report on the replication and encryption status of your objects for business, compliance, and regulatory needs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

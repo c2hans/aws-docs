@@ -65,3 +65,7 @@ The following section describes the collection data access policies required for
 + **aoss:UpdateMLResource** – Grants permission to update connectors, models, and model groups.
 + **aoss:DeleteMLResource** – Grants permission to delete connectors, models, and model groups.
 + **aoss:ExecuteMLResource** – Grants permission to perform predictions on models.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

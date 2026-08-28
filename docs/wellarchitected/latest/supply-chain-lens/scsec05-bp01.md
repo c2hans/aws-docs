@@ -32,3 +32,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 1.  Establish automated alerting mechanisms with appropriate severity levels for different types of security events, making sure the right teams receive timely notifications.
 
 1.  Regularly review and update monitoring configurations and detection rules to address emerging threats and changes in supply chain infrastructure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

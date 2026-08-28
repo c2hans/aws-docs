@@ -17,3 +17,7 @@ For more information about using OpenSearch Service with Security Lake, use the 
 + [Introducing Amazon OpenSearch Service and Amazon Security Lake integration to simplify security analytics](https://aws.amazon.com/blogs/aws/introducing-amazon-opensearch-service-zero-etl-integration-for-amazon-security-lake/)
 + Introduction to zero-ETL on OpenSearch Service with Amazon Security Lake
 [![AWS Videos](http://img.youtube.com/vi/1k9ASeoKCus/0.jpg)](http://www.youtube.com/watch?v=1k9ASeoKCus)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

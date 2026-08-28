@@ -26,3 +26,7 @@ Barracuda XDR supports receiving Audit Logs from Amazon Security Lake. To send d
 1. Send data to Amazon Security Lake: Configure AppFabric to send data to Amazon Security Lake through a Amazon Data Firehose. For more information, see [Amazon Security Lake](security-lake.md).
 
 1. Send data to Barracuda XDR: Configure Barracuda XDR to receive audit logs from Amazon Security Lake. For more information, see [Setting Up and Using Amazon Security Lake](https://campus.barracuda.com/product/xdr/doc/104366130/setting-up-and-using-amazon-web-services-security-lake/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

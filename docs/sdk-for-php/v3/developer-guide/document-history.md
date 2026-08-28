@@ -56,3 +56,7 @@ Older changes:
 | Command line | Add command parameters | Aug 13th, 2015 |
 | Service features | Adds service features for S3 and AWS | Apr 30th, 2015 |
 | New SDK version | Version 3 of the AWS SDK for PHP released. | May 26th, 2015 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for PHP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-php` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

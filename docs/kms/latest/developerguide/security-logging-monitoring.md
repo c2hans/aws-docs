@@ -26,3 +26,7 @@ Watch a single metric change over a time period that you specify. Then perform a
 
 **AWS Security Hub CSPM**
 You can monitor your AWS KMS usage for security industry standards and best practices compliance using AWS Security Hub CSPM. Security Hub CSPM uses security controls to evaluate resource configurations and security standards to help you comply with various compliance frameworks. For more information, see [AWS Key Management Service controls](https://docs.aws.amazon.com/securityhub/latest/userguide/kms-controls.html) in the *AWS Security Hub User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  AutoStop instances are stopped when users disconnect and therefore help lower the carbon footprint associated with WorkSpace instances in comparison to AlwaysOn instances. Below a certain threshold, which depends on the bundle selected, we recommend AutoStop mode.
 
  Use [Cost Optimizer for Amazon WorkSpaces](https://aws.amazon.com/solutions/implementations/cost-optimizer-for-amazon-workspaces/) to set the [appropriate running mode](https://docs.aws.amazon.com/workspaces/latest/adminguide/running-mode.html) of a WorkSpaces based on past usage and improve the sustainability position for WorkSpace environments.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

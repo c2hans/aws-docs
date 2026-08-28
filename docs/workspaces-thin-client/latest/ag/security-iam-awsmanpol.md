@@ -174,3 +174,7 @@ This policy includes the following permissions:
 | [AmazonWorkSpacesThinClientFullAccess](#security-iam-awsmanpol-AmazonWorkSpacesThinClientFullAccess) – New policy | Provides full access to Amazon WorkSpaces Thin Client as well as limited access to required related services. | August 9th 2024 |
 | [AmazonWorkSpacesThinClientReadOnlyAccess](#security-iam-awsmanpol-AmazonWorkSpacesThinClientReadOnlyAccess) – New policy | Provides read-only access to Amazon WorkSpaces Thin Client and its dependencies. | July 19th 2024 |
 | WorkSpaces Thin Client started tracking changes | WorkSpaces Thin Client started tracking changes for its AWS managed policies. | July 19th 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

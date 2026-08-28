@@ -14,3 +14,7 @@ If you're publishing a new alias for a Amazon Bedrock, you must replace the conn
 1. In your chat channel, run `@Amazon Q connector delete {{connector_name}}`.
 
 1. Run `@Amazon Q connector add {{connector_name}} arn:aws:bedrock:aws-region:111122223333:agent/{{AgentID}} {{AliasID}} `.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q Developer in chat applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chatbot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

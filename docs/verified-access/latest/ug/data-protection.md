@@ -26,3 +26,7 @@ Verified Access encrypts all data in transit from end users to Verified Access e
 <a name="inter-network-traffic-privacy"></a>
 
 You can configure Verified Access to restrict access to specific resources in your VPC. For user-based authentication you can also restrict access to portions of your network, based on the user group that accesses the endpoints. For more information, see [Verified Access policies](auth-policies.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Verified Access. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verified-access` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

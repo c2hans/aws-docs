@@ -99,3 +99,7 @@ Make sure that you evaluate each case on its own merits, but options include:
 +  **Views** — Aurora MySQL has a new Parallel Query mechanism that offloads some of the query operations to the storage level. This approach can greatly improve performance. In some cases, regular views can be used and may decrease some administration tasks. To evaluate this option, measure the performance and execution time of your SQL.
 
 For more information, see [CREATE TABLE Statement](https://dev.mysql.com/doc/refman/5.7/en/create-table.html), [Trigger Syntax and Examples](https://dev.mysql.com/doc/refman/5.7/en/trigger-syntax.html), and [CREATE VIEW Statement](https://dev.mysql.com/doc/refman/5.7/en/create-view.html) in the *MySQL documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

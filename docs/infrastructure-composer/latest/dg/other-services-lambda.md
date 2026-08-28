@@ -10,3 +10,7 @@ Infrastructure Composer provides an integration with the AWS Lambda console. You
 + When you import your Lambda function into Infrastructure Composer, you must activate local sync mode to save any changes. For more information, see [Locally sync and save your project in the Infrastructure Composer console](using-composer-project-local-sync.md).
 
 To get started with using this integration, see [Using AWS Lambda with AWS Infrastructure Composer](https://docs.aws.amazon.com/lambda/latest/dg/services-appcomposer.html) in the *AWS Lambda Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

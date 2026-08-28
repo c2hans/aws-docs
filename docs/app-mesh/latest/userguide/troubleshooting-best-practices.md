@@ -56,3 +56,7 @@ parse @message "[*][*][*][*] [*] *" as Time, Thread, Level, Name, Source, Messag
 <a name="ts-bp-monitor-envoy-proxy-connectivity-state"></a>
 
 We recommend you monitor the Envoy metrics `control_plane.connected_state` to make sure that the Envoy proxy communicates with the App Mesh control plane to fetch the dynamic configuration resources. For more information, see [Management Server](https://www.envoyproxy.io/docs/envoy/latest/configuration/overview/mgmt_server.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Mesh. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app-mesh` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

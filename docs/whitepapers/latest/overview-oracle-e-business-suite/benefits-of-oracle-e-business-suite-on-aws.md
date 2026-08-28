@@ -62,3 +62,7 @@ With AWS, you can minimize the risk of discovering performance issues later in p
 <a name="no-end-of-life-for-hardware-or-platform"></a>
 
 All hardware platforms have end-of-life dates, at which point the hardware is no longer supported and you are forced to buy new hardware again. In the AWS Cloud, you can simply upgrade the platform instances to new AWS instance types in a single click at no cost for the upgrade.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -326,3 +326,7 @@ For more information about PATCH operations, see:
 + [FHIR R4 FHIRPath Patch Specification](https://hl7.org/fhir/fhirpatch.html)
 + [RFC 6902 - JSON Patch](https://datatracker.ietf.org/doc/html/rfc6902#section-4)
 + [RFC 6901 - JSON Pointer](https://datatracker.ietf.org/doc/html/rfc6901)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

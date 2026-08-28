@@ -97,3 +97,7 @@ When you set your output video codec to `AVC (H.264)` or `HEVC (H.265)`, keep **
 Adaptive quantization selects the strength applied to the different quantization modes that MediaConvert uses, including flicker, spatial, and temporal quantization. MediaConvert uses adaptive quantization to assign bits according to the complexity of your video.
 
 When you set your output video codec to `AVC (H.264)`, `HEVC (H.265)`, or `XAVC`, set **Adaptive quantization** to `Auto` to allow MediaConvert to select an optimal adaptive quantization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

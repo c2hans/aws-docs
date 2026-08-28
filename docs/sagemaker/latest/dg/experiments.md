@@ -16,3 +16,7 @@ Experiments Classic automatically tracks the inputs, parameters, configurations,
 <a name="experiments-mlflow-migration"></a>
 
 Past experiments created using Experiments Classic are still available to view in Studio Classic. If you want to maintain and use past experiment code with MLflow, you must update your training code to use the MLflow SDK and run the training experiments again. For more information on getting started with the MLflow SDK and the AWS MLflow plugin, see [Integrate MLflow with your environment](mlflow-track-experiments.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

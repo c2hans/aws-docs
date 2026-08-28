@@ -228,3 +228,7 @@ There are some use-cases which reserved capacity fleets do not support, and if t
 + Reserved capacity macOS fleets don't support debug session.
 
 For more information on limits and quotas, see [Compute fleets](limits.md#fleet-limits).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

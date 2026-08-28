@@ -33,3 +33,7 @@ The following table provides information about error codes you may see for the M
 | OND-5500 | Exception occurred while getting file content response. | Check logs for more details. |
 | OND-5501 | Only String, String List, Date and Long formats are supported for field mappings. | Please provide valid formats in field mappings. |
 | OND-5502 | Exception occurred while fetching OneNote files. | Check logs for more details. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

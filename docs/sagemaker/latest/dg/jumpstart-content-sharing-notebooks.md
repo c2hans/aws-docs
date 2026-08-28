@@ -24,3 +24,7 @@ First, add the basic descriptive information about your notebook. This informati
 After you've specified the basic information, you can provide an Amazon S3 URI for the location of that notebook. You can choose **Browse** to search through your Amazon S3 buckets for your notebook file location. After you find your notebook, copy the Amazon S3 URI, choose **Cancel**, and then add the Amazon S3 URI to the **Notebook Location** field.
 
 After you enter all the necessary information, choose **Add notebook** in the lower right corner.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

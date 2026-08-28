@@ -35,3 +35,7 @@ The **HTTP Flood Protection** and **Scanner & Probe Protection** template parame
 
 **Note**
 Additionally, if a bad bot bypasses the honeypot and interacts directly with ALB or CloudFront, detection relies on the chosen log parser option to effectively identify and block malicious activity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Automations for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,3 +52,7 @@ If you're signed in to a management account of an organization and trusted acces
 
      Choosing a shorter time range displays the data points at a higher granularity, which provides a higher level of detail.
    + To change the statistic value of the graphs, choose **Statistics**, and then choose **Average** or **Maximum**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

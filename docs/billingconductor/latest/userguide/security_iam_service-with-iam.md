@@ -187,3 +187,7 @@ Billing Conductor supports service roles.
 <a name="security_iam_service-with-iam-roles-choose"></a>
 
 When you create a resource in Billing Conductor, you must choose a role to allow Billing Conductor to access Amazon EC2 on your behalf. If you have previously created a service role or service-linked role, then Billing Conductor provides you with a list of roles to choose from. It's important to choose a role that allows access to start and stop Amazon EC2 instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing Conductor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query billingconductor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

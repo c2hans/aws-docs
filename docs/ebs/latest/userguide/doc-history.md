@@ -71,3 +71,7 @@ The following table describes the documentation releases for Amazon EBS.
 | [Amazon EBS encryption](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-encryption.html) | Amazon EBS encryption offers seamless encryption of EBS data volumes and snapshots, eliminating the need to build and maintain a secure key management infrastructure. EBS encryption enables data at rest security by encrypting your data using AWS managed keys. The encryption occurs on the servers that host EC2 instances, providing encryption of data as it moves between EC2 instances and EBS storage. | May 21, 2014 |
 | [Incremental snapshot copies](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-copy-snapshot.html) | You can now perform incremental snapshot copies. | June 11, 2013 |
 | [EBS snapshot copy](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-copy-snapshot.html) | You can use snapshot copies to create backups of data, to create new Amazon EBS volumes, or to create Amazon Machine Images (AMIs). | December 17, 2012 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

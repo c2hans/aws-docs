@@ -41,7 +41,7 @@ Because the Memory connector makes each Memory operation available as a Cedar ac
 <a name="memory-gateway-fgac-setup"></a>
 
 **Note**
-You can set up fine-grained access control for Memory through the AWS SDK and AWS Command Line Interface (AWS CLI).
+You can set up fine-grained access control for Memory through the AWS Management Console, the AWS SDK, and the AWS Command Line Interface (AWS CLI).
 
 After you have a gateway with a Memory connector target (see [Access AgentCore Memory through a gateway](memory-gateway-connector.md)):
 
@@ -150,3 +150,7 @@ You can validate any of these approaches without affecting live traffic by attac
 Cedar policies evaluated by the policy engine are the identity-aware, per-request authorization layer for Memory traffic through a gateway. They complement, and can be combined with, the gateway’s other access-control options:
 +  **Gateway interceptors** let you implement custom authorization logic in code. For more information, see [Fine-grained access control for Amazon Bedrock AgentCore Gateway](gateway-fine-grained-access-control.md).
 +  **Resource-based policies** on the Memory resource control which IAM principals — including a specific gateway — can call Memory at all, using condition keys such as `aws:SourceArn` and `aws:PrincipalArn`. For more information, see [Resource-based policies for Amazon Bedrock AgentCore](resource-based-policies.md) and [How the outbound credential mode affects Memory access control](memory-gateway-connector.md#memory-gateway-connector-credential-modes).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

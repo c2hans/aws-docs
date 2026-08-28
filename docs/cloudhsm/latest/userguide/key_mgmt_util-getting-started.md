@@ -14,3 +14,7 @@ AWS CloudHSM includes two command line tools with the [AWS CloudHSM client softw
 + [Stop key\_mgmt\_util](key_mgmt_util-stop.md)
 
 If you encounter an error message or unexpected outcome for a command, see the [Troubleshooting AWS CloudHSM](troubleshooting.md) topics for help. For details about the key\_mgmt\_util commands, see [Reference for AWS CloudHSM Key Management Utility commands](key_mgmt_util-reference.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

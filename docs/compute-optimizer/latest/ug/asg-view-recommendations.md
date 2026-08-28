@@ -50,3 +50,7 @@ If you're signed in to a management account of an organization and trusted acces
    + Activate the enhanced infrastructure metrics paid feature to extend the metrics analysis look-back period for the Auto Scaling group you're viewing up to three months (compared to the 14-day default). For more information, see [Enhanced infrastructure metrics](enhanced-infrastructure-metrics.md).
    + The utilization metric graphs for your current instance are displayed at the bottom of the page. The solid blue line is the utilization of current instances in the Auto Scaling group.
    + To change the time range of the graphs, choose **Time Range**, and then choose **Last 24 hours**, **Last 3 days**, **Last week**, or **Last 2 weeks**. If you activate the [enhanced infrastructure metrics recommendation preference](enhanced-infrastructure-metrics.md), you can also choose **Last 3 months**. Choosing a shorter time range displays the data points at a higher granularity, which provides a higher level of detail.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

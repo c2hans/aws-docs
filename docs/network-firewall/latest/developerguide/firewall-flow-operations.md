@@ -39,3 +39,7 @@ Before using flow operations, consider the following:
 We throttle flush and capture operations to one concurrent request per firewall per Availability Zone (AZ). For example, if a firewall is deployed to two Availability Zones in the same Region, you can issue two concurrent flow or capture requests for that firewall (one request per Availability Zone). This throttling helps maintain optimal performance and prevents overloading the system.
 
 For information on how Network Firewall propagates changes you make, see [Managing a firewall and firewall endpoints in AWS Network Firewall](firewall-managing.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

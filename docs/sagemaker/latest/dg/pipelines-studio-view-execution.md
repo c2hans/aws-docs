@@ -60,3 +60,7 @@ To view the details of a pipeline run, complete the following steps based on whe
 ![The pipeline step's parameters and metadata.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/yosemite/execution-graph-info.png)
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

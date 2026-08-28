@@ -21,3 +21,7 @@ The following tutorials can help you learn how to launch EC2 instances. If you'r
 + [Tutorial: Host a WordPress blog on AL2023](https://docs.aws.amazon.com/linux/al2023/ug/hosting-wordpress-aml-2023.html)
 + [Tutorial: Complete the configuration required to connect to your instance using EC2 Instance Connect](ec2-instance-connect-tutorial.md)
 + [Tutorial: Connect an Amazon EC2 instance to an Amazon RDS database](tutorial-connect-ec2-instance-to-rds-database.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

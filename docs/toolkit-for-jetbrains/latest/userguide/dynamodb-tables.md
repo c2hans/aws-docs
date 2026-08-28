@@ -47,3 +47,7 @@ This scan generates a **PartiQL query** and requires that you have the correct A
 1. Select the **Table/ Index** you want to scan from the drop-down menu.
 
 1. Choose **Run** to proceed with the scan, the scan is complete when the table data is returned in the **Editor** window.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

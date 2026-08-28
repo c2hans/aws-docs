@@ -74,3 +74,7 @@ To integrate generative AI into your ADM operating model successfully, consider 
 + Establish protocols for human oversight of AI-generated recommendations.
 
 Embracing these AI-driven changes and addressing challenges systematically can help you create a more agile, efficient, and innovative ADM operating model. The key to success lies in balancing human expertise with AI capabilities, aligning IT services closely with organizational objectives. This approach can drive significant business value, enhance an organization's competitive advantage, and position the organization to lead in the next era of ADM.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,3 +43,7 @@ Visit [freertos.org](https://freertos.org/) for library-specific technical docum
 1.  Download the latest FreeRTOS or Long Term Support (LTS) version from [freertos.org](https://www.freertos.org/a00104.html), or clone from the [FreeRTOS-LTS](https://github.com/FreeRTOS/FreeRTOS-LTS) GitHub repository. You can also integrate the required FreeRTOS libraries into your project from the [MCU vendor’s toolchain](https://freertos.org/2021/10/freertos-lts-libraries-are-now-part-of-our-partner-toolchains.html) if available.
 
 1.  Follow the [FreeRTOS Porting guide](https://docs.aws.amazon.com/freertos/latest/portingguide/porting-guide.html) to create a project, set up the development environment, and integrate FreeRTOS libraries into your project. Use the [FreeRTOS-Libraries-Integration-Tests](https://github.com/FreeRTOS/FreeRTOS-Libraries-Integration-Tests) GitHub repository to validate the porting.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

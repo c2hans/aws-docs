@@ -11,3 +11,7 @@ While agent frameworks evolved, a parallel and convergent revolution was happeni
 + **2023 – open source LLMs**: The releases of Llama, Falcon, and Mistral made powerful models widely accessible and accelerated the development of agent frameworks in open source and enterprise environments.
 
 These innovations turned language models into reasoning engines that are capable of parsing context, planning actions, and chaining responses, and LLMs became key enablers of intelligent software agents.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

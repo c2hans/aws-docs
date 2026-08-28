@@ -215,3 +215,7 @@ One possible cause is that the passed role did not have sufficient permissions t
 One possible cause is that the workflow role did not have data location permissions on the target storage location. Grant data location permissions to the role.
 
 For more information, see [`DATA_LOCATION_ACCESS`](lf-permissions-reference.md#perm-location).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

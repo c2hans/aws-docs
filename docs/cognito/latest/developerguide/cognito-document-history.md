@@ -142,3 +142,7 @@ The following table describes important additions to the documentation for Amazo
 | [Push synchronization](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-sync.html) | Enables support for silent push synchronization. | November 6, 2014 |
 | [Developer-authenticated identities support added](https://docs.aws.amazon.com/cognito/latest/developerguide/developer-authenticated-identities.html) | Enables developers who own their own authentication and identity management systems to be treated as an identity provider in Amazon Cognito. | September 29, 2014 |
 | [Amazon Cognito general availability](#cognito-document-history) |  | July 10, 2014 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -95,3 +95,7 @@ You can install the latest PyTorch build into either or both of the PyTorch Cond
 <a name="tutorial-pytorch-more"></a>
 
 For further tutorials and examples refer to the framework's official docs, [PyTorch documentation](http://pytorch.org/docs/master/), and the [PyTorch](http://pytorch.org) website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ Use the following procedure to duplicate a component in an App Studio app. Dupli
    The duplicated component is added directly after the original component.
 **Tip**
 You can undo a component duplication, along with many other actions in the Development environment, by using the CTRL\+Z or CMD\+Z keyboard shortcuts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

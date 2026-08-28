@@ -107,3 +107,7 @@ The following example AWS KMS key policy allows all workgroups within the same a
 In addition to the Athena and Amazon S3 permissions, you must also get permissions to perform `kms:GenerateDataKey` and `kms:Decrypt` actions. For more information, see [Permissions to encrypted data in Amazon S3](encryption.md#permissions-for-encrypting-and-decrypting-data).
 
 For more information on managed query results encryption, see [Encrypt managed query results](encrypting-managed-results.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

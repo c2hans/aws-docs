@@ -231,3 +231,7 @@ Note: This step is done in the target account where the CID lives, this may diff
 1. After this step is done, a new ICON will appear in SSO, give it 5 minutes to start
 
 ![Images/sso_screenshot.png](http://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashboards/images/customizations/sso_legacy/sso_screenshot.png?classes=lab_picture_small)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

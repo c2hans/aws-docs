@@ -963,3 +963,7 @@ The following errors are specific to `RestrictDeliveryOptions` actions in the AW
 | EMPTY\_DELIVERY\_OPTION\_IDS | Provide non-empty list of delivery option IDs. |
 | INVALID\_MINIMUM\_PUBLIC\_DELIVERY\_OPTIONS | Cannot restrict all delivery option IDs. |
 | DUPLICATE\_DELIVERY\_OPTION\_IDS | Duplicate delivery option IDs: [duplicate\_ids]. Provide unique delivery option IDs. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

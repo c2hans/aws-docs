@@ -208,3 +208,7 @@ Next, the `DataPipeline` construct is used to "wire" the stages together by usin
 ```
 
 For more code examples, see the GitHub [Analyzing Google Analytics data with Amazon AppFlow, Amazon Athena, and AWS DataOps Development Kit](https://github.com/aws-samples/aws-ddk-examples/tree/main/google-analytics-data-using-appflow/python) repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

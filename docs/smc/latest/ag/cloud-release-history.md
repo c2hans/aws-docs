@@ -18,3 +18,7 @@ Review the release history for AWS Service Management Connector for Atlassian's 
 | v4.0.0 | AWS Service Catalog integration with Jira Customer Portal  | February 7, 2023 |
 | v3.9.0 | AWS Security Hub CSPM integration enhancements including additional logging to capture errors associated with the AWS Security Hub CSPM Findings sync | January 4, 2023 |
 | v3.8.0 | AWS Service Catalog integration<br />AWS Security Hub CSPM integration<br />AWS Systems Manager Incident Manager integration | November 17, 2022  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -142,3 +142,7 @@ This is where we allocate the values for the input mentioned earlier:
 ![](http://docs.aws.amazon.com/appsync/latest/devguide/images/explorer-example-3.png)
 
 To summarize the operation, the GraphQL engine parsed the record, and a resolver inserted it into your Amazon DynamoDB table. Again, you can verify this in the DynamoDB console. Notice that you don’t need to pass in an `id` value. An `id` is generated and returned in the results. This is because the example used an `autoId()` function in a GraphQL resolver for the partition key set on your DynamoDB resources. We will cover how you can build resolvers in a different section. Take note of the returned `id` value; you will use it in the next section to retrieve data with a GraphQL query.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

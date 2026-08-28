@@ -19,3 +19,7 @@ To view the Email Validation Dashboard:
 The dashboard provides a visual representation of your validation activity, helping you identify trends and make data-driven decisions about list hygiene and sending practices.
 
 ![Email validation dashboard showing counts of 8,026 low, 8,322 medium, and 8,757 high confidence results with trend graph over 7 days.](http://docs.aws.amazon.com/ses/latest/dg/images/email_validation_api_dashboard.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

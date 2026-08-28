@@ -26,3 +26,7 @@ Before you enable DNSSEC signing, note the following:
 + [KMS key and ZSK management in Route 53](dns-configuring-dnssec-zsk-management.md)
 + [DNSSEC proofs of nonexistence in Route 53](dns-configuring-dnssec-proof-of-nonexistence.md)
 + [Troubleshooting DNSSEC signing](dns-configuring-dnssec-troubleshoot.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

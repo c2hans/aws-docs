@@ -38,3 +38,7 @@ AWS Organizations provides the following APIs for data retrieval.
 | <a name="organizations-ListRoots"></a>[ListRoots](https://docs.aws.amazon.com/organizations/latest/APIReference/API_ListRoots.html) | List all of the roots that are defined in the organization | List |
 | <a name="organizations-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/organizations/latest/APIReference/API_ListTagsForResource.html) | List all tags for the specified resource | List |
 | <a name="organizations-ListTargetsForPolicy"></a>[ListTargetsForPolicy](https://docs.aws.amazon.com/organizations/latest/APIReference/API_ListTargetsForPolicy.html) | List all the roots, OUs, and accounts to which a policy is attached | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,3 +45,7 @@ When using an algorithm suite without signing, we recommend that you choose one 
 Algorithm suites without key derivation use the data encryption key as the AES-GCM encryption key, instead of using a key derivation function to derive a unique key. We discourage using this suite to generate ciphertext, but the AWS Encryption SDK supports it for compatibility reasons.
 
 For more information about how these suites are represented and used in the library, see [AWS Encryption SDK algorithms reference](algorithms-reference.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

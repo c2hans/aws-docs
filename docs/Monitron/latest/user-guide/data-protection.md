@@ -24,3 +24,7 @@ For more information about data protection, see the [AWS Shared Responsibility M
 + [Data at rest](data-at-rest.md)
 + [Data in transit](data-in-transit.md)
 + [AWS KMS and data encryption in Amazon Monitron](kms-data-encrypt.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

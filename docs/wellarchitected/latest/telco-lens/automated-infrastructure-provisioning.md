@@ -10,3 +10,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/telco-lens/automa
  **Recommendations:** Verify the network and compute resources are designed to meet the performance, scalability, and resiliency requirements of the 5G network. Use AWS services like VPC, Amazon EKS, and Amazon EC2 to benefit from the built-in security, monitoring, and management capabilities.
 
  **Practical advice:** Implement robust access controls, network segmentation, and security monitoring to protect the 5G network infrastructure. Establish automated remediation processes to address infrastructure-related issues.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

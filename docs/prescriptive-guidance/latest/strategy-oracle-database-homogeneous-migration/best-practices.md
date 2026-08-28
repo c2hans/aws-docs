@@ -21,3 +21,7 @@ Best practices for online migrations include the guidelines for offline migratio
 + Use best practices for online tools. For example, when you use AWS DMS, choose the [right method of reading the redo logs](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.Oracle.html#CHAP_Source.Oracle.CDC) from Oracle LogMiner or AWS DMS Binary Reader.
 + Make sure that tables with a high number of data manipulation languages (DMLs) are separated logically from tables that have fewer DMLs.
 + Follow the best practices for using Oracle native tools, such as Oracle GoldenGate or Oracle Data Guard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

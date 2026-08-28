@@ -48,3 +48,7 @@ Parameters include the following:
 +  **URI list** - Use this to define a custom request threshold and block period for specifics URLs. By default, this list is empty.
 
 When application access logs arrive in the **AppAccessLogBucket**, the `Log Parser` Lambda function processes them using the configurations in your configuration file. The solution writes the result to an output file named ` <stack_name>``-app\_log\_out.json` in the same bucket. If the output file contains a list of the IP addresses identified as attackers, the solution adds them to the WAF IP set for **Scanner & Probe** and blocks them from accessing your application. If the output files have no IP addresses, check if your configuration file is valid or if the rate limit has been exceeded according to the configuration file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Automations for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

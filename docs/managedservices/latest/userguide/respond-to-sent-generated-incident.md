@@ -12,3 +12,7 @@ AMS proactively monitors your resources; for more information, see [Monitoring a
 **Note**
 AMS sends communications to your primary email address on your AWS account; we recommend adding an alternate Operations contact email alias to facilitate the incident management process. This is covered during the AMS onboarding process and related onboarding documentation. If you have provided AMS with non-resource based contacts (that you informed your CSDM of) during onboarding, those contact are used. For example, you could provide a list of contacts named "SecurityContacts" to your CSDMs/CAs to use for security-related incidents or notifications. Contact tags on your instances/resources are used for AMS-generated incidents, if you have provided your consent to CSDM for using tag information.
 To learn more about this notification service, see [Notifications](https://docs.aws.amazon.com/managedservices/latest/userguide/notifications.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

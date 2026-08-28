@@ -21,3 +21,7 @@ For a grant to succeed, you must first register the data location with Lake Form
 + [Granting data location permissions (same account)](granting-location-permissions-local.md)
 + [Granting data location permissions (external account)](granting-location-permissions-external.md)
 + [Granting permissions on a data location shared with your account](regranting-locations.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

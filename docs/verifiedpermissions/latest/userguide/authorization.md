@@ -42,3 +42,7 @@ The `BatchIsAuthorized` operation processes multiple authorization decisions for
 **[BatchIsAuthorizedWithToken](https://docs.aws.amazon.com/verifiedpermissions/latest/apireference/API_BatchIsAuthorizedWithToken.html)**
 The `BatchIsAuthorizedWithToken` operation processes multiple authorization decisions for a single principal in one API request. The principal is provided by your policy store identity source in an ID or access token. This operation groups requests into a single batch operation that minimizes [quota usage](quotas.md#quotas-tps.title) and returns authorization decisions for each of up to 30 requests for actions and resources. In your policies, you can authorize their access from their attributes or their group membership in a user directory.
 Like with `IsAuthorizedWithToken`, you can't include information about group or user principal types in a `BatchIsAuthorizedWithToken` request. You must populate all principal data to the JWT that you provide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

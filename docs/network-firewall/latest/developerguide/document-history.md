@@ -106,3 +106,7 @@ Service features are sometimes rolled out incrementally to the AWS Regions where
 | [Reorganized stateful rule groups sections and expanded examples](stateful-rule-groups-ips.md) | Domain list rule groups and the standard stateless rule groups provide easy entry forms for Suricata compatible rule strings, and the documentation didn't indicate this. Reorganized stateful rule group sections, clarified the information, and added examples showing the correlation between the easy entry forms and the resulting Suricata compatible rule strings. | April 28, 2021 |
 | [JA3 keywords support](suricata-limitations-caveats.md) | JA3 keywords are now supported by Network Firewall.  | April 28, 2021 |
 | [First release of AWS Network Firewall](what-is-aws-network-firewall.md) | Network Firewall is now available to provide firewall protection for your Amazon Virtual Private Cloud VPCs. | November 16, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

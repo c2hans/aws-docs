@@ -23,3 +23,7 @@ The Lake Formation console displays an alert if there is an AWS RAM resource sha
 **Topics**
 + [Accepting a resource share invitation from AWS RAM](accepting-ram-invite.md)
 + [Viewing shared Data Catalog tables and databases](viewing-available-shared-resources.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

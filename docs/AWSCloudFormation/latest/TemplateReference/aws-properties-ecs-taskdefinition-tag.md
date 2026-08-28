@@ -65,3 +65,7 @@ The optional part of a key-value pair that make up a tag. A `value` acts as a de
 ## See also
 <a name="aws-properties-ecs-taskdefinition-tag--seealso"></a>
 +  [Create an Amazon ECS task definition for the Fargate launch type](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-ecs-taskdefinition.html#aws-resource-ecs-taskdefinition--examples--Create_an__task_definition_for_the__launch_type)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

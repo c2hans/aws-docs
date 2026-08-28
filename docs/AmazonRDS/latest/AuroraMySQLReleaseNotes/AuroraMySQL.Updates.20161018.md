@@ -37,3 +37,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraMySQLReleaseNotes
 + Solve add foreign key constraint crash. (Bug \#16413976)
 + Fixed a crash when fetching a cursor in a stored procedure, and analyzing or flushing the table at the same time. (Bug \# 18158639)
 + Fixed an auto-increment bug when a user alters a table to change the AUTO\_INCREMENT value to less than the maximum auto-increment column value. (Bug \# 16310273)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

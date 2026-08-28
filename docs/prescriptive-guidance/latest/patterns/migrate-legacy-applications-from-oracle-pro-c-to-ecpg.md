@@ -99,3 +99,7 @@ When the PostgreSQL compiler compiles the pre-processed C code files, it looks f
 Programs that use C code with embedded SQL have to be linked against the `libecpg` library. For example, you can use the linker options` -L/usr/local/pgsql/lib -lecpg`.
 
 Converted ECPG applications call functions in the `libpq` library through the embedded SQL library (`ecpglib`), and communicate with the PostgreSQL server by using the standard frontend/backend protocol.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

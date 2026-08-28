@@ -15,3 +15,7 @@ The following table lists the supported catalogs and their capabilities in this 
 | AWS Glue Data Catalog | Trusted identity propagation (TIP) | Per-user data permissions enforcement through AWS IAM Identity Center and Lake Formation | AWS IAM Identity Center |
 | Databricks Unity Catalog | Agentic discovery, bulk create, semantic inheritance | AI-powered discovery and dataset creation from Unity Catalog metadata, with automatic inheritance of descriptions and relationships | Personal Access Token (PAT) or OAuth 3LO |
 | Databricks Unity Catalog | Identity propagation (3LO) | Per-user data permissions enforcement through Databricks OAuth | OAuth 3LO |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ If the image builder that you want to connect to is joined to an Active Director
 **Topics**
 + [WorkSpaces Applications Console (Web Connection)](managing-image-builders-connect-console.md)
 + [Streaming URL (WorkSpaces Applications Client or Web Connection)](managing-image-builders-connect-streaming-URL.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

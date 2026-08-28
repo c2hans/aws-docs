@@ -13,3 +13,7 @@ As a resource owner, be aware that to specify a resource in a cross-account atta
 + [Create cross-account attachments](cross-account-resources.create-attachment.md)
 + [Edit cross-account attachments](cross-account-resources.edit-attachment.md)
 + [Delete cross-account attachments](cross-account-resources.delete-attachment.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

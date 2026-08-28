@@ -323,3 +323,7 @@ You can set up Model Monitor in the following ways:
 **Q: How does Model Monitor Integrate with SageMaker Model Dashboard**
 
 [SageMaker Model Dashboard](https://docs.aws.amazon.com/sagemaker/latest/dg/model-dashboard.html) gives you unified monitoring across all your models by providing automated alerts about deviations from expected behavior and troubleshooting to inspect models and analyze factors impacting model performance over time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

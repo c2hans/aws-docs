@@ -11,3 +11,7 @@ In AWS, a resource is an entity you can work with. Examples include an Amazon EC
 + [Adding resources in myApplications](myApp-add-resources.md)
 + [Removing resources in myApplications](myApp-remove-resources.md)
 + [Viewing resources in myApplications](viewing-resources.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Management Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsconsolehelpdocs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

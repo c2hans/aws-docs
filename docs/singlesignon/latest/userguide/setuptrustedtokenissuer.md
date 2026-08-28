@@ -150,3 +150,7 @@ AWS services have a default setting configuration that determines whether assign
 1. If the user is authorized to access the requested application resource, the receiving application responds to the request.
 
 1. The user's identity, actions performed on their behalf, and other events are recorded in the receiving application logs and CloudTrail events. The specific way in which this information is logged varies based on the application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

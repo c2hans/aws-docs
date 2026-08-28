@@ -66,3 +66,7 @@ On the **Versions** page, you can view the following information for each of you
 + **Model score**, **F1**, **Precision**, **Recall**, and **AUC** – If you turn on the **Show advanced metrics** toggle on this page, you can see these model metrics. These metrics indicate the accuracy and performance of your model. For more information, see [Evaluate your model](https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-evaluate-model.html).
 + **Shared** – This field states whether you shared the model version with SageMaker Studio Classic users.
 + **Model registry** – This field states whether you registered the version to a model registry. For more information, see [Register a model version in the SageMaker AI model registry](canvas-register-model.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

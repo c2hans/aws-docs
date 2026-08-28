@@ -451,3 +451,7 @@ To make sure that your DB instance is as secure as possible, verify that sources
 After you have finished testing your web server and your database, you should delete your DB instance and your Amazon EC2 instance.
 + To delete a DB instance, follow the instructions in [Deleting a DB instance](USER_DeleteInstance.md). You don't need to create a final snapshot.
 + To terminate an Amazon EC2 instance, follow the instruction in [Terminate your instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html) in the *Amazon EC2 User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

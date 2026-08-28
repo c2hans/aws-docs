@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  [WorkSpaces Secure Browser Regional Support](https://docs.aws.amazon.com/workspaces-web/latest/adminguide/availability-zones.html)
 
  The [WorkSpaces Connection Health Checker](https://clients.amazonworkspaces.com/Health.html) details the latency between a specific endpoint device and the WorkSpaces service running in each available Region. This data is also a good indicator of latency for WorkSpaces Secure Browser and WorkSpaces Applications if they are running in the same Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

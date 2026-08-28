@@ -17,3 +17,7 @@ Amazon EventBridge integration with Elastic Beanstalk makes it possible to detec
 This release introduces pre-defined event patterns for Elastic Beanstalk in the EventBridge console. With this feature, the EventBridge console builds an Elastic Beanstalk event pattern as you select Elastic Beanstalk event fields and values. The EventBridge console displays the event pattern as you build it, providing a built-in method to create rules that respond to Elastic Beanstalk events.
 
 For more information, see [Using Elastic Beanstalk with Amazon EventBridge ](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.eventbridge.html) in the *AWS Elastic Beanstalk Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

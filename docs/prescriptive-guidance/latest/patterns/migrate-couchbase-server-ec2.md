@@ -167,3 +167,7 @@ Migrating your Couchbase database to AWS provides the following advantages:
 + Improved[ customer experience](https://aws.amazon.com/blogs/publicsector/improving-customer-experience-for-the-public-sector-using-aws-services/)
 + [Data-driven](https://aws.amazon.com/data/data-driven-decision-making/) decision-making
 + Enhanced [business intelligence](https://aws.amazon.com/what-is/business-intelligence/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

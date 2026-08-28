@@ -162,3 +162,7 @@ With this policy in effect, only the approved provisioning role can create a Ama
 This example also includes `quicksight:CreateAdmin`, which covers the Amazon Quick Standard Edition sign-up path in addition to `quicksight:Subscribe` and `quicksight:CreateAccountSubscription`.
 
 As an alternative to using the condition key, you can attach a `Deny` statement for the same two actions (without the `aws:PrincipalAccount` condition) to every organizational unit (OU) except the OU that contains your approved accounts. For more information about where to attach policies, see [Strategies for using SCPs](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_strategies.html) in the *AWS Organizations User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

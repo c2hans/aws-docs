@@ -13,3 +13,7 @@ The following fields relate to implementing captions in a UDP output:
 + **UDP settings** –** Timed metadata ID3 period**
 
   Complete these fields if you want to insert timed ID3 metadata into all the outputs in this output group. For detailed instructions, see [Working with ID3 metadata](id3-metadata.md)and specifically [Inserting ID3 timed metadata when creating the MediaLive channel](insert-timed-metadata.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

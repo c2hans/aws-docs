@@ -32,3 +32,7 @@ Before getting started with MemoryDB Multi-Region, be aware of the following:
 + **Throughput limitations** - MemoryDB Multi-Region can support up to 1.3 GB/s read throughput per node in a Region and \~50 MB/s globally aggregated write throughput per shard.
 + **AWS policy** - The AWS ReadOnlyAccess policy provides read-only access to AWS services and resources, but will not automatically retrieve details about one or more multi-Region clusters. In order to retrieve details about one or more multi-Region clusters, use the [AmazonMemoryDBReadOnlyAccess](security-iam-awsmanpol.md#iam.identitybasedpolicies.predefinedpolicies-readonly) policy or create [ IAM customer managed policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html) .
 + **Deleting a regional cluster** - When deleting a regional cluster any associated Customer Managed Keys (CMKs) must remain valid until the regional cluster has finished deleting. This ensures that the remaining regional clusters can converge to a consistent state.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

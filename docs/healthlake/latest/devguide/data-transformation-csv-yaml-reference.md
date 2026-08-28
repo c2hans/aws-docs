@@ -834,3 +834,7 @@ tables:
 + Keep `sourceSystemId` short and stable. Changing it after data has been loaded will cause duplicate resources because resource IDs will change.
 + Test with a small subset of data (10–20 rows per table) before running a full transformation to catch mapping errors early.
 + When in doubt about a FHIR path, consult the FHIR R4 resource definitions at `https://hl7.org/fhir/R4/` to confirm the correct element names and cardinalities.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

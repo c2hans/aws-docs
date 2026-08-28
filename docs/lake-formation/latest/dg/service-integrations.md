@@ -16,3 +16,7 @@ You can use Lake Formation to manage database, table, and column-level access pe
 | [Amazon EMR](https://docs.aws.amazon.com/emr/latest/DeveloperGuide/)  | Reference: [Using AWS Lake Formation with Amazon EMR](emr-integ-lf.md)<br />You can integrate Lake Formation permissions when you create an Amazon EMR cluster with a runtime role. <br />A runtime role is an IAM role that you associate with Amazon EMR jobs or queries, and then Amazon EMR uses this role to access AWS resources. |
 
 Lake Formation also works with [AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/overview.html) (AWS KMS) to enable you to more easily set up these integrated services to encrypt and decrypt data in Amazon Simple Storage Service (Amazon S3) locations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

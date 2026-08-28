@@ -166,3 +166,7 @@ This error means that the credentials are not valid. Check the following:
 Look at the Grafana server log to troubleshoot this error. For more information, see [Troubleshooting](https://grafana.com/docs/grafana/latest/troubleshooting/) in the Grafana documentation.
 
 If you see `Error http: proxy error: NoCredentialProviders: no valid providers in chain`, the default credential provider chain was not able to find a valid AWS credential to use. Make sure you have set up your credentials as documented in [ Specifying Credentials](https://docs.aws.amazon.com/sdk-for-go/v1/developer-guide/configuring-sdk.html#specifying-credentials). If you want to use a shared configuration, make sure that the `AWS_SDK_LOAD_CONFIG` environment is set to `true`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Service for Prometheus. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prometheus` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

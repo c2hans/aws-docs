@@ -43,3 +43,7 @@ For information about how to check your host agent version, see [What client and
 For information about how to update your host agent version, see [ If I already have a DCV WorkSpace, how do I update it?](https://aws.amazon.com/workspaces/faqs/#:~:text=Q%3A%20If%20I%20already%20have%20a%20WSP%20WorkSpace%2C%20how%20do%20I%20update%20it%3F).
 For DCV macOS client version release notes, see [Release notes](https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-osx-client.html#osx-release-notes) in the WorkSpaces macOS client application section of the WorkSpaces User Guide.
 For DCV Windows client version release notes, see [Release notes](https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-windows-client.html#windows-release-notes) in the WorkSpaces Windows client application section of the WorkSpaces User Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

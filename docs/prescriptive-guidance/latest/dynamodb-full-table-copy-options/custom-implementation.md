@@ -32,3 +32,7 @@ For a DynamoDB table with 200 K items (average item size 30 KB and table size of
 <a name="drawbacks.a8ee07d1-ca21-54fd-b982-fc0697e7b136"></a>
 + The solution consumes more RCUs and WCUs.
 + It might not be a good solution for large datasets, because the  solution requires active connections with two different DynamoDB tables in two different accounts (using two different security tokens). If the table copy for a large dataset takes a long time, there might be connection disruptions or security token expiry, so you must implement logic to handle those possibilities. You must also implement logic to continue the copy from where it failed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

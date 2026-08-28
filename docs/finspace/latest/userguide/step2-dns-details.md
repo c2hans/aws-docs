@@ -24,3 +24,7 @@ The **Network** tab on the Kdb environments details page allows you to add custo
 The IP *172.31.0.2* is the second IP address in the default VPC CIDR and corresponds to the IP of the DNS Resolver for an Amazon VPC. Any DNS queries for *example.com* from the FinSpace clusters will return the DNS resolver at *172.31.0.2* in your custom VPC.
 
 1. Choose **Add DNS details**. The **environment details** page opens and the DNS details are added in the **DNS details** section, from where you can edit the DNS details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

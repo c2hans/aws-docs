@@ -69,3 +69,7 @@ One approach is to use a load testing tool, such as the one described in [Distri
 + [Porting Assistant for .NET](https://aws.amazon.com/porting-assistant-dotnet/) (AWS documentation)
 + [Distributed Load Testing on AWS](https://aws.amazon.com/solutions/implementations/distributed-load-testing-on-aws/) (AWS Solutions Library)
 + [AWS Compute Optimizer launches support for Amazon ECS services on AWS Fargate](https://aws.amazon.com/blogs/aws-cloud-financial-management/aws-compute-optimizer-launches-support-for-amazon-ecs-services-on-aws-fargate/) (AWS Cloud Financial Management blog post)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -107,3 +107,7 @@ Infrastructure Composer automatically detects the external state machine definit
 ![The Infrastructure Composer canvas view with the API Gateway resource properties panel displayed, showing the configuration of the external reference file.](http://docs.aws.amazon.com/infrastructure-composer/latest/dg/images/aac_use_ex_03.png)
 
 Any changes made to the state machine definition file will be automatically reflected in Infrastructure Composer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

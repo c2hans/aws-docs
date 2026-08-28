@@ -49,3 +49,7 @@ The following fields are required:
 If you are viewing memory sessions when you are testing your agent, you can view the session summary only after the latest session has ended. If you try to view memory sessions when the current session is in progress you will be informed that session summary is being generated and it will take time to generate the sessions. You can force end the current session by sending an [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent_InvokeAgent.html) request and specifying `Y` for the `endSession` field.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

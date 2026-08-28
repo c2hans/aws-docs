@@ -60,3 +60,7 @@ You can delete a configuration from Quick Setup by choosing the configuration, t
 <a name="quick-setup-compliance"></a>
 
 You can view whether your instances are compliant with the associations created by your configurations in either Explorer or Compliance, which are both tools in AWS Systems Manager. To learn more about compliance, see [Learn details about Compliance](compliance-about.md). To learn more about viewing compliance in Explorer, see [AWS Systems Manager Explorer](Explorer.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ We also recommend that you take the following next steps to assess the security 
 1. Conduct a follow-up security assessment to evaluate the effectiveness of the implemented security controls. In Security Hub CSPM, determine whether the security score has improved. Iterate to improve or add new security controls.
 
 1. Establish a regular cadence for performing security assessments, such as yearly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

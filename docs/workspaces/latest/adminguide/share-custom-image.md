@@ -67,3 +67,7 @@ After you stop sharing an image, the recipient account can no longer make copies
 
 **To share or unshare images programmatically**
 To share or unshare images programmatically, use the [UpdateWorkspaceImagePermission](https://docs.aws.amazon.com/workspaces/latest/api/API_UpdateWorkspaceImagePermission.html) API operation or the [update-workspace-image-permission](https://docs.aws.amazon.com/cli/latest/reference/workspaces/update-workspace-image-permission.html) AWS Command Line Interface (AWS CLI) command. To determine if an image has been shared, use the [DescribeWorkspaceImagePermissions](https://docs.aws.amazon.com/workspaces/latest/api/API_DescribeWorkspaceImagePermissions.html) API operation or the [describe-workspace-image-permissions](https://docs.aws.amazon.com/cli/latest/reference/workspaces/describe-workspace-image-permissions.html) CLI command.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

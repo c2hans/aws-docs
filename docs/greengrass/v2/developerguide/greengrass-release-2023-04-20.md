@@ -24,3 +24,7 @@ The following table lists components provided by AWS that include new and update
 | **Component** | **Details** |
 | --- | --- |
 | Greengrass nucleus | Version 2.9.6 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.9.6"></a>**Bug fixes and improvements**<br />   Fixes an issue where a Greengrass deployment fails with the error LAUNCH\_DIRECTORY\_CORRUPTED and a subsequent device reboot fails to start Greengrass. This error may occur when you move the Greengrass device between multiple thing groups with deployments that require Greengrass to restart.    |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

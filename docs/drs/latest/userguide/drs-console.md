@@ -48,3 +48,7 @@ The **Server details** view tab shows specific details for an individual server.
 Certain Elastic Disaster Recovery commands, such as **Edit replication settings**, allow you to interact with multiple source servers at once. When multiple source servers are selected and the **Replication > Edit replication settings ** option is chosen, AWS Elastic Disaster Recovery indicates which servers are being edited.
 
 In order for setting changes you have made in the AWS Elastic Disaster Recovery Console to take effect, be sure to choose **Save** at the bottom of each Settings page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

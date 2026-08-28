@@ -50,3 +50,7 @@ The following table provides an overview of whether your VPC automatically comes
 | Route table with route to internet gateway for IPv6 traffic (::/0) | No | No |
 | Public IPv4 address automatically assigned to instance launched into subnet | Yes (default subnet) | No (nondefault subnet) |
 | IPv6 address automatically assigned to instance launched into subnet | No (default subnet) | No (nondefault subnet) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

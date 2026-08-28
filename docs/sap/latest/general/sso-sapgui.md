@@ -28,3 +28,7 @@ SAPGUI Single-Sign-On with X509 can be achieved with [SAP Secure Login Service o
 1. User can access to SAP S/4HANA in RISE with SAP VPC.
 
 For more information on how to do this, you can refer to [Securing SAP GUI with SAP Secure Login Service](https://community.sap.com/t5/technology-blogs-by-sap/explore-securing-sap-gui-with-sap-secure-login-service/ba-p/13579130).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

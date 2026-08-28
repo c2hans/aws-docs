@@ -20,3 +20,7 @@ Access to Amazon S3 through the network is through AWS published APIs. Clients m
 <a name="inter-network-traffic-privacy-within-region"></a>
 
 A virtual private cloud (VPC) endpoint for Amazon S3 is a logical entity within a VPC that allows connectivity only to Amazon S3. The VPC routes requests to Amazon S3 and routes responses back to the VPC. For more information, see [VPC Endpoints](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html) in the *VPC User Guide*. For example bucket policies that you can use to control S3 bucket access from VPC endpoints, see [Controlling access from VPC endpoints with bucket policies](example-bucket-policies-vpc-endpoint.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

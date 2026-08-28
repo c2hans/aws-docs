@@ -62,3 +62,7 @@ The newly launched failed-back instances are not protected. In order to protect 
 1. Navigate to the recovery instance in the source Region.
 
 1. Select **Start reversed replication**. This step will replace the Instances that the Source Server protects.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying Cross-Region Disaster Recovery with AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ Even if you configure the journey to begin immediately, there is a five-minute d
 1. Reviewing and publishing a journey adds an exit journey element to the journey flow, indicating that the journey was reviewed and published successfully.
 
 **Next**: [Pause, resume, or stop a journey](journeys-pause-stop.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

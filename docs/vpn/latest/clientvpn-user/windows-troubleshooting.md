@@ -42,19 +42,39 @@ C:\ProgramData\Amazon\AWSVPNClient\logs\
 
 **Topics**
 + [AWS provided client event logs](#aws-provided-client)
++ [Profiles or preferences missing after upgrade to version 6.0](#windows-troubleshooting-profiles-missing)
 + [Client cannot connect](#windows-troubleshooting-client-vpn-cannot-connect)
 + [Client cannot connect with "no TAP-Windows adapters" log message](#windows-troubleshooting-client-vpn-cannot-connect-tap-driver)
 + [Client is stuck in a reconnecting state](#windows-troubleshooting-client-vpn-stuck)
 + [VPN connection process quits unexpectedly](#windows-troubleshooting-client-vpn-quits)
 + [Application fails to launch](#windows-troubleshooting-client-vpn-cannot-launch)
 + [Client cannot create profile](#windows-troubleshooting-client-vpn-cannot-create-profile)
-+ [Profiles or preferences missing after upgrade to version 6.0](#windows-troubleshooting-profiles-missing)
 + [VPN disconnects with a pop up message](#windows-troubleshooting-client-vpn-connection-terminated)
 + [Client crash occurs on Dell PCs using Windows 10 or 11](#windows-troubleshooting-client-vpn-crash-dell)
 + [OpenVPN GUI](#windows-troubleshooting-openvpn-gui)
 + [OpenVPN connect client](#windows-troubleshooting-openvpn-connect)
 + [Unable to resolve DNS](#windows-troubleshooting-openvpn-connect-dns)
 + [Missing PKI alias](#windows-troubleshooting-openvpn-connect-pki)
+
+## Profiles or preferences missing after upgrade to version 6.0
+<a name="windows-troubleshooting-profiles-missing"></a>
+
+**Problem**
+After upgrading the AWS provided client to version 6.0 or later, one or more previously configured VPN profiles do not appear in the client, and preferences might be reset to their defaults.
+
+**Cause**
+Version 6.0 introduced a new architecture that stores configuration data in a new system-wide location. On first launch, the client automatically migrates profiles and preferences from the previous location. Migration is best-effort: if an individual profile cannot be migrated, it is skipped and the remaining profiles are still migrated. The client does not delete your original `.ovpn` configuration files.
+
+To find which profile was not migrated and why, look for the following entry in the service logs.
+
+```
+Skipping profile due to migration error (partial migration)
+```
+
+**Solution**
+Download a new endpoint configuration file from your Client VPN endpoint and re-import it. For instructions on how to download the configuration file, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*. For instructions on how to add a profile, see [Connect to AWS Client VPN with an AWS provided client for Windows](client-vpn-connect-windows-connecting-how.md).
+
+If you cannot locate your endpoint or do not have access to the self-service portal, contact your VPN administrator to obtain a new configuration file.
 
 ## Client cannot connect
 <a name="windows-troubleshooting-client-vpn-cannot-connect"></a>
@@ -138,20 +158,6 @@ If the Client VPN endpoint uses mutual authentication, the configuration (.ovpn)
 
 **Solution**
 Ensure that your Client VPN administrator adds the client certificate and key to the configuration file. For more information, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*.
-
-## Profiles or preferences missing after upgrade to version 6.0
-<a name="windows-troubleshooting-profiles-missing"></a>
-
-**Problem**
-After upgrading the AWS provided client to version 6.0 or later, previously configured VPN profiles do not appear in the client, and preferences might be reset to their defaults.
-
-**Cause**
-Version 6.0 introduced a new architecture that stores configuration data in a new system-wide location. On first launch, the client attempts to automatically migrate profiles and preferences from the previous location, but this migration can fail in some cases. The client does not delete your original `.ovpn` configuration files.
-
-**Solution**
-Download a new endpoint configuration file from your Client VPN endpoint and re-import it. For instructions on how to download the configuration file, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*. For instructions on how to add a profile, see [Connect to AWS Client VPN with an AWS provided client for Windows](client-vpn-connect-windows-connecting-how.md).
-
-If you cannot locate your endpoint or do not have access to the self-service portal, contact your VPN administrator to obtain a new configuration file.
 
 ## VPN disconnects with a pop up message
 <a name="windows-troubleshooting-client-vpn-connection-terminated"></a>
@@ -287,3 +293,7 @@ The OpenVPN Connect Client software has a known issue where it attempts to authe
 
 **Solution**
 Specify a random client key and certificate in the Client VPN configuration file and import the new configuration into the OpenVPN Connect Client software. Alternatively, use a different client, such as the OpenVPN GUI client (v11.12.0.0) or the Viscosity client (v.1.7.14).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -86,3 +86,7 @@ There are limited version strings supported by AWS. For more information, see [h
 ![Create a new snapshot](http://docs.aws.amazon.com/res/archive/release-minus-4/ug/images/res-createsnapshot.png)
 
 1. After five to ten minutes, choose **Refresh** on the Snapshots page to check the status. A snapshot will not be valid until the status changes from IN\_PROGRESS to COMPLETED.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

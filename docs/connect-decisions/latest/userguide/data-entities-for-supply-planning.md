@@ -396,3 +396,7 @@ How is this data entity used? Supply Planning uses planning time fence constrain
 | product\_id | Optional | Foreign key to the Product table. When populated, the time fence applies to this specific product only. When left blank, the constraint applies to all products at the specified site. |
 | site\_id | Optional | Foreign key to the Site table. When populated, the time fence applies to this specific site only. When left blank, the constraint applies to the specified product across all sites. |
 | planning\_time\_fence\_days | Required | Number of calendar days from the planning run date within which the planning engine will not automatically reschedule or cancel existing supply orders. Orders with order start dates within this window are treated as frozen and protected from automated changes. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

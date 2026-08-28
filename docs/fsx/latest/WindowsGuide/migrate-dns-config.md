@@ -63,3 +63,7 @@ The following procedures describe how to associate DNS aliases with your existin
   ```
 
   To monitor the status of the aliases that you are associating, use the `describe-file-system-aliases` CLI command ([DescribeFileSystemAliases](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DescribeFileSystemAliases.html) is the equivalent API operation). When `Lifecycle` for an alias has a value of AVAILABLE, you can use it to access the file system (a process that can take up to 2.5 minutes).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

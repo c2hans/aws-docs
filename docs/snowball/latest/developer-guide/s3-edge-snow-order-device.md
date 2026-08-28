@@ -13,3 +13,7 @@ Ordering a device for Amazon S3 compatible storage on Snowball Edge is very simi
 + Under **Select the storage type**, select **Amazon S3 compatible storage on Snowball Edge**.
 + For a standalone device, under **Storage capacity**, choose **Single device** and then select your desired storage amount.
 + For a cluster, under **Storage capacity** select **Cluster** and then select your desired storage capacity and fault tolerance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

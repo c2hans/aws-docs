@@ -10,3 +10,7 @@ AWS Outposts rack supports [intra-VPC communication across multiple Outposts](ht
 ![Diagram showing network paths for single VPC with multiple logical Outposts](http://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/images/page-49-single-vpc-multiple-outposts.png)
 
 Outposts-to-Outposts traffic routing through the Region is blocked as this is an anti-pattern. Such traffic would incur egress charges in both directions and significantly higher latency than routing the traffic across the customer WAN.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -142,3 +142,7 @@ The industry default size for logical data blocks is currently 4 KiB. Because ce
 | 16 KiB | 64 TiB |
 | 32 KiB | 128 TiB |
 | 64 KiB (maximum) | 256 TiB |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

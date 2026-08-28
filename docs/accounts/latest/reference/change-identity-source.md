@@ -31,3 +31,7 @@ After you've activated advanced features, you can change your identity source fr
 1. Confirm your choice and choose **Change identity source**.
 
 These steps show you how to change your identity source by first accessing AWS Settings. However, you can sign into the AWS Management Console with your delegate admin account and access the IAM Identity Center to change your identity source.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

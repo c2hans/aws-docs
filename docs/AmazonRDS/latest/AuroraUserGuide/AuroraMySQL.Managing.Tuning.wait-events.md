@@ -24,3 +24,7 @@ The following table summarizes the Aurora MySQL wait events that most commonly i
 | [synch/mutex/innodb/trx\_sys\_mutex](ams-waits.trxsysmutex.md) | This event occurs when there is high database activity with a large number of transactions. |
 | [synch/sxlock/innodb/hash\_table\_locks](ams-waits.sx-lock-hash-table-locks.md) | This event occurs when pages not found in the buffer pool must be read from a file. |
 | [synch/mutex/innodb/temp\_pool\_manager\_mutex](ams-waits.io-temppoolmanager.md) | This event occurs when a session is waiting to acquire a mutex for managing the pool of session temporary tablespaces.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

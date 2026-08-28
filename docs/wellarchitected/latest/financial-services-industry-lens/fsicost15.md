@@ -11,3 +11,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 <a name="fsicost15-bp01"></a>
 
  Financial services institutions add new human resources periodically, like contractors, vendors, or FTEs, so it is necessary to maintain a cost-aware culture. There are also enhancements from AWS on cost-related services. You should conduct periodic workshops, sessions on effective ways to measure, monitor and optimize cost to spread awareness of cost optimization to existing resources, as well as new resources on the team. The frequency of such workshops should be at least once every six months. Every six months, or during the session, you should recognize cost optimization wins and recognize individual people driving or contributing to the cost optimization. This drives cost-optimization culture in a team.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

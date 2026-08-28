@@ -22,3 +22,7 @@ To export a dataset, you create a dataset export job. A *dataset export job* is 
 **Topics**
 + [Dataset export job permissions requirements](export-permissions.md)
 + [Creating a dataset export job in Amazon Personalize](create-dataset-export-job.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

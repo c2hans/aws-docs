@@ -42,3 +42,7 @@ Viewers can access your content only if they're using HTTPS. If a viewer sends a
    + The path pattern in each cache behavior applies only to the requests that you want viewers to use HTTPS for.
    + The cache behaviors are listed in the order that you want CloudFront to evaluate them in. For more information, see [Path pattern](DownloadDistValuesCacheBehavior.md#DownloadDistValuesPathPattern).
    + The cache behaviors are routing requests to the correct origins.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

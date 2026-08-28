@@ -16,3 +16,7 @@ When your network administrator activates data retention for your network, all m
  You will also see a one-time control message in any Direct Message, Room or Group that has members from another network (external members). The control message indicates that all messages in the conversation can be retained as per external organizations' data retention policy. This doesn't expose or indicate the status of any network’s data retention policy.
 
 ![The data retention control message in the Wickr client.](http://docs.aws.amazon.com/wickr/latest/userguide/images/wickr-data-retention-control-prompt.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

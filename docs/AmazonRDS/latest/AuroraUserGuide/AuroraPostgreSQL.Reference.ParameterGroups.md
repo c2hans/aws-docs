@@ -743,3 +743,7 @@ For a listing of the DB cluster parameters for this same default DB parameter gr
 | work\_mem | (kB Sets the maximum memory to be used for query workspaces. | –  |
 | xmlbinary | Sets how binary values are to be encoded in XML. | –  |
 | xmloption | Sets whether XML data in implicit parsing and serialization operations is to be considered as documents or content fragments. | – |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

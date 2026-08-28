@@ -46,3 +46,7 @@ VACUUM [{{database_name}}.]{{target_table}}
 + Removes orphan files that are older than the time specified in the `vacuum_max_snapshot_age_seconds` table property. Orphan files are files in the table's data directory that are not part of the table state.
 
 For more information about creating and managing Apache Iceberg tables in Athena, see [Create Iceberg tables](querying-iceberg-creating-tables.md) and [Manage Iceberg tables](querying-iceberg-managing-tables.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

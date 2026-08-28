@@ -103,3 +103,7 @@ You cannot undo the consolidation process. It is recommended to turn on matching
 **Note**
 When merging two profiles, profile fields manually populated through an API call or the Agent Workspace will not be overwritten by profile fields automatically ingested from an integration or custom object type mapping.
 For example, suppose a profile is created with FirstName “John” manually by an agent in the Agent Workspace. Another profile is created using an S3 integration with FirstName “Peter”. If these profiles are automatically merged, the FirstName “John” will be preserved.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ On December 31, 2020, support for .NET Standard 1.3 on the AWS SDK for .NET came
 + If you're running business critical applications that cannot be upgraded at this time, you can continue using your current version of AWS SDK for .NET.
 
 If you have questions or concerns, [contact AWS Support](https://console.aws.amazon.com/support).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

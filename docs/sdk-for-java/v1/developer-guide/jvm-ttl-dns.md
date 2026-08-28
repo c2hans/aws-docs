@@ -70,3 +70,7 @@ java -Dsun.net.inetaddr.ttl=5 -Dsun.net.inetaddr.negative.ttl=1 -jar myapp.jar
 
 **Note**
 These are JDK-internal properties documented in the [Oracle Java 8 Networking Properties](https://docs.oracle.com/javase/8/docs/technotes/guides/net/properties.html) reference as private properties that "may not be supported in future releases". Use Options 1-2 when possible.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

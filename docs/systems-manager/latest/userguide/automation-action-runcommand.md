@@ -218,3 +218,7 @@ The response code of the command. If the document you run has more than 1 step, 
 
 Output
 The output of the command. If you target a tag or multiple instances with your command, no output value is returned. You can use the `GetCommandInvocation` and `ListCommandInvocations` API operations to retrieve output for individual instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

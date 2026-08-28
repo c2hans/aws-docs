@@ -105,3 +105,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/code-security-asse
 +  UpdateEncryptionKey – Use with `CODE_REPOSITORY` for `resourceType` and `CODE` as the scan type to configure the use of your customer managed KMS key.
 +  GetEncryptionKey – Use with `CODE_REPOSITORY` for `resourceType` and `CODE` as the scan type to configure the retrieval of your KMS key configuration.
 +  ResetEncryptionKey – Use with `CODE_REPOSITORY` for `resourceType` and `CODE` to reset your KMS key configuration and to use an AWS owned KMS key.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

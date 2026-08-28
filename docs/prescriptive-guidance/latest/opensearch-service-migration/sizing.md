@@ -71,3 +71,7 @@ The cluster is composed of data nodes and cluster manager nodes. Although dedica
 AWS offers general purpose (M6g), compute optimized (C6g), and memory optimized (R6g and R6gd) for Amazon OpenSearch Service version 7.9 or later powered by [AWS Graviton2](https://aws.amazon.com/ec2/graviton/) processors. These instances are built using custom silicon designed by Amazon. They are Amazon-designed hardware and software innovations that enable the delivery of efficient, flexible, and secure cloud services with isolated multi-tenancy, private networking, and fast local storage.
 
 The Graviton2 instance family provides reduces indexing latency by up to 50 percent and improves query performance by up to 30 percent when compared with the previous generation Intel-based instances available in OpenSearch Service (M5, C5, R5).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

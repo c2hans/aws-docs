@@ -12,3 +12,7 @@ This pattern effectively isolates these external systems from the impacts of dat
 ![External system accessing a read replica instead of the monolithic database.](http://docs.aws.amazon.com/prescriptive-guidance/latest/database-decomposition/images/guide-img/6bdbec4e-98b8-4cd1-adda-f196258cf753/images/e7ceafc0-3563-4a3b-8cfe-c738a0ab3fa2.png)
 
 For more information about this pattern and an example of its use to decouple table relationships, see [CQRS pattern](joins.md#joins-cqrs) later in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

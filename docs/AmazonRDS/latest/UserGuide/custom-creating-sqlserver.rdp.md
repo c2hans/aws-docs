@@ -149,3 +149,7 @@ Retrieve your secret key using either AWS Management Console or the AWS CLI.
 <a name="custom-creating-sqlserver.rdp.connect"></a>
 
 Follow the procedure in [Connect to your Windows instance using RDP](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/connecting_to_windows_instance.html#connect-rdp) in the *Amazon EC2 User Guide*. This procedure assumes that you created a .pem file that contains your private key.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

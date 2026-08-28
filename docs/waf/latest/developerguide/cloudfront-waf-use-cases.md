@@ -100,3 +100,7 @@ Both standard and multi-tenant distributions support AWS WAF logging, but there 
 + To learn more about multi-tenant distributions, see [Configure distributions](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-working-with.html) in the *Amazon CloudFront Developer Guide*.
 + To learn more about using AWS WAF with CloudFront, see [Using AWS WAF protection](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-awswaf.html) in the *Amazon CloudFront Developer Guide*.
 + To learn more about AWS WAF logs, see [Log fields for protection pack (web ACL) traffic](logging-fields.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

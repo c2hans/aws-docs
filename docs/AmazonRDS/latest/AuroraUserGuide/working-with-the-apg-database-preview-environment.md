@@ -99,3 +99,7 @@ PostgreSQL version 17.0 is now available in the Amazon RDS Database Preview envi
 + [ PostgreSQL 17 Released](https://www.postgresql.org/about/news/postgresql-17-released-2936/)
 
 For information on the Database Preview Environment, see [Working with the database preview environment](#working-with-the-apg-database-preview-environment). To access the Preview Environment from the console, select [https://console.aws.amazon.com/rds-preview/](https://console.aws.amazon.com/rds-preview/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

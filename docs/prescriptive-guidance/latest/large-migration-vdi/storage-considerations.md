@@ -14,3 +14,7 @@ Splitting UPL and profiles over multiple Amazon FSx file shares is also recommen
 Depending on your requirements for performance and storage capacity, distributing UPL and profile servers over multiple Amazon FSx file shares might be required.
 
 When designing and testing a storage solution, consider how the application behaves if you lose access to storage. For example, if Amazon FSx fails over to the secondary host due to a reconfiguration, how will the VDI application react to the temporary loss of connectivity? This can disconnect all sessions, and a reconnect storm can add additional heavy load on the system. If possible, the system should be configured to minimize the effects of this behavior.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

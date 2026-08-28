@@ -46,3 +46,7 @@ The following table describes the documentation releases for AWS TNB.
 | [Kubernetes version for cluster](https://docs.aws.amazon.com/tnb/latest/ug/node-eks.html#node-eks-properties) | AWS TNB supports Kubernetes versions 1.22 through 1.26 to create Amazon EKS clusters. AWS TNB no longer supports Kubernetes versions 1.21. | May 11, 2023 |
 | [AWS.Compute.EKSSelfManagedNode](https://docs.aws.amazon.com/tnb/latest/ug/node-eks-self-managed.html) | You can create self-managed worker nodes on in-region, AWS Local Zones, and AWS Outposts. | March 29, 2023 |
 | [Initial release](#doc-history) | This is the first release of the AWS TNB User Guide. | February 21, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Telco Network Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tnb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

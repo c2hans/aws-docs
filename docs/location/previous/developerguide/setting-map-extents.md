@@ -46,3 +46,7 @@ var mlglMap = new maplibregl.Map(
 
 **Tip**
 The MapLibre Map control also allows setting these options at runtime, rather than during initialization, with `get...` and `set...` functions. For example, use `getMaxBounds` and `setMaxBounds` to change the map bounds at runtime.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

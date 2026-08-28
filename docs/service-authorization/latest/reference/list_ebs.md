@@ -121,3 +121,7 @@ Amazon Elastic Block Store defines the following condition keys that can be used
 |   [ebs:Description](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonelasticblockstore.html#amazonelasticblockstore-policy-keys)  | Filters access by the description of the snapshot being created | String |
 |   [ebs:ParentSnapshot](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonelasticblockstore.html#amazonelasticblockstore-policy-keys)  | Filters access by the ARN of the parent snapshot | ARN |
 |   [ebs:VolumeSize](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonelasticblockstore.html#amazonelasticblockstore-policy-keys)  | Filters access by the size of the volume for the snapshot being created, in GiB | Numeric |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

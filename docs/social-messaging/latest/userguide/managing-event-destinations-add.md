@@ -188,3 +188,7 @@ To create new IAM polices, do the following:
 <a name="managing-event-destinations_next_steps"></a>
 
 Once you have set up your Amazon SNS topic, you must subscribe an endpoint to the topic. The endpoint will start to receive messages published to the associated topic. For more information on subscribing to a topic, see [Subscribing to an Amazon SNS topic](https://docs.aws.amazon.com/sns/latest/dg/sns-create-subscribe-endpoint-to-topic.html) in the *Amazon SNS Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

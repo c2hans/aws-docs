@@ -27,3 +27,7 @@ Publication date: **November 12, 2020** ([Document revisions](document-revisions
  Today, more business workloads use [Amazon API Gateway](https://aws.amazon.com/api-gateway/) to enable API-driven architectures, improving scalability, performance, and cost efficiency, without managing the underlying infrastructure. These workloads scale to thousands of concurrent requests per second. API Gateway is used by thousands of AWS customers to serve trillions of requests every month.
 
  The managed environment model of API Gateway intentionally hides many implementation details from the user. This makes some existing best practices for cloud security irrelevant, and creates the need for new best practices. This paper presents a detailed view of these best practices.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

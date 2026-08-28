@@ -23,3 +23,7 @@ All SaaS pricing models support free trials. For more information, see [SaaS fre
 Once you create your listing and publish it to limited, you can't change the pricing model.
 
 To make your SaaS product available on AWS Marketplace, decide whether you want to offer the [SaaS subscriptions pricing model](saas-subscriptions.md) or the [SaaS contracts pricing model](saas-contracts.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

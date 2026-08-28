@@ -64,3 +64,7 @@ Consider configuring the following alarms depending on which Amazon OpenSearch I
 | `otel_trace.internalServerError.count` sum >= 0 for 1 minute, 1 consecutive time | The Otel Trace source plugin is having trouble receiving events. |
 | `otel_trace.requestTimeouts.count` sum >= 0 for 1 minute, 1 consecutive time | Source timeouts are likely the result of the pipeline being underprovisioned. Consider increasing the pipeline maxUnits to handle additional workload. |
 | `otel_metrics.requestTimeouts.count` sum >= 0 for 1 minute, 1 consecutive time | Source timeouts are likely the result of the pipeline being underprovisioned. Consider increasing the pipeline maxUnits to handle additional workload. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

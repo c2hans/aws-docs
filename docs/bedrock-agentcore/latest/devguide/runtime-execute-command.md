@@ -371,3 +371,7 @@ Follow these best practices when using the `InvokeAgentRuntimeCommand` operation
 + Process streaming output incrementally to detect failures early. You can cancel a long-running command rather than waiting for it to complete.
 + Encode state in the command itself using `&&` chaining (for example, `cd /workspace && export NODE_ENV=test && npm test` ), since each command starts a fresh bash process.
 + Use UUIDs for session IDs to meet the 33-character minimum requirement (for example, `12345678-1234-1234-1234-123456789012` ).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

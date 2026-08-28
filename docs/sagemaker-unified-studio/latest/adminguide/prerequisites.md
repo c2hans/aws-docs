@@ -14,3 +14,7 @@ Use the following steps to update the chosen IAM role with the necessary permiss
 1. Navigate to the IAM console. Choose "Add permission" followed by "Attach policy" and search for the managed policy [AWS policy: SageMakerStudioAdminIAMConsolePolicy](security-iam-awsmanpol-SageMakerStudioAdminIAMConsolePolicy.md). Select it to add it to your existing role.
 
 This policy provides initial administrative and individual setup privileges for Amazon SageMaker Unified Studio via the AWS Management Console and SDK. It grants permissions for launching Amazon SageMaker Unified Studio. To view the permissions for this policy, see [SageMakerStudioAdminIAMConsolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioAdminIAMConsolePolicy.html) in the AWS Managed Policy Reference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

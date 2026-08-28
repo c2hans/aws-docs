@@ -226,3 +226,7 @@ This tutorial demonstrates how to set up an extended metric to be sent to CloudW
 1. Enter a name and optional description for the alarm, and choose **Next**.
 
 1. Review the details and choose **Create alarm**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

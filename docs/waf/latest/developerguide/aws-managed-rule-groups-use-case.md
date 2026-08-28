@@ -140,3 +140,7 @@ This managed rule group adds labels to the web requests that it evaluates, which
 | --- | --- |
 | WordPressExploitableCommands\_QUERYSTRING | Inspects the request query string for high risk WordPress commands that can be exploited in vulnerable installations or plugins. Examples patterns include commands like `do-reset-wordpress`. <br />Rule action: Block<br />Label: `awswaf:managed:aws:wordpress-app:WordPressExploitableCommands_QUERYSTRING` |
 | WordPressExploitablePaths\_URIPATH | Inspects the request URI path for WordPress files like `xmlrpc.php`, which are known to have easily exploitable vulnerabilities. <br />Rule action: Block<br />Label: `awswaf:managed:aws:wordpress-app:WordPressExploitablePaths_URIPATH` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

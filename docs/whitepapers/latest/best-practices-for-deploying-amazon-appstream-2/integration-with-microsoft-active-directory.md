@@ -89,3 +89,7 @@ AWS recommends storing the Organizational Units (OUs) configured in a single Wor
  WorkSpaces Applications instances are ephemeral. A fleet creates and reuses Active Directory computer objects as fleets scale out and scale in.
 
  AWS recommends creating an AD cleanup process to delete stale Active Directory computer objects that can exist after an WorkSpaces Applications fleet is removed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

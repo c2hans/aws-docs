@@ -137,3 +137,7 @@ The following are considerations and limitations that apply to views created in 
   + Redshift tables, views, materialized views, and late binding views that aren’t in a Lake Formation managed data share.
 + Views can’t contain nested Redshift Spectrum tables.
 + AWS Glue representations of the base objects of a view must be in the same AWS account and Region as the view.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

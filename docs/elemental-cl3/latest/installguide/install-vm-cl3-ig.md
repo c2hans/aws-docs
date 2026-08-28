@@ -28,3 +28,7 @@ In the following steps, we show how to install version 3.25.5 of the software. M
 + [Step C: Install the AWS Elemental Software](install-vm-cl3-ig-install-sw.md)
 + [Step D: Set up licenses](install-vm-cl3-ig-licensing.md)
 + [Step E: Complete cluster configuration](install-vm-cl3-ig-complete.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

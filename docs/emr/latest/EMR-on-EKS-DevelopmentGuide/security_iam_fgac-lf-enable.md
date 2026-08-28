@@ -335,3 +335,7 @@ Ensure the **SecurityConfiguration** Id from the previous step is passed, so tha
 The process for job submission is the same for both non Lake Formation and Lake Formation jobs. For more information, see [Submit a job run with `StartJobRun`](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks-jobs-submit.html).
 
 The Spark Driver, Executor and Event Logs of the System Driver are stored in AWS Service Account’s S3 Bucket for debugging. We recommend configuring a customer-managed KMS Key in the Job Run to encrypt all logs stored in the AWS service bucket. For more information about enabling log encryption, see [Encrypting Amazon EMR on EKS logs](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/security_iam_fgac-logging-kms.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

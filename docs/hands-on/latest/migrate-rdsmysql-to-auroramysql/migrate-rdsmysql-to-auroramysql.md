@@ -348,3 +348,7 @@ It is a best practice to delete instances and resources that you are no longer u
 <a name="congratulations"></a>
 
 In this tutorial, you learned how the Aurora Read Replica can be used, to achieve a near zero downtime, during migration from source MySQL DB instance to Amazon Aurora MySQL Cluster. You also learned how to monitor the replication, to stop writing to RDS MySQL DB instance after replication lag approaches zero, and to convert the Aurora Read Replica into a standalone Aurora MySQL DB cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

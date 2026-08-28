@@ -23,3 +23,7 @@ During ingestion, HealthOmics generates an entity tag, or *HealthOmics ETag*, to
 + [Exporting HealthOmics read sets to an Amazon S3 bucket](read-set-exports.md)
 + [Accessing HealthOmics read sets with Amazon S3 URIs](s3-access.md)
 + [Activating read sets in HealthOmics](activating-read-sets.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

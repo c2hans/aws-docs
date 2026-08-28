@@ -227,3 +227,7 @@ For these fields, map to the fields that are in the `FindingProviderFields` obje
 + `Confidence` – Only include a confidence score (0-99) if your service has a similar functionality, or if you stand 100% by your finding.
 + `Criticality` – The criticality score (0-99) is intended to express the importance of the resource associated with the finding.
 + `RelatedFindings` – Only provide related findings if you can keep track of findings related to the same resource or finding type. To identify a related finding, you must refer to the finding identifier of a finding that is already in Security Hub CSPM.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

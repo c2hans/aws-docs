@@ -30,3 +30,7 @@ The CIDR location name has a maximum length of 16 characters.
 1. After you have entered the CIDR blocks, choose **Create CIDR collection**, or **Add another location** to keep entering locations and CIDR block. You can enter multiple CIDR locations per collection.
 
 1. After you have entered CIDR locations, choose **Create CIDR collection**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

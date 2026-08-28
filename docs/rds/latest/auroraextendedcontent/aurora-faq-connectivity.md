@@ -30,3 +30,7 @@ Users can invoke Data API operations only if they are authorized to do so. Admin
 <a name="aurora-faq-how-is-the-data-api-priced"></a>
 
 The Data API includes a free tier of 1 million requests per month (aggregated across all Regions) for the first year. After that, pricing is based on API request volume — see the [Aurora pricing page](https://aws.amazon.com/rds/aurora/pricing/). Data API uses [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) for credentials (separate charges apply) and logs activity via [AWS CloudTrail](https://aws.amazon.com/pm/cloudtrail/) data events.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

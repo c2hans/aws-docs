@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  **Automate user entitlements**: Use a provisioning and entitlement system that automates the addition and removal of users from groups that provide role-based permissions access. Automation creates consistency in the approach for handling permissions.
 +  **Use templates for user creation:** Use templates when creating user accounts to avoid manual configuration of user groups and settings that may lead to overly permissive access.
 +  **Review user entitlements regularly**: Review user entitlements regularly to verify that they are aligned with each user's current role and access requirements to fulfill the role. Consider a regular cadence, such as a quarterly or monthly review.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

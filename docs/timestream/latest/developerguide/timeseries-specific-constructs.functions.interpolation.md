@@ -73,3 +73,7 @@ SELECT time, ROUND(value, 2) AS interpolated_cpu
 FROM interpolated_timeseries
 CROSS JOIN UNNEST(interpolated_avg_cpu_utilization)
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -68,3 +68,7 @@ As a consumer, you are a human or agent that needs to find and use resources. Yo
 +  **Connect** to the registry’s MCP endpoint from any MCP-compatible client to discover available tools programmatically (`InvokeRegistryMcp`).
 
   As a consumer, you only see approved records, so you can trust that everything you find in the registry has been reviewed and meets the organization’s quality standards. You can authorize via IAM credentials or JWT tokens from a corporate identity provider, depending on how the registry is configured.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

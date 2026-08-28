@@ -14,3 +14,7 @@ For information on using CloudTrail logging in Amazon Inspector Classic, see [Lo
 You can monitor Amazon Inspector Classic using Amazon CloudWatch, which collects and processes raw data into readable, near-real time metrics. By default, Amazon Inspector Classic sends metric data to CloudWatch in 5-minute periods.
 
 For information on using CloudWatch with Amazon Inspector Classic, see [Monitoring Amazon Inspector Classic using Amazon CloudWatch](using-cloudwatch.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

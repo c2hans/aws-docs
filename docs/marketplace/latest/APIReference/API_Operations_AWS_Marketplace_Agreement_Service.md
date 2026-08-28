@@ -31,3 +31,7 @@ The following actions are supported by AWS Marketplace Agreement Service:
 +  [SendAgreementCancellationRequest](API_marketplace-agreements_SendAgreementCancellationRequest.md)
 +  [SendAgreementPaymentRequest](API_marketplace-agreements_SendAgreementPaymentRequest.md)
 +  [UpdatePurchaseOrders](API_marketplace-agreements_UpdatePurchaseOrders.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

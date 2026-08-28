@@ -48,3 +48,7 @@ The **Role 1** and **Role 2** trust policies are configured to allow IAM Roles A
 For more information about role trust policies and how you can modify this sample, see [Trust policy](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/trust-model.html#trust-policy) in the IAM Roles Anywhere documentation.
 
 Sample role and profile policies for **Application 1** and **Application 2** are included in the [Appendix: Sample profile and role policies](appendix-sample-policies.md) section of this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

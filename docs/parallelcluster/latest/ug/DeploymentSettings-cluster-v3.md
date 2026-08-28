@@ -75,3 +75,7 @@ To update the value of `DisableSudoAccessForDefaultUser`, you must stop the comp
 When set to `Shared`, the cluster will use the default setup and share the default user’s directory across the cluster by `/home/<default user>`.
 
 When set to `Local`, the head node, login nodes, and compute nodes will each have a separate local default user directory stored in `local/home/<default user>`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

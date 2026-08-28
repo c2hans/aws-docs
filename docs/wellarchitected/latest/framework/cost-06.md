@@ -12,3 +12,7 @@ Verify that you choose the appropriate resource size and number of resources for
 + [COST06-BP02 Select resource type, size, and number based on data](cost_type_size_number_resources_data.md)
 + [COST06-BP03 Select resource type, size, and number automatically based on metrics](cost_type_size_number_resources_metrics.md)
 + [COST06-BP04 Consider using shared resources](cost_type_size_number_resources_shared.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

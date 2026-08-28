@@ -325,3 +325,7 @@ Apply the following AWS KMS key policy to keys used for Amazon S3 buckets contai
 + **BedrockTrainingAccess** – Allows Amazon Bedrock to decrypt training data and create grants for long-running training jobs (via Amazon S3).
 + **TrainingRoleAccess** – Allows training and data science roles to encrypt/decrypt training datasets.
 + **DenyExternalAccess** – Blocks all access from principals outside the organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

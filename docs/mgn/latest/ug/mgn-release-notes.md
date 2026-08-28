@@ -11,6 +11,7 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 <a name="release-notes-aug-2026"></a>
 + Added support for Amazon Linux 2023 with kernel 6.18.
 + Added support for Oracle Linux 9.6.
++ The user-provided ID for a source server is now case insensitive. For more information, see [Edit server](add-server-server-page.md#server-edit-main).
 
 ## July 2026
 <a name="release-notes-jul-2026"></a>
@@ -52,7 +53,7 @@ Added support for RHEL 9.8, Rocky Linux 9.8, and AlmaLinux 9.8.
 <a name="release-notes-dec-2025"></a>
 + You can now use MGN over Internet Protocol version 6 (IPv6) for both service communication and application migrations.
 + Added support for the following operating systems:
-  + Rocky OS 9–9.6
+  + Rocky Linux 9–9.6
   + RHEL 10
 
 ## October 2025
@@ -278,3 +279,7 @@ Added support for RHEL 9.8, Rocky Linux 9.8, and AlmaLinux 9.8.
 ## April 2021
 <a name="release-notes-april-2021"></a>
 + Service initial launch in: US East (N. Virginia), US East (Ohio), US West (Oregon), Europe (Ireland), Europe (Frankfurt), Europe (Stockholm), Asia Pacific (Sydney), Asia Pacific (Singapore).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

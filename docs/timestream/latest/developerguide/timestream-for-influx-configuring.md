@@ -135,3 +135,7 @@ The following table provides details about settings that you choose when you cre
 | Initial username | This will be the master user to initialize your InfluxDB DB instance with. You will use this username to log in into the InfluxUI to obtain your operator token. | CLI: `username`<br />API: `Username` |
 | Subnets | A vpc subnet to associate with this DB instance.  | CLI: `vpc-subnet-ids`<br />API: `VPCSubnetIds` |
 | VPC Security Group (firewall) | The security group to associate with the DB instance.  | CLI: `vpc-security-group-ids`<br />API: `VPCSecurityGroupIds` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

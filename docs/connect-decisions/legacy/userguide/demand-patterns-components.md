@@ -19,3 +19,7 @@ The system also analyzes your trailing 12-month demand (subject to trimming conf
 The history length in years is calculated for each forecast granularity (for example, product-location combination) based on the earliest and latest dates available in your preprocessed historical demand data, after adjusting the dates to the default start of the period. This analysis helps determine if products have accumulated enough historical data to generate reliable forecasts, with a minimum of two years typically needed to capture seasonal patterns and long-term trends.
 
 ![Raw demand history](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/raw-demand-history.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

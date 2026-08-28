@@ -54,3 +54,7 @@ aws comprehend list-document-classification-jobs
 <a name="get-started-api-customclass-java"></a>
 
 For SDK examples of how to start a custom classifier job, see [Use `StartDocumentClassificationJob` with an AWS SDK or CLI](example_comprehend_StartDocumentClassificationJob_section.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

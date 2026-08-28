@@ -26,3 +26,7 @@ The MCP service provides several tools to assist with Spark upgrades. The major 
 | 12 | list\_upgrade\_analyses | Observablity | list all analyses created by current account |
 
 For a full list of all the upgrade tools provided by the SMUS Managed MCP server, you may list all tools from the server.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

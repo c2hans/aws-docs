@@ -245,3 +245,7 @@ For more information, see [Log Examples](https://docs.aws.amazon.com/waf/latest/
 
 **Important**
 Source IP rules for App Runner private services that are associated with WAF web ACLs *do not adhere to IP based rules*. This is because we currently don't support forwarding request source IP data to App Runner private services associated with WAF. If your App Runner application requires source IP/CIDR incoming traffic control rules, you must use [security group rules for private endpoints](network-pl-manage.md) instead of WAF web ACLs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

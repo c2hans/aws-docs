@@ -51,3 +51,7 @@ There are a few ways a Lua script can continue to write new data into Valkey or 
 + The script starts when the Valkey or Redis OSS server is below `maxmemory`, and contains multiple write operations inside
 + The script's first write command isn't consuming memory (such as DEL), followed by more write operations that consume memory
 + You can mitigate this problem by configuring a proper eviction policy in Valkey or Redis OSS server other than `noeviction`. This allows Redis OSS to evict items and free up memory in between Lua scripts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

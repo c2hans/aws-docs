@@ -151,3 +151,7 @@ Performance tests have inherent variance. A 2% latency difference between runs i
 **Go Deeper**
 [DLT CLI Documentation](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/dlt-cli.html)
 [Performance Efficiency Pillar: Process and Culture](https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/process-and-culture.html) (Well-Architected)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Performance Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

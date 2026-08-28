@@ -118,3 +118,7 @@ To get started with AI agents and tools:
 For more information about specific deployment methods, refer to:
 + [Container products in AWS Marketplace](buyer-what-is-aws-marketplace-for-containers.md)
 + [SaaS products through AWS Marketplace](buyer-saas-products.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

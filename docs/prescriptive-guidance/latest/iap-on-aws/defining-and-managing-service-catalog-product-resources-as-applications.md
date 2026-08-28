@@ -18,3 +18,7 @@ For more information about AppRegistry, see the following:
 + [AppRegistry Administrator Guide](https://docs.aws.amazon.com/servicecatalog/latest/arguide/intro-app-registry.html).
 + [Increase application visibility and governance using AWS Service Catalog AppRegistry](https://aws.amazon.com/blogs/mt/increase-application-visibility-governance-using-aws-service-catalog-appregistry/) blog post. This article provides an overview of how to use AppRegistry in infrastructure governance, with command-line examples of registering your infrastructure as applications in AppRegistry.
 + [Govern your applications centrally using AppRegistry and Application Manager](https://aws.amazon.com/blogs/mt/govern-your-applications-centrally-using-appregistry-and-application-manager/) blog post. This article provides an overview with a tutorial of how to apply AppRegistry to register a LAMP web application on the AWS Management Console and manage it by using Application Manager.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

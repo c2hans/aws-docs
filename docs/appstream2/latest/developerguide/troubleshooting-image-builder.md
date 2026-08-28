@@ -142,15 +142,15 @@ The application optimization manifest was created with elevated privileges. To c
 ## The image assistant reports that the SSM Agent version is below the recommended minimum
 <a name="troubleshooting-ssm-agent-version"></a>
 
-The image assistant in the image builder displays the following error message: "The installed SSM Agent version x is below the recommended minimum version 3.3.3598.0. Consider updating the SSM Agent to ensure full functionality."
+The image assistant in the image builder displays the following error message: "The installed SSM Agent version x is below the recommended minimum version 3.3.0.0. Consider updating the SSM Agent to ensure full functionality."
 
-AWS Systems Manager is deprecating the ec2messages (Amazon Message Delivery Service) endpoints that older SSM Agent versions use for Run Command execution. SSM Agent 3.3.3598.0 and above uses the newer ssmmessages (Amazon Message Gateway Service) endpoints, which provide improved security and reliability.
+AWS Systems Manager is deprecating the ec2messages (Amazon Message Delivery Service) endpoints that older SSM Agent versions use for Run Command execution. SSM Agent 3.3.0.0 and above uses the newer ssmmessages (Amazon Message Gateway Service) endpoints, which provide improved security and reliability.
 
 To resolve this issue, complete the following steps:
 
 1. Manually update the SSM Agent by following the instructions in the [Systems Manager User Guide](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-install-win.html).
 
-1. Confirm that the SSM Agent version is 3.3.3598.0 or above by running the following PowerShell command:
+1. Confirm that the SSM Agent version is 3.3.0.0 or above by running the following PowerShell command:
 
    ```
    $currentVersion = (Get-ChildItem 'HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall' | Get-ItemProperty | Where-Object { $_.DisplayName -like '*SSM*' }).DisplayVersion
@@ -177,3 +177,7 @@ To resolve this issue, complete the following steps:
    ```
 
 1. Test image creation on the image builder to confirm that the workflow succeeds.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

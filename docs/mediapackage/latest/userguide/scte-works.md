@@ -16,3 +16,7 @@ When there are SCTE-35 messages in the source content, MediaPackage takes the fo
 MediaPackage also signals SCTE-35 markers present in the source that are not ad markers. MediaPackage selects the first available data track from the input content for SCTE-35 signal processing (typically identified as PID 500). For proper handling by MediaPackage, ensure that your SCTE-35 ad signals are included in this first data track.
 
 For DASH manifests, SCTE-35 markers that aren't ad markers don't create a new period. Instead, MediaPackage places these markers in the period that corresponds to the marker timing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

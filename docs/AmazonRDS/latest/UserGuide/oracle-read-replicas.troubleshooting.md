@@ -42,3 +42,7 @@ If you add or modify any triggers, and if replication fails afterward, the probl
 + `rdsdb`
 
 For more information, see [Miscellaneous considerations for RDS for Oracle replicas](oracle-read-replicas.limitations.md#oracle-read-replicas.limitations.miscellaneous).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

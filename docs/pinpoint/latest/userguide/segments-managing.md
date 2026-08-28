@@ -31,3 +31,7 @@ You can't edit the properties of an imported segment.
    + **Delete** – Choose this option to delete the segment permanently. You can't recover a segment after you delete it.
 **Important**
 If you delete a segment, any active campaigns that use the segment will fail and stop running. Similarly, any active journeys that use the segment might fail and stop running. If a journey does continue to run, any participants who were part of the segment might be removed from the journey prematurely. Before you delete a segment, it's a good idea to first verify that a segment isn't being used by any active campaigns or journeys.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ Before you begin, read the [requirements](gg-gs.md#gg-requirements) for this tut
 
 **Note**
 To learn how to use AWS IoT Greengrass running in a prebuilt Docker container, see [Running AWS IoT Greengrass in a Docker container](run-gg-in-docker-container.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

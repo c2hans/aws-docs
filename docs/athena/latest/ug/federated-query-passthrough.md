@@ -167,3 +167,7 @@ CREATE VIEW AwsDataCatalog.default.example_view AS
 <a name="federated-query-passthrough-sql-based-connectors-opting-out"></a>
 
 To disable passthrough queries, add a Lambda environment variable named `enable_query_passthrough` and set it to `false`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

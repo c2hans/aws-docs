@@ -37,3 +37,7 @@ To enable reuse of this HTML, you can replace the image URL with a template vari
 When you iterate through the list of images, you can then simply perform a find/replace on the `${url}` value in the HTML so that each task has a unique question corresponding to an image URL.
 
 Note that the `${}` syntax used above is also used for tasks created using the Mechanical Turk requester website. There are a variety of different templating languages and libraries you can use to render your task interface. It's recommended you choose a library that works best for you in your desired programming language.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

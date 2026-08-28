@@ -57,3 +57,7 @@ The following are the service endpoints and service quotas for this service.
 | Number of monitors per account per AWS region | Each supported Region: 100 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/networkmonitor/quotas/L-A4298AB9)  | The maximum number of monitors in an account in one AWS Region. |
 | Number of probes per monitor | Each supported Region: 24 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/networkmonitor/quotas/L-F192A8D6)  | The maximum number of probes that a monitor can have. |
 | Number of probes per subnet for each monitor | Each supported Region: 4 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/networkmonitor/quotas/L-A8FA6DFE)  | The maximum number of probes that a subnet in a monitor can have. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -68,3 +68,7 @@ You can delete the existing content in a layer. If the static overlay has not ye
 You must enter a Modify Static Overlay command ([Create or modify a non-running event with static graphic overlay](create-or-modify-a-non-running-event-with-static-graphic-overlay.md)) and include the following tags in the XML body:
 + layer: The layer to delete.
 + activate: Set to false. Note that this tag is not part of the XML body for creating the event.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

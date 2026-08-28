@@ -25,3 +25,7 @@ The following properties are included in a service revision.
 | Creation date | The date the service revision was created. |
 | VPC Lattice | The VPC Lattice configuration for the service revision. |
 | Monitoring | The monitoring configuration for the service, which defines the resolution for the service-level `CPUUtilization` and `MemoryUtilization` CloudWatch metrics.+  Metric names <br />The metrics to collect (`CPUUtilization`, `MemoryUtilization`). <br />+  Resolution (seconds) <br />The metric collection resolution. Valid values are `20` and `60`.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

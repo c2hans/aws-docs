@@ -96,3 +96,7 @@ This solution’s default configuration will deploy Amazon Bedrock Guardrails in
 ![Amazon Bedrock Guardrails configuration interface](http://docs.aws.amazon.com/solutions/latest/cloud-migration-factory-on-aws/images/bedrock-guardrails.png)
 
 For more information, refer to [Amazon Bedrock Guardrails](https://aws.amazon.com/bedrock/guardrails/). To opt out Guardrails in CMF solution, you can select false in template parameter section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,6 +10,11 @@ Represents a registered service with its configuration and accessible resources.
 ## Contents
 <a name="API_RegisteredService_Contents"></a>
 
+ ** createdAt **   <a name="devopsagent-Type-RegisteredService-createdAt"></a>
+The timestamp when the service was registered.
+Type: Timestamp
+Required: Yes
+
  ** serviceId **   <a name="devopsagent-Type-RegisteredService-serviceId"></a>
 The unique identifier of a service.
 Type: String
@@ -21,6 +26,11 @@ Required: Yes
 The service type e.g github or dynatrace
 Type: String
 Valid Values: `github | slack | azure | azuredevops | dynatrace | servicenow | pagerduty | gitlab | eventChannel | mcpservernewrelic | mcpservergrafana | mcpserverdatadog | mcpserver | mcpserversplunk | azureidentity | mcpserversigv4 | remoteagent | remoteagentsigv4`
+Required: Yes
+
+ ** updatedAt **   <a name="devopsagent-Type-RegisteredService-updatedAt"></a>
+The timestamp when the service was last updated.
+Type: Timestamp
 Required: Yes
 
  ** accessibleResources **   <a name="devopsagent-Type-RegisteredService-accessibleResources"></a>
@@ -62,3 +72,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/devops-agent-2026-01-01/RegisteredService)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/devops-agent-2026-01-01/RegisteredService)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/devops-agent-2026-01-01/RegisteredService)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

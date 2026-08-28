@@ -23,3 +23,7 @@ This guide describes the Cloud Migration Factory process for rehosting servers a
 | --- |
 
 If you want to get hands-on experience before using Cloud Migration Factory for your production migration, email us at *migration-immersion-day@amazon.com* to arrange a [migration immersion day](https://migration-immersionday.workshop.aws/en).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

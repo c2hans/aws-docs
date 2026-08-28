@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 Consider network performance when selecting Amazon EC2 instances, with specific network optimized variants indicated by the n-suffix, and bare metal instances offering direct access to the underlying host, further optimizing the networking stack.
 
 Within an Amazon VPC, when inter-process communication latency, throughput, and consistency is a consideration, use Amazon EC2 Placement Groups to have greater control over the location of your virtual instances and optimize network communication, resulting in improved network performance reduction in latency and increased packet processing rates. The use of cluster placement groups is covered in greater detail in the[ Crypto market-making latency and Amazon EC2 shared placement groups](https://aws.amazon.com/blogs/industries/crypto-market-making-latency-and-amazon-ec2-shared-placement-groups/) blog post on optimizing market-making systems.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -60,3 +60,7 @@ To go directly to your SDK's or tool's **specific** credential provider chain de
 + [SDK for Rust](https://docs.aws.amazon.com/sdk-for-rust/latest/dg/credproviders.html)
 + [SDK for Swift](https://docs.aws.amazon.com/sdk-for-swift/latest/developer-guide/using-configuration.html)
 + [Tools for PowerShell](https://docs.aws.amazon.com/powershell/latest/userguide/creds-assign.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdkref` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

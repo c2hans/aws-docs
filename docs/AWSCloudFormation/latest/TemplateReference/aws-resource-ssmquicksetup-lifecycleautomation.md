@@ -98,3 +98,7 @@ Returns the value of an attribute from the `AWS::SSMQuickSetup::LifecycleAutomat
 
 `AssociationId`  <a name="AssociationId-fn::getatt"></a>
 Returns the ID of the SSM Association created to manage the automation document execution lifecycle.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

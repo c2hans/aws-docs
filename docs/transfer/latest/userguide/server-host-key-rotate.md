@@ -43,3 +43,7 @@ As an example, assume that you have added the following set of server host keys 
 1. Delete one or more of the host keys of the same type that you had added previously. This procedure is described in [Delete a server host key](server-host-key-delete.md).
 
 1. All keys are visible, and can be active, subject to the behavior described previously in [How the client chooses a server host key](#server-key-behavior).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

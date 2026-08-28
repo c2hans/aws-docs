@@ -22,3 +22,7 @@ The following table shows model support for reranking:
 | Cohere | Rerank 3.5 | cohere.rerank-v3-5:0 | ap-northeast-1<br />ca-central-1<br />eu-central-1<br />us-east-1<br />us-west-2 |
 
 For more information about reranking with Cohere models and their inference parameters, see [Rerank](https://docs.cohere.com/reference/rerank) on the Cohere documentation website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -64,3 +64,7 @@ The following are current limitations for the Apache Hive plugin on Amazon EMR 5
 + Hive roles are not currently supported. Grant, Revoke statements are not supported.
 + Hive CLI is not supported. JDBC/Beeline is the only authorized way to connect Hive.
 + `hive.server2.builtin.udf.blacklist` configuration should be populated with UDFs that you deem unsafe.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

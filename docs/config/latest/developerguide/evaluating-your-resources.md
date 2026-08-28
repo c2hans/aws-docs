@@ -148,3 +148,7 @@ You can re-evaluate a rule one time each minute. You must wait for AWS Config to
 <a name="evaluating-your-resources-api"></a>
 
 Use the [StartConfigRulesEvaluation](https://docs.aws.amazon.com/config/latest/APIReference/API_StartConfigRulesEvaluation.html) action.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

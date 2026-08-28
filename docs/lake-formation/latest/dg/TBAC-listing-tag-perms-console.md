@@ -17,3 +17,7 @@ You can use the Lake Formation console to view the permissions granted on LF-Tag
 
    The **LF-Tag permissions** section shows a table that contains principal, tag keys, values, and permissions.
 ![The page includes a table of permissions with the following columns: Principal, Principal type, Keys, Values, Permissions, and Grantable. There are five rows. To the left of each row is a radio button. Above the table are a search field and these buttons: Refresh, View, Revoke, and Grant. Because no row is initially selected, the View and Revoke buttons are disabled. The values in the first row are: Principal=arn:aws:iam::111122223333:user/datalake_admin, Principal type=IAM user, Keys=environment, Values=All values, Permissions=DESCRIBE, Grantable=DESCRIBE.](http://docs.aws.amazon.com/lake-formation/latest/dg/images/list-tag-permissions-page.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,3 +53,7 @@ source_url: https://docs.aws.amazon.com/guidance/latest/cloud-intelligence-dashb
 |  **ri\_sp\_trueup**  | double | In case of No Upfront or Partial Upfront Savings Plans, it shows the amount of upfront fee a Savings Plan subscription is costing you for the billing period in negative. The initial upfront payment for All Upfront Savings Plan and Partial Upfront Savings Plan amortized over the current month. |
 |  **ri\_sp\_upfront\_fees**  | double | Describes upfront payment of Savings plan and Reserved Instances. |
 |  **public\_cost**  | double | Sum of the total cost for the line item based on public On-Demand Instance rates. If you have SKUs with multiple On-Demand public costs, the equivalent cost for the highest tier is displayed. For example: services offering free-tiers or tiered pricing. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

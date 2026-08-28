@@ -25,3 +25,7 @@ The `com.amazonaws.ivs.player` package implements the interface described in thi
 **Platform requirements:** Android 6.0\+
 
 A **React Native wrapper** for the Amazon IVS Player SDK is available. For the code and documentation, see [https://github.com/aws/amazon-ivs-react-native-player](https://github.com/aws/amazon-ivs-react-native-player).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

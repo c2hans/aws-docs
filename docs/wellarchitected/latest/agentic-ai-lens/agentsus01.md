@@ -49,3 +49,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 + [AGENTSUS01-BP03 Optimize resource utilization through shared services](agentsus01-bp03.md)
 + [AGENTSUS01-BP04 Scale cognitive processing pathways appropriately](agentsus01-bp04.md)
 + [AGENTSUS01-BP05 Adopt specification-driven tasks for frontier agents and long-running workflows](agentsus01-bp05.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

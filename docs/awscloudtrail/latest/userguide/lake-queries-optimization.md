@@ -124,3 +124,7 @@ Aggregation functions like `array_agg` can cause at least one row in the query r
 If sufficient memory is not available during the execution of memory intensive operations like joins, aggregations and window functions, intermediate results are spilled to disk, but spilling slows query execution and can be insufficient to prevent the query from failing with `Query exhausted resources at this scale factor`. This can be fixed by retrying the query.
 
 If the above errors persist even after optimizing the query, you can scope down the query using the `eventTime` of the events and execute the query multiple times in smaller intervals of the original query time range.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

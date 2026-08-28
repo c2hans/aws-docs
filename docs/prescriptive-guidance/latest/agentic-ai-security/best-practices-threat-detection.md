@@ -24,3 +24,7 @@ Advanced CNAPP solutions establish behavioral baselines for normal agent operati
 Complement CNAPP with static code analysis (SCA) tools that examine application source code for hardcoded credentials and unsecure coding patterns. Ideally the SCA and CNAPP solutions should be integrated to provide a more complete dataset for vulnerability management and toxic combination detection.
 
 While CNAPP and SCA tools provide important security capabilities, in isolation, they do not offer complete visibility into agentic AI system threats. These tools primarily focus on infrastructure and traditional application security. They do not specialize in threats that are unique to agentic AI systems (such as prompt manipulation) or emergent behaviors from multi-agent interactions that require specialized detection capabilities.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

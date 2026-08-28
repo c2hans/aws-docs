@@ -35,3 +35,7 @@ Stage 1 consists of the following sections, tasks, and steps:
   + [Step 6: Determine how to manage and scale resources](task-project-management.md#step-resource-plan)
   + [Step 7: Create a decision log](task-project-management.md#step-decision-log)
   + [Step 8: Create a RAID log](task-project-management.md#step-raid-log)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

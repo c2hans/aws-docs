@@ -30,3 +30,7 @@ To learn more, see [ Tagging AWS resources](https://docs.aws.amazon.com/general/
 <a name="acc-tag-how-works"></a>
 
 There are multiple ways to apply tags to your resources. You can tag resources directly in the console of each AWS service when you create the resource; use AWS [Tag Editor](https://docs.aws.amazon.com/ARG/latest/userguide/tag-editor.html) to add, remove, or edit tags for multiple resources; or use provisioning tools such as CloudFormation [Resource tag](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-resource-tags.html). AMS Accelerate also provides the AMS Accelerate Resource Tagger that you use to define rules for an automated tag lifecycle manager. For information about using Resource Tagger in AMS Accelerate, see [Accelerate Resource Tagger](acc-resource-tagger.md). AMS Accelerate also provides customer-provided tags to add and remove custom tags to your AMS resources. For more information about customer-provided tags, see [Customer-provided tags in Accelerate](acc-tag-cust-provided.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

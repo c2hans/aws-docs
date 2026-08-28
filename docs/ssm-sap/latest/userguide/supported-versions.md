@@ -42,3 +42,7 @@ The following table provides details of SAP applications supported by AWS System
 | --- | --- | --- |
 | SAP ABAP Systems (including NetWeaver and S/4HANA) - Single Instance | 750 and higher | SAP HANA |
 | SAP ABAP Systems (including NetWeaver and S/4HANA) - Distributed and Highly Available Architectures | 750 and higher | SAP HANA |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ssm-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

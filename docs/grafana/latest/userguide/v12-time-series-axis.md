@@ -99,3 +99,7 @@ The transform option is only available as an override.
 There are some cases where you want to display multiple y-axes. For example, if you have a dataset showing both temperature and humidity over time, you could show two y-axes with different units for these two series.
 
 To display multiple y-axes, [add a field override](v12-panels-configure-overrides.md#v12-panels-overrides-add-a-field). Follow the steps as many times as required to add as many y-axes as you need.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,3 +13,7 @@ For an at-a-glance summary of how Amazon OpenSearch Serverless NextGen constrain
 
 **Note**
 Amazon OpenSearch Serverless NextGen authenticates every request with AWS Signature Version 4 (SigV4) — there is no basic-auth or fine-grained access control (FGAC) username and password on the target. Both the snapshot source access and the migration’s write access to the collection are governed by [AWS Identity and Access Management](https://aws.amazon.com/iam) (IAM) and by the collection’s data access policy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

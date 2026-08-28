@@ -106,3 +106,7 @@ To start using rule-based redaction, complete the following steps.
 + Grant the appropriate security profile permissions to the users who need to view redacted or unredacted recordings.
 
 For information about reviewing recordings after they are redacted, see [Review agent screen recordings](review-screen-recordings.md). For troubleshooting, see [Download log files for the screen recording app](troubleshoot-sr.md). For frequently asked questions, see [Frequently asked questions about Connect Customer screen recording capabilities](faq-screenrecording.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

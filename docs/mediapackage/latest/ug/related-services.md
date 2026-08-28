@@ -10,3 +10,7 @@ source_url: https://docs.aws.amazon.com/mediapackage/latest/ug/related-services.
 + **AWS Identity and Access Management (IAM)** is a web service that helps you securely control access to AWS resources for your users. Use IAM to control who can use your AWS resources (authentication) and what resources users can use in which ways (authorization). For more information, see [Setting up MediaPackage](setting-up.md).
 + **AWS Elemental MediaTailor (MediaTailor)** is a scalable ad insertion service that runs in the AWS Cloud. Use MediaTailor to serve targeted ads to viewers. For more information, see [AWS Elemental MediaTailor](https://aws.amazon.com/mediatailor/).
 + **Amazon Simple Storage Service (Amazon S3)** is a storage service. Pull video on demand (VOD) assets from Amazon S3, or store live-to-VOD assets in the bucket of your choice. For more information, see [Getting started with VOD content delivery in MediaPackage](getting-started-vod.md) and [Getting started with live-to-VOD content delivery in MediaPackage](getting-started-ltov.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

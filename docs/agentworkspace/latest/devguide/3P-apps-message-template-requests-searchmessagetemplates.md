@@ -47,3 +47,7 @@ searchMessageTemplates(request: SearchMessageTemplatesParams): Promise<SearchMes
 | priority | "HIGH" \| "MEDIUM" \| "LOW" | The importance of the attribute field when calculating query result relevancy scores. The value set for this parameter affects the ordering of search results. |
 | allowFuzziness | boolean | Whether the query expects only exact matches on the attribute field values. The results of the query will only include exact matches if this parameter is set to false. |
 | operator | "CONTAINS" \| "CONTAINS\_AND\_PREFIX" | Include all templates that contain the values or only templates that contain the values as the prefix. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer Agent Workspace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agentworkspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

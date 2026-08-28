@@ -144,3 +144,7 @@ Before you continue, confirm that you have created the Lambda function and the e
 <a name="related-resources-lambda-hooks"></a>
 
 We provide template examples that you can use to understand how to declare a Lambda Hook in a CloudFormation stack template. For more information, see [AWS::CloudFormation::LambdaHook](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-cloudformation-lambdahook.html) in the *AWS CloudFormation User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

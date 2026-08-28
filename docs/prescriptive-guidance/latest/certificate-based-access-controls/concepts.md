@@ -76,3 +76,7 @@ By using [Credential Helper](https://github.com/aws/rolesanywhere-credential-hel
 This tool is compatible with the `credential_process` feature available across the language SDKs. When used with an AWS SDK, these credentials automatically refresh before they expire, requiring no additional implementation for credential renewal. Credential Helper manages the process of creating a signature with the certificate and calling the endpoint to obtain session credentials. Then, it returns the temporary security credentials to the calling process in a standard JSON format.
 
 For more information, see [Get temporary security credentials from IAM Roles Anywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/credential-helper.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

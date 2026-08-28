@@ -41,3 +41,7 @@ The performance efficiency pillar focuses on structured and streamlined allocati
 + Automate AWS Managed Microsoft AD scaling based on utilization metrics. For more information, see [How to automate AWS Managed Microsoft AD scaling based on utilization metrics](https://aws.amazon.com/blogs/security/how-to-automate-aws-managed-microsoft-ad-scaling-based-on-utilization-metrics/) on the AWS Blog.
 + Load test before rolling any changes out to production.
 + Choose appropriately sized, dedicated connectivity or a virtual private network (VPN) when you need to establish trust relationships with an on-premises Microsoft Active Directory.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

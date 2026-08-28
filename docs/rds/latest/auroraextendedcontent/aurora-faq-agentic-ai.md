@@ -48,3 +48,7 @@ Aurora integrates with [Amazon Bedrock AgentCore](https://aws.amazon.com/bedrock
 <a name="aurora-faq-how-does-optimized-reads-for-aurora-postgresql-improve-vecto"></a>
 
 Optimized reads with pgvector increases queries per second for vector search by up to 9x in workloads that exceed available instance memory. This is possible due to the tiered caching capability that automatically caches data evicted from the in-memory database buffer cache onto local storage. Read our [blog](https://aws.amazon.com/blogs/database/accelerate-generative-ai-workloads-on-amazon-aurora-with-optimized-reads-and-pgvector/) and documentation on how to [improve query performance for Aurora PostgreSQL with Aurora Optimized Reads](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraPostgreSQL.optimized.reads.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

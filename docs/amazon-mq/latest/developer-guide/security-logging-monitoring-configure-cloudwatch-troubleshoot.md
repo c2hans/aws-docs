@@ -16,3 +16,7 @@ In some cases, CloudWatch Logs might not always behave as expected. This section
 <a name="security-logging-monitoring-configure-cloudwatch-streams-do-not-appear"></a>
 
 [Configure a resource-based policy for Amazon MQ](configure-logging-monitoring-activemq.md#security-logging-monitoring-configure-cloudwatch-resource-permissions). This allows your broker to publish its logs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

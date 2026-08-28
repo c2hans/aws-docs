@@ -11,3 +11,7 @@ If the source includes captions in multiple languages, you can include multiple 
 + **Teletext Passthrough**. For teletext sources, if you specify teletext as the output, then all languages (pages) are included in the output. You can't strip out any languages. In fact, the entire teletext content is included in the output; you can't strip out any of the pages. Furthermore, teletext passthrough is supported only in TS outputs.
 + **Teletext In, Other Out**. For teletext source, if you are doing “teletext in, other out,” you can specify which languages (teletext pages) to extract and which languages to include in an output.
 + **Any Other Combination**. For all other sources, you always specify the language to extract from the input and the language to include in an output, regardless of the source format and output format.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -272,3 +272,7 @@ Hence, AWS DMS Serverless monitors the storage utilisation every 15 minutes. Onc
 Full-load operations restart from the beginning for any incomplete tables when you resume a previously stopped task.
 There is no impact on the DMS task performance during storage scaling event.
 There is no cooling period between two storage auto scaling events.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

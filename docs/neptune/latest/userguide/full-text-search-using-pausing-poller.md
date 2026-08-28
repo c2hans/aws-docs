@@ -7,3 +7,7 @@ source_url: https://docs.aws.amazon.com/neptune/latest/userguide/full-text-searc
 
 **Warning**
 Be careful when you disable the stream poller process\! Data loss can occur if the process is paused for longer than the stream expiry window. The default window is 7 days, but starting with engine version [1.2.0.0](engine-releases-1.2.0.0.md), you can set a custom stream expiry window up to a maximum of 90 days.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

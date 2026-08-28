@@ -24,3 +24,7 @@ By default, Elemental Live doesn't convert the color space (in the output) or ch
 + [The results of different types of conversions](color-space-conversion-results.md)
 + [Location of HDR fields on the web interface](hdr-location-of-fields-on-the-web-interface.md)
 + [Location of HDR fields in the XML](hdr-location-of-fields-in-the-xml.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

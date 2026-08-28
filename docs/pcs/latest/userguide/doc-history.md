@@ -87,3 +87,7 @@ The following table describes the important changes to the documentation for AWS
 | September 5, 2024 | Added a missing permission to the JSON in the managed policies page | This was a correction to the documentation only. The actual managed policy wasn't changed. For more information, see [AWS managed policies for AWS Parallel Computing Service](security-iam-awsmanpol.md). | Not applicable |
 | August 28, 2024 | Managed policies page added | For more information, see [AWS managed policies for AWS Parallel Computing Service](security-iam-awsmanpol.md). | Not applicable |
 | August 28, 2024 | AWS PCS release | Initial release of the AWS PCS user guide. | AWS SDK: 2024-08-28 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

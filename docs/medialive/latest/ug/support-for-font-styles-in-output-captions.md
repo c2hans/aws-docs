@@ -26,3 +26,7 @@ The procedures later in this chapter describe how to set up font styles. You mig
 | An Embedded Combination (Embedded, Embedded\+SCTE-20, SCTE-20\+Embedded) | WebVTT | You can set up to pass through color and position style information from the source to the output. Or you can set up the captions with no style data. |
 | Teletext | WebVTT | You can set up to pass through color and position style information from the source to the output. Or you can set up the captions with no style data. |
 | Any Other | Any Other | No control: the font style is always determined by the downstream player.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

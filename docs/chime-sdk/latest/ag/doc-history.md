@@ -23,3 +23,7 @@ The following table describes important changes to the *Amazon Chime SDK Adminis
 | [Updated emergency 911 calling](#doc-history) | We updated the emergency calling process. For more information, see [Setting up emergency calling](https://docs.aws.amazon.com/chime-sdk/latest/ag/set-up-emergency-calls.html). | August 4, 2022 |
 | [New service-linked role](#doc-history) | A new service-linked role enables developers to use media pipelines in Amazon Chime SDK meetings. For more information, see [AWS managed policy: AmazonChimeSDKMediaPipelinesServiceLinkedRolePolicy](https://docs.aws.amazon.com/chime-sdk/latest/ag/security_iam_id-based-policy-examples.html#media-pipeline-service-linked-role-policy). | April 26, 2022 |
 | [Amazon Chime SDK Administration Guide published](#doc-history) | The Amazon Chime SDK Administration Guide published. For changes before March 2022, see [Document history for Amazon Chime](https://docs.aws.amazon.com/chime/latest/ag/doc-history.html) in the *Amazon Chime Administrator Guide*. | March 24, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

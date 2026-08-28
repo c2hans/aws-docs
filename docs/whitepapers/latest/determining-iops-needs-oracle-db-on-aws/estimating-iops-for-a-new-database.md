@@ -10,3 +10,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/determining-iops-need
  If you are setting up a database for the first time on AWS and you don’t have any existing statistics, you can use an IOPS number based on the expected number of application transactions per second. Though the IOPS necessary per transaction can vary widely—based on the amount of data involved, the number of queries in a transaction, and the query complexity—generally, 30 IOPS per transaction is a good number to consider.
 
  For example, if you are expecting 100 transactions per second, you can start with 3,000 IOPS Amazon EBS volumes. Because the amount of data in a new database is usually small, changing the IOPS associated with Amazon EBS will be relatively simple whether your database is on Amazon RDS or Amazon EC2.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -215,3 +215,7 @@ Use this checklist to make sure you follow the steps required for migration:
   + Update `otaPal_CheckFileSignature` and `otaPal_ReadAndAssumeCertificate` function comments.
 + Update the [`CMakeLists.txt`](https://github.com/aws/amazon-freertos/pull/3208/commits/432e13fcb8dfbfeb6de25110a3d2ea14ccaf1b9a) file.
 + Update the IDE projects.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

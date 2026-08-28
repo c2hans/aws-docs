@@ -124,3 +124,7 @@ The date and time that the target group was last updated, specified in ISO-8601 
 
 `Status`  <a name="Status-fn::getatt"></a>
 The operation's status. You can retry the operation if the status is `CREATE_FAILED`. However, if you retry it while the status is `CREATE_IN_PROGRESS`, there is no change in the status.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

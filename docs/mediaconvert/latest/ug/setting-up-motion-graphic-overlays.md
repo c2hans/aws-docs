@@ -22,3 +22,7 @@ You can set up still graphic overlays that appear only on individual outputs. Fo
 1. For **Input**, specify your motion graphic file name. If you're using a series of .png files, provide the file name of the first image.
 
 1. Specify values for the other fields. For more information about these fields, choose the **Info** link on the console next to **Motion image inserter**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

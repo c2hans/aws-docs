@@ -59,3 +59,7 @@ The following are limitations when using scheduled scaling:
 + Application Auto Scaling doesn't provide second-level precision in schedule expressions. The finest resolution using a cron expression is 1 minute.
 + The scalable target can't be an Amazon MSK cluster. Scheduled scaling is not supported for Amazon MSK.
 + Console access to view, add, update, or remove scheduled actions on scalable resources depends on the resource that you use. For more information, see [AWS services that you can use with Application Auto Scaling](integrated-services-list.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

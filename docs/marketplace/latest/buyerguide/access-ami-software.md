@@ -57,3 +57,7 @@ The following IAM permissions are required in the IAM policy.
    The **Initiating Instance Launches** progress window appears.
 
 1. After the instance is initiated, go to the EC2 dashboard, and under **Instances**, see that the **Instance state** displays **Running**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

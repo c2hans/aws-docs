@@ -18,3 +18,7 @@ S3A Client-Side Encryption in EMR is inherently compatible with EMRFS Client-Sid
 + [Setup CSE-KMS](emr-s3a-cse-kms.md)
 + [Setup CSE-CUSTOM](emr-s3a-cse-custom.md)
 + [Properties for Amazon S3 client-side encryption with S3A](emr-encryption-s3a-properties.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

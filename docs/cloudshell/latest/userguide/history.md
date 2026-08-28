@@ -27,3 +27,7 @@ The following table describes important changes to the *AWS CloudShell User Guid
 | [Specifying AWS Regions](working-with-aws-cloudshell.md#environment-variaiables-regions) | Documentation on specifying default AWS Region for AWS CLI commands. | May 11, 2021 |
 | [Formatting in PDF and Kindle versions](#history) | Fixed image sizes and text in table cells. | March 10, 2021 |
 | [General availability (GA) release of AWS CloudShell in selected AWS Regions](#history) | AWS CloudShell is now generally available in the following AWS Regions: +  US East (Ohio) <br />+  US East (N. Virginia) <br />+  US West (Oregon) <br />+  Asia Pacific (Tokyo) <br />+  Europe (Ireland) <br />+  Asia Pacific (Mumbai) <br />+  Asia Pacific (Sydney) <br />+  Europe (Frankfurt)  | December 15, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

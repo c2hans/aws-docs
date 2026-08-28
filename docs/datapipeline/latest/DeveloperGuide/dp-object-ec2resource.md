@@ -149,3 +149,7 @@ The following example object launches an EC2 instance into a nondefault VPC, wit
 | @error | Error describing the ill-formed object. | String |
 | @pipelineId | ID of the pipeline to which this object belongs. | String |
 | @sphere | The place of an object in the lifecycle. Component objects give rise to instance objects, which execute attempt objects. | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

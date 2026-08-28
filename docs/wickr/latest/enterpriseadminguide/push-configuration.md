@@ -17,3 +17,7 @@ Push configuration entries supersede any connection information in a config file
 + **SSL Certificates:** The SSL certificate used during installation is here automatically.
 
 We recommend using intermediate certificates instead of a leaf.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

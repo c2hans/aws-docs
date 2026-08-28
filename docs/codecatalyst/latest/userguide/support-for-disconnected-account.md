@@ -19,3 +19,7 @@ While all builders can create support cases with Support for Amazon CodeCatalyst
 
 **Important**
 If you change the designated billing account for your space, your Support plan will still be accessible until the end of the month through the AWS Management Console only. You will need to repurchase Support on the updated billing account to continue accessing your previously created support cases in CodeCatalyst. We recommend waiting until you have resolved all of your support cases to change space billing accounts to avoid any impact to accessing your support cases through Support for Amazon CodeCatalyst.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

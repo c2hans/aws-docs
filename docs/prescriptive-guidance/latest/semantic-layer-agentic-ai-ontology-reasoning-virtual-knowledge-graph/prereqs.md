@@ -105,3 +105,7 @@ Note: some AWS services aren't available in all AWS Regions. For Region availabi
 
 **Note**
 This architecture is designed to be version-agnostic where possible, leveraging AWS managed services that automatically update and open standards that ensure long-term compatibility. Specific version requirements apply primarily to development tooling (Python 3.10\+ for AgentCore) and open-source components (Ontop 5.5.0\+).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

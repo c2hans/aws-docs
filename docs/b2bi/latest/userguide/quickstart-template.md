@@ -34,3 +34,7 @@ We provide a basic stack that you can use to quickly configure all the resources
 1. On the **Review and create** page review the details for the stack that you're creating, and then choose **Submit**.
 
 You can view the progress of your stack being creating in the CloudFormation console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS B2B Data Interchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query b2bi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -102,3 +102,7 @@ For organizations in GitHub Enterprise Server or GitLab self-managed, you don’
 ![Console screenshot showing app authorization page.](http://docs.aws.amazon.com/dtconsole/latest/userguide/images/connections-create-ghes-app-install.png)
 
 1. The connection page shows the created connection in an **Available** status.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

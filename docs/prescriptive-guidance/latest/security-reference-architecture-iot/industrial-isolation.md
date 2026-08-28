@@ -70,3 +70,7 @@ Design the OT or IIoT network architecture to align with NIST SP 800-82 guidance
 
 **Note**
 In some situations, such as those that involve critical infrastructure or highly regulated or segregated OT environments, or cases where there are requirements for strict separation between OT and IT teams with no common chains of command, you can deploy a separate AWS organization with a landing zone for IoT, IIoT, or OT workloads. In this deployment model, you can configure selective network connectivity between the two separate AWS organizations. However, this model duplicates effort in identity and access management, organization management, security configuration, and logging and monitoring activities, and should be considered only if you can't meet the requirements by using a single AWS organization with separate or dedicated OUs for IoT, IIoT, or OT workloads.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

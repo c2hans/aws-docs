@@ -55,3 +55,7 @@ Every service in the AWS Mobile SDK for .NET and Xamarin has a separate develope
 <a name="other-helpful-links"></a>
 +  [AWS Glossary of Terms](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html)
 +  [About AWS Credentials](https://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mobile SDK for Xamarin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mobile` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

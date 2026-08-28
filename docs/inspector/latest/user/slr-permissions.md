@@ -32,3 +32,7 @@ The permissions policy for the role, which is named [`AmazonInspector2ServiceRol
  Amazon Inspector no longer uses CodeGuru to perform Lambda scans. AWS will discontinue support for CodeGuru on November 20, 2025. For more information, see [End of support for CodeGuru Security](https://docs.aws.amazon.com/codeguru/latest/security-ug/end-of-support.html). Amazon Inspector now uses Amazon Q to perform Lambda scans and does not require the permissions described in this section.
 
  To review the permissions for this policy, see [AmazonInspector2ServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2ServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

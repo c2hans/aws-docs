@@ -31,3 +31,7 @@ The following table describes quotas within AWS Elemental MediaPackage for VOD c
 | Request Rates per Packaging Configuration |  +  Media segments output: 600 requests per second <br />+ Manifests output: 300 requests per second The per Packaging Configuration origination request rate quotas are indicative only and based on typical traffic patterns when using a properly configured CDN. The request rate quotas may be lower under certain conditions like misconfigured CDNs or players generating abnormal levels of origin requests with unique HTTP headers values, or unique query strings values appended to the playback URLs.  |
 | REST API Requests |  +  Steady state: 5 requests per second <br />+  Bursting: 50 requests per second   |
 | Tracks per Ingest Stream | 10<br />The maximum number of tracks (audio, video, subtitle, etc.) per stream that you can ingest. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

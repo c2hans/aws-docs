@@ -1030,3 +1030,7 @@ This can occur due to multiple known issues or limitations, They are:
   + Supplemental logging not properly enabled on Oracle tables.
   + Oracle table created with long object names (over 30 bytes) , Hence object names could be table or column name.
   + Replication from Oracle application containers PDB.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

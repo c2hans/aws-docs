@@ -38,3 +38,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 +  [AWS Well-Architected Generative AI Lens - Governance](https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-lens/governance.html)
 +  [IAM Best Practices for AI Services](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html)
 +  [Amazon SageMaker AI Model Governance](https://docs.aws.amazon.com/sagemaker/latest/dg/model-governance.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

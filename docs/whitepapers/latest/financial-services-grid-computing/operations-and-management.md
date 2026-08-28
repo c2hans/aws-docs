@@ -38,3 +38,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
  The *pay as you go* pricing model of AWS empowers HPC managers and their end customers to realize the benefits from the optimization of the system or its use. AWS tools such as resource tagging and the [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) can be combined to provide rich cost data and to build reports that highlight the sources of cost within the system. Tags can include details of report types, cost centers, or other information pertinent to the client organization. There’s also an [AWS Budgets](https://aws.amazon.com/aws-cost-management/aws-budgets/) tool that can be used to create reports and alerts according to consumption.
 
  When you combine detailed infrastructure costs with usage statistics, you can create granular cost attribution reports. Some trades are particularly demanding of HPC capacity, to the extent that the business might decide to exit the trade instead of continuing to support the cost.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

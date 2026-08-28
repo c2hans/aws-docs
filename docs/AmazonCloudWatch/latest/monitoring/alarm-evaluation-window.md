@@ -89,3 +89,7 @@ An alarm with a wall clock window is evaluated at the same frequency as an alarm
 For example, an alarm with a 1-hour period and a wall clock window evaluates every minute. Each evaluation looks at the data for the most recently completed clock hour. As a new clock hour begins, the window advances to the new hour boundary.
 
 To create a metric alarm that uses a wall clock window, see [Create a metric alarm that uses a wall clock evaluation window](Create_WallClock_Alarm.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ We recommend that you store the final extracted data as a JSON file in Amazon Si
 Use the following two best practices to ensure a successful data storage phase:
 + Make sure that you store the final JSON file on Amazon S3 in a different output folder and use a name based on the PDF file type.
 + DynamoDB uses a primary key to uniquely identify each item in a table. The primary key can be a single key (for example, a partition key) or a composite one (for example, a partition key and a sort key). For this solution's primary key, we recommend that you use either a unique PDF file identifier (for example, the PDF file name) as the partition key or a combination of two identifiers (for example, date and warehouse name) as the partition key and sort key. For more information about this, see [Core components of Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/HowItWorks.CoreComponents.html) in the Amazon DynamoDB documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

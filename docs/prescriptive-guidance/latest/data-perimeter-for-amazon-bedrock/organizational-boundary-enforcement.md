@@ -41,3 +41,7 @@ Replace `o-1234567890` with your actual AWS organization ID in all policy exampl
 + **RestrictToOrganization** - Denies all Amazon Bedrock operations from principals outside your AWS organization, creating a foundational security boundary that prevents external access even with valid credentials.
 
 The null condition is crucial because it prevents bypass attempts where the `aws:PrincipalOrgID` key might be absent. This policy should be applied as a service control policy (SCP) at the organization level to ensure consistent enforcement across all accounts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

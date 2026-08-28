@@ -90,3 +90,7 @@ For information about troubleshooting Batch Replication, see [Batch Replication 
 <a name="batch-replication-tutorial"></a>
 
 To learn more about how to use Batch Replication, see [Create a Batch Replication job for new replication rules or destinations](s3-batch-replication-new-config.md) and [Create a Batch Replication job for existing replication rules](s3-batch-replication-existing-config.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

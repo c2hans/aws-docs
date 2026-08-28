@@ -22,7 +22,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Type" : "AWS::Glue::Connection",
   "Properties" : {
       "[CatalogId](#cfn-glue-connection-catalogid)" : {{String}},
-      "[ConnectionInput](#cfn-glue-connection-connectioninput)" : {{ConnectionInput}}
+      "[ConnectionInput](#cfn-glue-connection-connectioninput)" : {{ConnectionInput}},
+      "[Tags](#cfn-glue-connection-tags)" : {{[ [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html), ... ]}}
     }
 }
 ```
@@ -36,6 +37,8 @@ Properties:
   [CatalogId](#cfn-glue-connection-catalogid): {{String}}
   [ConnectionInput](#cfn-glue-connection-connectioninput): {{
     ConnectionInput}}
+  [Tags](#cfn-glue-connection-tags): {{
+    - [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)}}
 ```
 
 ## Properties
@@ -54,6 +57,12 @@ The connection that you want to create.
 *Type*: [ConnectionInput](aws-properties-glue-connection-connectioninput.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`Tags`  <a name="cfn-glue-connection-tags"></a>
+Property description not available.
+*Required*: No
+*Type*: Array of [`Tag`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-properties-resource-tags.html)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 ## Return values
 <a name="aws-resource-glue-connection-return-values"></a>
 
@@ -66,3 +75,13 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 
 ### Fn::GetAtt
 <a name="aws-resource-glue-connection-return-values-fn--getatt"></a>
+
+####
+<a name="aws-resource-glue-connection-return-values-fn--getatt-fn--getatt"></a>
+
+`Name`  <a name="Name-fn::getatt"></a>
+The name of the connection.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

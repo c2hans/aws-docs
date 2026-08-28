@@ -13,3 +13,7 @@ While customers have flexibility in performing transports, it’s recommended to
 + [Change Management for RISE with SAP](rise-change-management-for-rise.md)
 + [Change Management for AWS Services](rise-change-management-for-aws.md)
 + [Change Management with Partner Solutions](rise-change-management-partner.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

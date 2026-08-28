@@ -72,3 +72,7 @@ The following sections describe the rules and best practices for using AWS Clien
 + You can't establish a VPN connection from a computer if there are multiple users logged into the operating system.
 + Client-to-client communication is not supported for IPv6 clients. If an IPv6 client tries to communicate with another IPv6 client, the traffic will be dropped.
 + IPv6 and dual-stack endpoints require that user devices and internet service providers (ISPs) support the corresponding IP configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

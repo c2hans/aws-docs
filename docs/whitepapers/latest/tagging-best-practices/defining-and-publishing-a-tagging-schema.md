@@ -30,3 +30,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 |  Compliance  | example-inc:compliance:framework  |  Identifies the compliance framework the workload is subject to  | PCI-DSS, HIPAA  |  N  | All  | Prod  | Mandatory  |
 
  After the tagging schema is defined, manage the schema in a version-controlled repository that is made accessible to all the relevant stakeholders for easy reference and trackable updates. This approach improves eﬃciency and allows for agility.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ If you would like to submit a policy to be included in this reference guide, use
 <a name="reference_policies_condition_example_library_multi-valued"></a>
 + [Deny policy with condition set operator ForAllValues](reference_policies_condition_examples-multi-valued-context-keys.md#reference_policies_condition_examples-multi-valued-context-keys-1)
 + [Deny policy with condition set operator ForAnyValue](reference_policies_condition_examples-multi-valued-context-keys.md#reference_policies_condition_examples-multi-valued-context-keys-2)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

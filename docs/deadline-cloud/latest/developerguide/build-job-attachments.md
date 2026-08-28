@@ -14,3 +14,7 @@ You must use job attachments when running jobs on [service-managed fleets](https
  The job attachments examples use the farm, fleet, queues, and storage profiles configurations from [Sample project infrastructure](sample-project-infrastructure.md) and [Storage profiles and path mapping](storage-profiles-and-path-mapping.md). You should go through those sections before this one.
 
 In the following examples, you use a sample job bundle as a starting point, then modify it to explore job attachment's functionality. Job bundles are the best way for your jobs to use job attachments. They combine an [Open Job Description](https://github.com/OpenJobDescription/openjd-specifications/wiki) job template in a directory with additional files that list the files and directories required by jobs using the job bundle. For more information about job bundles, see [Open Job Description (OpenJD) templates for Deadline Cloud](build-job-bundle.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

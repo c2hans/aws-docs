@@ -176,3 +176,7 @@ The values for these fields should match the values defined in the [FreeRTOS Por
 (Optional) This label is used for the PKCS \#11 label of the code verification key. If your device has PKCS \#11 storage support of the JITP certificate, code verification key, and root certificate, provide this label. When `pkcs11JITPCodeVerifyRootCertSupport` in `device.json` is set to **Yes**, this label must be provided.
 ** `pkcs11LabelJITPCertificate` **
 (Optional) This label is used for the PKCS \#11 label of the JITP certificate. If your device has PKCS \#11 storage support of the JITP certificate, code verification key, and root certificate, provide this label. When `pkcs11JITPCodeVerifyRootCertSupport` in `device.json` is set to **Yes**, this label must be provided.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

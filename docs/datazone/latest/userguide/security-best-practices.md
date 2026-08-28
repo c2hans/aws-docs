@@ -41,3 +41,7 @@ Using the information collected by CloudTrail, you can determine the request tha
 <a name="security-best-practices-ram"></a>
 
 Associating your AWS accounts with Amazon DataZone domains enables domain users to publish and consume data from these AWS accounts. Amazon DataZone uses AWS Resource Access Manager (RAM) to manage cross-account access. For more information, see [Associated accounts in Amazon DataZone](working-with-associated-accounts.md) and [Security in AWS RAM](https://docs.aws.amazon.com/ram/latest/userguide/security.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

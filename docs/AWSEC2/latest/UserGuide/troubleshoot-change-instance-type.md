@@ -31,3 +31,7 @@ If your instance is in a [cluster placement group](placement-strategies.md#place
 **Possible cause: Public IPv4 address is released**
 When you change the instance type, you must first stop the instance. When you stop an instance, we release the public IPv4 address and give your instance a new public IPv4 address.
 To retain the public IPv4 address between instance stops and starts, we recommend that you use an Elastic IP address. For more information, see [Elastic IP addresses](elastic-ip-addresses-eip.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

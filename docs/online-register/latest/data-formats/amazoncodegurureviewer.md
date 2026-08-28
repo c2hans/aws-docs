@@ -20,3 +20,7 @@ Amazon CodeGuru Reviewer provides the following APIs for data retrieval.
 | <a name="codeguru-reviewer-ListRepositoryAssociations"></a>[ListRepositoryAssociations](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_ListRepositoryAssociations.html) | List summary of repository associations | List |
 | <a name="codeguru-reviewer-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/API_ListTagsForResource.html) | List the resource attached to a associated repository ARN | List |
 | <a name="codeguru-reviewer-ListThirdPartyRepositories"></a>[ListThirdPartyRepositories](https://docs.aws.amazon.com/codeguru/latest/reviewer-api/Welcome.html) | List 3rd party providers repositories in console | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

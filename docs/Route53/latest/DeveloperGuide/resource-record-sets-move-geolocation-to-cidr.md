@@ -20,3 +20,7 @@ If you use geolocation or geoproximity routing and specific clients are consiste
 1. Create IP-based routing records and a default record that points to your recreated geolocation routing record set.
 **IP-based routing records**
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-move-geolocation-to-cidr.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

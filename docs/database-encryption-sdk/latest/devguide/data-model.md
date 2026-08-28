@@ -147,3 +147,7 @@ actions = AttributeActions(
 If you no longer need an attribute in items that have been encrypted with the DynamoDB Encryption Client, you can stop using the attribute. However, do not delete or change the action for that attribute. If you do, and then encounter an item with that attribute, the signature calculated for the item will not match the original signature, and the signature validation will fail.
 
 Although you might be tempted to remove all traces of the attribute from your code, add a comment that the item is no longer used instead of deleting it. Even if you do a full table scan to delete all instances of the attribute, an encrypted item with that attribute might be cached or in process somewhere in your configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

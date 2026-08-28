@@ -38,3 +38,7 @@ The MLOps maturity journey defines the necessary MLOps capabilities made availab
 1. **Scalable** – In this stage, you templatize and productionize multiple ML solutions. Multiple teams and ML use cases start to adopt MLOps during the end-to-end model building process. To achieve scalability in this stage, you also increase the number of templates in your template library through contributions from a wider base of data scientists, reduce time to value from idea to production model for more teams across the organization, and iterate as you scale.
 
 For more information on the MLOps maturity models, see [MLOps foundation roadmap for enterprises with Amazon SageMaker](https://aws.amazon.com/blogs/machine-learning/mlops-foundation-roadmap-for-enterprises-with-amazon-sagemaker/) on the AWS Machine Learning Blog.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

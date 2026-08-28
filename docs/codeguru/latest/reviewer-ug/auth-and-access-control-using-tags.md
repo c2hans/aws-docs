@@ -27,3 +27,7 @@ You can create a policy that allows or denies actions on CodeGuru Reviewer code 
 
 **Example 3: Limit all possible CodeGuru Reviewer actions to associated repositories based on resource tags**
 You can create policies that selectively allow CodeGuru Reviewer actions on all associated repositories that are not tagged with specific tags. For example, the following policy allows you to associate, disassociate, and view the details of associated repositories that are not tagged with the specified tags:
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

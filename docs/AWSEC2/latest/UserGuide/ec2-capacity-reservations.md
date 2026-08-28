@@ -11,7 +11,7 @@ You can create a Capacity Reservation at any time, and you can choose when it st
 + If you request a **Capacity Reservation for immediate use**, the Capacity Reservation becomes available for use immediately and there is no term commitment. You can modify the Capacity Reservation at any time, and you can cancel it at any time to release the reserved capacity and to stop incurring charges.
 + If you request a **future-dated Capacity Reservation**, you specify when you need the capacity and how long you commit to keeping it. At the specified future date, the Capacity Reservation becomes available for use and billing starts. During the commitment duration, you can't decrease the instance count or commitment duration below your initial commitment. You can cancel the Capacity Reservation, but a cancellation charge might apply depending on when you cancel. After the commitment duration elapses, you can modify the Capacity Reservation in any way or cancel it without charge.
 
-Capacity Reservations can only be used by instances that match their attributes. By default, Capacity Reservations automatically match new instances and running instances that have matching attributes (instance type, platform, Availability Zone, and tenancy). This means that any instance with matching attributes automatically runs in the Capacity Reservation. However, you can also target a Capacity Reservation for specific workloads. This allows you to explicitly control which instances are allowed to run in that reserved capacity. You can also specify that instances will only run in a Capacity Reservation or Capacity Reservation resource group.
+Capacity Reservations can only be used by instances that match their attributes. By default, Capacity Reservations automatically match new instances and running instances that have matching attributes (instance type, platform, Availability Zone, and tenancy). This means that any instance with matching attributes automatically runs in the Capacity Reservation. However, you can also target a Capacity Reservation for specific workloads. This allows you to explicitly control which instances are allowed to run in that reserved capacity. You can also specify that instances will only run in a Capacity Reservation or Capacity Reservation Resource Group.
 
 **Important**
 Future-dated Capacity Reservations are for helping you launch and cover incremental instances, and not to cover existing running instances. If you need to cover existing running instances, use Capacity Reservations that start immediately instead.
@@ -21,7 +21,6 @@ All supported Amazon EC2 instances with matching attributes, that is instance ty
 + Amazon ECS
 + Amazon EKS
 + Amazon EMR
-+ Amazon SageMaker AI
 + AWS Batch
 + AWS Elastic Beanstalk
 + AWS ParallelCluster
@@ -43,7 +42,6 @@ All supported Amazon EC2 instances with matching attributes, that is instance ty
 + [Split off capacity from an existing Capacity Reservation](capacity-reservations-split.md)
 + [Cancel a Capacity Reservation](capacity-reservations-release.md)
 + [Use Capacity Reservations with placement groups](cr-cpg.md)
-+ [Capacity Reservation groups](create-cr-group.md)
 + [Capacity Reservations in Local Zones](capacity-reservations-localzones.md)
 + [Capacity Reservations in Wavelength Zones](capacity-reservations-wavelengthzones.md)
 + [Capacity Reservations on AWS Outposts](capacity-reservations-outposts.md)
@@ -178,3 +176,7 @@ Before you create Capacity Reservations, take note of the following limitations 
 + Capacity Reservations do not ensure that a hibernated instance can resume after you try to start it.
 + You can request future-dated Capacity Reservations for an instance count with a minimum of 32 vCPUs. For example, if you request a future-dated Capacity Reservation for `m5.xlarge` instances, you must request at least 8 instances (*8 \* m5.xlarge = 32 vCPUs*).
 + You can request future-dated Capacity Reservations for instance types in the following families: C, G, I, M, R, T, U, and X.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

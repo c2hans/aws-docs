@@ -18,3 +18,7 @@ However, if you want to publish assets and subscribe to assets from an AWS Glue 
 Amazon DataZone supports the AWS Lake Formation Hybrid mode. Lake Formation hybrid mode enables you to start managing permissions on you AWS Glue databases and tables through Lake Formation, while continuing to maintain any existing IAM permissions on these tables and databases. For more information, see [Amazon DataZone integration with AWS Lake Formation hybrid mode](hybrid-mode.md)
 
 For more information, see [Troubleshooting AWS Lake Formation permissions for Amazon DataZone](troubleshooting-datazone.md#troubleshooting-lake-formation-permissions).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

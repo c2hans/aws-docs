@@ -60,3 +60,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 +  [Machine Learning at the Edge](https://www.youtube.com/watch?v=EAz-qAL5z2U)
 +  [Getting Started Using Machine Learning at the Edge](https://pages.awscloud.com/Getting-Started-Using-Machine-Learning-at-the-Edge_2020_0202-IOT_OD.html)
 +  [AWS IoT Greengrass and Machine Learning at the Edge](https://www.youtube.com/watch?v=keaq6sy46ek)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

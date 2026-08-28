@@ -23,3 +23,7 @@ In general, the AWS Windows AMIs are configured with the default settings used 
 With the Windows fast launch feature, you can configure pre-provisioned snapshots to launch instances up to 65% faster. For more information, see [Configure Windows fast launch for your Windows Server AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/win-ami-config-fast-launch.html) in the *Amazon EC2 User Guide*.
 
 To view changes to each release of the AWS Windows AMIs, including SQL Server updates, see the [AWS Windows AMI version history](ec2-windows-ami-version-history.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

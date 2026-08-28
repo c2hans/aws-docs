@@ -39,3 +39,7 @@ If you close your WorkSpaces window, your local browser window will also close, 
 If you accidentally close your local browser CCP window or if it crashes, you can restart it. Go to the menu bar, select **Add-in**, and then select the administrator-given CCP name.
 
 For more information about using Amazon Connect, go to the [Agent training guide](https://docs.aws.amazon.com/connect/latest/adminguide/agent-user-guide.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

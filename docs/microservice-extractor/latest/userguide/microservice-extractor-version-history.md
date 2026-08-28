@@ -38,3 +38,7 @@ The following table describes the released versions of AWS Microservice Extracto
 | 1.1.0 |  +  Provided a way to avoid long path errors when onboarding applications. <br />+  Fixed intermittent, uncaught Java exceptions.   | December 27, 2021 |
 | 1.0.1 |  +  Mitigated Apache Log4j security vulnerability (CVE-2021-44228).   | December 13, 2021 |
 | 1.0.0 | Initial release | November 30, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

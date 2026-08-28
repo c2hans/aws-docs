@@ -32,3 +32,7 @@ Not all applications support all integration types. Available options depend on 
 + [Integration-specific guides](integration-guides.md)
 + [Bring Your Own Amazon Q Business Index (BYOI)](quick-byoa.md)
 + [Bring your own Amazon Bedrock managed knowledge base](quick-byo-bedrock-kb.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

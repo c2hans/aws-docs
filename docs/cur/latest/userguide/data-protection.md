@@ -16,3 +16,7 @@ Data Exports delivers your billing and cost management data to an Amazon S3 buck
 <a name="s3-data-encryption"></a>
 
 By default, your data exports are encrypted using server-side encryption with Amazon S3 managed keys (SSE-S3). If you want to use Amazon Key Management Service (KMS) encryption (SSE-KMS) to encrypt your exports, you need to trigger encryption with KMS after the export has been delivered. For more information, see [Setting default server-side encryption behavior for Amazon S3 buckets](https://docs.aws.amazon.com/AmazonS3/latest/userguide/bucket-encryption.html) in the *Amazon S3 User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

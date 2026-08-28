@@ -723,3 +723,7 @@ var nestedStack = mainTemplate.GetNestedStack("NestedStack").Stack;
 ------
 
 The `getNestedStack()` method returns an [`IncludedNestedStack`](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_cloudformation-include.IncludedNestedStack.html) instance, from which you can access the AWS CDK [`NestedStack`](https://docs.aws.amazon.com/cdk/api/v1/docs/@aws-cdk_core.NestedStack.html) instance via the `stack` property (as shown in the example) or the original CloudFormation template object via `includedTemplate`, from which you can load resources and other CloudFormation elements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

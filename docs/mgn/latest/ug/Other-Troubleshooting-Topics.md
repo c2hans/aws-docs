@@ -24,7 +24,7 @@ Use the information in this section to help you with other troubleshooting.
 
 AWS Transform MGN can be re-initialized in case of any issues with IAM service roles
 
-To re-initialize the MGN service, please follow these steps:
+To re-initialize the MGN service, follow these steps:
 + Open the AWS Transform MGN Console and navigate to the correct region you are migrating to.
 + In the left navigation pane, select "Settings". Under "Replication template," choose "Reinitialize service permissions" and then choose "Confirm."
 
@@ -58,11 +58,11 @@ Potential solutions:
 + Make sure that AWS MGN services are up and running.
 + Make sure that TCP Port 1500 is not blocked outbound from the source server to the replication server.
 + If the MAC address of the Source had changed, that would require a reinstallation of the AWS Replication Agent.
-+ If the source server was rebooted recently or the AWS Transform MGN were restarted, the disks are re-read after this and until its finished, the Lag will grow.
++ If the source server was rebooted recently or the AWS Transform MGN was restarted, the disks are re-read after this and until it's finished, the Lag will grow.
 + If the source server had a spike of write operations, the lag will grow until AWS Transform MGN manages to flush all the written data to the test or cutover instance replication server.
 + Make sure you have selected the right replication instance and EBS type by using the following runbook: [AWSSupport-CalculateEBSPerformanceMetrics automation runbook](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-calculate-ebs-performance-metrics.html) . The replication instance ID, which is used as an input parameter for the runbook, is available under the source server replication dashboard.
 
-To learn more about replication lag troubleshooting, please refer [AWS Support knowlege center article](https://repost.aws/knowledge-center/mgn-windows-fix-replication-lag).
+To learn more about replication lag troubleshooting, refer to this [AWS Support Knowledge Center article](https://repost.aws/knowledge-center/mgn-windows-fix-replication-lag).
 
 ## Windows Driver changes
 <a name="Windows-Drive-Changes"></a>
@@ -118,3 +118,7 @@ UEFI to UEFI boot mode is not supported with agentless replication.
 If you get the error `Source server boot mode is UEFI which is inconsistent with target instance.` It might be because
 + The OS uses an old UEFI format from kernel 3.8 or earlier. If so, set the source server boot mode to 'Legacy BIOS'.
 + You are performing UEFI to UEFI boot mode with agentless replication.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -454,3 +454,7 @@ The `reasoning_effort` parameter controls the reasoning behavior for reasoning-c
 **Resolution**:
 + Verify your model type is `amazon.nova-2-lite-v1:0:256k`
 + If using a different model, either switch to a reasoning-capable model or remove the `reasoning_effort` parameter from your recipe
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

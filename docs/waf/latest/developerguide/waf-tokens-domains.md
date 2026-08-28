@@ -45,3 +45,7 @@ The domain that AWS WAF sets in a token is determined by the type of challenge s
 
   For more information, see the `WAFConfiguration` `domainName` setting at [AWS WAF mobile SDK specification](waf-mobile-sdk-specification.md).
 + **Challenge action** – If you specify a token domain list in the protection pack (web ACL), AWS WAF sets the token domain to one that matches the host domain and is the shortest, from among the host domain and the domains in the list. For example, if the host domain is `api.example.com` and the token domain list has `example.com`, AWS WAF uses `example.com` in the token, because it matches the host domain and is shorter. If you don't provide a token domain list in the protection pack (web ACL), AWS WAF sets the domain to the host domain of the protected resource.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

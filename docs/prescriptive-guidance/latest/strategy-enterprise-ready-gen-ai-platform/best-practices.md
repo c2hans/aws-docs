@@ -88,3 +88,7 @@ For successful generative AI adoption across the enterprise, consider the follow
 + Establish clear mechanisms for knowledge sharing and cross-team collaboration.
 
 Through careful attention to these best practices and recommendations, organizations can build a strong foundation for sustainable generative AI adoption while maintaining security, efficiency, and ethical considerations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

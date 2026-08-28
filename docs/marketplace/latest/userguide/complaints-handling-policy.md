@@ -43,3 +43,7 @@ If you aren't satisfied with our response, you may choose to escalate your compl
 + Online Dispute Resolution
 
   If you opened your account online in the EU, you may also have the option to refer your complaint to the CSSF by using the Online Dispute Resolution platform. This option is available because Amazon Payments Europe S.C.A. provides financial services and the CSSF is the authority responsible for its licence. For more information, see the [Online Dispute Resolution](https://ec.europa.eu/consumers/odr/) platform on the European Commission website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

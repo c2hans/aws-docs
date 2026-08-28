@@ -38,3 +38,7 @@ To make match backfill requests from your game server, complete the following ta
 1. **Track the status of a backfill request.** Amazon GameLift Servers updates your game server about the status of backfill requests using the Server SDK callback function `onUpdateGameSession` (see [ Initialize the server process](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift-sdk-server-api.html#gamelift-sdk-server-initialize)). Add code to handle the status messages—as well as updated game session objects as a result of successful backfill requests—at [Update match data on the game server](match-backfill-server-data.md).
 
    A matchmaker can process only one match backfill request from a game session at a time. If you need to cancel a request, call [ StopMatchBackfill()](https://docs.aws.amazon.com/gamelift/latest/developerguide/integration-server-sdk-cpp-ref-actions.html#integration-server-sdk-cpp-ref-stopmatchbackfill). If you need to change a request, call `StopMatchBackfill` and then submit an updated request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

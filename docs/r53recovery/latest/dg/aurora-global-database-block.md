@@ -42,16 +42,6 @@ This block supports both graceful and ungraceful execution modes. Ungraceful set
 
 For more information about Aurora Global Database disaster recovery, including failover and switchover, see [ Using switchover or failover in Amazon Aurora global databases](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-global-database-disaster-recovery.html) in the Amazon Aurora User Guide.
 
-## What is evaluated as part of plan evaluation
-<a name="aurora-global-database-block-eval"></a>
+## See also
 
-When Region switch evaluates your plan, Region switch performs several checks on your Aurora execution block configuration and permissions. Region switch verifies that the following is correct:
-+ The Aurora global cluster specified in the configuration exists.
-+ There are Aurora DB clusters in both the source and destination Regions.
-+ The source and destination DB clusters are in a state that allows Global Database switchover.
-+ There are DB instances in both the source and destination clusters
-+ The global cluster engine versions for the switchover action are compatible. This includes verifying that the clusters are on the same Major, Minor, and patch versions, with some exceptions that are listed in the Aurora documentation.
-
-Region switch also validates that the plan's IAM role has the required permissions for Aurora failover and switchover. For more information about the required permissions for Region switch execution blocks, see [Identity-based policy examples for Region switch in ARC](security_iam_id-based-policy-examples-region-switch.md).
-
-The correct IAM permissions are essential for the proper functioning of the Aurora execution block. If any of these validations fail, Region switch returns warnings that there are issues, and provides specific error messages to help you resolve the permissions or configuration issues. This ensures that your plan has the necessary access to manage and interact with the Aurora during when this step runs during a plan execution.
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

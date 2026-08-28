@@ -13,4 +13,8 @@ The API actions operate on AWS PCS resources. A *resource* is an entity in AWS t
 
 An AWS PCS *compute node* is an Amazon EC2 instance. You don't launch compute nodes directly. AWS PCS uses configuration information that you provide to launch compute nodes in your AWS account. You receive billing charges for your running compute nodes. AWS PCS automatically terminates your compute nodes when you delete the AWS PCS resources related to those compute nodes.
 
-This document was last published on August 24, 2026.
+This document was last published on August 28, 2026.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

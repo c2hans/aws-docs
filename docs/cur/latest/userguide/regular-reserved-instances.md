@@ -127,3 +127,7 @@ For AWS Organizations with multiple accounts, to see which accounts purchased or
 **Note**
 A Reserved Instance is a billing subscription and not a resource like an Amazon EC2 instance. Because of this, Reserved Instances that are tagged don't populate line items like a tagged resource. For line items with **DiscountedUsage**, tags populate for the tagged resources and not for the Reserved Instance.
 To identify costs associated with a specific Reserved Instance lease, you can filter **Fee** or **RI fee** line items by the Reserved Instance ARN, which is the lease ID. To organize your cost data for Reserved Instances, consider using AWS Cost Categories. For more information, see [Managing your costs with AWS Cost Categories](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/manage-cost-categories.html) in the *AWS Billing User Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

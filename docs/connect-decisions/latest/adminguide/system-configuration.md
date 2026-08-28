@@ -21,3 +21,7 @@ The following pages will guide you through configuring settings in Amazon Connec
 + **Access Control Filter Toggle**: Configure how the system filters insights and recommendations based on user access permissions, at both the instance level and the individual user level
 + **Configuring Connections to your ERP**: Connect Amazon Connect Decisions to your ERP and other external systems to enable data exchange and support recommended actions
 + **Configuring Action Settings**: Define how the system handles and executes recommended actions, including the parameters and constraints that govern action behavior
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

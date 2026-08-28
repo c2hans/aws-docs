@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 +  [AWS X-Ray: Service Map Analysis](https://docs.aws.amazon.com/xray/latest/devguide/xray-concepts.html)
 +  [Best Practices for Tagging AWS Resources](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/what-are-tags.html)
 +  [AWS Auto Scaling - application scaling](https://aws.amazon.com/autoscaling/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

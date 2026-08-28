@@ -62,3 +62,7 @@ You can include the placeholder two times maximum. If used more than two times, 
 
 **Note**
 The `{{amazonSESUnsubscribeUrl}}` placeholder can only be used if [`ListManagementOptions`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_ListManagementOptions.html) is specified as a header while using the [`SendEmail`](https://docs.aws.amazon.com/ses/latest/APIReference-V2/API_SendEmail.html) operation or X-SES-LIST-MANAGEMENT-OPTIONS is specified as a header while using the SMTP interface. (Not to be confused with the `List-Unsubscribe` or `List-Unsubscribe-Post` headers which are not dependent on `ListManagementOptions` and can be used by themselves.)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

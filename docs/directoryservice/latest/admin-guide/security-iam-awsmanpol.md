@@ -98,3 +98,7 @@ View details about updates to IAM and AWS managed policies since the service beg
 | [AWS managed policy: AWSDirectoryServiceDataReadOnlyAccess](#security-iam-awsmanpol-AWSDirectoryServiceDataReadOnlyAccess) – New policy | Directory Service added a new policy to allow a user or group access to view and search AD users, members, and groups. | September 17, 2024 |
 | [AWS managed policy: AWSDirectoryServiceDataFullAccess](#security-iam-awsmanpol-AWSDirectoryServiceDataFullAccess) – New policy | Directory Service added a new policy to allow a user or group access to built-in object management with Directory Service Data to create, manage, and view AD users, members, and groups. | September 17, 2024 |
 | Directory Service started tracking changes | Directory Service started tracking changes for its AWS managed policies. | September 17, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

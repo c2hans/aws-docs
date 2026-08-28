@@ -34,3 +34,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
  [Cisco](https://aws.amazon.com/marketplace/solutions/control-tower/network-orchestration/#Cisco) – Cisco SD-WAN offers automated connectivity provisioning to the most optimal AWS entry point for your data center, branch, and hub locations.
 
  [Palo Alto Networks – Prisma SD-WAN](https://partners.amazonaws.com/partners/001E0000013FeQXIA0/Palo Alto Networks) (formerly CloudGenix SD-WAN) is a cloud-delivered service that implements application-defined, autonomous SD-WAN to help you secure and connect your branch offices, data centers, and large campus sites without increasing cost and complexity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

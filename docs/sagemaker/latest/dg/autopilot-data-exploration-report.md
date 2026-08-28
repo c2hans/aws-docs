@@ -135,3 +135,7 @@ Autopilot calculates several statistics on the categorical values in columns tha
 Autopilot calculates several standard statistics on the numerical values in columns that contain them. The following image depicts these statistics, including the mean, median, minimum and maximum values, and the percentages of numerical types and of outlier values.
 
 ![Autopilot data report statistics on columns with numerical values.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/autopilot/autopilot-data-report-data-descriptive-statistics.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

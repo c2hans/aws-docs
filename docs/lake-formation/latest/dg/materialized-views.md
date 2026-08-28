@@ -528,3 +528,7 @@ Use the GetMaterializedViewRefreshTaskRun API to retrieve detailed error message
 + Materialized views are eventually consistent with base tables. During the refresh window, queries directly accessing the materialized view may return outdated data. For immediate access to current data, execute a manual refresh.
 + The minimum automatic refresh interval is one hour. For use cases requiring more frequent updates, execute manual refreshes programmatically using the `REFRESH MATERIALIZED VIEW` command.
 + Query rewrite prioritizes correctness over performance. If a materialized view is stale or cannot satisfy query requirements accurately, Spark engines execute the original query against base tables.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

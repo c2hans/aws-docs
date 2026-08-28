@@ -63,3 +63,7 @@ Follow this procedure for each role.
    + The users who can work with this workflow and therefore need the ability to attach this trust policy to the channels that they create and edit.
 
    You will need this list when you [set up trusted entity access](requirements-medialiverole-complex-permissions.md) for users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

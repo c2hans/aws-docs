@@ -126,3 +126,7 @@ You download and upload starting backlog projections on the **Import Data** tab.
 ![Upload data option for Starting backlog projections.](http://docs.aws.amazon.com/connect/latest/adminguide/images/wfm-capacity-planning-backlog-upload.png)
 
    Each upload merges with your existing overrides at the weekday, queue, and channel level. For more information, see [How overrides work](#how-backlog-overrides-work).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

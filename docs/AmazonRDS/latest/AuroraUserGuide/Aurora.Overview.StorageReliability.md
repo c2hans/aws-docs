@@ -76,3 +76,7 @@ Even though an Aurora cluster volume can grow up to 256 tebibytes (TiB) for spec
 For earlier versions without the dynamic resizing feature, resetting the storage usage for a cluster involved doing a logical dump and restoring to a new cluster. That operation can take a long time for a substantial volume of data. If you encounter this situation, consider upgrading your cluster to a version that supports dynamic volume resizing.
 
 For information about which Aurora versions support dynamic resizing, and how to minimize storage charges by monitoring storage usage for your cluster, see [Storage scaling](Aurora.Managing.Performance.md#Aurora.Managing.Performance.StorageScaling). For information about Aurora backup storage billing, see [Understanding Amazon Aurora backup storage usage](aurora-storage-backup.md). For pricing information about Aurora data storage, see [Amazon RDS for Aurora pricing](https://aws.amazon.com/rds/aurora/pricing).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,3 +53,7 @@ When you use ABAC with DynamoDB Streams, the following considerations apply:
 + ABAC for DynamoDB Streams is separate from ABAC for DynamoDB tables. Enabling ABAC for tables does not automatically enable it for streams in your account. You must enable each independently.
 + You can tag or untag a stream after its parent table is deleted, using the CLI or SDK `tag-resource`, `untag-resource`, and `list-tags-of-resource` commands on the stream ARN. The stream continues to exist for 24 hours after table deletion before being removed. This capability is not available through the Console or CloudFormation after table deletion.
 + If you use CloudFormation to manage your DynamoDB resources, make sure your service role has `dynamodb:TagResource`, `dynamodb:UntagResource` and `dynamodb:ListTagsOfResource` permissions for stream resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -241,3 +241,7 @@ In this step, you test using the standard Eclipse debugging features. These feat
 If you no longer need the resources that you created for this tutorial, delete them so that you don't incur additional charges. Complete the following steps:
 + If the Planets application is still running, stop it.
 + Delete the database that you created in [Step 1: Create a database](#tutorial-ba-developer-create-db). For more information, see [Deleting a DB instance](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DeleteInstance.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

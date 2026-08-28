@@ -33,6 +33,13 @@ AWS Elastic Disaster Recovery automatically provisions replication servers in yo
 
 AWS Elastic Disaster Recovery provisions a t3.small server by default. The typical ratio of volumes to replication servers is 15:1.
 
+## What happens if the configured replication server instance type is unavailable?
+<a name="What-If-Replication-Server-Type-Unavailable"></a>
+
+If the replication server instance type that you configured in your [replication settings](individual-replication-settings.md#replication-server-settings) is unavailable in the staging area subnet's Availability Zone, AWS Elastic Disaster Recovery automatically launches the replication server using an alternative instance type. This can occur, for example, when the configured instance type returns an `InsufficientInstanceCapacity` error. This behavior allows continuous data replication to proceed without interruption so that your recovery point objective (RPO) is maintained.
+
+Replication servers are managed by AWS Elastic Disaster Recovery throughout their lifecycle and are automatically recycled approximately every 14 days. When a replication server is replaced, AWS Elastic Disaster Recovery provisions the new server using your current replication settings.
+
 ## Does AWS Elastic Disaster Recovery compress data during replication?
 <a name="Does-Data-Compress"></a>
 
@@ -142,3 +149,7 @@ ami-0c90e298af7a2e563 – Middle East (Bahrain)
 ami-0f7c14e62ef760768 – Middle East (UAE)
 ami-0edd5ecfc56804583 – South America (São Paulo)
 Ensure that the security groups are configured to permit connectivity on inbound port 1500.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

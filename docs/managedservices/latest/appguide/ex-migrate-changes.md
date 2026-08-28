@@ -38,3 +38,7 @@ The configurations added are AMS-specific as follows.
 + Software that *might be* installed or changed:
   + [Microsoft .Net Framework 4.5 (Developer platform)](https://www.microsoft.com/net), if a version lower then .Net Framework 4.5 is detected.
   + For Windows 2012, ad Windows 2012R2, we upgrade to [PowerShell 5.1](https://docs.microsoft.com/en-us/skypeforbusiness/set-up-your-computer-for-windows-powershell/download-and-install-windows-powershell-5-1).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

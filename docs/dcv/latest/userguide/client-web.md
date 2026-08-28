@@ -29,3 +29,7 @@ All major operating systems are supported. This includes Windows, macOS, and Lin
 The web browser client has the following limitations:
 + It supports up to two screens with a maximum resolution of 1920x1080. The maximum resolution can be overriden on the server side. For more information, see [Managing the Amazon DCV Session Display Layout](https://docs.aws.amazon.com/dcv/latest/adminguide/managing-session-display.html) in the *Amazon DCV Administrator Guide*.
 + It uses the web browser's proxy configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

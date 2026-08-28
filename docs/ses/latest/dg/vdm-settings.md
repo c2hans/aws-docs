@@ -112,3 +112,7 @@ Global deliverability settings control domain monitoring, IP monitoring, and inb
    + Choose **Edit domains** to select which of your verified sending domains to monitor.
 
 For detailed instructions on enabling or disabling global deliverability, see [Getting started with global deliverability](vdm-gd-get-started.md). For more information about global deliverability features, see [Global deliverability](vdm-global-deliverability.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

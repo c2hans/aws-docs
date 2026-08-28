@@ -85,3 +85,7 @@ Due to potential issues with network conditions or configurations, or the availa
 
 **Note**
 We cannot guarantee that a package installation will be successful. Attempting to install a package in an environment with incompatible dependencies can result in a failure. In such a case you should contact the library maintainer to see if it is possible to update the package dependencies. Alternatively you can attempt to modify the environment in such a way as to allow the installation. This modification however will likely mean removing or updating existing packages, which means we can no longer guarantee stability of this environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

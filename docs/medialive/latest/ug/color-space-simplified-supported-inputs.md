@@ -16,3 +16,7 @@ MediaLive can't read the color space metadata in a source from an AWS Elemental 
 + The video source can't be a file. This means that the source can't be a VOD asset in an MP4 file or in a transport stream file.
 
 These constraints are stipulated by Dolby Vision 8.1, and relate to the minimal video quality required to produce Dolby Vision 8.1 outputs that meet the Dolby Vision 8.1 standard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

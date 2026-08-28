@@ -117,3 +117,7 @@ You can request an increase to either the API request rate or the change through
 + **Request limit increases proactively:** If you anticipate workload growth, request an increase before you hit the limit (see [Requesting a limit increase](#requesting-a-limit-increase)).
 
 For broader Amazon Route 53 guidance, see [Best practices for Amazon Route 53](best-practices.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

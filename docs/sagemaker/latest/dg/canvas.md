@@ -79,3 +79,7 @@ If you are a first-time user of SageMaker Canvas, we recommend that you begin by
 + For IT administrators – [Amazon SageMaker Canvas setup and permissions management (for IT administrators)](canvas-setting-up.md)
 + For analysts and individual users – [Getting started with using Amazon SageMaker Canvas](canvas-getting-started.md)
 + For an example of an end to end workflow – [Tutorial: Build an end-to-end machine learning workflow in SageMaker Canvas](canvas-end-to-end-machine-learning-workflow.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -68,3 +68,7 @@ Set `x-amz-fhir-history-consistency-level: eventual` to return only records that
 The consistency level setting affects how quickly updated resources appear in search results but does not impact the actual storage of the resources.
 Setting the optional `x-amz-fhir-history-consistency-level` header to 'strong' doubles the write capacity consumption per resource.
 This feature is only applicable for data stores that have version history enabled (all datastores created after Oct 25, 2024 have it enabled by default).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

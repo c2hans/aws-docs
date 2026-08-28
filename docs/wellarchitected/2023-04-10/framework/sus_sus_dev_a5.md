@@ -48,3 +48,7 @@ Using Managed device farms can help you to streamline the testing process for ne
 
  **Related videos:**
 + [ Optimize applications through end user insights with Amazon CloudWatch RUM ](https://www.youtube.com/watch?v=NMaeujY9A9Y)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

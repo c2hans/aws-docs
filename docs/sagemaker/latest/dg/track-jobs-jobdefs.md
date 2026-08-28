@@ -17,3 +17,7 @@ The interface provides two main tabs that help you track your existing job defin
 For details about the **Notebook Jobs** tab, see [View notebook jobs](view-notebook-jobs.md).
 
 For details about the **Notebook Job Definitions** tab, see [View notebook job definitions](view-def-detail-notebook-auto-run.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

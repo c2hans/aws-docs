@@ -171,3 +171,7 @@ Your download might take some time to finish. For faster results, before you sta
 1. After your download is complete, open the file to view the events that you specified.
 
 1. To cancel your download, choose **Cancel**. If you cancel a download before it is finished, a CSV or JSON file on your local computer might contain only part of your events.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ Backups and snapshots are managed by AMS through the native [AWS Backup](https:/
 The configuration is managed through AWS Backup plans. You can have multiple AWS Backup plans that associate tagged resources with backup schedules and retention policies. To find your AMS account AWS Backup settings, use the [https://console.aws.amazon.com/backup](https://console.aws.amazon.com/backup) console, or the *AWS CLI Command Reference* for [backup](https://docs.aws.amazon.com/cli/latest/reference/backup/index.html) commands.
 
 For more information about AMS and AWS Backup, see [Continuity Management](https://docs.aws.amazon.com/managedservices/latest/userguide/continuity-mgmt.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

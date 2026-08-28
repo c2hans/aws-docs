@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/troubleshooting
 <a name="troubleshooting-no-data-received.outage"></a>
 
  If AWS Ground Station causes a contact to fail, or cancels it, AWS Ground Station will set the contact status to *AWS\_FAILED*, or *AWS\_CANCELLED*. For more information on contact lifecycle, see [Understand contact lifecycle](contacts.lifecycle.md). In some cases, AWS Ground Station may have a failure that prevents data from being delivered to your account, but doesn't result in the contact being in an *AWS\_FAILED* or *AWS\_CANCELLED* status. When this happens, AWS Ground Station should post an account-specific event to your AWS Health dashboard. For more information about the AWS Health dashboard, see [AWS Health User Guide ](https://docs.aws.amazon.com/health/latest/ug).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

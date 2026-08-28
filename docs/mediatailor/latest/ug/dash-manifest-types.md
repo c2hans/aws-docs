@@ -91,3 +91,7 @@ DASH manifests are XML-based files that typically use the `.mpd` extension. The 
 When configuring MediaTailor, you provide the URL to the MPD manifest in your content origin. MediaTailor then handles the personalization of the manifest, typically by inserting additional Periods for ads according to your configuration.
 
 For more information about DASH manifest specifications, see the [DASH Industry Forum Implementation Guidelines](https://dashif.org/docs/DASH-IF-IOP-v4.3.pdf).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

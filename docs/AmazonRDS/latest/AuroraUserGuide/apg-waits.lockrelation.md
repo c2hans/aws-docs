@@ -112,3 +112,7 @@ LINE 1: SELECT * FROM t1;
 ``` |
 | To determine the cause of the error. the reader session queries `pg_locks` and `pg_stat_activity` | Reader session | PostgreSQL query:<pre>postgres=> SELECT locktype, relation, mode, backend_type<br />postgres=> FROM pg_locks l, pg_stat_activity t1<br />postgres=> WHERE l.pid=t1.pid AND relation = 't1'::regclass::oid;</pre> |
 | The result indicates that the `aurora wal replay` process is holding an `ACCESS EXCLUSIVE` lock on table t1. | Reader session | Query result:<pre> locktype | relation |        mode         |   backend_type<br />----------+----------+---------------------+-------------------<br /> relation | 68628525 | AccessExclusiveLock | aurora wal replay<br />(1 row)</pre> |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

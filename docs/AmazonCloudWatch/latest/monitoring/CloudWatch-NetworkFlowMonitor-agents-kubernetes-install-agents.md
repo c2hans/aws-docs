@@ -22,3 +22,7 @@ NAMESPACE=<MY_K8S_NAMESPACE> make helm/install/customer
 ```
 
 To verify that the Kubernetes application pods for the Network Flow Monitor agents have been created and deployed successfully, check to be sure that their state is `Running`. You can check state of the agents by running the following command: `kubectl get pods -o wide -A | grep amazon-network-flow-monitor`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

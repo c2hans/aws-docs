@@ -28,3 +28,7 @@ The following are error messages returned by Elastic Load Balancing API, the pot
 **Cause**: There is a transient internal problem within the Elastic Load Balancing service or the underlying network. This temporary issue might also occur when Elastic Load Balancing queries the health of the load balancer and its registered instances.
 
 **Solution**: Retry the API call. If the problem persists, go to the [AWS Support Center](https://console.aws.amazon.com/support/home#/) for assistance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

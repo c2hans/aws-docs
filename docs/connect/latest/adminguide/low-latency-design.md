@@ -32,3 +32,7 @@ When call latency is greater than 900ms for both network and telephony latency, 
    After you claim a number you can immediately call it to hear what the experience will be like for your customers. Connect Customer uses the [default flows](contact-flow-default.md) to power your initial experience.
 
    To test a customized flow, [assign a phone number](associate-claimed-ported-phone-number-to-flow.md) to it and then call that number.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

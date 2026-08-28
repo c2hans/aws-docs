@@ -40,3 +40,7 @@ Note the following about filtering the displayed results:
 +  Enter **example3** in the search box to narrow down the results to only include changes that were made by IAM users whose username contains the string *example3*.
 +  Enter **2020-10** in the search box to narrow down the results to only include changes that were made during the month of October 2020. Change the search value to **2020-10-16** to filter further the displayed results to only include changes that were made on the day of October 16, 2020.
 +  Enter **proxy:staticfiles** in the search box to narrow down the results to only include the changes that were made to the namespace named *aws:elasticbeanstalk:environment:proxy:staticfiles*. The rows that are displayed are the result of the filter. This is true even for results that are collapsed under **Changes made**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

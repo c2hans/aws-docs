@@ -8,10 +8,11 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_CodeBuild"></a>
 
 **Resource types**
-+ [AWS::CodeBuild::Build](aws-resource-codebuild-build.md)
-+ [AWS::CodeBuild::BuildBatch](aws-resource-codebuild-buildbatch.md)
 + [AWS::CodeBuild::Fleet](aws-resource-codebuild-fleet.md)
 + [AWS::CodeBuild::Project](aws-resource-codebuild-project.md)
 + [AWS::CodeBuild::ReportGroup](aws-resource-codebuild-reportgroup.md)
-+ [AWS::CodeBuild::Sandbox](aws-resource-codebuild-sandbox.md)
 + [AWS::CodeBuild::SourceCredential](aws-resource-codebuild-sourcecredential.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

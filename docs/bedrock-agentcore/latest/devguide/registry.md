@@ -77,3 +77,7 @@ You can interact with AWS Agent Registry by directly invoking the Registry servi
 +  [Provide identity and credential management for agent applications with Amazon Bedrock AgentCore Identity](identity.md) – Manage identity and credential providers used for JWT-based registry authorization.
 +  [Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-what-is.html) – Receive notifications when registry records are submitted for approval.
 +  [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/) – Log and monitor all API calls made to AWS Agent Registry.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

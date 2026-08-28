@@ -27,3 +27,7 @@ The following AWS services have FedRAMP Rev5 RSC service guidance available:
 +  [Amazon Elastic Compute Cloud (EC2)](amazon-elastic-cloud-compute-ec2.md)
 +  [Amazon Neptune](amazon-neptune.md)
 +  [Amazon RDS](amazon-rds.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FedRamp Compliance Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fedramp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

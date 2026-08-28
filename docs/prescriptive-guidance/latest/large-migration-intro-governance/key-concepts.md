@@ -29,3 +29,7 @@ For more information, see [Workstreams in a large migration](https://docs.aws.am
 <a name="agile-approach"></a>
 
 By establishing an agile approach, the project team can remain flexible and quickly adapt to change during the migration. We recommend adopting a Scrum framework for a large migration. Using this framework, you assign applications to *waves*, which is a group of related applications. You then assign waves to sprints, which is a fixed period of time (typically two weeks) in which the migration team works on all waves within that sprint. For more information, see [Establishing an agile approach](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-governance-playbook/managing-large-migration.html#establish-agile-approach) in the *Project governance playbook for AWS large migrations*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

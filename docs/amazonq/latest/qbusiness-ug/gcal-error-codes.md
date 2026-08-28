@@ -41,3 +41,7 @@ The following table provides information about error codes you may see for the G
 | GCAL-5403 | Auth Type can not be null or empty | Enter a valid value. |
 | GCAL-5404 | Invalid value for Auth Type | Enter a valid value. |
 | GCAL-5500 | Connection timed out - API is not responding.  | The threshold number of API hits has been exceeded. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

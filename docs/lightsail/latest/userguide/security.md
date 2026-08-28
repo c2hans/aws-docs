@@ -12,3 +12,7 @@ Security is a shared responsibility between AWS and you. The [shared responsibil
 + **Security in the cloud** – Your responsibility is determined by the AWS service that you use. You are also responsible for other factors including the sensitivity of your data, your company’s requirements, and applicable laws and regulations.
 
 This documentation helps you understand how to apply the shared responsibility model when using Amazon Lightsail. The following topics show you how to configure Amazon Lightsail to meet your security and compliance objectives. You also learn how to use other AWS services that help you to monitor and secure your Amazon Lightsail resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ If you don't have historical workload data to reference and cannot perform load 
 
 **Minimum and maximum values for an LCU reservation**
 The total reservation request must be at least 100 LCU. The maximum value is determined by the quotas for your account. For more information, see [Load Balancer Capacity Units](load-balancer-limits.md#lcu-quotas).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

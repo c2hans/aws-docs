@@ -394,3 +394,7 @@ For more information, see the following:
 For questions related to listing your AgentCore Runtime container on AWS Marketplace, see [Getting support for AWS Marketplace](https://docs.aws.amazon.com/marketplace/latest/buyerguide/buyer-support.html).
 
 For technical questions about AgentCore Runtime, see [AWS Support and Customer Service](https://console.aws.amazon.com/support/home#/case/create?issueType=technical).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ If you don’t want to create the Amazon CloudWatch dashboard, you can turn it o
 **Note**
 If you disable the creation of the Amazon CloudWatch dashboard, you also disable the Amazon CloudWatch `disk_used_percent` and `memory_used_percent` alarms for your cluster. For more information, see [Amazon CloudWatch alarms for cluster metrics](cloudwatch-alarms-v3.md).
 The `disk_used_percent` and `memory_used_percent` alarms are added starting with AWS ParallelCluster version 3.6.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

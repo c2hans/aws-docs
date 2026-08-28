@@ -63,3 +63,7 @@ If you are just getting started with Application Auto Scaling, you can find addi
 **Note**
 For instructions for suspending scale-out processes while Amazon ECS deployments are in progress, see the following documentation:
 [Service auto scaling and deployments](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-auto-scaling.html#service-auto-scaling-deployments) in the *Amazon Elastic Container Service Developer Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -94,3 +94,7 @@ To use the SSM Automation Document platform:
 **Note**
 Currently, if a failure occurs in the initial run of the AWS SSM document, it is not shown in the web interface. Failures are only logged once the master file python is launched.
 All jobs initiated from the console will timeout after 12 hours if they have not returned a success or failure status.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -101,3 +101,7 @@ On the **License details** page, compare the configurations of your current lice
 The **License details** page displays current resource utilization of the current commercial software license. The graph only displays the number of Enterprise editon features that were used data over the analysis period.
 
 You can change the graphs to display data for the last 24 hours, three days, one week, or two weeks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -145,3 +145,7 @@ To set the language of the evaluation form:
 The following example shows a generative AI-answered question that follows these guidelines. The question title is a complete sentence, the instructions to evaluators define each answer option and explain the Not Applicable scenario, and the answer options are short.
 
 ![An evaluation form question configured with a full-sentence title, detailed instructions to evaluators, and short Yes and No answer options with the Not Applicable option enabled.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-genai-question-example.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

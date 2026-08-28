@@ -848,3 +848,7 @@ You can use a CloudFormation template to configure an entire farm to use your ow
    + Add the license environment variables by replacing **example\_LICENSE: 2700@localhost** in the template
 
 1. Deploy the template to setup your farm with bring your own license capability.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

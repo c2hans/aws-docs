@@ -20,3 +20,7 @@ Errors in AWS Batch often occur at the application level or are caused by instan
 + **Open a support ticket** – If you're still experiencing issues after some troubleshooting and have a support plan, open a support ticket. In the support ticket, make sure to include information about the issue, workload specifics, the configuration, and test results. For more information, see [Compare Support Plans](https://aws.amazon.com/premiumsupport/plans/).
 + **Review the AWS Batch and HPC forums** – For more information, see the [AWS Batch](https://repost.aws/tags/TAAQ5TlH16Tc686CgyYUNX0g/aws-batch) and [HPC](https://repost.aws/tags/TAjBvP4otfT3eX8PswbXo9AQ/high-performance-compute) forums.
 + **Review the AWS Batch Runtime Monitoring Dashboard** – This dashboard uses a serverless architecture to capture events from Amazon ECS, AWS Batch, and Amazon EC2 to provide insights into jobs and instances. For more information, see [AWS Batch Runtime Monitoring Dashboards Solution](https://github.com/aws-samples/aws-batch-runtime-monitoring).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

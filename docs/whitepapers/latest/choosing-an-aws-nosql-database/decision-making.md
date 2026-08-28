@@ -36,3 +36,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql
 1.  If you want to modernize your application and are considering a NoSQL database, you can use the decision tree to choose the most appropriate AWS-managed NoSQL database service for your use case based on your requirements by starting at Step 2, You can start eith the data model that is appropriate for your use case.
 
 ![Decision tree flowchart for selecting AWS database services based on data model and use case.](http://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql-database/images/decision-tree2.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

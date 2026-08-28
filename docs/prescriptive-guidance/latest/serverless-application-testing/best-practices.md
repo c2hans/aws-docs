@@ -99,3 +99,7 @@ In regulated industries, enterprise security policies may restrict developer acc
 When you test in the cloud, use tools and techniques to accelerate development feedback loops. For example, use [AWS SAM Accelerate](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/accelerate.html) and AWS CDK watch mode to decrease the time it takes to push code modifications to a cloud environment. The samples in the GitHub [Serverless Test Samples repository](https://github.com/aws-samples/serverless-test-samples) explore some of these techniques.
 
 We also recommend that you create and test cloud resources from your local machine as early as possible during development―not only after a check-in to source control. This practice enables quicker exploration and experimentation when developing solutions. In addition, the ability to automate deployment from a development machine helps you discover cloud configuration problems more quickly and reduces wasted effort from updating and approving modifications to source control.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

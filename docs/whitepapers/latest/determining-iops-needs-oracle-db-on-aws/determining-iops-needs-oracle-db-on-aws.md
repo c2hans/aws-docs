@@ -19,3 +19,7 @@ Publication date: **November 17, 2021** ([Document history](document-revisions.m
  To get the best performance from your database, you must configure the storage tier to provide the IOPS and throughput that the database needs. This is a requirement for both Oracle Database on Amazon RDS and Oracle Database on Amazon EC2. If the storage system does not provide enough IOPS to support the database workload, you will have sluggish database performance and transaction backlog. However, if you provision much higher IOPS than your database actually needs, you will have unused capacity.
 
  The elastic nature of the AWS infrastructure allows you to increase or decrease the total IOPS available for Oracle Database on Amazon EC2, but doing this could have a performance impact on the database, requires extra effort, and might require database downtime.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

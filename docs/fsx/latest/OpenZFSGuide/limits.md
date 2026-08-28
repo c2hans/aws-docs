@@ -174,3 +174,7 @@ You can request an increase for all AWS account quotas. You can also request an 
      + The file system ID and region for each file system you are requesting an increase for.
 
 1. Provide your preferred **Contact options** and choose **Submit**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

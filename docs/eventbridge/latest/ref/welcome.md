@@ -24,3 +24,7 @@ Many AWS services generate and send events to the EventBridge default event bus.
 ![AWS services send events to the EventBridge default event bus. If the event matches a rule's event pattern, EventBridge sends the event to the targets specified for that rule.](http://docs.aws.amazon.com/eventbridge/latest/ref/images/eventbridge-integration-how-it-works.png)
 
 For more information, see [Event buses](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-event-bus.html) and [Rules](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html) in the *EventBridge User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

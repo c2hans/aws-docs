@@ -22,3 +22,7 @@ The ECS Fargate worker maintains an active Kafka consumer group (`cms-{stage}-ws
 <a name="ws-fanout-security"></a>
 
 Anonymous WebSocket upgrades are disabled by default. The `cms.allow_unauth_websocket` CDK context flag (default `false`) controls whether the `$connect` authorizer allows unauthenticated connections. Set this flag to `true` only for demo or development environments where anonymous map access is acceptable.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

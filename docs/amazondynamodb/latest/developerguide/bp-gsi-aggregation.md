@@ -177,3 +177,7 @@ Keep the following in mind when implementing this pattern:
 + **Lambda concurrency** – If your table has a high write volume, multiple Lambda invocations might attempt to update the same aggregation item concurrently. The atomic `ADD` operation handles this safely, but you should monitor Lambda concurrency and throttling metrics to make sure your function can keep up with the stream.
 + **GSI write capacity** – Because the sparse GSI only contains aggregation items, it requires significantly less write capacity than the base table. However, you should still provision enough capacity (or use on-demand mode) to handle the rate of aggregation updates.
 + **Approximate counts** – As noted earlier, Lambda retries can cause counts to be slightly over-counted. For use cases that require exact counts, implement idempotency checks in the Lambda function.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

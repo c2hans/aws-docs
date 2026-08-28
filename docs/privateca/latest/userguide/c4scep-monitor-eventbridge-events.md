@@ -211,3 +211,7 @@ Connector for SCEP sends an `Unsupported Operation Invoked` event to EventBridge
 <a name="c4scep-cwe-example-rule"></a>
 
 In EventBridge, you can create rules that responds to events recorded by CloudTrail. To create a rule that includes all events logged by Connector for SCEP, set the source to `aws.pca-connector-scep`. For more information about rules, see [Create a rule in Amazon EventBridge](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-get-started.html#eb-gs-create-rule).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

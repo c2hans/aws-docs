@@ -88,3 +88,7 @@ You can configure Security Lake to receive findings from Security Hub CSPM. To a
 The following video, [AWS re:Inforce 2024 - Cyber threat intelligence sharing on AWS](https://www.youtube.com/watch?v=ufNNHBPPjQU), discusses how you can use Security Hub CSPM and Security Lake integrations to share CTI.
 
 [https://www.youtube-nocookie.com/embed/ufNNHBPPjQU?controls=0](https://www.youtube-nocookie.com/embed/ufNNHBPPjQU?controls=0)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,3 +10,7 @@ source_url: https://docs.aws.amazon.com/payment-cryptography/latest/userguide/pi
 *Requirement 6:* Security controls for keys held in AWS Payment Cryptography were assessed as part of the service’s PCI PIN assessment. Include descriptions of security controls pertaining to key generation within your application and with any other service providers.
 
 *Requirement 7:* You must have a key-generation policy documentation which should specify how keys are generated and all affected parties must be aware of these procedures/policies. Procedures for key creation using the APC API should include use of roles with key creation permissions and approvals for running scripts or other code that creates keys. AWS CloudTrail logs contain all [CreateKey](https://docs.aws.amazon.com/payment-cryptography/latest/APIReference/API_CreateKey) events with date and time, key ARN, and user ids. HSM serial numbers and logs for access to physical media was assessed as part of the service’s PIN assessment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

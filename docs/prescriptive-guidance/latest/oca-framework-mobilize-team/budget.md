@@ -73,3 +73,7 @@ To begin defining the program budget, take the following steps as applicable:
 1. Periodically review the program budget against future cloud plans and roadmap to anticipate changes to OCA resources.
 
 1. Periodically review the program budget to make sure that it remains below or on target.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

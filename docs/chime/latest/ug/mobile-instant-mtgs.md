@@ -23,3 +23,7 @@ Instant meetings provide the same controls as scheduled meetings. For more infor
 + Choose a contact, and on the menu that appears, choose **Call**.
 **Note**
 You can also choose a chat room instead of a contact. When you do, the meeting calls all members of that room.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

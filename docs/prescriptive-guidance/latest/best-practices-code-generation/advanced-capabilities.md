@@ -37,3 +37,7 @@ By using Amazon Q Developer customizations, you can save time in the following w
 + Use recommendations that are based on your own company proprietary code.
 + Increase re-usability of existing code bases.
 + Create repeatable patterns that are generalized across your company.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

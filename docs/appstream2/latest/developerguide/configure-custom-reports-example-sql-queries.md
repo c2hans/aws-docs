@@ -87,3 +87,7 @@ To use any of these queries, perform the following steps.
 1. The text of the query appears in the query pane. Choose **Run query**.
 
 To view these queries in a separate CloudFormation template, see [athena-sample-queries-appstream-usage-data\_template.yml](https://docs.aws.amazon.com/code-samples/latest/catalog/cloudformation-appstream2-athena-sample-queries-appstream-usage-data_template.yml.html) in the *AWS Code Sample Catalog.*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

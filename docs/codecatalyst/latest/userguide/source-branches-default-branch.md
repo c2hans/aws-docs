@@ -35,3 +35,7 @@ You must have the Project administrator role to change the default branch for so
 You must have the Project administrator role in the project to change the default branch.
 
 1. Choose the name of the branch you want to make the default branch from the drop-down list and then choose **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

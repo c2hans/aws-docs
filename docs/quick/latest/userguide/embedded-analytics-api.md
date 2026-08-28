@@ -40,3 +40,7 @@ You can use AWS CloudTrail auditing logs to get information about the number of 
 + [Embedding the Amazon Q in Amazon Quick Sight Generative Q&A experience](embedding-gen-bi.md)
 + [Embedding the Amazon Quick Sight Q search bar (Classic)](embedding-quicksight-q.md)
 + [Embedding analytics using the GetDashboardEmbedURL and GetSessionEmbedURL API operations](embedded-analytics-deprecated.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

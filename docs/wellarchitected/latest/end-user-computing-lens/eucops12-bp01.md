@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  Third party tools from vendors such as ControlUp, Nuvens, LiquidWare, Lakeside Software, and Aternity can be used to collect resource usage trends and build baselines for key applications. Some of these can be found on the AWS Marketplace.
 
  AWS and the AWS Partner Network offer many services and automation capabilities you can use to automatically and elastically scale backend application services or to provide increased compute capabilities during periods of heavy utilization**.**
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

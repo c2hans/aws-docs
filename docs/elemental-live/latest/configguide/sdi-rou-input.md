@@ -20,3 +20,7 @@ Next, complete the Input mappings to assign an ID to each input on the router. Y
 1. Repeat to add all of the inputs that you require.
 
 A line appears for each input. Each line has a unique Elemental ID, the ID of the input on the router, and the name (that Elemental Live automatically generates, based on the input ID).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -168,3 +168,7 @@ If you do not intend to serve a large number of read requests in the secondary r
 How you connect to a Neptune global database depends on whether you need to write to it or read from it:
 + For read-only requests or queries, connect to the reader endpoint for the Neptune cluster in your AWS Region.
 + To run mutation queries, connect to the cluster endpoint for the primary DB cluster, which might be in a different AWS Region than your application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

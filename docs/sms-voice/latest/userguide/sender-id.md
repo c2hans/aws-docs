@@ -23,7 +23,6 @@ Support and requirements for sender ID authentication aren't consistent across a
 + [Considerations for a sender ID](#sender-id-considerations)
 + [Sender ID display name rules](#channels-sms-countries-sender-id)
 + [Request a sender ID](sender-id-request.md)
-+ [Request a sender ID through Support](sender-id-awssupport-open.md)
 + [Release a sender ID](sender-id-release.md)
 + [Manage tags a for sender ID](sender-id-tags-add.md)
 + [List shared sender IDs](sender-id-shared.md)
@@ -79,3 +78,7 @@ The following table explains which Sender ID is displayed when you send SMS mess
 - **In a country or region where Sender IDs aren't supported**
   - **And your SMS message...:** Specifies a Sender ID / **The message is sent from...:** Varies depending on the destination country. In some countries, your message is sent using a random long code. In other countries, your message is sent using a shared short code. In the United States, you can only send messages using dedicated phone numbers. If you don't have a dedicated US phone number, your message isn't delivered.
   - **And your SMS message...:** Doesn't specify a Sender ID / **The message is sent from...:** Varies—see above.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

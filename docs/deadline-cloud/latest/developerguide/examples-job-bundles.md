@@ -21,6 +21,7 @@ deadline bundle gui-submit {{bundle-directory}}
 
 **Topics**
 + [Render Blender scenes on Deadline Cloud](examples-jb-blender-render.md)
++ [Render Blender wedges from a CSV file on Deadline Cloud](examples-jb-blender-wedge-csv.md)
 + [Render Autodesk Maya scenes on Deadline Cloud](examples-jb-maya-render.md)
 + [Render Arnold .ass files on Deadline Cloud](examples-jb-arnold-render.md)
 + [Render USD scenes with Houdini Husk on Deadline Cloud](examples-jb-houdini-husk-usd.md)
@@ -42,15 +43,18 @@ deadline bundle gui-submit {{bundle-directory}}
 + [Benchmark LLMs with vLLM and lm-evaluation-harness on Deadline Cloud](examples-jb-vllm-leaderboard.md)
 + [Run batch LLM inference with vLLM on Deadline Cloud](examples-jb-vllm-batch.md)
 + [Generate images in batch with a diffusion model on Deadline Cloud](examples-jb-text-to-image-batch.md)
++ [Generate videos from text prompts with Wan2.2 on Deadline Cloud](examples-jb-wan22-video.md)
 + [Fine-tune Hugging Face LLMs with LoRA on Deadline Cloud](examples-jb-hf-finetune-lora.md)
 + [Predict protein structures with ESMFold on Deadline Cloud](examples-jb-esmfold.md)
 + [Classify satellite imagery in parallel on Deadline Cloud](examples-jb-satellite-classification.md)
 + [Run GROMACS molecular dynamics simulations on Deadline Cloud](examples-jb-gromacs.md)
 + [Run virtual screening with AutoDock Vina on Deadline Cloud](examples-jb-virtual-screening.md)
++ [Call genetic variants with bwa and bcftools on Deadline Cloud](examples-jb-variant-calling.md)
 + [Generate procedural 3D scenes with Infinigen on Deadline Cloud](examples-jb-infinigen.md)
 + [Train a robot manipulation policy with MuJoCo on Deadline Cloud](examples-jb-mujoco.md)
 + [Run autonomous driving simulations with CARLA on Deadline Cloud](examples-jb-carla.md)
 + [Publish renders to Autodesk Flow Production Tracking from Deadline Cloud](examples-jb-blender-turntable-flow.md)
++ [Run a VFX studio pipeline on Deadline Cloud](examples-jb-vfx-pipeline.md)
 + [Run VTK visualization scripts on Deadline Cloud](examples-jb-vtk.md)
 + [Encode a movie from another Deadline Cloud job's output with FFmpeg](examples-jb-ffmpeg-from-job.md)
 + [Run a bash script on Deadline Cloud](examples-jb-cli-job.md)
@@ -62,3 +66,7 @@ deadline bundle gui-submit {{bundle-directory}}
 + [Copy an S3 prefix to job attachments on Deadline Cloud](examples-jb-copy-s3-to-attachments.md)
 + [SSH or RDP to a Deadline Cloud worker through Session Manager](examples-jb-ssh-to-worker.md)
 + [Build a custom submitter for Deadline Cloud](examples-jb-custom-submitters.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

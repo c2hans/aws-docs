@@ -22,3 +22,7 @@ The topics in this section provide information about how to manage your Amazon S
 + [File share status](understand-file-share.md) - Learn how to view and interpret file share status.
 + [Gateway status](understand-gateway-status.md) - Learn how to view and interpret gateway status.
 + [Managing bandwidth for your Amazon S3 File Gateway](MaintenanceUpdateBandwidth-common.md) - Learn how to limit the upload throughput from your gateway to AWS to control the amount of network bandwidth the gateway uses.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

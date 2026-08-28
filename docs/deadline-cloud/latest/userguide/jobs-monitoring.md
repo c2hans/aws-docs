@@ -25,6 +25,8 @@ Open the context menu for a job, step, or task. You can:
 
 For more information, see [Using the Deadline Cloud monitor](working-with-deadline-monitor.md). To modify a job with the AWS Command Line Interface (AWS CLI) or the Deadline Cloud API, see [Modify a job in Deadline Cloud](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/build-jobs-modifying.html) in the *Deadline Cloud Developer Guide*.
 
+If your team uses automatic downloads, the jobs and tasks tables in the Deadline Cloud monitor desktop application also show a **Download status** column that reports whether each job's outputs reached your file system. For more information, see [View output download status in Deadline Cloud](auto-downloads-status.md).
+
 Each task in a job or step has a status. The status of a job or step depends on the status of its tasks. The status is determined by tasks that have these statuses, in order. Step statuses are determined the same as the job status.
 
 The following list describes the statuses:
@@ -64,3 +66,7 @@ A task in the job is waiting on the availability of another resource.
 
 `SUCCEEDED`
 All tasks in the job were successfully processed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

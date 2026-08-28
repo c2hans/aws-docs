@@ -19,3 +19,7 @@ The following table describes the important changes to the documentation since t
 | New feature | Configuration sets can now use Amazon Simple Notification Service (Amazon SNS) as an event destination. | December 21, 2018 |
 | Regional availability | The Amazon Pinpoint SMS and Voice API is now available in the AWS US West (Oregon) and Europe (Frankfurt) Regions. | December 21, 2018 |
 | Initial release | This release introduces the Amazon Pinpoint SMS and Voice API. | November 15, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint SMS and Voice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint-sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

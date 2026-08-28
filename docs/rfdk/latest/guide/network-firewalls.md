@@ -25,3 +25,7 @@ Refer to the [Security best practices for your VPC](https://docs.aws.amazon.com/
 <a name="security-groups"></a>
 
  [Security Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security-groups.html) are firewalls that govern one or more instance(s). They are used to restrict network traffic between the instance(s) within the security group and outside peers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Render Farm Deployment Kit on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rfdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -122,3 +122,7 @@ With peer-to-peer WebRTC, the viewer participant is the controlling peer and the
 
 **Note**
 The storage session will only send `TURN` candidates. When nominating an ICE candidate pair from the perspective of participants, the remote candidate will always be of type `relay`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams-webrtc-dg` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,3 +51,7 @@ If you specify `nextstate=DOWN`, the node will be marked as unhealthy after rebo
 + For basic reboot procedures, see [Reboot a compute node using Slurm in AWS PCS](slurm-reboot-procedure.md).
 + For troubleshooting reboot issues, see [Troubleshooting Slurm reboot issues in AWS PCS](slurm-reboot-troubleshooting.md).
 + For Slurm reboot documentation, see [Slurm scontrol documentation](https://slurm.schedmd.com/scontrol.html#OPT_reboot).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

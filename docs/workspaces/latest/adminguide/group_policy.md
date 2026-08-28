@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/group_polic
 You can use Group Policy Objects (GPOs) to apply settings to manage Windows WorkSpaces or users that are part of your Windows WorkSpaces directory.
 
 **Note**
-If you use Microsoft Entra ID or Custom WorkSpaces directory, you can manage users and groups with Microsoft Entra ID or your Identity Providers. For more inforamtion, see [Create a dedicated Microsoft Entra ID directory with WorkSpaces Personal](launch-entra-id.md).
+If you use Microsoft Entra ID or Custom WorkSpaces directory, you can manage users and groups with Microsoft Entra ID or your Identity Providers. For more information, see [Create a dedicated Microsoft Entra ID directory with WorkSpaces Personal](launch-entra-id.md).
 Linux instances do not adhere to Group Policy. For information about managing Linux WorkSpaces, see [Manage your Linux WorkSpaces in WorkSpaces Personal](manage-linux-workspaces.md).
 
 Amazon recommends that you create an organizational unit for your WorkSpaces Computer Objects and an organizational unit for your WorkSpaces User Objects.
@@ -1703,3 +1703,7 @@ You can use the following examples to apply a GPO as an administrator of your di
       </policies>
   </policyDefinitions>
   ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

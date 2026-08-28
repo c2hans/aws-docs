@@ -176,3 +176,7 @@ The following example creates a Pipeline with an associated lifecycle configurat
             PipelineDefinitionS3Location: Bucket: "<S3-bucket-location>" Key:
             "<S3-bucket-key>" RoleArn: "arn:aws:iam::<account-id>:root"
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

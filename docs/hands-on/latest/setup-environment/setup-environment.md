@@ -36,3 +36,7 @@ This tutorial is divided into the following short modules.
 1. (Optional) [Module 2: (Optional) For Multiple AWS Accounts Managed Through AWS Organizations](module-two.md) (15 minutes)
 
 1. (Optional) [Module 3: (Optional) Set Up the AWS CLI](module-three.md) (10 minutes)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

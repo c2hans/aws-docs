@@ -17,3 +17,7 @@ To make detection and diagnosis of this kind of failure easier, Neptune also inc
 
 **Note**
 Neptune does not currently support `gzip` compression of chunked responses. If the client requests both chunked encoding and compression at the same time, Neptune skips the compression.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

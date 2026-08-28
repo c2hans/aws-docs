@@ -55,3 +55,7 @@ If you do not have a personal access token (PAT), choose **Create token**. Copy 
 **Note**
 If your operating system provides credential management or you have installed a credential management system, you only need to provide the PAT once. If not, you might have to provide the PAT for every Git operation. As a best practice, make sure that your credential management system securely stores your PAT. Do not include the PAT as part of the clone URL string.
    + To clone a repository using an IDE, follow the documentation for your IDE. Choose the option to clone a Git repository and provide the URL. When prompted for a password, provide the PAT.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

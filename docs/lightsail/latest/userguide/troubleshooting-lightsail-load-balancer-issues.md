@@ -28,3 +28,7 @@ It could be that you have attached the same instance to too many load balancers.
 **Lightsail can't find the instance I'm trying to attach to my load balancer**
 You might be trying to attach an instance that no longer exists or is not in the same VPC as the target group.
 *Actual error message:*  **Sorry, the instance you specified doesn't exist, isn't in the same VPC as the target group, or has an unsupported instance type.**
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

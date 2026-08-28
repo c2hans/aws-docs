@@ -72,3 +72,7 @@ To enforce per-user data permissions for dashboard consumers, complete the follo
 + Identity enforcement works only for DirectQuery datasets.
 + The agentic catalog experience (discover, create, inherit) works with both PAT and 3LO authentication. Identity enforcement through 3LO is optional and additive. It is not a prerequisite for the agentic flow.
 + If you do not opt for 3LO, you can use PAT and manually manage data permissions by using row-level security (RLS) and column-level security (CLS) rules in Quick.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,3 +46,7 @@ If your use case requires modifying the session script executable at run time (f
 If your session script files are excessively large (more than 100 MB), this can cause delays in instance and session provisioning, and the security checks will take additional time (depending on instance type and available resources). If your use case requires large session scripts, consider using smaller scripts to redirect execution. This will improve instance and session provisioning experiences.
 
 Note that the service is only checking the executable defined in the session scripts config.json, and this is only a fallback/best effort mechanism. It is your responsibility to ensure that all code paths in session scripts executables are secure and cannot be modified by end users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

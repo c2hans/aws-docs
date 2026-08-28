@@ -11,3 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
    You can also use Personal Computer over Internet Protocol (PCoIP) Zero Clients to connect to WorkSpaces. For a list of available devices, refer to [PCoIP Zero Clients for Amazon WorkSpaces](https://www.teradici.com/product-service-finder/pcoip-zero-clients).
 +  **A directory service to authenticate users and provide access to their WorkSpace** — Amazon WorkSpaces currently works with [AWS Directory Service](https://aws.amazon.com/directoryservice/) and Microsoft AD. You can use your on-premises AD server with AWS Directory Service to support your existing enterprise user credentials with Amazon WorkSpaces.
 +  **Amazon Virtual Private Cloud (Amazon VPC) in which to run your Amazon WorkSpaces** — You’ll need a minimum of two subnets for an Amazon WorkSpaces deployment because each AWS Directory Service construct requires two subnets in a multi-AZ deployment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

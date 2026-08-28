@@ -38,3 +38,7 @@ If your image or client version does not meet these minimum requirements, some m
 | FramesPerSecond | The number of frames sent per second from the instance to the client. | [Fleet]<br />[UserId]<br />[FleetName, InstanceId, SessionId]<br />[FleetName, InstanceId, SessionId, UserId] | Average, Minimum, Maximum | Count |
 | MetadataNoToken | The number of times the instance metadata service was accessed without a token (IMDSv1). This metric helps identify workloads that have not yet migrated to IMDSv2. | [Fleet]<br />[ImageBuilder]<br />[AppBlockBuilder] | Sum | Count |
 | MetadataNoTokenRejected | The number of times an IMDSv1 request to the instance metadata service was rejected. This metric is available when the instance is configured to require IMDSv2. | [Fleet]<br />[ImageBuilder]<br />[AppBlockBuilder] | Sum | Count |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

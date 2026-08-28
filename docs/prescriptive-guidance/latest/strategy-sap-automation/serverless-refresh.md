@@ -30,3 +30,7 @@ The following image and process describe how the automation for SAP serverless r
 1. The Lambda functions use an Amazon DynamoDB table to track the progress of each step in the state machine.
 
 ![Architecture diagram showing how you can use automation to perform a serverless refresh.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-automation/images/guide-img/029e7e61-9fe5-41b5-83f4-177d03384b91/images/02b1e527-edd7-44b6-bb0d-0c58c93a2290.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

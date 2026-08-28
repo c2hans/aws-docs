@@ -59,3 +59,7 @@ The following procedure shows how to add a stage of an API as a target for a Age
 To view all the AgentCore Gateways that have access to your APIs, choose the **MCP targets** section in the main navigation pane. In this section, you can create a MCP target for any API in your Region deployed to a stage. Choose **Create MCP target** and follow the previous steps.
 
 You can also view the available tools for your target and edit your target in the AgentCore Gateway console. For more information, see [Add targets to an existing AgentCore Gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-building-adding-targets.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

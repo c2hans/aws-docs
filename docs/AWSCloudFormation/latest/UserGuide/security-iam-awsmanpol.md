@@ -55,3 +55,7 @@ View details about updates to AWS managed policies for CloudFormation since this
 | [AWSCloudFormationReadOnlyAccess](#security-iam-awsmanpol-AWSCloudFormationReadOnlyAccess) – Update to an existing policy | CloudFormation added new permissions to allow `cloudformation:DetectStackDrift` and `cloudformation:DetectStackResourceDrift` actions for stack drift detection. | February 6, 2019 |
 | [AWSCloudFormationReadOnlyAccess](#security-iam-awsmanpol-AWSCloudFormationReadOnlyAccess) – New policy | CloudFormation added a new AWS managed policy that provides read-only access to CloudFormation actions and resources. | February 6, 2015 |
 | CloudFormation started tracking changes | CloudFormation started tracking changes for its AWS managed policies. | February 6, 2015 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

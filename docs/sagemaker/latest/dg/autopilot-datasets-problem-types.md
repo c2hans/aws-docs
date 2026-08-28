@@ -41,3 +41,7 @@ Binary classification is a type of supervised learning that assigns an individua
 <a name="autopilot-automate-model-development-problem-types-multiclass-classification"></a>
 
 Multiclass classification is a type of supervised learning that assigns an individual to one of several classes based on their attributes. It is supervised because the models are trained using examples where the attributes are provided with correctly labelled objects. An example is the prediction of the topic most relevant to a text document. A document may be classified as being about, say, religion or politics or finance, or about one of several other predefined topic classes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

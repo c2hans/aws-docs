@@ -84,3 +84,7 @@ When you disable Security Hub, Security Hub does not automatically delete the `A
 Before you delete the `AWSServiceRoleForSecurityHubV2` service-linked role, you must first disable Security Hub in all the Regions where it is enabled. For more information, see [Disabling Security Hub](securityhub-v2-disable.md). If Security Hub is not disabled when you try to delete the service-linked role, the deletion fails.
 
 To delete the `AWSServiceRoleForSecurityHubV2` service-linked role, you can use the IAM console, the IAM CLI, or the IAM API. For more information, see [Deleting a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#delete-service-linked-role) in the *IAM User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -79,3 +79,7 @@ Integration goes through various states from creation to deletion:
 + `FAILED` - This is a non-recoverable state. Once the integration moves into this state, it cannot be recovered. The only way to start the data transfer from source to target again is to delete and re-create the integration. If AWS Glue Zero ETL identifies that user error or system error has not been fixed for a period of 7 days and all retries are exhausted, AWS Glue Zero ETL will mark the integration as FAILED.
 + `DELETING` - When you invoke delete-integration API, AWS Glue first moves the integration into DELETING state. After all the metadata is cleared and internal processings are terminated, AWS Glue will move the integration into DELETED state.
 + `DELETED` - This is the terminal state for integration. Integration cannot be moved from this state into any other state. If the data transfer is required from same source to target, you should create the integration again.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

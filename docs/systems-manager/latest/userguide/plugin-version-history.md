@@ -65,3 +65,7 @@ We recommend you always run the latest version. The latest version includes enha
 | 1.1.17.0 | April 4, 2019 | **Enhancement**: Added support for further encryption of session data using AWS Key Management Service (AWS KMS). |
 | 1.0.37.0 | September 20, 2018 | **Enhancement**: Bug fix for Windows version. |
 | 1.0.0.0 | September 11, 2018 | Initial release of the Session Manager plugin. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

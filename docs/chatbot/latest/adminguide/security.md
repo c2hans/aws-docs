@@ -42,3 +42,7 @@ We also strongly recommend that you don't provide secrets or confidential data t
 
 **Note**
 Amazon Q Developer in chat applications doesn't modify any event, alarm, or other reporting data when it forwards Amazon Simple Notification Service (Amazon SNS) notifications to chat rooms. It treats all notifications as read only.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q Developer in chat applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chatbot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

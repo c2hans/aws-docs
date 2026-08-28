@@ -48,3 +48,7 @@ Since you can only delegate permissions that you already possess, it's crucial t
 After you initiate a temporary delegation request, you can manage and monitor the request through its lifecycle. The following procedures help you track, approve, and control temporary access:
 + [Review Temporary delegation requests](temporary-delegation-review-requests.md) – Monitor the status of your access requests, and view detailed information about requests to approve or deny temporary delegation requests.
 + [Revoke temporary delegation access](temporary-delegation-revoke-access.md) – Immediately terminate active temporary delegation sessions before they expire naturally.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

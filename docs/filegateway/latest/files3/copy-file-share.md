@@ -73,3 +73,7 @@ The following settings are *not* copied and use the destination gateway's config
 + Active Directory domain membership (uses the destination gateway's AD configuration)
 + Bandwidth rate limits (uses the destination gateway's limits)
 + Root-level ACLs (SMB file shares – the copied share is created with default root ACLs)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

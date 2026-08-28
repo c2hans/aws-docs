@@ -37,3 +37,7 @@ You provide the name of this secret in your MediaConvert job settings.
    1. Copy and save the string you see listed under **Secret ARN**.
 **Note**
 You use this ARN when you grant MediaConvert permissions to get this secret.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

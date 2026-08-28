@@ -321,3 +321,7 @@ For specific configuration instructions for your IaC tool:
 +  **CloudFormation**: See [Enforce with CloudFormation](enforce-required-tag-keys-iac.md#enforce-with-cloudformation) to activate the tagging compliance hook
 +  **Terraform**: See [Enforce with Terraform](enforce-required-tag-keys-iac.md#enforce-with-terraform) to enable tag policy validation in the AWS Provider
 +  **Pulumi**: See [Enforce with Pulumi](enforce-required-tag-keys-iac.md#enforce-with-pulumi) to enable the Tag Policy Reporting policy pack
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

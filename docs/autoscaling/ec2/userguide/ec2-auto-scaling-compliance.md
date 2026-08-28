@@ -20,3 +20,7 @@ Amazon EC2 Auto Scaling supports the processing, storage, and transmission of cr
 
 For information on achieving PCI DSS compliance for your AWS workloads, refer to the following compliance guide:
 + [Payment Card Industry Data Security Standard (PCI DSS) 3.2.1 on AWS](https://docs.aws.amazon.com/whitepapers/latest/pci-dss-3-2-1-on-aws/pci-dss-3-2-1-on-aws.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -66,3 +66,7 @@ If your file is the output of a chained labeling job, specify the label attribut
 In an augmented manifest file, the label attribute name typically follows the `source` key. If the file is the output of a chained job, there will be multiple label attribute names. When you provide your training data to Amazon Comprehend, provide only those attributes that contain annotations that are relevant for your model. Do not specify the attributes that end with "-metadata".
 
 For more information about chained labeling jobs, and for examples of the output that they produce, see [Chaining Labeling Jobs](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-reusing-data.html) in the Amazon SageMaker AI Developer Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

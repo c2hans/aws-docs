@@ -15,3 +15,7 @@ To provide a single framework for migrating various workloads—such as online t
 + [Phase 2: Plan](phase-2-plan.md) – Evaluate the data to determine a suitable migration strategy, such as rehost, replatform, repurchase, refactor, retain, or retire.
 + [Phase 3: Migrate](phase-3-migrate.md) – After you choose a database migration category and strategy, create the target database and migrate your source database using data validation and replication.
 + [Phase 4: Operate and optimize](phase-4-operate-and-optimize.md) – Maximize the benefits of hosting applications on AWS, which include addressing costs, performance, security, and application resilience.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

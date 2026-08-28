@@ -24,3 +24,7 @@ Your compliance responsibility when using Amazon DocumentDB is determined by the
 + [AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html) – A service that assesses how well your resource configurations comply with internal practices, industry guidelines, and regulations.
 + [AWS Security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) – A comprehensive view of your security state within AWS that helps you check your compliance with security industry standards and best practices.
 + [Architecting for HIPAA Security and Compliance Whitepaper](https://docs.aws.amazon.com/whitepapers/latest/architecting-hipaa-security-and-compliance-on-aws/architecting-hipaa-security-and-compliance-on-aws.html) – A whitepaper that describes how companies can use AWS to create HIPAA-compliant applications.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

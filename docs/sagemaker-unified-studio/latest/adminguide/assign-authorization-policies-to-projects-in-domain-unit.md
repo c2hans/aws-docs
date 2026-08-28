@@ -27,3 +27,7 @@ To assign authorization policies to projects within a domain unit, complete the 
 1. In the **Add projects** pop up window, do one of the following:
    + Choose **Selected projects in a domain unit**, specify projects to which you want to assign the selected authorization policy, and then choose **Add policy grant**.
    + Choose **All projects in a domain unit** and then choose **Add policy grant**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

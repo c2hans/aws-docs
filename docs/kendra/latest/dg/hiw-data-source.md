@@ -54,3 +54,7 @@ For a list of document types or formats supported by Amazon Kendra see [Document
 To create an index of documents, you don't need to use a data source. You can add documents directly to an index with batch upload. For more information, see [Adding documents directly to an index](https://docs.aws.amazon.com/kendra/latest/dg/in-adding-documents.html).
 
  For a walkthrough on using the Amazon Kendra console, the AWS CLI, or SDKs, see [Getting started](https://docs.aws.amazon.com/kendra/latest/dg/getting-started.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -110,3 +110,7 @@ RDS creates a new MySQL DB cluster with a custom parameter group group. To see m
 In this tutorial, you configured a MySQL DB cluster with tailored settings using a custom parameter group. This newly created MySQL DB cluster manages the user password lifetime by using the parameter `default_password_lifetime`. To optimize your database, you can apply additional setting in your custom parameter group and add options.
 
  After you have finished creating your customized DB cluster, you should delete your resources to avoid incurring unwanted costs. To delete a DB cluster, follow the instructions in  [Deleting Aurora DB clusters and DB instances](USER_DeleteCluster.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

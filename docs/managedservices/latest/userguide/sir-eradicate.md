@@ -16,3 +16,7 @@ For some incidents, eradication is either not necessary or is performed during r
 Consider the following:
 + Can the system be re-imaged and then hardened with patches or other countermeasures to prevent or reduce the risk of attacks?
 + Are all malware and other artifacts left behind by the attackers removed and the affected systems hardened against further attacks?
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

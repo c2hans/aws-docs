@@ -19,3 +19,7 @@ The following are examples of what shouldn't be raised in a service request:
 + Backup failure
 + RFC failure or RFC that causes business interruption (Use Incident for business interruption)
 + RFC questions or additional input or change of RFC scope (Use RFC bidirectional correspondence)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -9,3 +9,7 @@ The Landing Zone Accelerator on AWS builds on top of an existing AWS Control Tow
 +  **Management account** - This account is designated when first creating an AWS Organization. It’s a privileged account where all AWS Organizations global configuration management and billing consolidation occurs.
 +  **LogArchive account** - This account is used for centralized logging of AWS service logs and AWS CloudTrail trails.
 +  **Audit account** - This account is used to centralize all security operations and management activities. This account is typically used as a delegated administrator of centralized security services such as Amazon Macie, Amazon GuardDuty, and AWS Security Hub.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

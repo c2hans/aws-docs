@@ -249,3 +249,7 @@ If you created an RDS database specifically for this tutorial, you can delete it
 1. Select the RDS database that you created for this tutorial, and choose **Actions**, **Delete**.
 
 1. Enter **delete me** in the box, and then choose **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

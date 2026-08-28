@@ -24,7 +24,7 @@ The following describes upcoming behavior changes.
 + [Scalar Python UDFs will reach end of support after June 30, 2026](#python-udf-jun2026)
 + [Materialized View (MV) Auto-REFRESH Behavior Change after February 27, 2026](#autorefresh-feb272026)
 + [Amazon Redshift won’t support functions that access consumer information through datasharing after February 16, 2026](#datasharing-feb2026)
-+ [Minimum Transport Layer Security (TLS) version changes effective starting August 30, 2026](#tls-changes-aug2026)
++ [Minimum Transport Layer Security (TLS) version changes effective starting September 30, 2026](#tls-changes-sep2026)
 + [Amazon Redshift won’t support the creation of new scalar Python UDFs after October 30, 2025](#python-udf-oct2025)
 
 ### AWS KMS key permission enforcement for Amazon Redshift Serverless APIs after August 17, 2026
@@ -151,10 +151,10 @@ For information on creating and using Lambda UDFs, see [Scalar Lambda UDFs](http
 
 Starting February 16, 2026, Amazon Redshift will no longer support the usage of `user_is_member_of` and related functions that access consumer user, role, or group information through datasharing.
 
-### Minimum Transport Layer Security (TLS) version changes effective starting August 30, 2026
-<a name="tls-changes-aug2026"></a>
+### Minimum Transport Layer Security (TLS) version changes effective starting September 30, 2026
+<a name="tls-changes-sep2026"></a>
 
-Beginning August 30, 2026, Amazon Redshift will enforce a minimum Transport Layer Security (TLS) version of 1.2. Incoming connections that use TLS versions 1.0 or 1.1 will be rejected. This applies to both Amazon Redshift provisioned clusters and serverless workgroups. Amazon Redshift data warehouses not using TLS will not be affected by this change.
+Beginning September 30, 2026, Amazon Redshift will enforce a minimum Transport Layer Security (TLS) version of 1.2. Incoming connections that use TLS versions 1.0 or 1.1 will be rejected. This applies to both Amazon Redshift provisioned clusters and serverless workgroups. Amazon Redshift data warehouses not using TLS will not be affected by this change.
 
 This update might impact you if you use TLS versions 1.0 or 1.1 to connect to Amazon Redshift.
 
@@ -297,3 +297,7 @@ With this change, a new default parameter group named `default.redshift-2.0` wil
 For Amazon Redshift Serverless users, the default value of `require_ssl` in the `config-parameters` will be changed to `true`. Any requests to create new workgroups with `require_ssl` set to `false` will be rejected. You can change the `require_ssl` value to `false` after the workgroup is created. For more information, see [Configuring security options for connections](connecting-ssl-support.md).
 
 Note that you will still have the ability to modify cluster or workgroup settings to change the default behavior, if needed for your specific use cases.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ When using data from Amazon Location Service you shall provide End-Users of your
 <a name="postal-authority-terms"></a>
 
 Amazon Location Service's Address Validation feature may output location data obtained from postal authorities (for example, Canada location data is provided by Canada Post). These postal authorities subject use of the location data to additional terms ("Postal Authority Terms"). Accordingly, your use of the Address Validation feature is subject to the Postal Authority Terms. Review the [Postal Authority Terms](https://d1.awsstatic.com/onedam/marketing-channels/website/aws/en_US/product-categories/end-user-computing/approved/pdf/Postal-Authority-Terms.pdf) before using the Address Validation feature.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

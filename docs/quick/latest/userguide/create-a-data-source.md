@@ -59,3 +59,7 @@ To view your existing connection profiles, open the Quick start page, choose **D
 For a list of supported data source connections and examples, see [Connect to your data with integrations and datasets](connecting-to-data-examples.md).
 
 After you create a data source in Quick Sight, you can [create a dataset](https://docs.aws.amazon.com/quicksuite/latest/userguide/creating-data-sets) in Quick Sight that contains data from the connected data source. You can also [update data source connection](https://docs.aws.amazon.com/quicksuite/latest/userguide/edit-a-data-source) information at any time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

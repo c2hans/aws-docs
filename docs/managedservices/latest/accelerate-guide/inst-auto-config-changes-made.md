@@ -22,3 +22,7 @@ The AMS Accelerate instance configuration automation makes the following changes
    1. To ensure that the required metrics and logs are emitted, AMS Accelerate customizes the CloudWatch configuration. For more information, see the following section, [CloudWatch configuration change details](inst-auto-config-details-cw.md).
 
 Automated instance configuration makes changes or additions to your IAM instance profiles and CloudWatch configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

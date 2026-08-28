@@ -37,3 +37,7 @@ Your Studio notebook uses an [AWS Glue](https://docs.aws.amazon.com/glue/latest/
 With this tutorial, you can create a Studio notebook that uses either Kinesis Data Streams or Amazon MSK:
 + [Create a Studio notebook with Kinesis Data Streams](example-notebook-streams.md) : With Kinesis Data Streams, you quickly create an application that uses a Kinesis data stream as a source. You only need to create a Kinesis data stream as a dependent resource.
 + [Create a Studio notebook with Amazon MSK](example-notebook-msk.md) : With Amazon MSK, you create an application that uses a Amazon MSK cluster as a source. You need to create an Amazon VPC, an Amazon EC2 client instance, and an Amazon MSK cluster as dependent resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

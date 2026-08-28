@@ -17,3 +17,7 @@ These tips come from patterns observed in successful app-building sessions.
 + **Scope storage thoughtfully** — Use private storage for user-specific data and shared storage for collaborative features. Keep table names descriptive.
 + **Approve integrations deliberately** — Review each integration approval carefully. Only approve connectors and spaces your app actually needs.
 + **Design for anonymous viewers for public apps** — If you plan to publish your app publicly, remember that anonymous viewers have no user identity and cannot access private storage. Use shared storage for all data that public viewers need, and avoid features that depend on user identity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

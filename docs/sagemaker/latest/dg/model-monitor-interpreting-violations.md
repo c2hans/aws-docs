@@ -36,3 +36,7 @@ Types of Violations Monitored
 | missing\_column\_check | If the number of columns in the current dataset is less than the number in the baseline dataset, this violation is flagged. |
 | extra\_column\_check | If the number of columns in the current dataset is more than the number in the baseline, this violation is flagged. |
 | categorical\_values\_check | If there are more unknown values in the current dataset than in the baseline dataset, this violation is flagged. This value is dictated by the threshold in `monitoring_config.domain_content_threshold`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

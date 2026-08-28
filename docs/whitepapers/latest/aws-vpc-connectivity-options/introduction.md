@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-
   + [Software client VPN](software-client-vpn.md) – Describes connecting software remote access to Amazon VPC, leveraging user-managed software VPN appliances.
 + [Transit VPC](transit-vpc-option.md) - Describes establishing a global transit network on AWS using a software VPN in conjunction with an AWS-managed VPN.
 + [AWS Cloud WAN](aws-cloud-wan.md) - Describes establishing a managed wide area network (WAN) to easily build, manage, and monitor global interconnections between resources in Amazon VPCs, datacenters, and remote branches.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

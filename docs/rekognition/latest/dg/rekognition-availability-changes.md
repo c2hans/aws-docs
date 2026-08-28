@@ -17,3 +17,7 @@ This change does not impact the availability of other Amazon Rekognition feature
 + For information about using Rekognition Image API to process a batch of images stored in S3, see this [Creating a serverless face blurring service for photos in Amazon S3](https://aws.amazon.com/blogs/compute/creating-a-serverless-face-blurring-service-for-photos-in-amazon-s3/) on the AWS Blog.
 
 If you have additional questions, please reach out to [AWS Support](https://aws.amazon.com/support).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

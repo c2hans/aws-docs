@@ -12,3 +12,7 @@ The following sections provide troubleshooting information for validation failur
 + [VALIDATION\_ERROR\_SECURITY\_GROUP\_NOT\_FROM\_ONE\_VPC](VALIDATION_ERROR_SECURITY_GROUP_NOT_FROM_ONE_VPC.md)
 + [VALIDATION\_ERROR\_INVALID\_SSH\_KEY\_NAME](VALIDATION_ERROR_INVALID_SSH_KEY_NAME.md)
 + [VALIDATION\_ERROR\_INSTANCE\_TYPE\_NOT\_SUPPORTED](VALIDATION_ERROR_INSTANCE_TYPE_NOT_SUPPORTED.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

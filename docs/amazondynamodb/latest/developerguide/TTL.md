@@ -21,3 +21,7 @@ For more information about TTL, see these topics:
 + [Enable time to live (TTL) in DynamoDB](time-to-live-ttl-how-to.md)
 + [Computing time to live (TTL) in DynamoDB](time-to-live-ttl-before-you-start.md)
 + [Working with expired items and time to live (TTL)](ttl-expired-items.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

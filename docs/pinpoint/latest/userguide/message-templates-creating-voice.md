@@ -45,3 +45,7 @@ To use a message variable, choose the name of an existing attribute from the **A
    To specify default values for variables, expand the **Default attribute values** section. Then enter the default value that you want to use for each variable. If you don't specify a default value and a value doesn't exist for a recipient, Amazon Pinpoint does not send the message.
 
 1. When you finish entering content and settings for the template, choose **Create**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

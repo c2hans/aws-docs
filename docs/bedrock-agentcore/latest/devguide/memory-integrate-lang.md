@@ -168,3 +168,7 @@ response = graph.invoke(
 +  [Pypi package](https://pypi.org/project/langgraph-checkpoint-aws/)
 +  [AgentCoreMemorySaver implementation](https://github.com/langchain-ai/langchain-aws/blob/main/libs/langgraph-checkpoint-aws/langgraph_checkpoint_aws/agentcore/saver.py)
 +  [AgentCoreMemorySaver sample notebook (checkpointing only)](https://github.com/langchain-ai/langchain-aws/blob/main/samples/memory/agentcore_memory_checkpointer.ipynb)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

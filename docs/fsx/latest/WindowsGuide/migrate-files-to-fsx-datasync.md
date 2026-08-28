@@ -65,3 +65,7 @@ When performing this type of migration, we recommend the following:
 + Use an SSD storage type for both your source and destination file systems. You can switch between HDD and SSD storage types by restoring from backup. For more information see: [Migrating existing file storage to FSx for Windows File Server](migrate-files-fsx.md).
 + Configure your source and destination file systems with sufficient throughput capacity for the amount of data that you need to transfer. During DataSync task processes, monitor the performance utilization of both the source and the destination file systems. For more information, see: [Monitoring with Amazon CloudWatch](monitoring-cloudwatch.md).
 + Set up [DataSync monitoring](https://docs.aws.amazon.com/datasync/latest/userguide/monitor-datasync.html) to help you understand the progress of ongoing tasks. You can also send DataSync logs to the Amazon CloudWatch Logs group to assist you with debugging your tasks if you encounter any errors.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

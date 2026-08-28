@@ -847,3 +847,7 @@ To stop the processing job from running, do the following:
 To stop a processing job from running, delete the event rule that specifies the schedule. Deleting an event rule stops all the jobs associated with the schedule from running. For information about deleting a rule, see [Disabling or deleting an Amazon EventBridge rule](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-delete-rule.html).
 
 You can stop and delete the pipelines associated with the schedules as well. For information about stopping a pipeline, see [StopPipelineExecution](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopPipelineExecution.html). For information about deleting a pipeline, see [DeletePipeline](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeletePipeline.html#API_DeletePipeline_RequestSyntax).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -62,3 +62,7 @@ Calculating the return on investment for agentic AI systems begins with a compre
 For break-even analysis, organizations should consider implementation costs, ongoing operational expenses, and the volume needed to justify investment. It's also important to account for seasonal variations and the learning curve benefits that emerge as systems mature and improve over time.
 
 When evaluating AI agents, organizations should remember that these systems typically have higher upfront costs but lower per-transaction costs compared to human operations. Additionally, AI agents demonstrate improving performance over time and offer better scalability than human teams. This makes them increasingly cost-effective as deployment scales and operational experience accumulates.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

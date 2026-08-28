@@ -10,3 +10,7 @@ Amazon Fraud Detector is no longer open to new customers as of November 7, 2025.
 Amazon Fraud Detector uses machine learning models for generating fraud predictions. Each model is trained using a *model type*. The model type specifies the algorithms and transformations used for training the model. Model training is the process of using a dataset that you provide to create a model that can predict fraudulent events.
 
 To create a model, you must first choose a model type and then prepare and provide data that will be used to train the model.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

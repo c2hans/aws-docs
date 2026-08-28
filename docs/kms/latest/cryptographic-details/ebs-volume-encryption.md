@@ -20,3 +20,7 @@ The following workflow encrypts data that is being written to an Amazon EBS volu
 1. The volume key is used to encrypt and decrypt all data going to and from the attached Amazon EBS volume. Amazon EBS retains the encrypted volume key for later use in case the volume key in memory is no longer available.
 
 For more information about encrypting Amazon EBS volumes with KMS keys, see [How Amazon Elastic Block Store uses AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/services-ebs.html) in the *AWS Key Management Service Developer Guide* and **Amazon EBS encryption** in the [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html) and [Amazon EC2 User Guide](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/EBSEncryption.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ AWS Control Tower doesn't support parameter configuration for detective controls
 
 **Important**
 Before you adopt service-linked Config rules, review the existing customizations, such as remediations, that you have made to Config rules outside of AWS Control Tower, because these customizations will be removed during the transition. The AWS Config APIs do not support adding remediation configurations for service-linked AWS Config rules. See [`PutRemediationConfigurations`](https://docs.aws.amazon.com/config/latest/APIReference/API_PutRemediationConfigurations.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

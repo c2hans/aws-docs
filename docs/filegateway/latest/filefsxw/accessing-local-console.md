@@ -85,3 +85,7 @@ If your gateway VM is turned on, `Running` is displayed in the **State** column 
 1. Enter your username and password to log into the gateway local console. For more information, see [Logging in to the File Gateway local console ](https://docs.aws.amazon.com/filegateway/latest/filefsxw/manage-on-premises-fgw.html#LocalConsole-login-fgw).
 
    After you log in, the **AWS Appliance Activation - Configuration** menu appears. You can select from the menu options to perform gateway configuration tasks. For more information, see [Performing tasks on the virtual machine local console ](https://docs.aws.amazon.com/filegateway/latest/filefsxw/manage-on-premises-fgw.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

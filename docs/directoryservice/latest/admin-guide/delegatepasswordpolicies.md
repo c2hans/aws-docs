@@ -14,3 +14,7 @@ You can delegate permissions to manage password policies to specific user accoun
 1. Switch to the **Tree View** and navigate to the **AWS Delegated Groups** OU. For more information about this OU, see [What gets created with your AWS Managed Microsoft AD](ms_ad_getting_started_what_gets_created.md).
 
 1. Find the **AWS Delegated Fine Grained Password Policy Administrators** user group. Add any users or groups from your domain to this group.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ For a Volume Gateway that you deploy on-premises, you can perform the following 
 + [Testing your gateway connection to the internet](MaintenanceTestGatewayConnectivity-common.md) - Learn about how you can use the gateway local console to test the connection between the gateway and the internet.
 + [Running storage gateway commands in the local console for an on-premises gateway](MaintenanceGatewayConsole-common.md) - Learn about how to run local console commands that allow you to perform additional tasks such as saving routing tables, connecting to Support, and more.
 + [Viewing your gateway system resource status](system-resource-check-common.md) - Learn about how to check the virtual CPU cores, root volume size, and RAM that are available to your gateway appliance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,3 +65,7 @@ In order to upload an archive you must have a vault created. For more informatio
    ```
 
    When finished the command will output the archive ID, checksum, and location in Amazon Glacier. For more information about the upload-archive command, see [upload-archive](https://docs.aws.amazon.com/cli/latest/reference/glacier/upload-archive.html) in the *AWS CLI Command Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Glacier. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonglacier` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

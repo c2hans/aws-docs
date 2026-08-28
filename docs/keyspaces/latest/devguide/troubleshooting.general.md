@@ -53,3 +53,7 @@ SELECT * FROM system.peers;
 If the response for this query is empty, this indicates that you're working with a single node for Amazon Keyspaces. If you're using the default retry policy, there will be no retries because the default retry always occurs on a different node. To learn more about establishing connections over VPC endpoints, see [How to configure connections over VPC endpoints in Amazon Keyspaces](connections.md#connections.VPCendpoints).
 
 For a step-by-step tutorial that shows how to establish a connection to Amazon Keyspaces using the Datastax 4.x Cassandra driver, see [Step-by-step tutorial to connect to Amazon Keyspaces using the 4.x DataStax Java driver for Apache Cassandra and the SigV4 authentication plugin](using_java_driver.md#java_tutorial.SigV4).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

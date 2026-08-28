@@ -61,7 +61,10 @@ Customers can't on-board to services and features in the maintenance stage. Cust
 | Amazon SageMaker AI – Debugger | June 30, 2026 | [Amazon SageMaker AI – Debugger availability change](https://docs.aws.amazon.com/sagemaker/latest/dg/model-debugger-change.html) |
 | Amazon SageMaker AI – GeoSpatial | June 30, 2026 | [Amazon SageMaker AI – GeoSpatial availability change](https://docs.aws.amazon.com/sagemaker/latest/dg/geospatial.html) |
 | Amazon SageMaker AI – Ground Truth | June 30, 2026 | [Amazon SageMaker AI – Ground Truth availability change](https://docs.aws.amazon.com/sagemaker/latest/dg/sms.html) |
-| Amazon SageMaker AI – Mechanical Turk | June 30, 2026 | [Amazon SageMaker AI – Mechanical Turk availability change](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-workforce-management-public.html) |
 | Amazon SageMaker AI – Model Monitor | June 30, 2026 | [Amazon SageMaker AI – Model Monitor availability change](https://docs.aws.amazon.com/sagemaker/latest/dg/model-monitor-availability-change.html) |
 | Amazon SageMaker AI – Role Manager | June 30, 2026 | [Amazon SageMaker AI – Role Manager availability change](https://docs.aws.amazon.com/sagemaker/latest/dg/role-manager-availability-change.html) |
 | Amazon SageMaker AI – Studio Lab | June 30, 2026 | [Amazon SageMaker AI – Studio Lab availability change](https://docs.aws.amazon.com/sagemaker/latest/dg/studio-lab-availability-change.html) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ For classification of semi-structured documents (image, PDF, or Docx files) usin
 + [Analysis jobs for custom classification (console)](analysis-jobs-custom-classifier.md)
 + [Analysis jobs for custom classification (API)](analysis-jobs-custom-class-api.md)
 + [Outputs for asynchronous analysis jobs](outputs-class-async.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

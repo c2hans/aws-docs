@@ -28,12 +28,12 @@ Each Agent Space represents a distinct application or project you want to secure
 
 | Resource | What it is | Why it’s scoped per application |
 | --- | --- | --- |
-|  **Continuum penetration test configurations**  | Test configurations for specific features, API endpoints, or functionality within your application | Each application has unique targets, authentication methods, and scope boundaries specific to that application. |
-|  **Continuum design reviews**  | Individual architectural security assessments of design documents | Each application has its own architecture and design documents that are assessed independently. |
-|  **Continuum threat models**  | Threat modeling assessments that build a system overview and identify threats from source code, design documents, or both | Each application has its own code and design, and is threat modeled independently. Threat models are reusable configurations that you can re-run as your code and design evolve. |
+|  **Penetration test configurations**  | Test configurations for specific features, API endpoints, or functionality within your application | Each application has unique targets, authentication methods, and scope boundaries specific to that application. |
+|  **Design reviews**  | Individual architectural security assessments of design documents | Each application has its own architecture and design documents that are assessed independently. |
+|  **Threat models**  | Threat modeling assessments that build a system overview and identify threats from source code, design documents, or both | Each application has its own code and design, and is threat modeled independently. Threat models are reusable configurations that you can re-run as your code and design evolve. |
 |  **Integrations**  | Source and documentation providers (GitHub, GitLab, Bitbucket, GitHub Enterprise Server, and Confluence) connected to this Agent Space | Different applications rely on different sources and documentation. Connecting them at the Agent Space level keeps application boundaries clear. |
-|  **Continuum code review settings**  | Configuration of code review capabilities including connected sources, scan settings, and PR comment enablement | Each application has its own repositories and security review needs configured independently. |
-|  **Continuum penetration test remediation settings**  | Configuration of which connected repositories can receive automated fix pull requests for penetration testing findings | Teams control where AWS Security Agent can submit code changes based on their application’s workflow. |
+|  **Code review settings**  | Configuration of code review capabilities including connected sources, scan settings, and PR comment enablement | Each application has its own repositories and security review needs configured independently. |
+|  **Penetration test remediation settings**  | Configuration of which connected repositories can receive automated fix pull requests for penetration testing findings | Teams control where AWS Security Agent can submit code changes based on their application’s workflow. |
 |  **User assignments**  | Users who have access to this specific Agent Space | Teams only see security assessments for applications they’re responsible for, keeping work organized and focused. |
 
 **Tip**
@@ -50,7 +50,7 @@ GitHub repositories are integrated through a multi-step process that connects or
 
 1.  **Configure usage per repository** - Enable specific capabilities for each connected repository:
    +  **Code review** - Full source code scanning and automated pull request analysis
-   +  **Continuum penetration testing context** - Application understanding from source code during penetration tests
+   +  **Penetration testing context** - Application understanding from source code during penetration tests
    +  **Automatic code remediation** - Automated pull requests with vulnerability fixes for code review and penetration testing findings
 
 A single repository can be connected to multiple Agent Spaces with different capabilities enabled in each one.
@@ -60,8 +60,8 @@ A single repository can be connected to multiple Agent Spaces with different cap
 
 Each security capability in AWS Security Agent follows a different workflow model based on how security teams use it.
 
-### Continuum penetration testing: Reusable configurations with independent executions
-<a name="_continuum_penetration_testing_reusable_configurations_with_independent_executions"></a>
+### Continuum for penetration testing: Reusable configurations with independent executions
+<a name="_continuum_for_penetration_testing_reusable_configurations_with_independent_executions"></a>
 
 Penetration tests use a configuration-and-run model that supports iterative security testing:
 +  **Create once, execute many times** - Define a configuration for a specific target (API endpoint, feature area) with scope boundaries, authentication, and test parameters
@@ -69,8 +69,8 @@ Penetration tests use a configuration-and-run model that supports iterative secu
 
 This model supports continuous security validation as you develop and deploy improvements.
 
-### Continuum design reviews: One-off assessments with cloning
-<a name="_continuum_design_reviews_one_off_assessments_with_cloning"></a>
+### Continuum for design reviews: One-off assessments with cloning
+<a name="_continuum_for_design_reviews_one_off_assessments_with_cloning"></a>
 
 Design reviews are independent assessments that don’t follow a reusable configuration model:
 +  **Single assessment** - Each design review analyzes uploaded documents once against your organization’s security requirements
@@ -79,8 +79,8 @@ Design reviews are independent assessments that don’t follow a reusable config
 
 This model supports point-in-time architectural security assessments.
 
-### Continuum code reviews: Reusable configurations with on-demand scans and automatic PR analysis
-<a name="_continuum_code_reviews_reusable_configurations_with_on_demand_scans_and_automatic_pr_analysis"></a>
+### Continuum for code reviews: Reusable configurations with on-demand scans and automatic PR analysis
+<a name="_continuum_for_code_reviews_reusable_configurations_with_on_demand_scans_and_automatic_pr_analysis"></a>
 
 Code reviews provide two modes of operation for securing your source code:
 +  **Full code reviews (web application)** - Create code review configurations that select GitHub repositories or S3 sources, then run comprehensive scans on demand. Each run performs static analysis across your full source code and generates findings with remediation guidance. You can re-run the same code review configuration as your code evolves.
@@ -88,8 +88,8 @@ Code reviews provide two modes of operation for securing your source code:
 
 Both modes use your configured code review settings (security vulnerabilities, custom requirements, or both) and support automated code remediation through pull requests.
 
-### Continuum threat models: Reusable configurations with on-demand runs
-<a name="_continuum_threat_models_reusable_configurations_with_on_demand_runs"></a>
+### Continuum for threat models: Reusable configurations with on-demand runs
+<a name="_continuum_for_threat_models_reusable_configurations_with_on_demand_runs"></a>
 
 Threat models use a configuration-and-run model that supports iterative assessment of your architecture:
 +  **Create once, run many times** – Define a threat model by selecting source code as sources, uploading design documents as scope docs, or both. Run it on demand and re-run it as your code and design evolve.
@@ -100,3 +100,7 @@ Threat models use a configuration-and-run model that supports iterative assessme
 <a name="_understanding_resource_relationships"></a>
 
 The hierarchy determines where each resource lives: the AWS Management Console for tenant-level resources and Agent Space settings, the Security Agent web application for assessments and findings, and GitHub for pull request findings and remediation. For the full breakdown of what you do in each interface and the roles involved, see [How AWS Security Agent works](how-it-works.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

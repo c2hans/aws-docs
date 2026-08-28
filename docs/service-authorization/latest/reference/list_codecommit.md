@@ -173,6 +173,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Read
 
+- **   GetBlobDifferences  **
+  - **IAM action:**  [codecommit:GetBlobDifferences](#list_codecommit-action-GetBlobDifferences)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
+
 - **   GetBranch  **
   - **IAM action:**  [codecommit:GetBranch](#list_codecommit-action-GetBranch)
   - **Condition key:**
@@ -991,6 +997,12 @@ The following actions are defined by AWS CodeCommit but are not directly invocab
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_codecommit-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [GetBlobDifferences](API_GetBlobDifferences.html)  **
+  - **Description:** Grants permission to compute a structured, line-level diff between two blob versions in an AWS CodeCommit repository
+  - **Resource types (\*required):** [repository\*](#list_codecommit-resource-repository)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_codecommit-aws_ResourceTag___TagKey_)
+  - **Access level:** Read
+
 - **   [GetCommitHistory](https://docs.aws.amazon.com/codecommit/latest/userguide/auth-and-access-control-permissions-reference.html#aa-code)  **
   - **Description:** Grants permission to get information about the history of commits in a repository
   - **Resource types (\*required):** [repository\*](#list_codecommit-resource-repository)
@@ -1065,3 +1077,7 @@ AWS CodeCommit defines the following condition keys that can be used in the `Con
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag)  | Filters access by tag key-value pairs attached to the resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys)  | Filters access by the presence of tag keys in the request | ArrayOfString |
 |   [codecommit:References](https://docs.aws.amazon.com/codecommit/latest/userguide/how-to-conditional-branch.html)  | Filters access by Git reference to specified AWS CodeCommit actions | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

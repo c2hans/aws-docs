@@ -531,3 +531,7 @@ This step is required for you to deploy the component back to the core device af
 ------
 
 Your Hello World component is complete, and you can now upload it to the AWS IoT Greengrass cloud service. Then, you can deploy the component to Greengrass core devices.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

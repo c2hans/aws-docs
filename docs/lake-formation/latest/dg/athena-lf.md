@@ -55,3 +55,7 @@ Applying Lake Formation permissions allows you to secure your transactional data
 +  [Build an Apache Iceberg data lake using Amazon Athena, Amazon EMR, and AWS Glue](https://aws.amazon.com/blogs/big-data/build-an-apache-iceberg-data-lake-using-amazon-athena-amazon-emr-and-aws-glue/)
 + [Insert, update, delete on Amazon S3 with Athena and Apache Iceberg ](https://www.youtube.com/watch?v=u1v666EXCJw)
 + [LF-Tag based access control](https://catalog.us-east-1.prod.workshops.aws/workshops/78572df7-d2ee-4f78-b698-7cafdb55135d/en-US/lakeformation-basics/querying-datalake/tag-based-access-control) Lake Formation workshop on querying a data lake.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

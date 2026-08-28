@@ -30,3 +30,7 @@ The cost optimization pillar of the AWS Well-Architected Framework focuses on av
 + Use the Microsoft Data Deduplication in Windows feature to identify and eliminate redundant data. For more information, see [Data deduplication](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/using-data-dedup.html) in the Amazon FSx documentation.
 + Set user storage quotas on your file systems to limit the data storage that users can consume. For more information, see [Storage quotas](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/managing-user-quotas.html) in the Amazon FSx documentation.
 + Set a retention period for FSx for Windows File Server file system backups and cleanup. For more information, see [Working with backups](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/using-backups.html) in the Amazon FSx documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

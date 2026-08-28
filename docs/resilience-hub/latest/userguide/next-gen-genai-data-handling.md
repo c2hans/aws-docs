@@ -10,3 +10,7 @@ Failure mode assessments use Amazon Bedrock for AI inference. The following data
 + Data is not used to train or improve foundation models
 + Assessment inputs and outputs are stored in Next generation Resilience Hub-owned S3 buckets encrypted at rest
 + Customers can opt out of generative AI features entirely
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

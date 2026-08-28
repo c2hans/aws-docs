@@ -297,3 +297,7 @@ The following policy allows the `CreateConfigurationTemplate` action to create c
 
 `aws:ResourceTag/{{key-name}}``aws:RequestTag/{{key-name}}``aws:TagKeys`
 Specify tag-based conditions. For details, see [Using tags to control access to Elastic Beanstalk resources](AWSHowTo.iam.policies.access-tags.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

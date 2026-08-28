@@ -83,3 +83,7 @@ You can enable and manage some Security Hub CSPM controls from AWS Control Tower
 It is important to know that some Security Hub CSPM controls do not operate in certain AWS Regions where AWS Control Tower is available, because those Regions do not support the required underlying functionality. As a result, when you deploy an Security Hub CSPM control through AWS Control Tower, the control may not be operating in all Regions that you govern with AWS Control Tower. For more information about the Security Hub CSPM controls that cannot be deployed in certain Regions, see the [Security Hub CSPM controls reference documentation](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-controls-reference.html).
 
  You can view the most updated list of the Regions for each control in the AWS Control Tower console, or by calling the [`GetControl`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_GetControl.html) API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

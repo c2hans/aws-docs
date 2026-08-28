@@ -14,3 +14,7 @@ Fortigate Cloud Native Firewall (CNF) as a Service is a third-party firewall ser
 To use Fortigate CNF with Firewall Manager, you first subscribe to the [Fortigate Cloud Native Firewall (CNF) as a Service in the AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-vtjjha5neo52i). After subscribing, you perform a series of steps in the Fortigate CNF service to configure your global policy sets and other settings. Then, you create a Firewall Manager policy to centrally deploy and manage Fortigate CNF resources across all of the accounts in your AWS Organizations.
 
 For the procedure for creating a Fortigate CNF Firewall Manager policy, see [Creating an AWS Firewall Manager policy for Fortigate Cloud Native Firewall (CNF) as a Service](create-policy.md#creating-fortigate-cnf-policy). For information about how to configure and manage Fortigate CNF for use with Firewall Manager, see the [Fortigate CNF documentation]( https://docs.fortinet.com/product/fortigate-cnf).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

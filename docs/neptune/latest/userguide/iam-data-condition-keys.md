@@ -50,3 +50,7 @@ Neptune supports the following service-specific condition key for IAM policies:
 | Condition Keys | Description | Type |
 | --- | --- | --- |
 | neptune-db:QueryLanguage | Filters data access by the query language being used.<br />Valid values are: `Gremlin`, `OpenCypher`, and `Sparql`.<br />Supported actions are `ReadDataViaQuery`, `WriteDataViaQuery`, `DeleteDataViaQuery`, `GetQueryStatus`, and `CancelQuery`. | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

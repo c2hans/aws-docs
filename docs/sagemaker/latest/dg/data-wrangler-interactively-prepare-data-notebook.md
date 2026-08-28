@@ -139,3 +139,7 @@ For the target column, you can get the following insights to warn you about issu
 + **Large amount of classes/too many classes** – There's a large number of classes in the target column. Having many classes might result in longer training times or poor predictive quality. We recommend doing one of the following:
   + Grouping some of the categories into their own category. For example, if six categories are closely related, we recommend using a single category for them.
   + Using an ML algorithm that's resilient to multiple categories.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

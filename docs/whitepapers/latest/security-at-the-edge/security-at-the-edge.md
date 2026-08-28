@@ -30,3 +30,7 @@ Publication date: **September 24, 2021** ([Document history](document-revisions.
  Every AWS customer is unique, and “edge” can mean something different to different customers. Edge use cases and technology can range from autonomous vehicles, medical devices, oil rig sensors, industrial robots, nautical GPS, and meteorological devices. Mobile phones and robot vacuums are also examples of edge devices.
 
  The objective of AWS edge services is to provide consistent capabilities and customer experience from the edge to the cloud. AWS uses the same programming model for the cloud, on-premises infrastructure, and local devices. This gives you the choice of centralized control or de-centralized control, with decentralized implementation. You have access to the same environment to develop, connect, deploy, manage, and secure with the same tools, regardless of where your workloads are located.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

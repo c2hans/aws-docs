@@ -52,3 +52,7 @@ The following fields dictate how MediaPackage processes SCTE-35 messages from th
    + **Restricted** – MediaPackage inserts ad markers when there *are* delivery restrictions in the SCTE-35 message types that you indicated in **Customize ad triggers**.
    + **Unrestricted** – MediaPackage inserts ad markers when there *aren't* delivery restrictions in the SCTE-35 message types that you indicated in **Customize ad triggers**.
    + **Both** – MediaPackage inserts ad markers whether or not there are delivery restrictions in the SCTE-35 message types that you indicated in **Customize ad triggers**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

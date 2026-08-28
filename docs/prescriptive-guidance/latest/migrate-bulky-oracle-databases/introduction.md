@@ -14,3 +14,7 @@ There are many ways to migrate Oracle databases between systems that have differ
 Combining Oracle XTTS with Oracle Recovery Manager (RMAN) incremental backups can significantly reduce the amount of downtime required to move data between platforms running different endian formats.
 
 This guide introduces how to use [AWS Snowball](https://aws.amazon.com/snowball/), [AWS Direct Connect](https://aws.amazon.com/directconnect/), and [Amazon FSx for Lustre](https://aws.amazon.com/fsx/) with Oracle XTTS with RMAN incremental backups . The goal of this approach is to minimize migration downtime in environments that have very large datasets.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

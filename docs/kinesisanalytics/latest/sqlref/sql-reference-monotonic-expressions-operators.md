@@ -69,3 +69,7 @@ In order to exploit monotonicity in this way, Amazon Kinesis Data Analytics uses
 | [LOCALTIME](sql-reference-localtime.md)<br />[LOCALTIMESTAMP](sql-reference-local-timestamp.md)<br />[CURRENT\_ROW\_TIMESTAMP](sql-reference-current-row-timestamp.md)<br />[CURRENT\_DATE](sql-reference-current-date.md) | Ascending |
 
 Throughout the table, c is a constant, and m (also m1 and m2) is a monotonic expression.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

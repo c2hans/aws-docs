@@ -18,3 +18,7 @@ This diagram shows a scenario in which DevOps Guru coverage is specified by the
    DevOps Guru creates insights when it identifies unusual, anomalous behavior in the analyzed data. Each insight contains one or more recommendations, a list of the metrics used to generate the insight, a list of related log groups, and a list of the events used to generate the insight. Use this information to address the identified problem.
 
 1. After each insight is created, DevOps Guru sends a notification using the Amazon SNS topic or topics specified during DevOps Guru set up. If you enabled DevOps Guru to generate an OpsItem in Systems Manager OpsCenter, then each insight also triggers a new Systems Manager OpsItem. You can use Systems Manager to manage your insight OpsItems.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

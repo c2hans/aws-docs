@@ -26,3 +26,7 @@ Complete the following procedure to invite a user in your Wickr network.
    An email is sent to the user. The email provides download links for the Wickr client applications, and a link to register for Wickr. As users register for Wickr using the link in the email, their status in the Wickr team directory will change from **Pending** to **Active**.
 **Important**
 Invitation links expire after 21 days. If a user does not register within 21 days, you must resend the invitation from the **Team directory** tab.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

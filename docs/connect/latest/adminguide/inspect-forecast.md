@@ -16,3 +16,7 @@ To help make it easier to inspect a forecast in the Connect Customer admin websi
 
   Choose the **Override** setting to inspect the effect of any override you uploaded. The **Override** option is active only after an override has been uploaded. For more information, see [Edit a forecast](edit-forecast.md).
 + Filter by queues or channels to limit your forecast to one or more type.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

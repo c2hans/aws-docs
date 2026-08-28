@@ -38,3 +38,7 @@ It is your responsibility to encrypt data between your simulation agents and the
 <a name="inter-network-traffic-privacy"></a>
 
 AWS TNB compute resources reside in a virtual private cloud (VPC) shared by all customers. All internal AWS TNB traffic stayed within the AWS network and doesn't traverse the internet. Connections between your simulation agents and their clients are routed over the internet.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Telco Network Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tnb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

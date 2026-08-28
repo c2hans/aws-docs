@@ -15,3 +15,7 @@ The following sections provide information about logging.
 + [Logging AWS Marketplace Metering API calls with CloudTrail](logging-metering-api-calls-with-cloudtrail.md)
 + [Logging AWS Marketplace Deployment API calls with CloudTrail](logging-deployment-api-calls-with-cloudtrail.md)
 + [Logging AWS Marketplace Discovery API calls with AWS CloudTrail](logging-discovery-api-calls-with-cloudtrail.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

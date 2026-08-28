@@ -71,3 +71,7 @@ If the sender's request to SES succeeds, then SES sends the email and one of the
   Make sure that your SES-enabled program does not retry sending messages that generate an auto response.
 **Tip**
 You can use the SES mailbox simulator to test a successful delivery, bounce, complaint, OOTO, or what happens when an address is on the suppression list. For more information, see [Using the mailbox simulator manually](send-an-email-from-console.md#send-email-simulator).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

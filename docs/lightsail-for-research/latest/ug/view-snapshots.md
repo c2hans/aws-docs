@@ -14,3 +14,7 @@ Complete the following steps to view snapshots of your virtual computers and dis
    The **Snapshots** page displays virtual computer and disk snapshots that you have created.
 
    Archived snapshots are located on this page as well. Archived snapshots are snapshots of resources that have been deleted from your account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail for Research. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail-for-research` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

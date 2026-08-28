@@ -69,3 +69,7 @@ This table shows the fields that apply for an action to switch to a dynamic file
 | Date and time | If the Start type is Fixed, specify the date and time (in UTC format) when the channel must switch to this new input. This time must be at least 30 seconds in the future.Note that the time is the wall clock time, not the timecode in the input. |
 | Reference action name | If the **Start type** is **Follow**, choose the input to switch from, which is the input that precedes this new input. The dropdown list shows all existing input switches that are file inputs. Remember that input B can follow input A only if input A is a file input. For information about these switching rules, see [Fixed, immediate, and follow switches](ips-switch-types.md).<br />For example, if you want to switch from input A to input B, specify input A in this field. |
 | Follow point | If the Start type is Follow, complete this field. The follow point is always End, to indicate that the switch will occur when the input in Reference action name has finished. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

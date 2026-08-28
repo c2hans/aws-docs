@@ -103,3 +103,7 @@ Some of your workloads may have above-normal hardware requirements. Running CPU,
  **User scenario:** We have migrated several of our on-premises services to the cloud and are finding that some of our desktop applications are performing more slowly than they were before the migration. We believe that the latency between the desktops and the new cloud environment is causing these problems.
 
  When migrating data and backend applications to the cloud, think about proximity requirements. For example, consider where the client applications are located that process this data or interact with the backend applications, both pre- and post-migration. The new location of data and backend applications may introduce increased network latency or reduced network throughput, which in turn may require bringing your client applications closer to the data and backend. When migrating to the AWS Cloud, services like Amazon WorkSpaces can bring your client applications closer to the data and backend applications now residing in the AWS Cloud.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

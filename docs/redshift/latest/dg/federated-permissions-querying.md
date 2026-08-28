@@ -51,3 +51,7 @@ You can configure the following security controls on objects in the Amazon Redsh
 + **Column-Level Privileges (CLP)**: Grant or restrict access to specific columns
 + **Row-Level Security (RLS)**: Control access to specific rows based on user attributes
 + **Dynamic Data Masking (DDM)**: Automatically mask sensitive data based on user permissions
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

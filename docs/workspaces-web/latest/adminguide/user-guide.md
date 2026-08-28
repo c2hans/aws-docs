@@ -15,3 +15,7 @@ The following content helps guide end users who want to learn more about accessi
 + [Session guidance for Amazon WorkSpaces Secure Browser](session-guidance.md)
 + [Troubleshooting user issues in Amazon WorkSpaces Secure Browser](user-troubleshooting.md)
 + [Single sign-on extension for Amazon WorkSpaces Secure Browser](extension.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

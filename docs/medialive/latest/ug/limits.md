@@ -24,3 +24,7 @@ There is a limit on the number of actions that a channel schedule can contain. T
 <a name="limit-quota-elemental-inference"></a>
 
 There are quotas, separate from MediaLive quotas, that apply if you use the Elemental Inference features of MediaLive. These quotas are part of the AWS Elemental Inference service. For more information, see [Elemental Inference quotas](elemental-inference.md#elemental-inference-in-eml-quotas).<a name="limit-quota-defaults"></a>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

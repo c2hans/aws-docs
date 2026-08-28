@@ -20,3 +20,7 @@ Examples of innovative capabilities that help deliver significant changes in ope
   + High-touch customers who call more frequently than others, possibly allowing targeted outreach by an agent to preempt them from calling in
 
 A successful migration is only the start of the journey to reimagine and transform your contact center. AWS services provide innovative experiences that you can add to your contact center to generate unique customer and agent experiences.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

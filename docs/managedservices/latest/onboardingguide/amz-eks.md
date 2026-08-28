@@ -65,3 +65,7 @@ If you want to deploy an [ALB Ingress controller](https://docs.aws.amazon.com/ek
 + [Optional] Amazon EKS Cluster service account (SA) name. [default: aws-load-balancer-controller]
 
 If you want to enable envelope secrets encryption in your cluster (which we recommend), provide the KMS key IDs you intend to use, in the description field of the RFC to add the service (Management \| AWS service \| Self-provisioned service \| Add (ct-1w8z66n899dct). To learn more about envelope encryption, see [ Amazon EKS adds envelope encryption for secrets with AWS KMS](https://aws.amazon.com/about-aws/whats-new/2020/03/amazon-eks-adds-envelope-encryption-for-secrets-with-aws-kms/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

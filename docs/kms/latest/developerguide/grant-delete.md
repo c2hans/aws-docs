@@ -24,3 +24,7 @@ There is a `kms:RetireGrant` permission that can be used in IAM policies, but it
 + If the retiring principal is a different AWS account, administrators in the other account can use `kms:RetireGrant` to delegate permission to retire the grant to an IAM principal in that account.
 
 The AWS KMS API follows an [eventual consistency](grants.md#terms-eventual-consistency) model. When you create, retire, or revoke a grant, there might be a brief delay before the change is available throughout AWS KMS. It typically takes less than a few seconds for the change to propagate throughout the system, but in some cases it can take several minutes. If you need to delete a new grant immediately, before it is available throughout AWS KMS, [use a grant token](using-grant-token.md) to retire the grant. You cannot use a grant token to revoke a grant.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

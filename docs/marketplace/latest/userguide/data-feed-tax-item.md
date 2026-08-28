@@ -111,3 +111,7 @@ The following shows an example of the tax item data feed. In the data feed, this
 | 0.06 | 66.3 | USD | Taxable | 2018-07-31T00:00:00Z |
 | 0.01 | -0.36 | USD | NonTaxable | 2018-07-31T00:00:00Z |
 | 0 | 0 | USD | Exempt | 2019-06-30T00:00:00Z |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

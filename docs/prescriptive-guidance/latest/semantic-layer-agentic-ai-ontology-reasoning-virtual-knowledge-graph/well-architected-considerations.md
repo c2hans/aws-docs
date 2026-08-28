@@ -115,3 +115,7 @@ The semantic layer architecture should be evaluated against the six pillars of t
 + **Consolidate ontology namespaces**: Reduce redundant triples and ontology fragments to minimize storage and query processing overhead.
 + **Batch embedding operations**: When updating the vector store, batch entity embedding generation through Amazon Bedrock rather than making individual API calls — reduces compute cycles and network overhead.
 + **Data lifecycle policies**: Implement TTL or archival rules for temporal graph data (event entities, transient relationships) to prevent unbounded storage growth.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

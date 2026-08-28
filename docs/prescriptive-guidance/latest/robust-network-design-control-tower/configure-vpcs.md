@@ -41,3 +41,7 @@ Associate any private hosted zones with outbound VPC.
 <a name="vpc-flow-logs"></a>
 
 To record all requests to network interfaces for future analysis, configure VPC Flow Logs. For more information, see the [Amazon VPC documentation](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html) and the [Configure VPC Flow Logs for centralization across AWS accounts](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/configure-vpc-flow-logs-for-centralization-across-aws-accounts.html) pattern.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

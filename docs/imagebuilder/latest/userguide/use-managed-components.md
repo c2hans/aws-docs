@@ -13,3 +13,7 @@ The following list of featured AWS managed components includes a component that'
 + [Distributor package managed component application install for Image Builder Windows images](mgdcomponent-distributor-win.md)
 + [CIS hardening components](toe-cis.md)
 + [Amazon managed STIG hardening components for Image Builder](ib-stig.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -103,3 +103,7 @@ The following table lists the recommended processes and process metrics for each
   - **Recommended process:** `Msmdsrv` / **Recommended metric:** `procstat cpu_usage`,<br />`procstat memory_rss`,<br />`procstat memory_vms`,<br />`procstat read_bytes`,<br />`procstat write_bytes`
   - **Workload type:** .NET workerpool/Mid-Tier / **Recommended process:** `w3wp` / **Recommended metric:** `procstat cpu_usage`,<br />`procstat memory_rss`,<br />`procstat memory_vms`,<br />`procstat read_bytes`,<br />`procstat write_bytes`
   - **Workload type:** .NET Core Tier / **Recommended process:** `w3wp` / **Recommended metric:** `procstat cpu_usage`,<br />`procstat memory_rss`,<br />`procstat memory_vms`,<br />`procstat read_bytes`,<br />`procstat write_bytes`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

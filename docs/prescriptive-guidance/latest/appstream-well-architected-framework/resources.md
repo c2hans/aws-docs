@@ -49,3 +49,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/appstream-w
 + [Using Microsoft AppLocker to manage application experience on Amazon WorkSpaces Applications](https://aws.amazon.com/blogs/desktop-and-application-streaming/using-auth0-with-ad-on-amazon-appstream-2-0/)
 + [Using Python to power an WorkSpaces Applications Linux Imaging Assistant GUI](https://aws.amazon.com/blogs/desktop-and-application-streaming/using-python-to-power-an-appstream-2-0-linux-imaging-assistant-gui/)
 + [Web application redirection options for the WorkSpaces Applications Client](https://aws.amazon.com/blogs/desktop-and-application-streaming/web-application-redirection-options-for-the-appstream-2-0-client/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

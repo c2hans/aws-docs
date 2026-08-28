@@ -316,3 +316,7 @@ aws glue create-integration-resource-property \
 <a name="zero-etl-config-source-oracle"></a>
 
 Currently AWS Glue supports Oracle Databases at AWS as source and Redshift as target. The details of the setup can be found at [Setting up zero-ETL for Oracle Database at AWS](https://docs.aws.amazon.com/odb/latest/UserGuide/setting-up-zero-etl.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

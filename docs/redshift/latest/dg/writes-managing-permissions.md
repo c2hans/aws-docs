@@ -83,3 +83,7 @@ You can use granular sharing using WITH PERMISSIONS to enable clusters or Server
    GRANT USAGE ON SCHEMA my_ds_db.my_shared_schema TO bi_user;
    GRANT SELECT ON my_ds_db.my_shared_schema.table1 TO bi_user;
    ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

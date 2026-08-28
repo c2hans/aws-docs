@@ -184,3 +184,7 @@ Now Alice is broadcasting to multiple viewers, via the Amazon IVS Android Broadc
 For comparison, here is how [server-side composition](multiple-hosts-broadcasting-client-vs-server.md) works. (For details, see [Server-Side Composition](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/server-side-composition.html) in the *IVS Real-Time User Guide*.)
 
 ![Broadcasting the stage: server-side composition.](http://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/images/Demo_Broadcast_the_Stage_Server_Side_Composition.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

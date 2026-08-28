@@ -75,3 +75,7 @@ For more information, see [Secure an Amazon EC2 Linux or Unix instance that was 
 After you create a Windows Server instance in Amazon EC2 from an exported snapshot, any user in your AWS account with access to Lightsail and EC2 will be able to retrieve the default administrator password first assigned to the source instance, which is also the password for the new EC2 instance. For increased security, we recommend that you change the default administrator password for your Amazon EC2 instance, if you haven’t already done so.
 
 For more information, see [Secure an Amazon EC2 Windows Server instance that was created from a Lightsail snapshot](amazon-lightsail-securing-windows-server-amazon-ec2-instances.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

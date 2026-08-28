@@ -113,3 +113,7 @@ If your query returns a very large result set, consider rewriting the query to u
 If your query has an unusually large SELECT list, you might see a `bytes` value that is high relative to the `rows` value for any step (in comparison to other steps) in SVL\_QUERY\_SUMMARY. This high `bytes` value can be an indicator that you are selecting a lot of columns. For more information, see [Using the SVL\_QUERY\_SUMMARY view](using-SVL-Query-Summary.md).
 
 To fix this issue, review the columns you are selecting and see if any can be removed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

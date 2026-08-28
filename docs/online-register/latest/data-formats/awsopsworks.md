@@ -33,3 +33,7 @@ AWS OpsWorks provides the following APIs for data retrieval.
 | <a name="opsworks-DescribeVolumes"></a>[DescribeVolumes](https://docs.aws.amazon.com/opsworks/latest/APIReference/API_DescribeVolumes.html) | Describe an instance's Amazon EBS volumes | List |
 | <a name="opsworks-GetHostnameSuggestion"></a>[GetHostnameSuggestion](https://docs.aws.amazon.com/opsworks/latest/APIReference/API_GetHostnameSuggestion.html) | Get a generated host name for the specified layer, based on the current host name theme | Read |
 | <a name="opsworks-ListTags"></a>[ListTags](https://docs.aws.amazon.com/opsworks/latest/APIReference/API_ListTags.html) | Return a list of tags that are applied to the specified stack or layer | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

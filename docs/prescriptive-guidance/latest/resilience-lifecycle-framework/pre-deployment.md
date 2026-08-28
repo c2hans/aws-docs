@@ -28,3 +28,7 @@ Start by testing in the first environment. After your deployments pass all your 
 <a name="load-testing"></a>
 
 On the surface, load testing resembles integration testing. You test a discrete function of your application and its external dependencies to verify that it operates as expected. Load testing then goes beyond integration testing to focus on how the application functions under well-defined loads. Load testing requires verification of correct functionality, so it must occur after a successful integration test. It is important to understand how well the application responds under expected loads as well as how it behaves when the load exceeds expectations. This helps you  verify that you have implemented the necessary mechanisms to ensure that your application remains resilient under extreme load. For a comprehensive guide to load testing on AWS, see [Distributed Load Testing on AWS](https://aws.amazon.com/solutions/implementations/distributed-load-testing-on-aws/) in the AWS Solutions Library.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

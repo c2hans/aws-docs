@@ -98,3 +98,7 @@ In this step, you will connect the GitHub repository you just created to the AWS
 
    Once the build completes, select the **Visit deployed URL** button to see your web app up and running live.
 ![The AWS Amplify console showing the overview page for an expensetracker app after deployment, including production branch status, app domain, repository link, and a highlighted 'Visit deployed URL' button. Used for the tutorial step verifying successful web app deployment.](http://docs.aws.amazon.com/hands-on/latest/deploy-webapp-amplify/images/verify-deployment-amplifylong-console.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

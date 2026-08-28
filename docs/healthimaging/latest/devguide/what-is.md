@@ -98,3 +98,7 @@ For information about compliance, see [Compliance validation for AWS HealthImagi
 HealthImaging helps you automate the lifecycle management of clinical data with intelligent tiering. For more information, see [Cost Optimization](cost-optimization.md).
 
 For general pricing information, see [AWS HealthImaging pricing](https://aws.amazon.com/healthimaging/pricing/). To estimate costs, use the [AWS HealthImaging pricing calculator](https://calculator.aws/#/addService/healthimaging/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

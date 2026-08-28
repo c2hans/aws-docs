@@ -31,3 +31,7 @@ For more detailed information about the schema of CUR 2.0, see the [Data Exports
 You can migrate to CUR 2.0 in Data Exports in two ways:
 + [Method one: Create an export with an SQL query using the CUR schema](https://docs.aws.amazon.com/cur/latest/userguide/data-exports-migrate-one.html)
 + [Method two: Create an export of CUR 2.0 with its new schema](https://docs.aws.amazon.com/cur/latest/userguide/data-exports-migrate-two.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

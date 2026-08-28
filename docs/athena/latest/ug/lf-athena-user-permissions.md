@@ -66,3 +66,7 @@ Underlying source data in Amazon S3 and metadata in the catalog that is register
 To query an Amazon S3 data location in a different account, a resource-based IAM policy (bucket policy) must allow access to the location. For more information, see [Configure cross-account access in Athena to Amazon S3 buckets](cross-account-permissions.md).
 
 For information about accessing catalogs in another account, see [Option A: Configure cross-account Data Catalog access in Athena](lf-athena-limitations-cross-account.md#lf-athena-limitations-cross-account-glue).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

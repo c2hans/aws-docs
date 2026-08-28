@@ -17,3 +17,7 @@ Fields that can be set up with parameters have a blue background in the web inte
 + [Planning ahead for bulk changes](profile-channel-params-plan-ahead.md)
 + [Use case: Using SDI direct input in a profile and channel](using-sdi-direct-input-in-a-profile-and-channel.md)
 + [Use case: Using SDI router input in a profile and channel](using-sdi-router-input-in-a-profile-and-channel.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

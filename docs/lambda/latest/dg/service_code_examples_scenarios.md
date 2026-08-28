@@ -29,3 +29,7 @@ Scenarios target an intermediate level of experience to help you understand serv
 + [Use the Neptune API to query graph data](example_cross_Neptune_Query_section.md)
 + [Using property variables in monitoring dashboards to monitor multiple serverless functions](example_iam_GettingStarted_032_section.md)
 + [Write custom activity data with a Lambda function after Amazon Cognito user authentication](example_cross_CognitoCustomActivityLog_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

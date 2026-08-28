@@ -198,3 +198,7 @@ For low latency HLS implementations, consider using a custom caching policy with
   Applying consistent CORS handling across both ad segments and content segments creates a more reliable playback experience and simplifies troubleshooting. Without proper CORS configuration, players might experience inconsistent behavior when transitioning between content and ads.
 
   For details about what's included in the response headers policy, see [CORS-with-preflight-and-SecurityHeadersPolicy](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/using-managed-response-headers-policies.html#managed-response-headers-policies-cors-preflight-security) in the CloudFront user guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

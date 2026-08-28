@@ -145,3 +145,7 @@ asyncio.run(main())
 Once the Bazaar target is configured, your agents can discover and call paid x402 endpoints through the Gateway. When an endpoint returns HTTP 402, AgentCore payments handles the payment flow automatically if you have configured a payments plugin (Strands) or middleware (LangGraph) in your agent. To learn more, see [Framework integrations](payments-framework-integrations.md).
 
 To set up the Payment Manager and Connector required for processing payments, see [Create a Payment Manager and Connector](payments-create-manager.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

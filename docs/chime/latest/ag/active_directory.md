@@ -82,3 +82,7 @@ A user with the **username** shirley.rodriguez is a member of an Amazon Chime ac
 + Proxy email address 2: srodriguez@example.org
 
 This user can sign into Amazon Chime using any of their work email addresses. Other users can also add them as a contact, invite them to meetings, or add them as a delegate using any of their work email addresses.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

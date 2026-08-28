@@ -112,3 +112,7 @@ Rows is the estimated number of rows to return. In this example, the scan is exp
 <a name="width.5b2ad045-db62-5410-adcf-eed716b1bbd8"></a>
 
 Width is the estimated width of the average row, in bytes. In this example, the average row is expected to be 14 bytes wide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

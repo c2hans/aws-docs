@@ -22,3 +22,7 @@ Publication date: **September 29, 2021** ([Document history](document-revisions.
 +  Adopt the appropriate customer-usable controls for that purpose.
 
  This whitepaper explains how to achieve the latter when using Amazon Web Services (AWS) for cloud infrastructure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

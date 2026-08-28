@@ -34,3 +34,7 @@ The information in the response for clusters is the following:
 + Alert type: `CLUSTER_NODE_HEALTH` for every type of alert.
 + Message: A long description, which might include variables that resolve differently in each cluster or in each instance of an alert.
 + ID: A long description that is often equivalent to the message.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

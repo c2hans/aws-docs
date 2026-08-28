@@ -130,3 +130,7 @@ Configure PuTTY, now that you have all of the requirements to connect to your Li
 <a name="connecting-to-linux-unix-instances-next-steps"></a>
 
 Your new Linux or Unix instance in Amazon EC2 contains residual keys from the Lightsail service, if you use Amazon EC2 to create new instances from your exported snapshots. We recommend removing these keys to enhance security for your new Amazon EC2 instance. For more information, see [Secure your Linux or Unix instance in Amazon EC2 created from a Lightsail snapshot](amazon-lightsail-securing-linux-unix-amazon-ec2-instances.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

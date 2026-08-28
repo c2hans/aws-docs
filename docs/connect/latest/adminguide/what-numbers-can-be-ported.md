@@ -51,3 +51,7 @@ If your intent to is release the remaining phone numbers not being ported to Con
 <a name="letter-of-compromise"></a>
 
 Before porting phone numbers, some customers ask for a letter of compromise stating that they will be allowed to move their phone numbers from Connect Customer to another service, if their contact center moves. Because of Telecom regulations in various countries, the phone number will need to be evaluated on a case-by-case basis. To verify that your phone number can be ported to Connect Customer, [submit a ticket to Connect Customer support](about-porting.md#step1-porting) .
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

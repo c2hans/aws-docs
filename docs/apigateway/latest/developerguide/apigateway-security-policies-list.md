@@ -81,3 +81,7 @@ OpenSSL and IETF RFC 5246 use different names for the same ciphers. The followin
 | AES256-SHA | TLS\_RSA\_WITH\_AES\_256\_CBC\_SHA |
 | AES128-SHA | TLS\_RSA\_WITH\_AES\_128\_CBC\_SHA |
 | DES-CBC3-SHA | TLS\_RSA\_WITH\_3DES\_EDE\_CBC\_SHA |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

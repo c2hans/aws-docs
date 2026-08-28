@@ -31,3 +31,7 @@ The following table summarizes the changes for each release of AWS Backint agent
 | 1.02 | \* Bug fix: Backup failure at high throughput due to failed connection with S3. | November 19, 2020 |
 | 1.01 | \* Added Region support: AWS GovCloud (US) \* Added support for specifying number of S3 threads that can run in parallel using UploadConcurrency parameter in configuration file.<br />\* Removed -o flag. \* Added -l flag, which allows you to specify the location of the agent .tar file.<br />\* Added support for specifying the agent installation version. \* Added support to ignore S3 bucket validations.<br />\* Bug fix: Occasional installation failure when AWS CLI installation is selected. | July 17, 2020 |
 | 1.0 | Initial release | May 18, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

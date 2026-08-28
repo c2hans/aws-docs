@@ -16,3 +16,7 @@ When you change the governance status of an OU, the AWS Control Tower console pe
   Any time you deregister an OU, you must first remove all member accounts and nested OUs. Then, AWS Control Tower removes all controls that are applied to the OU.
   + If you select **Delete OU** the OU from the console, AWS Control Tower proceeds to deregister and then delete the OU from your organization.
   + However, if you deregister the OU by calling the `DisableBaseline` API to remove the `AWSControlTowerBaseline` from the OU, AWS Control Tower does not delete the OU from your organization, the OU is still present in the organization, unregistered.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

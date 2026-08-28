@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
  If you are planning to use WorkSpaces Applications fleets in an Active Directory domain, you can use Group Policies Objects (GPOs) to manage user experience. GPOs can be assigned to the Organizational Unit (OU) in which the WorkSpaces Applications instances are created. To simplify image creation, launch the base WorkSpaces Applications Image in an OU that blocks inheritance. This prevents other domain policies impacting the WorkSpaces Applications user experiences. Deploy each fleet into its dedicated OU, with unique GPOs establishing the environment allows the one-to-many consolidated benefit of WorkSpaces Applications image management.
 
  An example of using Group Policy is to specify image set [*different Internet Explorer homepages for each WorkSpaces Applications fleet*](https://docs.aws.amazon.com/appstream2/latest/developerguide/customize-fleets.html#customize-fleets-change-ie-homepage-group-policy).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

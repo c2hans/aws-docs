@@ -139,3 +139,7 @@ The following table shows how AWS evaluates this policy based on the condition k
 |  <pre>"ForAnyValue:StringEquals": {<br />  "aws:TagKeys": "webserver"<br />}</pre>  | <pre>aws:TagKeys:<br />  – environment<br />  – webserver<br />  – test</pre>  | **Match** |
 |  <pre>"ForAnyValue:StringEquals": {<br />  "aws:TagKeys": "webserver"<br />}</pre>  | <pre>aws:TagKeys:<br />  – environment<br />  – test</pre>  | **No match**<br />May be allowed by another statement. |
 |  <pre>"ForAnyValue:StringEquals": {<br />  "aws:TagKeys": "webserver"<br />}</pre>  | No `aws:TagKeys` in the request context. | **No match**<br />May be allowed by another statement. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

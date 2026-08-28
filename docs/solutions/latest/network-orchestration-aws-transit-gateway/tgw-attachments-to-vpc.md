@@ -72,3 +72,7 @@ Starting in version 3.3.0 of this solution, we support a new tag key **Route-to-
 | --- | --- | --- |
 |  **Attach-to-tgw**  |  *<Leave blank>*  | The default key is `Attach-to-tgw`. Don’t enter a value. <br />You can change the name of the key in the template during initial configuration, but you must use the same key name when you tag the subnet.<br />If there isn’t an explicit route table associated with the subnet, the solution updates the main route table with the default route. |
 |  **Route-to-tgw**  |  *<Leave blank>*  | The default key is `Route-to-tgw`. Don’t enter a value. <br />You can change the name of the key in the template during initial configuration, but you must use the same key name when you tag the subnet.<br />If there isn’t an explicit route table associated with the subnet, the solution updates the main route table with the default route. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Network Orchestration for AWS Transit Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -936,3 +936,7 @@ Run the following registry command to create this registry key with the Command 
    ```
 
 1. (Optional) To help take advantage of the single display of up to 4K resolution, set up the high-performance display protocol [Amazon DCV](https://docs.aws.amazon.com/dcv/). If you do not require this functionality, do not complete this step.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

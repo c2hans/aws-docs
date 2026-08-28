@@ -32,3 +32,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
  **Read Only Domain Controller (RODC**). Read-only domain controllers (RODCs) hold a copy of the AD DS database and respond to authentication requests, but applications or other servers cannot write to them. RODCs are typically deployed in locations where physical security cannot be provided.
 
  **VPC Peering.** A VPC peering connection is a networking connection between two VPCs that enables you to route traffic between them using private IPv4 or IPv6 addresses. Instances in either VPC can communicate with each other as if they are within the same network.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

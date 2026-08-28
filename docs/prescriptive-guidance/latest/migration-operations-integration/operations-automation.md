@@ -16,3 +16,7 @@ You are not expected to have all your IT operations fully automated on day 1. T
 | **Provisioning and configuration management** | Provisioning, continuous integration and continuous delivery (CI/CD) pipeline and toolset, release management, testing framework and toolset, code repository, branching strategy, blue/green deployments, configuration management database (CMDB), configuration items |
 | **Availability and continuity management** | High availability architecture, automatic scaling, [backup and restore](https://docs.aws.amazon.com/prescriptive-guidance/latest/backup-recovery/welcome.html), replication, recovery time objective (RTO) and recovery point objective (RPO), data storage and retention policy, [disaster recovery](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-database-disaster-recovery/defining.html), automation and bots, hybrid options, storage gateways |
 | **Monitoring and observability** | Metrics, logging, application performance, user experience, network monitoring, unified dashboards |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

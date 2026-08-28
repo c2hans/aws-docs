@@ -34,3 +34,7 @@ Double curly braces `{{}}` are used to indicate where data from your prompt data
 + [Anthropic Claude 3.5 Haiku](model-evaluation-type-kb-haiku35.md)
 + [Meta Llama 3.1 70B Instruct](model-evaluation-type-kb-llama.md)
 + [Mistral Large 1 (24.02)](model-evaluation-type-kb-prompt-kb-mistral.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

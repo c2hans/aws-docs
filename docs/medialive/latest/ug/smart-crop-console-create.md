@@ -64,3 +64,7 @@ Save the channel. MediaLive calls the Elemental Inference `AssociateFeed` endpoi
 You now have a usable feed: resource - feed - output.
 
 You can start the channel. When the channel is running, MediaLive delivers the source stream to Elemental Inference and then retrieves metadata from Elemental Inference that describes the region of interest in each video frame. In each video output where smart crop is set up, MediaLive crops the video to the new region of interest. MediaLive then continues with regular processing to encode the video.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

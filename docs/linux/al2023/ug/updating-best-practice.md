@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/updating-best-practice.h
 
 **Warning**
  Running `dnf --releasever=latest update` is not best practice, and is likely to result in an OS update being first tested in production.
- Instead of using `latest`, use a specific AL2023 release version. This ensures you are deploying the same changes across production instances as you previously tested. For example, `dnf --releasever=2023.12.20260724 update` will always update to the 2023.12.20260724 release.
+ Instead of using `latest`, use a specific AL2023 release version. This ensures you are deploying the same changes across production instances as you previously tested. For example, `dnf --releasever=2023.12.20260817 update` will always update to the 2023.12.20260817 release.
  For more information, see the [Updating AL2023](https://docs.aws.amazon.com/linux/al2023/ug/updating.html) section in the [AL2023 User Guide](https://docs.aws.amazon.com/linux/al2023/ug/).
 
  Without planning for deployment safety of OS updates, the impact of an unexpected negative interaction between your application/service and an OS update can be significantly greater, up to and including a total outage. As with any software issue, the earlier the issue is detected, the less impact it can have on end users.
@@ -75,3 +75,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/updating-best-practice.h
  For features such as 32-bit support, deprecation can span multiple major versions of the OS. For 32-bit, Amazon Linux 1 (AL1) deprecated [32-bit x86 (i686) AMIs](deprecated-al1.md#deprecated-32bit-amis), Amazon Linux 2 deprecated [32-bit x86 (i686) Packages](deprecated-al2.md#deprecated-32bit-rpms), and Amazon Linux 2023 deprecates [32bit x86 (i686) runtime support](deprecated-al2023.md#deprecated-32bit). The transition away from [IMDSv1](deprecated-al2023.md#deprecated-imdsv1) also spans multiple major versions of the OS. For these types of changes, it is understood that some customers require a longer time to adapt to them, thus there is a large amount of leeway before the functionality is no longer available in Amazon Linux 2023.
 
  The list of deprecated functionality is updated over the lifetime of the OS, and it is advisable to keep up to date with changes to it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

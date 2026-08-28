@@ -68,3 +68,7 @@ Here are a few important performance considerations when working with file syste
 + Workloads reading data with smaller I/O sizes will require higher concurrency and incur more request costs to achieve the same throughput as workloads using large I/O sizes due to higher latency from Intelligent-Tiering storage tiers. We recommend configuring your SSD read cache large enough to support the higher concurrency and throughput when working with smaller IO sizes.
 + The maximum disk IOPS your clients can drive with an Intelligent-Tiering file system depends on the specific access patterns of your workload and whether you have provisioned an SSD read cache. For workloads with random access, clients can typically drive much higher IOPS if the data is cached in the SSD read cache than if the data is not in the cache.
 + Intelligent-Tiering storage class supports read-ahead to optimize performance for sequential read requests. We recommend configuring your data access pattern sequentially when possible to allow for pre-fetching data and higher performance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

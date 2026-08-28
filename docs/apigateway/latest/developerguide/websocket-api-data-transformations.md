@@ -38,3 +38,7 @@ Currently the value is fixed depending on the `[`integrationType`](https://docs.
 + For Lambda-based integrations, it is `$integration.response.body.errorMessage`.
 + For `HTTP` and `MOCK` integrations, it is `$integration.response.statuscode`.
 + For `HTTP_PROXY` and `AWS_PROXY`, the expression isn't utilized because you're requesting that the payload pass through to the caller.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

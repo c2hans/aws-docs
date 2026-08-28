@@ -42,3 +42,7 @@ The [keyring](choose-keyring.md) (or [master key provider](concepts.md#master-ke
 1. The keyring uses its wrapping keys to decrypt one of the encrypted data keys. If it's successful, the response includes the plaintext data key. If none of the wrapping keys specified by the keyring or master key provider can decrypt an encrypted data key, the decrypt call fails.
 
 1. The decryption method uses the plaintext data key to decrypt the data, discards the plaintext data key, and returns the plaintext data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

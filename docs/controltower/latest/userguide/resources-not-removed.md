@@ -70,3 +70,7 @@ Customers on landing zone 3.0 and later do not need to delete their individual e
 Beginning with landing zone version 3.2, AWS Control Tower creates an Amazon EventBridge rule, called `AWSControlTowerManagedRule`. This rule is created in each member account, for all governed Regions. The rule is not deleted automatically during decommissioning, so you must delete it manually from the service integration accounts and member accounts for all governed Regions before you can set up a landing zone in a new Region.
 
 Procedures for how to delete AWS Control Tower resources are given in [Remove AWS Control Tower resources](walkthrough-delete.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

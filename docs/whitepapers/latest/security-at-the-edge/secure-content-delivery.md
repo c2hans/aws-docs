@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/
  To create a more secure CDN, organizations can gain protection against L3/L4 DDoS attacks using [AWS Shield](https://aws.amazon.com/shield/). AWS also offers AWS Shield Advanced, which provides additional detection and mitigation against large and sophisticated DDoS attacks, near-real-time visibility into attacks, and integration with [AWS WAF](https://aws.amazon.com/waf/), a web application firewall service, to protect against application layer (L7) attacks. Together, these services create a flexible, layered security perimeter.
 
  CloudFront offers security capabilities, including field-level encryption and HTTPS support, seamlessly running with AWS Shield Advanced, AWS WAF, and [Amazon Route 53](https://aws.amazon.com/route53/) to protect against multiple types of attacks, including network and application layer DDoS attacks. For more details about CloudFront and Route 53, see the [Appendix](appendix-aws-services-for-edge-computing.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

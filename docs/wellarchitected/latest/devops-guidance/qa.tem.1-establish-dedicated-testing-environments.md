@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/q
 +  [Development and Test on Amazon Web Services](https://docs.aws.amazon.com/whitepapers/latest/development-and-test-on-aws/testing-phase.html)
 +  [Test environments in AWS Device Farm](https://docs.aws.amazon.com/devicefarm/latest/developerguide/test-environments.html)
 +  [Deployment Pipeline Reference Architecture](https://pipelines.devops.aws.dev/application-pipeline/index.html#test-gamma)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

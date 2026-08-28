@@ -82,3 +82,7 @@ AWS provides SDKs (software development kits) that consist of libraries and samp
 <a name="intro-managing-iam-section-3"></a>
 
 You can access IAM and AWS programmatically by using the IAM Query API, which lets you issue HTTPS requests directly to the service. When you use the Query API, you must include code to digitally sign requests using your credentials. For more information, see [Calling the IAM API using HTTP query requests](programming.md) and the [IAM API Reference](https://docs.aws.amazon.com/IAM/latest/APIReference/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

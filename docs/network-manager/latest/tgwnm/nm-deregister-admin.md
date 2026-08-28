@@ -18,3 +18,7 @@ Deregistering delegated administrators removes that account's permission to mana
 1. In the **Delegated Administrators** section, choose one or more accounts that you want to deregister.
 
    Depending on your organization size and the number of delegated administrators you're deregistering, this could take several minutes. During this time you won't be able to register any new delegated administrators.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,3 +49,7 @@ This diagram illustrates an HLS output group with an audio rendition group, and 
 This diagram illustrates an HLS output group for an ABR stack with an audio rendition group, and with sidecar captions encodes.
 
 ![Output group containing six outputs: two video, two audio, and two captions outputs.](http://docs.aws.amazon.com/medialive/latest/ug/images/output14-ABR-2V-2Asep-2C.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

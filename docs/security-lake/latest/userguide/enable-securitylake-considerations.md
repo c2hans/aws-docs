@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/security-lake/latest/userguide/enable-se
   For information about how service-linked roles work, see [Using service-linked role permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html) in the *IAM User Guide*.
 + Security Lake doesn't support Amazon S3 Object Lock. When the data lake buckets are created, S3 Object Lock is disabled by default. Enabling Object Lock on a bucket interrupts the delivery of normalized log data to the data lake.
 + If you are re-enabling Security Lake in a region, you must delete the region's corresponding AWS Glue database from your previous use of Security Lake.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -407,3 +407,7 @@ You can also update an existing network policy for this purpose.
       + Select the **Enable access to OpenSearch Dashboard** box, and then select the collection name or collection pattern to use to enable access from that shared VPC.
 
 1. For a new policy, choose **Create**. For an existing policy, choose **Update**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

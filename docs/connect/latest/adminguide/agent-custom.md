@@ -49,3 +49,7 @@ To change the order that the status values appear in the CCP, choose **Reorder a
 1. Enter the new information, and choose **Save** to apply the changes.
 
 Choose **View historical changes** to view the change history. You can filter changes by date (between two dates) or by user name. If you can't see the **View historical changes** link, make sure you have the following permission in your security profile: **Historical changes** - **View historical changes** - **View**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -228,3 +228,7 @@ For an AWS Cloud9 users group, detach the `AWSCloud9User` managed policy from th
 The preceding customer managed policy allows those users to create SSH environments. To prevent those users from creating SSH environments altogether, remove `"cloud9:CreateEnvironmentSSH",` from the preceding customer managed policy.
 
 For more examples, see [Customer managed policy examples](security-iam.md#auth-and-access-control-customer-policies-examples).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

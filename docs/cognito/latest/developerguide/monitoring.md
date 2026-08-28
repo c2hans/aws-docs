@@ -16,3 +16,7 @@ Monitoring is an important part of maintaining the reliability, availability, an
 + [Exporting logs from Amazon Cognito user pools](exporting-quotas-and-usage.md)
 + [Tracking quotas and usage in CloudWatch and Service Quotas](tracking-quotas-and-usage-in-cloud-watch-and-service-quotas.md)
 + [Amazon Cognito logging in AWS CloudTrail](logging-using-cloudtrail.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

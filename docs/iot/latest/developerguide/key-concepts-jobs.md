@@ -79,3 +79,7 @@ Rollouts and abort configurations are specific to your job, whereas the timeout 
 **Retries**
 Job retries make it possible to retry the job execution when a job fails, times out, or both. You can have up to 10 attempted retries to execute the job. You can monitor and track the progress of your retry attempt and whether the job execution succeeded.
 Rollouts and abort configurations are specific to your job, whereas the timeout and retry configurations are specific to a job execution. For more information, see [Job execution timeout and retry configurations](jobs-configurations-details.md#job-timeout-retry).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

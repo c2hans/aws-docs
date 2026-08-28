@@ -21,3 +21,7 @@ Blusam error codes, prefixed with `BA-B`.
 | BA-B2002 | Error | Unsupported operation: Page capacity calculation not supported | MetadataPersistence implementation does not support page capacity calculation |
 | BA-B2003 | Error | Couldn't commit indexes correctly on table. Verify that the persistence layer (database or Redis) is accessible and that the index table exists |  |
 | BA-B2004 | Error | The index was not found in persistence. Verify that the persistence layer (database or Redis) is accessible and that the index table exists |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

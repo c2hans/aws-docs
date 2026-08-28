@@ -14,3 +14,7 @@ AMS Accelerate provides a range of operational services to help you achieve oper
 + [Service request management in Accelerate](service-request-management.md)
 + [Incident report and service request testing in Accelerate](acc-request-testing.md)
 + [Billing questions for AMS Accelerate](acc-billing-questions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

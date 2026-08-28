@@ -169,3 +169,7 @@ Recommended actions:
 For more information, see [Troubleshooting Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshooting.html).
 Warning message:
 MediaConvert received a `503 Slow Down` error code from Amazon S3 while writing your output to your destination bucket.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

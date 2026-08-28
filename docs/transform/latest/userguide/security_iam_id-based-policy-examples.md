@@ -361,3 +361,7 @@ To grant access to all profiles in an account, use a wildcard for the profile ID
 
 **Note**
 The `transform:AccessTransformProfile` action grants access to AWS Transform only. Actions within workspaces are controlled by AWS Transform workspace roles (Admin, Contributor, Approver, Read-only), not by IAM policies. Workspace roles determine what a user can do, such as creating jobs, managing collaborators, or approving tasks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

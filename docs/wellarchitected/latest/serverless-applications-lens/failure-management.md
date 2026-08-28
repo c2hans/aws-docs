@@ -21,3 +21,7 @@ Partial failures can occur in non-atomic operations, such as `PutRecords` (Kines
 ![Diagram showing a Step Functions state machine with Saga Pattern](http://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/step-functions-state-machine-saga-pattern.png)
 
 Choose the Step Functions type based on your workload. For short-running synchronous and asynchronous high-volume workloads, use Step Functions - Sync Express. If you need to automate long-running workflows and want to have additional durability and audit go with Step Functions Standard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

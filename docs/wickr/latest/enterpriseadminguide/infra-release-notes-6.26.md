@@ -40,3 +40,7 @@ The following release notes include information for infrastructure release 6.26.
 | Final release | Final notes with Replicated build number | November 14, 2023 |
 | Infrastructure update | General availability of guest user access | November 14, 2023 |
 | Initial release | Initial release of November release notes | November 8, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

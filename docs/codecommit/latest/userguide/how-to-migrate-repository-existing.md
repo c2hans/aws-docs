@@ -310,3 +310,7 @@ After you have created an IAM user to access CodeCommit using the policy group a
 1. In **Clone URL**, choose the protocol that you want your users to use. This copies the clone URL for the connection protocol.
 
 1. Send your users the clone URL along with any other instructions, such as installing the AWS CLI, configuring a profile, or installing Git. Make sure to include the configuration information for the connection protocol (for example, HTTPS).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

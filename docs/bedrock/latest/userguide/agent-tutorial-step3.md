@@ -24,3 +24,7 @@ For more information, see [Test and troubleshoot agent behavior](agents-test.md)
 1. The agent will process your prompt, invoke the Lambda function if necessary, and return a response.
 
 1. (Optional) Choose **Show trace** to see the [trace](trace-events.md) steps for the prompt that you sent to the model. In the trace you should see the reasoning that the model uses to determine when to call the Lambda function to get the date and time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

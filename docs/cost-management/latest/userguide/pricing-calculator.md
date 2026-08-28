@@ -52,3 +52,7 @@ AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't in
 
 **Note**
 If an estimate fails to generate, this will not count as one of your five free estimates per month. You will also not be charged for any failed estimates.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

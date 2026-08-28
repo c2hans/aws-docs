@@ -371,3 +371,7 @@ For more information, see [Exchanging Partitions and Subpartitions with Tables](
 | Virtual column-based | No |  [Restrictions and Limitations on Partitioning](https://dev.mysql.com/doc/refman/5.7/en/partitioning-limitations.html)  |
 | MySQL partitioning automatic list partitioning | No |  [Restrictions and Limitations on Partitioning](https://dev.mysql.com/doc/refman/5.7/en/partitioning-limitations.html)  |
 | Split and exchange | Yes |  [ALTER TABLE Partition Operations](https://dev.mysql.com/doc/refman/8.0/en/alter-table-partition-operations.html) and [Exchanging Partitions and Subpartitions with Tables](https://dev.mysql.com/doc/refman/5.7/en/partitioning-management-exchange.html)  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

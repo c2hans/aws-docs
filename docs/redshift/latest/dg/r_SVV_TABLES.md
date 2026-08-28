@@ -26,3 +26,7 @@ Use the [SHOW TABLES](r_SHOW_TABLES.md) command for table discovery. SHOW TABLES
 | table\_name | text | The name of the table. |
 | table\_type | text  | The type of table. Possible values are views, external tables, and base tables. |
 | remarks | text | Remarks. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,3 +46,7 @@ AWS Config must be enabled with resource recording for scores to appear. For inf
 After first-time score generation, Security Hub CSPM updates security scores every 24 hours. Security Hub CSPM displays a timestamp to indicate when a security score was last updated.
 
 If you have set an aggregation Region, the overall security score reflects control findings across linked Regions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

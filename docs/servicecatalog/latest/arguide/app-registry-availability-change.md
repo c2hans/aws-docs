@@ -63,3 +63,7 @@ There is no single mandated tag key, giving customers the flexibility to select 
 Tagging, AWS Resource Groups, and AWS Resource Explorer are available at no additional cost. CloudWatch Application Signals is a paid service that includes a free tier. For pricing details, refer to the [CloudWatch pricing page](https://aws.amazon.com/cloudwatch/pricing/).
 
 If you have additional questions, contact us through the [AWS Support Center](https://aws.amazon.com/support).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

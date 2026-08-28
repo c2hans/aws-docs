@@ -161,3 +161,7 @@ After creating the launch role in your AWS Service Catalog administrator account
 When creating a launch role in the AWS Service Catalog end user account, ensure you use the same administrator **AccountId** in the custom trust policy.
 
 Now that you have created a launch role in both the administrator and end user accounts, you can add a launch constraint to the product.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

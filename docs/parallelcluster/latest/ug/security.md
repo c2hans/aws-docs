@@ -42,3 +42,7 @@ This documentation describes how you should apply the shared responsibility mode
 + [Security in Amazon SQS (For AWS ParallelCluster version 2.x.)](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-security.html)
 + [Security in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/security.html)
 + [Security in Amazon VPC](https://docs.aws.amazon.com/vpc/latest/userguide/security.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ Amazon Simple Storage Service now applies a new default bucket security setting 
 + [Specifying server-side encryption with customer-provided keys (SSE-C)](specifying-s3-c-encryption.md)
 + [Blocking or unblocking SSE-C for a general purpose bucket](blocking-unblocking-s3-c-encryption-gpb.md)
 + [Default SSE-C setting for new buckets FAQ](default-s3-c-encryption-setting-faq.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

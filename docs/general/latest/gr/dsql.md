@@ -46,3 +46,7 @@ The following are the service endpoints and service quotas for this service.
 | Connections per cluster | Each supported Region: 10,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/dsql/quotas/L-AA07A0EE)  | The maximum number of active connections per cluster that you can have in this account in the current Region. |
 | Multi-Region clusters | Each supported Region: 5 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/dsql/quotas/L-DCF93F11)  | The maximum number of multi region clusters allowed per account. |
 | Single-Region clusters | Each supported Region: 20 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/dsql/quotas/L-B3A4E51E)  | The maximum number of active clusters allowed per account in a given region. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -132,3 +132,7 @@ Be aware that at the time these release notes are published, the new platform ve
 | --- | --- | --- | --- | --- | --- | --- |
 |  ** Ruby 3.0 AL2 version 3.4.3** <br /> * 64bit Amazon Linux 2 v3.4.3 running Ruby 3.0 *  | 2.0.20220207 | Ruby 3.0.3-p157 | RubyGems 3.3.7 | Puma 5.6.2 | 3.2.0 | nginx 1.20.0 |
 |  ** Ruby 2.7 AL2 version 3.4.3** <br /> * 64bit Amazon Linux 2 v3.4.3 running Ruby 2.7 *  | 2.0.20220207 | Ruby 2.7.5-p203 | RubyGems 3.3.7 | Puma 5.6.2 | 3.2.0 | nginx 1.20.0 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,3 +36,7 @@ You need the following:
 1. In **Default IAM role**, choose the IAM role you want to associate with this environment. Workflow actions that are assigned this environment will inherit this IAM role, and will be able to use it to connect to services and resources in your AWS account.
 
    If the IAM role that you want to use as the default is not listed, it might be because you have not added it to your AWS account connection yet. To add an IAM role to an account connection, see [Adding IAM roles to account connections](ipa-connect-account-addroles.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

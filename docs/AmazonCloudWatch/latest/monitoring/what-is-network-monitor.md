@@ -35,3 +35,7 @@ The following summarizes requirements and limitations for Network Synthetic Moni
 + Don't use reserved or AWS-internal IP addresses as probe destinations. Network Synthetic Monitor can't correctly measure round-trip time and packet loss for these addresses because the probe traffic doesn't leave the AWS data center, which results in round-trip time values below 1 millisecond. Specifically, avoid the following destination addresses:
   + Any address in the link-local range `169.254.0.0/16`. This range includes the Instance Metadata Service address `169.254.169.254` and the addresses `169.254.254.1` and `169.254.254.2`, which are used by Network Synthetic Monitor probe infrastructure.
   + The address `10.0.0.2`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

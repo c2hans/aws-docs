@@ -25,3 +25,7 @@ Numbers are transcribed according to the following rules.
 | Combine years expressed as two digits into four.<br />Only valid for the 20th, 21st, and 22nd centuries.  |  +  "nineteen sixty two" > 1962 <br />+  "the year is twenty twelve" > the year is 2012 <br />+  "twenty nineteen" > 2019 <br />+  "twenty one thirty" > 2130   |
 | Convert dates to numbers. |  +  "May fifth twenty twelve" > May 5th 2012 <br />+  "May five twenty twelve" > May 5 2012 <br />+  "five May twenty twelve" > 5 May 2012   |
 | Separate spans of numbers by the word "to." |  +  "twenty three to thirty seven" > 23 to 37   |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

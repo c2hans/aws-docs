@@ -254,3 +254,7 @@ This section includes an example of enabling Lambda Insights on a container imag
 1. Use that Amazon ECR image that you just created to create the Lambda function.
 
 1.  Assign the **CloudWatchLambdaInsightsExecutionRolePolicy** IAM policy to the function's execution role.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

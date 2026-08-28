@@ -60,3 +60,7 @@ The following lists describe the change to the AWS Encryption CLI in versions 1.
 ## Version 3.0.*x* changes to the AWS Encryption CLI
 <a name="cli-changes-v3"></a>
 + Adds support for AWS KMS multi-Region keys. For details, see [Using multi-Region AWS KMS keys](configure.md#config-mrks).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

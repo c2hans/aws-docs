@@ -54,3 +54,7 @@ When you create the tunnel, you'll also be able to specify whether to use the mo
 + [Tunnel creation methods in AWS IoT console](#tunneling-tutorial-flows)
 + [Open a tunnel and use browser-based SSH to access remote device](tunneling-tutorial-quick-setup.md)
 + [Open a tunnel using manual setup and connect to remote device](tunneling-tutorial-manual-setup.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

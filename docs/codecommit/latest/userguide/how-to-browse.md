@@ -33,3 +33,7 @@ You can use the CodeCommit console to review the files contained in a repository
 **Note**
  Not all binary files are viewable in the console. If you choose a binary file and it is potentially viewable, a warning message appears, asking you to confirm that you want to display the contents. To view the file, choose **Show file contents**. If you do not want to view the file, from the code navigation bar, choose the directory you want to view.
 If you choose a markdown file (.md), use the **Rendered Markdown** and **Markdown Source** buttons to toggle between the rendered and syntax views. For more information, see [Using Markdown in the console](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/aws-markdown.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

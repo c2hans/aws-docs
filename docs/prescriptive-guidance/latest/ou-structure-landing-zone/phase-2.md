@@ -58,3 +58,7 @@ The Exceptions OU contains workloads that require special treatment that would o
 <a name="p2-graveyard"></a>
 
 The Graveyard OU contains AWS accounts for workloads that will be deleted. Policies in these accounts should be removed for effective and simple administrative access until the account expires or is deleted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

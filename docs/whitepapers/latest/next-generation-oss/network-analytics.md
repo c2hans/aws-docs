@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/n
  [Amazon Quick](https://aws.amazon.com/quicksight/) makes it easy for DSPs to build dashboards showing the performance of their network, share that information across engineering and leadership groups, and support quick integration with ML-powered insights. QuickSight reads from Redshift, from Amazon S3 through Athena, [etc](https://docs.aws.amazon.com/quicksight/latest/user/supported-data-sources.html)., making it a great Business Intelligence (BI) tool to correlate data at various stages of a given analysis path.
 
  AWS services integrate easily with existing DSPs’ in-house consumption solutions by providing the tools, APIs, and security necessary. For example, DSPs can perform SQL queries towards Redshift to feed into their legacy reporting systems using the same SQL queries used in their current set of queries.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

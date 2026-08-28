@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/determining-iops-need
  Most Oracle Database production systems in domains such as enterprise resource planning (ERP) and customer relationship management (CRM) are in the range of 3,000–30,000 IOPS. Your individual application might have different IOPS requirements. A performance test environment’s IOPS needs are generally identical to those of production environments, but for other test and development environments, the range is usually 200–2,000 IOPS.
 
  Some online transaction processing (OLTP) systems use up to 60,000 IOPS. There are Oracle databases that use more than 60,000 IOPS, but that is unusual. If your environment shows numbers outside these parameters, you should complete further analysis to confirm your numbers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

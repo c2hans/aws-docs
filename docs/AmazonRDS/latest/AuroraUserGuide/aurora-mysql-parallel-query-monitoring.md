@@ -48,3 +48,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-
 | `Aurora_pq_request_not_chosen_unsupported_access` | The number of parallel query requests that use the nonparallel query processing path because the `WHERE` clause doesn't meet the criteria for parallel query. This result can occur if the query doesn't require a data-intensive scan, or if the query is a `DELETE` or `UPDATE` statement. |
 | `Aurora_pq_request_not_chosen_unsupported_storage_type` | The number of parallel query requests that use the nonparallel query processing path because the Aurora MySQL DB cluster isn't using a supported Aurora cluster storage configuration. This parameter is available in Aurora MySQL version 3.04 and higher. For more information, see [Limitations](aurora-mysql-parallel-query.md#aurora-mysql-parallel-query-limitations). |
 | `Aurora_pq_request_throttled` | The number of times parallel query wasn't chosen due to the maximum number of concurrent parallel queries already running on a particular Aurora DB instance. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

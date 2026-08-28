@@ -8,3 +8,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
  The user management and identity layer of your workload provides identity, authentication, and authorization for both external and internal customers of your workload’s interfaces.
 
  With [Amazon Cognito](https://aws.amazon.com/cognito/), you can easily add user sign-up, sign-in, and data synchronization to serverless applications. [Amazon Cognito](https://aws.amazon.com/cognito/) User Pools provide built-in sign-in screens and federation with Facebook, Google, Amazon, and Security Assertion Markup Language (SAML). [Amazon Cognito](https://aws.amazon.com/cognito/) Federated Identities let you securely provide scoped access to AWS resources that are part of your serverless architecture.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

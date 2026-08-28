@@ -38,3 +38,7 @@ The input data type of these functions is assumed to be varchar unless otherwise
 | substr(x, bigint start, bigint len)  | varchar | Returns a substring from x of length len from the starting position start. Positions start with 1. A negative starting position is interpreted as being relative to the end of x. |
 | trim(x)  | varchar | Removes leading and trailing whitespace from x. |
 | upper(x)  | varchar | Converts x to uppercase. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

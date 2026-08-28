@@ -192,3 +192,7 @@ System identifiers may not be used for dimension or measure names. We recommend 
 <a name="limits.export-unload"></a>
 
 For limits related to the `UNLOAD` command, see [Using UNLOAD to export query results to S3 from Timestream](https://docs.aws.amazon.com/timestream/latest/developerguide/export-unload.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

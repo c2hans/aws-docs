@@ -21,3 +21,7 @@ If you are a first-time user of Migration Hub Journeys, we recommend that you be
 + [Migration templates](migration-templates.md)
 + [Migration spaces](migration-spaces.md)
 + [Tutorials](tutorials.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

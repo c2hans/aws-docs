@@ -14,3 +14,7 @@ Engine release version 1.0.4.2.R2 was the first version of 1.0.4.2 actually to b
 + [Amazon Neptune Engine Version 1.0.4.2.R3 (2021-06-28)](engine-releases-1.0.4.2.R3.md)
 + [Amazon Neptune Engine Version 1.0.4.2.R2 (2021-06-01)](engine-releases-1.0.4.2.R2.md)
 + [Amazon Neptune Engine Version 1.0.4.2.R1 (2021-05-27)](engine-releases-1.0.4.2.R1.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

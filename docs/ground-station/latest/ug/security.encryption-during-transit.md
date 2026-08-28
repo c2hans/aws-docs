@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/security.encryp
 <a name="security.encryption-during-transit.dataflow-endpoint"></a>
 
  Dataflow endpoint streams are encrypted using [ Datagram Transport Layer Security (DTLS) ](https://en.wikipedia.org/wiki/Datagram_Transport_Layer_Security). This is done using self-signed certificates, and doesn't require additional configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

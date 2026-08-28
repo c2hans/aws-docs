@@ -211,3 +211,7 @@ As a managed AI service, Amazon Transcribe models are continuously improved by A
  **Compensating Controls: **Mechanisms available to customers (such as custom vocabularies, confidence thresholds, PII redaction, vocabulary filtering, and human review) to address known model limitations for their specific use case.
 
  **Calibration: **In the context of Amazon Transcribe, the process of ensuring that word-level confidence scores accurately reflect transcription correctness, and that confidence score distributions remain consistent across model updates.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AI Service Cards. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ai` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

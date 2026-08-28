@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 <a name="implementation-guidance-25"></a>
 
  Do not install application features not required by users. Install the minimal set of features in applications that are required by users to perform their roles. This helps to reduce compute requirements and also helps to remove potential security risks that may arise that are associated with those features.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

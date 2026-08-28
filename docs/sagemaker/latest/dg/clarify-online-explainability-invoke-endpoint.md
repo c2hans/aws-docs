@@ -57,3 +57,7 @@ The `kernel_shap` element has the following members:
   + `description`: The description of the text units, available only for NLP explainability problems.
     + `partial_text`: The portion of the text explained by the explainer.
     + `start_idx`: A zero-based index to identify the array location of the beginning of the partial text fragment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,3 +38,7 @@ If you're a first-time user of AWS, your first step is to sign up for AWS. You c
 For step-by-step instructions on how to set up a new account where you have complete control over the initial setup, see [Sign up for AWS (advanced)](getting-started.md).
 
 For step-by-step instructions on how to set up a new account where AWS creates accounts with preconfigured defaults, see [Sign up for AWS (new)](sign-in-new.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

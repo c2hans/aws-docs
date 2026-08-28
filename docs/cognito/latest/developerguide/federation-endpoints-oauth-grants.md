@@ -24,3 +24,7 @@ Client credentials grants add costs to your AWS bill. For more information, see 
 You can request a refresh token grant directly from the [Token endpoint](token-endpoint.md). This grant returns new ID and access tokens in exchange for a valid refresh token.
 
 For more perspective on these grants and their implementation, see How to use [OAuth 2.0 in Amazon Cognito: Learn about the different OAuth 2.0 grants](https://aws.amazon.com/blogs/security/how-to-use-oauth-2-0-in-amazon-cognito-learn-about-the-different-oauth-2-0-grants/) in the *AWS Security Blog*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

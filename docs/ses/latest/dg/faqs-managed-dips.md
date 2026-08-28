@@ -38,3 +38,7 @@ Dedicated IP addresses (managed) are managed in terms of auto-scaling by adding 
 <a name="managed-dip-q6"></a>
 
 You can use an SES configuration set with an [event publishing destination](event-destinations-manage.md#event-destination-add) defined for either a Amazon Data Firehose or an Amazon SNS topic. SES delivery events include the tag [`ses:outgoing-ip`](event-publishing-retrieving-sns-examples.md#event-publishing-retrieving-sns-delivery). Thus, if an email was bounced due to the reputation of a dedicated IP address (managed), you can find the offending dedicated IP address (managed) in the bounce event's `ses:outgoing-ip` tag.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ When your requirement goes beyond standard SAP and AWS change management tools, 
 1. Basis Technologies - [ActiveControl](https://aws.amazon.com/marketplace/pp/prodview-dbi5yapzlyrce?sr=0-1&ref_=beagle&applicationId=AWSMPContessa) is an enterprise-grade change management automation platform specifically designed for SAP ECC, SAP S/4HANA, and SAP BTP while protecting against change failure. The solution enforces consistent governance and quality checks while enabling parallel development, automated testing, and synchronized deployments across different SAP environments, significantly reducing the risk of production issues and accelerating the delivery of business-critical changes.
 
 These are just a few selected ones that that support SAP and AWS change management scenarios, you can find many other partner solutions from [AWS Marketplace](https://aws.amazon.com/marketplace/search/results?searchTerms=SAP) to meet your needs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,3 +39,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/getting_started.ht
 
 **Multi-account enablement with AWS Organizations**
  For organizations using [AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_introduction.html), Amazon Inspector supports both delegated administrator management and organization policy-based enablement. Organization policies provide centralized governance with automatic enablement for new accounts. For detailed instructions on both approaches, see [Getting started tutorial: Activating Amazon Inspector](getting_started_tutorial.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

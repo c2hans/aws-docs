@@ -35,3 +35,7 @@ Workers can navigate through the 3D point cloud by zooming in and out, and movin
 + A polygon tool that workers can use to select and paint an area in the point cloud.
 + A background paint tool, which enables workers to paint behind objects they have already annotated without altering the original annotations. For example, workers might use this tool to paint the road after painting all of the cars on the road.
 + View options that enable workers to easily hide or view label text, a ground mesh, and additional point attributes like color or intensity. Workers can also choose between perspective and orthogonal projections.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

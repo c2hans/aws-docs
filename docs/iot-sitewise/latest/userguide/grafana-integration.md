@@ -21,3 +21,7 @@ You have two options to use the AWS IoT SiteWise plugin:
 The following Grafana dashboard visualizes the [demo wind farm](getting-started-demo.md). You can access this demo dashboard on the [Grafana Play](https://play.grafana.org/d/avzwehmz/demo-wind-farm?orgId=1) website.
 
 ![An example Grafana dashboard that visualizes the AWS IoT SiteWise demo wind farm.](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/grafana-dashboard-example.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

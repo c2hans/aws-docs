@@ -47,3 +47,7 @@ For this workload, the application team takes the following actions to address t
 + The application team configures AWS Backup to automate backup of the data their Amazon RDS cluster.
 + The application team stores CloudFormation templates in a code repository.
 + The application team develops an automated pipeline to [create a copy of their workload in another Region and run automated tests](https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-iii-pilot-light-and-warm-standby/) (AWS blog post). After the automated tests run, the pipeline destroys the stack. This pipeline automatically runs once a month and validates the effectiveness of the recovery procedures.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

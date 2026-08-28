@@ -48,3 +48,7 @@ We strongly recommend that you make sure that your manifest file is valid. If Am
 In addition, verify that your Amazon S3 dataset was created according to the steps in [Creating a dataset using Amazon S3 files](create-a-data-set-s3.md).
 
 If you use Athena to connect to Amazon S3, see [I can't connect to Amazon Athena](troubleshoot-connect-athena.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

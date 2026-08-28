@@ -14,3 +14,7 @@ You can use an Amazon Simple Storage Service (Amazon S3) sink plugin in OpenSear
 
 **Send data from Security Lake to OpenSearch using OpenSearch Ingestion pipeline**
 You can use an Amazon S3 source plugin to ingest data into your OpenSearch Ingestion pipeline. For more information, see [Using an OpenSearch Ingestion pipeline with Amazon Security Lake as a source](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/configure-client-source-security-lake.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

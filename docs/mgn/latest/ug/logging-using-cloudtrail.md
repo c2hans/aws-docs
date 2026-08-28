@@ -22,7 +22,7 @@ For an ongoing record of events in your AWS account, including events for AWS Tr
 + [Configuring Amazon SNS notifications for CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/configure-sns-notifications-for-cloudtrail.html)
 + [Receiving CloudTrail log files from multiple regions](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/receive-cloudtrail-log-files-from-multiple-regions.html) and [Receiving CloudTrail log files from multiple accounts](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-receive-logs-from-multiple-accounts.html)
 
-All AWS Transform MGN actions are logged by CloudTrail and are documented in the AWS Transform MGN API. For example, calls to the `DescribeSourceServers` action to generate entries in the CloudTrail log files.
+All AWS Transform MGN actions are logged by CloudTrail and are documented in the AWS Transform MGN API. For example, calls to the `DescribeSourceServers` action generate entries in the CloudTrail log files.
 
 Every event or log entry contains information about who generated the request. The identity information helps you determine the following:
 + Whether the request was made with root or AWS Identity and Access Management (IAM) user credentials.
@@ -82,3 +82,7 @@ The following example shows a CloudTrail log entry that demonstrates the Describ
     "eventCategory": "Management"
 }
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ You might be migrating your application because you are closing data centers or 
 **Where is the application migrating to?**
 
 Assess if the application needs to move to a single VPC with one Availability Zone or two Availability Zones. Determine the peer or transit VPC topology, along with the need for multi-Region deployments. These will impact the migration pattern design.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

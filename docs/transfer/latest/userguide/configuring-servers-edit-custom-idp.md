@@ -119,3 +119,7 @@ This preservation behavior allows you to safely test custom identity provider co
 + **User migration** – When changing identity provider types, existing user configurations are not automatically migrated. You'll need to set up users in the new identity provider system.
 + **Testing** – Test the new identity provider configuration thoroughly before making the change in production environments.
 + **Permissions** – Ensure that the new identity provider has the necessary IAM permissions and roles configured before making the change.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

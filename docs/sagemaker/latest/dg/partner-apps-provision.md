@@ -34,3 +34,7 @@ Applications that admins provision can be accessed by all users that admins give
 +  **App version** – The version of the Partner AI App that admins want to use.
 +  **Tier selection** – The infrastructure deployment tier for the Partner AI App. The tier size impacts the speed and capabilities of the application. For more information, see [Set up Partner AI Apps](partner-app-onboard.md).
 +  **Lakera S3 bucket policy** – This is only required by the Lakera-guard app to access an Amazon S3 bucket.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

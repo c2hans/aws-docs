@@ -141,3 +141,7 @@ You can opt to receive SIP message logs for your Amazon Chime SDK Voice Connecto
 | event\_timestamp | The time when the message is captured, in number of milliseconds since the UNIX epoch (midnight on January 1, 1970) in UTC. |
 | call\_id | The Amazon Chime SDK Voice Connector call ID. |
 | sip\_message | The full SIP message that is captured. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

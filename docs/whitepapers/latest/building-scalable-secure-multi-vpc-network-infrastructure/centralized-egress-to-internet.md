@@ -16,3 +16,7 @@ For IPv6 traffic, egress traffic can be configured to leave each VPC through an 
 + [Using the NAT gateway with AWS Network Firewall for centralized IPv4 egress](using-nat-gateway-with-firewall.md)
 + [Using the NAT gateway and Gateway Load Balancer with Amazon EC2 instances for centralized IPv4 egress](using-nat-gateway-and-gwlb-with-ec2.md)
 + [Centralized egress for IPv6](centralized-egress-for-ipv6.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

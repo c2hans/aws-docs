@@ -17,3 +17,7 @@ Activity that occurs in your Elastic Beanstalk environments is recorded as an AW
 However, in some situations, you might want to have the ability to detect specific events and initiate target actions using other AWS services. For example, you may want to send an email notification by signaling an Amazon SNS topic when a production environment's health transitions to a *Warning* status. Or, if the environment's health status transitions to *Degraded* or *Severe*, you might want to use a Lambda function to pass a notification to a Slack channel. With this release, you can use Amazon EventBridge to set up event-driven rules that monitor your Elastic Beanstalk resources and initiate target actions that use other AWS services.
 
 For more information, see [Using Elastic Beanstalk with Amazon EventBridge ](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/AWSHowTo.eventbridge.html) in the *AWS Elastic Beanstalk Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

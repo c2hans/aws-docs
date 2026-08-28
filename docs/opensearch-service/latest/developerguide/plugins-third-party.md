@@ -131,3 +131,7 @@ aws opensearch associate-packages \
 When the association completes, you can enable the plugin on specific indexes or configure it as needed based on your requirements. To apply third-party plugin functionality to specific indexes, modify the index settings during index creation or update existing indexes. For example, if your third-party plugin includes a [custom analyzer](https://opensearch.org/docs/latest/analyzers/custom-analyzer/), reference it in the index settings.
 
 To apply the plugin features consistently across multiple indexes, use [index templates](https://opensearch.org/docs/latest/im-plugin/index-templates/) that include the plugin configurations. Always consult the plugin documentation to understand how to configure its features for your OpenSearch setup.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

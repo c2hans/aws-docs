@@ -45,3 +45,7 @@ Use cases:
 + You are already skilled and familiar with containers and orchestration technologies.
 + You already have an Amazon ECS or Amazon EKS cluster set up for your existing workloads.
 + The application source code isn't available, but you're planning to use [AWS App2Container](https://aws.amazon.com/app2container/) to package your application into a container image.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

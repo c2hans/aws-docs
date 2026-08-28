@@ -45,3 +45,7 @@ This scenario happens only when you create a Windows Server instance using a sna
 
    The active volume is extended to use the unallocated space that you specified. The following example shows all of the unallocated space chosen.
 ![Allocated disk space in Windows Disk Management](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-windows-allocated-space.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

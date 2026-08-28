@@ -16,3 +16,7 @@ Evaluate system attributes such as performance, usability, and reliability to en
 + [[QA.NT.6] Experiment with failure using resilience testing to build recovery preparedness](qa.nt.6-experiment-with-failure-using-resilience-testing-to-build-recovery-preparedness.md)
 + [[QA.NT.7] Verify service integrations through contract testing](qa.nt.7-verify-service-integrations-through-contract-testing.md)
 + [[QA.NT.8] Practice eco-conscious development with sustainability testing](qa.nt.8-practice-eco-conscious-development-with-sustainability-testing.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

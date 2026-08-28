@@ -32,3 +32,7 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/use-cases-
 | Trusted identity propagation with AWS managed applications | All enabled Regions - Applications that propagate identity context to each other must be in the same Region |
 |  Other administrative features  |  |
 | All other administrative features such as Region management, KMS key management, instance management, and session management (except session revocation) | Primary Region only - read access available in all enabled Regions for some data (permission set assignments excluded) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

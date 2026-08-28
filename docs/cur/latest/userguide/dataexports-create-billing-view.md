@@ -31,3 +31,7 @@ You can create reports based on billing views whether billing view mode is enabl
 When creating a report based on a billing transfer showback/chargeback view or billing group view, you must disable the Split Cost Allocation Data functionality.
 
 For more information about Data Exports for billing transfer use cases, see [billing transfer best practices](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/orgs_transfer_billing-best-practices.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ The EMRFS S3-optimized committer is an alternative [OutputCommitter](https://had
 + [The EMRFS S3-optimized committer and multipart uploads](emr-spark-committer-multipart.md)
 + [Job tuning considerations](emr-spark-committer-tuning.md)
 + [Enable the EMRFS S3-optimized committer for Amazon EMR 5.19.0](emr-spark-committer-enable.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

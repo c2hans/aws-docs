@@ -34,3 +34,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
 |  Amazon RDS for MySQL  |  $272.66  |  $3,271.92  |  Quantity (one) db.m5.large, Storage for each Amazon RDS instance (General Purpose SSD (gp2)), storage amount (100 GB)  |
 |  Amazon Route 53  |  $183.00  |  $2,196.00  |  Hosted Zones (1), Number of Elastic Network Interfaces (2), Basic Checks Within AWS (0)  |
 |  Amazon Virtual Private Cloud (Amazon VPC)  |  $92.07  |  $1,104.84  |  Data transfer cost, inbound (from: internet) 1 TB per month, outbound (to: internet) 1 TB per month, intra-Region 0 TB per month  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ Tables and views are database objects that define how to access and represent th
 The following is a diagram of how catalogs, databases, tables/views work in Lakehouse.
 
 ![How catalogs, databases, tables/views work in the lakehouse architecture](http://docs.aws.amazon.com/sagemaker-lakehouse-architecture/latest/userguide/images/lakehouse/catalog-database.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker lakehouse architecture. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-lakehouse-architecture` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

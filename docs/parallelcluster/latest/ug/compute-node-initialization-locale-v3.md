@@ -19,3 +19,7 @@ This can occur if you have an unsuccessful `yum` installation process that left 
   If the last ID doesn't have `Return-Code: Success`, the post-install scripts might not have run successfully.
 
 To fix the issue, try rebuilding the locale with `yum reinstall glibc-all-langpacks`. After the rebuild, `su - pcluster-admin` doesn't show an error or warning if the issue is fixed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

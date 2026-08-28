@@ -29,3 +29,7 @@ Change Management: ACL changes are supported in change log mode, including colla
 Failure handling: The connector implements a fail-close approach for API failures, with rate limiting handled through queue-based wait time with exponential backoff. Documents are skipped from ingestion rather than being made publicly accessible when permission-related issues occur.
 
 For more information, see [Key data source connector concepts](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/-connector-app.html#-connector-key-concepts).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

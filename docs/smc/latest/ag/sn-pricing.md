@@ -29,3 +29,7 @@ SMC has dependency on ServiceNow plugins for managing visibility of resources an
 | --- | --- |
 | User Criteria Scoped API | [https://docs.servicenow.com/bundle/washingtondc-application-development/page/build/custom-application/concept/build-applications.html ](https://docs.servicenow.com/bundle/washingtondc-application-development/page/build/custom-application/concept/build-applications.html) |
 | Discovery and Service Mapping Patterns | [https://docs.servicenow.com/bundle/store-release-notes/page/release-notes/store/it-operations-management/store-rn-itom-patterns.html](https://docs.servicenow.com/bundle/store-release-notes/page/release-notes/store/it-operations-management/store-rn-itom-patterns.html) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

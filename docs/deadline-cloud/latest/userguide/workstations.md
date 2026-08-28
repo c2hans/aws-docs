@@ -11,3 +11,7 @@ Workstations with Deadline Cloud submitters installed hold credentials that can 
 + Use secure permissions on Deadline Cloud submitter program files to prevent tampering.
 + Restrict permissions to local DNS override configuration files (`/etc/hosts` and `/etc/resolv.conf` on Linux and macOS, and `C:\Windows\system32\etc\hosts` on Windows), and to route tables, so that workstation traffic to Deadline Cloud can't be redirected.
 + Regularly patch the operating system and the software used with Deadline Cloud, including submitters, adaptors, and OpenJD packages.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

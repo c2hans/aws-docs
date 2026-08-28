@@ -447,3 +447,7 @@ On the next screen, you should see two targets. The first target is for the **no
 ![Targets on the Prometheus dashboard](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-prometheus-dashboard-targets2.png)
 
 The environment is now properly set up for collecting metrics and monitoring the server.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

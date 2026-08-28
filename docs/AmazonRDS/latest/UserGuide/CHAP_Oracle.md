@@ -43,3 +43,7 @@ To deliver a managed service experience, Amazon RDS doesn't provide shell access
 + [Upgrading the RDS for Oracle DB engine](USER_UpgradeDBInstance.Oracle.md)
 + [Using third-party software with your RDS for Oracle DB instance](Oracle.Resources.md)
 + [Oracle Database engine release notes](USER_Oracle_Releases.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

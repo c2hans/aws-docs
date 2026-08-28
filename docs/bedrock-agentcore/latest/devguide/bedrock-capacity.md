@@ -13,3 +13,7 @@ Since Amazon Bedrock usage is attributed to your account, it consumes your alloc
 Amazon Bedrock usage is attributed to customer account only for custom memory strategies.
 
 To monitor and troubleshoot these issues, enable log delivery on your memory configuration to observe error logs when ingestion failures occur. You can also request quota increases for the Bedrock models you’re using to prevent throttling issues.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

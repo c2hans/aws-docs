@@ -182,3 +182,7 @@ Do not use this feature if any of the following is true:
 + The Greengrass core device is not always available to AWS IoT devices in its group.
 + The Greengrass core has multiple IP addresses and an AWS IoT device is unable to reliably determine which address to use.
 + Your organization's security policies don't allow you to send devices' IP addresses to the AWS Cloud.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ In addition, we highly recommend enabling GTID-based replication on your externa
 <a name="multi-az-db-clusters-external-postgres"></a>
 
 To set up external replication for an RDS for PostgreSQL Multi-AZ DB cluster, you must enable logical replication. For instructions, see [Setting up PostgreSQL logical replication with Multi-AZ DB clusters for Amazon RDS](USER_MultiAZDBCluster_LogicalRepl.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

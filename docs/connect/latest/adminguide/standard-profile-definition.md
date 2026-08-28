@@ -79,3 +79,7 @@ For example, you can use `_phone` as a key name with the [SearchProfiles API](ht
 | KeyValue | String | The key value used to look up profile based off the keyName. |
 | ProfileId | String | The unique identifier of a customer profile. |
 | ContactType | String | The contact type used for engagement. Valid Values: PhoneNumber \| MobilePhoneNumber \| HomePhoneNumber \| BusinessPhoneNumber \| EmailAddress \| PersonalEmailAddress \| BusinessEmailAddress |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

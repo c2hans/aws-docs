@@ -42,3 +42,7 @@ Choose either of the procedures below, depending on your preferred method.
 1. In the console, choose **Upload new schema**, select the JSON file that you just edited, and then choose **Open**.
 
    This adds a new schema to your schema library and places it in the **Development** state. For more information about schema states, see [Schema Lifecycle](schemas_lifecycle.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

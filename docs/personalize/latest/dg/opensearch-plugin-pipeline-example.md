@@ -35,3 +35,7 @@ curl -X PUT "http://localhost:9200/_search/pipeline/{{pipeline-name}}" -ku 'admi
 ```
 
 After you create a search pipeline with a `personalized_search_ranking` response processor, you're ready to start applying the plugin to OpenSearch queries. You can apply it to an OpenSearch index or an individual OpenSearch query. For more information, see [Applying the Amazon Personalize Search Ranking plugin to queries in open source OpenSearch](opensource-apply-plugin.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

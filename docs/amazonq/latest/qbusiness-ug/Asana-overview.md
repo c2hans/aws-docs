@@ -22,3 +22,7 @@ The following table gives an overview of the Amazon Q Business Asana connector a
 | Filters | Yes. The following filters are supported: +  Specific Projects <br />+  Project inclusion regex pattern <br />+  Project exclusion regex pattern  |
 | [Sync mode](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-sync-mode) | Supports full and incremental sync. |
 | [Crawled as a document](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-types.html#connector-doc-crawl) | +  Project <br />+  Task <br />+  Comment  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -105,3 +105,7 @@ You can't convert or merge an account instance of IAM Identity Center into an or
 + **Pro tier subscriptions** for the first user and team members, in Amazon Q Developer.
 + **An Amazon Q Developer profile**, in the Amazon Q Developer console, under **Settings**.
 + **A managed application** called **QDevProfile-{{region}}**, in the IAM Identity Center that is set up in your standalone account. The application is associated with the Amazon Q Developer profile. Like the Amazon Q Developer profile, the application is created once and shared between all Amazon Q subscribers in your standalone account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

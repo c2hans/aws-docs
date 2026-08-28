@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reliability-pilla
  Resiliency is the primary focus of this whitepaper.
 
  The other four aspects are also important and they are covered by their respective pillars of the [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/). Many of the best practices here also address those aspects of reliability, but the focus is on resiliency.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

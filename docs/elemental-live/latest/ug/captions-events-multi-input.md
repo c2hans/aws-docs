@@ -10,3 +10,7 @@ If your event includes multiple inputs, these rules apply to Elemental Live hand
 + There is no requirement for all the inputs to have captions that are capable of producing the specified captions in any given output.
 
   If the captions from an input cannot produce the specified captions in one of the outputs, the captions will be omitted for the course of that input. The event will not fail. When the event switches to a different input, the captions will be included again if the captions from that input can produce the specified captions in that output.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

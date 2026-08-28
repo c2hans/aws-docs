@@ -249,3 +249,7 @@ By using this connector, you acknowledge the inclusion of third party components
 For the latest JDBC driver version information, see the [pom.xml](https://github.com/awslabs/aws-athena-query-federation/blob/master/athena-vertica/pom.xml) file for the Vertica connector on GitHub.com.
 
 For additional information about this connector, see [the corresponding site](https://github.com/awslabs/aws-athena-query-federation/tree/master/athena-vertica) on GitHub.com and [Querying a Vertica data source in Amazon Athena using the Athena Federated Query SDK](https://aws.amazon.com/blogs/big-data/querying-a-vertica-data-source-in-amazon-athena-using-the-athena-federated-query-sdk/) in the *AWS Big Data Blog*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

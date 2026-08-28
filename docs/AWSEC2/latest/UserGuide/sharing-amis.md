@@ -33,3 +33,7 @@ To become a verified provider, you must register as a seller on the AWS Marketpl
 **If you're looking for information about other topics**
 + For information about creating an AMI, see [Create an Amazon S3-backed AMI](creating-an-ami-instance-store.md) or [Create an Amazon EBS-backed AMI](creating-an-ami-ebs.md).
 + For information about building, delivering, and maintaining your applications on the AWS Marketplace, see the [AWS Marketplace Documentation](https://docs.aws.amazon.com/marketplace/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

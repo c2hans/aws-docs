@@ -116,3 +116,7 @@ Amazon CloudWatch captures resource utilization metrics for your training jobs a
 + **Training logs in S3:** Your training job output, model artifacts, and logs remain accessible. These are independent of Debugger.
 + **Debugger tensor data:** Historical tensor collections stored by Debugger remain in S3 at the paths listed above until you delete them. The [`smdebug` client library](https://github.com/awslabs/sagemaker-debugger) can still read this data for reference.
 + **CloudWatch metrics:** Historical training metrics already in CloudWatch are retained per your account's [log retention settings](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#SettingLogRetention).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

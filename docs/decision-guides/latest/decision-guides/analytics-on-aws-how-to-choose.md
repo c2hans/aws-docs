@@ -592,3 +592,7 @@ Explore architecture diagrams to help you develop, scale, and test your analytic
 | **Analytics whitepapers** <br />Explore whitepapers for further insights and best practices on choosing, implementing, and using the analytics services that best fit your organization. <br />[Explore analytics whitepapers ](https://aws.amazon.com/whitepapers/?ams%23interactive-card-vertical%23pattern-data-1858756679.filter=%257B%2522filters%2522%253A%255B%257B%2522id%2522%253A%2522GLOBAL%2523aws-tech-category.and%2522%252C%2522value%2522%253A%255B%2522analytics%2522%255D%257D%255D%257D) | **AWS Big Data Blog** <br />Explore blog posts that address specific big data use cases. <br /> [Explore the AWS Big Data blog](https://aws.amazon.com/blogs/big-data/)  |
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Decision Guides. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query decision-guides` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

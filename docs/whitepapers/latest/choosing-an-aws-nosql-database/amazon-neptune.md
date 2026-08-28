@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql
 +  **Durability** — Automatically replicates data across multiple [Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) (AZs) for high availability (HA) and data durability.
 +  **Integration with other AWS services** — Integration with other AWS services such as Amazon S3, [Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/), and [Amazon SageMaker AI](https://aws.amazon.com/sagemaker/), making it easy to build data-driven applications.
 +  **Management and monitoring** — Provides an easy-to-use, web-based console for monitoring and managing your database, as well as integration with Amazon CloudWatch for metrics and alerts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,3 +65,7 @@ The following are the service endpoints and service quotas for this service.
 | Member accounts through AWS Organizations | Each supported Region: 50,000 | No | Your current AWS Organizations member account quota shows the default maximum number of member accounts that you can associate with an administrator through AWS Organizations, including members added by invitation. The number of GuardDuty member accounts added through AWS Organizations cant exceed the total member accounts in your organization. |
 | Threat intel sets | Each supported Region: 6 | No | The maximum number of Threat intel sets that you can add per AWS account per region. |
 | Trusted IP sets | Each supported Region: 1 | No | The maximum number of Trusted IP sets that you can add per AWS account per region. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,3 +41,7 @@ In the current implementation, you can't do the following:
 + [AMAZON.ResumeIntent](built-in-intent-resume.md)
 + [AMAZON.StartOverIntent](built-in-intent-start-over.md)
 + [AMAZON.StopIntent](built-in-intent-stop.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

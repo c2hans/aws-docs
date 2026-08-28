@@ -106,3 +106,7 @@ For information about how to add condition keys to resource policies, see the fo
 + [Amazon S3 bucket policy for CloudTrail](create-s3-bucket-policy-for-cloudtrail.md)
 + [Configure AWS KMS key policies for CloudTrail](create-kms-key-policy-for-cloudtrail.md)
 + [Amazon SNS topic policy for CloudTrail](cloudtrail-permissions-for-sns-notifications.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

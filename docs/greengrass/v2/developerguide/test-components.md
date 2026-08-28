@@ -112,3 +112,7 @@ You can also use the `greengrass-cli deployment create` command to set the value
 ------
 
 1. Test your component as it runs on the Greengrass core device. When you finish this version of your component, you can upload it to the AWS IoT Greengrass service. Then, you can deploy the component to other core devices. For more information, see [Publish components to deploy to your core devices](publish-components.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

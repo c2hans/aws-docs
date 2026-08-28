@@ -37,3 +37,7 @@ You can mount EFS file systems to multiple Amazon EC2 instances remotely and sec
 1. Make any other additional settings you would like. Then choose **Run** to run the command and mount the EFS file systems specified in the command.
 
    Once you run the command, you can see its status in the command history.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

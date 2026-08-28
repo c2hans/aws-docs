@@ -86,3 +86,7 @@ You must install the AWS Systems Manager Agent (SSM Agent) on all of the EC2 ins
 <a name="acc-gs-prereqs-iam"></a>
 
 To allow your users to read and configure AMS Accelerate capabilities, like accessing the AMS console or configuring backups, you must grant explicit permissions in AWS Identity and Access Management (IAM) to perform those actions. For example IAM policies, see [Permissions to use AMS features](https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/acc-access-customer.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

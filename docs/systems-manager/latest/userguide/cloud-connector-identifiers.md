@@ -11,3 +11,7 @@ By enabling Multicloud Integrations for AWS Systems Manager, virtual machine ide
 
 By enabling Multicloud Integrations, the following identifiers from your connected cloud environment are stored and used by AWS to provide multicloud security capabilities:
 + **Resource identifiers**: Azure Tenant ID, Subscription ID, Location (region), Resource ID (Resource Group IDs or Names)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

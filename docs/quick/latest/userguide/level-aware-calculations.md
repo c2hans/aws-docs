@@ -137,3 +137,7 @@ By default, the first parameter for each function must be an aggregated measure.
 For LAC-W functions, the visual aggregation defaults to `MIN` to eliminate duplicates. To change the aggregation, open the field's context (right-click) menu, and then choose a different aggregation.
 
 For examples of when and how to use LAC-W functions in real life scenarios, see the following post in the AWS Big Data Blog: [Create advanced insights using Level Aware Aggregations in Amazon QuickSight.](https://aws.amazon.com/jp/blogs/big-data/create-advanced-insights-using-level-aware-aggregations-in-amazon-quicksight/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,3 +53,7 @@ MediaConvert gets the input from the Amazon S3, HTTP, or HTTPS location that you
    For information about the file names and paths for your job outputs, see [Output file names and paths](output-file-names-and-paths.md).
 
 1. Optionally, if you don't want to keep the transcoded files that you generate during this tutorial, delete them from Amazon S3 to avoid incurring storage charges. For more information, see [Deleting objects *Amazon S3 User Guide*](https://docs.aws.amazon.com/AmazonS3/latest/userguide/DeletingObjects.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

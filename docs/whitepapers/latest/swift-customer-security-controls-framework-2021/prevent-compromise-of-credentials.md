@@ -26,3 +26,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/swift-customer-securi
  The AWS root user of the AWS account also has access to the SWIFT secure zone using AWS Systems Manager Session Manager by default. You can disable the root user using SCPs to block the root user. Refer to the example, “Block service access for the root user” on the Example service control policies page. You should enable MFA for the root user. Refer to [Enable MFA on the AWS account root user](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user.html#id_root-user_manage_mfa). The following diagram illustrates an example multi-account structure with SWIFT accounts and OU with “Block service access for the root user” SCP applied.
 
 ![A diagram depicting an example of a multi-account structure with SWIFT accounts and OU with “Block service access for the root user” SCP applied .](http://docs.aws.amazon.com/whitepapers/latest/swift-customer-security-controls-framework-2021/images/multi-account-structure.jpeg)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

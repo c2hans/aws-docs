@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/trouble
  To verify that the necessary grants are still associated with the broker's KMS key, call the `ListGrant`ListGrant method to verify that `mq_rabbit_grant` and `mq_grant` are present. If the KMS grant or key has been deleted, you must delete the broker and create a new one with all necessary grants. For steps on deleting a broker, see [Deleting a broker](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/amazon-mq-deleting-broker.html).
 
  To prevent the INVALID\_KMS\_KEY critical action required code, do not manually delete or disable a KMS key or CMK grant. If you wish to delete the key, delete the broker first.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

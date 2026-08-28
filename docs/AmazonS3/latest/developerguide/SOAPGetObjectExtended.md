@@ -17,3 +17,7 @@ GetObjectExtended supports the following elements in addition to those supported
 + `IfMatch:` Return the object only if its ETag matches the supplied tag(s). (go to [http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html\#sec14.24](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.24))
 + `IfNoneMatch:` Return the object only if its ETag does not match the supplied tag(s). (go to [http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html\#sec14.26](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.26))
 + `ReturnCompleteObjectOnConditionFailure:`ReturnCompleteObjectOnConditionFailure: If true, then if the request includes a range element and one or both of IfUnmodifiedSince/IfMatch elements, and the condition fails, return the entire object rather than a fault. This enables the If-Range functionality (go to [http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html\#sec14.27](http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.27)).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

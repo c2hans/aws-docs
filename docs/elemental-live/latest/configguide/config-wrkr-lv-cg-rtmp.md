@@ -15,3 +15,7 @@ Elemental Live is configured by default to support Real Time Messaging Protocol 
 
 **Note**
 The remaining fields on the **Advanced** tab aren't used in the initial configuration. They relate to fine-tuning the node load-balancing if the node is in a cluster. Therefore, we do not address these fields in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

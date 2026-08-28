@@ -17,3 +17,7 @@ As of October 2022, AWS IoT Device Tester for AWS IoT FreeRTOS Qualification (FR
  See [Supported versions of AWS IoT Device Tester](dev-test-versions-afr.md) for the latest supported IDT and FreeRTOS versions. You can use any of the supported versions of AWS IoT Device Tester with the corresponding version of FreeRTOS to test or qualify your device. If you continue to use the [Unsupported IDT versions for FreeRTOS](idt-unsupported-versions-afr.md), you will not receive the latest bug fixes or updates.
 
  For questions about the support policy, contact [AWS Customer Support](https://aws.amazon.com/contact-us/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

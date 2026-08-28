@@ -30,3 +30,7 @@ Cloud WAN evaluates routes at each core network edge in the following order:
       1.  Site-to-Site VPN-propagated routes in the same Region.
 
       1. Routes propagated from other sources, such as transit gateway peering and core network edges in other remote Regions over the AWS global infrastructure. If identical routes are received from two or more sources, a single attachment will be chosen in a deterministically random manner (this occurs on a per segment/network function group basis so you could see different destinations for the same route across different segment/network function groups).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,3 +46,7 @@ AWS Service - Oracle Database@AWS provides the following APIs for data retrieval
 | <a name="odb-ListOdbPeeringConnections"></a>[ListOdbPeeringConnections](https://docs.aws.amazon.com/odb/latest/APIReference/API_ListOdbPeeringConnections.html) | List all ODB peering connections or those associated with a specific ODB network | List |
 | <a name="odb-ListSystemVersions"></a>[ListSystemVersions](https://docs.aws.amazon.com/odb/latest/APIReference/API_ListSystemVersions.html) | List information about the system versions that are available for a VM cluster for the specified giVersion and shape | List |
 | <a name="odb-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/odb/latest/APIReference/API_ListTagsForResource.html) | List information about the tags applied to this resource | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -90,3 +90,7 @@ You can also view the body of the email by choosing **View HTML content**.
  **ISP Overview**
 
 This section contains a list of all of the email providers that we sent your test message to during the test. For each provider in this list, we provide the same five metrics shown in the **Deliverability overview** section (**Inbox**, **Spam**, **Missing**, **SPF**, and **DKIM**).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

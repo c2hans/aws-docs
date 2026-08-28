@@ -144,3 +144,7 @@ The `variableTypeHintMap` is an optional field containing aliased types that can
 ```
 
 AWS AppSync will use the variable map value to construct the queries that are sent to the Amazon Aurora Serverless Data API. It also uses the `variableTypeHintMap` data and sends the type's information to RDS. RDS-supported `typeHints` can be found [here](https://docs.aws.amazon.com/rdsdataservice/latest/APIReference/API_SqlParameter.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

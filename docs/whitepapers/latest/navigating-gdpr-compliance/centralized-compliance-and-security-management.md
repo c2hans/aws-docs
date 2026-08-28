@@ -21,3 +21,7 @@ AWS provides a broad set of integrated services to help customers manage securit
 + [**AWS Security Lake**](https://aws.amazon.com/security-lake/) serves as a central repository for security-related data from AWS and third-party sources, enabling advanced analytics and long-term trend analysis through integrations with tools like Amazon Athena and Amazon OpenSearch.
 
 Together, these services support a unified security and compliance architecture where visibility, governance, and automation are built in. This helps organizations meet their regulatory obligations –including under the GDPR – while simplifying operations and reducing risk.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

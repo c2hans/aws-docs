@@ -137,3 +137,7 @@ On an operational level, the per-tenant policy store has an audit advantage, bec
 The per-tenant policy store approach also requires close attention to two [Verified Permissions quotas](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/quotas.html) to ensure that they don't interfere with the operations of your SaaS solution. These quotas are *Policy stores per Region per account* and *IsAuthorized requests per second per Region per account*. You can request increases for both quotas.
 
 For a more detailed example of how to implement the per-tenant policy store model, see the AWS blog post [SaaS access control using Amazon Verified Permissions with a per-tenant policy store](https://aws.amazon.com/blogs/security/saas-access-control-using-amazon-verified-permissions-with-a-per-tenant-policy-store/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ Use the delegated administration feature of security services to separate the ac
 **Topics**
 + [SEC01-BP01 Separate workloads using accounts](sec_securely_operate_multi_accounts.md)
 + [SEC01-BP02 Secure account root user and properties](sec_securely_operate_aws_account.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

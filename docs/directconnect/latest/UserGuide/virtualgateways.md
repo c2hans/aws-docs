@@ -36,3 +36,7 @@ To use your Direct Connect connection with a VPC in another account, you can cre
 + [Associate or disassociate virtual private gateways](associate-vgw-with-direct-connect-gateway.md)
 + [Create a private virtual interface to the Direct Connect gateway](create-private-vif-for-gateway.md)
 + [Associate a virtual private gateway across accounts](multi-account-associate-vgw.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

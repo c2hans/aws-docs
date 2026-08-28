@@ -16,3 +16,7 @@ For the best results when extracting text from tables in documents, follow these
 When extracting text from tables, you might see inconsistent results for the following cases:
 + Merged table cells span multiple columns.
 + Tables have cells, rows, or columns that are different than other parts of the same table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

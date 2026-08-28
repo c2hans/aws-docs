@@ -67,3 +67,7 @@ You can use the `DescribeHyperParameterTuningJob` API to track the progress of y
 You can determine if you should let the tuning job run until it completes or if you should stop the tuning job manually. To determine this, use the information returned by the parameters in the `DescribeHyperParameterTuningJob` API, as shown in the previous **Tracking tuning job progress** section. As an example, if your model performance does not improve after several training jobs complete, you may choose to stop the tuning job. Model performance is evaluated against the best objective metric.
 
 To stop the tuning job manually, use the [StopHyperParameterTuningJob](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_StopHyperParameterTuningJob.html) API and provide the name of the tuning job to be stopped.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

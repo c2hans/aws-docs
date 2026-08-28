@@ -56,3 +56,7 @@ If you are unable to access the scheduling tables by using Option 1, try using O
    ```
 
 1. Associate the data lake to a single account by running the `aws connect batch-associate-analytics-data-set --cli-input-json file:///path/to/request/file` command (where this path is based on the location of the JSON file).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

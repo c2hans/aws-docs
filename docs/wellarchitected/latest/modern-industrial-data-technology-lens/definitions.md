@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 +  **Digital thread**: A framework that connects data flows and provides an integrated view of an asset throughout the manufacturing lifecycle, from design through production and in-service operation.
 +  **Manufacturing data lake**: A centralized repository that allows storing structured and unstructured manufacturing data at scale
 +  **Industrial data catalog**: A metadata management solution that helps manufacturing organizations find, organize and access their industrial data assets
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

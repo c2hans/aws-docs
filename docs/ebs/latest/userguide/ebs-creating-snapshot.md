@@ -47,3 +47,7 @@ You can automate snapshot creation using [Amazon Data Lifecycle Manager](snapsho
 + We recommend that you do not create snapshots of volumes that are attached to Amazon EC2 instances that are hibernated or that are enabled for hibernation. For more information, see [How Amazon EC2 instance hibernation works](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-hibernate-overview.html#instance-hibernate-limitations).
 + Although you can take a snapshot of a volume while a previous snapshot of that volume is in the `pending` status, having multiple snapshots in the `pending` state for the same volume can result in reduced volume performance until the snapshots complete.
 + There are limits on the number of snapshots you can have in the `pending` state, and on the number of concurrent snapshots you can request per volume type. For more information, see [Quotas for Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-resource-quotas.html). If you exceed one of these quotas, wait for the current snapshots to complete and then try again.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

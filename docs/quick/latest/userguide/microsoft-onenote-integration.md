@@ -117,3 +117,7 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **Sign-in fails (Default OAuth app or Custom OAuth app)** – Verify that your Microsoft 365 account is active and that you can sign in to OneNote on the web directly. For Custom OAuth app, confirm that the redirect URI in your Microsoft Entra ID app matches the Amazon Quick callback URL.
 + **Insufficient permissions** – Verify that the Microsoft Graph permissions configured on your Microsoft Entra ID app include the OneNote scopes required for the operations you want to use, and that admin consent has been granted if required.
 + **Invalid client credentials (Custom OAuth app)** – Verify that the Client ID and Client secret match the values in your Microsoft Entra ID app registration. Confirm that the client secret has not expired.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

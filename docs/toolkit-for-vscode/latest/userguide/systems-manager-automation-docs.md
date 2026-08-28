@@ -169,3 +169,7 @@ Alternatively, if you want to use one of the AWS SDKs with the Systems Manager A
 
 **Note**
 Executing an Automation document can create new resources in AWS and can incur billing costs. We strongly recommend that you understand what your Automation document will create in your account before you started it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

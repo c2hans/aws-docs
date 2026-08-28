@@ -90,3 +90,7 @@ View details about updates to AWS managed policies for Athena since this service
 | [AmazonAthenaFullAccess](#amazonathenafullaccess-managed-policy) – Update to existing policy | Athena added `cloudwatch:GetMetricData` to retrieve CloudWatch metric values. For more information, see [GetMetricData](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricData.html) in the *Amazon CloudWatch API Reference*. | November 14, 2022 |
 | [AmazonAthenaFullAccess](#amazonathenafullaccess-managed-policy) and [AWSQuicksightAthenaAccess](#awsquicksightathenaaccess-managed-policy) – Updates to existing policies | Athena added `s3:PutBucketPublicAccessBlock` to enable the blocking of public access on the buckets created by Athena. | July 7, 2021 |
 | Athena started tracking changes | Athena started tracking changes for its AWS managed policies. | July 7, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,6 +45,7 @@ Additional Nextflow considerations:
 + **Reports**
 
   HealthOmics supports the Nextflow execution report, timeline, trace, and DAG reports. Configure each report to write its output under `/mnt/workflow/output/` so that HealthOmics exports it to your run's Amazon S3 output location. For more information, see [Generate Nextflow execution reports](workflow-definition-nextflow.md#nextflow-execution-reports).
++ **Automatic syntax validation** – For WDL and Nextflow, HealthOmics runs built-in linters during workflow creation. For more information, see [Workflow linters in HealthOmics](workflows-linter.md).
 
 Additional CWL considerations:
 + **Container image uri interpolation**
@@ -64,3 +65,7 @@ Additional CWL considerations:
 + **Operation process**
 
   HealthOmics doesn't support CWL Operation processes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -117,3 +117,7 @@ Flow logs can help you with a number of tasks, such as:
 You do not have to enable VPC flow logs for each newly created VPC in Accelerate accounts. AMS will automatically detect whether a VPC has a flow log using the [ams-nist-cis-vpc-flow-logs-enabled](https://docs.aws.amazon.com/config/latest/developerguide/vpc-flow-logs-enabled.html) Config rule. If VPC flow logs are not enabled, AMS will automatically remediate it by creating a VPC flow log with [custom fields](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html#flow-logs-custom). Having these additional fields will enable AMS and customers to better monitor VPC traffic, understand network dependencies, troubleshoot network connectivity issues, and identify network threats.
 
 For information on viewing and searching flow logs, see [Work with flow logs](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-flow-logs.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

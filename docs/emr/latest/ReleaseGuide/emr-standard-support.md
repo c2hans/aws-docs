@@ -162,3 +162,7 @@ For more information, contact [AWS Developer Support](https://aws.amazon.com/pre
 | --- | --- | --- |
 | August 14, 2026 | Extended Support added | AWS added free Extended Support for releases 5.36 and 6.6 and later. Releases 5.36 and 6.6 through 6.15 receive best-effort critical security fixes; releases 7.0 through 7.10 receive full Standard Support. |
 | July 31, 2026 | Bridge support extended | Bridge support was extended to August 31, 2026 for all eligible releases. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ Visualizing your templates in Infrastructure Composer helps you identify gaps an
 While the CloudFormation console version of Infrastructure Composer has similar features to the standard Infrastructure Composer console, there are a few differences. Lambda-related cards (**Lambda Function** and **Lambda Layer**) require code builds and packaging solutions that are not available in Infrastructure Composer in CloudFormation console mode. Local sync is also not available in this mode.
 
 However, you can use these Lambda-related cards and the local sync feature in the [Infrastructure Composer console](https://console.aws.amazon.com/composer/home) or the AWS Toolkit for Visual Studio Code. For more information, see the [AWS Infrastructure Composer Developer Guide](https://docs.aws.amazon.com/infrastructure-composer/latest/dg/what-is-composer.html) and [Infrastructure Composer](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/appcomposer.html) in the *AWS Toolkit for Visual Studio Code User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

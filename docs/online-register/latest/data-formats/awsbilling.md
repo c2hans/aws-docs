@@ -27,3 +27,7 @@ AWS Billing provides the following APIs for data retrieval.
 | <a name="billing-ListSourceViewsForBillingView"></a>[ListSourceViewsForBillingView](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_ListSourceViewsForBillingView.html) | Get the list of source views for a specified billing view | List |
 | <a name="billing-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_billing_ListTagsForResource.html) | Get the list of tags for a specified billing view | Read |
 | <a name="billing-UseSourceView"></a>[UseSourceView](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html#user-permissions) | Use a billing view as a data source for other billing views | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

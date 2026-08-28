@@ -256,3 +256,7 @@ Before you can delete an AWS RCS Agent, you must first delete all associated reg
 1. Call the `DeleteRcsAgent` API with the agent ID or ARN of the AWS RCS Agent that you want to delete.
 
 1. Verify that the agent has been deleted by calling the `DescribeRcsAgents` API. The agent should no longer appear in the results, or its status should be DELETED.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

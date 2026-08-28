@@ -52,3 +52,7 @@ The first question you should ask concerns the value of moving a classic web app
 1.  **Managed database with [Amazon Relational Database Service](https://aws.amazon.com/rds/) (Amazon RDS)** – Creates a highly available, multi-AZ database architecture with six possible DB engines.
 
 1.  **Static storage and backups with [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3)** – Enables simple HTTP-based object storage for backups and static assets like images and video.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

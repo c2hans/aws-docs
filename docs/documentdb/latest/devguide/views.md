@@ -45,3 +45,7 @@ Some specialized operators like $currentOp, $replaceRoot, and $geoNear currently
 Views in Amazon DocumentDB 8.0 use the indexes of the underlying collection. As a result, you cannot create, drop, or rebuild indexes on a view directly. However, well-designed indexes on the source collection can significantly improve view query performance Below are some steps to optimize query performance on views:
 + Ensure appropriate indexes exist on the source collection fields used in the view's pipeline, especially in $match and $sort operations
 + Use the explain() method to analyze query execution plans and verify index usage. E.g., `db.viewName.find({...}).explain() `
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

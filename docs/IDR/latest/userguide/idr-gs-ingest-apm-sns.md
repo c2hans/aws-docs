@@ -109,3 +109,7 @@ After the CloudFormation stack is deployed successfully, you can validate the in
 1. Follow your APM documentation to set up an SNS destination for your APM payloads that need to be ingested by AWS Incident Detection and Response.
 
 AWS Incident Detection and Response will install a managed rule (`AWSHealthEventProcessorEventSource-DO-NOT-DELETE`) on the custom or default event bus through the `AWSServiceRoleForHealth_EventProcessor` SLR. The rule source will be the custom or default event bus, the rule destination will be AWS Incident Detection and Response, and the rule will match the pattern for ingesting 3rd party APM events.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

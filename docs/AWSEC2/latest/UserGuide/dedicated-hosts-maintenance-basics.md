@@ -79,3 +79,7 @@ For these instances, instance retirement events are scheduled for 28 days from t
 The following instances have instance store root volumes: C1, C3, D2, I2, M1, M2, M3, R3, and X1.
 
 You can continue to access your instances on the degraded Dedicated Host before the scheduled event.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,3 +39,7 @@ Before your software as a service (SaaS) product goes live, you must verify that
 | Security  | Validated you have security incident tools and access in place and routinely scheduled incident response exercises that accommodate timely investigation and recovery.  |
 | Reliability  | Verified the system adapts to changes in demand, scaling up and down as required, and employs load balancing to ensure high performance. The system also provides edge-based caching as required.  |
 | Reliability  | Validated recovery time and point objectives are speciﬁed, and disaster recovery is scheduled at regular intervals. Component failure is self-healing via automated triggers and notiﬁcations.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

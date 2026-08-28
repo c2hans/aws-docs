@@ -12,3 +12,7 @@ The following limitations apply to pivot tables:
 + If you are sorting by a custom metric, you can't add a table calculation until you remove the custom metric sort.
 + If you are using a table calculation and then add a custom metric, you can't sort by the custom metric.
 + Totals and subtotals are blank for table calculations on metrics aggregated by distinct count.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

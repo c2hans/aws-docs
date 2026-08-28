@@ -50,3 +50,7 @@ The service enables advanced inference optimizations through managed tiered KV c
 <a name="supported-clients-and-protocols.9acf7aaa-92f2-53e4-ac00-8bd1d6982c7b"></a>
 
 Deployed inference workloads can be accessed through Application Load Balancers (ALB) over HTTPS, the Amazon SageMaker Runtime API, the AWS SDK, the [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/), any OpenAI-compatible client (vLLM exposes `/v1/chat/completions`), or custom Route 53 DNS endpoints with ACM certificates.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

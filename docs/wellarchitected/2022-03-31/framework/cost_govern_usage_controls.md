@@ -35,3 +35,7 @@ Governance can also be implemented through management of Service Quotas. By ensu
  **Related examples:**
 +  [Well-Architected Labs: Cost and Usage Governance](https://wellarchitectedlabs.com/Cost/Cost_Fundamentals/100_2_Cost_and_Usage_Governance/README.html)
 +  [Well-Architected Labs: Cost and Usage Governance](https://wellarchitectedlabs.com/Cost/Cost_Fundamentals/200_2_Cost_and_Usage_Governance/README.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

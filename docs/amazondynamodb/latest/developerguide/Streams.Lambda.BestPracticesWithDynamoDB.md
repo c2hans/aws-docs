@@ -20,3 +20,7 @@ For DynamoDB triggers using AWS Lambda, we recommend the following:
 A Lambda consumer for a DynamoDB stream provides at-least-once delivery: it doesn't guarantee exactly-once delivery and might process the same record more than once (for example, when a function invocation is retried). This is distinct from the DynamoDB Streams guarantee that each stream record appears exactly once *in the stream* — that guarantee describes the records that are stored in the stream, not the number of times a consumer processes them. To prevent unexpected issues from duplicate processing, make sure your Lambda function code is idempotent.
 
 For more information, see [Best practices for working with AWS Lambda functions](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html) in the *AWS Lambda Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

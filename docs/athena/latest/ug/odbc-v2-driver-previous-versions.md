@@ -53,3 +53,7 @@ We highly recommended that you use the [latest version](odbc-v2-driver.md) of th
 + [2.0.3.0 (Intel)](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.0.3.0/Mac/Intel/AmazonAthenaODBC-2.0.3.0_x86.pkg)
 + [2.0.2.2 (ARM)](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.0.2.2/Mac/arm/AmazonAthenaODBC-2.0.2.2_arm.pkg)
 + [2.0.2.2 (Intel)](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/v2.0.2.2/Mac/intel/AmazonAthenaODBC-2.0.2.2_x86.pkg)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

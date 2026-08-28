@@ -47,3 +47,7 @@ The Amazon Chime SDK Messaging APIs in this section let software developers send
 <a name="chime-sdk-voice"></a>
 
 The Amazon Chime SDK Voice APIs enable software developers to add telephony capabilties to their custom communication solutions. You use these APIs with SIP infrastructure and Amazon Chime SDK Voice Connectors. For more information, see [Amazon Chime SDK Voice](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_Operations_Amazon_Chime_SDK_Voice.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

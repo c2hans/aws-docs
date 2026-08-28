@@ -28,3 +28,7 @@ We deprecated `aws___call_aws` as of July 15, 2026 and will remove it on August 
 These tools work together to provide comprehensive AWS task completion: skills guide the workflow, knowledge tools provide current information and best practices, and API tools execute the actual AWS operations with proper authentication and authorization.
 
 When multiple profiles are configured (via `--profile` or `AWS_MCP_PROXY_PROFILES`), the MCP Proxy for AWS injects an optional `aws_profile` parameter into the schema of `aws___call_aws`, `aws___run_script`, `aws___get_presigned_url`, and `aws___get_tasks`. This parameter lets the agent route individual requests through different AWS credential profiles. The parameter is stripped by the proxy before forwarding to the server. See [Multi-profile support](multi-account-access.md) for configuration details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Agent Toolkit for AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agent-toolkit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

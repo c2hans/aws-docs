@@ -32,3 +32,7 @@ If you already have a CloudShell VPC environment, you can't create a new VPC env
 If you don't have permission to view the created VPC environments, contact your administrator to add the `cloudshell:describeEnvironments` permission. For more information, see [Managing AWS CloudShell access and usage with IAM policies](sec-auth-with-identities.md).
 
 You can continue to run commands in the CloudShell terminal.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -139,3 +139,7 @@ Define restricted topics to prevent AI applications from discussing sensitive su
 Apply guardrails consistently across all tool integration patterns by invoking them through the `InvokeModel` API with the `guardrailConfig` parameter. For AgentCore Gateway integrations, configure guardrails directly within gateway settings to filter both tool inputs and outputs before execution.
 
 Use guardrail metrics in CloudWatch to monitor filtering effectiveness and identify potential security threats. Create alarms when guardrail activation rates exceed expected thresholds, which may indicate attack attempts or policy violations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

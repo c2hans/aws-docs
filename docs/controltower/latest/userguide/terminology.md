@@ -42,3 +42,7 @@ First, it's good to know that AWS Control Tower shares a lot of terminology with
 + **Governed:** A governed Region is managed and controlled in your environment by AWS Control Tower, according to the governance policies set by your organization. These AWS Regions are monitored to adhere to best practices and organizational policies. Your resources in these Regions are protected when you enable AWS Control Tower controls.
 + **Not governed:** Regions that show **Not governed** status are not controlled or monitored by AWS Control Tower. These AWS Regions usually do not adhere to the same governance policies that AWS Control Tower enforces. You can create resources in these Regions, but those resources are not protected by AWS Control Tower controls.
 +  **Denied:** A denied Region is blocked specifically by AWS Control Tower. Within your AWS Control Tower environment, you cannot provision resources in these AWS Regions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

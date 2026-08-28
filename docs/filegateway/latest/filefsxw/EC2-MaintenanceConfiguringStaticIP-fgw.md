@@ -22,3 +22,7 @@ You can view and configure the network settings for your Amazon EC2 File Gateway
 **Note**
 If you choose to configure a static hostname for your gateway, you must create an A record in your DNS system that points the IP address of the gateway to its static hostname.
    + **View Hostname Configuration** - The gateway local console displays hostname, aquisition mode, domain, and Active Directory realm for your Amazon EC2 File Gateway.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

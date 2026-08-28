@@ -43,3 +43,7 @@ After you create the grant, the recipient (grantee) must:
 + Follow the [initialization instructions](https://docs.aws.amazon.com/odb/latest/UserGuide/initialize-service-task.html#initialize-service-overview) for Oracle Database@AWS.
 
 After initialization completes, the grantee can provision Oracle Database@AWS resources using the shared entitlement.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

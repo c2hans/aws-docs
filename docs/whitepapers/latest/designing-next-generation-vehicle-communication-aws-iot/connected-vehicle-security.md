@@ -52,3 +52,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/designing-next-genera
  Continuous monitoring of your policies is an important mechanism to ensure that overly permissive policies are addressed. It is recommended to review your AWS IoT Device Defender Audit checks related to overly permissive and misconfigured ECUs, and create a response/remediation strategy when these ECUs are detected. You can send your AWS IoT Device Defender Audit findings to [AWS Security Hub CSPM](https://aws.amazon.com/security-hub/), which is a cloud security posture management service that performs security best practice checks, aggregates alerts, and enables automated remediation.
 
  For more information, see the [Identity checklist](https://docs.aws.amazon.com/wellarchitected/latest/iot-lens-checklist/design-principle-1.html) in the AWS Well-Architected IoT Lens.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

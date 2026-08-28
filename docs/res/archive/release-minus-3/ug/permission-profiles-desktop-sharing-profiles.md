@@ -32,3 +32,7 @@ Any changes made to the profile will be immediately applied to the current open 
 ![desktop sharing profiles with testprofile_1 selected](http://docs.aws.amazon.com/res/archive/release-minus-3/ug/images/res-desktop-sharing-profiles2.png)
 
 ![profile definition and permissions for testProfile_1](http://docs.aws.amazon.com/res/archive/release-minus-3/ug/images/res-profile-definition2.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

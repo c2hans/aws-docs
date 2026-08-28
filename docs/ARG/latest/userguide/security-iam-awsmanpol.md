@@ -79,3 +79,7 @@ View details about updates to AWS managed policies for Resource Groups since thi
 | Policy update – [ResourceGroupsandTagEditorReadOnlyAccess](#security-iam-awsmanpol-ResourceGroupsandTagEditorReadOnlyAccess.title)  | Resource Groups updated a policy to include additional AWS CloudFormation permissions. | August 10, 2023 |
 | New policy – [ResourceGroupsServiceRolePolicy](#security-iam-awsmanpol-ResourceGroupsServiceRolePolicy.title) | Resource Groups added a new policy to support its service-linked role. | November 17, 2022 |
 | Resource Groups started tracking changes | Resource Groups started tracking changes for its AWS managed policies. | November 17, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Resource Groups. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ARG` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

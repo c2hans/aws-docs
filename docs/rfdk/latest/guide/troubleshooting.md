@@ -216,3 +216,7 @@ Some constructs cannot be destroyed due to their default [removal policies](http
 Make sure you evaluate whether or not using `RemovalPolicy.DESTROY` is acceptable for your use case. It’s possible that you may not want certain constructs destroyed if you believe they will contain important data that you want persisted after the rest of your render farm is destroyed.
 
 To preemptively avoid this problem, you can modify the removal policy to `RemovalPolicy.DESTROY` before performing your deployment. If you have not modified this property and would like to clean these leftover constructs up, they can be deleted from the AWS console. Once deleted, `cdk destroy [stack-name]` can be rerun to finish destroying anything else that failed to be deleted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Render Farm Deployment Kit on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rfdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

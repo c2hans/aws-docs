@@ -137,3 +137,7 @@ If you want to configure a delegated administrator account using the AWS CLI or 
 <a name="integrate-disable-da-devops"></a>
 
  You can remove the delegated administrator using either the DevOps Guru console, or by using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation. For information on how to remove a delegated administrator using the DevOps Guru console, see [Monitor accounts across your organization](https://docs.aws.amazon.com/devops-guru/latest/userguide/getting-started-multi-account.html) in the *Amazon DevOps Guru User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

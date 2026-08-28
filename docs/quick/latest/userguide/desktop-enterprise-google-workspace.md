@@ -74,7 +74,7 @@ Record the following OIDC endpoints. You enter these values, together with the *
 Append your client secret to the token endpoint as a `client_secret` query parameter so that token exchange succeeds—for example, `https://oauth2.googleapis.com/token?client_secret=<CLIENT_SECRET>`. Replace `<CLIENT_SECRET>` with the client secret generated for your OAuth client.
 
 ## Step 2: Add the extension access in the Amazon Quick administration console
-<a name="w2aac51c11c21c15"></a>
+<a name="w2aac51c11c25c15"></a>
 
 In the Amazon Quick administration console, add an extension access using the OIDC endpoint values and Client ID that you recorded in Step 1.
 
@@ -96,7 +96,7 @@ In the Amazon Quick administration console, add an extension access using the OI
 Verify that all values are correct before you choose **Add**. The extension access configuration cannot be edited after creation. If any value is incorrect, you must delete the extension access and create a new one.
 
 ## Step 3: Create the extension in the Amazon Quick console
-<a name="w2aac51c11c21c17"></a>
+<a name="w2aac51c11c25c17"></a>
 
 After you add the extension access in the Amazon Quick administration console, create the extension on the **Extensions** page in the Amazon Quick console.
 
@@ -117,7 +117,7 @@ Both Step 2 and Step 3 are required. If you add the extension access but do not 
 Creating the extension is a one-time, account-level action. After an administrator creates the extension, enterprise sign-in is available for all users in the account. Individual users do not need to enable the extension themselves — they only need to download the desktop application and sign in.
 
 ## Step 4: Download, verify, and distribute the desktop application
-<a name="w2aac51c11c21c19"></a>
+<a name="w2aac51c11c25c19"></a>
 
 In this step, you download and install the desktop application, verify that enterprise sign-in works, and then distribute the application to your users.
 
@@ -151,3 +151,7 @@ After you install the application, verify that enterprise sign-in works.
 If sign-in fails, verify the values you entered in Step 2 against the OIDC endpoints and Client ID from Step 1. If any value is incorrect, delete the extension access under **Permissions → Extension access** in the Amazon Quick administration console, and repeat Step 2 with the correct values. For more help, see [Troubleshooting enterprise sign-in for Amazon Quick on desktop](desktop-enterprise-setup-troubleshooting.md).
 
 Finally, after you verify the setup, distribute the application to your users. Direct them to [Getting started](getting-started-desktop.md) for download, installation, and sign-in instructions. Users choose **Continue with SSO** and sign in with their corporate credentials — no additional per-user configuration is required.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

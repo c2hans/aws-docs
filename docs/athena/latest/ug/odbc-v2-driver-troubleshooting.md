@@ -19,3 +19,7 @@ Be sure to include the following information, and provide any additional details
 + **SAML errors** – (Optional) If you have an issue related to authentication with SAML assertion, include the following information:
   + The identity provider and authentication plugin that was used.
   + An example with the SAML token.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

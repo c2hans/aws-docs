@@ -381,3 +381,7 @@ Writing system table data to S3 Tables is free. You are charged for standard S3 
 + You can drop the S3 Tables created by this feature, but doing so permanently removes all retained data in those tables and stops delivery. Redshift does not automatically recreate dropped tables. To resume delivery, you must re-enable the feature, which creates new tables and begins delivering new data going forward. Previously delivered data is not restored. For more information, see [Deleting S3 tables](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-delete.html) in the *Amazon S3 User Guide*.
 + Delivery is batch-based (data is written at a fixed frequency).
 + Querying from Redshift requires the S3 table bucket to be integrated with AWS Glue Data Catalog.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

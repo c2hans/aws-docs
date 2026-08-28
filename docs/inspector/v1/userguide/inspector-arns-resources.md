@@ -16,3 +16,7 @@ In Amazon Inspector Classic, the primary resources are resource groups, assessme
 | Assessment template | `arn:aws:inspector:{{region}}:{{account-id}}:target/{{ID}}:template:{{ID}}` |
 | Assessment run | `arn:aws:inspector:{{region}}:{{account-id}}:target/{{ID}}/template/{{ID}}/run/{{ID}}` |
 | Finding | `arn:aws:inspector:{{region}}:{{account-id}}:target/{{ID}}/template/{{ID}}/run/{{ID}}/finding/{{ID}}` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

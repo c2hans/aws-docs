@@ -35,3 +35,7 @@ Jobs in clusters that use AWS Batch store the output of jobs that reached a stat
 A log group is created for each custom build image with a name, `/aws/imagebuilder/ParallelClusterImage-{{<image-id>}}`. A unique log stream with name, {{{pcluster-version}}}/1 contains the output of the build image process.
 
 You can access the logs by using the [`pcluster`](pcluster-v3.md) image commands. For more information, see [AWS ParallelCluster AMI customization](custom-ami-v3.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

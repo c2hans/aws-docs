@@ -157,3 +157,7 @@ Each IAM role contains a *trust policy*, which is a set of rules that specifies 
    ```
 
    In the preceding command, replace {{arn:aws:iam::123456789012:policy/RetrieveRecommendationsPolicy}} with the ARN of the policy that you created in the previous section. Also, replace {{PinpointRoleforPersonalize}} with the name of the role that you specified in step 4, if you specified a different name for the role.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,7 +12,7 @@ You can now use the updated experience to access AWS WAF functionality anywhere 
 The following JSON listing shows an example protection pack (web ACL) with an AWS WAF Fraud Control account takeover prevention (ATP) managed rule group that is configured to inspect origin responses. Note the response inspection configuration, which specifies success and response status codes. You can also configure success and response settings based on header, body, and body JSON matches. This JSON includes the protection pack (web ACL)'s automatically generated settings, like the label namespace and the protection pack (web ACL)'s application integration URL.
 
 **Note**
-ATP response inspection is available only in protection packs (web ACLs) that protect CloudFront distributions.
+ATP response inspection is available only in protection packs (web ACLs) that protect CloudFront distributions. AWS WAF doesn't inspect responses for web requests that clients send over HTTP/3 (QUIC).
 
 ```
 {
@@ -85,3 +85,7 @@ ATP response inspection is available only in protection packs (web ACLs) that pr
     "LockToken": "6d0e6966-95c9-48b6-b51d-8e82e523b847"
 }
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

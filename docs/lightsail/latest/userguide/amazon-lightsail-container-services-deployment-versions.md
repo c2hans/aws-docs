@@ -49,3 +49,7 @@ Complete the following procedure to view the deployment versions of your Lightsa
 **Note**
 If you choose to create a new deployment from a version that has a **Failed** status, then you must correct the cause of the failure before creating the deployment. Otherwise, the deployment will likely fail again.
    + **View details** – Choose this option to view the container entry and public endpoint parameters of the selected deployment version. You can also view the container logs for the deployment in case you need to diagnose a failed deployment. For more information, see [View container service logs](amazon-lightsail-viewing-container-service-container-logs.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

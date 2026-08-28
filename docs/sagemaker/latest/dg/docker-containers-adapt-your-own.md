@@ -28,3 +28,7 @@ In addition to the SageMaker Training Toolkit and SageMaker AI Inference Toolkit
 | MXNet | [SageMaker AI MXNet Training](https://github.com/aws/sagemaker-mxnet-training-toolkit)<br />[SageMaker AI MXNet Inference](https://github.com/aws/sagemaker-mxnet-inference-toolkit) |
 | PyTorch | [SageMaker AI PyTorch Training](https://github.com/aws/sagemaker-pytorch-training-toolkit)<br />[SageMaker AI PyTorch Inference](https://github.com/aws/sagemaker-pytorch-inference-toolkit) |
 | Chainer | [SageMaker AI Chainer SageMaker AI Containers](https://github.com/aws/sagemaker-chainer-container) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

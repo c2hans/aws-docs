@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/elemental-inference/latest/userguide/mod
 | To enable or disable an output  | In the section for the output, choose the edit icon and change the **Status** field. Then choose **Save** on the dialog.  |
 | To add an output | In the **Feed outputs** tab, choose Add output. <br />In the dialog that appears, enter a name and optional description, then choose the feature type. Then choose **Add** on the dialog. |
 | To remove an output | In the section for that output, choose the delete icon on the right side of the section.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Inference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-inference` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

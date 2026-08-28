@@ -13,3 +13,7 @@ This section includes topics to help you work with Amazon Elastic Container Serv
 + [Working with Amazon ECS in Application Manager](application-manager-working-ECS.md)
 + [Working with Amazon EKS in Application Manager](application-manager-working-EKS.md)
 + [Working with runbooks for clusters](application-manager-working-runbooks-clusters.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

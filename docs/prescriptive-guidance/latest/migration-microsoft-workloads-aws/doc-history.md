@@ -21,3 +21,7 @@ The following table describes significant changes to this guide.
 | Update | Added complete list of supported instance families to the *Amazon EC2 Dedicated Hosts* section of the [Microsoft licensing on AWS](licensing-microsoft-workloads.md) page. | July 31, 2023 |
 | Update | Added BYOM guidance to the *Replatforming* section of the [Migrating SQL Server](migrating-sql-server-workloads.md) page. | June 23, 2023 |
 | Initial publication | — | June 9, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

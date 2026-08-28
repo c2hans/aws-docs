@@ -41,3 +41,7 @@ The traffic flow is the same as in [solution 1](solution-1.md), except that the 
 1. Connect transit gateways across Regions by using transit gateway peering, and update the transit gateway route tables as required.
 
 1. In the central networking account, create resolver rules for each target Region, and share these rules with target accounts in the same Region by using AWS RAM.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -131,3 +131,7 @@ The following table shows how a histogram differs from a bar chart.
 | Rearranging bars detracts from the meaning of the chart as a whole. | Bars can be in any order without changing the meaning of the chart as a whole. |
 | There are no spaces between the bars, to represent the fact this is continuous data.  | There are spaces between the bars, to represent the fact that this is categorical data. |
 | If a line is included in a histogram, it represents the general shape of the data. | If a line is included in a bar chart, it's called a combo chart, and the line represents a different measure than the bars.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ AL2023 provides a selection of multimedia codecs through its standard repositori
 |  libheif  |  An open source library for reading and writing HEIF and AVIF image files. It provides efficient encoding, decoding, and conversion of images and image sequences using modern compression formats like HEVC and AV1.  |
 |  mpg123  |  A high-performance decoder for MPEG audio streams, including MP3 files. It provides fast and accurate audio decoding for playback, streaming, and audio processing applications.  |
 |  x265  |  The primary objective of x265 is to become the best H.265/HEVC encoder available anywhere, offering the highest compression efficiency and the highest performance on a wide variety of hardware platforms. This package contains the command line encoder.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

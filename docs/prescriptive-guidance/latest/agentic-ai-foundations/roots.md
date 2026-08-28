@@ -16,3 +16,7 @@ The roots of software agents trace back to Oliver Selfridge, who introduced the 
 A pivotal advancement came with Carl Hewitt's actor model (Hewitt et al. 1973), which is a formal computational model that describes agents as independent, concurrent entities. In this model, agents can encapsulate their own state and behavior, communicate by using asynchronous message passing, and dynamically create other actors and delegate tasks to them.
 
 The actor model provided both the theoretical foundation and the architectural paradigm for distributed, agent-based systems. This model prefigured modern concurrency implementations such as the Erlang programming language and the Akka framework.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

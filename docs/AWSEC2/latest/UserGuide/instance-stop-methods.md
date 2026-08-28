@@ -89,3 +89,7 @@ When force stopping and bypassing the graceful OS shutdown is required, the forc
 **Data impact:** Skip OS shutdown might result in data loss or corruption. Contents of memory might not be flushed to disk and in-flight IOs might be lost. Might skip shutdown scripts. If force stop goes ahead, then might cause additional data loss or corruption. In rare cases, results in post-stop writes to the EBS volumes or other shared resources.
 
 **When to use:** When you want to be sure that your instance will stop and you want to bypass the graceful OS shutdown. If used while a default stop with graceful OS shutdown is in progress, the graceful OS shutdown will be bypassed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,3 +50,7 @@ The following Amazon Redshift system tables can be helpful in troubleshooting da
    + Incorrect format for date/time data in input files.
    + Out-of-range values in input files (for numeric columns).
    + Number of distinct values for a column exceeds the limitation for its compression encoding.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

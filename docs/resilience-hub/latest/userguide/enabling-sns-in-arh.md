@@ -17,3 +17,7 @@ When you use AWS Resilience Hub to publish messages from opt-in Regions to topic
 If you are using a Server Side Encrypted (SSE) Amazon SNS topic, you must ensure that AWS Resilience Hub has the `Decrypt` and `GenerateDataKey`\* access to the Amazon SNS encryption key.
 
 To provide `Decrypt` and `GenerateDataKey*` access to AWS Resilience Hub, you must include the following permissions to AWS Key Management Service access policy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

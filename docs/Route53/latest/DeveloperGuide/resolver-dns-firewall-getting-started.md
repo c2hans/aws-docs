@@ -149,3 +149,7 @@ If you want the rule to apply to subdomains as well, you must add those domains 
    Select and adjust the rule priority so that **BlockList-allowMX** is evaluated either before or after any other rules you might have. Because you want to allow MX queries, make sure that the **BlockList-allowMX** rule has a lower priority than **BlockList**.
 
 You now have a rule group that blocks specific malicious domain queries, but allows a specific DNS query type. To begin using it, you associate it with the VPCs where you want to use the filtering behavior. For more information, see [Managing associations between your VPC and Resolver DNS Firewall rule group](resolver-dns-firewall-vpc-associating-rule-group.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

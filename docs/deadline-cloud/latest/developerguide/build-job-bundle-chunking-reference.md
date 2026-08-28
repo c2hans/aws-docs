@@ -36,3 +36,7 @@ In a step's script, the `{{Task.Param.{{name}}}}` variable for a chunked paramet
 For more information, see the following resources:
 + [RFC 0001: Task Chunking](https://github.com/OpenJobDescription/openjd-specifications/blob/mainline/rfcs/0001-task-chunking.md) – The full specification of the extension in the Open Job Description repository on GitHub.
 + [Add task chunking to a job template](build-job-bundle-chunking-add.md) – Convert a job template to use chunking.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

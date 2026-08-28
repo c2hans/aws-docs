@@ -26,3 +26,7 @@ When you create a record, it's easy to specify the wrong value, such as the IP a
 <a name="troubleshooting-server-not-found-resource-unavailable"></a>
 
 If a record specifies a resource such as a web server that's unavailable, a browser will return a "Server not found" error. We recommend that you check the status of the resource that you're routing traffic to.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

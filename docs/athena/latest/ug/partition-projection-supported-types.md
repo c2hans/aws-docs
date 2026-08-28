@@ -78,3 +78,7 @@ It is important to keep in mind the following points:
 | projection.{{columnName}}.type | `injected` | Required. The projection type to use for the column {{columnName}}. Only the string type is supported. The value specified must be injected (case insensitive). Leading and trailing white space is allowed. |
 
 For more information, see [When to use the `injected` projection type](partition-projection-dynamic-id-partitioning.md#partition-projection-injection).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

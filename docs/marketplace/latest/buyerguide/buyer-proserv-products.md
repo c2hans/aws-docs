@@ -24,3 +24,7 @@ If the private offer uses variable payments, you are agreeing to spend up to the
 1. Under **Configure contract**, choose the configuration that you would like to use for your contract. For example, if you are purchasing a support contract, there might be options for *Silver*, *Gold*, or *Platinum* contracts, with different prices.
 
 1. Select **Create contract** to purchase the service. The seller should contact you within 2 business days with instructions for using the service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

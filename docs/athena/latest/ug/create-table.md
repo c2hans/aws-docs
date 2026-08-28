@@ -155,3 +155,7 @@ SELECT * FROM planet_data
 To use the example to create your own TSV table in Athena, replace the table and column names with the names and data types of your own table and columns, and update the `LOCATION` clause to point to the Amazon S3 path where your TSV files are stored.
 
 For more information about creating tables, see [Create tables in Athena](creating-tables.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

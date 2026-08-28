@@ -16,3 +16,7 @@ The following are the hierarchical components of a governance strategy for secur
 + **Security controls** – *Security controls *are the technical or administrative mechanisms you put in place to implement the standards. All security controls map to standards, but not all standards map to security controls. Testing of security controls is designed to monitor and measure whether you are effectively meeting the defined standards.
 
 This guide focuses on how to design and implement common types of security controls in the AWS Cloud.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

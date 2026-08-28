@@ -14,3 +14,7 @@ With Amazon Redshift, you can share live data across Amazon Redshift clusters or
 + [Adding objects to a datashare in Amazon Redshift](writes-adding-datashare.md)
 + [Adding data consumers to a datashare in Amazon Redshift](writes-adding-data-consumer.md)
 + [Authorizing a datashare in Amazon Redshift](writes-authorizing.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

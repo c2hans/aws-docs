@@ -20,3 +20,7 @@ Consider the following when creating your encryption policy:
 + Your policy should specify what type of data needs to be encrypted. This varies based on compliance requirements and the data-handling objectives of your enterprise. For example, your policy might state that any data that the business captures or owns must be encrypted at rest.
 + Your encryption policy must align with your internal data categorization standards. To formulate an effective encryption policy, determination of data categories at the metadata level is required. For example, your categories might include public, internal, confidential, secret, or customer data.
 + Include criteria for how to determine which data should be encrypted and which data should be protected with another technique, such as tokenization or hashing. For example, your policy might state *Any personally identifiable information (PII) that goes to the audit, trace, or application logs must be tokenized*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

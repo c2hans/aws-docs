@@ -110,3 +110,7 @@ Yes, you'll receive reset password emails from `no-reply@signin.aws` going forwa
 Yes. You need to add the S3 IP ranges to your allowlist for us-east-1, us-west-2, and the Region where your Connect Customer instance is located. The existing EC2 and CLOUDFRONT IP ranges in the AWS [ip-ranges.json](https://docs.aws.amazon.com/vpc/latest/userguide/aws-ip-ranges.html) file already cover the other new sign-in endpoints (`*.apps.signin.aws`, `*.signin.aws`, `*.threat-mitigation.aws.amazon.com`).
 
 For more information about IP-based allowlisting for Connect Customer, see [Set up your network to use the Connect Customer Contact Control Panel (CCP)](ccp-networking.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

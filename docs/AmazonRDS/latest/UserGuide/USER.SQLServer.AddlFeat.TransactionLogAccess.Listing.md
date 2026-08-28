@@ -38,3 +38,7 @@ The `rds_fn_list_tlog_backup_metadata` function returns the following output:
 | `is_log_chain_broken` | bit | A boolean value indicating if the log chain is broken between the current transaction log backup file and the previous transaction log backup file. |
 | `file_size_bytes` | bigint | The size of the transactional backup set in bytes. |
 | `Error` | varchar(4000) | Error message if the `rds_fn_list_tlog_backup_metadata` function throws an exception. NULL if no exceptions. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

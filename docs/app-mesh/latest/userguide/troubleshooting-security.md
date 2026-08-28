@@ -121,3 +121,7 @@ Any updates to `TargetGroup` require changing the `TargetGroup` name.
 With this configured properly, your load balancer should provide a secure connection to your service using the certificate provided to the Envoy proxy.
 
 If your issue is still not resolved, then consider opening a [GitHub issue](https://github.com/aws/aws-app-mesh-roadmap/issues/new?assignees=&labels=Bug&template=issue--bug-report.md&title=Bug%3A+describe+bug+here) or contact [AWS Support](https://aws.amazon.com/premiumsupport/). If you believe that you’ve found a security vulnerability or have questions about App Mesh’s security, then see the [AWS vulnerability reporting guidelines](https://aws.amazon.com/security/vulnerability-reporting/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Mesh. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app-mesh` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

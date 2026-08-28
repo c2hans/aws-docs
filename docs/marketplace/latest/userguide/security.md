@@ -33,3 +33,7 @@ To learn about security for buyers in AWS Marketplace, see [Security on AWS Mark
 + [AWS Marketplace metering and entitlement API permissions](iam-user-policy-for-aws-marketplace-actions.md)
 + [Using service-linked roles for Selling Authorization with AWS Marketplace](using-roles-for-resale-authorization.md)
 + [Logging AWS Marketplace API calls with AWS CloudTrail](cloudtrail-logging.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

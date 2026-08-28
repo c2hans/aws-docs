@@ -93,3 +93,7 @@ If you are a first-time user of the AWS Snowball Edge service, we recommend that
 1. When you're ready to get started, see [Getting started with Snowball Edge](getting-started.md).
 
 1. For information about using compute instances on a device, see [Using Amazon EC2-compatible compute instances on Snowball Edge](using-ec2.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

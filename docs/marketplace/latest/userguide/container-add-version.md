@@ -248,3 +248,7 @@ You can check the status of your request at any time from the **Requests** tab o
 <a name="restriciting-version-eks-addon"></a>
 
 To restrict a version of your container product published as an add-on, contact the AWS Marketplace operations team using the contact us form at the bottom of the [AWS Marketplace Management Portal](https://us-east-1.console.aws.amazon.com/partnercentral/home).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

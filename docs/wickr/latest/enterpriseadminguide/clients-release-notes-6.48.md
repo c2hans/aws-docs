@@ -123,3 +123,7 @@ Wickr Open Access (WOA) bug fixes.
 | Android version 6.48.9 > Android version 6.48.10<br />iOS version 6.48.34 > iOS version 6.48.35<br />Desktop version 6.48.21 > Desktop version 6.48.23 | Bug fix | December 18, 2024 |
 | Clients update | New features and bug fixes. | December 11, 2024 |
 | Initial release | Initial release of December release notes | December 11, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

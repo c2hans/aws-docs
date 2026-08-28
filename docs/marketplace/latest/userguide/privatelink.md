@@ -124,3 +124,7 @@ Use the following checklists to ensure that you configure and test your product 
 + Verify that your service is configured and discoverable.
 + Verify that your service is discoverable over the network load balancer.
 + Verify that a buyer can create a VPC endpoint and access your service. Use an AWS account you own that is not the account you used to set up your service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

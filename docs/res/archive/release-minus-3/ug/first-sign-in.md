@@ -10,3 +10,7 @@ Once the product stack has deployed in your account, you will receive an email w
 ![First sign in email invitation](http://docs.aws.amazon.com/res/archive/release-minus-3/ug/images/res-firstsignin.png)
 
 Once you have signed in for the first time, you can configure settings in the web portal to connect to the SSO provider. For post-deployment configuration information, see the [Configuration guide](configuration-guide.md). Note that `clusteradmin` is a break-glass account— you can use it to create projects and assign user or group membership to those projects; it cannot assign software stacks or deploy a desktop for itself.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

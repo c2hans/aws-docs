@@ -29,3 +29,7 @@ The Savings Plans table shows the following information for your purchased Savin
 + **MTD net savings** – The actual savings amount compared to On-Demand, based on the usage of the particular Savings Plan commitment. This column only appears in the **Organization inventory** view.
 + **Start date** – The date when the Savings Plan commitment started.
 + **End date** – The date when the Savings Plan commitment ends.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

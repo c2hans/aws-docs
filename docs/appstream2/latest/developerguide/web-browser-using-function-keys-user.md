@@ -18,3 +18,7 @@ To use a key combination that includes the Windows Control key, choose the Ctrl 
 ![Shortcut toolbar with Ctrl key highlighted in blue, followed by other keys such as Alt, Shift, and Del.](http://docs.aws.amazon.com/appstream2/latest/developerguide/images/AppStream-Fn-Key-3-Choose-Ctrl-Key.png)
 
 Choose the Ctrl key again to release it. For example, to use the keyboard shortcut Ctrl \+ F, choose the Ctrl key on the shortcut toolbar, and then type the f key. Choose the Ctrl key on the shortcut toolbar again to release the Control key. To use shortcuts that include the Alt or Shift keys, choose the Alt key or the Shift key on the shortcut toolbar in the same way. You can use the Shift key on the shortcut toolbar only for keyboard shortcuts. If you are using a touch-enabled device, this key doesn't affect the capitalization of keys that you type on the on-screen keyboard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

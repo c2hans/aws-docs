@@ -149,3 +149,7 @@ To effectively implement repeatable application patterns for generative AI acros
 + Establish a pattern maturity model that classifies patterns as experimental, proven, or enterprise-standard to guide teams in their selection process.
 + Create comprehensive documentation that promotes successful adoption for each pattern, including implementation guides, limitations, and best practices.
 + Conduct regular pattern reviews to identify opportunities for improvement, consolidation, or retirement as technology and business needs evolve.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

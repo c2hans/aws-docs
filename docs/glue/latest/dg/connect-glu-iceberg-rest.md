@@ -68,3 +68,7 @@ This catalog ID to prefix mapping is required only when you directly call the RE
 <a name="ns-path-param"></a>
 
 Namespaces in Iceberg REST catalog APIs path can have multiple levels. However, AWS Glue only supports single-level namespaces. To access a namespace in a multi-level catalog hierarchy, you can connect to a multi-level catalog above the namespace to reference the namespace. This allows any query engine that supports the 3-part notation of `catalog.namespace.table` to access objects in AWS Glue’s multi-level catalog hierarchy without compatibility issues compared to using the multi-level namespace.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

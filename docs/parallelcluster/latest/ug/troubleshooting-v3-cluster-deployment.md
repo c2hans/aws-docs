@@ -204,3 +204,7 @@ After you're logged into the head node, you should find three primary log files 
 +  `/var/log/cfn-init.log` is the log for the `cfn-init` script. First check this log. You're likely to see an error such as `Command chef failed` in this log. Look at the lines immediately before this line for more specifics connected with the error message. For more information, see [cfn-init](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-init.html).
 +  `/var/log/cloud-init.log` is the log for [cloud-init](https://cloudinit.readthedocs.io/). If you don't see anything in `cfn-init.log`, then try checking this log next.
 +  `/var/log/cloud-init-output.log` is the output of commands that were run by [cloud-init](https://cloudinit.readthedocs.io/). This includes the output from `cfn-init`. In most cases, you don't need to look at this log to troubleshoot this type of issue.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

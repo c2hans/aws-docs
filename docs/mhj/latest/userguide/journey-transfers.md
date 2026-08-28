@@ -28,3 +28,7 @@ After you create a migration journey, you can send a request to transfer the jou
    In addition to the invitation email, the individual can also go to **Pending actions** in the navigation pane to see the transfer request that you sent them, and to accept it or reject it. For more information, see [Pending actions](pending-actions.md).
 **Important**
 For the transfer to take effect, the individual to whom you sent the transfer request must accept that request. To accept the request, they can choose **Respond** in the transfer email, or they can go directly to **Pending actions** in the Migration Hub Journeys console. For more information, see [Pending actions](pending-actions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

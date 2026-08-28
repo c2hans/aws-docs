@@ -178,3 +178,7 @@ Configuring Bedrock AgentCore custom code interpreters with a private network mo
 <a name="bedrockagentcore-7-remediation"></a>
 
 To remediate this finding, delete the non-compliant Bedrock AgentCore custom code interpreter and recreate it with VPC network mode. For instructions, see [Configuring VPC access for runtime and tools](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agentcore-vpc.html#agentcore-configuration) in the *Amazon Bedrock AgentCore Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

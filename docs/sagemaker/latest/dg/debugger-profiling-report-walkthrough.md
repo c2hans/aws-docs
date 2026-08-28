@@ -148,3 +148,7 @@ In this section, you can identify workload balancing issue across GPUs.
 In this section, you can analyze the GPU memory utilization collected by the GPUMemoryIncrease rule. In the plot, the boxes show the p25 and p75 percentile ranges (filled with dark purple and bright yellow respectively) from the median (p50), and the error bars show the 5th percentile for the lower bound and 95th percentile for the upper bound.
 
 ![An example of Debugger profiling report.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/debugger/debugger-profiling-report-gpu-memory-utilization.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

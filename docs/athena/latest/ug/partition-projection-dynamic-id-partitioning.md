@@ -64,3 +64,7 @@ When you run this query, Athena sees the three values for the `device_id` partit
 + `s3://amzn-s3-demo-bucket/{{prefix}}/763421d8-b005-47c3-ba32-cc747ab32f9a`
 
 If you leave out the `storage.location.template` property from the partition projection configuration, Athena uses Hive-style partitioning to project partition locations based on the value in `LOCATION` (for example, `s3://amzn-s3-demo-bucket/{{prefix}}/device_id=4a770164-0392-4a41-8565-40ed8cec737e`).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

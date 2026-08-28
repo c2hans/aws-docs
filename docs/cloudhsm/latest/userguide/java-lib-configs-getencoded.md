@@ -28,3 +28,7 @@ The AWS CloudHSM JCE Provider doesn’t allow extraction of key bytes in clear f
 
 1. The `WRAP_WITH_TRUSTED` attribute for the private and secret keys is set to **false**.
    + `getEncoded`, `getPrivateExponent`, and `getS` cannot be used with private keys that cannot be exported in clear. `WRAP_WITH_TRUSTED` doesn't allow your private keys to exported out of the HSM in clear. For more information see [Using trusted keys to control key unwraps](manage-keys-using-trusted-keys.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

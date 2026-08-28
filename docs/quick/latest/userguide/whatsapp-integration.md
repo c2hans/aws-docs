@@ -70,3 +70,7 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **Sign-in fails** – Verify that your Meta for Developers app is active and that the WhatsApp Business product is configured. Confirm that the OAuth redirect URI in your Meta app matches the Amazon Quick callback URL.
 + **Invalid client credentials** – Verify that the App ID (Client ID) and App Secret (Client Secret) match the values in your Meta for Developers app.
 + **Phone number or template errors** – Verify that the phone number is registered and that any message templates you reference are approved in the WhatsApp Business Platform.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

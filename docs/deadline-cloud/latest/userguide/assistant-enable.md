@@ -12,27 +12,29 @@ Only Deadline Cloud administrators can enable or disable the assistant. The assi
 
 To use the assistant, your monitor must have the following:
 + An administrator who enables the assistant through the Deadline Cloud console
-+ The IAM policy attached to the monitor user role
++ The Amazon Bedrock IAM policy attached to the monitor user role
 
 ## Enabling the assistant
 <a name="assistant-enable-procedure"></a>
 
-Use the following procedure to enable the assistant for all monitor users.
+You can turn on the assistant when you first set up your monitor, or at any time afterward from the monitor settings. Use the following procedure to enable the assistant for all users of an existing monitor.
 
 **To enable the assistant**
 
 1. Open the [Deadline Cloud console](https://console.aws.amazon.com/deadlinecloud/home).
 
-1. In the navigation pane, choose **Monitors**, and then choose your monitor.
+1. In the navigation pane, choose **Dashboard**.
 
-1. Choose **Edit** to open the monitor settings.
+1. In the **Monitor overview** section, choose **Actions**, and then choose **Edit** to open the monitor settings page.
 
-1. Select the **Enable Deadline Cloud assistant** checkbox.
+1. In the **Deadline Cloud Assistant** section, select **Enable Deadline Cloud Assistant**.
 
-1. Choose **Save**.
+1. Choose **Update**.
+
+To verify that the assistant is enabled, check that the **Deadline Cloud Assistant** field in the **Monitor overview** section shows **Enabled**.
 
 When you enable the assistant, Deadline Cloud:
-+ Creates a IAM policy on the monitor user role that grants `bedrock:InvokeModelWithResponseStream` permission scoped to your Region's cross-region inference profile.
++ Attaches an Amazon Bedrock IAM policy to the monitor user role. The policy name begins with `DeadlineCloudAssistantBedrockPolicy` and grants the `bedrock:InvokeModelWithResponseStream` permission scoped to your Region's cross-region inference profile.
 + Persists the enabled state through the monitor settings API.
 
 ## Disabling the assistant
@@ -44,10 +46,16 @@ Use the following procedure to disable the assistant.
 
 1. Open the [Deadline Cloud console](https://console.aws.amazon.com/deadlinecloud/home).
 
-1. In the navigation pane, choose **Monitors**, and then choose your monitor.
+1. In the navigation pane, choose **Dashboard**.
 
-1. Choose **Edit** to open the monitor settings.
+1. In the **Monitor overview** section, choose **Actions**, and then choose **Edit** to open the monitor settings page.
 
-1. Clear the **Enable Deadline Cloud assistant** checkbox.
+1. In the **Deadline Cloud Assistant** section, clear **Enable Deadline Cloud Assistant**.
 
-1. Choose **Save**.
+1. Choose **Update**.
+
+Disabling the assistant turns it off for all monitor users, but the Amazon Bedrock IAM policy remains attached to the monitor user role. To also remove the Amazon Bedrock permissions, detach the policy whose name begins with `DeadlineCloudAssistantBedrockPolicy` from the monitor user role in the IAM console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

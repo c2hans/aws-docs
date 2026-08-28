@@ -32,3 +32,7 @@ To migrate SAP NetWeaver based applications running on any database *other than 
 The following diagram illustrates an application migration with this template.
 
 ![Migrate applications with a database using Migration Hub.](http://docs.aws.amazon.com/sap/latest/sap-netweaver/images/mho-anydb.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

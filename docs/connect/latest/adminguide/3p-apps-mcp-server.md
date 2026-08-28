@@ -32,6 +32,9 @@ The Discovery URL must follow this format: `[connect instance URL]/.well-known/o
 **Configure the gateway's Allowed audiences field**
 In the gateway's **Inbound Identity** configuration, add the gateway ID to the **Allowed audiences** field. The JSON Web Token (JWT) that Connect Customer sends to the gateway carries the gateway ID in its `aud` (audience) claim. When the gateway ID is missing from **Allowed audiences**, the gateway rejects the token and tool invocations fail.
 **Allowed audiences** is the only field you must set for Connect Customer. You can leave the **Allowed clients**, **Allowed scopes**, and **Custom claims** fields empty.
+**Add a supported protocol version to the gateway**
+The gateway's **Supported Versions** must include the Model Context Protocol (MCP) version that Connect Customer supports, which is `2025-03-26`. Gateways that you create or edit in the console must include protocol version `2025-03-26`.
+To add the supported version, edit the gateway in Amazon Bedrock AgentCore. In **Additional Configurations**, add `2025-03-26` to the **Supported Versions** field.
 ![Additional gateway configuration options.](http://docs.aws.amazon.com/connect/latest/adminguide/images/3p-apps-mcp-bedrock.png)
 
    1. **Instance association (optional)**
@@ -43,3 +46,7 @@ In the gateway's **Inbound Identity** configuration, add the gateway ID to the *
 
 1. If the integration was successfully created, you will be sent to the **View integration** page where you will see a success banner and the integration summary.
 ![The View integration page showing a success banner after integrating an MCP server.](http://docs.aws.amazon.com/connect/latest/adminguide/images/3p-apps-mcp-success.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

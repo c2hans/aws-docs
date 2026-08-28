@@ -52,3 +52,7 @@ The selected attendees receive a notification, and the event mode icon (![An ico
 Meeting hosts, moderators, or delegates who sign in to the Amazon Chime app can also perform the following actions in Event Mode:
 + To remove an attendee from the presenters list, choose their name on the roster, then choose **Remove from Presenters**.
 + To turn off Event Mode, open the **More options** menu (![An icon showing a horizontal ellipsis.](http://docs.aws.amazon.com/chime/latest/ug/images/left-control-6.png)), then choose **Disable Event Mode**. Once you turn off Event Mode, attendees can mute and unmute themselves, share their screens, and turn their video off or on.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

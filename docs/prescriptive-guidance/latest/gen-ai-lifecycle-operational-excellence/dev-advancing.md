@@ -42,3 +42,7 @@ The transition from development to preproduction environments marks a significan
 + **Establish formal generative AI operations (GenAIOps)** – Implement a formal CI/CD pipeline for all AI artifacts, including prompts, configurations, and evaluation datasets. This helps you test and deploy changes in a controlled and repeatable manner.
 + **Expand the evaluation suite** – Enhance your evaluation dataset with learnings from the PoC, including new edge cases and failure modes that you discovered during testing.
 + **Prepare for a pilot** – Develop a simple but functional user interface and prepare to onboard a small group of pilot users to gather real-world feedback. This is the first step in the journey from a validated concept to a true minimum viable product.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ For [ Chromebooks that support installing Android applications](https://www.chro
 Some Chromebooks launched before 2019 must be enabled to [ install Android apps](https://support.google.com/chromebook/answer/7021273) before users can install the Amazon WorkSpaces Android client application. For more information, see [ Chrome OS Systems Supporting Android Apps](https://sites.google.com/a/chromium.org/dev/chromium-os/chrome-os-systems-supporting-android-apps).
 
 To remotely manage enabling your users' Chromebooks to install Android apps, see [Set up Android on Chrome devices](https://support.google.com/chrome/a/topic/9042368).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

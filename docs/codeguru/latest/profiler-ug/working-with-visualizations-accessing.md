@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/codeguru/latest/profiler-ug/working-with
    Once you've navigated to the **Visualize** page, you can switch between **Data** and **View** using the drop down menus above the visualization panel.
 
 For more information on visualization types, see [Types of visualizations](working-with-visualizations-visualization-types.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

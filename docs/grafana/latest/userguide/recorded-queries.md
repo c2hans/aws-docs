@@ -81,3 +81,7 @@ Recorded queries can be paused or activated and deleted from the Recorded querie
 The remote write target is the **Prometheus** data source that recorded query data points are written to. You will need a Prometheus with remote write enabled and you will need to create a data source for this Prometheus.
 
 To edit the remote write target choose **Edit Remote Write Target** in the console menu on the **Recorded Queries** tab in **Preferences**. Select the **Prometheus** data source that has remote write enabled and enter the remote write path.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

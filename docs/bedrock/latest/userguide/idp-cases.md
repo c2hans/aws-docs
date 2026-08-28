@@ -6,3 +6,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/idp-cases.html
 <a name="idp-cases"></a>
 
 Blueprints are an extremely versatile tool for document processing. The following sections discuss the creation of blueprints with various IDP goals in mind. Additionally, this section provides greater insight into the particulars of creating Blueprints for documents in general.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

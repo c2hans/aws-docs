@@ -43,3 +43,7 @@ Tapes created before March 27, 2019, are archived directly in S3 Glacier Flexibl
 1. In the navigation pane, choose **Tape Library > Tapes** to see your tapes. By default, this list displays up to 1,000 tapes at a time, but the searches that you perform apply to all of your tapes. You can use the search bar to find tapes that match a specific criteria, or to reduce the list to less than 1,000 tapes. When your list contains 1,000 tapes or fewer, you can then sort your tapes in ascending or descending order by various properties.
 
 The status of the virtual tapes is initially set to **CREATING** when the virtual tapes are being created. After the tapes are created, their status changes to **AVAILABLE**. For more information, see [Understanding Tape Status](understand-tapes-status.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

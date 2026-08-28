@@ -79,3 +79,7 @@ The following are the service endpoints and service quotas for this service.
 | Task count | Each supported Region: 600 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/dms/quotas/L-7FD3593B)  | The maximum number of tasks allowed in this account in the current Region. |
 | The amount of collected data in DMS Fleet Advisor | Each supported Region: 10 Gigabytes | No | The amount of data that can be collected by all DMS Fleet Advisor collectors |
 | Total storage | Each supported Region: 30,000 Gigabytes |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/dms/quotas/L-BBDCBDC8)  | The maximum total storage (in GB) for all replication instances added together. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

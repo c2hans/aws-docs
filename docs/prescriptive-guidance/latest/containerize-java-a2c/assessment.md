@@ -32,3 +32,7 @@ Data stored in file systems can be migrated to AWS using various [tools](https:
 AWS provides its own monitoring and operational data logging and visualizing service called [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/). A CloudWatch agent can be packed into the container along with the application to use this service.
 
 For organizations where source code is not available or not maintainable, App2Container is a great fit for containerization because it operates on the application's runtime environment and doesn't require the source code.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

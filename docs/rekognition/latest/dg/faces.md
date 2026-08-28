@@ -30,3 +30,7 @@ The face detection models used by Amazon Rekognition Image and Amazon Rekognitio
 + [Detecting faces in an image](faces-detect-images.md)
 + [Comparing faces in images](faces-comparefaces.md)
 + [Detecting faces in a stored video](faces-sqs-video.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

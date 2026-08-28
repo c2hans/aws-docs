@@ -159,3 +159,7 @@ The following is an example of a low-level, detailed diagram.
 ![An architecture diagram of a hypothetical video-analysis SaaS application with low level details. The details include AWS services icons for AWS Fargate, virtual private cloud (VPC), and Amazon SageMaker AI that are grouped and labeled as part of the control plane and application plane.](http://docs.aws.amazon.com/marketplace/latest/userguide/images/example-architecture-diagram-with-low-level-details.png)
 
 For more information, see [What is Architecture Diagramming?](https://aws.amazon.com/what-is/architecture-diagramming/). After creating a diagram, update your architecture details in the AWS Partner Central. For more information, see [Update architecture details](saas-product-settings.md#updating-architecture-details).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

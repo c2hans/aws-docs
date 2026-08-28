@@ -154,3 +154,7 @@ The following diagram shows the AWS Step Functions workflow for a successful ETL
 The following diagram shows the AWS Step Functions workflow for an ETL pipeline that fails because of an input validation error, from the Step Functions **Inspector **panel.
 
 ![Step Functions workflow with failure so the file moves to the error folder.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/8eb792b0-d35b-4a63-ba2d-71eb8d2c1203/images/5fd7dd79-ba4c-4c20-b1f0-ad4b5f22bdfc.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

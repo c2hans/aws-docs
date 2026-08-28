@@ -79,3 +79,7 @@ The following connection string specifies the default data source {{hms-catalog-
 The following image shows a sample JDBC connection URL as configured in SQL Workbench.
 
 ![Configuring a JDBC connection URL in SQL Workbench.](http://docs.aws.amazon.com/athena/latest/ug/images/datastores-hive-default-catalog-jdbc-1.jpg)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

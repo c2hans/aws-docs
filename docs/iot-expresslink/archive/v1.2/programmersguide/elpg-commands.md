@@ -406,3 +406,7 @@ The module has accepted the request and initiated the process to connect to AWS 
 
 **4.7.8.5**   `ERR25 NOT ALLOWED{EOL}`
 The device is in CONFMODE or a CONNECT\! command is already in progress.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

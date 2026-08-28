@@ -17,3 +17,7 @@ Elastic Beanstalk has released a change that allows your managed platform update
 The Elastic Beanstalk service coordinates resource creation with CloudFormation, and it sends the CloudFormation service a signal when your EC2 instance and application successfully start up. Managed platform updates that may have required more time than originally provided by the previous setting for the [CloudFormation wait condition ](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-waitcondition.html) timeout will now have more time to complete successfully.
 
 For more information about platform updates see [ Managed platform updates](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/environment-platform-update-managed.html) in the *AWS Elastic Beanstalk Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

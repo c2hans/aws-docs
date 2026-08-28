@@ -42,3 +42,7 @@ You can still publish different versions of a package name that exist in an upst
 For package formats that support multiple assets (Python and Maven), you can add new assets with different names to an existing package version at any time, assuming you have the required permissions. Because npm and NuGet only support a single asset per package version, to modify a published package version you must first delete it.
 
  If you try to republish an asset that already exists (for example, `mypackage-1.0.jar`), and the content of the published asset and the new asset are identical, the operation will succeed because the operation is idempotent.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -185,3 +185,7 @@ This table was updated on August 21, 2026.
 | CVE-2025-49128 | MEDIUM | [https://nvd.nist.gov/vuln/detail/CVE-2025-49128](https://nvd.nist.gov/vuln/detail/CVE-2025-49128) |
 | CVE-2020-8908 | LOW | [https://nvd.nist.gov/vuln/detail/CVE-2020-8908](https://nvd.nist.gov/vuln/detail/CVE-2020-8908) |
 | CVE-2024-23454 | LOW | [https://nvd.nist.gov/vuln/detail/CVE-2024-23454](https://nvd.nist.gov/vuln/detail/CVE-2024-23454) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

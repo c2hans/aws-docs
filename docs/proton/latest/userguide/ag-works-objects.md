@@ -48,3 +48,7 @@ We follow the diagram with brief descriptions and reference links for these AWS 
 + **Component** – A developer-defined extension to a service instance. Specifies additional AWS infrastructure resources that a particular application might need, in addition to the resources provided by the environment and the service instance. Platform teams control the infrastructure that a component can provision by attaching a component role to the environment.
 
   For more information, see [AWS Proton components](ag-components.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

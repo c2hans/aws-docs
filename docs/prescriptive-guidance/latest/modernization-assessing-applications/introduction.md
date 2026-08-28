@@ -24,3 +24,7 @@ You should expect three outcomes from a modernization readiness review:
 + A roadmap for modernizing core business applications, including a capture of business benefits, risk factors, and dependencies.
 + An application modernization blueprint to specify the technical and functional architecture for the target state of a modernized application, for one or two applications. This blueprint includes a proof of concept for delivering a minimum viable product (MVP).
 + An action plan to resolve the identified gaps, so your organization can modernize at scale without having to pause to solve foundational issues.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

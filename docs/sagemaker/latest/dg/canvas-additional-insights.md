@@ -15,3 +15,7 @@ You can specify a column in your dataset as a **Group column**. Amazon SageMaker
 Overall sales of items might be impacted by the presence of holidays. For example, in the United States, the number of items sold in both November and December might differ greatly from the number of items sold in January. If you use the data from November and December to forecast the sales in January, your results might be inaccurate. Using a holiday schedule prevents you getting inaccurate results. You can use a holiday schedule for 251 countries.
 
 For a forecast on a single item in your dataset, you can use what-if scenarios. A what-if scenario gives you the ability to change values in your data and change the forecast. For example, you can answer the following questions by using a what-if scenario, "What if I lowered prices? How would that affect the number of items sold?"
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

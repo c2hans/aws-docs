@@ -173,3 +173,7 @@ You can adjust the following settings when you create an `SqsAsyncBatchManager` 
 | receiveMessageMinWaitDuration | Minimum wait time for receiveMessage requests. Avoid setting to 0 to prevent CPU waste. | 50ms |
 | receiveMessageSystemAttributeNames | List of [system attribute names](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/sqs/model/MessageSystemAttributeName.html) to request for receiveMessage calls. | None |
 | receiveMessageAttributeNames | List of [attribute names](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-message-metadata.html#sqs-message-attributes) to request for receiveMessage calls. | None |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

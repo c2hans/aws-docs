@@ -51,3 +51,7 @@ To see the format for a hosted zone ARN, see **ARN format for hosted zone** in [
 1. On the **Recovery group** details page, choose **Get architecture recommendations**. ARC displays a set of recommendations on the page.
 
 Review the list of recommendations. Then you can decide whether and how to make changes to improve your app's recovery resilience.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

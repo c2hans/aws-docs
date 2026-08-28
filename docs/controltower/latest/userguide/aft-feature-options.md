@@ -108,3 +108,7 @@ Refer to [Default VPC and default subnets](https://docs.aws.amazon.com/vpc/lates
 
 **Note**
 Default VPC deletion is best-effort per AWS Region. If a Region's endpoint is temporarily unreachable, AFT skips that Region and continues deleting default VPCs in the remaining Regions. Skipped Regions are retried on the next customization pipeline run. To check whether any Regions were skipped, search the `aft-delete-default-vpc` Lambda function logs for the message `Skipping default VPC deletion in region`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -230,3 +230,7 @@ The following table provides details about updates to AWS managed policies for A
 | AWSDataLifecycleManagerServiceRole — Added permissions to support snapshot archiving. | Amazon Data Lifecycle Manager added the ec2:ModifySnapshotTier and ec2:DescribeSnapshotTierStatus actions to grant snapshot policies permission to archive snapshots and to check the archive status for snapshots. | September 30, 2022 |
 | AWSDataLifecycleManagerServiceRoleForAMIManagement — Added permissions to support AMI deprecation. | Amazon Data Lifecycle Manager added the ec2:EnableImageDeprecation and ec2:DisableImageDeprecation actions to grant EBS-backed AMI policies permission to enable and disable AMI deprecation. | August 23, 2021 |
 | Amazon Data Lifecycle Manager started tracking changes | Amazon Data Lifecycle Manager started tracking changes for its AWS managed policies. | August 23, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

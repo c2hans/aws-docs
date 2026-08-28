@@ -13,3 +13,7 @@ In addition to the AWS Management Console and the AWS Command Line Interface (AW
 + For descriptions of the error codes, see [Common errors](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/CommonErrors.html).
 
 For more information about the AWS CLI, see [AWS Command Line Interface reference for Amazon ECS](https://docs.aws.amazon.com/cli/latest/reference/ecs/index.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

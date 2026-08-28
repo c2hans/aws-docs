@@ -425,3 +425,7 @@ The following CloudWatch metrics are recommended for monitoring the performance 
 | {{pipeline-name}}.rds.bytesProcessed | This metrics indicates the total number of bytes processed by an OpenSearch Ingestion pipeline. |
 | {{pipeline-name}}.rds.streamRecordsSuccessTotal | This metric indicates the number of records successfully processed from the stream. |
 | {{pipeline-name}}.rds.streamRecordsFailedTotal | This metrics indicates the total number of records failed to process from the stream. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

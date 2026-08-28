@@ -111,3 +111,7 @@ If you enabled chat barge-in before the release of multi-party chats in December
 1. (Optional) Use the voices available in Amazon Polly.
 
 1. (Optional) To enables logs of automated interactions using IVR and Lex bot transcripts and analytics as a part of your Contact details page and Connect analytics dashboards, you need to select **Enable Bot Analytics and Transcripts in Connect Customer**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ What this means is that you have to replace human best efforts with repeatable, 
 ![Diagram showing the mechanism flywheel](http://docs.aws.amazon.com/wellarchitected/latest/operational-readiness-reviews/images/mechanism-flywheel.png)
 
 The cyclic nature of a mechanism makes it best suited for solving recurring problems or opportunities, as opposed to one-off challenges. The ORR is a mechanism with a tool, an adoption process, and an inspection process that operates in a complete cycle. In the next section we’ll discuss the ORR mechanism and how to build one.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

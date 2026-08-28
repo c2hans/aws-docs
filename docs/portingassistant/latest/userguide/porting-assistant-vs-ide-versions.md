@@ -28,3 +28,7 @@ AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container 
 | 1.0.4 |  +  Fixes porting hanging after running assessment.  <br />+  Supports Visual Studio versions later than 16.9.   | September 17, 2021 |
 | 1.0.3 |  +  Adds memory logging. <br />+  Fixes log uploader. <br />+  Adds default upgrade version of NuGet packages in porting recommendation. <br />+  Syncs metric types with Porting Assistant standalone tools. <br />+  Adds default porting package version in the porting request.   | August 13, 2021 |
 | 1.0 | Initial release | May 3, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Porting Assistant for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query portingassistant` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

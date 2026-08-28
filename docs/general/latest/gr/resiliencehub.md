@@ -82,3 +82,7 @@ The following are the service endpoints and service quotas for this service.
 | Retention period of past recommendation templates in days | Each supported Region: 365 | No | Retention period of past recommendation templates in days |
 | Template size in bytes | Each supported Region: 51,200 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/resiliencehub/quotas/L-CB78A3C3)  | The maximum size of a template in bytes |
 | Terraform state file maximum size | Each supported Region: 4,194,305 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/resiliencehub/quotas/L-D41E7350)  | The maximum import size limit for terraform state files |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

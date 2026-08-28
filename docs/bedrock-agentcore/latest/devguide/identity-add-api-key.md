@@ -30,3 +30,7 @@ API keys provide key-based authentication for services that require direct key a
 1. Choose **Add**.
 
 After creating the API key, AgentCore Identity provides an ARN that you can reference in your agent code to access the stored key without exposing sensitive information in your application. You can find this ARN in the properties page of the API key (Choose the API key name in the **Outbound Auth** section).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

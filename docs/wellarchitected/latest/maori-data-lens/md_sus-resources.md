@@ -11,3 +11,7 @@ The following resources are specific to sustainability and can help you apply M�
 +  [Sustainability at Amazon](https://sustainability.aboutamazon.com/)
 +  [Sustainability in the Cloud](https://sustainability.aboutamazon.com/products-services/the-cloud?energyType=true)
 +  [Water Stewardship](https://sustainability.aboutamazon.com/products-services/the-cloud?energyType=true#water-stewardship)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

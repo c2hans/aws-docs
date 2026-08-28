@@ -69,3 +69,7 @@ Choose from the following options to set up Amazon WorkMail user access:
 + [Migrating to Amazon WorkMail](migration_overview.md)
 + [Interoperability between Amazon WorkMail and Microsoft Exchange](interoperability.md)
 + [Amazon WorkMail quotas](workmail_limits.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

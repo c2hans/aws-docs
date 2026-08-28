@@ -79,3 +79,7 @@ The following table describes important additions to the AWS IAM Identity Center
 | [Support for new applications](https://docs.aws.amazon.com/singlesignon/latest/userguide/saasapps.html) | Added DocuSign, Keeper Security, and SugarCRM to the application catalog. | March 16, 2018 |
 | [Get temporary credentials for CLI access](https://docs.aws.amazon.com/singlesignon/latest/userguide/howtogetcredentials.html) | Added information about how to get temporary credentials to run AWS CLI commands. | February 22, 2018 |
 | [New guide](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html) | This is the first release of the IAM Identity Center User Guide. | December 7, 2017 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

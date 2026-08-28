@@ -55,3 +55,7 @@ Testing and validation
 For comprehensive testing procedures, see [Testing and validation for CDN and MediaTailor integrations](cdn-integration-testing.md).
 
 If you need immediate assistance or cannot resolve the issue using the linked resources, see [Get support and troubleshooting help for CDN and MediaTailor integrations](cdn-get-help.md) for escalation procedures.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

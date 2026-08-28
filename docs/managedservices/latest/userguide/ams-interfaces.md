@@ -18,3 +18,7 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 + *AMS SKMS API* – Read-Only: Use this API to list managed resources and get information needed for reporting or preparing requests for change.
 + *Support API*: Use the standard Support API to programmatically create and respond to incidents and service requests. To learn more, see [Getting Started with Support](https://docs.aws.amazon.com/awssupport/latest/user/getting-started.html).
 + *AWS APIs* – Read Only: Your main IT administrator can use the AWS APIs to see all resources under management, view CloudTrail logs, billing information, and many other read functions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

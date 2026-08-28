@@ -19,3 +19,7 @@ STV\_CURSOR\_CONFIGURATION is visible only to superusers. For more information, 
 | current\_cursor\_count | integer | Number of cursors currently open. |
 | max\_diskspace\_usable | integer | Amount of disk space available for cursors, in megabytes. This constraint is based on the maximum cursor result set size for the cluster.  |
 | current\_diskspace\_used | integer | Amount of disk space currently used by cursors, in megabytes.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

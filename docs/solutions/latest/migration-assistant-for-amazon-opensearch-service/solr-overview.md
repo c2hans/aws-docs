@@ -12,3 +12,7 @@ Keep the following constraints in mind when you plan a Solr migration:
 +  **JSON-format writes only.** The traffic transform layer supports JSON-format write requests only. XML-format update requests (`text/xml`) are not transformed and will not be replayed to the target.
 +  **Version string format.** In your workflow configuration, the Solr source version must be written as `SOLR <major>.<minor>.<patch>` — for example, `SOLR 8.11.4`. The solution uses this value to select the correct reader behavior.
 +  **Backup-based backfill.** Unlike Elasticsearch and OpenSearch sources, a Solr source is migrated from a Solr backup in [Amazon Simple Storage Service](https://aws.amazon.com/s3) (Amazon S3). Migration Assistant can create that backup during the workflow by calling Solr’s backup APIs, or you can create and stage the backup yourself and reference it as an externally managed snapshot.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

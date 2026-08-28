@@ -182,3 +182,7 @@ View details about updates to AWS managed policies for AgentCore since this serv
 |  [BedrockAgentCoreFullAccess](#security-iam-awsmanpol-BedrockAgentCoreFullAccess) – Updated policy | Added permission to create the Amazon Bedrock AgentCore network service-linked role. | September 19, 2025 |
 |  [BedrockAgentCoreNetworkServiceRolePolicy](#security-iam-awsmanpol-BedrockAgentCoreNetworkServiceRolePolicy) – New policy | Added a new AWS managed policy that allows AgentCore to create and manage network interfaces in your VPC when running in VPC mode. | September 19, 2025 |
 | AgentCore started tracking changes | AgentCore started tracking changes for its AWS managed policies. | July 16, 2025 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ You can use the Global Address Book to search for a user, change the default vie
 1. Start typing in the search bar and press **Enter** to search for matching entries. You can also press **Tab** until the screen reader reads *Submit search button*. Press **Enter** to select it. To clear the search, press **Tab** until the screen reader reads *Clear search button*. Press **Enter**.
 
 1. You can send a message to a contact with the Address Book using the **Up/Down** arrows to navigate the list and select a row. Hold down **Shift\+F10** to open the context menu, and choose **Send email**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

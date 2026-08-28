@@ -18,3 +18,7 @@ You can purchase up to a combined 1,000,000 reserved capacity units for write ca
 When you purchase DynamoDB reserved capacity, you pay a one-time partial upfront payment and receive a discounted hourly rate for the committed provisioned usage. You pay for the entire committed provisioned usage, regardless of actual usage, so your cost savings are closely tied to use. Any capacity that you provision in excess of the purchased reserved capacity is billed at standard provisioned capacity rates. By reserving your read and write capacity units ahead of time, you realize significant cost savings on your provisioned capacity costs.
 
 You can't sell, cancel, or transfer reserved capacity to another Region or account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -161,3 +161,7 @@ For more information about SM runbooks, see[ Working with runbooks](https://docs
 AWS Systems Manager Incident Manager is an incident management console designed to help users mitigate and recover from incidents affecting their AWS-hosted applications. An incident is any unplanned interruption or reduction in quality of services.
 
 Amazon Q Developer in chat applications allows you to communicate through chat channels and receive notifications and incident updates during an incident. You can also interact with the incident directly using chat commands. For more information, see [Chat channels](https://docs.aws.amazon.com/incident-manager/latest/userguide/chat.html) in the *Incident Manager User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q Developer in chat applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chatbot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -161,3 +161,7 @@ These images display the qubit groupings for both IQM devices. The Garnet 20-qub
    Dynamic circuits model noise in quantum systems through data qubit and environment entanglement, and environmental measurements. This approach uses specific qubits to represent data and environment elements. A Noise channel can be designed by the gates and measurements applied on the environment.
 
 For more information on using dynamic circuits, see additional examples in the [Amazon Braket notebook repository](https://github.com/amazon-braket/amazon-braket-examples/tree/main/examples/experimental_capabilities/dynamic_circuits).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

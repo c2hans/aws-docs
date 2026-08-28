@@ -159,3 +159,7 @@ Since you've already installed the AWS Connector for GitHub app, you can choose 
 + `Failed to get access token from {{<connection-arn>}}`
 
 **Recommended solution:** Typically you use a connection with an AWS service, such as CodePipeline or CodeBuild. When you give the AWS service an IAM role, the AWS service can use the role's permission to act on your behalf. Make sure the IAM role has necessary permission. For more information about the necessary IAM permission, see [Grant CodeBuild project IAM role access to use the connection](#connections-github-role-access) and [Identity and access management for AWS CodeStar Notifications and CodeConnections](https://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html) in the *Developer Tools console User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

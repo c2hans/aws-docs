@@ -121,3 +121,7 @@ In the following procedure you will change the permissions of your private key f
 
    You are successfully connected to your instance if you see the welcome message for your instance. The following example shows the welcome message for an Amazon Linux 2 instance; other instances blueprints have a similar welcome message. After you're connected, you can execute commands on your instance in Lightsail. To disconnect, enter `exit` and press Enter.
 ![SSH connection established with a Lightsail instance](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-ssh-connection-established.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

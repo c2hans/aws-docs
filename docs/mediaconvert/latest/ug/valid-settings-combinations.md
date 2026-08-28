@@ -29,3 +29,7 @@ Use this table to confirm that the scan type settings you intend to use are vali
 | Hard telecine | Soft telecine<br />*When you want to use **Adaptive** for **Deinterlace mode*** | **Deinterlacer**: Enabled<br />**Deinterlace control**: Normal<br />**Deinterlace mode**: Adaptive<br />**Interlace mode**: Any value except progressive<br />**Telecine**: Soft<br />**Framerate**: 23.967 |
 | Soft telecine | Soft telecine | **Deinterlacer**: Disabled<br />**Deinterlace control**: N/A<br />**Deinterlace mode**: N/A<br />**Interlace mode**: Any value except progressive<br />**Telecine**: Soft |
 | Multiple inputs, some interlaced and some progressive | Soft telecine | **Deinterlacer**: Enabled<br />**Deinterlace control**: Normal<br />**Deinterlace mode**: Adaptive<br />**Interlace mode**: Any value except progressive<br />**Telecine**: Soft<br />**Framerate**: 23.967 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

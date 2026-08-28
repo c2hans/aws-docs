@@ -26,3 +26,7 @@ Any Regions that you have added to your directory are referred to as *additional
 Although some features can be managed globally for all Regions, others are managed individually per Region. To manage a feature for an additional Region (non-primary Region), you must first select the additional Region from the list in the **Multi-Region replication** section on the **Directory details** page. Then you can proceed to manage the feature.
 
 Any changes that you make to [Regional features](multi-region-global-region-features.md#multi-region-regional) while an additional Region is selected will be applied only to that Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

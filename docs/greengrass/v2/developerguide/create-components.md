@@ -468,3 +468,7 @@ You must use the following format for the artifact folder path. Include the comp
 1. Create the artifacts for your component in the folder that you created in the previous step. Artifacts can include software, images, and any other binaries that your component uses.
 
    When your component is ready, [test your component](test-components.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

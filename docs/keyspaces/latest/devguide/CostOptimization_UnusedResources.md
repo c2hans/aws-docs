@@ -175,3 +175,7 @@ After your table has been backed up, you may choose to delete it either through 
 Amazon Keyspaces offers Point-in-time recovery, which provides continuous backups for 35 days to help you protect against accidental writes or deletes. PITR backups have costs associated with them.
 
 Refer to the documentation at [Backup and restore data with point-in-time recovery for Amazon Keyspaces](PointInTimeRecovery.md) to determine if your tables have backups enabled that may no longer be needed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

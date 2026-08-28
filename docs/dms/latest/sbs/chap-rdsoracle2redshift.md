@@ -32,3 +32,7 @@ To estimate what it will cost to run this walkthrough on AWS, you can use the AW
 + [Migration architecture for migrating from Amazon RDS for Oracle to Amazon Redshift](chap-rdsoracle2redshift.architecture.md)
 + [Step-by-step Amazon RDS for Oracle to Amazon Redshift migration walkthrough](chap-rdsoracle2redshift.steps.md)
 + [Migration from Amazon RDS for Oracle to Amazon Redshift next steps](chap-rdsoracle2redshift.nextsteps.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -269,3 +269,7 @@ Consider the following:
 +  [Add another strategy](long-term-enabling-long-term-memory.md#long-term-adding-strategies-to-existing-memory) to your memory resource.
 +  [Enable observability](memory-observability.md) for more visibility into how memory is working
 + Look at further [examples](memory-examples.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

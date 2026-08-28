@@ -23,3 +23,7 @@ If you haven't created an IAM group for the end users, see [Grant permissions to
 1. In the **Principal name** pane, select the **Principal name** type, and then enter the principal **Name** of the desired end user in the spoke account.
 
 1. Choose **Grant access**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

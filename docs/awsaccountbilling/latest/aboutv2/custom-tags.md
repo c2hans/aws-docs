@@ -43,3 +43,7 @@ The following restrictions apply to user-defined tags for Cost Allocation:
 + In some services, you can tag a resource when you create it. For more information, see the documentation for the service where you want to tag resources.
 + If you need characters outside of those listed in [Tag Restrictions](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#tag-restrictions), you can apply standard base-64 encoding to your tag. Billing and Cost Management does not encode or decode your tag for you.
 + User-defined tags on non-metered services can be activated (for example, Account Tagging). However, these tags will not populate in the Cost Management suite because these services are not metered.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

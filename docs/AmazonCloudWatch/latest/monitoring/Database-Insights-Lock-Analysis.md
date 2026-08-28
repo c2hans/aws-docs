@@ -91,3 +91,7 @@ Database Insights provides the following information for each lock request. To v
 For more information about the values in the `pg_stat_activity` and `pg_locks` views, see the following topics in the PostgreSQL documentation.
 + [pg\_locks](https://www.postgresql.org/docs/current/view-pg-locks.html)
 + [pg\_stat\_activity](https://www.postgresql.org/docs/current/monitoring-stats.html#MONITORING-PG-STAT-ACTIVITY-VIEW)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

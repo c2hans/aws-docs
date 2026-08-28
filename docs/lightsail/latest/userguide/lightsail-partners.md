@@ -55,3 +55,7 @@ The following diagram details what occurs when a new member account is added to 
 <a name="lightsail-partners-next-steps"></a>
 
 To proceed, you'll need to submit a form with details about your business needs to become a Lightsail partner. For more information, see [Become a Lightsail partner](lightsail-partners-become-a-partner.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

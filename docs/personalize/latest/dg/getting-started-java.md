@@ -447,3 +447,7 @@ After you create a campaign, you use it to get recommendations. Use the followin
 For an all-in-one project that shows you how to complete the Amazon Personalize workflow with the SDK for Java 2.x, see the [Amazon-Personalize-Java-App](https://github.com/seashman/Amazon-Personalize-Java-App) on GitHub. This project includes training multiple solution versions with different recipes, and recording events with the PutEvents operation.
 
  For additional examples, see code the found in the [personalize](https://github.com/awsdocs/aws-doc-sdk-examples/tree/master/javav2/example_code/personalize/src/main/java/com/example/personalize) folder of the AWS SDK examples repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

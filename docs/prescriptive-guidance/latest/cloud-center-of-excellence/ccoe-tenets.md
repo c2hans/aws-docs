@@ -20,3 +20,7 @@ A Cloud Center of Excellence (CCoE) typically operates based on a set of tenets 
   + Example KPIs are the number of services at released at AWS Marketplace, the number of subscriptions to those services, [AWS Competency](https://aws.amazon.com/partners/programs/competencies/) achievement, AWS Service Delivery Program validation, and movement toward earning the next [AWS Services Partner Tier](https://aws.amazon.com/partners/services-tiers/).
 
 The next section discusses each of the tenets in more detail and provides questions to help identify the relevant KPIs that align with the overall business goals.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,3 +49,7 @@ When you architect your solutions, a best practice is to seek to place computing
 + [ Cost Considerations for Global Deployments ](https://aws.amazon.com/blogs/aws-cloud-financial-management/cost-considerations-for-global-deployments/)
 + [ What to Consider when Selecting a Region for your Workloads ](https://aws.amazon.com/blogs/architecture/what-to-consider-when-selecting-a-region-for-your-workloads/)
 + [ Well-Architected Labs: Restrict service usage by Region (Level 200) ](https://www.wellarchitectedlabs.com/cost/200_labs/200_2_cost_and_usage_governance/2_ec2_restrict_region/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

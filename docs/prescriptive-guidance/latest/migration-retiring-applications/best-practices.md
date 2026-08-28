@@ -100,3 +100,7 @@ AWS offers a comprehensive set of cloud storage services for long-term retention
 To assist your compliance efforts, AWS regularly achieves third-party validation for thousands of global compliance requirements. These are continually monitored to help you meet security and compliance standards for finance, retail, healthcare, government, and beyond.
 
 For more information on data archiving with AWS, see [Data Archiving](https://aws.amazon.com/archive/) on the AWS website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ If you were to create a policy named `Editor` based on this template, when a pri
 Unlike static policies, template-linked policies are dynamic. Take the previous example, if you were to remove the `Comment` action from the policy template, any policy linked to, or based on, that template would be updated accordingly and the principals specified in the policies would no longer be able to comment on the corresponding resources.
 
 For more template-linked policy examples, see [Amazon Verified Permissions example template-linked policies](policy-templates-example-policies.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

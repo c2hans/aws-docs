@@ -122,3 +122,7 @@ Optionally, if you want to keep the environment variables for Windows, follow th
 1. In the **Variable value** field of the `https_proxy` variable, enter `https://PROXY_ADDR:PROXY_PORT/` and then choose **OK**.
 
 1. If the CloudEndure Agent was already installed, restart the service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

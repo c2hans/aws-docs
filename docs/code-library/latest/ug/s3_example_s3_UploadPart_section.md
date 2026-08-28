@@ -174,3 +174,7 @@ Save the ETag value of each part for later. They are required to complete the mu
 +  For API details, see [UploadPart](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/client/struct.Client.html#method.upload_part) in *AWS SDK for Rust API reference*.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

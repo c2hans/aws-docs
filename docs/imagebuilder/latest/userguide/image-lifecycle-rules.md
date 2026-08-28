@@ -201,3 +201,7 @@ Images currently being built (in pending, creating, building, importing, testing
 In the console, the lifecycle policy details page has a [Rules tab](view-lifecycle-policy.md#view-lifecycle-policy-console-rules-tab) that shows rule details for the policy.
 
 In the AWS CLI, run the [get-lifecycle-policy](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/imagebuilder/get-lifecycle-policy.html) command. The response includes all configured actions (rules) with their settings.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

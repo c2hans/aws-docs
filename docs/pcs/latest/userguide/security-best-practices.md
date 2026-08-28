@@ -38,3 +38,7 @@ Any cluster that uses a version of Slurm that has reached *end of support life* 
 + Deploy your AWS PCS clusters in a separate VPC to isolate your HPC environment from other network traffic.
 + Use security groups and network access control lists (ACLs) to control inbound and outbound traffic to AWS PCS instances and subnets.
 + Use AWS PrivateLink or VPC endpoints to keep network traffic to between your clusters and other AWS services inside the AWS network. For more information, see [Access AWS Parallel Computing Service using an interface endpoint (AWS PrivateLink)](vpc-interface-endpoints.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

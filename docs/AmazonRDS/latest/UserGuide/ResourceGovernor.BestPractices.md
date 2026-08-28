@@ -14,3 +14,7 @@ To control resource consumption, RDS for SQL Server supports Microsoft SQL Serve
 1. Avoid setting high values (above 70) for `REQUEST_MAX_MEMORY_GRANT_PERCENT` in workload groups, as this can prevent the database instance from allocating sufficient memory for other concurrent queries, potentially resulting in memory grant timeout errors (Error 8645). Conversely, setting this value too low (less than 1) or to 0 might prevent queries that need memory workspace (like those involving sort or hash operations) from executing properly in user-defined workload groups. RDS enforces these limits by restricting values to between 1 and 70 on default workload groups.
 
 1. For binding tempdb to resource pool, after binding memory optimized tempdb metadata to a pool, the pool might reach its maximum setting, and any queries that use `tempdb` might fail with out-of-memory errors. Under certain circumstances, the SQL Server could potentially stop if an out-of-memory error occurs. To reduce the chance of this happening, set the memory pool's `MAX_MEMORY_PERCENT` to a high value.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

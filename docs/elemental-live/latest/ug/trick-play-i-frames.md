@@ -35,3 +35,7 @@ Include these steps when you create the HLS output group.
 1. In the output, choose **Advanced** to open that section, then select **Add I-frame Only Manifest**.
 
 1. Set up the remaining fields in the output group as you normally would. Set up the video, audio, and captions outputs and encodes as you normally would.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

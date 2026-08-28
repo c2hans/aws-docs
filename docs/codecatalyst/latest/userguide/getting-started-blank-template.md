@@ -141,3 +141,7 @@ This functionality requires that generative AI features are enabled for the spac
 1. Choose **Save**.
 
 After you have created issues, you can assign them to project members, estimate them, and track them on a Kanban board. For more information, see [Track and organize work with issues in CodeCatalyst](issues.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

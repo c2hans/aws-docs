@@ -80,3 +80,7 @@ Job records are deleted after 90 days.
 The data loading job also publishes RDS events, for example when a job succeeds, fails, or is canceled. You can view the events from the destination database.
 
 For more information, see [DB shard group events](USER_Events.Messages.md#USER_Events.Messages.shard-group).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ To learn more about working with Powertools for AWS, see the following resources
 + [Serverless patterns that use Powertools for AWS](https://serverlessland.com/search?search=powertools)
 + [AWS well-architected serverless lens](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/welcome.html)
 + [Building Serverless APIs with Powertools for AWS Lambda](https://catalog.workshops.aws/powertools-for-aws-lambda-event-handler)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

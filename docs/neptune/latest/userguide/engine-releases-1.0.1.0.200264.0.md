@@ -40,3 +40,7 @@ If you have any questions or concerns, the AWS Support team is available on the 
 + Improved support for Gremlin single cardinality properties constraints.
   + Improved enforcement of single cardinality for edge properties and vertex properties marked as single cardinality properties.
   + Introduced an error if additional property values are specified for an existing edge property during Neptune Load jobs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ Some users in your organization will create push inputs and SDI inputs for sourc
 | Create push inputs for channels running on MediaLive Anywhere | MediaLive | Specify the network of a static IP address on a push input. (Using a static IP address is optional.) | `ListNetworks` |
 | Create push inputs for channels running on MediaLive Anywhere | MediaLive | Optionally specify the route for a static IP address on a push input. (Using a static IP address is optional.) | `ListNetworks` |
 | Create SDI inputs for channels running on MediaLive Anywhere | MediaLive | Select the source for an SDI input | `ListSdiSources` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

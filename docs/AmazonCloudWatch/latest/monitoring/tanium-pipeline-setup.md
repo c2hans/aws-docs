@@ -65,3 +65,7 @@ Fallback AWS account ID used for any bucket not explicitly listed in `bucket_own
 
 `compression` (required)
 `none` – Indicates the Amazon S3 objects are not compressed, so no decompression is applied before parsing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

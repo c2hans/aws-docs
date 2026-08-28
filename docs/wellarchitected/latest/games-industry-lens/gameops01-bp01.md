@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 <a name="implementation-steps"></a>
 +  You may define the targets for player concurrency (CCU) and daily and monthly active users (DAU and MAU) that the game infrastructure should be capable to effectively support, your infrastructure budgets, financial targets, and other performance goals, such as the frequency for release of content and features to increase player engagement. These objectives and metrics feed into decisions about the game design, release management, observability, and support that is needed for efficient operations.
 +  Your game might have an objective to release new content updates at least once each month with no downtime during release. This information assists you to define your release deployment strategy and coordinate the scheduling of required maintenance that may require downtime at other times throughout the month and contribute towards your availability SLA.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -77,3 +77,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/operational-excel
  **Related examples:**
 + [ One Observability Workshop ](https://catalog.workshops.aws/observability/en-US/intro)
 + [ Gaining operation insights with AIOps using Amazon DevOps Guru ](https://catalog.us-east-1.prod.workshops.aws/workshops/f92df379-6add-4101-8b4b-38b788e1222b/en-US)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

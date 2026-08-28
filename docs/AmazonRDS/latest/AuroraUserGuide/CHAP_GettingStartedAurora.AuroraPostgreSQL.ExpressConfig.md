@@ -288,3 +288,7 @@ If you disable the `rds_iam` role for the master username, you will lose access 
 + Clusters with express configuration support IPv4 addresses only. IPv6 is not supported.
 + Clusters with express configuration does not support changing all settings at the time of create operations. For example, you can only choose Aurora Standard storage when creating with express configuration. You can change the storage type after the cluster is created. See, Express configuration settings for a list of all other settings and default values that apply with express configuration.
 + Clusters created through express configuration with internet access gateway enabled do not support configurable cipher suites. Although Amazon RDS for PostgreSQL allows you to configure the ssl\_ciphers parameter to restrict allowed SSL cipher suites, this parameter is ignored on clusters with internet access gateway enabled, which use the default cipher suite configuration instead.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

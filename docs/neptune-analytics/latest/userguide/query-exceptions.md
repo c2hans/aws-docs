@@ -16,3 +16,7 @@ The following table lists query-side exceptions that could be encountered while 
 | InternalServerErrorException | 500 | Yes | The server failed to process the request for an unknown reason. |
 | UnprocessableException | 422 | No | Request cannot be processed due to known reasons - Eg. The query timed out. |
 | ConflictException | 409 | Yes | Concurrently running queries attempted to modify resources or data records concurrently and the conflict could not be resolved automatically. Please retry with an exponential back-off strategy. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

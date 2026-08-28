@@ -36,3 +36,7 @@ var formatError = function(error){
 API Gateway converts this response into an HTTP error with a custom status code and body. In the trace map, the function node is green because it handled the error.
 
 ![Trace map for a formatted error with API Gateway.](http://docs.aws.amazon.com/lambda/latest/dg/images/tracemap-apig-404.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

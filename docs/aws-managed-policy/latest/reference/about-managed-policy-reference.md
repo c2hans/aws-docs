@@ -44,3 +44,7 @@ A deprecated policy has the following characteristics:
 + In accounts where the policy is attached to an identity, it appears in the **Policies** list in the IAM console with a warning icon next to it.
 + It *cannot* be attached to any new identities. If you detach it from a current identity, you cannot reattach it.
 + After you detach it from all current entities, it is no longer visible.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Policy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-managed-policy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

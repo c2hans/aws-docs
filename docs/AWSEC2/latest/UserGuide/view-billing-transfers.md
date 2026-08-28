@@ -80,3 +80,7 @@ A request can be in one of the following states.
 | cancelled | The request was cancelled by the Capacity Reservation owner while it was in the pending state. |
 | revoked | Billing was revoked from the consumer account for one of the following reasons: +  It was explicitly revoked by the Capacity Reservation owner. <br />+  The Capacity Reservation is no longer shared with the consumer account. <br />+  The consumer account is no longer part of the AWS organization.   |
 | expired | The request expired because the consumer account did not accept or reject it within 12 hours. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

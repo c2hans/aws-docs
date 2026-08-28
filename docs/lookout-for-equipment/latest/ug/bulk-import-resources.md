@@ -87,3 +87,7 @@ Use the following procedure to import the resources to the target AWS account.
    + The name and path of the csv file (*import\_input\_file\_{current\_time}.csv*) that you copied in step 3.
 
 1. After the script finishes, check the import results in the CSV file ( *import\_result\_file\_{current\_time}.csv)* that the script creates. For more information, see [Bulk import script](bulk-import-trigger-script.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

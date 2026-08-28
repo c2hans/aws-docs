@@ -162,3 +162,7 @@ You can get information about the set task priority (or set default task priorit
 + [DescribeWorkflowExecution](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_DescribeWorkflowExecution.html) returns the *taskPriority* of the workflow execution in the `executionConfiguration` section of the response.
 + [DescribeWorkflowType](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_DescribeWorkflowType.html) returns the *defaultTaskPriority* of the workflow type in the `configuration` section of the response.
 + [GetWorkflowExecutionHistory](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_GetWorkflowExecutionHistory.html) and [PollForDecisionTask](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_PollForDecisionTask.html) provide task priority information in the `activityTaskScheduledEventAttributes`, `decisionTaskScheduledEventAttributes`, `workflowExecutionContinuedAsNewEventAttributes`, and `workflowExecutionStartedEventAttributes` sections of the response.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

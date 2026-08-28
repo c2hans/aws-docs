@@ -24,3 +24,7 @@ The following code shows an example JSON output.
 For the `prediction` field, a `value` of `1` indicates abnormal equipment behavior. A `value` of `0` indicates normal equipment behavior.
 
 When the `value` is `1`, Amazon Lookout for Equipment returns an object that contains a diagnostic list. The `diagnostics` list has the name of the sensors and the weights of the sensors' contributions in indicating abnormal equipment behavior. For each sensor, the `name` field indicates the name of the sensor. The `value` field indicates the percentage of the sensor's contribution to the prediction value. By seeing the percentage of each sensor's contribution to the prediction value, you can see how the data from each sensor was weighted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

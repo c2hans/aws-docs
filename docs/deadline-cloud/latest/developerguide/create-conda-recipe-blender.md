@@ -34,3 +34,7 @@ rattler-build publish blender-4.5/recipe/recipe.yaml \
 For other publishing options:
 + To publish to an Amazon S3 channel, see [Publish packages to an S3 conda channel](publish-packages-s3-channel.md).
 + To automate builds using a Deadline Cloud package building queue, see [Automate package builds with Deadline Cloud](automate-package-builds.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

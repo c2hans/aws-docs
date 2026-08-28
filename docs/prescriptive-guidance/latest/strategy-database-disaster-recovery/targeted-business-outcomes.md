@@ -36,3 +36,7 @@ A well-planned cross-Region DR strategy can help restrict the impact of a ransom
 <a name="productivity"></a>
 
 If your employees understand the DR process well and are comfortable with it, a DR event won't cause panic. You can follow well-defined runbooks to implement the DR solution, and your employees can make the best use of their time to get your business back to normal.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

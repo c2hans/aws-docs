@@ -57,3 +57,7 @@ To configure Amazon Pinpoint to invoke the Lambda function for a recommender mod
 You can specify these settings by using the [Recommender Models](https://docs.aws.amazon.com/pinpoint/latest/apireference/recommenders.html) resource of the Amazon Pinpoint API (when you create the configuration for a model) or the [Recommender Model](https://docs.aws.amazon.com/pinpoint/latest/apireference/recommenders-recommender-id.html) resource of the Amazon Pinpoint API (if you update the configuration for a model). You can also define these settings by using the Amazon Pinpoint console.
 
 For more information about using recommender models with Amazon Pinpoint, see [Machine Learning Models](https://docs.aws.amazon.com/pinpoint/latest/userguide/ml-models.html) in the *Amazon Pinpoint User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -79,3 +79,7 @@ To create a notebook, you must use a role with admin permissions or that has the
 To create the role, follow the steps given in the [Create a notebook](https://docs.aws.amazon.com/braket/latest/developerguide/braket-get-started-create-notebook.html) page or have your administrator create it for you. Ensure that the **AmazonBraketFullAccess** policy is attached.
 
 After you've created the role, you can reuse that role for all notebooks you launch in the future.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

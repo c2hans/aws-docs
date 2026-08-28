@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 +  Develop a cross-reference of sustainable Regions chosen according to the [services that are offered within each Region](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) as well as the variety and types of sustainable hardware offered in the Region.
 +  Prioritize Regions offering energy-efficient generative AI services and sustainable hardware for financial services AI workloads.
 +  Select Regions with renewable energy sources for computationally intensive generative AI model training.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

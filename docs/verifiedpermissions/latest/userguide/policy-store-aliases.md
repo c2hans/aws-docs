@@ -96,3 +96,7 @@ By default, when a policy store alias is deleted, it is soft deleted. The policy
 You can use a policy store alias to identify a policy store in all operations that accept a `policyStoreId` (for example, `IsAuthorized`). In such cases, the policy store alias name must be prefixed with `policy-store-alias/`. Policy store aliases cannot be used to identify a policy store for the `DeletePolicyStore` operation.
 
 You cannot use a policy store alias name or policy store alias ARN to identify a policy store in the `Resource` element of an IAM policy. To control access to a policy store when it is referenced through a policy store alias, see [Controlling access to policy store aliases](policy-store-aliases-control-access.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

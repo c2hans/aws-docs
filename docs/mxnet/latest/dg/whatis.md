@@ -31,3 +31,7 @@ AWS provides Deep Learning Amazon Machine Images (DLAMIs) optimized for both CPU
 You can use MXNet with Amazon SageMaker to train a models using your own custom Apache MXNet code. Amazon SageMaker is a fully managed machine learning service. With Amazon SageMaker, data scientists and developers can quickly and easily build and train machine learning models, and then directly deploy them into a production-ready hosted environment.
 
 For more information, see the [Amazon SageMaker documentation]().
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Apache MXNet on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mxnet` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

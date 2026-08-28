@@ -32,3 +32,7 @@ Slurm runs every script in the folders, in reverse alphabetical order.
 The run time duration of the `prolog` and `epilog` scripts impact the time needed to run a job. Update the `BatchStartTimeout` configuration setting when running multiple or long running `prolog` scripts. The default is 3 minutes.
 
 If you are using custom `prolog` and `epilog` scripts, locate the scripts in the respective `Prolog` and `Epilog` folders. We recommend that you keep the `90_plcuster_health_check_manager` script that runs before every custom script. For more information, see [Slurm configuration customization](slurm-configuration-settings-v3.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

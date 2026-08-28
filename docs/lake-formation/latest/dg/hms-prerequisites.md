@@ -40,3 +40,7 @@ We recommend that a Lake Formation administrator deploys the AWS SAM application
 **Use the correct Amazon EMR version.**
 
    To use Amazon EMR with the federated Hive metastore databases, you need to have Hive version 3.x or higher and Amazon EMR version 6.x or higher.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

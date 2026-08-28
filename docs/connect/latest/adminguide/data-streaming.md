@@ -81,3 +81,7 @@ Construct a policy statement that gives permission to the ARN of the Connect Cus
 ```
 
 Add this statement to the KMS key policy by using your preferred mechanism, such as the AWS Key Management Service console, the AWS CLI, or the AWS CDK.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

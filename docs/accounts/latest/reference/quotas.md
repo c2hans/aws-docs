@@ -39,3 +39,7 @@ The following quota information is for AWS accounts you create if you sign up us
 | Rate of PutAlternateContact requests per account | 5 per second, burst to 8 per second |
 | Rate of PutContactInformation requests per account | 5 per second, burst to 8 per second |
 | Rate of StartPrimaryEmailUpdate requests per caller account | 1 per second, burst to 1 per second |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

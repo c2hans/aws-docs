@@ -38,3 +38,7 @@ In the preceding architecture, applications are running on Amazon EC2 instances 
 <a name="key-considerations-42"></a>
 + This architecture is best suited for HTTP header inspection and distributed inspections, because AWS WAF is integrated on a per-ALB, CloudFront distribution and API Gateway. AWS WAF does not log the request body.
 + Traffic going to a second set of ALB (if present) may not get inspected by the same AWS WAF instance; because a new request would be made to the second set of ALB.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

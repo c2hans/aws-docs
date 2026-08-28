@@ -47,3 +47,7 @@ It is not possible to use a passphrase-protected private key for authentication 
 1. Choose **Next**, and then accept the defaults on the **Configure rotation** page. Then choose **Next**.
 
 1. On the **Review** page, choose **Store** to create and store the secret.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

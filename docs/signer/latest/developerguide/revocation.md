@@ -15,3 +15,7 @@ You can revoke individual signatures either by using the `RevokeSignature` API o
 You can revoke a signing profile by using the `RevokeSigningProfile` API or by selecting and revoking a signing profile in the AWS Signer console. Once revoked, a signing profile can no longer be used for creating new signing jobs.
 
 Revocation for a signing profile requires an effective start time in the past. The start time cannot be in the future. The effective start time can be changed to an earlier date and time by repeating the revocation, but cannot be revised to a later date and time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Signer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

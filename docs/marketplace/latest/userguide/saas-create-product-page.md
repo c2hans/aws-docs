@@ -30,3 +30,7 @@ For products using non-free pricing models (contract, usage, or contract with co
 1. Choose **Submit**. Then, AWS Marketplace validates the information. If the validation succeeds, AWS Marketplace releases the product in a **Limited** status. After the validation succeeds, you can preview, integrate, and test your product.
 **Note**
 While the validation is in progress, you can't edit the product. When your product is initially published, it's only accessible for the AWS account used to create the product and the AWS Marketplace Seller Operations team's test account. If you view the product from the **SaaS products** page, you can choose **View on AWS Marketplace** to view the product details as they will appear in AWS Marketplace for buyers. This detail listing isn't visible to other AWS Marketplace users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

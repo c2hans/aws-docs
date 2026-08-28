@@ -76,3 +76,7 @@ Follow the steps in this section if you connect using any of the following:
 1. Place the certificates from the bundle in your `root.crt` file.
    + On Linux and macOS operating systems, the file is `~/.postgresql/root.crt`.
    + On Microsoft Windows, the file is `%APPDATA%\postgresql\root.crt`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

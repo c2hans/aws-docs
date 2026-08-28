@@ -77,3 +77,7 @@ The following table provides details about updates to AWS managed policies for A
 | [AmazonMacieFullAccess](#security-iam-awsmanpol-AmazonMacieFullAccess) – Updated an existing policy | Macie added an AWS Billing and Cost Management (`pricing`) action to the `AmazonMacieFullAccess` policy. This action allows principals to retrieve pricing data for their account. Macie uses this data to calculate and display estimated costs when principals create and configure sensitive data discovery jobs.<br />Macie also removed Amazon Macie Classic (`macie`) actions from the `AmazonMacieFullAccess` policy. | March 7, 2022 |
 | [AmazonMacieServiceRolePolicy](service-linked-roles.md#slr-permissions) – Updated an existing policy | Macie added Amazon CloudWatch Logs actions to the `AmazonMacieServiceRolePolicy` policy. These actions allow Macie to publish log events to CloudWatch Logs for sensitive data discovery jobs. | April 13, 2021 |
 | Macie started tracking changes | Macie started tracking changes for its AWS managed policies. | April 13, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

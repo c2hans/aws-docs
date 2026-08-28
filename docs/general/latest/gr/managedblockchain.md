@@ -68,3 +68,7 @@ For information about attributes of Starter Edition and Standard Edition network
 | Number of ListTokenBalances requests per second | Each supported Region: 100 per second |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/managedblockchain-query/quotas/L-920F1669)  | The maximum number of ListTokenBalances requests you can make per second per account. |
 | Number of ListTransactionEvents requests per second | Each supported Region: 200 per second |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/managedblockchain-query/quotas/L-55D6B880)  | The maximum number of ListTransactionEvents requests you can make per second per account. |
 | Number of ListTransactions requests per second | Each supported Region: 200 per second |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/managedblockchain-query/quotas/L-506D2B91)  | The maximum number of ListTransactions requests you can make per second per account. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

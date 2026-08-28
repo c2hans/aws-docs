@@ -95,3 +95,7 @@ During the migration process, your source cluster is available for read-only que
 1. Verify that you can connect to the target cluster using all of your SQL clients, such as ETL and reporting tools.
 
 1. Shut down the unencrypted source cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

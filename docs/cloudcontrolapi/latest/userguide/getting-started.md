@@ -232,3 +232,7 @@ Finally, delete your log group to clean up from this tutorial.
 <a name="getting-started-next-steps"></a>
 
 For detailed information and examples on using Cloud Control API with resources, see [Cloud Control API resource operations](resource-operations.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Control API. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudcontrolapi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

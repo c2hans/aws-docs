@@ -15,3 +15,7 @@ In the [Transfer to queue](transfer-to-queue.md) block, the **Initial delay** pr
 
 1. Assume that after 40 seconds, an agent accepts the callback. The **In queue** column = 0, the **Scheduled** column = 0.
 ![The In queue column has a 1, the Scheduled column has a 0.](http://docs.aws.amazon.com/connect/latest/adminguide/images/rtm-callback-accepted-by-agent.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
  To enable you and your team to pinpoint where issues may be occurring, define your log messages to be consistently structured to enable correlation of logs across multiple microservices in your central logging system.
 
  This understanding enables you to evolve your workload to respond to external pressures such as increased traffic or issues with external APIs that your workload may use in the course of accomplishing its business goals.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

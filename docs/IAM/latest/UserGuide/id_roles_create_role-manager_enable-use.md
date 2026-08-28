@@ -144,8 +144,6 @@ To allow role creation only through role manager, use the following policy to bl
     "Sid": "DenyNonTemplatedRoleCreation",
     "Effect": "Deny",
     "Action": [
-        "iam:GetRole",
-        "iam:GetRoleTemplateVersion",
         "iam:CreateRole",
         "iam:AttachRolePolicy",
         "iam:PutRolePolicy",
@@ -166,3 +164,7 @@ To allow role creation only through role manager, use the following policy to bl
 + [Create roles automatically with role manager](id_roles_create_role-manager.md)
 + [Apply least-privilege permissions to a role created automatically](id_roles_create_role-manager_least-privilege.md)
 + [Overview of role templates](id_roles_create_role-template.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

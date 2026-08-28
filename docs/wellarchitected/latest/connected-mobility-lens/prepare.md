@@ -110,3 +110,7 @@ Authorized support personnel can remotely access in-vehicle systems, which exped
 ** [CMOPS\_BP4.3] Implement DevOps automation.  **
 
  Incorporate DevOps automation to improve productivity, enhance developer experience, and improve quality of the connected mobility feature releases. Implement a self-service developer portal which provisions pattern-based software templates with preapproved resources and configurations requiring limited manual intervention. Create connected mobility platform templates in the developer portal that include opinionated pre-built modules for observability and other connected mobility best practices baked in. Adopt Continuous Integration/Continuous Deployment (CI/CD) pipelines to automate the testing and deployment of the software updates, ensuring rapid and error-free releases. Automate testing, to simulate scenarios and real-world conditions, helps validate the connected mobility platform for safety and performance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

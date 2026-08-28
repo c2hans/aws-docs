@@ -81,3 +81,7 @@ The administrator in each of the specified accounts must now specify which roles
 ------
 
 You can use these IAM identity-based policies as part of an attribute-based access control (ABAC) security strategy. In that paradigm, you make sure that all of your resources and all of your identities are tagged. Then, you specify in your policies which tag keys and values must match between the identity and the resource for access to be allowed. For information about tagging the views in your account, see [Adding tags to views](configure-views-tag.md). For more information about attribute-based access control, see [What is ABAC for AWS?](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction_attribute-based-access-control.html) and [Controlling access to AWS resources using tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_tags.html), both in the *IAM User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resource Explorer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resource-explorer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

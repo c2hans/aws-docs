@@ -18,3 +18,7 @@ This section contains a variety of how to guides and examples for how to use Sea
 + [How to search in a specific language](how-to-search-specific-language.md)
 + [How to get cross-references for places](how-to-search-cross-references.md)
 + [How to search with travel mode](how-to-search-travel-mode.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

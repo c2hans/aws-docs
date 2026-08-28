@@ -16,3 +16,7 @@ SELECT * WHERE { ?s ?p ?o }
 Triples that appear in more than one graph are returned only once.
 
 For information about the default graph specification, see the [RDF Dataset](https://www.w3.org/TR/sparql11-query/#rdfDataset) section of the SPARQL 1.1 Query Language specification.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

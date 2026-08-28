@@ -90,3 +90,7 @@ You now create a rule in Amazon EventBridge that says, "When EventBridge receive
 1. Review the rule details and choose **Create rule**.
 
 Now, whenever an alert occurs in MediaLive, an event will be sent to EventBridge. This event will trigger the rule that sends an email to the email address that you specified in the SNS subscription.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ You can learn about how CloudFront interacts with Amazon S3 or custom origins, h
 + [How CloudFront processes HTTP 3xx status codes from your origin](http-3xx-status-codes.md)
 + [How CloudFront processes HTTP 4xx and 5xx status codes from your origin](HTTPStatusCodes.md)
 + [Generate custom error responses](GeneratingCustomErrorResponses.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

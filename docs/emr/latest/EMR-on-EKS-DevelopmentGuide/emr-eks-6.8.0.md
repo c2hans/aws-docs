@@ -34,3 +34,7 @@ For more information see the [Apache Spark configuration documentation](https://
 
 **Resolved issue**
 + **Interrupt Kernel capability for pySpark kernels** ‐ In progress interactive workloads that are triggered by executing cells in a notebook can be stopped by using the `Interrupt Kernel` capability. A fix has been introduced so that this functionality works for pySpark kernels. This is also available in open source at [Changes for handling interrupts for PySpark Kubernetes Kernel \#1115](https://github.com/jupyter-server/enterprise_gateway/pull/1115).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

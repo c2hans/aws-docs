@@ -76,3 +76,7 @@ The recipients see that you forwarded the messages, and the system copies forwar
 1. Follow the remaining steps in the previous procedure to save the rule.
 
 The recipient of the redirected email sees it as coming from the original sender. Also, Amazon WorkMail does not redirect bounced emails—messages rejected by a recipient's email server—unless they pass certain checks. For more information about those checks, contact your system administrator.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

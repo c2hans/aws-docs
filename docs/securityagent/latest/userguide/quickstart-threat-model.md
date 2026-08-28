@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/quickstart-threat-model.html
 ---
 
-# Quickstart: Run a Continuum threat model
+# Quickstart: Run a threat model
 <a name="quickstart-threat-model"></a>
 
 This quickstart walks you through running your first threat model with AWS Security Agent. A threat model analyzes your application’s architecture and produces a **system overview** (how AWS Security Agent understands your system) and a set of **threats** (how it could be attacked, each with a severity level, STRIDE classification, and recommendations). You can run a threat model on design documents (**scope docs**) to define the focus, source code (**sources**) to provide context about your existing system, or both.
@@ -53,7 +53,7 @@ Connect repositories or S3 buckets that contain the source code you want the age
 
 For the full integration flow, see [Connect AWS Security Agent to GitHub repositories](connect-github.md).
 
-## Step 3: Create and run a Continuum threat model
+## Step 3: Create and run a threat model
 <a name="step-3-create-and-run-a-threat-model"></a>
 
 **Note**
@@ -100,4 +100,8 @@ Provide **both** sources and scope docs to scope the threat model to a specific 
 
    1. Update the threat status to **Resolved** or **Dismissed** as you address or triage each threat.
 
-For more details, see [Create a Continuum threat model](perform-threat-model.md) and [Review threats from a Continuum threat model](review-threat-model-findings.md).
+For more details, see [Create a threat model](perform-threat-model.md) and [Review threats from a threat model](review-threat-model-findings.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

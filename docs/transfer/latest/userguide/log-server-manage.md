@@ -98,3 +98,7 @@ Depending on your scenario, the server configuration page might look like one of
 ![Logging configuration with a logging role configured.](http://docs.aws.amazon.com/transfer/latest/userguide/images/logging-server-config-legacy.png)
 + Both types of logging (logging role and structured JSON logging) are enabled.
 ![Logging configuration with both types (logging role and structured JSON logging) of logging configured.](http://docs.aws.amazon.com/transfer/latest/userguide/images/logging-server-config-both.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

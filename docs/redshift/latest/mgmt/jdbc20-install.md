@@ -31,3 +31,7 @@ By default, the Amazon Redshift JDBC driver is configured to use TCP keepalives 
 + [Creating initialization (.ini) files for JDBC driver version 2.x](jdbc20-ini-file.md)
 + [Options for JDBC driver version 2.x configuration](jdbc20-configuration-options.md)
 + [Previous versions of JDBC driver version 2.x](jdbc20-previous-driver-version-20.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

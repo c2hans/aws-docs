@@ -53,3 +53,7 @@ This document lists known issues that you might encounter when using the Amazon 
 + Camera feeds from `getUserMedia` are restricted to a 4:3 aspect ratio on MacOS. See [bugzilla thread 1](https://bugzilla.mozilla.org/show_bug.cgi?id=1193640) and [bugzilla thread 2](https://bugzilla.mozilla.org/show_bug.cgi?id=1306034).
 + Audio capture is not supported with `getDisplayMedia`. See this [bugzilla thread](https://bugzilla.mozilla.org/show_bug.cgi?id=1541425).
 + Framerate in screen capture is suboptimal (approximately 15fps?). See this [bugzilla thread](https://bugzilla.mozilla.org/show_bug.cgi?id=1703522).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

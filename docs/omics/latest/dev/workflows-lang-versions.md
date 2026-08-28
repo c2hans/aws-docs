@@ -51,7 +51,8 @@ HealthOmics supports the following Nextflow versions:
 + Nextflow v26.04.0 DSL 2
 
 **Note**
-Nextflow v26.04.0 uses the strict (v2) syntax parser by default. To use the legacy parser, set `engineSettings.syntaxVersion` to `v1`. For Nextflow v25.10.0 and earlier, HealthOmics does not support strict syntax mode and the only allowed value is `v1`.
+Nextflow v26.04.0 uses the strict (v2) syntax parser by default. To use the legacy parser, set `engineSettings.syntaxVersion` to `v1` when starting a run. For Nextflow v25.10.0 and earlier, HealthOmics does not support strict syntax mode and the only allowed value is `v1`.
+Separately, HealthOmics runs the built-in Nextflow strict linter during workflow creation. The linter applies to all DSL2 versions (v22.04, v23.10, v24.10, v25.10, and v26.04). DSL1 workflows are not linted. Lint findings appear in the `statusMessage` field of the `GetWorkflow` response. For more information, see [Workflow linters in HealthOmics](workflows-linter.md).
 
 To migrate your workflow to the latest supported version (v26.04.0), follow the [Nextflow upgrade guide](https://nextflow.io/docs/latest/migrations/26-04.html).
 
@@ -117,3 +118,7 @@ You can override the auto-selected Nextflow version by setting `engineSettings.e
   ```
   "engineVersion":"22.04.0"
   ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

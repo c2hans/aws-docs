@@ -24,3 +24,7 @@ Supplemental information that provides insight into decisions made during the ro
 | --- | --- | --- | --- | --- | --- | --- |
 | Notices | Notices regarding route calculation. Additionally may include an impact for the notice indicating if the results of the route calculation can be used as is or will need to be manually inspected before usage. | Yes, with details | No | No | No | Yes |
 | FailedConstraints | Constraints that were provided in the request that could not be satisfied, leading to failure of the optimization problem. | No | No | No | Yes, with details | No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

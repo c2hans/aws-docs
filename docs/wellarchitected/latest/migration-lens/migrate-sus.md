@@ -99,3 +99,7 @@ You can reduce the resource consumption during the migration either by reducing 
  For more detail, see the following:
 +  [Strategy and best practices for AWS large migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-large-scale-migrations/welcome.html)
 +  [A beginners' guide for Finance and Operations teams in their cloud migration journey](https://aws.amazon.com/blogs/mt/a-beginners-guide-for-finance-and-operations-teams-in-their-cloud-migration-journey/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

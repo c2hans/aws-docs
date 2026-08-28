@@ -64,3 +64,7 @@ VirtualizationType  : hvm
 
 **Note**
 Version 4 of the AWS Tools for PowerShell provided the `Get-EC2ImageByName` cmdlet to filter the list of AMIs by name patterns. For version 5 of the tools, use the [Get-SSMLatestEC2Image](https://docs.aws.amazon.com/powershell/v5/reference/items/Get-SSMLatestEC2Image.html) cmdlet instead.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

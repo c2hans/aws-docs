@@ -70,3 +70,7 @@ For example, consider an API with a `$default` stage and the following example r
 | `GET https://{{api-id}}.execute-api.{{region}}.amazonaws.com/pets/dog/2` | `GET /pets/dog/{id}` | The request fully matches this route. |
 | `GET https://{{api-id}}.execute-api.{{region}}.amazonaws.com/pets/cat/1` | `GET /pets/{proxy+}` | The request doesn't fully match a route. The route with a `GET` method and a greedy path variable catches this request. |
 | `POST https://{{api-id}}.execute-api.{{region}}.amazonaws.com/test/5` | `ANY /{proxy+}` | The `ANY` method matches all methods that you haven't defined for a route. Routes with greedy path variables have higher priority than the `$default` route. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,3 +37,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 <a name="latency-1"></a>
 
  When using Sigfox, typical latency is in an order of magnitude of seconds. Reachability depends on the frequency of uplink transmissions. This dependency occurs because Sigfox devices are required to listen for incoming data for only 30 seconds after an uplink transmission. After 30 seconds, the Sigfox device changes into an energy-efficient mode and is not able to receive further incoming messages. For example, if you configure your Sigfox device to send uplink messages once a day, a downlink latency can be up to 24 hours.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

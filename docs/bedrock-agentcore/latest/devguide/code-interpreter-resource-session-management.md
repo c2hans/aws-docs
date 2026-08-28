@@ -99,3 +99,7 @@ You should also add the following trust policy to the execution role:
 1.  **Stop session and clean up**
 
    When you’re finished using a session, you should stop it to release resources and avoid unnecessary charges. You can also delete the Code Interpreter if you no longer intend to use it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

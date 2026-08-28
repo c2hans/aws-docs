@@ -126,3 +126,7 @@ Use the following procedure to test your Firehose stream with Apache Iceberg Tab
 1. If the test data doesn't appear in your Apache Iceberg Tables, check your Amazon S3 bucket for failed events.
 
 1. When you finish testing, choose **Stop sending demo data** to stop incurring usage charges.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

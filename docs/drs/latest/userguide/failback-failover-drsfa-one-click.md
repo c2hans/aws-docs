@@ -41,3 +41,7 @@ The JSON file contains the following fields for each server:
 + The vCenter UUID of the original source server
 
 If failback failed for any machines, review the `failback_hosts_settings.json` file in the same folder to see the exact configuration used. Fix any problems and use the custom failback flow to retry those specific machines.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

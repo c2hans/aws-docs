@@ -61,3 +61,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/sec_per
 +  [AWS re:Inforce 2023 - Manage temporary elevated access with AWS IAM Identity Center](https://www.youtube.com/watch?v=a1Na2G7TTQ0)
 +  [AWS re:Invent 2022 - Simplify your existing workforce access with IAM Identity Center](https://www.youtube.com/watch?v=TvQN4OdR_0Y&t=444s)
 +  [AWS re:Invent 2022 - Harness power of IAM policies & rein in permissions w/Access Analyzer](https://www.youtube.com/watch?v=x-Kh8hKVX74&list=PL2yQDdvlhXf8bvQJuSP1DQ8vu75jdttlM&index=11)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

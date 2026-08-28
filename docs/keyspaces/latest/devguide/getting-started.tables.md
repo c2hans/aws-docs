@@ -319,3 +319,7 @@ The following command creates a table with the name *book\_awards*. The partitio
    ```
 
 To perform CRUD (create, read, update, and delete) operations on the data in your table, proceed to [Create, read, update, and delete data (CRUD) using CQL in Amazon Keyspaces](getting-started.dml.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

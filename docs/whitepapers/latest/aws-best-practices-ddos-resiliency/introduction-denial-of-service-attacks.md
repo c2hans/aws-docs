@@ -2,8 +2,6 @@
 source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/introduction-denial-of-service-attacks.html
 ---
 
- This whitepaper is for historical reference only. Some content might be outdated and some links might not be available.
-
 # Introduction to denial of service attacks
 <a name="introduction-denial-of-service-attacks"></a>
 
@@ -11,17 +9,17 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-dd
 
 ![A diagram depicting a DoS attack](http://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/dos-attack.png)
 
-In a Distributed Denial of Service (DDoS) attack, an attacker uses multiple sources to orchestrate an attack against a target. These sources can include distributed groups of malware infected computers, routers, IoT devices, and other endpoints. The following figure shows a network of compromised hosts that participate in the attack, generating a flood of packets or requests to overwhelm the target.
+In a DDoS attack, an attacker uses multiple sources to orchestrate an attack against a target. These sources can include distributed groups of malware infected computers, routers, IoT devices, and other endpoints. The following figure shows a network of compromised hosts that participate in the attack, generating a flood of packets or requests to overwhelm the target.
 
 ![A diagram depicting a DDoS attack](http://docs.aws.amazon.com/whitepapers/latest/aws-best-practices-ddos-resiliency/images/ddos-attack.png)
 
- There are seven layers in the Open Systems Interconnection (OSI) model, and they are described in the following table. DDoS attacks are most common at layers 3, 4, 6, and 7.
-+  Layer 3 and 4 attacks correspond to the Network and Transport layers of the OSI model. Within this whitepaper, AWS refers to these collectively as infrastructure layer attacks.
-+  Layer 6 and 7 attacks correspond to the Presentation and Application layers of the OSI model. This whitepaper addresses these together as application layer attacks.
+ There are seven layers in the Open Systems Interconnection (OSI) model, described in the following table. DDoS attacks are most common at layers 3, 4, and 7.
++  Layer 3 and 4 attacks correspond to the Network and Transport layers of the OSI model. Within this whitepaper, AWS refers to these collectively as *infrastructure layer attacks*.
++  Layer 7 attacks correspond to the Application layer of the OSI model.
 
  This paper discusses these attack types in the sections that follow.
 
- *Table 1 — OSI model*
+ *Table 1 – OSI model*
 
 |  \#  |  Layer  |   Unit   |   Description   |   Vector examples   |
 | --- | --- | --- | --- | --- |
@@ -32,3 +30,7 @@ In a Distributed Denial of Service (DDoS) attack, an attacker uses multiple sour
 |  3  |  Network  |  Packets  |  Path determination and logical addressing  |  User Datagram Protocol (UDP) reflection attacks  |
 |  2  |  Data Link  |  Frames  |  Physical addressing  |  N/A  |
 |  1  |  Physical  |  Bits  |  Media, signal, and binary transmission  |  N/A  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

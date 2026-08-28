@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Match compute resources to specific workloads by using Compute Optimized instances for game servers, Memory Optimized instances for large data sets, and GPU instances only for tasks like HLOD rebuilds or GPU-dependent game servers.
 +  Optimize compute utilization by deploying AWS Graviton instances where possible for energy efficiency, better performance, and cost savings compared to x86 instances.
 +  Use AWS Compute Optimizer to analyze historical utilization and recommend the most efficient configurations for EC2, AWS ECS, AWS Lambda, and Amazon RDS workloads to reduce costs and improve performance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

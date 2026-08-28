@@ -62,3 +62,7 @@ The number of pre-provisioned snapshots to keep on hand for an Amazon EC2 Window
 
 **Max parallel launches**
 Controls how many instances Amazon EC2 can launch at the same time to create the pre-provisioned snapshots for EC2 Fast Launch. If your target resource count is higher than the maximum parallel launches that you've configured, then Amazon EC2 launches the number of instances specified by **Max parallel launches** to start creating the snapshots. As those instances complete the process, Amazon EC2 takes the snapshot and stops the instance. Then it continues to launch more instances until the total number of snapshots available has reached the target resource count. The value for **Max parallel launches** must be 6 or greater.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

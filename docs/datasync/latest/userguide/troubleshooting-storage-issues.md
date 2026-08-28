@@ -204,3 +204,7 @@ If you see either of these errors, validate that the IAM role that DataSync uses
 + `s3:GetObjectVersionTagging`
 
 If you need to update your role with these permissions, see [Creating an IAM role for DataSync to access your Amazon S3 location](create-s3-location.md#create-role-manually).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

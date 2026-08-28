@@ -97,3 +97,7 @@ To manage workspace settings, you must have the **Admin** access level for the w
 1. Locate the setting you want to change, and then enter or select a new value. The value applies to all of the workspace members.
 
 1. (Optional) To stop using the workspace value and go back to inheriting the application value, choose **Use Application value**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -60,3 +60,7 @@ When you tap or click on the category tags, conversational analytics auto-naviga
 The following image shows part of a **Contact details** page for a chat.
 
 ![A transcript of chat, a category, the relevant section of the transcript.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-category-tag-navigation.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

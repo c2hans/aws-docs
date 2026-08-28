@@ -157,3 +157,7 @@ Now that you know how to create a collection and index data, you might want to t
 + Explore more advanced options for creating a collection. For more information, see [Managing Amazon OpenSearch Serverless collections](serverless-manage.md).
 + Configure security policies to manage collection security at scale. For more information, see [Overview of security in Amazon OpenSearch Serverless](serverless-security.md).
 + Use other methods to index data into collections. For more information, see [Ingesting data into Amazon OpenSearch Serverless collections](serverless-clients.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

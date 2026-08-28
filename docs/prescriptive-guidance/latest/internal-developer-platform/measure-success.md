@@ -20,3 +20,7 @@ Because the metrics should measure the impact, you can use [DevOps Research and 
 Another approach is to measure your current application health and track long-term application performance against your business objectives. You can use [Amazon CloudWatch Application Signals](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Application-Monitoring-Sections.html) by defining [service-level objectives](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-ServiceLevelObjectives.html) (SLOs) for your application and use CloudWatch dashboards to show the status of your application.
 
 If you don't instrument the application, the biggest challenge is getting the right metrics and aligning the application with the overall observability strategy. The observability strategy helps you understand the overall health of the application through security scans, testing, and tracking availability.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,3 +27,7 @@ SageMaker AI resource names correspond to Neptune ML stages as follows:
 + The SageMaker AI `HyperParameterTuningJob` is used by Neptune model training jobs.
 + The SageMaker AI `TrainingJob` is used by Neptune model training jobs.
 + The SageMaker AI `Endpoint` is used by Neptune inference endpoints.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

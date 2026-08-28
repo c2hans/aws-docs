@@ -22,3 +22,7 @@ Active Directory (AD) is a directory service from Microsoft for Windows domain n
 OpenLDAP is a free, open-source implementation of the LDAP protocol. For authentication, Amazon EMR attempts a user-bind with your OpenLDAP instance with the fully qualified domain name (FQDN) as the distinguished name and password. The FQDN uses the standard format `username_attribute=username,LDAP_user_search_base`. Commonly, the `username_attribute` value is `uid`, and the `LDAP_user_search_base` value contains the attributes of the tree that leads to the user. For example, `ou=People,dc=example,dc=com`.
 
 Other free and open-source implementations of the LDAP protocol typically follow a similar FQDN as OpenLDAP for the distinguished names of their users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

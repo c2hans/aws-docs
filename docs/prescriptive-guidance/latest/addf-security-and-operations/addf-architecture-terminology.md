@@ -74,3 +74,7 @@ You need to perform this step only if you're initially deploying ADDF or adding 
    An ADAS developer can use the deployed ADAS-based workflow, as defined by your use case.
 
    This workflow describes the architecture of a single instance of an ADDF multi-account environment. Depending on your development, deployment, and operations model, we recommend that you run multiple ADDF instances in a multi-stage environment. A typical setup might include a dedicated ADDF instance with dedicated AWS accounts for each deployment stage, such as branches for development, testing, and production. You can also run multiple ADDF instances in the same single-account or multi-account environment in the same AWS Region, assuming that you created a unique resource namespace for each ADDF instance. For more information, see [Defining your ADDF architecture](defining-your-addf-architecture.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

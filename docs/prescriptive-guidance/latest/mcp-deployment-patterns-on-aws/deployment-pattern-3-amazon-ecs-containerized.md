@@ -14,3 +14,7 @@ Sample implementation: [https://github.com/aws-samples/sample-mcp-deployment-pat
 **Architecture Characteristics**
 + Pros: Backend stays private: ALB and ECS are not internet-exposed; only API Gateway is public. Centralized security controls at API Gateway, Centralized throttling, quotas, and logging management.
 + Limitations: API Gateway has default Timeouts and Payload limits. If any of the MCP tools are taking longer, then need to make the MCP tool async, or use Rest API and raise timeouts beyond 29s. If there are tools designed to run for a long time, then need to remove API Gateway and use public Application Load Balancer instead.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ You can view your bill in the Billing and Cost Management console. The Amazon Q 
 You can identify the cost of Amazon Q subscriptions for specific users with resource IDs through AWS Billing and Cost Management. To do so, in the Billing and Cost Management console under [Data Exports](https://console.aws.amazon.com/costmanagement/home#/bcm-data-exports), create either a standard data export or a legacy CUR export with the **Include resource IDs** option selected. To learn more, refer to [Creating data exports](https://docs.aws.amazon.com/cur/latest/userguide/dataexports-create.html?icmpid=docs_costmanagement_hp-dataexports-export-type) in the *AWS Data Exports User Guide*.
 
 If you unsubscribe users, billing stops at the end of the billing cycle. For more information, see [Unsubscribing from Amazon Q Developer Pro](q-admin-setup-unsubscribe.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

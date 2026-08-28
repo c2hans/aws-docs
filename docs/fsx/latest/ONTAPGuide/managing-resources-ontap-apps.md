@@ -181,3 +181,7 @@ When accessing your FSx for ONTAP file system using the ONTAP REST API using the
   + https://fsx-aws-cn-certificates.s3.cn-north-1.amazonaws.com.cn/bundle-{{aws-region}}.pem for AWS China Regions
 
 For a complete reference of NetApp ONTAP REST API commands, see the [NetApp ONTAP REST API Online Reference](https://library.netapp.com/ecmdocs/ECMLP2882307/html/index.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

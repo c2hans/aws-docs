@@ -80,3 +80,7 @@ For Bitbucket, GitHub, or GitHub Enterprise Server actions, refer to the [CodeSt
 Some action types in CodePipeline are available in select AWS Regions only. It is possible that an action type is available in an AWS Region, but an AWS provider for that action type is not available.
 
 For more information about each action provider, see [Integrations with CodePipeline action types](integrations-action-type.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

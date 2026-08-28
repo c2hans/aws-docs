@@ -152,3 +152,7 @@ Amazon Transcribe continually updates the base models available for custom langu
 To see if your custom language model is using the latest base model, run a [`DescribeLanguageModel`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_DescribeLanguageModel.html) request using the AWS CLI or an AWS SDK, then find the `UpgradeAvailability` field in your response.
 
 If `UpgradeAvailability` is `true`, your model is not running the latest version of the base model. To use the latest base model in a custom language model, you must create a new custom language model. Custom language models cannot be upgraded.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

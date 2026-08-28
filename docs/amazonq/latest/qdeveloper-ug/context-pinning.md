@@ -49,3 +49,7 @@ After pinning, the context item will appear in the pinned context area.
 
 **To remove pinned context items**
 + To remove a pinned context item, choose the remove (X) icon on the context pill. This works for both user-pinned and system-added context items.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

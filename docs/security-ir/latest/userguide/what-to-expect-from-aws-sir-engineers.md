@@ -12,3 +12,7 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/what-to-exp
 + Develop an investigation and response plan tailored to your situation
 
  **Response timeline**: The service level objective (SLO) for acknowledgment of new cases by AWS Security Incident Response engineers is within 15 minutes. The initial assessment timeline might vary based on case severity and complexity. If AWS Security Incident Response engineers don't receive a response or critical information from you within 5 business days, the case is closed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

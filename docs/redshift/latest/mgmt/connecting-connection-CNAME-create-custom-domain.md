@@ -32,3 +32,7 @@ After the custom domain is configured, using `sslmode=verify-full` works only fo
 As a point of reminder, [cluster relocation](https://docs.aws.amazon.com/redshift/latest/mgmt/managing-cluster-recovery.html) isn't a prerequisite for configuring additional Redshift networking features. You don't have to turn it on to enable the following:
 **Connecting from a cross-account or cross-region VPC to Redshift** – You can connect from one AWS virtual private cloud (VPC) to another that contains a Redshift database. This makes it easier to manage, for example, client access from disparate accounts or VPCs, without having to provide local VPC access to identities connecting to the database. For more information, see [Connecting to Amazon Redshift Serverless from a Redshift VPC endpoint in another account or region](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-connecting.html#serverless-cross-vpc).
 **Setting up a custom domain name** – You can create a custom domain name, as described in this topic, to make the endpoint name more relevant and simple.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

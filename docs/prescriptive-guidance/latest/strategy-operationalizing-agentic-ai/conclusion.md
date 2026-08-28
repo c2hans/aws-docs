@@ -20,3 +20,7 @@ This strategy document lays the foundation. It connects strategy to execution an
 To get started, identify a high-impact decision space where agents can deliver measurable improvements in speed, accuracy, or responsiveness. Then deploy a focused pilot agent that has instrumentation, governance, and feedback loops. Use this to validate the value hypothesis, generate internal momentum, and build trust in the approach. Momentum compounds through learning.
 
 Agentic AI is not a destination; it is a capability layer that evolves alongside your business. It represents a long-term shift toward intelligence as infrastructure. Organizations that lead in this space can automate more, respond faster, adapt better, and build operational models that are capable of navigating complexity at an enterprise scale.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

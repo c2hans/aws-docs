@@ -39,3 +39,7 @@ Cost Explorer provides AI-powered explanations that help you understand the key 
 
 **Note**
 You can also ask questions about your forecasted costs using the suggested prompts or the **Ask question** button in Cost Explorer, powered by **Amazon Q Developer**. When viewing future dates, forecast related suggested prompts appear automatically. For more information, see [Asking questions about your costs using Amazon Q Developer](ce-nlq.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

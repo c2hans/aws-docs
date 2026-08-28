@@ -33,3 +33,7 @@ Here's how DataSync handles symbolic links in some common transfer scenarios:
 In general, DataSync preserves directories when transferring between storage systems. This isn’t the case in the following situations:
 + **When transferring to Amazon S3**, directories are represented as empty objects that have prefixes and end with a forward slash (`/`).
 + **When transferring to Azure Blob Storage without a hierarchical namespace**, directories don't exist. What looks like a directory is just part of an object name.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

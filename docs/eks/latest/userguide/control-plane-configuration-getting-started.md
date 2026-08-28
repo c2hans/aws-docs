@@ -43,6 +43,7 @@ Amazon EKS validates each parameter against the following ranges and rejects a r
 |  `kubeSchedulerConfig.nodeResourcesFit.scoringStrategy.type`  |  `LeastAllocated`, `MostAllocated`  |  `LeastAllocated`  |
 |  `kubeSchedulerConfig.nodeResourcesFit.scoringStrategy.resources[].weight`  |  `1` to `100`  |  `cpu: 1`, `memory: 1`  |
 |  `kubeControllerManagerConfig.horizontalPodAutoscalerControllerConfig.horizontalPodAutoscalerSyncPeriod`  |  `10s` to `15s`  |  `15s`  |
+|  `kubeControllerManagerConfig.podGcControllerConfig.terminatedPodGcThreshold`  |  `10000` to `12500`  |  `12500`  |
 |  `kubeApiServerConfig.eventTtl`  |  `10m` to `60m`  |  `60m`  |
 |  `kubeApiServerConfig.serviceNodePortRange.minPort`  |  `10260` to `32767`  |  `30000`  |
 |  `kubeApiServerConfig.serviceNodePortRange.maxPort`  |  `10260` to `32767`  |  `32767`  |
@@ -154,6 +155,15 @@ The response includes a `controlPlaneComponentConfig` object, organized by contr
                             "constraints": {
                                 "min": "10s",
                                 "max": "15s"
+                            }
+                        }
+                    },
+                    "podGcControllerConfig": {
+                        "terminatedPodGcThreshold": {
+                            "defaultValue": 12500,
+                            "constraints": {
+                                "min": 10000,
+                                "max": 12500
                             }
                         }
                     }
@@ -375,3 +385,7 @@ To configure advanced Kubernetes control plane parameters on an existing cluster
 1. Choose the **Overview** tab, then scroll down to **Control plane configuration**.
 
 1. Choose **Manage**, and then select **Enable control plane configuration** to set the parameters you want to change. Then choose **Save changes**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

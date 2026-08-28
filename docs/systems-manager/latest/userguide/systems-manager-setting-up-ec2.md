@@ -17,3 +17,7 @@ If you already use other AWS services, you have completed some of these steps. H
 **Topics**
 + [Configure instance permissions required for Systems Manager](setup-instance-permissions.md)
 + [Improve the security of EC2 instances by using VPC endpoints for Systems Manager](setup-create-vpc.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

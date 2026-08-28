@@ -22,3 +22,7 @@ In addition to the AWS global infrastructure, Amazon EC2 offers the following fe
 + Automating EBS snapshots using Amazon Data Lifecycle Manager
 + Maintaining the health and availability of your fleet using Amazon EC2 Auto Scaling
 + Distributing incoming traffic across multiple instances in a single Availability Zone or multiple Availability Zones using Elastic Load Balancing
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

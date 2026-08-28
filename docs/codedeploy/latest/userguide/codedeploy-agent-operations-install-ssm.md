@@ -52,3 +52,7 @@ With SSM, you can install the CodeDeploy once or set up a schedule to install ne
 To install the CodeDeploy agent, choose the Systems Manager Distributor package for the agent version you want, then follow the steps in [Install or update packages with AWS Systems Manager distributor](https://docs.aws.amazon.com/systems-manager/latest/userguide/distributor-working-with-packages-deploy.html). The package differs by agent version:
 + For version 2.0.x and later, choose the `AWSCodeDeployAgentV2` package.
 + For version 1.8.x and earlier, choose the `AWSCodeDeployAgent` package.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ You must have an Outposts server at your site. For more information, see [Site r
 
 **Tip**
 We recommend that you view the [Installing AWS Outposts Servers](https://explore.skillbuilder.aws/learn/course/8828/play/41533/installing-aws-outposts-servers) training video before and during the installation process. To access the training, you must sign in or create an account on [AWS Skill Builder](https://explore.skillbuilder.aws/learn). For troubleshooting, see [How do I troubleshoot an AWS Outposts server installation?](https://repost.aws/knowledge-center/outposts-server-failing)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

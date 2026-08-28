@@ -208,3 +208,7 @@ Describe your skill's purpose, usage, and capabilities here.
 For resources not fitting standard types (for example, APIs, Lambda functions, knowledge bases, databases, and agents using other protocols), you can use the `custom` descriptor. Store the JSON content in `descriptors.custom.data`. The content must be a valid JSON.
 
  **Console:** Select **Custom** under Record type. The Descriptor is set to **Custom** automatically. The editor shows a single **Definition** JSON editor with no official schema reference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

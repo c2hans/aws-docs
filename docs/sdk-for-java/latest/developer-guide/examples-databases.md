@@ -61,3 +61,7 @@ See [additional DynamoDB examples](examples-dynamodb.md) in the guided code exam
 | --- | --- |
 | Non-SDK API: MongoDB-specific Java library (for example [MongoDB for Java](https://www.mongodb.com/developer/languages/java/)); your code manages database connections or a connection pool. | SDK service client: [DocDbClient](https://sdk.amazonaws.com/java/api/latest/software/amazon/awssdk/services/docdb/DocDbClient.html) |
 | Examples: [DocumentDB (Mongo) Developer Guide](https://docs.aws.amazon.com/documentdb/latest/developerguide/connect_programmatically.html#connect_programmatically-tls_enabled) (select 'Java' tab) |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

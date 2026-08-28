@@ -42,3 +42,7 @@ KCL 3.5.x\+ does not create separate worker metrics or coordinator state tables 
 <a name="kcl-migration-rollforward-step2"></a>
 
 After running the KCL Migration Tool for a roll forward, deploy your code with KCL 3.5.x\+ Phase 2 configuration (`CLIENT_VERSION_CONFIG_COMPATIBLE_WITH_2X`) to your workers. To complete your migration, see [Step 8: Complete the migration](https://docs.aws.amazon.com/streams/latest/dev/kcl-migration-from-2-3.html#kcl-migration-from-2-3-finish).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

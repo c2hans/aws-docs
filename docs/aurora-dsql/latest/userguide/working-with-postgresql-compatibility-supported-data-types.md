@@ -26,7 +26,7 @@ Aurora DSQL supports the following PostgreSQL numeric data types.
 | `bigint` | `int8` | -9223372036854775808 to \+9223372036854775807 | 8 bytes | Yes |
 | `real` | `float4` | 6 decimal digits precision | 4 bytes | Yes |
 | `double precision` | `float8` | 15 decimal digits precision | 8 bytes | Yes |
-| `numeric` [ `(`{{p}}, {{s}}`)` ] | `decimal` [ `(`{{p}}, {{s}}`)` ]<br />`dec`[ `(`{{p}},{{s}}`)`] | Exact numeric of selectable precision. The maximum precision is 38 and the maximum scale is 37.1 The default is `numeric (18,6)`. | 8 bytes \+ 2 bytes per precision digit. Maximum size is 27 bytes. | Yes |
+| `numeric` [ `(`{{p}}, {{s}}`)` ] | `decimal` [ `(`{{p}}, {{s}}`)` ]<br />`dec`[ `(`{{p}},{{s}}`)`] | Exact numeric of selectable precision. The maximum precision is 1000 and scale can be between -1000 and 1000. 1 The default is `numeric (18,6)`. | 8 bytes \+ 2 bytes per group of 4 decimal digits. Maximum size is 510 bytes. | Yes |
 
 1 – If you don't explicitly specify a size when you run `CREATE TABLE` or `ALTER TABLE ADD COLUMN`, Aurora DSQL enforces the defaults. Aurora DSQL applies limits when you run `INSERT` or `UPDATE` statements.
 
@@ -37,12 +37,16 @@ Aurora DSQL supports the following PostgreSQL character data types.
 
 | Name | Aliases | Description | Aurora DSQL limit | Storage size | Index support |
 | --- | --- | --- | --- | --- | --- |
-| `character` [ `(`{{n}}`)` ] | `char` [ `(`{{n}}`)` ] | Fixed-length character string | 4096 bytes1  | Variable up to 4100 bytes | Yes |
-| `character varying` [ `(`{{n}}`)` ] | `varchar` [ `(`{{n}}`)` ] | Variable-length character string | 65535 bytes1  | Variable up to 65539 bytes | Yes |
-| `bpchar` [ `(`{{n}}`)` ] |  | If fixed length, this is an alias for `char`. If variable length, this is an alias for `varchar`, where trailing spaces are semantically insignificant. | 4096 bytes1  | Variable up to 4100 bytes | Yes |
-| `text` |  | Variable-length character string | 1 MiB1  | Variable up to 1 MiB | Yes |
+| `character` [ `(`{{n}}`)` ] | `char` [ `(`{{n}}`)` ] | Fixed-length character string | 4096 bytes1,2  | Variable up to 4100 bytes | Yes |
+| `character varying` [ `(`{{n}}`)` ] | `varchar` [ `(`{{n}}`)` ] | Variable-length character string | 65535 bytes1,2  | Variable up to 65539 bytes | Yes |
+| `bpchar` [ `(`{{n}}`)` ] |  | If fixed length, this is an alias for `char`. If variable length, this is an alias for `varchar`, where trailing spaces are semantically insignificant. | 4096 bytes1,2  | Variable up to 4100 bytes | Yes |
+| `text` |  | Variable-length character string | 1 MiB1,2  | Variable up to 1 MiB | Yes |
 
 1 – If you don't explicitly specify a size when you run `CREATE TABLE` or `ALTER TABLE ADD COLUMN`, then Aurora DSQL enforces the defaults. Aurora DSQL applies limits when you run `INSERT` or `UPDATE` statements.
+
+2 – Aurora DSQL automatically applies compression to large `text`, `varchar`, and `bpchar` values during `INSERT` and `UPDATE` operations. Aurora DSQL compresses these values only in columns that aren't part of a key. Values in primary key columns and in the key columns of a secondary index are always stored uncompressed.
+
+To disable compression, use the `STORAGE` keyword. For more information, see [`CREATE TABLE`](create-table-syntax-support.md#create-table-storage) and [`ALTER TABLE`](alter-table-syntax-support.md#alter-table-description).
 
 ## Date and time data types
 <a name="date-time-data-types"></a>
@@ -135,3 +139,7 @@ The function returns a response similar to the following:
 
 ****inet type****
 The data type represents IPv4, IPv6 host addresses, and their subnets. This type is useful when parsing logs, filtering on IP subnets, or doing network calculations within a query. For more information, see [inet in the PostgreSQL documentation](https://www.PostgreSQL.org/docs/16/datatype-net-types.html#DATATYPE-INET).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

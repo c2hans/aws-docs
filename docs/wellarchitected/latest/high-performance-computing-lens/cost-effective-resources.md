@@ -24,3 +24,7 @@ With greater resource availability there is greater capability to run jobs on fa
 +  Reducing the runtime can also reduce costs for surrounding services, such as storage, since these resources will not be needed for as long.
 +  The choice of storage can also impact cost. Many HPC applications read and write significant amounts of data. If the time to read and write data can be reduced, then the compute will be needed for less time. There are many different types and performance settings for storage. Picking the optimum version for your application can improve efficiency and reduce cost overall.
 +  For some applications, the cost of licenses exceeds the cost of AWS resources. It may be worth spending a little more on AWS resources to achieve better performance and save money overall.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

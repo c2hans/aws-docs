@@ -60,3 +60,7 @@ Not yet demonstrated in a reference implementation as a deployed scheduled-agent
 
 Open extensions
 A production deployment would need the same IAM Identity Center / DataZone subscription prerequisites as the ad hoc pattern, plus a data-freshness contract per product (a weekly OTA-campaign briefing needs data no staler than the executive’s tolerance for "last week’s news"), a policy for how many prior cycles the agent retains for comparison, and a decision on delivery channel per executive (email, Slack, or another surface they already check first).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

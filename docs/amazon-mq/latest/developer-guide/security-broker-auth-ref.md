@@ -59,3 +59,7 @@ Amazon MQ supports mutual TLS (mTLS) for RabbitMQ brokers. The SSL authenticatio
 
 **Note**
 RabbitMQ supports multiple authentication and authorization methods to be used simultaneously. For example, you can enable both OAuth 2.0 and simple (internal) authentication. For more information, see the OAuth 2.0 tutorial section on [enabling both OAuth 2.0 and simple (internal) authentication](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/oauth-tutorial.html#oauth-tutorial-config-both-auth-methods-using-cli) and the [RabbitMQ access control documentation](https://www.rabbitmq.com/docs/access-control).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

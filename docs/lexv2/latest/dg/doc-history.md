@@ -82,3 +82,7 @@ The following table describes important changes in each release of Amazon Lex V2
 | [New feature (2021-04-01)](https://docs.aws.amazon.com/lexv2/latest/dg/how-languages.html) | Amazon Lex V2 now supports the Japanese (Japan) locale. For more information, see [Languages and locales supported by Amazon Lex V2](https://docs.aws.amazon.com/lexv2/latest/dg/how-languages.html). | April 1, 2021 |
 | [New feature (2021-03-12)](https://docs.aws.amazon.com/lexv2/latest/dg/built-in-slots.html) | Amazon Lex V2 now supports three new built-in slot types: `AMAZON.City`, `AMAZON.Country`, and `AMAZON.State`. | March 12, 2021 |
 | [New guide](#doc-history) | This is the first release of the *Amazon Lex V2 user guide*. | January 21, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,3 +84,7 @@ Parameters allow analysis runners to submit different values at submission time.
    1. To decline approval, choose **Disallow**.
 
 If you have chosen to approve the analysis template, the member who can run jobs can now run a PySpark job on a configured table using a PySpark analysis template. For more information, see [Running PySpark jobs](run-jobs.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

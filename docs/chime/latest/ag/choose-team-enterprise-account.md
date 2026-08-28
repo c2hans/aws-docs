@@ -20,3 +20,7 @@ With an Enterprise account, you have more control over the users from your organ
 To create an Enterprise account, you must claim at least one email domain. This ensures that all users who sign in to Amazon Chime using your claimed domains are included in your centrally managed Amazon Chime account. Enterprise accounts are required for managing your users through a supported directory integration. For more information, see [Claiming a domain](claim-domain.md) and [Connecting to your Active Directory](active_directory.md).
 
 You can also manage user activation and suspension from your Enterprise account. For more information, see [Managing user permissions and access](manage-access.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

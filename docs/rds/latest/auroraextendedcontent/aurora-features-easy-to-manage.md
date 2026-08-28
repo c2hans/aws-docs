@@ -60,3 +60,7 @@ Aurora supports quick, efficient cloning operations, where entire multi-terabyte
 <a name="aurora-features-stop-start"></a>
 
 You save costs by stopping your Aurora database when it is not in use, e.g., during development and test cycles. Stopping your database does not delete your data, and you can restart in a few steps. Additional information is available in the [start/stop](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/aurora-cluster-stop-start.html) documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

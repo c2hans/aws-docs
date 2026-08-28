@@ -150,3 +150,7 @@ The values that AWS DMS supports for `CharacterSet` appear in the table followin
 | ibm-856\_P100-1995 | ibm-273\_P100-1995 | ibm-12712\_P100-1998,swaplfnl |
 | ibm-857\_P100-1995 | ibm-277\_P100-1995 | ibm-16804\_X110-1999,swaplfnl |
 | ibm-858\_P100-1997 | ibm-278\_P100-1995 | ebcdic-xml-us |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

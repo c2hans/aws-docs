@@ -74,3 +74,7 @@ When you use resources (e.g., create a channel), you must specify the region in 
 Your channel’s region is part of the ARN (Amazon Resource Name) that is assigned when you create the channel. When you create a channel:
 + The Amazon IVS console shows the ARN in the **General configuration** area of the page. Subsequently, the console always shows your region (location) on the top right.
 + The Amazon IVS API returns the ARN in the channel object’s `arn` field.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

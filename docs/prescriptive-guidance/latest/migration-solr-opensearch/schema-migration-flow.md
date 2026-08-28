@@ -447,3 +447,7 @@ Migrating from Solr to Amazon OpenSearch Service offers a straightforward path t
 Instead of lifting and shifting your existing Solr configurations, we recommend that you take the time to evaluate each field's necessity, validate data types for optimal performance, and simplify complex configurations where possible.
 
 Consider whether custom Solr field types could be replaced with OpenSearch native functionality. This strategic approach not only ensures a successful migration but also takes advantage of the strengths in Amazon OpenSearch Service to help you build a more efficient, maintainable search solution. The goal isn't only to replicate Solr's functionality, but to enhance your search capabilities while reducing unnecessary complexity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

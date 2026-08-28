@@ -36,3 +36,7 @@ When upgrading from non multi-skill to multi-skill in Amazon Connect forecasting
   For more information, see [Set group allowance for time off](config-group-allowance-to.md)
 + Direct all applicable staffing groups to the new forecast group and link them with corresponding demand groups. Note that each staffing group connected to your new forecast group must be associated with at least one demand group.
 +  Create necessary trade groups as trade groups are not carried forward o between forecast groups.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

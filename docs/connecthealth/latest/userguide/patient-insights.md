@@ -174,3 +174,7 @@ To present the summary to clinicians in your application:
 For the Condition Review sections, render each surfaced condition as an interactive element that allows the clinician to confirm, dismiss, or annotate each condition directly within the workflow. The structured output format gives you full control over how the summary is rendered.
 
 For complete API parameter details and request/response schemas, see the [Amazon Connect Health API Reference](https://docs.aws.amazon.com/connecthealth/latest/APIReference/Welcome.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connecthealth` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

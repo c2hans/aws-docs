@@ -16,3 +16,7 @@ The following table describes significant changes to this guide.
 | Added Amazon RDS for Db2 | In the [Choosing the right database for your RTO and RPO requirements](choosing-database.md) section, added information about Amazon RDS for Db2. | March 4, 2024 |
 | Updated RTO/RPO details | In the [Choosing the right database for your RTO and RPO requirements](choosing-database.md) section, updated the information about Amazon DocumentDB, Amazon ElastiCache (Redis OSS), and Amazon RDS for SQL Server. | April 19, 2023 |
 | Initial publication | — | October 26, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

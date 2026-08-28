@@ -1,0 +1,55 @@
+---
+source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/game-production-in-the-cloud-workstations/game-production-in-the-cloud-workstations.html
+---
+
+# Game Production in the Cloud - Workstations
+<a name="game-production-in-the-cloud-workstations"></a>
+
+Publication date: **December 1, 2021 ([Diagram history](#diagram-history))**
+
+This architecture, which is agnostic of game engine and software, walks through the use of streaming remote workstations with the NICE DCV protocol. It covers the high level considerations for use of cloud development workstations for games.
+
+## Game Production in the Cloud - Workstations Diagram
+<a name="diagram1"></a>
+
+![Reference architecture diagram showing game production in the cloud using streaming workstations](http://docs.aws.amazon.com/reference-architecture-diagrams/latest/game-production-in-the-cloud-workstations/images/game-production-in-the-cloud-workstations.png)
+
+1. NICE DCV is a streaming protocol that supports 4K, 60 FPS streaming. Developers using a browser connect using TCP connections, whereas desktop clients can use QUIC UDP over port 8443 for increased performance.
+
+1. Developers use **AWS Client VPN** for a secure connection to network interfaces in the workstations subnets with source network address translation (SNAT).
+
+1. **Amazon Route 53** provides private DNS for the resources in the VPC, as well as inbound and outbound DNS forwarding.
+
+1. **Directory Service** provides managed directory service for Microsoft Active Directory to enable local game project storage mapped to individual users.
+
+1. Workstations are created using an **Amazon Machine Image **(AMI) built with **Amazon EC2** **Image Builder**. Images include NICE DCV server, developer software, registry changes, and drivers (such as NVIDIA gaming drivers or peripheral drivers). The **AWS Marketplace** includes common AMIs used for workstations.
+
+1. Fleets of workstations use graphics **Amazon Elastic Compute Cloud** (Amazon EC2) instance types that provide GPUs and are scaled using **Amazon EC2 Auto Scaling** groups.
+
+1. A Session Manager Broker enables management of NICE DCV sessions.
+
+1. Local file storage of projects are hosted in **Amazon FSx for Windows File Server**. Developers commit to a separate continuous integration and continuous delivery (CI/CD) pipeline by pushing from local storage to source control.
+
+## Further reading
+<a name="further-reading"></a>
+
+ For additional information, see the following resources:
++ [AWS Architecture Icons](https://aws.amazon.com/architecture/icons)
++ [AWS Architecture Center](https://aws.amazon.com/architecture)
++  [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected)
+
+## Diagram history
+<a name="diagram-history"></a>
+
+To be notified about updates to this reference architecture diagram, subscribe to the RSS feed.
+
+| Change | Description | Date |
+| --- |--- |--- |
+| [Initial publication](#diagram-history) | Reference architecture diagram first published. | December 1, 2021 |
+
+**Note**
+To subscribe to RSS updates, you must have an RSS plugin enabled for the browser you are using.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Reference Architecture Diagrams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query reference-architecture-diagrams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

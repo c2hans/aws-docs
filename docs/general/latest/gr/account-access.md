@@ -22,6 +22,7 @@ The following are the service endpoints and service quotas for this service.
 | Asia Pacific (Mumbai) | ap-south-1 |  account-access.ap-south-1.api.aws  |  |
 | Asia Pacific (Osaka) | ap-northeast-3 |  account-access.ap-northeast-3.api.aws  |  |
 | Asia Pacific (Seoul) | ap-northeast-2 |  account-access.ap-northeast-2.api.aws  |  |
+| Asia Pacific (Singapore) | ap-southeast-1 |  account-access.ap-southeast-1.api.aws  |  |
 | Asia Pacific (Sydney) | ap-southeast-2 |  account-access.ap-southeast-2.api.aws  |  |
 | Asia Pacific (Tokyo) | ap-northeast-1 |  account-access.ap-northeast-1.api.aws  |  |
 | Canada (Central) | ca-central-1 |  account-access.ca-central-1.api.aws  |  |
@@ -38,3 +39,7 @@ The following are the service endpoints and service quotas for this service.
 | Name | Default | Adjustable | Description |
 | --- | --- | --- | --- |
 | Group entitlements per role | Each supported Region: 20 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/account-access/quotas/L-42A1D874)  | The maximum number of group entitlements that can be assigned to a single role in an application. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

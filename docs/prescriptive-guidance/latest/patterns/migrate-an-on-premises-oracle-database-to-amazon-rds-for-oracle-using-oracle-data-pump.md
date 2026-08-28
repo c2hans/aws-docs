@@ -130,3 +130,7 @@ The pattern involves creating a data dump file from the source database, storing
 + [Amazon RDS documentation](https://docs.aws.amazon.com/rds/index.html)
 + [Oracle Data Pump documentation](https://docs.oracle.com/en/database/oracle/oracle-database/19/sutil/oracle-data-pump-overview.html)
 + [Oracle SQL Developer](https://www.oracle.com/database/sqldeveloper/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

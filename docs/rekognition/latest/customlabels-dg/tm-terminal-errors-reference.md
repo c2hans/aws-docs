@@ -60,3 +60,7 @@ The service is unable to generate the training output files.
 + Check that the Amazon S3 bucket information in the [OutputConfig](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_OutputConfig) input parameter to [CreateProjectVersion](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_CreateProjectVersion) is correct.
 
 You can't use the Amazon Rekognition Custom Labels console to fix this error.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

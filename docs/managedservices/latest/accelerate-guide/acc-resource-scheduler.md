@@ -14,3 +14,7 @@ AMS Resource Scheduler uses periods and schedules. Periods define the times the 
 AMS Resource Scheduler uses AWS resource tags to associate a schedule to one or more resources in order to target them for scheduled start and stop actions. You tag your resources with the tag key (default is `Schedule`) configured in the Scheduler with the schedule name as the value. You configure the same tag key as the cost allocation tag in AWS Cost Explorer for the cost estimator feature of Scheduler to track and report on cost savings.
 
 AMS Resource Scheduler is an opt in feature that you can enable per account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

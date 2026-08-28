@@ -46,3 +46,7 @@ The response contains XML content consisting of one `schedule_events` element wi
 | state | String | An indication of the current state or progress of scheduling. Possible values are: queued, pending, started, stopped, and failed. |
 | message | String | System messages about any unexpected errors which appear here. |
 | schedule\_id | Integer | The ID for the schedule that spawned this schedule event. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ aws \
 To delete the tags of an S3 Batch Operations job using the AWS SDK for Java, you can use the S3Control client with the job ID to remove all tags associated with the batch operations job.
 
 For examples of how to delete job tags with the AWS SDK for Java, see [Delete tags from a batch job](https://docs.aws.amazon.com/AmazonS3/latest/API/s3-control_example_s3-control_DeleteJobTagging_section.html) in the *Amazon S3 API Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

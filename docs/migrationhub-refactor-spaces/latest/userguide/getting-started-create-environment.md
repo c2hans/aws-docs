@@ -34,3 +34,7 @@ After an environment is created, you can share the environment with other AWS ac
 1. Refactor Spaces uses a service-linked role to connect to AWS services to orchestrate them on your behalf. When you use Refactor Spaces for the first time, the service-linked role is created for you with the correct permissions. For more information about the service-linked role, see [Using service-linked roles for Refactor Spaces](using-service-linked-roles.md).
 
 1. Choose **Next** to move to the **Create application** page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub Refactor Spaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-refactor-spaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ While both manual and automated processes aim to uphold our security standards, 
 
 **Note**
 This feature is suitable for teams that are experienced with AWS and IAM resources, and we do not recommend it for teams that are new to AWS. The automated validation process is designed to catch most errors and is helpful for teams to get quick reviews for changes to IAM, when they understand the permissions that they need. To use the new change types safely and effectively, we recommend you to have a good understanding of AWS IAM, and the [run-time checks](https://docs.aws.amazon.com/managedservices/latest/userguide/aip-runtime-checks.html) offered by the change types to determine whether they are suitable for your team.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

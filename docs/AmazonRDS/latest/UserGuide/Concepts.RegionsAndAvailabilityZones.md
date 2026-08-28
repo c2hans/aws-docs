@@ -133,3 +133,7 @@ A Local Zone can't be included in a Multi-AZ deployment.
 
 **Important**
 Currently, the only AWS Local Zone where Amazon RDS is available is Los Angeles in the US West (Oregon) Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

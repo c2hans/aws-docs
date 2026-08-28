@@ -50,3 +50,7 @@ The procedure to upgrade your DB cluster has changed. For more information, see 
 +  Bug \#17059925: For [UNION](https://dev.mysql.com/doc/refman/5.6/en/union.html) statements, the rows-examined value was calculated incorrectly. This was manifested as too-large values for the `ROWS_EXAMINED` column of Performance Schema statement tables (such as [events\_statements\_current](https://dev.mysql.com/doc/refman/8.0/en/performance-schema-events-statements-current-table.html)).
 +  Bug \#11827369: Some queries with `SELECT ... FROM DUAL` nested subqueries raised an assertion.
 +  Bug \#16311231: Incorrect results were returned if a query contained a subquery in an `IN` clause that contained an [XOR](https://dev.mysql.com/doc/refman/5.6/en/logical-operators.html#operator_xor) operation in the `WHERE` clause.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

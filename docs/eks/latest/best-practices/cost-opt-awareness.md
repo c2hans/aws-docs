@@ -230,3 +230,7 @@ Refer to the following resources to learn more about best practices for cost opt
 +  [Kubecost](https://kubecost.com/)
 +  [Kube Opsview](https://github.com/hjacobs/kube-ops-view)
 +  [Kubernetes Opex Analytics](https://github.com/rchakode/kube-opex-analytics)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

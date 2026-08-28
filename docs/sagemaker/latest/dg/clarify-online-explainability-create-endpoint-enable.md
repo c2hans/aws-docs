@@ -25,3 +25,7 @@ The following are some examples of valid `EnableExplanations` expression. In the
 | '[1]>`0.5`' | '1,0.6' | True | For each record, the model container outputs its predicted label and probability. Explains a record if its probability (at index 1) is greater than 0.5. |
 | 'probability>`0.5`' | '{"predicted\_label":1,"probability":0.6}' | True | For each record, the model container outputs JSON data. Explain a record if its probability is greater than 0.5. |
 | '\!contains(probabilities[:-1], max(probabilities))' | '{"probabilities": [0.4, 0.1, 0.4], "labels":["cat","dog","fish"]}' | False | For a multi-class model: Explains a record if its predicted label (the class that has the max probability value) is the last class. Literally, the expression means that the max probability value is not in the list of probabilities excluding the last one. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -159,3 +159,7 @@ sparkConf:
  If you use Amazon EMR releases 7.2.0 and higher, the configurations are included by default. In that case, you can set the file path to `s3://{{<bucket_name>}}/{{<file_path>}}` instead of `local://{{<file_path>}}` in the Spark application YAML file.
 
 Then submit the Spark application as normal.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

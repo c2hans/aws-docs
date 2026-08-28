@@ -153,3 +153,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/detect-PII.html
 +  **Specify a different action than the global action** – If a different action wants to be applied on a different sensitive data type, that can be done here. Note that two different edit-in-place actions (redaction and hashing) cannot be used on the same column, but detect can always be used.
 
 ![The screen shot shows the fine-grained action overrides. You can add, edit, delete or edit as JSON any action overrides for the job.](http://docs.aws.amazon.com/glue/latest/dg/images/detect-sensitive-data-fga-overrides.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

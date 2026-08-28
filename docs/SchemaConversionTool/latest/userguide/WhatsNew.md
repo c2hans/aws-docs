@@ -105,3 +105,7 @@ The following table describes the important changes to the AWS Schema Conversion
 | 1.0.103 | Maintenance release | Adds offline project capability, the ability to check for new versions, and memory and performance management. | December 2, 2015 |
 | 1.0.101 | Maintenance release | Adds the **Create New Database Migration Project** wizard. Adds the ability to save the database migration assessment report as a PDF file. | October 19, 2015 |
 | 1.0.100 | Preview release | Provides the user guide for the AWS Schema Conversion Tool preview release. | October 7, 2015 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Schema Conversion Tool User Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query SchemaConversionTool` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

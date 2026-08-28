@@ -20,3 +20,7 @@ In order to facilitate using Amazon Location Service in JavaScript web frontend 
 
 **Note**
 The package is kept up to date and backward compatible for ease of use. Using this script tag or NPM install will always get the latest version.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

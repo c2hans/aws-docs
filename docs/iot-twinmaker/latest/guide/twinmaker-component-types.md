@@ -82,3 +82,7 @@ The following table describes the parameters of a `FunctionRequest`.
 | `scope` | The scope of the function. Use `Workspace` for functions with a scope that spans an entire workspace. Use `Entity` for functions with a scope that is limited to the entity that contains the component. |
 
 For examples that show how to create and extend component types, see [Example component types](twinmaker-component-types-examples.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

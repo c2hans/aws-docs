@@ -102,3 +102,7 @@ Different foundation models support different hyperparameters when fine-tuning. 
 You can specify hyperparameter values when you fine-tune your model in Studio. For more information, see [Fine-tune a model in Studio](jumpstart-foundation-models-use-studio-updated-fine-tune.md).
 
 You can also override default hyperparameter values when fine-tuning your model using the SageMaker Python SDK. For more information, see [Fine-tune publicly available foundation models with the `JumpStartEstimator` class](jumpstart-foundation-models-use-python-sdk-estimator-class.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

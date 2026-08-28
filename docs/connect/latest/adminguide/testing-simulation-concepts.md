@@ -36,3 +36,7 @@ This block is optional and is used to validate metadata such as user defined att
 Actions
 This block is optional and is used to override actions, override resources, send instructions, or test control actions. You can use override resources such as Lambda, Lex, Queue, or Hours of Operation with alternative resources or override actions with response values from related actions. You can validate the contact experience without invoking external resources to speed up test execution and prevent real data manipulation, such as preventing replaying a Lambda block that charges a credit card in production environment. You can use send instructions to simulate input to be sent to the contact center experience, such as text/utterance or DTMF tone. Additionally, you can use test control action types to log data and end the test case execution at any point.
 ![The Actions block in the test simulation configuration.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-action-block.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

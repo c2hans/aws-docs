@@ -101,3 +101,7 @@ This section contains the following examples of golden paths:
 ### Additional resources
 <a name="additional-resources.0bcd4f06-c5a8-51e6-9340-413a4090a466"></a>
 + [Amazon EKS blueprints for Terraform](https://aws-ia.github.io/terraform-aws-eks-blueprints/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

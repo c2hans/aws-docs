@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/step
 1.  Drag and drop your files to the **Upload Video** box, or choose the **Browse Files** button to upload a video or image file. Once the files are uploaded, choose **Quick upload**, or select **Next** to **Start Upload**.
 
     Once the ingestion process is completed, a thumbnail image of the video or image is created. You can hover over the thumbnail image and select **Play now** to view the media file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Media2Cloud on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

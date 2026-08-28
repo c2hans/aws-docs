@@ -33,3 +33,7 @@ To identify which image version each job is running, the `GetJobRun` API respons
 <a name="updating-custom-image-considerations"></a>
 + Custom image updates on running applications are not supported on applications with pre-initialized capacity configured.
 + For long-running streaming jobs, you must restart the job for a new custom image to take effect. New job attempts will pick new images.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

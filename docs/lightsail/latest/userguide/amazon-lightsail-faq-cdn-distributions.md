@@ -104,3 +104,7 @@ All Lightsail CDN distributions have IPv6 enabled by default. The distribution h
 <a name="do-origins-need-ipv6"></a>
 
 No. Lightsail CDN distributions can communicate with origins over IPv4 or IPv6. IPv6 is only required on the origin if you configure the distribution to use dual-stack or IPv6-only origin communication.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -826,3 +826,7 @@ The SAP HANA backup volume size is designed to provide optimal baseline and burs
 For multi-node deployment, we recommend using [Amazon EFS](https://aws.amazon.com/efs/features/) for SAP HANA to perform file-based backup. It can support performance over 10 GB/sec and over 500,000 IOPS.
 
 The configurations recommended in this guide are used by [AWS Launch Wizard for SAP](https://aws.amazon.com/launchwizard/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

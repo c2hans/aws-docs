@@ -36,3 +36,7 @@ For AWS Marketplace Metering Service products, note the following:
 + Products that use the AWS Marketplace Metering Service don't support 1-Click. Buyers are required to launch your software with an AWS Identity and Access Management (IAM) role with specific permissions and have an internet gateway.
 + Free Trial and Annual Pricing aren't compatible with the AWS Marketplace Metering Service.
 + Changing dimension (user, hosts, bandwidth, and data) or dimension name isn't supported. You will need to create a new product.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

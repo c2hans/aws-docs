@@ -31,3 +31,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 <a name="devices-not-provisioned-in-the-supply-chain"></a>
 
  Manufacturers, component vendors, or distributors might have minimum order quantities before they provide customization services. Introducing customization or a pre-provisioned hardware security module can be cost prohibitive for low-volume devices. In consumer products, sometimes it is not known where the device should be provisioned at the time of manufacturing. In these scenarios, devices come out of manufacturing with no unique credentials, and are provisioned once deployed in the field using an onboarding service such as [AWS IoT fleet provisioning](https://docs.aws.amazon.com/iot/latest/developerguide/provision-wo-cert.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

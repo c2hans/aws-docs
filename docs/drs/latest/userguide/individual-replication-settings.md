@@ -76,6 +76,9 @@ The **Staging area subnet** setting defines which VPC Subnet that the Replicatio
 
  AWS Elastic Disaster Recovery supports replicating Source Servers with up to 60 volumes, however the **Replication server instance type** must also support an equal or greater number of EBS Volume attachments. We recommend reviewing the [ Dedicated Amazon EBS volume limit Documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/volume_limits.html#dedicated-limit) to ensure an appropriately sized EC2 Instance Type is selected.
 
+**Note**
+ If the configured **Replication server instance type** is unavailable in the staging area subnet's Availability Zone, AWS Elastic Disaster Recovery automatically launches the replication server using an alternative instance type. This behavior maintains continuous data replication and protects your RPO. For more information, see [What happens if the configured replication server instance type is unavailable?](Replication-Related-FAQ.md#What-If-Replication-Server-Type-Unavailable)
+
 ------
 #### [ DRS Console ]
 
@@ -165,3 +168,7 @@ We recommend leaving **Dedicated instance for replication server** as **do not u
      ```
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

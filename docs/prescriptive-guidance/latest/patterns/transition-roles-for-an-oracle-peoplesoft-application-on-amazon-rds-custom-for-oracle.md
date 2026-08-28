@@ -103,3 +103,7 @@ For your production deployment, we recommend launching the observer instance in 
 + [Oracle Data Guard Broker guide ](https://docs.oracle.com/en/database/oracle/oracle-database/19/dgbkr/index.html)(Oracle reference documentation)
 + [Data Guard Concepts and Administration ](https://docs.oracle.com/en/database/oracle/oracle-database/19/sbydb/index.html)(Oracle reference documentation)
 + [Oracle Data Guard Specific FAN and FCF Configuration Requirements ](https://docs.oracle.com/en/database/oracle/oracle-database/19/dgbkr/using-data-guard-broker-to-manage-switchovers-failovers.html#GUID-DFFDAA2B-A889-49AD-AB85-747D73FF0FF5)(Oracle reference documentation)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

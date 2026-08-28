@@ -12,3 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
  This requirement is addressed in the following reference architectures:
 +  1.1 [*Hybrid network connectivity from a data center to the AWS Cloud*](hybrid-network-connectivity-from-a-data-center-to-the-aws-cloud.md)
 +  2.3 [*Industrial IoT with AWS IoT Greengrass*](industrial-iot-with-aws-iot-greengrass.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

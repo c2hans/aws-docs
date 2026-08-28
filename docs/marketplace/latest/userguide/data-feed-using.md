@@ -33,3 +33,7 @@ The following procedure assumes that you've already configured your environment 
    For more information about Quick, see the [*Amazon Quick User Guide*](https://docs.aws.amazon.com/quick/latest/userguide/welcome.html).
 
 For a detailed example of one way to use AWS services to collect and analyze data in data feeds, see [Using Seller Data Feed Delivery Service, Amazon Athena, and Quick to create seller reports](https://aws.amazon.com/blogs/awsmarketplace/using-seller-data-feed-delivery-service-amazon-athena-and-amazon-quicksight-to-create-seller-reports/) at the AWS Marketplace Blog.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

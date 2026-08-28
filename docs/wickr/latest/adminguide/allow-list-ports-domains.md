@@ -30,15 +30,6 @@ Registration and verification emails are sent from `no-reply@amazonaws.com` and 
 | Calling CIDR addresses: |  +  44.211.195.0/27 <br />+  44.213.83.32/28   |
 | Calling IP addresses: |  +  44.211.195.0 <br />+  44.211.195.1 <br />+  44.211.195.2 <br />+  44.211.195.3 <br />+  44.211.195.4 <br />+  44.211.195.5 <br />+  44.211.195.6 <br />+  44.211.195.7 <br />+  44.211.195.8 <br />+  44.211.195.9 <br />+  44.211.195.10 <br />+  44.211.195.11 <br />+  44.211.195.12 <br />+  44.211.195.13 <br />+  44.211.195.14 <br />+  44.211.195.15 <br />+  44.211.195.16 <br />+  44.211.195.17 <br />+  44.211.195.18 <br />+  44.211.195.19 <br />+  44.211.195.20 <br />+  44.211.195.21 <br />+  44.211.195.22 <br />+  44.211.195.23 <br />+  44.211.195.24 <br />+  44.211.195.25 <br />+  44.211.195.26 <br />+  44.211.195.27 <br />+  44.211.195.28 <br />+  44.211.195.29 <br />+  44.211.195.30 <br />+  44.211.195.31 <br />+  44.213.83.32 <br />+  44.213.83.33 <br />+  44.213.83.34 <br />+  44.213.83.35 <br />+  44.213.83.36 <br />+  44.213.83.37 <br />+  44.213.83.38 <br />+  44.213.83.39 <br />+  44.213.83.40 <br />+  44.213.83.41 <br />+  44.213.83.42 <br />+  44.213.83.43 <br />+  44.213.83.44 <br />+  44.213.83.45 <br />+  44.213.83.46 <br />+  44.213.83.47   |
 
-### Asia Pacific (Malaysia)
-<a name="ap-southeast-malaysia"></a>
-
-|  |  |
-| --- |--- |
-| Domains: | +  gw-pro-prod.wickr.com <br />+  api.messaging.wickr.ap-southeast-5.amazonaws.com <br />+  ingress.prod.calling.wickr.ap-southeast-5.amazonaws.com   |
-| Calling CIDR addresses: |  +  43.216.226.160/28   |
-| Calling IP addresses: |  +  43.216.226.160 <br />+  43.216.226.161 <br />+  43.216.226.162 <br />+  43.216.226.163 <br />+  43.216.226.164 <br />+  43.216.226.165 <br />+  43.216.226.166 <br />+  43.216.226.167 <br />+  43.216.226.168 <br />+  43.216.226.169 <br />+  43.216.226.170 <br />+  43.216.226.171 <br />+  43.216.226.172 <br />+  43.216.226.173 <br />+  43.216.226.174 <br />+  43.216.226.175   |
-
 ### Asia Pacific (Singapore)
 <a name="ap-southeast-singapore"></a>
 
@@ -120,3 +111,7 @@ Registration and verification emails are sent from `no-reply@amazonaws.com` and 
 | Domain: | +  gw-pro-prod.wickr.com <br />+   api.messaging.wickr.us-gov-west-1.amazonaws.com <br />+   ingress-prod-calling.wickr.us-gov-west-1.amazonaws.com  <br />+   s3.us-gov-west-1.amazonaws.com  <br />+   s3-fips.us-gov-west-1.amazonaws.com  <br />+   s3.amazonaws.com  <br />+   register.wickr.us-gov-west-1.amazonaws.com  <br />+   admin.wickr.us-gov-west-1.amazonaws.com  <br />+   admin.messaging.wickr.us-gov-west-1.amazonaws.com  <br />+   cognito-identity.us-gov-west-1.amazonaws.com  <br />+   kinesis.us-gov-west-1.amazonaws.com  <br />+   messaging.wickr.us-gov-west-1.amazonaws.com   |
 | Calling CIDR addresses: |  +  3.30.186.208/28 <br />+  3.31.11.216/29   |
 |  Calling IP addresses:  |  +  3.30.186.208 <br />+  3.30.186.209 <br />+  3.30.186.210 <br />+  3.30.186.211 <br />+  3.30.186.212 <br />+  3.30.186.213 <br />+  3.30.186.214 <br />+  3.30.186.215 <br />+  3.30.186.216 <br />+  3.30.186.217 <br />+  3.30.186.218 <br />+  3.30.186.219 <br />+  3.30.186.220 <br />+  3.30.186.221 <br />+  3.30.186.222 <br />+  3.30.186.223 <br />+  3.31.11.216 <br />+  3.31.11.217 <br />+  3.31.11.218 <br />+  3.31.11.219 <br />+  3.31.11.220 <br />+  3.31.11.221 <br />+  3.31.11.222 <br />+  3.31.11.223   |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,3 +25,7 @@ Understand the options and cost benefits for offloading and managing data outsid
  Large objects will increase your database size, inflating resource and backup costs. Data management system options might provide a lower-cost storage solution.
 +  SAP Documentation: [SAP Document Management](https://help.sap.com/viewer/0f3e26f224d9419688b3d25d7c2e46fe/LATEST/en-US/4af6e75227db9972e10000000a4450e5.html)
 +  SAP Documentation: [Search for Certified ILM Solutions](https://www.sap.com/dmc/exp/2013_09_adpd/enEN/#/solutions?search=BC-ILM)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

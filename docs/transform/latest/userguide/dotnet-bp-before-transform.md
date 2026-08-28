@@ -60,3 +60,7 @@ Expect to combine AWS Transform with an AI code companion such as Kiro. A common
 In the modernization journey, think of AWS Transform as the express travel that takes you a long way towards your objective, and an AI code companion as the local travel that takes you to your final destination.
 
 To aid hand-off from AWS Transform to AI code companions, AWS Transform provides an HTML transformation report and a Next Steps markdown document at the end of transformation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

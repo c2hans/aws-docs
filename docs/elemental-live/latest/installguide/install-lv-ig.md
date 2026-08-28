@@ -27,3 +27,7 @@ In this procedure, we show how to install version 2.25.4 of the Elemental Live. 
 + [Step C: Install the Elemental Live software](install-lv-ig-install-sw.md)
 + [Step D: Set up licenses](install-lv-ig-licensing.md)
 + [Step E: Complete node configuration](install-lv-ig-complete.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

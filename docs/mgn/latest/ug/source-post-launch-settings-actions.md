@@ -11,7 +11,7 @@ This setting controls whether post-launch actions are active or inactive. You mu
 
 The feature is activated and deactivated at the account level from the **Settings > Post-launch template** screen. [Learn more about activating post-launch settings](post-launch-settings.md#post-launch-settings-activation).
 
-After it was activated once, the feature can also be deactivated and reactivated for a single server. Simply selecting a server, go to the **Post-launch settings** tab and click **Edit**.
+After it was activated once, the feature can also be deactivated and reactivated for a single server. Simply selecting a server, go to the **Post-launch settings** tab and choose **Edit**.
 
 When the feature is inactive:
 + All actions are hidden.
@@ -20,3 +20,7 @@ When the feature is inactive:
 When the feature is active:
 + The actions are visible.
 + You can activate them.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

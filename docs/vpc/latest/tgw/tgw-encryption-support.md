@@ -46,3 +46,7 @@ When a transit gateway has Encryption support enabled, the following attachment 
 + Encryption Support is not supported for VPC attachments in the Availability Zone `use1-az3`. When Encryption Support is enabled on a transit gateway, you cannot create a VPC attachment that uses a subnet in this Availability Zone. To attach a subnet in `use1-az3`, you must first disable Encryption Support on the transit gateway.
 
 Attempting to create incompatible attachments will fail with an API error.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

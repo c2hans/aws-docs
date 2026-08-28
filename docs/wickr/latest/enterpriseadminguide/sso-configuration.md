@@ -19,3 +19,7 @@ The Company ID value will be visible to end users during registration. This ID m
   + No grace period (default): Users will be signed out immediately after a refresh token failure.
   + 30-minute grace period: Users can stay signed in for up to 30 minutes after a refresh token failure.
   + 60-minute grace period: Users can stay signed in for up to 60 minutes after a refresh token failure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

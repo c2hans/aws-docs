@@ -25,3 +25,7 @@ In this location, the `detect_scenes.py` file houses the Apache Spark code that 
 
 **Note**
 If you’re only testing the Apache Spark changes, you can just [re-run the Amazon EMR Serverless job](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/jobs.html) in the application. A simple clone of a previously-run job runs your Apache Spark changes. Set the Apache Spark properties to include the `DynamoDB-Spark.jar` file. For instructions, see [Running jobs from the EMR Studio console](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/jobs-studio.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Scene Intelligence with Rosbag on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

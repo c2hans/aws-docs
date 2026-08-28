@@ -31,3 +31,7 @@ Once audience exposure is increased, it cannot be decreased within the same expe
 1. Choose **Increase exposure**. AWS AppConfig experimentation opens the experiment dashboard with the increased exposure displayed.
 
 Monitor traffic and metrics as described earlier. When you're ready, repeat this procedure to increase audience exposure further.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

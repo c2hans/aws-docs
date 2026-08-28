@@ -87,3 +87,7 @@ You can grant or restrict the access to all member accounts in your Organization
 After you enable Cost Explorer at the management account level, you can use IAM to manage access to your billing data for individual users. This way, you can grant or revoke access on an individual level for each account, rather than granting access to all member accounts.
 
 A user must be granted explicit permissions to view pages in the Billing and Cost Management console. With the appropriate permissions, the user can view costs for the AWS account that the user belongs to. For the policy that grants the necessary permissions to a user, see [Overview of managing access permissions](control-access-billing.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

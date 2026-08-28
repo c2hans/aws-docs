@@ -31,3 +31,7 @@ For AWS Services architected within the AWS GovCloud (US) Regions, the following
 + The initial quota value established by AWS (default value) and the new quota value after a quota increase (applied value).
 + Information related to open quota increase requests or requests that were closed in the last 90 days.
 + Tags on any service quota with applied values.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

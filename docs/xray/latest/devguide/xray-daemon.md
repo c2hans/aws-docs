@@ -173,3 +173,7 @@ The daemon outputs information about its current configuration and segments that
 By default, the daemon outputs logs to STDOUT. If you run the daemon in the background, use the `--log-file` command line option or a configuration file to set the log file path. You can also set the log level and disable log rotation. See [Configuring the AWS X-Ray daemon](xray-daemon-configuration.md) for instructions.
 
 On Elastic Beanstalk, the platform sets the location of the daemon logs. See [Running the X-Ray daemon on AWS Elastic Beanstalk](xray-daemon-beanstalk.md) for details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS X-Ray. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query xray` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

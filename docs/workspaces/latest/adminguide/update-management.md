@@ -8,3 +8,7 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/adminguide/update-mana
 We recommend that you regularly patch, update, and secure the operating system and applications on your WorkSpaces. You can configure your WorkSpaces to be updated by WorkSpaces during a regular maintenance window or you can update them yourself. For more information, see [Maintenance in WorkSpaces Personal](workspace-maintenance.md).
 
 For applications on your WorkSpaces, you can use any automatic update services provided or follow the recommendations for installing updates provided by the application vendor.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

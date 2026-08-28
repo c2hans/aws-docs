@@ -49,3 +49,7 @@ To configure an external credentials service on Windows:
    For information on how to create a profile, see [ Using a Configuration Profile ](https://docs.aws.amazon.com/redshift/latest/mgmt/options-for-providing-iam-credentials.html#using-configuration-profile) in the Amazon Redshift Cluster Management Guide.
 
 1. Configure the driver to use this profile. The driver detects and uses the authentication settings specified in the profile.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

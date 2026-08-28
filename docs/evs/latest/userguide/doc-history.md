@@ -9,6 +9,7 @@ The following table describes the documentation releases for Amazon Elastic VMwa
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Added support for instance type](https://docs.aws.amazon.com/evs/latest/userguide/versions-provided.html) | Amazon EVS now supports the i7i.metal-48xl instance type for use with VMware Cloud Foundation (VCF) environments.<br />This bare-metal instance type is available across all VMware Cloud Foundation (VCF) versions. | August 27, 2026 |
 | [Added Amazon EVS Custom Addon depot topic](https://docs.aws.amazon.com/evs/latest/userguide/addon-depot.html) | Added documentation for accessing the Amazon EVS Custom Addon depot. You can use the `GetDepotUrl` API action to retrieve a depot URL and configure it as a download source in vSphere Lifecycle Manager (vLCM) to sync and install the Amazon EVS Custom Addon. | May 21, 2026 |
 | [Added support for 32 hosts per EVS environment](https://docs.aws.amazon.com/evs/latest/userguide/evs-env-create-host.html) | Amazon EVS now supports up to 32 hosts per EVS environment. | May 18, 2026 |
 | [Updated Setting up guide for Self-deployed mode](https://docs.aws.amazon.com/evs/latest/userguide/setting-up.html) | Updated the Setting up guide and the deployment prerequisite checklist to identify which setup tasks apply only when Amazon EVS installs VCF (VCF 5.2.x). In Self-deployed mode, VCF license keys and VCF management appliance DNS records are not required at environment creation time. | May 6, 2026 |
@@ -28,3 +29,7 @@ The following table describes the documentation releases for Amazon Elastic VMwa
 | [Amazon EVS released in the Europe (Ireland) Region](https://docs.aws.amazon.com/general/latest/gr/evs.html) | Amazon EVS was released in the Europe (Ireland) Region. | June 18, 2025 |
 | [Released AmazonEVSServiceRolePolicy](https://docs.aws.amazon.com/evs/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-amazonevsservicerolepolicy) | The AWS managed policy AmazonEVSServiceRolePolicy was released. | June 9, 2025 |
 | [Initial User Guide release](https://docs.aws.amazon.com/evs/latest/userguide) | The Amazon Elastic VMware Service User Guide was released.<br />The Amazon EVS User Guide describes all Amazon EVS concepts and provides instructions on using the various features with both the console and the command line interface. | June 9, 2025 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

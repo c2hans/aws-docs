@@ -29,3 +29,7 @@ You are responsible for monitoring infrastructure resources that are provisioned
 Resources that you create using Developer mode can be managed by AMS Advanced only if they are created using AMS Advanced change management processes.
 
 Developer mode is one of the AMS Advanced modes you can employ. For more information, see [Modes overview](ams-modes-ug.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

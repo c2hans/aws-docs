@@ -18,3 +18,7 @@ Amazon Location Service is integrated with Amazon CloudWatch, AWS CloudTrail, an
 
 **Developer tools**
 Amazon Location Service offers a variety of tools for developers to build location-enabled applications. These include the standard AWS SDKs, mobile and web SDKs, and sample code to combine them with open source libraries such as MapLibre. Use the [Amazon Location Service console](https://console.aws.amazon.com/location/explore/home) to learn about resources, and to get started with a visual and interactive learning tool.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

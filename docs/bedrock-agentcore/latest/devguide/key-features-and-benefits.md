@@ -60,3 +60,7 @@ These features combine to provide significant benefits for organizations deployi
 +  **Simplified Development** : Declarative APIs and SDK integration reduce the complexity of implementing secure authentication in agent applications.
 +  **Enhanced Compliance** : Comprehensive audit trails and access controls support regulatory compliance requirements.
 +  **Operational Efficiency** : Automated credential refresh reduces operational overhead while improving security posture.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

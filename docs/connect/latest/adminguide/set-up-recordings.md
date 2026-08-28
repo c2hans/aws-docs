@@ -55,3 +55,7 @@ You only need to perform these steps for chat conversations if [enhanced contact
 1. Scroll down the page, choose **Enable Bot Analytics and Transcripts in Connect Customer**, and then choose **Save**.
 
 1. In the Connect Customer admin website, [assign security profile permissions](assign-permissions-to-review-recordings.md#assign-permissions-to-view-automated-recordings-transcripts) to managers so they can view details of the interaction with DTMF menus and Lex bots and/ or additional information about flows.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

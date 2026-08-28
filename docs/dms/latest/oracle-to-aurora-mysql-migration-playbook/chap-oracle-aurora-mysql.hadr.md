@@ -17,3 +17,7 @@ This section includes pages about Oracle and MySQL high availability and disaste
 + [Oracle Flashback Table and MySQL snapshots](chap-oracle-aurora-mysql.hadr.snapshots.md)
 + [Oracle Recovery Manager and Amazon RDS snapshots](chap-oracle-aurora-mysql.hadr.rman.md)
 + [Oracle SQL\*Loader and MySQL mysqlimport and LOAD DATA](chap-oracle-aurora-mysql.hadr.dump.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

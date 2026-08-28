@@ -26,3 +26,7 @@ This example shows statically adding multicast members to a group. Hosts cannot 
 1. Create an association between subnets in the transit gateway VPC attachment and the multicast domain. For more information see [Associating VPC attachments and subnets with a multicast domain in AWS Transit Gateway](associate-attachment-to-domain.md).
 
 1. Add the members to the multicast group. For more information, see [Register members with a multicast group in AWS Transit Gateway](add-members-multicast-group.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

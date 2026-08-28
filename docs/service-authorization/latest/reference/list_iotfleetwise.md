@@ -738,3 +738,7 @@ AWS IoT FleetWise defines the following condition keys that can be used in the `
 |   [iotfleetwise:Signals](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotfleetwise.html)  | Filters access by fully qualified signal names | ArrayOfString |
 |   [iotfleetwise:UpdateToDecoderManifestArn](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotfleetwise.html)  | Filters access by a list of IoT FleetWise Decoder Manifest ARNs | ARN |
 |   [iotfleetwise:UpdateToModelManifestArn](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsiotfleetwise.html)  | Filters access by a list of IoT FleetWise Model Manifest ARNs | ARN |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

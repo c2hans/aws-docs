@@ -20,3 +20,7 @@ Before you begin, confirm the following.
 + An existing VPC with at least two subnets in different Availability Zones for the Amazon EKS cluster.
 + The AWS CLI and `kubectl` configured with credentials that can deploy AWS CloudFormation stacks and access Amazon EKS.
 + Permission to create an Amazon S3 bucket (or use the solution’s default bucket) for snapshot storage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

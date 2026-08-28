@@ -73,3 +73,7 @@ When the AWS Glue crawler indexes the DynamoDB set data types (`StringSet`, `Num
 When you use Lambda data transformation to change JSON data to Parquet object, some fields might be missing after the transformation. It happens if your JSON object has capital letters and the case sensitivity is set to `false`, which can lead to a mismatch in JSON keys after data transformation causing missing data in the resulting Parquet object in the s3 bucket.
 
 To fix this, make sure the hose configuration has the `deserializationOption: case.insensitive` set to `true` so that the JSON keys matches after the transformation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

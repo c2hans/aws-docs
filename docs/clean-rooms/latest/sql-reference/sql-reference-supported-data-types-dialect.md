@@ -71,3 +71,7 @@ Structured types allow for complex data organization by combining multiple value
 | Map  | MAP<key,value> | MAP(key,value) | MAP<key,value> | Collection of key-value pairs Map types must contain elements of the same type  |
 | Struct  | STRUCT< field1: type1, field2: type2> |  OBJECT( field1 type1, field2 type2 ) | STRUCT< field1: type1, field2: type2 > | Structure with named fields of specified types Structured type syntax may vary slightly between implementations  |
 | Super  | SUPER  | Not supported | Not supported | Flexible type supporting all data types including complex types |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,3 +37,7 @@ For a detailed list of changes to the AWS Toolkit for JetBrains, see the [.chang
 | [AWS Toolkit for WebStorm now available](#doc-history) | The AWS Toolkit for WebStorm is now available. | October 23, 2019 |
 | [AWS Toolkit for IntelliJ now generally available](#doc-history) | The AWS Toolkit for IntelliJ is now generally available. The corresponding documentation has been refreshed accordingly. | March 27, 2019 |
 | [Initial release](#doc-history) | This is the initial release of the *AWS Toolkit for JetBrains User Guide*. The AWS Toolkit for PyCharm is now generally available. The AWS Toolkit for IntelliJ is still in Developer Preview. | November 27, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

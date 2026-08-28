@@ -17,3 +17,7 @@ Follow the steps in these tutorials to learn about Amazon Redshift features:
 | [Tutorial: Using spatial SQL functions with Amazon Redshift](spatial-tutorial.md) | In this tutorial, you query data using spatial functions. You use spatial functions to query geometry and geography data. |
 | [Tutorials for Amazon Redshift ML](tutorials_for_amazon_redshift_ml.md) | In these tutorials, you create and use machine learning models. |
 | [Tutorial: Creating roles and querying with RBAC](r_tutorial-RBAC.md) | In this tutorial, you use role-based access control (RBAC) to create and use permissions in a database you create. With RBAC, you can create roles with specific permissions, such as read-only or read-write permissions. You can then assign these roles to users to grant them the specified permissions. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

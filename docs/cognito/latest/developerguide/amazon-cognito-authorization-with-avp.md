@@ -149,3 +149,7 @@ Authorization with Verified Permissions for your apps, and the [attributes for a
 | --- |--- |--- |
 | Amazon Verified Permissions | Returns an Allow or Deny decision from analysis of a user pool JWT. | Access to application resources succeeds or fails based on Cedar policy evaluation. |
 | Amazon Cognito identity pools (attributes for access control) | Assigns [session tags](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_session-tags.html) to your user based on their attributes. IAM policy conditions can check tags Allow or Deny user access to AWS services. | A tagged session with temporary AWS credentials for an IAM role. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

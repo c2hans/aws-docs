@@ -14,3 +14,7 @@ The Server SDK integration enables your game server to communicate with the Amaz
 + [Integrate a game server with Amazon GameLift Servers](gamelift-sdk-server.md)
 + [Package a game server build for deployment](gamelift-build-intro.md)
 + [Game client/server interactions with Amazon GameLift Servers](gamelift-sdk-interactions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

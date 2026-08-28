@@ -18,3 +18,7 @@ Downloading an archive is a two-step process.
 1. Initiate a job of the `archive-retrieval` type. For more information, see [Initiate Job (POST jobs)](api-initiate-job-post.md).
 
 1. After the job is completed, download the archive data. For more information, see [Get Job Output (GET output)](api-job-output-get.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Glacier. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonglacier` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

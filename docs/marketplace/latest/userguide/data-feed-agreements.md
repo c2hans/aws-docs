@@ -40,3 +40,7 @@ The following table lists and describes the items in the data feed.
 | valid\_from | agreement\_id | proposer\_account\_id | acceptor\_account\_id | offer\_id | offer\_revision\_at\_acceptance | offer\_set\_id | start\_time | end\_time | acceptancet\_time | intent | preceding\_agreement\_id | status | status\_reason\_code | estimated\_agreement\_value | currency\_code |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2024-06-21 20:58:00.0 | agmt-34g544dfgsd5678adsrgwe5t | 88a3xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx | 88a3xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx | offer-krxxxxxxxxxxx | 1 | offerset-yricpu74oqox2 | 2024-06-21 20:58:00.0 | 2025-06-21 20:58:00.0 | 2024-06-21 20:58:00.0 | NEW |  | ACTIVE |  | 1,000 | USD |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

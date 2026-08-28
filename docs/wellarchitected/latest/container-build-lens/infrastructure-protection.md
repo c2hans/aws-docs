@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
  **Understand the lineage of your container image**
 
 Aside from reducing attack surface, it is also important to understand where your container images are coming from. If not building images from scratch, you should only run images from trusted registries that have been signed with a trusted signature to ensure integrity. Regarding signing images, it is recommended to utilize signed images to ensure that the contents of the container have not been modified before they are deployed. In general, don’t incorporate images directly from a public repository into your container pipeline. Private registries should be used to allow an organization to maintain complete control and visibility over their container image catalog. If using images originating from public repositories, they should be scanned, signed, and stored in a private registry to ensure that the contents of the image are known and verified against existing security standards.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

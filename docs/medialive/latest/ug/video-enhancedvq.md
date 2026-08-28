@@ -57,3 +57,7 @@ When the content is noisy, the filter cleans up the source content before the en
 + It decreases the bandwidth because MediaLive doesn't waste bits on encoding noise.
 
 When the content is reasonably clean, the filter tends to decrease the bitrate, especially when the rate control mode is QVBR.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

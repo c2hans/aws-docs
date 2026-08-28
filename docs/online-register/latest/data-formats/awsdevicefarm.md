@@ -51,3 +51,7 @@ AWS Device Farm provides the following APIs for data retrieval.
 | <a name="devicefarm-ListUniqueProblems"></a>[ListUniqueProblems](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListUniqueProblems.html) | List the information of unique problems within a run | List |
 | <a name="devicefarm-ListUploads"></a>[ListUploads](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListUploads.html) | List the information of uploads within a project | List |
 | <a name="devicefarm-ListVPCEConfigurations"></a>[ListVPCEConfigurations](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_ListVPCEConfigurations.html) | List the information of Amazon Virtual Private Cloud (VPC) endpoint configurations | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

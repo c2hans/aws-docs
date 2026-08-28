@@ -28,3 +28,7 @@ The following code examples show how to use AWS Marketplace Catalog API with AWS
 + [Publish one-time resale authorization and add whether it is a renewal](marketplace-catalog_example_marketplace-catalog_OnetimeResaleauthRenewal_section.md)
 + [Restrict resale authorization](marketplace-catalog_example_marketplace-catalog_RestrictResaleAuthorization_section.md)
 + [Update name and description of one-time or multi-use resale authorization](marketplace-catalog_example_marketplace-catalog_UpdateUnpublishedResaleAuthorization_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

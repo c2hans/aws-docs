@@ -49,3 +49,7 @@ Use questionnaire upload mode to submit an entire questionnaire at once. This mo
 
 **Note**
 You can submit questions in either mode at any time. For compliance questionnaires with many related questions, bulk upload is the recommended approach.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Artifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query artifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ The AWS IoT TwinMaker Flink library requires the following.
 For instructions on using the library, see the [AWS IoT TwinMaker Flink library user guide](https://github.com/aws-samples/aws-iot-twinmaker-samples/blob/main/src/modules/insights/iot-twinmaker-flink-library-guide.md).
 
 For instructions on setting up AWS IoT TwinMaker with the quick start in [AWS IoT TwinMaker samples](https://github.com/aws-samples/aws-iot-twinmaker-samples), see [README file for the sample insights application](https://github.com/aws-samples/aws-iot-twinmaker-samples/blob/main/src/modules/insights/README.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -105,3 +105,7 @@ The AWS Elastic Beanstalk service offers dual stack endpoints, so that you can s
 | Configuration templates | Each supported Region: 2,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/elasticbeanstalk/quotas/L-9838E43F)  | The maximum number of configuration templates that you can create in this account in the current Region. |
 | Custom platform versions | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/elasticbeanstalk/quotas/L-E593A077)  | The maximum number of custom platform versions that you can create in this account in the current Region. The limit applies across custom platforms, not per custom platform. |
 | Environments | Each supported Region: 200 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/elasticbeanstalk/quotas/L-8EFC1C51)  | The maximum number of environments that you can create in this account in the current Region. The limit applies across applications, not per application. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

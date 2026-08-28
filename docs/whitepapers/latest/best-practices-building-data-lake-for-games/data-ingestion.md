@@ -63,3 +63,7 @@ When streaming from a mobile device, you can use a ready software development ki
 <a name="other-sources"></a>
 
  Sometimes you might need data from other sources, such as operational databases. You can query them directly through services such as [Amazon Athena Federated Queries](https://docs.aws.amazon.com/athena/latest/ug/connect-to-a-data-source.html), or extract data and store it in your data lake using the [AWS Database Migration Service](https://aws.amazon.com/dms/) (AWS DMS). AWS DMS can be configured many ways. One is to offload data from your databases into your data lake on Amazon S3. This can be done in a number of ways that include full load, full load \+ change data capture (CDC), and CDC only. Refer to the [AWS Database Migration Service Documentation](https://docs.aws.amazon.com/dms/) for further details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

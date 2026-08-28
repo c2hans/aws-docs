@@ -99,3 +99,7 @@ When you modify any of the following parameters on a Client VPN endpoint, the co
 + [View endpoints](cvpn-working-endpoint-view.md)
 + [Modify an endpoint](cvpn-working-endpoint-modify.md)
 + [Delete an endpoint](cvpn-working-endpoint-delete.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

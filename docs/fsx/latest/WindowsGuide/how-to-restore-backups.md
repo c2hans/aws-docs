@@ -26,3 +26,7 @@ You can restore a file system backup to create new file system using the AWS Man
 1. Review the settings you chose for your Amazon FSx file system, and then choose **Create file system**.
 
    Amazon FSx is creating a new file system, and once its status changes to `AVAILABLE`, you can use the file system as normal.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

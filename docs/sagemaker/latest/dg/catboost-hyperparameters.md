@@ -33,3 +33,7 @@ By default, the SageMaker AI CatBoost algorithm automatically chooses an evaluat
 | random\_seed | The random seed used for training.<br />Valid values: integer, range: Non-negative integer.<br />Default value: `1.0`. |
 | thread\_count | The number of threads to use during the training. If `thread_count` is `-1`, then the number of threads is equal to the number of processor cores. `thread_count` cannot be `0`.<br />Valid values: integer, either: (`-1` or positive integer).<br />Default value: `-1`. |
 | verbose | The verbosity of print messages, with higher levels corresponding to more detailed print statements.<br />Valid values: integer, range: Positive integer.<br />Default value: `1`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

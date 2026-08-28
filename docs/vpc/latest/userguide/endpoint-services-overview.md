@@ -18,3 +18,7 @@ The following diagram shows common use cases for AWS PrivateLink. The VPC has se
 ![Diagram of VPC endpoints, endpoint services in other accounts, and partner services.](http://docs.aws.amazon.com/vpc/latest/userguide/images/use-cases.png)
 
 For more information, see [AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

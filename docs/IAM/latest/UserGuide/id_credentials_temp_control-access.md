@@ -17,3 +17,7 @@ The following topics assume you have a working knowledge of AWS permissions and 
 + [Disabling permissions for temporary security credentials](id_credentials_temp_control-access_disable-perms.md)
 + [Granting permissions to create temporary security credentials](id_credentials_temp_control-access_enable-create.md)
 + [Granting permissions to use identity-enhanced console sessions](id_credentials_temp_control-access_sts-setcontext.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

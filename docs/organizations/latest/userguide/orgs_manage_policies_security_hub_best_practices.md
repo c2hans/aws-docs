@@ -39,3 +39,7 @@ Implement regular monitoring practices to ensure your policies remain effective.
 <a name="troubleshooting-strategies"></a>
 
 When troubleshooting Security Hub policies, focus first on policy precedence and inheritance. Remember that disable configurations take precedence over enable configurations when regions appear in both lists. Check policy inheritance chains to understand how parent and child policies combine to create the effective policy for each account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ Similarly, create AWS Proton *pipeline roles* to allow AWS Proton to make API ca
 
 **Note**
 Because we don't know which resources you will define in your AWS Proton templates, the roles that you create using the console have broad permissions and can be used as both the AWS Proton pipeline service roles and the AWS Proton service roles. For production deployments, we recommend that you scope down the permissions to the specific resources that will be deployed by creating customized policies for both the AWS Proton pipeline service roles and the AWS Proton environment service roles. You can create and customize these roles by using the AWS CLI or IAM. For more information, see [Service roles for AWS Proton](security_iam_service-with-iam.md#security_iam_service-with-iam-roles-service) and [Create a service](ag-create-svc.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

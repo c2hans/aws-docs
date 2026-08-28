@@ -28,3 +28,7 @@ You can use Fleet Manager to view log data stored on your managed nodes. For Win
 1. Choose the button next to the event you want to view, and then select **View event details**.
 
 1. (Optional) Select **Copy as JSON** to copy the event details to your clipboard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

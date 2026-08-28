@@ -54,3 +54,7 @@ For any other required software, you can modify the test spec file to install fr
 |  Xcode 16  |  macos\_sequoia  |  `devicefarm-cli use xcode 16`  |
 
 The test host also includes commonly used supporting tools for each software version, such as the `pip` and `npm` package managers (included with Python and Node.js respectively) and dependencies (such as the Appium UIAutomator2 Driver) for tools like Appium. This ensures you have the tools needed to work with the supported test frameworks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

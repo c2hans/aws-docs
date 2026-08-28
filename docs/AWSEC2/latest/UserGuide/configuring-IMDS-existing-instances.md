@@ -339,3 +339,7 @@ This error is thrown when you attempt to modify an existing instance to be IMDSv
 If you require IMDSv1 support on existing instances, you'll need to disable IMDSv2 enforcement for the account in the Region. To disable IMDSv2 enforcement, set `HttpTokensEnforced` to `disabled`. For more information, see [ModifyInstanceMetadataDefaults](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_ModifyInstanceMetadataDefaults.html) in the Amazon EC2 API Reference. If you prefer to configure this setting using the console, see [Enforce IMDSv2 at the account level](configuring-IMDS-new-instances.md#enforce-imdsv2-at-the-account-level).
 
 We recommend that you use IMDSv2 only (`httpTokens=required`). For more information, see [Transition to using Instance Metadata Service Version 2](instance-metadata-transition-to-version-2.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

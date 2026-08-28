@@ -118,3 +118,7 @@ You can also choose **Actions** and then choose **Activate All** to activate Res
 Deactivating Reserved Instance and Savings Plans discount sharing can result in higher monthly bills
 The Savings Plans owner account must remain active in sharing preferences for discounts to apply to other accounts
 Group-based sharing might result in some underutilized commitments in Restricted mode
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

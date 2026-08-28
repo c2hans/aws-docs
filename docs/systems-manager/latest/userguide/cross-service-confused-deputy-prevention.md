@@ -94,3 +94,7 @@ Systems Manager Inventory, Explorer, and Compliance enable you to create a resou
 **Note**
 The ARN in the policy example enables the system to encrypt OpsData from all sources except AWS Security Hub CSPM. If you need to encrypt Security Hub CSPM data, for example if you use Explorer to collect Security Hub CSPM data, then you must attach an additional policy that specifies the following ARN:
 `"aws:SourceArn": "arn:aws:ssm:*:{{account-id}}:role/aws-service-role/opsdatasync.ssm.amazonaws.com/AWSServiceRoleForSystemsManagerOpsDataSync"`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

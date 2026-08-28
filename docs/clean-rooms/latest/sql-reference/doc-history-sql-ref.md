@@ -22,3 +22,7 @@ For notification about updates to this documentation, you can subscribe to the R
 | [Nested data type support](https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/nested-data-type.html) | AWS Clean Rooms now supports nested data types. | August 30, 2023 |
 | [SQL naming rules - update](https://docs.aws.amazon.com/clean-rooms/latest/sql-reference/sql-ref-naming.html) | Documentation-only change to clarify reserved column names.  | August 16, 2023 |
 | [General availability](#doc-history-sql-ref) | The AWS Clean Rooms SQL Reference is now generally available. | July 31, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

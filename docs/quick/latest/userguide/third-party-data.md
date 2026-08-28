@@ -25,3 +25,7 @@ You can use multiple third party data providers in research. The agent will dete
 + [Using third party data in Quick Research (S&P Global Market Intelligence)](spgi-market-intelligence.md)
 + [Using third party data in Quick Research (US Patents)](us-patents.md)
 + [Using third party data in Quick Research (PubMed)](pubmed.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

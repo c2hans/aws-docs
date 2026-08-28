@@ -22,3 +22,7 @@ PG\_PROC\_INFO shows the following columns in addition to the columns in PG\_PRO
 | proallargtypes | oid[ ]  | An array with the data types of the procedure arguments. This array includes all types of arguments (including OUT and INOUT arguments). However, if all the arguments are IN arguments, this field is NULL. Subscripting is one-based. In contrast, proargtypes is subscripted from zero. |
 
 The field proargnames in PG\_PROC\_INFO contains the names of all types of arguments (including OUT and INOUT), if any.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -139,3 +139,7 @@ To provide the right performance for your SQL instances, you can choose a throug
 The storage capacity determines not only how much data you can store, but also how many IOPS you can perform on the storage. Each gigabyte of storage provides 3 IOPS. You can provision each file system to be up to 64 TB in size.
 
 For information about configuring and using Amazon FSx to reduce the complexity and costs of your SQL Server high availability deployments, see [Simplify your Microsoft SQL Server high availability deployments using Amazon FSx for Windows File Server](https://aws.amazon.com/blogs/storage/simplify-your-microsoft-sql-server-high-availability-deployments-using-amazon-fsx-for-windows-file-server/) on the AWS Storage blog. To learn more about creating a new CA share, see the [Amazon FSx for Windows File Server documentation](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/managing-file-shares.html#create-ca-share).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

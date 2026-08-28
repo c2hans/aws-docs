@@ -21,3 +21,7 @@ For example, you are tracking a fleet of trucks and want to be notified when a t
 
 **Note**
 You're billed by the number of geofence collections you evaluate against. Your bill is not affected by the number of geofences in each collection. Since each geofence collection may contain up to 50,000 geofences, you may want to combine your geofences into fewer collections, where possible, to reduce your cost of geofence evaluations. The events generated will include the ID of the individual geofence in the collection, as well as the ID of the collection.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

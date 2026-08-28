@@ -38,3 +38,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works
 +  The **Savings Plans** ﬂexible pricing model oﬀers low prices on Amazon Elastic Compute Cloud (Amazon EC2), Amazon SageMaker AI, AWS Lambda, and AWS Fargate usage in exchange for a commitment to a consistent amount of usage (measured in $/hour) for a one or three-year term.
 +  The **Spot Instance** Amazon EC2 pricing mechanism lets you request spare computing capacity with no upfront commitment and at discounted hourly rate (up to 90 percent oﬀ the on-demand price).
 +  **Reservations** provide you with the ability to receive a greater discount (up to 75 percent) by paying for capacity ahead of time. For more details, see the [AWS Cost Optimization](aws-cost-optimization.md) section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

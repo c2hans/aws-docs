@@ -20,3 +20,7 @@ If you added channels from this workspace to the AWS Support App, you must first
 
 1. In the **Delete Slack workspace** dialog box, choose the Slack workspace name, and then choose **Delete**. You can add the workspace to your AWS account again later.
 ![Dialog box that you use to delete a Slack workspace in the AWS Support console.](http://docs.aws.amazon.com/awssupport/latest/user/images/supportapp/delete-workspace.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

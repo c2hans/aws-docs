@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 <a name="implementation-guidance-80"></a>
 
  If an existing team is tasked with cost optimization of AWS EUC services, train these individuals on the specifics of the EUC services so they can perform their duties. This includes training on the services, generic training on how a typical EUC environment (virtual or physical) operates, and specifically how to identify resource under- and over-provisioning.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

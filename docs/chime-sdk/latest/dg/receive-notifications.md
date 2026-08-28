@@ -36,3 +36,7 @@ App instance users can disable push notifications for a specific channel by call
 
 **Filtering push notifications for a channel**
 App Instance users can set a filter rule so they only receive specific push notifications using the [PutChannelMembershipPreferences](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_messaging-chime_PutChannelMembershipPreferences.html) API. For more information, refer to [Using filter rules to filter messages for Amazon Chime SDK messaging](filter-msgs.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

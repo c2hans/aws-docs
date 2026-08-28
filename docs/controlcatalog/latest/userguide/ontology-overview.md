@@ -23,3 +23,7 @@ AWS has developed a standard classification system to help classify, organize, a
 In summary, the AWS control catalog ontology contains seven layers. Three are hierarchical classification layers (Control domains, Control objectives, Common controls). Another layer (Standard controls) describes the regulatory or industry standard requirements. A mapping layer (Core control) describes a control outcome for a given resource type. Two layers (Control implementations, Control evidences) describe the specific control implementations and evidence sources.
 
 This ontology was designed by an AWS team of certified auditors, based on their experience working with hundreds of customers for compliance audits. The concepts of Control domains, Control objectives, Common controls, and Standard controls (L1-L4) are used industry-wide. They match common industry patterns and NIST recommendations. The remaining three layers (L5-L7) were designed based on existing AWS concepts, such as resource types and managed controls.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controlcatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

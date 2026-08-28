@@ -27,3 +27,7 @@ Before deleting a project, ensure that all important data and resources have bee
 Deleting a project is final and removes all resources and assets created in the project. This action cannot be undone by you or by AWS.
 
 The project and all associated resources are permanently removed from your Amazon SageMaker Unified Studio domain.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

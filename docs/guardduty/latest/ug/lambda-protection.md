@@ -28,3 +28,7 @@ Lambda Network Activity Monitoring doesn't include the logs for [Lambda@Edge fun
 When you enable Lambda Protection, GuardDuty monitors Lambda network activity logs that gets generated when a Lambda function, associated to your account, gets invoked. This helps you detect potential security threats to the Lambda function. For Lambda functions that are configured to use VPC networking, you don't need to enable VPC flow logs for the elastic network interfaces (ENI) created by Lambda for GuardDuty. GuardDuty only charges for the amount of Lambda network activity logs data processed (in GB) to generate a finding. GuardDuty optimizes cost by applying smart filters and analyzing a subset of Lambda network activity logs that are relevant to threat detection.
 
 GuardDuty doesn't manage your Lambda network activity logs (including VPC and non-VPC flow logs), or make them accessible in your account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

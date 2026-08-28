@@ -58,3 +58,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 <a name="summary"></a>
 
  The scenarios outlined in this section demonstrate that data residency architectures are not one-size-fits-all. Data residency encompasses a spectrum of considerations. Each scenario is presented to encourage customers to think beyond conventional solutions and help them navigate the complex landscape of regulatory compliance. By exploring these diverse scenarios, customers can use the full spectrum of AWS services within their Region and its continuum, aligning with regulatory demands while maximizing the benefits of AWS offerings.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

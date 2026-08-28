@@ -18,3 +18,7 @@ To monitor and control your usage and associated cost of using cross-Region data
 Depending on the usage limits you set, actions that Amazon Redshift takes can be to log an event to a system table, send a CloudWatch alarm and notify an administrator with an Amazon SNS, or to turn off cross-Region data sharing for further usage.
 
 To create usage limits in the Amazon Redshift console, choose **Configure usage limit** under **Actions** for your cluster. You can monitor your usage trends and get alerts on usage exceeding your defined limits with automatically generated CloudWatch metrics from the **Cluster performance** or **Monitoring** tabs. You can also create, modify, and delete usage limits programmatically by using the AWS CLI or Amazon Redshift API operations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

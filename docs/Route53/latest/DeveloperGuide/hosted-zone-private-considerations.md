@@ -104,3 +104,7 @@ If you want to route DNS queries between VPCs and your network, you can use VPC 
 
 **Required IAM permissions**
 To create private hosted zones, you need to grant IAM permissions for Amazon EC2 actions in addition to permissions for Route 53 actions. For more information, see [Actions, resources, and condition keys for Route 53](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53.html) in the *Service Authorization Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

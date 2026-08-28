@@ -32,3 +32,7 @@ To view the **Private offers** page in the AWS Marketplace console, you must hav
 + If you aren't using AWS managed policies: IAM action `aws-marketplace:ListPrivateListings`and `aws-marketplace:ViewSubscriptions`
 
 If you're unable to view the **Private offers** page, contact your administrator to set up the correct AWS Identity and Access Management (IAM) permissions. For more information about the necessary IAM permissions for AWS Marketplace, see [AWS managed policies for AWS Marketplace buyers](buyer-security-iam-awsmanpol.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

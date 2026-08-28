@@ -21,3 +21,7 @@ Dolby metadata is supported in the output only when the audio codec for the outp
 + [Setting up the profile or event using the web interface](dolby-metadata-setup.md)
 + [Output with the Dolby Digital codec](dolby-metadata-output-dolby-digital-codec.md)
 + [Output with Dolby Digital Plus (EC2, EAC3) codec](dolby-metadata-output-dolby-digital-plus-codec.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

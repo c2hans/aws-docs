@@ -62,3 +62,7 @@ You can also review the pull request for the feature development and iterate on 
 1. Review the changes made by Amazon Q Developer by following the commit link provided in the conversation. You can continue to provide additional feedback using the `/q` command for further iterations as needed.
 
 1. If you're satisfied with the updated code changes, you can merge the pull request or iterate on the code again with new feedback. For more information, see [Merge a pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/incorporating-changes-from-a-pull-request/merging-a-pull-request).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

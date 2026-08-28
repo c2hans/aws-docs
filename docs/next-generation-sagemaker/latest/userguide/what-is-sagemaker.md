@@ -106,3 +106,7 @@ You can view demos of Amazon SageMaker and get started by setting up a domain an
 <a name="get-started-setup"></a>
 
  To get started using Amazon SageMaker, go to [Setting up Amazon SageMaker](setting-up.md) in this guide to set up a domain and create a project. This domain setup and project creation is a prerequisite for all other tasks in Amazon SageMaker.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Sagemaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query next-generation-sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

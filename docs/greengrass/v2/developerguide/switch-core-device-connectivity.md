@@ -129,3 +129,7 @@ After the deployment completes, verify that the connectivity switch succeeded.
 The AWS IoT thing and core device record remain in the source account after the switch. To prevent future deployments from targeting the device, remove it from the source account's thing group.
 
 If the deployment status is not `SUCCEEDED`, check the Greengrass log at `{{/greengrass/v2}}/logs/greengrass.log` on the device for error details. For common error codes related to connectivity switch operations, see [Detailed deployment error codes](troubleshooting-deployment.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

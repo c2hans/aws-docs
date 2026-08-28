@@ -39,3 +39,7 @@ You can use Infrastructure Composer from the Toolkit for VS Code to bring Infras
 <a name="w2aac23c13c15"></a>
 
 To deploy your application, refer to [Use Infrastructure Composer with AWS SAM to build and deploy](other-services-cfn-sam-examples-example1.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

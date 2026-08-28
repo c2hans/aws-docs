@@ -346,3 +346,7 @@ To test your SAML configuration:
 For SAML assertion validation errors, access denied errors, and user not provisioned errors, you'll need to check the Microsoft Entra ID configuration in the admin portal as described in the Console tab.
 
 For more information about SAML federation with Microsoft Entra ID, see [Set up SAML-based single sign-on](https://learn.microsoft.com/en-us/entra/identity/enterprise-apps/add-application-portal-setup-sso) in the Microsoft Entra documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

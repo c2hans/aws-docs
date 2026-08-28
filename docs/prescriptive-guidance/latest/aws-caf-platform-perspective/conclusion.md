@@ -12,3 +12,7 @@ This guide serves as a playbook for the successful implementation and management
 + Support *data architecture* decisions with the tooling required for *data engineering* to drive data-driven decision making.
 + Pair these capabilities with modern application development strategies and CI/CD processes to promote agility, efficiency, and innovation within your organization.
 + Build cross-functional relationships and take inputs from other AWS CAF perspectives in your own decision-making to ensure the success of your platform and the teams behind it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

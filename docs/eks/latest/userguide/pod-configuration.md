@@ -118,3 +118,7 @@ When a Pod uses AWS credentials from an IAM role that’s associated with a serv
         ```
 
      1. If your Pods still can’t access services, review the [steps](associate-service-account-role.md#irsa-confirm-role-configuration) that are described in [Assign IAM roles to Kubernetes service accounts](associate-service-account-role.md) to confirm that your role and service account are configured properly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

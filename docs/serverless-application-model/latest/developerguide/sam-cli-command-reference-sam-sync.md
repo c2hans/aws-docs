@@ -175,3 +175,7 @@ You can provide this option multiple times in a single command.
 <a name="sam-cli-command-reference-sam-sync-examples"></a>
 
 For examples on using this command, refer to [Options for the sam sync command](using-sam-cli-sync.md#using-sam-cli-sync-options).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

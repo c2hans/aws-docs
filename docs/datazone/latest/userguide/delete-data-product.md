@@ -22,3 +22,7 @@ To delete a data product complete the following steps.
 Deleting a data product has the following effects:
 The data product will no longer be available to publish, view, or subscribe.
 Any data assets that are only available through this data product will no longer be visible in the data catalog. They will not be deleted from your inventory assets.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

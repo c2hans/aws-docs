@@ -56,3 +56,7 @@ Static websites don’t require you to maintain servers, and no ongoing maintena
 <a name="can-i-customize-my-website-once-it-is-hosted-on-aws"></a>
 
 Yes. Once you website is up and running, there are multiple ways you can add additional AWS services and functionality to your site. For example, you can add authentication to your website enabling users to log into your website with AWS Amplify and evolve it into a static web application with cloud functionality.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

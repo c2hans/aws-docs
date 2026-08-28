@@ -38,3 +38,7 @@ To modify your CDBs or PDBs, complete the following steps:
 <a name="custom-managing.cdb-root"></a>
 
 RDS Custom keeps the CDB root open in the same way as it keeps a non-CDB open. If the state of the CDB root changes, the monitoring and recovery automation attempts to recover the CDB root to the desired state. You receive RDS event notifications when the root CDB is shut down (`RDS-EVENT-0004`) or restarted (`RDS-EVENT-0006`), similar to the non-CDB architecture. RDS Custom attempts to open all PDBs in `READ WRITE` mode at DB instance startup. If some PDBs can't be opened, RDS Custom publishes the following event: `tenant database shutdown`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

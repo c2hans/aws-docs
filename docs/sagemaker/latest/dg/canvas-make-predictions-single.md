@@ -89,3 +89,7 @@ To make a single prediction for a multi-category text prediction model, do the f
 1. Choose **Generate prediction results** to get your prediction.
 
 In the right **Prediction results** pane, you receive an analysis of your text in addition to a **Confidence** score for each possible label. For example, if you entered a good review for a product, you might get **Positive** with a confidence score of 85%, while the confidence score for **Neutral** might be 10% and the confidence score for **Negative** only 5%.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

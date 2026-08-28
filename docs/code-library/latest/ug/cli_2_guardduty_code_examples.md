@@ -774,3 +774,7 @@ aws guardduty update-ip-set \
 This command produces no output.
 For more information, see [Working with Trusted IP Lists and Threat Lists](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_upload_lists.html) in the *GuardDuty User Guide*.
 +  For API details, see [UpdateIpSet](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/guardduty/update-ip-set.html) in *AWS CLI Command Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

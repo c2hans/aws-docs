@@ -25,3 +25,7 @@ Projects organize related assets within the library. Create a project before upl
 Your project is now ready to receive assets.
 
 ![Create project wizard](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/create-project-define-step.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

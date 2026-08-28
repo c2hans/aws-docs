@@ -56,3 +56,7 @@ To view the start and end dates for Aurora standard support and RDS Extended Sup
 If RDS Extended Support is available for an engine version, then the response includes the parameter `SupportedEngineLifeCycles` as an array with two objects. One object includes the start and end dates for Aurora standard support. The second object includes the start and end dates for RDS Extended Support.
 
 If RDS Extended Support isn't available for an engine version, then the response only includes the parameter `SupportedEngineLifeCycles` as an array with a single object. This object includes the start and end dates for Aurora standard support.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,3 +28,7 @@ To help navigate and resolve these issues, you can do the following:
 + Filter by dataset using the drop-down menu
 + Download a detailed report containing all validation failures
 + View **Records affected** for each validation to understand the scope of the issue
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

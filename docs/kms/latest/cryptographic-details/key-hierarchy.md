@@ -29,3 +29,7 @@ The key hierarchy and the specific key properties appear in the following table.
 1 AWS KMS might from time to time relax domain key rotation to at most weekly to account for domain administration and configuration tasks.
 
 2 Default AWS managed keys created and managed by AWS KMS on your behalf are automatically rotated annually.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

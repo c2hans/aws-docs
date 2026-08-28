@@ -24,3 +24,7 @@ Depending on the scenario, there are three possibilities for the font style for 
 | An Embedded Combination (Embedded, Embedded\+SCTE-20, SCTE-20\+Embedded) | CCF-TT or TTML | The font information in the source can be copied to the output, or you can let the downstream player determine the font style.  |
 | Teletext or SMPTE-TT or TTML or CCF-TT | CCF-TT or TTML | The font information in the source can be copied to the output, or you can let the downstream player determine the font style. |
 | Any Other | Any Other | No control: the font style is always determined by the downstream player.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

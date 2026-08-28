@@ -32,3 +32,7 @@ The following steps guide you through configuring a core network for a policy ve
 An attachment can be associated only with a segment or a network functions group, but not both. You can't associate an attachment to a network functions group if that attachment is already associated with a segment.
 
 1. Once you've created the network function group, you can create a service insertion segment action that routes your network functions from source segments to destination segments using this network function group. For more information on creating a segment action, see "Service insertion" in [Add segment actions in an AWS Cloud WAN core network policy version](cloudwan-policy-network-actions-routes.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

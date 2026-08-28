@@ -72,3 +72,7 @@ To view the the AWS Health dashboard, you must use the role **x\_126749\_aws\_sc
 1. Navigate to **AWS Health** system properties, and enable automatic creation for health event types.
 
 1. Generate new health events, and then sync AWS Health.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

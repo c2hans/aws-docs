@@ -20,3 +20,7 @@ In the Teradici PCoIP Administrative Web Interface (AWI) or the Teradici PCoIP M
 Starting with version 20.10.4 of the PCoIP agent, Amazon WorkSpaces disables USB redirection by default through the Windows registry. This registry setting affects the behavior of USB peripherals when your users are using PCoIP zero client devices to connect to their WorkSpaces. For more information, see [USB printers and other USB peripherals aren't working for PCoIP zero clients](amazon-workspaces-troubleshooting.md#pcoip_zero_client_usb).
 
 For information about setting up and connecting with a PCoIP zero client device, see [PCoIP Zero Client](https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-pcoip-zero-client.html) in the *Amazon WorkSpaces User Guide*. For a list of approved PCoIP zero client devices, see [PCoIP Zero Clients](https://www.teradici.com/resource-center/product-service-finder/pcoip-zero-clients) on the Teradici website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

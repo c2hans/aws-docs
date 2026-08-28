@@ -81,3 +81,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
  **Normalized IP request rate**
 
  One of the primary components that can impact the suspicion score for all the sessions is **Request IP rate** as this component value is not bounded and is relative to the median value calculated for all the session in the analyzed score. Because the calculation of this metric strongly depends on the normalization factor, it is important that this factor is stable and cannot be easily distorted by a few sessions that have been compromised, even to a large extent. To achieve the desired stability and prevent fluctuation of that factor in the presence of one or few sessions which have been compromised on a significant scale, 50th percentile (p50) measure is used instead of the average as a normalization factor.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

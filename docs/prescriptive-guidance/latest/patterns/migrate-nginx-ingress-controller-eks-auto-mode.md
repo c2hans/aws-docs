@@ -107,3 +107,7 @@ The diagram shows the following workflow to set up an environment for a blue/gre
 + [Enable EKS Auto Mode on an existing cluster](https://docs.aws.amazon.com/eks/latest/userguide/auto-enable-existing.html) (Amazon EKS documentation)
 + [Troubleshoot load balancers created by the Kubernetes service controller in Amazon EKS](https://repost.aws/knowledge-center/eks-load-balancers-troubleshooting) (AWS re:Post Knowledge Center)
 + [NGINX Ingress Controller](https://docs.nginx.com/nginx-ingress-controller/) (NGINX documentation)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

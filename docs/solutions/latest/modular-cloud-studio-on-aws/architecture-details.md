@@ -36,3 +36,7 @@ This section describes the components and AWS services that make up this solutio
 |  [Amazon FSx for Windows File Server](https://aws.amazon.com/fsx/windows/)  |  **Optional**. Used to deploy a fully managed shared file system built on Windows Server. |
 |  [Amazon FSx for Lustre](https://aws.amazon.com/fsx/lustre/)  |  **Optional**. Used to deploy a fully managed shared file system built on Lustre. |
 |  [AWS Step Functions](https://aws.amazon.com/step-functions/)  |  **Optional**. Used to register and deregister MCS Third-Party Modules. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

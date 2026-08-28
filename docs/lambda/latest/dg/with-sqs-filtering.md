@@ -197,3 +197,7 @@ To avoid this issue, ensure that the format of body in your `FilterCriteria` mat
 | Valid JSON | Plain string | Lambda drops the message. |
 | Valid JSON | No filter pattern for data properties | Lambda filters (on the other metadata properties only) based on your filter criteria. |
 | Valid JSON | Valid JSON | Lambda filters based on your filter criteria. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

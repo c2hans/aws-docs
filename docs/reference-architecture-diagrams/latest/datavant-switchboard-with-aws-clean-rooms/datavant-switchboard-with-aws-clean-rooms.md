@@ -1,0 +1,51 @@
+---
+source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/datavant-switchboard-with-aws-clean-rooms/datavant-switchboard-with-aws-clean-rooms.html
+---
+
+# Datavant Switchboard with AWS Clean Rooms
+<a name="datavant-switchboard-with-aws-clean-rooms"></a>
+
+Publication date: **January 24, 2024 ([Diagram history](#diagram-history))**
+
+Datavant’s data de-identification and tokenization tools enable healthcare and life sciences companies to replace their private patient information with an encrypted “token” that can’t be reverse-engineered to reveal sensitive information. These companies can leverage AWS Clean Rooms with collaborators to securely analyze and gain new insights from their collective datasets without sharing, copying, or moving one another’s underlying data outside of AWS.
+
+## Datavant Switchboard with AWS Clean Rooms Diagram
+<a name="diagram1"></a>
+
+![Reference architecture diagram showing how Datavant’s data de-identification and tokenization tools enable healthcare and life sciences companies to replace their private patient information with an encrypted “token” that can’t be reverse-engineered to reveal sensitive information. These companies can leverage AWS Clean Rooms with collaborators to securely analyze and gain new insights from their collective datasets without sharing, copying, or moving one another’s underlying data outside of AWS.](http://docs.aws.amazon.com/reference-architecture-diagrams/latest/datavant-switchboard-with-aws-clean-rooms/images/datavant-switchboard-with-aws-clean-rooms.png)
+
+1.  De-identify and tokenize data in an **Amazon Simple Storage Service** (Amazon S3) bucket by using Datavant Switchboard. Deploy the container through supported methods, including **AWS Fargate**, **Amazon Elastic Kubernetes Service** (Amazon EKS) and **Amazon Elastic Container Service** (Amazon ECS).
+
+1.  Link tokenized data with fellow collaborators through Datavant Switchboard and store the output in an **Amazon S3** bucket.
+
+1.  Leverage **AWS Glue crawler** to crawl linked, tokenized data. Prepare the data source for collaboration with **AWS Glue Data Catalog**.
+
+1.  The collaboration creator initiates **AWS Clean Rooms** and invites the member to the collaboration. Analysis rules are agreed upon and implemented. Members associate configured tables from **Data Catalog** and give **AWS Clean Rooms** service role to access their **AWS Glue** tables.
+
+1.  The member who can query leverages AGGREGATE and LIST functions across tables in the collaboration. Results can be exported to **Amazon S3** for the member who can receive query results
+
+1.  The member who can receive query results can leverage analytics services, including **Amazon Redshift**, **Amazon Athena**, **Amazon EMR**, **Amazon SageMaker AI**, and more to derive insights from newly enriched data sets.
+
+## Further reading
+<a name="further-reading"></a>
+
+ For additional information, refer to
++ [AWS Architecture Icons](https://aws.amazon.com/architecture/icons)
++ [AWS Architecture Center](https://aws.amazon.com/architecture)
++  [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected)
+
+## Diagram history
+<a name="diagram-history"></a>
+
+To be notified about updates to this reference architecture diagram, subscribe to the RSS feed.
+
+| Change | Description | Date |
+| --- |--- |--- |
+| [Initial publication](#diagram-history) | Reference architecture diagram first published. | January 24, 2024 |
+
+**Note**
+To subscribe to RSS updates, you must have an RSS plugin enabled for the browser you are using.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Reference Architecture Diagrams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query reference-architecture-diagrams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,3 +40,7 @@ Publication date: **January 15, 2021** ([Document history and contributors](docu
 +  A deep dive on Amazon Redshift and its differentiating features
 +  A blueprint for building a complete data warehousing system on AWS with Amazon Redshift and other AWS services
 +  Practical tips for migrating from other data warehousing solutions and tapping into our partner ecosystem
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -225,17 +225,17 @@ These ports must be allowed in the security groups attached to both the target i
 
 **Replication server package repository access**
 
-MGN replication servers require iSCSI initiator and multipath packages to replicate data to FSx for ONTAP. These packages are installed automatically using `yum` from the Amazon Linux 2 package repository.
+MGN replication servers require iSCSI initiator and multipath packages to replicate data to FSx for ONTAP. These packages are installed automatically using `yum` from the Amazon Linux 2023 (AL2023) package repository.
 + **Connected subnets (internet via NAT or internet gateway)**: Allowlist the following URLs in your firewall or DNS rules:
 
   ```
   https://cdn.amazonlinux.com/
-  https://amazonlinux-2-repos-<region>.s3.<region>.amazonaws.com/
+  https://al2023-repos-<region>-de612dc2.s3.dualstack.<region>.amazonaws.com/
   ```
 + **Isolated subnets (Amazon S3 VPC gateway endpoint only)**: Add the following resource ARN to the endpoint policy:
 
   ```
-  "arn:aws:s3:::amazonlinux-2-repos-<region>/*"
+  "arn:aws:s3:::al2023-repos-<region>-de612dc2/*"
   ```
 
 If neither option is available, you must pre-install the packages on the source server before migration. For the required packages by operating system, see [Step 6: Configure launch template and launch settings](fsx-ontap.md#fsx-ontap-step6-launch-settings).
@@ -315,3 +315,7 @@ These instructions are intended for the default OS firewall and allow outbound c
    target     prot opt source               destination
    ACCEPT     tcp  --  anywhere             anywhere             tcp dpt:443
    ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

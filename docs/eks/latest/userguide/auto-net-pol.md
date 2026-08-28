@@ -290,3 +290,7 @@ The network policy capabilities supported in EKS are evaluated in a specific ord
 <a name="_interaction_with_amazon_route_53_dns_firewall"></a>
 
 EKS Admin and Network policies are evaluated first at the pod level when traffic is initiated. If an EKS network policy allows egress to a specific domain, the pod then performs a DNS query that reaches the Route 53 Resolver. At this point, Route 53 DNS Firewall rules are evaluated. If DNS Firewall blocks the domain query, DNS resolution fails and the connection cannot be established, even though the EKS network policy allowed it. This creates complementary security layers: EKS DNS-based network policies provide pod-level egress control for application-specific access requirements and multi-tenant security boundaries, while DNS Firewall provides VPC-wide protection against known malicious domains and enforces organization-wide blocklists.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

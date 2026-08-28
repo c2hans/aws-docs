@@ -96,14 +96,14 @@ aws connect start-contact-conversational-analytics-job \
   --contact-id "{{contact-id}}" \
   --region "{{region}}" \
   --cli-input-json '{
-    "ContactId": "{{contact-id}}",
-    "InstanceId": "{{instance-id}}",
     "AnalyticsModes": ["PostContact"],
-    "LanguageConfiguration": { "LanguageLocale": "en-US" },
-    "RedactionConfiguration": { "Behavior": "Enable", "Policy": "RedactedAndOriginal" },
-    "SentimentConfiguration": { "Behavior": "Enable" },
-    "SummaryConfiguration": { "SummaryModes": ["PostContact"] },
-    "RulesConfiguration": { "Behavior": "Enable" }
+    "AnalyticsConfiguration": {
+      "LanguageConfiguration": { "LanguageLocale": "en-US" },
+      "RedactionConfiguration": { "Behavior": "Enable", "Policy": "RedactedAndOriginal" },
+      "SentimentConfiguration": { "Behavior": "Enable" },
+      "SummaryConfiguration": { "SummaryModes": ["PostContact"] },
+      "RulesConfiguration": { "Behavior": "Enable" }
+    }
   }'
 ```
 
@@ -120,3 +120,7 @@ Notes:
 + Analysis runs asynchronously. Results are delivered to your Connect Customer-configured Amazon S3 bucket.
 + `ContactId` is used as the job identifier — duplicate analysis jobs on the same contact are not allowed.
 + Subscribe to EventBridge to receive notifications when analysis fails. Successful completion is indicated by the conversational analytics output file being delivered to your configured Amazon S3 bucket. For more information, see [Error notifications: When conversational analytics can't analyze a contact](contact-lens-error-notifications.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

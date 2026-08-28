@@ -336,3 +336,7 @@ Mistakes in configuration files can lead to failed deployments or runtime errors
 +  **Document** - Keep detailed notes on the changes made, including the rationale behind the modifications, to simplify troubleshooting and rollback if needed.
 
 By maintaining a clear separation between default and custom configurations and using S3 bucket versioning, you can safely and effectively update your Prebid Server setup. Always test thoroughly and document changes to ensure smooth deployments and easy recovery from any configuration issues.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying a Prebid Server on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

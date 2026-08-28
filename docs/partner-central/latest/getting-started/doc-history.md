@@ -28,3 +28,7 @@ The following table describes the documentation releases for AWS Partner Central
 | [Added managed policy](#doc-history) | Added the `AWSPartnerCentralSandboxFullAccess` AWS managed policy. For more information, see [AWS managed policy: `AWSPartnerCentralSandboxFullAccess`](https://docs.aws.amazon.com/partner-central/latest/getting-started/managed-policies.html#security-iam-awsmanpol-AWSPartnerCentralSandboxFullAccess). | November 14, 2024 |
 | [Clarification](#doc-history) | Updated linking accounts prerequisites for clarity. | June 5, 2024 |
 | [First release](#doc-history) | First release of the AWS Partner Central Getting Started Guide. | November 10, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

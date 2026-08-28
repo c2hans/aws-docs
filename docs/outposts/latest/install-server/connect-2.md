@@ -55,3 +55,7 @@ The following image shows the end of the cable with the 4 breakout cables:
 Both of the following cables are required for an Outposts server to function.
 Use the cable labeled 1 for LNI link traffic.
 Use the cable labeled 2 for service link traffic.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

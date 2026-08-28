@@ -204,3 +204,7 @@ The `lambdaInvoke` step type can appear in multi-step triggers alongside other s
 |  `payload.fields`  | No | Array of field names to include in the payload (publish mode only). If omitted, all mapped fields are included. |
 |  `output`  | No | Output routing configuration. When present, switches to derive mode. See [Output routing](connector-configuration.md#output-routing). |
 |  `securityConfig`  | No | Step-level security config that overrides the connector-level config. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,3 +49,7 @@ When using AWS KMS and creating key policies, consider the following encryption 
 + [Multi-Region keys](https://docs.aws.amazon.com/kms/latest/developerguide/multi-region-keys-auth.html) are recommended for specific scenarios, such as compliance, disaster recovery, or backups. The security properties of multi-Region keys are significantly different than single-Region keys. The following recommendations apply when authorizing the creation, management, and use of multi-Region keys:
   + Allow principals to replicate a multi-Region key only into AWS Regions that require them.
   + Give permission for multi-Region keys only to principals who need them and only for tasks that require them.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

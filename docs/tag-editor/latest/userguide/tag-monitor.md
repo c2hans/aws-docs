@@ -67,3 +67,7 @@ By using EventBridge, you can create rules that match specific event patterns ba
 <a name="lambda-and-serverless"></a>
 
 AWS Lambda follows the serverless paradigm to run code in the cloud. You run code only when it’s needed, without thinking about servers. You pay only for the exact compute time you use. Even though it’s called *serverless*, it doesn’t mean that there are no servers. Serverless in this context means that you don’t have to provision, configure, or manage the servers that are used to run your code. AWS does all of that for you, so you can focus on your code. For more information about Lambda, see the [AWS Lambda Product Overview](https://aws.amazon.com/lambda).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Tagging and Tag Editor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tag-editor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

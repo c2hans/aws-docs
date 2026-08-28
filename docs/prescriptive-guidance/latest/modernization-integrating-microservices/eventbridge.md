@@ -23,3 +23,7 @@ Use EventBridge when:
 
 Consider other services in situations where:
 + You require strict ordering of events. In these cases, consider Amazon SQS FIFO queues or Amazon SNS FIFO topics. Alternatively, consider event stream services such as Amazon Kinesis Data Streams or Amazon Managed Streaming for Apache Kafka (Amazon MSK).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

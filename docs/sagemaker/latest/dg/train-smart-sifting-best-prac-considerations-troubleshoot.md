@@ -16,3 +16,7 @@ Use the following reference of exceptions raised by the SageMaker smart sifting 
 | SiftConfigValidationException | Thrown from the SageMaker smart sifting library in case of any missing Config key or unsupported value type for Sift Key |
 | UnsupportedDataFormatException | Thrown from the SageMaker smart sifting library in case of any unsupported DataFormat for Sifting logic |
 | LossImplementationNotProvidedException | Thrown in case of missing or not implementing Loss interface |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

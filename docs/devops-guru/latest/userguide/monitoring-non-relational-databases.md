@@ -27,3 +27,7 @@ The table below shows example scenarios and insights that DevOps Guru monitors 
 | Scenario that DevOps Guru identifies | CloudWatch metrics monitored |
 | --- | --- |
 | Detect when an Amazon ElastiCache cluster is reaching its compute limit for Redis or Memcached due to changing demands on your clusters. | CPUUtilization, EngineCPUUtilization, Evictions |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

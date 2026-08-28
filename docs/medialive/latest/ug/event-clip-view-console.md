@@ -40,3 +40,7 @@ One panel appears for each Elemental Inference feature that you have enabled in 
 <a name="event-clip-inference-view-cli"></a>
 
 To view information using an AWS API, use the `GetFeed` operation of Elemental Inference. For more information, see [ GetFeed](https://docs.aws.amazon.com/elemental-inference/latest/APIReference/API_GetFeed) in the *AWS Elemental Inference API Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

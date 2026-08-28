@@ -12,3 +12,7 @@ You can update your assets, asset models, component models, and interfaces in AW
 + [Update asset models, component models, and interfaces](update-asset-models.md)
 + [Update custom composite models (components)](update-custom-composite-models.md)
 + [Optimistic locking for asset model writes](opt-locking-for-model.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

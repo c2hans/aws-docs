@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/ops
 + [OPS05-BP08 Use multiple environments](ops_dev_integ_multi_env.md)
 + [OPS05-BP09 Make frequent, small, reversible changes](ops_dev_integ_freq_sm_rev_chg.md)
 + [OPS05-BP10 Fully automate integration and deployment](ops_dev_integ_auto_integ_deploy.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

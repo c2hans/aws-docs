@@ -55,3 +55,7 @@ You can use hybrid access mode to provide access in single account and cross-acc
 + [Removing principals and resources from hybrid access mode](delete-hybrid-access.md)
 + [Viewing principals and resources in hybrid access mode](view-hybrid-access.md)
 + [Additional resources](additional-resources-hybrid.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

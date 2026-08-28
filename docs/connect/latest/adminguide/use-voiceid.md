@@ -66,3 +66,7 @@ The previous images show that the **Fraud risk** can be **High** or **Low**, ind
 When an enrolled customer calls your contact center, Voice ID might return a result of **Inconclusive**: Voice ID was unable to analyze a caller's speech for authentication. This is usually because Voice ID did not get the required 10 seconds to provide a result for verification.
 
 ![Authentication status Inconclusive.](http://docs.aws.amazon.com/connect/latest/adminguide/images/voiceid-ccp-inconclusive.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

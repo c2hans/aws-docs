@@ -17,3 +17,7 @@ The following table lists the acronyms and terms used in a CRM integration.
 | AWS IAM  | AWS Identity and Access Management  | A web service that helps to securely control access to AWS resources by enabling the creation and management of AWS users, groups, and permissions.  |
 | ISV  | Independent Software Vendor  | A company that specializes in creating and selling software, typically designed for mass or niche markets. This is in contrast to in-house software created by a user organization for its own use.  |
 | PDM  | Partner Development Manager  | A role in the AWS Partner Network, responsible for improving relationships with AWS Partners, helping them grow and improve their offerings on AWS.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

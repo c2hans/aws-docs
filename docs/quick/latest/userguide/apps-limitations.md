@@ -51,3 +51,7 @@ For detailed information about sandbox restrictions, see [Sandbox restrictions](
 + **No direct link navigation** — Users must use Cmd\+Click or Ctrl\+Click.
 + **No external images** — CSP blocks loading images from external URLs.
 + **No built-in app analytics** — As a workaround, you can ask the agent to implement a view counter using shared app storage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

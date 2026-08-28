@@ -67,3 +67,7 @@ If you are using DSBulk 1.6.0 or higher, you can use `dsbulk.engine.maxConcurren
       + *`batch-mode`* – This parameter tells the system to group operations by partition key. We recommend to disable batch mode, because it can result in hot key scenarios and cause `WriteThrottleEvents`.
       + *`driver.advanced.retry-policy-max-retries`* – This determines how many times to retry a failed query. If unset, the default is 10. You can adjust this value as needed.
       + *`driver.basic.request.timeout`* – The time in minutes the system waits for a query to return. If unset, the default is "5 minutes". You can adjust this value as needed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

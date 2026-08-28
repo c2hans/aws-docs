@@ -38,3 +38,7 @@ To learn more about the Do Not Track standard, see the following resources:
 + [Mozilla Developer Network: The Do Not Track Field Guide](https://developer.mozilla.org/en-US/docs/Web/Security/Do_not_track_field_guide)
 + [Mozilla Developer Network: Navigator.doNotTrack](https://developer.mozilla.org/en-US/docs/Web/API/navigator.doNotTrack)
 + [Do Not Track: Universal Web Tracking Opt Out](http://donottrack.us/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Silk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query silk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

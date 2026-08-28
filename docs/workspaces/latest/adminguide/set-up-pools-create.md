@@ -49,3 +49,7 @@ The size of your pool is limited by the minimum and maximum capacity that you sp
 1. On the **Select directory page**, choose the directory that you created. To create a directory, choose **Create directory**. For more information, see [Manage directories for WorkSpaces Pools](manage-workspaces-pools-directory.md).
 
 1. Choose **Create WorkSpace Pool**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -168,3 +168,7 @@ For additional information about AWS DMS data types, see [Data types for AWS Dat
 | BLOB | If the length is from 1 through 65,535, then use BLOB.<br />If the length is from 65,536 through 2,147,483,647, then use LONGBLOB.<br />If the length is 0, then use LONGBLOB (full LOB support). |
 | NCLOB | If the length is from 1 through 65,535, then use TEXT.<br />If the length is from 65,536 through 2,147,483,647, then use LONGTEXT with ucs2 for CHARACTER SET.<br />If the length is 0, then use LONGTEXT (full LOB support) with ucs2 for CHARACTER SET. |
 | CLOB | If the length is from 1 through 65,535, then use TEXT.<br />If the length is from 65,536 through 2147483647, then use LONGTEXT.<br />If the length is 0, then use LONGTEXT (full LOB support). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -91,3 +91,7 @@ If you want to allow all execution roles that begin with a particular prefix, su
 
 **Note**
 With Amazon EMR on EKS, you can't grant permissions to execution roles based on tags or attributes. Amazon EMR on EKS doesn't support tag-based access control (TBAC) or attribute-based access control (ABAC) for execution roles.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

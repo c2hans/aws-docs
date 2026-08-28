@@ -30,7 +30,7 @@ For more information, see [Amazon EC2 Pricing](https://aws.amazon.com/ec2/pricin
 
 Billing starts as soon as the Capacity Reservation is provisioned in your account, and it continues while the Capacity Reservation remains provisioned in your account. For future-dated Capacity Reservations, this means that billing starts only after the Capacity Reservation is provisioned in your account at the requested future date.
 
-Capacity Reservations are billed at per-second granularity. This means that you are charged for partial hours. For example, if a Capacity Reservation remains provisioned in your account for `24` hours and `15` minutes, you are billed for `24.25` reservation hours.
+Capacity Reservations are billed at per-second granularity, with a minimum of 60 seconds. This means that you are charged for partial hours. For example, if a Capacity Reservation remains provisioned in your account for `24` hours and `15` minutes, you are billed for `24.25` reservation hours.
 
 The following example shows how a Capacity Reservation is billed. The Capacity Reservation is created for one `m4.large` Linux instance, which has an On-Demand rate of $0.10 per usage hour. In this example, the Capacity Reservation is provisioned in the account for five hours. The Capacity Reservation is unused for the first hour, so it is billed for one unused hour at the `m4.large` instance type's standard On-Demand rate. In hours two through five, the Capacity Reservation is occupied by an `m4.large` instance. During this time, the Capacity Reservation accrues no charges, and the account is instead billed for the `m4.large` instance occupying it. In the sixth hour, the Capacity Reservation is canceled and the `m4.large` instance runs normally outside of the reserved capacity. For that hour, it is charged at the On-Demand rate of the `m4.large` instance type.
 
@@ -76,3 +76,7 @@ You can review the charges and fees to your account on the AWS Billing and Cost 
 + On the **Bills** page, under **Details**, expand the **Elastic Compute Cloud** section and the Region to get billing information about your Capacity Reservations.
 
 You can view the charges online, or you can download a CSV file. For more information, see [Capacity Reservation line items](https://docs.aws.amazon.com/cur/latest/userguide/monitor-ondemand-reservations.html#capacity-reservation-li).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

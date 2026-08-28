@@ -41,3 +41,7 @@ Whether you have nodes in multiple accounts and Regions in an organization, or n
 For more information about setting up your nodes for Systems Manager, see [Setting up managed nodes for AWS Systems Manager](systems-manager-setting-up-nodes.md). After you've set up your nodes, you can set up Systems Manager and the unified console. To learn more about setting up Systems Manager, see [Setting up AWS Systems Manager](systems-manager-setting-up-console.md).
 
 See also [Supported operating systems and machine types](operating-systems-and-machine-types.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

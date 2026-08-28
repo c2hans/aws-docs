@@ -10,3 +10,7 @@ You can delete an Amazon FSx for Lustre file system using the Amazon FSx console
 To delete a file system after unmounting from every Amazon EC2 instance:
 + **Using the console** – Follow the procedure described in [Step 5: Clean up resources](getting-started.md#getting-started-step4).
 + **Using the API or CLI** – Use the the [DeleteFileSystem](https://docs.aws.amazon.com/fsx/latest/APIReference/API_DeleteFileSystem.html) API operation or the [delete-file-system](https://docs.aws.amazon.com/cli/latest/reference/fsx/delete-file-system.html) CLI command.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

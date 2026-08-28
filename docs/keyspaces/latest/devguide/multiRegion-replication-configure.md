@@ -23,3 +23,7 @@ For more information about supported configurations and features, see [Amazon Ke
 + [View the provisioned capacity and auto scaling settings for a multi-Region table in Amazon Keyspaces](tables-mrr-view.md)
 + [Turn off auto scaling for a table in Amazon Keyspaces](tables-mrr-autoscaling-off.md)
 + [Set the provisioned capacity of a multi-Region table manually in Amazon Keyspaces](tables-mrr-capacity-manually.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

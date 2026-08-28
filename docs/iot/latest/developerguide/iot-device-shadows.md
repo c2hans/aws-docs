@@ -175,3 +175,7 @@ The rule is specified in JSON and should look like the following:
 ```
 
 The SELECT statement determines which fields from the message will be republished to the specified topic. A "\+" wild card is used to match all shadow names. The rule specifies that all matching messages should be republished to the specified topic. In this case, the `"topic()"` function is used to specify the topic on which to republish. `topic(3)` evaluates to the thing name in the original topic. For more information about creating rules, see [Rules for AWS IoT](iot-rules.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

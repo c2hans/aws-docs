@@ -21,3 +21,7 @@ In the table, find the output group and container (if applicable) for the user c
 | RTMP  |   | H.264  |  AAC  |
 | SMPTE 2110  |   | Uncompressed JPEG XS <br />(Version 2.21.3 and later) |  PCM<br />Dolby Digital<br />Dolby Digital Plus  |
 | UDP/TS  |   | H.264<br />H.265<br />MPEG2  | AAC<br />Dolby Digital<br />Dolby Digital Plus<br />Dolby Digital Plus with Atmos (converted)<br />Dolby Digital Plus with Atmos (as passthrough)<br />DTS Express<br />MPEG-1, layer II |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

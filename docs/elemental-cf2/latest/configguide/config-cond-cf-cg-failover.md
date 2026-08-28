@@ -30,3 +30,7 @@ The Conductor node flags the worker node as failed.
 The settings on this screen have an effect only if you have set up for Conductor redundancy.
 
 The secondary Conductor node expects to receive a heartbeat from the primary Conductor node according to the frequency specified in **Heartbeat Frequency**. If it does not receive a heartbeat for more than the seconds specified in **Failover Threshold**, then the secondary Conductor considers the primary node to have failed. It then flags itself as the primary Conductor node and flags the other node as the secondary, and takes over control of the cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor File. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cf2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

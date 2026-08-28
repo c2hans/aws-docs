@@ -173,3 +173,7 @@ HealthOmics provides the following capabilities to help you control and manage c
 + Use run groups to control your costs and resource usage. You can set maximum values in the run group for number of concurrent runs, vCPUs, GPUs, and total run time per task. If separate teams or groups use the same account, you can create a separate run group for each team. You can control resource usage and costs per team and by configuring the run group maximum values. For more information, see [Using HealthOmics run groups](creating-run-groups.md).
 + During development, you can configure a separate run group with lower maximum values to catch runaway tasks.
 + Service Quotas also help to protect your account from excessive resource requests. For information about Service Quotas, including how to request quota value increases, see [HealthOmics service quotas](service-quotas.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

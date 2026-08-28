@@ -33,3 +33,7 @@ The following resources provide additional information:
 +  * [Amazon Kendra Intelligent Ranking](https://docs.aws.amazon.com/kendra/latest/dg/intelligent-rerank.html) * in the *Amazon Kendra Developer Guide*
 +  * [Amazon Kendra Intelligent Ranking CLI Reference](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/kendra-ranking/index.html) *
 +  * [Amazon Kendra Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/kendra.html) *
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

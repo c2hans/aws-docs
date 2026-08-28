@@ -56,3 +56,7 @@ For more information, see the [Amazon Managed Blockchain (AMB) Query Reference G
 You can use the [`ListAssetContracts`](https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIReference/ListAssetContracts.html) API operation to list ERC-721, ERC-1155, or ERC-20 contracts deployed by a given address. Additionally, if you have the contract address, you can use the [`GetAssetContract`](https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIReference/ListAssetContracts.html) API operation to retrieve the contract's properties, such as the contract type deployer address, and relevant token metadata.
 
 For more information, see the [Amazon Managed Blockchain (AMB) Query Reference Guide](https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIReference/Welcome.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

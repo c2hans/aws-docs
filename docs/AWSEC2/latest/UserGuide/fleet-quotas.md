@@ -19,6 +19,7 @@ In addition, your AWS account has the following quotas related to EC2 Fleet and 
 | The number of Spot capacity pools (unique combination of instance type and subnet) for EC2 Fleets of type instant | Unlimited |
 | The size of the user data in a launch specification | 16 KB ² |
 | The target capacity per EC2 Fleet or Spot Fleet | 10,000 |
+| The number of Capacity Reservations per EC2 Fleet request when using ReservedCapacityOptions | 5,000 ² |
 | The target capacity across all EC2 Fleets and Spot Fleets in a Region | 100,000 ¹ |
 | An EC2 Fleet request or a Spot Fleet request can't span Regions. |  |
 | An EC2 Fleet request or a Spot Fleet request can't span different subnets from the same Availability Zone. |  |
@@ -55,3 +56,7 @@ If you need more than the default quota for target capacity, you can request a q
 1. Under **Contact options**, specify your preferred contact language and contact method.
 
 1. Choose **Submit**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

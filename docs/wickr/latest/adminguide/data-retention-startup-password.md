@@ -24,3 +24,7 @@ Re-enter the password:************
 ```
 
 Run the bot using the `-ti` option to receive the password prompt. You should also run the `docker attach {{<container ID or container name>}}` command immediately after starting the docker image so that you get the password prompt. You should run both of these commands in a script. If you attach to the docker image and don’t see the prompt, press **Enter** and you will see the prompt.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

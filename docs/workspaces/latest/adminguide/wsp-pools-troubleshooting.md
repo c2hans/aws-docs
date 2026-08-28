@@ -85,3 +85,7 @@ The following are notification codes and resolution steps for issues with domain
 **INVALID\_CUSTOMER\_SUBNET\_CIDR\_BLOCK**
 **Message**: Your subnet includes use of an unavailable CIDR range. Please update your subnets outside of the current /18 range.”.
 **Resolution**: Wait until EC2 has enough capacity or update subnets in other AZs on the directory.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

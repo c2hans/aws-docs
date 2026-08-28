@@ -103,3 +103,7 @@ In this step, you start by loading the data from the sample file into a `DataFra
    |             The Key|       Arnav Desai|     Richard Roe|    Fiction|Example Books|   2|2020|
    +--------------------+------------------+----------------+-----------+-------------+----+----+
    ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

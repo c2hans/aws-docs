@@ -113,3 +113,7 @@ Following is an example of JSON-formatted metadata contents.
 ```
 
 For a complete list of available datasets, including availability dates, refer to the [AWS SDK documentation](https://docs.aws.amazon.com/cli/latest/reference/marketplacecommerceanalytics/generate-data-set.html#options).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

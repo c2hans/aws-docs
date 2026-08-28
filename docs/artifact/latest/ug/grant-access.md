@@ -72,3 +72,7 @@ As an IAM administrator, you can add users to a group at any time. This grants t
 1. Choose **Next: Tags**. You can optionally add tags to your users.
 
 1. Choose **Next: Review**. When you are ready, choose **Create user**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Artifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query artifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

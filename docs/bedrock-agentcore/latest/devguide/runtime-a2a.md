@@ -442,3 +442,7 @@ The service provides A2A-compliant error responses with standardized JSON-RPC er
 | -32054 |  `RetryableConflictException`  | 409 | Session operation in progress, please retry |
 | -32055 |  `RuntimeClientError`  | 424 | Runtime client error – Check your CloudWatch logs for more information. |
 | -32603 |  `Any other exception`  | 500 | Internal error - An unexpected error occurred while processing the request |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

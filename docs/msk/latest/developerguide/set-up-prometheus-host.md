@@ -121,3 +121,7 @@ To scrape JMX metrics from KRaft controllers, add controller DNS names as target
 1. Find the IPv4 public IP address of the Amazon EC2 instance where you ran Prometheus in the previous step. You need this public IP address in the following step.
 
 1. To access the Prometheus web UI, open a browser that can access your Amazon EC2 instance, and go to `{{Prometheus-Instance-Public-IP}}:9090`, where {{Prometheus-Instance-Public-IP}} is the public IP address you got in the previous step.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

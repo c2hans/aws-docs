@@ -23,8 +23,8 @@ This section describes how we architected this solution using the principles and
 
 This section describes how we architected this solution using the principles and best practices of the [security pillar](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html).
 + IAM used for authentication and authorization.
-+ Role permissions scoped to be as narrow as possible, though in many cases this soloution requires wildcard permissions to be able to act on any resources.
-+ For security purposes,
++ Role permissions scoped to be as narrow as possible, though in many cases this solution requires wildcard permissions to be able to act on any resources.
++ For security purposes, all IAM roles deployed by this solution use least-privilege permissions scoped to the specific resources they manage.
 
 ## Reliability
 <a name="reliability"></a>
@@ -51,3 +51,7 @@ This section describes how we architected this solution using the principles and
 
 This section describes how we architected this solution using the principles and best practices of the [sustainability pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html).
 + Serverless services allow you to scale up or down as needed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

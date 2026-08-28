@@ -40,3 +40,7 @@ Click on a particular event (red bar) to view details about it.
 After you click on a particular event, the **Event details** tab indicates which sensors contributed the most to that event.
 
 ![Bar chart showing Temperature1 at 27.5% as top contributor, followed by Vibration1 at 16.7%.](http://docs.aws.amazon.com/lookout-for-equipment/latest/userguide/images/inference-event-details.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,3 +38,7 @@ When dynamic resolution is active, the stream resolution may change during a ses
 <a name="web-sdk-release-notes-v100"></a>
 
 General availability (GA) release of the Amazon GameLift Streams Web SDK with streaming support. This initial release provides the core functionality for integrating Amazon GameLift Streams into web applications, including WebRTC-based game streaming, input handling, and client connection management.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

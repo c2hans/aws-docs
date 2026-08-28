@@ -12,3 +12,7 @@ Scoped permissions let you grant permissions to a user or role on all objects of
 You can view the scope of database-level scoped permissions in [SVV\_DATABASE\_PRIVILEGES](r_SVV_DATABASE_PRIVILEGES.md). You can view the scope of schema-level scoped permissions in [SVV\_SCHEMA\_PRIVILEGES](r_SVV_SCHEMA_PRIVILEGES.md).
 
  For more information on applying scoped permissions, see [GRANT](r_GRANT.md) and [REVOKE](r_REVOKE.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

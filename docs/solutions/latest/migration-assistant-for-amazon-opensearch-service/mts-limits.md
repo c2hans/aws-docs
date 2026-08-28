@@ -21,3 +21,7 @@ The serverless model removes infrastructure management but also removes several 
 + Cluster-level settings managed through `_cluster/settings`.
 
 For metadata that the solution does migrate (index settings, mappings, templates, and aliases), see how field-type and collection-type adaptations are applied in [Collection types](mts-collection-types.md). For an end-to-end walkthrough of an Amazon OpenSearch Service domain to Amazon OpenSearch Serverless NextGen collection migration, see the [Amazon OpenSearch Service to Amazon OpenSearch Serverless NextGen](playbook-aos-to-serverless.md) playbook. To deploy the solution on Amazon EKS before you begin, see [Deploy the solution](deploy-the-solution.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

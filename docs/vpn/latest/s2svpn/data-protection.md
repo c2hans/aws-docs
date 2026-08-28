@@ -31,3 +31,7 @@ See the following topics for more information:
 + [AWS Site-to-Site VPN tunnel authentication options](vpn-tunnel-authentication-options.md): Provides information about the authentication options for your VPN tunnel endpoints.
 + [Requirements for an AWS Site-to-Site VPN customer gateway device](CGRequirements.md): Provides information about the requirements for the customer gateway device on your side of the VPN connection.
 + [Secure communication between AWS Site-to-Site VPN connections using VPN CloudHub](VPN_CloudHub.md): If you have multiple Site-to-Site VPN connections, you can provide secure communication between your on-premises sites by using the AWS VPN CloudHub.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

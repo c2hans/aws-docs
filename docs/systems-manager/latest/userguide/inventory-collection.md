@@ -92,3 +92,7 @@ If a managed node you expect to see isn't listed, see [Troubleshooting managed n
 1. Choose a node, and then choose **View details**.
 
 1. On the node details page, choose **Inventory**. Use the **Inventory type** lists to filter the inventory.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

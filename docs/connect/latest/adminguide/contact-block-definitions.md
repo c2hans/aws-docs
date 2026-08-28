@@ -68,3 +68,7 @@ The following table lists all available flow blocks that you can use. Choose any
 |  [Transfer to phone number](transfer-to-phone-number.md) | Transfers the customer to a phone number external to your instance. |
 |  [Transfer to queue](transfer-to-queue.md)  | In most flows, this block ends the current flow and places the customer in queue. When used in a customer queue flow, this block transfers a contact already in a queue to another queue. |
 |  [Wait](wait.md) | Pauses the flow. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

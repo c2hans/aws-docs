@@ -75,3 +75,7 @@ The following are the service endpoints and service quotas for this service.
 | Rate of records | us-east-1: 500,000<br />us-west-2: 500,000<br />eu-west-1: 500,000<br />Each of the other supported Regions: 100,000 | No | The maximum capacity in records per second for a delivery stream in the current Region. |
 
 For more information, see [Amazon Data Firehose Quotas](https://docs.aws.amazon.com/firehose/latest/dev/limits.html) in the *Amazon Data Firehose Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

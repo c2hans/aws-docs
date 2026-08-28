@@ -53,3 +53,7 @@ Use the following conventions for device IDs.
 
 **Do not include PII in device position properties**
 When sending device updates (for example, using [DevicePositionUpdate](https://docs.aws.amazon.com/location/latest/APIReference/API_WaypointTracking_DevicePositionUpdate.html)), do not include personally-identifiable information (PII) such as phone number or email address in the `PositionProperties`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -112,7 +112,11 @@ In addition to the troubleshooting steps in [Connect AWS Security Agent to GitLa
 
 After connecting GitLab Self-Managed to AWS Security Agent:
 + Navigate to the Agent Space where you want to use these repositories
-+ Choose **Enable code review** or **Setup penetration testing** to connect specific projects (see [Enable Continuum code review](enable-code-review-scan.md) and [Enable Continuum penetration test](enable-penetration-test.md))
-+ Enable **Code review comments** to have AWS Security Agent analyze each merge request and post findings in GitLab (see [Review Continuum code security findings in pull requests](review-code-findings-github.md))
-+ Enable **Code remediation** for merge request-based fixes (see [Enable users to start remediation of Continuum penetration test and code review findings](enable-remediate-findings.md))
-+ Create threat models from connected projects in the web application (see [Enable Continuum threat modeling](enable-threat-model.md))
++ Choose **Enable code review** or **Setup penetration testing** to connect specific projects (see [Enable code review](enable-code-review-scan.md) and [Enable penetration test](enable-penetration-test.md))
++ Enable **Code review comments** to have AWS Security Agent analyze each merge request and post findings in GitLab (see [Review code security findings in pull requests](review-code-findings-github.md))
++ Enable **Code remediation** for merge request-based fixes (see [Enable users to start remediation of penetration test and code review findings](enable-remediate-findings.md))
++ Create threat models from connected projects in the web application (see [Enable threat modeling](enable-threat-model.md))
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

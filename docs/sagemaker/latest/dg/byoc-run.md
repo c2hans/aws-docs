@@ -52,3 +52,7 @@ processing_job = ProcessingJob.create(
 Instead of building your processing code into your processing image, you can provide a `ScriptProcessor` with your image and the command that you want to run, along with the code that you want to run inside that container. For an example, see [Run Scripts with Your Own Processing Container](processing-container-run-scripts.md).
 
 You can also use the scikit-learn image that Amazon SageMaker Processing provides to run scikit-learn scripts. For an example, see [Run a Processing Job with scikit-learn](use-scikit-learn-processing-container.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

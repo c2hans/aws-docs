@@ -60,3 +60,7 @@ Region: Route 53 is a global service. To get hosted zone metrics, you must spec
 <a name="cloudwatch-dimensions-route-53-hosted-zones"></a>
 
 Route 53 metrics for hosted zones use the `AWS/Route53` namespace and provide metrics for `HostedZoneId`. To get the number of DNS queries, you must specify the ID of the hosted zone in the `HostedZoneId` dimension.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

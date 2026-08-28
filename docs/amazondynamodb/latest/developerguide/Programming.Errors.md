@@ -189,3 +189,7 @@ Some AWS SDKs provide higher-level clients that handle unprocessed item retries 
 **Java** – The [DynamoDB Enhanced Client](DynamoDBEnhanced.md) in the AWS SDK for Java v2 and the [DynamoDBMapper](DynamoDBMapper.md) in v1 both automatically retry unprocessed items when performing batch operations.
 **Python** – The boto3 Table resource `batch_writer` handles unprocessed item retries implicitly for batch write operations. For more information, see [Using the table resource batch\_writer](programming-with-python.md#programming-with-python-batch-writer).
 If you are using a low-level client or an SDK that does not provide this behavior, you must implement the retry logic yourself as described above.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -63,3 +63,7 @@ If your Lambda function output doesn't adhere to the requirements of this format
 | Buffered | No |  [InvokeWithResponseStream](https://docs.aws.amazon.com/lambda/latest/api/API_InvokeWithResponseStream.html) | No. API Gateway doesn't support this integration configuration. |
 | Buffered | Yes |  [Invoke](https://docs.aws.amazon.com/lambda/latest/api/API_Invoke.html) | API Gateway returns the HTTP headers and status code but not the response body. |
 | Buffered | No |  [Invoke](https://docs.aws.amazon.com/lambda/latest/api/API_Invoke.html) | Yes. This is a Lambda proxy integration. For more information, see [Lambda proxy integration](set-up-lambda-proxy-integrations.md). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

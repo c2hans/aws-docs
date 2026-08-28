@@ -83,3 +83,7 @@ Release notes for Amazon EMR on EKS 7.10.0:
 
 The following features are included with the 7.10.0 release of Amazon EMR on EKS:
 +  **S3A filesystem** – Starting from the 7.10.0 release, the S3A filesystem has replaced EMRFS as the default EMR S3 connector. For more information, see [EMR File System (EMRFS)](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-s3a-migrate.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

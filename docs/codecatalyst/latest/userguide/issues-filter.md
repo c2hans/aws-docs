@@ -22,3 +22,7 @@ To filter based on a string in the issue name or description, enter the string i
 1. Choose **Filter**, then choose **\+ Add filter**.
 
 1. Choose the parameters to filter for. You can choose multiple filters and parameters. You can configure filters to show issues that match every filter or any individual filter by selecting **and** or **or**. The view will update to show the issues that match the filter.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

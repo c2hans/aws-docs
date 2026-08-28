@@ -10,3 +10,7 @@ Since a notebook job runs your custom code, you can create a pipeline that inclu
 In another use case, one of your notebook jobs might call another notebook to perform some tasks during your notebook run—in this scenario you need to specify these sourced notebooks as dependencies with your notebook job step. For information about how to call another notebook, see [Invoke another notebook in your notebook job](create-notebook-auto-run-dag-call.md).
 
 To view sample notebooks that demonstrate how to schedule notebook jobs with the SageMaker AI Python SDK, see [notebook job sample notebooks](https://github.com/aws/amazon-sagemaker-examples/tree/main/sagemaker-pipelines/notebook-job-step).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

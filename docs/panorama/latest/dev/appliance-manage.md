@@ -77,3 +77,7 @@ To use an appliance in a different Region or with a different account, you must 
 To start a reset operation, the appliance must be plugged in and powered down. Press and hold both the power and reset buttons for five seconds. When you release the buttons, the status light blinks orange. Wait until the status light blinks green before provisioning or disconnecting the appliance.
 
 You can also reset the appliance software without deleting certificates from the device. For more information, see [Power and reset buttons](appliance-buttons.md#appliance-buttons-reset).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

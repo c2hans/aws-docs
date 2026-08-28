@@ -33,3 +33,7 @@ Add, modify, and remove the statements, resources, and conditions in the followi
 After modifying the policy to your use case, attach it to the IAM identity that calls the Nova Act API. To learn how to attach permissions to an IAM identity, see [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html).
 
 For information about enabling encryption on your export S3 bucket, see [Encryption at rest](data-encryption.md#encryption-rest).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova Act. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova-act` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

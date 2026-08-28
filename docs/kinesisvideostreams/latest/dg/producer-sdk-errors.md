@@ -415,3 +415,7 @@ The following section contains error and status information that are returned by
 | 0x16000003 | STATUS\_IOT\_NULL\_AWS\_CREDS | The JSON returned from the IoT credentials endpoint didn't contain the credentials object. | Review the "message" item in the JSON for additional information. |
 | 0x16000004 | STATUS\_IOT\_INVALID\_URI\_LEN | The URL passed into the fetch IoT credentials function doesn't have a length between 1 and 10,000. | Review the URL passed in to this function. |
 | 0x16000005 | STATUS\_TIMESTAMP\_STRING\_UNRECOGNIZED\_FORMAT | The "expiration" item in the JSON from fetching IoT credentials isn't in the format: `YYYY-MM-DDTHH:mm:SSZ`. | Review the AWS health dashboard and try again later. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

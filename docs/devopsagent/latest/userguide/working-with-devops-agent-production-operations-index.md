@@ -55,3 +55,7 @@ Production operations and release management form a continuous feedback loop. In
 **Topology knowledge improves dependency analysis** — The application topology built during production operations — including service relationships, request paths, and deployment boundaries — feeds directly into the cross-repository dependency analysis performed during release readiness reviews. The agent uses the same understanding of how your services interact to assess blast radius both during incident response and during code review.
 
 **Investigation feedback refines learned skills** — Feedback you provide on investigations and the accuracy of recommendations updates the agent's learned skills. As these skills improve, both incident investigations and release reviews benefit from more accurate knowledge about your environment, operational patterns, and effective investigation techniques.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

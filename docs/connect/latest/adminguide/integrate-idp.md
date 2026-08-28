@@ -116,3 +116,7 @@ You must enable SAML for your Connect Customer instance to use Connect Customer 
    + `role`: Set to the name or Amazon Resource Name (ARN) of the SAML role used for Connect Customer federation.
    + `idp`: Set to the name or Amazon Resource Name (ARN) of the SAML identity provider in IAM.
    + `destination`: Set to the optional path where agents will land in the instance after signing in (for example: `/agent-app-v2`).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

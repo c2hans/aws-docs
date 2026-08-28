@@ -52,3 +52,7 @@ Developing a system to the highest levels of availability can be expensive. Bein
  Use modeling techniques (for example, failure modes and effects analysis (FMEA)), combined with Operational Readiness Reviews (ORR), to anticipate the scenarios that could disrupt the workload's ability to meet its objectives. Create resilience requirements to mitigate any harm anticipated by the failure modeling analysis.
 
  As failures are modeled, implement appropriate tooling to detect these failures in the future. Create runbooks for documentation on resolving failures to minimize impact.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

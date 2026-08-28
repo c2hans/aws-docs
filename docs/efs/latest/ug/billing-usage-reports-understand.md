@@ -78,3 +78,7 @@ The first column in the following table lists usage types that appear in your bi
 <a name="aws-usage-report-understand-operations"></a>
 
 Operations describe the action taken on your EFS file system by the specified usage type. Operations are indicated by self-explanatory codes, such as `Read` or `Delete`. To see which actions on your file system generated a specific type of usage, use these codes. When you create a usage report, you can choose to include **All Operations**, or a specific operation, for example, `Write`, to report on.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

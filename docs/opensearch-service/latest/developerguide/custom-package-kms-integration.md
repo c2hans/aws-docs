@@ -189,3 +189,7 @@ When you use an AWS KMS customer managed key with your OpenSearch Service custom
 The following resources provide more information about data encryption at rest.
 + For more information about AWS KMS basic concepts, see [AWS KMS keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html) in the *AWS Key Management Service Developer Guide*.
 + For more information about security best practices for AWS KMS, see the *AWS Prescriptive Guidance* guide for [AWS Key Management Service best practices](https://docs.aws.amazon.com/kms/latest/developerguide/best-practices.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

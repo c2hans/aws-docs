@@ -411,3 +411,7 @@ After you create your pull through cache rules, the following are the next steps
 + Create a repository creation template. A repository creation template gives you control to define the settings to use for new repositories created by Amazon ECR on your behalf during a pull through cache action. For more information, see [Templates to control repositories created during a pull through cache, create on push, or replication action](repository-creation-templates.md).
 + Validate your pull through cache rules. When validating a pull through cache rule, Amazon ECR makes a network connection with the upstream registry, verifies that it can access the Secrets Manager secret containing the credentials for the upstream registry, and that authentication was successful. For more information, see [Validating pull through cache rules in Amazon ECR](pull-through-cache-working-validating.md).
 + Start using your pull through cache rules. For more information, see [Pulling an image with a pull through cache rule in Amazon ECR](pull-through-cache-working-pulling.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ Amazon Redshift uses dynamic typing to process schemaless SUPER data without nee
 You can apply dynamic data masking policies to scalar values on the paths of SUPER type columns. For more information about dynamic data masking, see [Dynamic data masking](t_ddm.md). For information about using dynamic data masking with the SUPER data type, see [Using dynamic data masking with SUPER data type paths](t_ddm-super.md).
 
 We recommend that you set the `r_enable_case_sensitive_super_attribute` configuration option to true when working with SUPER data. For more information, see [enable\_case\_sensitive\_super\_attribute](r_enable_case_sensitive_super_attribute.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -91,3 +91,7 @@ GROUP BY  useridentity.sessioncontext.sessionissuer.username,useridentity.arn,ev
 ORDER BY  count(*) DESC LIMIT 100
 ```
 We also recommend that the AWS Lambda and Amazon Firehose integrations with Kinesis Data Streams that invoke the `DescribeStream` API are reconfigured so that the integrations instead invoke `DescribeStreamSummary` and `ListShards`. Specifically, for AWS Lambda, you must update your event source mapping. For Amazon Firehose, the corresponding IAM permissions must be updated so that they include the `ListShards` IAM permission.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

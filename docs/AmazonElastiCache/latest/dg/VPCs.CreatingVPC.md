@@ -53,3 +53,7 @@ Now you are ready to create a cache subnet group and launch a cluster in your Am
 + [Creating a subnet group](SubnetGroups.Creating.md)
 + [Creating a Memcached cluster (console)](Clusters.Create-mc.md#Clusters.Create.CON.Memcached).
 + [Creating a Valkey (cluster mode disabled) cluster (Console)](SubnetGroups.designing-cluster-pre.valkey.md#Clusters.Create.CON.valkey-gs).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

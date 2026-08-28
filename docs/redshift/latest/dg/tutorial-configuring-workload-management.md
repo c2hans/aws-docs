@@ -644,3 +644,7 @@ Next, run queries from different sessions.
 Your cluster continues to accrue charges as long as it is running. When you have completed this tutorial, return your environment to the previous state by following the steps in [Find Additional Resources and Reset Your Environment](https://docs.aws.amazon.com/redshift/latest/gsg/rs-gsg-clean-up-tasks.html) in *Amazon Redshift Getting Started Guide*.
 
 For more information about WLM, see [Workload management](cm-c-implementing-workload-management.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ Check the following if data is not delivered to your Amazon Simple Storage Servi
 + If data transformation with Lambda is enabled, make sure that the Lambda function that is specified in your Firehose stream still exists.
 + Make sure that the IAM role that is specified in your Firehose stream has access to your S3 bucket and your Lambda function (if data transformation is enabled). Also, make sure that the IAM role has access to CloudWatch log group and log streams to check error logs. For more information, see [Grant Firehose access to an Amazon S3 destination](controlling-access.md#using-iam-s3).
 + If you're using data transformation, make sure that your Lambda function never returns responses whose payload size exceeds 6 MB. For more information, see [Amazon Data FirehoseData Transformation](data-transformation.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

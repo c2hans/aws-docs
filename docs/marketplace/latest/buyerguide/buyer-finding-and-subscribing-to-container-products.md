@@ -39,3 +39,7 @@ The product details page in AWS Marketplace includes details about the product, 
 <a name="buyer-amazon-ecs-console"></a>
 
  You can also find container products in the Amazon ECS console. The navigation pane has links to discover new products from AWS Marketplace and to see existing subscriptions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

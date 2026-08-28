@@ -104,3 +104,7 @@ Connect Customer has a zero tolerance policy for calling into China. Amazon will
 <a name="assurance-cr"></a>
 
 In the event of further incidents where Chinese carriers block major international routes without prior warning and impact the ability to call China, the exemptions in the [Connect Customer Service Level Agreement](https://aws.amazon.com/connect/sla/) will take effect.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

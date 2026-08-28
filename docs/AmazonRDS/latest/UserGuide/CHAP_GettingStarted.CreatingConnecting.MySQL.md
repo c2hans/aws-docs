@@ -367,3 +367,7 @@ For more information about deleting a stack in CloudFormation, see [Deleting a s
 <a name="CHAP_GettingStarted.ComputeConnect.MySQL"></a>
 
 You can also connect your RDS for MySQL DB instance to a Lambda serverless compute resource. Lambda functions allow you to run code without provisioning or managing infrastructure. A Lambda function also allows you to automatically respond to code execution requests at any scale, from a dozen events a day to hundreds of per second. For more information, see [Automatically connecting a Lambda function and a DB instance](lambda-rds-connect.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

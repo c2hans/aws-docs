@@ -479,3 +479,7 @@ Before switching production traffic to BMKB, verify the following: all data sour
 Migrating from Amazon Kendra to Bedrock Managed Knowledge Base requires two primary efforts: re-ingesting data sources into BMKB and rewriting application code to use BMKB APIs. While BMKB introduces powerful RAG-native capabilities including RetrieveAndGenerate and agentic retrieval, customers using enterprise search features such as faceting, query suggestions, custom synonyms, and incremental learning will need to implement workarounds as described in this guide.
 
 Please contact [AWS Support](https://console.aws.amazon.com/support) with any additional questions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

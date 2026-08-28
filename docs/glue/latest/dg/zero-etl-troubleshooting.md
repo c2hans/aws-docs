@@ -58,3 +58,7 @@ If the target catalog resource policy is incorrectly configured, the integration
 All integrations emit CloudWatch logs after the completion of each process e.g. full data load or change data capture. You can refer to those logs to determine the exact root cause of the failure or error.
 
 Additionally, AWS Glue also creates system table in the target AWS Glue database or S3-Table. During the time when integration remains operational (i.e. not in FAILED or DELETED state), AWS Glue will keep appending the statuses for each individual operations on the target i.e. completion of full data load or change data capture with statistics such as number of records, number of insertions, deletions etc.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

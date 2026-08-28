@@ -28,3 +28,7 @@ All the text marked as an example in this tutorial is just that—a sample that 
 + [Step 9: Create your channel](getting-started-step7.md)
 + [Step 10: Start the upstream system and the channel](getting-started-step8.md)
 + [Step 11: Clean up](getting-started-step9.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

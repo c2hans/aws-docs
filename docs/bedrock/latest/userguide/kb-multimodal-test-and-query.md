@@ -121,3 +121,7 @@ When multimodal content is processed and stored, the following metadata structur
 
 **Important**
 Applications must use the provided timestamps to extract and play specific segments from audio and video files. The knowledge base returns references to complete files, not pre-segmented clips.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

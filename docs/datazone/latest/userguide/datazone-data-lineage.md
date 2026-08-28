@@ -206,3 +206,7 @@ Lineage can be automated using the following configurations:
 + Data source configuration: data producers, as they configure data source runs for Amazon Redshift databases, are presented with automated data lineage setting for that data source.
 
   The lineage setting can be viewed in the **Data Source Definition** tab. This value is not editable by data producers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

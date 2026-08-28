@@ -74,3 +74,7 @@ The following table shows a definition of the different parameters in the uplink
 | Timestamp | The time when the Sidewalk device sent an uplink request. | Timestamp | Yes |
 | Rssi | Received Signal Strength Indicator, which is a measurement of a wireless network's signal strength | Integer | No |
 | LinkType | The type of link that was used to perform the uplink which can be one of `LoRa`, `BLE`, or `FSK` | String | No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

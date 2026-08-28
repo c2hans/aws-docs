@@ -40,3 +40,7 @@ There are several clauses in openCypher for finding data patterns in the graph, 
 Note that the first query above returns every single node in your graph, and the next two return every node that has a relationship— this is not generally recommended\! In almost all cases, you want to narrow down the data being returned, which you can do by specifying node or relationship labels and properties, as in the fourth example.
 
 You can find a handy cheat-sheet for openCypher syntax in the Neptune [github sample repository](https://github.com/aws-samples/amazon-neptune-samples/tree/master/opencypher/Cheatsheet.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

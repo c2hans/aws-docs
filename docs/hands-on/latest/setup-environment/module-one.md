@@ -140,3 +140,7 @@ Choose a support plan for your AWS account.
 Congratulations\! Your account is now set up and being activated. When activation is complete, you will receive an email from AWS. Use the credentials you created in this module to log in to your root account.
 
 In the next module, you will learn how to secure your root account and set up additional users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

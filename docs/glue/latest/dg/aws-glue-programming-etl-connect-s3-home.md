@@ -74,3 +74,7 @@ Designates a connection to files stored in Amazon S3 in the [Apache Parquet](htt
 Use the following connection options with `"connectionType": "parquet"`:
 + `paths`: (Required) A list of the Amazon S3 paths to read from.
 + *(Other option name/value pairs)*: Any additional options, including formatting options, are passed directly to the SparkSQL `DataSource`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -350,7 +350,7 @@ aws cloudformation deploy \
 ## Part 3: Add a skill, custom agent, and scheduled trigger
 <a name="part-3-add-a-skill-custom-agent-and-scheduled-trigger"></a>
 
-This part is optional. In this section, you add three resources to the agent space you created in Part 1. The first is a **skill** the agent loads when relevant. The second is a **custom agent** that scopes the agent to a specific workflow. The third is a **scheduled trigger** that runs the custom agent automatically. These resources use the `AWS::DevOpsAgent::Asset` and `AWS::DevOpsAgent::Trigger` resource types. For more information about managing assets as infrastructure as code, see [Managing assets](about-aws-devops-agent-managing-assets.md).
+This part is optional. In this section, you add four resources to the agent space you created in Part 1: a **skill** the agent loads when relevant, a **memory store** that holds operational context, a **custom agent** that scopes the agent to a specific workflow, and a **scheduled trigger** that runs the custom agent automatically. These resources use the `AWS::DevOpsAgent::Asset` and `AWS::DevOpsAgent::Trigger` resource types. For more information about managing assets as infrastructure as code, see [Managing assets](about-aws-devops-agent-managing-assets.md).
 
 You must complete Part 1 before you proceed. This template requires the `AgentSpaceId` from the Part 1 stack outputs.
 
@@ -361,7 +361,7 @@ Save the following template as `devops-agent-content.yaml`. A time-based trigger
 
 ```
 AWSTemplateFormatVersion: '2010-09-09'
-Description: AWS DevOps Agent - Example skill, custom agent, and scheduled trigger
+Description: AWS DevOps Agent - Example skill, memory store, custom agent, and scheduled trigger
 
 Parameters:
   AgentSpaceId:
@@ -387,9 +387,26 @@ Resources:
             Use this skill when investigating database latency, connection
             errors, or query timeouts.
 
-  # A custom agent that a trigger can invoke
+  # A memory store that holds operational context
+  ExampleMemoryStore:
+    Type: AWS::DevOpsAgent::Asset
+    Properties:
+      AgentSpaceId: !Ref AgentSpaceId
+      AssetType: memory_store
+      Metadata:
+        name: payments-runbook
+        description: Standing guidance and known issues for the payments service.
+        agent_types:
+          - GENERIC
+      Files:
+        - Path: README.md
+          ContentText: |
+            Operational memories for the payments service.
+
+  # A custom agent with attached memory stores that a trigger can invoke
   ExampleCustomAgent:
     Type: AWS::DevOpsAgent::Asset
+    DependsOn: ExampleMemoryStore
     Properties:
       AgentSpaceId: !Ref AgentSpaceId
       AssetType: custom_agent
@@ -397,6 +414,8 @@ Resources:
         name: rds-firefighter
         skills:
           - rds-performance-investigation
+        memory_stores:
+          - payments-runbook
       Files:
         - Path: AGENT.md
           ContentText: |
@@ -424,6 +443,9 @@ Outputs:
   SkillAssetId:
     Description: The skill asset ID
     Value: !GetAtt ExampleSkill.AssetId
+  MemoryStoreAssetId:
+    Description: The memory store asset ID
+    Value: !GetAtt ExampleMemoryStore.AssetId
   CustomAgentAssetId:
     Description: The custom agent asset ID
     Value: !GetAtt ExampleCustomAgent.AssetId
@@ -541,3 +563,7 @@ After you have deployed your AWS DevOps Agent by using AWS CloudFormation:
 + For more information about managing skills, custom agents, and other assets as infrastructure as code, see [Managing assets](about-aws-devops-agent-managing-assets.md).
 + To understand the operator web app, see [What is a DevOps Agent Web App?](about-aws-devops-agent-what-is-a-devops-agent-web-app.md).
 + For detailed property references for the CloudFormation resource types used in this guide, see [AWS DevOps Agent resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/AWS_DevOpsAgent.html) in the *AWS CloudFormation Template Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

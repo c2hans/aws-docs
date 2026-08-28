@@ -85,3 +85,7 @@ To install the new Prometheus server that sends metrics to your Amazon Managed S
    ```
 **Note**
 You can customize the `helm install` command in many ways. For more information, see [Helm install](https://helm.sh/docs/helm/helm_install/) in the *Helm documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Service for Prometheus. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prometheus` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

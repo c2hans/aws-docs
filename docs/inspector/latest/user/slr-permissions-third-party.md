@@ -18,3 +18,7 @@ The permissions policy for the role, which is named `AmazonInspector2ThirdPartyS
 + Use AWS STS `GetWebIdentityToken` action for OIDC federation into external cloud environments, scoped to the Azure AD token audience.
 
 For the permissions in this policy, see [AmazonInspector2ThirdPartyServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonInspector2ThirdPartyServiceRolePolicy.html) in the *AWS Managed Policy Reference Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,3 +13,7 @@ The skill covers use-cases like application caching, session storage, rate limit
 + [Getting started](agent-tools-skills-getting-started.md)
 + [How the ElastiCache skill works](agent-tools-skills-how-it-works.md)
 + [Guardrails and tracking usage](agent-tools-skills-safety.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

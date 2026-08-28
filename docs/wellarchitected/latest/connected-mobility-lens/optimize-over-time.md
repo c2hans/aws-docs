@@ -28,3 +28,7 @@ Prioritize critical data: Ensure that critical or safety-related data is priorit
 +  Optimize resource usage with AWS Trusted Advisor: AWS Trusted Advisor to receive recommendations for optimizing resource usage and reducing costs. Example: Act on recommendations to modify resource configurations for improved efficiency and cost savings.
 +  Implement cost-effective data management practices: Apply data retention policies, archival, and deletion strategies to minimize storage costs without sacrificing critical data availability. Example: Archive historical telemetry data to lower-cost storage solutions after a specified time period.
 +  Track and optimize data transmission costs: Monitor data transmission costs from vehicles to the cloud and consider techniques like data aggregation, compression, and prioritization to reduce expenses. Example: Implement payload optimization techniques to minimize the amount of data transmitted, thereby reducing costs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

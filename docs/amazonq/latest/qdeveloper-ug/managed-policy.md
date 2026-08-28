@@ -116,3 +116,7 @@ View details about updates to AWS managed policies for Amazon Q Developer since 
 |  [AWSServiceRoleForAmazonQDeveloper ](#amazonq-policy-AWSServiceRoleForAmazonQDeveloper) - New policy | Allows Amazon Q to call Amazon CloudWatch and Amazon CodeGuru on your behalf. | April 30, 2024 |
 |  [AmazonQFullAccess](#amazonq-policy-fullaccess) - New policy | Provides full access to enable interactions with Amazon Q Developer. | November 28, 2023 |
 | Amazon Q Developer started tracking changes | Amazon Q Developer started tracking changes to AWS managed policies. | November 28, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

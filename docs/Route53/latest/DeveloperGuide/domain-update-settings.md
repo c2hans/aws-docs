@@ -26,3 +26,7 @@ This section provides information on the following topics related to managing do
 1. [Updating name servers to use another registrar](domain-register-other-dns-service.md) and [Adding or changing name servers and glue records for a domain](domain-name-servers-glue-records.md):
    + Discover how to update name servers to use another DNS service or configure white-label (vanity) name servers.
    + Learn about considerations and best practices when changing name servers and glue records.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

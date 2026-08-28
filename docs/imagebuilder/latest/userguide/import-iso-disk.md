@@ -260,3 +260,7 @@ If your ISO disk image import fails, you can use Amazon CloudWatch Logs to ident
 **LogStream:** `{{ImageVersion}}/{{ImageBuildVersion}}`
 
 For more information about Image Builder logs in CloudWatch Logs, see [Monitor Image Builder logs with Amazon CloudWatch Logs](monitor-cwlogs.md). For additional troubleshooting guidance, see [Troubleshoot Image Builder issues](troubleshooting.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

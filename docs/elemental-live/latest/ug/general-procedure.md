@@ -119,3 +119,7 @@ Occasionally, you may need to interrupt the current active input and start a dif
 <a name="step-troubleshoot"></a>
 
 If the dynamic playlist is not behaving as expected, see the information about preparation and activation, starting [here](details-on-preparing-inputs.md). You may have broken a preparation or activation rule.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

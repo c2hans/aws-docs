@@ -40,3 +40,7 @@ When you use the **sync** feature in Infrastructure Composer, the AWS SAM CLI re
    + **Amazon Simple Storage Service (Amazon S3) bucket** – The name of your Amazon S3 bucket. The AWS SAM CLI will package and store your application files and function code here. You can select an existing bucket or create a new one.
 
 Infrastructure Composer will initiate the AWS SAM CLI `sam sync` command and open a terminal window in your IDE to output its progress.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

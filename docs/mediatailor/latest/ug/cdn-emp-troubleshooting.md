@@ -132,3 +132,7 @@ For issues not covered in this topic, consult these official AWS resources:
 + [Previewing a manifest from AWS Elemental MediaPackage](https://docs.aws.amazon.com/mediapackage/latest/userguide/endpoints-preview.html) - Use manifest preview to troubleshoot content packaging issues
 + [Increase CloudFront cache hit ratio](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/cache-hit-ratio.html) - Comprehensive guide to CDN cache optimization
 + [Manifest filtering](https://docs.aws.amazon.com/mediapackage/latest/userguide/manifest-filtering.html) - Complete guide to MediaPackage filtering functionality
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

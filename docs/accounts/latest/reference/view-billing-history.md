@@ -21,3 +21,7 @@ You can download the invoices for each service provider that you transacted with
 1. Next to **Balance**, choose **View billing history**. You'll be redirected to the billing history.
 
 1. To download an invoice, select an invoice ID.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

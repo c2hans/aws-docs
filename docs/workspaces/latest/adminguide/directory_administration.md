@@ -66,3 +66,7 @@ When you reset the password for an existing user, do not set **User must change 
 
 **Note**
 If you're using AD Connector or if your users are in the AWS GovCloud (US-West) Region, your users won't be able to reset their own passwords. (The **Forgot password?** option on the WorkSpaces client application login screen won't be available .)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

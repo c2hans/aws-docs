@@ -287,3 +287,7 @@ When the application uses a close code to reconnect, the application should:
 1. Connect via the WebSocket.
 
 If you use the amazon-chime-sdk-js library, this is handled for you if you implement the [needsRefresh()](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Credentials.html#needsRefresh-property) property and the [refresh()](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Credentials.html#refresh-property) method. For a working example, see [https://github.com/aws-samples/amazon-chime-sdk/blob/dc11c4c76c78d28f618577706bba2087919a5635/apps/chat/src/providers/AuthProvider.jsx\#L93-L101](https://github.com/aws-samples/amazon-chime-sdk/blob/dc11c4c76c78d28f618577706bba2087919a5635/apps/chat/src/providers/AuthProvider.jsx#L93-L101).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

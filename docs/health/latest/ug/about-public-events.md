@@ -21,6 +21,13 @@ To view an example public event for Amazon Elastic Compute Cloud, see [Public He
 
 If you're monitoring public events from an AWS Region, we recommend that you create a back up rule. Public events for AWS Health are sent simultaneously to both the impacted Region and to the backup Region when a valid rule is set in the impacted Region.
 
+**Important**
+If you don't have a rule in the impacted Region, the backup Region will not automatically send out the public event as a backup. You must have a valid rule in the impacted Region for public events to be delivered to the backup Region.
+
 AWS Health sends account-specific events to both the impacted Region and to the backup Region, regardless of any rules configured in the impacted Region.
 
 We recommend that you deduplicate AWS Health events using `eventARN` and `communicationId` because these values remain consistent for AWS Health messages that are sent to the backup Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query health` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

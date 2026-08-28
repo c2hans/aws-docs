@@ -22,3 +22,7 @@ To learn more, see [How custom routing accelerators work in Global Accelerator](
 + [Add an Amazon VPC subnet endpoint](about-custom-routing-endpoints-adding-endpoints.md)
 + [Edit an Amazon VPC subnet endpoint](about-custom-routing-endpoints-editing-endpoints.md)
 + [Remove an Amazon VPC subnet endpoint](about-custom-routing-endpoints-removing-endpoints.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

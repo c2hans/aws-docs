@@ -145,3 +145,7 @@ tMAxfql0iM
 | Generate a random string in upper case |  `select dbms_random.string('U',10) from dual;`  |  `select upper(md5(random()::text));`  |
 
 For more information, see [Mathematical Functions and Operators](https://www.postgresql.org/docs/13/functions-math.html) and [String Functions and Operators](https://www.postgresql.org/docs/10/functions-string.html) in the *PostgreSQL documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

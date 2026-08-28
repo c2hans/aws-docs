@@ -333,3 +333,7 @@ Once you've finished that process, the Notes view will display with a **Sign Ou
 <a name="list-of-notes"></a>
 
 ![An iOS app running in an iPhone 15 Pro simulator, displaying a 'Notes' screen with the message 'No notes.' Part of an AWS Amplify tutorial for building an iOS app with a hosted UI.](http://docs.aws.amazon.com/hands-on/latest/build-ios-app-amplify/images/vfnmrvtl-hosted-notes-ebf-running-iphone.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

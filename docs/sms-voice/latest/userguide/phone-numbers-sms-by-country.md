@@ -230,7 +230,7 @@ You can purchase long codes for some countries directly through the AWS End User
   <tr><td>South Africa</td><td>ZA</td><td>27</td><td>Yes</td><td>Yes</td><td>No</td><td>Yes</td><td>Yes</td></tr>
   <tr><td>South Korea</td><td>KR</td><td>82</td><td>No</td><td>No</td><td>No</td><td>No</td><td>Yes</td></tr>
   <tr><td>South Sudan</td><td>SS</td><td>211</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>No</td></tr>
-  <tr><td>Spain</td><td>ES</td><td>34</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
+  <tr><td>Spain</td><td>ES</td><td>34</td><td>Yes</td><td>Yes</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Sri Lanka</td><td>LK</td><td>94</td><td>Yes</td><td>Yes</td><td>Registration required<a href="#sms-support-note-8">8</a></td><td>Yes</td><td>Yes</td></tr>
   <tr><td>Suriname</td><td>SR</td><td>597</td><td>No</td><td>No</td><td>Yes</td><td>No</td><td>Yes</td></tr>
   <tr><td>Sweden</td><td>SE</td><td>46</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td><td>Yes</td></tr>
@@ -275,13 +275,13 @@ You can purchase long codes for some countries directly through the AWS End User
 
 **Notes**
 
-1. <a name="sms-support-note-1"></a>Senders are required to use a pre-registered alphabetic Sender ID. To request a Sender ID from Support, [How to request a sender ID through Support](sender-id-awssupport-open.md). Some countries require senders to meet specific requirements or abide by certain restrictions to obtain approval. In these cases, Support might contact you for additional information after you submit your Sender ID request.
+1. <a name="sms-support-note-1"></a>You must use a pre-registered alphabetic Sender ID. All countries with sender ID registration requirements have self-service registration forms available in the console. For more information, see [Registration forms](registrations-country.md).
 
 1. <a name="sms-support-note-2"></a>Senders are required to use a pre-registered template for each type of message that they plan to send. If a sender doesn’t meet this requirement, their messages will be blocked. To register a template, [China SMS template registration form](phone-numbers-sms-template-registration.md). Some countries require senders to meet additional, specific requirements or abide by certain restrictions to obtain approval. In these cases, Support might ask you for additional information.
 **Note**
 To send messages to China, you must first register your templates through Support for approval.
 
-1. <a name="sms-support-note-3"></a>Senders are required to use a pre-registered alphabetic Sender ID. Additional registration steps are required. For more information, see [India sender ID registration process in AWS End User Messaging SMS](registrations-sms-senderid-india.md).
+1. <a name="sms-support-note-3"></a>You must use a pre-registered alphabetic Sender ID. Additional registration steps are required. For more information, see [India sender ID registration process in AWS End User Messaging SMS](registrations-sms-senderid-india.md).
 
 1. <a name="sms-support-note-4"></a>Long codes in these countries only support inbound messaging. In other words, you can't use these long codes to send messages *to* your recipients, but you can use them to receive messages *from* your recipients. These long codes are useful way to allow your recipients to opt-out if you send messages using an alphabetic Sender ID, because Sender IDs only support outbound messages.
 
@@ -302,3 +302,7 @@ To send messages to China, you must first register your templates through Suppor
 1. <a name="sms-support-note-10"></a>Messages sent from internationally enabled numbers such as toll-free numbers are sent on a best effort basis and may be replaced downstream from AWS to send from a shared phone number or sender ID.
 
 1. <a name="sms-support-note-11"></a>As of March 1, 2026, France does not support the dash character (-) in sender IDs. Sender IDs for France must only contain alphanumeric characters (a-z, A-Z, 0-9) without any special characters or spaces.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

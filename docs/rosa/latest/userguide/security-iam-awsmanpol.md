@@ -315,3 +315,7 @@ View details about updates to AWS managed policies for ROSA since this service b
 | ROSAWorkerInstancePolicy — New policy added |  ROSA added a new policy to allow the service to manage cluster resources. To learn more, see [AWS managed policy: ROSAWorkerInstancePolicy](#security-iam-awsmanpol-rosaworkerinstancepolicy). | April 20, 2023 |
 | ROSAManageSubscription — New policy added |  ROSA added a new policy to grant the AWS Marketplace permissions required to manage the ROSA subscription. To learn more, see [AWS managed policy: ROSAManageSubscription](#security-iam-awsmanpol-rosamanagesubscription). | April 11, 2022 |
 |  Red Hat OpenShift Service on AWS started tracking changes |  Red Hat OpenShift Service on AWS started tracking changes for its AWS managed policies. | March 2, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Red Hat OpenShift Service on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rosa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

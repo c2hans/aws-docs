@@ -36,3 +36,7 @@ If none of the previous suggestions resolved the HTTP status code 404 (Not Found
 + Try a different browser. We don't recommend using Internet Explorer.
 
 If you have completed all of the troubleshooting suggestions and are still receiving a **Page not found** error, contact the Private Offer Success Team (POST) through the [AWS Marketplace Management Portal](https://aws.amazon.com/marketplace/management/contact-us/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

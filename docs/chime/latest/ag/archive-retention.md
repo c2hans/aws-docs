@@ -18,3 +18,7 @@ Amazon Chime Enterprise accounts have a retention period of 90 days. The policy 
 Retention policies do not apply to the following:
 Chat conversations that do not include members of Amazon Chime Enterprise accounts
 Chat rooms created by users who don't belong to an Amazon Chime Enterprise account
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

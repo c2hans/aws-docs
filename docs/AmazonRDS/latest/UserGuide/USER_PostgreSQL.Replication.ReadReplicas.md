@@ -21,3 +21,7 @@ The following are limitations for PostgreSQL read replicas:
 + You can't turn on automated backups for PostgreSQL read replicas for RDS for PostgreSQL versions earlier than 14.1. Automated backups for read replicas are supported for RDS for PostgreSQL 14.1 and higher versions only. For RDS for PostgreSQL 13 and earlier versions, create a snapshot from a read replica if you want a backup of it.
 + Point-in-time recovery (PITR) isn't supported for read replicas. You can use PITR with a primary (writer) instance only, not a read replica. To learn more, see [Restoring a DB instance to a specified time for Amazon RDS](USER_PIT.md).
 + Read replicas for PostgreSQL versions 12 and lower automatically reboot during the 60-90 day maintenance window to apply password rotation. If the replica loses connection to the source before the scheduled reboot, it still reboots to resume replication. For PostgreSQL versions 13 and higher, read replicas might experience brief replication disconnections and reconnections during the password rotation process.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

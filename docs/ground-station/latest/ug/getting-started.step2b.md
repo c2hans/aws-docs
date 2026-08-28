@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/getting-started
  In the next step, you'll create the configs needed for your mission profile. If you want to enable telemetry, you'll create a *Telemetry Sink Config* in addition to your tracking config and dataflow configs. For detailed setup instructions, see [Set up telemetry](telemetry.setup.md).
 
  For more information about TelemetrySinkConfig, see [Telemetry Sink Config](how-it-works.config.md#how-it-works.config-telemetry-sink).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

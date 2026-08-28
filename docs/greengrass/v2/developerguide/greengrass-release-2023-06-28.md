@@ -32,3 +32,7 @@ The following table lists components provided by AWS that include new and update
 | Greengrass CLI | Version 2.11.0 of the [Greengrass CLI](greengrass-cli-component.md) is available.<a name="changelog-cli-2.11.0"></a>**New features**<br />   Enables you to cancel a local deployment.   Enables you to configure a failure handling policy for a local deployment.   Improves detailed deployment status reporting.    |
 | Disk spooler | Version 1.0.0 of the [disk spooler](disk-spooler-component.md) component is available.+  The disk spooler component provides persistent storage of messages sent from Greengrass core devices to AWS IoT Core.  |
 | Log manager | Version 2.3.5 of the [log manager](log-manager-component.md) component is available.<a name="changelog-log-manager-2.3.5"></a>**Improvements**<br /> Improves log upload speed.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,3 +65,7 @@ Cancel your pay-as-you-go subscription before changing your product's visibility
    After you verify your integration and you’re ready for the product to be live, choose **Update visibility**. The AWS Marketplace Seller Operations team will review your product and update the price before the visibility can be updated to Public.
 **Note**
 AWS Marketplace Seller Operations uses a manual process to verify and update SaaS products. The process takes 7–10 business days to update visibility to public, and longer if the team finds errors. For more information about timing, see [Timing and expectations](https://docs.aws.amazon.com/marketplace/latest/userguide/product-submission.html#timing-and-expectations) in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

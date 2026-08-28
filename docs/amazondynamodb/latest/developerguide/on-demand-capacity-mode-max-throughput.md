@@ -41,3 +41,7 @@ When you use maximum throughput for tables in on-demand mode, the following cons
 If your application exceeds the maximum read or write throughput you've set on your on-demand table, DynamoDB begins to throttle those requests. When DynamoDB throttles a read or write, it returns a `ThrottlingException` to the caller. You can then take appropriate action, if required. For example, you can increase or disable the maximum table throughput setting, or wait for a short interval before retrying the request.
 
 To simplify monitoring the maximum throughput configured for a table or global secondary index, CloudWatch provides the following metrics: [OnDemandMaxReadRequestUnits](metrics-dimensions.md#OnDemandMaxReadRequestUnits) and [OnDemandMaxWriteRequestUnits](metrics-dimensions.md#OnDemandMaxWriteRequestUnits).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

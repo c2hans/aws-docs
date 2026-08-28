@@ -503,3 +503,7 @@ export function request(ctx) {
 + `typeHint.TIME` - The corresponding string parameter value is sent as an object of the `TIME` type to the database. The accepted format is `HH:MM:SS[.FFF]`.
 + `typeHint.TIMESTAMP` - The corresponding string parameter value is sent as an object of the `TIMESTAMP` type to the database. The accepted format is `YYYY-MM-DD HH:MM:SS[.FFF]`.
 + `typeHint.UUID` - The corresponding string parameter value is sent as an object of the `UUID` type to the database.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

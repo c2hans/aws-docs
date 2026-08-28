@@ -249,3 +249,7 @@ The Amazon Macie REST API includes the following operations.
 + [UpdateSensitivityInspectionTemplate](templates-sensitivity-inspections-id.md#UpdateSensitivityInspectionTemplate)
 
   Updates the settings for the sensitivity inspection template for an account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -82,3 +82,7 @@ The following video demonstrates how to create views and query them from Athena 
 + [Creating Data Catalog views using AWS Glue APIs](views-api-usage.md)
 + [Granting permissions on Data Catalog views](grant-perms-views.md)
 + [Materialized views](materialized-views.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

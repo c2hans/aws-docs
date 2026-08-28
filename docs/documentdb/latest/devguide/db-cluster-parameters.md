@@ -28,3 +28,7 @@ These settings should not be confused with Amazon DocumentDB cluster parameter g
 | StorageType | Yes | The storage type for the DB cluster: Standard (`standard`) or I/O-Optimized (`iopt1`).<br />Default: `standard`<br />This parameter can be configured with `CreateDBCluster` and `ModifyDBCluster`.<br />For more information, see [Amazon DocumentDB cluster storage configurations](db-cluster-storage-configs.md). |
 | Tags | Yes |  |
 | VpcSecurityGroupIds | No | After a cluster has been created, you cannot modify the VPC that the cluster resides in. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

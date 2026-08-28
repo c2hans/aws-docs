@@ -113,3 +113,7 @@ When creating or using Oracle Database@AWS resources, keep in mind the following
 + You can't delete an ODB network that has an ODB peering connection created by a trusted account until the ODB peering connection has been removed.
 + The buyer account can't delete Oracle Database@AWS resources created by trusted accounts.
 + Trusted accounts can view shared resources but can't modify or delete Oracle Database@AWS resources owned by the buyer account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 + [Troubleshooting a Windows WorkSpace marked as unhealthy](troubleshooting-a-windows-workspace-marked-as-unhealthy.md)
 + [Collecting a WorkSpaces support log bundle for debugging](collecting-a-workspaces-support-log-bundle-for-debugging.md)
 + [How to check latency to the closest AWS Region](how-to-check-latency-to-the-closest-aws-region.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

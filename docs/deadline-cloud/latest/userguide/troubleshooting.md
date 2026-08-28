@@ -108,7 +108,7 @@ Some possible reasons that a job can fail validation checks include the followin
 + The job contains too many total tasks.
 + There was an internal service error that prevents the job from being created.
 
-To see the quotas for the maximum number of steps and tasks in a job, use the Service Quotas console. For more information, see [Quotas for Deadline Cloud](deadline-cloud-quotas.md).
+To see the quotas for the maximum number of steps and tasks in a job, use the Service Quotas console. For more information, see [Service quotas and throttling for Deadline Cloud](deadline-cloud-quotas.md).
 
 #### CHUNK[INT] task parameter error
 <a name="troubleshooting-task-chunking-extension"></a>
@@ -190,3 +190,7 @@ Linux
 <a name="troubleshooting_additional_resources"></a>
 
 You can find additional information and resources on [GitHub](https://github.com/aws-deadline).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

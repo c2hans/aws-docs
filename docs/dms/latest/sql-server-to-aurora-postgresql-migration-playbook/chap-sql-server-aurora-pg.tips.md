@@ -49,3 +49,7 @@ This section provides migration tips that can help save time as you transition f
 +  Aurora PostgreSQL is much stricter than SQL Server in terms of statement terminators. Make sure that you always use a semicolon at the end of statements.
 + In Aurora PostgreSQL, you can’t use the `CREATE PROCEDURE` syntax. You can use only the `CREATE FUNCTION` syntax. You can create a function that returns void.
 + Beware of control characters when copying and pasting a script to Aurora PostgreSQL clients. Aurora PostgreSQL is much more sensitive to control characters than SQL Server and they result in frustrating syntax errors that are hard to find.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -60,3 +60,7 @@ The high-level process flow for the solution, including the components deployed 
 1. The `MetricsEtlBucket` S3 bucket contains the metric log data transformed and partitioned through ETL. The data in this bucket is made available to AWS Glue clients for queries.
 
 1. Many different types of clients use [AWS Glue Data Catalog](https://docs.aws.amazon.com/glue/latest/dg/catalog-and-crawler.html) to access the Prebid Server metric data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying a Prebid Server on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

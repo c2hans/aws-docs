@@ -107,3 +107,7 @@ After you select the portal design, review the information for the portal.
 If you use an Amazon Cognito user pool to control access to your portal, you must set the callback URL to the portal's default URL in the app client. For more information, see [Application-specific settings with app clients](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-settings-client-apps.html).
 
 Your portal won't be available to consumers after you create it. You must publish your portal for it to be accessible on the internet. For more information, see [Publish a portal in API Gateway](apigateway-portals-publish-portal.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -122,3 +122,7 @@ Note the following information about how the worker AMI updates.
 + Worker AMIs are continuously updated with no versioning system.
 + Updates occur automatically as part of the service operation.
 + No advance notification system is provided for AMI updates.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

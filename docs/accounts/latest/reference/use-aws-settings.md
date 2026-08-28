@@ -21,3 +21,7 @@ We're currently releasing our new experience to a limited number of customers. Y
 + Manage your security settings and sign-in preferences. For more information, see [Update your password in AWS Settings](update-password.md) and [Manage multi-factor authentication (MFA) in AWS Settings](register-mfa-devices.md).
 
 When you manage your profile information or your security settings, you'll be redirected to the AWS Builder ID hub. Your AWS Builder ID is created when you use Sign up for AWS (new). For more information, see [What is AWS Builder ID?](https://docs.aws.amazon.com/signin/latest/userguide/sign-in-builder-id.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

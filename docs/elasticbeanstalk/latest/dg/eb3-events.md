@@ -53,3 +53,7 @@ $ eb events
 2014-10-29 21:59:14     INFO    Environment health has been set to GREEN
 2014-10-29 21:59:43     INFO    Adding instance 'i-c7ee492d' to your environment.
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

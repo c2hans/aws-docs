@@ -117,3 +117,7 @@ After you have finished exploring your policy store, delete it.
 1. Under **Delete policy store**, choose **Delete this policy store**.
 
 1. In the **Delete this policy store?** dialog box, enter *delete*, and then choose **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

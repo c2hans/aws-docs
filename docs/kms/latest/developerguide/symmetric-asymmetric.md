@@ -43,3 +43,7 @@ Asymmetric KMS keys and asymmetric data key pairs are supported in all AWS Regio
 + To learn how to sign messages and verify signatures with asymmetric KMS keys, see [Digital signing with the new asymmetric keys feature of AWS KMS](https://aws.amazon.com/blogs/security/digital-signing-asymmetric-keys-aws-kms/) in the *AWS Security Blog*.
 + To learn about special considerations for deleting asymmetric KMS keys, see [Deleting asymmetric KMS keys](deleting-keys.md#deleting-asymmetric-cmks).
 + To identify and view asymmetric KMS keys, see [Identify asymmetric KMS keys](identify-key-types.md#identify-asymm-keys).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

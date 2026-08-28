@@ -24,3 +24,7 @@ In either view, you can do the following:
 + [Deleting actions from the schedule (console)](schedule-using-console-delete.md)
 + [Modifying actions in the schedule (console)](schedule-modify.md)
 + [Viewing the schedule (console)](schedule-using-console-view.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

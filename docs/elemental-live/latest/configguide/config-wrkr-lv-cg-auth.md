@@ -51,3 +51,7 @@ You can require users to provide valid credentials when they access Elemental Li
 1. For the prompt `Httpd must be restarted, which may interrupt REST commands. Restart now?`, type **Y**.
 
 1. Create users through the node's web interface. For instructions, see [Add users](config-wrkr-lv-cg-users.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

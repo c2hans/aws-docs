@@ -14,3 +14,7 @@ You can save time by cloning a training job that belongs to a hyperparameter tun
 
 **Tagging**
 Automatic Model Tuning launches multiple training jobs within a single parent tuning job to discover the ideal weighting of model hyperparameters. Tags can be added to the parent tuning job as described in the [Components of a tuning job](multiple-algorithm-hpo-create-tuning-jobs.md#multiple-algorithm-hpo-create-tuning-jobs-define-settings) section and these tags are then propagated to the individual training jobs underneath. Customers can use these tags for purposes, such as cost allocation or access control. To add tags using the SageMaker SDK, use [`AddTags`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AddTags.html) API. For more information about using tagging for AWS resources, see [Tagging AWS resources](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

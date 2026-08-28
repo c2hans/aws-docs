@@ -115,3 +115,7 @@ EKS supports IPv6 for Pods running on Fargate. Pods running on Fargate will cons
 <a name="_deploy_the_aws_load_balancer_controller_lbc"></a>
 
  **The upstream in-tree Kubernetes service controller does not support IPv6**. We recommend using the [most recent version](https://kubernetes-sigs.github.io/aws-load-balancer-controller) of the AWS Load Balancer Controller add-on. The LBC will only deploy a dual-stack NLB or a dual-stack ALB upon consuming corresponding kubernetes service/ingress definition annotated with: `"alb.ingress.kubernetes.io/ip-address-type: dualstack"` and `"alb.ingress.kubernetes.io/target-type: ip"`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

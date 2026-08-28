@@ -30,3 +30,7 @@ The following table provides a list of AWS service integrations that Security La
 | [Amazon SageMaker AI](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)  | Subscriber | Generate AI-powered insights to analyze Security Lake data. | [Amazon SageMaker AI integration](sagemaker-integration.md) |
 | [AWS AppFabric](https://docs.aws.amazon.com/appfabric/latest/adminguide/what-is-appfabric.html)  | Source | Ingests and normalize software as a service (SaaS) application logs into Security Lake standard format. | [AWS AppFabric integration](appfabric-integration.md) |
 | [AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html)  | Source | Centralize and store security findings from Security Hub CSPM in Security Lake standard format. | [AWS Security Hub CSPM integration](securityhub-integration.md) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

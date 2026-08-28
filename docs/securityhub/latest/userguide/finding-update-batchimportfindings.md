@@ -88,3 +88,7 @@ Security Hub CSPM updates the top-level attribute only if the attribute was not 
 For example, `BatchImportFindings` provides both `Confidence` and `FindingProviderFields.Confidence`.
 For a new finding, Security Hub CSPM uses the value in `FindingProviderFields` to populate both the top-level attribute and the corresponding attribute in `FindingProviderFields`. It doesn't use the provided top-level attribute value.
 For an existing finding, Security Hub CSPM uses both values. However, it updates the top-level attribute value only if the attribute was not already updated by `BatchUpdateFindings`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

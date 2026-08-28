@@ -111,3 +111,7 @@ This table clarifies the matrix of support:
 | Not publishing (then starts) | ✅ Visible (on publish through participant joined event) | ✅ Visible (on publish through participant joined event) |
 | Already publishing (never republishes) | ✅ Visible (immediately through participant metadata updated event) | ❌ Not Visible |
 | Already publishing (unpublishes and republishes) | ✅ Visible (immediately through participant metadata updated event) | ⚠️ Eventually Visible (on republish through participant joined event) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

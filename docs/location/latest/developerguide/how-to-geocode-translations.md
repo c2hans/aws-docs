@@ -113,3 +113,7 @@ aws geo-places geocode --key ${YourKey} --query-text "1 Rue de Rivoli, Paris" --
 + Valid values for `AddressTranslations` are `District`, `Locality`, `Region`, and `SubRegion`.
 + Each translation includes a `Type` field indicating the kind of name variant: `BaseName` (official name), `Abbreviation`, `Exonym` (translation to another language), `Shortened`, or `Synonym`.
 + The `Primary` field indicates the primary name variant for a given language.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

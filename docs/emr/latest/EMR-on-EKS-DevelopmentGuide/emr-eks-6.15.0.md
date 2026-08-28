@@ -82,3 +82,7 @@ Release notes for Amazon EMR on EKS 6.15.0
 
 The following features are included with the 6.15 release of Amazon EMR on EKS.
 + **[Amazon EMR on EKS with Apache Flink](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/run-flink-jobs.html)** - With Amazon EMR on EKS 6.15.0, you can run your Apache Flink-based application along with other types of applications on the same Amazon EKS cluster. This helps improve resource utilization and simplify infrastructure management. You can leverage Spot Instances in a Flink application with graceful decommission, and achieve faster restart times with fine-grained recovery and task-local recovery with Amazon EBS. Accessibility and monitoring features include the ability to launch a Flink application with jars that are stored in Amazon S3, access to the AWS Glue Data Catalog, monitoring integration with Amazon S3 and Amazon CloudWatch, and container log rotation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

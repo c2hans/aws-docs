@@ -71,3 +71,7 @@ If you received a valid output, then it is likely to be an application-level iss
 + Confirm that your Java application doesn't have a bad DNS cache. If possible, configure your application to adhere to the DNS TTL. For more information, see [Setting the JVM TTL for DNS name lookups](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/jvm-ttl-dns.html).
 
 For additional information on how to troubleshoot network errors, see [How do I troubleshoot Amazon SQS “ETIMEOUT” and “UnknownHostException” connection errors?](https://repost.aws/knowledge-center/sqs-connection-error) in the *AWS Knowledge Center Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

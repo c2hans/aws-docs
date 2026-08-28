@@ -51,3 +51,7 @@ To launch instances from AWS Marketplace products using a command line tool, fir
 | AWS CLI | Use the [run-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/run-instances.html) command, or see the following topic for more information: [Launch your instance](https://docs.aws.amazon.com/cli/latest/userguide/cli-services-ec2-instances.html) in the *AWS Command Line Interface User Guide*. |
 | AWS Tools for Windows PowerShell  | Use the [New-EC2Instance](https://docs.aws.amazon.com/powershell/latest/reference/items/New-EC2Instance.html) command, or see the following topic for more information: [Launch an Amazon EC2 Instance Using Windows PowerShell](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-ec2-launch.html) |
 | Query API | Use the [RunInstances](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_RunInstances.html) request. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

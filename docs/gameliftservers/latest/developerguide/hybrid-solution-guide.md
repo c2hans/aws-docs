@@ -74,3 +74,7 @@ Tips
 + As player demand fluctuates, manage game session loads seamlessly across managed and self-managed resources.
 + With the Amazon GameLift Servers Agent, you can use the same tools to manage game server life cycles on all types of hosting resources.
 + Gather game and player metrics and logs across all hosting resources. Take advantage of Amazon GameLift Servers features and other AWS services to combine data and develop cohesive observability solutions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

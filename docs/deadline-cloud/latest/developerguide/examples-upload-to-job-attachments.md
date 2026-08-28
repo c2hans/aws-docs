@@ -35,3 +35,7 @@ python upload_to_job_attachments.py \
 For high-bandwidth networks, increase `--threads` and `--max-concurrency`. For bandwidth-constrained environments, set `--max-bandwidth` to throttle uploads. For large files, increase `--multipart-chunksize`.
 
 For a job-based alternative that copies files between Amazon S3 buckets, see [Copy an S3 prefix to job attachments on Deadline Cloud](examples-jb-copy-s3-to-attachments.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

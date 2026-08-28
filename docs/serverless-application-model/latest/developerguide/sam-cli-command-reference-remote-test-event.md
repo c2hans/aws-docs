@@ -38,3 +38,7 @@ List existing shareable test events for an AWS Lambda function. For more referen
 
 `put`
 Save an event from a local file to the EventBridge schema registry. For more reference information, see [sam remote test-event put](sam-cli-command-reference-remote-test-event-put.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,3 +25,7 @@ Add the following statement to your custom service role's policy:
 
 **Note**
 If updating Container Insights fails because of missing permissions, the compute environment status changes to `INVALID` with a status reason explaining the error. After you correct the permissions, submit any `UpdateComputeEnvironment` request to trigger a retry. AWS Batch automatically reconciles the Container Insights setting on the next update workflow.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

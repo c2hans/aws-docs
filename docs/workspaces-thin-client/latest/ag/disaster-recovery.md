@@ -41,3 +41,7 @@ Once business continuity is configured, devices must be registered and active wi
 If the WorkSpaces Thin Client device management services remain unavailable beyond 24 hours, the following error message will display:
 
 **"An error has occurred. Please try again. If the issue persists, contact your IT administrator. (Error Code: 3006)."**
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

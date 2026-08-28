@@ -25,3 +25,7 @@ Follow these steps to complete the production installation of your AWS Partner C
 1. (Optional) Perform data backfill. This process ensures that both AWS Originated and Partner Originated opportunity referrals can be identified during future updates. For more information, refer to [Stage 6: Production approval](https://docs.aws.amazon.com/partner-central/latest/crm/stage-6-production-approval.html) in the CRM onboarding process.
 
 1. Activate the production integration to allow the exchange of files through the Amazon S3 bucket. For details, refer to [Stage 7: Launch](https://docs.aws.amazon.com/partner-central/latest/crm/stage-7-launch.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

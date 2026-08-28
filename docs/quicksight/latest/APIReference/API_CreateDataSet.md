@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/quicksight/latest/APIReference/API_Creat
 # CreateDataSet
 <a name="API_CreateDataSet"></a>
 
-Creates a dataset. This operation doesn't support datasets that include uploaded files as a source.
+Creates a dataset.
 
 ## Request Syntax
 <a name="API_CreateDataSet_RequestSyntax"></a>
@@ -1041,3 +1041,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/quicksight-2018-04-01/CreateDataSet)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/quicksight-2018-04-01/CreateDataSet)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/quicksight-2018-04-01/CreateDataSet)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick Sight. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quicksight` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,3 +53,7 @@ Save the parameters that you provide at the command line to the AWS SAM configur
 For an example on using this command to validate a template, refer to [Validate AWS SAM template files](serverless-sam-cli-using-validate.md).
 
 For an example on using this command with cfn-lint, refer to [Validate your AWS SAM applications with CloudFormation Linter](validate-cfn-lint.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

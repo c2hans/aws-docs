@@ -16,3 +16,7 @@ You migrate users to other Team accounts by creating and configuring a destinati
 1. As needed, configure the account. For more information, see [Step 2 (optional): Configuring account settings](getting-started.md#acct-settings).
 
 1. Add users to the account. For more information, see [Step 3: Adding users to your account](getting-started.md#add-users).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

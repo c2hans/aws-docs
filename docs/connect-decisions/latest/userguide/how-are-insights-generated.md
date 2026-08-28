@@ -73,3 +73,7 @@ Recommendations are generated based on your business rules, operational constrai
 Insights are generated based on the frequency you configure in your metric-based rules (typically daily or weekly). The system processes new data according to your data refresh schedule, recalculates metrics, evaluates rules, and generates insights for any new issues detected.
 
 Existing insights are automatically updated or marked as complete when new data shows that the issue no longer meets the configured thresholds.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

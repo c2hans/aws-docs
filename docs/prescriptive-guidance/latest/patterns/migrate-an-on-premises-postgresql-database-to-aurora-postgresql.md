@@ -144,3 +144,7 @@ The steps described in this pattern also apply to target PostgreSQL databases on
 + [Getting Started with AWS DMS](https://aws.amazon.com/dms/getting-started/)
 + [Data migration step-by-step walkthroughs](https://docs.aws.amazon.com/dms/latest/sbs/DMS-SBS-Welcome.html)
 + [Amazon Aurora resources](https://aws.amazon.com/rds/aurora/getting-started/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

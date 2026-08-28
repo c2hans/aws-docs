@@ -98,3 +98,7 @@ The following table describes important changes in each release of Amazon Kendra
 | [New feature](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_Kendra.html) | CloudFormation now supports Amazon Kendra. For more information, see [Amazon Kendra resource type reference - CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_Kendra.html). | September 10, 2020 |
 | [New feature](https://docs.aws.amazon.com/kendra/latest/dg/vpc-interface-endpoints.html) | Amazon Kendra adds support for AWS PrivateLink. For more information, see [Amazon Kendra and interface VPC endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/kendra/latest/dg/vpc-interface-endpoints.html). | July 7, 2020 |
 | [New guide](https://docs.aws.amazon.com/kendra/latest/dg/what-is-kendra.html) | This is the first release of the *Amazon Kendra Developer Guide*. | May 11, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

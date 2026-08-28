@@ -15,3 +15,7 @@ To use AWS IoT FleetWise with a variety of programming languages, use the [AWS S
 + Handling error responses
 
 For command line access, use AWS IoT FleetWise with the [AWS CLI](https://aws.amazon.com/cli/). You can control AWS IoT FleetWise, and your other services, from the command line, and automate them through scripts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

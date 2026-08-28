@@ -105,3 +105,7 @@ The Amazon S3 bucket URI where Amazon GameLift Streams uploads the set of compre
 If the ZIP file name matches an existing one in the directory, the previous one will be overwritten.
 
  You can check on the status of the active session by calling the [GetStreamSession](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_GetStreamSession.html) API. From the stream session summary, you can get details about the status of exported files. If the status is **Pending**, then the stream session is still active, so Amazon GameLift Streams hasn't exported the files yet. If the status is **Succeeded**, navigate to the output URI to see the files in Amazon S3. If the status is **Failed**, check the `StatusReason` in the `ExportFilesMetaData`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

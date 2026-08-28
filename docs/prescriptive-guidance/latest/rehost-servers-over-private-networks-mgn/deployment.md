@@ -53,3 +53,7 @@ The [Cloud Migration Factory on AWS](https://aws.amazon.com/solutions/implementa
 These scripts automate the following:
 + MGN Agent installation on a Windows server using private endpoints
 + MGN Agent installation on Linux servers using private endpoints
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,3 +40,7 @@ When using the different country rules, your SMS traffic will show in the metric
 + **For Countries Set to Block** – All messages to these countries should appear as blocked in the metrics. If you see successful message deliveries, this means your phone number allow override rules are in place for specific numbers.
 + **For Countries Set to Monitor** – You will see recommendations for messages that should be blocked, but no actual blocking occurs unless you've set specific phone number block rules. Any blocked messages shown in the metrics are solely from your phone number override rules, which take precedence over monitor mode.
 + **For Countries Set to Filter** – Blocked messages and recommended-to-block metrics should match. If these numbers differ, it indicates your phone number override rules are active. Allow overrides will reduce the number of blocked messages, while block overrides will increase blocked messages beyond the recommendations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

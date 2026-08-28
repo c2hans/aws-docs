@@ -141,3 +141,7 @@ The following image shows how to set up a prompt in an Amazon Lex bot intent:
 ![An Amazon Lex intent containing a prompt with 2 links, one for an FAQ and another for a phone number.](http://docs.aws.amazon.com/connect/latest/adminguide/images/chat-rtf-lex-flow.png)
 
 For more information about intents, see [Adding intents](https://docs.aws.amazon.com/lexv2/latest/dg/add-intents.html) in the *Amazon Lex V2 Developer Guide*. For more information about Lambda messages, see [Enabling custom logic with AWS Lambda functions](https://docs.aws.amazon.com/lexv2/latest/dg/lambda.html), also in the *Amazon Lex V2 Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

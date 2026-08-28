@@ -108,3 +108,7 @@ Repeat the same steps as `SHARED_SERVICES`, but:
 + Use `PROD_S3_ROLE` and `arn:aws:iam::333333333333:role/ProdS3AccessRole` in IAM Role Mapping
 
 For security best practices including IAM role management, trust policy configuration, and authorization requirements, see [Best practices for IAM Security](https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/best-practices.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for SAP ABAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-sapabap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

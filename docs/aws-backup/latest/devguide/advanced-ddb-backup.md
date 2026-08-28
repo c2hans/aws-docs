@@ -177,3 +177,7 @@ With this change, you or your backup administrator can create access policies fo
 Charges for backups (including storage, data transfers, restores, and early deletion) appear under “Backup” in your AWS bill. Previously, charges appeared under “DynamoDB” in your bill.
 
 This change ensures that you can use AWS Backup billing to centrally monitor your backup costs. See [Metering, costs, and billing for AWS Backup](metering-and-billing.md) for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

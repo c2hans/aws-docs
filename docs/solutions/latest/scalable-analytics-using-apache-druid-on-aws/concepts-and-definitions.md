@@ -17,3 +17,7 @@ A replicated group of servers in the same application is called a *quorum*, and 
 
 **Note**
 For a general reference of standard Apache Druid concepts, refer to the [Apache Druid documentation](https://druid.apache.org/docs/latest/design/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Scalable Analytics Using Apache Druid on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -74,3 +74,7 @@ For information about the permissions required to designate a member account as 
 
 **To designate a member account as a delegated administrator for GuardDuty**
 See [Designate a delegated administrator and add member accounts (console)](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_organizations.html#organization_thru_console) and [Designate a delegated administrator and add member accounts (API)](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_organizations.html#organization_thru_api)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

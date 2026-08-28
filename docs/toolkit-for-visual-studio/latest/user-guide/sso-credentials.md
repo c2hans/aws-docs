@@ -43,3 +43,7 @@ For more information, see [Configuring the AWS CLI to use AWS Single Sign-On](ht
 <a name="sso-sign-in"></a>
 
 When signing in with an IAM Identity Center profile, the default browser is launched to the `sso_start_url` specified in your `credential file`. You must verify your IAM Identity Center login before you can access your AWS resources in AWS Toolkit for Visual Studio. If your credentials expire, you'll have to repeat the connection process to obtain new temporary credentials.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -72,3 +72,7 @@ Both Solr and OpenSearch use the Apache Lucene library, so their underlying data
    + Enhance your infrastructure to meet or exceed desired targets.
 
 For additional items such as buffers, indexing components, and other data movement and persistence constructs used before writing the data to Solr, see the [Architectural comparison](architectural-comparison.md) section. To calculate your actual Solr costs, you will need to factor in third-party products, managed service provider (MSP) costs, and staffing costs, which are outside the scope of this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -192,3 +192,7 @@ You can provide feedback about Amazon Q Developer in chat applications directly 
 ```
 
 To leave feedback from the Amazon Q Developer in chat applications console, navigate to the [Amazon Q Developer in chat applications console](https://console.aws.amazon.com/chatbot/) and choose the **Feedback** link at the bottom of the console. All feedback is sent directly to and reviewed by the Amazon Q Developer in chat applications team.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q Developer in chat applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chatbot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

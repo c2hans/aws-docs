@@ -74,3 +74,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/sddc-deployment-and-b
 + ` arn:aws:iam::role/vmware-sddc-formation-4c517b6f-1e2-BasicLambdaRole-SD4OX7YN3MNU `
 + ` arn:aws:iam::role/vmware-sddc-formation-4c517b6f-1e2-RemoteRolePayer-169300WFK6EYA `
 + ` arn:aws:iam::aws:policy/AmazonVPCCrossAccountNetworkInterfaceOperations `
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

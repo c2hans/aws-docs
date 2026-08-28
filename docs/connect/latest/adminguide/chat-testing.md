@@ -122,3 +122,7 @@ When you're testing the voice, chat, and task experiences, you might also want t
 
 1. To view metrics by channel in a real-time metrics report, go to **Settings**, **Groupings**, **Queues grouped by channels**, **Apply**. Your report will look similar to the following image.
 ![The real-time metrics report page, the Channels column.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-rtm-grouping-by-channel.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -106,3 +106,7 @@ Examples of such states are CICS's Temporary Storage Queues or Resource Definiti
 This design, combined with load balancing and shared sessions, leads to most of user-facing dialog (OLTP, "Online Transactional Processing") to be distributable between multiple "nodes" (here, tomcat instances).
 
 Indeed a user may execute a transaction on any server and not care if the next transaction call is performed on a different server. Then when a new server is spawned (because of auto scaling, or to replace a non healthy server), we can guarantee that any reachable and healthy server can run the transaction as expected with the proper results (expected returned value, expected data change in database, etc.).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

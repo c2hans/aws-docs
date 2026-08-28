@@ -26,3 +26,7 @@ You can use the local keyboard to input text into elements of the WorkSpaces App
 To display the on-screen keyboard on a Windows computer, tap the keyboard icon in the Windows system tray. If the keyboard icon doesn't appear in the Windows system tray, switch to Windows tablet mode. Tap the keyboard icon in the Windows system tray again to hide the on-screen keyboard.
 
 For more information about function keys, see the next section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -106,6 +106,7 @@ The following table lists the specific endpoints for the Region the Connect Cust
 | af-south-1 | TurnNlb-29b8f2824c2958b8.elb.af-south-1.amazonaws.com |
 | ap-northeast-1 | TurnNlb-3c6ddabcbeb821d8.elb.ap-northeast-1.amazonaws.com |
 | ap-northeast-2 | TurnNlb-a2d59ac3f246f09a.elb.ap-northeast-2.amazonaws.com |
+| ap-northeast-3 | TurnNlb-fba2afb642c525c3.elb.ap-northeast-3.amazonaws.com |
 | ap-southeast-1 | TurnNlb-261982506d86d300.elb.ap-southeast-1.amazonaws.com |
 | ap-southeast-2 | TurnNlb-93f2de0c97c4316b.elb.ap-southeast-2.amazonaws.com |
 | ca-central-1 | TurnNlb-b019de6142240b9f.elb.ca-central-1.amazonaws.com |
@@ -231,3 +232,7 @@ When rerouting audio to an existing device, consider the location of the device 
 <a name="using-directconnect"></a>
 
 Contact Control Panel (CCP) network connectivity issues are most often rooted in your route to AWS using private WAN/LAN, ISP, or both. While Direct Connect does not solve issues specific to private LAN/WAN traversal to your edge router, it can help solve for latency and connectivity issues between your edge router and AWS resources. Direct Connect provides a durable, consistent connection rather than relying on your ISP to dynamically route requests to AWS resources. It also allows you to configure your edge router to redirect AWS traffic across dedicated fiber rather than traversing the public WAN.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

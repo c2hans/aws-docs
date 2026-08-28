@@ -123,3 +123,7 @@ This procedure applies only to instance types that support instance storage. For
    ```
 **Important**
 Instance store volume data is lost when an instance is stopped or hibernated; this includes the instance store swap space formatting created in [Step 3](#step_mkswap). If you stop and restart an instance that has been configured to use instance store swap space, you must repeat [Step 1](#step_swap_start) through [Step 5](#step_swap_enable) on the new instance store volume.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

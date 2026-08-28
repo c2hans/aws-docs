@@ -66,3 +66,7 @@ These tools interact directly with OpenSearch data and APIs:
 + `MetricChangeAnalysisTool` – Compares percentile distributions of numeric fields between two time ranges.
 + `DataDistributionTool` – Analyzes field value distributions in a target time range, optionally compared to a baseline.
 + `GenericOpenSearchApiTool` – A flexible tool for calling any OpenSearch API endpoint directly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

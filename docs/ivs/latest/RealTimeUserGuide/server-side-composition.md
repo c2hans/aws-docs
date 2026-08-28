@@ -15,3 +15,7 @@ Broadcasting or recording a stage using server-side composition offers numerous 
 + [Custom Participant Ordering](ssc-getting-started-custom-participant-ordering.md)
 + [Enabling Screen Share in IVS Server-Side Composition](ssc-getting-started-screen-share.md)
 + [Known Issues and Workarounds](ssc-known-issues.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

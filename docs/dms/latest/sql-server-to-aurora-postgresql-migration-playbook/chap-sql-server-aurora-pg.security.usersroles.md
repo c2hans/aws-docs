@@ -117,3 +117,7 @@ The following table summarizes common security tasks and the differences between
 | Grant `SELECT` on a schema |  `GRANT SELECT ON SCHEMA::<Schema Name> to <User Name>`  |  `GRANT SELECT ON ALL TABLES IN SCHEMA <Schema Name> TO <User Name>;`  |
 
 For more information, see [CREATE ROLE](https://www.postgresql.org/docs/13/sql-createrole.html) in the *PostgreSQL documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

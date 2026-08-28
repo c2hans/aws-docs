@@ -75,3 +75,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/secure-media-delivery-a
 1.  The newly created key is promoted as the primary key and replaces the key value of primary secret in Secrets Manager.
 
 1.  At this point, when the library method generating token retrieves keys from Secrets Manager it uses a new primary key, which is also available in CloudFront Functions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

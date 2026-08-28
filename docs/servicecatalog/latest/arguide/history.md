@@ -21,3 +21,7 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
 |  AWS managed policy updates – Updates to existing policies  |  Updates to the AWS Service Catalog AppRegistry managed policy [AWSServiceCatalogAppRegistryFullAccess](https://docs.aws.amazon.com/servicecatalog/latest/arguide/full.html).  |  November 13, 2023  |
 |  AWS managed policy updates – Updates to existing policies  |  Updates to the following AWS Service Catalog AppRegistry managed policies: +   [AWSServiceCatalogAppRegistryFullAccess](https://docs.aws.amazon.com/servicecatalog/latest/arguide/full.html)  <br />+   [AWSServiceCatalogAppRegistryReadOnlyAccess](https://docs.aws.amazon.com/servicecatalog/latest/arguide/read-only.html)   |  November 17, 2022  |
 |  AppRegistry Administrator Guide  |  The release of the AppRegistry Administrator Guide.  |  June 15, 2022  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

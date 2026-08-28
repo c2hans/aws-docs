@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/logical-separation/vp
 +  Use VPC features like [AWS PrivateLink](https://aws.amazon.com/privatelink) to create private connections to resources outside of the customer’s VPC. These private connections do not traverse the public Internet and can provide secure connectivity between VPCs, AWS services, and on-premises applications.
 
  Additionally, all traffic within a VPC and inter-region peering is transparently encrypted when using [supported instance types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/data-protection.html#encryption-transit). From an infrastructure standpoint, physical network encryption is used by AWS to encrypt network traffic on any link outside of AWS physical control such as between data-centers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

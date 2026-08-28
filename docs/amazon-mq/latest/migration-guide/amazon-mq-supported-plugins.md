@@ -12,3 +12,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/amazon-
 +  [forcePersistencyModeBrokerPlugin](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/permitted-attributes.html#forcePersistencyModeBrokerPlugin.attributes): Allows you to force every incoming message to be *persistent* or *non-persistent*. This is useful if you've set up a broker usage policy to process only persistent or non-persistent messages.
 +  [statisticsBrokerPlugin](https://activemq.apache.org/statisticsplugin): Enables you to retrieve statistics from the broker or its destinations.
 +  [timeStampingBrokerPlugin](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/permitted-attributes.html#timeStampingBrokerPlugin.attributes): Allows you to update a JMS Client's timestamp on a message with a broker timestamp. You can trust the timestamp set on your Amazon MQ brokers when client-side machine clocks are known to be incorrect.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

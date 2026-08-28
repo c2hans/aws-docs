@@ -46,3 +46,7 @@ In other cases, you could use step lines to call attention to abrupt changes or 
    +  To undo one change, click the undo arrow at top left. Repeat as needed. There is also a redo arrow.
    +  To reset the base style for a data series, select **Base style **and then click **Reset to default**.
    +  To remove all styling from a data series, listed in **Styled series**, select a field and then click **Remove styling**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

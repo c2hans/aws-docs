@@ -23,3 +23,7 @@ AI traffic monetization is available globally with Amazon CloudFront at no addit
 + [Payment networks and settlement](waf-ai-traffic-monetization-payment.md)
 + [Revenue analytics](waf-ai-traffic-monetization-analytics.md)
 + [Communicating license terms to AI agents](waf-ai-traffic-monetization-license-terms.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ You only need to establish this trust relationship for IAM roles that are not cr
 ------
 
 You can also update this policy document using the AWS CLI. For more information, see [update-trust](https://docs.aws.amazon.com/cli/latest/reference/ds/update-trust.html) in the *AWS CLI Command Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

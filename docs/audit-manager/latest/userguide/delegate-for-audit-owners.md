@@ -25,3 +25,7 @@ The following sections guide you through the different tasks that are associated
 + [Delegating a control set for review in AWS Audit Manager](delegation-for-audit-owners-delegating-a-control-set.md)
 + [Finding and reviewing the delegations that you've sent in AWS Audit Manager](delegation-for-audit-owners-reviewing-delegations.md)
 + [Deleting your completed delegations in AWS Audit Manager](delegation-for-audit-owners-cancel-delegations.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

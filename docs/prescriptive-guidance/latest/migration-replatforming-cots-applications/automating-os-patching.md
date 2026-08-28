@@ -19,3 +19,7 @@ We recommend that you provision your infrastructure by using IaC best practices.
 Repeatable builds that use IaC and configuration management code help you test infrastructure without the overhead and risk of rebuilding those resources. Patching and updating an existing instance can cause a state that makes it difficult to reproduce and identify issues.
 
 If a COTS application doesn't support automated installation, we recommend consulting the [AWS Partner Network (APN)](https://aws.amazon.com/partners/). For more information about this, see the [Platform perspective: Applications and infrastructure](https://d1.awsstatic.com/whitepapers/aws_cloud_adoption_framework.pdf) section of the AWS CAF whitepaper.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

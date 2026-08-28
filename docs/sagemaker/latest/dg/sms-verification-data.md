@@ -56,3 +56,7 @@ If you create a verification job using the console, you can use the filtering to
 + [Create a label adjustment job (console)](sms-data-adjust-start-console.md)
 + [Start a label verification or adjustment job (API)](sms-data-verify-start-api.md)
 + [Label verification and adjustment data in the output manifest](sms-data-verify-manifest.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

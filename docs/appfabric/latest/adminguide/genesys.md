@@ -102,3 +102,7 @@ AppFabric will request a client secret. To find your client secret in Genesys Cl
 1. Under **Integrations**, choose **OAuth**.
 
 1. Choose the OAuth client to get the Client Secret.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -456,3 +456,7 @@ For the secondary cell:
 ```
 
 Now, to fail over from your primary cell to your secondary cell, you can follow the CLI example in step 4b to update the state of `RoutingControlCell1` to `OFF` and `RoutingControlCell2` to `ON`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

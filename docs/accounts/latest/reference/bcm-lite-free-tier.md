@@ -17,3 +17,7 @@ The Paid account plan is ideal for building production applications that scale b
 All projects that you own are under the same plan type. If you upgrade to the Paid account plan, all of your projects have access to additional services, and you pay standard pay-as-you-go pricing for all projects. For more information, see [Upgrade your account in AWS Settings](https://docs.aws.amazon.com/accounts/latest/reference/upgrade-account.html).
 
 You can use the Cost Management Console to track your usage across all AWS services offering Free Tier for your project.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

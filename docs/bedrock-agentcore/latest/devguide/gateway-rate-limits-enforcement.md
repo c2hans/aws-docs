@@ -157,3 +157,7 @@ The gateway emits OpenTelemetry (OTEL) span attributes on the server span for ev
 |  `aws.agentcore.gateway.throttle.customer.evaluated`  | Ordered list of all rate limit buckets checked for this request. Each entry shows the rate limit ID, metric, and resolved dimension values. Present for both `allowed` and `throttled` decisions. |  `["per-target-rps:requests:my-target", "per-caller-rpm:requests:alice"]`  |
 
 The `evaluated` attribute is useful for understanding which rate limits applied to a request, even when it was allowed. Each entry in the list follows the format `{rateLimitId}:{metric}:{resolvedDimVal1,dimVal2,…​}`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

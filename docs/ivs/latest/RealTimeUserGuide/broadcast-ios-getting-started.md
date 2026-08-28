@@ -15,7 +15,7 @@ We recommend that you integrate broadcast SDK via Swift Package Manager. (Altern
 ### Recommended: Integrate the Broadcast SDK (Swift Package Manager)
 <a name="broadcast-ios-install-swift"></a>
 
-1. Download the Package.swift file from [https://broadcast.live-video.net/1.45.0/Package.swift](https://broadcast.live-video.net/1.45.0/Package.swift).
+1. Download the Package.swift file from [https://broadcast.live-video.net/1.46.0/Package.swift](https://broadcast.live-video.net/1.46.0/Package.swift).
 
 1. In your project, create a new directory named AmazonIVSBroadcast and add it to version control.
 
@@ -34,7 +34,7 @@ We recommend that you integrate broadcast SDK via Swift Package Manager. (Altern
 ### Alternate Approach: Install the Framework Manually
 <a name="broadcast-ios-install-manual"></a>
 
-1. Download the latest version from [ https://broadcast.live-video.net/1.45.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.45.0/AmazonIVSBroadcast-Stages.xcframework.zip).
+1. Download the latest version from [ https://broadcast.live-video.net/1.46.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.46.0/AmazonIVSBroadcast-Stages.xcframework.zip).
 
 1. Extract the contents of the archive. `AmazonIVSBroadcast.xcframework` contains the SDK for both device and simulator.
 
@@ -79,3 +79,7 @@ override func viewDidDisappear(_ animated: Bool) {
    UIApplication.shared.isIdleTimerDisabled = false
 }
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

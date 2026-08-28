@@ -47,3 +47,7 @@ Use the AWS Command Line Interface to import your code-signing certificate, priv
    This command displays an ARN for your certificate. You need this ARN when you create an OTA update job.
 **Note**
 This step is written with the assumption that you are going to use Code Signing for AWS IoT to sign your firmware images. Although the use of Code Signing for AWS IoT is recommended, you can sign your firmware images manually.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

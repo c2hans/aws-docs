@@ -241,3 +241,7 @@ Use the following procedure to enable trace metrics in your instrumented Java ap
 1. Open the **Metrics** tab to observe the influx of your metrics.
 
 1. (Optional) In the CloudWatch console, on the **Logs** tab, open the `ServiceMetricsSDK` log group. Look for a log stream that matches the host metrics, and confirm the log messages.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS X-Ray. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query xray` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

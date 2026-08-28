@@ -16,3 +16,7 @@ To follow along with this guide, ensure that you have access to the following:
 + An Amazon Elastic Compute Cloud (Amazon EC2) instance with SQL Server, Oracle, and PostgreSQL databases installed
 
 The Aurora PostgreSQL-Compatible instance and the other databases or AWS services must in be the same virtual private cloud (VPC), or network connectivity must be established between them. Additionally, you must have the required roles and security privileges assigned.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

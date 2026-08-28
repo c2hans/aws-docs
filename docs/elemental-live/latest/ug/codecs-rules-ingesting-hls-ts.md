@@ -12,3 +12,7 @@ For audio, each Elemental Live event can extract audio from the same rendition a
 Elemental Live cannot extract audio from a rendition that contains only audio; it does not support ingest of audio rendition groups.
 
 In all cases, the incoming HLS stream must include a manifest.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

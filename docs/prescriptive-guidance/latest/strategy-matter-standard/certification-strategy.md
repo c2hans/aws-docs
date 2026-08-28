@@ -65,3 +65,7 @@ For example, a basic temperature sensor communicating over a proprietary radio s
 Of course, this adds complexity for developers and requires gateways to support the necessary translation layer. But it might be a viable compromise in cases where direct certification is too challenging for the device itself. Proxies could help low-power or niche solutions participate in Matter ecosystems without a complete hardware overhaul.
 
 The Matter bridge specification has matured, with numerous certified bridge products now available from major manufacturers. This has made the gateway approach more viable and standardized compared to the early days of Matter. Manufacturers can now partner with bridge providers or develop their own certified bridges to bring non-IP devices into the Matter ecosystem without redesigning the endpoint hardware.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

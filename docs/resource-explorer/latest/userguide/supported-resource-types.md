@@ -1446,3 +1446,7 @@ Some resource types are identified by [Amazon resource name (ARN)](https://docs.
 | `docdb:globalcluster`<br />`rds:globalcluster` | `rds:global-cluster` |
 | `neptune:dbparametergroup`<br />`rds:dbparametergroup` | `rds:pg` |
 | `docdb:dbsubnetgroup`<br />`neptune:dbsubnetgroup`<br />`rds:dbsubnetgroup` | `rds:subgrp` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resource Explorer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resource-explorer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

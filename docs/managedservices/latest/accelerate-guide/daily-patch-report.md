@@ -134,3 +134,7 @@ This report provides details on instances that missed patches during the last ma
 | Patch Install State | install\_state | Install state of patch on instance per SSM |
 | Days Unpatched | days\_unpatched | Number of days instance unpatched since last SSM scanning |
 | Days Unpatched Range | days\_unpatched\_bucket | Bucketing of days unpatched |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

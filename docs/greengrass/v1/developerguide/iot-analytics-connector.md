@@ -16,3 +16,7 @@ AWS IoT Analytics was discontinued on December 15, 2025. The IoT Analytics conne
 The IoT Analytics connector previously sent local device data to AWS IoT Analytics channels. Because AWS IoT Analytics has been discontinued, this connector can no longer deliver data. All AWS IoT Analytics API calls now return an `AccessDeniedException`.
 
 To remove this connector from your Greengrass group, use the AWS IoT console or the AWS IoT Greengrass API to delete the connector from your group's connector definition, then deploy the group.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

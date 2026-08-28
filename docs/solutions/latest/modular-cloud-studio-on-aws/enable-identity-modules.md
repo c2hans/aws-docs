@@ -107,3 +107,7 @@ Follow the steps in [Password Rotation](password-rotation.md) to update the pass
 
 **Important**
 The service account is essential for MCS modules configuration, such as Amazon FSx for Windows and Leostream broker module. Failed to update the credentials before deployment will cause module deployment failure and prevent proper service configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

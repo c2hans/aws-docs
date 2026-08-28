@@ -35,3 +35,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
  There’s an increased risk involved when managing schema with a deletive approach: failures in the schema modification process can impact your production environment. Your additive changes can bring down the earlier application because of an undocumented issue where best practices weren’t followed or where the new application version still has a dependency on a deleted field somewhere in the code.
 
  To mitigate risk appropriately, this pattern places a heavy emphasis on your pre-deployment software lifecycle steps. Be sure to have a strong testing phase and framework and a strong QA phase. Performing the deployment in a test environment can help identify these sorts of issues early, before the push to production.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

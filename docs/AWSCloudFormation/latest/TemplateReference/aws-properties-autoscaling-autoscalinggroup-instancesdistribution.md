@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
+  "[DistributionSegments](#cfn-autoscaling-autoscalinggroup-instancesdistribution-distributionsegments)" : {{[ DistributionSegment, ... ]}},
   "[OnDemandAllocationStrategy](#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandallocationstrategy)" : {{String}},
   "[OnDemandBaseCapacity](#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandbasecapacity)" : {{Integer}},
   "[OnDemandPercentageAboveBaseCapacity](#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandpercentageabovebasecapacity)" : {{Integer}},
@@ -36,6 +37,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-autoscaling-autoscalinggroup-instancesdistribution-syntax.yaml"></a>
 
 ```
+  [DistributionSegments](#cfn-autoscaling-autoscalinggroup-instancesdistribution-distributionsegments): {{
+    - DistributionSegment}}
   [OnDemandAllocationStrategy](#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandallocationstrategy): {{String}}
   [OnDemandBaseCapacity](#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandbasecapacity): {{Integer}}
   [OnDemandPercentageAboveBaseCapacity](#cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandpercentageabovebasecapacity): {{Integer}}
@@ -46,6 +49,15 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ## Properties
 <a name="aws-properties-autoscaling-autoscalinggroup-instancesdistribution-properties"></a>
+
+`DistributionSegments`  <a name="cfn-autoscaling-autoscalinggroup-instancesdistribution-distributionsegments"></a>
+The Distribution Segments configuration. Each segment contains an ordered list of capacity types to prioritize.
+For more information, see [Use Distribution Segments to target multiple capacity types](https://docs.aws.amazon.com/autoscaling/ec2/userguide/use-distribution-segments.html) in the *Amazon EC2 Auto Scaling User Guide*.
+*Required*: No
+*Type*: Array of [DistributionSegment](aws-properties-autoscaling-autoscalinggroup-distributionsegment.md)
+*Minimum*: `1`
+*Maximum*: `1`
+*Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
 
 `OnDemandAllocationStrategy`  <a name="cfn-autoscaling-autoscalinggroup-instancesdistribution-ondemandallocationstrategy"></a>
 The allocation strategy to apply to your On-Demand Instances when they are launched. Possible instance types are determined by the launch template overrides that you specify.
@@ -104,3 +116,7 @@ Valid Range: Minimum value of 0.001
 *Required*: No
 *Type*: String
 *Update requires*: [Some interruptions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-some-interrupt)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

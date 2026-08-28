@@ -16,3 +16,7 @@ The following table describes the documentation releases for Partner Revenue Mea
 | [Updated Terraform User Agent implementation guidance](#doc-history) | Updated Terraform section to use `provider_meta` with the `user_agent` argument (AWS provider >= 6.27.0). | April 8, 2026 |
 | [Added User Agent String and AWS Marketplace Metering implementation methods; restructured documentation](#doc-history) | Added User Agent String and AWS Marketplace Metering as new implementation methods. Restructured documentation to organize content by implementation method: AWS Marketplace Metering, Resource Tagging, and User Agent String. Updated Automation and Included AWS Services as hub pages linking to method-specific content. | April 2, 2026 |
 | [Initial release of Partner Revenue Measurement with ResourceTagging capability](#doc-history) | Initial release of the PartnerRevenueMeasurement User Guide | January 29, 2026 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

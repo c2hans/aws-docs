@@ -33,3 +33,7 @@ When connecting to Amazon Redshift using Identity Center tokens, you may encount
 + **AWS IdC identity provider does not exist** – Configure Identity Center integration for your Amazon Redshift resource through the AWS console.
 + **Invalid scope. User's credentials are not authorized to connect to Amazon Redshift** – Verify the user has appropriate permissions in Identity Center and the token was generated for the correct resources.
 + **Connection failures with enhanced VPC routing** – When enhanced VPC routing is turned on, Amazon Redshift reaches the Identity Center services through your VPC. Verify that your VPC has interface VPC endpoints for those services. Confirm that private DNS names are turned on for each endpoint. Confirm that the endpoint security groups allow inbound traffic on TCP port 443. For more information about enhanced VPC routing requirements for Identity Center, see [Using AWS IAM Identity Center authentication with enhanced VPC routing](redshift-iam-access-control-idp-connect-evr.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

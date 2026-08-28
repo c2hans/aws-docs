@@ -19,3 +19,7 @@ Prompt engineering has matured rapidly, resulting in the identification of a set
 + **Exploiting friendliness and trust.** It has been shown that LLMs respond differently depending on whether a user is friendly or adversarial. This attack uses friendly and trusting language to instruct the LLM to obey its malicious instructions.
 
 Some of these attacks occur independently, whereas others can be combined in a chain of multiple offense strategies. The key to securing a model against hybrid attacks is a set of guardrails that can help defend against each individual attack.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

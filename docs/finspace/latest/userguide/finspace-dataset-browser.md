@@ -45,3 +45,7 @@ With Amazon FinSpace Dataset browser, you can:
 1.  **Share data managed in FinSpace** – Share data view tables with a Lake Formation data lake so that the data can be easily queried with AWS analytics engines like Amazon Redshift, Athena, Quick,Amazon EMR, and SageMaker AI. For more information, see [Data views sharing](https://docs.aws.amazon.com/finspace/latest/userguide/data-sharing-lake-formation.html).
 
 1.  **Financial time series analysis** – Run financial time series analysis on high density market data using integrated time series library with over 100 embedded functions including statistical and technical indicators such as Bollinger Bands. For more information, see [Time series library](https://docs.aws.amazon.com/finspace/latest/userguide/finspace-time-series-library.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

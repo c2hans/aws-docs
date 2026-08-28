@@ -34,3 +34,7 @@ The following table describes updates to managed policies for AWS Panorama.
 | AWSPanoramaApplianceServiceRolePolicy – New policy | New policy for the AWS Panorama Appliance service role | 2021-10-20 |
 | AWSPanoramaServiceLinkedRolePolicy – New policy | New policy for the AWS Panorama service-linked role. | 2021-10-20 |
 | AWS Panorama started tracking changes | AWS Panorama started tracking changes for its AWS managed policies. | 2021-10-20 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

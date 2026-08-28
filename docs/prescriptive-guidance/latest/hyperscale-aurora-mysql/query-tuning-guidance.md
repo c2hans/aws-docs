@@ -35,3 +35,7 @@ Your workload might have a small number of aggregation queries to cater to some 
 <a name="concurrency"></a>
 
 When tuning individual queries, remember that these queries run concurrently on several vCPUs in Aurora MySQL-Compatible. Your query might run in a few milliseconds in your test environment on single runs. But this is not the whole picture. Be sure to test your query with the expected level of concurrency on your production cluster and benchmark its performance. Release the query to production only when it meets your concurrency goals. Ensure that you use the optimizer `hint sql_no_cache` in your test scripts so that you avoid fetching results from the cache. You can use tools such as mysqlslap to perform the test at concurrency and benchmark the results.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

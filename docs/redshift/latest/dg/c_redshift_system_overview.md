@@ -23,3 +23,7 @@ Amazon Redshift achieves efficient storage and optimum query performance through
 + [Columnar storage](c_columnar_storage_disk_mem_mgmnt.md)
 + [Workload management](c_workload_mngmt_classification.md)
 + [Using Amazon Redshift with other services](using-redshift-with-other-services.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

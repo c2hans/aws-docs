@@ -47,3 +47,7 @@ For example, If you choose 4 vCPUs for your worker instance, and a pre-initiali
 For workers with 32 vCPUs, worker memory must match one of three discrete configurations: 60 GB, 120 GB, or 244 GB. EMR Serverless validates the total memory request (spark configured memory plus memory overhead) and rejects jobs whose total does not fit one of the three configurations. `spark.executor.memory` along with memory overhead (default of 10%) must be within 8 GB of the supported worker memory configuration. For example, a Spark job requesting a 32 vCPU worker with `spark.executor.memory` set to 100 GB will be rejected because the total of 110 GB (after adding the default 10% overhead) is not within 8 GB of the supported 120 GB worker size. In this case, `spark.executor.memory` within the range of 102 GB to 109 GB will be accepted.
 
 **Disk** — You can configure each worker with temporary storage disks with a minimum size of 20 GB and a maximum of 200 GB. You only pay for additional storage beyond 20 GB that you configure per worker.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

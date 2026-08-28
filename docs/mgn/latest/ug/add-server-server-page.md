@@ -7,9 +7,7 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 # Add a source server
 <a name="add-server-server-page"></a>
 
-To add a server, simply click **Add server**.
-
-To run a variety of commands on your source servers, select one or more servers and choose the **Actions**, **Replication**, or **Test and cutover** menu.
+To add a server, simply choose **Add server**.
 
 The **Add servers** prompt opens, allowing you to create a custom installation command by taking these steps:
 +
@@ -36,7 +34,7 @@ To run a variety of commands on your source servers, select one or more servers 
 <a name="server-edit-main"></a>
 
 To edit a source server, select the server and choose **Edit**. You can edit the following fields:
-+ **User-provided ID** – Edit the user-provided identifier for the source server. This value is case sensitive.
++ **User-provided ID** – Edit the user-provided identifier for the source server. This value is case insensitive.
 + **FQDN** – Edit the fully qualified domain name for the source server.
 + **Platform** – Edit the platform of the source server. This field is editable only for imported servers. Once a server begins replicating, the platform is automatically detected and cannot be modified.
 
@@ -57,7 +55,11 @@ This uninstalls the AWS Replication Agent from the source server and data replic
 
   To see your archived servers, open the **Preferences** menu by choosing the gear button.
 
-  Select the **Show only archived servers** option and click **Confirm**.
+  Select the **Show only archived servers** option and choose **Confirm**.
 
   You are now able to see all of your archived servers. Unselect this option to see your non-archived servers.
 + **Delete from service** – Choose this option to remove the source server from the database. This option supports single or multiple server selection. Only servers that are not actively replicating can be deleted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

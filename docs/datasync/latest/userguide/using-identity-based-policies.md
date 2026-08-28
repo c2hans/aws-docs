@@ -130,3 +130,7 @@ The value for `aws:ResourceAccount` should be the account ID that owns the Amazo
 DataSync requires permissions to be able to upload logs to your Amazon CloudWatch log groups. You can use CloudWatch log groups to monitor and debug your tasks.
 
 For an example of an IAM policy that grants such permissions, see [Allowing DataSync to upload logs to a CloudWatch log group](configure-logging.md#cloudwatchlogs).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,3 +10,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 + [SQL\*Plus](https://docs.oracle.com/cd/B14117_01/server.101/b12170/ch1.htm) is an interactive tool for running SQL commands on an Oracle database.
 
 If you are working with an AWS consulting team, ask about in-house tooling and scripting built by AWS database specialists. These tools and scripts can help with gathering and reviewing data dictionary information (such as the `DBA_FEATURE_USAGE_STATISTICS` view and the count of bitmap indexes).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

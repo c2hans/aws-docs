@@ -498,3 +498,7 @@ In the following examples, the client machine directory `/home/ec2-user` is mapp
       docker exec cli peer channel join -b {{/opt/home/ourchannel.block}} \
       -o $ORDERER --cafile /opt/home/managedblockchain-tls-chain.pem --tls
       ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

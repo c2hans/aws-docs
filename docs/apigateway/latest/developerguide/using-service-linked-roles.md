@@ -176,3 +176,7 @@ View details about updates to AWS managed policies for API Gateway since this se
 | --- | --- | --- |
 | Added `acm:GetCertificate` support to the `AWSServiceRoleForAPIGateway` policy. | The `AWSServiceRoleForAPIGateway` policy now includes permission to call the ACM `GetCertificate` API action. | July 12, 2021 |
 | API Gateway started tracking changes | API Gateway started tracking changes for its AWS managed policies. | July 12, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

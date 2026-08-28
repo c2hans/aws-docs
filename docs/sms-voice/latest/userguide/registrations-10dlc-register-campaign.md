@@ -106,6 +106,8 @@ When you choose to enable voice messages, it lengthens the amount of time to rev
 1. Choose **Next**.
 
 1. For **Messaging use case** section, do the following:
+**Sub use cases apply only to Mixed and Low Volume**
+Sub use cases apply only to the **Mixed** and **Low Volume** use cases. For all other use cases, leave the sub use case field blank or your campaign registration is denied.
 
    1. For **Use case**, choose a use case that most closely resembles your campaign from the preset list of use cases.
       + **Account Notifications** – Standard notifications for account holders, relating to and being about an account.
@@ -114,15 +116,19 @@ When you choose to enable voice messages, it lengthens the amount of time to rev
       + **Delivery notifications** – Information about the status of the delivery of a product or service.
       + **Fraud alert messaging** – Messaging regarding potential fraudulent activity on an account.
       + **Higher education** – Campaigns created on behalf of Colleges or Universities. It also includes School Districts and education institutions that fall outside of any "free to the consumer" messaging model.
-      + **Low Volume** – Small throughput, any combination of use-cases. Examples include: test, demo accounts.
+      + **Low Volume** – Small throughput, any combination of use-cases. Examples include: test, demo accounts. (Requires selecting 1 to 5 sub use cases in the next step.)
       + **Marketing** – Any communication with marketing and/or promotional content.
-      + **Mixed** – Mixed messaging reserved for specific consumer service industry.
+      + **Mixed** – Mixed messaging reserved for specific consumer service industry. (Requires selecting 2 to 5 sub use cases in the next step.)
       + **Public service announcement** – An informational message that is meant to raise the audience's awareness about an important issue.
       + **Polling and voting** – Requests for surveys and voting for non political arenas.
       + **Security alert** – A notification that the security of a system, either software or hardware, has been compromised in some way and there is an action the end users need to take.
       + **Two factor authentication** – Any authentication, verification, or one-time passcode.
 
-   1. For **Sub use case – optional**, choose up to five sub use cases.
+   1. **Sub use case** – Only applicable when **Use case** is set to **Mixed** or **Low Volume**. For any other use case, leave this field blank. If you select a sub use case for a standalone use case (for example, **Two factor authentication**, **Marketing**, or **Account Notifications**), AWS denies your 10DLC campaign registration. The denial reason is "Campaign not qualified for use case."
+      + For **Mixed**, choose 2 to 5 sub use cases.
+      + For **Low Volume**, choose 1 to 5 sub use cases.
+
+      For descriptions of each sub use case, see [AWS End User Messaging SMS 10DLC Campaign Types and Quotas for SMS](https://aws.amazon.com/blogs/messaging-and-targeting/amazon-pinpoint-10dlc-campaign-types-and-quotas-for-sms).
 
    1. **Subscriber opt-in** – Subscribers can opt in to receive messages about this campaign.
 
@@ -163,3 +169,7 @@ Don't use placeholder text in your sample MMS images. The example MMS images tha
 1. Choose **Submit registration**.
 **Note**
 After your 10DLC campaign registration has been approved you can request a new 10DLC phone number or use an existing 10DLC phone number and associate it with the 10DLC campaign. For more information on registering for 10DLC, see [Requesting dedicated long codes](phone-numbers-request-long-code.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

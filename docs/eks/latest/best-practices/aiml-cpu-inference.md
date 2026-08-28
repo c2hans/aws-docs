@@ -318,3 +318,7 @@ If the model performs poorly, try these in order of effort:
 +  [SOCI Snapshotter](https://github.com/awslabs/soci-snapshotter)
 +  [Bottlerocket OS](https://bottlerocket.dev)
 +  [AI on EKS: Container Startup Optimization](https://awslabs.github.io/ai-on-eks/docs/guidance/container-startup-time/accelerate-pull-process)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

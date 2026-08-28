@@ -42,3 +42,7 @@ cd amazon-sagemaker-examples/training/distributed_training/pytorch/model_paralle
 **SMP v1 example notebooks for TensorFlow**
 + [CNN with TensorFlow 2.3.1 and the SageMaker model parallelism library](https://sagemaker-examples.readthedocs.io/en/latest/training/distributed_training/tensorflow/model_parallel/mnist/tensorflow_smmodelparallel_mnist.html)
 + [HuggingFace with TensorFlow Distributed model parallelism library Training on SageMaker AI](https://github.com/huggingface/notebooks/blob/master/sagemaker/04_distributed_training_model_parallelism/sagemaker-notebook.ipynb)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

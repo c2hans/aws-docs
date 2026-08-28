@@ -19,3 +19,7 @@ Before you start monitoring DAX, you should create a monitoring plan that includ
 + [Monitoring tools for DynamoDB Accelerator](dax-monitoring-automated-manual.md)
 + [Monitoring with Amazon CloudWatch](dax-monitoring-cloudwatch.md)
 + [Logging DAX operations using AWS CloudTrail](dax-logging-using-cloudtrail.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

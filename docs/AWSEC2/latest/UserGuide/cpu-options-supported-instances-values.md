@@ -1215,3 +1215,7 @@ The following tables list the instance types that support specifying CPU options
 | --- | --- | --- | --- | --- | --- |
 | hpc6id.32xlarge | 64 | 64 | 1 | 4, 6, 8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30, 32, 34, 36, 38, 40, 42, 44, 46, 48, 50, 52, 54, 56, 58, 60, 62, 64 | 1 |
 | hpc8a.96xlarge | 192 | 192 | 1 | 24, 48, 72, 96, 120, 144, 168, 192 | 1 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

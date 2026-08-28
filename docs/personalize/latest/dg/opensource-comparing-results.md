@@ -20,3 +20,7 @@ To understand how results are re-ranked, you can run queries with the [Dev Tools
 1. In one window, enter a query that doesn't use any re-ranking for personalization. In the other window, enter a curl command that uses a pipeline with the `personalized_search_ranking` response processor. If you paste a curl command directly into the console, the command is automatically converted into the format that the console uses. For a command example, see [Applying the Amazon Personalize Search Ranking plugin to queries in open source OpenSearch](opensource-apply-plugin.md).
 
 1. Run both queries and compare the results.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

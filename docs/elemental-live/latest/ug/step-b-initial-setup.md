@@ -44,3 +44,7 @@ Note: If you are using input switching to provide input redundancy (with or with
 **Option 2**: ISO 8601 UTC time with no dashes or colons. For example, 20160102T030405.678Z. In this case, the start time for every overlay (regardless of whether it is defined in the input, the global processor or the output) will be the UTC time.
 
 **Option 3**: Only when adding or modifying an overlay in a running event (not when creating an event or modifying a non-running event), set this tag to an empty string to set the start time to “now”. With this option, the start time is never exact.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

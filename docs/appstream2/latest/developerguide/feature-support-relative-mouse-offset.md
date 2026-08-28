@@ -10,3 +10,7 @@ By default, during users' streaming sessions, WorkSpaces Applications transmits 
 Users can enable this feature during their WorkSpaces Applications streaming sessions by doing either of the following:
 + Pressing Ctrl\+Shift\+F8 on the Windows client application or Ctrl\+Shift\+Fn\+F8 on the macOS client application
 + Choosing **Relative Mouse Position [Ctrl\+Shift\+F8]** from the **Settings **menu on the WorkSpaces Applications toolbar in the top left area of their streaming session window. This method works when they use classic mode or **Desktop View**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

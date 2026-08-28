@@ -44,3 +44,7 @@ You can combine the sharding approach with a primary-standby approach to provide
 + There is a high probability that writes pending for replication won't be committed to the standby Region when there is a failure. Data will be unavailable until replication resumes (assuming asynchronous replication).
 + As part of failover, a data reconciliation process will be needed to ensure that a transactionally consistent state is maintained for data stores that use asynchronous replication. This requires specific business logic and is not something that is handled by the data store itself.
 + When strong consistency is required, workloads will need to be modified to tolerate the required latency of a data store that synchronously replicates.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

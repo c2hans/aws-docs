@@ -335,3 +335,7 @@ The following sample command uses AWS IoT certificate authorization to send vide
 ```
 gst-launch-1.0 rtspsrc location=rtsp://{{YourCameraRtspUrl}} short-header=TRUE ! rtph264depay ! video/x-h264,format=avc,alignment=au ! h264parse ! kvssink stream-name="{{YourStreamName}}" aws-region="{{YourAWSRegion}}" iot-certificate="iot-certificate,endpoint={{credential-account-specific-prefix}}.credentials.iot.{{aws-region}}.amazonaws.com,cert-path=/path/to/certificate.pem,key-path=/path/to/private.pem.key,ca-path={{/path/to/cacert.pem}},role-aliases=KvsCameraIoTRoleAlias,iot-thing-name={{YourThingName}}"
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

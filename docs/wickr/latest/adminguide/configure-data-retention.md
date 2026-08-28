@@ -58,3 +58,7 @@ Before you get started, complete the following procedure to enable data retentio
 The DR Bot is validated for sustained processing at approximately 11,000 messages per hour (\~3 messages/second). For workloads that consistently exceed this throughput or are expected to surpass 1.5 million messages in a single processing run, additional scaling strategies should be evaluated.
 
 For Disaster Recovery, we recommend Snapshot Lifecycles on the Amazon EBS volume(s) and Amazon S3 Cross-Region Replication. To configure how often messages are sent to Amazon S3, you can set the environment variable WICKRIO\_COMP\_FILESIZE or `WICKRIO_COMP_TIMEROTATE` to rotate on size or time. Message logs and file attachments will get delivered into the same prefix in the same bucket. For more information, see [Environment variables to configure data retention bot in AWS Wickr](data-retention-bot-env-variables.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

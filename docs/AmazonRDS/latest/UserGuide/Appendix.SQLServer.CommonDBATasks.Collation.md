@@ -112,3 +112,7 @@ The Microsoft SQL Server DB engine supports Unicode by the built-in NCHAR, NVARC
 + [Collation and international terminology](http://msdn.microsoft.com/en-us/library/ms143726%28v=sql.105%29)
 + [Using SQL Server collations](http://msdn.microsoft.com/en-us/library/ms144260%28v=sql.105%29.aspx)
 + [International considerations for databases and database engine applications](http://msdn.microsoft.com/en-us/library/ms190245%28v=sql.105%29.aspx)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

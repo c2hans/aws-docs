@@ -53,3 +53,7 @@ This is required for accessing **Event Reporting**, which is an add-on in the **
 1. Choose **Save**.
 
    Smartsheet assigns a client ID and client secret to your app. Record these values for the next steps. You can also look them up again later in the **Developer Tools** section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

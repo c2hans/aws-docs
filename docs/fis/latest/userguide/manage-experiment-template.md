@@ -16,3 +16,7 @@ You can create and manage experiment templates using the AWS FIS console or the 
 + [Tag experiment templates](tag-experiment-template.md)
 + [Delete an experiment template](delete-template.md)
 + [Example AWS FIS experiment templates](experiment-template-example.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

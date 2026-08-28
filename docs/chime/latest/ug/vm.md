@@ -16,3 +16,7 @@ Voicemail is currently supported only for calls received from PSTN phone numbers
 Each voicemail is accessible as a linked `MP3` file.
 
 If you receive a voicemail from a PSTN phone number in your **Contacts** list, you can access the voicemail file under **Recent Messages** from that contact.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -102,3 +102,7 @@ The tables below show the hyperparameters available when you use [serverless mod
 | logging\_steps | integer | Required | 1–100 | Frequency of metric logging. |
 | train\_val\_split\_ratio | float | Optional | 0.0–1.0 | Fraction allocated to training vs validation. |
 | temperature | float | Required | 0.0–2.0 | Sampling temperature for evaluation. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

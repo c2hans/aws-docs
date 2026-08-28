@@ -52,3 +52,7 @@ You can enable CloudWatch Logs during the setup flow of your Amazon Chime, Micro
 Your Amazon Q Developer in chat applications logs will be sent to CloudWatch under a designated CloudWatch Logs group for your configuration. The group name is **/aws/chatbot/**configuration-name****. To learn more about log groups and other CloudWatch concepts such as log events and log streams, see [Amazon CloudWatch Logs Concepts](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CloudWatchLogsConcepts.html) in the *Amazon CloudWatch Logs User Guide*.
 
 You can view your logs in the Amazon CloudWatch console. Note that you must specify **US East (N. Virginia)** for the Region. For more information, see [View Log Data Sent to CloudWatch Logs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#ViewingLogData) in the *Amazon CloudWatch Logs User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q Developer in chat applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chatbot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

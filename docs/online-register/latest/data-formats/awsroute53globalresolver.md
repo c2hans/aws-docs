@@ -26,3 +26,7 @@ AWS Route53 Global Resolver provides the following APIs for data retrieval.
 | <a name="route53globalresolver-ListGlobalResolvers"></a>[ListGlobalResolvers](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53globalresolver_ListGlobalResolvers) | List global resolvers | List |
 | <a name="route53globalresolver-ListHostedZoneAssociations"></a>[ListHostedZoneAssociations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53globalresolver_ListHostedZoneAssociations) | List hosted zone associations | List |
 | <a name="route53globalresolver-ListManagedFirewallDomainLists"></a>[ListManagedFirewallDomainLists](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53globalresolver_ListManagedFirewallDomainLists) | List managed firewall domain lists | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

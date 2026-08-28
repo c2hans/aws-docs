@@ -140,3 +140,7 @@ Using the AppFabric for security user access tool, security and IT Admin teams c
 <a name="getting-started-5-connect-appfabric-to-security-tools"></a>
 
 Normalized (or raw) application data from AppFabric is compatible with any tool that supports data ingestion from Amazon S3 and integration with Firehose, including security tools like Barracuda XDR, Dynatrace, Logz.io, Netskope, NetWitness, Rapid7, and Splunk, or your proprietary security solution. To get normalized (or raw) application data from AppFabric, follow the previous steps 1 through 3. For more details on how to set up specific security tools and services, see [Compatible security tools and services](security-tools.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

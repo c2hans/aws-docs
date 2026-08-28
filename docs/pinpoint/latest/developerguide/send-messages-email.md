@@ -27,3 +27,7 @@ The best method to use for sending transactional email depends on your use case.
 If you send a large number of transactional emails, such as purchase confirmations or password reset messages, consider using Amazon SES. Amazon SES has an API and an SMTP interface, both of which are well suited to sending email from your applications or services. It also offers additional email features, including email receiving capabilities, configuration sets, and sending authorization capabilities.
 
 Amazon SES also includes an SMTP interface that you can integrate with your existing third-party applications, including customer relationship management (CRM) services such as Salesforce. For more information about sending email using Amazon SES, [Amazon Simple Email Service Developer Guide](https://docs.aws.amazon.com/ses/latest/dg/Welcome.html) for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

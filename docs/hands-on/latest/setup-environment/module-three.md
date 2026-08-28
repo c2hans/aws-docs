@@ -163,3 +163,7 @@ For more information about configuring and formatting multiple roles, see the [F
 <a name="conclusion"></a>
 
 Congratulations\! You have now completed the sign-in process, created an administrative user in IAM Identity Center, added enhanced security for both your root user and your administrative user, and set up the AWS CLI and configured a named profile.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

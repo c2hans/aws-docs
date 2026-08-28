@@ -154,3 +154,7 @@ The following table provides roles in a large-migration CEE team, and it describ
 | Network and infrastructure lead | + Designing the AWS landing zone for target accounts<br />+ Designing network connectivity and infrastructure<br />+ Designing and deploying security groups<br />+ Managing infrastructure and networking changes to support the large migration |
 | Licensing lead | + Identifying all commercial off-the-shelf (COTS) and enterprise applications and working with the migration team and application team to plan migration strategies around licensing |
 | Security and compliance lead | + Designing authentication and authorization for the large migration, including Active Directory, single sign-on, and IAM policies<br />+ Designing network security, including on-premises firewalls, and managing vulnerabilities<br />+ Designing compliance requirements for in-scope workloads |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

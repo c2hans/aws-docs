@@ -16,3 +16,7 @@ Follow the steps in this section to set up your Raspberry Pi as a AWS IoT Greeng
 + Installs the AWS IoT Greengrass command line interface (`greengrass-cli`), which you can use to test custom components that you develop on the core device. For more information, see [Greengrass Command Line Interface](gg-cli.md).
 
 The AWS IoT Greengrass Core software and local development tools run on your device. Next, you can develop a Hello World AWS IoT Greengrass component on your device.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ The following example shows one way a standard component card can be grouped int
 ![The Resource properties panel for a standard component card.](http://docs.aws.amazon.com/infrastructure-composer/latest/dg/images/aac_cards_17.png)
 
 In the **Resource configuration** field on the **Resource properties** panel, the `Role` has been referenced in the Lambda function. This results in the **Role** card being grouped into the **Function** card on the canvas.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

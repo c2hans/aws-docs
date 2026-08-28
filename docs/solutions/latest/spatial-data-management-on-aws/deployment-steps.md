@@ -144,3 +144,7 @@ The main stack creates the following nested stacks:
 1.  **Deadline Stack** (2-3 minutes, if enabled) – AWS Deadline Cloud farm configuration – Integration with asset management system – Job queue setup
 
 1.  **Monitoring Stack** (2-3 minutes) – Amazon CloudWatch alarms and dashboards – AWS CloudTrail for audit logging – Amazon Athena workgroup for log analysis
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

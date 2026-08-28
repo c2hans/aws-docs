@@ -41,3 +41,7 @@ Supporting infrastructure includes:
 + [Amazon Virtual Private Cloud(VPC)](https://aws.amazon.com/vpc/) and [AWS PrivateLink](https://aws.amazon.com/privatelink/) - network isolation and private connectivity between components
 + [AWS Security Hub](https://aws.amazon.com/security-hub/) - centralized security posture management across the AI ecosystem
 + [AWS CloudTrail](https://aws.amazon.com/cloudtrail/) - comprehensive API activity logging for compliance and audit
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

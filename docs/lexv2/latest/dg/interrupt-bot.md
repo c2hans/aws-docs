@@ -34,3 +34,7 @@ You can change how a user can respond to a prompt by editing a slot. A slot is p
 1. Select or deselect **Users can interrupt the prompt when it is being read**.
 
 You can test this functionality by creating a bot with two slots and specifying that users can't interrupt a prompt for one slot. If you interrupt an interruptible prompt, the bot sends a playback interruption event. If you interrupt an uninterruptible, the prompt continues to play.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

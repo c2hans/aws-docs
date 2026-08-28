@@ -27,3 +27,7 @@ After you install the AWS Service Management Connector, you need to configure it
 
 **Note**
 We recommend the Sync user and End user be new users in AWS, used only with AWS Service Management Connector. These users should have minimum required privileges. You can use the available AWS CloudFormation templates for your sandbox and development AWS accounts to configure and enable available integrations. For more information, see [Baseline Permissions](https://docs.aws.amazon.com/smc/latest/ag/jsd-baseline-permissions.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ App Runner collects the output of your application code and streams it to Amazon
 
 **AWS CloudTrail action logs**
 App Runner is integrated with AWS CloudTrail, a service that provides a record of actions taken by a user, role, or an AWS service in App Runner. CloudTrail captures all API calls for App Runner as events. You can view the most recent events in the CloudTrail console, and you can create a trail to enable continuous delivery of CloudTrail events to an Amazon Simple Storage Service (Amazon S3) bucket. For more information, see [API actions (CloudTrail)](monitor-ct.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

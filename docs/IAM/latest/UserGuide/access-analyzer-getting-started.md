@@ -68,3 +68,7 @@ To view the status of your analyzers, choose **Analyzers**. Analyzers created fo
 | Creating | The creation of the analyzer is still in progress. The analyzer becomes active once creation is complete. |
 | Disabled | The analyzer is disabled due to an action taken by the AWS Organizations administrator. For example, removing the analyzer’s account as the delegated administrator for IAM Access Analyzer. When the analyzer is in a disabled state, it does not generate new findings or update existing findings. |
 | Failed | The creation of the analyzer failed due to a configuration issue. The analyzer won't generate any findings. Delete the analyzer and create a new analyzer. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

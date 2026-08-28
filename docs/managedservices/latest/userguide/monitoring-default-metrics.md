@@ -102,3 +102,7 @@ AMS takes pro-active actions (scaling the cluster) when this alert is triggered.
 For information on remediation efforts, see [AMS automatic remediation of alerts](auto-remediation.md).
 
 [![AWS Videos](http://img.youtube.com/vi/e9hbG-FAeFM/0.jpg)](http://www.youtube.com/watch?v=e9hbG-FAeFM)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

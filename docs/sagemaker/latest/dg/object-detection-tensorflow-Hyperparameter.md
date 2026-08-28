@@ -24,3 +24,7 @@ Hyperparameters are parameters that are set before a machine learning model begi
 | reinitialize\_top\_layer | If set to `"Auto"`, the top classification layer parameters are re-initialized during fine-tuning. For incremental training, top classification layer parameters are not re-initialized unless set to `"True"`.<br />Valid values: string, any of the following: (`"Auto"`, `"True"` or `"False"`).<br />Default value: `"Auto"`. |
 | rho | The discounting factor for the gradient of the `"adadelta"` and `"rmsprop"` optimizers. Ignored for other optimizers. <br />Valid values: float, range: [`0.0`, `1.0`].<br />Default value: `0.95`. |
 | train\_only\_on\_top\_layer | If `"True"`, only the top classification layer parameters are fine-tuned. If `"False"`, all model parameters are fine-tuned.<br />Valid values: string, either: (`"True"` or `"False"`).<br />Default value: `"False"`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

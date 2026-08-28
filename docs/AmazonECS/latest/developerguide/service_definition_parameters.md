@@ -523,3 +523,7 @@ Valid values: `xfs`\|`ext3`\|`ext4`\|`NTFS`
 The type of file system on a volume. The volume's file system type determines how data is stored and retrieved in the volume. For volumes created from a snapshot, you must specify the same filesystem type that the volume was using when the snapshot was created. If there is a filesystem type mismatch, the task will fail to start.
 The valid values for Linux are `xfs`, ext3`, and ext4`. The default for volumes that are attached to Linux tasks is `XFS`.
 The valid values for Windows are `NTFS`. The default for volumes that are attached to Windows tasks is `NTFS`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

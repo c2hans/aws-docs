@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-JenkinsApiToken"></a>
 
 ## Secret Value Fields
-<a name="w2aac27c11c25b3"></a>
+<a name="w2aac27c11c27b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -32,7 +32,7 @@ jenkinsUrl
 Your Jenkins instance URL (for example, `https://jenkins.example.com`). The URL must use HTTPS and must not end with a trailing slash.
 
 ## Secret Metadata Fields
-<a name="w2aac27c11c25b5"></a>
+<a name="w2aac27c11c27b5"></a>
 
 The following are the metadata fields for Jenkins API Token:
 
@@ -46,7 +46,7 @@ adminSecretArn
 (Optional) The Amazon Resource Name (ARN) for a secret of type JenkinsApiToken that contains an admin token. The admin token can generate and revoke API tokens for the target user. If omitted, the token rotates itself (self-rotation).
 
 ## Usage Flow
-<a name="w2aac27c11c25b7"></a>
+<a name="w2aac27c11c27b7"></a>
 
 This rotation supports both single-secret (self-rotation) and two-secret (admin-assisted) architectures. When you provide `adminSecretArn`, the admin token generates and revokes the target user's tokens. If you omit it, the current token rotates itself.
 
@@ -55,3 +55,7 @@ To create your secret, use the [CreateSecret](https://docs.aws.amazon.com/secret
 During rotation, the driver validates the current token and obtains a Cross-Site Request Forgery (CSRF) crumb from Jenkins. It then generates a new API token and stores it as the pending version. It verifies the new token against the Jenkins API, promotes it to current, then revokes the old token by its `tokenUuid`. Applications using the Secrets Manager caching library pick up the new token on their next refresh.
 
 Jenkins is customer-hosted, so your Jenkins instance must be reachable over HTTPS from the Secrets Manager rotation service. Rotation calls originate from the AWS-managed prefix list `com.amazonaws.{{region}}.secretsmanager-managed-external-secrets`. Allow inbound access from this prefix list on your instance's security group or firewall, and ensure the instance presents a publicly trusted TLS certificate. For more information, see [AWS-managed prefix lists](https://docs.aws.amazon.com/vpc/latest/userguide/working-with-aws-managed-prefix-lists.html) in the *Amazon VPC User Guide*. Instances that are not reachable over the public internet are not supported.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

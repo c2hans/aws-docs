@@ -91,3 +91,7 @@ Amazon EMR attaches the following labels to each metric: `["cluster.id", "instan
 
 **Note**
 Amazon EMR release 7.0.0 uses a slightly different metric label schema. `cluster.id` is `jobflow.id`, and `node.type` is unavailable. `instance.id` and `service.name` are available.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

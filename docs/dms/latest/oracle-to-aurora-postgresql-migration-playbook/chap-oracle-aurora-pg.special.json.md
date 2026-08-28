@@ -191,3 +191,7 @@ CREATE INDEX idx3_employees ON employees USING gin (emp_data);
 | Define a column in a table that supports JSONB documents | Create a table with a CLOB column. Define an `IS JSON` constraint on the column.<pre>CREATE TABLE json_docs (id RAW(16) NOT NULL,<br />data CLOB, CONSTRAINT json_docs_pk PRIMARY KEY (id),<br />CONSTRAINT json_docs_json_chk CHECK (data IS JSON));</pre> | Create a table with a column defined as JSON:<pre>CREATE TABLE json_docs ( id integer NOT<br />NULL, data jsonb );</pre> |
 
 For more information, see [JSON Types](https://www.postgresql.org/docs/13/datatype-json.html) and [JSON Functions and Operators](https://www.postgresql.org/docs/13/functions-json.html) in the *PostgreSQL documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

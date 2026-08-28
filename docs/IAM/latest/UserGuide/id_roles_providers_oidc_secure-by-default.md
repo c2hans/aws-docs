@@ -59,3 +59,7 @@ For any new OIDC IdPs that IAM identifies as shared, the required identity-provi
 Additional resources:
 + For more information about creating an IAM role for OIDC federation, see [Create a role for OpenID Connect federation (console)](id_roles_create_for-idp_oidc.md).
 + For a list of IAM condition keys that can be used for claims, see [Available keys for AWS OIDC federation](reference_policies_iam-condition-keys.md#condition-keys-wif).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

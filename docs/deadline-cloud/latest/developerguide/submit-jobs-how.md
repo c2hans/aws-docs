@@ -16,3 +16,7 @@ There are many different ways to submit jobs to AWS Deadline Cloud. This section
 + [Submit a job to Deadline Cloud from a terminal](from-a-terminal.md)
 + [Submit a job to Deadline Cloud using a script](from-a-script.md)
 + [Submit a job within an application](from-within-applications.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

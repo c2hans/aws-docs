@@ -222,3 +222,7 @@ Jobs are subject to export control laws in specific countries and might require 
 After you create a job to order a Snowball Edge device, you can cancel it while it is in the *Job created* state without incurring any charges. For more information, see [Cancelling a job through the AWS Snow Family Management Console](https://docs.aws.amazon.com/snowball/latest/developer-guide/cancel-job-order.html).
 
 After your job is created, you can see the status of the job in the **Job status** section. For detailed information about job statuses, see [Job Statuses](https://docs.aws.amazon.com/snowball/latest/developer-guide/jobstatuses.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,3 +51,7 @@ EKS Auto Mode integrates with EKS Pod Identity and EKS access entries.
   + If you use a NodeClass to create a custom Node IAM Role, you need to create an access entry for the role using the AmazonEKSAutoNodePolicy access policy.
 + If you want to grant workloads permissions for AWS services, use EKS Pod Identity.
   + You do not need to install the Pod Identity agent on EKS Auto Mode clusters.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

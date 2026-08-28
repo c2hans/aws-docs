@@ -19,3 +19,7 @@ This policy grants the Amazon Bedrock service access to resources attached to Am
 This policy allows the Amazon Bedrock service to access specific resources tagged with the same project ID as the service role. This tag restriction effectively only permits access to resources in the same project. By default, project users are not allowed to change service role tags.
 
 To view the permissions for this policy, see [SageMakerStudioBedrockKnowledgeBaseServiceRolePolicy](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/SageMakerStudioBedrockKnowledgeBaseServiceRolePolicy.html) in the *AWS Managed Policy Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,3 +54,7 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-hyperpod-m
 
   Verify the `estimated_tokens` value exceeds your `routingThreshold`. If the token estimate is lower than expected, the router's tokenizer may be counting differently — try lowering `routingThreshold`.
 + **Uneven load distribution across prefillers.** If you have multiple prefiller replicas and observe that one is overloaded while others are idle, switch the routing strategy to `roundrobin` for even distribution. Alternatively, use `kvaware` for cache-aware distribution that accounts for the actual state of each prefiller.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

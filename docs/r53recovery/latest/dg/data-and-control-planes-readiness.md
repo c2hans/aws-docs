@@ -17,3 +17,7 @@ In general, a *control plane* enables you to do basic management functions, such
 For readiness check, there is a single API, the [Recovery Readiness API](https://docs.aws.amazon.com/recovery-readiness/latest/api/what-is-recovery-readiness.html), for both the control plane and data plane. Readiness checks and readiness resources are only in the US West (Oregon) Region (us-west-2). *The readiness check control plane and data plane are reliable but not highly available.*
 
 For more information about data planes, control planes, and how AWS builds services to meet high availability targets, see the [Static stability using Availability Zones paper](https://aws.amazon.com/builders-library/static-stability-using-availability-zones/) in the Amazon Builders' Library.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

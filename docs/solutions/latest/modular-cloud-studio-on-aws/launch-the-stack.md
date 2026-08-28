@@ -41,3 +41,7 @@ This solution is not currently available in all AWS Regions. You must launch thi
 1. You will receive an email with a temporary password to access the MCS web console. You must reset the password on your first login following the prompt. If you haven’t received an email after the stack deployment is completed, check your spam folder.
 
 1. You can add MCS web console users by navigating to the MCS user pool in the [Amazon Cognito console](https://console.aws.amazon.com/cognito/), and clicking **Create user** under Users from the left navigation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

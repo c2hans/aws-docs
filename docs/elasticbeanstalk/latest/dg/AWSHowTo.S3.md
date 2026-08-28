@@ -73,3 +73,7 @@ The general procedure to delete an S3 bucket is also described in [Deleting a bu
 1. Choose **Delete Bucket**.
 
 1. Confirm that you want to delete the bucket by entering the bucket name into the text field, and then choose **Delete bucket**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

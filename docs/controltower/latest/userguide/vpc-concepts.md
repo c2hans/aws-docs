@@ -23,3 +23,7 @@ If you set the Account Factory VPC configuration so that public subnets are enab
 
 **VPC and control settings**
 If you provision Account Factory accounts with VPC internet access settings enabled, that Account Factory setting overrides the control [Disallow internet access for an Amazon VPC instance managed by a customer](https://docs.aws.amazon.com/controltower/latest/controlreference/data-residency-controls.html#disallow-vpc-internet-access). To avoid enabling internet access for newly provisioned accounts, you must change the setting in Account Factory. For more information, see [Walkthrough: Configure AWS Control Tower Without a VPC](https://docs.aws.amazon.com/controltower/latest/userguide/configure-without-vpc.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

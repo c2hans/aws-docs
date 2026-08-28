@@ -457,3 +457,7 @@ If you will no longer be using an FQDN as the registration code for your WorkSpa
 + Be sure to issue your WorkSpaces users the Region-specific registration code (for example, `WSpdx+ABC12D`) for their WorkSpaces directory and instruct them to stop using the FQDN as their registration code.
 + **If you still own this domain**, be sure to update your DNS TXT record to remove this domain so that it cannot be exploited in a phishing attack. If you remove this domain from your DNS TXT record and your WorkSpaces users attempt to use the FQDN as their registration code, their connection attempts will fail harmlessly.
 + **If you no longer own this domain**, your WorkSpaces users **must** use their Region-specific registration code. If they continue trying to use the FQDN as their registration code, their connection attempts could be redirected to a malicious site.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

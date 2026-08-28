@@ -231,3 +231,7 @@ The following screenshot shows an example text notification that Debugger sends 
 + The built-in actions cannot be used for [Profiler rules](debugger-built-in-profiler-rules.md#debugger-built-in-profiler-rules-ProfilerRule).
 + The built-in actions cannot be used on training jobs with spot training interruptions.
 + In email or text notifications, `None` appears at the end of messages. This does not have any meaning, so you can disregard the text `None`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

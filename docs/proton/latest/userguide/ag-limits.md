@@ -25,3 +25,7 @@ The following table lists AWS Proton quotas. All values are per AWS account, per
 | Maximum number of service instances per service | 20 |  ![](http://docs.aws.amazon.com/proton/latest/userguide/images/icon-yes.png) Yes |
 | Maximum number of components per account | 1000 |  ![](http://docs.aws.amazon.com/proton/latest/userguide/images/icon-yes.png) Yes |
 | Maximum number of environment account connections per environment account | 1000 |  ![](http://docs.aws.amazon.com/proton/latest/userguide/images/icon-yes.png) Yes |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

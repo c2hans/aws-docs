@@ -33,3 +33,7 @@ source_url: https://docs.aws.amazon.com/parallelcluster/latest/ug/install-pcui-s
    + `SNSRole`
 
 1. Deploy a new PCUI instance by choosing an PCUI quick-start link and filling in all `External PCUI Amazon Cognito` parameters with the values that you copied. The new PCUI instance links to the standalone Amazon Cognito user pool and doesn't create a nested stack or a new user pool. You can deploy subsequent new PCUI instances that have the same parameter values, and you can link them to the standalone Amazon Cognito user pool.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  Unlike with AWS Local Zones, AWS Outposts EC2 families and instances remain fixed over the life of a deployment contract term (typically one, three, or five years). This can present a challenge for customers wishing to adopt the newest Amazon EC2 instances.
 
  When there is a need or desire to take advantage of the latest AWS Outposts and EC2 instance offerings, consult with your AWS account team and Outposts hybrid specialists to review roadmaps and timelines. Consider using shorter contract terms to pursue AWS Outposts upgrades and meet future data residency compute requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

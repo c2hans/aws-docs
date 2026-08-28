@@ -14,3 +14,7 @@ To send to a Zixi flow on MediaConnect, we recommend that you use the Reliable T
 The Zixi protocol involves two roles—the Zixi *feeder* (also known as the caller) and the Zixi *receiver* (the listener). The Zixi feeder always initiates the handshake that precedes successful transmission of the output. The Zixi receiver accepts or rejects the handshake.
 
 With the Zixi option in the Reliable TS output group, Elemental Live is always the Zixi feeder, which means the downstream system must be the Zixi receiver.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

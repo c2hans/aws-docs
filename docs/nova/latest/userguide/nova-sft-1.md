@@ -299,3 +299,7 @@ Use the following information to help resolve issues that you might encounter:
 + The input dataset for both training and validation should reside in customer-owned buckets, not in escrow, or service-managed S3 buckets.
 + If you receive a Region not found error in the AWS CLI, resubmit the job with the region prepended to the start-job command. For example: `AWS_REGION=us-east-1 hyperpod start-job ...{{Job Parameters}}`.
 + To adjust the hyperparameters, follow the guidance in [Selecting hyperparameters](https://docs.aws.amazon.com/nova/latest/userguide/customize-fine-tune-hyperparameters.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

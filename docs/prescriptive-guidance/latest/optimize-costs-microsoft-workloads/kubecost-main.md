@@ -137,3 +137,7 @@ We recommend that you review the step-by-step deployment in the [AWS and Kubecos
 + [AWS and Kubecost collaborate to deliver cost monitoring for EKS customers](https://aws.amazon.com/blogs/containers/aws-and-kubecost-collaborate-to-deliver-cost-monitoring-for-eks-customers/) (AWS Blog)
 + [Amazon EKS Finhack Workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/c4ab40ed-0299-4a4e-8987-35d90ba5085e/en-US) (AWS Workshop Studio)
 + [Windows Containers on AWS](https://catalog.us-east-1.prod.workshops.aws/workshops/1de8014a-d598-4cb5-a119-801576492564/en-US) (AWS Workshop Studio)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

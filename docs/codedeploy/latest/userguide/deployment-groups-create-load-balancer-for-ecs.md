@@ -172,3 +172,7 @@ To create an Application Load Balancer using the AWS CLI:
    ```
    arn:aws:elasticloadbalancing:{{region}}:{{aws_account_id}}:listener/app/bluegreen-alb/e5ba62739c16e642/665750bec1b03bd4
    ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

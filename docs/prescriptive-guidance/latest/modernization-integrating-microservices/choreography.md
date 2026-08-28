@@ -15,3 +15,7 @@ An EDA provides a number of benefits, such as loose coupling of services and ext
 + [AWS Well-Architected Framework – Serverless Application Lens](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/event-driven-architectures.html)
 + [Introduction to Event Driven Architecture](https://serverlessland.com/event-driven-architecture) (*Serverless Land*)
 + [Transitioning to event-driven architecture](https://docs.aws.amazon.com/serverless/latest/devguide/serverless-transition.html) (*Serverless Developer Guide*)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

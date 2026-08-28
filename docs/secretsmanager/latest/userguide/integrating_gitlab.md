@@ -150,3 +150,7 @@ The following resources can help you troubleshoot issues with GitLab and AWS Sec
 + [GitLab OIDC troubleshooting](https://docs.gitlab.com/ci/cloud_services/aws/#troubleshooting)
 + [Debugging GitLab CI/CD Pipeline](https://docs.gitlab.com/ee/ci/troubleshooting.html)
 + [Troubleshooting](ascp-eks-installation.md#troubleshooting)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ To reduce the request latency, try the following:
 + Reduce the number of records inside a single `InvokeEndpoint` request.
 + Reduce the number of records in the baseline data.
 + Use a smaller `NumberOfSamples` value to reduce the size of the synthetic dataset. For more information about how the number of samples affects your synthetic dataset, see [Synthetic dataset](clarify-online-explainability-create-endpoint-synthetic.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

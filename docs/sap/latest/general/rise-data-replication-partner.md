@@ -12,3 +12,7 @@ To find and deploy a solution that fits your specific needs, you can explore the
  **Further Resources**
 
 The [Guidance for SAP Data Integration and Management on AWS](https://aws.amazon.com/solutions/guidance/sap-data-integration-and-management-on-aws/) provides the essential data foundation to build data and analytics solutions. It shows how to integrate data from SAP ERP source systems and AWS in real-time or batch mode, with change data capture, using AWS services, SAP products, and AWS Partner Solutions. It includes an overview reference architecture showing how to ingest SAP systems to AWS in addition to five detailed architectural patterns that complement SAP-supported mechanisms (such as OData, ODP, SLT, and BTP) using AWS services that are highlighted above, SAP products, and AWS Partner Solutions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

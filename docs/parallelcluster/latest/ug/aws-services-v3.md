@@ -234,3 +234,7 @@ For more information about EC2 Image Builder, see [https://aws.amazon.com/image-
 Amazon DCV is a high-performance remote display protocol that provides a secure way to deliver remote desktops and application streaming to any device over varying network conditions. Amazon DCV is used when the [`HeadNode` section](HeadNode-v3.md) / [`Dcv`](HeadNode-v3.md#HeadNode-v3-Dcv) settings are specified. Support for Amazon DCV was added in AWS ParallelCluster version 2.5.0.
 
 For more information about Amazon DCV, see [https://aws.amazon.com/hpc/dcv/](https://aws.amazon.com/hpc/dcv/) and [https://docs.aws.amazon.com/dcv/](https://docs.aws.amazon.com/dcv/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

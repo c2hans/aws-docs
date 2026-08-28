@@ -362,3 +362,7 @@ Consistent HTTP 503 errors means that there are insufficient targets ready to re
 
 **Health-check errors**
 + If the health check port is the same as TARGET\_CONTROL\_DATA\_ADDRESS, then health check requests from the ALB are sent to the target application through the agent. If health checks are failing (due to HTTP 502 or Timeouts) refer to the Configuration Errors section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

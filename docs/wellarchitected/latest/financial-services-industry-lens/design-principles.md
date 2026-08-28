@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
    +  **Account management:** Automate account provisioning and maintain good security when hundreds of users and business units are requesting cloud-based resources.
    +  **Budget and cost management:** Enforce and monitor budgets across many accounts, workloads, and users.
    +  **Security and compliance automation:** Manage security, risk, and compliance at scale to verify that the organization maintains compliance, while performing against business objectives.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

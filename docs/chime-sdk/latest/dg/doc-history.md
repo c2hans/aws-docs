@@ -42,3 +42,7 @@ The following table describes important changes to the *Amazon Chime Developer G
 | [Amazon Chime SDKs for Android and iOS](#doc-history) | The Amazon Chime SDKs for Android and iOS is released. For more information, refer to [Integrating with a client library](https://docs.aws.amazon.com/chime-sdk/latest/dg/mtgs-sdk-client-lib.html) in the *Amazon Chime Developer Guide*. | March 24, 2020 |
 | [Amazon Chime SDK](#doc-history) | The Amazon Chime SDK is released. For more information, refer to [Using the Amazon Chime SDK](https://docs.aws.amazon.com/chime-sdk/latest/dg/meetings-sdk.html) in the *Amazon Chime Developer Guide*. | November 20, 2019 |
 | [Amazon Chime Developer Guide](#doc-history) | The *Amazon Chime Developer Guide* is released. | September 11, 2019 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

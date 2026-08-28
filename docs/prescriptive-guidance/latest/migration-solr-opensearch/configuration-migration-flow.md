@@ -259,3 +259,7 @@ When you migrate custom plugins from Solr to OpenSearch, we recommend that you f
 The preceding example follows this approach. It uses an Amazon OpenSearch Ingestion pipeline and implements a custom Lambda processor to migrate `CustomPriceTaxProcessorFactory` by using similar logic.
 
 If native features don't meet your requirements, Amazon OpenSearch Service supports custom plugin development and deployment. For more information, see the [Amazon OpenSearch Service documentation](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/custom-plugins.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

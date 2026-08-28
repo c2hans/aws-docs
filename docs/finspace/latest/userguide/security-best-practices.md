@@ -11,3 +11,7 @@ Amazon FinSpace provides a number of security features to consider as you develo
 + Implement least privilege access.
 + Limit access to sensitive and important auditing functions.
 + When creating resources through the update or bulk import APIs, do not use PHI or PII, including the names of datastores and jobs, in any visible fields.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

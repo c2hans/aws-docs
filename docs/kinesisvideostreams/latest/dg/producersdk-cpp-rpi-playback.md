@@ -106,3 +106,7 @@ Adding elements to your pipeline, like [dewarp](https://gstreamer.freedesktop.or
 Review the supported output codecs for your camera and adjust the elements as needed.
 
 For example, if your USB camera only supports JPEG output, then you will need to use the `jpegparse` and `jpegdec` elements to transform the media before encoding it into H.264 using `x264enc`. Search for assistance on the GStreamer forums for other users with similar pipelines and/or web cam setups.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

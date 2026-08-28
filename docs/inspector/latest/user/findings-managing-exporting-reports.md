@@ -310,3 +310,7 @@ To resolve the error you can wait for the other report to finish or cancel it be
 You can check the status of a report by using the [GetFindingsReportStatus](https://docs.aws.amazon.com/inspector/v2/APIReference/API_GetFindingsReportStatus.html) operation, this operation returns the report ID of any report that is currently being generated.
 
 If you need to, you can use the report ID given by the `GetFindingsReportStatus` operation to cancel a export that is currently in progress by using the [CancelFindingsReport](https://docs.aws.amazon.com/inspector/v2/APIReference/API_CancelFindingsReport.html) operation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

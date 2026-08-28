@@ -15,3 +15,7 @@ If you use a device that supports BGP advertising, you don't specify static rout
 We recommend that you use BGP-capable devices, when available, because the BGP protocol offers robust liveness detection checks that can assist failover to the second VPN tunnel if the first tunnel goes down. Devices that don't support BGP may also perform health checks to assist failover to the second tunnel when needed.
 
 You must configure your customer gateway device to route traffic from your on-premises network to the Site-to-Site VPN connection. The configuration depends on the make and model of your device. For more information, see [AWS Site-to-Site VPN customer gateway devices](your-cgw.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

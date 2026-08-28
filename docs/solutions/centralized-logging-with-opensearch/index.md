@@ -6,8 +6,8 @@ source_url: https://docs.aws.amazon.com//solutions/centralized-logging-with-open
 
 Build a centralized log analytics platform with Amazon OpenSearch Service on AWS in 20 minutes
 
-- **Version**: 2.4.14
-- **Released**: 7/2026
+- **Version**: 2.4.15
+- **Released**: 8/2026
 - **Author**: AWS
 - **Est. deployment time**: 15 mins
 - **Estimated cost**: [See details](/solutions/latest/centralized-logging-with-opensearch/cost.html)

@@ -25,3 +25,7 @@ When you have iterative reads on the same dataset or Disk I/O intensive workload
 EMR File System (EMRFS) is an implementation of HDFS that Amazon EMR clusters typically use for reading and writing regular files from Amazon EMR directly to Amazon S3.
 
 You can use EMRFS when you read the dataset one time in each run. EMRFS decouples storage from compute, so you don't need to provision core nodes specifically to store data, and you don't need to pay for data replication in HDFS. This results in lower costs, and it provides availability of the data for multiple clusters. You also have the advantage of retaining data after shutting down the cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

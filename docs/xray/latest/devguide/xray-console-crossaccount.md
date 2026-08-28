@@ -72,3 +72,7 @@ View details for a trace by choosing it from the **Traces** list at the bottom o
 The **Segments timeline** section displays the account details for each segment in the timeline.
 
 ![Segments timeline](http://docs.aws.amazon.com/xray/latest/devguide/images/crossaccount-traces-segment-timeline.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS X-Ray. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query xray` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

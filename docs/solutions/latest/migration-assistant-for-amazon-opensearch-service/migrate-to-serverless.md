@@ -11,3 +11,7 @@ Every source that the solution supports can use an Amazon OpenSearch Serverless 
 
 **Note**
 Amazon OpenSearch Serverless NextGen removes the cluster-management surface that exists on an Amazon OpenSearch Service domain. There are no node-level snapshots, no `_cluster/settings`, and no cluster plugins to configure. Migration Assistant adapts metadata migration to the collection model for you, but you must recreate operational features such as index lifecycle management and ingest pipelines yourself. See [Limits and considerations](mts-limits.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

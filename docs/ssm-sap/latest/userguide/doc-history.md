@@ -39,3 +39,7 @@ The following table describes the documentation releases for Systems Manager for
 | [Policy update](#doc-history) | Updated the [AWSSSMForSAPServiceLinkedRolePolicy](https://docs.aws.amazon.com/ssm-sap/latest/userguide/slr.html#slr-permissions) policy. | January 5, 2023 |
 | [Policy update](#doc-history) | Updated the [AWSSystemsManagerForSAPFullAccess](https://docs.aws.amazon.com/ssm-sap/latest/userguide/iam-policies.html#security-iam-awsmanpol-AWSSystemsManagerForSAPFullAccess) policy. | November 18, 2022 |
 | [Public preview](#doc-history) | Public preview of AWS Systems Manager for SAP. | November 15, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ssm-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

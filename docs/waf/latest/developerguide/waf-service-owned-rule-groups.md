@@ -20,3 +20,7 @@ Don't try to manually manage this rule group in your protection pack (web ACL). 
 + **`PREFMManaged` and `POSTFMManaged`** – These rule groups are managed by AWS Firewall Manager based on Firewall Manager AWS WAF policy configurations. Firewall Manager provides these rule groups inside protection packs (web ACLs) that Firewall Manager manages.
 
   Firewall Manager creates protection packs (web ACLs) for you with names that begin with `FMManagedWebACLV2`. You can configure Firewall Manager to retrofit your existing protection packs (web ACLs) as well. For these, the protection pack (web ACL) name is the one that you specified when you created it. In either case, Firewall Manager will add these rule groups to the protection pack (web ACL). For more information, see [Using AWS WAF policies with Firewall Manager](waf-policies.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,3 +53,7 @@ Please refer to [Using Spark Upgrade Tools](emr-spark-upgrade-agent-tools.md) fo
 + [Cross-region processing for the Apache Spark Upgrade Agent](emr-spark-upgrade-agent-cross-region.md)
 + [Logging Amazon SageMaker Unified Studio MCP calls using AWS CloudTrail](spark-upgrade-cloudtrail-integration.md)
 + [Data handling for Upgrade Agent](emr-spark-agent-service-improvements.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

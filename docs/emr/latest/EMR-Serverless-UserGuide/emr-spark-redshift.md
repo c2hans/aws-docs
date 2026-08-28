@@ -12,3 +12,7 @@ With Amazon EMR release 6.9.0 and later, every release image includes a connecto
 + [Authenticating with the Amazon Redshift integration for Apache Spark](emr-spark-redshift-auth.md)
 + [Reading and writing from and to Amazon Redshift](emr-spark-redshift-readwrite.md)
 + [Considerations and limitations when using the Spark connector](emr-spark-redshift-considerations.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

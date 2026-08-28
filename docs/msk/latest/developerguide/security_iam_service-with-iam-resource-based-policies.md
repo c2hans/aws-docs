@@ -10,3 +10,7 @@ Amazon MSK supports a cluster policy (also known as a resource-based policy) for
 The maximum size supported for a cluster policy is 20 KB.
 
 To view an example of how to configure a cluster policy, refer to [Step 2: Attach a cluster policy to the MSK cluster](mvpc-cluster-owner-action-policy.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

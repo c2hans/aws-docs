@@ -29,3 +29,7 @@ You can now use the updated experience to access AWS WAF functionality anywhere 
 1. Choose **Save** to save your protection group and return to the **Protected resources** page.
 
 In the **Shield** **Events** page, you can view events for your protection group and drill down to see additional information for the protected resources that are in the group.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -96,3 +96,7 @@ The hours that you specify for days of the week or for exceptions must respect t
 + **Apply this schedule to all channels** – Enable this feature to automatically set the sending time setting for each channel to equal the **Start time** and **End time** that you specified for the *Do not send time* setting. If you don't enable this feature, you can define different sending time hours for different channels. For example, you can configure the email channel so that messages are sent from 6:00 AM to 10:00 PM (22:00), and configure the SMS channel so that messages are sent from 8:00 AM to 8:00 PM (20:00).
 
 **Next**: [Set up the journey entry activity](journeys-entry-activity.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

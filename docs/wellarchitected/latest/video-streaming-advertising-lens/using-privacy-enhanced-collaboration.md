@@ -50,3 +50,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 ![Guidance for activating seller-defined audiences on AWS (image 2)](http://docs.aws.amazon.com/wellarchitected/latest/video-streaming-advertising-lens/images/seller-defined-audiences-2.png)
 
  For additional details, see [Guidance for Activating Seller Defined Audiences on AWS](https://aws.amazon.com/solutions/guidance/activating-seller-defined-audiences-on-aws).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

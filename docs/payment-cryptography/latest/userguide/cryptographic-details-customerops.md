@@ -66,3 +66,7 @@ IAM policies on the DeleteKey API may be used to enforce and demonstrate dual co
 <a name="w2aac39c25c15"></a>
 
  The effect of key rotation can be implemented using key alias by creating or importing a new key, then modifying the key alias to refer to the new key. The old key would be deleted or disabled, depending on your management practices.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

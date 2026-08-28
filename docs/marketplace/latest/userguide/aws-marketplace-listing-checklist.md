@@ -54,3 +54,7 @@ Before submitting your Amazon Machine Image (AMI) product to AWS, use this check
 + The product image is at least 110 pixels wide and between a 1:1 and 2:1 ratio.
 + Pricing is specified for all enabled instance types (for hourly, hourly-based monthly pricing, and hourly-based annual pricing models).
 + Monthly pricing is specified (for hourly-based monthly and monthly pricing models).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

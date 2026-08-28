@@ -406,3 +406,7 @@ For more information about using this API in one of the language-specific AWS SD
 + [AWS SDK for PHP V3](/goto/SdkForPHPV3/mediaconvert-2017-08-29/CreateQueue)
 + [AWS SDK for Python](/goto/boto3/mediaconvert-2017-08-29/CreateQueue)
 + [AWS SDK for Ruby V3](/goto/SdkForRubyV3/mediaconvert-2017-08-29/CreateQueue)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

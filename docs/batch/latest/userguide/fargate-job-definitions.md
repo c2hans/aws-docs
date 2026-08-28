@@ -72,3 +72,7 @@ Only `awslogs` and `splunk` are supported. For more information, see [Use the aw
 Members in `networkConfiguration`
 `assignPublicIp`
 If the private subnet doesn't have a NAT gateway attached to send traffic to the Internet, `[assignPublicIp](https://docs.aws.amazon.com/batch/latest/APIReference/API_NetworkConfiguration.html#Batch-Type-NetworkConfiguration-assignPublicIp)` must be "`ENABLED`". For more information, see [AWS Batch IAM execution role](execution-IAM-role.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

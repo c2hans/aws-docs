@@ -311,3 +311,7 @@ HTTP passthrough targets support the following outbound authorization types:
 +  **Caller IAM credentials** (`CALLER_IAM_CREDENTIALS`) – The gateway uses the IAM identity and permissions of the caller to sign requests to the target using SigV4. Only available for gateways with `AWS_IAM` or `AUTHENTICATE_ONLY` authorizer type.
 +  **Token passthrough** (`JWT_PASSTHROUGH`) – The gateway validates the inbound token and passes it through to the target without modification.
 +  **API key** (`API_KEY`) – The gateway retrieves an API key from a credential provider configured in the token vault and injects it into outbound requests as a specified request header.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

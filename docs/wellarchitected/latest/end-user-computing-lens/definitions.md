@@ -94,3 +94,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  **Pooled:** Creates a set (or pool) of virtual desktops. Users are connected to one of the machines and it is users' machine for the duration they are connected to it. Once the user disconnects, the machine becomes available to the pool again and a different user will be allocated to it.
 +  **Non-pooled (dedicated):** Provides each user with a persistent dedicated virtual machine. This approach offers individual isolation and customization options.
 +  **[Federal Risk and Authorization Management Program (FedRAMP)](https://aws.amazon.com/compliance/fedramp/):** A US government-wide program that delivers a standard approach to the security assessment, authorization, and continuous monitoring for cloud products and services.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

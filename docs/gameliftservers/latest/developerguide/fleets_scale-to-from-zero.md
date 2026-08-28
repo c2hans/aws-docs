@@ -90,3 +90,7 @@ Consider the following recommendations when using Scale To/From Zero:
 + **Use with predictable workloads** – Scale To/From Zero works best for games with clear periods of inactivity, such as development/test environments or games with distinct off-peak hours.
 + **Monitor CloudWatch metrics** – Track fleet scaling events and game session placement times to optimize your configuration.
 + **Combine with scaling policies** – Use Scale To/From Zero alongside target-based or rule-based auto scaling for comprehensive capacity management.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

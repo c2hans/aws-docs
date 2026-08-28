@@ -52,3 +52,7 @@ The following best practices are important to keep in mind through all implement
 + Assess regularly the return on investment (ROI) of AI initiatives and adjust strategy accordingly. (Performance measurement; strategic alignment)
 + Address data privacy and security concerns that are specific to AI usage in a global delivery model. (Governance and ethics)
 + Evaluate regularly the impact of AI on the outsourcing value proposition and adjust the engagement model as needed. (Partner ecosystem; strategic alignment)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

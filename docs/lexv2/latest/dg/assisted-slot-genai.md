@@ -29,3 +29,7 @@ If you do not have access to Amazon Bedrock foundation models, you should see **
 1. Choose the **Enable** button to activate assisted slot resolution for the selected slots.
 
 1. You can disable assisted slot resolution by selecting the slots from the list and selecting the **Disable** button.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

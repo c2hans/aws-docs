@@ -896,3 +896,7 @@ Configuration for constructing filter expression strings when using the `FILTER_
 + `QuoteCharacter` – UTF-8 string.
 
   The character used to quote values when `QuoteStringValues` is true. Defaults to double quotes if not specified.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

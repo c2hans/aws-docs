@@ -22,3 +22,7 @@ Follow these steps to delete blocked terms from your private re:Post:
 1. Choose **Remove blocked terminology**.
 
 The blocked terms that you removed are no longer displayed in the list under the **Blocked terminology** section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

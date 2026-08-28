@@ -9,7 +9,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::IVS::Channel](aws-resource-ivs-channel.md)
-+ [AWS::IVS::Composition](aws-resource-ivs-composition.md)
 + [AWS::IVS::EncoderConfiguration](aws-resource-ivs-encoderconfiguration.md)
 + [AWS::IVS::IngestConfiguration](aws-resource-ivs-ingestconfiguration.md)
 + [AWS::IVS::PlaybackKeyPair](aws-resource-ivs-playbackkeypair.md)
@@ -19,3 +18,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::IVS::Stage](aws-resource-ivs-stage.md)
 + [AWS::IVS::StorageConfiguration](aws-resource-ivs-storageconfiguration.md)
 + [AWS::IVS::StreamKey](aws-resource-ivs-streamkey.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

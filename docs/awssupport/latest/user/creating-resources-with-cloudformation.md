@@ -191,3 +191,7 @@ To learn more about Terraform, see the following topics:
 + `[awscc\_support\_app\_account\_alias](https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_account_alias)`
 + `[awscc\_supportapp\_slack\_workspace\_configuration](https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_workspace_configuration)`
 + `[awscc\_supportapp\_slack\_channel\_configuration](https://registry.terraform.io/providers/hashicorp/awscc/latest/docs/resources/supportapp_slack_channel_configuration)`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

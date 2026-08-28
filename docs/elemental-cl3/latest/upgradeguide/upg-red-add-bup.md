@@ -68,3 +68,7 @@ For more information about adding workers to redundancy groups, see *Add Worker 
 1. Choose **Add**.
 
 1. If you have multiple Elemental Live redundancy groups, repeat this procedure on each group, and then go to the next step.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ To create a new environment, complete the following steps.
    + **Environment proﬁle** – choose an existing environment profile or create a new one. An environment proﬁle is a template that you can use to create environments. For more information, see [Amazon DataZone terminology and concepts](datazone-concepts.md).
 
      Once you've selected the environment profile, under the **Parameters** section, specify the values for the fields that are part of this environment profile.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

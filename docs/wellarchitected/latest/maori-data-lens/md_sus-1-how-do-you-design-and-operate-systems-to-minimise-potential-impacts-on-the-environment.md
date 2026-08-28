@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/maori-data-lens/m
   1.  Forecasts how your emissions change across your sustainability journey as Amazon progresses toward powering operations with 100% renewable energy.
 
  You can also talk to your account executive about the range of tools available on the [AWS Marketplace](https://aws.amazon.com/marketplace), which can support tracking and reporting of your organisation's sustainability data. Such data provides necessary insight to achieve your organisation's sustainability goals.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

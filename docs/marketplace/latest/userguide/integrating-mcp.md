@@ -128,3 +128,7 @@ For more information about implementing AWS MCP Server in your AI agent or tool,
 + [Model Context Protocol Specification](https://modelcontextprotocol.io/specification) on the Model Context Protocol website
 + [MCP GitHub Repository](https://github.com/orgs/modelcontextprotocol/repositories) on the GitHub website
 + [AWS Marketplace Seller Operations team](https://aws.amazon.com/marketplace/management/contact-us/) for AWS MCP Server integration support
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ Some captions sources that MediaLive supports typically include multiple languag
 | Teletext | Teletext | This combination is performed as a passthrough. Therefore, all the languages that are in the input are included in the output. You can't remove any languages.In fact, the entire Teletext content is included in the output; you can't remove out any of the pages.  |
 | Teletext | Another format | You can specify the language to extract from the input and the language to include in an output. |
 | Any other combination |  | For all other sources, you always specify the language to extract from the input and the language to include in an output, regardless of the source format and output format. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

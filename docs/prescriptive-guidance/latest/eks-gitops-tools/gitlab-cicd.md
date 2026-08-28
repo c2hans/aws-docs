@@ -35,3 +35,7 @@ Although GitLab CI/CD is not exclusively designed for GitOps, it can be used eff
 The key difference between GitLab CI/CD and dedicated GitOps tools such as Argo CD or Flux is that GitLab provides a more comprehensive platform that includes source control management, issue tracking, and other development tools along with its CI/CD capabilities. This makes it particularly suitable for teams that need an all-in-one solution that can implement GitOps practices within a broader development system.
 
 For more information about GitLab CI/CD and its architecture, see the [GitLab CI/CD documentation](https://docs.gitlab.com/ci/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

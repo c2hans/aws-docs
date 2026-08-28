@@ -21,3 +21,7 @@ The following topics describe how to create versions and aliases of your flow.
 + [View information about aliases of flows in Amazon Bedrock](flows-alias-view.md)
 + [Modify an alias of a flow in Amazon Bedrock](flows-alias-modify.md)
 + [Delete an alias of a flow in Amazon Bedrock](flows-alias-delete.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

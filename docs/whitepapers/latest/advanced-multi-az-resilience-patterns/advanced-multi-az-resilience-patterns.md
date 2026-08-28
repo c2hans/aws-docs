@@ -28,3 +28,7 @@ Primarily use zonal AWS services
 Need to improve single Region resilience
 Are willing to make a significant investment to build the required observability and resilience patterns
 In these workloads, you might not be willing to make some, or all, of the tradeoffs presented in [Responding to gray failures](gray-failures.md#responding-to-gray-failures), or not have the option to use multiple Regions. These types of workloads are likely to represent a small subset of your overall portfolio and hence this guidance should be considered at the workload level versus at the platform level.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ Before you set up the C\+\+ producer SDK on your Raspberry Pi, ensure that you h
   + An SD card with a capacity of at least 8 GB.
   + The Raspbian operating system (kernel version 4.9 or later) installed. You can download the latest Raspberry Pi OS (previously called Raspbian) image from the [Raspberry Pi website](https://www.raspberrypi.com/software/). Follow the Raspberry Pi instructions to [install the downloaded image on an SD card](https://www.raspberrypi.com/documentation/computers/getting-started.html#install-an-operating-system).
 + An AWS account with a Kinesis video stream. For more information, see [Getting Started with Kinesis Video Streams](https://docs.aws.amazon.com/kinesisvideostreams/latest/dg/getting-started.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -8,19 +8,20 @@ source_url: https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-el
 Amazon ElastiCache makes it easy to set up, manage, and scale distributed in-memory cache environments in the AWS Cloud. It provides a high performance, resizable, and cost-effective in-memory cache, while removing complexity associated with deploying and managing a distributed cache environment. ElastiCache works with the Valkey, Memcached and Redis OSS engines. To see which works best for you, see the Comparing Valkey, Memcached, and Redis OSS self-designed caches topic in the ElastiCache user guide.
 
 ## Region availability
-<a name="_region_availability"></a>
+<a name="region-availability"></a>
 
-This service is available in the following AWS GovCloud (US) Regions:
-+  AWS GovCloud (US-West)
+ Amazon ElastiCache is available in the following AWS GovCloud (US) Regions:
 +  AWS GovCloud (US-East)
++  AWS GovCloud (US-West)
 
 ## How Amazon ElastiCache differs
-<a name="govcloud-elc-diffs"></a>
+<a name="feature-diffs"></a>
 
 The following differences apply to Amazon ElastiCache:
++  Amazon ElastiCache Data tiering is not available.
 + All ElastiCache instances must be launched in an Amazon VPC.
 +  ElastiCache clusters have a preferred weekly maintenance window. For information about the time blocks, see [Cache Engine Version Management](https://docs.aws.amazon.com/AmazonElastiCache/latest/UserGuide/VersionManagement.MaintenanceWindow.html).
-+ The r6gd node type and data-tiering are not available.
++ The r6gd node type is not available.
 
 ## Documentation
 <a name="govcloud-elc-docs"></a>
@@ -52,3 +53,7 @@ If you are processing export-controlled data with ElastiCache, follow these guid
 + For each cluster that contains export-controlled data, ensure that only specific CIDR ranges and Amazon EC2 security groups can access the database instance, especially when an Internet gateway is attached to the VPC. Only allow connections that are from AWS GovCloud (US) Regions or other export-controlled environments to export-controlled clusters.
 
  ElastiCache requires the use of the SSL (HTTPS) endpoint for service API calls. For more information, see [Service Endpoints](using-govcloud-endpoints.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

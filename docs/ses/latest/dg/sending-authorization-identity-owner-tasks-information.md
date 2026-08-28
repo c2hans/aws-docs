@@ -49,3 +49,7 @@ For the policy above, the following legend explains the key elements and who own
 + **Principal** – this field is populated with the delegate sender's IAM user ARN.
 + **Action** – this field is populated with two SES actions (`SendEmail` & `SendRawEmail`) that the identity owner is allowing the delegate sender to perform from the identity owner's resource.
 + **Resource** – this field is populated with the identity owner's verified resource that they are authorizing the delegate sender to send from.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

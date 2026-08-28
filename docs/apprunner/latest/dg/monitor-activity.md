@@ -42,3 +42,7 @@ The App Runner console displays your App Runner service activity and provides mo
 The [ListOperations](https://docs.aws.amazon.com/apprunner/latest/api/API_ListOperations.html) action, given the Amazon Resource Name (ARN) of an App Runner service, returns a list of operations that occurred on this service. Each list item contains an operation ID and some tracking details.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -101,3 +101,7 @@ A runbook and AWS CloudFormation templates for this pattern are available in the
 <a name="preserve-routable-ip-space-in-multi-account-vpc-designs-for-non-workload-subnets-additional"></a>
 
 The non-routable secondary CIDR range can also be useful when working with larger scaled container deployments that require a large set of IP addresses. You can use this pattern with a private NAT Gateway to use a non-routable subnet to host your container deployments. For more information, see the blog post [How to solve Private IP exhaustion with Private NAT Solution](https://aws.amazon.com/blogs/networking-and-content-delivery/how-to-solve-private-ip-exhaustion-with-private-nat-solution/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

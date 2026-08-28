@@ -129,3 +129,7 @@ There are also three sections that walk you through specific steps for using Nep
 + [Connecting to Amazon Neptune from Clients Outside the Neptune VPC](https://github.com/aws-samples/aws-dbs-refarch-graph/tree/master/src/connecting-using-a-load-balancer)   –   This section shows you several options for connecting to Neptune from outside the VPC where your DB cluster is located.
 + [Accessing Amazon Neptune from AWS Lambda Functions](https://github.com/aws-samples/aws-dbs-refarch-graph/tree/master/src/accessing-from-aws-lambda)   –   Here you'll find out how to connect reliably to Neptune from Lambda functions.
 + [Writing to Amazon Neptune from an Amazon Kinesis Data Stream](https://github.com/aws-samples/aws-dbs-refarch-graph/tree/master/src/writing-from-amazon-kinesis-data-streams)   –   This section can help you handle high write throughput scenarios with Neptune.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

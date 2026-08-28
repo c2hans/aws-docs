@@ -81,3 +81,7 @@ If **enforced** is **false**, the configured **override** behavior is applied.
 **Q**: Where can I find all the different change types that are supported for AMS Resource Scheduler?
 
 **A**: AMS has Resource Scheduler change types to deploy the AMS Resource Scheduler to your account; enable or disable it; define, add, update, and delete schedules and periods to use with it; and describe (get a detailed description of) the schedules and periods.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

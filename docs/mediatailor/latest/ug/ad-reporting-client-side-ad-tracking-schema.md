@@ -285,3 +285,7 @@ The following table lists the properties in the client-side tracking API, their 
 |   renderingMode  | The rendering mode for the companion ad.<br />Path: `/avails/ads/companionAds/attributes/renderingMode` | String | default or transparent |
 |   adSlotId  | The ID of the ad slot where the companion ad should be displayed.<br />Path: `/avails/ads/companionAds/attributes/adSlotId` | String | banner-1 |
 |   creativeType  | The MIME type of the creative asset.<br />Path: `/avails/ads/icons/staticResource/creativeType` | String | image/png |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

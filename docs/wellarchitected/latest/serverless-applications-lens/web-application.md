@@ -41,3 +41,7 @@ Web applications often have demanding requirements to ensure a consistent, secur
 +  Refer to the [RESTful Microservices scenario](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/restful-microservices.html) for recommendations on web application backend.
 +  For web applications that offer personalized services, you can use API Gateway [usage plans](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-api-usage-plans.html). You can use Amazon Cognito user pools to scope users to specific resources or functionality. For example, a premium user may have higher throughput for API calls, access to additional APIs and additional storage.
 +  Refer to the [Mobile Backend scenario](https://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/mobile-backend.html) if your application uses search capabilities that are not covered in this scenario.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ When a user has only explicit **View** permissions and not also **Edit** permiss
 | Quick connects - View |  +  All queues in the instance <br />+  All flows in the instance <br />+  All users in the instance   |
 | Quick connects - Edit |  +  All queues in the instance <br />+  All flows in the instance   |
 | Phone numbers - View or Edit | When someone edits phone numbers in the Connect Customer console (not the CCP), they can **view** the following information in a drop-down box when they associate it with the phone number: +  All flows in the instance  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

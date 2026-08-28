@@ -40,3 +40,7 @@ You can use the AWS CLI or the Application Auto Scaling API to edit a scaling po
 + When using the Application Auto Scaling API, specify the name of the policy you want to edit in the `PolicyName` parameter. Specify new values for the parameters you want to change.
 
 For more information, see [Applying a scaling policy to an Aurora DB cluster](Aurora.Integrating.AutoScaling.Add.md#Aurora.Integrating.AutoScaling.AddCode.ApplyScalingPolicy).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

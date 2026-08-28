@@ -95,3 +95,7 @@ You can use AutoGluon-Tabular as an Amazon SageMaker AI built-in algorithm. The 
   For more information about how to set up the AutoGluon-Tabular as a built-in algorithm, see the following notebook examples. Any S3 bucket used in these examples must be in the same AWS Region as the notebook instance used to run them.
   + [Tabular classification with Amazon SageMaker AI AutoGluon-Tabular algorithm](https://github.com/aws/amazon-sagemaker-examples/blob/main/introduction_to_amazon_algorithms/autogluon_tabular/Amazon_Tabular_Classification_AutoGluon.ipynb)
   + [Tabular regression with Amazon SageMaker AI AutoGluon-Tabular algorithm](https://github.com/aws/amazon-sagemaker-examples/blob/main/introduction_to_amazon_algorithms/autogluon_tabular/Amazon_Tabular_Regression_AutoGluon.ipynb)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -68,3 +68,7 @@ Establish clear rollback procedures for each migrated component so that you can 
 Replace database-level error handling with robust application-layer mechanisms. Implement circuit breakers and retry logic for transient failures. Use compensating transactions for maintaining data consistency across distributed operations. For example, if a payment update fails, the application should automatically retry within defined limits and initiate compensating actions if needed.
 
 Set up comprehensive monitoring and alerting to quickly identify issues, and maintain detailed audit logs for troubleshooting. Design error handling to be as automated as possible, and define clear escalation paths for scenarios that require human intervention. This multi-layered approach provides system resilience while maintaining data integrity and business process continuity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

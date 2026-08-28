@@ -41,3 +41,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
  There are some common ways to address connection management. Developers often leverage client-based caching to limit their need for actual connections to Amazon Redshift. Connection pooling can also be applied in this model. Developers need to select a strategy that ensures that the data access patterns of their application can be met effectively without exceeding the Amazon Redshift connection limit.
 
  Adopting the pool model also means keeping your eye on the typical issues that come up any time you’re operating in a shared infrastructure. The security of your data, for example, requires some application-level policies to limit cross-tenant access. Also, you likely need to continually tune and refine the performance of your environment to prevent any one tenant from degrading the experience of others.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

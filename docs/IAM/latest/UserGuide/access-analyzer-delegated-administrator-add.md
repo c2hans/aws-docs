@@ -30,3 +30,7 @@ When you create an analyzer to analyze access across the organization in a deleg
 1. Enable trusted service access for IAM Access Analyzer in AWS Organizations. See [How to Enable or Disable Trusted Access](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html) in the AWS Organizations User Guide.
 
 1. Register a valid member account of your AWS organization as a delegated administrator using the AWS Organizations [`RegisterDelegatedAdministrator`](https://docs.aws.amazon.com/organizations/latest/APIReference/API_RegisterDelegatedAdministrator.html) API operation or the `register-delegated-administrator` AWS CLI command.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

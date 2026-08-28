@@ -16,3 +16,7 @@ If you want to suppress recommendations from CodeGuru Reviewer, you can create a
 You can view recommendations from incremental code reviews and full repository analysis code reviews directly in the CodeGuru Reviewer console. You can also view recommendations from incremental code reviews as pull request comments in your repository. These recommendations address instances in which the code doesn't adhere to AWS SDK best practices, operations on concurrent data structures might not be thread safe, or resource closure might not be handled properly, among other things.
 
 Developers can decide how to incorporate the recommendations from CodeGuru Reviewer and [provide feedback](provide-feedback.md) to CodeGuru Reviewer about whether the recommendations were useful. This helps your team ensure code quality and improve their code practices in an organic, interactive way. At the same time, it improves the quality of recommendations CodeGuru Reviewer provides for your code, making CodeGuru Reviewer increasingly effective in future analyses.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

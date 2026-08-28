@@ -13,3 +13,7 @@ You can move an account between OUs by means of the AWS Organizations API, or by
 
 **Note**
 If you choose to enable the auto-enroll capability after initial setup of the landing zone, AWS Control Tower does not retroactively resolve the inheritance drift that was caused by moving accounts between OUs before the auto-enroll capability was enabled. The automatic drift resolution goes into effect for accounts that are moved after you enable this setting.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

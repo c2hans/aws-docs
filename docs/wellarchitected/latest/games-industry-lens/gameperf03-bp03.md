@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Design container groups with a primary container for the game server and GameLift Agent, and sidecars for managing dependencies, with specific memory and CPU limits.
 +  Set resource limits for each container group to reserve required resources while allowing controlled resource usage to avoid contention.
 +  Use a daemon container group for background or monitoring tasks, making sure they operate efficiently without affecting primary game server processes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

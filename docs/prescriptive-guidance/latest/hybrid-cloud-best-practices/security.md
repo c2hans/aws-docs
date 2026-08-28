@@ -178,3 +178,7 @@ Shareable resources in AWS Outposts are:
 To follow the best practices for sharing Outposts resources in a multi-account environment, see the following AWS blog posts:
 + [Sharing AWS Outposts in a multi-account AWS environment: Part 1](https://aws.amazon.com/blogs/mt/best-practices-aws-outposts-in-a-multi-account-aws-environment-part-1/)
 + [Sharing AWS Outposts in a multi-account AWS environment: Part 2](https://aws.amazon.com/blogs/mt/best-practices-aws-outposts-in-a-multi-account-aws-environment-part-2/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -83,3 +83,7 @@ You can view and receive notifications for lead time deviations that AWS Supply 
 
 **Note**
  AWS Supply Chain only supports 1000 insights per watchlist and 100 watchlists per instance. To increase the limit, contact [AWS Support](admin-support-ug.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

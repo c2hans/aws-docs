@@ -105,3 +105,7 @@ This is a highly permissive resource policy that grants `*$ACCOUNT_TO*` unrestri
   You can choose from hundreds of third-party data sources that are available in AWS Data Exchange. By subscribing to these data sources, you get the most up-to-date version of the data.
 
   To create a dataset, you specify the name of a AWS Data Exchange data product that you're subscribed to and entitled to use.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

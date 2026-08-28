@@ -214,3 +214,7 @@ Now that you have successfully published an asset to the Amazon DataZone catalog
 1. In the Amazon DataZone data portal, on the right-hand panel, click the Amazon Redshift link. This opens the Amazon Redshift query editor using project’s credential for authentication.
 
 1. You can now run a query (select statement) on the subscribed table. You can click on the table (three-vertical-dots option) and choose preview to have select statement on the editor screen. Execute the query to see the results.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

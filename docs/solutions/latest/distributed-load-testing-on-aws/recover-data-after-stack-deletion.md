@@ -294,3 +294,7 @@ To simplify future recovery scenarios:
    ```
 
 1. Use AWS Backup to create scheduled backups of DynamoDB tables for long-term retention beyond the 35-day PITR window.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

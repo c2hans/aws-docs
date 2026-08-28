@@ -36,3 +36,7 @@ Additional documentation is provided in the device datasheet for the following c
 + Device Defender – list of Custom Metrics reported (see [10.1 AWS IoT Device Defender](elpg-iot-services.md#elpg-device-defender) )
 + BLE EXCEPTION – list of Hint Codes (see section [8.2.1 EVENT?   »Request the next event in the queue«](elpg-event-handling.md#elpg-eventq-command))
 + BLE DISCOVER ERROR – list of Hint Codes (see section [13.2.1 BLE*[\#]* DISCOVER *[duration\|*CANCEL*]*   »Scanning and Advertisement«](elpg-ble.md#elpg-ble-discover-command))
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -96,3 +96,7 @@ A query is reassigned only if all of the following are true:
 If the query is reassigned, the query continues executing in the new queue. Intermediate results are preserved, so there is minimal effect on total execution time.
 
 If a query can't be reassigned, the query is either restarted or continues execution in the original queue. If the query is restarted, the query is canceled and restarted in the new queue. Intermediate results are deleted. The query waits in the queue, then begins execution when enough slots are available.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

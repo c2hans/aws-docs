@@ -167,3 +167,7 @@ For more information about Unified Search and its integration with Resource Expl
 With multi-account search, you can search and discover resources across AWS Organizations and AWS Regions with a single keyword search.
 
 For more information about multi-account search and how to enable it for Resource Explorer, see [Turning on multi-account search](manage-service-multi-account.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resource Explorer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resource-explorer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

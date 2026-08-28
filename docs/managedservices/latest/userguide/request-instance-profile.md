@@ -16,3 +16,7 @@ If you're unfamiliar with Amazon IAM policies, see [Overview of IAM Policies](ht
 **Single-Account Landing Zone AMS**:
 
 To see a table of permissions that the default AMS IAM instance profile grants, go to [EC2 IAM Instance Profile](https://docs.aws.amazon.com/managedservices/latest/userguide/defaults-user-role.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

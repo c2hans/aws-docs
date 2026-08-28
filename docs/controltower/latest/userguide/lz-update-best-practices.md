@@ -62,3 +62,7 @@ Here is a short list of tasks you can perform to avoid common errors when updati
 
    – Check the Amazon S3 centralized logging bucket in the **Audit** account, because any changes previously made to the bucket policy will be overwritten.
 + Validate that any SCPs not owned by AWS Control Tower will not restrict the `AWSControlTowerExecution` role from performing actions in member accounts, or actions in the management account, for the administrative role that's performing the update.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

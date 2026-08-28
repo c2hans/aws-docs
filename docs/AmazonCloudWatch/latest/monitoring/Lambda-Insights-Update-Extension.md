@@ -117,3 +117,7 @@ If you don't already have the latest version of the Serverless command-line inte
 <a name="Lambda-Insights-Update-Extension-container"></a>
 
 To update Lambda Insights on a Lambda container image, follow the steps in [Enable Lambda Insights on a Lambda container image deployment](Lambda-Insights-Getting-Started-docker.md) to rebuild the image with the latest version of Lambda Insights. Then, use the AWS CLI to [ update the function code](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/lambda/update-function-code.html) and provide a container image URI as the value for the `--image-uri` parameter.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

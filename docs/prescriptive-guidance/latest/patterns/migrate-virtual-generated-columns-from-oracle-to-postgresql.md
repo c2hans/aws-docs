@@ -80,3 +80,7 @@ Starting with PostgreSQL version 12, generated columns are supported. Generated 
 + [Generated columns in PostgreSQL](https://www.postgresql.org/docs/12/ddl-generated-columns.html) (PostgreSQL documentation)
 + [Trigger functions](https://www.postgresql.org/docs/12/plpgsql-trigger.html) (PostgreSQL documentation)
 + [Virtual columns](https://docs.oracle.com/database/121/SQLRF/statements_7002.htm#SQLRF01402) in Oracle Database (Oracle documentation)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

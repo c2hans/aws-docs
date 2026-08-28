@@ -23,3 +23,7 @@ If you reopen your account during the time period that your domains can be recov
 After 90 days have passed from when you closed your account, you can no longer reopen it. For more information, see [Closing an account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-closing.html) in the *AWS Account Management guide*.
 
 For more information, see [Contacting AWS Support about domain registration issues](domain-contact-support.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

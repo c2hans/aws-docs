@@ -63,3 +63,7 @@ With the MetricStream and Audit Manager integration, you can perform the followi
 + [AWS Marketplace link](https://aws.amazon.com/marketplace/pp/prodview-5ph5amfrrmyx4?qid=1616170904192&sr=0-1&ref_=srh_res_product_title)
 + [Product link](https://www.metricstream.com/products/cyber-grc.htm)
 + [Product pricing](https://info.metricstream.com/ms-pricing.html?Channel=ms-side-widget)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

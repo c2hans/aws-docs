@@ -413,3 +413,7 @@ AWS Clean Rooms uses the following encryption context when encrypting intermedia
 ```
 
 Every AWS KMS operation is logged in CloudTrail with the intermediate table ARN, providing a clear audit trail of which resource triggered each encrypt or decrypt call. You can use the `kms:EncryptionContext` condition key in your key policy to restrict which intermediate tables can use the key.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

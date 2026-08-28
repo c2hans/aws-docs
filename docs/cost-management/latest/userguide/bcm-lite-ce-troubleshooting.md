@@ -24,3 +24,7 @@ AWS requires enough data to construct an 80% prediction interval. If you do not 
 <a name="bcm-lite-ce-ts-billing-inconsistency"></a>
 
 In the current billing period, the data depends on your upstream data from your billing applications. Some data might be updated later than 24 hours. Slight inconsistencies between billing data and Cost Explorer can be expected.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ script-src 'wasm-unsafe-eval';
 ```
 
 **Note:** Older versions of browsers may not recognize one or more of those above CSP rules (such as `wasm-unsafe-eval`) and instead could require a very lenient CSP policy (`unsafe-eval`). However, that works against the whole point of CSP to limit dangerous JavaScript from running on a page. Instead, as a workaround, we recommend that you host the library assets on the same origin as your page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

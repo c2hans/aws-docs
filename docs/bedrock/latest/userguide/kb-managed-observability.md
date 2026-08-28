@@ -295,3 +295,7 @@ AgentCore observability integration is available only for managed knowledge base
 <a name="kb-managed-observability-support"></a>
 
 Amazon Bedrock Managed Knowledge Bases temporarily stores customer queries and associated retrieval data solely to provide debugging support in response to customer-reported issues. AWS does not access this data unless the customer explicitly consents during a support engagement. Amazon Bedrock does not use this data for training or improving underlying models.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

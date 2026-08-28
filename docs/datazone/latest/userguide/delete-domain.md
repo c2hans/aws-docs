@@ -30,3 +30,7 @@ IAM roles: datazone\_usr\_<environmentId>.
 Glue databases: (1) <environmentName>\_pub\_db-\*, (2) <environmentName>\_sub\_db-\*. If there was already an existing database of this name, Amazon DataZone will add the environment ID.
 Athena workgroups: <environmentName>-\*. If there was already an existing workgroup of this name, Amazon DataZone will add the environment ID.
 CloudWatch log group: datazone\_<environmentId>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

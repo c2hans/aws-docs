@@ -29,3 +29,7 @@ Examples of all functions:
 | SUM |  <pre>SELECT SUM(d.int_value) FROM raw_time_series AS d</pre>  |
 | STDDEV |  <pre>SELECT STDDEV(d.int_value) FROM raw_time_series AS d</pre>  |
 |  + GROUP BY<br />+  HAVING  |  <pre>SELECT MAX(d.int_value) AS max_int_value, d.asset_id <br />FROM raw_time_series AS d <br />GROUP BY d.asset_id <br />HAVING MAX(d.int_value) > 5                      <br /></pre>  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

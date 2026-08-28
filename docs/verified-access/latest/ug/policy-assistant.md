@@ -63,3 +63,7 @@ After you are satisfied with the changes made to the policies, choose **Next** t
 On the final page of the policy assistant, you will see the changes you made to the policies highlighted for easy review. You can now review them a final time and choose **Apply changes** to commit the changes.
 
 You also have the option of going back to the previous page by choosing **Previous**, or cancelling out of the policy assistant completely by choosing **Cancel**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Verified Access. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verified-access` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,4 +15,8 @@ This API reference includes information about API actions and data types that yo
 
 Amazon A2I integrates APIs from various AWS services to create and start human review workflows for those services. To learn how Amazon A2I uses these APIs, see [Use APIs in Amazon A2I](https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-api-references.html) in the Amazon SageMaker Developer Guide.
 
-This document was last published on August 24, 2026.
+This document was last published on August 28, 2026.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Augmented AI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query augmented-ai` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

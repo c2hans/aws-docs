@@ -32,3 +32,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/resource
 +  [Security Best Practices in Manufacturing OT](https://d1.awsstatic.com/whitepapers/security-bp-for-manufacturing-ot.pdf)
 +  [Securing Internet of Things (IoT) with AWS](https://d1.awsstatic.com/whitepapers/Security/Securing_IoT_with_AWS.pdf)
 +  [Device Manufacturing and Provisioning with X.509 Certificates in AWS IoT Core](https://d1.awsstatic.com/whitepapers/device-manufacturing-provisioning.pdf)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

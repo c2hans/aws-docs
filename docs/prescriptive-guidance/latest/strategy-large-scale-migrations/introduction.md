@@ -21,3 +21,7 @@ Migrating 300 or more servers is considered a large migration. The people, proce
 The following figure shows the other documents in this series. Review the strategy first, then the guides, and then proceed to the playbooks. To access the complete series, see [Large migrations to the AWS Cloud](https://aws.amazon.com/prescriptive-guidance/large-migrations/).
 
 ![The structure of the AWS large migration document series](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-large-scale-migrations/images/guide-img/5d21bc8a-8f8a-4dd9-a6cb-7df7164767ad/images/131babde-2e38-4473-9367-1ae69ec0743a.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

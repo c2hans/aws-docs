@@ -257,3 +257,7 @@ This error can have several causes. To troubleshoot, we recommend that you test 
 **Solution**
 + **Test your connector**: See [Test an SFTP connector](test-sftp-connector.md). If the test fails, the system provides an error message based on the reason the test failed. That section describes how to test your connector from either the console or by using the [TestConnection](https://docs.aws.amazon.com/transfer/latest/APIReference/API_TestConnection.html) API command.
 + **View CloudWatch logs for your connector**: See [Example log entries for SFTP connectors](cw-example-logs.md#example-sftp-connector-logs). This topic provides examples for SFTP connector log entries, and the naming convention to help you find the appropriate logs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

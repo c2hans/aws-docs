@@ -62,3 +62,7 @@ Some Grunt commands were discontinued beginning with Pig 0.16.0. The following t
 Pig 0.14.0 on Amazon EMR 4.x release versions has two mechanisms to allow users other than the `hadoop` user, who don't have home directories, to run Pig scripts. The first mechanism is an automatic fallback that sets the initial working directory to the root directory if the home directory doesn't exist. The second is a `pig.initial.fs.name` property that allows you to change the initial working directory.
 
 These mechanisms are not available beginning with Amazon EMR version 5.0.0, and users must have a home directory on HDFS. This doesn't apply to the `hadoop` user because a home directory is provisioned at launch. Scripts run using Hadoop jar steps default to the Hadoop user unless another user is explicitly specified using `command-runner.jar`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

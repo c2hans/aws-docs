@@ -81,3 +81,7 @@ It is up to an IPv6 enabled host’s operating system and network stack whether 
  The NAT gateway enables your IPv6-only workloads in an Amazon VPC subnet to communicate with IPv4-only services anywhere outside the subnet.
 
 ![This is a diagram that shows DNS64 and NAT64.](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/dns64-and-nat64.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

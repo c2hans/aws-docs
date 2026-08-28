@@ -270,3 +270,7 @@ Tier is a per-request parameter on the runtime API:
 + CloudWatch Metrics expose ModelId, ServiceTier, and ResolvedServiceTier. ResolvedServiceTier reflects what actually served the request — useful when reservations overflow to Standard, or when the requested tier isn't supported by a given model.
 + Tier support is per-model; check the Models at a glance page for each model's supported tiers.
 +  IAM policies can restrict which tiers a principal can request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

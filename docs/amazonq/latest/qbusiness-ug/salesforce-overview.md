@@ -26,3 +26,7 @@ The following table gives an overview of the Salesforce Online connector and its
   - **Feature:** [Sync mode](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-concepts.html#connector-sync-mode) / **Support:** Supports incremental sync only if ACL is turned off, otherwise only full sync will be used.
   - **Feature:** [File types](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-types.html) / **Support:** Supports all files supported by Amazon Q.
   - **Feature:** [Crawled as a document](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/doc-types.html#connector-doc-crawl) / **Support:** +  Each account <br />+  Each contact <br />+  Each campaign <br />+  Each contract <br />+  Each case <br />+  Each partner <br />+  Each opportunity <br />+  Each group <br />+  Each lead <br />+  Each user <br />+  Each task <br />+  Each idea <br />+  Each profile <br />+  Each solution <br />+  Each chatter <br />+  Each document <br />+  Each custom entity <br />+  Each knowledge article
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

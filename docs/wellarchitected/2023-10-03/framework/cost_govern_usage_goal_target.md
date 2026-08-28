@@ -44,3 +44,7 @@ A goal for cost optimization is to increase workload efficiency, which means dec
  **Related examples:**
 + [ Well-Architected Labs: Decommission resources (Goals and Targets) ](https://www.wellarchitectedlabs.com/cost/100_labs/100_goals_and_targets/4_decommission_resources/)
 + [ Well-Architected Labs: Resource Type, Size, and Number (Goals and Targets) ](https://www.wellarchitectedlabs.com/cost/100_labs/100_goals_and_targets/6_resource_type_size_number/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-ga
 +  [Private integrations for REST APIs in API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/private-integration.html)
 +  [Configure custom health checks for DNS failover](https://docs.aws.amazon.com/apigateway/latest/developerguide/dns-failover.html)
 +  [Send traffic to your APIs through your custom domain name](https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-routing-mode.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

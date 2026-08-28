@@ -46,3 +46,7 @@ Network security director generates specific findings for each type of resource 
 | VPC security group |  + Allows unrestricted inbound access (0.0.0.0/0) on all ports<br />+ Allows unrestricted inbound access (0.0.0.0/0) to RDP port 3389<br />+ Allows unrestricted inbound access (0.0.0.0/0) to SSH port 22<br />+ Allows unrestricted outbound access (0.0.0.0/0) on all ports  |
 | VPC network access control list (NACL) |  + Allows unrestricted inbound access (0.0.0.0/0) on all ports<br />+ Allows unrestricted inbound access (0.0.0.0/0) to RDP port 3389<br />+ Allows unrestricted inbound access (0.0.0.0/0) to SSH port 22<br />+ Allows unrestricted outbound access (0.0.0.0/0) on all ports  |
 | AWS WAF web ACL |  + Bot activity detected<br />+ AWS WAF missing bot and scraper rules<br />+ AWS WAF WebACL is not associated with any resources<br />+ AWS WAF missing all rules - no protection, possible misconfiguration<br />+ AWS WAF missing key AWS Managed Rules (IP Reputation, Common Rules, or Bad Inputs)  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

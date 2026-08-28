@@ -78,3 +78,7 @@ Previously, it was time consuming to review individual evidence details. If you 
 To get started, follow the steps to [search for evidence](https://docs.aws.amazon.com/audit-manager/latest/userguide/search-for-evidence-in-evidence-finder.html). Then, select the radio button next to a result to see a resource summary in the current page. You can preview each individual resource that relates to an evidence item. To see the full evidence details for any resource, choose the evidence name. For more information, see [Previewing resource summaries](viewing-search-results-in-evidence-finder.md#preview-evidence).
 
 ![An example of a search result and the on-screen resource summary for that result.](http://docs.aws.amazon.com/audit-manager/latest/userguide/images/evidence-finder-preview-console.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

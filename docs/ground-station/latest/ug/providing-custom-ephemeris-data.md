@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/providing-custo
 <a name="w2aac28c17b9"></a>
 
  For more detailed instructions for using customer-provided ephemerides with AWS Ground Station, see [Using customer-provided ephemerides with AWS Ground Station](https://aws.amazon.com/blogs/publicsector/using-customer-provided-ephemerides-with-aws-ground-station/) and it's associated GitHub repository [aws-samples/aws-groundstation-cpe](https://github.com/aws-samples/aws-groundstation-cpe).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

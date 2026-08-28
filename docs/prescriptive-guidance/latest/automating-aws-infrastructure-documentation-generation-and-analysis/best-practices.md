@@ -37,3 +37,7 @@ Use the graph visualization in the UI to explore resource relationships. Filters
 <a name="maintaining-cache-awareness.6d8504d5-ad92-59d7-849b-c3f30b78958f"></a>
 
 The system caches recent analyses to speed up repeated queries. If your infrastructure changes, always trigger a fresh scan instead of relying solely on cached results. This practice helps to ensure that your report reflects the latest state.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

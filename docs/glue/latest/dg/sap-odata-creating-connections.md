@@ -48,3 +48,7 @@ To configure an SAP OData connection:
 1. Grant the IAM role associated with your AWS Glue job permission to read `secretName`. For more details, see the [IAM policies](sap-odata-configuring-iam-permissions.md).
 
 1. Choose **Test connection** and test your connection. If the connection test passes, click next, enter your connection name and save your connection. Test connection functionality is not available if you have chosen Network options (VPC).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

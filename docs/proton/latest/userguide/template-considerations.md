@@ -17,3 +17,7 @@ End of support notice: On October 7, 2026, AWS will end support for AWS Proton. 
 + **S3 bucket template bundle encryption**
 
   If you want to encrypt sensitive data in your template bundles at rest in your S3 bucket, use SSE-S3 or SSE-KMS keys to allow AWS Proton to retrieve them.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -92,3 +92,7 @@ After the replica is created, you can run read and write operations on the prima
 | Create gaped replication | Create 5 minutes delay<pre>ALTER DATABASE<br />  RECOVER MANAGED STANDBY<br />  DATABASE CANCEL;<br />ALTER DATABASE<br />  RECOVER MANAGED STANDBY<br />  DATABASE DELAY 5<br />  DISCONNECT FROM SESSION;</pre><br />Return for no delay<pre>ALTER DATABASE<br />  RECOVER MANAGED STANDBY<br />  DATABASE CANCEL;<br />ALTER DATABASE<br />  RECOVER MANAGED STANDBY<br />  DATABASE NODELAY<br />  DISCONNECT FROM SESSION;</pre> | Not Supported |
 
 For more information, see [Replication with Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Replication.html) in the *user guide* and [Multi-AZ deployments for high availability](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Concepts.MultiAZ.html) in the *user guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

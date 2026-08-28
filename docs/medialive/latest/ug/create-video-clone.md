@@ -24,3 +24,7 @@ Note that the procedure for cloning a video encode is nearly identical to the pr
 1. Change any fields, as appropriate.
 
    Keep in mind that this cloned encode is a new encode instance. If you change fields, you don't affect the source encode.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

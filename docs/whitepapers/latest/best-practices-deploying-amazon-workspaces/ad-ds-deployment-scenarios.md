@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
 +  **Scenario 6: AWS Microsoft AD, Shared Services VPC, and a One-Way Trust to On-Premises AD** — This scenario is similar to Scenario 5, but it includes disparate identity and resource domains using a one-way trust to on-premises.
 
 You need to make several considerations when selecting your deployment scenario for Active Directory Domain Services (ADDS). This section explains the role of the AD Connector with Amazon WorkSpaces, and covers some important considerations when selecting an ADDS deployment scenario. For further guidance on design and planning of ADDS on AWS, please consult the [ Active Directory Domain Services on AWS Design and Planning Guide](https://d1.awsstatic.com/whitepapers/adds-on-aws.pdf).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,3 +41,7 @@ The first call to the `sagemaker_client` object creates a new endpoint configura
 
 **Note**
 You can also host multiple models in one container behind a [SageMaker AI real-time inference multi-model endpoint](https://docs.aws.amazon.com/sagemaker/latest/dg/multi-model-endpoints.html) and configure online explainability with SageMaker Clarify.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

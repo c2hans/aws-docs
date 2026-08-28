@@ -18,3 +18,7 @@ You perform the following actions to get started with Aurora PostgreSQL Limitles
 1. Run queries and other SQL statements on the DB shard group. For more information, see [Querying Aurora PostgreSQL Limitless Database](limitless-query.md).
 
 1. Monitor the performance of Limitless Database. For more information, see [Monitoring Aurora PostgreSQL Limitless Database](limitless-monitoring.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

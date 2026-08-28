@@ -17,3 +17,7 @@ The live chat feature is not for security events; for security issues, create a 
 + Rate incident communications.
 
 The following examples describe using Support Center to submit an incident. After it's submitted, the AMS Accelerate team works with you to resolve the incident per the standard AMS Accelerate SLA.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

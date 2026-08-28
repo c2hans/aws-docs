@@ -76,3 +76,7 @@ AWS Identity and Access Management (IAM) roles associated with groups are not ex
 <a name="tracked-devices"></a>
 
 This guidance does not export [tracked devices](https://docs.aws.amazon.com/cognito/latest/developerguide/amazon-cognito-user-pools-device-tracking.html) to the `BackupTable` DynamoDB table. As such, if you use the `ImportWorkflow` Step Functions workflow to populate a new user pool, there will be no tracked devices associated with the imported user profiles.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for User Profiles Export with Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

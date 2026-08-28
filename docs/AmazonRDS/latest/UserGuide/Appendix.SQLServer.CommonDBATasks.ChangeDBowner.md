@@ -28,3 +28,7 @@ The following parameter is required:
 
 **Important**
 You can't use `rds_changedbowner_to_rdsa` to change ownership of a database to a login other than `rdsa`. For example, you can't change the ownership to the login with which you created the database. To restore lost membership in the `db_owner` role for your master user when no other database user can be used to grant the membership, reset the master user password to obtain membership in the `db_owner` role. For more information, see [Resetting the db\_owner role membership for master user for Amazon RDS for SQL Server](Appendix.SQLServer.CommonDBATasks.ResetPassword.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

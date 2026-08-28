@@ -454,3 +454,7 @@ If you select to own and manage your own key, make sure you set the KMS key poli
   + API – The Amazon Aurora DSQL API uses `CUSTOMER_MANAGED_KMS_KEY` for customer managed keys, and `AWS_OWNED_KMS_KEY` for AWS owned keys.
 + If you don't specify an encryption key during cluster creation, Aurora DSQL automatically encrypts your data using the AWS owned key.
 + You can switch between an AWS owned key and a Customer managed key at any time. Make this change using the AWS Management Console, AWS CLI, or the Amazon Aurora DSQL API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

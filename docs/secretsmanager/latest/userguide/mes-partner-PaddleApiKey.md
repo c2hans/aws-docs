@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-PaddleApiKey"></a>
 
 ## Secret Value Fields
-<a name="w2aac27c11c31b3"></a>
+<a name="w2aac27c11c35b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -20,7 +20,7 @@ api\_key
 The Paddle API key value (starts with `pdl_live_`, `pdl_test_`, or `pdl_sdbx_` followed by `apikey_` and the key content). This is the field that gets rotated.
 
 ## Secret Metadata Fields
-<a name="w2aac27c11c31b5"></a>
+<a name="w2aac27c11c35b5"></a>
 
 The following are the metadata fields for Paddle API Key:
 
@@ -34,7 +34,7 @@ gracePeriodSeconds
 (Optional) Number of seconds the old API key remains valid after rotation (0–86400). Default: 300. Set to 0 for immediate expiry of the old key. The grace period countdown starts when the new key is first used successfully.
 
 ## Usage Flow
-<a name="w2aac27c11c31b7"></a>
+<a name="w2aac27c11c35b7"></a>
 
 This rotation uses a single-secret architecture. No admin secret is required. The API key rotates itself through the Paddle rotation endpoint.
 
@@ -43,3 +43,7 @@ Create your secret using the [CreateSecret](https://docs.aws.amazon.com/secretsm
 During rotation, the driver extracts the key ID and resolves the Paddle API host from the key prefix. It then calls the Paddle rotation endpoint with a configurable grace period. Secrets Manager stores the new key as AWSPENDING, verifies it by making a non-mutating API call, and promotes it to AWSCURRENT. The old key remains valid for the duration of the grace period (default 300 seconds) before auto-expiring.
 
 The API key must be created with the "rotatable" option enabled in the Paddle Dashboard. Secrets Manager rejects non-rotatable keys with an error.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

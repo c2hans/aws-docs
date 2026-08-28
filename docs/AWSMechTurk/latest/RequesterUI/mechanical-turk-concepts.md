@@ -48,3 +48,7 @@ It is important to note that ***anyone*** can register to work in the Mechanical
 Mechanical Turk provides several Qualification Types including Approval Rate, which is the percentage of assignments submitted that have been approved, and Assignments Approved, which is the number of Assignments that were approved for the Worker. The Approval Rate and Assignments Approve Qualification Types are automatically calculated based on a Worker's account statistics and history. If you don't want to use Workers who just registered this morning and have no work history, we recommend that you require Workers to have a 95% Approval Rate and 1,000 Approved Assignments to work on your project.
 
 The **Master** Qualification Types give you easy access to Master Workers who have demonstrated the ability to provide successful results for specific types of tasks across multiple Requesters on the Mechanical Turk Marketplace.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

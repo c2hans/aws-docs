@@ -15,3 +15,7 @@ The Java example uses a `SystemPropertiesCredentialsProvider` object to obtain y
   + **KinesisVideoProducerJNI.dll** for Windows
 **Note**
 Pre-built libraries for macOS, Ubuntu, Windows, and Raspbian are available in `src/main/resources/lib` at [https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-java.git](https://github.com/awslabs/amazon-kinesis-video-streams-producer-sdk-java). For other environments, compile the [C\+\+](producer-sdk-cpp.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

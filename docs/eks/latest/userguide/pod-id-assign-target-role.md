@@ -190,3 +190,7 @@ In this step, you will create an association between the Target IAM role and the
 1. A session policy can only be applied when the **Disable session tags** setting is checked. 2. If you specify a session policy, then the policy restrictions apply to the **Target IAM role**'s permissions and not the **IAM role** associated with this Pod Identity association.
 
 1. Choose **Create** to create the association.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

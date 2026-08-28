@@ -91,3 +91,7 @@ If you have already created an investigation group and want to add chat integrat
    + If you want to integrate CloudWatch investigations in chat applications with a third-party chat system, choose **Configure new chat client**. For more information about setting up this configuration, see [Getting started with CloudWatch investigations in chat applications](https://docs.aws.amazon.com/chatbot/latest/adminguide/getting-started.html).
 
 When incident reports are generated, notifications can be sent to configured chat channels to alert team members that new documentation is available. These notifications include links to the generated reports and can be customized to include key findings or action items.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,3 +56,7 @@ The following table describes important changes to the Application Auto Scaling 
 | Add support for Amazon EMR clusters | Use Application Auto Scaling to scale the core and task nodes. For more information, see [Using automatic scaling in Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-automatic-scaling.html) in the Amazon EMR Management Guide. | November 18, 2016 |
 | Add support for Spot Fleets | Use Application Auto Scaling to scale the target capacity. For more information, see [Automatic scaling for Spot fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-fleet-automatic-scaling.html) in the Amazon EC2 User Guide. | September 1, 2016 |
 | Add support for Amazon ECS services | Use Application Auto Scaling to scale the desired count. For more information, see [Service Auto Scaling](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/service-auto-scaling.html) in the Amazon Elastic Container Service Developer Guide. | August 9, 2016 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

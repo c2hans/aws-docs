@@ -12,3 +12,7 @@ If these third-party applications connect directly to the Oracle database, they 
  AWS native tools such as [Amazon Simple Notification Service](https://aws.amazon.com/sns/), [Amazon RDS Performance Insights](https://aws.amazon.com/rds/performance-insights/), [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/), and [Amazon Relational Database Service](http://aws.amazon.com/rds) are already integrated with the Amazon RDS and Aurora PostgreSQL database platform and are recommended for a full picture of the ongoing performance.
 
 For more information, see [Engage with Amazon Web Services Partners](https://partners.amazonaws.com/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,3 +33,7 @@ The global suppression list removal request form is no longer in the Amazon SES 
 + [Using configuration set-level suppression to override your account-level suppression list](sending-email-suppression-list-config-level.md)
 + [Using list management](sending-email-list-management.md)
 + [Using subscription management](sending-email-subscription-management.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ Publishes a provision-related request to the managed integrations components. Fo
 + `IOTMI_STATUS_INVALID_PARAMETER` - One or more parameters in the request are invalid.
 + `IOTMI_STATUS_INVALID_JSON_OBJECT` - The request payload is not a valid JSON object.
 + `IOTMI_STATUS_NO_MEMORY` - A memory allocation error occurred.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -151,3 +151,7 @@ Create an input folder in your S3 bucket and upload the dataset file to the new 
    ```
 
 Now, you have an S3 bucket with the `amazon-reviews.csv` file in a folder called `input`. If you used the console, you also have an `output` folder in the bucket. If you used the AWS CLI, you will create the output folder when running the Amazon Comprehend analysis jobs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

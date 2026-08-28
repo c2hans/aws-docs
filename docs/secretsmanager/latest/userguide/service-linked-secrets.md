@@ -32,3 +32,7 @@ Secret ARN : arn:aws:us-east-1:ServiceID!MySecret-a1b2c3
 + `sqlworkbench` – [Amazon Redshift query editor v2](integrating_how-services-use-secrets_sqlworkbench.md)
 
 To find secrets that are managed by other AWS services, see [Find managed secrets](manage_search-secret.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

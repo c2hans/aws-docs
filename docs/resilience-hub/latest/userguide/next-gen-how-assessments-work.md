@@ -26,3 +26,7 @@ The assessment engine uses specialized AI agents that apply AWS Well-Architected
 The failure mode assessment does not consume all available resources. Instead it evaluates a subset of resources known as assessed resources.
 
 **Assessed resource:** A top-level infrastructure or service component that is directly evaluated during a resilience assessment. A resource is assessed if its configuration has a meaningful impact on availability, recoverability, or fault tolerance of the service. Resources outside of this scope will not have any impact on assessment and will not be surfaced in list-resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

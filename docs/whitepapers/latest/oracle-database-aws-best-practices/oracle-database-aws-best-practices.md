@@ -30,3 +30,7 @@ Amazon Web Services (AWS) provides a comprehensive set of services and tools for
 1. Running a self-managed Oracle Database directly on VMware Cloud on AWS. VMware Cloud on AWS is an integrated cloud offering jointly developed by AWS and VMware. Like Amazon EC2, you have full control of the database and have operating system-level access. You can run advanced architectures like Oracle Real Application Cluster (RAC) and Oracle RAC extended clusters (across different AZs) in VMware Cloud on AWS.
 
 Whether you choose to run a self-managed Oracle Database on Amazon EC2 or the fully-managed RDS for Oracle, following the best practices discussed in this whitepaper will help you get the most out of your Oracle Database implementation on AWS. AWS will discuss Oracle licensing options, considerations for choosing Amazon EC2 or Amazon RDS for your Oracle Database implementation, and how to optimize network configuration, instance type, and database storage in your implementation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

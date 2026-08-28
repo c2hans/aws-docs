@@ -12,3 +12,7 @@ Amazon Q Business uses location and job-related information from your IAM Identi
 To enable response personalization, add **Address** information and **Job related information** for users in the IAM Identity Center instance that connects to your Amazon Q Business application. For more information, see [Add users](https://docs.aws.amazon.com/singlesignon/latest/userguide/addusers.html) in the IAM Identity Center User Guide.
 
 User personalization data that's in your IAM Identity Center instance is connected to your Amazon Q Business application environment, and responses are personalized by default. You can deactivate response personalization at any time by using the [Admin controls and guardrails](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/guardrails-global-controls.html#guardrails-global-controls-customizing) feature in Amazon Q Business.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

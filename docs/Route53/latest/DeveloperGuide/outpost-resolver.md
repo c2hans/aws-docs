@@ -57,3 +57,7 @@ If the AWS Outposts is disconnected from the AWS Region, the Resolver on Outpost
 + DNS queries for resources that are hosted locally on the Outposts are resolved but in some cases the response might be stale if the IP address for the resource was updated while the Outpost was in a disconnected state.
 + DNS queries for resources hosted on the in-Region VPC are resolvable. However, the resources will not be accessible until the Outpost connection to the AWS Region is restored.
 + DNS queries for public DNS resources can be resolved if they are available in the VPC Resolver cache on Outpost.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

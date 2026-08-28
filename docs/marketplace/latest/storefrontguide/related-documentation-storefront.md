@@ -42,3 +42,7 @@ AWS Marketplace Storefront works with AWS Marketplace for product listing, prici
 | AWS Partner Network | [APN overview](https://aws.amazon.com/partners/) |
 | ISV Accelerate | [ISV Accelerate program](https://aws.amazon.com/partners/programs/isv-accelerate/) |
 | ACE program | [AWS ACE](https://aws.amazon.com/partners/funding/) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

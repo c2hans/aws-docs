@@ -48,3 +48,7 @@ A single exposure finding contains issues identified in multiple remediation top
 
 **Remediation: Enable deletion protection**
  If you manage multiple tables, consider using CloudFormation to update table properties in bulk. You can modify your CloudFormation templates to include `DeletionProtectionEnabled` property and update your stacks. After completing remediation, verify deletion protection is enabled in the **Additional** info dropdown in the table **Settings** tab.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

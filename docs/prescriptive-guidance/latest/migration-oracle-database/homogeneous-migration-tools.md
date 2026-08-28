@@ -116,3 +116,7 @@ Oracle RMAN supports Amazon EC2, Amazon RDS Custom, and VMware Cloud on AWS migr
 [VMware Hybrid Cloud Extension (HCX](https://cloud.vmware.com/vmware-hcx)) enables you to migrate your on-premises Oracle databases to AWS without having to retrofit your VMware infrastructure. It includes several migration methods that are detailed in the blog posts [How to Migrate Oracle Workloads to VMware Cloud on AWS](https://aws.amazon.com/blogs/apn/how-to-migrate-oracle-workloads-to-vmware-cloud-on-aws/) and [Migrating Workloads to VMware Cloud on AWS with Hybrid Cloud Extension (HCX)](https://aws.amazon.com/blogs/apn/migrating-workloads-to-vmware-cloud-on-aws-with-hybrid-cloud-extension-hcx/). One of these methods, HCX vMotion, provides a live migration of a single VM with no downtime and high availability.
 
 HCX is available free of charge to VMware Cloud on AWS customers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

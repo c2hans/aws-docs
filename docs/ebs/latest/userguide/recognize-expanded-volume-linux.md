@@ -299,3 +299,7 @@ Use the following procedure to extend a Windows file system using PowerShell.
 ![Extend a partition using PowerShell - max](http://docs.aws.amazon.com/ebs/latest/userguide/images/ebs-extend-powershell-v3-max.png)
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

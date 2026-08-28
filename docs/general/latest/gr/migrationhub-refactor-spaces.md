@@ -43,3 +43,7 @@ The following are the service endpoints and service quotas for this service.
 | Environments | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/refactor-spaces/quotas/L-DEF84811)  | The maximum number of Refactor Spaces environments that you can create in this account in the current Region. |
 | Routes | Each supported Region: 1,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/refactor-spaces/quotas/L-CE52EEA2)  | The maximum number of Refactor Spaces routes that you can create in this account in the current Region. |
 | Services | Each supported Region: 500 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/refactor-spaces/quotas/L-B19E8A2B)  | The maximum number of Refactor Spaces services that you can create in this account in the current Region. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

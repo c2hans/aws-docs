@@ -19,3 +19,7 @@ The JavaScript API for DynamoDB is exposed through the `AWS.DynamoDB`, `AWS.Dyna
 + [Reading and Writing Items in Batch in DynamoDB](dynamodb-example-table-read-write-batch.md)
 + [Querying and Scanning a DynamoDB Table](dynamodb-example-query-scan.md)
 + [Using the DynamoDB Document Client](dynamodb-example-document-client.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for JavaScript SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

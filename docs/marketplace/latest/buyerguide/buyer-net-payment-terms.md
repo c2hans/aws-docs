@@ -73,3 +73,7 @@ When you accept a private offer with custom payment terms, you can set the net p
 If you typically set payment terms at the vendor or contract level in your procure-to-pay tool, you can override this at the purchase order level for subscriptions with custom payment terms.
 
 For more information about purchase orders, see [Using purchase orders for AWS Marketplace transactions](buyer-purchase-orders.md). For more information about private offers, see [Private offers in AWS Marketplace](buyer-private-offers.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,3 +28,7 @@ Complete the following procedure to test your distribution. We use the Chrome we
 
 1. In the **Header** panel that appears, you should see that the `via` and `x-cache` headers both mention CloudFront. This confirms that your distribution is caching and serving content from your origin. your
 ![Distribution test result](http://docs.aws.amazon.com/lightsail/latest/userguide/images/distribution-test-result.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

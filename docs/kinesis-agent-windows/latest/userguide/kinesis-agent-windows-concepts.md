@@ -57,3 +57,7 @@ For more information about sink types and sink declarations, see [Sink Declarati
 A Kinesis Agent for Windows *pipe* connects the output of a Kinesis Agent for Windows source to the input of a Kinesis Agent for Windows sink. It optionally transforms the data as it flows through the pipe. Each pipe corresponds to a particular pipe declaration in the Kinesis Agent for Windows `appsettings.json` configuration file. The pipe declaration provides essential details for configuring the sink, such as the source and sink for the pipe.
 
 For more information about pipe types and pipe declarations, see [Pipe Declarations](pipe-object-declarations.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Agent for Windows. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesis-agent-windows` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

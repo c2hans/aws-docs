@@ -13,3 +13,7 @@ As part of creating a pipeline, an S3 artifact bucket provided by the customer w
 **Topics**
 + [Example 1: Create an AWS CodeCommit pipeline with AWS CloudFormation](tutorials-cloudformation-codecommit.md)
 + [Example 2: Create an Amazon S3 pipeline with AWS CloudFormation](tutorials-cloudformation-s3.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

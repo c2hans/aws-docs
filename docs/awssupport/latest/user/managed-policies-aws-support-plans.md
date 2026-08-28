@@ -21,33 +21,19 @@ AWS Support Plans uses the [AWSSupportPlansFullAccess](https://console.aws.amazo
 + View details about the status for a request to change your support plan
 + Change the support plan for your AWS account
 + Create support plan schedules for your AWS account
-+  View a list of all support plan modifiers for your AWS account
++ View a list of all support plan modifiers for your AWS account
++ Accept a support agreement for your AWS account
++ Cancel a support agreement for your AWS account
++ Create a support agreement for your AWS account
++ View a support agreement for your AWS account
++ View a list of support agreements for your AWS account
++ View a list of support agreement revisions for your AWS account
++ Reject a support agreement for your AWS account
++ Update a support agreement for your AWS account
++ Create the AWS Support Plans service-linked role for your AWS account
++ View the AWS Support Plans service-linked role for your AWS account
 
-------
-#### [ JSON ]
-
-****
-
-```
-{
-    "Version":"2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "supportplans:GetSupportPlan",
-                "supportplans:GetSupportPlanUpdateStatus",
-                "supportplans:StartSupportPlanUpdate",
-                "supportplans:CreateSupportPlanSchedule",
-                "supportplans:ListSupportPlanModifiers"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
-```
-
-------
+To view the permissions for this policy, see [AWSSupportPlansFullAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportPlansFullAccess.html) in the *AWS Managed Policy Reference*.
 
 For a list of changes to the policies, see [AWS Support Plans updates to AWS managed policies](#security-iam-awsmanpol-updates-support-plans).
 
@@ -57,31 +43,12 @@ For a list of changes to the policies, see [AWS Support Plans updates to AWS man
 AWS Support Plans uses the [AWSSupportPlansReadOnlyAccess](https://console.aws.amazon.com/iam/home#/policies/arn:aws:iam::aws:policy/AWSSupportPlansReadOnlyAccess$jsonEditor) AWS managed policy. The IAM entity uses this policy to complete the following read-only Support Plans actions for you:
 + View your support plan for your AWS account
 + View details about the status for a request to change your support plan
-+  View a list of all support plan modifiers for your AWS account
++ View a list of all support plan modifiers for your AWS account
++ View a support agreement for your AWS account
++ View a list of support agreements for your AWS account
++ View a list of support agreement revisions for your AWS account
 
-------
-#### [ JSON ]
-
-****
-
-```
-{
-    "Version":"2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "supportplans:GetSupportPlan",
-                "supportplans:GetSupportPlanUpdateStatus",
-                "supportplans:ListSupportPlanModifiers"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
-```
-
-------
+To view the permissions for this policy, see [AWSSupportPlansReadOnlyAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AWSSupportPlansReadOnlyAccess.html) in the *AWS Managed Policy Reference*.
 
 For a list of changes to the policies, see [AWS Support Plans updates to AWS managed policies](#security-iam-awsmanpol-updates-support-plans).
 
@@ -103,6 +70,11 @@ The following table describes important updates to the Support Plans managed pol
 
 | Change | Description | Date |
 | --- | --- | --- |
+| [AWSSupportPlansReadOnlyAccess](#support-plan-read-only-access-managed-policy) - Update to an existing policy<br />[AWSSupportPlansFullAccess](#support-plan-full-access-managed-policy) - Update to an existing policy | Added support agreement actions to the `AWSSupportPlansFullAccess` and `AWSSupportPlansReadOnlyAccess` managed policies. Also added service-linked role actions to the `AWSSupportPlansFullAccess` managed policy. | August 27, 2026 |
 | [AWSSupportPlansReadOnlyAccess](#support-plan-read-only-access-managed-policy) - Update to an existing policy<br />[AWSSupportPlansFullAccess](#support-plan-full-access-managed-policy) - Update to an existing policy | Add ListSupportPlanModifiers action to AWSSupportPlansFullAccess and AWSSupportPlansReadOnlyAccess managed policies. | September 9, 2024 |
 | [AWSSupportPlansFullAccess](#support-plan-full-access-managed-policy) - Update to an existing policy | Add CreateSupportPlanSchedule action to AWSSupportPlansFullAccess managed policy.  | May 8, 2023 |
 | Change log published | Change log for the Support Plans managed policies. | September 29, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -294,3 +294,7 @@ Before you can use an Amazon Bedrock model, you have to request access to it.
    Your model output may be different than the previous sample output.
 
    For a notebook that contains the code examples given in this section, see [bedrock-claude-summarization-accuracy.ipnyb](https://github.com/aws/fmeval/blob/main/examples/bedrock-claude-summarization-accuracy.ipynb).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

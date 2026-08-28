@@ -188,3 +188,7 @@ To clean up the resources you created during this tutorial, do the following:
 + In [the Amazon S3 console](https://console.aws.amazon.com/s3/), delete any objects and any buckets created (for example, *getstartedbucket*).
 + In [the IAM console](https://console.aws.amazon.com/iam/home#/roles), delete the role name (for example, *getStartedRole*).
 + In [the Amazon Cognito console](https://console.aws.amazon.com/cognito/home#/identity), delete the identity pool name (for example, *getStartedPool*).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for JavaScript. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,3 +45,7 @@ Current job status after the cancellation request.
 
 **Note**
 Cancelled jobs may have partial results in the output location depending on when cancellation occurs during processing. Check the output location to determine if any partial data was written before cancellation completed. You are billed for the number of records that were processed and written to your output bucket before the job was cancelled.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

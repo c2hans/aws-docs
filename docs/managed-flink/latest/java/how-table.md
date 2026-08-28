@@ -10,3 +10,7 @@ Your Apache Flink application uses the [Apache Flink Table API](https://nightlie
 This section contains the following topics:
 + [Table API connectors](how-table-connectors.md): These components move data between your application and external data sources and destinations.
 + [Table API time attributes](how-table-timeattributes.md): This topic describes how Managed Service for Apache Flink tracks events when using the Table API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

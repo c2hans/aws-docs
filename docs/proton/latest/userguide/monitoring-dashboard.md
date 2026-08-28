@@ -31,3 +31,7 @@ Choose a service instance name to navigate to the service instance detail page, 
 ![Deployment history tab](http://docs.aws.amazon.com/proton/latest/userguide/images/deployment-history.png)
 
 The deployment history tab lets you see details about your deployments. In the deployment history table, you can keep track of the deployment status, as well as environment and deployment ID. You can choose the resource name or the deployment ID to see even more details, such as a deployment status message and resource outputs. The table also allows you to filter on any table property.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

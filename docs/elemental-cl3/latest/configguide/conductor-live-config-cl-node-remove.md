@@ -18,3 +18,7 @@ Follow this procedure to remove either the primary or the secondary Conductor Li
 1. Still on the **Redundancy** page, find the node that you're removing. On the row for the node, choose the **Delete** (garbage can). On the dialog that appears, choose **OK**.
 
 1. Go to the **Nodes** page and find the node that you're removing. On the row for the node, choose the downward triangle and select **Remove Node**. At the prompt, choose **Remove**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

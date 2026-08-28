@@ -180,3 +180,7 @@ Replace `<region>` with your AWS Region (for example, `us-east-1`, `eu-west-1`).
 The same port requirements for DCV streaming apply.
 
 If you use a proxy for WorkSpaces client connections, the VPC endpoint DNS name must be allowed through the proxy. For successful DNS name resolution, use the private DNS servers within your VPC; public DNS servers will resolve the DNS name but the returned private IP addresses will not be accessible from outside your VPC.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

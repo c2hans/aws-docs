@@ -72,3 +72,7 @@ Before uninstalling the AWS Partner Customer Relationship Management (CRM) conne
 When implementing the AWS Partner CRM Connector, be aware of Salesforce governor limits, particularly regarding SOQL query consumption. These limits can significantly impact your custom business logic and overall system performance. We recommend reviewing Salesforce's official documentation on governor limits and best practices for query optimization. For detailed guidance, refer to the following Salesforce resources:
 + [Salesforce governor lImits overview](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_gov_limits.htm) in the *Apex Developer Guide*
 + [Best Practices for SQLS and SOSL](https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_gov_limits.htm?q=SOSL+SOQL+best+practices+limits)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

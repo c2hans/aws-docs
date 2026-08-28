@@ -25,3 +25,7 @@ The sequence that the lights display indicates the status of the gateway, as des
 | 8 | Orange and blue lights flashing (rapidly) | The gateway is on and in commissioning mode, but not yet linked to any sensors. In commissioning mode, the gateway is discoverable and configurable by Amazon Amazon Monitron, but no sensors can connect yet. |
 | 9 | No lights | The gateway is not connected to a power source or a firmware update is in progress. |
 | 10 | Solid orange and blue lights | The gateway is starting up. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

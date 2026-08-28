@@ -168,3 +168,7 @@ To resolve error findings, consider the following approaches based on the error 
 + For PRINCIPAL\_ERRORS\_LIMIT\_EXCEEDED, review and potentially simplify the access patterns for the affected resource.
 
 After making changes to address the underlying issues, IAM Access Analyzer will attempt to analyze the resources again during its next scan cycle.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

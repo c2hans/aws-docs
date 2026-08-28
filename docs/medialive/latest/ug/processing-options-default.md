@@ -16,3 +16,7 @@ Typically, you change these defaults only if you want to include ad avail inform
 + You enable passthrough.
 + You enable manifest decoration, if your channel includes HLS, MediaPackage, or Microsoft Smooth output groups.
 + You blank or blackout video content depending on your agreement with the content provider.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

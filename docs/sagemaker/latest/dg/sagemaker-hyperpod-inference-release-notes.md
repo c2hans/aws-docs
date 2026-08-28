@@ -9,6 +9,59 @@ This topic covers release notes that track updates, fixes, and new features for 
 
 For information about SageMaker HyperPod Inference capabilities and deployment options, see [Deploying models on Amazon SageMaker HyperPod](sagemaker-hyperpod-model-deployment.md).
 
+## SageMaker HyperPod Inference release notes: v3.4
+<a name="sagemaker-hyperpod-inference-release-notes-20260821"></a>
+
+**Release Date:** August 21, 2026
+
+**Summary**
+
+Amazon SageMaker HyperPod Inference Operator v3.4 makes the resource requests and limits of the managed sidecar containers configurable through the CRD. You can now size the reverse proxy, metrics collector, and data capture uploader containers to match your workload instead of relying on fixed defaults.
+
+Amazon SageMaker HyperPod Inference Operator v3.4 is available in all AWS Regions where SageMaker HyperPod is supported.
+
+**New Features**
++ **Configurable Container Resources** – Set resource requests and limits for the operator-managed sidecar containers. Use the new `metricsSidecarResources`, `metricsCollectorResources`, and `s3UploaderResources` fields on your `InferenceEndpointConfig` or `JumpStartModel`. These fields let you raise the reverse proxy memory for high-concurrency deployments, tune the metrics collector, and size the data capture uploader. When a field is set, the operator applies your values instead of the built-in defaults and preserves them across reconciliation. Each field fully replaces that container's resource block, so specify complete requests and limits.
+
+### Upgrade to v3.4
+<a name="sagemaker-hyperpod-inference-v3-4-upgrade"></a>
+
+**Helm upgrade:**
+
+If you already have the Inference Operator installed by using Helm, use the following commands to upgrade:
+
+```
+helm get values -n kube-system hyperpod-inference-operator \
+> current-values.yaml
+
+cd sagemaker-hyperpod-cli/helm_chart/HyperPodHelmChart/\
+charts/inference-operator
+
+helm upgrade hyperpod-inference-operator . -n kube-system \
+  -f current-values.yaml --set image.tag=v3.4
+
+# Verification
+kubectl get deployment hyperpod-inference-operator-controller-manager \
+  -n hyperpod-inference-system \
+  -o jsonpath='{.spec.template.spec.containers[0].image}'
+```
+
+**EKS Add-on upgrade:**
+
+If you installed the Inference Operator as an EKS Add-on, upgrade to the latest version:
+
+```
+CLUSTER=EKS_CLUSTER_NAME
+REGION=REGION
+
+aws eks update-addon \
+  --cluster-name $CLUSTER \
+  --addon-name amazon-sagemaker-hyperpod-inference \
+  --addon-version v1.5.0-eksbuild.1 \
+  --resolve-conflicts OVERWRITE \
+  --region $REGION
+```
+
 ## SageMaker HyperPod Inference release notes: v3.3
 <a name="sagemaker-hyperpod-inference-release-notes-20260804"></a>
 
@@ -499,3 +552,7 @@ helm upgrade hyperpod-inference-operator . \
   -f current-values.yaml \
   --set image.tag=v2.3
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

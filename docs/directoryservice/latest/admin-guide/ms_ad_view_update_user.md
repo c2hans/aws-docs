@@ -176,3 +176,7 @@ For more information, see [`Update-DSDUser`](https://docs.aws.amazon.com/powersh
 For more information on user attributes, see [AWS Directory Service Data attributes](ad_data_attributes.md) and [Microsoft documentation](https://learn.microsoft.com/en-us/windows/win32/ad/user-object-attributes).
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

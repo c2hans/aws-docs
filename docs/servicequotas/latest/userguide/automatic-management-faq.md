@@ -85,3 +85,7 @@ You can monitor auto-adjust request results through several methods:
 <a name="faq-need-help"></a>
 
 If you have additional questions or need assistance with Automatic Management, contact AWS Support or refer to the [Service Quotas documentation](https://docs.aws.amazon.com/servicequotas/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Service Quotas. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicequotas` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

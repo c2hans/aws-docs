@@ -109,3 +109,7 @@ Use the **Group by** button to have Cost Explorer display the cost data groups b
 1. (Optional) Use the **Filters** controls to configure a view of your cost data.
 
 1. Choose a **Group by** option to group by the category that you want. The data table below the chart also groups your cost figures by the category that you select.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

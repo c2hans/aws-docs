@@ -21,3 +21,7 @@ The change type requires you to specify `TransitGatewayRouteTableName` (a meanin
 
 **Note**
 If createCustomRouteDomain is selected for TGWRouteTableType, the route table created is empty. You must file an RFC with the [ Deployment \| Managed landing zone \| Networking account \| Add static route (ct-3r2ckznmt0a59)](https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-managed-networking-account-add-static-route.html) change type.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

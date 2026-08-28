@@ -103,3 +103,7 @@ source_url: https://docs.aws.amazon.com/lake-formation/latest/dg/views-prereqs.h
 
 ------
 + You can't create views in a database that has `Super` or `ALL` permission granted to the `IAMAllowedPrincipals` group. You can either revoke the `Super` permission for the `IAMAllowedPrincipals` group on a database, see [Step 4: Switch your data stores to the Lake Formation permissions model](upgrade-glue-lake-formation.md#upgrade-glue-lake-formation-step4), or create a new database with the **Use only IAM access control for new tables in this database** box unchecked under **Default permissions for newly created tables**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

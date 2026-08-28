@@ -144,3 +144,7 @@ When using MediaConnect as an input source for MediaLive, keep in mind the follo
 + If you work with a separate MediaLive team, we recommend that you have them notify you when they are pausing or stopping a MediaLive channel that uses your MediaConnect flows. That way, you can work together to temporarily stop the associated MediaConnect outputs during those periods, preventing additional charges. This coordination between the MediaLive and MediaConnect teams will help ensure you're only paying for the active usage of the services.
 
  For more information on the pricing and billing implications of using MediaConnect, see the [Pricing](https://docs.aws.amazon.com/mediaconnect/latest/ug/what-is-pricing.html) section of this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

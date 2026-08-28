@@ -24,3 +24,7 @@ There are times when workloads have to store data across multiple containers. Fo
  **Design your testing environments to support your container build pipeline**
 
  When building a containerized application, it can be easily deployed throughout multiple environments. In order to validate that your application is running properly, you will have to test your containerized applications. With the container’s ecosystem, you can have multiple manifests for all of the applications in an environment, and you can easily provision a ready-to-use environment with all dependent services already deployed in it. This process of temporary, or ephemeral testing environments, can be achieved in lower effort given the ease of reproducing fully configured environments that are based on containers. Whether you’re using the GitOps methodology for a Kubernetes based application, or a centralized deployment configuration, you should try to create reproducible environments to support testing of your containerized application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

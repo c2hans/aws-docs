@@ -95,3 +95,7 @@ As you prepare for game launch, you'll need to fine-tune your managed hosting re
 + Create mechanisms to handle manual or automated capacity scaling to meet expected player demand. Consider what factors should prompt the system to increase or decrease the number of computes that are available to host game sessions.
 + Design and implement failover to other resources if needed.
 + Set up hosting observability tools, including analytics and logging. See [Monitoring Amazon GameLift Servers](monitoring-overview.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

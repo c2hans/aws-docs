@@ -24,3 +24,7 @@ To precisely control when snapshots are taken, you can create a snapshot schedul
 1. Enter the properties of the schedule definition, then choose **Add schedule**.
 
 1. On the page that appears, you can attach clusters to your new snapshot schedule, then choose **OK**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -92,3 +92,7 @@ In **Repository**, type `owner-name/repository-name` as shown in this example:
 1. In **Output artifacts**, you can retain the name of the output artifact for this action, such as `SourceArtifact`. Choose **Done** to close the **Edit action** page.
 
 1. Choose **Done** to close the stage editing page. Choose **Save** to close the pipeline editing page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

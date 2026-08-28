@@ -86,3 +86,7 @@ If object replicas don't appear in the destination Amazon S3 on Outposts bucket 
   3. "s3-outposts:ReplicateTags"
   ```
 + Amazon EventBridge can notify you when objects don't replicate to their destination Outposts. For more information, see [Using EventBridge for S3 Replication on Outposts](outposts-replication-eventbridge.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

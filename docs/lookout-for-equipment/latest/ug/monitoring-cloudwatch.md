@@ -22,3 +22,7 @@ The following dimensions are supported for the Lookout for Equipment metrics.
 |  ModelName  |  The name of the ML model that you've trained to monitor your equipment.  |
 | --- | --- |
 |  InferenceSchedulerName  | The inference scheduler schedules the times when your model monitors your equipment. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

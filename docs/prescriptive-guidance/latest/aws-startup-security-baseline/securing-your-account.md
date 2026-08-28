@@ -25,3 +25,7 @@ Controls and recommendations in this section help keep your AWS account secure. 
 + [ACCT.15 Enable AWS Security Hub](https://apg-library.amazonaws.com/content-viewer/author/684f6a94-9fdf-4c45-961d-46bb264246ae#acct-15)
 + [ACCT.16 Enable AWS Cost Anomaly Detection](https://apg-library.amazonaws.com/content-viewer/author/684f6a94-9fdf-4c45-961d-46bb264246ae#acct-16)
 + [ACCT.17 Restrict AWS API calls to used Regions only](https://apg-library.amazonaws.com/content-viewer/author/684f6a94-9fdf-4c45-961d-46bb264246ae#acct-17)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

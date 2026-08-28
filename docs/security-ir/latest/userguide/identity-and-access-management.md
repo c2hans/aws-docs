@@ -26,3 +26,7 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/identity-an
  **Incident Response Team members**
 
  Members of the team can be given both full membership and case access. It is recommended that not all individuals have authoritative action on service membership but should have access to any and all cases that are created and managed through the service. For more information, refer to [AWS Security Incident Response managed policies](https://docs.aws.amazon.com/security-ir/latest/userguide/aws-managed-policies.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

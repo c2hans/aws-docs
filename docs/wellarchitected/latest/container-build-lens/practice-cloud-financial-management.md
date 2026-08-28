@@ -10,3 +10,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
 |   |
 
  Building a containerized application can result in multiple images for the same service. Depending on your organization policy, you might want to keep a subset of your container images to be used in a case of a rollback scenario. An example of such a policy might be that you don’t roll back more than three versions, or more than three months in time. That means, that not all container images of a specific application should be kept. Deleting old images can save costs as container registries charge by size of images stored in the registry. You can achieve this deletion policy by creating automation processes, or use service features, for example: Amazon ECR supports a lifecycle policy that can be used to expire (delete) images based on rules such as image age, count, specific tags and more (see [Examples of lifecycle policies](https://docs.aws.amazon.com/AmazonECR/latest/userguide/lifecycle_policy_examples.html)).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

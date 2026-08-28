@@ -58,3 +58,7 @@ If you receive an email notification that AWS failed the previous charge attempt
 1. Choose **Complete payment**.
 
 If the transaction continues to fail, contact your bank to understand why they are declining your transaction. Alternatively, you can pay with another eligible card.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

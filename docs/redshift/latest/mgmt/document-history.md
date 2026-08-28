@@ -171,3 +171,7 @@ The following table describes the important changes to the *Amazon Redshift Mana
 | Documentation fixes | Published various documentation fixes.  | July 8, 2013 |
 | New console screens | Updated the *Amazon Redshift Management Guide* to match changes in the Amazon Redshift console.  | April 22, 2013 |
 | New guide | This is the first release of the *Amazon Redshift Management Guide*.  | February 14, 2013 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

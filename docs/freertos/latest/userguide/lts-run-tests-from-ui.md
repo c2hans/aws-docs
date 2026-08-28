@@ -21,3 +21,7 @@ IDT for FreeRTOS runs the qualification tests. It then displays the test run sum
 For more information about test results and logs, see [View the IDT for FreeRTOSresults](view-results-lts.md) and [View the IDT for FreeRTOSlogs](view-logs-lts.md).
 
 ![Device Tester for FreeRTOS execution log showing tests passed, test groups, and file paths for logs and reports.](http://docs.aws.amazon.com/freertos/latest/userguide/images/idt-results.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

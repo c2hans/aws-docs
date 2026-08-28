@@ -46,3 +46,7 @@ The following table describes the documentation updates for Outposts racks.
 | [Support for sharing customer-owned IPv4 addresses](https://docs.aws.amazon.com/outposts/latest/userguide/sharing-outposts.html) | Use AWS Resource Access Manager to share customer-owned IPv4 addresses.  | April 20, 2020 |
 | [Additional CloudWatch metrics](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-cloudwatch-metrics.html) | Additional CloudWatch metrics for EBS volumes are available. | April 4, 2020 |
 | [Initial release](#doc-history) | This is the initial release of AWS Outposts. | December 3, 2019 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

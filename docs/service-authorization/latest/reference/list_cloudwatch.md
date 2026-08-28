@@ -767,3 +767,7 @@ Amazon CloudWatch defines the following condition keys that can be used in the `
 |   [cloudwatch:namespace](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/iam-cw-condition-keys-namespace.html)  | Filters access by the presence of optional namespace values | String |
 |   [cloudwatch:requestInsightRuleLogGroups](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/iam-cw-condition-keys-contributor.html)  | Filters access by the Log Groups specified in an Insight Rule | ArrayOfString |
 |   [cloudwatch:requestManagedResourceARNs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/iam-cw-condition-keys-contributor.html)  | Filters access by the Resource ARNs specified in a managed Insight Rule | ArrayOfARN |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

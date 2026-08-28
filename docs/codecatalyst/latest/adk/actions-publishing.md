@@ -117,3 +117,7 @@ After committing your workflow definition file, it cannot be associated with ano
    1. Choose **Commit** to commit the workflow definition file.
 
 1. View the workflow run status and details. For more information, see [Viewing workflow run status and details](https://docs.aws.amazon.com/codecatalyst/latest/userguide/workflows-view-run.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

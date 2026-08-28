@@ -40,3 +40,7 @@ User: arn:aws:iam::123456789012:user/marymajor is not authorized to perform: iam
 ```
 
 In this case, Mary asks her administrator to update her policies to allow her to perform the `iam:PassRole` action.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

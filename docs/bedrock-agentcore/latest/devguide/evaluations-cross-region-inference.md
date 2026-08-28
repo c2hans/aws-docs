@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/evalua
 
 AgentCore Evaluations will automatically select the optimal region within your geography to process your inference requests. This maximizes available compute resources, model availability, and delivers the best customer experience. Your data will remain stored only in the region where the request originated, however, input prompts and output results may be processed outside that region. All data will be transmitted encrypted across AWS's secure network.
 
-For AgentCore Evaluations, inference requests originating in Asia Pacific (Seoul) (ap-northeast-2) use global cross-region inference and will be securely routed to all available compute resources across all global commercial AWS Regions. For more information, see [Global cross-region inference for AgentCore Evaluations](cross-region-inference.md#cross-region-inference-evaluations-global).
+For AgentCore Evaluations, inference requests originating in Asia Pacific (Hyderabad) (ap-south-2), Asia Pacific (Malaysia) (ap-southeast-5), Asia Pacific (Seoul) (ap-northeast-2), and Asia Pacific (Thailand) (ap-southeast-7) use global cross-region inference and will be securely routed to all available compute resources across all global commercial AWS Regions. For more information, see [Global cross-region inference for AgentCore Evaluations](cross-region-inference.md#cross-region-inference-evaluations-global).
 
 If your use case requires avoiding [cross region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) , you can create [Custom evaluators](custom-evaluators.md) that operate without CRIS. Custom evaluators provide the flexibility to:
 + Replicate the functionality of built-in evaluators without using CRIS
@@ -16,3 +16,7 @@ If your use case requires avoiding [cross region inference](https://docs.aws.ama
 
 **Note**
 While custom evaluators can be configured to match built-in evaluator functionality, you are responsible for managing model availability and compute resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

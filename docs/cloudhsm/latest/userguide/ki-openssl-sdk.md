@@ -62,3 +62,7 @@ For any other key type, the OpenSSL AWS CloudHSM engine is not used for call pro
 + **Impact: **Connection attempts using TLS 1.0 or TLS 1.1 fail because these versions use SHA-1 for signing, which doesn't meet [FIPS 186-5](https://nvlpubs.nist.gov/nistpubs/FIPS/NIST.FIPS.186-5.pdf) requirements.
 + **Workaround: **If you can't upgrade TLS versions immediately, you can migrate to non-FIPS clusters, which don't enforce the hash strength requirement. However, we recommend upgrading to TLS 1.2 or TLS 1.3 to maintain FIPS compliance and security best practices.
 + **Resolution: **Upgrade your implementation to use TLS 1.2 or TLS 1.3. The Internet Engineering Task Force (IETF) has [deprecated](https://datatracker.ietf.org/doc/rfc8996/) TLS 1.0 and TLS 1.1 due to security concerns.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

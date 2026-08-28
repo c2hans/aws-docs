@@ -1,0 +1,62 @@
+---
+source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/hybrid-remote-proctoring-solution/hybrid-remote-proctoring-solution.html
+---
+
+# Hybrid Remote Proctoring Solution
+<a name="hybrid-remote-proctoring-solution"></a>
+
+Publication date: **March 30, 2023 ([Diagram history](#proctoring-history))**
+
+Hybrid remote proctoring supports education use cases where you can monitor students live with AI assistance to highlight prohibited objects and behaviors. This solution uses Amazon Rekognition for image analysis and the Amazon Chime SDK for video session management. You can apply this solution to in-person exams as well as remote exams.
+
+**Privacy considerations**
+This is a technical diagram only and does not account for possible privacy implications, laws, and regulations that might apply to this scenario, such as just-in-time privacy notices, user consent, and data usage, retention, processing, and deletion of personally identifiable information, including biometric data.
+
+## Hybrid Remote Proctoring Solution diagram
+<a name="proctoring-diagram"></a>
+
+![Reference architecture diagram showing how to build a hybrid remote proctoring solution by using CloudFront, Lambda, Amazon Rekognition, Amazon Chime SDK, and DynamoDB.](http://docs.aws.amazon.com/reference-architecture-diagrams/latest/hybrid-remote-proctoring-solution/images/hybrid-remote-proctoring-solution.png)
+
+The following steps describe the architecture:
+
+1. The architecture hosts static web app code in an [Amazon Simple Storage Service](https://docs.aws.amazon.com/AmazonS3/latest/userguide/) bucket. [Amazon CloudFront](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/) serves this content with low-latency access from edge locations. You can secure content in the Amazon S3 bucket against unintended access by using CloudFront Origin Access Control.
+
+1. [Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/) serves the REST APIs, and serverless [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/) functions handle requests. [Amazon Cognito](https://docs.aws.amazon.com/cognito/latest/developerguide/) provides secure authenticated access to these APIs and manages identities for proctors and students.
+
+1. For the registration flow, an API request registers each student. The request passes the student's photo to a Lambda function. The function calls an [Amazon Rekognition](https://docs.aws.amazon.com/rekognition/latest/dg/) API to retrieve a unique **FaceId** based on extracted facial feature vectors. The student's **FaceId** is stored in an [Amazon DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/) serverless database for future matching needs.
+
+1. The proctor starts the exam by calling an Amazon Chime SDK Messaging API. This starts an Amazon Chime SDK session and an Amazon Chime SDK Messaging Channel for chat-based communication between the proctor and each student. The exam workflow captures student consent at the start of the exam with relevant policies.
+
+1. The exam workflow stores exam information in DynamoDB. To stop the exam, a similar request updates the exam status within the database.
+
+1. After the exam starts, the student's web app connects with a separate Amazon Chime SDK session. The web app captures the camera video stream and screen, using media capture pipelines with user consent. It saves these to an Amazon S3 bucket in up to five-second file chunks for internal audit and archiving.
+
+1. For every new video chunk saved, an Amazon S3 PutEvent calls a Lambda function. The function pulls one image frame from the video chunk and stores that image frame in another Amazon S3 bucket as a .jpeg file. This optimizes cost while still allowing use of the full video chunk as needed.
+
+1. Another Lambda function validates the .jpeg file by using Amazon Rekognition with API calls for verifying the student's face, checking how many faces are in the frame, and detecting when no face is present. The Lambda function saves these response alerts in DynamoDB for internal audit purposes.
+
+1. If Amazon Rekognition detects prohibited actions, it sends an alert to the proctor by using [Amazon Simple Notification Service](https://docs.aws.amazon.com/sns/latest/dg/). A Lambda function sends an alert to the proctor (and student, if needed) by using the Amazon Chime SDK messaging channel.
+
+## Further reading
+<a name="proctoring-further-reading"></a>
+
+For additional information, see the following resources:
++  [AWS Architecture Icons](https://aws.amazon.com/architecture/icons)
++  [AWS Architecture Center](https://aws.amazon.com/architecture/)
++  [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected)
+
+## Diagram history
+<a name="proctoring-history"></a>
+
+To be notified about updates to this reference architecture diagram, subscribe to the RSS feed.
+
+| Change | Description | Date |
+| --- |--- |--- |
+| [Initial publication](#proctoring-history) | Reference architecture diagram first published. | March 30, 2023 |
+
+**RSS subscription requirement**
+To subscribe to RSS updates, you must have an RSS plugin enabled for the browser you are using.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Reference Architecture Diagrams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query reference-architecture-diagrams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

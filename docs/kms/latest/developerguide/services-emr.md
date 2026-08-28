@@ -142,3 +142,7 @@ With CSE-KMS, the Amazon EMR cluster uses a KMS key to encrypt data before sendi
 <a name="emr-encryption-context-luks"></a>
 
 When an Amazon EMR cluster uses local disk encryption with LUKS, the cluster nodes do not specify encryption context with the [GenerateDataKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_GenerateDataKey.html) and [Decrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_Decrypt.html) requests that they send to AWS KMS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

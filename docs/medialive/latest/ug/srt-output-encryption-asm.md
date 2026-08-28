@@ -19,3 +19,7 @@ Store SRT passphrases in Secrets Manager as plaintext (for example, `secretpassw
 Ensure your passphrase is between 10 and 79 characters.
 
 1. Make sure that you obtain the full ARN of the secret to use for your SRT output's encryption passphrase Secret ARN.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

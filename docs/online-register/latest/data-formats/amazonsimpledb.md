@@ -15,3 +15,7 @@ Amazon SimpleDB provides the following APIs for data retrieval.
 | <a name="sdb-ListDomains"></a>[ListDomains](https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB_API_ListDomains.html) | List all domains | List |
 | <a name="sdb-ListExports"></a>[ListExports](https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB_API_ListExports.html) | List all exports that were created. The results are paginated and can be filtered by domain name | List |
 | <a name="sdb-Select"></a>[Select](https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/SDB_API_Select.html) | Execute a query against the items in a domain | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

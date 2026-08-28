@@ -79,3 +79,7 @@ There are some use-cases which AWS Lambda does not support, and if they impact y
 + AWS Lambda doesn't support the environment type `LINUX_GPU_CONTAINER` and isn't supported on Windows Server Core 2019.
 + AWS Lambda doesn't support caching, custom build timeouts, queue timeout, build badges, privileged mode, custom runtime environments, or runtimes longer than 15 minutes.
 + AWS Lambda doesn't support VPC connectivity, a fixed range of CodeBuild source IP addresses, EFS, installing certificates, or SSH access with Session Manager.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

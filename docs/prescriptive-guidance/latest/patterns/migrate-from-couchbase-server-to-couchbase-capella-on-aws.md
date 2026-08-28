@@ -218,3 +218,7 @@ Before you save the configuration file, use the following table to make sure tha
 | <CAPELLA\_DATABASE\_USER> | Use the database user for your Couchbase Capella cluster. |
 | <CAPELLA\_DATABASE\_USER\_PWD> | Use the database user password for your Couchbase Capella cluster. |
 | <ABSOLUTE\_PATH\_TO\_COUCHBASE\_CAPELLA\_ROOT\_CERT> | Use the absolute path to the saved root certificate file for your Couchbase Capella cluster. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

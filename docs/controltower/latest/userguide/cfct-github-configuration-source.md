@@ -44,3 +44,7 @@ From your **Developer Tools --Connections** instance for Github, perform the fol
   + for **GitHub User or Organization**, provide the name of the GitHub user or organization under which you created the repository
   + For **GitHub Repository Name**, enter the repository name (defaults to `custom-control-tower-configuration`)
   + For **GitHub Branch Name**, enter the branch name (defaults to `main`)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

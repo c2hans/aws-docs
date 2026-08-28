@@ -24,3 +24,7 @@ The Spark connector supports a variety of ways to manage credentials, to configu
 For more information on using the connector and its supported parameters, see the following resources:
 + [Amazon Redshift integration for Apache Spark](https://docs.aws.amazon.com/redshift/latest/mgmt/spark-redshift-connector.html) in the *Amazon Redshift Management Guide*
 + The [`spark-redshift` community repository](https://github.com/spark-redshift-community/spark-redshift#readme) on Github
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

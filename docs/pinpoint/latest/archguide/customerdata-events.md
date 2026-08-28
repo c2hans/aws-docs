@@ -19,3 +19,7 @@ Amazon Pinpoint can send events to a Amazon Kinesis Data Firehose stream. The Fi
 For more information about CRR, see [Replicating objects overview](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html) in the *Amazon S3 User Guide*.
 
 If you send your event data to an Amazon Redshift cluster instead of an Amazon S3 bucket, you can implement a similar architecture using cross-Region data sharing. For more information, see [Sharing data across AWS Regions](https://docs.aws.amazon.com/redshift/latest/dg/across-region.html) in the *Amazon Redshift Database Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

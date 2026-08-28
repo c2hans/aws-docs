@@ -23,3 +23,7 @@ When building a custom model, if you encounter an error during post-building ana
 You must increase the SageMaker AI Hosting endpoint quota for the `ml.m5.2xlarge` instance type to a non-zero value in your AWS account. After building a model, SageMaker Canvas hosts the model on a SageMaker AI Hosting endpoint and uses the endpoint to generate the post-building analysis. If you don't increase the default account quota of 0 for `ml.m5.2xlarge` instances, SageMaker Canvas cannot complete this step and generates an error during post-building analysis.
 
 For the procedure to increase the quota, see [ Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,3 +84,7 @@ Recovering hundreds of servers simultaneously requires careful orchestration:
 + **Stagger recovery jobs:** Launch recovery instances in batches to stay within the concurrent job limits (20 concurrent jobs, 100 servers per job, 500 servers across all active jobs) and to avoid overwhelming the target environment.
 + **Automate recovery orchestration:** Use the Elastic Disaster Recovery API and AWS Step Functions or similar orchestration tools to automate the recovery sequence, including post-launch validation.
 + **Plan VPC capacity:** Ensure your recovery VPCs have sufficient IP addresses, subnets, and network resources for all recovery instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

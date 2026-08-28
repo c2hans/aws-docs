@@ -127,3 +127,7 @@ Without a `Condition` statement present in a role trust policy, any valid certif
 <a name="getting-started-step3"></a>
 
 You can now authenticate with IAM Roles Anywhere. Follow the instructions in [Get temporary security credentials](credential-helper.md), or, for Java applications on the AWS SDK for Java v2, use the [IAM Roles Anywhere Java plugin](java-plugin.md). Also consider [Monitoring with IAM Roles Anywhere subjects](monitoring-subjects.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

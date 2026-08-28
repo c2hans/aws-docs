@@ -35,3 +35,7 @@ A data provider can disallow a specific intermediate table that references their
 <a name="delete-intermediate-table-cascading-behavior"></a>
 
 When base tables (configured table associations or ID mapping tables) are removed from a collaboration, dependent intermediate tables become unusable with a status of `BASE_TABLE_REMOVED` and the corresponding data stored in AWS Clean Rooms is deleted from the dependent intermediate tables. The owner must call `DeleteIntermediateTable` to remove the resource.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

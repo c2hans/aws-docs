@@ -185,3 +185,7 @@ To control access to your lambda resource, you can use conditions based on:
 <a name="security-iam-troubleshooting"></a>
 
 See [ Troubleshooting](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/security-iam.html#security-iam-troubleshooting) in the *IVS Low-Latency Streaming User Guide* for information about diagnosing and fixing common issues that you might encounter when working with Amazon IVS Chat and IAM.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

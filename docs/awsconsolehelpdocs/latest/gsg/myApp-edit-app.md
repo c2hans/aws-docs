@@ -22,3 +22,7 @@ Editing your application opens AppRegistry so you can update its description. Yo
 For more information about managing tags and attribute groups, see [Managing tags](https://docs.aws.amazon.com/servicecatalog/latest/arguide/add-tags.html) and [Editing attribute groups](https://docs.aws.amazon.com/servicecatalog/latest/arguide/edit-attr-group.html) in the *AWS Service Catalog AppRegistry Administrator Guide*.
 
 1. Choose **Update**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Management Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsconsolehelpdocs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

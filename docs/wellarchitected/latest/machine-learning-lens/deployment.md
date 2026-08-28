@@ -23,3 +23,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 +  **Scheduler pipeline:** Deployed model is representative of the latest data patterns. When configured as shown in Figure 16, re-training at intervals can minimize the risk of data and concept drifts. A scheduler can initiate a re-training at business defined intervals. Data preparation, CI/CD/CT, and feature pipelines will also be active during this process.
 
 ![ML lifecycle with scheduler retrain and batch or real-time inference pipelines](http://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/images/ml-lifecycle-scheduler-inference-pipelines.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

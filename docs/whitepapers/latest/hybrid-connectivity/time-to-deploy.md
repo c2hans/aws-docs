@@ -36,3 +36,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/t
 
 **Note**
 The provided provision time guidelines are based on real-world observation and only serve as an illustration. When taking into considerations your site location, proximity to direct connect locations, and pre-existing infrastructure, and will all impact provisioning time. Your AWS Direct Connect Partner will advise you on the precise provisioning time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

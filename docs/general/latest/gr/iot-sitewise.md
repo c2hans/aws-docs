@@ -264,3 +264,7 @@ The following are the service endpoints and service quotas for this service.
 | Size of the CSV file for Adaptive Ingestion | Each supported Region: 256 Megabits | No | The maximum size of the CSV file for Adaptive Ingestion. |
 | Size of the uncompressed parquet file | Each supported Region: 256 Megabits | No | The maximum size of the uncompressed parquet file. |
 | Size of the uncompressed parquet row group | Each supported Region: 64 Megabits | No | The maximum size of the uncompressed parquet row group. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

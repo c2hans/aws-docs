@@ -20,3 +20,7 @@ The project location must not contain an existing application template.
 1. Press **Activate**. When prompted to save changes, select **Save changes**.
 
    When activated, the **Autosave** indicator will be displayed in the upper-left area of your canvas.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

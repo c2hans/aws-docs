@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 # Step 2: Deploy the IDC stack
 <a name="step2-deploy-idc-stack"></a>
 
-In this step, you will deploy the resources required to set up IDC, including mappings, roles, policies, and other configuration.
+In this step, you deploy the resources required to set up IDC, including mappings, roles, policies, and other configuration.
 
 **Important**
 Ensure that you log in using the account where you have configured the IAM Identity Center Instance for your AWS Organization. This can be either the Organization Management account or a delegated administration account that has been configured for IAM Identity Center.
@@ -17,7 +17,7 @@ You deploy the IDC stack in the delegated administration account
 You provide the Organization Management account ID in the **Org Management Account Id** parameter (not the delegated admin account ID)
 For more information on setting up delegated administration for IAM Identity Center, refer to the [AWS IAM Identity Center delegated administration documentation](https://docs.aws.amazon.com/singlesignon/latest/userguide/delegated-admin.html).
 
-1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and select the button to launch the `IDC` stack CloudFormation template.
+1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and choose the button to launch the `IDC` stack CloudFormation template.
 
  [![Launch Stack](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?&templateURL=https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-IDC.template&redirectId=ImplementationGuide)
 
@@ -34,10 +34,14 @@ When using an external identity provider with SCIM integration (such as Microsof
 
 1. Choose **Next**.
 
-1. On the **Configure stack options** page, review and select to acknowledge the messages under Capabilities and transforms, and choose **Next**.
+1. On the **Configure stack options** page, review and choose to acknowledge the messages under Capabilities and transforms, and choose **Next**.
 
 1. On the **Review and create** page, review and confirm the settings.
 
 1. Choose **Submit** to deploy the stack.
 
 You can view the status of the stack in the AWS CloudFormation Console in the Status column. You should receive a **CREATE\_COMPLETE** status in approximately 60 minutes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

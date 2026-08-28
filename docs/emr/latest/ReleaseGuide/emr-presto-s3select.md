@@ -55,3 +55,7 @@ Amazon EMR versions 6.4.0 and later use the new name Trino instead of PrestoSQL.
 By default, Presto uses EMRFS as its file system. The setting `fs.s3.maxConnections` in the `emrfs-site` configuration classification specifies the maximum allowable client connections to Amazon S3 through EMRFS for Presto. By default, this is 500. S3 Select Pushdown bypasses EMRFS when accessing Amazon S3 for predicate operations. In this case, the value of `hive.s3select-pushdown.max-connections` determines the maximum number of client connections allowed for those operations from worker nodes. However, any requests to Amazon S3 that Presto initiates that are not pushed down—for example, GET operations—continue to be governed by the value of `fs.s3.maxConnections`.
 
 If your application experiences the error "Timeout waiting for connection from pool," increase the value of both `hive.s3select-pushdown.max-connections` and `fs.s3.maxConnections`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

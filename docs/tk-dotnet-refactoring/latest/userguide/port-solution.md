@@ -35,3 +35,7 @@ In the source file, each line of source code with compatibility issues is highli
 <a name="suggestions"></a>
 
 The source editor provides a replacement suggestion for each incompatibility in the source file. If a direct replacement exists, you can choose to select and replace it. If there is no direct replacement, references or contextual help on how to proceed are provided.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -126,3 +126,7 @@ Amazon Security Lake is a fully managed security data lake service. You can use 
 To learn more about Security Lake, see the [Amazon Security Lake User Guide](https://docs.aws.amazon.com/security-lake/latest/userguide/what-is-security-lake.html). To learn more about using Detective and Security Lake together, see [Amazon Detective Integration with Amazon Security Lake](securitylake-integration.md).
 
 To learn about additional AWS security services, see [Security, Identity, and Compliance on AWS](https://aws.amazon.com/products/security/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

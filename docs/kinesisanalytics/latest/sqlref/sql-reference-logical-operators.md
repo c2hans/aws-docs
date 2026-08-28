@@ -154,3 +154,7 @@ For all other operators, passing a NULL or UNKNOWN operand will cause the result
 | 5 BETWEEN 3 AND 5 | TRUE |
 | 1 IS DISTINCT FROM 1.0 | FALSE |
 | CAST( NULL AS INTEGER ) IS NOT DISTINCT FROM CAST (NULL AS INTEGER) | TRUE |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

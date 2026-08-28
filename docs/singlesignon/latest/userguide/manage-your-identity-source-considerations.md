@@ -90,3 +90,7 @@ If you change your identity source from an external IdP to Active Directory, or 
 + **Multi-Region support** – If you have replicated IAM Identity Center to additional Regions or plan to do so, you must use an external identity provider or the Identity Center directory as the identity source. Multi-Region support is not available for Active Directory. For more information including other prerequisites, see [Using IAM Identity Center across multiple AWS Regions](multi-region-iam-identity-center.md).
 
 For information about how IAM Identity Center provisions users and groups, see [Microsoft AD directory](manage-your-identity-source-ad.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

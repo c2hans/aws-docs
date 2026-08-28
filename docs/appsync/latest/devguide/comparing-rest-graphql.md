@@ -62,3 +62,7 @@ While sharing some fundamental principles, GraphQL and REST differ significantly
    + Cases where client requests vary significantly and expect different response structures.
 
    Note that it's possible to use both GraphQL and REST APIs within a single application for different areas of functionality. Furthermore, you can upgrade a RESTful API to include GraphQL capabilities without a complete rewrite. See [How to build GraphQL resolvers for AWS data sources](https://aws.amazon.com/graphql/resolvers/) for an example.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

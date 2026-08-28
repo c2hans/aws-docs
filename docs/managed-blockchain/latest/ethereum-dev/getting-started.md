@@ -181,3 +181,7 @@ These endpoints will be formatted as follows:
 + **Websocket — **`wss://{{your-node-id-lowercase}}.wss.t.ethereum.managedblockchain.{{us-east-1}}.amazonaws.com/?billingtoken={{your-billing-token}}`
 
 After you have completed all the steps in this chapter, you have set up your IAM permissions, created your Ethereum node and Accessor tokens, and have your relevant endpoints. You can proceed to the [Using token based access to make JSON-RPC API calls to an Ethereum node](json-rpc-api-examples.md#json-rpc-api-tba-examples) topic and run those examples.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

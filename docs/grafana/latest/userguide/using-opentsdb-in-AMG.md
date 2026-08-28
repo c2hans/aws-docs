@@ -78,3 +78,7 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/using-opentsdb-
 |  tag\_values(cpu, hostname, env=$env, region=$region)  |  Returns tag values for cpu metric, selected env tag value, selected region tag value, and tag key hostname.  |
 
  For more information about OpenTSDB metric queries, see [OpenTSDB documentation](https://opentsdb.net/docs/build/html/index.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

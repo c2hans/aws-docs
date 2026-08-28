@@ -16,3 +16,7 @@ The [afterfx\_render\_one\_task](https://github.com/aws-deadline/deadline-cloud-
 This bundle expects an input directory that contains all file references required to render. Place the project file inside the input directory to preserve relative paths.
 
 To run this bundle, you need After Effects installed on Windows worker hosts. You can use the [After Effects host configuration script](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/aftereffects) in the samples repository to install After Effects with Red Giant plugins on a Windows service-managed fleet. The [aftereffects-25.1 conda recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/aftereffects-25.1) builds an After Effects conda package as an alternative.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

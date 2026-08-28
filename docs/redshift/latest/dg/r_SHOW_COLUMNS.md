@@ -78,3 +78,7 @@ SHOW COLUMNS FROM TABLE second_db.public.t22;
  second_db     | public      | t22        | col3        |                3 |                | YES         | timestamp without time zone |                          |                   |               |         |               |        0 |          | raw      |
  second_db     | public      | t22        | col4        |                4 |                | YES         | numeric                     |                          |                10 |             2 |         |               |        0 |          | az64     |
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

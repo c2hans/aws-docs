@@ -284,3 +284,7 @@ The `-e` (environment) and `-d` (domain) CLI flags do NOT bypass this validation
  **Resolution:**
 + This is fixed in MDAA 1.7.0. Upgrade to 1.7.0 and redeploy.
 + Note: changing immutable properties (`AuthMode`, `DomainName`, `KmsKeyId`, `VpcId`) still requires manual domain recreation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Modern Data Architecture Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

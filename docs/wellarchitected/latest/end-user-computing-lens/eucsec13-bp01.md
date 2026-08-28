@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 <a name="implementation-guidance-34"></a>
 
  Data should be stored and accessed in compliance with the in-scope policies and regulatory requirements. The location of data and the applications accessing data should align with the compliance framework and requirements for the respective organization. To achieve this, consider your AWS Region for compliance against the data sovereignty requirements for the application and data. Additionally, consider data permissions to verify compliance and enforce least privilege access. Keep latency between end user devices and the data they need to access in consideration when choosing the location of the EUC environment but also adhere to data residency requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

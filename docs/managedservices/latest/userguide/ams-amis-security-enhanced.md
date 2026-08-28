@@ -8,3 +8,7 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 <a name="ams-amis-security-enhanced"></a>
 
 AMS provides security enhanced images (AMIs) based on CIS Level 1 benchmark for a subset of AMS's supported operating systems. To find which operating systems have a security enhanced image available, see the *AWS Managed Services (AMS) Customer Security Guide*. To access this guide, open AWS Artifact, select **Reports** in the left navigation pane, and then filter for AWS Managed Services. For instructions on how to access AWS Artifact, contact your CSDM or see [Getting Started with AWS Artifact](https://aws.amazon.com/artifact/getting-started) for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

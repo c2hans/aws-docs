@@ -50,3 +50,7 @@ To achieve these objectives, vehicle connectivity management should be able to p
 1. AWS IoT Device Defender sends device audit and violation findings (such as unusual device behavior or software and configuration vulnerabilities) to AWS Security Hub CSPM, where security findings from other AWS services and AWS Partner products are aggregated and normalized. Security Hub CSPM sends findings to EventBridge, which routes them to a remediation workflow implemented in a vehicle security operations center.
 
 1.  The vehicle can use the AWS Encryption SDK using keys in AWS KMS for client-side encryption. The ECU can get temporary API credentials from the IoT credential provider to call AWS KMS APIs. You can also implement your own key management system for encryption keys.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

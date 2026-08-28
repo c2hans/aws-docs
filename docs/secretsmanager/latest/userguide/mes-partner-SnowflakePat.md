@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-SnowflakePat"></a>
 
 ## Secret Value Fields
-<a name="w2aac27c11c37b3"></a>
+<a name="w2aac27c11c41b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -40,7 +40,7 @@ patTokenValue
 The programmatic access token secret value. This is the field that gets rotated.
 
 ## Secret Metadata Fields
-<a name="w2aac27c11c37b5"></a>
+<a name="w2aac27c11c41b5"></a>
 
 The following are the metadata fields for Snowflake Programmatic Access Token:
 
@@ -58,10 +58,14 @@ expireOldTokenAfterHours
 (Optional) Hours before the previous token expires after rotation (0–720). Default: 24. Set to 0 for immediate expiry of the old token.
 
 ## Usage Flow
-<a name="w2aac27c11c37b7"></a>
+<a name="w2aac27c11c41b7"></a>
 
 This rotation uses a single-secret architecture. The secret contains both the key-pair credentials (for authenticating the rotation command) and the PAT value (the rotated credential).
 
 You can create your secret using the [CreateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_CreateSecret.html) call with the secret value containing the fields mentioned above and secret type as SnowflakePat. The rotation configurations can be set using a [RotateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RotateSecret.html) call. The rotation metadata field can be left empty to use default values. You must provide a role ARN in the [RotateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RotateSecret.html) call which grants the service the required permissions to rotate the secret. For an example of a permissions policy, see [Security and Permissions](mes-security.md).
 
 During rotation, the driver connects to Snowflake via key-pair authentication and executes the `ALTER USER ... ROTATE PAT` command, which atomically generates a new token and expires the old one with the configured grace period. The new token is then verified by connecting with it as a password.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

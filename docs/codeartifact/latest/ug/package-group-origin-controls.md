@@ -177,3 +177,7 @@ aws codeartifact update-package-group-origin-configuration \
 <a name="package-group-origin-control-settings-interaction"></a>
 
 Because packages have origin control settings, and their associated package groups have origin control settings, it's important to understand how those two different settings interact with one another. For information about the interaction between the settings, see [How package origin controls interact with package group origin controls](package-origin-controls.md#package-origin-controls-interaction-package-groups).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

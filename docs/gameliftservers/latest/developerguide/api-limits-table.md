@@ -8,3 +8,7 @@ source_url: https://docs.aws.amazon.com/gameliftservers/latest/developerguide/ap
 The tables in this section list the default rate limits for Amazon GameLift Servers API operations. These limits help maintain service stability and ensure fair usage. Each API operation has specific limits based on its resource impact and usage patterns.
 
 By default, your account has a throttle limit of 500 transactions per second (TPS) for burst requests and 500 TPS for normal traffic. In addition, each API has its own default limit pair, as described in the following tables.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

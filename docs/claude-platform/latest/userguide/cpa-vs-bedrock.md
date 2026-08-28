@@ -27,3 +27,7 @@ If you need AWS-operated Claude with the Bedrock API, see [Amazon Bedrock](https
 Anthropic provides Claude Platform on AWS as a third-party offering. It is not covered by standard AWS compliance programs, certifications, or audit reports (such as SOC, ISO, or HIPAA eligibility). Customers are solely responsible for performing their own due diligence to ensure that this third-party offering meets their regulatory, legal, and compliance requirements.
 
  **When to choose Bedrock:** Choose Amazon Bedrock if your organization requires AWS-operated inference, AWS as the sole data processor, or coverage under AWS compliance programs (including FedRAMP High, IL4, IL5, SOC, ISO, and HIPAA eligibility). Bedrock runs entirely on AWS-controlled infrastructure with AWS as the operating party.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Claude Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query claude-platform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

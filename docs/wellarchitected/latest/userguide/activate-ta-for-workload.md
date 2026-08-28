@@ -33,3 +33,7 @@ You can optionally integrate AWS Trusted Advisor and activate it on a per-worklo
 The AWS WA Tool periodically gets data from Trusted Advisor using the roles created in IAM. The IAM role is automatically created for the workload owner. However, to view Trusted Advisor information, the owners of any associated accounts on the workload must go to IAM and create a role, see [Activating Trusted Advisor for a workload in IAM](activate-ta-in-iam.md) for more details. If this role does not exist, AWS WA Tool cannot obtain Trusted Advisor information for that account and displays an error.
 
 For more information about creating a role in AWS Identity and Access Management (IAM), see [Creating a role for an AWS service (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-service.html#roles-creatingrole-service-console) in the *IAM User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

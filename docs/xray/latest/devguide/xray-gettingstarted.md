@@ -28,3 +28,7 @@ The following diagram shows how to get started using X-Ray:
 ![X-Ray displays detailed information about application requests including status, duration and HTTP response code.](http://docs.aws.amazon.com/xray/latest/devguide/images/xray-get-started.png)
 
 For an example of the data and maps that are available in the console, launch a [sample application](xray-scorekeep.md) that is already instrumented to generate trace data. In a few minutes, you can generate traffic, send segments to X-Ray, and view a trace and service map.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS X-Ray. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query xray` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

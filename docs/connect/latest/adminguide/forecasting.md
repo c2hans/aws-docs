@@ -40,3 +40,7 @@ Use the following steps to create a forecast and then share it with other people
 1. [Publish a forecast](publish-forecast.md)
 
 You can take other actions on a forecast, such as [downloading it to a .csv file for offline analysis](download-forecasts.md) or [overriding](edit-forecast.md) it. Use the following steps to get started.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -349,3 +349,7 @@ When enabling Bedrock Knowledge Base telemetry:
 + Supports the TRACES telemetry type.
 + For LOGS, supports only CloudWatch Logs as the destination type.
 + CloudWatch does not enable log deliveries for Bedrock Knowledge Bases that already are ingesting the specified log types to CloudWatch Logs
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

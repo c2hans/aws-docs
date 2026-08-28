@@ -164,3 +164,7 @@ The code for this pattern is available in the [AWS and MongoDB Atlas Landing Zon
 **Deploying the landing zone**
 + [Terraform on AWS](https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_on_aws/terraform.html) (*CI/CD for 5G Networks on AWS* whitepaper)
 + [MongoDB Atlas with Terraform](https://www.mongodb.com/developer/products/atlas/mongodb-atlas-with-terraform/) (MongoDB documentation)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

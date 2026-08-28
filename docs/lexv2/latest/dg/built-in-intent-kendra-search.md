@@ -254,3 +254,7 @@ After you have created the filter or query string, you send the response to Amaz
 After Amazon Lex V2 sends a query to Amazon Kendra, the query response is returned to the `AMAZON.KendraSearchIntent` fulfillment Lambda function. The input event to the code hook contains the complete response from Amazon Kendra. The query data is in the same structure as the one returned by the Amazon Kendra `Query` operation. For more information, see [ Query response syntax](https://docs.aws.amazon.com/kendra/latest/dg/API_Query.html#API_Query_ResponseSyntax) in the *Amazon Kendra Developer Guide*.
 
 The fulfillment code hook is optional. If one does not exist, or if the code hook doesn't return a message in the response, Amazon Lex V2 uses the `closingResponse` statement for responses.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

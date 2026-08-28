@@ -12,8 +12,8 @@ Post-launch settings allow you to control and automate actions performed after t
 You must activate the post-launch actions using one of these options:
 + **Activating the post-launch actions for a specific server**:
   + Navigate to the **Source servers** page and select a source server.
-  + Click **Post-launch settings > Edit**.
-  + You are redirected to the **Edit post-launch settings** screen. Activate the toggle and click **Save settings**.
+  + Choose **Post-launch settings > Edit**.
+  + You are redirected to the **Edit post-launch settings** screen. Activate the toggle and choose **Save settings**.
 
   Alternatively, you can select a specific source server, open the **Test and cutover** drop-down menu located in the top right corner of the screen and select **Edit post-launch settings** .
 + **Activating the post-launch actions for all servers**:
@@ -28,3 +28,7 @@ The **Post-launch settings** template allows you to control various post-launch 
 + Disaster recovery configuration (installing the AWS Replication Agent for AWS DRS and configuring the target disaster recovery AWS Region)
 + Operating system conversion on the target machine
 + License and subscription changes on the target machine
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

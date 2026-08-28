@@ -69,3 +69,7 @@ Identity-based policies are permissions policies that you attach to an IAM ident
 The IAM service supports one type of resource-based policy called a role *trust policy*, which you attach to an IAM role. Because an IAM role is both an identity and a resource that supports resource-based policies, you have to attach both a trust policy and an identity-based policy to an IAM role. Trust policies define which principal entities (accounts, users, roles, and AWS STS federated user principals) can assume the role. To learn how IAM roles are different from other resource-based policies, see [Cross account resource access in IAM](access_policies-cross-account-resource-access.md).
 
 To see which services support resource-based policies, see [AWS services that work with IAM](reference_aws-services-that-work-with-iam.md). To learn more about resource-based policies, see [Identity-based policies and resource-based policies](access_policies_identity-vs-resource.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ Apache Flink version 2.2 includes support for creating applications using Python
 + Create your Managed Service for Apache Flink application, specifying your Amazon S3 code location, application properties, and application settings.
 
 At a high level, the Python Table API is a wrapper around the Java Table API. For information about the Python Table API, see the [ Table API Tutorial](https://nightlies.apache.org/flink/flink-docs-stable/docs/dev/python/table_api_tutorial/) in the Apache Flink Documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

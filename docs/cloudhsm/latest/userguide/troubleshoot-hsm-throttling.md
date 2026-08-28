@@ -31,3 +31,7 @@ For Client SDK 5.8.0 and above, retry commands are turned on by default. For det
 + Add more HSMs to your cluster by following the instructions in [Scaling HSMs in an AWS CloudHSM cluster](add-remove-hsm.md).
 **Important**
 We recommend load testing your cluster to determine the peak load you should anticipate, and then add one more HSM to it to ensure high availability.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

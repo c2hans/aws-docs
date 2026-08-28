@@ -113,3 +113,7 @@ If the issue persists after verifying network configuration, create an AWS Suppo
 1. Retry the launch from the Elastic Disaster Recovery console.
 
 1. If the error persists, create an AWS Support case. Include the recovery job ID from the Elastic Disaster Recovery console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

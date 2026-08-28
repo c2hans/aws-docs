@@ -91,3 +91,7 @@ Best Practices:
 Costs associated to a Customer Managed AWS Landing Zone vary depending on the AWS Services that are used. The AWS Services as described in this paragraph have their own pricing model. For more information on price, see the dedicated pricing pages of the listed AWS Services. See [AWS Pricing Calculator](https://calculator.aws/#/) to configure a cost estimate that fits your business needs.
 
 Regularly review and update the landing zone configuration to ensure it continues to meet evolving business needs and security requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

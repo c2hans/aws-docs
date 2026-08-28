@@ -21,7 +21,11 @@ It is possible to upload or download files from VPC environments that have acces
 + VPC environments do not support persistent storage. Storage is ephemeral. Data and home directory are deleted when an active environment session ends.
 + Your AWS CloudShell environment can only connect to the internet if it is in a private VPC subnet.
 **Note**
-Public IP addresses are not allocated to CloudShell VPC environments by default. VPC environments created in public subnets with routing tables configured to route all traffic to Internet Gateway will not have access to public internet, but private subnets configured with Network Address Translation (NAT) have access to public internet. VPC environments created in such private subnets will have access to public internet.
+Public IP addresses are not allocated to CloudShell VPC environments by default. VPC environments created in public subnets with routing tables configured to route all traffic to Internet Gateway will not have access to public internet, but private subnets configured with Network Address Translation (NAT) have access to public internet. VPC environments created in such private subnets will have access to public internet. To check the IP address that CloudShell allocated to your VPC environment, run the following command:
+
+  ```
+  echo $CLOUDSHELL_PRIVATE_IPV4
+  ```
 + Your AWS CloudShell environment will not be configured by default to use the local DNS zone in your VPC.
 + To provide a managed CloudShell environment for your account, AWS might provision network access to the following services for the underlying compute host:
   + Amazon S3
@@ -42,3 +46,7 @@ Public IP addresses are not allocated to CloudShell VPC environments by default.
   You cannot restrict access to these endpoints by modifying your VPC configuration.
 
   CloudShell VPC is available in all AWS Regions and GovCloud Regions. For a list of Regions in which CloudShell VPC is available, see [Supported AWS Regions for AWS CloudShell](supported-aws-regions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/scanning_resources
 <a name="lambda-code-encryption"></a>
 
  Amazon Q stores code snippets that are detected to be in connection with a code vulnerability finding using Lambda code scanning. By default, Amazon Q controls [the AWS owned key](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk) used to encrypt your code. However, you can use your own customer managed key for encryption through the Amazon Inspector API. For more information, see [Encryption at rest for code in your findings](encryption-rest.md#encryption-code-snippets).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

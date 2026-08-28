@@ -35,3 +35,7 @@ This guide is for:
 Following the best practices in this guide helps you:
 + Build a secure, high-performing, resilient, and efficient infrastructure for streaming desktop applications in the AWS Cloud.
 + Apply a consistent approach when evaluating WorkSpaces Applications architectures and implementing scalable designs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

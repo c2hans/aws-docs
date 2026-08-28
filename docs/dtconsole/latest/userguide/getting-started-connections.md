@@ -183,3 +183,7 @@ After you create a connection, you can use that connection for all of your AWS r
 1. Under **Repository location**, choose the name of your Bitbucket repository, and choose **Associate**.
 
    You can continue to set up code reviews. For more information, see [Connecting to Bitbucket to associate a repository with CodeGuru Reviewer](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/create-bitbucket-association.html) in the *Amazon CodeGuru Reviewer User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

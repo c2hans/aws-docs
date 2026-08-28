@@ -30,3 +30,7 @@ To view job and log information on AWS, sign in to the AWS Management Console, a
 ![Jobs and statuses listed on the AWS Mainframe Modernization console.](http://docs.aws.amazon.com/prescriptive-guidance/latest/control-m-batch-scheduler/images/guide-img/ca7d4793-feac-4eba-a6cd-6ca4d6395925/images/cc3bd6fa-88a2-4ff0-9007-a8b6dc4901ca.png)
 
 This view doesn't include dependencies nor any workload that isn't managed by the AWS Mainframe Modernization service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

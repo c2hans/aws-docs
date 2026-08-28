@@ -14,3 +14,7 @@ On the application preview tab, choose **Pop Out Into New Window**.
 **Note**
 ****The AWS Cloud9 IDE must also be running in at least one other tab in the same web browser. Otherwise, the application preview isn't displayed in a separate web browser tab.
 The AWS Cloud9 IDE must also be running in at least one other tab in the same web browser. Otherwise, the application preview isn't displayed in a separate web browser tab. If the application preview tab displays an error or is blank, follow the troubleshooting steps in [Application preview or file preview notice: "Third-party cookies disabled"](troubleshooting.md#troubleshooting-preview).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

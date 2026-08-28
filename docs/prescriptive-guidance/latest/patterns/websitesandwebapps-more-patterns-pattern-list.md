@@ -39,3 +39,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/we
 + [Troubleshoot states in AWS Step Functions by using Amazon Bedrock](troubleshooting-states-in-aws-step-functions.md)
 + [Use Network Firewall to capture the DNS domain names from the Server Name Indication for outbound traffic](use-network-firewall-to-capture-the-dns-domain-names-from-the-server-name-indication-sni-for-outbound-traffic.md)
 + [Visualize AI/ML model results using Flask and AWS Elastic Beanstalk](visualize-ai-ml-model-results-using-flask-and-aws-elastic-beanstalk.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

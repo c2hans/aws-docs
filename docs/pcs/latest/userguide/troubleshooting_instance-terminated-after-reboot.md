@@ -22,3 +22,7 @@ AWS PCS doesn't support instance reboots. If an EC2 instance is rebooted, AWS PC
 
 **Rebooting because of patching**
 A reboot is often required after you apply patches. Don't apply patches directly to an EC2 instance that is part of a AWS PCS compute node group. If you must patch your EC2 instances, you should apply your patches to an updated Amazon Machine Image (AMI) and update your compute node groups to use the updated AMI. New EC2 instances that AWS PCS launches for those compute node groups will use the updated (patched) AMI. For more information, see [Custom Amazon Machine Images (AMIs) for AWS PCS](working-with_ami_custom.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

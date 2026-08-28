@@ -33,3 +33,7 @@ Sellers in India have geographic restrictions and can only sell to buyers in Ind
 **Note**
 Customer eligibility is determined at an AWS linked account level. For more information, see [How does AWS determine the Location of your account?](https://aws.amazon.com/tax-help/location/)
 Customers that share their entitlement can only activate the entitlement in a region you have allowed. For more information about managing entitlements, see [Sharing subscriptions in an organization](https://docs.aws.amazon.com/marketplace/latest/buyerguide/organizations-sharing.html) in the *AWS Marketplace Buyer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

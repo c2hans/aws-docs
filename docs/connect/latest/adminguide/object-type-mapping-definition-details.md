@@ -68,3 +68,7 @@ Keys definitions are used in two ways:
 <a name="object-type-mapping-default-search-keys"></a>
 
 Default search keys, such as `_phone` and `_email`, are predefined by the [Standard Profile](standard-profile-definition.md), [Standard Asset](standard-asset-definition.md), [Standard Order](standard-order-definition.md), and [Standard Case](standard-case-definition.md) object template. You can use the default search keys as a key name with the [SearchProfiles API](https://docs.aws.amazon.com/customerprofiles/latest/APIReference/API_SearchProfiles.html) to find a profile.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

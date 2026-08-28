@@ -25,3 +25,7 @@ Every combination of subnets and security groups must provide access to AWS serv
  For more information, see [VPC endpoints](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html) in the *Amazon Virtual Private Cloud User Guide* and [Internet and service access for VPC-connected functions](https://docs.aws.amazon.com/lambda/latest/dg/configuration-vpc.html#vpc-internet) in the *AWS Lambda Developer Guide*.
 
 To configure the use of Lambda functions and VPCs, see [`DeploymentSettings`](DeploymentSettings-cluster-v3.md) / [`LambdaFunctionsVpcConfig`](DeploymentSettings-cluster-v3.md#DeploymentSettings-cluster-v3-LambdaFunctionsVpcConfig) for clusters or [`DeploymentSettings`](DeploymentSettings-build-image-v3.md) / [`LambdaFunctionsVpcConfig`](DeploymentSettings-build-image-v3.md#DeploymentSettings-build-image-v3-LambdaFunctionsVpcConfig) for images.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

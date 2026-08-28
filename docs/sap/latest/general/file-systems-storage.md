@@ -44,3 +44,7 @@ Depending on your source area design for shared storage, you must consider repli
 In certain scenarios, you can consider using other options to protect your source area SAP shared file systems, such as if the following is being used on your source environment.
 + FSx for ONTAP – You can use NetApp SnapMirror to copy your files between FSx for ONTAP file systems on your source and target instances, as frequently as every 5 minutes, to maintain a current copy of your shared file systems. For more information, see [Scheduled replication using NetApp SnapMirror](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/scheduled-replication.html).
 + Local storage – Elastic Disaster Recovery will replicate it to your disaster recovery environment on AWS, if Replication Agent can be configured on the source server hosting the local storage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

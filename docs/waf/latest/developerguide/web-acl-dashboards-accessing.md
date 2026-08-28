@@ -38,3 +38,7 @@ In the dashboard graph panes, you can access the CloudWatch metrics for the grap
 
 **Refreshing the dashboards**
 The dashboards don't refresh automatically. To update the display, choose the refresh ![Icon to refresh the dashboard graph](http://docs.aws.amazon.com/waf/latest/developerguide/images/cloudwatch-refresh-icon.png) icon.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

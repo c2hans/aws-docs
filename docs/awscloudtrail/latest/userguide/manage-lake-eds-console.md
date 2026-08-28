@@ -39,3 +39,7 @@ Using the CloudTrail console to create or update a event data stores provides th
 + [Delete an event data store with the console](query-event-data-store-delete.md)
 + [Restore an event data store with the console](query-eds-restore.md)
 + [Exporting data from CloudTrail Lake Event Data Store to CloudWatch](cloudtrail-lake-export-cloudwatch.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

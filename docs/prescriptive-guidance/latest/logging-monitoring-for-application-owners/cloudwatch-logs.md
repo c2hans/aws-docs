@@ -22,3 +22,7 @@ You can search and filter the log data coming into CloudWatch Logs by creating o
 + **Logging AWS API calls** – If you have a third-party monitoring solution in place, you can use CloudWatch Logs to log AWS API calls. You set up the third-party monitoring service to evaluate this log and the and the application-level APIs.
 + **Configuring log retention** – By default, logs in CloudWatch Logs are kept indefinitely and never expire. You can adjust the retention policy for each log group, keeping the indefinite retention, or choosing a retention period between one day and 10 years.
 + **Archiving and storing logs** – You can use CloudWatch Logs to store your log data in highly durable storage. The CloudWatch Logs agent sends both rotated and non-rotated log data into the log service. You can then access the raw log data when you need it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

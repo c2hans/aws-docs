@@ -55,3 +55,7 @@ You can also download the software binaries of the Cloud Shuffle Storage Plugin 
 The following are notes or limitations for the AWS Glue shuffle manager:
 +  AWS Glue shuffle manager doesn't automatically delete the (temporary) shuffle data files stored in your Amazon S3 bucket after a job is completed. To ensure data protection, follow the instructions in [Prerequisites for using Cloud Shuffle Storage Plugin](#monitor-spark-shuffle-manager-prereqs) before enabling the Cloud Shuffle Storage Plugin.
 + You can use this feature if your data is skewed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  If we move back from the technology and operations aspects of this story, the line between MSP and SaaS become even more distinct. Generally, as a SaaS business, the success of your offering relies on your ability to be deeply involved in all the moving parts of the experience.
 
  This usually means having your finger on the pulse of the onboarding experience, understanding how operational events impact tenants, tracking key metrics and analytics, and being close to your customer. In an MSP model where this is handed over to someone else, you may end up being a level removed from the key details that are core to operating a SaaS business.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

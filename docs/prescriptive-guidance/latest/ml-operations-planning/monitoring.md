@@ -34,3 +34,7 @@ You can also create ongoing monitoring jobs that sample training data and infere
 ![Monitoring training and inference data for drifts](http://docs.aws.amazon.com/prescriptive-guidance/latest/ml-operations-planning/images/guide-img/a60efcae-df25-477e-83cb-1abd305f3971/images/2700f94a-81a4-43e4-a3ff-f9c892e930d8.png)
 
 To better understand the drift profile of the data, such as how often the data distribution significantly changes, at what rate, or how sudden, we recommend that you continuously deploy new model versions and monitor their performance. For example, if your team deploys a new model every week and observes that the model performance significantly improves every time, they can determine that they should deliver new models in less than a week at the minimum.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -87,7 +87,7 @@ curl -v https://01234567ab-vpce-01234567abcdef012.execute-api.us-west-2.amazonaw
 ```
 
 ### Invoke a private API using private DNS names
-<a name="w2aac15c20c17c17b9b9"></a>
+<a name="w2aac15c20c16c17b9b9"></a>
 
 If you've enabled private DNS, you can access your private API using the following private DNS name:
 
@@ -117,7 +117,7 @@ curl -X GET https://01234567ab.execute-api.us-west-2.amazonaws.com/test/pets
 If you enable private DNS for your VPC endpoint, you won't be able to access the default endpoint for public APIs. For more information, see [Why can't I connect to my public API from an API Gateway VPC endpoint?](https://repost.aws/knowledge-center/api-gateway-vpc-connections).
 
 ### Invoke a private API using Direct Connect
-<a name="w2aac15c20c17c17b9c11"></a>
+<a name="w2aac15c20c16c17b9c11"></a>
 
 You can use Direct Connect to establish a dedicated private connection from an on-premises network to Amazon VPC and access your private API endpoint over that connection by using public DNS names.
 
@@ -145,3 +145,7 @@ Alternatively, you can invoke your private API via its API ID by using the `x-ap
 ```
 curl -v https://{{{public-dns-hostname}}}.execute-api.{{{region}}}.vpce.amazonaws.com/{{{stage}}} -H 'x-apigw-api-id:{{{api-id}}}'
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

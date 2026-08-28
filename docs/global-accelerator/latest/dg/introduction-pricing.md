@@ -10,3 +10,7 @@ With AWS Global Accelerator, you are charged a *fixed hourly fee* for each accel
 In addition, you will incur standard public IPv4 address charges for IPv4 addresses used with your accelerators.
 
 For details about pricing, information about pricing by source and destination Regions, and a pricing example, see [AWS Global Accelerator pricing](https://aws.amazon.com/global-accelerator/pricing).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

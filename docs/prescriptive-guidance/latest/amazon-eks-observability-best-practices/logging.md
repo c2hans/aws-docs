@@ -13,3 +13,7 @@ Implementing a robust logging strategy in Amazon EKS is essential for several re
 + **Security**: Log analysis can help you detect and investigate potential security threats or breaches.
 + **Performance optimization**: Logs provide insights into application and system performance, so you can identify bottlenecks and optimize resource utilization.
 + **Monitoring and alerting**: Log data can be used to set up monitoring systems and trigger alerts for specific events or conditions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

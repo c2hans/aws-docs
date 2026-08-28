@@ -26,3 +26,7 @@ The visual editor for rules in the console supports only one level of nesting fo
 + [Adjusting rule statement settings in AWS WAF](waf-rule-statement-fields.md)
 + [Using scope-down statements in AWS WAF](waf-rule-scope-down-statements.md)
 + [Referencing reusable entities in AWS WAF](waf-rule-statement-reusable-entities.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

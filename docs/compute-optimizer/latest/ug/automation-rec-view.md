@@ -27,3 +27,7 @@ Your organization’s management account and delegated administrator can view re
    - View a summary of the estimated monthly savings for your selected recommended actions and the total opportunity available based on your filters.
 
    - Create automation rule from your selected filters. This pre-fills the rule creation form with your selected filters in the recommended actions table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

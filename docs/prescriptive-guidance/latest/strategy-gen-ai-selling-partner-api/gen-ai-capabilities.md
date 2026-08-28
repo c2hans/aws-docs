@@ -50,3 +50,7 @@ You can ask Quick Q what are the top products that an enterprise sells on Amazon
 You can ask Quick Q to provide sales metrics for a product, based on month or year-to-date.
 
 ![Prompts for sales metrics for different time periods.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-gen-ai-selling-partner-api/images/guide-img/fd951ab0-b7f5-4ded-9451-ea838cf4c59a/images/80ba0f0a-0c9e-4a4c-a3bb-f91e1084e0ea.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

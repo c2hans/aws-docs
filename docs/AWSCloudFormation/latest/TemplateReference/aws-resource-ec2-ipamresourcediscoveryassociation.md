@@ -115,3 +115,7 @@ The lifecycle state of the association when you associate or disassociate a reso
 + `isolate-in-progress` - AWS account that created the resource discovery association has been removed and the resource discovery associatation is being isolated.
 + `isolate-complete` - Resource discovery isolation is complete..
 + `restore-in-progress` - Resource discovery is being restored.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

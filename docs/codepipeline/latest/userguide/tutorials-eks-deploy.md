@@ -349,3 +349,7 @@ Use the CodePipeline wizard to create your pipeline stages and connect your sour
 ![A console diagram showing a successful pipeline run with the deploy action added to your pipeline.](http://docs.aws.amazon.com/codepipeline/latest/userguide/images/eks-deploy-pipeline.png)
 
 1. After the pipeline runs successfully, choose **View details** to view the logs on the action to view the action output.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

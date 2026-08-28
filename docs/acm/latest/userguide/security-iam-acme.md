@@ -117,3 +117,7 @@ Both source identities begin with `acm-acme-`, so the `sts:SourceIdentity` condi
 <a name="security-iam-acme-scp"></a>
 
 Because the ACME service makes standard ACM API calls using the assumed role, AWS Organizations Service Control Policies (SCPs) are enforced at certificate issuance time. If an SCP denies `acm:RequestCertificate` for the account, ACME certificate issuance also fails. This provides the same governance controls for ACME-issued certificates as for certificates issued directly through the ACM API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

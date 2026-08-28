@@ -63,3 +63,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/inte
 <a name="trackit"></a>
 
  [TrackIt](https://trackit.io/) is an AWS Advanced Consulting Partner with decades of experience in the Media & Entertainment industry and a wealth of cloud technology design and deployment work performed for many media-centric companies. TrackIt has experience building advanced pipelines that include AI/ML tools and integration with asset management systems, along with transcoding, rendering, VOD, OTT, live streaming, cloud-based editorial, and collaborative online tools. Learn more about how [Trackit used Media2Cloud on AWS to help Jukin Media](https://trackit.io/case-studies/jukin-media/) improve the utility of their archive.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Media2Cloud on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

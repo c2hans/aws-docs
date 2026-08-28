@@ -14,3 +14,7 @@ If you want MediaLive to use the data in a SMPTE 2038 stream, you must configure
    + **Ignore** (default) – MediaLive never looks for a SMPTE 2038 stream. Even if a specific item of data is not available in other places in the stream, MediaLive doesn't look for a SMPTE 2038 stream. For example, you might set the timecode source to Embedded (in the **General Configuration** section for the channel). With **Ignore**, if the timecode source isn't in the video stream, MediaLive won't look for it in a SMPTE 2038 stream.
 
    Note that with Elemental Link input, any KLV metadata is always in a SMPTE 2038, never in a different PID. Therefore, if you have been told that the source includes KLV metadata, always choose **Prefer**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

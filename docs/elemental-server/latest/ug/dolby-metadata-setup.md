@@ -106,3 +106,7 @@ The values from the profile are used.
 + With Dialnorm, the value from the profile is used. If the profile has no value and the source is a Dolby file, the value from the input metadata is used. If the profile has no value and the source is *not * a Dolby file, a default value is used; see [Output with the Dolby Digital Codec](dolby-metadata-output-dolby-digital-codec.md) and [Output with Dolby Digital Plus (EC2, EAC3) Codec](dolby-metadata-output-dolby-digital-plus-codec.md).
 
 AWS Elemental Server Control parameters are applied during transcoding. The Delivery parameters are included in the output.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -105,3 +105,7 @@ The results of your queries are displayed in three ways, as shown in the followi
 ![AWS IoT TwinMaker query editor results displayed as a run summary.](http://docs.aws.amazon.com/iot-twinmaker/latest/guide/images/kg-run-sum.png)
 
   The run summary displays the query and metadata about the status of the query.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

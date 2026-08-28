@@ -180,3 +180,7 @@ You can use the X-Ray API to manage sampling rules. With the API, you can create
 The AWS Distro for OpenTelemetry, X-Ray SDK and AWS services also use the X-Ray API to read sampling rules, report sampling results, and get sampling targets. Services must keep track of how often they apply each rule, evaluate rules based on priority, and borrow from the reservoir when a request matches a rule for which X-Ray has not yet assigned the service a quota. For more detail about how a service uses the API for sampling, see [Using sampling rules with the X-Ray API](xray-api-sampling.md).
 
 When the AWS Distro for OpenTelemetry or the X-Ray SDK call sampling APIs, they use the CloudWatch agent as a proxy. If you already use TCP port 2000, you can configure the agent to run the proxy on a different port. See the [CloudWatch agent installation guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html) for details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS X-Ray. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query xray` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

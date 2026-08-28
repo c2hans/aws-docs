@@ -314,3 +314,7 @@ To verify that the CloudWatch alarm creates an incident and then processes the r
 
 **Important**
 You must clean up any resource changes you implemented during this tutorial that you don't want to keep. This includes changes to Incident Manager resources such as resource plans and incidents, changes to CloudWatch alarms, and the IAM role you created for this tutorial.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

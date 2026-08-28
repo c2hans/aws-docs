@@ -51,3 +51,7 @@ aws rds modify-db-cluster-endpoint --db-cluster-endpoint-identifier {{my-custom-
 <a name="aurora-edit-endpoint.api"></a>
 
 To edit a custom endpoint with the RDS API, run the [ModifyDBClusterEndpoint.html](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBClusterEndpoint.html.html) operation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

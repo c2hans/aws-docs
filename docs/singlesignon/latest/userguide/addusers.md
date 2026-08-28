@@ -75,3 +75,7 @@ Output:
 When you create users with the `create-user` CLI command or the [CreateUser](https://docs.aws.amazon.com/singlesignon/latest/IdentityStoreAPIReference/API_CreateUser.html) API operation, the users do not have passwords. You can update the settings in IAM Identity Center to send these users a verification email after their first attempt to sign on so they can set up a password. If you do not enable this setting, you must generate a one-time password and share it with the user. For more information, see [Email one-time password to users created with API or CLI](userswithoutpwd.md).
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

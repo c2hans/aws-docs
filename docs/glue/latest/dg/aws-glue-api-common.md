@@ -361,3 +361,7 @@ The API uses the following regular expressions to define what is valid content f
 + Custom string pattern \#76 – "`^[a-zA-Z][a-zA-Z0-9_]*$`"
 + Custom string pattern \#77 – "`^[A-Z]\w*$`"
 + Custom string pattern \#78 – "`^(?![\.:])([\w.]+(::))?[A-Z]\w*$`"
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

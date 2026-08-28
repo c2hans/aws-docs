@@ -34,3 +34,7 @@ Including concise summaries at the beginning of each section or subsection can i
 <a name="faq-6"></a>
 
 LLMs are trained on a broad range of data, but they lack context for enterprise-specific abbreviations or terminology. Defining abbreviations and providing context helps LLMs understand and respond more accurately. This can help prevent hallucinations or misinterpretations. For more information, see [Documentation best practices for RAG applications](best-practices.md) in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ AWS Support submits a support permit request in the Support Center when access t
 + [Discovering support actions](support-authorization-actions.md)
 + [Monitoring AWS Support authorization with AWS CloudTrail](support-authorization-monitoring.md)
 + [AWS Support authorization quotas](support-authorization-quotas.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

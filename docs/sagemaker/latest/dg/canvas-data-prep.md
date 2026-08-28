@@ -21,3 +21,7 @@ Use Amazon SageMaker Data Wrangler in Amazon SageMaker Canvas to prepare, featur
   + Amazon SageMaker Pipelines – Build workflows that manage your SageMaker AI data preparation, model training, and model deployment jobs.
   + Serial inference pipeline – Create a serial inference pipeline from your data flow. Use it to make predictions on new data.
   + Python script – Store the data and their transformations in a Python script for your custom workflows.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ MGN [supports these use cases](https://docs.aws.amazon.com/mgn/latest/ug/install
 For more information about how MGN works, see these blog posts:
 + [Accelerate your Migration with AWS Transform MGN](https://aws.amazon.com/blogs/mt/accelerate-your-migration-with-aws-application-migration-service/)
 + [How to Use the New AWS Transform MGN for Lift-and-Shift Migrations](https://aws.amazon.com/blogs/aws/how-to-use-the-new-aws-application-migration-service-for-lift-and-shift-migrations/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

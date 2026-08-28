@@ -18,3 +18,7 @@ When you choose to migrate a partial configuration, you will use either a TMSH o
 | Easier to move the configuration to an appropriate topology. |
 | Easier to address administrator partitions and route domains because it is a flat file. |
 | The flat file structure allows the use of Linux text tools if you want to programmatically find and replace IP addresses. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

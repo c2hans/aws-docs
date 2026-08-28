@@ -54,3 +54,7 @@ Amazon API Gateway Management provides the following APIs for data retrieval.
 | <a name="apigateway-GetUsagePlans"></a>[GetUsagePlans](https://docs.aws.amazon.com/apigateway/latest/api/API_Operations.html) | Read a particular resource | Read |
 | <a name="apigateway-GetVpcLink"></a>[GetVpcLink](https://docs.aws.amazon.com/apigateway/latest/api/API_Operations.html) | Read a particular resource | Read |
 | <a name="apigateway-GetVpcLinks"></a>[GetVpcLinks](https://docs.aws.amazon.com/apigateway/latest/api/API_Operations.html) | Read a particular resource | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

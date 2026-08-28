@@ -53,3 +53,7 @@ AWS Elemental MediaTailor content delivery network (CDN) ad break timing must be
 + For monitoring ad insertion timing and performance, see [Monitor MediaTailor CDN operations and performance](cdn-monitoring.md)
 
 **Success criteria:** When resolved, ad breaks should appear at precisely the times specified by SCTE-35 markers, with consistent timing across all CDN edge locations and player types. Debug logs should show accurate ad break processing timing without drift or synchronization errors.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

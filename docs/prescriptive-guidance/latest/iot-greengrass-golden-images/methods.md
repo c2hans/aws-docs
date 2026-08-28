@@ -41,3 +41,7 @@ When you use the partial Greengrass snapshot method, the golden image includes o
 The chief advantage of this method is that the unique configuration steps required for each production device are simple and robust. These configuration steps are detailed in the [next section](procedure.md).
 
 The chief disadvantage is that your application components will not be in a running state until your production devices receive a cloud deployment. This might not meet all your requirements. However, because the component artifacts are present on disk, they will not be re-downloaded when your devices receive the cloud deployment, if the cloud deployment still matches the artifacts on disk. Consequently, the cloud deployment is relatively quick and will not incur large data charges on a cellular network.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

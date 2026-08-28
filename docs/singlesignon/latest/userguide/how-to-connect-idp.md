@@ -43,3 +43,7 @@ Changing your source to or from Active Directory removes all existing user and g
 1. After you read the disclaimer and are ready to proceed, enter **ACCEPT**.
 
 1. Choose **Change identity source**. A status message informs you that you successfully changed the identity source.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

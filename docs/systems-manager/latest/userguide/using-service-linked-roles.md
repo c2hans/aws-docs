@@ -33,3 +33,7 @@ Systems Manager Automation no longer uses the service-linked role for CloudWatch
 + [Using roles to export Explorer OpsData](using-service-linked-roles-service-action-6.md)
 + [Using roles to enable just-in-time node access](using-service-linked-roles-service-action-8.md)
 + [Using roles to send just-in-time node access request notifications](using-service-linked-roles-service-action-9.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

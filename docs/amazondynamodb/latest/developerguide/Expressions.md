@@ -31,3 +31,7 @@ For information about expression syntax and more detailed information about each
 **Note**
 For backward compatibility, DynamoDB also supports conditional parameters that do not use expressions. For more information, see [Legacy DynamoDB conditional parameters](LegacyConditionalParameters.md).
 New applications should use expressions rather than the legacy parameters.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

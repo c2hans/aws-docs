@@ -26,3 +26,7 @@ Data encryption helps prevent unauthorized users from reading data from a blockc
 + [Data Encryption for AMB Access Hyperledger Fabric](#managed-blockchain-data-protection.encryption)
 + [Encryption at Rest for AMB Access Hyperledger Fabric](managed-blockchain-encryption-at-rest.md)
 + [Encryption in Transit for AMB Access Hyperledger Fabric](managed-blockchain-encryption-in-transit.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

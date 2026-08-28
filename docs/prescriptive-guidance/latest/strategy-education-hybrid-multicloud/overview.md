@@ -19,3 +19,7 @@ Conversely, if you have a cloud strategy that guides you to use single, hybrid, 
 + Reserve multicloud only for workloads that can't meet technical or business requirements through a single cloud provider.
 
 These best practices are discussed in detail in the [Recommendations](recommendations.md) section of this paper. Each recommendation is important, but your institution's priorities will depend on its stage of cloud adoption. For example, if you are just getting started with cloud adoption, focus on selecting a primary, strategic cloud provider, establishing a CCoE, and adopting cloud-native, managed solutions. If you are already using a single cloud provider, focus on establishing core security and governance requirements, and consider hybrid architectures when your existing data center investments incentivize continued use. If your organization is already using multiple cloud providers, focus on differentiating SaaS applications and reserving multicloud deployments to those rare workloads that truly require it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

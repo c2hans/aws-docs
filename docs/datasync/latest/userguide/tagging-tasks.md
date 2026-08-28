@@ -118,3 +118,7 @@ To add, edit, or remove tags from a task execution, you must start the task with
    ```
 
 To view the tags you added to this task, you can use the [list-tags-for-resource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/datasync/list-tags-for-resource.html) command.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

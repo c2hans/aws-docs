@@ -12,3 +12,7 @@ The following blogs use a case study of sentiment prediction for a movie review 
 See also:
 + A walkthrough of the configuration of [Access Apache Livy using a Network Load Balancer on a Kerberos-enabled Amazon EMR cluster](https://aws.amazon.com/blogs/big-data/access-apache-livy-using-a-network-load-balancer-on-a-kerberos-enabled-amazon-emr-cluster/).
 + AWS whitepapers for [SageMaker Studio or Studio Classic best practices](https://docs.aws.amazon.com/whitepapers/latest/sagemaker-studio-admin-best-practices/sagemaker-studio-admin-best-practices.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

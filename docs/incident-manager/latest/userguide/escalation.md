@@ -50,3 +50,7 @@ Escalation plans use stages where each stage lasts a defined number of minutes. 
    Tags are optional metadata that you assign to a resource. Tags allow you to categorize a resource in different ways, such as by purpose, owner, or environment. For example, you can tag an escalation plan to identify the type of incidents to use it for, the types of escalation channels it contains, or the escalation plan it supports. For more information about tagging Incident Manager resources, see [Tagging resources in Incident Manager](tagging.md).
 
 1. Choose **Create escalation plan**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

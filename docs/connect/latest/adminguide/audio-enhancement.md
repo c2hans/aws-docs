@@ -149,3 +149,7 @@ If you require additional support, contact AWS Support and include:
 + [Security profiles for Connect Customer and Contact Control Panel (CCP) access](connect-security-profiles.md)
 + [Provide agents with access to the Connect Customer Contact Control Panel (CCP)](amazon-connect-contact-control-panel.md)
 + [Set up your contact center in Connect Customer](amazon-connect-contact-centers.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

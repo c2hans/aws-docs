@@ -284,3 +284,7 @@ Let's say that you want to collect evidence for a HIPAA control that's named *16
 + The [resources](https://docs.aws.amazon.com/audit-manager/latest/userguide/concepts.html#resource) that are being assessed are your users
 + The [data source type](https://docs.aws.amazon.com/audit-manager/latest/userguide/control-data-sources.html) is CloudTrail
 + The [data source mapping](https://docs.aws.amazon.com/audit-manager/latest/userguide/concepts.html#control-data-source) is a specific CloudTrail event (`ConsoleLogin`)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -81,3 +81,7 @@ Using Application Manager, customers can measure the efficiency of the workloads
 <a name="sustainability"></a>=== Sustainability
 
 This section describes how the principles and best practices of the [sustainability pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html) were applied when designing this solution. To minimize the environmental impact of backend services, Live Streaming on AWS uses managed and serverless services. Customers can run this solution only during a live event and delete the stack after the program ends, thereby reducing the carbon footprint as compared to the footprint of continually operating on-premises servers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Live Streaming on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

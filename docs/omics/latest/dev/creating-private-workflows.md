@@ -27,9 +27,16 @@ To change other information in the workflow, create a new workflow or workflow v
 
 Use workflow versioning to organize and structure you workflows. Versions also help you to manage the introduction of iterative workflow updates. For more information about versions, see [Create a workflow version](workflows-version-create.md).
 
+**Note**
+After you create a WDL or Nextflow DSL2 workflow, use `GetWorkflow` to check the `statusMessage` field for any lint findings. For more information, see [Workflow linters in HealthOmics](workflows-linter.md).
+
 **Topics**
 + [Create a private workflow](create-private-workflow.md)
 + [Update a private workflow](update-private-workflow.md)
 + [Delete a private workflow](delete-private-workflow.md)
 + [Verify the workflow status](using-get-workflow.md)
 + [Referencing genome files from a workflow definition](create-ref-files.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

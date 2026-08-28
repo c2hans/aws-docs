@@ -62,3 +62,7 @@ Implement [Zero Trust principles](https://docs.aws.amazon.com/prescriptive-guid
 <a name="best-practices-2-access-control-granularity"></a>
 
 Ensure identity teams are actively involved throughout entitlements and claims definition development. This helps maintain consistency with organizational identity management practices and helps prevent security gaps. Implement access controls with appropriate granularity of claims. Software development should not be overly burdensome, but your organization must maintain an acceptable risk posture. Overly complex or granular access controls can lead to human error through misunderstanding or workarounds that compromise security.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

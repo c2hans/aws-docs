@@ -44,3 +44,7 @@ AWS defines the following access level classifications for the actions in a serv
 To improve the security of your AWS account, restrict or regularly monitor policies that include the **Permissions management** access level classification.
 
 To view the access level classification for all of the actions in a service, see [Actions, Resources, and Condition Keys for AWS Services](https://docs.aws.amazon.com/reference_policies_actions-resources-contextkeys.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

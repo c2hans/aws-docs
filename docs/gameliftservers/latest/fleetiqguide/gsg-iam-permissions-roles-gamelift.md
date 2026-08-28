@@ -106,3 +106,7 @@ These steps describe how to create a service role with a managed policy for Amaz
 The role is now ready. You can verify that the IAM role is configured correctly by calling [gamelift create-game-server-group](https://docs.aws.amazon.com/cli/latest/reference/gamelift/create-game-server-group.html) with the `role-arn` property set to the new role's ARN value. When the `GameServerGroup` enters ACTIVE state, this indicates that Amazon GameLift Servers FleetIQ is able to modify Amazon EC2 and Auto Scaling resources in your account, as expected.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

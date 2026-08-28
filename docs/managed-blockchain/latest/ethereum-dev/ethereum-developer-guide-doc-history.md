@@ -23,3 +23,7 @@ The following table describes important additions to the *Amazon Managed Blockch
 | [Consensus API for the Beacon chain](https://docs.aws.amazon.com/managed-blockchain/latest/ethereum-dev/supported-consensus-apis.html) | Release of the Consensus API for the Beacon chain on the Ropsten testnet. | June 8, 2022 |
 | [Görli (Goerli)](https://docs.aws.amazon.com/managed-blockchain/latest/ethereum-dev/ethereum-concepts.html#ethereum-considerations) | Release of the Görli (Goerli) testnet. | May 2, 2022 |
 | [Initial Release](https://docs.aws.amazon.com/managed-blockchain/latest/ethereum-dev) | Initial release. | December 15, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

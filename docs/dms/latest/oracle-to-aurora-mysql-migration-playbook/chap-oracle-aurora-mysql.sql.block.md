@@ -70,3 +70,7 @@ For more information, see [Overview of PL/SQL](https://docs.oracle.com/en/databa
 You can achieve the similar functionality to Oracle Anonymous Blocks by using the Aurora MySQL `START TRANSACTION` command or a stored procedure.
 
 For more information, see [Stored Procedures](chap-oracle-aurora-mysql.sql.stored.md) and [Oracle Transaction Model and MySQL Transactions](chap-oracle-aurora-mysql.sql.transactions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

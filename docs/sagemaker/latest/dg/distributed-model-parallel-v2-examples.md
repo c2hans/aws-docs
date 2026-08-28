@@ -35,3 +35,7 @@ cd amazon-sagemaker-examples/training/distributed_training/pytorch/model_paralle
 + [Fine-tune Llama v2 with SMP v2 and PyTorch FSDP at large-scale using tensor parallelism, hybrid sharding, and activation offloading](https://github.com/aws/amazon-sagemaker-examples/blob/main/training/distributed_training/pytorch/model_parallel_v2/llama_v2/smp-finetuning-llama-fsdp-tp.ipynb)
 + [Train GPT-NeoX with SMP v2 and PyTorch FSDP at large scale](https://github.com/aws/amazon-sagemaker-examples/blob/main/training/distributed_training/pytorch/model_parallel_v2/gpt-neox/smp-train-gpt-neox-fsdp-tp.ipynb)
 + [Fine-tune GPT-NeoX with SMP v2 and PyTorch FSDP at large-scale using tensor parallelism, hybrid sharding, and activation offloading](https://github.com/aws/amazon-sagemaker-examples/blob/main/training/distributed_training/pytorch/model_parallel_v2/gpt-neox/smp-finetuning-gpt-neox-fsdp-tp.ipynb)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

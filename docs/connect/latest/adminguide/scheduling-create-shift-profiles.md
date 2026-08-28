@@ -56,3 +56,7 @@ These rules override the settings in the **Schedule Window** section.
 1. After saving the shift profile, you can edit or remove it from the list view.
 
 For example, if you set break to start 6 hours after the start of a shift and lunch to start 3 hours after the start of a shift, the lunch is scheduled to occur first.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

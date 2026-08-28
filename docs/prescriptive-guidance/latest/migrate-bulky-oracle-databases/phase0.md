@@ -34,3 +34,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-bul
 1. Set up the Oracle XTTS utility.
 
    On the source system, download and extract the script file, [rman\_xttconvert\_VER4.zip](https://support.oracle.com/epmos/main/downloadattachmentprocessor?attachid=2471245.1%3ARMAN_XTTS_VER4&docType=REFERENCE&action=download) from Oracle document 2471245.1. Modify the parameters in the xtt.properties file with the specific configuration. Then copy xtt.properties and xttdriver.pl scripts to the destination system.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

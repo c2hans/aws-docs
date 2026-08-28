@@ -58,3 +58,7 @@ Complete the following steps to configure RDC and connect to your Windows instan
 
    After you’re connected to the instance, you should see a screen similar to the following example:
 ![The desktop background for a Lightsail Windows instance in the Microsoft Remote Desktop application.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/connect-using-remote-desktop-mac-08.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

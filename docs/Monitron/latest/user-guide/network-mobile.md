@@ -70,3 +70,7 @@ From a networking perspective, the process of provisioning sensors or gateways g
 1. The gateway, securely over the internet, sends the sensor’s data to the Monitron back end.
 
 1. In the mobile app (or the web app), securely over the internet, you can now view the analytical data about your asset.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -132,3 +132,7 @@ This section applies to both custom and default AMIs.
 + **Job retry strategy** – Configure job retry strategies to handle jobs that may be interrupted during infrastructure updates. For more information, see [Automated job retries](job_retries.md).
 + **Update policy configuration** – Configure appropriate update policies to control how running jobs are handled during infrastructure updates. For more information, see [Perform infrastructure updates](infrastructure-updates.md).
 + **Testing** – Test AMI updates in development environments before applying them to production compute environments.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

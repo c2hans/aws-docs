@@ -27,3 +27,7 @@ The AWS Deadline Cloud CLI, submitters, and worker agent all collect operational
 + Before running the worker agent, CLI, or submitter, set an environment variable: **DEADLINE\_CLOUD\_TELEMETRY\_OPT\_OUT=true**
 
 After you opt out, the Deadline Cloud tools no longer send the operational data. Any previously collected data is retained and may still be used to improve the service. For more information, see [Data Privacy FAQ](https://aws.amazon.com/compliance/data-privacy-faq/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

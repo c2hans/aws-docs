@@ -130,3 +130,7 @@ To update the countries enabled on a Notify configuration, see [Managing Notify 
 
 **Note**
 If your configuration is on the Basic tier, countries that require the Advanced tier are visible but cannot be selected. Upgrade to the Advanced tier to access these countries.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

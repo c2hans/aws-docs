@@ -82,3 +82,7 @@ The primary container for production variant beta did not pass the ping health c
  It is also good practice to test the model deployment locally before creating an endpoint.
 +  Use local mode in the SageMaker SDK to imitate the hosted environment by deploying the model to a local endpoint. For more information, see [Local Mode](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html).
 +  Use vanilla docker commands to test the container responds to /ping and /invocations. For more information, see [local\_test](https://github.com/aws/amazon-sagemaker-examples/tree/main/advanced_functionality/scikit_bring_your_own/container/local_test).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

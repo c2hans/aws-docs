@@ -32,3 +32,7 @@ For additional migration scenarios, see the MongoDB website:
 + [Migrating from a self-managed replica set on AWS to MongoDB Atlas](https://docs.mongodb.com/guides/cloud/migrate-from-aws-to-atlas/)
 + [Atlas Live Migration service and documentation](https://www.mongodb.com/cloud/atlas/migrate)
 + [RDBMS to MongoDB Migration Guide](https://www.mongodb.com/resources/solutions/use-cases/rdbms-mongodb-migration-guide)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

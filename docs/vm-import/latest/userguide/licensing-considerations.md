@@ -39,3 +39,7 @@ The following rules apply when you use your BYOL Microsoft license, either throu
 + AWS recommends that you consult with your own legal and other advisers to understand and comply with the applicable Microsoft licensing requirements. Usage of the Services (including usage of the **licenseType** parameter and **BYOL** flag) in violation of your agreements with Microsoft is not authorized or permitted.
 
   For more information, see *[Generating Windows Server and SQL Server on Amazon EC2 estimates](https://docs.aws.amazon.com/pricing-calculator/latest/userguide/windows-workload-estimates.html) in the AWS Pricing Calculator User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vm-import` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

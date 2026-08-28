@@ -107,3 +107,7 @@ options = {
 + `databaseName` — Used for Read/Write. Valid Values: names of databases in SAP HANA. Name of database to connect to.
 + `dbtable` — Required for writing, required for reading unless `query` is provided. Used for Read/Write. Valid Values: contents of a SAP HANA SQL FROM clause. Identifies a table in SAP HANA to connect to. You may also provide other SQL than a table name, such as a subquery. For more information, see the [From clause](https://help.sap.com/docs/SAP_HANA_PLATFORM/4fe29514fd584807ac9f2a04f6754767/20fcf24075191014a89e9dc7b8408b26.html#loio20fcf24075191014a89e9dc7b8408b26__from_clause) in the SAP HANA documentation.
 + `query` — Used for Read. A SAP HANA SQL SELECT query defining what should be retrieved when reading from SAP HANA.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

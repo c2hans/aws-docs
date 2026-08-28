@@ -86,3 +86,7 @@ Lambda charges for data transfer between VPCs. This only applies if your functio
 <a name="configuration-filesystem-efs-regions"></a>
 
 Amazon EFS for Lambda is available in all [commercial Regions](https://docs.aws.amazon.com/general/latest/gr/glos-chap.html#region) except Asia Pacific (New Zealand), Asia Pacific (Taipei), Asia Pacific (Malaysia), Asia Pacific (Thailand), and Canada West (Calgary).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

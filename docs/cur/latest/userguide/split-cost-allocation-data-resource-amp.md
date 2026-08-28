@@ -225,3 +225,7 @@ You can use AWS Pricing Calculator to estimate the cost of using Amazon Managed 
 1. Split cost allocation data does not impose any specific requirements for the other parameters so enter appropriate values for the rest of the input parameters as per your business requirements.
 
 1. Choose **Save and add service**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

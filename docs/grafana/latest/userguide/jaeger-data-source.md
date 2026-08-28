@@ -35,3 +35,7 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/jaeger-data-sou
 <a name="linking-trace-id-from-logs"></a>
 
  You can link to Jaeger trace from logs in Loki by configuring a derived field with internal link. For more information, see [Derived fields](using-loki-in-AMG.md#loki-derived-fields).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

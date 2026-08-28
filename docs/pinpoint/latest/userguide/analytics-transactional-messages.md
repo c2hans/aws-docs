@@ -144,3 +144,7 @@ Unlike the **Opens** and **Clicks** metrics, these metrics show the number of un
 
 **Bounce and complaint events**
 Shows the number of soft bounces, hard bounces, and complaints that occurred on each day of the selected time period. Soft bounces are usually temporary in nature. For example, if the recipient's inbox is full or their mail server is temporarily offline when we attempt to deliver a message, we count it as a soft bounce. Hard bounces are permanent. For example, if a recipient's email address doesn't exist or their mail server doesn't accept messages from your domain, we count it as a hard bounce.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

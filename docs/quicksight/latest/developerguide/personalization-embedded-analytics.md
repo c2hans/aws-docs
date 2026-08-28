@@ -20,3 +20,7 @@ Use state persistence to ensure a continuous user experience that maintains the 
 Users can utilize bookmarks to save and revisit specific views within Quick Sight dashboards to enhance the efficiency and flexibility of data exploration. Bookmarks can be used to improve user productivity, enmahce collaboration, and create user defined views of a Quick Sight dashboard.
 
 To learn more about bookmarks, see [Bookmarking views of a dashboard](https://docs.aws.amazon.com/quicksight/latest/user/dashboard-bookmarks.html) and [GenerateEmbedUrlForRegisteredUser](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_GenerateEmbedUrlForRegisteredUser.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick Sight. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quicksight` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

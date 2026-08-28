@@ -30,3 +30,7 @@ As with Lake Formation permissions, you generally have two types of scenarios in
 1. Opt in the principals and resources. Other principals in the account can continue accessing the databases and tables using IAM permission policies for AWS Glue and Amazon S3 actions.
 
 1. Optionally clean up IAM permission policies for Amazon S3 for the principals that are opted in to use Lake Formation permissions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

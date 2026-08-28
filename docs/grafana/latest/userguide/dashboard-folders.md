@@ -48,3 +48,7 @@ When saving a dashboard, you can either choose an existing folder or create a ne
 <a name="folder-permissions"></a>
 
  Permissions can be assigned to a folder and inherited by the dashboards that it contains. An Access Control List (ACL) is used where **Organization Role**, **Team** and Individual **User** can be assigned permissions. For more information, see [Dashboard and folder permissions](dashboard-and-folder-permissions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

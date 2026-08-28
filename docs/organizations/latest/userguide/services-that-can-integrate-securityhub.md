@@ -78,3 +78,7 @@ The Security Hub CSPM API only removes the delegated Security Hub CSPM administr
 If you use the Organizations API to remove the delegated Security Hub CSPM administrator account, it is automatically removed in all Regions.
 
 For instructions on disabling the delegated Security Hub CSPM administrator, see [Removing or changing the delegated administrator](https://docs.aws.amazon.com/securityhub/latest/userguide/designate-orgs-admin-account.html#remove-admin-overview).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

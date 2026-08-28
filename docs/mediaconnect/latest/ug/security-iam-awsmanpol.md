@@ -133,3 +133,7 @@ View details about updates to AWS managed policies for MediaConnect since this s
 | The MediaConnect managed policy MediaConnectGatewayInstanceRolePolicy has been added. | This policy grants permission to register MediaConnect Gateway Instances to a MediaConnect Gateway. | April 12, 2023 |
 | The MediaConnect managed policy AWSMediaConnectServicePolicy has been added. | This policy is used by a service-link role and grants permissions to access AWS services and resources used by MediaConnect. | April 12, 2023 |
 | MediaConnect started tracking changes | MediaConnect started tracking changes for its AWS managed policies. | April 12, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

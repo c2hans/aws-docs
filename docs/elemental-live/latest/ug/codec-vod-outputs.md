@@ -37,3 +37,7 @@ Use this table if you want to deliver uncompressed video in an Archive output gr
 | UYVY  | 8-bit 4:2:2 planar  |
 | YUYV  | 8-bit 4:2:2 planar  |
 | S210  | 10-bit 4:2:2 packed  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

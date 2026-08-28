@@ -1072,3 +1072,7 @@ AWS Directory Service defines the following condition keys that can be used in t
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Tag.html)  | Filters access by the value of the request to AWS DS | String |
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Tag.html)  | Filters access by the AWS DS Resource being acted upon | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/directoryservice/latest/devguide/API_Tag.html)  | Filters access by the tag keys that are passed in the request | ArrayOfString |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

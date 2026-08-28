@@ -19,7 +19,7 @@ For detailed information about the activity of agents in your contact center, us
 + [Custom metric primitives](metric-primitive-definitions.md)
 + [Assign permissions](dashboard-required-permissions.md)
 + [Dashboards](dashboards.md)
-+ [Manager assistant](manager-assistant.md)
++ [Manager assist](manager-assist.md)
 + [Real-time metrics reports](real-time-metrics-reports.md)
 + [Historical metrics reports](historical-metrics.md)
 + [Login/Logout reports for agents in Connect Customer](login-logout-reports.md)
@@ -46,3 +46,7 @@ For detailed information about the activity of agents in your contact center, us
 + [Monitor CloudWatch metrics](monitoring-cloudwatch.md)
 + [Logging service API calls](logging-using-cloudtrail.md)
 + [EventBridge events emitted by Connect Customer](connect-eventbridge-events.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

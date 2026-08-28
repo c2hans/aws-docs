@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 # Step 1: Deploy the AccountPool stack
 <a name="step1-deploy-accountpool-stack"></a>
 
-In this step, you will deploy the resources required to set up Organizational Units (OUs), Service Control Policies (SCPs), roles, and Regions.
+In this step, you deploy the resources required to set up Organizational Units (OUs), Service Control Policies (SCPs), roles, and Regions.
 
 **Important**
 Ensure that you log into the **Org Management** account for deploying the AccountPool stack.
@@ -13,7 +13,7 @@ Ensure that you log into the **Org Management** account for deploying the Accoun
 **Note**
 Refer to [Supported AWS Regions](plan-your-deployment.md#supported-aws-regions) for a list of supported AWS Regions.
 
-1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and select the button to launch the `AccountPool` stack CloudFormation template.
+1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and choose the button to launch the `AccountPool` stack CloudFormation template.
 
  [![Launch Stack](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?&templateURL=https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-AccountPool.template&redirectId=ImplementationGuide)
 
@@ -28,7 +28,7 @@ The template launches in the US East (N.Virginia) Region by default. To launch t
 
 1. Choose **Next**.
 
-1. On the **Configure stack options** page, review and select to acknowledge the messages under **Capabilities and transforms**, and choose **Next**.
+1. On the **Configure stack options** page, review and choose to acknowledge the messages under **Capabilities and transforms**, and choose **Next**.
 
 1. On the **Review and create** page, review and confirm the settings.
 
@@ -38,3 +38,7 @@ You can view the status of the stack in the AWS CloudFormation Console in the St
 
 **Note**
 Always include `us-east-1` as an ISB Managed Region to enable AWS global services. For example, if you want to enable `eu-west-1`, the parameter value should be `us-east-1,eu-west-1`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -94,3 +94,7 @@ To use code to change the settings of an environment in AWS Cloud9, call the AWS
 | AWS SDK for Ruby |  [update\_environment](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Cloud9/Client.html#update_environment-instance_method)  |
 | AWS Tools for Windows PowerShell |  [Update-C9Environment](https://docs.aws.amazon.com/powershell/latest/reference/items/Update-C9Environment.html)  |
 | AWS Cloud9 API |  [UpdateEnvironment](https://docs.aws.amazon.com/cloud9/latest/APIReference/API_UpdateEnvironment.html)  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

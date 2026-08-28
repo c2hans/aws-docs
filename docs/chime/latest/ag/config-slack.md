@@ -105,3 +105,7 @@ If you did not associate your Slack workspace with an Amazon Chime Team account 
 1. Follow the prompts to create a new Team account in Amazon Chime or choose an existing account.
    + **Create a new account** – Create a new Amazon Chime account to which to invite your Slack users. Enter an account name, choose whether to invite your Slack users, then choose **Create**.
    + **Choose an existing account** – Select an existing Amazon Chime account to invite your Slack users to. Select the account, then choose **Invite**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

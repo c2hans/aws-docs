@@ -14,3 +14,7 @@ To host embedded WorkSpaces Applications streaming sessions, you must download a
 1. The extracted contents of the file comprise one folder, **appstream-embed**. In addition to the **COPYRIGHT.txt** and **THIRD\_PARTY\_NOTICES.txt **file, this folder contains the following two files:
    + **appstream-embed.js** — Provides the embedded WorkSpaces Applications API. This JavaScript file includes the functions and API actions for configuring and controlling your embedded WorkSpaces Applications streaming session.
    + **embed-sample.html** — Describes how to use the embedded WorkSpaces Applications API to initialize a streaming session, call functions, and listen for events. This sample file expands on the information in this topic, to provide an example use case for developers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

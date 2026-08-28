@@ -29,3 +29,7 @@ Creating custom forms with array fields (fields with nested objects inside an ar
 + [Best practices for OpenAPI schema definition for custom plugins](plugins-api-schema-best-practices.md)
 + [Creating an Amazon Q Business custom plugin](custom-plugin-create.md)
 + [Using an Amazon Q Business custom plugin](using-custom-plugin.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

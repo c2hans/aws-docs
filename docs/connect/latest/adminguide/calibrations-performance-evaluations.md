@@ -85,3 +85,7 @@ Use the following procedure to perform evaluations as a part of a calibration se
 Amazon Connect Customer notifies users participating in calibration sessions through email (for example, if a user is added as a participant, if there is a change to the due date). If a user managing a calibration session has added themselves as the **expert** participant, then they would also receive emails. The email contains a link to the contact which is being used for calibration. Note that in order for users to receive email notifications, you need to assign emails to the users on Connect Customer. For more information, see [Add users to Connect Customer](user-management.md).
 
 As a manager setting up a calibration, you can copy the contact ID to search for the contact on which the calibration session was setup. Note that if you have not added yourself as an expert or if user emails are not setup within Connect Customer, you will not receive an email containing a link to the contact on which the calibration session was setup.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

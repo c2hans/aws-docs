@@ -15,3 +15,7 @@ Salesforce Marketing Cloud Account Engagement is a marketing automation solution
 + [Reading from Salesforce Marketing Cloud Account Engagement entities](salesforce-marketing-cloud-account-engagement-reading-from-entities.md)
 + [Salesforce Marketing Cloud Account Engagement connection options](salesforce-marketing-cloud-account-engagement-connection-options.md)
 + [Limitations and notes for Salesforce Marketing Cloud Account Engagement connector](salesforce-marketing-cloud-account-engagement-connector-limitations.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

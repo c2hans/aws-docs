@@ -36,3 +36,7 @@ When you move an account between OUs, the controls for the destination OU are ap
 + *For controls implemented with CloudFormation hooks:* This behavior  depends on the status of controls in the new OU.
   + *If the destination OU has no hook-based controls active:* The old  controls remain active for the moved account, unless you remove them  manually.
   + *If the destination OU has hook controls active:* The old controls are  removed and the controls in the destination OU are applied to the  account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

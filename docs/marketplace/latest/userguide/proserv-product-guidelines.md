@@ -53,3 +53,7 @@ All professional services products must adhere to the following architecture gui
   + Provide additional documentation including a description of all provisioned AWS services, IAM policy statements, and how an IAM role or user is deployed and used in the customer account.
   + Include a notification in the product description that explains that if the customer incurs additional AWS infrastructure costs, separate from their AWS Marketplace transaction, they're responsible for paying additional infrastructure charges.
   + If your product deploys an agent, provide instructions to the customer that describe how to deploy the agent in their AWS account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

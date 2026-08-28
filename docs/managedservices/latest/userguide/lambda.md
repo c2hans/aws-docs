@@ -30,3 +30,7 @@ To deploy a Lambda function in a core account, use the following guidelines:
 + Make sure that SSPS for AWS Lambda is onboarded.
 + There are no specific restrictions prohibiting this deployment under the AMS responsibilities, as long as your AMS resources are protected and compliant.
 + If you want AMS to create the Lambda function, then you must first use the SSPS role provided for AWS Lambda. Then, if you still want AMS assistance to deploy or support the function, contact your CA and start the out of scope (OOS) process.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

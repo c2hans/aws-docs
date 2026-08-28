@@ -16,3 +16,7 @@ The topics in this section describe how to set up and manage the virtual machine
 + [Configuring paravirtualization on a VMware host](SetParaVirtualization-common.md) - Learn about how you can configure the VMware host platform for your Storage Gateway appliance to use paravirtual Internet Small Computer System Interface Protocol (iSCSI) controllers.
 + [Configuring network adapters for your gateway](NICConfiguring-common.md) - Learn about how you can reconfigure your gateway to use the VMXNET3 (10 GbE) network adapter, or to use more than one network adapter so that it can be accessed fron nultiple IP addresses.
 + [Using VMware vSphere High Availability with Storage Gateway](vmware-ha.md) - Learn about how to protect your storage workloads against hardware, hypervisor, or network failures by configuring Storage Gateway to work with VMware vSphere High Availability.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ These features distribute processing across the extra CPU cores available on the
 **Recommended monitoring approach**
 
 We recommend using `EngineCPUUtilization` rather than `CPUUtilization` for monitoring. `EngineCPUUtilization` measures the main engine thread's performance and accurately reflects whether your instance is approaching its processing limits. `CPUUtilization` may vary across engine versions and node types due to changes in how enhanced I/O features utilize available cores, making it an unreliable metric for capacity planning.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -161,3 +161,7 @@ If you want to query the database for inspections conducted within an `inspectio
 After you configure the compound beacon, create a secondary index that specifies the compound beacon as the sort key. Use this secondary index to perform queries for inspections conducted on specific dates by a specific inspector. For example, you can query the database for a list of all units inspected on the same date. Or, you can query the database for a list of all inspections performed on a specific unit between a given range of inspection dates.
 
 For help configuring compound beacons, see [Configuring compound beacons](configure-beacons.md#config-compound-beacons).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ If the creation of the S3 event integration failed, the status of the integratio
 If data from a COPY JOB doesn't appear, check the following.
 + Query SYS\_COPY\_JOB\_DETAIL to view if the Amazon S3 file has been loaded, whether its pending ingestion, or there is an error. For more information, see [SYS\_COPY\_JOB\_DETAIL](SYS_COPY_JOB_DETAIL.md).
 + Consult STL\_ERROR or SYS\_COPY\_JOB\_INFO if the Amazon S3 file is not there or there is unexpected wait time. Look for credential errors or anything that suggests the integration is inactive. For more information, see [STL\_ERROR](r_STL_ERROR.md) and [SYS\_COPY\_JOB\_INFO](SYS_COPY_JOB_INFO.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

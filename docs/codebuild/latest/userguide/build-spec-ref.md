@@ -705,3 +705,7 @@ The following table lists the buildspec versions and the changes between version
 | --- | --- |
 | 0.2 |  +   `environment_variables` has been renamed to `env`.  <br />+   `plaintext` has been renamed to `variables`.  <br />+   The `type` property for `artifacts` has been deprecated.  <br />+  In version 0.1, AWS CodeBuild runs each build command in a separate instance of the default shell in the build environment. In version 0.2, CodeBuild runs all build commands in the same instance of the default shell in the build environment.   |
 | 0.1 | This is the initial definition of the build specification format. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

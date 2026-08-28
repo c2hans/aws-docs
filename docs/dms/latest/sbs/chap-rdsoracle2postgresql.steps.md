@@ -16,3 +16,7 @@ The following steps provide instructions for migrating an Oracle database to a P
 + [Step 6: Create AWS DMS Source and Target Endpoints](chap-rdsoracle2postgresql.steps.createsourcetargetendpoints.md)
 + [Step 7: Create and Run Your AWS DMS Migration Task](chap-rdsoracle2postgresql.steps.createmigrationtask.md)
 + [Step 8: Cut Over to PostgreSQL](chap-rdsoracle2postgresql.steps.cutover.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

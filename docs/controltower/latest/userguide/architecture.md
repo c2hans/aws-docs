@@ -43,3 +43,7 @@ For detailed information about customizing the configuration package, refer to [
 When a new account is created in AWS Control Tower, a [lifecycle event](lifecycle-events.md) can invoke the AWS CodePipeline workflow. You can customize the configuration package through this workflow, which consists of an [Amazon EventBridge](https://aws.amazon.com/eventbridge/) event rule, an [Amazon Simple Queue Service](https://aws.amazon.com/sqs/) (Amazon SQS) first-in first-out (FIFO) queue, and an [AWS Lambda](https://aws.amazon.com/lambda/) function.
 
 When the Amazon EventBridge event rule detects a matching lifecycle event, it passes the event to the Amazon SQS FIFO queue, invokes the AWS Lambda function, and invokes the code pipeline to perform downstream deployment of stack sets, SCPs, and RCPs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ To serve content with copyright protection, select **Enable encryption ** and co
    ```
 
 1. For **System IDs**, enter unique identifiers for your streaming protocol and DRM system. Provide up to three IDs for CMAF, two IDs for DASH, and exactly one for the other streaming protocols. If you provide more than one system ID, enter one per line and choose **Add**. For a list of common system IDs, see [DASH-IF System IDs](https://dashif.org/identifiers/content_protection/). If you don't know your IDs, ask your DRM solution provider.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

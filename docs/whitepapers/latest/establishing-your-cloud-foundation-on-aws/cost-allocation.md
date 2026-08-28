@@ -14,3 +14,7 @@ Creating categories to consolidate groups of resources based on your business ne
 Leveraging infrastructure as code to deploy infrastructure and resources for your workloads will allow you to consistently apply tags from your tagging dictionary, avoid untagged resources, and enforce your tagging policy to ensure the cloud financial management capability allows you to allocate costs for your infrastructure when needed.
 
 With the appropriate mechanisms in place, the Cost Allocation methods allow you to carve out material cloud charges, including commitment purchases, standalone, and shared resources. For example, networking, log retention and archival, security tools, and operational tools charges. Establishing chargeback mechanisms will allow you to report costs incurred by different business units, products, and teams.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

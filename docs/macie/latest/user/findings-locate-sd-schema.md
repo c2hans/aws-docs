@@ -274,3 +274,7 @@ The following example shows the structure of a `Record` object that specifies th
 ```
 
 In the preceding example, the finding indicates that Macie detected sensitive data in the third value (line) in the file. In that line, the occurrence is in a field named `key`, which is a child of an object named `access`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

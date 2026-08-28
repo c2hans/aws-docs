@@ -12,6 +12,8 @@ After the AWS Config connector is set up, create the Systems Manager Cloud Conne
 **To create a Systems Manager Cloud Connector**
 
 1. Run the following command. Replace the placeholder values with your Azure tenant ID, the Systems Manager application (client) ID, subscription IDs, the Systems Manager Azure federation role ARN, and the AWS Config connector ARN from Step 1.
+**Create the federation role before you run this command**
+Before you run this command, the Systems Manager Azure federation role that `--role-arn` identifies must already exist. Its trust policy must also allow the Systems Manager service principal (`ssm.amazonaws.com`) to assume it. The AWS CLI and API do not create this role for you. If either requirement is not met, the command fails. The error message is `ValidationException: Nonexistent role or missing ssm service principal in trust policy`. Create the role first with the trust and permissions policies in [Azure federation role](cloud-connector-azure-federation-role.md). Use the same role name and ARN that you used for the federated identity credential subject in [Azure prerequisites](cloud-connector-prereqs-azure.md).
 
    ```
    aws ssm create-cloud-connector \
@@ -27,7 +29,7 @@ After the AWS Config connector is set up, create the Systems Manager Cloud Conne
                }
            }
        }' \
-       --role-arn "arn:aws:iam::{{ACCOUNT_ID}}:role/service-role/SSM-AzureRole-{{CONNECTOR_NAME}}-{{ID8}}" \
+       --role-arn "arn:aws:iam::{{ACCOUNT_ID}}:role/service-role/SSM-AzureRole-{{CONNECTOR_NAME}}" \
        --config-connector-arn {{CONFIG_CONNECTOR_ARN}}
    ```
 
@@ -41,3 +43,7 @@ After the AWS Config connector is set up, create the Systems Manager Cloud Conne
    aws ssm get-cloud-connector \
        --cloud-connector-id {{CLOUD_CONNECTOR_ID}}
    ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

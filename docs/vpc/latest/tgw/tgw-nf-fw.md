@@ -15,3 +15,7 @@ Before you can use a firewall attachment, you must first create the attachment i
 + [Accept or reject a transit gateway network function attachment](accept-reject-firewall-attachment.md)
 + [View network function attachments](view-nf-attachment-nm.md)
 + [Route traffic through a transit gateway network function attachment](route-traffic-nf-attachment.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

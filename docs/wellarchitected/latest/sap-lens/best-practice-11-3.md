@@ -50,3 +50,7 @@ You should consider the following approaches for ensuring that you are protected
  **Suggestion 11.3.6 – Identify dependencies beyond the SAP workload in AWS**
 
 Understand the underlying dependencies for your SAP business processes, including shared services and supporting components or systems. Some examples include Active Directory, DNS, identity providers, SaaS services, and on-premises systems. Assess the impact of failure and the required mitigations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

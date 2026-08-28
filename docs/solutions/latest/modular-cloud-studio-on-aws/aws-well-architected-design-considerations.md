@@ -65,3 +65,7 @@ This section describes how we architected this solution using the principles and
 + You can use shared file systems or storage such as Amazon FSx for Windows File Server to access common data, avoid data duplication, and allow for more efficient infrastructure for your workloads.
 + The modular design of MCS helps you to size cloud resources to match the needs of a specific project, lower a workload’s environmental impact, reduce costs, and maintain performance benchmarks.
 + Using managed services supported in MCS shifts the responsibility to AWS, which has insights across millions of customers that can help drive new innovations and efficiencies. Managed services also distribute the environmental impact of the service across many users because of the multi-tenet control planes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

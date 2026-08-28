@@ -42,3 +42,7 @@ After you install the firmware, you must reboot each node. For more information,
 You might have custom files in `/opt/elemental_se/scripts` on the node. These are files that you created. They aren't part of the installation of the Conductor File or AWS Elemental Server software, and they aren't backed up and restored.
 
 Copy these files to storage off the node, so that you can copy the files back to the node after you've upgraded it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor File. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cf2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

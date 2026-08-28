@@ -490,3 +490,7 @@ Keep the following best practices in mind when using DPU data from `EXPLAIN ANAL
 + **Focus on transaction efficiency:** Since minimums apply at the transaction level, batch related operations together to amortize minimum charges.
 + **Use EXPLAIN ANALYZE VERBOSE during development:** Run `EXPLAIN ANALYZE VERBOSE` on critical queries during development to understand their cost characteristics. When running a proof of concept to evaluate costs, test against tables with representative data volumes and distributions — estimates based on empty or sparsely populated tables will not reflect production costs. For details, see [Using EXPLAIN ANALYZE VERBOSE for cost awareness](#billing-explain-analyze).
 + **Set CloudWatch alarms:** Create alarms on DPU metrics to get notified of unexpected usage spikes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,3 +42,7 @@ You can create a support case for account and billing support, and technical sup
 + [AWS Support App in Slack commands](support-app-commands.md)
 + [View AWS Support App correspondences in the AWS Support Center Console](view-slack-updates-in-support-center.md)
 + [Creating AWS Support App in Slack resources with AWS CloudFormation](creating-resources-with-cloudformation.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

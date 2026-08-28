@@ -27,3 +27,7 @@ The metadata is associated with individual outputs within the output group. You 
 + [Passing through ID3 metadata](enable-passthrough-id3.md)
 + [Inserting ID3 timed metadata when creating the MediaLive channel](insert-timed-metadata.md)
 + [Inserting ID3 metadata using the schedule](insert-id3-metadata-via-schedule.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

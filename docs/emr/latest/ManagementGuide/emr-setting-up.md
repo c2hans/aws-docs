@@ -29,3 +29,7 @@ To authenticate and connect to the nodes in a cluster over a secure channel usin
 <a name="emr-setting-up-next-steps"></a>
 + For guidance on creating a sample cluster, see [Tutorial: Getting started with Amazon EMR](emr-gs.md).
 + For more information on how to configure a custom cluster and control access to it, see [Plan, configure and launch Amazon EMR clusters](emr-plan.md) and [Security in Amazon EMR](emr-security.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

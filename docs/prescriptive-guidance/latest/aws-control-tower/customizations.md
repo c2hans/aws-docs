@@ -37,3 +37,7 @@ In AWS Landing Zone, you could deploy resources using AWS CloudFormation stack s
    + Make sure to upload the policies to the policies folder in the main folder, and confirm that the correct path is mentioned in the manifest file.
 
 1. Zip the custom-control-tower-configuration folder, and upload it to the S3 bucket from which you downloaded it. This will start the pipeline and apply the baselines to the accounts or OUs that you specified.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

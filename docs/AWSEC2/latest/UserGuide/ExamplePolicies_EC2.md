@@ -1838,3 +1838,7 @@ The following policy specifies that if this policy is applied to a role, and the
 <a name="iam-example-ebs"></a>
 
 For example policies for working with Amazon EBS volumes and snapshots, see [Identity-based policy examples for Amazon EBS](https://docs.aws.amazon.com/ebs/latest/userguide/security_iam_id-based-policy-examples.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

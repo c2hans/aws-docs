@@ -44,3 +44,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-snapch
 1.  Select any [ members you’ve invited](https://businesshelp.snapchat.com/s/article/manage-members?language=en_US) to your business to add to the ad account. For more information about the roles and permissions that can be assigned, see [ Roles and Permissions Overview](https://businesshelp.snapchat.com/s/article/roles-permissions?language=en_US). Members added will then be able to log in to Ads Manager and access this ad account. When you’re done, save your members.
 
  For more information about ad accounts, see [https://businesshelp.snapchat.com/s/article/roles-permissions?language=en_US](https://businesshelp.snapchat.com/s/article/roles-permissions?language=en_US)https://businesshelp.snapchat.com/s/article/roles-permissions?language=en\_US
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

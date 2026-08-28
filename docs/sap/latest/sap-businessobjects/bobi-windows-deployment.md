@@ -191,3 +191,7 @@ Application Load Balancer cannot route fields with special characters (such as, 
 1. Enable Secure Sockets Layer (SSL) communications for SAP BOBI Platform by following the instructions in the [Business Intelligence Platform Administrator Guide](https://help.sap.com/http.svc/rc/ec7df5236fdb101497906a7cb0e91070/4.2.6/en-US/sbo42sp6_bip_admin_en.pdf). See also: [Enabling SSL in BI Platform 4.2 SP05](https://community.sap.com/t5/technology-blog-posts-by-sap/enabling-ssl-in-bi-platform-4-2-sp05/ba-p/13322029) on the SAP Blog.
 
 1. (Optional) Create a CNAME in Amazon Route 53 for the Application Load Balancer DNS name. Use this CNAME to access SAP BOBI Platform.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

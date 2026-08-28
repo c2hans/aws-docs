@@ -89,3 +89,7 @@ In this task, you will create an S3 access grants instance, register a location,
 <a name="conclusion"></a>
 
 In this task, you created an S3 Access Grants instance, registered a location, and set up an access grant for the S3 bucket you created in the previous task.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

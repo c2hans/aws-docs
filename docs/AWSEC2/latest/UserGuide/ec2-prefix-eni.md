@@ -58,3 +58,7 @@ Take the following into consideration when you use prefixes:
 + You must configure your operating system to work with network interfaces with prefixes. Note the following:
   + Some Amazon Linux AMIs contain additional scripts installed by AWS, known as `ec2-net-utils`. These scripts optionally automate the configuration of your network interfaces. They are for use only on Amazon Linux.
   + For containers, you can use a Container Network Interface (CNI) for the Kubernetes plug-in, or `dockerd` if you use Docker to manage your containers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

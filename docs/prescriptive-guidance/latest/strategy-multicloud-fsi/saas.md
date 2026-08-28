@@ -18,3 +18,7 @@ Many SaaS providers offer services that are hosted on another CSP's infrastructu
 + Are my customers or internal users sensitive to whether my systems are colocated near our SaaS partners?
 
 Align your SaaS providers and CSPs with your requirements. Your SaaS products should both speed up your business outcomes and reduce operational impact through cloud-native colocation where appropriate.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

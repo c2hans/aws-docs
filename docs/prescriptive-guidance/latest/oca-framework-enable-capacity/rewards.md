@@ -79,3 +79,7 @@ The rewards and recognition process includes these details:
 + Allocate a budget for rewards and recognition.
 
 A well-designed rewards and recognition program drives cultural change by highlighting key behaviors and reinforcing them consistently. This approach helps create organizational pull for cloud transformation and supports long-term adoption of new ways of working. By following these best practices and steps, organizations can effectively implement a program that measurably affects behavior and improves performance results in support of their cloud transformation initiative.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,3 +39,7 @@ If you use your AWS Builder ID to sign into AWS using our new AWS experience and
 + Can be used to obtain AWS IAM credentials to access the AWS Management Console, AWS CLI, AWS SDKs, or AWS Toolkit.
 
 Your AWS Builder ID will be the resource container with contact and payment information for all your projects. You can use your AWS Builder ID to sign into the AWS Management Console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

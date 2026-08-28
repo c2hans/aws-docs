@@ -49,3 +49,7 @@ source_url: https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/babelfi
 | Deny user or members of a custom database role to do DMLs in a database  |  db\_denydatawriter fixed database role isn't currently supported.  |
 | Allow login to only KILL any database connection  |  processadmin fixed server role isn't currently supported.  |
 | Allow login to only add or remove linked servers  |  setupadmin fixed server role isn't currently supported.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

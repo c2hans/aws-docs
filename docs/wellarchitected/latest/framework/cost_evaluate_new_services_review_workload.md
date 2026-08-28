@@ -37,3 +37,7 @@ AWS is constantly adding new features so you can experiment and innovate faster 
 +  [AWS - Back to Basics](https://aws.amazon.com/architecture/back-to-basics/)
 +  [AWS - All-In series](https://aws.amazon.com/architecture/all-in-series/)
 +  [How to Build This](https://aws.amazon.com/architecture/how-to-build-this/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

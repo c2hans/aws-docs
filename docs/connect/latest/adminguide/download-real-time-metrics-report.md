@@ -22,3 +22,7 @@ The following image shows real-time metrics in a Queue table. All times in the o
 ![Data in a queue table and the same data in a CSV file.](http://docs.aws.amazon.com/connect/latest/adminguide/images/example-downloaded-metrics-report.png)
 
 You can convert the seconds to minutes using an Excel formula. Alternatively, if you have a short report, you can copy and paste the data from Connect Customer to Excel and it will preserve the format.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -174,3 +174,7 @@ The `EndpointConfiguration` nested dictionary contains the instance type (`Insta
 The `Metrics` nested dictionary contains information about the estimated cost per hour (`CostPerHour`) for your real-time endpoint in US dollars, the estimated cost per inference (`CostPerInference`) in US dollars for your real-time endpoint, the expected maximum number of `InvokeEndpoint` requests per minute sent to the endpoint (`MaxInvocations`), and the model latency (`ModelLatency`), which is the interval of time (in milliseconds) that your model took to respond to SageMaker AI. The model latency includes the local communication times taken to send the request and to fetch the response from the container of a model and the time taken to complete the inference in the container.
 
 The `EndpointPerformances` nested dictionary contains the name of your existing endpoint on which the recommendation job was run (`EndpointName`) and the performance metrics for your endpoint (`MaxInvocations` and `ModelLatency`).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

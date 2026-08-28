@@ -87,3 +87,7 @@ The JSON fields are as follows:
 The model evaluation JSON format is the same as the JSON file in which Lookout for Equipment returns inference results. For more information, see [Reviewing inference results in a JSON file](understanding-results-json.md).
 
 If you have previously created pointwise model diagnostics, you can get the Amazon S3 location of the model diagnostics files by calling the [DescribeModel](API_DescribeModel.md) or [DescribeModelVersion](API_DescribeModelVersion.md) operations and checking the `ModelDiagnosticsOutputConfiguration` response field. If you have not previously created an evaluation for the model, the operations don't return the `ModelDiagnosticsOutputConfiguration` field.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

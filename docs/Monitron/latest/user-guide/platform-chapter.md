@@ -41,3 +41,7 @@ To manually install the latest updates:
 ![Modal dialog confirming successful application update to version 1.0.0 with Done button.](http://docs.aws.amazon.com/Monitron/latest/user-guide/images/app-update-success-screen.png)
 **Note**
  You will not see the success message if the update happens automatically, or if you initiate the update process within the App Store or Google Play.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

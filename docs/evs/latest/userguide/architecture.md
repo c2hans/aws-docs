@@ -85,3 +85,7 @@ Modification of these resources outside of the Amazon EVS console and API could 
 + Amazon EVS elastic network interfaces that enable connectivity to your VCF appliances and hosts.
 + Amazon EVS ESX hosts that run on Amazon EC2 bare metal instances. For more information, see [Amazon EVS host](concepts.md#concepts-evs-host).
 + Amazon EVS VLAN subnets that connect your VPC to VCF appliances. For more information, see [Amazon EVS VLAN subnet](concepts.md#concepts-evs-network).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

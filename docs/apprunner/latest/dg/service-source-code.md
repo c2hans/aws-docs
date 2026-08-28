@@ -263,3 +263,7 @@ If your application environment has either of these two requirements, then you'l
 
 **Running the `build` commands twice**
 + The [original App Runner build](#service-source-code.build-detail.v1) runs the `build` commands twice, first in **Step 2**, then again in **Step 5**. The revised App Runner build remedies this redundancy and only runs the `build` commands one time. If your application should have an unusual requirement for the `build` commands to run twice, the revised App Runner build provides the option to specify and execute the same commands again using the `pre-run` parameter. Doing so retains the same double build behavior.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

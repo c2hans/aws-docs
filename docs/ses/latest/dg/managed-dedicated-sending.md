@@ -212,3 +212,7 @@ When you delete a managed IP pool, all of its allocated IP addresses are automat
 1. In the pop-up modal, you'll have the opportunity to confirm your choice by selecting **Delete**, or **Cancel** to keep your managed pool.
 **Note**
 If you only have one managed pool or you're removing your last managed pool, the pop-up modal will remind you that by deleting your remaining managed pool, you'll be opting out of the dedicated IPs (managed) feature and will no longer be charged for it. You will be required to enter `Disable` in the confirmation field before you can choose **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

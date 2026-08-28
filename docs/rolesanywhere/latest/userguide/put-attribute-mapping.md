@@ -44,3 +44,7 @@ $aws rolesanywhere put-attribute-mapping \
 1. Choose a certificate field from either `Subject`, `Issuer`, or `Subject Alternative Name` in the dropdown list, and enter the specifier
 
 1. Select **Save changes** to add attribute mappings.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,3 +65,7 @@ The Amazon DCV Web Client SDK supports the following web browsers:
 <a name="versioning"></a>
 
 The Amazon DCV Web Client SDK version is defined in the following format: `{{major}}.{{minor}}.{{patch}}`. The versioning convention generally adheres to the [ semantic versioning model](https://semver.org/). A change in the major version, such as from `1.x.x` to `2.x.x`, indicates that breaking changes that might require code changes and a planned deployment have been introduced. A change in the minor version, such as from `1.1.x` to `1.2.x`, is backwards compatible, but might include deprecated elements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

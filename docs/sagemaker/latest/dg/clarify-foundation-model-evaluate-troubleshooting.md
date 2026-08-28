@@ -131,3 +131,7 @@ Customer Error: Your input dataset could not be validated. Your dataset can have
 + If you specify the `responses` key in *any* JSON object, it must be present in*all* JSON objects.
 + The maximum number of objects in the `responses` key is 1. If you have responses from multiple models you want to compare, each require a separate BYOI dataset.
 + If you specify the `responses` key in *any* JSON object, it must also contain the `modelIdentifier` and `text` keys in all *all* `responses` objects.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

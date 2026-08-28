@@ -152,3 +152,7 @@ The `eventBridgePutEvents` step type can appear in multi-step triggers. A common
 |  `eventBridgeConfig.detailType`  | Yes | Event detail type. Downstream rules match on this value. |
 |  `eventBridgeConfig.securityConfig`  | Yes | Authentication configuration. Must use `AssumeRole` type. |
 |  `payload.fields`  | No | Array of field names to include in the event detail. If omitted, all mapped fields are included. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -119,3 +119,7 @@ In this procedure, you apply an update to fix the uncovered issues.
 1. Follow the steps in [Step 4: Locate and analyze generated findings](#analyzefinding_ubuntu) to see the findings that result from this subsequent run of the **MyFirstTemplateUbuntu** template.
 
    The package update should have resolved the findings from the first run of the template.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

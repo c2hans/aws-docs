@@ -243,3 +243,7 @@ Complete the following tasks before you create a multi-variant feature flag by u
    The `service_returned_content_file` contains your configuration data that includes some AWS AppConfig generated metadata.
 **Note**
 When you create the hosted configuration version, AWS AppConfig verifies that your data conforms to the [`AWS.AppConfig.FeatureFlags`](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-type-reference-feature-flags.html) JSON schema. AWS AppConfig additionally validates that each feature flag attribute in your data satisfies the constraints you defined for those attributes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -126,3 +126,7 @@ For a list of supported codecs and their performance characteristics, see [Suppo
 When you choose an index codec, consider the following:
 + To avoid the challenges of changing the codec setting of an existing index, test a representative workload in a non-production environment before using a new codec setting. For more information, see [Changing an index codec](https://opensearch.org/docs/latest/im-plugin/index-codecs/#changing-an-index-codec).
 + You can't use [Zstandard compression codecs](https://opensearch.org/docs/latest/im-plugin/index-codecs/) (`"index.codec": "zstd"` or `"index.codec": "zstd_no_dict"`) for [k-NN](https://opensearch.org/docs/latest/search-plugins/knn/index/) or [Security Analytics](https://opensearch.org/docs/latest/security-analytics/index/) indexes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

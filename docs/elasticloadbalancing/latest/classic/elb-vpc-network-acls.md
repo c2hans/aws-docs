@@ -40,3 +40,7 @@ The following are the recommended outbound rules for an internal load balancer.
 | {{VPC CIDR}} | TCP | {{instance listener}} | Allow outbound traffic to the VPC CIDR on the instance listener port |
 | {{VPC CIDR}} | TCP | {{health check}} | Allow outbound traffic to the VPC CIDR on the health check port |
 | {{VPC CIDR}} | TCP | 1024-65535 | Allow outbound traffic to the VPC CIDR on the ephemeral ports |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

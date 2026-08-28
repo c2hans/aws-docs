@@ -26,3 +26,7 @@ Establishing a cloud foundation on AWS requires guidance tailored to your busine
 Building a foundational environment on AWS can be done with a standard, prescriptive set of capabilities across [different functional areas](capabilities.md#capabilities-definitions). These capabilities can be used as a structured way to quickly build or expand your AWS Cloud environment, and include scenarios and corresponding guidance.
 
 You can adopt and implement capabilities according to your operational and governance needs. As your business requirements mature, the capability-based approach can be used as a mechanism to verify that your cloud environment is ready to support your workloads and scale as needed. This approach enables you to confidently establish your cloud environment for your builders and your business.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

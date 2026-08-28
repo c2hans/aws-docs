@@ -44,3 +44,7 @@ Do not assume that the semantics of elements that Amazon Redshift and PostgreSQL
 + The RULE and TRIGGER permissions.
 
   Amazon Redshift grants or revokes these permissions when you run GRANT ALL or REVOKE ALL, but the presence or absence of the RULE and TRIGGER permissions doesn’t affect the grantee’s access permissions in any way.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

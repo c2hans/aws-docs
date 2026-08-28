@@ -22,3 +22,7 @@ For products that are restricted to specific AWS Regions, an account you share y
 Before you can share licenses in AWS Marketplace you must set up license sharing for your organization. Complete the following tasks to set up license sharing for your organization:
 + Give AWS Marketplace permission to manage licenses on your behalf so that it can create the associated license grants when you purchase or share your licenses. For more information, see [Service-linked role to share entitlements for AWS Marketplace](buyer-using-service-linked-roles-license-manager.md).
 + Set up AWS License Manager for first use. For more information, see [ Getting started with AWS License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/getting-started.html) in the *AWS License Manager User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

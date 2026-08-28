@@ -86,3 +86,7 @@ The availability of operations depends on whether you are using the SageMaker ge
 | Band Stacking | Combine multiple spectral bands to create a single image. | Notebook |
 | Band Math / Spectral Index | Obtain a combination of spectral bands that indicate the abundance of features of interest. | UI, Notebook |
 | Land Cover Segmentation | Identify land cover types such as vegetation and water in satellite imagery. | UI, Notebook |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

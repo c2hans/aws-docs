@@ -22,3 +22,7 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md)
 + [Security best practices](security-best-practices.md)
 + [Using service-linked roles for AWS End User Messaging Social](using-service-linked-roles.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

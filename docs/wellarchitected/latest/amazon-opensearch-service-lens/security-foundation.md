@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 + [AOSSEC01-BP02 Activate node-to-node encryption](aossec01-bp02.md)
 + [AOSSEC01-BP03 Enable encryption at rest](aossec01-bp03.md)
 + [AOSSEC01-BP04 Encrypt slow and error logs in Amazon CloudWatch to protect sensitive information](aossec01-bp04.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -76,3 +76,7 @@ If RDS Extended Support is available for an engine version, then the response in
 If RDS Extended Support isn't available for an open source engine version (MariaDB, MySQL, and PostgreSQL), then the response only includes the parameter `SupportedEngineLifeCycles` as an array with a single object. This object includes the start and end dates for RDS standard support.
 
 If the engine version is for a commercial engine (Db2, SQL Server, and Oracle), then the response doesn't include the parameter `SupportedEngineLifeCycles`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ Every line in the log files uses the following format.
 ```
 
 Timestamps refer to the UTC time. Log level is one of `error`, `warn`, `info`, `debug`, `trace` and it is an indication of the importance of the message. By default, `debug` and `trace` messages are not included in the logs to reduce the verbosity, but while troubleshooting it is recommended to turn them on by changing the `level` parameter in the configuration. Consult the [configuration file reference](config-reference.md#config-log) for a list of parameters that affect the logging behavior.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

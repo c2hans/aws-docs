@@ -91,3 +91,7 @@ When the developer bootloader shim starts, it blinks "DEVELOPER MODE" in Morse c
 To restore your device to its original factory configuration, follow the directions in the [Update and restore your vehicle](update-and-restore-vehicle.md) chapter.
 
 For more information about the developer bootloader shim, see [Custom OS installation now available on AWS DeepRacer devices](https://aws.amazon.com/blogs/machine-learning/custom-os-installation-now-available-on-aws-deepracer-devices/) on the AWS Machine Learning Blog.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

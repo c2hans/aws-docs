@@ -60,6 +60,14 @@ Additionally, you will need one or more relevant permissions to view specific re
 ![The Tag filter with All accessible tags option selected.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dashboard-tbac-all-accessible-tags.png)
 + Dashboard widgets that do not have a default groupings are filtered by a default resource tag filter. The following table shows the resource type applied as a default filter for each widget:
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/dashboard-tag-based-access-control.html)
++ The following metrics do not support filtering or grouping by routing profile when the user's access to routing profiles is tag restricted. A widget or report that filters or groups one of these metrics by routing profile returns no data, even when your security profile permissions and resource tags are configured correctly. To view the data, filter or group by queue instead.
+  + **Contacts in queue**
+  + **Oldest contact age**
+  + **Contacts scheduled**
+  + **Contacts queued (enqueue timestamp)**
+  + **Contacts handled (connected to agent timestamp)**
+
+  In the Real-time metrics report, **Contacts in queue**, **Oldest contact age**, and **Contacts scheduled** are named **In queue**, **Oldest**, and **Scheduled**, respectively.
 
 ## How to transition to tag-based access control
 <a name="dashboard-tbac-transition"></a>
@@ -74,3 +82,7 @@ OR
 
 OR
 + Create a new report that includes the resources you have access to.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

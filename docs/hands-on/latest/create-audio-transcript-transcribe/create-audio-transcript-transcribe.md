@@ -193,3 +193,7 @@ In this step, you will delete the sample file from your S3 bucket to avoid unnec
 <a name="conclusion"></a>
 
 As you have seen in this tutorial, Amazon Transcribe enables voice to text at scale. Use Amazon Transcribe for a wide range of audio or videos files, such as customer service calls, business meetings, broadcast TV, and on-demand videos.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

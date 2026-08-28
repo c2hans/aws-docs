@@ -97,3 +97,7 @@ To get notified about updates to this documentation, subscribe to the RSS feed.
 | [New AWS Region](https://docs.aws.amazon.com/general/latest/gr/datasync.html) | AWS DataSync is now available in the AWS GovCloud (US-West) Region. | June 11, 2019 |
 | [Support for filtering](https://docs.aws.amazon.com/datasync/latest/userguide/filtering.html) | You can now apply filters to transfer only a subset of the files in your source location when you transfer data from your source to your destination location. | May 22, 2019 |
 | [First release of AWS DataSync](#doc-history) | General release of the AWS DataSync service. | November 26, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -77,3 +77,7 @@ To build an architecture based on the preceding diagram, you must create a Direc
 The second architecture option uses a hosted private VIF and a virtual private gateway as the following diagram shows.
 
 To build an architecture based on the preceding diagram, you must create a hosted private VIF and share the VIF with Teradata VantageCloud Enterprise to establish connectivity. A private VIF is a network interface that enables you to use Direct Connect to connect with another AWS account, such as a Teradata VantageCloud Enterprise AWS account. Network egress fees apply on private VIFs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

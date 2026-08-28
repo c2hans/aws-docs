@@ -49,3 +49,7 @@ In the partial rule, OPA uses the `input.role` specified as part of the query to
 ```
 
 The output for Shirley, who has the `dataViewOnly` role, would contain a permissions button: `viewData`. The output for Alice, who has the `admin` role, would contain all of these permissions. These responses are returned to the UI when OPA is queried for `user_permissions`. The application can then use this response to hide or display the `viewUsersButton`, `viewDataButton`, `updateUsersButton`, and the `updateDataButton`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

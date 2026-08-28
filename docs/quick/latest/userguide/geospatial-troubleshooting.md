@@ -607,3 +607,7 @@ PO BOX zipcodes are not supported postal code formats. Union territory zip codes
 | Vietnam | 5 digit | 01106 |
 | Wallis and Futuna | 5 digit | 98600 |
 | Zambia | 5 digit | 10100 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

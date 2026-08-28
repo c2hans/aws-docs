@@ -162,3 +162,7 @@ You can easily delete the EC2 P4d cluster from the EC2 console and the FSx for L
 You have just launched a P4d instance in the EC2 UltraCluster. With this cluster you can run large scale distributed deep learning workflows with the best practices for compute and storage.
 
 EC2 UltraClusters is an optimized placement strategy for the EC2 P4d instances and FSx for Lustre file system. EC2 UltraClusters are supported in managed services such as Amazon Elastic Kubernetes Service (Amazon EKS). Follow [examples on Github](https://github.com/aws-samples/eks-efa-examples) **** to launch an EC2 UltraCluster with containers using Amazon EKS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

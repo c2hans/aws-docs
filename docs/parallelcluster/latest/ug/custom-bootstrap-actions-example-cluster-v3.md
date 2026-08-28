@@ -77,3 +77,7 @@ If the script was edited on Windows, line endings must be changed from CRLF to L
    + If you added custom actions to the `SlurmQueues` setting, check the `cloud-init.log` located at `/var/log/cloud-init.log` in a compute node. Use CloudWatch to view these logs.
 
    You can view both of these logs in the Amazon CloudWatch console. For more information, see [Integration with Amazon CloudWatch Logs](cloudwatch-logs-v3.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -87,3 +87,7 @@ How you enter an IDN depends on what you're creating (domain names, hosted zones
 + If you're using the Route 53 console to create hosted zones or records, you need to convert the domain name to Punycode before you enter the name in the applicable **Name** field. For information about online converters, perform an internet search on "punycode converter".
 
 If you're registering a domain name, note that not all top-level domains (TLDs) support IDNs. For a list of TLDs supported by Route 53, see [Domains that you can register with Amazon Route 53](registrar-tld-list.md). TLDs that don't support IDNs are noted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

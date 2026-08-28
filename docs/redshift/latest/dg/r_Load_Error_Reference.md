@@ -41,3 +41,7 @@ If any errors occur while loading data from a file, query the [STL\_LOAD\_ERRORS
 | 1224 | Input data not well formed JSON format for super data type. |
 | 8001 | COPY with MANIFEST parameter requires full path of an Amazon S3 object. |
 | 9005 | Invalid end key specified. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

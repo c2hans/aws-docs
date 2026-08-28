@@ -21,3 +21,7 @@ Accrued CPU burst capacity on a running instance does not expire.
 Lightsail instances receive additional CPU burst capacity at launch, this is called launch CPU burst capacity. Launch CPU burst capacity allows instances to burst immediately after launch before they have accrued additional burst capacity. Launch CPU burst capacity does not count towards the burst capacity limit. If your instance has not spent its launch CPU burst capacity, and remains idle over a 24-hour period while accruing more burst capacity, its CPU burst capacity (percentage) metric graph will appear as over 100%.
 
 Additionally, some Lightsail instances start in launch mode, which temporarily removes some of the performance limitations that are typically present on burstable instances. Launch mode allows you to run resource-intensive scripts at launch without affecting the overall performance of your instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

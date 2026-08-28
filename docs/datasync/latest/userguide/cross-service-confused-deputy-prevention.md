@@ -43,3 +43,7 @@ The following full example shows how you can use the `aws:SourceArn` and `aws:So
 For more example policies that show how you can use the `aws:SourceArn` and `aws:SourceAccount` global condition context keys with DataSync, see the following topics:
 + [Create a trust relationship that allows DataSync to access your Amazon S3 bucket](using-identity-based-policies.md#datasync-example1)
 + [Configure an IAM role to access your Amazon S3 bucket](create-s3-location.md#create-role-manually)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ Additionally, the model author can set a filter pattern in the privacy configura
 **Custom defined metrics**
 
 When you configure a model algorithm (either via the console or the `CreateConfiguredModelAlgorithm` API), the model author can provide specific metric names and regex statements to search for in the output logs. These can be viewed as the job progresses via CloudWatch Metrics in the `/aws/cleanroomsml/TrainedModels` namespace. When associating a configured model algorithm, the model author can set an optional noise level in the metrics privacy configuration to avoid outputting raw data while still providing visibility into custom metric trends. If a noise level is set, the metrics are published at the end of the job rather than in real time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

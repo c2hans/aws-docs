@@ -25,3 +25,7 @@ The following entities are required for EMR Studio to connect with Amazon EMR on
 The following diagram depicts the interactive endpoints architecture in Amazon EMR on EKS. An Amazon EKS cluster comprises the *compute* to run the analytic workloads, and the *interactive endpoint*. The Application Load Balancer controller runs in the `kube-system` namespace; the workloads and interactive endpoints run in the namespace that you specify when you create the virtual cluster. When you create an interactive endpoint, the Amazon EMR on EKS control plane creates the interactive endpoint deployment in the Amazon EKS cluster. Additionally, an instance of the application load balancer ingress is created by the AWS load balancer controller. The application load balancer provides the external interface for clients like EMR Studio to connect to the Amazon EMR cluster and run interactive workloads.
 
 ![Interactive endpoints architecture diagram](http://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/images/emr-on-eks-managed-endpoints-architecture.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

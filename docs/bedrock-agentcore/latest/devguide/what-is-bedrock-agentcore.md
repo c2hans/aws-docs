@@ -58,3 +58,7 @@ AgentCore offers flexible, consumption-based pricing with no upfront commitments
 If you are a first-time user of Amazon Bedrock AgentCore, we recommend that you begin by reading the following sections:
 +  [Get started with Amazon Bedrock AgentCore](agentcore-get-started-cli.md)
 +  [Understand the available interfaces for using Amazon Bedrock AgentCore](develop-agents.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -92,3 +92,7 @@ If you are using the AWS CLI or AWS API to specify a custom data identifier, you
    ```
 
 1. (Optional) Continue to add additional **custom data identifiers** to the `Configuration` block as needed. Data protection policies currently support a maximum of 10 custom data identifiers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

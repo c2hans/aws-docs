@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/enterprise-data-gover
  With a custom build Data Catalog, the overall tool and licensing cost is lower, but additional labor is required to acquire, ingest, and present the Data Catalog to users.
 
  Having third-party tools can shorten the metadata acquisition, processing, and presentation time, because it provides out-of-the-box capabilities to achieve these tasks. However, the overall tool and licensing cost is higher.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

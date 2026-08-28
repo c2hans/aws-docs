@@ -31,3 +31,7 @@ The safest way to share confidential information with AMS is through the AWS Sec
 1. Review and click **Store**, to save the secret.
 
 1. Reply to us in an AMS service request with the secret name and ARN, so we can identify and retrieve the secret. For information on creating service requests, see [Service Request Examples](https://docs.aws.amazon.com/managedservices/latest/userguide/serv-req-mgmt-examples.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

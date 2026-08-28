@@ -27,3 +27,7 @@ The `UserName` field contains the string `HIDDEN_DUE_TO_SECURITY_REASONS` when t
 We recommend you use `userId` and `identityStoreArn` for identifying the user behind IAM Identity Center CloudTrail events. If you need to use the `userName` field, you can use the `userName` under the `additionalEventData` element that's emitted once per successful sign-in.
 
 For additional information on how you can use the `UserName` field, refer to [Correlating user events within the same user session](sso-cloudtrail-use-cases.md#correlating-users).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

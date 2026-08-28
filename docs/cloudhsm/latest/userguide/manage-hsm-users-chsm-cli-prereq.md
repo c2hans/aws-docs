@@ -51,3 +51,7 @@ Before you use CloudHSM CLI to manage hardware security modules (HSM) users in A
 <a name="get-cli-users-cloudhsm-cli"></a>
 
 The latest version of CloudHSM CLI is available for HSM user management tasks for Client SDK 5. To download and install CloudHSM CLI, follow the instructions in [Install and configure CloudHSM CLI](gs_cloudhsm_cli-install.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

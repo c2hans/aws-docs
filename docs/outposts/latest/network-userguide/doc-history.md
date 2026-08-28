@@ -17,3 +17,7 @@ The following table describes the documentation updates for Outposts racks.
 | [Virtual interfaces (VIFs) and VIF Groups](https://docs.aws.amazon.com/outposts/latest/network-userguide/vif-vif-groups.html) | Local gateway VIFs (Virtual Interface) is a logical interface component of Outposts racks that sets up VLAN, IP, and BGP connectivity between an Outposts networking device and an on-premise networking device for local gateway connectivity. You must create local gateway VIFs and VIF groups. | May 5, 2025 |
 | [Updates to static stability](https://docs.aws.amazon.com/outposts/latest/network-userguide/outpost-maintenance.html#outpost-network-equipment-maintenance) | In the event that your network is interrupted, instance metrics and logs will be cached locally for up to 7 days. | May 1, 2025 |
 | [Initial release](#doc-history) | This is the initial release of AWS Outposts racks second generation for accelerated networking. | April 29, 2025 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

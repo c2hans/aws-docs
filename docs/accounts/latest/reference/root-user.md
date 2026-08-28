@@ -15,3 +15,7 @@ To avoid using the root user for everyday tasks, learn how to [set up an adminis
 Anyone who has root user credentials for your AWS account has unrestricted access to all the resources in your account, including billing information.
 
 You can [change](https://docs.aws.amazon.com/IAM/latest/UserGuide/root-user-password.html), or [reset the root user password](https://docs.aws.amazon.com/IAM/latest/UserGuide/reset-root-password.html), and [create](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user_manage_add-key.html), or [delete access keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_root-user_manage_delete-key.html) (access key IDs and secret access keys) for your root user. For help signing in using your root user, see [Sign in to the AWS Management Console as the root user](https://docs.aws.amazon.com/signin/latest/userguide/introduction-to-root-user-sign-in-tutorial.html) in the *AWS Sign-In User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

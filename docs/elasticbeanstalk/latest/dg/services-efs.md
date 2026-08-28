@@ -52,3 +52,7 @@ If you created an Amazon EFS file system that uses a configuration file as part 
 
 **Important**
 If you created an Amazon EFS file system that's outside of an Elastic Beanstalk environment and mounted it to the environment's instances, Elastic Beanstalk doesn't remove the file system when you terminate the environment. To ensure that your personal information isn't retained and avoid storage costs, delete the files that your application stored if you don't need them anymore. Alternatively, you can remove the entire file system.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

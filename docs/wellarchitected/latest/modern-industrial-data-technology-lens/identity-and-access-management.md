@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 + [MIDASEC02-BP02 Enable multi-factor authentication (MFA) and token authorization (TA)](midasec02-bp02.md)
 + [MIDASEC02-BP03 Use centralized access management tools](midasec02-bp03.md)
 + [MIDASEC02-BP04 Develop a mechanism for regular review of IAM roles and policies](midasec02-bp04.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

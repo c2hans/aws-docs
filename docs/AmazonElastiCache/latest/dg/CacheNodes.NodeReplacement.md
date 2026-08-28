@@ -135,3 +135,7 @@ If your shard or replication group already has five replicas, reverse steps 1 an
   1. In your application, replace the old node's endpoint with the new node's endpoint.
 
   1. If you disabled Multi-AZ at the start, re-enable it now. For instructions, see [Enabling Multi-AZ](AutoFailover.md#AutoFailover.Enable).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

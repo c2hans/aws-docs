@@ -136,3 +136,7 @@ Since it's just a reference, a component-model-based custom composite model has 
 If you want to add multiple instances of the same component to your asset model (for example, a CNC machine that has multiple servo motors), you can add multiple component-model-based custom composite models that each have their own name but which all reference the same `composedAssetModelId`.
 
 You can nest components within other components. To do so, you can add a component-model-based composite model, as shown in this example, to one of your component models.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

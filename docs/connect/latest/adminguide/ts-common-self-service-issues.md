@@ -13,3 +13,7 @@ If you are calling AI agents APIs directly from Lambda functions, you must packa
 **Symptoms**: You might experience parameter validation exceptions or request input parameters being silently ignored when using an outdated SDK version.
 
 To avoid API model drift, include the latest AWS SDK as a dependency in your deployment package or as a Lambda layer rather than relying on the SDK provided by the Lambda runtime. The steps to bundle the SDK vary by language. For example, for Node.js, see [Creating a deployment package with dependencies](https://docs.aws.amazon.com/lambda/latest/dg/nodejs-package.html#nodejs-package-create-dependencies). For other languages, refer to the corresponding Lambda deployment packaging documentation. For sharing the SDK across multiple functions, see [Lambda layers](https://docs.aws.amazon.com/lambda/latest/dg/chapter-layers.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

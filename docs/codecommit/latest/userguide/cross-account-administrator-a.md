@@ -144,3 +144,7 @@ After you have configured a policy, create a role that IAM users and groups in A
 1. Choose **Create role**.
 
 1. Open the role you just created, and copy the role ARN (for example, `arn:aws:iam::{{111122223333}}:role/{{MyCrossAccountRepositoryContributorRole}}`). You need to provide this ARN to the AccountB administrator.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

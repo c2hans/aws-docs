@@ -15,3 +15,7 @@ In this section, you will create an iOS application with the ability to search a
 + [Add an Amazon Location interactive map to your application](qs-ios-add-map.md)
 + [Add Amazon Location search to your application](qs-ios-add-search.md)
 + [Add Amazon Location tracking to your application](qs-ios-add-tracking.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

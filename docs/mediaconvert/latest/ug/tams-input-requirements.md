@@ -55,3 +55,7 @@ You cannot specify input clipping settings on TAMS inputs. MediaConvert automati
 
 **Zero-based timecode**
 The timecode source must be set to **Zero-based** or left unspecified. Other timecode sources interfere with the automatic clipping calculations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

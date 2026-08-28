@@ -40,3 +40,7 @@ CloudTrail provides a record of actions taken by a user, role, or an AWS service
 <a name="incident-response.xray"></a>
 
 X-Ray is an AWS service that gathers data about the requests that your application serves, and uses it to construct a service map that you can use to identify issues with your application and opportunities for optimization. You can use the AWS Elastic Beanstalk console or a configuration file to run the X-Ray daemon on the instances in your environment. For more information, see [Configuring AWS X-Ray debugging](environment-configuration-debugging.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

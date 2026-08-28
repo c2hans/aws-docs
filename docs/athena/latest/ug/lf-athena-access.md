@@ -22,3 +22,7 @@ The following diagram shows how credential vending works in Athena on a query-by
 1. Lake Formation issues credentials to Athena to use when reading data from Amazon S3 or catalog, along with the list of allowed columns.
 
 1. Athena uses the Lake Formation temporary credentials to query the data from Amazon S3 or catalog. After the query completes, Athena discards the credentials.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

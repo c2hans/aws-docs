@@ -107,3 +107,7 @@ A command execution timeout can be reported both by the cloud and the device. Af
 The device can override this status to a terminal status, such as `SUCCEEDED`, `FAILED`, or `REJECTED`. It can also report that a timeout occurred when running the command. In this case, the command execution status stays at `TIMED_OUT` but the fields of the `StatusReason` object are updated based on the information reported by the device. The command execution in the `TIMED_OUT` status now becomes terminal.
 
 For additional information, see [Command execution timeout considerations](https://docs.aws.amazon.com/iot/latest/developerguide/iot-remote-command-execution-start-monitor.html#iot-command-execution-timeout) in the *AWS IoT Core developer guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

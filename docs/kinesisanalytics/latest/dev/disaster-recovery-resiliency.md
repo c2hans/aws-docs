@@ -23,3 +23,7 @@ In addition to the AWS global infrastructure, Kinesis Data Analytics offers seve
 <a name="disaster-recovery"></a>
 
 Kinesis Data Analytics runs in a serverless mode, and takes care of host degradations, Availability Zone availability, and other infrastructure related issues by performing automatic migration. When this happens, Kinesis Data Analytics ensures that the application is processed without any loss of data. For more information, see [Delivery Model for Persisting Application Output to an External Destination](failover-checkpoint.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

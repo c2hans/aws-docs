@@ -428,3 +428,7 @@ namespace EC2SpotInstanceRequests
 ## Additional considerations
 <a name="tutor-spot-net-additional"></a>
 + After you run the tutorial, it's a good idea to sign in to the [Amazon EC2 console](https://console.aws.amazon.com/ec2/) to verify that the [Spot Instance request](https://console.aws.amazon.com/ec2/home#SpotInstances:) has been canceled and that the [Spot Instance](https://console.aws.amazon.com/ec2/v2/home#Instances) has been terminated.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

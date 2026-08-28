@@ -39,3 +39,7 @@ The following topics further describe the command-line tools available for manag
 + [AWS CloudHSM Command Line Interface (CLI)](cloudhsm_cli.md)
 + [AWS CloudHSM Management Utility (CMU)](cloudhsm_mgmt_util.md)
 + [AWS CloudHSM Key Management Utility (KMU)](key_mgmt_util.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -107,3 +107,7 @@ You can have valid credentials to authenticate your requests, but unless you hav
 The following sections describe how to manage permissions for ElastiCache. We recommend that you read the overview first.
 + [Overview of managing access permissions to your ElastiCache resources](IAM.Overview.md)
 + [Using identity-based policies (IAM policies) for Amazon ElastiCache](IAM.IdentityBasedPolicies.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

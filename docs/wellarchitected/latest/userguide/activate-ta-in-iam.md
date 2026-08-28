@@ -161,3 +161,7 @@ Additionally, you have the option to skip creating the permissions during the ro
    You should get a success message at the top of the page notifying you that the role has been created.
 
 1. To view the role and associated permissions policy, in the left navigation pane under **Access management**, choose **Roles** and search for the `WellArchitectedRoleForTrustedAdvisor-{{WORKLOAD_OWNER_ACCOUNT_ID}}` name. Select the name of the role to verify that the **Permissions** and **Trust relationships** are correct.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

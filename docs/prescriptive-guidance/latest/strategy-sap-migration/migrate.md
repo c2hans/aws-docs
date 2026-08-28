@@ -24,3 +24,7 @@ The following diagram provides a simplified example of the migrate phase (in gre
 For more information about this phase, read how the UK energy company Centrica [migrated their multibillion dollar enterprise](https://aws.amazon.com/partners/success/centrica-capgemini/) with the assistance of AWS Professional Services, as part of their digital transformation.
 
 You can also read how [Moderna Therapeutics Delivers used AWS for its SAP workloads](https://aws.amazon.com/solutions/case-studies/moderna-therapeutics/) to deliver mRNA drugs faster and at lower cost. Moderna received help from [AWS Professional Services](https://aws.amazon.com/professional-services/) consultants with life sciences expertise to build a fully validated SAP environment in the AWS Cloud.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

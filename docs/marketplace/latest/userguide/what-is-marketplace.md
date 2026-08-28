@@ -17,3 +17,7 @@ Eligible partners can programmatically list AWS Marketplace products outside of 
 The following video explains more about selling in AWS Marketplace.
 
 [![AWS Videos](http://img.youtube.com/vi/UjD-kMiVs0c/0.jpg)](http://www.youtube.com/watch?v=UjD-kMiVs0c)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

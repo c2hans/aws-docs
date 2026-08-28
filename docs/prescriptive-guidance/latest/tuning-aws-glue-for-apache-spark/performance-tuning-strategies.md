@@ -53,3 +53,7 @@ From the AWS Glue resource perspective, you can achieve performance improvements
 From an Apache Spark application perspective, you have access to several strategies that can improve performance. If unnecessary data is loaded into the Spark cluster, you can remove it to reduce the amount of loaded data. If you have underused Spark cluster resources and you have low data I/O, you can identify tasks to parallelize. You might also want to optimize heavy data transfer operations such as joins if they are taking substantial time. You can also optimize your job query plan or reduce the computational complexity of individual Spark tasks.
 
 To efficiently apply these strategies, you must identify when they are applicable by consulting your metrics. For more details, see each of the following sections. These techniques work not only for performance tuning but also for solving typical problems such as out-of-memory (OOM) errors.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

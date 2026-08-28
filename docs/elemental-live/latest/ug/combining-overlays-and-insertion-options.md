@@ -18,3 +18,7 @@ You can set up the event to insert a static overlay in more than one way. For ex
 
   When you want to insert more than 8 static overlays, you must use the REST API.
 + Example 4 – You want the same static overlay to appear repeatedly over the duration of the video, either in the same location each time or in different locations. This use case is simply a variation of use cases 2 or 3 with the same static overlay being used each time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -126,3 +126,7 @@ The IAM user or role that deploys your AWS Blocks application needs permissions 
 + Use a dedicated deployment role with scoped permissions.
 + Don’t deploy with your personal administrator credentials in production.
 + Use CI/CD pipelines with OIDC-based authentication (no long-lived access keys).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Blocks. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query blocks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,7 @@ AWS Transform supports both single-account and multi-account migrations. Choose 
 ## Step 2: MAP agreement
 <a name="transform-vmware-cta-map-tag"></a>
 
-If your migration is part of the **AWS Migration Acceleration Program (MAP 2.0)**, provide your Migration Portfolio Experience (MPE) ID. This is a 10-character code using uppercase letters and digits (for example, ABCDE12345). When you provide your MPE ID, the MAP tag is applied to all resources created across network migration, landing zone, and server rehost stages. The tag format is:
+If your migration is part of the **AWS Migration Acceleration Program (MAP 2.0)**, provide your Migration Program Engagement (MPE) ID. This is a 10-character code using uppercase letters and digits (for example, ABCDE12345). When you provide your MPE ID, the MAP tag is applied to all resources created across network migration, landing zone, and server rehost stages. The tag format is:
 + **Key:** `map-migrated` **Value:** `mig{{MPE_ID}}`
 
 You must apply MAP tags to receive MAP credit. For more information about MAP, see [AWS Migration Acceleration Program](https://aws.amazon.com/migration-acceleration-program/).
@@ -25,7 +25,7 @@ You must apply MAP tags to receive MAP credit. For more information about MAP, s
 ## Step 3: Connector configuration
 <a name="transform-vmware-cta-connector"></a>
 
-You use the target account connector to connect your migration job to the AWS environment where your workloads will reside after migration. Before you begin, verify that your target AWS account has the necessary permissions, quotas, and configurations to support your migrated infrastructure.
+You use the target account connector to connect your migration job to the AWS environment where your workloads reside after migration. Before you begin, verify that your target AWS account has the necessary permissions, quotas, and configurations to support your migrated infrastructure.
 
 When you approve the connector request, you grant AWS Transform permissions to:
 + Manage Amazon S3 bucket operations (read/write) for VMware migration, along with access to AWS Migration Hub and AWS Application Migration Service (MGN). This includes permissions for the following items, all restricted to resources within the target account that are tagged with `CreatedBy:AWSTransform` or `CreatedFor:AWSTransform`:
@@ -159,3 +159,7 @@ A migration target region is the AWS Region where migrated resources are deploye
 **Important**
 If you specify a target AWS Region that differs from the AWS Transform AWS Region, some of your data is transferred across AWS Regions.
 Note that your server replication data goes directly from your source environment to your target account and region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

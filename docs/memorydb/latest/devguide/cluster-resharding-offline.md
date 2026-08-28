@@ -21,3 +21,7 @@ The main disadvantage of offline shard reconfiguration is that your cluster is o
 1. Create a new cluster by restoring from the snapshot. For more information, see [Restoring from a snapshot](snapshots-restoring.md).
 
 1. Update the endpoints in your application to the new cluster's endpoints. For more information, see [Finding connection endpoints](endpoints.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

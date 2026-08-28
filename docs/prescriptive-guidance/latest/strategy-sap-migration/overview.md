@@ -30,3 +30,7 @@ If you have a large and highly complex SAP application estate, AWS often propose
 ![](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-migration/images/guide-img/2072f727-3a0b-4e29-9a4f-baa84a3343bb/images/00ab0570-37b9-43df-9a7d-11c5ff4a5ad2.png)
 
 You can fine-tune this approach by factoring in your business objectives, worldwide and business division operating calendars, business cycle, the state of your current infrastructure, and the availability and capacity of your own and AWS Partner resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

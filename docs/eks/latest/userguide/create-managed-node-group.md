@@ -224,3 +224,7 @@ Now that you have a working Amazon EKS cluster with nodes, you’re ready to sta
 + Configure the Kubernetes [Cluster Autoscaler](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/cloudprovider/aws/README.md) to automatically adjust the number of nodes in your node groups.
 + Deploy a [sample application](sample-deployment.md) to your cluster.
 +  [Organize and monitor cluster resources](eks-managing.md) with important tools for managing your cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

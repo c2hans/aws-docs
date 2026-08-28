@@ -909,3 +909,7 @@ Amazon Route 53 defines the following condition keys that can be used in the `Co
 |   [route53:ChangeResourceRecordSetsNormalizedRecordNames](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/specifying-conditions-route53.html#route53_rrsetConditionKeys)  | Filters access by the normalized DNS record names in a ChangeResourceRecordSets request | ArrayOfString |
 |   [route53:ChangeResourceRecordSetsRecordTypes](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/specifying-conditions-route53.html#route53_rrsetConditionKeys)  | Filters access by the DNS record types in a ChangeResourceRecordSets request | ArrayOfString |
 |   [route53:VPCs](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/specifying-conditions-route53.html#route53_rrsetConditionKeys)  | Filters access by VPCs in request | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

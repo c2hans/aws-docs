@@ -64,3 +64,7 @@ The following table describes important changes in each release of the AWS Toolk
 | [Installing the AWS Toolkit for Visual Studio Code](setup-toolkit.md) | Added information about installing language SDKs to support various toolchains. | June 12, 2019 |
 | [Configure your toolchain](setup-toolchain.md) | Added information about configuring various toolchains. | June 12, 2019 |
 | [Initial Release](#doc-history) | Initial release of the user guide for AWS Toolkit for Visual Studio Code. | March 28, 2019 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

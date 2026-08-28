@@ -9,3 +9,7 @@ This section describes common tag-sync errors and how to resolve them. After att
 + **Insufficient permissions** — You do not have the required minimum permissions to start, update, or cancel the tag-sync. Review [Tag-sync required permissions](https://docs.aws.amazon.com/servicecatalog/latest/arguide/app-tag-sync.html#tag-sync-role) for more information. After ensuring the role you specify to perform the tag-sync has the minimum required permissions, retry the failed tag-sync task.
 + **Already exists** — A task with this tag key-value pair already exists for this application. An application can support more than one tag-sync, but each tag-sync must have a different tag key-value pair. After you specify a different tag key-value pair, retry the failed tag-sync task.
 + **Maximum limit reached** — You have reached the maximum of 100 tag-sync tasks per account, across all applications.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Management Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsconsolehelpdocs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

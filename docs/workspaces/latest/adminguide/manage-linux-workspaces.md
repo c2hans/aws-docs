@@ -288,3 +288,7 @@ After making this change, you must either reboot the WorkSpace or log out of the
 <a name="linux_smart_cards"></a>
 
 Linux WorkSpaces allow the use of [Common Access Card (CAC)](https://www.cac.mil/Common-Access-Card) and [Personal Identity Verification (PIV)](https://piv.idmanagement.gov/) smart cards for authentication. All Linux WorkSpaces share the same smart card implementation using SSSD and PKINIT. For more information, see [Enable smart cards for Linux WorkSpaces](smart-cards.md#smart-cards-linux-workspaces).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

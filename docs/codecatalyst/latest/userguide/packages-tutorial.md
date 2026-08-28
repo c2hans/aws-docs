@@ -617,3 +617,7 @@ Clean up the files and services used in this tutorial to avoid being charged for
    1. Under **Personal access tokens**, choose the token you created in this tutorial and choose **Delete**.
 
 In this tutorial, you learned how to create a workflow that runs an application that pulls its dependencies from a CodeCatalyst package repository. You also learned how to block and unblock packages from entering your gateway and CodeCatalyst package repositories.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

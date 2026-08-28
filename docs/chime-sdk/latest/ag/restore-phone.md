@@ -18,3 +18,7 @@ After the 7-day period, the deletion queue moves the numbers back into the numbe
 1. Choose the **Deletion queue** tab, and select the phone number or numbers to restore.
 
 1. Choose **Move to inventory**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

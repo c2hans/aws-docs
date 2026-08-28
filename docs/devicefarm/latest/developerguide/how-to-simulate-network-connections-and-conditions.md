@@ -58,3 +58,7 @@ After you have created a network profile, you'll be able to see and manage it on
 <a name="change-network-conditions-during-test"></a>
 
 You can call an API from your device host using a framework like Appium to simulate dynamic network conditions such as reduced bandwidth during your test run. For more information, see [CreateNetworkProfile](https://docs.aws.amazon.com/devicefarm/latest/APIReference/API_CreateNetworkProfile.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

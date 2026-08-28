@@ -164,3 +164,7 @@ You can export a table that has a vector index to Amazon S3; the export contains
 
 DAX
 DynamoDB Accelerator (DAX) does not support the `SearchVectors` operation. Send `SearchVectors` requests directly to DynamoDB, even when your application uses DAX for other read operations. DAX caching of base table reads is unaffected by the presence of a vector index. If you need a caching layer for vector search results, you can cache `SearchVectors` responses in an external cache, such as Amazon ElastiCache for Valkey. You are responsible for populating and invalidating that cache.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ Before you begin, you must have the following:
 + [Using the SPARQL 1.1 Graph Store HTTP Protocol (GSP) in Amazon Neptune](sparql-graph-store-protocol.md)
 + [Analyzing Neptune query execution using SPARQL `explain`](sparql-explain.md)
 + [SPARQL federated queries in Neptune using the `SERVICE` extension](sparql-service.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

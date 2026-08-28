@@ -17,3 +17,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 ## Implementation guidance
 <a name="implementation-guidance"></a>
 +  Knowledge management: Ensure mechanisms exist for your team members to discover the information that they are looking for in a timely manner, access it, and identify that it’s current and complete. Maintain mechanisms to identify needed content, content in need of refresh, and content that should be archived so that it’s no longer referenced.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

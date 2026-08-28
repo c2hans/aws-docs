@@ -103,6 +103,13 @@ You must enable tags in metadata to show tags on the wallpaper. For more informa
 
 You can use the Command Line Interface (CLI) to configure your EC2Launch settings and manage the service. The following section contains descriptions and usage information for the CLI commands that you can use to manage EC2Launch v2.
 
+**Note**
+The EC2Launch v2 CLI executable, `EC2Launch.exe`, resides in `C:\Program Files\Amazon\EC2Launch\`. By default, this directory is not in the Windows PATH. The `ec2launch {{command}}` form shown in the examples in this section is shorthand that a shell does not recognize directly. To run a command, use the full path to the executable, or first change to the installation directory. The following PowerShell example uses the full path with the call operator:
+
+```
+& "C:\Program Files\Amazon\EC2Launch\EC2Launch.exe" status
+```
+
 **Topics**
 + [collect-logs](#ec2launch-v2-collect-logs)
 + [get-agent-config](#ec2launch-v2-get-agent-config)
@@ -263,6 +270,14 @@ Gets the status of the EC2Launch v2 agent. Optionally blocks the process until t
 ```
 ec2launch status -b
 ```
+
+**Note**
+The `status` command writes a short message to the console (for example, `agent ran successfully`). However, the process exit code values listed previously determine the agent state, not that message. To view the exit code in PowerShell, read the `$LASTEXITCODE` automatic variable after you run the command, for example:
+
+```
+& "C:\Program Files\Amazon\EC2Launch\EC2Launch.exe" status; "ExitCode=$LASTEXITCODE"
+```
+An output of `ExitCode=0` indicates that the agent ran successfully.
 
 **Usage**
 
@@ -618,3 +633,7 @@ If you are using an XML user data format that is compatible with older agents, t
 The EC2Launch v2 service runs Sysprep, a Microsoft tool that enables you to create a customized Windows AMI that can be reused. When EC2Launch v2 calls Sysprep, it uses the files in `%ProgramData%\Amazon\EC2Launch` to determine which operations to perform. You can edit these files indirectly using the **EC2Launch settings** dialog box, or directly using a YAML editor or a text editor. However, there are some advanced settings that aren't available in the **EC2Launch settings** dialog box, so you must edit those entries directly.
 
 If you create an AMI from an instance after updating its settings, the new settings are applied to any instance that's launched from the new AMI. For information about creating an AMI, see [Create an Amazon EBS-backed AMI](creating-an-ami-ebs.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

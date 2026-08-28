@@ -267,3 +267,7 @@ For a more complex example, consider the implementation of the `update` handler 
 + A `create` handler isn't idempotent. Re-invoking the handler with the same idempotencyToken will cause another resource to be created, and the handler is only tracking a single resource.
 + A `create` handler creates the resource, but is unable to communicate an identifier for that resource back to CloudFormation. A subsequent `delete` call doesn't have enough information to delete the resource.
 + A bug in the `delete` handler causes the resource to not actually be deleted, but the `delete` handler reports that the resource was successfully deleted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

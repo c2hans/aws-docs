@@ -13,3 +13,7 @@ The following are important points to note about using Jira access and refresh t
 + If an access token expires during the Jira connector sync process, the connector internally regenerates a new pair of tokens using the existing refresh token (if the provided refresh token is valid). After regenerating the new pair of tokens, the old pair is invalidated by Jira and can't be re-used. To sync documents again after the connector auto-regenerates tokens, you must provide a new access token-refresh token pair.
 + If you use OAuth, select **Rotate secret** if you want Amazon Q to rotate the secret automatically so that you don’t have to manually update the secret every time before you sync.
 + As a best practice, use Jira OAuth and the **Rotate secret** feature for the Amazon Q connector.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -153,3 +153,7 @@ The following table displays the database columns and records that using the spe
 | My Static Metadata | iotconsole-159EXAMPLE738-0 | boolean\_value\_as\_string | - | TRUE | - | - | 2020-08-26 22:42:16.423000000 |
 | My Static Metadata | iotconsole-159EXAMPLE738-0 | double\_value | - | - | 123.456789012 | - | 2020-08-26 22:42:16.423000000 |
 | My Static Metadata | iotconsole-159EXAMPLE738-0 | double\_value\_as\_string | - | 123.45679 | - | - | 2020-08-26 22:42:16.423000000 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

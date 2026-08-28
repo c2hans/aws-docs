@@ -129,3 +129,7 @@ For two-level billing transfers:
 The bill transfer receiver account doesn't need to send invitations to bill source accounts. Only the bill transfer account sends invitations. When a bill source account accepts the invitation, the bill transfer receiver receives a CloudWatch notification andand automatically takes over billing for the bill source accounts.
 The bill transfer receiver account must configure a billing group manually in the bill source accounts' AWS Organizations through Billing Conductor. This configuration enables the bill transfer account to view their bill source account costs as allocated by the bill transfer receiver. For APN Distribution program users, this enables downstream sellers to see how much they owe their distributor for their end customers' usage.
 For help with automating this process, contact Support.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing Conductor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query billingconductor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

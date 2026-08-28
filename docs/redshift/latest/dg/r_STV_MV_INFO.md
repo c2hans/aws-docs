@@ -45,3 +45,7 @@ This query returns the following sample output.
  dev     | test_ivm_setup     | mv      |             1031 | f        | catch-22        |     1 |           1 |           0
  dev     | test_ivm_setup     | old_mv  |              988 | t        | lotr            |     1 |           0 |           1
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -103,3 +103,7 @@ You can configure Amazon Simple Notification Service to send a text notification
    1. Choose **Next**
 
 1. In the **Targets** section, choose a service that can consume your event such as Amazon SNS, or choose **Lambda function** to pass the event to customized executable code.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

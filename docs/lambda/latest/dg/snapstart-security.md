@@ -12,3 +12,7 @@ Otherwise, you can use the `--kms-key-arn` option in the [create-function](https
 If your function is also a durable function, the customer managed key that encrypts SnapStart snapshots is independent of the customer managed key that encrypts durable execution data. For more information, see [Encrypting AWS Lambda durable execution data](durable-encryption.md).
 
 When you delete a SnapStart function or function version, all `Invoke` requests to that function or function version fail. Lambda removes all resources associated with deleted snapshots in compliance with the General Data Protection Regulation (GDPR).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

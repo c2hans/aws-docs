@@ -22,3 +22,7 @@ IAM Identity Center does not support SAMBA4-based Simple AD as an identity sourc
 + [Supported user and group attributes in IAM Identity Center](manage-your-identity-source-attribute-use.md)
 + [External identity providers](manage-your-identity-source-idp.md)
 + [Microsoft AD directory](manage-your-identity-source-ad.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

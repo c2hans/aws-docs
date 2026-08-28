@@ -267,3 +267,7 @@ After this initial check is complete, EC2 Fast Launch creates the pre-provisione
 To make sure that Amazon EC2 always uses the version it validated when you enabled the feature, specify a numbered launch template version. Do not use `$Latest` or `$Default`.
 
 If you configure EC2 Fast Launch to use the `$Latest` or `$Default` launch template version, we recommend that you limit who can create and manage launch template versions. Use IAM policies to restrict access to actions such as `ec2:CreateLaunchTemplateVersion` and `ec2:ModifyLaunchTemplate`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

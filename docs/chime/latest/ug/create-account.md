@@ -63,3 +63,7 @@ To set up Amazon Chime on your other devices, use the same credentials to sign i
 
 **Note**
 If you sign out of Amazon Chime, you sign back in by providing the email address that you entered in step 2. You sign out by choosing the ellipsis menu next to your name, and then choosing **Sign out**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

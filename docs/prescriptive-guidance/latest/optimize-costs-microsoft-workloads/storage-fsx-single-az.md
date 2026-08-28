@@ -47,3 +47,7 @@ The maintenance window is a key consideration if you're using a Single Availabil
 <a name="storage-fsx-single-az-resources"></a>
 + [Availability and durability: Single-AZ and Multi-AZ file systems](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/high-availability-multiAZ.html#deployment-type-features-summary) (Amazon FSx documentation)
 + [Amazon FSx for Windows File Server Pricing](https://aws.amazon.com/fsx/windows/pricing/) (AWS website)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

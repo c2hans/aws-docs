@@ -50,3 +50,7 @@ Contains all data plane API operations and data types for Amazon SageMaker Metri
 <a name="Welcome_Amazon_SageMaker_Job_Runtime_Service"></a>
 
 Amazon SageMaker Job Runtime provides APIs that enable communication between your agent and the policy model during multi-turn reinforcement learning jobs. These APIs support inference requests to the policy model, rollout lifecycle management, and reward submission.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

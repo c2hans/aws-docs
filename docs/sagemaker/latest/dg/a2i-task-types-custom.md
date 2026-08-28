@@ -47,3 +47,7 @@ Once you have started a human loop, you can manage and monitor your loops using 
 <a name="a2i-task-types-custom-notebook-demo"></a>
 
 For an end-to-end examples that demonstrates how to integrate Amazon A2I into a variety of ML workflows, see the table in [Use Cases and Examples Using Amazon A2I](a2i-task-types-general.md). To get started using one of these notebooks, see [Use SageMaker Notebook Instance with Amazon A2I Jupyter Notebook](a2i-task-types-general.md#a2i-task-types-notebook-demo).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

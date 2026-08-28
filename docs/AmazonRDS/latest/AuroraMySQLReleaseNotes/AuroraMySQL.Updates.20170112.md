@@ -17,3 +17,7 @@ Version 1.10.1 of Aurora MySQL is an opt-in version and is not used to patch you
 <a name="AuroraMySQL.Updates.20170112.Improvements"></a>
 + Fixed an issue with spatial indexing when creating a column and adding an index on it in the same statement.
 + Fixed an issue where spatial statistics aren't persisted across DB cluster restart.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

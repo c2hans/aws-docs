@@ -26,3 +26,7 @@ Each row in the "servers" table provides details about a single source server, i
   + **Wait for check to complete** – This indicates that the prerequisites are being verified. If this step is completed successfully, the next step will be **Install agent**. If not, the next step will be **Resolve cause of invalidity**.
   + **Resolve cause of invalidity** – This indicates that the prerequisite verification process failed and that a specific issue needs to be resolved.
 + Tags - This section features the tags associated with your connector.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

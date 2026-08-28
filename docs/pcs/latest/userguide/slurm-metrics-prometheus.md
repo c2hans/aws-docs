@@ -428,3 +428,7 @@ slurm_jobs_completed{cluster="{{my-cluster-name}}"}
 ```
 
 For more information about available metrics and scraping configuration, see the [Metrics Guide](https://slurm.schedmd.com/metrics.html) on the Slurm website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

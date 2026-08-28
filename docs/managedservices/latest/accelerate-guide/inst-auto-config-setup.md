@@ -19,3 +19,7 @@ Assuming the prerequisites have been met, adding a specific Amazon EC2 instance 
 
 **Note**
 The instance configuration service attempts to apply the required AMS configurations once the **ams:rt:ams-managed** tag is applied to the instance. The service asserts the AMS required configurations whenever an instance is started, and when a the AMS daily configuration check occurs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

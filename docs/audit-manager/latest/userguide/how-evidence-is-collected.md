@@ -35,3 +35,7 @@ Evidence collection is an ongoing process that starts when you create your asses
 + **Configuration data** — Audit Manager collects this evidence type using a describe API call to another AWS service such as Amazon EC2, Amazon S3, or IAM. You can choose which API actions to call. You also set the frequency as daily, weekly, or monthly in Audit Manager. You can specify this frequency when you create or edit a control in the control library. For instructions on how to edit or create a control, see [Using the control library to manage controls in AWS Audit Manager](control-library.md). For more information about the API calls that are supported by Audit Manager, see [AWS API calls supported by AWS Audit Manager](control-data-sources-api.md).
 
 Regardless of the evidence collection frequency for the data source, new evidence is collected automatically for as long as the control and the assessment are active.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

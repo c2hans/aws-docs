@@ -213,3 +213,7 @@ func NewMyStack(scope constructs.Construct, id string, props *MyStackProps) awsc
 <a name="bootstrapping-troubleshoot-s3-bucket-name-prevention"></a>
 
 We recommend that you proactively bootstrap each AWS environment that you plan to use. For more information, see [When to bootstrap your environment](bootstrapping-env.md#bootstrapping-env-when). Specifically for the Amazon S3 bucket naming issue, this will create Amazon S3 buckets in each AWS environment and prevent others from using your Amazon S3 bucket name.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

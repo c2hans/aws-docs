@@ -22,3 +22,7 @@ To run multi-node parallel jobs on AWS Batch, your application code must contain
 + [Node groups](mnp-node-groups.md)
 + [Job lifecycle for MNP jobs](job-lifecycle.md)
 + [Compute environment considerations for MNP with AWS Batch](mnp-ce.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

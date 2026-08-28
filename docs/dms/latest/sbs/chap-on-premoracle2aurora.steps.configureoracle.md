@@ -104,3 +104,7 @@ For Oracle versions before 11.2.0.3, you need the following privileges. If views
 SELECT on DBA_OBJECTS /* versions before 11.2.0.3 */
 SELECT on ALL_VIEWS (required if views are exposed)
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

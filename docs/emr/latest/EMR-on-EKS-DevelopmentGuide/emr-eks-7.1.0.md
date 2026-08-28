@@ -83,3 +83,7 @@ Release notes for Amazon EMR on EKS 7.1.0
 
 The following features are included with the 7.1.0 release of Amazon EMR on EKS.
 + **[Apache Livy support for Amazon EMR on EKS](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/job-runs-apache-livy.html)** – With Amazon EMR on EKS releases 7.1.0 and higher, you can use Apache Livy on an Amazon EKS cluster to create an Apache Livy REST interface to submit Spark jobs or snippets of Spark code. Doing so lets you retrieve results synchronously and asynchronously, while still leveraging Amazon EMR on EKS benefits, such as Amazon EMR-optimized Spark runtime, SSL-enabled Livy endpoints, and a programmatic set-up experience.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

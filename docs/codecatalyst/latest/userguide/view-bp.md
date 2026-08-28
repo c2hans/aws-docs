@@ -40,3 +40,7 @@ You can view your space’s published custom blueprints, including a blueprint�
 1. On the space dashboard, choose the **Settings** tab, and then choose **Blueprints**.
 
 1. From the **Space blueprints** table, choose the name of a custom blueprint to view the **Projects using blueprint** and **Projects not using blueprint** tables.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

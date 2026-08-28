@@ -16,3 +16,7 @@ The Test Workbench results are dependent on the bot definition and its correspon
 + Include commonly used synonyms or abbreviations of custom slot values supported by your bot (for example, “root canal”, “canal”, or “RC”).
 + Include variations of built-in slot values (for example, “tomorrow”, “asap”, or "the next day").
 + Examine the bot robustness for spoken modality by collecting user inputs that can be misinterpreted (for example, “ink”, “ankle”, or "anchor").
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

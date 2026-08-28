@@ -65,3 +65,7 @@ Generic error codes, prefixed with `BA-A`.
 | BA-A2001 | Fatal | AWS permission issue while parsing secret. | The error displays the underlying error. It is often related to a missing permission in the used IAM role. |
 | BA-A2002 | Fatal | Application requires network access to AWS Secrets Manager service in order to start. This can be fixed either by using a publicly accessible environment, or by creating a PrivateLink or a NAT Gateway. | See [Access AWS Mainframe Modernization using an AWS PrivateLink interface endpoint](vpc-interface-endpoints.md). |
 | BA-A2003 | Fatal | DB name for the database secret was passed neither in the secret nor in the yaml key. Add the database name to the configuration, either in a dbname field in the secret, or in the dedicated yaml key. | See [AWS Transform for mainframe Runtime secrets](ba-runtime-config-app-secrets.md). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

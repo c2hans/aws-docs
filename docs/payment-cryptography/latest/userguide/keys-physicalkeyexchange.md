@@ -55,3 +55,7 @@ Key material is transferred from the offline HSM to your AWS Payment Cryptograph
 
 Audit and compliance
 AWS has processes in place to meet applicable compliance requirements that are assessed periodically for PCI PIN and P2PE attestations. Review the compliance package in AWS Artifact for reports that you have reference in your own PCI assessments.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

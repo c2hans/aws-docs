@@ -50,3 +50,7 @@ You must be a meeting host, delegate, and moderator to complete these steps. Als
 1. In the left control bar, open the **More options** menu (![An icon showing a horizontal ellipsis.](http://docs.aws.amazon.com/chime/latest/ug/images/left-control-6.png)).
 
 1. Choose **Prevent attendees from unmuting**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

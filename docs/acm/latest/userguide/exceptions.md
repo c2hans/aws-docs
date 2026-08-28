@@ -24,3 +24,7 @@ AWS Private CA is not supported in the China (Beijing) Region and the China (Nin
 | `PCA_REQUEST_FAILED` | A network or system error occurred. This triggers a AWS Private CA `RequestFailedException` failure code. Try repeating your request before proceeding with this help.<br />If the error persists, contact [Support](https://console.aws.amazon.com/support/home#/). |
 | `PCA_RESOURCE_NOT_FOUND` | The private CA has been permanently deleted. This triggers a AWS Private CA `ResourceNotFoundException` failure code. Verify that you used the correct ARN. If that fails, you won't be able to use this CA.<br />To remedy the problem, [create a new CA](https://docs.aws.amazon.com/privateca/latest/userguide/PcaCreateCa.html). |
 | SLR\_NOT\_FOUND | In order to renew a certificate signed by a private CA that resides in another account, ACM requires a Service Linked Role (SLR) on the account where the certificate resides. If you need to recreate a deleted SLR, see [Creating the SLR for ACM](acm-slr.md#create-slr). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

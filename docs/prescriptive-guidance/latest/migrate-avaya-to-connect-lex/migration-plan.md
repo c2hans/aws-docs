@@ -58,3 +58,7 @@ Amazon DynamoDB is the most efficient way to store and manage prompts. The busin
 <a name="defining-requirements"></a>
 
 Based on your requirements, make a list of the cloud services you will use to achieve your outcomes. Your security team needs to validate if the proposed target architecture meets organizational requirements, such as retention policies, and make sure that logging is considered and documented.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

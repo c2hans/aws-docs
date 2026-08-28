@@ -111,3 +111,7 @@ When using S3 Vectors with Amazon Bedrock Knowledge Bases, you should know the f
 + **Floating-point vectors only**: Binary vector embeddings aren't supported.
 
 For comprehensive guidance on working with Amazon Bedrock Knowledge Bases, see [Retrieve data and generate AI responses with Amazon Bedrock Knowledge Bases](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base.html) in the *Amazon Bedrock User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

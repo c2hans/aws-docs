@@ -37,3 +37,7 @@ When you use billing transfer as a bill transfer account, or AWS Billing Conduct
 + **Date created**: The time and date when your export was created.
 + **Date last refreshed**: The time and date when your export was last refreshed.
 + **S3 bucket**: The S3 bucket to which your export is being delivered to.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

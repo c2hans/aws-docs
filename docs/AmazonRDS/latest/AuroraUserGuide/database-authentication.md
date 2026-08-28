@@ -56,3 +56,7 @@ To use credentials from your self-managed Active Directory, you need to setup a 
 In some scenarios, you can configure Kerberos authentication over an external trust relationship. This requires your self-managed Active Directory to have additional settings. This includes but is not limited to [ Kerberos Forest Search Order](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/kfso-not-work-in-external-trust-event-is-17).
 
 Aurora supports Kerberos authentication for Aurora MySQL and Aurora PostgreSQL DB clusters. For more information, see [Using Kerberos authentication for Aurora MySQL](aurora-mysql-kerberos.md) and [Using Kerberos authentication with Aurora PostgreSQL](postgresql-kerberos.md) .
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

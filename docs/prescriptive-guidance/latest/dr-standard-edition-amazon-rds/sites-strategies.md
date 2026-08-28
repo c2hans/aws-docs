@@ -26,3 +26,7 @@ In asynchronous DR, replication is not performed at the same time as changes are
 + Amazon RDS PITR snapshot replication – RDS snapshots are a manual DR option. You define a point-in-time snapshot configuration for your RDS database instance, and the snapshots are stored in Amazon Simple Storage Service (Amazon S3). You can then enable cross-Region replication to replicate changes from the primary database to the standby database in a different Region.
 
   Amazon RDS PITR snapshot replication is an active-passive DR option because you have to manually initiate the restore process and promote the standby database to the primary role if the original primary database fails. However, this option provides more flexibility than Multi-AZ deployment, and you can use it to protect against Region-level outages.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

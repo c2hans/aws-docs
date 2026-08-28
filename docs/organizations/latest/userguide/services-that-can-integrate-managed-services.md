@@ -92,3 +92,7 @@ You can add a delegated administrator using either the AMS console or API, or by
 Only an administrator in the organization management account can configure a delegated administrator for AMS.
 
 You can remove the delegated administrator using either the AMS console or API, or by using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

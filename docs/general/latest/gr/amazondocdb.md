@@ -68,3 +68,7 @@ For information on finding and connecting to your cluster or instance endpoints,
 | VPC security groups per instance | Each supported Region: 5 | No | The maximum number of DB security groups per Amazon VPC |
 
 For more information, see [ Amazon DocumentDB Service Quotas](https://docs.aws.amazon.com/documentdb/latest/developerguide/limits.html) in the *Amazon DocumentDB Developer Guide.*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

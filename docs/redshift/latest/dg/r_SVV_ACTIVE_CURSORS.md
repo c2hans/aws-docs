@@ -25,3 +25,7 @@ SVV\_ACTIVE\_CURSORS is visible to all users. Superusers can see all rows; regul
 | total\_rows | bigint | The number of rows in the cursor result set. |
 | fetched\_rows | bigint | The number of rows currently fetched from the cursor result set. |
 | cursor\_storage\_limit\_used\_percent | integer | The percentage of disk space currently used by the cursor. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

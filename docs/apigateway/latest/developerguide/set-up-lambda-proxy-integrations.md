@@ -190,3 +190,7 @@ In a Lambda `async` function in Node.js, the equivalent syntax would be:
 + To return a successful result, call `return {"statusCode": 200, "body": "results"}`.
 + To throw an exception, call `throw new Error("internal server error")`.
 + For a client-side error (if, for example, a required parameter is missing), you can call `return {"statusCode": 400, "body": "Missing parameters of ..."}` to return the error without throwing an exception.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

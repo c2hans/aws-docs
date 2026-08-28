@@ -171,3 +171,7 @@ A gain value of -60 effectively mutes that input channel's contribution to the o
 You can use both stages together. First, pre-mix multiple PIDs or tracks into a combined stream. Then, apply `RemixSettings` on the audio description to produce the final output layout.
 
 For example, consider two stereo PIDs that you pre-mix without channel reduction. MediaLive interleaves them into a 4-channel combined stream. You then configure `RemixSettings` on the audio description with `ChannelsIn` set to 4 and `ChannelsOut` set to 2. This produces a stereo output that blends content from both original PIDs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

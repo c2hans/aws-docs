@@ -19,3 +19,7 @@ A new metric, `apiserver_storage_size_bytes` was introduced in Kubernetes 1.28, 
 
 **Note**
 For more details about the change to Kubernetes, see [Rename Label cluster to storage\_cluster\_id for apiserver\_storage\_size\_bytes metric](https://github.com/kubernetes/kubernetes/pull/124283) in the *Kubernetes GitHub project*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Service for Prometheus. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prometheus` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

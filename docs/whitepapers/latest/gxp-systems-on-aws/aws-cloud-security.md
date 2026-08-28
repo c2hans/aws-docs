@@ -26,3 +26,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/aw
  Many more customer testimonials, including those from health and life science companies, can be found here: [https://aws.amazon.com/compliance/testimonials/](https://aws.amazon.com/compliance/testimonials/)
 
  IT Security is often not the core business of our customers. IT departments operate on limited budgets and do a good job of securing their data centers and software given limited resources. In the case of AWS, security is foundational to our core business and so significant resources are applied to ensuring the security of the cloud and helping our customers ensure security in the cloud, as described further below.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

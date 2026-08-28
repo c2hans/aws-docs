@@ -53,3 +53,7 @@ You can delete your key value store by using the Amazon CloudFront console or AP
 1. To delete the key value store, use the CloudFront [DeleteKeyValueStore](https://docs.aws.amazon.com/cloudfront/latest/APIReference/API_DeleteKeyValueStore.html) API operation.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

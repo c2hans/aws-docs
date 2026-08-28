@@ -15,3 +15,7 @@ If you're connecting to a console session, contact your Amazon DCV server admini
 + [Connecting using the Linux client](using-connecting-linux.md)
 + [Connecting using the macOS client](using-connecting-mac.md)
 + [Connecting using URI](using-connecting-uri.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

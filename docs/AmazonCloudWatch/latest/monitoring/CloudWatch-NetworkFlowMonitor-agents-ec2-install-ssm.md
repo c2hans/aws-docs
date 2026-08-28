@@ -74,3 +74,7 @@ The document in SSM that you can use to activate or deactivate agents is called 
 1. In the **Command parameters** section, under **Action**, choose **Activate** or **Deactivate**, depending on the action that you want to take for the agents.
 
 1. Scroll down, if necessary, and then choose **Run** to start the installation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

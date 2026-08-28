@@ -43,3 +43,7 @@ First, check AWS CloudTrail for the `AccessDenied` event to identify which princ
    1. Add the affected users or groups to the assignment, and then save and enable it.
 
    For more information about IAM policy assignments, see [IAM policy assignments](iam-policy-assignments.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

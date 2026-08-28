@@ -30,3 +30,7 @@ The following section presents a number of business use cases that are best solv
 | **Visualize Places search and/or geocode result on a map **All APIs return geocoordinates, except autocomplete.  | GetTile and GetStyleDescriptor with rendering engine (MapLibre) with Places API |  |
 | **Draw a route on a map**Supports waypoint marking. | GetTile and GetStyleDescriptor with rendering engine (MapLibre) with Calculate route  |  |
 | **Visualize matched GPS traces on a map **Supports travel modes, such as truck, pedestrian, car, and scooter.  | GetStyleDescriptor with rendering engine (MapLibre) with Snap to road  |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

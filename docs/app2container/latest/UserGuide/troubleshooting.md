@@ -224,3 +224,7 @@ Host git-codecommit.*.amazonaws.com
 **Note**
 If your Jenkins server is running on Windows, update the user profile that you ran the Jenkins setup with.
 For Jenkins Windows agents, update the user profile that has your connection to the Jenkins server configured.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App2Container. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app2container` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

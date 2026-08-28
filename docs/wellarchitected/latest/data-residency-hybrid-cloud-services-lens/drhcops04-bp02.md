@@ -30,3 +30,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  **Local Zones Network Connectivity**
 
  Local Zones are built into your network architecture the same way as an Availability Zone. You can extend any VPC from a parent Region into a Local Zone by creating a new subnet and assigning it to the Local Zone. The Local Zone network can have public subnets, internet gateways, and AWS Direct Connect gateways to your On-premises data center. For additional guidance, see [Connectivity options for Local Zones](https://docs.aws.amazon.com/local-zones/latest/ug/local-zones-connectivity.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

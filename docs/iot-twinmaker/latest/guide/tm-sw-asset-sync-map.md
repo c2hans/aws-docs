@@ -81,3 +81,7 @@ You can use these synced entities in Grafana dashboards and add them as tags in 
 
 **Note**
 Synced entities without modification are not charged, but you are charged for those entities if changes have been made in AWS IoT TwinMaker. For example, if you add a non-synced component to a synced entity, that entity is now charged in AWS IoT TwinMaker. For more information, see [AWS IoT TwinMaker Pricing](https://aws.amazon.com/iot-twinmaker/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

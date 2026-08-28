@@ -116,3 +116,7 @@ Suppose that you were using a single Oracle Database for multiple separate appli
 | Use instance caging in a multi-node Oracle RAC Environment | Similar capabilities can be achieved by separating different applications to different Aurora clusters or, for read-only workloads, separate Aurora read replicas within the same Aurora cluster. |
 
 For more information, see [Resource Consumption](https://www.postgresql.org/docs/13/runtime-config-resource.html) in the *PostgreSQL documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

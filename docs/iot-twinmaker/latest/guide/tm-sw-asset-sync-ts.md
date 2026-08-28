@@ -33,3 +33,7 @@ To see all the listed errors for the current source, use the following procedure
 Possible errors include the following:
 + While AWS IoT SiteWise supports duplicate asset names, AWS IoT TwinMaker only supports them at the `ROOT` level, not under the same parent entity. If you have two assets with the same name under a parent entity in AWS IoT SiteWise, one of them fails to sync. To fix this error, either delete one of the assets or move one under a different parent asset in AWS IoT SiteWise before you sync.
 + If you already have an entity with the same ID as the AWS IoT SiteWise asset ID, that asset fails to sync until you delete the existing entity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -83,3 +83,7 @@ The following table provides a more detailed breakdown of how different memory r
 | --- | --- | --- |
 | Extraction | resource\_arn, event\_timestamp, memory\_strategy\_id, namespace, actor\_id, session\_id, event\_id, requestId, isError | Analyzes incoming conversations to generate new memories |
 | Consolidation | resource\_arn, event\_timestamp, memory\_strategy\_id, namespace, session\_id, requestId, isError | Combines extracted memories with existing memories |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

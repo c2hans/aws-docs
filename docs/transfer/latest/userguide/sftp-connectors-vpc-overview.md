@@ -29,3 +29,7 @@ Before creating a VPC\_LATTICE-enabled SFTP connector, you need:
 + Resource Configuration specifying the target SFTP server
 
 For detailed setup instructions, see [Create a VPC\_LATTICE-enabled SFTP connector](create-vpc-sftp-connector-procedure.md#create-vpc-connector-procedure). And, for examples, see [VPC connectivity examples for SFTP connectors](create-vpc-sftp-connector-procedure.md#sftp-connectors-vpc-examples).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

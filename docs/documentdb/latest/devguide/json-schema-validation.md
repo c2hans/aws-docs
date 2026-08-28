@@ -430,3 +430,7 @@ Amazon DocumentDB does not support the following commands for `bypassDocumentVal
 The following limitations apply to `$jsonSchema` validation:
 + Amazon DocumentDB returns the error "Document failed validation" when an operation fails the validation rule.
 + Amazon DocumentDB elastic clusters do not support `$jsonSchema`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ Standard support for AL1 ended on December 31, 2020. The AL1 maintenance support
 For more information about Amazon Linux, see [AL2023](https://aws.amazon.com/linux/amazon-linux-2023/), [AL2](https://aws.amazon.com/amazon-linux-2/), and [AL1](https://aws.amazon.com/amazon-linux-ami/).
 
 For Amazon Linux container images, see [Amazon Linux container image](https://docs.aws.amazon.com/AmazonECR/latest/userguide/amazon_linux_container_image.html) in the *Amazon Elastic Container Registry User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

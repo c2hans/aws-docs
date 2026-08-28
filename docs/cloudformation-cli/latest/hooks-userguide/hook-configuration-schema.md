@@ -76,3 +76,7 @@ For examples of configuring Hooks from the AWS CLI, see the following sections:
 + [Activate a proactive control-based Hook (AWS CLI)](proactive-controls-hooks-activate-hooks.md#proactive-controls-hooks-activate-hooks-cli)
 + [Activate a Guard Hook (AWS CLI)](guard-hooks-activate-hooks.md#guard-hooks-activate-hooks-cli)
 + [Activate a Lambda Hook (AWS CLI)](lambda-hooks-activate-hooks.md#lambda-hooks-activate-hooks-cli)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

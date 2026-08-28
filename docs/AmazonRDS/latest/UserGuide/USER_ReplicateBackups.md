@@ -95,3 +95,7 @@ You can also use the `describe-source-regions` AWS CLI command to find out which
 Following are limitations for cross–Region automated backups for Amazon RDS.
 + Automated backup replication isn't supported for Multi-AZ DB clusters.
 + By default, you can have up to 20 cross–Region automated backups per AWS account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

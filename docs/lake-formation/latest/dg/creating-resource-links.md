@@ -15,3 +15,7 @@ Lake Formation supports querying Data Catalog tables across AWS Regions. You can
 + [Creating a resource link to a shared Data Catalog table](create-resource-link-table.md)
 + [Creating a resource link to a shared Data Catalog database](create-resource-link-database.md)
 + [Resource link handling in AWS Glue APIs](resource-links-glue-apis.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

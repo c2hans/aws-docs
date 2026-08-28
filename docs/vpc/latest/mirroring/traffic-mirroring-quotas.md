@@ -70,3 +70,7 @@ The following are the quotas for Traffic Mirroring for your AWS account.
 + **Storage Optimized: **i3en.24xlarge \| i4g.16xlarge \| i4i.32xlarge \| i7i.48xlarge \| i7ie.48xlarge \| i8g.48xlarge \| i8ge.48xlarge \| im4gn.16xlarge
 + **Accelerated Computing: **dl1.24xlarge \| dl2q.24xlarge \| f2.48xlarge \| g5.48xlarge \| g5g.16xlarge \| g6.48xlarge \| g6e.12xlarge \| g6e.24xlarge \| g6e.48xlarge \| g7e.12xlarge \| g7e.24xlarge \| g7e.48xlarge \| inf1.24xlarge \| inf2.48xlarge \| p3dn.24xlarge \| p4d.24xlarge \| p4de.24xlarge \| p5.4xlarge \| p5.48xlarge \| p5e.48xlarge \| p5en.48xlarge \| p6-b200.48xlarge \| p6-b300.48xlarge \| p6e-gb200.36xlarge \| trn1.32xlarge \| trn1n.32xlarge \| trn2.3xlarge \| trn2.48xlarge \| trn2u.48xlarge \| vt1.24xlarge
 + **High Performance Computing: **hpc6a.48xlarge \| hpc6id.32xlarge \| hpc7a.12xlarge \| hpc7a.24xlarge \| hpc7a.48xlarge \| hpc7a.96xlarge \| hpc7g.4xlarge \| hpc7g.8xlarge \| hpc7g.16xlarge \| hpc8a.96xlarge
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

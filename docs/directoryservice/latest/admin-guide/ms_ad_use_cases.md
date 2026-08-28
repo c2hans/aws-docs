@@ -20,3 +20,7 @@ Use AWS Managed Microsoft AD for either of the following business use cases.
 + [Use Case 4: AWS IAM Identity Center to Office 365 and other cloud applications](usecase4.md)
 + [Use Case 5: Extend your on-premises Active Directory to the AWS Cloud](usecase5.md)
 + [Use Case 6: Share your directory to seamlessly join Amazon EC2 instances to a domain across AWS accounts](usecase6.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

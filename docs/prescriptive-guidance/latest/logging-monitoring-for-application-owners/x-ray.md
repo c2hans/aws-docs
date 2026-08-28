@@ -20,3 +20,7 @@ For more information, see [Tracing applications with AWS X-Ray](https://docs.aws
 <a name="x-ray-use-cases"></a>
 + **Application analysis and debug** – Trace data can help you debug the application by providing an end-to-end view of the request so that you can identify bottlenecks and troubleshoot issues. The X-Ray [service map](https://docs.aws.amazon.com/xray/latest/devguide/xray-console-servicemap.html) is a visual tool that helps you identify where errors are occurring, connections with high latency, or traces for unsuccessful requests.
 + **Performance analytics** – The [Analytics console](https://docs.aws.amazon.com/xray/latest/devguide/xray-console-analytics.html) is an interactive tool for interpreting trace data to quickly understand how your application and its underlying services are performing. The console helps you explore, analyze, and visualize traces. You can also compare trace sets with different conditions, for root cause analysis.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

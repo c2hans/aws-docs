@@ -318,3 +318,7 @@ To create an Amazon EFS file system, see [Create an Amazon EFS file system for A
 <a name="efs-sample-app"></a>
 
 You can deploy a variety of sample apps and modify them as needed. For more information, see [Examples](https://github.com/kubernetes-sigs/aws-efs-csi-driver/tree/master/examples/kubernetes) on GitHub.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

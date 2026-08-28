@@ -216,3 +216,7 @@ To implement workload identity-based access control for credential providers:
 + Regularly audit and review access policies to ensure they align with your security requirements
 + Consider using IAM policy conditions for additional access controls based on time, IP address, or other factors
 + Test policies in a development environment before applying them to production workloads
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

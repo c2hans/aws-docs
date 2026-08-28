@@ -54,7 +54,7 @@ Use the **DR after migration** feature to configure disaster recovery using AWS 
 
 This action installs the AWS Elastic Disaster Recovery Replication Agent on your Amazon EC2 instance.
 
-You must select the target disaster recovery region, which is the AWS Region in which the Recovery instances is deployed. AWS Elastic Disaster Recovery must be available in the selected Region and initiated in your account. You must initialize Elastic Disaster Recovery for this action to work.
+You must select the target disaster recovery region, which is the AWS Region in which the Recovery instances are deployed. AWS Elastic Disaster Recovery must be available in the selected Region and initiated in your account. You must initialize Elastic Disaster Recovery for this action to work.
 
 **Important**
 Ensure that you review the costs associated with AWS Elastic Disaster Recovery in the [service pricing documentation](https://aws.amazon.com/disaster-recovery/pricing/).
@@ -138,7 +138,7 @@ Use the **CloudWatch agent installation** feature to install and configure the C
 
 You need the AWSApplicationMigrationSSMAccess policy, or a user-defined policy that allows the SSM document to run, to run this post-launch action. This is in addition to the [full access policy](security-iam-awsmanpol-AWSApplicationMigrationFullAccess.md):
 
-The launched instance requirea these policies:
+The launched instance requires these policies:
 + CloudWatchAgentServerPolicy – The permissions required to use AmazonCloudWatchAgent on servers
 + AmazonSSMManagedInstanceCore – The policy for Amazon EC2 Role to enable AWS Systems Manager service core functionality
 
@@ -155,7 +155,7 @@ Configuring the Application Insights is optional. You can choose to skip the App
 ## Upgrade Windows
 <a name="predefined-windows-upgrade"></a>
 
-Use the **Windows upgrade** feature to upgrade your migrated server to a more recent verions of Windows Server ([see the full list of available OS versions](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awsec2-CloneInstanceAndUpgradeWindows.html)).
+Use the **Windows upgrade** feature to upgrade your migrated server to a more recent version of Windows Server ([see the full list of available OS versions](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awsec2-CloneInstanceAndUpgradeWindows.html)).
 
 You need the AWSApplicationMigrationSSMAccess policy, or a user-defined policy that allows the SSM document to run, to run this post-launch action. This is in addition to the [full access policy](security-iam-awsmanpol-AWSApplicationMigrationFullAccess.md):
 
@@ -279,3 +279,7 @@ This action is provided by a third party vendor, and is not available in the Gov
 This action installs the Trend Micro agent on your launched instance.
 
  [Learn more about Trend Micro](https://docs.trendmicro.com/en-us/documentation/article/trend-vision-one-aws-systems-manager-distributor)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

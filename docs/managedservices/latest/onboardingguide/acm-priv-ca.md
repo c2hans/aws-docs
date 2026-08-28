@@ -89,3 +89,7 @@ Currently, AWS Resource Access Manager (AWS RAM) cannot be used to share your AW
 ```
 
 3. AWS Private CA CRLs don't support the S3 setting "Block public access to buckets and objects granted through new access control lists (ACLs)". You must disable this setting with the S3 account and bucket in order to allow the AWS Private CA to write CRLs as mentioned in [ How to securely create and store your CRL for ACM Private CA](https://aws.amazon.com/blogs/security/how-to-securely-create-and-store-your-crl-for-acm-private-ca/) If you would like to disable, create a new RFC with ct-0xdawir96cy7k (Management \| Other \| Other \| Update) and attach a Risk Acceptance. If you have any questions on risk acceptance, reach out to your Cloud Architect.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

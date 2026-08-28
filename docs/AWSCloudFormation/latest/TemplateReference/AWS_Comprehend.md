@@ -8,11 +8,9 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_Comprehend"></a>
 
 **Resource types**
-+ [AWS::Comprehend::DocumentClassificationJob](aws-resource-comprehend-documentclassificationjob.md)
 + [AWS::Comprehend::DocumentClassifier](aws-resource-comprehend-documentclassifier.md)
-+ [AWS::Comprehend::DominantLanguageDetectionJob](aws-resource-comprehend-dominantlanguagedetectionjob.md)
-+ [AWS::Comprehend::EntitiesDetectionJob](aws-resource-comprehend-entitiesdetectionjob.md)
 + [AWS::Comprehend::Flywheel](aws-resource-comprehend-flywheel.md)
-+ [AWS::Comprehend::FlywheelDataset](aws-resource-comprehend-flywheeldataset.md)
-+ [AWS::Comprehend::SentimentDetectionJob](aws-resource-comprehend-sentimentdetectionjob.md)
-+ [AWS::Comprehend::TargetedSentimentDetectionJob](aws-resource-comprehend-targetedsentimentdetectionjob.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

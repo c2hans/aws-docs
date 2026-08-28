@@ -876,3 +876,7 @@ The following event pattern matches when any batch reaches a terminal state:
 + **Inline configuration limit** — Inline configurations (`inlineSettings`) support up to 100 entries. For larger batches, use `s3UriSettings`. This limit is not adjustable.
 + **S3 configuration file** — The S3 configuration file must be a JSON array of run setting objects. The maximum file size is 6 GB, supporting up to 100,000 run configurations.
 + **S3 file immutability** — Do not modify the S3 configuration file after submitting the batch. HealthOmics validates the file's entity tag (ETag) during submission and fails the batch if the file has changed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

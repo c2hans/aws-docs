@@ -90,3 +90,7 @@ If you use a VPC with private subnets, you must choose one of the following opti
 <a name="notebook-auto-run-constraints-service-limit"></a>
 
 Since the notebook job scheduler is built from Pipelines, SageMaker Training, and Amazon EventBridge services, your notebook jobs are subject to their service-specific quotas. If you exceed these quotas, you may see error messages related to these services. For example, there are limits for how many pipelines you can run at one time, and how many rules you can set up for a single event bus. For more information about SageMaker AI quotas, see [Amazon SageMaker AI Endpoints and Quotas](https://docs.aws.amazon.com/general/latest/gr/sagemaker.html). For more information about EventBridge quotas, see [Amazon EventBridge Quotas](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-quota.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

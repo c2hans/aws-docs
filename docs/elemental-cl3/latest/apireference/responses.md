@@ -31,3 +31,7 @@ If a request is valid, Conductor Live returns the appropriate response:
 + If a request is not valid (for example, the request or the body are badly formatted), Conductor Live returns the appropriate HTTP response, typically an error in the 4xx or 5xx range.
 + If the URL of the request is invalid (for example, the IP address is wrong), then Conductor Live returns a 404 response.
 + If the request is valid (Conductor Live understands it), but the request cannot be fulfilled for some reason, then Conductor Live returns a 422 error.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

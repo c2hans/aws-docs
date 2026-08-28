@@ -10,3 +10,7 @@ With the deterministic upgrades through versioned repositories feature, every AL
 New with AL2023, deterministic upgrading by default is enabled. This is an improvement over the manual, incremental method of locking that's used in AL2 and other earlier versions.
 
 For more information, see [Deterministic upgrades through versioned repositories on AL2023](deterministic-upgrades.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

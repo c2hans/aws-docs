@@ -34,3 +34,7 @@ When you create tables in Athena for Amazon VPC flow logs, remember the followin
 + [Create and query a table for Amazon VPC flow logs using partition projection](vpc-flow-logs-partition-projection.md)
 + [Create tables for flow logs in Apache Parquet format using partition projection](vpc-flow-logs-partition-projection-parquet-example.md)
 + [Additional resources](query-examples-vpc-logs-additional-resources.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

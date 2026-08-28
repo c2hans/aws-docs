@@ -36,3 +36,7 @@ When you add tools to AI agents, you can enhance tool accuracy and control throu
 Connect Customer reuses security profiles for Connect Customer users for AI agents, allowing you to govern the boundaries of what abilities your AI agents can perform, just as you govern the abilities your customer service representatives can take in the Connect Customer system.
 
 MCP support is available through the same interfaces as other Connect Customer AI agent features and integrates seamlessly with existing Connect Customer workflows and third-party systems. For more information, see the [Connect Customer API Reference Guide](https://docs.aws.amazon.com/connect/latest/APIReference/Welcome.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

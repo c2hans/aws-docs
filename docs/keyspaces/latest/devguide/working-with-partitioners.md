@@ -19,3 +19,7 @@ Apache Cassandra-compatible `RandomPartitioner`. The `RandomPartitioner` is the 
 The `DefaultPartitioner` returns the same `token` function results as the `RandomPartitioner`.
 
 The partitioner setting is applied per Region at the account level. For example, if you change the partitioner in US East (N. Virginia), the change is applied to all tables in the same account in this Region. You can safely change your partitioner at any time. Note that the configuration change takes approximately 10 minutes to complete. You do not need to reload your Amazon Keyspaces data when you change the partitioner setting. Clients will automatically use the new partitioner setting the next time they connect.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

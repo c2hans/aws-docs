@@ -11,3 +11,7 @@ You can share dashboards and visuals with specific users or groups in your accou
 + [Granting anyone on the internet access to an Amazon Quick Sight dashboard](share-a-dashboard-grant-access-anyone.md)
 + [Granting everyone in your Amazon Quick account access to a dashboard with the Quick Sight API](share-a-dashboard-grant-access-everyone-api.md)
 + .[Granting anyone on the internet access to an Amazon Quick Sight dashboard using the Quick Sight API](share-a-dashboard-grant-access-anyone-api.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

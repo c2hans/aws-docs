@@ -23,3 +23,7 @@ If you have experience writing ETL jobs, you can use the [AWS Glue GitHub exampl
 <a name="pricing"></a>
 
 For pricing information, see [AWS Glue pricing](https://aws.amazon.com/glue/pricing/). You can also use the [AWS Pricing Calculator](https://calculator.aws/#/createCalculator) to estimate your monthly cost for using different AWS Glue components.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

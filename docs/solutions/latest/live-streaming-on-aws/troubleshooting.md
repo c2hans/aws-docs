@@ -24,3 +24,7 @@ If you have [AWS Developer Support](https://aws.amazon.com/premiumsupport/plans/
 <a name="help-us-resolve-your-case-faster"></a>=== Help us resolve your case faster . Enter the requested information. . Choose **Next step: Solve now or contact us**.
 
 <a name="solve-now-or-contact-us"></a>=== Solve now or contact us . Review the **Solve now** solutions. . If you can’t resolve your issue with these solutions, choose **Contact us**, enter the requested information, and choose **Submit**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Live Streaming on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

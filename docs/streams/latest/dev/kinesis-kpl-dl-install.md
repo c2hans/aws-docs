@@ -15,3 +15,7 @@ Users of earlier Linux distributions can build the KPL using the build instructi
 
 **Important**
 Amazon Kinesis Producer Library (KPL) 0.x will reach end-of-support on January 30, 2026. We **strongly recommend** that you migrate your KPL applications using version 0.x to the latest KPL version before January 30, 2026. To find the latest KPL version, see the [KPL page on Github](https://github.com/awslabs/amazon-kinesis-producer). For information about migrating from KPL 0.x to KPL 1.x, see [Migrate from KPL 0.x to KPL 1.x](kpl-migration-1x.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

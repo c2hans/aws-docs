@@ -36,3 +36,7 @@ Reservation columns contain data about a reservation that applies to the line it
 | reservation\_unused\_quantity | The number of RI hours that you didn't use during this billing period. | double |
 | reservation\_unused\_recurring\_fee | The recurring fees associated with your unused reservation hours for partial upfront and no upfront RIs. Because all upfront RIs don't have recurring fees greater than `0`, the value for All Upfront RIs is `0`. | double |
 | reservation\_upfront\_value | The upfront price paid for your AWS Reserved Instance. For no upfront RIs, this value is `0`. | double |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

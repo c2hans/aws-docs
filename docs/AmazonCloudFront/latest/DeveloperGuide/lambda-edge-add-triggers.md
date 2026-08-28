@@ -18,3 +18,7 @@ When you first create a Lambda function, you can specify only *one* trigger. You
 + [CloudFront events that can trigger a Lambda@Edge function](lambda-cloudfront-trigger-events.md)
 + [Choose the event to trigger the function](lambda-how-to-choose-event.md)
 + [Add triggers to a Lambda@Edge function](lambda-edge-add-triggers-console.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

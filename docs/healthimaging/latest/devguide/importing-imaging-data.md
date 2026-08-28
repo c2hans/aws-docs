@@ -17,3 +17,7 @@ The following topics describe how to import your medical imaging data into an He
 + [Starting an import job](start-dicom-import-job.md)
 + [Getting import job properties](get-dicom-import-job.md)
 + [Listing import jobs](list-dicom-import-jobs.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

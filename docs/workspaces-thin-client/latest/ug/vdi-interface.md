@@ -17,3 +17,7 @@ For more information on each of these interfaces, please see the following:
 + For Amazon WorkSpaces see [WorkSpaces Web Access](https://docs.aws.amazon.com/workspaces/latest/userguide/amazon-workspaces-web-access.html)
 + For WorkSpaces Applications see [Web Browser Access](https://docs.aws.amazon.com/appstream2/latest/developerguide/web-browser-user.html#web-browser-access-v2)
 + For Amazon WorkSpaces Secure Browser see [Use the toolbar](https://docs.aws.amazon.com/workspaces-web/latest/adminguide/use-toolbar.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

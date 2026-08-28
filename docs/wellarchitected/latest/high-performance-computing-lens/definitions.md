@@ -42,3 +42,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
 +  **Slurm:** This is an open-source workload manager (queuer) to schedule jobs for Linux or Unix based systems. Now also known as the Slurm Workload Manager, previously Simple Linux Utility for Resource Management (Slurm). This is the default choice for scheduler for AWS ParallelCluster.
 +  **Slurm partition:** Computational resources on a cluster with a queue hosted by a Slurm system can be split across different partitions, allowing users to choose what hardware configuration to queue their jobs on to.
 +  **Spack:** Third party package management software that provides a software build and install framework to manage (chiefly scientific) software on High Performance Computing (HPC) systems efficiently.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

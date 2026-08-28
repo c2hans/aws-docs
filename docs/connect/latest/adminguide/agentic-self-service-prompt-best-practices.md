@@ -347,3 +347,7 @@ When a customer request requires multiple tool calls, instruct the AI agent to p
 <a name="prompt-bp-consecutive-tool-limits"></a>
 
 If the AI agent makes several consecutive tool calls without customer input, it should pause and check in with the customer. Instruct the AI agent to ask whether the customer would like it to continue or if they need anything else. This keeps the customer engaged and avoids situations where the AI agent works silently for an extended period.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

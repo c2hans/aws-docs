@@ -394,3 +394,7 @@ This section describes client side messages that you may receive during or after
 | RMDIR | A directory was deleted (successfully or unsuccessfully) |
 | SETSTAT | The attributes of a file are changed (successfully or unsuccessfully). Transfer Family doesn't support SETSTAT if you are using Amazon S3 for storage. The [Avoid `setstat` errors](#avoid-set-stat) section provides details on how to avoid `SetStat` errors, by turning off the setting. This avoids you receiving a `fail unsupported error`: instead, you receive `success but do nothing` message.  |
 | TLS\_RESUME\_FAILURE  | The server is configured to enforce TLS Session Resumption and the client does not support it. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

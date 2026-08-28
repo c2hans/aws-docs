@@ -154,3 +154,7 @@ If a function continuously exceeds the maximum allowed time, CloudFront throttle
 + **1 – 50** – The function is comfortably below the maximum allowed time and should run without throttling.
 + **51 – 70** – The function is nearing the maximum allowed time. Consider optimizing the function code.
 + **71 – 100** – The function is very close to or exceeds the maximum allowed time. CloudFront is likely to throttle this function if you associate it with a distribution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

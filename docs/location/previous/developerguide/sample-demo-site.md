@@ -10,3 +10,7 @@ source_url: https://docs.aws.amazon.com/location/previous/developerguide/sample-
 You can see demos with source code of Amazon Location Service in action at the [Amazon Location Demo site](https://location.aws.com/). This site includes a [hosted web demo](https://location.aws.com/demo), and also a demo app for [Android](https://play.google.com/store/apps/details?id=com.aws.amazonlocation).
 
 You can also find a wide array of samples, filterable by features, language, and platform in the site's [Samples](https://location.aws.com/samples) page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

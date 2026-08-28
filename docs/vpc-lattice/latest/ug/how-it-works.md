@@ -71,3 +71,7 @@ In summary, the proceeding diagram showed the following scenarios:
 + VPCs with ingress only connections from VPC Lattice to their resources. VPC 2 and VPC 4 represent these scenarios.
 + A VPC with egress only connections from their resources to VPC Lattice. VPC 3 represents this scenario.
 + A VPC with ingress connections from VPC Lattice to their resources and with egress connections from their resources to VPC Lattice. VPC 1 represents this scenario.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

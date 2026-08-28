@@ -86,3 +86,7 @@ The following features are included with the 7.12.0 release of Amazon EMR on EKS
 + **Hudi Full Table Access** – Starting EMR 7.12.0, EMR now supports Full Table Access (FTA) control for Apache Hudi in Apache Spark based on your policies defined in Lake Formation. This feature enables read and write operations from your Amazon EMR Spark jobs on Lake Formation registered tables when the job role has full table access.
 + **Iceberg version upgrade** – EMR 7.12.0 supports Apache Iceberg version 1.10.
 + **Logging for Livy interactive workloads** – Starting EMR 7.12.0, EMR supports extensive logging for key system components to improve troubleshooting for Livy Spark job failures. This feature will provide EMR service with access to additional Livy and SecretAgent logs to simplify troubleshooting.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

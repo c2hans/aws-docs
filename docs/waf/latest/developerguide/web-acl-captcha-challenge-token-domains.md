@@ -16,3 +16,7 @@ These features mitigate bot activity by challenging end users with CAPTCHA puzzl
 In your protection pack (web ACL) configuration, you can configure how AWS WAF manages these tokens:
 + **CAPTCHA and challenge immunity times** – These specify how long a CAPTCHA or challenge timestamp remains valid. The protection pack (web ACL) settings are inherited by all rules that don't have their own immunity time settings configured and also by the application integration SDKs. For more information, see [Setting timestamp expiration and token immunity times in AWS WAF](waf-tokens-immunity-times.md).
 + **Token domains** – By default, AWS WAF accepts tokens only for the domain of the resource that the protection pack (web ACL) is associated with. If you configure a token domain list, AWS WAF accepts tokens for all domains in the list and for the domain of the associated resource. For more information, see [AWS WAF protection pack (web ACL) token domain list configuration](waf-tokens-domains.md#waf-tokens-domain-lists).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

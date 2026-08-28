@@ -32,8 +32,11 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Glue::Session](aws-resource-glue-session.md)
 + [AWS::Glue::Table](aws-resource-glue-table.md)
 + [AWS::Glue::TableOptimizer](aws-resource-glue-tableoptimizer.md)
-+ [AWS::Glue::TableVersion](aws-resource-glue-tableversion.md)
 + [AWS::Glue::Trigger](aws-resource-glue-trigger.md)
 + [AWS::Glue::UsageProfile](aws-resource-glue-usageprofile.md)
 + [AWS::Glue::UserDefinedFunction](aws-resource-glue-userdefinedfunction.md)
 + [AWS::Glue::Workflow](aws-resource-glue-workflow.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

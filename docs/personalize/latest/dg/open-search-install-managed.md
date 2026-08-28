@@ -19,3 +19,7 @@ The following resources provide additional information about using Amazon OpenSe
 + For more detailed steps about configuring OpenSearch Service domains, see [Creating and managing Amazon OpenSearch Service domains](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/createupdatedomains.html).
 + For a concise tutorial for uploading a small amount of test data to OpenSearch Service, see [Step 2: Upload data to Amazon OpenSearch Service for indexing](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/gsg.html#gsgupload-data) in the "Getting started" section of the *Amazon OpenSearch Service Developer Guide*.
 + For complete information about ingesting data, see [Indexing data in Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/indexing.html) in the *Amazon OpenSearch Service Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -97,3 +97,7 @@ Progressive delivery:
 | Extentensibility | Supports custom lugins. Limited customization options. | Supports custom controller. Good extensibility and third-party integrations. |
 | Cummunity support | Large and active community. | Smaller but growing community. |
 | Scalability | Good scalability, but limited by the web UI's data-fetching rate. Community analysis suggests support for tens of thousands of applications. | Clear guides for horizontal and vertical scalability, up to tens of thousands of applications. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

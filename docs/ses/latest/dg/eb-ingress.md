@@ -292,3 +292,7 @@ For **Key**, you must only enter `password` (anything else will cause authentica
 1. To edit an ingress endpoint, select its name to open its summary page:
    + You can change the endpoint's active status or TLS policy (for supported configurations) by choosing **Edit** in **General details** followed by **Save changes**.
    + You can select a different rule set or traffic policy by choosing **Edit** in either **Rule set** or **Traffic policy** followed by **Save changes**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

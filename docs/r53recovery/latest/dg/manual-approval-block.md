@@ -37,7 +37,6 @@ By configuring a manual approval execution block, you can require an approval as
 
 This block does not support ungraceful execution mode.
 
-## What is evaluated as part of plan evaluation
-<a name="manual-approval-block-eval"></a>
+## See also
 
-When Region switch evaluates your plan, Region switch performs several checks on your manual approval execution block configuration and permissions. Region switch verifies that the configured role is a valid ARN, that the role is for the same account that owns the plan, and that the role has `arc-region-switch:ApprovePlanExecutionStep` permission. If any of the checks fail, Region switch returns warning messages, which you can view in the console. Or, you can receive the validation warnings through or by using API operations.
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

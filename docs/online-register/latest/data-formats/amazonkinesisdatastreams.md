@@ -23,3 +23,7 @@ Amazon Kinesis Data Streams provides the following APIs for data retrieval.
 | <a name="kinesis-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListTagsForResource.html) | List the tags for the specified Amazon Kinesis resource | Read |
 | <a name="kinesis-ListTagsForStream"></a>[ListTagsForStream](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_ListTagsForStream.html) | List the tags for the specified Amazon Kinesis stream | Read |
 | <a name="kinesis-SubscribeToShard"></a>[SubscribeToShard](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_SubscribeToShard.html) | Listen to a specific shard with enhanced fan-out | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

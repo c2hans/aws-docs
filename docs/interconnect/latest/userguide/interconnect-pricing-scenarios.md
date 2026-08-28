@@ -43,3 +43,7 @@ In this case, there is no change in Tier to your existing Interconnect as it doe
 Your new Interconnect provisioned in Sydney will be automatically subscribed to Tier 4 as it needs to reach your CNEs in Germany and the United States and that is the lowest Tier that now includes the Tier 3 path between the Interconnect in Sydney and the Oregon Region, the Tier 2 path between Sydney and the N. Virginia Region, and the Tier 4 path between Sydney and the Frankfurt Region. You now have two Interconnects subscribed to Tiers 3 and 4, respectively, as those are the lowest possible Tiers that include all the possible paths for the specific Interconnect.
 
 ![Example 4 - Global intercontinental multiple Interconnects diagram](http://docs.aws.amazon.com/interconnect/latest/userguide/images/pricing-example4.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Interconnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query interconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

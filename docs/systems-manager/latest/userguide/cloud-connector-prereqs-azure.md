@@ -9,7 +9,7 @@ source_url: https://docs.aws.amazon.com/systems-manager/latest/userguide/cloud-c
 
 Complete the following steps in your Azure environment. You need the following values from the AWS prerequisites:
 + **Issuer URL** — The AWS OIDC issuer URL from the previous section.
-+ **Subject** — The ARN of the Systems Manager Azure federation role, for example: `arn:aws:iam::{{ACCOUNT_ID}}:role/service-role/SSM-AzureRole-{{connector-name}}-{{id8}}`
++ **Subject** — The ARN of the Systems Manager Azure federation role, for example: `arn:aws:iam::{{ACCOUNT_ID}}:role/service-role/SSM-AzureRole-{{connector-name}}`
 
 **To set up the Azure side of the federation**
 
@@ -27,7 +27,7 @@ Complete the following steps in your Azure environment. You need the following v
 
 **Create a service principal for the application**
 
-   Create a service principal associated with the application. Note the service principal *ID* from the output.
+   Create a service principal associated with the application. The command output includes an `id` field, which is the service principal's object ID. Note this `id` (object ID) value. It is the {{SERVICE\_PRINCIPAL\_ID}} that you use later as the `--assignee` in the role-assignment steps (Step 5).
 
    ```
    az ad sp create --id {{APPLICATION_ID}}
@@ -45,7 +45,7 @@ Complete the following steps in your Azure environment. You need the following v
        --parameters "{
            \"name\": \"aws-ssm-federation\",
            \"issuer\": \"{{AWS_OIDC_ISSUER_URL}}\",
-           \"subject\": \"arn:aws:iam::{{ACCOUNT_ID}}:role/service-role/SSM-AzureRole-{{CONNECTOR_NAME}}-{{ID8}}\",
+           \"subject\": \"arn:aws:iam::{{ACCOUNT_ID}}:role/service-role/SSM-AzureRole-{{CONNECTOR_NAME}}\",
            \"audiences\": [\"api://AzureADTokenExchange\"]
        }"
    ```
@@ -54,8 +54,7 @@ Complete the following steps in your Azure environment. You need the following v
    + {{APPLICATION\_ID}} — The application (client) ID from Step 1.
    + {{AWS\_OIDC\_ISSUER\_URL}} — The AWS OIDC issuer URL (for example, `https://a1667813-695b-5415-b0f7-d473d62bb123.tokens.sts.global.api.aws`).
    + {{ACCOUNT\_ID}} — Your AWS account ID.
-   + {{CONNECTOR\_NAME}} — The sanitized display name of your Cloud Connector.
-   + {{ID8}} — The first eight characters of the UUID assigned to the Azure federation role. You can find this in the role name after creating the Cloud Connector in the AWS Management Console, or specify it when creating the role manually (see [Azure federation role](cloud-connector-azure-federation-role.md)).
+   + {{CONNECTOR\_NAME}} — The name component of the Systems Manager Azure federation role. On the AWS CLI or API path, you create this role yourself before you create the Cloud Connector, so you choose its name. Use the same role ARN for this `subject` that you use for `--role-arn` in the [Step 2: Create a Systems Manager Cloud Connector](cloud-connector-create-ssm-connector.md) step. For the role's trust and permissions policies, see [Azure federation role](cloud-connector-azure-federation-role.md).
 
 1.
 
@@ -137,11 +136,17 @@ Complete the following steps in your Azure environment. You need the following v
        --query appId
    ```
 
-   Create a service principal for the AWS Config application:
+   Replace:
+   + {{ACCOUNT\_ID}} — Your AWS account ID.
+   + {{TENANT\_ID\_PREFIX}} — The leading characters of your Azure tenant ID. This prefix exists only to make the application display name unique. You can use any short, recognizable portion of the tenant ID.
+
+   Create a service principal for the AWS Config application. The {{CONFIG\_APPLICATION\_ID}} is the `appId` value returned by the preceding `az ad app create` command in this step.
 
    ```
    az ad sp create --id {{CONFIG_APPLICATION_ID}}
    ```
+
+   The `az ad sp create` output includes an `id` (object ID) field, which is the {{CONFIG\_SERVICE\_PRINCIPAL\_ID}} value that you use in the later Reader-role and Event Hubs role-assignment steps.
 
 1.
 
@@ -265,3 +270,7 @@ After completing the Azure setup, note the following values. You need them when 
 + **Config Application (Client) ID** — The application ID of the AWS Config Azure AD app (Step 6).
 + **Subscription IDs** — The Azure subscriptions you want to manage.
 + **Event Hub namespace hostname** — The fully qualified hostname of the Event Hub namespace (for example, `{{EVENT_HUB_NAMESPACE}}.servicebus.windows.net`).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

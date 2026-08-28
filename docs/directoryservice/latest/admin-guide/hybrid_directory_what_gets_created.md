@@ -163,3 +163,7 @@ Directory Service creates a set of security groups in the AWS Reserved OU. Each 
 | AWS Object Management Service Accounts | Highly privileged group for managing AWS hybrid directory full control over users and groups in customer OU. |
 | AWS Private CA Connector for AD Delegated Group | Used by AWS Private CA Connector for AD READ access to customer OU, READ/WRITE for CA objects. |
 | AWS Application and Service Delegated Group | Used for AWS Application/Service delegation manages SPNs on computer objects and creates GPOs. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

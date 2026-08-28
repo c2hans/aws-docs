@@ -57,3 +57,7 @@ Use the following procedure to configure report auto-discovery using project env
    1. To disable report auto-discover, for **Name**, enter **CODEBUILD\_CONFIG\_AUTO\_DISCOVER** and for **Value**, enter **false**. This disables report auto-discover.
 
    1. (Optional) For **Name**, enter **CODEBUILD\_CONFIG\_AUTO\_DISCOVER\_DIR** and for **Value**, enter the directory where CodeBuild should search for supported report format files. For example, `output/*xml` searches for `.xml` files in the `output` directory
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

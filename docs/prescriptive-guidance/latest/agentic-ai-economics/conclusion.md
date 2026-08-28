@@ -25,3 +25,7 @@ The following resources can help you plan, design, and implement agentic AI syst
 + [Amazon Bedrock documentation](https://docs.aws.amazon.com/bedrock/) (AWS service)
 + [Cost optimization pillar](https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/) (AWS Well-Architected Framework)
 + [AI agents and solutions](https://aws.amazon.com/marketplace/search/results?searchTerms=AI+agents) (AWS Marketplace)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

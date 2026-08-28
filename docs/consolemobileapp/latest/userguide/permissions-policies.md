@@ -110,3 +110,7 @@ The following shows an example of the denial response:
 ```
 {"message": "User: arn:aws:iam::123456789012:user/testUser-readOnly is not authorized to perform: consoleapp:GetDeviceIdentity on resource: arn:aws:consoleapp::123456789012:device/2FQVtmveB13WEXAMPL3D3V1D/identity/123456789012 with an explicit deny"}
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Console Mobile Application. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query consolemobileapp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,3 +47,7 @@ Use the command line or API to create an AWS Cloud WAN transit gateway route tab
 
 **To create a transit gateway route table attachment using the command line or API**
 + Use `create-transit-gateway-route-table-attachment`. See [create-transit-gateway-route-table-attachment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/networkmanager/create-transit-gateway-route-table-attachment.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

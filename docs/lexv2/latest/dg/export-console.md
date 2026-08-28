@@ -46,3 +46,7 @@ To download the export again, on the import/export list, choose the export, and 
 After you start the export, you return to the list of languages. To monitor the progress of the export, use the **Import/export history** list. When the status of the export is **Complete**, the console automatically downloads the .zip file to your computer.
 
 To download the export again, on the import/export list, choose the export, and then choose **Download**. You can provide a password for the downloaded .zip file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -303,3 +303,7 @@ You can get these images from [AWS Marketplace](https://aws.amazon.com/marketpla
 If you're using SSH to connect to the instances running on a Snowball Edge, you can use your own key pair or you can create one on the Snowball Edge. To use AWS OpsHub to create a key pair on the device, see [Working with key pairs for EC2-compatible instances in AWS OpsHub](working-with-key-pair.md). To use the AWS CLI to create a key pair on the device, see `create-key-pair` in [List of supported EC2-compatible AWS CLI commands on a Snowball Edge](using-ec2-endpoint.md#list-cli-commands-ec2-edge). For more information on key pairs and Amazon Linux 2, see [Amazon EC2 key pairs and Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html) in the Amazon EC2 User Guide.
 
 For information specific to using compute instances on a device, see [Using Amazon EC2-compatible compute instances on Snowball Edge](using-ec2.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

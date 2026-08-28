@@ -51,3 +51,7 @@ The AWS Marketplace Catalog API has the following quotas.
 
 **Note**
  Change requests and entities are different. Entities exist perpetually regardless of their type or state. For example, [seller product](https://docs.aws.amazon.com/marketplace/latest/APIReference/work-with-seller-products.html), [offer](https://docs.aws.amazon.com/marketplace/latest/APIReference/work-with-private-offers.html), [resale authorization](https://docs.aws.amazon.com/marketplace/latest/APIReference/work-with-resale-authorizations.html), and [private marketplace experience](https://docs.aws.amazon.com/marketplace/latest/APIReference/work-with-private-marketplace.html) *entities* are never deleted even if they are in the draft state.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

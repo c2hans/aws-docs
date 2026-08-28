@@ -121,3 +121,7 @@ Track delivery, engagement, chat conversion, and dismissal in the Connect Custom
 <a name="web-notification-limitations"></a>
 
 For limitations that apply to web notification, see [Limitations](customer-profiles-web-tracker-and-notification.md#web-tracker-and-notification-limitations).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

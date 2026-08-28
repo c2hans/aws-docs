@@ -20,3 +20,7 @@ Beyond automatically replicating your file system's data to ensure high durabili
 <a name="scheduled-replication-datasync"></a>
 
 You can use AWS DataSync to schedule periodic replication of your FSx for Windows File Server file system to a second file system. This capability is available for both in-Region and cross-Region deployments. To learn more, see [Migrating existing files to FSx for Windows File Server using AWS DataSync](migrate-files-to-fsx-datasync.md) in this guide and [Data transfer between AWS storage services](https://docs.aws.amazon.com/datasync/latest/userguide/how-datasync-works.html#in-cloud-transfer) in the *AWS DataSync User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

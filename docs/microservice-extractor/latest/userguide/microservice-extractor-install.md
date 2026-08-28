@@ -117,3 +117,7 @@ To use the runtime profiling agent on your application, you must configure the f
    ```
 
 When the manual configuration completes, the runtime profiler automatically captures metrics when you run your application. Perform typical workloads and test cases while running your application to capture relevant metrics for an application assessment. After shutting down the application pool in IIS, a `.csv` file will be created by the profiler for you to upload to the Microservice Extractor tool for the assessment. You can find the `.csv` file at the output directory configured in the previous step for `SERVICEEXTRACT_PROFILER_OUTPUT_DIR`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

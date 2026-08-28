@@ -12,3 +12,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pi
 + [SUS05-BP02 Use instance types with the least impact](sus_sus_hardware_a3.md)
 + [SUS05-BP03 Use managed services](sus_sus_hardware_a4.md)
 + [SUS05-BP04 Optimize your use of hardware-based compute accelerators](sus_sus_hardware_a5.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

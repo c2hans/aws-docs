@@ -36,3 +36,7 @@ This example illustrates two important features of an embedded passthrough workf
 1. Complete the first group of mapping fields with **1**, **ENG**, and **English **and the second group with **2**, **FRE**, and **French**.
 
 1. Finish setting up the event and save it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

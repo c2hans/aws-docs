@@ -40,3 +40,7 @@ To allow users to assume the current role again within a role session, specify t
 + [Switch to an IAM role (AWS API)](id_roles_use_switch-role-api.md)
 + [Use an IAM role to grant permissions to applications running on Amazon EC2 instances](id_roles_use_switch-role-ec2.md)
 + [Use instance profiles](id_roles_use_switch-role-ec2_instance-profiles.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

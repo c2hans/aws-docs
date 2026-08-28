@@ -61,3 +61,7 @@ If you want to specify target steps or target time intervals to profile your tra
   To find more information about available profiling options, see [SageMaker Debugger APIs – FrameworkProfile](https://sagemaker.readthedocs.io/en/stable/api/training/debugger.html#sagemaker.debugger.FrameworkProfile) in the [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable).
 
   The next section shows you how to script the available profiling options.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

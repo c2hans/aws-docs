@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/Agent-Related-FAQ.html
 
 NEW - You can now accelerate your migration and modernization with AWS Transform. Read [Getting Started](https://docs.aws.amazon.com/transform/latest/userguide/getting-started.html) in the *AWS Transform User Guide*.
 
-# Agent related
+# Agent related FAQs
 <a name="Agent-Related-FAQ"></a>
 
 This section contains answers to questions about the AWS Replication Agent.
@@ -67,7 +67,7 @@ Make sure the proxy has a trailing forward slash.
 Ensure that you have allowlisted the [MGN IPs and URLs](preparing-environments.md#TCP-443) for both SSL Interception and Authentication.
 
 **Note**
-A web proxy cannot be used for communication between the source server and the staging area subnet where replication server launched for replication over TCP Port 1500. To use private routing for data replication, please see [Data routing and throttling](replication-server-settings.md#data-routing).
+A web proxy cannot be used for communication between the source server and the staging area subnet where replication server launched for replication over TCP Port 1500. To use private routing for data replication, see [Data routing and throttling](replication-server-settings.md#data-routing).
 
 ## What are the prerequisites needed to install the AWS Replication Agent?
 <a name="What-Pre-Requisites-Agent"></a>
@@ -89,7 +89,7 @@ The AWS Replication Agent installer requires root privileges or the use of the s
 ## Is it possible to install the agent on servers running operating systems that are not listed as supported?
 <a name="Agent-installation-on-unsupported-operating-system"></a>
 
-The agent is designed and tested to work on the officially supported operating systems listed in the documentation. Installing the agent on other unsupported operating systems may be possible but is not recommended. Any installation or replication issues encountered when using unsupported operating systems will need to be handled through your own troubleshooting or support channels, as the AWS engineering team will be limited in their ability to assist. We advise using the agent only on supported OS versions to ensure the best experience. Please refer to [Supported operating systems](Supported-Operating-Systems.md).
+The agent is designed and tested to work on the officially supported operating systems listed in the documentation. Installing the agent on other unsupported operating systems might be possible but is not recommended. Any installation or replication issues encountered when using unsupported operating systems will need to be handled through your own troubleshooting or support channels, as the AWS engineering team will be limited in their ability to assist. We advise using the agent only on supported OS versions to ensure the best experience. Refer to [Supported operating systems](Supported-Operating-Systems.md).
 
 ## What kind of resources does the AWS Replication Agent use?
 <a name="What-Resources-Agent"></a>
@@ -157,7 +157,7 @@ When you are adding a disk to a source server, AWS Transform MGN will not automa
 
 The only way to get this disk to replicate is to reinstall the agent. Before reinstalling, you can note the current **Total replicated storage**. When you reinstall the agent, you will notice the value of replicated storage changes.
 
-You will also notice an additional progress bar appear, which indicates that we are rescanning the original volumes. This is not a resync, but a scan, to verify that all the blocks on the source still match the blocks on the replication side. This process is significantly quicker than a resync, as there is no actual block data transferred, unless there is a difference. This is needed, as a reinstall results in the driver which performs the IO tracking being unloaded and reset, so we have no way of being certain of the sync status. Whilst the rescan on the original volumes is happening, the agent is also ensuring that the initial sync of the new volume is being completed in parallel.
+You will also notice an additional progress bar appear, which indicates that we are rescanning the original volumes. This is not a resync, but a scan, to verify that all the blocks on the source still match the blocks on the replication side. This process is significantly quicker than a resync, as there is no actual block data transferred, unless there is a difference. This is needed, as a reinstall results in the driver which performs the IO tracking being unloaded and reset, so we have no way of being certain of the sync status. While the rescan on the original volumes is happening, the agent is also ensuring that the initial sync of the new volume is being completed in parallel.
 
 ## Is the AWS Replication Agent installed on launched test and cutover instances?
 <a name="agent-transfer-instance"></a>
@@ -202,3 +202,7 @@ Rescans can still happen following a hard reboot, crashes, or when you add or re
 
 **Note**
 For Linux, no-rescan on reboot is supported only on environments that use initramfs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

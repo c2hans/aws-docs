@@ -30,3 +30,7 @@ Before updating a file, make sure that the new file has the same fields in the s
 1. Choose **Confirm file update** on the following page. A preview of some of the sheet columns is shown for your reference.
 
    A message that the file updated successfully appears at top right and the table preview updates to show the new file data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

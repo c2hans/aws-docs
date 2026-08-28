@@ -122,3 +122,7 @@ Use the following procedure to delete a Amazon Quick user account.
 1. Do one of the following:
    + If you chose to transfer user resources, enter the user name of the account to transfer them to and then choose **Delete and transfer resources**.
    + If you chose to delete user resources, choose **Delete**. You can't undo this action.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

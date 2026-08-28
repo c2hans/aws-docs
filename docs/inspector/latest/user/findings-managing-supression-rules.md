@@ -78,3 +78,7 @@ After you delete a suppression rule, new and existing occurrences of findings th
 1. Select the check box next to the title of the suppression rule you want to delete.
 
 1. Choose **Delete**, and then confirm your choice to permanently delete the rule.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

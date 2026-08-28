@@ -22,3 +22,7 @@ The AWS Sign-In Data Plane implements OAuth 2.0 flows for AWS CLI authentication
 
 **Note**
  AWS Sign-In Data Plane uses the `signin` namespace.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

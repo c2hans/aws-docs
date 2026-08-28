@@ -28,3 +28,7 @@ The set of sample schemas provided by default in the Directory Service console. 
 <a name="key_concepts_customschemas"></a>
 
 One or more schemas defined by a user that can be uploaded from the Schemas section or during the Cloud Directory creation process of the Directory Service console, or created by API calls.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

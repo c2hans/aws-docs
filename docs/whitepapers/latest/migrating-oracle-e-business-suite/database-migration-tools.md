@@ -41,3 +41,7 @@ To reduce the number of migration steps, its recommended to use logical hostname
 <a name="oracle-transportable-tablespaces"></a>
 
  The Oracle transportable tablespace feature enables you to move a set of tablespaces from one Oracle database to another. To move or copy a set of tablespaces, you must make the tablespaces read-only, copy the data files of these tablespaces, and use Export and Import to move the database information (metadata) stored in the data dictionary. After copying the data files and exporting the metadata, you can optionally put the tablespaces in read/write mode.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

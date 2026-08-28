@@ -21,3 +21,7 @@ To get started with AWS, you need an AWS account. For information about creating
 <a name="gettingstarted-prereqs-create"></a>
 
 You can create an empty resource group, but won't be able to perform any tasks on resource group members until there are resources in the group. For more information about the supported resource types, see [Resource types you can use with AWS Resource Groups and Tag Editor](supported-resources.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Resource Groups. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ARG` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

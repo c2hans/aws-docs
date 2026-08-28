@@ -172,3 +172,7 @@ You can create a launch template that contains the configuration information nee
 You can leverage launch templates to launch EFA-enabled instances with other AWS services, such as [AWS Batch](https://docs.aws.amazon.com/batch/latest/userguide/what-is-batch.html) or [AWS ParallelCluster](https://docs.aws.amazon.com/parallelcluster/latest/ug/what-is-aws-parallelcluster.html).
 
 For more information about creating launch templates, see [Create an Amazon EC2 launch template](create-launch-template.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

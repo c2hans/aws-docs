@@ -254,3 +254,7 @@ SSH keys are used only by servers that are enabled for Secure Shell (SSH) File T
 1. Under **Users**, choose a username to see the **User details** page.
 
 1. To delete a public key, select its SSH key check box and choose **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

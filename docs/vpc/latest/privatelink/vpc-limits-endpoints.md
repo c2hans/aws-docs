@@ -28,3 +28,7 @@ The following considerations apply to traffic that passes through a VPC endpoint
 + The maximum transmission unit (MTU) of a network connection is the size, in bytes, of the largest permissible packet that can be passed through a VPC endpoint. The larger the MTU, the more data that can be passed in a single packet. A VPC endpoint supports an MTU of 8500 bytes. Packets with a size larger than 8500 bytes that arrive at the VPC endpoint are dropped.
 + Path MTU Discovery (PMTUD) is not supported. VPC endpoints do not generate the following ICMP message: `Destination Unreachable: Fragmentation needed and Don't Fragment was Set` (Type 3, Code 4).
 + VPC endpoints enforce Maximum Segment Size (MSS) clamping for all packets. For more information, see [RFC879](https://datatracker.ietf.org/doc/html/rfc879).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

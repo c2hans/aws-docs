@@ -176,3 +176,7 @@ You can add one or more data consumers to the datashares. Data consumers can be 
 You must explicitly choose to turn off or turn on sharing your datashare to clusters with public access.
 + Choose **Add namespaces to the datashare**. Namespaces are globally unique identifier (GUID) for Amazon Redshift cluster.
 + Choose **Add AWS accounts** to the datashare. The specified AWS accounts must have access permissions to the datashare.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -579,3 +579,7 @@ Now that you know the criteria by which you will be evaluating your ML service o
 +  [AWS Inferentia and AWS Trainium deliver lowest cost to deploy Llama 3 models in Amazon SageMaker AI JumpStart](https://aws.amazon.com/blogs/machine-learning/aws-inferentia-and-aws-trainium-deliver-lowest-cost-to-deploy-llama-3-models-in-amazon-sagemaker-jumpstart/)
 +  [Revolutionize Customer Satisfaction with tailored reward models for your business on Amazon SageMaker AI](https://aws.amazon.com/blogs/machine-learning/revolutionize-customer-satisfaction-with-tailored-reward-models-for-your-business-on-amazon-sagemaker/)
 +  [Amazon Personalize launches new recipes supporting larger item catalogs with lower latency](https://aws.amazon.com/blogs/machine-learning/amazon-personalize-launches-new-recipes-supporting-larger-item-catalogs-with-lower-latency/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Decision Guides. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query decision-guides` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

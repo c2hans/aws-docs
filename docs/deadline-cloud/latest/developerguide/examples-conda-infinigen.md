@@ -21,3 +21,7 @@ Submit the build from the `conda_recipes` directory:
 To reuse conda environments between jobs, attach the [conda\_queue\_env\_improved\_caching.yaml](https://github.com/aws-deadline/deadline-cloud-samples/blob/mainline/queue_environments/conda_queue_env_improved_caching.yaml) queue environment to your queue. The dependency closure of Infinigen contains many gigabytes of packages, so caching saves significant time and bandwidth.
 
 For a job bundle that uses this package, see [Generate procedural 3D scenes with Infinigen on Deadline Cloud](examples-jb-infinigen.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

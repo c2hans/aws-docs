@@ -111,3 +111,7 @@ To return control of automated backups to Amazon RDS or Aurora, first delete the
 When you run `DisassociateRecoveryPoint` or `DeleteRecoveryPoint`, AWS Backup calls the `ModifyDBInstance` API for Amazon RDS instances or the `ModifyDBCluster` API for Aurora clusters, and applies the change immediately. If there are any pending configuration changes on Amazon RDS or Aurora, those changes are also applied immediately. There may be a brief downtime during this operation.
 
 For more information, see [How can I stop an Amazon RDS continuous backup in AWS Backup?](https://repost.aws/knowledge-center/backup-stop-rds-continuous-backup)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

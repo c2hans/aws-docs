@@ -18,13 +18,13 @@ You can attach `AWSSupportPlansReadOnlyAccess` to your users, groups, and roles.
 <a name="AWSSupportPlansReadOnlyAccess-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: September 27, 2022, 18:08 UTC
-+ **Edited time:** September 09, 2024, 21:21 UTC
++ **Edited time:** August 24, 2026, 18:17 UTC
 + **ARN**: `arn:aws:iam::aws:policy/AWSSupportPlansReadOnlyAccess`
 
 ## Policy version
 <a name="AWSSupportPlansReadOnlyAccess-version"></a>
 
-**Policy version:** v2 (default)
+**Policy version:** v3 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -40,7 +40,10 @@ The policy's default version is the version that defines the permissions for the
       "Action" : [
         "supportplans:GetSupportPlan",
         "supportplans:GetSupportPlanUpdateStatus",
-        "supportplans:ListSupportPlanModifiers"
+        "supportplans:ListSupportPlanModifiers",
+        "supportplans:GetSupportAgreement",
+        "supportplans:ListSupportAgreements",
+        "supportplans:ListSupportAgreementRevisions"
       ],
       "Resource" : "*"
     }
@@ -54,3 +57,7 @@ The policy's default version is the version that defines the permissions for the
 + [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)
 + [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
 + [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Policy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-managed-policy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -82,3 +82,7 @@ To resolve integration issues:
 1. Create a new zero-ETL integration with the same or updated configuration.
 
 This process will result in a complete re-initialization of the data pipeline, which may take time depending on the size of your source database.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

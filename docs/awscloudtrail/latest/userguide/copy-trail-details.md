@@ -49,3 +49,7 @@ For each copy failure, review the following error information.
 +  The **Error type** - Provides the error type. For example, an **Error type** of `AccessDenied`, indicates that the error occurred because of a permissions issue. For more information about the required permissions for copying trail events, see [Required permissions for copying trail events](cloudtrail-copy-trail-to-lake-eds.md#copy-trail-events-permissions).
 
 After resolving any failures, choose **Retry copy**. When you retry a copy, CloudTrail resumes the copy at the location where the failure occurred.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

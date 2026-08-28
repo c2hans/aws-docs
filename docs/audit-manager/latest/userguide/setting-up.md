@@ -25,3 +25,7 @@ This chapter will walk you through the prerequisites, account setup, user permis
   + [Set up recommended Audit Manager features](setup-recommendations.md#setup-recommendations-features)
   + [Set up recommended integrations with other AWS services](setup-recommendations.md#setup-recommendations-services)
   + [Next steps](setup-recommendations.md#whatnow-setup)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

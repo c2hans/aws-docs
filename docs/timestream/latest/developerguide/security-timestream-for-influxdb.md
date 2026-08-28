@@ -29,3 +29,7 @@ This documentation will help you understand how to apply the shared responsibili
 + [Incident response in Timestream for InfluxDB](IncidentResponse-timestream-for-influxdb.md)
 + [Amazon Timestream for InfluxDB API and interface VPC endpoints (AWS PrivateLink)](timestream-influxb-privatelink.md)
 + [Security best practices for Timestream for InfluxDB](security-best-practices.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

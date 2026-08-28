@@ -45,3 +45,7 @@ After you complete these steps, the member who can query can start running queri
 When using differential privacy in AWS Clean Rooms, consider the following:
 + The member who can receive results can't use differential privacy. They will configure a custom analysis rule with differential privacy turned off for their configured tables.
 + The member who can query can't join tables from two or more data providers when both have differential privacy turned on.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

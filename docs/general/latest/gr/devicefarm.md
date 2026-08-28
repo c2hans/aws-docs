@@ -28,3 +28,7 @@ The following are the service endpoints and service quotas for this service.
 | Remote access session length in minutes | Each supported Region: 150 | No | The maximum length of a remote access session per device in minutes. |
 | Test run timeout per device in minutes | Each supported Region: 150 | No | The maximum length of an automation test run per device in minutes. |
 | Uploaded file size | Each supported Region: 4 Gigabytes | No | The maximum size of a file to be uploaded. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

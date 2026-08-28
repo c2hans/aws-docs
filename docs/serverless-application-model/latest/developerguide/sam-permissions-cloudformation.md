@@ -60,3 +60,7 @@ The service principal, if needed for the service's actions.
 For example, if you add a Step Functions workflow, you may need to add permissions for actions listed [here](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsstepfunctions.html#awsstepfunctions-actions-as-permissions), and the `states.amazonaws.com` service principal.
 
 For more information about IAM policies, see [Managing IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage.html) in the *IAM User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

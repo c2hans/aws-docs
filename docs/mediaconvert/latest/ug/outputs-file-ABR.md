@@ -27,3 +27,7 @@ The following illustration shows a MediaConvert job that generates two standalon
 ![MediaConvert job generating two standalone .mp4 files, two Apple HLS packages, and a CMAF package.](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/jobSetupToOutput.png)
 
 For information about setting up output groups and outputs within your job, see [Tutorial: Configuring job settings](setting-up-a-job.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

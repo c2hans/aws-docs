@@ -21,3 +21,7 @@ You can set up each output video encode to handle the color space in different w
 **Scope of handling in outputs**
 
 You can set up each output in the channel for different handling. For example, you can set up one output to convert the color space to HDR10, set up one output to convert to HLG, and set up another output to pass through the color space. For more information, see [Passing through the color space](color-space-options-passthrough.md) and [Converting the color space](color-space-options-convert.md) .
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

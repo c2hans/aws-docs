@@ -96,3 +96,7 @@ The `AWSServiceRoleForProcurementInsightsPolicy` must have the following IAM per
 For more information about creating policies, see [Policies and permissions in AWS Identity and Access Management](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html), in the *IAM User Guide*.
 
 For more information about the AWS Organizations actions that the policy uses, see the [AWS Organizations API reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_Operations.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

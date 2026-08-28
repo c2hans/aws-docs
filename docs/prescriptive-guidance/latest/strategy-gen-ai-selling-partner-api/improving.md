@@ -11,3 +11,7 @@ To continuously improve and optimize your analytics and generative AI strategies
 + **Prioritize user feedback** – Actively gather feedback from the Amazon seller, vendor, and brand community to understand evolving needs and pain points. Incorporate this user input into your application's development roadmap to make sure that the solution remains relevant and continues to deliver maximum value.
 
 By continuously monitoring performance, using advanced analytics and ML techniques, and prioritizing user feedback, you can make sure that the application remains a robust, adaptable, and indispensable tool. This commitment to ongoing optimization and evolution helps you make increasingly data-driven decisions, drive measurable business impact, and stay ahead of the competition.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -173,3 +173,7 @@ For more information, see [LogConfiguration:secretOptions](https://docs.aws.amaz
    1. For **Dependencies - *optional***, choose **Add container dependencies**. Choose the name of the container and it's state to determine when this container starts.
 
 1. If you only have one container configured then you must choose **Add container** and complete configuring the new container. Otherwise, choose **Next** to review.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

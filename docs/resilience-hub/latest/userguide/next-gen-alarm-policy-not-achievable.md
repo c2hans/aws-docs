@@ -23,3 +23,7 @@ aws cloudwatch put-metric-alarm \
 ```
 
 This alarm enters the `ALARM` state when any assessment in the evaluation period reports that the policy is not achievable (metric value 0.0). The `--treat-missing-data notBreaching` setting ensures the alarm does not trigger between assessments when no data points are present.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

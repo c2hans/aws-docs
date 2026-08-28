@@ -11,3 +11,7 @@ To remove the resources that were created when you enabled AWS DevOps Agent from
 The AWS-managed policies attached to the IAM roles (`AIDevOpsAgentAccessPolicy` and `AIDevOpsOperatorAppAccessPolicy`) are detached but not deleted, because these policies are owned by AWS.
 
 When you follow that procedure, note that your resources have the names listed in [Resources created for AWS DevOps Agent activated from AWS Support](support-devops-agent-resources.md), and they are all in `us-east-1`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

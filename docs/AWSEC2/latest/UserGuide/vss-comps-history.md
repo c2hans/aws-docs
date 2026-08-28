@@ -49,3 +49,7 @@ The following table shows which AWS VSS solution versions you should run on each
 | Windows Server 2012 R2 | 2.1.0 | not supported | 2012R2 |
 | Windows Server 2012 | 2.1.0 | not supported | 2012R2 |
 | Windows Server 2008 R2 | 1.3.1.0 | not supported | 2008R2 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

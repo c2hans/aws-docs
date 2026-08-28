@@ -48,3 +48,7 @@ API Gateway is a good choice for RESTful web services and real-time WebSocket co
 Both REST and WebSocket APIs can directly integrate with many AWS services without requiring separate compute resources such as Lambda functions. This can improve performance and reduce cost.
 
 REST APIs support both path-based and header-based routing, and you can use them separately or together. A common pattern is to provide a REST API as a front door for a number of APIs, to implement shared concerns as discussed earlier, and then behave like a reverse proxy and route authorized requests to the correct API endpoint.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

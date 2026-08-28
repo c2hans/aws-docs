@@ -23,3 +23,7 @@ You can't change a thing type name after it has been created. You can deprecate 
 + [Update a thing type](update-thing-type.md)
 + [Deprecate a thing type](deprecate-thing-type.md)
 + [Delete a thing type](delete-thing-types.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

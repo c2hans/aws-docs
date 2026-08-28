@@ -286,3 +286,7 @@ This docstring provides a high-level summary of the function's purpose, the inpu
 Sources: [1] Define Lambda function handler in C\# - AWS Lambda [https://docs.aws.amazon.com/lambda/latest/dg/csharp-handler.html - :\~:text=The Lambda function handler is,, exits, or times out.](https://docs.aws.amazon.com/lambda/latest/dg/csharp-handler.html#:~:text=The%20Lambda%20function%20handler%20is,%2C%20exits%2C%20or%20times%20out.)
 
 **End of Amazon Q chat about explaining code**
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

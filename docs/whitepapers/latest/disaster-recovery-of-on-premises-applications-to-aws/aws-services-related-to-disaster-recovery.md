@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-of-
 <a name="amazon-route-53-application-recovery-controller"></a>
 
  [Amazon Application Recovery Controller (ARC)](https://aws.amazon.com/application-recovery-controller/) gives you insights into whether your applications and resources are ready for recovery, and helps you manage and coordinate failover using readiness check and routing control features. These features continually monitor your application’s ability to recover from failures, and enable you to control your application recovery across multiple AWS Regions, Availability Zones, as well as on premises. These capabilities make application recoveries simpler and more reliable by eliminating the manual steps required by traditional tools and processes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

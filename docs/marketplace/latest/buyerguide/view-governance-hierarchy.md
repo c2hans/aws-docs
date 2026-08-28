@@ -71,3 +71,7 @@ An audience is governed by the first **Live** experience on its path to root. Fo
 1. In the account details page, you can view the current associated experience and the governing experience for the account. They will be the same if the current associated experience is **Live**. If the current associated experience is **Not live** or if there isn't one, the governing experience will be inherited from a higher level.
 
 1. View the hierarchy from the account up to the organization root in the **Hierarchy view** container. View the governing experience at each level. You can visualize how the governing experience for the account is resolved by traversing the tree from leaf to root.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

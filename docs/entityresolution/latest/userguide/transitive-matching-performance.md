@@ -17,3 +17,7 @@ Data skew
 Datasets with skewed distributions, such as large match groups, amplify overhead. When many records link to the same match group, the system requires more transitive linking operations to resolve all connections.
 
 We recommend that you test transitive matching workflows with representative data volumes before using them in production. This helps you understand the performance characteristics for your specific data and rule configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Entity Resolution. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query entityresolution` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

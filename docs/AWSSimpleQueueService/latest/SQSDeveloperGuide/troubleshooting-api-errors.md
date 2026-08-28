@@ -56,3 +56,7 @@ Upon making a [`DeleteMessage`](https://docs.aws.amazon.com/AWSSimpleQueueServic
 The receipt handle is created for every received message, and is only valid for the visibility timeout period. When the visibility timeout period expires, the message becomes visible on the queue for consumers. When you receive the message again from the consumer, you receive a new receipt handle. To prevent incorrect or expired receipt handle errors, use the correct receipt handle to delete the message within the Amazon SQS queue visibility timeout period.
 
 For additional information on how to troubleshoot a `ReceiptHandle` error, see [How do I troubleshoot "ReceiptHandleIsInvalid" and "InvalidParameterValue" errors when I use the Amazon SQS DeleteMessage API call?](https://repost.aws/knowledge-center/sqs-receipt-handle-error) in the *AWS Knowledge Center Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

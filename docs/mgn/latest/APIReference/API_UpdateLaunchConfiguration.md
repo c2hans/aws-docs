@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_UpdateLaunch
 Updates multiple LaunchConfigurations by Source Server ID.
 
 **Note**
-bootMode valid values are `LEGACY_BIOS | UEFI`
+bootMode valid values are `LEGACY_BIOS | UEFI | USE_SOURCE`
 
 ## Request Syntax
 <a name="API_UpdateLaunchConfiguration_RequestSyntax"></a>
@@ -121,7 +121,7 @@ Length Constraints: Minimum length of 0. Maximum length of 128.
 Required: No
 
  ** [postLaunchActions](#API_UpdateLaunchConfiguration_RequestSyntax) **   <a name="mgn-UpdateLaunchConfiguration-request-postLaunchActions"></a>
-Post Launch Actions to executed on the Test or Cutover instance.
+Post Launch Actions to be executed on the Test or Cutover instance.
 Type: [PostLaunchActions](API_PostLaunchActions.md) object
 Required: No
 
@@ -236,7 +236,7 @@ Type: String
 Length Constraints: Minimum length of 0. Maximum length of 128.
 
  ** [postLaunchActions](#API_UpdateLaunchConfiguration_ResponseSyntax) **   <a name="mgn-UpdateLaunchConfiguration-response-postLaunchActions"></a>
-Post Launch Actions to executed on the Test or Cutover instance.
+Post Launch Actions to be executed on the Test or Cutover instance.
 Type: [PostLaunchActions](API_PostLaunchActions.md) object
 
  ** [sourceServerID](#API_UpdateLaunchConfiguration_ResponseSyntax) **   <a name="mgn-UpdateLaunchConfiguration-response-sourceServerID"></a>
@@ -299,3 +299,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/mgn-2020-02-26/UpdateLaunchConfiguration)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/mgn-2020-02-26/UpdateLaunchConfiguration)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mgn-2020-02-26/UpdateLaunchConfiguration)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for ApplicationMigrationService. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

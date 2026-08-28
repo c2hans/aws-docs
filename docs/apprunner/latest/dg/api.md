@@ -25,3 +25,7 @@ For more information about AWS developer tools, see [Tools to Build on AWS](http
 For command line scripts, use the [AWS CLI](https://docs.aws.amazon.com/cli/) to make calls to the App Runner service. For complete AWS CLI reference information, see the [apprunner](https://docs.aws.amazon.com/cli/latest/reference/apprunner/) in the *AWS CLI Command Reference*.
 
 AWS CloudShell allows you to skip installing the AWS CLI in your development environment, and use it in the AWS Management Console instead. In addition to avoiding installation, you also don't need to configure credentials, and you don't need to specify region. Your AWS Management Console session provides this context to the AWS CLI. For more information about CloudShell, and for a usage example, see [Using AWS CloudShell to work with AWS App Runner](api-cshell.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

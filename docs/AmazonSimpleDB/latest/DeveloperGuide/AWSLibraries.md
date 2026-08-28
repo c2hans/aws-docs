@@ -15,3 +15,7 @@ AWS provides libraries (the AWS SDKs), which include sample code, tutorials, and
 For links to the documentation for all AWS SDKs for supported languages, go to the Software Development Kits (SDKs) section on the [AWS Documentation](http://aws.amazon.com/documentation/) page.
 
 For libraries and sample code in all languages, go to [Sample Code & Libraries](http://aws.amazon.com/code).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

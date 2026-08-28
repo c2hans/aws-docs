@@ -31,3 +31,7 @@ There are no restrictions to use AWS Elastic Disaster Recovery in your AMS accou
 + You must use a customer-owned KMS key for cross-account recovery. The source account's KMS key must be updated following the policy to allow target account access. For more information, see [Share the EBS encryption key with the target account](https://docs.aws.amazon.com/drs/latest/userguide/multi-account.html#multi-account-ebs).
 + The KMS key policy must be updated to allow the allow `customer_drs_console_role` to view the policy if you don't want to switch roles to view.
 + For cross-account, cross-Region disaster recovery, AMS must set up the source and target account as Trusted Accounts and deploy the [Failback and in-AWS right-sizing roles](https://docs.aws.amazon.com/drs/latest/userguide/trusted-accounts-failback-role.html) through CloudFormation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

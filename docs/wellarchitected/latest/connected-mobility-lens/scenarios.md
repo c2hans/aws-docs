@@ -14,3 +14,7 @@ In this section, we cover the six key scenarios that are common in many connecte
 + [CM-S04 Connected mobility core services](cm-s04-connected-mobility-core-services.md)
 + [CM-S05 Connected mobility supported systems](cm-s05-connected-mobility-supported-systems.md)
 + [CM-S06 Customer experience management](cm-s06-customer-experience-management.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

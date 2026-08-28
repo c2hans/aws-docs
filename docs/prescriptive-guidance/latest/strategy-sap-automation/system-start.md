@@ -20,3 +20,7 @@ The following image and process describe how you can automate startup and shutdo
 1. After the SAP system has stopped or started, another EventBridge rule responds to the change in the EC2 instance state and uses a Lambda function handler to notify the stakeholders of the change.
 
 ![Architecture diagram showing how you can automate startup or shutdown procedures for complex SAP systems.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-sap-automation/images/guide-img/029e7e61-9fe5-41b5-83f4-177d03384b91/images/01641ff2-c243-4ea7-bff2-8b7df8a12684.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

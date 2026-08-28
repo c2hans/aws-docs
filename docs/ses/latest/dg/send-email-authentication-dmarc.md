@@ -102,3 +102,7 @@ You can determine your domain's DMARC alignment for DKIM by typing the following
   ```
 In the output of this command, under **Non-authoritative answer**, look for a record that begins with `v=DMARC1`. If this record includes the string `adkim=r`, or if the `adkim` string is not present at all, then your domain uses relaxed alignment for DKIM. If the record includes the string `adkim=s`, then your domain uses strict alignment for DKIM. Your system administrator will need to remove this tag from the DMARC TXT record in your domain's DNS configuration.
 Alternatively, you can use a web-based DMARC lookup tool, such as the [DMARC Inspector](https://dmarcian.com/dmarc-inspector/) from the dmarcian website or the [DMARC Check Tool](https://mxtoolbox.com/dmarc.aspx) tool from the MxToolBox website, to determine your domain's policy alignment for DKIM.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

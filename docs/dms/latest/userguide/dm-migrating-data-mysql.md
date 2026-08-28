@@ -27,3 +27,7 @@ This query returns a binlog file name and the position. For the native start poi
 The following diagram shows the process of using homogeneous data migrations in AWS DMS to migrate a MySQL database to RDS for MySQL or Aurora MySQL.
 
 ![An architecture diagram of the MySQL data migration with DMS Homogeneous Data Migrations.](http://docs.aws.amazon.com/dms/latest/userguide/images/data-migrations-mysql.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

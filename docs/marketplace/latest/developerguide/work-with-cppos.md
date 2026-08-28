@@ -1390,3 +1390,7 @@ Provide information for the input fields for the `DescribeEntity` response:
   + **MarkupPercentage** (string) – Percentage value that the channel partner passed in the `UpdateMarkup` change type. This markup is already applied to the terms.
   + **Terms** (array of structures) – List of terms.
   + **Rules** (array of structures) – List of rules.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

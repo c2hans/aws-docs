@@ -173,3 +173,7 @@ The code for this pattern is available in the GitHub [AWS IoT Greengrass v2 Dock
 <a name="deploy-containerized-applications-on-aws-iot-greengrass-version-2-running-as-a-docker-container-additional"></a>
 + For AWS IoT SiteWise Edge data processing, Docker must be available within the AWS IoT Greengrass environment.
 + To run a nested container, you must run the AWS IoT Greengrass container with administrator-level credentials.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

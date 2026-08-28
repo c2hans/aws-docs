@@ -38,3 +38,7 @@ A *scalar function* performs a calculation on a single value and returns the res
 | `writetime` | Returns the timestamp of the value of the specified column. |
 | `dateOf` | (Deprecated) Extracts the timestamp of a timeuuid, and returns the value as a date. |
 | `unixTimestampOf` | (Deprecated) Extracts the timestamp of a timeuuid, and returns the value as a raw, 64-bit integer timestamp.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

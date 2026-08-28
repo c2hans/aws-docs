@@ -68,3 +68,7 @@ This step is required if you need to retrieve the contact sample in the future.
 ![Create draft evaluations - evaluation overview.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-randomsampling-sampled-eval.png)
 
 ![Create draft evaluations - contact sample details.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-randomsampling-sampled-eval-details.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

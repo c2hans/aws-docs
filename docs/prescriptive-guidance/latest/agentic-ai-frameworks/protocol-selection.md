@@ -20,3 +20,7 @@ When implementing your own extensions or building custom agent systems, open pro
 + **Interoperability guarantees** – Better assurance that your extensions will work across different implementations
 + **Future compatibility** – Reduced risk of breaking changes or deprecation
 + **Influence on development** – Opportunity to contribute to protocol evolution
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

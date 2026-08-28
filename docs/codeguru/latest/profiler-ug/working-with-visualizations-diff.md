@@ -32,3 +32,7 @@ You can see more information about a function if you pause over it. In the follo
 It's normal to see changes in your profiling data without any code changes. The profiling data may vary depending on when and how your application runs. Keep in mind your application characteristics when selecting a comparison time range. For example, you might find interesting profiling data if you compare data from your current time range with the data from a week earlier.
 
 ![Image: Diff visualization.](http://docs.aws.amazon.com/codeguru/latest/profiler-ug/images/diff-visualization-2.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

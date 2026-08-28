@@ -86,3 +86,7 @@ You can use the `aws:SecureTransport` [global condition key](https://docs.aws.am
 
 **Example policy based on both keys and more examples**
 You can use both types of condition keys in the previous examples in one policy. For more information and additional enforcement approaches, see the AWS Storage Blog article [Enforcing encryption in transit with TLS1.2 or higher with Amazon S3](https://aws.amazon.com/blogs/storage/enforcing-encryption-in-transit-with-tls1-2-or-higher-with-amazon-s3/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

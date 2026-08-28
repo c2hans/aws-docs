@@ -38,3 +38,7 @@ Teams should also establish a shorter cadence for sprints, planning, and retrosp
 In the Wave 1 migrations, you developed a blueprint and building blocks for the migration process, and tested speciﬁc migration patterns. Now you're ready to scale teams to support your initial wave of migrations to build the migration factory process, and expand on the agile team model for your entire application portfolio.
 
 You can use the migration factory process illustrated earlier in this guide to pave the way for the larger move to AWS. This is a process that can eﬃciently handle the migration workload by combining the technical components of a cloud migration with the business and people components.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

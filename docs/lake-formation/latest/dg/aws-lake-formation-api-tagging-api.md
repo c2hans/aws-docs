@@ -35,3 +35,7 @@ The Tagging API section describes the operations and data types related to an au
 + [LFTagPair](https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_LFTagPair.html)
 + [LFTagError](https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_LFTagError.html)
 + [ColumnLFTag](https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_ColumnLFTag.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

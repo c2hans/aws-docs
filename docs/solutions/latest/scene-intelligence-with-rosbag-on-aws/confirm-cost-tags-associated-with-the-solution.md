@@ -23,3 +23,7 @@ After you activate cost allocation tags associated with the solution, you must c
 1. On the **Add user tag** page, enter `confirm`, then select **Add user tag**.
 
 The activation process can take up to 24 hours to complete and the tag data to appear.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Scene Intelligence with Rosbag on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

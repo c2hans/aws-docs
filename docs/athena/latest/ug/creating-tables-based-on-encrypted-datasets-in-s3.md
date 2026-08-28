@@ -119,3 +119,7 @@ When writing and reading encrypted datasets, consider the following points.
 + The `has_encrypted_data`, `encryption_option`, and `kms_key` table properties can only be used with Hive tables.
 + When creating a table with CSE-KMS encrypted data, we recommend that you ensure that all data is encrypted with the same AWS KMS key.
 + When creating a table with CSE-KMS encrypted data, we recommend that you ensure that all data is CSE-KMS encrypted and that there is not a mix of non-CSE-KMS and CSE-KMS encrypted objects.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

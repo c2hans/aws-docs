@@ -31,3 +31,7 @@ For more information about exercising your data subject rights, including for pe
 1. When you receive an email from us that the request has been processed, navigate back to the **Privacy & data** page of your AWS Builder ID profile. Choose the newly available button **Download ZIP archive with your data**.
 
 While your data request is pending, you will not be able to delete your AWS Builder ID.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ The first step in machine learning is to decide what you want to predict, which 
 Do you want to predict the number of purchases your customers will make for each product (in which case the target is numeric and you’re solving a regression problem)? Or do you want to predict which products will get more than 10 purchases (in which case the target is binary and you’re solving a binary classification problem)?
 
 It is important to avoid over-complicating the problem and to frame the simplest solution that meets your needs. However, it is also important to avoid losing information, especially information in the historical answers. Here, converting an actual past sales number into a binary variable “over 10” versus “fewer” would lose valuable information. Investing time in deciding which target makes most sense for you to predict will save you from building models that don’t answer your question.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

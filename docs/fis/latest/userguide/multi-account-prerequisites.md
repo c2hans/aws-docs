@@ -156,3 +156,7 @@ To learn more about cross-account dashboards, see [Enabling cross-account functi
 <a name="safety-levers-for-multi-accounts"></a>
 
 Safety levers are used to stop all running experiments and prevent new experiments from starting. You may want to use the safety lever to prevent FIS experiments during certain time periods or in response to application health alarms. Every AWS account has a safety lever per AWS Region. When a safety lever is engaged, it impacts all experiments running in the same account and region as the safety lever. To stop and prevent multi-account experiments, the safety lever must be engaged in the same account and region where the experiments are running.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,3 +37,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
  **Other**
 +  Bryar, C. and Carr, B. (2021). [*Working Backwards: Insights, Stories, and Secrets from Inside Amazon*](https://www.amazon.com/dp/1250267595). London Macmillan.
 +  [AWS CloudFormation Guard](https://github.com/aws-cloudformation/cloudformation-guard) (GitHub)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

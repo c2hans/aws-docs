@@ -8,7 +8,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 <a name="AWS_Route53Resolver"></a>
 
 **Resource types**
-+ [AWS::Route53Resolver::FirewallConfig](aws-resource-route53resolver-firewallconfig.md)
 + [AWS::Route53Resolver::FirewallDomainList](aws-resource-route53resolver-firewalldomainlist.md)
 + [AWS::Route53Resolver::FirewallRuleGroup](aws-resource-route53resolver-firewallrulegroup.md)
 + [AWS::Route53Resolver::FirewallRuleGroupAssociation](aws-resource-route53resolver-firewallrulegroupassociation.md)
@@ -20,3 +19,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Route53Resolver::ResolverQueryLoggingConfigAssociation](aws-resource-route53resolver-resolverqueryloggingconfigassociation.md)
 + [AWS::Route53Resolver::ResolverRule](aws-resource-route53resolver-resolverrule.md)
 + [AWS::Route53Resolver::ResolverRuleAssociation](aws-resource-route53resolver-resolverruleassociation.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

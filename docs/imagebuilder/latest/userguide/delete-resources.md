@@ -127,3 +127,7 @@ aws imagebuilder delete-component --component-build-version-arn arn:aws:imagebui
 
 **Important**
 Make sure there are no recipes that reference the component build version in any way before you delete it. Failing to do so could cause pipeline failures.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

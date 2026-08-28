@@ -26,3 +26,7 @@ When sorting by a non-string field, append ".value" to the field name to differe
   + [Get all nodes with age between 10 and 50 and a name with a fuzzy match with "Ronka"](full-text-search-non-string-examples.md#full-text-search-non-string-example-2)
   + [Get all nodes with a timestamp that falls within the last 25 days](full-text-search-non-string-examples.md#full-text-search-non-string-example-3)
   + [Get all nodes with a timestamp that falls within a given year and month](full-text-search-non-string-examples.md#full-text-search-non-string-example-4)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

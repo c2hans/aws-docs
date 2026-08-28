@@ -31,3 +31,7 @@ Amazon RDS for Oracle supports both Enterprise Edition (EE) and Standard Edition
 + Provides root access to the operating system of the underlying Amazon Elastic Compute Cloud (Amazon EC2) instance, and database access as built-in `SYS` and `SYSTEM` user
 + Provides the capability to configure settings, install patches, and enable native features manually to meet the dependent application and database requirements
 + Provides support on legacy Oracle Database versions (12.1, 12.2, and 18c)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

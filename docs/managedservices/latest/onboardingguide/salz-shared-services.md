@@ -22,3 +22,7 @@ Shared services subnets contain AMS Directory Services, the Management Host that
   Special purpose servers designed to be the primary access point from the Internet and act as a proxy to your other Amazon EC2 instances.
 
 ![The Shared Services Subnet includes an active directory, an internal bastion, a management host, an EPS DSM, an EPS relay, and a controller.](http://docs.aws.amazon.com/managedservices/latest/onboardingguide/images/AMS_VPC_Shared_Services_diagram.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

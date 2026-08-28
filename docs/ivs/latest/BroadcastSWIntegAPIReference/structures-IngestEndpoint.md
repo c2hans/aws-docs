@@ -22,3 +22,7 @@ Object specifying ingest endpoints returned by [GetClientConfiguration](actions-
   + Template for the endpoint URL. Insert the stream key returned in `authentication` to create a URL from this template.
   + Type: String
   + Required: Yes
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

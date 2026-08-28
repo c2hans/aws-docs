@@ -39,3 +39,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/fulfill-pr
 1.  Clean up the account if resources remain, and then close it, following the account closure steps in [Unenroll an account](unmanage-account.md).
 
 1.  If you have a **Suspended** OU with defined controls, you can move the account there instead of doing Step 1.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

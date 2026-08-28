@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/e
   + **Improvement plan** – Identify ways to use data that leverages verifiable claims, credentials, anonymization, and APIs for consideration by the organization.
 +  **Enforcing exposure consequences:** Verify that vendor contracts inherit these obligations, and use legal and contractual means to prohibit the sharing, reuse, or storing of the data for any purpose other than delivering the government service.
   + **Improvement plan** – Support the organization to assess exposure consequences.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

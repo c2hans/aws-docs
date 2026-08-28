@@ -18,3 +18,7 @@ You can monitor resource utilization across your organization or across accounts
 You can monitor resource utilization within a single AWS account using the `quota-monitor-hub-no-ou.template`.
 
 For more details, refer to [Choose your deployment scenario](step-1.-choose-your-deployment-scenario.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Quota Monitor for AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,3 +25,7 @@ If the job runs on a Linux fleet worker host, Deadline Cloud will make the textu
 When you download the job output on a macOS workstation, Deadline Cloud will create path mapping rules from the Windows workstation: X:\\Projects -> /Volumes/Projects, Z: -> /Volumes/Tools. It applies the rule to all output paths, downloading the example output file to /Volumes/Projects/ProjectA/Output/frame0032.jpg.
 
 If an output file path of a job is not contained under any of the storage profile file system locations, Deadline Cloud will not be able to determine its path for download when the storage profile is different from the submitting workstation. Depending on the command you use for download, that file will either be skipped or you will have to manually select a download directory.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

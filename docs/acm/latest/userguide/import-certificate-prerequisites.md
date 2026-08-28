@@ -31,3 +31,7 @@ Note also the following additional requirements:
 **Important**
 If you require Client Authentication functionality, you must implement additional validations on your side, as ACM does not support rollback to previously imported certificates.
 + AWS CloudFormation does not support the import of certificates into ACM.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

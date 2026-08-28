@@ -84,3 +84,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/custom-visual-transform-j
    +  `listOptions: "column"`
    +  `type: "list"`
 ![The screenshot shows a sample JSON file with the listOptions parameter set to "column" and the type set to "list", and resulting user interface in AWS Glue Studio.](http://docs.aws.amazon.com/glue/latest/dg/images/custom-visual-transform-example-listoptions-column-type-list.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

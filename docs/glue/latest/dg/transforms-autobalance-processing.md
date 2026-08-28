@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-autobalance-pr
 
 1. (Optional) On the **Transform** tab, you can enter a number of partitions. In general, it’s recommended that you let the system decide this value, however you can tune the multiplier or enter a specific value if you need to control this. If you are going to save the data partitioned by columns, you can choose the same columns as repartition columns. This way it will minimize the number of files on each partition and avoid having many files per partitions, which would hinder the performance of the tools querying that data.
 ![The screenshot shows the Transform tab for the Autobalance Processing transform.](http://docs.aws.amazon.com/glue/latest/dg/images/transforms-autobalance-processing-transform-tab.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

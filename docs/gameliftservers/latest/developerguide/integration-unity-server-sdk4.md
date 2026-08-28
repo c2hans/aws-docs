@@ -135,3 +135,7 @@ Environment.Exit(errorCode);
 This topic refers to Amazon GameLift Servers plugin for Unity version 1.0.0, which uses server SDK 4.x or earlier.
 
 After you integrate your game server with Amazon GameLift Servers, upload the build files to a fleet so that Amazon GameLift Servers can deploy it for game hosting. For more information on how to upload your server to Amazon GameLift Servers, see [Create a game server build for Amazon GameLift Servers](gamelift-build-cli-uploading.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

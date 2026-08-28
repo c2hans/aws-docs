@@ -91,3 +91,7 @@ If you update these tags after you create them, the changes aren't propagated to
 
 **Note**
 If your environment is using a proxy to access the internet, you must provide proxy details to AWS Cloud9 so it can install dependencies. For more information, see [Failed to install dependencies](troubleshooting.md#proxy-failed-dependencies).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

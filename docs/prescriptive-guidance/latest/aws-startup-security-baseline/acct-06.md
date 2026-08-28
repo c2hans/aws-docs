@@ -25,3 +25,7 @@ For IAM users, configure password requirements by creating a custom IAM password
 1. Select the options that you want to apply to your password policy and choose **Save changes**.
 
 1. Confirm that you want to set a custom password policy by choosing **Set custom**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

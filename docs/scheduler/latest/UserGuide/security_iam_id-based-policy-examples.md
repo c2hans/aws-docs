@@ -366,3 +366,7 @@ For more information about best practices in IAM, see [Security best practices i
 | [AmazonEventBridgeSchedulerReadOnlyAccess](#security_iam_id-based-policies-managed-policies) – New managed policy | EventBridge Scheduler adds support for a new managed policy that grants users read-only access to all resources, including schedules, and schedule groups. | November 10, 2022 |
 | [AmazonEventBridgeSchedulerReadOnlyAccess](#security_iam_id-based-policies-managed-policies) – Updated managed policy | EventBridge Scheduler updated the `AmazonEventBridgeSchedulerReadOnlyAccess` managed policy to use wildcard actions (`scheduler:List*` and `scheduler:Get*`) to ensure the policy remains current as new read-only actions are added. | March 25, 2026 |
 | EventBridge Scheduler started tracking changes | EventBridge Scheduler started tracking changes for its AWS managed policies. | November 10, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge Scheduler. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query scheduler` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

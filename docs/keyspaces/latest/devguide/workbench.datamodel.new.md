@@ -32,3 +32,7 @@ You can use the NoSQL Workbench data modeler to design new data models based on 
 1. Continue to [Visualizing data models with NoSQL Workbench](workbench.vizualizer.md#workbench.datamodel.visualize) to visualize the data model that you created.
 
 ![Console screenshot that shows how to create a new table.](http://docs.aws.amazon.com/keyspaces/latest/devguide/images/workbench/key_nosql_tableadd.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

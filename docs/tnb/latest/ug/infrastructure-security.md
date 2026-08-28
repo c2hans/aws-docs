@@ -36,3 +36,7 @@ The network services that you provision through AWS TNB, run on compute instance
 Communications between your network service clients and your network service in AWS TNB traverse the internet. AWS TNB does not manage these connections. It is your responsibility to secure your client connections.
 
 Your connections to AWS TNB through the AWS Management Console, AWS Command Line Interface (AWS CLI), and AWS SDKs are encrypted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Telco Network Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tnb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -198,3 +198,7 @@ The following are best practices to consider when connecting to Amazon DocumentD
 + Always close your [`MongoClient`](https://mongodb.github.io/mongo-java-driver/5.3/apidocs/mongodb-driver-sync/com/mongodb/client/MongoClient.html) when you no longer need the client to release resources.
 + Handle exceptions appropriately and implement proper error logging.
 + Use environment variables or AWS Secrets Manager to store sensitive information like usernames and passwords.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -383,3 +383,7 @@ actions:
 The following related resources can help you as you work with this action.
 +  [Tutorial: Deploy to Amazon EC2 instances with CodePipeline](tutorials-ec2-deploy.md) – This tutorial walks you through the creation of EC2 instances where you will deploy a script file, along with creation of the pipeline using the EC2 action.
 + [EC2 Deploy action fails with an error message `No such file`](troubleshooting.md#troubleshooting-ec2-deploy) – This topic describes troubleshooting for file not found errors with the EC2 action.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

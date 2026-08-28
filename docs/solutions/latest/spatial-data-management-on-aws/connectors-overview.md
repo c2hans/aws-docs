@@ -263,3 +263,7 @@ This three-level model limits the blast radius of any single connector:
 
 **Important**
 SDMA executes connector configurations as defined. To reduce risk, scope IAM roles to the minimum required permissions, test configurations with non-production data, and review trigger filters before enabling a connector.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

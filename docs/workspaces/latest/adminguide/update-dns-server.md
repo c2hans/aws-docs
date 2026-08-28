@@ -295,3 +295,7 @@ If you make manual modifications to the `/etc/resolv.conf` file, those changes a
 1. Wait for an hour and confirm that no user issues have been reported. Verify that `{{NewIP1}}` is getting DNS queries and responding with answers.
 
 1. After you've verified that the first DNS server is working properly, repeat [Step 1](#update-registry-dns) to update the second DNS server, this time replacing `{{OldIP2}}` with `{{NewIP2}}`. Then repeat Step 2 and Step 3.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -266,3 +266,7 @@ module.redshift.terraform_data.run_bootstrap_queries[0] (local-exec): Status: FI
 module.redshift.terraform_data.run_bootstrap_queries[0] (local-exec): SQL execution successful.
 module.redshift.terraform_data.run_bootstrap_queries[0]: Creation complete after 2s [id=d565ef6d-be86-8afd-8e90-111e5ea4a1be]
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

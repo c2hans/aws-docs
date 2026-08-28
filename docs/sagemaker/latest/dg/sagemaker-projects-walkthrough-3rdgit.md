@@ -189,3 +189,7 @@ To delete the CloudFormation stack and the Amazon S3 bucket, you need to be an a
    For information about how to delete a CloudFormation stack, see [Deleting a stack on the CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html) in the *CloudFormation User Guide*.
 
 1. Delete the Amazon S3 bucket that the project created. The name of the bucket is **sagemaker-project-{{project-id}}**, where {{project-id}} is the ID of your project.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

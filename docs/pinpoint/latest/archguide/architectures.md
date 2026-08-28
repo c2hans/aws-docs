@@ -106,3 +106,7 @@ A potential benefit of this architecture is cost savings. Because warm standby R
 A drawback of the warm standby architecture is that you might still need to pay for resources that are unused a majority of the time. For example, if you have a short code for sending SMS messages in your primary Region, and you want your warm standby Region to have the same SMS sending capabilities, then you must provision a short code in the warm standby Region.
 
 Another drawback of the warm standby architecture is that the Recovery Time Objective (RTO) and Recovery Point Objective (RPO) might be slightly higher than they would be for an [active-active](#architectures-activeactive) architecture. For mission-critical workloads, you should carefully consider both of these architecture options.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

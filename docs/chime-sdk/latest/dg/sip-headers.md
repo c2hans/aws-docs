@@ -147,3 +147,7 @@ create-sip-media-application-call
 ```
 
 For more information, see [A Mechanism for Transporting User-to-User Call Control Information in SIP](https://datatracker.ietf.org/doc/html/rfc7433) and [Diversion Indication in SIP](https://datatracker.ietf.org/doc/html/rfc5806).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

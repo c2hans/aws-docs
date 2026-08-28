@@ -24,3 +24,7 @@ At a high level, the process of creating, running, and ending an experiment usin
 1. In your data warehouse of choice, analyze results, roll out the winning treatment, and clean up the experiment. For more information, see [Promoting a winning treatment](appconfig-experimentation-promoting-a-treatment.md).
 
 For more detailed information about AWS AppConfig experimentation processes and tasks, including screenshots with values for a sample experiment called "Implement add-to-cart button for all products displayed", see [About experiments in AWS AppConfig](appconfig-experimentation-about.md). To get started with an experiment, see [Creating and running an experiment](appconfig-experimentation-creating.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

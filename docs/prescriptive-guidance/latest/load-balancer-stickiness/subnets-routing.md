@@ -59,3 +59,7 @@ The following diagram combines the inbound and return traffic flows to provide a
 1. The Application Load Balancer routes traffic out through its public interface.
 
 1. The public subnet's route table has a default route pointing to an internet gateway, which routes the traffic back out to the internet.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

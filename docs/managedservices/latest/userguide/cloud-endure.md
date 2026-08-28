@@ -31,3 +31,7 @@ The cloud endure replication and conversion instances can be launched only in th
 **Q: What are the prerequisites or dependencies to using CloudEndure in my AMS account?** Share the following via RFC bidirectional correspondence:
 + VPC Subnet details for Replication and Conversion instances to be launched.
 + The KMS Key Amazon Resource Name (ARN) if the EBS volumes are encrypted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

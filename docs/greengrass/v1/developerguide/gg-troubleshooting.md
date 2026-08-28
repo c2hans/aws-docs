@@ -847,3 +847,7 @@ For AWS IoT Greengrass Core software v1.6 and earlier, the default `shadowSyncTi
 <a name="troubleshooting-repost"></a>
 
 If you're unable to resolve your issue using the troubleshooting information in this topic, you can search the [Troubleshooting AWS IoT Greengrass](#gg-troubleshooting) or check the [AWS IoT Greengrass tag on AWS re:Post](https://repost.aws/tags/TA4ckIed1sR4enZBey29rKTg/aws-io-t-greengrass) for related issues or post a new question. Members of the AWS IoT Greengrass team actively monitor AWS re:Post.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

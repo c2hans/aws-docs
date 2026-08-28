@@ -379,3 +379,7 @@ For a detailed example with all the necessary preliminary steps required to expo
 | Export and import table data | DTS, SSIS, BCP, linked servers to files |  <pre>SELECT INTO ... OUTFILE S3<br />LOAD DATA FROM S3</pre>  |  |
 
 For more information, see [Overview of backing up and restoring an Aurora DB cluster](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Aurora.Managing.Backups.html) and [Saving data from an Amazon Aurora MySQL DB cluster into text files in an Amazon S3 bucket](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/AuroraMySQL.Integrating.SaveIntoS3.html) in the *User Guide for Aurora*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

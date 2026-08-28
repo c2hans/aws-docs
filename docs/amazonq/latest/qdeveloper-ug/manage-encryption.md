@@ -32,3 +32,7 @@ To set the key used for encryption, complete the following procedure.
    If you haven't created a key yet, choose **Create an AWS KMS key**, and then return to this page to add your key.
 
 1. To disable encryption with your customer managed key and revert to an AWS managed key for encryption, deselect **Customize encryption settings (advanced)**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

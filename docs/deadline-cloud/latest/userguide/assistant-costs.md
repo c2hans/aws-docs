@@ -5,9 +5,9 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/assistan
 # Costs
 <a name="assistant-costs"></a>
 
-The Deadline Cloud assistant incurs usage costs in your AWS account. Costs are based on the number of input and output tokens processed during each interaction. Because the assistant uses cross-region inference, pricing is calculated based on your monitor's source Region.
+The Deadline Cloud assistant incurs Amazon Bedrock usage costs in your AWS account. Costs are based on the number of input and output tokens processed during each interaction. Because the assistant uses cross-region inference, pricing is calculated based on your monitor's source Region.
 
-For current pricing, see [ pricing](https://aws.amazon.com/bedrock/pricing/).
+For current pricing, see [Amazon Bedrock pricing](https://aws.amazon.com/bedrock/pricing/).
 
 **Tip**
 The assistant displays context window usage during interactions to help you monitor token consumption.
@@ -15,7 +15,7 @@ The assistant displays context window usage during interactions to help you moni
 ## Tracking assistant costs
 <a name="assistant-cost-tracking"></a>
 
- supports cost allocation by AWS Identity and Access Management (IAM) principal, which you can use to track and attribute assistant inference costs across teams, projects, or cost centers. To set up cost tracking for the assistant, tag the monitor user role with attributes that represent your organizational structure, then activate those tags for cost allocation.
+Amazon Bedrock supports cost allocation by AWS Identity and Access Management (IAM) principal, which you can use to track and attribute assistant inference costs across teams, projects, or cost centers. To set up cost tracking for the assistant, tag the monitor user role with attributes that represent your organizational structure, then activate those tags for cost allocation.
 
 To complete this procedure, you need IAM permissions to tag roles and access to the Billing console.
 
@@ -47,6 +47,10 @@ To complete this procedure, you need IAM permissions to tag roles and access to 
 
 After you apply tags to your IAM roles, it can take up to 24 hours for the tag keys to appear on the cost allocation tags page. It can then take up to 24 hours for the tags to activate.
 
-For line-item cost attribution, create a AWS Cost and Usage Report () data export and select **Include caller identity (IAM principal) allocation data**. The export includes a `line_item_iam_principal` column that records the IAM ARN for each request, along with your IAM principal tags prefixed with `iamPrincipal/`.
+For line-item cost attribution, create a AWS Cost and Usage Report () data export and select **Include caller identity (IAM principal) allocation data**. The export includes a `line_item_iam_principal` column that records the IAM ARN for each Amazon Bedrock request, along with your IAM principal tags prefixed with `iamPrincipal/`.
 
 For more information, see [Using IAM principal for cost allocation](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/iam-principal-cost-allocation.html) in the *AWS Billing User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

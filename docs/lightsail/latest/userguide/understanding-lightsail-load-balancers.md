@@ -41,3 +41,7 @@ Not all Lightsail applications need load balancers. If you decide to create a lo
 You can [create a load balancer](create-lightsail-load-balancer-and-attach-lightsail-instances.md) using the Lightsail console, the AWS Command Line Interface (AWS CLI), or the Lightsail API. You must also [configure your instances for load balancing](configure-lightsail-instances-for-load-balancing.md).
 
 After you create your load balancer and attach your configured instances, you can enable HTTPS using the following topic. For more information, see [Create an SSL/TLS certificate for your load balancer](create-tls-ssl-certificate-and-attach-to-lightsail-load-balancer-https.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

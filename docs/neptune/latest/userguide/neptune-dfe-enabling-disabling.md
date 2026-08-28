@@ -46,3 +46,7 @@ The status response then specifies whether the DFE is enabled or not:
 The Gremlin `explain` and `profile` results tell you whether a query is being executed by the DFE. See [Information contained in a Gremlin `explain` report](gremlin-explain-api.md#gremlin-explain-api-results) for `explain` and [DFE `profile` reports](gremlin-profile-api.md#gremlin-profile-dfe-output) for `profile`.
 
 Similarly, SPARQL `explain` tells you whether a SPARQL query is being executed by the DFE. See [Example of SPARQL `explain` output when the DFE is enabled](sparql-explain-examples.md#sparql-explain-output-dfe) and [`DFENode` operator](sparql-explain-operators.md#sparql-explain-operator-dfenode) for more details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

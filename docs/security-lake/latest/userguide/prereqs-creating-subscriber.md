@@ -112,3 +112,7 @@ Attach the following trust policy to your IAM role to permit EventBridge to assu
 ------
 
 Security Lake automatically creates an IAM role that permits the subscriber to read data from the data lake (or poll events from an Amazon SQS queue if that's the preferred method of notification). This role is protected with an AWS managed policy called [`AmazonSecurityLakePermissionsBoundary`](security-iam-awsmanpol.md#security-iam-awsmanpol-AmazonSecurityLakePermissionsBoundary).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

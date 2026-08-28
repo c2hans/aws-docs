@@ -10,3 +10,7 @@ Amazon Q Business is no longer open to new customers. For capabilities similar t
 **Before you configure your Amazon Q custom plugin, you must ensure you have the following:**
 + A defined OpenAPI schema in JSON or YAML (maximum size is 1 MB). In order to maximize accuracy with Amazon Q Business custom plugin, follow the [best practices for configuring OpenAPI schema definitions](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/plugins-api-schema-best-practices.html) for custom plugins.
 + If authentication is required to connect Amazon Q to your third-party application, create OAuth authentication credentials. You need to store these authentication credentials in a Secrets Manager secret to connect your third-party application to Amazon Q.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

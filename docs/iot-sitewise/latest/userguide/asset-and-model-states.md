@@ -18,3 +18,7 @@ Some of the create, update, and delete operations in AWS IoT SiteWise place an a
 **Topics**
 + [Check the status of an asset](check-asset-status.md)
 + [Check the status of an asset or component model](check-model-status.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,3 +47,7 @@ You should take the following three steps:
 
 **Important**
 This issue only impacts keys wrapped with version 3.0.0 of the PKCS \#11 library. You can wrap keys using earlier versions (2.0.4 and lower-numbered packages) or later versions (3.0.1 and higher-numbered packages) of the PKCS \#11 library.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

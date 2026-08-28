@@ -56,3 +56,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 +  Define all IP address ranges. If clients exist in undefined IP address ranges, the clients might not be associated with the correct Active Directory site.
 +  If you have reliable high-speed connectivity between all of the sites, you can use a single site link for all of your AD sites and maintain a single replication configuration.
 +  Use consistent sites names in all AD forests connected by trusts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

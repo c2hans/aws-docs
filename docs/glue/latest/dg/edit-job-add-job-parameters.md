@@ -41,3 +41,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/edit-job-add-job-paramete
 1.  In the Table section, choose a parameter you already defined as a source table. When you choose **Apply**, the table is automatically populated as the table to use.
 
 1.  When you save and run the job, AWS Glue Studio will reference the selected parameters during the job run.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

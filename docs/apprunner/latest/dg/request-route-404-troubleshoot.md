@@ -28,3 +28,7 @@ This section covers how you can troubleshoot and resolve errors that you might r
   content-type: text/html; charset=utf-8
   ```
 +  Verify that your client is correctly setting the server name indicator (SNI) for requests routing to public or private services. For TLS termination and request routing, App Runner uses the SNI set in HTTPS connection.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

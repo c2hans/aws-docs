@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 <a name="implementation-guidance-79"></a>
 
  Evaluate the required domain knowledge in your cloud business office. We recommend you evaluate the required EUC domain knowledge in your cloud business office to understand if the team is ready to support cost optimization for EUC services. These individuals need to be intimately familiar with the cost optimization levers specific to EUC services, such as Microsoft licensing, WorkSpaces running modes, WorkSpaces bundles, WorkSpaces Applications Fleet types, and WorkSpaces Applicationsinstances. Provide EUC-specific cloud financial training to them if there is a knowledge gap.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

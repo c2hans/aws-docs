@@ -45,3 +45,7 @@ If you prefer using Prometheus, set the destination and provide the endpoint URL
 Replace `region` with your AWS region and `workspace_id` with your Prometheus workspace ID. This configuration directs your HBase metrics to Prometheus using the specified endpoint.
 
 With above setup, you can see the below metrics under the **Monitoring** tab.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -155,3 +155,7 @@ The following table shows which Amazon Quick features each action connector type
 + **Dashboard Visuals** - Support user authentication (Default OAuth app, Custom OAuth app)
 + **Dashboard Alerts** - Support system authentication (Service-to-Service OAuth or API Key)
 + **Automations** - Support system authentication (Service-to-Service OAuth)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

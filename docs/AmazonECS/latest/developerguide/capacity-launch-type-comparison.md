@@ -84,3 +84,7 @@ Capacity provider to launch type updates are not supported. If you originally cr
 
 **Note**
 This only reverts the service to the launch type specified when the service was originally created. You cannot use this method to switch a service to a different launch type.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,3 +25,7 @@ The AWS Well-Architected Framework is built around six pillars:
 Following the best practices in this guide:
 + Helps you build a secure, high-performing, resilient, efficient, and cost-optimized infrastructure for creating and configuring Windows-based file shares in the AWS Cloud.
 + Helps you apply a consistent approach when evaluating FSx for Windows File Server architectures and implementing scalable designs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

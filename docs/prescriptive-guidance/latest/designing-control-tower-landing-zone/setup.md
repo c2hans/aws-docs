@@ -46,3 +46,7 @@ The following table shows the required parameters for setting up a landing zone.
 | *AWS CloudTrail configuration*<br />You can optionally choose to manage CloudTrail in your organization yourself or accept the default CloudTrail setup from AWS Control Tower. The default setting enables an organization-level trail for management events in your Log Archive account. | Enabled |
 | *Log configuration for Amazon S3*<br />You can optionally configure log retention for the Log Archive S3 bucket or accept the default retention periods. | Standard account logging: 1 year <br />Access logging: 10 years  |
 | *KMS encryption*<br />You can optionally enable encryption for AWS Control Tower resources by using an AWS Key Management Service (AWS KMS) customer managed key. If you enable encryption, you are asked to specify the key name or Amazon Resource Name (ARN) of the customer managed key to be used.If you don't enable this option, AWS Control Tower uses SSE-S3 encryption with AWS managed keys as the default configuration. | Disabled |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

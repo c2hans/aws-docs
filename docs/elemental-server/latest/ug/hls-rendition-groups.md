@@ -35,3 +35,7 @@ Note that AWS Elemental Server does not support rendition groups for video. They
 + [Examples of HLS Rendition Groups](hls-rendition-groups-examples.md)
 + [Creating HLS Rendition Groups](hls-rendition-groups-create.md)
 + [Sample HLS Output Group with Audio Rendition Group Event Manifest](hls-rendition-groups-sample-manifest.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

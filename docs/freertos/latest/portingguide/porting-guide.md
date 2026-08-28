@@ -32,3 +32,7 @@ You will need to port FreeRTOS software libraries to your microcontroller-based 
 A FreeRTOS port is a board-specific implementation of APIs for the required FreeRTOS libraries and the FreeRTOS kernel that your platform supports. The port enables the APIs to work on the board, and implements the required integration with the device drivers and BSPs that are provided by the platform vendor. Your port should also include any configuration adjustments (e.g. clock rate, stack size, heap size) that are required by the board.
 
 If you have questions about porting that are not answered on this page or in the rest of the FreeRTOS Porting Guide, please [ see the available FreeRTOS support options](https://freertos.org/RTOS-contact-and-support.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

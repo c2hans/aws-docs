@@ -26,3 +26,7 @@ For a list of supported Cloud Directory regions, see the [AWS Regions and Endpoi
 <a name="what_is_cloud_directory_not"></a>
 
 Cloud Directory is not a directory service for IT Administrators who want to manage or migrate their directory infrastructure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

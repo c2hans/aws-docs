@@ -104,3 +104,7 @@ To save GPU memory, the library supports activation checkpointing to avoid stori
 <a name="model-parallel-intro-choosing-techniques"></a>
 
 For more information about choosing the right techniques and configurations, see [SageMaker Distributed Model Parallel Best Practices](https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-best-practices.html) and [Configuration Tips and Pitfalls](https://docs.aws.amazon.com/sagemaker/latest/dg/model-parallel-customize-tips-pitfalls.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

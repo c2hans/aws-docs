@@ -90,3 +90,7 @@ Open the Amazon EMR console at [https://console.aws.amazon.com/elasticmapreduce/
 The following video shows how to use the **Troubleshoot with AI** button for EMR on EKS.
 
 [![AWS Videos](http://img.youtube.com/vi/UqCVYpG_NuM/0.jpg)](http://www.youtube.com/watch?v=UqCVYpG_NuM)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

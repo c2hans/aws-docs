@@ -11,6 +11,7 @@ For notification about these updates, you can subscribe to the WorkSpaces RSS fe
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Client management reference for Windows](https://docs.aws.amazon.com/workspaces/latest/adminguide/client-management-reference-windows.html) | Added the Client management reference (Windows) page, which consolidates the registry and Group Policy settings for managing the WorkSpaces client for Windows, including client automatic updates, proxy server configuration, IPv6 network settings, and hardware acceleration. | August 25, 2026 |
 | [End of support notice](#workspaces-document-history) | End of support notice: On October 31, 2027, AWS will end support for PCoIP-based WorkSpaces Personal. After October 31, 2027, you will no longer be able to access the WorkSpaces console or WorkSpaces resources using the PCoIP protocol. For more information, see [PCoIP-based WorkSpaces Personal end of support](https://docs.aws.amazon.com/workspaces/latest/adminguide/workspaces-pcoip-end-of-support.html). | June 30, 2026 |
 | [Amazon WorkSpaces Pools end of support](https://docs.aws.amazon.com/workspaces/latest/adminguide/wsp-pools-end-of-support.html) | Amazon WorkSpaces Pools will end support on December 31, 2027. Migrate to Amazon WorkSpaces Applications before the end-of-support date. | June 30, 2026 |
 | [CloudTrail logging](https://docs.aws.amazon.com/workspaces/latest/adminguide/cloudtrail_logging.html) | Added CloudTrail logging documentation for WorkSpaces. | May 19, 2026 |
@@ -95,3 +96,7 @@ The following table describes important additions to the Amazon WorkSpaces servi
 | [ WorkSpaces launched in Asia Pacific (Sydney)](amazon-workspaces.html) | WorkSpaces is available in the Asia Pacific (Sydney) Region. | May 15, 2014 |
 | [ WorkSpaces launched in Europe (Ireland)](amazon-workspaces.html) | WorkSpaces is available in the Europe (Ireland) Region. | May 5, 2014 |
 | [Public beta ](amazon-workspaces.html) | WorkSpaces is available as a public beta. | March 25, 2014 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

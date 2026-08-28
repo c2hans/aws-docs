@@ -47,3 +47,7 @@ Templates must be approved by Meta before they can be used to send messages to y
 <a name="managing-templates_next_steps"></a>
 
 Once you've created or edited a template, you must submit it for review with WhatsApp. Meta's review can take up to 24 hours. Meta sends an email to your Business Manager admin and updates the template status. You can check the status of your template in the AWS End User Messaging Social console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

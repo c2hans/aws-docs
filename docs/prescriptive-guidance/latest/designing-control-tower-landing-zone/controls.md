@@ -39,3 +39,7 @@ You can automatically activate and deactivate controls by using any of the follo
 + [Language-specific AWS SDKs](https://docs.aws.amazon.com/controltower/latest/APIReference/API_EnableControl.html#API_EnableControl_SeeAlso)
 
 For more information about automating controls, see [About controls in AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/controlreference/controls.html) in the AWS Control Tower documentation. The following sections discuss [mandatory controls](mandatory.md), [optional controls,](optional.md) and [custom controls](custom.md) in more detail.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

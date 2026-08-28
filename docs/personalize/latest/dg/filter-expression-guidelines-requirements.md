@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/filter-expression-
 +  You can apply a filter with the CurrentItem element only if your domain use case or custom recipe generates related items recommendations, such as the Similar-Items recipe or the *More Like X* domain use case.
 + You can't use placeholder parameters in a filter expression that uses the NOT\_IN operator. Instead, use the IN operator and use the opposite Action. For example, use Include instead of Exclude (or the reverse).
 + You can't create filters that filter based on `Action expiration timestamp` and `Repeat frequency` data. Amazon Personalize automatically filters action recommendations based on this data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

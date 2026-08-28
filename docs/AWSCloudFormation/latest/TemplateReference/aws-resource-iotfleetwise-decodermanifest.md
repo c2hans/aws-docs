@@ -154,3 +154,7 @@ The time the decoder manifest was created in seconds since epoch (January 1, 197
 
 `LastModificationTime`  <a name="LastModificationTime-fn::getatt"></a>
 The time the decoder manifest was last updated in seconds since epoch (January 1, 1970 at midnight UTC time).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

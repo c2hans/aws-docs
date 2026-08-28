@@ -50,3 +50,7 @@ For more information, see [UpdateComputeEnvironment](https://docs.aws.amazon.com
 **Important**
 After you set a Container Insights value on a compute environment, you cannot revert to the default (unset) behavior, where the Container Insights setting is managed outside of AWS Batch. To change the Container Insights mode, you must call `UpdateComputeEnvironment` with the new value.
 This also means that if you set this property in a CloudFormation template, a stack rollback cannot revert the setting to its previous unset state.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,3 +42,7 @@ The following table summarizes the valid combinations of channel class and input
 | --- | --- |
 | Standard channel | All inputs must be standard-class inputs. In this case, you can implement pipeline redundancy or omit it. See [Deciding whether to implement pipeline redundancy](pipeline-redundancy-guidelines.md). |
 | Single-pipeline channel | These possibilities apply:+  The channel has only single-class inputs. <br />+  The channel has only standard-class inputs. <br />+  The channel has a mix of standard-class and single-class inputs. Typically, you set up with a mix because some of your inputs can only be standard-class and/or some can only be single-class. <br />The combination that applies to a channel determines if you can implement pipeline redundancy. See [Deciding whether to implement pipeline redundancy](pipeline-redundancy-guidelines.md). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

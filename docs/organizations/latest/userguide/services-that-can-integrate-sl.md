@@ -152,3 +152,7 @@ If you want to configure a delegated administrator account using the AWS CLI or 
 Only an administrator in either the Organizations management account or the Amazon Security Lake delegated administrator account can remove a delegated administrator account from the organization.
 
 You can remove the delegated administrator account by using the Amazon Security Lake `DeregisterDataLakeDelegatedAdministrator` API operation, the `deregister-data-lake-delegated-administrator` CLI command, or by using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation. To remove a delegated administrator using Amazon Security Lake, see [Removing the Amazon Security Lake delegated administrator ](https://docs.aws.amazon.com/security-lake/latest/userguide/multi-account-management.html#remove-delegated-admin) in the *Amazon Security Lake user guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

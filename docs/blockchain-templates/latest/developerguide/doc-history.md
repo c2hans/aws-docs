@@ -16,3 +16,7 @@ The following table describes the documentation changes for this guide.
 | Discontinuation of AWS Blockchain Templates. | AWS Blockchain Templates was discontinued on April 30, 2019. No further updates to this service or this supporting documentation will be made. For the best Managed Blockchain experience on AWS, we recommend that you use [ Amazon Managed Blockchain (AMB)](https://aws.amazon.com/managed-blockchain/). | May 1, 2019 |
 | Bastion host updates. | Modified getting started tutorial and Ethereum prerequisite requirements for the addition of a bastion host, which allows access to web resources served through the internal load balancer when using the ECS platform and the EC2 instance when using docker-local. | May 3, 2018 |
 | Created guide. | New developer guide to support initial release of AWS Blockchain Templates. | April 19, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Blockchain Templates. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query blockchain-templates` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

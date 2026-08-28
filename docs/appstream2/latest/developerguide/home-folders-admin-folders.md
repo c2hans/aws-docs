@@ -46,3 +46,7 @@ appstream2-36fb080bb8-us-west-2-123456789012/user/federated/8dd9a642f511609454d3
 When part or all of the NameID string is capitalized (as the domain name {{SAMPLEDOMAIN}} is in the example), WorkSpaces Applications generates the hash value based on the capitalization used in the string. Using this example, the hash value for SAMPLEDOMAIN\\testuser is 8DD9A642F511609454D344D53CB861A71190E44FED2B8AF9FDE0C507012A9901. In the folder for that user, this value is displayed in lowercase, as follows: 8dd9a642f511609454d344d53cb861a71190e44fed2B8aF9fde0C507012a9901.
 
 You can identify the folder for a user by generating the SHA-256 hash value of the `NameID` using websites or open source coding libraries available online.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ The recommended way to first customize a foundation model to a specific use case
 If prompt engineering alone is not enough to customize your foundation model to a specific task, you can fine-tune a foundation model on additional domain-specific data. For more information, see [Foundation models and hyperparameters for fine-tuning](jumpstart-foundation-models-fine-tuning.md). The fine-tuning process involves changing model weights.
 
 If you want to customize your model with information from a knowledge library without any retraining, see [Retrieval Augmented Generation](jumpstart-foundation-models-customize-rag.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

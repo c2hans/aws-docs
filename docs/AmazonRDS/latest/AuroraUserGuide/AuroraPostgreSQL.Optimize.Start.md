@@ -49,3 +49,7 @@ Normalization allows the same SQL hash to be used for similar SQL statements tha
 A single SQL statement that's used with different schemas has different plans because it's bound to the specific schema at runtime. The planner uses the statistics for schema binding to choose the optimal plan.
 
 To learn more about how the optimizer chooses a plan, see [Using Aurora PostgreSQL managed plans](AuroraPostgreSQL.Optimize.UsePlans.md). In that section, you can learn how to use `EXPLAIN` and `EXPLAIN ANALYZE` to preview a plan before it's actually used. For details, see [Analyzing the optimizer's chosen plan](AuroraPostgreSQL.Optimize.UsePlans.md#AuroraPostgreSQL.Optimize.UsePlans.AnalyzePlans). For an image that outlines the process for choosing a plan, see [How the optimizer chooses which plan to run](AuroraPostgreSQL.Optimize.UsePlans.md#AuroraPostgreSQL.Optimize.UsePlans.ChoosePlans).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

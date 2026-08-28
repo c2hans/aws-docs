@@ -13,3 +13,7 @@ The high-level steps to configure a CodeBuild project to run Buildkite jobs are 
 + Update your Buildkite pipeline YAML steps in Buildkite to configure your build environment.
 
 For a more detailed procedure, see [Tutorial: Configure a CodeBuild-hosted Buildkite runner](sample-runner-buildkite.md). This feature allows your Buildkite jobs to get native integration with AWS, which provides security and convenience through features like IAM, AWS Secrets Manager, AWS CloudTrail, and Amazon VPC. You can access the latest instance types, including ARM-based instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

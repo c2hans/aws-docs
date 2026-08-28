@@ -87,3 +87,7 @@ In order to query Lake Formation enabled resources, the Application ARN of the I
 1. On the console, choose **AWS Lake Formation**.
 
 1. Select **IAM Identity Center integration** and **Lake Formation application integration** by matching the application ARN. The ARN will appear in the **Application ID** list.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,3 +45,7 @@ Once your user pool has been created, follow the steps below to create a private
 After you create a workforce using an Amazon Cognito user pool, it should not be deleted without first deleting all work teams associated with that pool in the SageMaker AI console.
 
  After you import your private workforce, refresh the page to see the **Private workforce summary** page. On this page, you can see information about the Amazon Cognito user pool for your workforce, a list of work teams for your workforce, and a list of all of the members of your private workforce. This workforce is now available to use in both Amazon Augmented AI and Amazon SageMaker Ground Truth for human review tasks and data labeling jobs respectively.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

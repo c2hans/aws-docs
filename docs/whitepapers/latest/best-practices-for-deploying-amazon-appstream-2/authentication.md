@@ -96,3 +96,7 @@ You can quickly retrieve the ARNs of your WorkSpaces Applications Stacks by usin
 WorkSpaces Applications can dynamically build the application catalog that is presented to users. Application entitlements are based on SAML 2.0 attributes, or by using WorkSpaces Applications Dynamic Application Framework.
 
 Attribute-based application entitlements using SAML 2.0 is recommended in most scenarios. To manage application package delivery, Dynamic Application Framework is recommended.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

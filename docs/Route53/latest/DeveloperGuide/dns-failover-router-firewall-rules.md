@@ -19,3 +19,7 @@ For more information about AWS-managed prefix lists, see [Work with AWS-managed 
 When you add IP addresses to a list of allowed IP addresses, add all the IP addresses in the CIDR range for each AWS Region that you specified when you created health checks, as well as the Global CIDR range. You might see that health check requests come from just one IP address in a Region. However, that IP address can change at any time to another of the IP addresses for that Region.
  If you want to make sure that you include both the current and older health checker IP addresses, add ALL /26 and /18 IP address ranges to the allow list. For a complete list, see [AWS IP address ranges](https://docs.aws.amazon.com/general/latest/gr/aws-ip-ranges.html) in the *AWS General Reference*.
 When you add the AWS-managed prefix list to your inbound security group, it automatically adds all necessary ranges.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

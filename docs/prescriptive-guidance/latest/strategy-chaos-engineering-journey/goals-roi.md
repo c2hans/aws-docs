@@ -22,3 +22,7 @@ These companies are now tasked with setting clear, traditional ROI metrics to de
 Sustaining goal-driven resilience can be challenging over the long term. After an initial goal such as achieving a recovery time target is met, justifying continuous chaos engineering investment becomes difficult until the next major outage. The flow and ebb of investment creates a reactive saw-tooth cycle. For each new outage, investment in resilience spikes with a new goal addressing the root cause. After the new goal is met, investment drops until the next incident, restarting the reactive loop.
 
 The outages that drive this reactive approach negatively impact customers. The key question: How many major outages will customers tolerate before they abandon a service provider in favor of a more resilient competitor?
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

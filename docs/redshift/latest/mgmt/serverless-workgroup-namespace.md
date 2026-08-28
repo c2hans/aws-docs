@@ -39,3 +39,7 @@ After you set up the environment, [Workgroup properties](serverless-console-work
 | [GetWorkgroup](https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_GetWorkgroup.html) | get-workgroup | Retrieves information about a workgroup. |
 | [ListWorkgroups](https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_ListWorkgroups.html) | list-workgroups | Retrieves information about a list of workgroups. |
 | [DeleteWorkgroup](https://docs.aws.amazon.com/redshift-serverless/latest/APIReference/API_DeleteWorkgroup.html) | delete-workgroup | Deletes a workgroup. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

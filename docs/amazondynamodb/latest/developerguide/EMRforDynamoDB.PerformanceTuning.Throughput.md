@@ -52,3 +52,7 @@ When you write data to DynamoDB using Hive, make sure that the number of write c
 To determine the number of mappers for Amazon EMR node types, see [Task Configuration](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hadoop-task-config.html) in the *Amazon EMR Developer Guide*.
 
 For more information on mappers, see [Adjusting the mappers](EMRforDynamoDB.PerformanceTuning.Mappers.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

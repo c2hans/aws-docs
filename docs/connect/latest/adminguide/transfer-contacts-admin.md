@@ -46,3 +46,7 @@ To transfer contacts programmatically, use the [TransferContact](https://docs.aw
 
 1. When the contact is transferred successfully, the page automatically refreshes with the **Next contact** link to the contact created as a result of the transfer. The following image shows the location of the **Next contact** link.
 ![The Contact details page, contact transferred successfully.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-details-contact-transferred.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

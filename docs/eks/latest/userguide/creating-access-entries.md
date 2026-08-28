@@ -105,3 +105,7 @@ You can create an access entry using the AWS Management Console or the AWS CLI.
      ```
 
      If you want this user to have more access to your cluster than the permissions in the Kubernetes API discovery roles, then you need to associate an access policy to the access entry, since the `--kubernetes-groups` option isn’t used. For more information, see [Associate access policies with access entries](access-policies.md) and [API discovery roles](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#discovery-roles) in the Kubernetes documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

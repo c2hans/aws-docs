@@ -162,3 +162,7 @@ Review your AWS Config set up details. You can go back to edit changes for each 
 For information about looking up the existing resources in your account and understanding the configurations of your resources, see [Looking up Resources](https://docs.aws.amazon.com/config/latest/developerguide/looking-up-discovered-resources.html), [Viewing Compliance Informance](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_view-compliance.html), and [Viewing Compliance History](https://docs.aws.amazon.com/config/latest/developerguide/view-manage-resource-console.html).
 
 You can also use Amazon Simple Queue Service to monitor AWS resources programmatically. For more information, see [Monitoring AWS Resource Changes with Amazon SQS](monitor-resource-changes.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

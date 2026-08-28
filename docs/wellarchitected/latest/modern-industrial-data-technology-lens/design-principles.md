@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 +  **Enable advanced analytics and insights:** The architecture enables multiple analytical approaches through real-time monitoring using streaming analytics, historical analysis through data warehousing capabilities, machine learning for predictive maintenance and quality optimization, and ETL pipelines for data preparation and transformation. These capabilities are supported by automated data quality checks, standardized metrics calculations, and visualization tools that provide actionable insights to different user groups. Through these integrated analytical capabilities, manufacturing organizations can derive maximum value from their operational data while maintaining system performance and reliability.
 
  Through these principles, MIDA provides a scalable, secure foundation for manufacturing organizations to use their data assets effectively while maintaining operational excellence and driving continuous improvement.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -98,3 +98,7 @@ Lake Formation permits IAM roles from external accounts to act as carrier roles 
 <a name="connect-lf-identity-center-multi-region"></a>
 
 Lake Formation supports IAM Identity Center in multiple AWS Regions. You can extend IAM Identity Center from your primary AWS Region to additional Regions for improved performance through proximity to users and reliability. When a new Region is added in IAM Identity Center, you can create Lake Formation Identity Center applications in the new Region without replicating identities from the primary Region. For more details to get started with IAM Identity Center in multiple Regions, see [Multi-Region IAM Identity Center](https://docs.aws.amazon.com/singlesignon/latest/userguide/multi-region-iam-identity-center.html) in the *IAM Identity Center User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

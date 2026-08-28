@@ -34,3 +34,7 @@ After a runtime is deprecated, AWS may no longer apply security patches or updat
 
 **Important**
 AgentCore Runtime occasionally delays deprecation of a AgentCore Runtime direct code deploy programming language runtime for a limited period beyond the end of support date of the language version that the runtime supports. During this period, AgentCore Runtime only applies security patches to the runtime OS. AgentCore Runtime doesn’t apply security patches to programming language runtimes after they reach their end of support date.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

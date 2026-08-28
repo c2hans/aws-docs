@@ -31,3 +31,7 @@ Directory limits vary by AWS Managed Microsoft AD edition:
 **Note**
  There's a concurrency limit of 10 concurrent requests for both Standard and Enterprise editions.
 +  **AWS account** – Supports a total of 100 transactions per second for Directory Service Data operations across all directories.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -720,7 +720,7 @@ Any valid expression containing [Data types](iot-sql-data-types.md), [Functions]
 
 defaultValue
 (Optional) Any valid expression containing [Data types](iot-sql-data-types.md), [Functions](#iot-sql-functions), [Literals](iot-sql-literals.md), [Variables](iot-sql-set.md#iot-sql-set-usage), [Nested object queries](iot-sql-nested-queries.md), or [JSON extensions](iot-sql-json.md). This is the value to be returned whenever the first argument returns null, undefined, or fails.
-Functions that fetch data from customer owned resources, such as get\_secret, get\_dynamodb, aws\_lambda, get\_thing\_shadow, decode-protobuf, and machinelearning\_predict, are not allowed for the defaultValue parameter.
+Functions that fetch data from customer-owned resources, such as get\_secret, get\_dynamodb, aws\_lambda, get\_thing\_shadow, and decode-protobuf, are not allowed for the defaultValue parameter.
 
 The following table shows acceptable function arguments for each argument and their associated outputs:
 
@@ -1107,47 +1107,6 @@ Example:
 | Object | The String representation of the Object (using standard conversion rules) with all leading white space removed. |
 | Null | Undefined. |
 | Undefined | Undefined. |
-
-## machinelearning\_predict(modelId, roleArn, record)
-<a name="iot-sql-function-machine-learning"></a>
-
-Use the `machinelearning_predict` function to make predictions using the data from an MQTT message based on an Amazon SageMaker AI model. Supported by SQL version 2015-10-08 and later. The arguments for the `machinelearning_predict` function are:
-
-modelId
-The ID of the model against which to run the prediction. The real-time endpoint of the model must be enabled.
-
-roleArn
-The IAM role that has a policy with `machinelearning:Predict` and `machinelearning:GetMLModel` permissions and allows access to the model against which the prediction is run.
-
-record
-The data to be passed into the SageMaker AI Predict API. This should be represented as a single layer JSON object. If the record is a multi-level JSON object, the record is flattened by serializing its values. For example, the following JSON:
-
-```
-{ "key1": {"innerKey1": "value1"}, "key2": 0}
-```
- would become:
-
-```
-{ "key1": "{\"innerKey1\": \"value1\"}", "key2": 0}
-```
-
-The function returns a JSON object with the following fields:
-
-predictedLabel
-The classification of the input based on the model.
-
-details
-Contains the following attributes:
-PredictiveModelType
-The model type. Valid values are REGRESSION, BINARY, MULTICLASS.
-Algorithm
-The algorithm used by SageMaker AI to make predictions. The value must be SGD.
-
-predictedScores
-Contains the raw classification score corresponding to each label.
-
-predictedValue
-The value predicted by SageMaker AI.
 
 ## mod(Decimal, Decimal)
 <a name="iot-func-mod"></a>
@@ -2076,3 +2035,7 @@ Examples:
 `upper("hello")` = "HELLO"
 
 `upper(["hello"])` = "[\\"HELLO\\"]"
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

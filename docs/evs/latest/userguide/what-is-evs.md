@@ -54,3 +54,7 @@ You can define and configure your Amazon EVS deployments using the following int
 + Amazon EVS console - Provides a web interface to create Amazon EVS environments.
 +  AWS CLI - Provides commands for a broad set of AWS services and is supported on Windows, macOS, and Linux. For more information, see [AWS Command Line Interface](https://aws.amazon.com/cli).
 +  AWS CloudFormation - Provides a specification for each resource type, such as `AWS::EVS::Environment`. You create a template using the resource specification, and CloudFormation takes care of provisioning and configuring the resources for you.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

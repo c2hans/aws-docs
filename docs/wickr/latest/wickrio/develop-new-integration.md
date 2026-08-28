@@ -12,3 +12,7 @@ This guide provides documentation for Wickr IO Integrations. If you're using AWS
 ![The Wickr IO overview image.](http://docs.aws.amazon.com/wickr/latest/wickrio/images/wickrio-overview.png)
 
 To customize your experience with integrations in AWS Wickr, Wickr IO offers a [JavaScript](https://github.com/WickrInc/wickrio-bot-api) library which makes it easy to develop your own bots. This document contains the process of creating a new integration, an “emoji bot,” which responds to messages with a random emoji.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

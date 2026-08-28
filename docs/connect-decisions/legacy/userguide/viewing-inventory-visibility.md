@@ -25,3 +25,7 @@ To view the inventory visibility, perform the following procedure.
 
    **Pivot by Product** – When you pivot by product, the projections are grouped by product. At a high-level, for a given product, you can view the category (that is, one level up), the total number of available products, the total number of products on order, and the total number of products currently in transit across locations.
 ![Inventory Visibility by product](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/pivot_by_product.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

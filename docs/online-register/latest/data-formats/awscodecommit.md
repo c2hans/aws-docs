@@ -19,6 +19,7 @@ AWS CodeCommit provides the following APIs for data retrieval.
 | <a name="codecommit-EvaluatePullRequestApprovalRules"></a>[EvaluatePullRequestApprovalRules](https://docs.aws.amazon.com/codecommit/latest/APIReference/API_EvaluatePullRequestApprovalRules.html) | Evaluate whether a pull request is mergable based on its current approval state and approval rule requirements | Read |
 | <a name="codecommit-GetApprovalRuleTemplate"></a>[GetApprovalRuleTemplate](https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetApprovalRuleTemplate.html) | Return information about an approval rule template | Read |
 | <a name="codecommit-GetBlob"></a>[GetBlob](https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetBlob.html) | View the encoded content of an individual file in an AWS CodeCommit repository from the AWS CodeCommit console | Read |
+| <a name="codecommit-GetBlobDifferences"></a>[GetBlobDifferences](API_GetBlobDifferences.html) | Compute a structured, line-level diff between two blob versions in an AWS CodeCommit repository | Read |
 | <a name="codecommit-GetBranch"></a>[GetBranch](https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetBranch.html) | Get details about a branch in an AWS CodeCommit repository with this API; does not control Git branch actions | Read |
 | <a name="codecommit-GetComment"></a>[GetComment](https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetComment.html) | Get the content of a comment made on a change, file, or commit in a repository | Read |
 | <a name="codecommit-GetCommentReactions"></a>[GetCommentReactions](https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetCommentReactions.html) | Get the reactions on a comment | Read |
@@ -51,3 +52,7 @@ AWS CodeCommit provides the following APIs for data retrieval.
 | <a name="codecommit-ListRepositories"></a>[ListRepositories](https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListRepositories.html) | List information about AWS CodeCommit repositories in the current Region for your AWS account | List |
 | <a name="codecommit-ListRepositoriesForApprovalRuleTemplate"></a>[ListRepositoriesForApprovalRuleTemplate](https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListRepositoriesForApprovalRuleTemplate.html) | List repositories that are associated with an approval rule template | List |
 | <a name="codecommit-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/codecommit/latest/APIReference/API_ListTagsForResource.html) | List the resource attached to a CodeCommit resource ARN | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ The following illustration shows you can:
 ![A graphic of four routing profiles.](http://docs.aws.amazon.com/connect/latest/adminguide/images/routing-profile-example2.png)
 
 For an overview of the steps to set up queue-based routing, see [Set up queue-based routing](set-up-queue-based-routing.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

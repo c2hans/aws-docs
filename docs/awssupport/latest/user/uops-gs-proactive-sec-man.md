@@ -16,3 +16,7 @@ Unified Operations entitles you to AWS Security Incident Response to help you qu
    1. (Optional) You can optionally enable proactive response and alert triaging workflow to enable within your organization to monitor and investigate alerts generated from Amazon GuardDuty and AWS Security Hub CSPM integrations. For more information, see [Setup proactive response and alert triaging workflows](https://docs.aws.amazon.com/security-ir/latest/userguide/setup-monitoring-and-investigation-workflows.html) in the *AWS Security Incident Response User Guide*.
 
 1. (Optional) Enable the proactive containment of a potential security incident. AWS can perform containment actions to quickly mitigate impact, such as isolating compromised hosts or rotating credentials. To turn on this feature, you must first grant the necessary permissions to the service. To do this, deploy an [Step Functions StackSet](https://docs.aws.amazon.com/security-ir/latest/userguide/working-with-stacksets.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

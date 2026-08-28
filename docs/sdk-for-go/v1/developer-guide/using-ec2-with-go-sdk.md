@@ -18,3 +18,7 @@ You can download complete versions of these example files from the [aws-doc-sdk-
 + [Using Regions and Availability Zones with Amazon EC2](ec2-example-regions-availability-zones.md)
 + [Working with Security Groups in Amazon EC2](ec2-example-security-groups.md)
 + [Using Elastic IP Addresses in Amazon EC2](ec2-example-elastic-ip-addresses.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Go. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-go` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,3 +31,7 @@ GPU7: pp_rank 1, tp_rank 1, rdp_rank 1, dp_rank 3, mp_rank 3
 In this example, pipeline parallelism occurs across the GPU pairs (0,1); (2,3); (4,5) and (6,7). In addition, data parallelism (`allreduce`) takes place across GPUs 0, 2, 4, 6, and independently over GPUs 1, 3, 5, 7. Tensor parallelism happens over subsets of `DP_GROUP`s, across the GPU pairs (0,2); (1,3); (4,6) and (5,7).
 
   For this kind of hybrid pipeline and tensor parallelism, the math for `data_parallel_degree` remains as `data_parallel_degree = number_of_GPUs / pipeline_parallel_degree`. The library further calculates the reduced data parallel degree from the following relation `reduced_data_parallel_degree * tensor_parallel_degree = data_parallel_degree`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

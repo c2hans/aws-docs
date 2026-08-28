@@ -43,3 +43,7 @@ There are two ways to prevent sign-in across app clients with a hosted UI sessio
 + [Custom-attribute multi-tenancy best practices](custom-attribute-based-multi-tenancy.md)
 + [Custom scope multi-tenancy best practices](scope-based-multi-tenancy.md)
 + [Multi-tenancy security recommendations](multi-tenancy-security-recommendations.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

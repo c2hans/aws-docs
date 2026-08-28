@@ -220,3 +220,7 @@ The body contains the HTTP request body that you choose to set. The request body
 <a name="response"></a>
 
 See an example [here](https://docs.aws.amazon.com/appsync/latest/devguide/tutorial-http-resolvers.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

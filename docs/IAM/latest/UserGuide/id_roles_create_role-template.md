@@ -45,3 +45,7 @@ The following table lists the role template for each service that role manager s
 + [Create roles automatically with role manager](id_roles_create_role-manager.md)
 + [Manage access to role manager](id_roles_create_role-manager_enable-use.md)
 + [IAM API Reference](https://docs.aws.amazon.com/IAM/latest/APIReference/welcome.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

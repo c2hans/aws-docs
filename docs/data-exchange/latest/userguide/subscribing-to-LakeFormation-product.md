@@ -56,3 +56,7 @@ After you subscribe to a product containing AWS Lake Formation data sets, you ca
 1. Navigate to AWS Lake Formation and create resource links from the new shared resources.
 
 1. Navigate to Athena or another AWS Lake Formation compatible query engine to query your data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

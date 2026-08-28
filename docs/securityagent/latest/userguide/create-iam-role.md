@@ -9,7 +9,7 @@ AWS Security Agent uses IAM Roles in three ways:
 
 1.  **Application Role:** Used when creating the AWS Security Agent application. For IAM Identity Center and admin access link use cases, the service assumes this role to grant WebApp users permissions to interact with AWS Security Agent APIs.
 
-1.  **Continuum Penetration Test Service Role:** Specified when creating Agent Spaces as a list of available roles. Later, WebApp users select one of these roles when creating a penetration test. AWS Security Agent service assumes this role to access your AWS resources during testing.
+1.  **Penetration Test Service Role:** Specified when creating Agent Spaces as a list of available roles. Later, WebApp users select one of these roles when creating a penetration test. AWS Security Agent service assumes this role to access your AWS resources during testing.
 
 1.  **Actor Role:** Used to authenticate and authorize requests to your target web application (for example, AWS API Gateway APIs). These roles are provided during Agent Space creation. The AWS Security Agent agent assumes actor roles to interact with your target application.
 
@@ -73,8 +73,8 @@ The role should include permissions for:
 **Note**
 Customize the permissions based on your specific application requirements and principle of least privilege.
 
-## Continuum Penetration Test Service Role
-<a name="_continuum_penetration_test_service_role"></a>
+## Penetration Test Service Role
+<a name="_penetration_test_service_role"></a>
 
 The Penetration Test Service Role is specified when creating Agent Spaces as a list of available roles. When WebApp users create a penetration test, they select one of these roles. The AWS Security Agent service then assumes this role to access and test your AWS resources.
 
@@ -256,3 +256,7 @@ The permissions depend on your target application architecture. Here are example
 
 **Important**
 Configure Actor Role permissions to match your target application’s authentication and authorization requirements. The role should have the same level of access as the users or services that the Security Agent will simulate during penetration testing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

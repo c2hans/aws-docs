@@ -78,3 +78,7 @@ CREATE USER bob password 'md50c983d1a624280812631c5389e60d48c';
 The effect of setting the default identity namespace is that each identity doesn't require it as a prefix. In this example, `alice` is replaced with `MYCO:alice`. This happens with any identity included. For more information about using an identity provider with Redshift, see [Connect Redshift with IAM Identity Center to give users a single sign-on experience](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect.html).
 
 For more information about settings that pertain to Redshift configuration with IAM Identity Center, see [SET](r_SET.md) and [ALTER IDENTITY PROVIDER](r_ALTER_IDENTITY_PROVIDER.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

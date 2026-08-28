@@ -41,3 +41,7 @@ We recommend the use of SAP expert sizing to validate the sizing of complex impl
  **Suggestion 13.1.5 – Use proof of concept deployments for sizing accuracy**
 
 You can take advantage of the flexibility of AWS services to right-size your SAP workloads and scale as business demands change. Use proofs of concept (POCs) to test migrations to cloud and analyze the performance requirements. This can help right-size the workloads for both cost and performance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

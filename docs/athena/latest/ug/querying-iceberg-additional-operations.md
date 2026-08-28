@@ -37,3 +37,7 @@ Iceberg tables can be unloaded to files in a folder on Amazon S3. For informatio
 <a name="querying-iceberg-additional-operations-msck-repair"></a>
 
 Because Iceberg tables keep track of table layout information, running [MSCK REPAIR TABLE](msck-repair-table.md) as one does with Hive tables is not necessary and is not supported.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

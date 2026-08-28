@@ -26,3 +26,7 @@ We strongly recommend that you never put confidential or sensitive information, 
 <a name="encryption-transit"></a>
 
 By default, Amazon SES uses opportunistic TLS. This means that Amazon SES always attempts to make a secure connection to the receiving mail server. If it can't establish a secure connection, it sends the message unencrypted. You can change this behavior so that Amazon SES sends the message to the receiving email server only if it can establish a secure connection. For more information, see [Amazon SES and security protocols](security-protocols.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/serverless-multi-tier
  [Amazon DocumentDB (with MongoDB compatibility)](https://aws.amazon.com/documentdb) is a fast, scalable, highly available, and fully managed document database service that supports MongoDB workloads.
 
  Finally, you can also use data stores running independently on Amazon EC2 as the data tier of a multi-tier application
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

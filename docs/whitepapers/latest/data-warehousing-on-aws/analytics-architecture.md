@@ -42,3 +42,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-a
 <a name="iot-data"></a>
 
  Devices and sensors around the world send messages continuously. Enterprises today need to capture this data and derive intelligence from it. Using [AWS IoT](https://aws.amazon.com/iot/), connected devices interact easily and securely with the AWS Cloud. Use AWS IoT to leverage AWS services like [AWS Lambda](https://aws.amazon.com/lambda/), [Amazon Kinesis](https://aws.amazon.com/kinesis/) Services, [Amazon S3](https://aws.amazon.com/s3/), [Amazon Machine Learning](https://aws.amazon.com/machine-learning/), and [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) to build applications that gather, process, analyze, and act on IoT data, without having to manage any infrastructure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

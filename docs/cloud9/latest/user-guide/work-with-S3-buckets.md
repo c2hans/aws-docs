@@ -72,3 +72,7 @@ If you're working with a large number of Amazon S3 objects or folders, it's help
 1. Before choosing to load more, change the default value to the number of S3 items that you want displayed.
 **Note**
 The range of accepted values is between 3 and 1000. This setting applies only to the number of objects or folders displayed at one time. All the buckets that you created are displayed at once. By default, you can create up to 100 buckets in each of your AWS accounts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

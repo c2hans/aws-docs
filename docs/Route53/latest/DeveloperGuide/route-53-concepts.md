@@ -174,3 +174,7 @@ A Route 53 component that you can use to do the following:
 + Optionally, get notified when an endpoint becomes unhealthy
 + Optionally, configure DNS failover, so you can reroute internet traffic from an unhealthy resource to a healthy resource
 For more information about how to create and use health checks, see [Creating Amazon Route 53 health checks](dns-failover.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

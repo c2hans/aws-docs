@@ -48,3 +48,7 @@ The following tables outline Amazon Fraud Detector quotas by component.
 | GetEventPrediction API calls per second | 200 TPS | Yes |
 | Size of payload per GetEventPrediction API call | 256 KB | No |
 | Number of inputs per GetEventPrediction API call | 5000 | No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

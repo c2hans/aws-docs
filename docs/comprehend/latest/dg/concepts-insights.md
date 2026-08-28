@@ -14,3 +14,7 @@ Amazon Comprehend can analyze a document or set of documents to gather insights 
 + [Sentiment](how-sentiment.md) – Amazon Comprehend determines the dominant sentiment of a document. Sentiment can be positive, neutral, negative, or mixed.
 + [Targeted Sentiment](how-targeted-sentiment.md) – Amazon Comprehend determines the sentiment of specific entities mentioned in a document. The sentiment of each mention can be positive, neutral, negative, or mixed.
 + [Syntax analysis](how-syntax.md) – Amazon Comprehend parses each word in your document and determines the part of speech for the word. For example, in the sentence "It is raining today in Seattle," "it" is identified as a pronoun, "raining" is identified as a verb, and "Seattle" is identified as a proper noun.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

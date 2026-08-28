@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/database-caching-stra
  By using Amazon ElastiCache (Redis OSS), applications can maintain a consistent and low-latency throughput, sustained at less than 5 ms, when serving this content outside of S3 at scale. Serving heavily-requested objects via Amazon ElastiCache (Redis OSS) in this manner can enable you to meet performance goals, while also reducing retrieval and transfer costs.
 
  A blog post on how to [Turbocharge Amazon S3 with Amazon ElastiCache (Redis OSS)](https://aws.amazon.com/blogs/storage/turbocharge-amazon-s3-with-amazon-elasticache-for-redis/) covers how to set up, deploy, and organize data for this purpose.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

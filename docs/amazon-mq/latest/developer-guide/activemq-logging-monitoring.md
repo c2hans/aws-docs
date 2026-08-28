@@ -83,3 +83,7 @@ For example, in a five-minute [CloudWatch period](https://docs.aws.amazon.com/Am
 | Broker | The name of the broker. A single-instance broker has the suffix `-1`. An active/standby broker for high availability has the suffixes `-1` and `-2` for its redundant pair.  |
 | Topic or Queue | The name of the topic or queue. |
 | NetworkConnector  | The name of the network connector. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

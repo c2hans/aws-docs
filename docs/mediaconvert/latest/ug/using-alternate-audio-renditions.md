@@ -22,3 +22,7 @@ You can use one or more selector settings at a time. For example, given the foll
 However, because the group ID (RenditionGroupID) is the same for both tags, you can't use that alone to identify an audio rendition. You must use the group ID in combination with another value from the `EXT-X-MEDIA` tag to identify the audio rendition that you want MediaConvert to use.
 
 If you don't specify audio selector settings, the audio selector looks for audio that's muxed into the video segments. If the video segments don't contain audio, the audio selector uses the first alternate audio rendition from the input parent manifest.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

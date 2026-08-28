@@ -26,3 +26,7 @@ Choose the authentication method that works best for your deployment: token-base
 
 Maintaining visibility and compliance
 Monitor DNS activity across your organization by delivering logs to Amazon CloudWatch, Firehose, or Amazon Simple Storage Service. Choose a single destination Region for centralized log storage to support security audits, compliance requirements, and threat investigation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

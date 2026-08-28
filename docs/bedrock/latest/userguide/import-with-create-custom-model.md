@@ -38,3 +38,7 @@ Before you import an Amazon Nova model, note the following:
 + Your SageMaker AI-trained Amazon Nova models must be stored in an Amazon-managed Amazon S3 bucket. SageMaker AI creates this bucket when you run your first SageMaker AI training job.
 + Your Amazon Bedrock service role must have permissions to access the Amazon-managed Amazon S3 bucket, and if specified, your AWS KMS key. For more information about creating the role, see [Create a service role for importing pre-trained models](model-import-iam-role.md). For information about granting the role permission to use your AWS KMS key, see [Encryption of imported custom models](encryption-import-model.md).
 + You can only use the Amazon Bedrock APIs to create a custom model from an existing SageMaker AI-trained Amazon Nova model. You can't use the Amazon Bedrock console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -70,3 +70,7 @@ The following are the service endpoints and service quotas for this service.
 | User Groups per Region | Each supported Region: 200 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/elasticache/quotas/L-AD484FC5)  | The maximum number of user groups you can create in a Region. |
 | Users per Region | Each supported Region: 2,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/elasticache/quotas/L-80E085C7)  | The maximum number of users you can create in a Region. |
 | Users per User Group | Each supported Region: 100 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/elasticache/quotas/L-943F0F1C)  | The maximum number of users you can define for a user group. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

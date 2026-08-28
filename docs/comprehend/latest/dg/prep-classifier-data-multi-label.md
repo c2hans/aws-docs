@@ -115,3 +115,7 @@ COMEDY|TEEN,movie-summary-1.pdf,2
 ```
 
 The default delimiter between class names is a pipe (\|). However, you can use a different character as a delimiter. The delimiter must be distinct from all characters in your class names. For example, if your classes are CLASS\_1, CLASS\_2, and CLASS\_3, the underscore (**\_**) is part of the class name. So don't use an underscore as the delimiter for separating class names.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

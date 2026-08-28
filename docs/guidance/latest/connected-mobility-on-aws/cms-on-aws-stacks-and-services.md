@@ -90,3 +90,7 @@ The UIStack provides the Fleet Manager web application and backend APIs.
  **Amazon Cognito** – Manages user authentication and authorization for the Fleet Manager application. Supports user pools for direct sign-up/sign-in and identity pools for AWS resource access. For more details, see [Amazon Cognito](https://aws.amazon.com/cognito/).
 
  **Amazon Location Service** – Provides mapping, geocoding, and routing capabilities for real-time vehicle tracking. The Fleet Manager displays vehicle positions on interactive maps, calculates routes, and supports geofencing. For more details, see [Amazon Location Service](https://aws.amazon.com/location/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,3 +56,7 @@ Nutanix Move will power off the source virtual machine and perform a final data 
  **Step 7 - Verify the cutover**
 
 Verify the successful completion of the cutover by logging into the Windows server and monitoring it on the Nutanix cluster console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Migrating VMWare Virtual Machines to Nutanix Cloud Clusters on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

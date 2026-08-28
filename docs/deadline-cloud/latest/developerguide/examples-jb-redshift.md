@@ -24,3 +24,7 @@ deadline bundle gui-submit redshift-2025
 ```
 
 A Deadline Cloud Windows GPU service-managed fleet works with no further configuration. Make sure that the queue has access to the `cinema4d=2025` conda package and Redshift licensing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

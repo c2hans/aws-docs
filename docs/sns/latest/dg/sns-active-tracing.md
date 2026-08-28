@@ -134,3 +134,7 @@ You can use the Amazon SNS console to verify if active tracing is enabled for yo
 1. Use the [X-Ray service map](https://docs.aws.amazon.com/xray/latest/devguide/xray-services-sns.html) to view the end-to-end traces and service maps for the topic.
 
 ![Displays an AWS X-Ray service map that shows the tracing of a request flowing from a client to an Amazon SNS topic named "xray-topic." From there, the message is distributed to various downstream services, including an Amazon SQS queue, a Lambda function, a Kinesis firehose, and a remote service. Each connection displays metrics such as latency in milliseconds (ms) and the rate of transactions per minute (t/min), helping to analyze the performance and identify any latency issues in the message delivery process.](http://docs.aws.amazon.com/sns/latest/dg/images/xray-troubleshooting.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

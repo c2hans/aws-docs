@@ -28,3 +28,7 @@ You can review automatically archived findings and the suppression rules created
 + Archived findings are retained in Amazon GuardDuty for 90 days and can be viewed at any time during that period
 + You can modify or delete suppression rules at any time through the Amazon GuardDuty console
 + The auto-triage process continuously adapts to your environment, improving accuracy over time and reducing false positives
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

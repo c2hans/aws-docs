@@ -25,3 +25,7 @@ AWS Shield provides the following APIs for data retrieval.
 | <a name="shield-ListProtections"></a>[ListProtections](https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_ListProtections.html) | List all existing protections | List |
 | <a name="shield-ListResourcesInProtectionGroup"></a>[ListResourcesInProtectionGroup](https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_ListResourcesInProtectionGroup.html) | Retrieve the resources that are included in the protection group | List |
 | <a name="shield-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_ListTagsForResource.html) | Get information about AWS tags for a specified Amazon Resource Name (ARN) in AWS Shield | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

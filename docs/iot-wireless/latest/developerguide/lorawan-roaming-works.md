@@ -49,3 +49,7 @@ You can view the public network coverage information in the AWS IoT console as d
 If your device moves from its home network and enters a location where both your home network and Everynet can offer coverage, it uses first-come-first-serve policy to determine whether to connect to your LoRa gateway, or to Everynet's gateway.
 
 When visiting a public network, the hNS and serving network server (sNS) are separated. Uplink and downlink packets are then exchanged between the sNS and hNS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

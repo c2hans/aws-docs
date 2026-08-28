@@ -25,3 +25,7 @@ The internal S3 type will deploy a default of 4 MinIO server pods that each cont
 + **Internal S3 volume size**: The size in GB of the MinIO volumes created in the MinIO server pods, the default is 10GB.
 + A default Internal S3 deployment will use 4 servers with 4 PVCs. Each PVC is 10 Gi yielding 160 Gi Raw storage with 120 Gi Erasure Coded storage available to users.
 + Minio Erasure Coding calculator is available. For more information, see [Erasure Code Calculator](https://min.io/product/erasure-code-calculator).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

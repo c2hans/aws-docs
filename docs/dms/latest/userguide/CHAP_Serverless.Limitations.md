@@ -23,3 +23,7 @@ AWS DMS Serverless has the following limitations:
 + AWS DMS Serverless does not support SSL connections for DB2 endpoints.
 + AWS DMS Serverless does not support setting custom CDC start points.
 + When a replication task is in deprovisioned state, the metadata related to the table and the replication statistics are lost.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

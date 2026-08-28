@@ -111,3 +111,7 @@ The following is an example of this object type. This object references three ot
 + [ShellCommandActivity](dp-object-shellcommandactivity.md)
 + [EmrActivity](dp-object-emractivity.md)
 + [Export MySQL Data to Amazon S3 Using AWS Data Pipeline](dp-copydata-mysql.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

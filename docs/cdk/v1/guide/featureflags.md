@@ -25,3 +25,7 @@ Feature flags are disabled by default, so existing projects that do not specify 
 See the `CHANGELOG` in a given release for a description of any new feature flags added in that release. A list of all current feature flags can be found on the AWS CDK GitHub repository in [`FEATURE_FLAGS.md`](https://github.com/aws/aws-cdk/blob/main/packages/%40aws-cdk/cx-api/FEATURE_FLAGS.md).
 
 As feature flags are stored in `cdk.json`, they are not removed by the **cdk context --reset** or **cdk context --clear** commands.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

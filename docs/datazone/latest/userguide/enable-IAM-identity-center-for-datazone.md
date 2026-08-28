@@ -26,3 +26,7 @@ Complete the following procedure to enable the AWS IAM Identity Center for Amazo
      + With **Explicit user assignment**, you will add specific users or groups from you IAM Identity Center directory to provide them access to your Amazon DataZone domain. You will add and remove these users and groups later in the Amazon DataZone Console.
 
 1. Once you are satisfied with your selection, choose **Update domain**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

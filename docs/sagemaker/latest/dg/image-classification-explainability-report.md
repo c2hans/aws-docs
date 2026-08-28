@@ -23,3 +23,7 @@ The following examples illustrates what the heatmaps look like on few samples fr
 | --- | --- |
 |  ![The original image of a dog.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/autopilot/autopilot-image-classification-explainability-img1-input.png)  |  ![A dog with a heatmap highlighting the regions with the greater contribution to the predicted label.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/autopilot/autopilot-image-classification-explainability-img1-output.png)  |
 |  ![The original image of a cat.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/autopilot/autopilot-image-classification-explainability-img2-input.png)  |  ![A cat with a heatmap highlighting the regions with the greater contribution to the predicted label.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/autopilot/autopilot-image-classification-explainability-img2-output.png)  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

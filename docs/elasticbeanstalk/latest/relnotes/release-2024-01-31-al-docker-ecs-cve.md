@@ -56,3 +56,7 @@ The following tables list *only supported* platform branches. They do not list p
 |  ** ECS AL2023 version 4.0.4** <br /> * 64bit Amazon Linux 2023 v4.0.4 running ECS *  | 2023.3.20240122 | 1.80.0 |  |  |  |
 |  ** Docker AL2 version 3.7.1** <br /> * 64bit Amazon Linux 2 v3.7.1 running Docker *  | 2.0.20240124 |  | 20.10.25-1 | 2.24.3 | nginx 1.22.1 |
 |  ** ECS AL2 version 3.2.17** <br /> * 64bit Amazon Linux 2 v3.2.17 running ECS *  | 2.0.20240124 | 1.80.0 |  |  |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,3 +31,7 @@ The [PHP](https://www.php.net/) project maintains a list and schedule of [suppor
 
 **Note**
  When AL2023 was released, all 7.x and 5.x versions of [PHP](https://www.php.net/) were not supported by the [PHP](https://www.php.net/) community, and were not included as options in AL2023.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ Observe the requirements listed in [Migrating Workloads: Prerequisites for Linux
 + If you use Red Hat Satellite, WIGS requires the addition of Red Hat Software Collections (RHSCL). The WIGS system uses RHSCL to add a Python3.6 interpreter alongside whatever is configured on the system. To support this solution, the following repositories must be available:
   + rhel-server-rhscl
   + rhel-server-releases-optional
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ To control the interval for re-authenticating a SAML IdP token
 1. Set your WorkSpaces Secure Browser portal's inactivity and idle timeout values. These values controls the amount of time between a user’s last interaction and when a WorkSpaces Secure Browser session ends due to inactivity. When a session ends, a user will lose their session state (including open tabs, unsaved web content, and history), and return to a fresh state at the start of the next session. For more information, see step 5 in [Creating a web portal for Amazon WorkSpaces Secure Browser](getting-started-step1.md).
 **Note**
 If a user's session times out but the user still has a valid SAML IdP token, they don't have to enter their user name and password to start a new WorkSpaces Secure Browser session. To control how tokens are re-authenticated, follow the guides in the previous step.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

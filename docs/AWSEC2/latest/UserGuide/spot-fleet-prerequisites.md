@@ -311,3 +311,7 @@ The following table provides potential values for `aws:SourceArn` to limit the s
 | RequestSpotFleet | AWS STS (AssumeRole) | Limit the AssumeRole capability on aws-ec2-spot-fleet-tagging-role to spot-fleet-requests in the specified account. | arn:aws:ec2:\*:{{123456789012}}:spot-fleet-request/sfr-\* |
 | RequestSpotFleet | AWS STS (AssumeRole) | Limit the AssumeRole capability on aws-ec2-spot-fleet-tagging-role to spot-fleet-requests in the specified account and specified Region. Note that this role will not be usable in other Regions. | arn:aws:ec2:{{us-east-1}}:{{123456789012}}:spot-fleet-request/sfr-\* |
 | RequestSpotFleet | AWS STS (AssumeRole) | Limit the AssumeRole capability on aws-ec2-spot-fleet-tagging-role to only actions affecting the fleet sfr-11111111-1111-1111-1111-111111111111. Note that this role may not be usable for other Spot Fleets. Also, this role cannot be used to launch any new Spot Fleets through request-spot-fleet. | arn:aws:ec2:{{us-east-1}}:{{123456789012}}:spot-fleet-request/sfr-{{11111111-1111-1111-1111-111111111111}} |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

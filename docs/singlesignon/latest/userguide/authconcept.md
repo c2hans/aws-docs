@@ -124,3 +124,7 @@ IAM Identity Center doesn't support SAML Single Logout (a protocol that automati
 Effective session management requires thoughtful configuration and monitoring. Organizations should configure session durations appropriate to their security requirements, generally using shorter durations for sensitive applications and environments.
 
 Implementing processes to end sessions when users change roles or leave the organization is essential for maintaining security boundaries. Regular review of active sessions should be incorporated into security monitoring practices to detect anomalous behavior that might indicate security issues, such as unusual access patterns, unexpected login times or locations, or access to resources outside normal job functions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

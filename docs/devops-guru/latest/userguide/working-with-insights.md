@@ -122,3 +122,7 @@ An insight can have one of three severities, *high*, *medium*, or *low*. An insi
 + If the severity of all the anomalies that generated the insight is *low*, then the insight's severity is *low*.
 + If the highest severity of all the anomalies that generated the insight is *medium*, then the insight's severity is *medium*. The severity of some of the anomalies that generated the insight might be *low*.
 + If the highest severity of all the anomalies that generated the insight is *high*, then the insight's severity is *high*. The severity of some of the anomalies that generated the insight might be *low* or *medium*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

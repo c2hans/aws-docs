@@ -19,3 +19,7 @@ On June 30, 2022 these retiring branches will be marked **retired**. At that poi
 There is no change before the retirement date. We will keep providing maintenance updates to the retiring platform branches, to allow for ample migration time. If you currently use any of these retiring platform branches, we strongly recommend that you start planning your migration from each one of them to a current, fully supported version.
 
 After today, we will stop issuing release notes for Amazon Linux AMI platform updates. You can still find the latest software versions for any retiring platform branch in the [Retiring platform versions](https://docs.aws.amazon.com/elasticbeanstalk/latest/platforms/platforms-retiring.html) page of the *AWS Elastic Beanstalk Platforms* guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

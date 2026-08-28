@@ -19,3 +19,7 @@ The following are limitations for the Microsoft Dynamics 365 CRM connector:
 +  Field based partitioning will be supported on all entities when it adheres to the following criteria:
   + DateTime queryable fields should be present in standard entities or `createdon` and `modifiedon` fields (system-generated) in custom entities.
   + There is no exclusive identification of system generated fields or the nullable property from any SaaS metadata APIs, however it is a general practice that only the fields available by default, are filterable and non-nullable. Therefore, the above criterion of field selection is considered null safe and if it is filterable, it will be eligible for partitioning.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

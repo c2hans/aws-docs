@@ -60,3 +60,7 @@ Each product has its own expiration date. For contract-based products, you'll lo
 <a name="buyer-notifications-offer-sets"></a>
 
 When an offer set is published for a buyer's AWS account, they receive a single consolidated email containing the offer set ID, expiration date, and a complete list of included products with their Product IDs, Offer IDs, and seller names. The email includes a call-to-action link to review and subscribe to the offer set, along with links to view all available offers and subscription instructions. Individual offer published emails are suppressed for buyers when offers are part of an offer set—they receive only the consolidated offer set notification rather than separate emails for each component offer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

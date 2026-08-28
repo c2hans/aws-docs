@@ -20,3 +20,7 @@ Create a room or a group message to have conversations with multiple Wickr users
 + [Delete a room in the Wickr client](room-delete.md)
 + [Manage files in the Wickr client](room-file-management.md)
 + [Mute notifications in the Wickr client](mute-notifications.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

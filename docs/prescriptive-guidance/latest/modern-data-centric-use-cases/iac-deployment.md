@@ -12,3 +12,7 @@ Modern architecture is incomplete without a mechanism for an infrastructure as c
 We recommend that any deployed infrastructure is always backed by code using IaC tools. For example, you can use [AWS CloudFormation](https://aws.amazon.com/cloudformation/) or [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/cdk/v2/guide/home.html). AWS CDK is a wrapper around CloudFormation.
 
 As a best practice, we recommend that you push your code to a code repository of your choice. It's also a best practice to use source control in your code repository so that you have versioning and collaboration capabilities that enable multiple team members to work simultaneously on the same code base, while ensuring that the code integration from different developers into the main branch doesn't result in any conflicts. [AWS CodeCommit](https://aws.amazon.com/codecommit/) is a controlled source code repository that provides a version control mechanism.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

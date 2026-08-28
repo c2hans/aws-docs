@@ -123,3 +123,7 @@ For more information about privacy protection, see the following topics:
 Whether you want Route 53 to automatically renew the domain before it expires. The registration fee is charged to your AWS account. On the old console this setting is only available when editing domain settings. For more information, see [Renewing registration for a domain](domain-renew.md).
 If you disable automatic renewal, registration for the domain will not be renewed when the expiration date passes, and you might lose control of the domain name.
 The period during which you can renew a domain name varies by top-level domain (TLD). For an overview about renewing domains, see [Renewing registration for a domain](domain-renew.md). For information about extending domain registration for a specified number of years, see [Extending the registration period for a domain](domain-extend.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

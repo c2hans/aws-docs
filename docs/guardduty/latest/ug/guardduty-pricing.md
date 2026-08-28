@@ -42,3 +42,7 @@ Use the following table to review which protection plans are enabled by default 
 <a name="using-free-tier-malware-protection-for-s3"></a>
 
 Malware Protection for S3 includes a Free Tier associated with your AWS accounts. For more information, see [Pricing and usage cost for Malware Protection for S3](pricing-malware-protection-for-s3-guardduty.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

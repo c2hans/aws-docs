@@ -1,0 +1,55 @@
+---
+source_url: https://docs.aws.amazon.com/reference-architecture-diagrams/latest/connected-aircraft-solution-architecture/connected-aircraft-solution-architecture.html
+---
+
+# Connected Aircraft Solution Architecture
+<a name="connected-aircraft-solution-architecture"></a>
+
+Publication date: **September 22, 2022 ([Diagram history](#diagram-history))**
+
+This reference architecture shows how you can onboard flight data collection for fleet-wide analytics and predictive maintenance using AWS IoT Greengrass, Amazon S3, Amazon Managed Service for Apache Flink, and Amazon SageMaker AI.
+
+## Connected Aircraft Solution Architecture Diagram
+<a name="diagram1"></a>
+
+![Reference architecture diagram showing how you can use AWS services to onboard flight data collection for fleet-wide analytics and predictive maintenance.](http://docs.aws.amazon.com/reference-architecture-diagrams/latest/connected-aircraft-solution-architecture/images/connected-aircraft-solution-architecture.png)
+
+1. Flight (avionics) and telemetry (sensor) data is collected by **AWS IoT Greengrass**, running on the flight-data acquisition unit on board.
+
+1. Near real-time events are anonymized and sent to Flight Operations on the ground. Flight data is offloaded to **Amazon Simple Storage Service** (Amazon S3) with aircraft at the gate and analyzed by the Flight Operations Team for fuel burn optimization, fault analysis, and other use cases.
+
+1. Engine flight data is processed and analyzed with **Amazon Managed Service for Apache Flink** for engine health maintenance and the Flight Operations Team notified of any anomalies.
+
+1. Anonymized flight and fault data is aggregated using **Amazon Athena** and stored in an **Amazon S3** data lake.
+
+1. Models trained from aggregated flight and fault data are deployed to **AWS IoT Greengrass** on the aircraft for Machine Learning inference driving predictive maintenance.
+
+1. App developers build new digital solutions for the connected ecosystem using **Amazon API Gateway**, **AWS Lambda**, and **Athena**.
+
+1. Anonymized data is offered to third-party developers on a subscription basis with **AWS Data Exchange**.
+
+1. Fleet–wide analytics is performed by the Engine Health Management team by querying processed flight data using **Amazon Quick** and **Athena**.
+
+## Further reading
+<a name="further-reading"></a>
+
+ For additional information, refer to
++ [AWS Architecture Icons](https://aws.amazon.com/architecture/icons)
++ [AWS Architecture Center](https://aws.amazon.com/architecture)
++  [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected)
+
+## Diagram history
+<a name="diagram-history"></a>
+
+To be notified about updates to this reference architecture diagram, subscribe to the RSS feed.
+
+| Change | Description | Date |
+| --- |--- |--- |
+| [Initial publication](#diagram-history) | Reference architecture diagram first published. | September 22, 2022 |
+
+**Note**
+To subscribe to RSS updates, you must have an RSS plugin enabled for the browser you are using.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Reference Architecture Diagrams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query reference-architecture-diagrams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

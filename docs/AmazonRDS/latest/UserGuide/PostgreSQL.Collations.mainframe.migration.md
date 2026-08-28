@@ -80,3 +80,7 @@ We recommend that you use the collations in the [Unicode to EBCDIC collations ta
 To learn more about migrating applications from mainframe environments to AWS, see [What is AWS Mainframe Modernization?](https://docs.aws.amazon.com/m2/latest/userguide/what-is-m2.html).
 
 For more information about managing collations in PostgreSQL, see [Collation Support](https://www.postgresql.org/docs/current/collation.html) in the PostgreSQL documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

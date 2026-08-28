@@ -24,3 +24,7 @@ If you want to use two SCC files as your captions input and embed the captions a
    + If you chose **Upconvert** in the preceding step of this procedure, optionally specify a service number for **708 service number**. Within an output, each captions tab must specify a different service number.
 
      If you upconvert and don't specify a value for **708 service number**, the service uses the value that you specify for **CC channel number** as your 708 service number.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

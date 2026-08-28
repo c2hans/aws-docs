@@ -141,3 +141,7 @@ Your pipeline should have everything for running an end-to-end native AWS contin
 The Lambda deploy action allows two methods of deployment. One method is traffic shifting alone without an input artifact from the source action. The other method is updating function code using an input artifact from the source action, then publishing a new version based on the updated code. For the second method, if the alias is provided, CodePipeline will do the traffic shifting as well. This Lambda deploy action tutorial demonstrates updating your function using a source artifact.
 
 To learn more about the action, see the action reference page at [AWS Lambda deploy action reference](action-reference-LambdaDeploy.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

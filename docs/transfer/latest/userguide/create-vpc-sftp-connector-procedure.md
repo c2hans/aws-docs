@@ -350,3 +350,7 @@ Here are solutions for common issues when creating VPC\_LATTICE-enabled connecto
 + **Connection timeouts**: Verify security group rules allow traffic on port 22 and that your VPC routing is correct.
 + **DNS resolution issues**: For public endpoints, ensure your VPC has internet connectivity through a NAT Gateway or Internet Gateway.
 + **Cross-account access denied**: Verify the resource share is accepted and the Resource Configuration ARN is correct. If the proper permission policy is attached to the resource configuration when the origin account creates the resource share, these permissions are required:`vpc-lattice:AssociateViaAWSService`, `vpc-lattice:AssociateViaAWSService-EventsAndStates`, `vpc-lattice:CreateServiceNetworkResourceAssociation`, `vpc-lattice:GetResourceConfiguration`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

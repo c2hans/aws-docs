@@ -17,6 +17,7 @@ This section describes common replication errors, possible explanations, and pot
 + [Failed to connect AWS replication Agent to replication software](#common-connection-agent-replication-software)
 + [Failed to establish communication with replication software](#common-establish-communication-replication-software)
 + [Failed to create firewall rules](#common-failed-create-firewall)
++ [Failed to create security groups](#common-failed-create-security-groups)
 + [Failed to authenticate with service](#common-failed-authenticate-service)
 + [Failed to create staging disks](#common-failed-create-staging-disks)
 + [Replication stuck at Attach Staging Disks](#common-stuck-attach-staging-disks)
@@ -80,6 +81,13 @@ This error message (Firewall rules creation failed) can be caused by several rea
 
 1. Review the replication settings of the associated source server.
 
+## Failed to create security groups
+<a name="common-failed-create-security-groups"></a>
+
+AWS MGN could not create or update the security group for the replication server. This is usually one of the following:
++ A Service Control Policy (SCP) or permissions boundary in your AWS Organization is blocking the MGN service-linked role from modifying security groups.
++ A security group named **AWS Application Migration Service default Replication Server Security Group** already exists in the staging area VPC but was not created by MGN. Remove or rename it so MGN can create and manage its own.
+
 ## Failed to authenticate with service
 <a name="common-failed-authenticate-service"></a>
 
@@ -132,3 +140,7 @@ Unknown errors (unknown\_error) can occur for any number of reasons. There are s
 + Check performance issue on the replication server.
 + Check the [network bandwidth](https://docs.aws.amazon.com/mgn/latest/ug/Replication-Related-FAQ.html#perform-connectivity-bandwidth-test) between the agent and the replication server.
 + [Check the replication agent logs.](Troubleshooting-Agent-Issues.md#MGN-Agent-Log)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

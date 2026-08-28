@@ -23,3 +23,7 @@ Then later use that attribute key in the [AWS Lambda function](invoke-lambda-fun
   + Use Amazon Lex Global Resiliency to replicate bots across AWS Regions and retain the bot ID.
   + Change your flows to branch based on the AWS Region where the flow is running. At flow runtime, these parameters are replaced with the Region where the flow is run, as shown in the following example.
 ![The properties page of the check contact attributes block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/acgr-requirements.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -67,3 +67,7 @@ The data input mode integrations with Amazon S3, Amazon EFS, and FSx for Lustre 
 If you use a custom training container, make sure you install the [SageMaker training toolkit](https://github.com/aws/sagemaker-training-toolkit) that helps set up the environment for SageMaker training jobs. Otherwise, you must specify the environment variables explicitly in your Dockerfile. For more information, see [Create a container with your own algorithms and models](https://docs.aws.amazon.com/sagemaker/latest/dg/docker-containers-create.html).
 
 For more information about how to set the data input modes using the low-level SageMaker APIs, see [How Amazon SageMaker AI Provides Training Information](your-algorithms-training-algo-running-container.md), the [`CreateTrainingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingJob.html) API, and the `TrainingInputMode` in [`AlgorithmSpecification`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_AlgorithmSpecification.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

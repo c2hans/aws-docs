@@ -99,3 +99,7 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **Invalid client credentials** – Verify that the Client ID and Client secret match the values from your Visier admin console. Confirm that the redirect URI in your Visier OAuth client matches the Amazon Quick callback URL.
 + **Data access errors** – Verify that the data access scopes configured in your Visier account include the workforce data you are trying to query. Contact your Visier administrator to review your account permissions.
 + **No tools discovered** – If Amazon Quick does not discover any tools after you create the connector, confirm that Visier Agent is active and that your authentication credentials have not expired.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

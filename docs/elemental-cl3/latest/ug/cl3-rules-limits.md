@@ -18,3 +18,7 @@ The following table provides a summary of the rules and constraints that apply t
 
 - **Software versions in a cluster**
   - We strongly recommend that all the software versions on the nodes in one cluster have the same software version, down to the patch level. So, for example, 2.21.3 on all Live nodes, and 3.21.3 on all Conductor Live nodes in the cluster.<br />You might perform upgrades in such a way that you have two nodes with the same major version but different patch versions. For example, 2.21.3 and 2.21.5. If you experience a problem with interaction in those two nodes, AWS Elemental Support will probably request that you set up all the nodes on the same patch version.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

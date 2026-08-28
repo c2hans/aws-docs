@@ -239,3 +239,7 @@ Now that you have familiarized yourself with CodeCommit and some of its features
 + If you want to migrate a repository to CodeCommit, follow the steps in [Migrate to CodeCommit](how-to-migrate-repository.md).
 + If you want to add your repository to a continuous delivery pipeline, follow the steps in [Simple Pipeline Walkthrough](https://docs.aws.amazon.com/codepipeline/latest/userguide/getting-started-cc.html).
 + If you want to learn more about products and services that integrate with CodeCommit, including examples from the community, see [Product and service integrations](integrations.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

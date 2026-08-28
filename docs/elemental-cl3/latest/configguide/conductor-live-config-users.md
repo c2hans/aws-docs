@@ -41,3 +41,7 @@ Log in as a regular administrator and add more users.
    + Advise the user to change their password. They must log onto the Conductor Live web interface. Then on the menu bar, they can select their name and choose **Account** from the dropdown menu. The **Account** page has a **Change Password** button in the top right corner.
    + If your organization uses the REST API, advise the user to make a note of their personal API key. They must log into the Conductor Live web interface. Then on the menu bar, they can select their name. The API key appears on the dropdown menu.
    + Tell the user how to log out. On the right side of the menu bar on any page, they select **Logout**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

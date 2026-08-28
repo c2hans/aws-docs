@@ -107,3 +107,7 @@ These parameters control how rollouts are produced and how the trainer handles s
 + **adam\_beta2 = 0.95.** Lower than the SFT default of 0.999. In RL, gradient statistics are non-stationary, so the optimizer needs to track recent gradient variance more aggressively.
 + **weight\_decay = 0.0.** LoRA already constrains updates via low-rank parameterization. Adding weight decay compounds the regularization in ways that have not been well-characterized for RL fine-tuning.
 + **adam\_grad\_clip\_norm = 1.0.** Caps the global gradient norm. If collapse correlates with large pre-clip spikes, drop to 0.5. If the norm sits at exactly 1.0 for many steps and reward is flat, the clip may be the bottleneck — raise to 2.0 cautiously.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

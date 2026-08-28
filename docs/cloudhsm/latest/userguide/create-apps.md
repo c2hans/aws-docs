@@ -19,3 +19,7 @@ After you create HSM users, you can sign in to the HSM and manage keys using any
 + Use the Key Storage Provider (KSP) for AWS CloudHSM with [Microsoft Windows Server Certificate Authority (CA)](win-ca-overview-sdk5.md)
 + Use the Key Storage Provider (KSP) for AWS CloudHSM with [Microsoft Sign Tool](signtool-sdk5.md)
 + Use the Key Storage Provider (KSP) for TLS offload with [Internet Information Server (IIS) web server](ssl-offload.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/rust.html
  Because Rust compiles to native code, Lambda treats Rust as a custom runtime. You can use the `provided.al2023` runtime to deploy Rust functions on AL2023 to Lambda.
 
  For more information, see [Building Lambda functions with Rust](https://docs.aws.amazon.com/lambda/latest/dg/lambda-rust.html) in the *AWS Lambda Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

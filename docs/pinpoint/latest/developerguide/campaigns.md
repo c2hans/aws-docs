@@ -18,3 +18,7 @@ You can set the campaign schedule to send the message once or at a recurring fre
 To experiment with alternative campaign strategies, set up your campaign as an A/B test. An A/B test includes two or more treatments of the message or schedule. Treatments are variations of your message or schedule. As your users respond to the campaign, you can view campaign analytics to compare the effectiveness of each treatment.
 
 For more information, see [Campaigns](https://docs.aws.amazon.com/pinpoint/latest/apireference/apps-application-id-campaigns.html) in the *Amazon Pinpoint REST API Guide* or [Campaigns](https://docs.aws.amazon.com/pinpoint/latest/userguide/campaigns.html) in the *Amazon Pinpoint User Guide* .
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ The following table provides a history of earlier DLAMI releases and related cha
 | Linux AMIs v2.0 | Base, Source, and Conda AMIs updated with NCCL 2.1. Source and Conda AMIs updated with MXNet v1.0, PyTorch 0.3.0, and Keras 2.0.9. | December 11, 2017 |
 | Two Windows AMI options added | Windows 2012 R2 and 2016 AMIs released: added to AMI selection guide and added to release notes. | November 30, 2017 |
 | Initial documentation release | Detailed description of change with link to topic/section that was changed. | November 15, 2017 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

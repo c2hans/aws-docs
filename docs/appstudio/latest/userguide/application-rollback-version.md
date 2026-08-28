@@ -25,3 +25,7 @@ If you want to revert the Development environment of an app to a previously publ
 1. Enter a reason for rolling back, and choose **Roll back**. The rollback publish will start and once completed, the Production environment of your application will be update to the chosen version.
 **Note**
 You can also roll forward to a previously published app version after you've rolled back.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

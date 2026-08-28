@@ -30,3 +30,7 @@ Keep the following in mind when you unpublish a product:
 This action can't be undone.
 
 After you complete these steps, your product's status is **Restricted**. A restricted product can't be published again, but you can create a new product (with a new product ID) that has the same data sets, product details, and offer details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

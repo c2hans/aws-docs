@@ -31,3 +31,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous
 +  Know, monitor, and assess your suppliers starting with Direct (Tier-1) suppliers and going down the line by covering all of your suppliers.
 +  Implement secure coding practices and publish them internally for easy access so that they are used across the board and become as part of a developers’ coding practice.
 +  Apply security in every stage of the CI/CD pipeline.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,3 +31,7 @@ For a complete list of all the various AWS compliance programs that AWS Managed 
 To enable PCI compliance for your AWS Managed Microsoft AD directory, you must configure fine-grained password policies as specified in the PCI DSS Attestation of Compliance (AOC) and Responsibility Summary document provided by AWS Artifact.
 
 For more information about using fine-grained password policies, see [Understanding AWS Managed Microsoft AD password policies](ms_ad_password_policies.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

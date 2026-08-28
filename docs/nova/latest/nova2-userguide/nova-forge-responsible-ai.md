@@ -12,3 +12,7 @@ Amazon Nova Forge provides a Responsible AI Toolkit that includes training data,
 **Training data**: The "RAI" category in data mixing contains cases and scenarios emphasizing responsible AI principles, safety considerations, and responsible technology deployment. Use these to align your models responsibly during continued pre-training.
 
 **Evaluations**: Benchmark tasks are available to test your model's ability to detect and reject inappropriate, harmful, or incorrect content. Use these evaluations to measure the difference between base model performance and your custom model performance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -44,3 +44,7 @@ You can create a real-time metrics report to view real-time or near-real time me
 1. (Optional) To save your report for future reference, choose **Save**, provide a name for the report, and then choose **Save**.
 
    To view your saved real-time metrics reports, choose **Analytics and optimization**, **Dashboards and reports**, and then choose the **Real-time metrics** tab.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

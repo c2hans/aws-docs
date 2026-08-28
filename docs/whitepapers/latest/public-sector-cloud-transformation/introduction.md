@@ -18,3 +18,7 @@ To meet this larger demand for innovation, public sector leaders must empower th
 Teams need to operate off a common platform to avoid unnecessary diversity. Cloud platforms enable teams to build amazing customer experiences because they enable creativity and collaboration while reducing accidental complexity. Changing the mindset within your IT organization is the first step to changing the mindset outside of IT. Leading with business needs first earns trust with key business partners, enabling alignment on joint decision-making, shared accountability, and how digital business initiatives are measured.
 
 Budgeting, controlling, tracking, and monitoring IT projects that solve discrete problems must give way to leading your IT teams in a way that inspires and creates space for innovation. By unlocking innovation, and enabling innovation at speed, you can reposition your IT organization as a valued business partner, rather than as technology support.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

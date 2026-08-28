@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/well-archit
 + [Automate the Upgrade of an Amazon FSx for Windows File Server to a Multi-AZ deployment](https://aws.amazon.com/blogs/modernizing-with-aws/automate-the-upgrade-of-an-amazon-fsx-for-windows-file-server-to-a-multi-az-deployment/)
 + [Amazon FSx for Windows File Server and AWS Managed Microsoft AD Multi-Administrator Deployment](https://aws.amazon.com/blogs/modernizing-with-aws/amazon-fsx-aws-managed-ad-multi-administrator-deployment/)
 + [Implementing security notifications for end user activity on Amazon FSx for Windows File Server](https://aws.amazon.com/blogs/modernizing-with-aws/implementing-security-notifications-for-end-user-activity-on-amazon-fsx-for-windows-file-server/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

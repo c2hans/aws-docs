@@ -104,3 +104,7 @@ The following are the service endpoints and service quotas for this service.
 | Number of Suppression Rules | Each supported Region: 500 | No | The maximum number of Suppression Rules allowed per account. |
 
 For more information, see the [Amazon Inspector quotas](https://docs.aws.amazon.com/inspector/latest/user/quotas.html) in the *Amazon Inspector User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

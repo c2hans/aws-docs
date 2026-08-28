@@ -42,3 +42,7 @@ By default IPV6 addresses are globally addressable. If your subnet has an intern
 + Make sure that the security groups provide access to the network resources that your applications require.
 
   For more information about configuring security groups for WorkSpaces Applications, see [Security Groups in Amazon WorkSpaces Applications](managing-network-security-groups.md). For general information about security groups, see [Security Groups for Your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups) in the *Amazon VPC User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

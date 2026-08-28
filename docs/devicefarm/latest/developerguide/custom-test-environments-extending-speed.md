@@ -75,3 +75,7 @@ Then, you can add the following code to your test spec file to ensure that `webD
 For more information on the capabilities that Appium supports, see [Appium Desired Capabilities](http://appium.io/docs/en/writing-running-appium/caps/) in the Appium documentation.
 
 For more ways to extend your test suite and optimize your tests, see [Extending custom test environments in Device Farm](custom-test-environments-extending.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

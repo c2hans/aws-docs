@@ -82,3 +82,7 @@ The SMP library is also compatible with open source frameworks such as PyTorch F
 **To run a sample model-parallel training workload**
 
 The SageMaker AI service teams provide sample training jobs implementing model parallelism with the SMP library at [`awsome-distributed-training/3.test_cases/17.SM-modelparallelv2`](https://github.com/aws-samples/awsome-distributed-training/tree/main/3.test_cases/17.SM-modelparallelv2).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ Whether a scan is GuardDuty-initiated or started on-demand, you can start a new 
 The steps to re-scan the instance remain the same as starting an on-demand malware scan for the first time. For information about the steps, see [Start On-demand malware scan](malware-protection-getting-started-on-demand-scan.md#malware-protection-initiate-on-demand-malware-scan).
 
 To track the status of the malware scans, see [Monitoring scan statuses and results in Malware Protection for EC2](malware-protection-scans.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

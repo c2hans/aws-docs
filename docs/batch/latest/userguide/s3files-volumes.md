@@ -128,3 +128,7 @@ The following job definition snippet shows how to reference an S3 Files persiste
 ```
 
 For more information about setting up S3 Files with Amazon EKS, see [Mounting S3 file systems in Amazon EKS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-files-mounting-eks.html) in the *Amazon S3 User Guide*. For the full volume parameter reference, see [EksVolume](https://docs.aws.amazon.com/batch/latest/APIReference/API_EksVolume.html) in the *AWS Batch API Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ The following table describes important additions to the AWS Auto Scaling docume
 | [Support for custom resource settings](#scaling-plan-doc-history) | Added support for customizing various settings for each individual resource or multiple resources at the same time. | October 9, 2018 |
 | [Tags as an application source](#scaling-plan-doc-history) | This release adds support for specifying a set of tags as an application source. | April 23, 2018 |
 | [New service](#scaling-plan-doc-history) | Initial release of AWS Auto Scaling. | January 16, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

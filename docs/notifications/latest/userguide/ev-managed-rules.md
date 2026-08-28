@@ -59,3 +59,7 @@ This rule only generates notifications for Amazon EC2 instance state changed to 
  Don't delete User Notifications managed rules unless you're certain all dependent event rules are removed. Deleting managed rules that are being used by User Notifications may cause some notifications to stop working. For more information, see [Rules managed by AWS services](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-rules.html#eb-rules-managed) in the *Amazon EventBridge User Guide*.
 
  You don’t need to manually delete managed rules. When you delete a notification configuration or specific event rule in a notification configuration, User Notifications cleans up the resources and deletes applicable managed rules owned by User Notifications for you.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS User Notifications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query notifications` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

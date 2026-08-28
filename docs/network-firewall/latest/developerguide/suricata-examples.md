@@ -644,3 +644,7 @@ reject tcp $HOME_NET any -> $EXTERNAL_NET any (app-layer-protocol:!http2; flow:t
 # Drop all other http2 decrypted traffic
 drop http2 $HOME_NET any -> $EXTERNAL_NET any (flow:established, to_server; http2.header_name; content:"authority"; sid:3; rev:1;)
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

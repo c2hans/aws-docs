@@ -67,3 +67,7 @@ Release notes for Amazon EMR on EKS 6.14.0
 
 The following features are included with the 6.14 release of Amazon EMR on EKS.
 + **[Apache Livy](https://livy.incubator.apache.org/) support** - Amazon EMR on EKS now supports Apache Livy with `spark-submit`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

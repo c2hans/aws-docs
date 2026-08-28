@@ -40,3 +40,7 @@ Described below is the input data for each Scope 3 category:
 The Scope 3 emissions are then amortized over the assets' service life (6 years for IT hardware, 50 years for buildings) to calculate monthly emissions that can be allocated to customers. This amortization ensures that we fairly distribute the total embodied carbon of each asset across its operational lifetime, accounting for scenarios such as early retirement or extended use.
 
 To ensure data quality, we use a Composite Quality Score (CQS) system and perform multiple validation checks throughout our calculation process. This systematic approach lets us provide customers with detailed, verifiable carbon footprint data while maintaining transparency about our calculations and assumptions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sustainability. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sustainability` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

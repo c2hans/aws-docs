@@ -15,3 +15,7 @@ After completing this tutorial, you can explore additional Amazon Pinpoint featu
 + You can send messages through other channels, such as SMS or push. Before you can use these channels, you have to enable and configure them on the Settings page. For more information about using the Settings page to enable and configure channels, see [Amazon Pinpoint channels](channels.md).
 + You can send data about your campaigns outside of Amazon Pinpoint. For example, you can send delivery and response data for your campaigns to Amazon S3 for long-term storage. You can also send data to Amazon Redshift to perform custom analyses. For more information about sending your data outside of Amazon Pinpoint, see [Streaming events with Amazon Pinpoint](analytics-streaming.md).
 + You can integrate Amazon Pinpoint with your apps, or interact with Amazon Pinpoint programmatically, by using an AWS SDK. For more information, see the [Amazon Pinpoint Developer Guide](https://docs.aws.amazon.com/pinpoint/latest/developerguide/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

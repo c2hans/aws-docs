@@ -155,3 +155,7 @@ To verify the health of your push notification responder, Amazon WorkMail sends 
 ```
 
 If a client push notification responder fails to respond with the same `OK` status as before, the notification is retried for a maximum of `StatusFrequency` minutes. For example, if `StatusFrequency` equals 5, and the first notification fails, it is retried for a maximum of 5 minutes with an exponential backoff between each retry. If the notification is not delivered after the retry time has expired, the subscription is invalidated and no new notifications are delivered. You must create a new subscription to continue to receive notifications about mailbox events. Currently, you can subscribe for a maximum of three subscriptions per mailbox.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

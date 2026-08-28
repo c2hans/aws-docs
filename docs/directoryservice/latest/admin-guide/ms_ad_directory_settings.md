@@ -79,3 +79,7 @@ TLS 1.2 and AES 256/256 are the default directory security settings if all other
   - **Setting name:** SSL 3.0 / **API name:** SSL\_3\_0 / **Potential values:** Enable, Disable / **Setting description:** Enable or disable the SSL 3.0 protocol for secure channel communications (Server and Client) on the domain controllers in your directory.
   - **Setting name:** TLS 1.0 / **API name:** TLS\_1\_0 / **Potential values:** Enable, Disable / **Setting description:** Enable or disable the TLS 1.0 protocol for secure channel communications (Server and Client) on the domain controllers in your directory.
   - **Setting name:** TLS 1.1 / **API name:** TLS\_1\_1 / **Potential values:** Enable, Disable / **Setting description:** Enable or disable the TLS 1.1 protocol for secure channel communications (Server and Client) on the domain controllers in your directory.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

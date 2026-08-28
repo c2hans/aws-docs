@@ -25,6 +25,16 @@ Following are the existing metrics supported by the data retention bot.
 | S3\_Post\_Errors | Errors posting message files and files to Amazon S3 bucket. |
 | Watchdog\_Failures | Watchdog failures. |
 | Watchdog\_Warnings | Watchdog warnings. |
+| Files\_Download\_Started | A file download started and entered an active download slot. |
+| Files\_Download\_Complete | A file download completed successfully. |
+| Files\_Download\_Retry | A file download failed and was retried. |
+| Files\_Download\_Error | A file download failed after reaching the maximum number of retries and was not saved. |
+| Files\_Download\_Sched\_Failed | A file download could not be scheduled. |
+| Files\_Download\_Stalled | The inactivity watchdog reclaimed a file download after it exceeded the inactivity timeout. |
+| Files\_Download\_Pending\_Enqueued | A file download entered the pending queue because the number of active downloads reached the maximum. |
+| Active\_Downloads\_Depth | The number of file downloads currently in progress. |
+| Pending\_Downloads\_Depth | The number of file downloads waiting for an available active download slot. |
+| Deferred\_Downloads\_Depth | The number of file downloads saved to disk after they failed all retries or were reclaimed by the inactivity watchdog. Restart the bot to retry these downloads. |
 
 Metrics are generated to be consumed by CloudWatch. The namespace used for bots is `WickrIO`. Each metric has an array of dimensions. Following is the list of dimensions that are posted with the above metrics.
 
@@ -35,3 +45,7 @@ Metrics are generated to be consumed by CloudWatch. The namespace used for bots 
 | Product | The product for the bot. Can be `WickrPro_` or `WickrEnterprise_` with `Alpha`, `Beta`, or `Production` appended. |
 | BotType | The bot type. Labeled as **Compliance** for the compliance bots. |
 | Network | The ID of the associated network. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

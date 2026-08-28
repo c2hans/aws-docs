@@ -29,3 +29,7 @@ The following table describes important changes to the *AWS Management Console G
 | New AWS Console Home UI | New AWS Console Home UI, which includes widgets for displaying important usage information and shortcuts to AWS services. For more information, see [Working with widgets](work-with-widgets.md).  | February 25, 2022 |
 | Changing the Console language | Choose a different language for the AWS Management Console. For more information, see [Changing the language of the AWS Management Console](change-language.md). | April 1, 2021 |
 | Launching CloudShell | Open AWS CloudShell from the AWS Management Console and run AWS CLI commands. For more information, see [Launching AWS CloudShell](launch-cloudshell.md).  | March 22, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Management Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsconsolehelpdocs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

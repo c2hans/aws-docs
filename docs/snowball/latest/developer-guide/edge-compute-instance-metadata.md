@@ -51,3 +51,7 @@ Use shell scripts to access compute instance user data on a Snowball Edge device
 1. Restart your compute instance with the `start-instances` AWS CLI command.
 
 Only shell scripts are supported for compute instances. There is no support for `cloud-init` package directives on compute instances running on a Snowball Edge device. For more information about working with AWS CLI commands, see the *[AWS CLI Command Reference](https://docs.aws.amazon.com/cli/latest/reference/).*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

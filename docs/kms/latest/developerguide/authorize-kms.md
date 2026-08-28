@@ -85,3 +85,7 @@ You cannot edit the role name or the policy statements in the **AWSServiceRoleFo
 <a name="delete-key-store-slr"></a>
 
 AWS KMS does not delete the **AWSServiceRoleForKeyManagementServiceCustomKeyStores** service-linked role from your AWS account even if you have [deleted all of your AWS CloudHSM key stores](delete-keystore.md). Although there is currently no procedure for deleting the **AWSServiceRoleForKeyManagementServiceCustomKeyStores** service-linked role, AWS KMS does not assume this role or use its permissions unless you have active AWS CloudHSM key stores.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ As a user being governed by a Private Marketplace experience, you will be allowe
 1. For users being governed by a Private Marketplace experience, **Discover Products** page displays the list of products that have been approved for purchase by your admin.
 
 1. Choose any approved product to visit the product's details page. Refer [Using AWS Marketplace as a buyer](https://docs.aws.amazon.com/marketplace/latest/buyerguide/using-aws-marketplace-as-a-subscriber.html) for details to purchase and deploy the product.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  Meanwhile, you may also have premium tier tenants that are willing to pay more for the privilege of running in a silo. These customers are deployed with separate stacks (as shown in the diagram).
 
  Even in this model, where you may have allowed tenants to run in their own full stack silo, it would be essential that these siloes don’t allow any one-off variation or customization for these tenants. In all respects, each of these stacks should be running the same configuration of the stack, with the same version of the software. When a new version is released, it’s deployed to the pooled tenant environment, and each of the siloed environments.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

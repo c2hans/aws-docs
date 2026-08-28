@@ -505,3 +505,7 @@ If you take no action, the patch auto-applies during each cluster's next mainten
 Keep the primary and secondary DB clusters on the same version. Managed cross-Region failover only works on a global database when every cluster shares the same engine version and patch level. The same applies if you add a new secondary that uses a newer engine version than the primary—create new secondaries on the primary's version before joining them to the global database.
 
 After a patch notification, upgrade primary and secondary to the latest version at your earliest opportunity to keep failover and switchover working. If a failover or switchover request is rejected, compare the engine patch versions across clusters; if they don't match, apply the available patch on the lagging clusters.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

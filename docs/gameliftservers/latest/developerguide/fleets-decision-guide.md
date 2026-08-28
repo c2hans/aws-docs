@@ -45,3 +45,7 @@ You don't have to choose just one type of fleet for your game hosting solution. 
 + **Development and testing**: Use Anywhere fleets for development and testing, then deploy to managed fleets for production.
 + **Regional optimization**: Use managed fleets in AWS Regions with high player density and Anywhere fleets in regions where you have existing infrastructure.
 + **Cost optimization**: Use managed fleets for baseline capacity and Anywhere fleets for overflow or specific workloads.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

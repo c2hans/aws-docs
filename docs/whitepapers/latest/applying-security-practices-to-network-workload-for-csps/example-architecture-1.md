@@ -54,3 +54,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/applying-security-pra
 1.  Customer security gateways (SEGs) are entities on the borders of the IP security domains used for securing native IP-based protocols.
 
 1.  Virtual routing and forwarding (VRF) devices, virtual router, and forwarding devices are used to segregate the VPN.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

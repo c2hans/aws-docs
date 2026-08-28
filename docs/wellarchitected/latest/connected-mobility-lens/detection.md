@@ -82,3 +82,7 @@ While protecting software and firmware from vulnerabilities is important, vehicl
  **[CMSEC\_BP12.1] Subscribe to threat intelligence feeds from many different sources to detect threats and vulnerabilities**
 
  You should analyze threat intelligence feeds from several data sources both public and private, beyond what is coming off of the vehicle or what is in your environment. This can include things like governments, vendors, information sharing bodies, peers, suppliers, open-source intelligence, and more. You may subscribe to specific vulnerability feeds regarding specific software and firmware running on the vehicle to address emerging threats and further enhance detection baselines to respond when emerging threats and vulnerabilities are known. It is important to maintain an inventory of embedded software and firmware, as well as operating systems, packages, and libraries that are used per vehicle model and type so that you are aware of what is relevant to your environment based on threat intelligence feeds.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -88,3 +88,7 @@ If using a Jupyter notebook server, run `!pwd` to double check the current worki
 If you started your training job without configuring the Debugger-specific parameters, Debugger generates the report based only on the system monitoring rules because the Debugger parameters are not configured to save framework metrics. To enable framework metrics profiling and receive an extended Debugger profiling report, configure the `profiler_config` parameter when constructing or updating SageMaker AI ModelTrainers.
 To learn how to configure the `profiler_config` parameter before starting a training job, see [Estimator configuration for framework profiling](debugger-configure-framework-profiling.md).
 To update the current training job and enable framework metrics profiling, see [Update Debugger Framework Profiling Configuration](debugger-update-monitoring-profiling.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

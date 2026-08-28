@@ -48,3 +48,7 @@ When you query the table, Athena calculates the values for `datehour` and uses t
 + [How to use the `date` type](partition-projection-kinesis-firehose-example-using-the-date-type.md)
 + [How to choose partition keys](partition-projection-kinesis-firehose-example-choosing-partition-keys.md)
 + [How to use custom prefixes and dynamic partitioning](partition-projection-kinesis-firehose-example-using-custom-prefixes-and-dynamic-partitioning.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

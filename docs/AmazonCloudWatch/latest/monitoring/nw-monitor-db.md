@@ -59,3 +59,7 @@ The **Monitor details** page displays details about your monitor, including a li
 
   If you've created an alarm for a probe, the current **Status** of the alarm is shown. A status of **OK** indicates that there are no metrics events have triggered any alarms. A status of **In alarm** indicates that a metric that you created in CloudWatch triggered an alarm. If no status is displayed for a probe, then there isn't a CloudWatch alarm for it. For information on the types of Network Synthetic Monitor probe alarms that you can create, see [Probe alarms](cw-nwm-create-alarm.md).
 + **Tags** — View the current tags for a monitor. You can add or remove tags by choosing **Manage tags**. This opens the **Edit probe** page. For more information on editing tags, see [Edit a monitor](nw-monitor-edit.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

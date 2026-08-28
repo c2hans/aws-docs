@@ -82,3 +82,7 @@ If you add additional fields, the count changes. In the following screenshot, we
 If you add the two additional fields to the partitioning fields in the calculated field, `countOver( sum({Billed Amount}), [{Customer Region}, {Customer Segment}, {Service Line}]`, then the count is again 1 for each row.
 
 ![Table showing countOver values of 1 for Enterprise segment across Billing and HR service lines in APAC, EMEA, and US regions.](http://docs.aws.amazon.com/quick/latest/userguide/images/countOver.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

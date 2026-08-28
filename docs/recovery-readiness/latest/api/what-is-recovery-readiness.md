@@ -24,3 +24,7 @@ ARC is a global service that supports endpoints in multiple AWS Regions but you 
 For more information about ARC, see the following:
 + For more information about creating resilient applications and preparing for recovery readiness with ARC, see the [Amazon Application Recovery Controller Developer Guide](https://docs.aws.amazon.com/r53recovery/latest/dg/).
 + For more information setting up routing control in ARC to route around failures, see the [Recovery Control Configuration API Reference Guide for Amazon Application Recovery Controller](https://docs.aws.amazon.com/recovery-cluster/latest/api/) and the [Routing Control API Reference Guide for Amazon Application Recovery Controller](https://docs.aws.amazon.com/routing-control/latest/APIReference/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query recovery-readiness` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

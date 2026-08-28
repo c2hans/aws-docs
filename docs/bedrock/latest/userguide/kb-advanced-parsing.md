@@ -23,3 +23,7 @@ When selecting how to parse your data, consider the following:
 + The total file size limit. When you use foundation models as your parser, the total file size across all files must not be greater than 100 GB.
 
 To learn how to configure how your knowledge base is parsed, see the connection configuration for your data source in [Connect a data source to your knowledge base](data-source-connectors.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

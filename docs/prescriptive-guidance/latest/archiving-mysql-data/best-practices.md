@@ -11,3 +11,7 @@ We recommend the following best practices for accessing archived data:
   + If AWS Glue tables are created by AWS Glue crawlers, these partitions act as pseudo columns. This enhances read performance by restricting data scanned to the partitions in the range query.
   + This helps in an S3 Glacier restoration operation when you are restoring only a subset of the object as S3 Standard.
 + AWS Glue crawlers show great value when archived data saved in Amazon S3 is partitioned physically. Every time that data is off-loaded as new prefix partition, the crawler scans only the new partition and updates the metadata for that partition. If the schema of the table changes, those changes will be captured in partition-level metadata.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

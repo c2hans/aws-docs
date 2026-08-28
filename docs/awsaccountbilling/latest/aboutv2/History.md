@@ -144,3 +144,7 @@ The following table describes the documentation for this release of the *AWS Bil
 | [IAM user permissions](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/control-access-billing.html) | You can now enable AWS Identity and Access Management (IAM) users and federated users to access and manage your account settings, view your bills, and perform cost management. For example, you can grant people in your finance department full access to the financial setup and control of your AWS account, without having to give them access to your production AWS environment.  | July 7, 2014 |
 | [Cost Explorer launched](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-what-is.html) | Cost Explorer provides a visualization of your AWS costs that enables you to analyze your costs in multiple ways.  | April 8, 2014 |
 | [Version 2.0 published](#History) | The *AWS Billing and Cost Management User Guide* has been reorganized and rewritten to use the new Billing and Cost Management console.  | October 25, 2013 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ Compression and decompression operations consume CPU resources on both the prima
 For more information on configuring redo transport compression, see the following resources:
 + [DB parameter groups for Amazon RDS DB instances](USER_WorkingWithDBInstanceParamGroups.md)
 + [RedoCompression](https://docs.oracle.com/en/database/oracle/oracle-database/19/dgbkr/oracle-data-guard-broker-properties.html#GUID-5E6DDFD0-6196-48EB-94AF-21A1AFBB7DE1) in the Oracle Database 19c release notes
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,10 @@ The response includes workflow details, including the status, as shown.
 ```
 
 You can start a run using this workflow after the status transitions to `ACTIVE`.
+
+**Note**
+For Nextflow DSL2 workflows, HealthOmics runs the built-in strict linter during creation. If the linter detects errors or warnings, the workflow still transitions to ACTIVE, with the `statusMessage` field containing structured lint results. If you start a run on a workflow with linter errors, your run may fail due to an incorrect workflow definition. For an example of the `GetWorkflow` response with lint findings, see [Workflow linters in HealthOmics](workflows-linter.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

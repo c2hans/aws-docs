@@ -49,3 +49,7 @@ AWS Transform is the recommended alternative service. Launched in 2025, AWS Tran
 No formal migration process is required. Existing projects can continue in Application Discovery Service until completion. For new projects, customers can start directly in AWS Transform, which provides all the familiar capabilities of Application Discovery Service with enhanced features. No data migration is needed, and AWS Support is available to assist with the transition.
 
 If you have additional questions, please contact us through [AWS Support](https://aws.amazon.com/contact-us/) or read our FAQs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Application Discovery Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query application-discovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

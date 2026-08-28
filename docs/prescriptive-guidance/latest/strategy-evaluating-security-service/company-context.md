@@ -31,3 +31,7 @@ It is important to map any problem related to management. The following are some
 <a name="1-5"></a>
 
 Evaluate the total cost of ownership (TCO) for your current security solution by comparing costs against industry benchmarks and internal metrics. Generally, organizations invest 6-14% of their IT budget in cybersecurity, and 10% is the average. Consider factors such as licensing, implementation, maintenance, support, and operational costs for protecting your assets. You can include your internal tools that cover the same number of assets to be protected. An unbalanced security budget for tools can also indicate a high TCO, such as if 60% of the budget is directed to a single tool. If your TCO is higher than these benchmarks, proceed with evaluating the AWS security service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

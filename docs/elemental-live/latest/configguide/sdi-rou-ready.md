@@ -16,3 +16,7 @@ To get ready to add an SDI video router, perform the following steps.
 1. On the router, identify the outputs (and their IDs) that are connected to the SDI card. Identify the input IDs that they are connected to.
 
    One mapping might be router ID 5 is connected to input 3 on the second SDI card.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

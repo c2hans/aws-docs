@@ -28,3 +28,7 @@ Be sure to maintain an appropriate level of access control on the file. Any user
 Presigned URLs expire after 6 days. You can submit a request one time every 7 days.
 
 To use AWS Identity and Access Management (IAM) policies to manage access to the Amazon Chime administration console and the **Request attachments** action, use one of the Amazon Chime managed policies (FullAccess, UserManagement, or ReadOnly). Alternatively, you can update the custom policies to include the `StartDataExport` action and `RetrieveDataExport` action. For more information about these actions, see [Actions defined by Amazon Chime](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonchime.html#amazonchime-actions-as-permissions) in the *IAM User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

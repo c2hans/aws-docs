@@ -20,3 +20,7 @@ You can create your own third-party MCS modules by following these steps:
  [Step 6: Create module intercommunication](step-6-create-module-intercommunication.md)
 
  [Step 7: Create module instructions (optional)](step-7-create-module-instructions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

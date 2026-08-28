@@ -17,3 +17,7 @@ CREATE EXTERNAL TABLE
 **Note**
 This statement is not compatible with S3 buckets that have requester pays enabled. If you want to create a Delta Lake table against an S3 bucket with requester pays enabled, follow the instructions and DDL statement in [Synchronize Delta Lake metadata](delta-lake-tables-syncing-metadata.md).
 For Delta Lake tables, `CREATE TABLE` statements that include more than the `LOCATION` and `table_type` property are not allowed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

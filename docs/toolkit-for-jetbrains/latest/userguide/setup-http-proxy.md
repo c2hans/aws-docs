@@ -14,3 +14,7 @@ Setting an HTTP Proxy for the AWS Toolkit for JetBrains is handled through your 
 + **PhpStorm** – See [HTTP Proxy](https://www.jetbrains.com/help/phpstorm/settings-http-proxy.html) on the PhpStorm help website.
 + **PyCharm** – See [HTTP Proxy](https://www.jetbrains.com/help/pycharm/settings-http-proxy.html) on the PyCharm help website.
 + **RubyMine** – See [HTTP Proxy](https://www.jetbrains.com/help/ruby/settings-http-proxy.html) on the RubyMine help website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

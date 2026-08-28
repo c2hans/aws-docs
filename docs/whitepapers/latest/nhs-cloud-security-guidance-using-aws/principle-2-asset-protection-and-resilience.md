@@ -146,3 +146,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/nhs-cloud-security-gu
  **Applicable risk classes:** IV-V
 
  For Distributed Denial of Service (DDoS) protection, customers may use [AWS Shield](https://docs.aws.amazon.com/waf/latest/developerguide/shield-chapter.html), a managed service to help prevent DDoS attacks and minimise their impact. It is available at two tiers: AWS Shield Standard (protecting against all known layer 3 and 4 attacks), and AWS Shield Advanced (providing protection against application layer attacks and associated charge spikes for a number of AWS services, and access to the AWS DDoS Response Team). There is no charge for the Standard tier of the service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

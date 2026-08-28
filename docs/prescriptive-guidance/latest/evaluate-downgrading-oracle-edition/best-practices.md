@@ -12,3 +12,7 @@ We recommend the following best practices for assessing and downgrading your Ora
 + **Test your workload against Oracle Database SE2** – Run multiple tests using a representative workload to determine whether the 16-thread limit imposed by Oracle Database SE2 has any negative impact on your workload. Monitor results and tune the database as required.
 + **Test database administration activities** – Test activities such as monitoring, performance assessments, tuning, and maintenance tasks to build comfort levels around new ways of working in the Oracle Database SE2 environment.
 + **Test the migration process** – Run end-to-end migration tests to build operator confidence, fine-tune the approach, and document every issue and its resolution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

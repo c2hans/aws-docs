@@ -110,3 +110,7 @@ The following table lists each AWS service available in the AWS GovCloud (US) Re
 
 **Note**
 All the information provided in this page is manually updated. If you are looking for the most current version of the list, it can be found in the console or by using the AWS CLI command **"aws ec2 describe-vpc-endpoint-services --region us-gov-east-1 or --region us-gov-west-1"** as appropriate.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

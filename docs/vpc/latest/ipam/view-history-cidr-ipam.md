@@ -88,3 +88,7 @@ The results of the search are organized into the following columns:
 + **VPC ID**: The ID of the VPC that this resource belongs to (if applicable).
 + **Region**: The AWS Region of this resource.
 + **Owner ID**: The AWS account ID of the user that created this resource (if applicable).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

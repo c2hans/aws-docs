@@ -27,3 +27,7 @@ When the MPTS starts, Elemental Statmux connects to the location where the upstr
 + Elemental Statmux ignores and discards any SI/PSI tables that are in the transport stream. It extracts only the specified stream.
 + Elemental Statmux includes the stream in the MPTS.
 + Elemental Statmux doesn't include the stream PID in any of the SI/PSI tables for the MPTS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

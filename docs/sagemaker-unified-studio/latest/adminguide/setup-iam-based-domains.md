@@ -270,3 +270,7 @@ If [role manager](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_crea
 1. You can also access the project associated with your Login IAM role by choosing on the first project. See **Navigating within Amazon SageMaker Unified Studio** for details.
 
 Amazon SageMaker Unified Studio also supports domains configured with AWS IAM Identity Center (IdC). Additional details to setup an Identity Center based domain are available in [Identity Center-based domains](identity-center-based-domains.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

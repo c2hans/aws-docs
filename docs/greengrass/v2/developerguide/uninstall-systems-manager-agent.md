@@ -60,3 +60,7 @@ The deployment can take several minutes to complete. You can use the AWS IoT Gre
 <a name="uninstall-ssm-agent-software"></a>
 
 The Systems Manager Agent software continues to run on the core device after you remove the Systems Manager Agent component. To remove the Systems Manager Agent software, you can run commands on the core device. For more information, see [Uninstall Systems Manager Agent from Linux instances](https://docs.aws.amazon.com/systems-manager/latest/userguide/sysman-uninstall-agent.html) in the *AWS Systems Manager User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

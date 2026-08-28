@@ -23,3 +23,7 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/provisi
 1. In the **Provisioned products** section, choose the **View:** list and select the level of access you want to see: **User**, **Role**, or **Account**. This action displays all the provisioned products in the catalog.
 
 1. Choose a provisioned product to view, update, or terminate. For more information about the information provided in this view, see [Viewing Provisioned Product Information](https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-viewstack.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

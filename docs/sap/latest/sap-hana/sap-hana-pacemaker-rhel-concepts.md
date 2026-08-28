@@ -63,3 +63,7 @@ In SAP HANA deployments, whether in a scale-up configuration (two-node) or a sca
 In a two-node scale-up scenario, fence racing is a critical concern. This occurs when a communication failure causes both nodes to simultaneously attempt to fence (power off) each other, believing the other node has failed. The fencing agent addresses this risk by providing an external witness. In scale-out deployments, while fence racing is less likely due to the presence of multiple nodes that can participate in quorum decisions, proper fencing remains critical for maintaining data consistency across the larger node set.
 
 Red Hat supports several fencing agents, including the one recommended for use with Amazon EC2 Instances (fence\_aws).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

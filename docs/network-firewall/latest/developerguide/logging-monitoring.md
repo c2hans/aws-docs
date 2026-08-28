@@ -33,3 +33,7 @@ Review the topics in this guide to learn more about the different logging, monit
 + [Logging calls to the AWS Network Firewall API with AWS CloudTrail](logging-using-cloudtrail.md)
 + [AWS Network Firewall metrics in Amazon CloudWatch](monitoring-cloudwatch.md)
 + [Monitoring and reporting in Network Firewall](nwfw-monitoring-reporting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ You must have active AWS Builder ID or AWS IAM Identity Center credentials to co
 <a name="codecatalyst-setup-connect"></a>
 
 To connect the AWS Toolkit with your CodeCatalyst account, see the [Authentication for Amazon CodeCatalyst](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/connect.html#catalyst) section in the *Connecting to AWS* topic of this User Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

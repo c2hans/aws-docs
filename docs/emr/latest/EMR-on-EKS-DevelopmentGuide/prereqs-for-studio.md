@@ -80,3 +80,7 @@ For information on setting up an Amazon EMR on EKS virtual cluster, see [Registe
 <a name="load-balancer-controller"></a>
 
 An AWS Application Load Balancer is required for your Amazon EKS cluster. You only need to set up one Application Load Balancer controller per Amazon EKS cluster. For information on setting up the AWS Application Load Balancer controller, see [Installing the AWS Load Balancer Controller add-on](https://docs.aws.amazon.com/eks/latest/userguide/aws-load-balancer-controller.html) in the *Amazon EKS User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

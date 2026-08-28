@@ -51,3 +51,7 @@ CodeArtifact supports AWS KMS External Key Stores (XKS). You are responsible for
 + Because all assets are encrypted in CodeArtifact, a loss of XKS key materials will result in a loss of all assets associated with the domain using the XKS key.
 
 For more information about XKS keys, see [External key stores](https://docs.aws.amazon.com/kms/latest/developerguide/keystore-external.html) in the *AWS Key Management Service Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

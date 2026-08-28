@@ -13,3 +13,7 @@ Amazon FinSpace Dataset Browser will be discontinued on {{March 26, 2025}}. Star
 All environments have a Capital Markets Sample data bundle installed so you can browse, search and analyze this data to explore FinSpace.
 
 The Capital Markets Sample data bundle includes sample datasets that contain trades and quotes data, example categories and controlled vocabularies. The sample datasets can also be used with the provided [example notebooks](example-notebook.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

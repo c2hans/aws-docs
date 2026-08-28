@@ -41,3 +41,7 @@ To publish to an IVS stage using OBS via WHIP, follow these steps:
 1. Press **Start Streaming**.
 
 **Note**: We are aware of quality issues (like intermittent video freezing) that can occur with WHIP in OBS. These typically arise when the broadcaster's network is unstable. We recommend testing WHIP in OBS before using it for production live streams. Lowering your broadcast bitrate also may help reduce the occurrence of these issues.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

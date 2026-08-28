@@ -26,3 +26,7 @@ To configure Quip for Amazon Q, you must be an admin user in the Quip account.
 ![Screenshot of the Quip developer token page showing the generated personal access token that needs to be copied for API authentication.](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/images/quip-2.png)
 
 You now have the Quip domain name and Quip API access token you need to connect to Amazon Q.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

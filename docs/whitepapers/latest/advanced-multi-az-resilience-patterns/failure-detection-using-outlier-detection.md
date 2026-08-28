@@ -72,3 +72,7 @@ Then, add these alarms to your existing Availability Zone availability alarm for
 ![Diagram showing integrating the chi-squared statistics test with composite alarms](http://docs.aws.amazon.com/whitepapers/latest/advanced-multi-az-resilience-patterns/images/statistics-test-with-composite-alarms.png)
 
 As mentioned previously, when you onboard new functionality in your workload, you only need to create the appropriate CloudWatch metric alarms that are specific to that new functionality and update the next tier in the composite alarm hierarchy to include those alarms. The rest of the alarm structure remains static.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

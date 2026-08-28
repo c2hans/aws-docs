@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-api-ga
 |  Private integration (NLB)  |  Billed per NLB running per hour and Network Load Balancer Capacity Units (NLCU) used per hour.  |  If there is a backend service hosted in ECS or other target such as EC2 instances that can be directly integrated with NLB, using an NLB to route traffic simplifies the architecture.  |
 |  Private integration (ALB)  |  Billed per ALB running per hour and Load Balancer Capacity Units (LCU) used per hour.  |  If there is a backend service hosted in ECS or other target such as EC2 instances that can be directly integrated with ALB according to the architecture patterns.  |
 |  VPC-enabled Lambda  |  Lambda pricing is billed on-demand, so if a Lambda function is not used, there is no charge.  |  If there is any private resource like RDS which cannot be directly accessed by NLB, using a VPC-enabled Lambda function is a good alternative.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

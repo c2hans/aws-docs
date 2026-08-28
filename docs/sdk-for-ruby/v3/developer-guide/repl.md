@@ -53,3 +53,7 @@ aws-v3.rb -v
 The SDK for Ruby includes client classes that provide interfaces to the AWS services. Each client class supports a particular AWS service. In the REPL, every service class has a helper that returns a new client object for interacting with that service. The name of the helper will be the name of the service converted to lower case. For example, the names of the Amazon S3 and Amazon EC2 helper objects are `s3` and `ec2`, respectively. To list the Amazon S3 buckets in your account, you can enter `s3.list_buckets` into the prompt.
 
 You can type `quit` into the REPL prompt to exit.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Ruby. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-ruby` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

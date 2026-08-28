@@ -172,3 +172,7 @@ You can create a migration workstream that is dedicated to specialized workloads
 | --- |--- |
 | **Expected outcome** | + Complete migration cutover and application go-live in target AWS accounts |
 | **Required skills** | + Deep knowledge of on-premises data centers, including servers, storage, and networking<br />+ Deep knowledge of the specialized workload in scope<br />+ Experience with the AWS Cloud and knowledge of AWS compute services, including landing zones and AWS Control Tower<br />+ Experience with AWS migration tools, including Application Migration Service, AWS DMS, DataSync, and AWS Snow Family<br />+ Experience with large data center or cloud migrations and cutovers<br />+ Experience with migrating the specialized workload |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

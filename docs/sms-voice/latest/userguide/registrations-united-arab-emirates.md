@@ -7,6 +7,9 @@ source_url: https://docs.aws.amazon.com/sms-voice/latest/userguide/registrations
 
 Follow these directions to register your sender ID in United Arab Emirates.
 
+**UAE Sender ID registrations temporarily paused**
+The UAE Telecommunications and Digital Government Regulatory Authority (TDRA) is updating its Sender ID registration requirements. New UAE Sender ID registrations are paused until further notice. You may need to resubmit after the new requirements are determined; your registration status will be updated if more information is needed. This page will be updated when a timeline is available.
+
 1. Open the AWS End User Messaging SMS console at [https://console.aws.amazon.com/sms-voice/](https://console.aws.amazon.com/sms-voice/).
 
 1. In the navigation pane, under **Registrations**, choose **Create registration**.
@@ -94,3 +97,7 @@ For all uploads the valid file types are PDF, PNG, and JPEG with a maximum file 
 1. On the **Review and submit** page verify the information you are about to submit is correct. To make updates choose **Edit** next to the section.
 
 1. Choose **Submit registration**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

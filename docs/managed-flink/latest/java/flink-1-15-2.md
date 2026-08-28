@@ -59,3 +59,7 @@ When upgrading to Amazon Managed Service for Apache Flink for Apache Flink versi
 There is a known open source Apache Flink issue with the Apache Kafka connector in Flink version 1.15 caused by a critical open source Kafka Client bug in Kafka Client 2.8.1. For more information, see [Kafka Commit on checkpointing fails repeatedly after a broker restart](https://issues.apache.org/jira/browse/FLINK-28060) and [KafkaConsumer is unable to recover connection to group coordinator after commitOffsetAsync exception](https://issues.apache.org/jira/browse/KAFKA-13840).
 
 To avoid this issue, we recommend that you use Apache Flink 1.18 or later in Amazon Managed Service for Apache Flink.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

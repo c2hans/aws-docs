@@ -29,3 +29,7 @@ Publication date: *August 2022 ([last update](revisions.md): November 2024*)
 |  Know the requirements for using an existing CloudFront distribution.  |  [CloudFront prerequisites](cloudfront-prerequisites.md)  |
 |  View or download the AWS CloudFormation template included in this solution to automatically deploy the infrastructure resources (the “stack”) for this solution.  |  [AWS CloudFormation template](aws-cloudformation-template.md)  |
 | Access the source code and optionally use the AWS Cloud Development Kit (AWS CDK) to deploy the solution. |  [GitHub repository](https://github.com/aws-solutions/secure-media-delivery-at-the-edge-on-aws/)  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

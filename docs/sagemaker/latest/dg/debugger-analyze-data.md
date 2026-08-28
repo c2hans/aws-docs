@@ -25,3 +25,7 @@ The following topics walk you through how to use the Debugger Python tools to vi
 + [Access the Python profiling stats data](debugger-access-data-python-profiling.md)
 + [Merge timelines of multiple profile trace files](debugger-merge-timeline.md)
 + [Profiling data loaders](debugger-data-loading-time.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,3 +38,7 @@ EKS audit logs capture sequential actions within your Amazon EKS cluster, includ
 For more information, see [Auditing](https://Kubernetes.io/docs/tasks/debug-application-cluster/audit/) in the Kubernetes documentation.
 
 Amazon EKS allows EKS audit logs to be ingested as Amazon CloudWatch Logs through the [EKS control plane logging](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html) feature. GuardDuty doesn't manage your Amazon EKS control plane logging or make EKS audit logs accessible in your account if you have not enabled them for Amazon EKS. To manage access to and retention of your EKS audit logs, you must configure the Amazon EKS control plane logging feature. For more information, see [Enabling and disabling control plane logs](https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html#enabling-control-plane-log-export) in the **Amazon EKS User Guide**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,3 +36,7 @@ Savings Plan purchases are processed and validated at the time of the **Start da
 1. Choose **Submit order**.
 
 Any queued purchases will appear with the status **Queued** in your **Account Inventory** page. To delete any queued purchases before the start date, see [Deleting a queued Savings Plan](ce-sp-queued-delete.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

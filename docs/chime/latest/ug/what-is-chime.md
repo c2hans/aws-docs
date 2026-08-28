@@ -20,3 +20,7 @@ If you have time before a meeting starts, you can install the Amazon Chime deskt
 <a name="how-start"></a>
 
 To get started using Chime, see the next section, [Getting started with Amazon Chime](chime-getting-started.md). Topics in the section explain the system requirements, and how to set up the necessary Amazon Chime accounts, learn the software, and add contacts. If you're new to Amazon Chime this section will help you get going quickly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -147,3 +147,7 @@ AWS services and [AWS Partner Network (APN)](https://aws.amazon.com/partners/) s
  In addition to the services and functionality listed previously, many other AWS and third-party services and functionality are available courses of action in the [Installation](what-is-an-intrusion-method.md#phase-6-installation) phase of the intrusion method. For more information, see the [Installation](installation.md) phase section of [Appendix: Reference Material](appendix-reference-material.md).
 
  Using multiple services and features to detect, deny, disrupt, degrade, deceive, contain, respond, and recover, in each phase of the intrusion method can make it increasingly difficult for attackers to be successful. Attackers are faced with the challenge of defeating layers of defensive cybersecurity capabilities in each phase of their intrusion methods, in order to be successful.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/co
 + [Estimate the cost of a DynamoDB table for on-demand capacity](estimate-the-cost-of-a-dynamodb-table-for-on-demand-capacity.md)
 + [Set up event-driven auto scaling in Amazon EKS by using Amazon EKS Pod Identity and KEDA](event-driven-auto-scaling-with-eks-pod-identity-and-keda.md)
 + [Coordinate resource dependency and task execution by using the AWS Fargate WaitCondition hook construct](use-the-aws-fargate-waitcondition-hook-construct.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

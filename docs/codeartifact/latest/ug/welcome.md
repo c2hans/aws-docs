@@ -32,3 +32,7 @@ CodeArtifact requires users to authenticate with the service in order to publish
 1.  **Set up** your AWS account, the AWS CLI, and an IAM user by following the steps in [Setting up with AWS CodeArtifact](get-set-up-for-codeartifact.md).
 
 1.  **Use** CodeArtifact by following the instructions in [Getting started with CodeArtifact](getting-started.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -132,3 +132,7 @@ When you create a flow that uses Google Sheets as the data source, you can set t
 When you create a ﬂow that uses Google Sheets as the data source, you can transfer any of the supported data objects to supported destinations. Other connectors support specific objects, but the Google Sheets connector lacks predefined entities. Instead, it displays entities dynamically, based on the current column headers in the Google Sheets spreadsheet itself.
 
 Note that if you change or update the column headers after creating a flow, you’ll need to either update the headers by using the Amazon AppFlow update flow page, or create a new flow. For information on updating a flow, see [Managing Amazon AppFlow flows ](https://docs.aws.amazon.com/appflow/latest/userguide/flows-manage.html). For information on creating a new flow, see [Creating flows in Amazon AppFlow ](https://docs.aws.amazon.com/appflow/latest/userguide/create-flow.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

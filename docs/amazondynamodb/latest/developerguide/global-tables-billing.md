@@ -62,3 +62,7 @@ The total write request units charged on day 3: **400 WRUs and 400 rWRUs**.
 The total write unit charges for all three days are 500WRUs (100 WRU on day 1 \+ 400 WRUs on day 3) and 700 rWRUs (300 rWRUs on Day2 \+ 400 rWRUs on Day 3).
 
 In summary, replica table write operations are billed in replicated write units in all Regions that contain a replica table. If you have global secondary indexes, you are charged write units for updates to GSIs in all regions that contain a GSI (which in a global table is all Regions that contain a replica table).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

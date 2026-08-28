@@ -14,15 +14,26 @@ Open **Device Manager** and view **Network Adapters**. Check whether the PV driv
 + Citrix PV Ethernet Adapter
 + Red Hat PV NIC Driver
 
-**System requirements**
-Be sure to check the `readme.txt` file in the download for system requirements.
-
 **Topics**
++ [System requirements for the AWS PV driver package](#aws-pv-requirements)
 + [Upgrade Windows Server instances (AWS PV upgrade) with Distributor](#aws-pv-upgrade-distributor)
 + [Upgrade Windows Server instances (AWS PV upgrade) manually](#aws-pv-upgrade)
 + [Upgrade a domain controller (AWS PV upgrade)](#aws-pv-upgrade-dc)
 + [Upgrade Windows Server 2008 and 2008 R2 instances (Red Hat to Citrix PV upgrade)](#win2008-citrix-upgrade)
 + [Upgrade your Citrix Xen guest agent service](#citrix-pv-guest-agent-upgrade)
+
+## System requirements for the AWS PV driver package
+<a name="aws-pv-requirements"></a>
+
+The following requirements apply to the AWS PV driver package whether you install it through Systems Manager or manually.
++ A version of Windows Server that the package version supports. Older versions of Windows Server require an earlier package version. For the package version to use with your operating system, see [Paravirtual drivers for Windows instances](xen-drivers-overview.md).
++ The minimum .NET Framework version required by the package installer, as the following table shows.
+
+| AWS PV driver package version | Minimum .NET Framework version |
+| --- | --- |
+| Latest | 4.7.2 |
+| 8.4.3 | 4.5 |
+| 8.3.5 | 4.5 |
 
 ## Upgrade Windows Server instances (AWS PV upgrade) with Distributor
 <a name="aws-pv-upgrade-distributor"></a>
@@ -78,8 +89,6 @@ If you previously applied a static IP address or DNS configuration to the networ
 <a name="aws-pv-upgrade"></a>
 
 Use the following procedure to perform an in-place upgrade of AWS PV drivers, or to upgrade from Citrix PV drivers to AWS PV drivers on Windows Server 2008 R2, Windows Server 2012, Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, or Windows Server 2022. This upgrade is not available for Red Hat drivers, or for other versions of Windows Server.
-
-Some older versions of Windows Server can't use the latest drivers. To verify which driver version to use for your operating system, see the driver version table in the [Paravirtual drivers for Windows instances](xen-drivers-overview.md) page.
 
 **Important**
 If your instance is a domain controller, see [Upgrade a domain controller (AWS PV upgrade)](#aws-pv-upgrade-dc). The upgrade process for domain controller instances is different than standard editions of Windows.
@@ -282,3 +291,7 @@ If you create an AMI, make sure you do the following:
 1. When the upgrade is complete, the `PVUpgrade.log` file will open and contain the text `UPGRADE IS COMPLETE`.
 
 1. Reboot your instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

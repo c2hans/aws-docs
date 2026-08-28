@@ -31,3 +31,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 + [EUCPERF02-BP02 Scale your EUC environment to accommodate the required number of end users](eucperf02-bp02.md)
 + [EUCPERF02-BP03 Evaluate external data sources that your environment integrates with, and assess its impact on performance](eucperf02-bp03.md)
 + [EUCPERF03-BP01 Consider modernization of backend services to use managed services from AWS for best performance](eucperf03-bp01.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

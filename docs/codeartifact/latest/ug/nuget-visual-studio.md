@@ -58,3 +58,7 @@ After configuration, Visual Studio can consume packages from your CodeArtifact r
 <a name="built-in-nuget-terminal-vs"></a>
 
 The Visual Studio Package Manager console will not use the Visual Studio version of the CodeArtifact Credential Provider. To use it, you will have to configure the command-line credential provider. See [Use CodeArtifact with the nuget or dotnet CLI](nuget-cli.md) for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,3 +54,7 @@ In macOS, to allow your system to run the UI, go to **System Preferences -> Secu
 For a better experience, we recommend Google Chrome or Mozilla Firefox to access the IDT for FreeRTOS UI. Microsoft Internet Explorer isn't supported by the UI.
 **Important**
 You must configure your AWS credentials before you open the UI. If you haven't configured your credentials, close the IDT for FreeRTOS UI browser window, follow the steps in [Configure AWS credentials to use the IDT UI](lts-configure-aws-credentials.md), and then reopen the IDT for FreeRTOS UI.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -284,3 +284,7 @@ To grant permissions to view and use the **File Upload** page, use a policy simi
 Alternatively, you can create separate IAM groups for granting access to each individual page in the AWS Marketplace Management Portal. Users can belong to more than one group. So, if a user needs access to more than one page, you can add the user to all of the appropriate groups. For example, create one IAM group and grant that group permission to access the **Insights** page, create another group and grant that group permission to access the **File Upload** page, and so on. If a user needs permission to access both the **Insights** page and the **File Upload** page, add the user to both groups.
 
 For more information about users and groups, see [IAM Identities (users, groups, and roles)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html) in the *IAM User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

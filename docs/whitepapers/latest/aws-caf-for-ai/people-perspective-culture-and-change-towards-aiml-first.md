@@ -85,3 +85,7 @@ Start expanding your AI-first culture with the following:
 + Embrace a culture where data is the interface between teams and value is created in tandem with each other. Be careful not to build business-distant data science teams, but a culture where you create a flywheel of collaboration.
 + Empower a culture where value is identified, recognized and enabled at all levels of the organization. This includes leadership incentivizing and elevating challenging the status quo.
 + Build an environment where concerns about the impact and use of AI [are not just heard but influence the decision-making process](https://aws.amazon.com/machine-learning/responsible-machine-learning/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

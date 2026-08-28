@@ -146,3 +146,7 @@ To integrate DNS Firewall with Security Hub CSPM, you must first enable Security
 To stop sending DNS Firewall findings to Security Hub CSPM, you can use the Security Hub CSPM console or the Security Hub CSPM API.
 
 For instructions, see [Disabling the flow of findings from an integration](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-findings-providers.html#securityhub-integration-disable) in the *AWS Security Hub User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

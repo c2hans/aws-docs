@@ -44,3 +44,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/availability-and-beyo
  Heisenbugs make up the majority of bugs in production and are difficult to find because they are elusive and seem to change behavior or disappear when you try to observe or debug them. However, if you restart the program, the failed operation will likely succeed because the operating environment is slightly different, eliminating the conditions that introduced the Heisenbug.
 
  Thus, most failures in production are transient and when the operation is retried, it is unlikely to fail again. To be resilient, distributed systems have to be fault tolerant to Heisenbugs. We’ll explore how to this can be achieved in the section [Increasing distributed system MTBF](increasing-mtbf.md#increasing-mtbf.title).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -139,3 +139,7 @@ You can continue to learn more about the concepts that are introduced in this tu
 + [Reviewing assessment details in AWS Audit Manager](review-assessments.md) - Introduces you to the assessment details page, where you can explore the different components of an Audit Manager assessment.
 + [Reviewing an assessment control in AWS Audit Manager](review-controls.md) and [Reviewing evidence in AWS Audit Manager](review-evidence.md) - Provides definitions to help you understand the controls and evidence in an assessment.
 + [Understanding AWS Audit Manager concepts and terminology](concepts.md) - Provides definitions for the concepts and terminology that are used in Audit Manager.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

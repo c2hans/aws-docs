@@ -16,3 +16,7 @@ Timestream for LiveAnalytics supports the following bitwise functions.
 | bitwise\_not(bigint) | bigint (two's complement) | Returns the bitwise NOT of the bigint parameter.<pre>SELECT bitwise_not(12)</pre><br />Example result: `-13` |
 | bitwise\_or(bigint, bigint) | bigint (two's complement) | Returns the bitwise OR of the bigint parameters.<pre>SELECT bitwise_or(12, 7)</pre><br />Example result: `15` |
 | bitwise\_xor(bigint, bigint) | bigint (two's complement) | Returns the bitwise XOR of the bigint parameters.<pre>SELECT bitwise_xor(12, 7)</pre><br />Example result: `11` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

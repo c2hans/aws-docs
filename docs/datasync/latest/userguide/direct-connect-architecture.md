@@ -111,3 +111,7 @@ The following Direct Connect architecture shows a DataSync transfer from an on-p
 If [you need a DataSync agent](do-i-need-datasync-agent.md) and haven't created one yet, [deploy](deploy-agents.md) the agent, [choose a service endpoint](choose-service-endpoint.md) for the agent, and then [activate](activate-agent.md) the agent.
 
 Once you create the agent, you can [configure your network](datasync-network.md) for DataSync.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

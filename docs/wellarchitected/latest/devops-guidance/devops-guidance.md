@@ -32,3 +32,7 @@ Publication date: **September 20, 2023** ([Document history](document-revisions.
 +  **Metrics** are quantifiable measures of an organization's ability to perform the associated capability. Think of indicators as the *how* and metrics as the *how well* when using this guidance to measure your organization's ability to implement a capability. There is no one-size-fits-all approach to selecting which metrics to track. We provide metrics for each capability as a starting point. Each organization needs to determine which metrics are important to their business. Consider using additional frameworks, such as [DevOps Research and Assessment (DORA)](https://dora.dev/) and [SPACE](https://queue.acm.org/detail.cfm?id=3454124), to further customize the metrics we provide so that they align to your organizational goals.
 
  For more Well-Architected terminology, see [Definitions](https://docs.aws.amazon.com/wellarchitected/latest/framework/definitions.html) in the *AWS Well-Architected Framework* whitepaper.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

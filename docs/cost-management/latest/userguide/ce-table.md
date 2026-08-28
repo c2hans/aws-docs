@@ -16,3 +16,7 @@ In the grouped data table, each row is a value for one of the filter type option
 Data transfer costs are included in the services that they're associated with, such as Amazon EC2 or Amazon S3. They aren't represented as either a separate line item in the data table or a bar in the chart.
 
 In the ungrouped data table, the row is your costs. The columns represent time intervals.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

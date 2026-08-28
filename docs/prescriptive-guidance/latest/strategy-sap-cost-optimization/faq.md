@@ -41,3 +41,7 @@ AWS manages the physical infrastructure of the SAP system up to the virtualizati
 <a name="which-sap-use-cases-does-aws-support"></a>
 
 SAP customers and partners use AWS for use cases ranging from running a single SAP test system to hosting a complete SAP production environment. To learn more about how SAP customers and partners use AWS, see [Get Started with SAP on AWS](https://aws.amazon.com/sap/get-started/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

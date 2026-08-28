@@ -44,3 +44,7 @@ You can't create an instance that uses a smaller bundle size than that of the or
    Lightsail opens the management page, where you can manage your new instance.
 **Important**
 Custom firewall rules from the original instance don't copy over to the new instance that you create from a snapshot. Only the default rules copy over to the new instance. For more information, see [Default instance firewall rules](https://lightsail.aws.amazon.com/ls/docs/en_us/articles/understanding-firewall-and-port-mappings-in-amazon-lightsail#default-lightsail-firewall-rules).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

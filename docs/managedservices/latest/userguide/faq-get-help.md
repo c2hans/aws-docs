@@ -12,3 +12,7 @@ AMS supports you with Incident Management, Service Request Management, and Chang
 To report an AWS or AMS service performance issue that impacts your managed environment, use the AMS console and submit an incident report. For details, see [Reporting an incident](https://docs.aws.amazon.com/managedservices/latest/userguide/gui-ex-report-incident.html). For general information about AMS incident management, see [Incident response](https://docs.aws.amazon.com/managedservices/latest/userguide/sec-incident-response.html).
 
 To ask for information or advice, or to request additional services from AMS, use the AMS console and submit a service request. For details, [ Creating a Service Request](https://docs.aws.amazon.com/managedservices/latest/userguide/gui-ex-create-service-request.html). For general information about AMS service requests, see [Service Request Management](https://docs.aws.amazon.com/managedservices/latest/userguide/mk-service-requests.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

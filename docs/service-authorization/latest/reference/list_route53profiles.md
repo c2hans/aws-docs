@@ -261,3 +261,7 @@ Amazon Route 53 Profiles defines the following condition keys that can be used i
 |   [route53profiles:ResourceArns](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53profiles.html)  | Filters access by specific resource ARNs | ARN |
 |   [route53profiles:ResourceIds](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53profiles.html)  | Filters access by given VPCs | String |
 |   [route53profiles:ResourceTypes](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53profiles.html)  | Filters access by specific resource type. Possible options include 'HostedZone', 'FirewallRuleGroup', 'ResolverQueryLoggingConfig', 'ResolverRule', and 'VpcEndpoint' | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

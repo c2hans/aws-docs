@@ -61,3 +61,7 @@ We recommend that you enable Safe Paste to catch potential security risks in scr
 <a name="tmux_to_session_restore"></a>
 
 AWS CloudShell uses tmux to restore the sessions across single or multiple browser tabs. If you refresh the browser tabs, it resumes your session until the session becomes inactive. For more information, see [Session restore](welcome.md#session-restore).<a name="q-inline-suggestions-cloudshell"></a>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

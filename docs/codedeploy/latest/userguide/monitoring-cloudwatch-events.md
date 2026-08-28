@@ -59,3 +59,7 @@ The remainder of this topic describes the basic procedure for creating a CloudWa
 1. On the **Configure rule details** page, type a name and description for the rule, and then choose the **State** box to enable the rule now.
 
 1. If you're satisfied with the rule, choose **Create rule**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

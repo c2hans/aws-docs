@@ -137,3 +137,7 @@ In this step, you will use the face comparison feature to see the detailed JSON 
 <a name="conclusion"></a>
 
 You have learned how to use the console to analyze and compare faces. You can also perform this feature using the API so you can operate at scale. Use Amazon Rekognition when you need to perform facial analysis at scale without worrying about infrastructure or training a model for identifying persons of interest, cataloging a digital library, creating a face-based employee verification system, or performing sentiment analysis.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -176,3 +176,7 @@ aws geo-places suggest --key ${YourKey} \
 <a name="suggest-highlight-developer-tips"></a>
 
 Display search results using the `Title` response field to provide users with concise, recognizable entries. For results that might look similar, use the `Place.Address.Label` field to show additional address details that help users distinguish between them. For more information, see [How to help users disambiguate between similar results](suggest-disambiguate-results.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

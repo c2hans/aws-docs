@@ -18,3 +18,7 @@ If you're a first-time user of SageMaker AI, we recommend that you complete the 
 1. **Explore other topics** – Use the SageMaker AI Developer Guide's table of contents to explore more topics. For example, you can find information about ML lifecycle stages, in [Overview of machine learning with Amazon SageMaker AI](how-it-works-mlconcepts.md), and various solutions that SageMaker AI offers.
 
 1. **[Amazon SageMaker AI resources](https://aws.amazon.com/sagemaker/resources)** – Refer to the various developer resources that SageMaker AI offers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -60,3 +60,7 @@ Recovery procedures:
 + Identify and implement clear escalation paths.
 
 By implementing these high availability practices, you can ensure that your Amazon EKS monitoring infrastructure remains reliable and resilient, and that you have continuous visibility into your Kubernetes environments even during various failure scenarios. Regular testing and updates to these HA configurations ensure that they remain effective as the environment evolves.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

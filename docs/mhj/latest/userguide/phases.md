@@ -108,3 +108,7 @@ When you delete a phase, you permanently remove it from the journey. To delete a
 1. Choose the **Phases** tab.
 
 1. Find the tile that represents the phase that you want to delete, and then choose **Actions** button in that tile. Choose **Delete phase**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

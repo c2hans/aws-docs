@@ -153,3 +153,7 @@ Previous versions of MySQL used `START SLAVE` instead of `START REPLICA`. If you
 Previous versions of MySQL used `STOP SLAVE` instead of `STOP REPLICA`. If you are using a MySQL version before 8.0.23, then use `STOP SLAVE`.
 
 1. On the Amazon RDS read replica, call the `mysql.rds_start_replication` stored procedure. Doing this allows Amazon RDS to start purging the binary log files from the source MySQL DB instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

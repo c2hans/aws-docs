@@ -250,3 +250,7 @@ The unified dashboard in AWS IoT monitor allows identification of potential conn
 +  [Getting Aggregate Information of Devices with AWS IoT Device Management Fleet Indexing](https://aws.amazon.com/blogs/iot/getting-aggregate-information-of-devices-with-aws-iot-device-management-fleet-indexing/)
 +  [AWS IoT Core - Managing thing indexing](https://docs.aws.amazon.com/en_us/iot/latest/developerguide/managing-index.html)
 +  [Security monitoring for connected devices across OT, IoT, edge, cloud (TDR222)](https://www.youtube.com/watch?v=-2c83ql5KXg)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

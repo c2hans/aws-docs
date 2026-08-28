@@ -53,3 +53,7 @@ Troubleshoot common problems that may prevent a phone number from receiving OTP 
 + **Network issues:** Temporary network issues or outages could prevent the delivery of SMS messages, including OTP texts, to the recipient's phone.
 + **Delayed delivery:** In some cases, SMS messages may experience delays in delivery due to network congestion or other factors. The OTP text may eventually be delivered, but it could be delayed beyond the expected timeframe.
 + **Account suspension or termination:** If there are issues with your AWS account, such as non-payment or violation of AWS terms of service, Amazon SNS messaging capabilities, including OTP texts, may be suspended or terminated.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

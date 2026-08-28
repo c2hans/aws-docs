@@ -15,3 +15,7 @@ Job runs can have the following states:
 + `COMPLETED` ‐ A job run that has completed successfully.
 + `CANCEL_PENDING` ‐ A job run has been requested for cancellation. Amazon EMR on EKS is trying to cancel the job on the virtual cluster.
 + `CANCELLED` ‐ A job run that was cancelled successfully.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

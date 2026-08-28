@@ -74,3 +74,7 @@ Opens the default browser to connect to the Amazon DCV session running on the he
 A new Amazon DCV session is created if one isn't already started.
 
  ![A screenshot of the DCV console.](http://docs.aws.amazon.com/parallelcluster/v2/ug/images/Dcv-image.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

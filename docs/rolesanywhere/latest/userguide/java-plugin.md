@@ -45,3 +45,7 @@ Artifact ID
  Use the plugin when your workload is a Java application on the AWS SDK for Java v2, and you want IAM Roles Anywhere credentials resolved in process. The plugin removes the need to spawn a subprocess or configure `credential_process`.
 
  Instead, see [Get temporary security credentials](credential-helper.md) when your workload is not on the JVM. The credential helper is also the better choice when you need to share credentials across multiple tools on the same host. Choose it when you prefer to keep signing key material out of the application process.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

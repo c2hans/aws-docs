@@ -135,3 +135,7 @@ The following table describes important changes to the *AWS Control Tower User G
 | [Additional preventive controls are available for AWS Control Tower](#doc-history) | Preventive controls in AWS Control Tower keep your organization and resources aligned with your environment.  | September 6, 2019 |
 | [Additional detective controls are available for AWS Control Tower](#doc-history) | Detective controls in AWS Control Tower give information about the state of your organization and resources.  | August 27, 2019 |
 | [AWS Control Tower is now generally available](#doc-history) | AWS Control Tower is a service that offers the easiest way to set up and govern your multi-account AWS environment at scale. | June 24, 2019 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

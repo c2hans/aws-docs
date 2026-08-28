@@ -21,3 +21,7 @@ We strongly recommend that you never put confidential or sensitive information, 
 + [Data encryption in Amazon WorkSpaces Secure Browser](data-encryption.md)
 + [Inter-network traffic privacy in Amazon WorkSpaces Secure Browser](inter-network-traffic-privacy.md)
 + [User access logging in Amazon WorkSpaces Secure Browser](data-protection-logging.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

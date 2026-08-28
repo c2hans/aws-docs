@@ -20,3 +20,7 @@ After these steps are completed, you must complete the following offboarding ste
 1. Use `eksctl` to remove the Kubernetes RBAC permissions from the `aws-auth` `ConfigMap`.
 
 1. If you previously installed it, remove the Amazon Managed Grafana instance that you configured to connect to AMS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -69,3 +69,7 @@ The time required to complete an SSD decrease operation depends on several facto
 + Reduce write-heavy workloads during the operation to minimize resource contention.
 
 You can track the progress of the operation by checking the `ProgressPercent` property in the `STORAGE_OPTIMIZATION` administrative action.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -112,3 +112,7 @@ We recommend that you use the Active Directory Migration Tool (ADMT) and Passwor
 + [Everything you wanted to know about trusts with AWS Managed Microsoft AD](https://aws.amazon.com/blogs/security/everything-you-wanted-to-know-about-trusts-with-aws-managed-microsoft-ad/) (AWS Security Blog)
 + [How to migrate your on-premises domain to AWS Managed Microsoft AD using ADMT](https://aws.amazon.com/blogs/security/how-to-migrate-your-on-premises-domain-to-aws-managed-microsoft-ad-using-admt/) (AWS Security Blog)
 + [STEP 2: DEPLOYING ACTIVE DIRECTORY](https://aws-labs.net/winlab0-buildinfra/buildad.html) (AWS Windows Workshop)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

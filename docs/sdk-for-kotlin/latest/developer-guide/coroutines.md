@@ -65,3 +65,7 @@ As its name suggests, this `runBlocking` builder launches a new coroutine and bl
 
 **Warning**
  `runBlocking` should not generally be used from a coroutine. It is designed to bridge regular blocking code to libraries that are written in suspending style (such as in main functions and tests).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Kotlin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-kotlin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

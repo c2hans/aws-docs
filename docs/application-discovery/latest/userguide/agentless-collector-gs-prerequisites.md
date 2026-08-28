@@ -53,3 +53,7 @@ If outbound connections from your network are restricted, you must update your f
 When setting up Agentless Collector, you might receive errors such as **Setup failed – Check your credentials and try again** or **AWS cannot be reached. Please verify network settings**. These errors can be caused by a failed attempt by the Agentless Collector to establish an HTTPS connection to one of the AWS domains that it needs outbound access to.
 
 If a connection to AWS cannot be established, Agentless Collector cannot collect data from your on-premises environment. For information about how to fix the connection to AWS, see [Fixing Agentless Collector cannot reach AWS during setup](agentless-collector-troubleshooting.md#agentless-collector-fix-connector-cannot-reach-aws).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Application Discovery Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query application-discovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

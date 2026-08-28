@@ -103,3 +103,7 @@ The following related resources can help you as you work with this service.
 |  [AWS Support](https://console.aws.amazon.com/support/home#/)  | The hub for creating and managing your AWS Support cases. Also includes links to other helpful resources, such as forums, technical FAQs, service health status, and AWS Trusted Advisor. |
 |  [Amazon CloudWatch product information](http://aws.amazon.com/cloudwatch/) | The primary web page for information about Amazon CloudWatch.  |
 |  [Contact Us](http://aws.amazon.com/contact-us/)  | A central contact point for inquiries concerning AWS billing, account, events, abuse, and so on.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

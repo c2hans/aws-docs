@@ -59,3 +59,7 @@ Parameters
 | start\_time, end\_time | The time window for this analysis run. For example, for a job scheduled to run at 05:00 UTC and a job that runs on 20/02/2020, `start_time`: is 2020-02-19T06:00:00Z and `end_time`: is 2020-02-20T05:00:00Z |
 | baseline\_constraints: | The local path of the baseline constraint file specified in` BaselineConfig.ConstraintResource.S3Uri`. This is available only if this parameter was specified in the `CreateMonitoringSchedule` request. |
 | baseline\_statistics | The local path to the baseline statistics file specified in `BaselineConfig.StatisticsResource.S3Uri`. This is available only if this parameter was specified in the `CreateMonitoringSchedule` request.:  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

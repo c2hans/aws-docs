@@ -45,3 +45,7 @@ Certain patches, updates, or upgrade may have impact on workloads running in you
 You are responsible for ESX host lifecycle management and maintenance within the Amazon EVS environment, including monitoring host health and remediating host issues. For more information, see [Performing maintenance on your environment](evs-env-maintenance.md).
 
  AWS performs scheduled maintenance on the underlying EC2 metal instances to ensure reliability, availability, and performance of the infrastructure. For more information, see [About AWS scheduled maintenance for EC2 instances](evs-host-maintenance.md#evs-host-maintenance-about).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ Now that you're prepared to work with Amazon SNS, get started by:
 1. [Publishing an Amazon SNS message](sns-publishing.md)
 
 1. [Deleting an Amazon SNS topic and subscription](sns-delete-subscription-topic.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

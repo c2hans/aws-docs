@@ -60,3 +60,7 @@ curl https://{{your-neptune-endpoint}}:{{port}}/gremlin/status \
 curl https://{{your-neptune-endpoint}}:{{port}}/sparql/status \
     -d "queryId=4d5c4fae-aa30-41cf-9e1f-91e6b7dd6f47"
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

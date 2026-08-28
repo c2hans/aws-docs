@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/legacy/userguide/sampl
   - **Sample question:** Which campaigns have work orders at watch status? / **Sample answer:**  ![Sample answer for campaigns that have work orders at watch status](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/WOI_Q2.png)
   - **Sample question:** What suppliers are contributing to current work orders / **Sample answer:** ![Sample answer for suppliers contributing to current work orders](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/WOI_Q3.png)
   - **Sample question:** What work orders may need to be rescheduled due to delays? / **Sample answer:** ![Sample answer for suppliers contributing to work orders](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/WOI_q.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

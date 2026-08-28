@@ -69,3 +69,7 @@ This section covers the prerequisites needed to manage Amazon Redshift managed s
 1.  Add a key policy to the AWS KMS key if you're using a customer managed key to encrypt the data in the Amazon Redshift cluster/namespace. Replace the account number with a valid AWS account number, and specify data transfer role name. By default, the data in the Amazon Redshift cluster is encrypted using an KMS key. Lake Formation provides an option to create your custom KMS key for encryption. If you're using a customer managed key, you must add specific key policies to the key.
 
    For more information about managing the permissions of a customer managed key, see [Customer managed keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#customer-cmk).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker lakehouse architecture. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-lakehouse-architecture` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,5 +40,9 @@ When installing an AWS Replication Agent on an Amazon EC2 instance (when the sou
 + From the top right-hand menu, select **Actions > Security > Modify IAM role**.
 + Use a role that contains the [AWSApplicationMigrationServiceEc2InstancePolicy](security-iam-awsmanpol-AWSApplicationMigrationServiceEc2InstancePolicy.md) policy.
 
-  If none exists, click **Create new IAM role**, attach the policy and return to the Amazon EC2 console window.
-+ Select your new role from the drop-down list and click **Update**.
+  If none exists, choose **Create new IAM role**, attach the policy and return to the Amazon EC2 console window.
++ Select your new role from the drop-down list and choose **Update**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

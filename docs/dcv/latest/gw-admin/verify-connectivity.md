@@ -23,3 +23,7 @@ $ nc -uvz dcv.gateway.domain 8443
 
 **Note**
 **Note:** The `nc -uvz` command can only confirm UDP connectivity failure when an explicit ICMP error (e.g., "Connection refused") is returned. If packets are silently dropped (e.g., by security groups or firewalls), the command may still report success. A successful result from this command does not guarantee that UDP traffic can reach the DCV Connection Gateway.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -183,3 +183,7 @@ This Conformance Pack was validated by AWS Security Assurance Services LLC (AWS 
 <a name="cis_top_20-conformance-pack-sample"></a>
 
 The template is available on GitHub: [Operational Best Practices for CIS Top 20](https://github.com/awslabs/aws-config-rules/blob/master/aws-config-conformance-packs/Operational-Best-Practices-for-CIS-Top20.yaml).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

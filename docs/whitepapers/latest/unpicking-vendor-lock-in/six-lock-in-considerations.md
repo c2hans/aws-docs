@@ -89,3 +89,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/unpicking-vendor-lock
  If a CSP increases prices, customers think about moving away. If a CSP has a history of increasing prices, it’s likely they will try to make it difficult for their customers to move away by increasing switching costs, often through punitive licensing practices or arbitrary technological barriers.
 
  AWS operates at a massive scale, offering standardized services in a self-service manner. This low-touch model enables us to focus on innovating on behalf of customers to provide more services, enhance services already available, and find operational efficiencies that can be passed back to customers in the form of price cuts. *AWS has reduced prices 107 times*, largely in the absence of competitive pressure to do so. AWS has tried to make it as easy as possible to leave if you want to, because AWS is confident that AWS services speak for themselves, and that service quality will make customers want to stay with AWS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

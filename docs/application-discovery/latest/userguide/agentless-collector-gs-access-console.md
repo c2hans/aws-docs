@@ -16,3 +16,7 @@ The following procedure describes how to access the Application Discovery Servic
 1. Choose **Get Started** the first time you access Agentless Collector. Thereafter, you'll be asked to **Log in**.
 
 If you're accessing the Agentless Collector console for the first time, next you'll [Configuring Agentless Collector](agentless-collector-gs-configure.md). Otherwise, next you'll see [The Agentless Collector dashboard](agentless-collector-dashboard.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Application Discovery Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query application-discovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

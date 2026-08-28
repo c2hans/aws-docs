@@ -77,3 +77,7 @@ Runtime licenses are not based on number of gigabytes of memory or CPU cores and
 
  If you already have the right to use the SAP HANA Database Runtime license within your SAP license agreement, you should determine if you additionally have the right to use the SAP ASE Database Runtime license for SAP components that cannot use SAP HANA as the underlying database or to reduce the infrastructure costs associated with using SAP HANA for that component.
 +  Refer to the SAP Documentation: [SAP Product Use and Support Guide](https://www.sap.com/uk/about/trust-center/agreements/on-premise/product-use-and-support-terms.html?sort=latest_desc&tag=agreements:product-use-support-terms/on-premise-software/software-use-rights), or consult with your SAP account team
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

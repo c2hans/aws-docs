@@ -21,3 +21,7 @@ The following related resources can help you as you work with this service.
 | [Connect to your Windows instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connecting_to_windows_instance.html) in the Amazon EC2 User Guide | Learn how to connect to the Windows instances that you launch. |
 | [Creating a billing alarm to monitor your estimated AWS charges](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/monitor_estimated_charges_with_cloudwatch.html) in the Amazon CloudWatch User Guide | Learn how to monitor your estimated charges using CloudWatch. |
 | [Application Auto Scaling User Guide](https://docs.aws.amazon.com/autoscaling/application/userguide/) | Learn how to configure auto scaling for scalable resources for Amazon Web Services beyond Amazon EC2. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

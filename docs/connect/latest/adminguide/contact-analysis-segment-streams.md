@@ -20,3 +20,7 @@ Through streaming, you can receive the following event types:
 + [Chat: Data model for conversational analytics segment streams](chat-real-time-contact-analysis-segment-streams-data-model.md)
 + [Voice: Sample conversational analytics segment stream](sample-real-time-contact-analysis-segment-stream.md)
 + [Chat: Sample conversational analytics segment stream](chat-sample-real-time-contact-analysis-segment-stream.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 +  **Forget** the data from the old location.
 
  Another approach is to use careful coordination between the router and the cells, for example using the control plane to migrate clients from one cell to another and ensuring this state transition before the cell is ready to receive traffic. In this case, dependencies between cells are avoided or kept to a minimum, as these dependencies have been influenced across cells and therefore decrease fault isolation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

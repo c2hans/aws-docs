@@ -25,3 +25,7 @@ Though Manual WLM can be fine tuned over time to match your workload patterns, i
 An important metric to measure the success of workload management configuration is system throughput, which in other words is how many queries are completed successfully. System throughput is measured in queries per second. For more information about system metrics, see [Monitoring Amazon Redshift cluster performance](https://docs.aws.amazon.com/redshift/latest/mgmt/metrics.html).
 
 The easiest way to manage your WLM configuration is by using the Amazon Redshift Management console. You can also use the [Amazon Redshift command line interface](https://docs.aws.amazon.com/cli/latest/reference/redshift/) (CLI) or the [Amazon Redshift API](https://docs.aws.amazon.com/redshift/latest/APIReference/API_Operations.html). For more information about implementing and using workload management, see [Implementing workload management](https://docs.aws.amazon.com/redshift/latest/dg/cm-c-implementing-workload-management.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

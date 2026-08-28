@@ -304,7 +304,7 @@ agentcore add payment-connector \
   --manager my-payment-manager \
   --name my-coinbase-connector \
   --provider CoinbaseCDP \
-  --quick-create
+  --provision-mode QUICK_CREATE
 
 agentcore deploy
 ```
@@ -882,3 +882,7 @@ Through this tutorial, you created:
 +  [Integrate with Browser Tool](payments-browser.md) to access paywalled websites.
 +  [Enable observability](payments-observability.md) to monitor payment operations in CloudWatch.
 +  [Review IAM roles](payments-iam-roles.md) to configure least-privilege access for production.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

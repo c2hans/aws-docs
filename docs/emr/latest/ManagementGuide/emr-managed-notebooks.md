@@ -18,3 +18,7 @@ You can also execute an EMR notebook programmatically using the Amazon EMR API, 
 The EMR Notebooks capability supports clusters that use Amazon EMR releases 5.18.0 and higher. We recommend that you use EMR Notebooks with clusters that use the latest version of Amazon EMR, or at least 5.30.0, 5.32.0, or 6.2.0. With these releases, Jupyter kernels run on the attached cluster rather than on a Jupyter instance. This improves performance and enhances your ability to customize kernels and libraries. For more information, see [Differences in capabilities by cluster release version](emr-managed-notebooks-considerations.md#considerations-cluster-version).
 
 Applicable charges for Amazon S3 storage and for Amazon EMR clusters apply.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

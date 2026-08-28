@@ -116,3 +116,7 @@ If you create a new deployment revision of the parent fleet, it replaces all dep
    ```
 
    <a name="check-new-deployment-status"></a>The response includes a `deploymentId` that identifies this deployment. You can use the deployment ID to check the status of the deployment. For more information, see [Check deployment status](check-deployment-status.md#check-cloud-deployment-status).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

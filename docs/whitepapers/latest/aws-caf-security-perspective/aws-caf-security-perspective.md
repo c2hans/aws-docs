@@ -58,3 +58,7 @@ Publication date: **December 12, 2023** ([Document history](document-revisions.m
  The [AWS Well-Architected Framework](https://aws.amazon.com/architecture/well-architected/) explains the pros and cons of decisions you make when building systems in the cloud. The six pillars of the Framework describe architectural best practices for designing and operating reliable, secure, efficient, cost-effective, and sustainable systems. By answering a set of questions in the [AWS Well-Architected Tool](https://aws.amazon.com/well-architected-tool/), you can evaluate your workloads alongside the best practices for each pillar. This tool is available at no charge in the [AWS Management Console](https://console.aws.amazon.com/wellarchitected).
 
  For more expert guidance and best practices for your cloud architecture—reference architecture deployments, diagrams, and whitepapers—refer to the [AWS Architecture Center](https://aws.amazon.com/architecture/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

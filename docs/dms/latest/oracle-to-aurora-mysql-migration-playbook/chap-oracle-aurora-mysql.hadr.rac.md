@@ -121,3 +121,7 @@ Overall, Amazon Aurora introduces a simplified solution that can function as an 
 | Scale-out cluster | Provision, deploy, and configure new servers, unless you pre-allocate a pool of idle servers to scale-out on | Easy using the AWS UI/CLI |
 
 For more information, see [Amazon Aurora as an Alternative to Oracle RAC](https://aws.amazon.com/blogs/database/amazon-aurora-as-an-alternative-to-oracle-rac).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

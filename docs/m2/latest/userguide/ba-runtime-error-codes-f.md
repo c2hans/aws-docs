@@ -18,3 +18,7 @@ Files error codes, prefixed with `BA-F`. These errors are related to files opera
 | --- | --- | --- | --- |
 | BA-F2000 | Error | Failed to process GDG deletion event. Verify the GDG file path is valid and the event queue is properly configured. |  |
 | BA-F2001 | Warn | Cannot extract filename from path. Verify the GDG file path format is correct. |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

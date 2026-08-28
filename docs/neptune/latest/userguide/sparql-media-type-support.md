@@ -89,3 +89,7 @@ curl -H "Accept: application/nquads" ...
 + [TriG](https://www.w3.org/TR/trig/)
 + [SPARQL JSON Results](https://www.w3.org/TR/sparql11-results-json)
 + [RDF4J Binary RDF Format](https://rdf4j.org/documentation/reference/rdf4j-binary)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

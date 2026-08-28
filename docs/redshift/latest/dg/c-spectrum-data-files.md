@@ -78,3 +78,7 @@ Amazon Redshift uses massively parallel processing (MPP) to achieve fast executi
 You can optimize your data for parallel processing by doing the following:
 + If your file format or compression doesn't support reading in parallel, break large files into many smaller files. We recommend using file sizes between 64 MB and 1 GB.
 + Keep all the files about the same size. If some files are much larger than others, Redshift Spectrum can't distribute the workload evenly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

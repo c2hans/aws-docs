@@ -160,3 +160,7 @@ teradata_read_table = spark.read.format("teradatanos").option(**options).load()
  You can provide all above options in your visual ETL job UI. For connectionName option, you should choose it from the Teradata Vantage NOS connection drop down list. For all other options, you should provide them through the Custom Teradata Vantage NOS properties as key value pairs.
 
 ![The window pane displays the Teradata NOS Vantage connection is selected.](http://docs.aws.amazon.com/glue/latest/dg/images/teradata-nos-vantage-connection-options.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

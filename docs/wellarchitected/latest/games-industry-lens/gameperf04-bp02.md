@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Conduct performance testing with bots simulating common player behaviors to evaluate game server resource utilization under different scenarios.
 +  Use solutions like Distributed Load Testing on AWS to customize and simulate gameplay scenarios for stress testing.
 +  Perform internal playtests and use tools like AWS Device Farm for mobile and browser game testing on various devices.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

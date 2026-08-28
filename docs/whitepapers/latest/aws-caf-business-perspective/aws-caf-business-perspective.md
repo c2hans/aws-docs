@@ -57,3 +57,7 @@ Publication date: **August 26, 2022** ([Document revisions](document-revisions.m
 ![A diagram showing AWS CAF Business perspective capabilities.](http://docs.aws.amazon.com/whitepapers/latest/aws-caf-business-perspective/images/caf-business-capabilities.png)
 
  AWS and the [AWS Partner Network](https://aws.amazon.com/partners/find-a-partner/) provide tools and services that can help you along each step of the way. [AWS Professional Services](https://aws.amazon.com/professional-services/) is a global team of experts that provides assistance through a collection of AWS CAF aligned offerings that can help you achieve specific outcomes relating to your cloud transformation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

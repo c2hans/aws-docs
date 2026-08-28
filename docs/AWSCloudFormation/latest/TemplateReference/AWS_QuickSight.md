@@ -12,8 +12,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::QuickSight::Agent](aws-resource-quicksight-agent.md)
 + [AWS::QuickSight::Analysis](aws-resource-quicksight-analysis.md)
 + [AWS::QuickSight::ApprovalPolicy](aws-resource-quicksight-approvalpolicy.md)
-+ [AWS::QuickSight::AssetBundleExportJob](aws-resource-quicksight-assetbundleexportjob.md)
-+ [AWS::QuickSight::AssetBundleImportJob](aws-resource-quicksight-assetbundleimportjob.md)
 + [AWS::QuickSight::CustomPermissions](aws-resource-quicksight-custompermissions.md)
 + [AWS::QuickSight::Dashboard](aws-resource-quicksight-dashboard.md)
 + [AWS::QuickSight::DataSet](aws-resource-quicksight-dataset.md)
@@ -31,3 +29,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::QuickSight::Topic](aws-resource-quicksight-topic.md)
 + [AWS::QuickSight::TopicV2](aws-resource-quicksight-topicv2.md)
 + [AWS::QuickSight::VPCConnection](aws-resource-quicksight-vpcconnection.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

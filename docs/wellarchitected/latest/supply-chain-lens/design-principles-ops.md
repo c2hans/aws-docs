@@ -10,3 +10,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 +  Implement robust processes for assessing and managing the operational readiness of new partners and for the comprehensive management and resolution of operational issues, including the validation of corrective actions.
 +  Design and operate the supply chain application with inherent mechanisms to meet all relevant compliance and regulatory requirements.
 +  Foster a culture and implement mechanisms for continuous evolution and adaptation of supply chain operations to use emerging technologies, best practices, and market dynamics.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

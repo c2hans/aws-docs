@@ -323,3 +323,7 @@ To generate secure code, try the following sample prompts:
 + "Create a Kubernetes deployment manifest for a microservice with security hardening and validate it."
 
 For more information, see this [code generation with security scanning](https://github.com/aws-samples/sample-mcp-security-scanner/blob/main/docs/demo_code_generation.gif) demo in this pattern’s GitHub repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

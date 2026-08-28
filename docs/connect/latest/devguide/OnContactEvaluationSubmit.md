@@ -292,3 +292,7 @@ Following is an example for single select question type.
 + Operands – An array of string, array length can only be 1. Value is the contact attribute value.
 + ComparisonValue – "$.ContactLens.ContactEvaluation.ContactAttribute.{{YOUR\_ATTRIBUTE\_KEY}}"
 + Negate - true/false. If set to true, it means {{YOUR\_ATTRIBUTE\_KEY}} does not equal to the attribute value specified in the Operands.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

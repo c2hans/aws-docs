@@ -47,3 +47,7 @@ The following table maps the dimensions of the 5-I framework to the SDLC phases 
 The levels of integration vary from high to low. The mapping reveals key focus areas for each dimension. For instance, *Investigate* shows high intensity in the requirements and planning phase. *Integrate* demonstrates high intensity in the implementation, deployment, and operation and maintenance phases.
 
 By using this mapping, you can prioritize your efforts effectively. We recommend that you focus on high, then medium, and then low. Make sure that you adopt a balanced and impactful approach that enhances the software development experience with generative AI.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

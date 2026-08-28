@@ -39,3 +39,7 @@ This prescriptive guidance aims to provide CxOs, VPs, and senior managers with a
 + Best practices to achieve a secure and agile business transformation
 
 By following this guidance, your organization can navigate the ZTA landscape and achieve successful outcomes in your security journey in the Amazon Web Services (AWS) Cloud. AWS offers a variety of services that you can use to implement a ZTA, such as AWS Verified Access, AWS Identity and Access Management (IAM), Amazon Virtual Private Cloud (Amazon VPC), Amazon VPC Lattice, Amazon Verified Permissions, Amazon API Gateway, and Amazon GuardDuty. These services can help to protect AWS resources from unauthorized access.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ Make sure that the project name and description don't contain confidential infor
 1. Choose **Finish** to create the new project.
 
 Next, you might [assign project owners](assign-project-owners.md) and [add assets to the project](add-assets-to-projects-sd.md#add-assets-existing-project-sd). Until you add assets to the project, the project owner can't create dashboards and visualizations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

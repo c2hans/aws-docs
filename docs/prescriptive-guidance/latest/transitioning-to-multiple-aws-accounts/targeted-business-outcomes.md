@@ -33,3 +33,7 @@ The following are a few examples of challenges that a company might experience w
 + The finance team can't disallow access to specific AWS services that might incur high costs.
 
 Adopting a multi-account strategy addresses all of these challenges by using compartmentalized AWS accounts to separate workloads and access.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

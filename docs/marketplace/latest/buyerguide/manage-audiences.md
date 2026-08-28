@@ -62,3 +62,7 @@ The **Governing experience** column shows the experience governing the audience,
 1. If the experience you choose is **Not live**, it will not take effect and govern the audience you associate. You can update the experience status to **Live** in this wizard.
 
 1. After making your selections, choose **Save changes**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

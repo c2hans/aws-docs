@@ -17,3 +17,7 @@ The following table lists and describes standard execution metrics that you can 
 | Participant entries | `ENDPOINT_ENTERED` | The number of participants who started the journey. |
 | Participant exceptions, reentry limits | `REENTRY_CAP_EXCEEDED` | The number of participants who didn't complete the journey because they would have exceeded the maximum number of times that a single participant can re-enter the journey. |
 | Participant exceptions, rejections | `ACTIVE_ENDPOINT_REJECTED` | The number of participants who can't start the journey because they are already active participants in the journey.<br />A participant is rejected if they start a journey and you subsequently update their endpoint definition in a way that affects their inclusion in a segment (based on segment criteria) or the journey (based on activity conditions). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

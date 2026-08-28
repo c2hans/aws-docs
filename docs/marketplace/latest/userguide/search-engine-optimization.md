@@ -98,3 +98,7 @@ The product description lists the product's features, benefits, and usage instru
 
 **Example Short description**
 AnyCompany's product automatically distributes incoming application traffic across multiple Amazon EC2 instances. It enables you to improve fault tolerance in your applications by seamlessly providing the load balancing capacity that you need to respond to incoming application traffic. AnyCompany's product detects unhealthy instances in a pool and automatically reroutes traffic to healthy instances until the unhealthy instances have been restored. Customers can enable it in a single AWS Availability Zone or across multiple Availability Zones to enable more consistent application performance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

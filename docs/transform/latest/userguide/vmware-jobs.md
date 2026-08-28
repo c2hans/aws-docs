@@ -14,12 +14,12 @@ For information about creating a workspace, see [Getting started](https://docs.a
 
 Your workspace determines the AWS Region where your jobs, discovery data, and AWS Transform recommendations reside. To work in a different AWS Region, ask your administrator to create a workspace in that Region. For information about supported AWS Regions, see [Supported Regions for AWS Transform](regions.md).
 
-You can specify a different AWS Region as your migration target. This means you can run discovery in one Region but deploy your target environment in another. If you do that, some of your data will be transferred across AWS Regions. Server replication data is not transferred across Regions and goes directly from your source environment into your target account and Region. For more information, see [Connect target AWS accounts and regions](transform-vmware-connect-target-account.md).
+You can specify a different AWS Region as your migration target. This means you can run discovery in one Region but deploy your target environment in another. If you do that, some of your data is transferred across AWS Regions. Server replication data is not transferred across Regions; it goes directly from your source environment into your target account and Region. For more information, see [Connect target AWS accounts and regions](transform-vmware-connect-target-account.md).
 
 ## Job types
 <a name="vmware-job-types"></a>
 
-Whether you need an end-to-end migration or want to tackle a specific phase, AWS Transform offers the following types of migration jobs that you can choose from depending on your migration needs. In addition to these preset options, you can dynamically add or remove any step from your job at any time to customize your migration workflow.
+Whether you need an end-to-end migration or want to tackle a specific phase, AWS Transform offers several types of migration jobs to choose from. In addition to these preset options, you can add or remove any step from your job at any time to customize your migration workflow.
 
 ### End-to-end migration
 <a name="end-to-end"></a>
@@ -128,3 +128,7 @@ AWS Transform has the following limitations:
 + Multi-account migration – Single region only – You can migrate to multiple accounts within a single AWS Region. For multi-Region migrations, you must create separate projects for each target region.
 + Multi-account migration – One account per wave – Each migration wave can target only one account. Applications requiring different target accounts must be placed in separate waves.
 + Multi-account migration – AWS Organizations required – All target accounts must be part of an AWS Organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -139,3 +139,7 @@ You should now have a new Canvas application that uses a custom Studio space as 
 Any time you delete the Canvas application (or log out) and have to re-create the application, you must provide your space in the `SpaceName` field to make sure that Canvas uses your space.
 
 The space is attached to the user profile you specified in the space configuration. You can delete your Canvas application without deleting the space, and the data stored in the space remains. The data stored in your space is only deleted if you delete your user profile, or if you directly delete the space.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -67,3 +67,7 @@ You can transfer a multi-party call to another agent, or disconnect yourself fro
 A multi-party call stays up as long as the caller or the agent is on the call. For example, add an external party to a call and then you disconnect. The caller and external party continue the call.
 
 If only third-parties are left on the line, the contact is terminated. However, as the agent you can choose to disconnect and allow only the caller and the third-party participants to remain on the call.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

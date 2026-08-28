@@ -132,3 +132,7 @@ Choose any of the following buttons on the find and replace bar to modify find a
 +  **Search Selection**: For a single file only, find only in the selection.
 +  **Show in Console**: For multiple files, show the **Search Results** tab in the **Console** instead of the active pane.
 +  **Preserve Case**: For a single file only, preserve casing as applicable when replacing text.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

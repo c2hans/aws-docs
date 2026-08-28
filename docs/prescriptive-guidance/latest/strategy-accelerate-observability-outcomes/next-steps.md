@@ -19,3 +19,7 @@ For more information and guidance for implementing an effective observability st
 + [Operational excellence pillar](https://docs.aws.amazon.com/en_us/wellarchitected/latest/framework/operational-excellence.html) (AWS Well-Architected Framework)
 + [Building dashboards for operational visibility](https://aws.amazon.com/builders-library/building-dashboards-for-operational-visibility/) (The Amazon Builders' Library)
 + [DevOps guidance](https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/observability.html) (AWS Well-Architected Framework)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

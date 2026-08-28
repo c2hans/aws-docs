@@ -65,3 +65,7 @@ For details on running evaluations against Amazon Nova models, see [Evaluating y
 Using an RMP as the source model for a training job is planned for Q3 2026 and is not available today. Once supported, you will be able to specify an RMP ARN as the source model using `ModelPackageConfig.SourceModelPackageArn`. The SageMaker AI platform will resolve the ARN to the actual model checkpoint internally, so your training code will receive the model artifacts as if they were loaded from Amazon S3.
 
 This will enable iterative MTRL training workflows where the output RMP from one training job can be passed as the source model to a subsequent MTRL job, allowing each run to build on the output of the previous one without ever exposing the underlying model checkpoint.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,3 +25,7 @@ Incoming payload published on topic `topic/subtopic`: `{"lat": 47.696, "long": -
 SQL statement: `SELECT [lat,long] as lat_long FROM 'topic/subtopic'`
 
 The resulting output payload would be: `{"lat_long": [47.606,-122.332]}`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

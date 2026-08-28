@@ -70,3 +70,7 @@ If you host the web console, you are responsible for configuring HTTPS, access c
 
 **Note**
 The web console assets include a configuration file with the API endpoint URL and Cognito settings. These values are pre-configured during stack creation. If you move the assets to a different server, ensure the configuration file remains intact.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

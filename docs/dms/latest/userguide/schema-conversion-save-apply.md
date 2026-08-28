@@ -55,3 +55,7 @@ To apply the extension pack to your target database manually, choose **Apply cha
 We recommend that you don't modify the extension pack schema to avoid unexpected results in the converted code.
 
 For more information, see [Using extension packs in DMS Schema Conversion](extension-pack.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

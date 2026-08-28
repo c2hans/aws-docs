@@ -52,11 +52,6 @@ When Region switch executes an ECS service block, Region switch attempts to scal
 
 If you’re using an active/active approach, Region switch uses the other configured Region as the source. That is, if a Region is being deactivated, Region switch uses the other active Region as the source to match for the percent to scale.
 
-## What is evaluated as part of plan evaluation
-<a name="ecs-service-scaling-block-eval"></a>
+## See also
 
-When Region switch evaluates your plan, Region switch performs several checks on your ECS service execution block configuration and permissions. Region switch verifies that ECS services are present in both the source and target Regions, and checks to make sure that the maximum capacity set for the target Region's ECS service is sufficient to handle the specified percentage match of the target Region's capacity. Region switch also validates that the plan's IAM role has the correct permissions for ECS service. For more information about the required permissions for Region switch execution blocks, see [Identity-based policy examples for Region switch in ARC](security_iam_id-based-policy-examples-region-switch.md).
-
-In addition, Region switch checks that the `ResourceMonitor` has successfully collected and stored the necessary monitoring data for the ECS services, and captures a count of the number of running tasks.
-
-If any of the checks fail, Region switch returns warning messages, which you can view in the console. Or, you can receive the validation warnings through EventBridge or by using API operations.
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

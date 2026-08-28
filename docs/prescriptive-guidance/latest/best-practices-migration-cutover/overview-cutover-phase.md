@@ -12,3 +12,7 @@ The time, complexity, and risks associated with a cutover depend on your busines
 The cutover phase comes toward the end of the [migration process](https://aws.amazon.com/cloud-migration/how-to-migrate/). The following diagram shows where the cutover phase fits in to the migration process. As the diagram illustrates, communication and governance (covered in the next section of this guide) play a significant role in the cutover phase.
 
 ![](http://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-migration-cutover/images/guide-img/94c79f7c-efad-49a8-bca9-aadde0a15691/images/d3fb3d1a-4c20-4383-b88b-234f988fa16b.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

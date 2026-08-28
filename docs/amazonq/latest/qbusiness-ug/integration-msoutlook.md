@@ -46,3 +46,7 @@ You will now continue the remainder of this procedure within the *Microsoft 365 
 1. Choose Amazon Q Business **Office Add-in** as your App and choose **Remove app** from the Amazon Q Business property details section that pops up. **Confirm** your choice.
 **Note**
 Once you remove your Microsoft Outlook (Outlook) Add-in from here, the Add-in will no longer appear as an Add-in to use or add in their Outlook.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

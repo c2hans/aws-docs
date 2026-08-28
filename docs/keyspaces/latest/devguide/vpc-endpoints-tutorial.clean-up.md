@@ -54,3 +54,7 @@ If you want to delete the resources that you have created in this tutorial, foll
 1. Choose **Actions**, choose **Instance State**, and then choose **Terminate**.
 
 1. In the confirmation window, choose **Yes, Terminate**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

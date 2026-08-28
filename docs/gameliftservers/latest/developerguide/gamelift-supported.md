@@ -131,3 +131,7 @@ Node.js 10 will reach end of support on September 30, 2026. See more details in 
 You can deploy Realtime servers onto hosting resources that run on the following platforms:
 + [Amazon Linux 2023](https://aws.amazon.com/linux/amazon-linux-2023/)
 + [Amazon Linux 2](https://aws.amazon.com/amazon-linux-2/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

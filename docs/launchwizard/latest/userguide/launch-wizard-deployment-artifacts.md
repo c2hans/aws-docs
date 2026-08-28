@@ -25,3 +25,7 @@ In addition to supporting deployments using CloudFormation templates, AWS Servic
 AWS Launch Wizard creates a default Launch Wizard portfolio and products within the portfolio. An AWS Service Catalog product is created for each deployment and given a name that corresponds to the Launch Wizard deployment name.
 
 ![Deploying SAP applications with Launch Wizard, CloudFormation, AWS Service Catalog, and third-party applications](http://docs.aws.amazon.com/launchwizard/latest/userguide/images/lw-sc-architecture.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Launch Wizard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query launchwizard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

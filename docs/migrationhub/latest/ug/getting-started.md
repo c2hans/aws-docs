@@ -38,3 +38,7 @@ Additionally, you can use the AWS Migration Hub API to track the status of your 
 The AWS SDKs assist you to develop applications that interact with Migration Hub. The AWS SDKs for Java, .NET, and PHP wrap the underlying Migration Hub API to simplify your programming tasks. For information about downloading the SDK libraries, see [Sample Code Libraries](http://aws.amazon.com/code).
 
 **Topics**
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

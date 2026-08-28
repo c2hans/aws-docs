@@ -18,3 +18,7 @@ To be able to connect remotely to these instances, you must have IP connectivity
 + [Joining an Amazon EC2 Mac instance to your AWS Managed Microsoft AD Active Directory](join_mac_instance.md)
 + [Delegating directory join privileges for AWS Managed Microsoft AD](directory_join_privileges.md)
 + [Creating or changing a DHCP options set for AWS Managed Microsoft AD](dhcp_options_set.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

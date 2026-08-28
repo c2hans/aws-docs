@@ -19,3 +19,7 @@ You can use one of the preceding methods alone, or you can use a combination of 
 **Important**
 To create a Client VPN endpoint, you must provision a server certificate in AWS Certificate Manager, regardless of the type of authentication that you use. For more information about creating and provisioning a server certificate, see the steps in [Mutual authentication in AWS Client VPN](mutual.md).
 If you use a combination of mutual authentication and user-based authentication, both methods must then be used to correctly authenticate in VPN.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

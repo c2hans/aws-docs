@@ -76,3 +76,7 @@ $ aws dms describe-endpoints --endpoint-url https://vpce-12abcd34efg567hij-ab12d
 If you enable the private DNS option, you don't have to specify the endpoint URL in the request.
 
 For more information on creating and using VPC interface endpoints (including enabling the private DNS option), see [Interface VPC endpoints (AWS PrivateLink)](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html) in the *Amazon VPC User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

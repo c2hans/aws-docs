@@ -83,3 +83,7 @@ To view detailed information about a specific agreement, choose the agreement ID
 From the **agreement detail** page, you can manage your subscription and access all related information in one place.
 
 ![The agreement detail page showing comprehensive information about a specific agreement](http://docs.aws.amazon.com/marketplace/latest/buyerguide/images/agreement-detail-page.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

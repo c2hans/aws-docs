@@ -190,3 +190,7 @@ You can edit the network analyzer configuration and choose whether to deactivate
 You can also add more resources to your network analyzer configuration and monitor them in real time. You can add up to a combined total of 250 wireless gateway and wireless device resources. To add resources, on the [Network Analyzer details page of the AWS IoT console](https://console.aws.amazon.com/iot/home#/wireless/networkAnalyzer/details/NetworkAnalyzerConfig_Default), choose the **Resources** tab and choose **Add resources**. You can then update your configuration with the new resources and activate trace messaging to see the updated messages for the additional resources.
 
 For more information about updating your network analyzer configuration by editing the configuration settings and adding resources, see [Add resources and update the network analyzer configuration](network-analyzer-resources.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

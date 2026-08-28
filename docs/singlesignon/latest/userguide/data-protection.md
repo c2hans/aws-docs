@@ -31,3 +31,7 @@ source_url: https://docs.aws.amazon.com/singlesignon/latest/userguide/data-prote
 <a name="data-retention"></a>
 
  IAM Identity Center stores your data such as user and group identities, and metadata, until you delete them from the service. When you delete an IAM Identity Center instance, the data it contains is also deleted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,3 +36,7 @@ If your file is the output of a single labeling job, specify the single label at
 If your file is the output of a chained labeling job, specify the label attribute name for one or more jobs in the chain. Each label attribute name provides the annotations from an individual job. You can specify up to 5 of these attributes for augmented manifest files from chained labeling jobs.
 
 For more information about chained labeling jobs, and for examples of the output that they produce, see [Chaining Labeling Jobs](https://docs.aws.amazon.com/sagemaker/latest/dg/sms-reusing-data.html) in the Amazon SageMaker AI Developer Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

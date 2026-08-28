@@ -17,3 +17,7 @@ SAW runbooks use the **`AWSSupport`** prefix. For example, [`AWSSupport-Activate
 Additionally, customers with Business Support\+ and higher AWS Support plans also have access to runbooks that use the **`AWSPremiumSupport`** prefix. For example, [`AWSPremiumSupport-TroubleshootEC2DiskUsage`](https://docs.aws.amazon.com/systems-manager-automation-runbooks/latest/userguide/automation-awspremiumsupport-troubleshootEC2diskusage.html).
 
 To learn more about AWS Support, see [Getting started with AWS Support](https://docs.aws.amazon.com/awssupport/latest/user/getting-started.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

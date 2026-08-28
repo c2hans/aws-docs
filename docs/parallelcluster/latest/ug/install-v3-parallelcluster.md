@@ -16,3 +16,7 @@ You can find the version number of the most recent CLI on the [releases page on 
 
 **Manage both AWS ParallelCluster 2 and AWS ParallelCluster 3**
 If you use both AWS ParallelCluster 2 and AWS ParallelCluster 3 and want to manage the CLIs for both packages, we recommend that you install AWS ParallelCluster 2 and AWS ParallelCluster 3 in different [virtual environments](install-v3-virtual-environment.md). This ensures that you can continue using each version of AWS ParallelCluster and any associated cluster resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

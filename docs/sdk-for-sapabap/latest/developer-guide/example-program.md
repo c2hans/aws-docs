@@ -126,3 +126,7 @@ The data is accessed using a `GET...()` style method that hides the internal re
 ```
 
 All errors – connection, 4xx client, 5xx server, or any ABAP error, such as authorization or configuration errors, are represented as exceptions. You can tackle each exception separately. You have the choice of whether an exception should be handled as an informational error, a retry, warning, short dump, or any other kind of handling.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for SAP ABAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-sapabap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

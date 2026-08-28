@@ -30,3 +30,7 @@ Understand the security standards and compliance certifications that SAP and AWS
  **Suggestion 5.1.3 - Assess the security foundation of the service providers that support your SAP workload**
 
 If you are dependent on third-party organizations to manage all or part of your SAP workload, assess the ability of the third party to meet the required security controls. This includes the legal and regulatory requirements mandated by your enterprise.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

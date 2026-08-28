@@ -39,3 +39,7 @@ The AOC summarizes the AWS CloudHSM controls which are assessed by QPA. The PCI-
 **Q: Does AWS CloudHSM support payment functions such as PIN translation and DUKPT?**
 
 No, AWS CloudHSM provides general purpose HSMs. Over time we may provide payment functions. Although the service does not perform payment functions directly, the AWS CloudHSM PCI PIN attestation of compliance enables customers to attain their own PCI compliance for their services running on AWS CloudHSM. If you are interested in using AWS Payment Cryptography services for your workload, please refer to the blog ["Move Payment Processing to the Cloud with AWS Payment Cryptography."](https://aws.amazon.com/blogs/aws/new-move-payment-processing-to-the-cloud-with-aws-payment-cryptography/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

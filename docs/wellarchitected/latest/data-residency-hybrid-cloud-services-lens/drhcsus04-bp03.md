@@ -21,3 +21,7 @@ Both Amazon S3 on Outposts and Amazon EBS provide tools for data lifecycle manag
  When sizing Amazon S3 on Outposts storage before ordering, consider the potential of using [Amazon S3 lifecycle polices](https://docs.aws.amazon.com/AmazonS3/latest/userguide/S3OutpostsLifecycleManaging.html) to expire bucket objects, delete non-current objects, or delete incomplete multi-part uploads to reduce overall Amazon S3 storage requirements. By managing Amazon S3 buckets and objects to maintain only current or necessary data, you can improve sustainability by minimizing Outposts storage resources and power requirements.
 
  Also consider the potential of using [Amazon Data Lifecycle Manager](https://aws.amazon.com/ebs/data-lifecycle-manager/) to manage Amazon EBS snapshot and Amazon EBS-backed AMI retention policies to reduce overall Amazon S3 storage requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

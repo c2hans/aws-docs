@@ -681,3 +681,7 @@ The **AdministratorAccess** policy grants an IAM user full access to AWS. Theref
 **Save your AWS access keys**
 
    Save the access keys for the IAM user in a safe place. You'll need them to [configure your AWS profile](start-intro.md#setup-aws-profile) as part of getting set up for App2Container.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App2Container. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app2container` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

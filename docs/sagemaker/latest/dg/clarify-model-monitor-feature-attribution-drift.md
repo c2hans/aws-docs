@@ -57,3 +57,7 @@ This notebook has been verified to run in SageMaker Studio only. If you need ins
 + [Schedule Feature Attribute Drift Monitoring Jobs](clarify-model-monitor-feature-attribute-drift-schedule.md)
 + [Inspect Reports for Feature Attribute Drift in Production Models](clarify-feature-attribute-drift-report.md)
 + [CloudWatch Metrics for Feature Drift Analysis](clarify-feature-attribute-drift-cw.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

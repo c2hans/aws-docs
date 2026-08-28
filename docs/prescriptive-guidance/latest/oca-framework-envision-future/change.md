@@ -90,3 +90,7 @@ To begin building the change acceleration strategy and plan, follow these steps:
 1. Obtain sign-off on the final change acceleration strategy.
 
 By focusing on these key elements and best practices, you can develop a robust change strategy for your organization that accelerates cloud adoption, maximizes business value, and ensures a smooth transition for all stakeholders who are involved in the transformation journey.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

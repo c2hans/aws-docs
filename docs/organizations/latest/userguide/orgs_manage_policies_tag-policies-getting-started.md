@@ -59,3 +59,7 @@ Use caution in enforcing compliance. Make sure that you understand the effects o
 | At any time, you can [ evaluate organization-wide compliance](https://docs.aws.amazon.com/ARG/latest/userguide/tag-policies-orgs-evaluating-org-wide-compliance.html). | The organization's management account.¹ | [Resource Groups](https://console.aws.amazon.com/resource-groups/) |
 
 ¹ You must sign in as an IAM user, assume an IAM role, or sign in as the root user ([not recommended](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#lock-away-credentials)) in the organization's management account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

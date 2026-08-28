@@ -36,3 +36,7 @@ The conversion of the video to a different color space occurs in [Configuring co
    MediaLive can't read the metadata from an AWS Elemental Link device. But you will be able to enter the color space and the display metadata (Max CLL and Max FALL) manually, in the channel configuration.
 
    You don't need these values if you plan to convert this input from HDR10 to another color space.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

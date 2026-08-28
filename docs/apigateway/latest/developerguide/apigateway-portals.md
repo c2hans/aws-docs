@@ -20,3 +20,7 @@ The following considerations might impact your use of API Gateway portals:
 + Portals are created at the AWS Region level. Your portal can only contain REST APIs that are in the same Region where you create the portal.
 + You can only use the AWS Management Console, AWS CLI, or AWS SDKs to create and share your portals.
 + You can only control access to your portal using Amazon Cognito user pools. Your portal consumers can either sign in directly through a user pool, or they can federate through a third-party identity provider (IdP). If you use an Amazon Cognito user pool, you cannot set a client secret for your user pool. For more information, see [Amazon Cognito user pools](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

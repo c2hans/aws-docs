@@ -381,3 +381,7 @@ In the **Network Traffic ** section, find the **Sent Traffic** and **Received Tr
 **Investigate thread usage **
 
 In the **Sessions and Threads** section, find the **Busy Threads Count**, **Threads Count**, and **Sessions** widgets. These metrics provide insights into the application's thread management and active user sessions. Look for any servers with an abnormally high number of busy threads or sessions, which could indicate potential resource constraints.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

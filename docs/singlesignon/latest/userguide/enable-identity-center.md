@@ -91,3 +91,7 @@ If your organization enabled IAM Identity Center after November 15, 2023 the abi
 For more information, see [Permit account instance creation in member accounts](enable-account-instance-console.md) and [Use Service Control Policies to control account instance creation](control-account-instance.md).
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

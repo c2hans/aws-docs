@@ -45,3 +45,7 @@ GRANT CREATE XML SCHEMA COLLECTION TO {{user_name}};
 ```
 
 In the preceding example, replace {{user\_name}} with the name of your user. Then, replace {{db\_name}} with the name of your target database. Finally, replace {{your\_password}} with a secure password.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Schema Conversion Tool User Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query SchemaConversionTool` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

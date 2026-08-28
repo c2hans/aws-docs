@@ -32,3 +32,7 @@ Modifying your data strategy according to the recommendations in this guide can 
 + Understand the differences between structured, labelled data for traditional ML and the unstructured, multimodal data that fuels generative AI.
 + Beyond established ML practices, understand why generative AI models require new approaches to data preparation, integration, and governance.
 + Learn how data synthesizing through generative AI can accelerate more traditional ML use cases.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

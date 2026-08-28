@@ -10,3 +10,7 @@ The orchestration layer uses IaC to deploy and configure the underlying infrastr
 The infrastructure follows cloud-native best practices, being highly-available, redundant, and scalable.
 
 As demonstrated in the previous sections, the deployment of the underlining infrastructure can be achieved using the [AWS Cloud Development Kit (AWS CDK)](https://aws.amazon.com/cdk/). This can be accomplished using [Terraform](https://www.terraform.io/) by Hashicorp.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

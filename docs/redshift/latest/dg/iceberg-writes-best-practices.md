@@ -10,3 +10,7 @@ source_url: https://docs.aws.amazon.com/redshift/latest/dg/iceberg-writes-best-p
 Consider the following best practices when you write to an Apache Iceberg table:
 + For small, frequent writes or streaming workloads, consider using compaction features provided by AWS Glue Data Catalog or Amazon S3 tables to optimize file sizes for reads.
 + The `DROP TABLE` command deregisters the table from the AWS Glue Data Catalog or the Amazon S3 tables catalog, but your files still remain. You can use features in AWS Glue and Amazon S3 tables to remove orphaned files. For AWS Glue, see [Deleting orphan files](https://docs.aws.amazon.com/glue/latest/dg/orphan-file-deletion.html). For Amazon S3 tables, see [Table maintenance](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-maintenance.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,3 +28,7 @@ Retention settings can be used to specify how long log events are kept in CloudW
 
 **Deletion protection**
 Deletion protection is a safeguard that prevents accidental deletion of log groups and their log streams. When enabled on a log group, deletion protection blocks all deletion operations until it is explicitly disabled. By default, deletion protection is not enabled. This optional feature helps protect critical operational and compliance data from unintended removal, such as log groups that contain audit data, and production application logs for troubleshooting and analysis.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

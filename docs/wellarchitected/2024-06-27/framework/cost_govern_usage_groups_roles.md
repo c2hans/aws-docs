@@ -42,3 +42,7 @@ User roles and groups are fundamental building blocks in the design and implemen
 +  [Well-Architected Lab Basic Identity and Access](https://wellarchitectedlabs.com/Security/100_Basic_Identity_and_Access_Management_User_Group_Role/README.html)
 +  [Control access to AWS Regions using IAM policies](https://aws.amazon.com/blogs/security/easier-way-to-control-access-to-aws-regions-using-iam-policies/)
 + [ Starting your Cloud Financial Management journey: Cloud cost operations ](https://aws.amazon.com/blogs/aws-cloud-financial-management/op-starting-your-cloud-financial-management-journey/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

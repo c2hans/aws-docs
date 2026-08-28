@@ -41,3 +41,7 @@ Third-party tools or services might introduce specific architectural requirement
 <a name="q7"></a>
 
 Network connectivity between AWS Regions plays a critical role in cross-Region DR. To help ensure efficient and reliable data replication, it's important to evaluate network bandwidth, latency, and any limitations imposed by your network infrastructure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ Amazon Q Business users must provide user authentication credentials before they
 For [anonymous applications](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/create-anonymous-application.html), the **Deployed URL** must be generated every time using the `[ CreateAnonymousWebExperienceUrl](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_CreateAnonymousWebExperienceUrl.html)` API operation. For more information, see [Share an anonymous web experience](supported-exp-actions-anonymous.md#create-experience-anonymous-url).
 If your browser has a limited cookie mode (ex. Incognito mode in Chrome), you may have to enable third-party cookies for Amazon Q embedded to work.
  The button for copying may not work without `allow="clipboard-read; clipboard-write"` attribute added to iframe
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

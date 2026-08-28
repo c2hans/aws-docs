@@ -173,3 +173,7 @@ Here are the relevant docs for AWS Toolkits and IAM Identity Center authenticati
 **VS Code** – [Connecting to AWS](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/connect.html) - Covers IAM Identity Center sign-in via Start URL and browser-based auth.
 **Visual Studio** – [AWS IAM Identity Center credentials in AWS Toolkit for Visual Studio](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/sso-credentials.html) - Covers configuring SSO profiles.
 **JetBrains** – [Connecting the AWS Toolkit for JetBrains to your AWS account](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/account-connect.html) - Covers how to connect the AWS Toolkit for JetBrains to your AWS account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdkref` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

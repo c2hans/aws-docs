@@ -28,3 +28,7 @@ You can't opt out using the Compute Optimizer console.
 You can't specify the `--include-member-accounts` parameter when opting out with the `update-enrollment-status` command. If you specify this parameter when opting out with this command, an error occurs.
 
 Your account is opted out of Compute Optimizer after running the previous command. At the same time, your account's recommendations and related metrics data are deleted from Compute Optimizer. If you access the Compute Optimizer console, the option to opt in again should be displayed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

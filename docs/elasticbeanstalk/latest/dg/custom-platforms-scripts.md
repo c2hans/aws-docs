@@ -321,3 +321,7 @@ rm -rf /var/cache/yum
 On Amazon Linux AMI platform branches (preceding Amazon Linux 2), Elastic Beanstalk provides an additional tool, which is `download-source-bundle`. Use this tool to download your application source code when deploying your platform. The tool is available at `/opt/elasticbeanstalk/bin/download-source-bundle`.
 
 The example script `00-unzip.sh` is located in the `appdeploy/pre` folder on environment instances. It demonstrates how to use `download-source-bundle` to download the application source code to the `/opt/elasticbeanstalk/deploy/appsource` folder during deployment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

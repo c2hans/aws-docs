@@ -132,3 +132,7 @@ aws sagemaker update-user-profile --domain-id {{domain-id}} \
 <a name="studio-lifecycle-configurations-create-console"></a>
 
 To create and attach lifecycle configurations in the AWS Management Console, navigate to the [Amazon SageMaker AI console](https://console.aws.amazon.com/sagemaker) and choose **Lifecycle configurations** in the left-hand navigation. The console will guide you through the process of creating the lifecycle configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

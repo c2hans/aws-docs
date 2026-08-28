@@ -21,3 +21,7 @@ Consider following when working with datashares during Amazon Redshift Serverles
 
 **Restore snapshot to a Amazon Redshift Serverless consumer namespace:**
 + Restoring a consumer namespace preserves datashare access without requiring the producer administrator to re-grant usage. However, if the database created from the datashare no longer exists after restore, the consumer must recreate it from the datashare.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

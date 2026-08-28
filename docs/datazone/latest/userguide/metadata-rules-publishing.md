@@ -24,3 +24,7 @@ Domain unit owners can can complete the following procedure to configure metadat
    + Under **Scope**, specify with which data entities you want to associate these forms. You can choose data products and/or data assets.
    + Under **Data asset types**, specify whether the rule applies across all asset types or limit it to selected asset types.
    + Under **Projects**, specify whether the required forms will be associated with data products and/or assets published by all projects or only selected projects in this domain unit. Also, check **Cascade rule to child domain units** if you want child domain units to inherit this requirement.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

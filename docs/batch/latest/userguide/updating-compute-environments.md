@@ -99,3 +99,7 @@ You must use blue/green deployment to update AMIs in these scenarios:
 <a name="manual-ami-updates-custom-ami"></a>
 
 If you specify a custom AMI in the compute environment's launch template, the `imageId` parameter or the `imageIdOverride` parameter in EC2 configuration, AWS Batch will not automatically update your custom AMI during infrastructure updates. You can update a custom AMI id by specifying the new id in the parameter originally used during Compute Environment creation. If you wish to switch to using an AWS Batch-provided AMI, you can do so by removing the custom AMI ID in your compute environment update.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

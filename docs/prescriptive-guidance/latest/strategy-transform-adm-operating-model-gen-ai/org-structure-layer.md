@@ -220,3 +220,7 @@ The following table provides an overview of how the support engineer role can ad
 | Key benefits | + Faster issue resolution times<br />+ Improved first-call resolution rates<br />+ Proactive identification of potential system issues |
 | Key considerations | + Ensuring that AI systems accurately understand and categorize complex technical issues<br />+ Maintaining the human touch in customer interactions |
 | Key steps | + Implement AI-powered knowledge bases for faster issue resolution.<br />+ Adopt AI-driven ticket classification and routing systems.<br />+ Develop process and skills in working alongside AI chatbots and virtual assistants for customer support. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

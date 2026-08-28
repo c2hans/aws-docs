@@ -23,3 +23,7 @@ The following blog posts discuss some of the existing partner integrations with 
 + [Announcing Cloud Custodian Integration with AWS Security Hub CSPM](https://aws.amazon.com/blogs/opensource/announcing-cloud-custodian-integration-aws-security-hub/)
 + [Use AWS Fargate and Prowler to send security configuration findings about AWS services to Security Hub CSPM](https://aws.amazon.com/blogs/security/use-aws-fargate-prowler-send-security-configuration-findings-about-aws-services-security-hub/)
 + [How to import AWS Config rules evaluations as findings in Security Hub CSPM](https://aws.amazon.com/blogs/security/how-to-import-aws-config-rules-evaluations-findings-security-hub/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -222,3 +222,7 @@ Principals that call `AssumeConsole` need the following STS permissions in addit
 +  ** `sts:TagGetWebIdentityToken` ** — permits attaching session tags to the web identity token. Claude Platform on AWS uses these tags to convey the principal’s capability and workspace context to the console.
 
 Include both in the trust policy of any role that console users assume, or in the inline/managed policy attached to user identities that call `AssumeConsole` directly. `AnthropicFullAccess` includes both STS actions. Environments that deny `sts:*` at the SCP or permission boundary level must explicitly allow these two actions for console federation to succeed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Claude Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query claude-platform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

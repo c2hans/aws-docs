@@ -71,3 +71,7 @@ AWS Resilience Hub provides the following APIs for data retrieval.
 | <a name="resiliencehub-ListTests"></a>[ListTests](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListTests.html) | List tests for a target | Read |
 | <a name="resiliencehub-ListUnsupportedAppVersionResources"></a>[ListUnsupportedAppVersionResources](https://docs.aws.amazon.com/resilience-hub/latest/APIReference/API_ListUnsupportedAppVersionResources.html) | List unsupported application version resources | List |
 | <a name="resiliencehub-ListUserJourneys"></a>[ListUserJourneys](https://docs.aws.amazon.com/resilience-hub/v2/APIReference/API_ListUserJourneys.html) | List user journeys for a system | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

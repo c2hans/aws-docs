@@ -31,3 +31,7 @@ To migrate source connectors to Amazon MSK Connect, do the following:
 1. When the Amazon MSK Connector status is `active`, view the logs to verify that the connector has started importing data from the source system.
 
 1. Delete the connector in the existing cluster by making a `DELETE /connectors/{{connector-name}}` request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

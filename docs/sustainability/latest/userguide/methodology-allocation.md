@@ -16,3 +16,7 @@ The model takes operational and capital emissions associated with each AWS clust
 1. Allocate carbon emissions associated with each cloud service to individual customer accounts. We use physical allocation for services with dedicated server racks, and economic allocation for other services.
 
 ![A diagram of AWS carbon emissions, showing the three steps of logical workflow.](http://docs.aws.amazon.com/sustainability/latest/userguide/images/carbon_allocation.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sustainability. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sustainability` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

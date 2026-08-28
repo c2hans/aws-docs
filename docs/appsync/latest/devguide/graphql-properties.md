@@ -150,3 +150,7 @@ type Foo {
 ```
 
 We can see that `Foo` is the object that will be created. Inside an instance of `Foo`, there will be a `date` and `description` field, both of the `String` primitive type (scalar). Syntactically, we see that `Foo` was declared, and its fields exist inside its scope. This combination of type checking and logical syntax ensures that your GraphQL API is concise and self-evident. GraphQL's typing and syntax specification can be found [here](https://spec.graphql.org/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

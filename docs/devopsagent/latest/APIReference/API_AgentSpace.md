@@ -54,6 +54,13 @@ Length Constraints: Minimum length of 2. Maximum length of 35.
 Pattern: `[a-zA-Z]{2,3}(-[a-zA-Z0-9]{2,8})*`
 Required: No
 
+ ** preferences **   <a name="devopsagent-Type-AgentSpace-preferences"></a>
+The preferences configured on the agent space. Preferences that are not set take their default values.
+Type: String to boolean map
+Map Entries: Minimum number of 0 items. Maximum number of 25 items.
+Valid Keys: `elevatedActionsEnabled`
+Required: No
+
 ## See Also
 <a name="API_AgentSpace_SeeAlso"></a>
 
@@ -61,3 +68,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/devops-agent-2026-01-01/AgentSpace)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/devops-agent-2026-01-01/AgentSpace)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/devops-agent-2026-01-01/AgentSpace)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

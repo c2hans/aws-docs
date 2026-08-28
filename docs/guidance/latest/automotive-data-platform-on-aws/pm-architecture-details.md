@@ -548,3 +548,7 @@ GRANT SELECT ON ALL TABLES IN SCHEMA public TO IAM_ROLE 'arn:aws:iam::<consumer-
  **S3 Unload alternative**:
 
 If using S3 unload instead of Datashare, configure Redshift to UNLOAD data to the S3 raw bucket hourly, remove the `redshift-query-lambda` from the deployment, and update the `root-etl-pipeline` Glue job to read from S3 directly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

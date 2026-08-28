@@ -52,3 +52,7 @@ Problem management focuses on identifying and resolving underlying issues (root 
 <a name="serv-change"></a>
 
  Change management provides the ability to request, prioritize, authorize, and approve, schedule, and implement changes to assets. This helps provide a balanced approach to modify IT services while minimizing the risk to production environments. The evidentiary controls included with change management functions allow for ease of audit and compliance reporting. Distributing your infrastructure as code in your multi-account framework should be part of change management processes and approval. This basis facilitates the automation of changes and provides for the documentation, review, and storage of changes in configuration management tools. The M&G Guide recommends that you develop an iterative approach for integrating change management with automation and distribution functions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -143,3 +143,7 @@ There are no charges for sharing a mesh.
 <a name="sharing-limits"></a>
 
 All quotas for a mesh also apply to shared meshes, regardless of who created resources in the mesh. Only a mesh owner can request quota increases. For more information, see [App Mesh service quotas](service-quotas.md). The AWS Resource Access Manager service also has quotas. For more information, see [Service Quotas](https://docs.aws.amazon.com/ram/latest/userguide/what-is.html#what-is-limits).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Mesh. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app-mesh` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

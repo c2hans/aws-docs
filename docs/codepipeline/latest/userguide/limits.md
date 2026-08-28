@@ -67,3 +67,7 @@ For information about structural requirements, see [CodePipeline pipeline struct
 | Quotas for variables at the pipeline level | There is a maximum of 50 pipeline-level variables per pipeline.<br />Variable names for variables at the pipeline level must be:+  128 characters maximum length <br />+  Lowercase letters a through z, inclusive. <br />+  Uppercase letters A through Z, inclusive. <br />+  Numbers 0 through 9, inclusive. <br />+  Special characters `@\-_]+` <br />Any other characters, such as spaces, are not allowed. <br />For variable values, there is a maximum length of 1000 characters<br />For variable values, all characters are allowed.<br />For variable descriptions, there is a maximum length of 200 characters. |
 
 \* You must enable this Region before you can use it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

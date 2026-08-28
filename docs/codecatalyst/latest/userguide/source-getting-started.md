@@ -222,3 +222,7 @@ This is the default name of the workflow for projects created with the **Single-
 Once you've explored working with a source repository and pull request, you might want to remove any resources you don't need. You cannot delete pull requests, but you can close them. You can delete any branches you created.
 
 If you no longer need the source repository or the project, you can also delete those resources. For more information, see [Deleting a source repository](source-repositories-delete.md) and [Deleting a project](projects-delete.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

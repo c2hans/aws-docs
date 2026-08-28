@@ -11,3 +11,7 @@ Frame accuracy means that two frames with the same timecode are identical in the
 + The same content—the same picture on the video frame.
 + The same segment number, manifest data, and so on.
 + The same presentation timestamp (PTS).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -116,3 +116,7 @@ You can also upload a certificate using the AWS DMS console when you create or m
 1. When the endpoint has been modified, choose the endpoint and choose **Test connection** to determine if the SSL connection is working.
 
 After you create your source and target endpoints, create a task that uses these endpoints. For more information about creating a task, see [Step 3: Create a task and migrate data](CHAP_GettingStarted.Replication.md#CHAP_GettingStarted.Replication.Tasks).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

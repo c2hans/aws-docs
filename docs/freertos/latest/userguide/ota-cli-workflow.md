@@ -734,3 +734,7 @@ As with the **delete-job** AWS CLI command, you can pass the `--force` parameter
 Deleting a job execution with a status of IN\_PROGRESS interrupts any job executions that are IN\_PROGRESS on your devices and can result in a device being left in a nondeterministic state. Make sure that each device executing a job that has been deleted can recover to a known state.
 
 For more information about using the OTA update demo application, see [Over-the-air updates demo application](ota-demo.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

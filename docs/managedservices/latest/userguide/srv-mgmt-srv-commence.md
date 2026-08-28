@@ -20,3 +20,7 @@ Service Commencement
 | 1. | Customer AWS account handover | Customer creates a new AWS account and hands it over to AWS Managed Services | R | I |
 | 2. | AWS Managed Services Account - design | Finalize design of AWS Managed Services Account | I | R |
 | 3. | AWS Managed Services Account - build | An AWS Managed Services account is built per the design in Step 2  | I | R |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ When you create a job, you submit it to a queue for processing. Processing begin
 1. Choose **Create**.
 
 You can also create a job using a [Template](using-a-job-template.md), [Preset](using-a-preset-to-specify-a-job-output.md), [duplicated job](create-new-job-from-completed-job.md), or [job settings JSON](exporting-and-importing-jobs.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

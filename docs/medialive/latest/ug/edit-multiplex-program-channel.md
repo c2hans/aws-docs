@@ -52,3 +52,7 @@ In MediaLive, you can edit a channel that is idle.
 1. Stop the channel. You can stop the channel in the usual way, from the **Channels** pane. Or you can stop it from the **Multiplex** page. For more information, see [Stopping a channel in a multiplex](stop-multiplex.title.md#multiplex-channel-stopping).
 
 1. Edit the channel. For more information, see [Editing a channel](editing-deleting-channel.md#editing-a-channel).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ To allow your RDS for Oracle DB instance to read and write files on an EFS file 
 + Configure fine grain permissions.
 
 For example, to grant `other` users permissions to write to the EFS file system root, run `chmod 777` on this directory. For more information, see [Example Amazon EFS file system use cases and permissions](https://docs.aws.amazon.com/efs/latest/ug/accessing-fs-nfs-permissions.html#accessing-fs-nfs-permissions-ex-scenarios) in the *Amazon Elastic File System User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,3 +37,7 @@ RFDK provides [Docker](https://docs.docker.com/get-started/overview/) recipes fo
 We recommend that you learn the CDK and the CDK deployment workflow with [getting started with the AWS CDK](https://docs.aws.amazon.com/cdk/latest/guide/getting_started.html). If you want to have a more in-depth tour that includes setting up your development environment and learning how to work with the CDK, then we recommend the official [CDK Workshop](https://cdkworkshop.com/).
 
 You need to bootstrap your account using the CDK toolkit before you can deploy a CDK application into an AWS region. This needs to be done one time for each region that you want to deploy into using your account. Learn more about how to bootstrap your account from the official CDK documentation on [bootstrapping your AWS environment](https://docs.aws.amazon.com/cdk/latest/guide/cli.html#cli-bootstrap).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Render Farm Deployment Kit on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rfdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

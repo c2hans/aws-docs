@@ -20,3 +20,7 @@ Outbound calling enables you to initiate a call from the desktop client and web 
 All users with a Business Calling number and outbound calling enabled see the following banner after choosing **Dial a phone number**: **Amazon Chime is not a replacement for your telephone and can't be used for emergency calling outside the United States.**
 
 To use Amazon Chime Business Calling, your device must be connected to a network. If not, calls made by choosing **Dial** will not be completed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

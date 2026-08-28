@@ -61,3 +61,7 @@ The following are the service endpoints and service quotas for this service.
 | Deployments | Each supported Region: 300 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/launchwizard/quotas/L-067B0AC5)  | The maximum number of deployments that you can have in this account in the current Region. |
 | In-Progress Deployments | Each supported Region: 10 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/launchwizard/quotas/L-0DE2E185)  | The maximum number of in-progress deployments with a status of IN\_PROGRESS or DELETE\_IN\_PROGRESS in this account in the current Region. |
 | Settings Set | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/launchwizard/quotas/L-B644EE89)  | The maximum number of settings sets that you can create in this account in the current Region. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

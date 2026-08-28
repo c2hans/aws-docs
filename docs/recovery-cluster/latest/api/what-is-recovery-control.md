@@ -21,3 +21,7 @@ For more information about ARC, see the following:
 + You can set up readiness checks with ARC to ensure that your applications are scaled to handle failover traffic and configured so you can easily route around failures. For more information about the related API actions, see [Recovery Readiness API Reference Guide for Amazon Application Recovery Controller](https://docs.aws.amazon.com/recovery-readiness/latest/api/).
 + You can work with routing control states to reroute traffic for fail over. For more information about the related API actions, see [Routing Control API Reference Guide for Amazon Application Recovery Controller](https://docs.aws.amazon.com/routing-control/latest/APIReference/).
 + For more information about creating resilient applications and preparing for recovery readiness with ARC, see the [Amazon Application Recovery Controller Developer Guide](https://docs.aws.amazon.com/r53recovery/latest/dg/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query recovery-cluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

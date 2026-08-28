@@ -64,3 +64,7 @@ S3 Vectors integrates with other AWS services to enhance your vector processing 
 + **[Amazon OpenSearch Service](https://aws.amazon.com/opensearch-service/)** - Optimize vector storage costs while continuing to use OpenSearch API operations. This is ideal for workloads that need advanced search functionality such as hybrid search, aggregations, advanced filtering, and faceted search. You can also export a snapshot of an S3 vector index to Amazon OpenSearch Serverless for high QPS and low latency vector search.
 + **[Amazon Bedrock Knowledge Bases](https://aws.amazon.com/bedrock/knowledge-bases/)** - Select a vector index in S3 Vectors as your vector store to save on storage costs for retrieval augmented generation (RAG) applications.
 + **[Amazon Bedrock in SageMaker Unified Studio](https://aws.amazon.com/bedrock/unifiedstudio/)** - Develop and test knowledge bases using S3 Vectors as your vector store.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -112,3 +112,7 @@ All SAS data resides on a separate FSx for Windows File Server as persistent sto
 <a name="disaster-recovery"></a>
 
 The decoupling architecture in this guide is designed with disaster recovery in mind. Amazon FSx is deployed across two AWS Availability Zones. If the Availability Zone where the active FSx for Windows File Server resides become unavailable, then the service automatically fails over and provides the file sharing services from the second Availability Zone.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

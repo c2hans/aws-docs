@@ -30,3 +30,7 @@ When choosing which jobs to preempt, AWS Batch considers the number and type of 
 The default is for preempted jobs to be re-queued as `RUNNABLE` without limit. To limit the number of preemptions a job experiences, set `preemptionRetriesBeforeTermination` on job submission. When `preemptionRetriesBeforeTermination` is set to 0, jobs go to `FAILED` on their first preemption.
 
 A sliding window of recent preemption attempts is stored on the job, and visible via [DescribeServiceJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_DescribeServiceJob.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

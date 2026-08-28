@@ -24,3 +24,7 @@ To use the recipe:
 The recipe README includes step-by-step instructions for adapting it to your Unreal Engine version, including custom source builds.
 
 The samples repository also includes [unreal-engine-openjd](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/unreal-engine-openjd), which builds the Unreal Engine Open Job Description adaptor with rattler-build for Windows and Python 3.13.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

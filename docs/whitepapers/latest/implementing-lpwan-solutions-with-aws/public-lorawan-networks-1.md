@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
 +  [Connecting Your LoRaWAN Devices from The Things Stack to AWS IoT Core](https://aws.amazon.com/blogs/apn/connecting-your-lorawan-devices-from-the-things-stack-to-aws-iot-core/)
 +  [How to Connect Your LoRaWAN Devices to AWS IoT Core Using Actility ThingPark](https://aws.amazon.com/blogs/apn/how-to-connect-your-lorawan-devices-to-aws-iot-core-using-actility-thingpark/)
 +  [Connect your devices to AWS IoT using LoRaWAN](https://aws.amazon.com/blogs/iot/connect-your-devices-to-aws-iot-using-lorawan/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

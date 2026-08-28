@@ -18,3 +18,7 @@ Upon deployment, the guidance generates the following secrets in AWS Secrets Man
 
 **Note**
 Modifying the password in AWS Secrets Manager will not automatically change the user’s password. To update a user’s password, you must change the password using the Druid API and then update the password manually in AWS Secrets Manager.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Scalable Analytics Using Apache Druid on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

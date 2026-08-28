@@ -23,3 +23,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/saas-networ
 + [What is SaaS?](https://aws.amazon.com/what-is/saas/) (AWS website)
 + [AWS SaaS Factory Program](https://aws.amazon.com/partners/programs/saas-factory/?saas-factory-cards.sort-by=item.additionalFields.sortOrder&saas-factory-cards.sort-order=asc&awsf.saas-factory-featured=*all&awsf.saas-factory-role=*all&awsf.saas-factory-category=*all&awsf.saas-factory-content=*all&awsf.saas-factory-learning-level=*all) (AWS Partner program)
 + [Guidance for Multi-Tenant Architectures on AWS](https://aws.amazon.com/solutions/guidance/multi-tenant-architectures-on-aws/) (AWS Solutions Library)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

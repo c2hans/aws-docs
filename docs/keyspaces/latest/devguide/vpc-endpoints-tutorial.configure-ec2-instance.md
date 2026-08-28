@@ -107,3 +107,7 @@ The following steps assume that you're connecting to your Amazon EC2 instance fr
 1. To confirm that your VPC endpoint has been configured correctly, you have to use a `cqlsh` connection to Amazon Keyspaces. If you use your local environment or the Amazon Keyspaces CQL editor in the AWS Management Console, the connection automatically goes through the public endpoint instead of your VPC endpoint. To use `cqlsh` to test your VPC endpoint connection in this tutorial, complete the setup instructions in [Using `cqlsh` to connect to Amazon Keyspaces](programmatic.cqlsh.md).
 
 You are now ready to create a dual-stack VPC endpoint for Amazon Keyspaces.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

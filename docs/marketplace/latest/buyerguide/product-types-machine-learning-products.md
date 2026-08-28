@@ -40,3 +40,7 @@ The following diagram shows the workflow for using algorithm products.
 1. In SageMaker AI, you can then deploy the inference component of the product using those generated model artifacts to perform inference (or prediction) in real time or in batches.
 
 ![Diagram of how a buyer uses a SageMaker AI algorithm from AWS Marketplace.](http://docs.aws.amazon.com/marketplace/latest/buyerguide/images/buyer-ml-algorithm.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

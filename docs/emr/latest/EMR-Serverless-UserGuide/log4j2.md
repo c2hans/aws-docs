@@ -173,3 +173,7 @@ The following Log4j2.x properties are not configurable for Spark processes:
 + `appender.console.layout.pattern`
 
 For detailed information about the Log4j2.x properties that configure, refer to the [`log4j2.properties.template` file](https://github.com/apache/spark/blob/v3.3.0/conf/log4j2.properties.template) on GitHub.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

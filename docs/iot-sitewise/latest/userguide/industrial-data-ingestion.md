@@ -14,3 +14,7 @@ You can send industrial data to AWS IoT SiteWise using any of the following opti
 + **AWS IoT Greengrass stream manager**–Use [AWS IoT Greengrass stream manager](greengrass-stream-manager.md) to upload data from local data sources using an edge device. This option caters to situations where data originates from on-premises or edge locations.
 
 These methods offer a range of solutions for managing data from different sources. Delve into the details of each option to gain a comprehensive understanding of the data ingestion capabilities AWS IoT SiteWise provides.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -251,3 +251,7 @@ Learn more about [AWS Elastic Disaster Recovery roles and managed policies](secu
 Once the policies are attached to the roles, run the `aws drs initialize-service ` command. This automatically creates the service-linked role (**AWSServiceRoleForElasticDisasterRecovery**), creates instance profiles, adds roles to instance profiles, and finishes service initialization.
 
 Learn more about [AWS Elastic Disaster Recovery roles and managed policies](security-iam-awsmanpol.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

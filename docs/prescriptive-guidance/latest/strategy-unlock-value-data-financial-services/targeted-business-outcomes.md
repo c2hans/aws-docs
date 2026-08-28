@@ -21,3 +21,7 @@ The collaboration provides the following:
 + The ability to access and share data more easily and consistently across your organization
 + A modern toolset based on an on-demand managed architecture that can minimize compute requirements, drive down costs, and enable sustainable ML development and operations, with the flexibility to accommodate new AWS products and services to meet ongoing use case and compliance requirements
 + Adoption, engagement, and training support that enables data science and engineering teams across your organization to be self-sufficient and scale ML products across your organization
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

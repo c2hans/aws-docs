@@ -8,7 +8,6 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/logging-m
 Monitoring is an important part of maintaining the reliability, availability, and performance of AWS Security Agent and your other AWS solutions. AWS provides the following monitoring tools to watch AWS Security Agent, report when something is wrong, and take automatic actions when appropriate:
 +  **AWS CloudTrail** captures API calls and related events made by or on behalf of your AWS account and delivers the log files to an Amazon S3 bucket that you specify. You can identify which users and accounts called AWS, the source IP address from which the calls were made, and when the calls occurred. For more information, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/).
 +  **Amazon CloudWatch** monitors your AWS resources and the applications you run on AWS in real time. You can collect and track metrics, create customized dashboards, and set alarms that notify you or take actions when a specified metric reaches a threshold that you specify. For more information, see the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/).
-+  **Amazon EventBridge** is a serverless event bus service that makes it easy to connect your applications with data from a variety of sources. EventBridge delivers a stream of real-time data from your own applications, Software-as-a-Service (SaaS) applications, and AWS services and routes that data to targets. For more information, see the [Amazon EventBridge User Guide](https://docs.aws.amazon.com/eventbridge/latest/userguide/).
 
 ## Logging AWS Security Agent API calls with AWS CloudTrail
 <a name="_logging_aws_security_agent_api_calls_with_aws_cloudtrail"></a>
@@ -185,117 +184,6 @@ For example, you can create an alarm that monitors the number of critical findin
 
 1. Choose **Create alarm**.
 
-## Monitoring with Amazon EventBridge
-<a name="_monitoring_with_amazon_eventbridge"></a>
+## See also
 
-Amazon EventBridge enables you to automate your AWS services and respond automatically to system events such as application availability issues or resource changes. Events from AWS services are delivered to EventBridge in near real time. You can write simple rules to indicate which events are of interest to you, and what automated actions to take when an event matches a rule.
-
-AWS Security Agent sends events to EventBridge when:
-+ A penetration test execution completes
-+ Critical or high severity findings are discovered
-+ A code review or design review completes
-+ A security requirement is violated
-
-### AWS Security Agent event examples
-<a name="_aws_security_agent_event_examples"></a>
-
-The following example shows an event that AWS Security Agent sends to EventBridge when a penetration test execution completes:
-
-```
-{
-    "version": "0",
-    "id": "12345678-1234-1234-1234-123456789012",
-    "detail-type": "Security Agent Pentest Execution Status Change",
-    "source": "aws.securityagent",
-    "account": "123456789012",
-    "time": "2025-01-15T12:00:00Z",
-    "region": "us-east-1",
-    "resources": [
-        "arn:aws:securityagent:us-east-1:123456789012:pentest/pt-1234567890abcdef0"
-    ],
-    "detail": {
-        "pentestId": "pt-1234567890abcdef0",
-        "executionId": "exec-abcdef1234567890",
-        "status": "COMPLETED",
-        "findingsCount": 15,
-        "criticalFindings": 2,
-        "highFindings": 5,
-        "mediumFindings": 6,
-        "lowFindings": 2,
-        "startTime": "2025-01-15T11:00:00Z",
-        "endTime": "2025-01-15T12:00:00Z"
-    }
-}
-```
-
-The following example shows an event that AWS Security Agent sends when critical findings are discovered:
-
-```
-{
-    "version": "0",
-    "id": "23456789-2345-2345-2345-234567890123",
-    "detail-type": "Security Agent Critical Finding Detected",
-    "source": "aws.securityagent",
-    "account": "123456789012",
-    "time": "2025-01-15T11:30:00Z",
-    "region": "us-east-1",
-    "resources": [
-        "arn:aws:securityagent:us-east-1:123456789012:finding/finding-1234567890"
-    ],
-    "detail": {
-        "findingId": "finding-1234567890",
-        "severity": "CRITICAL",
-        "title": "SQL Injection Vulnerability Detected",
-        "description": "A SQL injection vulnerability was found in the login endpoint",
-        "affectedResource": "https://example.com/api/login",
-        "pentestId": "pt-1234567890abcdef0",
-        "executionId": "exec-abcdef1234567890",
-        "detectionTime": "2025-01-15T11:30:00Z"
-    }
-}
-```
-
-### Creating EventBridge rules for AWS Security Agent
-<a name="_creating_eventbridge_rules_for_aws_security_agent"></a>
-
-You can create EventBridge rules to automatically respond to AWS Security Agent events. For example, you can create a rule that sends a notification to your security team when critical findings are detected.
-
-To create an EventBridge rule:
-
-1. Open the EventBridge console at https://console.aws.amazon.com/events/.
-
-1. In the navigation pane, choose **Rules**.
-
-1. Choose **Create rule**.
-
-1. Enter a name and description for the rule.
-
-1. For **Event bus**, choose **default**.
-
-1. For **Rule type**, choose **Rule with an event pattern**.
-
-1. Choose **Next**.
-
-1. For **Event source**, choose **AWS events or EventBridge partner events**.
-
-1. For **Event pattern**, choose **Custom pattern** and enter your event pattern.
-
-1. Choose **Next**.
-
-1. Select a target for the rule (such as an SNS topic or Lambda function).
-
-1. Choose **Next**.
-
-1. Review the rule configuration and choose **Create rule**.
-
-Example event pattern to match critical findings:
-
-```
-{
-    "source": ["aws.securityagent"],
-    "detail-type": ["Security Agent Critical Finding Detected"],
-    "detail": {
-        "severity": ["CRITICAL"]
-    }
-}
-```
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

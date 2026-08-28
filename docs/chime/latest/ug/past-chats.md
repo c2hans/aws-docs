@@ -37,3 +37,7 @@ Your contacts list may not display some of your past contacts. For example, a co
 
 **Note**
 The number of past contacts and messages varies, depending on your company's data retention policy. For more information about your company's policy, contact your manager or IT administrator.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

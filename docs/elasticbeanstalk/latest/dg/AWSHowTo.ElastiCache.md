@@ -18,3 +18,7 @@ Amazon ElastiCache is a web service that enables setting up, managing, and scali
    + For more information on Memcached, go to [Authorize Access](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/GettingStarted.AuthorizeAccess.html) in the *ElastiCache for Memcached User Guide*.
 
 You can use configuration files to customize your Elastic Beanstalk environment to use ElastiCache. For configuration file examples that integrate ElastiCache with Elastic Beanstalk, see [Example: ElastiCache](customize-environment-resources-elasticache.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

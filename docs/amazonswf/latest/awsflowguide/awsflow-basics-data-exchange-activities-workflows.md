@@ -38,3 +38,7 @@ There are some circumstance where a workflow worker needs to create a `Promise<T
 <a name="awsflow-basics-data-exchange-activities-workflows.data"></a>
 
 The AWS Flow Framework marshals data across the internet by using a data converter. By default, the framework uses a data converter that is based on the [Jackson JSON processor](https://github.com/codehaus/jackson). However, this converter has some limitations. For example, it can't marshal maps that don't use strings as keys. If the default converter isn't sufficient for your application, you can implement a custom data converter. For details, see [DataConverters](dataconverters.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

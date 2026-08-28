@@ -13,3 +13,7 @@ When choosing an AWS Region for your matchmaker, consider how location might imp
 + Place a matchmaker in an location that is close to your players and your client service that sends FlexMatch matchmaking requests. This approach decreases the latency effect on your matchmaking request workflow and makes it more efficient.
 + If your game reaches a global audience, consider creating matchmakers in multiple locations and routing match requests to the matchmaker that is closest to the player. In addition to boosting efficiency, this causes ticket pools to form with players who are geographically near each other, which improves the matchmaker's ability to match players based on latency requirements.
 + When using FlexMatch with Amazon GameLift Servers managed hosting, place your matchmaker and the game session queue that it uses in the same location. This helps to minimize communication latency between the matchmaker and queue.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

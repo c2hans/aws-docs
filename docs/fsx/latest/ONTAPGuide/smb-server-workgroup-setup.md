@@ -30,3 +30,7 @@ The following procedures take you through the process of setting up an SMB serve
 + [Creating a local user account on the SMB server](smb-workgroup-create-local-accounts.md)
 + [Creating local groups on the SMB server](smb-workgroup-create-local-groups.md)
 + [Adding local users to the local group](smb-workgroup-add-users-to-group.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

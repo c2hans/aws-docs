@@ -37,3 +37,7 @@ The following tables show the format of the URLs on the different types of upstr
 | --- | --- |
 | Format of URL | s3ssl://{{<bucket>}}/{{<path>}}/{{<filename>}}.mp4 |
 | Example | `s3ssl://amzn-s3-demo-bucket/filler-videos/main/oceanwaves.mp4` <br />`s3ssl://amzn-s3-demo-bucket/filler-videos/redundant/oceanwaves.mp4`<br />With MediaLive, the S3 bucket name must not use dot notation, which means it mustn't use . (dot) between the words in a name. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

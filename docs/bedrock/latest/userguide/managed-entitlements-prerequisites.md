@@ -26,3 +26,7 @@ Service-linked roles (SLRs) are predefined IAM roles that are linked directly to
 **Why SLRs are required**: For AWS Marketplace, this permission is required so that the service can successfully orchestrate license workflows and distributions across multiple AWS services on your behalf. For AWS License Manager, this permission enables the service to auto-accept grants between management and member accounts in an all-features-enabled organization and to track organization activity.
 
 You will create these service-linked roles as part of the setup process described in the next section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

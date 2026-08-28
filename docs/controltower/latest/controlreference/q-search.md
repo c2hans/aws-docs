@@ -31,3 +31,7 @@ Digital Sovereignty: AWS Control Tower offers preventive controls that enhance d
 **Management**: You can view and manage these controls in the AWS Control Tower console, including a dedicated group for digital sovereignty-related controls
 **Exceptions**: It's important to note that the root user and administrators in the management account have exceptions to these controls to prevent the account from becoming unusable.
 When implementing preventive controls, it's crucial to follow the principle of least privilege and regularly review your control settings to ensure they align with your organization's security and compliance requirements. For the most up-to-date information on available controls and their specific functionalities, please refer to the official AWS Control Tower documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

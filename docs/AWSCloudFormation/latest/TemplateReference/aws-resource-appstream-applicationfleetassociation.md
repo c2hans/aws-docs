@@ -63,3 +63,7 @@ The name of the fleet.
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns a combination of the `FleetName` and `ApplicationArn`, such as `aabcdefgFleet|arn:aws:appstream:us-west-2:123456789123:application/abcdefg`.
 
 For more information about using the `Ref` function, see [Ref](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/intrinsic-function-reference-ref.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

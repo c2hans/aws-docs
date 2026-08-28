@@ -78,6 +78,7 @@ The following example shows a policy that only allows requests coming from a spe
 
 ```
 {
+    "Version": "2012-10-17",
     "Statement": [
         {
             "Action": "aps:*",
@@ -89,10 +90,14 @@ The following example shows a policy that only allows requests coming from a spe
                     "aws:VpcSourceIp": "192.0.2.123"
                 },
         "StringEquals": {
-                    "aws:SourceVpc": "vpc-555555555555"
+                    "aws:SourceVpc": "vpc-0123456789abcdef0"
                 }
             }
         }
     ]
 }
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Service for Prometheus. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prometheus` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

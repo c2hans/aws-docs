@@ -31,3 +31,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/getting-started
 + **[Antenna Downlink Demod Decode Config](how-it-works.config.md#how-it-works.config-antenna-downlink-demod-decode)** - Deliver demodulated and decoded radio frequency data.
 + **[Antenna Uplink Config](how-it-works.config.md#how-it-works.config-antenna-uplink)** - Uplink data to your satellite.
 + **[Antenna Uplink Echo Config](how-it-works.config.md#how-it-works.config-antenna-uplink-echo)** - Deliver an echo of your uplink signal data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -289,3 +289,7 @@ View details about updates to AWS managed policies for AWS AppSync since this se
 | [AWSAppSyncSchemaAuthor](#security-iam-awsmanpol-AWSAppSyncSchemaAuthor) - Update to an existing policy | Added an `EvaluateCode` policy action to allow users to evaluate code with a runtime and context. | February 7, 2023 |
 | [AWSAppSyncSchemaAuthor](#security-iam-awsmanpol-AWSAppSyncSchemaAuthor) - Update to an existing policy | Added policy actions to allow the list, get, create, update, and delete functions for an API.<br />Added an `EvaluateMappingTemplate` policy action to allow users to evaluate request and response resolver mapping template logic.<br />Added policy actions to allow resource tagging. | August 25, 2022 |
 | AWS AppSync started tracking changes | AWS AppSync started tracking changes for its AWS managed policies. | August 25, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

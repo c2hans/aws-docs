@@ -34,3 +34,7 @@ Before you can transfer data from an ODP provider, you must meet the following r
   + `https://<region>.console.aws.amazon.com/gluestudio/oauth`, replacing `<region>` with the region where AWS Glue is running, example: us-east-1.
   + You must enable secure setup for connecting over HTTPS.
 + You must provide required authorization for the user in SAP to discover the services and extract data using SAP OData services. Please refer to the security documentation provided by SAP.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

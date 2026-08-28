@@ -40,3 +40,7 @@ GRANT ROLE operator to sample_user;
 ```
 
 If you’re using roles to control metadata security, you have access to all of the system views and functions that come with role-based access control. For example, you can query the [ SVV\_ROLES](https://docs.aws.amazon.com/redshift/latest/dg/r_SVV_ROLES.html) view to see all roles. To see if a user is a member of a role or group, use the [USER\_IS\_MEMBER\_OF ](https://docs.aws.amazon.com/redshift/latest/dg/r_USER_IS_MEMBER_OF.html) function. For a full list of SVV views, see [ SVV metadata views](https://docs.aws.amazon.com/redshift/latest/dg/svv_views.html). For a list of system information functions, see [ System information functions](https://docs.aws.amazon.com/redshift/latest/dg/r_System_information_functions.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,3 +31,7 @@ A machine learning product in AWS Marketplace consists of one or more software v
 | Restricted | To prevent new users from subscribing to your product, you can restrict it by updating the visibility settings. A Restricted status allows existing allowlisted users to continue using the product, but it will no longer be visible to the public or available to new users. |
 
  For more information or support, contact the [AWS Marketplace Seller Operations team](https://aws.amazon.com/marketplace/management/contact-us/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

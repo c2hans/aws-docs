@@ -55,3 +55,7 @@ Your configured HELP response message, STOP response message, opt-in confirmatio
 Most agent details fields are auto-populated from your testing agent configuration. Review and adjust them for the target country if needed (for example, localized descriptions or country-specific contact information).
 
 After you submit the registration, the carrier review proceeds through the standard approval workflow. No additional action is required from you unless the registration enters the REQUIRES\_UPDATES state. For general compliance guidance, see [RCS country launch compliance guide](rcs-country-launch-compliance.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

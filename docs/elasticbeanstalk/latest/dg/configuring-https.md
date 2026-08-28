@@ -33,3 +33,7 @@ The [Does it have Snakes?](https://github.com/awslabs/eb-tomcat-snakes) sample a
 + [Configuring end-to-end encryption in a load-balanced Elastic Beanstalk environment](configuring-https-endtoend.md)
 + [Configuring your environment's load balancer for TCP Passthrough](https-tcp-passthrough.md)
 + [Configuring HTTP to HTTPS redirection](configuring-https-httpredirect.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

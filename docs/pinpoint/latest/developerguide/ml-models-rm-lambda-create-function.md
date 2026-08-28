@@ -265,3 +265,7 @@ Continuing with the earlier example of input event data, the updated endpoint de
 ```
 
 In the preceding example, the function modified the `Endpoints` object that it received and returned the results. The `Endpoint` object for each endpoint now contains a new `Recommendations` object, which contains `Title` and `Genre` fields. Each of these fields stores an ordered array of three values (as strings), where each value provides enhanced content for a corresponding recommended item in the `RecommendationItems` field.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ After you identify and document which applications will migrate and their requir
   + Identify which SNAT pools should be replaced with F5 SNAT Automap.
 
 You should also consider consulting [AWS Partners](https://partners.amazonaws.com/partners/001E000000Rl12PIAR/F5%20Networks) or the F5 Professional Services team. This will help ensure a high probability of a successful migration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

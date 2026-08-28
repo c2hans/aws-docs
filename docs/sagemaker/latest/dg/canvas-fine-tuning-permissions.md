@@ -102,3 +102,7 @@ To configure the IAM role and grant permissions to fine-tune foundation models i
 1. Choose **Update policy**.
 
 You should now have an IAM role that has the [ AmazonSageMakerCanvasBedrockAccess](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonSageMakerCanvasBedrockAccess.html) policy attached and a trust relationship with Amazon Bedrock. For information about AWS managed policies, see [Managed policies and inline policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-vs-inline.html) in the *IAM User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

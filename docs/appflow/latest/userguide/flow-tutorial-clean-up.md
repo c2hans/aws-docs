@@ -67,3 +67,7 @@ If you used Salesforce for this tutorial and uploaded the sample data from an S3
 + Follow the directions in [Mass delete records](https://help.salesforce.com/s/articleView?id=sf.admin_massdelete.htm).
 
 After you complete these steps, you have cleaned up all of the resources that you created in this tutorial. Deleted resources no longer incur charges on your AWS account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

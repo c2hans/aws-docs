@@ -69,3 +69,7 @@ In some cases, you might have more than one Contact Center platform requiring te
 + If Connect Customer is the primary call handling platform, you can port or claim numbers. You will design your flows to transfer calls to the other platform on a telephone number you will provide in the flow.
 + If the external platform is the primary call handler, you will need to configure that platform to forward calls to a number you claim in Connect Customer. Choose either a toll-free number, which will give you better redundancy and capacity at an increased cost, or a bank of DID numbers to terminate the call into Connect Customer.
 + For the use case, we recommend that you engage AWS Solution Architecture support to ensure your contact center is well-architected to achieve the best possible outcomes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

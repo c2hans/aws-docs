@@ -90,3 +90,7 @@ The following procedure show you how to create an instance of `ProcessingJob` an
 To monitor the progress of your processing job, the `ProcessingJobs` class supports a [`describe`](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) method. This method returns a response from the `DescribeProcessingJob` API call. To learn more, see [`DescribeProcessingJob` in the *Amazon SageMaker AI API Reference*](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeProcessingJob.html).
 
 The next topic show you how to create an instance of the `ProcessingJob` class using the SageMaker geospatial container, and then how to use it to calculate the Normalized Difference Vegetation Index (NDVI) with Sentinel-2 images.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

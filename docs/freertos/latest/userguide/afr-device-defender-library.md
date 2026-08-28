@@ -30,3 +30,7 @@ The AWS IoT Device Defender library can be freely used and is distributed under 
   <tr><td><b>Total estimates</b></td><td><b>1.1K</b></td><td><b>0.6K</b></td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

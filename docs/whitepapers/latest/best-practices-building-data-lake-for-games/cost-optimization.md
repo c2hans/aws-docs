@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-buildi
     +  Avoid cross-Region costs unless your business case requires it.
     +  [Create a data transfer cost analysis dashboard](https://wellarchitectedlabs.com/cost/200_labs/200_cloud_intelligence/) to be strategic in managing your capacity and usage.
 +  **Cost calculation tools** — For a more detailed calculation of monthly costs on AWS, refer to the [AWS Pricing Calculator.](https://calculator.aws/) For existing infrastructure on your AWS account, refer to [AWS Cost Management Console](https://console.aws.amazon.com/cost-management) in your AWS Management Console for a detailed analysis on your usage (sign-in required). Subscribe to your [Trusted Advisor reports](https://console.aws.amazon.com/trustedadvisor) in your AWS account for cost optimization checks that can save you money (sign-in required). For example, you might have unused resources in your AWS account that can be deleted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

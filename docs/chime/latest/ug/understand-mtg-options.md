@@ -36,3 +36,7 @@ After you select a meeting ID, you choose whether to allow other external attend
 
 **Note**
 Attendees from your company can always join your meetings. Invited attendees can also join, but they must sign in to Amazon Chime using the email address in the meeting invite. Also, you must add **meet@chime.aws** as a meeting attendee. For more information, see [Using auto-call](chime-scheduling-best-practices.md#autocall).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,28 +54,33 @@ Dates with only a month and a year are approximate, and will be updated with the
 
 | PostgreSQL minor engine version | Community release date | RDS release date | RDS end of standard support date |
 | --- | --- | --- | --- |
+| 18.6 | August 13, 2026 | August 25, 2026 | September 2027 |
 | 18.4 | 14 May 2026 | 14 May 2026 | September 2027 |
 | 18.3 | 26 February 2026 | 27 February 2026 | March 2027 |
 | 18.2\*\* | 12 February 2026 | 12 February 2026 | March 2027 |
 | 18.1 | 13 November 2025 | 14 November 2025 | March 2027 |
+| 17.11 | August 13, 2026 | August 25, 2026 | September 2027 |
 | 17.10 | 14 May 2026 | 14 May 2026 | September 2027 |
 | 17.9 | 26 February 2026 | 27 February 2026 | March 2027 |
 | 17.8\*\* | 12 February 2026 | 12 February 2026 | March 2027 |
 | 17.7 | 13 November 2025 | 13 November 2025 | March 2027 |
 | 17.6 | 14 August 2025 | 14 August 2025 | 31 October 2026 |
 | 17.5 | 08 May 2025 | 08 May 2025 | 31 October 2026 |
+| 16.15 | August 13, 2026 | August 25, 2026 | September 2027 |
 | 16.14 | 14 May 2026 | 14 May 2026 | September 2027 |
 | 16.13 | 26 February 2026 | 27 February 2026 | March 2027 |
 | 16.12\*\* | 12 February 2026 | 12 February 2026 | March 2027 |
 | 16.11 | 13 November 2025 | 13 November 2025 | March 2027 |
 | 16.10 | 14 August 2025 | 14 August 2025 | 31 October 2026 |
 | 16.9 | 08 May 2025 | 08 May 2025 | 31 October 2026 |
+| 15.19 | August 13, 2026 | August 25, 2026 | September 2027 |
 | 15.18 | 14 May 2026 | 14 May 2026 | September 2027 |
 | 15.17 | 26 February 2026 | 27 February 2026 | March 2027 |
 | 15.16\*\* | 12 February 2026 | 12 February 2026 | March 2027 |
 | 15.15 | 13 November 2025 | 13 November 2025 | March 2027 |
 | 15.14 | 14 August 2025 | 14 August 2025 | 31 October 2026 |
 | 15.13 | 08 May 2025 | 08 May 2025 | 31 October 2026 |
+| 14.24 | August 13, 2026 | August 25, 2026 | February 28, 2027 |
 | 14.23 | 14 May 2026 | 14 May 2026 | 28 February 2027 |
 | 14.22 | 26 February 2026 | 27 February 2026 | 28 February 2027 |
 | 14.21\*\* | 12 February 2026 | 12 February 2026 | 28 February 2027 |
@@ -112,3 +117,7 @@ Dates with only a month and a year are approximate, and will be updated with the
 | 11.22-rds.20250220\* | Not applicable | 3 April 2025 | 31 October 2026 |
 
 \* PostgreSQL Community retired major versions 11, 12, and 13 and won't be releasing new minor versions. Amazon RDS released this minor version with critical security patches and bug fixes for PostgreSQL databases that are covered under Amazon RDS Extended Support. For more information about these minor versions, see [Amazon RDS Extended Support updates](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-extendedsupport.html). For more information about Amazon RDS Extended Support, see [Using Amazon RDS Extended Support](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/extended-support.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

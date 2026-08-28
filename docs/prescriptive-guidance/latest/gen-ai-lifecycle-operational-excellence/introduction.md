@@ -26,3 +26,7 @@ The recommendations in this guide can help you achieve the following:
 + Build trust through proper validation mechanisms, ethical use practices, and control systems that promote compliance and responsible AI deployment.
 + Monitor and maintain generative AI applications in production.
 + Transform AI prototypes into scalable, production-ready systems.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ To view the data replication progress, open the filtering menu and return to the
 You now only see your replicating source servers. You can follow the launch process on the main **Source servers** view.
 
 Once the VM has reached the **Ready for testing** state under **Migration lifecycle**, you can continue to [launch test and cutover instances](launching-test-servers.md) and perform all other regular MGN operations on the server.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

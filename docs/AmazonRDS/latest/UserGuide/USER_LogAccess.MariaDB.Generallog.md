@@ -34,3 +34,7 @@ To work with the logs from the Amazon RDS console, Amazon RDS API, Amazon RDS CL
 For more information about the slow query and general logs, go to the following topics in the MariaDB documentation:
 + [Slow query log](http://mariadb.com/kb/en/mariadb/slow-query-log/)
 + [General query log](http://mariadb.com/kb/en/mariadb/general-query-log/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,3 +51,7 @@ Use the **Priority** option in `execution mode = manual` change types to alert A
 **Priority** option in `execution mode = manual`:
 
 Specify the priority of a manual RFC as **High**, **Medium**, or **Low**. RFCs classified as **High** are reviewed and approved prior to RFCs classified as **Medium**, subject to RFC service level objectives (SLOs) and their submission times. RFCs with **Low** priority or no priority specified are processed in the order they are submitted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

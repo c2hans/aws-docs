@@ -20,6 +20,16 @@ Subscribe to the RSS feed to get notified about new releases automatically: [clo
 
 The highlights below cover notable releases from the past year, most recent first.
 
+## CID Data Collection v3.14.8: refactored Service Quotas module (August 26, 2026)
+<a name="whats-new-cid-data-collection-31408"></a>
++  **Native quota utilization API** — the Service Quotas module now uses the native Service Quotas utilization API to retrieve quota values and usage, improving accuracy and reliability of the collected data.
++  **Parallel regional processing** — quotas are now collected across regions in parallel, significantly reducing collection time.
++  **Collect all quotas** — improved logic now collects all quotas rather than only those with applied quota changes, giving broader visibility into quota utilization.
+
+See [CID Data Collection](data-collection.md).
+
+View the [changelog entry](https://github.com/aws-solutions-library-samples/cloud-intelligence-dashboards-data-collection/releases/tag/3.14.8).
+
 ## cid-cmd v4.4.17: merge taxonomy fields and account mapping (August 14, 2026)
 <a name="whats-new-cid-cmd-4417"></a>
 +  **Merge taxonomy fields into a single dimension** (since v4.4.16) — combine several sources that represent the same business dimension (a resource tag, an IAM principal tag, an account tag, or an `account_map` column) into one dashboard filter and Group By field. The merged column takes the first non-empty value (COALESCE) and is applied as an Amazon Quick calculated field, with no Athena view changes. It is also a simple way to normalize inconsistent tag keys, such as `application` and `app`.
@@ -235,3 +245,7 @@ For the complete release history of each dashboard, see its changelog on GitHub.
 <a name="whats-new-feedback-support"></a>
 
 Follow [Feedback & Support](feedback-support.md) guide
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

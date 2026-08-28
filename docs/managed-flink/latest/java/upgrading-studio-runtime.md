@@ -66,3 +66,7 @@ Follow this process if you are using SQL or Python and using external dependenci
 **Process flow for upgrading with external dependencies**
 
 ![The following diagram represents the recommended workflow to upgrade your notebook with external dependencies..](http://docs.aws.amazon.com/managed-flink/latest/java/images/MSF-Studio-upgrade-with-dependencies.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

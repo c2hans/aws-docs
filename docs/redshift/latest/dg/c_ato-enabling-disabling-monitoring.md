@@ -65,3 +65,7 @@ The system view `SVL_AUTO_WORKER_ACTION` shows an audit log of all actions taken
 The system view `SVV_TABLE_INFO` lists all of the tables in the system, along with a column to indicate whether the sort key and distribution style of the table is set to `AUTO`.
 
 For more information about these system views, see [System monitoring (provisioned only)](c_intro_system_views.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ The following metrics report information on read and write operations between th
 | `RepositoryMetadataReadFail` | The rate of file and directory metadata failing to be read into the cache from its linked data repositories.<br />If you have high metadata read failures, check the connectivity to the linked data repository and share the workload. |
 | `RepositoryMetadataReadNotFound` | The rate at which cache is looking up the data repository for paths that don't exist. |
 | `RepositoryOperationsInProgress` | The number of read and write operations (including metadata operations) on data repositories that are in progress. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

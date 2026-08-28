@@ -41,3 +41,7 @@ In the final step of this Amazon Kinesis Agent for Microsoft Windows [tutorial](
 
 1. Select the text for the second `SELECT` statement, and then choose **Run query**. This displays only the rows in the table that represent log records with an `Error`-level severity. This kind of query finds interesting log records from a potentially large set of log records.
 ![Screenshot demonstrating how to query for specific kinds of records in Athena.](http://docs.aws.amazon.com/kinesis-agent-windows/latest/userguide/images/athena-second-query.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Agent for Windows. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesis-agent-windows` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

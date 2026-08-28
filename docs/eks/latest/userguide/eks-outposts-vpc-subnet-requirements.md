@@ -70,3 +70,7 @@ Creating endpoints incurs charges. For more information, see [AWS PrivateLink pr
 You can create a VPC that meets the previous requirements using one of the following AWS CloudFormation templates:
 +  ** [Template 1](https://s3.us-west-2.amazonaws.com/amazon-eks/cloudformation/2022-09-20/amazon-eks-local-outposts-vpc-subnet.yaml) ** – This template creates a VPC with one private subnet on the Outpost and one public subnet in the AWS Region. The private subnet has a route to the internet through a NAT Gateway that resides in the public subnet in the AWS Region. This template can be used to create a local cluster in a subnet with egress internet access.
 +  ** [Template 2](https://s3.us-west-2.amazonaws.com/amazon-eks/cloudformation/2023-03-20/amazon-eks-local-outposts-fully-private-vpc-subnet.yaml) ** – This template creates a VPC with one private subnet on the Outpost and the minimum set of VPC Endpoints required to create a local cluster in a subnet that doesn’t have ingress or egress internet access (also referred to as a private subnet).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

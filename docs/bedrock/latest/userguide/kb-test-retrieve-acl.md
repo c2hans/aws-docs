@@ -53,3 +53,7 @@ If ACL-aware retrieval returns no results or unexpected results, the cause is us
 + [Confluence](kb-managed-ds-confluence-acl.md#kb-managed-ds-confluence-acl-troubleshooting)
 + [Amazon S3](kb-managed-ds-s3-acl.md#kb-managed-ds-s3-acl-troubleshooting)
 + [Custom](kb-managed-ds-custom-acl.md#kb-managed-ds-custom-acl-troubleshooting)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

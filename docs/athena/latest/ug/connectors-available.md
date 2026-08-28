@@ -128,3 +128,7 @@ Be aware of the following limitations when using case resolver modes:
 
 **Note**
 The [AthenaJdbcConnector](https://serverlessrepo.aws.amazon.com/applications/us-east-1/292517598671/AthenaJdbcConnector) (latest version 2022.4.1) has been deprecated. Instead, use a database-specific connector like those for [MySQL](connectors-mysql.md), [Redshift](connectors-redshift.md), or [PostgreSQL](connectors-postgresql.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

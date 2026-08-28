@@ -60,3 +60,7 @@ To review these settings in JSON format, choose **Details**.
 This section appears in the panel if tags are assigned to the job. It lists those tags. A *tag* is a label that you define and assign to certain types of AWS resources. Each tag consists of a required tag key and an optional tag value. To learn more, see [Tagging Macie resources](tagging-resources.md).
 
 To review and save the job's settings in JSON format, choose the unique identifier for the job (**Job ID**) at the top of the panel. Then choose **Download**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

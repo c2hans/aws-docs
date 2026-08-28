@@ -93,3 +93,7 @@ query_statement
 create external schema schema_spectrum_uddh\nfrom data catalog\ndatabase 'spectrum_db_uddh'\niam_role ''\ncreate external database if not exists;
 CREATE EXTERNAL TABLE schema_spectrum_uddh.soccer_league\n(\n  league_rank smallint,\n  prev_rank   smallint,\n  club_name   varchar(15),\n  league_name varchar(20),\n  league_off  decimal(6,2),\n  league_def  decimal(6,2),\n  league_spi  decimal(6,2),\n  league_nspi smallint\n)\nROW FORMAT DELIMITED \n    FIELDS TERMINATED BY ',' \n    LINES TERMINATED BY '\\n\\l'\nstored as textfile\nLOCATION 's3://mybucket-spectrum-uddh/'\ntable properties ('skip.header.line.count'='1');
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

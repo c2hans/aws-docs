@@ -36,3 +36,7 @@ You can see how the terms spoken in source audio correspond to the transcription
 | Respiration 17 | R 17 | Patient vitals were P 80, R 17,... |
 | in and out | I/O | Patient was I/O sinus rhythm |
 | L five | L5 | Lumbar puncture was performed between L4 and L5 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

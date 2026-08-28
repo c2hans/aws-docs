@@ -24,3 +24,7 @@ A required field, **Review owner**, was added to allow you to easily identify th
 The first time you view a workload that was defined before this field was added, you are notified of this change. Choose **Edit** to set the **Review owner** field and no further action is required.
 Choose **Acknowledge** to defer setting the **Review owner** field. For the next 60 days, a banner is displayed to remind you that the field is blank. To remove the banner, edit your workload and specify a **Review owner**.
 If you do not set the field by the specified date, your access to the workload is restricted. You can continue to view the workload and delete it, but you cannot edit it, except to set the **Review owner** field. Shared access to the workload is not affected while your access is limited.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -99,3 +99,7 @@ The following table describes important changes to the documentation prior to Ju
 | Topic update | More information about AWS Key Management Service permissions has been added to the [AWS KMS and encryption](encryption.md) and the Access Permissions Reference topics. | July 17, 2015 |
 | Topic update | Another section has been added to [Troubleshooting](troubleshooting.md) with information about troubleshooting issues with AWS Key Management Service. | July 10, 2015 |
 | Initial release | This is the initial release of the *CodeCommit User Guide*. | July 9, 2015 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

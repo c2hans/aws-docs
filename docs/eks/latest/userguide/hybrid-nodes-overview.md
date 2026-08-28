@@ -46,3 +46,7 @@ EKS Hybrid Nodes has the following high-level features:
 +  [** AWS re:Invent: EKS Hybrid Nodes**](https://www.youtube.com/watch?v=ZxC7SkemxvU): AWS re:Invent session introducing the EKS Hybrid Nodes launch with a customer showing how they are using EKS Hybrid Nodes in their environment.
 +  [** AWS re:Post: Cluster networking for EKS Hybrid Nodes**](https://repost.aws/articles/ARL44xuau6TG2t-JoJ3mJ5Mw/unpacking-the-cluster-networking-for-amazon-eks-hybrid-nodes): Article explaining various methods for setting up networking for EKS Hybrid Nodes.
 +  [** AWS blog: Run GenAI inference across environments with EKS Hybrid Nodes**](https://aws.amazon.com/blogs/containers/run-genai-inference-across-environments-with-amazon-eks-hybrid-nodes/): Blog post showing how to run GenAI inference across environments with EKS Hybrid Nodes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

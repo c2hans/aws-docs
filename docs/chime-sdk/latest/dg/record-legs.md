@@ -20,3 +20,7 @@ This image shows a typical bridged call with two participants.
 In this example, the call has two call legs, **call-id-1** and **call-id-2**, and **call-id-1** is bridged to **call-id-2**. This creates four audio tracks, the incoming and outgoing audio streams for both call IDs. You can specify which of the call IDs and audio tracks to record. For example, if you want to record the audio track from the called participant, you record the `INCOMING` audio track by specifying **call-id-2** as the `CallId` and `INCOMING` as the track.
 
 If you want to record everything that the caller hears, you record the `OUTGOING` audio track by specifying **call-id-1** as the `CallId` and `OUTGOING` as the track. If you want to record all of the audio that the `Caller` said and heard, you record `BOTH` audio tracks by specifying `call-id-1` as the `CallId` and `BOTH` as the track.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

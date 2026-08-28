@@ -18,3 +18,7 @@ Each member of your audience can have a maximum of 15 endpoints associated with 
     + The new endpoint is associated to the audience member and they still have the maximum number of endpoints.
 
 The endpoint can be re–enabled by setting the **Status** to `ACTIVE` and add the **UserId** back to the endpoint.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

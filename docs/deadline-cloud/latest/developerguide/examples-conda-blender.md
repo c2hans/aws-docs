@@ -22,3 +22,7 @@ Submit a Blender 4.5 build job from the `conda_recipes` directory of the samples
 ```
 
 For details on the Blender packaging approach, see the [blender-4.5 recipe README](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/blender-4.5). To install Blender add-ons, place the `.py` or `.zip` file in a known location inside `$INSTALL_DIR` and modify the activate script to install the add-on with Blender's Python.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

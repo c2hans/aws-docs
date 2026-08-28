@@ -287,3 +287,7 @@ To complete the steps in this section, you must have the following:
 After you've configured active tracing, you can observe specific requests through your application. The [ X-Ray trace map](https://docs.aws.amazon.com/xray/latest/devguide/xray-console-servicemap.html) provides information about your application and all its components. The following example shows a trace from the sample application:
 
 ![The X-Ray service map for the sample application.](http://docs.aws.amazon.com/lambda/latest/dg/images/sample-typescript-servicemap.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

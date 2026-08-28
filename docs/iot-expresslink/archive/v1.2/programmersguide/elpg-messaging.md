@@ -215,3 +215,7 @@ If the requested topic is not defined (empty), then the module returns 'PARAMETE
 
 **5.1.8.5**   `ERR7 OUT OF RANGE`
 If the supplied topic index is larger than the maximum allowed topic number, then the module returns 'OUT OF RANGE'.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

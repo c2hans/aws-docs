@@ -50,3 +50,7 @@ The following are the prerequisites for using the AWS Transform discovery tool:
 + Supported Oracle versions: You can collect Oracle Database 12c Release 1 (12.1) and later through direct SQL connections. OS-level fallback detection works with all Oracle versions.
 + A read-only Oracle service account with SELECT\_CATALOG\_ROLE grant. For details, see [Oracle Database (SQL)](discovery-tool-permissions.md#discovery-tool-permissions-oracle).
 + For OS-level fallback detection: SSH or WinRM access to the Oracle host (uses existing OS credentials).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

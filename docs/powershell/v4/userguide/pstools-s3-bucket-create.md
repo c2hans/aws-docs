@@ -42,3 +42,7 @@ Note that the bucket removal process can take some time to finish. If you try to
 +  [Work with AWS services in the AWS Tools for PowerShell](pstools-using.md)
 +  [Put Bucket (Amazon S3 Service Reference)](https://docs.aws.amazon.com/AmazonS3/latest/API/RESTBucketPUT.html)
 +  [AWS PowerShell Regions for Amazon S3](https://docs.aws.amazon.com/general/latest/gr/rande.html#s3_region)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

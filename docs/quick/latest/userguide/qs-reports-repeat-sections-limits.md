@@ -24,3 +24,7 @@ The following limitations apply to limits in repeating sections.
   + Create a sheet level filter to restrict the dimension values.
   + Use row level security (RLS) to restrict the dimension values.
   + Apply dataset filters.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

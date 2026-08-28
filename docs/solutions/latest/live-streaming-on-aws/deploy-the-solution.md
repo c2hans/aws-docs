@@ -63,3 +63,7 @@ In addition to the primary AWS Lambda function, this solution includes the `solu
 When running this solution, both Lambda functions are displayed in the AWS Lambda console, do not delete the `solution-helper` function because it is necessary to manage associated resources.
 
 Once the live streaming event is complete, stop the resources created by this solution to help ensure that you don’t incur unnecessary AWS charges.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Live Streaming on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

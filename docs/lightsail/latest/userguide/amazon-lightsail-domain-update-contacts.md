@@ -38,3 +38,7 @@ To update contact information for a domain, perform the following procedure.
 1. Update the applicable values. For more information, see [Values that you specify when you register or transfer a domain](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/domain-register-values-specify.html) in the Amazon Route 53 Developer Guide.
 
 1. Choose **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

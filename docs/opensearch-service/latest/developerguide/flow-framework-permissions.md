@@ -25,3 +25,7 @@ If you create a new domain with version 2.13 or later, permissions are already i
 1. Choose **Create**.
 
 1. After you create the role, [map it](fgac.md#fgac-mapping) to any user or backend role that will manage flow framework indexes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

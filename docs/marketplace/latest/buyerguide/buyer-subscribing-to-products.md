@@ -18,3 +18,7 @@ If the product has a monthly fee or is purchased with a subscription contract, y
 If the product has an annual subscription option, you are charged the full annual fee upon subscription. This charge covers product usage base, with subscription renewal due on the anniversary of the original subscription date. If you don't renew at the end of the annual subscription period, the subscription converts to an hourly subscription at the current hourly rate.
 
 For more information about data product subscriptions, see [Subscribing to data products on AWS Data Exchange](https://docs.aws.amazon.com/data-exchange/latest/userguide/subscribe-to-data-sets.html) in the *AWS Data Exchange User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

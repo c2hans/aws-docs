@@ -68,3 +68,7 @@ A client sends a data message to the session, and the session sends the data mes
 The session can optionally cache the data message for up to five minutes. If a client joins or reconnects to a session, the session will automatically send the client any cached data messages that have not been previously sent. The session cache stores a maximum of 1024 data messages.
 
 A session supports up to 100 sent data messages per second. When using [live transcription](https://docs.aws.amazon.com/chime-sdk/latest/dg/meeting-transcription.html), each client receives [transcription messages](https://docs.aws.amazon.com/chime-sdk/latest/dg/process-msgs.html) via data messages, which are counted towards the total sent messages per second.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

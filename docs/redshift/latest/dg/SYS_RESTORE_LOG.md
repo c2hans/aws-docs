@@ -71,3 +71,7 @@ SELECT * from sys_restore_log ORDER BY event_time;
  dev           | schemaefd028a2a48a4c | customer_even        |   130512 | Redistribution checkpointed |     29.4342113157737 |     29.4342113157737 | 2024-01-05 04:55:04.770696 |        190 |         | Restore Disteven Table
 (8 rows)
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -112,3 +112,7 @@ Use the following resources to help you use global networks:
 <a name="nm-pricing"></a>
 
 There are no additional fees for using global networks to manage transit gateways networks. You are charged the standard fees for the network resources that you manage in your global network (such as transit gateways). For more information about pricing, see [AWS Transit Gateway pricing](https://aws.amazon.com/transit-gateway/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

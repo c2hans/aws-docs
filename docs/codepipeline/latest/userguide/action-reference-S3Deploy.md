@@ -256,3 +256,7 @@ Actions:
 The following related resources can help you as you work with this action.
 + [Tutorial: Create a pipeline that uses Amazon S3 as a deployment provider](tutorials-s3deploy.md) – This tutorial walks you through two examples for creating a pipeline with an S3 deploy action. You download sample files, upload the files to your CodeCommit repository, create your S3 bucket, and configure your bucket for hosting. Next, you use the CodePipeline console to create your pipeline and specify an Amazon S3 deployment configuration.
 + [Amazon S3 source action reference](action-reference-S3.md) – This action reference provides reference information and examples for Amazon S3 source actions in CodePipeline.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

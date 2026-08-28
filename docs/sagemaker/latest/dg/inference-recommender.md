@@ -33,3 +33,7 @@ The following example Jupyter notebooks can help you with the workflows for mult
 + If you want to benchmark a HuggingFace model, see the [SageMaker Inference Recommender for HuggingFace](https://github.com/aws/amazon-sagemaker-examples/blob/main/sagemaker-inference-recommender/huggingface-inference-recommender/huggingface-inference-recommender.ipynb) notebook.
 + If you want to benchmark an XGBoost model, see the [SageMaker Inference Recommender XGBoost](https://github.com/aws/amazon-sagemaker-examples/blob/main/sagemaker-inference-recommender/xgboost/xgboost-inference-recommender.ipynb) notebook.
 + If you want to review CloudWatch metrics for your Inference Recommender jobs, see the [SageMaker Inference Recommender CloudWatch metrics](https://github.com/aws/amazon-sagemaker-examples/blob/main/sagemaker-inference-recommender/tensorflow-cloudwatch/tf-cloudwatch-inference-recommender.ipynb) notebook.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

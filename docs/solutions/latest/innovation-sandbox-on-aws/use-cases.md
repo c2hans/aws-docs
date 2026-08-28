@@ -13,7 +13,7 @@ Developers who want to build a proof of concept on new AWS services, or run inno
 
 Development teams provide standardized development environments with pre-installed tools, frameworks, and configurations through blueprints, ensuring consistency across team members and reducing manual environment setup.
 
- **Train and test GenAI models**
+ **Train and test generative AI models**
 
 Machine learning engineers and data scientists who want to train, test, fine-tune, and establish reinforcement learning on foundation models to improve the model’s accuracy and reduce bias.
 
@@ -44,3 +44,7 @@ Engineers and solution architects at enterprises who want an environment to run 
  **Software vendors**
 
 Companies that sell software and want to stand up time or budget limited demos of their software solutions and make them available to their customers to try.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

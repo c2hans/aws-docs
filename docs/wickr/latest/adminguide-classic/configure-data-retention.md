@@ -23,3 +23,7 @@ To configure data retention for your AWS Wickr network, you must deploy the data
 <a name="data-retention-prerequisites"></a>
 
 Before you get started, you must get the data retention bot name (labeled as **Username**) and initial password from the AWS Management Console for Wickr. You must specify both of these values the first time you start the data retention bot. You must also enable data retention in the console. For more information, see [View data retention details in AWS Wickr](view-data-retention-details.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

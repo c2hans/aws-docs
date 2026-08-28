@@ -129,3 +129,7 @@ TBLPROPERTIES ('table_type'='iceberg', 'iceberg.catalog'='<catalog_name>');
 + For Amazon EMR prior to 7.3.0, AWS Glue Data Catalog is not currently supported for Iceberg with Hive.
 + Error handling is insufficiently robust. In cases of misconfiguration, inserts into queries might complete successfully. However, failure to update metadata can result in data loss.
 + Iceberg Glue integration does not work with the Redshift Managed Storage catalog.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

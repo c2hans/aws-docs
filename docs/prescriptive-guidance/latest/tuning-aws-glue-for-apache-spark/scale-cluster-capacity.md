@@ -50,3 +50,7 @@ If you observe these symptoms, consider scaling the cluster. You can scale clust
   Scaling up also assists in cases where the Spark driver needs larger capacity—for instance, because the job query plan is quite large. For more information about worker types and performance, see the AWS Big Data Blog post [Scale your AWS Glue for Apache Spark jobs with new larger worker types G.4X and G.8X](https://aws.amazon.com/blogs/big-data/scale-your-aws-glue-for-apache-spark-jobs-with-new-larger-worker-types-g-4x-and-g-8x/).
 
   Using larger workers can also reduce the total number of workers needed, which increases performance by reducing shuffle in intensive operations such as join.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

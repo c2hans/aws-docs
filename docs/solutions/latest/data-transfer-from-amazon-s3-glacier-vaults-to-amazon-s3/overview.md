@@ -36,3 +36,7 @@ Data Transfer from Amazon Glacier Vaults to Amazon S3 is a serverless Guidance t
 |  Know which AWS Regions support this Guidance.  |  [Supported AWS Regions](plan-your-deployment.md#supported-aws-regions)  |
 |  View or download the AWS CloudFormation template included in this Guidance to automatically deploy the infrastructure resources (the "stack") for this Guidance.  |  [AWS CloudFormation template](aws-cloudformation-template.md)  |
 | Access the source code and optionally use the AWS Cloud Development Kit (AWS CDK) to deploy the Guidance. | [GitHub repository](https://github.com/aws-solutions/data-transfer-from-amazon-s3-glacier-vaults-to-amazon-s3) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer from Amazon S3 Glacier Vaults to Amazon S3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

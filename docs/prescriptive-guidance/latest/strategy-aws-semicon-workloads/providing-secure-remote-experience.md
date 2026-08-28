@@ -10,3 +10,7 @@ Remote visualization is a key component in semiconductor design. Tool engineers 
 This section contains the following topics:
 + [Optimize the remote desktop experience](optimize-the-remote-desktop-experience.md)
 + [Securing engineering collaboration with third parties](securing-collaboration-with-third-parties.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

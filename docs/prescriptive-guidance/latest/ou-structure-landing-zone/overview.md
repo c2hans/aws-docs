@@ -27,3 +27,7 @@ SCP policy types include the following:
 AWS Control Tower also provides its own set of detective and preventive controls (also called *guardrails*) by using the OU structure. AWS Control Tower preventive controls prevent actions by using the SCPs in AWS Organizations. Detective controls report on configurational drift against the control by using AWS Config. For more information about these controls, see the [AWS Control Tower documentation](https://docs.aws.amazon.com/controltower/latest/userguide/controls.html).
 
 You can also enable [AWS Security Hub](https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-securityhub.html) to automate security best practice checks, aggregate security alerts into a single place and format, and understand overall security posture across all your AWS accounts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

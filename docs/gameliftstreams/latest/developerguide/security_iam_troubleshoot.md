@@ -42,3 +42,7 @@ For resolution steps and an example IAM policy, see the "Access denied on iam:Pa
 API access to your resources is always restricted to the AWS account that owns them, so people outside your account cannot call the service APIs against your resources. To let external users stream your content, use a stream URL. Because the stream URL is a bearer credential, set a short expiration and a low usage limit, and distribute it only over trusted channels. For more information, see [Share stream sessions with stream URLs](stream-urls.md) and [Security best practices for Amazon GameLift Streams](security-best-practices.md).
 
 Building your own client web application that makes authenticated calls on behalf of other users remains an option if you need full control over the end-user experience, but it is no longer required for external sharing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

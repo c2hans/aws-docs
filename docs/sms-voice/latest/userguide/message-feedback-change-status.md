@@ -15,3 +15,7 @@ aws pinpoint-sms-voice-v2 --region '{{us-east-1}}' put-message-feedback --messag
 + Replace {{us-east-1}} with the AWS Region that your origination identity is stored in.
 + Replace {{Status}} with `RECEIVED` or `FAILED`.
 + Replace {{a1b2c3d4-5678-90ab-cdef-EXAMPLE11111}} with message id.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

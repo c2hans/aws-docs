@@ -81,3 +81,7 @@ Private endpoint is an App Runner console option that you can choose if you only
 <a name="network-pl.summary"></a>
 
  Make your service private by only allowing traffic from an Amazon VPC to access your App Runner service. To achieve this, you create a VPC interface endpoint for the selected Amazon VPC using either App Runner or Amazon VPC. On the App Runner console, you create a VPC interface endpoint when you enable the **Private endpoint** for the **Incoming traffic**. App Runner then automatically creates a *VPC Ingress Connection* resource and connects to the VPC interface endpoint and your App Runner service. This creates a private service connection that ensures that only traffic from the selected VPC can access your App Runner service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

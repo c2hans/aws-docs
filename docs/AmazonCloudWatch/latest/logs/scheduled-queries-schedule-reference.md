@@ -74,3 +74,7 @@ Nth occurrence of weekday in month. Example: `MON#1` means first Monday of month
 + **For high-frequency monitoring:** Use increments like `*/15` (every 15 minutes) but be mindful of query concurrency limits.
 + **For resource efficiency:** Schedule resource-intensive queries during off-peak hours using early morning times like `2-6` UTC.
 + **For monthly reports:** Use `L` for last day of month or specific dates like `1` for first day to ensure consistent timing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

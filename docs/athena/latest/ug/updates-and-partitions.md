@@ -26,3 +26,7 @@ At the beginning of query execution, Athena verifies the table's schema by check
  Athena compares the table's schema to the partition schemas. If you create a table in CSV, JSON, and AVRO in Athena with AWS Glue Crawler, after the Crawler finishes processing, the schemas for the table and its partitions may be different. If there is a mismatch between the table's schema and the partition schemas, your queries fail in Athena due to the schema verification error similar to this: 'crawler\_test.click\_avro' is declared as type 'string', but partition 'partition\_0=2017-01-17' declared column 'col68' as type 'double'."
 
 A typical workaround for such errors is to drop the partition that is causing the error and recreate it. For more information, see [ALTER TABLE DROP PARTITION](alter-table-drop-partition.md) and [ALTER TABLE ADD PARTITION](alter-table-add-partition.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

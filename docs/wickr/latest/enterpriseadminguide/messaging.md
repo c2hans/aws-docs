@@ -20,3 +20,7 @@ The **Messaging** section has the following additional features:
 + **Auto-Destruct:** This is the default maximum for any message sent within the network. Users can adjust to any amount lower than this value.
 + **Quick Responses:** Allows administrators to set pre-filled messages that users can send by clicking within the app. Each quick response supports up to 8,000 characters, including formatting and emoji. Only ten are allowed per group.
 + **Maximum Upload Size:** This is the default maximum number of bytes allowed for an upload within the network.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

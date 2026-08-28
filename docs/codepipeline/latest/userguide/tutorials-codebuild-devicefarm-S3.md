@@ -169,3 +169,7 @@ Custom environment nodes are not supported.
    1. On the stage you are editing, choose **Done**. In the AWS CodePipeline pane, choose **Save**, and then choose **Save** on the warning message.
 
    1. To submit your changes and start a pipeline execution, choose **Release change**, and then choose **Release**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

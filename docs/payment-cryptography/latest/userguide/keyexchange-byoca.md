@@ -615,3 +615,7 @@ The key is now imported into AWS Payment Cryptography and ready for use. The `Ke
 <a name="keyexchange-byoca.notes"></a>
 + These examples are shown using the AWS CLI. The same functionality is available in all AWS SDKs including Java, Python, Go, and Rust.
 + If you're testing with a self-signed CA, you can use OpenSSL to create a test CA and sign the CSR. In production, use your organization's established CA infrastructure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

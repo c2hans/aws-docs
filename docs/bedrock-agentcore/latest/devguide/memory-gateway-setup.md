@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory
 To front a Memory resource with a gateway, you create a gateway with an inbound authorizer, then add a target that uses the `agentcore-memory` connector.
 
 **Note**
-You can set up the Memory connector through the AWS SDK and AWS Command Line Interface (AWS CLI).
+You can set up the Memory connector through the AWS Management Console, the AWS SDK, and the AWS Command Line Interface (AWS CLI). This page uses the AWS CLI; for console steps, see [Create a Memory connector using the console](memory-gateway-connector-console.md).
 
  **Prerequisites**
 + An AgentCore Memory resource. For more information, see [Create an AgentCore Memory](memory-create-a-memory-store.md).
@@ -65,3 +65,7 @@ This example uses OAuth inbound, which always uses the `GATEWAY_IAM_ROLE` outbou
 
 **Note**
 The name you give the target becomes part of every Cedar action id for that target — a target named `<target-name>` produces action ids that begin with `<target-name>___`. Choose a target name you are comfortable referencing in access-control policies.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ For information on how to calculate the encoded size of rows in Amazon Keyspaces
 + [Estimate capacity consumption for static columns in Amazon Keyspaces](static-columns.md)
 + [Estimate and provision capacity for a multi-Region table in Amazon Keyspaces](tables-multi-region-capacity.md)
 + [Estimate read and write capacity consumption with Amazon CloudWatch in Amazon Keyspaces](estimate_consumption_cw.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

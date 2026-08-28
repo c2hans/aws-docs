@@ -9,6 +9,8 @@ The following table describes the AWS Client VPN User Guide updates.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [AWS provided client (6.0.3) for macOS ARM64 and x64 released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos-release-notes.html) | See release notes for details. | August 27, 2026 |
+| [AWS provided client (5.4.1) for Ubuntu released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux-release-notes.html) | See release notes for details. | August 25, 2026 |
 | [AWS provided client (6.0.2) for macOS ARM64 and x64 released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-macos-release-notes.html) | See release notes for details. | August 18, 2026 |
 | [AWS provided client (6.0.2) for Windows ARM64 and x64 released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-windows-release-notes.html) | See release notes for details. | August 12, 2026 |
 | [AWS provided client (6.0.1) for Linux released](https://docs.aws.amazon.com/vpn/latest/clientvpn-user/client-vpn-connect-linux-release-notes.html) | See release notes for details. | August 12, 2026 |
@@ -138,3 +140,7 @@ The following table describes the AWS Client VPN User Guide updates.
 | [Self-service portal](#WhatsNew) | You can access a self-service portal to get the latest AWS provided client and configuration file. | October 29, 2020 |
 | [AWS provided client](#WhatsNew) | You can use the AWS provided client to connect to a Client VPN endpoint.  | February 4, 2020 |
 | [Initial release](#WhatsNew) | This release introduces AWS Client VPN. | December 18, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

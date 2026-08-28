@@ -29,3 +29,7 @@ The following figure shows the relationship between these storage options and yo
 <a name="storage-pricing"></a>
 
 Open [AWS Pricing](https://aws.amazon.com/pricing/), scroll to **Pricing for AWS products** and select **Storage**. Choose the storage product to open its pricing page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -60,3 +60,7 @@ To disable a Ray logging behavior, provide the value `{\"IS_ENABLED\": \"False\"
 
   You can use this to distribute your own modules to your Ray job. You can also provide modules from PyPI with `--pip-install`. Unlike with AWS Glue ETL, custom modules are not set up through pip, but are passed to Ray for distribution. For more information, see [Additional Python modules for Ray jobs](edit-script-ray-env-dependencies.md#edit-script-ray-python-libraries-additional).
 + `--working-dir` – A path to a .zip file hosted in Amazon S3 that contains files to be distributed to all nodes running your Ray job. Format: string. For more information, see [Providing files to your Ray job](edit-script-ray-env-dependencies.md#edit-script-ray-working-directory).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

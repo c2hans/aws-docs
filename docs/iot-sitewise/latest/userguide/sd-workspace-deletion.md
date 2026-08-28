@@ -84,3 +84,7 @@ Each workspace currently supports at most one application. Delete the applicatio
 <a name="sd-deletion-post"></a>
 
 `DeleteWorkspace` is asynchronous. During the deletion workflow, the service automatically removes workspace-owned metadata and applied tags — no separate cleanup API is required. After the deletion workflow completes, the workspace no longer counts against the workspace quota for your account and AWS Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

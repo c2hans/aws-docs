@@ -29,3 +29,7 @@ Follow these steps to create a Security Lake subscriber in order to grant query 
 1. Enter the **Resource Share ARN** that is provided by the Security Lake administrator in the **Security Lake subscriber** pane.
 
 1. After you receive the Resource Share ARN from the Security Lake Administrator, enter the ARN in the **Resource Share ARN** box in the **Security Lake subscriber** pane.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

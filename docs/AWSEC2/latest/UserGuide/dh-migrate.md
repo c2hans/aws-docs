@@ -95,3 +95,7 @@ After you have allocated the Nitro-based Dedicated Host and it reaches the `avai
 <a name="release-xen-instances"></a>
 
 After you have migrated your workloads from the Xen-based Dedicated Host to the new Nitro-based Dedicated Host, you can [release the Xen-based Dedicated Host](dedicated-hosts-releasing.md) if you no longer need it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

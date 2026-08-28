@@ -51,3 +51,7 @@ The project name can contain up to 64 alphanumeric characters. It can also inclu
 1. The **Total cost** displays the total cost for all numbers for all countries that you've chosen.
 
 1. Choose **Request** if you're ready. Otherwise, choose **Previous** to go to back and make any changes. After you choose **Request**, you can no longer make changes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ You can activate the `createdBy` tag in the Billing and Cost Management console.
 1. Under **AWS-generated cost allocation tags**, choose the `createdBy` tag.
 
 1. Choose **Activate**. It can take up to 24 hours for tags to activate.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

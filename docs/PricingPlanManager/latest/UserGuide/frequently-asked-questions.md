@@ -32,3 +32,7 @@ Yes, usage data is available through the service console with near real-time upd
  **What’s the difference between Free plan and AWS Free Tier?**
 
 The Free plan is a $0/month flat-rate plan available to paid AWS accounts. AWS Free Tier is a separate program for new AWS accounts that cannot use flat-rate plans. Free Tier accounts must upgrade to paid accounts before activating any flat-rate plan.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Flat-Rate Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PricingPlanManager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

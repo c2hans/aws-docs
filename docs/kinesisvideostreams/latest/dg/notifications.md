@@ -214,3 +214,7 @@ Replace `<kvs_streams_account_id>` with the AWS account ID where your Kinesis Vi
 <a name="cross-account-requirements"></a>
 + Both the identity-based policy (in the source account) and the resource-based policy (in the destination account) must be configured for cross-account publishing to work.
 + The IAM role used for `PutMedia` operations must include `sns:Publish` permissions, even when using IoT certificates with role aliases.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

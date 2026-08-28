@@ -72,3 +72,7 @@ The **Runtime metrics** dashboard includes metrics that AgentCore Runtime automa
 + Runtime sessions and invocations – Count of sessions and invocations that this particular agent has generated while being hosted on Runtime
 + Runtime latency – Latency of requests by agents hosted on Runtime
 + Runtime throttles – Number of requests throttle by the service due to exceeding allowed TPS (Transactions Per Second)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

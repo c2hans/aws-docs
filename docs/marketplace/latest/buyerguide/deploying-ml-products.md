@@ -18,3 +18,7 @@ After you subscribe to either a model package product or algorithm product, it�
 1. From the Amazon SageMaker AI console, you can deploy the model packages and algorithms using the Amazon SageMaker AI console, Jupyter notebook, Amazon SageMaker AI CLI commands, or API operations.
 
 For more information about deploying on Amazon SageMaker AI, see [Getting Started](https://docs.aws.amazon.com/sagemaker/latest/dg/gs.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

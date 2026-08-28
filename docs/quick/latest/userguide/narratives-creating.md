@@ -18,3 +18,7 @@ Narratives are separate from machine learning. They only use ML if you add forec
 + [The expression editor workspace](using-narratives-expression-editor-menus.md)
 + [Adding URLs](using-narratives-expression-editor-urls.md)
 + [Working with autonarrative computations](auto-narrative-computations.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,7 +47,7 @@ If a resource type does not have a checkmark in the Cross-Region backup or Cross
 | Amazon EFS | ✓ | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |  |  |  |  |
 | FSx for Lustre | ✓ | ✓ | ✓ | ✓ |  |  |  |  | ✓ | ✓ |  |  |  |  |
 | FSx for Windows File Server | ✓ | ✓ | ✓ | ✓ |  |  |  |  | ✓8 | ✓ |  |  |  |  |
-| FSx for ONTAP |  |  | ✓ 2 | ✓ |  |  |  |  | ✓ |  |  |  |  |  |
+| FSx for ONTAP | ✓ | ✓ | ✓ | ✓ |  |  |  |  | ✓ |  |  |  |  |  |
 | FSx for OpenZFS | ✓ | ✓ |  |  |  |  | ✓ | ✓ |  |  |  |  |  |  |
 | AWS Storage Gateway | ✓ | ✓ | ✓ | ✓ |  |  |  |  |  | ✓ |  |  |  |  |
 | Amazon DocumentDB | ✓ 3 | ✓ 3 |  |  |  |  |  |  | ✓ | ✓ |  |  |  |  |
@@ -67,8 +67,6 @@ Some resource types have both continuous backup capability and cross-Region and 
 + Amazon Aurora and SAP HANA on Amazon EC2 instances support cross-account and cross-Region copy from full backups. Amazon Aurora also supports simultaneous cross-Region and cross-account snapshot copying in a single action.
 
 1 The "item" in an item-level restore varies depending on the supported resource. For example, a file system item is a file or directory, whereas an S3 item is an S3 object. A VMware item is a disk. For more information, see the [Restore a backup by resource type](restoring-a-backup.md) section for the supported resource.
-
-2 AWS Backup Audit Manager supports this resource across all controls except [cross-account copy](controls-and-remediation.md#backup-cross-account-copy) and [cross-Region copy](controls-and-remediation.md#backup-cross-region-copy).
 
 3 Amazon RDS, Aurora, DocumentDB, and Neptune now support cross-Region and cross-account snapshot copying in a single action. RDS multi availability zone (Multi-AZ) database instances can be copied, but Multi-AZ clusters do not currently support any copy operations. See [Cross-Region copy considerations with specific resources](cross-region-backup.md#cross-region-considerations) for further information.
 
@@ -100,13 +98,9 @@ AWS Backup is available in all the following AWS Regions. AWS Backup features ar
 Some Regions require account opt-in, as noted in the following table. Some feature availability is determined by whether opt-in is required or not required. For more information, see [AWS Regions your account can use](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html) in the *AWS Account Management Reference Guide*.
 
 **Considerations for opt-in Regions:**
-+ **Cross-account** copy is **not supported** for Amazon DocumentDB in Regions where opt-in is required.
-+ **Cross-Region** copy is **not supported** for Amazon DocumentDB in Regions where opt-in is required.
 + **Cross-Region** copy of Neptune backups is currently **supported** in Africa (Cape Town), Asia Pacific (Hong Kong), Asia Pacific (Jakarta), Israel (Tel Aviv), Middle East (Bahrain), and Middle East (UAE) Regions.
-
-  **Cross-Region** copy of FSx for Lustre, FSx for Windows File Server, and FSx for OpenZFS is **not supported** in Middle East (Bahrain) and Middle East (UAE).
-
-  **Cross-Region** copy and **Cross-account** copy of FSx for ONTAP is **not supported**.
++ **Cross-Region** copy of FSx for ONTAP, FSx for Lustre, FSx for Windows File Server, and FSx for OpenZFS is **not supported** in Middle East (Bahrain) and Middle East (UAE).
++ **Cross-Region** and **Cross-account** copy of FSx for ONTAP is **not supported** in Asia Pacific (New Zealand), China (Beijing), and China (Ningxia).
 + **Cross-account** copy is **not supported** for CloudFormation, Neptune, and Timestream in Regions where opt-in is required.
 
  **Considerations and limitations for cross-account management in opt-in Regions:**
@@ -136,8 +130,8 @@ Some Regions require account opt-in, as noted in the following table. Some featu
 | Asia Pacific (Tokyo) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Canada (Central) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Canada West (Calgary) | Required | ✓ | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ | ✓ |  |
-| China (Beijing) | [AWS in China](https://www.amazonaws.cn/en/about-aws/china/) | ✓2 |  |  |  |  |  |  | ✓ |  |  |
-| China (Ningxia) | [AWS in China](https://www.amazonaws.cn/en/about-aws/china/) | ✓2 |  |  |  |  |  |  | ✓ |  |  |
+| China (Beijing)2 | [AWS in China](https://www.amazonaws.cn/en/about-aws/china/) | ✓ | ✓ | ✓ |  |  |  |  | ✓ |  |  |
+| China (Ningxia)2 | [AWS in China](https://www.amazonaws.cn/en/about-aws/china/) | ✓ | ✓ | ✓ |  |  |  |  | ✓ |  |  |
 | Europe (Frankfurt) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Europe (Ireland) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | Europe (London) | Not required | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -157,7 +151,7 @@ Some Regions require account opt-in, as noted in the following table. Some featu
 
 1Cross-Region and cross-account copy to a logically air-gapped vault is not currently available in Asia Pacific (Malaysia), Canada West (Calgary), Mexico (Central), Asia Pacific (Thailand), Asia Pacific (Taipei), Asia Pacific (New Zealand), China (Beijing), China (Ningxia), AWS GovCloud (US-East), or AWS GovCloud (US-West) Regions.
 
-2China (Beijing) and China (Ningxia) support cross-Region copy from one of these two Regions to the other. Cross-Region copy is not supported from these Regions to other Regions or into these Regions. Cross-account copy is not supported for these Regions.
+2China (Beijing) and China (Ningxia) support cross-Region copy only between these two Regions. Cross-account backup copy and cross-account management are supported in both China Regions for accounts that belong to the same organization in AWS Organizations. AWS Backup does not support cross-Region copy between the China Regions and Regions outside the AWS China partition.
 
 3Jobs dashboard and AWS Backup Audit Manager organizational reporting, and Jobs dashboard aggregation are only available in Regions that support cross-account management and AWS Backup Audit Manager.
 
@@ -229,3 +223,7 @@ A check under Amazon FSx indicates that FSx for Windows File Server, FSx for Lus
 1 Cross-account copy is not supported.
 
 2 For multi-Region backup and restore supported Regions, see [Amazon Aurora DSQL backups](backup-aurora.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,3 +50,7 @@ If you auto-enable merges, you will not receive matched profile IDs.
 Before running an Identity Resolution Job for the first time on a new Customer Profiles domain, we recommend checking your profile metrics to make sure that profiles have been created. Otherwise, there won't be any matching results.
 
    1. You might want to set up consolidation criteria for auto-merging matching profiles. If so, see [Set up consolidation criteria for Identity Resolution in Connect Customer](create-consolidation-criteria.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

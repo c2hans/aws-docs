@@ -98,3 +98,7 @@ With unbundled pricing, database costs are calculated with separate charges for 
 | `r8a.8xlarge` | 16 | 16 | 1,2,3,4,8,12,16,20,24,28,32 | 1 |
 | `r8a.12xlarge` | 24 | 24 | 1,2,3,4,5,6,12,18,24,30,36,42,48 | 1 |
 | `r8a.16xlarge` | 32 | 32 | 1,2,3,4,5,6,7,8,16,24,32,40,48,56,64 | 1 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

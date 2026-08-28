@@ -18,3 +18,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 + [OPS08-BP06 Alert when workload outcomes are at risk](ops_workload_health_workload_outcome_alerts.md)
 + [OPS08-BP07 Alert when workload anomalies are detected](ops_workload_health_workload_anomaly_alerts.md)
 + [OPS08-BP08 Validate the achievement of outcomes and the effectiveness of KPIs and metrics](ops_workload_health_biz_level_view_workload.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

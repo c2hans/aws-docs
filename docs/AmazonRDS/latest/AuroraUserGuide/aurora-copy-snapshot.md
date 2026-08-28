@@ -80,7 +80,7 @@ Depending on the AWS Regions involved and the amount of data to be copied, a cro
 
 In some cases, there might be a large number of cross-Region snapshot copy requests from a given source AWS Region. In such cases, Amazon RDS might put new cross-Region copy requests from that source AWS Region into a queue until some in-progress copies complete. No progress information is displayed about copy requests while they are in the queue. Progress information is displayed when the copying starts.
 
-Data transfer charges applies for cross-Region snapshot copy. Cross-Region snapshot copying creates full copies in the target data, but the data transfer charges are incremental. Incremental data includes both the new data that has been added to a customer’s database since the last copy, as well as any changes made to existing data. For more information, see [Creating backup copies across AWS Regions](https://docs.aws.amazon.com/aws-backup/latest/devguide/cross-region-backup.html) in the *AWS Backup Developer Guide*.
+Data transfer charges applies for cross-Region snapshot copy. Cross-Region snapshot copying creates full copies in the target Region, but the data transfer charges are incremental. Incremental data includes both the new data that has been added to a customer’s database since the last copy, as well as any changes made to existing data. For more information, see [Creating backup copies across AWS Regions](https://docs.aws.amazon.com/aws-backup/latest/devguide/cross-region-backup.html) in the *AWS Backup Developer Guide*.
 
 **Note**
 Aurora copies the minimum amount of data required to create a full copy of a snapshot in the destination region. Data transfer charges apply when copying snapshots between regions.
@@ -93,3 +93,7 @@ When you copy a snapshot across Regions, the copy doesn't include the parameter 
 1. In the destination AWS Region, create a DB cluster parameter group with the same settings as the original DB cluster. If one already exists in the new AWS Region, you can use that one.
 
 1. After you restore the snapshot in the destination AWS Region, modify the new DB cluster and add the new or existing parameter group from the previous step.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

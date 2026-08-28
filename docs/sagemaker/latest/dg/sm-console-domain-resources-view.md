@@ -57,3 +57,7 @@ aws sagemaker list-apps \
 ```
 
 If you do not see the applications or your domain, you may need to change your AWS Region. To do so, use `aws configure` to update your AWS credentials. For more information, see [configure](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/configure/index.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

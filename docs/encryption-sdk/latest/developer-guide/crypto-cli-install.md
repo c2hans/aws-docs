@@ -105,3 +105,7 @@ pip install --upgrade boto3
 To install the version of the AWS Encryption CLI currently in development, see the [aws-encryption-sdk-cli](https://github.com/aws/aws-encryption-sdk-cli/) repository on GitHub.
 
 For more details about using `pip` to install and upgrade Python packages, see the [pip documentation](https://pip.pypa.io/en/stable/quickstart/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

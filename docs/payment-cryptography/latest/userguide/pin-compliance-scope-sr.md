@@ -10,3 +10,7 @@ AWS Payment Cryptography is an Encryption and Support Organization (ESO) and a P
 Other card brands or payment network providers may rely on the Visa PIN Security Program or have their own programs. Contact AWS Support for questions about service compliance for other payment network programs.
 
 AWS provides the PCI PIN Security attestation of compliance (AOC) and Shared Responsibility Guide for AWS Payment Cryptography in AWS Artifact. Use of service providers in PIN processing has be common for many years, however, the PCI PIN Security Standard, up through version 3.1, does not address third party service provider management. Neither does the Visa PIN Security Program. Customer QPA have followed the model established with the PCI DSS AOC and Shared Responsibility Guide of referring to AWS’ compliance as successful the test for applicable requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

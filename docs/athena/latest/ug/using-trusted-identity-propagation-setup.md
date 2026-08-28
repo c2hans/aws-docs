@@ -251,3 +251,7 @@ Trusted identity propagation with drivers is only available after version 3.6.0 
 If JTI claim is present in the token and you choose **Test connection** before choosing **OK**, it prevents the same JTI from being reused for token exchanges. For more information, see [Prerequisites and considerations for trusted token issuers](https://docs.aws.amazon.com/singlesignon/latest/userguide/using-apps-with-trusted-token-issuer.html#trusted-token-issuer-prerequisites). To handle this, JDBC implements an in-memory cache, whose lifecycle is dependent on the main driver instance. For ODBC, a [file cache](odbc-v2-driver-jwt-tip.md#odbc-v2-driver-jwt-tip-file-cache) is optionally present that enables temporary credentials to be cached and reused to reduce the number of web identity tokens used during session lifecycle.
 
 1. Open **SQL query editor** and start running your queries. See [Cloudtrail logs](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) to verify the propagated identity of the user.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

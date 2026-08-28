@@ -10,3 +10,7 @@ AWS Deadline Cloud (Deadline Cloud) persistent storage attaches dedicated Amazon
 For the full documentation – how persistent storage works, when to use it, configuration parameters and examples, runtime integration with the `DEADLINE_PERSISTENT_MOUNT` environment variable, volume states, and considerations – see [Persistent storage for service-managed fleets](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/volumes.html) in the *AWS Deadline Cloud User Guide*.
 
 For the API reference, see [CreateFleet](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateFleet.html) in the *Deadline Cloud API Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

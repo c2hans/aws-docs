@@ -65,3 +65,7 @@ healthy: dynamodb.eu-west-3.amazonaws.com
 +  Java 1.4.2\_12, Java 5 update 2, and all newer versions, including Java 6, Java 7, and Java 8
 
 If you're still unable to connect, consult your software documentation, OS Vendor, or contact with AWS Support [https://aws.amazon.com/support](https://aws.amazon.com/support) for further assistance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

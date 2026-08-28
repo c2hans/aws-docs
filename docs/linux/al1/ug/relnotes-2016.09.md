@@ -175,3 +175,7 @@ We're aiming to remove the following packages from the Amazon Linux 1 (AL1) repo
 <a name="instance-types-2016.09"></a>
 
 [Supported Instance Types](relnotes-2015.09.md#instance-types-2015.09) shows which 2016.09 AMI flavors launch on each Amazon EC2 instance type.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

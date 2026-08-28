@@ -112,3 +112,7 @@ Note the following when using the Troubleshoot feature:
 AI generates these responses. Verify the analysis and recommendations before you modify your resources.
 
 For more information about troubleshooting Image Builder pipeline builds, see [Troubleshoot pipeline builds](troubleshooting.md#troubleshooting-pipelines).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

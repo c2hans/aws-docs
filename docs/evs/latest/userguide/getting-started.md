@@ -877,7 +877,7 @@ Configure jumbo frames (MTU 8500) on the vMotion, vSAN, and overlay (TEP) networ
 When you configure the management cluster during bringup, also apply these Amazon EVS-specific settings:
 +  **vSAN** — Use vSAN ESA (Express Storage Architecture) with failures-to-tolerate (FTT) set to at least 1.
 +  **Uplink teaming** — Use a failover teaming policy (active uplink with a standby uplink) for the distributed switch port groups, rather than a load-balancing policy.
-+  **EVC mode** — Set the cluster Enhanced vMotion Compatibility (EVC) mode to match your instance type: `INTEL_ICELAKE` for `i4i.metal`, or `INTEL_SAPPHIRERAPIDS` for `i7i.metal-24xl`.
++  **EVC mode** — Set the cluster Enhanced vMotion Compatibility (EVC) mode to match your instance type: `INTEL_ICELAKE` for `i4i.metal`, or `INTEL_SAPPHIRERAPIDS` for `i7i.metal-24xl` and `i7i.metal-48xl`.
 
 #### Prepare the VCF Installer host
 <a name="sd-install-hosts"></a>
@@ -1822,3 +1822,7 @@ For steps to delete the VPC, see [Delete your VPC](https://docs.aws.amazon.com/v
 <a name="getting-started-next-steps"></a>
 
 Migrate your workloads to Amazon EVS using VMware Hybrid Cloud Extension (VMware HCX). For more information, see [Migrate workloads to Amazon EVS using VMware HCX](migrate-evs-hcx.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

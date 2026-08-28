@@ -56,3 +56,7 @@ When you create and run an AWS Glue data source, you add assets from the source 
 **Note**
 When an AWS Glue data source is created, Amazon DataZone creates the Lake Formation 'read only' permissions for the IAM role of the environment that is used to create the data source to access all the tables in the AWS Glue databases used in the data source. You can monitor the status of these grants under data sources on your environment's details page. Amazon DataZone adds the following AWS tags to the AWS Glue database when granting access to the publishing environment’s IAM role: `DataZoneDiscoverable_${domainId}: true`
 For the environments created prior to the current release of Amazon DataZone, project members will not be able to see granted tables in Amazon Athena.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

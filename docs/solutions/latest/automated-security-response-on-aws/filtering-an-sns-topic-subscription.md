@@ -9,11 +9,11 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 
 1. Navigate to the subscription of the SNS topic.
 
-1. Under Subscription filter policy, select"Edit".
+1. Under Subscription filter policy, choose **Edit**.
 
 1. Expand "Subscription filter policy" and toggle the "Subscription filter policy" option to enable filters.
 
-1. Select the "Message Body" scope.
+1. Choose the "Message Body" scope.
 
 1. Add your policy to the JSON editor.
 
@@ -30,6 +30,7 @@ Filter by account
  "111111111111",
  "222222222222"
  ]
+ }
  }
 ```
 
@@ -50,3 +51,7 @@ Filter by controls
  }
  }
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

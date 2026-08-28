@@ -35,3 +35,7 @@ In the case of a time-sensitive migration, consider a basic option where you per
 <a name="checks"></a>
 
 Amazon OpenSearch Service upgrade functionality can perform [pre-upgrade checks](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/version-migration.html) by scanning the environment to determine issues that can block the upgrade. The upgrade doesn't proceed to the next step unless these checks succeed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

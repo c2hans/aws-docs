@@ -34,3 +34,7 @@ You can enable any SIP rule, even rules created by another administrator. As a b
    1. Choose **Enable**, located next to **Edit**, then go to step 5.
 
 1. When you choose **Enable** using either method described in step 4, the **Enable rule(s)** dialog box appears. Select **I understand that the rule(s) listed here will trigger the SIP media application**, then choose **Enable**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

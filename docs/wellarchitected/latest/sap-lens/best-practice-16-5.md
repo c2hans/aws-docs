@@ -19,3 +19,7 @@ One of the primary benefits of operating workloads in AWS is the ability to incr
  **Suggestion 16.5.2 – Schedule scaling for predictable SAP workloads**
 
 Whether in an automated or manual fashion, scaling an SAP workload up or down based on predictable performance patterns is advisable. For instance, when month-end financial processing on an SAP ECC system leads to a predictable 20% increase in processing requirements on application server instances, system administrators can proactively increase the number or size of application servers, then scale-in the number of instances when the usage predictably decreases.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,3 +49,7 @@ For more information, see the following:
 +  [AWS Security Credentials](https://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html). Provides general information about the types of credentials used for accessing AWS.
 + [Security best practices in IAM](best-practices.md). Presents a list of suggestions for using IAM service to help secure your AWS resources.
 + [Temporary security credentials in IAM](id_credentials_temp.md). Describes how to create and use temporary security credentials.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

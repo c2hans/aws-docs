@@ -18,3 +18,7 @@ You need to grant permissions to your AWS License Manager to set up Rocket Softw
 
 1. If you see the following pop-up, view the details, then choose the check-box and press **Grant Permissions**.
 ![IAM permissions one-time setup](http://docs.aws.amazon.com/m2/latest/userguide/images/mf-license-manager_2.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

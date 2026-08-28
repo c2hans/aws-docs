@@ -61,3 +61,7 @@ All scaling plan features are enabled for your use. The features are provided at
 
 **Note**
 The predictive scaling feature relies on the CloudWatch [GetMetricData](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/API_GetMetricData.html) operation to collect historical metric data for capacity forecasting, which incurs costs. However, if you enable predictive scaling with an Amazon EC2 Auto Scaling scaling policy instead of a scaling plan, there are no charges for calls to `GetMetricData`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

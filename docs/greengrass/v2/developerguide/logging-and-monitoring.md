@@ -32,3 +32,7 @@ You can use the following automated monitoring tools to monitor AWS IoT Greengra
 + **Greengrass system health telemetry** – Subscribe to receive telemetry data sent from the Greengrass core. For more information, see [Gather system health telemetry data from AWS IoT Greengrass core devices](telemetry.md).
 + **Device health notifications** Create events using Amazon EventBridge to receive status updates regarding deployments and components. For more information, see [Get deployment and component health status notifications](deployment-health-notifications.md).
 + **Fleet status service** – Use the fleet status API operations to check the status of core devices and their Greengrass components. You can also view fleet status information in the AWS IoT Greengrass console. For more information, see [Check Greengrass core device status](device-status.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

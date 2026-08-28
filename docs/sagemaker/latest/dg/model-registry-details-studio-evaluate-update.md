@@ -40,3 +40,7 @@ Complete the following steps to update the details of an evaluation job, created
    1. (Optional) To remove a dataset, choose the **Trash** icon next to the dataset you want to remove.
 
 1. To view the job name and evaluation job ARN, choose **Details**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

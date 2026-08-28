@@ -15,3 +15,7 @@ Directory Service directories can encounter various states that indicate differe
 | Impaired | Directory was created successfully, but the domain controller encountered problems afterward. The system attempts automatic recovery. | Monitor the directory status. If the issue persists, contact AWS Support. |
 | Failed | Directory creation failed and is unrecoverable. | Delete the failed directory and create a new one. |
 | Inoperable (Hybrid AD only) | AWS detected a security issue and automatically isolated the directory for protection. The directory becomes completely unusable until restored. | Contact [AWS Support Center](https://console.aws.amazon.com/support/home#/) immediately. This status requires Support intervention to investigate and restore the directory. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

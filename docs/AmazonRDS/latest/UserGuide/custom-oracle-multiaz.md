@@ -51,3 +51,7 @@ To create an RDS Custom for Oracle DB instance with a Multi-AZ deployment, follo
 To simplify setup, we recommend that you use the latest CloudFormation template file provided in the network setup instructions. For more information, see [Deploying RDS Custom for Oracle with AWS CloudFormation](custom-oracle-multiaz-deployment.md).
 
 You can create an RDS Custom for Oracle instance with a Multi-AZ deployment by choosing the **Multi-AZ** option during the database instance creation in the Amazon RDS console. Alternatively, you can specify the `--multi-az` parameter in the Amazon RDS `create-db-instance` command in the AWS CLI.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

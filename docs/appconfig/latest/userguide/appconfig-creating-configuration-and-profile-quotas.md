@@ -14,3 +14,7 @@ Configuration stores supported by AWS AppConfig have the following quotas and li
 | **Server-side encryption** | Yes | [SSE-S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html), [SSE-KMS](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html) | Yes | Yes | No | Yes |
 | **CloudFormation support** | Yes | Not for creating or updating data | Yes | Yes | No | Yes |
 | **Pricing** | Free | See [Amazon S3 pricing](https://aws.amazon.com//s3/pricing/) | See [AWS Systems Manager pricing](https://aws.amazon.com//systems-manager/pricing/) | See [AWS Secrets Manager pricing](https://aws.amazon.com//secrets-manager/pricing/) | Free | See [AWS CodePipeline pricing](https://aws.amazon.com//codepipeline/pricing/) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

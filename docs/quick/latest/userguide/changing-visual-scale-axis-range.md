@@ -56,3 +56,7 @@ By default, the axis range starts at 0 and ends with the highest value for the m
 1. For combo charts, choose **Single Y Axis** to synchronize the Y-axes for both bars and lines into a single axis.
 
 1. Close the **Properties** pane by choosing the **X** icon in the upper-right corner of the pane.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

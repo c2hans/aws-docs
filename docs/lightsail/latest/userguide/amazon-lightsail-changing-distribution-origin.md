@@ -82,3 +82,7 @@ The Origin IP address type setting is only available for instance origins. When 
 When you save changes to your distribution's configuration, your distribution starts to propagate the changes to all edge locations. Until your configuration is updated in an edge location, your distribution continues to serve your content from that location based on the previous configuration. After your configuration is updated in an edge location, your distribution immediately starts to serve your content from that location based on the new configuration.
 
 Your changes don't propagate to every edge location instantaneously. When propagation is complete, the status of your distribution changes from **InProgress** to **Enabled**. While your distribution is propagating your changes, we can't determine whether a given edge location is serving your content based on the previous configuration or the new configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,3 +38,7 @@ Additionally, Amazon Managed Grafana has the following quotas within each worksp
 | Network access control:<br />VPC endpoints | No | 5 per workspace. |
 | Annotations<br />Applies to workspaces running Grafana version 12 and later. | No | 3,000,000 per workspace. |
 | Alert rule evaluation results<br />Applies to workspaces running Grafana version 12 and later. | No | 500 per alert rule evaluation. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

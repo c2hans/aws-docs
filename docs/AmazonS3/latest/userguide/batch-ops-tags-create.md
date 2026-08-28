@@ -98,3 +98,7 @@ The following AWS CLI example creates an S3 Batch Operations `S3PutObjectCopy` j
 To create an S3 Batch Operations job with tags using the AWS SDK for Java, you can use the S3Control client to configure job parameters including manifest location, job operations, reporting settings, and tags for organization and tracking purposes.
 
 For examples of how to create S3 Batch Operations jobs with tags using the AWS SDK for Java, see [Create a batch job to copy objects](https://docs.aws.amazon.com/AmazonS3/latest/API/s3-control_example_s3-control_CreateJob_section.html) in the *Amazon S3 API Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

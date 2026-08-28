@@ -119,3 +119,7 @@ To verify the current license model of your DB instance, use the `describe-db-in
 + Converting from BYOM to License Included is not supported.
 + If your License-Included (LI) instance has read replicas, remove them before converting license model to BYOM, then recreate them after. The new replicas will automatically inherit the BYOM licensing model.
 + If your LI DB instance is running on an instance class that is not supported for BYOM (for example, db.m5 or db.r6i), you cannot convert directly to BYOM. First, modify your instance to a supported instance class (7th generation or newer), then convert the license model as a separate modify operation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

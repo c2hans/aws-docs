@@ -155,3 +155,7 @@ If you forget which Region is your source Region for your Connect Customer insta
 1. For any traffic distribution group in the response list, the returned `InstanceARN` includes the source Region. For example in the following ARN, {{source-region}} would be the Region of your Connect Customer instance.
 
    `arn:aws:connect:{{source-region}}:{{account-id}}:traffic-distribution-group/ {{traffic-distribution-group-id}}`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

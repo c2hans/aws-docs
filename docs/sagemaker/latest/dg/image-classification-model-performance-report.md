@@ -72,3 +72,7 @@ In the example below, the model correctly predicted actual 354 values for label 
 ![Amazon SageMaker Autopilot multiclass confusion matrix example.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/autopilot/autopilot-model-insights-confusion-matrix-multiclass.png)
 
 The confusion matrix in the model quality report provided can accommodate a maximum of 15 labels for multiclass classification problem types. If a row corresponding to a label shows a `Nan` value, it means that the validation dataset used to check model predictions does not contain data with that label.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

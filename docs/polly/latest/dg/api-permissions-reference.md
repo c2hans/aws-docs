@@ -28,3 +28,7 @@ Use the scroll bars to see the rest of the table.
 Amazon Polly supports Identity-based policies for actions at the resource-level. Therefore, the `Resource` value is indicated by the ARN. For example: `arn:aws:polly:{{us-east-2}}:{{account-id}}:lexicon/*` as the `Resource` value specifies permissions on all owned lexicons within the `us-east-2` Region.
 
 Because Amazon Polly doesn't support permissions for actions at the resource-level, most policies specify a wildcard character (\*) as the `Resource` value. However, if it is necessary to limit permissions to a specific Region this wildcard character is replaced with the appropriate ARN: `arn:aws:polly:{{region}}:{{account-id}}:lexicon/*. `
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Polly. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query polly` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

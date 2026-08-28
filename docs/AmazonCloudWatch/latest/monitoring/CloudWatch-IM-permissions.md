@@ -40,3 +40,7 @@ To view the permissions for this policy, see [CloudWatchInternetMonitorFullAcces
 <a name="security-iam-awsmanpol-updates-cwim-manpol"></a>
 
 To view details about updates to AWS managed policies for Internet Monitor since this service began tracking these changes, see [CloudWatch updates to AWS managed policies](managed-policies-cloudwatch.md#security-iam-awsmanpol-updates). For automatic alerts about managed policy changes in CloudWatch, subscribe to the RSS feed on the CloudWatch [Document history](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/DocumentHistory.html) page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 + [GAMESEC06-BP01 Use tools for detecting and responding to threats to your infrastructure](gamesec06-bp01.md)
 + [GAMESEC06-BP02 Use artificial intelligence and machine learning tools to automate aspects of your infrastructure protection strategy](gamesec06-bp02.md)
 + [GAMESEC06-BP03 Use insights from system-level logs to continuously improve your infrastructure protection strategy](gamesec06-bp03.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ With an AWS ParallelCluster custom resource, CloudFormation deploys a cluster fr
 1. To view the output from the custom resource provider that manages the cluster, select the stack with the **Description** "AWS ParallelCluster Cluster Custom Resource." Choose the **Resources** tab, find the resource with **Logical ID** `PclusterCfnFunctionLogGroup`, and follow the given link. View the log streams that show the Lambda debug output.
 
 1. To troubleshoot the cluster, see [AWS ParallelCluster troubleshooting](troubleshooting-v3.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

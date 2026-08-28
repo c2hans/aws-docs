@@ -42,3 +42,7 @@ When you use a **Set logging behavior** block to enable or disable logging for a
 1. Choose **Save**.
 
 1. If you add a **Set logging behavior** block to a flow that is already published, you must publish it again to start generating logs for it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

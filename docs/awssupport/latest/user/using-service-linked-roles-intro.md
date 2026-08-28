@@ -11,3 +11,7 @@ AWS Support and AWS Trusted Advisor use AWS Identity and Access Management (IAM)
 + [Using service-linked roles for AWS Support](using-service-linked-roles-sup.md)
 + [Using service-linked roles for AWS Support Plans](using-service-linked-roles-sup-plans.md)
 + [Using service-linked roles for Trusted Advisor](using-service-linked-roles-ta.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,3 +11,7 @@ Grantees who have been given access to S3 data through S3 Access Grants must req
 + [Request access to Amazon S3 data through S3 Access Grants](access-grants-credentials.md)
 + [Accessing S3 data using credentials vended by S3 Access Grants](access-grants-get-data.md)
 + [List the caller's access grants](access-grants-list-grants.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

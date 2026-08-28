@@ -51,3 +51,7 @@ NSKs are not interchangeable between servers. You must use the NSK from the box 
 If you use the wrong NSK, it will cause the provisioning process to fail until the correct NSK is attached to the server and the authorize-server process repeated.
 
 The NSK is required to activate the server. The NSK is also used to destroy data on the server when you send the server back. In this installation step, **ignore** the instructions on the body of the NSK because those instructions are to destroy data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

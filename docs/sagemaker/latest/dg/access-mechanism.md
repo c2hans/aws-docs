@@ -16,3 +16,7 @@ Direct SSH exposes an inbound SSH port on your workspace pods and connects with 
 + Your client machines cannot install the AWS CLI or Session Manager plugin, or cannot use AWS credentials, and you need to connect with plain SSH only.
 Direct SSH bypasses IAM authorization completely. Network connectivity and SSH key authentication determine all access control. Any client that can reach the pod IP on the configured port and authenticate with a valid SSH key can connect.
 Direct SSH opens an inbound TCP port, so it requires administrator setup on the cluster (a security group inbound rule and ExternalDNS with a private hosted zone) and applies cluster-wide. Before you enable it, review the caveats in [Direct SSH](direct-ssh-access.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

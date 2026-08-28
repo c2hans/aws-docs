@@ -21,7 +21,7 @@ Required: Yes
  ** instanceTypes **   <a name="evs-Type-VcfVersionInfo-instanceTypes"></a>
 EC2 instance types provided by Amazon EVS for this VCF version for creating environments.
 Type: Array of strings
-Valid Values: `i4i.metal | i7i.metal-24xl`
+Valid Values: `i4i.metal | i7i.metal-24xl | i7i.metal-48xl`
 Required: Yes
 
  ** status **   <a name="evs-Type-VcfVersionInfo-status"></a>
@@ -45,3 +45,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/evs-2023-07-27/VcfVersionInfo)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/evs-2023-07-27/VcfVersionInfo)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/evs-2023-07-27/VcfVersionInfo)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

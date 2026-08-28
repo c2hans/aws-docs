@@ -443,3 +443,7 @@ For more information about the AWS services where resources are created as part 
 + **Amazon DynamoDB** – A fully managed NoSQL database service for storing data. For more information, see [Amazon DynamoDB Developer Guide](https://docs.aws.amazon.com/amplify/latest/userguide/welcome.html).
 + **AWS Lambda** – A service for invoking your code on a high availability compute infrastructure without provisioning or managing servers. For more information, see [AWS Lambda Developer Guide](https://docs.aws.amazon.com/lambda/latest/dg/).
 + **AWS IAM** – A service for securely controlling access to AWS and its resources. For more information, see [IAM User Guide](https://docs.aws.amazon.com/IAM/latest/UserGuide/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

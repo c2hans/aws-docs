@@ -103,3 +103,7 @@ The other way to update the solution will be to use the template provided by the
 
 **Note**
 If you are upgrading from version 3.0 or 3.1 to version 3.2 or newer of this solution, and you have manually inserted IP addresses into the [allowed or denied IP set](modify-the-allowed-and-denied-ip-sets-optional.md), you will be at risk of losing those IP addresses. To prevent that from happening, make a copy of the IP addresses in the allowed or denied IP set before upgrading the solution. Then after you complete the upgrade, add the IP addresses back to the IP set as needed. Refer to the [get-ip-set](https://docs.aws.amazon.com/cli/latest/reference/wafv2/get-ip-set.html) and [update-ip-set](https://docs.aws.amazon.com/cli/latest/reference/wafv2/update-ip-set.html) CLI commands. If you’re already using version 3.2 or newer, ignore this step.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Automations for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

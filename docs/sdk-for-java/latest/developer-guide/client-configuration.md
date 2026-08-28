@@ -148,3 +148,7 @@ The following `ClientConfiguration` option from 1.x has changed in 2.x of the SD
 | Setting | 1.x | 2.x equivalent |
 | --- | --- | --- |
 | Protocol |  <pre>clientConfig.setProtocol(Protocol.HTTP)<br />clientConfig.withProtocol(Protocol.HTTP)</pre>  | The protocol setting is HTTPS by default. To modify the setting, specify the protocol setting an HTTP endpoint on the client builder:<pre>clientBuilder.endpointOverride(<br />    URI.create("http://..."))</pre> |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

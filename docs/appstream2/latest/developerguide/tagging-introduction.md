@@ -11,3 +11,7 @@ You can edit tag keys and values, and you can remove tags from a resource at any
 
 **Note**
 If you plan to set up a monthly cost allocation report to track AWS costs for WorkSpaces Applications resources, keep in mind that tags added to existing WorkSpaces Applications resources appear in your cost allocation report on the first of the following month for resources that are renewed in that month.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

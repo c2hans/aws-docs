@@ -79,7 +79,13 @@ The following tables describe the major updates and new features for the *AWS Pa
 
 | Change | Description | Date |
 | --- | --- | --- |
+| Terraform Provider for AWS ParallelCluster 1.2.0 released | Bug fixes:+ Fixed the `aws-parallelcluster_cluster` data source failing when CloudWatch logging is disabled on the cluster.<br />Changes:+ Upgrade Go minimum version to 1.23.0 (from 1.21).<br />+ Upgrade aws-sdk-go-v2 to v1.36.3 (from v1.32.7).<br />+ Upgrade aws-sdk-go-v2/config to v1.29.13 (from v1.28.7).<br />+ Upgrade aws-sdk-go-v2/service/apigateway to v1.30.1 (from v1.28.2).<br />+ Upgrade aws-sdk-go-v2/service/cloudformation to v1.59.1 (from v1.56.2).<br />+ Upgrade aws-sdk-go-v2/service/sts to v1.33.18 (from v1.33.3).<br />+ Upgrade terraform-plugin-framework to v1.14.1 (from v1.9.0).<br />+ Upgrade terraform-plugin-go to v0.26.0 (from v0.23.0).<br />+ Upgrade terraform-plugin-sdk/v2 to v2.36.1 (from v2.34.0). | August 25, 2026 |
+| Terraform Module for AWS ParallelCluster 1.2.0 released | Changes:+ Allow AWS provider v6.<br />+ Use ParallelCluster API 3.15.1 in all examples. | August 25, 2026 |
 | Terraform Provider for AWS ParallelCluster 1.1.0 released | Bug fixes:+ Fixed an issue that was causing terraform-apply failure when ParallelCluster API 3.11.x is used to deploy clusters with login nodes. | December 6, 2024 |
 | Terraform Module for AWS ParallelCluster 1.1.0 released | Changes:+ Use AWS ParallelCluster Terraform Provider 1.x in all module examples.<br />+ Use ParallelCluster API 3.11.1 in all examples with stack name ParallelClusterAPI.<br />+ Deploy login nodes in all module examples. | December 6, 2024 |
 | Terraform Provider for AWS ParallelCluster 1.0.0 released | Features:+ [Full changelog](https://github.com/aws-tf/terraform-provider-aws-parallelcluster/blob/main/CHANGELOG.md) | June 26, 2024 |
 | Terraform Module for AWS ParallelCluster 1.0.0 released | Features:+ [Full changelog](https://github.com/aws-tf/terraform-aws-parallelcluster/blob/main/CHANGELOG.md) | June 26, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,3 +56,7 @@ If you are upgrading to the latest version from any version between 3.3.11 and 3
    + If the role is not in use, the stack deletion cleans up the role.
 
 1. Deploy the spoke template with the latest version. For details, see [Step 4: Launch the spoke stack(s)](step-4-launch-the-spoke-stacks.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Network Orchestration for AWS Transit Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

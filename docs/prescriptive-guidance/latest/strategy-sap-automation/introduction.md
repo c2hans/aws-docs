@@ -13,3 +13,7 @@ Enterprises have been migrating and operating [SAP](https://www.sap.com/about/wh
 <a name="intended-audience"></a>
 
 This document is designed for senior stakeholders managing their enterprise resource planning (ERP) solutions, such as chief information officers (CIOs), chief digital officers (CDOs), vice presidents (VPs), and directors of enterprise application teams, SAP or ERP Competence Centers, and IT infrastructure teams. It introduces AWS automation capabilities that can streamline SAP operations in the AWS Cloud. The goal is to select, customize, and deploy AWS capabilities that provide maximum benefit. As such, this document doesn't focus on technical details, although it can be used by technical consultants, solution architects, and other staff for planning and communications. This document includes links to deeper technical content on SAP technologies and AWS operations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

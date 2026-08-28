@@ -31,3 +31,7 @@ To use code to get a list of environment members, call the AWS Cloud9 describe e
 | AWS SDK for Ruby |  [describe\_environment\_memberships](https://docs.aws.amazon.com/sdk-for-ruby/v3/api/Aws/Cloud9/Client.html#describe_environment_memberships-instance_method)  |
 | AWS Tools for Windows PowerShell |  [Get-C9EnvironmentMembershipList](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-C9EnvironmentMembershipList.html)  |
 | AWS Cloud9 API |  [DescribeEnvironmentMemberships](https://docs.aws.amazon.com/cloud9/latest/APIReference/API_DescribeEnvironmentMemberships.html)  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

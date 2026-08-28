@@ -13,23 +13,31 @@ To get started, you can use the agent workspace, or the [Connect Customer open s
 <a name="using-ccp-vdi-azure-step-by-step-requirements"></a>
 
 This section describes the system requirements for using Microsoft Multimedia Redirection (MMR) with Connect Customer. For the complete set of Microsoft requirements, see [Prerequisites for multimedia redirection](https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls?tabs=intune&pivots=azure-virtual-desktop#prerequisites) in the Microsoft documentation.
-+ **Agent local device**
-  + Connect to the remote session from one of the following supported apps: Windows App on Windows, version 2.0.297.0 or later, or Remote Desktop app on Windows, version 1.2.5709 or later.
-  + Microsoft Visual C\+\+ Redistributable version 14.32.31332.0 or later.
-+ **Azure session host (AVD or Windows 365)**
-  + Multimedia redirection installed on the session host. For instructions, see [Install multimedia redirection on session hosts](https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls?tabs=intune&pivots=azure-virtual-desktop#install-multimedia-redirection-on-session-hosts) in the Microsoft documentation.
-  + Microsoft Visual C\+\+ Redistributable version 14.32.31332.0 or later.
-+ **Browser support**
-  + The latest version of Google Chrome or Microsoft Edge on the session host. MMR Call Redirection does not support other browsers.
-+ **MMR browser extension**
-  + The Multimedia Redirection browser extension, version 1.0.2605.29004 or later, installed on the session host for Microsoft Edge or Google Chrome. The single installer that installs the Remote Desktop Multimedia Redirection Service also installs the browser extension. After installation, enable the extension. For instructions, see [Install multimedia redirection on session hosts](https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls?tabs=intune&pivots=azure-virtual-desktop#install-multimedia-redirection-on-session-hosts) in the Microsoft documentation.
-  + If you want to test and validate with prerelease MMR features, you can configure the MMR Insider extension. For more information, see [Deploy the Insider version of the multimedia redirection extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-insider-extension) in the Microsoft documentation.
-+ **Call redirection allowlist**: The MMR extension only redirects calls for domains on its `AllowedCallRedirectionSites` policy allowlist.
-  + If your agents use the Connect Customer agent workspace or a CCP hosted on a Connect Customer domain (that is, if you pass `allowFramedSoftphone` as `true` when you initialize the CCP using [Connect Customer Streams JS](https://github.com/amazon-connect/amazon-connect-streams) on the GitHub website), you don't need to take any action. Connect Customer domains are included in the Microsoft MMR extension default allowlist.
-  + If your agents use a custom CCP hosted on your own domain (that is, with `allowFramedSoftphone: false`), your IT administrator must add the domain hosting your custom CCP to the `AllowedCallRedirectionSites` policy using Group Policy, the registry, or Microsoft Intune. For instructions and supported domain formats, see [Enable call redirection for specific domains](https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls?tabs=intune&pivots=azure-virtual-desktop#enable-call-redirection-for-specific-domains) in the Microsoft documentation.
-+ **Networking and firewall configuration**
-  + **Session host configuration**: Allow the Azure session host to reach Connect Customer over TCP/443 for the domains shown in the following diagram. For more information, see [Set up your network](ccp-networking.md).
-  + **Agent local device configuration**: This solution requires a media connection between the agent's local device and Connect Customer over Softphone Media UDP Port 3478. For more information, see [Set up your network](ccp-networking.md).
+
+**Agent local device**
++ Connect to the remote session from one of the following supported apps: Windows App on Windows, version 2.0.297.0 or later, or Remote Desktop app on Windows, version 1.2.5709 or later.
++ Microsoft Visual C\+\+ Redistributable version 14.32.31332.0 or later.
+
+**Azure session host (AVD or Windows 365)**
++ Multimedia redirection installed on the session host. For instructions, see [Install multimedia redirection on session hosts](https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls?tabs=intune&pivots=azure-virtual-desktop#install-multimedia-redirection-on-session-hosts) in the Microsoft documentation.
++ Microsoft Visual C\+\+ Redistributable version 14.32.31332.0 or later.
+
+**Browser support**
++ The latest version of Google Chrome or Microsoft Edge on the session host. MMR Call Redirection does not support other browsers.
+
+**MMR browser extension**
++ The Multimedia Redirection browser extension, version 1.0.2605.29004 or later, installed on the session host for Microsoft Edge or Google Chrome. The single installer that installs the Remote Desktop Multimedia Redirection Service also installs the browser extension. After installation, enable the extension. For instructions, see [Install multimedia redirection on session hosts](https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls?tabs=intune&pivots=azure-virtual-desktop#install-multimedia-redirection-on-session-hosts) in the Microsoft documentation.
++ If you want to test and validate with prerelease MMR features, you can configure the MMR Insider extension. For more information, see [Deploy the Insider version of the multimedia redirection extension](https://learn.microsoft.com/en-us/azure/virtual-desktop/deploy-insider-extension) in the Microsoft documentation.
+
+**Call redirection allowlist**
+The MMR extension only redirects calls for domains on its `AllowedCallRedirectionSites` policy allowlist.
++ If your agents use the Connect Customer agent workspace or a CCP hosted on a Connect Customer domain (that is, if you pass `allowFramedSoftphone` as `true` when you initialize the CCP using [Connect Customer Streams JS](https://github.com/amazon-connect/amazon-connect-streams) on the GitHub website), you don't need to take any action. Connect Customer domains are included in the Microsoft MMR extension default allowlist.
++ If your agents use a custom CCP hosted on your own domain (that is, with `allowFramedSoftphone: false`), your IT administrator must add the domain hosting your custom CCP to the `AllowedCallRedirectionSites` policy using Group Policy, the registry, or Microsoft Intune. For instructions and supported domain formats, see [Enable call redirection for specific domains](https://learn.microsoft.com/en-us/azure/virtual-desktop/multimedia-redirection-video-playback-calls?tabs=intune&pivots=azure-virtual-desktop#enable-call-redirection-for-specific-domains) in the Microsoft documentation.
+
+**Networking and firewall configuration**
++ **Session host configuration**: Allow the Azure session host to reach Connect Customer over TCP/443 for the domains shown in the following diagram. For more information, see [Set up your network](ccp-networking.md).
++ **Agent local device configuration**: This solution requires a media connection between the agent's local device and Connect Customer over Softphone Media UDP Port 3478. For more information, see [Set up your network](ccp-networking.md).
+
 ![Azure session host and agent local device firewall settings for Connect Customer MMR Call Redirection.](http://docs.aws.amazon.com/connect/latest/adminguide/images/azure-mmr-server-firewall.png)
 
 ## Configure the VDI platform parameter
@@ -96,3 +104,7 @@ For current MMR known issues and limitations, see [Known issues and limitations]
 + **Government clouds**: Microsoft does not support MMR on Azure Virtual Desktop for Azure US Government, or on Windows 365 for GCC, GCC-High, or DoD environments.
 + **Voice Focus**: VDI environments do not support noise suppression (Voice Focus) because it is incompatible with audio redirection.
 + **Video**: Connect Customer does not currently support MMR Call Redirection for video.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

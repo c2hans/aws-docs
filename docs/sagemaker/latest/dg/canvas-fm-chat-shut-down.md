@@ -16,3 +16,7 @@ We highly recommend that you shut down models that you aren’t using. The model
 1. In the **Shut down model** confirmation box, choose **Shut down**.
 
 The model begins shutting down. If your chat compares two or more models, you can shut down an individual model from the chat page by choosing the model’s **More options** icon (![](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/more-options-icon.png)) and then choosing **Shut down model**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

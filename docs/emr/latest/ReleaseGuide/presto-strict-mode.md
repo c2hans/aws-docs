@@ -53,3 +53,7 @@ When you use strict mode, consider the following:
 + In some cases, strict mode can reject short-running queries that don’t consume a lot of resources. For example, queries on small tables don’t apply dynamic filtering or replace inner joins with cross joins. This can lead the query to use the mandatory partition predicate or disallow cross join. When this happens, strict mode rejects the query.
 + The strict mode check is only applied on SELECT, INSERT, CREATE TABLE AS SELECT, and EXPLAIN ANALYZE query types.
 + You can only use the restriction on the mandatory partition predicate with the Hive connector.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

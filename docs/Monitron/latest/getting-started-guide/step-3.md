@@ -138,3 +138,7 @@ ISO thresholds apply broadly to large classes of equipment. Therefore, when dete
 You also can mute alerts by providing the ‘No failure detected’ feedback for the ‘Failure mode’ while closing the alert. Note that Amazon Monitron will continue to notify users of potential failures detected based on Machine Learning, even when notifications based on ISO thresholds are muted.
 
 ![Issue resolution feedback dialog with Failure mode dropdown set to No failure detected.](http://docs.aws.amazon.com/Monitron/latest/getting-started-guide/images/mute-screen.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

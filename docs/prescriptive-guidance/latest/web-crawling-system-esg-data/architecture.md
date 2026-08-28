@@ -80,3 +80,7 @@ The crawling process is organized and performed in a structured manner. AWS Batc
 By organizing the web crawling into company-specific batches, this containerizes the collected data. This helps prevent the data from one company from being mixed with data from other companies.
 
 Batching helps the application efficiently gather data from the web, while maintaining a clear structure and separation of information based on the target companies and their respective web domains. This approach helps to ensure the integrity and usability of the data collected, as it is neatly organized and associated with the appropriate company and domains.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

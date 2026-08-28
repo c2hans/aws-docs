@@ -21,3 +21,7 @@ As of Dec 17, 2024, Amazon Q Business will recognize all email addresses as case
 | [DeleteGroup](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_DeleteGrooup.html) | Deletes a group so that all users and sub groups that belong to the group can no longer access documents only available to that group | [Group mapping](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-principal-store.html#group-mapping) |
 | [GetGroup](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_GetGroup.html) | Describes a group by group name | [Group mapping](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-principal-store.html#group-mapping) |
 | [ListGroups](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListGroups.html) | Provides a list of groups that are mapped to users | [Group mapping](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-principal-store.html#group-mapping) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

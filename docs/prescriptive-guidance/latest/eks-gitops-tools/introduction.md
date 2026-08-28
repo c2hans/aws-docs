@@ -109,3 +109,7 @@ Consider the overall cost of adopting and maintaining the tool, including both d
 + Resource consumption: Evaluate the tool's efficiency in terms of compute and storage resources that would be required.
 
 By carefully considering these outcomes and their aspects, you can make an informed decision on the most suitable GitOps tool for your EKS cluster, and make sure that the tool aligns with your organization's needs, capabilities, and long-term strategy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

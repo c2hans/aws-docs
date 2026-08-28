@@ -49,3 +49,7 @@ The following retrieves `double` values from single-measure records with a `meas
 ```
 SELECT measure_value::double FROM {{<database_name>}}.{{<table_name>}} WHERE measure_name = 'load'
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -60,3 +60,7 @@ Call the [UpdateSettings](https://docs.aws.amazon.com/audit-manager/latest/APIRe
 + For an example policy that you can use to allow Audit Manager to send notifications to Amazon SNS topics , see [Example 1 (Permissions for the SNS topic)](security_iam_id-based-policy-examples.md#sns-topic-permissions)
 + To learn more about the list of actions that invoke notifications in Audit Manager, see [Notifications in AWS Audit Manager](notifications.md).
 + For solutions to notification issues in Audit Manager, see [Troubleshooting notification issues](notification-issues.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

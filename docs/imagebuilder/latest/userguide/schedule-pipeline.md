@@ -74,3 +74,7 @@ Image Builder writes pipeline execution logs to the following Image Builder Clou
 **LogGroup:** `/aws/imagebuilder/pipeline/{{pipeline-name}}`
 **LogStream:** `{{2025/09/01}}` (the pipeline execution date in YYYY/MM/DD format)
 Each pipeline log is appended to the stream for that day.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

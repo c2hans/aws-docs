@@ -42,3 +42,7 @@ For AWS Services architected within the AWS GovCloud (US) Regions, the following
 + Amazon Cognito metadata may be moved or stored outside of the AWS GovCloud (US) Region, or, in rare cases, accessed by certain AWS support personnel and system administrators who are not U.S. citizens.
 
   For example, user pool domains, custom attribute names, resource server identifiers and custom scopes may be included as part of the public Cognito sign-in and sign-up functionality.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

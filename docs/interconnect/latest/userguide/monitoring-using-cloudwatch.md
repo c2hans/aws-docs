@@ -23,3 +23,7 @@ The following tables list the metrics and dimensions for AWS Interconnect.
 The `ConnectionUtilizationEgress` and `ConnectionUtilizationIngress` metrics report the percentage utilization of an Interconnect relative to its configured bandwidth. This metric is derived automatically, and does not require you to apply CloudWatch Math.
 
 When you change an Interconnect’s allocated bandwidth, you might see a step change in the percentage utilization shown by the metrics `ConnectionUtilizationIngress` and `ConnectionUtilizationEgress`, depending on the traffic going through the connection when you make the change. For example, if your Interconnect is configured to 1 Gbps and it has a constant 500 Mbps of egress traffic, you will see `ConnectionUtilizationEgress` at 50% utilization. If you increase that Interconnect’s bandwidth to 2 Gbps, that utilization will drop to 25% as soon as the change is provisioned and the utilization metric is recalculated using the new configured capacity for that Interconnect.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Interconnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query interconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

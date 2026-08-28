@@ -20,3 +20,7 @@ The following tools are either required or helpful to design and build your trac
 +  **Optional design tools**
 
   To design your own track, you might need a [protractor](https://www.amazon.com/Sparco-Plastic-Protractor-6-Inch-SPR01490/dp/B009Z0QIRA/ref=sr_1_4?s=office-products&ie=UTF8&qid=1549393959&sr=1-4&keywords=protractor), a [ruler](https://www.amazon.com/Mr-Pen-Architectural-Triangular-Architecture/dp/B07DNHCMS7/ref=sr_1_9?s=office-products&ie=UTF8&qid=1549394062&sr=1-9&keywords=ruler), a [pencil](https://www.amazon.com/AmazonBasics-Wood-cased-Pencils-Box-144/dp/B0188A3QRM/ref=sr_1_4_acs_sk_pb_1_sl_4?s=office-products&ie=UTF8&qid=1549394147&sr=1-4-acs&keywords=pencil), a [knife](https://www.amazon.com/X-Acto-XZ3601-X-ACTO-Knife-Safety/dp/B005KRSWM6/ref=sr_1_8?s=office-products&ie=UTF8&qid=1549394213&sr=1-8&keywords=knife) and a [compass](https://www.amazon.com/Professional-JARLINK-Geometry-Precision-Measuring/dp/B07F6QJLGB/ref=sr_1_22?s=office-products&ie=UTF8&qid=1549394281&sr=1-22&keywords=compass).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

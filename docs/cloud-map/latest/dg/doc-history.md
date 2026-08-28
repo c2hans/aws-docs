@@ -22,3 +22,7 @@ The following table describes the major updates and new features for the *AWS Cl
 | [Resource tagging](https://docs.aws.amazon.com/cloud-map/latest/dg/using-tags.html) | AWS Cloud Map added support for adding metadata tags to your namespaces and services using the AWS Management Console. | February 8, 2021 |
 | [Resource tagging](https://docs.aws.amazon.com/cloud-map/latest/dg/using-tags.html) | AWS Cloud Map added support for adding metadata tags to your namespaces and services using the AWS CLI and APIs. | June 22, 2020 |
 | [Initial Release](https://docs.aws.amazon.com/cloud-map/latest/dg/) | This is the first release of *AWS Cloud Map Developer Guide*.  | November 28, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Map. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud-map` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

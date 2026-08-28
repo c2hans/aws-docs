@@ -67,3 +67,7 @@ In order to change the threshold of this alarm to 10, **you must provide the ent
 
 **Important**
 Remember to deploy your configuration changes after you have made them. In SSM AppConfig, you must deploy a new version of the configuration after creating it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

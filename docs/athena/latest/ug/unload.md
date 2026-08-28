@@ -102,3 +102,7 @@ WITH (format = 'PARQUET', compression = 'ZSTD', compression_level = 4)
 ## Additional resources
 <a name="unload-additional-resources"></a>
 + [Simplify your ETL and ML pipelines using the Amazon Athena UNLOAD feature](https://aws.amazon.com/blogs/big-data/simplify-your-etl-and-ml-pipelines-using-the-amazon-athena-unload-feature/) in the *AWS Big Data Blog*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

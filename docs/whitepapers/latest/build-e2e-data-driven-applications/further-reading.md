@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven
 +  [Harness the power of your data with AWS Analytics](https://aws.amazon.com/blogs/big-data/harness-the-power-of-your-data-with-aws-analytics/) (AWS blog post)
 +  [*Derive Insights from AWS Modern Data*](https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/derive-insights-from-aws-modern-data.html) (AWS whitepaper)
 +  [Design a data mesh architecture using AWS Lake Formation and AWS Glue](https://aws.amazon.com/blogs/big-data/design-a-data-mesh-architecture-using-aws-lake-formation-and-aws-glue/) (AWS blog post)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

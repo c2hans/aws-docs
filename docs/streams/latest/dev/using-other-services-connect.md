@@ -10,3 +10,7 @@ You can use Kinesis Data Streams to export contact records and agent events in r
 You can then build consumer applications to process and analyze the data in real time. For example, using contact records and customer profile data, you can keep your source systems data, such as CRMs and marketing automation tools, up-to-date with the latest information. Using the agents event data, you can create dashboards that display agent information and events, and trigger custom notifications of specific agent activity.
 
 For more information, see [data streaming for your instance](https://docs.aws.amazon.com/connect/latest/adminguide/data-streaming.html), [set up real-time export](https://docs.aws.amazon.com/connect/latest/adminguide/set-up-real-time-export.html), and [agent event streams](https://docs.aws.amazon.com/connect/latest/adminguide/agent-event-streams.html) in the * Amazon Connect Administrator Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

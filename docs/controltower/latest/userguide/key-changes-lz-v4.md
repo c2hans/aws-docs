@@ -48,3 +48,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/key-change
 **CentralizedLogging behavior change in version 4.0**
  In landing zone versions 3.3 and earlier, disabling CentralizedLogging toggled the Organization CloudTrail to off and retained all deployed resources. In version 4.0, disabling CentralizedLogging deletes all associated resources from the logging account. These resources include the Config Recorder, Delivery Channel, and CloudTrail-related stack instances. After disablement, AWS Control Tower no longer manages the logging account.
  To restore management of the logging account, re-enable CentralizedLogging or move the account to a managed OU and extend governance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

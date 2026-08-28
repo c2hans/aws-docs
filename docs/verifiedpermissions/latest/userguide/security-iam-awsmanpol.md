@@ -112,3 +112,7 @@ View details about updates to AWS managed policies for Verified Permissions sinc
 | [AmazonVerifiedPermissionsFullAccess](#security-iam-awsmanpol-AmazonVerifiedPermissionsFullAccess) – New policy | Verified Permissions added a new policy to allow full access to Verified Permissions. | October 11, 2024 |
 | [AmazonVerifiedPermissionsReadOnlyAccess](#security-iam-awsmanpol-AmazonVerifiedPermissionsReadOnlyAccess) – New policy | Verified Permissions added a new policy to allow access to all read operations of Amazon Verified Permissions, including the authorization query APIs `IsAuthorized` and `IsAuthorizedWithToken`. | October 11, 2024 |
 | Verified Permissions started tracking changes | Verified Permissions started tracking changes for its AWS managed policies. | October 11, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

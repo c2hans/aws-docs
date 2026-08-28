@@ -85,3 +85,7 @@ The Sidewalk device has been successfully onboarded to the import task.
 
 **FAILED**
 The import task or device task failed, and the Sidewalk device failed to onboard to the task. You can use the `OnboardingStatusReason` parameter to retrieve additional details about why the device onboarding failed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

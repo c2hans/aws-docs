@@ -26,3 +26,7 @@ To create a new term, complete the following steps:
 1. To add **Readme**, navigate to the term details page, and then you can choose **Create readme** to add some additional information about this glossary.
 
 1. To add relationships, navigate to the term details page, choose **Term Relationships** section, and then choose **Add Glossary Terms**. In the dialog, choose the relationship and the terms you want to relate, and then choose **Close** to add a term to the appropriate relationship type. This relationship is also added to all the terms you made related.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

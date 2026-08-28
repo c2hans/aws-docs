@@ -54,3 +54,7 @@ The following table describes the documentation for this release of AWS Resilien
 | [Updated content: Added new Application Component resources](what-is.md) | Added Route53 and AWS Backup to the list of supported Application Component resources in the AppComponent grouping section. | July 1, 2022 |
 | [New content: Application compliance status concept](concepts-terms.md) | Added the Changes detected status type. | June 2, 2022 |
 | [Introducing AWS Resilience Hub](#doc-history) | AWS Resilience Hub is now available. This guide describes how to use AWS Resilience Hub to analyze your infrastructure, get recommendations to improve the resiliency of your AWS apps, review resiliency scores, and more. | November 10, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,3 +40,7 @@ When instances are launched, if you specified multiple Availability Zones, the d
 + [Detach or attach instances from your Auto Scaling group](ec2-auto-scaling-detach-attach-instances.md)
 + [Temporarily remove instances from your Auto Scaling group](as-enter-exit-standby.md)
 + [Delete your Auto Scaling infrastructure](as-process-shutdown.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

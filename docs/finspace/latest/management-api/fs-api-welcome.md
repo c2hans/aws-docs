@@ -16,3 +16,7 @@ FinSpace is a fully managed data management and analytics service that makes it 
 This API Reference provides descriptions, syntax, and usage examples for each of the operations and data types for use of FinSpace. You can use the API operations to programmatically expand and manage your FinSpace deployments.
 
 You can also use one of the AWS SDKs to access an API operation that's tailored to the programming language or platform that you're using. For more information, see [AWS SDKs](http://aws.amazon.com/tools/#SDKs).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

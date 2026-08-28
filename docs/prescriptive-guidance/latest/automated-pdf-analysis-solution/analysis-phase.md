@@ -19,3 +19,7 @@ Your data scientists and ML engineers can also use Amazon SageMaker to directly 
 You can use the following two best practices to ensure a successful analytics phase:
 + Create a manifest file to use an S3 bucket as a data source for Amazon QuickSight. For more information about this, see [Create an analysis using your own Amazon S3 data](https://docs.aws.amazon.com/quicksight/latest/user/getting-started-create-analysis-s3.html) in the Quick documentation.
 + Automatically update your dataset to capture any new data added to Amazon S3 and refresh your dashboard. For more information about this, see [Refreshing a dataset on a schedule](https://docs.aws.amazon.com/quicksight/latest/user/refreshing-imported-data.html#schedule-data-refresh) in the Quick documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,3 +33,7 @@ Custom evaluators offer more flexibility by allowing you to define all aspects o
 +  **Evaluators derived from a base evaluator** – Run an existing built-in or third-party evaluator’s logic on your own model and inference, instead of the model the service picks. For more information, see [Third-party evaluators](third-party-evaluators.md).
 
 This level of customization is particularly valuable when you need to evaluate domain-specific agents, apply unique quality standards, or implement specialized scoring systems. For example, you might create custom evaluation criteria for specific industries like healthcare or finance, or design scoring schemas that align with your organization’s quality metrics.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

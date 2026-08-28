@@ -19,3 +19,7 @@ Quick Flows administrative controls provide multiple layers of governance:
 + **Feature enablement** - Control whether flows are available to users in your account
 + **Approval workflows** - Require administrative approval before flows can be shared with users
 + **Asset management** - Oversee Flow sharing, ownership, and visibility across your organization
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

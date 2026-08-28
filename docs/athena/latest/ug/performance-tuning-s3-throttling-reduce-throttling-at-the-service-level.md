@@ -13,3 +13,7 @@ To avoid Amazon S3 throttling at the service level, you can monitor your usage a
 To avoid excess scanning, you can use AWS Glue ETL to periodically compact your files, or you partition the table and add partition key filters. For more information, see the following resources.
 + [How can I configure an AWS Glue ETL job to output larger files?](https://aws.amazon.com/premiumsupport/knowledge-center/glue-job-output-large-files/) (*AWS Knowledge Center*)
 + [Reading input files in larger groups](https://docs.aws.amazon.com/glue/latest/dg/grouping-input-files.html) (*AWS Glue Developer Guide*)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

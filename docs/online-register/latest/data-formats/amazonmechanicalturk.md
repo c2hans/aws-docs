@@ -25,3 +25,7 @@ Amazon Mechanical Turk provides the following APIs for data retrieval.
 | <a name="mechanicalturk-ListReviewableHITs"></a>[ListReviewableHITs](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListReviewableHITsOperation.html) | The ListReviewableHITs operation returns all of a Requester's HITs that have not been approved or rejected | List |
 | <a name="mechanicalturk-ListWorkerBlocks"></a>[ListWorkerBlocks](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListWorkerBlocksOperation.html) | The ListWorkersBlocks operation retrieves a list of Workers who are blocked from working on your HITs | List |
 | <a name="mechanicalturk-ListWorkersWithQualificationType"></a>[ListWorkersWithQualificationType](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ListWorkersWithQualificationTypeOperation.html) | The ListWorkersWithQualificationType operation returns all of the Workers with a given Qualification type | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

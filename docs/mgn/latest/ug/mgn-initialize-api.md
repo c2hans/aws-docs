@@ -30,7 +30,7 @@ You must complete both steps to finalize the service initialization process.
 ## Creating the required IAM roles
 <a name="mgn-initialize-api-iam"></a>
 
-To initialize MGN with the API, create the following IAM roles through the [IAM CreateRoleAPI](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html). Learn more about [creating IAM roles in the AWS IAM documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html). Creation of each role must include the following parameters:
+To initialize MGN with the API, create the following IAM roles through the [IAM CreateRole API](https://docs.aws.amazon.com/IAM/latest/APIReference/API_CreateRole.html). Learn more about [creating IAM roles in the AWS IAM documentation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html). Creation of each role must include the following parameters:
 
 <table>
 <thead>
@@ -65,7 +65,7 @@ To initialize MGN with the API, create the following IAM roles through the [IAM 
 
 1. Attach Managed Policy** AWSApplicationMigrationAgentPolicy\_v2** to Role **AWSApplicationMigrationAgentRole**
 
-Once the policies are attached to the roles, run the `aws mgn initialize-service` command. This will automatically create the service-linked role, create instance profiles, add Roles to Instance Profiles, and will finish service initialization.
+Once the policies are attached to the roles, run the `aws mgn initialize-service` command. This will automatically create the service-linked role, create instance profiles, and add Roles to Instance Profiles. After running this command, you must still create the replication configuration template and launch configuration template to finalize initialization.
 
 [Learn more about AWS Transform MGN roles and managed policies](security-iam-awsmanpol.md).
 
@@ -75,3 +75,7 @@ Once the policies are attached to the roles, run the `aws mgn initialize-service
 To finalize the initialization process, you will need to [create the replication template](https://docs.aws.amazon.com/mgn/latest/APIReference/API_CreateReplicationConfigurationTemplate.html) and launch template by running the following commands:
 + `aws mgn create-replication-configuration-template`
 + `aws mgn create-launch-configuration-template`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

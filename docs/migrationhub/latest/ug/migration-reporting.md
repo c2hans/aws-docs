@@ -12,3 +12,7 @@ When you’re ready to migrate, use the migration tools that best fit your needs
 Migrate your servers and applications into any AWS Region, and the migration progress reported by each tool is stored in your home Region. Stored data provides a single discovery and migration planning repository for your entire portfolio, and a single view of your migrations in multiple AWS Regions.
 
 Authorize your migration tools, such as Application Migration Service, to read discovery data from and send migration status to Migration Hub in your home Region. The migration tools read application groupings and send basic identifying information for each resource. For example, the hostname, IP address, MAC address, and VMware or hypervisor identifiers are sent, along with the resource’s migration status, from the migration’s destination Region to the Migration Hub home Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -149,3 +149,7 @@ You can also specify account and Region in your event pattern, to further limit 
 To ensure rules match the desired events, we strongly recommend you validate your event patterns. You can validate your event patterns using the EventBridge console or API:
 + In the EventBridge console, you can create and test event patterns [as part of creating a rule](eb-create-rule-visual.md), or separately by [using the Sandbox](eb-event-pattern-sandbox.md).
 + You can test your event patterns in the AWS CLI using the [test-event-pattern](https://docs.aws.amazon.com/cli/latest/reference/events/test-event-pattern.html) command.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

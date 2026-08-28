@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/keyspaces/latest/devguide/tagging-keyspa
 1.  Use [Create cost allocation reports using tags for Amazon Keyspaces](CostAllocationReports.md) to track your AWS costs per active tag.
 
  Finally, it is good practice to follow optimal tagging strategies. For information, see [AWS tagging strategies](https://d0.awsstatic.com/aws-answers/AWS_Tagging_Strategies.pdf).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

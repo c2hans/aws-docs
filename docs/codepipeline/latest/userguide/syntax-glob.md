@@ -28,3 +28,7 @@ The following rules are used to interpret glob patterns:
 + To specify all files in a directory named `directory`, but not any of its subdirectories, use `"directory/*"`.
 +  Within a bracket expression the `*`, `?` and `\` characters match themselves. The (-) character matches itself if it is the first character within the brackets, or the first character after the `!` if negating.
 +  The `{ }` characters are a group of subpatterns, where the group matches if any subpattern in the group matches. The `","` character is used to separate the subpatterns. Groups cannot be nested.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

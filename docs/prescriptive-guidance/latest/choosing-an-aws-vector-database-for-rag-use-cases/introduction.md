@@ -22,3 +22,7 @@ This guide is intended for people in these roles:
 + DevOps engineers who are responsible for deploying and maintaining vector databases in production environments, ensuring scalability and reliability.
 + AI researchers who use vector databases to store and analyze large datasets of embeddings or feature vectors.
 + AI product managers who need to understand the capabilities and limitations of vector databases to make informed decisions about product features and architecture.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

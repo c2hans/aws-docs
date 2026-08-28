@@ -75,3 +75,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/security
  **Prescriptive guidance IOTSEC15-BP03-02** *Integrate compliance checking with other problem management tools that are used by the development and operations teams.*
 
  Any work items or tasks which are generated from automated compliance of IoT application logs should be reflected back into the problem management tools used by the application and infrastructure development teams. Depending on the tools used to perform compliance checks, this integration can be built into the environment by using services such as [Amazon EventBridge](https://aws.amazon.com/eventbridge/) coupled with [Amazon Simple Queue Service](https://aws.amazon.com/pm/sqs/) and [Serverless Computing - AWS Lambda](https://aws.amazon.com/pm/lambda/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

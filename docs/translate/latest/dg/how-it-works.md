@@ -47,3 +47,7 @@ Amazon Translate can automatically detect the language used in your source text.
 If you specify a source or target language that isn't supported, Amazon Translate returns the following exceptions:
 + **UnsupportedLanguagePairException** – Amazon Translate supports translation between all supported languages. This exception is returned if either the source language or target language is unsupported. For more information, see [Supported languages](what-is-languages.md).
 + **DetectedLanguageLowConfidenceException** – If you use automatic language detection, and Amazon Translate has low confidence that it detected the correct source language, it returns this exception. If a low confidence level is acceptable, you can use the source language returned in the exception.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Translate. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query translate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

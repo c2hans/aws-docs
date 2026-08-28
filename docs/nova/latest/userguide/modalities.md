@@ -38,3 +38,7 @@ Because 25 MB is the overall payload limit, ensure that you account for the base
 
 **Note**
 Large videos and documents take time to process, regardless of input method. If boto3 SDK times-out while waiting for a response from Amazon Bedrock, ensure that you have an appropriate [read\_timeout](https://botocore.amazonaws.com/v1/documentation/api/latest/reference/config.html) value set and have upgraded boto3 to at least version 1.38.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

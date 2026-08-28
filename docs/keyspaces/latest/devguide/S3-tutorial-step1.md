@@ -74,3 +74,7 @@ The `bootstrap` command automates the following tasks.
 If the CloudFormation stack process fails, you can review the detailed error information about the failed stack in the CloudFormation console. To retry, delete the failed stack using `aws cloudformation delete-stack --stack-name {{aksglue}}`, fix the underlying issue, and run the bootstrap command again. The bootstrap command is idempotent and skips resources that already exist.
 
 After the bootstrap completes and all resources are created, proceed to [Step 2: Run the export job](S3-tutorial-step2.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

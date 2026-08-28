@@ -19,3 +19,7 @@ Amazon Cognito Sync provides the following APIs for data retrieval.
 | <a name="cognito-sync-ListIdentityPoolUsage"></a>[ListIdentityPoolUsage](https://docs.aws.amazon.com/cognitosync/latest/APIReference/API_ListIdentityPoolUsage.html) | Get a list of identity pools registered with Cognito | Read |
 | <a name="cognito-sync-ListRecords"></a>[ListRecords](https://docs.aws.amazon.com/cognitosync/latest/APIReference/API_ListRecords.html) | Get paginated records, optionally changed after a particular sync count for a dataset and identity | Read |
 | <a name="cognito-sync-QueryRecords"></a>QueryRecords | Query records | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

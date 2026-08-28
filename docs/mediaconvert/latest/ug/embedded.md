@@ -33,3 +33,7 @@ For MXF inputs, your captions are most likely on the ancillary track. Some third
 
 **Note**
 MediaConvert doesn't automatically detect which language is in each channel. You can specify that when you set up the output captions, so that MediaConvert passes the language code metadata for the captions channel into the output for downstream use.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

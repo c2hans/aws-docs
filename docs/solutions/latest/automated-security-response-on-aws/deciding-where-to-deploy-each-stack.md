@@ -27,9 +27,9 @@ The member stack must be deployed into every account and Region in which you wis
 
 Using the previous example, if you want to remediate findings from all accounts and Regions, the member stack must be deployed to all three accounts (`111111111111`, `222222222222`, and `333333333333`) and both Regions (`us-east-1` and `us-west-2`).
 
-The member roles stack must be deployed to every account, but it contains global resources (IAM roles) that can only be deployed once per account. It does not matter in which Region you deploy the member roles stack, so for simplicity we suggest deploying to the same Region in which the Admin stack is deployed.
+The member roles stack must be deployed to every account, but it contains global resources (IAM roles) that can only be deployed once for each account. It does not matter in which Region you deploy the member roles stack, so for simplicity, deploy the member roles stack to the same Region in which the Admin stack is deployed.
 
-Using the previous example, we suggest deploying the member roles stack to all three accounts (`111111111111`, `222222222222`, and `333333333333`) in `us-east-1`.
+Using the previous example, deploy the member roles stack to all three accounts (`111111111111`, `222222222222`, and `333333333333`) in `us-east-1`.
 
 ## Deciding how to deploy each stack
 <a name="deciding-how-to-deploy-each-stack"></a>
@@ -39,11 +39,11 @@ The options for deploying a stack are
 + CloudFormation StackSet (service-managed permissions)
 + CloudFormation Stack
 
-StackSets with service-managed permissions are the most convenient because they do not require deploying your own roles and can automatically deploy to new accounts in the organization. Unfortunately, this method does not support nested stacks, which we use in both the Admin stack and the member stack. The only stack that can be deployed this way is the member roles stack.
+StackSets with service-managed permissions are the most convenient because they do not require deploying your own roles and can automatically deploy to new accounts in the organization. Unfortunately, this method does not support nested stacks, used in both the Admin stack and the member stack. The only stack that can be deployed this way is the member roles stack.
 
 Be aware that when deploying to the entire organization, the organization management account is not included, so if you want to remediate findings in the organization management account, you must deploy to this account separately.
 
-The member stack must be deployed to every account and Region but cannot be deployed using StackSets with service-managed permissions because it contains nested stacks. So we suggest deploying this stack with StackSets with self-managed permissions.
+The member stack must be deployed to every account and Region but cannot be deployed using StackSets with service-managed permissions because it contains nested stacks. Deploy this stack with StackSets with self-managed permissions.
 
 The Admin stack is only deployed once, so it can be deployed as a plain CloudFormation stack or as a StackSet with self-managed permissions in a single account and Region.
 
@@ -55,7 +55,7 @@ The accounts in your organization can be configured with the consolidated contro
 **Important**
 When this feature is enabled, you must use solution version 2.0.0 or later and enable the "SC" (Security Control) playbook in both the Admin and Member stacks. These stacks deploy the automation documents needed to work with consolidated control IDs. You do not need to deploy stacks for individual standards (such as AWS FSBP) when using consolidated control findings.
 
-## China Deployment
+## China deployment
 <a name="china-deployment"></a>
 
 The solution does support deployment in China regions, however **you must use the following Launch buttons for one-click deployment in China regions, rather than the Launch buttons provided in other sections of this guide.** Using the "Launch Solution" buttons provided in upcoming sections in this guide will not work if you are deploying in China regions. You can still download the templates from any S3 bucket link and deploy the stacks by uploading the template file.
@@ -64,12 +64,12 @@ The solution does support deployment in China regions, however **you must use th
  [![automated-security-response-admin-template launch button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://cn-north-1.console.amazonaws.cn/cloudformation/home?region=cn-north-1#/stacks/new?stackName=automated-security-response-on-aws-admin&templateURL=https:%2F%2Fs3.cn-north-1.amazonaws.com.cn%2Fsolutions-reference-cn%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-admin.template&redirectId=ImplementationGuide)
 +  **automated-security-response-member-roles.template**:
 
- [![automated-security-response-admin-template launch button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://cn-north-1.console.amazonaws.cn/cloudformation/home?region=cn-north-1#/stacks/new?stackName=automated-security-response-on-aws-member-roles&templateURL=https:%2F%2Fs3.cn-north-1.amazonaws.com.cn%2Fsolutions-reference-cn%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member-roles.template&redirectId=ImplementationGuide)
+ [![automated-security-response-member-roles-template launch button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://cn-north-1.console.amazonaws.cn/cloudformation/home?region=cn-north-1#/stacks/new?stackName=automated-security-response-on-aws-member-roles&templateURL=https:%2F%2Fs3.cn-north-1.amazonaws.com.cn%2Fsolutions-reference-cn%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member-roles.template&redirectId=ImplementationGuide)
 +  **automated-security-response-member.template**:
 
- [![automated-security-response-admin-template launch button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://cn-north-1.console.amazonaws.cn/cloudformation/home?region=cn-north-1#/stacks/new?stackName=automated-security-response-on-aws-member&templateURL=https:%2F%2Fs3.cn-north-1.amazonaws.com.cn%2Fsolutions-reference-cn%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member.template&redirectId=ImplementationGuide)
+ [![automated-security-response-member-template launch button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://cn-north-1.console.amazonaws.cn/cloudformation/home?region=cn-north-1#/stacks/new?stackName=automated-security-response-on-aws-member&templateURL=https:%2F%2Fs3.cn-north-1.amazonaws.com.cn%2Fsolutions-reference-cn%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member.template&redirectId=ImplementationGuide)
 
-## GovCloud (US) Deployment
+## GovCloud (US) deployment
 <a name="govcloud-deployment"></a>
 
 The solution does support deployment in GovCloud (US) regions, however **you must use the following Launch buttons for one-click deployment in GovCloud (US) regions, rather than the Launch buttons provided in other sections of this guide.** Using the "Launch Solution" buttons provided in upcoming sections in this guide will not work if you are deploying in GovCloud (US) regions. You can still download the templates from any S3 bucket link and deploy the stacks by uploading the template file.
@@ -78,7 +78,11 @@ The solution does support deployment in GovCloud (US) regions, however **you mus
  [![automated-security-response-admin-template launch button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.amazonaws-us-gov.com/cloudformation/home?region=us-gov-west-1#/stacks/new?stackName=automated-security-response-on-aws-admin&templateURL=https:%2F%2Fs3.us-gov-west-1.amazonaws.com%2Fsolutions-reference-us-gov%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-admin.template&redirectId=ImplementationGuide)
 +  **automated-security-response-member-roles.template**:
 
- [![automated-security-response-admin-template launch button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.amazonaws-us-gov.com/cloudformation/home?region=us-gov-west-1#/stacks/new?stackName=automated-security-response-on-aws-member-roles&templateURL=https:%2F%2Fs3.us-gov-west-1.amazonaws.com%2Fsolutions-reference-us-gov%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member-roles.template&redirectId=ImplementationGuide)
+ [![automated-security-response-member-roles-template launch button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.amazonaws-us-gov.com/cloudformation/home?region=us-gov-west-1#/stacks/new?stackName=automated-security-response-on-aws-member-roles&templateURL=https:%2F%2Fs3.us-gov-west-1.amazonaws.com%2Fsolutions-reference-us-gov%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member-roles.template&redirectId=ImplementationGuide)
 +  **automated-security-response-member.template**:
 
- [![automated-security-response-admin-template launch button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.amazonaws-us-gov.com/cloudformation/home?region=us-gov-west-1#/stacks/new?stackName=automated-security-response-on-aws-member&templateURL=https:%2F%2Fs3.us-gov-west-1.amazonaws.com%2Fsolutions-reference-us-gov%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member.template&redirectId=ImplementationGuide)
+ [![automated-security-response-member-template launch button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.amazonaws-us-gov.com/cloudformation/home?region=us-gov-west-1#/stacks/new?stackName=automated-security-response-on-aws-member&templateURL=https:%2F%2Fs3.us-gov-west-1.amazonaws.com%2Fsolutions-reference-us-gov%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member.template&redirectId=ImplementationGuide)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

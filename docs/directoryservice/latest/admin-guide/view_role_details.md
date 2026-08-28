@@ -32,3 +32,7 @@ You won't see any groups or users if the AWS Management Console is disabled.
 1. Under the **Delegate Console Access** section, select the hyperlink of the IAM role you want to view. Alternatively, you can select **View policy in IAM** to view the IAM policy in the IAM console.
 
 1. On the **Selected role** page, under the **Manage users and groups for this role** section, you can view the users and groups assigned to the IAM role.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

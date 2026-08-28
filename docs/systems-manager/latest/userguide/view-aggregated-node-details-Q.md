@@ -33,3 +33,7 @@ You can also view a JSON summary of each instance's details, as well open a link
 **Topics**
 + [Learning to craft effective prompts to ask Amazon Q about your fleet](view-aggregated-node-details-Q-prompts.md)
 + [Exploring managed nodes using Amazon Q](explore-managed-nodes-using-Q.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

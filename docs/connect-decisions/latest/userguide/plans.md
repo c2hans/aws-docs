@@ -17,3 +17,7 @@ At the core of planning in Amazon Connect Decisions are three interconnected int
 **Supply Intelligence** generates forward-looking supply plans, intelligently clusters exceptions into strategic decisions ranked by impact, and runs optimization models for constraint-aware planning across your network.
 
 **Adaptive Intelligence** ties it all together—continuously learning from every plan and decision, monitoring operations 24/7, surfacing what matters, and executing approved decisions directly in existing systems to reduce planning cycles from weeks to hours.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -75,3 +75,7 @@ To encrypt your restored table using an AWS-owned key, specify the following res
 To encrypt your restored table using an AWS-managed key, omit the `kmsMasterKeyArn` parameter and specify: `"encryptionType\":\"KMS\"`.
 
 To encrypt your restored table using a customer-managed key, specify the following restore metadata: `"encryptionType\":\"KMS\",\"kmsMasterKeyArn\":\"{{arn:aws:kms:us-west-2:111122223333:key/1234abcd-12ab-34cd-56ef-1234567890ab}}\"`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

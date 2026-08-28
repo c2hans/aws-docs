@@ -30,3 +30,7 @@ resources:
 
 **Note**
 The Root OU feature is supported only in the V2 version of the manifest file (2021-03-15). If you add **Root** as an OU under `organizational_units`, do not add any other OUs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

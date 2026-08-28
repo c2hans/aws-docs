@@ -72,3 +72,7 @@ In particular, the Linux file system is case-sensitive and the Windows file syst
 If you are using a license included Visual Studio Amazon Machine Images (AMIs) on Amazon EC2, you can use the caller role (`refactoringtoolkit-RefactoringToolkitCallerRole`) without providing user credentials or editing configuration files. In this case, you do not need to follow the steps in the [AWS Identity and Access Management](dotnet-refactoring-iam.md) section of this guide. For more information, see [Install Toolkit for .NET Refactoring](dotnet-refactoring-installation.md) in this guide.
 
 If you are not using a license included Visual Studio AMI on Amazon EC2 or you prefer to create a user and assign roles to the user, see [AWS Identity and Access Management](dotnet-refactoring-iam.md) in the *Security* section of this guide to view the IAM prerequisites. Follow the steps to create the user, create the access keys, and configure your AWS profile.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

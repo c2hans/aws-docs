@@ -178,3 +178,7 @@ At this point, you successfully estimated workload costs for Windows Server Lice
 On the** My Estimate** page, you can now compare the price under both the licensing options. In this example, the shared tenancy with Windows License Included and SQL Server BYOL option is approximately half of the cost of shared tenancy with Windows License Included and SQL Server License Included.
 
 You have now completed the tutorial for using the Microsoft Windows Server and Microsoft SQL Server to generate a pricing estimate.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Pricing Calculator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pricing-calculator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

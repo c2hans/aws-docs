@@ -53,3 +53,7 @@ Aws.config[:{{<service identifier>}}] = { {{<global setting name>}}: {{<value>}}
  The `{{<service identifier>}}` can be identified by looking at the name of the corresponding [AWS SDK for Ruby gem name](https://github.com/aws/aws-sdk-ruby/tree/version-3/gems), and using the suffix that follows "`aws-sdk-`". For example:
 + For `aws-sdk-s3`, the service identifier string is "`s3`".
 + For `aws-sdk-ecs`, the service identifer string is "`ecs`".
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Ruby. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-ruby` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

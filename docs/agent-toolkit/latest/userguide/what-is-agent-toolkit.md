@@ -54,3 +54,7 @@ We recommend scoping down IAM roles to the minimum permissions that your agent n
 <a name="agent-toolkit-pricing"></a>
 
 You can use the Agent Toolkit for AWS at no additional charge. You pay only for the AWS resources your agent provisions or interacts with, at standard AWS pricing. For more information about AWS pricing, see [AWS Pricing](https://aws.amazon.com/pricing/). If you are new to AWS, you can get started with many services for free. For more information, see [AWS Free Tier](https://aws.amazon.com/free/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Agent Toolkit for AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agent-toolkit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

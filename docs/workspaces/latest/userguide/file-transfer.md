@@ -26,3 +26,7 @@ File transfer is currently supported on personal Windows WorkSpaces when using t
 1. To upload a file to the folder, choose **Upload File**, select the file that you want to upload, and choose **Open**.
 
    To download a file from the folder, click on the file that you want to download, or choose the down arrow to the right of the file name and choose **Download**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

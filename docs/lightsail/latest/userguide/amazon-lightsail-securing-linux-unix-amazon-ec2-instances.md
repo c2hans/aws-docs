@@ -186,3 +186,7 @@ The Lightsail system key, also known as the `lightsail_instance_ca.pub` key, on 
 ![Lightsail default key.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-restarting-sshd.png)
 
    The `lightsail_instance_ca.pub` key is now removed from your instance. The associated `sshd_config` file is updated to exclude that key.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

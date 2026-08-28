@@ -40,3 +40,7 @@ The application window might not receive OS-level focus in the streaming environ
 <a name="troubleshoot-linux-microphone"></a>
 
 Microphone input is not supported on the Ubuntu 22.04 LTS runtime. If your application requires microphone input, use the Proton or Microsoft Windows Server 2022 Base runtime instead. For more information, see [Amazon GameLift Streams compatible devices and browsers](compatible-devices-browsers.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

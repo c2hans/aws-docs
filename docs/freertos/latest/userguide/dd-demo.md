@@ -70,3 +70,7 @@ The AWS IoT Device Defender report is published on the MQTT topic for publishing
 <a name="dd-demo-callback-handling"></a>
 
 The [ publishCallback](https://github.com/aws/amazon-freertos/blob/main/demos/device_defender_for_aws/defender_demo.c#L302-L373) function handles incoming MQTT publish messages. It uses the `Defender_MatchTopic` API from the AWS IoT Device Defender library to check if the incoming MQTT message is from the AWS IoT Device Defender service. If the message is from the AWS IoT Device Defender service, it parses the received JSON response and extracts the report ID in the response. The report ID is then verified to be the same as the one sent in the report.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

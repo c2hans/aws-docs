@@ -88,3 +88,7 @@ The cluster setup uses parameters, including SID and System Number that are uniq
 + Cluster user – Installing cluster packages will create the user hacluster, set a password to this account to ensure that the cluster can perform the tasks which do not require root access.
 + Cluster tag – This tag is used by the AWS Stonith agent to ensure it is able to identify the correct Amazon EC2 Instances to fence. The name of the tag is customisable, and should be unique across your AWS account for this cluster pair.
 +  AWS CLI cluster profile – It is possible to define a named profile for use with Cluster API calls distinct from other use of the CLI. Each profile can specify different credentials and can also specify different AWS Regions and output formats.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

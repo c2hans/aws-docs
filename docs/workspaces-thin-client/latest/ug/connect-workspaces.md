@@ -13,3 +13,7 @@ Sign in to the AWS End User Computing service established for you by your admini
 
 **Note**
 The image shows WorkSpaces (web access). The service could be WorkSpaces (web access), WorkSpaces Applications, or WorkSpaces Secure Browser.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

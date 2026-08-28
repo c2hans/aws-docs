@@ -78,3 +78,7 @@ This subnet is the `CLOUDFRONT` service in the [AWS IP address ranges](https://d
 <a name="configure-browser-policy"></a>
 
 When you build an application with the Amazon Chime SDK client library for JavaScript, you need to configure the browser content security policies in your application. For more information, refer to the [Content Security Policy Guide](https://aws.github.io/amazon-chime-sdk-js/modules/contentsecurity_policy.html) on GitHub.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

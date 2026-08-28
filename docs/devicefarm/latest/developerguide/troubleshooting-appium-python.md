@@ -446,3 +446,7 @@ Make sure that you can unzip the test package without errors. In the following e
    AWS Device Farm doesn't support lines in the {{requirements.txt}} file that don't directly correspond to dependency packages, such as lines that specify global options for the `pip install` command. See [Requirements file format](https://pip.pypa.io/en/stable/reference/requirements-file-format/#global-options) for a list of global options.
 
    For more information, see [Automatically run Appium tests in Device Farm](test-types-appium.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,3 +59,7 @@ If you're using Provisioned Throughput with cross-Region inference, you may need
    1. Follow the steps at [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html) to attach the policy to a role to grant the role permissions.
 
 1. If you're purchasing Provisioned Throughput for a custom model that's encrypted with a customer-managed AWS KMS key, your IAM role must have permissions to decrypt the key. You can use the template at [Understand how to create a customer managed key and how to attach a key policy to it](encryption-custom-job.md#encryption-key-policy). For minimal permissions, you can use only the {{Permissions for custom model users}} policy statement.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

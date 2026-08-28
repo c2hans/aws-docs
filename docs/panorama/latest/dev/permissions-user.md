@@ -24,3 +24,7 @@ Managed policies grant permission to API actions without restricting the resourc
 The first time you use [the AWS Panorama console](https://console.aws.amazon.com/panorama/home), you need permission to create the [service role](permissions-services.md) used by the AWS Panorama Appliance. A service role gives a service permission to manage resources or interact with other services. Create this role before granting access to your users.
 
 For details on the resources and conditions that you can use to limit the scope of a user's permissions in AWS Panorama, see [Actions, resources, and condition keys for AWS Panorama](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awspanorama.html) in the Service Authorization Reference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

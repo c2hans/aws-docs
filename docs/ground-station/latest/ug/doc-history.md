@@ -44,3 +44,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/doc-history.htm
 | [New Getting Started Topic](#doc-history) | Updated the Getting Started topic, which includes the most current CloudFormation templates. | July 1, 2019 |
 | [Kindle Version](#doc-history) | Published Kindle version of the *AWS Ground Station User Guide*.  | June 20, 2019 |
 | [New service and guide](#doc-history) | This is the initial release of AWS Ground Station and the *AWS Ground Station User Guide*.  | May 23, 2019 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,3 +56,7 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-ecs
  Your replacement task set inherits the subnet, security group, platform version, and assigned public IP values from your original task set. You can override these values for your replacement task set by setting their optional properties in your AppSpec file. For more information, see [AppSpec 'resources' section for Amazon ECS deployments](reference-appspec-file-structure-resources.md#reference-appspec-file-structure-resources-ecs) and [AppSpec File example for an Amazon ECS deployment](reference-appspec-file-example.md#appspec-file-example-ecs).
 
 1.  Upload your AppSpec file to the S3 bucket you created as a prerequisite for this tutorial.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

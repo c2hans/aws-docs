@@ -48,3 +48,7 @@ def is_applicable(configurationItem, event):
 **Note**
 AWS Config managed rules and AWS Config custom policy rules handle this behavior by default.
 If you create an AWS Config custom lambd rule with Python using the AWS Config Development Kit (RDK) and AWS Config Development Kit Library (RDKlib), the imported [Evaluator](https://github.com/awslabs/aws-config-rdklib/blob/master/rdklib/evaluator.py#L56) class will check this behavior. For information on how to write rules with the RDK and RDKlib, see [Writing rules with the RDK and RDKlib](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_components.html#evaluate-config_components_logic).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -58,3 +58,7 @@ You can verify if an underlying hardware or software issue was detected for your
    + Value of **1**: The system status check failed, indicating an underlying hardware or software issue.
 
 For more information, see [Automatic instance recovery](ec2-instance-recover.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

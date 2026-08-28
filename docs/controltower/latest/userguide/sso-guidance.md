@@ -33,3 +33,7 @@ Account Factory customers with alternative identity providers (IdPs) such as Azu
 + For specific information about how AWS Control Tower works with IAM Identity Center based on your identity source, see **Considerations for AWS IAM Identity Center customers** in the [Pre-launch checks](https://docs.aws.amazon.com/controltower/latest/userguide/getting-started-prereqs.html#sso-considerations) section of the *Getting Started* page of this User Guide.
 + For additional information about how the behavior of AWS Control Tower interacts with IAM Identity Center and different identity sources, refer to [Considerations for Changing Your Identity Source](https://docs.aws.amazon.com/singlesignon/latest/userguide/manage-your-identity-source-considerations.html) in the *IAM Identity Center User Guide*.
 + See [Working with AWS IAM Identity Center and AWS Control Tower](sso.md) for more information about working with AWS Control Tower and IAM Identity Center.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

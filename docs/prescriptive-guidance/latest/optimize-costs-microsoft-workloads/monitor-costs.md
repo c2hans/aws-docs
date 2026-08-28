@@ -136,3 +136,7 @@ For more information, watch the [AWS Supports You - Visualizing Your Cost and Us
 + [Setting up required tags with AWS Config](https://docs.aws.amazon.com/config/latest/developerguide/required-tags.html) (AWS Config documentation)
 + [AWS Budgets Tutorial - Setup Alerts for AWS Billing \| Amazon Web Services](https://www.youtube.com/watch?app=desktop&v=O0sofGVT7uw) (YouTube)
 + [AWS Cost and Usage Report Query Library](https://wellarchitectedlabs.com/cost-optimization/cur_queries/) (AWS Well-Architected Labs)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

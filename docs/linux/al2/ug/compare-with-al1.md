@@ -38,3 +38,7 @@ We recommend upgrading to the latest Amazon Linux version.
  Although AL1 marked Python 2.6 as EOL with the 2018.03 release, the packages were still in the repositories to install. AL2 shipped with Python 2.7 as the earliest supported Python version.
 
  AL2023 completes the transition to Python 3, and no Python 2.x versions are included in the repositories.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

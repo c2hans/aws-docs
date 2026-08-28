@@ -42,3 +42,7 @@ Before deploying security groups for Pods, consider the following limitations an
 + The EC2 security group scope is at the Pod-level - For more information, see [Security group](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html).
 
   If you set `POD_SECURITY_GROUP_ENFORCING_MODE=standard` and `AWS_VPC_K8S_CNI_EXTERNALSNAT=false`, traffic destined for endpoints outside the VPC use the node’s security groups, not the Pod’s security groups.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

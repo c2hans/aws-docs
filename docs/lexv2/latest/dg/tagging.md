@@ -43,3 +43,7 @@ The following basic restrictions apply to tags on Amazon Lex V2 resources:
 + Valid characters for key and value – a-z, A-Z, 0-9, space, and the following characters: \_.:/=\+- and @
 + Keys and values are case-sensitive
 + Don't use `aws:` as a prefix for keys, it's reserved for AWS use
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

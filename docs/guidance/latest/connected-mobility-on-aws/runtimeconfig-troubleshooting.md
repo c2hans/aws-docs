@@ -42,3 +42,7 @@ make regenerate-runtime-config \
 After the command completes, perform a hard refresh in the browser (Cmd\+Shift\+R on macOS or Ctrl\+Shift\+R on Windows/Linux) to clear the cached `runtimeConfig.json`. CloudFront invalidation runs automatically as part of the make target; allow 60-120 seconds for the invalidation to propagate before retrying.
 
 If the problem recurs after future deployments of individual stacks, run `make regenerate-runtime-config` after every stack deploy that adds a new backend service. As of v0.2.x, the `phase1`, `deploy-commands`, `deploy-simulation`, `data-processing`, and `deploy-ws-fanout` Makefile targets run this step automatically as a post-deploy soft step.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ Labels that exist from the evaluation of the alert query can be used in the aler
 1. Refer to the alert query labels in the alert rule name or the alert notification message field by using the `${Label}` syntax. For more information about alert query labels, see [Message templating](https://grafana.com/docs/grafana/v8.4/alerting/unified-alerting/message-templating/) in the Grafana documentation.
 
 1. Choose **Save** in the upper right corner.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

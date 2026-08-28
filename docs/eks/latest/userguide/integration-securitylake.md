@@ -42,3 +42,7 @@ For more information about using Security Lake with Amazon EKS and setting up da
 Security Lake normalizes EKS log events to the OCSF format, making it easier to analyze and correlate the data with other security events. You can use various tools and services, such as Amazon Athena, Amazon QuickSight, or third-party security analytics tools, to query and visualize the normalized data.
 
 For more information about the OCSF mapping for EKS log events, refer to the [mapping reference](https://github.com/ocsf/examples/tree/main/mappings/markdown/AWS/v1.1.0/EKS%20Audit%20Logs) in the OCSF GitHub repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

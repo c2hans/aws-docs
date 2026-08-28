@@ -46,3 +46,7 @@ This guide discusses an approach for replatforming mainframe COBOL applications 
 + **Flexibility and future-proofing:** For companies that have significant investments in mainframe skills and applications, replatforming provides a pragmatic path to modernization that balances innovation with continuity. It offers the flexibility to retain critical data structures and access methods initially, while also setting the stage for future modernization efforts, including eventual data migration to fully cloud-native solutions.
 
 Organizations can follow the replatforming approach to modernize at their own pace and address immediate needs while planning for long-term digital transformation goals. This approach also gives companies the opportunity to train their staff on cloud-native services.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

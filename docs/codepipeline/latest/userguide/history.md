@@ -159,3 +159,7 @@ The following table describes important changes in each release of the CodePipel
 | Topic update | A link was added in [Quotas in AWS CodePipeline](limits.md) to point to information about which limits can be changed. | July 15, 2015 |
 | Topic update | The managed policies section in Authentication and Access Control was updated. | July 10, 2015 |
 | Initial Public Release | This is the initial public release of the CodePipeline User Guide. | July 9, 2015 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ For information about using a DX with AWS services, see the Resiliency Toolkit s
 ![AWS Transit Gateway network diagram showing connections to VPCs and Direct Connect.](http://docs.aws.amazon.com/managedservices/latest/onboardingguide/images/malz-cent-edge.png)
 
 To increase the resiliency of your connectivity, we recommend that you attach at least two transit virtual interfaces from different AWS Direct Connect locations to the Direct Connect gateway. For more information, see the [AWS Direct Connect resiliency recommendation](https://aws.amazon.com/directconnect/resiliency-recommendation/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

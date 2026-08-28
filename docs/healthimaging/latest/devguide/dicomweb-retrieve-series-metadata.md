@@ -52,3 +52,7 @@ Use the `GetDICOMSeriesMetadata` action to retrieve the metadata for a DICOM ser
 ------
 **Note**
 The `imageSetId` parameter is required to retrieve series metadata for non-primary image sets. The `GetDICOMInstanceMetadata` action will only return series metadata for primary image sets if the `datastoreId`, `studyInstanceUID`, `seriesInstanceUID` are specified (without an `imagesetID`).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

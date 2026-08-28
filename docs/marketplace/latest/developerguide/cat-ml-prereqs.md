@@ -13,3 +13,7 @@ Ensure that you have the following before getting started with publishing your m
 + A publicly accessible Amazon Simple Storage Service (Amazon S3) bucket to host your company logo and EULA, if you provide one. You enter the URL for the S3 bucket in your `ChangeSet` JSON file.
 + A valid SageMaker AI ARN of the model package or algorithm resource you want to list.
 + A valid IAM role that has a trust relationship with the AWS Marketplace service principal and provides access to your package. For more information about the role, refer to *IAM role for the AWS Marketplace service principal* in the [Prerequisites](https://docs.aws.amazon.com/marketplace/latest/userguide/ml-publishing-prereq.html) page for machine learning products.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

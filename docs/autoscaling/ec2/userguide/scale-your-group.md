@@ -22,3 +22,7 @@ Amazon EC2 Auto Scaling provides a number of ways to adjust scaling to best meet
 + [Predictive scaling](ec2-auto-scaling-predictive-scaling.md)
 + [Control instance termination](as-instance-termination.md)
 + [Suspend-resume processes](as-suspend-resume-processes.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

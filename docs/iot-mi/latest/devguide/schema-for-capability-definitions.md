@@ -544,3 +544,7 @@ Events are schema-managed, unidirectional signals implemented by the device.
 Implement events according to these constraints:
 + Include only unique events in the events array
 + Include any number of events that fit within the schema document size limits
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

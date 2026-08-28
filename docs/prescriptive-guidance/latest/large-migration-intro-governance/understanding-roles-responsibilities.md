@@ -61,3 +61,7 @@ Your project management team should do the following to foster alignment and dri
 + Define roles and responsibilities early to clearly specify ownership for all tasks.
 + Develop a regular communication cadence to help ensure that all team members are actively participating in key meetings.
 + Use the escalation process when a participant is not meeting their commitments.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

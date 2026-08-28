@@ -29,3 +29,7 @@ This topic describes the differences in the responsibility model if the connecte
 + Installing and upgrading Amazon EKS Connector.
 + Maintaining the hardware, software, and infrastructure that supports the connected Kubernetes cluster.
 + Securing their AWS accounts (for example, through safeguarding your [root user credentials](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#lock-away-credentials)).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

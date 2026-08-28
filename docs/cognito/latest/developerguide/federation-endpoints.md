@@ -60,3 +60,7 @@ The updated issuer type is not currently compatible with Application Load Balanc
 + [The user attributes endpoint](userinfo-endpoint.md)
 + [The token revocation endpoint](revocation-endpoint.md)
 + [The IdP SAML assertion endpoint](saml2-idpresponse-endpoint.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

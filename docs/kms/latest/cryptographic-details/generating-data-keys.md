@@ -67,3 +67,7 @@ The following is the response syntax.
 The management of data keys is left to you as the application developer. For best practice client-side encryption with AWS KMS data keys (but not data key pairs), you can use the [AWS Encryption SDK](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/).
 
 Data keys can be rotated at any frequency. Further, the data key can be reencrypted under a different KMS key or a rotated KMS key using the `ReEncrypt` API operation. For details, see [ReEncrypt](https://docs.aws.amazon.com/kms/latest/APIReference/API_ReEncrypt.html) in the *AWS Key Management Service API Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

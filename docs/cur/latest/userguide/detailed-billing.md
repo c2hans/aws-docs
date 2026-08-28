@@ -19,3 +19,7 @@ AWS stores DBR in Amazon S3 as CSV files using the following naming convention:
 AWS recreates Detailed Billing Reports (DBR) multiple times a day, overwriting the reports. When AWS overwrites reports, line items might be in a different order than they were in previous reports. A final report is created at the end of the month. For the next month, AWS creates a new report file instead of overwriting the final report from the previous month. Reports for previous months remain in your S3 bucket until you delete them.
 
 For information on how to migrate your DBR to AWS CUR, see [Migrating from Detailed Billing Reports to Cost and Usage Reports](detailed-billing-migrate.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

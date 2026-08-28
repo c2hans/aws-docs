@@ -30,3 +30,7 @@ To access your logs, ensure that you have one of the required IAM roles and are 
 | 3 | EPS Hosts (DSM) | Information regarding the enrollment of instances onto the Deep Security Management platform. | CloudWatch Logs: /{{{instance\_ID}}}/var/log/DSM.log |
 | 4 | Directory Services | Information regarding account login, account management, detailed tracking, object access, policy change, and privilege use within the account’s directory.<br />You must explicitly enable Directory Services logging. For information, see [Enabling logging for supported services](log-customize-enable-service.md). | CloudWatch Logs: /aws/directoryservice/{{{directory\_ID}}}-{{{directory\_DNS\_name}}} |
 | 5 | Lambdas | Output of various lambdas, which assist in automated operational actions within the account. | CloudWatch Logs: /aws/lambda/{{{Lambda\_name}}} |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

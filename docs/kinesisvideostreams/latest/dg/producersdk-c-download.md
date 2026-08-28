@@ -17,3 +17,7 @@ If you miss running git clone with `--recursive`, run `git submodule update --in
 For more information, see the `README.md` in [https://github.com/awslabs/amazon-kinesis-video-streams-producer-c.git](https://github.com/awslabs/amazon-kinesis-video-streams-producer-c.git).
 
 1. Open the code in the integrated development environment (IDE) of your choice (for example, [Eclipse](https://www.eclipse.org/)).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

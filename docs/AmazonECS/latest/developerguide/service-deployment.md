@@ -85,3 +85,7 @@ The following information provides details about service deployment states:
 +  `ROLLBACK_IN_PROGRESS` - The service deployment state moves to `ROLLBACK_IN_PROGRESS` when the rollback option is in use for the failure detection mechanism (the circuit breaker or alarm-based) and the service fails.
 
    The state moves to `ROLLBACK_SUCCESSFUL`, or `ROLLBACK_FAILED`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

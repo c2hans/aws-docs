@@ -36,3 +36,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hexagonal-a
 **Q. Which additional design patterns can I use with hexagonal architecture? **
 
 **A. **Use the [CQRS pattern](https://www.cosmicpython.com/book/chapter_12_cqrs.html) to support scaling of the overall system. Use the [repository pattern](https://www.cosmicpython.com/book/chapter_02_repository.html) to store and restore your domain model. Use the unit of work pattern to manage transactional process steps. Use composition over inheritance to model domain aggregates, entities, and value objects. Do not build complex object hierarchies.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-pe
   +  Budget management transitions from annual project funding to product funding.
   +  Teams are stable and work is brought to the teams by product owners through a well-defined, prioritized backlog.
 +  **Encourage experimentation to drive innovation** — Product teams are knowledgeable about business process and are customer obsessed. They have well-established prioritization criteria and are experimenting in a surrounding that fosters creativity. Product teams have a [Minimum Loveable Product](https://productschool.com/blog/product-management-2/minimum-lovable-product/) (MLP) mindset in terms of making fast changes through real-time and frequent input from end users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

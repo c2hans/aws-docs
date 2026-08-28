@@ -111,3 +111,7 @@ If you have worker node redundancy, downgrade the back-up nodes first and then t
 1. When the node has rebooted, the Conductor Live web interface displays a message to indicate that the node is back online. Refresh your web browser on the Elemental Live node to load the updated web interface.
 
 1. Repeat the downgrade steps on each worker node before moving on to the next step in the downgrade process.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

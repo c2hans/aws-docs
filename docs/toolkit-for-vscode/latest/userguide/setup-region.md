@@ -36,3 +36,7 @@ To hide a Region from the AWS Explorer view, complete the following procedure.
 1. Choose **Show or Hide Regions** to open the **AWS: Show or Hide Regions** options in VS Code.
 
 1. Deselect the Regions that you want to hide in the AWS Explorer view.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

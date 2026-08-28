@@ -71,3 +71,7 @@ The solution includes a Migration Factory web interface which can be hosted, by 
 + Run automation scripts to automate migration activities such as check prerequisites, install MGN agents
 + Create migration credentials to connect to the source servers
 + Connect to AWS services such as AWS Application Migration Service and AWS Systems Manager to automate the migration process
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

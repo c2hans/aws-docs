@@ -69,3 +69,7 @@ Once you have configured your stream with a resource-based policy that gives you
 When using the Lambda console, paste the stream ARN directly into the DynamoDB table input field in the event source mapping creation page.
 
  **Note:** Cross-region triggers are not supported.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

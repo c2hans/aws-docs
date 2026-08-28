@@ -63,3 +63,7 @@ To monitor for resource share failures, set up an Amazon EventBridge rule that a
 As long as that rule is enabled, any AWS RAM resource share that fails generates an SNS alert to the recipients of the topic you published to.
 
 You can also confirm that shared capacity reservations are accessible to the accounts you shared them with by attempting to [view them in the Amazon EC2 console from those accounts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservation-sharing.html#identifying-shared-cr).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RAM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ram` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

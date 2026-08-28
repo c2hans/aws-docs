@@ -16,3 +16,7 @@ PANW rules in DNS Firewall can have different sync states that indicate their st
 | CREATION\_FAILED | The rule failed to create because you are not subscribed to the PANW product. | To retry rule creation after subscribing, you must delete the rule from the rule group and create the rule again. |
 
 To check rule status in the console, navigate to the DNS Firewall rule group and check the **Status** column in the rules table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

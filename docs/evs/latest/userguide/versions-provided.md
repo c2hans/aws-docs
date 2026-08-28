@@ -58,7 +58,8 @@ Example response:
             "defaultEsxVersion": "ESXi-8.0U3g-24859861",
             "instanceTypes": [
                 "i4i.metal",
-                "i7i.metal-24xl"
+                "i7i.metal-24xl",
+                "i7i.metal-48xl"
             ]
         }
     ],
@@ -67,14 +68,36 @@ Example response:
             "instanceType": "i4i.metal",
             "esxVersions": [
                 "ESXi-8.0U3b-24280767",
-                "ESXi-8.0U3g-24859861"
+                "ESXi-8.0U3g-24859861",
+                "ESXi-9.0.2.0.25148076",
+                "ESXi-9.0.2.0100.25595025",
+                "ESXi-9.1.0.0100.25433460",
+                "ESXi-9.1.0.0200.25557999",
+                "ESXi-8.0U3k-25595708"
             ]
         },
         {
             "instanceType": "i7i.metal-24xl",
             "esxVersions": [
                 "ESXi-8.0U3b-24280767",
-                "ESXi-8.0U3g-24859861"
+                "ESXi-8.0U3g-24859861",
+                "ESXi-9.0.2.0.25148076",
+                "ESXi-9.0.2.0100.25595025",
+                "ESXi-9.1.0.0100.25433460",
+                "ESXi-9.1.0.0200.25557999",
+                "ESXi-8.0U3k-25595708"
+            ]
+        },
+        {
+            "instanceType": "i7i.metal-48xl",
+            "esxVersions": [
+                "ESXi-8.0U3b-24280767",
+                "ESXi-8.0U3g-24859861",
+                "ESXi-9.0.2.0.25148076",
+                "ESXi-9.0.2.0100.25595025",
+                "ESXi-9.1.0.0100.25433460",
+                "ESXi-9.1.0.0200.25557999",
+                "ESXi-8.0U3k-25595708"
             ]
         }
     ]
@@ -89,9 +112,9 @@ Amazon EVS currently provides the following VCF versions for environment creatio
 
 | VCF version | Default ESX version | Status | EC2 instance types |
 | --- | --- | --- | --- |
-| VCF-5.2.2 | ESXi-8.0U3g-24859861 | AVAILABLE | i4i.metal, i7i.metal-24xl |
+| SELF\_DEPLOYED | N/A | AVAILABLE | i4i.metal, i7i.metal-24xl, i7i.metal-48xl |
+| VCF-5.2.2 | ESXi-8.0U3g-24859861 | AVAILABLE | i4i.metal, i7i.metal-24xl, i7i.metal-48xl |
 | VCF-5.2.1 | ESXi-8.0U3b-24280767 | RESTRICTED | i4i.metal, i7i.metal-24xl |
-| SELF\_DEPLOYED | N/A | AVAILABLE | i4i.metal, i7i.metal-24xl |
 
 **Note**
 When creating a new Amazon EVS environment, you must specify a VCF version. Specify `SELF_DEPLOYED` to provision infrastructure only and install VCF (including ESXi) yourself. For more information, see [Creating an Amazon EVS environment with Self-deployed mode](getting-started.md#getting-started-self-deployed).
@@ -118,3 +141,7 @@ If you need access to a VCF version that with a `RESTRICTED` status, [contact AW
 + Your use case and business justification (for example, security/compliance, compatibility/dependency, and others)
 
  AWS Support will review your request and either approve or request additional information. After approval, the version status will change to `AVAILABLE` in the AWS console or `get-versions` API response.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

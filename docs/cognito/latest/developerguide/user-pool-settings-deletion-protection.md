@@ -26,3 +26,7 @@ You can activate or deactivate deletion protection status in the **Deletion prot
 1. Choose the **Settings** menu, navigate to the **User pool security** tab, and locate **Deletion Protection**. Select **Activate** or **Deactivate**.
 
 1. Confirm your choice in the next dialogue.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

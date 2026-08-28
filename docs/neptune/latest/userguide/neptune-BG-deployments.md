@@ -36,3 +36,7 @@ Before launching the Neptune Blue/Green stack:
 + All instances must also be in sync with the [DB cluster parameter group](parameter-groups.md).
 + The Neptune Blue/Green solution requires a DynamoDB VPC endpoint in the VPC where your blue cluster is located. See [Using Amazon VPC endpoints to access DynamoDB](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/network-isolation.html#vpc-endpoints-dynamodb).
 + Choose at time to run the solution when the write workload on your blue production DB cluster will be as light as possible. Avoid, for example, running the solution when a bulk load will be taking place, or when there's likely to be a large number of write operations for any other reason.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

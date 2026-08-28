@@ -22,3 +22,7 @@ In addition, when you add an AWS resource tag to your Storage Lens group, you ac
 + [Listing all Storage Lens groups](storage-lens-groups-list.md)
 + [Viewing Storage Lens group details](storage-lens-groups-view.md)
 + [Deleting a Storage Lens group](storage-lens-groups-delete.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,15 +5,15 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/new-AL2-AL202
 # New packages in AL2023.12 since AL2
 <a name="new-AL2-AL2023.12"></a>
 
- Comparing AL2 version 2026-07-24 to AL2023.12 version [2023.12.20260724](relnotes-2023.12.20260724.md).
+ Comparing AL2 version 2026-08-28 to AL2023.12 version [2023.12.20260817](relnotes-2023.12.20260817.md).
 
 | Package Type | Number of new packages in AL2023.12 compared to AL2 |
 | --- | --- |
-| Source RPMs | 1230 |
-| Total Binary RPMs | 4902 |
-|  noarch binary RPMs | 1615 |
-|  x86\_64 binary RPMs | 1651 |
-|  aarch64 binary RPMs | 1636 |
+| Source RPMs | 1242 |
+| Total Binary RPMs | 5141 |
+|  noarch binary RPMs | 1626 |
+|  x86\_64 binary RPMs | 1765 |
+|  aarch64 binary RPMs | 1750 |
 
 New packages in Amazon Linux 2023:
 
@@ -22,7 +22,12 @@ New packages in Amazon Linux 2023:
   - **RPM:**  7zip-reduced  / **Architectures:** aarch64, x86\_64
   - **RPM:**  7zip-standalone  / **Architectures:** aarch64, x86\_64
   - **RPM:**  7zip-standalone-all  / **Architectures:** aarch64, x86\_64
-  - **Version:** 26.01-14.amzn2023.0.1
+  - **Version:** 26.02-17.amzn2023.0.1
+
+- ** `aardvark-dns` **
+  - **RPM:**  aardvark-dns
+  - **Architectures:** aarch64, x86\_64
+  - **Version:** 1.17.1-1.amzn2023.0.1
 
 - ** `abseil-cpp` **
   - **RPM:**  abseil-cpp  / **Architectures:** aarch64, x86\_64
@@ -81,7 +86,7 @@ New packages in Amazon Linux 2023:
 - ** `ansible-core` **
   - **RPM:**  ansible-core  / **Architectures:** aarch64, x86\_64
   - **RPM:**  ansible-test  / **Architectures:** aarch64, x86\_64
-  - **Version:** 2.15.3-1.amzn2023.0.12
+  - **Version:** 2.15.3-1.amzn2023.0.13
 
 - ** `ansible-packaging` **
   - **RPM:**  ansible-packaging  / **Architectures:** noarch
@@ -160,6 +165,11 @@ New packages in Amazon Linux 2023:
   - **Architectures:** aarch64, x86\_64
   - **Version:** 1.1.2-1.amzn2023
 
+- ** `aws-workload-credentials-provider` **
+  - **RPM:**  aws-workload-credentials-provider
+  - **Architectures:** aarch64, x86\_64
+  - **Version:** 3.1.1-1.amzn2023
+
 - ** `BabelfishDump` **
   - **RPM:**  BabelfishDump
   - **Architectures:** aarch64, x86\_64
@@ -236,6 +246,11 @@ New packages in Amazon Linux 2023:
   - **RPM:**  bubblewrap
   - **Architectures:** aarch64, x86\_64
   - **Version:** 0.10.0-1.amzn2023.0.1
+
+- ** `buildah` **
+  - **RPM:**  buildah
+  - **Architectures:** aarch64, x86\_64
+  - **Version:** 1.43.1-1.amzn2023.0.1
 
 - ** `byte-buddy` **
   - **RPM:**  byte-buddy  / **Architectures:** noarch
@@ -347,6 +362,11 @@ New packages in Amazon Linux 2023:
   - **Architectures:** noarch
   - **Version:** 0.1.2-1.amzn2023.0.1
 
+- ** `containers-common` **
+  - **RPM:**  containers-common  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  containers-common-extra  / **Architectures:** aarch64, x86\_64
+  - **Version:** 0.67.0-1.amzn2023.0.2
+
 - ** `cppcheck` **
   - **RPM:**  cppcheck  / **Architectures:** aarch64, x86\_64
   - **RPM:**  cppcheck-htmlreport  / **Architectures:** aarch64, x86\_64
@@ -360,7 +380,7 @@ New packages in Amazon Linux 2023:
 - ** `crypto-policies` **
   - **RPM:**  crypto-policies  / **Architectures:** noarch
   - **RPM:**  crypto-policies-scripts  / **Architectures:** noarch
-  - **Version:** 20260224-1.gitea0f072.amzn2023.0.4
+  - **Version:** 20260224-1.gitea0f072.amzn2023.0.6
 
 - ** `csnappy` **
   - **RPM:**  csnappy  / **Architectures:** aarch64, x86\_64
@@ -416,7 +436,7 @@ New packages in Amazon Linux 2023:
 - ** `dnf-plugin-support-info` **
   - **RPM:**  dnf-plugin-support-info
   - **Architectures:** noarch
-  - **Version:** 2.0.0-1.amzn2023
+  - **Version:** 2.0.0-231.amzn2023
 
 - ** `docbook2X` **
   - **RPM:**  docbook2X
@@ -439,7 +459,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  dotnet-sdk-dbg-10.0  / **Architectures:** aarch64, x86\_64
   - **RPM:**  dotnet-targeting-pack-10.0  / **Architectures:** aarch64, x86\_64
   - **RPM:**  dotnet-templates-10.0  / **Architectures:** aarch64, x86\_64
-  - **Version:** 10.0.9-1.amzn2023.0.1
+  - **Version:** 10.0.10-1.amzn2023.0.1
 
 - ** `dotnet6.0` **
   - **RPM:**  aspnetcore-runtime-6.0  / **Architectures:** aarch64, x86\_64
@@ -466,7 +486,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  dotnet-sdk-dbg-8.0  / **Architectures:** aarch64, x86\_64
   - **RPM:**  dotnet-targeting-pack-8.0  / **Architectures:** aarch64, x86\_64
   - **RPM:**  dotnet-templates-8.0  / **Architectures:** aarch64, x86\_64
-  - **Version:** 8.0.28-1.amzn2023.0.1
+  - **Version:** 8.0.29-1.amzn2023.0.1
 
 - ** `dotnet9.0` **
   - **RPM:**  aspnetcore-runtime-9.0  / **Architectures:** aarch64, x86\_64
@@ -483,7 +503,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  dotnet-targeting-pack-9.0  / **Architectures:** aarch64, x86\_64
   - **RPM:**  dotnet-templates-9.0  / **Architectures:** aarch64, x86\_64
   - **RPM:**  netstandard-targeting-pack-2.1  / **Architectures:** aarch64, x86\_64
-  - **Version:** 9.0.17-1.amzn2023.0.2
+  - **Version:** 9.0.18-1.amzn2023.0.1
 
 - ** `duktape` **
   - **RPM:**  duktape  / **Architectures:** aarch64, x86\_64
@@ -553,7 +573,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  fail2ban-server  / **Architectures:** noarch
   - **RPM:**  fail2ban-systemd  / **Architectures:** noarch
   - **RPM:**  fail2ban-tests  / **Architectures:** noarch
-  - **Version:** 1.1.0-1.amzn2023.0.1
+  - **Version:** 1.1.0-1.amzn2023.0.2
 
 - ** `fakeroot` **
   - **RPM:**  fakeroot  / **Architectures:** aarch64, x86\_64
@@ -563,7 +583,7 @@ New packages in Amazon Linux 2023:
 - ** `fasterxml-oss-parent` **
   - **RPM:**  fasterxml-oss-parent
   - **Architectures:** noarch
-  - **Version:** 58-2.amzn2023.0.1
+  - **Version:** 75-2.amzn2023.0.1
 
 - ** `fcgi` **
   - **RPM:**  fcgi  / **Architectures:** aarch64, x86\_64
@@ -811,7 +831,7 @@ New packages in Amazon Linux 2023:
 - ** `gnome-remote-desktop` **
   - **RPM:**  gnome-remote-desktop
   - **Architectures:** aarch64, x86\_64
-  - **Version:** 47.3-1.amzn2023.0.1
+  - **Version:** 47.3-1.amzn2023.0.3
 
 - ** `gnome-shell-extension-dash-to-dock` **
   - **RPM:**  gnome-shell-extension-dash-to-dock
@@ -1041,17 +1061,17 @@ New packages in Amazon Linux 2023:
 - ** `jackson-annotations` **
   - **RPM:**  jackson-annotations  / **Architectures:** noarch
   - **RPM:**  jackson-annotations-javadoc  / **Architectures:** noarch
-  - **Version:** 2.16.1-3.amzn2023.0.1
+  - **Version:** 2.21-7.amzn2023.0.1
 
 - ** `jackson-bom` **
   - **RPM:**  jackson-bom
   - **Architectures:** noarch
-  - **Version:** 2.16.1-3.amzn2023.0.1
+  - **Version:** 2.21.5-3.amzn2023.0.1
 
 - ** `jackson-core` **
   - **RPM:**  jackson-core
   - **Architectures:** noarch
-  - **Version:** 2.16.1-4.amzn2023.0.1
+  - **Version:** 2.21.5-2.amzn2023.0.1
 
 - ** `jackson-databind` **
   - **RPM:**  jackson-databind
@@ -1061,7 +1081,7 @@ New packages in Amazon Linux 2023:
 - ** `jackson-parent` **
   - **RPM:**  jackson-parent
   - **Architectures:** noarch
-  - **Version:** 2.16-4.amzn2023.0.1
+  - **Version:** 2.21-2.amzn2023.0.1
 
 - ** `jakarta-activation` **
   - **RPM:**  jakarta-activation  / **Architectures:** noarch
@@ -1124,7 +1144,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  [`java-21-amazon-corretto-headless`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  [`java-21-amazon-corretto-javadoc`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
   - **RPM:**  [`java-21-amazon-corretto-jmods`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
-  - **Version:** 21.0.11\+10-1.amzn2023.1
+  - **Version:** 21.0.12\+8-1.amzn2023.1
 
 - ** [`java-22-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html) **
   - **RPM:**  [`java-22-amazon-corretto`](https://docs.aws.amazon.com/linux/al2023/ug/java.html)  / **Architectures:** aarch64, x86\_64
@@ -1159,7 +1179,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  java-25-amazon-corretto-headless  / **Architectures:** aarch64, x86\_64
   - **RPM:**  java-25-amazon-corretto-javadoc  / **Architectures:** aarch64, x86\_64
   - **RPM:**  java-25-amazon-corretto-jmods  / **Architectures:** aarch64, x86\_64
-  - **Version:** 25.0.3\+9-1.amzn2023.1
+  - **Version:** 25.0.4\+7-1.amzn2023.1
 
 - ** `java-26-amazon-corretto` **
   - **RPM:**  java-26-amazon-corretto  / **Architectures:** aarch64, x86\_64
@@ -1168,12 +1188,12 @@ New packages in Amazon Linux 2023:
   - **RPM:**  java-26-amazon-corretto-headless  / **Architectures:** aarch64, x86\_64
   - **RPM:**  java-26-amazon-corretto-javadoc  / **Architectures:** aarch64, x86\_64
   - **RPM:**  java-26-amazon-corretto-jmods  / **Architectures:** aarch64, x86\_64
-  - **Version:** 26.0.1\+8-1.amzn2023.1
+  - **Version:** 26.0.2\+10-1.amzn2023.1
 
 - ** `javapackages-bootstrap` **
   - **RPM:**  javapackages-bootstrap
   - **Architectures:** noarch
-  - **Version:** 1.5.0^20220105.git9f283b7-3.amzn2023.0.9
+  - **Version:** 1.5.0^20220105.git9f283b7-3.amzn2023.0.10
 
 - ** `javaparser` **
   - **RPM:**  javaparser  / **Architectures:** noarch
@@ -1228,7 +1248,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  jbig2dec  / **Architectures:** aarch64, x86\_64
   - **RPM:**  jbig2dec-devel  / **Architectures:** aarch64, x86\_64
   - **RPM:**  jbig2dec-libs  / **Architectures:** aarch64, x86\_64
-  - **Version:** 0.19-4.amzn2023.0.2
+  - **Version:** 0.19-4.amzn2023.0.3
 
 - ** `jcip-annotations` **
   - **RPM:**  jcip-annotations  / **Architectures:** noarch
@@ -1298,6 +1318,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  kernel6.12-modules-extra-common  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel6.12-tools  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel6.12-tools-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.12.100-125.179  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.20-23.97  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.22-27.96  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.23-29.97  / **Architectures:** aarch64, x86\_64
@@ -1337,9 +1358,11 @@ New packages in Amazon Linux 2023:
   - **RPM:**  kernel-livepatch-6.12.94-123.176  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.94-123.180  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.12.94-123.190  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.12.94-123.192  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.12.95-124.187  / **Architectures:** aarch64, x86\_64
   - **RPM:**  perf6.12  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-perf6.12  / **Architectures:** aarch64, x86\_64
-  - **Version:** 6.12.94-123.190.amzn2023
+  - **Version:** 6.12.100-125.179.amzn2023
 
 - ** `kernel6.18` **
   - **RPM:**  bpftool6.18  / **Architectures:** aarch64, x86\_64
@@ -1369,11 +1392,14 @@ New packages in Amazon Linux 2023:
   - **RPM:**  kernel-livepatch-6.18.36-69.136  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.18.36-69.138  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.18.38-73.137  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.18.38-76.139  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.18.39-79.141  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kernel-livepatch-6.18.41-94.142  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kernel-livepatch-6.18.8-9.213  / **Architectures:** aarch64, x86\_64
   - **RPM:**  microvm-kernel6.18  / **Architectures:** aarch64, x86\_64
   - **RPM:**  perf6.18  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-perf6.18  / **Architectures:** aarch64, x86\_64
-  - **Version:** 6.18.38-73.137.amzn2023
+  - **Version:** 6.18.41-94.142.amzn2023
 
 - ** `kernel-srpm-macros` **
   - **RPM:**  kernel-rpm-macros  / **Architectures:** noarch
@@ -1403,11 +1429,12 @@ New packages in Amazon Linux 2023:
   - **RPM:**  kiwi-cli  / **Architectures:** noarch
   - **RPM:**  kiwi-systemdeps  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kiwi-systemdeps-bootloaders  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  kiwi-systemdeps-containers  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kiwi-systemdeps-core  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kiwi-systemdeps-disk-images  / **Architectures:** aarch64, x86\_64
   - **RPM:**  kiwi-systemdeps-filesystems  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3-kiwi  / **Architectures:** noarch
-  - **Version:** 10.2.38-1.amzn2023
+  - **Version:** 10.3.0-1.amzn2023
 
 - ** `kiwi-image-descriptions-examples` **
   - **RPM:**  kiwi-image-descriptions-examples
@@ -2020,6 +2047,26 @@ New packages in Amazon Linux 2023:
   - **RPM:**  libstemmer-devel  / **Architectures:** aarch64, x86\_64
   - **Version:** 0-16.585svn.amzn2023.0.2
 
+- ** `libtalloc-latest` **
+  - **RPM:**  libtalloc-latest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libtalloc-latest-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-talloc-latest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-talloc-latest-devel  / **Architectures:** aarch64, x86\_64
+  - **Version:** 2.4.4-1.amzn2023.0.1
+
+- ** `libtdb-latest` **
+  - **RPM:**  libtdb-latest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libtdb-latest-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-tdb-latest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  tdb-latest-tools  / **Architectures:** aarch64, x86\_64
+  - **Version:** 1.4.15-1.amzn2023.0.1
+
+- ** `libtevent-latest` **
+  - **RPM:**  libtevent-latest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libtevent-latest-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-tevent-latest  / **Architectures:** aarch64, x86\_64
+  - **Version:** 0.17.1-1.amzn2023.0.1
+
 - ** `libtraceevent` **
   - **RPM:**  libtraceevent  / **Architectures:** aarch64, x86\_64
   - **RPM:**  libtraceevent-devel  / **Architectures:** aarch64, x86\_64
@@ -2486,7 +2533,7 @@ New packages in Amazon Linux 2023:
 - ** `mount-s3` **
   - **RPM:**  mount-s3
   - **Architectures:** aarch64, x86\_64
-  - **Version:** 1.22.3-1.amzn2023
+  - **Version:** 1.23.0-1.amzn2023
 
 - ** `mpc` **
   - **RPM:**  mpc
@@ -2518,6 +2565,62 @@ New packages in Amazon Linux 2023:
   - **Architectures:** noarch
   - **Version:** 1.0.14-2.amzn2023.0.1
 
+- ** `nagios-plugins` **
+  - **RPM:**  nagios-plugins  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-all  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-apt  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-breeze  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-by\_ssh  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-cluster  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-dhcp  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-dig  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-disk  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-disk\_smb  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-dns  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-dummy  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-file\_age  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-flexlm  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-fping  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-hpjd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-http  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-icmp  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-ide\_smart  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-ifoperstatus  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-ifstatus  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-ircd  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-ldap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-load  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-log  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-mailq  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-mrtg  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-mrtgtraf  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-mysql  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-nagios  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-nt  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-ntp  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-nwstat  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-oracle  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-overcr  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-perl  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-pgsql  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-ping  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-procs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-real  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-remove\_perfdata  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-rpc  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-sensors  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-smtp  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-snmp  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-ssh  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-swap  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-tcp  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-time  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-ups  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-uptime  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-users  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  nagios-plugins-wave  / **Architectures:** aarch64, x86\_64
+  - **Version:** 2.4.12-4.amzn2023.0.1
+
 - ** `nbd` **
   - **RPM:**  nbd
   - **Architectures:** aarch64, x86\_64
@@ -2539,6 +2642,11 @@ New packages in Amazon Linux 2023:
   - **RPM:**  nbdkit-ssh-plugin  / **Architectures:** aarch64, x86\_64
   - **RPM:**  nbdkit-tmpdisk-plugin  / **Architectures:** aarch64, x86\_64
   - **Version:** 1.40.5-1.amzn2023.0.1
+
+- ** `netavark` **
+  - **RPM:**  netavark
+  - **Architectures:** aarch64, x86\_64
+  - **Version:** 1.17.2-1.amzn2023.0.1
 
 - ** `nethogs` **
   - **RPM:**  nethogs
@@ -2566,12 +2674,12 @@ New packages in Amazon Linux 2023:
 - ** `nginx-mod-headers-more` **
   - **RPM:**  nginx-mod-headers-more
   - **Architectures:** aarch64, x86\_64
-  - **Version:** 0.39-1.amzn2023.0.8
+  - **Version:** 0.39-1.amzn2023.0.9
 
 - ** `nginx-mod-njs` **
   - **RPM:**  nginx-mod-njs
   - **Architectures:** aarch64, x86\_64
-  - **Version:** 0.9.9-1.amzn2023.0.2
+  - **Version:** 0.9.9-1.amzn2023.0.3
 
 - ** `ngtcp2` **
   - **RPM:**  ngtcp2  / **Architectures:** aarch64, x86\_64
@@ -2628,7 +2736,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  nodejs22-libs  / **Architectures:** aarch64, x86\_64
   - **RPM:**  nodejs22-npm  / **Architectures:** aarch64, x86\_64
   - **RPM:**  v8-12.4-devel  / **Architectures:** aarch64, x86\_64
-  - **Version:** 22.23.1-1.amzn2023.0.2
+  - **Version:** 22.23.2-1.amzn2023.0.2
 
 - ** `nodejs22-typescript` **
   - **RPM:**  nodejs22-typescript
@@ -2643,7 +2751,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  nodejs24-libs  / **Architectures:** aarch64, x86\_64
   - **RPM:**  nodejs24-npm  / **Architectures:** noarch
   - **RPM:**  v8-13.6-devel  / **Architectures:** aarch64, x86\_64
-  - **Version:** 24.18.0-1.amzn2023.0.2
+  - **Version:** 24.18.1-1.amzn2023.0.2
 
 - ** `nodejs24-typescript` **
   - **RPM:**  nodejs24-typescript
@@ -2761,7 +2869,7 @@ New packages in Amazon Linux 2023:
 - ** `openssl-fips-provider-certified` **
   - **RPM:**  openssl-fips-provider-certified  / **Architectures:** aarch64, x86\_64
   - **RPM:**  openssl-fips-provider-certified-so  / **Architectures:** aarch64, x86\_64
-  - **Version:** 3.0.8-1.amzn2023.0.1
+  - **Version:** 3.2.2-1.amzn2023
 
 - ** `opentest4j` **
   - **RPM:**  opentest4j  / **Architectures:** noarch
@@ -2771,7 +2879,7 @@ New packages in Amazon Linux 2023:
 - ** `openvpn` **
   - **RPM:**  openvpn  / **Architectures:** aarch64, x86\_64
   - **RPM:**  openvpn-devel  / **Architectures:** aarch64, x86\_64
-  - **Version:** 2.6.12-1.amzn2023.0.5
+  - **Version:** 2.6.12-1.amzn2023.0.7
 
 - ** `orangefs` **
   - **RPM:**  orangefs  / **Architectures:** aarch64, x86\_64
@@ -5187,7 +5295,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  php8.3-tidy  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.3-xml  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.3-zip  / **Architectures:** aarch64, x86\_64
-  - **Version:** 8.3.32-1.amzn2023.0.1
+  - **Version:** 8.3.33-1.amzn2023.0.1
 
 - ** `php8.3-pecl-apcu` **
   - **RPM:**  php8.3-apcu-panel  / **Architectures:** noarch
@@ -5245,7 +5353,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  php8.4-tidy  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.4-xml  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.4-zip  / **Architectures:** aarch64, x86\_64
-  - **Version:** 8.4.23-1.amzn2023.0.1
+  - **Version:** 8.4.24-1.amzn2023.0.1
 
 - ** `php8.4-pecl-apcu` **
   - **RPM:**  php8.4-apcu-panel  / **Architectures:** noarch
@@ -5302,7 +5410,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  php8.5-tidy  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.5-xml  / **Architectures:** aarch64, x86\_64
   - **RPM:**  php8.5-zip  / **Architectures:** aarch64, x86\_64
-  - **Version:** 8.5.8-1.amzn2023.0.1
+  - **Version:** 8.5.9-1.amzn2023.0.1
 
 - ** `php8.5-pecl-apcu` **
   - **RPM:**  php8.5-apcu-panel  / **Architectures:** noarch
@@ -5347,7 +5455,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  pipewire-pulseaudio  / **Architectures:** aarch64, x86\_64
   - **RPM:**  pipewire-utils  / **Architectures:** aarch64, x86\_64
   - **RPM:**  pipewire-v4l2  / **Architectures:** aarch64, x86\_64
-  - **Version:** 1.2.7-4.amzn2023.0.4
+  - **Version:** 1.2.7-4.amzn2023.0.5
 
 - ** `pkgconf` **
   - **RPM:**  libpkgconf  / **Architectures:** aarch64, x86\_64
@@ -5523,7 +5631,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  python3.11-libs  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-test  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.11-tkinter  / **Architectures:** aarch64, x86\_64
-  - **Version:** 3.11.15-1.amzn2023.0.4
+  - **Version:** 3.11.15-1.amzn2023.0.5
 
 - ** `python3.11-pip` **
   - **RPM:**  python3.11-pip  / **Architectures:** noarch
@@ -5548,7 +5656,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  python3.12-libs  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.12-test  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.12-tkinter  / **Architectures:** aarch64, x86\_64
-  - **Version:** 3.12.13-2.amzn2023.0.4
+  - **Version:** 3.12.13-2.amzn2023.0.5
 
 - ** `python3.12-flit-core` **
   - **RPM:**  python3.12-flit-core
@@ -5580,7 +5688,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  python3.13-libs  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.13-test  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.13-tkinter  / **Architectures:** aarch64, x86\_64
-  - **Version:** 3.13.14-1.amzn2023.0.2
+  - **Version:** 3.13.14-1.amzn2023.0.3
 
 - ** `python3.13-cachetools` **
   - **RPM:**  python3.13-cachetools
@@ -5735,7 +5843,7 @@ New packages in Amazon Linux 2023:
 - ** `python3.13-tornado` **
   - **RPM:**  python3.13-tornado  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.13-tornado-doc  / **Architectures:** aarch64, x86\_64
-  - **Version:** 6.4.2-1.amzn2023.0.3
+  - **Version:** 6.4.2-1.amzn2023.0.4
 
 - ** `python3.13-tox` **
   - **RPM:**  python3.13-tox
@@ -5787,7 +5895,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  python3.14-libs  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.14-test  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python3.14-tkinter  / **Architectures:** aarch64, x86\_64
-  - **Version:** 3.14.6-1.amzn2023.0.2
+  - **Version:** 3.14.6-1.amzn2023.0.3
 
 - ** `python3.14-flit-core` **
   - **RPM:**  python3.14-flit-core
@@ -5967,7 +6075,7 @@ New packages in Amazon Linux 2023:
 - ** `python-dulwich` **
   - **RPM:**  python3-dulwich  / **Architectures:** aarch64, x86\_64
   - **RPM:**  python-dulwich-doc  / **Architectures:** aarch64, x86\_64
-  - **Version:** 0.20.18-1.amzn2023.0.2
+  - **Version:** 0.20.18-1.amzn2023.0.3
 
 - ** `python-elementpath` **
   - **RPM:**  python3-elementpath
@@ -6162,7 +6270,7 @@ New packages in Amazon Linux 2023:
 - ** `python-jwt` **
   - **RPM:**  python3-jwt  / **Architectures:** noarch
   - **RPM:**  python3-jwt\+crypto  / **Architectures:** noarch
-  - **Version:** 2.4.0-1.amzn2023.0.4
+  - **Version:** 2.4.0-1.amzn2023.0.5
 
 - ** `python-ldap3` **
   - **RPM:**  python3-ldap3
@@ -6908,7 +7016,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  ruby4.0-rubygems-devel  / **Architectures:** noarch
   - **RPM:**  ruby4.0-rubygem-test-unit  / **Architectures:** noarch
   - **RPM:**  ruby4.0-rubygem-typeprof  / **Architectures:** noarch
-  - **Version:** 4.0.1-32.amzn2023.0.2
+  - **Version:** 4.0.1-32.amzn2023.0.3
 
 - ** `rubygem-asciidoctor` **
   - **RPM:**  rubygem-asciidoctor  / **Architectures:** noarch
@@ -6933,7 +7041,7 @@ New packages in Amazon Linux 2023:
 - ** `rust-cargo-c` **
   - **RPM:**  cargo-c
   - **Architectures:** aarch64, x86\_64
-  - **Version:** 0.10.19-1.amzn2023.0.3
+  - **Version:** 0.10.21-1.amzn2023.0.1
 
 - ** `rust-gst-plugin-dav1d` **
   - **RPM:**  gstreamer1-plugin-dav1d
@@ -6964,6 +7072,47 @@ New packages in Amazon Linux 2023:
   - **RPM:**  zram-generator  / **Architectures:** aarch64, x86\_64
   - **RPM:**  zram-generator-defaults  / **Architectures:** noarch
   - **Version:** 1.1.2-70.amzn2023.0.1
+
+- ** `samba-latest` **
+  - **RPM:**  ctdb-latest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  ldb-tools-latest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libldb-latest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libldb-latest-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libnetapi-latest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libnetapi-latest-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsmbclient-latest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libsmbclient-latest-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libwbclient-latest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  libwbclient-latest-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-ldb-latest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-samba-latest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-samba-latest-dc  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  python3-samba-latest-test  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-client  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-client-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-common  / **Architectures:** noarch
+  - **RPM:**  samba-latest-common-tools  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-core-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-dcerpc  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-dc-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-devel  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-krb5-printing  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-ldb-ldap-modules  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-ndr-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-pidl  / **Architectures:** noarch
+  - **RPM:**  samba-latest-prometheus  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-test  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-test-libs  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-tools  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-usershares  / **Architectures:** noarch
+  - **RPM:**  samba-latest-vfs-iouring  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-winbind  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-winbind-clients  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-winbind-krb5-locator  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  samba-latest-winbind-modules  / **Architectures:** aarch64, x86\_64
+  - **Version:** 4.24.5-1.amzn2023.0.1
 
 - ** `scotch` **
   - **RPM:**  ptscotch-mpich  / **Architectures:** aarch64, x86\_64
@@ -7018,6 +7167,11 @@ New packages in Amazon Linux 2023:
   - **RPM:**  sisu-mojos  / **Architectures:** noarch
   - **RPM:**  sisu-mojos-javadoc  / **Architectures:** noarch
   - **Version:** 0.3.4-11.amzn2023.0.3
+
+- ** `skopeo` **
+  - **RPM:**  skopeo  / **Architectures:** aarch64, x86\_64
+  - **RPM:**  skopeo-tests  / **Architectures:** aarch64, x86\_64
+  - **Version:** 1.22.2-1.amzn2023.0.1
 
 - ** `s-nail` **
   - **RPM:**  s-nail
@@ -7380,6 +7534,17 @@ New packages in Amazon Linux 2023:
   - **RPM:**  tomcat10-webapps  / **Architectures:** noarch
   - **Version:** 10.1.57-1.amzn2023.0.1
 
+- ** `tomcat11` **
+  - **RPM:**  tomcat11  / **Architectures:** noarch
+  - **RPM:**  tomcat11-admin-webapps  / **Architectures:** noarch
+  - **RPM:**  tomcat11-docs-webapp  / **Architectures:** noarch
+  - **RPM:**  tomcat11-el-6.0-api  / **Architectures:** noarch
+  - **RPM:**  tomcat11-jsp-4.0-api  / **Architectures:** noarch
+  - **RPM:**  tomcat11-lib  / **Architectures:** noarch
+  - **RPM:**  tomcat11-servlet-6.1-api  / **Architectures:** noarch
+  - **RPM:**  tomcat11-webapps  / **Architectures:** noarch
+  - **Version:** 11.0.24-1.amzn2023.0.1
+
 - ** `tomcat9` **
   - **RPM:**  tomcat9  / **Architectures:** noarch
   - **RPM:**  tomcat9-admin-webapps  / **Architectures:** noarch
@@ -7475,7 +7640,7 @@ New packages in Amazon Linux 2023:
 - ** `valkey` **
   - **RPM:**  valkey  / **Architectures:** aarch64, x86\_64
   - **RPM:**  valkey-devel  / **Architectures:** aarch64, x86\_64
-  - **Version:** 9.0.4-1.amzn2023.0.1
+  - **Version:** 9.0.5-1.amzn2023.0.1
 
 - ** `voikko-fi` **
   - **RPM:**  voikko-fi
@@ -7745,3 +7910,7 @@ New packages in Amazon Linux 2023:
   - **RPM:**  zopfli  / **Architectures:** aarch64, x86\_64
   - **RPM:**  zopfli-devel  / **Architectures:** aarch64, x86\_64
   - **Version:** 1.0.3-4.amzn2023.0.2
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

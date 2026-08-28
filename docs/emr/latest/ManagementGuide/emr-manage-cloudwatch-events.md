@@ -181,3 +181,7 @@ If you don't want a user to see all cluster events for a region, add a statement
 1. Under **EMR on EC2** in the left navigation pane, choose **Clusters**, and then choose a cluster.
 
 1. To view all of your events, select the **Events** tab on the cluster details page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

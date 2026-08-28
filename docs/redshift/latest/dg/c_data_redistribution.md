@@ -70,3 +70,7 @@ After changing the dimension tables to use DISTSTYLE ALL, the query plan for the
                     ->  XN Seq Scan on listing  (cost=0.00..1924.97 rows=192497 width=14)
                     ->  XN Seq Scan on sales  (cost=0.00..1724.56 rows=172456 width=24)
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

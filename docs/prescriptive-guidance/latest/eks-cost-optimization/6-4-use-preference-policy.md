@@ -20,3 +20,7 @@ For the NodePool and Deployment configuration, see the [disruption-preference-po
 Combine budgets with preference policies to create a disruption strategy that removes the most expensive nodes first, during the safest windows, at a rate that doesn't impact availability.
 
 **Key takeaway: **Not all disruptions save the same amount. Prioritizing on-demand node removal over Spot, and empty nodes over underutilized ones, maximizes the dollar value of each disruption event.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

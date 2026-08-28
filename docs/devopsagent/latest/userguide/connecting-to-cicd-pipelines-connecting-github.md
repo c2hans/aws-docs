@@ -162,6 +162,33 @@ To configure automated reviews:
 
 Once configured, any new pull request in a repository with **Auto trigger change review** enabled will automatically trigger a release readiness code review. If **Automated verification testing** is also enabled, the review includes functional validation in a verification environment. For more information about code reviews, see [Release readiness code reviews](release-management-release-readiness-code-review.md).
 
+### Advanced settings: trigger filters
+<a name="advanced-settings-trigger-filters"></a>
+
+By default, a repository with **Auto trigger change review** enabled runs a release readiness code review on every applicable pull request event, on any target branch. Use **Advanced settings** to add trigger filters that control exactly when automated reviews run for each repository.
+
+Each filter is a *filter group* that combines two conditions:
++ **Target branches** (required) — One or more branch names or patterns, entered as regular expressions (for example, `main` or `release/.*`). The review triggers only when the pull request's target (base) branch matches one of these patterns.
++ **Trigger events** (optional) — The pull request events that trigger a review: **Pull request ready for review** or **Pull request drafted**. Leave this empty to match all applicable events.
+
+Within a filter group, all conditions must match (AND). You can add multiple filter groups, and a review triggers when any group matches (OR).
+
+To configure trigger filters:
+
+1. Open the **Advanced settings** section in the connection flow. (To change filters on an existing connection, select the connection in the **Pipeline** section, choose **Edit**, and then open **Advanced settings**.)
+
+1. Find the repository you want to configure and select the **Change review** tab.
+
+1. Choose **Add filter group**, then define the group's conditions:
+   + Under **Target branches**, enter a branch name or pattern and press Enter or choose **Add**. Repeat to add more patterns.
+   + (Optional) Under **Trigger events**, select **Pull request ready for review**, **Pull request drafted**, or both. Leave it empty to match all events.
+
+1. (Optional) Choose **Add filter group** again to express alternative conditions.
+
+1. Choose **Save** to apply your configuration.
+
+You can define up to 5 filter groups per repository, with up to 20 patterns per group. Each pattern must be a valid regular expression of up to 256 characters. If you don't add any filter groups, reviews trigger on all applicable events for all target branches.
+
 ## Understanding the GitHub App
 <a name="understanding-the-github-app"></a>
 
@@ -218,3 +245,7 @@ To fully remove the GitHub integration, do the following:
 For GitHub Enterprise Server and GitHub Enterprise Cloud with data residency, AWS DevOps Agent creates the GitHub App on your instance during registration. To clean up the app entirely, do both of the following:
 + **Uninstall the app** – Go to **Settings > Applications > Installed GitHub Apps**, choose **Configure** on the app, then uninstall it.
 + **Delete the app** – Go to **Settings > Developer settings > GitHub Apps**, choose the app, go to the **Advanced** tab, and choose **Delete GitHub App**. **Warning:** Deleting the GitHub App is permanent and cannot be undone. To create a new app, re-register GitHub in the AWS DevOps Agent console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

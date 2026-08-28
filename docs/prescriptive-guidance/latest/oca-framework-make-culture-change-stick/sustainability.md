@@ -169,3 +169,7 @@ To ensure the long-term success of your cloud transformation, implement the adva
    + Implement a cloud ambassador program to evangelize cloud adoption both internally and externally.
 
 A well-crafted and diligently executed sustainability plan is the keystone of long-term cloud transformation success. By systematically addressing ongoing needs, transitioning ownership, and embedding cloud-first practices into the organization's culture and processes, companies can ensure that their cloud investments continue to yield benefits well into the future. Regular evaluation and refinement of the sustainability plan, coupled with strong leadership commitment, will drive continuous improvement and innovation in the organization's cloud journey.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

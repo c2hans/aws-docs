@@ -21,3 +21,7 @@ Obtain identifying information from the content provider.
   - **Details:** ARIB / **Information to obtain:** You don't need any information. With ARIB captions, MediaLiveextracts all the languages.
   - **Details:** Embedded / **Information to obtain:** Obtain the languages in the channel numbers. For example, "channel 1 is French".
   - **Details:** Teletext / **Information to obtain:** [If your plan for teletext captions](assess-uss-captions.md) is to convert the captions to a different format, you must obtain the page numbers for the languages that you want to convert. If you plan to pass through the captions as Teletext in the output, you don't need any identifiers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

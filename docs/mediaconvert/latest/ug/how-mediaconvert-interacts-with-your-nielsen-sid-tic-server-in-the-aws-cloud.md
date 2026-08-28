@@ -20,3 +20,7 @@ This bucket is different from the one that you set up for the media asset output
 The roles and access you set up for this data sharing is different from the IAM permissions you set up to allow MediaConvert to access your input and output Amazon S3 buckets. For information about that setup, see [Setting up IAM permissions](iam-role.md), which is a sub-topic of the Getting started chapter of this guide.
 
 ![The video is rotated so that the top of the pre-rotation image is parallel to the right edge of the post-rotation video frame. Black vertical bars on the right and left accommodate the difference between the aspect ratio of the original video and the rotated video.](http://docs.aws.amazon.com/mediaconvert/latest/ug/images/NielsenWatermarking.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

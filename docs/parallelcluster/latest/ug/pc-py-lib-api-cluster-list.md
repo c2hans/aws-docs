@@ -20,3 +20,7 @@ The token for the next set of results.
 **`cluster_status`**
 Filters by cluster status. The default is to list all clusters.
 Valid values: `CREATE_IN_PROGRESS` \| `CREATE_FAILED` \| `CREATE_COMPLETE` \| `DELETE_IN_PROGRESS` \| `DELETE_FAILED` \| `UPDATE_IN_PROGRESS` \| `UPDATE_COMPLETE` \| `UPDATE_FAILED`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

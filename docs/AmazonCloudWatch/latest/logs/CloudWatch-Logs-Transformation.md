@@ -42,3 +42,7 @@ You can create transformers for individual log groups, and you can also create a
 + [JSON mutate processors](CloudWatch-Logs-Transformation-JSONMutate.md)
 + [Datatype converter processors](CloudWatch-Logs-Transformation-Datatype.md)
 + [Transformation metrics and errors](Transformation-Errors-Metrics.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

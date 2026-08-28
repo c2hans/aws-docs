@@ -220,3 +220,7 @@ After you disable [ PITR (point-in-time restore)](https://docs.aws.amazon.com/aw
 A continuous recovery point with a status of `STOPPED` indicates that a continuous recovery point has been interrupted; that is, the logs transmitted from SAP HANA to AWS Backup that show the incremental changes to a database have a gap. The recovery points that occur within this timeframe gap have a status of `STOPPED.`.
 
 For issues you may encounter during restore jobs of continuous backups (recovery points), see the [ SAP HANA Restore troubleshooting](https://docs.aws.amazon.com/aws-backup/latest/devguide/saphana-restore.html#saphanarestoretroubleshooting) section of this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

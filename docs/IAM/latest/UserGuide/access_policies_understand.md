@@ -21,3 +21,7 @@ For step-by-step instructions on viewing summaries, see [View policy summaries](
 + [Service summary (list of actions)](access_policies_understand-service-summary.md)
 + [Action summary (list of resources)](access_policies_understand-action-summary.md)
 + [Examples of policy summaries](access_policies_policy-summary-examples.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

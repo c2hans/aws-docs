@@ -36,3 +36,7 @@ AWS Lake Formation provides the following APIs for data retrieval.
 | <a name="lakeformation-ListTransactions"></a>[ListTransactions](https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_ListTransactions.html) | List all transactions in the system | List |
 | <a name="lakeformation-SearchDatabasesByLFTags"></a>[SearchDatabasesByLFTags](https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_SearchTablesByLFTags.html) | List catalog databases with Lake Formation tags | Read |
 | <a name="lakeformation-SearchTablesByLFTags"></a>[SearchTablesByLFTags](https://docs.aws.amazon.com/lake-formation/latest/APIReference/API_SearchTablesByLFTags.html) | List catalog tables with Lake Formation tags | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,3 +38,7 @@ The following table describes the important changes to the documentation since t
 | New feature | 2016-12-01 | Added channels for the Amazon Device Messaging (ADM) and Baidu Cloud Push services. | September 27, 2017 |
 | New feature | 2016-12-01 | Added support for streaming events to Amazon Data Firehose and Amazon Kinesis Data Streams. | March 24, 2017 |
 | General availability | 2016-12-01 | This release introduces Amazon Pinpoint and the Amazon Pinpoint API. | December 1, 2016 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

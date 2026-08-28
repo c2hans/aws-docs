@@ -30,3 +30,7 @@ When you type **@** in the chat, you can select from the following context types
 The following types of contexts will be used automatically by Amazon Q, if you've set them up:
 + **Project rules** – Amazon Q will automatically use a set of project rules that you define as context. For more information, see [Creating project rules for use with Amazon Q Developer chat](context-project-rules.md).
 + **Customizations** – Amazon Q will automatically use a repository of source code as context.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ A copy of the queue environment that the Deadline Cloud console onboarding flow 
 A version of the console-equivalent queue environment that reuses virtual environments across multiple jobs. This setting can significantly improve performance when running many jobs with the same package requirements. By default, persistent environments are stored under `~/.persistent_envs`; modify the `onEnter` and `onExit` actions to reference a different path.
 
 To get equivalent functionality on customer-managed fleets, see [Inline conda queue environments for Deadline Cloud customer-managed fleets](examples-queue-env-conda-inline.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

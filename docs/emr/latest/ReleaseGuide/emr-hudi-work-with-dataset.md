@@ -475,3 +475,7 @@ incQueryDF.show()
 ```
 
 For more information about reading from Hudi datasets, see [Querying Hudi tables](https://hudi.apache.org/docs/querying_data.html) in the Apache Hudi documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

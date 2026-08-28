@@ -38,3 +38,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingestin
 <a name="considerations-3"></a>
 
  The above architecture pattern adds all records in Amazon S3 as new data. To handle updates and deletes in the data lake, you may have to use AWS Glue, streaming with [Apache Hudi connector](https://aws.amazon.com/blogs/big-data/writing-to-apache-hudi-tables-using-aws-glue-connector/), to correctly identify and update the existing records in Amazon S3.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

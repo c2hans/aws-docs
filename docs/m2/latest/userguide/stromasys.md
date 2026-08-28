@@ -188,3 +188,7 @@ At least one license server must be configured at initial launch to enable AutoV
 1. At the bottom-right corner of the screen, choose **View all instances**.
 
 1. To see the details of your instance, select the check box to the left of the row that represents the instance in the **Instances** table. Your instance details will appear in the bottom half of the screen. For information on how to connect to your instance, see [Connect](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect.html) in the Amazon EC2 User Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

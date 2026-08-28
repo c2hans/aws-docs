@@ -63,3 +63,7 @@ Work with AWS Support and TAM team to ensure newly created ALBs are pre-scaled t
 + [Provision access to AWS Support Center Console for application teams](idr-inc-mgmt-access-provision.md)
 + [Request an Incident Response](inbound-incident-idr.md)
 + [Manage Incident Detection and Response support cases with the AWS Support App in Slack](aws-support-app-slack.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

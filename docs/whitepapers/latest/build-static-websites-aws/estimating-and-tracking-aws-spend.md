@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
 <a name="tracking-aws-spend"></a>
 
  The [AWS Cost Explorer](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-explorer-what-is.html) can help you track cost trends by service type. It’s integrated in the AWS Billing and Cost Management console and runs in your browser. The Monthly Cost by Service chart allows you to see a detailed breakdown by service. The Daily Cost report helps you track your spending as it happens. If you configured tags for your Amazon S3 bucket, you can filter your reports against specific tags for [cost allocation](https://docs.aws.amazon.com/AmazonS3/latest/dev/BucketBilling.html) purposes. See [Using the Default Cost Explorer Reports](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-default-reports.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -212,3 +212,7 @@ Content categories that are prohibited by mobile operators. Campaigns with these
 | Non-compliant message samples: sweepstakes | SAMPLE\_MESSAGE\_NON\_COMPLIANT\_CONTENT\_SWEEPSTAKES | Sample messages indicate sweepstakes content. | Sweepstakes content is not permitted by US carriers. | No |
 | Campaign suspended | REGISTRATION\_SUSPENDED\_BY\_MNO | Your campaign and associated origination entities have been suspended by a downstream partner or mobile carrier. | Open a technical support case for assistance in restoring your registration. See [Get help with registration issues through Support](registrations-request-support.md). | No |
 | Security review requirements not met | SECURITY\_REVIEW\_FAILED | This registration did not meet security review requirements. This decision is final. | You may consider alternative messaging solutions or submit a new application in the future. | No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

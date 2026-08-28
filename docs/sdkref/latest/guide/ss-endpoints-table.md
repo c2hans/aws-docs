@@ -389,3 +389,7 @@ For information on how and where to use the identifiers in the following table, 
 |  WorkSpaces Thin Client  |  workspaces\_thin\_client  |  AWS\_ENDPOINT\_URL\_WORKSPACES\_THIN\_CLIENT  |
 |  WorkSpaces Web  |  workspaces\_web  |  AWS\_ENDPOINT\_URL\_WORKSPACES\_WEB  |
 |  XRay  |  xray  |  AWS\_ENDPOINT\_URL\_XRAY  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdkref` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -161,3 +161,7 @@ The following table provides a guide to formatting the values in an import file 
 | Tag | Tags must be formatted as `key=value;` multiple tags must be delimited by a semicolon. |  `TagKey1=Tagvalue1;TagKey2=tagvalue2;`  |
 | List | If setting a single value list attribute use the same formatting as String type, if multiple selection list then, as per Multivalue String type. |  `Selection1;Selection2;`  |
 | Relationship | Accepts alphanumeric and special characters that need to match with a value based on the key defined in the attribute definition. |  `Application1`  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

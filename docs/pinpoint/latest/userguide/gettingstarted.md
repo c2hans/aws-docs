@@ -48,3 +48,7 @@ If you use this tutorial to send 5 messages to 5 separate endpoints in one month
 For detailed information about the costs that you might incur using Amazon Pinpoint, see [Amazon Pinpoint pricing](https://aws.amazon.com/pinpoint/pricing/).
 
 **Next:** [Create and Configure a Project](gettingstarted-create-project.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

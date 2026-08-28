@@ -53,3 +53,7 @@ The [HealthOmics Agentic generative AI tutorial](https://github.com/aws-samples/
 In addition to Kiro CLI, you can use the Kiro IDE with HealthOmics:
 + [Kiro Power for HealthOmics](https://kiro.dev/powers/) – A curated and pre-packaged MCP server with steering files and agent hooks that gives the Kiro agent expertise in HealthOmics workflow creation and optimization.
 + [Kiro IDE extension for HealthOmics](https://open-vsx.org/) – Provides syntax highlighting, code completion, and troubleshooting guidance for HealthOmics workflows, along with engine compatibility checking, performance optimization recommendations, automated run analysis with failure diagnostics, and workflow import/export capabilities.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

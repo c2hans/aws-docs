@@ -46,3 +46,7 @@ As Amazon Polly synthesizes text, it returns [AudioEvent](https://docs.aws.amazo
 When all input text has been sent, the client sends a [CloseStreamEvent](https://docs.aws.amazon.com/polly/latest/APIReference/API_CloseStreamEvent.html). Amazon Polly finishes processing any remaining buffered text, sends final audio events, and returns a [StreamClosedEvent](https://docs.aws.amazon.com/polly/latest/APIReference/API_StreamClosedEvent.html) that contains the total number of characters synthesized. Always send a `CloseStreamEvent` rather than relying on flushing to end the stream. Closing ensures that all buffered text is synthesized and returned.
 
 For full details on request parameters, event types, and errors, see the [StartSpeechSynthesisStream API reference](https://docs.aws.amazon.com/polly/latest/APIReference/API_StartSpeechSynthesisStream.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Polly. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query polly` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

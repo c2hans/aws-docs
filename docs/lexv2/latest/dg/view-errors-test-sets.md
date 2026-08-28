@@ -60,3 +60,7 @@ The following table lists the input CSV validation error messages with scenarios
 | Invalid format in Runtime hint | Invalid key `BookFlight.Car."` provided for Runtime Hints. For Runtime Hints, key should be in format <intentName>.<slotName>. | If '.' must be present in middle of the key, intent name and slot name cannot be extracted from such key. examples of such incorrect formatting: "BookFlight", ".BookFlight.Car", "BookFlight.Car." |
 | Invalid Intent name in runtime hint key | Found invalid intent `intent@name` for Runtime Hints. Check intent name. | Regex check: ^([0-9a-zA-Z][\_-]?)\+$ |
 | Invalid Slot name in runtime hint key | Found invalid slot name in `Slot@Name` for Runtime Hints. Check slot name. | Regex: ^([0-9a-zA-Z][\_-]?)\+$It should not start or end with dot(.) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

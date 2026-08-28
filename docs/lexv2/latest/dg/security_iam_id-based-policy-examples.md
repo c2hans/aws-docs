@@ -415,3 +415,7 @@ The following IAM permission policy allows a user to draw the conversation flow 
 <a name="security_iam_id-based-policy-examples-gr-permissions"></a>
 
 You can attach the following permissions to an IAM role to allow it to only create and view bot replicas. By omitting `lex:DeleteBotReplica`, you prevent the role from deleting bot replicas. For more information, see [Permissions to replicate bots and manage bot replicas in Lex V2](gr-permissions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

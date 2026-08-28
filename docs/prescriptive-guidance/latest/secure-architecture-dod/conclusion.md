@@ -23,3 +23,7 @@ For the US Department of Defense (DoD), this guide explains what the Defense Inf
 + [Department of Defense (DoD) Cloud Native Access Point (CNAP) Reference Design](https://dodcio.defense.gov/Portals/0/Documents/Library/CNAP_RefDesign_v1.0.pdf) (DoD website)
 + [DoD Secure Cloud Computing Architecture fact sheet](https://www.disa.mil/~/media/files/disa/fact-sheets/secure-cloud-computing.pdf) (DISA website)
 + [DOD Cloud IaC](https://www.hacc.mil/Portfolio/DOD-Cloud-IaC/) (J9 Hosting and Compute)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

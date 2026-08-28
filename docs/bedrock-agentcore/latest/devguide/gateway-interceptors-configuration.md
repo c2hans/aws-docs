@@ -121,3 +121,7 @@ The following examples show how to create a gateway with interceptors that have 
 <a name="gateway-interceptors-configuration-update"></a>
 
 You can update existing gateway interceptor configurations to modify the `passRequestHeaders` setting or other parameters using the update gateway API operations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

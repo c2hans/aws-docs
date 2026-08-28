@@ -30,3 +30,7 @@ This chapter provides reference information for T-SQL extensions required to mig
 + [User-defined types for T-SQL](chap-sql-server-aurora-mysql.tsql.udt.md)
 + [Identity and sequences for T-SQL](chap-sql-server-aurora-mysql.tsql.identitysequences.md)
 + [Managing statistics for T-SQL](chap-sql-server-aurora-mysql.tsql.managingstatistics.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

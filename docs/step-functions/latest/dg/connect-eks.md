@@ -637,3 +637,7 @@ The following example templates show how AWS Step Functions generates IAM polici
 ```
 
 For more information about using Amazon EKS with Step Functions, see [Create and manage Amazon EKS clusters with Step Functions](#connect-eks).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

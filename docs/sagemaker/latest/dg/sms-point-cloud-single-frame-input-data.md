@@ -181,3 +181,7 @@ If your images are distorted, Ground Truth can automatically undistort them usin
 <a name="sms-point-cloud-single-frame-limits"></a>
 
 You can include up to 100,000 point cloud frames in your input manifest file. 3D point cloud labeling job have longer pre-processing times than other Ground Truth task types. For more information, see [Job pre-processing time](sms-point-cloud-general-information.md#sms-point-cloud-job-creation-time).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

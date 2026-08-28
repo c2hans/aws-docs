@@ -222,3 +222,7 @@ For a sample local callback server implementation to handle [session binding](ht
 <a name="identity-getting-started-whats-next"></a>
 
 The example in this section focuses on practical implementation patterns that you can adapt for your specific use cases. You can embed the code as part of an agent, or a Model Context Protocol (MCP) tool. If you want to host your Agent code or MCP Tool with AgentCore Runtime, follow [Host agent or tools with Amazon Bedrock AgentCore Runtime](agents-tools-runtime.md) to copy the code above to AgentCore Runtime.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

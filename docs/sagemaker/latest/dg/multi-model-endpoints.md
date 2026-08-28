@@ -76,3 +76,7 @@ For more information about use cases for multi-model endpoints, see the followin
 + Video: [SageMaker AI ML for SaaS](https://www.youtube.com/watch?v=BytpYlJ3vsQ)
 + Blog: [How to scale machine learning inference for multi-tenant SaaS use cases](https://aws.amazon.com/blogs/machine-learning/how-to-scale-machine-learning-inference-for-multi-tenant-saas-use-cases/)
 + Case study: [Veeva Systems](https://aws.amazon.com/partners/success/advanced-clinical-veeva/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

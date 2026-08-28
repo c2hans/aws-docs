@@ -47,3 +47,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingestin
  SaaS applications are sometimes heavily customized, so it’s always good to make sure the edge cases can be solved with Amazon AppFlow. You can find the list of known limitations and considerations in the notes section of the Amazon AppFlow documentation. For example, the known limitations for Salesforce as a source are listed [here](https://docs.aws.amazon.com/appflow/latest/userguide/salesforce.html#salesforce-notes).
 
  Also, consider the Amazon AppFlow service [quotas](https://docs.aws.amazon.com/appflow/latest/userguide/service-quotas.html) to ensure your use case fits well within those limitations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

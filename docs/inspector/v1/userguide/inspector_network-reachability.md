@@ -101,3 +101,7 @@ A port that is not listed in the preceding table is reachable and has an active 
 <a name="inspector_network-reachability-types-3"></a>
 
 Findings of this type show aggregate information on the ports that are reachable on your EC2 instance. For each combination of elastic network interfaces and security groups on an EC2 instance, these findings show the reachable set of TCP and UDP port ranges. Findings of this type have the severity of **Informational**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,3 +10,7 @@ The Amazon Rekognition Custom Labels Demonstration shows a user interface that a
 The application shows you information about the Amazon Rekognition Custom Labels models in your AWS account. After you select a running model, you can analyze an image from your local computer. If necessary, you can start a model. You can also stop a running model. The application shows integration with other AWS Services such as Amazon Cognito, Amazon S3, and Amazon CloudFront.
 
 For more information, see [Amazon Rekognition Custom Labels Demo](https://github.com/aws-samples/amazon-rekognition-custom-labels-demo).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

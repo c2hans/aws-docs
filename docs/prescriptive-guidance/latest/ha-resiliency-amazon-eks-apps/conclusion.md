@@ -20,3 +20,7 @@ To address those component considerations, use the following key strategies:
 + To provide control over the eviction process during node failures or maintenance, configure the pod eviction time.
 
 By implementing these practices, you can significantly enhance the reliability and resilience of applications running on Amazon EKS, ensuring robust performance and high availability.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

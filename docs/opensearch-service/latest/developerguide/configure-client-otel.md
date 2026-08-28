@@ -177,3 +177,7 @@ All three OpenTelemetry data types will have the same metrics, but for brevity t
 |  otel-pipeline.opensearch.s3.dlqS3RequestSizeBytes.sum  | Total size in bytes of all requests made to the Amazon S3 dead-letter queue. |
 |  otel-pipeline.recordsProcessed.count  | Total number of records processed in the pipeline, a key metric for overal throughput. |
 | `otel-pipeline.opensearch.bulkRequestInvalidInputErrors.count` | Count of bulk request errors in OpenSearch due to invalid input, crucial for monitoring data quality and operational issues. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

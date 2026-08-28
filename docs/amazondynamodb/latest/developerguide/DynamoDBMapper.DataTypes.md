@@ -38,3 +38,7 @@ DynamoDB supports the Java [Set](http://docs.oracle.com/javase/6/docs/api/java/u
 | [Set](http://docs.oracle.com/javase/6/docs/api/java/util/Set.html) collection types | `SS` (string set) type, `NS` (number set) type, or `BS` (binary set) type. |
 
  The `DynamoDBTypeConverter` interface lets you map your own arbitrary data types to a data type that is natively supported by DynamoDB. For more information, see [Mapping arbitrary data in DynamoDB](DynamoDBMapper.ArbitraryDataMapping.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

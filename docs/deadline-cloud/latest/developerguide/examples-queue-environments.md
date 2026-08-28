@@ -27,3 +27,7 @@ aws deadline create-queue-environment \
 + [Rez queue environment for Deadline Cloud customer-managed fleets](examples-queue-env-rez.md)
 + [Pip queue environment for Deadline Cloud](examples-queue-env-pip.md)
 + [Disconnect Deadline Cloud usage-based licensing with a queue environment](examples-queue-env-disconnect-ubl.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

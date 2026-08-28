@@ -291,3 +291,7 @@ For most use cases, the Aurora DSQL Loader provides a simpler and more robust ap
 + [Aurora DSQL Loader on GitHub](https://github.com/aws-samples/aurora-dsql-loader) – Source code, documentation, and issue tracking
 + [Generating an authentication token in Amazon Aurora DSQL](SECTION_authentication-token.md) – Learn about IAM authentication tokens for Aurora DSQL
 + [Accessing Aurora DSQL with PostgreSQL-compatible clients ](accessing.md) – Connect to Aurora DSQL using various clients and tools
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

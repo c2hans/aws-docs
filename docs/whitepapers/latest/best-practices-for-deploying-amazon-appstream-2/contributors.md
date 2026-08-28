@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
 +  Stephen Stetler, Sr. Solutions Architect, Amazon Web Services
 +  Taka Matsumoto, Sr Cloud Support Engineer, Amazon Web Services
 +  Vasant Sirsat, Sr EUC Specialist SA, Amazon Web Services
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

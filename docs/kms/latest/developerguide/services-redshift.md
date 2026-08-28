@@ -42,3 +42,7 @@ Each service that is integrated with AWS KMS specifies an [encryption context](e
 ```
 
  You can search on the cluster name in your CloudTrail logs to understand what operations were performed by using an AWS KMS key (KMS key). The operations include cluster encryption, cluster decryption, and generating data keys.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

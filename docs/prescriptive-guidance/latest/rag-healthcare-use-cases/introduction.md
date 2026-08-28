@@ -29,3 +29,7 @@ This AI-powered [talent management solution](use-cases-talent-mgmt.md) includes 
 + **Learning recommendation engine** – This AI-driven tool identifies skill gaps within the organization and recommends personalized training programs for medical staff. This tool promotes continuous professional development and helps your workforce adapt to evolving healthcare technologies.
 
 Together, these AI-driven features help optimize workforce performance, revolutionizing talent management with increased intelligence and efficiency.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

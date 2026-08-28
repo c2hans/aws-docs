@@ -72,3 +72,18 @@ To confirm the workflow completed successfully, check the following in the Conne
 + The contact appears in the **Contact search** results with the expected name and description.
 + The recording is playable in the **Contact Details** page.
 + Conversational analytics (transcript, sentiment, categories, summary) are visible in the **Contact Details** page.
+
+To retrieve details about the contact—such as its channel, initiation method, recording status, and contact attributes—you can call the DescribeContact API. For more information about the DescribeContact API, see [DescribeContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_DescribeContact.html).
+
+In the following AWS CLI command, replace `{{instance-id}}`, `{{contact-id}}`, and `{{region}}` with your own values.
+
+```
+aws connect describe-contact \
+  --instance-id "{{instance-id}}" \
+  --contact-id "{{contact-id}}" \
+  --region "{{region}}"
+```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

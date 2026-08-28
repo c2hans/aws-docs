@@ -72,3 +72,7 @@ $ pcluster build-image --image-configuration {{image-config.yaml}} --image-id {{
 
 **Warning**
 `pcluster build-image` uses the default VPC. If the default VPC has been deleted, perhaps by using AWS Control Tower or AWS Landing Zone, then the subnet ID must be specified in the image configuration file. For more information, see [SubnetId](HeadNode-v3.md#yaml-HeadNode-Networking-SubnetId).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

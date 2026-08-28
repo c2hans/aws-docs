@@ -45,3 +45,7 @@ The campaign details page also includes a larger preview of the body of the emai
 <a name="channels-email-deliverability-dashboard-campaign-delivery-sending-ip"></a>
 
 This section of the campaign details page lists all the IP addresses that Amazon Pinpoint and Amazon SES used when sending the selected message to your recipients.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

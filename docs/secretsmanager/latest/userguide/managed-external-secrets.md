@@ -19,3 +19,7 @@ Managed external secrets offers several key capabilities that simplify third-par
 + **Predefined secret formats** ensure that secrets can be properly associated with the integration partner and include the metadata needed for rotation. Each partner defines the required format.
 + **Integrated partner ecosystem** provides support for multiple partners through a standardized onboarding process. Partners integrate directly with Secrets Manager to offer programmatic guidance for secret creation and managed rotation capabilities.
 + **Complete auditability** maintains full transparency through AWS CloudTrail logging for all rotation activities, secret value updates, and management operations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

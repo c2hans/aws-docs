@@ -298,3 +298,7 @@ By default, AWS CloudTrail Lake encrypts event data stores with Amazon S3 manage
 <a name="cloudtrail-10-remediation"></a>
 
 For information about encrypting an AWS CloudTrail Lake event data store with an AWS KMS key that you specify, see [Update an event data store](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/query-event-data-store-update.html) in the *AWS CloudTrail User Guide*. After you associate an event data store with a KMS key, the KMS key can't be removed or changed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

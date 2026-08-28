@@ -406,3 +406,7 @@ Fiddler doesn't support updating admin users. Only Comet supports updates to roo
  To delete a root admin user, you must first update the list of root admin users using the `UpdatePartnerApp` API. Then, remove or revoke the admin permissions through the Partner AI App's UI.
 
  If you remove a root admin user from the Partner AI App's UI without updating the list of root admin users with the `UpdatePartnerApp` API, the change is temporary. When SageMaker AI sends the next Partner AI App update request, SageMaker AI sends the root admin list that still includes the user to the Partner AI App. This overrides the deletion completed from the Partner AI App UI.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

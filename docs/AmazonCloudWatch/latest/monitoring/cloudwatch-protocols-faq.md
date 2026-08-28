@@ -79,3 +79,7 @@ AWS Query protocol will continue to be supported. You can continue using the AWS
 You can find more information about JSON protocol at [AWS JSON 1.0](https://smithy.io/2.0/aws/protocols/aws-json-1_0-protocol.html) protocol in the Smithy documentation, and about CBOR at [AWS RPC v2 CBOR](https://smithy.io/2.0/additional-specs/protocols/smithy-rpc-v2.html) protocol in the Smithy documentation.
 
 For more about CloudWatch API requests, see [Making API Requests](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/making-api-requests.html) in the CloudWatch API Reference Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

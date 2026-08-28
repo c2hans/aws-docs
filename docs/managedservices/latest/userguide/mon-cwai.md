@@ -15,3 +15,7 @@ AMS does not monitor problems from CloudWatch Application Insights because they 
 To use CloudWatch Application Insights, submit an RFC with the Deployment \| Advanced stack components \| Identity and Access Management (IAM) \| Create entity or policy (managed automation) change type (ct-3dpd8mdd9jn1r) with a request to create an IAM role that provides you with permission to configure CloudWatch Application Insights. There are two options to receive the problems identified: through an SNS topic or with a target in CloudWatch Event rules. In the RFC, specify which you want. If you plan to use CloudWatch Event rules, also specify the rule definition in the RFC. After you're set up with CloudWatch Application Insights, you receive notice of potential problems including insights that point to a possible root cause.
 
 To learn how you can assume the role, see the AMS Onboarding Guide [Federate your Active Directory with the AMS IAM Roles](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/federate-dir-with-sent-iam-roles.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

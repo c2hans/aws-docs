@@ -232,3 +232,7 @@ Amazon RDS supports the following new features for your DB instances running Mar
 For a list of all MariaDB 10.4 features and their documentation, see [Changes and improvements in MariaDB 10.4](https://mariadb.com/kb/en/library/changes-improvements-in-mariadb-104/) and [Release notes - MariaDB 10.4 series](https://mariadb.com/kb/en/library/release-notes-mariadb-104-series/) on the MariaDB website.
 
 For a list of unsupported features, see [MariaDB features not supported by Amazon RDS](MariaDB.Concepts.FeatureNonSupport.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

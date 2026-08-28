@@ -40,3 +40,7 @@ Attachments to issues are not scanned or analyzed by Amazon CodeCatalyst. Any us
 1. To copy an attachment's URL, choose the ellipses menu next to the attachment of which you want to copy the URL and choose **Copy URL**.
 
 1. To remove an attachment, choose the ellipses menu next to the attachment you want to remove and choose **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

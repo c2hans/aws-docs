@@ -115,3 +115,7 @@ To prevent users in member accounts from using API operations in the identity st
 To ensure your AWS managed applications function well with your IAM Identity Center you should avoid applying this SCP to the AWS accounts where you deployed those applications. Also, if you use delegated administration, you should avoid applying this SCP to the delegated administration account. For more information, see [Best practices](delegated-admin.md#delegated-admin-best-practices).
 
 For more information, see [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) in the *AWS Organizations User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

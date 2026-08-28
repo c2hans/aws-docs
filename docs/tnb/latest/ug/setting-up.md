@@ -53,3 +53,7 @@ The AWS Command Line Interface (AWS CLI) provides commands for a broad set of AW
 You must create a IAM service role to manage different parts of your AWS TNB solution. AWS TNB service roles can make API calls to other AWS services, such as AWS CloudFormation, AWS CodeBuild, and various compute and storage services, on your behalf, to instantiate and manage resources for your deployment.
 
 For more information about the AWS TNB service role, see [Identity and access management for AWS TNB](security-iam.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Telco Network Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tnb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

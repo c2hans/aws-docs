@@ -22,3 +22,7 @@ To configure logging, use the console or the [CreateBotAlias](https://docs.aws.a
 + [Viewing text logs in Amazon CloudWatch Logs from Lex V2](conversation-logs-cw.md)
 + [Accessing audio logs in Amazon S3](conversation-logs-s3.md)
 + [Monitoring conversation log status with CloudWatch metrics](conversation-logs-monitoring.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

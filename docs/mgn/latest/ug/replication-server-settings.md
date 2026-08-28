@@ -48,7 +48,7 @@ Choose the **Replication server instance type**. This determines the instance ty
 
 The best practice is to not change the default replication server instance type unless there is a business need for doing so. By default, AWS Transform MGN uses the **t3.small** instance type. This is the most cost effective instance type and should work well for most common workloads. You can change the replication server instance type to speed up the initial sync of data from your source servers to AWS. Changing the instance type will likely lead to increased compute costs.
 
-You can choose a the **Replication server instance** type from the drop-down menu contains all available types. Recommended and commonly used instance types are displayed first. You can also search for a specific instance type in the search box.
+You can choose the **Replication server instance** type from the drop-down menu, which contains all available types. Recommended and commonly used instance types are displayed first. You can also search for a specific instance type in the search box.
 
 You can change the replication server instance type for servers that are replicating too slowly or servers that are constantly busy or experience frequent spikes. These are the most common instance type changes:
 + Servers with less than 26 disks – Change the instance type to **m5.large**. Increase the instance type to m5.xlarge or higher as needed.
@@ -167,7 +167,7 @@ These are resources required to facilitate data replication, testing and cutover
 
 To add a new tag, take the following steps:
 
-1. Click **Add new tag**.
+1. Choose **Add new tag**.
 
 1. Enter a **Custom tag key** and an optional tag value.
 
@@ -182,3 +182,7 @@ These resources include:
 + Security groups (optional)
 
 Learn more about AWS Tags in [this Amazon EC2 article](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ To change or enable your [AWS Support plan, you must be signed in as the root us
 1. Open the AWS sign-in page, then sign in with your reset password.
 
 Alternatively, you can use the AWS Root Access Management feature, which allows root actions to be performed on member accounts, without needing to sign in as Root. For more information, see [Centrally managing root access for customers using AWS Organizations](https://aws.amazon.com/blogs/aws/centrally-managing-root-access-for-customers-using-aws-organizations/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

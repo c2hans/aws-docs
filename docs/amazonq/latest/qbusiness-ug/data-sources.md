@@ -26,3 +26,7 @@ Amazon Q Business uses user email ID to determine end user access to documents i
 + [Connecting Amazon Q Business data source connectors](supported-connectors.md)
 + [Troubleshooting data source connectors](troubleshooting-data-sources.md)
 + [Managing Amazon Q Business data source resources](managing-resources-data-sources.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

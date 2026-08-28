@@ -25,3 +25,7 @@ There are some Regions where high usage results in relatively low emissions. The
 <a name="sustainability-vs-amazon-footprint"></a>
 
 Amazon's carbon footprint report is a part of our annual sustainability report. It covers Scope 1 through 3 emissions for all Amazon operations, including Amazon Web Services. The customer carbon footprint data available in the AWS Sustainability console provides you with the emissions that are attributable to your own AWS usage. For more information, see [Amazon Sustainability](https://sustainability.aboutamazon.com/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sustainability. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sustainability` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

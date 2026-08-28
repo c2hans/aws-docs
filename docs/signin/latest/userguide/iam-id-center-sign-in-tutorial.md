@@ -51,3 +51,7 @@ If you want more information about users in IAM Identity Center, refer to the fo
 + For details about IAM Identity Center sessions, see [User authentications](https://docs.aws.amazon.com/singlesignon/latest/userguide/authconcept.html).
 + For step-by-step directions on how to reset your IAM Identity Center user password, see [I forgot my IAM Identity Center password for my AWS account](troubleshooting-sign-in-issues.md#troubleshoot-forgot-iam-identity-center-password).
 + If you or your organization implement IP or domain filtering, you may need to allowlist domains to create and use your AWS access portal. IAM Identity Center supports both IPv4 and dual-stack endpoints. If your network uses IPv6, use the dual-stack endpoint domains. For details about allowlisting domains, see [Domains to add to your allow list](allowlist-domains.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

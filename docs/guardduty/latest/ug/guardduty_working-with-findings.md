@@ -67,3 +67,7 @@ The following list explains **Findings** page elements that will help you better
   **Saved rules** is a feature that helps you automatically filter and take actions on findings that match a specified criteria. Actions may include archiving findings or suppressing them from future notifications.
 
   For more information, see [Suppression rules](findings_suppression-rule.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

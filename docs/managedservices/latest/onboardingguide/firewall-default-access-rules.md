@@ -41,3 +41,7 @@ These rules are required for your authentication into AMS Windows stacks.
 | 3268 | TCP \| UDP | msft-gc, Microsoft Global Catalog (LDAP service which contains data from Active Directory forests) | Ingress and Egress |
 | 445 | TCP | Microsoft-DS Active Directory, Windows shares | Ingress and Egress |
 | 49152 - 65535 | TCP | Dynamic or private ports that cannot be registered with IANA. This range is used for private, or customized services or temporary purposes and for automatic allocation of ephemeral ports. | Ingress and Egress |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

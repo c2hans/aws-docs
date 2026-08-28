@@ -131,3 +131,7 @@ Amazon Redshift empowers tens of thousands of users to process exabytes of data 
 <a name="proof-of-concept-optimize-test-drive"></a>
 
 You can use [Test Drive](https://github.com/aws/redshift-test-drive/tree/main) to automatically replay your existing workload on potential configurations and analyze the corresponding outputs to evaluate the optimal target to migrate your workload to. See [Find the best Amazon Redshift configuration for your workload using Redshift Test Drive](https://aws.amazon.com/blogs/big-data/find-the-best-amazon-redshift-configuration-for-your-workload-using-redshift-test-drive/) for information about using Test Drive to evaluate different Amazon Redshift configurations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

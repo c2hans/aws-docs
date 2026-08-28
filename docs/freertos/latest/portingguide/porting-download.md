@@ -13,3 +13,7 @@ We recommend that you clone the repository. Cloning makes it easier for you to p
 Alternatively, submodule the individual libraries from the FreeRTOS or FreeRTOS-LTS repository. However, ensure that the library versions match the combination listed in the `manifest.yml` file in the FreeRTOS or FreeRTOS-LTS repository.
 
 After you download or clone FreeRTOS, you can start porting the FreeRTOS libraries to your board. For instructions, see [Setting up your workspace and project for porting](porting-set-up-project.md), and then see [Porting the FreeRTOS libraries](afr-porting.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -152,3 +152,7 @@ For AWS MGN, see [Best practices for AWS Transform MGN](https://docs.aws.amazon.
 <a name="migrate-microsoft-sql-server-always-on-group-using-mgn-additional"></a>
 
 For standard security requirements for migrating workloads to the AWS Cloud, see the [Best Practices for Security, Identity, and Compliance](https://aws.amazon.com/architecture/security-identity-compliance/) on the AWS website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

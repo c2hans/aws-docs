@@ -8,3 +8,7 @@ This is the AWS CDK v1 Developer Guide. The older CDK v1 entered maintenance on 
 <a name="how-tos"></a>
 
 This section contains short code examples that show you how to accomplish a task using the AWS CDK.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

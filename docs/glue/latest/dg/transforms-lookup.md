@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-lookup.html
 **Note**
 Underneath the **Lookup** transform, it is using a left join in order to be efficient. If the lookup table has a composite key, ensure the columns to match are setup to match all the key columns so that only one match can occur. Otherwise, multiple lookup rows will match and this will result in extra rows added for each of those matches.
 ![The screenshot shows the Transform tab for the Lookup transform.](http://docs.aws.amazon.com/glue/latest/dg/images/transforms-lookup-transform-tab.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

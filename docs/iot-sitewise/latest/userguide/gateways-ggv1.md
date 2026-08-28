@@ -14,3 +14,7 @@ For more information on getting started with SiteWise Edge gateways using AWS Io
 
 **Note**
 As AWS continues to innovate and improve its IoT services, it's recommended to stay updated with the latest features and enhancements. Regularly check the AWS IoT SiteWise and AWS IoT Greengrass documentation for new capabilities that can further optimize your industrial IoT solutions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

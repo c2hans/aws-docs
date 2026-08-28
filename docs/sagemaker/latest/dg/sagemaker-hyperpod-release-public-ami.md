@@ -205,3 +205,7 @@ AMI Name: HyperPod EKS 1.28 x86\_64 AMI Amazon Linux 2 2025080407
   + **tensorflow-model-server-neuronx.x86\_64:** 2.10.1.2.12.2.0-0
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

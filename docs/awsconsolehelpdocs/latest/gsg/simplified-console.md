@@ -18,3 +18,7 @@ If you signed up using our [new AWS experience](https://docs.aws.amazon.com/acco
 + **Chat with Amazon Q** – You can get generative artificial intelligence (AI) assistant powered answers to your AWS service questions directly from the console.
 
 Certain tasks are not supported in the AWS Management Console but are supported in AWS Settings. For more information, see [Compare sign-up options](https://docs.aws.amazon.com/accounts/latest/reference/sign-up-for-aws.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Management Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsconsolehelpdocs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

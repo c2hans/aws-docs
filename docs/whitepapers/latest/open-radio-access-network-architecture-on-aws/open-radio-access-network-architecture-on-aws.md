@@ -48,3 +48,7 @@ Publication date: **December 02, 2022** ([Document revisions](document-revisions
 +  Data analytics and ML is a differentiator for RIC.
 
  In this sense, this whitepaper describes the reference architecture of O-RAN implementation on AWS and its benefits, in relation to relevant services of AWS. This paper provides an O-RAN reference architecture, an overview of O-RAN components and their characteristics, use cases, and best practices for architecting O-RAN on AWS. Best practices include high-availability, scalability, security, performance, and operational excellence. Use the information in this paper to develop O-RAN solutions on AWS, providing a cost-efficient and agile path to CSPs so they can achieve an end-to-end malleable network, enabling a multitude of 5G services.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

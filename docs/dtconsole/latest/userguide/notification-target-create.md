@@ -111,3 +111,7 @@ Do not remove the Amazon SNS topic from the AWS Chatbot client after it has been
 1. Complete the client creation process. This client is then available for you to choose as a target when creating notification rules. For more information, see [Create a notification rule](notification-rule-create.md).
 **Note**
 Do not remove the Amazon SNS topic from the AWS Chatbot client after it has been configured for you. Doing so will prevent notifications from being sent to Microsoft Teams.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -99,3 +99,7 @@ Database users with the `apg_plan_mgmt` role can pro-actively compare plans, cha
 1. If the statement has any enabled and valid Approved plans, the optimizer chooses the minimum-cost plan from among the Approved plans stored for this SQL statement. The optimizer then runs the minimum-cost Approved plan.
 
    If the statement doesn't have any valid and enabled Approved plans, the optimizer uses the minimum cost plan (A. Run Optimizer's plan).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

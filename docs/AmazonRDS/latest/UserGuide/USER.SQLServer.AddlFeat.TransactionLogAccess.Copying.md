@@ -70,3 +70,7 @@ The following example shows a broken log chain in the output from the `rds_fn_li
 In a normal log chain, the log sequence number (LSN) value for first\_lsn for given rds\_sequence\_id should match the value of last\_lsn in the preceding rds\_sequence\_id. In the image, the rds\_sequence\_id of 45 has a first\_lsn value 90987, which does not match the last\_lsn value of 90985 for preceeding rds\_sequence\_id 44.
 
 For more information about SQL Server transaction log architecture and log sequence numbers, see [Transaction Log Logical Architecture](https://learn.microsoft.com/en-us/sql/relational-databases/sql-server-transaction-log-architecture-and-management-guide?view=sql-server-ver15#Logical_Arch) in the Microsoft SQL Server documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,6 +30,21 @@ A useful interactive tool is the [IVS Cost Estimator](https://ivs.rocks/calculat
 + Timing matters. For instance, if your stream competes with school, work, or vacation, this can affect your audience size.
 + It is very hard to build a live audience from non-live users. Of course, there are exceptions; bringing in external talent (like influencers with their own following) can increase audience size.
 
+## Cost Allocation Tags
+<a name="costs-tags"></a>
+
+You can assign tags to your Amazon IVS resources (such as channels) and use them as cost allocation tags to organize and track your Amazon IVS costs. A tag is a key-value pair that you define—for example, by application, environment, team, or event. After you activate cost allocation tags, AWS includes them in your cost allocation report so you can categorize and track your AWS spending at a finer level of detail.
+
+To use cost allocation tags with Amazon IVS:
+
+1. Tag your Amazon IVS resources. You can add tags when you create a resource or add them later, using the Amazon IVS console, the AWS CLI, or the Amazon IVS API. For tag restrictions and naming requirements, see [Best practices and strategies](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html#tag-best-practices-and-strategies) in *Tagging AWS Resources and Tag Editor*. For the Amazon IVS tagging operations (such as `TagResource`), see the [Amazon IVS Low-Latency Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/LowLatencyAPIReference/API_TagResource.html).
+
+1. Activate your tags as cost allocation tags in the AWS Billing and Cost Management console. Only tags you have activated appear in your billing reports. See [Activating user-defined cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/activating-tags.html). After you apply tags to resources, it can take up to 24 hours for the tag keys to appear on the Cost allocation tags page, and up to another 24 hours for them to activate.
+
+1. View your costs by tag using AWS Cost Explorer, AWS Cost and Usage Reports, or your monthly cost allocation report.
+
+For more information, see [Organizing and tracking costs using AWS cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in the *AWS Billing User Guide*.
+
 ## Auto-Record to Amazon S3
 <a name="costs-r2s3"></a>
 
@@ -76,3 +91,7 @@ To match the video quality of the ad content to the source content, MediaTailor 
 IVS delivers ad content to viewers as part of the video stream. You will not incur MediaTailor ad delivery charges, as the delivery of ad content is included in IVS video output costs.
 
 For more details, see the AWS Elemental MediaTailor [pricing page](https://aws.amazon.com/mediatailor/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

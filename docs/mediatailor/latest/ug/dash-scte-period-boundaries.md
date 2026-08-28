@@ -134,3 +134,7 @@ MediaTailor logs each suppressed or passed-through marker and emits a count metr
 
 **Important**
 This configuration applies to DASH manifests in live streaming mode only. To have marker suppression or passthrough configured for your configuration, contact AWS Support. When contacting support, specify which break types you want suppressed or passed through.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

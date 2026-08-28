@@ -286,3 +286,7 @@ The span details include the following items:
 <a name="query-inspector"></a>
 
  To help with debugging queries, Explore allows you to investigate query requests and responses, as well as query statistics, via the Query inspector. This functionality is similar to the panel inspector **Stats** tab and **Query** tab. For more information, see [Inspect query performance](inspect-a-panel.md#inspect-query-performance) and [View raw request and response to data source](inspect-a-panel.md#view-raw-request-and-response-to-data-source).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -199,3 +199,7 @@ The following issues commonly affect TCP port 443 or TCP port 1500 connectivity 
 + **VPC endpoint policy blocking access** — If you use VPC endpoints, the endpoint policy might deny the required API calls for AWS Elastic Disaster Recovery, Amazon S3, or Amazon EC2.
 + **Source server firewall blocking outbound 1500** — A host-based firewall on the source server blocks outbound TCP port 1500 connections.
 + **"Use private IP" setting misconfigured** — The **Use private IP for data replication** setting does not match your network topology. Enable this setting only when the source server can reach the replication server private IP address directly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

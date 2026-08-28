@@ -287,3 +287,7 @@ You can use the refresh token you generated to create a new access token-refresh
    ```
 
 For more information, see [Implementing a Refresh Token Flow](https://developer.atlassian.com/cloud/oauth/getting-started/refresh-tokens/) and [How do I get a new access token, if my access token expires or is revoked? ](https://developer.atlassian.com/cloud/jira/platform/oauth-2-3lo-apps/#how-do-i-get-a-new-access-token--if-my-access-token-expires-or-is-revoked-)in Atlassian Developer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

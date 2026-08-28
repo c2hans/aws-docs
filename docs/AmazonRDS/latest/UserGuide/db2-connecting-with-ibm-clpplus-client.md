@@ -111,3 +111,7 @@ Stored procedures like rdsadmin.db2pd\_command return results in CLOB columns, w
    ```
    $ (echo "select task_output from table(rdsadmin.get_task_status({{task_id}},null,null));" ; echo "disconnect;" ; echo "exit;") | clpplus -nw -silent {{masteruser}}/{{MasterUserPassword}}@{{hostname}}:{{port_num}}/rdsadmin
    ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

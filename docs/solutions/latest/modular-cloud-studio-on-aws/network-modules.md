@@ -52,3 +52,7 @@ If EventBridge EC2 Tagging Parameter is disabled at deployment, tagging infrastr
    + One private subnet - routes outbound traffic through a [NAT gateway](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html)
 
 1. Default EventBridge buses in each enabled region send EC2 instance state change events to a state machine for applying tags to any EC2 instance launched within an MCS VPC.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

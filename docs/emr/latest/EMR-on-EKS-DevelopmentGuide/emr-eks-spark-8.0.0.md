@@ -49,3 +49,7 @@ Release notes for AWS runtime for Apache Spark (emr-spark-8.0.0) on EKS:
 The following features are included with the emr-spark-8.0.0 release of AWS runtime for Apache Spark on EKS:
 + **Apache Spark 4.0.2 GA** – First production-ready release of Spark 4.x on Amazon EMR on EKS, featuring ANSI SQL mode, SQL PIPE syntax, VARIANT data type, SQL scripting, and streaming enhancements.
 + **Python 3.11 default** – Python 3.11 is the default for PySpark and Spark workloads. Python 3.12 and 3.13 are also available.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

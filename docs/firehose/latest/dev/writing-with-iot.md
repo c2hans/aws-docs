@@ -24,3 +24,7 @@ You can configure AWS IoT to send information to a Firehose stream by adding an 
 1. Choose **Add action**.
 
 For more information about creating AWS IoT rules, see [AWS IoT Rule Tutorials](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rules-tutorial.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

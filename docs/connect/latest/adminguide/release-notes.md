@@ -38,3 +38,7 @@ The following table summarizes the differences between Connect Customer Client A
 | 3.0.3 | July 30, 2026 | - | Improves redaction completion at contact end, window-monitoring cleanup, and support for international characters in window titles. |
 | 3.0.2 | June 1, 2026 | - | Adds optional [rule-based screen recording redaction](rule-based-redaction-screen-recording.md) and supporting browser and Windows monitoring components. |
 | 2.0.3 | June 13, 2025 | [Download v2.0.3](https://d4yqf2f7seiym.cloudfront.net/builds/AmazonConnectClientWin-v2.0.3.zip) | Provides standard agent screen recording. It does not include rule-based redaction for screen recordings. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

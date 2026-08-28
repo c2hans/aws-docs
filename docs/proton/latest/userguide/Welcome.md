@@ -52,3 +52,7 @@ The following diagram is a visualization of the main AWS Proton concepts discuss
  ![Number 5 icon.](http://docs.aws.amazon.com/proton/latest/userguide/images/label-five.png) AWS Proton provisions the **Service** with a **CI/CD Pipeline** for your **Service instances**.
 
  ![Number 6 icon.](http://docs.aws.amazon.com/proton/latest/userguide/images/label-six.png) AWS Proton provisions and manages the **Service** and the **Service Instances** that are running the **Source code** as was defined in the selected **Service Template**. A **Service Instance** is an instantiation of the selected **Service Template** in an **Environment** for a single stage of a **Pipeline** (for example Prod).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,3 +45,7 @@ For more information on Python on Amazon Linux, see [Python in AL2023](python.md
  AL2023 ships with [Amazon Corretto](https://aws.amazon.com/corretto/) as the default (and only) Java Development Kit (JDK). All Java based packages in AL2023 are built with Amazon Corretto 17.
 
  In AL1, OpenJDK 1.6.0 (`java-1.6.0-openjdk`) went EOL with the first 2018.03 release, and OpenJDK 1.7.0 (`java-1.7.0-openjdk`) went EOL in mid-2020, although both versions were available in the AL1 repositories. The earliest OpenJDK version available in AL2023 is OpenJDK 8, provided by Amazon Corretto 8.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

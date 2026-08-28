@@ -54,3 +54,7 @@ To request off-boarding an account you must:
    In the request, provide the list of account IDs to offboard, the reason for offboarding, and any additional considerations.
 
 1. Inform your CSDM about the accounts you want to offboard and request their help executing the offboarding process.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -95,3 +95,7 @@ If you’ve followed the steps in this pattern but you’re still encountering p
 + Follow the [troubleshooting guide ](https://docs.aws.amazon.com/connect/latest/adminguide/troubleshooting.html)for any other issues.
 
 If your troubleshooting and adjustments don’t solve the call quality issue, the root cause might be external to your workstation. For further troubleshooting, contact your IT support team.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

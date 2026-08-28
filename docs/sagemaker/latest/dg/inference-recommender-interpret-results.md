@@ -29,3 +29,7 @@ For full descriptions of the CloudWatch metrics used in the preceding charts, se
 You can also see performance metrics like `ClientInvocations` and `NumberOfUsers` published by Inference Recommender in the `/aws/sagemaker/InferenceRecommendationsJobs` namespace. For a full list of metrics and descriptions published by Inference Recommender, see [SageMaker Inference Recommender jobs metrics](monitoring-cloudwatch.md#cloudwatch-metrics-inference-recommender).
 
 See the [Amazon SageMaker Inference Recommender - CloudWatch Metrics](https://github.com/aws/amazon-sagemaker-examples/blob/main/sagemaker-inference-recommender/tensorflow-cloudwatch/tf-cloudwatch-inference-recommender.ipynb) Jupyter notebook in the [amazon-sagemaker-examples](https://github.com/aws/amazon-sagemaker-examples) Github repository for an example of how to use the AWS SDK for Python (Boto3) to explore CloudWatch metrics for your endpoints.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

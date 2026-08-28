@@ -70,3 +70,7 @@ When you create and run an Amazon Redshift data source, you add assets from the 
 When an Amazon Redshift data source is created, Amazon DataZone grants read only' access to the environment used to create the data source to access all the tables in the Amazon Redshift schemas used in the data source. You can monitor the status of these grants under data sources on your environment's details page.
 When using a different Amazon Redshift cluster or a Serverless workgroup than the one used to create the environment, you must ensure that the following AWS tag is added to the cluster or workgroup. This is necessary for the environment users to be able to view the granted database in the Amazon Redshift Query Editor V2: `DataZoneDiscoverable_${domainId}: true`
 For the environments created prior to the current release of Amazon DataZone, project members will not be able to see granted tables in Amazon Redshift.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

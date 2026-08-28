@@ -79,3 +79,7 @@ If the parameter does not exist, create a new string parameter and name it `auth
 1. Stop and restart the Amazon DCV server. For more information, see [Stopping the Amazon DCV Server](https://docs.aws.amazon.com/dcv/latest/adminguide/manage-stop.html) and [ Starting the Amazon DCV Server](https://docs.aws.amazon.com/dcv/latest/adminguide/manage-start.html) in the *Amazon DCV Administrator Guide*.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

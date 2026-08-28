@@ -57,3 +57,7 @@ Configure the following options for the resources:
 
   This CIDR block encompasses both VPC CIDR blocks (10.0.0.0/16 and 10.2.0.0/16). For more information, see [Associate or disassociate a Transit Gateway with Direct Connect.](associate-tgw-with-direct-connect-gateway.md).
 + VPC route: To route traffic from the 10.2.0.0/16 VPC, create a route in the VPC route table with a Destination of 0.0.0.0/0 and the Transit Gateway ID as the Target. This enables traffic from the VPC to reach the Direct Connect gateway. For more information about routing to a Transit Gateway, see [Routing for a Transit Gateway](https://docs.aws.amazon.com/vpc/latest/userguide/route-table-options.html#route-tables-tgw) in the * Amazon VPC User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

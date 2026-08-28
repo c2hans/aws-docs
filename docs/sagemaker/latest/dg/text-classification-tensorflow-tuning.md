@@ -36,3 +36,7 @@ For more information about which hyperparameters are used for each `optimizer`, 
 | optimizer | CategoricalParameterRanges | ['adamw', 'adam', 'sgd', 'rmsprop', 'nesterov', 'adagrad', 'adadelta'] |
 | regularizers\_l2 | ContinuousParameterRanges | MinValue: 0.0, MaxValue: 0.999 |
 | train\_only\_on\_top\_layer | CategoricalParameterRanges | ['True', 'False'] |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

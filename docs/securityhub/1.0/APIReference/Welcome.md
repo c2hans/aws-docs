@@ -48,3 +48,7 @@ In the Security Hub CSPM API, timestamp fields can end with `Z` or `("+" / "-") 
 + `YYYY-MM-DDTHH:MM:SS.mmmmmmmmm+HH:MM` (for example, `2024-01-04T15:25:10.123456789+17:59`)
 
 If a finding provider sends a finding to Security Hub CSPM that contains a timestamp in nanoseconds, we round it to milliseconds. For example, we round `2024-10-31T23:00:00.123456789Z` to `2024-10-31T23:00:00.123Z`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

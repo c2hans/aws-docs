@@ -18,3 +18,7 @@ STV\_DB\_ISOLATION\_LEVEL is visible to all users. Superusers can see all rows; 
 | --- | --- | --- |
 | db\_name | character(128) | The database name. |
 | isolation\_level | character(20) | The isolation level of the database. Possible values include Serializable and Snapshot Isolation.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

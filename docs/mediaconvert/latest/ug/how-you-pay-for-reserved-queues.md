@@ -21,3 +21,7 @@ You can choose auto renew when you set up your queue. Anytime after that, you ca
 
 **About billing when jobs hop queues**
 When you set up [queue hopping](setting-up-queue-hopping-to-avoid-long-waits.md) between a reserved queue and an on-demand queue, MediaConvert bills you according to the queue that it runs your job from. That is, if the job runs from your reserved queue, MediaConvert doesn't bill you for the job. If the job runs from your on-demand queue, MediaConvert bills you for the job at the on-demand rate.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

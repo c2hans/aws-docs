@@ -82,3 +82,7 @@ This table provides an overview of key Amazon Location Service APIs for route pl
 | Calculate Isolines | Identify the geographic area that can be reached within a specified time or distance based on your travel modes. | [Calculate isolines](calculate-isolines.md) |
 | Optimize Waypoints | Find the efficient order to travel to multiple destinations, reducing travel time and distance while accounting for factors like traffic and vehicle constraints. | [How to optimize waypoints for a route](optimize-waypoints.md) |
 | Snap to Roads | Match GPS traces to the nearest road segment, to improve accuracy of vehicle tracking and route visualization. | [Snap to Roads](snap-to-roads.md) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

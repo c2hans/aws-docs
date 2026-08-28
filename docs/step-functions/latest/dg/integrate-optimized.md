@@ -49,3 +49,7 @@ Standard Workflows and Express Workflows support the same **integrations** but n
 | [Amazon SNS](connect-sns.md) | Standard & Express | Not supported | Standard |
 | [Amazon SQS](connect-sqs.md) | Standard & Express | Not supported | Standard |
 | [AWS Step Functions](connect-stepfunctions.md) | Standard & Express | Standard | Standard |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

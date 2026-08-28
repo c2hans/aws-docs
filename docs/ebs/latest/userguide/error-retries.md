@@ -25,3 +25,7 @@ The following table shows the possible API error responses. Some API errors are 
 | AccessDeniedException | 403 | You do not have permission to perform the requested operation. | All APIs | No |
 | ServiceQuotaExceededException | 402 | The request failed because fulfilling the request would exceed one or more dependent service quotas for your account. | All APIs | No |
 | InvalidSignatureException | 403 | The request authorization signature has expired. You can retry the request only after refreshing the authorization signature. | All APIs | No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

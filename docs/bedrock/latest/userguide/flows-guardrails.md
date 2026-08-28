@@ -15,3 +15,7 @@ Amazon Bedrock Flows integrates with Amazon Bedrock Guardrails to let you identi
 For more information about guardrails, see [Detect and filter harmful content by using Amazon Bedrock Guardrails](guardrails.md).
 
 For more information about node types, see [Node types for your flow](flows-nodes.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

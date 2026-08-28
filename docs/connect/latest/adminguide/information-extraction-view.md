@@ -8,7 +8,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/information-ex
 Extracted information is available in the following locations:
 + **Contact Control Panel (CCP)** – During after-call work
 + **Contact details page** – After the contact ends
-+ **Contact search** – Filter and search contacts by extracted values
++ **Contact search** – Displayed in the contact search results table
 
 ## Contact Control Panel (CCP)
 <a name="information-extraction-view-ccp"></a>
@@ -27,9 +27,9 @@ After the contact ends, all extracted information appears in the **Extracted Inf
 ## Contact search
 <a name="information-extraction-view-contact-search"></a>
 
-You can search for contacts by extracted information values using the **Extracted Information** filter in the **Contact search** dropdown.
+Extracted information is displayed in the **Contact search** results table.
 
-![The Extracted Information filter in Contact search.](http://docs.aws.amazon.com/connect/latest/adminguide/images/InformationExtraction-View-ContactSearch.png)
+![Extracted information displayed in the Contact search results table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/InformationExtraction-View-ContactSearch.png)
 
 ## Errors
 <a name="information-extraction-errors"></a>
@@ -74,3 +74,7 @@ Failed extractions appear under `JobDetails.SkippedAnalysis` with the feature `I
 | `FAILED_SAFETY_GUIDELINES` | Extraction processing did not satisfy security or quality guardrails. |
 | `FEATURE_UNAVAILABLE` | The instance is an Amazon Connect Customer Basic instance, which does not support information extraction. |
 | `SYSTEM_ERROR` | An unexpected system error occurred during extraction. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

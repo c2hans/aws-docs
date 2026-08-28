@@ -20,3 +20,7 @@ You can implement backup monitoring for your workloads by integrating AWS Backup
 + Use [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/sns/) to subscribe to AWS Backup related topics such as backup, restore, and copy events.
 
 You can use AWS Backup Audit Manager to automatically generate evidence of your daily [backup audit reports](https://docs.aws.amazon.com/aws-backup/latest/devguide/working-with-audit-reports.html) for each account and Region. You can also scale your backup monitoring across multiple accounts by using a set of automation templates and dashboards (known as the backup observer solution) to obtain aggregated daily cross-account multi-Region [AWS Backup reporting](https://aws.amazon.com/blogs/storage/obtain-aggregated-daily-cross-account-multi-region-aws-backup-reporting/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

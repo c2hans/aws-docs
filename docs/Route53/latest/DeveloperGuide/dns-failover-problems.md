@@ -28,3 +28,7 @@ Although uncommon, there occasionally are significant internet partitions, meani
 For example, during an internet partition that affects connectivity to and from South America, the Route 53 DNS servers in the Route 53 South America (São Paulo) location might have good access to the health check endpoints in the South America (São Paulo) AWS Region, but poor access to endpoints elsewhere. At the same time, Route 53 in US East (Ohio) might have poor access to health check endpoints in the South America (São Paulo) Region, and conclude that the corresponding records are unhealthy.
 
 Partitions such as these can give rise to situations where Route 53 locations make different conclusions about the health status of endpoints, based on their local visibility of those endpoints. This is why each Route 53 location considers an endpoint healthy when only a portion of reachable health checkers consider it healthy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

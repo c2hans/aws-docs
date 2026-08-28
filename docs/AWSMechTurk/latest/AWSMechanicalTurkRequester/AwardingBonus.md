@@ -10,3 +10,7 @@ You can send bonus payments to workers who have completed an assignment for you 
 To send a bonus, you can use the [`SendBonus`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_SendBonusOperation.html) operation. You need to provide the ID of the worker and a past assignment that they've completed for you. The operation also requires that you specify the bonus amount in US Dollars and provide a reason for the award.
 
 Note that your account is charged for the bonus payment as well as Mechanical Turk fees.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

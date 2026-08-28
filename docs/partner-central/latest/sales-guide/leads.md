@@ -19,3 +19,7 @@ AWS Partners have the option to either accept or reject incoming lead engagement
 1. A banner will appear informing of the successful acceptance.
 
 Once accepted, the full lead detail, including contact information, becomes visible. Accepted leads appear on the **Leads** tab, where they can be enriched with AWS insights, edited, and converted to opportunities.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

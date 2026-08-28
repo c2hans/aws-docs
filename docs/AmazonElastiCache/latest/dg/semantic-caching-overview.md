@@ -38,3 +38,7 @@ Semantic caching is particularly effective for the following types of applicatio
 | RAG-based assistants and copilots | Many queries are duplicate requests from different users against a shared knowledge base | IT help chatbot, product FAQ bot, documentation assistant |
 | Agentic AI applications | Agents break tasks into multiple small steps that may repeatedly look up similar information | Compliance agent reusing policy lookups, research agent reusing prior findings |
 | Multimodal applications | Matching similar audio segments, images, or video queries | Automated phone systems reusing guidance for repeated requests like store hours |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ For more information, see TBD [Protecting your data with backups](using-backups.
 <a name="resiliency-snapshots"></a>
 
  Amazon FSx provides the ability to take snapshots of volumes within your file systems. A snapshot is a read-only image of your OpenZFS volume at a point in time, offering protection against accidental deletion or modification of files in your volumes by end users. For more information, see [Protecting your data with snapshots](snapshots-openzfs.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

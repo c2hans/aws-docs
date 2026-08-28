@@ -30,3 +30,7 @@ You can use the Systems Manager **Explore nodes** feature to view filtered or un
       + To change the order of columns, press and hold the drag handle (![The drag handle](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/drag-handle-dashboard.png)) of a column name and drag it up or down in the list.
 
 1. Choose **Confirm**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,3 +36,7 @@ Find the Technical Standards report by searching on "AWS Managed Services (AMS) 
 
 **Note**
 The AMS technical standard document is accessible for the Customer\_ReadOnly\_Role in single-account landing zone. In multi-account landing zone, the AWSManagedServicesAdminRole used by security admins and AWSManagedServicesChangeManagementRole used by application teams, can be used to access the document. If your team uses a custom role, create an Other \| Other RFC to request access and we will update the specified custom role.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

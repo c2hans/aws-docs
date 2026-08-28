@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/adminguide/securit
 You can limit the access end users have to AWS resources when you attach an IAM policy to a launch role. You then use AWS Service Catalog to create a launch constraint to use the role when launching the product.
 
 To learn more about managed policies for AWS Service Catalog, see [AWS Managed Policies for AWS Service Catalog.](security-iam-awsmanpol.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

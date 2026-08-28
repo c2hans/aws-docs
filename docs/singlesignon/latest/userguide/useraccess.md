@@ -15,3 +15,7 @@ You might need to grant users or groups permissions to operate in the AWS Organi
 + [Remove user and group access to an AWS account](howtoremoveaccess.md)
 + [Revoke user access](revoke-user-permissions.md)
 + [Delegate who can assign single sign-on access to users and groups in the management account](howtodelegatessoaccess.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

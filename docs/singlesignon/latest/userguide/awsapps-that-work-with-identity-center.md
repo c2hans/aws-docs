@@ -66,7 +66,11 @@ Applications that support deployment in additional Regions of IAM Identity Cente
 
 2 For Amazon Redshift, account instances of IAM Identity Center are supported except for applications like Query Editor v2 that require permission sets, which are not supported by account instances.
 
-3 You enable account access manager in the primary Region of IAM Identity Center, which makes the AWS account access application available there. You can replicate the account access manager instance to additional Regions of IAM Identity Center to make the AWS account access application available in those additional Regions.
+3 You enable account access manager in the primary Region of IAM Identity Center.
 
 **Note**
 Some AWS services such as Connect Customer and AWS Client VPN are not listed in this table although you can use them with IAM Identity Center. This is because they integrate with IAM Identity Center exclusively using SAML and are therefore categorized as [customer managed applications](customermanagedapps.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

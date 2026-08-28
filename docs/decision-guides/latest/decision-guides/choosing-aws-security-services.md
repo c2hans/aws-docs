@@ -1007,3 +1007,7 @@ Explore reference architecture diagrams to help you develop your security, ident
 | **Security, identity, and governance whitepapers** <br />Explore whitepapers for further insights and best practices on choosing, implementing, and using the security, identity, and governance services that best fit your organization. <br /> [Explore security, identity, and governance whitepapers](https://aws.amazon.com/architecture/?nc2=h_ql_le_arc&cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=content-type%23whitepaper&awsf.methodology=*all&awsf.tech-category=tech-category%23security-identity-compliance&awsf.industries=*all&awsf.business-category=*all)  | **AWS Security Blog** <br />Explore blog posts that address specific security use cases. <br /> [Explore the AWS Security blog](https://aws.amazon.com/blogs/security/)  |
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Decision Guides. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query decision-guides` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

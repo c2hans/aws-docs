@@ -121,3 +121,7 @@ $ sam local start-api --env-vars env.json
 <a name="serverless-sam-cli-using-start-api-layers"></a>
 
 If your application includes layers, for information about how to debug issues with layers on your local host, see [Increase efficiency using Lambda layers with AWS SAM](serverless-sam-cli-layers.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

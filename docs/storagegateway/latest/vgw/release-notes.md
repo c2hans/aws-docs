@@ -33,6 +33,8 @@ Gateway versions 2.x.x can't be updated to 3.x.x.
 
 | Release Date | Software Version | Release Notes |
 | --- | --- | --- |
+| 2026-08-24 | 3.2.9 |  +  Updated operating system and software elements to improve security and performance for new and existing gateways <br />+  Addressed issue with unplanned shutdown   |
+| 2026-07-30 | 3.2.8 |  +  Updated operating system and software elements to improve security and performance for new and existing gateways   |
 | 2026-06-30 | 3.2.7 |  +  Updated operating system and software elements to improve security and performance for new and existing gateways <br />+  Added support for PrivateLink FIPS endpoints   |
 | 2026-05-28 | 3.2.6 |  +  Updated operating system and software elements to improve security and performance for new and existing gateways <br />+  Made improvements for 2.x to 3.x (AL2 to AL2023) migration   |
 | 2026-05-04 | 3.2.5 |  +  Updated operating system and software elements to improve security and performance for new and existing gateways <br />+  Addressed issue with default network MTU setting affecting HyperV-based gateways   |
@@ -54,6 +56,8 @@ The following table lists the release notes for gateways based on AL2.
 
 | Release Date | Software Version | Release Notes |
 | --- | --- | --- |
+| 2026-09-01 | 2.14.8 |  +  Updated operating system and software elements to improve security and performance for new and existing gateways   |
+| 2026-07-30 | 2.14.7 |  +  Updated operating system and software elements to improve security and performance for new and existing gateways   |
 | 2026-06-30 | 2.14.6 |  +  Updated operating system and software elements to improve security and performance for new and existing gateways   |
 | 2026-05-28 | 2.14.5 |  +  Updated operating system and software elements to improve security and performance for new and existing gateways   |
 | 2026-05-04 | 2.14.4 |  +  Updated operating system and software elements to improve security and performance for new and existing gateways   |
@@ -86,3 +90,7 @@ The following table lists the release notes for gateways based on AL2.
 | 2024-03-06 | 2.8.0 |  +  Updated operating system and software elements to improve security and performance for new gateways <br />+  Security patch updates  |
 | 2023-12-19 | 2.7.0 |  +  Updated operating system and software elements to improve security and performance for new gateways  |
 | 2023-12-14 | 2.6.6 |  +  Maintenance release  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

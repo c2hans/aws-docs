@@ -19,3 +19,7 @@ The last release of Amazon EMR to include Ganglia was Amazon EMR 6.15.0. To moni
 1.  With the proxy set and the SSH connection open, you can view the Ganglia UI by opening a browser window with http://{{master-public-dns-name}}/ganglia/, where {{master-public-dns-name}} is the public DNS address of the master server in the EMR cluster.
 
 ![Ganglia cluster report](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/images/ganglianew.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

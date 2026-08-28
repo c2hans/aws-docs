@@ -12,3 +12,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
  The systematic evaluation process offered by this lens, coupled with its integration into the AWS Well-Architected Tool, empowers technology professionals to make informed decisions and continuously improve their Microsoft-based architectures. Furthermore, the availability of hands-on labs and support from specialized APN Partners provides organizations the practical resources to implement these best practices effectively.
 
  The AWS Well-Architected Microsoft Workloads Lens serves as a crucial tool for businesses looking to harness the full potential of Microsoft technologies on the AWS Cloud. By adhering to the guidance provided in this lens, organizations can significantly enhance the reliability, security, efficiency, and cost-effectiveness of their Microsoft workloads, thereby increasing their chances of achieving business success in the cloud.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

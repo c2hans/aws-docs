@@ -85,3 +85,7 @@ CodeCatalyst adds a `README.md` file to your repository when you create it. Code
       ```
 
 After setting up your project, you can continue on to the next step before you can begin developing your action using the CodeCatalyst ADK. For more information, see [Step 2: Install tools and packages](getting-started.md#install-tools-packages).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

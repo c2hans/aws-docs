@@ -36,3 +36,7 @@ For data sources using web-crawler as the connector, only data sources created a
 After Amazon Q Business extracts semantic meaning from images and visuals, your end users can ask questions and get answers related to the images. When an end user asks a question, Amazon Q Business retrieves relevant answers from the text and the images. Answers include the images and links for the documents that contain them.
 
 For example, your user might ask, "Can you walk me through the process of enrolling in a health plan on the employee benefits site?" Amazon Q Business would then analyze the company's internal knowledge base, including detailed guides, process documentation, and screen shots showing the step-by-step enrollment process. It would synthesize this information into a clear, easy-to-follow response that outlined each stage of the enrollment journey.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

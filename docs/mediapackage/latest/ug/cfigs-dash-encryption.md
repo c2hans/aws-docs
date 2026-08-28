@@ -35,3 +35,7 @@ To serve content with copyright protection, select **Enable encryption** and com
    If you select **SPEKE Version 2.0**, then also choose a **Video encryption preset** and an **Audio encryption preset**. The video and audio presets determine which content keys MediaPackage uses to encrypt the audio and video tracks in your stream. For more information about these presets, see [SPEKE Version 2.0 presets](drm-content-speke-v2-presets.md).
 
     When using SPEKE Version 2.0, MediaPackage disables key rotation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

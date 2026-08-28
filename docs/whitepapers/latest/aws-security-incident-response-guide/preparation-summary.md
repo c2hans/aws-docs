@@ -29,3 +29,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 |  Technology  |  Develop forensics capabilities.  |  +   Identify artifacts required for forensics collection.  <br />+   Capture and secure backups of key systems.  <br />+   Define mechanisms for analysis of identified logs and artifacts.  <br />+   Implement automation for forensics analysis.    |
 
  An iterative approach is recommended for incident response preparation. All of these preparation items cannot be done overnight; you should create a plan to start small and continuously improve your incident response capabilities over time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

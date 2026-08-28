@@ -30,3 +30,7 @@ Currently, AWS SCT supports the conversion of ETL scripts to objects to AWS Glue
 + [Converting FastExport scripts to Amazon Redshift RSQL with AWS Schema Conversion Tool](CHAP-converting-fastexport-rsql.md)
 + [Converting FastLoad job scripts to Amazon Redshift RSQL with AWS Schema Conversion Tool](CHAP-converting-fastload-rsql.md)
 + [Converting MultiLoad scripts to Amazon Redshift RSQL with AWS Schema Conversion Tool](CHAP-converting-multiload-rsql.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Schema Conversion Tool User Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query SchemaConversionTool` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -81,3 +81,7 @@ If your job includes any other inputs with video, MediaConvert uses the frame ra
 If your job does not include any other inputs, there is no input resolution for MediaConvert to follow. Specify an output resolution.
 
 If your job includes any other inputs with video, MediaConvert uses the resolution from the first video input.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

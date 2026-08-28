@@ -20,3 +20,7 @@ The following is a summary of the best practices explained in this guide. These 
 + To complement the recommendations in this guide for identity-based policies and resource-based policies, consider implementing additional security controls for least-privilege permissions, such as service control policies (SCPs) and permissions boundaries. For more information, see [Next steps](next-steps.md).
 
 The CloudFormation documentation contains additional [Best practices](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html) and [Security best practices](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/security-best-practices.html) that can help you use CloudFormation more effectively and securely. In addition, see [Best practices for configuring identity-based policies for least-privilege CloudFormation access](best-practices-identity-based-policies.md) in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

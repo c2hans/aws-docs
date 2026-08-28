@@ -185,3 +185,7 @@ For the web experience to work properly with AWS CLI commands both policies are 
 ------
 
 For more information on using service-linked roles for an Amazon Q application environment, see [Using service-linked roles](https://docs.aws.amazon.com/amazonq/latest/business-use-dg/using-service-linked-roles.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

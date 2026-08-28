@@ -15,3 +15,7 @@ To unwrap a data key in AWS CloudHSM, you need a trusted key that has `CKA_UNWRA
 When an application submits a key to be unwrapped, the application can also provide its own unwrap template. If you specify an unwrap template and the application provides its own unwrap template, the HSM uses both templates to apply attribute names and values to the key. However, if during the unwrap request a value in the trusted key’s `CKA_UNWRAP_TEMPLATE` conflicts with an attribute provided by the application, the unwrap request fails.
 
 To see an example on unwrapping a data key with a trusted key, refer to [this PKCS \#11 example](https://github.com/aws-samples/aws-cloudhsm-pkcs11-examples/blob/master/src/wrapping/unwrap_with_template.c).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

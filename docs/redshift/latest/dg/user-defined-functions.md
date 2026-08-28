@@ -22,3 +22,7 @@ By default, all users can run UDFs. For more information about privileges, see [
 + [Scalar Python UDFs](udf-creating-a-scalar-udf.md)
 + [Scalar Lambda UDFs](udf-creating-a-lambda-sql-udf.md)
 + [Use case examples for user-defined functions (UDFs)](udf-example-uses.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

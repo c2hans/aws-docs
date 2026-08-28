@@ -65,3 +65,7 @@ Amazon SQS VPC endpoints provide two ways to control access to your messages:
 + You can control which VPCs or VPC endpoints have access to your queue using a queue policy.
 
 For more information, see [Amazon Virtual Private Cloud endpoints for Amazon SQS](sqs-internetwork-traffic-privacy.md#sqs-vpc-endpoints) and [Creating an Amazon VPC endpoint policy for Amazon SQS](sqs-internetwork-traffic-privacy.md#sqs-vpc-endpoint-policy).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

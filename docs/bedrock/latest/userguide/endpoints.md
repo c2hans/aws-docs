@@ -106,3 +106,7 @@ Both endpoints can be used together from the same application — choose per use
 
 **Reduce data egress costs with VPC interface endpoints**
 If you are calling Amazon Bedrock from within a VPC, consider using [VPC interface endpoints (AWS PrivateLink)](vpc-interface-endpoints.md) to keep traffic within the AWS network and avoid data egress charges associated with NAT gateways or internet gateways.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

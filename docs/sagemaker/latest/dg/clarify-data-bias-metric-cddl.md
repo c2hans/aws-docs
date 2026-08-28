@@ -43,3 +43,7 @@ The range of DD values for binary outcomes for the full dataset DDd or for its c
 If you don't condition on anything then CDD is zero if and only if DPL is zero.
 
 This metric is useful for exploring the concepts of direct and indirect discrimination and of objective justification in EU and UK non-discrimination law and jurisprudence. For additional information, see [Why Fairness Cannot Be Automated](https://arxiv.org/abs/2005.05906). This paper also contains the relevant data and analysis of the Berkeley admissions case that shows how conditionalizing on departmental admission rate subgroups illustrates Simpson's paradox.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

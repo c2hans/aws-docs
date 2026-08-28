@@ -49,3 +49,7 @@ Using AWS Marketplace can provide the following benefits:
 + **Learning capability access** – Availability of adaptive systems without internal development costs
 
 This approach enables organizations to compare multiple options based on outcome delivery and learning capabilities rather than feature lists. It can also help you establish clear success criteria and measurement methodologies and negotiate outcome-based pricing that is tied to business results and system improvement. By financing agentic AI transformation through outcome-based models, organizations can modernize their processes continuously while only paying for measurable improvements and successful outcomes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

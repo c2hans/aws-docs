@@ -528,3 +528,7 @@ However, after you complete this and any other tutorials, you should delete the 
 1. To clean up your CodeDeploy resources, follow the instructions in [To clean up resources (console)](https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorials-wordpress-clean-up.html#tutorials-wordpress-clean-up-console).
 
 1. To delete the S3 bucket, follow the instructions in [Deleting or emptying a bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/delete-or-empty-bucket.html). If you do not intend to create more pipelines, delete the S3 bucket created for storing your pipeline artifacts. For more information about this bucket, see [CodePipeline concepts](concepts.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

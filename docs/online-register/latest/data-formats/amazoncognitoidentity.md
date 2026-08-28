@@ -23,3 +23,7 @@ Amazon Cognito Identity provides the following APIs for data retrieval.
 | <a name="cognito-identity-ListIdentityPools"></a>[ListIdentityPools](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_ListIdentityPools.html) | List all of the Cognito identity pools registered for your account | List |
 | <a name="cognito-identity-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_ListTagsForResource.html) | List the tags that are assigned to an Amazon Cognito identity pool | Read |
 | <a name="cognito-identity-LookupDeveloperIdentity"></a>[LookupDeveloperIdentity](https://docs.aws.amazon.com/cognitoidentity/latest/APIReference/API_LookupDeveloperIdentity.html) | Retrieve the IdentityId associated with a DeveloperUserIdentifier or the list of DeveloperUserIdentifiers associated with an IdentityId for an existing identity | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ A basic stateful rule has the following match settings. These specify what the N
 The console doesn't currently allow entry of rule options. Rule options are usually required for complete specification of this rule type. If you need to specify rule options, use one of the APIs or AWS CloudFormation. For information, see [StatefulRule](https://docs.aws.amazon.com/network-firewall/latest/APIReference/API_StatefulRule.html) in the *AWS Network Firewall API Reference* and [AWS::NetworkFirewall::RuleGroup StatefulRule](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-networkfirewall-rulegroup-statefulrule.html) in the *AWS CloudFormation User Guide*.
 
 For an example rule specification and the Suricata compatible rule that Network Firewall generates from it, see [Stateful rules examples: standard stateful rule groups](suricata-examples.md#suricata-example-basic).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

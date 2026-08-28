@@ -32,3 +32,7 @@ You can restore from a snapshot of Enterprise Edition to either Standard Edition
 1. Choose **Restore DB Instance**.
 
 For more information about restoring from a snapshot, see [Restoring to a DB instance](USER_RestoreFromSnapshot.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

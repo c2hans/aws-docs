@@ -88,3 +88,7 @@ If you are currently on the AWS Free Tier, log into the AWS Management Console a
 This error means your company already has a AWS Partner Central account. Your company hasn't yet migrated that account to the new Partner Central in the AWS Management Console. You don't need to create a new account.
 
 To resolve this error, return to [legacy Partner Central](https://partnercentral.awspartner.com/partnercentral2/s/login), sign in as an existing AWS Partner, and complete the migration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

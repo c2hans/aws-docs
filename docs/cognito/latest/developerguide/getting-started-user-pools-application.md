@@ -50,3 +50,7 @@ Amazon Cognito makes some default configurations in this process that you can't 
 | Client secret | Requires a client secret hash in authentication requests. | Create a new app client with a Traditional web application or Machine-to-machine application profile. | [Application-specific settings with app clients](user-pool-settings-client-apps.md) |
 | Preferred username | User pool doesn't accept the preferred\_username attribute as an alias. | Create a user pool programmatically with an AWS SDK. | [Customizing sign-in attributes](user-pool-settings-attributes.md#user-pool-settings-aliases) |
 | Case sensitivity | User pool usernames are case insensitive, for example JohnD is considered to be the same user as johnd. | Create a user pool programmatically with an AWS SDK. | [User pool case sensitivity](user-pool-case-sensitivity.md) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

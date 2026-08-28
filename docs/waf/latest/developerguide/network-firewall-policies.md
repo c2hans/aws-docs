@@ -38,3 +38,7 @@ The following sections cover requirements for using Firewall Manager Network Fir
 + [How Firewall Manager manages your Network Firewall resources](fms-manage-network-firewall.md)
 + [How Firewall Manager manages and monitors VPC route tables for your policy](fms-manage-vpc-route-tables.md)
 + [Configuring logging for an AWS Network Firewall policy](nwfw-policies-logging-config.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

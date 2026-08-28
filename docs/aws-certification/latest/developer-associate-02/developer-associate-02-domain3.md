@@ -49,3 +49,7 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/developer-assoc
 + Skill 3.4.9: Use labels and branches for version and release management
 + Skill 3.4.10: Use existing runtime configurations to create dynamic deployments (for example, using staging variables from API Gateway in Lambda functions)
 + Skill 3.4.11: Configure deployment strategies (for example, blue/green, canary, rolling) for application releases
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ The following usage matrix lists the recommended settings for different users an
 | Java | Java  | 1.4.x | Calls checkpoint without any arguments | Yes | None |
 | Java | Java | 1.4.x | Calls checkpoint with an explicit sequence number | Yes | Either disable aggregation, or change the code to use extended sequence numbers for checkpointing. |
 | Java | Anything but Java  | 1.3.x \+ Multilanguage daemon \+ language-specific wrapper | N/A | Yes | Must disable aggregation.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

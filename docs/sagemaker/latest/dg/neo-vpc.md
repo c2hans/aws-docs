@@ -147,3 +147,7 @@ Use default DNS settings for your endpoint route table, so that standard Amazon 
 <a name="neo-vpc-groups"></a>
 
 In your security group for the compilation job, you must allow outbound communication to your Amazon S3 Amazon VPC endpoints and the subnet CIDR ranges used for the compilation job. For information, see [Security Group Rules](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_SecurityGroups.html#SecurityGroupRules) and [Control access to services with Amazon VPC endpoints](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/vpc-endpoints-access.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

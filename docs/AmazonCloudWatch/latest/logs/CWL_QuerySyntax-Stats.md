@@ -209,3 +209,7 @@ CloudWatch Logs Insights supports both stats aggregation functions and stats non
 | `latest(fieldName: LogField)` | LogField | Returns the value of `fieldName` from the log event that has the latest timestamp in the queried logs. |
 | `sortsFirst(fieldName: LogField)` | LogField | Returns the value of `fieldName` that sorts first in the queried logs. |
 | `sortsLast(fieldName: LogField)` | LogField | Returns the value of `fieldName` that sorts last in the queried logs. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

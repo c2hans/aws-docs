@@ -42,10 +42,12 @@ Conda provides packages from *channels*. A channel is a location where packages 
   + `maya-mtoa=2024.5.3`
   + `maya-mtoa=2025.5.4`
   + `maya-mtoa=2026.5.5`
+  + `maya-mtoa=2027.5.6`
 + Autodesk Maya
   + `maya=2024`
   + `maya=2025`
   + `maya=2026`
+  + `maya=2027`
   + `maya-openjd`
 + Autodesk VRED
   + `vredcore=2025`
@@ -127,3 +129,7 @@ When you submit a job to a queue with the default conda environment, the environ
 When you use an integrated submitter to send a job to Deadline Cloud from your DCC, the submitter populates the value of the `CondaPackages` parameter based on the DCC application and submitter. For example, if you are using Blender the `CondaPackage` parameter is set to `blender=3.6.* blender-openjd=0.4.*`.
 
 We recommend you pin any submissions to only the versions listed in the table above, for example blender=3.6. Pinning to the major.minor version is recommended because patch releases affect the available packages. For example, when we release Blender 3.6.17, we will no longer distribute Blender 3.6.16. Any submissions pinned to blender=3.6.16 will fail. If you pin to blender=3.6, then you will get the latest distributed patch version and jobs will not be impacted. By default, the DCC submitters pin to the current versions listed in the table above, excluding the patch number, such as blender=3.6.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

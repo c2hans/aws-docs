@@ -22,3 +22,7 @@ Some protocols require additional ports for error correction. For outputs that u
 | ST 2110 JPEG XS | Ports for each media stream | The ports that you specify for each media stream. These are the only ports needed for the output. |
 | Zixi pull | Stream ID, remote ID, and CIDR allow list | The service automatically uses port 2077 for these outputs. |
 | Zixi push | IP address, stream ID, and port | The port that you specify is the only port needed for the output. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

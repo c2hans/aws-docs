@@ -146,3 +146,7 @@ Tags are words or phrases that act as metadata that you can use to identify and 
 For more information about tagging in AWS IoT Wireless, see [Tagging your AWS IoT Wireless resources](tagging-iotwireless.md).
 
 For more information about tagging and tagging strategies, see [Tag editor](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

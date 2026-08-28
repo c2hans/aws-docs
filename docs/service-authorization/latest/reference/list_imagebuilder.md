@@ -1003,3 +1003,7 @@ Amazon EC2 Image Builder defines the following condition keys that can be used i
 |   [imagebuilder:Ec2MetadataHttpTokens](https://docs.aws.amazon.com/imagebuilder/latest/userguide/security_iam_service-with-iam.html#image-builder-security-ec2metadatatokens)  | Filters access by the EC2 Instance Metadata HTTP Token Requirement specified in the request | String |
 |   [imagebuilder:LifecyclePolicyResourceType](https://docs.aws.amazon.com/imagebuilder/latest/userguide/security_iam_service-with-iam.html#image-builder-security-lifecyclepolicyresourcetype)  | Filters access by the Lifecycle Policy Resource Type specified in the request | String |
 |   [imagebuilder:StatusTopicArn](https://docs.aws.amazon.com/imagebuilder/latest/userguide/security_iam_service-with-iam.html#image-builder-security-statustopicarn)  | Filters access by the SNS Topic Arn in the request to which terminal state notifications will be published | ARN |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

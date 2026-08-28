@@ -9,7 +9,7 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 
 Complete these steps to install the AWS Replication Agent on Windows source servers.
 
-Ensure that the necessary service roles have been created by clicking on the **Reinitialize service permissions** button on the AWS Transform MGN console replication settings page. You must have the permissions necessary to create IAM roles in order for this operation to succeed.
+Ensure that the necessary service roles have been created by choosing the **Reinitialize service permissions** button on the AWS Transform MGN console replication settings page. You must have the permissions necessary to create IAM roles in order for this operation to succeed.
 
 Download the agent installer (AWSReplicationWindowsInstaller.exe)**.** Copy or distribute the downloaded agent installer to each Windows source server that you want to add to AWS Transform MGN.
 
@@ -31,7 +31,7 @@ AWS Regions that are not opt-in also support the shorter installer path: `https:
 You can generate a custom installation command through the **Add servers** prompt. [Learn more about the Add servers prompt](add-server-server-page.md#server-actions-main).
 Microsoft Windows Server versions 2003, 2003 R2, 2008, and 2008 R2 use a version of the AWS Replication Agent that is only valid for those versions - `AwsReplicationWindowsLegacyInstaller.exe`. DO NOT use this installer file to install the agent on any other OS types. You can generate an installer by following the steps outlined in the [Add servers actions prompt documentation](add-server-server-page.md#server-actions-main) or directly download it from `https://aws-application-migration-service-<region>.s3.amazonaws.com/latest/windows_legacy/AwsReplicationWindowsLegacyInstaller.exe` . Replace `<region>` with the AWS Region into which you are replicating. If you need to validate the installer hash, the correct hash can be found here: `https://aws-application-migration-service-hashes-<region>.s3.amazonaws.com/latest/windows_legacy/AwsReplicationWindowsLegacyInstaller.exe.sha512` (replace <region> with the AWS Region into which you are replicating.
 Microsoft Windows Server 2012 uses a version of the AWS Replication Agent that is only valid for that version AwsReplicationWindows2012LegacyInstaller.exe. DO NOT use this installer file to install the agent on any other OS types. You can download it from `https://aws-application-migration-service-<REGION>.s3.amazonaws.com/latest/windows_legacy/windows_2012_legacy/AwsReplicationWindows2012LegacyInstaller.exe` . Replace `<REGION>` with the AWS Region into which you are replicating.
-If you need to validate the installer hash, the correct hash can be found here: `https://aws-application-migration-service-hashes-<region>.s3.amazonaws.com/latest/windows_legacy/AwsReplicationWindows2012LegacyInstaller.exe.sha512` (replace <region> with the AWS Region into which you are replicating.
+If you need to validate the installer hash, the correct hash can be found here: `https://aws-application-migration-service-hashes-<region>.s3.amazonaws.com/latest/windows_legacy/windows_2012_legacy/AwsReplicationWindows2012LegacyInstaller.exe.sha512` (replace <region> with the AWS Region into which you are replicating.
 
 ## AWS Replication Agent download URL for Windows for each supported AWS Region
 <a name="installer-download-table"></a>
@@ -344,7 +344,7 @@ This flag may only be used when adding new source servers to MGN. You cannot use
 **Note**
 You can also enter these values as part of the installation script command parameters. If you do not enter these parameters as part of the installation script, you are prompted to enter them one by one as described above. (for example: ` AwsReplicationWindowsInstaller.exe --region regionname --aws-access-key-id AKIAIOSFODNN7EXAMPLE --aws-secret-access-key wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY)`
 
-1. Once you have entered your credentials, the installer verifies that the source server has enough free disk space for Agent installation and identify volumes for replication. The installer displays the identified disks and prompt you to choose the disks you want to replicate.
+1. Once you have entered your credentials, the installer verifies that the source server has enough free disk space for Agent installation and identifies volumes for replication. The installer displays the identified disks and prompts you to choose the disks you want to replicate.
 ![AWS Replication Agent installation window showing region, access key, and disk space verification.](http://docs.aws.amazon.com/mgn/latest/ug/images/new-soureservers-windows3.png)
 
    To replicate some of the disks, type the path of the disks, separated by a comma, as illustrated in the installer (for example: C: or D:). To replicate all of the disks, press **Enter**. The installer identifies the selected disks and print their size.
@@ -353,7 +353,7 @@ You can also enter these values as part of the installation script command param
    The installer confirms that all of the disks were successfully identified.
 ![AWS Replication Agent installation progress showing disk selection and successful identification.](http://docs.aws.amazon.com/mgn/latest/ug/images/new-soureservers-windows5.png)
 **Note**
-When identifying specific disks for replication, do not use apostrophes, brackets, or disk paths that do not exist. Type only existing disk paths. Each disk that you selected for replication is displayed with the caption **Disk to replicate identified**. However, the displayed list of identified disks for replication may differ from the data you entered. This difference can due to several reasons:
+When identifying specific disks for replication, do not use apostrophes, brackets, or disk paths that do not exist. Type only existing disk paths. Each disk that you selected for replication is displayed with the caption **Disk to replicate identified**. However, the displayed list of identified disks for replication may differ from the data you entered. This difference can be due to several reasons:
 The root disk of the source server is always replicated, whether you select it or not. Therefore, it always appears on the list of identified disks for replication.
 AWS Transform MGN replicates whole disks. Therefore, if you choose to replicate a partition, its entire disk appears on the list and is later replicated. If several partitions on the same disk are selected, then the disk only appears once on the list.
 Incorrect disks may be chosen by accident. Ensure that the correct disks have been chosen.
@@ -368,3 +368,7 @@ Note that the returned disks need be replicated from the beginning. Any disk siz
 ![Command prompt showing successful installation of AWS Replication Agent with disk replication details.](http://docs.aws.amazon.com/mgn/latest/ug/images/new-soureservers-windows7.png)
 
    You can review this process in real time on the **Source servers** page. [Learn more about the initial sync process](migration-dashboard.md#initiation).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

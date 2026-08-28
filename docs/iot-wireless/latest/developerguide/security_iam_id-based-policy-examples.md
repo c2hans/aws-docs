@@ -109,3 +109,7 @@ You can use conditions in your identity-based policy to control access to AWS Io
 The policy has one statement that grants permission to use the `CreateWirelessDevice`, `GetWirelessDevice`, `ListWirelessDevices`, `UpdateWirelessDevice`, and `DeleteWirelessDevice` actions. AWS IoT Wireless calls these methods to create and manage your wireless devices.
 
 The policy doesn't specify the Principal element because you don't specify the principal who gets the permission in an identity-based policy. When you attach a policy to a user, the user is the implicit principal. When you attach a permissions policy to an IAM role, the principal identified in the role's trust policy gets the permissions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

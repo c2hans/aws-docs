@@ -51,3 +51,7 @@ For more information about tasks that you can perform after adding tags to a res
 + [Use tags to organize costs for your resources](amazon-lightsail-organizing-costs-using-tags.md)
 + [Use tags to control access to your resources](amazon-lightsail-controlling-access-using-tags.md)
 + [Delete tags](amazon-lightsail-deleting-tags.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

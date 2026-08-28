@@ -22,3 +22,7 @@ If you have not already done so, you must transition all existing Terraform Open
 After transitioning your existing products, use the External product type for any new products that use a tar.gz configuration file.
 
 AWS Service Catalog will support customers through this change as needed. If these changes require extensive effort for your account, or impact critical product workloads, contact your account representitive to request assistance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -92,3 +92,7 @@ The Console Mobile Application supports the following AWS services:
 The Console Mobile Application supports a select subset of features for the AWS services listed above. If you don’t see a feature you want to use on the app, you can [contact us](mailto:aws-appstore@amazon.com). You can also leave feedback in the app by choosing the menu icon in the upper left, then choosing **Feedback**. Add your comments, optionally include logs, and then choose **Submit**.
 
 If you use AWS Billing and Cost Management, note that you need to have API permissions to use that service on the mobile application. See the example IAM policy in [Getting started with AWS Console Mobile Application](getting-started.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Console Mobile Application. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query consolemobileapp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ Dependency discovery in the next generation of Resilience Hub automatically iden
 + [Coverage and known limitations](next-gen-discovery-limitations.md)
 + [Troubleshooting dependency discovery](next-gen-troubleshooting-discovery.md)
 + [Pricing](next-gen-dependency-discovery-pricing.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

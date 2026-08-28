@@ -507,3 +507,7 @@ WHERE addresses.id = geocoded_data.id;
 <a name="aurora-amazon-location-next-steps"></a>
 
 Sample code is available in the Amazon Location Service samples repository on [GitHub](https://github.com/aws-samples/amazon-location-samples/tree/main/aurora-udfs), which includes [an AWS CloudFormation template](https://github.com/aws-samples/amazon-location-samples/tree/main/aurora-udfs/cloudformation/template.yaml).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

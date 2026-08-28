@@ -26,3 +26,7 @@ If you've integrated Amazon WorkMail with IAM Identity Center, you can choose to
 1. In the list of users, select the check box next to the name of the user, and then choose **Reset password**.
 
 1. In the **Reset Password** dialog box, enter the new password, and then choose **Reset**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

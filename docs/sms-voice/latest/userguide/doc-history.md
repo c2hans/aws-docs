@@ -43,3 +43,7 @@ The following table describes the documentation releases for AWS End User Messag
 | [SMS Sandbox](#doc-history) | You are charged for SMS verification messages after the first verification message is sent. For more information, see [SMS Sandbox](https://docs.aws.amazon.com/sms-voice/latest/userguide/sandbox.html#sandbox-sms).  | November 28, 2023 |
 | [Phone numbers two-way messaging](#doc-history) | AWS End User Messaging SMS now supports sending two-way SMS messages to Connect Customer for processing. For more information, see [Two-way SMS messaging](https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers-two-way-sms.html).  | November 28, 2023 |
 | [Initial release](#doc-history) | Initial release of the AWS End User Messaging SMS User Guide | November 16, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

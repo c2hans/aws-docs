@@ -400,3 +400,7 @@ When you use server certificate OCSP in AWS IoT Core, keep the following in mind
 <a name="iot-custom-endpoints-cert-config-ocsp-troubleshooting"></a>
 
 AWS IoT Core emits the `RetrieveOCSPStapleData.Success` metric and the `RetrieveOCSPStapleData` log entries to CloudWatch. The metric and the log entries can help detect issues related to retrieving OCSP responses. For more information, see [Server certificate OCSP stapling metrics](metrics_dimensions.md#server-ocsp-metrics) and [Server certificate OCSP log entries](cwl-format.md#server-ocsp-logs).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

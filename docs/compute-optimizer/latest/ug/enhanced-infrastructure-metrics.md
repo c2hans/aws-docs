@@ -37,3 +37,7 @@ After you activate the enhanced infrastructure metrics recommendation preference
 For instructions on how activate or deactivate enhanced infrastructure metrics at the resource level, see [Activating enhanced infrastructure metrics at the resource level](activating-eim-resource-level.md).
 
 For instructions on how activate or deactivate enhanced infrastructure metrics at the organization or account level, see [Activating enhanced infrastructure metrics at the organization or account level](activating-eim-level.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

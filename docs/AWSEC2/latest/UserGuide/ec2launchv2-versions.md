@@ -64,3 +64,7 @@ The following table describes the released versions of EC2Launch v2.
 | 2.0.124 |  +  Adds option to display OS version on wallpaper. <br />+  Initializes encrypted EBS volumes. <br />+  Adds routes for VPCs with no local DNS name.   | September 10, 2020 |
 | 2.0.104 |  +  Creates DNS suffix search list if it does not exist.  <br />+  Skips Hibernation if not requested.   | August 12, 2020 |
 | 2.0.0 | Initial release. | June 30, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

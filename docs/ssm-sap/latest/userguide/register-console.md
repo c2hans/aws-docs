@@ -81,3 +81,7 @@ Follow these steps to register either a single node or a multi node (distributed
 1. Choose **Create**.
 
 On registration completion, you can see your application on the **Applications** page. For more information about the application details page, see [Application details](manage-console.md#application-details).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ssm-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

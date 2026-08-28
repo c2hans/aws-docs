@@ -267,3 +267,7 @@ In this scenario, Cost Explorer shows the cost reductions that result from imple
 + [Back to Basics: Using an Instance Scheduler to Control Amazon EC2 and Amazon RDS Resource Costs](https://www.youtube.com/watch?v=UsC5ZNcZl9k) (YouTube)
 + [Tagging your AWS resources](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html) (Tagging AWS Resources User Guide)
 + [Analyzing your costs with AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html) (AWS Billing and Cost Management documentation)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

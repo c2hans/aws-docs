@@ -58,3 +58,7 @@ The following table lists all of the logs provided by Amazon SageMaker AI.
 2. For Inference Pipelines, if you don't provide container names, the platform uses \*\*container-1, container-2\*\*, and so on, corresponding to the order provided in the SageMaker AI model.
 
 For more information about logging events with CloudWatch logging, see [What is Amazon CloudWatch Logs?](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/WhatIsCloudWatchLogs.html) in the *Amazon CloudWatch User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

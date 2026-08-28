@@ -21,3 +21,7 @@ For users of JupyterLab 3, in particular Studio Classic users, we recommend inst
 For users of JupyterLab 4 environments that do not use SageMaker Distribution, we recommend installing `jupyter-ai` [version 2.5.x](https://pypi.org/project/jupyter-ai/#history) or any later 2.x version.
 
 See the installation instructions in the *Installation* section of [Jupyter AI documentation](https://jupyter-ai.readthedocs.io/en/latest/users/index.html#installation-via-pip).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -137,3 +137,7 @@ If a bandwidth rate limit is configured for the backup gateway, it can restrict 
 **Install ENA drivers and take a new backup:** To restore to instance types that require ENA, install ENA drivers on the virtual machine first, take a new backup, and then restore from that backup. For more information about driver requirements, see [VM Import/Export requirements](https://docs.aws.amazon.com/vm-import/latest/userguide/limitations-image-importing.html#limitations-image-importing-linux).
 
 For help resolving these issues, see [AWS Knowledge Center](https://repost.aws/knowledge-center/backup-troubleshoot-vmware-backups).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

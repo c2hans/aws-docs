@@ -40,7 +40,7 @@ To install the MGN vCenter Client, follow these steps:
 The certificate must be located in a file that's readable to the vCenter client user, such as a shared directory. If the certificate is not located in a shared directory, you see a permission error in the logs (Error 13).
 To use a certificate in your vCenter environment, you must setup a connection using a hostname. Using an IP does not work with a certificate.
 It's a security best practice to use certificates. Customers that do not use certificated authentication are responsible for any security issues that may arise.
-   + Path to VDDK tarball - Provide the path to the VDDK tarball that you previously downloaded onto the VM. (example: `path/to/VMware-vix-disklib-7.0.3-21933544.x86_64.tar.gz`). You can download VDDK tarball from your Broadcomm account.
+   + Path to VDDK tarball - Provide the path to the VDDK tarball that you previously downloaded onto the VM. (example: `path/to/VMware-vix-disklib-7.0.3-21933544.x86_64.tar.gz`). You can download VDDK tarball from your Broadcom account.
    + Resource tags for the AWS vCenter client (optional) - Use this format for tagging:
 
      KEY=VALUE [KEY=VALUE ...] add resource tags to the AWS vCenter client; use a space to separate each tag (e.g., --vcenter-client-tags tag1=val1 tag2=val2 tag3=val3)
@@ -61,3 +61,7 @@ You can configure transparent proxy either by using an environment variable prio
 + Using environment variable: export https\_proxy=http://PROXY:PORT/; ./aws-vcenter-client-installer-init.py
 
 Make sure the proxy has a trailing forward slash.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

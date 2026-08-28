@@ -16,3 +16,7 @@ In the case of OPA, REST APIs offer ways to programmatically update policies. Yo
 For OPA, the control plane also provides options for monitoring and auditing. You can export the logs that contain OPA's authorization decisions to remote HTTP servers for log aggregation. These decision logs are invaluable for auditing purposes.
 
 If you are considering adopting an authorization model where access control decisions are decoupled from your application, make sure that your authorization service has effective monitoring, logging, and CI/CD management capabilities for onboarding new PDPs or updating policies.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

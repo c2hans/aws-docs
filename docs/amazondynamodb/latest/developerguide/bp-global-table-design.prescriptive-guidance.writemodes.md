@@ -65,3 +65,7 @@ As another example, imagine that you’re working at a video conferencing compan
 + Write to any Region mode is suitable for MRSC tables and idempotent calls to MREC tables.
 + Write to one Region mode is suitable for non-idempotent calls to MREC tables.
 + Write to your Region mode is suitable for non-idempotent calls to MREC tables, where it's important to have clients write to a Region that’s close to them.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

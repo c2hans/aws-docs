@@ -16,3 +16,7 @@ Create a collaborative atmosphere that emphasizes ownership and shared accountab
 + [[OA.STD.6] Provide teams ownership of the entire value stream for their product](oa.std.6-provide-teams-ownership-of-the-entire-value-stream-for-their-product.md)
 + [[OA.STD.7] Amplify the scale and impact of centralized functions](oa.std.7-amplify-the-scale-and-impact-of-centralized-functions.md)
 + [[OA.STD.8] Promote cognitive diversity within teams](oa.std.8-promote-cognitive-diversity-within-teams.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,3 +37,7 @@ If you use automated tooling for service events, you need to code for both field
 For information about how to create a rule for service action events, see [Amazon ECS service action events](ecs_service_events.md).
 
 For additional information about how to integrate Amazon ECS and EventBridge, see [Integrating Amazon EventBridge and Amazon ECS](https://aws.amazon.com/blogs/compute/integrating-amazon-eventbridge-and-amazon-ecs/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

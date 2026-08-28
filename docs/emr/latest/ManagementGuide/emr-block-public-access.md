@@ -72,3 +72,7 @@ If a block public access violation occurs, you can mitigate it with one of the f
 You might need to identify all of the clusters that are associated with a given security group rule, or to find the security group rule for a given cluster.
 + If you know the security group, then you can identify its associated clusters if you find the network interfaces for the security group. For more information, see [How can I find the resources associated with an Amazon EC2 security group?](https://forums.aws.amazon.com/knowledge-center/ec2-find-security-group-resources) on AWS re:Post. The Amazon EC2 instances that are attached to these network interfaces will be tagged with the ID of the cluster that they belong to.
 + If you want to find the security groups for a known cluster, follow the steps in [View Amazon EMR cluster status and details](emr-manage-view-clusters.md). You can find the security groups for the cluster in the **Network and security** panel in the console, or in the `Ec2InstanceAttributes` field from the AWS CLI.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

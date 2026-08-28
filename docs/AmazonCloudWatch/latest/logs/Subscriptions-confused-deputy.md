@@ -16,3 +16,7 @@ If the `aws:SourceArn` value does not contain the account ID, such as an Amazon 
 To protect against the confused deputy problem at scale, use the `aws:SourceOrgID` or `aws:SourceOrgPaths` global condition context key with the organization ID or organization path of the resource in your resource-based policies. Policies that include the `aws:SourceOrgID` or `aws:SourceOrgPaths` key will automatically include the correct accounts and you don't have to manually update the policies when you add, remove, or move accounts in your organization.
 
 The policies documented for granting access to CloudWatch Logs to write data to Amazon Kinesis Data Streams and Firehose in [Step 1: Create a destination](CreateDestination.md) and [Step 2: Create a destination](CreateFirehoseStreamDestination.md) show how you can use the `aws:SourceArn` global condition context key to help prevent the confused deputy problem.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

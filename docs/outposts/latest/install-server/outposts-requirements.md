@@ -142,3 +142,7 @@ To fulfill the order, AWS will ship the Outposts server equipment, including rai
 Your team or a third-party provider must install the equipment. For more information, see [Service link traffic for servers](https://docs.aws.amazon.com/outposts/latest/install-server/install-server.html) in the *AWS Outposts user guide for servers*.
 
 The installation is complete when you confirm that the Amazon EC2 capacity for your Outposts server is available from your AWS account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ The `anomaly` command is particularly useful for:
 For more information about using the `anomaly` command in your queries, see [anomaly](CWL_QuerySyntax-Anomaly.md).
 
 This query-based anomaly detection complements the continuous anomaly detectors described in the following sections, giving you both real-time monitoring and on-demand analysis capabilities.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -68,3 +68,7 @@ Some commands in key\_mgmt\_util and cloudhsm\_mgmt\_util have the same names. H
 | [unWrapKey](key_mgmt_util-unwrapKey.md) | Imports a wrapped (encrypted) key from a file into the HSMs. |
 | [verify](key_mgmt_util-verify.md) | Verifies whether a given key was used to sign a given file. |
 | [wrapKey](key_mgmt_util-wrapKey.md) | Exports an encrypted copy of a key from the HSM to a file. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

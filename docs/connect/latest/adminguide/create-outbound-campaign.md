@@ -14,3 +14,7 @@ Connect Customer provides two ways to create an outbound campaign:
 You can create an outbound campaign using the Connect Customer admin website or programmatically using the AWS CLI or API. Choose your preferred method:
 + [Create an outbound campaign using the admin website](how-to-create-campaigns.md)—Step-by-step instructions using the Connect Customer admin website.
 + [Create an outbound campaign using the API or CLI](create-campaigns-api-cli.md)—CLI commands, flow definitions, and code examples.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

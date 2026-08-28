@@ -183,3 +183,7 @@ Use the following commands to specify app UI customization settings for your use
 + AWS CLI from image file: `aws cognito-idp set-ui-customization --user-pool-id {{<your-user-pool-id>}} --client-id {{<your-app-client-id>}} --image-file fileb://"{{<path-to-logo-image-file>}}" --css ".label-customizable{ color: {{<color>}};}"`
 + AWS CLI with image encoded as Base64 binary text: `aws cognito-idp set-ui-customization --user-pool-id {{<your-user-pool-id>}} --client-id {{<your-app-client-id>}} --image-file {{<base64-encoded-image-file>}} --css ".label-customizable{ color: {{<color>}};}"`
 + AWS API: [SetUICustomization](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SetUICustomization.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

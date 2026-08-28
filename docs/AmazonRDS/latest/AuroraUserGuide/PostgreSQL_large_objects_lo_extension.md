@@ -133,3 +133,7 @@ Following you can find some important considerations to note when working with l
 + When designing your database schema, avoid using large objects when possible and consider using alternative data types like `bytea` instead.
 + Run `vacuumlo` regularly, at least weekly, to prevent issues with orphaned LOs.
 + Use a trigger with the `lo_manage` function on tables that store large objects to help prevent orphaned LOs from being created.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -98,3 +98,7 @@ You can also set the destination to any custom connectors that you create with t
 +  [Setting up the Amazon AppFlow integration with Zendesk](https://support.zendesk.com/hc/en-us/articles/360047196173-Setting-up-the-Amazon-AppFlow-integration-with-Zendesk#topic_lk1_xxn_4lb) in the Zendesk documentation
 +  [Building great customer experiences with Zendesk and AWS](https://www.zendesk.com/blog/building-great-customer-experiences-zendesk-aws/) from Zendesk
 + How to transfer data from Zendesk Support to Amazon S3 using Amazon AppFlow
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

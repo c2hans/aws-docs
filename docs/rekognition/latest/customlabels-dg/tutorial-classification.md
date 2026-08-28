@@ -305,3 +305,7 @@ In this step you stop running your model. You are charged for the amount of time
 
 1. Choose **Stop** to stop your model. The model has stopped when the status in the **Start or stop model** section is **Stopped**.
 ![Stopped status indicator with explanation that the model is not running and needs to be started using the Start button or code example.](http://docs.aws.amazon.com/rekognition/latest/customlabels-dg/images/get-started-stopped-model.jpg)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ If you are trying to connect to your workspace programmatically, you must use AP
 1. Choosing the workspace URL takes you to the landing page for the Grafana workspace console. Choose **Sign in with AWS IAM Identity Center**, and enter the email address and password.
 **Note**
 The sign in button will have different text and requirements if you have set up authentication with an identity provider.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

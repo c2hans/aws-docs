@@ -29,3 +29,7 @@ Each result is encrypted using the customer managed key configured in the workgr
 Athena needs access to your encryption key to perform `kms:Decrypt`, `kms:GenerateDataKey`, and `kms:DescribeKey` operations for encrypting and decrypting results. For more information, see [Permissions to encrypted data in Amazon S3](encryption.md#permissions-for-encrypting-and-decrypting-data).
 
 The principal that submits the query using the `StartQueryExecution` API and reads results using `GetQueryResults` must also have permission to the customer managed key for `kms:Decrypt`, `kms:GenerateDataKey`, and `kms:DescribeKey` operations in addition to Athena and Amazon S3 permissions. For more information, see [Key policies in AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/key-policies.html#key-policy-default-allow-users).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

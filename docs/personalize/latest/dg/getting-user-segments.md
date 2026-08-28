@@ -42,3 +42,7 @@ The following are guidelines and requirements for batch getting batch segments:
 +  If you use the Item-Attribute-Affinity recipe, the attributes in your input data can't include unstructured textual item metadata, such as a product description.
 + If you use a filter with placeholder parameters, you must include the values for the parameters in your input data in a `filterValues` object. For more information, see [Providing filter values in your input JSON](filter-batch.md#providing-filter-values).
 + We recommend that you use a different location for your output data (either a folder or a different Amazon S3 bucket) than your input data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

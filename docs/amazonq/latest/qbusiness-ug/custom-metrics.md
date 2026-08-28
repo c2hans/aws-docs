@@ -18,3 +18,7 @@ You can submit the same document multiple times, either as part of the `BatchPut
 Amazon Q also emits Amazon CloudWatch metrics while indexing documents. For more information, see [Monitoring Amazon Q with Amazon CloudWatch](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/monitoring-cloudwatch.html).
 
 Amazon Q doesn't return the `DocumentsScanned` metric for custom data sources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

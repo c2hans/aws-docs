@@ -155,3 +155,7 @@ The SerDe expects each JSON document to be on a single line of text with no line
    ```
 
 1. Run the `CREATE EXTERNAL TABLE` statement in the Athena console query editor. This registers the `waf_logs` table and makes the data in it available for queries from Athena.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

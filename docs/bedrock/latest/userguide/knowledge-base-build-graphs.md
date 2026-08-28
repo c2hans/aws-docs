@@ -56,3 +56,7 @@ When deleting a knowledge base that uses Amazon Neptune Analytics, delete the kn
 
 **Important**
 Foundation models can reach end-of-life or be deprecated. For example, Claude 3 Haiku has moved to Legacy status. We recommend that you select a currently supported model for graph construction. To check the status of available models, see [Model lifecycle](https://docs.aws.amazon.com/bedrock/latest/userguide/model-lifecycle.html). For information about choosing or updating your graph construction model, see [Choose and update the graph construction model](knowledge-base-build-graphs-build.md#knowledge-base-build-graphs-model).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

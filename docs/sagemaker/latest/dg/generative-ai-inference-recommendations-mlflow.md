@@ -148,3 +148,7 @@ On the **Experiments** page, select the experiment that you specified in `Mlflow
 The experiment's **Runs** view shows a top-level run that contains a per-job run, which expands into child runs for each instance type, deployment configuration, and concurrency level. Select a run to view its parameters, metrics, and artifacts.
 
 ![The MLflow UI Runs view showing a top-level run that expands into nested child runs for the per-job, instance type, image type, and concurrency levels.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/mlflow/inference-recommendations-mlflow-runs.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

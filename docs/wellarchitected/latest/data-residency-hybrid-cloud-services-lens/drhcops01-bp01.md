@@ -26,3 +26,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  Thoroughly understand the specific regulations and internal policies that govern your organization's data residency requirements in different locations. This typically involves collaborating with your legal, compliance, risk management, and information security teams to identify and document all applicable rules and constraints.
 
  Once established, list the countries and industries the application will serve. Review the Scenarios section in this lens for examples of how different data residency requirements inform your architecture decisions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,3 +36,7 @@ The usernames must match between Active Directory and your RADIUS server.
 1. Choose **Update and Exit**.
 
 Multi-factor authentication is available when **RADIUS status** is **Enabled**. While multi-factor authentication is being set up, users cannot log in to their WorkSpaces.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

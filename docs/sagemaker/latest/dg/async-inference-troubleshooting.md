@@ -110,3 +110,7 @@ Yes. Asynchronous Inference provides a mechanism to scale down to zero instances
 <a name="async-troubleshooting-q12"></a>
 
 For an exhaustive list of instances supported by Asynchronous Inference per region, see [SageMaker pricing](https://aws.amazon.com/sagemaker/pricing/). Check if the required instance is available in your region before proceeding.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

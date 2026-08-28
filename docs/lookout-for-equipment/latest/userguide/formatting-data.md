@@ -119,3 +119,7 @@ When you are preparing your data, you should keep the following information in m
 To learn more about the formats listed above, see [the ISO 86021 standard](https://en.wikipedia.org/wiki/ISO_8601#Combined_date_and_time_representations).
 
 Now that your data is formatted properly, it's time to organize your files.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ Support isn't currently provided for non-EC2 macOS machines.
 **Note**
 **Important:** Effective June 30, 2026, the advanced-instances tier has been removed. There is no longer a 1,000-instance limit for hybrid managed nodes, and you no longer need to enable a paid tier to use Session Manager on non-EC2 machines. Instead, starting September 30, 2026, Session Manager and Run Command use pay-as-you-go pricing when used on hybrid managed nodes.
 For more information about pricing, see [AWS Systems Manager Pricing](https://aws.amazon.com/systems-manager/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

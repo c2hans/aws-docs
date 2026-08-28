@@ -203,3 +203,7 @@ For more information on the allowed actions in `AWSServiceRoleForIoTSiteWise`, s
 You can use the logs to monitor and troubleshoot your SiteWise Edge gateways. For more information, see [Monitor SiteWise Edge gateway logs](monitor-gateway-logs.md).
 
 To allow an IAM entity (such as a user, group, or role) to create, edit, or delete a service-linked role, first configure permissions. For more information, see [Service-linked role permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html#service-linked-role-permissions) in the *IAM User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

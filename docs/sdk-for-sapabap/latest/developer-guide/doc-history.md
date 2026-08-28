@@ -22,3 +22,7 @@ The following table describes the documentation releases for AWS SDK for SAP ABA
 | [New content](#doc-history) | Added [AWS SDK for SAP ABAP features](https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/features.html). | May 30, 2023 |
 | [New content](#doc-history) | Added [Troubleshoot AWS SDK for SAP ABAP](https://docs.aws.amazon.com/sdk-for-sapabap/latest/developer-guide/troubleshoot.html). | February 17, 2023 |
 | [Developer preview](#doc-history) | Developer preview of AWS SDK for SAP ABAP Developer Guide. | November 17, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for SAP ABAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-sapabap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

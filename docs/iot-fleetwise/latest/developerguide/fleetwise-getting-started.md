@@ -272,3 +272,7 @@ To avoid further charges for the resources you used during this tutorial, delete
 1. You can process and visualize the vehicle data that your campaign collects. For more information, see [Visualize AWS IoT FleetWise vehicle data](process-visualize-data.md).
 
 1. You can troubleshoot and resolve issues with AWS IoT FleetWise. For more information, see [Troubleshooting AWS IoT FleetWise](troubleshooting.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

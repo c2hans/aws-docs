@@ -30,7 +30,7 @@ For more information about pricing, see the [Amazon Q Developer pricing page](ht
 | Feature | Quota (per user) |
 | --- | --- |
 | [Amazon Q Developer Agent for code transformation](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/code-transformation.html) | 4,000 lines of code per month, pooled at the account level. Extra lines of code available. For more information, see [Amazon Q Developer Pro pricing](https://aws.amazon.com/q/developer/pricing/). |
-| [Agentic requests (Q&A chat, agentic coding)](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-in-IDE-chat.html) | 10,000 inference calls (equivalent of roughly 1,000 user inputs) per month. |
+| [Agentic requests (Q&A chat, agentic coding)](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/q-in-IDE-chat.html) | 1,000 lines of code per month |
 
 ### Quotas for Amazon Q Developer Pro (in the AWS Management Console)
 <a name="q-in-console-quotas"></a>
@@ -47,3 +47,7 @@ For more information about pricing, see the [Amazon Q Developer pricing page](ht
 | --- | --- |
 | [Amazon Q Developer Agent for software development](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-generative-ai-features.html) | 30 per month |
 | [Pull request summaries](https://docs.aws.amazon.com/codecatalyst/latest/userguide/getting-started-project-assistance.html#getting-started-project-assistance-pull-request-summary) | 20 per month |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ This section explains how to view the details of S3 access points using the AWS 
    The **File system user identity** configuration and the **S3 access point permissions** policy are also listed for the access point attachment.
 
 1. To view the access point's S3 configuration in the Amazon S3 console, choose the S3 access point name displayed under **S3 access point**. It takes you to the access point's detail page in the Amazon S3 console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ A crawler accesses your data store, identifies metadata, and creates table defin
 + [Step 3: Configure security settings](define-crawler-configure-security-settings.md)
 + [Step 4: Set output and scheduling](define-crawler-set-output-and-scheduling.md)
 + [Step 5: Review and create](define-crawler-review.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

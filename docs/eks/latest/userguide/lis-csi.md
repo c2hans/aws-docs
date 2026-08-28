@@ -163,3 +163,7 @@ sudo nvme id-ns /dev/nvme1n1
 <a name="_action_required"></a>
 
 No action is required. These changes are backward-compatible and follow the NVMe specification. However, if your application or tooling validates or depends on specific values from NVMe identify commands, review your logic to ensure compatibility with the updated values on newly launched instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

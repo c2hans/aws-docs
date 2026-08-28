@@ -228,3 +228,7 @@ MValue of service 3[USER_MGMT] on server 1 : [2]
 The output from the preceding **getMValue** command shows that the quorum minimum value for HSM user management operations (service 3) is now two.
 
 After you complete these steps, see [User management with quorum authentication enabled for AWS CloudHSM Management Utility](quorum-authentication-crypto-officers.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

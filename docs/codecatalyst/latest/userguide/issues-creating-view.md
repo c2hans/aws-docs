@@ -24,3 +24,7 @@ You can create [views](issues-concepts.md#issues-concepts-views-definition) to q
 1. The **Filters**, **Group issues by**, and **Sort issues by** fields are filled based on the settings of the current view. Update them if necessary.
 
 1. Choose **Create view** to create the view and be switched to it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

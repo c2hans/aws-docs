@@ -775,3 +775,7 @@ For additional examples using WebSocket bidirectional streaming with AgentCore R
 +  **Sonic implementation (Python)** : Native Amazon Nova Sonic WebSocket implementation with real-time audio conversations, voice selection, and interruption support
 +  **Strands implementation (Python)** : Framework-based implementation using the Strands BidiAgent for simplified real-time audio conversations with automatic session management and tool integration
 +  **Echo implementation (Python)** : Simple echo server for testing WebSocket connectivity and authentication
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

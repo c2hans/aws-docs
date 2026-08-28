@@ -25,3 +25,7 @@ The following is an example AWS Identity and Access Management (IAM) policy that
 ```
 
 If you want to grant users access to specific models without providing unrestricted access to the gated models, set up a curated hub and add the specific models to the hub. For more information, see [Private curated hubs for foundation model access control in JumpStart](jumpstart-curated-hubs.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

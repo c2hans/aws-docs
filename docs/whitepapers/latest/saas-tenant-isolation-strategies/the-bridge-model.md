@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation
 <a name="bridge-model-pros-and-cons"></a>
 
  The bridge model is more a hybrid model that focuses on enabling you to apply the silo or pool model where it makes sense. The idea here is that the values and tenets of silo isolation still apply to each of these areas of the system. As you think about pros and cons of the bridge model, then, you should be thinking about the tradeoffs of silo and pool models for each resource or layer of your architecture.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

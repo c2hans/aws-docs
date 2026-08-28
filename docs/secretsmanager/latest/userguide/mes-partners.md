@@ -18,6 +18,7 @@ The following topics include a description of each of the metadata fields requir
 | Integration Partner | Secret type |
 | --- | --- |
 | BigID | [BigIDClientSecret](mes-partner-BigId.md) |
+| Cisco | [CiscoSecurityPlatformApiKey](mes-partner-CiscoSecurityPlatformApiKey.md) |
 | Confluent Cloud | [ConfluentCloudApiKey](mes-partner-ConfluentCloudApiKey.md) |
 | Datadog | [DatadogApiKey](mes-partner-DatadogApiKey.md) |
 | Datadog | [DatadogApplicationKey](mes-partner-DatadogApplicationKey.md) |
@@ -26,8 +27,13 @@ The following topics include a description of each of the metadata fields requir
 | Jenkins | [JenkinsApiToken](mes-partner-JenkinsApiToken.md) |
 | MongoDB Atlas | [MongoDBAtlasServiceAccount](mes-partner-MongoDBAtlasServiceAccount.md) |
 | MongoDB Atlas | [MongoDBAtlasDatabaseUser](mes-partner-MongoDBAtlasDatabaseUser.md) |
+| Netskope | [NetskopeApiToken](mes-partner-NetskopeApiToken.md) |
 | Paddle | [PaddleApiKey](mes-partner-PaddleApiKey.md) |
 | Salesforce | [SalesforceClientSecret](mes-partner-salesforce.md) |
 | Snowflake | [SnowflakeKeyPairAuthentication](mes-partner-Snowflake.md) |
 | Snowflake | [SnowflakePat](mes-partner-SnowflakePat.md) |
 | SonarQube | [SonarQubeToken](mes-partner-SonarQubeToken.md) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

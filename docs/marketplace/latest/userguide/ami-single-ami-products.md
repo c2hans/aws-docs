@@ -86,3 +86,7 @@ For more information about preparing your single-AMI product for submission to A
 + [Best practices for building AMIs for use with AWS Marketplace](best-practices-for-building-your-amis.md)
 + [AMI product checklist for AWS Marketplace](aws-marketplace-listing-checklist.md)
 + [AMI-based product requirements for AWS Marketplace](product-and-ami-policies.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

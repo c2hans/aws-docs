@@ -174,3 +174,7 @@ running_functions--;
 <a name="complete-source-for-this-example"></a>
 
 You can browse the *complete source :github:`<awsdocs/aws-java-developer-guide/tree/master/doc\_source/snippets/helloswf\_lambda/>* for this example on Github in the *aws-java-developer-guide* repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

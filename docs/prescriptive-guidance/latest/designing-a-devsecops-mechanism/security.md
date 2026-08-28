@@ -16,3 +16,7 @@ If you choose to stop merges and deployments because of security scan results, y
 + A responsive central scan standard that can keep up with changing IAC standards.
 
 Imagine a scenario where your central security scan mistakenly requires an encryption key parameter to be in a specific format for the creation of a resource. (An Amazon Resource Name (ARN) string is an example of a resource.) However, the application team needs to create dozens of these resources and they use a `for `loop in the IaC to pass in the key ARN. Now, the security requirement is met, but the scan tool doesn't reflect good coding practices accurately. This approach can cause delays in delivery and frustrate developers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

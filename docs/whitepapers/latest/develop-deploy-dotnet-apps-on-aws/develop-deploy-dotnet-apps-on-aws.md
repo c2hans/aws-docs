@@ -17,3 +17,7 @@ Publication date: **February 25, 2021** ([Document Revisions](document-revisions
 Developing and deploying .NET applications on Amazon Web Services (AWS) is a key activity to help organizations achieve the scale and agility offered by cloud computing. It is the standard application development framework for Microsoft Windows, and its growing ecosystem of applications runs on Linux and other platforms,
 
 This whitepaper introduces the AWS tools and services that are directly suited for .NET development and deployment. It serves as a starting point for .NET architects and developers who wish to develop, build, deploy, and maintain their applications on AWS. It describes the approaches that can be used to deploy .NET applications on AWS, and details the options, choices, and services that can help readers get the most business value from their cloud-based .NET workloads.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

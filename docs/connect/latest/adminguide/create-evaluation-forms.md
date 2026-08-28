@@ -398,3 +398,7 @@ After you activate a new version, evaluators can no longer start new evaluations
 If you are still working on setting up the evaluation form and want to save your work at any point you can choose **Save**, **Save draft**.
 
 If you want to check whether the form has been correctly set up, but not activate it, select **Save**, **Save and validate**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

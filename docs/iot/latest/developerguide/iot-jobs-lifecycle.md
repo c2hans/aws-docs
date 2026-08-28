@@ -110,3 +110,7 @@ When your device is no longer a valid target for the job execution, such as when
 
 **CANCELED**
 When you cancel a job or cancel a job execution using the console or the `CancelJob` or `CancelJobExecution` API, or when the abort criteria specified using the [Job abort configuration](jobs-configurations-details.md#job-abort-using) is met, AWS IoT Jobs cancels the job and sets the job execution status to `CANCELED`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

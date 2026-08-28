@@ -45,3 +45,7 @@ The encryption certificate is not available at this step. It will be created aft
    1. Using **Single Logout** requires you to configure a **Single Logout URL** in your SAML 2.0 identity provider. You can find the **Single Logout URL** for your portal in the console under **Service provider (SP) details - Show individual metadata values**, or from the SP metadata file under `<md:SingleLogoutService>` .
 
    1. Enable **Single Logout** in your IdP. The name might be different, depending on the IdP.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

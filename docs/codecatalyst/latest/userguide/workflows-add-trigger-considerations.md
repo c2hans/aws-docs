@@ -60,3 +60,7 @@ For more information about triggers, see [Starting a workflow run automatically 
   ```
 
   If the workflow definition file containing this trigger exists in `main`, the workflow will never run using the files in `main`. (However, if you create a `test` branch off of `main`, the workflow will run using the files in `test`.) Review **Guideline 3** to understand why.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

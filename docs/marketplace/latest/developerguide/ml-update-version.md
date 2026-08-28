@@ -253,3 +253,7 @@ Specific errors for `UpdateDeliveryOptions` actions can be retrieved using the `
 | INVALID\_RECOMMENDED\_INSTANCE\_TYPE | Provide an existing, available instance type for [X] (X can be Batch Transform, Realtime Inference or ALgorithm Training) |
 | DUPLICATE\_VERSION\_TITLE | The version title must be different from any other version titles of this product. |
 | FIELD\_NOT\_ALLOWED\_TO\_CHANGE | Field X is not allowed to be changed. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ You will find the following information in your downloaded CSV file:
 + **Estimated monthly savings amount** – The estimated savings that will result from your Savings Plans purchase, based on your past usage and the Savings Plans you already own.
 + **Estimated savings percentage** – The amount your Savings Plan commitment will save you from your current, Savings Plans-eligible On-Demand costs.
 + **Estimated ROI** – The estimated return on investment of the Savings Plan. This is calculated by taking your estimated savings and dividing it by the cost of the Savings Plan.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

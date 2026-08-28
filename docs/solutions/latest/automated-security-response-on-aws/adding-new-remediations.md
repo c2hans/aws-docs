@@ -10,7 +10,14 @@ Remediations can be added manually by updating the appropriate playbook files, o
 **Note**
 The instructions that follow leverage resources installed by the solution as a starting point. By convention, most solution resource names contain **ASR** and/or **SO0111** to make it easy to locate and identify them.
 
-## Overview of manually workflow
+## AI Toolkit for Custom Remediations
+<a name="ai-toolkit-for-custom-remediations"></a>
+
+To accelerate the workflows described in this section, the solution provides the AI Toolkit for Custom Remediations. The toolkit packages ASR’s remediation best practices, guardrails, and development patterns as an instruction prompt that you provide to an AI assistant in your integrated development environment (IDE). With this context, the assistant can help you author ASR-compatible remediation runbooks, control runbooks, IAM roles, and CDK constructs that follow the naming conventions and integration steps documented in the following sections — producing production-ready custom remediations with fewer iterations and greater confidence.
+
+The toolkit is optional and does not change how remediations are built or deployed; it is a development aid that makes the solution’s conventions and constraints visible to your AI assistant. You remain responsible for reviewing and testing any generated code before deploying it.
+
+## Overview of the manual workflow
 <a name="remediation-overview"></a>
 
 Automated Security Response on AWS runbooks must follow the following standard naming:
@@ -54,7 +61,7 @@ At this point, your remediation is active and available for automated remediatio
 
 Automatic (not "automated") remediation is the immediate execution of the remediation as soon as the finding is received by AWS Security Hub. Carefully consider the risks before using this option.
 
-1. View an example rule for the same security standard in CloudWatch Events. The naming standard for rules is `standard_control_*AutoTrigger*`.
+1. View an example rule for the same security standard in Amazon EventBridge. The naming standard for rules is `standard_control_*AutoTrigger*`.
 
 1. Copy the event pattern from the example to be used.
 
@@ -68,7 +75,7 @@ Automatic (not "automated") remediation is the immediate execution of the remedi
 In summary, the following files in the ASR repo will be modified or added. In this example, a new remediation for ElastiCache.2 was added to the SC and AFSBP playbooks.
 
 **Note**
-All new remediations should be added to the SC playbook, since it consolidates all remediations available in ASR. If you intend to deploy only a specific set of playbooks (e.g., AFSBP), then you can either: (1) add the remediation to **only** your intended playbook(s), or (2) add the remediation to all playbooks for which it exists in the corresponding Security Hub Standard, in addition to the SC playbook. The second option is recommended for flexibility.
+All new remediations should be added to the SC playbook, since it consolidates all remediations available in ASR. If you intend to deploy only a specific set of playbooks (such as AFSBP), then you can either: (1) add the remediation to **only** your intended playbook(s), or (2) add the remediation to all playbooks for which it exists in the corresponding Security Hub Standard, in addition to the SC playbook. The second option is recommended for flexibility.
 
 In this example, ElastiCache.2 is included in the following Security Hub Standards:
 + AFSBP
@@ -216,7 +223,7 @@ The `versionAdded` field should be the latest version of the solution. If adding
 
 Each remediation has its own IAM role with custom permissions required to execute the remediation runbook. In addition, the `RunbookFactory.createRemediationRunbook` method needs to be invoked to add the remediation runbook you created in Step 1 to the solution’s CloudFormation templates.
 
-In the `remediation-runook-stack.ts`, each remediation has its own code block in the `RemediationRunbookStack` class. The following code block shows the creation of a new IAM role and remediation runbook integration for the ElastiCache.2 remediation:
+In the `remediation-runbook-stack.ts`, each remediation has its own code block in the `RemediationRunbookStack` class. The following code block shows the creation of a new IAM role and remediation runbook integration for the ElastiCache.2 remediation:
 
 ```
     //-----------------------
@@ -259,10 +266,14 @@ We recommend updating and running the unit tests after adding a new remediation.
 
 First, you must add any new regular expressions (that are not already added) into the `source/test/regex_registry.ts` file. This file enforces testing for each new regular expression included in the solution’s runbooks. Take a look at the `addElastiCacheClusterTestCases` function as an example, which is used to test regular expressions used in ElastiCache remediations.
 
-Finally, you’ll need to update the snapshots for each stack. Snapshots are version-controlled CloudFormation template definitions that are used to track changes made to ASR’s infrastructure. You can update these snapshot files by running the following command from the `deployment` directory:
+Finally, you’ll need to update the snapshots for each stack. Snapshots are version-controlled CloudFormation template definitions that are used to track changes made to ASR’s infrastructure. Update the snapshot files by running the following command from the `deployment` directory:
 
 ```
 ./run-unit-tests.sh update
 ```
 
 Now you are ready to deploy your new remediation\! Navigate to the **Build and Deploy** section below for instructions on building and deploying the solution with your new changes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

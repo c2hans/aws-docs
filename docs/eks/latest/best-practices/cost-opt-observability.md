@@ -357,3 +357,7 @@ For example, if you have traces that are 90 days old, [Amazon S3 Intelligent-Tie
 +  [Best Practices Metrics Collection](https://aws-observability.github.io/observability-best-practices/guides/containers/oss/eks/best-practices-metrics-collection/)
 +  [AWS re:Invent 2022 - Observability best practices at Amazon (COP343)](https://www.youtube.com/watch?v=zZPzXEBW4P8)
 +  [AWS re:Invent 2022 - Observability: Best practices for modern applications (COP344)](https://www.youtube.com/watch?v=YiegAlC_yyc)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ The following are considerations and limitations for sharing Amazon Redshift dat
 + Both the producer and consumer clusters must be encrypted.
 + Redshift row-level and column-level access control policies implemented in the producer cluster or workgroup are ignored when the datashare is shared to Lake Formation. The Lake Formation administrator must configure these policies in Lake Formation. The producer cluster or workgroup administrator can turn off RLS for a table by using the [ALTER TABLE](https://docs.aws.amazon.com/redshift/latest/dg/r_ALTER_TABLE.html) command.
 + Sharing datashares via Lake Formation is only available to users who have access to both Redshift and Lake Formation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -202,3 +202,7 @@ The `rattler-build publish` command builds packages for the operating system of 
 After you publish packages to your Amazon S3 conda channel, configure your Deadline Cloud queues to use the channel:
 + [Configure production queue permissions for custom conda packages](configure-jobs-s3-channel.md#s3-channel-configure-permissions) – Grant your production queues read-only access to the Amazon S3 conda channel.
 + [Add a conda channel to a queue environment](configure-jobs-s3-channel.md#s3-channel-add-channel) – Configure the queue environment to install packages from the Amazon S3 conda channel.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

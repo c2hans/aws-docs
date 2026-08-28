@@ -21,3 +21,7 @@ When you manually specify your MXF profile, you must set up your output in a way
 + [MXF output requirements](mxf-job-limitations.md)
 + [XDCAM RDD9 output requirements](xdcam-rdd9.md)
 + [Audio settings requirements for different MXF profiles](output-audio-requirements-for-each-mxf-profile.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

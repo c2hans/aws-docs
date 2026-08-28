@@ -79,3 +79,7 @@ When you call an action like `DescribeCluster`, Amazon EMR returns the current a
 <a name="update-secret"></a>
 
 Amazon EMR retrieves the secret value from an annotated configuration whenever the attached instance group is starting, reconfiguring, or resizing. You can use Secrets Manager to modify the value of a secret used in the configuration of a running cluster. When you do, you can submit a reconfiguration request to each instance group that you want to receive the updated value. For more information on how to reconfigure an instance group, and things to consider when you do it, see [Reconfigure an instance group in a running cluster](emr-configure-apps-running-cluster.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

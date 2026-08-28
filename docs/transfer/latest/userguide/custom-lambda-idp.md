@@ -388,3 +388,7 @@ You can create a FIPS-enabled AWS Transfer Family server through CloudFormation 
    After the stack has been deployed, you can view details about it on the **Outputs** tab in the CloudFormation console.
 
    Deploying one of these stacks is the easiest way to integrate a custom identity provider into the Transfer Family workflow.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

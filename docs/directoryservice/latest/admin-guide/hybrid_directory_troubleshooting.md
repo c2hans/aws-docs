@@ -33,3 +33,7 @@ You can troubleshoot a failed directory assessment from the **Directories** page
 1. Resolve the issues causing the failures on your self-managed Active Directory or AWS Managed Microsoft AD. See [Directory Assessment Error Messages](da-error-msgs.md) and [Assessment Test error messages](assessment_test_error-msgs.md) for more information.
 
 1. Return to the failed assessment in the Directory Service console. Choose **Create assessment** in the red warning message. See [Creating a hybrid directory with your self-managed AD](hybrid_directory_create.md#creating_hybrid_directory) for more information on creating a directory assessment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

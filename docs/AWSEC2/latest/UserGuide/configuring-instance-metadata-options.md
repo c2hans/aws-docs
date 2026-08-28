@@ -153,3 +153,7 @@ If you enforce the use of IMDSv2, applications or agents that use IMDSv1 for ins
 If you turn off all access to instance metadata, applications or agents that rely on instance metadata access to function will break.
 For IMDSv2, you must use `/latest/api/token` when retrieving the token.
 (Windows only) If your PowerShell version is earlier than 4.0, you must [update to Windows Management Framework 4.0](https://devblogs.microsoft.com/powershell/windows-management-framework-wmf-4-0-update-now-available-for-windows-server-2012-windows-server-2008-r2-sp1-and-windows-7-sp1/) to require the use of IMDSv2.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

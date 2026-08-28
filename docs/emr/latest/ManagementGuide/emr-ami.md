@@ -20,3 +20,7 @@ Amazon EMR automatically attaches an Amazon EBS General Purpose SSD volume as th
 + [Using a custom AMI to provide more flexibility for Amazon EMR cluster configuration](emr-custom-ami.md)
 + [Change the Amazon Linux release when you create an EMR cluster](emr-custom-ami-change-al-release.md)
 + [Customizing the Amazon EBS root device volume](emr-custom-ami-root-volume-size.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

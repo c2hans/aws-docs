@@ -39,3 +39,7 @@ To create a new data collection app, you create a new app, add a data collection
 1. Configure how you want to share the app and optionally edit its categories.
 
 1. Choose **Share**. When complete, you can find the new app in your library.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ To further differentiate among various types of agents, Nwana introduces a class
 Nwana's work served as both a taxonomy and a foundational lens through which the computing community could evaluate the evolving forms of agency in software. His emphasis on autonomy, proactivity, and the concept of acting on behalf of a user or system laid the groundwork for what we now consider agentic behavior.
 
 Although the technologies and environments have changed, especially with the rise of generative AI, serverless infrastructure, and multi-agent orchestration frameworks, the foundational insights from Nwana's work remain relevant. They provide a critical bridge between early agent theory and the three modern pillars of software agents.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

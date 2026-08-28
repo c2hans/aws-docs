@@ -137,3 +137,7 @@ Value":"zq8mjNEXAMPLE"}]'
 
 The following related resources can help you as you work with this action.
 +  [Start a pipeline with a source revision override](pipelines-trigger-source-overrides.md) – This section describes starting a pipeline with source revisions manually or through the EventBridge event input transformer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

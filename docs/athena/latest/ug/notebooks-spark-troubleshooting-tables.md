@@ -49,3 +49,7 @@ The following procedure describes these steps in greater detail.
 1. Choose **Review policy**, and then choose **Save changes**.
 
 1. Edit your Amazon S3 bucket policy to grant access to the execution role. Note that you must grant the role access to both the bucket and the objects in the bucket. For steps, see [Adding a bucket policy using the Amazon S3 console](https://docs.aws.amazon.com/AmazonS3/latest/userguide/add-bucket-policy.html) in the Amazon Simple Storage Service User Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

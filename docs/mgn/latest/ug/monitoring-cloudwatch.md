@@ -26,3 +26,7 @@ AWS Transform MGN includes the following metrics by individual source server. Th
 | Backlog | The amount of data yet to be synced. |
 | DurationSinceLastTest | The amount of time that has passed since the last Test instance launch. |
 | ElapsedReplicationDuration | The cumulative amount of time this server has been replicating for (from which billing information is derived). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

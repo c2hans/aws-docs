@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hadoop-release-h
 See the following list for new Hadoop features in Amazon EMR 7.2.0.
 + [ S3 glacier support to read restored objects](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hadoop-read-restore-objects.html) – With Amazon EMR release 7.2.0 and higher, you can read restored Glacier objects from the S3 location of the table with the `S3A` protocol. This read operation ignores archived Glacier files if they still in progress of being restored.
 + Support concurrent writes with the S3A magic committer – Amazon EMR 7.2.0 introduces support for concurrent writes with the S3A magic committer. This feature was added to the OSS Hadoop community as part of [HADOOP-18797](https://issues.apache.org/jira/browse/HADOOP-18797).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

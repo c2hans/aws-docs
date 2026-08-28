@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 <a name="implementation-guidance-43"></a>
 
  Outposts surfaces Amazon CloudWatch metric data, including CPU, network, and storage. You should monitor these metrics as you would in-Region to verify that you are achieving your performance targets. Monitor your resource consumption, and right-size compute and storage configurations based on the metric data. This is an iterative process as workloads change over time. Each server has a specific slotting configuration based on initial order. This can be modified based on metric data as long as the configuration is supported by the underlying server. For supported configurations, see [Modify AWS Outposts instance capacity](https://docs.aws.amazon.com/outposts/latest/userguide/modify-instance-capacity.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

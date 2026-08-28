@@ -39,3 +39,7 @@ Sign in with the same user that you set up in [Getting started with CodeDeploy](
 To use the AWS CLI to delete a deployment group, call the [delete-deployment-group](https://docs.aws.amazon.com/cli/latest/reference/deploy/delete-deployment-group.html) command, specifying:
 + The name of the application associated with the deployment group. To view a list of application names, call the [list-applications](https://docs.aws.amazon.com/cli/latest/reference/deploy/list-applications.html) command.
 + The name of the deployment group associated with the application. To view a list of deployment group names, call the [list-deployment-groups](https://docs.aws.amazon.com/cli/latest/reference/deploy/list-deployment-groups.html) command.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

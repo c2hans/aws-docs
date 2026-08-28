@@ -77,3 +77,7 @@ To delete the VPC, you must first terminate any Amazon EC2 instances in the VPC.
 
 1. In the **Delete VPC** dialog box, choose **OK**.
 ![Delete VPC dialog box listing associated objects to be deleted such as subnets and route tables.](http://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/images/vpc-delete.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

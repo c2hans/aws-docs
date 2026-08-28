@@ -119,3 +119,7 @@ The following table shows how node CPU metrics are calculated using this data.
 | --- | --- | --- | --- |
 | `node_cpu_utilization` | `node_cpu_usage_total / node_cpu_limit` | 3 / 4 = 75% | 1.5 / 8 = 18.75% |
 | `node_cpu_reserved_capacity` | `sum(pod_cpu_request) / node_cpu_limit` | 1.5 / 4 = 37.5% | 2 / 8 = 25% |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

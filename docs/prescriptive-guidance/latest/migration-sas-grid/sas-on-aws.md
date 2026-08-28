@@ -59,3 +59,7 @@ Disaster recovery planning is important for any critical business system, includ
 Disaster recovery is not the same as high availability. Although both concepts are related to business continuity, high availability is about providing undisrupted continuity of operations. In contrast, disaster recovery involves some amount of downtime, typically measured in hours or days.
 
 Use [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html) for centralized backup management of FSx for Lustre file systems, Amazon EBS volumes, and Amazon RDS databases. AWS Backup supports automated backup policies, lifecycle management, and cross-Region copy for disaster recovery scenarios.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

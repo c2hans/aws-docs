@@ -48,3 +48,7 @@ Change the default password on your Windows Server instance to remove the associ
 1. Store the new password in a safe place. You cannot retrieve the new password using the Amazon EC2 console. The console can retrieve only the default password. If you attempt to connect to the instance using the default password after changing it, an error message appears stating that your credentials did not work.
 
    If you lose your password or it expires, you can generate a new password. For password reset procedures, see [Resetting a Lost or Expired Windows Administrator Password](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ResettingAdminPassword.html) in the Amazon EC2 documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/lexv2/latest/dg/building-srgs.html
 # Grammar slot type
 <a name="building-srgs"></a>
 
+**Important**
+Amazon Lex V2 grants access to grammar slot types for each AWS account. If your account doesn't have access, Amazon Lex V2 rejects attempts to add a grammar slot type to a bot. Amazon Lex V2 also rejects builds for locales that include a grammar slot type. To request access for your account, contact AWS Support. If you don't need to author your own grammar, you can use a custom slot type instead.
+
 With the grammar slot type, you can author your own grammar in the XML format per the SRGS specification to collect information in a conversation. Amazon Lex V2 recognizes utterances matched by the rules specified in the grammar. You can also provide semantic interpretation rules using ECMAScript tags within the grammar files. Amazon Lex then returns properties set in the tags as resolved values when a match occurs.
 
 You can only create grammar slot types in the English (Australia), English (UK), and English (US) locales.
@@ -76,3 +79,7 @@ The maximum file size is 100 KB.
 1. Give the slot type a name, and then choose **Add**.
 
 1. Choose the S3 bucket that contains your definition file and enter the path to the file. Choose **Save slot type**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -480,3 +480,7 @@ In the AWS IoT TwinMaker console, go to **component details** and then under the
 <a name="time-series-data-connectors-wn"></a>
 
 You can now set up an [AWS IoT TwinMaker Grafana dashboard](https://docs.aws.amazon.com/iot-twinmaker/latest/guide/grafana-integration.html) to visualize metrics. You can also explore other data connector samples in the [AWS IoT TwinMaker samples GitHub repository ](https://github.com/aws-samples/aws-iot-twinmaker-samples/tree/main/src/modules/s3) to see if they fit your use case.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

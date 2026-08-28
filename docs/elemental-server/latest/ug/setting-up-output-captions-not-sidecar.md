@@ -41,3 +41,7 @@ If your output captions are embedded and your output package (that is, your outp
 | Font style fields | **Destination Type** type is Burn-in or DVB-Sub | For burn-in, see [Font Styles for Burn-in](font-styles-for-burn-in.md). For DVB-Sub, see [(Font Styles for DVB-Sub)](font-styles-for-dvb-sub.md). |
 | Language | All captions except not for embedded-to-embedded or Teletext-to-Teletext | Complete if desired. This information may be useful to or required by a downstream system. <br />For embedded-to-embedded or Teletext-to-Teletext, leave as Undefined. |
 | Description | All captions except not for Embedded-to-Embedded  | This field is auto-completed after you specify the language. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

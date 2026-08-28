@@ -53,3 +53,7 @@ When using the [French keyboard layout](keyboard-layouts.md), press and hold **C
 
 If you are using a Windows virtual desktop session, please use Windows Magnifier to make part or all of your display larger.
 + Press and hold the Windows logo key\+the Plus key (\+) to turn Magnifier on or off.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

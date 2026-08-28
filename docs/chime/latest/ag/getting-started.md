@@ -113,3 +113,7 @@ Lets your users send and receive phone calls and text messages directly from Ama
 
 **Amazon Chime Voice Connector**
 Provides SIP trunking service for an existing phone system. Port in existing phone numbers or provision new phone numbers in the Amazon Chime console. For more information, see [Managing Amazon Chime Voice Connectors](https://docs.aws.amazon.com/chime-sdk/latest/ag/voice-connectors.html) in the *Amazon Chime SDK Administration Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

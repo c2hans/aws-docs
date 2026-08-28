@@ -57,3 +57,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/framework/ops_org
 +  [Prioritize your Employees' Skills to Drive Business Growth](https://aws.amazon.com/executive-insights/content/prioritize-your-employees-skills-to-drive-business-growth/)
 +  [High performing organization - the Amazon Two-Pizza team](https://aws.amazon.com/executive-insights/content/amazon-two-pizza-team/)
 +  [How Cloud-Mature Enterprises Succeed](https://aws.amazon.com/blogs/mt/how-cloud-mature-enterprises-succeed/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

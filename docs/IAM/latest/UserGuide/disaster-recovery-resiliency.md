@@ -47,3 +47,7 @@ AWS has built resilience into AWS Regions and Availability Zones. When you obser
 1. Use an AWS STS Regional [service endpoint](https://docs.aws.amazon.com/general/latest/gr/sts.html#sts_region) instead of the default global endpoint.
 
 1. Review the configuration of your environment for vital resources that routinely create or modify IAM resources, and prepare a fallback solution that uses existing IAM resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

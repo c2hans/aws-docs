@@ -77,3 +77,7 @@ If the error persists, use the following instructions to debug the issue.
 **Possible causes:** CodeBuild fetches the deployment and environment associated with the GitHub Actions job if they exist to verify if the deployment is approved. If CodeBuild fails to fetch either the deployment or environment, the CodeBuild build may be triggered prematurely.
 
 **Recommended solutions:** Verify that the credentials associated with your CodeBuild projects have read permissions for deployments and actions within GitHub.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

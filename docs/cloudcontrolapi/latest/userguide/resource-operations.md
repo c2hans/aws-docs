@@ -69,3 +69,7 @@ We recommend that you take the following service behavior into account when perf
 + A single resource operation request to Cloud Control API might actually consist of multiple calls to the underlying service that provisions the resource. Because of this, a resource request might fail when only partially completed, resulting in only some of the requested changes being applied to the resource.
 + If a resource operation fails at any point, Cloud Control API doesn't roll back the resource to its previous state.
 + You can only perform one resource operation at a time on a given resource using Cloud Control API. However, the resource can still be operated on directly, through the underlying service that provisioned it. We strongly recommend against this approach because it may lead to unpredictable behavior.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Control API. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudcontrolapi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

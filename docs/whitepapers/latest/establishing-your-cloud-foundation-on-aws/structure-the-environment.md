@@ -20,3 +20,7 @@ In the early stages of a workload’s lifecycle, you can help **promote innovati
 Organizations often have **multiple IT operating models** or ways in which they divide responsibilities among parts of the organization to deliver their application workloads and platform capabilities.
 
 Additionally, creating isolated group will help you organized your resources** based on their function**, and **share them across these the** different isolated groups when needed. Restrictions can also be applied across isolated group of resources that perform a similar action **applying common policies.**
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

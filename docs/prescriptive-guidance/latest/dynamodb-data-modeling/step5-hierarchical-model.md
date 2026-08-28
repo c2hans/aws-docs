@@ -63,3 +63,7 @@ The following pivot table represents the GSI2 index. It's configured using `Grap
 | GraphId | Path | ComponentId |
 | --- |--- |--- |
 | CM1\#1 | CM1<br />CM1\|CM2<br />CM1\|CM3<br />CM1\|CM2\|CM4<br />CM1\|CM2\|CM5<br />CM1\|CM2\|CM4\|CM8<br />CM1\|CM2\|CM4\|CM9<br />CM1\|CM2\|CM5\|CM10<br />CM1\|CM3\|CM6<br />CM1\|CM3\|CM7 | CM1<br />CM2<br />CM3<br />CM4<br />CM5<br />CM8<br />CM9<br />CM10<br />CM6<br />CM7 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

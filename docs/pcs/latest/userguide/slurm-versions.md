@@ -31,3 +31,7 @@ The following table shows Slurm versions that aren't supported in AWS PCS.
 | 24.11 | 11/29/2024 | 5/14/2025 | 5/31/2026 |
 | 24.05 | 5/30/2024 | 12/18/2024 | 11/30/2025 |
 | 23.11 | 11/21/2023 | 8/28/2024 | 5/31/2025 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

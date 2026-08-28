@@ -29,3 +29,7 @@ Note that these metrics don't provide data about SMS messages that were sent by 
 | Messages sent, grouped by country | `txn-sms-sent-grouped-by-country` | The number of messages that were sent, for each country or region that messages were sent to.<br />The query results for this metric are grouped by country or region, in ISO 3166-1 alpha-2 format. |
 | Messages sent, grouped by date | `txn-sms-sent-grouped-by-date` | The number of messages that were sent, for each day in the specified date range.<br />The query results for this metric are grouped by calendar day, in extended ISO 8601 format. |
 | Total price, grouped by country | `txn-sms-total-price-grouped-by-country` | The total cost of sending the messages, for each country or region that messages were sent to. The price is shown in thousandths of a United States cent. For example, if the value of this attribute is 645, then we charged you 0.645¢ to send the message (645 / 1000 = 0.645¢ = $0.00645).<br />The query results for this metric are grouped by country or region, in ISO 3166-1 alpha-2 format. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

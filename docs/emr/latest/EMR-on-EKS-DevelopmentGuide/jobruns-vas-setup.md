@@ -93,3 +93,7 @@ If the namespace that you specify doesn't exist, OLM won't install the operator.
    ```
 
    The `kubectl` command should return your newly-deployed vertical autoscaler operator with a **Phase** status of **Succeeded**. If you've trouble with installation or setup, see [Troubleshooting Amazon EMR on EKS vertical autoscaling](troubleshooting-vas.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

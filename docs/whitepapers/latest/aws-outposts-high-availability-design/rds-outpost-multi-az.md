@@ -22,3 +22,7 @@ Review the following considerations for Amazon RDS on Outposts deployments in Mu
 + If your workload must abide by data residency regulations for your industry or geography, consult with regulators to determine if Multi-AZ RDS will meet your requirements.
 
 For more details see [Working with Multi-AZ deployments for Amazon RDS on AWS Outposts](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-on-outposts.maz.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

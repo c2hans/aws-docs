@@ -62,3 +62,7 @@ You can filter and sort the list by any of the columns. You can also navigate to
 When you use this option to navigate to an entity profile, the scope time is set as follows:
 + The scope time starts 30 days before the high-volume time interval.
 + The scope time ends at the end of the high-volume time interval.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ In order to improve AWS Glue for Spark performance, you may consider updating ce
 You can identify bottlenecks by configuring AWS Glue to show the Spark UI. For more information, see [Monitoring jobs using the Apache Spark web UI](monitor-spark-ui.md).
 
 Additionally, AWS Glue provides performance features that may be applicable to the specific type of data store your job connects to. Reference information about performance parameters for data stores can be found in [Connection types and options for ETL in AWS Glue for Spark](aws-glue-programming-etl-connect.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

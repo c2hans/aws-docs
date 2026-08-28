@@ -20,3 +20,7 @@ For information on migrating to OpenSearch Service from a self-managed OpenSearc
 For more detailed information, see [Creating and managing Amazon OpenSearch Service domains](createupdatedomains.md) and the other topics within this guide. For information on migrating to OpenSearch Service from a self-managed OpenSearch cluster, see [Tutorial: Migrating to Amazon OpenSearch Service](migration.md).
 
 You can complete the following steps by using the OpenSearch Service console, the AWS CLI, or the AWS SDK. For information about installing and setting up the AWS CLI, see the [AWS Command Line Interface User Guide](https://docs.aws.amazon.com/cli/latest/userguide/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/review-code-scan-findings.html
 ---
 
-# Review findings from a Continuum code review
+# Review findings from a code review
 <a name="review-code-scan-findings"></a>
 
 After a code review run completes, review the run summary and security findings to understand vulnerabilities in your source code. Each finding contains a description, severity rating, code locations, risk reasoning, and suggested fixes to help you prioritize and address security issues.
@@ -14,8 +14,8 @@ Before you begin, ensure you have:
 + A completed or in-progress code review run
 + Access to the AWS Security Agent web application
 
-## Step 1: Access the Continuum code review run
-<a name="_step_1_access_the_continuum_code_review_run"></a>
+## Step 1: Access the code review run
+<a name="_step_1_access_the_code_review_run"></a>
 
 Navigate to your completed code review run to view the summary and findings.
 
@@ -71,8 +71,8 @@ Navigate to the **Preflight** tab to verify that all source access checks passed
 **Note**
 If any preflight check fails, the run will not proceed to static analysis. Review the check details to identify and resolve access issues, then start a new run.
 
-## Step 5: Review Continuum code review logs
-<a name="_step_5_review_continuum_code_review_logs"></a>
+## Step 5: Review code review logs
+<a name="_step_5_review_code_review_logs"></a>
 
 Navigate to the **Code review logs** tab to view the tasks AWS Security Agent performed during analysis.
 
@@ -196,6 +196,10 @@ After merging remediation pull requests, start a new run of the same code review
 
 After reviewing your code review findings:
 + Prioritize high-severity findings with high confidence for immediate remediation
-+ Use **Remediate code** to generate fixes for findings from a connected source code repository or an Amazon S3 source (see [Remediate Continuum code review findings](remediate-code-scan-findings.md))
++ Use **Remediate code** to generate fixes for findings from a connected source code repository or an Amazon S3 source (see [Remediate code review findings](remediate-code-scan-findings.md))
 + Run additional code reviews after implementing fixes to verify remediation
-+ Adjust your code review sources or settings as your codebase evolves (see [Enable Continuum code review](enable-code-review-scan.md))
++ Adjust your code review sources or settings as your codebase evolves (see [Enable code review](enable-code-review-scan.md))
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

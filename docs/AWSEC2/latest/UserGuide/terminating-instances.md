@@ -131,3 +131,7 @@ If you terminate your instance and another instance starts, most likely you have
 You can't terminate an instance if termination protection is turned on. For more information, see [Change instance termination protection](Using_ChangingDisableAPITermination.md).
 
 If your instance is in the `shutting-down` state for longer than usual, you can attempt to force terminate it. If it remains in the `shutting-down` state, it should be cleaned up (terminated) by automated processes within the Amazon EC2 service. For more information, see [Delayed instance termination](TroubleshootingInstancesShuttingDown.md#instance-stuck-terminating).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

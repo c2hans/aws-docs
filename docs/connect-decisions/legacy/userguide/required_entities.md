@@ -75,3 +75,7 @@ The following table lists the data entities and columns used by Demand Planning.
   - **Column:** site\_id / **Is the column required?:** Optional / **How is this column used in Forecasting?:** Recommended. Unique identifier for a specific site or location. Use this column if the demand driver is available at site level. This column can represent either ship\_from\_site\_id or ship\_to\_site\_id based on the lowest level site hierarchy configuration.
   - **Column:** channel\_id / **Is the column required?:** Optional / **How is this column used in Forecasting?:** Recommended. Unique identifier for a specific channel. Use this column if the demand driver is available at channel level.
   - **Column:** customer\_tpartner\_id / **Is the column required?:** Optional / **How is this column used in Forecasting?:** Recommended. Unique identifier for a specific customer. Use this column if the demand driver is available at customer level.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -110,3 +110,7 @@ If you believe that your product had errors in the scan that are false positives
  **Next steps**
 +  See size limits in [Requirements and best practices for creating machine learning products](ml-listing-requirements-and-best-practices.md)
 +  Continue to [Creating your Amazon SageMaker AI resource](ml-creating-your-amazon-sagemaker-resource.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -72,46 +72,44 @@ While configuring a private webserver, the `InvokeRestApi` action cannot be invo
 ## Calling the Apache Airflow REST API
 <a name="listing-DAGs-creating-variables-using-restapi-script"></a>
 
-This following sample script covers how to use the Apache Airflow REST API to list the available DAGs in your environment and how to create an Apache Airflow variable:
+The following sample Python script shows how to use the Apache Airflow REST API. The script lists the available DAGs in your environment and creates an Apache Airflow variable:
 
 ```
 import boto3
 
-  env_name = "MyAirflowEnvironment"
+env_name = "MyAirflowEnvironment"
 
-  def list_dags(client):
+def list_dags(client):
     request_params = {
-      "Name": env_name,
-      "Path": "/dags",
-      "Method": "GET",
-      "QueryParameters": {
-        "paused": False
-      }
+        "Name": env_name,
+        "Path": "/dags",
+        "Method": "GET",
+        "QueryParameters": {
+            "paused": False
+        }
     }
-  response = client.invoke_rest_api(
-    **request_params
-  )
+    response = client.invoke_rest_api(
+        **request_params
+    )
+    print("Airflow REST API response: ", response['RestApiResponse'])
 
-  print("Airflow REST API response: ", response['RestApiResponse'])
-
-  def create_variable(client):
+def create_variable(client):
     request_params = {
-      "Name": env_name,
-      "Path": "/variables",
-      "Method": "POST",
-      "Body": {
-        "key": "test-restapi-key",
-        "value": "test-restapi-value",
-        "description": "Test variable created by MWAA InvokeRestApi API",
-      }
+        "Name": env_name,
+        "Path": "/variables",
+        "Method": "POST",
+        "Body": {
+            "key": "test-restapi-key",
+            "value": "test-restapi-value",
+            "description": "Test variable created by MWAA InvokeRestApi API",
+        }
     }
-  response = client.invoke_rest_api(
-    **request_params
-  )
+    response = client.invoke_rest_api(
+        **request_params
+    )
+    print("Airflow REST API response: ", response['RestApiResponse'])
 
-  print("Airflow REST API response: ", response['RestApiResponse'])
-
-  if __name__ == "__main__":
+if __name__ == "__main__":
     client = boto3.client("mwaa")
     list_dags(client)
     create_variable(client)
@@ -143,50 +141,47 @@ For a REST API call, you must pass `jwt_token` information in headers as:
 
 ```
 def get_token_info(region, env_name):
-  logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(level=logging.INFO)
 
-  try:
-    # Initialize MWAA client and request a web login token
-    mwaa = boto3.client('mwaa', region_name=region)
-    response = mwaa.create_web_login_token(Name=env_name)
+    try:
+        # Initialize MWAA client and request a web login token
+        mwaa = boto3.client('mwaa', region_name=region)
+        response = mwaa.create_web_login_token(Name=env_name)
 
-    # Extract the web server hostname and login token
-    web_server_host_name = response["WebServerHostname"]
-    web_token = response["WebToken"]
+        # Extract the web server hostname and login token
+        web_server_host_name = response["WebServerHostname"]
+        web_token = response["WebToken"]
 
-    # Construct the URL needed for authentication
-    login_url = f"https://{web_server_host_name}/pluginsv2/aws_mwaa/login"
-    login_payload = {"token": web_token}
+        # Construct the URL needed for authentication
+        login_url = f"https://{web_server_host_name}/pluginsv2/aws_mwaa/login"
+        login_payload = {"token": web_token}
 
-    # Make a POST request to the MWAA login url using the login payload
-    response = requests.post(
-      login_url,
-      data=login_payload,
-      timeout=10
-    )
+        # Make a POST request to the MWAA login url using the login payload
+        response = requests.post(
+            login_url,
+            data=login_payload,
+            timeout=10
+        )
 
-    # Check if login was successful
-    if response.status_code == 200:
-
-    # Return the hostname and the session cookie
-    return (
-      web_server_host_name,
-      response.cookies['_token']
-    )
-    else:
-      # Log an error
-      logging.error("Failed to log in: HTTP %d", response.status_code)
-      return None
-      except requests.RequestException as e:
-
-      # Log any exceptions raised during the request to the MWAA login endpoint
-      logging.error("Request failed: %s", str(e))
-      return None
-      except Exception as e:
-
-      # Log any other unexpected exceptions
-      logging.error("An unexpected error occurred: %s", str(e))
-      return None
+        # Check if login was successful
+        if response.status_code == 200:
+            # Return the hostname and the session cookie
+            return (
+                web_server_host_name,
+                response.cookies['_token']
+            )
+        else:
+            # Log an error
+            logging.error("Failed to log in: HTTP %d", response.status_code)
+            return None
+    except requests.RequestException as e:
+        # Log any exceptions raised during the request to the MWAA login endpoint
+        logging.error("Request failed: %s", str(e))
+        return None
+    except Exception as e:
+        # Log any other unexpected exceptions
+        logging.error("An unexpected error occurred: %s", str(e))
+        return None
 ```
 
 ------
@@ -194,48 +189,47 @@ def get_token_info(region, env_name):
 
 ```
 def get_session_info(region, env_name):
-  logging.basicConfig(level=logging.INFO)
+    logging.basicConfig(level=logging.INFO)
 
-  try:
-      # Initialize MWAA client and request a web login token
-      mwaa = boto3.client('mwaa', region_name=region)
-      response = mwaa.create_web_login_token(Name=env_name)
+    try:
+        # Initialize MWAA client and request a web login token
+        mwaa = boto3.client('mwaa', region_name=region)
+        response = mwaa.create_web_login_token(Name=env_name)
 
-      # Extract the web server hostname and login token
-      web_server_host_name = response["WebServerHostname"]
-      web_token = response["WebToken"]
+        # Extract the web server hostname and login token
+        web_server_host_name = response["WebServerHostname"]
+        web_token = response["WebToken"]
 
-      # Construct the URL needed for authentication
-      login_url = f"https://{web_server_host_name}/aws_mwaa/login"
-      login_payload = {"token": web_token}
+        # Construct the URL needed for authentication
+        login_url = f"https://{web_server_host_name}/aws_mwaa/login"
+        login_payload = {"token": web_token}
 
-      # Make a POST request to the MWAA login url using the login payload
-      response = requests.post(
-          login_url,
-          data=login_payload,
-          timeout=10
-      )
+        # Make a POST request to the MWAA login url using the login payload
+        response = requests.post(
+            login_url,
+            data=login_payload,
+            timeout=10
+        )
 
-      # Check if login was succesfull
-      if response.status_code == 200:
-
-          # Return the hostname and the session cookie
-          return (
-              web_server_host_name,
-              response.cookies["session"]
-          )
-      else:
-          # Log an error
-          logging.error("Failed to log in: HTTP %d", response.status_code)
-          return None
-  except requests.RequestException as e:
-       # Log any exceptions raised during the request to the MWAA login endpoint
-      logging.error("Request failed: %s", str(e))
-      return None
-  except Exception as e:
-      # Log any other unexpected exceptions
-      logging.error("An unexpected error occurred: %s", str(e))
-      return None
+        # Check if login was successful
+        if response.status_code == 200:
+            # Return the hostname and the session cookie
+            return (
+                web_server_host_name,
+                response.cookies["session"]
+            )
+        else:
+            # Log an error
+            logging.error("Failed to log in: HTTP %d", response.status_code)
+            return None
+    except requests.RequestException as e:
+        # Log any exceptions raised during the request to the MWAA login endpoint
+        logging.error("Request failed: %s", str(e))
+        return None
+    except Exception as e:
+        # Log any other unexpected exceptions
+        logging.error("An unexpected error occurred: %s", str(e))
+        return None
 ```
 
 ------
@@ -368,3 +362,7 @@ if __name__ == "__main__":
 ```
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

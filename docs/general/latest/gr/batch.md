@@ -75,3 +75,7 @@ The following are the service endpoints and service quotas for this service.
 | Transactions per second for SubmitServiceJob | Each supported Region: 5 | No | Maximum number of transactions per second (TPS) for each account for SubmitServiceJob operations. |
 
 For more information, see [Service Quotas](https://docs.aws.amazon.com/batch/latest/userguide/service_limits.html) in the *AWS Batch User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

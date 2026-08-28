@@ -62,3 +62,7 @@ These are the power requirements for an ACE rack.
 | **Power consumption** | 10 kVA single phase (AA\+BB) |
 | **AC protection (upstream power breakers)** | For 2N input (redundant) only: C-curve, D-curve, or K-curve circuit breaker.<br />B-curve or lower is not supported. |
 | **AC inlet type (receptacle)** | IEC60309 or L6-30P whip connector types. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

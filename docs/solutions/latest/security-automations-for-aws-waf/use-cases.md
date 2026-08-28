@@ -18,3 +18,7 @@ This solution provides three options to activate HTTP Flood protection. You can 
  **Leverage the source code for applying customization or building your own security automations**
 
 This solution provides an example for how to use AWS WAF and other services to build security automations on the AWS Cloud. Its [open source code in GitHub](https://github.com/aws-solutions/aws-waf-security-automations) makes it convenient for you to apply customizations or build your own security automations that fit your needs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Automations for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

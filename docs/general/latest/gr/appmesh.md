@@ -58,3 +58,7 @@ The following are the service endpoints and service quotas for this service.
 | Virtual routers per mesh | Each supported Region: 200 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/appmesh/quotas/L-50F6C35A)  | Number of virtual routers per mesh |
 | Virtual services per mesh | Each supported Region: 200 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/appmesh/quotas/L-DA7495A7)  | Number of virtual services per mesh |
 | Weighted targets per route | Each supported Region: 10 | No | Number of weighted targets per route |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

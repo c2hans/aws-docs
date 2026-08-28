@@ -29,3 +29,7 @@ Republishing this data product will update the following for all subscribers:
 If assets have been removed from the data product, subscribers will no longer have access to these assets.
 If assets have been added to the data product, subscribers will get access to these assets.
 New published versions of data assets will be available.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

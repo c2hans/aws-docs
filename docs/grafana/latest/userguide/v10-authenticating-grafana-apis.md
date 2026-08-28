@@ -12,3 +12,7 @@ To use a Grafana API with your Amazon Managed Grafana workspace, you must have a
 **Topics**
 + [Use service accounts to authenticate with the Grafana HTTP APIs](v10-service-accounts.md)
 + [Use API keys to authenticate with Grafana HTTP APIs](v10-using-api-keys.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

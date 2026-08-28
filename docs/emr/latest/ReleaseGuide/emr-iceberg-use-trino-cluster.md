@@ -113,3 +113,7 @@ trino> SELECT * from default.iceberg_table;
 + Amazon EMR 6.5 does not offer Trino Iceberg Catalog support for Iceberg natively. Trino needs Iceberg v0.11, so we recommend launching an Amazon EMR cluster for Trino separate from the Spark cluster and including Iceberg v0.11 on that cluster.
 + When using AWS Glue as a catalog for Iceberg, make sure that the database in which you are creating a table exists in AWS Glue. If you are using services such as AWS Lake Formation and you're unable to load the catalog, make sure you have proper access to the service to execute the command.
 + Iceberg Glue integration does not work with the Redshift Managed Storage catalog.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

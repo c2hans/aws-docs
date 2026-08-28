@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 +  In-person and virtual training from instructors who teach your team in a hands-on learning environment about cost-effective implementation of generative AI solutions. For new employees, this should be part of their onboarding training, and should be mandatory training on a yearly basis for all existing employees and contractors.
 +  Technical skills and cloud expertise, including generative AI implementation, to grow your career and business. Encourage specialization in AI/ML cost optimization paths where available.
 +  Prompt engineering for cost, response size control, retrieval scope limiting, embeddings batch sizing, and model A/B testing for price‑performance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

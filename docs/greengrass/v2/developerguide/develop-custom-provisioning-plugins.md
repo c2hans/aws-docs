@@ -104,3 +104,7 @@ com.aws.greengrass.provisioning.exceptions.RetryableProvisioningException {}
 ```
 
 Each configuration value in the `SystemConfiguration` and `NucleusConfiguration` is required to install the AWS IoT Greengrass Core software, but you can return `null`. If your custom provisioning plugin returns `null` for any configuration value, you must provide that value in the system or nucleus configuration when you create the `config.yaml` file to provide to the AWS IoT Greengrass Core software installer. If your custom provisioning plugin returns a non-null value for an option that you also define in `config.yaml`, then the installer replaces the value in `config.yaml` with the value returned by the plugin.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

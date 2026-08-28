@@ -46,3 +46,7 @@ Before creating a Topic, confirm that you have the following:
 + One or more datasets enriched with semantic metadata (column descriptions, synonyms, and semantic types). For more information, see [Data Preparation Experience (New)](data-prep-experience-new.md).
 + Datasets representing a dimensional model (fact tables and dimension tables) loaded into SPICE or accessible through a supported Direct Query source.
 + Permissions to create Topics and manage datasets.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

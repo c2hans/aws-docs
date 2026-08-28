@@ -43,3 +43,7 @@ You can use a prior dataset as the test dataset for an existing project by first
 1. Follow the instructions at [Deleting an Amazon Rekognition Custom Labels project (Console)](mp-delete-project.md#mp-delete-project-console) to delete the new project.
 
 Alternatively, you can create the test dataset by using the manifest file for prior dataset. For more information, see [Creating a manifest file](md-create-manifest-file.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

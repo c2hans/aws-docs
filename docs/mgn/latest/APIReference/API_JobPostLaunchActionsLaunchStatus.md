@@ -11,7 +11,7 @@ Launch Status of the Job Post Launch Actions.
 <a name="API_JobPostLaunchActionsLaunchStatus_Contents"></a>
 
  ** executionID **   <a name="mgn-Type-JobPostLaunchActionsLaunchStatus-executionID"></a>
-AWS Systems Manager Document's execution ID of the of the Job Post Launch Actions.
+AWS Systems Manager Document's execution ID of the Job Post Launch Actions.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
@@ -29,7 +29,7 @@ Length Constraints: Minimum length of 0. Maximum length of 256.
 Required: No
 
  ** ssmDocument **   <a name="mgn-Type-JobPostLaunchActionsLaunchStatus-ssmDocument"></a>
-AWS Systems Manager's Document of the of the Job Post Launch Actions.
+AWS Systems Manager's Document of the Job Post Launch Actions.
 Type: [SsmDocument](API_SsmDocument.md) object
 Required: No
 
@@ -46,3 +46,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/mgn-2020-02-26/JobPostLaunchActionsLaunchStatus)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mgn-2020-02-26/JobPostLaunchActionsLaunchStatus)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mgn-2020-02-26/JobPostLaunchActionsLaunchStatus)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for ApplicationMigrationService. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

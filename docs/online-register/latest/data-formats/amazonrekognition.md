@@ -46,3 +46,7 @@ Amazon Rekognition provides the following APIs for data retrieval.
 | <a name="rekognition-SearchFacesByImage"></a>[SearchFacesByImage](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchFacesByImage.html) | Search the specificed collection for the largest face in the input image | Read |
 | <a name="rekognition-SearchUsers"></a>[SearchUsers](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchUsers.html) | Search the specificed collection for user match result with given either face ID or user ID | Read |
 | <a name="rekognition-SearchUsersByImage"></a>[SearchUsersByImage](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_SearchUsersByImage.html) | Search the specificed collection for user match result by using the largest face in the input image | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

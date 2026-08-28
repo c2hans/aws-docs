@@ -30,3 +30,7 @@ When you detect that a node is unavailable, we recommend that you try one of the
 1. Run the `snowballEdge describe-device` command to see when the previously unavailable node is added back to the cluster. For an example, see [Getting Device Status](https://docs.aws.amazon.com/snowball/latest/developer-guide/using-client-commands.html#client-status).
 
 After you perform the preceding procedures, your nodes should be working normally. You should also have a read/write quorum. If that's not the case, then one or more of your nodes might have a more serious issue and might need to be removed from the cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

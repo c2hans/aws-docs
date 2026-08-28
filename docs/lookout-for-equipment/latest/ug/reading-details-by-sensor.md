@@ -61,3 +61,7 @@ Data from a **low-grade sensor** contains a problem that may interfere with the 
 + If you've just chosen **Create model**, then it's time to [Train your model.](create-model.md)
 + If you've changed your mind and decided to start over the data ingestion process, choose [Replace your dataset](replacing-your-dataset.md).
 + If this isn't the first time you've ingested a dataset with Lookout for Equipment, you may want to [View your ingestion history](viewing-ingestion-history.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

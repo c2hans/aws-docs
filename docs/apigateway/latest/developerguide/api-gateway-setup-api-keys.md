@@ -174,3 +174,7 @@ Call [`apikey:import`](https://docs.aws.amazon.com/apigateway/latest/api/API_Imp
 ------
 
 You cannot change the value of the new API key. After you create your API, you configure a usage plan. For more information, see [Set up usage plans for REST APIs in API Gateway](api-gateway-create-usage-plans.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

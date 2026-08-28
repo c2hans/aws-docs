@@ -85,3 +85,7 @@ Before you begin, make sure that you are using Amazon Quick Enterprise edition a
 1. Do one of the following:
    + (Recommended) Choose **Save** to confirm your entries.
    + To immediately send a report, choose **Save and run now**. The report is sent immediately, even if your schedule's start date is in the future.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

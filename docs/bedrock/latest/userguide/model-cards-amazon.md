@@ -24,3 +24,7 @@ The following Amazon models are available in Amazon Bedrock:
 | [Titan Multimodal Embeddings G1](model-card-amazon-titan-multimodal-embeddings-g1.md) | Titan Multimodal Embeddings G1 is Amazon's model that generates embeddings from text and images for multimodal search and recommendation use cases. |
 | [Titan Embeddings G1 - Text](model-card-amazon-titan-embeddings-g1---text.md) | Titan Text Embeddings G1 is Amazon's text embeddings model that converts text into numerical vector representations for search, personalization, and clustering. |
 | [Titan Embeddings G1 - Text v2](model-card-amazon-titan-text-embeddings-v2-2.md) | Titan Text Embeddings V2:2 is an updated version of Amazon's text embeddings model with configurable output dimensions and improved accuracy for retrieval tasks. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,3 +28,7 @@ After you add captions to an output, delete the **Video** and **Audio 1** groups
 <a name="multilang-scc-srt-output-captions"></a>
 
  For each SRT, SCC or SMI output you must have one output per caption selector. In the caption output, choose the captions selector under **Captions source** that is set up for the track that you want to include. They will appear in the list of settings groups as **Captions Selector 1**, **Captions Selector 2**, and so forth.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

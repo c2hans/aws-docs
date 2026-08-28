@@ -146,3 +146,7 @@ You can use any attribute name in a document path as long as they meet these req
 If an attribute name does not meet this requirement, you must define an expression attribute name as a placeholder.
 
 For more information, see [Expression attribute names (aliases) in DynamoDB](Expressions.ExpressionAttributeNames.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,3 +51,7 @@ Outbound telephony charges occur when using a desk phone to answer inbound calls
    + [Organize agents into teams and groups for reporting and access by creating hierarchies](agent-hierarchy.md)
 
 1. Under **Tags**, optionally add resource [tags](tagging.md) to identify, organize, search for, filter and control who can access this user.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

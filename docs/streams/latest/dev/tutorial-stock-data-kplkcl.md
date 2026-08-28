@@ -25,3 +25,7 @@ The examples shown use the US West (Oregon) Region, but they work on any of the 
 + [Implement the consumer](tutorial-stock-data-kplkcl-consumer.md)
 + [(Optional) Extend the consumer](tutorial-stock-data-kplkcl-consumer-extension.md)
 + [Clean up resources](tutorial-stock-data-kplkcl-finish.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

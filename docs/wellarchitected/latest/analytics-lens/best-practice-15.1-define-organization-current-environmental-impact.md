@@ -33,3 +33,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 + [ Evaluate specific improvements ](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/evaluate-specific-improvements.html)
 + [ Turning Cost and Usage Reports into Efficiency Reports ](https://catalog.workshops.aws/well-architected-sustainability/en-US/5-process-and-culture/cur-reports-as-efficiency-reports)
 + [ Best practice 8.3 – Define and measure the computing performance metrics ](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/best-practice-8.3---define-and-measure-the-computing-performance-metrics..html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

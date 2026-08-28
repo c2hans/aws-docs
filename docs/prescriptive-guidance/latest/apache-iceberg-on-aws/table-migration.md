@@ -389,3 +389,7 @@ This table summarizes the main characteristics and considerations for each migra
 | **Can be used to migrate to Amazon S3 Tables** | No | No | Yes |
 | **Requires manual DDL** | No<br />(schema and partitions are copied from source table) | No<br />(schema and partitions are copied from source table) | If using CTAS, requires only specifying the partitioning |
 | **Best use** | Quick migration without rewriting data, allowing side-by-side use of Hive and Iceberg for testing or gradual transition. | Replacing a Hive table in place without rewriting data, when an immediate switchover is acceptable. | Full Iceberg optimization with data rewrite. Ideal when redesigning partitions or schema, or improving layout and performance. Always recommended if possible. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

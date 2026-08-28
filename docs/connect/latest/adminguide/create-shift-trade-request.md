@@ -45,3 +45,7 @@ The option to **Request shift trade** only appears to agents when this criteria 
    + View all the trade offers that you have received or sent.
    + **Cancel trade request** any time before it has been approved (either automatically or by the supervisor).
    + **Decline offer**. This declines an incoming trade request from another agent.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

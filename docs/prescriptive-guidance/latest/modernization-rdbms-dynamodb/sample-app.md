@@ -44,3 +44,7 @@ The new technology stack consists of the following:
 + DynamoDB ─ Database for storing application data.
 
 ![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-rdbms-dynamodb/images/guide-img/bb14de26-e912-4fbe-b307-0ec4123e45b0/images/9dd07c11-ffa6-4c6e-8f20-b39a144a18c4.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

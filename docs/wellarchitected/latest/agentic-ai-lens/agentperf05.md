@@ -50,3 +50,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/agentic-ai-lens/a
 + [AGENTPERF05-BP02 Implement optimized multi-agent collaboration models](agentperf05-bp02.md)
 + [AGENTPERF05-BP03 Optimize multi-stage AI pipeline execution](agentperf05-bp03.md)
 + [AGENTPERF05-BP04 Implement efficient agent delegation and handoff patterns](agentperf05-bp04.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

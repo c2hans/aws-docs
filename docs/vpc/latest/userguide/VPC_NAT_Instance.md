@@ -28,3 +28,7 @@ The NAT instance must have internet access, so it must be in a public subnet (a 
 To get started with NAT instances, create a NAT AMI, create a security group for the NAT instance, and launch the NAT instance into your VPC.
 
 Your NAT instance quota depends on your instance quota for the Region. For more information, see [Amazon EC2 service quotas](https://docs.aws.amazon.com/general/latest/gr/ec2-service.html#limits_ec2) in the *AWS General Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

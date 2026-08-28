@@ -38,3 +38,7 @@ In this case, the `www-authenticate` header shows that the token wasn't issued f
 You can also decode a JWT and verify that it matches the issuer, audience, and scopes that your API requires. The website [jwt.io](https://jwt.io/) can debug JWTs in the browser. The OpenID Foundation maintains a [list of libraries for working with JWTs](https://openid.net/developers/jwt-jws-jwe-jwk-and-jwa-implementations/).
 
 To learn more about JWT authorizers, see [Control access to HTTP APIs with JWT authorizers in API Gateway](http-api-jwt-authorizer.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

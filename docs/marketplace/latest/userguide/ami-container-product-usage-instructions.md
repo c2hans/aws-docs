@@ -78,3 +78,7 @@ When using CloudFormation delivery, you must also include the following:
 + A detailed guide on how your applications are launched and how they're configured to communicate if the deployment includes multiple AWS resources
 + A pricing breakdown that includes the cost of running AWS resources added above the standard limits. Provide prescriptive guidance on managing AWS service limits.
 + All data encryption configuration. For example: Amazon S3 server-side encryption, Amazon Elastic Block Store (Amazon EBS) encryption, Linux Unified Key Setup (LUKS), etc.)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

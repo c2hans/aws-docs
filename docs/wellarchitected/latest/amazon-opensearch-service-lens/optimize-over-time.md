@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 + [AOSCOST04-BP01 Apply cost allocation tags to your OpenSearch resources for detailed cost tracking and analysis](aoscost04-bp01.md)
 + [AOSCOST05-BP01 Assess the pricing for instances and storage in Amazon OpenSearch Service](aoscost05-bp01.md)
 + [AOSCOST05-BP02 Examine the costs associated with Amazon S3 storage for manually creating snapshots of your OpenSearch Service domain](aoscost05-bp02.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -8,3 +8,7 @@ source_url: https://docs.aws.amazon.com/acm/latest/userguide/email-to-dns-migrat
 You can migrate an existing email-validated public AWS Certificate Manager (ACM) certificate to DNS validation. The certificate ARN does not change during migration. Your existing infrastructure references—such as load balancer configurations and CI/CD pipelines— continue to work without modification.
 
 DNS-validated certificates can be renewed automatically by ACM. Email-validated certificates require you to manually approve a validation email for every renewal. As certificate validity periods decrease, migrating to DNS validation reduces the operational overhead of certificate renewal.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

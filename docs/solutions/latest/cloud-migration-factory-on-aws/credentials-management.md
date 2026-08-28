@@ -42,3 +42,7 @@ Except the secret name and type, you can edit all properties of the secret using
 <a name="delete-a-secret"></a>
 
 From the Credentials Manager view, select the secret you want to delete and choose **Delete**. The secret will be scheduled for deletion within AWS Secrets Manager which may take a few minutes to complete. Any attempt to add a new secret with the same name during this time will fail.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

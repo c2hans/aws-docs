@@ -30,3 +30,7 @@ Data can also be federated to the SAP HANA Cloud by configuring Athena as a remo
  **Further resources**
 
 The [Guidance for Data Federation](https://aws.amazon.com/solutions/guidance/data-federation-between-sap-and-aws/) between SAP and AWS outlines the process of federating data between SAP and AWS cloud analytics services, enabling you to establish a data mesh architecture. By federating data between SAP and AWS. you can easily transform and visualize your data in a scalable, secure, and cost-effective way, helping you inform your decision-making.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -113,3 +113,7 @@ If you're reviewing a custom framework, you can also [edit](https://docs.aws.ama
 <a name="review-frameworks-additional-resources"></a>
 + [On my custom framework details page, I’m prompted to recreate my custom framework](framework-issues.md#recreate-framework-post-common-controls)
 + [I can’t make a copy of my custom framework](framework-issues.md#cannot-use-custom-framework)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

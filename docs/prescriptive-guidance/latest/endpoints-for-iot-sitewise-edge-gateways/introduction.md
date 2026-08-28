@@ -24,3 +24,7 @@ This guide is intended for, but not limited to, the following audiences:
 + Developers
 
 Before reading this guide, it is helpful to understand the levels of an industrial control network, as defined in the Purdue reference model. For more information about this model and how cloud, Internet of Things (IoT), and edge computing developments are transforming on-premises OT workloads into hybrid workloads for the AWS Cloud, see [Security Best Practices for Manufacturing OT](https://docs.aws.amazon.com/whitepapers/latest/security-best-practices-for-manufacturing-ot/security-best-practices-for-manufacturing-ot.html) (AWS Whitepaper).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ FIPS validated endpoints are available for the SageMaker AI API and request rout
 RStudio on Amazon SageMaker AI provides encryption for all communications that involve SageMaker AI components. However, the previous version did not support encryption between the RStudioServerPro and RSession apps.
 
 RStudio released version 2022.02.2-485.pro2 in April 2022. This version supports encryption between RStudioServerPro and RSession apps to enable end-to-end encryption. The version upgrade, however, is not completely backward compatible. As a result, you must update all of your RStudioServerPro and RSession apps. For information about how to update your apps, see [RStudio Versioning](rstudio-version.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

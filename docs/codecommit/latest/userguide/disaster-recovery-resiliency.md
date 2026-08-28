@@ -10,3 +10,7 @@ The AWS global infrastructure is built around AWS Regions and Availability Zones
 A CodeCommit repository or CodeCommit approval rule template exists in the AWS Region where it was created. For more information, see [Regions and Git connection endpoints for AWS CodeCommit](regions.md). For resiliency in repositories, you can configure your Git client to push to two repositories at once. For more information, see [Push commits to an additional Git repository](how-to-mirror-repo-pushes.md).
 
 For more information about AWS Regions and Availability Zones, see [AWS Global Infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ To see samples of rendering different types of objects on map, see the following
 + [Example: Draw a polygon](example-draw-polygon.md)
 
 For more samples and tutorials, see [Code examples and tutorials for working with Amazon Location Service](samples.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

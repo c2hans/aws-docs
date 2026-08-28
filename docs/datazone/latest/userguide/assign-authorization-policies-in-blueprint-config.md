@@ -36,3 +36,7 @@ Within a specific blueprint configuration, you can assign the following authoriz
 1. In the **Blueprints** tab, choose the enabled blueprint that you want to work with, and then in the blueprint's details page, navigate to the **Delegated permissions** tab.
 
 1. In the **Delegated permissions** tab, search for and choose domain units to the owners of which you want to assign the **Grant permissions to create environment profiles using this blueprint** policy, and then choose **Add delegated permission**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

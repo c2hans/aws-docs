@@ -87,3 +87,7 @@ If an object (or part of an object) transfer failed, the JobWorker releases th
 1.  Each task uses [skopeo](https://github.com/containers/skopeo) to copy the images into the target Amazon ECR registry.
 
 1.  After the copy completes, the status (either success or fail) is logged into DynamoDB for tracking purposes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

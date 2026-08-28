@@ -58,3 +58,7 @@ Using the SDK for JavaScript in browser scripts makes it possible to realize a n
 <a name="welcome_examples"></a>
 
 You can browse the SDK for JavaScript examples in the [AWS Code Example Library](https://docs.aws.amazon.com/code-library/latest/ug/javascript_2_code_examples.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for JavaScript SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

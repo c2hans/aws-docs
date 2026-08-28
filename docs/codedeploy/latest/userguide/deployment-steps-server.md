@@ -132,3 +132,7 @@ You can also choose to roll back a failed deployment by manually redeploying a p
 In all cases, the new or rolled-back deployment is assigned its own deployment ID. The list of deployments you can view in the CodeDeploy console shows which ones are the result of an automatic deployment.
 
 For more information, see [Redeploy and roll back a deployment with CodeDeploy](deployments-rollback-and-redeploy.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ When micro-frontends involve a large number of teams, you need a strategy to coo
 [OpenAPI](https://www.openapis.org/) is a specification language for HTTP APIs that supports defining API interfaces and contracts in a unified way. You can implement REST APIs by [using OpenAPI in Amazon API Gateway](https://docs.aws.amazon.com/apigateway/latest/developerguide/api-gateway-import-api.html). You can also use a wide variety of open source frameworks that you can host in containers or virtual machines. A significant advantage is that OpenAPI can automatically generate documentation in a consistent format, so multiple teams can share knowledge with a minimal initial investment.
 
 When multiple teams work on micro-frontends, they often form groups. In these groups, people can meet and learn from each other while thinking about and contributing to the bigger picture. These initiatives typically define and document ownership boundaries, discuss cross-cutting concerns, and identify early on any duplication of efforts to solve common problems.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

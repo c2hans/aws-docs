@@ -80,3 +80,7 @@ The `skip--all` option means that the script disables HTTPS but doesn't change t
 
 **Note**
 If you run the script without the `--https` option when HTTPS is already disabled, nothing changes in the configuration. HTTPS is still disabled.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

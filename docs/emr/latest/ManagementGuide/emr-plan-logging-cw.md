@@ -375,3 +375,7 @@ For current pricing information, see [Amazon CloudWatch Pricing](https://aws.ama
 + [Configure IAM roles for Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-iam-roles.html) - IAM role configuration for EMR clusters
 + [Amazon CloudWatch Logs User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/) - Complete guide to CloudWatch Logs features
 + [AWS CLI Command Reference for EMR](https://docs.aws.amazon.com/cli/latest/reference/emr/) - CLI reference documentation
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

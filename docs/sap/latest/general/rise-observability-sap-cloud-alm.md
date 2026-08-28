@@ -28,3 +28,7 @@ SAP Cloud ALM is included in cloud subscriptions with SAP Enterprise Support. Ac
  **Conclusion**
 
 For SAP Cloud ERP environments, Cloud ALM represents a valuable starting point for monitoring that comes included with their subscription. As environments grow in complexity and business criticality increases, organizations should continuously assess whether the standardized monitoring approach of Cloud ALM sufficiently addresses their evolving needs or if a specialized partner monitoring solutions would provide greater business value through enhanced observability and improved operational efficiency.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

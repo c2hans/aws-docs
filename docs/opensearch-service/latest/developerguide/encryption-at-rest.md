@@ -120,3 +120,7 @@ Each metric represents a significant problem for a domain, so we recommend that 
 + Certain instance types don't support encryption of data at rest. For details, see [Supported instance types in Amazon OpenSearch Service](supported-instance-types.md).
 + Domains that encrypt data at rest use a different repository name for their automated snapshots. For more information, see [Restoring data from snapshots](managedomains-snapshot-restore.md).
 + While we highly recommend enabling encryption at rest, it can add additional CPU overhead and a few milliseconds of latency. Most use cases aren't sensitive to these differences, however, and the magnitude of impact depends on the configuration of your cluster, clients, and usage profile.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

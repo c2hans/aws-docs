@@ -48,3 +48,7 @@ These levels summarize what each stage of maturity looks like for agent lifecycl
 + [AGENTOPS03-BP02 Implement CI/CD pipelines tailored to agentic system deployment (AgentOps)](agentops03-bp02.md)
 + [AGENTOPS03-BP03 Implement agent-specific scaling policies and capacity planning](agentops03-bp03.md)
 + [AGENTOPS03-BP04 Implement organizational agent portfolio management and governance at scale](agentops03-bp04.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

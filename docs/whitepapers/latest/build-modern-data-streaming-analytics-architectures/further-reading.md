@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-modern-data-str
 +  [Best practices for Managed Service for Apache Flink](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/best-practices.html) from the [*Amazon Managed Service for Apache Flink for SQL Applications Developer Guide*](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/what-is.html)
 +  [Security Best Practices for Firehose](https://docs.aws.amazon.com/firehose/latest/dev/security-best-practices.html) from the [*Amazon Data Firehose Developer Guide*](https://docs.aws.amazon.com/firehose/latest/dev/what-is-this-service.html)
 +  [Best practices from Delhivery on migrating from Apache Kafka to Amazon MSK](https://aws.amazon.com/blogs/big-data/best-practices-from-delhivery-on-migrating-from-apache-kafka-to-amazon-msk/) (blog post)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

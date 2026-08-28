@@ -32,3 +32,7 @@ Before using Amazon S3 policies, ensure you have:
 + An AWS organization in all features mode
 + Permissions to manage AWS Organizations policies (organizations:CreatePolicy, organizations:AttachPolicy, etc.)
 + The Amazon S3 policy type enabled for your organization
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

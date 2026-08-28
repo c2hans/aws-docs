@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 |  [Amazon S3](https://aws.amazon.com/s3/)  |  Supporting. This guidance creates S3 buckets for firewall configurations, source code, artifacts, and logs.  |
 |  [AWS Systems Manager](https://aws.amazon.com/systems-manager/)  |  Supporting. Provides application-level resource monitoring and visualization of resource operations and cost data.  |
 |  [AWS Transit Gateway](https://aws.amazon.com/transit-gateway/)  |  Optional. This guidance creates Transit Gateway attachments for your VPCs if you provide an existing transit gateway ID.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Network Inspection on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

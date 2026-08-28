@@ -15,3 +15,7 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 + [Trend Micro DSM \| Remove Trend Micro EPS Agent (Managed Automation)](management-host-trend-micro-dsm-remove-trend-micro-eps-agent-managed-automation.md)
 + [Trend Micro DSM \| Scan and Get Results (Managed Automation)](management-host-trend-micro-dsm-scan-and-get-results-managed-automation.md)
 + [Trend Micro DSM \| Update Agent Status (Managed Automation)](management-host-trend-micro-dsm-update-agent-status-managed-automation.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

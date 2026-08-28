@@ -15,3 +15,7 @@ These cost estimates depend on many factors, which are detailed in the following
 The examples provided are likely *higher* than the actual costs of running this solution. The intent was to provide a guide to the pricing that is easily understood. Where assumptions were needed, we used factors that were straightforward to calculate and also likely be more expensive than the actual cost.
 
 For an additional cost example for streaming a live event, refer to [FAQs about live streaming on AWS](https://aws.amazon.com/blogs/media/frequently-asked-questions-about-the-cost-of-live-streaming/) in the *AWS Media Blog*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Live Streaming on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

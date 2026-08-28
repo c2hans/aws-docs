@@ -136,3 +136,7 @@ You can upload your image to detect if a watermark from Titan Image Generator G1
 For more information on Amazon Titan Image Generator prompt engineering, see [Amazon Titan Image Generator G1 models Prompt Engineering Best Practices](https://d2eo22ngex1n9g.cloudfront.net/Documentation/User+Guides/Titan/Amazon+Titan+Image+Generator+Prompt+Engineering+Guidelines.pdf).
 
 For general prompt engineering guidelines, see [Prompt Engineering Guidelines](bedrock/latest/userguide/prompt-engineering-guidelines.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

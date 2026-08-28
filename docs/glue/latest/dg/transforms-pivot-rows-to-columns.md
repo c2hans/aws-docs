@@ -42,3 +42,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-pivot-rows-to-
 
 1. On the **Transform** tab, choose the numeric column which will be aggregated to produce the values for the new columns, the aggregation function to apply and the column(s) to convert its unique values into new columns.
 ![The screenshot shows the Transform tab for the Pivot Rows To Columns transform.](http://docs.aws.amazon.com/glue/latest/dg/images/transforms-pivot-rows-to-columns-transform-tab.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

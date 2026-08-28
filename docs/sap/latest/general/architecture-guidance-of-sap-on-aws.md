@@ -42,3 +42,7 @@ Before following the configuration instructions in this guide, we recommend fami
 Before reading this document, we recommend understanding key concepts and best practices from these guides:
 +  [SAP on AWS Overview and Planning](https://docs.aws.amazon.com/sap/latest/general/sap-on-aws-overview.html)
 +  [Getting Started with Architecting SAP on the AWS Cloud](https://aws.amazon.com/blogs/awsforsap/getting-started-with-architecting-sap-on-the-aws-cloud)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -142,3 +142,7 @@ AND type_desc = 'ROWS'
 The output should be similar to the following. The files will seldom be perfectly balanced, because some content can exist only in the MDF file.
 
 ![Validating disk space utilization after balancing](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-optimization-for-enterpriseone/images/guide-img/1ded277e-59b3-4f6d-bcef-fa7d04f06c63/images/175af9bb-4a1f-4779-871b-e695e291cec0.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

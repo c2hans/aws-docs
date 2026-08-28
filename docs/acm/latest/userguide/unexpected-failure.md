@@ -12,3 +12,7 @@ For example, Elastic Load Balancing (ELB) requires permission to decrypt an AWS 
 To investigate the problem, check the status of your grants using the AWS KMS console at [https://console.aws.amazon.com/kms](https://console.aws.amazon.com/kms). Then take one of the following actions:
 + If you believe that permissions granted to an integrated service have been revoked, visit the integrated service's console, disassociate the certificate from the service, then re-associate it. This will reapply the resource-based policy and put a new grant in place.
 + If you believe that permissions granted to ACM have been revoked, contact Support at https://console.aws.amazon.com/support/home\#/.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

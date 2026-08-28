@@ -11,3 +11,7 @@ To allow the Connector to synchronize Support tickets, the account must have a B
 
 **Note**
 AWS Service Management Connector allows AWS Managed Services (AMS) Accelerate users to create Incidents and Service Requests through JSM Cloud. To ensure that your account has the required permissions to create AMS Accelerate support cases, you must first onboard your account to AMS Accelerate. For more information, review [Getting Started with AMS Accelerate](https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/getting-started-acc.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

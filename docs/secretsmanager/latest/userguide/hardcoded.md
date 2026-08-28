@@ -160,3 +160,7 @@ After you remove a hardcoded secret from your code, some ideas to consider next:
 + For secrets that you access from multiple Regions, consider replicating your secret to improve latency. For more information, see [Replicate AWS Secrets Manager secrets across Regions](replicate-secrets.md).
 + In this tutorial, you granted {{RoleToRetrieveSecretAtRuntime}} only the permission to retrieve the secret value. To grant the role more permissions, for example to get metadata about the secret or to view a list of secrets, see [Resource-based policies](auth-and-access_resource-policies.md).
 + In this tutorial, you granted permission to {{RoleToRetrieveSecretAtRuntime}} by using the secret's resource policy. For other ways to grant permission, see [Identity-based policies](auth-and-access_iam-policies.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

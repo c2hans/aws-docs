@@ -229,3 +229,7 @@ Reduce the maximum number of retrieved results (this shortens what is filled in 
 Recreate the data source with a chunking strategy that uses smaller chunks (this shortens what is filled in for the $search\_results$ placeholder in the [Knowledge base prompt templates: orchestration & generation](kb-test-config.md#kb-test-config-prompt-template)).
 Shorten the prompt template.
 Shorten the user query (this shortens what is filled in for the $query$ placeholder in the [Knowledge base prompt templates: orchestration & generation](kb-test-config.md#kb-test-config-prompt-template)).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

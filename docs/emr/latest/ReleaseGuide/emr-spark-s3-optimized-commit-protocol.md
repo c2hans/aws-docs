@@ -15,3 +15,7 @@ The commit protocol is available with Amazon EMR release 5.30.0 and later and 6.
 + [Requirements for the EMRFS S3-optimized commit protocol](emr-spark-commit-protocol-reqs.md)
 + [The EMRFS S3-optimized commit protocol and multipart uploads](emr-spark-commit-protocol-multipart.md)
 + [Job tuning considerations](emr-spark-commit-protocol-tuning.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

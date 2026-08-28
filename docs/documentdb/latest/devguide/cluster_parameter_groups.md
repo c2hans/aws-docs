@@ -18,3 +18,7 @@ This section describes how to create, view, and modify cluster parameter groups.
 + [Resetting cluster parameter groups](cluster_parameter_groups-reset.md)
 + [Deleting cluster parameter groups](cluster_parameter_groups-delete.md)
 + [Cluster parameters reference](cluster_parameter_groups-list_of_parameters.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

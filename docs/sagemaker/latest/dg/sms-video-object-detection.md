@@ -125,3 +125,7 @@ You can create an adjustment and verification labeling job using the Ground Trut
 <a name="sms-video-od-output-data"></a>
 
 When you create a video frame object detection labeling job, tasks are sent to workers. When these workers complete their tasks, labels are written to the Amazon S3 output location you specified when you created the labeling job. To learn about the video frame object detection output data format, see [Video frame object detection output](sms-data-output.md#sms-output-video-object-detection). If you are a new user of Ground Truth, see [Labeling job output data](sms-data-output.md) to learn more about the Ground Truth output data format.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

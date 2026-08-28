@@ -15,3 +15,7 @@ If the IAM principal is from the same account as the resource owner, a resource-
 
 **Important**
 If an identity-based policy grants unconditional access to a DynamoDB table (for example, `dynamodb:GetItem` with no conditions), a resource-based policy that allows access with conditions on `dynamodb:Attributes` won't restrict that access. The identity-based policy's unconditional allow takes precedence, and the resource-based policy's conditions are not applied as restrictions. To restrict access to specific attributes, use an explicit `Deny` statement instead of relying solely on conditional `Allow` statements in the resource-based policy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,3 +11,7 @@ With customization triggers enabled, AFT detects OU changes and automatically in
 
 **Important**
 Accounts updated through the Auto Enroll feature in AWS Control Tower landing zone do not emit the `UpdateManagedAccount` lifecycle event. Customization triggers do not fire for those operations. If you rely on Auto Enroll to bring accounts under AWS Control Tower management, you must re-invoke customizations manually for those accounts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

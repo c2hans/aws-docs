@@ -161,3 +161,7 @@ The **Default payment preferences** section alerts you that your previous defaul
 ------
 
 If you're unable to change the SOR using the preceding procedures, your account is likely operating in the legacy model where the functionality isn't available. We are currently migrating AWS India account from the legacy to the new model where the functionality is available. The migration is expected to be completed by December 2026.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,3 +10,7 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 The Security account is the central hub for housing security related operations and the main point for funneling notifications and alerts to the AMS control plane services. In addition, the Security account houses the Amazon Guard Duty management account and the AWS Config aggregator.
 
 ![Security Account diagram showing GuardDuty Master, Simple Notification System, and Config Aggregator.](http://docs.aws.amazon.com/managedservices/latest/onboardingguide/images/malzSecurityAccount.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

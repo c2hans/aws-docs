@@ -16,3 +16,7 @@ deadline bundle gui-submit text_to_image_batch
 ```
 
 For a complete walkthrough that covers farm setup, input format, caption overlays, and the chaining workflow, see [Generate images in batch with a diffusion model](tutorial-text-to-image-batch.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

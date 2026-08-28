@@ -124,3 +124,7 @@ Example: A team migrating from EC2 to EKS adopts their existing RDS databases an
 Automate infrastructure rollout across accounts and regions using Argo CD and ACK together. Define your infrastructure as code in Git, and let capabilities handle the deployment and management.
 
 Example: A platform team maintains Git repositories defining standard account configurations—VPCs, IAM roles, RDS instances, and monitoring stacks. Argo CD deploys these configurations to new accounts and regions automatically, ensuring consistency and reducing manual setup time from days to minutes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

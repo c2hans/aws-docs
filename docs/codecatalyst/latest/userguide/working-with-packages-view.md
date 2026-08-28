@@ -18,3 +18,7 @@ You can use the CodeCatalyst console to view details about a specific package ve
 1. Search for the package version in the **Packages** table. You can use the search bar to filter packages by package name and format. Choose the package from the list.
 
 1. In the **Package details** page, choose **Versions**, and then choose the version you want to view.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

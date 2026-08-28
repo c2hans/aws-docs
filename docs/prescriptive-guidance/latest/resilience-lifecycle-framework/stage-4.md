@@ -38,3 +38,7 @@ During the *design and implement* and *evaluate and test* stages, you initiated 
 You might also want to consider running [game days](https://aws.amazon.com/wellarchitected/2020-07-02T19-33-23/wat.concept.gameday.en.html) and [chaos engineering](https://aws.amazon.com/blogs/architecture/chaos-engineering-in-the-cloud/) experiments in production after you've successfully run them in pre-production environments. Game days simulate known events that you have built resilience mechanisms to mitigate. For example, a game day might simulate an AWS Regional service impairment and implement a multi-Region failover. Although implementing these activities can require a significant level of effort, both practices help you build confidence that your system is resilient to the failure modes that you've designed it to withstand.
 
 By operating your applications, encountering operational events, reviewing metrics, and testing your application, you'll encounter numerous opportunities to respond and learn.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,3 +65,7 @@ Gather data on all aspects of the architecture for a data-driven approach to bui
 However, be aware of some constraints AWS places on testing of this type, as running load tests on Amazon Web Services can initiate security mechanisms. For more information, see the Amazon Elastic Compute Cloud [testing policy](https://aws.amazon.com/ec2/testing/). In particular, [Penetration testing](https://aws.amazon.com/security/penetration-testing/) can be run only on permitted AWS services and [Distributed Denial of Service](https://aws.amazon.com/security/ddos-simulation-testing/) (DDoS) testing must be performed by a pre-approved AWS Partner.
 
  Finally, make trade-offs in your architecture to improve performance, such as using compression to reduce the size of data stored and transiting your network, caching frequently used data in dedicated services or relaxing consistency requirements, prioritizing your most important requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

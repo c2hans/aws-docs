@@ -147,3 +147,7 @@ The forensic tools code shared in the section are example codes. You are respons
 |  **apiNotifications**  |  `false`  | Setting it to `true` turns on GraphQL API notification.<br />Setting it to `false` turns off GraphQL API notification. |
 |  **apiAllowedIps**  | [] | Provides list of all IPs allowed to access AppSyncAPI. WAF is configured to restrict the IP address. |
 |  **apiRateLimit**  |  `1000`  | WAF is configured with `ratelimit`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Forensics Orchestrator for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

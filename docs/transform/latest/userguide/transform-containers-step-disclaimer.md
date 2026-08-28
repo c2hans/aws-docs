@@ -28,3 +28,7 @@ After you accept the disclaimer, AWS Transform proceeds to the next step where y
 
 **Note**
 The connector configuration for AWS CodeConnections and Amazon ECR is no longer required upfront. AWS Transform prompts you to configure access to these services later in the workflow, only when needed. For example, you configure CodeConnections when you choose to clone from Git repositories, and you configure Amazon ECR access when you are ready to publish container images.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

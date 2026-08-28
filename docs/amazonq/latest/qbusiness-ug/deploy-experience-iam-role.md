@@ -16,3 +16,7 @@ To allow Amazon Q to invoke the API operations required to integrate your applic
 + [IAM role for an Amazon Q Business web experience using IAM Identity Center](web-experience-iam-role-idc.md)
 + [IAM role for an Amazon Q Business web experience using IAM Federation](web-experience-iam-role-iam.md)
 + [IAM permissions for using Amazon Q Apps](deploy-q-apps-iam-permissions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,3 +36,7 @@ Before creating a replica, confirm that your databases are ready based on the fo
 After completing all the preparation tasks, you are ready to create a Db2 replica.
 + To create a read-only replica, see [Creating a read replica](USER_ReadRepl.Create.md).
 + To create a standby replica, see [Creating a standby Db2 replica](db2-read-replicas.creating-in-standby-mode.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

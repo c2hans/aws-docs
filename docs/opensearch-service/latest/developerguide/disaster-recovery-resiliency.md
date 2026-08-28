@@ -12,3 +12,7 @@ For more information about AWS Regions and Availability Zones, see [AWS Global I
 In addition to the AWS global infrastructure, OpenSearch Service offers several features to help support your data resiliency and backup needs:
 + [Multi-AZ domains and replica shards](managedomains-multiaz.md)
 + [Automated and manual snapshots](managedomains-snapshots.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

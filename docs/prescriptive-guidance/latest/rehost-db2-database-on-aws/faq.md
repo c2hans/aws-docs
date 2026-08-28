@@ -36,3 +36,7 @@ Db2 on z/OS is big endian. All logical replication tools can be used to migrate 
 <a name="q4"></a>
 
 For data unload and load, you can consider unloading changed data, but there are challenges because not all tables have the column to indicate changes. HADR failover (option 2) has a built-in fallback solution: Changed data is automatically sent back to the on-premises server after takeover is complete (primary and secondary role switch). If you use logical replication, you can set up two-way replication to support fallback.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

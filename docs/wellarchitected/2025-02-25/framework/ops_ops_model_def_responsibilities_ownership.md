@@ -120,3 +120,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/ops
  **Related videos:**
 +  [AWS Summit Online - Cloud Operating Models for Accelerated Transformation](https://www.youtube.com/watch?v=ksJ5_UdYIag)
 +  [AWS re:Invent 2023 - Future-proofing cloud security: A new operating model](https://www.youtube.com/watch?v=GFcKCz1VO2I)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

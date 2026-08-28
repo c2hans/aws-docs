@@ -37,3 +37,7 @@ Use the following AWS CLI commands to work with Amazon SageMaker Model Cards:
 + [describe-model-card-export-job](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/describe-model-card-export-job.html)
 + [list-model-card-export-jobs](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/list-model-card-export-jobs.html)
 + [delete-model-card](https://docs.aws.amazon.com/cli/latest/reference/sagemaker/delete-model-card.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

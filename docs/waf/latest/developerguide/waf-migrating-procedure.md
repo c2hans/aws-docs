@@ -29,3 +29,7 @@ The following lists the high-level steps for migrating a protection pack (web AC
 + [Migrating a protection pack (web ACL): manual follow-up](waf-migrating-procedure-manual-finish.md)
 + [Migrating a protection pack (web ACL): additional considerations](waf-migrating-procedure-additional.md)
 + [Migrating a protection pack (web ACL): switchover](waf-migrating-procedure-switchover.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

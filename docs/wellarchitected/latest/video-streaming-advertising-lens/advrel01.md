@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 + [ADVREL01-BP02 Architect your system with appropriate recovery objectives](advrel01-bp02.md)
 + [ADVREL01-BP03 Architect for variable demand](advrel01-bp03.md)
 + [ADVREL01-BP04 Implement chaos engineering practices](advrel01-bp04.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

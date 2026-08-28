@@ -179,3 +179,7 @@ The following provides a sample mapping between the Federal Risk and Authorizati
 <a name="operational-best-practices-for-fedramp-high-part-2-sample"></a>
 
 The template is available on GitHub: [Operational Best Practices for FedRAMP (High Part 2)](https://github.com/awslabs/aws-config-rules/blob/master/aws-config-conformance-packs/Operational-Best-Practices-for-FedRAMP-HighPart2.yaml).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

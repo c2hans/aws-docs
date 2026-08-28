@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/rest-api-mutual-tls.html
 ---
 
-# How to turn on mutual TLS authentication for your REST APIs in API Gateway
+# Require client certificates for your API with mutual TLS authentication in API Gateway
 <a name="rest-api-mutual-tls"></a>
 
 Mutual TLS authentication requires two-way authentication between the client and the server. With mutual TLS, clients must present X.509 certificates to verify their identity to access your API. Mutual TLS is a common requirement for Internet of Things (IoT) and business-to-business applications.
@@ -202,3 +202,7 @@ openssl s_client -connect hostname:port
 ```
 
 If the resulting certificate is for the FQDN, [contact Support](https://console.aws.amazon.com/support/cases#/create) to open a ticket.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

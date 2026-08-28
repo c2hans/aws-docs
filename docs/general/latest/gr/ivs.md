@@ -141,3 +141,7 @@ For more information, see [Low-Latency Streaming Service Quotas](https://docs.aw
 | Rate of SendMessage requests across all your rooms | 1,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/ivschat/quotas/L-B11841BF)  | Maximum number of SendMessage requests that can be made per second across all your rooms. These requests come from the Amazon IVS Chat Messaging API (WebSocket). |
 | Rate of SendMessage requests per room | 100 | No | Maximum number of SendMessage requests that can be made per second for any one of your rooms. This is configurable with the maximumMessageRatePerSecond field of [Create Room](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_CreateRoom.html) and [Update Room](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/API_UpdateRoom.html). These requests come from the Amazon IVS Chat Messaging API (WebSocket). |
 | Rooms | 50,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/ivschat/quotas/L-85B84D18)  | Maximum number of chat rooms per account, per AWS Region. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -352,3 +352,7 @@ The REST API client enforces the following safety measures:
 +  **Response size limit** — Responses larger than 100 MB are rejected. For responses with a `Content-Length` header, the check happens before reading the body. For streamed responses without a `Content-Length` header, the body is read incrementally and the connection is terminated once the 100 MB limit is exceeded.
 +  **Redirect blocking** — HTTP redirects are not followed. This prevents open-redirect attacks where a malicious endpoint redirects the connector to an internal resource.
 +  **Automatic retries** — The client retries failed requests with exponential backoff for transient errors (connection errors, 429 Too Many Requests, 500/502/503/504 server errors).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

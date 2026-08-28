@@ -119,3 +119,7 @@ Regional limits on Security Hub CSPM controls when enabled through Control Tower
 In Security Hub CSPM, if [consolidated control findings](controls-findings-create-update.md#consolidated-control-findings) is turned off in your account, the `ProductFields.ControlId` field in the generated findings uses the standard-based control ID. The standard-based control ID is formatted as **CT.{{ControlId}}** (for example, **CT.CodeBuild.1**).
 
 For more information about this standard, see [Security Hub CSPM controls](https://docs.aws.amazon.com/controltower/latest/userguide/security-hub-controls.html) in the *AWS Control Tower User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

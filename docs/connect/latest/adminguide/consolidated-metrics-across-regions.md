@@ -27,3 +27,7 @@ The consolidated view is available across:
 Agent and contact metrics are consolidated across Regions. Other metrics such as analytics remain Region-specific.
 
 For more information about Connect Customer reporting, see [Metrics, dashboards, and insights in Connect Customer](amazon-connect-metrics.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

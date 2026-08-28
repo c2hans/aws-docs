@@ -77,7 +77,6 @@ Use this group to control access to AI-powered features such as natural language
 | Chat agents | Users can't view or access any chat agents. The agent library and navigation are hidden. | AI | Not applicable |
 | Create chat agents | Users can't create new chat agents. | AI | Chat agents |
 | Share chat agents | Users can't share chat agents with other users. Chat agents that were previously shared remain accessible to those users. | AI | Chat agents |
-| Create and update brand kits | Users can't create or update brand kits. | AI | Not applicable |
 | Extensions | Restricts access to Quick through all browser and Microsoft Office extensions. | AI | Not applicable |
 | Browser extension | Prevents access to Quick through the browser extension for Chrome, Firefox, and Edge. | AI | Extensions |
 | Excel extension | Prevents access to Quick through the Microsoft Excel add-in. | AI | Extensions |
@@ -89,7 +88,6 @@ Use this group to control access to AI-powered features such as natural language
 | All eligible users can review and approve flow sharing requests | Restricts which users can review and approve flow sharing requests. | AI | Flows |
 | Allow creators to share without approval | Creators can't share flows without approval. | AI | Flows |
 | Enable Bedrock model usage in General knowledge step for output refinement | Restricts usage of Bedrock models. | AI | Flows |
-| Override the default brand kit | Users can't override the default brand kit. | AI | Not applicable |
 | Quick desktop | Restricts all Quick desktop capabilities. | AI | Not applicable |
 | Automate browser actions | Restricts Quick desktop from automating browser actions. | AI | Quick desktop |
 | Build and manage engrams | Users can't build or manage engrams in Quick desktop. | AI | Quick desktop |
@@ -193,3 +191,7 @@ Use this group to control account-level settings, including user management, per
 | Feature | Amazon Quick behavior | Badge | Parent capability |
 | --- | --- | --- | --- |
 | Allow users to upgrade or request upgrades | Users can't upgrade their own role or request a role upgrade. | Not applicable | Not applicable |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

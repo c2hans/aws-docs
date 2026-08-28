@@ -34,3 +34,7 @@ To view details about a single application, call the [get-application](https://d
 To view details about multiple applications, call the [batch-get-applications](https://docs.aws.amazon.com/cli/latest/reference/deploy/batch-get-applications.html) command, specifying multiple application names.
 
 To view a list of application names, call the [list-applications](https://docs.aws.amazon.com/cli/latest/reference/deploy/list-applications.html) command.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

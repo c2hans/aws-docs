@@ -531,3 +531,7 @@ If you ran the CloudFormation template to create a new SageMaker AI Studio domai
 Congratulations\! You have finished the tutorial on how to assess wildfire damage with Amazon SageMaker AI geospatial capabilities.
 
 In this tutorial, you used Amazon SageMaker AI geospatial capabilities to create and visualize an Earth Observation Job, exported its data to S3 and performed further computations on the data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

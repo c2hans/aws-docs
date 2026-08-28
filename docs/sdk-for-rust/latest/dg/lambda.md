@@ -10,3 +10,7 @@ For detailed documentation on developing AWS Lambda functions with the AWS SDK f
 + The recommended command-line tool for deploying the Rust function binary to Lambda with [Cargo Lambda](https://www.cargo-lambda.info/guide/what-is-cargo-lambda.html).
 
 In addition to the guided examples that are in the *AWS Lambda Developer Guide*, there are also Lambda calculator example available in the [AWS SDK Code Examples Repository](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/rustv1/lambda) on GitHub.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Rust. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-rust` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

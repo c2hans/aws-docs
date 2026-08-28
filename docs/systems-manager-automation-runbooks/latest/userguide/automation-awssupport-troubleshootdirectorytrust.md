@@ -100,3 +100,7 @@ evalDirectorySecurityGroup.output - Results from evaluating whether the security
 evalAclEntries.output - Results from evaluating whether the network ACLs associated with the AWS Managed Microsoft AD allow the requisite traffic for trust creation.
 
  evaluateRemoteDomainCidr.output - Results from evaluating whether the `RemoteDomainCidrs` are valid values. Confirms that the AWS Managed Microsoft AD has conditional forwarders for the `RemoteDomainCidrs` , and that the requisite IP routes have been added to the AWS Managed Microsoft AD if the `RemoteDomainCidrs` are non-RFC 1918 IP addresses.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

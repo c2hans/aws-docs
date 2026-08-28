@@ -12,3 +12,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/serverless-applic
  [AWS X-Ray](https://aws.amazon.com/xray/) helps you analyze and debug serverless applications by providing distributed tracing and service maps to easily identify performance bottlenecks by visualizing a request end-to-end.
 
  [AWS Serverless Application Model](https://aws.amazon.com/serverless/sam/) (AWS SAM) is an extension of [AWS CloudFormation](https://aws.amazon.com/cloudformation/) that is used to package, test, and deploy serverless applications. The [AWS Serverless Application Model](https://aws.amazon.com/serverless/sam/) CLI can also enable faster debugging cycles when developing [Lambda](https://aws.amazon.com/lambda/) functions locally.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

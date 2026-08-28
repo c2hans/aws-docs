@@ -58,3 +58,7 @@ Resource Gateways provide secure ingress points for Cross-VPC Resource Access:
 + **Security group controls**: Configure security groups to restrict access to SFTP ports (typically port 22) from authorized sources only.
 + **Private subnet placement**: Deploy Resource Gateways in private subnets when connecting to private SFTP servers to maintain network isolation.
 + **Connection limits**: Each Resource Gateway supports up to 350 concurrent connections with a 350-second idle timeout for TCP connections.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

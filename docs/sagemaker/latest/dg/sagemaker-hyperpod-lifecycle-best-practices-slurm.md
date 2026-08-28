@@ -96,3 +96,7 @@ The following topics walk you through and dive deep into details on how to organ
 + [Validating the JSON configuration files before creating a Slurm cluster on HyperPod](sagemaker-hyperpod-lifecycle-best-practices-slurm-slurm-validate-json-files.md)
 + [Validating runtime before running production workloads on a HyperPod Slurm cluster](sagemaker-hyperpod-lifecycle-best-practices-slurm-slurm-validate-runtime.md)
 + [Developing lifecycle scripts interactively on a HyperPod cluster node](sagemaker-hyperpod-lifecycle-best-practices-slurm-slurm-develop-lifecycle-scripts.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

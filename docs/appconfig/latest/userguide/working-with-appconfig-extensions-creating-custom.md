@@ -38,3 +38,7 @@ The topics in this section describe each task involved in creating a custom AWS 
 + [Step 2: Configure permissions for a custom AWS AppConfig extension](working-with-appconfig-extensions-creating-custom-permissions.md)
 + [Step 3: Create a custom AWS AppConfig extension](working-with-appconfig-extensions-creating-custom-extensions.md)
 + [Step 4: Create an extension association for a custom AWS AppConfig extension](working-with-appconfig-extensions-creating-custom-association.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

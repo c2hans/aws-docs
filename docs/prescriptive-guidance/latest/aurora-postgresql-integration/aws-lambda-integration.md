@@ -18,3 +18,7 @@ Common use cases for integrating Aurora PostgreSQL-Compatible with Lambda includ
 + **Asynchronous processing** ‒ Offload long-running or asynchronous tasks from Aurora PostgreSQL-Compatible to Lambda functions. Scenarios include sending email messages, generating reports, or processing large datasets without blocking the main application or database. Long-running tasks must be within the Lambda 15-minute time limit.
 
 To set up integration between Aurora PostgreSQL-Compatible and Lambda, follow the instructions in the [AWS documentation](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/PostgreSQL-Lambda.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

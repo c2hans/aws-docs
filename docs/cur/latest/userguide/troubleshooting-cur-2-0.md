@@ -59,3 +59,7 @@ Yes, you can have up to 10 legacy CUR exports and 5 CUR 2.0 exports at the same 
 <a name="dataexports-pro-forma"></a>
 
 Unlike legacy CUR, CUR 2.0 does not currently support creating an export of CUR 2.0 with pro forma billing data. If you are part of a billing group in AWS Billing Conductor, you are only allowed to receive pro forma billing data. As a result, you receive this error message when trying to create an export of CUR 2.0. You can still create a legacy CUR export.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,3 +25,7 @@ To quickly see if your workload qualifies as a migration candidate, please use t
 | Does the database use Oracle Locator? | Depending on feature use, such a solution may be refactored to work with PostGIS 3.1. |
 | Does the database use Oracle Java Virtual Machine (JVM)? | Detaching a Java application from Oracle JVM can be involved development work. |
 | Does the database use Oracle Machine Learning or formerly Advanced Analytics? | The solution will have to be refactored to use similar functionality on AWS. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

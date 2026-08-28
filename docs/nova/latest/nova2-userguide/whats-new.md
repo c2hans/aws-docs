@@ -71,3 +71,7 @@ Amazon Nova Forge is a first-of-its-kind service that offers organizations the e
 + To learn about Amazon Nova models and capabilities, see [What is Amazon Nova 2?](what-is-nova-2.md).
 + To start using Amazon Nova 2.0, see [Getting started with Amazon Nova 2](getting-started-nova-2.md).
 + To explore core inference features, see [Core inference](core-inference.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,3 +31,7 @@ After creating your blueprint fields, follow these steps:
 After you create the blueprint, you can use it to classify documents during inference by providing one or more blueprint IDs in the InvokeDataAutomationAsync API request.
 
 BDA uses the document class and description provided in each of the blueprints to accurately categorize and process the documents. When you submit a document for processing, BDA analyzes its content and matches it against the list of blueprints provided. The document is then classified and processed based on the blueprint field instructions to produce the output in the desired structure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

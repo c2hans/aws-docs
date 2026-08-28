@@ -140,3 +140,7 @@ For voice artifacts (analysis files and redacted audio), conversational analytic
 <a name="get-started-next-steps"></a>
 
 After you create an instance, you can assign your contact center a phone number or import your own phone number. For more information, see [Set up contact center phone numbers for your Connect Customer instance](ag-overview-numbers.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

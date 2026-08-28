@@ -34,3 +34,7 @@ To quickly and easily create records for complex routing configurations and asso
 1. Starting at the bottom of the tree diagram that you created in step 1, create the alias records that route traffic to the records that you created in steps 4 and 5. If you want Route 53 to try another branch of the tree when all the non-alias records are unhealthy in a branch of your tree, set the value of **Evaluate Target Health** to **Yes** for each of your alias records.
 
    Remember that you can't create an alias record that routes traffic to another record until you have created the other record.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

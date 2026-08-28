@@ -117,3 +117,7 @@ The following is an example API call to change the replica mode from standby to 
 ```
 
 For information about the differences between replica modes, see [Working with replicas for Amazon RDS for Db2](db2-replication.md). For troubleshooting replica issues, see [Troubleshooting RDS for Db2 replication issues](db2-troubleshooting-replicas.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,3 +40,7 @@ We provide guidance in [For AWS Organizations based installation (without AWS Co
 
 **Note**
 Initial deployment includes, at a minimum, account creation, drift detection, key management, and centralized logging infrastructure. These mandatory components are part of the core feature set of the solution and are described further in [Architecture details](architecture-details.md). Remaining infrastructure that the solution deploys depends on the content of the user-defined configuration files.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,12 +26,14 @@ References:
 The following table maps API operations to the IAM actions they authorize. Only condition keys that have static values for the given API and action are listed; for the full set of condition keys supported by each action, see the [Actions table](#list_iam-actions-as-permissions).
 
 - **   AcceptDelegationRequest  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:AcceptDelegationRequest](#list_iam-action-AcceptDelegationRequest)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   AcquireRole  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:AttachRolePolicy](#list_iam-action-AttachRolePolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
   - **IAM action:**  [iam:CreateRole](#list_iam-action-CreateRole)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:GetRole](#list_iam-action-GetRole)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
@@ -41,1010 +43,1182 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [iam:TagRole](#list_iam-action-TagRole)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   AddClientIDToOpenIDConnectProvider  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:AddClientIDToOpenIDConnectProvider](#list_iam-action-AddClientIDToOpenIDConnectProvider)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   AddRoleToInstanceProfile  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:AddRoleToInstanceProfile](#list_iam-action-AddRoleToInstanceProfile)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](#list_iam-action-PassRole)  / **Condition key:** [iam:PassedToService](#list_iam-iam_PassedToService) / **Possible value(s):** ec2.amazonaws.com / **Access level:** Write
 
 - **   AddUserToGroup  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:AddUserToGroup](#list_iam-action-AddUserToGroup)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   AssociateDelegationRequest  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:AssociateDelegationRequest](#list_iam-action-AssociateDelegationRequest)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   AttachGroupPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:AttachGroupPolicy](#list_iam-action-AttachGroupPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   AttachRolePolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:AttachRolePolicy](#list_iam-action-AttachRolePolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   AttachUserPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:AttachUserPolicy](#list_iam-action-AttachUserPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   ChangePassword  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ChangePassword](#list_iam-action-ChangePassword)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   CreateAccessKey  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreateAccessKey](#list_iam-action-CreateAccessKey)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   CreateAccountAlias  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreateAccountAlias](#list_iam-action-CreateAccountAlias)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   CreateDelegationRequest  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreateDelegationRequest](#list_iam-action-CreateDelegationRequest)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   CreateGroup  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreateGroup](#list_iam-action-CreateGroup)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   CreateInstanceProfile  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreateInstanceProfile](#list_iam-action-CreateInstanceProfile)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:TagInstanceProfile](#list_iam-action-TagInstanceProfile)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateLoginProfile  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreateLoginProfile](#list_iam-action-CreateLoginProfile)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   CreateOpenIDConnectProvider  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreateOpenIDConnectProvider](#list_iam-action-CreateOpenIDConnectProvider)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:TagOpenIDConnectProvider](#list_iam-action-TagOpenIDConnectProvider)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreatePolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreatePolicy](#list_iam-action-CreatePolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
   - **IAM action:**  [iam:TagPolicy](#list_iam-action-TagPolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreatePolicyVersion  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreatePolicyVersion](#list_iam-action-CreatePolicyVersion)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   CreateRole  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreateRole](#list_iam-action-CreateRole)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:TagRole](#list_iam-action-TagRole)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateSAMLProvider  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreateSAMLProvider](#list_iam-action-CreateSAMLProvider)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:TagSAMLProvider](#list_iam-action-TagSAMLProvider)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateServiceLinkedRole  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreateServiceLinkedRole](#list_iam-action-CreateServiceLinkedRole)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PutRolePolicy](#list_iam-action-PutRolePolicy)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Permissions management, Write
 
 - **   CreateServiceSpecificCredential  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreateServiceSpecificCredential](#list_iam-action-CreateServiceSpecificCredential)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   CreateUser  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreateUser](#list_iam-action-CreateUser)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:TagUser](#list_iam-action-TagUser)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateVirtualMFADevice  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreateVirtualMFADevice](#list_iam-action-CreateVirtualMFADevice)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:TagMFADevice](#list_iam-action-TagMFADevice)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   DeactivateMFADevice  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeactivateMFADevice](#list_iam-action-DeactivateMFADevice)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteAccessKey  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteAccessKey](#list_iam-action-DeleteAccessKey)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteAccountAlias  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteAccountAlias](#list_iam-action-DeleteAccountAlias)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteAccountPasswordPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteAccountPasswordPolicy](#list_iam-action-DeleteAccountPasswordPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   DeleteGroup  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteGroup](#list_iam-action-DeleteGroup)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteGroupPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteGroupPolicy](#list_iam-action-DeleteGroupPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   DeleteInstanceProfile  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteInstanceProfile](#list_iam-action-DeleteInstanceProfile)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteLoginProfile  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteLoginProfile](#list_iam-action-DeleteLoginProfile)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteOpenIDConnectProvider  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteOpenIDConnectProvider](#list_iam-action-DeleteOpenIDConnectProvider)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeletePolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeletePolicy](#list_iam-action-DeletePolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   DeletePolicyVersion  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeletePolicyVersion](#list_iam-action-DeletePolicyVersion)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   DeleteRole  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteRole](#list_iam-action-DeleteRole)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteRolePermissionsBoundary  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteRolePermissionsBoundary](#list_iam-action-DeleteRolePermissionsBoundary)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   DeleteRolePolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteRolePolicy](#list_iam-action-DeleteRolePolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   DeleteSAMLProvider  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteSAMLProvider](#list_iam-action-DeleteSAMLProvider)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteSSHPublicKey  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteSSHPublicKey](#list_iam-action-DeleteSSHPublicKey)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteServerCertificate  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteServerCertificate](#list_iam-action-DeleteServerCertificate)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteServiceLinkedRole  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteServiceLinkedRole](#list_iam-action-DeleteServiceLinkedRole)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteServiceSpecificCredential  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteServiceSpecificCredential](#list_iam-action-DeleteServiceSpecificCredential)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteSigningCertificate  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteSigningCertificate](#list_iam-action-DeleteSigningCertificate)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteUser  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteUser](#list_iam-action-DeleteUser)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DeleteUserPermissionsBoundary  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteUserPermissionsBoundary](#list_iam-action-DeleteUserPermissionsBoundary)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   DeleteUserPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteUserPolicy](#list_iam-action-DeleteUserPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   DeleteVirtualMFADevice  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DeleteVirtualMFADevice](#list_iam-action-DeleteVirtualMFADevice)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   DetachGroupPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DetachGroupPolicy](#list_iam-action-DetachGroupPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   DetachRolePolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DetachRolePolicy](#list_iam-action-DetachRolePolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   DetachUserPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DetachUserPolicy](#list_iam-action-DetachUserPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   DisableOutboundWebIdentityFederation  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:DisableOutboundWebIdentityFederation](#list_iam-action-DisableOutboundWebIdentityFederation)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   EnableMFADevice  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:EnableMFADevice](#list_iam-action-EnableMFADevice)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   EnableOutboundWebIdentityFederation  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:EnableOutboundWebIdentityFederation](#list_iam-action-EnableOutboundWebIdentityFederation)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   GenerateCredentialReport  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GenerateCredentialReport](#list_iam-action-GenerateCredentialReport)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GenerateOrganizationsAccessReport  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GenerateOrganizationsAccessReport](#list_iam-action-GenerateOrganizationsAccessReport)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GenerateServiceLastAccessedDetails  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GenerateServiceLastAccessedDetails](#list_iam-action-GenerateServiceLastAccessedDetails)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetAccessKeyLastUsed  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetAccessKeyLastUsed](#list_iam-action-GetAccessKeyLastUsed)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetAccountAuthorizationDetails  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetAccountAuthorizationDetails](#list_iam-action-GetAccountAuthorizationDetails)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetAccountPasswordPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetAccountPasswordPolicy](#list_iam-action-GetAccountPasswordPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetAccountProperties  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetAccountProperties](#list_iam-action-GetAccountProperties)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetAccountSummary  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetAccountSummary](#list_iam-action-GetAccountSummary)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   GetContextKeysForCustomPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetContextKeysForCustomPolicy](#list_iam-action-GetContextKeysForCustomPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetContextKeysForPrincipalPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetContextKeysForPrincipalPolicy](#list_iam-action-GetContextKeysForPrincipalPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetCredentialReport  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetCredentialReport](#list_iam-action-GetCredentialReport)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetDelegationRequest  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetDelegationRequest](#list_iam-action-GetDelegationRequest)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetGroup  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetGroup](#list_iam-action-GetGroup)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetGroupPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetGroupPolicy](#list_iam-action-GetGroupPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetHumanReadableSummary  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetHumanReadableSummary](#list_iam-action-GetHumanReadableSummary)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetInstanceProfile  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetInstanceProfile](#list_iam-action-GetInstanceProfile)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetLoginProfile  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetLoginProfile](#list_iam-action-GetLoginProfile)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   GetMFADevice  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetMFADevice](#list_iam-action-GetMFADevice)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetOpenIDConnectProvider  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetOpenIDConnectProvider](#list_iam-action-GetOpenIDConnectProvider)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetOrganizationsAccessReport  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetOrganizationsAccessReport](#list_iam-action-GetOrganizationsAccessReport)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetOutboundWebIdentityFederationInfo  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetOutboundWebIdentityFederationInfo](#list_iam-action-GetOutboundWebIdentityFederationInfo)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetPolicy](#list_iam-action-GetPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetPolicyVersion  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetPolicyVersion](#list_iam-action-GetPolicyVersion)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetRole  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetRole](#list_iam-action-GetRole)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetRolePolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetRolePolicy](#list_iam-action-GetRolePolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetRoleTemplateVersion  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetRoleTemplateVersion](#list_iam-action-GetRoleTemplateVersion)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetSAMLProvider  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetSAMLProvider](#list_iam-action-GetSAMLProvider)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetSSHPublicKey  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetSSHPublicKey](#list_iam-action-GetSSHPublicKey)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetServerCertificate  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetServerCertificate](#list_iam-action-GetServerCertificate)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetServiceLastAccessedDetails  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetServiceLastAccessedDetails](#list_iam-action-GetServiceLastAccessedDetails)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetServiceLastAccessedDetailsWithEntities  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetServiceLastAccessedDetailsWithEntities](#list_iam-action-GetServiceLastAccessedDetailsWithEntities)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetServiceLinkedRoleDeletionStatus  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetServiceLinkedRoleDeletionStatus](#list_iam-action-GetServiceLinkedRoleDeletionStatus)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetUser  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetUser](#list_iam-action-GetUser)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   GetUserPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:GetUserPolicy](#list_iam-action-GetUserPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   ListAccessKeys  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListAccessKeys](#list_iam-action-ListAccessKeys)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListAccountAliases  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListAccountAliases](#list_iam-action-ListAccountAliases)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListAttachedGroupPolicies  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListAttachedGroupPolicies](#list_iam-action-ListAttachedGroupPolicies)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListAttachedRolePolicies  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListAttachedRolePolicies](#list_iam-action-ListAttachedRolePolicies)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListAttachedUserPolicies  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListAttachedUserPolicies](#list_iam-action-ListAttachedUserPolicies)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListDelegationRequests  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListDelegationRequests](#list_iam-action-ListDelegationRequests)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListEntitiesForPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListEntitiesForPolicy](#list_iam-action-ListEntitiesForPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListGroupPolicies  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListGroupPolicies](#list_iam-action-ListGroupPolicies)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListGroups  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListGroups](#list_iam-action-ListGroups)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListGroupsForUser  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListGroupsForUser](#list_iam-action-ListGroupsForUser)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListInstanceProfileTags  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListInstanceProfileTags](#list_iam-action-ListInstanceProfileTags)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListInstanceProfiles  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListInstanceProfiles](#list_iam-action-ListInstanceProfiles)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListInstanceProfilesForRole  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListInstanceProfilesForRole](#list_iam-action-ListInstanceProfilesForRole)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListMFADeviceTags  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListMFADeviceTags](#list_iam-action-ListMFADeviceTags)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListMFADevices  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListMFADevices](#list_iam-action-ListMFADevices)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListOpenIDConnectProviderTags  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListOpenIDConnectProviderTags](#list_iam-action-ListOpenIDConnectProviderTags)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListOpenIDConnectProviders  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListOpenIDConnectProviders](#list_iam-action-ListOpenIDConnectProviders)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListPolicies  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListPolicies](#list_iam-action-ListPolicies)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListPoliciesGrantingServiceAccess  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListPoliciesGrantingServiceAccess](#list_iam-action-ListPoliciesGrantingServiceAccess)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListPolicyTags  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListPolicyTags](#list_iam-action-ListPolicyTags)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListPolicyVersions  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListPolicyVersions](#list_iam-action-ListPolicyVersions)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListRolePolicies  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListRolePolicies](#list_iam-action-ListRolePolicies)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListRoleTags  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListRoleTags](#list_iam-action-ListRoleTags)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListRoles  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListRoles](#list_iam-action-ListRoles)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListSAMLProviderTags  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListSAMLProviderTags](#list_iam-action-ListSAMLProviderTags)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListSAMLProviders  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListSAMLProviders](#list_iam-action-ListSAMLProviders)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListSSHPublicKeys  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListSSHPublicKeys](#list_iam-action-ListSSHPublicKeys)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListServerCertificateTags  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListServerCertificateTags](#list_iam-action-ListServerCertificateTags)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListServerCertificates  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListServerCertificates](#list_iam-action-ListServerCertificates)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListServiceSpecificCredentials  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListServiceSpecificCredentials](#list_iam-action-ListServiceSpecificCredentials)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListSigningCertificates  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListSigningCertificates](#list_iam-action-ListSigningCertificates)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListUserPolicies  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListUserPolicies](#list_iam-action-ListUserPolicies)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListUserTags  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListUserTags](#list_iam-action-ListUserTags)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListUsers  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListUsers](#list_iam-action-ListUsers)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   ListVirtualMFADevices  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ListVirtualMFADevices](#list_iam-action-ListVirtualMFADevices)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** List
 
 - **   PutAccountProperties  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:CreateServiceLinkedRole](#list_iam-action-CreateServiceLinkedRole)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PutAccountProperties](#list_iam-action-PutAccountProperties)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   PutGroupPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:PutGroupPolicy](#list_iam-action-PutGroupPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   PutRolePermissionsBoundary  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:PutRolePermissionsBoundary](#list_iam-action-PutRolePermissionsBoundary)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   PutRolePolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:PutRolePolicy](#list_iam-action-PutRolePolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   PutUserPermissionsBoundary  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:PutUserPermissionsBoundary](#list_iam-action-PutUserPermissionsBoundary)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   PutUserPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:PutUserPolicy](#list_iam-action-PutUserPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   RejectDelegationRequest  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:RejectDelegationRequest](#list_iam-action-RejectDelegationRequest)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   RemoveClientIDFromOpenIDConnectProvider  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:RemoveClientIDFromOpenIDConnectProvider](#list_iam-action-RemoveClientIDFromOpenIDConnectProvider)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   RemoveRoleFromInstanceProfile  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:RemoveRoleFromInstanceProfile](#list_iam-action-RemoveRoleFromInstanceProfile)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   RemoveUserFromGroup  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:RemoveUserFromGroup](#list_iam-action-RemoveUserFromGroup)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   ResetServiceSpecificCredential  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ResetServiceSpecificCredential](#list_iam-action-ResetServiceSpecificCredential)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   ResyncMFADevice  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:ResyncMFADevice](#list_iam-action-ResyncMFADevice)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   SendDelegationToken  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:SendDelegationToken](#list_iam-action-SendDelegationToken)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   SetDefaultPolicyVersion  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:SetDefaultPolicyVersion](#list_iam-action-SetDefaultPolicyVersion)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   SetSecurityTokenServicePreferences  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:SetSecurityTokenServicePreferences](#list_iam-action-SetSecurityTokenServicePreferences)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   SimulateCustomPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:SimulateCustomPolicy](#list_iam-action-SimulateCustomPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   SimulatePrincipalPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:SimulatePrincipalPolicy](#list_iam-action-SimulatePrincipalPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Read
 
 - **   TagInstanceProfile  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:TagInstanceProfile](#list_iam-action-TagInstanceProfile)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   TagMFADevice  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:TagMFADevice](#list_iam-action-TagMFADevice)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   TagOpenIDConnectProvider  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:TagOpenIDConnectProvider](#list_iam-action-TagOpenIDConnectProvider)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   TagPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:TagPolicy](#list_iam-action-TagPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   TagRole  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:TagRole](#list_iam-action-TagRole)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   TagSAMLProvider  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:TagSAMLProvider](#list_iam-action-TagSAMLProvider)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   TagServerCertificate  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:TagServerCertificate](#list_iam-action-TagServerCertificate)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   TagUser  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:TagUser](#list_iam-action-TagUser)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   UntagInstanceProfile  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UntagInstanceProfile](#list_iam-action-UntagInstanceProfile)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   UntagMFADevice  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UntagMFADevice](#list_iam-action-UntagMFADevice)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   UntagOpenIDConnectProvider  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UntagOpenIDConnectProvider](#list_iam-action-UntagOpenIDConnectProvider)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   UntagPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UntagPolicy](#list_iam-action-UntagPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   UntagRole  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UntagRole](#list_iam-action-UntagRole)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   UntagSAMLProvider  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UntagSAMLProvider](#list_iam-action-UntagSAMLProvider)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   UntagServerCertificate  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UntagServerCertificate](#list_iam-action-UntagServerCertificate)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   UntagUser  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UntagUser](#list_iam-action-UntagUser)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Tagging, Write
 
 - **   UpdateAccessKey  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UpdateAccessKey](#list_iam-action-UpdateAccessKey)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   UpdateAccountPasswordPolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UpdateAccountPasswordPolicy](#list_iam-action-UpdateAccountPasswordPolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   UpdateAssumeRolePolicy  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UpdateAssumeRolePolicy](#list_iam-action-UpdateAssumeRolePolicy)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Permissions management, Write
 
 - **   UpdateGroup  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UpdateGroup](#list_iam-action-UpdateGroup)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   UpdateLoginProfile  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UpdateLoginProfile](#list_iam-action-UpdateLoginProfile)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   UpdateOpenIDConnectProviderThumbprint  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UpdateOpenIDConnectProviderThumbprint](#list_iam-action-UpdateOpenIDConnectProviderThumbprint)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   UpdateRole  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UpdateRole](#list_iam-action-UpdateRole)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   UpdateRoleDescription  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UpdateRoleDescription](#list_iam-action-UpdateRoleDescription)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   UpdateSAMLProvider  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UpdateSAMLProvider](#list_iam-action-UpdateSAMLProvider)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   UpdateSSHPublicKey  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UpdateSSHPublicKey](#list_iam-action-UpdateSSHPublicKey)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   UpdateServerCertificate  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UpdateServerCertificate](#list_iam-action-UpdateServerCertificate)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   UpdateServiceSpecificCredential  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UpdateServiceSpecificCredential](#list_iam-action-UpdateServiceSpecificCredential)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   UpdateSigningCertificate  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UpdateSigningCertificate](#list_iam-action-UpdateSigningCertificate)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   UpdateUser  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UpdateUser](#list_iam-action-UpdateUser)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   UploadSSHPublicKey  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UploadSSHPublicKey](#list_iam-action-UploadSSHPublicKey)
   - **Condition key:**
   - **Possible value(s):**
   - **Access level:** Write
 
 - **   UploadServerCertificate  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:TagServerCertificate](#list_iam-action-TagServerCertificate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
   - **IAM action:**  [iam:UploadServerCertificate](#list_iam-action-UploadServerCertificate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   UploadSigningCertificate  **
+  - **SDK client:** iam
   - **IAM action:**  [iam:UploadSigningCertificate](#list_iam-action-UploadSigningCertificate)
   - **Condition key:**
   - **Possible value(s):**
@@ -2257,3 +2431,7 @@ AWS Identity and Access Management (IAM) defines the following condition keys th
 |   [iam:ServiceSpecificCredentialAgeDays](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ServiceSpecificCredentialAgeDays)  | Filters access by the duration until the credential's expiration | Numeric |
 |   [iam:ServiceSpecificCredentialServiceName](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_ServiceSpecificCredentialServiceName)  | Filters access by the service associated with the credential | String |
 |   [iam:TemplateArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_iam-condition-keys.html#ck_TemplateArn)  | Filters access based on the requested template ARN | ARN |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

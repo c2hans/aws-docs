@@ -115,3 +115,7 @@ Apply these trust policies to Lambda execution roles that need to invoke Bedrock
 **Policy explanation:**
 + **LambdaBedrockAccess** – Grants Lambda functions permission to invoke only the Titan Text Express model, implementing least privilege by restricting access to a single, cost-effective model for Lambda integrations
 + **Confused deputy protection **– The `aws:SourceAccount` and `aws:SourceArn` conditions in the trust policy prevent confused deputy attacks where a malicious actor tricks the service into assuming your role. Always include both conditions when creating service roles.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

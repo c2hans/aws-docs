@@ -30,3 +30,7 @@ Publication date: **March 30, 2023** ([Document revisions](document-revisions.md
  For example, EC2 instances have a predefined tag called Name that provides similar functionality and allows you to name workloads as they are moved to AWS.
 
  In 2010, AWS launched [*resource tags*](https://aws.amazon.com/blogs/aws/new-amazon-ec2-feature-resource-tagging/) to provide a ﬂexible and scalable mechanism for attaching metadata to your resources. This whitepaper guides you through the process of developing and implementing a robust tagging strategy across your AWS environment. This guidance will help you ensure tagging consistency and coverage that supports your decision-making and operational activities
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

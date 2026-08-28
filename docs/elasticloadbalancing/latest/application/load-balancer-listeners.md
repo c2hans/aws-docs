@@ -111,3 +111,7 @@ Indicates whether the browser is allowed to render a page in a **frame**, **ifra
 <a name="default-action"></a>
 
 Every listener has a default action, also known as the default rule. The default rule can't be deleted and is always performed last. You can create additional rules. These rules consist of a priority, one or more actions, and one or more conditions. You can add or edit rules at any time. For more information, see [Listener rules](listener-rules.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

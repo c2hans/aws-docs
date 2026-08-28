@@ -61,3 +61,7 @@ To take a manual snapshot, select the DB instance that you want to back up and c
 Restoring from a manual snapshot involves creating a new DB instance from the stored backup. Choose **Snapshots** within the Amazon RDS console and select the snapshot that you want to restore. Choose **Actions**, **Restore snapshot**. Specify the instance details for the new database.
 
 For more information, see [Creating a DB snapshot for a Single-AZ DB instance for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_CreateSnapshot.html) in the *Amazon RDS User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

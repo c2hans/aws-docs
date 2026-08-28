@@ -33,3 +33,7 @@ The following image shows successful CDN authorization using Amazon CloudFront.
 ![The image shows a successful CDN authentication flow. The bottom left shows a playback device requesting content from Amazon CloudFront indicated by an arrow. CloudFront includes the custom HTTP header and value in it's request to MediaPackage, indicated by an arrow. MediaPackage requests the secret info from AWS Secrets Manager, indicated by an arrow, which is dependent on permission from IAM. AWS Secrets Manager responds with the secret value to MediaPackage. MediaPackage verifies that the secret matches the header value, which is indicated by a green checkbox. MediaPackage sends an HTTP 200 OK status code along with video content to CloudFront. CloudFront serves the video content to the playback device.](http://docs.aws.amazon.com/mediapackage/latest/ug/images/cdn_auth.png)
 
 For step-by-step instructions on how to set up CDN authorization, see [Setting up CDN authorization](cdn-auth-setup.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

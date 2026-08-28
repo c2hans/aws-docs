@@ -47,3 +47,7 @@ Example use cases include:
 By embedding trust mechanisms into the agent lifecycle, organizations can permit their systems to operate autonomously with accountability. This foundation reduces risk and empowers agents to act on behalf of the business with transparency and integrity.
 
 Ultimately, trusted autonomy accelerates adoption by giving both users and leadership the confidence to scale intelligent agents across core operations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

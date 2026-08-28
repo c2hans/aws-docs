@@ -46,3 +46,7 @@ Make sure that you meet the following requirements:
 + Your VPC must have both **DNS Resolution** and **DNS Hostnames** enabled. For more information, see [DNS attributes in your VPC](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#vpc-dns-support) in the *Amazon Virtual Private Cloud User Guide*.
 + If you use a DNS name in the `mount` command, make sure your VPC configured to use the DNS server provided by Amazon. Custom DNS servers aren't supported.
 + You must use non-RDS solutions to back up your EFS file system. RDS for Oracle doesn't support automated backups or manual DB snapshots of an EFS file system. For more information, see [Backing up your Amazon EFS file systems](https://docs.aws.amazon.com/efs/latest/ug/efs-backup-solutions.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ For more information, see [How custom routing accelerators work in Global Accele
 + [Add listener](about-custom-routing-listeners.creating-custom-routing-listeners.md)
 + [Edit listener](about-custom-routing-listeners.editing-custom-routing-listeners.md)
 + [Remove listener](about-custom-routing-listeners.removing-custom-routing-listeners.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -140,3 +140,7 @@ If deploying in a private subnet configuration (no internet egress), ensure VPC 
 [Ensure Optimal Application Performance with DLT](https://aws.amazon.com/blogs/architecture/ensure-optimal-application-performance-with-distributed-load-testing-on-aws/) (Architecture Blog)
 [DLT Features: Test Framework Support](https://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/features.html) (DLT Documentation)
 [Performance Testing on AWS (re:Invent 2025, CMP351)](https://www.youtube.com/watch?v=tyjc6Mknacc) (Video, 20 min)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Performance Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

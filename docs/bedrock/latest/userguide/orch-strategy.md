@@ -10,3 +10,7 @@ An orchestration strategy defines how an agent accomplishes a task. When an agen
 Choose the orchestration strategy for your agent:
 + **Use advanced prompts** — Modify the base prompt templates to customize your agent's behavior by overriding the logic with your own configurations using advanced prompts templates. To use advanced prompts, see [Enhance agent's accuracy using advanced prompt templates in Amazon Bedrock](advanced-prompts.md).
 + **Use custom orchestration** — Build Amazon Bedrock Agents that can implement complex orchestration workflows, verification steps, or multi-step processes that is specific to your use case. To use custom orchestration, see [Customize your Amazon Bedrock Agent's behavior with custom orchestration](agents-custom-orchestration.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

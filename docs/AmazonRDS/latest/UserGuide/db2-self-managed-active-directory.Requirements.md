@@ -49,3 +49,7 @@ Make sure that you meet the following requirements for an AD domain service acco
 
 **Important**
 Do not move the user objects that RDS for Db2 creates in the Organizational Unit after your DB instance is created. If you move the associated objects, your RDS for Db2 DB instance becomes misconfigured. If you need to move the user objects created by Amazon RDS, use the [ModifyDBInstance](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_ModifyDBInstance.html) API operation to modify the domain parameters with the desired location of the user objects.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

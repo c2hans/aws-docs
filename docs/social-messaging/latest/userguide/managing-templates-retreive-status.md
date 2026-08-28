@@ -14,3 +14,7 @@ Meta provides information on the reason a template's status was lowered. Use the
 1. On the **Message templates** tab, select the template with lowered status.
 
 1. View the template details to see feedback on why the rating was lowered. You can also hover over the status indicator for additional information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

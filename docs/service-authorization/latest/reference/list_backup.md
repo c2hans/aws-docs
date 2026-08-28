@@ -1476,3 +1476,7 @@ AWS Backup defines the following condition keys that can be used in the `Conditi
 |   [backup:MaxRetentionDays](https://docs.aws.amazon.com/aws-backup/latest/devguide/access-control.html#amazon-backup-keys)  | Filters access by the value of the MaxRetentionDays parameter | Numeric |
 |   [backup:MinRetentionDays](https://docs.aws.amazon.com/aws-backup/latest/devguide/access-control.html#amazon-backup-keys)  | Filters access by the value of the MinRetentionDays parameter | Numeric |
 |   [backup:MpaApprovalTeamArn](https://docs.aws.amazon.com/aws-backup/latest/devguide/access-control.html#amazon-backup-keys)  | Filters access by the MPA Approval Team ARN of a backup vault | ARN |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

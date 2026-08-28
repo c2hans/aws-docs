@@ -27,3 +27,7 @@ If you need to delete an AWS Mainframe Modernization runtime environment, make s
 1. On the **Environments** page, choose the environment that you want to delete, and then choose **Actions** and **Delete environment**.
 
 1. In the **Delete environment** window, enter `delete` to confirm that you want to delete the runtime environment, and then choose **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

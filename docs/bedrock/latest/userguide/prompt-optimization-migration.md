@@ -25,3 +25,7 @@ Amazon Bedrock offers prompt optimization, a model migration and optimization to
 | Execution | Synchronous (seconds) | Asynchronous job (15 min to hours, depending on number of prompt templates and evaluation samples) |
 | Multimodal | No | Yes (images, PDFs) |
 | Model migration | Partial: can rewrite prompts, but no side by side comparison | Yes, compare current model against candidates side by side |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

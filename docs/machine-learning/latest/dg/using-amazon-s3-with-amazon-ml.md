@@ -51,3 +51,7 @@ For information about granting Amazon ML permission to read data from your bucke
 For information about granting Amazon ML permission to output the batch prediction results to your bucket in Amazon S3, see [Granting Amazon ML Permissions to Output Predictions to Amazon S3](http://docs.aws.amazon.com/machine-learning/latest/dg/granting-amazon-ml-permissions-to-output-predictions-to-amazon-s3.html) .
 
 For information about managing access permissions to Amazon S3 resources, see the [Amazon S3 Developer Guide](http://docs.aws.amazon.com/AmazonS3/latest/dev/s3-access-control.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

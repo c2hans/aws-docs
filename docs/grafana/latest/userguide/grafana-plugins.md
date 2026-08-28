@@ -103,3 +103,7 @@ You can have 50 plugins installed in a workspace (beyond the default Core plugin
 1. On the plugin details page, check to see if there is an update available. If so, choose the option to update the plugin and choose the version to update to.
 **Note**
 If you see a note that you do not have permission to modify the plugin, confirm that [plugin management is enabled](AMG-configure-workspace.md) for your workspace. You must also be an [admin](Grafana-user-roles.md) for the Amazon Managed Grafana workspace.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

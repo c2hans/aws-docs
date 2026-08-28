@@ -117,3 +117,7 @@ See also [support restrictions for Systems Manager for SAP](https://docs.aws.ama
 1. Choose **Create schedule** to finish creating your new schedule. You can view a list of your new and existing schedules on the **Schedules** page. Under the **Status** column, verify that your new schedule is **Enabled**.
 
 1. To verify that your schedule invokes the Systems Manager for SAP service’s StartConfigurationChecks target, follow the steps listed at [To view and analyze check results](#view-analyze-check-results).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ssm-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

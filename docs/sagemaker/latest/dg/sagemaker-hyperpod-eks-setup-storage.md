@@ -19,3 +19,7 @@ Cluster admin needs to configure storage for data scientist users to manage inpu
 For a hands-on experience and guidance on how to set up storage for SageMaker HyperPod cluster orchestrated with Amazon EKS, see the following sections in the [Amazon EKS Support in SageMaker HyperPod workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/2433d39e-ccfe-4c00-9d3d-9917b729258e).
 [Set up Amazon FSx for Lustre on SageMaker HyperPod](https://catalog.us-east-1.prod.workshops.aws/workshops/2433d39e-ccfe-4c00-9d3d-9917b729258e/en-US/01-cluster/06-fsx-for-lustre)
 [Set up a mountpoint for Amazon S3](https://catalog.us-east-1.prod.workshops.aws/workshops/2433d39e-ccfe-4c00-9d3d-9917b729258e/en-US/01-cluster/09-s3-mountpoint) using [Mountpoint for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/mountpoint.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

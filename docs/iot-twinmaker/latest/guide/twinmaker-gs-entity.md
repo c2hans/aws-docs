@@ -40,3 +40,7 @@ In this example, we create a simple document component that adds descriptive inf
 1. Choose **Add component**.
 
 You're now ready to create your first scene. For instructions on how to do this, see [Creating and editing AWS IoT TwinMaker scenes](scenes.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

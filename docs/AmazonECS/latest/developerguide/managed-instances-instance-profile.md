@@ -180,3 +180,7 @@ Resources:
 If your tasks fail with a `ResourceInitializationError` that mentions `iam:PassRole`, verify that your instance role name starts with `ecsInstanceRole`. You can check the auto-generated name in the CloudFormation console under your stack's **Resources** tab. If the name does not match, either:
 + Add `RoleName: ecsInstanceRole` to your `AWS::IAM::Role` resource.
 + Add an explicit `iam:PassRole` inline policy to your infrastructure role. For more information, see [Option 2: Use a custom role name](#create-instance-profile-cfn-custom).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

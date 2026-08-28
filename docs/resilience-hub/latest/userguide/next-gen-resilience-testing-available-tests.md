@@ -47,3 +47,7 @@ Provide values for these parameters with the `--parameters` option when you crea
 + [Dependency validation](next-gen-resilience-testing-dependency-validation.md)
 + [Multi-Region: isolation](next-gen-resilience-testing-multi-region-isolation.md)
 + [Multi-Region: recovery](next-gen-resilience-testing-multi-region-recovery.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

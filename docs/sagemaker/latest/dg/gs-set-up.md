@@ -79,3 +79,7 @@ To manage your domain and other AWS services and resources using the AWS CLI, co
 **After you have completed your prerequisites**, continue on to the setup instructions. You can continue on to your setup instructions by choosing one of the following options.
 + **[Use quick setup](onboard-quick-start.md)**: Fastest setup for individual users with default settings.
 + **[Use custom setup](onboard-custom.md)**: Advanced setup for enterprise Machine Learning (ML) administrators. Ideal option for ML administrators setting up SageMaker AI for many users or an organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

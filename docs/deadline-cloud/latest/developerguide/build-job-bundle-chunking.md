@@ -31,3 +31,7 @@ For more information about task chunking, see the following topics:
 + [Add task chunking to a job template](build-job-bundle-chunking-add.md) – Convert an existing job template to use chunking.
 + [CHUNK[INT] task parameter reference](build-job-bundle-chunking-reference.md) – Look up every field of the `CHUNK[INT]` parameter.
 + [Group frames into chunks with task chunking on Deadline Cloud](examples-jb-task-chunking.md) – Run ready-made chunking samples.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

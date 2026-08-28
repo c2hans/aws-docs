@@ -464,3 +464,7 @@ Corresponding UI: Configuration tab/**CodeDeploy deployment group**
 Specify a description of the deployment that this action will create. For more information, see [Working with deployments in CodeDeploy](https://docs.aws.amazon.com/codedeploy/latest/userguide/deployments.html) in the *AWS CodeDeploy User Guide*.
 
 Corresponding UI: Configuration tab/**CodeDeploy deployment description**
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

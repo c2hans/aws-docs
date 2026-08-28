@@ -18,3 +18,7 @@ In the following illustration, the insurance monolith is broken down into multip
 ![Decompose by transactions pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-decomposing-monoliths/images/guide-img/8e9fa68d-7532-4c4b-8c7b-74bc6afdb7b9/images/7d8bfdf6-5aae-4d45-b891-9352d08ee666.png)
 
  In an insurance system, a claim request is typically tagged to a customer after it is submitted. This means that a claims service cannot exist without a *Customers* microservice. *Sales* and *Customers* are packaged together in one microservice package, and a business transaction requires coordination with both.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

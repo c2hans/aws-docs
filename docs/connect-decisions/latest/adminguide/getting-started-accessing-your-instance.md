@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/gett
 1.  Each user that you added receives an email message with a link that goes to Amazon Connect Decisions, or you can choose **Copy link** and send the link to the users.
 
  After successfully logging in, you will land at your personalized Home Page. Refer to Understanding your Homepage in the user guide to understand your home page better.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

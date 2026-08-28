@@ -62,3 +62,7 @@ You can provide media or other data to accompany your app. Additional data must 
 <a name="test-runs-tasks"></a>
 
 For more information, see [Creating a test run in Device Farm](how-to-create-test-run.md) and [Test runs in AWS Device Farm](runs.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

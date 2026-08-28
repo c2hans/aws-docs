@@ -14,3 +14,7 @@ You can also look for answers on [AWS re:Post](https://repost.aws/tags), which d
 To send us feedback, choose **Support**, as shown in the following image, then choose **Feedback**.
 
 ![alt_text](http://docs.aws.amazon.com/mhj/latest/userguide/images/support.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

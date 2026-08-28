@@ -27,3 +27,7 @@ AWS Transform's capabilities for modernizing mainframe applications has multiple
 <a name="qt-webapp-mainframe-console"></a>
 
 In the AWS Transform web experience, you can perform transformation of your mainframe applications from COBOL to Java. To understand how to use this function, follow all steps in the [ Transformation of mainframe applications](https://docs.aws.amazon.com/transform/latest/userguide/transform-app-mainframe-workflow.html) page in the *AWS Transform User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

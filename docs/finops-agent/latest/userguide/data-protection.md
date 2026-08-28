@@ -47,3 +47,7 @@ You control the data AWS FinOps Agent stores on your behalf. The web application
 | The entire agent | From the AWS FinOps Agent console Agents page, select the agent and choose Delete. Deleting an agent removes the web application link and the previous interaction data the agent stored. |
 
 For the AWS Organizations opt-out that prevents your content from being used for service improvement, see [Service improvement](service-improvement.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS FinOps Agent (preview). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finops-agent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

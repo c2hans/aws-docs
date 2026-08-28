@@ -24,3 +24,7 @@ When a subscription to an Amazon Redshift table/view with row and/or column filt
 Amazon DataZone first translates the row and columns filters applied to a subscription in Amazon DataZone to an Amazon Redshift late binding view. If multiple row and columns filters are used, Amazon DataZone unions all the columns and all the row filter conditions from to compute effective permissions at both row and column level. Amazon DataZone then creates the late binding view using effective row and column permissions.
 
 Once the late binding view is created, Amazon DataZone shares this view with the members of subscriber project by creating read-only (SELECT) permissions in Amazon Redshift.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

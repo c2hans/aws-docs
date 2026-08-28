@@ -41,3 +41,7 @@ If you have previously deployed the guidance but do not want to perform in-place
 **Note**
  **For those upgrading to v6.1.X and above**
 You might not see your previous executions on the Import, Export, and Test All pages disappear. To restore them, go to the respective S3 buckets and copy all the folders containing the data or status for each function (Import, Export, Test All) to the `ContentDesignerOutputBucket`. Rename them as `data-{function}` or `status-{function}`. Omitting this step doesn’t effect your QandAs and only impacts these specific pages.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

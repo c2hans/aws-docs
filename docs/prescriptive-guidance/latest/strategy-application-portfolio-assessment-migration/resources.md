@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ap
 + [Discovery, Planning, and Recommendation migration tools](https://aws.amazon.com/prescriptive-guidance/migration-tools/migration-discovery-tools/)
 + [Business Case Analysis migration tools](https://aws.amazon.com/prescriptive-guidance/migration-tools/migration-tools-business-case-analysis/)
 + [AWS Pricing/TCO tools](https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/aws-pricingtco-tools.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

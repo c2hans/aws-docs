@@ -17,3 +17,7 @@ In the following table, replace {{{region}}} with the code of the operating web 
 | WorkSpaces Secure Browser metrics and reporting | \*.execute-api.{{{region}}}.amazonaws.com<br />unagi-na.amazon.com |
 
 Depending on your configured identity provider, you might also need to allow list additional domains. Review your IdP’s documentation to identify which domains you need to allow list in order for WorkSpaces Secure Browser to use that provider. If you are using IAM Identity Center, see [IAM Identity Center prerequisites](https://docs.aws.amazon.com/singlesignon/latest/userguide/prereqs.html) for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

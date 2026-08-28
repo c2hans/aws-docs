@@ -47,3 +47,7 @@ The following figure shows how these access log variables represent different co
 ![Access log variables for response streaming in API Gateway](http://docs.aws.amazon.com/apigateway/latest/developerguide/images/response-streaming-figure.png)
 
 For more information about access logs, see [Set up CloudWatch logging for REST APIs in API Gateway](set-up-logging.md). You can also use X-Ray to monitor your response stream. For more information, see [Trace user requests to REST APIs using X-Ray in API Gateway](apigateway-xray.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

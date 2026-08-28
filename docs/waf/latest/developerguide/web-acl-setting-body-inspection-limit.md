@@ -45,3 +45,7 @@ Choose this option for bidirectional streaming applications where clients expect
 **Inspect after sufficient data**
 AWS WAF inspection begins only after receiving sufficient HTTP/2 data frames from the client, ensuring complete request inspection for enhanced security.
 Choose this option for standard request-response applications where clients send all request data before expecting a server response. This is the recommended setting for most use cases.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

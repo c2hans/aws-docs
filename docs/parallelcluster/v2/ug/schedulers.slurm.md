@@ -21,3 +21,7 @@ AWS ParallelCluster is tested with Slurm configuration parameters, which are pro
 | 2.5.0, 2.5.1 | 19.05.3-2 |
 | 2.3.1 to 2.4.1 | 18.08.6-2 |
 | prior to 2.3.1 | 16.05.3-1 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

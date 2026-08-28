@@ -18,3 +18,7 @@ As you define your recovery approach, consider which shared services are either 
  **Suggestion 12.3.3 – Create runbooks to be followed in a disaster**
 
 A predefined runbook ensures that a proven set of steps is followed in the event of a disaster, reducing the risk or critical activities being missed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

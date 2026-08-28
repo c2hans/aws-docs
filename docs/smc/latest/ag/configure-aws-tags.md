@@ -60,3 +60,7 @@ Generic tags (from administrators) and ServiceNow Request Item tags are not view
    Select the AWS Service Catalog portfolio, enter the Key and Value entries, and choose **Submit**.
 
    The ServiceNow table and field value appear on the AWS Product (ServiceNow catalog item). It is a required value prior to ordering. After product provisioning, you can see in the AWS console that these tags associate with the resource.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

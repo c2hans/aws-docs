@@ -23,8 +23,8 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::EC2::EIP](aws-resource-ec2-eip.md)
 + [AWS::EC2::EIPAssociation](aws-resource-ec2-eipassociation.md)
 + [AWS::EC2::EnclaveCertificateIamRoleAssociation](aws-resource-ec2-enclavecertificateiamroleassociation.md)
-+ [AWS::EC2::ExportInstanceTask](aws-resource-ec2-exportinstancetask.md)
 + [AWS::EC2::FlowLog](aws-resource-ec2-flowlog.md)
++ [AWS::EC2::FpgaImage](aws-resource-ec2-fpgaimage.md)
 + [AWS::EC2::GatewayRouteTableAssociation](aws-resource-ec2-gatewayroutetableassociation.md)
 + [AWS::EC2::Host](aws-resource-ec2-host.md)
 + [AWS::EC2::Instance](aws-resource-ec2-instance.md)
@@ -32,6 +32,7 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::EC2::InternetGateway](aws-resource-ec2-internetgateway.md)
 + [AWS::EC2::IPAM](aws-resource-ec2-ipam.md)
 + [AWS::EC2::IPAMAllocation](aws-resource-ec2-ipamallocation.md)
++ [AWS::EC2::IpamExternalResourceVerificationToken](aws-resource-ec2-ipamexternalresourceverificationtoken.md)
 + [AWS::EC2::IPAMPool](aws-resource-ec2-ipampool.md)
 + [AWS::EC2::IPAMPoolCidr](aws-resource-ec2-ipampoolcidr.md)
 + [AWS::EC2::IPAMPrefixListResolver](aws-resource-ec2-ipamprefixlistresolver.md)
@@ -61,7 +62,6 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::EC2::NetworkPerformanceMetricSubscription](aws-resource-ec2-networkperformancemetricsubscription.md)
 + [AWS::EC2::PlacementGroup](aws-resource-ec2-placementgroup.md)
 + [AWS::EC2::PrefixList](aws-resource-ec2-prefixlist.md)
-+ [AWS::EC2::ReplaceRootVolumeTask](aws-resource-ec2-replacerootvolumetask.md)
 + [AWS::EC2::Route](aws-resource-ec2-route.md)
 + [AWS::EC2::RouteServer](aws-resource-ec2-routeserver.md)
 + [AWS::EC2::RouteServerAssociation](aws-resource-ec2-routeserverassociation.md)
@@ -123,7 +123,10 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::EC2::VPCPeeringConnection](aws-resource-ec2-vpcpeeringconnection.md)
 + [AWS::EC2::VPNConcentrator](aws-resource-ec2-vpnconcentrator.md)
 + [AWS::EC2::VPNConnection](aws-resource-ec2-vpnconnection.md)
-+ [AWS::EC2::VpnConnectionDeviceType](aws-resource-ec2-vpnconnectiondevicetype.md)
 + [AWS::EC2::VPNConnectionRoute](aws-resource-ec2-vpnconnectionroute.md)
 + [AWS::EC2::VPNGateway](aws-resource-ec2-vpngateway.md)
 + [AWS::EC2::VPNGatewayRoutePropagation](aws-resource-ec2-vpngatewayroutepropagation.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

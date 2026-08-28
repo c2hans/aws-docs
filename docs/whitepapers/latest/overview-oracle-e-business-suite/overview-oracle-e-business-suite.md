@@ -26,3 +26,7 @@ Publication date: **July 6, 2023** ([Document history](document-revisions.md))
  Almost all large enterprises use enterprise resource planning (ERP) systems for managing and optimizing enterprise-wide business processes. Cloud adoption among enterprises is growing rapidly, with many adopting a cloud-first strategy for new projects and migrating their existing systems from on-premises to AWS. ERP systems such as Oracle E-Business Suite are mission critical for most enterprises and figure prominently in considerations for planning an enterprise cloud migration.
 
  This whitepaper provides a brief overview of Oracle E-Business Suite and a reference architecture for deploying Oracle E-Business Suite on AWS. It also discusses the benefits of running Oracle E-Business suite on AWS, and various use cases.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

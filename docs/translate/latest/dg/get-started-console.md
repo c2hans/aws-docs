@@ -18,3 +18,7 @@ In **Real-time translation**, choose the target language. Amazon Translate autod
 In the **Application integration** section you can see the JSON input and output for the [TranslateText](https://docs.aws.amazon.com/translate/latest/APIReference/API_TranslateText.html) operation.
 
 ![JSON code samples for translating text.](http://docs.aws.amazon.com/translate/latest/dg/images/gs-20.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Translate. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query translate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ You can profile your Lambda functions running in Java if they are called often e
 **Topics**
 + [All Java runtimes](lambda-custom.md)
 + [Easier option for Java 8 on Amazon Linux 2 and Java 11 and Java 17 (Corretto) runtimes](lambda-simple.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

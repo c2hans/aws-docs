@@ -27,3 +27,7 @@ The following table explains the advantages and disadvantages of using the stran
 The following illustration shows how a monolith can be split into microservices by applying the strangler fig pattern to an application architecture. Both systems function in parallel, but you'll start moving functionality outside the monolith code base and enhance it with new capabilities. These new capabilities give you the opportunity to architect microservices in a way that best suits your needs. You'll continue stripping out capabilities from the monolith until it's all replaced by microservices. At that point, you can eliminate the monolith application. The key point to note here is that both the monolith and the microservices will live together for a period of time.
 
 ![Strangler fig pattern](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-decomposing-monoliths/images/guide-img/8e9fa68d-7532-4c4b-8c7b-74bc6afdb7b9/images/d8fe6ffa-117b-453f-9d4e-b59ef5ddf4f4.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

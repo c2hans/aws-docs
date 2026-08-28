@@ -58,3 +58,7 @@ To analyze execution plans, use the following procedure.
 
 1. You can also view how each plan contributes to DBLoad over time by choosing **Plans** in the **Slice by** drop-down in the DBLoad chart.
 ![Top SQL table showing load by plans with query statements, execution metrics, and plan counts.](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/images/DBInsights_OverTime.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

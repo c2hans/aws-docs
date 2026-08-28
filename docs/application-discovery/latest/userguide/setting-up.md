@@ -53,3 +53,7 @@ You need to choose an AWS Migration Hub home Region in the AWS account that you'
 1. In the Migration Hub console navigation pane, choose **Settings** and the choose a home Region.
 
    Your Migration Hub data is stored in your home Region for purposes of discovery, planning, and migration tracking. For more information, see [The Migration Hub Home Region](https://docs.aws.amazon.com/migrationhub/latest/ug/home-region.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Application Discovery Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query application-discovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

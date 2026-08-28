@@ -22,3 +22,7 @@ You can disable a default rule or change its category and severity level in the 
 You can also edit the category or severity assigned to an individual OpsItem created from these rules in the Systems Manager console. For information, see [Editing an OpsItem](OpsCenter-working-with-OpsItems-editing-details.md).
 
 ![Default rules for creating OpsItems in Systems Manager Explorer](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/explorer-default-rules.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

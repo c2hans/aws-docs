@@ -194,3 +194,7 @@ The right limits depend on three things: how much work your Amazon EKS cluster c
 <a name="virtual-cluster-job-concurrency-considerations"></a>
 + No limits are applied by default. Existing virtual clusters and workloads are unaffected unless you explicitly set `schedulerConfiguration`.
 + Because the counters are maintained across a distributed system, you can sometimes expect a small transient delta from the true value. Internal reconciliation corrects any drift.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

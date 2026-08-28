@@ -20,3 +20,7 @@ To update an existing user permission role in AWS Supply Chain, perform the foll
 1. Slide the **Amazon Q in AWS Supply Chain** button to add Amazon Q in AWS Supply Chain permission role.
 
 1. Choose **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

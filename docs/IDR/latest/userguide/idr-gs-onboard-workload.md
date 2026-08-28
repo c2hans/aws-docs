@@ -11,3 +11,7 @@ AWS Incident Detection and Response enables monitoring and critical incident man
 + [Onboard to Incident Detection and Response with the IDR CLI](idr-gs-idrcli.md)
   + [Language support for the IDR CLI](idr-gs-idrcli.md#idr-gs-idrcli-languages)
   + [Alternative options for onboarding workloads](idr-gs-idrcli.md#idr-gs-idrcli-alternatives-onboarding)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

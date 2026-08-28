@@ -48,3 +48,7 @@ Use the following strategies to optimize your OTel metrics costs:
 + Use shorter label values where possible. Label values contribute to the byte size of each data point.
 + Drop high-cardinality labels that you don't query (for example, request IDs) at the collector level.
 + For Container Insights OTel, the default collection generates a predictable volume based on cluster size.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

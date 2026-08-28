@@ -18,3 +18,7 @@ Speechmarks are available when using neural, long-form, or standard text-to-spee
 + [Requesting speech marks](speechmarksconsole.md)
 + [Speech marks without SSML example](sp-mks-example1.md)
 + [Speech marks with SSML example](sp-mks-example2.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Polly. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query polly` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

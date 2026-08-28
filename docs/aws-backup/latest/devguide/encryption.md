@@ -137,3 +137,7 @@ For AWS managed keys (such as `aws/backup` or `aws/ebs`), these permissions are 
 1. If needed, run [`kms:put-key-policy`](https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html) to replace or update key policy with revised permissions and removed Deny statements.
 
 Additionally, the key associated with the role initiating a cross-Region copy job must have `"kms:ResourceAliases": "alias/aws/backup"` in the `DescribeKey` permission.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

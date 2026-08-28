@@ -58,3 +58,7 @@ If you set up accessibility data in a shared audio encode, MediaLive will handle
 **Handling in other output groups**
 
 You might try to set up accessibility fields in an output that doesn't support accessibility data. If you're not implementing encode sharing with a CMAF Ingest or Microsoft Smooth output group, you will get an error message when you save the channel.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

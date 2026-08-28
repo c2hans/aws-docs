@@ -91,3 +91,7 @@ Checking **Use Lake Formation credentials for crawling S3 data source** will all
 Settings include security configurations. For more information, see the following:
 + [Encrypting data written by AWS Glue](encryption-security-configuration.md)
 Once a security configuration has been set on a crawler, you can change, but you cannot remove it. To lower the level of security on a crawler, explicitly set the security feature to `DISABLED` within your configuration, or create a new crawler.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -86,6 +86,8 @@ The following data types are supported by Amazon Elastic Kubernetes Service:
 +  [InsightsFilter](API_InsightsFilter.md)
 +  [InsightStatus](API_InsightStatus.md)
 +  [InsightSummary](API_InsightSummary.md)
++  [IntegerConstraints](API_IntegerConstraints.md)
++  [IntegerParameterConfig](API_IntegerParameterConfig.md)
 +  [IntegerRangeConstraint](API_IntegerRangeConstraint.md)
 +  [Issue](API_Issue.md)
 +  [KubeApiServerConfigRequest](API_KubeApiServerConfigRequest.md)
@@ -118,6 +120,9 @@ The following data types are supported by Amazon Elastic Kubernetes Service:
 +  [OidcIdentityProviderConfigRequest](API_OidcIdentityProviderConfigRequest.md)
 +  [OutpostConfigRequest](API_OutpostConfigRequest.md)
 +  [OutpostConfigResponse](API_OutpostConfigResponse.md)
++  [PodGcControllerConfigRequest](API_PodGcControllerConfigRequest.md)
++  [PodGcControllerConfigResponse](API_PodGcControllerConfigResponse.md)
++  [PodGcControllerVersionConfig](API_PodGcControllerVersionConfig.md)
 +  [PodIdentityAssociation](API_PodIdentityAssociation.md)
 +  [PodIdentityAssociationSummary](API_PodIdentityAssociationSummary.md)
 +  [PortRangeConstraints](API_PortRangeConstraints.md)
@@ -154,3 +159,7 @@ The following data types are supported by Amazon Elastic Kubernetes Service:
 +  [WarmPoolConfig](API_WarmPoolConfig.md)
 +  [ZonalShiftConfigRequest](API_ZonalShiftConfigRequest.md)
 +  [ZonalShiftConfigResponse](API_ZonalShiftConfigResponse.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

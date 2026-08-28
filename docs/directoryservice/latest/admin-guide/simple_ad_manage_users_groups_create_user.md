@@ -35,3 +35,7 @@ You can run the following from a command prompt on the instance to open the Acti
 1. On the second page of the wizard, enter a temporary password in **Password** and **Confirm Password**. Make sure the **User must change password at next logon** option is selected. None of the other options should be selected. Choose **Next**.
 
 1. On the third page of the wizard, verify that the new user information is correct and choose **Finish**. The new user will appear in the **Users** folder.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

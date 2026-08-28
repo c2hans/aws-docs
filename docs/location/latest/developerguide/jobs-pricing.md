@@ -24,3 +24,7 @@ For a full list of response fields, see the [Jobs APIs](jobs-api-reference.md). 
 The Advanced pricing bucket provides additional position context to validated addresses. When you turn on the Position feature, the output includes geographic coordinates (latitude and longitude) as an address point for each validated address. The Position feature is supported in the United States, Canada, and Australia. United Kingdom customers can access Core address validation but not the Advanced tier with position coordinates.
 
 When you turn on the Position feature, you are charged at the Advanced price. As with the Core tier, you can store results permanently. For more information, see [Places pricing](places-pricing.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

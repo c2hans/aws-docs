@@ -100,3 +100,7 @@ On the back of the device, there are two pairs of orange plastic hooks. The larg
 The gateway is designed to be mounted with the small screw securing it at the top. However, installing it upside down doesn’t affect its performance.
 
 If you have problems connecting to your gateway, see [Troubleshooting Wi-Fi gateway detection](gateway-failure-Wi-Fi.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

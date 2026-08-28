@@ -47,3 +47,7 @@ You can use IAM to edit the description for the `AWSServiceRoleForSupportPlans` 
 <a name="delete-service-linked-role-sup-plans"></a>
 
 Support Plans doesn't delete the `AWSServiceRoleForSupportPlans` service-linked role on your behalf. If you want to delete this role, you must first cancel your active support plan. To do this, contact Support. After Support confirms the cancellation, you can use the IAM console, AWS CLI, or the IAM API to delete the role. For more information, see [Deleting a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#delete-service-linked-role) in the *IAM User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

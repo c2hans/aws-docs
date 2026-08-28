@@ -893,3 +893,7 @@ View details about updates to AWS managed policies for SageMaker AI since this s
 | AmazonSageMakerFullAccess - Update to an existing policy | 20 | Update `iam:PassRole` resources and permissions. | July 15, 2021 |
 | AmazonSageMakerReadOnly - Update to an existing policy | 10 | New API `BatchGetRecord` added for SageMaker AI Feature Store.  | June 10, 2021 |
 |  |  | SageMaker AI started tracking changes for its AWS managed policies. | June 1, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,3 +53,7 @@ AMS Advanced recommends that you ensure that your use of Developer mode complies
 The predefined role (`AWSManagedServicesDevelopmentRole` for **MALZ**, `customer_developer_role` for **SALZ**), grants permission to create application infrastructure resources within the AMS Advanced VPC, including IAM roles, while restricting access to *shared service* components that are operated by AMS Advanced (for example, management hosts, domain controllers, Trend Micro EPS, bastions, and unsupported AWS services). The role also restricts access to the following AWS services: Amazon GuardDuty, AWS Organizations, AWS Directory Service APIs, and AMS Advanced logs.
 
 While the role allows you to create additional IAM roles, the same permissions boundaries included in Developer mode access are enforced on any IAM role created by the `AWSManagedServicesDevelopmentRole`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

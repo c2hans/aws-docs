@@ -63,3 +63,7 @@ For more information about DFS-N configuration, see [DFS Namespaces overview](ht
 + [Grouping multiple file systems with DFS Namespaces](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/group-file-systems.html) (Amazon FSx documentation)
 + [Walkthrough 6: Scaling out performance with shards](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/scale-out-performance.html) (Amazon FSx documentation)
 + [Using DFS Namespaces with Amazon FSx for Windows File Server](https://aws-labs.net/images/Resource/Video-FSX-DFSN-v4.pdf) (AWS Labs)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

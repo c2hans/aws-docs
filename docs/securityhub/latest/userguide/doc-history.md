@@ -302,3 +302,7 @@ To receive notifications about updates to the *AWS Security Hub User Guide*, you
 | [AWS Security Hub CSPM general availability release](#doc-history) | Content updates to reflect improvements made to Security Hub CSPM during the beta period. | June 25, 2019 |
 | [Added remediation steps for CIS AWS Foundations checks](#doc-history) | Added remediation steps to [Security Standards Supported in AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards.html). | April 15, 2019 |
 | [beta release of AWS Security Hub CSPM](#doc-history) | Published the beta release version of the *AWS Security Hub CSPM User Guide*. | November 18, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

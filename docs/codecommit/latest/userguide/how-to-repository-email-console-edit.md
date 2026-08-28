@@ -34,3 +34,7 @@ To permanently delete a notification created before November 5, 2019, follow the
 1. Choose **Edit**, and in **Event status**, use the slider to turn off **Enable notifications**. Choose **Save**.
 
 1. The event status changes to **Disabled**. No emails about events are sent. When you disable notifications, the CloudWatch Events rule for the repository is disabled automatically. Do not manually change its status in the CloudWatch Events console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

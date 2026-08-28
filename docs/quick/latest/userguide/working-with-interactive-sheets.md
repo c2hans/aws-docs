@@ -15,3 +15,7 @@ For more information on formatting interactive sheets, see the following topics.
 + [Customizing dashboard layouts in Amazon Quick Sight](customizing-dashboards-and-visuals.md)
 + [Parameters in Amazon Quick](parameters-in-quicksight.md)
 + [Using custom actions for filtering and navigating](quicksight-actions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

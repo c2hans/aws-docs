@@ -42,3 +42,7 @@ age[integer]:82 gender[character]:'f' isactive[character]:'true '
 date_of_travel[timestamp without time zone]:'2021-09-23 01:03:00.76593'
 description[text]:'TEST DATA TEST DATA TEST DATA TEST DATA'"
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

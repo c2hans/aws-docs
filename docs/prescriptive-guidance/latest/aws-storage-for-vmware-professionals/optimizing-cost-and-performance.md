@@ -40,3 +40,7 @@ As summarized in the following list, VMware provides built-in tools and integrat
 <a name="capacity-planning-for-vmware-storage-resources-and-9999999999999999aws--cost-optimization-tools.accfe8f7-f255-57f7-9b0b-fbc1fc8b431d"></a>
 + **VMware capacity planning –** Use vCenter and vRealize operations to monitor datastore usage and forecast storage requirements based on historical trends. Monitor thin provisioning carefully to prevent physical storage exhaustion.
 + **AWS cost optimization –** Use AWS Cost Explorer and Trusted Advisor to analyze usage patterns and identify cost-reduction opportunities. Implement Amazon S3 lifecycle policies to automatically transition data to lower-cost tiers like Amazon Glacier. Use CloudWatch to monitor resources and size EBS volumes based on actual usage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

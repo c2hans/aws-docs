@@ -30,3 +30,7 @@ During a storage upgrade, RDS increases the allocated storage size by 10% for th
 + Storage autoscaling is enabled.
 
 RDS turns off autoscaling when the new storage size is greater than or equal to the maximum allocated storage that was set for the instance. If storage autoscaling is disabled before the storage upgrade begins, the storage size doesn't increase during the upgrade.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

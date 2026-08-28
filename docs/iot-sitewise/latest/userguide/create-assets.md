@@ -87,3 +87,7 @@ To create an asset from an asset model, use the [CreateAsset](https://docs.aws.a
 The asset creation process can take up to a minute. To check your asset's status, use the [DescribeAsset](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeAsset.html) operation with your asset's ID as the `assetId` parameter. After the asset's `state` is `ACTIVE`, you can perform update operations on your asset. For more information, see [Asset and model states](asset-and-model-states.md).
 
 After you create an asset, see [Configure a new asset](create-asset-next-steps.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

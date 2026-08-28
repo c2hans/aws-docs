@@ -80,3 +80,7 @@ There have been several changes in the file systems that the kernel in AL1 will 
 |  [`CONFIG_PPP`](compare-with-al2-kernel.md#CONFIG_PPP)  |  m  |  m  |  m  |  m  |  m  |  m  |  m  |
 |  [`CONFIG_SLIP`](compare-with-al2-kernel.md#CONFIG_SLIP)  |  m  |  n  |  n  |  n  |  n  |  n  |  n  |
 |  [`CONFIG_XEN_PV`](compare-with-al2-kernel.md#CONFIG_XEN_PV)  |  y  | N/A |  n  | N/A |  n  | N/A |  n  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

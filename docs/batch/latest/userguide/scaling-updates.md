@@ -69,3 +69,7 @@ Use the **update-compute-environment** command to perform scaling updates. The f
 <a name="scaling-updates-monitoring"></a>
 
 Monitor your scaling updates using the AWS Batch console to view the compute environment status and check instance count and vCPU metrics. You can also use the AWS CLI with the **describe-compute-environments** command to check status and monitor instance counts and vCPU values.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

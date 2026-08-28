@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/workspaces/latest/userguide/peripheral_d
 
 The Amazon WorkSpaces client applications offer the following support for peripheral devices. If you have an issue with using a particular device, have your WorkSpaces administrator send a report to [https://console.aws.amazon.com/support/home\#/](https://console.aws.amazon.com/support/home#/).
 
-Device support might differ depending on which streaming protocol your WorkSpace is using, either PCoIP or DCV. In the 3.0\+ versions of the macOS and Windows client applications, you can see which protocol your WorkSpace is using by choosing **Support**, **About My WorkSpace**. The iPad, Android, and Linux client applications currently support only the PCoIP protocol.
+Device support might differ depending on which streaming protocol your WorkSpace is using, either PCoIP or DCV. In the 3.0\+ versions of the macOS and Windows client applications, you can see which protocol your WorkSpace is using by choosing **Support**, **About My WorkSpace**. The iPad and Android client applications currently support only the PCoIP protocol. The Linux client application supports both the PCoIP and DCV protocols.
 
 **Topics**
 + [Monitors](#devices-monitors)
@@ -98,3 +98,7 @@ PCoIP Windows WorkSpaces support USB redirection for YubiKey U2F authentication 
 <a name="webauthn-authenticators"></a>
 
 If your WorkSpace is using the PCoIP protocol, WebAuthn redirection isn't supported. However, you can use USB redirection for hardware authenticators, see [Hardware security keys](#hardware-security-keys) WebAuthn redirection is supported for WorkSpaces using DCV protocol. For more information about using smart cards with your WorkSpace, see [WebAuthn authentication for WorkSpaces client](webauthn_support.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

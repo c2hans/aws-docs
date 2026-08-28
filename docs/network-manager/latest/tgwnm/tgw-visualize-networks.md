@@ -16,3 +16,7 @@ There are separate dashboards for your transit gateway networks and transit gate
 **Topics**
 + [Access transit gateway network dashboards](nm-monitoring-console.md)
 + [Access transit gateway dashboards](nm-visualize-tgw.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

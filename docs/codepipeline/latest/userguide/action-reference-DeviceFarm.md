@@ -248,3 +248,7 @@ The following related resources can help you as you work with this action.
 + [Actions in Device Farm](https://docs.aws.amazon.com/devicefarm/latest/APIReference/Welcome.html) – The API calls and parameters in the *Device Farm API Reference* can help you work with Device Farm projects.
 + [Tutorial: Create a pipeline that builds and tests your Android app with AWS Device Farm](tutorials-codebuild-devicefarm.md) – This tutorial provides a sample buildspec file and sample application to create a pipeline with a GitHub source that builds and tests an Android app with CodeBuild and Device Farm.
 + [Tutorial: Create a pipeline that tests your iOS app with AWS Device Farm](tutorials-codebuild-devicefarm-S3.md) – This tutorial provides a sample application to create a pipeline with an Amazon S3 source that tests a built iOS app with Device Farm.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

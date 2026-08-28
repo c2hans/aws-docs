@@ -45,3 +45,7 @@ source_url: https://docs.aws.amazon.com/grafana/latest/userguide/cloudwatch-temp
 |  dimension\_values(us-east-1,CWAgent,disk\_used\_percent,device,{"InstanceId":"$instance\_id"})  |  CloudWatch Agent  |
 |  resource\_arns(eu-west-1,elasticloadbalancing:loadbalancer,{"elasticbeanstalk:environment-name":["myApp-dev","myApp-prod"]})  |  Elastic Load Balancing  |
 |  resource\_arns(eu-west-1,ec2:instance,{"elasticbeanstalk:environment-name":["myApp-dev","myApp-prod"]})  |  Amazon EC2  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

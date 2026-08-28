@@ -8,3 +8,7 @@ source_url: https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_common-sce
 Many AWS services require that you use roles to control what that service can access. A role that a service assumes to perform actions on your behalf is called a [service role](id_roles.md#iam-term-service-role). When a role serves a specialized purpose for a service, it can be categorized as a [service-linked role](id_roles.md#iam-term-service-linked-role). See the [AWS documentation](https://docs.aws.amazon.com/) for each service to see if it uses roles and to learn how to assign a role for the service to use.
 
 For details about creating a role to delegate access to a service offered by AWS, see [Create a role to delegate permissions to an AWS service](id_roles_create_for-service.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

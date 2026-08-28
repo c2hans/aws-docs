@@ -105,3 +105,7 @@ npx @aws-mdaa/cli deploy
 1.  **Cross-account promotion** — If configured, the deployment pipeline promotes the approved model through dev → pre-prod → prod with manual approval gates.
 
 For more detailed information, refer to the README.md and USAGE.md files in the starter\_kits/mlops\_platform directory of the MDAA repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Modern Data Architecture Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

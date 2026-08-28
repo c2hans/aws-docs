@@ -411,3 +411,7 @@ The following table shows Nextflow interpolation examples for params in the `nex
 |  <pre>params {<br />   input_file = "s3://bucket/data.json"<br />}</pre>  | No |
 |  <pre>params {<br />   nested {<br />     input_file = "s3://bucket/data.json"    <br />   }<br />}</pre>  | N/A |
 |  <pre>input_file = params.input_file</pre>  | N/A |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

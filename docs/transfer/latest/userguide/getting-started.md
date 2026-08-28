@@ -179,3 +179,7 @@ This client works only with an SFTP-enabled server.
    `Uploading filename.txt to /amzn-s3-demo-bucket/home/sftp_user/filename.txt`
 
    `some-file.txt 100% 127 0.1KB/s 00:00`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

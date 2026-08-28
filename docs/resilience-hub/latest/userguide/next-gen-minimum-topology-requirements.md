@@ -19,3 +19,7 @@ Any topology where at least two resources are connected by a data flow relations
 **Invalid topology (assessment cannot run)**
 
 A topology with only isolated resources and no data flow relationships between them is invalid. For example, a service that discovers a single Amazon S3 bucket or several unconnected Amazon EC2 instances has no data flow for the assessment to analyze.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

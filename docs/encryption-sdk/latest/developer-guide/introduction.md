@@ -107,3 +107,7 @@ We welcome your feedback\! If you have a question or comment, or an issue to rep
 + If you discover a potential security vulnerability in the AWS Encryption SDK, please [notify AWS security](https://aws.amazon.com/security/vulnerability-reporting/). Do not create a public GitHub issue.
 + To provide feedback on the AWS Encryption SDK, file an issue in the GitHub repository for the programming language you are using.
 + To provide feedback on this documentation, use the **Feedback** links on this page. You can also file an issue or contribute to [aws-encryption-sdk-docs](https://github.com/awsdocs/aws-encryption-sdk-docs), the open-source repository for this documentation on GitHub.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,3 +49,7 @@ In order to view open and click events, you have to set up event streaming. For 
 **Note**
 If you have event streaming enabled you will still receive duplicate events and should handle such duplicates in your workflows accordingly.
 If a recipient's email server performs link validation checks then these checks will appear as click events.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

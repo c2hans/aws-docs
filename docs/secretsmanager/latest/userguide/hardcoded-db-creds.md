@@ -148,3 +148,7 @@ After you remove a hardcoded secret from your code, some ideas to consider next:
 + You can improve performance and reduce costs by caching secrets. For more information, see [Get secrets from AWS Secrets Manager](retrieving-secrets.md).
 + You can choose a different rotation schedule. For more information, see [Rotation schedules](rotate-secrets_schedule.md).
 + To find hardcoded secrets in your Java and Python applications, we recommend [Amazon CodeGuru Reviewer](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/welcome.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

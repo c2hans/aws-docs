@@ -82,3 +82,7 @@ You can use Pricing Calculator to model the impact of adding new Savings Plans o
 
 **Note**
 Any Savings Plans or Reserved Instances you have modeled in your public Pricing Calculator estimates won't be included when you're adding these estimates from the public Pricing Calculator to a workload estimate or bill scenario.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

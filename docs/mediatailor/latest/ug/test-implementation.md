@@ -51,3 +51,7 @@ Follow these testing steps that validate your CDN integration:
      + Communication plans for stakeholders with pre-defined notification templates and contact lists
 
    After completing your testing, proceed to [Implementing your CDN integration](https://docs.aws.amazon.com/mediatailor/latest/ug/cdn-integration.html) for production deployment steps.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

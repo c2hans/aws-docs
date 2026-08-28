@@ -54,3 +54,7 @@ The Partner Revenue Measurement data AWS collects is only shared with your Partn
 <a name="customer-regions-faq"></a>
 
 Today, Partner Revenue Measurement is supported only in [commercial regions](partner-faqs.md#supported-regions-faq). AWS is working to expand coverage to sovereign and government cloud regions in the future, and your Partner or AWS account team can keep you informed on timing as it becomes available. If you run workloads in both commercial and government regions, Partner Revenue Measurement can be enabled today for your commercial accounts while you wait for expanded coverage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

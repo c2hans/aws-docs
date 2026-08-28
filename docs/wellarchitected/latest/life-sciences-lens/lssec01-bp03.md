@@ -26,3 +26,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
    1.  The added notification can be set up using a combination of [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html), [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html), and [Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/welcome.html).
 
 1.  Automate permissions management and refinement through [IAM Access Analyzer](https://aws.amazon.com/iam/access-analyzer/) with security integration workflows that alert teams to access policy changes. For unused roles, access keys, or passwords, [IAM Access Analyzer](https://aws.amazon.com/iam/access-analyzer/) provides quick links in the console to assist you to delete them. For unused permissions, IAM Access Analyzer reviews your existing policies and recommends a refined policy that is tailored to your access activity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

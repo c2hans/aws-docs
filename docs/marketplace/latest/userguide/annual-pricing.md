@@ -16,3 +16,7 @@ Considerations when working with an annual subscription include the following:
 + Using seller private offers, you can offer a multi-year (up to 12 years) or custom duration AMI with upfront payment, or a flexible payment schedule. For more information about multi-year and custom duration contracts, see [Preparing a private offer for your AWS Marketplace product](private-offers-overview.md) and [Private offer installment plans](installment-plans.md).
 
 If you offer an Annual product in AWS Marketplace, you agree to the specific refund policies for Annual products, located in the **File Uploader** documents section in the [AWS Marketplace Management Portal](https://us-east-1.console.aws.amazon.com/partnercentral/home).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

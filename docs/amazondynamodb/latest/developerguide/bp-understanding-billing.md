@@ -234,3 +234,7 @@ The instance type will be one of the values from the following list. For details
 + r4.16xlarge, r5.24xlarge, or t3.medium
 + r4.2xlarge, r5.2xlarge, or t3.small
 + r4.4xlarge or r5.4xlarge
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

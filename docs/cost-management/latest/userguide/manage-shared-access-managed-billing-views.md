@@ -16,3 +16,7 @@ There are two types of AWS managed billing views: Billing group views, and billi
 AWS creates and manages these billing views, so you can't update or delete them directly. The** Cost Management Preferences **billing view tab currently shows only custom views, not AWS managed views.
 
 To update an AWS managed view name, update the name of its associated resource (billing group or billing transfer). AWS managed views persist even if their associated resource is deleted or withdrawn.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

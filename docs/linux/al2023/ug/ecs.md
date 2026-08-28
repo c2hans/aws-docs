@@ -34,3 +34,7 @@ You can host containerized workloads on AL2023 using the AL2023 based Amazon ECS
  We recommend that you use the Amazon ECS optimized AL2023 AMI. For more information, see [Amazon ECS-optimized AMI](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-optimized_AMI.html) in the *Amazon Elastic Container Service Developer Guide*.
 
  You can use the same build scripts that Amazon ECS uses to create custom AMIs. For more information, see [Amazon ECS-optimized Linux AMI build script](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-ami-build-scripts.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

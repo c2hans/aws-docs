@@ -17,3 +17,7 @@ The following sections contain the `APPSYNC_JS` runtime and JavaScript resolver 
 +  [ JavaScript resolver function reference for HTTP ](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-http-js.html) - Learn more about resolver request and response structure and interactions with HTTP endpoints.
 +  [ JavaScript resolver function reference for Amazon RDS ](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-rds-js.html) - Learn more about resolver structure and interactions with RDS.
 +  [ JavaScript resolver function reference for Amazon Bedrock](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-bedrock-js.html) - Learn more about resolver structure and interactions with Amazon Bedrock.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -808,3 +808,7 @@ Tool execution errors are returned when a tool invocation fails at runtime (for 
 <a name="marketplace-mcp-validation-errors"></a>
 
 Validation errors are returned when input fails schema validation (for example, invalid solution ID format, exceeding max array length, or missing required fields). These are surfaced as tool execution errors with `isError: true`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

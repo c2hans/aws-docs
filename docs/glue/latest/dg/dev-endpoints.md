@@ -18,3 +18,7 @@ You can install a Jupyter notebook client on your local machine and use it to de
 AWS Glue tags Amazon EC2 instances with a name that is prefixed with `aws-glue-dev-endpoint`.
 
 You can set up a notebook server on a development endpoint to run PySpark with AWS Glue extensions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

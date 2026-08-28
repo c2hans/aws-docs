@@ -60,3 +60,7 @@ You can use the Mute function by doing one of the following:
 + If you want to mute all connected and built-in microphones on your WorkSpaces Thin Client, use the **Mute** button on the top of the device. The icon on the button will glow red when Mute is activated.
 ![Cube-shaped device with light bar, microphones, and mute button for WorkSpaces Thin Client.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/mic-mute.jpg)
 + If you want to mute just the device microphone, connect a headset with microphone to the device. The device microphone is automatically muted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

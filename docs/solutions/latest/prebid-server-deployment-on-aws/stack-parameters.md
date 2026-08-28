@@ -25,3 +25,7 @@ The `deploy.sh` script sets these parameters automatically based on the flags yo
 
 **Note**
 CloudFront distribution is the recommended configuration for this solution because this configuration provides enhanced security and performance. Refer to the [Opt out of using CloudFront and AWS WAF](configure-the-solution.md#opt-out-of-cloudfront-and-waf) section for more information about the benefits of using CloudFront and AWS WAF together, and steps to disable CloudFront and AWS WAF if desired.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying a Prebid Server on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

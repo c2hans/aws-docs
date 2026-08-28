@@ -14,3 +14,7 @@ Next generation Resilience Hub provides the following key capabilities:
 + **AWS Organizations integration** – Centralized governance across multiple accounts with delegated administrator support and organization-wide resilience policies.
 
 For enterprise-scale deployments, Next generation Resilience Hub integrates with AWS Organizations to provide centralized resilience management across your entire organization from a single delegated administrator account. You get organization-wide visibility into resilience posture and aggregated dashboards without logging in to individual accounts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ The most effective way to unlock the full potential of Amazon Q Developer is by 
 Additionally, stay informed by reviewing the AWS blogs and developer guides that are referenced in [Resources](resources.md). These resources provide the latest updates, best practices, and insights to help you optimize your use of Amazon Q Developer.
 
 Your feedback is invaluable for improving this guide and helping it remain a valuable resource for developers. Share your experiences, challenges, and suggestions for future versions. Your input will help enhance the guide with additional examples, troubleshooting scenarios, and insights tailored to your needs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -98,3 +98,7 @@ For more information about using a presigned URL to share or upload objects, see
 + [When does S3 on Outposts check the expiration date and time of a presigned URL?](#S3Outpostspresigned-url-when-checked)
 + [Sharing objects by using presigned URLs](S3OutpostsShareObjectPresignedURL.md)
 + [Generating a presigned URL to upload an object to an S3 on Outposts bucket](S3OutpostsPresignedUrlUploadObject.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

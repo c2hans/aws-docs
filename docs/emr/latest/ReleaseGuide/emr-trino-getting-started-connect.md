@@ -36,3 +36,7 @@ The following describes how you connect to and run queries on a cluster running 
 1. To see the schemas available, run `show schemas in hive;`. From here, you can run `use {{schema-name}};` and include the name of your schema. Then you can run `show tables;` to list tables.
 
 1. Query a table by running a command like `SELECT * FROM {{table-name}}`, using the name of a table in your schema. If you already ran the `USE` statement to connect to a specific schema, you don't have to use two-part notation such as {{schema}}.{{table}}.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

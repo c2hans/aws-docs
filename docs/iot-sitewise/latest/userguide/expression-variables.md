@@ -31,3 +31,7 @@ A variable's *value* defines the property that it references. AWS IoT SiteWise p
  A variable that you receive in a response from AWS IoT SiteWise includes full information about the value, including both the ID and the path.
 
  However, when you pass a variable into AWS IoT SiteWise (for example, in a "create" or "update" call), you only need to specify one of these. For example, if you specify the path, you don't need to provide the ID.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,3 +50,7 @@ If your client ID matches your thing name, or if you attach your certificate to 
 ```
 
 This policy example allows things to connect to AWS IoT Core if their client ID ends with the value of their `envType` attribute. Only things with a matching client ID pattern will be allowed to connect.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

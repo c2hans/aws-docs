@@ -32,3 +32,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/agent-ops-m
 | [AWS IAM Identity Center](https://aws.amazon.com/iam/identity-center/) | Centralized human access management across all platform accounts |
 | [Amazon Cognito](https://aws.amazon.com/cognito/) | Workload-level identity management for agent authentication |
 | [AWS KMS](https://aws.amazon.com/kms/) | Encryption key management for data at rest and in transit |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

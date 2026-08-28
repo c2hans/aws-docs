@@ -17,3 +17,7 @@ Use the topics in this section to find detailed reference material for various a
 + [AWS Signature Version 4 for API requests](reference_sigv.md)
 + [IAM JSON policy reference](reference_policies.md)
 + [Simplified AWS service information for programmatic access](https://docs.aws.amazon.com/service-authorization/latest/reference/service-reference.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

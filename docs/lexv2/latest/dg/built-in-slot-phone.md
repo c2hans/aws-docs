@@ -13,3 +13,7 @@ Converts the numbers or words that represent a phone number into a string format
 | International number without leading plus (\+) sign | 11-digit number without leading plus sign | 1 (509) 555-1212<br />61 7 4445 1061 |  `15095551212` <br /> `61744451061`  |
 | National number | 10-digit number without international code | (03) 5115 4444<br />(509) 555-1212 |  `0351154444` <br /> `5095551212`  |
 | Local number | phone number without an international code or an area code | 555-1212 |  5551212  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

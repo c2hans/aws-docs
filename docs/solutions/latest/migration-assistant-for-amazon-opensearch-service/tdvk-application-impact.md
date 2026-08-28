@@ -11,3 +11,7 @@ The transformation produces a queryable vector index, but k-NN query patterns on
 +  **Query-time embeddings** — As described in [Amazon OpenSearch Serverless NextGen considerations](tdvk-serverless.md), applications that relied on a `model_id` to embed query text on the source may need to embed client-side against the target.
 
 Validate these behaviors with representative vector queries in a pilot migration before you cut over production traffic. Use a small index allowlist or a representative non-production subset, as described in [Configure and run workflows](use-the-solution.md), so you can catch query-compatibility issues early. For the general guidance on validating transformed data against client applications, see [Migrate metadata](migrate-metadata.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

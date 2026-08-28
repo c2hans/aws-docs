@@ -66,3 +66,7 @@ If you add or remove fields from an optimized blueprint, the service removes the
 Blueprint instruction optimization consumes incurs the inference costs as you would if manually edit your natural language instructions and iteratively test them against each sample document. For a rough calculation, the number of pages you supply as examples will be the number of pages that will be charged as you optimize your blueprint. Each optimization run processes your example assets multiple times to refine the instructions. To minimize costs, start with 3 to 5 examples for your initial optimization. Add more examples when you inspect the evaluation metrics and believe you need additional accuracy improvements.
 
 In addition, the optimized natural language instructions tend to be longer and more detailed than the original instructions, which can increase runtime inference costs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

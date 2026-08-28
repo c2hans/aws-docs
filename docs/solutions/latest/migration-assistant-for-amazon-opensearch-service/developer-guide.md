@@ -70,3 +70,7 @@ The CLI automatically detects which agents are installed on your system. It sets
 +  **Approval gates** — Workflow configurations include approval gates at key checkpoints (after metadata migration, after backfill). The agent pauses and asks for your confirmation at these points unless you explicitly choose to skip approvals.
 +  **Destructive actions** — The agent asks for explicit confirmation before operations like deleting VPCs, removing existing workflow resources, or modifying production clusters.
 +  **Auditability** — All commands the agent runs are visible in the session transcript. You can review exactly what was executed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

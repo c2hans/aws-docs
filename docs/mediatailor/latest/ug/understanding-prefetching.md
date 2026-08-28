@@ -77,3 +77,7 @@ The following graphic illustrates the example, with the small squares representi
 <a name="billing"></a>
 
 There are no costs for making ad retrieval requests. However, for prefetch ad retrieval, you'll be charged at the standard transcoding rate for the prefetched ads that MediaTailor transcodes. For prefetch ad consumption, you'll be charged at the standard rate for ad insertion for the prefetched ads that MediaTailor places in ad breaks. For information about transcoding and ad insertion costs, see [AWS Elemental MediaTailor Pricing](https://aws.amazon.com/mediatailor/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

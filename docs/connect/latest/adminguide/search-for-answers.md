@@ -28,3 +28,7 @@ You can search for content at any time: while on a contact, on After Contact Wor
 ![An article appearing in a new tab on the agent workspace.](http://docs.aws.amazon.com/connect/latest/adminguide/images/wisdom-agent-asks-question.png)
 
 1. The list of search results is cleared only after you complete ACW and choose **Close contact**, or select the **Close** icon next to the search box.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

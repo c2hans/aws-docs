@@ -82,3 +82,7 @@ If you are using CI systems, you should give each CI runner unique access creden
 You can use conditions in your identity-based policy to control access to Device Farm resources based on tags. This example shows how you might create a policy that allows the viewing of projects and sessions. Permission is granted if the `Owner` tag of the requested resource matches the username of the requesting account.
 
 You can attach this policy to the IAM users in your account. If a user named `richard-roe` attempts to view a Device Farm project or session, the project must be tagged `Owner=richard-roe` or `owner=richard-roe`. Otherwise, the user is denied access. The condition tag key `Owner` matches both `Owner` and `owner` because condition key names are not case sensitive. For more information, see [IAM JSON Policy Elements: Condition](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements_condition.html) in the *IAM User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

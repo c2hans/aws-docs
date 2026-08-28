@@ -22,3 +22,7 @@ To resolve *configuration baseline drift* for an OU, you can choose **Re-registe
 **When you take action to resolve drift on a landing zone version, the behavior depends on your current version.**
 If you are on landing zone version 3.1 or above, you can choose **Update** to change your landing zone configuration without upgrading versions, or choose **Reset** to reapply your saved configurations to your drifted landing zone resources. Drift is resolved as part of the update process.
 If you are on a landing zone version earlier than 3.1, you cannot choose **Reset**. You must choose **Update** and upgrade your landing zone to at least version 3.1.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ Refer to the following considerations to take advantage of Amazon RDS local back
 <a name="rds-outpost-export-restore"></a>
 
 Exporting Snapshots to S3 and restoring a DB instance from Amazon S3: While RDS snapshots can be exported or restored directly from Amazon S3 in the AWS Region, this is not supported within AWS Outposts environments.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

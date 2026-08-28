@@ -21,3 +21,7 @@ Amazon Redshift is specifically designed for online analytic processing (OLAP) a
 See [Amazon Redshift architecture](c_redshift_system_overview.md) for a detailed explanation of the Amazon Redshift data warehouse system architecture.
 
 PostgreSQL 9.x includes some features that are not supported in Amazon Redshift. In addition, there are important differences between Amazon Redshift SQL and PostgreSQL that you must be aware of. This section highlights the differences between Amazon Redshift and PostgreSQL and provides guidance for developing a data warehouse that takes full advantage of the Amazon Redshift SQL implementation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

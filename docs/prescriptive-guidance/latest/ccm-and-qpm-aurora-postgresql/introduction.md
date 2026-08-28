@@ -17,3 +17,7 @@ Two of these features are [cluster cache management (CCM)](https://docs.aws.amaz
 <a name="intended-audience"></a>
 
 The intended audience for this guide is business stakeholders who want to understand the available features for optimizing the performance of Amazon Aurora PostgreSQL-Compatible database instances and understand the use cases for those features.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

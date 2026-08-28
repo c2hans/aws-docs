@@ -348,3 +348,7 @@ Instructions for setting your network traffic settings are available in [Public 
 Instructions for setting your network traffic settings are available in [Private accessibility with default or custom security group configuration](https://docs.aws.amazon.com/redshift/latest/mgmt/rs-security-group-public-private.html#rs-security-group-private). This includes a use case where the cluster isn't available to the internet.
 
 For more information about secure connections to Amazon Redshift Serverless, including granting permissions, authorizing access to additional services, and creating IAM roles, see [Identity and access management in Amazon Redshift Serverless](serverless-iam.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

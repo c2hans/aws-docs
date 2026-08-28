@@ -104,3 +104,7 @@ Timestream for LiveAnalytics supports the following extraction functions for dat
 | year(timestamp), year(date), year(interval year to month) | bigint | <pre>SELECT year('2019-10-12 23:10:34.000000000')</pre>Example result: `2019` |
 | year\_of\_week(timestamp), year\_of\_week(date) | bigint | <pre>SELECT year_of_week('2019-10-12 23:10:34.000000000')</pre>Example result: `2019` |
 | yow(timestamp), yow(date) | bigint | Alias for year\_of\_week |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

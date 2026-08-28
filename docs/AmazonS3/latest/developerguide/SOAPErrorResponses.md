@@ -35,3 +35,7 @@ The following table explains the SOAP error response elements
 | Faultcode  | The fault code is a string that uniquely identifies an error condition. It is meant to be read and understood by programs that detect and handle errors by type. For more information, see [List of Error Codes](ErrorResponses.md#ErrorCodeList).<br />Type: String<br />Ancestor: Body.Fault |
 |  Faultstring  | The fault string contains a generic description of the error condition in English. It is intended for a human audience. Simple programs display the message directly to the end user if they encounter an error condition they don't know how or don't care to handle. Sophisticated programs with more exhaustive error handling and proper internationalization are more likely to ignore the fault string.<br />Type: String<br />Ancestor: Body.Fault |
 | Key  | Identifies the key involved in the error<br />Type: String<br />Ancestor: Body.Fault |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

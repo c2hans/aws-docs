@@ -30,3 +30,7 @@ Wickr network users can find guest users when writing a direct message, creating
 + Guest users can communicate with each other only when the guest users are in the same room as a network user.
 + A guest user can continue communicating in the Wickr network, only if a network user has communicated with the guest within the last 90 days.
 + Message expiration settings are limited to a maximum period of 30 days for guest users. For more information, see [ Set message expiration and burn timers](https://docs.aws.amazon.com/wickr/latest/userguide/message-timers.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

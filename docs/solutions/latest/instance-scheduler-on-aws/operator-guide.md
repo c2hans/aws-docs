@@ -69,3 +69,7 @@ If your EC2 DB instances have EBS volumes encrypted with customer-managed KMS ke
 <a name="ec2-instances-managed-in-license-manager"></a>
 
 If your EC2 instances are managed in AWS License Manager, you must give the Instance Scheduler role the appropriate License Manager permissions to be able to start and stop those instances. For more information, refer to [EC2 License Manager](security-1.md#ec2-license-manager).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Instance Scheduler on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

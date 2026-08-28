@@ -36,3 +36,7 @@ You can also deploy an existing application to an existing environment if, for i
 ![Publish application version wizard 2](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-vs-publish-app-version-wizard3.png)
 
    Your ASP.NET project will be exported as a web deploy file and uploaded to Amazon S3. The Elastic Beanstalk deployment feature will monitor your environment until it becomes available with the newly deployed code. On the **env:<{{environment name}}>** tab, you will see status for your environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

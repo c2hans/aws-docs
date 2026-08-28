@@ -14,3 +14,7 @@ Any workload that has some form of network connectivity, whether it’s the inte
 + [SEC05-BP02 Control traffic flow within your network layers](sec_network_protection_layered.md)
 + [SEC05-BP03 Implement inspection-based protection](sec_network_protection_inspection.md)
 + [SEC05-BP04 Automate network protection](sec_network_auto_protect.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

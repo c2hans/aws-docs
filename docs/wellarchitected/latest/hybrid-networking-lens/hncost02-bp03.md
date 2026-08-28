@@ -28,3 +28,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 +  [Stream VPC flow logs to Amazon OpenSearch Service via Amazon Data Firehose](https://aws.amazon.com/blogs/big-data/stream-vpc-flow-logs-to-amazon-opensearch-service-via-amazon-kinesis-data-firehose/)
 +  [Monitor AWS Transit Gateway Flow Logs centrally using Amazon Managed Grafana](https://aws.amazon.com/blogs/mt/monitor-aws-transit-gateway-flow-logs-centrally-using-amazon-managed-grafana/)
 +  [Visualize and gain insights into your VPC Flow logs with Amazon Managed Grafana](https://aws.amazon.com/blogs/mt/visualize-and-gain-insights-into-your-vpc-flow-logs-with-amazon-managed-grafana/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

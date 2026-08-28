@@ -18,3 +18,7 @@ After the free trial, each account in the behavior graph is billed for the data 
 + [Prerequisites to enable Detective](detective-prerequisites.md)
 + [Recommendations to enable Detective](detective-recommendations.md)
 + [Enabling Detective](detective-enabling.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

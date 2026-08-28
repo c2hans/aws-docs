@@ -104,3 +104,7 @@ You are charged for the amount of time that your model runs. When you finish usi
 <a name="gs-using-examples-next-steps"></a>
 
 When you're ready, you can create your own projects. For more information, see [Step 6: Next steps](gs-step-next.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

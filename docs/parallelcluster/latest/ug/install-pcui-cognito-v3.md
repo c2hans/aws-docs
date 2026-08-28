@@ -10,3 +10,7 @@ The following sections refer to CloudFormation quick-create links or quick-creat
 To maintain an Amazon Cognito user pool that you can use with multiple AWS ParallelCluster UI (PCUI) instances, consider the following options:
 + Use an existing PCUI instance that links to an Amazon Cognito user pool created from a nested CloudFormation stack. This is what is created when you deploy the PCUI by using the quick-create link and keep all Amazon Cognito parameters blank.
 + First, deploy a standalone Amazon Cognito user pool. Then, deploy a new PCUI instance that's linked to the standalone Amazon Cognito user pool that you just deployed. This way, you separate the Amazon Cognito deployment from the PCUI deployment. Note that non-nested PCUI CloudFormation stacks are easier to update.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

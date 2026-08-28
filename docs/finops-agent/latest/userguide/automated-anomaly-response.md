@@ -64,3 +64,7 @@ From the automation detail page, you can do the following:
 + Review the tasks the automation has run, including each investigation and its delivery result.
 
 To investigate an anomaly on demand instead of automatically, see [Investigating cost anomalies](cost-anomaly-detection.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS FinOps Agent (preview). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finops-agent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

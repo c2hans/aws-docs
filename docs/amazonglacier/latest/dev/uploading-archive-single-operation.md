@@ -18,3 +18,7 @@ As described in [Uploading an Archive in Amazon Glacier](uploading-an-archive.md
 + [Uploading an Archive in a Single Operation Using the AWS SDK for Java](uploading-an-archive-single-op-using-java.md)
 + [Uploading an Archive in a Single Operation Using the AWS SDK for .NET in Amazon Glacier](uploading-an-archive-single-op-using-dotnet.md)
 + [Uploading an Archive in a Single Operation Using the REST API](uploading-an-archive-single-op-using-rest.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Glacier. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonglacier` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

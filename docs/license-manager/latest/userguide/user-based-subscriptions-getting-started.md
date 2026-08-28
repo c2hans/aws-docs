@@ -298,3 +298,7 @@ aws license-manager-user-subscriptions start-product-subscription --username {{<
 For more information about the available software products, see [Supported software products for user-based subscriptions in License Manager](user-based-subscriptions.md#usubs-software).
 
 Users that have a subscription will be displayed under **Users** with a **Status** of **Subscribed**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

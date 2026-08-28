@@ -47,3 +47,7 @@ INSERT/COPY INTO table_A;
 A deadlock can occur when multiple transactions with INSERT or COPY operations are running concurrently on the same table with a shared lock, and one of those transactions follows its pure write operation with an operation that requires an exclusive lock, such as an UPDATE, MERGE, DELETE, or DDL statement.
 
 To avoid the deadlock in these situations, you can separate statements requiring an exclusive lock (UPDATE/MERGE/DELETE/DDL statements) to a different transaction so that any INSERT/COPY statements can progress simultaneously, and the statements requiring exclusive locks can execute after them. Alternatively, for transactions with INSERT/COPY statements and MERGE/UPDATE/MERGE statements on same table, you can include retry logic in your applications to work around potential deadlocks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

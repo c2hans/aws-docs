@@ -72,3 +72,7 @@ If you navigate away from the progress screen, you can check the generation stat
 You can share the dashboard with other users, embed it in applications, or schedule email deliveries. For more information about publishing and sharing, see [Publishing dashboards](creating-a-dashboard.md) and [Sharing Quick Sight analyses](sharing-analyses.md).
 
 ![Publish and share dialog](http://docs.aws.amazon.com/quick/latest/userguide/images/visualize-data-figure-9.gif)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

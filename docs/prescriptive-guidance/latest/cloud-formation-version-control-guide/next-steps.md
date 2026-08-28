@@ -14,3 +14,7 @@ This guide described how commit ID-based tagging provides version control for Cl
 1. **Review security and compliance** — Regularly audit your IAM roles, cross-account access configurations, and security group settings. Ensure your implementation adheres to organizational compliance standards and security best practices.
 
 1. **Enable team adoption** — Create clear documentation and conduct team training to ensure successful adoption of these practices. Establish standardized deployment workflows and approval processes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

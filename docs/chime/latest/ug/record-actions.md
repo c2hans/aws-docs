@@ -33,3 +33,7 @@ Amazon Chime sends M4A files for recordings that only include audio. If a presen
 
 **Note**
 Recorded meeting files can be large. To share them with attendees, we recommend that you upload them to a file-sharing service. Once uploaded, you can share the file link with attendees.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

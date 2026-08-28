@@ -12,3 +12,7 @@ A billing account must be designated for your CodeCatalyst space, even if usage 
 To configure a billing account, see [Billing](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-billing.html) in the *CodeCatalyst Administrator Guide*. The AWS account that is specified as the billing account for your CodeCatalyst space has different quotas from other account connections for a space. For more information, see [Quotas for CodeCatalyst](quotas.md).
 
 To remove an account that is a designated billing account for your CodeCatalyst space, make sure to first specify a new billing account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

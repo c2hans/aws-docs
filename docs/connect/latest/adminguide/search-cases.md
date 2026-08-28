@@ -39,3 +39,7 @@ Only users who have access to this page will be able to see contact details for 
 There might be additional information for agents to view and populate on the **More information** tab, depending on the case template is designed.
 
 ![The More information tab.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cases-agent-application-moreinfo.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

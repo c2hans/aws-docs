@@ -24,3 +24,7 @@ In this section, you create a time series bucket for turbine wind speed data and
 1. Generate an API token for the bucket. This token will enable secure communication between InfluxDB and other components like Node-RED and Grafana. This way, only authorized services can read from or write to your data store. For more information, see [Create a token](https://docs.influxdata.com/influxdb/cloud/admin/tokens/create-token/) in the *InfluxData Documentation*.
 
 After you complete these steps, you can store time series data in your InfluxDB instance, providing a foundation for local data persistence and analysis in your edge environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

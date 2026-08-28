@@ -21,3 +21,7 @@ The `EffectiveDurability` property in the API response always shows the actual d
 For snapshots, ElastiCache stores the `EffectiveDurability` value so that restoring from a snapshot preserves the actual durability setting.
 
 When you enable durability, ElastiCache automatically enables encryption at-rest on your cluster. All data at rest is encrypted, including snapshots and data in the Multi-AZ transactional log. By default, the cluster uses a service-managed KMS key, but you can also specify your own customer-managed KMS key. The encryption status is visible in the `StorageEncryptionType` field for the replication group.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

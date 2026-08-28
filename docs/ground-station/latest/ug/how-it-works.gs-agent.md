@@ -26,3 +26,7 @@ The AWS Ground Station Agent enables you to receive (downlink) synchronous Wideb
 <a name="how-it-works.gs-agent.more-info"></a>
 
 For more detailed information, please see the full [AWS Ground Station Agent User Guide](https://docs.aws.amazon.com/ground-station/latest/gs-agent-ug).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

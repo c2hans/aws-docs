@@ -77,3 +77,7 @@ The following heatmap shows an example of the entire system utilization of an `m
 Use the **Rules** tab to find a summary of the profiling rule analysis on your training job. If the profiling rule is activated with the training job, the text appears highlighted with the solid white text. Inactive rules are dimmed in gray text. To activate these rules, follow instructions at [Use built-in profiler rules managed by Amazon SageMaker Debugger](use-debugger-built-in-profiler-rules.md).
 
 ![The Rules tab in the SageMaker Debugger Insights dashboard.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/debugger/debugger-insights-rules.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

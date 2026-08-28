@@ -64,3 +64,7 @@ The following product types are available for purchase in AWS Marketplace in the
 <a name="tax-considerations-esc-buyer"></a>
 
  ESC transactions follow the same tax treatment as commercial AWS Marketplace transactions. The same tax logic, rates, and obligations apply; no special or separate tax rules are introduced for ESC. For detailed guidance, refer to the [Tax Help page for Buyers](https://aws.amazon.com/tax-help/marketplace-buyers/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -102,3 +102,7 @@ The following list demonstrates conditions for when a query plan would not be ca
 + If the query parameter is a string that has not been part of data load or data insertion.
   + If `CREATE (n {name: "X"})`, is done to insert “X”.
   + `RETURN “X”` is cached, while `RETURN “Y”` isn’t, as “Y” has not been inserted and does not exist in the database.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

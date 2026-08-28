@@ -67,3 +67,7 @@ Certificate:
 We recommend that you purchase a code-signing certificate from a company with a good reputation for security. Do not use a self-signed certificate for any purpose other than testing. Encouraging your users to trust arbitrary certificates with no reputational backing is a poor security practice.
 
 After you have obtained the certificate, you must import it into AWS Certificate Manager (ACM). ACM returns an Amazon Resource Name (ARN) for the certificate. You must use the ARN when you call the [StartSigningJob](signer/latest/api/API_StartSigningJob.html) action. For more information about importing, see [Importing Certificates](https://docs.aws.amazon.com/acm/latest/userguide/import-certificate.html) in the AWS Certificate Manager User Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Signer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

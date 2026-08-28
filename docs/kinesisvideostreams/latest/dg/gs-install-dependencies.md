@@ -69,3 +69,7 @@ If you see a screen telling you that some services need to be restarted, press E
    For additional information, see [*Amazon Corretto 11 User Guide*](https://docs.aws.amazon.com/corretto/latest/corretto-11-ug/generic-linux-install.html).
 
 1. Install the AWS Command Line Interface. See the [Installing or updating the latest version of the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html) procedures in the *AWS Command Line Interface User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

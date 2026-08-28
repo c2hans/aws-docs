@@ -793,3 +793,7 @@ The following considerations apply when using these prompts to perform security 
 + **Severity ratings may differ between personas.** The Security Engineer persona rates findings based strictly on attacker reachability (whether exploitation requires a separate prerequisite such as database compromise), while the SDE persona emphasizes immediate remediation priority. The same vulnerability may receive different severity ratings depending on the persona used.
 + **Review scope is limited to provided code.** The model does not speculate about vulnerabilities in code it cannot see. If a vulnerability spans multiple files, provide all relevant files in the same request.
 + **Mitigate prompt injection risk.** Source code provided as input can contain instructions intended to manipulate the model. Treat code under review as untrusted data rather than as trusted instructions. For more information, see [Prompt injection](https://docs.aws.amazon.com/bedrock/latest/userguide/prompt-injection.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

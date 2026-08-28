@@ -38,3 +38,7 @@ Time period aggregation – For example, when the *Inventory* demand driver is a
 Granularity level aggregation – Here is an example of how demand planning uses the granularity level aggregation. *out\_of\_stock\_indicator* is available daily at product-site level but forecast granularity is only available at product level. Demand Planning will apply the aggregation method configured under the demand plan settings for this demand driver.
 
 ![Granularity method used by Demand Planning](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/granularity_example.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

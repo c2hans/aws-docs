@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-m
 <a name="9999999999999999aws--resources.25b6d7f8-612d-5b15-a174-3a3803b26446"></a>
 + [MongoDB Atlas Data lake Lets Developers Create Value from Rich Modern Data](https://aws.amazon.com/blogs/apn/mongodb-atlas-data-lake-lets-developers-create-value-from-rich-modern-data/) (AWS Partner Network blog post)
 + [Integrating the MongoDB Cloud with Amazon Data Firehose](https://aws.amazon.com/blogs/big-data/integrating-the-mongodb-cloud-with-amazon-kinesis-data-firehose/) (AWS Big Data blog post)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

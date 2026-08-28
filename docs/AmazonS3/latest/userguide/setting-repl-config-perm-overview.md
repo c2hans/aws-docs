@@ -367,3 +367,7 @@ Instead of manually adding the preceding policy to your destination bucket, you 
 <a name="change-replica-ownership"></a>
 
 When different AWS accounts own the source and destination buckets, you can tell Amazon S3 to change the ownership of the replica to the AWS account that owns the destination bucket. To override the ownership of replicas, you must either grant some additional permissions or adjust the S3 Object Ownership settings for the destination bucket. For more information about owner override, see [Changing the replica owner](replication-change-owner.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

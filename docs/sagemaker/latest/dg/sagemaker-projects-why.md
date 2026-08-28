@@ -47,3 +47,7 @@ Adopting MLOps practices gives you faster time-to-market for ML projects by deli
 + **Reliability**: Incorporating CI/CD practices allows for the ability to not only deploy quickly but with increased quality and consistency.
 + **Auditability**: Versioning all inputs and outputs, from data science experiments to source data to trained model, means that we can demonstrate exactly how the model was built and where it was deployed.
 + **Data and model quality**: MLOps lets us enforce policies that guard against model bias and track changes to data statistical properties and model quality over time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

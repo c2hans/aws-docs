@@ -32,3 +32,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 1.  From the navigation pane, choose **General**.
 
 1.  In **Delegated administrator**, choose **Configure**. Select one of the provided AWS accounts, or enter the 12-digit AWS account number for the AWS account that you want to designate as the delegated administrator for your organization. Choose **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

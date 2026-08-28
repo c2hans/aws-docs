@@ -46,3 +46,7 @@ You can use the CloudWatch console to see a graph of Athena usage metrics and co
    The graph above displays your current usage of the AWS resource.
 
 For information about adding service quotas to the graph and setting an alarm that notifies you if you approach the service quota, see [Visualizing your service quotas and setting alarms](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Quotas-Visualize-Alarms.html) in the *Amazon CloudWatch User Guide*. For information about setting usage limits per workgroup, see [Configure per-query and per-workgroup data usage controls](workgroups-setting-control-limits-cloudwatch.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

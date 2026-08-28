@@ -19,3 +19,7 @@ For emergent issues or quick troubleshooting questions, we recommend reaching ou
 + **Amazon Advanced Solutions Lab (ASL):** The ASL is a collaborative research and professional services team staffed with quantum computing experts who can help you effectively explore quantum computing and assess the current performance of this technology.
   + To contact the ASL, select **Connect**, and fill out contact information and use case details.
   + The ASL team will reach out to you through email with next steps.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/bulk-
  Importing of data through Import Task is supported in two ways:
 +  During graph creation: [Create a graph from Amazon S3, a Neptune cluster, or a snapshot](bulk-import-into-a-graph.md)
 +  On an existing empty graph: [Bulk import data into an existing Neptune Analytics graph](loading-data-existing-graph.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

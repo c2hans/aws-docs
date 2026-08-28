@@ -25,3 +25,7 @@ Connect Customer stores contact history in unique customer profiles. It parses d
 For information about how customer profile data are secured, see [Data protection in Connect Customer](data-protection.md).
 
 For more information about how to access the data that is stored in a customer profile, see [Access Customer Profiles in the agent workspace](https://docs.aws.amazon.com/connect/latest/adminguide/customer-profile-access.html) or [ Use the Customer Profiles API](https://docs.aws.amazon.com/connect/latest/adminguide/use-customerprofiles-api.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

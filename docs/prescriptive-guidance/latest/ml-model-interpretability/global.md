@@ -12,3 +12,7 @@ Understanding how features contribute to a model's output overall provides gener
 For a specified model output, the collection of SHAP values across the evaluation instances can be visualized in a beeswarm plot, as illustrated in the following diagram (for a subset of data from the iris dataset [[4](resources.md)]).  Here you can see that the petal\_width attribute has the largest effect on the model output for the class Iris-versicolor, and that a high petal\_width value contributes negatively to the class prediction.  When more than one data point has the same or very similar feature attribution value, the dots are stacked to indicate the larger prevalence at that location.
 
 ![Beeswarm plot visualization for the iris classification model with SHAP values](http://docs.aws.amazon.com/prescriptive-guidance/latest/ml-model-interpretability/images/guide-img/06158d60-43d0-4890-98e0-af89411cf496/images/93ee6068-32fe-4017-9a0d-3767a30bb893.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

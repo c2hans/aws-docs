@@ -24,3 +24,7 @@ The DASH-IF CPIX specification, https://dashif.org/docs/DASH-IF-CPIX-v2-0.pdf, s
 + SPEKE does not currently support multiple tracks or keys per content.
 
   The SPEKE-compliant encryptor acts as a client and sends `POST` operations to the key provider endpoint. The encryptor might send a periodic `heartbeat` request to ensure that the connection between the encryptor and the key provider endpoint is healthy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Packager and Encoder Key Exchange API Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query speke` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

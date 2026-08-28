@@ -61,3 +61,7 @@ You can generate mocked responses for AWS service actions. This is helpful for t
 <a name="generative-ai-ask-ai"></a>
 
 Within the application studio, you'll find an **Ask AI for help** button on supported resources or properties. Use this to get contextual suggestions, documentation, and guidance related to the current view or selected component. Ask general questions about App Studio, app building best practices, or your specific application use case to receive tailored information and recommendations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

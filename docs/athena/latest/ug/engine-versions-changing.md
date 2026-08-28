@@ -124,3 +124,7 @@ When a workgroup is upgraded to a new engine version, some of your queries can b
 If a query fails after an engine version upgrade, check for breaking changes, including changes that may affect the syntax in your queries.
 
 If your queries still fail, contact AWS Support for assistance. In the AWS Management Console, choose **Support**, **Support Center**, or ask a question on [AWS re:Post](https://repost.aws/tags/TA78iVOM7gR62_QqDe2-CmiA/amazon-athena) using the **Amazon Athena** tag.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ The following table describes the important changes in each release of the *AWS 
 | [Documentation updates](#doc-history) | Added Authentication and Access Control topic to the *AWS Serverless Application Repository Developer Guide*. | July 2, 2018 |
 | [Public release](#doc-history) | Public release of the AWS Serverless Application Repository, which is now available in 14 AWS Regions. For more information about the AWS Regions where the AWS Serverless Application Repository is available and AWS Serverless Application Repository endpoints, see [Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#serverlessrepo_region) in the *AWS General Reference*. | February 20, 2018 |
 | [New guide](#doc-history) | This is the first, preview release of the *AWS Serverless Application Repository Developer Guide*. | November 30, 2017 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Repository. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverlessrepo` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

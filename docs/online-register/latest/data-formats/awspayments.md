@@ -23,3 +23,7 @@ AWS Payments provides the following APIs for data retrieval.
 | <a name="payments-ListPaymentProgramOptions"></a>[ListPaymentProgramOptions](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref) | List information about payment options | List |
 | <a name="payments-ListPaymentProgramStatus"></a>[ListPaymentProgramStatus](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/security_iam_id-based-policy-examples.html#billing-permissions-ref) | List information about payment program eligibility and enrolment status | List |
 | <a name="payments-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-permissions-ref.html) | List tags on a payment resource | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

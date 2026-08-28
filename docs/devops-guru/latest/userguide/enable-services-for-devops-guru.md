@@ -15,3 +15,7 @@ DevOps Guru uses Amazon CloudWatch metrics, AWS CloudTrail events, and more to 
 + Amazon Simple Storage Service – To generate metrics for DevOps Guru to analyze, you must enable request metrics. Follow the steps in [Creating a CloudWatch metrics configuration for all the objects in your bucket.](https://docs.aws.amazon.com/AmazonS3/latest/userguide/configure-request-metrics-bucket.html) DevOps Guru doesn’t analyze any Amazon S3 resources until generation of these metrics is set up. Doing this might incur CloudWatch and Amazon S3 charges.
 
 For more information, see [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

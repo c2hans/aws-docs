@@ -263,3 +263,7 @@ You can resolve this issue in the following ways:
 + Force an unmount using the **umount -f** command.
 **Warning**
 Forcing an unmount interrupts any data read or write operations that are currently in process for the file system. See the [umount man page](https://man7.org/linux/man-pages/man8/umount.8.html) for more information and guidance when using this option.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

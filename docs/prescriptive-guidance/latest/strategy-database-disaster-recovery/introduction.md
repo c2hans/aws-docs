@@ -18,3 +18,7 @@ When the DR strategy is in place, the executive management team works with the a
 ![High-level process for defining and implementing a database DR strategy](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-database-disaster-recovery/images/guide-img/83d34a15-2fdf-4836-9bdc-934f468f5336/images/eac2a4d0-7111-48db-8945-d5265893ed9c.png)
 
 This article explains these steps at a high level for business leaders and decision makers who want to formulate a cross-Region DR strategy that helps meet their business objectives. The article assumes some technical knowledge and familiarity with disaster recovery terminology but no AWS expertise.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

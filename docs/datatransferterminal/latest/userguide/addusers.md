@@ -40,3 +40,7 @@ To remove personnel from your Data Transfer Terminal account, do the following:
 1. Click the radio button next to the alias you would like to remove. Note that you will only be able to see the person’s alias when deleting their profile.
 
 1. Select **Delete** button. A warning will appear to confirm the intended action for the selected personnel. Click the **Delete** button to continue. A banner will appear at the top of the console confirming the personnel was deleted successfully.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Transfer Terminal. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datatransferterminal` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

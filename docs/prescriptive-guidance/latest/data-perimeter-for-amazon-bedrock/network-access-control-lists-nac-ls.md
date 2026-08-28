@@ -49,3 +49,7 @@ This NACL is applied to the AI workload subnet to restrict traffic at the subnet
 + **Rule 100** – Allows outbound HTTPS (port 443) to VPC CIDR for Amazon Bedrock API calls through VPC endpoints.
 + **Rule 110** – Allows outbound ephemeral ports (1024-65535) to VPC CIDR for return traffic from Amazon Bedrock responses.
 + **Implicit deny** – All other traffic is denied by default NACL rule (32767).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

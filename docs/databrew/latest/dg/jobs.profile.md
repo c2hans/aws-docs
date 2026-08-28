@@ -40,3 +40,7 @@ Use the following procedure to create a DataBrew profile job.
 1. For **Associated Schedule**, you can apply a DataBrew job schedule so that your job runs at a particular time, or on a recurring basis. For more information, see [Automating job runs with a schedule](jobs.recipe.md#jobs.scheduling).
 
 1. When the settings are as you want them, choose **Create job**. Or, if you want to run the job immediately, choose **Create and run job**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

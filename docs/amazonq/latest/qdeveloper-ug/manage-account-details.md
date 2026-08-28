@@ -21,3 +21,7 @@ If you're an administrator who has subscribed a set of IAM Identity Center workf
 1. Choose **Settings**.
 
    The start URL is shown in **Start URL** near the top of the page. The start URL is specific to your organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

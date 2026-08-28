@@ -20,3 +20,7 @@ AWS App Runner now offers the ability to receive *incoming IPv6 traffic* through
 Currently, any network traffic originating from IPv6 endpoint cannot be received by App Runner services hosted in an Amazon Virtual Private Cloud (Amazon VPC). For all App Runner *private services* only *IPv4 traffic* is supported. For all *outgoing traffic* also only *IPv4* is supported.
 
 For more information about how to enable dual stack for your App Runner service, see [Enabling dual stack for public incoming traffic](https://docs.aws.amazon.com/apprunner/latest/dg/network-dual-stack.html) in the *AWS App Runner Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

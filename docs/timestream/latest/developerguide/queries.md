@@ -58,3 +58,7 @@ The table below shows an illustrative example for how Timestream stores data rep
 | region | az | vpc | instance\_id | cpu\_utilization |
 | --- | --- | --- | --- | --- |
 |  us-east-1  |  us-east-1d  |  vpc-1a2b3c4d  |  i-1234567890abcdef0  |  [{time: 2019-12-04 19:00:00.000000000, value: 35}, {time: 2019-12-04 19:00:01.000000000, value: 38.2}, {time: 2019-12-04 19:00:02.000000000, value: 45.3}]  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

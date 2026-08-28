@@ -90,3 +90,7 @@ eksctl utils update-cluster-vpc-config -f config.yaml
 For a complete example, refer to [cluster-subnets-sgs.yaml](https://github.com/eksctl-io/eksctl/blob/main/examples/38-cluster-subnets-sgs.yaml).
 
 Without the `--approve` flag, eksctl only logs the proposed changes. Once you are satisfied with the proposed changes, rerun the command with the `--approve` flag.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

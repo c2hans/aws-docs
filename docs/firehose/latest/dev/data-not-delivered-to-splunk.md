@@ -27,3 +27,7 @@ Check the following if data is not delivered to your Splunk endpoint.
 + Make sure that the IAM role that is specified in your Firehose stream can access the S3 backup bucket and the Lambda function for data transformation (if data transformation is enabled). Also, make sure that the IAM role has access to CloudWatch Logs group and log streams to check error logs. For more information, see [Grant FirehoseAccess to a Splunk Destination](https://docs.aws.amazon.com/firehose/latest/dev/controlling-access.html#using-iam-splunk).
 + To redrive the data that was delivered to S3 error bucket (S3 backup) back to Splunk, follow the steps mentioned in the [Splunk documentation](https://www.splunk.com/en_us/blog/tips-and-tricks/aws-technical-add-on-simplifying-error-data-re-ingestion.html).
 + See [Troubleshoot the Splunk Add-on for Amazon Kinesis Firehose](http://docs.splunk.com/Documentation/AddOns/released/Firehose/Troubleshoot).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

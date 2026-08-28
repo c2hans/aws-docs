@@ -56,3 +56,7 @@ DocumentDB serverless is intended for variable or "spiky" workloads. With such u
   + **Reader instances** — DocumentDB serverless can take advantage of reader instances to scale horizontally. When a cluster contains one or more reader instances, the cluster can fail over immediately in case of problems with the writer instance.
   + **Multi-AZ clusters** — You can distribute the DocumentDB serverless instances of a cluster across multiple Availability Zones (AZs). Setting up a Multi-AZ cluster helps to ensure business continuity even in the rare case of issues that affect an entire AZ.
   + **Global clusters** — You can use DocumentDB serverless in combination with DocumentDB global clusters to create additional read-only copies of your cluster in other AWS Regions for disaster recovery purposes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

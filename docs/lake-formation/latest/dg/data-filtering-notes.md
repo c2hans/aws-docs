@@ -72,3 +72,7 @@ Keep in mind the following notes and restrictions for row-level and cell-level f
 For more information about cell-level filtering, see [Data filtering and cell-level security in Lake Formation](data-filtering.md).
 
 For consideration and limitations when querying tables using Amazon Redshift Spectrum with row-level security policies, see [Considerations and limitations using RLS policies](https://docs.aws.amazon.com/redshift/latest/dg/t_rls_usage.html) in the Amazon Redshift Database Developer Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

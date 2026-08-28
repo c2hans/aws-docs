@@ -88,3 +88,7 @@ To configure and use NuGet with CLI tools such as `dotnet` or `nuget`, see [Conf
 1. If you have configured your package repository with an upstream connection to the NuGet Gallery, disable the **nuget.org** source.
 
 After configuration, Visual Studio can consume packages from your CodeCatalyst repository, any of its upstream repositories, or from [NuGet.org](https://www.nuget.org/) if you have it configured as an upstream source. For more information about browsing and installing NuGet packages in Visual Studio, see [Install and manage packages in Visual Studio using the NuGet Package Manager](https://docs.microsoft.com/en-us/nuget/consume-packages/install-use-packages-visual-studio) in the *NuGet documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

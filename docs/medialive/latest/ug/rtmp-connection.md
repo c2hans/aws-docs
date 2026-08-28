@@ -29,3 +29,7 @@ There are several fields that control how MediaLive behaves if the connection to
 + When that time expires, **Cache full behavior** specifies whether to disconnect immediately or wait 5 minutes.
 + If MediaLive disconnects, then **Restart delay** specifies how long to wait before trying to reconnect.
 + When MediaLive tries to reconnect, **Connection retry interval** specifies how often to retry. **Num retries** specifies how many times to retry. When the retries expire, this output stops. The channel stops because the single output has lost its connection.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

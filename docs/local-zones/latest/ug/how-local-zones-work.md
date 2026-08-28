@@ -52,3 +52,7 @@ Creating a resource in a Local Zone subnet puts it close to your users. For a li
 Learn how to get started with AWS Local Zones with the following resources:
 + [Getting started](https://docs.aws.amazon.com/local-zones/latest/ug/getting-started.html)
 + [Get Started Deploying Low Latency Applications with AWS Local Zones](https://aws.amazon.com/tutorials/deploying-low-latency-applications-with-aws-local-zones/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Local Zones. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query local-zones` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

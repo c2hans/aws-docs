@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/de
 +  AWS Whitepaper – Overview of Amazon Web Services: [Analytics](https://docs.aws.amazon.com/whitepapers/latest/aws-overview/analytics.html)
 +  AWS Big Data Blog: [Building high-quality benchmark tests for Amazon Redshift using Apache JMeter](https://aws.amazon.com/blogs/big-data/building-high-quality-benchmark-tests-for-amazon-redshift-using-apache-jmeter/)
 +  AWS Big Data Blog: [Top 10 performance tuning techniques for Amazon Redshift](https://aws.amazon.com/blogs/big-data/top-10-performance-tuning-techniques-for-amazon-redshift/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

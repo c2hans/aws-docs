@@ -12,3 +12,7 @@ Complete the following tasks to get set up before you can run an application wit
 + Confirm that the JobManager service account has appropriate permissions to create and watch TaskManager pods. For more information, see [Flink JobManager service account security requirements for Native Kubernetes](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/jobruns-flink-native-kubernetes-security-requirements.html).
 + Set up your local [AWS credentials profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html).
 + [Create or updating a kubeconfig file for an Amazon EKS cluster ](https://docs.aws.amazon.com/eks/latest/userguide/create-kubeconfig.html)on which you want to run the Flink applications.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

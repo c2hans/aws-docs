@@ -11,3 +11,7 @@ You can use CodeBuild GitHub global or organization webhooks to start builds on 
 + [Set up a global or organization GitHub webhook](github-global-organization-webhook-setup.md)
 + [Filter GitHub global or organization webhook events (console)](github-global-organization-webhook-events-console.md)
 + [Filter GitHub organization webhook events (CloudFormation)](github-organization-webhook-events-cfn.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

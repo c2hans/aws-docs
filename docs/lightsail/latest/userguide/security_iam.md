@@ -124,3 +124,7 @@ When multiple types of policies apply to a request, the resulting permissions ar
 + [AWS managed policies](security-iam-awsmanpol.md)
 + [Lightsail policies and roles](security_iam_service-with-iam.md)
 + [Manage IAM user access](amazon-lightsail-managing-access-for-an-iam-user.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

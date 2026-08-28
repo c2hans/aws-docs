@@ -118,3 +118,7 @@ The following limitations apply to creating a DB instance read replica from a Mu
 + The DB instance read replica doesn't support cascading read replicas.
 + For RDS for PostgreSQL, the source Multi-AZ DB cluster must be running PostgreSQL version 13.11, 14.8, or 15.2.R2 or higher in order to create a DB instance read replica.
 + You can perform a major version upgrade on the source Multi-AZ DB cluster of a DB instance read replica, but replication to the read replica stops and can't be restarted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

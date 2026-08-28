@@ -38,3 +38,7 @@ This documentation is associated with the 2012-10-29 version of AWS Data Pipelin
 | DynamoDBDataFormat | Added DynamoDBDataFormat template. | 23 April 2013 |
 | Process Web Logs video and Spot Instances support | Introduced the video "Process Web Logs with AWS Data Pipeline, Amazon EMR, and Hive," and Amazon EC2 Spot Instances support. | 21 February 2013 |
 |  | The initial release of the AWS Data Pipeline Developer Guide.  | 20 December 2012 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

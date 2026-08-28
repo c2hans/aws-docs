@@ -12,3 +12,7 @@ The following table indicates the support that GuardDuty's various features have
 | [Amazon EKS Auto Mode](https://aws.amazon.com/eks/auto-mode/) | Supported | Supported |
 | [Amazon ECS AWS Fargate Managed Instance](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ManagedInstances.html) | Unsupported | Supported |
 | [Lambda Managed Instance](https://docs.aws.amazon.com/lambda/latest/dg/lambda-managed-instances.html) | Unsupported | Unsupported |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -138,3 +138,7 @@ The following table describes some of the modules that you can use to filter log
 | `aws_sigv4` | Request signing and canonical requests |
 
 One way to figure out which modules you need to include in your log output is to first log everything, then find the crate name in the log output for the information you need. Then you can set the environment variable accordingly and run your program again.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Rust. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-rust` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

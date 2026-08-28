@@ -11,3 +11,7 @@ A security group acts as a virtual firewall, which controls the inbound and outb
   + To search for a specific security group, use the search box.
   + If you add security groups via the AWS Console, they appear on the Security group drop-down list in the AWS Elastic Disaster Recovery Console. Learn more about AWS security groups in [this VPC article](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html).
   + Any security group that you select is added to the default AWS Elastic Disaster Recovery group, because the default security group is essential for the operation of AWS Elastic Disaster Recovery.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

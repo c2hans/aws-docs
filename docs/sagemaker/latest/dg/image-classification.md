@@ -120,3 +120,7 @@ For image classification, we support P2, P3, G4dn, and G5 instances. We recommen
 <a name="IC-sample-notebooks"></a>
 
 For a sample notebook that uses the SageMaker AI image classification algorithm, see [Build and Register an MXNet Image Classification Model via SageMaker Pipelines](https://github.com/aws-samples/amazon-sagemaker-pipelines-mxnet-image-classification/blob/main/image-classification-sagemaker-pipelines.ipynb). For instructions how to create and access Jupyter notebook instances that you can use to run the example in SageMaker AI, see [Amazon SageMaker notebook instances](nbi.md). Once you have created a notebook instance and opened it, select the **SageMaker AI Examples** tab to see a list of all the SageMaker AI samples. The example image classification notebooks are located in the **Introduction to Amazon algorithms** section. To open a notebook, click on its **Use** tab and select **Create copy**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

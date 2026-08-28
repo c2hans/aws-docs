@@ -97,3 +97,7 @@ Depending on the operation, a completion method may be needed.
 + **Impact: **The API `getKey` operation has a memory leak in JCE in Client SDK versions 5.10.0 and earlier. If you’re using the `getKey` API multiple times in your application, it will lead to increased memory growth and consequently increase the memory footprint in your application. Over time this may cause throttling errors or require the application to be restarted.
 + **Workaround: **We recommend upgrading to Client SDK 5.11.0. If this can't be done, we recommend not calling the `getKey` API multiple times in your application. Rather, reuse the previously returned key from the prior `getKey` operation as much as possible.
 + **Resolution status: **Upgrade your client SDK version to 5.11.0 or later, which includes a fix for this issue.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

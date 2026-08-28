@@ -39,3 +39,7 @@ The following table shows the types of timing that apply to each type of action.
 
 **Note A**
 With a follow, the applicable action can follow an input switch. It can't follow other types of actions. Therefore, the action that is *being followed *is always an input switch. The action that does the follow is an input switch, an input prepare, or a SCTE 35 message.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

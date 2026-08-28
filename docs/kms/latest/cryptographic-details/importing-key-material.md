@@ -41,3 +41,7 @@ You can delete and reimport the *same* imported key material into the specified 
 (Optional) The time at which the imported key material expires. When the key material expires, AWS KMS deletes the key material and the KMS key becomes unusable. This parameter is required when the value of the `ExpirationModel` is `KEY_MATERIAL_EXPIRES`. Otherwise it is invalid.
 
 When the request succeeds, the KMS key is available for use within AWS KMS until the specified expiration date, if one is provided. After the imported key material expires, the EKT is deleted from the AWS KMS storage layer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

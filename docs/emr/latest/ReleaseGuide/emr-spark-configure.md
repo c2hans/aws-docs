@@ -187,3 +187,7 @@ For more information about migrating from Apache Log4j 1.x to Log4j 2.x, see the
 
 **Note**
 With Amazon EMR , Apache Spark uses a `log4j2.properties` file rather than the .xml file described in the [Apache Log4j Migration Guide](https://logging.apache.org/log4j/2.x/manual/migration.html). Also, we do not recommend using the Log4j 1.x bridge method to convert to Log4j 2.x.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

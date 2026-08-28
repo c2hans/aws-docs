@@ -43,3 +43,7 @@ For information about Amazon EC2 instance tags, see [Working with tags using the
 + [Change deployment group settings with CodeDeploy](deployment-groups-edit.md)
 + [Configure advanced options for a deployment group](deployment-groups-configure-advanced-options.md)
 + [Delete a deployment group with CodeDeploy](deployment-groups-delete.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

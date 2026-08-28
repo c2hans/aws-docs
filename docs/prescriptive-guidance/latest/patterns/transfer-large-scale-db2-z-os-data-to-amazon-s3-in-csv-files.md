@@ -175,3 +175,7 @@ After you have your Db2 data on Amazon S3, you have many ways to develop new ins
 In a migration use case, because you can transfer any data from the mainframe to S3, you can do the following:
 + Retire physical infrastructure, and create a cost-effective data archival strategy with Amazon S3 Glacier and S3 Glacier Deep Archive.
 + Build scalable, durable, and secure backup and restore solutions with Amazon S3 and other AWS services, such as S3 Glacier and Amazon Elastic File System (Amazon EFS), to augment or replace existing on-premises capabilities.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

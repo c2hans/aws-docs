@@ -112,3 +112,7 @@ The following table lists the checksums for recent versions of EFA.
 | EFA 1.9.4 | **MD5: **`f26dd5c350422c1a985e35947fa5aa28`<br />**SHA256: **`1009b5182693490d908ef0ed2c1dd4f813cc310a5d2062ce9619c4c12b5a7f14` |
 | EFA 1.9.3 | **MD5: **`95755765a097802d3e6d5018d1a5d3d6`<br />**SHA256: **`46ce732d6f3fcc9edf6a6e9f9df0ad136054328e24675567f7029edab90c68f1` |
 | EFA 1.8.4 | **MD5: **`85d594c41e831afc6c9305263140457e`<br />**SHA256: **`0d974655a09b213d7859e658965e56dc4f23a0eee2dc44bb41b6d039cc5bab45` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

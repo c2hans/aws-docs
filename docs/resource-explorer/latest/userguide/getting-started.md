@@ -62,3 +62,7 @@ While Resource Explorer provides immediate regional search functionality, you ca
 + **Multi-account search:** Configure organization-wide resource discovery (requires management account or delegated administrator permissions).
 
 For detailed setup instructions, see [Setting up and configuring Resource Explorer](getting-started-setting-up.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resource Explorer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resource-explorer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

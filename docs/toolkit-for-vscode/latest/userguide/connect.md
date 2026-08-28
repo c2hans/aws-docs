@@ -106,3 +106,7 @@ The following procedures describe how to authenticate and connect the Toolkit wi
 1. Choose the **Continue** button and confirm that you want to open the **AWS Authorization request** website in your default web browser.
 
 1. Follow the prompts in your default web browser, you're notified when the authorization process is complete, it's safe to close your browser, and return to VS Code.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

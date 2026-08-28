@@ -81,3 +81,7 @@ The dynamic values in brackets [ ] are called [contact attributes](what-is-a-con
 When you add contact attributes in brackets [ ] — such as ContactId, AgentId, QueueId, or RuleName — the value is passed from one contact record to another. You can use contact attributes in your flow to branch and route the contact accordingly.
 
 For more information, see [Use contact attributes](connect-contact-attributes.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

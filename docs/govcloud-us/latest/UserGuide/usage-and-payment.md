@@ -31,3 +31,7 @@ Currently, billing information for GovCloud accounts and regions are only availa
 <a name="savings-plans"></a>
 
 Savings plans for GovCloud account and regions need to be purchased in the Standard commercial account. These plans purchased in the Standard account apply to usage in GovCloud regions. See [How Amazon EC2 Differs for AWS GovCloud (US).](https://docs.aws.amazon.com/govcloud-us/latest/UserGuide/govcloud-ec2.html) In addition, GovCloud accounts inherit discount sharing configuration from their associated commercial accounts. See [Activating shared Reserved Instances and Savings Plans discount sharing.](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ri-turn-off.html#ri-turn-on-process)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

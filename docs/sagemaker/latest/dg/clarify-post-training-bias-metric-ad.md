@@ -42,3 +42,7 @@ The range of values for AD for binary and multicategory facet labels is [-1, \+1
 + Positive values occur when the prediction accuracy for facet *a* is greater than that for facet *d*. It means that facet *d* suffers more from some combination of false positives (Type I errors) or false negatives (Type II errors). This means there is a potential bias against the disfavored facet *d*.
 + Values near zero occur when the prediction accuracy for facet *a* is similar to that for facet *d*.
 + Negative values occur when the prediction accuracy for facet *d* is greater than that for facet *a* t. It means that facet *a* suffers more from some combination of false positives (Type I errors) or false negatives (Type II errors). This means the is a bias against the favored facet *a*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

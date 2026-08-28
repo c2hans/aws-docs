@@ -30,3 +30,7 @@ Use the following procedures to create an AWS AppConfig extension association by
 1. Choose **Create association to resource**.
 
 After you create the association, you can invoke the `MyS3ConfigurationBackUpExtension` extension by creating a new configuration profile that specifies `hosted` for its `SourceUri`. As a part of the workflow to create the new configuration, AWS AppConfig encounters the `PRE_CREATE_HOSTED_CONFIGURATION_VERSION` action point. Encountering this action point invokes the `MyS3ConfigurationBackUpExtension` extension, which automatically backs up the newly created configuration to the S3 bucket specified in the `Parameter` section of the extension association.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

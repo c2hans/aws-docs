@@ -26,3 +26,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/cloud-migration-factory
 |  [AWS Glue](https://aws.amazon.com/glue/)  |  **Optional.** Regularly extracts data held in Amazon DynamoDB to Amazon S3, providing reporting data for use in Amazon Athena and Amazon QuickSight dashboards. |  |
 |  [Amazon Athena](https://aws.amazon.com/athena/)  |  **Optional.** Provides access to reporting data extracted by AWS Glue from the migration metadata, allowing dashboards to be created using Amazon QuickSight. |  |
 |  [AWS Web Application Firewall](https://aws.amazon.com/waf/)  |  **Optional.** Apply additional security on the endpoints for Amazon API Gateway and Amazon CloudFront to restrict access to specific devices based on source IP address or other access criteria. |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -58,6 +58,8 @@ Amazon Windows AMIs contain a set of drivers to permit access to virtualized har
 + Use AWS Systems Manager to automatically update the PV drivers. For more information, see [Walkthrough: Automatically Update PV Drivers on EC2 Windows Instances](https://docs.aws.amazon.com/systems-manager/latest/userguide/state-manager-update-pv-drivers.html) in the *AWS Systems Manager User Guide*.
 +  [Download](https://s3.amazonaws.com/ec2-windows-drivers-downloads/AWSPV/Latest/AWSPVDriver.zip) the driver package and run the install program manually. For information about downloading and installing the AWS PV drivers, or upgrading a domain controller, see [Upgrade Windows Server instances (AWS PV upgrade) manually](Upgrading_PV_drivers.md#aws-pv-upgrade).
 
+For system requirements for installing the AWS PV driver package, see [System requirements for the AWS PV driver package](Upgrading_PV_drivers.md#aws-pv-requirements).
+
 ### AWS PV driver package history
 <a name="pv-driver-history"></a>
 
@@ -179,3 +181,7 @@ Connect-SNSNotification `
 ```
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

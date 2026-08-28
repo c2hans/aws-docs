@@ -64,3 +64,7 @@ This update includes the following improvements:
 + When committing a transaction, a flag is now used to check whether a thread has been created, rather than checking the thread itself, which uses more resources, particularly when running the server with master\_info\_repository=TABLE. (Bug \#18684222)
 + If a client thread on a worker executed FLUSH TABLES WITH READ LOCK while the master executed a DML, executing `SHOW SLAVE STATUS` in the same client became blocked, causing a deadlock. (Bug \#19843808)
 + Ordering by a GROUP\_CONCAT() result could cause a server exit. (Bug \#19880368)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

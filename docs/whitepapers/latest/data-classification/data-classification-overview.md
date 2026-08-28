@@ -42,3 +42,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/data-classification/d
 1.  **Continuous monitoring** *—* Continue to monitor the security, usage and access patterns of systems and data. This can be done through automated (preferred) or manual processes to identify external threats, maintain normal system operations, install updates, and track changes to the environment.
 
  For guidance on how this process can be supported by AWS services, refer to the *Leveraging the AWS Cloud to support data classification* section of this document.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

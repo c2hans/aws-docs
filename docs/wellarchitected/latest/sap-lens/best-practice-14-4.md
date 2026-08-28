@@ -31,3 +31,7 @@ When physical memory resources are exhausted, SAP uses swap to move inactive pag
 +  SAP Note: [153641 - Swap space requirement for R/3 64-bit kernel](https://launchpad.support.sap.com/#/notes/153641) [Requires SAP Portal Access]
 +  SAP Note: [2999334 - SWAP Utilization](https://launchpad.support.sap.com/#/notes/2999334) (HANA related) [Requires SAP Portal Access]
 +  SAP Note: [2488097 - FAQ: Memory usage for the ABAP Server on Windows](https://launchpad.support.sap.com/#/notes/2488097) [Requires SAP Portal Access]
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

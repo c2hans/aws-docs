@@ -45,3 +45,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-business-pers
    Products need to be owned and operated across organizations to increase customer feedback and reduce handoffs for a more responsive product-based organization. Empowerment and investment in enabling teams to own products from ideation to operation is key to promoting a “you built-it, you run it” mentality.
 
    This approach guides your teams to invest in self-service documentation and tools that allow 2PTs to be accountable for their product’s testing, DevOps, and security.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

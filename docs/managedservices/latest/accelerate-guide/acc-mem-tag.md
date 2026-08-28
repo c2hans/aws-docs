@@ -14,3 +14,7 @@ Use Resource Tagger to apply the tag key **ams:rt:ams-managed** with tag value 
 + [Accelerate tags without Resource Tagger](acc-mem-tags-no-rt.md)
 + [Accelerate tags using CloudFormation](acc-mem-tags-cfn.md)
 + [Accelerate tags using Terraform](acc-mem-tags-terraform.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

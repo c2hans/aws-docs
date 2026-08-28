@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/apigateway/latest/developerguide/websock
 # Protect your WebSocket APIs in API Gateway
 <a name="websocket-api-protect"></a>
 
-API Gateway provides a number of ways to protect your API from certain threats, like malicious users or spikes in traffic. You can protect your API using strategies like generating SSL certificates or setting throttling targets. For more information about generating SSL certificates, see [Generate and configure an SSL certificate for backend authentication in API Gateway](getting-started-client-side-ssl-authentication.md). The rest of this section covers setting throttling targets.
+API Gateway provides a number of ways to protect your API from certain threats, like malicious users or spikes in traffic. You can protect your API using strategies like generating SSL certificates or setting throttling targets. For more information about generating SSL certificates, see [Use an API Gateway-generated certificate for backend authentication in API Gateway](getting-started-client-side-ssl-authentication.md). The rest of this section covers setting throttling targets.
 
 You can configure throttling for your APIs to help protect them from being overwhelmed by too many requests. Throttles are applied on a best-effort basis and should be thought of as targets rather than guaranteed request ceilings.
 
@@ -35,3 +35,7 @@ aws apigatewayv2 update-stage \
     --stage-name {{dev}} \
     --route-settings '{"{{messages}}":{"ThrottlingBurstLimit":{{100}},"ThrottlingRateLimit":{{2000}}}}'
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

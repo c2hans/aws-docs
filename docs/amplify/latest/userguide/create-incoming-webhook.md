@@ -28,3 +28,7 @@ Set up an incoming webhook in the Amplify console to start a build without commi
 1. In the **Incoming webhooks** section, do one of the following:
    + Copy the webhook URL and provide it to a headless CMS tool or other service to initiate builds.
    + Run the curl command in a terminal window to start a new build.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

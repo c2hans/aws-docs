@@ -29,3 +29,7 @@ aws amscm approve-rfc --rfc-id {{RFC_ID}}
 | `CustomerApprovalId: Required` | The AMS change type system and you, | A notification is sent to you, and you must explicitly approve the RFC, either by responding to the notice, or running the [ApproveRfc](https://docs.aws.amazon.com/managedservices/latest/ApiReference-cm/API_ApproveRfc.html) operation. |
 | `CustomerApprovalId: NotRequiredIfSubmitter` | The AMS change type system and no one else, if you submitted the RFC. | If the RFC passes syntax and parameter checks, it is auto approved. |
 | Urgent Security Incident or Patch | AMS | Is auto approved and implemented. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

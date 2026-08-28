@@ -43,3 +43,7 @@ To set the stage for transformation, organizations require a diverse set of view
 +  Pilot what success looks like by establishing an initial cross-functional team, identifying a candidate workload or set of workloads to run on AWS, tracking clearly defined metrics, creating opportunities for continuous learning, and celebrating early wins.
 
 By following these guidelines, you can set a foundation that can be emulated and scaled to other parts of the organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

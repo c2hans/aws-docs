@@ -70,3 +70,7 @@ After the stack is successfully created, this solution generates a CloudFront do
 1. After the verification is complete, the system opens the Centralized Logging with OpenSearch web console.
 
 Once you have logged into the Centralized Logging with OpenSearch console, you can [import an Amazon OpenSearch Service domain](getting-started.md#step-1-import-an-amazon-opensearch-domain) and build log analytics pipelines.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Logging with OpenSearch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -62,3 +62,7 @@ If you can't find the URL to access your App Studio instance, reach out to the a
 <a name="troubleshooting-onboarding-wrong-flow"></a>
 
 You cannot offboard from App Studio at this moment. It is recommended to remove all resources such as apps and connectors, and change the role of groups to App User to prevent access or use. You should also delete third-party resources that are used exclusively for App Studio, such as IAM roles or database tables.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

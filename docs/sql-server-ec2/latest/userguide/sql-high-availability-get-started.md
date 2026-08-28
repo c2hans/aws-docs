@@ -71,12 +71,31 @@ You must enable SQL HA standby detection for Windows SQL Server license-included
 ------
 #### [ AWS CLI ]
 
-Use the [ enable-instance-sql-ha-standby-detections](https://docs.aws.amazon.com/cli/latest/reference/ec2/enable-instance-sql-ha-standby-detections.html) command. For `instance-ids` specify the IDs of the instances to opt in. If you choose to perform Step 3: Create secret for SQL Server credentials, specify the optional `--sql-server-credentials` with the Amazon Web Services secret arn that has the SQL Server credentials in.
+Use the [ enable-instance-sql-ha-standby-detections](https://docs.aws.amazon.com/cli/latest/reference/ec2/enable-instance-sql-ha-standby-detections.html) command. For `instance-ids` specify the IDs of the instances to opt in. Specify multiple instance IDs as a space-separated list. If you choose to perform Step 3: Create secret for SQL Server credentials, specify the optional `--sql-server-credentials` parameter. This parameter takes the Amazon Web Services secret ARN that has the SQL Server credentials.
 
 ```
 aws ec2 enable-instance-sql-ha-standby-detections \
---instance-ids {{instance_ids}} \
---sql-server-credentials {{secret_manager_secret_arn}}
+--instance-ids {{i-1234567890abcdef0}} {{i-0fedcba0987654321}} \
+--sql-server-credentials {{arn:aws:secretsmanager:us-east-1:111122223333:secret:my-sql-creds}}
 ```
 
+You can run these commands from [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html), which comes with the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) pre-installed.
+
 ------
+#### [ PowerShell ]
+
+Use the [ Enable-EC2InstanceSqlHaStandbyDetection](https://docs.aws.amazon.com/powershell/latest/reference/items/Enable-EC2InstanceSqlHaStandbyDetection.html) cmdlet. For `-InstanceId` specify the IDs of the instances to opt in. If you choose to perform Step 3: Create secret for SQL Server credentials, specify the optional `-SqlServerCredential` parameter. This parameter takes the Amazon Web Services secret ARN that has the SQL Server credentials.
+
+```
+Enable-EC2InstanceSqlHaStandbyDetection `
+-InstanceId '{{i-1234567890abcdef0}}','{{i-0fedcba0987654321}}' `
+-SqlServerCredential '{{arn:aws:secretsmanager:us-east-1:111122223333:secret:my-sql-creds}}'
+```
+
+You can run these cmdlets from [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html), which comes with [AWS Tools for PowerShell](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-welcome.html) pre-installed. Run `pwsh` to start PowerShell.
+
+------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SQL Server on Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sql-server-ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

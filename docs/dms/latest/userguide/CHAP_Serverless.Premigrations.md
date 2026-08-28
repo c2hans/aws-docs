@@ -44,3 +44,7 @@ Serverless premigrations has the following limitations:
 + AWS DMS Serverless retains only the most recent pre-migration assessment results when you call the describe-replications API. While older assessment runs are removed from the immediate display, the corresponding result files remain accessible in the S3 results bucket.
 + Custom S3 buckets cannot be chosen to store the assessment results.
 + Transformations on remap schema, table, columns are not supported by preflight.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

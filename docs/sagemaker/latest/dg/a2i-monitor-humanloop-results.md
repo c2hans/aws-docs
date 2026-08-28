@@ -39,3 +39,7 @@ To learn more about Amazon A2I output data format, see [Amazon A2I Output Data](
 1. If successful, `ListHumanLoops` returns [`HumanLoopSummaries`](https://docs.aws.amazon.com/augmented-ai/2019-11-07/APIReference/API_HumanLoopSummary.html) and `NextToken` objects in the response element. `HumanLoopSummaries` contains information about a single human loop. For example, it lists a loop's status and, if applicable, its failure reason.
 
    Use the string returned in `NextToken` as an input in a subsequent call to `ListHumanLoops` to see the next page of human loops.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

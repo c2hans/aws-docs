@@ -53,3 +53,7 @@ The AWS Glue Spark runtime bundles the OpenLineage Spark integration and the Ama
 <a name="snowflake-lineage-glue-spark-verify"></a>
 
 Run the AWS Glue job. After the job completes, open the lineage view in Amazon SageMaker Unified Studio for the target table in your project. Lineage records for the Snowflake sources read by the job appear as upstream nodes in the graph.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

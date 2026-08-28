@@ -50,3 +50,7 @@ The following table describes important additions to the VM Import/Export docume
 | Import Linux virtual machines | Added support for importing Linux instances. | December 16, 2013 |
 | Export a VM from an instance | Added support for exporting Windows Server instances that you originally imported into Amazon EC2.<br />Added support for exporting Linux instances to Citrix Xen, Microsoft Hyper-V, and VMware vSphere. | May 25, 2012 |
 | Import in VHD file format | Added support for importing virtual machine image files in VHD format. With this release, VM Import now supports RAW, VHD, and VMDK (VMware ESX-compatible) image formats. | August 24, 2011 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vm-import` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

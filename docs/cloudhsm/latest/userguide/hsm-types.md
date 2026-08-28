@@ -25,3 +25,7 @@ In addition to cluster modes, AWS CloudHSM offers two HSM types: *hsm1.medium* a
   <tr><td><b>Certification</b></td><td>FIPS 140-2, PCI DSS, PCI PIN, SOC2, and PCI-3DS compliant.</td><td>FIPS 140-3, PCI DSS, PCI PIN, SOC2 and PCI-3DS compliant.</td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

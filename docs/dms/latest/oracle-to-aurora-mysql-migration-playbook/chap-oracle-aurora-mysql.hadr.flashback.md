@@ -195,3 +195,7 @@ aws rds create-db-instance
 | Flashback database to a previous point in time |  <pre>shutdown immediate;<br />startup mount;<br />FLASHBACK DATABASE TO TIME<br />  "TO_DATE ('01/01/2017','MM/DD/YY')";</pre>  | Use the following example to restore your database to 86,400 seconds ago.<pre>aws rds modify-db-cluster<br />--db-clusteridentifier sample-cluster<br />--backtrack-window 86400</pre> |
 
 For more information, see [mysqldump — A Database Backup Program](https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html) in the *MySQL documentation*, [rds](https://docs.aws.amazon.com/cli/latest/reference/rds/index.html#cli-aws-rds) in the *CLI Command Reference* and [Restoring a DB instance to a specified time](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_PIT.html) and [Restoring from a DB snapshot](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_RestoreFromSnapshot.html) in the *Amazon RDS user guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

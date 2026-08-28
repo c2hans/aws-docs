@@ -55,3 +55,7 @@ The `sts:GetServiceBearerToken` permission must be added to the IAM user or role
 The `sts:GetServiceBearerToken` permission is required to call the CodeArtifact `GetAuthorizationToken` API. This API returns a token that must be used when using a package manager such as `npm` or `pip` with CodeArtifact. To use a package manager with a CodeArtifact repository, your IAM user or role must allow `sts:GetServiceBearerToken` as shown in the preceding policy example.
 
 If you haven't installed the package manager or build tool that you plan to use with CodeArtifact, see [Install your package manager or build tool](getting-started-install-package-manager.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ Set `core.symlinks` to true with the following command:
     git config --global core.symlinks true
     ```
 Use a console that is elevated as administrator whenever you use a git command that writes to the system (for example, **git pull**, **git clone**, and **git submodule update --init --recursive**).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

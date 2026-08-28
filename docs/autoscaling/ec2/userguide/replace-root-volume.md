@@ -131,3 +131,7 @@ When you add lifecycle hooks, consider the following:
 When instances reach a wait state, Amazon EC2 Auto Scaling sends a notification. Auto Scaling lifecycle hook notifications contain an `Action` field with value `ReplaceRootVolume` to indicate the instance is undergoing root volume replacement.
 
 Examples of these notifications are available in the EventBridge section of this guide. For more information see [Instance refresh replace root volume lifecycle events](instance-refresh-eventbridge-events.md#instance-refresh-rvr-lifecycle-events).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,3 +40,7 @@ You can create, access, and manage your application content and streaming resour
 + AWS SDK – Provides language-specific APIs and takes care of connection details, such as calculating signatures, handling request retries, and error handling. For documentation on the Amazon GameLift Streams service API, see the [Amazon GameLift Streams API Reference](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/). For more general information on the AWS SDK, see [Tools to Build on AWS](https://aws.amazon.com/tools/).
 
 For additional information on supported AWS Regions, see [Regions, quotas, and limitations](regions-quotas.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

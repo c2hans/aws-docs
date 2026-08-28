@@ -24,3 +24,7 @@ The following sections describe how to create and manage endpoints for S3 on Out
 + [Creating an endpoint on an Outpost](S3OutpostsCreateEndpoint.md)
 + [Viewing a list of your Amazon S3 on Outposts endpoints](S3OutpostsListEndpoints.md)
 + [Deleting an Amazon S3 on Outposts endpoint](S3OutpostsDeleteEndpoints.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

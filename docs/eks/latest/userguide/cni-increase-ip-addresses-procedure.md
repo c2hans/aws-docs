@@ -226,3 +226,7 @@ This can happen due to fragmentation of existing secondary IP addresses spread o
    ```
 
    In the previous output, `110` is the maximum number of Pods that Kubernetes will deploy to the node, even though {{144}} IP addresses are available.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

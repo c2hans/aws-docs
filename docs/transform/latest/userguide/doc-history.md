@@ -57,3 +57,7 @@ The following table describes the document history for the AWS Transform User Gu
 | [Documented new AWS managed policy](#doc-history) | Added [AWSTransformApplicationDeploymentPolicy](https://docs.aws.amazon.com/transform/userguide/security-iam-awsmanpol-AWSTransformApplicationDeploymentPolicy.html) section. | August 28, 2025 |
 | [interface endpoints](#doc-history) | Added [ interface endpoints](https://docs.aws.amazon.com/transform/latest/userguide/vpc-interface-endpoints.html) topic. | July 9, 2025 |
 | [Initial release](#doc-history) | Initial release of the AWS Transform User Guide. | May 15, 2025 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

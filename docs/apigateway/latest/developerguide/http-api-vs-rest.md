@@ -107,3 +107,7 @@ Integrations connect your API Gateway API to backend resources. For more informa
 | [Private integrations with AWS Cloud Map](http-api-develop-integrations-private.md) | ![](http://docs.aws.amazon.com/apigateway/latest/developerguide/images/negative_icon.png) No<br /> | ![](http://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) Yes |
 | [Mock integrations](how-to-mock-integration.md) | ![](http://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/apigateway/latest/developerguide/images/negative_icon.png) No |
 | [Response streaming](response-transfer-mode.md) | ![](http://docs.aws.amazon.com/apigateway/latest/developerguide/images/success_icon.png) Yes | ![](http://docs.aws.amazon.com/apigateway/latest/developerguide/images/negative_icon.png) No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

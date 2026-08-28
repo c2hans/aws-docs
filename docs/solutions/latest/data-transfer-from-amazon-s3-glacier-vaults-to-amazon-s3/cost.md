@@ -76,3 +76,7 @@ You can use [AWS CloudTrail](https://aws.amazon.com/cloudtrail/) to log, continu
  As of this revision, you can save $0.00261 per GB per month by storing your archives in the Amazon S3 service with the S3 Glacier Deep Archive storage class applied. For example, if you have 100 TB stored in your Amazon Glacier vault, you can save $261.00 per month by storing that data in the Amazon S3 service with the S3 Glacier Deep Archive storage class applied.
 
  The cost to run the Guidance scales with the size of the Amazon Glacier vault and the number of archives. Cost savings only scale with the Amazon Glacier vault size.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer from Amazon S3 Glacier Vaults to Amazon S3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

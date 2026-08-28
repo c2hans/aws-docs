@@ -14,3 +14,7 @@ Amazon Redshift data sharing is especially useful for these use cases:
 + Sharing data between environments – Share data among development, test, and production environments. You can improve team agility by sharing data at different levels of granularity.
 
 For more information about data sharing, see [Managing data sharing tasks](https://docs.aws.amazon.com/redshift/latest/dg/getting-started-datashare.html) in the *Amazon Redshift Database Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

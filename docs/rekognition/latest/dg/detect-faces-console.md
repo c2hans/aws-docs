@@ -38,3 +38,7 @@ The image must be less than 5MB in size and must be of JPEG or PNG format.
 1. View the confidence score of one the faces detected and its facial attributes in the **Faces \| Confidence** pane.
 
 1. If there are multiple faces in the image, choose one of the other faces to see its attributes and scores.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

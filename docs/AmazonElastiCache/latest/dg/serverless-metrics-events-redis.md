@@ -184,3 +184,7 @@ This section documents the different types of events that you may receive for yo
 | Snapshot export failed | Snapshot arn | failure | serverless-cache-snapshot | Failed to export snapshot for cache <cache-name>. Could not export snapshot to bucket '%s'. |
 | Snapshot copy failed | Snapshot arn-1<br />Snapshot arn-2 | failure | serverless-cache-snapshot | Failed to copy snapshot <snapshot-name>. Could not copy snapshot '%s' to snapshot '%s' with source snapshot Customer Managed Key <key-id> <reason-name>. |
 | Snapshot copy failed | Snapshot arn-1<br />Snapshot arn-2 | failure | serverless-cache-snapshot | Failed to copy snapshot <snapshot-name>. Could not copy snapshot '%s' to snapshot '%s' with target snapshot Customer Managed Key '%s' '%s'. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,3 +28,7 @@ You cannot deny access to your home Region. Certain global AWS services, such as
 To view the template for the Region deny control SCP, see [Deny access to AWS based on the requested AWS Region](https://docs.aws.amazon.com/controltower/latest/controlreference/lz-region-deny.html) in the *AWS Control Tower Control reference*. The AWS Control Tower SCP is similar to [the SCP for AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_examples_general.html#example-scp-deny-region), but not identical.
 
 You can determine Regional service endpoints on the [Regional services page](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

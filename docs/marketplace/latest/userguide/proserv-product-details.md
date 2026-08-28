@@ -70,3 +70,7 @@ For information about how pricing dimensions are used, and how prices are set, s
 <a name="proserv-product-visibility"></a>
 
 Released products can be visible in AWS Marketplace to just your own account, to a small set of test accounts, or to all AWS accounts. By default, the product is published in private release. To change the product visibility, see [Edit product visibility](proserv-getting-started.md#proserv-edit-visibility).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

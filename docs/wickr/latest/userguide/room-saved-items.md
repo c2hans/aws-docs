@@ -20,3 +20,7 @@ Complete the following steps to view items saved for a room or a group.
 1. In the **Room Details** or **Group Details** pane that appears, choose **Saved Items** to view the items saved to the room or group.
 
    You can also choose ![Saved items icon](http://docs.aws.amazon.com/wickr/latest/userguide/images/icon-wickr-room-saved-items.png) in the room or group window to view the saved items.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ If you don't have permissions to view Amazon S3 buckets, MediaPackage doesn't di
 **Note**
 If you don't have permissions to view IAM roles, MediaPackage doesn't display any options. Contact your AWS administrator or enter the role ARN manually in the **Specify custom role name** field.
    + To use a role that MediaPackage hasn't detected, choose **Specify custom role name** and enter the custom ARN of the role. Because MediaPackage doesn't have visibility into this role, it can't tell if the role provides the correct permissions or not.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

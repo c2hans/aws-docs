@@ -365,3 +365,7 @@ aws opensearchserverless delete-security-policy --name {{my-policy}} --type encr
 <a name="serverless-encryption-in-transit"></a>
 
 Within OpenSearch Serverless, all paths in a collection are encrypted in transit using Transport Layer Security 1.2 (TLS) with an industry-standard AES-256 cipher. Access to all APIs and Dashboards for Opensearch is also through TLS 1.2 . TLS is a set of industry-standard cryptographic protocols used for encrypting information that is exchanged over the network.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

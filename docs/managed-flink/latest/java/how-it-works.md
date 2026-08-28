@@ -70,3 +70,7 @@ Managed Service for Apache Flink is an AWS service that creates an environment f
 + **[Implement application scaling](how-scaling.md)**: How your application provisions computing resources.
 
 You create your Managed Service for Apache Flink application using either the console or the AWS CLI. To get started creating a Managed Service for Apache Flink application, see [Tutorial: Get started using the DataStream API in Managed Service for Apache Flink](getting-started.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

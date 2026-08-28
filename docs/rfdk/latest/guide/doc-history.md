@@ -23,3 +23,7 @@ The table below represents significant documentation milestones. We fix errors a
 | "Troubleshooting" topic | Section added for common issues with the RFDK and how to solve them. | September 15, 2020 |
 | "Working with the RFDK" topic | Section added for working with the RFDK, describing prerequisites for TypeScript and Python, as well as how to start a project. | August 31, 2020 |
 | General Availability | Documentation for intial release of RFDK. | August 26, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Render Farm Deployment Kit on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rfdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

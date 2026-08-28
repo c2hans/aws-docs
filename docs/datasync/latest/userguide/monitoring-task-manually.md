@@ -110,3 +110,7 @@ The `watch` utility doesn't recognize the DataSync alias. The following example 
 # pass '-n 1' to update every second and '-d' to highlight differences
         $ watch -n 1 -d \ "aws datasync describe-task-execution --task-execution-arn 'arn:aws:datasync:{{region}}:{{account-id}}:task/{{task-id}}/execution/task {{execution-id}}'"
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

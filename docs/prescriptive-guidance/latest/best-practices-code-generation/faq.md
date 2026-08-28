@@ -46,3 +46,7 @@ Provide relevant context, experiment, and iterate on prompts, review code sugges
 <a name="can-i-customize-9999999999999999qdevlong--to-generate-recommendations-based-on-my-own-code-.766f6d0a-fa79-5a5f-b7a0-6559236178dc"></a>
 
 Yes, use customizations, which is an advanced capability of Amazon Q Developer. With customizations, businesses can provide their own code repositories to enable Amazon Q Developer to recommend in-line code suggestions. For more information, see [Advanced capabilities of Amazon Q Developer](advanced-capabilities.md) and [Resources](resources.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

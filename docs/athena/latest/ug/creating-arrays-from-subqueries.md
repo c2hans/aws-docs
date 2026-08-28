@@ -50,3 +50,7 @@ This query returns the following result. Note that ordering is not guaranteed.
 ```
 
 For more information about using the `array_agg` function, see [Aggregate functions](https://trino.io/docs/current/functions/aggregate.html) in the Trino documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

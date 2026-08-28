@@ -28,3 +28,7 @@ Only an organization's managment account can update Firewall Manager administrat
 1. Select **Edit** to change details of administrator's account. You can't change the **account ID**.
 
 1. Choose **Save** to save your changes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

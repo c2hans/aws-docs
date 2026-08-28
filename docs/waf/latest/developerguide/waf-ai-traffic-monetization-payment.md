@@ -23,3 +23,7 @@ You choose how to receive payments by configuring wallet addresses in your Monet
 1. Settlement confirmation is included in the response to the client.
 
 Payment settlement is provided to you by Coinbase Developer Platform's x402 facilitator. You agree to Coinbase's [terms of service](https://www.coinbase.com/en-gb/legal/developer-platform/terms-of-service). You instruct us to share pricing and payment configuration information with Coinbase and the relevant client.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

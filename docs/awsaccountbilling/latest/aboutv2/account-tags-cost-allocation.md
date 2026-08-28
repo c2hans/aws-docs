@@ -63,3 +63,7 @@ Before you can use account tags for cost allocation, ensure you have:
 <a name="viewing-user-attributes-in-cur-accounttags"></a>
 
  After completing the setup, account tags will appear in your Cost and Usage Report 2.0 (CUR 2.0) alongside other cost allocation tags. When viewing cost data in CUR 2.0, tags from different sources (resources, user attributes, accounts, and cost categories) are distinguished by prefixes to prevent conflicts when the same tag key is used across multiple contexts. For detailed information about how tag prefixes work and examples of overlapping tag keys, see the [CUR 2.0 Tags Column documentation](https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-cur2-tag-columns.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

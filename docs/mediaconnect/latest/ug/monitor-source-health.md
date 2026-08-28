@@ -24,3 +24,7 @@ In the AWS Elemental MediaConnect console, you can view Amazon CloudWatch metric
    + The **Source health metrics** section is visible only if your source health is **Connected**. The charts show source bitrate and total packets received over the last hour. You can choose different time periods from the dropdown in the top-right corner of the section.
 **Note**
 MediaConnect refreshes data from CloudWatch automatically every 1 minute, 5 minutes, or 30 minutes, depending on the time period that you chose. When the charts refresh, data is 1 minute behind real time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

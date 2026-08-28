@@ -98,3 +98,7 @@ Full National reachability means the UIFN reaches all local (in-country) network
 | Thailand | 001-800-XXXX-XXXX<br />National reachability: full | 10-20 |
 | United Kingdom | 00-800-XXXX-XXXX<br />National reachability: BT, Vodafone, EE networks | 20-40 |
 | Uruguay | 00-800-XXXX-XXXX<br />National reachability: full | 15-25 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ We also use Amazon Simple Notification Service to send compliance notifications 
 **Tip**
 One of the best ways to receive AWS Control Tower control compliance notifications (in your audit account) is to subscribe to `AggregateConfigurationNotifications`. It is a service that helps you inspect compliance. It gives you real data about AWS Config rules going out of compliance. AWS Config automatically maintains the list of accounts in your OU.
 You must subscribe manually, using email or any type of subscription that SNS allows. The statement `arn:aws:sns:{{homeregion}}:{{account}}:aws-controltower-AggregateSecurityNotifications` leads to your audit account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

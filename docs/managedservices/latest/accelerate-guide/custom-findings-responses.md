@@ -36,3 +36,7 @@ You can further configure the response to specific resources using tags. You can
 + Change the default response of unencrypted S3 buckets to be 'ask for approval. This applies for all S3 buckets that don’t have the tags "Regulated: True" or "Regulated: False"
 
 You can also add the input required to run custom finding response. For example, for remediations that require an encryption key, you can provide your key IDs to AMS. You can change the input parameters of the remediation runbooks, but AMS doesn't support integration with custom runbooks. For a description of AMS remediation runbooks in the Config Report, see [AWS Config Control Compliance report](acc-report-config-control-compliance.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

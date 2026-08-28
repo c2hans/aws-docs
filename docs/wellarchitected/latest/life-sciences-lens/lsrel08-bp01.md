@@ -31,3 +31,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 1.  Document redundancy plans in your system design specifications and standard operating procedures.
 
 1.  Use AWS services such as Amazon RDS Multi-AZ, Amazon S3 cross-region replication, or Elastic Load Balancing across multiple Availability Zones, verifying that validation records include both primary and redundant configurations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

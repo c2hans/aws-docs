@@ -154,3 +154,7 @@ While preparing Aurora PostgreSQL to be used as the vector store for a Knowledge
 With these details, you can now create a Knowledge Base in the Bedrock console. For more detailed information on setting up a vector index and creating a Knowledge Base information, see [Create a vector store in Amazon Aurora](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup-rds.html) and [Create a vector store in Amazon Aurora](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-create.html).
 
 After adding Aurora as your Knowledge Base, you can now ingest your data sources for searching and querying. For more information, see [Ingest your data sources into the Knowledge Base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-ingest.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

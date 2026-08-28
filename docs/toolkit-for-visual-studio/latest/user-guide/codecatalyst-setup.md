@@ -40,3 +40,7 @@ To connect AWS Toolkit for Visual Studio with Amazon Q with your CodeCatalyst ac
 1. From your browser, enter your AWS Builder ID into the provided field and follow the instructions to continue.
 
 1. When prompted, choose **Allow** to confirm the connection between AWS Toolkit for Visual Studio with Amazon Q and your CodeCatalyst account. When the connection process is complete, CodeCatalyst displays a confirmation indicating that it's safe to close your browser.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

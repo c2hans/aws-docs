@@ -7,20 +7,20 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 # Register server credentials
 <a name="connector-register-server-credentials"></a>
 
-Once you have the MGN connector set up and ready to use, you can register source servers to the MGN connector. To do so choose on the MGN connector name, then choose “Register servers“.
+After you have the MGN connector set up and ready to use, you can register source servers to the MGN connector. To do so, choose the MGN connector name, then choose **Register servers**.
 
-The servers list contain the source servers that were imported via the import feature or discovered by the agentless replication process.
+The servers list contains the source servers that were imported via the import feature or discovered by the agentless replication process.
 
-Select the source servers you want to register to the MGN connector. Choose the "Register servers with the MGN connector" button.
+Select the source servers you want to register to the MGN connector. Choose the **Register servers with the MGN connector** button.
 
-To perform actions on your source server, you must provide source server credentials. Server credentials are stored in AWS Secrets Manager. You can use an existing secret from the AWS Secrets Manager or create a new one. You can create the credentials in the MGN console, by choosing **Register server credentials** from the **Actions** men.
+To perform actions on your source server, you must provide source server credentials. Server credentials are stored in AWS Secrets Manager. You can use an existing secret from the AWS Secrets Manager or create a new one. You can create the credentials in the MGN console, by choosing **Register server credentials** from the **Actions** menu.
 + Use existing secret
   + Using AWS Secrets Manager MGN can use the stored source server credentials and API keys to connect to the source machine and perform actions on it. You must specify the secret that stores the source server credentials, using an existing secret.
   + You may designate the same secret for multiple source servers, if they share the same credentials.
   + Be sure to add the `AWSApplicationMigrationServiceManaged` tag to the secret with the value set to `True`.
 + Create new secret
-  + **Secret name** - Enter a name for your new secret. The name you specify will be saved in AWS Secret Manager.
-  + **Encryption key** - To encrypt, either use the KMS key provided by Secret Manager or create your own customer managed KMS key.
+  + **Secret name** - Enter a name for your new secret. The name you specify will be saved in AWS Secrets Manager.
+  + **Encryption key** - To encrypt, either use the KMS key provided by Secrets Manager or create your own customer managed KMS key.
   + **For Windows servers:**
     + **Communication protocol** – this is the WinRM connection protocol between the MGN Connector and Source Servers used to install the agents.
 **Note**
@@ -62,3 +62,7 @@ The CA/HostKey validation is turned on by default, indicated by the validation f
   "HostKey": "algorithm_name thumbprint"
   ```
 List of supported algorithms: "ssh-ed25519", "ecdsa-sha2-nistp256", "ecdsa-sha2-nistp384", "ecdsa-sha2-nistp521", "rsa-sha2-512", "rsa-sha2-256", "ssh-rsa", "ssh-dss"
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

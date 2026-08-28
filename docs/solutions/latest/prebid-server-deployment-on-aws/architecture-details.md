@@ -289,3 +289,7 @@ CloudWatch alarms monitor specific metrics in real-time and proactively notify A
 
 **Note**
 All resources are created in a single Region specified by the user except for CloudFront and AWS WAF. CloudFront is considered a global resource, and AWS WAF is always created in the `us-east-1` (N.Virginia) Region for configuration with CloudFront.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying a Prebid Server on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

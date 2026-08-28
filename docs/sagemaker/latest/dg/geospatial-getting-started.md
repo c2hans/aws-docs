@@ -20,3 +20,7 @@ To access and get started using Amazon SageMaker geospatial, do the following:
 + [Accessing SageMaker geospatial](access-studio-classic-geospatial.md)
 + [Create an Amazon SageMaker Studio Classic notebook using the geospatial image](geospatial-launch-notebook.md)
 + [Access the Sentinel-2 raster data collection and create an earth observation job to perform land segmentation](geospatial-demo.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ If you’re a console user, you can create the IAM role and Secrets Manager secr
 For a list of things to consider while configuring your data source, see [ Data source connector configuration best practices](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/connector-best-practices.html).
 
 You must also make sure you have configured your Amazon VPC instance with a NAT Gateway. For instructions on how to do this, see Step 1 of [Connecting to a database in a VPC.](https://docs.aws.amazon.com/kendra/latest/dg/vpc-example.html#vpc-example-1)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

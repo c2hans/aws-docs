@@ -29,3 +29,7 @@ NetWitness supports the following AppFabric output schema and formats:
 NetWitness supports the following AppFabric output location:
 + Amazon Simple Storage Service (Amazon S3)
   + To configure NetWitness to receive data from the Amazon S3 bucket that contains your audit logs, follow the instructions in [S3 Universal Connector Event Source Log Configuration Guide](https://community.netwitness.com/t5/netwitness-platform-integrations/s3-universal-connector-event-source-log-configuration-guide/ta-p/595235) on the *NetWitness Platform Integrations* page on the NetWitness website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

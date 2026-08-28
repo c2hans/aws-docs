@@ -1551,3 +1551,7 @@ The visibility condition within uses the same `"sagemaker:SearchVisibilityCondit
 If a user includes the `VisibilityConditions` parameter in their [Search](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) request, but the access policy that applies to that user doesn't contain any matching conditions keys that were specified in `VisibilityConditions`, the `Search` request is still allowed and will run.
 
 If a `VisibilityConditions` parameter is not specified in the user's [Search](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_Search.html) API request, but the access policy that applies to that user contains condition keys related to `VisibilityConditions`, that user's `Search` request is denied.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

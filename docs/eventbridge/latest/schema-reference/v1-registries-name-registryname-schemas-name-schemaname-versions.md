@@ -123,3 +123,7 @@ Provides a list of the schema versions and related information.
 | SchemaName | string | False | The name of the schema. |
 | SchemaVersion | string | False | The version number of the schema. |
 | Type | string | False | The type of schema to export. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge Schemas. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

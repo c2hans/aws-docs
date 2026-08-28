@@ -83,3 +83,7 @@ You AWS account includes quotas that set a default limit your usage amount. You 
 You can create alarms to give you advance warning when you are close to exceeding your limits. We recommend setting alarms for each quota in each AWS Region where you use Amazon Location. For example, you can monitor your use of the `SearchPlaceIndexForText` operation, and create an alarm when you exceed 80 percent of your current quota.
 
 When you get an alarm warning about your quota, you must decide what to do. You might be using additional resources because your customer base has grown. In that case you may want to request an increase to your quota, such as a 50 percent increase in the quota for an API call in that Region. Or, maybe there's an error in your service that causes you to make additional unnecessary calls to Amazon Location. In that case you'd want to solve the problem in your service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

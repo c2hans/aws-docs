@@ -9,3 +9,7 @@ If you delete an endpoint, Application Auto Scaling checks to see whether any of
 
 **Note**
 As an IAM user, you might not have sufficient permission to delete an endpoint if another user configured auto scaling for a variant on that endpoint.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

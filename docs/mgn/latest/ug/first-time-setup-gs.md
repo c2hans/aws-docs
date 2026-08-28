@@ -27,3 +27,7 @@ Once AWS Transform MGN is initialized you'll be redirected into the MGN console 
 To edit your replication template, choose **Replication template**. You will be able to edit individual server replication settings after adding your source servers to AWS Transform MGN.
 
 The next step of the setup process is adding your source servers to AWS Transform MGN.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

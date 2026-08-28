@@ -24,3 +24,7 @@ The AWS SDK for PHP executes credential providers in the following order:
 The result of the default provider is automatically memoized.
 
 You can review the code for the chain in the GitHub [source code](https://github.com/aws/aws-sdk-php/blob/0a99dab427f0a1c082775301141aeac3558691ad/src/Credentials/CredentialProvider.php#L77).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for PHP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-php` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

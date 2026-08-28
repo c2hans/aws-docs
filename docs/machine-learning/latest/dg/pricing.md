@@ -57,3 +57,7 @@ When neither data statistics nor the data size are available, Amazon ML cannot e
 When you create a real-time prediction endpoint using the Amazon ML console, you will be shown the estimated reserve capacity charge, which is an ongoing charge for reserving the endpoint for prediction processing. This charge varies based on the size of the model, as explained on the [service pricing page](https://aws.amazon.com/machine-learning/pricing/). You will also be informed about the standard Amazon ML real-time prediction charge.
 
  ![Dialog box for creating a real-time endpoint showing model size, hourly cost, and per-prediction pricing.](http://docs.aws.amazon.com/machine-learning/latest/dg/images/image60b.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

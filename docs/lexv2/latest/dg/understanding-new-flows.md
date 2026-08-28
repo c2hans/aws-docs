@@ -30,3 +30,7 @@ Note the following for older bots:
 Note the following for new bots created after August 17, 2022:
 + Amazon Lex V2 follows the defined conversation flow exactly as designed to deliver the desired experience. You should configure all flow branches in order to avoid default conversation paths during runtime.
 + Conversation steps following a code hook should be fully configured, because incomplete steps can lead to bot failure. We recommend that you validate bots created before August 17, 2022, because for these bots, there is no automatic validation of conversation steps following a code hook.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

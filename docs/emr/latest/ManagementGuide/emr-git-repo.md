@@ -28,3 +28,7 @@ To use Git-based repositories with EMR Notebooks, you add the repositories as re
 + [Link or unlink a Git-based repository in EMR Studio](emr-git-repo-link.md)
 + [Create a new Notebook with an associated Git repository in EMR Studio](emr-git-repo-create-notebook.md)
 + [Use Git repositories in an EMR Studio Notebook](emr-git-repo-open.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

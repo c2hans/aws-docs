@@ -15,3 +15,7 @@ You can use Amazon DCV Session Manager Command Line Interface (CLI) to interact 
 + Windows command line — Run commands at the Windows command prompt or PowerShell.
 
 You can use Amazon DCV Session Manager CLI to create and manage the lifecycle of Amazon DCV sessions. These are managed by a Amazon DCV Session Manager.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

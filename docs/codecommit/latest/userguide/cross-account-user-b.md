@@ -172,3 +172,7 @@ If this is the first time you have selected this option, review the information 
 1. In **Code**, find the name of the file you added from your local computer. Choose it to browse the code in the file, and then browse the rest of the repository and start using its features.
 
    For more information, see [Getting started with AWS CodeCommit](getting-started-cc.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

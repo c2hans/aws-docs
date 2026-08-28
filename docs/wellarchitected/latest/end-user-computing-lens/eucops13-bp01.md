@@ -15,3 +15,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  While real-time monitoring and alerting is essential in meeting business and technical SLAs with internal and external customers, performing periodic review of logfile and monitoring data can help to identify problem trends and to put in place remediation steps to avoid future outages.
 
  Along with incumbent monitoring tools, you can use Amazon CloudWatch and Amazon Kinesis to centrally store data to use for retrospective performance and systems health analysis.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

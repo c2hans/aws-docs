@@ -37,3 +37,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  **Scale infrastructure ahead:** Prepare infrastructure in advance for large-scale game events to handle sudden increases in player demand.
 +  **Estimate demand:** Coordinate with sales and marketing to estimate projected demand using past player data and realistic projections.
 +  **Load testing and SPOF removal:** Conduct multiple rounds of load tests to validate backend capacity, identify single points of failure, and properly configure automated scaling.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

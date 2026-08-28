@@ -196,3 +196,7 @@ The player API is not thread safe. All calls made to a player instance should be
 The Amazon IVS player SDKs are designed to be as lightweight as possible. For current information about SDK size, see the [Release Notes](release-notes.md).
 
 **Important:** When evaluating size impact, the size of the AAB/APK produced by Android Studio is not representative of the size of your app downloaded to a user’s device. The Google Play Store performs optimizations to reduce the size of your app. We recommend that you use [Android App Bundles](https://developer.android.com/guide/app-bundle) to serve optimized apps for each device configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

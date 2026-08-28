@@ -23,3 +23,7 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Incident response in Amazon Inspector](security-incident-response.md)
 + [Amazon Inspector Security Research](security-research.md)
 + [Access Amazon Inspector using an interface endpoint (AWS PrivateLink)](vpc-interface-endpoints-inspector.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

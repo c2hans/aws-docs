@@ -14,3 +14,7 @@ AWS Backup works with other AWS tools to empower you to monitor its workloads. T
   + You can use EventBridge to view and monitor AWS Backup events. For more information, see [Monitoring AWS Backup events using Amazon EventBridge](eventbridge.md).
 + **AWS CloudTrail** to monitor AWS Backup API calls. You can identify the time, source IP, users, and accounts making those calls. For more information, see [Logging AWS Backup API calls with CloudTrail](logging-using-cloudtrail.md).
 + **Amazon Simple Notification Service** (Amazon SNS) to subscribe to AWS Backup-related topics such as backup, restore, and copy events. For more information, see [Notification options with AWS Backup](backup-notifications.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

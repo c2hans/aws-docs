@@ -70,3 +70,7 @@ For more information, see [DBMS\_COMPRESSION](https://docs.oracle.com/en/databas
  Aurora MySQL doesn’t support compressed tables (that is, tables created with `ROW_FORMAT=COMPRESSED`). Make sure that you expand your compressed tables by setting `ROW_FORMAT` to `DEFAULT`, `COMPACT`, `DYNAMIC`, or `REDUNDANT`.
 
 For more information, see [InnoDB Table Compression](https://dev.mysql.com/doc/refman/5.7/en/innodb-table-compression.html) in the *MySQL documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,3 +84,7 @@ You can use the AWS IoT Device Defender console or the API to access AWS IoT Dev
 
 With AWS IoT Device Defender, you only pay for what you use. There is no minimum fee or mandatory service usage. However, you are billed separately for Audit and Detect features. Audit pricing is per device count, per month. When you turn on Audit, you're charged based on the number of active device [principals](https://docs.aws.amazon.com/iot/latest/developerguide/client-authentication.html) in a month. Therefore, adding or removing audit checks would not affect your monthly bill when using this feature. You can calculate your AWS IoT Device Defender and architecture cost in a single estimate using the AWS Pricing Calculator.
 + [AWS Pricing Calculator](https://calculator.aws/#/addService/IoTDeviceDefender)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Device Defender. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-device-defender` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

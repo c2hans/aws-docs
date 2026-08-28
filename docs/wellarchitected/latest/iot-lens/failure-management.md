@@ -215,3 +215,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/iot-lens/failure-
 +  AWS IoT Greengrass can be used for local processing for serverless functions, containers, messaging, storage, and machine learning inference.
 +  Data can be stored in AWS IoT Greengrass and sent to the network when it's available.
 +  [AWS IoT Greengrass features](https://aws.amazon.com/greengrass/features/) and components such a Stream Manager can be used to help design resilient solutions at the edge.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

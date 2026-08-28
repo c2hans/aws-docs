@@ -26,3 +26,7 @@ If you delete a gateway that is currently offline, your must perform a factory r
 1. When the LED lights start slowly blinking, alternating orange and blue, release the commissioning button.
 
 1. Unplug the gateway, wait 10 seconds, and then plug it back in. The gateway is reset.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

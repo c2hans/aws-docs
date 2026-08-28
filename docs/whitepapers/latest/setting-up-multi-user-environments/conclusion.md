@@ -13,3 +13,7 @@ Multi-user, shared environments with custom access control policies are a common
 + [Scenario 3: Separate AWS accounts for each user](scenario-3.md) provides independent AWS accounts for each user (with consolidate billing), which is suitable for graduate research and entrepreneurship courses.
 
 In this whitepaper, we focused on the short- to medium-term education and research environments as the example domain, but the same or similar scenarios may also be implemented for other use cases.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

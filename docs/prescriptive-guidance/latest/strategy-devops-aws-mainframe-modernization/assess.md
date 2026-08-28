@@ -37,3 +37,7 @@ Define the target state for the business and technical areas.
 | --- |--- |
 | Business | + Improved agility for faster releases (faster time to market)+ Improved product or application quality+ Reduced amount of time used for managing governance and compliance+ Goals identified for cost savings, scalability, agility, and improved application performance  |
 | Technical | + Improved developer experience+ Automation implemented to reduce manual work and avoid human errors+ Improve automated security, governance, and compliance+ More frequent and faster software release cycles+ Gated, automated testing to improve quality.+ Increased feedback loops and communication between Development, Testing, Security, and Operations teams |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

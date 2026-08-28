@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-snapch
 + [Snapchat Ads connection options](snapchat-ads-connection-options.md)
 + [Creating a Snapchat Ad account and configuring the client app](connecting-to-data-snapchat-ads-new-account.md)
 + [Creating an app in your Snapchat Ads account](connecting-to-data-snapchat-ads-managed-client-application.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

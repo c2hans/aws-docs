@@ -45,3 +45,7 @@ If an administration project does not exist in your domain, take the following s
 + You can also set up access to domain management from the Tooling blueprint. On the **Provisioning** tab, choose **Create** to create the administration project. After the project is successfully created, you can access domain management using the methods described in [Accessing domain management](#accessing-domain-management-idc).
 ![Create administration project option in the Tooling blueprint Provisioning tab](http://docs.aws.amazon.com/sagemaker-unified-studio/latest/adminguide/images/AdminPortal/CreateProjectConsole.png)
 + From the Amazon SageMaker Unified Studio portal, a banner displays for root domain owners with an action button to domain management. If the administration project has not been created, a popup directs you to the AWS Management Console to create the project using the steps above.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -151,3 +151,7 @@ Regularly review and update the configurations for both the Direct Connect and V
 Monitor the performance and availability of both connections, and refer to the AWS documentation on [monitoring Direct Connect and VPN for best practices](https://docs.aws.amazon.com/directconnect/latest/UserGuide/monitoring-overview.html).
 
 By implementing this Direct Connect with Site-to-Site VPN failover solution, you can achieve a highly resilient connectivity setup for your RISE with SAP deployment on AWS, ensuring seamless failover and reliable network performance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

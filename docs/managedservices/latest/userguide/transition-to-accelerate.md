@@ -212,3 +212,7 @@ AMS conducts quarterly checkpoints (September 2026, December 2026, March 2027) t
 + [Offboard from multi-account landing zone](https://docs.aws.amazon.com/managedservices/latest/userguide/offboarding-malz.html)
 + [Offboard from single-account landing zone](https://docs.aws.amazon.com/managedservices/latest/userguide/offboarding-salz.html)
 + [Operations on Demand](https://docs.aws.amazon.com/managedservices/latest/userguide/ops-on-demand.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

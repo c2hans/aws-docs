@@ -40,3 +40,7 @@ Amazon RDS publishes the following types of metrics to Amazon CloudWatch:
   For a table of these metrics, see [Amazon CloudWatch usage metrics for Amazon Aurora](Aurora.AuroraMonitoring.Metrics.md#rds-metrics-usage). For more information about Amazon RDS quotas, see [Quotas and constraints for Amazon Aurora](CHAP_Limits.md).
 
 For more information about CloudWatch, see [ What is Amazon CloudWatch?](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/WhatIsCloudWatch.html) in the *Amazon CloudWatch User Guide*. For more information about CloudWatch metrics retention, see [Metrics retention](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/cloudwatch_concepts.html#metrics-retention).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

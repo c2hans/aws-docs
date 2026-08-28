@@ -37,3 +37,7 @@ Before you begin implementing these high-level migration steps, you must define 
 The implementation of the high-level steps will not happen in a clear sequence. There are tests, changes, re-implementations, and processes that run at the same time. These depend on the specific characteristics of each migration and the following diagrams shows a sample migration sequence.
 
 ![](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-opentext-teamsite/images/guide-img/4dc6b761-306b-4432-a25a-66123a55e631/images/b72bcab8-0cff-44d8-8bbc-536b6fa712b2.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

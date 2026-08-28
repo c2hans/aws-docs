@@ -91,3 +91,7 @@ AWS Trusted Advisor is a service that you can use to help optimize the costs, se
 For more information about how to get started with AWS TNB, see the following topics:
 + [Setting up AWS TNB](setting-up.md) – Complete the prerequisite steps.
 + [Getting started with AWS TNB](getting-started.md) – Deploy your first network function, such as Centralized Unit (CU), Access and Mobility Management Function (AMF), User Plane Function (UPF), or a complete 5G Core.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Telco Network Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tnb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

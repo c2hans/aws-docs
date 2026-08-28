@@ -66,3 +66,7 @@ This pattern outlines steps for migrating a PostgreSQL database (version 9.5 and
 + [pglogical](https://github.com/2ndQuadrant/pglogical) (GitHub repository)
 + [Limitations of pglogical](https://github.com/2ndQuadrant/pglogical#limitations-and-restrictions) (GitHub repository README file)
 + [Migrating PostgreSQL from on-premises or Amazon EC2 to Amazon RDS using logical replication](https://aws.amazon.com/blogs/database/migrating-postgresql-from-on-premises-or-amazon-ec2-to-amazon-rds-using-logical-replication/) (AWS Database blog)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

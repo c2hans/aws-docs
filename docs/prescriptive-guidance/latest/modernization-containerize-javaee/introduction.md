@@ -17,3 +17,7 @@ The "heart" of an application is the business logic and data model, which are ti
 The following diagram shows a design pattern for refactoring a traditional Java EE application into a containerized application.
 
 ![](http://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-containerize-javaee/images/guide-img/34f6e23c-ad3a-4f13-8f30-05bf7b07cc57/images/aa0a279a-95ee-4008-950f-0a1b2007d43b.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ The following table describes documentation releases for the *AWS Migration Hub 
 | --- | --- | --- |
 | Discovery walkthrough | Updated to reflect removal of "Deploy agents/connectors" and "Deploy new agents/connectors" from console. | March 06, 2018 |
 | New guide | This is the first release of the *AWS Migration Hub* User Guide. | August 11, 2017 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

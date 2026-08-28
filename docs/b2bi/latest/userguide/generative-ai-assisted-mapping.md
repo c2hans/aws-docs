@@ -93,3 +93,7 @@ To use the AWS B2B Data Interchange generative AI-assisted EDI mapping capabilit
 1. When your mapping is in a satisfactory state, select **Next** to proceed to step 3, **Review and create**.
 
 Continue to the **Review and create** step, as described in [Create an inbound transformer](transform-inbound-variations.md#getting-started-transformer) or [Create an outbound transformer](transform-outbound-variations.md#outbound-transformer).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS B2B Data Interchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query b2bi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ By following this strategy and considering the recommended best practices descri
 Migrating from Apache Cassandra to Amazon Keyspaces can provide numerous benefits, including reduced operational overhead, automatic scaling, improved security, and a framework that helps you to reach your compliance goals. By planning an online migration strategy with dual writes, historical data upload, data validation, and a gradual roll out, you can ensure a smooth transition with minimal disruption to your application and its users.
 
 Implementing the online migration strategy discussed in this topic allows you to validate the migration results, identify and address any issues, and ultimately decommission your existing Cassandra deployment in favor of the fully managed Amazon Keyspaces service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

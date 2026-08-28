@@ -48,3 +48,7 @@ For a video walkthrough of vocabulary filtering, see:
 
 **API operations specific to vocabulary filtering**
  [`CreateVocabularyFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_CreateVocabularyFilter.html), [`DeleteVocabularyFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_DeleteVocabularyFilter.html), [`GetVocabularyFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_GetVocabularyFilter.html), [`ListVocabularyFilters`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_ListVocabularyFilters.html), [`UpdateVocabularyFilter`](https://docs.aws.amazon.com/transcribe/latest/APIReference/API_UpdateVocabularyFilter.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

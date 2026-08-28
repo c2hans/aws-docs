@@ -57,3 +57,7 @@ While using EMR serverless compute, you may need to stop using a particular comp
 For applications you don't intend to use again, you can delete, or remove them. This will permanently delete the application, and cannot be undone. To access the application again you will need to recreate it. Deleting an application removes all costs associated with it including storage cost.
 
 EMR Serverless computes can be removed from projects via the Data processing tab in your project view. Simply click the menu to the right of the compute's name and click Remove. Removed EMR Serverless computes are deleted. You can also manually stop an EMR Serverless compute by using the EMR Studio page on the AWS Console. For more information see Manage applications from the EMR Studio console in the EMR Serverless user guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Sagemaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query next-generation-sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

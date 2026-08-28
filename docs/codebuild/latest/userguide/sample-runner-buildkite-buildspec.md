@@ -36,3 +36,7 @@ There are several limitations when using a buildspec override in a self-hosted B
 + CodeBuild will not run buildspec commands during the `BUILD` phase, as the self-hosted runner runs in the `BUILD` phase.
 + CodeBuild does not support buildspec files for Buildkite runner builds. Only inline buildspecs are supported for Buildkite self-hosted runners
 + If a build command fails in the `PRE_BUILD` or `INSTALL` phase, CodeBuild will not start the self-hosted runner and the Buildkite job will need to be canceled manually.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

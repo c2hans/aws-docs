@@ -16,3 +16,7 @@ Preparing your organization for success in the cloud requires a dedicated focus 
 1. Identify change acceleration leaders who will drive the six points discussed in this paper.
 
 1. Organize your plans, tools, templates, and cadence to build the program framework.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ The smaller the team, the better the collaboration. Collaboration is very import
 Communication between teams is also important as you move toward the shared responsibility model and start moving out of the siloed development approach. This brings the concept of ownership to the team, and shifts their perspective to look at the process as an end-to-end venture. Your team should not think about your production environments as black boxes where they have no visibility.
 
 Cultural transformation is also important, because you might be building a common DevOps team or have a DevOps focused member in your team. Both of these approaches introduce Shared Responsibility in to the team.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

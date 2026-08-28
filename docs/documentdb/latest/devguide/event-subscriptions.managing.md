@@ -42,3 +42,7 @@ You can delete a subscription when you no longer need it. All subscribers to the
 
 1. A pop-up window will appear asking you if you want to permanently delete this notification. Choose **Delete**.
 ![A dialog box confirming deletion of the event subscription with the Delete button highlighted in the lower-right corner.](http://docs.aws.amazon.com/documentdb/latest/devguide/images/event-subs/delete-delete-2.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

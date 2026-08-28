@@ -362,3 +362,7 @@ The WAT is short-lived (15-minute TTL), cryptographically signed by the AgentCor
 You do not interact with the WAT directly. It is carried on the internal `X-Amz-Bedrock-AgentCore-Identity-WAT` header, which is managed entirely by the platform. This explanation is provided so you understand how session continuity works across hops — you do not need to take any action regarding the WAT.
 
 For more details on workload identity and access tokens, see [Get workload access token](get-workload-access-token.md) and [Understanding workload identities](understanding-agent-identities.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

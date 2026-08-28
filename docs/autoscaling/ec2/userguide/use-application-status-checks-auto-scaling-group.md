@@ -54,3 +54,7 @@ For more information, see [Set the health check grace period for an Auto Scaling
 <a name="asg-asc-suppress-during-maintenance"></a>
 
 If you need to perform in-place patching or maintenance on an instance in an Auto Scaling group, you can temporarily suppress application status checks for that instance so that Amazon EC2 Auto Scaling does not terminate it during the window. For more information about suppressing application status checks, see [In-place patching and maintenance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/application-status-checks.html#asc-in-place-patching-and-maintenance) in the *Amazon EC2 User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

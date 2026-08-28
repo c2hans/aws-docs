@@ -134,3 +134,7 @@ AWS RAM can be used for workloads subject to Service Organization Control (SOC) 
 For more information about SOC compliance, see [SOC](https://aws.amazon.com/compliance/soc-faqs/).
 
 For more information about ISO compliance, see [ISO 9001](https://aws.amazon.com/compliance/iso-9001-faqs/), [ISO 27001](https://aws.amazon.com/compliance/iso-27001-faqs/), [ISO 27017](https://aws.amazon.com/compliance/iso-27017-faqs/), [ISO 27018](https://aws.amazon.com/compliance/iso-27018-faqs/), and [ISO 27701](https://aws.amazon.com/compliance/iso-27701-faqs/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RAM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ram` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

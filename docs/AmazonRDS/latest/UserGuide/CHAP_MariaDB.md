@@ -52,3 +52,7 @@ To deliver a managed service experience, Amazon RDS doesn't provide shell access
 + [MariaDB on Amazon RDS SQL reference](Appendix.MariaDB.SQLRef.md)
 + [Local time zone for MariaDB DB instances](MariaDB.Concepts.LocalTimeZone.md)
 + [Known issues and limitations for RDS for MariaDB](CHAP_MariaDB.Limitations.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

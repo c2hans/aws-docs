@@ -16,3 +16,7 @@ CodeBuild has deprecated the following Docker images. You can still use these im
 | Amazon Linux 2 | aws/codebuild/amazonlinux2-aarch64-standard:1.0 | al2/aarch64/standard/1.0 | March 31, 2023 |
 | Ubuntu 18.04 | aws/codebuild/standard:3.0 | ubuntu/standard/3.0 | June 30, 2022 |
 | Amazon Linux 2 | aws/codebuild/amazonlinux2-x86\_64-standard:2.0 | al2/standard/2.0 | June 30, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

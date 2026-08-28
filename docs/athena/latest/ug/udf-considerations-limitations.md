@@ -19,3 +19,7 @@ Consider the following points when you use user defined function (UDFs) in Athen
 + **Row-level filtering** – Lake Formation row-level filtering is not supported for UDFs.
 + **Views** – You cannot use views with UDFs.
 + **Known issues** – For the most up-to-date list of known issues, see [Limitations and issues](https://github.com/awslabs/aws-athena-query-federation/wiki/Limitations_And_Issues) in the awslabs/aws-athena-query-federation section of GitHub.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

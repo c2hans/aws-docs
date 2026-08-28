@@ -66,3 +66,7 @@ For the most current availability of AgentCore Gateway by Region, refer to [Amaz
 
 **Tip**
 If you want to use the MCP Server but need to send load testing traffic from an AWS Region where AgentCore Gateway is not supported, you can deploy the main hub stack (with the MCP Server enabled) in a supported AgentCore Gateway Region and then deploy the regional stack (see [Multi-Region deployment](multi-region-deployment.md)) in the AWS Region where you want to generate test traffic. This allows you to use the MCP Server for AI-assisted analysis while still running load tests from your desired Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

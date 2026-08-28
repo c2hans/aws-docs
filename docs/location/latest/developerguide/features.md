@@ -44,3 +44,7 @@ For more information, see [Amazon Location Service trackers](trackers.md).
 **Jobs**
 Amazon Location Service Jobs lets you perform asynchronous bulk processing for large-scale location data operations. Currently, Jobs supports the bulk address validation operation, enabling you to process thousands of addresses in a single job operation. Jobs integrate seamlessly with Amazon S3 for input and output data storage, using [Apache Parquet](https://parquet.apache.org/docs/overview/) format for optimal performance.
 For more information, see [Amazon Location Jobs](jobs.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

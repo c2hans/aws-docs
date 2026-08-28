@@ -7510,3 +7510,7 @@ To customize these settings, use the `hadoop-env` configuration classification. 
 | HADOOP\_JOB\_HISTORYSERVER\_HEAPSIZE | 9953 |
 | HADOOP\_NAMENODE\_HEAPSIZE  | 39526 |
 | HADOOP\_DATANODE\_HEAPSIZE | 4096 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -965,3 +965,7 @@ Amazon Elastic Kubernetes Service defines the following condition keys that can 
 |   [eks:supportType](https://docs.aws.amazon.com/eks/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies)  | Filters access by the supportType present in the create / update cluster request | String |
 |   [eks:username](https://docs.aws.amazon.com/eks/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies)  | Filters access by the Kubernetes username present in the access entry requests the user makes to the EKS service | String |
 |   [eks:zonalShiftEnabled](https://docs.aws.amazon.com/eks/latest/userguide/security_iam_service-with-iam.html#security_iam_service-with-iam-id-based-policies)  | Filters access by the zonal shift enabled setting in the create / update cluster request | Bool |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

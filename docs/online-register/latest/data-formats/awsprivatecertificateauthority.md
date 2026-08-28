@@ -18,3 +18,7 @@ AWS Private Certificate Authority provides the following APIs for data retrieval
 | <a name="acm-pca-ListCertificateAuthorities"></a>[ListCertificateAuthorities](https://docs.aws.amazon.com/privateca/latest/APIReference/API_ListCertificateAuthorities.html) | Retrieve a list of the AWS Private CA certificate authority ARNs, and a summary of the status of each CA in the calling account | List |
 | <a name="acm-pca-ListPermissions"></a>[ListPermissions](https://docs.aws.amazon.com/privateca/latest/APIReference/API_ListPermissions.html) | List the permissions that have been applied to the AWS Private CA certificate authority | Read |
 | <a name="acm-pca-ListTags"></a>[ListTags](https://docs.aws.amazon.com/privateca/latest/APIReference/API_ListTags.html) | List the tags that have been applied to the AWS Private CA certificate authority | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

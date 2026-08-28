@@ -78,3 +78,7 @@ Session Manager is available at no cost for AWS customers running EC2 instances.
 On-premises customers require a Amazon DCV Plus or Amazon DCV Professional Plus license. For information about how to purchase a Amazon DCV Plus or Amazon DCV Professional Plus license, see [How to Buy](https://www.nice-software.com/index.html#buy) on the Amazon DCV website and find a Amazon DCV distributor or reseller in your region. To allow all on-premises customers to experiment with the Amazon DCV Session Manager, the licensing requirements will only be enforced starting with Amazon DCV version 2021.0.
 
 For more information, see [ Licensing the Amazon DCV Server](https://docs.aws.amazon.com/dcv/latest/adminguide/setting-up-license.html) in the *Amazon DCV Administrator Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

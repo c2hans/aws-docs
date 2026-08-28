@@ -26,3 +26,7 @@ The following table describes the AWS Client VPN Administrator Guide updates.
 | [Support for multi-factor authentication (MFA)](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-rules.html) | Your AWS Client VPN endpoint supports MFA if it's enabled for your Active Directory. | September 30, 2019 |
 | [Support for split-tunnel](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/split-tunnel-vpn.html) | You can enable split-tunnel on your AWS Client VPN endpoint. | July 24, 2019 |
 | [Initial release](#WhatsNew) | This release introduces AWS Client VPN. | December 18, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

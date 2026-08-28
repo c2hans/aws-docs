@@ -105,3 +105,7 @@ For a complete list of available commands for AWS RAM, see the [AWS RAM CLI refe
 <a name="cross-account-events"></a>
 
 You can opt-in to logging AWS CloudTrail Data Events for monitoring and auditing cross-account AWS AppSync GraphQL API DataPlane activity. For more information, see [Logging data events](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/logging-data-events-with-cloudtrail.html) in the *AWS CloudTrail User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

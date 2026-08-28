@@ -42,7 +42,7 @@ In the Admin account, delete the member roles StackSet.
 
 | Account | Purpose | Action in us-east-1 | Action in us-west-2 |
 | --- | --- | --- | --- |
-|  `111111111111`  | Admin | Delete the member roles StackSet<br />Confirm rmember roles stack deleted | None |
+|  `111111111111`  | Admin | Delete the member roles StackSet<br />Confirm member roles stack deleted | None |
 |  `222222222222`  | Member | Confirm member roles stack deleted | None |
 
 ## Delete the retained roles
@@ -50,7 +50,7 @@ In the Admin account, delete the member roles StackSet.
 
 In each account, delete the retained IAM roles.
 
- **Important**: These roles are retained for remediations which require a role in order for the remediation to continue functioning (e.g. VPC flow logging). Confirm that you do not require the continued function of any of these roles before deleting them.
+ **Important**: These roles are retained for remediations which require a role in order for the remediation to continue functioning (for example, VPC flow logging). Confirm that you do not require the continued function of any of these roles before deleting them.
 
 Delete any roles prefixed with **SO0111-.**
 
@@ -59,10 +59,10 @@ Delete any roles prefixed with **SO0111-.**
 |  `111111111111`  | Admin | Delete retained roles | None |
 |  `222222222222`  | Member | Delete retained roles | None |
 
-## Schedule the retained KMS keys for deletion
+## Schedule the retained AWS KMS keys for deletion
 <a name="schedule-the-retained-kms"></a>
 
-The admin and member stacks both create and retain a KMS key. You will incur charges if you keep these keys.
+The admin and member stacks both create and retain an AWS KMS key. You incur charges if you keep these keys.
 
 These keys are retained in order to give you access to any resources encrypted by the solution. Confirm that you do not require them before scheduling them for deletion.
 
@@ -82,3 +82,7 @@ Delete the stacks created to allow for self-managed StackSets permissions
 | --- | --- | --- | --- |
 |  `111111111111`  | Admin | Delete the StackSet administrator role stack | None |
 |  `222222222222`  | Member | Delete the StackSet execution role stack | None |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

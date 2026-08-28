@@ -21,3 +21,7 @@ After you set up permissions, you are ready to install the plugin on your domain
 + [Configuring permissions when resources are in the same account](service-role-managed.md)
 + [Configuring permissions when resources are in different accounts](configuring-multiple-accounts.md)
 + [Configuring Amazon OpenSearch Service domain security](domain-user-managed.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

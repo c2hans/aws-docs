@@ -49,3 +49,7 @@ Because the example shows `EXPLAIN` with the `ANALYZE` option, the query was run
 + The sequential scan was run one time (the `loops` value).
 + The scan returned one row.
 + The actual time was 0.12 milliseconds.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

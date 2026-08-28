@@ -21,3 +21,7 @@ This section includes procedures for working with a standard accelerator on the 
 + [View your accelerators](about-accelerators.viewing.md)
 + [Adding an accelerator when you create a load balancer](about-accelerators.alb-accelerator.md)
 + [Compare using global static IP addresses to regional static IP addresses](about-accelerators.eip-accelerator.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

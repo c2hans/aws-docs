@@ -237,3 +237,7 @@ John signs into the IAM console using his management account credentials. In the
 John is now ready to act on the last accessed information. He chooses **Edit in AWS Organizations** and is reminded that the SCP is attached to multiple entities. He chooses **Continue**. In AWS Organizations, he reviews the targets to learn to which AWS Organizations entities that the SCP is attached. All of entities are within the `Development` OU.
 
 John decides to deny access to the Amazon Lex and AWS Database Migration Service actions in the `NewServiceTest` SCP. This action removes the unnecessary access to the services.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

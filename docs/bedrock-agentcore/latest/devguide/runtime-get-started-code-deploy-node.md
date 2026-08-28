@@ -508,3 +508,7 @@ The following declarations are incompatible and will cause agent creation to fai
 AgentCore Runtime also checks the `engines.node` field for common dependencies in your `node_modules/` . If any of these declare a Node.js version range that excludes the target runtime version, agent creation will fail.
 
 If you encounter an `engines.node` incompatibility, update the package to a version that supports your target Node.js version or remove the `engines` field from your `package.json` . For supported Node.js versions, see [Supported language runtimes](runtime-code-deploy-supported-runtimes.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ The number and size of IAM resources in an AWS account are limited. For more inf
 + [Delete IAM policies (console)](access_policies_manage-delete-console.md)
 + [Delete IAM policies (AWS CLI)](access_policies_manage-delete-cli.md)
 + [Delete IAM policies (AWS API)](access_policies_manage-delete-api.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

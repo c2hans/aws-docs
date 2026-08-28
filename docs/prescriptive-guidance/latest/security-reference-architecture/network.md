@@ -187,3 +187,7 @@ Route 53 resolvers are created by default as part of every VPC. In the AWS SRA,
 + DNS Firewall and AWS Network Firewall both offer domain name filtering, but for different types of traffic. You can use DNS Firewall and Network Firewall together to configure domain-based filtering for application-layer traffic over two different network paths:
   + DNS Firewall provides filtering for outbound DNS queries that pass through the Route 53 Resolver from applications within your VPCs. You can also configure DNS Firewall to send custom responses for queries to blocked domain names.
   + Network Firewall provides filtering for both network-layer and application-layer traffic, but does not have visibility into queries made by Route 53 Resolver.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

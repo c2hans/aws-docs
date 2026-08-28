@@ -152,3 +152,7 @@ When you sign in as a bill transfer account, you are responsible for paying char
 <a name="all-other-charges"></a>
 
 The above is not an exhaustive list of all the reasons why you might see unexpected charges in your AWS account. If you receive charges that aren't due to any of the reasons listed on this page, see [Contacting Support](billing-get-answers.md#billing-support).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

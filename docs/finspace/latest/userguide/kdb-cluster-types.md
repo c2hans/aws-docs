@@ -113,3 +113,7 @@ Auto scaling is only available for dedicated clusters and is not supported for c
 | Attaches writable local (savedown) storage to a node | Yes | No | Yes | No | No |
 | Number of nodes supported | Single | Multi | Multi | Single | Multi |
 | Supports AZ configurations (for dedicated clusters) | Single | Single or Multi | Single or Multi | Single | Single or Multi |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

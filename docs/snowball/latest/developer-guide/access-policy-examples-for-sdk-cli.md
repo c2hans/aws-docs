@@ -296,3 +296,7 @@ Use the scroll bars to see the rest of the table.
 |  [ListJobs](https://docs.aws.amazon.com/snowball/latest/api-reference/API_ListJobs.html) | snowball:ListJobs |
 |  [UpdateCluster](https://docs.aws.amazon.com/snowball/latest/api-reference/API_UpdateCluster.html) | snowball:UpdateCluster |
 |  [UpdateJob](https://docs.aws.amazon.com/snowball/latest/api-reference/API_UpdateJob.html) | snowball:UpdateJob |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -361,3 +361,7 @@ To troubleshoot audio playback issues, check the following:
 + Ensure that the volume on the media element is not set to `0`.
 + Check your browser's autoplay policy. Many browsers require a user interaction, such as a click, before they allow unmuted media playback.
 + If you need a callback for when the session is connected, use `clientConnection.connectionState` in the `GameLiftStreams` object. This provides a callback for when the peer connection transitions to a connected state.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

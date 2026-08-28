@@ -25,3 +25,7 @@ Some of the considerations that license type conversion is subject to are listed
 + You can't use license type conversion for a Ubuntu Pro subscription. To remove a Ubuntu Pro subscription, see [Remove a Ubuntu Pro subscription](conversion-procedures-linux.md#remove-subscription-ubuntu-pro).
 + Ubuntu Pro is not available as a Reserved Instance. For savings with On-Demand Instance pricing, we recommend that you use Ubuntu Pro with Savings Plans. For more information, see [Reserved Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-reserved-instances.html) in the *Amazon EC2 User Guide* and [What are Savings Plans?](https://docs.aws.amazon.com/savingsplans/latest/userguide/what-is-savings-plans.html) in the *Savings Plans User Guide*.
 + To convert from Ubuntu Pro to Ubuntu LTS send a request to Support. For more information, see [Creating a support case](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html#creating-a-support-case).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

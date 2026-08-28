@@ -36,3 +36,7 @@ If you have any questions or concerns, the AWS Support team is available on the 
 +  Improved performance for adding edges in Gremlin.
 +  Fixed an issue where SPARQL Update DELETE queries could fail in some cases.
 +  Fixed an issue for handling timeouts with the Gremlin WebSocket server.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

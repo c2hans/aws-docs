@@ -90,3 +90,7 @@ Owners are billed for any instances that they register in the shared namespace a
 <a name="sharing-quotas"></a>
 
 Shared namespaces count towards only the namespace owner's namespaces per Region quota. Instances registered by a consumer in the shared namespace count towards the owner's instances per namespace quota. If a consumer creates a service in a shared namespace, any instances registered in the service count towards the consumer's instances per service quota. If an owner creates a service in a shared namespace, any instances registered in the service count towards the owner's instances per service quota.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Map. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud-map` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

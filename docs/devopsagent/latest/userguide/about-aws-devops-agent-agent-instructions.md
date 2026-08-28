@@ -59,6 +59,7 @@ The managed agents available for agent-specific instructions are:
 + **Incident RCA** - Root cause analysis with evidence collection and validation.
 + **Incident mitigation** - Short-term remediation and long-term fix recommendations.
 + **Evaluation** - Agent performance scoring and policy compliance checks.
++ **Release testing** – Automated UI and API testing against deployed web applications and REST APIs.
 
 ## Content size guidance
 <a name="content-size-guidance"></a>
@@ -115,7 +116,7 @@ Each agent has exactly one set of instructions. When you save new content, it ov
 
 1. Choose the **Instructions** tab.
 
-1. Choose **View** next to the agent you want to configure: **Chat**, **Incident triage**, **Incident RCA**, **Incident mitigation**, or **Evaluation**.
+1. Choose **View** next to the agent you want to configure: **Chat**, **Incident triage**, **Incident RCA**, **Incident mitigation**, **Evaluation**, or **Release testing**.
 
 1. Enter your markdown instructions in the editor.
 
@@ -135,3 +136,7 @@ AWS DevOps Agent provides management capabilities for agent instructions through
 **Downloading instructions:** Open the agent, then choose the **Download** button in the editor to download the current content as a file.
 
 **Deleting instructions:** Open the agent, choose the **Delete** button in the editor, and confirm the deletion. This action cannot be undone. Consider downloading the content first if you may need it again.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

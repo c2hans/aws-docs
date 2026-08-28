@@ -174,3 +174,7 @@ If you are not going to continue developing with this example, remember to delet
 For information about creating and testing Lambda images, see [Using Container Images with Lambda](https://docs.aws.amazon.com/lambda/latest/dg/lambda-images.html).
 
 For information about container image deployment, permissions, and overriding configuration settings, see [Configuring Functions](https://docs.aws.amazon.com/lambda/latest/dg/configuration-images.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

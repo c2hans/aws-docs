@@ -48,3 +48,7 @@ Result: three separate categories of files are created for each output. Each fil
 Each file will be stored in both `s3ssl://amzn-s3-demo-bucket1/sports-delivery/highlights/curling` and `s3ssl://amzn-s3-demo-bucket2/sports-delivery/highlights/curling`.
 
 A given file is not visible in Amazon S3 while it is being written. As soon as the rollover happens (or if the user stops the channel), MediaLive closes the current file. At that point, the file becomes visible.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

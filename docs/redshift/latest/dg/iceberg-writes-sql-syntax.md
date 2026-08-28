@@ -18,7 +18,7 @@ You can view Iceberg tables using `SHOW TABLES` command. If you want to remove a
 You can also modify existing data using `DELETE`, `UPDATE`, and `MERGE` commands. To change table definitions such as schema, partition specs, and properties, see [Altering table definitions](iceberg-alter-table.md). Other DDL statements not documented there are not supported for Iceberg tables.
 
 It's possible for you to write into an Iceberg table that is not created by Amazon Redshift. However, there are some limitations:
-+ The table must be an Iceberg v2 table.
++ The table must be an Iceberg v2 or v3 table.
 + The table must be using Parquet as default data format.
 + The table must not have metadata compression set to True.
 + The table must not enable Write-Audit-Publish (WAP).
@@ -40,35 +40,35 @@ The following sections demonstrate SQL syntax for creating, inserting, modifying
 
 ```
 CREATE TABLE [IF NOT EXISTS] {{<external_schema>}}.{{<table_name>}} (
-  column_name data_type [, ...]
+  column_name data_type [DEFAULT literal_value] [, ...]
 )
 USING ICEBERG
 [LOCATION 's3://{{your-bucket-name}}/prefix/']
 [PARTITIONED BY [[column_name | transform_function]], ...]
-[TABLE PROPERTIES ('compression_type'='<compression_value>')]
+[TABLE PROPERTIES (['format-version'='{{<version>}}'] [, 'compression_type'='<compression_value>'])]
 ```
 
 You can also use three-part notation for S3 table buckets:
 
 ```
 CREATE TABLE "{{<table_bucket_name>}}@s3tablescatalog".{{<database_name>}}.{{<table_name>}} (
-  column_name data_type [, ...]
+  column_name data_type [DEFAULT literal_value] [, ...]
 )
 USING ICEBERG
 [PARTITIONED BY [[column_name | transform_function]], ...]
-[TABLE PROPERTIES ('compression_type'='<compression_value>')]
+[TABLE PROPERTIES (['format-version'='{{<version>}}'] [, 'compression_type'='<compression_value>'])]
 ```
 
 For the auto-mounted root catalog `awsdatacatalog`:
 
 ```
 CREATE TABLE awsdatacatalog.{{<database_name>}}.{{<table_name>}} (
-  column_name data_type [, ...]
+  column_name data_type [DEFAULT literal_value] [, ...]
 )
 USING ICEBERG
 LOCATION 's3://{{your-bucket-name}}/prefix/'
 [PARTITIONED BY [[column_name | transform_function]], ...]
-[TABLE PROPERTIES ('compression_type'='<compression_value>')]
+[TABLE PROPERTIES (['format-version'='{{<version>}}'] [, 'compression_type'='<compression_value>'])]
 ```
 
 When using the external schema syntax, note that `{{<external_schema>}}` must be an existing external schema name in which the external table will be created. For more information about how to create and manage external schemas, see [CREATE EXTERNAL SCHEMA](https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_EXTERNAL_SCHEMA.html) in the Amazon Redshift documentation.
@@ -106,7 +106,52 @@ LOCATION ...
 PARTITIONED BY (bucket(16, ship_date), year(ship_date));
 ```
 
-The `TABLE PROPERTIES` clause defines the extra table properties for this Iceberg table. The only table property we support is `compression_type` which defines the default Parquet data file compression. If this is not specified, `snappy` is used as the compression codec. The possible values for `compression_type` are: `zstd`, `brotli`, `gzip`, `snappy`, and `uncompressed`.
+The `TABLE PROPERTIES` clause defines the extra table properties for this Iceberg table. The supported table properties are `format-version` and `compression_type`. The `format-version` property specifies the Iceberg table format version. Possible values are `'2'` (default) and `'3'`. The `compression_type` property defines the default Parquet data file compression. If not specified, `snappy` is used as the compression codec. The possible values for `compression_type` are: `zstd`, `brotli`, `gzip`, `snappy`, and `uncompressed`.
+
+For Iceberg v3 tables, you can specify default values for columns using the DEFAULT keyword. Default column values are supported only for Iceberg v3 tables. Amazon Redshift returns an error if you specify a default value on an Iceberg v2 table. Only literal values are supported as defaults.
+
+```
+CREATE TABLE {{<external_schema>}}.{{<table_name>}} (
+  column_name data_type [DEFAULT literal_value] [, ...]
+)
+USING ICEBERG
+LOCATION 's3://{{your-bucket-name}}/{{prefix}}/'
+[PARTITIONED BY [[column_name | transform_function]], ...]
+[TABLE PROPERTIES ('format-version'='3' [, 'compression_type'='{{<compression_value>}}'])];
+```
+
+Examples with defaults:
+
+```
+-- External schema notation
+CREATE TABLE my_external_schema.orders (
+  order_id INT,
+  status VARCHAR DEFAULT 'pending',
+  region VARCHAR DEFAULT 'us-east-1'
+)
+USING ICEBERG
+LOCATION 's3://amzn-s3-demo-bucket/orders/'
+TABLE PROPERTIES ('format-version'='3');
+
+-- Three-part notation (awsdatacatalog / Glue)
+CREATE TABLE awsdatacatalog.my_glue_db.orders (
+  order_id INT,
+  status VARCHAR DEFAULT 'pending',
+  region VARCHAR DEFAULT 'us-east-1'
+)
+USING ICEBERG
+LOCATION 's3://amzn-s3-demo-bucket/orders/'
+TABLE PROPERTIES ('format-version'='3');
+
+-- Three-part notation (S3 Table Buckets)
+CREATE TABLE "amzn-s3-demo-bucket@s3tablescatalog".my_namespace.orders (
+  order_id INT,
+  status VARCHAR DEFAULT 'pending',
+  region VARCHAR DEFAULT 'us-east-1'
+)
+USING ICEBERG
+TABLE PROPERTIES ('format-version'='3');
+```
 
 **Note**
 `CREATE TABLE ... LIKE ...` is not supported for Iceberg tables. Iceberg tables also don't support column constraints and column attributes like RMS table does.
@@ -148,6 +193,42 @@ The `CREATE TABLE` clause here no longer allows you to specify the data types as
 
 If the `SELECT` query fails for any reason, this query will fail and the Iceberg table will not be created.
 
+For Iceberg v3 tables, specify `'format-version'='3'` in the TABLE PROPERTIES clause. Default column values are not inherited from the source table.
+
+```
+-- External schema notation
+CREATE TABLE my_external_schema.orders_backup (
+  order_id, status, region
+)
+USING ICEBERG
+LOCATION 's3://amzn-s3-demo-bucket/orders-backup/'
+TABLE PROPERTIES ('format-version'='3')
+AS
+SELECT order_id, status, region
+FROM my_external_schema.orders;
+
+-- Three-part notation (awsdatacatalog / Glue)
+CREATE TABLE awsdatacatalog.my_glue_db.orders_backup (
+  order_id, status, region
+)
+USING ICEBERG
+LOCATION 's3://amzn-s3-demo-bucket/orders-backup/'
+TABLE PROPERTIES ('format-version'='3')
+AS
+SELECT order_id, status, region
+FROM awsdatacatalog.my_glue_db.orders;
+
+-- Three-part notation (S3 Table Buckets)
+CREATE TABLE "amzn-s3-demo-bucket@s3tablescatalog".my_namespace.orders_backup (
+  order_id, status, region
+)
+USING ICEBERG
+TABLE PROPERTIES ('format-version'='3')
+AS
+SELECT order_id, status, region
+FROM "amzn-s3-demo-bucket@s3tablescatalog".my_namespace.orders;
+```
+
 You can view the structure of your Iceberg tables using `SHOW TABLE`:
 
 ## SHOW TABLE
@@ -176,6 +257,22 @@ TABLE PROPERTIES ('compression_type'='snappy')
 **Note**
 For Amazon S3 tables, since the table location is managed by Amazon S3 tables catalog, the `LOCATION` clause will be omitted in the `SHOW TABLE` results.
 
+For Iceberg v3 tables, `SHOW TABLE` displays default column values in its output.
+
+```
+SHOW TABLE my_external_schema.orders;
+
+-- Output includes the default values in the column definitions:
+CREATE TABLE my_external_schema.orders (
+  id int,
+  status varchar DEFAULT 'active',
+  priority int DEFAULT 0
+)
+USING ICEBERG
+LOCATION 's3://amzn-s3-demo-bucket/orders/'
+TABLE PROPERTIES ('format-version'='3');
+```
+
 After creating tables, you can add data using `INSERT INTO`:
 
 ## INSERT INTO
@@ -197,6 +294,8 @@ INSERT INTO awsdatacatalog.{{<database_name>}}.{{<table_name>}} [(column_name [,
 You can `INSERT INTO` existing Iceberg table using the above syntax. If `VALUES` clause is used, you provide the values for columns listed by `column_name`, or all columns if `column_name` part is omitted.
 
 When data is inserted into partitioned table, new rows are distributed according to the predefined partition specification. If for any reason the `SELECT` query fails, the query will fail and no data will be inserted into the Iceberg table.
+
+For Iceberg v3 tables with default column values, if a column with a default is omitted from the INSERT statement or DEFAULT is specified as the value, the default value is written to the data file.
 
 ## DELETE
 <a name="iceberg-writes-delete"></a>
@@ -393,3 +492,7 @@ DROP TABLE "{{<catalog_name>}}".{{<database_name>}}.{{<table_name>}}
 ```
 
 Dropping an Iceberg table is a metadata only operation. It removes the table entry from AWS Glue Data Catalog and Amazon S3 table catalog, if this is an Amazon S3 table. Amazon Redshift doesn't clean up or delete any existing data file or metadata files under the table location. You can use features in AWS Glue and Amazon S3 tables to remove orphaned files. For AWS Glue, see [Deleting orphan files](https://docs.aws.amazon.com/glue/latest/dg/orphan-file-deletion.html). For Amazon S3 tables, see [Table maintenance](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-tables-maintenance.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

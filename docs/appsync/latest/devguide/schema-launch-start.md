@@ -73,3 +73,7 @@ We're essentially creating a new DynamoDB table called {{TodoAPITable}} that wil
 1. Review your changes and choose **Create API**. Wait a moment to let the AWS AppSync service finish creating your API.
 
 You have successfully created a GraphQL API with its schema and DynamoDB data source. To summarize the steps above, we chose to create a completely new GraphQL API. We defined the name of the API, then added our schema definition by adding our first type. We defined the type and its fields, then chose to attach a data source to one of the fields by creating a new DynamoDB table with no data in it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -78,3 +78,7 @@ Quick powers data-driven organizations with unified business intelligence (BI) a
 **AWS Key Management Service**
 
 With AWS Key Management Service (AWS KMS), you can create, manage, and control cryptographic keys across your applications and AWS services. When you create an app bundle in AppFabric, you set up an encryption key to securely protect your authorized application data. This key encrypts your data within the AppFabric service. AppFabric can use an AWS owned key created and managed by AppFabric on your behalf, or a customer managed key that you create and manage in AWS KMS. For more information, see [Create an AWS KMS key](prerequisites.md#create-kms-keys).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

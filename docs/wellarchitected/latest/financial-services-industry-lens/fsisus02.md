@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 +  Balance data residency requirements with sustainable generative AI infrastructure placement.
 +  Verify that generative AI training data and model artifacts adhere to regional data sovereignty while optimizing for carbon footprint.
 +  Consider federated learning approaches for generative AI models when data cannot cross jurisdictional boundaries.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

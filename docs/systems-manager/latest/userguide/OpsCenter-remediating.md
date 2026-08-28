@@ -73,3 +73,7 @@ Use the following procedure to run an Automation runbook that has already been a
    Once you start the runbook, the system returns to the previous screen and displays the status.
 
 1. In the **Automation executions in the last 30 days** section, choose the **Execution ID** link to view steps and the status of the execution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

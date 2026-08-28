@@ -22,3 +22,7 @@ You must run this command before launching instances that will use LNI. The devi
 After enabling LNI on the subnet, you can create network interfaces and attach them to your instances at device index 1 to establish Layer 2 connectivity with your on-premises network.
 
 For a complete walkthrough with architecture diagrams and additional configuration examples, see [Architecting for seamless on-premises connectivity with AWS Outposts servers](https://aws.amazon.com/blogs/networking-and-content-delivery/architecting-for-seamless-on-premises-connectivity-with-aws-outposts-servers/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ If the new total quantity you specify is greater than before, Batch schedules mo
 **API:**
 
 Use the [`UpdateConsumableResource` API](https://docs.aws.amazon.com/batch/latest/APIReference/API_UpdateConsumableResource.html) to set a new total quantity for the resource, or to increase or reduce the total quantity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

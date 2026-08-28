@@ -40,3 +40,7 @@ Teams beginning their agentic AI journey can:
 1. Establish regular Well-Architected reviews that use this lens to assess your agentic AI systems as they evolve.
 
 Building reliable, secure, and cost-effective agentic AI systems is challenging work. The best practices in this lens represent the collective experience of teams who have navigated these challenges in production. We hope this guidance accelerates your journey and helps you build agentic AI systems that deliver lasting value.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

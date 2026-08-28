@@ -622,3 +622,7 @@ The submitter and adaptor are open source and available on GitHub:
 + [Deadline Cloud for Cinema 4D](https://github.com/aws-deadline/deadline-cloud-for-cinema-4d)
 + [Cinema 4D Conda recipes](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes) are available on GitHub for C4D 2024, C4D 2025, the INSYDIUM X-PARTICLES plugin, the C4DtoA plugin, and the V-Ray Plugin.
 + [Host Configuration script](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/cinema4d/cinema4d_redgiant) is included to support Red Giant plugins.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

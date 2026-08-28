@@ -75,3 +75,7 @@ You can also view log groups for all AWS services, including Amazon ECS, using t
 1. Right-click a container, and then choose **View Container Log Stream**.
 
    The log streams for the container are displayed in the **Log Streams** pane. For information about interacting with the log events for clusters and containers, see [Working with CloudWatch log events](working-CloudWatch-log-events.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ This exception arises when you do not have the appropriate Amazon S3 permissions
 **`Access Denied` or `Forbidden` when calling `create()`**
 
 You are denied access when creating a private hub if you do not have the appropriate permissions to access the Amazon S3 bucket associated with the SageMaker **Public models** hub. For more information on the Amazon S3 permissions needed to create a private hub, see **Step 3** in [Create a private model hub](jumpstart-curated-hubs-admin-guide-create.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

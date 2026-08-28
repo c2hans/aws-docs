@@ -76,3 +76,7 @@ The predictive performance of complex ML models (those having many input attribu
 | sgd.shuffleType | String | auto | Allowable values: `auto` or `none` |
 | sgd.l1RegularizationAmount | Double | 0 (By default, L1 isn't used) | Allowable range: 0 to MAX\_DOUBLE<br />L1 values between 1E-4 and 1E-8 have been found to produce good results. Larger values are likely to produce models that aren't very useful.<br />You can't set both L1 and L2. You must choose one or the other. |
 | sgd.l2RegularizationAmount | Double | 1E-6 (By default, L2 is used with this amount of regularization) | Allowable range: 0 to MAX\_DOUBLE<br />L2 values between 1E-2 and 1E-6 have been found to produce good results. Larger values are likely to produce models that aren't very useful.<br />You can't set both L1 and L2. You must choose one or the other. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -98,3 +98,7 @@ The following are practical scenarios illustrating FIFO queue behavior in Amazon
    + A producer sends seven messages to Group A and three to Group B.
    + A single consumer retrieves up to 10 messages. If the queue allows, it may return:
      + Seven messages from Group A and three from Group B (or fewer if fewer messages are available from a single group).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

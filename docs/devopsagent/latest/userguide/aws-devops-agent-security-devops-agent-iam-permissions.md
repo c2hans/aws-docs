@@ -7,7 +7,9 @@ source_url: https://docs.aws.amazon.com/devopsagent/latest/userguide/aws-devops-
 
 AWS DevOps Agent uses service-specific AWS Identity and Access Management (IAM) actions to control access to its features and capabilities. These actions determine what users can do within the AWS DevOps Agent console and Operator Web App. This is separate from the AWS service API permissions that the agent itself uses to investigate your resources.
 
-For more information about limiting agent access, see [Limiting Agent Access in an AWS Account.](https://docs.aws.amazon.com/devopsagent/latest/userguide/aws-devops-agent-security-limiting-agent-access-in-an-aws-account.html)
+For more information about limiting agent access, see [Limiting Agent Access in an AWS Account](aws-devops-agent-security-limiting-agent-access-in-an-aws-account.md).
+
+To let the agent perform directed actions in your AWS accounts, register an elevated IAM role on the account association. For example, you might use an elevated role to remediate an issue after operator approval. For more information about directed actions and registering an elevated IAM role, see [Working with directed actions](working-with-devops-agent-working-with-directed-actions.md).
 
 ## Agent Space management actions
 <a name="agent-space-management-actions"></a>
@@ -21,7 +23,7 @@ These actions control access to Agent Space configuration and management:
 <a name="investigation-and-execution-actions"></a>
 
 These actions control access to incident investigation features:
-+ **aidevops:ListExecutions** – Allows users to view execution metadata—including ID, status, and more—for investigations, mitigations, evaluations, and chat conversations associated with a task.
++ **aidevops:ListExecutions** – Allows you to view execution metadata, including ID, status, and more, for investigations, mitigations, evaluations, and chat conversations associated with a task.
 + **aidevops:ListJournalRecords** – Allows users to access detailed logs that show the agent's reasoning steps, actions taken, and data sources consulted during an investigation, mitigation, evaluation, and chat conversation. This is useful for understanding how the agent reached its conclusions.
 
 ## Chat management actions
@@ -1429,3 +1431,7 @@ Provides permissions required by the AWS DevOps Agent to conduct investigations 
   ]
 }
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

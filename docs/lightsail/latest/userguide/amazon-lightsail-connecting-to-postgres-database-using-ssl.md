@@ -45,3 +45,7 @@ Complete the following steps to connect to your Postgres database using SSL.
 
    You should see a result similar to the following example. Your connection is encrypted if you see a value of “SSL connection."
 ![Postgres database connection status.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-postgres-ssl-connection.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

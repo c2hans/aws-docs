@@ -151,3 +151,7 @@ You can develop custom components that use the local shadow service to read and 
 <a name="sync-client-device-shadows-with-iot-core"></a>
 
 You can configure the shadow manager component to synchronize local client device shadow states with AWS IoT Core. For more information, see [Sync local device shadows with AWS IoT Core](sync-shadows-with-iot-core.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

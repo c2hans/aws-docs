@@ -42,3 +42,7 @@ There are charges for MediaLive based on the state of resources. There are idle 
 
   For channels configured with a standard channel class (two-pipeline), input and output charges are at the standard-class rate. For channels with a single-pipeline channel class, charges are at the single-pipeline rate.
 + There is an *add-on charge* for running channels that have specific features enabled. The charge applies to the channel, not to individual inputs, outputs, or other components within the channel. For example, the add-on charge for Advanced Audio is applied at the same rate for a running channel with one output that uses advanced audio as it is for a running channel with three outputs that use advanced audio. For a list of add-on charges, see [https://aws.amazon.com/medialive/pricing/](https://aws.amazon.com/medialive/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

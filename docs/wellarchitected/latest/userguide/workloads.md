@@ -54,3 +54,7 @@ Deleting a workload cannot be undone. All data associated with the workload is d
 
 **Note**
 These are guidelines only and customers should evaluate and measure what impact not implementing the best practice would have on their business. If there are specific technical or business reasons that prevent applying a best practice to the workload, then the risk might be lower than indicated. AWS suggests that customers document these reasons, and how they affect the best practice, in the workload notes. For all identified HRIs and MRIs, AWS suggests customers implement the best practice as defined in the AWS Well-Architected Tool. If the best practice is implemented, indicate that the issue has been resolved by marking the best practice as met in the AWS Well-Architected Tool. If customers choose not to implement the best practice, AWS suggests that they document the applicable business level approval and reasons for not implementing it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

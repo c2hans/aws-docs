@@ -110,3 +110,7 @@ Use this example if you are moving from on-premises commercial database server t
 
 **Note**
 Use lowercase letters for the `comm` prefix and uppercase letters for the alphanumeric MPE IDs (long MPE IDs). For more information about your MPE ID, see [MPE ID length](mpe-length.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Acceleration Program. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query MAP` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

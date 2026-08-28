@@ -170,3 +170,7 @@ Preroll behavior varies between live and VOD content for server-guided ad insert
 <a name="ad-behavior-live-examples"></a>
 + If the ad break has a duration set to 70 seconds and the ADS response contains two 40-second ads, AWS Elemental MediaTailor plays one of the 40-second ads. In the time left over, it switches to the configured slate or underlying content. At any point during this process, if MediaTailor encounters a cue-in indicator, it cuts immediately to the underlying content.
 + If the ad break has a duration set to 30 seconds and the shortest ad provided by the ADS response is 40 seconds, MediaTailor plays no ads. If an ad slate is configured, MediaTailor plays that for 30 seconds or until it encounters a cue-in indicator. Otherwise, MediaTailor plays the underlying content.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

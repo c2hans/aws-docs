@@ -266,3 +266,7 @@ You do not need to take immediate action on low severity findings, but they can 
 **Informational – No configuration weakness was found.**
 In other words, the status is `PASSED`, `WARNING`, or `NOT AVAILABLE`.
 There is no recommended action. Informational findings help customers to demonstrate that they are in a compliant state.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

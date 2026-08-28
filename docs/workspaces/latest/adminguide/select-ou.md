@@ -29,3 +29,7 @@ After you select a new OU, the machine accounts for all WorkSpaces that are crea
 1. Choose **Save**.
 
 1. (Optional) Rebuild the existing WorkSpaces to update the OU. For more information, see [Rebuild a WorkSpace in WorkSpaces Personal](rebuild-workspace.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,3 +39,7 @@ This latter method might not work with all installations of Ruby.
 <a name="upgrading-tls-support"></a>
 
 If the version of OpenSSL used by your Ruby installation is earlier than 1.0.1, upgrade your Ruby or OpenSSL installation using your system package manager, Ruby installer, or Ruby manager, as described in Ruby’s [installation guide](https://www.ruby-lang.org/en/documentation/installation/). If you’re installing Ruby [from source](https://www.ruby-lang.org/en/documentation/installation/#building-from-source), install the [latest OpenSSL](https://www.openssl.org/source/) first, and then pass `--with-openssl-dir=/path/to/upgraded/openssl` when running `./configure`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Ruby. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-ruby` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

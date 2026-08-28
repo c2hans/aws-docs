@@ -19,3 +19,7 @@ In the following sections, you can find step-by-step instructions for migrating 
 + [Step 9: Create and Run Your AWS DMS Migration Task](chap-rdsoracle2aurora.steps.createmigrationtask.md)
 + [Step 10: Verify That Your Data Migration Completed Successfully](chap-rdsoracle2aurora.steps.verifydatamigration.md)
 + [Step 11: Delete Walkthrough Resources](chap-rdsoracle2aurora.steps.deleteresources.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

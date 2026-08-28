@@ -63,3 +63,7 @@ For more information, see [How Multi-party approval works](how-it-works.md). To 
 <a name="mpa-integrations-required"></a>
 
 Multi-party approval requires [AWS Organizations](https://aws.amazon.com/organizations) and [AWS IAM Identity Center](https://aws.amazon.com/iam/identity-center).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Multi-party approval. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mpa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ Even though many call recordings for specific contact IDs might be named with th
 ![The contact search page, the play, download, and delete recording icons.](http://docs.aws.amazon.com/connect/latest/adminguide/images/recording-icons.png)
 
 To learn more about searching, see [Search for completed and in-progress contacts in Connect Customer](contact-search.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

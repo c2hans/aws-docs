@@ -40,7 +40,7 @@ These managed policies grant broad access to MGN features beyond the import func
    "Action": [
      "s3:GetObject"
   ],
-   "Resource":  "arn:aws:s3:::amzn-s3-demo-bucket"
+   "Resource":  "arn:aws:s3:::amzn-s3-demo-bucket/*"
 }
 ```
 
@@ -66,7 +66,7 @@ The following is an example of an S3 bucket policy in the target account:
        "Action": [
          "s3:GetObject"
       ],
-       "Resource":  "arn:aws:s3:::amzn-s3-demo-bucket"
+       "Resource":  "arn:aws:s3:::amzn-s3-demo-bucket/*"
     }
   ]
 }
@@ -97,7 +97,7 @@ The imported file can include multiple parameters, including:
 | mgn:launch:nic:0:subnet-id | The subnet ID that appears first in the network interface that appears first in the launch template. |
 | mgn:launch:placement:host-id | The host ID of the placement of the launch instance. |
 | mgn:launch:placement:operating-system-licensing | The operating system licensing approach, LI, (license Included) or BYOL (bring your own license). |
-| mgn:launch:placement:tenancy | This tenancy of the launch instance. |
+| mgn:launch:placement:tenancy | The tenancy of the launch instance. |
 | mgn:launch:tag:instance:key1 | The value of launch instance tag "key1" (in this example, the tag key is key1). |
 | mgn:launch:volume:/dev/sda:type | The type of the launch instance's volume whose name is /dev/sda (in this Linux machine example, the volume's name is /dev/sda; for a Windows machine, a typical volume name would be c:0). |
 | mgn:region | The AWS Region to which you are importing, which must be the Region of your MGN console. If left blank, defaults to the console Region.  |
@@ -113,7 +113,7 @@ The imported file can include multiple parameters, including:
 ### Additional considerations
 <a name="import-considerations"></a>
 
-Please note the following considerations regarding the import parameters:
+Note the following considerations regarding the import parameters:
 
 1.  Server entries must include either the server IP address, or the FQDN.
 
@@ -131,3 +131,7 @@ Please note the following considerations regarding the import parameters:
 1.  If a resource's alternative identification does not exist in MGN, the service will create the resource.
 
 1.  Two rows that refer to the same resource need not provide the same parameters for that resource, but they must not conflict. For example, if two rows provide the same mgn:wave:name, it is acceptable for one row to provide mgn:wave:description and for the other row to leave the value blank. However, the two rows must not provide conflicting values of mgn:wave:description.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

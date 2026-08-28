@@ -86,3 +86,7 @@ In this procedure, you first find the DNS servers that serve your domain, and th
   + Check the spam or junk mail folder for the email address you're attempting to verify.
   + Confirm that the address that you're trying to verify is able to receive email. Using a separate email address (such as your personal email address), send a test email to the address that you want to verify.
   + Check [the list of verified addresses in the Amazon SES console](https://console.aws.amazon.com/ses/home#verified-senders-email:). Make sure that there aren't any errors in the email address that you're attempting to verify.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

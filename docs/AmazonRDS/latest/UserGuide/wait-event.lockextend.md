@@ -84,3 +84,7 @@ To see whether there's an increase in write latency, check the `WriteLatency` me
 If your network bandwidth isn't enough, increase it. If your DB instance is reaching the network bandwidth limits, the only way to increase the bandwidth is to increase your DB instance size.
 
 For more information about CloudWatch metrics, see [Amazon CloudWatch instance-level metrics for Amazon RDS](rds-metrics.md#rds-cw-metrics-instance). For information about network performance for each DB instance class, see [Amazon CloudWatch instance-level metrics for Amazon RDS](rds-metrics.md#rds-cw-metrics-instance).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

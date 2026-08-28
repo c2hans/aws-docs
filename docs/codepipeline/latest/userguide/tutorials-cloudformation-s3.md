@@ -111,3 +111,7 @@ When Amazon S3 is the source provider for your pipeline, you must upload to your
    Under **Pipelines**, choose your pipeline, and then choose **View**. The diagram shows your pipeline source and deployment stages.
 
 1. In your source bucket, commit and push a change. Your change-detection resources pick up the change and your pipeline starts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -113,3 +113,7 @@ Packet traces can only be captured on the `e0e` interface and in the `Default` I
    Your packet traces are stored in the volume that you specified using the **debug network tcpdump start** command, and can be accessed via the NFS export or an SMB share that corresponds with that volume.
 
 For more information about capturing packet traces, see [ How to use debug network dump in ONTAP 9.10\+](https://kb.netapp.com/onprem/ontap/hardware/How_to_use_debug_tcpdump_in_ONTAP_9.10) in the NetApp Knowledge Base.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

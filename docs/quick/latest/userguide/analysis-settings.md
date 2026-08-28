@@ -27,3 +27,7 @@ Amazon Quick authors can use the Analysis settings menu to configure the refresh
 + **Hyperlink** – Use this setting to control the hyperlink displayed at the bottom of the message. The link label field controls the displayed text of the hyperlink, while the link URL field controls where the user is redirected when clicking the hyperlink text. Only http://, https://, and mailto: URL schemas are supported.
 + **Pixel-perfect reporting** – In pixel-perfect (paginated) report output, hyperlinks are rendered as clickable links, not as static display text. To show the full URL in a printed report, enter the full URL as the link label so it remains visible in the static output.
 + **Dataset or data refresh errors** – The no data message customization applies only to visuals that return zero rows of data. Dataset or data refresh errors are a separate error type and are not customizable as part of this feature.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ MediaLive does not currently support RGB color space for CDI inputs. If you will
 | --- | --- |
 | CDI |  +  YCbCr 10-bit 4:2:2 <br />+  RGB 10-bit 4:4:4 <br />+  RGB 12-bit 4:4:4   |
 | ST 2110 JPEG XS |  +  YCbCr 10-bit 4:2:2 <br />+  RGB 10-bit 4:4:4 <br />+  RGB 12-bit 4:4:4   |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

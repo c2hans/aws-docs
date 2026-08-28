@@ -90,3 +90,7 @@ After the administrator completes the prerequisite configuration, the database a
    ```
 
 For more information about granting permissions on a data lake and granting permissions on data shares, see [Granting permissions to users and groups](https://docs.aws.amazon.com/lake-formation/latest/dg/grant-permissions-sso.html). For more information about granting usage to a schema or to a database, see [GRANT](https://docs.aws.amazon.com/redshift/latest/dg/r_GRANT.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

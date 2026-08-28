@@ -87,3 +87,7 @@ Required: No
 **--enable-validate-key-at-init **
 Specifies that you should use an initialization call to verify permissions on a key for subsequent calls. This is the default option. Use `enable-validate-key-at-init` to resume these initialization calls after you use `disable-validate-key-at-init` to suspend them.
 Required: No
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

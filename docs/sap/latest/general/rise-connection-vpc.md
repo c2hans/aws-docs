@@ -95,3 +95,7 @@ To scale beyond the 5 Gbps throughput of a single Large Bandwidth Tunnel, see [A
 +  **ECMP (above 5 Gbps)**: Aggregates multiple VPN connections via Transit Gateway to scale bandwidth beyond 5 Gbps. Same cost-split model as above, but costs scale linearly with each additional VPN connection.
 
 For a full decision tree on how to connect to RISE on AWS, see [Decision tree on connectivity to RISE](rise-decision-tree.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

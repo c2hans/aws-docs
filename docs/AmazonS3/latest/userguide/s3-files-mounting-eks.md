@@ -29,3 +29,7 @@ The Amazon EFS CSI driver requires IAM permissions to interact with your file sy
 You can also use S3 file systems with AWS Batch on Amazon EKS. To attach an S3 file system volume to your AWS Batch job, use Amazon EKS pods with a persistent volume claim. For more details, see [persistentVolumeClaim](https://docs.aws.amazon.com/batch/latest/APIReference/API_EksVolume.html#Batch-Type-EksVolume-persistentVolumeClaim) section of [Register Job Definitions](https://docs.aws.amazon.com/batch/latest/APIReference/API_RegisterJobDefinition.html) and [EKS Persistent Volume Claim](https://docs.aws.amazon.com/batch/latest/APIReference/API_EksPersistentVolumeClaim.html) pages of the *AWS Batch API Reference Guide*.
 
 You can monitor your file system storage, performance, client connections, and synchronization errors using [Amazon CloudWatch](s3-files-monitoring-cloudwatch.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

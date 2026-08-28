@@ -17,3 +17,7 @@ The lifecycle for major KCL versions consists of the following three phases:
 | KCL 1.x | Maintenance mode | 2013-12-19 | 2025-04-17 | 2026-01-30 |
 | KCL 2.x | General availability | 2018-08-02 | -- | -- |
 | KCL 3.x | General availability | 2024-11-06 | -- | -- |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

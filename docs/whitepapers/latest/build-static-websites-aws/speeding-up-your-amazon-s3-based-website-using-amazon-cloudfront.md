@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
  When an end user requests a web page using that domain name, CloudFront determines the best edge location to serve the content. If an edge location doesn’t yet have a cached copy of the requested content, CloudFront pulls a copy from the Amazon S3 origin server and holds it at the edge location to fulfill future requests. Subsequent users requesting the same content from that edge location experience faster page loads because that content is already cached. The following diagram shows the flow in detail.
 
 ![A diagram that shows how Amazon CloudFront caches content.](http://docs.aws.amazon.com/whitepapers/latest/build-static-websites-aws/images/cloudfront-caching.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

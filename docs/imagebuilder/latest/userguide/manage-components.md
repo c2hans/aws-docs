@@ -47,3 +47,7 @@ This section covers how to list, view, create, and import components, using the 
 + [Use managed components to customize your Image Builder image](use-managed-components.md)
 + [Develop custom components for your Image Builder image](create-custom-components.md)
 + [How Image Builder uses the AWS Task Orchestrator and Executor application to manage components](toe-component-manager.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

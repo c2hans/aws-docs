@@ -69,3 +69,7 @@ These permissions and prerequisites ensure secure and reliable integration of S3
   + A Gateway-type VPC endpoint for Amazon S3 is required to allow Neptune to communicate with Amazon S3.
   + To use custom AWS KMS encryption in the query, an Interface-type VPC endpoint for AWS KMS is required to allow Neptune to communicate with AWS KMS.
   + For detailed instructions for how to configure this endpoint, see [Creating the Amazon S3 VPC Endpoint](bulk-load-tutorial-IAM.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

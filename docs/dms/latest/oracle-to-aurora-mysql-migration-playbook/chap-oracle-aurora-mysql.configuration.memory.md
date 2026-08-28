@@ -103,3 +103,7 @@ Use the table below as a general reference only. Functionality may not be identi
 | Configure instance-level parameter |  <pre>ALTER SYSTEM SET ...</pre>  | Configured through parameter groups in the Amazon Relational Database Service console. |
 
 For more information, see [InnoDB Startup Options and System Variables](https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html) and [How MySQL Uses Memory](https://dev.mysql.com/doc/refman/5.7/en/memory-use.html) in the *MySQL documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

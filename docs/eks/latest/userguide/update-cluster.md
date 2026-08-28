@@ -217,3 +217,7 @@ Continue to [Step 4: Update cluster components](#step4).
 <a name="downgrade-cluster"></a>
 
 You can roll back the Kubernetes version of an Amazon EKS cluster to the previous minor version within 7 days of upgrading. For more information, see [Roll back a cluster to a previous Kubernetes version](rollback-cluster.md). After the 7-day window, you cannot downgrade. Instead, create a new cluster on a previous Amazon EKS version and migrate the workloads.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

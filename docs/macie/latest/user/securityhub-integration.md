@@ -354,3 +354,7 @@ You can optionally customize your configuration by choosing the frequency with w
 <a name="securityhub-integration-disable"></a>
 
 To stop publishing Amazon Macie findings to AWS Security Hub CSPM, you can change the publication settings for your Macie account. To learn how, see [Choosing publication destinations for findings](findings-publish-frequency.md#findings-publish-destinations-change). You can also do this by using Security Hub CSPM. To learn how, see [Disabling the flow of findings from an integration](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-integration-disable.html) in the *AWS Security Hub User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

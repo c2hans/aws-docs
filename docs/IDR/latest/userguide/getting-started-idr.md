@@ -22,3 +22,7 @@ To get started with workload onboarding, see [Onboard workloads to Incident Dete
 Alarms are a key part of Incident Detection and Response. Alarms provide visibility into the performance of your applications and underlying AWS infrastructure. AWS works with you to define appropriate metrics and alarm thresholds that only trigger when there is critical impact to your monitored workloads. The goal is for alarms to engage your specified resolvers, who then collaborate with the incident management team to quickly mitigate issues. Configure your alarms to only enter the **Alarm** state when there is a significant degradation in performance or customer experience that requires immediate attention. Some key types of alarms include those that indicate business impact, Amazon CloudWatch canaries, and aggregate alarms that monitor dependencies.
 
 To get started with alarm ingestion, see [Alarm Ingestion](idr-gs-alarm-ingestion.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

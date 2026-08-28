@@ -68,3 +68,7 @@ If you want to track updates to the default Security Hub CSPM value for a parame
 <a name="controls-list-custom-parameters"></a>
 
 For a list of security controls that support custom parameters, see the **Controls** page of the Security Hub CSPM console or the [Control reference for Security Hub CSPM](securityhub-controls-reference.md). To retrieve this list programmatically, you can use the [ListSecurityControlDefinitions](https://docs.aws.amazon.com/securityhub/1.0/APIReference/API_ListSecurityControlDefinitions.html) operation. In the response, the `CustomizableProperties` object indicates which controls support customizable parameters.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

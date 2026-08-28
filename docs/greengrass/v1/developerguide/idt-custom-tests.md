@@ -51,3 +51,7 @@ Complete the following basic steps to create custom IDT tests:
 To quickly build a sample custom suite and run it, follow the instructions in [Tutorial: Build and run the sample IDT test suite](build-sample-suite.md).
 
 To get started creating a custom test suite in Python, see [Tutorial: Develop a simple IDT test suite](create-custom-tests.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

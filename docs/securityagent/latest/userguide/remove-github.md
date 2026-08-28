@@ -82,3 +82,7 @@ Ensure you have uninstalled the AWS Security Agent GitHub App from GitHub before
 1. If you have uninstalled the GitHub App and understand the impact, choose **Confirm removal**.
 
 1. The integration is removed from your integrations list. Any Agent Spaces with repositories from this integration no longer have access to those repositories for code review, penetration testing context, or automated remediation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

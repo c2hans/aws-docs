@@ -77,3 +77,7 @@ Improvements: German translation updates
 | Android version 6.22.1 > version 6.22.3 update | Android 13, September 2023 security update | October 4, 2023 |
 | Clients update | Multi-region updates | September 28, 2023 |
 | Initial release | Initial release of September release notes | September 28, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

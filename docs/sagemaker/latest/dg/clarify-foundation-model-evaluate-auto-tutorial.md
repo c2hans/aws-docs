@@ -21,3 +21,7 @@ The [fmeval GitHub](https://github.com/aws/fmeval/tree/main/examples) directory 
 + [bedrock-claude-factual-knowledge.ipnyb](https://github.com/aws/fmeval/blob/main/examples/bedrock-claude-factual-knowledge.ipynb) – Evaluates an [Anthropic Claude 2](https://www.anthropic.com/index/claude-2) model hosted on Amazon Bedrock for factual knowledge.
 + [byo-model-outputs.ipynb](https://github.com/aws/fmeval/blob/main/examples/byo-model-outputs.ipynb) – Evaluates a [Falcon 7b model](https://huggingface.co/tiiuae/falcon-7b) hosted on JumpStart for factual knowledge where you bring your own model outputs instead of sending inference requests to your model.
 + [custom\_model\_runner\_chat\_gpt.ipnyb](https://github.com/aws/fmeval/blob/main/examples/custom_model_runner_chat_gpt.ipynb) – Evaluates a custom `ChatGPT 3.5` model hosted on `Hugging Face` for factual knowledge.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

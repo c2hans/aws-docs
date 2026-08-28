@@ -197,3 +197,7 @@ The code for this pattern is available in [Easytrieve to Modern Languages Transf
 <a name="transform-easytrieve-modern-languages-resources"></a>
 + [AWS Transform custom documentation](https://docs.aws.amazon.com/transform/latest/userguide/custom.html)
 + [Easytrieve Report Generator 11.6](https://techdocs.broadcom.com/us/en/ca-mainframe-software/devops/ca-easytrieve-report-generator/11-6/getting-started.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

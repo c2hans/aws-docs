@@ -501,3 +501,7 @@ Now that you've learned how to route calls to Lambda functions using Amazon Chim
 + Integrate with Amazon Lex to manage the dialog interaction for an intelligent-agent scenario. For more information, see [Creating an Amazon Lex V2 bot for Amazon Chime SDK messaging](create-lex-bot.md).
 + Set up voice analytics to gain insights from your calls. For more information, see [Generating insights from calls using call analytics for the Amazon Chime SDK](call-analytics.md).
 + Explore advanced call control actions to build sophisticated call flows. For more information, see [Using call analytics configurations for the Amazon Chime SDK](using-call-analytics-configurations.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

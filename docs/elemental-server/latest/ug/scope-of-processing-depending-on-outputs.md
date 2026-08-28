@@ -96,3 +96,7 @@ RTSP output does not support passthrough of the SCTE-35 messages or manifest dec
 | SCTE-35 Passthrough | Insertion of SCTE-35 Messages | Manifest Decoration | Blanking and Blackout | Effect |
 | --- | --- | --- | --- | --- |
 | Not applicable | No | Not applicable | No | SCTE-35 messages are removed from the output. The manifest is not decorated. Do not implement blanking or blackout because, without SCTE-35 messages in the video stream and manifest decoration, it is impossible to find these blanks and blackouts programmatically. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

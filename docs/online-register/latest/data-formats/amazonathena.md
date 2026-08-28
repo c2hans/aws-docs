@@ -55,3 +55,7 @@ Amazon Athena provides the following APIs for data retrieval.
 | <a name="athena-ListTableMetadata"></a>[ListTableMetadata](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListTableMetadata.html) | Return a list of table metadata in a database for a given datacatalog | Read |
 | <a name="athena-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListTagsForResource.html) | Return a list of tags for a resource | Read |
 | <a name="athena-ListWorkGroups"></a>[ListWorkGroups](https://docs.aws.amazon.com/athena/latest/APIReference/API_ListWorkGroups.html) | Return a list of workgroups for the specified AWS account | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

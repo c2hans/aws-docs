@@ -52,3 +52,7 @@ Amazon Lex provides predefined session attributes. These attributes manage how A
 To increase the code hook Lambda timeout value in your bot, which is 30 seconds by default, use the `x-amz-lex:codehook-timeout-ms` session attribute. Set the session attribute value in milliseconds. The maximum timeout is 120 seconds.
 
 For example, if a user sets "x-amz-lex:codehook-timeout-ms": "90000", the code hook Lambda timeout will be 90 seconds.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

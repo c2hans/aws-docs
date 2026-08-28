@@ -260,3 +260,7 @@ If you've deployed the Amazon GameLift Servers Agent with your game server softw
 Run an instance of your game server executable on a compute. If your game server build is properly integrated, the game server process calls the server SDK action `InitSDK()` with a set of valid server parameters. When the server process is ready to host a game session, it calls `ProcessReady()`.
 If you deployed your game server software with the Amazon GameLift Servers Agent, you can skip this step. The Agent automatically launches game server processes based on the runtime instructions you provide.
 You can monitor progress by viewing server process metrics for activating and active server processes. See [Amazon GameLift Servers metrics for fleets](monitoring-cloudwatch.md#gamelift-metrics-fleet). If your game server process fails to initialize, verify that the process is retrieving the right server parameter values for the compute it's running on.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

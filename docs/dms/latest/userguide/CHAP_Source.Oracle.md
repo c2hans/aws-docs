@@ -1617,3 +1617,7 @@ When you migrate Oracle spatial data types using AWS DMS, be aware of these cons
 + For Oracle version 12.1 or earlier sources migrating to PostgreSQL targets, convert `SDO_GEOMETRY` objects to `GEOJSON` format by using the `SDO2GEOJSON` function, or the `spatialSdo2GeoJsonFunctionName` extra connection attribute. For more information, see [Endpoint settings when using Oracle as a source for AWS DMS](#CHAP_Source.Oracle.ConnectionAttrib).
 + AWS DMS supports Oracle Spatial Column migrations for Full LOB mode only. AWS DMS does not support Limited LOB or Inline LOB modes. For more information about LOB mode, see [Setting LOB support for source databases in an AWS DMS task](CHAP_Tasks.LOBSupport.md).
 + Because AWS DMS only supports Full LOB mode for migrating Oracle Spatial Columns, the columns' table needs a primary key and a unique key. If the table does not have a primary key and a unique key, the table is skipped from migration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

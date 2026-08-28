@@ -82,3 +82,7 @@ You would provide the following S3 location as input to Amazon ML:
     ![Save dialog showing Windows Comma Separated format selected from file format dropdown menu.](http://docs.aws.amazon.com/machine-learning/latest/dg/images/image40b.png)
 **Important**
  Do not save the .csv file by using the **Comma Separated Values (.csv)** or **MS-DOS Comma Separated (.csv)** formats because Amazon ML is unable to read them.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -206,3 +206,7 @@ To create a service using the App Runner API or AWS CLI, call the [CreateService
 Your service creation starts if the call returns a successful response with a [Service](https://docs.aws.amazon.com/apprunner/latest/api/API_Service.html) object showing `"Status": "CREATING"`.
 
 For an example call, see [Create a source image repository service](https://docs.aws.amazon.com/apprunner/latest/api/API_CreateService.html#API_CreateService_Example_2) in the *AWS App Runner API Reference*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

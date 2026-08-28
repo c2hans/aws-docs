@@ -34,3 +34,7 @@ Using the Neptune ML feature in Amazon Neptune generally involves the following 
 The [Neptune workbench](graph-notebooks.md#graph-notebooks-workbench) contains a line magic and a cell magic that can save you a lot of time managing these steps, namely:
 [%neptune\_ml](notebooks-magics.md#notebooks-line-magics-neptune_ml)
 [%%neptune\_ml](notebooks-magics.md#notebooks-cell-magics-neptune_ml)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,3 +35,7 @@ The value returned is *CompletableFuture<T>*.
 
 **Note**
 Synthetics only supports sequential steps. Make sure to call the `.get()` method as shown in the example to make sure that the step completes before proceeding to the subsequent step.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -71,3 +71,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 +  [Distributed training using Amazon SageMaker AI Distributed Data Parallel library and debugging using Amazon SageMaker AI Debugger](https://github.com/aws-samples/amazon-sagemaker-dist-data-parallel-with-debugger)
 +  [SageMaker AI developer guide on distributed training](https://github.com/awsdocs/amazon-sagemaker-developer-guide/blob/master/doc_source/distributed-training.md#distributed-training-optimize)
 +  [Distributed Training Examples](https://github.com/aws/amazon-sagemaker-examples/tree/main/training/distributed_training)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

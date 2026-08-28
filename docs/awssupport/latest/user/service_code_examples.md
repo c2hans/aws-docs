@@ -36,3 +36,7 @@ For a complete list of AWS SDK developer guides and code examples, see [Using AW
     + [`ResolveCase`](example_support_ResolveCase_section.md)
 + [Scenarios](service_code_examples_scenarios.md)
   + [Getting started with technical support](example_support_GettingStarted_062_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

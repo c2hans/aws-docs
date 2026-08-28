@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/opensearch-service/latest/APIReference/A
 # AttachDataSource
 <a name="API_AttachDataSource"></a>
 
-Attaches a data source to an OpenSearch application. The data source can be an Amazon OpenSearch Service domain or an Amazon OpenSearch Serverless collection. If both the application and data source are in the `ACTIVE` state, the attachment completes immediately and returns a status of `ATTACHED`. If either resource is not yet active, the operation stores the request and returns a status of `PENDING`. A background process then completes the attachment when both resources become active. Pending attachments that are not completed within 24 hours are marked as `FAILED`. This operation is idempotent. If a data source is already attached or pending for the same application, the existing attachment is returned.
+Attaches a data source to an OpenSearch application. The data source must be an Amazon OpenSearch Service domain. If both the application and the data source are active, the attachment completes immediately with a status of `ATTACHED`. Otherwise, the operation returns `PENDING` and completes the attachment automatically once both become active. If the attachment cannot be completed, its status becomes `FAILED`. This operation is idempotent: If the data source is already attached or pending, the operation returns the existing attachment.
 
 ## Request Syntax
 <a name="API_AttachDataSource_RequestSyntax"></a>
@@ -155,3 +155,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/opensearch-2021-01-01/AttachDataSource)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/opensearch-2021-01-01/AttachDataSource)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/opensearch-2021-01-01/AttachDataSource)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

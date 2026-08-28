@@ -166,3 +166,7 @@ We recommend that you increase the NVMe timeout for the root volume. For more in
 <a name="outposts-server-volumes"></a>
 
 Instances on Outposts servers provide instance store volumes but do not support EBS volumes. Choose an Amazon EBS-backed AMI with only a single EBS snapshot. Choose an instance size with enough instance storage to meet the needs of your application. For more information, see [Instance store volume limits](instance-store-volumes.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

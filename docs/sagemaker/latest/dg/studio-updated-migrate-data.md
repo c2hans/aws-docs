@@ -653,3 +653,7 @@ If the import was successful, you receive a notification that `X` number of flow
 In case your flow files don't import successfully, you receive a notification in the SageMaker Canvas application. Choose **View errors** on the notification message to check the individual error messages for guidance on how to reformat any incorrectly formatted flow files.
 
 After your flow files are done importing, go to the **Data Wrangler** page of the SageMaker Canvas application to view your data flows. You can try opening a data flow to verify that it looks as expected.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

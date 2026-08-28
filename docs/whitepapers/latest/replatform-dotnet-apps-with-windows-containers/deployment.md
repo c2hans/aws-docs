@@ -90,3 +90,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-app
  You have successfully containerized a Windows VM-based application and deployed it on Amazon ECS with a fully automated CI/CD pipeline. The following figure shows the architecture for this setup. If you are interested in doing a migration of the SQL Server instance running on Amazon EC2 to Amazon Relational Database Service, refer to the [Amazon RDS for SQL Server Workshop](https://workshops.aws/card/Amazon%20RDS%20for%20SQL%20Server%20Workshop).
 
 ![Diagram showing architecture for containerizing a Windows VM-based application and deploying it on Amazon ECS with a fully automated CI/CD pipeline](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/application-architecture.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

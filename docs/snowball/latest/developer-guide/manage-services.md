@@ -28,3 +28,7 @@ With AWS OpsHub, you can use and manage AWS services on your Snowball Edge. Curr
 + [Set up Amazon S3 compatible storage on Snowball Edge with AWS OpsHub](s3-edge-snow-opshub.md)
 + [Managing Amazon S3 adapter storage with AWS OpsHub](manage-s3.md)
 + [Managing the NFS interface with AWS OpsHub](manage-nfs.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

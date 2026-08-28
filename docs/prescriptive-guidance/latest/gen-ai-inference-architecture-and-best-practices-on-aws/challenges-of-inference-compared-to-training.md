@@ -20,3 +20,7 @@ This shift impacts every aspect of system design—from scaling and resource man
 | Optimization strategies | + Focus on maximizing accelerator utilization and fast convergence<br />+ Optimizing data pipelines, using mixed precision.<br />+ Adaptive hyperparameters. | + Focus on minimizing per-request latency.<br />+ High efficiency and cost-per-request.<br />+ Leverage hardware accelerator architecture-aware optimizations, model compression, and caching to serve responses faster. |
 | Security and compliance | + Controlled, internal environments with limited external exposure. | + Public or customer-facing endpoints.<br />+ Often requires tenant isolation and API key management.<br />+ Traffic encryption and compliance enforcement. |
 | Cost control | + Predictable, capped costs tied to the length of the training run and the provisioned hardware resources | + Variable, usage-driven costs.<br />+ Risk of over-provisioning or idle spend because of request spikes.<br />+ Scaling must be carefully tuned to match demand patterns. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

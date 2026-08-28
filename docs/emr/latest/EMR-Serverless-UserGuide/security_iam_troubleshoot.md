@@ -59,3 +59,7 @@ To learn more, consult the following:
 <a name="security_iam_troubleshoot-emr-identity-access"></a>
 
 If you use EMR Serverless managed storage for logging and your EMR Serverless application is in a private subnet with VPC endpoints for Amazon S3 and you attach an endpoint policy to control access, add the permissions mentioned in [Logging for EMR Serverless with managed storage](logging.html#jobs-log-storage-managed-storage) in your VPC policy to S3 gateway endpoint for EMR Serverless to store and serve application logs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

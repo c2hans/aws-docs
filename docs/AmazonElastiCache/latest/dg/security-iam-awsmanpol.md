@@ -66,3 +66,7 @@ View details about updates to AWS managed policies for ElastiCache since this se
 | [AmazonElastiCacheFullAccess](#security-iam-awsmanpol-AmazonElastiCacheFullAccess) – Update to an existing policy | ElastiCache added new permissions to allow management of serverless caches, and to enable usage of all service features via the console. | November 27, 2023 |
 | [ElastiCacheServiceRolePolicy](#security-iam-awsmanpol-ElastiCacheServiceRolePolicy) – Update to an existing policy | ElastiCache added new permissions to allow management of VPC endpoints for serverless cache resources. | November 27, 2023 |
 | ElastiCache started tracking changes | ElastiCache started tracking changes for its AWS managed policies. | February 07, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

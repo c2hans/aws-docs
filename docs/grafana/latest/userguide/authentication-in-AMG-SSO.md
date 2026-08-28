@@ -49,3 +49,7 @@ To grant permission to create and manage Amazon Managed Grafana workspaces and u
 Granting a role the **AWSOrganizationsFullAccess** policy gives that role full administrative access to your AWS account. Be very careful about who you grant these permissions to.
 
 To see the permissions granted to **AWSGrafanaAccountAdministrator**, see [AWS managed policy: AWSGrafanaAccountAdministrator](security-iam-awsmanpol.md#security-iam-awsmanpol-AWSGrafanaAccountAdministrator)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

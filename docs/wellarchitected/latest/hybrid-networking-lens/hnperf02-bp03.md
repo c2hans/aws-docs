@@ -33,3 +33,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 +  [Simplify global hybrid connectivity with AWS Cloud WAN and AWS Direct Connect integration](https://aws.amazon.com/blogs/networking-and-content-delivery/simplify-global-hybrid-connectivity-with-aws-cloud-wan-and-aws-direct-connect-integration/)
 +  [Transit gateway attachments to a Direct Connect gateway in AWS Transit Gateway](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-dcg-attachments.html)
 +  [Network-to-Amazon VPC connectivity options](https://docs.aws.amazon.com/whitepapers/latest/aws-vpc-connectivity-options/network-to-amazon-vpc-connectivity-options.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

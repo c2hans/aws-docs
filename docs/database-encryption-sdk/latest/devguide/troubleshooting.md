@@ -84,3 +84,7 @@ The Most Recent Provider is designed to improve the performance of applications 
 In newer versions of the DynamoDB Encryption Client, the time-to-live (TTL) value determines how long cached cryptographic material providers (CMPs) can be used. The TTL also determines how often the Most Recent Provider checks for a new version of the CMP.
 
 If your TTL is too long, your application might violate your business rules or security standards. If your TTL is too brief, frequent calls to the provider store can cause your provider store to throttle requests from your application and other applications that share your service account. To resolve this issue, adjust the TTL and cache size to a value that meets your latency and availability goals and conforms to your security standards. For details, see [Setting a time-to-live value](most-recent-provider.md#most-recent-provider-ttl).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -91,3 +91,7 @@ You can update the refund policy for your product. Updates to the refund policy 
 1. Choose **Submit** to submit your request for review.
 
 1. Verify that the **Requests** tab shows the **Request status** as **Under review**. When the request completes, the status will update to **Succeeded** or **Failed**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

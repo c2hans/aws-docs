@@ -59,3 +59,7 @@ processing_job = ProcessingJob.create(
 ```
 
 If you have a `requirements.txt` file, it should be a list of libraries you want to install in the container. The path for `source_dir` can be a relative, absolute, or Amazon S3 URI path. However, if you use an Amazon S3 URI, then it must point to a tar.gz file. You can have multiple scripts in the directory you specify for `source_dir`. To learn more about the `HuggingFaceProcessor` class, see [Hugging Face Estimator](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) in the *Amazon SageMaker AI Python SDK*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

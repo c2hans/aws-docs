@@ -81,3 +81,7 @@ New AWS accounts might start with quotas that are lower than those described her
 | Static IP addresses | Each supported Region: 5 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/lightsail/quotas/L-BBF0F260)  | The maximum number of static IP addresses per region. |
 | Tags | Each supported Region: 50 | No | The maximum number of tags per resource. |
 | Total attached block storage disk space | Each supported Region: 20,000 Gigabytes | No | The maximum amount of attached block storage disk space (in GB) per region. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

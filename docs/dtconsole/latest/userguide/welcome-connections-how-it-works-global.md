@@ -15,3 +15,7 @@ Host resources for connections are not globally available resources. You use hos
 + When you list connection resources in the console or CLI, the list shows all connection resources associated with your account across all Regions.
 + When you list host resources in the console or CLI, the list shows host resources associated with your account in the selected Region only.
 + When a connection with an associated host resource is listed or viewed with the CLI, the output returns the host ARN regardless of the configured CLI Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

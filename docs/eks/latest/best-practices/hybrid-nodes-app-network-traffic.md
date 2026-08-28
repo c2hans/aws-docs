@@ -125,3 +125,7 @@ Failed to watch *v1.Namespace: failed to list *v1.Namespace: Get "https://<k8s-c
 Failed to watch *v1.Service: failed to list *v1.Service: Get "https://<k8s-cluster-ip>:443/api/v1/services?resourceVersion=2263966": dial tcp <k8s-cluster-ip>:443: i/o timeout
 Failed to watch *v1.EndpointSlice: failed to list *v1.EndpointSlice: Get "https://<k8s-cluster-ip>:443/apis/discovery.k8s.io/v1/endpointslices?resourceVersion=2263896": dial tcp <k8s-cluster-ip>: i/o timeout
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

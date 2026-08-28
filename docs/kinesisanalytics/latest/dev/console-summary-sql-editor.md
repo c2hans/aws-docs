@@ -41,3 +41,7 @@ The **Real-time analytics** tab shows all the in-application streams that your a
 <a name="console-summary-destination"></a>
 
 The **Destination** tab enables you to configure the application output to persist in-application streams to external destinations. You can configure output to persist data in any of the in-application streams to external destinations. For more information, see [Configuring Application Output](how-it-works-output.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

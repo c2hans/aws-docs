@@ -80,3 +80,7 @@ If you don't have Resource Explorer enabled and configured for use, or if Amazon
 To use Resource Explorer for resource counting, the following configuration is required:
 + The user interacting with Amazon Q must be in account where an Resource Explorer default view is configured and an aggregator index has been created in the same Region as the default view. For more information, see [Setting up Resource Explorer using Advanced setup](https://docs.aws.amazon.com/resource-explorer/latest/userguide/getting-started-setting-up.html#getting-started-setting-up-advanced) in the *AWS Resource Explorer User Guide*.
 + The user's IAM identity must have read permissions for the default view. For more information, see [Granting access to Resource Explorer views for search](https://docs.aws.amazon.com/resource-explorer/latest/userguide/configure-views-grant-access.html) in the *AWS Resource Explorer User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

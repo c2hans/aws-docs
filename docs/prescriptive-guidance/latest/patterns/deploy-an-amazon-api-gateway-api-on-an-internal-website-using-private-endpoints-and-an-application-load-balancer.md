@@ -116,3 +116,7 @@ The steps in this pattern can be automated by using AWS CloudFormation or the AW
 + [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/application-load-balancer/)
 + [AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html)
 + [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

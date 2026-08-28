@@ -180,3 +180,7 @@ The number of message parts that were sent during the campaign run. This number 
 The number of messages that were sent from the campaign run and were delivered to their intended recipients.
 **Delivery rate**
 The percentage of messages that were sent from the campaign run and were delivered to their intended recipients. Amazon Pinpoint calculates this rate by dividing **Messages delivered** by **Messages sent**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

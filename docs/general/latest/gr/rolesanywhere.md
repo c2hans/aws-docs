@@ -70,3 +70,7 @@ The following are the service endpoints and service quotas for this service.
 | Certificates per trust anchor | The maximum number of certificates that you can create per trust anchor within an account. | 2 | No |
 
 For more information, see [IAM Roles Anywhere quotas](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/load-balancer-limits.html) in the *IAM Roles Anywhere User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

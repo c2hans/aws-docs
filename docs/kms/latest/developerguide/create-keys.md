@@ -98,3 +98,7 @@ HMAC KMS keys are symmetric keys. When creating an HMAC KMS key in the AWS KMS c
 To create a KMS key for use with an [AWS service that is integrated with AWS KMS](service-integration.md), consult the documentation for the service. AWS services that encrypt your data require a [symmetric encryption KMS key](symm-asymm-choose-key-spec.md#symmetric-cmks).
 
 In addition to these considerations, cryptographic operations on KMS keys with different key specs have different prices and different request quotas. For information about AWS KMS pricing, see [AWS Key Management Service Pricing](https://aws.amazon.com/kms/pricing/). For information about request quotas, see [Request quotas](requests-per-second.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

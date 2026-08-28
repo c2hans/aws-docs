@@ -14,14 +14,14 @@ The source server migration metrics present an aggregated overview of your sourc
 
 The source server **Alerts** migration metric presents an aggregated overview of the application associated servers alerts. You can look up an individual source server's **Alerts** in the **Source servers** table at the bottom of the page.
 + A healthy server for which a test or cutover instance has not been launched displays a **Healthy** status.
-+ A healthy server for which a test of cutover instance has been launched displays a **Healthy** status.
++ A healthy server for which a test or cutover instance has been launched displays a **Healthy** status.
 + A server that is experiencing a temporary issue such as lag or backlog displays a **Lagging** status.
 + A server that is experiencing significant issues, such as a stall, displays a **Stalled** status.
 
 ## Understand data replication status
 <a name="source-server-migration-metrics-status"></a>
 
-The source server **Data replication status** migration metric presents an aggregated overview of the your source servers' data replication status. You can look up an individual source server's **Data replication status** status in the **Source servers** table at the bottom of the page.
+The source server **Data replication status** migration metric presents an aggregated overview of your source servers' data replication status. You can look up an individual source server's **Data replication status** status in the **Source servers** table at the bottom of the page.
 
 Source server **Data replication status** can have one of these values:
 +  **Transferring snapshot**
@@ -52,3 +52,7 @@ Source server **Migration lifecycle** can have one of these values:
 +  **Cutover complete**
 +  **Disconnected**
 +  **Discovered**
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

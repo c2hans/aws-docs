@@ -34,3 +34,7 @@ You can only submit a new backfill request once every 24 hours.
 Backfill will update your Cost Explorer, Data Exports, and AWS Cost and Usage Report automatically. Because these services refresh your data once every 24 hours, your backfill won't update as soon as it succeeds. For more information, see the following resources in their corresponding guides:
 + [Analyzing your costs with Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html) in the *AWS Cost Management User Guide*
 + [What is Data Exports?](https://docs.aws.amazon.com/cur/latest/userguide/what-is-data-exports.html) in the *AWS Data Exports user guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

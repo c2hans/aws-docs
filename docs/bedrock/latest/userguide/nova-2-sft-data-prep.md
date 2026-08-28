@@ -252,3 +252,7 @@ The following table provides guidelines for preparing your training dataset.
 | Output formatting | Clearly specify the desired output format in assistant responses. Examples include JSON structures, tables, CSV format, or custom formats specific to your application. |
 | Multi-turn conversations |  + Loss is calculated only on assistant turns, not user turns.<br />+ Each assistant response should be properly formatted.<br />+ Maintain consistency across conversation turns.  |
 | Quality checklist |  + Sufficient dataset size (2,000-10,000 samples)<br />+ Diverse examples covering all use cases<br />+ Clear, consistent output formatting<br />+ Accurate labels and annotations<br />+ Representative of production scenarios<br />+ Free from contradictions or ambiguities  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,3 +38,7 @@ AWS CloudTrail provides the following APIs for data retrieval.
 | <a name="cloudtrail-ListTrails"></a>[ListTrails](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_ListTrails.html) | List trails associated with the current region for your account | List |
 | <a name="cloudtrail-LookupEvents"></a>[LookupEvents](https://docs.aws.amazon.com/awscloudtrail/latest/APIReference/API_LookupEvents.html) | Look up and retrieve metric data for API activity events captured by CloudTrail that create, update, or delete resources in your account | Read |
 | <a name="cloudtrail-SearchSampleQueries"></a>[SearchSampleQueries](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/lake-console-queries.html) | Perform semantic search for CloudTrail Lake sample queries | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

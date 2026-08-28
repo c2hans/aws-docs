@@ -64,3 +64,7 @@ s3-source-kms-key-arn=arn:aws:kms:us-east-1:000000000000:key/aaaaaaaa-1111-bbbb-
    +  **RepositoryBucketName** - The name of the S3 bucket used to contain the source code.
    +  **RepositoryBucketObject** - The S3 object key of the source code uploaded in Step 5.
    +  **RepositoryBucketKmsKeyArn** - (OPTIONAL) The ARN of the KMS key used to encrypt the S3 bucket.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

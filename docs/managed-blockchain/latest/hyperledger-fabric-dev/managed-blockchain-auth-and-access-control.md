@@ -15,3 +15,7 @@ Before you configure authentication and access control using AWS services and op
 + For more information about Amazon EC2 security groups, see [Configuring Security Groups for Amazon Managed Blockchain (AMB) Hyperledger Fabric](managed-blockchain-security-sgs.md) and [Amazon EC2 Security Groups for Linux Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html) in the *Amazon EC2 User Guide*.
 + For more information about the Hyperledger Fabric Certificate Authority (CA), see [Certificate Authority (CA) Setup](https://hyperledger-fabric-ca.readthedocs.io/en/latest/) in the Hyperledger Fabric documentation.
 + For more information about the supported Hyperledger Fabric 2.2 application access control lists, see [Application Access Control Lists](https://hyperledger-fabric.readthedocs.io/en/release-2.2/access_control.html) in the Hyperledger Fabric documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

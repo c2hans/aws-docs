@@ -23,3 +23,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
  Retire redundant or shadow knowledge bases accumulated across business units by consolidating them under centralized governance, providing consistent cost control, data lineage, and compliance.
 
  Incorporate model lifecycle management into modernization plans. Deprecate outdated fine-tuned models, transition low-ROI use cases to smaller model tiers, and adopt managed generative AI orchestration (for example, Bedrock Agents) to reduce operational burden over time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

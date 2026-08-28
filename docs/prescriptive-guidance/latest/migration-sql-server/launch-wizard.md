@@ -66,3 +66,7 @@ For more information about Launch Wizard for SQL Server, see the following:
 + [AWS Launch Wizard for SQL Server documentation](https://docs.aws.amazon.com/launchwizard/latest/userguide/launch-wizard-sql.html)
 + [Simplify SQL Server Always On deployments with AWS Launch Wizard and Amazon FSx](https://aws.amazon.com/blogs/storage/simplify-sql-server-always-on-deployments-with-the-aws-launch-wizard-and-amazon-fsx/) blog post
 + [Accelerate SQL Server Always On Deployments with AWS Launch Wizard](https://aws.amazon.com/blogs/aws/accelerate-sql-server-always-on-deployments-with-aws-launch-wizard/) blog post
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

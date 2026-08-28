@@ -67,3 +67,7 @@ After you register for your account, you can sign in to Studio Lab.
 1. Select **Sign in** to open a new page to your project.
 
    You might be asked to solve a CAPTCHA puzzle. For more information on CAPTCHA, see [ What is a CAPTCHA puzzle?](https://docs.aws.amazon.com/waf/latest/developerguide/waf-captcha-puzzle.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

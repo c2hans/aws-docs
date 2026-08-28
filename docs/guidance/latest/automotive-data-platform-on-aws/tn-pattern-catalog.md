@@ -29,3 +29,7 @@ The CMS `modules/flink/` Flink processors implement the keyed stateful processin
 
 Open extensions
 A production deployment of this pattern would also need a signal-catalog service (a low-latency lookup layer that resolves signal IDs to canonical paths for the VSS-aligned source), a reference-data pipeline that keeps asset-model specifications and operating ranges current as fleet composition changes, an alerting/notification consumer that acts on quality flags from the pattern detection step, and a governance layer (Lake Formation row-level security or DataZone subscriptions) for controlled multi-tenant access to the quality-scored telemetry in the durable sink. Any of these can be a follow-on catalog entry or a separately-scoped implementation spec.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

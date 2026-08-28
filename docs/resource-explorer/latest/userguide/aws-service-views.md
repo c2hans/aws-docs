@@ -72,3 +72,7 @@ Service views maintain strong security controls:
 + [Configuring a Resource Explorer view to provide access to resource searches](customer-views.md#configure-views)
 + [Identity and access management for AWS Resource Explorer](security_iam.md)
 + [Terms and concepts for Resource Explorer](getting-started-terms-and-concepts.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resource Explorer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resource-explorer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

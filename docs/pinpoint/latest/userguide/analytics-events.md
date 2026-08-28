@@ -53,3 +53,7 @@ This chart displays the number of endpoints that reported the selected event for
 **Events per session**
 This chart displays the average number of events that occurred in each app session for each day in the selected time period. Amazon Pinpoint calculates this metric by dividing the number of times the selected event occurred each day by the number of sessions that occurred that day.
 This chart also provides the average number of events per session for the entire time period, and the percentage change in the number of events per session from the beginning to the end of the time period.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

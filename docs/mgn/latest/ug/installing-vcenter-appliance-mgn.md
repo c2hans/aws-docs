@@ -12,7 +12,7 @@ The first step to deploying the agentless solution is installing the MGN vCenter
 **Note**
 If you have multiple vCenter environments, you need to install multiple clients. You may not have more than one MGN vCenter Client installed per AWS account. If you have multiple vCenter environments, you can either use a different AWS account for each environment or you can migrate your VMs serially, environment by environment, into the same AWS account.
 
-After the MGN vCenter Client has been installed, it discovers all of the VMs in your vCenter environment and add them to MGN.
+After the MGN vCenter Client has been installed, it discovers all of the VMs in your vCenter environment and adds them to MGN.
 
 ## MGN vCenter Client requirements
 <a name="client-notes-mgn"></a>
@@ -23,7 +23,7 @@ Ensure that you review the notes below prior to installing the MGN vCenter Clien
 <a name="client-reqs"></a>
 + You must install the MGN vCenter Client on a VM that has outbound network connectivity to the AWS Transform MGN API endpoints and outbound network connectivity to the vCenter endpoint. Customers who want to use PrivateLink can use VPN or AWS Direct Connect to connect to AWS.
 + The MGN vCenter Client currently only supports VirtualDiskFlatVer2BackingInfo VMDK on CBT.
-+ You must log in to your Broadcomm account and download VDDK 7.0.3.3 to the VM on which the MGN vCenter Client is installed. VDDK 7.0.3.3 must be used, regardless of the vCenter version used.
++ You must log in to your Broadcom account and download VDDK 7.0.3.3 to the VM on which the MGN vCenter Client is installed. VDDK 7.0.3.3 must be used, regardless of the vCenter version used.
 + The MGN vCenter Client requires these vCenter user permissions for agentless deployment. It is a best practice to create a dedicated role with these permissions and a dedicated user group with which the role is associated. Every new user created for the MGN vCenter Client needs to be a member of that group in order to obtain the required permissions. The vCenter predefined role: “ Consolidated Backup user (sample) ” provides most of these permissions. If that role is used, the **Toggle disk change tracking** permission must be provided..
   + Change configuration
     + Acquire disk lease
@@ -40,7 +40,7 @@ Ensure that you review the notes below prior to installing the MGN vCenter Clien
 + VMs that are being replicated into AWS should have at least 2 GiB of free disk space.
 + The VM on which the MGN vCenter Client is installed should not allow any incoming (ingress) traffic.
 + The VM on which the MGN vCenter Client is installed should only allow outgoing traffic as following:
-  + Egress TCP on the port on which the vCenter API is ran.
+  + Egress TCP on the port on which the vCenter API runs.
   + Egress TCP on port 443 for communication with the MGN API.
   + Egress TCP on port 1500 – for the replication server.
 + Patching of guest OS running AWS vCenter client should be handled by the customer as part of shared responsibility.
@@ -61,7 +61,6 @@ Ensure that you review the notes below prior to installing the MGN vCenter Clien
 + These flags are used by the installer:
   + usage: aws-vcenter-client-installer-init.py [-h]
   +  [--aws-access-key-id AWS\_ACCESS\_KEY\_ID]
-  + [--aws-access-key-id AWS\_ACCESS\_KEY\_ID]
   + [--aws-secret-access-key AWS\_SECRET\_ACCESS\_KEY]
   + [--region REGION]
   + [--endpoint ENDPOINT]
@@ -94,3 +93,7 @@ Ensure that you review the notes below prior to installing the MGN vCenter Clien
 + Once added to MGN, snapshot-based replication creates snapshots on the replicated VM, which may result in slower disk performance.
 + VMs with independent disks, Raw Device Mappings (RDM), or direct-attach disks (iSCSI, NBD) are not supported for replication into MGN.
 + The VM being replicated into MGN can be either stopped or running. Changing the VM state during data replication does not affect data replication and causes no data corruption.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

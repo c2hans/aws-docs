@@ -33,3 +33,7 @@ If your instruction image is in an S3 bucket that isn't publicly accessible, do 
 + For the image URL, enter: `{{ 'https://s3.amazonaws.com/{{your-bucket-name}}/{{image-file-name}}' | grant_read_access }}`.
 
 This renders the image URL with a short-lived, one-time access code that's appended so the worker's browser can display it. A broken image icon is displayed in the instructions editor, but previewing the tool displays the image in the rendered preview. See [s3\_presign](a2i-custom-templates.md#a2i-custom-templates-step2-automate-grantreadaccess) for more information about the `grand_read_access` element.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

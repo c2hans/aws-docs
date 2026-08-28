@@ -20,7 +20,8 @@ Instead of detaching and re-attaching an instance to the same group, we recommen
 <a name="detach-instances-considerations"></a>
 
 When you detach instances, keep these points in mind:
-+ You can detach an instance only when it's either in an `InService` or `StandBy` state. If you are detaching instances that are in the `StandBy` state, exercise caution. Including the `ShouldDecrementDesiredCapacity` flag in the API call when attempting to detach instances after putting them into the `StandBy` state might cause other instances to terminate unexpectedly.
++ You can detach an instance when it's in the `InService` or `Standby` state, or in a retained state. Instances in a retained state can be detached only if you don't decrement the desired capacity (set `ShouldDecrementDesiredCapacity` to `false`).
++ If you are detaching instances that are in the `Standby` state, exercise caution. Including the `ShouldDecrementDesiredCapacity` flag in the API call when attempting to detach instances after putting them into the `Standby` state might cause other instances to terminate unexpectedly.
 + After you detach an instance, it continues running and incurring charges. To avoid unnecessary charges, make sure to reattach or terminate detached instances when they're no longer needed.
 + You can choose to decrement the desired capacity by the number of instances that you are detaching. If you choose not to decrement the capacity, Amazon EC2 Auto Scaling launches new instances to replace the detached ones to maintain the desired capacity.
 + If the number of instances that you are detaching will bring the Auto Scaling group below its minimum capacity, you must decrement the minimum capacity.
@@ -246,3 +247,7 @@ You can now attach the instance to a different Auto Scaling group.
    ```
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

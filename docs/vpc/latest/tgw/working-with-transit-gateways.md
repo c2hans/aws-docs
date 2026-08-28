@@ -75,3 +75,7 @@ When a transit gateway is unshared with another AWS account, or if the AWS accou
 A VPC owner can attach a transit gateway to a shared VPC subnet. Participants cannot. The traffic from participant’s resources can use the attachments depending on the routes set up on the shared VPC subnet by the VPC owner.
 
 For more information, see [Share your VPC with other accounts](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-sharing.html) in the *Amazon VPC User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

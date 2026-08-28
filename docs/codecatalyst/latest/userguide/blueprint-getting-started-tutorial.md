@@ -270,3 +270,7 @@ Changes to the blueprint are now available in your project after [Step 7: Update
 1. Choose the `hello-world.txt` to view the file's content.
 
 Lifecycle management provides blueprint authors the ability centrally manage the software development lifecycle of every project that contains a particular blueprint. As seen in this tutorial, you can push updates to the blueprint that can then be incorporated by projects that used the blueprint to create a new project or applied it to an existing project. For more information, see [Working with lifecycle management as a blueprint author](lifecycle-management-dev.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

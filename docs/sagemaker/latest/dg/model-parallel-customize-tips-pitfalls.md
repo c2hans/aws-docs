@@ -85,3 +85,7 @@ with smp.delay_param_initialization(enabled=True):
   + If you are transitioning an existing pipeline parallel script and enabling tensor parallel for the script, ensure that you modify any `if smp.dp_rank() == 0` block used for saving and loading with `if smp.rdp_rank() == 0` blocks. Otherwise, it might cause your training job to stall.
 
   For more information about checkpointing a model with tensor parallelism, see [Checkpointing a distributed model](distributed-model-parallel-checkpointing-and-finetuning.md#distributed-model-parallel-checkpoint).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

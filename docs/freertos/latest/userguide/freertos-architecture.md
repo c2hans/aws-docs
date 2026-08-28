@@ -12,3 +12,7 @@ While package repositories contain multiple libraries, they don't contain copies
 The individual library git repositories are split between two GitHub organizations. Repositories containing FreeRTOS specific libraries (such as FreeRTOS\+TCP) or generic libraries (such as coreMQTT, which is cloud agnostic because it works with any MQTT broker) are in the FreeRTOS GitHub organization. Repositories containing AWS IoT specific libraries (such as the AWS IoT over-the-air update client) are in the AWS GitHub organization. The following diagram explains the structure.
 
 ![Diagram depicting FreeRTOS package repositories on GitHub for FreeRTOS kernel, HTTP, MQTT demos, composable libraries; and RTOS agnostic package repositories for Shadow client, Fleet provisioning, OTA client demos, composable libraries.](http://docs.aws.amazon.com/freertos/latest/userguide/images/freertos-github.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

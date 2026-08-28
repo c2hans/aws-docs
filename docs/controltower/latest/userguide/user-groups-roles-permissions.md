@@ -19,3 +19,7 @@ For more information on how to use this service in the context of AWS Control To
 
 **Warning**
 AWS Control Tower sets up your IAM Identity Center directory in your home Region. If you set up your landing zone in another Region and then navigate to the IAM Identity Center console, you must change the Region to your home region. Do not delete your IAM Identity Center configuration in your home Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ The following table describes significant changes to this guide.
 | Update | Updates to reflect the availability of write forwarding in Amazon Aurora. | April 29, 2024 |
 | Update | Updated the [Amazon RDS and Aurora comparison table](db-selection.md#relational). | October 21, 2022 |
 | Initial publication | — | September 30, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -132,3 +132,7 @@ The following table lists the blog posts that contain useful information for Tra
 | [Lift and Shift migration of SFTP servers to AWS](https://aws.amazon.com/blogs/storage/lift-and-shift-migration-of-sftp-servers-to-aws/) | February 12, 2020 |
 | [Simplify your AWS SFTP Structure with chroot and logical directories](https://aws.amazon.com/blogs/storage/simplify-your-aws-sftp-structure-with-chroot-and-logical-directories/) | September 26, 2019 |
 | [Using Okta as an identity provider with AWS Transfer Family](https://aws.amazon.com/blogs/storage/using-okta-as-an-identity-provider-with-aws-transfer-for-sftp/) | May 30, 2019 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ If you manually stop an AWS Elemental MediaLive channel when one or both pipelin
 If both pipelines are active when you stop the channel, MediaLive includes `EXT-X-ENDLIST`. MediaPackage delivers a VOD manifest to downstream devices.
 If you restart the output from the encoder, the manifest from MediaPackage becomes live again. Playback devices might need to refresh to resume content playback.
 If you're using input redundancy and the active stream ends, MediaPackage fails over to the other incoming stream for input. The manifest isn't marked as complete unless both incoming streams end.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

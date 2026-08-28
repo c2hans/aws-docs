@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-fo
  AWS Direct Connect locations in Regions or AWS GovCloud (US) can access public services in any other Region excluding China (Beijing and Ningxia). In addition, AWS Direct Connect connections in Regions or AWS GovCloud (US) can be configured to access a VPC in your account in any other Region excluding China (Beijing and Ningxia). You can, therefore, use a single AWS Direct Connect connection to build multi-Region services.
 
  There are SLA implications of this design. All networking traffic remains on the AWS global network backbone, regardless of whether you access public AWS services or a VPC in another Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

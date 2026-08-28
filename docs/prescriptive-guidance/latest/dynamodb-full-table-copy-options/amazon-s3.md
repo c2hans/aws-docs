@@ -35,3 +35,7 @@ At a high level, the following steps are required to export and import DynamoDB 
 ## Drawbacks
 <a name="drawbacks.0137f024-5171-551c-9dee-695a26bccf43"></a>
 + Import into existing tables is not currently supported by this feature. The import process creates a new table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

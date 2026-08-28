@@ -79,3 +79,7 @@ Amazon Quick does not delete feedback that a user submitted when that user is de
 <a name="user-removal-access-timing"></a>
 
 Removing or deleting a user prevents new sign-ins to Amazon Quick. Amazon Quick also denies requests from the user's existing sessions after the change takes effect, which can take up to five minutes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

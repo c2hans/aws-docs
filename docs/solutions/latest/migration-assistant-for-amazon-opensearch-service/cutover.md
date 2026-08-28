@@ -23,3 +23,7 @@ The exact cutover mechanism depends on your environment, but the principle is al
 1. Watch the target closely during the first production traffic window.
 
 In practice, that usually means updating a DNS record, a load balancer backend, an application connection string, or a service-discovery entry. Keep the source cluster available during a rollback window (typically 24–72 hours) before decommissioning. After the rollback window has passed, see [Uninstall the solution](uninstall-the-solution.md) to remove the Migration Assistant infrastructure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

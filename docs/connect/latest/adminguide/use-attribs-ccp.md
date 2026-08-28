@@ -14,3 +14,7 @@ When you use the Connect Customer Streams API, you can access user-defined attri
 To access the attribute directly from a Lambda function, use $.External.AttributeName. If the attribute is stored to a user-defined attribute from a [Set contact attributes](set-contact-attributes.md) block, use $.Attributes.AttributeName.
 
 For example, included with your Connect Customer instance, there is a flow named "Sample note for screenpop." In this flow, a [Set contact attributes](set-contact-attributes.md) block is used to create an attribute from a text string. The text, as an attribute, can be passed to the CCP to display a note to an agent.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

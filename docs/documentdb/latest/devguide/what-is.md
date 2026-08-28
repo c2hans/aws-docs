@@ -225,3 +225,7 @@ The preceding sections introduced you to the basic infrastructure components tha
 + Get started with Amazon DocumentDB by creating a cluster and instance using the instructions in our [Get started guide](get-started-guide.md).
 + Get started with Amazon DocumentDB by creating an elastic cluster using the instructions in [Get started with Amazon DocumentDB elastic clusters](elastic-get-started.md).
 + Migrate your MongoDB implementation to Amazon DocumentDB using the guidance at [Migrating and upgrading Amazon DocumentDB](docdb-migration.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

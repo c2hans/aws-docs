@@ -24,3 +24,7 @@ Manifest files are JSON files in the format described below. Ensure that all spe
 + **start\_on\_server** and **start\_on\_client** – Indicates whether an extension defined by the manifest should be run on the server or client or both.
 + **virtual\_channel\_namespace** – This attribute specifies the namespace for virtual channels created by this extension. Although different vendors may create virtual channels with the same name, they should be in separate namespaces. Namespace 'dcv' is reserved, so it shouldn't be used.
 + **userdata** – Amazon DCV ignores this attribute, but the extension can access it via `GetManifestRequest`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

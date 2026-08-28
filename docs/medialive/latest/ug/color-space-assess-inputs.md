@@ -62,3 +62,7 @@ For example, you have an output where you want to encode with H.264, and you wan
 The workaround is to choose an output codec (H.265) that is supported with the color space conversion.
 
 Note how the rule for conversion in a channel is based on the color space and codec for the individual output.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

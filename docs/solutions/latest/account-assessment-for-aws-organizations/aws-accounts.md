@@ -25,3 +25,7 @@ For efficient deployment across multiple AWS accounts, consider using CloudForma
 <a name="organizations-management-account"></a>
 
 The Org-Management stack must be deployed in your Organizations management account. This stack consists of a single IAM role that will be assumed by the Hub stack’s Lambda function and grants minimal required permissions to access data of the Organization. This role enables: - Reading account information (listing accounts and their parent relationships) - Reading Delegated Administrator configurations and their services - Viewing AWS service access settings for the Organization - Reading and listing Organization policies
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Account Assessment for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

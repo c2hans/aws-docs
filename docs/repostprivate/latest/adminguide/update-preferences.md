@@ -22,3 +22,7 @@ To update the existing branding for your private re:Post, follow these steps:
 1. Under **Color scheme**, for **Primary color** and **Button color**, choose the colors. The primary color that you choose is used as the header color for your private re:Post. The button color that you choose is used as the color for the buttons within your private re:Post.
 
 1. Choose **Update preferences**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ There are specific requirements for converting to HDR10 or Dolby Vision outputs.
 | For HD outputs, the event must run on an L800 series appliance. | No | Yes |
 | For 4K outputs, the event must run on an appliance in the L730 series, the L840 series, or the L880 series. | No | Yes |
 | You must obtain a license from the [AWS Elemental Support Center Activations](https://console.aws.amazon.com/elemental-appliances-software/home?region=us-east-1#/activations). Note that pass through of Dolby Vision doesn't require a license.  | No | Yes |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

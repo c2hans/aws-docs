@@ -50,3 +50,7 @@ Workflows that start and then get blocked by a gate still count against your *Ma
 Gates have the following limitations:
 + Gates cannot be used in conjunction with the compute sharing feature. For more information about this feature, see [Sharing compute across actions](compute-sharing.md).
 + Gates cannot be used within action groups. For more information about action groups, see [Grouping actions into action groups](workflows-group-actions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

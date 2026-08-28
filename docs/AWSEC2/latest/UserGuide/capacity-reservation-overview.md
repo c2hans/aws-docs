@@ -11,6 +11,8 @@ Capacity Reservations allow you to reserve compute capacity for Amazon EC2 insta
 + [On-Demand Capacity Reservations](ec2-capacity-reservations.md)
 + [Capacity Blocks for ML](ec2-capacity-blocks.md)
 
+To organize your Capacity Reservations into logical collections, see [Capacity Reservation Resource Groups](cr-groups.md).
+
 The following are some common use cases for On-Demand Capacity Reservations:
 + **Scaling events** – Create On-Demand Capacity Reservations ahead of your business-critical events to ensure that you can scale when you need to.
 + **Regulatory requirements and disaster recovery** – Use On-Demand Capacity Reservations to satisfy regulatory requirements for high availability, and reserve capacity in a different Availability Zone or Region for disaster recovery.
@@ -25,3 +27,7 @@ Use On-Demand Capacity Reservations if you have strict capacity requirements, an
 
 **When to use Capacity Blocks for ML**
 Use Capacity Blocks for ML when you need to ensure that you have uninterrupted access to GPU instances for a defined period of time starting on a future date. Capacity Blocks are ideal for training and fine-tuning ML models, short experimentation runs, and handling temporary surges in inference demand in the future. With Capacity Blocks, you can ensure that you'll have access to GPU resources on a specific date to run your ML workloads.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

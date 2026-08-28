@@ -17,3 +17,7 @@ The extension provides two components to help you access, discover, query, and a
 + Use the *SQL Editor and Executor* to write, edit, and run SQL queries against connected data sources.
   + With the **SQL editor** element, you can write, format, and validate SQL statements within the notebooks of your JupyterLab application in Studio. For details on the SQL editor features, see [SQL editor features of the JupyterLab SQL extension](sagemaker-sql-extension-features-editor.md).
   + With the **SQL execution** element, you can run your SQL queries and visualize their results from the notebooks of your JupyterLab application in Studio. For details on the SQL execution capabilities, see [SQL execution features of the JupyterLab SQL extension](sagemaker-sql-extension-features-sql-execution.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

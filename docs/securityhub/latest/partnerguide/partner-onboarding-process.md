@@ -50,3 +50,7 @@ See [Guidelines for using the `BatchImportFindings` API](guidelines-batchimportf
    At a minimum, Security Hub CSPM recommends that you provide the following assets.
    + A demonstration video (3 minutes at most) of the working integration. The video is used for marketing purposes and is posted to the AWS YouTube channel.
    + A one-slide architecture diagram to add to the Security Hub CSPM first call slide deck.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

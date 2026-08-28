@@ -28,3 +28,7 @@ WorkSpaces Secure Browser does not currently support redaction of supported or c
 + PDFs viewed by the Chrome browser
 
 Do not use redaction for content in an unsupported format. Administrators are responsible for validating site and content compatibility prior to granting users access to content they intend to be redacted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

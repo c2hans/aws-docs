@@ -44,3 +44,7 @@ The test development cycle consists of the following steps:
 1. If you change the code, data, or configuration files, rebuild the project and deploy it again.
    + If your changes include significant modifications to the application compute environment, such as open ports, the base image, or the Docker file, Toolkit for .NET Refactoring will rebuild a container image and deploy a new Amazon ECS service.
    + If the changes are limited to the application files, Toolkit for .NET Refactoring will deliver the new files to the Amazon ECS task and restart the application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

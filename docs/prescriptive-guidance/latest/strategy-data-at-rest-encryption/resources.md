@@ -38,3 +38,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-da
 + [Achieving security goals with AWS CloudHSM](https://youtu.be/Vox-PDRHIUs)
 + [Best practices for implementing AWS Key Management Service](https://youtu.be/X1eZjXQ55ec)
 + [A deep dive into AWS encryption services](https://youtu.be/gTZgxsCTfbk)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

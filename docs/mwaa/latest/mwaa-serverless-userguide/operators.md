@@ -239,3 +239,7 @@ Amazon MWAA Serverless currently supports a specific set of [Apache Airflow oper
 In addition to AWS service operators, Amazon MWAA Serverless supports the following Apache Airflow core operators for running custom code as part of your workflows. For instructions on using these operators, see [Using Python and Bash operators](operators-python-bash-detail.md).
 + `PythonOperator`: Runs a Python callable as a task. Provide your Python modules as code when creating or updating a workflow.
 + `BashOperator`: Runs a Bash command or shell script as a task.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

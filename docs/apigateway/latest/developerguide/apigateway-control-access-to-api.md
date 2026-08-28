@@ -17,8 +17,12 @@ You can use the following mechanisms for authentication and authorization:
 
 You can use the following mechanisms for performing other tasks related to access control:
 + **Cross-origin resource sharing (CORS)** lets you control how your REST API responds to cross-domain resource requests. For more information, see [CORS for REST APIs in API Gateway](how-to-cors.md).
-+ **Client-side SSL certificates** can be used to verify that HTTP requests to your backend system are from API Gateway. For more information, see [Generate and configure an SSL certificate for backend authentication in API Gateway](getting-started-client-side-ssl-authentication.md).
++ **Client-side SSL certificates** can be used to verify that HTTP requests to your backend system are from API Gateway. For more information, see [Use an API Gateway-generated certificate for backend authentication in API Gateway](getting-started-client-side-ssl-authentication.md).
 + **AWS WAF** can be used to protect your API Gateway API from common web exploits. For more information, see [Use AWS WAF to protect your REST APIs in API Gateway](apigateway-control-access-aws-waf.md).
 
 You can use the following mechanisms for tracking and limiting the access that you have granted to authorized clients:
 + **Usage plans** let you provide **API keys** to your customers—and then track and limit usage of your API stages and methods for each API key. For more information, see [Usage plans and API keys for REST APIs in API Gateway](api-gateway-api-usage-plans.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

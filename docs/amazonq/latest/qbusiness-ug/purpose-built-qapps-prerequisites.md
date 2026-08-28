@@ -21,3 +21,7 @@ As of August 30, 2024, all Amazon Q Apps created by Lite users who did not upgra
 **Note**
 If you are using permissions for Amazon Q Apps created prior to July 10, 2024, you must update your role with the new [Amazon Q Apps](deploy-q-apps-iam-permissions.md) permissions for your users to have access to use the [permissions to view and specify approved data sources](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/deploy-q-apps-iam-permissions.html#deploy-data-source-iam-permissions) and other future features in Q Apps.
 + **Quotas** *(formerly known as limits)* — There are set maximum quotas for Amazon Q Apps. For information about these quotas, see [Quotas](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/quotas-regions.html#limits).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

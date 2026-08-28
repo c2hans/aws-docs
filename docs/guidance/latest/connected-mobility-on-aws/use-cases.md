@@ -36,3 +36,7 @@ Fleet drivers and service advisors interact with a conversational assistant embe
  **OEM Cloud-to-Cloud Telemetry Ingestion**
 
 OEMs that host vehicle telemetry in their own cloud systems integrate with the guidance through configurable transform manifests. The OEM cloud connector ingests data from third-party APIs and lands it on the same Amazon MSK topic used by other telemetry sources, so downstream Flink processors handle OEM data identically to MQTT Direct or FleetWise Edge telemetry without code changes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

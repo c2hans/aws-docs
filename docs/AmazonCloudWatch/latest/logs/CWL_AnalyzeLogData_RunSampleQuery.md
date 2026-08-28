@@ -92,3 +92,7 @@ If you haven't already run the previous tutorials, do that now. This tutorial st
    You must use the backtick characters for field names that contain non-alphanumeric characters, but not for values. Values are always contained in quotation marks (").
 
 Logs Insights QL includes powerful query abilities, including several commands and support for regular expressions, mathematical, and statistical operations. For more information, see [CloudWatch Logs Insights language query syntax](CWL_QuerySyntax.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

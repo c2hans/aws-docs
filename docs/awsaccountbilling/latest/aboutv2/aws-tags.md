@@ -125,3 +125,7 @@ The following restrictions apply to the AWS-generated tags:
 
   AWS-generated tag names and values are automatically assigned the `aws:` prefix, which you can't assign. AWS-generated tag names don't count towards the user-defined resource tag quota of 50. User-defined tag names have the prefix `user:` in the cost allocation report.
 + Null tag values will not appear in Cost Explorer and AWS Budgets. If there is only one tag value that is also null, the tag key will also not appear in Cost Explorer or AWS Budgets.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ The AWS CloudHSM client for Windows includes CNG and KSP providers.
 + [Prerequisites for using the AWS CloudHSM Windows Client](ksp-library-prereq.md)
 + [Associate an AWS CloudHSM key with a certificate](ksp-library-associate-key-certificate.md)
 + [Code sample for CNG provider for AWS CloudHSM](ksp-library-sample.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

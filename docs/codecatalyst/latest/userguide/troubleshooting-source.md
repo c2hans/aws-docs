@@ -111,3 +111,7 @@ If you have a role that allows committing and pushing changes, the branch where 
 **Note**
 If a required reviewer has been removed from your project before approving the pull request, you cannot merge the pull request. Close the pull request and create a new pull request.
 + There might be a merge conflict between the source branch and the destination branch. CodeCatalyst does not support all possible Git merge strategies and options. You can evaluate the branches for merge conflicts in a Dev Environment or clone the repository and use an IDE or Git tools to find and resolve merge conflicts. For more information, see [Merging a pull request](pull-requests-merge.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

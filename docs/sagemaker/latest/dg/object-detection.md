@@ -127,3 +127,7 @@ For more information about the Amazon SageMaker AI Object Detection algorithm, s
 + [Training the Amazon SageMaker AI object detection model and running it on AWS IoT Greengrass – Part 1 of 3: Preparing training data](https://aws.amazon.com/blogs/iot/sagemaker-object-detection-greengrass-part-1-of-3/)
 + [Training the Amazon SageMaker AI object detection model and running it on AWS IoT Greengrass – Part 2 of 3: Training a custom object detection model](https://aws.amazon.com/blogs/iot/sagemaker-object-detection-greengrass-part-2-of-3/)
 + [Training the Amazon SageMaker AI object detection model and running it on AWS IoT Greengrass – Part 3 of 3: Deploying to the edge](https://aws.amazon.com/blogs/iot/sagemaker-object-detection-greengrass-part-3-of-3/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

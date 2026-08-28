@@ -101,3 +101,7 @@ The following data types are supported:
 +  [ViolationDetail](API_ViolationDetail.md)
 +  [WebACLHasIncompatibleConfigurationViolation](API_WebACLHasIncompatibleConfigurationViolation.md)
 +  [WebACLHasOutOfScopeResourcesViolation](API_WebACLHasOutOfScopeResourcesViolation.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for 1.0. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

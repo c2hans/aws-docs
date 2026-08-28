@@ -51,3 +51,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-
  The following diagram illustrates the “moving the data around the perimeter” Modern Data approach with AWS Glue Elastic Views to derive insights.
 
 ![Diagram showing the services available to derive insights from your data lake, data warehouse, and purpose-built analytics stores.](http://docs.aws.amazon.com/whitepapers/latest/derive-insights-from-aws-modern-data/images/insights-lake-warehouse-analytics.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ Following the data load, verify that the correct files are present on Amazon S3.
 + [Managing data consistency](managing-data-consistency.md)
 + [Uploading encrypted data to Amazon S3](t_uploading-encrypted-data.md)
 + [Verifying that the correct files are present in your bucket](verifying-that-correct-files-are-present.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,3 +28,7 @@ Vehicles today contain a multitude of sensors which enable many of the features 
 |   |
 
  Your risk management program should be used to capture functional safety, cybersecurity, privacy, and secure software development requirements throughout the lifecycle of the vehicle. This can be accomplished by incorporating guidance from automotive industry specific frameworks such as ISO-21434, information security standards like NIST 800-53 or ISO 27001, and the new UNR-155 and UNR-156 regulations concerning type approval with regards to cyber security management systems and software update management systems. These standards, frameworks, and regulations can inform your organization on how to design a cyber security program that covers both the vehicle and the systems and resources that interact with vehicles. This requires input and collaboration from a number of cross-functional areas including but not limited to management, security, and legal to address the needs that are specific to your organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

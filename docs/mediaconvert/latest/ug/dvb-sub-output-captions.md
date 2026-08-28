@@ -34,3 +34,7 @@ AWS Elemental MediaConvert automatically selects the appropriate script for your
    For example, if you choose **Chinese** (ZH) for **Language**, use **Font script** to choose either **Simplified Chinese** or **Traditional Chinese**. In this case, if you don’t specify a value for **Font script**, the service defaults to simplified Chinese.
 **Tip**
 In most cases, for **Font script** you can keep the default value of **Automatic**. When you do, the service chooses the script based on the language of the captions text.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

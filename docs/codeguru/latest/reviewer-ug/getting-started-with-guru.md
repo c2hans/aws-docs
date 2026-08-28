@@ -14,3 +14,7 @@ In this section, you learn what you need to do to get started with Amazon CodeGu
 + [Step 2: Associate a repository](getting-started-associate-repository.md)
 + [Step 3: Get recommendations](get-results.md)
 + [Step 4: Provide feedback](provide-feedback.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

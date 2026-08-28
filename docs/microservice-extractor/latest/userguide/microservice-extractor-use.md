@@ -22,3 +22,7 @@ This section contains information to help you get started with AWS Microservice 
 + [Remove application](microservice-extractor-use-remove-application.md)
 + [Edit details](microservice-extractor-use-edit-application-details.md)
 + [Edit settings](microservice-extractor-use-edit-user-settings.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

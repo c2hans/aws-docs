@@ -172,3 +172,7 @@ Before your begin this tutorial, make sure you complete the [prerequisites](#dea
 1. On the **Review** page, choose **Create**.
 
    CloudFormation begins to create the `MyDeadLetterQueue` stack and displays the **CREATE\_IN\_PROGRESS** status. When the process is complete, CloudFormation displays the **CREATE\_COMPLETE** status.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

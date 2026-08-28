@@ -30,3 +30,7 @@ For example, assume that you have three projects, named `Heart`, `Star`, and `Li
 + **Use employee attributes from your corporate directory with ABAC.** You can configure your SAML or OIDC provider to pass session tags to IAM. When your employees federate into AWS, IAM applies their attributes to their resulting principal. You can then use ABAC to allow or deny permissions based on those attributes.
 
 For a detailed tutorial that demonstrates how to use ABAC in AWS, see [IAM tutorial: Define permissions to access AWS resources based on tags](tutorial_attribute-based-access-control.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

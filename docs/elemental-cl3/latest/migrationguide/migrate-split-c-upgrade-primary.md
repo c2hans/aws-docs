@@ -20,3 +20,7 @@ Now that node X is not controlling the cluster, you can upgrade it.
    This means that when you add worker nodes back into the cluster (in the next section), there is less worker node configuration required compared to when you set up the cluster for the very first time.
 
 1. If you moved custom files to a safe location as part of your preparation, you can now copy these files back to their original location.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

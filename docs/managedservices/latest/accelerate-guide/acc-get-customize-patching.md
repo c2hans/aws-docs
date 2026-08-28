@@ -16,3 +16,7 @@ Patching ensures that your software is up-to-date and meets your compliance poli
 + To create custom maintenance windows, see [Create a patch maintenance window in AMS](acc-p-maint-window.md).
 + To create custom patch baselines, see [Custom patch baseline with AMS Accelerate](acc-patch-baseline-custom.md).
 + To route patch alerts to the resource owner, see [Understand patch notifications and patch failures in AMS Accelerate](acc-patch-mon-remediate.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

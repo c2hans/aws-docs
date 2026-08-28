@@ -12,3 +12,7 @@ AMS single-account landing zone (SALZ) monitors the status of the one-way trust(
 This feature is automatically enabled in your AWS Managed Services (AMS) accounts.
 
 There is a small cost impact. The feature uses four AWS CloudWatch metrics, and two AWS CloudWatch alarms for one trust.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,6 +16,7 @@ Use the information here to help you diagnose and fix common issues when you wor
 + [How do I securely create IAM users?](#troubleshoot_general_securely-create-iam-users)
 + [Additional resources](#troubleshoot_general_resources)
 + [Troubleshoot access denied error messages](troubleshoot_access-denied.md)
++ [Troubleshoot access denied error messages with authorization ID (Preview)](troubleshoot_access-denied-authorization-id.md)
 + [Troubleshoot issues with the root user](troubleshooting_root-user.md)
 + [Troubleshoot IAM policies](troubleshoot_policies.md)
 + [Troubleshoot Passkeys and FIDO Security Keys](troubleshoot_mfa-fido.md)
@@ -112,3 +113,7 @@ The following resources can help you troubleshoot as you work with AWS.
 + **[AWS Knowledge Center](https://aws.amazon.com/premiumsupport/knowledge-center/)** – Find FAQs and links to other resources to help you troubleshoot issues.
 + **[AWS Support Center](https://console.aws.amazon.com/support/home#/)** – Get technical support.
 + **[AWS Premium Support Center](https://aws.amazon.com/premiumsupport/)** – Get premium technical support.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

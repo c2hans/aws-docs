@@ -671,3 +671,7 @@ View details about updates to AWS managed policies for Amazon Lex V2 since this 
 | [AmazonLexReadOnly](#security-iam-awsmanpol-AmazonLexReadOnly) – Update to an existing policy | Amazon Lex V2 added new permissions to allow read-only access to Amazon Lex V2 model building service operations. | August 18, 2021 |
 | [AmazonLexRunBotsOnly](#security-iam-awsmanpol-AmazonLexRunBotsOnly) – Update to an existing policy | Amazon Lex V2 added new permissions to allow read-only access to Amazon Lex V2 runtime service operations. | August 18, 2021 |
 | Amazon Lex V2 started tracking changes | Amazon Lex V2 started tracking changes for its AWS managed policies. | August 18, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

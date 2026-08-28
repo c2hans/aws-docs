@@ -400,3 +400,7 @@ Once your RFDK application is deployed, you can obtain the address of the remote
 Navigate to the CloudFormation service in your AWS Web Console. Find the stack deployed with RFDK and click on its name (for example, `hello-rfdk`). Switch to the `Outputs` tab and find the `Key` of the Load Balancer. It should start with `RenderQueueAlbEc2ServicePatternLoadBalancer`. Copy the `Value`, which is a DNS name of the load balancer. This DNS name is the address of the remote connection server and you can use it to connect to your render farm.
 
 Alternatively, you could find the same DNS name by navigating to the EC2 service and finding the newly deployed load balancer in the `Load Balancers` tab.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Render Farm Deployment Kit on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rfdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -80,3 +80,7 @@ Once a resource is tagged with a partner's product code, AWS continues to attrib
 **Tag Conflicts:** Since an AWS resource can only have one tag with the `aws-apn-id` key, only one partner identifier is allowed per resource. For multi-partner scenarios, consider using the [User Agent String](user-agent-string.md) method instead. If you must use resource tagging, coordinate with the other partner and the customer to determine tag ownership before making changes.
 
 **Tag Removal:** Any user with account access can remove tags. Both customers and partners (with account access) can remove tags.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

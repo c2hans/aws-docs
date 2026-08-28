@@ -64,3 +64,7 @@ You can also connect an external key store to an Amazon VPC endpoint service own
 + Review the process for creating an external key store, including [assembling the prerequisites](create-xks-keystore.md#xks-requirements). It will help you to ensure that you have all of the components you need when you create your external key store.
 + Learn how to [control access to your external key store](authorize-xks-key-store.md), including the permissions that external key store administrators and users require.
 + Learn about the [Amazon CloudWatch metrics and dimensions](monitoring-cloudwatch.md#kms-metrics) that AWS KMS records for external key stores. We strongly recommend that you create alarms to monitor your external key store so you can detect the early signs of performance and operational problems.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

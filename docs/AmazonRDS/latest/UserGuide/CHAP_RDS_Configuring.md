@@ -22,3 +22,7 @@ The options and parameters that are available depend on the DB engine and DB eng
 + [Creating an Amazon ElastiCache cache using Amazon RDS DB instance settings](creating-elasticache-cluster-with-RDS-settings.md)
 + [Auto migrating databases to Amazon RDS using AWS Database Migration Service](USER_DMS_migration.md)
 + [Tutorial: Creating a MySQL DB instance with a custom parameterand new option group](tutorial-creating-custom-OPG.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

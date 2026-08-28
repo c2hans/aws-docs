@@ -33,3 +33,7 @@ The updated OAuth client configuration takes effect immediately and will be used
 
 **Note**
 You cannot switch between providing a client secret directly and referencing one stored in AWS Secrets Manager. To change the client secret selection method, delete the OAuth client and create a new one.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

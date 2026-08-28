@@ -95,3 +95,7 @@ Before you disconnect from the RDS SQL Server instance, you need to remove yours
    ```
 
 For more information, see [Leveraging SQLAgentOperatorRole in RDS SQL Server](https://aws.amazon.com/blogs/database/leveraging-sqlagentoperatorrole-in-rds-sql-server/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

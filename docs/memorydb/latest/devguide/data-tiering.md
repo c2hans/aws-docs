@@ -22,3 +22,7 @@ With the largest data tiering node size (db.r6gd.8xlarge), you can store up to \
 + [Data tiering monitoring](data-tiering-monitoring.md)
 + [Using data tiering](data-tiering-enabling.md)
 + [Restoring data from a snapshot into clusters](data-tiering-enabling-snapshots.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

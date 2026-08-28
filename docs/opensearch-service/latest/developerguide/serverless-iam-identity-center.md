@@ -145,3 +145,7 @@ After your IAM Identity Center provider is enabled, you can update the collectio
 Amazon OpenSearch Serverless supports only one IAM Identity Center instance for all customer collections and can support up to 100 groups for a single user. If you try to use more than the number of allowed instances, you will experience inconsistency with your data access policy authorization processing and receive a `403`error message.
 
 You can grant access to collections, indexes, or both. If you want different users to have different permssions, you will need to create multiple rules. For a list of available permissions, see [Identity and Access Management in Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ac.html). For information about how to format an access policy, see [Granting SAML identities access to collection data ](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/serverless-saml.html#serverless-saml-policies).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

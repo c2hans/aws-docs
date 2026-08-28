@@ -33,3 +33,7 @@ The following topics describe how to run jobs using the Amazon Location Jobs API
 The following topics describe how to perform other Amazon Location Jobs actions
 +  [Cancel a job](https://docs.aws.amazon.com/location/latest/developerguide/canceling-job.html)
 +  [List jobs](https://docs.aws.amazon.com/location/latest/developerguide/listing-jobs.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

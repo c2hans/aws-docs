@@ -28,3 +28,7 @@ Once you send a payload with version 2.0, the system assumes that all necessary 
  **Q: Can I revert back to payload version 1.0 after updating to version 2.0?**
 
 No. Transitioning to payload version 2.0 is a one-way process. Once you update to version 2.0, you can't revert back to version 1.0 of the payload.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

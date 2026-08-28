@@ -159,3 +159,7 @@ Adopting advanced observability isn't just about maintaining your systems—it's
 <a name="implement-gitops-practices.eb4fdebb-e4de-5a72-8334-b5ae5dca336e"></a>
 
 Implement GitOps practices to manage infrastructure and application configurations by using a Git repository as a single source of truth. This approach simplifies change management, enhances traceability, and ensures consistency across environments.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

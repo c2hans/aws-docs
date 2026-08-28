@@ -31,3 +31,7 @@ For example, if you’re migrating archive data that’s organized by year, you 
 A [manifest](transferring-with-manifest.md) is a list of files or objects that you want DataSync to transfer. With a manifest, DataSync doesn't have to read everything in a source location to determine what to transfer.
 
 You can create manifests from inventories of your source storage or through event-driven approaches (for example, see [Implementing AWS DataSync with hundreds of millions of objects](https://aws.amazon.com/blogs/storage/implementing-aws-datasync-with-hundreds-of-millions-of-objects/)). You can also use a different manifest each time you start a task, allowing you to transfer different sets of data with the same task.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

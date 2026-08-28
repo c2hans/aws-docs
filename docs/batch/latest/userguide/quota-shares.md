@@ -21,3 +21,7 @@ Quota shares also have explicit resource sharing configuration.
 AWS Batch will perform **cross-share preemption** to restore borrowed capacity back to a quota share when jobs arrive. When choosing which jobs to preempt, AWS Batch considers the number and type of instances a job is borrowing, relative priorities of the jobs and the duration of the job, and applies a custom heuristic.
 
 Administrators lowering a quota share's capacity limits can also make `SCHEDULED`, `STARTING`, or `RUNNING` jobs within that quota share eligible for preemption even if `LEND` or `RESERVE` was selected as the resource sharing strategy, if the capacity already consumed by that quota share is above its lowered capacity limits.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

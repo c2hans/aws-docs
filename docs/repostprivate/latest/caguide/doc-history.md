@@ -22,3 +22,7 @@ The following table describes the documentation releases for AWS re:Post Private
 | [Update](#doc-history) | Added information to indicate that re:Post Private [supports only organization intances of IAM Identity Center](https://docs.aws.amazon.com/repostprivate/latest/caguide/onboard-iam-identity-center.html) | January 16, 2024 |
 | [New resources](#doc-history) | Added documentation for [AWS managed policies for AWS re:Post Private](https://docs.aws.amazon.com/repostprivate/latest/caguide/security-with-iam-managed-policy.html) | November 26, 2023 |
 | [Initial release](#doc-history) | Initial release of the re:Post Private Console Administration Guide | November 26, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

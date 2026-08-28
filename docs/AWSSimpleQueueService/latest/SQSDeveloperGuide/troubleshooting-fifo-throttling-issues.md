@@ -12,3 +12,7 @@ By default, FIFO queues support 300 transactions per second, per API action for 
 + Increase the number of unique [`MessageGroupId`](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_SendMessage.html#SQS-SendMessage-request-MessageGroupId) values. This allows for an even distribution across FIFO queue partitions. For more information, see Using the Amazon SQS message group ID.
 
 For more information, see [Why doesn't my Amazon SQS FIFO queue return all messages or messages in other message groups?](https://repost.aws/knowledge-center/sqs-fifo-messages-not-returned) in the *AWS Knowledge Center Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

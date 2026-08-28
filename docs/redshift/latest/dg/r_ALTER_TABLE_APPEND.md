@@ -185,3 +185,7 @@ ALTER TABLE target_tbl APPEND FROM my_streaming_materialized_view;
 ```
 
 The table and materialized view names in this example are samples. Appending from a materialized view works only in the case where your materialized view is configured for [Streaming ingestion to a materialized view](materialized-view-streaming-ingestion.md). It moves all records in the source materialized view to a target table with the same schema as the materialized view and leaves the materialized view intact. This is the same behavior as when the source of the data is a table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

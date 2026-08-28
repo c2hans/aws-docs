@@ -1411,3 +1411,7 @@ images.topic.AddSubscription(new SqsSubscription(queue));
 The following video provides a comprehensive overview of CDK constructs, and explains how you can use them in your CDK apps.
 
 [![AWS Videos](http://img.youtube.com/vi/PzU-i0rJPGw?rel=0/0.jpg)](http://www.youtube.com/watch?v=PzU-i0rJPGw?rel=0)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ Migration Hub Strategy Recommendations automatically identifies the applications
 Strategy Recommendations performs analysis for Windows IIS and Java Tomcat and Jboss applications. If you have an IIS application, Strategy Recommendations generates an incompatibility report by default; you must configure source code access to receive the full anti-pattern report. If you have a Java application, Strategy Recommendations generates the full anti-pattern report by default.
 
 The incompatible or anti-pattern report is displayed after the analysis is complete. If the analysis is not successful, you can try running a source code analysis by providing source code access as described in [Set up version control configurations](getting-started-collector-setup.md#cli-collector-setup-git-source-config).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Hub Strategy Recommendations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-strategy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

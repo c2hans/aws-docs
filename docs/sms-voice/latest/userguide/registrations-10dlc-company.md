@@ -68,3 +68,7 @@ If you chose **Public for profit** in the previous step, the company's stock sym
 If your **Legal form of organization** is PUBLIC\_PROFIT then once you submit your brand registration the authentication email is sent to the email address specified in **Brand verification email**. Your registration can not be approved until you complete brand authentication. The authentication email is valid for 7 days and after that you have to [request a new authentication email](registrations-10dlc-auth.md#registrations-10dlc-auth.title).
 **Note**
 After your registration has been approved you need to either register for the optional **US 10DLC Brand vetting** or [10DLC campaign registration form](registrations-10dlc-register-campaign.md). For more information on registering for 10DLC, see [United States 10DLC registration](registrations-10dlc.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

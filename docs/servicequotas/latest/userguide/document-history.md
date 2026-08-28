@@ -18,3 +18,7 @@ The following table describes the important changes to the documentation since t
 | [IAM best practices update](#document-history) | Updated guide to align with the IAM best practices. For more information, see [Security best practices in IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html). | January 3, 2023 |
 | [Tagging Service Quotas resources](https://docs.aws.amazon.com/servicequotas/latest/userguide/sq-tagging.html) | You can now attach tags to applied quotas and write policies to control access to those quotas. | December 21, 2020 |
 | [Initial release](#document-history) | This release introduces Service Quotas. | June 24, 2019 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Service Quotas. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicequotas` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

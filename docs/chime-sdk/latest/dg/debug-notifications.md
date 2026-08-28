@@ -16,3 +16,7 @@ The following table lists and describes the delivery error messages.
 | Too many requests sent to Amazon Pinpoint. | Amazon Pinpoint has throttled your outgoing messages. |
 | Unable to send messages. Please verify IAM Permissions Policy on ServiceRoleForAmazonChimePushNotification. | The role created for the Amazon Chime SDK does not have permission to call `mobiletargeting:SendMessages`. Please verify the IAM policy on the role. |
 | Unable to send messages. Please verify IAM Trust Relationships on ServiceRoleForAmazonChimePushNotification. | The Amazon Chime SDK does not have permission to access the role for push notificiations. <br />Please verify the IAM role's trust policy contains the service principal, `messaging.chime.amazonaws.com`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

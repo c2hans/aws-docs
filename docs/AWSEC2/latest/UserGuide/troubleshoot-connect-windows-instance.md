@@ -269,3 +269,7 @@ If the value in the **Value data** field is `1`, then the instance will deny rem
 When you connect to a newly-launched Windows instance, you decrypt the password for the Administrator account using the private key for the key pair that you specified when you launched the instance.
 
 If you lose the Administrator password and you no longer have the private key, you must reset the password or create a new instance. For more information, see [Reset the Windows administrator password for an Amazon EC2 Windows instance](ResettingAdminPassword.md). For steps to reset the password using an Systems Manager document, see [Reset passwords and SSH keys on EC2 instances](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-ec2reset.html) in the *AWS Systems Manager User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

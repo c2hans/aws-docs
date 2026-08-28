@@ -24,3 +24,7 @@ To update to a newer version, update the image URI in your AgentCore Runtime con
 <a name="rollback-procedure"></a>
 
 To roll back to a previous version, change your Amazon Bedrock AgentCore Runtime to reference an older version-specific tag. Then, create a new version of the AgentCore Runtime endpoint. For instructions on creating a new version of the AgentCore Runtime endpoint, see the [AgentCore Runtime documentation](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/agents-tools-runtime.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MCP Servers for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mcp-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

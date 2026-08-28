@@ -10,3 +10,7 @@ The following are limitations or notes for the PayPal connector:
 + If the `last_refreshed_datetime` is less than the requested `end_date` then, the `end_date` becomes equal to the `last_refreshed_datetime` as we only have data up until that point.
 + The `transaction_initiation_date` field is a mandatory filter to be provided for the `transaction` entity and the [maximum supported](https://developer.paypal.com/docs/transaction-search/#:~:text=The%20maximum%20supported%20date%20range%20is%2031%20days.) date range for this field is 31 days.
 + When you call the `transaction` entity API request with filters (query parameters) other than the `transaction_initiation_date` field, it is expected that the value of the [`ending_balance`](https://developer.paypal.com/docs/api/transaction-search/v1/#search_get:~:text=If%20you%20specify%20one%20or%20more%20optional%20query%20parameters%2C%20the%20ending_balance%20response%20field%20is%20empty.) field won’t be fetched in the response.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

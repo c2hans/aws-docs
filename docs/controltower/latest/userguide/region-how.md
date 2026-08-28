@@ -99,3 +99,7 @@ An alternative method of provisioning or updating individual accounts after conf
 The primary consideration about the OU-level Region deny control is to determine how it will interact with the landing zone Region deny control, if both are activated. For more information, see [Region deny control applied to the OU](https://docs.aws.amazon.com/controltower/latest/controlreference/ou-region-deny.html).
 
 You also may wish to review [Configure the Region deny control](https://docs.aws.amazon.com/controltower/latest/userguide/region-deny.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -83,3 +83,7 @@ Review the considerations below before you get started with Quick Sight embedded
 1. **Should you use natural language insights to visualize data or interactive dashboards?**
 
    With embedded analytics and Amazon Q, you can embed Natural Language Processing (NLP) for your business data into your application. End users use an embedded search bar to ask questions and visualize data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick Sight. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quicksight` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

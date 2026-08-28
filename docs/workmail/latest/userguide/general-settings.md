@@ -77,3 +77,7 @@ Email settings have the following defaults, which can be modified.
 1. Press **Tab** to move to **Incoming mail** for the **Respond to read receipt** setting. The default setting is **Ask me before sending a response**.
 
 1. Press **Tab** to move to **Signatures**. Press **Enter** to open the **New signature** composer. Compose your signature. When you're finished, hold down **Shift\+Tab** until the screen reader reads *Save changes button*. Press **Enter** to save the changes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

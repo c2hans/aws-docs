@@ -18,3 +18,7 @@ The following table describes the documentation releases for the WorkSpaces Thin
 |  + [Using your WorkSpaces Thin Client device](using-device.md)  |  + Device settings show up in a collapsed toolbar allowing better utilization of the visible screen<br />+ End users can now configure the duration to wait before the device sleeps on inactivity<br />+ Volume levels set by end users now persists across device restarts  | April 5, 2024 |
 |  + [Keyboard layouts](keyboard-layouts.md)<br />+ [Supported peripherals](supported-peripherals.md)  |  + Added keyboard layout section<br />+ Added European supported keyboards and updated supported monitors  | February 12, 2024 |
 | Initial release | Initial release | November 26, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

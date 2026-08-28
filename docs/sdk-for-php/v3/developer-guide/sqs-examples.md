@@ -15,3 +15,7 @@ All the example code for the AWS SDK for PHP Version 3 is available [here on Git
 + [Sending and receiving messages](sqs-examples-send-receive-messages.md)
 + [Using dead-letter queues](sqs-examples-dead-letter-queues.md)
 + [Using queues](sqs-examples-using-queues.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for PHP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-php` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

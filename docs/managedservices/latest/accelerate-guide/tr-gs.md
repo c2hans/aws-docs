@@ -44,3 +44,7 @@ After you update your account-level configuration, Trusted Remediator creates Op
 <a name="tr-gs-manual-remediation"></a>
 
 You can manually remediate Trusted Advisor checks as well as recommendations from Compute Optimizer and Security Hub CSPM. When you initiate a manual remediation, Trusted Remediator creates a manual execution OpsItem. You must review and initiate the SSM automation document to remediate the OpsItems. For more information, see [Run manual remediations in Trusted Remediator](tr-remediation.md#tr-remediation-run).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

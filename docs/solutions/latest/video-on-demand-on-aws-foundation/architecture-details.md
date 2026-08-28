@@ -85,3 +85,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/video-on-demand-on-aws-
 |  [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/)  |  Supporting. Logs metrics about encoding jobs in MediaConvert.  |
 |  [Amazon EventBridge](https://aws.amazon.com/eventbridge/)  |  Supporting. Invokes the Lambda job complete function.  |
 |  [AWS Systems Manager](https://aws.amazon.com/systems-manager/)  |  Supporting. Provides application-level resource monitoring and visualization of resource operations and cost data.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Video on Demand on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

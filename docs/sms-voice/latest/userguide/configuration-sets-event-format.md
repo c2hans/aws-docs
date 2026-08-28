@@ -273,3 +273,7 @@ The JSON object for an RCS event contains the data shown in the following exampl
 ```
 
 To determine the delivery channel, inspect the `originationPhoneNumber` field. If the value is an RCS agent ID, the message was delivered via RCS. If the value is an E.164 phone number or short code, the message was delivered via SMS (either directly or after RCS fallback). For more information about RCS fallback behavior, see [RCS to SMS fallback using phone pools](rcs-sms-fallback.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/emr.html
 <a name="emr-on-eks"></a>
 
  Amazon EMR on EKS 6.13 was the first release introducing AL2023 as an option. With this release, you can launch Spark with AL2023 as the operating system, together with Java 17 runtime. For more information, see the [Amazon EMR on EKS 6.13 release notes](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks-6.13.0.html), and all [Amazon EMR on EKS release notes](https://docs.aws.amazon.com/emr/latest/EMR-on-EKS-DevelopmentGuide/emr-eks-releases.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

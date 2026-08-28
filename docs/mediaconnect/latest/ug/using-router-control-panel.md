@@ -81,3 +81,7 @@ The following image shows the control panel with no active routes.
 In the following image, the blue highlight shows an active route between an input (`SportsCam-Main`) and an output (`ControlRoom-Monitor`).
 
 ![MediaConnect router control panel showing an active route between an input and output, with the route highlighted in blue.](http://docs.aws.amazon.com/mediaconnect/latest/ug/images/router-control-panel-active-routes.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

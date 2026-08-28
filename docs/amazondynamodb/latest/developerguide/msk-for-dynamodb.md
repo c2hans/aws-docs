@@ -123,3 +123,7 @@ After running the CloudFormation template, you can finish building this architec
 If you created resources while following along with this example, please remember to delete them to avoid any unexpected charges.
 
 The Integration identified an architecture that links Amazon MSK and DynamoDB to enable stream data to support OLTP workloads. From here, more complex searches can be realized by linking [DynamoDB with OpenSearch Service](OpenSearchIngestionForDynamoDB.md). Consider integrating with EventBridge for more complex event-driven needs, and extensions such as [Amazon Managed Service for Apache Flink](https://docs.aws.amazon.com/managed-flink/latest/java/what-is.html) for higher throughput and lower latency requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

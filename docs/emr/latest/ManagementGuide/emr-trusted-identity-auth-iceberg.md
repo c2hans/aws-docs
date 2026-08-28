@@ -124,3 +124,7 @@ Follow the prerequisites section to create and integrated trusted identity enabl
 1. Attach the workspace to EMR on EC2 cluster created for Iceberg in above step.
 
 1. Upload the notebook Iceberg.ipynb, to configure the Spark session for Iceberg and query the table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

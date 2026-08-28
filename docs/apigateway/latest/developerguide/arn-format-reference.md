@@ -109,3 +109,7 @@ The following tables list the Amazon Resource Names (ARNs) for API Gateway resou
 \* The ARN for the `$default` route endpoint for HTTP APIs is `arn:{{partition}}:execute-api:{{region}}:{{account-id}}:{{api-id}}/{{*}}/$default`.
 
 \*\* This ARN is applicable only when setting the `SourceArn` condition in the [resource policy](https://docs.aws.amazon.com/lambda/latest/dg/access-control-resource-based.html) for a Lambda authorizer function. For an example, see [Create a Lambda authorizer](http-api-lambda-authorizer.md#http-api-lambda-authorizer.example-create).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -149,3 +149,7 @@ The managed capability uses the same Argo CD APIs and resource definitions, so y
 +  [Create an Argo CD capability](create-argocd-capability.md) - Create an Argo CD capability resource
 +  [Working with Argo CD](working-with-argocd.md) - Deploy your first application
 +  [Argo CD considerations](argocd-considerations.md) - Configure AWS Identity Center integration
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

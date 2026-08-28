@@ -40,3 +40,7 @@ The Deadline Cloud Limits feature throttles task scheduling so that no more than
 Don't add `amount.vray` as a `customAmounts` entry in your fleet's capabilities. If the fleet declares the amount as a capability, the fleet treats it as a per-worker resource and bypasses the queue-level limit. The limit association alone provides compatibility.
 
 To extend the sample to other licenses (Houdini, Nuke, and so on), add entries to `license_limits.json` and create corresponding Limits and queue associations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

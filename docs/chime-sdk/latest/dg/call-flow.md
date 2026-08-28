@@ -28,3 +28,7 @@ In the diagram:
 1. A Real-time Transport Protocol (RTP) session is established between the caller from the public switched telephone network (PSTN) and the Amazon Chime SDK Media service.
 
 1. When the PSTN caller hangs up, the PSTN audio service invokes the AWS Lambda function with a HANGUP event, and the AWS Lambda function deletes the attendee.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

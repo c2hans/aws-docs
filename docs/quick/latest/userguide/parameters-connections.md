@@ -25,3 +25,7 @@ For more information on each of these topics, see the following sections.
 + [Using custom actions with parameters](parameters-custom-actions.md)
 + [Parameters in URLs](parameters-in-a-url.md)
 + [Parameters in titles and descriptions](parameters-in-titles.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

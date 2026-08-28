@@ -47,3 +47,7 @@ Sum "Salary" < 55600 where "Customer_ID < 10"
 ```
 
  The sum of column `units` will not consider rows 101 and 103 and result to (0 \+ 20 \+ 40) = 60.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

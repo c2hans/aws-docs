@@ -38,3 +38,7 @@ Technical best practices depend on the specific AWS services and processing tech
 | Database design | Follow the [Architecture Best Practices for Databases](https://aws.amazon.com/architecture/databases/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=*all&awsf.methodology=*all) (AWS Architecture Center). |
 | Data pruning | Use [server-side partition pruning](https://docs.aws.amazon.com/glue/latest/dg/partition-indexes.html) with the `catalogPartitionPredicate`. |
 | Scaling | Understand and implement [horizontal scaling](https://aws.amazon.com/wellarchitected/2020-07-02T19-33-23/wat.concept.horizontal-scaling.en.html). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

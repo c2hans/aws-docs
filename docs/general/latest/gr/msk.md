@@ -65,3 +65,7 @@ The following are the service endpoints and service quotas for this service.
 | Number of data channels per cluster | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/kafka/quotas/L-9B45E609)  | The maximum number of data channels that can be created per cluster. |
 | Number of replicators per account | Each supported Region: 15 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/kafka/quotas/L-8F940D28)  | The maximum number of replicators that can be created per account. |
 | Number of revisions per configuration | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/kafka/quotas/L-36D29E8C)  | The maximum number of revisions that can be made to a custom configuration. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -6551,3 +6551,7 @@ The following controls are not supported in the AWS GovCloud (US-West) Region.
 +  [[WAF.8] AWS WAF Classic global web ACLs should have at least one rule or rule group](waf-controls.md#waf-8)
 +  [[WAF.10] AWS WAF web ACLs should have at least one rule or rule group](waf-controls.md#waf-10)
 +  [[WAF.12] AWS WAF rules should have CloudWatch metrics enabled](waf-controls.md#waf-12)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

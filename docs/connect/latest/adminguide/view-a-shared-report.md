@@ -20,3 +20,7 @@ To view a report that someone has shared with you, you need the following:
 + Every time you want to view the shared report, you need to access it through the link that was shared with you.
 + If you get a 505 error when you choose the link that was shared with you, it means you don't have permissions to view the report.
 + There's no way to save the exact same report to your list of Saved reports. You can give the report a new name and save it to your list, but then it's a different report from the one that was shared with you. If the owner of original report makes changes, you won't see them in your renamed report.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

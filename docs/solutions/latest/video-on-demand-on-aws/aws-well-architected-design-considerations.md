@@ -54,3 +54,7 @@ Customers can measure the efficiency of the workloads, and the costs associated 
 This section describes how we architected this solution using the principles and best practices of the [sustainability pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html).
 
 Video on Demand on AWS uses managed and serverless services to minimize the environmental impact of the backend services. Customers can choose to run this solution during specific events and delete the stack after the program ends, reducing the carbon footprint compared to the footprint of continually operating on-premises servers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Video on Demand on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -68,3 +68,7 @@ Assigned qualification RWFZTKZ55ZPZXN1C8TDZ to A3C4G8DMXFG5PQ with value 100
 <a name="w2aab9c13c10"></a>
 
 +  [createQualificationType](CLTReference_CreateQualificationTypeCommand.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

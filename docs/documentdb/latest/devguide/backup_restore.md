@@ -26,3 +26,7 @@ This section discusses the use cases for the backup capabilities in Amazon Docum
 + [Restoring from a cluster snapshot](backup_restore-restore_from_snapshot.md)
 + [Restoring to a point in time](backup_restore-point_in_time_recovery.md)
 + [Deleting a cluster snapshot](backup_restore-delete_cluster_snapshot.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

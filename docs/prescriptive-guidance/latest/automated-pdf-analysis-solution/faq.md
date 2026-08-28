@@ -21,3 +21,7 @@ Yes, you can use the Amazon Textract asynchronous API in your Lambda function to
 <a name="can-i-use-other-business-intelligence-tools-to-create-dashboards-instead-of-9999999999999999qs--.20ca9dfb-11b1-5e60-af3b-271f3554ba4b"></a>
 
 Yes, you can connect Amazon Simple Storage Service (Amazon S3) to your preferred business intelligence tool and then create dashboards.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

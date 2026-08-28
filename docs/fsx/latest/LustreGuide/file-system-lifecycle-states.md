@@ -15,3 +15,7 @@ You can view the status of an Amazon FSx file system by using the Amazon FSx con
 | UPDATING | The file system is undergoing a customer-initiated update. |
 | MISCONFIGURED | The file system is in a failed but recoverable state. |
 | FAILED | This status can mean either of the following:+ The file system has failed and Amazon FSx can't recover it.<br />+ When creating a new file system, Amazon FSx couldn't create the file system. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

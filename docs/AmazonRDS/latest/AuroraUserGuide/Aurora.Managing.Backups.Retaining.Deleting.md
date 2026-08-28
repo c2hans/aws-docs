@@ -55,3 +55,7 @@ You can delete a retained automated backup by using the Amazon RDS API operation
 + `DbClusterResourceId` – The resource identifier for the source DB cluster.
 
   You can find the resource identifier for the source DB instance of a retained automated backup using the Amazon RDS API operation [DescribeDBClusterAutomatedBackups](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeDBClusterAutomatedBackups.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

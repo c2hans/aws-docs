@@ -125,3 +125,7 @@ Create a CloudWatch Events notification rule with CodePipeline as the event sour
 After you complete this tutorial, you should delete the pipeline and the resources it uses so you will not be charged for continued use of those resources.
 
 For information about how to clean up the SNS notification and delete the Amazon CloudWatch Events rule, see [Clean Up (Unsubscribe from an Amazon SNS Topic)](http://docs.aws.amazon.com/sns/latest/dg/CleanUp.html) and reference `DeleteRule` in the [Amazon CloudWatch Events API Reference](https://docs.aws.amazon.com/AmazonCloudWatchEvents/latest/APIReference/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

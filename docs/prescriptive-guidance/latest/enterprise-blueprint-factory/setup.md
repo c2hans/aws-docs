@@ -346,3 +346,7 @@ If you are not using the Enterprise Blueprint Factory, you can delete it to stop
    + `/blueprints/resources/ConfigRepo`
 
    For instructions, see [Deleting parameters from Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/deleting-parameters.html) in the Systems Manager documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

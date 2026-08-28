@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 +  Reserved Instances & Nodes - [Amazon EC2](https://aws.amazon.com/ec2/pricing/reserved-instances/), [Amazon RDS](https://aws.amazon.com/de/rds/reserved-instances/), [Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/purchase-reserved-node-instance.html), [Amazon ElastiCache](https://aws.amazon.com/elasticache/reserved-cache-nodes/),  [Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/ri.html)
 +  [AWS Billing and Cost Management and AWS Cost Allocation Tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html)
 + [ Cost Optimization Hub ](https://aws.amazon.com/aws-cost-management/cost-optimization-hub/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

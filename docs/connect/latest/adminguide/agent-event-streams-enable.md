@@ -21,3 +21,7 @@ If you enable server-side encryption for the Kinesis stream you select for agent
 1. Choose **Data streaming**, then select **Enable data streaming**.
 
 1. Under **Agent Events**, select the Kinesis stream to use, and then choose **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

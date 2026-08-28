@@ -31,3 +31,7 @@ MediaConnect supports many SMPTE (Society of Motion Picture and Television Engin
 | Standard | Description |
 | --- | --- |
 | SMPTE-2022-7: Seamless Protection Switching of RTP |  +  Sources: MediaConnect supports RTP sources that comply with this standard. For more information about source failover, see [Source failover](source-failover.md) <br />+  Outputs: RTP and RTP-FEC outputs are compliant with the SMPTE 2022-7 standard. If your downstream receiver supports 2022-7 source merging, RTP and RTP-FEC outputs will be compatible.   |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

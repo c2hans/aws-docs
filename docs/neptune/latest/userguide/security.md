@@ -26,3 +26,7 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Amazon Neptune and interface VPC endpoints (AWS PrivateLink)](vpc-interface-endpoints.md)
 + [Compliance considerations for Amazon Neptune](neptune-compliance.md)
 + [Building resilient and disaster-tolerant Amazon Neptune deployments](disaster-recovery-resiliency.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

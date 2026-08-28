@@ -24,3 +24,7 @@ Use the following topics to help you work with the AWS SCT user interface. For i
 + [Storing passwords in the AWS Schema Conversion Tool](CHAP_UserInterface.StoringPasswords.md)
 + [Creating UNION ALL view in the AWS Schema Conversion Tool](CHAP_UserInterface.UnionAllView.md)
 + [Using Keyboard Shortcuts in the AWS Schema Conversion Tool](CHAP_UserInterface.KeyboardShortcuts.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Schema Conversion Tool User Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query SchemaConversionTool` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

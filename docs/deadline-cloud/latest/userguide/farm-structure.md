@@ -9,6 +9,8 @@ You can arrange Deadline Cloud farms, fleets, and queues many ways. The arrangem
 
 Two facts about fleets drive the decision:
 + When a fleet is associated with more than one queue, jobs from all of those queues run on the same worker hosts. After a job runs, data can remain on the host, such as files in a temporary directory or the queue user's home directory, and a job can leave processes running that later jobs can observe.
+
+  Some of that data remains by design. A job can cache data under the job user's home directory so that later sessions reuse it. For example, the conda queue environment caches downloaded packages there. On a service-managed fleet, all jobs run as one user, so every queue on the fleet shares those caches. Cached data remains until the worker shuts down, or across worker replacement when the fleet uses persistent storage. For more information, see [Sessions](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/build-jobs-scheduling.html#jobs-scheduling-sessions) in the *Deadline Cloud Developer Guide* and [Persistent storage](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/volumes.html) in the *Deadline Cloud User Guide*.
 + Worker hosts run jobs as an operating system user. On a customer-managed fleet, you can give each queue its own user, so queues can share a fleet while their jobs' files and processes stay separated. On a service-managed fleet, all jobs run as a single user, so give queues that need separation their own fleets. In both cases, the hosts run only jobs from queues in your farm.
 
 With those facts in mind, choose the arrangement that fits your isolation needs:
@@ -20,3 +22,7 @@ Whichever arrangement you choose, keep resource sharing within a security bounda
 + Share an Amazon S3 bucket and root prefix for job attachments only between queues in the same security boundary. For more information, see [Secure job attachment and software buckets](job-attachment-queues.md).
 + Share an operating system user only between queues in the same security boundary. For more information, see [Run jobs as dedicated OS users](job-run-as-user.md).
 + Apply the same boundary to any other AWS resources that you integrate into the farm, such as shared file systems.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

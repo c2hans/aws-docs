@@ -70,3 +70,7 @@ There are two output groups, one that pushes to a WebDAV server and the other th
 Each output group is similar in terms of its video and rendition groups. For example, the first output group produces the video and rendition group from Example 2. The second output group produces the only “video high” and “video low” but it is associated with the same audio rendition group as the first output group.
 
 ![This illustration shows two HLS output groups that produce similar, but not identical, video and rendition groups.](http://docs.aws.amazon.com/elemental-live/latest/ug/images/hls-rendition-group-example-5.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

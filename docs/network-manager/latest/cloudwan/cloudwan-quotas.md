@@ -91,3 +91,7 @@ Your AWS account has the following MTU quotas for AWS Cloud WAN:
 + Packets with a size larger than 8500 bytes that arrive at the core network are dropped.
 + The core network enforces Maximum Segment Size (MSS) clamping for all packets. For more information, see [RFC879](https://tools.ietf.org/html/rfc879).
 + Cloud WAN supports Path MTU Discovery (PMTUD) for traffic ingressing on VPC attachments. Transit gateway generates the `FRAG_NEEDED` for ICMPv4 packets and `Packet Too Big (PTB)` for ICMPv6 packets. Cloud WAN does not support PMTUD on Connect, Site-to-site VPN, Direct Connect and Peering attachments. For more information about Path MTU Discovery, see [Path MTU Discovery](https://docs.aws.amazon.com/vpc/latest/userguide/path_mtu_discovery.html) in the *Amazon VPC User Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

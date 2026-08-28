@@ -33,3 +33,7 @@ The business area you select to pilot the solution would ideally demonstrate all
 + Perform a function that might have been excluded from, or not fully integrated in, the old platform because of technical limitations (such as remote work) or licensing. By starting with a group that has no reports or recordings in the old system, you might be able to avoid building legacy integrations or migrating legacy data. However, you should make sure that the pilot continues to represent the full-scale deployment.
 
 In reality, you might have to compromise on some of these factors, depending on the ability and willingness of teams in your organization to take part in a pilot.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

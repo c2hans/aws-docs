@@ -149,3 +149,7 @@ We recommend that you adhere to the following best practices:
 + [Deploying KEDA](https://keda.sh/docs/2.14/deploy/) (KEDA documentation)
 + [ScaledObject specification](https://keda.sh/docs/2.16/reference/scaledobject-spec/) (KEDA documentation)
 + [Authentication with TriggerAuthentication](https://keda.sh/docs/2.14/concepts/authentication/) (KEDA documentation)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

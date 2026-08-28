@@ -181,3 +181,7 @@ No flows are involved in external quick connects. When agent A uses external qui
 Because no flow is involved in external quick connects you cannot set the outbound caller id. Caller ID is used from the queue configuration.
 
 During invocation of Agent/Queue/External quick connects the caller of the inbound call which Agent A was working on will hear the Customer hold flow.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

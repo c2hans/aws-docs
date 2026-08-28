@@ -310,3 +310,7 @@ This section contains an explanation of the HTTP error codes that you may see in
 | HTTP 404: Non Existent Service | You're trying to connect to a service that does not exist or is not registered to the right service network. |
 | HTTP 500: Internal Server Error | VPC Lattice has encountered an error, such as failure to connect to targets. |
 | HTTP 502: Bad Gateway | VPC Lattice has encountered an error. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -95,3 +95,7 @@ Output Files for Tabular Datasets
 The [Amazon SageMaker Model Monitor prebuilt container](model-monitor-pre-built-container.md) saves a set of Amazon CloudWatch metrics for each feature by default.
 
 The container code can emit CloudWatch metrics in this location: `/opt/ml/output/metrics/cloudwatch`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

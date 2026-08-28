@@ -20,3 +20,7 @@ After you [connect your client to the Jupyter Notebook server on your DLAMI inst
    Choose this, then choose the "proceed to localhost" link. If the connection is successful, you see the Jupyter Notebook server webpage. At this point, you will be asked for the password you previously set up.
 
    Now you have access to the Jupyter Notebook server that is running on the DLAMI instance. You can create new notebooks or run the provided [Tutorials](tutorials.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

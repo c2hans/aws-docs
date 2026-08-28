@@ -79,3 +79,7 @@ Use the following guidance to choose where to start your migration:
 + To keep rendering on hardware you already own, connect your render nodes or workstations to Deadline Cloud as a CMF. See [Extend your on-premises render farm to the cloud](hybrid-rendering.md).
 + To replace AWS Portal bursting, use an SMF. Automatic scaling, usage-based licensing, and asset transfer are built in. See [Configure and use Deadline Cloud service-managed fleets](smf.md).
 + To port your event plugins and job scripts, start with the integration point map. See [Hooks, events, and integration points for jobs](integration-points.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

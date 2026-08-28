@@ -36,3 +36,7 @@ The following services for collecting, processing, storing, and analyzing big da
 + [Quick](https://aws.amazon.com/quicksight/)
 + [Amazon Compute Services](https://aws.amazon.com/products/compute/) ([Amazon Elastic Compute Cloud](https://aws.amazon.com/ec2/) (Amazon EC2) instances, [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (Amazon ECS), and [Amazon Elastic Kubernetes Service](https://aws.amazon.com/eks/) (Amazon EKS) are available for self-managed big data applications.)
 + [Amazon Athena](https://aws.amazon.com/athena/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

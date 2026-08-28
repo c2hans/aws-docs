@@ -81,7 +81,10 @@ The following example shows a `CreateDataSource` request with an S3 connector:
 
 To learn more about a specific connector and its configuration, select a topic below.
 
+For third-party data sources that support user-managed setup (3LO), such as SharePoint, OneDrive, and Confluence, you need specific AWS Identity and Access Management permissions to sign in. For more information, see [IAM permissions for user-managed setup (3LO)](kb-managed-3lo-setup.md).
+
 **Topics**
++ [IAM permissions for user-managed setup (3LO)](kb-managed-3lo-setup.md)
 + [Box](kb-managed-ds-box.md)
 + [Amazon S3](kb-managed-ds-s3.md)
 + [Confluence](kb-managed-ds-confluence.md)
@@ -91,3 +94,7 @@ To learn more about a specific connector and its configuration, select a topic b
 + [ServiceNow](kb-managed-ds-servicenow.md)
 + [Microsoft SharePoint](kb-managed-ds-sharepoint.md)
 + [Web Crawler](kb-managed-ds-webcrawler.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

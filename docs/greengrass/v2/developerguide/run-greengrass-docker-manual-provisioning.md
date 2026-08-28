@@ -632,3 +632,7 @@ If you want to persist logs after a container exits or has been removed, we reco
 <a name="greengrass-docker-stop"></a>To stop a running AWS IoT Greengrass Docker container, run `docker stop` or `docker-compose -f docker-compose.yml stop`. This action sends `SIGTERM` to the Greengrass process and shuts down all associated processes that were started in the container. The Docker container is initialized with the `docker-init` executable as process PID 1, which helps in removing any leftover zombie processes. For more information, see the [Specify an init process](https://docs.docker.com/engine/reference/run/#specify-an-init-process) in the Docker documentation.
 
 <a name="see-docker-troubleshooting"></a>For information about troubleshooting issues with running AWS IoT Greengrass in a Docker container, see [Troubleshooting AWS IoT Greengrass in a Docker container](docker-troubleshooting.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

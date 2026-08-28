@@ -382,3 +382,7 @@ If your Matter Controller is not based on chip-tool (for example, a Python-based
 + Manage subscriptions: Each device should maintain up to one active subscription, so that its state can be updated continuously.
 + Propagate state changes: When a device updates its state, verify changes and propagate events to Managed integrations.
 + Implement a Matter data model translator: Although Managed integrations uses the Matter data model, its representation is in JSON format. A translator is required to map between your Matter data model format and the JSON representation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

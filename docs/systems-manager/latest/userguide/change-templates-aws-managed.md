@@ -39,3 +39,7 @@ If you turned on the best practice option **Require monitors for all templates**
 For information about approving change requests, see [Reviewing and approving or rejecting change requests](change-requests-review.md).
 
 To view the status and results of your change request, choose the name of your change request on the **Requests** tab in Change Manager.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

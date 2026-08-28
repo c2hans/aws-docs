@@ -24,3 +24,7 @@ To remove an AWS Managed Microsoft AD user or group from an IAM role, perform th
 1. On the **Selected role** page, under **Manage users and groups for this role**, select the users or groups to remove the role from and choose **Remove**. The role is removed from the specified users and groups, but the role is not removed from your account.
 **Note**
 If you want to delete a role, see [Delete roles or instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_delete.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

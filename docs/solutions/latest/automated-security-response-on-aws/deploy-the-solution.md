@@ -6,10 +6,14 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 <a name="deploy-the-solution"></a>
 
 **Important**
-If the [consolidated control findings](deciding-where-to-deploy-each-stack.md#consolidated-controls-findings) feature is turned on in Security Hub, only enable the Security Control (SC) playbook when deploying this solution. If the feature is not turned on, **only** enable the playbooks for the security standards that are enabled in Security Hub. Consolidated control findings is enabled by default if you enable Security Hub CSPM on or after February 23, 2023.
+If the [consolidated control findings](deciding-where-to-deploy-each-stack.md#consolidated-controls-findings) feature is turned on in AWS Security Hub, only enable the Security Control (SC) playbook when deploying this solution. If the feature is not turned on, **only** enable the playbooks for the security standards that are enabled in Security Hub. Consolidated control findings is enabled by default if you enable Security Hub CSPM on or after February 23, 2023.
 
 This solution uses [AWS CloudFormation templates and stacks](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-whatis-concepts.html) to automate its deployment. The CloudFormation templates specify the AWS resources included in this solution and their properties. The CloudFormation stack provisions the resources that are described in the templates.
 
 In order for the solution to function, three templates must be deployed. First, decide where to deploy the templates, then decide how to deploy them.
 
 This overview will describe the templates and how to decide where and how to deploy them. The next sections will have more detailed instructions for deploying each stack as a Stack or StackSet.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

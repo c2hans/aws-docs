@@ -13,3 +13,7 @@ For production exploration, you can also run the server with `--readonly` to res
 <a name="agent-tools-valkey-mcp-tracking"></a>
 
 The Valkey MCP server writes a structured log of every tool call to `valkey-mcp-server.log` in your MCP client's working directory, showing the operation, parameters, and result. Open this file to see what your agent is doing against your datastore in real time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

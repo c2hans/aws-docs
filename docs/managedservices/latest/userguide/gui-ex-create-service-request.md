@@ -61,3 +61,7 @@ If you are going to test service request functionality, add the no-action flag, 
 For billing-related queries, create a service request case from Support Center Console.
 
 **YouTube Video**: [ How and when to raise service requests from AWS Console and what are it’s Service Level Objectives?](https://www.youtube.com/watch?v=wQ1bZtHjr3I&list=PLhr1KZpdzukc_VXASRqOUSM5AJgtHat6-&index=7&t=5s)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

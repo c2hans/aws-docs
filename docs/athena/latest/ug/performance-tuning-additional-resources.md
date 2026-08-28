@@ -14,3 +14,7 @@ For additional information about performance tuning in Athena, consider the foll
 + Ask a question on [AWS re:Post](https://repost.aws/tags/TA78iVOM7gR62_QqDe2-CmiA/amazon-athena) using the **Amazon Athena** tag.
 + Consult the [Athena topics in the AWS knowledge center](https://aws.amazon.com/premiumsupport/knowledge-center/#Amazon_Athena).
 + Contact AWS Support (in the AWS Management Console, click **Support**, **Support Center**)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -79,3 +79,7 @@ The file naming convention is subject to change. Therefore, when reading target 
 <a name="export-cluster-data.data-types"></a>
 
 When you export a DB cluster to an Amazon S3 bucket, Amazon Aurora converts, exports, and stores data in the Parquet format. For more information, see [Data conversion when exporting to an Amazon S3 bucket](aurora-export-snapshot.Considerations.md#aurora-export-snapshot.data-types).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,3 +33,7 @@ Authenticating to IAM Roles Anywhere requires the use of asymmetric (public/priv
 <a name="inter-network-traffic-privacy"></a>
 
 When accessing AWS APIs and resources from your data center, be aware of how the traffic is routed. Connectivity may occur via Network Address Translation (NAT) at the data center outbound firewall, or it may occur through Virtual Private Network (VPN).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

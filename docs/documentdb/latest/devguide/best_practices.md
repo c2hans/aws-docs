@@ -235,3 +235,7 @@ When creating an aggregation pipeline query with multiple stages and evaluating 
 <a name="best_practices-batchinsert_batchupdate"></a>
 
 When performing a high rate of concurrent `batchInsert` and/or `batchUpdate` operations, and the amount of `FreeableMemory` (CloudWatch Metric) goes to zero on your primary instance, you can either reduce the concurrency of the batch insert or update workload or, if concurrency of the workload cannot be reduced, increase the instance size to increase the amount of `FreeableMemory`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

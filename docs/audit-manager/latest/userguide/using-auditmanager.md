@@ -26,3 +26,7 @@ You can access AWS Audit Manager through various options, depending on your spec
 + **Integrations with your own GRC system**
 
   Incorporate Audit Manager evidence into your own GRC system, allowing you to send evidence directly from Audit Manager into your GRC application. For more information, see [Integrating Audit Manager evidence into your GRC system](tutorial-for-grc-integration.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

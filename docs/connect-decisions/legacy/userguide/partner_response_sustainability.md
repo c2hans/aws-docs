@@ -91,3 +91,7 @@ After you receive a transportation emission data form request, you will view the
 Under **Transport Emissions by Parcel**, download the .csv files, populate the .csv with the transport emissions, and upload the file. Choose **Submit**.
 
 Make sure the information you populate in the .csv file is in the correct format. If not, you will receive a rework request explaining the issue in the .csv file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

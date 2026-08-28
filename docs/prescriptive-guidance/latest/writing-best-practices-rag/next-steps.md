@@ -26,3 +26,7 @@ The following resources can help you understand and build RAG applications in yo
 ### Other AWS resources
 <a name="other-9999999999999999aws--resources.087fdf44-2011-5559-bf0c-45691bea3d47"></a>
 + [Create a multimodal assistant with advanced RAG and Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/create-a-multimodal-assistant-with-advanced-rag-and-amazon-bedrock/) (AWS blog post)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

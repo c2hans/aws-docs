@@ -58,3 +58,7 @@ To begin implementing the engagement plan, follow these steps:
 1. Make sure that monitoring and reporting mechanisms (such as status reports, dashboard of success metrics, and OKRs) are in place.
 
 The effective implementation of the engagement plan is critical for driving cloud adoption and achieving desired business outcomes. By following these best practices, using the provided checklist, and maintaining ongoing stakeholder engagement, organizations can ensure that all key stakeholders remain committed and focused on the cloud transformation process. This ultimately leads to the successful adoption and realization of your business outcomes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

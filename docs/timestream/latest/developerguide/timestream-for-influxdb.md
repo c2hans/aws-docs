@@ -420,3 +420,7 @@ Design your schema for simpler and more performance queries. The following guide
     We recommend that you run these at different points in time to identify which tag is growing faster.
   + **Improve your schema:** Follow the modeling recommendations discussed in our [Security best practices for Timestream for InfluxDB](#timestream-for-influx-getting-started-security-best-practices).
   + **Remove or aggregate older data to reduce cardinality:** Consider whether or not your use cases needs all the data that is causing your high cardinality issues. If this data is not longer needed or accessed frequently you can aggregate it, delete it or export it to another engine such as Timestream for Live Analytics for long term storage and analysis.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

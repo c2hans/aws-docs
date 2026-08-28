@@ -14,3 +14,7 @@ The following best practices can help you understand, diagnose, and fix anomalou
 + Look for tickets in your operational system that happened around the same time as an insight for clues.
 + In an insight, read the recommendations and visit the links in recommendations. These often have troubleshooting steps that can help you diagnose and solve problems quickly.
 + Don't ignore resolved insights unless you have already solved the problem. Once a day, look at new insights, even if they have been resolved. Try to understand the root cause behind as many of the insights as you can. Look for a pattern that might be the sign of a systemic problem. If a systemic problem is left unresolved, it could cause more serious problems in the future. Fixing transient issues now can help prevent future, more serious, incidents.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -202,3 +202,7 @@ run();
 <a name="optimization-objective-sample-notebooks"></a>
 
 For a sample Jupyter notebook that shows how to create a solution that is optimized for an additional objective based item metadata, see the [objective\_optimization](https://github.com/aws-samples/amazon-personalize-samples/tree/master/next_steps/core_use_cases/objective_optimization) folder of the [Amazon Personalize samples](https://github.com/aws-samples/amazon-personalize-samples) GitHub repository
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

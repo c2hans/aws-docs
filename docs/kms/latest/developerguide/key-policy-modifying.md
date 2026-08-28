@@ -67,3 +67,7 @@ You can use the [PutKeyPolicy](https://docs.aws.amazon.com/kms/latest/APIReferen
 1. Use the [PutKeyPolicy](https://docs.aws.amazon.com/kms/latest/APIReference/API_PutKeyPolicy.html) operation to apply the updated key policy document to the KMS key. For sample code in multiple programming languages, see [Use `PutKeyPolicy` with an AWS SDK or CLI](example_kms_PutKeyPolicy_section.md).
 
 For an example of copying a key policy from one KMS key to another, see the [GetKeyPolicy example](https://docs.aws.amazon.com/cli/latest/reference/kms/get-key-policy.html#examples) in the AWS CLI Command Reference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

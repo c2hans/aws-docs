@@ -17,6 +17,7 @@ AWS Support provides the following APIs for data retrieval.
 | <a name="support-DescribeCommunications"></a>[DescribeCommunications](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeCommunications.html) | List the communications and attachments for one or more AWS Support cases | Read |
 | <a name="support-DescribeCreateCaseOptions"></a>[DescribeCreateCaseOptions](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeCreateCaseOptions.html) | Describes the available options for creating a support case | Read |
 | <a name="support-DescribeIssueTypes"></a>[DescribeIssueTypes](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html) | Return issue types for AWS Support cases | Read |
+| <a name="support-DescribeRelatedItems"></a>[DescribeRelatedItems](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html) | List the related items for an AWS Support case. This is an internally managed function | Read |
 | <a name="support-DescribeServices"></a>[DescribeServices](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeServices.html) | List AWS services and categories that applies to each service | Read |
 | <a name="support-DescribeSeverityLevels"></a>[DescribeSeverityLevels](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeSeverityLevels.html) | List severity levels that can be assigned to an AWS Support case | Read |
 | <a name="support-DescribeSupportLevel"></a>[DescribeSupportLevel](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html) | Return the support level for an AWS Account identifier | Read |
@@ -29,3 +30,7 @@ AWS Support provides the following APIs for data retrieval.
 | <a name="support-ListInteractionEntries"></a>[ListInteractionEntries](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html) | Retrieve a list of entries within a specific interaction, including messages, status updates, or other relevant data points | Read |
 | <a name="support-ListInteractions"></a>[ListInteractions](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html) | Retrieve a list of interactions, potentially with filters or pagination | Read |
 | <a name="support-SearchForCases"></a>[SearchForCases](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html) | Return a list of AWS Support cases that matches the given inputs | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

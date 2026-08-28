@@ -15,3 +15,7 @@ Facebook Ads is a powerful digital advertising platform used by businesses of al
 + [Reading from Facebook Ads entities](facebook-ads-reading-from-entities.md)
 + [Facebook Ads connection options](facebook-ads-connection-options.md)
 + [Limitations and notes for Facebook Ads connector](facebook-ads-connector-limitations.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

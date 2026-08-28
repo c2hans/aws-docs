@@ -34,3 +34,7 @@ The following is a high-level overview of how to use Lake Formation to control d
 1. When the producer cluster or workgroup administrator decides to no longer share the data with the consumer cluster, the producer administrator can revoke usage, deauthorize, or delete the datashare from Redshift. The associated permissions and objects in Lake Formation are not automatically deleted.
 
 For more information about sharing a datashare with AWS Lake Formation as a producer cluster or workgroup administrator, see [Working with Lake Formation-managed datashares as a producer](lake-formation-getting-started-producer.md). To consume the shared data from the producer cluster or workgroup, see [Working with Lake Formation-managed datashares as a consumer](lake-formation-getting-started-consumer.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

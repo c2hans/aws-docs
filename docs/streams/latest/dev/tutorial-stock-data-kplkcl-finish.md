@@ -42,3 +42,7 @@ As a stream is continuously processed, its output can be sent to other destinati
 + For more information about using Kinesis Data Streams API operations, see [Develop producers using the Amazon Kinesis Data Streams API with the AWS SDK for Java](developing-producers-with-sdk.md), [Develop shared-throughput consumers with the AWS SDK for Java](developing-consumers-with-sdk.md), and [Create and manage Kinesis data streams](working-with-streams.md).
 + For more information about the Kinesis Client Library, see [Develop KCL 1.x consumers](developing-consumers-with-kcl.md).
 + For more information about how to optimize your application, see [Optimize Amazon Kinesis Data Streams consumers](advanced-consumers.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

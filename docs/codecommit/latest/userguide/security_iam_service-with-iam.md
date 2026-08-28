@@ -28,3 +28,7 @@ To see a list of CodeCommit condition keys, see [Condition Keys for AWS CodeComm
 <a name="security_iam_service-with-iam-id-based-policies-examples"></a>
 
 To view examples of CodeCommit identity-based policies, see [AWS CodeCommit identity-based policy examples](security-iam.md#security_iam_id-based-policy-examples).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

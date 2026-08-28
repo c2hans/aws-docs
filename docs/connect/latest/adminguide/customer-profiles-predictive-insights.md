@@ -70,3 +70,7 @@ We recommend you check for the following in your data:
 + Fix any inaccuracies or issues in your data, such as inconsistent naming conventions, duplicate categories for an item, mismatched IDs across datasets, or duplicate IDs. These issues can negatively impact recommendations or lead to unexpected behavior. For example, you might have both “N/A” and “Not Applicable” in your data, but filter out recommendations based on only “N/A”. Items marked "Not Applicable" would not be removed by the filter.
 + If an item, user, or action can have multiple categories, such as a movie with multiple genres, combine the categorical values into one attribute and separate each value with the \| operator. For example, a movie’s GENRES data might be Action \| Adventure \| Thriller.
 + Avoid having more than 1000 possible categories for a column (unless the column contains data for only filtering purposes).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -64,3 +64,7 @@ The following AWS services provide native Iceberg integrations. There are additi
 + [**AWS Lake Formation**](https://docs.aws.amazon.com/lake-formation/latest/dg/what-is-lake-formation.html) provides coarse and fine-grained access control permissions to access data, including Iceberg tables consumed by Athena or Amazon Redshift. To learn more about permissions support for Iceberg tables, see the [Lake Formation documentation](https://docs.aws.amazon.com/lake-formation/latest/dg/working-with-services.html).
 
 AWS has a wide range of services that support Iceberg, but covering all these services is beyond the scope of this guide. The following sections cover Spark (batch and structured streaming) on Amazon EMR and AWS Glue, as well as Athena SQL. The [next section](getting-started.md) provides a quick look at Iceberg support in Athena SQL.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

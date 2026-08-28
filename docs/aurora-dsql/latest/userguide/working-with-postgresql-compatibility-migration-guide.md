@@ -42,8 +42,8 @@ Aurora DSQL is fully managed, so configuration is handled automatically based on
 Adapt these common PostgreSQL patterns for Aurora DSQL compatibility:
 
 **Referential integrity patterns**
-Aurora DSQL supports table relationships and `JOIN` operations. For referential integrity, implement validation in your application layer. This design aligns with modern distributed database patterns where application-layer validation provides more flexibility and avoids performance bottlenecks from cascading operations.
-**Pattern:** Implement referential integrity checks in your application layer using consistent naming conventions, validation logic, and transaction boundaries. Many high-scale applications prefer this approach for better control over error handling and performance.
+Aurora DSQL supports foreign keys, table relationships, and `JOIN` operations. Use foreign keys to keep data consistent across your tables. To learn more, see [Working with foreign key constraints in Aurora DSQL](working-with-foreign-key-constraints.md).
+**Pattern:** Add foreign keys when you create your tables. Aurora DSQL then checks that related rows exist. You can also add checks in your app code for custom error handling.
 
 **Temporary data handling**
 Use CTEs, subqueries, or regular tables with cleanup logic instead of temporary tables.
@@ -123,3 +123,7 @@ For general considerations, see [Considerations for working with Amazon Aurora D
 <a name="dsql-migration-feedback-link"></a>
 
 If you encounter features that are critical for your migration but not currently supported in Aurora DSQL, see [Providing feedback on Amazon Aurora DSQL](providing-feedback.md) for information on how to share feedback with AWS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

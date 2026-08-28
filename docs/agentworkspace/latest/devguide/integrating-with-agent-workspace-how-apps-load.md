@@ -14,3 +14,7 @@ An application can be opened by the user selecting the app launcher icon in the 
 The agent workspace has a Content Security Policy (CSP) that only allows specific domains to be framed by setting [frame-src](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Content-Security-Policy/frame-src). The domains configured in the *AccessUrl* and those added to *Approved Origins* will be included in the agent workspace’s CSP. Ensure that all domains that your app uses for top level pages are included between *AccessUrl* and *Approved Origins*.
 
 Events and data shared with an instance of an application will be for the contact the application is opened under and the other applications opened on the same contact. Events or data will not be shared between apps on different contacts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer Agent Workspace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agentworkspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

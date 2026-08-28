@@ -96,3 +96,7 @@ For more options, see your Git documentation.
 | Pushes all tags from the local repo to the CodeCommit repository using the specified nickname the local repo has for the CodeCommit repository. | `git push {{remote-name}} --tags` |
 | Deletes a tag in the local repo. | `git tag -d {{tag-name}}` |
 | Deletes a tag in the CodeCommit repository using the specified nickname the local repo has for the CodeCommit repository and the specified tag name. (Note the use of the colon (`:`).) | `git push {{remote-name}} :{{tag-name}}` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-a
  Database security management is controlled by managing user access, granting the proper privileges to tables and views to user accounts or groups, and leveraging column-level grant and revoke to meet your security and compliance needs in finer granularity.
 
  In addition, Amazon Redshift provides multiple means of authentication to secure and simplify data warehouse access. You can use [AWS Identity and Access Management](https://aws.amazon.com/iam/) (AWS IAM) within your AWS account. Use federated authentication if you already manage user identifies outside of AWS via [SAML-2.0](https://en.wikipedia.org/wiki/SAML_2.0)-compatible identity providers to enable your users to access the data warehouse without managing database users and passwords. Amazon Redshift also supports multi-factor authentication (MFA) to provide additional security.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

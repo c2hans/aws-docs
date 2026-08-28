@@ -18,3 +18,7 @@ Security is a shared responsibility between AWS and you. The [shared responsibil
   + The sensitivity of your data, your company’s requirements, and applicable laws and regulations
 
 This documentation helps you understand how to apply the shared responsibility model when using AWS Security Agent.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

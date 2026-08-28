@@ -137,3 +137,7 @@ If you don't want to track and apply individual updates to your table, you can p
 1. After the new domain is active, update the DNS entry that directs query traffic to the old search domain to point to the new domain. For example, if you use [Amazon Route 53](http://aws.amazon.com/route53/), you can simply update the recordset with your new search service endpoint.
 
 1. Delete the old domain.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

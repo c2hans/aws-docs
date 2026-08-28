@@ -114,3 +114,7 @@ The following table describes important changes to the AWS IoT Greengrass Develo
 | AWS IoT Greengrass Version 1.3.0 Released | New features:+  Over-the-air (OTA) update agent capable of handling cloud-deployed, Greengrass update jobs. For more information, see [OTA updates of AWS IoT Greengrass Core software](core-ota-update.md). <br />+  Access local peripherals and resources from Greengrass Lambda functions. For more information, see [Access local resources with Lambda functions and connectors](access-local-resources.md).  | November 27, 2017 |
 | AWS IoT Greengrass Version 1.1.0 Released | New features:+  Reset deployed AWS IoT Greengrass groups. For more information, see [Reset deployments](reset-deployments-scenario.md). <br />+  Support for Node.js 6.10 and Java 8 Lambda runtimes, in addition to Python 2.7.  | September 20, 2017 |
 | AWS IoT Greengrass Version 1.0.0 Released | AWS IoT Greengrass is generally available. | June 7, 2017 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

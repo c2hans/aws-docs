@@ -146,3 +146,7 @@ To complete the steps in each of the following procedures, you must first comple
 1. Input your code into the provided cell.
 
 1. You can choose to run your code above or below the Code cell by selecting the appropriate button from the cell editor tools, located in the upper-right corner of the Code cell.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

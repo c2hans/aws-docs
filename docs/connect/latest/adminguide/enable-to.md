@@ -41,3 +41,7 @@ The agent's security profile needs to include the following permissions so they 
  If the agent has only **View** permissions, the **Time off** widget does not appear in the agent schedule.
 
 For more information about the agent's experience, see [Agent initiated time off request](create-time-off-to.md#to-agent).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

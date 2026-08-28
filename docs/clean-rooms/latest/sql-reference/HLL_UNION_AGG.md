@@ -66,3 +66,7 @@ SELECT hll_sketch_estimate(hll_union_agg(sketch, true))
 ```
 
 The final result of the query is the estimated unique count, which in this case is also `1`. This means that the two input values of 1 are considered to be unique, even though they have the same value.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

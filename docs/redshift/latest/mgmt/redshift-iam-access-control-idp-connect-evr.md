@@ -56,3 +56,7 @@ Resolves the user and their AWS IAM Identity Center group memberships.
 If your firewall uses a deny-by-default policy, it must also allow the domains that Redshift uses for general operation under enhanced VPC routing, such as Amazon S3 and, if you query a data lake, AWS Glue. For more information, see [Enhanced VPC routing in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/enhanced-vpc-routing.html).
 
 Using interface VPC endpoints, as described in [Interface VPC endpoints](#redshift-iam-access-control-idp-connect-evr-endpoints), keeps this traffic on the AWS network and doesn't require firewall allow-listing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

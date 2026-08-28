@@ -28,3 +28,7 @@ AWS PrivateLink publishes data points to CloudWatch about your interface endpoin
 The `ActiveConnections` metric is defined as the number of concurrent active connections that the endpoint received during the last one-minute period. The `NewConnections` metric is defined as the number of new connections that were established through the endpoint during the last one-minute period.
 
 For more information about creating dashboards, see [Create dashboard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create_dashboard.html) in the *CloudWatch User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

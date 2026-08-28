@@ -145,3 +145,7 @@ For this tutorial, you modified your assessment target to expose it to the poten
 1. Follow the steps in [Step 5: Locate and analyze your finding](#analyzefinding) to see the findings that result from this subsequent run of the **MyFirstTemplateLinux** template.
 
    Because you resolved the CVE-2018-1111 security issue, you should no longer see a finding for it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

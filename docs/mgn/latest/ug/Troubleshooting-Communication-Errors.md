@@ -212,3 +212,7 @@ https://al2023-repos-<region>-de612dc2.s3.dualstack.<region>.amazonaws.com/
 ```
 
 For the complete list of Amazon S3 buckets required by AWS Transform MGN and the example Amazon S3 VPC endpoint policy, see [Communication between the staging area subnet and S3](preparing-environments.md#Communication-Staging-S3).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

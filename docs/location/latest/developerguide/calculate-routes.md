@@ -122,3 +122,7 @@ Steps to perform after completing the journey.
 <a name="spans"></a>
 
 Each leg of a journey can be split into spans. A span is a portion of the leg with the same values for the set of requested `SpanAdditionalFeatures`. Spans are divided by road properties such as `SpeedLimit`, road names, or regions. Returned spans can be used to visualize road attributes and access-related information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

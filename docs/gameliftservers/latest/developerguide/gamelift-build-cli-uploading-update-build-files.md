@@ -26,3 +26,7 @@ Visit the Amazon GameLift Servers Toolkit repo in GitHub to get the [fast build 
 **Production deployment sample script**
 This script illustrates how you can automate the process of updating game server builds that are deployed on managed EC2 fleets in production. To use this script, your Amazon GameLift Servers hosting solution must use aliases to abstract fleet IDs. The sample script handles the following basic steps: upload an updated build, create a new build and deploy to a new fleet, redirect player traffic from an existing fleet to the new fleet, and delete the old fleet. Customize the sample script to meet your specific deployment requirements.
 Visit the Amazon GameLift Servers Toolkit repo in GitHub to get the [production deployment sample script](https://github.com/aws/amazon-gamelift-toolkit/tree/main/production-deployment-sample-script) in GitHub and learn more about how to use it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

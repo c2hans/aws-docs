@@ -40,3 +40,7 @@ Verify your configuration for the following Group Policy settings. If required, 
 <a name="active-directory-prerequisites-smart-card-authentication"></a>
 
 WorkSpaces Pools supports the use of Active Directory domain passwords or smart cards such as [Common Access Card (CAC)](https://www.cac.mil/Common-Access-Card) and [Personal Identity Verification (PIV)](https://piv.idmanagement.gov/) smart cards for Windows sign in to WorkSpaces in WorkSpaces Pools. For information about how to configure your Active Directory environment to enable smart card sign in by using third-party certification authorities (CAs), see [Guidelines for enabling smart card logon with third-party certification authorities](https://docs.microsoft.com/en-us/troubleshoot/windows-server/windows-security/enabling-smart-card-logon-third-party-certification-authorities) in the Microsoft documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

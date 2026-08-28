@@ -42,3 +42,7 @@ Some products listed on AWS Marketplace are billed on usage measured by the soft
 <a name="ami-product-version-policies"></a>
 
 AWS Marketplace automates the version management experience for AWS customers and sellers using S-AMI, AMI with CloudFormation template, and container products. With automated version archival, any product version that has been restricted by a seller for longer than two years is automatically archived. Archived versions are no longer available to launch from AWS Marketplace for new customers, however existing users can continue to use the archived version through launch templates and Amazon EC2 Auto Scaling groups by specifying the AMI ID. Any archived version that has not been used to launch a new instances in the past 13 months is deleted. Once an archived version is deleted, it is no longer available to launch for new or existing users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

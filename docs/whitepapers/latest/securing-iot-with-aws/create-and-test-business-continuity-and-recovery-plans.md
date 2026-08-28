@@ -27,3 +27,7 @@ During an event, different IoT systems could behave in different ways. Before th
 +  [AWS Backup](https://aws.amazon.com/backup/)
 
  These general best practices apply across all IoT deployments, but as mentioned previously, different industries will have different threat and risk models. In the next section we will dive into examples across these industries and demonstrate prescriptive approaches that are more targeted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,3 +46,7 @@ The following table includes zero-ETL integration events, with additional metada
 | Configuration | REDSHIFT-INTEGRATION-EVENT-1004 | ERROR | Unable to load data because the binlog\_transaction\_compression cluster parameter is enabled. Set the parameter value to OFF and reboot the writer instance to apply the change, then recreate the integration. |
 | Configuration | REDSHIFT-INTEGRATION-EVENT-1005 | ERROR | Unable to load data because the binlog\_row\_value\_options cluster parameter is set to PARTIAL\_JSON, which is not supported. Fix the parameter group and reboot the writer instance to apply the change, then recreate the integration. |
 | Configuration | REDSHIFT-INTEGRATION-EVENT-1006 | WARNING | Unable to parse integration filter. Fix the filter syntax. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

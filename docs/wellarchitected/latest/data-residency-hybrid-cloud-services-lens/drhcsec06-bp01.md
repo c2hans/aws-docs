@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 +  Review the AWS Outposts Shared Responsibility Model in the [AWS Outposts High Availability Design and Architecture Considerations whitepaper](https://docs.aws.amazon.com/whitepapers/latest/aws-outposts-high-availability-design/aws-outposts-high-availability-design.html).
 +  Update your access control mechanisms to only allow physical access to those who have a business need and when needed, rather than 24x7 access for people who's business need is only for short durations, such as electricians, fiber cable pullers, HVAC personnel, and staff designated to escort AWS maintenance technicians.
 +  Create a process for periodic access reviews, and automatically revoke access when not used for a certain duration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

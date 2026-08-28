@@ -21,3 +21,7 @@ For information about where Connect Customer forecasting & agent scheduling is a
 The following diagram shows a typical end-to-end optimization workflow by persona: Connect Customer administrator, forecaster, scheduler, capacity planner, and agent. It lists the tasks performed by each persona.
 
 ![A five column diagram, one column for each persona, the tasks they perform.](http://docs.aws.amazon.com/connect/latest/adminguide/images/wfm-workflow-overview.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

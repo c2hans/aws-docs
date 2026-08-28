@@ -24,3 +24,7 @@ FSx for Windows File Server lets you adjust when your file system's maintenance 
 1. Choose **Save** to save your changes. The new maintenance start time is displayed in the **Administration Settings** panel.
 
 To change the start time of the weekly maintenance window using the [update-file-system](https://docs.aws.amazon.com/cli/latest/reference/fsx/update-file-system.html) CLI command, see [Update a file system using the AWS CLI](walkthrough03-update-file-system.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

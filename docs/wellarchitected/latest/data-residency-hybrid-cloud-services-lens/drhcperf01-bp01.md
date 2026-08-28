@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 <a name="implementation-guidance-42"></a>
 
  You should consider all workload requirements when planning hybrid edge configurations, and assess the different services available in [AWS Regions](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/), [Local Zones](https://aws.amazon.com/about-aws/global-infrastructure/localzones/features/), and [Outposts](https://aws.amazon.com/outposts/) to best suit your needs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

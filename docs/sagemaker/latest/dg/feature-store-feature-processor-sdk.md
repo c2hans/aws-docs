@@ -76,3 +76,7 @@ For information about authoring Spark code, see the [ Spark SQL Programming Guid
 For more code samples for common use-cases, see the [Example Feature Processing code for common use cases](feature-store-feature-processor-examples.md).
 
 Note that transformation functions decorated with `@feature_processor` do not return a value. To programmatically test your function, you can remove or monkey patch the `@feature_processor` decorator such that it acts as a pass-through to the wrapped function. For more details on the `@feature_processor` decorator, see [Amazon SageMaker Feature Store Python SDK](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_mlops.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

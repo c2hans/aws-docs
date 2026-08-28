@@ -202,3 +202,7 @@ To view the full event pattern supported for Amazon ECR events, see [Amazon ECR 
 1. Upload the template, and then view the changes listed in CloudFormation. These are the changes to be made to the stack. You should see your new resources in the list.
 
 1. Choose **Execute**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

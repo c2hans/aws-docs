@@ -17,3 +17,7 @@ ARC automatically detects the number and the scope of cells (representing replic
 With this information, you can determine if there are changes that you need to make to align resources in your cells to the correct zones or Regions.
 
 To get started, you create DNS target resources for your application, and resource sets and readiness checks for them. For more information, see [Getting architecture recommendations in ARC](recovery-readiness.evaluate-arch.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

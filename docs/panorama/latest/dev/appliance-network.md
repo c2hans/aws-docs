@@ -66,3 +66,7 @@ The appliance needs access to RTSP video streams locally, but not over the inter
 <a name="appliance-network-vpn"></a>
 
 The AWS Panorama Appliance does not need internet access if you deploy it in a private VPC subnet with a VPN connection to AWS. You can use Site-to-Site VPN or Direct Connect to create a VPN connection between an on-premises router and AWS. Within your private VPC subnet, you create endpoints that let the appliance connect to Amazon Simple Storage Service, AWS IoT, and other services. For more information, see [Connecting an appliance to a private subnet](api-endpoints.md#services-vpc-appliance).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

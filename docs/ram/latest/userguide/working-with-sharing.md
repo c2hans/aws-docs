@@ -14,3 +14,7 @@ You can use AWS Resource Access Manager (AWS RAM) to share the resources that yo
 + [Viewing your shared resources in AWS RAM](working-with-sharing-view-sr.md)
 + [Viewing the principals you share resources with in AWS RAM](working-with-sharing-view-principals.md)
 + [Deleting a resource share in AWS RAM](working-with-sharing-delete.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RAM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ram` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

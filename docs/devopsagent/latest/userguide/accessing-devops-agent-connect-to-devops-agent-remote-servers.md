@@ -247,8 +247,13 @@ When creating an access token, you can optionally specify an IP allowlist. When 
 
 ### Token rotation and revocation
 <a name="token-rotation-and-revocation"></a>
-+ **Rotation** – Rotate a token to generate a new token value while preserving the token's name, scopes, and IP allowlist. The old token is immediately invalidated. Update your client configuration with the new token value.
++ **Rotation** – Rotate a token to generate a new token value while preserving the token's name, scopes, and IP allowlist. The old token is immediately invalidated. Update your client configuration with the new token value. Rotation also starts a fresh chat history—see the following section.
 + **Revocation** – If a token is compromised, revoke it immediately. Revoked tokens cannot be used and cannot be restored.
+
+#### Chat history and token rotation
+<a name="chat-history-and-token-rotation"></a>
+
+Each token has its own chat history. When you rotate a token, AWS DevOps Agent treats the new token value as a new identity. Chats that you created with the previous token no longer appear through the remote server.
 
 #### Responding to a compromised token
 <a name="responding-to-a-compromised-token"></a>
@@ -397,3 +402,7 @@ To prevent users in your organization from enabling access tokens, create a Serv
 | HTTP 400 "Agent space not resolved from credentials" | An A2A \+ SigV4 request does not include the X-Agent-Space-Id header. | Add X-Agent-Space-Id: <agentSpaceId> to the request. |
 | Request timeout | Initial responses take 5–30 seconds. Investigations take 5–8 minutes. | Set client timeout to at least 120 seconds. |
 | Connection refused | Incorrect endpoint URL or Region. | Verify the URL format: https://connect.aidevops.{region}.api.aws |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

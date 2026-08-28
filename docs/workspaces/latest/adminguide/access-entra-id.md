@@ -79,3 +79,7 @@ The Web Access-initiated flow allows users to sign in to their WorkSpaces after 
 <a name="first-time-entra"></a>
 
 If you're logging in for the first time to a Microsoft Entra ID-joined Windows WorkSpaces, you must go through the out-of-box experience (OOBE). During OOBE, the WorkSpaces are joined to Entra ID. You can customize the OOBE experience by configuring the Autopilot profile assigned to the Microsoft Intune device group that you create for your WorkSpaces. For more information, see [Step 3: Configure Windows Autopilot user-driven mode](launch-entra-id.md#entra-step-3).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

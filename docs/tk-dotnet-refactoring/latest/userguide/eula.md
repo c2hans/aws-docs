@@ -8,3 +8,7 @@ AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container 
 <a name="eula"></a>
 
 AWS Toolkit for .NET Refactoring is licensed as *AWS Content* under the terms and conditions of the AWS Customer Agreement. For more information, see [AWS Customer Agreement](https://aws.amazon.com/agreement/) and [AWS Service Terms](https://aws.amazon.com/service-terms/). By installing, using, or accessing AWS Toolkit for .NET Refactoring, you agree to such terms and conditions. The term *AWS Content* does not include software and assets distributed under separate license terms (such as code licensed under an open source license).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

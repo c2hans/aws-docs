@@ -24,3 +24,7 @@ If you're interested in using a fleet of private devices, [contact us](mailto:aw
 + [Skipping app re-signing on private devices in AWS Device Farm](skip-app-re-signing-on-private-devices.md)
 + [Amazon VPC across AWS Regions in AWS Device Farm](amazon-vpc-cross-region.md)
 + [Terminating private devices in Device Farm](terminate-private-device.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

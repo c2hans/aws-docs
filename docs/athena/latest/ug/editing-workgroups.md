@@ -18,3 +18,7 @@ Editing a workgroup requires permissions to `UpdateWorkgroup` API operations. Se
 1. Change the fields as needed. For the list of fields, see [Create workgroup](creating-workgroups.md). You can change all fields except for the workgroup's name. If you need to change the name, create another workgroup with the new name and the same settings.
 
 1. Choose **Save changes**. The updated workgroup appears in the list on the **Workgroups** page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

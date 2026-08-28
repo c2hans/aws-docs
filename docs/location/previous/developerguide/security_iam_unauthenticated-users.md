@@ -10,3 +10,7 @@ Many scenarios for using Amazon Location Service, including showing maps on the 
 + **Use Amazon Cognito** – An alternative to API keys is to use Amazon Cognito to grant anonymous access. Amazon Cognito allows you to create a richer authorization with IAM policy to define what can be done by the unauthenticated users. For more information about using Amazon Cognito, see [Allow unauthenticated guest access to your application using Amazon Cognito](authenticating-using-cognito.md).
 
 For an overview of providing access to unauthenticated users, see [Grant access to Amazon Location Service](how-to-access.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

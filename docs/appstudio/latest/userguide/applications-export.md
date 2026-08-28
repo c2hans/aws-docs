@@ -30,3 +30,7 @@ Exported apps can be imported into instances in any AWS Region supported by App 
    + If an import code has already been created:
 
      1. To share the currently exported app, copy and share the existing import code. To create a new exported app with the latest changes to your app, choose **Generate new code**. You can also update the import permissions if needed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

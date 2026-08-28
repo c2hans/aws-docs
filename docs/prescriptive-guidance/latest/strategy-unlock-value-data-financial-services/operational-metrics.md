@@ -29,3 +29,7 @@ AWS Professional Services can work with your internal teams to establish a deliv
 | 5. For all of the bank | Reduced number of distinct modelling environments | Number of environments | < 2 |
 | Simplified team collaboration across organizational boundaries | Time to access (for example, data) | 1 day |
 | Common and singular operating model/framework | Number of domains controlled by model | > 3 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

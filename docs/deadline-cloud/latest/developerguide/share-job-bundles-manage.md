@@ -1,0 +1,16 @@
+---
+source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/share-job-bundles-manage.html
+---
+
+# Manage the bundles on your queue
+<a name="share-job-bundles-manage"></a>
+
+To publish an updated version of a bundle, upload it again with the same name. The command asks for confirmation before overwriting the existing archive. Teammates get the new version the next time they download or submit the bundle. Their cached copy is refreshed when the archive changes on the queue.
+
+To remove a shared bundle from the queue for everyone, delete its `.ojd` file from the `job-bundles/` folder in the queue's job attachments bucket. Deleting the file requires Amazon S3 permissions on the bucket, so removing bundles is typically an administrator task.
+
+You can also manage the folder in Amazon S3 directly, for example to seed a queue with a set of starter bundles from a deployment script. Place `.ojd` archives in the `job-bundles/` folder, using subfolders to organize them if you want. Only `.ojd` files are recognized as bundles, and the CLI commands only list bundles at the top level of the folder. Bundles in subfolders appear in the job bundle browser.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

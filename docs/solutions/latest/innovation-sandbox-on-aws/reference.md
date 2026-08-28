@@ -19,10 +19,15 @@ The following information is collected and sent to AWS:
   + Lease duration in hours
   + Whether the lease was automatically approved or required manual approval
   + Creation method (indicates whether lease was created via user request or manager assignment)
+  + Number of principals specified for the lease at publish time
 + Account Cleanup Events
   + Number of accounts successfully cleaned (based on Step Function success metrics)
   + Duration of failed account cleanup attempts
   + Duration of successful account cleanup attempts
+  + Number of IAM Identity Center account assignments found and removed during cleanup
+  + Number of internal assignment records found and removed during cleanup
++ Account Quarantined Events
+  + Reason for account quarantine (manual administrator action, detected account drift, or failed account cleanup)
 + Lease Terminated Events
   + Maximum budget amount that was configured for the lease
   + Actual amount spent during the lease period
@@ -32,6 +37,10 @@ The following information is collected and sent to AWS:
 + LeaseUnfrozen
   + Total number of leases unfrozen
   + Frequency of unfreeze events per individual lease
++ Lease Assignment Events (lease sharing)
+  + The lifecycle action that triggered assignment processing (one of: UPDATE, PUBLISH, FREEZE, UNFREEZE, or TERMINATE)
+  + Number of principals (users and groups) processed in the operation
+  + Number of principal assignments that succeeded and the number that failed
 + Spend Monitoring (monthly heartbeat — 4th of every month)
   + Total cost of all sandbox accounts
   + Total operational cost of running the solution infrastructure
@@ -46,27 +55,46 @@ The following information is collected and sent to AWS:
   + Number of accounts in frozen state
   + Number of accounts undergoing cleanup process
   + Number of accounts in quarantine state requiring manual intervention
+  + Whether a maximum lease duration is required for lease templates
+  + Whether users are permitted to terminate their own leases
+  + Lease request rate limit window, in hours
+  + Maximum number of lease requests allowed per rate limit window
+  + Number of lease templates that allow lease owners to share leases
+  + Number of leases shared with additional users or groups
+  + Total number of user assignments and total number of group assignments across all leases
+  + Average and maximum number of assignments per shared lease
+  + Whether the lease sharing feature is enabled globally
+  + Whether principal search is enabled
 
 ## Contributors
 <a name="contributors"></a>
-+ Wayne Soutter
-+ Chris Ellis
-+ Rakshana Balakrishnan
-+ Nils de Vries
-+ Emma Arrigo
-+ Claudia Woods
-+ Joan Morgan
-+ Todd Gruet
-+ Shu Jackson
-+ Celia Ng
-+ Rainer Moeller
-+ Lalit Grover
-+ Kevin Hargita
-+ Caleb Pearson
 + Abe Wubshet
 + Adrian Tadros
-+ Sanjay Reddy Kandi
-+ Vincent Rioux
-+ Swapnil Ogale
++ Alex Sieber
++ Caleb Pearson
++ Celia Ng
++ Chris Ellis
++ Claudia Woods
 + Elie Elmalem
++ Emma Arrigo
++ Joan Morgan
++ Johanna Wood
++ Kevin Hargita
++ Lalit Grover
++ Manish Jangid
++ Nils de Vries
 + Patrick Quinlan
++ Peter DeVries
++ Rainer Moeller
++ Rakshana Balakrishnan
++ Sanjay Reddy Kandi
++ Shu Jackson
++ Swapnil Ogale
++ Todd Gruet
++ Vincent Rioux
++ Wayne Soutter
++ Youngmin Son
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

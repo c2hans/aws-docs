@@ -150,3 +150,7 @@ To ensure that your automation parameters are well-designed, maintainable, and e
 1. **Use parameter aliases**: If you have parameters with long or complex names, consider using aliases or shorthand versions within the automation logic for better readability and maintainability.
 
 By following these best practices, you can ensure that your automation parameters are well-designed, maintainable, and easy to use, ultimately improving the overall quality and efficiency of your automations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

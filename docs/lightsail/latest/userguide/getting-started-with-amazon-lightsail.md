@@ -82,3 +82,7 @@ Now that you can connect to your instance, what you do next depends on how you p
 + [WordPress](amazon-lightsail-wordpress.md) if you're creating a blog.
 + [Create a static IP address](lightsail-create-static-ip.md) for your instance to keep the same IP address each time you restart your Lightsail instance.
 + [Create a snapshot of your instance](lightsail-how-to-create-a-snapshot-of-your-instance.md) as a backup.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -227,3 +227,7 @@ customer_record = get_customer(12345)
 + [In-Memory Data Store](elasticache-use-cases.md#elasticache-use-cases-data-store)
 + [Choosing an engine and version](SelectEngine.md)
 + [Scaling ElastiCache](Scaling.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

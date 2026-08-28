@@ -29,3 +29,7 @@ Ray automates the work of scaling Python code by distributing the processing acr
 In addition to cost savings, you can use native auto scaling to run Ray workloads without investing time into cluster maintenance, tuning, and administration. You can use familiar open-source libraries out of the box, such as pandas, and the AWS SDK for Pandas. These improve iteration speed while you're developing on AWS Glue for Ray. When you use AWS Glue for Ray, you will be able to rapidly develop and run cost-effective data integration workloads.
 
 [![AWS Videos](http://img.youtube.com/vi/OJ3ZngYTyNE/0.jpg)](http://www.youtube.com/watch?v=OJ3ZngYTyNE)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

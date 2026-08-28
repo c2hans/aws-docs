@@ -36,3 +36,7 @@ SAP system performance can be seriously impacted by network misconfiguration, pa
 +  SAP Note: [1612283 - Hardware Configuration Standards and Guidance](https://launchpad.support.sap.com/#/notes/1612283) [Requires SAP Portal Access]
 +  SAP Note: [2081065 - Troubleshooting SAP HANA Network](https://launchpad.support.sap.com/#/notes/2081065) [Requires SAP Portal Access]
 +  SAP Note: [1100926 - FAQ: Network performance](https://launchpad.support.sap.com/#/notes/1100926) [Requires SAP Portal Access]
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

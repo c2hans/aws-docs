@@ -52,3 +52,7 @@ Use the following instructions to view, search for, delete, and export your conv
      In the conversation that you want to export, choose the vertical ellipsis (⋮) and choose **Export** to export the conversation to a Markdown or HTML format file.
 
    By default, Amazon Q names the file `q-dev-chat-{{yyyy}}-{{mm}}-{{dd}}.{{md|html}}` and saves it in the root of your project.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ Balancing cloud storage performance and storage cost is crucial for organization
 **Cloud archiving**
 
 Many organizations store their most fundamental asset—their data—in locations that are slow to retrieve and lack flexibility. You can use this Guidance to help you automate, monitor, and seamlessly move your data when and where you need it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer from Amazon S3 Glacier Vaults to Amazon S3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

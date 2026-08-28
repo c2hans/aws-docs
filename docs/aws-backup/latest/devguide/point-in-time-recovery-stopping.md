@@ -29,3 +29,7 @@ If you transition a resource's continuous backup protection from one backup plan
 Calling `DisassociateRecoveryPoint` on an Amazon S3 continuous recovery point that is already in `EXPIRED` status has no effect. The recovery point state and configuration remain unchanged.
 
 In all cases, when you remove a continuous backup rule from a backup plan, AWS Backup remembers the retention period from the deleted rule and automatically deletes the continuous backup recovery point when the retention period elapses. For more information, see [Removing the only continuous backup rule from a backup plan](point-in-time-recovery-removing_rule.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

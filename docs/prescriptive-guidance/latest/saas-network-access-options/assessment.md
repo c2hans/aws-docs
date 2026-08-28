@@ -32,3 +32,7 @@ If you are part of the engineering organization, understand the business strateg
 + [Engineering metrics](assessment-engineering.md)
 
 This guide uses a subset of these metrics throughout to help you identify the optimal network access approaches for your SaaS offerings. Choose the metrics that are most important and relevant to your business, and then evaluate the approaches based on those metrics.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

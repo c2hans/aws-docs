@@ -63,3 +63,7 @@ For nodegroups that have no outbound internet access, you’ll need to supply `-
 Note the *`--node-labels`* setting. If this is not defined, the node will join the cluster, but `eksctl` will ultimately time out on the last step when it’s waiting for the nodes to be `Ready`. It’s doing a Kubernetes lookup for nodes that have the label `alpha.eksctl.io/nodegroup-name=<cluster-name>`. This is only true for unmanaged nodegroups. For managed it’s using a different label.
 
 If, at all, it’s possible to switch to managed nodegroups to avoid this overhead, the time has come now to do that. Makes all the overriding a lot easier.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

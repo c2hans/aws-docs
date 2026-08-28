@@ -61,3 +61,7 @@ Throughput rates for 10DLC are determined by the US mobile carriers in cooperati
 <a name="registrations-10dlc-fees"></a>
 
 There are registration and monthly fees associated with using 10DLC, such as registering your company and 10DLC campaign. These are separate from any other monthly or AWS fees. For more information about 10DLC fees, see the [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/) page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

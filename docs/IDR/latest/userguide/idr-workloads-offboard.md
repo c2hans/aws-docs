@@ -10,7 +10,7 @@ To offboard a workload from AWS Incident Detection and Response, create a new su
 + To offboard a workload that spans multiple AWS accounts, then create the support case from your **payer account**. In the body of the support case, list all account IDs to offboard.
 
 **Important**
-If you create a support case to offboard a workload from the incorrect account, you might experience delays and requests for additional information before your workloads can be offloaded.
+If you create a support case to offboard a workload from the incorrect account, you might experience delays and requests for additional information before your workloads can be offboarded.
 
 **Request to offboard a workload**
 
@@ -36,3 +36,7 @@ If you create a support case to offboard a workload from the incorrect account, 
 1. In the **Additional contacts - optional** section, enter any email IDs that you want to receive correspondence about this offboarding request.
 
 1. Choose **Submit**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

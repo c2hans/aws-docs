@@ -33,3 +33,7 @@ You can use the CodeBuild console to edit the tags associated with a CodeBuild p
 <a name="how-to-tag-project-update-cli"></a>
 
  To add, change, or delete tags from a build project, see [Change a build project's settings (AWS CLI)](change-project.md#change-project-cli). Update the `tags` section in the JSON-formatted data you use to update the project.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

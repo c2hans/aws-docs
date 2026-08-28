@@ -27,3 +27,7 @@ To get started with creating applications and running assessments in AWS Resilie
     + Monitoring configurations
     + Performance optimization techniques
 + **Read-only access** – Users with this persona are restricted to read-only permissions. Their responsibilities include maintaining visibility and oversight of an application's performance and health by monitoring resilience score, operational recommendations, and resiliency recommendations. In addition, they are also responsible for identifying issues, trends, and areas for improvement to ensure that the application meets the organization's objectives.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

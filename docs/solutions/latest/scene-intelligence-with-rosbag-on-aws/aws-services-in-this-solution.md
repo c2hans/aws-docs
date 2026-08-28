@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/scene-intelligence-with
 |  [AWS IAM](https://aws.amazon.com/iam/)  |  **Supporting.** This solution creates IAM roles for all the AWS services that require permissions to communicate with other AWS APIs. This solution uses least-privileged IAM policies. |
 |  [AWS Lambda](https://aws.amazon.com/lambda/)  |  **Supporting.** This solution uses a Lambda function to load the data from the DynamoDB table into an OpenSearch Service cluster. |
 |  [AWS Systems Manager](https://aws.amazon.com/systems-manager/)  |  **Supporting.** The solution allows Systems Manger tunneling for port forwarding to an Amazon EC2 instance in a private Amazon VPC subnet. This allows secure access to the OpenSearch Dashboard. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Scene Intelligence with Rosbag on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

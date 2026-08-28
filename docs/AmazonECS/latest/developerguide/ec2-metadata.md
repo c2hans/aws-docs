@@ -28,3 +28,7 @@ To access the IPv6 IMDS endpoint, enable the IPv6 IMDS endpoint on your containe
 The IPv6 IMDS endpoint is not accessible when the `awsvpcTrunking` account setting is enabled. To access container instance IAM role credentials when `awsvpcTrunking` is enabled, you can use a task IAM role instead. For more information about task IAM roles, see [Amazon ECS task IAM role](task-iam-roles.md).
 
  The information you can obtain from the endpoint is divided into categories such as `{{instance-id}}`. For more information about the different categories of host instance metadata you can obtain using the endpoint, see [Instance metadata categories ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-instance-metadata.html#instancedata-data-categories).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

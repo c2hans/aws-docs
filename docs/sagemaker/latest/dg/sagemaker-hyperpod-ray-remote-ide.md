@@ -27,3 +27,7 @@ Connect a local IDE such as VS Code, Cursor, or Kiro to the space, so your edito
 For setup, see [Remote access methods for SageMaker Spaces](access-mechanism.md).
 
 Once connected, open a terminal or notebook in the space and run `ray.init()` to reach the attached cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

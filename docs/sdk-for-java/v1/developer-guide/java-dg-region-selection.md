@@ -108,3 +108,7 @@ This environment variable is set by the Lambda container.
 1. If the SDK still hasn’t found a region by this point, client creation fails with an exception.
 
 When developing AWS applications, a common approach is to use the *shared configuration file* (described in [Using the Default Credential Provider Chain](credentials.md#credentials-default)) to set the region for local development, and rely on the default region provider chain to determine the region when running on AWS infrastructure. This greatly simplifies client creation and keeps your application portable.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

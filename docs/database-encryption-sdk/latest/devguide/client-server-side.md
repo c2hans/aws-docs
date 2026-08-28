@@ -39,3 +39,7 @@ If you are encrypting data that you store in DynamoDB, we recommend the AWS Data
 The [AWS Encryption SDK](https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/) is a client-side encryption library that helps you to encrypt and decrypt generic data. Although it can protect any type of data, it isn't designed to work with structured data, like database records. Unlike the AWS Database Encryption SDK for DynamoDB, the AWS Encryption SDK cannot provide item-level integrity checking and it has no logic to recognize attributes or prevent encryption of primary keys.
 
 If you use the AWS Encryption SDK to encrypt any element of your table, remember that it isn't compatible with the AWS Database Encryption SDK for DynamoDB. You cannot encrypt with one library and decrypt with the other.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ Environment variables control a task's behavior such as the capacity used to run
 You can view the environment variables in the task metadata. For more information, see one of the following topics:
 + Fargate - [Amazon ECS task metadata available for tasks on Fargate](fargate-metadata.md)
 + EC2 - [Task metadata available for Amazon ECS tasks on EC2](ec2-metadata.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

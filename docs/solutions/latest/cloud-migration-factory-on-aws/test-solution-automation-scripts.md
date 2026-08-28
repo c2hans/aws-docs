@@ -55,3 +55,7 @@ The sample automation scripts included with this solution connect to the in-scop
 <a name="conduct-a-test-run-of-the-migration-automation"></a>
 
 This solution lets you conduct a test run of the migration automation. Using automation scripts, the migration process imports the data from the migration CSV file into the solution. Prerequisite checks are conducted for the source servers, the replication agent is pushed to the source servers, replication status is verified, and the target server is launched from the Migration Factory web interface. For step-by-step instructions on running a test, refer to Automated migration activities using Migration Factory web console and [Automated migration activities using command prompt](list-of-automated-migration-activities-using-command-prompt.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

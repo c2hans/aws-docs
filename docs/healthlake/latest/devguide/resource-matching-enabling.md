@@ -12,3 +12,7 @@ Matching runs asynchronously after a resource is written and is eventually consi
 If you disable and later re-enable resource matching, resources written to the datastore while it was disabled are not matched retroactively. Only resources written while resource matching is enabled are evaluated.
 
 Resource matching is available in all AWS Regions where AWS HealthLake is available. For the current list of Regions, see [AWS HealthLake endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/Amazon-HealthLake.html) in the *AWS General Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

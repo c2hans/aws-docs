@@ -58,3 +58,7 @@ In either of the configuration profiles, you can specify pseudoparameters that a
 
 **Note**
 All parameters marked with **identifier** are used as a prefix for the name of created alarms, unless you specify that identifier in the alarm name.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

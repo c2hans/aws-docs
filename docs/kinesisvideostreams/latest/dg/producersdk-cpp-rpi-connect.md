@@ -22,3 +22,7 @@ These instructions are written to help you to set up your Raspberry Pi when run 
    + On Windows, use [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html), a free SSH client for Windows.
 
    For a new installation of Raspbian, the user name is **pi**, and the password is **raspberry**. We recommend that you [change the default password](https://www.raspberrypi.com/documentation/computers/configuration.html#change-user-password-nonint).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

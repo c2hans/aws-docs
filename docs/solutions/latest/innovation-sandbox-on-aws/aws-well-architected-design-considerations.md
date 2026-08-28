@@ -21,7 +21,6 @@ The Innovation Sandbox on AWS solution implements operational excellence through
   + Reduces manual intervention in account lifecycle management.
 +  **Event response**
   + Implements automated responses to budget thresholds.
-  + Provides a Cloudwatch Application Insights dashboard for monitoring and alerts.
   + Enables quick identification and resolution of issues, using predefined CloudWatch Log Insight queries and X-Ray traces.
 +  **Standard definitions**
   + Creates consistent Organizational Unit (OU) structure across implementations.
@@ -52,14 +51,14 @@ The solution implements comprehensive security controls:
 
 We architected this solution using principles and best practices of the [reliability pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html) to benefit this solution.
 
-The solution ensures reliability through:
+The solution supports reliability through:
 +  **Distributed design**
   + Implements multi-account architecture.
   + Uses AWS Organizations for management.
   + Maintains separation of concerns across accounts.
 +  **Automated recovery**
   + Implements automated resource management.
-  + Enables account recycling and clean-up.
+  + Enables account recycling and cleanup.
   + Provides consistent environment configuration.
 +  **Change management**
   + Automates policy deployment.
@@ -80,7 +79,6 @@ The solution maintains performance efficiency by:
   + Blueprint deployment automates infrastructure setup for sandbox accounts.
   + Allows users to get started with pre-configured resources.
 +  **Monitoring**
-  + Creates a centralized CloudWatch Application Insights dashboard.
   + Tracks resource utilization across accounts.
   + Enables performance optimization through metrics.
 
@@ -91,9 +89,9 @@ We architected this solution using principles and best practices of the [cost op
 
 The solution optimizes costs through multiple mechanisms:
 +  **Resource management**
-  + Automatically manage accounts (clean-up or freeze) when budget thresholds are reached.
+  + Automatically manage accounts (cleanup or freeze) when budget thresholds are reached.
   + Freeze: Prevents creation of new resources at budget limits.
-  + Clean-up: Enables account recycling to optimize usage.
+  + Cleanup: Enables account recycling to optimize usage.
 +  **Cost controls**
   + Implements multi-tier budget threshold monitoring.
   + Provides visibility into spending across accounts.
@@ -103,7 +101,7 @@ The solution optimizes costs through multiple mechanisms:
 Identification of cost/budget overrun per account is best effort due to Cost Explorer service limitation.
 +  **Resource lifecycle**
   + Manages resource termination based on budget limits and/or lease duration.
-  + Enables account reuse through automated clean-up.
+  + Enables account reuse through automated cleanup.
   + Optimizes account utilization through recycling.
 
 ## Sustainability
@@ -111,3 +109,7 @@ Identification of cost/budget overrun per account is best effort due to Cost Exp
 
 We architected this solution using principles and best practices of the [sustainability pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html) to benefit this solution.
 + The solution uses managed and serverless services where possible to minimize the environmental impact.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

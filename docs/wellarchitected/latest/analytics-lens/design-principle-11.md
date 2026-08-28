@@ -58,3 +58,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/de
  For more details, refer to the following information:
 + [ Introducing Amazon EMR Managed Scaling – Automatically Resize Clusters to Lower Cost ](https://aws.amazon.com/blogs/big-data/introducing-amazon-emr-managed-scaling-automatically-resize-clusters-to-lower-cost/)
 + [ Adopt Recommendations and Monitor Predictive Scaling for Optimal Compute Capacity ](https://aws.amazon.com/blogs/compute/evaluating-predictive-scaling-for-amazon-ec2-capacity-optimization/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

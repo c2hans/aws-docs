@@ -25,3 +25,7 @@ Amazon Route 53 Recovery Readiness provides the following APIs for data retrieva
 | <a name="route53-recovery-readiness-ListResourceSets"></a>[ListResourceSets](https://docs.aws.amazon.com/recovery-readiness/latest/api/resourcesets.html) | List resource sets | Read |
 | <a name="route53-recovery-readiness-ListRules"></a>[ListRules](https://docs.aws.amazon.com/recovery-readiness/latest/api/rules.html) | List readiness rules | Read |
 | <a name="route53-recovery-readiness-ListTagsForResources"></a>[ListTagsForResources](https://docs.aws.amazon.com/recovery-readiness/latest/api/tags-resource-arn.html) | List tags for a resource | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

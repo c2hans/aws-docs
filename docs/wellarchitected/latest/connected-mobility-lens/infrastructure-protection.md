@@ -70,3 +70,7 @@ This should include any applicable Software Bill of Material (SBOM) documents as
  **[CMSEC\_BP19.3] Define a process for classifying and prioritizing vulnerabilities for remediation.**
 
  Processes for classification, prioritization, and remediation of vulnerabilities should be formally documented and readily accessible to stakeholders. Playbooks and runbooks specific to your organizations technology stack and operational processes should be used as a means of automating segments of the investigation and help minimize manual errors during a potentially stressful situation. Automation can be accomplished through solutions such as Jupyter Notebooks or running automation documents within AWS Systems Manager for example.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

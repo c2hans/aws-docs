@@ -25,3 +25,7 @@ Before you start integration, you must have an AWS account and set up access per
    + [Add FlexMatch to a game client](match-client.md)
 
 1. **Build a match placement service. ** Create a mechanism that works with your existing game hosting system to locate available hosting resources and start new game sessions for successful matches. This component must be able to use match results information to get an available game server and start a new game session for the match. You might also want to implement a workflow to make match backfill requests, which uses matchmaking to fill open slots in matched game sessions that are already running.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

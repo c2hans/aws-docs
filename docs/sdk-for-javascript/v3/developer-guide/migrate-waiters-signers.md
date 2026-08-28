@@ -50,3 +50,7 @@ await waitUntilBucketExists({ client, maxWaitTime: 60 }, { Bucket });
  In v2, you can generate a signed URL to the speech synthesized by Amazon Polly service with [` AWS.Polly.Presigner`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/Polly/Presigner.html).
 
  In v3, the similar utility function is available in [` @aws-sdk/polly-request-presigner`](https://docs.aws.amazon.com/AWSJavaScriptSDK/v3/latest/modules/_aws_sdk_polly_request_presigner.html) package.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for JavaScript. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

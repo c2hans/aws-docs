@@ -33,3 +33,7 @@ To enable the container bin-packing feature in Amazon EMR, you can add the follo
 + Enabling the feature automatically activates YARN multi-node placement scheduling strategy.
 + There can be potential performance degradation due to concentrated resource utilization on a limited number of nodes.
 + With this feature, custom auto-scaling policies demonstrate better scale-down operations, compared to managed scaling policy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

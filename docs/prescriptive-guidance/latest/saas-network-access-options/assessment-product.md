@@ -159,3 +159,7 @@ The selected network access approach demands specialized skills, resources, or e
 + What are the cost implications of the network access approach for partners. How do these costs align with their business models? Which side of the integration bears the bulk of the costs, and how many operational cycles must be invested?
 + For the network access approach, are there any barriers to integration or maintenance that could affect partner relationships or ecosystem scalability?
 + How can the network access approach be optimized to enhance compatibility and ease of integration across the ecosystem?
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

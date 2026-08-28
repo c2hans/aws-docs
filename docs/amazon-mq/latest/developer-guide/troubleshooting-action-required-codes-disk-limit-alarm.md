@@ -40,3 +40,7 @@ It may take up to several hours for the RABBITMQ\_DISK\_ALARM status to clear af
 While the broker is in a critical action required state due to the disk usage alarm, only a configurable storage increase is permitted. You cannot change the broker's instance type until the broker has exited the alarm state.
 
  After updating, monitor the `RabbitMQDiskFree` and `RabbitMQDiskFreeLimit` Amazon CloudWatch metrics to confirm the broker exits the alarm state. To prevent disk alarm events from reoccurring, monitor disk usage over time and follow the guidance in [Amazon MQ for RabbitMQ best practices](best-practices-rabbitmq.md). If additional disk or other resource capacity is needed, consider upgrading the broker's instance type as well.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

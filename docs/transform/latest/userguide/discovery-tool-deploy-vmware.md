@@ -41,3 +41,7 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/discovery-too
 1. Locate the deployed discovery tool in your vCenter. Right-click the VM, and then choose **Power**, **Power On**.
 
 1. After a few minutes, the IP address of the discovery tool displays in vCenter. You use this IP address to connect to the discovery tool.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

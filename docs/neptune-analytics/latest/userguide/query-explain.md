@@ -178,3 +178,7 @@ subQuery1
  In `subQuery1`, `DFEPipelineScan` with `ID` 0 scans the database for a specified `pattern`. The pattern scans for vertices `?n` with property `code` saved as a variable `?n_code2`. The `inlineFilters` argument shows the filtering for the `code` property equaling `ATL`.
 
  Next, the `DFEProject` operator propagates forward only the `?n` variable we’re interested in. Finally, the `DFESerialize` operator performs result serialization, transforming the input solutions into a readable format.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

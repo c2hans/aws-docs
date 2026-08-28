@@ -34,3 +34,7 @@ Use the following procedure to connect an Amazon Quick account with Amazon Q Bus
 1. Choose the data source that you want to add. The data source that you choose determines the steps that are required to configure the data source connection. For more infotmation about adding a data source to an Amazon Q Business account, see [Connecting Amazon Q Business data sources](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/supported-connectors.html). When you finish setting up the data source configuration, choose **Add data source**.
 
 After you choose an index, a retriever, and a data source for your Amazon Q Business account, your connection to Amazon Q Business is complete and you can return to the Quick console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

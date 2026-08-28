@@ -72,3 +72,7 @@ Camera Kit is Snap AR’s SDK that allows partners to leverage Snap AR technolog
  [*AWS re:Post*](https://repost.aws/tags/TAAkUVScqiTFmkt-h6LdmJHw/amazon-interactive-video-service) is a community-based Q&A site for developers to discuss technical questions related to Amazon IVS.
 
  [*Contact AWS*](https://aws.amazon.com/contact-us/) has links for nontechnical inquiries about your billing or account. For technical questions, use the discussion forums or support links above.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

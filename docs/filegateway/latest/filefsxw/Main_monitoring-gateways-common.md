@@ -16,3 +16,7 @@ Storage Gateway provides CloudWatch metrics at no additional charge. Storage Gat
 + [Create recommended CloudWatch alarms](cloudwatch-alarms-create-recommended.md) - Learn how you can quickly and automatically configure all recommended CloudWatch alarms as part of the initial File Gateway setup process.
 + [Create a custom CloudWatch alarm](cloudwatch-alarms-create-alarm.md) - Learn how you can create a custom CloudWatch alarm to monitor a specific metric using specific evaluation criteria to trigger alarm states and send notifications.
 + [Monitoring your FSx File Gateway](monitoring-file-gateway.md) - Learn how to view CloudWatch logs and audit logs, and find information about the specific gateway and file sharefile system metrics that are reported by your gateway.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

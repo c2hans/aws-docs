@@ -106,3 +106,7 @@ To add a resource-level permission to a policy, include the channel's ARN in a n
 ------
 
 You attach the policy to the IAM entity that needs it. The associated users can create, edit, view and delete the resource's Slack chat channels, workspaces and associated SNS topics, and create and edit Amazon Chime webhooks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q Developer in chat applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chatbot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

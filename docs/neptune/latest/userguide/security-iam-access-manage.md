@@ -110,3 +110,7 @@ Changes to an IAM policy take up to 10 minutes to apply to the specified Neptune
 IAM policies applied to a Neptune DB cluster apply to all instances in that cluster.
 
 Neptune does not currently support cross-account access control at the data plane level. Cross-account access control is only supported when bulk-loading and by using role chaining. For more information, see [ Bulk load tutorial ](https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutorial-chain-roles.html#bulk-load-tutorial-chain-cross-account).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

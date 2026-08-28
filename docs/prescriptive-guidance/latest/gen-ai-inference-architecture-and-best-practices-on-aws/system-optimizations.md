@@ -256,3 +256,7 @@ NIXL is used by frameworks like NVIDIA Dynamo and llm-d to transfer KV cache blo
 + **llm-d**: Kubernetes-native framework with NIXL over EFA for AWS deployments ([SageMaker HyperPod](https://aws.amazon.com/blogs/machine-learning/introducing-disaggregated-inference-on-aws-powered-by-llm-d/), EKS)
 
 For detailed deployment guides, see [NVIDIA Dynamo documentation](https://docs.nvidia.com/dynamo/v-0-7-1/design-docs/disaggregated-serving) and [Amazon SageMaker HyperPod](https://aws.amazon.com/blogs/machine-learning/disaggregated-prefill-and-decode-for-llm-inference-on-sagemaker-hyperpod/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

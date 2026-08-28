@@ -117,3 +117,7 @@ When creating a model training job, you specify the batch size in the `mini_batc
 <a name="kmeans-step3"></a>
 
 If the algorithm created *K* clusters—*(K = k\*x)* where *x* is greater than 1—then it reduces the *K* clusters to *k* clusters. (For more information, see `extra_center_factor` in the preceding discussion.) It does this by applying Lloyd's method with `kmeans++` initialization to the *K* cluster centers. For more information about Lloyd's method, see [k-means clustering](https://pdfs.semanticscholar.org/0074/4cb7cc9ccbbcdadbd5ff2f2fee6358427271.pdf).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

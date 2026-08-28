@@ -26,3 +26,7 @@ Overall PPI Score: 75%
 + Project Success: 2 points (25% of projects below 50%)
 
 Interpretation: You're a Top Performer overall, with particular strength in win rate and portfolio-level execution. Focus on improving speed to value and project consistency to reach 100%.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

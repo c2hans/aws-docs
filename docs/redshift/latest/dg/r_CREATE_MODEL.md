@@ -212,3 +212,7 @@ FREQUENCY specifies how granular in time units you want the forecasts to be. Ava
 
  MAX\_BATCH\_ROWS *integer*
 (Optional) The maximum number of rows that Amazon Redshift sends in a single batch request for a single SageMaker AI invocation. It is supported only for BYOM with remote inference. This parameter's minimum value is 1. The maximum value is `INT_MAX`, or 2,147,483,647. This parameter is required only when both input and returned data types are *SUPER*. The default value is `INT_MAX`, or 2,147,483,647.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

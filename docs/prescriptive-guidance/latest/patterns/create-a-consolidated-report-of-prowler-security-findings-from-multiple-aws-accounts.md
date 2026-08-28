@@ -202,3 +202,7 @@ The following image is an example of the **Pass Fail** worksheet in the report o
 The following image is an example of the **Severity** worksheet in the report of consolidated Prowler findings.
 
 ![Example of the Severity tab in the report of Prowler scan results](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/81ba9037-9958-4e4a-95b7-d68896075a5b/images/b7cbbff1-bca3-4667-9a1e-cc92e2e4adcd.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

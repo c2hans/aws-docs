@@ -17,3 +17,7 @@ If you have configured statistics generation at the table-level or if you have p
 + [Enabling catalog-level automatic statistics generation](enable-auto-column-stats-generation.md)
 + [Viewing automated table-level settings](view-auto-column-stats-settings.md)
 + [Disabling catalog-level column statistics generation](disable-auto-column-stats-generation.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

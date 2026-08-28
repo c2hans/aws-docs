@@ -25,3 +25,7 @@ We follow the AWS VPN User Guide [Getting Started](https://docs.aws.amazon.com/v
 1. In your internal Network, Create a VPN Connection and Configure the Customer Gateway.
 
 1. Test VPN connectivity between the VPC and your internal network.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

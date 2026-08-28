@@ -272,3 +272,7 @@ For more comprehensive examples and use cases, refer to the [Aurora DSQL Connect
 |  [transaction](https://github.com/awslabs/aurora-dsql-connectors/tree/main/go/pgx/example/src/transaction)  | Transaction handling with BEGIN/COMMIT/ROLLBACK |
 |  [occ\_retry](https://github.com/awslabs/aurora-dsql-connectors/tree/main/go/pgx/example/src/occ_retry)  | Handling OCC conflicts with exponential backoff |
 |  [connection\_string](https://github.com/awslabs/aurora-dsql-connectors/tree/main/go/pgx/example/src/connection_string)  | Using connection strings for configuration |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

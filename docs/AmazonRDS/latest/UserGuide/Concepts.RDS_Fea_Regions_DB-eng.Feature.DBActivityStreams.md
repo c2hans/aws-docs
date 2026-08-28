@@ -115,3 +115,7 @@ For more information on additional requirements for database activity streams wi
 | South America (São Paulo) | All available versions | All available versions | All available versions |
 | AWS GovCloud (US-East) | Not available | Not available | Not available |
 | AWS GovCloud (US-West) | Not available | Not available | Not available |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

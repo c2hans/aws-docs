@@ -452,3 +452,7 @@ If you specified **New SNS Topic**, enter the name of the new topic.
 
 **Recipient email addresses (Only When Creating a New SNS Topic)**
 If you specified **New SNS topic**, enter the email addresses that you want to send notifications to. Separate multiple names with commas (,), semicolons (;), or spaces.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

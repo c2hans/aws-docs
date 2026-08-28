@@ -26,3 +26,7 @@ You can't edit the name, description, or other information for a linked reposito
    + To change the default branch for the repository, in **Default branch**, choose **Edit**. For more information, see [Managing the default branch for a repository](source-branches-default-branch.md).
    + To add, remove, or change a rule for what project roles have permission to perform certain actions in a branch, in **Branch rules**, choose **Edit**. For more information, see [Manage allowed actions for a branch with branch rules](source-branches-branch-rules.md).
    + To add, remove, or change an approval rule for merging pull reuqests to a branch, in **Approval rules**, choose **Edit**. For more information, see [Managing requirements for merging a pull request with approval rules](source-pull-requests-approval-rules.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

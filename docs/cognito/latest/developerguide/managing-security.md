@@ -38,3 +38,7 @@ Guard against disclosure of existing usernames and aliases in your user pool. Re
 + [User pool case sensitivity](user-pool-case-sensitivity.md)
 + [User pool deletion protection](user-pool-settings-deletion-protection.md)
 + [Managing user existence error responses](cognito-user-pool-managing-errors.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

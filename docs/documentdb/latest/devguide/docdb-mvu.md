@@ -238,3 +238,7 @@ Replace each {{placeholder}} with your cluster's information.
 + **Post-upgrade performance.** Temporary performance degradation and high CPU utilization may occur while the index metadata refresh runs. If degradation persists beyond 3 hours, contact AWS support.
 
 For additional assistance, contact [AWS Support](https://aws.amazon.com/support).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,3 +39,7 @@ AWS AppSync functions that use a Lambda data source as a proxy are ideal for use
 +  Importing third-party libraries or requiring unsupported features in `APPSYNC_JS`
 +  Making multiple network requests and/or getting file system access to fulfill a query
 +  Batching requests using [ batching configuration](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-reference-lambda-js.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

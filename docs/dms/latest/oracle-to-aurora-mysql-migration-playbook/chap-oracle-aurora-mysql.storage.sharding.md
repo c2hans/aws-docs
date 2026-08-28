@@ -28,3 +28,7 @@ For more information, see [Overview of Oracle Sharding](https://docs.oracle.com/
 There is no equivalent option in MySQL. The most equivalent option will be to create application level sharding management that will interact with data that is spread across multiple instances.
 
 Another option will be to assess the requirements and probably use another data store such as Amazon Redshift, Amazon EMR, or Amazon DynamoDB.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

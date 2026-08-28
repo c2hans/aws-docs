@@ -46,3 +46,7 @@ The first column lists charges that appear in your AWS bill report and explains 
 | **{{region}}-Lambda-Edge-GB-Second**<br />The charge for the duration from when your [Lambda@Edge](lambda-at-the-edge.md) function is invoked to when it returns or terminates. | **{{region}}-Lambda-Edge-GB-Second**<br />Same as the corresponding item in your CloudFront bill. |
 | **KeyValueStore-EdgeReads**<br />The charge for the number of read calls to the [CloudFront KeyValueStore](kvs-with-functions.md) methods, `get()`, `exists()`, and `meta()`. For more information, see [Helper methods for key value stores](functions-custom-methods.md). | **KeyValueStore-EdgeReads**<br />Same as the corresponding item in your CloudFront bill. |
 | **KeyValueStore-APIOperations**<br />The charge for the number of calls to the [CloudFront KeyValueStore](kvs-with-functions.md) API. | **KeyValueStore-APIOperations**<br />Same as the corresponding item in your CloudFront bill. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

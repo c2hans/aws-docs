@@ -196,3 +196,7 @@ The following are the general steps to manage your Lightsail container service a
 1. (Optional) Scale the capacity of your container service vertically, by increasing its power specification, and horizontally, by increasing its scale specification. For more information, see [Change the capacity of your Lightsail container services](amazon-lightsail-changing-container-service-capacity.md).
 
 1. Delete your container service if you're not using it to avoid incurring monthly charges. For more information, see [Delete Lightsail container services](amazon-lightsail-deleting-container-services.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

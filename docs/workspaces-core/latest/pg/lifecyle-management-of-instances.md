@@ -45,3 +45,7 @@ source_url: https://docs.aws.amazon.com/workspaces-core/latest/pg/lifecyle-manag
   + [DeleteWorkspaceImage](https://docs.aws.amazon.com/workspaces/latest/api/API_DeleteWorkspaceImage.html)
   + [DeregisterWorkspaceDirectory](https://docs.aws.amazon.com/workspaces/latest/api/API_DeregisterWorkspaceDirectory.html)
   + [TerminateWorkspaces](https://docs.aws.amazon.com/workspaces/latest/api/API_TerminateWorkspaces.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-core` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

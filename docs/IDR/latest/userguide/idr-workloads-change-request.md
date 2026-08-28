@@ -43,3 +43,7 @@ Failure to add email IDs in the **Additional contacts - optional** section might
 
    The following is an example of the **Reply** page showing where you can enter additional emails.
 ![The Reply page where you can add additional emails.](http://docs.aws.amazon.com/IDR/latest/userguide/images/workload-change-request4.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

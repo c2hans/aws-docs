@@ -221,3 +221,7 @@ while (1)
 The `iot_wifi.c` implementation needs to implement the functions defined in `iot_wifi.h`. At the very least, the implementation needs to return `eWiFiNotSupported` for any non-essential or unsupported functions.
 
 For more information about porting the Wi-Fi library, see [Porting the Wi-Fi Library](https://docs.aws.amazon.com/freertos/latest/portingguide/afr-porting-wifi.html) in the FreeRTOS Porting Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

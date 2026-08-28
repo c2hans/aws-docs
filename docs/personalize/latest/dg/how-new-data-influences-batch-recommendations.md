@@ -32,3 +32,7 @@ If you use a USER\_PERSONALIZATION or PERSONALIZED\_RANKING recipe, Amazon Perso
 <a name="batch-new-items"></a>
 
 With User-Personalization-v2 and User-Personalization, when you create a batch inference job and specify the latest fully trained solution version for your solution, Amazon Personalize automatically updates the solution version to include new items in recommendations with exploration. If you don't specify the latest solution version, no update occurs. For any other recipe, you must create a new solution version for new items to be featured in batch recommendations. For more information about exploration, see [Exploration](use-case-recipe-features.md#about-exploration).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

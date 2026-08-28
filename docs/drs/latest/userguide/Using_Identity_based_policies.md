@@ -13,3 +13,7 @@ By default, IAM users and roles don't have permission to create or modify AWS El
 + [Console Full Access Policy - AWSElasticDisasterRecoveryConsoleFullAccess\_v2](customer_managed_policies_drs_full_access_v2.md)
 + [Launch Actions Policy - AWSElasticDisasterRecoveryLaunchActionsPolicy](customer_managed_policies_launch_actions.md)
 + [Console Read-Only Access Policy - AWSElasticDisasterRecoveryReadOnlyAccess](customer_managed_policies_drs_readonly.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

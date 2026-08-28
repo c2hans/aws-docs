@@ -70,3 +70,7 @@ For more information, see Using materialized views with AWS Glue and Using mater
 + [AWS Glue Data Catalog best practices](best-practice-catalog.md)
 + [Monitoring Data Catalog usage metrics in Amazon CloudWatch](data-catalog-cloudwatch-metrics.md)
 + [AWS Glue Schema registry](schema-registry.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

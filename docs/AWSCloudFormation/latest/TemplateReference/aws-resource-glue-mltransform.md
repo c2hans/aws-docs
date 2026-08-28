@@ -193,3 +193,7 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 
 `TransformId`  <a name="TransformId-fn::getatt"></a>
 The unique transform ID that is generated for the machine learning transform. The ID is guaranteed to be unique and does not change.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

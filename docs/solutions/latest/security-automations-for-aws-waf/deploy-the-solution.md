@@ -31,3 +31,7 @@ If you have previously deployed this solution, see [Update the solution](update-
 
  [Step 3. Configure web access logging](step-3.-configure-web-access-logging.md)
 + Turn on web access logging for your CloudFront web distribution(s) or ALB(s), and send log files to the appropriate Amazon S3 bucket. Save logs in a folder matching the user-defined prefix. If no user-defined prefix is used, save logs to AWSLogs (default log prefix `AWSLogs/`). See the **Application Access Log Bucket Prefix** parameter in [Step 1. Launch the stack](step-1.-launch-the-stack.md) for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Automations for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

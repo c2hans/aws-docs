@@ -25,3 +25,7 @@ Route 53 supports CloudWatch alarms with the following features:
 
 **Amazon Application Recovery Controller (ARC) routing controller**
 Health checks in ARC are associated with routing controls, which are simple on/off switches. You configure each routing control health check with a failover DNS record. Then you can simply update your routing controls in ARC to reroute traffic and fail over your applications, for example, across Availability Zones or AWS-Regions. For more information, see [Routing control in ARC](https://docs.aws.amazon.com/r53recovery/latest/dg/routing-control.html) in the ARC developer guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,3 +27,7 @@ To realize the benefits of new AWS services and features, you must execute the r
 +  [AWS News Blog](https://aws.amazon.com/blogs/aws/)
 +  [Types of Cloud Computing](https://aws.amazon.com/types-of-cloud-computing/)
 +  [What's New with AWS](https://aws.amazon.com/new/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -93,3 +93,7 @@ There is no additional cost for the usage of the VPC endpoint.
    If there is an issue while restricting the in-bound permissions to your VPC (or instance), you can the in-bound 443 port from any IP address `(0.0.0.0/0)`. However, GuardDuty recommends using IP addresses that matches the CIDR block for your VPC. For more information, see [VPC CIDR blocks](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-cidr-blocks.html) in the *Amazon VPC User Guide*.
 
 After you have followed the steps, see [Validating VPC endpoint configuration](validate-vpc-endpoint-config-runtime-monitoring.md) to ensure that the VPC endpoint was set up correctly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

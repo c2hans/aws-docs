@@ -120,3 +120,7 @@ You ***can't*** use RCPs to restrict the following:
 + RCPs do not apply to [AWS managed keys for AWS Key Management Service](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-managed-cmk). AWS managed keys are created, managed, and used on your behalf by an AWS service. You cannot change or manage their permissions.
 + RCPs do not impact following permissions:
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_rcps.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

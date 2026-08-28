@@ -172,3 +172,7 @@ After training, the model artifacts are stored in the S3 bucket you specified (`
 + **Locating artifacts**: Check the S3 bucket (`s3://my-bucket/model-artifacts`) to confirm the trained model files are present.
 + **Recording the path**: Note the exact S3 path (e.g., `s3://my-bucket/model-artifacts/test-pytorch-job/model.tar.gz`) for use in the inference setup.
 + **Referencing in deployment**: Provide this S3 path when configuring the custom endpoint to ensure the correct model is loaded.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

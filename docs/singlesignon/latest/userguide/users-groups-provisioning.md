@@ -32,3 +32,7 @@ Deprovisioning is the process of removing users and group information from IAM I
 If you’re using Active Directory or an external identity provider with IAM Identity Center, you should remove users and groups from these identity sources rather than IAM Identity Center. Deleting IAM Identity Center users and groups will not completely remove them if your identity source is Active Directory or an external identity provider.
 
 If you need to deprovision IAM Identity Center users or groups, you should first [remove any assignments of permission sets](howtoremovepermissionset.md) or applications to the users or groups you want to deprovision. Otherwise, you’ll have unassigned permission sets and application assignments in your IAM Identity Center.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

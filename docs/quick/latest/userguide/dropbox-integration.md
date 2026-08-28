@@ -213,3 +213,7 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **Invalid client credentials (Custom OAuth app)** – Verify that the Client ID and Client secret match the app key and app secret values in your Dropbox app. If you regenerated the app secret, update the value in Amazon Quick.
 + **API Key rejected** – Verify that your access token is active. Tokens can expire or be revoked in the Dropbox App Console.
 + **Insufficient permissions** – Verify that your Dropbox app has the required permission scopes for the actions that you want to use.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

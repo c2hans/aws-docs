@@ -81,3 +81,7 @@ Not all components have the same business and technical requirements. Consider t
   + License terms that are bound by hardware configurations can have an impact on service agility with financial consequences to scaling the government service as demand evolves.
   +  Creating a preferential technology ecosystem that inhibits the government’s use of other technologies can limit the ability to innovate and scale.
   + **Improvement plan** – Organizations will have their own capabilities for this domain.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

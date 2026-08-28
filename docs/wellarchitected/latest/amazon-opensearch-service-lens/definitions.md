@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 +  **Query:** A request to search, filter, or aggregate data from an OpenSearch index. Amazon OpenSearch Service accommodates various query types, including term, match, range, and Boolean queries.
 +  **Aggregation:** A process of grouping and summarizing data based on specified criteria. OpenSearch supports various aggregation types, such as bucket aggregations, metric aggregations, and pipeline aggregations.
 +  **Snapshot:** Refers to a point-in-time copy of the data in one or more indices. It is essentially a backup mechanism that captures the state of your data at a specific moment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

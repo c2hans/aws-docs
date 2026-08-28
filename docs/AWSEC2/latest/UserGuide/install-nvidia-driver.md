@@ -87,3 +87,7 @@ Use one of the following options to get the NVIDIA drivers required for your GPU
 1. [Install NVIDIA GRID drivers (G7e, G6, Gr6, G6e, G6f, Gr6f, G5, G4dn, and G3 instances)](nvidia-GRID-driver.md)
 
 1. [Install NVIDIA gaming drivers (G7e, G6, G6e, G5, and G4dn instances)](nvidia-gaming-driver.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

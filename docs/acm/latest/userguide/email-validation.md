@@ -48,3 +48,7 @@ ACM certificates are valid for 198 days. Renewing a certificate requires action 
 Each validation email contains a token that you can use to approve a certificate request. However, because the validation email required for the approval process can be blocked by spam filters or lost in transit, the token automatically expires after 72 hours. If you do not receive the original email or the token has expired, you can request that the email be resent. For information about how to resend a validation email, see [Resend validation email](email-renewal-validation.md#request-domain-validation-email-for-renewal)
 
 For persistent problems with email validation, see the [Troubleshoot email validation problems](troubleshooting-email-validation.md) section in [Troubleshoot issues with AWS Certificate Manager](troubleshooting.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

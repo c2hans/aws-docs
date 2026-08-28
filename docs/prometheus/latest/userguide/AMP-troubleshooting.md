@@ -154,3 +154,7 @@ To reduce evaluation time, use one or more of the following approaches:
 + Avoid regex matchers on high-cardinality labels (labels with many unique values).
 
 For more information, see [Query your Prometheus metrics](AMP-query.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Service for Prometheus. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prometheus` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

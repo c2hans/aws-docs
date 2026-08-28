@@ -62,3 +62,7 @@ Aurora MySQL version 2 uses different storage engines for on-disk internal tempo
 
   You can change this behavior on the writer instance by modifying the value for the DB parameter `internal_tmp_disk_storage_engine`. For more information, see [Instance-level parameters](AuroraMySQL.Reference.ParameterGroups.md#AuroraMySQL.Reference.Parameters.Instance).
 + On reader instances, on-disk temporary tables use the MyISAM storage engine, which uses local storage. That's because read-only instances can't store any data on the Aurora cluster volume.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

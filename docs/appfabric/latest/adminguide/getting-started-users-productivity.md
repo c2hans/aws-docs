@@ -155,3 +155,7 @@ The following fields are required to create an Smartsheet task:
 After the task is created, you'll see a confirmation that the task has been created in Smartsheet. Additionally, you'll see a link to view the task in Smartsheet. You can use this link to quickly navigate to the application to view the task in the created Smartsheet sheet. All future Smartsheet tasks will be populated in this sheet. If the sheet is deleted, AppFabric will create a new one.
 
 ![Task created confirmation showing task details including title, assignee, due date, and description.](http://docs.aws.amazon.com/appfabric/latest/adminguide/images/fabric-19.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

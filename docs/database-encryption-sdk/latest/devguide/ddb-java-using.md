@@ -225,3 +225,7 @@ If signature validation fails, the decrypt operation fails and returns the follo
 | software.amazon.cryptography.dbencryptionsdk.structuredencryption.model.StructuredEncryptionException: No recipient tag matched. |
 
 If you receive the above error message, and believe that the item you are trying to decrypt includes a set that was signed using version 3.0.0 or 3.1.0, see the [DecryptWithPermute](https://github.com/aws/aws-database-encryption-sdk-dynamodb-java/tree/v3.1.1/DecryptWithPermute) directory of the aws-database-encryption-sdk-dynamodb-java repository on GitHub for details on how to successfully validate the set.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

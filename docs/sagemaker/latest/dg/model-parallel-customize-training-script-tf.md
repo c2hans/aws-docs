@@ -309,3 +309,7 @@ for epoch in range(5):
 The following TensorFlow features are not supported by the library:
 + `tf.GradientTape()` is currently not supported. You can use `Optimizer.get_gradients()` or `Optimizer.compute_gradients()` instead to compute gradients.
 + The `tf.train.Checkpoint.restore()` API is currently not supported. For checkpointing, use `smp.CheckpointManager` instead, which provides the same API and functionality. Note that checkpoint restores with `smp.CheckpointManager` should take place after the first step.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

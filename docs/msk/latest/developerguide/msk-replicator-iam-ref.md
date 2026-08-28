@@ -22,4 +22,8 @@ The following table summarizes the IAM actions that the API caller (the IAM prin
 | `iam:CreateServiceLinkedRole` | Grants permission to create the `AWSServiceRoleForKafka*` service-linked role on first use. |
 | `ec2:DescribeSubnets`, `ec2:DescribeSecurityGroups`, `ec2:DescribeVpcs` | Grants permission to validate the VPC configuration provided to the replicator. |
 
-For service execution role permissions, see the [`AWSMSKReplicatorExecutionRole`](https://docs.aws.amazon.com/msk/latest/developerguide/security-iam-awsmanpol-AWSMSKReplicatorExecutionRole.html) managed policy. For SASL/SCRAM and customer managed key scenarios, see [Additional SER permissions for SASL/SCRAM, mTLS, and customer managed keys](msk-replicator-ser-additional-perms.md).
+For service execution role permissions, see the [`AWSMSKReplicatorExecutionRole`](https://docs.aws.amazon.com/msk/latest/developerguide/security-iam-awsmanpol-AWSMSKReplicatorExecutionRole.html) managed policy. For SASL/SCRAM, mTLS, SASL/OAUTHBEARER (OAuth), and customer managed key scenarios, see [Additional SER permissions for SASL/SCRAM, mTLS, SASL/OAUTHBEARER, and customer managed keys](msk-replicator-ser-additional-perms.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

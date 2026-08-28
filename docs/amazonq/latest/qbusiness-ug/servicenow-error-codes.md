@@ -64,3 +64,7 @@ The following table provides information about error codes you may see for the S
 | SRN-5153 | servicenowInstanceVersion should not be empty. | Provide a valid servicenowInstanceVersion. |
 | SRN-5154 | The ServiceNow host name is invalid. | The ServiceNow host name should follow the format: example.service-now.com |
 | SRN-5501 | continuableInternalServerError. | Try again later. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

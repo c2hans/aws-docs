@@ -34,3 +34,7 @@ The following sections introduce the core email sending principals you must pay 
 <a name="compliance-considerations"></a>
 + Be aware of the email marketing and anti-spam laws and regulations in the countries and regions you send email to. You're responsible for ensuring that the email you send complies with these laws. This guide doesn't cover these laws, so it's important that you research them. For a list of laws, see [Email Spam Legislation by Country](https://en.wikipedia.org/wiki/Email_spam_legislation_by_country) on Wikipedia.
 + Always consult an attorney to obtain legal advice.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

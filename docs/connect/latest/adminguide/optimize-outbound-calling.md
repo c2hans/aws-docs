@@ -88,3 +88,7 @@ It's inevitable that you'll end up with a list of unanswered calls that you were
 Data-driven decisions and continuous improvement are key to delivering business value through your outbound calling strategy. Treat each operational change as an experiment, making sure you can measure and compare its effectiveness.
 
 We recommend creating custom reports that track both customer reachability and specific business outcomes. You can combine Contact Trace Record data with your own metrics using the data lake in Connect Customer or AWS services like Quick. After you establish a baseline, you can evaluate changes and optimize for success.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

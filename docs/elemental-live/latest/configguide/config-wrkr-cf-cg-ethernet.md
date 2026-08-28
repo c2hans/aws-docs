@@ -25,3 +25,7 @@ You must not modify Ethernet devices via the web interface. Instead, use the CLI
 
 **Warning**
 The **Devices** page on the Elemental Live web interface includes the pencil icon that lets you edit the Ethernet device. However, you must not use the web interface to modify devices because you will break the configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

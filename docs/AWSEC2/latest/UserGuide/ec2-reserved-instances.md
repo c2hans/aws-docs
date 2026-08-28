@@ -84,3 +84,7 @@ For more information, see [Types of Reserved Instances (offering classes)](reser
 After you purchase a Reserved Instance, you cannot cancel your purchase. However, you might be able to [modify](ri-modifying.md), [exchange](ri-convertible-exchange.md), or [sell](ri-market-general.md) your Reserved Instance if your needs change.
 
 For more information, see the [Amazon EC2 Reserved Instances Pricing page](https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

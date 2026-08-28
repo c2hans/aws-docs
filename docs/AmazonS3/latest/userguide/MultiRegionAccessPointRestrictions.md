@@ -121,3 +121,7 @@ Your Multi-Region Access Point also supports buckets in the following opt-in AWS
 There are no additional costs for enabling an opt-in Region. However, creating or using a resource in a Multi-Region Access Point results in billing charges.
 
 An opt-in Region must be manually enabled when configuring or creating your Multi-Region Access Point. For more information about opt-in Region behaviors for Multi-Region Access Points, see [Configuring Multi-Region Access Point opt-in Regions](ConfiguringMrapOptInRegions.md). For information about how to enable an opt-in Region in your AWS account, see [Enable or disable a Region for standalone accounts](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html#manage-acct-regions-enable-standalone) in the *AWS Account Management Reference Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

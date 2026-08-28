@@ -22,3 +22,7 @@ A folder structure that organizes your project files, such as Lambda function co
 + [Import an existing project folder in the Infrastructure Composer console](using-composer-project-import-folder.md)
 + [Import an existing project template in the Infrastructure Composer console](using-composer-project-import-template.md)
 + [Save an existing project template in the Infrastructure Composer console](using-composer-project-save-template.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

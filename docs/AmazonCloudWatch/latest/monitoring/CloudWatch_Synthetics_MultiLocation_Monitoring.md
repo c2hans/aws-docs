@@ -40,3 +40,7 @@ For a complete list of metrics published by canaries, see [CloudWatch metrics pu
 When you select a run on the canary detail page, you can view the associated logs for that run regardless of which location executed it. This allows you to debug failures from any location directly in the primary Region.
 
 To centralize canary logs from all Regions into a single CloudWatch Logs view, you can configure cross-Region log centralization. For more information, see [Using log centralization with multilocation canaries](CloudWatch_Synthetics_MultiLocation_Log_Centralization.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

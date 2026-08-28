@@ -104,3 +104,7 @@ Valid values are `sequential` and `random`.
 Amazon ML uses the **randomSeed** to split the data. The default seed for the API is an empty string. To specify a seed for the random split strategy, pass in a string. For more information about random seeds, see [Randomly Splitting Your Data](splitting-types.md#random-splitting) in the *Amazon Machine Learning Developer Guide*.
 
 For sample code that demonstrates how to use cross-validation with Amazon ML, go to [Github Machine Learning Samples](https://github.com/awslabs/machine-learning-samples).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

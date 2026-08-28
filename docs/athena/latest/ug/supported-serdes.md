@@ -22,3 +22,7 @@ The following table lists the data formats supported in Athena and their corresp
 | Logstash logs | A format for storing logs in Logstash. | Use the [Grok SerDe](grok-serde.md). |
 | ORC (Optimized Row Columnar) | A format for optimized columnar storage of Hive data. | Use the [ORC SerDe](orc-serde.md) and ZLIB compression. |
 | TSV (Tab-Separated Values) | For data in TSV, each line represents a data record, and each record consists of one or more fields, separated by tabs. | Use the [Lazy Simple SerDe for CSV, TSV, and custom-delimited files](lazy-simple-serde.md) and specify the separator character as `FIELDS TERMINATED BY '\t'`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

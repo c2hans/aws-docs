@@ -109,3 +109,7 @@ When using manual CTs, AMS recommends that you use the ASAP **Scheduling** optio
 To find the security groups attached to a stack or instance, use the EC2 console. After finding the stack or instance, you can see all security groups attached to it.
 
 For ways to find security groups at the command line and filter the output, see [`describe-security-groups`](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-security-groups.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

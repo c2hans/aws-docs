@@ -181,3 +181,7 @@ The code for this pattern is available in the GitHub [management-framework-sampl
 + [Importing bots in Amazon Lex V2](https://docs.aws.amazon.com/lexv2/latest/dg/import.html)
 + [Start a pipeline in CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-about-starting.html)
 + [Working with Amazon Lex V2 bots](https://docs.aws.amazon.com/lexv2/latest/dg/building-bots.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

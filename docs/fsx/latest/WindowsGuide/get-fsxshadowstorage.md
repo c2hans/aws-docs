@@ -26,3 +26,7 @@ When the `UsedSpace` amount reaches the maximum shadow copy storage amount confi
 
 **Note**
 When shadow copies are automatically or manually created, they use the amount of shadow copy storage that you configured as a storage limit. Shadow copies grow in size over time and utilize the available storage space shown by the CloudWatch `FreeStorageCapacity` metric up to the maximum shadow copy storage amount configured (`MaxSpace`).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

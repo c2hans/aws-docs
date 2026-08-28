@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/nhs-cloud-security-gu
 
 **Note**
 Not all of the controls described in this section are necessarily required for a given system being deployed to AWS; those required depend on the system’s Risk Classification. Refer to *Appendix A: Detailed Advice and Guidance* of the Good Practice Guide for authoritative information on which controls to apply.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

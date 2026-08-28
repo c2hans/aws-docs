@@ -43,3 +43,7 @@ You cannot restore from previously replicated backups in the destination AWS Reg
 <a name="AutomatedXREGBackups.Troubleshooting.Monitoring"></a>
 
 You can monitor the status of your cross-Region automated backups using the Amazon RDS console, AWS CLI, or RDS API. For more information, see [Finding information about replicated backups for Amazon RDS](AutomatedBackups.Replicating.Describe.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

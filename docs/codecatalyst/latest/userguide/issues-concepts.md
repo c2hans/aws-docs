@@ -77,3 +77,7 @@ Issues in your CodeCatalyst project are displayed in *views*. Views can either b
 + The **Active issues** view is a board view of all issues that are currently being worked on. Any issue with a status in the **Not started**, **Started**, or **Completed** status categories will show up in this view.
 + The **All issues** view is a grid view that shows all the issues in the project, both *drafts* and *active issues*.
 + The **Archived** view shows all archived issues.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

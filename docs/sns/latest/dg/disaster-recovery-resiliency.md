@@ -10,3 +10,7 @@ Resilience in Amazon SNS is ensured through leveraging the AWS global infrastruc
 Additionally, subscriptions to Amazon SNS topics can be configured with delivery retries and dead-letter queues, enabling automatic handling of transient failures and ensuring messages reliably reach their intended destinations.
 
 Amazon SNS also supports message filtering and message attributes, which lets you tailor resilience strategies to their specific use cases, enhancing the overall robustness of your applications.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,3 +43,7 @@ The way litmus paper determines acidity is by measuring a substance's pH level. 
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cicd-litmus/litmus-test-for-cicd-pipelines.html)
 
 If you scored below 8, we recommend that you set a goal to move gradually toward the next level. When that goal is achieved, then product stakeholders should assess if and when a new goal should be set. The intention of this exercise is not necessarily to advocate for a change to your pipeline, but rather to bring awareness of what a fully CI/CD deployment process looks like and where your pipelines currently sit on that spectrum.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

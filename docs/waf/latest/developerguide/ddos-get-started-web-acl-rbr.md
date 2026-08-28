@@ -46,3 +46,7 @@ Automatic application layer DDoS mitigation works only with protection packs (we
    For more information about Shield Advanced automatic application layer DDoS mitigation, including caveats and best practices for using this feature, see [Automating application layer DDoS mitigation with Shield Advanced](ddos-automatic-app-layer-response.md).
 
 1. Choose **Next**. The console wizard advances to the health-based detection page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

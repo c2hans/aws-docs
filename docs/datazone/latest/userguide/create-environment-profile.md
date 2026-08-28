@@ -47,3 +47,7 @@ In Amazon DataZone, an environment proﬁle is a template that you can use to cr
      + In the **Databases** section, either choose **Any database** to enable publishing from any database within the AWS account and region where the environment is created or choose Only default database to enable publishing from only the default publishing database that is created with the environment.
 
 1. Choose **Create environment profile**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

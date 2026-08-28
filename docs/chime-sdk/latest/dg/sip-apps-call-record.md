@@ -24,3 +24,7 @@ Recordings made using this feature may be subject to laws or regulations regardi
 <a name="call-billing"></a>
 
 Amazon Chime SDK bills you per minute for the time that call recording is enabled for a call leg, and that time includes all pauses. You are billed for the call recording usage once the call recording is delivered to your Amazon S3 bucket.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

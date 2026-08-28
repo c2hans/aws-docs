@@ -95,3 +95,7 @@ By default, S3 on Outposts doesn't replicate the following:
 The following S3 Replication features are currently not supported by S3 on Outposts:
 + S3 Replication Time Control (S3 RTC). S3 RTC is not supported because the object traffic in S3 Replication on Outposts travels over your on-premises network (the local gateway). For more information about local gateways, see [ Working with the local gateway](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-local-gateways.html#working-with-lgw) in the *AWS Outposts User Guide*.
 + S3 Replication for Batch Operations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

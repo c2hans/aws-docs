@@ -74,3 +74,7 @@ For more information about the IP addresses used by Amazon AppFlow, see [AWS IP 
 | Total flows | Each supported Region: 1,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/appflow/quotas/L-A847D5B6)  | The maximum number of flows that you can have in this account in the current Region. |
 
 For more information, see [Quotas for Amazon AppFlow](https://docs.aws.amazon.com/appflow/latest/userguide/service-quotas.html) in the *Amazon AppFlow User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

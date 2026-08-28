@@ -20,3 +20,7 @@ The following table contains all of the alerts related to ARP. For more informat
 | `arw.snapshot.created` | This message occurs when a new ARP snapshot is created in an anti-ransomware enabled volume. Additionally, it provides information about the reason why the snapshot was created. |
 | `arw.volume.state` | This message occurs when the anti-ransomware state of a volume is changed. |
 | `arw.vserver.state` | This message occurs when the anti-ransomware state of an SVM is changed. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

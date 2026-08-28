@@ -268,3 +268,7 @@ For additional URL signature examples, see the following topics:
 + [Create a URL signature using Java](CFPrivateDistJavaDevelopment.md)
 
 Instead of using signed URLs to create the signature, you can use signed cookies. For more information, see [Create signed cookies using PHP](signed-cookies-PHP.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

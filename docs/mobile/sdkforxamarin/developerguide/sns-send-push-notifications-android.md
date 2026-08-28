@@ -228,3 +228,7 @@ Below is the service that receives the push notification from the BroadcastRecei
 1. Select your platform application, select an endpoint, and click **Publish to endpoint**.
 
 1. Type in a text message in the text box and click **Publish message** to publish a message.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mobile SDK for Xamarin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mobile` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

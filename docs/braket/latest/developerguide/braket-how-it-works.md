@@ -33,3 +33,7 @@ After processing your quantum task, Amazon Braket returns the results to an Amaz
 <a name="braket-3rd-party-processing"></a>
 
 Quantum tasks that are submitted to a QPU device are processed on quantum computers located in facilities operated by third party providers. To learn more about security and third-party processing in Amazon Braket, see [Security of Amazon Braket Hardware Providers](third-party-security.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

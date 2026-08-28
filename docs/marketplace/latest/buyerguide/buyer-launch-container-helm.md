@@ -41,3 +41,7 @@ You must have `AWSServiceRoleForAWSLicenseManagerRole` in your account to use **
    1. Choose **Usage instructions** for documentation from the seller about how to configure and use the product after launching.
 
    1. *Optional - *Use the provided commands in **[Optional] Download artifacts** to download the product's container images and Helm charts locally.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

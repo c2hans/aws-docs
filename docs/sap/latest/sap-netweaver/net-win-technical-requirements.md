@@ -44,3 +44,7 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/net-win-technic
    1. Install and configure the AWS Command Line Interface (AWS CLI).
 
 For additional details on these prerequisites, see [Prerequisites for Getting Started](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/walkthrough01-prereqs.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

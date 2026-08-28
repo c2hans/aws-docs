@@ -78,3 +78,7 @@ The architect uses the database wrapper service pattern to start controlling acc
 ![Database access after implementing the wrapper service.](http://docs.aws.amazon.com/prescriptive-guidance/latest/database-decomposition/images/guide-img/6bdbec4e-98b8-4cd1-adda-f196258cf753/images/f88c0429-18a2-41f6-a897-f1a330fc1443.png)
 
 Gradually, AnyCompany Books can move all of the other services to use their respective wrapper services. The end goal is for each service have its own database, without going through the wrapper service. But the database wrapper service is an important and necessary intermediate step. Subsequent sections of this guide help you decompose further.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

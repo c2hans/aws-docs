@@ -30,3 +30,7 @@ The repository logo is only publicly visible in the Amazon ECR Public Gallery fo
 1. For **Usage**, enter details about how to use the images in the repository. This field is publicly visible on the Amazon ECR Public Gallery on the repository detail page. This text must be in the GitHub Flavored Markdown format. For examples, see [Specifying the repository catalog data in Amazon ECR public](public-repository-catalog-data.md).
 
 1. Choose **Save** to update the repository settings.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

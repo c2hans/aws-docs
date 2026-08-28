@@ -134,3 +134,7 @@ You can generate a copy of a complete or incomplete analysis that is formatted f
 **Note**
 *Local print controls* refers to the user interface provided by your web browser and device.
 *Printing destinations* are those configured for, and accessible from, your device.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

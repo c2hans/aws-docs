@@ -126,3 +126,7 @@ Removing a member in your account deletes all associated resources, such as peer
   ```
   aws managedblockchain delete-member --network-id {{n-MWY63ZJZU5HGNCMBQER7IN6OIU}} --member-id {{m-J46DNSFRTVCCLONS9DT5TTLS2A}}
   ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

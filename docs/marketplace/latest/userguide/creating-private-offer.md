@@ -267,3 +267,7 @@ Use the following process to cancel the private offer.
 Cancelling the offer will modify the offer expiration date, so the offer will display as expired for buyers who were extended this offer.
 
 1. Choose **Action** and then choose **Cancel offer**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ Store SRT passphrases in Secrets Manager as plaintext (for example, `secretpassw
 Ensure your passphrase is between 10 and 79 characters.
 
 1. Create or identify an input security group that includes the IP address of the upstream system. For information about creating input security groups, see [Creating an input security group](create-input-security-groups.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

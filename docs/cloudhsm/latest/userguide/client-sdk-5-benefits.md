@@ -26,3 +26,7 @@ Client SDK 5.14\+ supports connections to dual-stack HSMs using IPv6.
 
 **Additional features and mechanisms**
 Client SDK 5 includes additional features and mechanisms that are not available in Client SDK 3, and Client SDK 5 will continue to add more mechanisms in the future.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

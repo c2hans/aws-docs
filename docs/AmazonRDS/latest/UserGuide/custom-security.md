@@ -33,3 +33,7 @@ When RDS Custom creates the EC2 instance that underlies a DB instance, it create
 <a name="custom-security.ssl"></a>
 
 RDS Custom DB instances don't support managed SSL certificates. If you want to deploy SSL, you can self-manage SSL certificates in your own wallet and create an SSL listener to secure the connections between the client database or for database replication. For more information, see [Configuring Transport Layer Security Authentication](https://docs.oracle.com/en/database/oracle/oracle-database/19/dbseg/configuring-secure-sockets-layer-authentication.html#GUID-6AD89576-526F-4D6B-A539-ADF4B840819F) in the Oracle Database documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

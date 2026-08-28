@@ -13,3 +13,7 @@ Customization techniques define *how* your model learns from data. Each techniqu
 + **[Continuous customization](customizing-models-continuous.md)** (Continuous Customization) — Chain multiple techniques sequentially (for example, SFT → DPO → RLVR). Requires [LoRA](customizing-models-lora.md) training type.
 
 Each technique can be combined with either [LoRA](customizing-models-lora.md) or [FFT](customizing-models-fft.md) training type. See [Training types](customizing-models-training-types.md) for details on choosing between them.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
  As data is produced, determine if it is reusable. Can it be used for future clinical exploration? Can it be used for improving manufacturing processes in the future? Identify those data sets and prepare them to be reusable. Export the data into Amazon S3 in a format that contains the metadata and is offered through AWS Data Exchange, such as Iceberg or Parquet.
 
  Once a study has concluded and the papers have been delivered or a manufacturing line has been shut down, there are regulations in different countries mandating retention of the related data. To adhere to these regulations, you can store the artifacts in Amazon Glacier. After the data is safely archived, remove the entire environment that once collected and housed the data. This verifies that no one can later access PHI inappropriately. By building out the AWS environment using AWS CloudFormation stacks, you can delete entire environments (stacks) in a straightforward and efficient way.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

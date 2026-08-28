@@ -320,3 +320,7 @@ Now that you've created and tested a simple durable function using the console, 
 + Follow best practices for writing deterministic code, managing checkpoint sizes, and optimizing costs. See [Best practices](durable-best-practices.md).
 + Learn how to test durable functions locally and in the cloud. See [Testing durable functions](durable-testing.md).
 + Compare durable functions with Step Functions to understand when each approach is most effective. See [Durable functions or Step Functions](durable-step-functions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

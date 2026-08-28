@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
  Anomalies can drive up cost. Set up AWS Cost Anomaly Detection to detect and alert on anomalous spend patterns in your deployed AWS services. Cost Anomaly Detection automatically determines thresholds each day by adjusting for organic growth and seasonal trends (like usage increases from Sunday to Monday or increased spend at the beginning of the month) through machine learning models. Financial systems usually integrate with several other third-party systems, and Cost Anomaly Detection can integrate with these systems as well.
 
  Extend Cost Anomaly Detection with custom metrics such as `token_in`, `token_out`, and `embedding_ops`, and route alerts to product or data owners when cost spikes correspond to new prompt deployments, unexpected retrieval-augmented generation (RAG) expansion, or fine-tuning jobs running out of schedule. Combine these alerts with CloudWatch dashboards to correlate generative AI usage trends with cost anomalies in near real-time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

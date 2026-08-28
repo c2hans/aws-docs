@@ -19,3 +19,7 @@ Not what you're looking for?
 + [Step 4: Deploy your application revision](tutorials-on-premises-instance-4-deploy-sample-revision.md)
 + [Step 5: Verify your deployment](tutorials-on-premises-instance-5-verify-deployment.md)
 + [Step 6: Clean up resources](tutorials-on-premises-instance-6-clean-up-resources.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

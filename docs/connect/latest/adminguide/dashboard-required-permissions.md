@@ -64,3 +64,7 @@ The following image shows that you only have access to the **Dashboards** tab on
 + **Analytics and Optimization - Custom metrics**:
   + This permission enables users to view, create and manage custom metrics.
   + In [Connect Customer](enable-nextgeneration-amazonconnect.md) instances, you will have the ability to view, create, and manage custom metrics with custom filters and functions in addition to custom customer service level metric calculations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

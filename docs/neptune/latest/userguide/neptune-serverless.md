@@ -51,3 +51,7 @@ You can also [use Neptune auto-scaling with Neptune Serverless](manage-console-a
 + **Not available in early engine versions**   –   Neptune Serverless is only available in engine releases 1.2.0.1 or later.
 + **Not compatible with the Neptune lookup cache**   –   The [lookup cache](feature-overview-lookup-cache.md) does not work with serverless DB instances.
 + **Maximum memory in a serverless instance is 256 GB**   –   Setting `MaxCapacity` to 128 NCUs (the highest supported setting) allows a Neptune Serverless instance to scale to 256 GB of memory, which is equivalent to that of an `R6g.8XL` provisioned instance type.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

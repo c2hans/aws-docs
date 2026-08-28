@@ -97,3 +97,7 @@ Let's say that in the **Task assignment** section, you choose to allow agents to
 If no quick connects exist, then the message **No data** appears when you choose the **Assign to** dropdown menu, as shown in the following image.
 
 ![The CCP, create task page, Assign to blank, No data message at the bottom of page.](http://docs.aws.amazon.com/connect/latest/adminguide/images/task-templates-no-data.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

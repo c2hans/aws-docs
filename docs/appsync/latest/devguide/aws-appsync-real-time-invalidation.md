@@ -161,3 +161,7 @@ When AWS AppSync invalidates a connection, the client receives a message confirm
 As with enhanced subscription filters, you can use the [`context` variable](https://docs.aws.amazon.com/appsync/latest/devguide/resolver-context-reference-js.html) in the subscription invalidation filter extension to access certain data.
 
 For example, it's possible to configure an email address as the invalidation payload in the mutation, then match it against the email attribute or claim from a subscribed user authorized with Amazon Cognito user pools or OpenID Connect. The invalidation filter defined in the `extensions.setSubscriptionInvalidationFilter()` subscription invalidator checks if the email address set by the mutation's `extensions.invalidateSubscriptions()` payload matches the email address retrieved from the user's JWT token in `context.identity.claims.email`, initiating the invalidation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

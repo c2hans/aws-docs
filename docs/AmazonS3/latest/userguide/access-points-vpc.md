@@ -100,3 +100,7 @@ For instructions on creating and restricting an access point attached to an FSx 
 You can create an access point that is attached it to an FSx for ONTAP volume using the Amazon FSx console, AWS CLI, or API. Once attached, you can use the S3 object APIs to access your file data from a specified VPC.
 
 For instructions on creating and restricting an access point attached to an FSx for ONTAP volume see, the [*FSx for ONTAP User Guide*](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/access-points-for-fsxn-vpc.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

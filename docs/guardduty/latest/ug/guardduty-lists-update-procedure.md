@@ -145,3 +145,7 @@ To begin with the following procedures, you need the ID, such as `trustedEntityS
    The `expected-bucket-owner` parameter is optional. When you don't specify the account ID that owns the S3 bucket, GuardDuty doesn't perform any validation. When you specify the account ID for the `expected-bucket-owner` parameter, GuardDuty validates that this AWS account ID owns the S3 bucket specified in the `--location` parameter. If GuardDuty finds that this S3 bucket doesn't belong to the specified account ID, you will get an error at the time of activating this list.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -643,3 +643,7 @@ The `rds_task_status` stored procedure returns the following columns.
 | KMS\_master\_key\_arn | The ARN for the KMS key used for encryption (for backup) and decryption (for restore). |
 | filepath | Not applicable to native backup and restore tasks. |
 | overwrite\_file | Not applicable to native backup and restore tasks. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

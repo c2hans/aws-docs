@@ -140,3 +140,7 @@ The following limitations apply to SQL Server Developer Edition on Amazon RDS:
 + Amazon RDS doesn't support Multi-AZ deployments or read replicas for this edition.
 + You must provide and manage your own SQL Server installation media.
 + You can't share custom engine versions for SQL Server Developer Edition (`sqlserver-dev-ee` and `sqlserver-dev-se`) across Regions or accounts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

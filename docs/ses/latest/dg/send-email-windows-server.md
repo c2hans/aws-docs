@@ -69,3 +69,7 @@ Your SMTP credentials are not the same as your AWS access key ID and secret acce
    1. On the Server Manager Dashboard, right-click **SMTP Virtual Server \#1** and then restart the service to pick up the new configuration.
 
    1. Send an email through this server. You can examine the message headers to confirm that it was delivered through Amazon SES.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

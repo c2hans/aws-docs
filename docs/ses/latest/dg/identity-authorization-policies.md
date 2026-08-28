@@ -14,3 +14,7 @@ Through the use of these authorization polices, you can maintain control over yo
 + [Creating an identity authorization policy in Amazon SES](identity-authorization-policies-creating.md)
 + [Identity policy examples in Amazon SES](identity-authorization-policy-examples.md)
 + [Managing your identity authorization policies in Amazon SES](managing-policies.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

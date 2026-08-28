@@ -14,3 +14,7 @@ When you start a lookalike segment generation job, Clean Rooms ML reads the seed
 If your seed data comes from an SQL query, the output of that query is only stored in the service for the duration of the job. The results of the query are encrypted at rest and in transit.
 
 If you want to remove your lookalike model or lookalike segment generation job data, use the API to delete it. Clean Rooms ML asynchronously deletes all data associated with the model or job. Once this process is complete, Clean Rooms ML deletes the metadata for the model or job and it is no longer visible in the API. Clean Rooms ML retains deleted data for 3 days for disaster recovery prevention. Once the job or model is no longer visible in the API and 3 days have passed, all data associated with the model or job has been permanently deleted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

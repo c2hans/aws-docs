@@ -39,3 +39,7 @@ AWS Systems Manager Incident Manager is no longer open to new customers. Existin
 | [Console engagement acknowledgement](#doc-history) | You can now acknowledge engagements directly from the Incident Manager console. | August 5, 2021 |
 | [Properties tab](#doc-history) | Incident Manager introduced a properties tab to the incident details page, providing more information about the incidents, the parent OpsItem, and the related post-incident analysis. | August 3, 2021 |
 | [Incident Manager launch](#doc-history) | Incident Manager is an incident management console designed to help users mitigate and recover from incidents affecting their AWS hosted applications. | May 10, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

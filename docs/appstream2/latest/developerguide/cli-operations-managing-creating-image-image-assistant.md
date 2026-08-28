@@ -249,3 +249,7 @@ Performs validation without creating the image. Use this command to identify whe
 | 1 |  {"status": 1, "message": "An image with the given name already exists"}  |  An image with the specified name already exists in the Amazon Web Services account.  |
 | 1 |  {"status": 1, "message": "Invalid value (tags)"}  |  The specified tags are not valid.  |
 | 255 |  {"status": 255, "message": <error message>}  |  An unexpected error occurred. Try the request again. If the error persists, contact AWS Support for assistance. For more information, see [AWS Support Center](https://console.aws.amazon.com/support/home#/).  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

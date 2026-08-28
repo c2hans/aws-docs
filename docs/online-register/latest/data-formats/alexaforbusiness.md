@@ -42,3 +42,7 @@ Alexa for Business provides the following APIs for data retrieval.
 | <a name="a4b-SearchSkillGroups"></a>[SearchSkillGroups](https://docs.aws.amazon.com/a4b/latest/APIReference/API_SearchSkillGroups.html) | Search for skill groups | List |
 | <a name="a4b-SearchUsers"></a>[SearchUsers](https://docs.aws.amazon.com/a4b/latest/APIReference/API_SearchUsers.html) | Search for users | List |
 | <a name="a4b-StartSmartHomeApplianceDiscovery"></a>[StartSmartHomeApplianceDiscovery](https://docs.aws.amazon.com/a4b/latest/APIReference/API_StartSmartHomeApplianceDiscovery.html) | Initiate the discovery of any smart home appliances associated with the room | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

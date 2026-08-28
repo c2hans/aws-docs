@@ -21,3 +21,7 @@ During installation, you might get an error message that the version of HyperPod
 <a name="sagemaker-eks-operator-troubleshooting-task-missing-permissions"></a>
 
  While you're setting up the training operator or running jobs, you might receive errors that you're not authorized to run certain operations, such as `DescribeClusterNode`. To resolve these errors, make sure you correctly set up IAM permissions while you're [setting up the Amazon EKS Pod Identity Agent](https://docs.aws.amazon.com/sagemaker/latest/dg/sagemaker-eks-operator-install.html#sagemaker-eks-operator-install-pod-identity).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,3 +50,7 @@ To find and connect to a RDS for MariaDB DB instance, see the following topics.
 + [Connecting from the MySQL command-line client (unencrypted) for RDS for MariaDB](USER_ConnectToMariaDBInstance.CLI.md)
 + [Connecting to RDS for MariaDB with the AWS JDBC Driver and AWS Python Driver;](MariaDB.Connecting.Drivers.md)
 + [Troubleshooting connections to your MariaDB DB instance](USER_ConnectToMariaDBInstance.Troubleshooting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

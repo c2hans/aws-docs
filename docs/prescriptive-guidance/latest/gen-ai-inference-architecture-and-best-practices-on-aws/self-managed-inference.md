@@ -51,3 +51,7 @@ The environment provides complete customization of system configuration. Organiz
 <a name="supported-clients-and-protocols.becab830-47e9-5fcf-9b6e-1a5adf2591e8"></a>
 
 Inference API servers can be exposed through Application Load Balancers, Network Load Balancers, or Kubernetes ingress controllers or envoy proxies. All approaches support any protocol or client compatible with the deployed inference engine or container. This flexibility enables integration with diverse application architectures and client requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -87,3 +87,7 @@ This paper also provides context around how Amazon Web Service (AWS) Cloud analy
  Also, there is an increasing need for organizations to use several tools on this data to create modern data application, whereas traditional data warehouse patterns mostly supported [SQL](https://en.wikipedia.org/wiki/SQL) and BI workloads.
 
  In recent years, with the advent of cloud and big data tools, organizations are making a shift towards a modern data architecture pattern.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,3 +51,7 @@ Some users don't need the full checklist:
 + To onboard someone who watches and manages work without submitting it, such as a coordinator or supervisor, create a sign-in, grant viewer or manager access, and share the monitor URL. The web monitor requires no installation. See [Share the Deadline Cloud monitor URL](share-monitor-url.md).
 + To onboard a pipeline developer who builds job bundles, submitters, and integrations, provide AWS credentials and the CLI. See [Getting started with Deadline Cloud resources](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/getting-started.html) in the *Deadline Cloud Developer Guide*.
 + If you're building rendering into a product for your own end users, see [Deadline Cloud Architecture Guidance](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/architecture-guidance.html) in the *Deadline Cloud Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

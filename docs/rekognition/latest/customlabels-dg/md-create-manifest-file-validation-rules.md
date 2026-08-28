@@ -41,3 +41,7 @@ Overlaps are (common labels between test and train)/(train labels).
 | Mix of label vs. object examples for same label in a dataset. Classification and detection for the same class in a dataset object.  |  | No error or warning |
 | Overlapping assets between test and train  | There should not be an overlap between test and training datasets.  |  |
 | Images in a dataset must be from same bucket  | Error if the objects are in a different bucket | Error |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

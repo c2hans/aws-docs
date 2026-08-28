@@ -98,3 +98,7 @@ You can configure and customize the CDK Toolkit further for your needs:
 For more information on the CDK Toolkit Library `npm` package, see the [ReadMe](https://www.npmjs.com/package/@aws-cdk/toolkit-lib) in the *@aws-cdk/toolkit-lib* `npm` package.
 
 For API reference information, see the [CDK Toolkit Library API reference](https://docs.aws.amazon.com/cdk/api/toolkit-lib/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

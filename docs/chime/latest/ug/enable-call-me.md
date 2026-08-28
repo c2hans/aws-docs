@@ -21,3 +21,7 @@ You system administrator must enable **Call me**. If you can't complete the foll
 1. Under **Call me**, choose a country from the **Call my phone number to dial in** list.
 
 1. In the box below the list, enter the desired phone number.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

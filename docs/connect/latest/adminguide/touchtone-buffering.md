@@ -189,3 +189,7 @@ Keep skip/interrupt disabled for:
 + Store buffer contents before Amazon Lex interactions if you need the values later.
 + Clear the buffer explicitly when starting new input sequences.
 + Use stored buffer values for session management or context passing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,3 +27,7 @@ A project is a collection of resources associated with a single industrial asset
 ![alt_text](http://docs.aws.amazon.com/lookout-for-equipment/latest/ug/images/L4E-project-start-tags.png)
 
 Now that you've created your project, you'll need to [check the formatting of your data](formatting-data.md). Then you'll need to organize your files before you upload them to Amazon S3.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

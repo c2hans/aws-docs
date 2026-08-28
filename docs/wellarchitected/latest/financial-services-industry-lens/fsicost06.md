@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
  You may have workload usage cycles for week-end or month-end, and quarter-end have more usage of resources. In some cases, there could be higher usage due to events like the start of trading hours, holidays shopping, and so on. Monitoring usage and corresponding events are helpful to optimize cost and architecture. You can choose to shutdown unused instances, for example Amazon EC2 servers for development, or QA on Friday, and bring them back up on Monday.
 
  Scale generative AI inference endpoints and vector search infrastructure dynamically with observed diurnal patterns. Pre-warm minimal capacity only for peak trading or batch-report windows, then decay to zero or low-cost tiers during off-hours. Automate these adjustments via scheduled scaling policies or event-driven Lambda functions to minimize idle inference costs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

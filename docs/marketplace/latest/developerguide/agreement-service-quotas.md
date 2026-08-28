@@ -47,3 +47,7 @@ Your AWS account has the following quotas related to the AWS Marketplace Agreeme
 | The maximum agreement value (in USD) that you can specify for general proposal. | $1M (or equivalent in requested currency) |
 | The maximum number of free trials allowed per resource per account. | 1 |
 | The maximum number of active agreements that you can create per resource per account. | 100 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,3 +84,7 @@ The following table shows the actions that the `MigrationSpaceAdmin`, `Migration
 | Create team membership | Yes | No | No |
 | View team memberships | Yes | Yes | Yes |
 | Delete team membership | Yes | You can only remove yourself. You cannot delete the membership of someone else. | You can only remove yourself. You cannot delete the membership of someone else. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,7 +17,36 @@ You can provide a chat experience to your customers by using one of the followin
   Connect Customer supports the following templates: a list picker and a time picker. For more information, see [Add Amazon Lex interactive messages for customers in chat](interactive-messages.md).
 +  [Enable Apple Messages for Business with Connect Customer](apple-messages-for-business.md)
 +  [Connect Customer Service API Documentation](https://docs.aws.amazon.com/connect/latest/APIReference), especially the [StartChatContact](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartChatContact.html) API.
+
+  The following example uses the AWS CLI to start a chat contact. The response returns the `ContactId`, `ParticipantId`, and `ParticipantToken`. Your back end uses these values to connect the participant by calling the Connect Customer Participant Service [CreateParticipantConnection](https://docs.aws.amazon.com/connect-participant/latest/APIReference/API_CreateParticipantConnection.html) API.
+**Call StartChatContact from a trusted back end**
+The `StartChatContact` API uses AWS Signature Version 4 signing. Call it from your trusted back end (for example, an Lambda function), not directly from a customer's browser or mobile app. The following command is useful for testing and administration. For production chat integrations, use the Connect Customer ChatJS library. You can also use the `startChatContactAPI` back-end example in the [Connect Customer Chat SDK and Sample Implementations](https://github.com/amazon-connect/amazon-connect-chat-ui-examples/) on the GitHub website.
+
+  In the following command, replace `{{instance-id}}`, `{{contact-flow-id}}`, and `{{aws-region}}` with your own values:
+
+  ```
+  aws connect start-chat-contact \
+      --instance-id "{{instance-id}}" \
+      --contact-flow-id "{{contact-flow-id}}" \
+      --participant-details DisplayName="{{Jane Doe}}" \
+      --initial-message ContentType="text/plain",Content="{{Hello, I need help}}" \
+      --region "{{aws-region}}"
+  ```
+
+  The command returns the following response:
+
+  ```
+  {
+      "ContactId": "00000000-0000-0000-0000-000000000000",
+      "ParticipantId": "00000000-0000-0000-0000-000000000000",
+      "ParticipantToken": "a-long-participant-token"
+  }
+  ```
 +  [Connect Customer Participant Service API](https://docs.aws.amazon.com/connect-participant/latest/APIReference/Welcome.html).
 +  [ Connect Customer Chat SDK and Sample Implementations](https://github.com/amazon-connect/amazon-connect-chat-ui-examples/)
 +  [Connect Customer Streams](https://github.com/aws/amazon-connect-streams). Use to integrate your existing apps with Connect Customer. You can embed the Contact Control Panel (CCP) components into your app.
 +  [Enable message streaming for AI-powered chat](message-streaming-ai-chat.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

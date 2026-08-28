@@ -13,3 +13,7 @@ You can port your existing phone numbers to your Connect Customer contact center
 + [Things to know about Thailand number porting](porting-numbers-th.md)
 + [Porting your phone numbers](porting-your-phone-numbers.md)
 + [After the porting process completes](porting-troubleshoot.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

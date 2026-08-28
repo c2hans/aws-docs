@@ -67,3 +67,7 @@ The table provides the following information for each factor:
 | Popularity | The popularity factor represents how popular an item is based on user interactions. Popularity is computed by normalizing the number of interactions each item received. To use the popularity factor, you must include an Interactions dataset when creating your dataset group. Higher values of popularity factor prioritize items with more customer interactions among semantically similar recommendations.<br />Default value: `0.0`<br />Range: ` [0.0, 1.0]`<br />Value type: Double |
 
 Note that freshness and popularity scores are computed at training and incremental updates will not update popularity and freshness scores. For the most recent popularity and freshness factors to influence the ranking of recommended items, either use automatic retraining or manually retrain the solution and update the campaign with the new solution version.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

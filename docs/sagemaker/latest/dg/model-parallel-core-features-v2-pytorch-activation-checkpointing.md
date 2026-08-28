@@ -48,3 +48,7 @@ apply_activation_checkpointing(model, check_fn=is_odd_transformer_layer)
 ```
 
 Alternatively, PyTorch also has the `torch.utils.checkpoint` module for checkpointing, which is used by a subset of Hugging Face Transformers models. This module also works with SMP v2. However, it requires you to have access to the model definition for adding the checkpoint wrapper. Therefore, we recommend you to use the `apply_activation_checkpointing` method.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

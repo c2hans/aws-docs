@@ -26,3 +26,7 @@ AWS KMS support for a VPC endpoint includes the following.
 + [Connect to an AWS KMS VPC endpoint](vpce-connect.md)
 + [Use VPC endpoints to control access to AWS KMS resources](vpce-policy-condition.md)
 + [Logging AWS KMS requests that use a VPC endpoint](vpce-logging.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

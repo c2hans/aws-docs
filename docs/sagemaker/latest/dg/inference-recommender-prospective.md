@@ -41,3 +41,7 @@ If you decide that you want to benchmark a sample payload and run a full inferen
 Inference Recommender starts the job, and you can view the job and its results from the **Inference recommender** list page in the SageMaker AI console.
 
 If you want to run an advanced job and perform custom load tests, or if you want to configure additional settings and parameters for your job, see [Run a custom load test](inference-recommender-load-test.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

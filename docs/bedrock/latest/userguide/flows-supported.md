@@ -35,3 +35,7 @@ The models that are supported in Amazon Bedrock Flows depend on the nodes that y
 + Knowledge base node – For a list of supported models, see [Supported models and Regions for Amazon Bedrock knowledge bases](knowledge-base-supported.md).
 
 For a table of which models are supported in which Regions, see [Supported foundation models in Amazon Bedrock](models-supported.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

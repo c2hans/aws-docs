@@ -26,3 +26,7 @@ After you've generated the starter pipeline configuration and committed it to yo
 The ordering of these steps, and details of each step, vary based on your CI/CD system:
 + If you are using AWS CodePipeline, see [Generating starter pipeline for AWS CodePipeline in AWS SAM](serverless-generating-example-ci-cd-codepipeline.md).
 + If you are using Jenkins, GitLab CI/CD, GitHub Actions, or Bitbucket Pipelines, see [Use AWS SAM to generate starter pipelines for Jenkins, GitLab CI/CD, GitHub Actions, Bitbucket Pipelines](serverless-generating-example-ci-cd-others.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

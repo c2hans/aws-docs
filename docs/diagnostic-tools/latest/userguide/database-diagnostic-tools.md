@@ -39,3 +39,7 @@ The suite of diagnostic tools for Amazon Redshift offers a comprehensive set of 
 + Amazon RDS Instances with Metrics
 + Amazon RDS Maintenance Details
 + Amazon RDS Simple Charts
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Diagnostic Tools. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query diagnostic-tools` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

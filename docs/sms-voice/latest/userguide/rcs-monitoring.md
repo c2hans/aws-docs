@@ -112,3 +112,7 @@ Create CloudWatch alarms to alert you when RCS messaging patterns change unexpec
 + **High fallback rate** — Set an alarm when `RCS.MessagesFallenBackToSMS` exceeds a threshold percentage of `RCS.MessagesSent`. A sudden increase in fallback may indicate an issue with your AWS RCS Agent or a carrier outage.
 + **Delivery rate drop** — Set an alarm when the ratio of `RCS.MessagesDelivered` to `RCS.MessagesSent` drops below your expected delivery rate.
 + **Inbound message volume** — If you use two-way RCS messaging, set an alarm on `NumberOfMessagesReceived` (filtered by `OriginationIdentityType = RCS_AGENT`) to detect unexpected changes in inbound message volume.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

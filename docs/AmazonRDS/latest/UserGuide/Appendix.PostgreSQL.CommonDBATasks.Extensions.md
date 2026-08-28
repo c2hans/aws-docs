@@ -32,3 +32,7 @@ To learn more about the `rds_superuser` role, see [Understanding PostgreSQL role
 + [Upgrading and using the PLV8 extension](PostgreSQL.Concepts.General.UpgradingPLv8.md)
 + [Using PL/Rust to write PostgreSQL functions in the Rust language](PostgreSQL.Concepts.General.Using.PL_Rust.md)
 + [Managing spatial data with the PostGIS extension](Appendix.PostgreSQL.CommonDBATasks.PostGIS.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

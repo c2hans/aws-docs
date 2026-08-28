@@ -17,3 +17,7 @@ This table describes the available settings to configure Support integration sys
 | --- | --- |
 | Name of the Systems Manager category to assign to Automation Documents from AWS Systems Manager | The setting allows the Automation Documents to be created under the specified category.<br />By default, the category sets to AWS Systems Manager Automation. |
 | Name of a workflow that starts the execution of an Automation Document from AWS Systems Manager | The setting allows you to use custom workflow with the AWS Systems Manager Automation integration. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

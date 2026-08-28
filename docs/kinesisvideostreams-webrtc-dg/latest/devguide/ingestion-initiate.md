@@ -265,3 +265,7 @@ This operation isn't currently supported in the Kinesis Video Streams AWS Manage
    When you select **Start Master** or **Start Viewer**, after the application connects to signaling via `ConnectAsMaster` or `ConnectAsViewer`, a button will appear to have the storage session initiate the WebRTC connection with the peer instead of the application calling the API immediately after connecting to signaling.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams-webrtc-dg` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

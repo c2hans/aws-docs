@@ -23,3 +23,7 @@ To run AWS IoT SiteWise Edge on Siemens Industrial Edge, you need the following:
   + The latest version of Docker Compose.
   + Docker Engine version 18.091 or higher.
 + Required domain access. For more information, see [AWS IoT SiteWise endpoints](endpoints-and-quotas.md#endpoints).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

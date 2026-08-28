@@ -31,3 +31,7 @@ Organizations always look for better ways to manage and provision their AWS infr
 + The ability to create new accounts with required infrastructure within a tight schedule.
 + Access to an inventory of the infrastructure that you have provisioned, and the ability to update or remove infrastructure components.
 + Approaches and technologies that make the provisioning and maintenance process easier, faster, and more secure and reliable.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

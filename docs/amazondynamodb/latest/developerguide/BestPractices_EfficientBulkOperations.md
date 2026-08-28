@@ -36,3 +36,7 @@ Bulk updates can have significant cost implications especially if you use the on
 Alternatively, you can determine amount of throughput needed for the process based on the expected duration of the update process and the average item size. The blog references shared with each pattern provide details on the strategy, implementation and limitations of using the pattern. For more information, see [Cost-effective bulk processing with Amazon DynamoDB](https://aws.amazon.com/blogs/database/cost-effective-bulk-processing-with-amazon-dynamodb/).
 
 There are multiple approaches to perform bulk-updates against a live DynamoDB table. The suitable approach depends on factors such as ACID and/or idempotency requirements, number of items to be updated and familiarity with APIs. It is important to consider the cost versus time trade-off, most approaches discussed above provide an option to rate-limit the throughput used by the bulk update job.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

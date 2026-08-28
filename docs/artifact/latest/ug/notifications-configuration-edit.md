@@ -21,3 +21,7 @@ After you [create a configuration](notifications-configuration-create.md) for AW
 1. Edit any of the configuration selections and fields. When you're done, choose **Save changes**.
 
    If you've added new email addresses as notification recipients, then AWS User Notifications sends a verification email those email addresses. To verify the email address, in the verification email, the recipient must choose **Verify email**. Only verified email addresses will receive AWS Artifact notifications.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Artifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query artifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

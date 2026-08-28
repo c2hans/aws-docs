@@ -1088,3 +1088,7 @@ For more information about how to implement canary deployments for Amazon ECS us
 
 **Note**
 For more examples and walkthroughs for App Mesh, see the [App Mesh examples repository](https://github.com/aws/aws-app-mesh-examples).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Mesh. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app-mesh` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

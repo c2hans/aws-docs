@@ -335,3 +335,7 @@ AcmAsyncClient
 | com.amazonaws.services.workspaces.AmazonWorkspacesClient | software.amazon.awssdk.services.workspaces.WorkSpacesClient |
 | com.amazonaws.services.xray.AWSXRayAsyncClient | software.amazon.awssdk.services.xray.XRayAsyncClient |
 | com.amazonaws.services.xray.AWSXRayClient | software.amazon.awssdk.services.xray.XRayClient |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

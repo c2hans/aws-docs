@@ -14,3 +14,7 @@ The following table shows the supported repeated expansions for rules. For more 
 | *repeat="m-"*<br />repeat="3-" | The contained expansion is repeated "m" times or more (inclusive). "m" must be "0" or a postive integer. For example, "3-" declares that the contained expansion can occur three, four, five, or more times. | Yes |
 | *repeat="0-1"* | The contained expansion is optional. | Yes |
 | <item repeat="2-4" repeat-prob="0.8"> |   | No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

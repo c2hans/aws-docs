@@ -12,27 +12,33 @@ This section provides a reference implementation architecture diagram for the co
 
 Deploying this solution with the default parameters builds the following environment in your AWS account.
 
-![high level.drawio](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/high-level.drawio.png)
+![Innovation Sandbox on AWS high-level architecture diagram](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/diagrams/high-level.drawio.png)
 
 **Innovation Sandbox on AWS architecture**
 The high-level process flow for the solution components deployed with the AWS CloudFormation templates is as follows:
 
-1. Users access the solution (SAML2.0 application) using [AWS IAM Identity Center](https://aws.amazon.com/iam/identity-center/) authentication. You can configure IAM Identity Center to use its own internal user store, or integrate it with an external identity provider such as Okta or Microsoft Entra ID.
+1. Users sign in to the solution through an [Amazon Cognito](https://aws.amazon.com/cognito/) user pool that federates to [AWS IAM Identity Center](https://aws.amazon.com/iam/identity-center/) using SAML 2.0. You can configure IAM Identity Center to use its built-in user store or integrate it with an external identity provider such as Okta or Microsoft Entra ID.
 
-1. The web User Interface (UI) is hosted in an [Amazon CloudFront](https://aws.amazon.com/cloudfront/) distribution. It uses an [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) bucket to host and serve the web frontend, including the HTML pages, CSS stylesheets, and the JavaScript code.
+1. The web User Interface (UI) is hosted in an [Amazon CloudFront](https://aws.amazon.com/cloudfront/) distribution backed by an [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) bucket that serves the web frontend, including the HTML pages, CSS stylesheets, and JavaScript code. Amazon Cognito provides the authentication layer, issuing tokens that the web UI uses to obtain temporary IAM credentials.
 
-1. The web UI calls [Amazon API Gateway](https://aws.amazon.com/api-gateway/) REST API resources (resource, method, model) to fetch and mutate the solution data. [AWS Lambda](https://aws.amazon.com/lambda/) functions authorize the requests using role-based access, based on identities assigned by solution administrators to user groups in IAM Identity Center. [AWS WAF](https://aws.amazon.com/waf/) protects the Amazon API Gateway from common exploits and bots that can affect availability, compromise security, or consume excessive resources.
+1. The web UI signs each API request with AWS Signature Version 4 (SigV4) using credentials from the Amazon Cognito identity pool, then calls [Amazon API Gateway](https://aws.amazon.com/api-gateway/) REST API resources. [AWS WAF](https://aws.amazon.com/waf/) protects the API Gateway from common exploits, and API Gateway authorizes requests natively using IAM authorization. The backend [AWS Lambda](https://aws.amazon.com/lambda/) functions enforce role-based access based on identities assigned to user groups in IAM Identity Center.
 
-1. AWS Lambda functions handle the API requests by reading, and writing status and configuration data to an [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) table. These Lambda functions also fetch global configurations from [AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html) to manage solution parameters including lease preferences, account cleanup setting, customer worded "terms of service", and auth configurations.
+1. AWS Lambda functions handle API requests by reading and writing status and configuration data to [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) tables. These tables store the solution’s global settings (lease preferences, account cleanup settings, email notification settings, maintenance mode) and all operational data (leases, accounts, templates, principals).
 
-1. AWS Lambda functions manage the lifecycle of accounts using the [AWS Organizations](https://aws.amazon.com/organizations/) API, and move them between organizational units (OUs) based on the account status. [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) attached to OUs prevent sensitive, expensive, or difficult to clean up services and resources from being used by sandbox users.
+1. AWS Lambda functions manage the lifecycle of accounts using the [AWS Organizations](https://aws.amazon.com/organizations/) API, moving them between organizational units (OUs) based on account status. [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) attached to OUs restrict which services and resources sandbox users can access.
 
-1. The solution’s backend includes an event-based architecture built on [Amazon EventBridge](https://aws.amazon.com/eventbridge/) for routing events. The solution monitors sandbox account leases using AWS Lambda for breaches in configured lease budget and duration thresholds and creates events that produce email notifications via [Amazon Simple Email Service](https://aws.amazon.com/ses/) and invoke Lambda functions that are responsible for the management of lease and account lifecycle.
+1. The solution’s backend includes an event-driven architecture built on [Amazon EventBridge](https://aws.amazon.com/eventbridge/) for routing domain events. The solution monitors sandbox account leases for breaches in configured budget and duration thresholds, and publishes events that trigger email notifications via [Amazon Simple Email Service](https://aws.amazon.com/ses/) and invoke Lambda functions responsible for lease and account lifecycle management.
 
-1. Accounts going through the onboarding process or leases being terminated will invoke the account cleanup [AWS Step Functions](https://aws.amazon.com/step-functions/), which is responsible for recycling the accounts back into the account pool, ready for reuse.
+1.  [AWS Step Functions](https://aws.amazon.com/step-functions/) orchestrates complex, multi-step workflows including blueprint deployment and assignment processing. Step Functions coordinates the sequencing, retries, and error handling for these long-running operations.
 
-1. AWS Step Functions run an [AWS CodeBuild](https://aws.amazon.com/codebuild/) project responible for deleting resources in the account. AWS Lambda functions monitor active account leases and issues actions such as moving an AWS account between Organizational Units (OUs), attaching/detaching an IAM Identity Center permission set to the account giving user access, or initiating the cleanup of an AWS account which deletes all user-created resources using [AWS Nuke](https://aws-nuke.ekristen.dev/).
-   + If the clean up process is successful, the account is moved to the **available** account pool, or
-   + If some resources cannot be deleted, the account is moved to a **quarantine** state, for manual investigation and remediation.
+1. A durable AWS Lambda function orchestrates account cleanup by invoking an [AWS CodeBuild](https://aws.amazon.com/codebuild/) project that runs [AWS Nuke](https://aws-nuke.ekristen.dev/) to delete all user-created resources in sandbox accounts. After cleanup completes, the solution validates that the account is clean and either returns it to the available pool or moves it to quarantine for manual investigation.
 
-1. Users access assigned sandbox accounts via IAM Identity Center access portal console, or programmtically using credentials. The solution provides a link in the web UI to directly access the AWS account with Single Sign-On (SSO).
+1.  [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) stores all compute logs with a 90-day retention. Logs are automatically archived to Amazon S3 for long-term retention following a multi-tier strategy (S3 Standard for one year, then S3 Glacier for additional years).
+
+1.  [AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html) stores the account cleanup configuration, including the AWS Nuke resource filter that AWS CodeBuild reads at the start of each cleanup run, and the post-cleanup validation exclusion list. Administrators manage these configurations through the AWS AppConfig console.
+
+1. Users access assigned sandbox accounts via the IAM Identity Center access portal console, or programmatically using credentials. The solution provides a direct link in the web UI to access the AWS account with Single Sign-On (SSO).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

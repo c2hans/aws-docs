@@ -42,3 +42,7 @@ Follow these steps on each node.
    The `skip--all` option means that the script enables HTTPS but doesn't change the configuration in any other way.
 **Note**
 If you run this command when HTTPS is already enabled, nothing changes in the configuration. HTTPS is still enabled.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

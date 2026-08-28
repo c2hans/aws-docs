@@ -42,3 +42,7 @@ DLAMIs can be used as Base Image during Image Recipe creation.
      + Deep Learning Base AMI with Single CUDA Ubuntu 22-04
      + Deep Learning ARM64 Base AMI with Single CUDA Ubuntu 22-04
 ![Image Builder recipe creation for Ubuntu](http://docs.aws.amazon.com/dlami/latest/devguide/images/image-recipe-creation-ul22.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

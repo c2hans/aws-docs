@@ -27,3 +27,7 @@ In the current release of Amazon SageMaker Unified Studio, the following default
 | Tooling | Creates resources for the project, including IAM user roles, security groups, and Amazon SageMaker unified domains. | IAM user roles, Amazon SageMaker unified domains, security groups |
 | Workflows | Provides an AWS CloudFormation template to create the MWAA environment for Airflow based Workflows | Enables project workflows on MWAA |
 | Quicksight | Enables visualization of data within an Amazon SageMaker Unified Studio project using Amazon QuickSight. | For each project with the QuickSight blueprint, Amazon SageMaker Unified Studio creates a restricted folder in Amazon QuickSight. Additionally, it creates Amazon Athena and Amazon Redshift data sources in the restricted folder depending on other blueprints in the project. For more information, see [Amazon QuickSight in Amazon SageMaker Unified Studio](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/quicksight-integration.html). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

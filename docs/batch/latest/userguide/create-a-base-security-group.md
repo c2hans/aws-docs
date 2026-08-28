@@ -43,3 +43,7 @@ For security reasons, we don't recommend that you allow SSH access from all IP a
 To create a security group using the command line, see [ >create-security-group](https://docs.aws.amazon.com/cli/latest/reference/ec2/create-security-group.html) (AWS CLI)
 
 For more information about security groups, see [Work with security groups](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html#working-with-security-groups).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

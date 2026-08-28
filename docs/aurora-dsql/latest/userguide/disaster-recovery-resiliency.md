@@ -51,3 +51,7 @@ See [Action targets](https://docs.aws.amazon.com/fis/latest/userguide/action-seq
 For information about Amazon Aurora DSQL actions available in AWS FIS, see [Aurora DSQL actions reference](https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html#dsql-actions-reference) in the *AWS FIS User Guide*.
 
 To get started running fault injection experiments, see [Planning your AWS FIS experiments](https://docs.aws.amazon.com/fis/latest/userguide/getting-started-planning.html) in the *AWS FIS User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

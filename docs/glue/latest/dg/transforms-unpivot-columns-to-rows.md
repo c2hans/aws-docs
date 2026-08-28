@@ -47,3 +47,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-unpivot-column
 
 1. On the **Transform** tab, enter the new columns to be created to hold the names and values of the columns chosen to unpivot.
 ![The screenshot shows the Transform tab for the Unpivot Columns To Rows transform.](http://docs.aws.amazon.com/glue/latest/dg/images/transforms-unpivot-columns-to-rows-transform-tab.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

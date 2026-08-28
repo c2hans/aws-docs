@@ -255,3 +255,7 @@ Ensure your instance provides all required fields with correct types.
 +  [Configure kro permissions](kro-permissions.md) - Configure RBAC for platform and application teams
 +  [kro concepts](kro-concepts.md) - Understand kro concepts and resource lifecycle
 +  [Troubleshooting EKS Capabilities](capabilities-troubleshooting.md) - General capability troubleshooting guidance
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

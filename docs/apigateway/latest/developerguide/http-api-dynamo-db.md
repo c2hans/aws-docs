@@ -443,3 +443,7 @@ To prevent unnecessary costs, delete the resources that you created as part of t
 You can automate the creation and cleanup of AWS resources by using CloudFormation or AWS SAM. For an example AWS SAM template for this tutorial, see [`template.yaml`](samples/http-dynamo-tutorial.zip).
 
 For example CloudFormation templates, see [example CloudFormation templates](https://github.com/awsdocs/amazon-api-gateway-developer-guide/tree/main/cloudformation-templates).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

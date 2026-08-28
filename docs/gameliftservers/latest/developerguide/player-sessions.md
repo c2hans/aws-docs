@@ -31,3 +31,7 @@ The following player session data is collected for each game session:
 + **Ending time** – The time the player disconnected from the game session.
 + **Connection data** – IP address, DNS name and port that the player used to connect to the game session.
 + **Player data** – Information about the player that was provided during player session creation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

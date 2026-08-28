@@ -18,3 +18,7 @@ All Lambda event source types share the same [CreateEventSourceMapping](https://
 | MaximumBatchingWindowInSeconds | N | 0 | Batching window is not supported for FIFO queues |
 | ProvisionedPollerConfig | N | N/A | Configures the minimum (2-200) and maximum (2-2000) number of dedicated event pollers for the SQS event source mapping. Each poller can handle up to 1 MB/sec of throughput and 10 concurrent invokes. |
 | ScalingConfig | N | N/A  | [Configuring maximum concurrency for Amazon SQS event sources](services-sqs-scaling.md#events-sqs-max-concurrency) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

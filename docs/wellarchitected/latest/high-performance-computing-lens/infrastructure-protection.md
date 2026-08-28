@@ -26,3 +26,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
  According to [SEC05-BP02](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/sec_network_protection_layered.html), you control traffic flow within your network layers. You permit only the network flows necessary for the components of your workloads to communicate. When running tightly coupled HPC workloads with Elastic Fabric Adapter (EFA), EFA requires being a member of a security group allowing all inbound and outbound traffic to and from itself. Each cluster member will allow all traffic between members when processing the same EFA-based job.
 
  Clusters are commonly used with multiple running jobs and a single security group would be used for all EFA traffic without separation by job. If your environment requires further security separation by job, consider an alternative design, such as multiple clusters or a more advanced security group mapping, rather than having one security group for all traffic between members.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

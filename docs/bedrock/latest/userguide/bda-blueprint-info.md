@@ -47,3 +47,7 @@ A group is a structure that's used to organize several results into a single loc
 
 **Custom types**
 You can create a custom type while editing a blueprint in the Blueprint Playground. Any field can be a custom type. This type has a unique name, and prompts the creation of the fields that make up the detection. An example would be creating a custom type called Address, and including in it the fields “zip\_code”, “city\_name”, “street\_name”, and “state”. Then, while processing a document, you could use the custom type in a field “company\_address”. That field then returns all of the information, grouped in rows beneath the custom type. You can have up to 30 custom type fields per blueprint.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

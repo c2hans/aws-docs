@@ -42,3 +42,7 @@ Your guardrail and provisioned throughput must be in the same Region as the depl
 LLMs often accept a wide range of parameters specific to its implementation. Model providers often provide documentation outlining the set of supported parameters and their uses.
 
 The solution passes model parameters directly through to the underlying model so it is important to ensure parameters are set correctly. Refer to the model provider’s documentation for the latest information on supported parameters.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Generative AI Application Builder on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

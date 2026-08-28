@@ -60,3 +60,7 @@ The following table describes the different formats for the URL in a dynamic inp
 | <protocol>/$urlPath$ | URL has only the protocol in the absolute portion | s3ssl://$urlPath$ | amzn-s3-demo-bucket/my-movie.ts |
 | <protocol and path>/$urlPath$ | URL has the protocol and path in the absolute portion | mediastoressl://f31z.data.mediastore.us-west-2.amazonaws.com/movies/$urlPath$  | my-movie.ts |
 | $urlPath$ | URL has only the variable portion | $urlPath$ | s3ssl://amzn-s3-demo-bucket/my-movie.ts |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

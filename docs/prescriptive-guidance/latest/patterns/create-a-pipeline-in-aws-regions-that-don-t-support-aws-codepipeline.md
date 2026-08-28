@@ -95,3 +95,7 @@ The code for this pattern is available in the GitHub [CodePipeline Unsupported R
 + [Getting started](https://docs.aws.amazon.com/cdk/v2/guide/getting_started.html#getting_started_prerequisites) (AWS CDK documentation)
 + [Introduction to the AWS Cloud Development Kit (AWS CDK)](https://catalog.us-east-1.prod.workshops.aws/workshops/5962a836-b214-4fbf-9462-fedba7edcc9b/en-US) (AWS Workshop Studio)
 + [AWS CDK Workshop](https://cdkworkshop.com/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

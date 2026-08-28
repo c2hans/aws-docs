@@ -349,3 +349,7 @@ Version 4.*x* replaces AWS SDK for Java 1.x with AWS SDK for Java 2.x in the emb
 If your code uses only version 3.*x* APIs and does not use the embedded version 2.*x* code, no changes are required.
 
 If your code uses the embedded version 2.*x* code, you must update your code to use the AWS SDK for Java 2.*x* symbols. For examples of the updated symbols, see [Java examples](java.md). The embedded version 2.*x* code no longer includes `DynamoDBMapper`, as AWS SDK for Java 2.*x* does not support `DynamoDBMapper`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

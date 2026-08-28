@@ -227,3 +227,7 @@ You can configure MFA in the Amazon Cognito console or with the [SetUserPoolMfaC
    If you use email messages as a second factor and you haven't configured an originating identity to use with Amazon Simple Email Service (Amazon SES) for email messages, create one in the console. You must choose the **Send email with SES** option. In the **Authentication methods** menu for your user pool, locate **Email** and choose **Edit**. Select a **FROM email address** from the available verified identities in the list. If you choose a verified domain, for example `example.com`, you must also configure a **FROM sender name** in the verified domain, for example `admin-noreply@example.com`.
 
 1. Choose **Save changes**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

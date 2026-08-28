@@ -26,3 +26,7 @@ In the following situations, you could end up with no metrics or fewer rows than
 1. You're running a report with fewer than 500 queues. While you might expect to see metrics for all filtered queues, only active queues are shown on the real-time metrics report page. Try changing the settings for the report, such as changing the time range.
 
 1. If you as a user don't have any tags assigned to you (in other words, you have access to every queue in your Connect Customer instance), then the metrics page randomly selects 100 queues from your Connect Customer instance and any filters/groupings are applied to those 100 queues only. The same applies for other resources that can be tagged. This is done to limit the amount of data so dashboard performance is optimized.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

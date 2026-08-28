@@ -73,3 +73,7 @@ To view a preview and more details about a particular Pattern, choose the **Open
 **Note**
 After your new application is created, additional actions that are specific to your application type can be found in the `readme.md` file. Additionally, your AWS Serverless Application Model (AWS SAM) applications can be opened with AWS Application Builder for local testing, debugging, and more.
 For details about working with Application Builder in the AWS Toolkit, see the [Working with the AWS Application Builder explorer](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/appbuilder-overview-overview.html) topic in this User Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

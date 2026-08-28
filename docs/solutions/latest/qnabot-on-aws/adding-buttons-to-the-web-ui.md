@@ -33,3 +33,7 @@ You can add buttons to your chatbot’s answers to help guide your end user by s
 1. Choose one of the buttons to automatically send the next question to QnABot on AWS.
 **Note**
 When integrating with Connect, QnABot on AWS maps to the Connect [List Picker](https://docs.aws.amazon.com/connect/latest/adminguide/interactive-messages.html#list-picker) Template. The client sets limits on the number of characters in a field and enforces formatting using text from the QnABot on AWS plaintext response. You might need to modify the QnABot on AWS plaintext response to accommodate these limitations with the Connect chat client.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

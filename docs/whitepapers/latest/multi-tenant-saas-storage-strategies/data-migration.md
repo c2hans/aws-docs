@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
  As a rule of thumb, you should have clear policies and tenets to follow as you consider how the data in your systems will evolve. Wherever possible, teams should favor data changes that have backward compatibility with earlier versions. If you can find ways to minimize changes to your application’s data representation, you will limit the high overhead of transforming your data into a new representation.
 
  You can leverage commonly used tools and techniques to orchestrate the migration process. In reality, while minimizing invasive changes is often of great importance to SaaS developers, it’s not unique to the SaaS domain. As such, it’s beyond the scope of what we’ll cover in this paper.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

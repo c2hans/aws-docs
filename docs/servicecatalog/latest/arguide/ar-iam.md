@@ -56,3 +56,7 @@ An error occurred (AccessDeniedException) when calling the AssociateResource ope
 +  [AssociateResource](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_app-registry_AssociateResource.html) in the *AWS Service Catalog Developer Guide*
 +  [DisassociateResource](https://docs.aws.amazon.com/servicecatalog/latest/dg/API_app-registry_DisassociateResource.html) in the *AWS Service Catalog Developer Guide*
 +  [Controlling the resource tag values associated to applications](https://docs.aws.amazon.com/servicecatalog/latest/arguide/control-tags.html) in the *AppRegistry Administrator Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

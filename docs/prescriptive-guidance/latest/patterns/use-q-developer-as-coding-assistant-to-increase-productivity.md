@@ -92,3 +92,7 @@ See [Best coding practices with Amazon Q Developer](https://docs.aws.amazon.com/
 + [Amazon Q Developer best practices ](https://docs.aws.amazon.com/prescriptive-guidance/latest/best-practices-code-generation/introduction.html)(AWS Prescriptive Guidance)
 + [Installing, configuring, and using Amazon Q Developer with JetBrains IDEs](https://www.youtube.com/watch?v=-iQfIhTA4J0&pp=ygUSYW1hem9uIHEgZGV2ZWxvcGVy) (YouTube video)
 + [Installing Amazon Q for the command line](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line-getting-started-installing.html) (AWS documentation)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

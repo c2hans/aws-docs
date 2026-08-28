@@ -12,3 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
 + ** Examination** – Examine the data collected by extracting and assessing the relevant information.
 + ** Analysis** – Analyze the data collected in order to understand the incident and draw conclusions from it.
 + ** Reporting** – Present the information resulting from the analysis phase.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

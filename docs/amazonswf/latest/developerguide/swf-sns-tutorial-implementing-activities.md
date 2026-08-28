@@ -460,3 +460,7 @@ Publishing to an Amazon SNS topic sends the message that you supply to *all* of 
 <a name="implementing-activities-next-steps"></a>
 
 This completes the implementation of `send_result_activity`. Now, you will tie all these activities together in an activity application that handles the activity tasks and can launch activities in response, in [Subscription Workflow Tutorial Part 4: Implementing the Activities Task Poller](swf-sns-tutorial-implementing-activities-poller.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

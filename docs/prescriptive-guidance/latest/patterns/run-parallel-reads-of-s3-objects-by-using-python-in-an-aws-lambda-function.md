@@ -176,3 +176,7 @@ The best performance-to-cost ratio was with the 2,304 MB memory Lambda configura
 For comparison, a sequential process of 2,500 object reads took 47 seconds. The parallel process using the 2,304 MB Lambda configuration took 7 seconds, which is 85 percent less.
 
 ![Chart showing the decrease in time when switching from sequential to parallel processing.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/b46e9b16-9842-4291-adfa-3ef012b89aec/images/f3dcc44d-ac20-4b75-897d-1d71f0d59781.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

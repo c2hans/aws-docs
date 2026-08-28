@@ -545,3 +545,7 @@ RXLargeMessage is used by the device to receive a large payload that is greater 
 + The device buffers the message until it receives a write request with zero length or a length less than the MTU size.
 + If the device doesn't get a write request within a specified timeout, the transfer fails and the device releases the buffer.
 + If the proxy doesn't get a write response within a specified timeout, the transfer fails and the proxy releases the buffer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

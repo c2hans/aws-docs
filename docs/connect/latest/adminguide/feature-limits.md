@@ -74,12 +74,12 @@ The following table lists the maximum message size for each messaging channel, d
   - **Direction:** Outbound / **Message initiator:** Agent or Lex bot (Connect) / **Receiver:** End customer / **Limit:** 1,024 characters
 
 - **WhatsApp**
-  - **Direction:** Inbound / **Message initiator:** End customer / **Receiver:** Lex (Connect) / **Limit:** 1,024 characters
+  - **Direction:** Inbound / **Message initiator:** End customer / **Receiver:** Lex (Connect) / **Limit:** 4,096 characters
   - **Message initiator:** End customer / **Receiver:** Agent / **Limit:** 4,096 characters
   - **Direction:** Outbound / **Message initiator:** Agent or Lex bot (Connect) / **Receiver:** End customer / **Limit:** 4,096 characters
 
 - **Apple Messages for Business**
-  - **Direction:** Inbound / **Message initiator:** End customer / **Receiver:** Lex (Connect) / **Limit:** 1,024 characters
+  - **Direction:** Inbound / **Message initiator:** End customer / **Receiver:** Lex (Connect) / **Limit:** 4,096 characters
   - **Message initiator:** End customer / **Receiver:** Agent / **Limit:** 4,096 characters
   - **Direction:** Outbound / **Message initiator:** Agent or Lex bot (Connect) / **Receiver:** End customer / **Limit:** 4,096 characters
 
@@ -260,3 +260,7 @@ The following table lists feature specifications for Connect Customer Rules.
 | Interruptions | 5 | Yes | Yes | Not supported |
 | Response time | 4 hours | Not supported | Yes | Not supported |
 | Non-talk time | 5 hours | Yes | Not supported | Not supported |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

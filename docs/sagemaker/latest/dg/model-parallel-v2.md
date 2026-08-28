@@ -24,3 +24,7 @@ You can use SMP v2 for the general [SageMaker Training](train-model.md) jobs and
 + [The SageMaker model parallel library v2 reference](distributed-model-parallel-v2-reference.md)
 + [Release notes for the SageMaker model parallelism library](model-parallel-release-notes.md)
 + [(Archived) SageMaker model parallelism library v1.x](model-parallel.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

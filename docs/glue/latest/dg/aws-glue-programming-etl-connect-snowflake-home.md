@@ -186,3 +186,7 @@ Connecting to Snowflake with AWS Glue for Spark is subject to the following limi
 + This connector is not supported within streaming jobs.
 + This connector supports `SELECT` statement based queries when retrieving information (such as with the `query` parameter). Other kind of queries (such as `SHOW`, `DESC`, or DML statements) are not supported.
 + Snowflake limits the size of query text (i.e. SQL statements) submitted through Snowflake clients to 1 MB per statement. For more details, see [Limits on Query Text Size](https://docs.snowflake.com/en/user-guide/query-size-limits).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

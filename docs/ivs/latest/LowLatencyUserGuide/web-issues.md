@@ -75,3 +75,7 @@ This document lists known issues that you might encounter when using the Amazon 
 + When using the Web player SDK on iOS Safari, playback authorization will not work without a service worker due to limited iOS support for Media Source Extensions (MSE).
 
   **Workaround:** Implement a service worker with the Player SDK. See [Set Up Service Worker](web-getting-started.md#web-service-worker) and this [demo](https://github.com/aws-samples/amazon-ivs-player-web-sample/blob/master/samples/service-worker/service-worker.ts).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

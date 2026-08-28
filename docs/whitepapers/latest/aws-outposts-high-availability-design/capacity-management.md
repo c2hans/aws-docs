@@ -22,3 +22,7 @@ Capacity Reservations can be used in a multi-account environment to control how 
 +  Configure your EC2 instances in Auto Scaling groups or use instance auto recovery to restart failed instances.
 +  Automate capacity monitoring for your Outpost deployments and configure notifications and (optionally) automated responses for capacity alarms.
 + Use Capacity Reservations to have granular control over how much compute capacity is shared to other accounts within your AWS Organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,3 +53,7 @@ Follow these recommendations to minimize costs during your evaluation:
 Be sure to shut down endpoints and clean up resources after completing this tutorial to avoid ongoing charges.
 
 Continue to [Select and deploy text classification models](jumpstart-text-classification-deploy.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

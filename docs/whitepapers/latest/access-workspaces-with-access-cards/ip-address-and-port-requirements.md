@@ -49,3 +49,7 @@ The TURN protocol is also used over port 4195 for client connections to the Work
 |  AD Connector  |  AD Domain Controller  |  TCP/UDP 53  |  DNS  |
 |  AD Connector  |  AD Domain Controller  |  TCP/UDP 88  |  Kerberos Auth  |
 |  AD Connector  |  AD Domain Controller  |  TCP/UDP 389  |  LDAP  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

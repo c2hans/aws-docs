@@ -24,3 +24,7 @@ The preparation stage of the migration consists of these steps:
 1. Set up eight two-week sprints for migrating applications.
 
 1. Build a migration plan with resources, a backlog (epics, user stories), a risk/mitigation log, and a roles and responsibilities matrix (for example, a RACI matrix). You can use this plan to manage the risks that occur during the project, and to identify ownership for each resource involved.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

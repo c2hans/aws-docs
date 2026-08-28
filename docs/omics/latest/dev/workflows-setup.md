@@ -12,7 +12,7 @@ source_url: https://docs.aws.amazon.com/omics/latest/dev/workflows-setup.html
 + **Amazon ECR container images:** Create a private Amazon ECR repository for the workflow. Create container images in the private repository, or synchronize the contents of a supported upstream registry with your Amazon ECR private repository.
 + **(Optional) Sentieon licenses:** Request a Sentieon license to use the Sentieon software in private workflows.
 
-Optionally, you can run a linter on the workflow definition before or after you create the workflow. The **linter** topic describes the linters available in HealthOmics.
+In addition to built-in linters, you can optionally run a linter locally on your workflow definition before you create the workflow. For more information on built-in and optional external linters, see [Workflow linters in HealthOmics](workflows-linter.md).
 
 **Topics**
 + [HealthOmics workflow integration with Git-based repositories](workflows-git-integration.md)
@@ -23,3 +23,7 @@ Optionally, you can run a linter on the workflow definition before or after you 
 + [Requesting Sentieon licenses for private workflows](private-workflows-subscribe.md)
 + [Workflow linters in HealthOmics](workflows-linter.md)
 + [HealthOmics workflow operations](creating-private-workflows.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

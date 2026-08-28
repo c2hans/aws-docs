@@ -15,3 +15,7 @@ This section explains how you can create, configure, and customize your private 
 + [Set up and manage user access using AWS IAM Identity Center](set-up-user-access.md)
 + [Customize your private re:Post](customize-repost-private.md)
 + [Invite users to your private re:Post](invite-users-repost-private.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,3 +47,7 @@ You can use the console to find out which images in a dataset have non-terminal 
 
 1. Choose **Error** underneath an image to see the error code. Use the information at [Non-Terminal JSON Line Validation Errors](tm-debugging-json-line-errors.md) to fix the error.
 ![Error dialog showing "ERROR_UNSUPPORTED_USE_CASE_TYPE" and "ERROR_NO_VALID_LABEL_ATTRIBUTES" under "Dataset record errors".](http://docs.aws.amazon.com/rekognition/latest/customlabels-dg/images/dataset-non-terminal-error.jpg)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

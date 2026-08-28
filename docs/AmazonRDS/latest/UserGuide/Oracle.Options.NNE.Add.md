@@ -30,3 +30,7 @@ After you add the **NATIVE\_NETWORK\_ENCRYPTION** option, you don't need to rest
 1. Apply the option group to a new or existing DB instance:
    + For a new DB instance, you apply the option group when you launch the instance. For more information, see [Creating an Amazon RDS DB instance](USER_CreateDBInstance.md).
    + For an existing DB instance, you apply the option group by modifying the instance and attaching the new option group. After you add the **NATIVE\_NETWORK\_ENCRYPTION** option, you don't need to restart your DB instance. As soon as the option group is active, NNE is active. For more information, see [Modifying an Amazon RDS DB instance](Overview.DBInstance.Modifying.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

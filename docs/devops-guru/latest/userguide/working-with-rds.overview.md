@@ -13,3 +13,7 @@ Following, you can find a summary of the key benefits and features of DevOps Gu
 + [Key concepts for DevOps Guru for RDS](working-with-rds.overview.definitions.md)
 + [How DevOps Guru for RDS works](working-with-rds.overview.how-it-works.md)
 + [Supported database engines](working-with-rds.overview.supported-engines.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

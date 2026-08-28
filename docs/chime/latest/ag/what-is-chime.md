@@ -39,3 +39,7 @@ There is no charge for users with Basic permissions. Basic users cannot host mee
 For more information about Amazon Chime, see the following resources:
 + [Amazon Chime Help Center](https://answers.chime.aws)
 + [Amazon Chime Training Videos](https://aws.amazon.com/chime/how-to-videos/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

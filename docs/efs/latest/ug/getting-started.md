@@ -107,3 +107,7 @@ When you're finished with this getting started exercise, perform the following s
 1. If you created a security group for this getting started exercise, then delete it. For instructions, see [Delete a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/deleting-security-group.html) in the *AWS IAM Identity Center User Guide*.
 **Warning**
 Don't delete the default security group for your VPC.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

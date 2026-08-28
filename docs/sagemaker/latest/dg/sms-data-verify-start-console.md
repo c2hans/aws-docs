@@ -75,3 +75,7 @@ Use the following procedure to create a 3D point cloud or video frame verificati
 1. Choose **See preview** to check that the tool is displaying the prior labels correctly and presents the label verification task clearly.
 
 1. Select **Create**. This will create and start your labeling job.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

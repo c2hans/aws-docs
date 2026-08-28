@@ -537,3 +537,7 @@ You can complete the modernization process using AWS Migration Hub Orchestrator 
 To continue the containerization process without Migration Hub Orchestrator, you can use the App2Container CLI extraction and containerization process. For more information, see [Step 4: Transform your application](start-intro.md#start-step4-transform).
 
 After performing the containerization process with App2Container, continue with the deployment phase to complete the modernization process. You can use either App2Container or proprietary deployment tools. If you use the App2Container CLI, you can generate the required CloudFormation templates. For more information about deploying your containerized application using App2Container, see [Step 5: Deploy your application](start-intro.md#start-step5-deploy).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App2Container. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app2container` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

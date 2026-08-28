@@ -17,3 +17,7 @@ The [API Reference](https://docs.aws.amazon.com/cdk/api/v2) contains information
 The CDK API reference is organized into sub-modules. There are one or more sub-modules for each AWS service.
 
 Each sub-module has an overview that includes information about how to use its APIs. For example, the [S3](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_s3-readme.html) overview demonstrates how to set default encryption on an Amazon Simple Storage Service (Amazon S3) bucket.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

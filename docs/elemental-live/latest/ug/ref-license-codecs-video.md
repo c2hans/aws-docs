@@ -53,3 +53,7 @@ The HEVC (H.265) codec has * variations* based on the profile, chroma sampling, 
 | Main  | 4:2:2  | 8-bit  | High  | **Main 4:2:2 8-bit/High**  | HEVC Main Profile Encode and Decode Package | Advanced Broadcast Contribution Encoder Package  |
 | Main  | 4:2:2  | 10-bit  | Main  | **Main 4:2:2 10-bit/Main**  | HEVC Main Profile Encode and Decode Package  | Advanced Broadcast Contribution Encoder Package  |
 | Main  | 4:2:2  | 10-bit  | High  | **Main 4:2:2 10-bit/High**  | HEVC Main Profile Encode and Decode Package | Advanced Broadcast Contribution Encoder Package  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

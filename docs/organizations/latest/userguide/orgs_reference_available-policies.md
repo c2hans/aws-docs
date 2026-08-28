@@ -68,3 +68,7 @@ You can see the list of policies in your organization on the [Policies](https://
 | --- | --- | --- |
 | [FullAWSAccess](https://console.aws.amazon.com/organizations/v2/home/policies/service-control-policy/p-FullAWSAccess) | Allows access to every operation. | arn:aws:organizations::aws:policy/service\_control\_policy/p-FullAWSAccess |
 | [RCPFullAWSAccess](https://console.aws.amazon.com/organizations/v2/home/policies/resource-control-policy/p-RCPFullAWSAccess) | Allows access to every resource. | arn:aws:organizations::aws:policy/resource\_control\_policy/p-RCPFullAWSAccess |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

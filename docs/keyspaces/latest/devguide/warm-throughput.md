@@ -85,3 +85,7 @@ Monitor your application's performance metrics during the test phase to validate
 + [Increase your existing Amazon Keyspaces table's warm throughput](update-warm-throughput.md)
 + [View warm throughput of an Amazon Keyspaces table](view-warm-throughput.md)
 + [Monitor the performance of a pre-warmed table using Amazon CloudWatch](monitor-prewarming-cloudwatch.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

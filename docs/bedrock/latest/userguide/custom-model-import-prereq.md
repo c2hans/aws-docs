@@ -16,3 +16,7 @@ Before you can start a custom model import job, you need to fulfill the followin
 1. (Optional) Set up extra security configurations.
    + You can encrypt input and output data, import jobs, or inference requests made to imported models. For more information see [Encryption of custom model import](https://docs.aws.amazon.com/bedrock/latest/userguide/encryption-import-model.html).
    + You can create a virtual private cloud (VPC) to protect your customization jobs. For more information, see [(Optional) Protect custom model import jobs using a VPC](vpc-custom-model-import.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

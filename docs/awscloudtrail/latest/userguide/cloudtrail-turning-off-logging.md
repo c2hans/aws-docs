@@ -25,3 +25,7 @@ Additionally, event selectors and advanced event selectors are not evaluated for
 1. When you are prompted to confirm, choose **Stop logging**. CloudTrail stops logging activity for that trail.
 
 1. To resume logging for that trail, choose **Start logging** on the trail configuration page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

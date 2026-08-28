@@ -115,3 +115,7 @@ AWS Transform chat is integrated with:
 <a name="transform-app-chat-skillbuilder"></a>
 
 [AWS Skill Builder](https://skillbuilder.aws/) provides relevant learning modules through the chat. You can ask AWS Transform chat about your learning needs, and it presents you relevant course catalog. Skill Builder delivers contextual micro-learning experiences as you work through transformation stages.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

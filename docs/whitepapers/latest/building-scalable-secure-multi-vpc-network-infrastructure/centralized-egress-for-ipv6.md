@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/building-scalable-sec
 ![A diagram depicting centralized IPv4 and IPv6 egress using proxy instances and Network Load Balancer.](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/centralized-ipv4-and-ipv6-egress.png)
 
  The [IPv6 on AWS whitepaper](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/advanced-dual-stack-and-ipv6-only-network-designs.html) describes the centralized IPv6 egress patterns. The IPv6 egress patterns are discussed in more detail in the blog [Centralized outbound internet traffic for dual stack IPv4 and IPv6 VPCs](https://aws.amazon.com/blogs/networking-and-content-delivery/centralizing-outbound-internet-traffic-for-dual-stack-ipv4-and-ipv6-vpcs/), along with special considerations, sample solutions, and diagrams.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

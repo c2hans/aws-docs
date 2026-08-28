@@ -22,8 +22,8 @@ The following table summarizes support for each application. Select an applicati
 | [Adobe After Effects](adobe-after-effects.md) | 2024 - 2026 | Windows, macOS | Windows | No |
 | [Autodesk 3ds Max](autodesk-3ds-max.md) | 2024 - 2027 | Windows | No | Yes |
 | [Autodesk Arnold for Cinema 4D](maxon-cinema-4d.md) | 4.8.4.1 | Windows, macOS | Windows, Linux | Yes |
-| [Autodesk Arnold for Maya](autodesk-maya.md) | 7.1 - 7.4 | Windows, macOS, Linux | Linux | Yes |
-| [Autodesk Maya](autodesk-maya.md) | 2023 - 2026 | Windows, macOS, Linux | Linux | Yes |
+| [Autodesk Arnold for Maya](autodesk-maya.md) | 7.1 - 7.5 | Windows, macOS, Linux | Linux | Yes |
+| [Autodesk Maya](autodesk-maya.md) | 2023 - 2027 | Windows, macOS, Linux | Linux | Yes |
 | [Autodesk VRED](autodesk-vred.md) | 2025 - 2026 | Windows | Linux | No |
 | [Blender](blender.md) | 3.6 - 5.1 | Windows, macOS, Linux | Linux | Not needed |
 | [Chaos V-Ray for Maya](autodesk-maya.md) | 6 - 7 | Windows, macOS, Linux | Linux | Yes |
@@ -47,3 +47,7 @@ For an overview of all the ways to provide software to your jobs, see [Provide a
 <a name="supported-software-other-workloads"></a>
 
 Deadline Cloud also supports general-purpose compute-intensive workloads including scientific simulations, financial modeling, machine learning model training and evaluation, autonomous driving simulation, and data processing. You can run any workload that benefits from distributed parallel processing by creating custom job bundles. For examples that span these domains, see [Code examples](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/code-examples.html) in the *Deadline Cloud Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -81,3 +81,7 @@ Use the following settings to control local write forwarding requests:
 
 **Note**
 `rdswriteforwarduser` inherits its CONNECT privileges to customer databases via the PUBLIC role. If the privileges for the PUBLIC role are revoked, you will need to GRANT CONNECT privileges for the databases you need to forward writes to.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

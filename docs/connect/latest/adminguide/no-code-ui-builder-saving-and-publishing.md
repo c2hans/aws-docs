@@ -14,3 +14,7 @@ View resources have versioning support. Versioning enables you to audit and even
 1. When you are ready for a view to be used in a step-by-step guide flow, choose **Publish**. The view will now appear in the [Show view](show-view-block.md) block for you to use it in a flow
 
 Only view versions that have been published appear in the [Show view](show-view-block.md) block for use in a flow.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

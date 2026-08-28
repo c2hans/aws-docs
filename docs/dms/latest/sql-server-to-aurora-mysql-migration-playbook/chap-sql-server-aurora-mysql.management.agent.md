@@ -105,3 +105,7 @@ CREATE EVENT Rebuild_Indexes
 <a name="chap-sql-server-aurora-mysql.management.agent.summary"></a>
 
 For more information, see [CREATE EVENT Statement](https://dev.mysql.com/doc/refman/5.7/en/create-event.html) and [Event Scheduler Configuration](https://dev.mysql.com/doc/refman/5.7/en/events-configuration.html) in the *MySQL documentation*; [Amazon CloudWatch](https://aws.amazon.com/cloudwatch) and [AWS Lambda](https://aws.amazon.com/lambda).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

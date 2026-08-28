@@ -297,3 +297,7 @@ exceeded the query-processing limit of 65535 characters (pid:7627)
 <a name="r_CREATE_TABLE_usage-examples"></a>
 
 For examples that show how to use the CREATE TABLE command, see the [Examples](r_CREATE_TABLE_examples.md) topic.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,3 +59,7 @@ You can view the differences between any two commit specifiers in the CodeCommit
    You can show differences side by side (**Split** view) or inline (**Unified** view). You can also hide or show white space changes.
 
 1. To clear your comparison choices, choose **Cancel**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ You must have one of the following:
 <a name="data-privacy"></a>
 
 Your query results are processed securely and aren't used to train or improve CloudWatch Logs Insights or Amazon Bedrock. If you choose to provide feedback on the query results summary using the feedback buttons, your feedback indicates your level of satisfaction with the capability provided in CloudWatch Logs Insights.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

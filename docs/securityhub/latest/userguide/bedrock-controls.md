@@ -30,3 +30,7 @@ By default, Amazon Bedrock encrypts data source content with AWS managed keys. U
 <a name="bedrock-1-remediation"></a>
 
 To encrypt your Amazon Bedrock data source with a customer managed KMS key, see [Modify a data source for your Amazon Bedrock knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/kb-ds-update.html) in the *Amazon Bedrock User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

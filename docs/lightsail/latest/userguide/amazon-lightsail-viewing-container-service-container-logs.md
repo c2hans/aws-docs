@@ -46,3 +46,7 @@ Complete the following procedure to view the container logs of your Lightsail co
 **Note**
 Log entries are displayed in ascending chronological order and in Coordinated Universal Time (UTC). That is, the oldest log entries appear first.
 ![Container log in the Lightsail console](http://docs.aws.amazon.com/lightsail/latest/userguide/images/container-service-container-log.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

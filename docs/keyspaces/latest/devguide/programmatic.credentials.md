@@ -22,3 +22,7 @@ IAM users have long-term credentials, which presents a security risk. To help mi
 **Topics**
 + [Create service-specific credentials](programmatic.credentials.ssc.md)
 + [Create IAM credentials for AWS authentication](access.credentials.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

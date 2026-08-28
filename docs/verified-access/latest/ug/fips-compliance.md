@@ -47,3 +47,7 @@ To configure a new AWS Verified Access environment that is FIPS compliant, follo
 1. Create a Verified Access [group](verified-access-groups.md). During creation of the group, you associate it with the Verified Access instance just created.
 
 1. Create one or more [Verified Access endpoints](verified-access-endpoints.md). During the creation of your endpoint(s), you associate them with the group created in the previous step.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Verified Access. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verified-access` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,7 +18,7 @@ For information about other services that support service-linked roles, see [AWS
 ## AWSServiceRoleForApplicationMigrationService service-linked role
 <a name="slr-permissions"></a>
 
-AWS Transform MGN uses the service-linked role named **AWSServiceRoleForApplicationMigrationService**. This is a managed IAM policy with scoped permissions that AWS Transform MGN needs to run in your account.
+AWS Transform MGN uses the service-linked role named **AWSServiceRoleForApplicationMigrationService**. This service-linked role has scoped permissions that AWS Transform MGN needs to run in your account. Its permissions are defined by the AWSApplicationMigrationServiceRolePolicy AWS managed policy.
 
 The AWSServiceRoleForApplicationMigrationService service-linked role trusts the `mgn.amazonaws.com` service principal to assume the role. The role permissions are defined in the [AWSApplicationMigrationServiceRolePolicy](https://docs.aws.amazon.com/mgn/latest/ug/security-iam-awsmanpol-AWSApplicationMigrationServiceRolePolicy.html) AWS managed policy.
 
@@ -48,7 +48,7 @@ If you no longer need to use a feature or service that requires a service-linked
 **Note**
 If AWS Transform MGN is using the role when you try to delete the resources, the deletion might fail. If that happens, wait for a few minutes and try the operation again.
 
- **To clean up AWS Transform MGN resources used by AWSServiceRoleforApplicationMigrationService**
+ **To clean up AWS Transform MGN resources used by AWSServiceRoleForApplicationMigrationService**
 
 1. Identify and delete any waves and applications in all AWS Regions
 
@@ -130,7 +130,7 @@ If AWS Transform MGN is using the role when you try to delete the resources, the
       aws mgn delete-replication-configuration-template --replication-configuration-template-id {rct-TemplateID}
       ```
 
-Resources can be cleaned up without stopping any service provided by AWS Transform MGN. Cleaning up AWS Transform MGN resources will cause AWS Transform MGN to stop working. For more information, see [Cleaning up a Service-Linked Role ](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#delete-service-linked-role) in the *IAM User Guide*.
+Resources cannot be cleaned up without stopping the services provided by AWS Transform MGN. Cleaning up AWS Transform MGN resources will cause AWS Transform MGN to stop working. Before you run the following commands, confirm that migrations and replication are no longer needed. For more information, see [Cleaning up a Service-Linked Role ](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#delete-service-linked-role) in the *IAM User Guide*.
 
  **To manually delete the service-linked role using IAM **
 
@@ -140,3 +140,7 @@ Use the IAM console, the AWS CLI, or the AWS API to delete the AWSServiceRoleFor
 <a name="slr-regions"></a>
 
 AWS Transform MGN supports using service-linked roles in all of the [AWS Regions where the service is available](what-is-mgn.md#supported-regions).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

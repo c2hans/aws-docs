@@ -19,3 +19,7 @@ The following table shows the current driver support status.
 | grid:r570 | vGPU 18 | Production | Deprecating; scheduled for removal July 12, 2026 | March 2026 (reached) |
 | grid:r535 | vGPU 16 | Long-Term Support | Deprecating; scheduled for removal August 5, 2026 | July 2026 |
 | grid:r550 | vGPU 17 | Production | Deprecated | Not available |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

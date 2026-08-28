@@ -37,3 +37,7 @@ source_url: https://docs.aws.amazon.com/AmazonElastiCache/latest/dg/agentic-memo
 + **Set maxmemory policy** – Configure `maxmemory-policy allkeys-lru` on your ElastiCache cluster to automatically evict least-recently-used memory entries when the cluster reaches its memory limit.
 + **Monitor memory usage** – Use Amazon CloudWatch metrics to track memory utilization, cache hit rates, and vector search latency. Set alarms for high memory usage to proactively manage capacity.
 + **Plan for capacity** – Each memory entry typically requires approximately 4–6 KB (embedding dimensions × 4 bytes \+ metadata). A 1 GB ElastiCache instance can store approximately 170,000–250,000 memory entries depending on embedding size and metadata.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

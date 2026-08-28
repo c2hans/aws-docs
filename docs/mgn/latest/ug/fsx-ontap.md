@@ -335,3 +335,7 @@ After migration, verify that your FSx for ONTAP backup strategy covers the migra
 <a name="fsx-ontap-enable-arp"></a>
 
 If you disabled ONTAP ARP before migration, re-enable it after cutover is complete. For more information, see [Enabling Autonomous Ransomware Protection](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/enable-ARP.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

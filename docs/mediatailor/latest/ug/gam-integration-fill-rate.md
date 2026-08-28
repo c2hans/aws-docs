@@ -51,3 +51,7 @@ The following configuration mistakes are common causes of low fill rates with GA
 + **Missing device ID on CTV devices**—Without `rdid`, programmatic buyers cannot target the device, which significantly reduces fill for CTV inventory.
 + **Using `vpos=[avail.type]`**—MediaTailor does not support the `[avail.type]` variable. This resolves to an empty string, which can cause request failures or low-value ad responses.
 + **Player parameter not passed at session initialization**—Your ADS template URL references a player parameter (such as `[player_params.ppid]`), but the session initialization call does not pass the corresponding value. GAM receives an empty or null value for that macro, which can cause the ad request to return no fill.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -81,3 +81,7 @@ To confirm that the caller was never connected to an agent:
 + No recording of the call is found for that contact ID.
 
 To verify this behavior, call your contact center and disconnect after a period of time without an agent accepting the call.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

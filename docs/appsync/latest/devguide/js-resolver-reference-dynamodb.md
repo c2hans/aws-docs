@@ -24,3 +24,7 @@ The AWS AppSync DynamoDB function allows you to use [GraphQL](https://graphql.or
 +  [ Condition expressions ](https://docs.aws.amazon.com/appsync/latest/devguide/js-aws-appsync-resolver-reference-dynamodb-condition-expressions.html) - Learn more about condition expressions for PutItem, UpdateItem, and DeleteItem operations.
 +  [ Transaction condition expressions ](https://docs.aws.amazon.com/appsync/latest/devguide/js-aws-appsync-resolver-reference-dynamodb-transaction-condition-expressions.html) - Learn more about condition expressions for TransactWriteItems operations.
 +  [ Projections ](https://docs.aws.amazon.com/appsync/latest/devguide/js-aws-appsync-resolver-reference-dynamodb-projections.html) - Learn more about how to specify attributes in read operations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

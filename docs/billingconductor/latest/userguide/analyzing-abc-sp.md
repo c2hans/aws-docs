@@ -40,3 +40,7 @@ Discount benefits are shared within the billing group in Billing Conductor. For 
 + If Savings Plans sharing is restricted to a specific linked account in the billable domain and the billing group contains the account that purchased the Savings Plans, the utilization and coverage metrics might be higher in pro forma compared to the chargeable domain. This is because the pro forma Savings Plans sharing behavior overrides the restrictive billable sharing preference enabling more accounts (if they are in a billing group) to benefit from the Savings Plans.
 
 For more information about Savings Plans and reservation reports, see [Monitoring your Savings Plans](https://docs.aws.amazon.com/savingsplans/latest/userguide/sp-monitoring.html) in the *Savings Plans User Guide*, and [Understanding your reservations with Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-ris.html) in the *AWS Cost Management User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing Conductor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query billingconductor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

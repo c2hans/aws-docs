@@ -14,3 +14,7 @@ To configure a channel security group, you select an input security group from y
 + You can attach at most one channel security group to a channel.
 + The same input security group can be referenced by multiple channels as their channel security group.
 + When you update the CIDR rules in an input security group, those changes automatically apply to all channels that reference it as their channel security group.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

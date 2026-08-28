@@ -15,3 +15,7 @@ This document takes you through the steps to set up your first Amazon Interactiv
 + [Step 5: View Your Live Stream](getting-started-view-stream.md)
 + [Step 6: Check Your Service-Quota Limits (Optional)](getting-started-check-service-quota.md)
 + [Step 7: Prevent Undesired Content and Viewers (Recommended)](getting-started-prevent-undesired-content.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

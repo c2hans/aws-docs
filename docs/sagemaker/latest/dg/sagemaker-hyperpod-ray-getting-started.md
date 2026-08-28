@@ -36,3 +36,7 @@ Every feature is available both ways. The purpose-built experience wraps each on
 | Resource sharing and job queueing with [Task governance](sagemaker-hyperpod-ray-task-governance.md) | View resource allocation metrics during Ray workload creation and submit to a queue from the UI | via kubectl |
 | [Resilient training](sagemaker-hyperpod-ray-resilient-training.md) (node auto recovery, hung job detection, tiered checkpointing) | Supported at the infrastructure layer | Supported at the infrastructure layer |
 | [Accelerated inference](sagemaker-hyperpod-ray-accelerated-inference.md) (Ray Serve, managed tiered KV cache, autoscaling) | Supported at the infrastructure layer | Supported at the infrastructure layer |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

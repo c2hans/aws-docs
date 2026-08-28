@@ -90,3 +90,7 @@ If you cannot retrieve the logs using the `export-cluster-logs` command, then do
 + Retrieve the logs manually from the CloudWatch log group of the cluster.
 + If the log group is empty, SSH into cluster nodes and retrieve the logs listed in [Troubleshooting node initialization issues](troubleshooting-v3-scaling-issues.md#troubleshooting-v3-node-init).
 + If cluster nodes are not accessible because the cluster failed to create, then recreate the cluster with option `--rollback-on-failure false` and retrieve the logs from the nodes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

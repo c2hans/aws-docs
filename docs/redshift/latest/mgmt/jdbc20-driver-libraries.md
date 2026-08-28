@@ -21,3 +21,7 @@ You must include all the driver library files in the class path. This is the pat
 + Windows: [https://docs.oracle.com/javase/7/docs/technotes/tools/windows/classpath.html](https://docs.oracle.com/javase/7/docs/technotes/tools/windows/classpath.html)
 + Linux and Solaris: [https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/classpath.html](https://docs.oracle.com/javase/7/docs/technotes/tools/solaris/classpath.html)
 + macOS: The default macOS class path is the directory in which the JDBC driver is installed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

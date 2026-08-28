@@ -59,3 +59,7 @@ For more information about authenticating requests, see the following topics:
 + [Authenticating Requests: Using the Authorization Header (AWS Signature Version 4)](sigv4-auth-using-authorization-header.md)
 + [Authenticating Requests: Using Query Parameters (AWS Signature Version 4)](sigv4-query-string-auth.md)
 + [Browser-Based Uploads Using POST (AWS Signature Version 4)](sigv4-UsingHTTPPOST.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

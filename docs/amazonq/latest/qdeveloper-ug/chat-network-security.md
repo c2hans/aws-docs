@@ -50,3 +50,7 @@ Following are example questions about network security that you can ask Amazon Q
 + Which resources are not protected from common web vulnerabilities?
 + What are the common network security issues on my EC2 instances?
 + Do I have any WAF WebACLs that aren’t protecting anything?
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

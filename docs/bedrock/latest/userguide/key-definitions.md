@@ -30,3 +30,7 @@ This chapter explains terminology that will help you understand what Amazon Bedr
 + **Hyperparameters** – Values that can be adjusted for **model customization** to control the training process and, consequently, the output custom model. For more information and definitions of specific hyperparameters, see [Custom model hyperparameters](custom-models-hp.md).
 + **Model evaluation** – The process of evaluating and comparing model outputs to determine the model that is best suited for a use case. For more information, see [Evaluate the performance of Amazon Bedrock resources](evaluation.md).
 + **Provisioned Throughput** – A level of throughput that you purchase for a base or custom model to increase the amount and/or rate of tokens processed during model inference. When you purchase Provisioned Throughput for a model, a **provisioned model** is created that can be used to carry out model inference. For more information, see [Increase model invocation capacity with Provisioned Throughput in Amazon Bedrock](prov-throughput.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

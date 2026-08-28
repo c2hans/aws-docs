@@ -166,7 +166,7 @@ If the original payload is valid JSON, this field will contain the unescaped, no
 These are some common issues when transforming input in EventBridge pipes:
 +  For Strings, quotes are required.
 +  There is no validation when creating JSON path for your template.
-+  If you specify a variable to match a JSON path that doesn't exist in the event, that variable isn't created and won't appear in the output.
++  If you specify a variable to match a JSON path that doesn't exist in the event, EventBridge replaces that variable with an empty string. EventBridge includes the key in the output with an empty-string value instead of omitting it.
 + JSON properties like `aws.pipes.event.json` can only be used as the value of a JSON field, not inline in other strings.
 +  EventBridge doesn't escape values extracted by *Input Path*, when populating the *Input Template* for a target.
 + If a JSON path references a JSON object or array, but the variable is referenced in a string, EventBridge removes any internal quotes to ensure a valid string. For example, "Body is <$.body>" would result in EventBridge removing quotes from the object.
@@ -199,3 +199,7 @@ These are some common issues when transforming input in EventBridge pipes:
 + Input transformers and filtering can extract JSON values that have been string-encoded once, but not values that have been string-encoded twice. This commonly occurs when an Amazon SNS message is sent to Amazon SQS. When Amazon SQS receives the Amazon SNS message, it stringifies the entire message. When Pipes then receives this Amazon SQS message, the Amazon SNS message content appears in the `body` field and is accessible. However, if the Amazon SNS `Message` field itself contains stringified JSON, that nested content is double-encoded and cannot be accessed by input transformers or filters. For example, `<$.body.TopicArn>` is accessible, but `<$.body.Message.operation>` is not if the `Message` field contains stringified JSON such as `"{\\\"operation\\\":\\\"UPDATE\\\",\\\"email\\\":\\\"user@example.com\\\"}"`.
 
   To work around this limitation, use an enrichment step with a Lambda function to parse the double-encoded content and extract the nested values. For more information about enrichment, see [Enrichment](pipes-enrichment.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

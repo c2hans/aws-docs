@@ -458,3 +458,7 @@ aws iotwireless delete-import-task --Id "{{e2a5995e-743b-41f2-a1e4-3ca6a5c5249f}
 ```
 
 This command doesn't produce any output. After the task has been deleted, to verify that the import task has been removed from your account, you can use the `GetWirelessDeviceImportTask` API operation or the `ListWirelessDeviceImportTasks` API operation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

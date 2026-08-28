@@ -49,3 +49,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  This extreme example provides a good model for testing the notion of multi-tenant SaaS. While it may not realize all the efficiencies of shared infrastructure, it is an entirely valid multi-tenant SaaS environment. For some customers, their domain may dictate that some or all of their customers run in this model. That doesn’t mean they are not SaaS. If they use these shared services and all the tenants run the same version, this still complies with the foundational principles of SaaS.
 
  Given these parameters and this broader definition of SaaS, you can see the need to evolve the use of the term *multi-tenant*. It makes more sense to refer to any SaaS system that is managed and operated collectively as being *multi-tenant*. Then, you can defer to more granular terminology to describe how resources are shared or dedicated within the implementation of a SaaS solution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

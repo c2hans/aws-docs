@@ -120,3 +120,7 @@ The following limits exist for API requests. For information about the current m
 
 - **Frequency of requests to the thumbnails API. For more information, see [Limit on thumbnails in MediaLive](thumbnail-limits.md)**
   - There is a maximum to the TPS for thumbnail requests.This limit is a quota that you can increase. For the current quota, and to request an increase on the quota, see the [Service Quotas](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/medialive/quotas) console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

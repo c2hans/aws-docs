@@ -96,3 +96,7 @@ This event is logged when a DMARC policy is applied to an email sent to your org
 | from |  The From address, which is usually the email address of the user who sent the message. If the user sent the message as another user or on behalf of another user, this field returns the email address of the user on whose behalf the email was sent, not the email address of the actual sender. |
 | recipients |  The intended recipients of the message. |
 | policy | The applied DMARC policy, indicating the action to take on the email when the DMARC check fails (NONE, QUARANTINE, or REJECT). This is the same as the dmarcPolicy field in the ORGANIZATION\_EMAIL\_RECEIVED event. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -91,3 +91,7 @@ The following are the service endpoints and service quotas for this service.
 | UpdatePolicy requests per second per Region per policy store | Each supported Region: 10 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/verifiedpermissions/quotas/L-2AFF096D)  | The maximum number of UpdatePolicy requests per second per policy store. |
 | UpdatePolicyStore requests per second per Region per account | Each supported Region: 10 | No | The maximum number of UpdatePolicyStore requests per second. |
 | UpdatePolicyTemplate requests per second per Region per policy store | Each supported Region: 10 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/verifiedpermissions/quotas/L-DC54B663)  | The maximum number of UpdatePolicyTemplate requests per second per policy store. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

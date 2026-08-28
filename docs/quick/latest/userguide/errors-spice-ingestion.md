@@ -122,3 +122,7 @@ For imports and data refresh jobs that fail, Quick Sight provides an error code 
 ****UNRESOLVABLE\_HOST**** – Amazon Quick Sight can't resolve the host name of the data source. Verify the host name of the data source and try again.
 
 ****UNROUTABLE\_HOST**** – Amazon Quick Sight can't reach your data source because it's inside a private network. Ensure that your private VPC connection is configured correctly in Enterprise Edition, or allow Amazon Quick Sight IP address ranges to allow connectivity for Standard Edition.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -347,3 +347,7 @@ Use these articles from AWS re:Post for advanced troubleshooting steps:
 +  [How to troubleshoot common scaling issues in EKS Auto-Mode?](https://repost.aws/articles/ARLpQOknr5Rb-w5iAT9sUBpQ)
 +  [How do I troubleshoot custom nodepool and nodeclass provisioning issues in Amazon EKS Auto Mode?](https://repost.aws/articles/ARPcmFS1POTgqPCBdcZFp6BQ)
 +  [How do I troubleshoot EKS Auto Mode built-in node pools with Unknown Status?](https://repost.aws/en/articles/ARLhrdl45TRASGkvViwtBG0Q)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

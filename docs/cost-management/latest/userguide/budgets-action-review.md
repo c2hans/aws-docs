@@ -33,3 +33,7 @@ You can review and undo previously completed actions from the **Action history**
 + **Reversed** - The action was undone, and AWS Budgets will no longer evaluate the action for the remaining budgeted period.
 
 If you want AWS Budgets to re-evaluate the reversed action during the same period, you can choose **Reset**. You can do this, for example, if you initiated a read-only policy but then received approval from your manager to increase your budget and adjust your budgeted amount during the current period.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

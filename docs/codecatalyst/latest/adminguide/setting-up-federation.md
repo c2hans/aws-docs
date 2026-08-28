@@ -152,3 +152,7 @@ You must have Identity federation administrator permissions and the appropriate 
 
 **Note**
 CodeCatalyst user names have a minimum length of 3 and a maximum length of 100 characters. Provided user names longer than 100 characters will be truncated. This can result in a user name that appears to be a duplicate of another 100-character user name. For more information, see [I can’t access my AWS Builder ID space as a new user or can’t be added as a new SSO user due to truncated user name](https://docs.aws.amazon.com/codecatalyst/latest/userguide/troubleshooting.html#troubleshoot-username-truncated).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

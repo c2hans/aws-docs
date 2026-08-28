@@ -47,3 +47,7 @@ We recommend monitoring your file system's EMS messages and the status of your v
 + [Enabling Autonomous Ransomware Protection](enable-ARP.md)
 + [Responding to Autonomous Ransomware Protection alerts](respond-ARP.md)
 + [Understanding EMS alerts for Autonomous Ransomware Protection](EMS-ARP.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

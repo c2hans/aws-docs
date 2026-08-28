@@ -94,3 +94,7 @@ To select Terraform Enterprise as your distribution, provide the following input
   ```
 
 See [the Terraform documentation](https://www.terraform.io/docs/enterprise/index.html) to learn more about how to set up Terraform Enterprise.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

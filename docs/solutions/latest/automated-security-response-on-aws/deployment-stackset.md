@@ -26,13 +26,13 @@ Before you deploy this solution, review your AWS Security Hub deployment:
 
 This procedure assumes that you have multiple accounts using AWS Organizations, and have delegated an AWS Organizations admin account and an AWS Security Hub admin account.
 
- **Please note that this solution works with both [AWS Security Hub and AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-are-securityhub-services.html).**
+ **This solution works with both [AWS Security Hub and AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-are-securityhub-services.html).**
 
 ## Deployment overview
 <a name="deployment-overview-stackset"></a>
 
 **Note**
-StackSets deployment for this solution uses a combination of service-managed and self-managed StackSets. Self-Managed StackSets must be used currently as they use nested StackSets, which are not yet supported with service-managed StackSets.
+StackSets deployment for this solution uses a combination of service-managed and self-managed StackSets. Self-managed StackSets must be used currently because they use nested stacks, which are not yet supported with service-managed StackSets.
 
 Deploy the StackSets from a [delegated administrator account](https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-cloudformation.html) in your AWS Organizations.
 
@@ -64,9 +64,9 @@ ___________________
  [Step 1: Launch the admin stack in the delegated Security Hub admin account](#step-1-stackset)
 + Using a self-managed StackSet, launch the `automated-security-response-admin.template` AWS CloudFormation template into your AWS Security Hub admin account in the same Region as your Security Hub admin. This template uses nested stacks.
 + Choose which Security Standards to install. By default, only SC is selected (Recommended).
-+ Choose an existing Orchestrator log group to use. Select `Yes` if `SO0111-ASR- Orchestrator` already exists from a previous installation.
++ Choose an existing Orchestrator log group to use. Choose `Yes` if `SO0111-ASR-Orchestrator` already exists from a previous installation.
 + Choose whether to enable the solution’s Web UI. If you choose to enable this feature, you must also enter an email address to be assigned an administrator role.
-+ Select your preferences for collecting CloudWatch metrics related to the solution’s operational health.
++ Choose your preferences for collecting CloudWatch metrics related to the solution’s operational health.
 
 For more information on self-managed StackSets, refer to [Grant self-managed permissions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-prereqs-self-managed.html) in the *AWS CloudFormation User Guide*.
 
@@ -102,14 +102,14 @@ Until service-managed StackSets support nested stacks, you must do this step for
 
    1. Provide the project key for the Jira project that you want to send tickets to.
 
-   1. Create a new key-value secret in Secrets Manager that holds your Jira `Username` and `Password`.
+   1. Create a new key-value secret in AWS Secrets Manager that holds your Jira `Username` and `Password`.
 **Note**
 You can choose to use a Jira API key in place of your password by providing your username as `Username` and your API key as the `Password`.
 
    1. Add the ARN of this secret as input to the stack.
 
-       **Provide a stack name Jira project information, and Jira API credentials.**
-![ticket system integration stack jira](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-jira.png)
+       **Provide a stack name, Jira project information, and Jira API credentials.**
+![Jira ticket system integration stack configuration](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-jira.png)
 
        **Jira Field Configuration**:
 
@@ -134,7 +134,7 @@ You can choose to use a Jira API key in place of your password by providing your
 
         Common Jira field IDs:
       +  **Priority IDs**: 1 (Highest), 2 (High), 3 (Medium), 4 (Low), 5 (Lowest)
-      +  **Issue Type ID**: Varies by Jira project (e.g., 10006 for Task)
+      +  **Issue Type ID**: Varies by Jira project (for example, 10006 for Task)
       +  **Account ID**: Format `123456:494dcbff-1b80-482c-a89d-56ae81c145a4`
 
         You can find your Jira field IDs and account IDs using the Jira REST API:
@@ -156,8 +156,8 @@ You can choose to use a Jira API key in place of your password by providing your
 
    1. Create a secret in Secrets Manager with the key `API_Key` and provide the secret ARN as input to the stack.
 
-       **Provide a stack name ServiceNow project information, and ServiceNow API credentials.**
-![ticket system integration stack servicenow](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-servicenow.png)
+       **Provide a stack name, ServiceNow project information, and ServiceNow API credentials.**
+![ServiceNow ticket system integration stack configuration](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-servicenow.png)
 
        **To create a custom integration stack**: Include a Lambda function that the solution orchestrator Step Functions can call for each remediation. The Lambda function should take the input provided by Step Functions, construct a payload according to the requirements of your ticketing system, and make a request to your system to create the ticket.
 
@@ -176,24 +176,26 @@ You can choose to use a Jira API key in place of your password by providing your
 |  **Load CIS120 Admin Stack**  |  `no`  | Specify whether to install the admin components for automated remediation of CIS120 controls. |
 |  **Load CIS140 Admin Stack**  |  `no`  | Specify whether to install the admin components for automated remediation of CIS140 controls. |
 |  **Load CIS300 Admin Stack**  |  `no`  | Specify whether to install the admin components for automated remediation of CIS300 controls. |
-|  **Load PC1321 Admin Stack**  |  `no`  | Specify whether to install the admin components for automated remediation of PC1321 controls. |
+|  **Load PCI321 Admin Stack**  |  `no`  | Specify whether to install the admin components for automated remediation of PCI321 controls. |
 |  **Load NIST Admin Stack**  |  `no`  | Specify whether to install the admin components for automated remediation of NIST controls. |
 |  **Reuse Orchestrator Log Group**  |  `no`  | Select whether or not to reuse an existing `SO0111-ASR-Orchestrator` CloudWatch Logs group. This simplifies reinstallation and upgrades without losing log data from a previous version. Reuse existing `Orchestrator Log Group` choose `yes` if the `Orchestrator Log Group` still exists from an earlier deployment in this account, otherwise `no`. If you are performing a stack update from an earlier version than v2.3.0 choose `no`  |
-|  **ShouldDeployWebUI**  |  `yes`  | Deploy the Web UI components including API Gateway, Lambda functions, and CloudFront distribution. Select "yes" to enable the web-based user interface for viewing findings and remediation status. If you choose to disable this feature, you can still configure automated remediations and run remediations on-demand using the Security Hub CSPM custom action. |
+|  **ShouldDeployWebUI**  |  `yes`  | Deploy the Web UI components including API Gateway, Lambda functions, and CloudFront distribution. Choose "yes" to enable the web-based user interface for viewing findings and remediation status. If you choose to disable this feature, you can still configure automated remediations and run remediations on-demand using the Security Hub CSPM custom action. |
 |  **AdminUserEmail**  |  *(Optional input)*  | Email address for the initial admin user. This user will have full administrative access to the ASR Web UI. Required **only** when Web UI is enabled. |
 |  **Use CloudWatch Metrics**  |  `yes`  | Specify whether to enable CloudWatch Metrics for monitoring the solution. This will create a CloudWatch Dashboard for viewing metrics. |
 |  **Use CloudWatch Metrics Alarms**  |  `yes`  | Specify whether to enable CloudWatch Metrics Alarms for the solution. This will create Alarms for certain metrics collected by the solution. |
 |  **RemediationFailureAlarmThreshold**  |  `5`  | Specify the threshold for percentage of remediation failures per control ID. For example, if you enter `5`, you receive an alarm if a control ID fails more than 5% of remediations at a given day.<br />This parameter functions only if alarms are created (see the **Use CloudWatch Metrics Alarms** parameter). |
 |  **EnableEnhancedCloudWatchMetrics**  |  `no`  | If `yes`, creates additional CloudWatch metrics to track all control IDs individually on the CloudWatch dashboard and as CloudWatch alarms.<br />See the [Cost](cost.md#additional-cost-enhanced-metrics) section to understand the additional cost that this incurs. |
-|  **TicketGenFunctionName**  |  *(Optional input)*  | Optional. Leave blank if you don’t want to integrate a ticketing system. Otherwise, provide the Lambda function name from the stack output of [Step 0](deployment.md#step-0), for example: `SO0111-ASR-ServiceNow-TicketGenerator`. |
+|  **TicketGenFunctionName**  |  *(Optional input)*  | Optional. Leave blank if you don’t want to integrate a ticketing system. Otherwise, provide the Lambda function name from the stack output of [Step 0](#step-0-stackset), for example: `SO0111-ASR-ServiceNow-TicketGenerator`. |
 
  **Configure StackSet options**
 
-![configre stackset options](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/configre-stackset-options.png)
+![Configure StackSet options page](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/configure-stackset-options.png)
 
 1. For the **Account numbers** parameter, enter the account ID of the AWS Security Hub admin account.
 
 1. For the **Specify regions** parameter, select only the Region where Security Hub admin is turned on. Wait for this step to complete before going on to Step 2.
+
+   You can view the status of the StackSet operation in the AWS CloudFormation console on the StackSet details page. You should receive a **SUCCEEDED** operation status in approximately 15 minutes.
 
 ## Step 2: Install the remediation roles into each AWS Security Hub member account
 <a name="step-2-stackset"></a>
@@ -206,7 +208,7 @@ Use a service-managed StackSets to deploy the [member roles template](https://so
 | Parameter | Default | Description |
 | --- | --- | --- |
 |  **Namespace**  |  {{<Requires input>}}  | Enter a string of up to 9 lowercase alphanumeric characters. Unique namespace to be added as a suffix to remediation IAM role names. The same namespace should be used in the Member Roles and Member stacks. This string should be unique for each solution deployment, but does not need to be changed during stack updates. The namespace value does **not** need to be unique per member account. |
-|  **Sec Hub Account Admin**  |  {{<Requires input>}}  | Enter the 12-digit account ID for the AWS Security Hub admin account. This value grants permissions to the admin account’s solution role. |
+|  **Sec Hub Admin Account**  |  {{<Requires input>}}  | Enter the 12-digit account ID for the AWS Security Hub admin account. This value grants permissions to the admin account’s solution role. |
 
 1. Deploy to the entire organization (typical) or to organizational units, as per your organizations policies.
 
@@ -214,8 +216,10 @@ Use a service-managed StackSets to deploy the [member roles template](https://so
 
 1. For the **Specify regions** parameter, select a single Region. IAM roles are global. You can continue to Step 3 while this StackSet deploys.
 
+   You can view the status of the StackSet operation in the AWS CloudFormation console on the StackSet details page. You should receive a **SUCCEEDED** operation status in approximately 5 minutes.
+
     **Specify StackSet details**
-![specify stackset details](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/specify-stackset-details.png)
+![Specify StackSet details page](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/specify-stackset-details.png)
 
 ## Step 3: Launch the member stack into each AWS Security Hub member account and Region
 <a name="step-3-stackset"></a>
@@ -233,17 +237,23 @@ Because the [member stack](https://solutions-reference.s3.amazonaws.com/automate
 |  **Load CIS120 Member Stack**  |  `no`  | Specify whether to install the member components for automated remediation of CIS120 controls. |
 |  **Load CIS140 Member Stack**  |  `no`  | Specify whether to install the member components for automated remediation of CIS140 controls. |
 |  **Load CIS300 Member Stack**  |  `no`  | Specify whether to install the member components for automated remediation of CIS300 controls. |
-|  **Load PC1321 Member Stack**  |  `no`  | Specify whether to install the member components for automated remediation of PC1321 controls. |
+|  **Load PCI321 Member Stack**  |  `no`  | Specify whether to install the member components for automated remediation of PCI321 controls. |
 |  **Load NIST Member Stack**  |  `no`  | Specify whether to install the member components for automated remediation of NIST controls. |
-|  **Create S3 Bucket For Redshift Audit Logging**  |  `no`  | Select `yes` if the S3 bucket should be created for the FSBP RedShift.4 remediation. For details of the S3 bucket and the remediation, review the [Redshift.4 remediation](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp-controls.html#fsbp-redshift-4) in the *AWS Security Hub User Guide*. |
+|  **Create S3 Bucket For Redshift Audit Logging**  |  `no`  | Choose `yes` to create the S3 bucket for the FSBP RedShift.4 remediation. For details of the S3 bucket and the remediation, review the [Redshift.4 remediation](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp-controls.html#fsbp-redshift-4) in the *AWS Security Hub User Guide*. |
 |  **Sec Hub Admin Account**  |  {{<Requires input>}}  | Enter the 12-digit account ID for the AWS Security Hub admin account. |
 |  **Namespace**  |  {{<Requires input>}}  | Enter a string of up to 9 lowercase alphanumeric characters. This string becomes part of the IAM role names and Action Log S3 bucket. Use the same value for member stack deployment and member roles stack deployment. String should be unique for each solution deployment, but does not need to be changed during stack updates. |
 |  **EnableCloudTrailForASRActionLog**  |  `no`  | Select `yes` if you want to monitor management events conducted by the solution on the CloudWatch dashboard. The solution creates a CloudTrail trail in each member account where you select `yes`. You must deploy the solution into an AWS Organization to enable this feature. **Additionally, you can only enable this feature in a single region within the same account.** See the [Cost](cost.md#additional-cost-action-log) section to understand the additional cost that this incurs. |
 
  **Accounts**
 
-![accounts](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/accounts.png)
+![Accounts deployment configuration page](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/accounts.png)
 
- **Deployment locations**: You may specify a list of account numbers or organizational units.
+ **Deployment locations**: You can specify a list of account numbers or organizational units.
 
  **Specify regions**: Select all of the Regions where you want to remediate findings. You can adjust Deployment options as appropriate for the number of accounts and Regions. Region Concurrency can be parallel.
+
+You can view the status of the StackSet operation in the AWS CloudFormation console on the StackSet details page. You should receive a **SUCCEEDED** operation status for each account and Region combination. Deployment time varies based on the number of accounts and Regions selected.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

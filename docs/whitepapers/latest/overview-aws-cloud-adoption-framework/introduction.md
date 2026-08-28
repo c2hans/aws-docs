@@ -16,3 +16,7 @@ Millions of [AWS customers](https://aws.amazon.com/solutions/case-studies/?custo
 Your ability to effectively leverage cloud to digitally transform (your cloud readiness) is underpinned by a set of foundational organizational capabilities. The AWS CAF identifies these capabilities and provides prescriptive guidance that thousands of organizations around the world have successfully used to accelerate their cloud transformation journeys.
 
 AWS and the [AWS Partner Network](https://aws.amazon.com/partners/find-a-partner/) provide tools and services that can help you along each step of the way. [AWS Professional Services](https://aws.amazon.com/professional-services/) is a global team of experts that provides assistance through a collection of AWS CAF aligned offerings that can help you achieve specific outcomes related to your cloud transformation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

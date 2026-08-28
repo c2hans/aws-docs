@@ -18,3 +18,7 @@ The following table shows some simple queries, how they are interpreted, and the
 | select \* from mydomain where Year > '1985' | Retrieves all items where "Year" is greater than "1985".<br />Although this looks like a numerical comparison, it is lexicographical. Because the calendar won't change to five digits for nearly 8,000 years, "Year" is not zero padded. | B000T9886K, B00005JPLW, B000SF3NGK |
 | select \* from mydomain where Rating like '\*\*\*\*%' | Retrieves all items that have at least a 4 star (\*\*\*\*) rating.<br />The prefix comparison is case-sensitive and exact and does not match attributes that only have the "4 star" value, such as item B000T9886K.  | 0385333498, 1579124585, 0802131786, B000SF3NGK  |
 | select \* from mydomain where Pages < '00320' | Retrieves all items that have less than 320 pages.<br />This attribute is zero padded in the data set and the select expression, which allows for proper lexicographical comparison between the strings. Items without this attribute are not considered. | 1579124585, 0802131786,  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

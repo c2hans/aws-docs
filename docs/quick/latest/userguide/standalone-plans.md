@@ -37,3 +37,7 @@ To view your current plan:
 The **Plan & Billing** page displays your current plan name, estimated charges, days remaining (for trial plans), and payment method (for paid plans).
 
 Alternatively, you can choose **Upgrade plan** from the profile menu, which takes you directly to the plan management page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

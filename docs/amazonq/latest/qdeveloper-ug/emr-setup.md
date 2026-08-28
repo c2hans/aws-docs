@@ -46,3 +46,7 @@ The `codewhisperer` prefix is a legacy name from a service that merged with Amaz
 1. Under Amazon EMR Studio, choose **Workspaces (Notebooks).**
 
 1. Select your desired Workspace and choose **Quick launch**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -67,3 +67,7 @@ The example chart below describes how the Answer Agreement Score and Worker Agre
 | Worker Agreement Score | 100% | 66% | 66% |  |  |  |
 
 The Question Agreement Score for questions A and B are 66% because two Workers agreed on the same answer. The HIT Agreement Score for this HIT is 75%. The HIT had four questions, and three of them had an agreed-upon answer for a percentage of 75%. The Worker Agreement Score for Worker 1 is 100% because this Worker agreed with the other Workers for each answer, except Question D where there was no conclusive answer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

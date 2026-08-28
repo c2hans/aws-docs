@@ -194,3 +194,7 @@ For instructions on how to customize this framework to support your specific req
 + [Transform responsible AI from theory into practice](https://aws.amazon.com/machine-learning/responsible-ai)
 + [Protecting Consumers and Promoting Innovation – AI Regulation and Building Trust in Responsible AI](https://aws.amazon.com/blogs/machine-learning/protecting-consumers-and-promoting-innovation-ai-regulation-and-building-trust-in-responsible-ai/)
 + [Responsible Use of Machine Learning guide](https://d1.awsstatic.com/responsible-machine-learning/responsible-use-of-machine-learning-guide.pdf)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,3 +36,7 @@ Dimensions to WorkSpaces Thin Client metrics
 | --- | --- |
 | desktopType | Filters the metric data by the desktop type currently in-session on the device. The device is in-session if a user is logged into a desktop, and if the device is not sleeping. If the device is in-session, the dimension value will be the desktop type used, such as WorkSpaces, WorkSpacesSecureBrowser, or AppStream. If the device is not in-session, the dimension value will be NotInSession. |
 | softwareSetVersion | Filters the metric data by the Software Set version installed on the device. The form of the dimension in X.Y.Z, for example 1.4.2. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -524,3 +524,7 @@ Amazon Cognito also invokes all assigned functions when an event corresponds to 
 | Custom sender | `CustomEmailSender_VerifyUserAttribute`<br />`CustomSmsSender_VerifyUserAttribute` | When a user adds an email address or phone number and Amazon Cognito sends a verification code. |
 | Custom sender | `CustomEmailSender_Authentication`<br />`CustomSmsSender_Authentication` | When a user who has configured SMS or email MFA or OTP signs in. |
 | Custom sender | CustomEmailSender\_AccountTakeOverNotification | When your threat protection settings take an automated action against a user's sign-in attempt and the action for the risk level includes a notification. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

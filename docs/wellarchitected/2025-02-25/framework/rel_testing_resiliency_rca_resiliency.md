@@ -65,3 +65,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/rel
  **Related videos:**
 + [ Amazon’s approach to failing successfully ](https://aws.amazon.com/builders-library/amazon-approach-to-failing-successfully/)
 + [AWS re:Invent 2021 - Amazon Builders’ Library: Operational Excellence at Amazon ](https://www.youtube.com/watch?v=7MrD4VSLC_w)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

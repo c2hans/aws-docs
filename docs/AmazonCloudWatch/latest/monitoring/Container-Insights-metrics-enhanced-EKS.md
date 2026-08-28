@@ -326,3 +326,7 @@ The following table lists the metrics that are collected.
 | `node_diskio_instance_store_ec2_instance_performance_exceeded_iops` | `ClusterName`<br />`ClusterName`, `NodeName`, `InstanceId`<br />`ClusterName`, `NodeName`, `InstanceId`, `VolumeId` | The total time, in seconds, that the instance store volume exceeded the attached Amazon EC2 instance's maximum IOPS performance. |
 | `node_diskio_instance_store_ec2_instance_performance_exceeded_tp` | `ClusterName`<br />`ClusterName`, `NodeName`, `InstanceId`<br />`ClusterName`, `NodeName`, `InstanceId`, `VolumeId` | The total time, in seconds, that the instance store volume exceeded the attached Amazon EC2 instance's maximum throughput performance. |
 | `node_diskio_instance_store_volume_queue_length` | `ClusterName`<br />`ClusterName`, `NodeName`, `InstanceId`<br />`ClusterName`, `NodeName`, `InstanceId`, `VolumeId` | The number of read and write operations waiting to be completed. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

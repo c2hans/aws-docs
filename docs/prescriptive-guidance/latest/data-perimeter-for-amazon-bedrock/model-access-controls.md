@@ -106,3 +106,7 @@ Implement environment separation through role paths by attaching the following I
 + **DevelopmentBedrockAccess** – Restricts development roles to the Claude Haiku model without streaming, providing cost-effective access for testing and development
 
 Create roles with paths like `/production/AppName` or `/development/AppName`. Paths are immutable and visible in CloudTrail, making them ideal for environment separation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

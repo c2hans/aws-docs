@@ -41,3 +41,7 @@ The following table lists the application versions that are available in each Am
 | Trino (PrestoSQL) | 426-amzn-0 | 422-amzn-0 | 414-amzn-1 | 414-amzn-0 | 410-amzn-0 | 410-amzn-0 | 403-amzn-0 | 403-amzn-0 | 398-amzn-0 | 398-amzn-0 | 388-amzn-0 | 388-amzn-0 | 378-amzn-0 | 367-amzn-0 | 360 | 359 | 350 | 350 | 343 | 343 | 338 | 338 |  -  |  -  |
 | Zeppelin | 0.10.1 | 0.10.1 | 0.10.1 | 0.10.1 | 0.10.1 | 0.10.1 | 0.10.1 | 0.10.1 | 0.10.1 | 0.10.1 | 0.10.1 | 0.10.1 | 0.10.0 | 0.10.0 | 0.10.0 | 0.9.0 | 0.9.0 | 0.9.0 | 0.9.0-preview1 | 0.9.0-preview1 | 0.9.0-preview1 | 0.9.0-preview1 | 0.9.0-SNAPSHOT | 0.9.0-SNAPSHOT |
 | ZooKeeper | 3.5.10 | 3.5.10 | 3.5.10 | 3.5.10 | 3.5.10 | 3.5.10 | 3.5.10 | 3.5.10 | 3.5.10 | 3.5.10 | 3.5.10 | 3.5.10 | 3.5.7 | 3.5.7 | 3.5.7 | 3.5.7 | 3.4.14 | 3.4.14 | 3.4.14 | 3.4.14 | 3.4.14 | 3.4.14 | 3.4.14 | 3.4.14 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

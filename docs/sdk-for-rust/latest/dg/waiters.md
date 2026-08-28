@@ -44,3 +44,7 @@ s3.wait_until_bucket_exists()
 
 **Note**
  Each wait method returns a `Result<FinalPoll<...>, WaiterError<...>> ` that can be used to get at the final response from reaching the desired condition or an error. See [FinalPoll](https://docs.rs/aws-smithy-runtime-api/latest/aws_smithy_runtime_api/client/waiters/struct.FinalPoll.html) and [WaiterError](https://docs.rs/aws-smithy-runtime-api/latest/aws_smithy_runtime_api/client/waiters/error/enum.WaiterError.html) in the Rust API documentation for details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Rust. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-rust` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

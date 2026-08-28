@@ -14,3 +14,7 @@ An ongoing reservation, such as after reservation start and before reservation e
 
 **Note**
 Reservations represent dedicated device access for your AWS account. Even if the device remains idle, no other customers can use it. Therefore, you are charged for the length of the reserved time, regardless of the utilized time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

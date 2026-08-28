@@ -70,3 +70,7 @@ Message 1
 Message 2
 "Rollback completed. Your KCL application was running Phase 2 (3x) functionality and has been rolled back to Phase 2 (2x compatible) mode. If you don't see mitigation after a short period of time, please rollback to Phase 1 by deploying your KCL 3.5.x application with the Phase 1 configuration."
 **Required action:** Your workers had auto-transitioned to full KCL 3.x load balancing and the KCL Migration Tool switched them back to KCL 1.x compatible mode. If the issue is resolved, you don't need to redeploy. If the issue persists, redeploy your KCL 3.5.x\+ application with Phase 1 configuration (`CLIENT_VERSION_CONFIG_COMPATIBLE_WITH_2X_PHASE1`) to your workers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

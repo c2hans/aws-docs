@@ -692,3 +692,7 @@ You cannot remove the last Owner from a resource.
 | Permission Inheritance | Library-level permissions that automatically grant access to child resources |
 | Direct Permission | Permission assigned directly to you (not through a group) |
 | Group Permission | Permission you inherit from a group you belong to |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

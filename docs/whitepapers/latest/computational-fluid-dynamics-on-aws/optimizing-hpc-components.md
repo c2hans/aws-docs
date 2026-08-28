@@ -118,3 +118,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
  AWS also offers managed desktop and application streaming services, such as [Amazon WorkSpaces](https://aws.amazon.com/workspaces) or [Amazon AppStream 2.0](https://aws.amazon.com/appstream2). Amazon WorkSpaces is a Desktop-as-a-Service solution providing Linux or Windows desktops while Amazon AppStream 2.0 is a non-persistent application and desktop streaming service for Windows environments.
 
  In general, visualizing CFD results on AWS reduces the need to download large data back to on-premises storage, and it helps reduce cost and increase productivity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

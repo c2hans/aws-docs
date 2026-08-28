@@ -53,3 +53,7 @@ Long-term memory automatically extracts and stores key insights from conversatio
 +  **Task-oriented / workflow agents:** An AI agent orchestrating a multi-step business process, such as invoice approval, uses memory to track the status of each step and maintain workflow progress.
 +  **Multi-agent systems:** A team of AI agents managing a supply chain shares memory to synchronize inventory levels, anticipate demand, and optimize logistics.
 +  **Autonomous or planning agents:** An autonomous vehicle uses memory to plan routes, adjust to traffic conditions, and learn from past experiences to improve future driving decisions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

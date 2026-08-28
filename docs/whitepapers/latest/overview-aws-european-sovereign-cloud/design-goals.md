@@ -22,3 +22,7 @@ We are gradually transitioning the AWS European Sovereign Cloud to be operated e
 1. The AWS European Sovereign Cloud will be capable of operation without dependency on global AWS systems so that the AWS European Sovereign Cloud will remain viable for operating workloads indefinitely even in the face of exceptional circumstances that could isolate the AWS European Sovereign Cloud from AWS resources located outside the EU, such as catastrophic disruption of transatlantic communications infrastructure or a military or geopolitical crisis threatening the sovereignty of EU member states.
 
 1. The AWS European Sovereign Cloud will be organized as a corporate entity under EU law, with EU nationals residing in the EU serving as managing directors. The AWS European Sovereign Cloud will also have an independent advisory board. The managing directors and advisory board will both be legally bound to act in the best interest of the AWS European Sovereign Cloud.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

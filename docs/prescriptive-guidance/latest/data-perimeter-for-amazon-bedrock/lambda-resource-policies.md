@@ -39,3 +39,7 @@ Control which services can invoke AWS Lambda functions by applying the following
 
 **Policy explanation:**
 + **AllowBedrockAgentInvoke** – Allows only Amazon Bedrock Agents service to invoke AWS Lambda functions, with additional conditions to prevent confused deputy attacks. The source account condition ensures the request originates from your account, while the source ARN condition validates the request comes from a legitimateAmazon Bedrock Agent.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -89,3 +89,7 @@ To attach a static IP to an instance, the instance must be in a `running` state.
  *You can attach only one static IP to an instance*
 
 You can attach one static IP to a single instance. You cannot attach multiple static IPs to one instance. If multiple static IPs have the same instance in the `AttachedTo` parameter, the behavior is unpredictable and any of the static IPs (but only one) could be attached to the instance. This will cause the stack to drift because only one of the static IPs will be attached to the instance but the template will show multiple.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -208,3 +208,7 @@ Note the following limitations when you specify `useGlueParquetWriter`:
 + The writer doesn't support writing empty DataFrames—for example, to write a schema-only file. When integrating with the AWS Glue Data Catalog by setting `enableUpdateCatalog=True`, attempting to write an empty DataFrame will not update the Data Catalog. This will result in creating a table in the Data Catalog without a schema.
 
 If your transform doesn't require these limitations, turning on the AWS Glue Parquet writer should increase performance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

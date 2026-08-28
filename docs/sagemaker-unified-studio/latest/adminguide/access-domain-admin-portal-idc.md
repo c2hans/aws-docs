@@ -26,3 +26,7 @@ From the domain administration page, you can access:
 + [View and manage project details](view-manage-project-details-idc.md)
 + [Edit project configuration](edit-project-configuration-idc.md)
 + [Delete a project](delete-project-idc.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

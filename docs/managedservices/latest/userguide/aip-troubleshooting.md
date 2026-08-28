@@ -11,3 +11,7 @@ There are three ways you might run into problems when using AMS Automated IAM Pr
 + RFC errors: These can happen for a variety of reasons; for example, incorrect input. For more information, see [Troubleshooting RFC errors in AMS](rfc-troubleshoot.md).
 + SSM errors: These can happen for a variety of reasons; for example, poor formatting. For more information, see [Troubleshooting Systems Manager Automation](https://docs.aws.amazon.com/systems-manager/latest/userguide/automation-troubleshooting.html).
 + Validation check findings: These occur when one of the many validation checks that Automated IAM Provisioning runs finds a problem. For a list of validation checks, and recommended actions to fix, see [Runtime checks for AMS Automated IAM Provisioning in AMS](aip-runtime-checks.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

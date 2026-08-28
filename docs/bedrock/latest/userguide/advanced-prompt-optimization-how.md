@@ -53,3 +53,7 @@ See the Bedrock public pricing page under Prompt Optimization, then Advanced Pro
 <a name="advanced-prompt-optimization-how-duration"></a>
 
 For a single prompt with only a few evaluation samples, the job could run for 15 to 20 minutes. For many prompts, each with a large number of evaluation samples, the job could run for over an hour, potentially for multiple hours. This is because each prompt template goes through multiple rounds of inference, evaluation, and rewriting loops based on every evaluation sample record you provide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

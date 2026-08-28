@@ -23,3 +23,7 @@ The following is a brief comparison of the Web players we offer:
 | Amazon IVS Web player SDK | A lightweight and customizable option for developers who want more control. | No | No |
 |  [Amazon IVS Player Tech for Video.js](player-videojs.md)  | A full-featured option, which may be appropriate if you already use Video.js and want a turnkey solution. | Yes([Video.js Skins](https://videojs.com/guides/skins/)) | Yes([Video.js Plugins](https://videojs.com/plugins/)) |
 |  [Amazon IVS Player Provider for JW Player](player-jwplayer.md)  | A full-featured option, which may be appropriate if you already use JW Player and want a turnkey solution. | Yes | N/A |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

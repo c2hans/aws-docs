@@ -38,3 +38,7 @@ To transfer object ownership, the following setup is required:
 + You must set up MediaLive to include the *Bucket owner full control** *ACL when it delivers to the bucket. You will perform this setup when you [create the channel](hls-destinations-s3-specify.md).
 
 The S3 canned ACL feature supports ACLs other than *Bucket owner full control*, but those other ACLs are typicallly not applicable to the use case of delivering video from MediaLive.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

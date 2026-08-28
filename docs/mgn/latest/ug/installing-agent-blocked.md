@@ -14,7 +14,7 @@ You can connect your on premises network to the subnet in your staging area VPC 
 ## Create a VPC endpoint for AWS Transform MGN
 <a name="installing-agent-blocked-create"></a>
 
-To allow the AWS Replication Agent installer to communicate with MGN, create an interface VPC endpoint for MGN in your staging area subnet. For more information, see [Creating an interface endpoint](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#create-interface-endpoint.html) in the *Amazon VPC User Guide*.
+To allow the AWS Replication Agent installer to communicate with MGN, create an interface VPC endpoint for MGN in your staging area subnet. For more information, see [Creating an interface endpoint](https://docs.aws.amazon.com/vpc/latest/userguide/vpce-interface.html#create-interface-endpoint) in the *Amazon VPC User Guide*.
 
 If the AWS replication agents are installed with a principal using [ AWSApplicationMigrationAgentInstallationPolicy ](security-iam-awsmanpol-AWSApplicationMigrationAgentInstallationPolicy.md#security-iam-awsmanpol-AWSApplicationMigrationAgentInstallationPolicy.title) and a VPCE policy is used (to scope down access), add this statement to your policy:
 
@@ -44,7 +44,7 @@ To allow the AWS Replication Agent installer to communicate with Amazon S3, crea
 
 Once you have created the Amazon VPC Endpoint, the AWS Replication Agent can connect to Amazon S3 via Site-to-Site VPN/Direct Connect by using the --s3-endpoint installation parameter. Learn more about [Private DNS for interface endpoints](https://docs.aws.amazon.com/vpc/latest/privatelink/vpce-interface.html#vpce-private-dns) in the *Amazon VPC User Guide.*
 
-Run the AWS Replication Agent installer with the --s3-endpoint parameter. Enter your endpoint-specific DNS hostname. The installer is then able to connect to MGN via the endpoint over your Site-to-Site VPN/Direct Connect connection.
+Run the AWS Replication Agent installer with the --s3-endpoint parameter. Enter your endpoint-specific DNS hostname. The installer is then able to connect to Amazon S3 via the endpoint over your Site-to-Site VPN/Direct Connect connection.
 
 ## Prescriptive guidance
 <a name="Prescriptive-guidance"></a>
@@ -52,3 +52,7 @@ Run the AWS Replication Agent installer with the --s3-endpoint parameter. Enter 
  A detailed guide for rehosting servers using MGN over private networks is available here:
 
 [Migrating on-premises servers to AWS over private networks by using MGN.](https://docs.aws.amazon.com/prescriptive-guidance/latest/rehost-servers-over-private-networks-mgn/welcome.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

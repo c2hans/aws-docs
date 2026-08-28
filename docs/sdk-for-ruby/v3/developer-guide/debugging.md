@@ -60,3 +60,7 @@ s3.config.http_wire_trace = true
 ```
 
 For more information on the fields in the wire trace information reported, see [Transfer Family required request headers](https://docs.aws.amazon.com/transfer/latest/userguide/making-api-requests.html#request-headers).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Ruby. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-ruby` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

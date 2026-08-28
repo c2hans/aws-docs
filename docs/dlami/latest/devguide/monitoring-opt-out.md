@@ -17,3 +17,7 @@ AWS doesn't collect or retain any other information about the DLAMI, such as the
 **To opt out of usage tracking**
 
 If you choose, you can opt out of usage tracking for a new DLAMI instance. To opt out, you must add a tag to your Amazon EC2 instance during launch. The tag should use the key `OPT_OUT_TRACKING` with the associated value set to `true`. For more information, see [Tag your Amazon EC2 resources](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html) in the *Amazon EC2 User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

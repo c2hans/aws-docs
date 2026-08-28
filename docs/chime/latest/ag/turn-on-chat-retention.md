@@ -24,3 +24,7 @@ Amazon Chime Enterprise account administrators can use the Amazon Chime console 
 1. Under **Chat room retention**, repeat steps 4-5. When finished, choose **Save**.
 
 Within one day of setting a retention period, users in your account lose access to the messages sent outside of the retention period.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

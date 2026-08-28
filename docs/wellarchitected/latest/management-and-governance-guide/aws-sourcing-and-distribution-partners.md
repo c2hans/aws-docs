@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
  [Coupa](https://docs.aws.amazon.com/marketplace/latest/buyerguide/procurement-system-integration-setup.html) platform provides greater visibility into, and control over, how companies spend money, helping you maximize your spend under management, achieve cost savings, and drive profitability.
 
  [SAP Ariba](https://docs.aws.amazon.com/marketplace/latest/buyerguide/procurement-system-integration.html) is a cloud-based innovative solution that allows suppliers and buyers to connect and do business on a single platform. It improves the overall vendor management system of an organization by providing less-costly ways of procurement and making business simple. Ariba acts as supply chain, procurement service, and contract management.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

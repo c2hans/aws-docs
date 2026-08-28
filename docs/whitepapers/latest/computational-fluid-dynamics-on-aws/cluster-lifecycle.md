@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/computational-fluid-d
  The cluster lifecycle can have a significant impact on costs. For example, it is common with many traditional on-premises clusters to maintain a large storage volume. This is not necessary in the cloud because data can be easily moved to S3 where it is reliably and cheaply stored. Maintaining a cluster as code allows you to place a cluster under version control and repeatedly deploy replicas if needed.
 
  Each cluster maintained as code can be instantiated multiple times if multiple clusters are required for testing, onboarding new users, or running a large number of cases in parallel. If set up correctly, you avoid idle infrastructure when jobs are not running.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

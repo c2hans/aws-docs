@@ -20,3 +20,7 @@ Amazon Timestream handles failovers automatically so you can resume database ope
 | The Timestream instance was modified by customer.  |  An Timesteam for InfluxDB DB instance modification triggered a failover. For more information, see [Updating DB instances](timestream-for-influx-managing-modifying-db.md).  |
 | The Timestream Multi-AZ primary instance is busy and unresponsive.  |  The primary DB instance is unresponsive. We recommend that you do the following: \* Examine the event for excessive CPU, memory, or swap space usage. \* Evaluate your workload to determine whether you're using the appropriate DB instance class. For more information, see DB instance classes.  |
 | The storage volume underlying the primary host of the Timestream Multi-AZ instance experienced a failure.  |  The Multi-AZ DB instance deployment detected a storage issue on the primary DB instance and failed over.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

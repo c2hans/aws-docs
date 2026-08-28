@@ -26,3 +26,7 @@ We recommend the following free workshops to help understand how OpenSearch diff
 + Talk to your AWS account team about attending Immersion Days
 
 These resources are designed to guide you through the key differences between Solr and OpenSearch and provide practical experience with OpenSearch features and best practices.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

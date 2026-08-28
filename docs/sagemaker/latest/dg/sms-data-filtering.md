@@ -44,3 +44,7 @@ For more information about the Amazon S3 `SELECT` statement, see [ Selecting Con
 Choose **Create subset** to start the selection, and then choose **Use this subset** to use the selected data.
 
 SageMaker AI creates a manifest file for the selected data objects. It also updates the value in the **Input dataset location** field to point to the new manifest file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

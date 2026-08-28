@@ -4694,3 +4694,7 @@ The following updates were released in April and May 2018:
 + Agent username is now available as part of agent configuration data in the [Connect Customer Streams](https://github.com/aws/amazon-connect-streams/blob/master/Documentation.md) API.
 + Contact attributes are now available when using the streams.js (Streams API) for screenpops after queued callbacks.
 + Fixed issue where for some auto-accept calls, the agent continued to hear ringing after accepting and joining the call.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

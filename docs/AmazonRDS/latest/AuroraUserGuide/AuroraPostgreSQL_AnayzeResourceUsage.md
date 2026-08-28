@@ -80,3 +80,7 @@ To help minimize network usage, you can consider:
 + Directing the read-only workload to a read-only instance.
 + Deleting any unused indexes.
 + Checking for bloated objects and VACUUM. In the case of severe bloat, use the PostgreSQL extension `pg_repack`. For more information about `pg_repack`, see [Reorganize tables in PostgreSQL databases with minimal locks](https://reorg.github.io/pg_repack/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

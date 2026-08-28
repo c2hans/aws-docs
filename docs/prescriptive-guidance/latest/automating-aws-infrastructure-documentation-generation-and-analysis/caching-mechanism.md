@@ -54,3 +54,7 @@ The caching mechanism uses the following workflow:
 1. **Cache miss** – If no valid cache entry is found, the system processes the request normally by calling AWS APIs or Amazon Bedrock, generates fresh results, and then saves them to the cache for future reuse.
 
 1. **Cache monitoring and cleanup** – Administrators can retrieve real-time statistics or trigger cache cleanup to remove entries older than a defined threshold (default 30 days). This keeps the cache performant and prevents excessive storage usage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

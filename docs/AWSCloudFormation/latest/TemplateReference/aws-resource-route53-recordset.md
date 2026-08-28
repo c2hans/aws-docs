@@ -30,7 +30,6 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Comment](#cfn-route53-recordset-comment)" : {{String}},
       "[Failover](#cfn-route53-recordset-failover)" : {{String}},
       "[GeoLocation](#cfn-route53-recordset-geolocation)" : {{GeoLocation}},
-      "[GeoProximityLocation](#cfn-route53-recordset-geoproximitylocation)" : {{GeoProximityLocation}},
       "[HealthCheckId](#cfn-route53-recordset-healthcheckid)" : {{String}},
       "[HostedZoneId](#cfn-route53-recordset-hostedzoneid)" : {{String}},
       "[HostedZoneName](#cfn-route53-recordset-hostedzonename)" : {{String}},
@@ -60,8 +59,6 @@ Properties:
   [Failover](#cfn-route53-recordset-failover): {{String}}
   [GeoLocation](#cfn-route53-recordset-geolocation): {{
     GeoLocation}}
-  [GeoProximityLocation](#cfn-route53-recordset-geoproximitylocation): {{
-    GeoProximityLocation}}
   [HealthCheckId](#cfn-route53-recordset-healthcheckid): {{String}}
   [HostedZoneId](#cfn-route53-recordset-hostedzoneid): {{String}}
   [HostedZoneName](#cfn-route53-recordset-hostedzonename): {{String}}
@@ -130,12 +127,6 @@ You can't create non-geolocation resource record sets that have the same values 
 *Type*: [GeoLocation](aws-properties-route53-recordset-geolocation.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
-`GeoProximityLocation`  <a name="cfn-route53-recordset-geoproximitylocation"></a>
-* GeoproximityLocation resource record sets only:* A complex type that lets you control how Route 53 responds to DNS queries based on the geographic origin of the query and your resources.
-*Required*: No
-*Type*: [GeoProximityLocation](aws-properties-route53-recordset-geoproximitylocation.md)
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
-
 `HealthCheckId`  <a name="cfn-route53-recordset-healthcheckid"></a>
 If you want Amazon Route 53 to return this resource record set in response to a DNS query only when the status of a health check is healthy, include the `HealthCheckId` element and specify the ID of the applicable health check.
 Route 53 determines whether a resource record set is healthy based on one of the following:
@@ -186,7 +177,7 @@ The ID of the hosted zone that you want to create records in.
 Specify either `HostedZoneName` or `HostedZoneId`, but not both. If you have multiple hosted zones with the same domain name, you must specify the hosted zone using `HostedZoneId`.
 *Required*: No
 *Type*: String
-*Maximum*: `32`
+*Maximum*: `44`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `HostedZoneName`  <a name="cfn-route53-recordset-hostedzonename"></a>
@@ -195,7 +186,7 @@ When you create a stack using an AWS::Route53::RecordSet that specifies `HostedZ
 Specify either `HostedZoneName` or `HostedZoneId`, but not both. If you have multiple hosted zones with the same domain name, you must specify the hosted zone using `HostedZoneId`.
 *Required*: No
 *Type*: String
-*Maximum*: `32`
+*Maximum*: `256`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `MultiValueAnswer`  <a name="cfn-route53-recordset-multivalueanswer"></a>
@@ -224,7 +215,7 @@ You can't use the \* wildcard for resource records sets that have a type of NS.
 *Required*: Yes
 *Type*: String
 *Maximum*: `1024`
-*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Region`  <a name="cfn-route53-recordset-region"></a>
 *Latency-based resource record sets only:* The Amazon EC2 Region where you created the resource that this resource record set refers to. The resource typically is an AWS resource, such as an EC2 instance or an ELB load balancer, and is referred to by an IP address or a DNS domain name, depending on the record type.
@@ -247,6 +238,7 @@ Note the following:
 + If you're creating an alias record, omit `ResourceRecords`.
 *Required*: No
 *Type*: Array of String
+*Maximum*: `4000`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `SetIdentifier`  <a name="cfn-route53-recordset-setidentifier"></a>
@@ -254,7 +246,7 @@ Note the following:
 For information about routing policies, see [Choosing a Routing Policy](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html) in the *Amazon Route 53 Developer Guide*.
 *Required*: No
 *Type*: String
-*Minimum*: `1`
+*Minimum*: `0`
 *Maximum*: `128`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -311,19 +303,6 @@ If you're creating an alias record that has the same name as the hosted zone (kn
 <a name="aws-resource-route53-recordset-return-values-ref"></a>
 
 The name of the record.
-
-### Fn::GetAtt
-<a name="aws-resource-route53-recordset-return-values-fn--getatt"></a>
-
-The `Fn::GetAtt` intrinsic function returns a value for a specified attribute of this type. The following are the available attributes and sample return values.
-
-For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::GetAtt`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getatt.html).
-
-####
-<a name="aws-resource-route53-recordset-return-values-fn--getatt-fn--getatt"></a>
-
-`Id`  <a name="Id-fn::getatt"></a>
- This element contains an ID that you use when performing a `GetChange` action to get detailed information about the change.
 
 ## Examples
 <a name="aws-resource-route53-recordset--examples"></a>
@@ -467,3 +446,7 @@ Resources:
 ## See also
 <a name="aws-resource-route53-recordset--seealso"></a>
 + [ChangeResourceRecordSets](https://docs.aws.amazon.com/Route53/latest/APIReference/API_ChangeResourceRecordSets.html) in the *Amazon Route 53 API Reference*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

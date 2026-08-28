@@ -19,3 +19,7 @@ Configure a custom domain for your deployment following your organization’s se
  **External Identity Provider Integration**
 
 Instead of managing users and groups directly in Amazon Cognito, integrate with your organization’s external identity provider. This centralizes user and group management in your existing identity system and enforces consistent security policies across your organization. For configuration guidance, see [Cognito User Pools Identity Federation](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-identity-federation.html) in the AWS documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,3 +39,7 @@ Consider these guidelines when developing code for an App Runner web application
 + **Instance startup** – App Runner provides five minutes of instance startup time. Your instance must listen for requests on their configured listening ports and be healthy within five minutes of their startup. During the startup time, App Runner instances are allocated virtual CPU (vCPU) based on your vCPU configuration. For more information about available vCPU configuration, see [App Runner supported configurations](architecture.md#architecture.vcpu-memory).
 
   After the instance successfully starts up, it goes into an idle state and waits for requests. You pay based on the instance startup duration, with the minimum charge of one minute per instance start. For information about pricing, see [AWS App Runner pricing](https://aws.amazon.com/apprunner/pricing).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

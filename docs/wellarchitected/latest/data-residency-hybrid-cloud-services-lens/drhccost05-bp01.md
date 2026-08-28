@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 <a name="implementation-guidance-51"></a>
 
  While using hybrid edge services like AWS Outposts and Local Zones, monitor data transfer patterns and costs, and design your network configurations with cost optimization in mind. Data transfer from Outposts to AWS Regions is free, but transfers from Regions to Outposts are more expensive over the internet compared to AWS Direct Connect. Local Zones have internet gateways for local egress, but routing traffic to AWS Regions incurs additional charges similar to [inter-AZ transfers](https://aws.amazon.com/ec2/pricing/on-demand/#Data_Transfer_within_the_same_AWS_Region). You can use local VPC peering for Outposts and Local Zones, which incurs lower costs than using AWS Transit Gateway and minimizes network overhead. Additionally, you should design hybrid architectures following networking best practices to meet low latency requirements while optimizing costs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

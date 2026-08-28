@@ -55,3 +55,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 +  [Managing storage costs with Amazon S3 Intelligent-Tiering](https://docs.aws.amazon.com/AmazonS3/latest/userguide/intelligent-tiering.html)
 +  [Amazon S3 Storage Analytics and Insights](https://aws.amazon.com/s3/storage-analytics-insights/)
 +  [AWS Well-Architected Framework: Performance Efficiency Pillar - Data Management](https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/data-management.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

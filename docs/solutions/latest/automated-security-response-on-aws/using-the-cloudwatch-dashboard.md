@@ -7,7 +7,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 
 To view the dashboard:
 
-1. Navigate to Amazon CloudWatch and then Dashboards.
+1. Navigate to [Amazon CloudWatch](https://console.aws.amazon.com/cloudwatch/) and then Dashboards.
 
 1. Select the dashboard named "ASR-Remediation-Metrics-Dashboard".
 
@@ -46,24 +46,28 @@ All alarm thresholds can be modified to suit the individual deployment needs.
 ## Modifying alarm thresholds
 <a name="modifying-alarm-thresholds"></a>
 
-1. Navigate to Amazon CloudWatch → Alarms → All Alarms.
+1. Navigate to [Amazon CloudWatch → Alarms → All Alarms](https://console.aws.amazon.com/cloudwatch/home#alarmsV2:).
 
-1. Choose the Alarm you would like to modify, then select Actions → Edit.
+1. Choose the Alarm you would like to modify, then choose **Actions**, and then choose **Edit**.
 
-![CloudWatch alarm list.](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/cloudwatch-alarm-list.png)
+![CloudWatch Alarms console showing ASR solution alarm states](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/cloudwatch-alarm-list.png)
 
 1. Change the threshold to the desired value and save.
 
-![Edit options for alarms.](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/edit-options-for-alarms.png)
+![Edit alarm dialog with threshold value and condition fields](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/edit-options-for-alarms.png)
 
-1. Navigate to the CloudWatch dashboard to modify the charts there to match the new settings.
+1. Navigate to the [CloudWatch dashboard](https://console.aws.amazon.com/cloudwatch/home#dashboards:) to modify the charts there to match the new settings.
 
-   1. Select the ellipsis on the top right of the corresponding widget.
+   1. Choose the ellipsis on the top right of the corresponding widget.
 
-   1. Select Edit.
+   1. Choose **Edit**.
 
-   1. Change to the Options tab.
+   1. Choose the **Options** tab.
 
    1. Modify the Alarm annotation to match the new settings.
 
-![Modify dashboard widget.](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/modify-dashboard-widget.png)
+![Widget editor Options tab with horizontal annotation settings](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/modify-dashboard-widget.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

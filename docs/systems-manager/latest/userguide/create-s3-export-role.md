@@ -101,3 +101,7 @@ To do so, you must specify a service role with the necessary permissions and tru
 1. For step 10, choose **Step 2: Add permissions** and select the name of the policy you created in the previous step.
 
 After you create the role, you can select it when following the steps in [Downloading or exporting a managed node report](explore-nodes-download-report.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

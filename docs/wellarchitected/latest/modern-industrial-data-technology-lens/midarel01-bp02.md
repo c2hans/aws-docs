@@ -58,3 +58,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
  [Monitoring Network Health with Network Manager ](https://aws.amazon.com/about-aws/whats-new/2022/11/network-manager-real-time-performance-monitoring-aws-global-network/)
 
  [AWS Transit Gateway Network Manager for Industrial IoT ](https://pages.awscloud.com/Introduction-to-AWS-Transit-Gateway-Network-Manager_2019_1214-NET_OD.html?cr=%7Bcreative%7D&kw=%7Bkeyword%7D)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

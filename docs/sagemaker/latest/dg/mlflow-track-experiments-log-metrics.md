@@ -107,3 +107,7 @@ Within the MLflow UI, choose the experiment name in the left navigation pane to 
 This example logs the logistic regression model. Within the MLflow UI, you should also see the logged model artifacts.
 
 ![Tracked model artifacts for an experiment run in the MLflow UI.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/mlflow/mlflow-ui-model-artifacts.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

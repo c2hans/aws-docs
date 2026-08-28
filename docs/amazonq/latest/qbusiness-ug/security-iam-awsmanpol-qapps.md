@@ -63,3 +63,7 @@ View details about updates to AWS managed policies for Amazon Q Apps since this 
 | --- | --- | --- |
 |  [QAppsServiceRolePolicy](#security-iam-awsmanpol-amazonq-app-role-policy-qapps) - New policy  | Amazon Q Apps added a new policy that grants permissions needed for Q Apps to publish metrics | Sep 30, 2024 |
 | Amazon Q Apps started tracking changes | Amazon Q Apps started tracking changes for its AWS managed policies. | Sep 30, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

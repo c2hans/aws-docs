@@ -235,3 +235,7 @@ The DataOps Aurora module (`@aws-mdaa/dataops-aurora`) deploys Aurora Serverless
 + Per-cluster access managed policy with `rds-db:connect`, `rds:Describe*`, and Secrets Manager access
 + Top-level `dataAdminRoles` for cross-cluster admin access, per-cluster `clusterAccessRoles`
 + DataOps project integration for shared KMS key auto-wiring via `projectName`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Modern Data Architecture Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

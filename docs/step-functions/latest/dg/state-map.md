@@ -56,3 +56,7 @@ The following table highlights the differences between the Inline and Distribute
 | **Monitoring and observability** |
 | --- |
 | You can review the workflow's execution history from the console or by invoking the `[GetExecutionHistory](https://docs.aws.amazon.com/step-functions/latest/apireference/API_GetExecutionHistory.html)` API action.<br />You can also view the execution history through CloudWatch and X-Ray. | When you run a `Map` state in Distributed mode, Step Functions creates a Map Run resource. A Map Run refers to a set of child workflow executions that a *Distributed Map state* starts. You can view a Map Run in the Step Functions console. You can also invoke the `[DescribeMapRun](https://docs.aws.amazon.com/step-functions/latest/apireference/API_DescribeMapRun.html)` API action. A Map Run also emits metrics to CloudWatch.<br />For more information, see [Viewing a Distributed Map Run execution in Step Functions](concepts-examine-map-run.md). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

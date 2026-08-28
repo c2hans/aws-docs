@@ -143,3 +143,7 @@ Use the following guidance to resolve common log collection issues.
 **Cause:** High-volume namespaces (such as load testing or monitoring namespaces) generate large volumes of logs.
 
 **Solution:** Set a retention policy on the log group to automatically delete older logs. For instructions, see [Set log retention](#container-insights-eks-otel-logs-retention).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

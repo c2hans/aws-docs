@@ -15,3 +15,7 @@ The naming convention for cluster alarms is `CLUSTER_NAME-COMPONENT-METRIC`, e.g
 + `CLUSTER_NAME-HeadNode-Cpu`: red if CPU utilization is greater than 90%. In case of alarm, check the processes that are consuming the CPU the most with `ps -aux --sort=-%cpu | head -n 10`.
 + `CLUSTER_NAME-HeadNode-Mem`: red if memory utilization is greater than 90%. In case of alarm, check the processes that are consuming the memory the most with `ps -aux --sort=-%mem | head -n 10`.
 + `CLUSTER_NAME-HeadNode-Disk`: red if the occupied disk space is greater than 90% on path /. In case of alarm, check the folders consuming the majority of the space with `du -h --max-depth=2 / 2> /dev/null | sort -hr`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

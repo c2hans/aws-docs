@@ -13,3 +13,7 @@ AWS services are designed to provide cost-effective, secure, and reliable perfor
 + **Automation** – AWS services can automate many of the tedious tasks associated with managing a cloud environment, such as provisioning, monitoring, and patching. You can simplify deployment of a historian by using infrastructure as code (IaC) and using a continuous integration and continuous delivery (CI/CD) pipeline.
 + **Innovation** – AWS services constantly evolve to provide the latest features and capabilities, helping you stay ahead of the competition.
 + **Integration** – AWS services can integrate with other cloud services, helping you to quickly build and deploy applications in the cloud. Cloud-based historians can more easily integrate with AI/ML services. For more information, see [Strengthening Operational Insights for Industrial Assets with AWS IoT AIML Solution](https://aws.amazon.com/blogs/iot/strengthening-operational-insights-for-industrial-assets-with-aws-iot-aiml-solution-part-1/) (AWS blog post).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

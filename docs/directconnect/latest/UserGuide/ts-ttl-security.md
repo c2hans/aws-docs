@@ -21,3 +21,7 @@ Direct Connect uses single-hop eBGP and does not support multihop eBGP on virtua
 Use this guidance for the BGP session on a Direct Connect virtual interface. BGP peering to a Transit Gateway over a transit virtual interface uses multihop BGP and is configured differently.
 
 If the BGP session does not establish after you remove the TTL security configuration, [contact AWS Support](https://aws.amazon.com/support/createCase).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

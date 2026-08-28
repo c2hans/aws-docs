@@ -20,3 +20,7 @@ Use the following procedure to perform a search:
 1. Use the filter buttons (**This conversation**, **This room**, **This group**, **Files**, **Starred**) to refine the scope of your search.
 
 1. Type a keyword into the search text box and press **Enter** to perform the search.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

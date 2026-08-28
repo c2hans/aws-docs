@@ -16,3 +16,7 @@ Use the following section to help you troubleshoot problems with visuals and the
 + [My visual can’t find the query table](troubleshooting-dataset-changed-tables.md)
 + [My visual doesn't update after I change a calculated field](troubleshooting-visual-refresh.md)
 + [Values in a Microsoft Excel file with scientific notation don't format correctly in Quick Sight](troubleshooting-number-formatting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

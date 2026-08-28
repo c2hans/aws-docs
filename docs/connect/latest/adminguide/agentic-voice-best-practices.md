@@ -647,3 +647,7 @@ Let me confirm — your last name is Smith, spelled <spell>SMITH</spell>. Is tha
 | Non-multilingual voice for multi-language | Voice retains primary locale accent | Use a multilingual voice for native pronunciation. |
 | Wrapping text in markdown bold or italics | Engine speaks the asterisks aloud | Remove all markdown formatting. |
 | Sending malformed or unclosed tags | Engine speaks raw tag text | Validate tags are well-formed with matching brackets. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

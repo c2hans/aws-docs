@@ -13,3 +13,7 @@ If you have AWS Batch Amazon EKS compute environments still using Amazon Linux 2
 For more information about the Amazon EKS AL2 end-of-life, see [Amazon EKS AMI deprecation FAQs](https://docs.aws.amazon.com/eks/latest/userguide/eks-ami-deprecation-faqs.html) in the *Amazon EKS User Guide*.
 
 For help migrating AWS Batch Amazon EKS compute environments from Amazon Linux 2 to Amazon Linux 2023, see [How to upgrade from EKS AL2 to EKS AL2023](eks-migration-2023.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

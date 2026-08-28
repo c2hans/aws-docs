@@ -47,3 +47,7 @@ Refer to the following resources to learn more about our best practices for oper
 <a name="opex-third-party-tools"></a>
 +  [Serverless Developer Tools page including third-party frameworks/tools](https://aws.amazon.com/serverless/developer-tools/)
 +  [Stelligent: CodePipeline Dashboard for operational metrics](https://stelligent.com/2017/11/16/codepipeline-dashboard/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

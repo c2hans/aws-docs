@@ -31,3 +31,7 @@ The SAS client connects to the SAS server that's running within the same network
 This architecture doesn't use bastion hosts, implemented as additional Amazon Elastic Compute Cloud (Amazon EC2) instances, for console and direct management. All EC2 instances are configured to use AWS Systems Manager Fleet Manager in case the administrative Citrix access doesn't work. Fleet Manager, a capability of AWS Systems Manager, provides an interface that helps you to remotely manage nodes running on AWS or in on-premises environments. For more information, see [AWS Systems Manager Fleet Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet.html) in the AWS Systems Manager User Guide.
 
 The VPC is part of the landing zone's hub and spoke network. The network provides on-premises, internet breakout, and other external connectivity centrally.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

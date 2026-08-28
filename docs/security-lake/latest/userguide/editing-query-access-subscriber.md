@@ -119,3 +119,7 @@ To edit a subscriber with query access programmatically, use the [UpdateSubscrib
 + For `sources`, remove existing sources or specify sources that you want to add. If you remove a source, no further action is required from your end. If you add a source, no new resource share invitation is created. However, Security Lake updates the shared Lake Formation tables based on the added sources. The subscriber must create a resource link to the updated shared tables so that they can query the source data. For instructions, see step 2 in [Setting up cross-account table sharing (subscriber step)](create-query-subscriber-procedures.md#grant-query-access-subscriber).
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

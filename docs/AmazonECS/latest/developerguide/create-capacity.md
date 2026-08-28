@@ -40,3 +40,7 @@ To help minimize Spot capacity shortages, consider the following recommendations
 For information about how to configure spot termination notices on your container instances, see:
 + [Configuring Amazon ECS Linux container instances to receive Spot Instance notices](spot-instance-draining-linux-container.md)
 + [Configuring Amazon ECS Windows container instances to receive Spot Instance notices](windows-spot-instance-draining-container.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

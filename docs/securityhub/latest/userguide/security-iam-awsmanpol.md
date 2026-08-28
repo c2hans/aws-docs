@@ -141,3 +141,7 @@ The following table provides details about updates to AWS managed policies for A
 | [AWSSecurityHubServiceRolePolicy](#security-iam-awsmanpol-awssecurityhubservicerolepolicy) – Added to the list of managed policies  | Added information about the managed policy AWSSecurityHubServiceRolePolicy, which is used by the Security Hub CSPM service-linked role.  | June 11, 2021 |
 | [AWSSecurityHubOrganizationsAccess ](#security-iam-awsmanpol-awssecurityhuborganizationsaccess) – New policy  | Security Hub CSPM added a new policy that grants permissions that are needed for the Security Hub CSPM integration with Organizations.  | March 15, 2021 |
 | Security Hub CSPM started tracking changes  | Security Hub CSPM started tracking changes for its AWS managed policies.  | March 15, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

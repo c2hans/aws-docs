@@ -99,3 +99,7 @@ The following example creates a resource policy that allows AWS account ID `1111
     ResourceArn: "arn:aws:cloudtrail:us-east-1:01234567890:channel/EXAMPLE8-0558-4f7e-a06a-43969EXAMPLE"
     ResourcePolicy: "{ \"Version\": \"2012-10-17\", \"Statement\": [ { \"Sid\": \"DeliverEventsThroughChannel\", \"Effect\": \"Allow\", \"Principal\": { \"AWS\": [ \"arn:aws:iam::111122223333:root\" ] }, \"Action\":\"cloudtrail-data:PutAuditEvents\", \"Resource\": \"arn:aws:cloudtrail:us-east-1:01234567890:channel/EXAMPLE8-0558-4f7e-a06a-43969EXAMPLE\" } ] }"
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -151,3 +151,7 @@ The following information can help you manage cache data size:
 + If you modify cache names or directory structures such that HealthOmics can’t find a matching entry for a task, HealthOmics recomputes the task.
 
 If you need to check whether a cache entry is still valid, check the cache manifest version number. For more information, see [Manifest version updates and data freshness](#workflow-cache-data-versions).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

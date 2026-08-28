@@ -99,3 +99,7 @@ The table has the following columns:
 + **Related metrics** – Metrics that give you specific measurements for the anomaly. For more information about these metrics, see [Metrics reference for Amazon Aurora](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/metrics-reference.html) in the *Amazon Aurora User Guide* or [Metrics reference for Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/metrics-reference.html) in the *Amazon RDS User Guide*.
 
   In the first anomaly, DevOps Guru for RDS recommends that compare DB load to the maximum CPU for your instance. In the second anomaly, the recommendation is to look at CPU run queue, CPU utilization, and SQL execution rate.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

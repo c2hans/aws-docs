@@ -171,3 +171,7 @@ AWS IoT Greengrass computes the digest of each artifact when you create the comp
    The operation returns a response that contains the component's metadata. The metadata contains a `status` object that contains the component state and any errors, if applicable.
 
    When the component state is `DEPLOYABLE`, you can deploy the component to devices. For more information, see [Deploy AWS IoT Greengrass components to devices](manage-deployments.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ Here is the sample architecture for this use case.
    Another option is to set up a service bus between the two container instances to keep them in sync. You can use Amazon Managed Streaming for Apache Kafka (Amazon MSK) to set up such service buses.
 
 1. Manufacturers can use the cloud components of microservices to process cases that are less sensitive to latency, such as sending updates to a PLM system for process improvement, sending confirmations to an ERP system for production, and exporting data to a data lake for reporting and analytics. Because of the cloud's economics, scale, and disaster recovery benefits, manufacturers can store data for extended periods in cloud instances of the microservice.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

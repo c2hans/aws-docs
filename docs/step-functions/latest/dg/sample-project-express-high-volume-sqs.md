@@ -67,3 +67,7 @@ In this sample message, the `input:` line has been formatted with line breaks to
 1. Open the [Step Functions console]().
 
 1.  Go to your [Amazon CloudWatch Logs log group](https://console.aws.amazon.com/cloudwatch/home?#logs:) and inspect the logs. The name of the log group will look like **example-ExpressLogGroup-wJalrXUtnFEMI**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

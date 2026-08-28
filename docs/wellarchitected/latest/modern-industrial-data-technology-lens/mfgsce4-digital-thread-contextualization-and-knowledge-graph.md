@@ -70,3 +70,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 1.  Use [Amazon VPC](https://aws.amazon.com/vpc/) to operate the application in a secure and isolated network. [AWS Identity and Access Management](https://aws.amazon.com/iam/) enhances access control, while [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/) manages certificates and [AWS WAF](https://aws.amazon.com/waf/) provides web application security. Malicious activity is constantly monitored by [Amazon GuardDuty](https://aws.amazon.com/guardduty/). The data at rest is encrypted with [AWS Key Management Service](https://aws.amazon.com/kms/) and can be integrated with other third-party KMS solutions.
 
 1.  Use [AWS CloudTrail](https://aws.amazon.com/cloudtrail/) to enhance transparency by tracking activities, [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) to monitor resources, and [AWS CloudFormation](https://aws.amazon.com/cloudformation/) for automated resource deployment of digital thread application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

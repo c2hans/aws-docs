@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
  The scenarios provide blueprints for organizations to modernize their supply chains while adhering to architectural best practices. Whether implementing individual components or complete solutions, the Well-Architected Framework makes sure these transformations deliver business value while maintaining security, reliability, and operational excellence.
 
  As supply chains continue to evolve, these architectures demonstrate AWS' commitment to helping organizations build future-ready solutions that can scale and adapt to new challenges. Through the Well-Architected Framework, organizations gain both the technical foundation and architectural guidance needed to succeed in today's dynamic supply chain landscape.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -82,3 +82,7 @@ For information about configuring Transit Gateways, see [Working with Transit Ga
 Consider this scenario of a Direct Connect gateway owner (Account Z) who owns the Direct Connect gateway. Account A owns the Transit Gateway and wants to use the Direct Connect gateway. Account Z accepts the association proposals and can optionally update the prefixes that are allowed from Account A's Transit Gateway. After Account Z accepts the proposals, the VPCs attached to the Transit Gateway can route traffic from the Transit Gateway to the Direct Connect gateway. Account Z also owns the routing to the customers because Account Z owns the gateway.
 
 ![A Direct Connect gateway from an AWS account associated with a Transit Gateway from another AWS account.](http://docs.aws.amazon.com/directconnect/latest/UserGuide/images/direct-connect-ma-tgw.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

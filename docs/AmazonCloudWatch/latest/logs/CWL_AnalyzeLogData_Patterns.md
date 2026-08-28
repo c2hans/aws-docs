@@ -109,3 +109,7 @@ This section contains more details about the `pattern` command and its uses.
 + You can include the `filter` command before a `pattern` command to cause only the filtered set of log events to be used as input for pattern analysis.
 + To see pattern results for a particular field, such as a field derived from the `parse` command, use `pattern @fieldname`.
 + Queries with non-log output, such as queries with the `stats` command, do not return pattern results.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

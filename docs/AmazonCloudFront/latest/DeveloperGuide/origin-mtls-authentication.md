@@ -54,3 +54,7 @@ To implement origin mTLS with CloudFront, you'll need to import the client certi
 + [Certificate management with AWS Certificate Manager](origin-certificate-management-certificate-manager.md)
 + [Enable origin mutual TLS for CloudFront distributions](origin-enable-mtls-distributions.md)
 + [Using CloudFront Functions with origin mutual TLS](origin-mtls-cloudfront-functions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

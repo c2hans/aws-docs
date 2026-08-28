@@ -24,3 +24,7 @@ The target audiences for this guide are application architects, infrastructure a
 Implementing the DR Orchestrator Framework solution can help you achieve the following outcomes:
 + **Reduce manual errors during an outage** – Manual performance of DR processes can be prone to errors. Automating actions during the phases of a DR activity reduces the manual errors and helps to ensure a smoother failover or failback.
 + **Manage DR at scale** – If your organization has a large fleet of databases, building automation for DR helps you scale your DR solution. You can automate your AWS database DR solution by using DR Orchestrator Framework. DR Orchestrator automates the steps for failover or failback of AWS databases by using a parameter file in JSON format.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

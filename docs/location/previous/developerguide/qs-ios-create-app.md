@@ -29,3 +29,7 @@ Once you have creating the base application, you will need to install the requir
    + For the Maplibre native package, use this URL: [https://github.com/maplibre/maplibre-gl-native-distribution](https://github.com/maplibre/maplibre-gl-native-distribution). From the URL, add these packages: `maplibre-gl-native-distribution`, and `Mapbox`.
    + For the Amazon Location authentication iOS SDK, use this URL: [https://github.com/aws-geospatial/amazon-location-mobile-auth-sdk-ios](https://github.com/aws-geospatial/amazon-location-mobile-auth-sdk-ios). From the URL, add these packages: `amazon-location-mobile-auth-sdk-ios`, and `AmazonLocationiOSAuthSDK`.
    + For the Amazon Location tracking iOS SDK, use this URL: [https://github.com/aws-geospatial/amazon-location-mobile-tracking-sdk-ios](https://github.com/aws-geospatial/amazon-location-mobile-tracking-sdk-ios). From the URL, add these packages: `amazon-location-mobile-tracking-sdk-ios`, and `AmazonLocationiOSTrackingSDK`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

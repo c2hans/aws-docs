@@ -34,3 +34,7 @@ source_url: https://docs.aws.amazon.com/AmazonSimpleDB/latest/DeveloperGuide/Doc
 | Increased Item Limit | Select can now return up to 2500 items. For more information about Select, see [Limits](SDBLimits.md).  | 18 May 2009 |
 | Query and QueryWithAttributes Deprecated | Amazon SimpleDB replaced Query and QueryWithAttributes with Select, a query function that is similar to the standard SQL SELECT statement. For more information, see [Using Select to Create Amazon SimpleDB Queries](UsingSelect.md).  | 18 May 2009 |
 | SSL Required | All requests to Amazon SimpleDB must be made over SSL (https://). For more information, see [Request Authentication](RequestAuthentication.md).  | 18 May 2009 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

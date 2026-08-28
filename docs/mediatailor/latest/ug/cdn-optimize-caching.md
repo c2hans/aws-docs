@@ -113,3 +113,7 @@ When implementing both channel assembly and SSAI, ensure your caching strategy i
 | Ad segments | 24\+ hours | 24\+ hours | 24\+ hours (consistent) |
 
 This configuration maximizes cache efficiency while ensuring viewers receive up-to-date manifests for personalized ad insertion.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

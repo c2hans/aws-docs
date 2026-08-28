@@ -24,3 +24,7 @@ You can evaluate your workload and application code to confirm if strongly consi
 <a name="CostOptimization_TableUsagePatterns_TTL"></a>
 
 [Time to Live (TTL)](TTL.md) helps you simplify your application logic and optimize the price of storage by expiring data from tables automatically. Data that you no longer need is automatically deleted from your table based on the Time to Live value that you set.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

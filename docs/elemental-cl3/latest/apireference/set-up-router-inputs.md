@@ -13,3 +13,7 @@ The Router Inputs entity holds information about the router inputs you are using
 + [GET List: Get a List of Router Inputs](set-up-router-inputs-get-a-list.md)
 + [GET: Get Attributes of a Router Input](set-up-router-inputs-get-attributes.md)
 + [DELETE: Delete a Router Input](set-up-router-inputs-delete.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

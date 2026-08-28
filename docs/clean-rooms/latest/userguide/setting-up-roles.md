@@ -742,3 +742,7 @@ Your AWS Glue resources and underlying Amazon S3 resources must be in the same A
      {{bucket\_name/optional\_key\_prefix}} – The **Amazon Resource Name (ARN)** of the results destination in Amazon S3. The **Amazon Resource Name (ARN)** can be found on the **Properties** tab of the bucket in Amazon S3.
 
 1. Continue to follow the [Creating a role using custom trust policies (console)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create_for-custom.html) procedure to create the role.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

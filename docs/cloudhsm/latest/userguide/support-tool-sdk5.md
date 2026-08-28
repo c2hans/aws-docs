@@ -109,3 +109,7 @@ The tool creates the output file inside the `/tmp` directory.
 To configure for serverless environments, like Fargate or Lambda, we recommend you configure your AWS CloudHSM log type to `term`. Once configured to `term`, the serverless environment will be able to output to CloudWatch.
 
 To get the client logs from CloudWatch, see [Working with log groups and log streams](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html) in the Amazon CloudWatch Logs User Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

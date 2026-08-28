@@ -16,3 +16,7 @@ The User Agent string format must be included in all regular AWS API/CLI calls m
 
 **Note**
 For revenue attribution, your product must conduct at least one API operation on an AWS Resource Name (ARN) per month. If no API operations are performed on a resource in a given month, that resource does not contribute to revenue attribution for that month.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

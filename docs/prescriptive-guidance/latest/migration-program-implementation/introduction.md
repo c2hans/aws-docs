@@ -23,3 +23,7 @@ The prescriptive model that we describe in this guide is built on direct custome
 The following diagram describes the various phases of the overall migration process, including assessment, readiness and planning, and migrations. It also includes details about the workstreams that are part of the readiness and planning phase.
 
 ![The phases of the migration process, including assessment, readiness and planning, and migrations.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-program-implementation/images/guide-img/c368ac72-b4ba-4de5-80d0-24d311a6c244/images/4f58ef62-5da8-4ed7-b8b7-f2f5996fecff.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

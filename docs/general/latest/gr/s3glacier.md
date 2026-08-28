@@ -54,3 +54,7 @@ The following are the service endpoints and service quotas for this service.
 | Number of vault tags. | Each supported Region: 50 | No | The maximum number of tags that can be applied to a vault. |
 | Provisioned capacity units | Each supported Region: 2 | No | The maximum number of provisioned capacity units available to purchase per account. |
 | Vaults per account | Each supported Region: 1,000 | No | The maximum number of vaults an account can have. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

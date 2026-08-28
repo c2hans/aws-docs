@@ -36,3 +36,7 @@ The first launch of a homogeneous data migration requires some setup. AWS DMS cr
 1. Choose your data migration. On the **Details** tab, you can see the progress of your homogeneous data migration.
 
 After AWS DMS completes the full load process, your data migration starts the replication of ongoing changes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

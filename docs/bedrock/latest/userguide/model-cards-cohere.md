@@ -15,3 +15,7 @@ The following Cohere models are available in Amazon Bedrock:
 | [Command R\+](model-card-cohere-command-r-plus.md) | Command R\+ is Cohere's model for complex RAG workflows, multi-step tool use, and enterprise tasks with a 128K context window. |
 | [Embed English](model-card-cohere-embed-english.md) | Embed English is Cohere's English-language text embedding model for search, classification, and clustering with strong retrieval accuracy. |
 | [Embed Multilingual](model-card-cohere-embed-multilingual.md) | Embed Multilingual is Cohere's multilingual text embedding model supporting 100\+ languages for cross-lingual search and classification. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

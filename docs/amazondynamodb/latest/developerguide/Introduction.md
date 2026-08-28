@@ -190,3 +190,7 @@ We also recommend that you review the following tutorials that present complete 
 + [Build an Application Using a NoSQL Key-Value Data Store](https://aws.amazon.com/tutorials/build-an-application-using-a-no-sql-key-value-data-store/)
 
 For information about resources, tools, and strategies to migrate to DynamoDB, see [Migrating to DynamoDB](migration-guide.md#migration-guide.title). To read the latest blogs and whitepapers, see [Amazon DynamoDB resources](https://aws.amazon.com/dynamodb/resources/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,3 +41,7 @@ To get help, reach out to CFM experts through your Account team, or explore the 
 +  [Strategy for Efficient Cloud Cost Management](https://aws.amazon.com/blogs/enterprise-strategy/strategy-for-efficient-cloud-cost-management/)
 +  [Cost Control Blog Series \#3: How to Handle Cost Shock](https://aws.amazon.com/blogs/aws-cloud-financial-management/cost-control-blog-series-3-how-to-handle-cost-shock/)
 +  [A Beginner’s Guide to AWS Cost Management](https://aws.amazon.com/blogs/aws-cloud-financial-management/beginners-guide-to-aws-cost-management/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

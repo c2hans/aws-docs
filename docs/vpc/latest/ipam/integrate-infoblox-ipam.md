@@ -100,3 +100,7 @@ This completes the Amazon VPC IPAM configuration needed for the integration. Aft
 The integration also requires configuring an Infoblox source pool, verifying discovery job status, setting up the private scope to be managed by Infoblox, enabling Infoblox management for Amazon VPC IPAM, and creating pools either from the Infoblox integration or directly from the Infoblox portal.
 
 For information about the Infoblox side of the integration, see the *AWS IPAM Integration User Guide* in the Infoblox documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

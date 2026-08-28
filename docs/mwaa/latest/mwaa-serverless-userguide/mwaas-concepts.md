@@ -107,3 +107,7 @@ You can observe your Amazon MWAA Serverless resources using AWS native services:
 + **Console**: View workflow status using the Amazon MWAA Serverless console.
 
 Unlike traditional Amazon MWAA, you don't have direct access to the Apache Airflow web interface. Instead, you can build your custom monitoring and observability using AWS native tools.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

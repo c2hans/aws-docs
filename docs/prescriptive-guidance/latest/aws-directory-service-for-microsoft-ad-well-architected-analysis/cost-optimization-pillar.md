@@ -27,3 +27,7 @@ The cost optimization pillar focuses on avoiding unnecessary costs. The followin
 <a name="pay-only-for-what-you-use"></a>
 + Automate AWS Managed Microsoft AD scaling based on utilization metrics to reduce the number of domain controllers when utilization is low. For more information, see [How to automate AWS Managed Microsoft AD scaling based on utilization metrics](https://aws.amazon.com/blogs/security/how-to-automate-aws-managed-microsoft-ad-scaling-based-on-utilization-metrics/) on the AWS Blog.
 + Set the retention period for Amazon CloudWatch log groups that store AWS Managed Microsoft AD logs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

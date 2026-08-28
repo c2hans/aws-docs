@@ -49,3 +49,7 @@ Some AWS services are built on EC2 and use EC2 IP address space. If you block tr
 <a name="aws-ip-geo-ip-feed"></a>
 
 The IP address ranges in `ip-ranges.json` are by AWS Region. However, a Local Zone is not in the same physical location as its parent Region. The geolocation data published in [geo-ip-feed.csv](https://ip-ranges.amazonaws.com/geo-ip-feed.csv) accounts for Local Zones. The data follows [RFC 8805](https://datatracker.ietf.org/doc/html/rfc8805).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

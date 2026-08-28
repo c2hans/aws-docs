@@ -54,3 +54,7 @@ The following are guidelines and requirements for getting batch recommendations:
 Batch recommendations include scores as follows:
 + With User-Personalization and Personalized-Ranking recipes, Amazon Personalize calculates batch inference job recommendation scores as described in [How recommendation scoring works (custom resources)](recommendations.md#how-recommendation-scoring-works) and [How personalized ranking scoring works](rankings.md#how-ranking-scoring-works). You can view scores in the batch inference job's output JSON file.
 +  With the Similar-Items recipe, if you get themed batch recommendations, Amazon Personalize ranks each set of related items based on how relevant the theme is for each item. Each item includes a score from 0 to 1. The higher the score, the more closely related the item is to the theme. For more information about recommendations with themes, see [Batch recommendations with themes from Content Generator](themed-batch-recommendations.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

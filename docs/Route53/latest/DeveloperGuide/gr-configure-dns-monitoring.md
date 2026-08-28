@@ -21,3 +21,7 @@ Before configuring DNS logging, you must set an observability Region where logs 
 1. Select the AWS Region where you want to store monitoring data, then choose **Set region**.
 
 After setting the observability region, you can configure log delivery destinations in that Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

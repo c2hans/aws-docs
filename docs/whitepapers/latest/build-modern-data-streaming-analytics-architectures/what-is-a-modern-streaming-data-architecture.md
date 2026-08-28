@@ -34,3 +34,7 @@ This diagram represents the modern streaming reference architecture on AWS.
 ![A reference architecture diagram depicting modern data streaming architecture on AWS.](http://docs.aws.amazon.com/whitepapers/latest/build-modern-data-streaming-analytics-architectures/images/streaming-reference-architecture.png)
 
 For more details about this architecture, refer to [Streaming reference architecture](https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/streaming-data-processing-reference-architecture.html) in the AWS Well-Architected Data Analytics Lens.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

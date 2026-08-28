@@ -33,3 +33,7 @@ Include these steps when you create the HLS output group.
 1. In the **HLS output group**, in **Manifest and segments**, for **I-frame only playlists**, choose **ENABLED**.
 
 1. Set up the remaining fields in the output group [as you normally would](creating-hls-output-group.md). Set up the video, audio, and captions outputs and encodes [as you normally would](creating-a-channel-step6.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

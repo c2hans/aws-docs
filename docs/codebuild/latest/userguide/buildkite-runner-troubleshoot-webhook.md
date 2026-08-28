@@ -23,3 +23,7 @@ To debug failed Buildkite webhook events:
 
 1. Select the **Response** tab and check the response body. Verify that the **Response** status code is `200` and the **Response** body doesn't contain any unexpected messages.
 ![Response for the webhook.](http://docs.aws.amazon.com/codebuild/latest/userguide/images/buildkite-request.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -110,3 +110,7 @@ Anyone who assumes the role from the AWS CLI or API can use the `duration-second
    + [UpdateRole](https://docs.aws.amazon.com/IAM/latest/APIReference/API_UpdateRole.html)
 
    Your changes don't take effect until the next time someone assumes this role. To learn how to revoke existing sessions for this role, see [Revoke IAM role temporary security credentials](id_roles_use_revoke-sessions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

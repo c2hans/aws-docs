@@ -89,3 +89,7 @@ There is no additional charge for using AMD SEV-SNP on Dedicated Hosts. You pay 
 When you launch an Amazon EC2 instance with AMD SEV-SNP enabled on shared tenancy, you are charged an additional hourly usage fee that is equivalent to 10 percent of the [On-Demand hourly rate](https://aws.amazon.com/ec2/pricing/on-demand/) of the selected instance type. This AMD SEV-SNP usage fee is a separate charge to your Amazon EC2 instance usage. Reserved Instances, Savings Plans, and operating system usage don't impact this fee.
 
 If you configure a Spot Instance to launch with AMD SEV-SNP enabled on shared tenancy, you are charged an additional hourly usage fee that is equivalent to 10 percent of the [On-Demand hourly rate](https://aws.amazon.com/ec2/pricing/on-demand/) of the selected instance type. If the allocation strategy uses price as an input, Spot Fleet does not include this additional fee; only the Spot price is used.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

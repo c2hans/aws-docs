@@ -25,3 +25,7 @@ Document these objectives clearly. They're not just for your engineering team. W
 These targets evolve as your startup grows. The resilience needs of your first thousand users are different from those of your first enterprise client. Start with objectives that you can realistically meet today, but plan for how they'll tighten as you scale.
 
 This guide explores how to implement resilience measures that meet these objectives. Setting these targets is your crucial first step. They're your compass for navigating the constant tension between innovation and stability, helping you build a system that dependably delivers value to your customers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

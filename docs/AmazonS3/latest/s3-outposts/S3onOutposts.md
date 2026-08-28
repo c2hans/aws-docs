@@ -198,3 +198,7 @@ For more information about working with S3 on Outposts, see the following topics
 + [Security in S3 on Outposts](s3outposts-security.md)
 + [Managing S3 on Outposts storage](S3OutpostsManaging.md)
 + [Developing with Amazon S3 on Outposts](S3OutpostsDeveloping.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

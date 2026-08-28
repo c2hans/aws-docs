@@ -354,3 +354,7 @@ revenue impact and clear remediation path.
  **Bedrock costs**: \* Input tokens: \~$0.003 per 1K \* Output tokens: \~$0.015 per 1K \* Embeddings: \~$0.0001 per 1K \* Optimize prompt length
 
  **Athena costs**: \* $5 per TB scanned \* Use partitioned tables \* Leverage views \* Set result limits
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

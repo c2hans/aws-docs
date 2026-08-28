@@ -18,3 +18,7 @@ AWS DataSync lets you choose what to transfer and how you want your data handled
 + [Understanding how DataSync handles file and object metadata](metadata-copied.md)
 + [Links and directories copied by AWS DataSync](special-files-copied.md)
 + [Configuring how to handle files, objects, and metadata](configure-metadata.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

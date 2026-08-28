@@ -22,3 +22,7 @@ When a `Gemfile` file is present, Elastic Beanstalk runs `bundle install` to ins
 You can use a different version of Puma besides the default that's pre-installed with the Ruby platform. To do so, include an entry in a `Gemfile` that specifies the version. You can also specify a different application server, such as Passenger, by using a customized `Gemfile`.
 For both of these cases you're required to configure a `Procfile` to start the application server.
 For more information see *[Configuring the application process with a Procfile](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ruby-platform-procfile.html)**.*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

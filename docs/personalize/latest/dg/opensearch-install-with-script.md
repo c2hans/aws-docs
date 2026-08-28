@@ -32,3 +32,7 @@ If you haven't created an OpenSearch cluster, you can use a quickstart bash scri
 1. Upload your catalog data to your OpenSearch cluster. When you upload your data, you create an OpenSearch index and define your field mappings. Then you upload your data to that index. For an example, see [Create an index and field mappings using sample data](https://opensearch.org/docs/latest/quickstart/#create-an-index-and-field-mappings-using-sample-data).
 
  After you set up OpenSearch and install the Amazon Personalize Search Ranking plugin, you're ready to configure it. You configure the plugin by creating a search pipeline and specifying a `personalized_search_ranking` response processor. For more information, see [Creating a pipeline](opensearch-plugin-pipeline-example.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

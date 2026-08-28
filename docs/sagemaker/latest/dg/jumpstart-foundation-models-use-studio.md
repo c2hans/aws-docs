@@ -30,3 +30,7 @@ You can also choose **Open notebook** in the **Run in notebook** section to run 
 To deploy a proprietary foundation model in Studio Classic, you must first subscribe to the model in AWS Marketplace. The AWS Marketplace link is provided in the associated example notebook within Studio Classic.
 
 If the model is fine-tunable, you can also fine-tune the model. For more information, see [Fine-Tune a Model](jumpstart-fine-tune.md). For a list of which JumpStart foundation models are fine-tunable, see [Foundation models and hyperparameters for fine-tuning](jumpstart-foundation-models-fine-tuning.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,3 +31,7 @@ Consider the following encryption best practices for this service:
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/prescriptive-guidance/latest/encryption-best-practices/dynamodb.html)
 + Configure DAX clusters to encrypt data in transit at the time of setting up the cluster. You can't enable encryption in transit on an existing cluster. DAX uses TLS to encrypt requests and responses between the application and the cluster, and it uses the cluster's x509 certificate to authenticate the identity of the cluster. For more information, see [DAX encryption in transit](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAXEncryptionInTransit.html).
 + In AWS Config, implement the [dax-encryption-enabled](https://docs.aws.amazon.com/config/latest/developerguide/dax-encryption-enabled.html) AWS managed rule to validate and maintain encryption of DAX clusters.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

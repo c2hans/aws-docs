@@ -90,3 +90,7 @@ For more information and examples, see the subtopics about parameters in IaC tem
 + [Parameter filters for CloudFormation IaC files](parameter-filters.md)
 + [CodeBuild provisioning parameter details and examples](parameters-codebuild.md)
 + [Terraform infrastructure as code (IaC) file parameter details and examples](env-parameters-tform.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

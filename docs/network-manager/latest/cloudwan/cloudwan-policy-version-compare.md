@@ -38,3 +38,7 @@ Compare two policy versions against each other using the console. The comparison
 ![A comparison of the Segments section between a LIVE policy and a policy version.](http://docs.aws.amazon.com/network-manager/latest/cloudwan/images/cwan-policy-compare.png)
 
 1. By default, the changes for each policy display in separate policy windows. To see the results of the comparison line-by-line in a single window, turn the **Split** toggle off.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ These getting started topics will walk you through the following:
 + [Receive Push Notifications using SNS (Xamarin Android)](getting-started-sns-android.md)
 
 For information about other AWS Mobile SDKs, see [AWS Mobile SDK](https://aws.amazon.com/mobile/sdk/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mobile SDK for Xamarin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mobile` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

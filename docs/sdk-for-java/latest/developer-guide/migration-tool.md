@@ -206,3 +206,7 @@ The links in the list below, take you to migration information to help you manua
 + [S3 Event Notifications](migration-s3-event-notification.md) (S3EventNotification)
 + SDK metric publishing ([1.x documentation](https://docs.aws.amazon.com/sdk-for-java/v1/developer-guide/generating-sdk-metrics.html), [2.x documentation](metrics.md))
 + [Unsupported code patterns](migration-tool-unsupported-patterns.md)–Detailed examples of common code patterns that require manual migration
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

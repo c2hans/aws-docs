@@ -20,3 +20,7 @@ You can use Amazon Route 53 to route traffic to a variety of AWS resources.
 + [Routing traffic to Amazon VPC Lattice service domain endpoint](routing-to-vpc-lattice-service.md)
 + [Routing traffic to other AWS resources](routing-to-additional-aws-resources.md)
 + [Creating Amazon Route 53 and Route 53 VPC Resolver resources with AWS CloudFormation](creating-resources-with-cloudformation.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

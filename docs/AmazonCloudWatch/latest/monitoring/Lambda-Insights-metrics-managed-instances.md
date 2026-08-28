@@ -53,3 +53,7 @@ For more information about embedded metric format, see [Embedding metrics within
 | `tmp_max` | The amount of space available in the `/tmp` directory.<br />Unit: Bytes |
 | `total_memory` | The amount of memory allocated to your Lambda function. This is the same as your function's memory size.<br />Unit: Megabytes |
 | `total_network` | Sum of `rx_bytes` and `tx_bytes`. Even for functions that don't perform I/O tasks, this value is usually greater than zero because of network calls made by the Lambda runtime.<br />Unit: Bytes |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

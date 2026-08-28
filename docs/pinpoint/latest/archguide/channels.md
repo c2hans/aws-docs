@@ -137,3 +137,7 @@ The in-app notification channel in Amazon Pinpoint relies on your campaigns or j
 You can also use the `AWS::Pinpoint::InAppTemplate` entity in AWS CloudFormation to deploy in-app message templates to other AWS Regions automatically. For more information about in-app message templates, see [AWS::Pinpoint::InAppTemplate](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-pinpoint-inapptemplate.html) in the *AWS CloudFormation User Guide*.
 
 For more information about the in-app channel, see [Sending and retrieving in-app messages in Amazon Pinpoint](https://docs.aws.amazon.com/pinpoint/latest/developerguide/channels-inapp.html) in the *Amazon Pinpoint Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

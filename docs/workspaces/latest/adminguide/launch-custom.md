@@ -86,3 +86,7 @@ An IAM Identity Center application is also automatically created on your behalf 
 You can now use the directory to launch Windows 10 or 11 personal WorkSpaces that are enrolled to Microsoft Intune and joined to Microsoft Entra ID. For more information, see [Create a WorkSpace in WorkSpaces Personal](create-workspaces-personal.md).
 
 After you've created a WorkSpaces Personal directory, you can create a personal WorkSpace. For more information, see [Create a WorkSpace in WorkSpaces Personal](create-workspaces-personal.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

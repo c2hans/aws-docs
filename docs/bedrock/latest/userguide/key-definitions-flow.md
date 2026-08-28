@@ -20,3 +20,7 @@ The following list introduces you to the basic concepts of Amazon Bedrock Flows.
   + **Input** – A node can have multiple inputs. You use expressions to extract the relevant parts of the whole input to use for each individual input. In the Amazon Bedrock console flow builder, an input appears as a circle on the left edge of a node. Connect each input to an output of an upstream node.
   + **Output** – A node can have multiple outputs. In the Amazon Bedrock console flow builder, an output appears as a circle on the right edge of a node. Connect each output to at least one input in a downstream node.
   + **Branch** – If an output from a node is sent to more than one node, or if a condition node is included, the path of a flow will split into multiple branches. Each branch can potentially yield another output in the flow invocation response.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

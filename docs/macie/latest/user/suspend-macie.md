@@ -33,3 +33,7 @@ To suspend Macie for your account, you can use the Amazon Macie console or the A
 1. To suspend Macie in additional Regions, repeat steps 2 through 5 in each additional Region.
 
 To subsequently re-enable Macie in a Region, open the Amazon Macie console and choose the Region by using the AWS Region selector. Then choose **Settings** in the navigation pane. In the **Suspend Macie** section, choose **Re-enable Macie**. You can also re-enable Macie programmatically. To do this, use the [UpdateMacieSession](https://docs.aws.amazon.com/macie/latest/APIReference/macie.html) operation of the Amazon Macie API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

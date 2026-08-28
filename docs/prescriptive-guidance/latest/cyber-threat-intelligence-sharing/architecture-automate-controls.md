@@ -105,3 +105,7 @@ We recommend the following best practices:
 + Network Firewall can have multiple rule groups. Create separate rule groups for domains and IP addresses.
 + We recommend that you enable logging for Network Firewall. You can create detective controls that monitor the log data and alert you if a restricted domain or IP address tries to send traffic through the firewall. For more information, see [Logging network traffic from AWS Network Firewall](https://docs.aws.amazon.com/network-firewall/latest/developerguide/firewall-logging.html).
 + We recommend that you use both Route 53 Resolver DNS Firewall and AWS Network Firewall. DNS Firewall filters DNS traffic, and Network Firewall filters all other traffic.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

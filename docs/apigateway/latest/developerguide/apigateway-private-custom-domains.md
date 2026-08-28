@@ -70,3 +70,7 @@ For information about the tasks of an API provider and an API consumer, see [Tas
 For instructions on creating a private custom domain name that you can invoke in your own AWS account, see [Tutorial: Create and invoke a custom domain name for private APIs](apigateway-private-custom-domains-tutorial.md).
 
 For instructions on providing another AWS account access to your private custom domain name, see [API provider: Share your private custom domain name using AWS RAM](apigateway-private-custom-domains-provider-share.md). For instructions on associating your VPC endpoint with a private custom domain name in another AWS account, see [API consumer: Associate your VPC endpoint with a private custom domain name shared with you](apigateway-private-custom-domains-consumer-create.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

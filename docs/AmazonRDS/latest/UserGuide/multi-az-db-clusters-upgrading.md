@@ -62,3 +62,7 @@ When you upgrade the engine version of a Multi-AZ DB cluster, Amazon RDS emits a
  For more information about RDS events, see [Monitoring Amazon RDS events](working-with-events.md).
 
 For detailed information about a specific Amazon RDS event that occurs during your engine upgrade, see [Amazon RDS event categories and event messages ](USER_Events.Messages.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

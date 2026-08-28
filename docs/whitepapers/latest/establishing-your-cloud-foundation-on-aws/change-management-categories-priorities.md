@@ -62,3 +62,7 @@ An important part of the process is to communicate the intended change and, if n
 To facilitate configuration and change management, manual or automated tools can be used. Tool selection should be based on the needs of the project stakeholders including organization and environmental considerations and/or requirements.
 
 Change management tools can integrate with the operating environment facilitating workflows that deliver communication, change orchestration, approval processes, and configuration item baseline tracking and monitoring. This type of change management tool more often requires an advanced environment setup that support workflow templates for automation and take considerable amount of planning and setup. They require an understanding of the scope of change you desire to manage and how well-defined scripted steps for change implementation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

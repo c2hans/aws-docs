@@ -17,3 +17,7 @@ The following challenges might arise with using third-party and open source code
   + Your organization should make sure that they read the code they pull, and filter out code bases that are difficult to read.
 + Your team not fully understanding the code
   + Importing existing code can result in no developers on your team taking the time to read and understand the code. This lack of engagement can result in future pain points because of the ambiguity of trusting third-party code bases blindly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

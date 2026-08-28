@@ -252,3 +252,7 @@ The following tables contain contact data.
 |  is\_transferred\_out\_external  |  bigint  |  Yes  |  A flag indicating whether a contact is transferred from the queue to an external source.  |
 |  is\_transferred\_out\_external\_from\_contact\_flow  |  bigint  |  Yes  |  A flag indicating whether a contact is transferred to an external destination by contact flow.  |
 |  data\_lake\_last\_processed\_timestamp  |  Timestamp  |  Yes  |  Timestamp, which shows the last time the data lake processed the record. This can include transformation and backfill. This field cannot reliably be used to determine data freshness.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

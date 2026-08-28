@@ -17,3 +17,7 @@ Supported client players: Consult with the key provider (DRM implementer) for su
 | The customer uses the Piksel DRM solution for protecting MSS output using the PlayReady DRM technology. The end user plays the content on a Piksel-approved player. | Piksel | GetEncryptInfo v1.0 | Static |
 |  Elemental Live lets you enter a key or generate a key that Elemental Live uses to encrypt the content. Elemental Live also puts that key at a customer-specified location; the client player retrieves the key from that location and decrypts the content. The end user plays the content on a Microsoft-Silverlight-approved player.Strictly speaking, an encryption solution, not a DRM solution.  | Self-Generated or Static | Not applicable. | Static |
 | The customer uses the Seachange DRM solution for protecting MSS output using the PlayReady DRM technology. The end user plays the content on a Seachange-approved player. | Seachange | Acquire<br />Packaging Data v1.0 | Static |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

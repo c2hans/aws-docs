@@ -13,3 +13,7 @@ This section provides information on the status and scope of the service's compl
 + [Compliance of the service](service-compliance.md)
 + [PIN Compliance Planning](pin-compliance.md)
 + [Using the AWS Payment Cryptography Decryption Component in P2PE solutions](p2pe-compliance.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

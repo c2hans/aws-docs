@@ -428,3 +428,7 @@ AWS CodeStar Connections defines the following condition keys that can be used i
 |   [codestar-connections:ProviderTypeFilter](https://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html#permissions-reference-connections-managing)  | Filters access by the type of third-party provider used to filter results | String |
 |   [codestar-connections:RepositoryName](https://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html#permissions-reference-connections-use)  | Filters access by the repository name that is passed in the request. Applies only to UseConnection requests for access to repositories owned by a specific user | String |
 |   [codestar-connections:VpcId](https://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html#permissions-reference-connections-hosts)  | Filters access by the VpcId passed in the request | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

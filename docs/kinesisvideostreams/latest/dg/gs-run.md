@@ -79,3 +79,7 @@ Add required the environment variables at the `...` location, as specified in [B
    + To restart, type `sudo systemctl restart {{aws.kinesisvideo.edge-runtime-agent}}.service`.
    + To stop, type `sudo systemctl stop {{aws.kinesisvideo.edge-runtime-agent}}.service`.
    + To automatically start on every device reboot, type `sudo systemctl enable {{aws.kinesisvideo.edge-runtime-agent}}.service`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

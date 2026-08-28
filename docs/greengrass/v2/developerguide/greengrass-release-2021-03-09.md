@@ -21,3 +21,7 @@ The following table lists AWS-provided components that include new and updated f
 | **Component** | **Details** |
 | --- | --- |
 | Greengrass nucleus | Version 2.0.5 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.0.5"></a>**Bug fixes and improvements**<br />   Correctly routes traffic through a configured network proxy when downloading AWS-provided components.   Use the correct Greengrass data plane endpoint in AWS China Regions.    |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

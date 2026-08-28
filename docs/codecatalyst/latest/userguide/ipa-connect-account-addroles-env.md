@@ -31,3 +31,7 @@ To add your account connection and IAM roles to your deploy environment
 1. Choose **Associate AWS account**. The **Associate AWS account with <environment\_name>** page displays.
 
 1. Under **Connection**, choose the name of the account connection with the IAM roles that you want to add. Choose **Associate**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

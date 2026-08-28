@@ -128,3 +128,7 @@ For information about GrabMaps' attribution guidelines, see Section 9.23 of Grab
 <a name="grab-support"></a>
 
 If you encounter a problem with the data from GrabMaps, and want to report errors or discrepancies, [contact AWS technical support](https://support.console.aws.amazon.com/support/home#/case/create?issueType=customer-service).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

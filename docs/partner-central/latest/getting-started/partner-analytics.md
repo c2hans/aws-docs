@@ -44,3 +44,7 @@ In addition to the preset date filters, or set a custom date range. Note that Di
 + The Investments date defaults to Issued Credit and Redeemed Credit – Promotion Creation Date (the date on which a credit code was generated). All Cash KPIs and Approved Credit – Pre-Approved Date. Discounts follow the billing period.
 + The Marketing Campaigns date defaults to campaign-associated data, the Opportunity metrics leverage Opportunity date, the Pipeline reflects Opportunity created date for AO, approval date for PO, the revenue uses Opportunity launch date, and Campaign-associated Leads metrics use Lead date.
 + Training and Certifications date defaults to Net New Certification is date of when Certification was awarded for first time (does not include re-certification), Net New Accreditation uses date of course completion, and Net New Training leverages the date of course completion.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

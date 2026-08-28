@@ -14,3 +14,7 @@ When creating an inferred profile, the following two fields are populated in the
 Values for these fields are populated into the standard profile even if the fields do not have a target defined in the field definition.
 
 To learn more about Contact Records template types, as well as how to adjust the template used on your domain, see [Contact record template usage examples](ctr-contact-record-template.md#ctr-contact-record-template-usage-examples).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

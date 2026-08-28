@@ -237,3 +237,7 @@ Everything above this point is written against the tire reference implementation
 + The alert-consolidation and deduplication logic in the Alert Management System
 
 The reference CDK stacks in `guidance-for-predictive-maintenance/` are tire-specific, but the stack boundaries (Data, ETL, ML, Filtering, Alerts, Monitoring) reflect the architecture, not the domain — a new asset class is a new Glue schema and a new set of engineered features inside the same six stacks, not a rewrite of the pattern.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

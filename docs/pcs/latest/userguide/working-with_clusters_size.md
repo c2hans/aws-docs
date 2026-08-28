@@ -28,3 +28,7 @@ You can't change the cluster size after you create the cluster. If you need to c
 + If your cluster will have up to 24 managed instances and run up to 1000 jobs, choose **Medium**.
 + If your cluster will have up to 1000 managed instances and run up to 100 jobs, choose **Large**.
 + If your cluster will have up to 1000 managed instances and run up to 10,000 jobs, choose **Large**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

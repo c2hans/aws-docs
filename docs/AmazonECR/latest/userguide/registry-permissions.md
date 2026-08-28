@@ -16,3 +16,7 @@ While it is possible to add the `ecr:*` action to a private registry policy, it 
 + [Private registry policy examples for Amazon ECR](registry-permissions-examples.md)
 + [Granting registry permissions for cross account replication in Amazon ECR](registry-permissions-create-replication.md)
 + [Granting registry permissions for pull through cache in Amazon ECR](registry-permissions-create-pullthroughcache.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

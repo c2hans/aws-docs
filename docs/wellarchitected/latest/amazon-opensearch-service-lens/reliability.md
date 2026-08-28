@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 +  **Provide continuous availability:** Implement multi-AZ with standby deployment, Index State Management (ISM) policy, index replication, cross-cluster replication, and regular quota monitoring to ensure OpenSearch Service domain availability.
 +  **Implement a disaster recovery strategy:** Develop a Disaster Recovery (DR) strategy for OpenSearch Service, including regular updates to the latest version, and monitoring of software updates.
 +  **Stay informed about updates:** Stay informed about OpenSearch Service update notifications, keep domains updated to the latest version, and monitor software updates for reliability and security.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

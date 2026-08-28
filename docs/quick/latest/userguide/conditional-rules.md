@@ -15,3 +15,7 @@ Use the sections below to set up and use conditional rules.
 + [Hiding a visual by default](hiding-a-visual-by-default.title.md)
 + [Setting a conditional rule](setting-a-conditional-rule.title.md)
 + [Using conditional rules](using-conditional-rules.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ Use the following mapping table to create your emergency access configuration. T
 | Emergency access account | EmergencyAccess\_Role1\_RO<br />EmergencyAccess\_Role1\_Ops<br />EmergencyAccess\_Role2\_RO<br />EmergencyAccess\_Role2\_Ops | IdP | AssumeRole for role resource in account |
 
 In this mapping plan, the emergency access account contains two read-only roles and two operations roles. These roles trust your IdP to authenticate and authorize your selected groups to access the roles by passing the names of the roles in assertions. There are corresponding read-only and operations roles in workload Account 1 and Account 2. For workload Account 1, the `EmergencyAccess_RO` role trusts the `EmergencyAccess_Role1_RO` role that resides in the emergency access account. The table specifies similar trust patterns between the workload account read-only and operations roles and the corresponding emergency access roles.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

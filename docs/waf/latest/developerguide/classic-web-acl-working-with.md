@@ -29,3 +29,7 @@ If you want to test a rule before you start using it to allow or block requests,
 + [Editing a Web ACL](classic-web-acl-editing.md)
 + [Deleting a Web ACL](classic-web-acl-deleting.md)
 + [Testing web ACLs](classic-web-acl-testing.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

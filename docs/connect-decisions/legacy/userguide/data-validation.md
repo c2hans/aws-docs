@@ -20,3 +20,7 @@ The data validation step is preceded by a set of preprocessing activities to pre
 + [Data Validation Report Access](data-validation-report-access.md)
 + [Data Validation Error Export](data-validation-error-export.md)
 + [Data Validation Rules](data-validation-rules.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ The CloudWatch Logs agent requires Python version 2.7, 3.0, or 3.3, and any of t
 + CentOS version 6, 6.3, 6.4, 6.5, or 7.0
 + Red Hat Enterprise Linux (RHEL) version 6.5 or 7.0
 + Debian 8.0
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

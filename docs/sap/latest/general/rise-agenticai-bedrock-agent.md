@@ -15,3 +15,7 @@ Amazon Bedrock Agent acts as the intelligent orchestrator that uses the reason-a
   +  **Utilize memory** to maintain context across multiple user interactions. This is essential for multi-step processes like filling out a complex purchase order over several turns of conversation.
 
 Bedrock Agents fully supports multi-agent collaboration, allowing you to build and deploy systems of specialized AI agents that work together to accomplish complex, multi-step workflows. Instead of a single agent attempting to handle every part of a difficult task, a team of agents can be orchestrated to contribute their specific expertise, improving efficiency, accuracy, and overall performance. The core of [multi-agent collaboration in Bedrock](https://docs.aws.amazon.com/bedrock/latest/userguide/agents-multi-agent-collaboration.html) is a hierarchical model consisting of a supervisor agent and one or more collaborator agents.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,3 +37,7 @@ AWS Elemental Server doesn't automatically detect which language is in each trac
 + **Force 608 to 708 Upconvert**: The embedded source captions may be EIA-608 captions or CEA-708 captions or both EIA-608 and CEA-708. You can specify how you want these captions to be handled when the AWS Elemental encoder is ingesting content. The following table describes the behavior for various scenarios.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/elemental-server/latest/ug/embedded.html)
 + Use **SCTE-20 if Embedded Unavailable**: This field appears only if you set the Source to “Embedded.” If the source captions combine embedded (EIA-608 or CEA-708) and SCTE-20, you may want to check this field: the encoder gives preference to the 608/708 embedded captions but switches to use the SCTE-20 captions when necessary. If you leave this field unchecked, the encoder never uses the SCTE-20 captions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

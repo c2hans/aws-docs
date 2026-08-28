@@ -47,3 +47,7 @@ Add the following IAM permissions to your queue IAM role. The role already has p
 ```
 
 This job calls Amazon S3 APIs and copies data into your queue's job attachments bucket, which incurs additional costs. Use the [Amazon S3 pricing](https://aws.amazon.com/s3/pricing/) page and the [AWS Pricing Calculator](https://calculator.aws) to estimate costs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ The very first time you subscribe users, you will be prompted to create this pro
 Other characteristics of the Amazon Q Developer profile are:
 + The profile is mandatory for use with IAM Identity Center workforce users. You cannot subscribe workforce users without it. It must be created in the AWS account where you want to subscribe users to Amazon Q Developer Pro.
 + The profile can be created once per supported AWS Region, per AWS account. For a list of AWS Regions supported by the Amazon Q Developer profile, see [Supported Regions for the Q Developer console and Q Developer profile](q-admin-setup-subscribe-regions.md#qdev-console-and-profile-regions).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

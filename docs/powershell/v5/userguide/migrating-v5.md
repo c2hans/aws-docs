@@ -274,3 +274,7 @@ A number of programming elements have been removed from V5 of the Tools for Powe
 + The `Invoke-LMFunctionAsync` cmdlet.
 + The `Get-EC2ImageByName` cmdlet. Use the [Get-SSMLatestEC2Image](https://docs.aws.amazon.com/powershell/v5/reference/items/Get-SSMLatestEC2Image.html) cmdlet instead.
 + The `CalculateContentMD5Header` parameter from the [Write-S3Object](https://docs.aws.amazon.com/powershell/v5/reference/items/Write-S3Object.html) cmdlet.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

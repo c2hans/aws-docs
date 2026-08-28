@@ -37,3 +37,7 @@ We recommend that you start with the *AWS SRA – core architecture* guide to un
 To customize the reference architecture diagrams in the AWS SRA library based on your business needs, you can download the following .zip file and extract its contents.
 
 [Download the diagram source file (Microsoft PowerPoint format)](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/samples/aws-security-reference-architecture-diagrams.zip)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

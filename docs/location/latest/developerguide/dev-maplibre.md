@@ -33,3 +33,7 @@ To use any aspect of Amazon Location, install the [AWS SDK for the language that
 Many open source libraries are available to provide additional functionality for Amazon Location Service, for example [Turf](https://github.com/Turfjs/turf) which provide spatial analysis functionality.
 
 Many libraries use the open standard [GeoJSON](https://geojson.org/) formatted data. Amazon Location Service provides a library to convert responses into GeoJSON for use in JavaScript applications. For more information, see [SDKs and frameworks for Amazon Location Service](dev-sdks.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

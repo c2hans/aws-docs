@@ -1332,3 +1332,7 @@ Length: 22 characters
 An abandoned contact refers to a contact that was disconnected by the customer while in queue. This means that they weren't connected to an agent.
 
 The contact record for an abandoned contact has a **Queue**, and an **Enqueue Timestamp** because it was enqueued. It won't have a **ConnectedToAgentTimestamp**, or any of the other fields that populate only after the contact has been connected to an agent.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

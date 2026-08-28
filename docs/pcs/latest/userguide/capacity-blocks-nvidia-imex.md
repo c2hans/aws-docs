@@ -337,3 +337,7 @@ If the prolog script fails to create the IMEX channel device, verify that the NV
 
 Prolog script not running
 Verify that the `Prolog` and `PrologFlags` settings are configured on the cluster. Check that the script file exists on the compute nodes and has execute permissions (`chmod 0755`).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

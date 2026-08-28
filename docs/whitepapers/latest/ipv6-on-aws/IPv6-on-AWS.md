@@ -42,3 +42,7 @@ Publication date: **October 26, 2021** ([Document Revisions](document-revisions.
 
 **Note**
 This paper doesn’t repeat the guidance found in other resources, but rather complements them by focusing on the IPv6-specific differences. Customers are advised to consult the guidance in this paper in addition to the existing literature that covers individual topics in detail.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

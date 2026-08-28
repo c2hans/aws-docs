@@ -156,3 +156,7 @@ We recommend that you monitor the `-operation-status` with the `snaplock legal-h
 + [snaplock legal-hold dump-files](https://docs.netapp.com/us-en/ontap-cli-9121/snaplock-legal-hold-dump-files.html)
 + [snaplock legal-hold dump-litigations](https://docs.netapp.com/us-en/ontap-cli-9121/snaplock-legal-hold-dump-litigations.html)
 + [snaplock legal-hold show](https://docs.netapp.com/us-en/ontap-cli-9121/snaplock-legal-hold-show.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

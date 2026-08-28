@@ -52,3 +52,7 @@ Business outcomes are highly dependent on your organization, but can include the
 + **Organizational alignment:** Establish ongoing partnerships among organizational structures, business operations, processes, talent, and culture to enable rapid adaptation to market conditions, and to improve your organization's ability to capitalize on new opportunities.
 
 This guide breaks down the AWS Change Acceleration 6-Point Framework and Organizational Change Management Toolkit in a logical fashion so you can reference it throughout your cloud adoption journey. Each section focuses on one of the six points of the framework.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,3 +13,7 @@ Each time you change a template, you can specify whether you want to save your c
 You can also use versioning to control which version of a template can be used in messages. You do this by designating a specific version as the active version of a template. The active version is typically the version that's been most recently reviewed and approved for use in messages, depending on your organization's workflow for developing and managing templates.
 
 When you designate a version as the active version, you enable that version for use in messages. As a template changes over time, you can designate a different version as the active version, and you can change that designation multiple times.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,3 +53,7 @@ To resolve the error, follow these steps:
 You may see this error if you shared resources with [Lake Formation version 2 or version 3 cross-account data sharing](https://docs.aws.amazon.com/lake-formation/latest/dg/optimize-ram.html) before creating a Lake Formation subscriber in Security Lake. This is because Lake Formation version 2 and version 3 cross-account sharing optimizes the number of AWS RAM resource shares by mapping multiple cross-account permission grants with one AWS RAM resource share.
 
 Make sure to check that the resource share name has the external ID that you specified when creating the subscriber and the resource share ARN matches the ARN in the `CreateSubscriber` response.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -347,3 +347,7 @@ For more information about configuring and managing jobs, see [Providing your ow
  AWS Glue 2.0\+ includes several common Python libraries by default. There are also mechanisms for loading your own dependencies into an AWS Glue job in a Scala or Python environment. For information about Python dependencies, see [Using Python libraries with AWS Glue](aws-glue-programming-python-libraries.md).
 
 For more examples of how to use AWS Glue features in Python, see [AWS Glue Python code samples](aws-glue-programming-python-samples.md). Scala and Python jobs have feature parity, so our Python examples should give you some thoughts about how to perform similar work in Scala.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

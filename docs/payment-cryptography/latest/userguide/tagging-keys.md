@@ -15,3 +15,7 @@ In AWS Payment Cryptography, you can add tags to a AWS Payment Cryptography key 
 + [Managing key tags with API operations](manage-tags-api.md)
 + [Controlling access to tags](tag-permissions.md)
 + [Using tags to control access to keys](tag-authorization.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

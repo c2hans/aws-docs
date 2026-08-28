@@ -48,3 +48,7 @@ This video shows you how to use job metrics to choose the best model and then ho
 This video walks you through an end to end demo where we first build a binary classification model automatically with Amazon SageMaker Autopilot. We see how candidate models have been built and optimized using auto-generated notebooks. We also look at the top candidates with Amazon SageMaker Experiments. Finally, we deploy the top candidate (based on XGBoost), and configure data capture with SageMaker Model Monitor.
 
 [![AWS Videos](http://img.youtube.com/vi/DRjOOaR2prQ/0.jpg)](http://www.youtube.com/watch?v=DRjOOaR2prQ)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

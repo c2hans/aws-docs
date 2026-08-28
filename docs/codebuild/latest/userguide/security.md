@@ -21,3 +21,7 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Infrastructure Security in AWS CodeBuild](infrastructure-security.md)
 + [Access your source provider in CodeBuild](access-tokens.md)
 + [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

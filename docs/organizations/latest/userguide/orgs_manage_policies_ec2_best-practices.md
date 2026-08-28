@@ -39,3 +39,7 @@ After you make a change to an EC2 policy, check the effective policies for repre
 <a name="bp-ec2-train"></a>
 
 Ensure your organizations understand the purpose and impact of your EC2 policies. Provide clear guidance on the expected behaviors and how to handle failures due to policy enforcement.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,3 +38,7 @@ The first option for deploying AWS services specifically focuses on the use of A
 1.  Configure access levels for your accounts for proper permissions and security.
 
 1.  Deploy regulated workloads on AWS Outposts. Optionally, you can configure backups and snapshots to be stored within the Region and synchronize your Amazon S3 data accordingly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

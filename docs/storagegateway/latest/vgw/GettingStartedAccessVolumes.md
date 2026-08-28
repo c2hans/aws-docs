@@ -95,3 +95,7 @@ The following procedure shows a summary of the steps that you follow to connect 
    `lrwxrwxrwx. 1 root root 9 Apr 16 19:31 ip-{{[GATEWAY_IP]}}:3260-iscsi-iqn.1997-05.com.amazon:myvolume-lun-0 -> ../../sda`
 
    We highly recommend that after you set up your initiator you customize your iSCSI settings as discussed in [Customizing Your Linux iSCSI Settings](recommendediSCSISettings.md#CustomizeLinuxiSCSISettings).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

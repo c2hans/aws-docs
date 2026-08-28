@@ -108,3 +108,7 @@ The following benefits are of general interest.
 + Provide very limited permissions.
 
   An alias must be unique in an AWS account and Region. As a result, giving principals access to a KMS key based on an alias can be much more restrictive than giving them access based on a tag. Unlike aliases, tags can be assigned to multiple KMS keys in the same account and Region. If you choose, you can use an alias pattern, such as `alias/test*`, to give principals access to a group of KMS keys in the same account and Region. However, allowing or denying access to a particular alias allows very strict control on KMS keys.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

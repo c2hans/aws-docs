@@ -111,3 +111,7 @@ Here are two examples of sponsor roadmaps, in the form of worksheets for leaders
 1. Track your progress, evaluate sponsor effectiveness by obtaining feedback from stakeholders, and adjust leadership action plans as needed.
 
 By focusing on these elements and best practices, you can develop a comprehensive sponsor roadmap that supports cloud transformation, ensures consistent leadership engagement, and drives adoption throughout the organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,3 +36,7 @@ The preceding steps remove AWS Shield Advanced protection from specific AWS reso
 To remove a CloudWatch alarm from your Shield Advanced protections, do one of the following:
 + Delete the protection as described in [Removing AWS Shield Advanced protection from an AWS resource](#remove-protection). Be sure to select the check box next to **Also delete related DDoSDetection alarm**.
 + Delete the alarm using the CloudWatch console. The name of the alarm to delete starts with **DDoSDetectedAlarmForProtection**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

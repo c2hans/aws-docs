@@ -23,3 +23,7 @@ Service Intelligence for SAP Solutions can be deployed in under an hour with the
 Splunk Service Intelligence for SAP Solutions [product documentation](https://help.splunk.com/en/splunk-it-service-intelligence/extend-itsi-and-ite-work/service-intelligence-for-sap-solutions/2.4/overview/overview-of-splunk-service-intelligence-for-sap-solutions) details comprehensive technical details along with installation and configuration steps.
 
 Disclaimer: Splunk, ITSI, and the Splunk logo are trademarks of the Splunk Inc, owned by Cisco Systems, Inc.. All other trademarks are the property of their respective owners.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -90,3 +90,7 @@ You can then save the custom job as a template to create your own custom job tem
 1. Go to the [Job hub of the AWS IoT console](https://console.aws.amazon.com/iot/home#/jobhub) and choose the job containing your managed template.
 
 1. Choose **Save as a job template** and then create your custom job template. For more information about creating a custom job template, see [Create a job template from an existing job](job-templates-console.md#job-templates-console-create-exist-job).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

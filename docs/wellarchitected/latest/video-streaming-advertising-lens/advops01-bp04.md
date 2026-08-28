@@ -39,3 +39,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 +  [Best Practices for managing data residency in AWS Local Zones using landing zone controls](https://aws.amazon.com/blogs/compute/best-practices-for-managing-data-residency-in-aws-local-zones-using-landing-zone-controls/)
 +  [General Data Protection Regulation (GDPR) Center](https://aws.amazon.com/compliance/gdpr-center/)
 +  [Scale across borders: build a multi-Region architecture while maintaining data residency](https://community.aws/content/2dhVhtsciD5gVBlCKUlHoszrDzU/scale-beyond-borders?lang=en#aws-reference-architecture-for-multiregion-with-data-residency)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

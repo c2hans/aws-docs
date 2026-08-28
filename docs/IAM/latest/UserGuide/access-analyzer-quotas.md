@@ -21,3 +21,7 @@ IAM Access Analyzer has the following quotas:
 | Policy generations per day | Africa (Cape Town): 5<br />Asia Pacific (Hong Kong): 5<br />Asia Pacific (Jakarta): 5<br />Europe (Milan): 5<br />Middle East (Bahrain): 5<br />All other supported regions: 50 Canceled policy generation requests apply to the daily quota.  | Africa (Cape Town): 5<br />Asia Pacific (Hong Kong): 5<br />Asia Pacific (Jakarta): 5<br />Europe (Milan): 5<br />Middle East (Bahrain): 5<br />All other supported regions: 50 |
 
 ¹Some quotas are customer-configurable using [Service Quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/intro.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -90,3 +90,7 @@ Follow these steps to create a dashboard using one of these pre-built templates,
 <a name="security-lake-troubleshooting"></a>
 
 There might be instances when results don’t return as expected. If you experience any issues, make sure that you're following the [Recommendations](direct-query-security-lake-overview.md#direct-query-security-lake-recommendations).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

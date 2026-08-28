@@ -17,3 +17,7 @@ To replicate DynamoDB tables using this approach, EMR clusters configured with A
 <a name="drawbacks.4b20f720-6915-5a68-beba-c307a9a7d9fe"></a>
 + The process is more involved, because it requires running Hive queries on the source and the target and creating an external table on the S3 location to contain the data.
 + It requires setting up the clusters and terminating them after the completion of the job.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

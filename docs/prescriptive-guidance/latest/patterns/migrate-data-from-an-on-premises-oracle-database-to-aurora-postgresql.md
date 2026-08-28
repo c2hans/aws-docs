@@ -172,3 +172,7 @@ You can also use this pattern to migrate an on-premises Oracle database to Amazo
 + [Getting Started with AWS DMS](https://aws.amazon.com/dms/getting-started/)
 + [Getting Started with Amazon RDS](https://aws.amazon.com/rds/getting-started/)
 + [AWS Database Migration Service Step-by-Step Walkthroughs](https://docs.aws.amazon.com/dms/latest/sbs/dms-sbs-welcome.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

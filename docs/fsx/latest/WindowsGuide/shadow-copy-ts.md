@@ -36,3 +36,7 @@ For more information, see [File system recommendations for shadow copies](shadow
 <a name="w2aac22c11c37c11"></a>
 
 This is expected behavior. Amazon FSx rebuilds the shadow-copy state on a recently restored file system and does not allow access to shadow copies or backups while the rebuilding is still in progress.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

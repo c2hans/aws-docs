@@ -50,3 +50,7 @@ Rangatiratanga is the ability to have sovereignty, leadership, and autonomy to m
  Whakapapa relates to genealogy and where we come from. For many Māori, connection to their iwi, hapū, and whānau is important. The connection is ongoing and connects people to their ancestry, ancestral history, culture, and the understanding of who they are as a people in the past, present, and future. Tracking data, where it originates from, and where it was accessed could reflect this principle.
 
 These principles are important te ao Māori principles and we encourage users of this lens to learn more. For more detail, see [Te Ara Encyclopedia of New Zealand](https://teara.govt.nz/en/te-ao-marama-the-natural-world/page-1) or in printed or digital copies of Tikanga Māori: Living by Māori values by Hirini Moko Mead.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

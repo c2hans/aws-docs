@@ -106,3 +106,7 @@ By knowing the answers to these questions, you can take the following actions:
 +  [Event-driven data security using Amazon Macie](https://www.youtube.com/watch?v=onqA7MJssoU)
 +  [Amazon Macie for data protection and governance](https://www.youtube.com/watch?v=SmMSt0n6a4k)
 +  [Fine-tune sensitive data findings with allow lists](https://www.youtube.com/watch?v=JmQ_Hybh2KI)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

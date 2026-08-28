@@ -178,3 +178,7 @@ Node broken-st-c5large-2(192.168.65.215) is currently in  replacement and no bac
 **`cloud-init-output` log(`/var/log/cloud-init-output.log`) on the compute nodes**
 
 After obtaining the bootstrap failure node private IP address in the `clustermgtd` log, you can find the corresponding compute node log by either logging into the compute node or by following the guidance in [Retrieving and preserving logs](troubleshooting-v3-get-logs.md) to retrieve logs. In most cases, the `/var/log/cloud-init-output` log from the problematic node shows the step that caused the compute node bootstrap failure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

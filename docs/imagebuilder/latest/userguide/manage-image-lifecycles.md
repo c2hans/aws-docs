@@ -34,3 +34,7 @@ Before you configure policy actions, verify that no downstream dependencies refe
 + [Create lifecycle policies](create-lifecycle-policies.md)
 + [How lifecycle policy execution works](lifecycle-policy-execution.md)
 + [How lifecycle management rules work for Image Builder image resources](image-lifecycle-rules.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

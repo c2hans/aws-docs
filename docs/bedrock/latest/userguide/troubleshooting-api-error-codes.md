@@ -228,3 +228,7 @@ Enabling TCP keep-alive on the Amazon Bedrock client requires *two* settings wor
 For a deeper discussion of long-running TCP connections in VPC networking, see [Implementing long-running TCP Connections within VPC networking](https://aws.amazon.com/blogs/networking-and-content-delivery/implementing-long-running-tcp-connections-within-vpc-networking/) on the AWS Networking & Content Delivery Blog.
 
 If you continue to experience connection issues after applying both settings, contact [AWS Support](https://aws.amazon.com/support) for further assistance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

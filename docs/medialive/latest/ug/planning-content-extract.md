@@ -46,3 +46,7 @@ After you have performed the procedures in this step, you should have source con
 + [Identifying content in an RTP source](extract-contents-rtp.md)
 + [Identifying content in a SMPTE 2110 source](extract-contents-s2110.md)
 + [Identifying content in an SRT source](extract-contents-srt.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

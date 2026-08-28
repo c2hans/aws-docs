@@ -27,3 +27,7 @@ If the Systems Manager home page opens first, choose the menu icon (![Horizontal
 1. Choose **Edit**. Update the **Value**. The value should be comma-separated with no spaces. For example, `/QuotaMonitor/RegionsToDeploy: us-east-1,us-east-2`. The default value is `ALL`.
 
 1. Choose **Save changes**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Quota Monitor for AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

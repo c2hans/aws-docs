@@ -30,3 +30,7 @@ OAuth2 client secret for Microsoft Office 365 Management API authentication. Can
 
 **Note**
 Store sensitive credentials like client IDs and secrets in AWS Secrets Manager and reference them using the `${{aws_secrets:secret-name:key}}` syntax in your configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

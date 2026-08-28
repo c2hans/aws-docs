@@ -28,3 +28,7 @@ To use Firewall Manager to enable AWS WAF Classic rules, perform the following s
 + [Step 2: Create rules](classic-get-started-fms-create-rules.md)
 + [Step 3: Create a rule group](classic-get-started-fms-create-rule-group.md)
 + [Step 4: Create and apply an AWS Firewall Manager AWS WAF Classic policy](classic-get-started-fms-create-security-policy.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

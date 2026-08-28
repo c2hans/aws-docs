@@ -29,3 +29,7 @@ If you sign requests manually without an SDK, be aware of the following differen
 + The credential scope uses `*` for the region component instead of a specific Region name, because the signature is valid across Regions.
 
 For more information about how SigV4a works, see [AWS Signature Version 4 for API requests](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_sigv.html). For code examples of SigV4a signing, see the [sigv4a-signing-examples](https://github.com/aws-samples/sigv4a-signing-examples) project on GitHub.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

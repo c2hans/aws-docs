@@ -59,3 +59,7 @@ If you have already configured an execution role for AgentCore Evaluations, the 
 
 **Note**
 If you plan to use insights findings to generate optimized configurations through [AgentCore optimization recommendations](optimization-recommendations.md), you also need `bedrock-agentcore:StartRecommendation`, `bedrock-agentcore:GetRecommendation`, `bedrock-agentcore:ListRecommendations`, and `bedrock-agentcore:DeleteRecommendation` permissions. See [Optimization Prerequisites](optimization-prereqs.md) for details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

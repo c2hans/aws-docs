@@ -32,3 +32,7 @@ This notebook has been verified to run in Amazon SageMaker Studio only. If you n
 + [Schedule Bias Drift Monitoring Jobs](clarify-model-monitor-bias-drift-schedule.md)
 + [Inspect Reports for Data Bias Drift](clarify-model-monitor-bias-drift-report.md)
 + [CloudWatch Metrics for Bias Drift Analysis](clarify-model-monitor-bias-drift-cw.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

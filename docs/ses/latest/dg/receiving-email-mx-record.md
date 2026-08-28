@@ -64,3 +64,7 @@ The procedures for creating an MX record for your domain depend on which DNS pro
 | Namecheap | [How can I set up MX records required for mail service? ](https://www.namecheap.com/support/knowledgebase/article.aspx/322/2237/how-can-i-set-up-mx-records-required-for-mail-service) (external link) |
 | Names.co.uk | [Changing your domain's DNS settings](https://www.names.co.uk/support/domains/1156-changing_your_domains_dns_settings.html) (external link) |
 | Wix | [Adding or Updating MX Records in Your Wix Account](https://support.wix.com/en/article/adding-or-updating-mx-records-in-your-wix-account) (external link) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

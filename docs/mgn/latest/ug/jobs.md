@@ -7,9 +7,9 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 # Review launch history
 <a name="jobs"></a>
 
-The **Launch history** tab allows you to track and manage all of the operation performed in AWS Transform MGN.
+The **Launch history** tab allows you to track and manage all of the operations performed in AWS Transform MGN.
 
-You can access the Launch History by choose **Launch history** on the left-hand navigation menu.
+You can access the Launch History by choosing **Launch history** on the left-hand navigation menu.
 
 ## Overview
 <a name="tracking-launch"></a>
@@ -53,7 +53,7 @@ Use this section to troubleshoot any potential issues and determine in which ste
 
 Use the **Filter job log by property or value** search bar to filter the job log.
 
-You can filter by a variety of properties, including **Time, Event, Source server Id, Source server hostname, Conversion server instance IS, Test/cutover instance ID**, and **Error**.
+You can filter by a variety of properties, including **Time, Event, Source server Id, Source server hostname, Conversion server instance ID, Test/cutover instance ID**, and **Error**.
 
 You can filter by multiple values at once.
 
@@ -64,4 +64,8 @@ The **Source servers** section shows a list of all source servers involved in th
 
 You can use the **Filter source servers by property or value** search bar to filter by **Source server name** or **Status**.
 
-Choose the **Source server name** of any of source server from the list to open the Server Details view for that server. [Learn more about server details.](server-details.md)
+Choose the **Source server name** of any source server from the list to open the Server Details view for that server. [Learn more about server details.](server-details.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

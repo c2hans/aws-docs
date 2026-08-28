@@ -84,3 +84,7 @@ To set the scope time on the Summary page
 With Detective, you can access up to a year of historical event data. For more information on source data in Detective, see [Source data used in a behavior graph](https://docs.aws.amazon.com/detective/latest/userguide/detective-source-data-about.html).
 
 1. When you're finished editing, to save the changes and update the displayed data, choose **Update scope time**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

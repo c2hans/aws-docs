@@ -263,3 +263,7 @@ Additionally, you can check your function's logs to verify the logs are as you e
 1. In the **Log streams** tab, choose the log stream for your function's invocation.
 
 1. Confirm your logs are as you expect.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

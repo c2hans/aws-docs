@@ -183,3 +183,7 @@ For specific migration assistance, contact AWS Support or your account team.
 **Q: How long will my data be retained?** A: Until October 7, 2026. After this date, all data will be deleted.
 
 If you have additional questions, please contact AWS Support.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

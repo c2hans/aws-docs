@@ -16,6 +16,10 @@ AWS Transform accepts data from the following sources:
 
 For each data source, AWS Transform accepts the primary server file individually. Supplementary files such as connections are only processed when included in a ZIP file with the server files or in an Excel file with the server sheet.
 
-Upload the most detailed data available. Review your export files before uploading to ensure data completeness and accuracy. Verify that all required files are included in your upload, and confirm that the data reflects your current environment state. This helps AWS Transform more accurately capture your on-premises environment and better support migration planning, including application grouping and wave planning. You can incrementally add data as you obtain it. AWS Transform automatically de-duplicates records across multiple uploads.
+Upload the most detailed data available. Before you upload, review your export files to ensure data completeness and accuracy. Verify that all required files are included, and confirm that the data reflects your current environment state. This helps AWS Transform capture your on-premises environment more accurately and better support migration planning, including application grouping and wave planning. You can incrementally add data as you obtain it. AWS Transform automatically de-duplicates records across multiple uploads.
 
 After upload, review your discovery data by expanding **Discover on-premises data** in the **Job Plan** and choosing **Inventory readiness summary**. You can ask questions in the chat to verify ingestion or identify issues. For example, you can ask about operating system and versions. To correct mistakes, re-upload your data and AWS Transform merges the updated records automatically. You can also remove a previously uploaded file if you no longer want to use that inventory data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ Share existing best practices, design standards, checklists, operating procedure
 +  AWS Documentation: [How to log a case with AWS Support](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html)
 +  AWS Documentation: [AWS Support](https://aws.amazon.com/premiumsupport/)
 +  SAP Note: [1656250 - SAP on AWS: Support prerequisites](https://launchpad.support.sap.com/#/notes/1656250) [Requires SAP Portal Access]
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

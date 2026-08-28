@@ -161,3 +161,7 @@ aws dms create-endpoint
 <a name="CHAP_Security.Kerberos.test"></a>
 
 You must test the Kerberos-enabled endpoint against a Kerberos-enabled replication instance. When you don't properly confiugure the replication instance or source endpoint for Kerberos authentication, the endpoint `test-connection` action will fail, and might return Kerberos-related errors. For more information, see [ test-connection](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/dms/test-connection.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

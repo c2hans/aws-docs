@@ -24,3 +24,7 @@ The following diagram illustrates the authentication flow between WorkSpaces App
 1. Using the authentication token from AWS, WorkSpaces Applications authorizes the user and presents applications to the browser.
 
 From the user's perspective, this process happens transparently. The user starts at your organization's internal portal and is automatically redirected to an WorkSpaces Applications application portal without being required to enter AWS credentials.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

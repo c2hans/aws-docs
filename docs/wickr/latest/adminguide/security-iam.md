@@ -17,3 +17,7 @@ AWS Identity and Access Management (IAM) is an AWS service that helps an adminis
 + [How AWS Wickr works with IAM](security_iam_service-with-iam.md)
 + [Identity-based policy examples for AWS Wickr](security_iam_id-based-policy-examples.md)
 + [Troubleshooting AWS Wickr identity and access](security_iam_troubleshoot.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

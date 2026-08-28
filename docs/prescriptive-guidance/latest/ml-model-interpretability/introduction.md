@@ -21,3 +21,7 @@ In some cases, regulations such as those in the healthcare and finance industrie
 + Discover reasons for general model behaviors, and provide new insights about both the data and the model.
 
 These business outcomes map directly to the four reasons for explainability that are identified in [[1](resources.md)].
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

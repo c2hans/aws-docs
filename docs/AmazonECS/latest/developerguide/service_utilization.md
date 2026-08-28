@@ -72,3 +72,7 @@ To view this metric, see [Amazon ECS Container Insights Metrics](https://docs.aw
 By default, Amazon ECS publishes `CPUUtilization` and `MemoryUtilization` service metrics to CloudWatch at 60-second resolution. You can configure 20-second resolution by setting a monitoring configuration on your service. This enables faster detection of resource utilization changes and can be used to drive faster service auto scaling.
 
 To enable high-resolution metrics, specify a monitoring configuration with `resolutionSeconds` set to `20` when creating or updating your service. For the full setup instructions including how to configure a high-resolution scaling policy, see [Faster auto scaling with high-resolution metrics](target-tracking-faster-auto-scaling.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

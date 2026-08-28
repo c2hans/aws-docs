@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/unable-to-u
 + If you subscribed the user as part of a group, allow up to 24 hours for their subscription to be activated. There might be a delay between the time the user is added to the group and the time their subscription becomes active.
 + Verify that the user's access to the Amazon Q Developer Pro managed application was not revoked or that the managed application was not deleted. Restore access to the managed application if needed.
 + Have users sign in with a Builder ID to use the Free tier while they wait for their subscription to become active. For more information, see [Installing the Amazon Q Developer extension or plugin in your IDE](q-in-IDE-setup.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

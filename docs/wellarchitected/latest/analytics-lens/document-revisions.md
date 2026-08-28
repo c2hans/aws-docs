@@ -16,3 +16,7 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 | [Minor update](#document-revisions) | Updates throughout and added placeholder for Sustainability. | September 14, 2022 |
 | [Whitepaper updated](#document-revisions) | Title changed to Data Analytics Lens. Major updates applied throughout.  | October 29, 2021 |
 | [Initial publication](#document-revisions) | Analytics Lens first published. | May 20, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

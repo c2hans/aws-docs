@@ -13,3 +13,7 @@ Some resource structures benefit from using a shared repository where contributi
 To address these use cases, creating a workflow that uses change review is typically implemented.
 
 The biggest challenge that an organization faces is not allowing or implementing these use cases. Trying to manage a central application construct in a distributed manner, such as repository creation in the organization, can result in access vulnerabilities and non-standardized processes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

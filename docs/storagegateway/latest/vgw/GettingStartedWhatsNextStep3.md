@@ -50,3 +50,7 @@ Following, you can find how to do both of these tasks. If you activated a gatewa
 1. Set one or more alarms to notify you about upload buffer use.
 
    We highly recommend that you create one or more upload buffer alarms in the Amazon CloudWatch console. For example, you can set an alarm for a level of use you want to be warned about and an alarm for a level of use that, if exceeded, is cause for action. The action might be adding more upload buffer space. For more information, see [To set an upper threshold alarm for a gateway's upload buffer](PerfUploadBuffer-common.md#GatewayAlarm1-common).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

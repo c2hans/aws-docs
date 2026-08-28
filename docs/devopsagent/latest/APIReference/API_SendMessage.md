@@ -18,11 +18,19 @@ Content-type: application/json
    "assetIds": [ "{{string}}" ],
    "content": "{{string}}",
    "context": {
+      "approvalAction": {
+         "action": "{{string}}",
+         "approvalId": "{{string}}",
+         "buttonText": "{{string}}",
+         "interruptId": "{{string}}",
+         "toolUseId": "{{string}}"
+      },
       "currentPage": "{{string}}",
       "lastMessage": "{{string}}",
       "userActionResponse": "{{string}}"
    },
    "executionId": "{{string}}",
+   "modelTier": "{{string}}",
    "userId": "{{string}}"
 }
 ```
@@ -34,7 +42,7 @@ The request uses the following URI parameters.
 
  ** [agentSpaceId](#API_SendMessage_RequestSyntax) **   <a name="devopsagent-SendMessage-request-uri-agentSpaceId"></a>
 The agent space identifier
-Pattern: `[a-zA-Z0-9-]{1,64}`
+Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: Yes
 
 ## Request Body
@@ -62,8 +70,14 @@ Required: No
  ** [executionId](#API_SendMessage_RequestSyntax) **   <a name="devopsagent-SendMessage-request-executionId"></a>
 The execution identifier for the chat session
 Type: String
-Pattern: `[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}`
+Length Constraints: Minimum length of 32. Maximum length of 50.
+Pattern: `[A-Za-z0-9_-]+`
 Required: Yes
+
+ ** [modelTier](#API_SendMessage_RequestSyntax) **   <a name="devopsagent-SendMessage-request-modelTier"></a>
+Optional model tier selection. Valid values: smart, balanced, fast. Absent or unrecognized values default to balanced.
+Type: String
+Required: No
 
  ** [userId](#API_SendMessage_RequestSyntax) **   <a name="devopsagent-SendMessage-request-userId"></a>
 User identifier. This field is deprecated and will be ignored — the service resolves user identity from the authenticated session.
@@ -245,3 +259,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/devops-agent-2026-01-01/SendMessage)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/devops-agent-2026-01-01/SendMessage)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/devops-agent-2026-01-01/SendMessage)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

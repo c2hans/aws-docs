@@ -53,3 +53,7 @@ When the `UsagePlan` property of the `Auth` property of an `AWS::Serverless::Api
 **`AWS::ApiGateway::ApiKey`**
 *`LogicalId`: *`{{<api‑LogicalId>}}ApiKey`
 *Referenceable property: *`{{<api‑LogicalId>}}.ApiKey`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

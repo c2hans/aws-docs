@@ -24,3 +24,7 @@ If you do not have any requirement to own and manage an AWS account, you can req
 ![Direct Connect gateway in your own account with Multi Region.](http://docs.aws.amazon.com/sap/latest/general/images/rise-direct-connect-gateway-sap-provided.png)
 
 There is no additional charges for AWS Direct Connect gateway itself. You can find out more from the [AWS Direct Connect FAQs](https://aws.amazon.com/directconnect/faqs/#Direct_Connect_Gateway).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

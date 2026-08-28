@@ -46,3 +46,7 @@ Query 2: MERGE (n {firstName: 'fname', lastName: 'lname2'})
 ```
 
  **Vector embeddings:** The changes (inserts, deletes, and updates) to vector embeddings are non-atomic and unisolated (see [Vector index transaction support](vector-index.md#vector-index-transaction-support)), unlike other graph updates. The changes to vector embeddings by a query become durable on write and visible to all other queries even if that query fails later. If a query updates the vector embeddings and makes other changes to the graph, then only the latter are atomic and isolated.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

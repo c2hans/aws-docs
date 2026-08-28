@@ -54,3 +54,7 @@ Before you can launch and connect to an EC2 instance, you need to create a key p
 1. Select the check box for the key pair that you created, and then choose **Launch Instances**.
 
 Your EC2 instance is now configured to mount the EFS file system at launch and whenever it's rebooted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

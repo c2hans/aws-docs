@@ -106,3 +106,7 @@ The following Regions and engine versions are available for Aurora serverless wi
 | <a name="asv2-apg-gov-us-west-1"></a>AWS GovCloud (US-West) | Version 17.4 and higher | Version 16.1 and higher | Version 15.2 and higher | Version 14.3 and higher | Version 13.6 and higher |
 
  The upper and lower ACU limits for Aurora serverless capacity might vary depending on your engine version. For details, see [Aurora serverless capacity](aurora-serverless-v2.how-it-works.md#aurora-serverless-v2.how-it-works.capacity).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ On November 7, 2025, AWS Thinkbox Deadline 10 will enter maintenance mode. We re
 <a name="python-prerequisites"></a>
 
 In addition to the general [RFDK prerequisites](work-with-rfdk.md#work-with-prerequisites), please see [the Python prerequisites for AWS CDK](https://docs.aws.amazon.com/cdk/latest/guide/work-with-cdk-python.html#python-prerequisites).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Render Farm Deployment Kit on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rfdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,3 +37,7 @@ To report any illegal activity or violation of the [Acceptable Use Policy](https
    + **Gandi WHOIS:** [https://whois.gandi.net](https://whois.gandi.net) (use this if your domain registrar is Gandi; see [Finding your registrar and other information about your domain](find-your-registrar.md))
 
 1. Enter the name of the domain that you want to view information about, and choose **Search**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

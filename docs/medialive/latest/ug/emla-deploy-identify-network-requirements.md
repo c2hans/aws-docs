@@ -60,3 +60,7 @@ Here is a summary of the information that you should have collected for each clu
 | The following set of information for each network interface on the node:+  A type of encoding traffic on the network <br />+  The ID of the network that handles that traffic <br />+  A logical interface name to assign to the network interfaces on all the nodes  | When creating the node |
 | The default route for all nodes on the cluster | When creating the cluster |
 | Initial role of each node in the cluster (active or backup) | When creating the node |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

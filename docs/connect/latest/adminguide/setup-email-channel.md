@@ -48,3 +48,7 @@ In the routing profile:
   + **Amazon SES Spam Verdict** and **Amazon SES Virus Verdict**: When the customer's email comes in, Amazon SES scans it for spam and viruses. For example, if the condition equals FAILED (that means, the email failed the check) you can disconnect the contact or send the email to a special queue for managers to review it.
 + Assign the following security profile permission to your agents who need to initiate outbound emails.
   + **Contact Control Panel (CCP)** - **Initiate email conversations**
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

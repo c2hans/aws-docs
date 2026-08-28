@@ -108,3 +108,7 @@ The following are known limitations of the Amazon Quick Microsoft Teams extensio
 + Actions that require file uploads as inputs are not supported by the Microsoft Teams extension at this time.
 + [Flows](https://docs.aws.amazon.com/quicksuite/latest/userguide/flows.html) are not supported in the Microsoft Teams extension at this time.
 + File upload limitations are the same as those in the web experience. For more information see [Upload files and chat](https://docs.aws.amazon.com/quicksuite/latest/userguide/using-quick-chat.html#file-uploads).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,3 +42,7 @@ To resolve this, do one of the following:
 + Verify the Detective behavior graph is ingesting data from an optional data source package. For more information about source data used in Detective behavior graphs, see [Source data used in a behavior graph](https://docs.aws.amazon.com/detective/latest/userguide/detective-source-data-about.html).
 + To allow Detective to ingest data from Security Hub CSPM and add that data to your behavior graph, you must enable Detective for AWS security findings as a data source package. For more information, see [AWS security findings](https://docs.aws.amazon.com/detective/latest/userguide/source-data-types-asff.html).
 + If you are navigating to an entity profile or finding overview in Detective, make sure that the URL is in the right format. For details on the formation of a profile URL, see [Navigating to an entity profile or finding overview using URL](https://docs.aws.amazon.com/detective/latest/userguide/profile-navigate-url.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

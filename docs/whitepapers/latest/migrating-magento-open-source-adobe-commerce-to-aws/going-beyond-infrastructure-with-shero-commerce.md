@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-ope
  For customers interested in additional modernization of their ecommerce platform, Shero has worked with online sellers to integrate their Magento open-source or Adobe Commerce on cloud infrastructure self-service store with Amazon Alexa, called [Voice Commerce](https://sherocommerce.com/voice/). This integration allows customers to use their voice to interact with the seller’s storefront to make purchases or get recommendations. Learn more about voice-enabled purchasing for Magento open-source or Adobe Commerce on cloud infrastructure self-service environments in this [APN TV video](https://pages.awscloud.com/apn-tv-586.html).
 
  Adapting to the ever-changing world of e-commerce, Shero continues to expand their offerings with innovative opportunities like this Magento Quick Start. To learn more or to contact their team, visit [SheroCommerce.com](https://sherocommerce.com/?utm_source=apn&utm_medium=blog&utm_campaign=quickstart).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

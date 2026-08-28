@@ -72,25 +72,27 @@ Temporal policies are available in the AWS Regions marked in the following table
 
 | Region name | Temporal policies |
 | --- | --- |
-| US West (Oregon) | ✓ |
-| US East (N. Virginia) | ✓ |
-| Europe (Frankfurt) | ✓ |
-| Asia Pacific (Sydney) | ✓ |
-| Asia Pacific (Mumbai) | ✓ |
-| Asia Pacific (Singapore) | ✓ |
-| Europe (Ireland) | ✓ |
-| Asia Pacific (Tokyo) | ✓ |
-| US East (Ohio) | ✓ |
-| Europe (London) | ✓ |
-| Canada (Central) | ✓ |
-| Europe (Stockholm) | ✓ |
-| Asia Pacific (Seoul) | ✓ |
-| Europe (Paris) | ✓ |
-| South America (São Paulo) | ✓ |
-| Europe (Spain) | ✓ |
-| Asia Pacific (Thailand) | ✗ |
-| Europe (Milan) | ✗ |
-| Asia Pacific (Malaysia) | ✗ |
+| Asia Pacific (Hyderabad) | No |
+| Asia Pacific (Malaysia) | No |
+| Asia Pacific (Mumbai) | ✓ Yes |
+| Asia Pacific (Seoul) | ✓ Yes |
+| Asia Pacific (Singapore) | ✓ Yes |
+| Asia Pacific (Sydney) | ✓ Yes |
+| Asia Pacific (Thailand) | No |
+| Asia Pacific (Tokyo) | ✓ Yes |
+| Canada (Central) | ✓ Yes |
+| Europe (Frankfurt) | ✓ Yes |
+| Europe (Ireland) | ✓ Yes |
+| Europe (London) | ✓ Yes |
+| Europe (Milan) | No |
+| Europe (Paris) | ✓ Yes |
+| Europe (Spain) | ✓ Yes |
+| Europe (Stockholm) | ✓ Yes |
+| South America (São Paulo) | ✓ Yes |
+| US East (N. Virginia) | ✓ Yes |
+| US East (Ohio) | ✓ Yes |
+| US West (N. California) | No |
+| US West (Oregon) | ✓ Yes |
 
 ## Considerations
 <a name="policy-temporal-limitations"></a>
@@ -152,3 +154,7 @@ For the complete list of policy metrics, dimensions, and span attributes, and fo
 <a name="policy-temporal-security"></a>
 
 Rate limiting with temporal policies applies within a single session. Because temporal history is scoped to a session and the session ID is supplied by the caller, a `count`-based limit such as "at most N calls per session" counts only the events recorded for that session. Starting a new session begins a new count, so a temporal rate limit constrains activity within a session rather than across all of a caller’s sessions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ You can use Git to create, manage, and delete branches in the clone of the sourc
 | Deletes a branch in the remote repository using the specified nickname the local repo has for the remote repository and the specified branch name. (Note the use of the colon (`:`).) Alternatively, specify `--delete` as part of the command. | `git push {{remote-name}} :{{branch-name}}`<br />`git push {{remote-name}} --delete {{branch-name}}` |
 
 For more information, see your Git documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

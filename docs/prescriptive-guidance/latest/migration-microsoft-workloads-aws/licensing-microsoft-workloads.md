@@ -174,3 +174,7 @@ Within 10 days of deploying your Microsoft workloads on AWS, be sure to submit t
 The **License Mobility Verification** form has a section to provide information about the authorized mobility partner. Use `microsoft@amazon.com` as the email address, `Amazon Web Services` as the partner name, and `aws.amazon.com` as the partner website.
 
 To learn more about the verification process, see [License Mobility through Software Assurance](https://www.microsoft.com/en-us/licensing/licensing-programs/software-assurance-license-mobility.aspx) in the Microsoft documentation. For more guidance, see Microsoft's [Verification Guide for Customers](https://download.microsoft.com/download/7/9/b/79bd917e-760b-48b6-a266-796b3e47c47a/License_Mobility_Customer_Verification_Guide.pdf) (downloadable PDF) in the Microsoft documentation. To download a copy of the **License Mobility Verification** form, see [Licensing Resources and Documents](https://www.microsoft.com/licensing/docs/view/Forms?lang=1&year=2016) in the Microsoft documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

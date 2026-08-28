@@ -23,3 +23,7 @@ Using the guardrails feature, you can define global controls and topic-level con
 + [Using global controls in Amazon Q Business](guardrails-global-controls.md)
 + [Using topic-level controls in Amazon Q Business](guardrails-topic-controls.md)
 + [Managing Amazon Q Business admin controls and guardrails](guardrails-management.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,3 +65,7 @@ When you complete all the steps described in the previous sections, the SAP Busi
 1. Start SAP BusinessObjects BI Platform in the DR region and perform validation.
 
 1. Redirect your users by changing the value of the `CNAME` used for SAP BusinessObjects BI Platform from the Application Load Balancer for the primary region to the load balancer for the DR region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

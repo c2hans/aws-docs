@@ -41,3 +41,7 @@ The PostgreSQL command `pg_dumpall` requires super\_user permissions that are no
 + [Using the \\copy command to import data to a table on a PostgreSQL DB instance](PostgreSQL.Procedural.Importing.Copy.md)
 + [Importing data from Amazon S3 into an RDS for PostgreSQL DB instance](USER_PostgreSQL.S3Import.md)
 + [Transporting PostgreSQL databases between DB instances](PostgreSQL.TransportableDB.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

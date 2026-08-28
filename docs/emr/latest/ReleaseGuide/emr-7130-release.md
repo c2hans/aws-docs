@@ -93,8 +93,7 @@ The following applications are upgraded in this release:
 
 ### Known issues and limitations
 <a name="emr-7130-known-issues"></a>
-
-There are no known issues in this release.
++ Configuring `yarn.nodemanager.log-dirs` with a value of length longer than 512 characters will cause S3 log upload to fail.
 + The following table lists the Amazon Linux release labels, kernel versions, available dates, and supported AWS Regions.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-7130-release.html)
 
@@ -366,3 +365,7 @@ Reconfiguration actions occur when you specify a configuration for instance grou
 | Date | Event | Description |
 | --- | --- | --- |
 | 2026-04-28 | Docs publication | Amazon EMR 7.13.0 release notes first published |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

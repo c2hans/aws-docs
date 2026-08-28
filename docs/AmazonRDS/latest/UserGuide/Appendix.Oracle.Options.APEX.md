@@ -31,3 +31,7 @@ Amazon RDS doesn't support the Oracle XML DB HTTP server with the embedded PL/SQ
   For more information about these listener types, see [About choosing a web listener](https://docs.oracle.com/en/database/oracle/apex/23.2/htmig/choosing-web-listener.html) in the Oracle documentation.
 
 When you add the `APEX` and `APEX-DEV` options to your RDS for Oracle DB instance, Amazon RDS installs the Oracle APEX repository only. Install your listener on a separate host.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

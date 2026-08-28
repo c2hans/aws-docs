@@ -41,3 +41,7 @@ The following table describes the releases for Classic Load Balancers.
 | [AWS SDK for Java](#DocumentHistory) | Added support for the SDK for Java. | March 22, 2010 |
 | [AWS SDK for .NET](#DocumentHistory) | Added support for the SDK for .NET. | November 11, 2009 |
 | [New service](#DocumentHistory) | Initial public beta release of Elastic Load Balancing. | May 18, 2009 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

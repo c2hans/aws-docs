@@ -30,3 +30,7 @@ You must enable event clipping in the channel.
    You now have a usable feed: resource - feed - output.
 
    You can start the channel. When the channel is running, MediaLive delivers the source stream to Elemental Inference and then retrieves metadata from Elemental Inference. This metadata provides information that you use to crop and scale the video. You use a third-party solution to transform the video. (MediaLive can't crop the video.) For more information, see [ Creating an Elemental Inference workflow](https://docs.aws.amazon.com/elemental-inference/latest/userguide/elemental-inference-configuration) in the *AWS Elemental Inference user guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

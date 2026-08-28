@@ -34,3 +34,7 @@ For PCoIP, data in-transit is encrypted using TLS 1.2 encryption and SigV4 reque
 To learn more about Group Policy administration for Amazon WorkSpaces, see [Configure PCoIP security settings](group_policy.md#gp_security) in [Manage your Windows WorkSpaces in WorkSpaces Personal](group_policy.md). To learn more about modifying the `pcoip-agent.conf` file, see [Control PCoIP Agent behavior on Amazon Linux WorkSpaces](manage_linux_workspace.md#pcoip_agent_linux) and [ PCoIP Security Settings](https://www.teradici.com/web-help/pcoip_agent/standard_agent/linux/21.03/admin-guide/configuring/configuring/#pcoip-security-settings) in the Teradici documentation.
 
 For DCV, streaming and control data in-transit is encrypted using TLS 1.3 encryption for UDP traffic and TLS 1.2 encryption for TCP traffic, with AES-256 ciphers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

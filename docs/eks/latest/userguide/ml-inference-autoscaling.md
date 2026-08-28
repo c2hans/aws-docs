@@ -98,3 +98,7 @@ Together they form layers of defense: request queue depth is the primary trigger
 The following subsections show how to put these signals to work with a specific autoscaler.
 +  [Find scaling metric thresholds](ml-inference-autoscaling-thresholds.md). Load test a single vLLM replica to find its capacity ceiling and the queue depth and latency thresholds to scale on. Start here.
 +  [Scale with HPA and KEDA](ml-inference-autoscaling-hpa-keda.md). Autoscale vLLM replicas with KEDA and the Horizontal Pod Autoscaler, using request queue depth and end-to-end latency as the scaling signals.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ You can use the AWS Management Console, AWS CLI, or AWS API to create customer m
 + [Create IAM policies (console)](access_policies_create-console.md)
 + [Create IAM policies (AWS CLI)](access_policies_create-cli.md)
 + [Create IAM policies (AWS API)](access_policies_create-api.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

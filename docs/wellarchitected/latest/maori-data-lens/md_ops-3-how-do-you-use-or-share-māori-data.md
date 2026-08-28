@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/maori-data-lens/m
  For further reading, refer to the [AWS Machine Learning lens](https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-lens/machine-learning-lens.html).
 
  AWS continues to update this information and share additional guidance to customers on the use of AI/ML. Please reach out to the team at AWS for further updates.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -166,3 +166,7 @@ Security groups implement a least-privilege inbound allow model between componen
 <a name="optional-access-restriction"></a>
 
 The Fleet Manager UI is served through Amazon CloudFront. Deployments that require restricting access to a specific set of users can optionally configure a [CloudFront trusted key group](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/private-content-trusted-signers.html) to issue signed cookies or signed URLs. This is a standard CloudFront capability and is not configured by default. When deployed without a trusted key group, the CloudFront distribution is publicly reachable and access control is enforced entirely by the Cognito user pool at the API and WebSocket layers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

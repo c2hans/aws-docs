@@ -132,3 +132,7 @@ FileMatch "s3://amzn-s3-demo-bucket/file.json" in ["3ee0d8617ac04179sam4713e5ef8
 ![The screenshot shows a rule with the DQ status of Rule failed. FileMatch explains the failure.](http://docs.aws.amazon.com/glue/latest/dg/images/data-quality-file-match-transform.png)
 
 1.  This rule will not work in AWS Glue Interactive Sessions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,3 +54,7 @@ The infrastructure must be ready to handle live traffic when user journeys are s
 <a name="post-go-live-support--pgls-.08eff6f8-6169-5fa6-ad9c-5e63cfa65bb6"></a>
 
 The project team remains engaged with the business as usual (BAU) support teams and end-users during the first few weeks after the new contact center goes live. The project team can help users get started on the new system, get involved in troubleshooting issues alongside the BAU support team, and improve support documentation based on feedback.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

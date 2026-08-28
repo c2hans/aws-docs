@@ -280,3 +280,7 @@ When there are any syntactic errors related to the canary's JSON check configura
 For any intermittent or consistent failures related to timeouts, network connection failures (for example, ENOTFOUND, ECONNRESET) consider turning on ` DEBUG` logs such that the following run will provide more additional details on why the Checks are failing. To do so, provide the Environment Variable CW\_SYNTHETICS\_LOG\_LEVEL: "DEBUG".
 
 If there are still failures that you are unable to debug, consider reaching out to AWS Support or checking if any of the other provided Canary types from CloudWatch Synthetics more closely matches your use-case.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

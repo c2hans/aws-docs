@@ -28,3 +28,7 @@ Information about the application includes whether user and group assignments ar
    1. To change the description, enter the desired description in the **Description** field and choose **Save changes**.
 
    1. To change the user and group assignment method, make the desired change and choose **Save changes**. For more information, see [Users, groups, and provisioning in IAM Identity Center](users-groups-provisioning.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

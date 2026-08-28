@@ -30,3 +30,7 @@ The following table lists the wait events for Aurora PostgreSQL that most common
 | [LWLock:MultiXact](apg-waits.lwlockmultixact.md) | This type of event occurs when Aurora PostgreSQL is keeping a session open to complete multiple transactions that involve the same row in a table. The wait event denotes which aspect of multiple transaction processing is generating the wait event, that is, LWLock:MultiXactOffsetSLRU, LWLock:MultiXactOffsetBuffer, LWLock:MultiXactMemberSLRU, or LWLock:MultiXactMemberBuffer. |
 | [LWLock:pg\_stat\_statements](apg-rpg-lwlockpgstat.md) | This event occurs when the `pg_stat_statements` extension takes an exclusive lock on the hash table that tracks SQL statements. |
 | [Timeout:PgSleep](apg-waits.timeoutpgsleep.md) | This event occurs when a server process has called the `pg_sleep` function and is waiting for the sleep timeout to expire.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -298,3 +298,7 @@ In the following example, replace each {{*user input placeholder*}} with your ow
 ------
 
 When you set permissions on the role, you can control which Amazon S3 locations a user can access. You can also set {{*Deny*}} policies on this role to prevent access to resources. For example, you can use the {{*Deny*}} policy to prevent access to resources in another account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

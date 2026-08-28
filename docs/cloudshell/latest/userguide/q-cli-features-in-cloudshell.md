@@ -127,3 +127,7 @@ The script downloads the latest installer from `https://desktop-release.q.us-eas
 The script then extracts the archive and runs the bundled installer with `sudo Q_INSTALL_GLOBAL=1 Q_SKIP_SETUP=1 "/tmp/kirocli-update.{{XXXXXX}}/kirocli/install.sh"`.
 The script puts the latest version in a temporary location. When you restart your CloudShell environment, Kiro CLI resets to the pre-installed version. Run the script again to update. Your data, such as chat history, settings, and sign-in, is saved in your home directory and persists across restarts.
 For more information about the script, see `kiro-cloudshell-latest-README.md` in the zip file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

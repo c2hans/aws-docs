@@ -67,3 +67,7 @@ Dual-stack: `[Region].sso.signin.aws`
 If your organization uses firewalls or network gateways, allowlist both the existing IPv4 and the new dual-stack IAM Identity Center endpoints to ensure uninterrupted access regardless of which endpoint your web apps use. For the full list of domains and URL endpoints to allowlist, see [Update firewalls and gateways to allow access to the AWS access portal](https://docs.aws.amazon.com/singlesignon/latest/userguide/enable-identity-center-portal-access.html) in the *IAM Identity Center User Guide*.
 
 For web apps hosted in a VPC, you can choose the IP address type for your VPC endpoint: IPv4 only or dual-stack (IPv4 and IPv6). The default is dual-stack for backward compatibility. Choose IPv4 if your VPC is IPv4-only or if you don't need IPv6 connectivity. You can change the IP address type after creation by updating the web app.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

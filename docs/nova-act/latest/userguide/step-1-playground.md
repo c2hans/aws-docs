@@ -12,3 +12,7 @@ To access the Nova Act playground:
 + Select **Nova Act Playground**.
 + Experiment with Nova Act using natural language commands and watch the agent taking actions in the hosted web browser.
 + When ready, download the Python script for local development.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova Act. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova-act` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

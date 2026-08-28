@@ -34,3 +34,7 @@ To view the status of your running instances, use the EC2-compatible API command
 
 **Note**
 There is no console or job management API for AWS Snowball Edge support for launch templates. You use EC2-compatible and Snowball Edge client CLI commands to automatically start EC2-compatible instances on your AWS Snowball Edge device.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

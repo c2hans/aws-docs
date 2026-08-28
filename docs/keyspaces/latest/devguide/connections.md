@@ -126,3 +126,7 @@ When exceeding the 3,000 request per connection quota, Amazon Keyspaces returns 
 The default retry policy attempts to `try next host` in the query plan. Because Amazon Keyspaces may have one to three available endpoints when connecting to the VPC endpoint, you may also see the `NoHostAvailableException` in addition to the `WriteTimeout` and `ReadTimeout` exceptions in your application logs. You can use Amazon Keyspaces provided retry policies, which retry on the same endpoint but across different connections.
 
 You can find examples for exponential retry policies for Java on GitHub in the [ Amazon Keyspaces Java code examples](https://github.com/aws-samples/amazon-keyspaces-java-driver-helpers/blob/main/src/main/java/com/aws/ssa/keyspaces/retry/AmazonKeyspacesExponentialRetryPolicy.java) repository. You can find additional language examples on Github in the [Amazon Keyspaces code examples](https://github.com/aws-samples/amazon-keyspaces-examples) repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

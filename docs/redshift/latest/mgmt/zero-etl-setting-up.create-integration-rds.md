@@ -30,3 +30,7 @@ The Amazon RDS console offers a step-by-step integration creation flow, in which
 For detailed instructions to create RDS zero-ETL integrations, see [Creating Amazon RDS zero-ETL integrations with Amazon Redshift](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/zero-etl.creating.html) in the *Amazon RDS User Guide*.
 
 For detailed instructions to specifically create an Amazon RDS for Oracle zero-ETL integration, see [Setting up a zero-ETL integration](https://docs.aws.amazon.com/odb/latest/UserGuide/setting-up-zero-etl.html) in the *Oracle Database@AWS User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

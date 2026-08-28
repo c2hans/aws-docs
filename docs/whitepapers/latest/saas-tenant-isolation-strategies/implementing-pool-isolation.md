@@ -26,3 +26,7 @@ Here’s you’ll see two different ways of apply IAM policies to scope access o
 + [Application-enforced pool isolation](application-enforced-pool-isolation.md)
 + [Pool for any resource](pool-for-any-resource.md)
 + [Hiding the details of pooled isolation](hiding-the-details-of-pooled-isolation.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

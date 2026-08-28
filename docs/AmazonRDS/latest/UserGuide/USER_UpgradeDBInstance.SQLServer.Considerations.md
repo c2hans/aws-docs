@@ -80,3 +80,7 @@ If your DB instance uses a custom DB parameter group:
   For example, when you upgrade to a new major version, you must specify a new parameter group. We recommend that you create a new parameter group, and configure the parameters as in your existing custom parameter group.
 
 For more information, see [Creating a DB parameter group in Amazon RDS](USER_WorkingWithParamGroups.Creating.md) or [Copying a DB parameter group in Amazon RDS](USER_WorkingWithParamGroups.Copying.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -381,3 +381,7 @@ Where:
 + {{3293a69d-4a1e-4a07-8715-208ddexample}} and {{6fad0fb5-3e82-4270-bede-469f2example}} are the unique identifiers for the custom data identifiers to use.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

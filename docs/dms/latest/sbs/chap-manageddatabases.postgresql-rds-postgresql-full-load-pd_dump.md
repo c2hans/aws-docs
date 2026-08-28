@@ -108,3 +108,7 @@ To complete the export and import operations, the pg\_dump and pg\_restore requi
 + The size of your source database.
 + The number of jobs.
 + The resources that you provision for your instance used to invoke pg\_dump and pg\_restore.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

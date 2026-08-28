@@ -52,3 +52,7 @@ If viewers experience buffering or slow loading, check these performance-related
   Solution: Implement origin request limiting. You can also increase origin capacity or improve caching to reduce origin load.
 
 For additional troubleshooting assistance, see [Troubleshooting MediaTailor](https://docs.aws.amazon.com/mediatailor/latest/ug/troubleshooting.html) or contact AWS Support. For implementation guidance on resolving common CDN issues, see [Debugging your content delivery network](https://aws.amazon.com/blogs/media/debugging-your-content-delivery-network/) on the AWS Media Blog.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

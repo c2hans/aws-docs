@@ -96,3 +96,7 @@ After you choose an approach, use the following links to get started:
 + [Quick start: OTel Container Insights on Amazon EKS](container-insights-eks-otel-quickstart.md) — Set up OTel Container Insights with the fastest path.
 + [Setup guide (AWS CLI)](container-insights-eks-classic-setup.md) — Set up Enhanced Container Insights (Classic).
 + [Migration guides](container-insights-eks-migration-hub.md) — Migrate from Classic to OTel Container Insights.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

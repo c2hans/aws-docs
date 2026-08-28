@@ -73,3 +73,7 @@ If you encounter any issues with Standard WebAuthn or Enhanced WebAuthn:
 + For Enhanced WebAuthn, confirm with your administrator that it's enabled for your WorkSpace.
 + Try restarting your browser or your WorkSpace session.
 + If problems persist, contact your WorkSpaces administrator or AWS Support.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

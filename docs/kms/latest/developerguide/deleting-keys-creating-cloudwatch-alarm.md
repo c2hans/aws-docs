@@ -27,3 +27,7 @@ In this procedure, you create a CloudWatch log group metric filter that finds in
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/kms/latest/developerguide/deleting-keys-creating-cloudwatch-alarm.html)
 
 After you complete this procedure, you will receive a notification each time your new CloudWatch alarm enters the `ALARM` state. If you receive a notification for this alarm, it might mean that a KMS key that is scheduled for deletion is still needed to encrypt or decrypt data. In that case, [cancel deletion of the KMS key](deleting-keys-scheduling-key-deletion.md) and reconsider your decision to delete it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -89,3 +89,7 @@ For information about the **Color space** fields, see [Handling complex color sp
 <a name="video-encode-additional-settings"></a>
 
 For information about the **Additional encoding setting**s fields, see [Setting up enhanced VQ mode](video-enhancedvq.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

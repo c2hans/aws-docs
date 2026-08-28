@@ -27,3 +27,7 @@ Netskope supports the following AppFabric output schema and formats:
 Netskope supports the following AppFabric output location:
 + Amazon Simple Storage Service (Amazon S3)
   + To configure Netskope to receive data from the Amazon S3 bucket that contains your audit logs, follow the instructions in [Data Protection for Amazon Web Services S3](https://docs.netskope.com/en/data-protection-for-amazon-web-services-s3.html) on the Netskope website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -153,3 +153,7 @@ Harness tags propagate to the managed Runtime, Runtime endpoint, and managed Mem
 +  [Environment and filesystem](harness-environment.md) - environment variables and custom containers
 +  [Security and access controls](harness-security.md) - execution role policy and IAM permissions
 +  [API Documentation](harness-get-started.md#api-documentation)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ The Applications page lists all SAP applications registered with Systems Manager
 Select an application to view a summary of its details, including the application status, discovery status, ARN, running components, and SAP configuration check status. From the **Actions** menu, you can perform operations such as starting or stopping an application, updating credentials, or running on-demand discovery.
 
 To view the full details and manage an application, choose the application ID to open the application details page. For more information, see [Application details](manage-console.md#application-details).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ssm-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

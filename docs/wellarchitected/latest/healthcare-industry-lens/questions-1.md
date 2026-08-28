@@ -42,3 +42,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 |   |
 
  Use Network Load Balancer to route HL7 v2 traffic to your integration endpoints. Network Load Balancer can also monitor the health of your integration endpoints and only route traffic to healthy targets. Deploy your integration services in multiple Availability Zones and enable multiple Availability Zones for the load balancer to increase fault tolerance. APIs hosted by API Gateway are automatically resilient by using multiple Availability Zones in the deployed Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

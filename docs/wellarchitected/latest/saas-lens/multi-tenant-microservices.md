@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/multi-t
  Finally, our service records a metric (perhaps execution time) using the same mechanism for resolving the tenant identifier and injecting tenant context into the metrics messages.
 
  The practices outlined here are not meant to introduce heavyweight constructs into your microservices. This abstraction of tenancy follows the general design practices of pushing common concepts into shared code. It’s important to note that all of the concepts represented in this diagram are running within the context of a single microservice. Each of these blocks simply represent code that is reused by your microservice. Breaking these concepts into separate services would add latency and complexity that would typically not be justified.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

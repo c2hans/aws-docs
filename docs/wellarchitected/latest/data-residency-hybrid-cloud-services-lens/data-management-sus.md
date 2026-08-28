@@ -23,3 +23,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 + [DRHCSUS04-BP03 Consider sustainable storage options for AWS Outposts](drhcsus04-bp03.md)
 + [DRHCSUS05-BP01 Consider using supported AWS-managed file services to minimize data duplication in Local Zones](drhcsus05-bp01.md)
 + [DRHCSUS05-BP02 Consider Amazon S3 for Outposts, or deploy a self-managed shared-file sharing solution](drhcsus05-bp02.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

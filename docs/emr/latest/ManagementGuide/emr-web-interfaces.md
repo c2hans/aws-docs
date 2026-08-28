@@ -55,3 +55,7 @@ With Amazon EMR version 5.25.0 or later, you can access Spark history server UI 
 + [Option 1: Set up an SSH tunnel to the Amazon EMR primary node using local port forwarding](emr-ssh-tunnel-local.md)
 + [Option 2, part 1: Set up an SSH tunnel to the primary node using dynamic port forwarding](emr-ssh-tunnel.md)
 + [Option 2, part 2: Configure proxy settings to view websites hosted on the Amazon EMR cluster primary node](emr-connect-master-node-proxy.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

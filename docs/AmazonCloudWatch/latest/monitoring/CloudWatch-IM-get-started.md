@@ -121,3 +121,7 @@ If you created a monitor as a test or if you're no longer using a monitor, you c
 1. Choose the **Action** menu again, and then choose **Delete**.
 
 1. Follow the guidance in the modal dialog to confirm deleting the monitor.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

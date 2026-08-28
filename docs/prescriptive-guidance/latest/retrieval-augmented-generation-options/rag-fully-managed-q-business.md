@@ -33,3 +33,7 @@ Amazon Q Business supports uploading documents that might not be stored in your 
 Amazon Q Business includes a [filtering by document attribute](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/metadata-filtering.html) feature. Both administrators and end users can use this feature. Administrators can customize and control chat responses for end users by using attributes. For example, if data source type is an attribute attached to your documents, you can specify that chat responses be generated only from a specific data source. Or, you can allow end users to restrict the scope of chat responses by using the attribute filters that you have selected.
 
 End users can create lightweight, purpose-built [Amazon Q Apps](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/purpose-built-qapps.html) within your broader Amazon Q Business application environment. Amazon Q apps allow task automation for a specific domain, such as a purpose-built app for marketing team.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

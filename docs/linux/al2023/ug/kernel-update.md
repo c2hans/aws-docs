@@ -310,3 +310,7 @@ The `al2023-ami-kernel-default-*` SSM parameters resolve to the AMI that runs th
 <a name="w2aac39c19c11c19"></a>
 
 Currently, only the cryptography in kernel 6.1 has completed FIPS 140-3 validation ([Certificate \#5369 on the NIST Cryptographic Module Validation Program website](https://csrc.nist.gov/projects/cryptographic-module-validation-program/certificate/5369)). The cryptography used in kernels 6.12 and 6.18 is progressing through the FIPS validation process. Consult your organization's security team for advice on selecting the right kernel for FIPS operation. For current validation status and guidance, see the [AL2023 FIPS FAQ on the AWS website](https://aws.amazon.com/linux/amazon-linux-2023/faqs/#al2023-fips-faq--3m3tsn).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

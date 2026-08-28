@@ -135,3 +135,7 @@ For more information about the parameters listed above, see [Amazon ECS containe
 + [Default and override launch templates](#default-lt-and-overrides)
 + [Amazon EC2 user data in launch templates](#lt-user-data)
 + [Reference: Amazon EC2 launch template examples](launch-template-examples.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

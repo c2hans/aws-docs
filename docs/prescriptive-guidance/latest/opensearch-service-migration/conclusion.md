@@ -10,3 +10,7 @@ Amazon OpenSearch Service takes away the undifferentiated heavy lifting that is 
 Migrations can be as basic as taking a snapshot from self-managed cluster and restoring it in Amazon OpenSearch Service domain, or they can be as involved as testing all existing functionality and integrations. This guide provides information that can be used by migration project teams to make sure they have covered all aspects of a migration and to build a robust implementation strategy.
 
 Amazon OpenSearch Service documentation has a dedicated section on [Operational best practices](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/bp.html). We recommend that you follow guidance provided in the documentation to operate your newly migrated environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

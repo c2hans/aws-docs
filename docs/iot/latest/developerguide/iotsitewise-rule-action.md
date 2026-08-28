@@ -186,3 +186,7 @@ The following JSON example defines an IoT SiteWise action in an AWS IoT rule. Th
 + [Ingesting data using AWS IoT Core rules](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/iot-rules.html) in the *AWS IoT SiteWise User Guide*
 + [Ingesting data to AWS IoT SiteWise from AWS IoT things](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/ingest-data-from-iot-things.html) in the *AWS IoT SiteWise User Guide*
 + [Troubleshooting an AWS IoT SiteWise rule action](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/troubleshoot-rule.html) in the *AWS IoT SiteWise User Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -260,3 +260,7 @@ The following table describes the major updates and new features for the *Amazon
 | Automated Amazon ECS agent updates | Added ability to see the ECS agent version that is running on a container instance. Also able to update the ECS agent from the AWS Management Console, AWS CLI, and SDK. | June 11, 2015 |
 | Amazon ECS service scheduler and Elastic Load Balancing integration | Added ability to define a service and associate that service with an Elastic Load Balancing load balancer. | April 9, 2015 |
 | Amazon ECS GA | Amazon ECS general availability in the US East (N. Virginia), US West (Oregon), Asia Pacific (Tokyo), and Europe (Ireland) Regions. | April 9, 2015 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

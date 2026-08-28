@@ -10,3 +10,7 @@ Now that your device is set up, you can access Snow device and AWS service guide
 **[https://docs.jwcc.aws.amazon.com/](https://docs.jwcc.aws.amazon.com/)**
 
 ![QR code containing the AWS logo, likely linking to AWS documentation website.](http://docs.aws.amazon.com/snow/latest/swsbe-pack/images/qrcode_sw_docs.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Snow Family Device Guides. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

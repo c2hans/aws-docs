@@ -103,3 +103,7 @@ The following security recommendations can help safeguard against impersonation 
 + **Respond to token leaks quickly**. If a token leak is detected, immediately terminate or stop the associated contact to prevent unauthorized access.
 + **Use least privilege principles**. Limit token lifespan wherever possible, ensuring tokens are valid only for the duration necessary.
 + **Monitor and audit**. Track token usage and access patterns to detect anomalies or potential abuse.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

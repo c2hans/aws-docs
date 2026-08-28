@@ -13,3 +13,7 @@ You can use condition keys in your ElastiCache policies to express conditions. T
 To specify an action, use the `elasticache:` prefix followed by the API operation name (for example, `elasticache:DescribeCacheClusters`).
 
 To see a list of ElastiCache actions, see [Actions Defined by Amazon ElastiCache](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonelasticache.html#amazonelasticache-actions-as-permissions) in the *Service Authorization Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

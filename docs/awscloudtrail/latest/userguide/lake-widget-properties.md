@@ -140,3 +140,7 @@ The following table describes the configurable view properties for a bar chart.
 | `ValueColumn` | Yes | The value for the bars in the bar chart. For example, `eventCount`. |
 | `FilterColumn` | No | The field from the query results that you want to filter on. For example, `service`. |
 | `Orientation` | No | The orientation of the bar chart, either `Horizontal` or `Vertical`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

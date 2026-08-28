@@ -51,3 +51,7 @@ An account instance is designed for specialized use cases, and offers a subset o
 + Use account instances for isolated users that will use applications in a single account only and for the lifetime of the applications used.
 + Applications that are attached to an account instance must remain attached to the account instance until you delete the application and its resources.
 + An account instance must remain in the AWS account where it is created.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

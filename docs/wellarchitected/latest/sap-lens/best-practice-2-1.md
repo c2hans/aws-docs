@@ -48,3 +48,7 @@ Consider configuration audit and control tools such as [AWS Config: Conformance 
 +  AWS Documentation: [AWS Systems Manager Change Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/change-manager.html)
 +  SAP on AWS Blog: [Infrastructure as Code Example: Terraform and SAP on AWS](https://aws.amazon.com/blogs/awsforsap/terraform-your-sap-infrastructure-on-aws/)
 +  SAP Lens [Reliability]: [Best Practice 11.3 - Define an approach to restore service availability](best-practice-11-3.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

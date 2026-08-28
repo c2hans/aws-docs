@@ -31,9 +31,9 @@ Launching an instance into a Capacity Reservation reduces its available capacity
       + **None** – Prevents the instances from launching into a Capacity Reservation. The instances run in On-Demand capacity.
       + **Open** – Launches the instances into any Capacity Reservation that has matching attributes and sufficient capacity for the number of instances you selected. If there is no matching Capacity Reservation with sufficient capacity, the instance uses On-Demand capacity.
       + **Specify Capacity Reservation** – Launches the instances into the selected Capacity Reservation. If the selected Capacity Reservation does not have sufficient capacity for the number of instances you selected, the instance launch fails.
-      + **Specify Capacity Reservation resource group** – Launches the instances into any Capacity Reservation with matching attributes and available capacity in the selected Capacity Reservation group. If the selected group does not have a Capacity Reservation with matching attributes and available capacity, the instances launch into On-Demand capacity.
+      + **Specify Capacity Reservation Resource Group** – Launches the instances into any Capacity Reservation with matching attributes and available capacity in the selected Capacity Reservation group. If the selected group does not have a Capacity Reservation with matching attributes and available capacity, the instances launch into On-Demand capacity.
       + **Specify Capacity Reservation only** – Launches the instances into a Capacity Reservation. If a Capacity Reservation ID isn't specified, the instances launch into an open Capacity Reservation. If capacity isn't available, the instances fail to launch.
-      + **Specify Capacity Reservation resource group only** – Launches the instances into a Capacity Reservation in a Capacity Reservation resource group. If a Capacity Reservation resource group ARN isn't specified, the instances launch into an open Capacity Reservation. If capacity isn't available, the instances fail to launch.
+      + **Specify Capacity Reservation Resource Group only** – Launches the instances into a Capacity Reservation in a Capacity Reservation Resource Group. If a Capacity Reservation Resource Group ARN isn't specified, the instances launch into an open Capacity Reservation. If capacity isn't available, the instances fail to launch.
 
 1. In the **Summary** panel, review your instance configuration, and then choose **Launch instance**.
 
@@ -172,3 +172,7 @@ New-EC2Instance `
 ```
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

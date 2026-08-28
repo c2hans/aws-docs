@@ -366,3 +366,7 @@ In addition to the standard reindexing options, OpenSearch Service supports the 
 | --- | --- | --- | --- |
 | external | Boolean | If the remote domain is not an OpenSearch Service domain, or if you're reindexing between two VPC domains, specify as true. | No |
 | region | String | If the remote domain is in a different Region, specify the Region name. | No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

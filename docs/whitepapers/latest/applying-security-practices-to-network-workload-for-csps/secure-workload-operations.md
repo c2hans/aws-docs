@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/applying-security-pra
   +  [AWS CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) — Provides event history of your AWS account activity, including actions taken through the [AWS Management Console](https://aws.amazon.com/console/), [AWS SDKs](https://aws.amazon.com/developer/tools/), [command line tools](https://aws.amazon.com/cli/), and other AWS services.
   +  [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) — A monitoring and observability service that collects monitoring and operational data in the form of logs, metrics, and events.
   +  [Amazon Security Lake](https://docs.aws.amazon.com/security-lake/latest/userguide/what-is-security-lake.html) — Automatically centralizes security data from AWS and third-party sources into a data lake stored in your AWS account. Amazon Security Lake gives you an understanding of the security posture across your entire organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

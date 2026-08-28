@@ -15,6 +15,7 @@ Service features are sometimes rolled out incrementally to the AWS Regions where
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Updated AWS Managed Rules for AWS WAF](aws-managed-rule-groups-changelog.md) | Released static version 1.23 of the core rule set (CRS) managed rule group. | August 28, 2026 |
 | [Updated AWS Managed Rules for AWS WAF](aws-managed-rule-groups-changelog.md) | Released static version 2.4 of the SQL database managed rule group. | August 12, 2026 |
 | [AWS WAF pre-parse text transformations](waf-rule-statement-preparse-transformation.md) | Added pre-parse text transformations that normalize raw query strings before AWS WAF parses them into individual query arguments. | July 29, 2026 |
 | [AWS WAF new text transformations and pre-parse text transformations](waf-rule-statement-transformation.md) | Added 10 new text transformations and a new pre-parse text transformations feature that normalizes raw query strings before parsing. | July 29, 2026 |
@@ -357,3 +358,7 @@ Service features are sometimes rolled out incrementally to the AWS Regions where
 | [Support for query parameters in conditions](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-fields.html) | When creating a condition, you can now search the requests for specific parameters. | June 5, 2018 |
 | [Shield advanced getting started wizard](https://docs.aws.amazon.com/waf/latest/developerguide/getting-started-ddos.html) | Introduces a new streamlined process for subscribing to AWS Shield Advanced. | June 5, 2018 |
 | [Expanded allowed CIDR ranges](https://docs.aws.amazon.com/waf/latest/developerguide/waf-rule-statement-type-ipset-match.html) | When creating an IP match condition, AWS WAF now supports IPv4 address ranges: /8 and any range between /16 through /32.  | June 5, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

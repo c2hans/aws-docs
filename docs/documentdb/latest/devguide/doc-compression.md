@@ -122,3 +122,7 @@ The following is an example of the output for the above command:
 + **enabled** - Indicates if compression is enabled or disabled.
 
 To calculate the actual compression ratio, divide the collection size by the storage size (size/storageSize). For the example above, the calculation is 3906.3/1953.1 which translates to a 2:1 compression ratio.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ An alien IP is a network or subnet range that is external to the VPC CIDR block 
 Using alien IP addresses does have implications for how you interconnect VPCs to other VPCs, as well as how you can interconnect VPCs to your data centers. The following diagram helps determine if an alien IP address is required.
 
 ![Process flow for identifying if you require an alien IP address.](http://docs.aws.amazon.com/prescriptive-guidance/latest/migration-f5-big-ip/images/guide-img/migration-f5-big-ip/images/F5-alien-address.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

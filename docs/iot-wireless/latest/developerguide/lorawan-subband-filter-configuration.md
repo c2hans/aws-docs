@@ -87,3 +87,7 @@ Content-type: application/json
 ```
 
 You can also use the [UpdateWirelessGateway](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_UpdateWirelessGateway.html) API to update the filters but not the subbands. If the `JoinEuiFilters` and `NetIdfilters` values are null, it means there is no update for the fields. If the values aren't null and empty lists are included, then the update is applied. To get the values of the fields that you specified, use the [GetWirelessGateway](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_GetWirelessGateway.html) API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

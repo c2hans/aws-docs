@@ -60,3 +60,7 @@ To learn more about Amazon Managed Service for Apache Flink, see [Amazon Managed
  **Will Amazon Managed Service for Apache Flink support the existing Amazon Kinesis Data Analytics for SQL applications features?**
 
 Amazon Managed Service for Apache Flink supports many of the concepts available in Amazon Kinesis Data Analytics for SQL applications such as connectors and windowing, as well as features that were unavailable in Amazon Kinesis Data Analytics for SQL applications, such as native scaling, exactly-once processing semantics, multi-language support (including SQL), over 40 source and destination connectors, durable application state, and more.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

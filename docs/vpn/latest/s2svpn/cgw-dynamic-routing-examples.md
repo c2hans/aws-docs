@@ -49,3 +49,7 @@ The following information applies to the example configuration files for Juniper
 + The tunnel interface IDs are referred to as {{st0.1}} and {{st0.2}}.
 + Ensure that you identify the security zone for the uplink interface (the configuration information uses the default 'untrust' zone).
 + Ensure that you identify the security zone for the inside interface (the configuration information uses the default 'trust' zone).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

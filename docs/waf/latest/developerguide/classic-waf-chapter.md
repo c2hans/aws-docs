@@ -32,3 +32,7 @@ AWS WAF Classic is a web application firewall that lets you monitor the HTTP and
 + [How AWS WAF Classic works with Amazon CloudFront features](classic-cloudfront-features.md)
 + [Security in AWS WAF Classic](classic-security.md)
 + [AWS WAF Classic quotas](classic-limits.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

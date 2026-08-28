@@ -27,3 +27,7 @@ To initialize Network Flow Monitor by setting up the service-linked roles that p
 Completing the initialization can take 20-30 minutes.
 
 After you initialize Network Flow Monitor for your account, before you can view network flow performance metrics, you must also install Network Flow Monitor agents for your resources that send performance metrics to the Network Flow Monitor backed ingestion server. For more information, see [Install Network Flow Monitor agents on EC2 and self-managed Kubernetes instances](CloudWatch-NetworkFlowMonitor-agents.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

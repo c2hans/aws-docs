@@ -22,3 +22,7 @@ This opens the NoSQL Workbench home page for Amazon Keyspaces where you have the
 ![Console screenshot that shows the data modeler start page.](http://docs.aws.amazon.com/keyspaces/latest/devguide/images/workbench/key_nosql_datamodel.png)
 
 Each of the options opens the NoSQL Workbench data modeler. To continue creating a new data model, see [Create a new data model with NoSQL Workbench](workbench.datamodel.new.md). To edit an existing data model, see [Edit existing data models with NoSQL Workbench](workbench.datamodel.edit.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

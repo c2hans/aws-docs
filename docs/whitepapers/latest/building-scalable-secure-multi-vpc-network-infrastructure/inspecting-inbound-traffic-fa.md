@@ -14,3 +14,7 @@ In the preceding architecture, Gateway Load Balancer endpoints are deployed into
 These virtual appliances can be managed by accessing their management interfaces through an Internet Gateway (IGW) or using a bastion host setup in the appliance VPC.
 
 Using the VPC ingress routing feature, the edge route table is updated to route inbound traffic from internet to firewall appliances behind Gateway Load Balancer. Inspected traffic is routed via Gateway Load Balancer endpoints to target VPC instance. Refer to the [Introducing AWS Gateway Load Balancer: Supported architecture patterns](https://aws.amazon.com/blogs/networking-and-content-delivery/introducing-aws-gateway-load-balancer-supported-architecture-patterns/) blog post for details on various ways to use Gateway Load Balancer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

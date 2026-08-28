@@ -222,3 +222,7 @@ The following example shows how to get the details of an image policy with its A
 ```
 aws imagebuilder get-image-policy --image-arn arn:aws:imagebuilder:{{us-west-2}}:{{123456789012:image}}/{{example-image}}/2019.12.02
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -135,3 +135,7 @@ With Hydra, you can manage configuration effectively, enabling the following fea
 + **Divide configurations** – Break your project configurations into smaller, manageable pieces that can be independently modified. This approach makes it easier to handle complex projects.
 + **Adjust defaults easily** – Change your baseline configurations quickly, making it simpler to test new ideas.
 + **Align CLI inputs and config files** – Combine command line inputs with your configuration files smoothly. This approach reduces clutter and confusion, making your project more manageable over time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

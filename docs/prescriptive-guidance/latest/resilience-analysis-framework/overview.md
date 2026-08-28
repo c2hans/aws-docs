@@ -26,3 +26,7 @@ When a desired property is violated, it could cause a workload to be, or perceiv
 | **Excessive latency** | Timely output | System processing or network traffic latency exceeds the expected time, service-level objectives (SLOs), or service-level agreements (SLAs). |
 | **Misconfiguration and bugs** | Correct output | Software bugs or system misconfiguration leads to incorrect output. |
 | **Shared fate** | Fault isolation | A fault that's caused by any of the previous failure categories crosses intended fault isolation boundaries and cascades to other parts of the system or to other customers. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

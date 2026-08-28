@@ -77,6 +77,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [quicksight:DescribeTemplate](#list_quicksight-action-DescribeTemplate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [quicksight:DescribeTheme](#list_quicksight-action-DescribeTheme)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [quicksight:PassDataSet](#list_quicksight-action-PassDataSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [quicksight:PassTopic](#list_quicksight-action-PassTopic)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [quicksight:TagResource](#list_quicksight-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateApprovalPolicy  **
@@ -1393,6 +1394,7 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [quicksight:DescribeTemplate](#list_quicksight-action-DescribeTemplate)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [quicksight:DescribeTheme](#list_quicksight-action-DescribeTheme)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [quicksight:PassDataSet](#list_quicksight-action-PassDataSet)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [quicksight:PassTopic](#list_quicksight-action-PassTopic)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
   - **IAM action:**  [quicksight:UpdateAnalysis](#list_quicksight-action-UpdateAnalysis)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
 
 - **   UpdateAnalysisPermissions  **
@@ -2295,18 +2297,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** Read
 
-- **   [DescribeAutomationGroup](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAutomationGroup.html)  **
-  - **Description:** Grants permission to describe an automation group
-  - **Resource types (\*required):** [automationGroup\*](#list_quicksight-resource-automationGroup)
-  - **Condition keys:**
-  - **Access level:** Read
-
-- **   [DescribeAutomationGroupPermissions](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAutomationGroupPermissions.html)  **
-  - **Description:** Grants permission to describe permissions for an automation group
-  - **Resource types (\*required):** [automationGroup\*](#list_quicksight-resource-automationGroup)
-  - **Condition keys:**
-  - **Access level:** Permissions management, Write
-
 - **   [DescribeAutomationJob](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAutomationJob.html)  **
   - **Description:** Grants permission to describe an automation job
   - **Resource types (\*required):** [automationJob\*](#list_quicksight-resource-automationJob)
@@ -2705,12 +2695,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:**
   - **Access level:** List
 
-- **   [ListAutomationGroups](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListAutomationGroups.html)  **
-  - **Description:** Grants permission to list all automation groups in an account
-  - **Resource types (\*required):**
-  - **Condition keys:**
-  - **Access level:** List
-
 - **   [ListBrands](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListBrands.html)  **
   - **Description:** Grants permission to lists all brands in an Amazon QuickSight account
   - **Resource types (\*required):**
@@ -3014,12 +2998,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_quicksight-aws_ResourceTag___TagKey_)
   - **Access level:** List
 
-- **   [SearchAutomationGroups](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchAutomationGroups.html)  **
-  - **Description:** Grants permission to search for automation groups in an account
-  - **Resource types (\*required):**
-  - **Condition keys:**
-  - **Access level:** List
-
 - **   [SearchDashboards](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchDashboards.html)  **
   - **Description:** Grants permission to search for a sub-set of QuickSight Dashboards
   - **Resource types (\*required):** [dashboard\*](#list_quicksight-resource-dashboard)
@@ -3225,12 +3203,6 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Resource types (\*required):** [approvalPolicy\*](#list_quicksight-resource-approvalPolicy)
   - **Condition keys:**
   - **Access level:** Write
-
-- **   [UpdateAutomationGroupPermissions](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateAutomationGroupPermissions.html)  **
-  - **Description:** Grants permission to update permissions for an automation group
-  - **Resource types (\*required):** [automationGroup\*](#list_quicksight-resource-automationGroup)
-  - **Condition keys:**
-  - **Access level:** Permissions management, Write
 
 - **   [UpdateBrand](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_UpdateBrand.html)  **
   - **Description:** Grants permission to update a brand
@@ -3663,6 +3635,12 @@ The following actions are defined by Amazon QuickSight but are not directly invo
   - **Condition keys:**
   - **Access level:** Read
 
+- **   [ListCustomPermissionAssignments](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  **
+  - **Description:** Grants permission to list assignment information of the custom permission profile in an account
+  - **Resource types (\*required):**
+  - **Condition keys:**
+  - **Access level:** List
+
 - **   [ListCustomerManagedKeys](https://docs.aws.amazon.com/quicksight/latest/user/key-management.html)  **
   - **Description:** Grants permission to list all registered customer managed keys
   - **Resource types (\*required):**
@@ -3870,3 +3848,7 @@ Amazon QuickSight defines the following condition keys that can be used in the `
 |   [quicksight:KmsKeyArns](https://docs.aws.amazon.com/quicksight/latest/user/key-management.html)  | Filters access by KMS key ARNs | ArrayOfARN |
 |   [quicksight:SessionName](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  | Filters access by session name | String |
 |   [quicksight:UserName](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html)  | Filters access by user name | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

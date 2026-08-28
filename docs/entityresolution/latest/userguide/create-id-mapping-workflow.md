@@ -30,3 +30,7 @@ The following diagram summarizes how to set up an ID mapping workflow.
 + [Editing an ID mapping workflow](edit-id-mapping-workflow.md)
 + [Deleting an ID mapping workflow](delete-id-mapping-workflow.md)
 + [Adding or updating a resource policy for an ID mapping workflow](add-update-resource-policy-id-mapping.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Entity Resolution. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query entityresolution` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

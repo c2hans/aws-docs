@@ -42,3 +42,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/creat
    + The referenced data must exist in your Amazon Connect Decisions Data Lake (Entity Name = Forecast) for all forecast types. For example, if you specify a rule as "Use maximum of sales forecast and baseline forecast", both the "sales forecast" and "baseline forecast" must be present in the SCDL Forecast entity with their respective `plan_type` values (`plan_type` = "Sales Forecast" and `plan_type` = "Baseline Forecast").
    + Rules should be arranged in the order they need to be executed in.
    + Forecast data format must match your plan configuration granularity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

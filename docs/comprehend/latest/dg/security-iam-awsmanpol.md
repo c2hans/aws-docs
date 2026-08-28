@@ -126,3 +126,7 @@ View details about updates to AWS managed policies for Amazon Comprehend since t
 | [ComprehendReadOnly](#security-iam-awsmanpol-ComprehendReadOnly) – Update to an existing policy | Amazon Comprehend now allows the `ListDocumentClassifierSummaries` and `ListEntityRecognizerSummaries` actions in the ComprehendReadOnly policy | September 21, 2021 |
 | [ComprehendReadOnly](#security-iam-awsmanpol-ComprehendReadOnly) – Update to an existing policy | Amazon Comprehend now allows the ContainsPIIEntities action in the ComprehendReadOnly policy | March 26, 2021 |
 | Amazon Comprehend started tracking changes | Amazon Comprehend started tracking changes for its AWS managed policies. | March 1, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

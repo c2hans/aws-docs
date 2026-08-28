@@ -75,3 +75,7 @@ For more information about AWS command line Amazon S3 configurations to optimize
 +  [AWS CLI Amazon S3 Configuration](https://awscli.amazonaws.com/v2/documentation/api/latest/topic/s3-config.html) in the ** AWS CLI Command Reference**
 +  [Use a performant Amazon S3 client: AWS CRT-based client](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/crt-based-s3-client.html) in the **Amazon S3Amazon AppStream SDK for Java**
 +  [How do I optimize performance when I use AWS CLI to upload large files to Amazon S3?](https://repost.aws/knowledge-center/s3-upload-large-files) in the ** AWS Knowledge Center**
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Transfer Terminal. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datatransferterminal` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

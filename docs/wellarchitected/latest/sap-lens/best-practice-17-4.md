@@ -25,3 +25,7 @@ For many SAP workloads, application servers can be designed to be immutable. Hav
 +  [Certified EC2 instance sizes](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas;ve:23;v:105) available for scale-up and scale-out
 + The cost per GiB of EC2 memory for each instance family. Larger EC2 instances typically have a higher cost per GiB than smaller instances.
 +  The added complexity and operational overhead of managing data distribution in scale-out deployments. See SAP Note: [2081591 - FAQ: SAP HANA Table Distribution](https://launchpad.support.sap.com/#/notes/2081591) [Requires SAP Portal Access]
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

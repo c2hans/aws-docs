@@ -39,3 +39,7 @@ Before retrying a distribution, ensure the following:
 Distribution workflows are a new workflow type that complement build and test workflows, enabling you to define and control the distribution process with sequential steps. With distribution workflows, you can create custom distribution processes that include AMI copy operations, wait-for-action checkpoints, image attribute modifications, and other distribution-related steps. This provides structured control over how your AMIs are distributed, with step-level visibility, parallel distribution capabilities, and granular error reporting.
 
 To learn more about creating and customizing workflows, see [Manage Image Workflows](manage-image-workflows.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

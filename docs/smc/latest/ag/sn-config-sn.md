@@ -16,3 +16,7 @@ This section provides the configurations you need to integrate AWS Service Catal
 + [Adding the My AWS Products widget to the Service Portal view](add-aws-product-widget.md)
 + [Activate AWS Service Catalog portfolio categorization in ServiceNow Service Portal](sc-portfolio-categorization.md)
 + [Viewing budgets related to Service Catalog portfolios and products](view-budgets.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

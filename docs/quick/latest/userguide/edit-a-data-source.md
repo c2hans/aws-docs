@@ -62,3 +62,7 @@ Use the following procedure to edit an Athena data source.
 1. The **Manage data source sharing** screen appears. On the **Users** tab, locate the user that you want to remove.
 
 1. If you want to create a new dataset using the updated data source, proceed with the instructions at [Creating a dataset using Amazon Athena data](create-a-data-set-athena.md). Otherwise, close the **Choose your table** dialog box.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

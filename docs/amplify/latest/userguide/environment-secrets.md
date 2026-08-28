@@ -55,3 +55,7 @@ You can use the following environment secrets that are accessible by default wit
 | AMPLIFY\_SIWA\_TEAM\_ID | The Sign in with Apple team ID | `ABCD123` |
 | AMPLIFY\_SIWA\_KEY\_ID | The Sign in with Apple key ID | `ABCD123` |
 | AMPLIFY\_SIWA\_PRIVATE\_KEY | The Sign in with Apple private key | -----BEGIN PRIVATE KEY-----<br />\*\*\*\*......<br />-----END PRIVATE KEY----- |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

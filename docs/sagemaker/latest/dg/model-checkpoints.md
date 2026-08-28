@@ -59,3 +59,7 @@ Consider the following when using checkpoints in SageMaker AI.
   + [Distributed training supported by Amazon SageMaker Debugger](debugger-reference.md#debugger-considerations)
   + [Troubleshooting for distributed training in Amazon SageMaker AI](distributed-troubleshooting-data-parallel.md)
   + [Model Parallel Troubleshooting](distributed-troubleshooting-model-parallel.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

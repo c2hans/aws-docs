@@ -37,3 +37,7 @@ To perform manual evaluations, you can search for a contact, choose the appropri
 
 1. When you're done, choose **Submit**. If you have skipped optional questions in the form, you will see a warning asking you to confirm that you want to submit the evaluation. Choose **Yes**. The evaluation is now **Completed**.
 ![Skip optional questions and submit the evaluation.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-draft-submit.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

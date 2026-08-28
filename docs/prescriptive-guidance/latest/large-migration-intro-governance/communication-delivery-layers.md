@@ -30,3 +30,7 @@ As defined in your communication gates, you have the following regular meetings 
 + **Weekly communications** – In your T-minus schedule, you define regular communications with the application owners and other stakeholders. These communications are intended to remind stakeholders about upcoming activities or notify them of meeting key milestones. Standard communication points include T-28, T-21, T-14, T-7, T-1, T-0, cutover compete, and hypercare period end. We recommend you create standard templates for these communications.
 
 For presentation and communication templates, see [Create standard email templates for each gate](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-governance-playbook/task-create-communication-gates.html#step-email-templates) and [Prepare meeting presentations](https://docs.aws.amazon.com/prescriptive-guidance/latest/large-migration-governance-playbook/task-communication-plan.html#step-prepare-presentations) in the *Project governance playbook for AWS large migrations*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

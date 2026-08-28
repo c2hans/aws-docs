@@ -74,3 +74,7 @@ AWS Data Pipeline is no longer available to new customers. Existing customers of
    1. On the page for additional configuration information, select the cluster security group that you created, and then click **Continue**.
 
    1. Review the specifications for your cluster, and then click **Launch Cluster**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

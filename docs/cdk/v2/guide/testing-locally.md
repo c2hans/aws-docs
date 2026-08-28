@@ -15,3 +15,7 @@ For details on using AWS SAM, see [Getting started with AWS SAM](https://docs.aw
 + [Getting started with locally testing](testing-locally-getting-started.md)
 + [Local testing AWS CDK applications with AWS SAM](testing-locally-with-sam-cli.md)
 + [Building AWS CDK applications with AWS SAM](testing-locally-build-with-sam-cli.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

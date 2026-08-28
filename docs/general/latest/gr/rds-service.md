@@ -131,3 +131,7 @@ The following are the service endpoints and service quotas for this service.
 | Security groups | ap-south-1: 20<br />Each of the other supported Regions: 25 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/rds/quotas/L-732153D0)  | The maximum number of DB security groups |
 | Subnets per DB subnet group | Each supported Region: 20 | No | The maximum number of subnets per DB subnet group |
 | Total storage for all DB instances | Each supported Region: 100,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/rds/quotas/L-7ADDB58A)  | The maximum total storage (in GB) on EBS volumes for all Amazon RDS DB instances added together. This quota does not apply to Amazon Aurora, which has a maximum cluster volume of 128 TiB for each DB cluster. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

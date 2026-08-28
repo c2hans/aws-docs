@@ -25,3 +25,7 @@ If it is the first time an end user is accessing the custom plugin or their past
 Once the user confirms the action, Amazon Q Business will submit the request and give the user confirmation once it is complete.
 
 ![Screenshot showing a success message after the custom plugin has completed the requested action, confirming to the user that their request was processed successfully.](http://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/images/4-custom-plugin-success@2x.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -103,3 +103,7 @@ It is considered a best practice to change from the default mode of open communi
 For instructions on installing Calico on Amazon EKS, see [Installing Calico on Amazon EKS](https://docs.tigera.io/calico/latest/getting-started/kubernetes/managed-public-cloud/eks) on the Tigera website.
 
 In addition, the advice provided in the [Amazon EKS Best Practices Guide for Security - Network Section](https://docs.aws.amazon.com/eks/latest/best-practices/network-security.html) applies equally to EKS clusters with Windows worker nodes, however, some features like "Security Groups for Pods" are not supported by Windows at this time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

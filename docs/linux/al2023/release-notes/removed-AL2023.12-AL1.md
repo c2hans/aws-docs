@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 # Packages in Amazon Linux 1 not in Amazon Linux 2023
 <a name="removed-AL2023.12-AL1"></a>
 
- There are 997 source packages and 2671 non-i686 binary packages in Amazon Linux 1 no longer in Amazon Linux 2023.
+ There are 996 source packages and 2622 non-i686 binary packages in Amazon Linux 1 no longer in Amazon Linux 2023.
 
  These packages in Amazon Linux 1 are not present in Amazon Linux 2023.
 
@@ -678,58 +678,9 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  nagios  | src, x86\_64 |
 |  nagios-common  | src, x86\_64 |
 |  nagios-devel  | src, x86\_64 |
-|  nagios-plugins  | src, x86\_64 |
-|  nagios-plugins-all  | src, x86\_64 |
-|  nagios-plugins-apt  | src, x86\_64 |
-|  nagios-plugins-breeze  | src, x86\_64 |
-|  nagios-plugins-by\_ssh  | src, x86\_64 |
-|  nagios-plugins-cluster  | src, x86\_64 |
-|  nagios-plugins-dhcp  | src, x86\_64 |
-|  nagios-plugins-dig  | src, x86\_64 |
-|  nagios-plugins-disk  | src, x86\_64 |
-|  nagios-plugins-dns  | src, x86\_64 |
-|  nagios-plugins-dummy  | src, x86\_64 |
-|  nagios-plugins-file\_age  | src, x86\_64 |
-|  nagios-plugins-flexlm  | src, x86\_64 |
-|  nagios-plugins-fping  | src, x86\_64 |
-|  nagios-plugins-hpjd  | src, x86\_64 |
-|  nagios-plugins-http  | src, x86\_64 |
-|  nagios-plugins-icmp  | src, x86\_64 |
-|  nagios-plugins-ide\_smart  | src, x86\_64 |
-|  nagios-plugins-ifoperstatus  | src, x86\_64 |
-|  nagios-plugins-ifstatus  | src, x86\_64 |
-|  nagios-plugins-ircd  | src, x86\_64 |
-|  nagios-plugins-ldap  | src, x86\_64 |
-|  nagios-plugins-linux\_raid  | src, x86\_64 |
-|  nagios-plugins-load  | src, x86\_64 |
-|  nagios-plugins-log  | src, x86\_64 |
-|  nagios-plugins-mailq  | src, x86\_64 |
-|  nagios-plugins-mrtg  | src, x86\_64 |
-|  nagios-plugins-mrtgtraf  | src, x86\_64 |
-|  nagios-plugins-mysql  | src, x86\_64 |
-|  nagios-plugins-nagios  | src, x86\_64 |
-|  nagios-plugins-nt  | src, x86\_64 |
-|  nagios-plugins-ntp  | src, x86\_64 |
-|  nagios-plugins-ntp-perl  | src, x86\_64 |
-|  nagios-plugins-nwstat  | src, x86\_64 |
-|  nagios-plugins-oracle  | src, x86\_64 |
-|  nagios-plugins-overcr  | src, x86\_64 |
-|  nagios-plugins-perl  | src, x86\_64 |
-|  nagios-plugins-pgsql  | src, x86\_64 |
-|  nagios-plugins-ping  | src, x86\_64 |
-|  nagios-plugins-procs  | src, x86\_64 |
-|  nagios-plugins-radius  | src, x86\_64 |
-|  nagios-plugins-real  | src, x86\_64 |
-|  nagios-plugins-rpc  | src, x86\_64 |
-|  nagios-plugins-smtp  | src, x86\_64 |
-|  nagios-plugins-snmp  | src, x86\_64 |
-|  nagios-plugins-ssh  | src, x86\_64 |
-|  nagios-plugins-swap  | src, x86\_64 |
-|  nagios-plugins-tcp  | src, x86\_64 |
-|  nagios-plugins-time  | src, x86\_64 |
-|  nagios-plugins-ups  | src, x86\_64 |
-|  nagios-plugins-users  | src, x86\_64 |
-|  nagios-plugins-wave  | src, x86\_64 |
+|  nagios-plugins-linux\_raid  | x86\_64 |
+|  nagios-plugins-ntp-perl  | x86\_64 |
+|  nagios-plugins-radius  | x86\_64 |
 |  nagios-plugins-check-updates  | src, x86\_64 |
 |  nc  | src, x86\_64 |
 |  ncdu  | src, x86\_64 |
@@ -1950,3 +1901,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/removed-AL202
 |  zerofree  | src, x86\_64 |
 |  zisofs-tools  | src, x86\_64 |
 |  zsh-html  | x86\_64 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

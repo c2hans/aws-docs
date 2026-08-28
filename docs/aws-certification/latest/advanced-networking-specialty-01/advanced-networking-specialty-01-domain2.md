@@ -93,3 +93,7 @@ Skills in:
 + Integrating hybrid network automation options with AWS native IaC
 + Eliminating risk and achieving efficiency in a cloud networking environment while maintaining the lowest possible cost
 + Automating the process of optimizing cloud network resources with IaC
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

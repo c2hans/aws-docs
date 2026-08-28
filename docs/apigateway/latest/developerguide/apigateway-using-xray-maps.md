@@ -36,3 +36,7 @@ The following diagram shows a trace view generated for the example API described
 For a detailed explanation of trace views, see [View traces and trace details](https://docs.aws.amazon.com/xray/latest/devguide/aws-xray-interface-console.html#xray-console-traces).
 
 ![API Gateway with active tracing enabled](http://docs.aws.amazon.com/apigateway/latest/developerguide/images/apigateway-xray-traceview-1.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

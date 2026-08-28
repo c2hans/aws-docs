@@ -22,3 +22,7 @@ To integrate with a MediaPackage endpoint that uses CDN authorization, use the f
 1. Complete the steps in [Attaching a resource-based secret policy](channel-assembly-access-configuration-access-configuring.md#channel-assembly-access-configuration-access-token-secret-policy).
 
 1. Complete the steps in [Step 3: Configure a MediaTailor source location with access token authentication](channel-assembly-access-configuration-access-configuring.md#channel-assembly-access-configuration-access-token-how-to-enable-access-token-auth).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

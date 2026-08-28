@@ -17,3 +17,7 @@ AWS Account Management provides the following APIs for data retrieval.
 | <a name="account-GetPrimaryEmailUpdateStatus"></a>[GetPrimaryEmailUpdateStatus](https://docs.aws.amazon.com/accounts/latest/reference/API_GetPrimaryEmailUpdateStatus.html) | Retrieve information about the most recent primary email update for the account | Read |
 | <a name="account-GetRegionOptStatus"></a>[GetRegionOptStatus](https://docs.aws.amazon.com/accounts/latest/reference/API_GetRegionOptStatus.html) | Get the opt-in status of a Region | Read |
 | <a name="account-ListRegions"></a>[ListRegions](https://docs.aws.amazon.com/accounts/latest/reference/API_ListRegions.html) | List the available Regions | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

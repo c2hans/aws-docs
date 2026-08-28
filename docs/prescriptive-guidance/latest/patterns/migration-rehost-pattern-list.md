@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/mi
 + [Rehost on-premises workloads in the AWS Cloud: migration checklist](rehost-on-premises-workloads-in-the-aws-cloud-migration-checklist.md)
 + [Set up Multi-AZ infrastructure for a SQL Server Always On FCI by using Amazon FSx](set-up-multi-az-infrastructure-for-a-sql-server-always-on-fci-by-using-amazon-fsx.md)
 + [Use BMC Discovery queries to extract migration data for migration planning](use-bmc-discovery-queries-to-extract-migration-data-for-migration-planning.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

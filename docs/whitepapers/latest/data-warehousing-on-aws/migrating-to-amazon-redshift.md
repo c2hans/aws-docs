@@ -33,3 +33,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/data-warehousing-on-a
 <a name="wave-based-migration"></a>
 
  Large-scale MPP data warehouse migration presents a challenge in terms of project complexity, and is riskier. Taking precautions to break a complex migration project into multiple logical and systematic waves can significantly reduce the complexity and risk. Starting from a workload that covers a good number of data sources and subject areas with medium complexity, then add more data sources and subject areas in each subsequent wave. See [Develop an application migration methodology to modernize your data warehouse with Amazon Redshift](https://aws.amazon.com/blogs/big-data/develop-an-application-migration-methodology-to-modernize-your-data-warehouse-with-amazon-redshift/) for a description of how to migrate from the source MPP data warehouse to Amazon Redshift using the wave-based migration approach.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,3 +55,7 @@ source_url: https://docs.aws.amazon.com/cur/latest/userguide/table-dictionary-fo
 | x\_Operation | The specific AWS operation covered by this line item. This describes the specific usage of the line item. | string | Yes |
 | x\_ServiceCode | The code of the service used in this line item. | string | Yes |
 | x\_UsageType | The usage details of the line item. | string | Yes |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

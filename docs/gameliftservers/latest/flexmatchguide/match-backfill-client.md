@@ -44,3 +44,7 @@ To set up a client-side game service to backfill matched games, complete the fol
    A matchmaker can process only one match backfill request from a game session at a time. If you need to cancel a request, call [StopMatchmaking](https://docs.aws.amazon.com/gamelift/latest/apireference/API_StopMatchmaking.html). If you need to change a request, call `StopMatchmaking` and then submit an updated request.
 
    Once a match backfill request is successful, your game server receives an updated `GameSession` object and handles the tasks needed to join new players to the game session. See more at [Update match data on the game server](match-backfill-server-data.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

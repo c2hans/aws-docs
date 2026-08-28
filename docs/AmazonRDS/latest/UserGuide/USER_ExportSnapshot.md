@@ -426,3 +426,7 @@ Exporting DB snapshot data to Amazon S3 has the following limitations:
 + After Amazon RDS completes an export task, you might have to wait a short time to start another export task from the same DB snapshot.
 + You can't export views or materialized views.
 + RDS Export to S3 doesn't support tag-based access control for GuardDuty Malware Protection for S3.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -173,3 +173,7 @@ If you're having trouble establishing a VPC peering connection for your Amazon G
 + The new fleet did not activate (when requesting VPC peering with a new fleet). If the new fleet failed to progress to **Active** status, there is no VPC to peer with, so the peering connection cannot succeed.
 + A VPC peering connection is not found while the API call throws no exception. Check the fleet events under the fleet being used to create the VPC peering connection for any `FLEET_VPC_PEERING_FAILED` events.
 + A VPC peering connection creation fails with fleet event `FLEET_VPC_PEERING_FAILED` and a message indicating the role is not authorized to access a VPC. Verify that the IAM role or user used to create the VPC peering authorization contains the required EC2 permissions listed in [Actions, resources, and condition keys for Amazon GameLift Servers](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazongameliftservers.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

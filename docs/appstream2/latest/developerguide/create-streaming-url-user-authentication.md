@@ -52,3 +52,7 @@ When you create a custom domain, you can use the domain for embedded WorkSpaces 
 
 After you set up a custom domain for your embedded WorkSpaces Applications streaming sessions, if your streaming URLs don't redirect to your custom domain, or if your custom domain doesn't display correctly for your users, see the following troubleshooting topics:
 + [I set up a custom domain for my embedded WorkSpaces Applications streaming sessions, but my WorkSpaces Applications streaming URLs aren't redirecting to my custom domain.](troubleshooting-general.md#embedded-streaming-sessions-streaming-urls-not-redirected-to-custom-domain)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

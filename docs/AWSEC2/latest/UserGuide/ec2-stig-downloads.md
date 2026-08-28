@@ -713,3 +713,7 @@ Updated STIG versions and applied STIGS for the 2021 third quarter release.
 + Microsoft .NET Framework 4.0 STIG Version 2 Release 1
 + Windows Firewall STIG Version 1 Release 7
 + Internet Explorer 11 STIG Version 1 Release 19
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

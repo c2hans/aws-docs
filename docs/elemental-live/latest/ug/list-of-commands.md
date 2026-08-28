@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/list-of-command
 | Activate dynamic playlist input | POST | /live\_events/<event ID>/ activate\_input  | In the specified event (which must be currently running), activate the specified dynamic playlist input either at the specified time or immediately. |
 | Prepare dynamic playlist input | POST | /live\_events/<event ID>/ prepare\_input  | In the specified event (which must be currently running), prepare the specified dynamic playlist input and optionally activate encoding at the specified time or immediately.  |
 | Get status | GET | /live\_events/<event ID>status | Gets the status of the specified event, including information about the stage and state of each input. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

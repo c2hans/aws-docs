@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hadoop-release-h
 + The default configuration settings for `yarn.scheduler.increment-allocation-mb` and `yarn.scheduler.minimum-allocation-mb` have been modified from 32 to 1, which effectively disables container resource normalization in YARN.
 + The S3A Filesystem in Hadoop has been enhanced to support request-level credential vending. With this feature, every Amazon S3 request made will utilize an `AwsCredentialsProvider`. This ensures improved flexibility and security by dynamically providing credentials for each request.
 + The S3A Filesystem in Hadoop supports S3 client-side encryption.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

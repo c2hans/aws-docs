@@ -20,3 +20,7 @@ Key names are standardized within the response. For example, if your driver lice
 
 **Note**
  Some identity documents, such as driver's licenses, have two sides. You can pass the front and back images of driver licenses as separate images within the same Analyze ID API request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

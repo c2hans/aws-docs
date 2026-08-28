@@ -50,3 +50,7 @@ Keep the following considerations in mind:
 + [Custom permissions for AWS managed and customer managed policies](permissionsetcustom.md)
 + [Create, manage, and delete permission sets](permissionsets.md)
 + [Configure permission set properties](permproperties.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

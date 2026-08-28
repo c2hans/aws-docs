@@ -18,13 +18,13 @@ You can attach `SageMakerStudioProjectUserRolePolicy` to your users, groups, and
 <a name="SageMakerStudioProjectUserRolePolicy-details"></a>
 + **Type**: AWS managed policy
 + **Creation time**: November 20, 2024, 21:59 UTC
-+ **Edited time:** August 11, 2026, 20:07 UTC
++ **Edited time:** August 27, 2026, 20:57 UTC
 + **ARN**: `arn:aws:iam::aws:policy/SageMakerStudioProjectUserRolePolicy`
 
 ## Policy version
 <a name="SageMakerStudioProjectUserRolePolicy-version"></a>
 
-**Policy version:** v74 (default)
+**Policy version:** v75 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -1080,7 +1080,8 @@ The policy's default version is the version that defines the permissions for the
       "Action" : [
         "glue:PassConnection",
         "glue:GetConnection",
-        "glue:GetConnections"
+        "glue:GetConnections",
+        "glue:RefreshOAuth2Tokens"
       ],
       "Resource" : "*",
       "Condition" : {
@@ -1094,7 +1095,8 @@ The policy's default version is the version that defines the permissions for the
       "Effect" : "Allow",
       "Action" : [
         "glue:GetConnection",
-        "glue:GetConnections"
+        "glue:GetConnections",
+        "glue:RefreshOAuth2Tokens"
       ],
       "Resource" : "arn:aws:glue:*:*:catalog"
     },
@@ -2857,3 +2859,7 @@ The policy's default version is the version that defines the permissions for the
 + [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)
 + [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
 + [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Policy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-managed-policy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

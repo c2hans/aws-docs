@@ -19,3 +19,7 @@ The following capabilities help you maximize your DevOps Agent's effectiveness:
 + **Amazon EventBridge Integration** - Incorporate AWS DevOps Agent into event-driven applications by routing investigation and mitigation lifecycle events to Amazon EventBridge targets
 
 You can configure each capability independently based on your team's specific needs and existing tool stack. Start with the integrations most critical to your incident response workflow, then expand to additional capabilities as needed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,3 +43,7 @@ Distillation is not currently available for Anthropic models on Amazon Bedrock. 
 
 **Note**
 For Claude  and Llama models, the distillation job is run in US West (Oregon). You can either buy [provisioned throughput](https://docs.aws.amazon.com/bedrock/latest/userguide/prov-throughput.html) in US West (Oregon) or [copy distilled model](https://docs.aws.amazon.com/bedrock/latest/userguide/copy-model.html) to another Region and then buy [provisioned throughput](https://docs.aws.amazon.com/bedrock/latest/userguide/prov-throughput.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

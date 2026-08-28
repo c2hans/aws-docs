@@ -42,3 +42,7 @@ To transfer large amounts of data between cloud environments, use a bulk export 
 Financial services firms must carefully assess the feasibility, practicality, and implications of multicloud operating models so they can meet their SLAs. Each CSP (and its services) has its own SLAs. If your workloads have stringent SLA requirements, consider the composite SLA between environments to make your workload design decisions.
 
 For example, if your workload in CSP1 has an SLA of 99.99% and your workload in CSP2 has an SLA of 99.99%, the composite SLA is 99.98%. In addition to SLA considerations, you must communicate clearly with your stakeholders on how multicloud operations affect their cross-cloud workloads.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

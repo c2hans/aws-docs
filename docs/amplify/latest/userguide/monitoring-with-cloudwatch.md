@@ -130,3 +130,7 @@ You can view the Amplify Hosting compute logs for an SSR application in the Clou
 1. In the navigation pane, choose **Monitoring**, then choose **Hosting compute logs**.
 
 1. On the **Hosting compute logs** page, search and select a CloudWatch log group for a specific branch.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

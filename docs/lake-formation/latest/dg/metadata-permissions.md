@@ -47,3 +47,7 @@ Lake Formation provides implicit permissions depending on the persona and the ac
 
 **Grantable permissions**
 Data lake administrators have the ability to delegate the management of permissions to non administrative users by providing grantable permissions. When a principal is provided grantable permissions on a resource and a set of permissions, that principal gains the ability to grant permissions to other principals on that resource.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

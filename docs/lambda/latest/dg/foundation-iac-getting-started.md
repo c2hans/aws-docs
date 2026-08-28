@@ -407,3 +407,7 @@ To confirm that your serverless application deployed correctly, send a message t
 1. Open the [Tables](https://console.aws.amazon.com/dynamodbv2#tables) page of the DynamoDB console and select your table. The name has the format `sam-app-LambdaIaCTable-{{CN0S66C0VLNV}}`.
 
 1. Choose **Explore table items**. In the **Items returned** pane, you should see an item with the **id** `myKey` and the **Value** `myValue`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ If you have application code on your cluster that calls AWS services directly, y
 + [Service role for automatic scaling in Amazon EMR (Auto Scaling role)](emr-iam-role-automatic-scaling.md)
 + [Service role for EMR Notebooks](emr-managed-notebooks-service-role.md)
 + [Using service-linked roles for Amazon EMR](using-service-linked-roles.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

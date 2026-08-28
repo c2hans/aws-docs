@@ -59,3 +59,7 @@ Make sure your IAM identity has appropriate permissions to view a control set in
 In some cases you might need to provide additional evidence to demonstrate compliance. In these cases, you can manually upload evidence. For instructions, see [Adding manual evidence in AWS Audit Manager](upload-evidence.md).
 
 If you want to leave comments about one or more of the controls that were delegated to you, see [Adding comments about a control during a control set review](delegation-for-delegates-add-comment.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

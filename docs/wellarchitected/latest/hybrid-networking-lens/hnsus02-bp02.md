@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 ## Resources
 <a name="resources-51"></a>
 +  [AWS Customer Carbon Footprint Tool](https://aws.amazon.com/sustainability/tools/aws-customer-carbon-footprint-tool/)[AWS Graviton Processor](https://aws.amazon.com/pm/ec2-graviton/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

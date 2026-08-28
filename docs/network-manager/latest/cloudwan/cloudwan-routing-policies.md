@@ -66,3 +66,7 @@ The following is a list of considerations that should be taken into account befo
 + The list-core-network-routing-information API shows the routing information before routing policies have been applied
 + Route summarization will remove all matched prefixes and replace them with a single summarized route. The summarized prefix will be advertised at the same time as matched prefixes are withdrawn.
 + TGW Route Table Attachments that use the same Peering and are associated to the same segment will share the same outbound routing policies across all similar attachments. This means if you have TGW Route Table Attachment attachment-1 with outbound routing policy 1 on segment prod and peering 1 and you have TGW Route Table Attachment attachment-2 with outbound routing policy 2 on segment prod and peering 1, then both attachment-1 and attachment-2 will have both have routing policy 1 and routing policy 2 applied to both of the attachments.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

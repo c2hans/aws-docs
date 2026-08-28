@@ -48,3 +48,7 @@ aws apigatewayv2 update-api --api-id {{api-id}} --cors-configuration AllowOrigin
 ```
 
 For more information, see [CORS](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis-apiid.html#apis-apiid-model-cors) in the Amazon API Gateway Version 2 API Reference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

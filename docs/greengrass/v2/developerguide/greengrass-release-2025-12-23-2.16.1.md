@@ -22,3 +22,7 @@ The following table lists components provided by AWS that include new and update
 | --- | --- |
 | [Greengrass nucleus](greengrass-nucleus-component.md) | Version 2.16.1 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.**Bug fixes and improvements**<br />   Adds configuration for credential retry intervals after Token Exchange Service failures.    |
 | [Greengrass CLI](greengrass-cli-component.md) | <a name="changelog-cli-2.16.1"></a>Version 2.16.1 of the [Greengrass CLI](greengrass-cli-component.md) is available.<br />Version updated for the Greengrass Nucleus v2.16.1 release. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

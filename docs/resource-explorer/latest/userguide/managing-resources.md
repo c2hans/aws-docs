@@ -167,3 +167,7 @@ You can export the results of a **Resource query** to a comma-separated values (
    For searches using search operators (calling the `ListResources` API) where results may return more than 1,000 matches, pagination is progressive and loads pages in groups of 10. For example, exporting to CSV from page 10 exports 1,000 results. Exporting from page 11 paginates through page 20, exports up to 2,000 results.
 
 1. If prompted by your browser, choose to open the .csv file, or save it to a convenient location.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resource Explorer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resource-explorer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,3 +25,7 @@ This guide is for database administrators, database engineers, and migration eng
 + Using SAP ASE as a source for AWS DMS, including limitations with SQL Server as a target
 + Network setup for AWS DMS replication
 + Schema conversion tools for SAP ASE and SQL Server
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

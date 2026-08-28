@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/streaming-media-l
 +  Use an origin server specifically designed and optimized to support the latency and data consistency models required for live streaming.
 +  Origin hosts can scale to serve streams to tens or even hundreds of viewers, but it is always recommended to use a CDN such as Amazon CloudFront to scale live stream delivery beyond a handful of viewers.
 +  Refer to the [Live Streaming on AWS](https://aws.amazon.com/solutions/implementations/live-streaming-on-aws/) solutions implementation for a well-architected reference architecture for live streaming.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

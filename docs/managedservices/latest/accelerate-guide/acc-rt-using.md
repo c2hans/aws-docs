@@ -358,3 +358,7 @@ provider "aws" {
 These metrics are also viewable as graphs, in the **AMS-Resource-Tagger-Reporting-Dashboard**. To see the dashboard, from the Amazon CloudWatch management console, select **AMS-Resource-Tagger-Reporting-Dashboard**. By default, the graphs in this dashboard display the data for the prior 12-hour period.
 
 AMS Accelerate deploys CloudWatch alarms to your account to detect significant increases in the number of unmanaged resources, for example, resources excluded from management by AMS Resource Tagger. AMS Operations will investigate increases in unmanaged resources that exceed: either three resources of the same type, or a 50% increase over all resources of the same type. If the change does not appear to be deliberate, AMS Operations might contact you to review the change.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

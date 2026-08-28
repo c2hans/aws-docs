@@ -142,3 +142,7 @@ View details about updates to AWS managed policies for IAM Roles Anywhere since 
 | [AWSRolesAnywhereFullAccess](#security-iam-awsmanpol-AWSRolesAnywhereFullAccess) – New policy | IAM Roles Anywhere added a new policy to allow users to grant full access IAM Roles Anywhere permissions to principals in a standardized way. | July 16, 2025 |
 | [AWSRolesAnywhereReadOnly](#security-iam-awsmanpol-AWSRolesAnywhereReadOnly) – New policy | IAM Roles Anywhere added a new policy to allow users to grant read only IAM Roles Anywhere permissions to principals in a standardized way. | July 16, 2025 |
 | IAM Roles Anywhere started tracking changes | IAM Roles Anywhere started tracking changes for its AWS managed policies. | February 27, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

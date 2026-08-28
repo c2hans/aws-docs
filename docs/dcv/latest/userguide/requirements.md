@@ -21,3 +21,7 @@ To use Amazon DCV, ensure that the client computers meet the following minimum r
 Amazon DCV does not support operating systems that have reached end of life. Contact your vendor regarding your operating system.
 
 For more information about the Amazon DCV server requirements, see [ Amazon DCV server requirements](https://docs.aws.amazon.com/dcv/latest/adminguide/servers.html#requirements) in the *Amazon DCV Administrator Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

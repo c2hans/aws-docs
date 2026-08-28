@@ -131,3 +131,7 @@ The **ConfigurationID** should **{{not}}** overlap with the AMS Accelerate profi
 
 **Note**
 Tags applied by Resource Tagger always have keys that begin with **ams:rt:**. If you don't specify this prefix in your profile, Resource Tagger inserts it for you. This is how Resource Tagger distinguishes the tags it owns and manages from tags used by other tools for other purposes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

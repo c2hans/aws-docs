@@ -19,3 +19,7 @@ Topics in this section:
 + [Visual overview of the GitHub Flow strategy](visual-overview-of-the-git-hub-flow-strategy.md)
 + [Branches in a GitHub Flow strategy](branches-in-a-git-hub-flow-strategy.md)
 + [Advantages and disadvantages of the GitHub Flow strategy](advantages-and-disadvantages-of-the-git-hub-flow-strategy.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

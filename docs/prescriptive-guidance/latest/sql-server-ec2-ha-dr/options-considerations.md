@@ -76,3 +76,7 @@ The following list identifies the possible bottlenecks you should consider when 
 + If restoring from scratch, time required to restore SQL Server native full, differential, and log backups in the target Availability Zone and Region.
 + Application and external dependencies that need to be available across Regions.
 + Limitations on file sizes for volumes and for uploading to Amazon S3.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ Once enabled, resource-level data at daily granularity is available within 48 ho
 **Note**
 We will disable resource-level data at daily granularity for your organization if no one in the organization accesses it in three consecutive months. However, if you need the data, you can re-enable it in Cost Management preferences.
 Cost Explorer displays the top 5,000 most costly resources per service. If you have more than 5,000 resources, you might not see all of them in the console. However, you can search for those resources using the resource ID. Consider using Cost and Usage Reports (CUR) to retrieve the cost and usage associated with all resources as a CSV file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

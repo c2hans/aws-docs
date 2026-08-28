@@ -24,3 +24,7 @@ You can choose from the following MQTT brokers:
 + **Implement a custom broker**
 
   Choose this option to create a custom local broker component to communicate with client devices. You can create a custom local broker that uses a protocol other than MQTT. AWS IoT Greengrass provides a component SDK that you can use to authenticate and authorize client devices. For more information, see [Use the AWS IoT Device SDK to communicate with the Greengrass nucleus, other components, and AWS IoT Core](interprocess-communication.md) and [Authenticate and authorize client devices](ipc-client-device-auth.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

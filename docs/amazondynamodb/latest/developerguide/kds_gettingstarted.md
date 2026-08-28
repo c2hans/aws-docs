@@ -251,3 +251,7 @@ This section describes how to make changes to an active Kinesis Data Streams for
 
 **Note**
 Disabling streaming to a Kinesis data stream is an asynchronous operation. After you disable the destination (by calling `DisableKinesisStreamingDestination` or disabling it from the console), DynamoDB can continue to send in-flight records to the data stream for a short time until the change fully propagates. Take this brief overlap into account when you stop streaming, and use `describe-kinesis-streaming-destination` to confirm that the destination status has changed to `DISABLED`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

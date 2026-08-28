@@ -25,3 +25,7 @@ The following table describes the important changes to the documentation in this
 | Trying real-time predictions | This release of Amazon ML adds ability to try real-time predictions in the service console.<br />For more information about trying real-time predictions, see [Requesting Real-time Predictions](requesting-real-time-predictions.md) in the *Amazon Machine Learning Developer Guide*. | November 19th, 2015 |
 | New Region | This release of Amazon ML adds support for the EU (Ireland) region.<br />For more information about Amazon ML in the EU (Ireland) region, see [Regions and Endpoints](regions-and-endpoints.md) in the * Amazon Machine Learning Developer Guide*. | August 20th, 2015 |
 | Initial Release | This is the first release of the *Amazon ML Developer Guide*. | April 9th, 2015 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

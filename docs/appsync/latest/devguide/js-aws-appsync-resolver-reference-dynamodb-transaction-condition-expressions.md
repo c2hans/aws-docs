@@ -89,3 +89,7 @@ The substitutions for expression attribute value placeholders, in the form of ke
 
 ** `returnValuesOnConditionCheckFailure` **
 Specify whether to retrieve the item in DynamoDB back when a condition check fails. The retrieved item will be in `ctx.result.cancellationReasons[<index>].item`, where `<index>` is the index of the request item that failed the condition check. This value defaults to true.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

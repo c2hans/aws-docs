@@ -18,3 +18,7 @@ Each Data Transfer Terminal facility includes two 100 Gigabit (Gbps) fiber optic
 
  **Control of your data storage devices**
 No need to ship your Snowball device and wait for your data to be uploaded to your AWS Cloud services. You control your physical data storage devices throughout the entire data transfer process, getting your data where it needs to go faster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Transfer Terminal. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datatransferterminal` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

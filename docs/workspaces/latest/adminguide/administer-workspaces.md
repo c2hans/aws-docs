@@ -35,3 +35,7 @@ Ensure you update the EC2Config, EC2Launch, and EC2Launch V2 agents to the lates
 + [Migrate a WorkSpace in WorkSpaces Personal](migrate-workspaces.md)
 + [Migrate a Linux WorkSpace to a different operating system](migrate-linux-workspaces.md)
 + [Delete a WorkSpace in WorkSpaces Personal](delete-workspaces.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

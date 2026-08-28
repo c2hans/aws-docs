@@ -165,3 +165,7 @@ The following service-linked roles are supported in DynamoDB.
 + DynamoDB Accelerator (DAX) uses the service-linked role** AWSServiceRoleForDAX** for configuring and maintaining a DAX cluster. See [Using service-linked IAM roles for DAX](using-service-linked-roles.md) for more information about the **AWSServiceRoleForDAX** service-linked role.
 
 In addition to these DynamoDB service-linked roles, DynamoDB uses the Application Auto Scaling service for automatically managing throughput settings on provisioned capacity mode tables. The Application Auto Scaling service uses the service-linked role** AWSServiceRoleForApplicationAutoScaling\_DynamoDBTable** to manage throughput settings on DynamoDB tables that have auto scaling enabled. See [Service-linked roles for Application Auto Scaling](https://docs.aws.amazon.com/autoscaling/application/userguide/application-auto-scaling-service-linked-roles.html) for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

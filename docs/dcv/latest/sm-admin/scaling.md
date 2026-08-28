@@ -271,3 +271,7 @@ for the `auth-token-verifier` parameter, use the Agent load balancer's DNS for {
 1. Use the AMI to launch the remaining Agents and assign the instance profile that you created to all of them.
 
 1. Assign a security group which allows Agent to load balancer network traffic to all of the Agent instances. For more information about network ports, see [Agent Configuration File](https://docs.aws.amazon.com/dcv/latest/sm-admin/agent-file.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

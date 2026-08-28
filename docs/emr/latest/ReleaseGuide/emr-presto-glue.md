@@ -150,3 +150,7 @@ Consider the following items when using AWS Glue Data Catalog as a metastore wit
 + Partition values containing quotes and apostrophes are not supported, for example, `PARTITION (owner="Doe's").`
 + [Column statistics](https://cwiki.apache.org/confluence/display/Hive/StatsDev#StatsDev-ColumnStatistics) are supported for emr-5.31.0 and later.
 + Using [Hive authorization](https://cwiki.apache.org/confluence/display/Hive/LanguageManual+Authorization) is not supported. As an alternative, consider using [AWS Glue Resource-Based Policies](https://docs.aws.amazon.com/glue/latest/dg/glue-resource-policies.html). For more information, see [Use Resource-Based Policies for Amazon EMR Access to AWS Glue Data Catalog](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-iam-roles-glue.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -98,3 +98,7 @@ The Config Rule runs automatically within the period specified. To see it in act
 1. Create a public Amazon S3 bucket.
 
 1. Open the Config Rule in AWS Config and choose **Re-evaluate**. The rule and the automation can take a short while to run, but within a few minutes you should see a new issue in Jira with AWS Config information for the bucket, which is in violation and suggests the **DisableS3BucketPublicReadWrite** automation document as a remediation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

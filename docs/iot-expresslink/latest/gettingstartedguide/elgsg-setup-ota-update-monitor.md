@@ -48,3 +48,7 @@ After you create a firmware update job as described in the previous section, the
    The ExpressLink module should now connect to AWS IoT, complete the self-test and mark the image as valid (preventing any further rollback to the old image).
 
 1. Return to the AWS IoT console and verify that the job status is marked as completed and succeeded.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

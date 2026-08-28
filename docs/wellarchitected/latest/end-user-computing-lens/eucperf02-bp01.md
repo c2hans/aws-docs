@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  If you must deploy AWS EUC services in a non-optimal Region (which is sometimes necessary to access other AWS services which have already been deployed), then be sure that you test your application to verify that they offer acceptable performance at the latency levels being experienced.
 
  For an example of how latency might affect the user experience, see [EUC latency trade-offs](https://guide.aws.dev/en/articles/ARiy3h1QGUSWePxGqdV_SYLA).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

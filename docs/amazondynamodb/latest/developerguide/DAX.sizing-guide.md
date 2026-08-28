@@ -76,3 +76,7 @@ Be careful when load testing T2 node types (`dax.t2.small` and `dax.t2.medium`).
 If load testing indicates that the selected cluster configuration can't sustain your application's workload, you should [switch to a larger node type](DAX.cluster-management.md#DAX.cluster-management.scaling.node-types), especially if you see high CPU utilization on the primary node in the cluster, high eviction rates, or high cache memory utilization. If hit rates are consistently high, and the ratio of read to write traffic is high, you might want to consider [adding more nodes to your cluster](DAX.cluster-management.md#DAX.cluster-management.scaling.read-scaling). Refer to [Scaling a DAX cluster](DAX.cluster-management.md#DAX.cluster-management.scaling) for additional guidance on when to use a larger node type (vertical scaling) or add more nodes (horizontal scaling).
 
 You should repeat your load test after making changes to your cluster configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

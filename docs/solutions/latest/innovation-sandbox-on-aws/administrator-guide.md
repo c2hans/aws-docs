@@ -86,15 +86,15 @@ If the cleanup process continues to fail, you may have missed a resource that ne
 ### Account states in Innovation Sandbox
 <a name="understand-states"></a>
 
-This table explains the various states the account can be in at any given time. Administrators (or anyone) cannot change these states manually.
+This table explains the various states the account can be in at any given time. Most state transitions happen automatically. The exception is the Quarantine state: an Administrator can manually move an account in the Available, Active, or Frozen state into Quarantine using the Quarantine account action. For more information, refer to [Manually quarantining accounts](#manually-quarantining-accounts).
 
 | State | Description |
 | --- | --- |
 | Available | The account is in the pool and ready to be used as part of a lease. |
 | Active | The account is being used for a lease. |
 | Frozen | The account is being used for a lease but the user no longer has access to the account. Administrators and Managers can still access the account for evaluation and review purposes.<br /> **Note:** This is an optional state. You will need to configure the account to freeze during the lease template creation. See [Creating and managing lease templates](manager-guide.md#creating-lease-templates) for more information. |
-| CleanUp | The account is going through the clean-up process. |
-| Quarantine | Accounts that fail to complete the automated clean-up will be quarantined and an Admin will need to manually resolve any resources that failed to delete. After manual remediation, the account will go back into the clean-up state for a final clean-up process. |
+| CleanUp | The account is going through the cleanup process. |
+| Quarantine | An account enters Quarantine through one of three paths: the automated cleanup process fails, the drift monitor detects drift on the account, or an Administrator manually quarantines it using the **Quarantine account** action. If the automated cleanup process fails, an Admin must manually resolve any resources that failed to delete before the account returns to the cleanup state for a final cleanup process. To recover, use **Retry cleanup**, or eject the account and re-onboard it into the account pool. |
 
 ### Account lifecycle in Innovation Sandbox
 <a name="account-lifecycle"></a>
@@ -104,9 +104,9 @@ For more information, refer to the [Account lifecycle](account-lifecycle-in-isb.
 ## Managing existing accounts
 <a name="manage-accounts"></a>
 
-As an Administrator, you can manage any existing accounts. This allows you to manually perform account lifecycle actions such as removing accounts from the pool, and retrying the clean-up process.
+As an Administrator, you can manage any existing accounts. This allows you to manually perform account lifecycle actions such as removing accounts from the pool, and retrying the cleanup process.
 
-![Account management options](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/account-admin-actions.png)
+![Account management options](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/account-admin-actions.png)
 
 **Account management options**
 To manage accounts:
@@ -118,14 +118,72 @@ To manage accounts:
 | Action | Description |
 | --- | --- |
 | Eject account | Removes the account from the pool of available accounts.<br /> **Note**: Administrators can also eject in-use accounts. For example, they might want to preserve work beyond the lease or move the account away from the management provided by Innovation Sandbox. |
-| Retry cleanup | Restarts the clean-up process for that account. By default, lapsed or inactive accounts will be cleaned on a periodic basis. If an account cannot be cleaned, Administrators can manually resolve any issues, and use this option to restart the clean-up process. For example, for accounts in a Quarantine state. |
+| Retry cleanup | Restarts the cleanup process for that account. By default, lapsed or inactive accounts will be cleaned on a periodic basis. If an account cannot be cleaned, Administrators can manually resolve any issues, and use this option to restart the cleanup process. For example, for accounts in a Quarantine state. |
+| Quarantine account | Immediately isolates the selected accounts by terminating any active leases, revoking leaseholder access, and moving the accounts to the Quarantine OU. This action is only enabled when all of the selected accounts are in the Available, Active, or Frozen state. For more information, refer to [Manually quarantining accounts](#manually-quarantining-accounts). |
+
+### Viewing cleanup details
+<a name="viewing-cleanup-details"></a>
+
+The Accounts list page displays the current cleanup status inline in the **Status** column for any account undergoing cleanup (for example, "Clean Up (Nuke Phase 1)" or "Clean Up (Validating)"). Accounts not in active cleanup display "Clean Up" without a sub-status.
+
+To view detailed cleanup information for a specific account, choose the account ID link in the Accounts list. The account details page shows:
++  **Active cleanup progress**: If a cleanup is currently running, you see the current step and a live status indicator that refreshes automatically.
++  **Start cleanup**: Administrators can initiate cleanup directly from the account details page using the **Start cleanup** button. The button is disabled while a cleanup is already running.
++  **Recent cleanups**: A table of the most recent cleanup reports for the account, with status, reason, start time, and duration. Choose a row to view the full detail.
++  **Step timeline**: An expandable timeline showing each cleanup step’s status, duration, and any error details. Nuke phase steps include a link to the CodeBuild build logs.
++  **Resource summary**: A before-and-after resource type table showing what was cleaned. If validation failed or proceeded with a warning, a **Remaining resources** table shows the specific resources that were not cleaned, with their ARN, type, and region.
+
+### Skipping account cooldown
+<a name="skip-cooldown"></a>
+
+When an account is in a post-cleanup cooldown (status shows "Clean Up (Cooling Down)"), Administrators and Managers can skip the remaining cooldown to return the account to the Available pool immediately.
+
+To skip a cooldown:
+
+1. From the **Administration** dropdown, navigate to the **Accounts** page.
+
+1. Choose the account ID link for the account in cooldown.
+
+1. In the cleanup overview section, choose **Skip cooldown**.
+
+1. Review the warning in the confirmation dialog. Skipping the cooldown might result in costs from the previous lease being attributed to the next user.
+
+1. Choose **Skip cooldown** to confirm.
+
+The account returns to the Available pool within a few seconds.
+
+### Manually quarantining accounts
+<a name="manually-quarantining-accounts"></a>
+
+As an Administrator, you can manually quarantine an account to temporarily remove it from circulation while preserving the ability to restore it later. Common reasons to manually quarantine an account include exhausted service quotas, suspected compromise or unusual activity on the account, or a policy violation that needs review before the account is returned to use.
+
+Quarantining an account immediately:
++ Terminates any active lease on the account and revokes the leaseholder’s access.
++ Moves the account into the Quarantine OU.
++ Removes the account from the available account pool.
+
+To manually quarantine an account:
+
+1. From the **Administration** dropdown, navigate to the **Accounts** page.
+
+1. Select one or more accounts that are in the **Available**, **Active**, or **Frozen** state.
+
+1. Under **Actions**, choose **Quarantine account**.
+
+1. Review the warning in the confirmation dialog and choose **Submit**.
+
+**Important**
+Quarantining an account cannot be reversed. Any leaseholder on the account loses access immediately. To recover a quarantined account, use **Retry cleanup**, or eject the account and re-onboard it into the account pool.
+
+**Note**
+Every quarantine action, regardless of cause, is recorded for auditing purposes. For more information, refer to [Monitoring the solution](monitoring-the-solution.md).
 
 ## Registering and managing blueprints
 <a name="registering-managing-blueprints"></a>
 
 As an Administrator, you can register CloudFormation StackSets as blueprints to provide pre-configured infrastructure to sandbox accounts. Blueprints enable users to receive accounts with ready-to-use resources, reducing manual setup.
 
-![Blueprints list page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/blueprints-list-page.png)
+![Blueprints list page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprints-list-page.png)
 
 **Blueprints page**
 Blueprints are optional. You must create self-managed CloudFormation StackSets outside of Innovation Sandbox before registering them as blueprints.
@@ -210,20 +268,20 @@ To register a blueprint using the registration wizard:
    1.  *(Optional)* Add tags to provide metadata such as estimated cost, description, or support contact.
 
    1. Choose **Next**.
-![Blueprint Configuration page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/blueprint-registration-wizard-step1.png)
+![Blueprint Configuration page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-registration-wizard-step1.png)
 
 1. On the **StackSet Selection** page:
 
    1. Select the StackSet you want to register as a blueprint from the list.
 
    1. Choose **Next**.
-![StackSet Selection page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/blueprint-registration-wizard-step2.png)
+![StackSet Selection page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-registration-wizard-step2.png)
 
 1. On the **Deployment Configuration** page, configure deployment settings:
 
    1. For **Regions**, select the AWS Regions where the blueprint will be deployed. You can select multiple regions.
 **Note**
-The available regions are determined by the **ISB Managed Regions** parameter configured during AccountPool stack deployment. To add or remove regions, update the AccountPool stack parameter. For more information, refer to [Deploy the AccountPool stack](step1-deploy-accountpool-stack.md).
+The available regions are determined by the **ISB Managed Regions** parameter configured during AccountPool stack deployment. To add or remove regions, update the AccountPool stack parameter. For more information, see [Deploy the AccountPool stack](step1-deploy-accountpool-stack.md). You can view the currently configured managed regions on the **Read-only** tab of the **Settings** page.
 
    1. For **Deployment Timeout**, enter the maximum time (in minutes) to wait for deployment completion (default: 30 minutes).
 
@@ -251,7 +309,7 @@ The available regions are determined by the **ISB Managed Regions** parameter co
 For new blueprints, use the **Default** strategy (0% failure tolerance) until you have validated that the StackSet deploys reliably. Switch to **Custom** with higher failure tolerance only when you understand the trade-off: users may receive accounts with missing resources in failed regions.
 
    1. Choose **Next**.
-![Deployment Configuration page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/blueprint-registration-wizard-step3.png)
+![Deployment Configuration page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-registration-wizard-step3.png)
 
       1. On the **Review and Submit** page, review your configuration and choose **Register blueprint**.
 
@@ -285,7 +343,7 @@ To view blueprint health and deployment history:
 
 1. Select a blueprint name to view details.
 
-![Blueprint details page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/blueprint-details-page.png)
+![Blueprint details page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-details-page.png)
 
 **Blueprint details page**
 The blueprint details page shows:
@@ -310,7 +368,7 @@ To update a blueprint:
    +  **Deployment configuration**: Update timeout, deployment strategy, or concurrency settings
 
 1. Make your changes and choose **Save**.
-![Edit deployment configuration page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/blueprint-edit-deployment-config.png)
+![Edit deployment configuration page](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-edit-deployment-config.png)
 
 **Note**
 Updating blueprint metadata does not affect existing leases. New leases will use the updated configuration.
@@ -323,7 +381,7 @@ To unregister a blueprint:
 1. On the **Blueprints** page, select one or more blueprints you want to unregister.
 
 1. Under **Actions**, choose **Unregister**.
-![Unregister action in Actions dropdown](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/blueprint-unregister-action.png)
+![Unregister action in Actions dropdown](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/blueprint-unregister-action.png)
 
 1. Review the blueprints to be unregistered and choose **Submit**.
 
@@ -333,69 +391,118 @@ You cannot unregister blueprints that are associated with active lease templates
 ## Viewing or modifying Innovation Sandbox settings
 <a name="manage-settings"></a>
 
-You can view your Innovation Sandbox settings in the **Settings** section of the Administrator dropdown.
+You can view and modify your Innovation Sandbox settings on the **Settings** page. From the left navigation pane, choose **Settings**. Administrators can edit every section; Managers see a read-only view of the same sections; sandbox users cannot access the **Settings** page.
 
-To view the current settings, access the AWS AppConfig console in the Hub account, or use the **Settings** section in the web UI.
+![Innovation Sandbox Settings page showing Leases & Cost](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/settings-page-overview.png)
 
-![Innovation Sandbox AppConfig application overview](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/app-config-overview.png)
-
-**Innovation Sandbox AppConfig application overview**
-You **cannot** modify any settings directly using the web UI. To modify these settings, this solution uses [AWS AppConfig](https://docs.aws.amazon.com/appconfig/latest/userguide/what-is-appconfig.html) accessible from within the Hub account.
-
-You can manage these three configuration profiles from the AWS AppConfig console in the Hub account:
-+  **Nuke configuration**: This configuration determines how AWS Nuke behaves when cleaning your accounts. For more information on AWS Nuke, refer to the [AWS Nuke documentation](https://aws-nuke.ekristen.dev/config/).
-+  **Global configuration**: This is where you set general settings for your Innovation Sandbox solution. This includes setting the maximum budget and maximum duration for a lease, writing the terms of service and other settings. For more information on these settings, see [Global configuration settings](#global-settings).
-+  **Reporting Configuration**: This configuration defines the allows you to enable cost report groups that can be assigned to lease templates for cost attribution and reporting purposes.
-
-![Configuration profile overview](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/configuration-overview.png)
-
-**Configuration profile overview**
- **Modify configuration**
-
-To modify any configuration:
-
-1. Choose the configuration you want to modify, and under the Hosted configuration versions section, choose **Create**. This will open a page where you can modify the configuration file.
-
-1. To update your setting, make your changes and choose **Create hosted configuration version**.
-
-1. To deploy your changes to Innovation Sandbox, choose **Start deployment**. The Deployment details page displays.
-
-1. Under the Deployment details section, keep the **Environment** and **Deployment strategy** parameters set to their default values.
-
-1. Select the version you want to deploy and choose **Start deployment**.
-
-This will create and deploy a new version of your configuration. Note that all hosted configurations are versioned. You can roll back to a previous version by starting a new deployment and selecting a previous version.
+**Innovation Sandbox Settings page**
+As an Administrator, you can modify all global settings directly on the **Settings** page. Managers can open the **Settings** page to view the current values, but cannot change them.
 
 **Note**
-After the deployment is successful, you may notice a brief delay as the new settings are deployed to the Innovation Sandbox environment.
+The account cleanup configuration—the AWS Nuke configuration and the cleanup validator exclusion configuration—remains in AWS AppConfig. The **Settings** page does not manage this configuration. For more information, see [Resolving Account Cleanup Failures](#resolving-account-cleanup-failures) and [Keeping exclusion configurations in sync](troubleshooting.md#validation-exclusion-config-sync).
+
+**Important**
+If you upgraded to v1.3.0 or later from an earlier version, your account still contains the **GlobalConfig** and **ReportingConfig** configuration profiles. The solution previously used these profiles in AWS AppConfig, but no longer reads them. Editing these orphaned profiles has no effect. Make all configuration changes on the **Settings** page in the web UI.
+
+### Modify configuration
+<a name="modify-configuration"></a>
+
+Settings are organized into four tabs: **Leases & Cost**, **Cleanup**, **General**, and **Read-only**. Each configuration section has its own **Save** button, so saving one section does not affect any other section.
+
+To modify a setting:
+
+1. In the solution web UI, from the left navigation pane, choose **Settings**.
+
+1. Choose the tab that contains the section you want to change. Use **Leases & Cost** for Lease Policies and Cost Reporting, and **Cleanup** for the account cleanup loop. Use **General** for Maintenance Mode, Terms of Service, and Notification.
+
+1. Update the values in the section you want to change.
+
+1. Choose **Save**. A confirmation message, "Settings saved.", displays, and the new values take effect immediately.
+
+**Note**
+If another Administrator saves the same section after you loaded the page, your **Save** fails with a **Conflict** error. The error reads: "These settings were modified by another administrator. Reload to see the latest values." Choose **Reload** to load the latest values, reapply your changes, and choose **Save** again. Reloading discards your unsaved edits for that section.
+
+### Completing initial setup
+<a name="completing-initial-setup"></a>
+
+Every configuration section starts with built-in default values. Until you save each section for the first time, the **Settings** item in the left navigation pane displays a badge. The badge shows how many sections have not yet been saved. Each unsaved section on the **Settings** page displays a **Using default values** alert. (The **Maintenance Mode** section shows a maintenance-specific warning instead. For more information, see [Managing maintenance mode](#maintenance-mode).) If every section is still unsaved, the **Settings** page also shows an **Initial setup required** banner. Innovation Sandbox is fully operational with the default values in the meantime.
+
+Review each section and choose **Save** to apply it to your deployment. You can save a section with its default values unchanged; doing so removes it from the count of sections needing attention.
+
+### Managing maintenance mode
+<a name="maintenance-mode"></a>
+
+Maintenance mode temporarily restricts the solution to Administrators. When maintenance mode is on, Managers and sandbox users lose access to the Innovation Sandbox web application. A maintenance banner displays on every page of the web UI. Their existing sandbox accounts are unaffected, and Administrators retain full access. Use maintenance mode when performing sensitive maintenance work, such as initial setup, troubleshooting, or upgrading the solution.
+
+![Settings page General tab with Maintenance Mode toggle](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/screenshots/settings-general-maintenance.png)
+
+**Maintenance Mode section on the General tab**
+To turn maintenance mode on or off:
+
+1. In the solution web UI, from the left navigation pane, choose **Settings**.
+
+1. Choose the **General** tab.
+
+1. Under **Maintenance Mode**, turn the **Maintenance mode** toggle on or off.
+
+1. Choose **Save**.
+
+1. On the confirmation dialog, choose **Turn on maintenance mode** or **Turn off maintenance mode**.
+
+**Important**
+New deployments of Innovation Sandbox on AWS start with maintenance mode turned **ON**. After you finish reviewing the **Settings** page, turn maintenance mode off so Managers and users can access the solution.
 
 ### Global configuration settings
 <a name="global-settings"></a>
 
-The following table includes all of the global configuration settings you can set or modify in Innovation Sandbox.
+The following tables list the global configuration settings you can view or modify on the **Settings** page, grouped by section. For the cost reporting settings, see [Cost report configuration settings](#cost-report-settings).
 
-| Setting | Type | Description |
-| --- | --- | --- |
-| termsOfService | String | Terms of service that are presented to the user. You can customize this with your own words on how users should responsibly use their sandbox account and what they are responsible for. |
-| maintenanceMode | Boolean | If set to true, restricts access of all personas except Admins. This allows Admins to perform sensitive maintenance work like setup, troubleshooting, upgrading, or teardown. |
-| leases.maxBudget | Number | The maximum budget that a lease template can be created with. Use this setting to globally enforce that a lease never has a budget over x amount. |
-| leases.requiremaxBudget | Boolean | Flag that determines whether or not LeaseTemplates must be created with a maximum budget. |
-| leases.maxDurationHours | Number | The maximum duration that a lease template can be created with. This is a way to globally enforce that a lease never has a duration over x amount. This is measured in hours. |
-| leases.maxDurationThresholds | Number | The maximum duration thresholds (in hours). |
-| leases.requiremaxDuration | Boolean | Flag that determines whether or not LeaseTemplates must be created with a maximum duration. |
-| leases.maxLeasesPerUser | Number | The maximum number of leases one user can hold concurrently. This includes leases pending approval. |
-| cleanup.numberOfFailedAttemptsToCancelCleanup | Number | The number of times AWS Nuke will fail before the clean-up process is deemed to have failed. |
-| cleanup.waitBeforeRetryFailedAttemptSeconds | Number | The number of seconds to wait between retrying clean-up after a failed attempt |
-| cleanup.numberOfSuccessfulAttemptsToFinishCleanup | Number | The number of times AWS Nuke will need to succeed before the clean-up is deemed to be a success. |
-| cleanup.waitBeforeRerunSuccessfulAttemptSeconds | Number | The number of seconds to wait between retrying clean-up after a successful attempt. |
-| notification.emailFrom | String | Email that Amazon SES uses to send email notifications from. |
+ **Lease Policies** (**Leases & Cost** tab)
+
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| Require max budget | Boolean | On | Require lease templates to define a maximum budget. |
+| Max budget | Number (USD) | 50 | Maximum budget, in USD, that a lease template can be created with. Range: 0 to 1,000,000,000. |
+| Require max duration | Boolean | On | Require lease templates to define a maximum duration. |
+| Max lease duration | Number (hours) | 168 | Maximum duration, in hours, that a lease template can be created with. Range: 0 to 87,600. |
+| Max leases per user | Number | 3 | Maximum number of concurrent active leases (including pending requests) a single user can have. |
+| Lease record TTL | Number (days) | 30 | Number of days an expired lease record is retained before it is permanently deleted. Deletion might take up to 48 hours after the TTL expires. |
+| Allow user lease termination | Boolean | On | When enabled, users can terminate their own active leases. When disabled, only Admins and Managers can. |
+| Rate limit window | Number (hours) | 168 | Rolling window, in hours, used to rate-limit lease requests. Must not exceed the **Lease record TTL** converted to hours (days × 24). |
+| Max requests per window | Number | 10 | Maximum number of lease requests a user can make within the rate limit window before further requests are rejected. |
+| Enable lease sharing | Boolean | Off | When enabled, lease owners can manage assignments on leases that permit sharing. Admins and Managers always retain access. |
+| Enable principal search | Boolean | On | When enabled, the user typeahead search used to find and assign principals is available. When disabled, it is unavailable to all roles. |
+
+ **Cleanup** (**Cleanup** tab)
+
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| Failed attempts before quarantine | Number | 3 | Total failed AWS Nuke attempts before an account fails cleanup and is sent to quarantine. |
+| Wait before retry (seconds) | Number | 5 | Delay, in seconds, between failed AWS Nuke attempts. |
+| Successful attempts to finish | Number | 2 | Total successful AWS Nuke attempts before an account finishes cleanup and is returned to available. |
+| Wait before rerun (seconds) | Number | 30 | Delay, in seconds, between successful AWS Nuke attempts. |
+| Account cooldown (hours) | Number | 24 | Hours an account waits after cleanup before it can be leased again. Range: 0 to 8640. Set to 0 for no cooldown. The cooldown also serves as the Resource Explorer staleness buffer for post-cleanup validation. |
+| Cleanup report retention (days) | Number | 730 | Days a cleanup report is retained before it is deleted. Range: 14 to 3650. |
+| On validation failure | Silent, Warn, or Quarantine | Silent | What happens when post-cleanup validation finds remaining resources. **Silent** (default): validation runs and captures data but takes no action. **Warn**: logs a warning and surfaces remaining resources in the UI, but returns the account to available. **Quarantine**: moves the account to quarantine for manual review. |
+
+ **General** (**General** tab)
+
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| Maintenance mode | Boolean | On | Restricts web application access to Admins. For more information, see [Managing maintenance mode](#maintenance-mode). |
+| Terms of service content | String | Built-in default terms of service text | Terms of service presented to users when requesting a lease. You can customize this with your own words on how users should responsibly use their sandbox account and what they are responsible for. Maximum 10,000 characters. |
+| Email from address | String | Empty (notifications disabled) | Sender address used for all email notifications. Leave empty to disable email notifications. The address (or its parent domain) must be a verified identity in Amazon SES. |
 
 ### Cost report configuration settings
 <a name="cost-report-settings"></a>
 
-The following table includes the cost report configuration settings you can set or modify in Innovation Sandbox for cost attribution and reporting.
+The following table includes the **Cost Reporting** settings you can view or modify on the **Leases & Cost** tab of the **Settings** page. Use these settings for cost attribution and reporting.
 
-| Setting | Type | Description |
-| --- | --- | --- |
-| costReportGroups | Array | List of valid cost report group identifiers that can be assigned to lease templates. Maximum of 100 cost report groups, with each group name limited to 50 characters. |
-| requireCostReportGroup | Boolean | Flag that determines whether cost report groups are required with leases and lease templates. When enabled, all new lease template creation and updates will require a valid cost report group to be assigned. This will not be enforced for preexistng leases/lease templates and they will need to be manually updated. |
+| Setting | Type | Default | Description |
+| --- | --- | --- | --- |
+| Cost report groups | Array of strings | Empty | List of valid cost report group names that can be assigned to lease templates. Maximum of 100 cost report groups, with each group name limited to 50 characters. |
+| Require cost report group | Boolean | Off | Determines whether a cost report group is required on leases and lease templates. When enabled, all new lease template creation and updates require a valid cost report group to be assigned. This is not enforced for existing leases or lease templates; they need to be manually updated. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

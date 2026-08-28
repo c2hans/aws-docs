@@ -45,3 +45,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/cos
 + [ The Business Value of Amazon Web Services for Independent Software Vendors ](https://pages.awscloud.com/rs/112-TZM-766/images/The Business Value of Amazon Web Services %28AWS%29 for Independent Software Vendors %28ISVs%29.pdf)
 + [ Business Value of Cloud Modernization ](https://pages.awscloud.com/aws-cfm-known-business-value-of-cloud-modernization-2022.html)
 + [ The Business Value of Migration to Amazon Web Services ](https://pages.awscloud.com/global-in-gc-500-business-value-of-migration-whitepaper-learn.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

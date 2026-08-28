@@ -27,3 +27,7 @@ The **DataZone environment** option is present only when you have one or more do
 ![Verify the change to a DataZone environment.](http://docs.aws.amazon.com/athena/latest/ug/images/datazone-using-3.png)
 
 For more information about getting started with DataZone and Athena, see the [Getting started](https://docs.aws.amazon.com/datazone/latest/userguide/getting-started.html) tutorial in the *Amazon DataZone User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

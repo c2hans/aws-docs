@@ -387,3 +387,7 @@ The following template issues are caught locally before the AWS SAM transform ru
 <a name="sam-specification-language-extensions-telemetry"></a>
 
 The AWS SAM CLI emits a `CFNLanguageExtensions` telemetry event when a command is invoked with `--language-extensions` (or its environment-variable equivalent) *and* the template declares the `AWS::LanguageExtensions` transform. The event fires once per invocation and no template content is transmitted. When local processing is off (the default), no event fires.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ After the automated migration is complete, review the newly created protection p
    1. Expand the listing for the vendor of your choice and select the rule groups that you want to add. For AWS Marketplace sellers, you might need to subscribe to the rule groups. For more information about using managed rule groups in your protection pack (web ACL), see [Using managed rule groups in AWS WAF](waf-managed-rule-groups.md) and [Using protection packs (web ACLs) with rules and rule groups in AWS WAF](web-acl-processing.md).
 
 After you finish the basic migration process, we recommend that you review your needs and consider additional options, to be sure that the new configuration is as efficient as possible and that it's using the latest available security options. See [Migrating a protection pack (web ACL): additional considerations](waf-migrating-procedure-additional.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

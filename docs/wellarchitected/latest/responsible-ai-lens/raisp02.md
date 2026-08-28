@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 + [RAISP02-BP08 Consider core AI system designs that improve factual accuracy](raisp02-bp08.md)
 + [RAISP02-BP09 Design your core AI system to handle input variations](raisp02-bp09.md)
 + [RAISP02-BP10 Build safety protections into the core AI system](raisp02-bp10.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ To configure client-side encryption with S3A, there are several configuration pr
 | fs.s3a.encryption.cse.custom.keyring.class.name | N/A | Applies when using CSE-KMS. The fully qualified class name of custom key provider. |
 | fs.s3a.cse.customKeyringProvider.uri | N/A | Applies when using CSE-CUSTOM. The Amazon S3 URI where the JAR with the Custom implementation of Keyring is located. When you provide this URI, Amazon EMR automatically downloads the JAR to all nodes in the cluster. |
 | fs.s3a.encryption.cse.v1.compatibility.enabled | 'true' | This provides backward compatibility with older SDK clients like the one used with EMRFS. Turn this off, when there is no such dependency, for better performance. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

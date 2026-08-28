@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/tutorial-ecs
    +  The value for `taskDefinitionArn`. Its format is `arn:aws:ecs:{{aws-region}}:{{account-id}}:task-definition/{{task-definition-family}}:{{task-definition-revision}}`. This is the ARN of your updated task definition.
    +  In the `containerDefinitions` element, the value for `name`. This is the name of your container.
    +  In the `portMappings` element, the value for `containerPort`. This is the port for your container.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

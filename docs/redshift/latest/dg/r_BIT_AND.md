@@ -60,3 +60,7 @@ You can interpret these results as follows:
 + The integer value `192` for Santa Barbara translates to the binary value `11000000`. In other words, all users in this city like sports and theatre, but not all users like any other type of event.
 + The integer `64` translates to `01000000`. So, for users in San Jose, the only type of event that they all like is theatre.
 + The values of `0` for the other three cities indicate that no "likes" are shared by all users in those cities.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -145,3 +145,7 @@ Elastic Beanstalk provides many configuration options for customizing your envir
 <a name="python3-executable"></a>
 
 The version of the `python3` executable available on EC2 instances in Elastic Beanstalk Python environments will not always correspond to the same Python version used by the platform. For example, on the Python 3.12 AL2023 platform, `/usr/bin/python3` points to Python 3.9. This is because Python 3.9 is the *system Python* on AL2023. For more information, see [Python in AL2023](https://docs.aws.amazon.com/linux/al2023/ug/python.html) in the *Amazon Linux 2023 User Guide*. You can access an executable corresponding to the Python version used by the platform at a versioned location (e.g. `/usr/bin/python3.12`) or in the application virtual environment `bin` directory (e.g. `/var/app/venv/staging-LQM1lest/bin/python3`). The platform uses the correct Python executable that corresponds to the platform branch.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

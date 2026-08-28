@@ -101,3 +101,7 @@ The AWS Database Encryption SDK also supports *signed beacons* that can be confi
 For help configuring compound beacons, see [Configuring compound beacons](configure-beacons.md#config-compound-beacons).
 
 The way you configure your compound beacon determines the types of queries it can perform. For example, you can make some encrypted and signed parts optional to allow for more flexibility in your queries. For more information on the types of queries compound beacons can perform, see [Querying beacons](using-beacons.md#querying-beacons).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

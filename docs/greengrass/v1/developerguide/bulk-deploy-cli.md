@@ -510,3 +510,7 @@ For more information, see the following resources:
 + [Deploy AWS IoT Greengrass groups to an AWS IoT Greengrass core](deployments.md)
 + [Amazon S3 API commands](https://docs.aws.amazon.com/cli/latest/reference/s3api) in the *AWS CLI Command Reference*
 + <a name="see-also-gg-cli"></a>[AWS IoT Greengrass commands](https://docs.aws.amazon.com/cli/latest/reference/greengrass/index.html) in the *AWS CLI Command Reference*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -120,3 +120,7 @@ glueContext.write_dynamic_frame.from_options(
 + `table` — Required for writing, required for reading unless `query` is provided. Used for Read/Write. The name of a table your connection method will interact with.
 + `query` — Used for Read. A SELECT SQL query defining what should be retrieved when reading from Teradata.
 + `staging_fs_url` — Required. Used for Read/Write. Valid Values: `s3a` URLs. The URL of a Amazon S3 bucket or folder to use for temporary storage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ The [systemd.network](https://www.freedesktop.org/software/systemd/man/systemd.n
 AL2023 instance interface names are generated using the `systemd` slot naming scheme. For more information, see [systemd.net naming scheme](https://www.freedesktop.org/software/systemd/man/systemd.net-naming-scheme.html).
 
 Additionally, AL2023 uses the `fq_codel` active queue management network transmission scheduling algorithm by default. For more information, see [CoDel overview](https://www.bufferbloat.net/projects/codel/wiki/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -282,3 +282,7 @@ To prevent this error, make sure that you aren’t exporting too many CSV files 
 To resolve this error, wait for your in-progress CSV exports to complete. Most exports take a few minutes. However, if you're exporting a very large amount of data, it might take up to an hour to complete the export. Feel free to navigate away from evidence finder while the export is in progress.
 
 You can check the export status from the download center in the Audit Manager console. After your exported files are ready, return to your grouped results in evidence finder. You can then continue to get the results and export a CSV file for each line item.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

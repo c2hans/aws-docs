@@ -34,3 +34,7 @@ When scaling a container fleet, consider how adding or removing instances impact
     ```
 
 To get the current total capacity of a container fleet, call [DescribeFleetCapacity](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_DescribeFleetCapacity.html) or [DescribeFleetLocation Capacity](https://docs.aws.amazon.com/gameliftservers/latest/apireference/API_DescribeFleetLocationCapacity.html) to get the number of game server container groups in the fleet. Active groups are those that are currently hosting game sessions. Idle groups are ready to host a new game session. Multiply these values by the number of server processes per game server container group.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

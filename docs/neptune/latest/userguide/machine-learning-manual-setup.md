@@ -227,3 +227,7 @@ The universal ARN, `arn:aws:s3:::*` is used for the Amazon S3 resource in the po
 <a name="ml-manual-setup-endpoints"></a>
 
 Finally, to give the Neptune engine access the necessary SageMaker AI management APIs, you need to create two SageMaker AI endpoints in your Neptune VPC, as explained in [Create two endpoints for SageMaker AI in your Neptune VPC](machine-learning-cluster-setup.md#machine-learning-sm-endpoints).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

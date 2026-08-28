@@ -123,3 +123,7 @@ Here is what our architecture looks like right now.
 We have created a code repository containing a simple web app. We will be using this repository to start our continuous delivery pipeline. It's important to set it up properly so we push code to it.
 
 ![Diagram showing users connecting to a Git repository, with an arrow pointing from users to the Git icon, and a labeled AWS Cloud box, representing setup or workflow from users via git to AWS Cloud.](http://docs.aws.amazon.com/hands-on/latest/create-continuous-delivery-pipeline/images/cloud-git-repository-users-diagram-acffbad.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

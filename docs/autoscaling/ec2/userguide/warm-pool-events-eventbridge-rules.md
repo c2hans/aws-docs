@@ -70,3 +70,7 @@ For more information about creating and working with warm pools, see [Decrease l
 1. (Optional) For **Tags**, you can optionally assign one or more tags to your rule, and then choose **Next**.
 
 1. For **Review and create**, review the details of the rule and modify them as necessary. Then, choose **Create rule**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,3 +59,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-or
 <a name="q--how-can-i-analyze-my-workload-to-determine-the-iops--throughput--cpu--and-memory-that-is-actively-being-used-by-the-source-oracle-database-.270b9414-9868-5bb7-bc56-31c5cc6cdaa0"></a>
 
 **A:** Generate an [Automatic Workload Repository (AWR)](https://www.oracle.com/technetwork/database/manageability/diag-pack-ow09-133950.pdf) report from your source database or run a [Database Current State Investigation (CSI)](https://dbcsi.d29q8g3b9hzyur.amplifyapp.com/) script to get this information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

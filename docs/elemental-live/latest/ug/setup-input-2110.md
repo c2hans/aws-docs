@@ -40,3 +40,7 @@ To set up a SMPTE 2110 input
    Keep in mind that you can support SMPTE 2022-7 for some streams and not for others.
 
 1. If the source includes an ancillary data stream, choose **Add Ancillary SDP \+**. Complete the **Ancillary SDP Location**, **Media Index**, and **Interface** fields.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

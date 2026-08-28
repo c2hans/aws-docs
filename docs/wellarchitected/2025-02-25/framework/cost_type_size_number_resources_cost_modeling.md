@@ -43,3 +43,7 @@ Identify organization requirements (such as business needs and existing commitme
 + [ Perform a Data-Driven Cost modeling ](https://aws.amazon.com/blogs/mt/how-to-use-aws-well-architected-with-aws-trusted-advisor-to-achieve-data-driven-cost-optimization/)
 + [ Estimate the cost of planned AWS resource configurations ](https://aws.amazon.com/premiumsupport/knowledge-center/estimating-aws-resource-costs/)
 + [ Choose the right AWS tools ](https://www.learnaws.org/2019/09/27/choose-right-aws-tools/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

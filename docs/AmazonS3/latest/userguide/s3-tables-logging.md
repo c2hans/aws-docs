@@ -87,3 +87,7 @@ For additional information about CloudTrail events for S3 Tables, see the follow
 + [CloudTrail management events for S3 Tables maintenance](#s3-tables-maintenance-events)
 + [CloudTrail data events for S3 Tables](#s3-tables-data-events)
 + [AWS CloudTrail data event log file examples for S3 Tables](s3-tables-log-files.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

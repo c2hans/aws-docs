@@ -22,3 +22,7 @@ By integrating these complementary AWS services with your VPC, you can build pow
 + [Filter network traffic using AWS Network Firewall](network-firewall.md)
 + [Filter DNS traffic using Route 53 Resolver DNS Firewall](resolver-dns-firewall.md)
 + [Troubleshoot reachability issues using Reachability Analyzer](reachability-analyzer.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

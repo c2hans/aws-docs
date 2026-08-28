@@ -120,3 +120,7 @@ Follow these best practices when you adopt single table format:
 + Make sure the bake time before moving to COMPLETE is sufficient, because after that even a code rollback does not switch back to multiple tables. The application functions only in single table mode.
 + After the migration reaches COMPLETE, manually delete the old worker metrics and coordinator state tables. KCL does not delete these tables automatically—it only stops using them.
 + If you have configured `CoordinatorConfig.coordinatorStateTableConfig` or `LeaseManagementConfig.workerUtilizationAwareAssignmentConfig.workerMetricsTableConfig`, you can remove these configurations after migration completes. These configurations are deprecated in KCL 3.5 and later.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

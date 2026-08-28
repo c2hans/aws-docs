@@ -127,3 +127,7 @@ If you see the following in the UART output from the demo application, you need 
 To download the latest Wi-Fi firmware, see [STM32L4 Discovery kit IoT node, low-power wireless, Bluetooth Low Energy, NFC, SubGHz, Wi-Fi](https://www.st.com/resource/en/utilities/inventek_fw_updater.zip). In **Binary Resources**, choose the download link for **Inventek ISM 43362 Wi-Fi module firmware update**.
 
 For general troubleshooting information about Getting Started with FreeRTOS, see [Troubleshooting getting started](gsg-troubleshooting.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

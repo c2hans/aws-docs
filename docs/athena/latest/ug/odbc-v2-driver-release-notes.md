@@ -282,3 +282,7 @@ Amazon Athena releases the ODBC v2.0.1.0 driver.
 Athena has released a new ODBC driver that improves the experience of connecting to, querying, and visualizing data from compatible SQL development and business intelligence applications. The latest version of the Athena ODBC driver supports the features of the existing driver and is straightforward to upgrade. The new version includes support for authenticating users through [AWS IAM Identity Center](https://aws.amazon.com/iam/identity-center/). It also offers the option to read query results from Amazon S3, which can make query results available to you sooner.
 
 For more information, see [Amazon Athena ODBC 2.x](odbc-v2-driver.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

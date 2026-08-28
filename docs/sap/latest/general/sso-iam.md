@@ -37,3 +37,7 @@ The following image shows the integration between Identity Authentication from S
 1. User can access RISE with SAP systems.
 
 For more information on how to do this, you can refer to [AWS IAM Identity Center (successor to AWS SSO) Integration Guide for SAP Cloud Platform Cloud Foundry](https://static.global.sso.amazonaws.com/app-c1553f5036ecbcd6/instructions/index.htm).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

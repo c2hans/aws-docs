@@ -201,3 +201,7 @@ From Aurora PostgreSQL 18.3 onwards, two parameters control which cipher suites 
 <a name="AuroraPostgreSQL.Security.SSL.UpgradingCiphers"></a>
 
 Starting with Aurora PostgreSQL 18.3, TLS 1.3 ciphers are no longer controlled by the `ssl_ciphers` parameter. If you upgrade from an earlier version and your custom DB cluster parameter group set `ssl_ciphers` with the intent of restricting TLS 1.3 ciphers, those entries no longer take effect against TLS 1.3 connections after the upgrade. To control the TLS 1.3 cipher list, set `ssl_tls13_ciphers` in your custom DB cluster parameter group.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

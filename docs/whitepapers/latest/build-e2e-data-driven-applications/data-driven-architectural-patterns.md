@@ -156,3 +156,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-e2e-data-driven
 1.  **Perform fraud prediction** — The solution also deploys an [AWS Lambda](https://aws.amazon.com/lambda) function that processes transactions from the example dataset. It invokes the two SageMaker AI endpoints that assign anomaly scores and classification scores to incoming data points. An [Amazon API Gateway](https://aws.amazon.com/api-gateway) REST API initiates predictions using signed HTTP requests. An [Amazon Data Firehose](https://aws.amazon.com/kinesis/data-firehose) delivery stream loads the processed transactions into another Amazon S3 bucket for storage. The solution also provides an example of how to invoke the prediction REST API as part of the Amazon SageMaker AI notebook.
 
 1.  **Analyze fraud transactions —** Once the transactions have been loaded into S3, you can use analytics tools and services for visualization, reporting, ad-hoc queries, and more detailed analysis.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

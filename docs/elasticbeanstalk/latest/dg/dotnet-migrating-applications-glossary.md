@@ -171,3 +171,7 @@ During the migration process, pywin32 is used to access IIS configuration, Windo
 ****pythonnet****
 A package that enables Python code to interact with .NET Framework and .NET Core applications. This integration allows the EB CLI to work with .NET components during the migration process.
 The migration process may use pythonnet to interact with .NET assemblies and components when analyzing and packaging your applications for deployment to Elastic Beanstalk.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

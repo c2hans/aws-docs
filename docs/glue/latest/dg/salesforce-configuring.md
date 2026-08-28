@@ -33,3 +33,7 @@ When saving the connection, you will be redirected to Salesforce to login and ap
 1.  In the list of connected apps, find AWS Glue and choose **Install**. If needed, choose **Unblock**.
 
 1.  Navigate to **Settings > Manage Connected Apps then choose AWS Glue**. Under OAuth Policies, choose **Admin approved users are pre-authorized** and select the **System Admin** profile. This action restricts access to AWS Glue only to users with the System Admin profile.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

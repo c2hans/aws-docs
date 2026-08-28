@@ -21,3 +21,7 @@ To use this script:
 1. Edit `font_install_host_config.sh` to set `S3_FONTS_URI` and `JOB_USER`.
 
 1. Add an IAM policy to your fleet IAM role that grants `s3:GetObject` and `s3:ListBucket` permissions for the bucket and prefix.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

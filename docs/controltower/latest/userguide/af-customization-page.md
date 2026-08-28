@@ -239,3 +239,7 @@ This change effects existing accounts that you created or enrolled with AWS Cont
 
 **Note**
 AWS Control Tower does not support *Terraform Open Source* as a product type when creating new accounts. To learn more about these changes, review [Updating existing Terraform Open Source products and provisioned products to the *External* product type](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/update_terraform_open_source_to_external.html) in the *AWS Service Catalog administrator guide*. AWS Service Catalog will support customers through this product type transition, as needed. Contact your account representative to request assistance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

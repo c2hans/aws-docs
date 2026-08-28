@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 +  [Trunk-based Development: Short-Lived Feature Branches](https://trunkbaseddevelopment.com/short-lived-feature-branches)
 +  [GitHub flow](https://guides.github.com/introduction/flow/)
 +  [A successful Git branching model: Note of reflection](https://nvie.com/posts/a-successful-git-branching-model/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

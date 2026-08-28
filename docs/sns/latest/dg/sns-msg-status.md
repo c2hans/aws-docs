@@ -114,3 +114,7 @@ The following is a list of links for the push notification service response code
 | Firebase Cloud Messaging (FCM) | See [Downstream Message Error Response Codes](https://firebase.google.com/docs/cloud-messaging/http-server-ref#error-codes) in the Firebase Cloud Messaging documentation. |
 | Microsoft Push Notification Service for Windows Phone (MPNS) | See [Push Notification Service Response Codes for Windows Phone 8](https://msdn.microsoft.com/en-us/library/windows/apps/ff941100%28v=vs.105%29.aspx#BKMK_PushNotificationServiceResponseCodes) in the Windows 8 Development documentation. |
 | Windows Push Notification Services (WNS) | See "Response codes" in [Push Notification Service Request and Response Headers (Windows Runtime Apps)](https://msdn.microsoft.com/en-us/library/windows/apps/hh465435.aspx) in the Windows 8 Development documentation. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

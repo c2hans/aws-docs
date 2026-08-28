@@ -55,3 +55,7 @@ In a ZTA, access to each resource should be explicitly authorized by a gating po
 <a name="components-summary"></a>
 
 Understanding these key components is essential for organizations planning to adopt a ZTA. By implementing these components and integrating them into a cohesive security model, your organization can establish a strong security posture based on the principles of Zero Trust. The following sections explore organizational readiness, phased adoption approaches, and best practices to help you successfully implement ZTA within your organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

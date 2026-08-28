@@ -36,3 +36,7 @@ These operations are for the console only. They're not available for use in the 
 | `https://api.us-east-1.prod.support-console.support.aws.dev` | US East (N. Virginia) |
 | `https://api.us-west-2.prod.support-console.support.aws.dev` | US West (Oregon) |
 | `https://api.eu-west-1.prod.support-console.support.aws.dev` | Europe (Ireland) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

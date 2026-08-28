@@ -1411,3 +1411,7 @@ The key points in this example are:
 + `scan_actions` is specified inside each rule. The scanner name `GUARDDUTY` is used as the key. The daily rule uses `INCREMENTAL_SCAN` and the monthly rule uses `FULL_SCAN`.
 + `scan_settings` is specified at the plan level (not inside a rule). It configures the scanner role and resource types to scan.
 + The `scanner_role_arn` must reference an IAM role with the `AWSBackupGuardDutyRolePolicyForScans` managed policy attached and a trust policy that allows the `malware-protection.guardduty.amazonaws.com` service principal to assume the role.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

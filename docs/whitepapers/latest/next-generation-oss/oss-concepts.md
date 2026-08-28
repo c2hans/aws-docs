@@ -98,3 +98,7 @@ The proposed OSS architecture on AWS helps you identify operational mistakes, id
  By having an OSS solution that enables securing the network while providing DSPs with the security governance to protect a given network, DSPs can benefit from enhanced security compliance.
 
  The proposed next-generation OSS architecture on AWS can help you align with the BSS solutions of the future to eliminate traditional business and operational silos. It’s critical to view network data that enables business logics as easily-made-accessible by the OSS stack, while also providing the framework to enrich data based on business logic. This convergence of BSS and OSS stacks is a key enabler to CSPs becoming DSPs. This combination of BSS and OSS capabilities in a unified layer supporting the business and operations of DSPs is also called Digital Support System (DSS).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

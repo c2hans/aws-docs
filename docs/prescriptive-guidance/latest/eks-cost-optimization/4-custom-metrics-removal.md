@@ -82,3 +82,7 @@ Audit your metric count with `aws cloudwatch list-metrics`, drop unused metrics 
 + Use the CloudWatch Metrics Calculator to estimate savings from custom metric removal
 + Retain custom metrics only when they provide unique business-level data not available from infrastructure metrics
 + Review metric publishing frequency, reduce from 1-second to 60-second resolution where real-time precision isn't required (saves on high-resolution metric charges)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

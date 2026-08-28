@@ -29,3 +29,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
 1.  **Start with using zero-trust security principles.**
 
     Zero-trust principles are intended for an organization’s infrastructure, which includes operational technology (OT), IT systems, IoT, and Industrial Internet of Things (IIoT). Traditional security models rely heavily on network segmentation and give high levels of trust to devices based on their network presence. In comparison, zero trust requires your users, devices, and systems to prove their trustworthiness, and it enforces fine-grained, identity-based rules that govern access to applications, data, and other assets. AWS provides guidance on [how to implement zero trust IoT solutions with AWS IoT](https://aws.amazon.com/blogs/iot/how-to-implement-zero-trust-iot-solutions-with-aws-iot-3/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

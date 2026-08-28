@@ -61,3 +61,7 @@ The following tables list the troubleshooting resources that you'll find useful 
 | --- |
 | [Taking too long to register an EC2 instance](ts-elb-register-instance.md#ts-elb-register-too-long) |
 | [Unable to register an instance launched from a paid AMI](ts-elb-register-instance.md#ts-elb-paid-ami-instance) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

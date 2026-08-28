@@ -51,3 +51,7 @@ Perform regular simulations for attack scenarios, such as game days, tabletop ex
 <a name="data-classifications"></a>
 
 Every FI has a data classification standard. Typically, this includes a data label such as *Personally Identifiable Information (PII)*, *Classified*, *Private*, or *Confidential*. These labels might include metadata, depending on the data and workload. The scope of discovery, audit, data access patterns, and controls will be mapped to your business's unique requirements. In a multicloud environment, establish mechanisms to ensure that each environment is vetted to process data based on its classification before data transmission. Prevent data processing in unauthorized or unintended environments that inadvertently expands the scope of compliance. For example, you might have a payment processing application on AWS that is PCI-compliant, but it might be associated with workloads in other CSPs that are not PCI-compliant.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

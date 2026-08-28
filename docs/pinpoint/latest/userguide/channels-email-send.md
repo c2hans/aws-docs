@@ -18,3 +18,7 @@ When you send a campaign-based email, you first create a [segment](segments-buil
 When you send a journey-based email, you also start by creating a [segment](segments-building.md). A segment is a group of participants in the journey. Next, you create an email template for each message that you want activities in the journey to send. Then, you create the journey. To learn about creating journeys, see [Amazon Pinpoint journeys](journeys.md).
 
 To send a transactional email, you can use the `SendMessage` operation of the Amazon Pinpoint API. To learn more about using the Amazon Pinpoint API, see the [Amazon Pinpoint API Reference](https://docs.aws.amazon.com/pinpoint/latest/apireference/). For code examples that show how to send email using various AWS SDKs, see [Send transactional email messages](https://docs.aws.amazon.com/pinpoint/latest/developerguide/send-messages-email.html) in the *Amazon Pinpoint Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

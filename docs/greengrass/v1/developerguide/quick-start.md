@@ -381,3 +381,7 @@ On platforms that require a reboot, your input values from the previous session,
 Make sure that the AWS Region selected in the console is the same one that you used to configure your Greengrass environment. By default, the Region is US West (Oregon).
 
    If you didn't include the Hello World Lambda function, you can [create your own Lambda function](create-lambda.md) or try other Greengrass features. For example, you can add the [Docker application deployment](docker-app-connector.md) connector to your group and use it to deploy Docker containers to your core device.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

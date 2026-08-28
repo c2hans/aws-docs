@@ -14,3 +14,7 @@ For more information on creating a private model hub, see [Admin guide for priva
 For more information on sharing private model hubs across accounts, see [Cross-account sharing for private model hubs with AWS Resource Access Manager](jumpstart-curated-hubs-ram.md).
 
 For more information on accessing a private model hub, see [User guide](jumpstart-curated-hubs-user-guide.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

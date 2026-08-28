@@ -66,3 +66,7 @@ The following table describes the qualification properties.
 | retrydelayinseconds | Minimum amount of time, in seconds, required before a Worker can re-request the Qualification |
 | testdurationinseconds | Amount of time, in seconds, allowed for the Worker to complete the Qualification test (if a test exists) |
 | autogranted | Specifies whether the Qualification should be autogranted upon request. This parameter is only valid if a Qualification does not have a test associated with it. Valid Values: true \| false |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

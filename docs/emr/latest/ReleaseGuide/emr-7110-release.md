@@ -79,7 +79,9 @@ The following release notes include information for Amazon EMR release 7.11.0.
   + **Long-running sessions with corporate identities** - Amazon SageMaker Unified Studio now supports long-running sessions with corporate identities through IAM Identity Center's Trusted Identity Propagation (TIP). Users can launch interactive notebooks and data processing sessions on Amazon EMR and AWS Glue that persist using corporate credentials, even when logged off or sessions expire. Sessions run for up to 90 days (default 7 days) while maintaining identity permissions and consistent security controls.
   + **EMR-managed certificates for in-transit encryption** - Amazon EMR can now create and manage private certificates for in-transit encryption of open-source applications. When you select this option, Amazon EMR uploads the PEM-encoded CA certificate to AWS Secrets Manager in your account for use in your trust stores. For more information, see [Providing certificates for encrypting data in transit with Amazon EMR encryption](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-encryption-enable.html#emr-encryption-certificates).
 + **Known issues and limitations**
-  + **Missing step and container logs** - From Amazon EMR 7.9 to Amazon EMR 7.12, there is a bug where step logs and/or container logs may not get uploaded to S3 if the step or application is running for longer than 3 hours. Please upgrade to Amazon EMR 7.13 to resolve this issue.
+  + **Missing logs**
+    + From Amazon EMR 7.9 to Amazon EMR 7.12, there is a bug where step logs and/or container logs may not get uploaded to S3 if the step or application is running for longer than 3 hours. Please upgrade to Amazon EMR 7.13 to resolve this issue.
+    + Configuring `yarn.nodemanager.log-dirs` with a value of length longer than 512 characters will cause S3 log upload to fail.
 + The following table lists the Amazon Linux release labels, kernel versions, available dates, and supported AWS Regions.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-7110-release.html)
 
@@ -351,3 +353,7 @@ Reconfiguration actions occur when you specify a configuration for instance grou
 | Date | Event | Description |
 | --- | --- | --- |
 | 2025-11-12 | Docs publication | Amazon EMR 7.11.0 release notes first published |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

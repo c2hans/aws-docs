@@ -115,3 +115,7 @@ After you choose this option, you must manage your Lambda function on your own. 
 This action will delete your Athena data source and create a new Glue Data Catalog in its place. After this process is completed, you may need to update queries that access the data source to refer to the newly created Glue data catalog instead.
 
 1. Choose **Create catalog and go to Lake Formation**. This opens the Lake Formation console where you can manage the catalog and grant permissions to users on catalogs, databases and tables.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

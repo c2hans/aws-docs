@@ -121,3 +121,7 @@ The managed policies `AmazonKeyspacesReadOnlyAccess_v2` and `AmazonKeyspacesFull
    ```
 **Note**
 You have to use a `cqlsh`connection to Amazon Keyspaces to confirm that your VPC endpoint has been configured correctly. If you use your local environment or the Amazon Keyspaces CQL editor in the AWS Management Console, the connection automatically goes through the public endpoint instead of your VPC endpoint. If you see nine IP addresses, these are the entries Amazon Keyspaces automatically writes to the `system.peers` table for public endpoint connections.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

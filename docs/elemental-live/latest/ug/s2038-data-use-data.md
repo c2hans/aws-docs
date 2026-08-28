@@ -24,3 +24,7 @@ The information in this section assumes that you are familiar with the general s
 + For SCTE 104 messages, Elemental Live automatically converts the messages to SCTE 35 messages.
   + If you don't want to include the SCTE 35 messages in the output – There is nothing you need to do because omitting the messages is the default behavior.
   + If you want to work with the messages – See [SCTE-35 and SCTE-104 message processing in Elemental Live](scte-message-processing.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

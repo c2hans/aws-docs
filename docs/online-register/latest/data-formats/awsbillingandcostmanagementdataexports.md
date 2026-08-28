@@ -16,3 +16,7 @@ AWS Billing And Cost Management Data Exports provides the following APIs for dat
 | <a name="bcm-data-exports-ListExports"></a>[ListExports](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_DataExports_ListExports.html) | List all exports | List |
 | <a name="bcm-data-exports-ListTables"></a>[ListTables](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_DataExports_ListTables.html) | List all available tables | List |
 | <a name="bcm-data-exports-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/aws-cost-management/latest/APIReference/API_DataExports_ListTagsForResource.html) | List tags for a resource | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

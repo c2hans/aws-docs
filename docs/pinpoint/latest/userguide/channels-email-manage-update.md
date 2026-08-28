@@ -34,3 +34,7 @@ You can use the Amazon Pinpoint console to update the email settings for a proje
 1. If you need to create or update your **Orchestration sending role arn**, see [Creating an email orchestration sending role in Amazon Pinpoint](channels-email-orchestration-sending-role.md).
 
 1. When you finish, choose **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

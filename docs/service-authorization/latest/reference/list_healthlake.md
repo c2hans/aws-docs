@@ -122,6 +122,12 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **Possible value(s):**
   - **Access level:** Write
 
+- **   RestoreFHIRDatastore  **
+  - **IAM action:**  [healthlake:RestoreFHIRDatastore](#list_healthlake-action-RestoreFHIRDatastore)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Write
+
 - **   StartDataTransformationJob  **
   - **IAM action:**  [healthlake:StartDataTransformationJob](#list_healthlake-action-StartDataTransformationJob)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
   - **IAM action:**  [iam:PassRole](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_passrole.html)  / **Condition key:** iam:PassedToService / **Possible value(s):** healthlake.amazonaws.com / **Access level:** Write
@@ -415,6 +421,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_healthlake-aws_ResourceTag___TagKey_)
   - **Access level:** Read
 
+- **   [RestoreFHIRDatastore](https://docs.aws.amazon.com/healthlake/latest/APIReference/API_RestoreFHIRDatastore.html)  **
+  - **Description:** Grants permission to restore a backup-enabled datastore to a point in time, creating a new datastore from the backup
+  - **Resource types (\*required):** [datastore\*](#list_healthlake-resource-datastore)
+  - **Condition keys:** [aws:RequestTag/${TagKey}](#list_healthlake-aws_RequestTag___TagKey_)<br />[aws:ResourceTag/${TagKey}](#list_healthlake-aws_ResourceTag___TagKey_)<br />[aws:TagKeys](#list_healthlake-aws_TagKeys)
+  - **Access level:** Write
+
 - **   [RetrieveAttributionStatus](https://docs.aws.amazon.com/healthlake/latest/devguide/reference-fhir-operations-attribution-status.html)  **
   - **Description:** Grants permission to retrieve member attribution status
   - **Resource types (\*required):** [datastore\*](#list_healthlake-resource-datastore)
@@ -579,3 +591,7 @@ AWS HealthLake defines the following condition keys that can be used in the `Con
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-requesttag)  | Filters access by the presence of tag key-value pairs in the request | String |
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-resourcetag)  | Filters access by the presence of tag key-value pairs attached to the resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys)  | Filters access by the presence of tag keys in the request | ArrayOfString |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

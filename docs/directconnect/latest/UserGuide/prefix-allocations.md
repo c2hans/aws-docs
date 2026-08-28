@@ -185,3 +185,7 @@ The connection's prefix pool might be fully allocated. Check the `prefixPoolUnal
 
 Direct Connect gateway total exceeds 10,000
 The sum of all combined IPv4 and IPv6 allocations across virtual interfaces attached to a single Direct Connect gateway cannot exceed 10,000. Reduce allocations on other virtual interfaces or use a second gateway.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

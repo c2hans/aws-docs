@@ -15,3 +15,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/landing-zo
 + [Key changes](key-changes-lz-v4.md)
 + [AWS Config Updates](config-updates-v4.md)
 + [Feature comparison with and without AWS Config integration](config-integration-feature-comparison.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

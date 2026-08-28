@@ -35,3 +35,7 @@ After you have created custom blueprints, you can start creating custom accounts
 Blueprints created with Terraform can deploy to one Region only, not multiple Regions.
 
 You can view the progress of your account provisioning on the **Organization** page. When your account provisioning is complete, the resources specified by your blueprint are already deployed within it. To view the details of the account and blueprint, go to the **Account details** page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

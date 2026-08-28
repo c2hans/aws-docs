@@ -44,3 +44,7 @@ To complete this tutorial, you need the following:
   + A device with a Linux operating system and a network connection to the same network as your host computer.
 
     We recommend that you use a [Raspberry Pi](https://www.raspberrypi.org/) with Raspberry Pi OS. Make sure you set up [SSH](https://www.raspberrypi.com/documentation/computers/remote-access.html) on your Raspberry Pi to remotely connect to it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

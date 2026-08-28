@@ -23,3 +23,7 @@ There is no additional charge to run cross-account analyses.
 + [Manage delegated administrator accounts in Reachability Analyzer](manage-delegated-administrators.md)
 + [Disable trusted access in Reachability Analyzer](disable-trusted-access.md)
 + [Troubleshoot cross-account analyses in Reachability Analyzer](multi-account-troubleshooting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Virtual Private Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

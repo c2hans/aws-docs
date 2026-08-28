@@ -57,3 +57,7 @@ If your account strategy doesn't separate business units into different AWS acco
 You must make sure that your Amazon S3 bucket names use features that are only available at the bucket level. For example, cost tags, bucket encryption, and versioning are features that are only available for an entire Amazon S3 bucket. This means that they apply to all objects and paths in the bucket.
 
 Object versioning is also an important feature to consider. You should turn on versioning for your raw layer's Amazon S3 buckets. This makes sure that you can access previous versions if there are changes to the data. However, versioning might not be necessary for all the layers in your data lake, and retaining multiple versions can cause unnecessary costs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

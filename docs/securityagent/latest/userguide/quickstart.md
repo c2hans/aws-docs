@@ -2,10 +2,10 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/quickstart.html
 ---
 
-# Quickstart: Run a Continuum penetration test
+# Quickstart: Run a penetration test
 <a name="quickstart"></a>
 
-This quickstart walks you through running your first penetration test (pentest) with AWS Security Agent. A penetration test exercises your deployed application against a verified target domain and returns security findings, each with a severity rating and supporting evidence. It covers a publicly accessible application; to test one hosted in a private VPC, see [Enable Continuum penetration test](enable-penetration-test.md).
+This quickstart walks you through running your first penetration test (pentest) with AWS Security Agent. A penetration test exercises your deployed application against a verified target domain and returns security findings, each with a severity rating and supporting evidence. It covers a publicly accessible application; to test one hosted in a private VPC, see [Enable penetration test](enable-penetration-test.md).
 
 **Note**
 You need access to the AWS Management Console to set up AWS Security Agent and define the test scope, and access to the web application to create and run penetration tests.
@@ -39,7 +39,7 @@ If you haven’t already set up AWS Security Agent, complete the initial setup:
 **Note**
 When you choose Set up, AWS Security Agent creates your Agent Space and establishes a web application where users can run penetration tests, code reviews, threat models, and design reviews.
 
-## Step 2: Enable Continuum penetration testing and verify your domain
+## Step 2: Enable penetration testing and verify your domain
 <a name="step-2-enable-penetration-testing-and-verify-your-domain"></a>
 
 **Note**
@@ -51,7 +51,7 @@ In the AWS console you define the scope of what can be tested. Users then run sp
 
 1.  **Configure domain** - Enter the target domain you want to test and select a verification method, **DNS TXT Record** or **HTTP Route**. The domain must be live and host the application you want to test. Choose **Next**.
 
-1.  **Verify domains** - Verify ownership of each domain in the **Target domains** table. AWS Security Agent runs tests only against verified domains. For detailed steps and the exact values to copy, see [Enable an application domain for Continuum penetration testing](enable-test-domain.md).
+1.  **Verify domains** - Verify ownership of each domain in the **Target domains** table. AWS Security Agent runs tests only against verified domains. For detailed steps and the exact values to copy, see [Enable an application domain for penetration testing](enable-test-domain.md).
    +  **Route 53 domains in the same AWS account** - Select the domain and choose **One-click verification**. AWS Security Agent creates the DNS record and completes verification for you.
    +  **DNS TXT record (other DNS providers)** - In the **Target domains** table, copy the **Record name** and **Record value**, add them as a TXT record with your DNS provider, then select the domain and choose **Verify**. DNS changes can take time to propagate, so verification might not complete immediately.
    +  **HTTP route** - Create a file at `.well-known/aws/securityagent-domain-verification.json` on your web server, add the verification token in the format `{"tokens": ["<token>"]}`, then select the domain and choose **Verify**.
@@ -69,7 +69,7 @@ Connecting a source code provider gives AWS Security Agent context about your ap
 
 For the full integration flow, see [Connect AWS Security Agent to GitHub repositories](connect-github.md) or the connect topic for your provider.
 
-## Step 4: Create and run a Continuum penetration test
+## Step 4: Create and run a penetration test
 <a name="step-4-create-and-run-a-penetration-test"></a>
 
 **Note**
@@ -91,7 +91,7 @@ You create and run penetration tests in the AWS Security Agent web application. 
 
    1. Under **Permissions**, select a **Service role** and, optionally, a **CloudWatch log group**. Choose **Next**.
 
-1. (Optional) **VPC Resources** - Configure a VPC if your target is on a private network that isn’t publicly reachable. See [Enable Continuum penetration test](enable-penetration-test.md).
+1. (Optional) **VPC Resources** - Configure a VPC if your target is on a private network that isn’t publicly reachable. See [Enable penetration test](enable-penetration-test.md).
 
 1. (Optional) **Authentication Resources** - Provide credentials so the agent can reach authenticated, non-public paths. We recommend adding these to broaden coverage and surface vulnerabilities behind a login.
 
@@ -99,7 +99,7 @@ You create and run penetration tests in the AWS Security Agent web application. 
 
 1. Choose **Create and execute** to start the test now, or **Create pentest** to save it and run it later.
 
-## Step 5: Review Continuum penetration test findings
+## Step 5: Review penetration test findings
 <a name="step-5-review-penetration-test-findings"></a>
 
 1. A penetration test can take several hours to complete. Most complete within 16 hours, depending on the size and complexity of your application.
@@ -110,4 +110,8 @@ You create and run penetration tests in the AWS Security Agent web application. 
 
 1. On the **Findings** tab, select a finding to view its description, severity, risk type, and supporting evidence.
 
-For more details, see [Create a Continuum penetration test](perform-penetration-test.md) and [Review findings from a Continuum penetration test](review-penetration-findings.md).
+For more details, see [Create a penetration test](perform-penetration-test.md) and [Review findings from a penetration test](review-penetration-findings.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

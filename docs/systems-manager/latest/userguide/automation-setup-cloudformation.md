@@ -64,3 +64,7 @@ You don't need to copy role information using this procedure if you run the `AWS
 1. Paste the ARN into a text file to use later.
 
 You have finished configuring the service role for Automation. You can now use the Automation service role ARN in your runbooks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,3 +27,7 @@ Complete the following procedure to enable IPv6 for instances, CDN distributions
      + **Nginx** – For more information, see [Configure IPv6 for Nginx instances](amazon-lightsail-configure-ipv6-on-nginx.md).
      + **Plesk** – For more information, see [Configure IPv6 for Plesk instances](amazon-lightsail-configure-ipv6-on-plesk.md).
    + If you have a registered domain name directing traffic to you instance, container service, CDN distribution, or load balancer, then make sure to create an IPv6 address record (AAAA) in the DNS of your domain to route IPv6 traffic to your resource.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

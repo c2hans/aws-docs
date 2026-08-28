@@ -15,3 +15,7 @@ When you create a video frame labeling job, you need to let Ground Truth know wh
 **Topics**
 + [Set up Automated Video Frame Input Data](sms-video-automated-data-setup.md)
 + [Set up Video Frame Input Data Manually](sms-video-manual-data-setup.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

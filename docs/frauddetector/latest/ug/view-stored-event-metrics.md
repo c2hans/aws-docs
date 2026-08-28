@@ -24,3 +24,7 @@ For each event type, you can view metrics such as, number of stored events, tota
 1. Optionally click **Refresh event metrics** to manually update your metrics.
 **Note**
 If you have just imported your data, we recommend waiting 5 - 10 minutes after you have finished importing data to refresh and view metrics.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

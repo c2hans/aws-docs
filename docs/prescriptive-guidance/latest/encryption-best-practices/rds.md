@@ -26,3 +26,7 @@ Consider the following encryption best practices for this service:
 + If a read replica and its encrypted DB instance are in the same AWS Region, you must use the same KMS key to encrypt both.
 + In AWS Config, implement the [rds-storage-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/rds-storage-encrypted.html) AWS managed rule to validate and enforce encryption for RDS DB instances and the [rds-snapshots-encrypted](https://docs.aws.amazon.com/config/latest/developerguide/rds-snapshot-encrypted.html) rule to validate and enforce encryption for RDS database snapshots.
 + Use AWS Security Hub CSPM to evaluate whether your Amazon RDS resources follow security best practices. For more information, see [Security Hub CSPM controls for Amazon RDS](https://docs.aws.amazon.com/securityhub/latest/userguide/rds-controls.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

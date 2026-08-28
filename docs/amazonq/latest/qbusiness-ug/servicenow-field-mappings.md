@@ -289,3 +289,7 @@ Amazon Q supports crawling [ServiceNow Online incidents](https://docs.servicenow
 | watch\_list | sn\_inc\_watch\_list | Custom | String |
 | work\_end | sn\_inc\_work\_end | Custom | String |
 | work\_start | sn\_inc\_work\_start | Custom | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

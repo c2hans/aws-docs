@@ -19,7 +19,7 @@ Before you configure the execution block, make sure that the plan's execution ro
 
 1. **Step description (optional): **Enter a description of the step.
 
-1. **Lambda function ARN to be invoked when activating or deactivating *Region***: Specify the ARN of the Lambda function to run for this step.
+1. **ARN of the Lambda function to be invoked in *primary* and *secondary* Regions**: Specify the ARN of the Lambda function to run for this step.
 
 1. **Region to run Lambda function: **In the drop-down menu, choose the Region that you want to run the Lambda functions in.
 
@@ -36,17 +36,6 @@ Then, choose **Save step.**
 
 This block supports both graceful and ungraceful execution modes. In ungraceful execution mode, Region switch skips the Lambda execution block step.
 
-## What is evaluated as part of plan evaluation
-<a name="custom-action-lambda-block-eval"></a>
+## See also
 
-When Region switch evaluates your plan, Region switch performs several checks on your Lambda execution block configuration and permissions. Region switch verifies that the following is correct:
-+ The Lambda functions specified in the configuration exist.
-+ The concurrency settings of Lambda functions are not throttled, including verifying the following:
-  + Concurrency is not set to 0.
-  + At least one concurrent execution is available, or that unreserved concurrency exists.
-
-Region switch performs a dry run of the Lambda function to validate the specified parameters and permissions, without executing the actual function logic. The standard Lambda costs are incurred when you perform a dry run.
-
-Region switch also validates that the plan's IAM role has the required permissions for Lambda execution. For more information about the required permissions for Region switch execution blocks, see [Identity-based policy examples for Region switch in ARC](security_iam_id-based-policy-examples-region-switch.md).
-
-The correct IAM permissions are essential for the proper functioning of the Lambda execution block. If any of these validations fail, Region switch returns warnings that there are issues, and provides specific error messages to help you resolve the permissions or configuration issues. This ensures that your plan has the necessary access to manage and interact with the Lambda during when this step runs during a plan execution.
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

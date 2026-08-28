@@ -76,3 +76,7 @@ The response is XML content consisting of one **message** element with the follo
 | node\_id | Integer | The ID which identifies the same piece of data as the origin filter in the request; see [GET Alerts: Get a List of Alerts](monitoring-query-alerts-messages-get-a-list-of-alerts.md). |
 | remote\_id | Integer | The ID of the entity (channel or MPTS) as assigned by the worker node that is running this entity. The ID assigned by Conductor Live may be different from the ID assigned by the worker node.  |
 | updated\_at | Time | The last time this alert was updated. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

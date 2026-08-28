@@ -86,3 +86,7 @@ This is section shows how you can perform database maintenance on a partitioned 
 
 **Note**
 The recommended way to perform a long-running database maintenance is to implement a database maintenance script and execute it as cluster initialization script. An initialization script can run for multiple hours without being interrupted which is required for long-running database maintenance tasks. When database maintenance script is running, monitor the cluster logs for progress and any errors. After the database maintenance script completes, connect to the cluster to verify the updated kdb database and commit changes to the underlying kdb database by using the commit\_kx\_database q API. You can also automate verification and commit steps in your database maintenance script itself.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

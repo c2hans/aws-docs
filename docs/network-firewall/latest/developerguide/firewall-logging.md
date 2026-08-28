@@ -26,3 +26,7 @@ You can use the same or different logging destination for each log type. You ena
 + [AWS Network Firewall logging destinations](firewall-logging-destinations.md)
 + [Logging in AWS Network Firewall with server-side encryption and customer-provided keys](firewall-logging-encrypt-kms.md)
 + [Updating a AWS Network Firewall logging configuration](firewall-update-logging-configuration.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

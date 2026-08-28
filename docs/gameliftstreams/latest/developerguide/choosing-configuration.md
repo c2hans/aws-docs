@@ -104,3 +104,7 @@ The compatibility of your Windows application in a Proton runtime environment de
  An application's compatibility with Proton depends on the application's specific requirements. Therefore, we recommend that you test your application on different Proton versions before bringing it to Amazon GameLift Streams. This helps you identify the Proton setup that provides the best performance and compatibility for your needs. By testing outside of Amazon GameLift Streams, you can validate the application's performance and functionality, and debug issues that are specific to the runtime. For information, see [Testing and troubleshooting compatibility with Proton for Amazon GameLift Streams](troubleshoot-compatibility-wp.md).
 
  When you've selected a specific Proton configuration, you're ready to set up streaming in Amazon GameLift Streams. For more information, proceed to [Starting your first stream in Amazon GameLift Streams](streaming-process.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

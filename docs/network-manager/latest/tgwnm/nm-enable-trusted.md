@@ -24,3 +24,7 @@ Enabling trust is a one-time task that deploys the required service-linked roles
    Depending on your organization size, it might take a few minutes or more to enable trusted access. During this time the **State** shown in the **Trusted access** section displays **Enabling in progress**. When access is enabled, the **State** changes to **Enabled**. Additionally, the **IAM role deployments status** section at the bottom of the page displays the status of the IAM roles being deployed to member accounts of the organization.
 
 1. After trusted access is enabled, you can register delegated administrators.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

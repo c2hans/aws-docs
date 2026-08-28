@@ -25,3 +25,7 @@ You can be granted permissions based on your admin status, dashboard or folder p
 By default, a data source can be queried by any user. For example, a user with the `Viewer` role can issue any possible query to a data source, not just those queries that exist on dashboards to which they have access.
 
 Using data source permissions, you can change the default permissions for data sources and restrict query permissions to specific **Users** and **Teams**. For more information, see [Data source permissions](data-source-permissions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

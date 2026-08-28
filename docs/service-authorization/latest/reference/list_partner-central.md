@@ -310,8 +310,10 @@ The following table maps API operations to the IAM actions they authorize. Only 
 
 - **   GetBenefitApplication  **
   - **SDK client:** partnercentral-benefits
-  - **IAM action:**  [partnercentral:GetBenefitApplication](#list_partner-central-action-GetBenefitApplication)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
-  - **IAM action:**  [partnercentral:ListTagsForResource](#list_partner-central-action-ListTagsForResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Read
+  - **IAM action:**  [partnercentral:GetBenefitApplication](#list_partner-central-action-GetBenefitApplication)
+  - **Condition key:**
+  - **Possible value(s):**
+  - **Access level:** Read
 
 - **   ListBenefitAllocations  **
   - **SDK client:** partnercentral-benefits
@@ -1740,3 +1742,7 @@ AWS Partner Central defines the following condition keys that can be used in the
 |   [partnercentral:Programs](https://docs.aws.amazon.com/partner-central/latest/getting-started/controlling-access-in-aws-partner-central.html#condition-keys-for-aws-partner-central)  | Filters access by program | ArrayOfString |
 |   [partnercentral:RelatedEntityType](https://docs.aws.amazon.com/partner-central/latest/getting-started/controlling-access-in-aws-partner-central.html#condition-keys-for-aws-partner-central)  | Filters access by entity types for Opportunity association | String |
 |   [partnercentral:VerificationType](https://docs.aws.amazon.com/partner-central/latest/getting-started/controlling-access-in-aws-partner-central.html#condition-keys-for-aws-partner-central)  | Filters access by the type of verification being performed | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ The following table describes the documentation releases for EventBridge Schedul
 | [New topics on daylight savings time and time zones](#doc-history) | Added new sections that describe how EventBridge Scheduler handles daylight savings time, and how you can create schedules in different time zones.+  [Daylight savings time on EventBridge Scheduler](schedule-types.md#daylist-savings-time) <br />+  [Time zones on EventBridge Scheduler](schedule-types.md#time-zones)  | November 17, 2022 |
 | [New topic on metrics](#doc-history) | Added new topic that describes the metrics that EventBridge Scheduler publishes to CloudWatch. You can use these metrics to monitor invocation failures and understand how to resolve issues with your schedules.+  [Monitoring Amazon EventBridge Scheduler with Amazon CloudWatch](monitoring-cloudwatch.md)  | November 15, 2022 |
 | [Initial release](#doc-history) | Initial release of the EventBridge Scheduler User Guide. | November 10, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge Scheduler. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query scheduler` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

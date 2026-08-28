@@ -37,3 +37,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/oracle-database-aws-b
 +  [FlashGrid Cluster for Oracle RAC on AWS product page](https://www.flashgrid.io/products/flashgrid-for-oracle-rac-on-aws/)
 +  [FlashGrid Cluster for Oracle RAC on AWS. Knowledge Base](https://support.flashgrid.io/hc/en-us/categories/1500001538041-FlashGrid-Cluster-on-AWS)
 +  [Whitepaper: Mission-critical databases in the cloud. Oracle RAC on Amazon EC2 enabled by FlashGrid Cluster engineered cloud system](https://www.flashgrid.io/docs/FlashGrid_Oracle_RAC_on_AWS.pdf)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

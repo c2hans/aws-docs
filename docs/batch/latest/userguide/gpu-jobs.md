@@ -93,3 +93,7 @@ Jobs that don't use the GPUs can be run on GPU instances. However, they might co
 + [Create a GPU-based Kubernetes cluster on Amazon EKS](create-gpu-cluster-eks.md)
 + [Create an Amazon EKS GPU job definition](create-eks-gpu-job-definition.md)
 + [Run a GPU job in your Amazon EKS cluster](run-gpu-job-eks-cluster.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

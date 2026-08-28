@@ -28,3 +28,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/priorit
 +  [**Make two-way door decisions:**](https://aws.amazon.com/executive-insights/content/how-amazon-defines-and-operationalizes-a-day-1-culture/) Solutions should be extensible and designed to improve and evolve over time. When possible, avoid static solutions that cannot adapt as your architecture develops.
 +  **Target pattern-based solutions:** Consider solutions that can be codified, reused, and re-shared. Don't reinvent the wheel. Access the [AWS Architecture Center](https://aws.amazon.com/architecture/) for examples.
 +  **Work continually as a team:** Work as a group to create a list of solutions for the HRIs. Prioritize them in an Eisenhower matrix.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

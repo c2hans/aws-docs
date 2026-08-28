@@ -27,3 +27,7 @@ Most AWS users can achieve their resilience objectives for a workload in a singl
 + They need to improve performance and customer experience for the workload by running the workloads in locations that are closest to their end users.
 
 This guide focuses on high availability and continuity of operations requirements, and helps you navigate the considerations for adopting a multi-Region architecture for a workload. It describes fundamental concepts that apply to design, development, and deployment of a multi-Region workload, and provides a prescriptive framework to help you determine whether a multi-Region architecture is the right choice for a particular workload. You need to ensure that a multi-Region architecture is the right choice for your workload because these architectures are challenging, and if the multi-Region architecture isn't built correctly, it's possible for the overall availability of the workload to decrease.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

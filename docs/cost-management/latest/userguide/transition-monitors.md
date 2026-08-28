@@ -42,3 +42,7 @@ If you currently use multiple customer managed monitors to track individual acco
 + AWS managed monitors may initially generate more anomaly detections due to comprehensive coverage
 + Historical anomaly data from customer managed monitors is preserved when you delete them (available via API only; deleted monitors and their anomalies do not appear in the console)
 + Consider keeping some customer managed monitors for specific use cases requiring different thresholds
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

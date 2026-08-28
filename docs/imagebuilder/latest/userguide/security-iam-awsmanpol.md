@@ -224,3 +224,7 @@ This section provides information about updates to AWS managed policies for Imag
 | [AWSServiceRoleForImageBuilder](#sec-iam-manpol-AWSServiceRoleForImageBuilder) – Update to an existing policy | Image Builder added new permissions to fix issues where more than one inventory association causes the image build to get stuck. | August 11, 2021 |
 | [AWSImageBuilderFullAccess](#sec-iam-manpol-AWSImageBuilderFullAccess) – Update to an existing policy | Image Builder made the following changes to the full access role:+  Added permissions to allow `ec2:DescribeInstanceTypeOffereings`. <br />+  Added permissions to call `ec2:DescribeInstanceTypeOffereings` to enable the Image Builder console to accurately reflect the instance types that are available in the account.  | April 13, 2021 |
 | Image Builder started tracking changes | Image Builder started tracking changes for its AWS managed policies. | April 02, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

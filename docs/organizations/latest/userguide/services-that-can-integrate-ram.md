@@ -89,7 +89,7 @@ We strongly recommend that whenever possible, you use the AWS Resource Access Ma
 If you disable trusted access by using the AWS Resource Access Manager console or tools then you don’t need to complete these steps.
 
 **To disable trusted access using the AWS Resource Access Manager console or CLI**
-See [Enable Sharing with AWS Organizations](https://docs.aws.amazon.com/ram/latest/userguide/getting-started-sharing.html#getting-started-sharing-orgs) in the *AWS RAM User Guide*.
+See [Disabling resource sharing with AWS Organizations](https://docs.aws.amazon.com/ram/latest/userguide/security-disable-sharing-with-orgs.html) in the *AWS RAM User Guide*.
 
 You can disable trusted access by using either the AWS Organizations console, by running an Organizations AWS CLI command, or by calling an Organizations API operation in one of the AWS SDKs.
 
@@ -128,3 +128,7 @@ You can use the following AWS CLI commands or API operations to disable trusted 
 + AWS API: [DisableAWSServiceAccess](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DisableAWSServiceAccess.html)
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Oozie-release-hi
 | oozie-site | oozie.email.smtp.ssl.protocols |  | String property that has the supported protocols enumerated separate by space. The default empty value has no effect. e.g. "TLSv1 TLSv1.1 TLSv1.2" |
 | oozie-site | oozie.https.truststore.type |  | Truststore file type e.g. jks |
 | oozie-site | oozie.https.keystore.type |  | Keystore file type e.g. jks |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

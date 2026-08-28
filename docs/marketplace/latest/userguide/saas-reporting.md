@@ -13,3 +13,7 @@ AWS Marketplace produces reports for your software as a service (SaaS) products 
 | Monthly revenue report |  Upfront contract charges appear in the **Annual subscriptions** section. <br /> Metered usage charges appear in the **Billing and revenue data** section. |
 | Sales compensation report |  Upfront contract charges and monthly additional usage charges appear as separate line items.  |
 | Customer subscriber report |  New SaaS contracts appear in the **Annual subscriptions** section. <br /> New SaaS subscriptions appear in the **Hourly/monthly subscriptions** section.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

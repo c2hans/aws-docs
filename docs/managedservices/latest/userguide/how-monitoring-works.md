@@ -69,3 +69,7 @@ With tag-based alert notifications you can:
 The key value {{OwnerTeamEmail}} doesn't have to be in camel case. However, tags are case sensitive and it's best practice to use the recommended format.
 The email address must be specified in full, with the "at sign" (@) to separate the local part from the domain. Examples of invalid email addresses: {{Team.AppATabc.xyz}} or {{john.doe}}. For general guidance on your tagging strategy, see [Tagging AWS resources](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html). Don't add personally identifiable information (PII) in your tags. Use distribution lists or aliases wherever possible.
 Tag-based alert notification is supported for resources from the following Amazon Services: EC2, Elastic Block Store (EBS), Elastic Load Balancing (ELB), Application Load Balancer (ALB), Network Load Balancer, Relational Database Service (RDS), OpenSearch, Elastic File System (EFS), FSx, and Site-to-Site VPN.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

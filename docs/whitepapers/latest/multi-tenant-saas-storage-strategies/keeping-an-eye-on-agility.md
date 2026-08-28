@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
  While the silo, bridge, and pool models all have an agility footprint, you can apply common tenets to help you remain as nimble as possible. A key tenet is the rather obvious but occasionally violated need to minimize one-off variations for tenant data. The silo and bridge models, for example, can lead to storage variations that can complicate your ability to push out new features to all of your SaaS customers as part of a single automated event. Teams often use automation and continuous deployment to limit the amount of friction introduced by their multitenant storage strategy.
 
  As you settle into a storage strategy, expect and embrace the reality that your storage requirements continually evolve. The needs of SaaS customers are a moving target, and the storage model you pick today might not be a good fit tomorrow. AWS also continues to introduce new features and services that can represent new opportunities to enhance your approach to storage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

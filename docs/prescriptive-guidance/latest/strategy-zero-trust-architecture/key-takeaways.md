@@ -16,3 +16,7 @@ This guide has explored the essential aspects of developing a successful zero tr
 + **Foster a culture of security and compliance** – Promote a culture of security awareness and compliance throughout the organization. Educate employees on security best practices and their role in maintaining a secure cloud environment.
 + **Continuously assess and optimize** – Regularly assess the cloud environment, security controls, and operational processes. To gather insights and optimize resource utilization, cost management, and performance, use cloud-native analytics and monitoring tools such as Amazon CloudWatch and AWS Security Hub CSPM.
 + **Establish governance and compliance frameworks** – Develop governance and compliance frameworks that align with industry standards and regulatory requirements. Define policies, procedures, and controls to help ensure adherence to security, privacy, and compliance standards.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

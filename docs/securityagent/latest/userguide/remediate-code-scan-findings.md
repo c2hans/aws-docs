@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/remediate-code-scan-findings.html
 ---
 
-# Remediate Continuum code review findings
+# Remediate code review findings
 <a name="remediate-code-scan-findings"></a>
 
 After reviewing security findings from a code review, you can use AWS Security Agent to generate code fixes. Supported sources include connected third-party source code providers (such as GitHub, GitLab, or Bitbucket) and Amazon S3. For a connected private repository, AWS Security Agent opens a pull request (or a merge request, for GitLab) with the proposed fix. For Amazon S3 sources, it attaches a downloadable code diff that you can apply locally. For the list of supported providers and how to connect them, see [How integrations work with Agent Spaces](about-integrations.md).
@@ -16,8 +16,8 @@ Before you begin, ensure you have:
 + Access to the AWS Security Agent web application
 + Familiarity with your application’s architecture and security requirements
 
-## How Continuum code remediation works
-<a name="_how_continuum_code_remediation_works"></a>
+## How code remediation works
+<a name="_how_code_remediation_works"></a>
 
 When you trigger code remediation for a finding, AWS Security Agent analyzes the finding and its code locations, then generates a code fix. How the fix is delivered depends on the source:
 +  **Connected private repository** – AWS Security Agent opens a pull request (or a merge request, for GitLab) on the repository. It includes a description of the security issue and the changes made. This applies to the source code providers you’ve connected — see [How integrations work with Agent Spaces](about-integrations.md).
@@ -27,15 +27,15 @@ When you trigger code remediation for a finding, AWS Security Agent analyzes the
 **Important**
 Pull requests created by AWS Security Agent are visible to all users who have read access to the repository. Review the changes before merging to ensure they align with your application’s requirements.
 
-## Continuum automatic code remediation
-<a name="_continuum_automatic_code_remediation"></a>
+## Automatic code remediation
+<a name="_automatic_code_remediation"></a>
 
-If you enabled **automatic code remediation** when creating the code review, AWS Security Agent generates fixes for all eligible findings as soon as the review completes. You don’t need to take any additional action. AWS Security Agent delivers each fix the same way as an on-demand fix, using the delivery methods described earlier in this topic.
+If you enabled **automatic code remediation** when creating the code review, AWS Security Agent generates fixes for all eligible and confirmed findings as soon as the review completes. You don’t need to take any additional action. AWS Security Agent delivers each fix the same way as an on-demand fix, using the delivery methods described earlier in this topic.
 
 Automatic code remediation covers both connected source code repositories and Amazon S3 sources.
 
-## Continuum manual code remediation
-<a name="_continuum_manual_code_remediation"></a>
+## Manual code remediation
+<a name="_manual_code_remediation"></a>
 
 You can trigger remediation for an individual finding on demand, whether its source is a connected repository or an Amazon S3 upload. Use this when automatic code remediation is disabled, or to remediate a specific finding.
 
@@ -90,4 +90,8 @@ After remediating findings:
 + Review and merge pull requests (or merge requests) in your connected repositories, or commit applied diffs through your normal workflow
 + Run a new code review to verify fixes and check for remaining issues
 + Resolve findings in the web application after confirming remediation
-+ Adjust your code review sources or settings as needed (see [Enable Continuum code review](enable-code-review-scan.md))
++ Adjust your code review sources or settings as needed (see [Enable code review](enable-code-review-scan.md))
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

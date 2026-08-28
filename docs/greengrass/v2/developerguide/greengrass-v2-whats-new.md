@@ -72,3 +72,7 @@ This section contains all of the AWS IoT Greengrass V2 release notes, latest fir
 + [Release: AWS IoT Greengrass Core v2.1.0 software update on April 26, 2021](greengrass-release-2021-04-26.md)
 + [Release: AWS IoT Greengrass Core v2.0.5 software update on March 09, 2021](greengrass-release-2021-03-09.md)
 + [Release: AWS IoT Greengrass Core v2.0.4 software update on February 04, 2021](greengrass-release-2021-02-04.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

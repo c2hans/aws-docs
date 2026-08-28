@@ -37,3 +37,7 @@ Only ServiceNow admin users can access the Guided Setup to configure the Connect
 1. After completion of the task, choose **Mark as Complete**.
 
    To skip sections or tasks that do not apply to you, choose Skip.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

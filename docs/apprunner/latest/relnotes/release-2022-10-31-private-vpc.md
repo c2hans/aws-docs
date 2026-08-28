@@ -19,3 +19,7 @@ AWS App Runner now supports private services. By default, App Runner services ar
 Private services in App Runner leverages AWS PrivateLink Interface VPC Endpoints, which provides highly available and scalable networking technology. You can specify which Amazon VPC you want your App Runner service to be accessible in by passing an Interface VPC Endpoint. You can also add security groups that function as a virtual firewall to your Interface VPC Endpoints to further restrict network traffic.
 
 For more information, see [Enabling Private endpoint for incoming traffic](https://docs.aws.amazon.com/apprunner/latest/dg/network-pl.html) in the *AWS App Runner Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

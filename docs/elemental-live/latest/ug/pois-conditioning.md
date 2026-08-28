@@ -51,3 +51,7 @@ The effect of POIS conditioning on blanking and blackout is as follows:
 1. Complete the fields as follows:
    + Complete the first 6 fields to identify the endpoints on the POIS.
    + For **Response Signal Preroll**, change the value as desired to set the distance (in milliseconds) between the time that the SCTE-35 message is inserted and the start time of that ad avail.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -294,3 +294,7 @@ If you didn't add a [compatible runtime](https://docs.aws.amazon.com/lambda/late
 <a name="nodejs-layer-sample-app"></a>
 
 For more examples of how to use Lambda layers, see the [layer-nodejs](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/layer-nodejs) sample application in the AWS Lambda Developer Guide GitHub repository. This application includes a layer that contains the [lodash](https://www.npmjs.com/package/lodash) library. After creating the layer, you can deploy and invoke the corresponding function to confirm that the layer works as expected.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

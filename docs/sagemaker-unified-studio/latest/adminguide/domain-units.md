@@ -29,3 +29,7 @@ Within an Amazon SageMaker Unified Studio domain unit, you can assign the follow
 + [Assign authorization policies to users and groups within an Amazon SageMaker Unified Studio domain unit](assign-authorization-policies-to-users-in-domain-unit.md)
 + [Assign authorization policies to projects within an Amazon SageMaker Unified Studio domain unit](assign-authorization-policies-to-projects-in-domain-unit.md)
 + [Assign authorization policies to asset types](assign-authorization-policies-to-asset-types.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

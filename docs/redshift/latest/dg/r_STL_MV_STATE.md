@@ -72,3 +72,7 @@ This query returns the following sample output:
     138 | 2020-02-14 02:21:55.705655 | 5226 | Column was renamed          | dev     |                      | mv_base_table        | public               | mv_test       | Unrefreshable
       1 | 2020-02-14 02:22:26.292434 | 5325 | ALTER TABLE ALTER SORTKEY   | dev     | public               | mv_base_table_sorted | public               | mv_test       | Recompute
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

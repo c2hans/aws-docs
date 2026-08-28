@@ -49,3 +49,7 @@ Here are some tips for using the console:
    +  `stat scenerendering`: GPU time to render the scene.
 
  This section covers only a subset of available commands. Depending on your game's features, look into stats for areas such as asset streaming, virtual texturing, CPU task workload distribution, threading, sound, particles, and so on. For more information, refer to [Stat commands](https://dev.epicgames.com/documentation/en-us/unreal-engine/stat-commands-in-unreal-engine).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,3 +38,7 @@ For more information about the AWS Marketplace Commerce Analytics Service, inclu
 + [Using the AWS Marketplace Commerce Analytics Service with the AWS CLI and AWS SDK for Java](technical-implementation-guide.md)
 + [Generating a dataset by using the AWS Marketplace Commerce Analytics Service](technical-documentation.md)
 + [Troubleshooting the AWS Marketplace Commerce Analytics Service](cas-troubleshooting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

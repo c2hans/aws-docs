@@ -62,3 +62,7 @@ Running this command returns the destination details, which include the Amazon R
 ```
 
 For more information about creating a destination, see [Create rules to process LoRaWAN device messages](https://docs.aws.amazon.com/iot/latest/developerguide/connect-iot-lorawan-destination-rules.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

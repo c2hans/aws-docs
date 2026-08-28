@@ -116,3 +116,7 @@ To create a bastion host, you launch an Amazon EC2 instance in your public subne
 For more information about setting up a bastion host for Windows instances in the private subnet, see [ Controlling Network Access to EC2 Instances Using a Bastion Server ](https://aws.amazon.com/blogs/security/controlling-network-access-to-ec2-instances-using-a-bastion-server/).
 
 For more information about setting up a bastion host for Linux instances in the private subnet, see [ Securely Connect to Linux Instances Running in a Private Amazon VPC ](https://aws.amazon.com/blogs/security/securely-connect-to-linux-instances-running-in-a-private-amazon-vpc/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

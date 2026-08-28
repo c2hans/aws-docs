@@ -48,3 +48,7 @@ To create and manage assessments in Audit Manager, follow the procedures that ar
   + [Deleting an assessment report](https://docs.aws.amazon.com/audit-manager/latest/userguide/download-center.html#delete-assessment-report-steps)
   + [Generating assessment reports from your evidence finder search results](https://amazonaws.com/audit-manager/latest/userguide/exporting-search-results-from-evidence-finder.html#generate-one-time-report-from-search-results)
 + [Deleting an assessment in AWS Audit Manager](delete-assessment.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

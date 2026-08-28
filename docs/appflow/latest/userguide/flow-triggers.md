@@ -55,3 +55,7 @@ The total offset value can be longer than the schedule interval (for example,* t
 + The flow run at *T1* transfers records that changed between *T0 minus t* and *T1 minus t* in the source application.
 + The flow run at *T2* transfers records that changed between *T1 minus t* and *T2 minus t* in the source application.
 + The flow run at *T3* transfers records that changed between *T2 minus t* and *T3 minus t* in the source application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -396,3 +396,7 @@ The following table describes the documentation release history of AWS Config pr
 | New and updated content | This release adds the ability to select which resource types AWS Config records. For more information, see [Recording AWS Resources with AWS Config](select-resources.md). | June 23, 2015 |
 | New and updated content | This release adds support for the following regions: Asia Pacific (Tokyo), Asia Pacific (Singapore), Europe (Frankfurt), South America (São Paulo), and US West (N. California). For more information, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#awsconfig_region). | April 6, 2015 |
 | New guide | This release introduces AWS Config. | November 12, 2014 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,3 +45,7 @@ async fn show_inputs(client: &Client) -> Result<(), Error> {
 }
 ```
 +  For API details, see [ListInputs](https://docs.rs/aws-sdk-medialive/latest/aws_sdk_medialive/client/struct.Client.html#method.list_inputs) in *AWS SDK for Rust API reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

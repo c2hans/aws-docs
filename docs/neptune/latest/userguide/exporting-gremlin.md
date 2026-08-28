@@ -200,3 +200,7 @@ g.V().
 **Best practices**
 +  Use Amazon S3 bucket lifecycle rules to clean up incomplete multipart uploads.
 +  Monitor your export operations using Neptune logs and metrics. You can check the [Gremlin status endpoint](https://docs.aws.amazon.com/neptune/latest/userguide/gremlin-api-status.html) to see if a query is currently running. As long as the client has not received a response, the query will be assumed to be running.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

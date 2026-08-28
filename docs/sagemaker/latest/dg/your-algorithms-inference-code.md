@@ -491,3 +491,7 @@ SageMaker AI responds to the following Control Frames from the model container:
 1. On receiving a Ping Frame ([RFC6455-Section-5.5.2](https://datatracker.ietf.org/doc/html/rfc6455#section-5.5.2)) from model container, SageMaker AI will respond with Pong Frame.
 
 1. Pong Frame([RFC6455-Section-5.5.3](https://datatracker.ietf.org/doc/html/rfc6455#section-5.5.3)): If no Pong Frame is received for 5 consecutive Pings, the connection will be closed by SageMaker AI.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

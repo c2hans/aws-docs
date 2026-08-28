@@ -97,3 +97,7 @@ The **Wait** block timer that starts when the chat contact enters a **Wait** blo
 + `AccessDeniedException`:
 
   If you get an `AccessDeniedException` error and the participant role is a CUSTOM\_BOT, it indicates the bot is trying to access attachments. The participant role of CUSTOM\_BOT is not permitted to access attachments that customers upload.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

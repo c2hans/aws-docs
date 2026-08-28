@@ -67,3 +67,7 @@ The following table shows Aurora PostgreSQL and Babelfish version and the availa
 | 14.3 (2.1) | 14.23 (2.17), 14.22 (2.16), 14.20 (2.15), 14.19 (2.14), 14.18 (2.13), 14.6 (2.3) |
 | 13.8 (1.4) | 13.9 (1.5) |
 | 13.7 (1.3) | 13.9 (1.5), 13.8 (1.4) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

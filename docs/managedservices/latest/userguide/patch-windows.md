@@ -22,3 +22,7 @@ Normally, a patch window does not need to be updated to include new instances. T
 No change to the patch window is needed because it picks up all five instances at the time of the next scheduled run.
 
 For a more detailed discussion and a walkthrough on using this change type, see [SSM Patch Window \| Create](https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-patching-ssm-patch-window-create.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

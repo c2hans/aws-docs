@@ -33,3 +33,7 @@ Data encryption key: A 256-bit AES-GCM key derived from an HBK using the NIST SP
 
 **SK**
 Session key: A session key is created as a result of an authenticated Elliptic Curve Diffie-Hellman key exchanged between a service host operator and an HSM. The purpose of the exchange is to secure communication between the service host and the members of the domain.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

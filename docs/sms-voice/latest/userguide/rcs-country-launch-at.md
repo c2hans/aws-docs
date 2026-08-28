@@ -23,3 +23,7 @@ During the A1 Telekom review process, you may be asked to provide the following 
 Your agent may reach PARTIAL status (approved on Hi3G and T-Mobile) while A1 Telekom completes their additional review. You can begin sending RCS messages to recipients on approved carriers while waiting for A1 Telekom approval.
 
 For general compliance guidance that applies to all countries, see [RCS country launch compliance guide](rcs-country-launch-compliance.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

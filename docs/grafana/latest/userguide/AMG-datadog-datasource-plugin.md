@@ -76,3 +76,7 @@ Additionally, in workspaces that support version 9 or newer, this data source mi
 <a name="datadog-ad-hoc-filters"></a>
 
  There is a new special type of template variable in Grafana called *Ad-hoc filters*. This variable will apply to *all* the Datadog queries in a dashboard. This allows using it like a quick filter. An ad-hoc variable for Datadog fetches all the key-value pairs from tags, for example, `region:east, region:west`, and uses them as query tags. To create this variable, select the *Ad-hoc filters* type and choose your Datadog data source. You can set any name for this variable.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

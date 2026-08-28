@@ -21,3 +21,7 @@ Additionally, you can use the EFS mount helper or NFS to configure an EC2 instan
 + [Tutorial: Mounting with on-premises Linux clients](mounting-fs-mount-helper-direct.md)
 + [Tutorial: Mount a file system from a different VPC](efs-different-vpc.md)
 + [Troubleshooting mount issues](troubleshooting-efs-mounting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

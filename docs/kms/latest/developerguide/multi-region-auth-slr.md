@@ -65,3 +65,7 @@ You cannot edit the role name or the policy statements in the **AWSServiceRoleFo
 <a name="delete-mrk-slr"></a>
 
 AWS KMS does not delete the **AWSServiceRoleForKeyManagementServiceMultiRegionKeys** service-linked role from your AWS account and you cannot delete it. However, AWS KMS does not assume the **AWSServiceRoleForKeyManagementServiceMultiRegionKeys** role or use any of its permissions unless you have multi-Region keys in your AWS account and Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

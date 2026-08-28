@@ -27,3 +27,7 @@ The following rules apply to the contents of the files:
 + **HDR10 luminance. **MediaLive supports conversion of HDR10 content with a maximum luminance of 1000 nits to 4000 nits, but it only supports one maximum luminance. When MediaLive reads the list of 3D LUTs files, it finds the first file for each conversion from HDR10. Even if you one file for 1000 nits and one for 4000 nits (for example), MediaLive uses only the first file it encounters. Therefore the following guidelines apply:
   + You should make sure that all the HDR10 content in all the inputs in one channel have the same maximum luminance. If a source has a different maximum luminance, MediaLive will convert the content, but the outputs will have sub-optimal luminance.
   + In each 3D LUTs file for converting from HDR10, make sure that the luminance handling is appropriate for the luminance of the source.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

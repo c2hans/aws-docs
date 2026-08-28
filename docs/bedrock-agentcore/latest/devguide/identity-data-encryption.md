@@ -29,3 +29,7 @@ Amazon Bedrock AgentCore Identity encrypts the data in your token vault with a c
 + You can configure CMK for credential provider secrets using AWS Secrets Manager. [Learn more](https://docs.aws.amazon.com/secretsmanager/latest/userguide/manage_update-encryption-key.html).
 
 The following procedures configure encryption at rest in your token vault. For more information about KMS key policies that delegate access to AWS services like Amazon Cognito, see [Permissions for AWS services in key policies](https://docs.aws.amazon.com/kms/latest/developerguide/key-policy-services.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

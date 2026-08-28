@@ -49,3 +49,7 @@ For a comparison between Amazon EMR on EKS and Amazon EMR running on EC2, see th
 + [Amazon EMR on EKS 5.34.0 releases](emr-eks-5.34.0.md)
 + [Amazon EMR on EKS 5.33.0 releases](emr-eks-5.33.0.md)
 + [Amazon EMR on EKS 5.32.0 releases](emr-eks-5.32.0.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

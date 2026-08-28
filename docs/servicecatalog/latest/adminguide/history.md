@@ -47,3 +47,7 @@ The following table describes the documentation release history of AWS Service C
 | Importing a portfolio | To import a portfolio that is shared from another AWS account, see [Importing a Portfolio.](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/catalogs_portfolios_sharing_how-to-share.html#catalogs_portfolios_sharing_importing) | February 16, 2016 |
 | Updates to permissions information | To grant access to the end user console view, see [Console access for end users.](https://docs.aws.amazon.com/servicecatalog/latest/adminguide/controlling_access.html#permissions-end-users-console) | February 16, 2016 |
 | Initial release | This is the initial release of the AWS Service Catalog Administrator Guide. | July 9, 2015 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ For more information, see [Registering an Amazon S3 location](register-location.
 
 **Supported AWS services**
 AWS analytic services such as Athena, Redshift Spectrum, Amazon EMR, AWS Glue, Amazon Quick, and Amazon SageMaker AI integrate with AWS Lake Formation using the Lake Formation credential vending API operations. To see a full list of AWS services that integrate with Lake Formation, and the level of granularity and table formats that they support, see [Working with other AWS services](working-with-services.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

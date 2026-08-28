@@ -148,3 +148,7 @@ SELECT nextval('serial');
 `CREATE SEQUENCE` conforms to the SQL standard, with the following exceptions:
 + Obtaining the next value is done using the `nextval()` function instead of the standard's `NEXT VALUE FOR` expression.
 + The `OWNED BY` clause is a PostgreSQL extension.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

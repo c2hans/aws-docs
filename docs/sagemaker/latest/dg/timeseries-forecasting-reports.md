@@ -52,3 +52,7 @@ Backtests results provide insights into the performance of a time-series forecas
 Autopilot uses backtesting to tune parameters and produce accuracy metrics. During backtesting, Autopilot automatically splits your time-series data into two sets, a training set and a testing set. The training set is used to train a model which is then used to generate forecasts for data points in the testing set. Autopilot uses this testing dataset to evaluate the model's accuracy by comparing forecasted values with observed values in the testing set.
 
 You can find the Amazon S3 prefix to the model quality report artifacts generated for the best candidate in the response to `[DescribeAutoMLJobV2](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeAutoMLJobV2.html)` at `[BestCandidate.CandidateProperties.CandidateArtifactLocations.BacktestResults](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CandidateArtifactLocations.html#sagemaker-Type-CandidateArtifactLocations-BacktestResults)`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

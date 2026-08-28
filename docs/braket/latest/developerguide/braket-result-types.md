@@ -165,3 +165,7 @@ Passing fixed parameter values as arguments to a parameterized circuit will remo
 # Will succeed
 device.run(circ, shots=0, inputs={'phi': 0.2, 'theta': 0.2})
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

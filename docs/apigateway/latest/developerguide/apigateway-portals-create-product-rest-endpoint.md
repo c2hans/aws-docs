@@ -54,3 +54,7 @@ The following procedure shows how to add a product REST endpoint to an existing 
 1. Choose **Save changes**.
 
 To allow the new page to be visible to consumers, you still need to republish your portal. For more information, see [Publish a portal in API Gateway](apigateway-portals-publish-portal.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

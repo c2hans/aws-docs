@@ -58,3 +58,7 @@ This scenario results in two contact records, which include the following metada
 | ConnectedToSystem Timestamp | 11:39:10 | John is called after the 10 second agent whisper flow completes. |
 | ConnectedToAgent Timestamp | 11:39:25 | John and the agent are connected, after the 15 second outbound whisper flow completes. |
 | Disconnected Timestamp | 11:45 | John hangs up. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

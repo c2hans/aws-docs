@@ -33,3 +33,7 @@ Matter now supports over 50 device types across versions 1.0 through 1.5, includ
 The current fragmentation in the smart-home market leads to high customer support burdens for manufacturers. Consumers frequently encounter issues with connectivity, setup, and compatibility that require troubleshooting. Matter aims to reduce these problems by standardizing core functions.
 
 When issues do occur, the common underlying Matter protocols mean companies can more easily diagnose and resolve connectivity problems without having to consider multiple ecosystems. This streamlines the support process. With a single app and common voice compatibility, customers also have an easier time learning to use devices, reducing the need for support in many cases. The simplified customer experience and troubleshooting enabled by Matter helps reduce long-term support costs for manufacturers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

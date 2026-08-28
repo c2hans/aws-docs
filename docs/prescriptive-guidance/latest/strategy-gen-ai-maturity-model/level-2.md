@@ -57,3 +57,7 @@ By taking these actions, organizations can:
 + Manage risks, maintain oversight, and align AI initiatives with regulatory standards as they become an integral part of business operations.
 + Provide continuous monitoring, improvement, and support for generative AI solutions. This reduces the reliance on ad-hoc or temporary project teams.
 + Prepare the organization to move from isolated projects to a strategic and cohesive approach, where AI becomes a core enabler of business processes. The organization is ready for further scale and broader adoption.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

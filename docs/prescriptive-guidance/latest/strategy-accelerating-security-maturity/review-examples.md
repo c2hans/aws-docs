@@ -35,3 +35,7 @@ The following are the key features of Assisted Log Enabler for AWS:
 **Tool:** [AWS Identity and Access Management Access Analyzer (IAM Access Analyzer)](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html) helps you identify resources that are shared with an external entity, validates IAM policies against policy grammar and best practices, and generates IAM policies based on historical access activity. We highly recommend that you enable IAM Access Analyzer at both the account and organization levels.
 
 **Service benefits: **IAM Access Analyzer provides a wealth of insightful findings. It can identify your organization's resources and accounts that are shared with an external entity. It can detect resources such as a public S3 bucket, an AWS KMS key shared with another account, or a role shared with an external account, giving you excellent visibility into identifying resources that are not under your organization's control. It not only validates IAM policies but can also generate them for you.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

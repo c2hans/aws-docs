@@ -155,3 +155,7 @@ Configuration:
 The following related resources can help you as you work with this action.
 + [Service Catalog User Guide](https://docs.aws.amazon.com/servicecatalog/latest/userguide/) – For information about resources and templates in Service Catalog, see the *Service Catalog User Guide*.
 + [Tutorial: Create a pipeline that deploys to Service Catalog](tutorials-S3-servicecatalog.md) – This tutorial shows you how to create and configure a pipeline to deploy your product template to Service Catalog and deliver changes you have made in your source repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

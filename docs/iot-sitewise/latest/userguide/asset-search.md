@@ -85,3 +85,7 @@ All parameters do not need to be provided for an asset search. Here are some exa
 **Note**
  The `SELECT` clause in the SQL query must include the `asset_name` and `asset_id` fields to ensure a valid asset in the **Search results** table.
  The **Query builder** only displays the **Name**, **Asset id**, and **Description** in the results table. Adding more fields to the `SELECT` clause does not add more columns to the results table
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

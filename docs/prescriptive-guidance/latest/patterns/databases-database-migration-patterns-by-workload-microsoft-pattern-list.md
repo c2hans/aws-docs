@@ -42,3 +42,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/da
 + [Send notifications for an Amazon RDS for SQL Server database instance by using an on-premises SMTP server and Database Mail](send-notifications-for-an-amazon-rds-for-sql-server-database-instance-by-using-an-on-premises-smtp-server-and-database-mail.md)
 + [Set up a CI/CD pipeline for database migration by using Terraform](set-up-ci-cd-pipeline-for-db-migration-with-terraform.md)
 + [Set up Multi-AZ infrastructure for a SQL Server Always On FCI by using Amazon FSx](set-up-multi-az-infrastructure-for-a-sql-server-always-on-fci-by-using-amazon-fsx.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

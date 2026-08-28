@@ -50,3 +50,7 @@ Karpenter includes the following key features:
 + **Advanced scheduling** – Using clever pod placement, Karpenter arranges nodes such that resources like GPU, CPU, memory, and storage are used as effectively as possible.
 + **Quick scaling** – Karpenter can scale quickly, frequently reacting in seconds. This responsiveness is helpful for patterns of sudden traffic or when the workload demands immediate scaling
 + **Cost efficiency** – By carefully choosing the most effective instance, you can lower operating costs and take advantage of additional cost-saving alternatives offered by AWS, such as On-Demand Instances, Spot Instances, and Reserved Instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

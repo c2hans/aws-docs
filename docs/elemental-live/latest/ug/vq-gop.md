@@ -58,3 +58,7 @@ This table shows where the parameters mentioned in this section are located. The
 | Streams – Video > Advanced > Scene Change Detect | stream\_assembly/video\_description/{{codec}}/<br /> transition\_detection<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings**  |
 | Streams – Video > Advanced > Min I-interval | stream\_assembly/video\_description/{{codec}}/<br />min\_i\_interval<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **mpeg2\_settings** <br />+  **h265\_settings**  |
 | Streams – Video > Advanced > GOP Reference B-Frame | stream\_assembly/video\_description/{{codec}}/<br /> gop\_b\_reference<br />where {{codec}} is one of the following:+  **h264\_settings** <br />+  **h265\_settings**  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

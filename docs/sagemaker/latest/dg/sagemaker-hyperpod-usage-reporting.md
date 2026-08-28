@@ -51,3 +51,7 @@ This capability addresses critical scenarios in multi-tenant AI/ML environments 
 1. **Cost allocation for shared clusters**: An administrator manages a HyperPod cluster shared by 20 teams training generative AI models. Using a *summary usage report*, they analyze daily GPU utilization over 180 days and discover Team A consumed 200 GPU hours of a specific instance type—170 from their allocated quota and 30 from borrowed compute. The administrator invoices Team A based on this reported usage.
 
 1. **Auditing and dispute resolution**: A finance team questions cost attribution accuracy, citing inconsistencies. The administrator can export a *detailed task-level report* to audit discrepancies. By cross-referencing timestamps, instance types, and preempted jobs within the team's namespace, the report transparently reconcile disputed usage data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ For information about using Git sync with a multi-account strategy, see the foll
 + [Create a stack from repository source code](git-sync-create-stack-from-repository-source-code.md)
 + [Enable comments on pull requests](gitsync-enable-comments-on-pull-requests.md)
 + [Status dashboard](git-sync-status.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

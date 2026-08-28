@@ -115,3 +115,7 @@ fraudDetector.get_event_prediction_metadata (
 <a name="how-prediction-explanations-calculated"></a>
 
 Amazon Fraud Detector uses [SHAP (SHapeley Additive exPlanations)](https://arxiv.org/abs/1705.07874) to explain individual event predictions by computing the **raw explanation values** of each event variable used for model training. The raw explanation values are computed by the model as part of the classification algorithm when generating predictions. These raw explanation values represent the contribution of each input to the logarithm of the odds of fraud. The raw explanation values (from -infinity to \+infinity) are converted to a **relative impact value** (-5 to \+5) using a mapping. The relative impact value derived from raw explanation value represents the number of times increase in odds of fraud (positive) or legit (negative), making it easier to understand the prediction explanations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

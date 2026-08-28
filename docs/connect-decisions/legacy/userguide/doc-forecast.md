@@ -44,3 +44,7 @@ The input for the reorder quantity calculation is the target inventory level and
 ![Calculation of reorder quantity](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/roq_calculation.png)
 
 The reorder quantity of product *P*, site *S*, and date *D* is the difference between the target inventory level and the current inventory level. If the current inventory level is higher than the target inventory level, the reorder quantity is 0.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

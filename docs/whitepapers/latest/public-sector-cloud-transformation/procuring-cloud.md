@@ -29,3 +29,7 @@ If your organization should choose to proceed with the development of a cloud pr
 +  Include specific details, which may outdate the contract
 +  Dictate the specific methods, hardware, and equipment to be used
 +  Refer to part numbers to achieve desired outcomes
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

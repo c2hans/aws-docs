@@ -22,3 +22,7 @@ Submit the job with these parameters:
 + `OutputDir`: Where to save the visualization
 + `OutputFilename`: Name for the output file
 + `ExtraParams`: Additional script parameters in the format `--param1 value1 --param2 value2`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

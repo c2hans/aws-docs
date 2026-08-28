@@ -26,3 +26,7 @@ The AWS CDK allows developers to use their existing programming skills and knowl
 **Disadvantages of using the AWS CDK:**
 + The AWS CDK requires a [bootstrapped environment](https://docs.aws.amazon.com/cdk/v2/guide/bootstrapping.html) in each AWS account. Bootstrapping is a one-time action that you must perform for every environment that you deploy resources into.
 + The AWS CDK can be used to deploy IaC only in the AWS Cloud.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

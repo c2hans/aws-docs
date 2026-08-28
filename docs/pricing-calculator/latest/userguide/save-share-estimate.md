@@ -68,3 +68,7 @@ The total cost of your previously saved estimates can become out of date over ti
 **Note**
 When you save your estimate, a new estimate link is generated. The updates aren't saved to the original shared link.
 For more information about updates to services in AWS Pricing Calculator, see [ Service Updates](https://calculator.aws/#/serviceUpdates).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Pricing Calculator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pricing-calculator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

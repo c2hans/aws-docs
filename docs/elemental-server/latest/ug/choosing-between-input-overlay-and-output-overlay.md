@@ -48,3 +48,7 @@ These examples are situations where you would use stream overlay:
 + You set up a standalone file output with high definition and another standalone file output with standard definition. You want to include an HD indicator in the corner of the frame on the high definition output only.
 + You set up one of the renditions in your ABR stack with high definition. You want to include an HD indicator in the corner of the frame on this rendition only.
 + You are stitching together several films as separate inputs to create a single-asset film marathon. You want to put a graphic on all of them indicating that they are part of the larger marathon.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

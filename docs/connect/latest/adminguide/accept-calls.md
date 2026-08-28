@@ -19,3 +19,7 @@ The **Accept call** button does not appear if your admin has enabled [Auto-accep
 
 1. You have 20 seconds to accept or reject a contact. If you miss a call, it will look similar to the following image. Choose **Close contact** so you can accept another call.
 ![The CCP set to available, missed call, Close contact button.](http://docs.aws.amazon.com/connect/latest/adminguide/images/missed-call-banner.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

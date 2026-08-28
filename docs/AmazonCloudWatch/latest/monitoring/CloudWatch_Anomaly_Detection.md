@@ -125,3 +125,7 @@ or
 ```
 
 This query works across multiple label values, so you can detect anomalies across your entire fleet in a single query. You can use this expression to create a PromQL alarm that triggers when any time series breaches the expected range. For more information, see [Creating a CloudWatch alarm using PromQL for anomaly detection](CloudWatch-PromQL-Alarms.md#promql_alarm_anomaly_detection).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

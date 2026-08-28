@@ -127,3 +127,7 @@ Systems Manager is integrated with the following AWS services.
 + [AWS KMS encryption for Parameter Store SecureString parameters](secure-string-parameter-kms-encryption.md)
 + [Use AWS Secrets Manager secrets in Amazon Elastic Kubernetes Service](integrate_eks.md)
 + [Using Parameter Store parameters in AWS Lambda functions](ps-integration-lambda-extensions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

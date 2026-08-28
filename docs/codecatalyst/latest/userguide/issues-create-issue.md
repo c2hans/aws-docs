@@ -77,3 +77,7 @@ Amazon Q does not respond to individual comments in issues or pull requests, but
 + **Make sure to only allow Amazon Q to work on workflows if you don't have existing workflows that might deploy them before they're reviewed**. Your project might have workflows configured to start runs on pull request events. If so, any pull request that Amazon Q creates that includes creating or updating workflow YAML might start a run of those workflows included in the pull request. As a best practice, don't choose to allow Amazon Q to work on workflow files unless you are sure there are no workflows in your project that will automatically run these workflows before you review and approve the pull request it creates.
 
 For more information, see [Tutorial: Using CodeCatalyst generative AI features to speed up your development work](getting-started-project-assistance.md) and [Managing generative AI features](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-generative-ai-features.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

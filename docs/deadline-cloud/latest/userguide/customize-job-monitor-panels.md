@@ -34,3 +34,7 @@ The **Add panel** tile appears only when panels remain to add. After the page sh
 To move a panel, use its drag handle. To resize a panel, use its resize handle. With either handle, select the handle, press Space or Enter, use the arrow keys to move or resize the panel, and then press Space or Enter to confirm the change or Esc to discard it. You can also select and hold either handle to move or resize the panel.
 
 To return the page to the panels and arrangement that it started with, choose **Reset to default layout** from the actions menu at the top of the page. Resetting discards your customizations, including any panel that you added that isn't shown by default.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ Unless you have a reason to set it otherwise, set both of these settings to **St
 
 ****Loop Input****
 You can set your overlay to last the duration of the motion graphic played through once or you can set it to loop motion graphic continuously from the start time to the end of the output. The duration of a `.mov` motion graphic is built into the `.mov` file, which has a set number of frames and a defined frame rate. If your motion graphic is a set of .png images, you determine the duration of the overlay by how many images you provide and the framerate you specify. The duration in seconds is the number of frames times the framerate in frames per second.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

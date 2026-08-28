@@ -15,3 +15,7 @@ The first step with Amazon Monitron is to set up your project in the Amazon Moni
 + [Step 3: Create admin users](ags-project-admin.md)
 + [Step 4: (optional) Add Amazon Monitron users to your project](gsg-sso.md)
 + [Step 5: Invite users to your project](gsg-invite.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

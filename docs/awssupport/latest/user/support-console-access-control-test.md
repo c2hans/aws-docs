@@ -24,3 +24,7 @@ To check for missing IAM permissions, complete the following steps:
 1. Add the specific `support-console` permission to your IAM policy. You can grant access to all operations using `support-console:*`, or select individual operations for fine-grained control. For the full list of operations, see [Adding IAM policies for the Support Center Console API operations](support-console-access-control.md).
 
 1. To verify the fix, revisit the AWS Support Center Console to generate new API calls, then repeat steps 1–6. Make sure that the new events no longer contain an `additionalEventData` field.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

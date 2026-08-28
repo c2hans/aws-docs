@@ -52,3 +52,7 @@ To retrieve a DICOM element with the `GetDICOMBulkdata` action, use the followin
 
 **Note**
 The `imageSetId` parameter is required to retrieve bulkdata for non-primary image sets. The GetDICOMBulkdata action will only return bulkdata for primary image sets if the `datastoreId`, `studyInstanceUID`, `seriesInstanceUID`, and `SOPInstanceUID` are specified (without an `imagesetID`).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ The following list describes the caveats of Shield Advanced automatic applicatio
 + [Enabling and disabling automatic application layer DDoS mitigation](enable-disable-automatic-app-layer-response.md)
 + [Changing the action used for automatic application layer DDoS mitigation](change-action-of-automatic-app-layer-response.md)
 + [Using AWS CloudFormation with automatic application layer DDoS mitigation](manage-automatic-mitigation-in-cfn.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

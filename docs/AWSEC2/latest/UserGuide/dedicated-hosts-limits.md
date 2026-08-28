@@ -54,3 +54,7 @@ Keep the following in mind when working with Dedicated Hosts that support multip
 
 **Note**
 If you enable an A1 Dedicated Host for multiple instance types, you can launch only a mix of `a1.xlarge` and `a1.2xlarge` instances on that host. If you launch an `a1.medium` or `a1.large` instance on that host, you will be restricted to launching only more of that same instance type on the host. A single `a1.4xlarge` instance consumes all capacity on the host. If you require a host for either `a1.medium` or `a1.large` instances, we recommend that you allocate separate hosts for those instance types.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

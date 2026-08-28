@@ -24,3 +24,7 @@ You might want to balance the load distribution for instances on your Aurora Pos
 
    In the following example, the instance with the highest DB load is `DTR-2-2`.
 ![Top SQL tab when you slice by waits at the instance level.](http://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/images/pi-load-distribution.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

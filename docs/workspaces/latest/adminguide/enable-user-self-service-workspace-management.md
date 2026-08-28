@@ -45,3 +45,7 @@ If users switch the running mode of their WorkSpace, this changes the billing ra
    + **Diagnostic log uploads** — Users can upload WorkSpaces client log files directly to WorkSpaces to troubleshoot issues without interrupting use of the WorkSpaces client. If you enable diagnostic log uploads for your users, or let your users do so themselves, the log files are sent to WorkSpaces automatically. You can enable diagnostic log uploads before or during a WorkSpaces streaming session.
 
 1. Choose **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

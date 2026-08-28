@@ -200,3 +200,7 @@ AWS offers both digital and classroom training to support you in your migration 
 <a name="9999999999999999aws--partner-training.64c25e64-4428-5475-bc3b-61f60675ac3d"></a>
 
 AWS Partners also offer digital training as self-paced courses covering a range of topics from AWS Cloud fundamentals to machine learning at top online learning platforms such as EdX and Coursera. For more information, explore [AWS Partner Training and Certification](https://aws.amazon.com/partners/training/) offerings. You can be certified by role and solution. For example, roles include Cloud Practitioner, Solutions Architect, Developer, and SysOps Administrator. Solutions include Advanced Networking, Data Analytics, Databases, Machine Learning, Security, Storage, and more.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

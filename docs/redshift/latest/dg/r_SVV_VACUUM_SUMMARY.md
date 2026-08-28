@@ -55,3 +55,7 @@ sales   | 3992 |   2 |    1 | 71736163 |       0 | 1207192 |      32
 sales   | 4000 |   1 |    1 | 15363010 | -851648 | -851648 |    -140
 (4 rows)
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

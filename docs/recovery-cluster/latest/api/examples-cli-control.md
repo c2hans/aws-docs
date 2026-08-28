@@ -32,3 +32,7 @@ When you create a cluster, ARC provides you with a set of Regional endpoints. To
 + [Get routing control state](get-routing-control-state.md)
 + [Update state for one routing control](update-routing-control-state.md)
 + [Update state for two routing controls at the same time, in a batch](update-routing-control-state-batch.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query recovery-cluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

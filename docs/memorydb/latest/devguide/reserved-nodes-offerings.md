@@ -14,3 +14,7 @@ Reserved nodes are available in three varieties – No Upfront, Partial Upfront,
 **All Upfront** – Full payment is made at the start of the term, with no other costs incurred for the remainder of the term regardless of the number of hours used.
 
 All three offering types are available in one-year and three-year terms.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

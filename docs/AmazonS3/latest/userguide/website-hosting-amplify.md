@@ -54,3 +54,7 @@ Use the following instructions to deploy a static website from an Amazon S3 gene
 To start directly from the Amplify console, see [Deploying a static website from S3 using the Amplify console](https://docs.aws.amazon.com/amplify/latest/userguide/deploy--from-amplify-console.html) in the *AWS Amplify Hosting User Guide*.
 
 To get started using the AWS SDKs, see [Creating a bucket policy to deploy a static website from S3 using the AWS SDKs](https://docs.aws.amazon.com/amplify/latest/userguide/deploy-with-sdks.html) in the *AWS Amplify Hosting User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

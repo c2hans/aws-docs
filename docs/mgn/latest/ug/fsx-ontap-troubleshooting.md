@@ -182,7 +182,7 @@ The FSx for ONTAP file system does not have enough free SSD storage capacity to 
 **Resolution**
 Increase the SSD storage capacity of your FSx for ONTAP file system.
 
-1. Open the FSx for ONTAP console at [https://console.aws.amazon.com/fsx/](https://docs.aws.amazon.com/fsx/), and choose **File systems**.
+1. Open the FSx for ONTAP console at [https://console.aws.amazon.com/fsx/](https://console.aws.amazon.com/fsx/), and choose **File systems**.
 
 1. Select the file system shown in the error message.
 
@@ -201,3 +201,7 @@ Storage capacity increases are non-disruptive. The file system remains available
 During migration, the file system holds both the replica volumes (used for ongoing replication) and the cloned volumes (created at launch). Both coexist until you finalize the cutover and delete the replica volumes. Plan your SSD capacity to accommodate both sets simultaneously, or reduce the number of source servers in a single launch job.
 
 For more information, see [Managing SSD storage capacity and provisioned IOPS](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/managing-storage-capacity.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,3 +52,7 @@ Use the following AWS CLI commands to enable provisioning private IPv6 GUA CIDRs
 ------
 
 Once you enable the option to provision private IPv6 GUA CIDRs, you can provision a private IPv6 GUA CIDR to a pool. For more information, see [Provision CIDRs to a pool](prov-cidr-ipam.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

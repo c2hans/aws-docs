@@ -76,3 +76,7 @@ Here's what's going on:
 + Question Q4 is effectively removed from the calculation. Its weight (20%) is distributed among the remaining 3 questions in proportion to their weights.
 + Question Q1 has double the weight of questions Q2 and Q3, so it receives double the amount of added weight.
 + The form's evaluation score = 50% \+ 12.5% \+ 12.5% = 75%.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

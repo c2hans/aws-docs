@@ -54,4 +54,8 @@ Monitor results: [GetHookResult](API_GetHookResult.md) \| [ListHookResults](API_
 Register privately: [DescribeTypeRegistration](API_DescribeTypeRegistration.md) \| [DeregisterType](API_DeregisterType.md) \| [ListTypeRegistrations](API_ListTypeRegistrations.md) \| [RegisterType](API_RegisterType.md)
 Publish: [DescribePublisher](API_DescribePublisher.md) \| [PublishType](API_PublishType.md) \| [RegisterPublisher](API_RegisterPublisher.md) \| [TestType](API_TestType.md)
 
-This document was last published on August 24, 2026.
+This document was last published on August 28, 2026.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

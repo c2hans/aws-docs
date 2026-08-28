@@ -22,3 +22,7 @@ fields @timestamp, @message
 Use `fields` instead of `display` when you want to use the different functions and operations supported by `fields` for modifying field values and creating new fields that can be used in queries.
 
 You can use the `fields` command with the keyword *as* to create extracted fields that use fields and functions in your log events. For example, `fields ispresent as isRes` creates an extracted field named `isRes`, and the extracted field can be used in the rest of your query.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

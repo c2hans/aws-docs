@@ -10,7 +10,7 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 The **Test and cutover** menu allows you to manage your test and cutover instances. For a more in-depth step-by-step guide to launching test and cutover instances, see the [Launching test and cutover instances documentation](launching-test-servers.md).
 + **Launch test instances** – Choose this option to launch a test instance for this server.
 
-  When the **Launch test instances for X** servers dialog appears, cick **Launch** to begin the test.
+  When the **Launch test instances for X** servers dialog appears, choose **Launch** to begin the test.
 
   The AWS Transform MGN console indicates **1 launch job complete** after the test has been completed successfully.
 + **Mark as "Ready for cutover"** – Use this option to finalize testing for this server after you have completed all of the necessary tests in preparation for cutover.
@@ -32,7 +32,7 @@ The **Test and cutover** menu allows you to manage your test and cutover instanc
   This changes your source servers' **Migration lifecycle** status to **Cutover in progress**, indicating that the cutover is in progress but has not yet been finalized.
 + **Finalize cutover** – Choose this option to finalize the cutover for this server after you have successfully performed a cutover.
 
-  This changes your source servers' **Migration lifecycle** status to **Cutover complete**, indicating that the cutover is complete and that the migration has been performed successfully. In addition, this stops data replication and cause all replicated data to be discarded. All AWS resources used for data replication are terminated.
+  This changes your source servers' **Migration lifecycle** status to **Cutover complete**, indicating that the cutover is complete and that the migration has been performed successfully. In addition, this stops data replication and causes all replicated data to be discarded. All AWS resources used for data replication are terminated.
 
   The **Finalize cutover for X servers** dialog appears. Choose **Finalize**.
 
@@ -42,11 +42,15 @@ The **Test and cutover** menu allows you to manage your test and cutover instanc
 This action does not uninstall the AWS Replication Agent from the source server. Use the **Disconnect from service** option under the **Actions** menu when you have completed the migration and want to uninstall the agent from your source server.
 + **Revert to "ready for cutover"** – Choose this option to revert a finalized cutover for this server if you encounter any issues or want to reverse the cutover for any reason.
 
-  This revert syour source servers' **Migration lifecycle** to the **Ready for cutover** status, indicating that these servers have not undergone cutover.
+  This reverts your source servers' **Migration lifecycle** to the **Ready for cutover** status, indicating that these servers have not undergone cutover.
 
-  The **Revert cutover for X servers** dialog appears. Click **Revert**.
+  The **Revert cutover for X servers** dialog appears. Choose **Revert**.
 + **Edit launch settings** – Use this option to edit the launch settings for this server. You are redirected to the **Edit launch settings** page. [Learn more about launch settings.](launching-target-servers.md)
 + **Edit post-launch settings** – Use this option to edit the post-launch settings for the selected source server or group of source servers. [Learn more about post-launch settings.](source-post-launch-settings.md)
 + **Terminate launched instance** – Choose this option if you want to delete your test or cutover instance for any reason at any time. It can only be selected for a server that has a launched test or cutover instance.
 
-  When the **Terminate launched instance** dialog appears, click **Terminate**.
+  When the **Terminate launched instance** dialog appears, choose **Terminate**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

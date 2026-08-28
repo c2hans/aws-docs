@@ -48,3 +48,7 @@ AWS IoT ExpressLink evaluation kits can be connected to a host machine serial in
    If you receive the answer 'OK', then you've successfully connected the evaluation kit to your host machine.
 
 Keep the terminal window open. You'll use the terminal later in this procedure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

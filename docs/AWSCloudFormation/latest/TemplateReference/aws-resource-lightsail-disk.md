@@ -158,3 +158,7 @@ You can specify an Availability Zone when you perform a create disk request. If 
  *Disk state*
 
 Disks can be deleted only when they're in an `available` state. If the disk is in an `attached` state when performing a delete disk request, the service will wait to check if the disk state changes to `available`. The delete disk request times out if the disk state doesn't change to `available` within 15 minutes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,3 +42,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/amazon-
  There are two specific constructs introduced here. At the namespace level, you’ll see that we have created separate pod security policies. These are native Kubernetes networking security policies that can be attached to a policy. In this example, these policies are used to limit network traffic between tenant namespaces. This represents a coarse-grained way to prevent one tenant from accessing the compute resources of another tenant.
 
  In addition to securing the namespaces, you also must ensure that the resources accessed by the services running in a namespace are restricted. In this example, we have two examples of isolation. The Order microservice uses a table per tenant model (silo) and has IAM policies that restrict access to a specific tenant. The Product microservice uses a pooled model where tenant data is comingled and relies on an IAM policy that’s applied to each item to restrict tenant access.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

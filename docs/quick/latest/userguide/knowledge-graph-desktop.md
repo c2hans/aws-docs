@@ -151,3 +151,7 @@ The following are examples of how the knowledge graph enhances your interactions
 + **Meeting preparation** – Ask "Prepare me for my meeting with Sanjay Mehta" and Quick uses the knowledge graph to surface recent context, open action items, and relevant documents.
 
 You can also interact with the knowledge graph directly in chat by asking Quick to add entities, explore relationships, or search for specific information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

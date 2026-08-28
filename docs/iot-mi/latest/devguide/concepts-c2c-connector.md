@@ -65,3 +65,7 @@ The following diagram depicts a C2C connector's role when sending a command from
  Any C2C connector you create is your content, and any C2C connector created by another customer that you access is third-party content. AWS does not create or manage any C2C connectors as part of managed integrations.
 
  You may share your C2C connectors with other managed integrations customers. If you do, you authorize AWS as your service provider to list those C2C connectors and related contact information on the AWS console and you understand that other AWS customers may contact you. You are solely responsible for granting customers access to your C2C connectors and for any terms governing another AWS customer’s access to your C2C connectors.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

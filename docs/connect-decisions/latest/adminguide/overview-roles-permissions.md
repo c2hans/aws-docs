@@ -21,3 +21,7 @@ You cannot edit or delete default user permission roles.
 When you edit a custom permission role you created, the permissions for all the users under the custom permission role are updated.
 When you delete a custom permission role you created, all the users under the custom permission role will lose access to Amazon Connect Decisions.
 Adding groups is not supported in Amazon Connect Decisions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

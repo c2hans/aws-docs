@@ -13,3 +13,7 @@ Besides operating system maintenance, there is also maintenance that you can con
 + Use the AWS-UpdateCloudFormationStackWithApproval document to update resources that were deployed using an AWS CloudFormation template. The update applies a new template. You can configure the automation to request approval by one or more IAM users before the update begins.
 
 We also provide an AWS Solution called [AWS Instance Scheduler](https://aws.amazon.com/solutions/instance-scheduler/) that enables you to easily configure custom start and stop schedules for their Amazon EC2 and Amazon Relational Database Service (Amazon RDS) instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

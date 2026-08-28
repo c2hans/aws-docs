@@ -163,3 +163,7 @@ RDS Custom creates the trail when you create your first DB instance. RDS Custom 
 + AWS Region
 
 When you delete an RDS Custom DB instance, the CloudTrail for this instance isn't automatically removed. In this case, your AWS account continues to be billed for the undeleted CloudTrail. RDS Custom is not responsible for the deletion of this resource. To learn how to remove the CloudTrail manually, see [Deleting a trail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-delete-trails-console.html) in the *AWS CloudTrail User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

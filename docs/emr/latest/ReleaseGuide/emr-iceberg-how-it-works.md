@@ -23,3 +23,7 @@ Iceberg offers the following features:
 + Iceberg tables act as idempotent sinks and replayable sources. This enables streaming and batch support with exactly-once pipelines. Idempotent sinks track write operations that have succeeded in the past. Therefore, the sink can request data again in case of a failure, and drop data if it has been sent multiple times.
 + View history and lineage, including table evolution, operations history, and statistics for each commit.
 + Migrate from an existing dataset with a choice of data format (Parquet, ORC, Avro) and analytics engine (Spark, Trino, PrestoDB, Flink, Hive).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ This guide describes tools for four critical aspects of any cloud migration: dis
 + [Business case analysis](business-case.md) – Use total cost of ownership (TCO) analysis to determine target resource types and sizes for running workloads on AWS with the lowest cost possible.
 + [Application mobility](app-mobility.md) – Capture resource information about the host server, configuration, storage, network state, application language, and frameworks. Then provision, configure, rehost, refactor, and automatically convert application code based on your migration and modernization approach.
 + [Data mobility](data-mobility.md) – Transfer data and databases from multiple sources into target AWS resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

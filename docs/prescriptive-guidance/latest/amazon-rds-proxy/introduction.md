@@ -33,3 +33,7 @@ Additional challenges arise after implementing this connection pooling. Operator
 To reduce the challenges associated with a self-hosted connection pooling solution, while taking advantage of the benefits, we recommend evaluating [Amazon RDS Proxy](https://aws.amazon.com/rds/proxy/) for your workloads.
 
 RDS Proxy is a fully managed, highly available database proxy. RDS Proxy uses [connection pooling](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/rds-proxy.howitworks.html#rds-proxy-connection-pooling) to make applications more scalable, more resilient to database failures, and more secure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

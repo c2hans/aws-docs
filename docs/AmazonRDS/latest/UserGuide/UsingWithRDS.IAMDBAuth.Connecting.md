@@ -31,3 +31,7 @@ The following are prerequisites for connecting to your DB instance using IAM aut
 + [Connecting to your DB instance using IAM authentication and the AWS SDK for Go](UsingWithRDS.IAMDBAuth.Connecting.Go.md)
 + [Connecting to your DB instance using IAM authentication and the AWS SDK for Java](UsingWithRDS.IAMDBAuth.Connecting.Java.md)
 + [Connecting to your DB instance using IAM authentication and the AWS SDK for Python (Boto3)](UsingWithRDS.IAMDBAuth.Connecting.Python.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

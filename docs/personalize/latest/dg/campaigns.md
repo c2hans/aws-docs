@@ -228,3 +228,7 @@ If you manually retrain your solution version, or if you want to change your cam
 Amazon Personalize provides you with operations for managing campaigns such as [ListCampaigns](API_ListCampaigns.md) to list the campaigns that you have created. You can delete a campaign by calling [DeleteCampaign](API_DeleteCampaign.md). If you delete a campaign, the solution versions that are part of the campaign are not deleted.
 
 After you have created your campaign, use it to make recommendations. For more information, see [Getting recommendations from Amazon Personalize](getting-recommendations.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

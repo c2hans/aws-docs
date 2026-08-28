@@ -183,3 +183,7 @@ The method you use to tell MemoryDB where to find the snapshot you uploaded to A
   If you use the `CreateCluster` or the `CreateCluster` MemoryDB API operation, use the parameter `SnapshotArns` to specify a fully qualified ARN for each .rdb file. For example, `arn:aws:s3:::{{amzn-s3-demo-bucket}}/{{myFolder}}/{{myBackupFilename}}.rdb`. The ARN must resolve to the snapshot files you stored in Amazon S3.
 
 During the process of creating your cluster, the data in your snapshot is written to the cluster. You can monitor the progress by viewing the MemoryDB event messages. To do this, see the MemoryDB console and choose ** Events**. You can also use the AWS MemoryDB command line interface or MemoryDB API to obtain event messages.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

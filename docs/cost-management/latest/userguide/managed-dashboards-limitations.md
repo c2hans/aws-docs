@@ -11,3 +11,7 @@ Managed Dashboards are read-only. The following actions are not available for Ma
 + **Sharing** - You cannot share Managed Dashboards with other accounts. They are already available in every account automatically.
 + **Tagging** - You cannot add tags to Managed Dashboards.
 + **Scheduling email delivery** - You cannot schedule email delivery directly on a Managed Dashboard. To schedule reports, duplicate the Managed Dashboard as a custom dashboard first, then configure the scheduled report on your custom copy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

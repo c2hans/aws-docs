@@ -99,3 +99,7 @@ AWS WAF has the following quotas for AI traffic monetization features. Quotas ma
 | Minimum price per request | $0.00001 (10^-5 USD) | No |
 | Maximum price per request | $100 | No |
 | Access token TTL range | 60-86400 seconds | No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

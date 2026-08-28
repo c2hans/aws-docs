@@ -120,3 +120,7 @@ export AWS_SESSION_TOKEN="{{your-session-token}}"
 If your OpenSearch Service domain is in a VPC, the Logstash OSS machine must be able to connect to the VPC and have access to the domain through the VPC security groups. For more information, see [About access policies on VPC domains](vpc.md#vpc-security).
 
 Supported authentication methods for Logstash include: (1) HTTP Basic Authentication with the fine-grained access control internal user database, (2) IAM credentials specified directly in the configuration file, (3) IAM credentials exported as environment variables, and (4) EC2 instance profiles when running Logstash on an EC2 instance. When using an EC2 instance profile, the `logstash-output-opensearch` plugin automatically retrieves temporary credentials from the instance metadata service, so you do not need to specify `aws_access_key_id` or `aws_secret_access_key` in the configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

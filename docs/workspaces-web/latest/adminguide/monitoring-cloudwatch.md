@@ -37,3 +37,7 @@ The metric data points are collected by each session once per minute and publish
 | UserName | Filters the metric data for Amazon WorkSpaces Secure Browser for a specified portal and user. |
 
 You can use the **SessionLoggerEventDelivered** metric to monitor the aggregate number of events from your portal, or see the number of log files that were delivered by counting the number of data points rather than summing values. We recommend configuring alarms on the **SessionLoggerTargetNotFoundError** and SessionLoggerAccessDeniedError metrics to detect accidental resource or permissions deletion.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

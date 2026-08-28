@@ -15,3 +15,7 @@ Security best practices recommend that you create IAM users with limited permiss
 + [Create an IAM user for programmatic access to Amazon Keyspaces in your AWS account](access.credentials.IAM.md)
 + [Create new access keys for an IAM user](create.keypair.md)
 + [Store access keys for programmatic access](aws.credentials.manage.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

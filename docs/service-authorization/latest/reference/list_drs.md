@@ -40,10 +40,8 @@ The following table maps API operations to the IAM actions they authorize. Only 
   - **IAM action:**  [drs:TagResource](#list_drs-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateRecoveryPlan  **
-  - **IAM action:**  [drs:CreateRecoveryPlan](#list_drs-action-CreateRecoveryPlan)
-  - **Condition key:**
-  - **Possible value(s):**
-  - **Access level:** Write
+  - **IAM action:**  [drs:CreateRecoveryPlan](#list_drs-action-CreateRecoveryPlan)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Write
+  - **IAM action:**  [drs:TagResource](#list_drs-action-TagResource)  / **Condition key:**  / **Possible value(s):**  / **Access level:** Tagging, Write
 
 - **   CreateRecoveryPlanStep  **
   - **IAM action:**  [drs:CreateRecoveryPlanStep](#list_drs-action-CreateRecoveryPlanStep)
@@ -1095,3 +1093,7 @@ AWS Elastic Disaster Recovery defines the following condition keys that can be u
 |   [aws:TagKeys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-tagkeys)  | Filters access by the presence of tag keys in the request | ArrayOfString |
 |   [drs:CreateAction](https://docs.aws.amazon.com/drs/latest/userguide/supported-iam-actions-tagging.html)  | Filters access by the name of a resource-creating API action | String |
 |   [drs:EC2InstanceARN](https://docs.aws.amazon.com/drs/latest/userguide/security_iam_authentication.html)  | Filters access by the EC2 instance the request originated from | ARN |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

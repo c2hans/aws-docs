@@ -28,3 +28,7 @@ The following third-party tools and resources can help you implement automated d
 + **Jenkins** – The [AWS EBDeployment Jenkins plugin](https://plugins.jenkins.io/awseb-deployment-plugin/) enables direct deployment to Elastic Beanstalk environments from your Jenkins Job Configuration page.
 + **Circle CI:** – The [Orbs for Elastic Beanstalk](https://circleci.com/developer/orbs/orb/circleci/aws-elastic-beanstalk) provide reusable configuration packages to deploy and scale applications to Elastic Beanstalk.
 + **Bitbucket Pipelines** – The article [Deploy Elastic Beanstalk Application using Bitbucket Pipelines](https://avishayil.medium.com/deploy-to-elastic-beanstalk-using-bitbucket-pipelines-189eb75cf052) provides a basic configuration example for implementing Bitbucket Pipelines with Elastic Beanstalk.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

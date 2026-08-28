@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 # Playbooks
 <a name="playbooks-1"></a>
 
-This solution includes the playbook remediations for the security standards defined as part of the [Center for Internet Security (CIS) AWS Foundations Benchmark v1.2.0](https://docs.aws.amazon.com/securityhub/latest/userguide/cis-aws-foundations-benchmark.html#cis1v2-standard), [CIS AWS Foundations Benchmark v1.4.0](https://docs.aws.amazon.com/securityhub/latest/userguide/cis-aws-foundations-benchmark.html#cis1v4-standard), [CIS AWS Foundations Benchmark v3.0.0](https://docs.aws.amazon.com/securityhub/latest/userguide/cis-aws-foundations-benchmark.html#cis3v0-standard), [AWS Foundational Security Best Practices (FSBP) v.1.0.0](https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html), [Payment Card Industry Data Security Standard (PCI-DSS) v3.2.1](https://docs.aws.amazon.com/securityhub/latest/userguide/pci-standard.html), and [National Institute of Standards and Technology (NIST)](https://docs.aws.amazon.com/securityhub/latest/userguide/nist-standard.html).
+This solution includes the playbook remediations for the security standards defined as part of the [Center for Internet Security (CIS) AWS Foundations Benchmark v1.2.0](https://docs.aws.amazon.com/securityhub/latest/userguide/cis-aws-foundations-benchmark.html#cis1v2-standard), [CIS AWS Foundations Benchmark v1.4.0](https://docs.aws.amazon.com/securityhub/latest/userguide/cis-aws-foundations-benchmark.html#cis1v4-standard), [CIS AWS Foundations Benchmark v3.0.0](https://docs.aws.amazon.com/securityhub/latest/userguide/cis-aws-foundations-benchmark.html#cis3v0-standard), [AWS Foundational Security Best Practices (FSBP) v1.0.0](https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html), [Payment Card Industry Data Security Standard (PCI-DSS) v3.2.1](https://docs.aws.amazon.com/securityhub/latest/userguide/pci-standard.html), and [National Institute of Standards and Technology (NIST)](https://docs.aws.amazon.com/securityhub/latest/userguide/nist-standard.html).
 
 If you have consolidated control findings enabled, then those controls are supported in all standards. If this feature is enabled, then only the SC playbook needs to be deployed. If not, then the playbooks are supported for the previously listed standards.
 
@@ -17,8 +17,8 @@ For details on a specific remediation, refer to the Systems Manager automation d
 | Description | AWS FSBP | CIS v1.2.0 | PCI v3.2.1 | CIS v1.4.0 | NIST | CIS v3.0.0 | Security control ID |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 |  **Total Remediations**  | 63 | 34 | 29 | 33 | 65 | 19 | 90 |
-|  **ASR-EnableAutoScalingGroupELBHealthCheck** <br />Auto Scaling groups associated with a load balancer should use load balancer health checks | Autoscaling.1 |  | Autoscaling.1 |  | Autoscaling.1 |  | Autoscaling.1 |
-|  **ASR-ConfigureAutoScalingLaunchConfigToRequireIMDSv2** <br />Auto Scaling group launch configurations should configure EC2 instances to require Instance Metadata Service Version 2 (IMDSv2) |  |  |  |  | Autoscaling.3 |  | Autoscaling.3 |
+|  **ASR-EnableAutoScalingGroupELBHealthCheck** <br />Auto Scaling groups associated with a load balancer should use load balancer health checks | AutoScaling.1 |  | AutoScaling.1 |  | AutoScaling.1 |  | AutoScaling.1 |
+|  **ASR-ConfigureAutoScalingLaunchConfigToRequireIMDSv2** <br />Auto Scaling group launch configurations should configure EC2 instances to require Instance Metadata Service Version 2 (IMDSv2) |  |  |  |  | AutoScaling.3 |  | AutoScaling.3 |
 |  **ASR-CreateCloudTrailMultiRegionTrail** <br />CloudTrail should be activated and configured with at least one multi-Region trail | CloudTrail.1 | 2.1 | CloudTrail.2 | 3.1 | CloudTrail.1 | 3.1 | CloudTrail.1 |
 |  **ASR-EnableEncryption** <br />CloudTrail should have encryption at rest activated | CloudTrail.2 | 2.7 | CloudTrail.1 | 3.7 | CloudTrail.2 | 3.5 | CloudTrail.2 |
 |  **ASR-EnableLogFileValidation** <br />Ensure CloudTrail log file validation is activated | CloudTrail.4 | 2.2 | CloudTrail.3 | 3.2 | CloudTrail.4 |  | CloudTrail.4 |
@@ -58,20 +58,20 @@ For details on a specific remediation, refer to the Systems Manager automation d
 |  **ASR-ConfigureS3BucketPublicAccessBlock** <br />Ensure the S3 bucket CloudTrail logs to is not publicly accessible |  | 2.3 |  |  |  |  | CloudTrail.6 |
 |  **ASR-CreateAccessLoggingBucket** <br />Ensure S3 bucket access logging is activated on the CloudTrail S3 bucket |  | 2.6 |  |  |  |  | CloudTrail.7 |
 |  **ASR-EnableKeyRotation** <br />Ensure rotation for customer-created CMKs is activated |  | 2.8 | KMS.1 | 3.8 | KMS.4 | 3.6 | KMS.4 |
-|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for unauthorized API calls |  | 3.1 |  | 4.1 |  |  | Cloudwatch.1 |
-|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for AWS Management Console sign-in without MFA |  | 3.2 |  | 4.2 |  |  | Cloudwatch.2 |
-|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for usage of the "root" user |  | 3.3 | CW.1 | 4.3 |  |  | Cloudwatch.3 |
-|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for IAM policy changes |  | 3.4 |  | 4.4 |  |  | Cloudwatch.4 |
-|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for CloudTrail configuration changes |  | 3.5 |  | 4.5 |  |  | Cloudwatch.5 |
-|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for AWS Management Console authentication failures |  | 3.6 |  | 4.6 |  |  | Cloudwatch.6 |
-|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created CMKs |  | 3.7 |  | 4.7 |  |  | Cloudwatch.7 |
-|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for S3 bucket policy changes |  | 3.8 |  | 4.8 |  |  | Cloudwatch.8 |
-|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for AWS Config configuration changes |  | 3.9 |  | 4.9 |  |  | Cloudwatch.9 |
-|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for security group changes |  | 3.10 |  | 4.10 |  |  | Cloudwatch.10 |
-|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for changes to Network Access Control Lists (NACL) |  | 3.11 |  | 4.11 |  |  | Cloudwatch.11 |
-|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for changes to network gateways |  | 3.12 |  | 4.12 |  |  | Cloudwatch.12 |
-|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for route table changes |  | 3.13 |  | 4.13 |  |  | Cloudwatch.13 |
-|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for VPC changes |  | 3.14 |  | 4.14 |  |  | Cloudwatch.14 |
+|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for unauthorized API calls |  | 3.1 |  | 4.1 |  |  | CloudWatch.1 |
+|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for AWS Management Console sign-in without MFA |  | 3.2 |  | 4.2 |  |  | CloudWatch.2 |
+|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for usage of the "root" user |  | 3.3 | CW.1 | 4.3 |  |  | CloudWatch.3 |
+|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for IAM policy changes |  | 3.4 |  | 4.4 |  |  | CloudWatch.4 |
+|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for CloudTrail configuration changes |  | 3.5 |  | 4.5 |  |  | CloudWatch.5 |
+|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for AWS Management Console authentication failures |  | 3.6 |  | 4.6 |  |  | CloudWatch.6 |
+|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for disabling or scheduled deletion of customer created CMKs |  | 3.7 |  | 4.7 |  |  | CloudWatch.7 |
+|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for S3 bucket policy changes |  | 3.8 |  | 4.8 |  |  | CloudWatch.8 |
+|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for AWS Config configuration changes |  | 3.9 |  | 4.9 |  |  | CloudWatch.9 |
+|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for security group changes |  | 3.10 |  | 4.10 |  |  | CloudWatch.10 |
+|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for changes to Network Access Control Lists (NACL) |  | 3.11 |  | 4.11 |  |  | CloudWatch.11 |
+|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for changes to network gateways |  | 3.12 |  | 4.12 |  |  | CloudWatch.12 |
+|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for route table changes |  | 3.13 |  | 4.13 |  |  | CloudWatch.13 |
+|  **ASR-CreateLogMetricFilterAndAlarm** <br />Ensure a log metric filter and alarm exist for VPC changes |  | 3.14 |  | 4.14 |  |  | CloudWatch.14 |
 |  **AWS-DisablePublicAccessForSecurityGroup** <br />Ensure no security groups allow ingress from 0.0.0.0/0 to port 22 |  | 4.1 | EC2.5 |  | EC2.13 |  | EC2.13 |
 |  **AWS-DisablePublicAccessForSecurityGroup** <br />Ensure no security groups allow ingress from 0.0.0.0/0 to port 3389 |  | 4.2 |  |  | EC2.14 |  | EC2.14 |
 |  **ASR-ConfigureSNSTopicForStack**  | CloudFormation.1 |  |  |  | CloudFormation.1 |  | CloudFormation.1 |
@@ -89,7 +89,7 @@ For details on a specific remediation, refer to the Systems Manager automation d
 |  **ASR-TerminateEC2Instance** <br />Stopped EC2 instances should be removed after a specified time period | EC2.4 |  |  |  | EC2.4 |  | EC2.4 |
 |  **ASR-EnableIMDSV2OnInstance** <br />EC2 instances should use Instance Metadata Service Version 2 (IMDSv2) | EC2.8 |  |  |  | EC2.8 | 5.6 | EC2.8 |
 |  **ASR-RevokeUnauthorizedInboudRules** <br />Security groups should only allow unrestricted incoming traffic for authorized ports | EC2.18 |  |  |  | EC2.18 |  | EC2.18 |
-| INSERT TITLE HERE<br />Security groups should not allow unrestricted access to ports with high risk | EC2.19 |  |  |  | EC2.19 |  | EC2.19 |
+|  **ASR-DisableUnrestrictedAccessToHighRiskPorts** <br />Security groups should not allow unrestricted access to ports with high risk | EC2.19 |  |  |  | EC2.19 |  | EC2.19 |
 |  **ASR-DisableTGWAutoAcceptSharedAttachments** <br />Amazon EC2 Transit Gateways should not automatically accept VPC attachment requests | EC2.23 |  |  |  | EC2.23 |  | EC2.23 |
 |  **ASR-EnablePrivateRepositoryScanning** <br />ECR private repositories should have image scanning configured | ECR.1 |  |  |  | ECR.1 |  | ECR.1 |
 |  **ASR-EnableGuardDuty** <br />GuardDuty should be enabled | GuardDuty.1 |  | GuardDuty.1 |  | GuardDuty.1 |  | GuardDuty.1 |
@@ -105,7 +105,7 @@ For details on a specific remediation, refer to the Systems Manager automation d
 |  **ASR-TagGuardDutyResource** <br />GuardDuty filters should be tagged |  |  |  |  |  |  | GuardDuty.2 |
 |  **ASR-TagGuardDutyResource** <br />GuardDuty detectors should be tagged |  |  |  |  |  |  | GuardDuty.4 |
 |  **ASR-AttachSSMPermissionsToEC2** <br />Amazon EC2 instances should be managed by Systems Manager | SSM.1 |  | SSM.3 |  |  |  | SSM.1 |
-|  **ASR-ConfigureLaunchConfigNoPublicIPDocument** <br />Amazon EC2 instances launched using Auto Scaling group launch configurations should not have public IP addresses |  |  |  |  | Autoscaling.5 |  | Autoscaling.5 |
+|  **ASR-ConfigureLaunchConfigNoPublicIPDocument** <br />Amazon EC2 instances launched using Auto Scaling group launch configurations should not have public IP addresses |  |  |  |  | AutoScaling.5 |  | AutoScaling.5 |
 |  **ASR-EnableAPIGatewayExecutionLogs**  | APIGateway.1 |  |  |  |  |  | APIGateway.1 |
 |  **ASR-EnableMacie** <br />Amazon Macie should be enabled | Macie.1 |  |  |  | Macie.1 |  | Macie.1 |
 |  **ASR-EnableAthenaWorkGroupLogging** <br />Athena workgroups should have logging enabled | Athena.4 |  |  |  |  |  | Athena.4 |
@@ -117,3 +117,7 @@ For details on a specific remediation, refer to the Systems Manager automation d
 |  **ASR-ConfigureDynamoDBAutoScaling** <br />DynamoDB tables should automatically scale capacity with demand | DynamoDB.1 |  |  |  | DynamoDB.1 |  | DynamoDB.1 |
 |  **ASR-TagDynamoDBTableResource** <br />DynamoDB tables should be tagged |  |  |  |  |  |  | DynamoDB.5 |
 |  **ASR-EnableDynamoDBDeletionProtection** <br />DynamoDB tables should have deletion protection enabled |  |  |  |  | DynamoDB.6 |  | DynamoDB.6 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

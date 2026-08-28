@@ -24,3 +24,7 @@ The AWS CDK supports several programming languages, including TypeScript, JavaSc
 **Where can I find existing L3 constructs outside of the AWS CDK?**
 
 There are too many locations to share here, but you can find many of the most popular constructs on the [AWS Solutions Constructs](https://aws.amazon.com/solutions/constructs/) website and in the AWS CDK section of the [Construct Hub](https://constructs.dev/search?q=&cdk=aws-cdk&cdkver=2&sort=downloadsDesc&offset=0).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

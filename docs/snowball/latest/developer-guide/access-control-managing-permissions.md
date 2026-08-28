@@ -323,3 +323,7 @@ The AWS Snowball Edge console needs these additional permissions for the followi
 + `kms:` – These allow the user to create or choose the KMS key that will encrypt your data. For more information, see [AWS Key Management Service in AWS Snowball Edge](data-protection.md#kms).
 + `iam:` – These allow the user to create or choose an IAM role ARN that AWS Snowball Edge will assume to access the AWS resources associated with job creation and processing.
 + `sns:` – These allow the user to create or choose the Amazon SNS notifications for the jobs they create. For more information, see [Notifications for Snowball Edge](notifications.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

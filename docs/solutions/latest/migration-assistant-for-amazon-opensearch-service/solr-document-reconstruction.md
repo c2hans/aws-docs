@@ -17,3 +17,7 @@ Keep the following reconstruction behavior in mind when you plan the backup:
 + If a live Lucene document has no reconstructable non-internal stored fields, the document is skipped.
 
 Before taking the production backup, review important Solr fields and make sure values that must exist in the target are stored or can be reloaded another way. After backfill, spot-check representative target documents, especially fields that were `stored=false`, fields that relied on `docValues`, multi-valued fields, `copyField` destinations, and field names that contain dots.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

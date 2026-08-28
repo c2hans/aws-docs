@@ -242,3 +242,7 @@ On the final page of the installation wizard, select **Add path to environment v
 If you haven't already, be sure to configure AWS IoT and your FreeRTOS download to connect your device to the AWS Cloud. See [First steps](freertos-prereqs.md) for instructions.
 
 For general troubleshooting information about Getting Started with FreeRTOS, see [Troubleshooting getting started](gsg-troubleshooting.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

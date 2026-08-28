@@ -59,3 +59,7 @@ In AWS KMS, you can implement granular-level access control by using the followi
 <a name="auditing-and-logging"></a>
 
 AWS KMS integrates with AWS CloudTrail and Amazon EventBridge for logging and monitoring purposes. All AWS KMS API operations are recorded and auditable in CloudTrail logs. You can use Amazon CloudWatch, EventBridge, and AWS Lambda to set up custom monitoring solutions to configure notifications and automatic remediation. For more information, see [Logging and monitoring](https://docs.aws.amazon.com/kms/latest/developerguide/security-logging-monitoring.html) (AWS KMS documentation).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/iot-expresslink/latest/oemonboardingguid
    (For more information on non-Amazon-signed certificates and certificate authorities on AWS IoT Core, see [ Create your own client certificates](https://docs.aws.amazon.com/iot/latest/developerguide/device-certs-your-own.html).
 
 1. Record the *CA certificate id* that is shown in the output of the command above. The CA certificate id is a long hexadecimal string. You will need this later.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

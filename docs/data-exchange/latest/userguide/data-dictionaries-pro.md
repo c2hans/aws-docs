@@ -17,3 +17,7 @@ When you create a data dictionary, you include details about what columns are in
 A data dictionary is attached to a product and associated with a data set. If you want to have more than one data dictionary for potential subscribers to evaluate, you can create two or more versions of the same product with the same data sets. Then, add a different data dictionary to each product.
 
 For more information about how to add a data dictionary to a product, see [Publishing a new product in AWS Data Exchange](publishing-products.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

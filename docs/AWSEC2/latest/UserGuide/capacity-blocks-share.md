@@ -194,3 +194,7 @@ Capacity Blocks can be extended while they are shared. Only the owner account ca
  Owners are billed for the Capacity Blocks they share and pay upfront for the Capacity Block when they purchase it. Owners also pay for operating system charges for instances they run on the Capacity Block.
 
  Consumers are billed only for the operating system charges for instances they run in the shared Capacity Block. Consumers are not charged for the Capacity Block reservation itself.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

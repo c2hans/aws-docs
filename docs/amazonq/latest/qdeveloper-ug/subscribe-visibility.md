@@ -54,3 +54,7 @@ Before you begin, make sure that:
 1. Choose **Save**.
 
    Trusted access to Amazon Q is now enabled. Users and groups who are subscribed in member accounts now appear in the Amazon Q console (not the Amazon Q Developer console) when you're signed in as a management account administrator.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

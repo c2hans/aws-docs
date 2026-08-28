@@ -225,3 +225,7 @@ Always implement connection pooling with appropriate values for parameters based
 **Configuration issues**
 
 Ensure you have configured appropriate routing from your application to the Amazon DocumentDB resources. Utilize TLS for encryption in transit and implement least privilege access. Verify your Amazon DocumentDB credentials and validate connection string values.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

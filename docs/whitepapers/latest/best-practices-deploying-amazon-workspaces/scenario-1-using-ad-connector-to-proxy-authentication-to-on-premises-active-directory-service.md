@@ -41,3 +41,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-deploy
  AD Connector is a proxy service. It doesn’t store or cache user credentials. Instead, all authentication, lookup, and management requests are handled by your AD. An account with delegation privileges is required in your directory service with rights to read all user information and join a computer to the domain.
 
  In general, the WorkSpaces experience is highly dependent on the Active Directory authentication process shown in the previous figure. For this scenario, the WorkSpaces authentication experience is highly dependent on the network link between the customer AD and the WorkSpaces VPC. The customer should ensure the link is highly available.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

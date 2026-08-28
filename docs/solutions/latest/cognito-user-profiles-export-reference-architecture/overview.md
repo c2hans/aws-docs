@@ -23,3 +23,7 @@ The Recovery point objective (RPO) is determined by the time the `ExportWorkflow
 <a name="limitations1"></a>
 
 Customers interested in using this guidance should be aware that it does not export sensitive information, such as user passwords; that user pools with multi-factor authentication (MFA) enabled are not supported; and that advanced security features are not supported. For a full list of limitations, refer to [Limitations](guidance-components.md#limitations) in the guidance components section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for User Profiles Export with Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

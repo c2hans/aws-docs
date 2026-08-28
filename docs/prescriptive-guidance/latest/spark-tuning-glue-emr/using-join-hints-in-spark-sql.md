@@ -106,3 +106,7 @@ By default, the optimizer chooses Shuffle Hash join when the Broadcast Hash join
 The *Shuffle-and-Replicate Nested Loop* join, also known as a *Cartesian Product *join, works very similar to a Broadcast Hash join, except the dataset is not broadcasted.
 
 In this join algorithm, *shuffle *doesn't refer to a true shuffle because records with the same keys aren't sent to the same partition. Instead, the entire partition from both datasets are copied over the network. When the partitions from the datasets are available, a Nested Loop join is performed. If there are `X` number of records in the first dataset and `Y` number of records in the second dataset in each partition, each record in the second dataset is joined with every record in the first dataset. This continues in a loop `X × Y` times in every partition.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

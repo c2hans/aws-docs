@@ -288,3 +288,7 @@ To prevent ongoing charges to your AWS account after you're done using this samp
 <a name="sample-php-troubleshooting"></a>
 
 In the event that you encounter issues with the PHP CLI runner, you must ensure that the runner has been set to PHP and that debugger mode is enabled.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

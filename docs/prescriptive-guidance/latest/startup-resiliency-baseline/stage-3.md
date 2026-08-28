@@ -16,3 +16,7 @@ As your startup grows and customers start depending on you more heavily, gradual
 The key is balance. Every hour spent on testing is an hour not spent building new features. But a few strategic tests can prevent the kinds of outages that lose customer trust. Use automated tools provided by AWS to do the heavy lifting, and focus on the testing that matters most to your customers. This helps you build confidence in your application's resilience without slowing innovation.
 
 The next chapter explores how to evolve this foundation as your startup scales.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

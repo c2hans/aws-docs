@@ -90,3 +90,7 @@ The current state of the connection alias, returned as a string.
 <a name="aws-resource-workspaces-connectionalias--seealso"></a>
 + [ConnectionAlias](https://docs.aws.amazon.com/workspaces/latest/api/API_ConnectionAlias.html) in the *Amazon WorkSpaces API Reference*
 + [Cross-Region Redirection for Amazon WorkSpaces](https://docs.aws.amazon.com/workspaces/latest/adminguide/cross-region-redirection.html) in the *Amazon WorkSpaces Administration Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

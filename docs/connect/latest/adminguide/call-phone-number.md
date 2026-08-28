@@ -9,7 +9,7 @@ This topic defines the flow block for the call phone number used for voice inter
 
 ## Description
 <a name="call-phone-number-description"></a>
-+ Use to place an outbound call from an **Outbound Whisper** flow.
++ Use this block to set the caller ID number for an outbound call in an **Outbound Whisper** flow.
 
 ## Supported channels
 <a name="call-phone-number-channels"></a>
@@ -71,3 +71,7 @@ Connect Customer includes a set of sample flows. For instructions that explain h
 
 See these topics for more information about caller ID works:
 + [Set up outbound caller ID in Connect Customer](queues-callerid.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

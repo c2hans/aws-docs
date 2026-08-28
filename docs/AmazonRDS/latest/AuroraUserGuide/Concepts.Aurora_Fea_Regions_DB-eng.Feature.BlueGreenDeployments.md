@@ -20,3 +20,7 @@ The following Regions and engine versions are available for Blue/Green Deploymen
 | Region | Aurora PostgreSQL 17 | Aurora PostgreSQL 16 | Aurora PostgreSQL 15 | Aurora PostgreSQL 14 | Aurora PostgreSQL 13 | Aurora PostgreSQL 12 | Aurora PostgreSQL 11 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | All AWS Regions | Version 17.4 and higher | Version 16.1 and higher | Version 15.4 and higher | Version 14.9 and higher | Version 13.12 and higher | Version 12.16 and higher | Version 11.21 and higher |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

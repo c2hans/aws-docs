@@ -46,3 +46,7 @@ You can use one of several methods to merge or combine files from Amazon S3 buck
   For more details about combining files using a manifest, see [Creating a dataset using Amazon S3 files](create-a-data-set-s3.md).
 + **Merge files without using a manifest** – To merge multiple files into one without having to list them individually in the manifest, you can use Athena. With this method, you can simply query your text files, like they are in a table in a database. For more information, see the post [Analyzing data in Amazon S3 using Athena](https://aws.amazon.com/blogs/big-data/analyzing-data-in-s3-using-amazon-athena/) in the Big Data blog.
 + **Use a script to append files before importing** – You can use a script designed to combine your files before uploading.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

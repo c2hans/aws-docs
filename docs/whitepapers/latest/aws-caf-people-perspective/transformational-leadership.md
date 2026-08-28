@@ -63,3 +63,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-people-perspe
 +  Programmatically optimizing agility and value of cloud scale through ongoing risk mitigation.
 
  Changing behavior and developing employees, leaders, and teams fosters a culture of continuous learning, where people have permission and are actively encouraged to learn and experiment without fear of failure. Instituting this culture starts at the top. Senior leaders should align on and commit to employee development as a business imperative and priority.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

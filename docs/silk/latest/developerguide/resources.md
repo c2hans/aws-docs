@@ -53,3 +53,7 @@ Hosting and Deploying with Amazon Web Services
 + Crockford, Douglas. [JavaScript: The Good Parts](http://www.amazon.com/JavaScript-Good-Parts-Douglas-Crockford/dp/0596517742)
 + Grigorik, Ilya. [High Performance Browser Networking: What Every Web Developer Should Know About Networking and Web Performance](http://www.amazon.com/High-Performance-Browser-Networking-performance/dp/1449344763)
 + Souders, Steve. [High Performance Web Sites: Essential Knowledge for Front-End Engineers](http://www.amazon.com/High-Performance-Web-Sites-Essential/dp/0596529309)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Silk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query silk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

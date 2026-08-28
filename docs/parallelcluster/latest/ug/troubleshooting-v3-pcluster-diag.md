@@ -130,3 +130,7 @@ To use a version other than the tip of `develop`, replace `develop` in the URL w
 Keep the following in mind:
 + The refresh applies only to the node that you run it on. Repeat it on every node that you want to diagnose with the newer checks.
 + The tool source is baked into the AMI, so a node that gets replaced comes back with the version from the AMI.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ You can create a budget using a template with recommended configurations. Budget
 1. For **Email recipients**, enter the email addresses that you want the notifications to be sent to. Separate multiple email addresses with a comma. A notification can have up to 10 email addresses.
 
 1. Choose **Create budget**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

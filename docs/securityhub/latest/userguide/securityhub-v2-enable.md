@@ -105,3 +105,7 @@ This section includes three steps:
 +  A service-linked role called [AWSServiceRoleForSecurityHubV2](https://docs.aws.amazon.com/securityhub/latest/userguide/security-iam-awsmanpol.html#security-iam-awsmanpol-awssecurityhubv2servicerolepolicy).
 +  Service-linked configuration recorders. See [Service-linked recorder](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-concepts.html#concept-slcr) in the Security Hub concepts documentation for more details.
 +  A service-linked analyzer. See [Service-linked analyzer](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-v2-concepts.html#concept-sla) in the Security Hub concepts documentation for more details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

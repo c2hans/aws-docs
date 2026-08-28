@@ -46,3 +46,7 @@ If you are working with a large dataset (on the order of 50 GiB or larger) that 
 1. Finally, under **Tags**, you can associate tags with your new Neptune Analytics graph.
 
 1. When everything is configured as you want it to be, choose **Create Graph**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

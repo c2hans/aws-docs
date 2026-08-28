@@ -138,3 +138,7 @@ Plan trigger execution statistics will be captured in the explain when `ANALYZE`
 - **off**
   - **Allowed values:** 0(off) / **Description:** Doesn't include triggers execution statistics.
   - **Allowed values:** 1(on) / **Description:** Includes triggers execution statistics.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

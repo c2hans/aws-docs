@@ -67,3 +67,7 @@ Amazon Redshift provides the following APIs for data retrieval.
 | <a name="redshift-ListTables"></a>[ListTables](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html) | List tables through the Amazon Redshift console | List |
 | <a name="redshift-ViewQueriesFromConsole"></a>[ViewQueriesFromConsole](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html) | View query results through the Amazon Redshift console | List |
 | <a name="redshift-ViewQueriesInConsole"></a>[ViewQueriesInConsole](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html) | Terminate running queries and loads through the Amazon Redshift console | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

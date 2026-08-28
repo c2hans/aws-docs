@@ -107,3 +107,7 @@ The following date functions are deprecated because they run only on the leader 
 + LOCALTIMESTAMP. Use [GETDATE function](r_GETDATE.md) or [SYSDATE](r_SYSDATE.md) instead.
 + ISFINITE
 + NOW. Use [GETDATE function](r_GETDATE.md) or [SYSDATE](r_SYSDATE.md) instead. If you use the NOW function within a materialized view, it sets to the timestamp of the creation of the materialized view, instead of the current timestamp.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

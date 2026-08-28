@@ -94,3 +94,7 @@ Amazon RDS supports the following database engines, so you can choose the right 
 Each engine comes with multiple versions and configurations, so you can align with your existing application requirements or take advantage of newer features.
 
 This guide helps you select and configure a database engine during the setup process and provides links to resources for engine-specific optimization and features.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

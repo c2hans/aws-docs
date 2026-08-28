@@ -21,3 +21,7 @@ Exporting images and volumes is subject to the following limitations:
 + By default, you can't have more than 5 conversion tasks per Region in progress at the same time. This limit is adjustable up to 20.
 + VMs with volumes larger than 1 TiB are not supported.
 + You can export a volume to either an unencrypted S3 bucket or to a bucket encrypted using SSE-S3 encryption. You cannot export to an S3 bucket encrypted using SSE-KMS encryption.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vm-import` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

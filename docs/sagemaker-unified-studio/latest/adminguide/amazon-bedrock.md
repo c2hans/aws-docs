@@ -91,3 +91,7 @@ If you want to publish models from your associated account, the IAM identity of 
 1. Choose the **Amazon Bedrock models** tab and locate the **Model governance project section**.
 
 1. In the **Model governance project section**, choose **Add IAM users or roles**, then choose **Associated account**, specify the ARN of the user that you want to add from the associated account, then choose **Add**, and then choose **Add user(s)**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

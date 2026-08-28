@@ -31,3 +31,7 @@ At the **Queues** table, choose **View agents**. Below the **Queues** table, an 
 At the **Queues** table, choose **View Steps**. Below the **Queues** table, a **Steps** table appears. It is filtered to display all the routing steps that are being used on active contacts in that queue, as shown in the following image.
 
 ![The queues table, view steps option, the steps table.](http://docs.aws.amazon.com/connect/latest/adminguide/images/one-choose-drill-downs-example3.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

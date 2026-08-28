@@ -26,3 +26,7 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/zixi-output-set
    + **Key Value:** Enter the encryption key that you and the operator of the downstream system agreed on. See the tooltip.
 
 Repeat the preceding steps to create a second output in this output group, if applicable. Use the same user name and password. You can also use the same encryption key, if you are encrypting.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

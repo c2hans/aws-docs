@@ -56,3 +56,7 @@ if stop_reason == "tool_use":
 ```
 
 It is important to keep security in mind when you are defining and invoking tools. LLMs like Amazon Nova do not have access to the session details so permissions should be validated when necessary before invoking a tool. Rely on user details from your session instead of augmenting the prompt and allowing Amazon Nova to inject it into the tool call.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

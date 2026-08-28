@@ -70,3 +70,7 @@ The Machine Payments Protocol (MPP) is an open, HTTP-native standard for program
 <a name="_microtransaction"></a>
 
 A microtransaction is a small-value payment (often in cents) for an individual API call, tool invocation, or content access. Traditional payment systems have minimum transaction costs, making them inefficient for payments under $0.01. AgentCore payments uses cryptocurrency and stablecoins to enable cost-effective micropayments.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

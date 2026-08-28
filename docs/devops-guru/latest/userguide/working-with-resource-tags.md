@@ -72,3 +72,7 @@ When you tag Amazon RDS resources, you must tag the database instance and not th
 + You can use the AWS Tag Editor to manage tags by resources in your Region and by resources in specific AWS services. For more information, see [Tag editor](https://docs.aws.amazon.com/ARG/latest/userguide/tag-editor.html) in the *AWS Resource Group and Tags User Guide*.
 
 When you add a tag to a resource, you can add the *key* only, or the *key* and a *value*. For example, you can create a tag with the *key* `devops-guru-` for all the resources that are part of your DevOps application. You can also add a tag with the *key* `devops-guru-` and the *value* `RDS`, then add that *key*-*value* pair to only the Amazon RDS resources in your application. This is useful if you want to view insights in the console that are generated from only the Amazon RDS resources in your application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

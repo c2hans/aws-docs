@@ -62,3 +62,7 @@ You can delete a race up until the time the race begins from the race details vi
 <a name="cloning-a-race"></a>
 
 You can clone or duplicate a race in the event that you would like to create a new race with the same configuration as a current or past race. To clone a race, click the **Races** tab in the left sidebar, then click **Manage races** in the left sidebar. Select the race you would like to clone from the table, then click **Clone race** in the upper-right corner of the table. This will bring you to the same experience that is used for creating a race, but with all of the form fields pre-populated using the values of the race being cloned. You may choose to click through all of the steps to keep all settings the same, or make any changes as desired.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

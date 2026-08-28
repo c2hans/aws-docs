@@ -166,3 +166,7 @@ If indexes on generated columns exist for JSON documents, the query optimizer ca
 | Return JSON documents matching a pattern in specific fields (root level) |  <pre>SELECT e.emp_data.name FROM employees e<br />WHERE e.data.active = 'true';</pre>  |  <pre>SELECT emp_data.name FROM employees<br />WHERE emp_data->>"$.active" = 'true';</pre>  |
 
 For more information, see [The JSON Data Type](https://dev.mysql.com/doc/refman/5.7/en/json.html) and [JSON Functions](https://dev.mysql.com/doc/refman/5.7/en/json-functions.html) in the *MySQL documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -61,3 +61,7 @@ If your network security team doesn't allow the use of web sockets, you can't cu
 + [View running queries or query history](CloudWatchLogs-Insights-Query-History.md)
 + [Encrypt query results with AWS Key Management Service](CloudWatchLogs-Insights-Query-Encrypt.md)
 + [Generate a natural language summary from CloudWatch Logs Insights query results](CloudWatchLogs-Insights-Query-Results-Summary.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ For a complete list of pipe execution steps, see [Specifying EventBridge Pipes l
 ![The pipe execution flow, including all stages and steps with all possible outcomes.](http://docs.aws.amazon.com/eventbridge/latest/userguide/images/pipes-logging-detailed_eventbridge_architecture.svg)
 
 Note that target invocation may result in a partial failure of the batch. For more information, see [Batching behavior](eb-pipes-batching-concurrency.md#pipes-batching).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

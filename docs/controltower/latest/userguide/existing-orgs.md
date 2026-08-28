@@ -36,3 +36,7 @@ This video (4:01) describes how to work with the **Organization** page in AWS Co
 + [Register an existing organizational unit with AWS Control Tower](importing-existing.md)
 +  [About enrolling existing accounts](enroll-account.md)
 +  [Transfer an account to a different organization](account-transfer.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

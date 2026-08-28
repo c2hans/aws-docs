@@ -86,3 +86,7 @@ You can instruct the agent to remember, update, or forget information through na
 The agent operates within a fixed-size context window based on the underlying large language model. Each message in a conversation adds to the context. When the conversation approaches the limit, the agent automatically summarizes older messages to make room for new ones. The agent retains the most recent messages in full and replaces older portions with a summary that preserves the key findings, decisions, and current state of the conversation.
 
 For details on how context files, memory, and reports are stored and secured, see [Data protection](data-protection.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS FinOps Agent (preview). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finops-agent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ Tensor parallelism is available for PyTorch in the SageMaker model parallelism l
 + [Run a SageMaker Distributed Model Parallel Training Job with Tensor Parallelism](model-parallel-extended-features-pytorch-tensor-parallelism-examples.md)
 + [Support for Hugging Face Transformer Models](model-parallel-extended-features-pytorch-hugging-face.md)
 + [Ranking Mechanism when Using a Combination of Pipeline Parallelism and Tensor Parallelism](model-parallel-extended-features-pytorch-ranking-mechanism.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

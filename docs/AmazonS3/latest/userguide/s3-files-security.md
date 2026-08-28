@@ -38,3 +38,7 @@ We strongly recommend that you never put confidential or sensitive information, 
 + [How S3 Files works with IAM](s3-files-security-iam.md)
 + [Control client access to an S3 Files file system](s3-files-access-point-policy-examples.md)
 + [POSIX permissions in S3 Files](s3-files-posix-permissions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

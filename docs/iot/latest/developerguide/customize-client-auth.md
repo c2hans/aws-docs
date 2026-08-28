@@ -123,3 +123,7 @@ An object that specifies the client authentication configuration for a domain.
 The Amazon Resource Name (ARN) of the Lambda function that AWS IoT invokes in TLS layer when new connection is being established. To customize client authentication to perform custom client certificate validation, you must add the ARN of the Lambda function that you've created in the previous step.
 
 For more information, see [CreateDomainConfiguration](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateDomainConfiguration.html) and [UpdateDomainConfiguration](https://docs.aws.amazon.com/iot/latest/apireference/API_UpdateDomainConfiguration.html) from the *AWS IoT API Reference*. For more information about domain configurations, see [Domain configurations](https://docs.aws.amazon.com/iot/latest/developerguide/iot-custom-endpoints-configurable.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

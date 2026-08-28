@@ -118,3 +118,7 @@ For Linux WorkSpaces, high DPI mode isn't available for multiple monitors at thi
 1. Adjust the font size by using the **Dots per inch (DPI) **setting.
 
 1. Close the dialog box.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

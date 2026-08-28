@@ -132,3 +132,7 @@ Amazon Aurora global databases offer many other advantages, including the follow
 + Fast replication from primary to secondary Amazon Aurora DB clusters – Replication has little performance impact on the primary cluster. It occurs at the storage layer, with typical cross-Region replication latencies of less than 1 second.
 
 This pattern also uses AWS DMS for replication. Amazon Aurora databases provide the ability to create read replicas, which can simplify the replication process and the DR setup. However, AWS DMS is often used to replicate when data transformations are required or when the target database requires additional indexes that the source database does not have.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

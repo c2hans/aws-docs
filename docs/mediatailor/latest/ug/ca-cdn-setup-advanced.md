@@ -47,3 +47,7 @@ For detailed information about configuring SSAI with CDNs, see:
 + [Understand ad insertion architecture for CDN and MediaTailor integrations](ssai-cdn-architecture-overview.md) - Learn about SSAI architecture and concepts
 + [Set up basic MediaTailor SSAI with a CDN for optimal ad delivery](configuring-ssai-cdn.md) - Step-by-step SSAI configuration instructions
 + [Troubleshoot MediaTailor SSAI with CDNs for uninterrupted ad delivery](troubleshooting-ssai-cdn.md) - Troubleshoot common SSAI integration issues
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

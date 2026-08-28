@@ -24,3 +24,7 @@ If you've specified a custom format for the computer names in your custom or BYO
 
 **Important**
 After a WorkSpace is created, you can safely change its computer name. For example, you can execute a PowerShell script with the command `Rename-Computer` on your WorkSpace or remotely. The updated computer name value will then be shown for a WorkSpace in the Amazon WorkSpaces console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

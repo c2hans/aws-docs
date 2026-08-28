@@ -856,3 +856,7 @@ View details about updates to AWS managed policies for CodeCommit since this ser
 | [AWS managed policy: AWSCodeCommitFullAccess](#managed-policies-full) and [AWS managed policy: AWSCodeCommitPowerUser](#managed-policies-poweruser) – Update to existing policies | CodeCommit added a permission to these policies to support an additional notification type using Amazon Q Developer in chat applications.<br />The AWSCodeCommitPowerUser and AWSCodeCommitFullAccess policies have been changed to add a permission, `chatbot:ListMicrosoftTeamsChannelConfigurations`. | May 16, 2023 |
 | [AWS managed policy: AWSCodeCommitReadOnly](#managed-policies-read) – Update to an existing policy | CodeCommit removed a duplicate permission from the policy.<br />The AWSCodeCommitReadOnly has been changed to remove a duplicate permission, `"iam:ListAccessKeys"`. | August 18, 2021 |
 | CodeCommit started tracking changes | CodeCommit started tracking changes for its AWS managed policies. | August 18, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

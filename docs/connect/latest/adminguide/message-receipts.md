@@ -24,3 +24,7 @@ By default message receipts are already enabled in the [Test chat](chat-testing.
 ![The message receipts option, enabled.](http://docs.aws.amazon.com/connect/latest/adminguide/images/chatwidget-enable-messagereceipt.png)
 
 Message receipts are now enabled. Customers who are using the communications widget will start seeing *Delivered* and *Read* receipts immediately.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,3 +33,7 @@ We recommend that you consider the following limitations of using base backups b
 + A dump and restore can be time-consuming for larger databases (that is, databases from 50 GB to 300 GB).
 + This option requires complete database downtime.
 + A significant amount of diskspace is required on the server to take backups and then copy the backups to Amazon EC2.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

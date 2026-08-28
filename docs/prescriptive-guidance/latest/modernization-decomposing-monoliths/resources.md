@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/modernizati
 ## Other resources
 <a name="other-resources.3dea7391-866b-565c-82bf-0b1686694a20"></a>
 + [Break down a monolithic application into microservices with AWS Copilot, Amazon ECS, Docker, and AWS Fargate](https://aws.amazon.com/getting-started/hands-on/break-monolith-app-microservices-ecs-docker-ec2/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

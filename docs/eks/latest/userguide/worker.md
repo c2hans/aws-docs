@@ -34,3 +34,7 @@ For more information about nodes from a general Kubernetes perspective, see [Nod
 + [Create self-managed Microsoft Windows nodes](launch-windows-workers.md)
 + [Create self-managed Ubuntu Linux nodes](launch-node-ubuntu.md)
 + [Update self-managed nodes for your cluster](update-workers.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ The ADK has two components:
 An action contains two components:
 + **Action definition** – Provides the speciﬁcation for integration with Amazon CodeCatalyst CI/CD workflows. It defines the basic configuration for the action such as inputs, outputs, language, permissions, and run entry point. This `action.yml` file provides necessary information to a CodeCatalyst workflow of what the action interface and the execution profile looks like.
 + **Action code** – The actual source code that is run when an action starts on CodeCatalyst. For the action to succeed, the action code must conform with the runtime proﬁle as deﬁned in the action definition. The code then runs on the compute provided in the action definition. For example, a runtime profile can include Node.js and the Amazon Elastic Compute Cloud (Amazon EC2) compute type.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

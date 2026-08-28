@@ -50,3 +50,7 @@ To train models and optimize them for deployment, see [prebuilt Docker images](h
 If you have varying amounts of traffic to your endpoints, you might want to try autoscaling. For example, during peak hours, you might require more instances to process requests. However, during periods of low traffic, you might want to reduce your use of computing resources. To dynamically adjust the number of instances provisioned in response to changes in your workload, see [Automatic scaling of Amazon SageMaker AI models](endpoint-auto-scaling.md).
 
 If you have unpredictable traffic patterns or don’t want to set up scaling policies, you can also use Serverless Inference for an endpoint. Then, SageMaker AI manages autoscaling for you. During periods of low traffic, SageMaker AI scales down your endpoint, and if traffic increases, then SageMaker AI scales your endpoint up. For more information, see the [Deploy models with Amazon SageMaker Serverless Inference](serverless-endpoints.md) documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

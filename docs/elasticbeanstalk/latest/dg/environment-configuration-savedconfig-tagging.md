@@ -89,3 +89,7 @@ To use some of the EB CLI and AWS CLI commands with an Elastic Beanstalk saved c
 $ aws elasticbeanstalk describe-applications --application-names {{my-app}}
 ```
 Look for the `ConfigurationTemplates` key in the command's output. This element shows the saved configuration's name. Use this name where `{{my-template}}` is specified in the commands mentioned on this page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ When you're viewing the contact record for the affected contact, go to the [Disc
 For calls with `PotentialDisconnectIssue`, Connect Customer populates the field with the detected reason of `AGENT_CONNECTIVITY_ISSUE` or `AGENT_DEVICE_ISSUE`.
 +  `AGENT_CONNECTIVITY_ISSUE`: A network connectivity issue between the agent workstation and Connect Customer is causing the call to disconnect. For additional troubleshooting steps, see [Troubleshoot your network](network-ts.md).
 +  `AGENT_DEVICE_ISSUE`: A workstation or headset issue is preventing two-way audio, causing one party to disconnect. For additional troubleshooting steps, see [Troubleshoot an agent's workstation](agent-ts.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -243,7 +243,6 @@ Non-native counter metrics are counters defined by Amazon Aurora. A non-native m
 | read\_latency | I/O | Milliseconds | db.IO.read\_latency | The time spent reading data file blocks by backends in this instance. | blk\_read\_time / blks\_read |
 | storage\_blks\_read | I/O | Blocks | db.IO.storage\_blks\_read | Total number of shared blocks read from aurora storage. | Not applicable |
 | storage\_blk\_read\_time | I/O | Milliseconds | db.IO.storage\_blk\_read\_time | If track\_io\_timing is enabled, it tracks the total time spent reading data file blocks from Aurora storage, in milliseconds, otherwise the value is zero. For more information, see [track\_io\_timing](https://www.postgresql.org/docs/current/runtime-config-statistics.html#GUC-TRACK-IO-TIMING). | Not applicable |
-| num\_blocked\_sessions | Locks | db.Locks.num\_blocked\_sessions | The number of blocked sessions. | – |
 | active\_count | State | Sessions | db.state.active\_count | The number of sessions in the active state. | Not applicable |
 | idle\_count | State | Sessions | db.state.idle\_count | The number of sessions in the idle state. | Not applicable |
 | idle\_in\_transaction\_aborted\_count | State | Sessions | db.state.idle\_in\_transaction\_aborted\_count | The number of sessions in the idle in transaction (aborted) state. | Not applicable |
@@ -266,3 +265,7 @@ Non-native counter metrics are counters defined by Amazon Aurora. A non-native m
 | max\_connections | Users | Users | db.User.max\_connections | The maximum number of connections allowed for a database as configured in max\_connections parameter. | Not applicable |
 | total\_auth\_attempts | Users | Users | db.User.total\_auth\_attempts | The number of connection attempts to this instance. | Not applicable |
 | archive\_failed\_count | WAL | Files per minute | db.WAL.archive\_failed\_count | The number of failed attempts for archiving WAL files, in files per minute. | Not applicable |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

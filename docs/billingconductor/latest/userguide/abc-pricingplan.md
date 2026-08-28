@@ -66,3 +66,7 @@ A single pricing plan (AWS or customer managed) can be applied to multiple billi
 
 **Note**
 Updating a pricing plan also affects the billing details of each billing group, where the pricing plan is associated. If the pricing plan is associated with a billing group or set of billing groups, this change affects only the current billing period. Previous billing periods remain the same.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing Conductor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query billingconductor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,3 +59,7 @@ In our example, the first listener port is 10001. That port is associated with t
 | 12518 | 192.0.3.4 | 88 |
 | 12519 | 192.0.3.4 | 89 |
 | 12520 | 192.0.3.4 | 90 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,3 +56,7 @@ Using these sets of tools, your partners are equipped to handle common compute r
 + *Latency and load balancing: * Analyze Application Load Balancer metrics to detect latency issues or uneven traffic distribution. Adjust target group settings and routing rules to optimize load balancing.
 + *Media processing and streaming issues:* Troubleshoot media encoding failures, streaming latency, or content delivery problems with MediaLive tools. Optimize video encoding settings and CDN configurations.
 + *Event-driven workflow debugging: * Identify issues in event-driven architectures using Amazon EventBridge. Check rule configurations, target configurations, and event source integrations to ensure events are handled correctly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Diagnostic Tools. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query diagnostic-tools` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

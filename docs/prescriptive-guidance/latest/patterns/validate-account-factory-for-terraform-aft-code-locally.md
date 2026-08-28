@@ -143,3 +143,7 @@ terraform "$@"
 | Task | Description | Skills required |
 | --- | --- | --- |
 | Roll out the changes to all of your accounts that are managed by AFT. | To roll out the changes to multiple AWS accounts that are managed by AFT, follow the instructions in [Re-invoke customizations](https://docs.aws.amazon.com/controltower/latest/userguide/aft-account-customization-options.html#aft-re-invoke-customizations) in the AWS Control Tower documentation. | AWS administrator |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

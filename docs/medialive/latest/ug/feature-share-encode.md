@@ -46,3 +46,7 @@ These rules apply to encode sharing:
 + You can clone only within the same channel. You can't clone across channels.
 
 For instructions to clone encodes when you are creating a channel, see [Set up the video encode](creating-a-channel-step6.md), [Set up the audio encodes](creating-a-channel-step7.md), and [Set up the captions encodes](creating-a-channel-step8.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -140,3 +140,7 @@ The Amazon CloudWatch publishing option is available for S3 Storage Lens dashboa
 + **To obtain detailed records for the requests that are made to an S3 bucket:** [Set up S3 access logs](https://docs.aws.amazon.com/AmazonS3/latest/userguide/ServerLogs.html).
 
 For a list of all the different AWS services that you can use to monitor your data, see [Logging and monitoring in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/monitoring-overview.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

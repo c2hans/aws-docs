@@ -80,3 +80,7 @@ Observability and instrumentation are critical for reducing MTTD and MTTR.
 <a name="runbooks-and-automation"></a>
 
  Similarly, after you determine what is wrong and what course of action will repair the workload, operators typically need to perform some set of steps to do that. For example, after a failure, the fastest way to repair the workload might be to restart it, which can involve multiple, ordered steps. Utilizing a runbook that either automates these steps or provides specific direction to an operator will expedite the process and help reduce the risk of inadvertent action.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

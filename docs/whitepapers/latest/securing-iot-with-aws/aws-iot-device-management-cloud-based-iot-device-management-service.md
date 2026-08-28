@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
  The ability to push software updates isn’t limited to cloud services. OTA update jobs in FreeRTOS allow customers to use AWS IoT Device Management to schedule software updates. Similarly, customers can also create an AWS IoT Greengrass core update job for one or more AWS IoT Greengrass core devices using AWS IoT Device Management to deploy security updates, bug fixes, and new AWS IoT Greengrass features to connected devices.
 
  With the secure tunneling feature, customers can establish a secure remote communications session to a device. This provides secure connectivity to individual devices, which you can then use to diagnose issues and act to solve in just a few clicks. You can also make multiple, concurrent client connections over a single secure tunnel, enabling you to perform more advanced device troubleshooting, such as issuing remote shell commands to a device while simultaneously debugging a web application on the same device.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -211,3 +211,7 @@ In this step, you will delete the resources you have created for this tutorial, 
 <a name="congratulations"></a>
 
 You have implemented a fanout scenario using Amazon SNS and Amazon SQS. You are now ready to use Amazon SNS and Amazon SQS together to deliver messages to applications that require immediate notification of an event, or to buffer messages in Amazon SQS queues for other applications to process later.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

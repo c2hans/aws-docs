@@ -21,3 +21,7 @@ For example, consider this queue with a 5-minute timeout and the following playe
 1. Spend the remaining queue time until timeout searching for a location where all player latencies are less than 200 milliseconds.
 
 ![A console screen shot that illustrates the example latency policies that gradually relax.](http://docs.aws.amazon.com/gameliftservers/latest/developerguide/images/queue-latency-policy.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

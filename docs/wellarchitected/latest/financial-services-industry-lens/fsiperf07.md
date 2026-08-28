@@ -52,3 +52,7 @@ For example, a low-latency trading system needs to preserve the performance of t
 +  Implement budget alerts and cost allocation tags for AI workload cost management.
 +  Configure SageMaker AI inference endpoints with appropriate auto scaling policies to balance cost and performance.
 +  Use Savings Plans and Reserved Instances for predictable AI workloads to reduce infrastructure costs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

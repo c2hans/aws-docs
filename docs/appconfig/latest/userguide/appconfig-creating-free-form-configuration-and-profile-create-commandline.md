@@ -66,3 +66,7 @@ If you created a configuration profile for AWS CodePipeline, then you must creat
 If you created a configuration in the AWS AppConfig hosted configuration store, you can create new versions of the configuration by using the [CreateHostedConfigurationVersion](https://docs.aws.amazon.com/appconfig/2019-10-09/APIReference/API_CreateHostedConfigurationVersion.html) API operations. To view AWS CLI details and sample commands for this API operation, see [create-hosted-configuration-version](https://docs.aws.amazon.com/cli/latest/reference/appconfig/create-hosted-configuration-version.html) in the *AWS CLI Command Reference*.
 
 Proceed to [Deploying feature flags and configuration data in AWS AppConfig](deploying-feature-flags.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

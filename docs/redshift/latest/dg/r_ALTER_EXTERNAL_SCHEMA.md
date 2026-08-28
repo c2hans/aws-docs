@@ -82,3 +82,7 @@ The Amazon Resource Name (ARN) of a supported secret created using AWS Secrets M
 
 URI
 The bootstrap URL of the Apache Kafka, Confluent Cloud or Amazon Managed Streaming for Apache Kafka (Amazon MSK) cluster. The endpoint must be reachable (routable) from the Amazon Redshift cluster. See [CREATE EXTERNAL SCHEMA](https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_EXTERNAL_SCHEMA.html) for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

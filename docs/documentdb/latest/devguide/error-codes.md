@@ -582,3 +582,7 @@ Don't build application logic that depends on specific numeric error codes becau
 | 5976500 | $dateAdd was given an invalid 'amount' parameter value. |
 | 6045000 | $dateSubtract was given an invalid 'amount' parameter value. |
 | 7158303 | $switch found no matching branch for the input and no default was specified. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

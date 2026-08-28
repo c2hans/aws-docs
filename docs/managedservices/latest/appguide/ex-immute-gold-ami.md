@@ -44,3 +44,7 @@ Currently, you must use Amazon S3 storage with this solution.
 1. Create the golden AMI on the instance. CT: ct-3rqqu43krekby. For details, see [AMI \| Create](https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-advanced-ami-create.html).
 
 1. Configure an Auto Scaling group to create new instances using that AMI. CT: ct-2tylseo8rxfsc. When you need to update your application, follow this procedure and request AMS to update the ASG to use the new golden AMI; use a Management \| Other \| Other \| Update CT for this.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -66,3 +66,7 @@ Usage notes:
 1. Ensure that the {{ServiceUserName}} and {{ServicePassword}} match the user name and password you obtained when you generated the service-specific credentials by following the steps to [Create service-specific credentials for programmatic access to Amazon Keyspaces](programmatic.credentials.ssc.md).
 
 1. For a list of available endpoints, see [Service endpoints for Amazon Keyspaces](programmatic.endpoints.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

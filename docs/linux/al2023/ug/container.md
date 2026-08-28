@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/container.html
 + [Building bare-bones AL2023 container images](barebones-containers.md)
 + [Comparing packages installed on Amazon Linux 2023 Container Images](al2023-container-image-types.md)
 + [Comparing packages installed on Amazon Linux 2023 Minimal AMI and Container Images](al2023-container-ami.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

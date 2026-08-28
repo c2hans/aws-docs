@@ -16,3 +16,7 @@ srun -N {{8}} python3 hyperpod-precheck.py
 
 **Note**
 To learn more about the validation script such as what runtime validation functions the script provides and guidelines to resolve issues that don't pass the validations, see [Runtime validation before running workloads](https://github.com/aws-samples/awsome-distributed-training/tree/main/1.architectures/5.sagemaker-hyperpod#35-runtime-validation-before-running-workloads) in the *Awsome Distributed Training GitHub repository*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

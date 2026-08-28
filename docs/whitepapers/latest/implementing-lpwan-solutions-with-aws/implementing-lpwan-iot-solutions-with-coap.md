@@ -130,3 +130,7 @@ The binary payload remains unchanged in this step. If necessary, binary decoding
 ![Using DTLS to secure data in transit](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/dtls-secure-data-in-transit.png)
 
  In this variant, customers use DTLS protocol as a mechanism for infrastructure for protection data in transit between the IoT device and telco provider’s infrastructure, and between telco provider’s infrastructure and the customer’s AWS account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

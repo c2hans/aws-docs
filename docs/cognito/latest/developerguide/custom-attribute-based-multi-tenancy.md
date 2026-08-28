@@ -18,3 +18,7 @@ When tenancy is surface-level. A tenant attribute can contribute to branding and
 
 **Level of effort**
 Because custom-attribute multi-tenancy transfers the duty of tenant-based authorization decisions on your app, the level of effort tends to be high. If you're already well-versed in a client configuration that parses OIDC claims, or in Amazon Verified Permissions, this approach might require the lowest level of effort.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

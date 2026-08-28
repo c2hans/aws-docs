@@ -35,3 +35,7 @@ Complete the following procedure to enable AWS IAM Identity Center (successor to
 1. Choose **Next: Groups**, choose the group that you want, and choose **Add user**. Users should receive an email inviting them to use SSO. In this email, they need to choose Accept invitation and set the password.
 
 After you create your Amazon DataZone domain, you can enable AWS Identity Center for Amazon DataZone and provide access to your SSO users and SSO groups. For more information, see [Enable IAM Identity Center for Amazon DataZone](enable-IAM-identity-center-for-datazone.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

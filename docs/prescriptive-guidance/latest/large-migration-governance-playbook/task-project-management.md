@@ -198,3 +198,7 @@ This task is complete when you have done the following:
 + You have established a decision log in a shared repository, and all team leads are empowered to make updates.
 + You have defined a location and template for the RAID log. You have established a process for maintaining the log and prioritizing issues. Week-to-week changes in the RAID log are summarized in the status report.
 + All project stakeholders are aligned on how you will communicate the high-level project status in the project summary dashboard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

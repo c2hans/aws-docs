@@ -166,3 +166,7 @@ The following limitations apply to the Cases performance dashboard:
 + **Data retention**: You can view dashboard data for up to 3 months in the past.
 + **Tag-based access control**: Tag-based access control (TBAC) is not supported for the Cases performance dashboard. If you have the required permissions, you can view metrics for all cases.
 + **Hierarchy-based access control**: Hierarchy-based access control (HBAC) is not supported for the Cases performance dashboard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

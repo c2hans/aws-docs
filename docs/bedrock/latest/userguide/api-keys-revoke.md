@@ -14,6 +14,9 @@ If your API key becomes compromised, you should revoke permissions to use it. Th
 To carry out these actions through the API, you must authenticate with AWS credentials and not with an Amazon Bedrock API key.
 + For both long-term and short-term Amazon Bedrock API keys, you can attach IAM policies to revoke permissions.
 
+**Note**
+You can't deactivate, reset, or delete an individual short-term Amazon Bedrock API key. The Amazon Bedrock console doesn't list short-term keys after you generate them or provide revocation actions for them. A short-term key is a pre-signed URL that inherits the credentials and expiration of the session that generated it. To prevent use before the key expires, see [Invalidate an IAM session](#api-keys-iam-policies-invalidate-session) or [Deny an identity the ability to make calls with an Amazon Bedrock API key](#api-keys-iam-policies-deny-call-with-bearer-token). These controls affect the generating session or identity, not only one short-term key.
+
 **Topics**
 + [Change the status of a long-term Amazon Bedrock API key](#api-keys-change-status)
 + [Reset a long-term Amazon Bedrock API key](#api-keys-reset)
@@ -241,3 +244,7 @@ If a short-term key becomes compromised, you can prevent its usage by invalidati
 ```
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

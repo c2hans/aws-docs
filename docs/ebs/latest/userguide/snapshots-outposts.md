@@ -335,3 +335,7 @@ The following table provides an overview of the supported features.
 + Pre-scripts and post-scripts are not supported for snapshots created on an Outpost.
 
 For more information about creating a snapshot lifecycle that manages local snapshots, see [Automating snapshot lifecycles](snapshot-ami-policy.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

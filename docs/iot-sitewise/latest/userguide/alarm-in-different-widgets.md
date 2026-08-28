@@ -35,3 +35,7 @@ The below examples state how some widgets use alarms.
   + The alarm is added as a threshold to the timeline.
   + Adding the alarm state and its input property data to the timeline is work in progress.
   + You cannot interact with the AWS IoT SiteWise Assistant from the widget.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

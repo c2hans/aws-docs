@@ -355,3 +355,7 @@ To continue learning:
 + Learn how to bootstrap a Windows stack. For more information, see [Bootstrapping Windows-based CloudFormation stacks](cfn-windows-stacks-bootstrapping.md).
 + Explore more complex bootstrap scenarios with multiple configuration sets. For more information, see [cfn-init](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/cfn-init.html) and [AWS::CloudFormation::Init](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/aws-resource-init.html) in the *CloudFormation Template Reference Guide*.
 + Learn about `cfn-signal` for reporting bootstrap completion status. For more information, see [cfn-signal](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/cfn-signal.html) in the *CloudFormation Template Reference Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

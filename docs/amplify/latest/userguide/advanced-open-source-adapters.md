@@ -14,3 +14,7 @@ If you aren't using a framework, you can develop your own solution to generate a
 + [Deploying an Express server using the deployment manifest](deploy-express-server.md)
 + [Image optimization integration for framework authors](integrate-image-optimization-framework.md)
 + [Using open source adapters for any SSR framework](using-framework-adapter.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

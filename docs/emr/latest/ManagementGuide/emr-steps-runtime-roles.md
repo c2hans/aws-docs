@@ -269,6 +269,7 @@ You must also add the `AllowSetSourceIdentity` statement to the trust policy of 
 With Amazon EMR release `emr-6.9.0`, you might experience intermittent failures when you connect to Amazon EMR clusters from SageMaker AI Studio. To address this issue, you can install the patch with a bootstrap action when you launch the cluster. For patch details, see [Amazon EMR release 6.9.0 known issues](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-690-release.html#emr-690-relnotes).
 
 Additionally, consider the following when you configure runtime roles for Amazon EMR.
++ Runtime role-based access control and Amazon EMR integration with AWS IAM Identity Center (trusted identity propagation) do not support High Availability (HA) clusters.
 + Amazon EMR supports runtime roles in all commercial AWS Regions.
 + Amazon EMR steps support Apache Spark and Apache Hive jobs with runtime roles when you use release `emr-6.7.0` or later.
 + SageMaker AI Studio supports Spark, Hive, and Presto queries with runtime roles when you use release `emr-6.9.0` or later.
@@ -301,3 +302,7 @@ Additionally, consider the following when you configure runtime roles for Amazon
   ```
 + Runtime roles don't provide support for controlling access to on-cluster resources, such as HDFS and HMS.
 + Runtime roles don't provide support for docker/containers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

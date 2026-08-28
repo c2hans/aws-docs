@@ -56,3 +56,7 @@ By default, all options are enabled for each field. While this is convenient for
 1. Review the domain configuration and click **Create** to create your domain.
 
 Amazon CloudSearch initializes resources for the domain, which can take about ten minutes. During this initialization process, the status of the domain is **Processing**. Once the status changes to **Active**, you can upload your data and start searching.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

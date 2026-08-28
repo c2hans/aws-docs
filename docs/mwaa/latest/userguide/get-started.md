@@ -83,3 +83,7 @@ Amazon MWAA is available in the following AWS Regions. To learn more about each 
 <a name="mwaa-s3-bucket-next-up"></a>
 + Learn how to create an Amazon S3 bucket in [Create an Amazon S3 bucket for Amazon MWAA](mwaa-s3-bucket.md).
 + For information about using the AWS CDK to create Amazon MWAA resources, see [AWS CDK MWAA module](https://docs.aws.amazon.com/cdk/api/v2/docs/aws-cdk-lib.aws_mwaa-readme.html) in the AWS CDK API Reference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

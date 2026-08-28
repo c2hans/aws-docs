@@ -213,3 +213,7 @@ If you are using the AWS SDK for Python (Boto 3), join only the ID column with t
 
 **Warning**
 If you are using a JSON-formatted input file, the file can't contain the attribute name `SageMakerOutput`. This attribute name is reserved for the inferences in the output file. If your JSON-formatted input file contains an attribute with this name, values in the input file might be overwritten with the inference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

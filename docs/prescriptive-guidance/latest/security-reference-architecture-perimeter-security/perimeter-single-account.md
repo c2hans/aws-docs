@@ -73,3 +73,7 @@ By default, CloudFront access logs are stored in the Network account** **and AW
 + Providing specific metrics to workload teams might introduce complexities.
 + Application teams have restricted access to configurations, which might result in an overhead of waiting for the networking teams to implement changes on their behalf.
 + Teams that share resources in a single account might compete for the same resources and budgets, which might lead to resource allocation challenges. We recommend that you put mechanisms in place to charge back from the application teams that use the perimeter services deployed in the Networking account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

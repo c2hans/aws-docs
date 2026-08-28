@@ -21,3 +21,7 @@ If you import an item, user, or action with the same ID as a record that's alrea
 + [Importing bulk data into Amazon Personalize with a dataset import job](bulk-data-import-step.md)
 + [Preparing and importing bulk data using Amazon SageMaker AI Data Wrangler](preparing-importing-with-data-wrangler.md)
 + [Importing individual records into an Amazon Personalize dataset](incremental-data-updates.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

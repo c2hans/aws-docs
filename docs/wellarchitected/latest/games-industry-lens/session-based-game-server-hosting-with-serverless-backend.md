@@ -40,3 +40,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 1.  The game client connects to the game server using TCP or UDP by using the port and IP address provided by the backend. It sends the player session ID to the game server, and the game server validates it using the Amazon GameLift Server SDK.
 
  Alternatively, you can modify the preceding architecture to use API Gateway WebSockets with Amazon GameLift. In this approach, communication between the game client and your game backend service occurs using a [WebSocket-based implementation](https://docs.aws.amazon.com/gamelift/latest/developerguide/gamelift_quickstart_customservers_designbackend_arch_websockets.html). This implementation can be used so that the game backend Lambda function initiates a server-side message to the game client over a WebSocket rather than implementing a polling model.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

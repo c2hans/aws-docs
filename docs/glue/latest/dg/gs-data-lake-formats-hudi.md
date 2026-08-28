@@ -97,3 +97,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gs-data-lake-formats-hudi
  To use a version of Hudi that AWS Glue doesn't support, you can specify your own Hudi library JAR files. To use your own JAR file:
 +  use the `--extra-jars` job parameter. For example, `'--extra-jars': 's3pathtojarfile.jar'`. For more information, see [AWS Glue job parameters](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-glue-arguments.html).
 +  do not include `hudi` as a value for the `--datalake-formats` job parameter. Entering a blank string as a value ensures that no data lake libraries are provided for you by AWS Glue automatically. For more information, see [Using the Hudi framework in AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-etl-format-hudi.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

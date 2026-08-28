@@ -113,3 +113,7 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/captions-suppor
   - **Supported in input:**
   - **Supported in output:** √
   - **Description:** Captions that are compliant with “webvtt: The Web Video Text Tracks Format” ([http://dev.w3.org/html5/webvtt/](https://dev.w3.org/html5/webvtt/)).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,7 +26,7 @@ Customers that do not have a default VPC must modify the EC2 launch template and
 
 1. **Network interfaces** – The EC2 launch template only supports two network interfaces. If you require more than two network interfaces, you need to define them after the test or cutover instance has been launched. This can be done through a post launch action.
 
-   If you wish to use an Elastic IP, you must create an ENI to specify the IP and then edit the Network interfaces to use the ENI. Learn more about working with Amazon Elastic Inference in [this Developer Guide article.](https://docs.aws.amazon.com/elastic-inference/latest/developerguide/working-with-ei.html)
+   If you wish to use an Elastic IP, you must create an ENI to specify the IP and then edit the Network interfaces to use the ENI. Learn more about working with Elastic network interfaces in [the Amazon EC2 User Guide.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html)
 
 1. **Networking platform** – AWS Transform MGN only supports **Virtual Private Cloud (VPC)**. EC2-Classic is **not** supported. Do **not** add any security groups under the network platform.
 
@@ -48,3 +48,7 @@ When using FSx for ONTAP as the target storage type, the FSx for ONTAP split clo
 
 **Note**
 You can set a per-volume KMS key directly in the EC2 launch template's storage section. If set, the launch template KMS key takes precedence over the replication snapshot's key. Alternatively, you can configure encryption through the [EBS Encryption](ebs-storage.md#ebs-encryption) section of the replication settings.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

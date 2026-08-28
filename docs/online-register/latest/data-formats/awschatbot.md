@@ -25,3 +25,7 @@ AWS Chatbot provides the following APIs for data retrieval.
 | <a name="chatbot-ListMicrosoftTeamsConfiguredTeams"></a>[ListMicrosoftTeamsConfiguredTeams](https://docs.aws.amazon.com/chatbot/latest/APIReference/API_ListMicrosoftTeamsConfiguredTeams.html) | List all Microsoft Teams connected to the AWS Account onboarded with AWS Chatbot service | Read |
 | <a name="chatbot-ListMicrosoftTeamsUserIdentities"></a>[ListMicrosoftTeamsUserIdentities](https://docs.aws.amazon.com/chatbot/latest/APIReference/API_ListMicrosoftTeamsUserIdentities.html) | Describe AWS Chatbot Microsoft Teams User Identities | Read |
 | <a name="chatbot-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/chatbot/latest/APIReference/API_ListTagsForResource.html) | List all tags associated with the AWS Chatbot Channel Configuration | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

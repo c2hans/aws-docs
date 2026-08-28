@@ -95,3 +95,7 @@ The Amazon GameLift Servers SDKs contain the libraries required to establish com
 
 **AWS CloudFormation**
 Use AWS CloudFormation to model, provision, and manage AWS resources for your game hosting solution by treating infrastructure as code. Create templates that describe the resources, and CloudFormation automates the tasks of configuring and deploying resources to the locations you specify.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

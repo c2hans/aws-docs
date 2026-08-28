@@ -38,3 +38,7 @@ The following table provides a sample cost breakdown for deploying this solution
 
 **Note**
 AWS Step Functions state transitions and AWS Lambda duration charges are included in this estimate. With the assumed usage pattern (5-6 workflow executions per month for 2 VPCs with minimal tag changes), both services operate within AWS Free Tier limits (4,000 state transitions/month and 400,000 GB-seconds/month), resulting in negligible charges. For environments with more frequent network changes, costs may increase proportionally but remain minimal.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Network Orchestration for AWS Transit Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

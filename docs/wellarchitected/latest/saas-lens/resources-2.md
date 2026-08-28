@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/resourc
 +  [AWS re:Invent 2017: SaaS Monitoring - Creating a Unified View of Multi-tenant Health featuring New Relic](https://www.youtube.com/watch?v=sOxFooDdZE4)
 +  [AWS re:Invent 2019: Building serverless SaaS on AWS](https://youtu.be/egskuX3YYO4?t=1432)
 +  [AWS re:Invent 2019: Serverless SaaS deep dive: Building serverless SaaS on AWS (ARC410-R)](https://youtu.be/egskuX3YYO4?t=1432)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

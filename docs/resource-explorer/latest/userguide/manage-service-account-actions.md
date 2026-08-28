@@ -58,3 +58,7 @@ When an AWS account is closed, Resource Explorer responds to the closure as foll
 If an account opts-out of a Region, you will still see their resources in search results for up to 24 hours.
 
 After 24 hours, resources from this account won't appear in search results. For more information, see [Opt-out behaviors](opt-in-region-considerations.md#behaviors).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resource Explorer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resource-explorer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

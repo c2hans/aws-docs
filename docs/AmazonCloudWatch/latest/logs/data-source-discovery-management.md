@@ -106,3 +106,7 @@ Data sources complement rather than replace log groups. Your logs continue to be
 + Query logs using either organizational method depending on your needs
 
 Data sources make it easier to work with logs at scale by providing a service-centric view of your log data across your AWS infrastructure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

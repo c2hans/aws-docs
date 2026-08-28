@@ -18,3 +18,7 @@ AWS Backup doesn't have continuous replication enabled across AWS Regions, which
 The major benefits of using AWS Backup are the automated backup schedule and retention management. Specific requirements, such as taking a backup once a month or on a particular cadence, can be implemented.
 
 The failover by restoring the snapshot from an AWS Backup service backup vault is manual and not transparent to the application. After you restore the snapshot as a new RDS instance in the standby Region, you must modify the application connection settings.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

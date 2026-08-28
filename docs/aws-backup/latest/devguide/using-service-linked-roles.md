@@ -11,3 +11,7 @@ AWS Backup uses AWS Identity and Access Management (IAM)[ service-linked roles](
 + [Using roles to back up and copy](using-service-linked-roles-AWSServiceRoleForBackup.md)
 + [Using roles for AWS Backup Audit Manager](using-service-linked-roles-AWSServiceRoleForBackupReports.md)
 + [Using roles for restore testing](using-service-linked-roles-AWSServiceRoleForBackupRestoreTesting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

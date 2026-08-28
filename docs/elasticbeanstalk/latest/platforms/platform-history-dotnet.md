@@ -4162,3 +4162,7 @@ The following Elastic Beanstalk platform versions for .NET were current prior to
 | 64bit Windows Server 2008 R21 running IIS 7.5 | Custom | .NET v4.5<br />Also supports 4.0, 3.5, 3.0, 2.0, 1.1 and 1.0 | IIS 7.5 |
 
 1[Microsoft Security Bulletin MS14-066 - Critical](https://technet.microsoft.com/library/security/ms14-066)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

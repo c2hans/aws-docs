@@ -18,3 +18,7 @@ To install or uninstall one or more license included application(s) on your imag
 All the users streaming through a fleet powered by an image with one or more licensed apps will incur billing for these apps monthly, regardless of usage. The application entitlement feature does not restrict access for specific users.
 
 If you encounter failures during license included app installation or uninstallation, you will see a failure status on your Image Builder's details page. To troubleshoot these issues, we recommend connecting to your Image Builder and enabling verbose logging. For more information see [How to enable Microsoft 365 Apps for enterprise logging](https://learn.microsoft.com/en-us/troubleshoot/microsoft-365-apps/diagnostic-logs/how-to-enable-office-365-proplus-uls-logging). If the problem persists after reviewing the logs and troubleshooting, contact AWS Support for help.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

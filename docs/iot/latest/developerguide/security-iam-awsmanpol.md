@@ -545,3 +545,7 @@ View details about updates to AWS managed policies for AWS IoT since this servic
 | --- | --- | --- |
 | [AWSIoTFullAccess](#security-iam-awsmanpol-AWSIoTFullAccess) – Update to an existing policy | AWS IoT added new permissions to allow users to access AWS IoT Jobs data plane API operations using the HTTP protocol.<br />A new IAM policy prefix, `iotjobsdata:`, provides you finer grained access control to access AWS IoT Jobs data plane endpoints. For control plane API operations, you still use the `iot:` prefix. For more information, see [AWS IoT Core policies for HTTPS protocol](iot-data-plane-jobs.md#iot-jobs-data-http). | May 11, 2022 |
 | AWS IoT started tracking changes | AWS IoT started tracking changes for its AWS managed policies. | May 11, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

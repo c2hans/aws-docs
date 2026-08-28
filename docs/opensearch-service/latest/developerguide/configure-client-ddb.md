@@ -231,3 +231,7 @@ The following CloudWatch metrics are recommended for monitioring the performance
 | `dynamodb.exportJobFailure.count` | The attempt to trigger an export to S3 failed. |
 | `dynamodb-pipeline.opensearch.bulkRequestInvalidInputErrors.count` | Count of bulk request errors in OpenSearch due to invalid input, crucial for monitoring data quality and operational issues. |
 |  opensearch.EndToEndLatency.avg  | The end to end latnecy is higher than desired for reading from DynamoDB streams. This could be due to an underscaled OpenSearch cluster or a maximum pipeline OCU capacity that is too low for the WCU throughput on the DynamoDB table. This end to end latency will be high after an export and should decrease over time as it catches up to the latest DynamoDB streams. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

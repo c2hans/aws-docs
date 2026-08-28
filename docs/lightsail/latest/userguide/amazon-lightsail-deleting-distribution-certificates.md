@@ -33,3 +33,7 @@ Complete the following procedure to delete an SSL/TLS certificate for your distr
    The **Delete** option is unavailable if the certificate you want to delete is in use. To delete certificates that are in use, you need to first change the custom domains of the distribution that is using the certificate, or disable custom domains on the distribution that is using the certificate. For more information, see [Change custom domains for your distribution](amazon-lightsail-changing-distribution-custom-domains.md) and [Enable custom domains for your distribution](amazon-lightsail-disabling-distribution-custom-domains.md#amazon-lightsail-disabling-distribution-custom-domains.title).
 
 1. Choose **Yes, delete** to confirm the deletion.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

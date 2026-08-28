@@ -50,3 +50,7 @@ Dynamic scene entities are stored under a global entity labelled `$SCENES`. Each
 
 **Warning**
 Do not manually delete any scene entities or your scene may be in a broken state. If you want to partially or fully delete a scene, use the scene composer page to add and delete scene nodes, and use the scenes page to select and delete a scene.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

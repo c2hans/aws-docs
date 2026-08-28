@@ -19,3 +19,7 @@ The following list describes some requirements and suggestions to review when cr
 + You must configure Amazon VPC connections on a per-project basis. At this time, you can configure only one VPC configuration per project. When you configure a VPC, Amazon VPC creates an interface within your VPC and assigns it to the specified subnets and security groups. All future sessions associated with the project will use the configured VPC connection.
 + You cannot use VPC-ENI configurations along with the legacy VPCE feature.
 + We strongly recommend **not updating an existing project** with a VPC-ENI configuration as existing projects may have VPCE settings that persist on the run level. Instead, if you already use the existing VPCE features, use VPC-ENI for all new projects.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

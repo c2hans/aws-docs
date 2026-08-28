@@ -168,3 +168,7 @@ An object that provides provides Session Initiation Protocol (SIP) trunking serv
 
 **Amazon Chime SDK Voice Connector group**
 A wrapper that contains multiple Voice Connectors from different AWS Regions. Groups allow incoming calls to fail over across Regions, which creates a fault-tolerant mechanism. For more information, see [Managing Amazon Chime SDK Voice Connector groups](https://docs.aws.amazon.com/chime-sdk/latest/ag/voice-connector-groups.html) in the *Amazon Chime SDK Administrator Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

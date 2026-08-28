@@ -35,3 +35,7 @@ The following command is not supported with ML-DSA keys:
 ------
 
 If you want to create a new key store file using AWS CloudHSM key store, see [Use the AWS CloudHSM KeyStore for AWS CloudHSM Client SDK 3](alternative-keystore.md#using_cloudhsm_keystore). To use an existing key store, specify its name (including path) using the –keystore argument to keytool. If you specify a non-existent key store file in a keytool command, the AWS CloudHSM key store creates a new key store file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

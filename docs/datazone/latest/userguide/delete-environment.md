@@ -20,3 +20,7 @@ To delete an existing environment, complete the following steps.
 1. In the **Delete environment** pop up window, confirm deletion by typing `Delete` in the field and then choose **Delete environment**.
 
    You can successfully delete an environment only after all entities with a dependency to this environment have been deleted. To delete an environment, you must first delete all its associated data sources and subscription targets.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

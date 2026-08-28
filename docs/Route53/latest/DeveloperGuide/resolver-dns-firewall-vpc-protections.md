@@ -20,3 +20,7 @@ To provide DNS Firewall protections to your VPC, you do the following:
 1. Select the VPC that you want to remove from the list, then choose ** Disassociate**. Verify, and then confirm the action.
 
 On the rule group page, your VPC is listed in the **Associated VPCs** tab with the status of **Disassociating**. When the operation completes, DNS Firewall updates the list to remove the VPC.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

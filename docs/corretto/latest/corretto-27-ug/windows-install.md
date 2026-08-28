@@ -20,7 +20,7 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-27-ug/windows-i
 
 1.  Once the install wizard is finished, set the `JAVA_HOME` and `PATH` environment variables.
 
-   Set `JAVA_HOME` to the installation location, noting that the directory contains the currently-installed version. For example, if the default directory is used for 27.0.0, then set `JAVA_HOME` as `C:\Program Files\Amazon Corretto\jdk27.0.0_33`.
+   Set `JAVA_HOME` to the installation location, noting that the directory contains the currently-installed version. For example, if the default directory is used for 27.0.0, then set `JAVA_HOME` as `C:\Program Files\Amazon Corretto\jdk27.0.0_34`.
 
    Add `%JAVA_HOME%\bin` to the current `PATH` variable.
 
@@ -28,9 +28,9 @@ source_url: https://docs.aws.amazon.com/corretto/latest/corretto-27-ug/windows-i
 **Example**
 
    ```
-   openjdk 27 2026-08-06
-    OpenJDK Runtime Environment Corretto-27.0.0.33.1 (build 27+33-FR)
-    OpenJDK 64-Bit Server VM Corretto-27.0.0.33.1 (build 27+33-FR, mixed mode, sharing)
+   openjdk 27 2026-08-20
+    OpenJDK Runtime Environment Corretto-27.0.0.34.1 (build 27+34-FR)
+    OpenJDK 64-Bit Server VM Corretto-27.0.0.34.1 (build 27+34-FR, mixed mode, sharing)
    ```
 
 ## Uninstall Amazon Corretto 27
@@ -43,3 +43,7 @@ You can uninstall Amazon Corretto 27 by following the standard steps to uninstal
 1.  Search for **Amazon Corretto 27** and then select it.
 
 1.  Choose **uninstall**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Corretto. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query corretto` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

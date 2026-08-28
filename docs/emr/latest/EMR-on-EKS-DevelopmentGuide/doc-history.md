@@ -35,3 +35,7 @@ The following table describes the important changes to the documentation since t
 | New content | Added two sections: [Using vertical autoscaling with Amazon EMR Spark jobs](jobruns-vas.md) and [Using self-hosted Jupyter notebooks](managed-endpoints-self-hosted.md) | May 4, 2023 |
 | Document history page | Created a document history page for Amazon EMR on EKS. | March 13, 2023 |
 | Managed policies page | Created a managed policies page for Amazon EMR on EKS. | March 13, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

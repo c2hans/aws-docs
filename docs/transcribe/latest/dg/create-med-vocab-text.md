@@ -103,3 +103,7 @@ For reading ease, the following tables show the preceding examples more clearly 
 | acute respiratory distress syndrome |  |  | acute-respiratory-distress-syndrome |
 | ALL |  | eɪ ɛ l ɛ l | A.L.L. |
 |  | ay-tree-o-ven-trick-u-lar-node-al-re-entr-ant-tack-ih-card-ia |  | atrioventricular-nodal-reentrant-tachycardia |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

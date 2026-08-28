@@ -74,3 +74,7 @@ If License Manager is using the role when you try to delete the resources, then 
 <a name="slr-manual-delete-core"></a>
 
 Use the IAM console, the AWS CLI, or the AWS API to delete the `AWSServiceRoleForAWSLicenseManagerRole` service-linked role. If you are also using [AWSServiceRoleForAWSLicenseManagerMasterAccountRole](management-role.md) and [AWSLicenseManagerMemberAccountRole](member-role.md), delete those roles first. For more information, see [Deleting a Service-Linked Role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#delete-service-linked-role) in the *IAM User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

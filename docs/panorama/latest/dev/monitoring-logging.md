@@ -143,3 +143,7 @@ To follow the procedure you will need the following hardware:
 1. Log files can then be found inside `managed_logs` directory with the format `panorama_device_log_{{v1}}_{{dd_hh_mm}}.img`
 
 You can't decrypt the log image yourself. Work with customer support, a technical account manager for AWS Panorama, or a solutions architect to coordinate with the service team.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

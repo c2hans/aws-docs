@@ -13,3 +13,7 @@ You control how your data is indexed by configuring indexing options and analysi
 + [Using Dynamic Fields in Amazon CloudSearch](using-dynamic-fields.md)
 + [Configuring Text Analysis Schemes for Amazon CloudSearch](configuring-analysis-schemes.md)
 + [Text Processing in Amazon CloudSearch](text-processing.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

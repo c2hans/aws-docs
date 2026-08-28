@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/c
 +  How might the government customer share information across their own organization and jurisdiction?
 +  How does the government customer want to share this work so that other governments can reuse it?
 +  Can you share your outputs with appropriate open source licenses and channels?
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

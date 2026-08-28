@@ -32,3 +32,7 @@ In some cases, you might opt to reduce costs by choosing an instance type that c
 Amazon CloudWatch metrics can help you evaluate your models. For more information about metrics you can use with multi-model endpoints, see [CloudWatch Metrics for Multi-Model Endpoint Deployments](multi-model-endpoint-cloudwatch-metrics.md).
 
  You can use the `Average` statistic of the `ModelCacheHit` metric to monitor the ratio of requests where the model is already loaded. You can use the `SampleCount` statistic for the `ModelUnloadingTime` metric to monitor the number of unload requests sent to the container during a time period. If models are unloaded too frequently (an indicator of *thrashing*, where models are being unloaded and loaded again because there is insufficient cache space for the working set of models), consider using a larger instance type with more memory or increasing the number of instances behind the multi-model endpoint. For multi-model endpoints with multiple instances, be aware that a model might be loaded on more than 1 instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

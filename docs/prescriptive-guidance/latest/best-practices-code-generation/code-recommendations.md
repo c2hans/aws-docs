@@ -26,3 +26,7 @@ Amazon Q Developer can take developer questions and evaluate code to offer recom
   Amazon Q Developer is a valuable resource for developers working with AWS services because it contains a vast amount of knowledge related to AWS. Whether you're facing challenges with a specific AWS service, encountering error messages that are specific to AWS, or trying to learn a new AWS service, Amazon Q often provides relevant and useful information.
 
   Always review the recommendations that Amazon Q Developer provides to you. Then, make necessary edits and execute tests to make sure that the code meets your intended functionality.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

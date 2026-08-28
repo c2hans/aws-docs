@@ -20,3 +20,7 @@ The following table lists migration tools and the targets that they support.
 | Oracle GoldenGate | Yes | Yes | Yes |
 | Oracle Data Guard | Yes | No | Yes |
 | Oracle RMAN | Yes | No | Yes |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

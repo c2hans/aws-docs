@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  This approach helps organizations seamlessly integrate new hybrid edge capabilities into their existing workloads. Periodically review data residency compliance requirements, as these can impact the overall design and implementation strategy. You can monitor the [What's New with AWS](https://aws.amazon.com/new/) webpage and [AWS Blogs](https://aws.amazon.com/blogs) to stay updated on the latest hybrid edge offerings from AWS.
 
  By staying informed about these new capabilities and their potential integration into existing workloads, you can meet evolving business and regulatory requirements while realizing the benefits of hybrid edge computing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

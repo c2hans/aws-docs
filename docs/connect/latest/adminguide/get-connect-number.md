@@ -73,3 +73,7 @@ You will not be billed for the phone number during the 1-day period if number cl
 Even if it's the first time you've claimed a phone number, it's possible to get this error message when you attempt to claim a number. All the issues that cause this error message require help from AWS Support to resolve.
 
  Contact AWS Support and they will provide assistance. For instructions, see [Get administrative support for Connect Customer](get-admin-support.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

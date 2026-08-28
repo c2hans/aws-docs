@@ -33,3 +33,7 @@ This section lists the quotas related to IPAM. The Service Quotas console also p
 | Scopes per IPAM | 5 | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2-ipam/quotas/L-F493CFD2). When you create an IPAM, a private and public default scope are created for you. If you want to create additional scopes, they will be private scopes. You cannot create additional public scopes. |
 
 \* *Resource-locale pair:* When setting allocation rules, you must specify both a resource type (the AWS resource like EIPs, ALBs, or RDS clusters) and a locale (the AWS Region or Local Zone where the rule applies). Allocation rules are scoped to this resource type and locale combination. For example, if you're setting a policy for EIPs in us-east-1, you can set up to 10 rules for that specific resource-locale pair\*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

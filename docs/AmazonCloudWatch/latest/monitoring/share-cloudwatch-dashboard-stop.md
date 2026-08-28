@@ -30,3 +30,7 @@ You can stop sharing a single shared dashboard, or stop sharing all shared dashb
 1. In the **Dashboard sharing** section, choose **Stop sharing all dashboards**.
 
 1. In the confirmation box, choose **Stop sharing all dashboards**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

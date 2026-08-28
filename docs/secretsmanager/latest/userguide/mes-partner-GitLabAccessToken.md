@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-GitLabAccessToken"></a>
 
 ## Secret Value Fields
-<a name="w2aac27c11c23b3"></a>
+<a name="w2aac27c11c25b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -36,7 +36,7 @@ groupId
 (Optional) Numeric group ID. Provide for group access tokens only.
 
 ## Secret Metadata Fields
-<a name="w2aac27c11c23b5"></a>
+<a name="w2aac27c11c25b5"></a>
 
 The following are the metadata fields for GitLab Access Token:
 
@@ -54,7 +54,7 @@ daysToExpiry
 (Optional) Number of days until the new token expires (1–365). Maps to the `expires_at` field in the GitLab rotate API. If omitted, the new token inherits the instance default expiration.
 
 ## Usage Flow
-<a name="w2aac27c11c23b7"></a>
+<a name="w2aac27c11c25b7"></a>
 
 This rotation supports both single-secret (self-rotation) and two-secret (admin-assisted) architectures. The token scope is determined by the optional `projectId` and `groupId` fields. If neither field is present, the token is a personal access token. If `projectId` is present, the token is a project access token. If `groupId` is present, the token is a group access token.
 
@@ -63,3 +63,7 @@ Create your secret using the [CreateSecret](https://docs.aws.amazon.com/secretsm
 When using admin-assisted rotation, the admin secret is also of type `GitLabAccessToken`. You must explicitly provide the rotation role access to the admin secret. You can do this by adding a statement scoped to the admin secret ARN directly in the role policy.
 
 During rotation, the driver validates that the current token is active. It then calls the GitLab rotate endpoint, which atomically creates a new token and revokes the old one. Secrets Manager stores the new token value and ID as AWSPENDING, verifies them via the GitLab API, and promotes them to AWSCURRENT. Applications using the Secrets Manager caching library automatically pick up the new token on their next refresh.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

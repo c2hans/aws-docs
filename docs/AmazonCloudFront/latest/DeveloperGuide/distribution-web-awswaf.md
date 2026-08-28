@@ -28,3 +28,7 @@ You must enable AWS WAF if you want to view security metrics in the CloudFront *
 + [Manage AWS WAF security protections in the CloudFront security dashboard](security-dashboard.md)
 + [Set up rate limiting](WAF-one-click-rate-limiting.md)
 + [Disable AWS WAF security protections](disable-waf.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

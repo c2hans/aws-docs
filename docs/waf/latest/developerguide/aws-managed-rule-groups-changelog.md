@@ -17,6 +17,7 @@ For the [IP reputation rule groups](aws-managed-rule-groups-ip-rep.md), this cha
 
 | Rule group and rules | Description | Date |
 | --- | --- | --- |
+| [Core rule set (CRS) managed rule group](aws-managed-rule-groups-baseline.md#aws-managed-rule-groups-baseline-crs)This release updates the following rules:+  `CrossSiteScripting_BODY` <br />+  `CrossSiteScripting_COOKIE` <br />+  `CrossSiteScripting_QUERYARGUMENTS` <br />+  `CrossSiteScripting_URIPATH`  | Released static version 1.23 of this rule group.<br />Improved detection signatures for the cross site scripting rules. | 2026-08-28 |
 | [SQL database managed rule group](aws-managed-rule-groups-use-case.md#aws-managed-rule-groups-use-case-sql-db)This release updates the following rules:+  `SQLi_COOKIE` <br />+  `SQLi_URIPATH` <br />+  `SQLi_QUERYARGUMENTS` <br />+  `SQLi_BODY` <br />+  `SQLiExtendedPatterns_QUERYARGUMENTS` <br />+  `SQLiExtendedPatterns_BODY` <br />+  `SQLiExtendedPatterns_HEADER` <br />+  `SQLiExtendedPatterns_URIPATH`  | Released static version 2.4 of this rule group.<br />This release updates all rules to improve SQL injection detection logic. | 2026-08-12 |
 | [AWS WAF Bot Control rule group](aws-managed-rule-groups-bot.md) | Released static version 6.1 of this rule group.<br />Added new bot detection signatures across multiple categories, including Advertising, AI, Content Fetcher, Scraping Framework, Search Engine, Security, SEO, and Social Media. | 2026-07-24 |
 | [Core rule set (CRS) managed rule group](aws-managed-rule-groups-baseline.md#aws-managed-rule-groups-baseline-crs) +  `GenericLFI_QUERYARGUMENTS` <br />+  `GenericLFI_URIPATH` <br />+  `GenericLFI_BODY`   | Released static version 1.22 of this rule group. <br />Improved detection signatures for the generic LFI rules. | 2026-07-20 |
@@ -138,3 +139,7 @@ The following table lists changes prior to December, 2021.
 | SQL database | `SQLi_URIPATH` | The rules now check the message URI. | 2020-01-23 |
 | SQL database | `SQLi_BODY`<br />`SQLi_QUERYARGUMENTS`<br />`SQLi_COOKIE` | Updated text transformations. | 2019-12-20 |
 | Core rule set (CRS) | `CrossSiteScripting_URIPATH`<br />`CrossSiteScripting_BODY`<br />`CrossSiteScripting_QUERYARGUMENTS`<br />`CrossSiteScripting_COOKIE` | Updated text transformations. | 2019-12-20 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

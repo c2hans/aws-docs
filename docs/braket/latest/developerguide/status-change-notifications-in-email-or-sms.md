@@ -17,3 +17,7 @@ Amazon Braket sends events to Amazon EventBridge when the availability of a QPU 
 You can set up notifications through the Amazon Simple Notification Service (SNS) so that you receive an alert when your Amazon Braket quantum task is complete. Active notifications are useful if you expect a long wait time; for example, when you submit a large quantum task or when you submit a quantum task outside of a device's availability window. If you do not want to wait for the quantum task to complete, you can set up an SNS notification.
 
 An Amazon Braket notebook walks you through the setup steps. For more information, see [the Amazon Braket examples on GitHub](https://github.com/aws/amazon-braket-examples) and, specifically, [the example notebook for setting up notifications](https://github.com/aws/amazon-braket-examples/tree/main/examples/braket_features).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

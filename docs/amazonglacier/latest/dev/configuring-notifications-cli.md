@@ -66,3 +66,7 @@ Follow these steps to configure vault notification using the AWS CLI.
    For more information about using Amazon SNS topics for Amazon Glacier see, [Configuring Vault Notifications in Amazon Glacier: General Concepts](configuring-notifications.html#configuring-notifications.general)
 
    For more information about Amazon SNS, see [Getting Started with Amazon SNS](https://docs.aws.amazon.com/sns/latest/gsg/Welcome.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Glacier. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonglacier` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

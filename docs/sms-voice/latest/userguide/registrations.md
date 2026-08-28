@@ -32,6 +32,7 @@ The following registration forms can be filled out and submitted through the AWS
 + **Russia sender ID registration** – Register a sender ID in Russia. For more information on completing the registration, see [Russia sender ID registration](registrations-russia.md).
 + **Saudi Arabia sender ID registration** – Register a sender ID in Saudi Arabia. For more information on completing the registration, see [Saudi Arabia sender ID registration](registrations-saudi-arabia.md).
 + **Singapore sender ID registration** – Register a sender ID in Singapore. For more information on completing the registration, see [Singapore sender ID registration form](registrations-sg-form.md).
++ **Spain sender ID registration** – Register a sender ID in Spain. For more information on completing the registration, see [Spain sender ID registration](registrations-spain.md).
 + **Sri Lanka sender ID registration** – Register a sender ID in Sri Lanka. For more information on completing the registration, see [Sri Lanka sender ID registration](registrations-sri-lanka.md).
 + **Thailand sender ID registration** – Register a sender ID in Thailand. For more information on completing the registration, see [Thailand sender ID registration](registrations-thailand.md).
 + **Turkey sender ID registration** – Register a sender ID in Turkey. For more information on completing the registration, see [Turkey sender ID registration](registrations-turkey.md).
@@ -64,3 +65,7 @@ A sender ID or other origination identity that requires registration is only tre
 Although a registration is not yet **Complete**, how your messages are delivered and displayed depends on the destination country, its carriers, and its regulator. Depending on the destination, messages might be sent from a shared or random long code, displayed with a generic identifier such as `NOTICE` or "Unverified", or, in some countries, not delivered at all. After the status changes to **Complete**, your registered origination identity is applied and messages display accordingly.
 
 The authoritative signal that a registration is in effect is the **Complete** status in the AWS End User Messaging SMS console. A submitted registration, or a registration in review, does not make the sender ID active.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

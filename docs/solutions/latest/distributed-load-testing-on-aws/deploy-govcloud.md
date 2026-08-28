@@ -17,3 +17,7 @@ Before you deploy, you must mirror the solution’s container images to a privat
  [![Launch solution with the headless template in AWS GovCloud (US)](http://docs.aws.amazon.com/solutions/latest/distributed-load-testing-on-aws/images/launch-button.png)](https://console.amazonaws-us-gov.com/cloudformation/home?region=us-gov-west-1#/stacks/new?templateURL=https:%2F%2Fs3.us-gov-west-1.amazonaws.com%2Fsolutions-reference-us-gov%2Fdistributed-load-testing-on-aws%2Flatest%2Fdistributed-load-testing-on-aws-headless.template&redirectId=ImplementationGuide) **distributed-load-testing-on-aws-headless.template** - Launches the solution backend only. Follow the instructions in [Launch the stack (Headless)](deploy-self-hosted.md), and additionally provide the **Load Tester Image URI** parameter.
 
 Alternatively, you can download the templates as a starting point for your own implementation. Choose a launch button above, then copy the template URL from the **Amazon S3 URL** field on the **Create stack** page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,3 +40,7 @@ glue_client.put_workflow_run_properties(Name=workflow_name, RunId=workflow_run_i
 For more information, see the following:
 + [GetWorkflowRunProperties action (Python: get\_workflow\_run\_properties)](aws-glue-api-workflow.md#aws-glue-api-workflow-GetWorkflowRunProperties)
 + [PutWorkflowRunProperties action (Python: put\_workflow\_run\_properties)](aws-glue-api-workflow.md#aws-glue-api-workflow-PutWorkflowRunProperties)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

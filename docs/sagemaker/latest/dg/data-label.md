@@ -12,3 +12,7 @@ To train a machine learning model, you need a large, high-quality, labeled datas
 + [Workforces](sms-workforce-management.md)
 + [Crowd HTML Elements Reference](sms-ui-template-reference.md)
 + [Using Amazon Augmented AI for Human Review](a2i-use-augmented-ai-a2i-human-review-loops.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

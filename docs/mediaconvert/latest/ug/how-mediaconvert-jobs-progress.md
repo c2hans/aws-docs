@@ -57,3 +57,7 @@ If a job's status is `PROGRESSING` for over a minute, MediaConvert emits a `STAT
 1. `UPLOADING`: When your job is in the `UPLOADING` phase, the service uploads your transcoded outputs to your output Amazon S3 bucket. In the case of outputs that the service begins to upload during the `TRANSCODING` phase, the `UPLOADING` phase begins when the transcoding is done. It continues until all uploads are finished.
 
 To view a job's phase, open the [Jobs](https://console.aws.amazon.com/mediaconvert/home#/jobs/list) page in the MediaConvert console, check the [`STATUS_UPDATE` EventBridge event](ev_status_status_update.md), or submit a `GetJob` or `ListJobs` operation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

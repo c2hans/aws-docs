@@ -28,3 +28,7 @@ Alerts without labels specified in the grouping of the root policy or the custom
 You can use the following filters to view alerts that match specific criteria:
 + **Search by label** – In **Search**, enter an existing label to view alerts matching the label. For example, `environment=production`, `region=~US|EU`, `severity!=warning`.
 + **Filter alerts by state** – In **States**, select from `Active`, `Suppressed`, or `Unprocessed` states to view alerts in that state.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

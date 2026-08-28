@@ -38,3 +38,7 @@ You can choose to cancel and not create a plan. If you proceed, you see a list o
    + When you execute the plan, AWS Service Catalog executes the provisioned product with the planned resource changes.
 **Note**
 If your plan fails to create, you can delete or modify the plan and create it again. When you delete a plan, it deletes any provisioned product that has yet to be fully provisioned. This deletion does not terminate any previously provisioned products.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

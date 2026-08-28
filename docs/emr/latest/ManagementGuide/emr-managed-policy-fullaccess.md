@@ -17,3 +17,7 @@ The Amazon EMR full-permissions default managed policies incorporate `iam:PassRo
 You can view the JSON version of the [AmazonEMRFullAccessPolicy\_v2](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/service-role/AmazonEMRFullAccessPolicy_v2) and [AmazonEMRServicePolicy\_v2](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/service-role/AmazonEMRServicePolicy_v2) policies in the IAM console. We recommend that you create new clusters with the v2 managed policies.
 
 You can view the contents of the deprecated v1 policy in the AWS Management Console at [`AmazonElasticMapReduceFullAccess`](https://console.aws.amazon.com/iam/home#policies/arn:aws:iam::aws:policy/AmazonElasticMapReduceFullAccess). The `ec2:TerminateInstances` action in the policy grants permission to the a user or role to terminate any of the Amazon EC2 instances associated with the IAM account. This includes instances that are not part of an EMR cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

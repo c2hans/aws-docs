@@ -99,3 +99,7 @@ aws neptune start-db-cluster --db-cluster-identifier {{mydbcluster}}
 <a name="manage-console-start-api"></a>
 
 To start a Neptune DB cluster by using the Neptune management API, call the [StartDBCluster](api-clusters.md#StartDBCluster) API using the `DBCluster` parameter to specify the stopped DB cluster that you want to start. Provide either the cluster name that you chose when creating the DB cluster, or use a DB instance name that you chose, with `-cluster` appended to the end of it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

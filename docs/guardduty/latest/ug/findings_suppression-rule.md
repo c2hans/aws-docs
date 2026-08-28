@@ -42,7 +42,7 @@ GuardDuty recommends that you build suppression rules reactively and only for fi
   Finding type: {{UnauthorizedAccess:IAMUser/InstanceCredentialExfiltration.OutsideAWS}} API caller IPv4 address: {{198.51.100.6}}
   ```
 **Note**
-To include multiple API caller IPs you can add each IP address to the list of values for Equals or NotEquals conditions, or use wildcard patterns for Matches or NotMatches conditions.
+To include multiple API caller IPs you can add each IP address to the list of values for Equals or NotEquals conditions, or use wildcard patterns for Matches or NotMatches conditions. An Equals or NotEquals value can also be a CIDR range, which matches any IP address within that range.
 + [Recon:EC2/Portscan](guardduty_finding-types-ec2.md#recon-ec2-portscan) – Use a suppression rule to automatically archive findings when using a vulnerability assessment application.
 
   The suppression rule should consist of two filter criteria. The first criteria should use the **Finding type** attribute with a value of `Recon:EC2/Portscan`. The second filter criteria should match the instance or instances that host these vulnerability assessment tools. You can use either the **Instance image ID** attribute or the **Tag** value attribute depending on which criteria are identifiable with the instances that host these tools. The example below represents the filter you would use to suppress this finding type based on instances with a certain AMI.
@@ -82,3 +82,7 @@ To include multiple API caller IPs you can add each IP address to the list of va
   + [Trojan:Runtime/PhishingDomainRequest\!DNS](findings-runtime-monitoring.md#trojan-runtime-phishingdomainrequestdns)
 
   The duplicate findings will include pod, container, and process details that correspond to your DNS server pod. You may set up a suppression rule to suppress these duplicate findings using these fields. The first filter criteria should use the **Finding type** field with value equal to a DNS finding type from the list of findings provided earlier in this section. The second filter criteria could be either **Executable path** with value equal to your DNS server's `executablePath` or **Executable SHA-256** with value equal to your DNS server's `executableSHA256` in the generated finding. As an optional third filter criteria, you can use **Kubernetes container image** field with value equal to the container image of your DNS server pod in the generated finding.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

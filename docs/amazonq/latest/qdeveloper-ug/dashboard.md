@@ -33,3 +33,7 @@ The **Active users** widget only displays information from the account that you'
 + If the **Dashboard** link is not available in the navigation pane, see [Troubleshooting the dashboard](dashboard-troubleshooting.md).
 + If you’d like to send user metrics to a daily report with a per-user breakdown of their Amazon Q Developer usage, see [Viewing the activity of specific users in Amazon Q Developer](q-admin-user-telemetry.md).
 + For information about specific metrics, see [Descriptions of Amazon Q Developer dashboard usage metrics](dashboard-metrics-descriptions.md) or choose the help link (![The help link.](http://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/images/help-icon.png)) on the dashboard page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -51,3 +51,7 @@ Changes the size of the **AWS Explorer** tool window.
 Removes the **AWS Explorer** tool window from the tool window bar. To display it again, on the main menu bar, choose **View**, **Tool Windows**, **AWS Explorer**.
 
 You can also use AWS Explorer to work with Lambda functions and work with AWS CloudFormation stacks in AWS accounts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

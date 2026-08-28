@@ -15,3 +15,7 @@ After you create the policies needed to use DataBrew, you attach them to users a
 + [Adding an IAM policy for a console user](setting-up-iam-policy-for-databrew-console-access.md)
 + [Adding permissions for data resources for an IAM role](setting-up-iam-policy-for-data-resources-role.md)
 + [Configuring IAM policies for DataBrew](iam-policy-config-for-databrew.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -94,3 +94,7 @@ IAM_ROLE 'arn:aws:iam::123456789012:role/MyRedshiftRole';
 The application ARN in this case identifies the managed application to connect to. You can find it by running `SELECT * FROM SVV_IDENTITY_PROVIDERS;`.
 
 For more information about using CREATE IDENTITY PROVIDER, including additional examples, see [Native identity provider (IdP) federation for Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-native-idp.html). For more information about setting up a connection to IAM Identity Center from Redshift, see [Connect Redshift with IAM Identity Center to give users a single sign-on experience](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-iam-access-control-idp-connect.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ If you are encountering false-positive scenarios in rules that use DNS Firewall 
 1. Prioritize the new rule inside the rule so that it runs before the rule that's using the managed list. To do this, give the new rule a lower numeric priority setting.
 
 When you have updated your rules, the new rule explicitly allows the domain name that you want to allow before the blocking rule runs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

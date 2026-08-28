@@ -150,3 +150,7 @@ To learn how to install the latest version of the AWS CDK see [Getting started w
 To learn more about using AWS CDK to build and deploy Lambda functions using .NET, see the following resources:
 + [Working with the AWS CDK in C\#](https://docs.aws.amazon.com/cdk/v2/guide/work-with-cdk-csharp.html)
 + [Build, package, and publish .NET C\# Lambda functions with the AWS CDK](https://aws.amazon.com/blogs/modernizing-with-aws/build-package-publish-dotnet-csharp-lambda-functions-aws-cdk/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

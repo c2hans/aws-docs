@@ -16,3 +16,7 @@ You can specify one Assignment-level Review Policy and one HIT-level Review Poli
 Once an Assignment-level Review Policy is applied, the Assignment's status is changed to *Submitted* and optionally an event notification can be sent. Assignments with *Submitted* status are returned by the ListAssignmentsForHIT operation and the results of applying the Review Policy are available by using the ListReviewPolicyResultsForHIToperation.
 
 You can use different Review Policies on distinct HITs in a HIT type. For example, you may wish to apply the ScoreMyKnownAnswers/2011-09-01 policy to a small number of HITs that have known answers in them, but apply the SimplePlurality/2011-09-01 policy to all HITs in a group. Workers do not have access on the Worker User Interface to information about whether a Review Policy has been applied to a HIT.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -77,3 +77,7 @@ Agent 1, 2 and 3 have a 6 hours shift. In these shifts, there is a 30 minute **B
 + Agent 3 requested time off between **2 am** to **4am**, partially outside of their shift and partially overlapping the shift. The **Deduct from time off balance** **Break** activity falls within the time off request. In this scenario, system will deduct 1 hour 15 minutes for the duration between **2:45 am** to **4:00 am**. The vacation balance for agent 3 would now be 13 hours and 45 minutes.
 
 ![The image displays how the 3 agents are configured for time off using vacation time and sick time.](http://docs.aws.amazon.com/connect/latest/adminguide/images/timeoff-deduction-examples.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

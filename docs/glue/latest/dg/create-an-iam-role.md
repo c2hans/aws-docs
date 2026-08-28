@@ -83,3 +83,7 @@ Create a new policy for your role using the following example. Replace the accou
    ```
 
 1.  Add tags to your role (optional). Tags are key-value pairs that you can add to AWS resources to help identify, organize, or search for resources. Then, choose **Create role**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

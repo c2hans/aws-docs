@@ -33,3 +33,7 @@ The following AWS IoT SiteWise APIs are available on edge devices:
 
 The following APIs are used locally on devices on the edge:
 + [Authenticate](edge-local-apis.md#edge-local-apis-authenticate) – Use this API to get the SigV4 temporary credentials that you'll use to make API calls.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

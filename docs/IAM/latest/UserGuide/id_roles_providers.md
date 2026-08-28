@@ -54,3 +54,7 @@ Amazon Cognito works with external identity providers that support SAML and Open
 <a name="id_roles_providers_additional_resources"></a>
 + For a demonstration on how to create a custom federation proxy that enables single sign-on (SSO) into the AWS Management Console using your organization's authentication system, see [Enable custom identity broker access to the AWS console](id_roles_providers_enable-console-custom-url.md).
 + For instructions on enabling your AWS workloads to access external services without storing credentials, see [Federating AWS Identities to external services](id_roles_providers_outbound.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -75,3 +75,7 @@ The secure.management.http.headers.enabled configuration enables the following H
 + [Strict-Transport-Security: max-age=47304000; includeSubDomains](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Strict-Transport-Security): enforces browsers to use HTTPS when making subsequent connections to the website and its subdomains for a long period of time (1.5 years).
 
 Amazon MQ for RabbitMQ brokers created on versions 3.10 and above will have secure.management.http.headers.enabled set to true by default. You can turn on these HTTP security headers by setting secure.management.http.headers.enabled to true. If you wish to opt out of these HTTP security headers, set secure.management.http.headers.enabled to false.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

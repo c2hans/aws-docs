@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-of-
 ![This image shows recovery objectives](http://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-of-on-premises-applications-to-aws/images/recoveryobjectives.png)
 
  RTO and RPO for each application depend on many factors (such as service level agreements (SLA) and external compliance requirements), but there are some common standards. Common figures for mission-critical applications (tier-1 applications) include an RTO of 15 minutes and a near-zero RPO. For important applications that are not mission critical (tier-2 applications), the RTO is typically four hours and the RPO is two hours. For all other applications (tier-3 applications), a typical RTO is 8 to 24 hours and RPO is four hours.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

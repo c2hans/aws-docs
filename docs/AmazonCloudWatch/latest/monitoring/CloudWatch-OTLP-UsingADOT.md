@@ -432,3 +432,7 @@ $env:OTEL_EXPORTER_OTLP_TRACES_ENDPOINT=https://xray.us-east-1.amazonaws.com/v1/
    You can find the NuGet package of the AWS Distro for OpenTelemetry .NET auto-instrumentation package in the [official NuGet repository](https://www.nuget.org/packages/AWS.Distro.OpenTelemetry.AutoInstrumentation). Be sure to check the [README file](https://github.com/aws-observability/aws-otel-dotnet-instrumentation/blob/main/src/AWS.Distro.OpenTelemetry.AutoInstrumentation/nuget-readme.md) for instructions.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

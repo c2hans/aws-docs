@@ -107,3 +107,7 @@ Some considerations to keep in mind:
 This feature supports automatic minor version upgrades for Oracle Database engine versions released after January 2026.
 
 For more information about tagging RDS resources, see [Tagging Amazon RDS resources](USER_Tagging.md). For detailed instructions on setting up and using upgrade rollout policy, see [ Getting started with AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_getting-started.html) in the *AWS Organizations User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

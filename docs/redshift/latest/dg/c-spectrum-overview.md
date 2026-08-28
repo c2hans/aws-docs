@@ -31,3 +31,7 @@ You can't view details for Redshift Spectrum tables using the same resources tha
 <a name="c-spectrum-regions"></a>
 
 Redshift Spectrum is available in AWS Regions where Amazon Redshift is available, unless otherwise specified in Region specific documentation. For AWS Region availability in commercial Regions, see [Service endpoints](https://docs.aws.amazon.com/general/latest/gr/redshift-service.html#redshift_region) for the **Redshift API** in the *Amazon Web Services General Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

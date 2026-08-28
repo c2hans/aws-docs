@@ -31,3 +31,7 @@ With AWS Glue 4.0, connecting to Snowflake as a data source is supported nativel
 1. Enter the basic connection details, for example class, instance, and so on.
 
 1. Enter any additional configuration information that your data source needs, for example virtual private cloud (VPC) information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

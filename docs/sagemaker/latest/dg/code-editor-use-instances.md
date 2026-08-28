@@ -48,3 +48,7 @@ The following table lists the ARNs of the available Code Editor CPU and GPU imag
 |  us-gov-east-1  | arn:aws:sagemaker:us-gov-east-1:300993876623:image/sagemaker-distribution-cpu | arn:aws:sagemaker:us-gov-east-1:300993876623:image/sagemaker-distribution-gpu |
 
 If you encounter instance limits, contact your administrator. To get more storage and compute for a user, administrators can request an increase to a user's AWS quotas. For more information about requesting a quota increase, see [Amazon SageMaker AI endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/sagemaker.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

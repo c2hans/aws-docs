@@ -21,3 +21,7 @@ To receive CodeGuru Profiler insights in DevOps Guru, you must have the followi
 + CodeGuru Profiler must be enabled. For information on enabling CodeGuru Profiler, see [Setting up CodeGuru Profiler](https://docs.aws.amazon.com/codeguru/latest/profiler-ug/setting-up.html).
 + DevOps Guru must be enabled. For information on enabling DevOps Guru, see [Enable DevOps Guru](https://docs.aws.amazon.com/devops-guru/latest/userguide/getting-started-enable-service.html).
 + The same resources must be monitored in the same Region in both CodeGuru Profiler and DevOps Guru.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

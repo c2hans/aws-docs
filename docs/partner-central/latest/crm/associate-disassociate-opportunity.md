@@ -26,3 +26,7 @@ The following steps explain how to associate and disassociate an opportunity fro
 1. Choose the **X** next to the **Solution(s)**, **AWS product(s)**, or ** AWS Marketplace offer(s)** that you want to remove.
 
 1. Choose **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

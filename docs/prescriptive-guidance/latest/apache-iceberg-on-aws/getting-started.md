@@ -151,3 +151,7 @@ As shown in the diagram, an Iceberg table consists of three main layers:
 + **Data layer**: This layer contains the files that have the data records that queries will run against. These files can be stored in different formats, including [Apache Parquet](https://parquet.apache.org/), [Apache Avro](https://avro.apache.org/), and [Apache ORC](https://orc.apache.org/).
   + **Data files** contain the data records for a table.
   + **Delete files** encode row-level delete and update operations in an Iceberg table. Iceberg has two types of delete files, as described in the [Iceberg documentation](https://iceberg.apache.org/spec/#delete-formats). These files are created by operations by using the merge-on-read mode.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

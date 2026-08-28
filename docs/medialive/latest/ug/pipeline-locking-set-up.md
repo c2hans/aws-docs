@@ -78,3 +78,7 @@ In a UDP output group, you must obtain information about segmentation markers, a
 1. Choose the **Frame rate ** section and set the following fields:
    + **Framerate control**: We recommend you choose **Specified**. The option **Initialize\_from\_source** doesn't work well with pipeline locking.
    + **Framerate numerator** and **Framerate denominator**: Set the desired framerate for the output. Make sure that the conversion from input framerate to output framerate meets [the requirements](pipeline-locking-verify-input.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

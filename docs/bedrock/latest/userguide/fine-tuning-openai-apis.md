@@ -45,3 +45,7 @@ The following table shows the foundation models and regions that support OpenAI 
 | --- | --- | --- | --- | --- | --- |
 | OpenAI | Gpt-oss-20B | openai.gpt-oss-20b | US West (Oregon) | us-west-2 | bedrock-mantle.us-west-2.api.aws |
 | Qwen | Qwen3 32B | qwen.qwen3-32b | US West (Oregon) | us-west-2 | bedrock-mantle.us-west-2.api.aws |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

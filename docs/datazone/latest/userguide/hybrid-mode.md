@@ -104,3 +104,7 @@ If your Amazon S3 location is encrypted with a customer managed key, do the foll
 
 **Note**
 If the KMS key or Amazon S3 location are not in the same AWS account as the data catalog, follow the instructions in [Registering an encrypted Amazon S3 location across AWS accounts](https://docs.aws.amazon.com/lake-formation/latest/dg/register-cross-encrypted.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

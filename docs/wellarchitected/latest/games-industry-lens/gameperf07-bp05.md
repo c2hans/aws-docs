@@ -30,3 +30,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Configure Global Accelerator custom routing accelerators to integrate with your matchmaking service, enabling deterministic routing of players to game sessions using static anycast IPs.
 +  Enable S3 Cross-Region Replication to replicate shared content across Regions for distributed game development teams.
 +  Use S3 Multi-Region Access Points to accelerate S3 data access over the AWS global network for globally distributed users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

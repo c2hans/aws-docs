@@ -18,3 +18,7 @@ Data throughput, data latency, and operations per second are measures that you c
 + [Using Amazon CloudWatch Metrics](UsingCloudWatchConsole-vtl-common.md)
 + [Understanding virtual tape metrics](monitoring-tape.md)
 + [Measuring Performance Between Your Tape Gateway and AWS](PerfGatewayAWS-vtl-common.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

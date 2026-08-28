@@ -162,3 +162,7 @@ The following image of the **Real-time Metrics** page shows **Avg Active Time**,
 The following image of the **Agent Activity Audit report** shows the Paused status when a contact is paused by the agent.
 
 ![The agent activity audit report, paused status.](http://docs.aws.amazon.com/connect/latest/adminguide/images/tasks-agent-activity-report.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

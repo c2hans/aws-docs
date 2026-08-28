@@ -50,3 +50,7 @@ Associating a Direct Connect gateway to an AWS Cloud WAN core network is perform
 To associate an existing Direct connect gateway to a Cloud WAN core network, create a new Direct Connect attachment in the Cloud WAN Console. After the Direct Connect attachment has been created the association is established. By default, when creating the association you can choose the default to include all core network edge locations in the chosen core network segment. Alternatively, you can specify individual edge locations.
 
 For more information about Direct Connect gateway attachments to a Cloud WAN core network, see [Direct Connect gateway attachments in AWS Cloud WAN](https://docs.aws.amazon.com/network-manager/latest/cloudwan/cloudwan-dxattach-about.html) in the *AWS Cloud WAN User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

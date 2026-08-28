@@ -152,3 +152,7 @@ Amazon Chime SDK SIP (Session Initiation Protocol) features have *API regions* a
 | US West (Oregon) (us-west-2) | Yes | Yes | Yes**\*** |
 
 **\***See the [Amazon Chime SDK Pricing](https://aws.amazon.com/chime/chime-sdk/pricing/) page for information about the availability of phone numbers in specific AWS regions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

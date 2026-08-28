@@ -45,3 +45,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
  **Related examples:**
 +  [Lab: Automated Deployment of Web Application Firewall](https://wellarchitectedlabs.com/Security/200_Automated_Deployment_of_Web_Application_Firewall/README.html)
 +  [Lab: Automated deployment of Amazon EC2 web application](https://wellarchitectedlabs.com/Security/200_Automated_Deployment_of_EC2_Web_Application/README.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

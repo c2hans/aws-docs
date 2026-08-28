@@ -30,3 +30,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/secu
 +  **Suitable for Production Workflow** – This preset creates an Amazon OpenSearch Service cluster in two Availability Zones with two `m5.large.search` data nodes, 20GB storage, and three dedicated `t3.small.search` primary nodes.
 +  **Recommended for Production Workload** – This preset creates an Amazon OpenSearch Service cluster in two Availability Zones with four `m5.large.search` data nodes, 20GB storage, and three dedicated `t3.small.search` primary nodes.
 +  **Recommended for Large Production Workload** – This preset creates an Amazon OpenSearch Service cluster in three Availability Zones with six `m5.large.search` data nodes, 40GB storage, and three dedicated `t3.small.search` primary nodes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Media2Cloud on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

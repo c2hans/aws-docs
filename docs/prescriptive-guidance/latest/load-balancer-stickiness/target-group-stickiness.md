@@ -63,3 +63,7 @@ After approximately 10 seconds, the stickiness is released and the target group 
 + When you reload the page, the Application Load Balancer checks whether the binding exists and has not expired.
   + If the binding has expired or doesn't exist, the Application Load Balancer runs its routing logic and determines the destination target group.
   + If the binding has not expired, the Application Load Balancer routes traffic to the same target group, but not necessarily to the same EC2 instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

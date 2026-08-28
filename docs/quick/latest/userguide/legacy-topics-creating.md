@@ -13,3 +13,7 @@ Legacy Topics are collections of one or more datasets that represent a subject a
 There are two ways to create a legacy Topic:
 + Create the Topic by selecting a dataset from the Topics page.
 + Create the Topic using an analysis, where automated data prep learns from how you analyze your data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -73,3 +73,7 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 +  `aws:assertAwsResourceProperty` - Confirms the Amazon EC2 instance you specify in the `InstanceId` parameter is a Windows Server instance.
 +  `aws:runCommand` - Checks whether the instance is part of an Elastic Beanstalk environment, if there is sufficient disk space to bundle the logs, and whether the Amazon S3 bucket to which the logs would be uploaded to is public.
 +  `aws:runCommand` - Collects the log files and uploads the archive to the Amazon S3 bucket specified in the `S3BucketName` parameter or to the default bucket for your Elastic Beanstalk environment if a value is not specified.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

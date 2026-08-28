@@ -31,3 +31,7 @@ Disassociating an ID namespace association also causes all dependent intermediat
    If a member of the collaboration removes one of the ID namespaces, you can’t repopulate the ID mapping table if the source has left the collaboration.
 
    Even though the ID mapping table was populated previously, disassociating the ID namespace means you can no longer run queries on that table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

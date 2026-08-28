@@ -10,3 +10,7 @@ Upon registration, Amazon EC2 High Availability for SQL Server (SQL HA) automati
 SQL HA continuously monitors your enabled SQL Server instances to determine their active or standby status. Using AWS Systems Manager (SSM) commands, it collects metadata from your SQL Server installations and applies classification logic to identify which instances are actively serving traffic and which are functioning as standby failover nodes.
 
 Standby instances are billed as Windows instances rather than Windows SQL Server instances, providing license cost savings. Billing changes take effect when an SQL HA standby detection enabled instance is classified as standby and eligible for the benefit, with no manual intervention required. This classification adapts to changes in your environment, such as failover events where a standby instance becomes active. The system detects these transitions and updates billing accordingly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SQL Server on Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sql-server-ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

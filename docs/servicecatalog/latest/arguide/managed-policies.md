@@ -188,3 +188,7 @@ AWS Service Catalog AppRegistry is no longer open to new customers. Existing cus
 |  [AWSServiceCatalogAppRegistryServiceRolePolicy](slr-appregistry.md) – Update to an existing policy  |  Added permissions to tag AWS Resource Groups when AWS Resource Groups are created.  | August 24, 2021 |
 |  [AWSServiceCatalogAppRegistryFullAccess](#full) – Update to an existing policy  |  +   `UpdateStack` permissions to perform `SyncResource`, which updates the tags on the AWS Service Catalog stack.  <br />+   `TagResource`, `ListTagForResources`, and `UntagResource` to perform tagging operations on resources.  <br />+   `GetAssociatedResource`, as part of the integration with AWS Resource Groups.    | August 24, 2021 |
 |  [AWSServiceCatalogAppRegistryReadOnlyAccess](#read-only) – Update to an existing policy  |  +   `ListTagForResources` to list all of the tags on a resource.  <br />+   `GetAssociatedResource`, as part of the integration with AWS Resource Groups.    | August 24, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

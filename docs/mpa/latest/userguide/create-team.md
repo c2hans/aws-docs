@@ -107,3 +107,7 @@ You can use one of the following operations:
 
 **What to do next**
 After you have created a team, Multi-party approval sends email invitations to the approvers you assigned to the team. The team will become active if every invitation is accepted within 24 hours. If at least one approver declines the team invitation, the team will become inactive. For more information, see [Team health](team-health.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Multi-party approval. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mpa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

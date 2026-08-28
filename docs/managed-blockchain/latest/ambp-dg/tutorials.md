@@ -13,3 +13,7 @@ The following tutorials highlighted in this section are *Community Articles* fro
 + [Interacting with a smart contract](https://repost.aws/articles/ARsoZGkfl3TC-4s_nqtPcajw/interact-with-your-smart-contract-on-polygon-mumbai-with-amb-access)
 + [Retrieve current price data off-chain using AMB Access Polygon and Chainlink data feeds](https://repost.aws/articles/ARx1_64bGAQRubDfM_ci20pQ/retrieve-current-price-data-off-chain-with-amb-access-polygon-and-chainlink-data-feeds)
 + [Analyze ERC-20 token data on Polygon Mainnet with AMB Access](https://repost.aws/articles/ARqK_QBbYFQLWEntK0E6Svbw/analyze-erc-20-token-data-on-polygon-mainnet-with-amb-access)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ You can use the following data-masking techniques:
 + *Hashing* – Apply hash functions to the column values.
 
 For more information on using transforms, see [Personally identifiable information (PII) recipe steps](https://docs.aws.amazon.com/databrew/latest/dg/recipe-actions.pii.html). For more information on using profile jobs to detect PII, including a list of the entity types that can be detected, see [EntityDetectorConfiguration section for configuring PII](https://docs.aws.amazon.com/databrew/latest/dg/profile.configuration.html#entity-detector-configuration) in *Building a profile job configuration programmatically*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ If you run KCL 3.x with all three DynamoDB metadata tables (lease table, worker 
 Do not roll back your application after the migration reaches the COMPLETE state. After COMPLETE, the application operates exclusively in single table mode. Even a code rollback to Phase 1 does not switch back to multiple tables— the configuration is ignored and the application continues using only the lease table.
 
 For details on migration states and rollback options, see [Single table format for KCL](kcl-single-table-format.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

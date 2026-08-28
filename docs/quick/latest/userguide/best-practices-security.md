@@ -105,3 +105,7 @@ CloudTrail records metadata (who, when, what operation) but not the message body
 ****Encrypt database connections with SSL**** – Use SSL to connect to your databases, especially if you are using public networks. Using SSL with Quick requires certificates signed by a publicly recognized certificate authority (CA).
 
 ****Configure firewall rules for user and data access**** – To allow users to access Quick, allow access to HTTPS and WebSockets Secure (wss://) protocol. To allow Quick to reach a database on a non-AWS server, change that server's firewall configuration to accept traffic from the applicable Quick IP address range. For more information, see [Network and database configuration requirements](configure-access.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

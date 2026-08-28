@@ -310,3 +310,7 @@ Note that because both ROLLUP(category) and CUBE(product, pre\_owned) contain th
 + The GROUP BY clause supports up to 64 grouping sets. In the case of ROLLUP and CUBE, or some combination of GROUPING SETS, ROLLUP, and CUBE, this limitation applies to the implied number of grouping sets. For example, GROUP BY CUBE((a), (b)) counts as 4 grouping sets, not 2.
 + You can't use constants as grouping columns when using aggregation extensions.
 + You can't make a grouping set that contains duplicate columns.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

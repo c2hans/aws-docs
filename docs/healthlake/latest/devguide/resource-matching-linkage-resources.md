@@ -108,3 +108,7 @@ You delete patient-A, the resource whose identifiers connected the SSN set (A, B
 
 Removal
 Finally, you update patient-B to correct a data-entry error, removing the SSN it shared with the group. Because patient-B no longer shares any identifier with the other members, it is removed from the group. If a group drops below two members, its Linkage resource is deleted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

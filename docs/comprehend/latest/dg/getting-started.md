@@ -38,3 +38,7 @@ The following exercise uses the Amazon Comprehend console to create and run an a
 1. Decompress the file and save it as a Json file.
 
 1. See [Entities](how-entities.md) for a description of the entity types and the fields for each detected entity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

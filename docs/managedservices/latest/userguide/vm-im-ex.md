@@ -28,3 +28,7 @@ An additional role, the **VM Import/Export Service** role, is required for the s
 **Q: What are the prerequisites or dependencies to using VM Import/Export in my AMS account?**
 + You must provide a supported disk image to import into the AWS environment. For information, see [VM Import/Export Requirements](https://docs.aws.amazon.com/vm-import/latest/userguide/vmie_prereqs.html).
 + VM Import/Export isn't accessible through the AWS console. You must access this service through the AWS CLI, AWS Tools for PowerShell, or the AWS SDKs. Or, you can request an instance profile by submitting change type ct-117rmp64d5mvb: Deployment \| Advanced stack components \| Identity and Access Management (IAM) \| Create EC2 instance profile. This instance profile allows the tools to perform commands from an instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

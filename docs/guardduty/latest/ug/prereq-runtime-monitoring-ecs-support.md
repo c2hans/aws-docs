@@ -192,3 +192,7 @@ In the Fargate task definition, you must specify the CPU and memory value at the
 After you enable Runtime Monitoring and assess that the coverage status of your cluster is **Healthy**, you can set up and view the Container insight metrics. For more information, see [Setting up monitoring on Amazon ECS cluster](runtime-monitoring-setting-cpu-mem-monitoring.md#ecs-runtime-cpu-memory-monitoring-agent).
 
 The next step is to configure Runtime Monitoring and also configure the security agent.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

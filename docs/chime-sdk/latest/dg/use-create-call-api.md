@@ -103,3 +103,7 @@ If the call is answered, Chime invokes the endpoint with the `CALL_ANSWERED` act
 ```
 
 At this point, you can return actions by responding to the invocation with an action list. If you don’t want to run any actions, respond with an empty list. You can respond with a maximum of 10 actions for each AWS Lambda invocation, and you can invoke a Lambda function 1,000 times per call. For more information about responding with sets of actions, refer to [Responding to invocations with action lists using the Amazon Chime SDK PSTN audio service](invoke-on-call-leg.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

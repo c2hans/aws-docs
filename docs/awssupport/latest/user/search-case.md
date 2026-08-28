@@ -60,3 +60,7 @@ After you receive your search results, you can do the following:
 The following example shows a resolved support case for an account and billing issue after choosing **See details**.
 
 ![A resolved account and billing support case result in Slack.](http://docs.aws.amazon.com/awssupport/latest/user/images/supportapp/search-case-results-see-details.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

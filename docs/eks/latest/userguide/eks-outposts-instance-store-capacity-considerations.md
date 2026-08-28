@@ -84,3 +84,7 @@ When planning Outpost capacity for local clusters, account for the following:
 If your cluster remains in the `CREATING` or `UPDATING` state for an extended period after you specify a spread level, verify that your Outpost has sufficient hosts or racks with the chosen instance type to satisfy the spread topology.
 
 For more information about troubleshooting local clusters, see [Troubleshoot local Amazon EKS clusters on AWS Outposts configured with EC2 instance store](eks-outposts-instance-store-troubleshooting.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -194,3 +194,7 @@ The following table describes important updates to the AWS Health managed polici
 | [AWS managed policy: AWSHealthFullAccess](#security-iam-awsmanpol-AWSHealthFullAccess) - Update to an existing policy | AWS Health has expanded the AWSHealthFullAccess policy to AWS GovCloud (US) Regions and China Regions. | October 16, 2023 |
 | [AWS managed policy: Health\_OrganizationsServiceRolePolicy](#security-iam-awsmanpol-Health_OrganizationsServiceRolePolicy) - Update to an existing policy | AWS Health added new AWS Organizations actions to allow service-linked role to describe the accounts and AWS services that can be used with AWS Organizations. | July 19, 2023 |
 | Change log published | Change log for the AWS Health managed policies. | January 13, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query health` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

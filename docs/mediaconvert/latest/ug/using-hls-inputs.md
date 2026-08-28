@@ -43,3 +43,7 @@ When your input is an HLS package, your job is restricted in these ways:
 + Your input package must conform to the requirements listed in [HLS input requirements](#hls-input-package-requirements).
 + Your input segments can't be encrypted with DRM. For example, your inputs can't be encrypted with Apple FairPlay DRM.
 + You can use only embedded input captions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

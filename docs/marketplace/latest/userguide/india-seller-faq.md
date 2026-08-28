@@ -138,3 +138,7 @@ Yes. You can create private offers for buyers in India using the standard privat
 <a name="india-seller-compliance"></a>
 
 You must comply with all applicable laws and regulations in India, including but not limited to tax laws, data protection requirements, and software licensing regulations. AWS provides the platform, but compliance with local laws is your responsibility.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

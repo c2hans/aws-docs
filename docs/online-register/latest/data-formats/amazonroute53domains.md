@@ -20,3 +20,7 @@ Amazon Route 53 Domains provides the following APIs for data retrieval.
 | <a name="route53domains-ListPrices"></a>[ListPrices](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ListPrices.html) | List the prices of operations for TLDs | List |
 | <a name="route53domains-ListTagsForDomain"></a>[ListTagsForDomain](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ListTagsForDomain.html) | List all the tags that are associated with the specified domain | Read |
 | <a name="route53domains-ViewBilling"></a>[ViewBilling](https://docs.aws.amazon.com/Route53/latest/APIReference/API_domains_ViewBilling.html) | Get all the domain-related billing records for the current AWS account for a specified period | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -98,3 +98,7 @@ The following table describes important changes to the documentation by date. Fo
 | [New STIG versions](ib-stig.md) | Updated STIG versions and applied STIGS. | January 23, 2020 |
 | [Troubleshooting](#doc-history) | Added general troubleshooting scenarios. | January 22, 2020 |
 | [STIG Components](ib-stig.md) | You can create STIG-compliant images with AWSTOE STIG components. | January 22, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

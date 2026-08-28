@@ -54,3 +54,7 @@ The krbtgt account plays an important role in the Kerberos ticket exchanges used
 AWS automatically rotates the krbtgt account password for your AWS Managed Microsoft AD twice every 90 days. There is a 24 hour waiting period between the two consecutive rotations every 90 days.
 
 For more information about the admin account and other accounts created by Active Directory, see [Microsoft documentation](https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/understand-default-user-accounts).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

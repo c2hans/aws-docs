@@ -27,3 +27,7 @@ Standard fields included in AMS security alert notifications are listed below. T
 + AWS Resources (IAM user/role/policy, EC2, S3, EKS)
 
 Additional fields are provided depending on the Finding Type, for example EKS Findings include Pod, Container, and Cluster details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

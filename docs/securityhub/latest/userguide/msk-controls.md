@@ -171,3 +171,7 @@ Amazon MSK supports client authentication and authorization mechanisms to contro
 <a name="msk-6-remediation"></a>
 
 For information about changing the authentication settings for an Amazon MSK cluster, see the following sections of the *Amazon Managed Streaming for Apache Kafka Developer Guide*: [Update security settings of an Amazon MSK cluster](https://docs.aws.amazon.com/msk/latest/developerguide/msk-update-security.html) and [Authentication and authorization for Apache Kafka APIs](https://docs.aws.amazon.com/msk/latest/developerguide/kafka_apis_iam.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

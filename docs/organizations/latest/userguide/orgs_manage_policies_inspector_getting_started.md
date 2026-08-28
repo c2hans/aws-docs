@@ -73,3 +73,7 @@ To create an Amazon Inspector policy, you need the following permission:
 1. Enter or paste the policy text in the JSON code box. For information about the Amazon Inspector policy syntax, and example policies you can use as a starting point, see [Amazon Inspector policy syntax and examples](orgs_manage_policies_inspector_syntax.md).
 
 1. When you're finished editing your policy, choose **Create policy** at the lower-right corner of the page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

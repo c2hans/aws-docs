@@ -40,3 +40,7 @@ If a user opens a file in their home folder on the fleet instance during their s
 If a user opens a file in their home folder on the fleet instance during their streaming session, and you remove the file from their home folder in an S3 bucket during that user’s active streaming session, there may be up to a 60 second delay before the deletion is reflected on the fleet instance. After this delay, the file is removed from the fleet instance when the user does either of the following:
 + Opens the home folder again
 + Refreshes the home folder
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

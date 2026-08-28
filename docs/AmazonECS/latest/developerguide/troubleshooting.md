@@ -88,3 +88,7 @@ For information about AI-powered troubleshooting, see the following:
 | --- | --- |
 | Troubleshoot with Amazon Q Developer in the console. |  [Troubleshooting with Amazon Q Developer](troubleshooting-with-Q.md)  |
 | Troubleshoot with AI assistants using the Amazon ECS MCP server. |  [Amazon ECS MCP server](ecs-mcp-introduction.md)  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

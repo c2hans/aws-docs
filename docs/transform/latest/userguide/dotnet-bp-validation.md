@@ -31,3 +31,7 @@ Run your application and confirm its functionality matches the original. Note fu
 <a name="dotnet-bp-validate-ui"></a>
 
 Run your application and confirm it looks and behaves like the original including navigation and routing. If your application has no styling, it might be that .css files are not in the correct location. Correct with an AI code companion.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

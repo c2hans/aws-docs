@@ -398,3 +398,7 @@ Keep the following considerations in mind when writing data quality results to D
 + A single results table can store results from multiple source tables. Use the `catalog_id`, `database_name`, and `table_name` partition columns to filter results for a specific source.
 + AWS Glue Data Quality writes observation results asynchronously after the evaluation run completes. There might be a brief delay before observations appear in the table.
 + For distribution statistics in the distribution results table, each bin or category is stored as a separate row. For example, a histogram with 20 bins generates 20 rows in the table for that statistic.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

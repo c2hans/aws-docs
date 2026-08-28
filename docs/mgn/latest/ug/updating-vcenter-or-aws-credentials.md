@@ -20,12 +20,16 @@ Users who want to change the vCenter or AWS credentials used by the MGN applianc
 1.  When running the vCenter configuration update tool, you are prompted to provide the necessary credentials. Follow these steps to update the credentials. Provide the required info in each field and then press Enter:
    +  New vCenter username (--new-vcenter-username)
    +  New vCenter password (--new-vcenter-password)
-   +  New AWS Secret Key ID (--new-aws-access-key-id)
+   +  New AWS Access Key ID (--new-aws-access-key-id)
    +  New AWS Secret Access Key (--new-aws-secret-access-key)
    +  New path to the CA (optional) (--new-ca-path)
 
 1.  If you do not provide the `--new-ca-path` flag, the tool first asks if you want to update the CA path. If you answer yes, it prompts you for the new CA path. If you answer no, the tool uses the CA path from the previous configuration. The tool verifies the new vCenter and AWS credentials by attempting to connect to vCenter and MGN using them.
 
-1.  Upon successful connection to vCenter and MGN, the tool saves the new credentials and restart the necessary services.
+1.  Upon successful connection to vCenter and MGN, the tool saves the new credentials and restarts the necessary services.
 
 1.  In case of failure to connect to vCenter or MGN, the new credentials are not stored, and the previous configuration is retained. This error message is displayed: `Failed to connect to the vCenter endpoint or MGN using the new connection details. The configuration changes will not be applied.`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

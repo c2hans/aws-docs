@@ -154,3 +154,7 @@ https://s3.us-west-2.amazonaws.com/amazon-eks/cloudformation/2020-10-29/amazon-e
 1. Record the **SubnetIds** for the subnets that were created. You need at least two of these when you create your cluster and nodes.
 
 1. (Optional) Any cluster that you deploy to this VPC can assign private `IPv4` addresses to your Pods and services. If you want to deploy clusters to this VPC to assign private `IPv6` addresses to your Pods and services, make updates to your VPC, subnet, route tables, and security groups. For more information, see [Migrate existing VPCs from IPv4 to IPv6](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-migrate-ipv6.html) in the Amazon VPC User Guide. Amazon EKS requires that your subnets have the `Auto-assign IPv6` addresses option enabled (it’s disabled by default).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

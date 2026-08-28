@@ -52,3 +52,7 @@ For information about the `$` character, see [Reserved topics](https://docs.aws.
 1. Make sure that the Greengrass daemon is running, as described in [Deploy cloud configurations to a core device](configs-core.md).
 
 1. <a name="console-actions-deploy"></a>On the group configuration page, choose **Deploy**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

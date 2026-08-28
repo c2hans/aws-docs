@@ -23,3 +23,7 @@ A share request for this job is already in progress. Wait for it to complete bef
 You've exceeded the rate limit of 0.1 requests per second. Wait before you retry your request.
 
 If sharing fails after the request is accepted, check the `lastShareDetails` field in the job response for specific error information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

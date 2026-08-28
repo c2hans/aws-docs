@@ -35,3 +35,7 @@ source_url: https://docs.aws.amazon.com/servicecatalog/latest/userguide/enduser-
 <a name="enduser-viewproduct-support"></a>
 
 Support details can include an email address, an external link supplied by the administrator, or both. Administrators are responsible for maintaining the accuracy and access of support information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -105,3 +105,7 @@ In order to create attribute sets, you must be a superuser or a member of a grou
 1. Choose **Add Attribute Set**. The selected attribute sets get added to the dataset. You can set values for each of the attribute set you selected and choose **Save** to finish.
 **Note**
 Under the **Details About This Dataset** section, you can also choose **Edit** to edit the associated attribute or choose **Remove Attribute Set** to remove it from the dataset.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

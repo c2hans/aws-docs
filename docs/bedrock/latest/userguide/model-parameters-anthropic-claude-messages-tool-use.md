@@ -951,3 +951,7 @@ The `tool` field is a discriminated union on `type`:
 
 **Note**
 `mcp_tool_reference` in a `tool_removal` is lenient — if the server has since dropped that tool, the removal is a no-op (so historical conversations remain replayable).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -385,3 +385,7 @@ The following Lambda event handlers are initiated by the Customer and Reward Dyn
 <a name="attachments-9f1bc700-def4-4201-bb2d-f1fa27404f15"></a>
 
 To access additional content that is associated with this document, download and unzip the following file: [attachment.zip](samples/p-attach/9f1bc700-def4-4201-bb2d-f1fa27404f15/attachments/attachment.zip)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

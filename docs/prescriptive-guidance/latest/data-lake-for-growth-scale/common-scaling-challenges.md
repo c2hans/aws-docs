@@ -46,3 +46,7 @@ The data lake's architecture becomes increasingly complicated, even with only th
 Each data producer needs to handle data sharing and data access management for multiple data consumers. It is unrealistic to expect all data producers to develop an automated or semi-automated process for data sharing and data access management. Some data producers might choose to not share their data and therefore avoid unaffordable management overhead. Similarly, each data consumer needs to interact with multiple data producers to understand their different data consumption processes. This means that individual data consumers face increasing management overhead for handling different data-sharing patterns.
 
 In many organizations, this data lake causes bottlenecks and cannot grow or scale. This might mean that your organization must redesign and rebuild its data lake to remove the bottleneck, which can cost significant time, resources, and money.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

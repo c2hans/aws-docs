@@ -58,3 +58,7 @@ Choose the icon in the top-left corner of a panel to see available panel links.
 1.  Choose the **X** icon next to the link that you want to delete.
 
 1.  Choose **Save** in the upper right to save your changes to the dashboard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

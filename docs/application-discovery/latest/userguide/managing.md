@@ -63,3 +63,7 @@ You can manage the behavior of the Discovery Agent at the system level through t
 | Start an agent | AWS Discovery Agent<br />AWS Discovery Updater | Choose Start |
 | Stop an agent | AWS Discovery Agent<br />AWS Discovery Updater | Choose Stop |
 | Restart an agent | AWS Discovery Agent<br />AWS Discovery Updater | Choose Restart |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Application Discovery Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query application-discovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

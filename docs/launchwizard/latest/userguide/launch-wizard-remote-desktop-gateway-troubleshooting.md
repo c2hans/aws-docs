@@ -94,3 +94,7 @@ After you have determined the root cause, disable the termination protection bef
   User: arn:aws:iam::123456789098:user/test-user is not authorized to perform: elasticloadbalancing:CreateTargetGroup on resource: arn:aws:elasticloadbalancing:us-east-1:123456789098:targetgroup/myTargetGroup/*)
   ```
 + **Solution:** Before deploying the Launch Wizard application, you must sign in to the AWS Management Console with IAM permissions for the resources that Launch Wizard will deploy. The *AdministratorAccess* managed policy within IAM provides sufficient permissions, although your organization may choose to use a custom policy with more restrictions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Launch Wizard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query launchwizard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

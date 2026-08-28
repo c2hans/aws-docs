@@ -185,3 +185,7 @@ If you have configured your CA with a custom CNAME, the CDP URI will include the
  By default, AWS Private CA writes CDP extensions using regional, IPv4-only `amazonaws.com` endpoints. To use CRLs over IPv6, do one of the following steps so that CDPs are written with URLs that point to [S3's dualstack endpoints](https://docs.aws.amazon.com/AmazonS3/latest/API/dual-stack-endpoints.html):
 + Set your [CRL custom name ](create-CA.md#PcaCreateRevocation) to the S3 dualstack endpoint domain. For example, `{{bucketname}}.s3.dualstack.{{region-code}}.amazonaws.com`
 + Set up your own CNAME DNS record pointing at the relevant S3 dualstack endpoint, then use it as your CRL custom name
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ Where possible, use temporary credentials instead of long-term credentials, such
 AWS CloudTrail tracks anyone making API calls in your AWS account. API calls are logged whenever anyone uses the Amazon SageMaker geospatial capabilities API, the Amazon SageMaker geospatial capabilities console or Amazon SageMaker geospatial capabilities AWS CLI commands. Enable logging and specify an Amazon S3 bucket to store the logs.
 
 Your trust, privacy, and the security of your content are our highest priorities. We implement responsible and sophisticated technical and physical controls designed to prevent unauthorized access to, or disclosure of, your content and ensure that our use complies with our commitments to you. For more information, see [AWS Data Privacy FAQ](https://aws.amazon.com/compliance/data-privacy-faq/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

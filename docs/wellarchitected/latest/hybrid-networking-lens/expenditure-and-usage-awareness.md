@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/hybrid-networking
 + [HNCOST02-BP01 Track and analyze hybrid networking expenses](hncost02-bp01.md)
 + [HNCOST02-BP02 Set up alerts to proactively notify hybrid networking cost thresholds](hncost02-bp02.md)
 + [HNCOST02-BP03 Analyze network traffic patterns for optimization opportunities](hncost02-bp03.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

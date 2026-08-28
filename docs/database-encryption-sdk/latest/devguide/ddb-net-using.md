@@ -114,3 +114,7 @@ AlgorithmSuiteId = DBEAlgorithmSuiteId.ALG_AES_256_GCM_HKDF_SHA512_COMMIT_KEY_SY
 <a name="ddb-net-update-items"></a>
 
 The AWS Database Encryption SDK does not support [ddb:UpdateItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_UpdateItem.html) for items that include encrypted or signed attributes. To update an encrypted or signed attribute, you must use [ddb:PutItem](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_PutItem.html). When you specify the same primary key as an existing item in your `PutItem` request, the new item completely replaces the existing item. You can also use [CLOBBER](https://docs.aws.amazon.com/AWSJavaSDK/latest/javadoc/com/amazonaws/services/dynamodbv2/datamodeling/DynamoDBMapperConfig.SaveBehavior.html#CLOBBER) to clear and replace all attributes on save after updating your items.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

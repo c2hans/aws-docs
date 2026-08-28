@@ -24,3 +24,7 @@ For a basic introduction to the core AWS serverless services, see [Serverless 10
 
 **Serverless Application**  <a name="what-is-concepts-terms-serverless"></a>
 When you use AWS SAM, you manage related resources in an application, which consists of your AWS SAM project and template. All the resources in your application are defined or referred to in your AWS SAM template. When AWS SAM processes your template, it creates CloudFormation resources. In CloudFormation, resources are managed in a single unit called a stack, and all the resources in a stack are defined by the stack's CloudFormation template.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

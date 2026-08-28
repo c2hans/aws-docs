@@ -44,3 +44,7 @@ AWS offers three platforms for customizing Amazon Nova models, each designed for
 If you provide a KMS key to your Amazon Nova model customization training job for encryption in the Amazon-owned output S3 bucket:
 You must provide the same KMS key when calling subsequent iterative training jobs, or when calling the Amazon Bedrock CreateCustomModel API leveraging the encrypted model.
 The identity calling the `CreateTrainingJob` API (rather than the execution role) must have permissions to `CreateGrant`, `RetireGrant`, `Encrypt`, and `GenerateDataKey` as defined in KMS key policy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,3 +59,7 @@ The following code examples show you how to use Amazon Simple Notification Servi
   + [Use scheduled events to invoke a Lambda function](sns_example_cross_LambdaScheduledEvents_section.md)
 + [Serverless examples](sns_code_examples_serverless_examples.md)
   + [Invoke a Lambda function from an Amazon SNS trigger](sns_example_serverless_SNS_Lambda_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

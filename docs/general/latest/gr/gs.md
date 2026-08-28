@@ -44,3 +44,7 @@ The following are the service endpoints and service quotas for this service.
 | Mission profile limit | Each supported Region: 100 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/groundstation/quotas/L-5342B9BF)  | The maximum number of mission profiles allowed. |
 | Scheduled Contacts Limit | Each supported Region: 100 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/groundstation/quotas/L-DF7B6DEC)  | Maximum number of scheduled contacts allowed |
 | Scheduled Minutes Limit | Each supported Region: 1,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/groundstation/quotas/L-FED20749)  | The maximum number of scheduled minutes allowed |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

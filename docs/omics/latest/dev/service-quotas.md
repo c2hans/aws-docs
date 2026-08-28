@@ -40,3 +40,7 @@ For more information about service quotas, see [Requesting a quota increase](htt
 | Workflows - Maximum static run storage capacity per run | Each supported Region: 9,600 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/omics/quotas/L-35CE76C9)  | The maximum static run storage capacity in gibibytes (GiB) for each run in the current AWS region. In us-east-1 and us-west-2, quota increase requests for values up to 50,000 are automatically approved. |
 | Workflows - Maximum workflows | Each supported Region: 1,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/omics/quotas/L-7CAE62CF)  | The maximum number of workflows in the current AWS region. |
 | Workflows - Transactions per second (TPS) for the StartRun operation | Each supported Region: 5 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/omics/quotas/L-24A3B174)  | The maximum transactions per second (TPS) for the StartRun operation in the current AWS region. Quota increase requests for values up to 10 are automatically approved. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

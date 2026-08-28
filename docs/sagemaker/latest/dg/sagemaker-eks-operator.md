@@ -25,3 +25,7 @@ To use the training operator, you must use the latest [ HyperPod AMI release](ht
 
 **Note**
 We collect certain routine aggregated and anonymized operational metrics to provide essential service availability. The creation of these metrics is fully automated and does not involve human review of the underlying model training workload. These metrics relate to a job operations, resource management, and essential service functionality.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -201,3 +201,7 @@ Because you cannot change the encryption key after database creation, migrating 
 <a name="influxdb2-cmk-pricing"></a>
 
 There is no additional Amazon Timestream for InfluxDB charge for using customer managed keys. Standard AWS KMS pricing applies for your key and the API calls made by the service. For details, see [AWS KMS pricing](https://aws.amazon.com/kms/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

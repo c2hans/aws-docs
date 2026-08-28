@@ -349,3 +349,7 @@ aws opensearchserverless delete-access-policy --name {{my-policy}} --type data
 <a name="serverless-data-access-cross"></a>
 
 While you can't create a data access policy with cross-account identity or cross-account collections, you can still set up cross-account access with the assume role option. For example, if `{{account-a}}` owns a collection that `{{account-b}}` needs access to, the user from `{{account-b}}` can assume a role in `{{account-a}}`. The role must have the IAM permissions `aoss:APIAccessAll` and `aoss:DashboardsAccessAll`, and be included in the data access policy on `{{account-a}}`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

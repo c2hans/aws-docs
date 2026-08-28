@@ -51,3 +51,7 @@ Quick allows any user to ask questions on dashboards that have dashboard Q&A ena
 1. Toggle **Manage Dashboard Q&A** off.
 
 When you toggle **Manage Dashboard Q&A** off, dashboard Q&A is removed from any dashboards that have dashboard Q&A enabled. If your Quick account does not have Pro users or topics, this action stops the Amazon Q enablement fee from billing your Quick account. This setting does not impact Pro users or existing topics in Quick. For more information about opting out of Generative BI, see [Opting out of Generative BI](generative-bi-opt-out.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -196,3 +196,7 @@ Distance sort rules sort a batch of matchmaking tickets based on the distance of
   + `minValue` – For the first ticket added to the batch, find the key with the lowest value.
   + `maxValue` – For the first ticket added to the batch, find the key with the highest value.
 + **`partyAggregation`** – The value that determines how FlexMatch handles tickets with multiple players (parties). Valid options include the minimum (`min`), maximum (`max`), and average (`avg`) values for a ticket's players. The default is `avg`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

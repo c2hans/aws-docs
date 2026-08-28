@@ -277,3 +277,7 @@ To run DynamoDB local in the background, run DynamoDB local in AWS CloudShell us
    `aws dynamodb list-tables --endpoint-url http://localhost:8000`
 
 For an example of a sample project that showcases multiple approaches to set up and use DynamoDB local, including downloading JAR files, running it as a Docker image, and using it as a Maven dependency, see [DynamoDB Local Sample Java Project](https://github.com/awslabs/amazon-dynamodb-local-samples/tree/main).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

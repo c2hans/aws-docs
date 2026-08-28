@@ -98,3 +98,7 @@ To resolve this issue, we recommend that you use a Server Message Block (SMB) so
 WorkSpaces Applications uses API calls to retrieve the content of folders that are stored in WorkSpaces Applications persistent storage. There is a limit to the number of items that an API call can retrieve each time the call runs. For this reason, if WorkSpaces Applications must retrieve thousands of files in a single folder, it might take more time to display the list of all the files than it would to display the list of files in a folder that contains fewer files.
 
 To resolve this issue, if you have thousands of files in one folder, we recommend that you divide this content into groups of fewer files and store each group in a different folder. Doing so reduces the number of API calls that are required to display the list of files in each folder.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

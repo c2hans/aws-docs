@@ -15,3 +15,7 @@ The method you use to add an output to a flow is dependent on the type of output
 + [VPC output (transport stream flow)](outputs-add-vpc.md) – Sends compressed content to a VPC that you configured using Amazon Virtual Private Cloud.
 + [NDI® output (transport stream flow)](outputs-add-ndi.md) – Sends high-quality, low-latency content over IP networks so that it can be received by the production systems within your VPC network.
 + [VPC output (CDI flow)](outputs-add-vpc.md) – Sends uncompressed content to a VPC that you configured using Amazon Virtual Private Cloud.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

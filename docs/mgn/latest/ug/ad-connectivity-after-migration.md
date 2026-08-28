@@ -22,3 +22,7 @@ When you migrate domain-joined Windows servers, the target instance may fail to 
    + *Alternative:* Create a [custom DHCP options set](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.html) with your AD DNS servers. Note: this may break AWS service endpoint resolution unless your DNS servers also forward AWS domain queries.
 
 Test by launching a test instance in the target VPC before performing a cutover migration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

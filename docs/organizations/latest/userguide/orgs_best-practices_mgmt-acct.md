@@ -52,3 +52,7 @@ Where possible, we recommend delegating responsibilities and services outside th
 For more information, see [Security Reference Architecture](https://docs.aws.amazon.com/prescriptive-guidance/latest/security-reference-architecture/security-tooling.html), [Organizing Your AWS Environment Using Multiple Accounts](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/organizing-your-aws-environment.html), and [AWS services that you can use with AWS Organizations](orgs_integrate_services_list.md) for suggestions on registering member accounts as delegated administrator for various AWS services.
 
 For more information about setting up delegated admins, see [Enabling a delegated admin account for AWS Account Management](https://docs.aws.amazon.com/accounts/latest/reference/using-orgs-delegated-admin.html) and [Delegated administrator for AWS Organizations](orgs_delegate_policies.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

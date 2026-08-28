@@ -25,3 +25,7 @@ The following section defines key terms for bringing your own image to use with 
 + **Docker image:** The Docker image is a built Dockerfile. This image is checked into Amazon ECR and serves as the basis of the SageMaker AI image.
 + **SageMaker image:** A SageMaker image is a holder for a set of SageMaker image versions based on Docker images.
 + **Image version:** An image version of a SageMaker image represents a Docker image that is compatible with RStudio and stored in an Amazon ECR repository. Each image version is immutable. These image versions can be attached to a domain and used with RStudio on SageMaker AI.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

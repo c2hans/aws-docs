@@ -123,3 +123,7 @@ To create an app in Jira Cloud and obtain the Client ID and Client Secret from t
 1. Enter a **Callback URL** such as https://us-east-1.console.aws.amazon.com/gluestudio/oauth
 
 1. Navigate to **Settings** in the left menu and scroll down for **Authentication** details. Note the Client ID and Secret.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

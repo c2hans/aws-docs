@@ -547,3 +547,7 @@ To learn how to send HealthLake events to Amazon EventBridge, see [ Amazon Event
 | detail.submitTime | string | The time the export job was submitted. |
 | detail.datastoreId | string | The data store that generated the status change event. |
 | detail.outputDataConfig | string | The output prefix path for the Amazon S3 bucket that contains the FHIR files to be exported. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

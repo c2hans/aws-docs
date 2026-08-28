@@ -16,3 +16,7 @@ Deleting a plan does not delete any recovery instances that its executions launc
 
 **Note**
 You cannot delete a source server from AWS Elastic Disaster Recovery while it belongs to a recovery plan. Remove the server from its plans first, then delete it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

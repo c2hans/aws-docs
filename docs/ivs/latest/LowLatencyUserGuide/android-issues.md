@@ -12,3 +12,7 @@ This document lists known issues that you might encounter when using the Amazon 
 + When using an Android 11 (API level 30) emulator, you may experience video-layout issues (specifically, zooming of the stream).
 
   **Workaround:** Play back on the real device instead.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

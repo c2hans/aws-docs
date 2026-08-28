@@ -20,3 +20,7 @@ Each budget tracks the estimated cost of a single queue. To give each project, d
 To receive notifications before a budget reaches its limit, use the EventBridge events that Deadline Cloud sends as spending crosses each threshold percentage. For more information, see [Monitor a budget with EventBridge events](budget-threshold-events.md).
 
 You can also create and adjust budgets programmatically with the [CreateBudget](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_CreateBudget.html) and [UpdateBudget](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_UpdateBudget.html) API operations. When a budget action triggers, the queue reports a blocked reason of `BUDGET_THRESHOLD_REACHED` in the [GetQueue](https://docs.aws.amazon.com/deadline-cloud/latest/APIReference/API_GetQueue.html) response.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

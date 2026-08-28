@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-salesforce"></a>
 
 ## Secret Value Fields
-<a name="w2aac27c11c33b3"></a>
+<a name="w2aac27c11c37b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -36,7 +36,7 @@ consumerId
 The consumer ID is the identifier for your Salesforce External Client Application (ECA) consumer. You can retrieve this by calling the Salesforce OAuth Credentials by App ID endpoint. This field refers to the consumer\_id in the [Salesforce rotation guide](https://help.salesforce.com/s/articleView?id=xcloud.eca_stage_oauth_credentials.htm&type=5).
 
 ## Secret Metadata Fields
-<a name="w2aac27c11c33b5"></a>
+<a name="w2aac27c11c37b5"></a>
 
 The following are the metadata fields required to rotate a secret held by Salesforce.
 
@@ -54,10 +54,14 @@ adminSecretArn
 (Optional) The admin secret ARN is the Amazon Resource Name (ARN) for the secret that contains the administrative OAuth credentials that are to used to rotate this Salesforce client secret. At a minimum the admin secret should contain a consumerKey and consumerSecret value within the secret structure. It is an optional field and if omitted, during rotation Secrets Manager will use the OAuth credentials within this secret to authenticate with Salesforce.
 
 ## Usage Flow
-<a name="w2aac27c11c33b7"></a>
+<a name="w2aac27c11c37b7"></a>
 
 With AWS Secrets Manager, you can rotate a Salesforce secret using the credentials in the same secret or use the credentials in the Admin secret for rotation. You can create your secret using the [CreateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_CreateSecret.html) call with the secret value containing the fields mentioned above and secret type as SalesforceClientSecret. The rotation configurations can be set using a [RotateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RotateSecret.html) call. This call requires the specification of the metadata fields as in the example above - If you opt for a rotation using credentials in the same secret, you can skip the adminSecretArn field. Additionally, customers must provide a role ARN in the [RotateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RotateSecret.html) call which grants the service the required permissions to rotate the secret. For an example of a permissions policy, see [Security and Permissions](mes-security.md).
 
 To rotate your secrets using a separate set of credentials stored in an Admin Secret, create the Admin Secret in AWS Secrets Manager following the same steps as your consumer secret. You must provide the ARN of this Admin Secret in the rotation metadata in a [RotateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RotateSecret.html) call for your consumer secret.
 
 The rotation logic follows the guidance provided by Salesforce.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

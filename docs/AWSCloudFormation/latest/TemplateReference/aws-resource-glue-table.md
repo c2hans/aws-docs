@@ -23,6 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[CatalogId](#cfn-glue-table-catalogid)" : {{String}},
       "[DatabaseName](#cfn-glue-table-databasename)" : {{String}},
+      "[Name](#cfn-glue-table-name)" : {{String}},
       "[OpenTableFormatInput](#cfn-glue-table-opentableformatinput)" : {{OpenTableFormatInput}},
       "[TableInput](#cfn-glue-table-tableinput)" : {{TableInput}}
     }
@@ -37,6 +38,7 @@ Type: AWS::Glue::Table
 Properties:
   [CatalogId](#cfn-glue-table-catalogid): {{String}}
   [DatabaseName](#cfn-glue-table-databasename): {{String}}
+  [Name](#cfn-glue-table-name): {{String}}
   [OpenTableFormatInput](#cfn-glue-table-opentableformatinput): {{
     OpenTableFormatInput}}
   [TableInput](#cfn-glue-table-tableinput): {{
@@ -64,6 +66,15 @@ The name of the database where the table metadata resides. For Hive compatibilit
 *Maximum*: `255`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`Name`  <a name="cfn-glue-table-name"></a>
+The name of the target table.
+*Required*: No
+*Type*: String
+*Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
+*Minimum*: `1`
+*Maximum*: `255`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 `OpenTableFormatInput`  <a name="cfn-glue-table-opentableformatinput"></a>
 Specifies an `OpenTableFormatInput` structure when creating an open format table.
 *Required*: No
@@ -72,7 +83,7 @@ Specifies an `OpenTableFormatInput` structure when creating an open format table
 
 `TableInput`  <a name="cfn-glue-table-tableinput"></a>
 A structure used to define a table.
-*Required*: Yes
+*Required*: No
 *Type*: [TableInput](aws-properties-glue-table-tableinput.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -88,3 +99,7 @@ For more information about using the `Ref` function, see [`Ref`](https://docs.aw
 
 ### Fn::GetAtt
 <a name="aws-resource-glue-table-return-values-fn--getatt"></a>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -99,3 +99,7 @@ If one of your dedicated IP addresses appears in this section, contact the organ
 This section contains information about the various methods that you can use to authenticate your domains. To configure DKIM or SPF authentication for a domain, you must add specific records to the DNS configuration for the domain. To view these records, choose **View the DNS record**.
 
 The procedures for updating the DNS records for a domain vary depending on which DNS or web hosting provider that you use. See your provider's documentation for more information about adding DNS records.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

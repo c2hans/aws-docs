@@ -164,3 +164,7 @@ To configure a custom property, specify the following information.
 + (Optional) `structFullyQualifiedName ` – The fully qualified name of the structure (struct) node for the custom property if the data type of the custom property is Struct or StructArray.
 
   The fully qualified name can have up to 150 characters. Valid characters: a–z, A–Z, 0–9, : (colon), and \_ (underscore).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

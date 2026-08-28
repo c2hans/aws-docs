@@ -114,3 +114,7 @@ Case event streams publish events every time a case is created, case is updated,
 + Automated actions that are triggered based on certain type of case updates
 
 For example, you can use the SQS target on EventBridge (as shown on step 4) to temporarily store the case events in the SQS queue, and use Lambda functions to process events in the SQS to build custom applications such as sending emails to the customer when their case is updated, automatically resolving any tasks linked to the case, and more. Similarly, you can use the Firehose target on the EventBridge to store the case events into an S3 bucket and then use the AWS Glue for ETL, Athena for ad-hoc analytics, and Quick for dashboards.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ This procedure shows you how to switch your pricing mode in the [AWS IoT TwinMak
 1. You have now changed your pricing mode.
 **Note**
 You can switch from the usage-based to the tiered-based pricing mode at any time, but the change takes effect at the beginning of your next billing cycle. Once you have switched from usage-based to the tiered-based pricing mode, you cannot switch back to the usage-based pricing mode for the next three usage cycles. If you switch from basic to standard, the change is effective immediately.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

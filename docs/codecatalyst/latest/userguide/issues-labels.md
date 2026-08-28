@@ -18,3 +18,7 @@ You can customize labels for issues. This includes editing the label and changin
 <a name="issues-create-label"></a>
 
 In CodeCatalyst, you create labels by either adding them when you create a new issue or when you edit an existing issue. For more information, see [Creating an issue in CodeCatalyst](issues-create-issue.md) and [Editing and collaborating on issues in CodeCatalyst](issues-edit-collaborate-issue.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

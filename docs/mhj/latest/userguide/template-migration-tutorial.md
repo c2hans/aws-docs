@@ -109,3 +109,7 @@ The general-migration template includes tasks for performing a Migration Readine
 
 1. Go back to the journey's **Tasks** tab, and move the **Perform MRA workshop activities** task to the **Completed** column as shown in the following image.
 ![alt_text](http://docs.aws.amazon.com/mhj/latest/userguide/images/completed-task.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

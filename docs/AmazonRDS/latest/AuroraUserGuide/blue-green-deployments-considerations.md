@@ -41,6 +41,11 @@ The following general limitations apply to blue/green deployments:
   + Cross-Region read replicas
   + Aurora Serverless v1 DB clusters
   + CloudFormation
++ After you switch over a blue/green deployment, point-in-time recovery (PITR) history doesn't carry over to the new production DB cluster. The green DB cluster keeps its own resource ID. Its earliest restorable time starts when you created the green environment. You can't restore the new production DB cluster to any point in time before that, including any time before switchover. The blue DB cluster keeps its own PITR history and automated backups until you delete it. To restore the blue DB cluster after switchover, use its resource ID (`SourceDbClusterResourceId`), not its name. The name changes during switchover. For more information, see [Restoring a DB cluster to a specified time](aurora-pitr.md).
+
+**Important**
+Plan for this PITR reset if you have backup retention or recovery point objective (RPO) requirements. The new production DB cluster can't reach a recovery point from before you created the green environment, and its PITR window reaches your full backup retention period only after enough time passes.
+To keep the ability to recover to a time before switchover, don't delete the blue DB cluster immediately. Keep the blue DB cluster running for at least the length of your required recovery window. A retained blue DB cluster still incurs charges for its DB instances and storage until you delete it.
 
 ### Aurora MySQL limitations for blue/green deployments
 <a name="blue-green-deployments-limitations-mysql"></a>
@@ -130,3 +135,7 @@ After you switch over a blue/green deployment, consider updating the resource ID
   + If the DB instance in the blue environment with the same name exists, it won't be switched over to the DB instance in the green environment. This DB instance won't be renamed by appending `-old{{n}}` to the DB instance name.
   + Any application that points to the DB instance in the blue environment continues to use the same DB instance after switchover.
 + If you use resource tags for access control or operational management, you need to understand that tag changes aren't synchronized between blue and green environments until switchover. When you create a blue/green deployment, tags from the blue environment are copied to the green environment. After creation, any tag modifications that you make to either environment aren't automatically synchronized. During switchover, blue environment tags replace all tags in the green environment. Apply all necessary tags to the blue environment before you create the blue/green deployment, or reapply required tags to the new production environment after switchover. For more information about tags, see [Tagging Amazon Aurora andAmazon RDS resources](USER_Tagging.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -730,3 +730,7 @@ The following is a list of common use cases for S3 Object Lambda:
 + Implementing custom authorization rules to access data.
 
 For more information about S3 Object Lambda, see [Transforming objects with S3 Object Lambda](transforming-objects.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

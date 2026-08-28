@@ -54,3 +54,7 @@ Creating a revised session timeout configuration replaces the device's current c
 Alternatively, you can configure the session timeout by setting the global environmental variable **AWS\_SITEWISE\_EDGE\_SESSION\_TIMEOUT\_MINUTES** to your desired value (in minutes) on your SiteWise Edge gateway.
 
 After the deployment is complete, the new session timeout configuration is applied to your SiteWise Edge API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

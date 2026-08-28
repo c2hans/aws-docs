@@ -99,3 +99,7 @@ Now that you've created a flow, complete these steps to start delivering your co
 For more information about source monitoring options for your flow, see the following pages in this guide:
 + [Viewing thumbnails of the source video](monitor-with-thumbnails.md)
 + [Monitoring with content quality analysis in AWS Elemental MediaConnect](https://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-content-quality-analysis.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

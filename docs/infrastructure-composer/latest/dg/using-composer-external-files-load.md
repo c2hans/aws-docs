@@ -22,3 +22,7 @@ If your browser supports the File System Access API, Infrastructure Composer wil
 1. Open the template you want to view in Infrastructure Composer.
 
 When you access Infrastructure Composer from a template, Infrastructure Composer will automatically detect your external file. If the referenced external file is not supported, you will receive an error message. For more information about error messages, see [Troubleshooting](ref-troubleshooting.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

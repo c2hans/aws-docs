@@ -31,3 +31,7 @@ When you are done using the SageMaker Debugger Insights dashboard, you must shut
 1. In the **SageMaker Debugger Insights** section, choose the link of the training job name to open the SageMaker Debugger Insights dashboard. This opens a **Debug [your-training-job-name]** window. In this window, Debugger provides an overview of the computational performance of your training job on Amazon EC2 instances and helps you identify issues in compute resource utilization.
 
 You can also download an aggregated profiling report by adding the built-in [ProfilerReport](https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-built-in-rules.html#profiler-report) rule of SageMaker Debugger. For more information, see [Configure Built-in Profiler Rules](https://docs.aws.amazon.com/sagemaker/latest/dg/use-debugger-built-in-profiler-rules.html) and [Profiling Report Generated Using SageMaker Debugger](https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-profiling-report.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

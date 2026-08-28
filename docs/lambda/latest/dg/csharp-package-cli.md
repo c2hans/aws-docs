@@ -235,3 +235,7 @@ dotnet lambda deploy-function {{<function_name>}} --function-layers {{arn:aws:la
 ```
 
 For a complete example of a Hello World function, see the [ blank-csharp-with-layer](https://github.com/awsdocs/aws-lambda-developer-guide/tree/main/sample-apps/blank-csharp-with-layer) sample.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

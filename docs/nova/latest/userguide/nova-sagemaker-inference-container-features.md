@@ -371,3 +371,7 @@ Valid values
 
 **Note**
 To use suffix decoding, `DISABLE_SPECULATIVE_DECODING` must be set to `false` (the default). Setting `DISABLE_SPECULATIVE_DECODING` to `true` disables all speculative decoding methods, including suffix decoding.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

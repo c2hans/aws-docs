@@ -36,3 +36,7 @@ A key part of the decision framework is determining whether the AWS security ser
 <a name="sustainability"></a>
 
 Adopting an AWS security service that is more efficient, automated, and cost-effective can indirectly contribute to improved sustainability. By minimizing the resources required for effective security, organizations can enhance the overall sustainability of their technology portfolio.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

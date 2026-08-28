@@ -15,3 +15,7 @@ The Amazon ECS agent on Amazon ECS Managed Instances automatically manages disk 
 <a name="managed-instance-image-resolution"></a>
 
 Amazon ECS resolves container image tags to image digests to ensure that all tasks in a service run the same image version. This behavior affects Amazon ECS Managed Instances bin packing and instance selection because Amazon ECS schedules a single task from the service first to retrieve the container image digest before scheduling the remaining tasks. For more information, see [Container image resolution](deployment-type-ecs.md#deployment-container-image-stability).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

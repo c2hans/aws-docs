@@ -61,3 +61,7 @@ AWS Snowball Edge is no longer available to new customers. New customers should 
 <a name="cbor-faq-more-information"></a>
 
  You can find more information about the AWS JSON protocol at [AWS JSON 1.0 protocol ](https://smithy.io/2.0/aws/protocols/aws-json-1_0-protocol.html) and [AWS JSON 1.1 protocol ](https://smithy.io/2.0/aws/protocols/aws-json-1_1-protocol.html) in the Smithy documentation, and about Smithy RPC v2 CBOR at [ Smithy RPC v2 CBOR protocol ](https://smithy.io/2.0/additional-specs/protocols/smithy-rpc-v2.html) in the Smithy documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

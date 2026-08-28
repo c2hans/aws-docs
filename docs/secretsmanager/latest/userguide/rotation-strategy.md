@@ -38,3 +38,7 @@ For example, if you create a secret with a database user's credentials, the secr
 **Third rotation** – The rotation function updates the password for the cloned user.
 
  ![The secret contains two secret versions, one labeled AWSCURRENT and one labeled AWSPREVIOUS. The username for the AWSCURRENT version is MyUser_clone.](http://docs.aws.amazon.com/secretsmanager/latest/userguide/images/AlternatingUsers4.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

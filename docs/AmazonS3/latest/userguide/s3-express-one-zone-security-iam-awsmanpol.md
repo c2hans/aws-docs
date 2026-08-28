@@ -42,3 +42,7 @@ View details about updates to AWS managed policies for Amazon S3 Express One Zon
 | Amazon S3 Express One Zone added `AmazonS3ExpressFullAccess`. | Amazon S3 Express One Zone added a new AWS managed policy called `AmazonS3ExpressFullAccess`. This policy grants permissions that allow full access to Amazon S3 Express One Zone directory buckets and operations. | April 03, 2026 |
 | Amazon S3 Express One Zone added `AmazonS3ExpressReadOnlyAccess`. | Amazon S3 Express One Zone added a new AWS managed policy called `AmazonS3ExpressReadOnlyAccess`. This policy grants permissions that allow read-only access to Amazon S3 Express One Zone directory buckets. | April 03, 2026 |
 | Amazon S3 Express One Zone started tracking changes. | Amazon S3 Express One Zone started tracking changes for its AWS managed policies. | April 03, 2026 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

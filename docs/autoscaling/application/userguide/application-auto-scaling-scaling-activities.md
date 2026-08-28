@@ -132,3 +132,7 @@ The following are the reason codes for a not scaled activity.
 | AlreadyAtMaxCapacity | Scaling is blocked by the maximum capacity that you specified. If you want Application Auto Scaling to scale out, you need to increase the maximum capacity. |
 | AlreadyAtMinCapacity | Scaling is blocked by the minimum capacity that you specified. If you want Application Auto Scaling to scale in, you need to decrease the minimum capacity. |
 | AlreadyAtDesiredCapacity | Auto scaling algorithm calculated the revised capacity to be equal to the current capacity.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

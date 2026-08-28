@@ -211,3 +211,7 @@ If you tested the Lambda function in [Create Lambda functions](tutorials-two-way
 1. On the device that received the message, reply to the message with the two-way SMS keyword that you specified in [Enable two-way SMS](tutorials-two-way-sms-part-1.md#tutorials-two-way-sms-part-1-enable-two-way). Amazon Pinpoint sends a response message immediately.
 
 1. In the Amazon Pinpoint console, repeat steps 4 through 8. This time, when you create the segment, you see one eligible endpoint, and one total endpoint. This result is expected, because the endpoint is now opted in.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

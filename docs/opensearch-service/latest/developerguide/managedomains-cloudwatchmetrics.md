@@ -552,3 +552,7 @@ Amazon OpenSearch Service provides the following metrics for [Piped Processing L
 | PPLFailedRequestCountByCusErr | The number of requests to the `_ppl` API that failed due to a client issue. For example, a request might return HTTP status code 400 due to an `IndexNotFoundException`. |
 | PPLFailedRequestCountBySysErr | The number of requests to the `_ppl` API that failed due to a server problem or feature limitation. For example, a request might return HTTP status code 503 due to a `VerificationException`. |
 | PPLRequestCount | The number of requests to the `_ppl` API.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

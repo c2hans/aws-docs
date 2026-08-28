@@ -20,3 +20,7 @@ AWS CloudTrail logs can also trigger rules configured in [Amazon EventBridge](ht
 ![AWS CloudTrail logs triggering CloudWatch events, leading to Lambda function and SNS notification.](http://docs.aws.amazon.com/whitepapers/latest/navigating-gdpr-compliance/images/cloudtrail-event-notification.png)
 
 *Figure 3 – Example of AWS CloudTrail event notification *
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

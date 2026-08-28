@@ -15,3 +15,7 @@ Amazon Bedrock policies in AWS Organizations allow you to reference a guardrail 
 Amazon Bedrock policies give you control over automatic enforcement of safeguards within guardrails across multiple accounts, allowing you to enforce guardrails on all or a subset of models for inference calls to Amazon Bedrock. You need to reference a specific version of the appropriate guardrail within your policy, adhering to your organization's responsible AI requirements. This is specific to the AWS region where your guardrail exists, and you need to have different guardrails for each AWS region where you want the enforcement of safety controls. You can then attach this policy to any node of the organization, and accounts beneath that node will then automatically inherit those safeguards and apply them for every model invocation to Amazon Bedrock.
 
 Amazon Bedrock policies help you ensure consistent safety controls throughout your organization, and provide a centralized approach to safely build generative AI applications at scale.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

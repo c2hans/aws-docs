@@ -104,3 +104,7 @@ If your base image is a CIS-published AWS Marketplace image product, Image Build
 1. Choose **Create recipe**.
 
    Your final image can contain up to nine product codes from AWS Marketplace image products and components. If your selected base image and components contain more than nine product codes, Image Builder returns an error when you try to create the recipe.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

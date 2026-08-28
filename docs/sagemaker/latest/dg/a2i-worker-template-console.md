@@ -73,3 +73,7 @@ When you delete a worker task template, you are not able to use human review wor
 
 **Delete a worker task template (API)**
 To delete a worker task template using the SageMaker API operation [`DeleteHumanTaskUi`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteHumanTaskUi.html), specify a name of your UI in `HumanTaskUiName`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

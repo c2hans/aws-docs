@@ -19,3 +19,7 @@ With this release, you can opt in to use an Amazon Route 53 alias record to cre
 +  [Configure Amazon Route 53 alias record for your target DNS](https://docs.aws.amazon.com/apprunner/latest/dg/manage-custom-domains-route53.html) in the *AWS App Runner Developer Guide*.
 
 Amazon Route 53 is a highly available and scalable Domain Name System (DNS) web service. You can use Amazon Route 53 to perform three main functions in any combination: domain registration, DNS routing, and health checking. To learn more about Amazon Route 53, see [Amazon Route 53 Developer Guide](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

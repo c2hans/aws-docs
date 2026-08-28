@@ -11,3 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-secu
 +  Deployment tools to manage the creation and decommissioning of AWS resources according to organization standards.
 +  Inventory and configuration management tools to identify AWS resources and then track and manage changes to those resources over time.
 +  Template definition and management tools to create standard, preconfigured, hardened virtual machines for EC2 instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,3 +56,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/security-hu
 <a name="account-coverage-seccov-widget"></a>
 
  Account coverage can also be viewed via the **Security coverage widget** in the Security Hub summary dashboard. For more information, see [Security coverage widget](https://docs.aws.amazon.com/securityhub/latest/userguide/dashboard-v2.html#security-hub-v2-dashboard-coverage-widget).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

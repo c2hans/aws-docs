@@ -639,3 +639,7 @@ For more information about the `Amazon SES SendEmail` operation, see [SendEmail]
 Actions do not interact with external services or resources in the preview environment. The **Mocked output** field is used to provide a JSON expression that simulates the behavior of a connector in the preview environment for testing purposes. This snippet is stored in the action's `results` map, just like the connector response would be for a published app in the live environment.
 
 With this field, you can test various scenarios and their impact on other actions within the automation such as simulating different result values, error scenarios, edge cases, or unhappy paths without communicating with external services through connectors.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,3 +37,7 @@ The dropdown list contains only those services that were used in your organizati
 **Note**
 It can take up to 48 hours for changes to your data settings to reflect in Cost Explorer. Also, after saving your preferences, you won’t be able to make any additional changes for 48 hours.
 If the estimated data volume for your preferences is above the Cost Explorer limit, you'll receive an error stating that you have reached the data threshold limit and you won’t be able to save your preferences. See "Understanding Cost Explorer data threshold limits".
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

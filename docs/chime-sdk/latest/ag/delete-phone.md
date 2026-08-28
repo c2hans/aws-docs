@@ -23,3 +23,7 @@ Deleting a number moves it your deletion queue where it's held for 7 days. Durin
 1. In the **Delete phone numbers** dialog box, select the check box next to **I understand the impact of this action**, and choose **Delete**.
 
 The system holds deleted phone numbers in the **Deletion queue** for 7 days, then permanently deletes them.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

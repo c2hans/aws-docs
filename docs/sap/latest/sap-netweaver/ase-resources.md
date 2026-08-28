@@ -13,3 +13,7 @@ SAP on AWS customers have the flexibility to deploy SAP ASE database on the scal
  AWS offers three levels of support. [AWS Business Support](https://aws.amazon.com/premiumsupport/plans/business/) provides resources and technical support for customers running SAP workloads on AWS. [AWS Enterprise Support](https://aws.amazon.com/premiumsupport/plans/enterprise/) and [AWS Enterprise On-Ramp Support](https://aws.amazon.com/premiumsupport/plans/enterprise-onramp/) offers support to customers running mission critical SAP production workloads on AWS.
 
 To learn more about this, see [SAP Note 1656250 – SAP on AWS: Support prerequisites](https://me.sap.com/notes/1656250) (requires SAP portal access).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

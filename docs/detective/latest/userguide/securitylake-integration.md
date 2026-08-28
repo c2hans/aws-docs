@@ -17,3 +17,7 @@ Using this integration, you can collect logs and events from the following sourc
  For details on how Security Lake automatically converts logs and events that come from natively-supported AWS services to the OCSF schema, see the [Amazon Security Lake User Guide](https://docs.aws.amazon.com/security-lake/latest/userguide/open-cybersecurity-schema-framework.html).
 
 After you integrate Detective with Security Lake, Detective begins pulling raw logs from Security Lake related to AWS CloudTrail management events and Amazon VPC Flow Logs. For more details, see [Querying raw logs](https://docs.aws.amazon.com/detective/latest/userguide/profile-panel-drilldown-overall-api-volume.html#drilldown-api-volume-time-range).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

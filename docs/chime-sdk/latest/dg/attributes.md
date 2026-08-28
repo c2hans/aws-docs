@@ -33,3 +33,7 @@ The following table lists the attributes of a CDR, and shows their proper format
 | `"SipApplicationId":"{{sip-application-id}}"` | The ID of the SIP application that handles a call |
 | `"CallLegTriggerType":"{{trigger-type}}"` | The type of event that triggered a call |
 | `"BillableVoiceFocusSeconds":"{{billable-voice-focus-in-seconds}}"` | The billable amount of Voice Focus usage, in seconds |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

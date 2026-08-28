@@ -48,3 +48,7 @@ View details about updates to AWS managed policies for SQL Server on EC2 since t
 | [AWSEC2SqlHaInstancePolicy](#security-iam-awsmanpol-AWSEC2SqlHaInstancePolicy) – New policy | Added the AWSEC2SqlHaInstancePolicy policy that can be attached to IAM role that's attached to the Windows and SQL HA instance to facilitate metadata collection for the purpose of keeping track of the current state of the database as it applies to active or passive mode. | November 17, 2025 |
 | [AWSEC2SqlHaServiceRolePolicy](#security-iam-awsmanpol-AWSEC2SqlHaServiceRolePolicy) – New policy | Added the policy that's attached to the AWSServiceRoleForEC2SqlHa service-linked role to detect whether an EC2 instance that's tagged with the EC2 SQL High Availability identifier is running in standby or passive mode. | November 17, 2025 |
 | SQL Server on EC2 started tracking changes | SQL Server on EC2 started tracking changes to its AWS managed policies | November 17, 2025 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SQL Server on Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sql-server-ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

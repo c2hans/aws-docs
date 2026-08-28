@@ -42,3 +42,7 @@ After a pause completes, the new pause's `StartTime` must be at least 1 hour aft
 While a pause is `ACTIVE`, you can update only the `EndTime` to shorten or extend the window. The `StartTime` cannot be modified once a pause is in progress. The total duration of the updated window must still not exceed 72 hours.
 
 When snapshots are paused, the OpenSearch Service console displays a warning banner on the domain details page indicating the pause end time and reduced data protection status.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

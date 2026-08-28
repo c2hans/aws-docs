@@ -14,3 +14,7 @@ The Amazon ECR Public Gallery provides search filters that make it easy to brows
 You can launch some Amazon ECR Public Gallery container images as web services running on AWS App Runner. When browsing the gallery, look for **Launch to AWS App Runner** on an image's gallery page. An image with this option is a web application that App Runner supports. For more information, see [Launch an App Runner service directly from the Amazon ECR Public Gallery](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-image.html#service-source-image.providers.ecrpublic) in the *App Runner developer guide*.
 
 To get started with creating your own public repository, see [Moving an image through its lifecycle in Amazon ECR Public](getting-started-cli.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -288,3 +288,7 @@ One way to analyze your access logs is to use [Amazon Athena](https://aws.amazon
 In addition, the following AWS blog posts discuss some ways to analyze access logs.
 + [ Amazon CloudFront Request Logging](https://aws.amazon.com/blogs/aws/amazon-cloudfront-request-logging/) (for content delivered via HTTP)
 + [ Enhanced CloudFront Logs, Now With Query Strings](https://aws.amazon.com/blogs/aws/enhanced-cloudfront-logs-now-with-query-strings/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

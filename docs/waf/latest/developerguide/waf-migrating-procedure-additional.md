@@ -32,3 +32,7 @@ Work with your application team and check your security posture. Find out what f
 Plan the timing of the switch with your application team. The switch from the old protection pack (web ACL) association to the new one can take a small amount of time to propagate to all areas where your resources are stored. The propagation time can be from a few seconds to a number of minutes. During this time, some requests will be processed by the old protection pack (web ACL) and others will be processed by the new protection pack (web ACL). Your resources will be protected throughout the switch, but you might notice inconsistencies in request handling while the switch is underway.
 
 When you are ready to switch over, follow the procedure at [Migrating a protection pack (web ACL): switchover](waf-migrating-procedure-switchover.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

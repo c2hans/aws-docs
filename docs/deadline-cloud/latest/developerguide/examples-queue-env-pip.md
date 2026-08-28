@@ -14,3 +14,7 @@ The `PipIndexUrl` and `PipExtraIndexUrls` parameters let jobs install from a pri
 Unlike conda and Rez, pip and venv are included with Python itself, so worker hosts only need a `python3` (or `python`) interpreter on the `PATH`. Deadline Cloud service-managed fleets provide one.
 
 The [pip\_package\_job](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/pip_package_job) job bundle shows how to submit a job that uses this queue environment. For a job bundle that defines the same pip environment inline without a queue environment, see [pip\_self\_contained\_job](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/pip_self_contained_job).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

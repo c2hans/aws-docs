@@ -21,3 +21,7 @@ The data repository association lifecycle state provides status information abou
 + **Failed** – The data repository association is in a terminal state that cannot be recovered (for example, because its file system path is deleted or the S3 bucket is deleted).
 
  You can view a data repository association’s lifecycle state using the Amazon FSx console, the AWS Command Line Interface, and the Amazon FSx API. For more information, see [Viewing data repository association details](view-dra-details.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

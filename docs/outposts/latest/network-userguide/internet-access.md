@@ -49,3 +49,7 @@ For the route table setting on the Outposts subnet, see [Local gateway route tab
 The following image shows traffic between the workload in the Outposts instance and the internet going through your local data center.
 
 ![Shows the traffic between the workload in the Outposts instance and the internet going through your data center's network.](http://docs.aws.amazon.com/outposts/latest/network-userguide/images/racks-internet-access-via-customer-network.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

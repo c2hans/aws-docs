@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  Connecting tenants to users represents a foundational aspect of your SaaS architecture that has many downstream implications. The token from this identity process flows into the microservices of your application and is used to create tenant aware logs, record metrics, meter billing, enforce tenant isolation, and so on.
 
  It’s essential that you avoid scenarios that rely on separate, standalone mechanisms that map users to tenants. This can undermine the security of your system, and often creates bottlenecks in your architecture.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

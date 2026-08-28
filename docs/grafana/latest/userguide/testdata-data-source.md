@@ -80,3 +80,7 @@ To customize the imported dashboard, we recommend that you save it under a diffe
 **Use test data to report issues**
 
 If you report an issue to GrafanaLabs on GitHub involving the use or rendering of time series data, we strongly recommend that you use this data source to replicate the issue. That makes it much easier for the developers to replicate and solve your issue.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

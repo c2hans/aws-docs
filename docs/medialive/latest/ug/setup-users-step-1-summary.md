@@ -95,3 +95,7 @@ If this table doesn't provide enough information for you to determine which perm
 - **AWS Systems Manager**
   - **Corresponding service in IAM:** Systems Manager / **Specific activities the user can perform:** Create a password parameter using the MediaLive console or the AWS Systems Manager console / **Actions to include in the policy:** `DeleteParameter`<br />`DeleteParameters`<br />`DescribeParameters`<br />`GetParameter`<br />`GetParameterHistory`<br />`GetParameters`<br />`GetParametersByPath`<br />`PutParameter`
   - **Corresponding service in IAM:** Systems Manager / **Specific activities the user can perform:** Choose a password parameter from the dropdown list on the MediaLive console / **Actions to include in the policy:** DescribeParameters
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

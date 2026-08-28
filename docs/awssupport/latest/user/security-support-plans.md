@@ -183,3 +183,7 @@ For more information, see the following topics:
 + [Service control policies (SCPs)](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps.html) in the *AWS Organizations User Guide.*
 + [Configure the Region deny control](https://docs.aws.amazon.com/controltower/latest/userguide/region-deny.html) in the *AWS Control Tower User Guide*
 + [Deny access to AWS based on the requested AWS Region](https://docs.aws.amazon.com/controltower/latest/userguide/data-residency-controls.html#primary-region-deny-policy) in the *AWS Control Tower User Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

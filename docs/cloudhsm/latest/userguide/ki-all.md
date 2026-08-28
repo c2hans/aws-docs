@@ -142,3 +142,7 @@ Certificate verification error with error code 67 and depth 1: CA certificate ke
 <a name="ki-all-17"></a>
 + **Impact: **ML-DSA (Module-Lattice-Based Digital Signature Algorithm) key generation, signing, and verification are not currently supported on FIPS-mode clusters.
 + **Resolution status: **We are working to add FIPS-mode support for ML-DSA. Any updates will be announced on the version history page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

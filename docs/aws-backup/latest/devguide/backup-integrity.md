@@ -29,3 +29,7 @@ AWS Backup natively stores data for Amazon DynamoDB with advanced features, Amaz
 <a name="backup-integrity-audit"></a>
 
 The data stored directly by AWS Backup and the data stored in partnership with fellow AWS services with which AWS Backup interacts is subjected to the rigorous process of Amazon Simple Storage Service (Amazon S3) underpinning this data integrity. This integrity is confirmed by an independent, third-party auditor through an annual SOC audit report which is available through [AWS Artifact](https://aws.amazon.com/artifact/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

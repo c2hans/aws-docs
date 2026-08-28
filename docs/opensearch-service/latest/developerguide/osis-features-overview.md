@@ -398,3 +398,7 @@ When buffers are full for pipelines that use OpenTelemetry sources ([OTel logs](
 When buffers are full for pipelines with an [S3](https://opensearch.org/docs/latest/data-prepper/pipelines/configuration/sources/s3/) source, the pipelines stop processing SQS notifications. As the buffers are freed up, the pipelines start processing notifications again.
 
 If a sink is down or unable to ingest data and end-to-end acknowledgement is enabled for the source, the pipeline stops processing SQS notifications until it receives a successful acknowledgement from all sinks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

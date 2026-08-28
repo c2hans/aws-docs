@@ -147,3 +147,7 @@ View details about updates to AWS managed policies for Amazon Q Business since t
 | --- | --- | --- |
 | AWS managed policy: QBusinessQuicksightPluginPolicy | Added AWS managed policy QBusinessQuicksightPluginPolicy to access Amazon Quick resources for the QuickSight plugin. | December 3, 2024 |
 | Amazon Q Business started tracking changes | Amazon Q Business started tracking changes for its AWS managed policies. | April 30, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

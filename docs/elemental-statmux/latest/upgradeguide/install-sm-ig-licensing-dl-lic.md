@@ -28,3 +28,7 @@ This is version 2.20 of the AWS Elemental Statmux documentation. This is the lat
    The files are named `lic-download-<hostname>.tgz`.
 
 1. Repeat these steps for each hardware unit that will have AWS Elemental software.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Statmux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-statmux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

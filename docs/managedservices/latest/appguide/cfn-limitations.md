@@ -14,3 +14,7 @@ The following features and functionality currently aren't supported by the AMS C
 + **CloudFormation stack sets** – Not supported, due to security implications.
 + **IAM resource creation using CloudFormation templates** – Only IAM roles are supported, due to security implications.
 + **Sensitive data** – Not supported. Do not include sensitive data in the template or in the parameter values. If you need to reference sensitive data, use Secrets Manager to store and retrieve these values. For information about using AWS Secrets Managers secrets in a resource property, see [ How to create and retrieve secrets managed in AWS Secrets Manager using AWS CloudFormation templates](https://aws.amazon.com/blogs/security/how-to-create-and-retrieve-secrets-managed-in-aws-secrets-manager-using-aws-cloudformation-template/) and [Using Dynamic References to Specify Template Values](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/dynamic-references.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

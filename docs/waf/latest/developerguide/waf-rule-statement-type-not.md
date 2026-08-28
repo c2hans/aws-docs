@@ -24,3 +24,7 @@ For example, if you want to block requests that don't originate in a specific co
 <a name="not-rule-statement-where-to-find"></a>
 + **Rule builder** on the console – For **If a request**, choose **doesn't match the statement (NOT)**, and then fill in the nested statement.
 + **API** – [NotStatement](https://docs.aws.amazon.com/waf/latest/APIReference/API_NotStatement.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

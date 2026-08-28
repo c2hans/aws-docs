@@ -36,3 +36,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/reactive-systems-on-a
 <a name="intro-ddb"></a>
 
  Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale. It is a fully managed database with scalability and high availability built in. DynamoDB is used in this architecture as the central repository for the result data, since DynamoDB is fully managed, multi-region, multi-active, durable database for internet-scale applications.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,3 +56,7 @@ You can set the execution timeout in two places, at the project level and the te
 1. On **Review and start run**, for **Set execution timeout**, enter a value or use the slider bar.
 
 1. Choose **Confirm and start run**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -117,3 +117,7 @@ The list includes the most commonly used SAML attributes. IAM supports additiona
 1. Review the role and then choose **Create role**.
 
 After you create the role, you complete the SAML trust by configuring your identity provider software with information about AWS. This information includes the roles that you want your SAML federated users to use. This is referred to as configuring the relying party trust between your IdP and AWS. For more information, see [Configure your SAML 2.0 IdP with relying party trust and adding claims](id_roles_providers_create_saml_relying-party.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

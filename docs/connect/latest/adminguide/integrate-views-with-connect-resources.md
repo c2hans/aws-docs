@@ -29,3 +29,7 @@ After an integration is configured, you will be able to use that view to referen
 To use the reference data from your integration, you must first understand how to reference the data from the UI components and their properties. Similarly to how contact attributes are referenced in Flows and Views `($.Attributes.MyCustomAttribute)`, you can reference output data for the integration using the following syntax: `$.#[IntegrationName].[ReferenceObject]`. Keep in mind that you are responsible to make sure that the reference object used is returned in the right format the view's component property will accept. To understand the integration output reference visit the module configuration page.
 
 At run-time, when a view with an integration is loaded, it will populate data from the integration as defined in the view schema. In addition, if you set refresh intervals, the view will invoke the integration at each interval, and if there is new data, the view will prompt the user to refresh the view with the latest information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

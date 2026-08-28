@@ -16,3 +16,7 @@ Complete the following procedure to edit a tag associated with your Wickr networ
 You can't edit the key of a tag. Instead, remove the key and value pair, and add a new tag using the new key.
 
 1. Choose **Save changes** to save your edits.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

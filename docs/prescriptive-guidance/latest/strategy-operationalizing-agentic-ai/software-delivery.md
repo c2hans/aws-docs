@@ -72,3 +72,7 @@ For engineering teams, the evolution toward agent AI requires the following chan
 As generative AI matures, we'll see more agentic systems interacting with customers, products, and operations. The organizations that succeed won't be the ones with the best models. It will be the ones that can integrate agents into real-world workflows with confidence, control, and velocity. That means that the delivery models and engineering teams must evolve together. Zones of intent give you the abstraction to do that. They help you operationalize autonomy without surrendering accountability. They also offer a shared framework across teams to help govern systems that can't be hard-coded.
 
 For more information about preparing teams for agentic AI, see the [Preparing the business for agentic AI at scale](preparing-business.md) section of this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

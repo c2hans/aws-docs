@@ -8,3 +8,7 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/post-launch-action-
  Custom actions created in default settings can also be deleted. Deleting a custom action in the default settings removes it from the default settings and means the action is no longer added to newly added servers. Deleting the action in the default settings does not remove it from existing source servers that have it. To delete a custom action from existing servers, go to the **Source server details** page, select the **Post-launch settings** tab and delete the action from there. Pre-defined actions cannot be deleted through AWS console. If a pre-defined action is not required, it can be deactivated or deleted via API.
 
  Locate the action you want to delete in the **Actions** card view, or use the search field to filter the actions by name. Select the action, and select **Delete**. To confirm, press **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

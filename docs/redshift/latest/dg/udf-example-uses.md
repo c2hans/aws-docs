@@ -16,3 +16,7 @@ You can use user-defined functions to solve business problems by integrating Ama
 + [Access Amazon Location Service from Amazon Redshift](https://aws.amazon.com/blogs/big-data/access-amazon-location-service-from-amazon-redshift/) – describes how to use Amazon Redshift Lambda UDFs to integrate with Amazon Location Service.
 + [Data Tokenization with Amazon Redshift and Protegrity](https://aws.amazon.com/blogs/apn/data-tokenization-with-amazon-redshift-and-protegrity/) – describes how to integrate Amazon Redshift Lambda UDFs with the Protegrity Serverless product.
 + [Amazon Redshift UDFs](https://github.com/aws-samples/amazon-redshift-udfs) – a collection of Amazon Redshift SQL, Lambda, and Python UDFs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

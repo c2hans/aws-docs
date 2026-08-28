@@ -35,3 +35,7 @@ For accounts enrolled via Auto Enroll:
 For information about AWS Regions where AFT has deployment limitations, see [Limitations and quotas in AWS Control Tower](limits.md) and [Control limitations](control-limitations.md).
 
 The [Terraform documentation](https://developer.hashicorp.com/terraform/tutorials/aws/aws-control-tower-aft) contains a good overview of how to set up AWS Control Tower Account Factory for Terraform (AFT).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

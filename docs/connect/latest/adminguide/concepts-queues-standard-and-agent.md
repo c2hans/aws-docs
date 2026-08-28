@@ -38,3 +38,7 @@ The metrics APIs don't support agent queues.
 <a name="concepts-default-queue"></a>
 
 Connect Customer includes a default queue named **BasicQueue**. Along with the [default flows](contact-flow-default.md) and default routing profile (named **Basic routing profile**), it powers your contact center so you don't need to do any customization. This is what enables you to get started quickly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

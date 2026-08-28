@@ -26,3 +26,7 @@ For instructions about how to override and change a default flow, see [Change a 
 
 **Tip**
 Wondering if a default flow has been changed? Use [flow version control](flow-version-control.md) to view the original version of the flow.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

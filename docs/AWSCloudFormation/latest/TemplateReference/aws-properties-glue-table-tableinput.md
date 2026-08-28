@@ -28,6 +28,7 @@ To declare this entity in your CloudFormation template, use the following syntax
   "[StorageDescriptor](#cfn-glue-table-tableinput-storagedescriptor)" : {{StorageDescriptor}},
   "[TableType](#cfn-glue-table-tableinput-tabletype)" : {{String}},
   "[TargetTable](#cfn-glue-table-tableinput-targettable)" : {{TableIdentifier}},
+  "[ViewDefinition](#cfn-glue-table-tableinput-viewdefinition)" : {{ViewDefinition}},
   "[ViewExpandedText](#cfn-glue-table-tableinput-viewexpandedtext)" : {{String}},
   "[ViewOriginalText](#cfn-glue-table-tableinput-vieworiginaltext)" : {{String}}
 }
@@ -49,6 +50,8 @@ To declare this entity in your CloudFormation template, use the following syntax
   [TableType](#cfn-glue-table-tableinput-tabletype): {{String}}
   [TargetTable](#cfn-glue-table-tableinput-targettable): {{
     TableIdentifier}}
+  [ViewDefinition](#cfn-glue-table-tableinput-viewdefinition): {{
+    ViewDefinition}}
   [ViewExpandedText](#cfn-glue-table-tableinput-viewexpandedtext): {{String}}
   [ViewOriginalText](#cfn-glue-table-tableinput-vieworiginaltext): {{String}}
 ```
@@ -128,6 +131,12 @@ A `TableIdentifier` structure that describes a target table for resource linking
 *Type*: [TableIdentifier](aws-properties-glue-table-tableidentifier.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`ViewDefinition`  <a name="cfn-glue-table-tableinput-viewdefinition"></a>
+A structure that contains all the information that defines the view, including the dialect or dialects for the view, and the query.
+*Required*: No
+*Type*: [ViewDefinition](aws-properties-glue-table-viewdefinition.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `ViewExpandedText`  <a name="cfn-glue-table-tableinput-viewexpandedtext"></a>
 Included for Apache Hive compatibility. Not used in the normal course of AWS Glue operations.
 *Required*: No
@@ -141,3 +150,7 @@ Included for Apache Hive compatibility. Not used in the normal course of AWS Glu
 *Type*: String
 *Maximum*: `409600`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

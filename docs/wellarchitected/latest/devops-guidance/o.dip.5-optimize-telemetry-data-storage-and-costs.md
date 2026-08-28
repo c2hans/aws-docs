@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/o
 **Related information:**
 +  [AWS Well-Architected Performance Pillar: PERF03-BP01 Understand storage characteristics and requirements](https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/perf_right_storage_solution_understand_char.html)
 +  [AWS Well-Architected Sustainability Pillar: SUS04-BP05 Remove unneeded or redundant data](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sus_sus_data_a6.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

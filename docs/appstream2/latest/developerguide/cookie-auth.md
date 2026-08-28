@@ -14,3 +14,7 @@ WorkSpaces Applications uses browser cookies to authenticate streaming sessions 
 + **Add additional authentication**: To launch domain-joined streaming instances, you can join your WorkSpaces Applications Always-On and On-Demand Windows fleets and image builders to domains in Microsoft Active Directory, and use your existing Active Directory domains, either cloud-based or on-premises. After the initial SAML-based authentication, your users will be prompted to provide their domain credentials for additional authentication against the organizational domain. For more information, see [Using Active Directory with WorkSpaces Applications](active-directory.md).
 
  If you have any concerns or need help, contact [AWS Support Center](https://console.aws.amazon.com/support/home#/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

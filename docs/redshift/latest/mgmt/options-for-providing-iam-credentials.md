@@ -200,3 +200,7 @@ To use a SAML-based credentials provider plugin, specify the following options u
 | `app_id`  | An ID for an Okta application. Used only with Okta. The value for app\_id follows amazon\_aws in the Okta application embed link. To get this value, work with your IdP administrator. The following is an example of an application embed link: https://example.okta.com/home/amazon\_aws/0oa2hylwrpM8UGehd1t7/272  |
 | `idp_tenant` | A tenant used for Azure AD. Used only with Azure. |
 | `client_id`  | A client ID for the Amazon Redshift enterprise application in Azure AD. Used only with Azure. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

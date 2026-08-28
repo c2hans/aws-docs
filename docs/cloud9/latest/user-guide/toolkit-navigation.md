@@ -84,3 +84,7 @@ The following table provides an overview of the options available on the **AWS C
 | **AWS > Samcli > Debug > Attach> Timeout: Millis:** | Specifies how long the Toolkit tries to attach the SAM CLI debugger before giving up. The default timeout is 30,000 milliseconds (30 seconds).<br />When you locally invoke a Lambda function in debug mode within the AWS SAMCLI, you can then attach a debugger to it. |
 | **AWS : Log Level:** | Sets the category of workflow events that are logged. The following are the available levels:+  **Errors Only** <br />+  **Errors and Warnings** <br />+  **Errors, Warnings, and Info** (default option) <br />+  **Errors, Warnings, and Info, Verbose, and Debug**  |
 | **AWS : Telemetry** | Enables or disables the sending of usage data to AWS. Enabled by default |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ The **Alarms** tab provides a detailed summary of the CloudWatch alarms in the `
   + **No**: Alarm is monitoring but not executing actions.
 
 In addition, if you're viewing the utilization graphs on the **Monitoring** tab for a VPC, subnet, or pool, you can choose the option to create an alarm for the resource utilization. You're then redirected to the CloudWatch console with the resource and metric details pre-populated. From there, you can configure an alarm threshold to, for example, be notified when utilization reaches a specific percentage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

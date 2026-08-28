@@ -86,3 +86,7 @@ The actual log data, represented as an array of log event records. The "id" prop
 
 **policyLevel**
 The level at which the policy was enforced. "ACCOUNT\_LEVEL\_POLICY" is the `policyLevel` for an account-level subscription filter policy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

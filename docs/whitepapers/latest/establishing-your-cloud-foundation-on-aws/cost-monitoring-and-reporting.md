@@ -22,3 +22,7 @@ The level of granularity and visibility in reports can be enabled at different l
 Setting up the right monitoring tools for spend in your environment will allow you to evaluate different spend patterns. Evaluating your patterns weekly or monthly with these reports, can help you determine if any anomalies in spend patterns exist, and quickly identify and remediate the root cause.
 
 Defining metrics that allow you to identify if your cost strategy is successful, for example `unit-cost`. This will feed into your overall finance strategy, allowing your technology and business stakeholders identify cost-saving opportunities and repurpose some of the savings to new initiatives or projects to enhance your cloud environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

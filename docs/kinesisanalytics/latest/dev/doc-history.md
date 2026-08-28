@@ -38,3 +38,7 @@ The following table describes the important changes to the documentation since t
 | Guide to using the AWS Management Console for Kinesis Data Analytics | Edit an inferred schema and SQL code using the schema editor and SQL editor in the Kinesis Data Analytics console. For more information, see [Step 4 (Optional) Edit the Schema and SQL Code Using the Console](console-feature-summary.md). | April 7, 2017 |
 | Public release | Public release of the Amazon Kinesis Data Analytics Developer Guide. | August 11, 2016 |
 | Preview release | Preview release of the Amazon Kinesis Data Analytics Developer Guide. | January 29, 2016 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

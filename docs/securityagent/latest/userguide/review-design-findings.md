@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/review-design-findings.html
 ---
 
-# Review findings from a Continuum design review
+# Review findings from a design review
 <a name="review-design-findings"></a>
 
 Review findings help you understand which security requirements are met, which need attention, and what actions to take to improve your design’s security posture before implementation begins.
@@ -17,8 +17,8 @@ Before you begin, ensure you have:
 + Access to the AWS Security Agent web application
 + Familiarity with your organization’s enabled security requirements
 
-## Step 1: Access the Continuum design review
-<a name="_step_1_access_the_continuum_design_review"></a>
+## Step 1: Access the design review
+<a name="_step_1_access_the_design_review"></a>
 
 Navigate to your design review to view the findings and summary information.
 
@@ -131,4 +131,8 @@ After reviewing your design findings:
 
 For more information about managing security requirements, see [Manage security requirements](security-requirements.md).
 
-For more information about creating design reviews, see [Create a Continuum design review](perform-design-review.md).
+For more information about creating design reviews, see [Create a design review](perform-design-review.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

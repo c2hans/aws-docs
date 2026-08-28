@@ -200,3 +200,7 @@ The state output when catching an error is the following.
 For more information about error handling, see the following:
 + [Handling errors in Step Functions workflows](concepts-error-handling.md)
 + [Handling error conditions in a Step Functions state machine](tutorial-handling-error-conditions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

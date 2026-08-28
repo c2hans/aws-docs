@@ -175,3 +175,7 @@ The following additional limitations apply if your multi-source replication targ
 + A channel must be configured for a source RDS for MySQL instance before any writes to that instance occur.
 + Each source RDS for MySQL instance must have GTID-based replication enabled.
 + A failover event on the DB cluster removes the multi-source replication configuration. Restoring that configuration requires repeating the configuration steps.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

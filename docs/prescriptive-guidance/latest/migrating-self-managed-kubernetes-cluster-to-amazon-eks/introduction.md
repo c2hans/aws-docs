@@ -70,3 +70,7 @@ Some AWS services aren't available in all AWS Regions. For Region availability, 
 + Secret values are created as opaque placeholders. You must populate actual values post-migration through AWS Secrets Manager, AWS Systems Manager Parameter Store, or External Secrets Operator.
 + CRD operators and controllers must be pre-installed on the target Amazon EKS cluster before you migrate custom resource instances. For more information, see [AWS Controllers for Kubernetes](https://aws-controllers-k8s.github.io/community/).
 + If the source cluster uses a private container registry, ensure that Amazon EKS nodes have pull access, such as Amazon Elastic Container Registry (Amazon ECR) and image pull secrets.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

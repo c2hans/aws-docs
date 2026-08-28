@@ -24,3 +24,7 @@ For limitations, see [IAM Identity Center integration limitations](identity-cent
 + [Deleting a Lake Formation connection with IAM Identity Center](delete-lf-identity-center-connection.md)
 + [Granting permissions to users and groups](grant-permissions-sso.md)
 + [Including IAM Identity Center user context in CloudTrail logs](identity-center-ct-logs.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

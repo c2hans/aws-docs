@@ -16,3 +16,7 @@ You can also encrypt persistent volumes for individual containers within a clust
 The following points should be considered when encrypting persistent volumes using your own KMS keys:
 + When you use KMS encryption with your own KMS key, the key must exist in the same AWS Region as your cluster.
 + There is a cost associated with creating and using your own KMS keys. For more information, see [AWS Key Management Service pricing](https://aws.amazon.com/kms/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Red Hat OpenShift Service on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rosa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ When you configure an identity-based policy, the `Effect`, `Action`, and `Resour
 **This section contains the following topics:**
 + [Best practices for configuring identity-based policies for least-privilege CloudFormation access](best-practices-identity-based-policies.md)
 + [Sample identity-based policies for CloudFormation](sample-id-policies-for-cloudformation.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

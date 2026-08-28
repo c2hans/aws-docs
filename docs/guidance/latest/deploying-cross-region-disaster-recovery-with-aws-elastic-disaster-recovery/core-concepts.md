@@ -100,3 +100,7 @@ Failover is the process of initiating a recovery in Elastic Disaster Recovery, l
 <a name="failback"></a>
 
 Failback is the process of returning to normal operations at your source site. This includes replicating data back to the source Region, bringing the source servers back online, and redirecting user traffic back to these machines (redirection of traffic, as well as other configuration operations, are handled outside of the AWS Elastic Disaster Recovery service)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying Cross-Region Disaster Recovery with AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

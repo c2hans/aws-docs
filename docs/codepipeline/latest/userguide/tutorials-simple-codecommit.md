@@ -426,3 +426,7 @@ Learn more about how CodePipeline works:
 + For more information about stages, actions, and how pipelines work, see [CodePipeline concepts](concepts.md).
 + For information about the actions you can perform using CodePipeline, see [Integrations with CodePipeline action types](integrations-action-type.md).
 + Try this more advanced tutorial, [Tutorial: Create a four-stage pipeline](tutorials-four-stage-pipeline.md). It creates a multi-stage pipeline that includes a step that builds code before it's deployed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

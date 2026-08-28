@@ -44,3 +44,7 @@ This journey focuses primarily on the top of the pyramid: system-level load test
 **Go Deeper**
 [A phased approach for performance engineering in the AWS Cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/performance-engineering-aws/introduction.html) (AWS Prescriptive Guidance)
 [PERF05-BP04: Load test your workload](https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/perf_process_culture_load_test.html) (Well-Architected Framework)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Performance Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

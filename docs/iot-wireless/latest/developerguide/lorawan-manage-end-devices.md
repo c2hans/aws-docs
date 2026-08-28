@@ -54,3 +54,7 @@ For more information about these wireless device considerations, refer to the re
 + [View format of uplink messages sent from LoRaWAN devices](lorawan-uplink-metadata-format.md)
 + [Queue downlink messages to send to LoRaWAN devices](lorawan-downlink-queue.md)
 + [Managing LoRaWAN traffic from public networks (Everynet)](iot-lorawan-roaming.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

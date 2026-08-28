@@ -46,3 +46,7 @@ Note these MSK cluster requirements for running multi-VPC private connectivity:
 + Multi-VPC private connectivity isn’t supported across AWS Regions, only on AWS accounts within the same Region.
 + To set up multi-VPC private connectivity, you must have the same number of client subnets as cluster subnets. You must also make sure that [Availability Zone IDs](https://docs.aws.amazon.com/ram/latest/userguide/working-with-az-ids.html) are same for the client subnet and cluster subnet.
 + Amazon MSK doesn't support multi-VPC private connectivity to Zookeeper nodes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

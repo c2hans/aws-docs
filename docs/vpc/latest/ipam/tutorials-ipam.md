@@ -18,3 +18,7 @@ The following tutorials show you how to perform common IPAM tasks using the AWS 
 + [Transfer a BYOIP IPv4 CIDR to IPAM](tutorials-byoip-ipam-transfer-ipv4.md)
 + [Plan VPC IP address space for subnet IP allocations](tutorials-subnet-planning.md)
 + [Allocate sequential Elastic IP addresses from an IPAM pool](tutorials-eip-pool.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

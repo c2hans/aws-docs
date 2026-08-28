@@ -18,3 +18,7 @@ Amazon SimpleDB is a web service for running queries on structured data in real 
 | Find and use different Amazon SimpleDB endpoints | [Region Endpoints](Endpoints.md) |
 | Find information about Amazon SimpleDB libraries | [Amazon SimpleDB Sample Code and Libraries ](https://aws.amazon.com/code/Amazon-SimpleDB) |
 | Get help from other developers | [Amazon SimpleDB Forums](http://developer.amazonwebservices.com/connect/forum.jspa?forumID=38) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

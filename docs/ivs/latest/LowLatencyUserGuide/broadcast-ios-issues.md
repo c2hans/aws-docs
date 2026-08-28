@@ -36,3 +36,7 @@ This document lists known issues that you might encounter when using the Amazon 
 + Enabling B-frames can improve compression quality; however some encoders provide less precise bitrate control when B-frames are enabled, which may cause issues during network fluctuations.
 
   **Workaround:** Consider disabling B-frames if consistent bitrate adherence is more important than compression efficiency for your use case.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

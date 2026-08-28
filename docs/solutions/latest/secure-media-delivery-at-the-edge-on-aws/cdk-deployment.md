@@ -74,3 +74,7 @@ If you're planning on using multiple regions, the bootstrapping process must be 
 
 **Note**
  When running from your local environment, the determination of the target account and region will be based on the AWS profile in use as specified in the config and credentials file. If you want to deploy the stack in multiple accounts and regions, you must define the appropriate profiles associated with the account and right default region that you need. For more information refer to [Specifying credentials and region](https://docs.aws.amazon.com/cdk/v2/guide/cli.html#cli-environment).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Media Delivery at the Edge on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

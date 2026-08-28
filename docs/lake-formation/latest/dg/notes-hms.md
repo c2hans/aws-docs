@@ -28,3 +28,7 @@ The following considerations and limitations apply to federated databases that a
 +  **Limitation on syncing metadata between the AWS Glue Data Catalog and the Hive metastore** – After establishing the Hive metastore connection, you need to create a federated database to sync metadata in the Hive metastore with the AWS Glue Data Catalog. The tables under the federated database are synced at runtime when users run queries.
 +  **Limitation on creating new tables under a federated database** – You will not be able to create new tables under federated databases.
 + **Data permission limitation** – Support for permissions on Hive metastore table views is not available.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

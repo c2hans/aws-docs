@@ -144,3 +144,7 @@ For example, you can define a metric that calculates the average temperature acr
 This metric uses the `avg()` aggregation function to calculate the average temperature across all CNC machines in the hierarchy. The `hierarchyId` parameter specifies which hierarchy to use for the aggregation.
 
 When this interface is applied to an asset model, the rollup metric automatically aggregates data from all child assets that match the hierarchy mapping.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

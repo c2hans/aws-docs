@@ -71,3 +71,7 @@ The following table describes the important changes in each release of the AWS A
 | [New supported framework: NIST 800-53 (Rev. 5) Low-Moderate-High](#doc-history) | A new prebuilt framework is now available in AWS Audit Manager. For more information, see [NIST 800-53 (Rev. 5) Low-Moderate-High](https://docs.aws.amazon.com/audit-manager/latest/userguide/NIST800-53r5.html). | March 25, 2021 |
 | [New supported frameworks: CIS Benchmark for CIS AWS Audit Manager Foundations Benchmark v1.3](#doc-history) | Two new prebuilt frameworks are now available in AWS Audit Manager: *CIS Benchmark for CIS AWS Audit Manager Foundations Benchmark v1.3.0, Level 1*, and *CIS Benchmark for CIS AWS Audit Manager Foundations Benchmark v1.3.0, Level 1 and 2*. For more information, see [CIS Benchmark for CIS AWS Audit Manager Foundations Benchmark v1.3.0](https://docs.aws.amazon.com/audit-manager/latest/userguide/CIS-1-3.html). | March 22, 2021 |
 | [Initial release](#doc-history) | Initial release of the AWS Audit Manager User Guide and API Reference. | December 8, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ This table provides troubleshooting information and solutions for common issues 
 | How can I debug another issue with Kinesis Agent? | DEBUG level logs can be enabled in /etc/aws-kinesis/log4j.xml . |
 | How should I configure Kinesis Agent? | The smaller the maxBufferSizeBytes, the more frequently Kinesis Agent will send data. This can be good as it decreases delivery time of records, but it also increases the requests per second to Kinesis.  |
 | Why is Kinesis Agent sending duplicate records? | This occurs due to a misconfiguration in file tailing. Make sure that each fileFlow’s filePattern is only matching one file. This can also occur if the logrotate mode being used is in copytruncate mode. Try changing the mode to the default or create mode to avoid duplication. For more information on handling duplicate records, see [Handling Duplicate Records](https://docs.aws.amazon.com/streams/latest/dev/kinesis-record-processor-duplicates.html). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

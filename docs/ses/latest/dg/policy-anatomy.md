@@ -111,3 +111,7 @@ Policies must meet all of the following requirements:
 + Identity owners can associate up to 20 policies with each unique identity.
 + Policies can't exceed 4 kilobytes (KB) in size.
 + Policy names can't exceed 64 characters. Additionally, they can only include alphanumeric characters, dashes, and underscores.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

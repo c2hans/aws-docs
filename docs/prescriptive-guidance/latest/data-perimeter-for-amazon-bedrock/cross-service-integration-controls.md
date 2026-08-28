@@ -71,3 +71,7 @@ Amazon Bedrock integrates with numerous AWS services, each requiring specific re
 + **AllowOnlyTrustedResources** – Grants Lambda functions access to specific Amazon Bedrock models, Amazon DynamoDB tables, and Amazon S3 buckets using resource-based restrictions. This statement implements least privilege by limiting access to only resources with the bedrock-agent-\* prefix, preventing access to unrelated resources in the account.
 + **DenyExternalOrganizationAccess** – Prevents data exfiltration by explicitly denying Amazon S3 access to any bucket outside your AWS organization. The condition checks for the organization ID and denies access when the bucket belongs to a different organization or has no organization ID set.
 + **DenyUnencryptedUploads** – Enforces encryption-in-transit by denying any Amazon S3 `PutObject` operation that doesn't use AWS KMS encryption. This ensures all data written to Amazon S3 by Lambda functions is encrypted with customer-managed keys.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

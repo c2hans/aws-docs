@@ -18,3 +18,7 @@ Even if you don’t process any ITAR-regulated data, the owner of the AWS GovClo
  **Export Controlled Data in AWS GovCloud (US) Services**
 
 If you maintain export-controlled data in the AWS GovCloud (US) Regions, you are responsible for using services in the AWS GovCloud (US) Regions in a manner that is consistent with your obligations under applicable laws and regulations, including export control regulations. For more information about maintaining export controlled data in AWS GovCloud (US) Regions for each service, see the service-specific information in [Services in AWS GovCloud (US) Regions](using-services.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

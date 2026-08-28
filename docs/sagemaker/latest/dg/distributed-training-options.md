@@ -92,3 +92,7 @@ You can also distribute an ML compute workflow into smaller parallel or sequenti
 For the specific case of hyperparameter search, use [SageMaker AI Automated Model Tuning](https://docs.aws.amazon.com/sagemaker/latest/dg/automatic-model-tuning.html). SageMaker AI Automated Model Tuning is a serverless parameter search orchestrator that launches multiple training jobs on your behalf, according to a search logic that can be random, Bayesian, or HyperBand.
 
 Additionally, to orchestrate multiple training jobs, you can also consider workflow orchestration tools, such as [SageMaker Pipelines](https://sagemaker-examples.readthedocs.io/en/latest/sagemaker-pipelines/index.html), [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/connect-sagemaker.html), and Apache Airflow supported by [Amazon Managed Workflows for Apache Airflow (MWAA)](https://aws.amazon.com/managed-workflows-for-apache-airflow/) and [SageMaker AI Workflows](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_mlops.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,3 +54,7 @@ If you chose **Enable logging** during setup, you can monitor your task. You can
    The AWS DMS task keeps the target Aurora MySQL database up to date with source database changes. AWS DMS keeps all the tables in the task up to date until it’s time to implement the application migration. The latency is zero, or close to zero, when the target has caught up to the source.
 
 For more information, see [Monitoring DMS tasks](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Monitoring.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

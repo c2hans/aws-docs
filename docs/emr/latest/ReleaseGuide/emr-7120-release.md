@@ -87,7 +87,9 @@ The following release notes include information for Amazon EMR release 7.12.0.
   + **Hudi FTA writes** require using HoodieCredentialedHadoopStorage for credential vending during job execution. Set the following configuration when running Hudi jobs:
     + `hoodie.storage.class=org.apache.spark.sql.hudi.storage.HoodieCredentialedHadoopStorage`
   + Hudi FTA write support works only with the default Hudi configurations. Custom or non-default Hudi settings may not be fully supported and could result in unexpected behavior. Clustering for Hudi Merge-On-Read (MOR) tables is also not supported under FTA write mode.
-  + **Missing step and container logs** - From Amazon EMR 7.9 to Amazon EMR 7.12, there is a bug where step logs and/or container logs may not get uploaded to S3 if the step or application is running longer for than 3 hours. Please upgrade to Amazon EMR 7.13 to resolve this issue.
+  + **Missing logs**
+    + From Amazon EMR 7.9 to Amazon EMR 7.12, there is a bug where step logs and/or container logs may not get uploaded to S3 if the step or application is running for longer than 3 hours. Please upgrade to Amazon EMR 7.13 to resolve this issue.
+    + Configuring `yarn.nodemanager.log-dirs` with a value of length longer than 512 characters will cause S3 log upload to fail.
 + **Changes, enhancements, and resolved issues**
   + Starting EMR 7.12.0, EMR supports KMS Key ARN for service-hosted spark logs through persistent spark history server. Previous EMR versions only supported KeyID.
   + Starting EMR 7.12.0, EMR has addressed an issue with Hue that prevented use of an SSL certificate when hosting Hue on EMR Clusters.
@@ -362,3 +364,7 @@ Reconfiguration actions occur when you specify a configuration for instance grou
 | Date | Event | Description |
 | --- | --- | --- |
 | 2025-11-21 | Docs publication | Amazon EMR 7.12.0 release notes first published |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

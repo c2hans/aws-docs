@@ -13,3 +13,7 @@ If you use [Method 1 - By using AWS Systems Manager](https://docs.aws.amazon.com
 If you use [Method 2 - By using Linux Package Managers](https://docs.aws.amazon.com/guardduty/latest/ug/managing-gdu-agent-ec2-manually.html#heading:r2l:), you can use the scripts as specified in the [Installing the security agent manually](installing-gdu-security-agent-ec2-manually.md) section. The scripts already include the latest agent release version. For information about recently released agent versions, see [GuardDuty security agent versions for Amazon EC2 instances](runtime-monitoring-agent-release-history.md#ec2-gdu-agent-release-history).
 
 After you update the security agent, you can check the installation status by looking at the logs. For more information, see [Validating GuardDuty security agent installation status](installing-gdu-security-agent-ec2-manually.md#validate-ec2-gdu-agent-installation-healthy).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

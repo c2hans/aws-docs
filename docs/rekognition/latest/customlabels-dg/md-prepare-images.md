@@ -37,3 +37,7 @@ Amazon Rekognition Custom Labels requires images to train and test your model. T
 <a name="md-set"></a>
 
 Amazon Rekognition Custom Labels uses a set of images to train a model. At a minimum, you should use at least 10 images for training. Amazon Rekognition Custom Labels stores training and testing images in datasets. For more information, see [Creating training and test datasets with images](md-create-dataset.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

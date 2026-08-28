@@ -44,3 +44,7 @@ After you add a link to a pull request to an issue, you can quickly navigate to 
    1. To create a new custom field and add it, enter the name of the custom field you want to create in the search field and press enter. Then choose the type of custom field you want to create and set a value.
 
    1. To remove a custom field, choose the **X** icon next to the custom field you want to remove. If you remove a custom field from all issues, the custom field will be deleted and you will no longer see it when filtering.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

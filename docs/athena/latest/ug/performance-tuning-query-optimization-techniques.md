@@ -147,3 +147,7 @@ For example, suppose you have a dashboard with widgets that show different aspec
 <a name="performance-tuning-reuse-query-results"></a>
 
 It's common for the same query to run multiple times within a short duration. For example, this can occur when multiple people open the same data dashboard. When you run a query, you can tell Athena to reuse previously calculated results. You specify the maximum age of the results to be reused. If the same query was previously run within that time frame, Athena returns those results instead of running the query again. For more information, see [Reuse query results in Athena](reusing-query-results.md) here in the *Amazon Athena User Guide* and [Reduce cost and improve query performance with Amazon Athena Query Result Reuse](https://aws.amazon.com/blogs/big-data/reduce-cost-and-improve-query-performance-with-amazon-athena-query-result-reuse/) in the *AWS Big Data Blog*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

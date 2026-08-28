@@ -114,3 +114,7 @@ Amazon DataZone provides the following APIs for data retrieval.
 | <a name="datazone-SearchTypes"></a>[SearchTypes](${APIReferenceDocPage}API_SearchTypes.html) | Search types such asset types and form types in a domain | List |
 | <a name="datazone-SearchUserProfiles"></a>[SearchUserProfiles](${APIReferenceDocPage}API_SearchUserProfiles.html) | Search DataZone user profiles, IAM Identity Center users, and DataZone IAM principal profiles | List |
 | <a name="datazone-ValidatePolicy"></a>[ValidatePolicy](${APIReferenceDocPage}API_ValidatePolicy.html) | Valite the Cedar Policy's correctness | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

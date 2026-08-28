@@ -37,3 +37,7 @@ When you migrate to landing zone version 4.0 with AWS Config integration enabled
   + [Disallow Changes to AWS Config Rules Set Up by AWS Control Tower](https://docs.aws.amazon.com/controltower/latest/controlreference/mandatory-controls.html#config-rule-disallow-changes)
 
 Additionally, because AWS Config rules and the configuration aggregator are service-linked resources, service control policy (SCP) protection is longer required.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

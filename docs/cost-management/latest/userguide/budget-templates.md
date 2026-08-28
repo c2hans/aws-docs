@@ -30,3 +30,7 @@ You can create a budget using a template with recommended configurations. Budget
 While each template has default configurations, they can be changed later. This way, you can use it to create most of the budget, and then edit certain settings in the advanced workflow, such as adding a linked account or a cost category filter. To change any of the settings, under **Template settings**, choose **Custom**.
 
 You can also download a template for offline use in [AWS CLI](https://aws.amazon.com/cli/) or [CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_Budgets.html), for example. To download a template, under **Template settings**, choose **JSON**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

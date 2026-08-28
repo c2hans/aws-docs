@@ -419,3 +419,7 @@ After you're comfortable with these basics, you can explore more advanced tutori
 If you created your AWS account before July 15, 2025, consider watching the following 6-minute video: [How can I avoid charges on my account when using AWS Free Tier services](https://youtu.be/pZLG8McSugQ)
 
 If you created your AWS account on or after July 15, 2025, consider reviewing the following information: [Explore AWS services with AWS Free Tier](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/free-tier.html) in the *AWS Billing User Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

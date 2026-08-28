@@ -20,3 +20,7 @@ Use features in the Billing and Cost Management console to view your current AWS
 For information about Billing console features, see the [AWS Billing User Guide](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html).
 
 For more information about setting up and using AWS Data Exports, see the [AWS Data Exports User Guide](https://docs.aws.amazon.com/cur/latest/userguide/what-is-data-exports.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

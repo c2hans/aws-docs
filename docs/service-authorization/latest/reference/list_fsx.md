@@ -687,3 +687,7 @@ Amazon FSx defines the following condition keys that can be used in the `Conditi
 |   [fsx:NfsDataRepositoryEncryptionInTransitEnabled](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/encryption-in-transit.html)  | Filters access by NFS data repositories which support encryption-in-transit | Bool |
 |   [fsx:ParentVolumeId](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/creating-volumes.html)  | Filters access by the containing parent volume for mutating volume operations | String |
 |   [fsx:StorageVirtualMachineId](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/creating-volumes.html)  | Filters access by the containing storage virtual machine for a volume for mutating volume operations | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

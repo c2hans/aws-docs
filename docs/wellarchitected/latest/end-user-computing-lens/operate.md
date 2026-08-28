@@ -37,3 +37,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 + [EUCOPS12-BP02 Define and maintain an alerting chain of command that quickly communicates issues in real time](eucops12-bp02.md)
 + [EUCOPS13-BP01 Perform regular service reviews to identify significant trends in performance, scalability, and availability](eucops13-bp01.md)
 + [EUCOPS14-BP01 Ingest log file data from multiple data sources to correlate key problem identifiers and trends](eucops14-bp01.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

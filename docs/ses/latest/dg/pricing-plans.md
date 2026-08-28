@@ -44,3 +44,7 @@ The following screenshot shows the **Pricing plan details** card.
 <a name="pricing-plans-change-timing"></a>
 
 Upgrades take effect immediately when you submit the request. If you did not explicitly choose a plan and were defaulted to the Essentials plan, your first downgrade or cancellation to à la carte pricing also takes effect immediately. All other downgrades or cancellations take effect at the start of your next billing cycle.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

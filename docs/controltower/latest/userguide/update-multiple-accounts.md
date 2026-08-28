@@ -18,3 +18,7 @@ Repeat these steps for each OU in your AWS Control Tower organization, if you ne
 1. If AWSControlTowerBaseline is enabled on the OU, select **Re-Register OU** under **Actions**. If AWSControlTowerBaseline is not enabled on the OU, select **Reset AWS Config baseline** under **Actions** to reset enabled baseline and select enabled controls and **Reset control** under "Enabled controls" section to reset enabled controls.
 
 Alternatively, you can select any account that shows a status of **Update available** and then choose **Update account**, for as many accounts as needed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

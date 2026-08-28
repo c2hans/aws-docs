@@ -36,3 +36,7 @@ To grant IAM users write access to a specific account setting in the [**Account*
 | `account:PutAlternateContact` | Write | Grants permission to modify the alternate contacts for an account. |
 | `account:PutContactInformation` | Write | Grants permission to update the primary contact information for an account. |
 | `account:StartPrimaryEmailUpdate` | Write | Grants permission to initiate the primary email address update of the member account in an AWS organization. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

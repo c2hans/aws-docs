@@ -65,3 +65,7 @@ When your organization is in interoperability mode, you must use the Exchange ad
 When enabling a user or group for Amazon WorkMail, you can't edit the email addresses or aliases of those users and groups. Those must also be configured via the Exchange admincenter. Amazon WorkMail synchronizes changes in your directory every four hours.
 
 Resources can't be created or enabled in Amazon WorkMail while in interoperability mode. However, all of your Exchange resources are available in the Amazon WorkMail address book and can be used for scheduling meetings as usual.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

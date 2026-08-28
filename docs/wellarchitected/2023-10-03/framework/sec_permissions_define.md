@@ -61,3 +61,7 @@ To grant users programmatic access, choose one of the following options.
 +  [Become an IAM Policy Master in 60 Minutes or Less](https://youtu.be/YQsK4MtsELU)
 +  [Separation of Duties, Least Privilege, Delegation, and CI/CD](https://youtu.be/3H0i7VyTu70)
 +  [Streamlining identity and access management for innovation](https://www.youtube.com/watch?v=3qK0b1UkaE8)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-MongoDBAtlasServiceAccount"></a>
 
 ## Secret Value Fields
-<a name="w2aac27c11c29b3"></a>
+<a name="w2aac27c11c31b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -28,7 +28,7 @@ orgId
 The 24-character hexadecimal Atlas Organization ID. You can find this in your Atlas Organization Settings.
 
 ## Secret Metadata Fields
-<a name="w2aac27c11c29b5"></a>
+<a name="w2aac27c11c31b5"></a>
 
 The following are the metadata fields for MongoDB Atlas Service Account:
 
@@ -46,7 +46,7 @@ apiVersion
 (Optional) The Atlas Admin API version date in `yyyy-mm-dd` format. This value is used in the `Accept` header as `application/vnd.atlas.{apiVersion}+json`. Defaults to `2025-03-12` if not specified.
 
 ## Usage Flow
-<a name="w2aac27c11c29b7"></a>
+<a name="w2aac27c11c31b7"></a>
 
 The rotation supports two authentication modes. In self-rotation mode (default), the service account uses its own credentials to create and delete its secrets. This requires the service account to have permissions to manage its own secrets. In admin-assisted rotation mode, a separate admin service account credential stored in another secret is used. This is required when the service account lacks self-management permissions.
 
@@ -55,3 +55,7 @@ You can create your secret using the [CreateSecret](https://docs.aws.amazon.com/
 For customers opting to rotate their secrets using a separate set of credentials (stored in an Admin Secret), create the Admin Secret in AWS Secrets Manager containing the admin service account's `clientId` and `clientSecret`. You must provide the ARN of this Admin Secret in the rotation metadata in a [RotateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RotateSecret.html) call for your service account secret.
 
 During rotation, the driver creates a new secret for the service account via the Atlas Admin API, verifies the new secret by generating an OAuth token, updates the secret with new credentials, and deletes the old secret.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

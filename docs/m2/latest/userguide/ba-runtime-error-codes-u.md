@@ -81,3 +81,7 @@ Utility pgm error codes, prefixed with `BA-U`.
 | BA-U8001 | Error | CBL\_TOUPPER/CBL\_TOLOWER: Unexpected error. Review the input parameters passed to the utility program. |  |
 | BA-U8002 | Error | CBL\_TOUPPER/CBL\_TOLOWER: The input string is null. Ensure a non-null string is passed as the first argument. |  |
 | BA-U8003 | Fatal | CBL\_TOUPPER/CBL\_TOLOWER: Invalid program name. Ensure the program name is either CBL\_TOUPPER or CBL\_TOLOWER. |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

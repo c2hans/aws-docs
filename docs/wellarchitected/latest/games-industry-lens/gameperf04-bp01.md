@@ -23,3 +23,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Run multiple game server processes per instance and mix low and high-load game modes to avoid hot spotting and verify balanced resource utilization.
 +  Monitor client-side and server-side metrics like ping, jitter, frame drops, and API response times, and correlate these with server logs and issues reported by players to identify bottlenecks.
 +  Configure resource monitoring for each game server process, generate alerts for threshold breaches, and store logs in durable storage for analysis using tools like CloudWatch and Amazon Managed Grafana.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ After ingestion, a red or green status bar will appear at the top of the console
 + If the job itself succeeded, but not every file was ingested, then you'll find yourself on the details page for your dataset, with an error message indicating that there was a problem ingesting certain files. In that case, it's time to [check the files](when-files-dont-get-ingested.md).
 + If you did not receive any error messages regarding the ingestion job as a whole, or with issues with ingesting specific files, then it's time to look at your data's [details by sensor](reading-details-by-sensor.md).
 + If you want to make changes to your dataset based on what you've learned so far, and then re-ingest it, skip to [replacing your dataset](replacing-your-dataset.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

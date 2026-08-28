@@ -28,3 +28,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 +  **Customer-REQ1** – Edge devices and IoT sensors are connected to local IoT AWS IoT Greengrass devices to decrease latency and improve reliability for intermittent connections.
 
  Requirements **REQ2** (data protection) and **Customer-REQ1** (reliable connectivity) can be met through complimentary use of Architecture 1.1: [Hybrid network connectivity from a data center to the AWS Cloud](hybrid-network-connectivity-from-a-data-center-to-the-aws-cloud.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -102,3 +102,7 @@ Note the following limits related to using SSML:
 + The `<prosody>` tag doesn't support values for the rate attribute lower than -80%.
 
  For more information, see [Generating speech from SSML documents](ssml.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Polly. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query polly` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

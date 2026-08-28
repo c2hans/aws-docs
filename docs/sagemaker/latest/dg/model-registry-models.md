@@ -17,6 +17,7 @@ The following topics show you how to create and work with models, model versions
 + [Create a Model Group](model-registry-model-group.md)
 + [Delete a Model Group](model-registry-delete-model-group.md)
 + [Register a Model Version](model-registry-version.md)
++ [Restrict artifact access to model package deployments](model-registry-restrict-s3-access.md)
 + [View Model Groups and Versions](model-registry-view.md)
 + [Update the Details of a Model Version](model-registry-details.md)
 + [Compare Model Versions](model-registry-version-compare.md)
@@ -29,3 +30,7 @@ The following topics show you how to create and work with models, model versions
 + [Cross-account discoverability](model-registry-ram.md)
 + [View the Deployment History of a Model](model-registry-deploy-history.md)
 + [View model lineage details in Studio](model-registry-lineage-view-studio.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

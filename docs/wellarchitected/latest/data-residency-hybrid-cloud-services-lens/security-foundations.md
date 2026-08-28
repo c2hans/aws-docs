@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 + [DRHCSEC01-BP02 Document any differences in the treatment of log data into the control objectives](drhcsec01-bp02.md)
 + [DRHCSEC02-BP01 Separate workloads that have different data residency requirements](drhcsec02.md)
 + [DRHCSEC02-BP02 Manage workloads with similar data residency requirements efficiently](drhcsec02-bp02.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

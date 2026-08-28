@@ -81,3 +81,7 @@ You can create AWS Config rules, which represent the ideal configuration setting
 If a resource violates a rule and is flagged as *noncompliant*, AWS Config can alert you using an [Amazon Simple Notification Service (Amazon SNS)](https://aws.amazon.com/sns/) topic. To programmatically consume the data in these AWS Config alerts, use an [Amazon Simple Queue Service (Amazon SQS)](https://aws.amazon.com/sqs/) queue as the notification endpoint for the Amazon SNS topic. For example, you might want to write code that starts a workflow when someone modifies your environment's Auto Scaling group configuration.
 
 To learn more about setting up and using rules, see [Evaluating Resources with AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html) in the *AWS Config Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

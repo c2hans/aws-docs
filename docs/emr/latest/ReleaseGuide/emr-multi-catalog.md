@@ -168,3 +168,7 @@ For more information about using an AWS Glue multi-catalog hierarchy with Spark 
 + Using a multi-catalog hierarchy with Apache Iceberg cannot support fallback to Apache Hive metastore, when using `SparkSessionCatalog`.
 + EMR on EC2 clusters with Runtime role don't support multi-catalog hierarchy.
 + EMR on EC2 clusters enabled with AWS Lake Formation don't support multi-catalog hierarchy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -64,3 +64,7 @@ Shows the number of purchases that were made in your app for each day in the sel
 
 **Purchases per endpoint**
 Shows the daily average number of purchases per endpoint for each day in the selected time period. Amazon Pinpoint calculates this number by dividing **Purchases** by the number of endpoints that made a purchase for each day in the analysis period. This chart also provides the average number of purchases per endpoint for the entire time period, and the percentage change in the number of units sold per endpoint from the beginning to the end of the analysis period.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

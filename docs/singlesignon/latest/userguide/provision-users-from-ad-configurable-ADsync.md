@@ -39,3 +39,7 @@ Before you use configurable AD sync, be aware of the following prerequisites and
 + [Remove users and groups from your sync scope](manage-sync-remove-users-groups-configurable-ADsync.md)
 + [Pause and resume your sync](manage-sync-pause-resume-sync-configurable-ADsync.md)
 + [Automate your sync configuration for configurable AD sync](automate-sync-configuration-configurable-ADsync.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

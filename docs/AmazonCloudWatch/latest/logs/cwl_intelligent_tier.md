@@ -141,3 +141,7 @@ With Intelligent Tiering, you pay different storage rates based on the tier wher
 For more information about pricing, see [Amazon CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/).
 
 To view per-tier storage costs, use Athena and filter by the `TimedStorage-ByteHrs` (Standard), `TimedStorage-IA-ByteHrs` (Infrequent Access), and `TimedStorage-AIA-ByteHrs` (Archive Instant Access) usage types. For more information about CloudWatch Logs usage types in your bill, see [Analyzing, optimizing, and reducing CloudWatch costs](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/cloudwatch_billing.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

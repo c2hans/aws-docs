@@ -13,3 +13,7 @@ The following topics walk through each use case, with sample prompts. You can al
 
 **Note**
 **Pricing for underlying AWS API calls.** AWS FinOps Agent is offered at no charge during preview, but the agent calls AWS APIs on your behalf and you pay the standard per-request rate for those APIs. For details, see [ pricing](https://aws.amazon.com/aws-cost-management/pricing/). Other services the agent reads from, including Cost Anomaly Detection, Cost Optimization Hub, Compute Optimizer, and CloudTrail Event History, are available at no additional charge.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS FinOps Agent (preview). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finops-agent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

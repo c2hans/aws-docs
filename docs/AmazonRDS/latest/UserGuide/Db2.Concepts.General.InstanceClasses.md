@@ -58,3 +58,7 @@ The following table lists all instance classes supported for the Db2 Standard Ed
 | Memory optimized instance classes powered by 3rd generation Intel Xeon Scalable processors | db.r6idn.large–db.r6idn.4xlarge<br />db.r6in.large–db.r6in.4xlarge |
 | Memory optimized instance classes | db.r7i.large–db.r7i.8xlarge<br />db.r6i.large–db.r6i.4xlarge |
 | Burstable performance instance classes | db.t3.small–db.t3.2xlarge |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

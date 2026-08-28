@@ -22,3 +22,7 @@ Limited coverage of intents and slots between the test set and the bot can resul
 1. View the test set discrepancies for intents and slots by choosing the tab for each. You can download this data into a CSV format by choosing the **Download** button.
 
 1. Review the validation results for your test set data, bot intents, and slots. Identify issues and make changes in your bot test set architecture to improve results. Upload the edited test set and bot to run the test once you have made changes to the CSV file. NOTE: Validation coverage runs against the test set and not against the bot. Intents in the bot but not present in the test set will not be covered.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

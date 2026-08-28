@@ -18,3 +18,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 ## Implementation guidance
 <a name="implementation-guidance"></a>
 +  Responsibilities between teams are predefined or negotiated: Specifying the methods by which teams interact, and the information necessary for them to support each other, can help minimize the delay introduced as requests are iteratively reviewed and clarified. Having specific agreements that define expectations (for example, response time, or fulfillment time) enables teams to make effective plans and resource appropriately.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

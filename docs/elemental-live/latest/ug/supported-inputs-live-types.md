@@ -30,3 +30,7 @@ The rows are sorted by media type. The *Released * column identifies the version
 | Uncompressed content – 4K 2SI SDI  | 2SI-compliant SDI source device  | Receive 4K SDI content that is formatted as 2SI (2 Sample Interleave). Receive the content over 12G. The Elemental Live appliance must be configured with a 12G SDI interface. | Interleave 4K (HD-2SI)  | Not applicable  | 2.23.3 |
 | Uncompressed content – SMPTE 2022-6 | RTP or UDP host that supports SMPTE 2022-6 sources | Receive an uncompressed live SMPTE 2022-6 stream over UDP or RTP. Redundant inputs using SMPTE 2022-7 are supported but optional. Support for SMPTE 2022-7 was added in version 2.20.3.  | SMPTE 2022-6 input  | rtp:// or udp://  | 2.20.3  |
 | Uncompressed content – SMPTE 2110 | RTP or UDP host that supports SMPTE 2110 sources | Receive an uncompressed live stream that is compliant with SMPTE 2110. Redundant inputs using SMPTE 2022-7 are supported in version 2.20.3 and later.  | SMPTE 2110 input  | rtp://  | 2.17.3  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

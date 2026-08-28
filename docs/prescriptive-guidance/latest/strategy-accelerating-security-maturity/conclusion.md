@@ -18,3 +18,7 @@ In the run stage, you think big. You use automation and strategically place your
 Now, it is time for you fly. Use the recommendations in this guide to accelerate your security maturity in the AWS Cloud.
 
 ![Icons of people who are crawling, walking, running, and then flying.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-accelerating-security-maturity/images/guide-img/2162f372-44e6-4f4b-80cc-427f9fca7a33/images/a048038e-22e1-4e83-8eaa-120a84bcc6ef.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

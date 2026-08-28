@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 <a name="implementation-guidance-87"></a>
 
  AWS EUC services offer a variety of different bundles and instance types, including GPU-enabled choices. Assuming you have captured and analyzed your metrics in an existing reference environment, you can map your workloads to the most cost-effective Amazon WorkSpaces or WorkSpaces Applications bundles and instance types. If you have use cases that require a GPU and are heavily utilized (high number of hours per month), consider using WorkSpaces Applications, which gives you a more granular choice of GPU-enabled instances. Use the [AWS Pricing Calculator](https://calculator.aws/#/) or the [Amazon WorkSpaces Applications Pricing](https://aws.amazon.com/appstream2/pricing/?nc1=h_ls) tool to determine which of the two solutions is more cost-effective for your specific workload.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

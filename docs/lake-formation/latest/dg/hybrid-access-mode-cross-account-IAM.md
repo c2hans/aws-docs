@@ -81,3 +81,7 @@ If you've granted cross-account permissions directly to principals, you need to 
    1.  Test users' Lake Formation permissions and AWS Glue permissions by running separate sample queries on the table using Athena
 
       (Optional) Clean up IAM permission policies for Amazon S3 for the principals that are in the hybrid access mode.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

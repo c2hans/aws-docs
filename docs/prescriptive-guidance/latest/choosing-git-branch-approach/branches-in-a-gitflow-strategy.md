@@ -88,3 +88,7 @@ After the hotfix is tested, you can promote it to production through a merge req
 | --- |--- |
 | Naming convention: | `hotfix/<ticket>_<developer initials>_<descriptor>` |
 | Naming convention example: | `hotfix/123456_MS_Fix_Problem_A` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

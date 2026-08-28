@@ -12,3 +12,7 @@ Using Amazon Redshift machine learning (Amazon Redshift ML), you can train a mod
 Amazon Redshift ML makes it easier for SQL users to create, train, and deploy machine learning models using familiar SQL commands. By using Amazon Redshift ML, you can use your data in Amazon Redshift clusters to train models with Amazon SageMaker AI Autopilot and automatically get the best model. You can then localize the models and make predictions from within an Amazon Redshift database.
 
 For more information about Amazon Redshift ML, see [Getting started with Amazon Redshift ML](https://docs.aws.amazon.com/redshift/latest/dg/getting-started-machine-learning.html) in the* Amazon Redshift Database Developer Guide.*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ User certificates in the Global Address List (GAL) are supported only in a conne
 1. Distribute the generated certificates to users by exporting the certificates from the server running Microsoft Exchange and mailing them.
 
 1. Each user installs the certificate to their email program (such as Windows Outlook) and mobile devices.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

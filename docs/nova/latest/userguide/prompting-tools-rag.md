@@ -73,3 +73,7 @@ When you create a multimodal RAG, there are a few additional best practices you 
 + Use images directly if they are not text-heavy (that is, natural scenes, text-sparse slides, infographics, and so on) Amazon Nova has been optimized to handle non-text-heavy images. You do not need to pass an additional text summary for these images in the grounded generation.
 + Enhance text-heavy images with text summaries (e.g., PDF reports, papers). For text-heavy PDFs, the best approach is to retrieve both images (PDFs) and corresponding text summaries. The text summaries can help the model to identify relevant information from massive amounts of text in the original image.
 + Let the model know that you are passing images. In the instructions, you can add a sentence like "`You will be provided with images and texts from search results`".
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,3 +50,7 @@ You can customize the agent configuration and the dashboard. Be aware that if yo
 **How are solutions versioned?**
 Each solution provides the most up-to-date instructions and resources. Always use the latest version available. While the solutions themselves are not versioned, the associated artifacts (such as CloudFormation templates for dashboards and agent installations) are versioned.
 You can identify the version of a previously deployed artifact by checking the CloudFormation template's description field or the filename of the template you downloaded. To determine if you're using the latest version, compare your deployed version with the one currently referenced in the solution documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

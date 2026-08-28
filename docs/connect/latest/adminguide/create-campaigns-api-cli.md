@@ -308,3 +308,7 @@ The `--type` parameter specifies the campaign type. Use `MANAGED` for outbound c
 You can also specify `--communication-limits-override` to control how many times a recipient can be contacted. For the full list of parameters, see the [create-campaign CLI reference](https://docs.aws.amazon.com/cli/latest/reference/connectcampaignsv2/create-campaign.html).
 
 To manage campaign lifecycle operations (start, stop, pause, resume, delete), see the [AWS CLI reference for connectcampaignsv2](https://docs.aws.amazon.com/cli/latest/reference/connectcampaignsv2/index.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

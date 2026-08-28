@@ -339,3 +339,7 @@ To avoid getting this exception, we recommend configuring provisioned concurrenc
 To see the average run time for your Lambda function currently use the **Monitoring** page for your Lambda function on the Lambda console. By default, the Lambda console provides a **Duration** graph which shows you the average, minimum, and maximum amount of time your function code spends processing an event. To learn more about monitoring Lambda functions, see [Monitoring functions in the Lambda console](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-functions-access-metrics.html#monitoring-console-graph-types) in the *Lambda Developer Guide*.
 
 If you have already provisioned concurrency for your Lambda function and want to monitor it, see [Monitoring concurrency](https://docs.aws.amazon.com/lambda/latest/dg/monitoring-concurrency.html) in the *Lambda Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

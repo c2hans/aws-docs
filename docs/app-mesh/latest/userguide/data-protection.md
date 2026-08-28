@@ -36,3 +36,7 @@ By default, the App Mesh configurations that you create are encrypted at rest.
 App Mesh service endpoints use the HTTPS protocol. All communication between the Envoy proxy and the App Mesh Envoy Management Service is encrypted. If you require FIPS compliant encryption for the communication between the Envoy proxy and the App Mesh Envoy Management Service, there is a FIPS variant of the Envoy proxy container image you can use. For more information, see [Envoy image](envoy.md).
 
 Communication between containers within virtual nodes is not encrypted, but this traffic doesn’t leave the network namespace.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Mesh. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app-mesh` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

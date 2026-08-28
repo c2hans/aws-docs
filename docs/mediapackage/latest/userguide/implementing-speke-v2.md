@@ -314,3 +314,7 @@ The key delivery endpoint must return the raw 16-byte binary key (not base64) wi
 + HLS media and master tags have identical attributes; no SCHEME attribute
 + Echoes ContentKeyPeriodList and ContentKeyUsageRuleList unchanged
 + Includes VideoFilter and/or AudioFilter in usage rules
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

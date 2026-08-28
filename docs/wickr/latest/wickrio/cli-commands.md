@@ -57,3 +57,7 @@ The following are the integration commands:
 | list [integration] | The list command with the 'integration' option will display a list of integrations that are available for use with Wickr IO clients. This command may take up to a minute to complete. |
 | rename [<\#>] | Rename the integration of the specified Wickr IO client. This is useful when you want to create a new integration using an existing integration as the base for the new integration. |
 | upgrade [<\#>] | Update integration software for a Wickr IO client. This command will check to see if there is a newer version of the integration software available and upgrade to that version. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ The following table describes the documentation releases for AWS IoT FleetWise.
 | [Object storage in Amazon S3](#doc-history) | AWS IoT FleetWise now supports storing data using Amazon Simple Storage Service (Amazon S3). You can store data collected during campaigns in Amazon S3, in addition to Amazon Timestream. | June 1, 2023 |
 | [General availability](#doc-history) | This is the public release of AWS IoT FleetWise. | September 27, 2022 |
 | [Initial release](#doc-history) | This is the preview release of the AWS IoT FleetWise Developer Guide. | November 30, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

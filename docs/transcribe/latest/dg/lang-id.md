@@ -15,3 +15,7 @@ Amazon Transcribe is able to automatically identify the languages spoken in your
 Batch and streaming transcriptions support different languages. Refer to the **Data input** column in the [supported languages table](supported-languages.md) for details. Note that Swedish and Vietnamese are not currently supported with language identification.
 
 To learn about monitoring and events with language identification, refer to [Language identification events](monitoring-events.md#lang-id-event).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,3 +52,7 @@ The offline store acts as a historical look-up of records and keeps all records.
 In the following example diagram, the original offline store contains a ML data table with one record. A record is ingested with the same record identifier name as the original record, and the ingested record has an event time earlier than the original record. As the updated offline store keeps all of the records, the updated offline store contains both records.
 
  ![An example showing how records are ingested in the offline store.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/feature-store/feature-store-ingestion-offline-store.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

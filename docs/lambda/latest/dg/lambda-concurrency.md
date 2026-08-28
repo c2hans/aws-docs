@@ -326,3 +326,7 @@ Usually, you don't need to worry about this limitation. Lambda's scaling rate is
 Importantly, the concurrency scaling rate is a function-level limit. This means that each function in your account can scale independently of other functions.
 
 For more information about scaling behavior, see [Lambda scaling behavior](scaling-behavior.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

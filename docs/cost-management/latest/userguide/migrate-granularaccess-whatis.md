@@ -126,3 +126,7 @@ For a list of actions for the AWS Billing console, see [AWS Billing actions poli
 - ** [Preferences](https://console.aws.amazon.com/cost-management/home#/settings) **
   - **IAM action:** `ce:GetPreferences` / **Description:** Allow or deny users permission to view AWS Cost Management preferences.
   - **IAM action:** `ce:UpdatePreferences` / **Description:** Allow or deny users permission to update AWS Cost Management preferences.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ VMware Cloud on AWS is an option for your SQL Server database when:
 If your SQL Server database requires more than 80K IOPS, you can use vSAN.
 
 For more information, see [In the Works – VMware Cloud on AWS](https://aws.amazon.com/blogs/aws/in-the-works-vmware-cloud-on-aws/) on the AWS News blog, and [Deploy Microsoft SQL Server on VMware Cloud on AWS](https://aws.amazon.com/solutionspace/solutions/sql-server-vmware-cloud-on-aws/) on the AWS website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

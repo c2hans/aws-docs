@@ -245,3 +245,7 @@ Use the GitHub webhooks API to check the deliver status of any webhook call and 
 <a name="furls-redelivery-twilio"></a>
 
 Twilio users can customize event retry options using connection overrides. For more information, see [Webhooks (HTTP callbacks): Connection Overrides ](https://www.twilio.com/docs/usage/webhooks/webhooks-connection-overrides) in the Twilio documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

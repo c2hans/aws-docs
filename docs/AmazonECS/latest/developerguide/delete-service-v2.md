@@ -35,3 +35,7 @@ If you attempt to create a new service with the same name as an existing service
 1. To delete a service even if it wasn't scaled down to zero tasks, select **Force delete service**.
 
 1. At the confirmation prompt, enter **delete**, and then choose **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

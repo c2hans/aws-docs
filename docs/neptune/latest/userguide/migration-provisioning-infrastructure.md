@@ -55,3 +55,7 @@ Correlating this to the number of vCPUs in an instance, we see that we get a rou
 Memory requirements should also be taken into account, as well as processing requirements. Neptune is most performant when the data being accessed by queries is available in the main-memory buffer pool cache. Provisioning sufficient memory can also reduce I/O costs significantly.
 
 Additional details and guidance on sizing of instances in a Neptune cluster can be found on the [Sizing DB instances in a Neptune DB cluster](feature-overview-db-clusters.md#feature-overview-sizing-instances) page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

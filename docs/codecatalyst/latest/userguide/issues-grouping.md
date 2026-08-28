@@ -26,3 +26,7 @@ Grouping is used to organize issues on the board by multiple parameters, such as
 1. (Optional) Choose the **Show empty groups** toggle to show or hide groups that have no issues currently assigned to them.
 
 1. The view updates as you make your choices. An issue only appears in the group that matches the configured parameters.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

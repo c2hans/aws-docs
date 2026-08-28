@@ -279,3 +279,7 @@ response = sagemaker_client.create_flow_definition(
 The return value of a successful call of the `CreateFlowDefinition` API operation is a flow definition Amazon Resource Name (ARN).
 
 If you are using a built-in task type, you can use the flow definition ARN to start a human loop using that AWS service's API (i.e. the Amazon Textract API). For custom task types, you can use the ARN to start a human loop using the Amazon Augmented AI Runtime API. To learn more about both of these options, see [Create and Start a Human Loop](a2i-start-human-loop.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

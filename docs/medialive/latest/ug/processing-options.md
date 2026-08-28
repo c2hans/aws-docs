@@ -48,3 +48,7 @@ You can insert SCTE 35 messages in TS outputs using the [channel schedule](x-act
 The main use case for this feature is to add SCTE 35 messages to the output, when the input doesn't already include SCTE 35 messages.
 
 For more information, see [Inserting SCTE 35 messages using the schedule](setup-scte35-insertion.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

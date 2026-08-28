@@ -163,3 +163,7 @@ Your quick start application is complete. This tutorial has shown you how to cre
 + Handles a map event (`click`).
 + Calls an Amazon Location Service API, specifically to search the map at a location, using `searchPlaceIndexForPosition`.
 + Uses the MapLibre map control to add a marker.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -66,3 +66,7 @@ The following table summarizes the AWS SAM resources and properties that make up
 + [CloudFormation resources generated when AWS::Serverless::LayerVersion is specified](sam-specification-generated-resources-layerversion.md)
 + [CloudFormation resources generated when AWS::Serverless::SimpleTable is specified](sam-specification-generated-resources-simpletable.md)
 + [CloudFormation resources generated when AWS::Serverless::StateMachine is specified](sam-specification-generated-resources-statemachine.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

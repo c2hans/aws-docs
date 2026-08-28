@@ -98,3 +98,7 @@ VPCs that are peered across different Regions do not contribute to a combined NA
 + Default NAU quota per VPC: 64,000 units
 + Peered NAU count per VPC: 21,200 units (only the VPC's own resources count; the cross-Region peer contributes 0)
 + Default peered NAU quota per VPC: 128,000 units (the cross-Region peer does not count toward this quota)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

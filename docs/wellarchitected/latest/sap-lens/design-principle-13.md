@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/design-p
 +  SAP Documentation: [Certified and Supported SAP HANA Hardware](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=v:deCertified;ve:23)
 +  SAP Note: [1656099 - SAP Applications on AWS: Supported DB/OS and Amazon EC2 products](https://launchpad.support.sap.com/#/notes/1656099) [Requires SAP Portal Access]
 +  SAP Note: [1656250 - SAP on AWS: Support prerequisites](https://launchpad.support.sap.com/#/notes/1656250) [Requires SAP Portal Access]
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

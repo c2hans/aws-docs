@@ -169,3 +169,7 @@ if __name__ == "__main__":
 ACG provides an easy and secure way for developers to build, deploy, discover, and connect to tools at scale. Nova Act integrates with ACG in two ways.
 + Nova Act workflows can connect to an existing Gateway for agentic tool use.
 + Nova Act workflows themselves can be exposed on the Gateway as a tool for other agents to use. Refer to the [ACG developer guide](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-quick-start.html) for help on getting started.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova Act. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova-act` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

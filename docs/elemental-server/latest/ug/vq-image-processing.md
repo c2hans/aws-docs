@@ -73,3 +73,7 @@ The following table lists each field by its location on the web interface and sh
 | Stream – Video > Advanced > Preprocessors > Color Corrector > Saturation | stream\_assembly/video\_description/video\_preprocessor/<br /> color\_corrector/saturation |
 | Stream – Video > Advanced > Preprocessors > Color Corrector > Video Range | stream\_assembly/video\_description/video\_preprocessor/<br /> color\_corrector/full\_swing |
 | Stream – Video > Advanced > Preprocessors > Color Corrector > Color Space Conversion | stream\_assembly/video\_description/video\_preprocessor/<br /> color\_corrector/color\_space\_conversion |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

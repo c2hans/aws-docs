@@ -88,3 +88,7 @@ If report generation fails, check the following:
 + **Bucket encryption**: If using customer-managed KMS keys for bucket encryption, ensure the execution role has permissions to use the KMS key.
 
 For additional help, view detailed error messages on the execution details page or contact AWS Support.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ AWS Elemental MediaLive has several features that provide resiliency in the chan
 + Pipeline redundancy – You can set up the channel with two pipelines, to provide resiliency within the channel pipeline. This feature is controlled by the class of the inputs attached to the channel and by the class of the channel. For more information see the following:
   + [Implementing pipeline redundancy](plan-redundancy-mode.md)
   + [Choosing the channel class and input class](class-channel-input.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

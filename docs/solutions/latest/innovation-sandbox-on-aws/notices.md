@@ -21,3 +21,7 @@ These Terms of Use supplement, and do not modify, any other existing agreements 
 +  **No Third-Party Use**: ISB allows you to provide your own AWS accounts to internal end-users for learning and experimentation. You may not provide your AWS accounts to third-party users (such as other companies or public users) as this may grant third-party users access to your AWS resources.
 +  **Manually Adding New Users**: If you have manually added additional users to an AWS account which has already been granted to a sandbox user by ISB, it is your responsibility to ensure deletion of the user’s access after their sandbox use.
 +  **Fraud and Abuse Detection**: You are responsible for monitoring your sandbox account to detect any cases of potential fraud, abuse, or misuse.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

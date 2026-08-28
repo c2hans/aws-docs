@@ -89,3 +89,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-people-perspe
  Once new behaviors are consistently demonstrated, talent management systems are aligned, and agile feedback and measurement systems are in place, the enterprise will have a self-sustaining evolution of culture. However, your cloud journey is not static, and as your cloud capabilities mature over time, the cultural characteristics that are important will also change over time.
 
  For example, in the early stages of migrating to the cloud, fast decision making, breaking down organizational silos, and cross-functional collaboration may be the cultural characteristic with the highest priority. Further into the cloud adoption journey, innovation and new product development may be the business priority that requires cultural characteristics related to forming product teams and rapid experimentation. So, continue to evaluate your change acceleration roadmap against your cloud transformation plan to ensure that the right cultural elements are in place at the right time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

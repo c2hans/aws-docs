@@ -83,3 +83,7 @@ Lists five [Security Hub CSPM managed insights](securityhub-managed-insights.md)
 
 **Latest findings from AWS integrations**
 Shows the number of findings that you received in Security Hub CSPM from [integrated AWS services](securityhub-internal-providers.md). It also shows when you most recently received findings from each integrated service. This widget provides consolidated findings data from multiple AWS services. To drill down, choose an integrated service. Security Hub CSPM then opens the console for that service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

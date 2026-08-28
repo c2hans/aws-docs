@@ -69,3 +69,7 @@ When you use the AWS CLI, after you create the cluster
 1. Before you create the capacity provider, you need to create an Auto Scaling group. For more information, see[ Auto Scaling groups](https://docs.aws.amazon.com/autoscaling/ec2/userguide/auto-scaling-groups.html) in the *Amazon EC2 Auto Scaling User Guide*.
 
 1. Use `put-cluster-capacity-providers` to modify the cluster capacity provider. For more information, see [Turning on Amazon ECS cluster auto scaling](turn-on-cluster-auto-scaling.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,3 +36,7 @@ You can update the policy for a Multi-Region Access Point after creating it, but
 + [Blocking public access with Amazon S3 Multi-Region Access Points](multi-region-access-point-block-public-access.md)
 + [Viewing Amazon S3 Multi-Region Access Points configuration details](multi-region-access-point-view-examples.md)
 + [Deleting a Multi-Region Access Point](multi-region-access-point-delete-examples.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

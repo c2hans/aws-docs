@@ -200,3 +200,7 @@ The console displays interactive graphs that update in real-time as your RFT job
 After job completion, deploy the RFT model for on-demand inference or use Provisioned Throughput for consistent performance. For setting up inference, see [Set up inference for a custom model](model-customization-use.md).
 
 Use **Test in Playground** to evaluate and compare responses with the base model. For evaluating your completed RFT model, see [Evaluate your RFT model](rft-evaluate-model.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

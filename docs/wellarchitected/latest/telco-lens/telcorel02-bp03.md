@@ -45,3 +45,7 @@ Designing a flexible network function design enables the telecom network to dyna
 +  [Amazon EKS (Elastic Kubernetes Service)](https://aws.amazon.com/pm/eks/)
 +  [Karpenter (open-source Kubernetes cluster autoscaler)](https://docs.aws.amazon.com/eks/latest/userguide/autoscaling.html)
 +  [Amazon CloudWatch for monitoring and observability](https://aws.amazon.com/cloudwatch/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

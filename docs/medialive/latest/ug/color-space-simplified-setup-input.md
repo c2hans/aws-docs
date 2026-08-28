@@ -36,3 +36,7 @@ Follow these steps for each input in the channel.
 1. Complete **Color space settings** as follows:
    + If the situation in step 4 applies, choose **HDR10** (to identify the source color space). Then, if you obtained metadata values, enter them in the **Max CLL** and **Max Fall** fields that appear (to provide the metadata that is missing from the input).
    + If the situation doesn't apply, choose **Don't include**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

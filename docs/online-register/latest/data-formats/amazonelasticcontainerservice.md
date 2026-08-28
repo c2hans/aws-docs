@@ -38,3 +38,7 @@ Amazon Elastic Container Service provides the following APIs for data retrieval.
 | <a name="ecs-ListTaskDefinitionFamilies"></a>[ListTaskDefinitionFamilies](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListTaskDefinitionFamilies.html) | Get a list of task definition families that are registered to your account (which may include task definition families that no longer have any ACTIVE task definitions) | List |
 | <a name="ecs-ListTaskDefinitions"></a>[ListTaskDefinitions](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListTaskDefinitions.html) | Get a list of task definitions that are registered to your account | List |
 | <a name="ecs-ListTasks"></a>[ListTasks](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_ListTasks.html) | Get a list of tasks for a specified cluster | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

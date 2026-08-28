@@ -92,3 +92,7 @@ After you add all your database and analytics servers into the data collection m
 1. Choose **Add to inventory**.
 
 After you add all database and analytics servers to your inventory, you can start collecting metadata and performance metrics. For more information, see [Database and analytics data collection](agentless-collector-dashboard.md#using-collector-data-collect-database-analytics).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Application Discovery Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query application-discovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

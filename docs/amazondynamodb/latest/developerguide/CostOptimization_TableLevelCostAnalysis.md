@@ -44,3 +44,7 @@ By default, Cost Explorer does not provide a summary of the costs for any one sp
 It might take one or two days for the tag to start appearing in Cost Explorer
 
 You can set metadata tags yourself in the console, or through automation such as the AWS CLI or AWS SDK. Consider requiring a **table\_name** tag to be set as part of your organization’s new table creation process. For existing tables, there is a Python utility available that will find and apply these tags to all existing tables in a certain region in your account. See [Eponymous Table Tagger on GitHub](https://github.com/awslabs/amazon-dynamodb-tools#eponymous-table-tagger-tool) for more details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

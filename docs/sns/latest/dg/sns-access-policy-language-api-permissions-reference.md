@@ -50,3 +50,7 @@ Amazon SNS uses the following service-specific keys. You can use these in polici
 
 **Important**
 When you use a policy to control access by sns:Endpoint, be aware that DNS issues might affect the endpoint's name resolution in the future.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

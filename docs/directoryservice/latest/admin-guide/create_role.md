@@ -39,3 +39,7 @@ The following checklist provides an example of the tasks you must complete to cr
 1. Follow the steps in [Enabling AWS Management Console access with AWS Managed Microsoft AD credentials](ms_ad_management_console_access.md) to configure general access to the AWS Management Console.
 
 1. Follow the steps in [Assigning users or groups to an existing IAM role](assign_role.md) to add the users who need full access to EC2 resources to the new role.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

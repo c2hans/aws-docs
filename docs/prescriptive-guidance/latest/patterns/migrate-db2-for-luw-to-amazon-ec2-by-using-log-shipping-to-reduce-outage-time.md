@@ -140,3 +140,7 @@ The following diagram shows one Db2 instance running on-premises with a virtual 
 + [Set up Db2 STORAGE ACCESS ALIAS and DB2REMOTE](https://www.ibm.com/docs/en/db2/11.5?topic=commands-catalog-storage-access)
 + [Db2 ROLLFORWARD command](https://www.ibm.com/docs/en/db2/11.5?topic=commands-rollforward-database)
 + [Db2 secondary log archive method](https://www.ibm.com/docs/en/db2/11.5?topic=parameters-logarchmeth2-secondary-log-archive-method)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

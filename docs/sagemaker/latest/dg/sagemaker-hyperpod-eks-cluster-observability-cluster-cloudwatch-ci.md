@@ -31,3 +31,7 @@ SageMaker HyperPod requires the CloudWatch Insight v2.0.1-eksbuild.1 or later.
 1. Choose **Logs**, and then choose **Log groups**.
 
 When you have the HyperPod clusters integrated with Amazon CloudWatch Container Insights, you can access the relevant log groups in the following format: `/aws/containerinsights /<eks-cluster-name>/*`. Within this log group, you can find and explore various types of logs such as Performance logs, Host logs, Application logs, and Data plane logs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ The following self-service reports are available to you:
 For information about how to use the AWS Support Center to submit billing questions, see [Billing questions for Accelerate](https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/acc-billing-questions.html) in the *AMS Accelerate User Guide*.
 
 To learn more about visualization and dataset reporting, see [Incident report (weekly)](https://docs.aws.amazon.com/managedservices/latest/accelerate-guide/weekly-incident-report.html) in the *AMS Accelerate User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Energy Data Insights on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query EDI` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

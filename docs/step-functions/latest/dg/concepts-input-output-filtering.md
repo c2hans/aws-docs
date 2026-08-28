@@ -48,3 +48,7 @@ The following diagram shows how JSON information moves through a JSONPath task s
 + [Example: Manipulating state data with paths in Step Functions workflows](input-output-example.md)
 + [Specifying state output using ResultPath in Step Functions](input-output-resultpath.md)
 + [Map state input and output fields in Step Functions](input-output-fields-dist-map.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

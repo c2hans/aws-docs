@@ -24,3 +24,7 @@ The final, single policy document that specifies the rules that apply to an acco
 
 **Inheritance operators**
 Operators that control how inherited policies merge into a single effective policy. These operators are considered an advanced feature. Experienced policy authors can use them to limit what changes a child policy can make and how settings in policies merge. For more information, see [Inheritance operators](policy-operators.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

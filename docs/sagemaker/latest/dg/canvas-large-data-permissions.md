@@ -235,3 +235,7 @@ If you created or use a custom domain, follow all steps from Scenario 2, then fo
 1. Save your changes and restart your SageMaker Canvas application.
 
 By following these steps, you can enable large data processing in SageMaker Canvas for various domain setups, including those with custom VPC configurations. Remember to restart your SageMaker Canvas application after making these changes to apply the new permissions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

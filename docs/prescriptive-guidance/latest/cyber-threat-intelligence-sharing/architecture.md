@@ -38,3 +38,7 @@ To get started with CTI sharing, we recommend that you do the following:
 The following video, [Scaling cyber threat intelligence sharing with the AUS Cyber Security Center](https://www.youtube.com/watch?v=0P8snWhCN4I), discusses these steps in more detail. Although this video discusses the CTI sharing capabilities of the Australian Cyber Security Centre, the steps are the same regardless of the threat feed you choose or your location.
 
 [https://www.youtube-nocookie.com/embed/0P8snWhCN4I?controls=0](https://www.youtube-nocookie.com/embed/0P8snWhCN4I?controls=0)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

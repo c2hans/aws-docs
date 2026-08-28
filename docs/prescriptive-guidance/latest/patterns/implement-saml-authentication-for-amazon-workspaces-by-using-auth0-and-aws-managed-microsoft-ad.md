@@ -95,3 +95,7 @@ To set up a seamless single sign-on experience that doesn’t require a password
 <a name="implement-saml-authentication-for-amazon-workspaces-by-using-auth0-and-aws-managed-microsoft-ad-resources"></a>
 + [Set up SAML 2.0 for WorkSpaces Personal](https://docs.aws.amazon.com/workspaces/latest/adminguide/setting-up-saml.html) (WorkSpaces documentation)
 + [Auth0 documentation](https://auth0.com/docs)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

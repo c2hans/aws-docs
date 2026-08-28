@@ -191,3 +191,7 @@ This process is fully demonstrated by the [HelloLambda sample](#see-lambda-sampl
 A sample that provides an implementation of a workflow that uses a Lambda task is provided in the AWS SDK for Java. To view and/or run it, [download the source](https://aws.amazon.com/code/3015904745387737).
 
 A full description of how to build and run the *HelloLambda* sample is provided in the README file provided with the AWS Flow Framework for Java samples.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

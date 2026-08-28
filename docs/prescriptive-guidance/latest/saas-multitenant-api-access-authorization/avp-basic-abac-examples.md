@@ -201,3 +201,7 @@ when {
 For example, if Alice is the logged in user who requests the salary report, and if Alice is either the manager of the owner or the owner of the report, then the policy evaluates to `ALLOW`.
 
 For more information about using logical operators with Cedar policies, see the [Cedar documentation](https://docs.cedarpolicy.com/policies/syntax-operators.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

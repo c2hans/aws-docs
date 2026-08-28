@@ -36,3 +36,7 @@ Before you can create a job queue with a scheduling policy, you must create a sc
 1. (Optional) In the **Tags** section, you can specify the key and value for each tag to associate with the scheduling policy. For more information, see [Tag your AWS Batch resources](using-tags.md).
 
 1. Choose **Submit** to finish and create your scheduling policy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

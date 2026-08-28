@@ -25,3 +25,7 @@ If you are having difficulties or receiving an error message, there's a few ways
 + For technical user questions, visit the [User Community](https://answers.quicksight.aws.amazon.com/sn/index.html).
 + For administrator questions, see the [AWS forums](https://forums.aws.amazon.com).
 + If you need more customized assistance, contact AWS Support. To do this while you are signed in to your AWS account, choose **Support** at upper right, and then choose **Support Center**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

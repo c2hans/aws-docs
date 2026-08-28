@@ -83,3 +83,7 @@ The local gateway supports only IPv4 traffic. It does not support IPv6.
 <a name="bare-metal"></a>
 
 Instances from the Bmn family include one or more low latency and high throughput bare-metal local networking interfaces. For specialized mission-critical use cases, you can connect to your on-premises network through these high performance interfaces.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

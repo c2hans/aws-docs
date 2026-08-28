@@ -31,7 +31,7 @@ Required: Yes
 
  ** CustomerAWSAccountId **   <a name="AWSMarketplaceService-Type-marketplace-metering_UsageRecord-CustomerAWSAccountId"></a>
 The `CustomerAWSAccountId` parameter specifies the AWS account ID of the buyer.
-For existing integrations, to access your `CustomerIdentifier` to `CustomerAWSAccountId` mapping, see [Account Feeds](https://docs.aws.amazon.com/marketplace/latest/userguide/data-feed-account.html).
+If you have an existing integration and need the `CustomerAWSAccountId` that corresponds to a `CustomerIdentifier`, contact [AWS Marketplace Seller Operations](https://aws.amazon.com/marketplace/management/contact-us/) to obtain the mapping. Do not request the `CustomerAWSAccountId` directly from buyers. We cannot verify that a buyer-provided account ID is authentic, which can result in incorrect metering or billing.
 Type: String
 Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `^[0-9]+$`
@@ -71,3 +71,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/meteringmarketplace-2016-01-14/UsageRecord)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/meteringmarketplace-2016-01-14/UsageRecord)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/meteringmarketplace-2016-01-14/UsageRecord)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -104,3 +104,7 @@ When you use the default test spec, Device Farm automatically selects WebDriverA
 +  **For Appium Java** users, the new test host does not contain any pre-installed JAR files in its class path, whereas the previous host contained one for the TestNG framework (via an environment variable `$DEVICEFARM_TESTNG_JAR`). We recommend that customers package the necessary JAR files for their test frameworks inside their test package and remove instances of the `$DEVICEFARM_TESTNG_JAR` variable from their test spec files.
 
  We recommend reaching out to the service team through a support case if you have any feedback or questions about the differences between the test hosts from a software perspective.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

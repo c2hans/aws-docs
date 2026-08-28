@@ -312,3 +312,7 @@ end
 + Avoid committing large binaries to `_testdata/` when a small text fixture would suffice
 + Each plugin's `_testdata/` should be self-contained — no references to files outside the plugin directory. At runtime, `sbomgen.*` reads are confined to the artifact under inventory, so a plugin that depends on files elsewhere on the host will not work outside `localhost` scans.
 + Use representative, non-sensitive fixtures. Sbomgen does not redact SBOM contents, so never commit real secrets or credentials to `_testdata/`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

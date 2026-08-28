@@ -23,3 +23,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 +  **Implement monitoring and alerting:** Set up comprehensive monitoring and alerting within OpenSearch deployments, featuring log analysis, performance tracking, and notification systems that provide real-time alerts for slow queries, security events, and critical errors.
 +  **Optimize index management:** Employ efficient index management strategies, such as using Index templates and removing unused indexes, to maintain a clean and efficient index namespace.
 +  **Implement a regular snapshot:** Implement regular snapshots using Index State Management (ISM) to ensure consistent backups of OpenSearch data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

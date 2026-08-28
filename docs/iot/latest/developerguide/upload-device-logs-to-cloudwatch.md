@@ -34,3 +34,7 @@ When AWS IoT receives the MQTT messages from the client devices, an AWS IoT rule
 <a name="upload-batch-mode-overview"></a>
 
  `batchMode` is a Boolean parameter within the AWS IoT CloudWatch Logs rule action. This parameter is optional and is off (`false`) by default. To upload device-side log files in batches, you must turn this parameter on (`true`) when you create the AWS IoT rule. For more information, see [CloudWatch Logs](https://docs.aws.amazon.com/iot/latest/developerguide/cloudwatch-logs-rule-action.html) in the [AWS IoT rule actions](https://docs.aws.amazon.com/iot/latest/developerguide/iot-rule-actions.html) section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

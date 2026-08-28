@@ -41,3 +41,7 @@ When planning new or scaling existing workloads, verify that your service quotas
 +  AWS Documentation: [Service Quotas - AWS General Reference](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html)
 +  AWS Documentation: [On-Demand Instances - Amazon Elastic Compute Cloud Service Quotas](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-on-demand-instances.html#ec2-on-demand-instances-limits)
 +  AWS Documentation: [Requesting a quota increase - Service Quotas](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

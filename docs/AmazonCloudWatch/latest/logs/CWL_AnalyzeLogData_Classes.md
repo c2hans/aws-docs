@@ -6,3 +6,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_Analyze
 <a name="CWL_AnalyzeLogData_Classes"></a>
 
 All Logs Insights QL query commands are supported on log groups in the Standard log class. Log groups in the Infrequent Access log class support all query commands except `pattern`, `diff`, `filterIndex`, and `unmask`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

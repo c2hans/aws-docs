@@ -60,3 +60,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
 +  Restrict ports and protocols that are allowed into the domain controllers by using security groups. Allow remote management like remote desktop protocol (RDP) only from trusted networks.
 +  Leverage the Amazon EBS encryption feature to encrypt the root and additional volumes of your domain controllers and use [AWS Key Management Service (AWS KMS)](https://aws.amazon.com/kms) for key management.
 +  Follow [Microsoft-recommended security configuration baselines](https://www.microsoft.com/en-us/download/details.aspx?id=55319) and [Best Practices for Securing Active Directory](https://docs.microsoft.com/en-us/windows-server/identity/ad-ds/plan/security-best-practices/best-practices-for-securing-active-directory).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

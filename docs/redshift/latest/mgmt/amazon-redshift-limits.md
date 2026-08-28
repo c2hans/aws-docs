@@ -155,3 +155,7 @@ These limits don't apply to an Apache Hive metastore.
 | Cluster security group name |  +  A cluster security group name must contain no more than 255 alphanumeric characters or hyphens.  <br />+  It must contain only lowercase characters.  <br />+  It must not be **Default**.  <br />+  It must be unique for all security groups that are created by your AWS account.   |
 | Subnet group name |  +  A subnet group name must contain no more than 255 alphanumeric characters or hyphens.  <br />+  It must contain only lowercase characters.  <br />+  It must not be **Default**. <br />+  It must be unique for all subnet groups that are created by your AWS account.   |
 | Cluster snapshot identifier |  +  A cluster snapshot identifier must contain no more than 255 alphanumeric characters or hyphens. <br />+  It must contain only lowercase characters.  <br />+  It must not be **Default**. <br />+  It must be unique for all snapshot identifiers that are created by your AWS account.   |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

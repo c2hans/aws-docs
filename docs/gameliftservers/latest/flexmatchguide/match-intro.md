@@ -46,3 +46,7 @@ If you use Amazon GameLift Servers FleetIQ with games that are hosted with Amaz
 Amazon GameLift Servers charges for instances by duration of use and for bandwidth by quantity of data transferred. If you host your games on Amazon GameLift Servers, FlexMatch usage is included in the fees for Amazon GameLift Servers. If you host your games on another server solution, FlexMatch usage is charged separately. For a complete list of charges and prices for Amazon GameLift Servers, see [Amazon GameLift Servers Pricing](https://aws.amazon.com/gamelift/servers/pricing).
 
 For information on calculating the cost of hosting your games or matchmaking with Amazon GameLift Servers, see [Generating Amazon GameLift Servers pricing estimates](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/gamelift-calculator.html), which describes how to use the [AWS Pricing Calculator](https://calculator.aws/#/createCalculator/GameLift).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

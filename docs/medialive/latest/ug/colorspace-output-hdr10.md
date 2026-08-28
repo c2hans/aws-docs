@@ -15,3 +15,7 @@ Read this section if you set up one or more MediaLive outputs to [convert the co
 | Content in Dolby Vision 8.1 | This conversion isn't supported. After conversion, the color map of the content could be completely wrong. |
 | Content marked with an unknown or unsupported color space | We can't make any promises about how MediaLive will handle source content that is in an unsupported color space. Any of the following might apply:+  MediaLive might be able to ingest the input, and to pass through the color space and all the color space metadata.  <br />+  Or it might ingest the input but produce unacceptable output.  <br />+  Or it might fail to ingest the input, so that the event follows the input loss behavior routine (for example, it might display a slate in the output).   |
 | Content with no color space metadata |  +  No change to the pixel values of the content. <br />+  Leaves the content as unmarked.  <br />+  Passes through any brightness metadata and display metadata.   |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -172,3 +172,7 @@ The following table lists and describes the types of bucket-level error events t
 | BUCKET\_DOES\_NOT\_EXIST | The affected S3 bucket doesn’t exist anymore. | This typically occurs because a bucket was deleted.  |
 | BUCKET\_IN\_DIFFERENT\_REGION | The affected S3 bucket was moved to a different AWS Region. | – |
 | BUCKET\_OWNER\_CHANGED | The owner of the affected S3 bucket changed. Macie doesn’t have permission to access the bucket anymore. | This typically occurs if ownership of a bucket was transferred to an AWS account that isn't part of your organization. The `affectedAccount` field in the event indicates the account ID for the account that previously owned the bucket. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

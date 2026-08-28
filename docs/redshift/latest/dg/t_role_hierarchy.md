@@ -14,3 +14,7 @@ In RBAC, users can have nested roles. You can grant roles to both users and role
 When granting a role (r1) to another role (r2), you authorize r2 with all the permissions from r1. Also, when granting r2 to another role (r3), the permissions of r3 are the combination of the permissions from r1 and r2. Role hierarchy has r2 inherit permissions from r1. Amazon Redshift propagates permissions with each role authorization. Granting r1 to r2 and then r2 to r3 authorizes r3 with all the permissions from the three roles. Thus, by granting r3 to a user, the user has all the permissions from the three roles.
 
 Amazon Redshift doesn't allow the creation of a role authorization cycle. A role authorization cycle happens when a nested role is assigned back to a role earlier in the role hierarchy, such as r3 being assigned back to r1. For more information about how to create roles and manage role assignments, see [Managing roles in RBAC](r_roles-managing.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

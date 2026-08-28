@@ -19,3 +19,7 @@ The following sections includes procedures for creating, editing, and deleting m
 + [Create a monitor](CloudWatch-NetworkFlowMonitor-configure-monitors-create.md)
 + [Edit a monitor](CloudWatch-NetworkFlowMonitor-configure-monitors-edit.md)
 + [Delete a monitor](CloudWatch-NetworkFlowMonitor-configure-monitors-delete.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

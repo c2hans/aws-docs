@@ -56,3 +56,7 @@ Use the ElastiCache skill to investigate performance, availability, and cost iss
 The skill helps agents provide guidance for AI application patterns such as semantic caching, AI agent memory, retrieval-augmented generation (RAG), recommendation systems, and vector search. The skill helps agents identify the user's intent, select the appropriate workflow, and generate implementations that are aligned with ElastiCache capabilities.
 
 For these workloads, the skill provides detailed guidance for embedding storage, key design, TTL strategy, similarity threshold tuning, framework integrations, and operational considerations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

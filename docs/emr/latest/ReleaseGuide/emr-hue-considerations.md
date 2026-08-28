@@ -51,3 +51,7 @@ sudo systemctl start hue.service
 If you're using the same Hue metadata database across multiple Hue-enabled clusters, we recommend that these clusters run the same version of Hue. Different versions of Hue can have different schemas for the Hue metadata database. Using the same database for different versions can cause a Hue installation to fail. For example, trying to use the same database for two clusters with 4.10.0 and 4.11.0 installed can cause login errors for the users trying to log in to the 4.10.0 cluster.
 
 For a list of Amazon EMR release labels and the corresponding installed versions of Hue, see [Hue release history](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hue-release-history.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

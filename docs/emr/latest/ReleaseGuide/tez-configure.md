@@ -83,3 +83,7 @@ We used the following environments and configurations for benchmarking the Tez a
 | --- | --- | --- | --- |
 | CSV dataset | 90.26 seconds | 79.20 seconds | 12.25% |
 | Parquet dataset | 54.67 seconds | 42.23 seconds | 22.75% |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

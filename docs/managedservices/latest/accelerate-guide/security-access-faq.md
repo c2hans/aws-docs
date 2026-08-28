@@ -207,3 +207,7 @@ Production hosts at AWS are equipped with logging for security purposes. This se
 <a name="access-faq-data-extraction"></a>
 
 AMS does not access or use your content for any purpose. AMS defines customer content as software (including machine images), data, text, audio, video, or images that a customer or any end user transfers to AWS for processing, storage, or hosting by AWS services in connection with a customer's account, and any computational results that a customer or their end user derives from the foregoing through their use of AWS services.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

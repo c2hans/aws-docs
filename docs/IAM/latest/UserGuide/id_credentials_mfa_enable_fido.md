@@ -137,3 +137,7 @@ You can have up to eight MFA devices of any combination of the [ currently suppo
 If you don't have access to a new passkey or security key, you can enable a new virtual MFA device or hardware TOTP token. See one of the following for instructions:
 + [Assign a virtual MFA device in the AWS Management Console](id_credentials_mfa_enable_virtual.md)
 + [Assign a hardware TOTP token in the AWS Management Console](id_credentials_mfa_enable_physical.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

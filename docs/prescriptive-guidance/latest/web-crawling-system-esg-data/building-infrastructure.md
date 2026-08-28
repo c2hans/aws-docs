@@ -16,3 +16,7 @@ There are many AWS services that you can use to build the web crawling infrastru
 If your application can handle disruptions, consider using Amazon EC2 [Spot Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html) through [Spot Fleet](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/work-with-spot-fleets.html). Fleets of Spot Instances can help you save significantly on compute costs.
   + AWS Lambda [functions](https://docs.aws.amazon.com/lambda/latest/dg/lambda-functions.html)
 + Store the retrieved data and raw files in an Amazon Simple Storage Service (Amazon S3) [bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/creating-buckets-s3.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

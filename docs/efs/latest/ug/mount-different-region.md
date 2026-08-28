@@ -28,3 +28,7 @@ To mount your EFS file system from an EC2 instance that is in a different AWS Re
 1. Add a host entry for the cross region mount. For more information on how to do this, see [Step 3: Add a host entry for the mount target](efs-different-vpc.md#wt6-efs-utils-step3).
 
 1. Mount the file system using the EFS mount helper for [Linux](mounting-fs-mount-helper-ec2-linux.md) or [Mac](mounting-fs-mount-helper-ec2-mac.md) instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

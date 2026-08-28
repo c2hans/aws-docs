@@ -62,3 +62,7 @@ When managing multiple VPCs:
 + Security and network policies apply consistently across overlapping IP ranges in different VPCs
 + Configure the `HOME_NET` setting explicitly in firewall policies to include associated endpoints
 For more information on potential error scenarios and how to resolve them, see [Troubleshooting firewall endpoint failures in AWS Network Firewall](firewall-troubleshooting-endpoint-failures.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

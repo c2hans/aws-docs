@@ -22,3 +22,7 @@ The following topics showcase examples of breaking down, or shredding, complex d
 + [Accelerating PartiQL queries](#r_accelerate_mv)
 + [Shredding semi-structured data into SUPER columns with materialized views](r_shred_super.md)
 + [Creating Amazon Redshift scalar columns out of shredded data](r_create_scalar.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

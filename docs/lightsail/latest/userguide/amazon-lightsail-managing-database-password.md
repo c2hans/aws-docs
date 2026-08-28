@@ -34,3 +34,7 @@ Here are a few guides to help you manage your database in Lightsail:
 + [Connect to your MySQL database](amazon-lightsail-connecting-to-your-mysql-database.md)
 + [Connect to your PostgreSQL database](amazon-lightsail-connecting-to-your-postgres-database.md)
 + [Create a snapshot of your database](amazon-lightsail-creating-a-database-snapshot.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

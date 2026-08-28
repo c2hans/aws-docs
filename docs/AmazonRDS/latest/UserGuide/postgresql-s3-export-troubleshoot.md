@@ -11,3 +11,7 @@ See also the following for recommendations:
 + [Troubleshooting Amazon RDS identity and access](security_iam_troubleshoot.md)
 + [Troubleshooting Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/troubleshooting.html) in the *Amazon Simple Storage Service User Guide*
 + [Troubleshooting Amazon S3 and IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/troubleshoot_iam-s3.html) in the *IAM User Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

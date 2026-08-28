@@ -45,3 +45,7 @@ To edit, share, or delete your integration, see [Managing existing integrations]
 + **No results from ACL-enabled knowledge base** – If users receive no results from an admin-managed knowledge base, admin consent for the real-time ACL application might not have been granted. Your tenant might also block user consent. Grant admin consent using the link provided in the Amazon Quick console, or see [Admin consent](onedrive-kb-acl.md#onedrive-kb-acl-admin-consent).
 
 For additional troubleshooting, including sync monitoring, reports, and ACL verification, see [Troubleshooting OneDrive knowledge bases](onedrive-kb-troubleshooting.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

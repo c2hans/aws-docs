@@ -152,3 +152,7 @@ If your application requires shared software, libraries, or data, consider the f
 + Build a AWS ParallelCluster enabled custom AMI that includes your software as described in [Building a custom AWS ParallelCluster AMI](building-custom-ami-v3.md).
 + Use the [StorageSettings](SharedStorage-v3.md) option in the AWS ParallelCluster configuration file to specify a shared file system and store your installed software in the specified mount location.
 + Use [Custom bootstrap actions](custom-bootstrap-actions-v3.md) to automate the bootstrap procedure of each node of your cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

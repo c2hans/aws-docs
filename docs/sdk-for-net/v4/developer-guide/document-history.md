@@ -28,3 +28,7 @@ The following table describes the important changes since the last release of th
 | [What's new](whats-new.md) | Added information about new default behavior for integrity protection. | January 15, 2025 |
 | [S3 Encryption Client V4 Migration](s3-encryption-migration-v2-v4.md) | Added information about migrating from V2 to V4. | December 9, 2024 |
 | [What's new](whats-new.md) | Added information about the fourth preview release of the AWS SDK for .NET version 4. | November 15, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

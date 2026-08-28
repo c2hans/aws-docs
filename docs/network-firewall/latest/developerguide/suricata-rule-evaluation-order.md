@@ -139,3 +139,7 @@ You can use these logged messages to better understand the impact that the Appli
 + **Application alert established (server-directed only)** – Logs an `ALERT` message on client-to-server TCP and IP packets in established connections, with enhanced support for segmented application layer traffic. Server-to-client packets are not alerted.
 
 For more information about logging network traffic, see [Logging network traffic from AWS Network Firewall](firewall-logging.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

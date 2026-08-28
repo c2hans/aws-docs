@@ -69,3 +69,7 @@ For a full set of access point alias limitations, see [Access point alias limita
 Access points only support virtual-host-style addressing. In a virtual-hosted–style URI, the access point name, AWS account, and AWS Region is part of the domain name in the URL. To view the S3 URI for an access point attached to an FSx for OpenZFS volume, in the access point details page under **S3 access point details**, choose the access point name listed for **S3 access point**. This takes you to the access point details page in the Amazon S3 console. You can find the **S3 URI** under **Properties**.
 
 For more information, see [Virtual-hosted–style URI](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-naming.html#accessing-a-bucket-through-s3-access-point) in the *Amazon Simple Storage Service User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

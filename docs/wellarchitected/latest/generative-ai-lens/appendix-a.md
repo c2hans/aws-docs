@@ -15,3 +15,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 |  Performance efficiency  |  GENPERF01-BP02  |  GENPER02-BP03  |  GENPERF01-BP01, GENPERF03-BP01  |  GENPERF02-BP01, GENPERF02-BP02, GENPERF04-BP01  |   |  GENPERF04-BP01  |
 |  Cost optimization  |  GENCOST02-BP01  |  GENCOST01-BP01  |   |  GENCOST02-BP02, GENCOST03-BP02  |  GENCOST03-BP03, GENCOST04-BP01, GENCOST05-BP01  |  GENCOST03-BP01, GENCOST03-BP04  |
 |  Sustainability  |  GENSUS01-BP01, GENSUS01-BP02  |   |  GENSUS02-BP01  |  GENSUS03-BP01  |   |   |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -111,3 +111,7 @@ index_video.m3u8
 The `Channels` attribute in the last line is significant for Dolby Digital Plus with Dolby Atmos:
 + 12/JOC indicates that the coding mode is 5.1.4 or 7.1.4 and the codec is Dolby Digital with Dolby Atmos.
 + 16/JOC indicates that the coding mode is 9.1.6 and the codec is Dolby Digital with Dolby Atmos.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

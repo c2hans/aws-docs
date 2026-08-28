@@ -41,3 +41,7 @@ Periods don't have a *minimum time range*. But there is a point where the statis
 <a name="emx-metrics-about-storage"></a>
 
 Metrics are available for the last 15 months. Make sure that you specify a period that allows the time range that you want.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

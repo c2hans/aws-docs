@@ -36,3 +36,7 @@ Most regulated customers have strict requirements around container patching, sca
 + **Cross-account access** — The ECR repository, hosted in the Shared Services account, needs to provide access to users or services from other AWS accounts. Amazon ECR supports granting such permissions via IAM policies.
 
   For example, the following policy establishes access to ECR repository by a principal in another account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

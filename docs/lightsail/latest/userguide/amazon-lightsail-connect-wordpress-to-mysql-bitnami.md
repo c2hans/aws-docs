@@ -116,3 +116,7 @@ You should complete these additional steps after you're done connecting your Wor
 + Create a snapshot of your WordPress instance. For more information, see [Create a snapshot of your Linux or Unix instance](lightsail-how-to-create-a-snapshot-of-your-instance.md).
 + Create a snapshot of the MySQL managed database. For more information, see [Create a snapshot of your database ](amazon-lightsail-creating-a-database-snapshot.md).
 + Disable the public mode and data import mode of your MySQL managed database. For more information, see [Configure the public mode for your database](amazon-lightsail-configuring-database-public-mode.md) and [Configure the data import mode for your database](amazon-lightsail-configuring-database-data-import-mode.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

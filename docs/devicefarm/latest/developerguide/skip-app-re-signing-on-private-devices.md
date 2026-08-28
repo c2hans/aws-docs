@@ -87,3 +87,7 @@ To filter the list of devices to include only private devices, select **Private 
 1. Then, if the iOS device is on iOS version 18 or greater, open a support ticket with the AWS Device Farm team to have our team trust the app for you, since these devices require the app to be manually trusted. Otherwise, if the iOS version is 17 or lower, you can go into the **Settings** app, and, under **General** settings, trust the app yourself from the **VPN and Profiles** menu.
 
 All apps from this configuration profile or enterprise app developer are now trusted on this private device until you delete them.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

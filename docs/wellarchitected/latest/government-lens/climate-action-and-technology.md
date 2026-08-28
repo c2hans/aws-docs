@@ -42,3 +42,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/c
   + **Improvement plan** – Plan around maximum virtualization of services and where components might be made available as a utility for ease of reuse.
 + **Leverage low energy sensor technologies for early detection and modelling opportunities.** Leverage new technologies, such as IoT, digital twins, and AI analysis and modelling to support more sustainable systems, decision making, and services.
   + **Improvement plan** – Support the organization to identify opportunities to leverage sensor and modelling technologies in the service, where appropriate.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

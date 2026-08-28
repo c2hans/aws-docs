@@ -53,3 +53,7 @@ You can replace failed instances with new instances using automated mechanisms l
  To mitigate the impact of AWS AZ and Region failures, you can deploy multiple Outposts each anchored to a different AZ or Region. You may then design your workload to operate in a distributed multi-Outpost deployment model using many of the similar [mechanisms and architectural patterns](https://docs.aws.amazon.com/whitepapers/latest/fault-tolerant-components/high-availability-building-blocks.html) that you use to design and deploy on AWS today.
 
 The control plane of the services that run on AWS Outposts resides in the Region to which it is anchored, generating a dependency both on Zonal services such as Amazon EC2 and Amazon EBS and on Regional services such as Amazon RDS, Elastic Load Balancing and Amazon EKS. In Outposts, applications can be deployed under the concept of [static stability](https://docs.aws.amazon.com/whitepapers/latest/aws-fault-isolation-boundaries/static-stability.html) to help improve resilience to control plane impairments.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

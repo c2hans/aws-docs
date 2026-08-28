@@ -66,8 +66,24 @@ Replace {{gatewayId}} with the ID of your gateway.
 | Asia Pacific (Mumbai) | ap-south-1 | {{gatewayId}}.gateway.bedrock-agentcore.ap-south-1.amazonaws.com | HTTPS |
 | Asia Pacific (Singapore) | ap-southeast-1 | {{gatewayId}}.gateway.bedrock-agentcore.ap-southeast-1.amazonaws.com | HTTPS |
 | Asia Pacific (Sydney) | ap-southeast-2 | {{gatewayId}}.gateway.bedrock-agentcore.ap-southeast-2.amazonaws.com | HTTPS |
+| US West (N. California) | us-west-1 | {{gatewayId}}.gateway.bedrock-agentcore.us-west-1.amazonaws.com | HTTPS |
+| Europe (London) | eu-west-2 | {{gatewayId}}.gateway.bedrock-agentcore.eu-west-2.amazonaws.com | HTTPS |
+| Europe (Paris) | eu-west-3 | {{gatewayId}}.gateway.bedrock-agentcore.eu-west-3.amazonaws.com | HTTPS |
+| Europe (Milan) | eu-south-1 | {{gatewayId}}.gateway.bedrock-agentcore.eu-south-1.amazonaws.com | HTTPS |
+| Europe (Spain) | eu-south-2 | {{gatewayId}}.gateway.bedrock-agentcore.eu-south-2.amazonaws.com | HTTPS |
+| Europe (Stockholm) | eu-north-1 | {{gatewayId}}.gateway.bedrock-agentcore.eu-north-1.amazonaws.com | HTTPS |
+| Asia Pacific (Seoul) | ap-northeast-2 | {{gatewayId}}.gateway.bedrock-agentcore.ap-northeast-2.amazonaws.com | HTTPS |
+| Asia Pacific (Hyderabad) | ap-south-2 | {{gatewayId}}.gateway.bedrock-agentcore.ap-south-2.amazonaws.com | HTTPS |
+| Asia Pacific (Malaysia) | ap-southeast-5 | {{gatewayId}}.gateway.bedrock-agentcore.ap-southeast-5.amazonaws.com | HTTPS |
+| Asia Pacific (Thailand) | ap-southeast-7 | {{gatewayId}}.gateway.bedrock-agentcore.ap-southeast-7.amazonaws.com | HTTPS |
+| Canada (Central) | ca-central-1 | {{gatewayId}}.gateway.bedrock-agentcore.ca-central-1.amazonaws.com | HTTPS |
+| South America (São Paulo) | sa-east-1 | {{gatewayId}}.gateway.bedrock-agentcore.sa-east-1.amazonaws.com | HTTPS |
 
 ## Service quotas
 <a name="limits_bedrock_agentcore"></a>
 
 For information about Amazon Bedrock AgentCore service quotas, see [Quotas for Amazon Bedrock AgentCore](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/bedrock-agentcore-limits.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

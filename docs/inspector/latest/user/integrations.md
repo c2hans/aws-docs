@@ -29,3 +29,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/integrations.html
 <a name="integrations-security-hub"></a>
 
  [AWS Security Hub CSPM](https://docs.aws.amazon.com/securityhub/latest/userguide/what-is-securityhub.html) provides a comprehensive view of your security state in AWS and helps you check your environment against security industry standards and best practices Security Hub CSPM collects security data from AWS accounts, services, and supported products. You can use Security Hub CSPM to ingest Amazon Inspector findings data and create a central location for findings in all of your integrated AWS services and AWS Partner Network products. For more information, see [Amazon Inspector integration with AWS Security Hub CSPM](securityhub-integration.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

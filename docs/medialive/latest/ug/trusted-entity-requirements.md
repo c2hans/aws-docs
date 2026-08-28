@@ -76,3 +76,7 @@ Each row in the column describes a task or set of related tasks that the MediaLi
 - **AWS Systems Manager**
   - **Tasks:** Creating a password parameter on the MediaLive console. / **Type of access required:** MediaLive doesn't need IAM access for this task. Only the users need access. / **Suggested actions or policy:**
   - **Tasks:** Using a password parameter in the channel configuration. See [Requirements for AWS Systems Manager password parameters](requirements-for-EC2.md). / **Type of access required:** When the channel is running.MediaLive must have read access to the AWS Systems Manager Parameter Store. / **Suggested actions or policy:** The managed policy AmazonSSMRead OnlyAccess
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

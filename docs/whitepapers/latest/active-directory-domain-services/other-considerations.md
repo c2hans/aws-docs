@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/active-directory-doma
  If you are [hosting Microsoft Exchange in AWS Cloud](https://aws.amazon.com/blogs/modernizing-with-aws/how-to-run-microsoft-exchange-server-on-aws-using-amazon-ec2/), at least one global catalog server is required in a site with Exchange servers. For more information about global catalog, see [Microsoft documentation.](https://technet.microsoft.com/pt-pt/library/how-global-catalog-servers-work(v%3Dws.10).aspx) Since there is only one domain in the forest for AWS Managed Microsoft AD, all domain controllers are configured as global catalog and will have full information about all objects.
 
  **Read Only Domain Controllers (RODC)**. It’s possible to deploy RODC on AWS if you are running Active Directory on EC2 instances and require it, and there are no special considerations for doing so. AWS Managed Microsoft AD does not support RODCs. All of the domain controllers that are deployed as a part of AWS Managed Microsoft AD are writable domain controllers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

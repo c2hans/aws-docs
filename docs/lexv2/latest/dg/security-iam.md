@@ -16,6 +16,8 @@ AWS Identity and Access Management (IAM) is an AWS service that helps an adminis
 + [Resource-based policy examples for Amazon Lex V2](security_iam_resource-based-policy-examples.md)
 + [AWS managed policies for Amazon Lex V2](security-iam-awsmanpol.md)
 + [Using service-linked roles for Amazon Lex V2](using-service-linked-roles.md)
++ [Using service roles for Amazon Lex V2](using-service-roles.md)
++ [Migrating to service roles for Amazon Lex V2](migrating-to-service-roles.md)
 + [Troubleshooting Amazon Lex V2 identity and access](security_iam_troubleshoot.md)
 
 ## Audience
@@ -99,3 +101,7 @@ AWS supports additional policy types that can set the maximum permissions grante
 <a name="security_iam_access-manage-multiple-policies"></a>
 
 When multiple types of policies apply to a request, the resulting permissions are more complicated to understand. To learn how AWS determines whether to allow a request when multiple policy types are involved, see [Policy evaluation logic](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_evaluation-logic.html) in the *IAM User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

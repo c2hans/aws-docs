@@ -39,3 +39,7 @@ Building a production-level RAG system requires thinking through several differe
 + **Identity and user management** – It is critical to control user access to the application at fine granularity. In the AWS Cloud, policies, roles, and permissions are typically managed through [AWS Identity and Access Management (IAM)](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html).
 
 Clearly, there is significant amount of work to plan, develop, release, and manage a RAG system. [Fully managed services](rag-fully-managed.md), such as Amazon Bedrock or Amazon Q Business, can help you manage some of the undifferentiated heavy lifting. However, [custom RAG architectures](rag-custom.md) can provide more control over the components, such as the retriever or the vector database.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

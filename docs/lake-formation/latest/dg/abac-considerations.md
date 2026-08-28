@@ -12,3 +12,7 @@ The following considerations and limitations apply to Attribute based access con
 + When using ABAC grants on a table in Lake Formation, Lake Formation doesn't grant `DESCRIBE` permissions to the parent database or catalog. This differs from non-ABAC scenarios, where Lake Formation provides implicit `DESCRIBE` permissions to parent resources.
 + All principals with the `AmazonDataZoneProject` tag key are always treated as opted in to Lake Formation for all Data Catalog resources.
 + ABAC supports only string attributes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

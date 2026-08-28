@@ -46,3 +46,7 @@ Open the communication from the HTTPS ports of the URL endpoint (either NLB or S
 <a name="sap-odata-connectivity-options"></a>
 + HTTPS connection with internal and external NLB, SSL certificate from certificate authority (CA), not self-signed SSL certificate
 + HTTPS connection with SAP instance SSL certificate from certificate authority (CA), not self-signed SSL certificate
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

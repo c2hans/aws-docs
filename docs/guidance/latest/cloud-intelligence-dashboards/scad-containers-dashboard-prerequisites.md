@@ -140,3 +140,7 @@ Only once you see all these columns (respective for the service you use), procee
 
 **Note**
 If you’d like to use EKS K8s pod labels or ECS task tags for cost allocation or Total Cost of Ownership (TCO), there are additional prerequisites listed in [Total Cost of Ownership Using Kubernetes Labels and AWS Tags](scad-containers-dashboard-tco.md). If you’re running Spark or Flink applications on EKS or on EMR on EKS, and you’d like to allocate cost to those applications, there are additional prerequisites listed in [Data on EKS - Cost Allocation for Spark and Flink Applications Running on EKS](scad-containers-dashboard-data-on-eks.md). These prerequisites can be done now or after the deployment, when you reach the post-deployment section
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

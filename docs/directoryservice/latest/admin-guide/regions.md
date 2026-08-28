@@ -81,3 +81,7 @@ The following table provides a list describing which Region-specific endpoints a
 | South America (São Paulo) | sa-east-1 | ds-data.sa-east-1.amazonaws.com | HTTPS |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-yes.png) Yes |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-no.png) No |  ![](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/icon-no.png) No |
 
  For information about the FIPS endpoints that Directory Service Data supports, see [Directory Service Data endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/ds_region.html) in the *AWS General Reference Reference Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

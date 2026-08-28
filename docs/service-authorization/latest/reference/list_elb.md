@@ -396,3 +396,7 @@ AWS Elastic Load Balancing defines the following condition keys that can be used
 |   [elasticloadbalancing:SecurityGroup](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/security_iam_service-with-iam.html#securitygroup-condition)  | Filters access by the security-group IDs that are allowed in the request | ArrayOfString |
 |   [elasticloadbalancing:SecurityPolicy](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/security_iam_service-with-iam.html#securitypolicy-condition)  | Filters access by the SSL Security Policies that are allowed in the request | ArrayOfString |
 |   [elasticloadbalancing:Subnet](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/security_iam_service-with-iam.html#subnet-condition)  | Filters access by the subnet IDs that are allowed in the request | ArrayOfString |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

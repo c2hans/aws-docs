@@ -90,3 +90,7 @@ Running `sudo yum install -y aws-cfn-bootstrap` installs the helper scripts from
 + If you use the source code for the scripts to work with another version of Linux or a different platform, and you have created your own certificate trust store, you'll also need to keep the trust store updated.
 
 For the version history of the `aws-cfn-bootstrap` package, see [Release history for CloudFormation helper scripts](releasehistory-aws-cfn-bootstrap.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

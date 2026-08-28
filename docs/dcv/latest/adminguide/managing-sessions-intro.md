@@ -38,3 +38,7 @@ While Amazon DCV ensures that each virtual session has an independent `Xdcv` dis
  You should not run multiple virtual sessions on the same Amazon DCV server for the same user at the same time, unless you have set up your Operating System to mitigate possible concerns about the shared resources.
 
 If the `dcv-gl` package is installed and licensed, Amazon DCV virtual sessions share access to the server's GPUs. To share hardware-based OpenGL across multiple virtual sessions, you must connect the virtual X server instance to the GPU by configuring the `dcv-gl.conf` file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ The following are the high-level steps for using AWS Microservice Extractor for 
 1. **Automated grouping recommendations** — You can get grouping recommendations from Microservice Extractor instead of manually creating groupings. Microservice Extractor uses machine learning-driven analysis of your source code to generate grouping recommendations.
 
 1. **Refactor source code and extract grouped nodes** — After the parts of the application that you want to extract are grouped and selected, refactor source code by isolating business domains and removing dependencies between them. Then, extract the groups as separate code solutions. After extracting the groups as separate solutions, you can manually edit and build the code solutions, and deploy them as independent services in containers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

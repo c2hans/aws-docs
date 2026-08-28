@@ -18,3 +18,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 | As AWS releases new services and features, it's a best practice to review your existing architectural decisions to ensure they continue to be the most cost effective. |
 
  When regularly reviewing your deployments, assess how newer services can help save you money. For example, Amazon Aurora on RDS can reduce costs for relational databases. Using serverless such as Lambda can remove the need to operate and manage instances to run code.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

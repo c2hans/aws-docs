@@ -78,3 +78,7 @@ The actual call to Amazon EventBridge API operations for creating this partner e
 +  [Receiving events from a SaaS partner](https://docs.aws.amazon.com/eventbridge/latest/userguide/create-partner-event-bus.html) in the *Amazon EventBridge* documentation
 +  [Amazon AppFlow now supports Amazon EventBridge as a destination](https://aws.amazon.com/about-aws/whats-new/2020/08/amazon-appflow-now-supports-amazon-eventbridge-as-a-destination) in the AWS *What's new* blog
 +  [Building Salesforce integrations with Amazon EventBridge and Amazon AppFlow](https://aws.amazon.com/blogs/compute/building-salesforce-integrations-with-amazon-eventbridge/) in the AWS *Compute* blog
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,3 +27,7 @@ Saving the updated value in Secrets Manager will invoke the `UpdatePipelineGithu
 1. Create a new GitHub personal access token and update the pipeline structure with the new token. For step-by-step instructions, see [Configure authentication](https://docs.aws.amazon.com/codepipeline/latest/userguide/appendix-github-oauth.html#action-reference-GitHub) (Github version 1 source actions) in the *AWS CodePipeline User Guide*.
 
 1. Retry the failed **Source** stage of the affected pipeline.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

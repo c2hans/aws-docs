@@ -157,3 +157,7 @@ aws \
 The following AWS SDK for Java examples show how to apply S3 Object Lock retention governance with the `retain until date` set to January 30, 2025 across multiple objects, including applying Object Lock retention governance across multiple objects with a retain until date and bypassing retention governance across multiple objects.
 
 For examples of how to use Batch Operations with S3 Object Lock retention governance mode with the AWS SDK for Java, see [Use CreateJob with an AWS SDK or CLI](https://docs.aws.amazon.com/AmazonS3/latest/API/s3-control_example_s3-control_CreateJob_section.html) in the *Amazon S3 API Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

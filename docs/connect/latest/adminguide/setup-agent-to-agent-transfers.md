@@ -69,3 +69,7 @@ In this step, you create a flow that's type **Transfer to agent** and use a [Set
 1. To show your agents how to transfer chats to another agent, see [Transfer a chat to an agent's queue, with all context preserved](transfer-chats.md).
 
    To show your agents how to transfer tasks to another agent, see [Transfer a task to another agent or queue in the Connect Customer Contact Control Panel (CCP)](transfer-task.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

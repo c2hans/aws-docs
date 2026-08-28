@@ -20,3 +20,7 @@ In this diagram, you’ll see that we have a microservice that needs to access s
 ![Diagram showing scoping with IAM policies.](http://docs.aws.amazon.com/whitepapers/latest/saas-tenant-isolation-strategies/images/scoping-with-iam-policies.png)
 
  In this model, we’re essentially saying that our microservice will have this tenant context applied each time it attempts to access another resource. This scoping is applied as a matter of an agreed upon convention where the microservice is expected to always acquire new credentials before accessing a tenant resource.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

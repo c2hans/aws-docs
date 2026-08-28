@@ -19,3 +19,7 @@ If the following requirements are not met, your [UpdateTrafficDistribution](http
 + The instance ARNs specified in the telephony configuration must match the ARNs of the linked instances.
 
 When you call `UpdateTrafficDistribution` from the source AWS Region you can use either the traffic distribution group ID or Amazon Resource Name (ARN). When you call `UpdateTrafficDistribution` in the replica Region, you must use the traffic distribution group ARN.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

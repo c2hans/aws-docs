@@ -12,3 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/designing-next-genera
  Working alongside AWS IoT Core, there are several additional IoT specific services that provide added value for the OEM to manage ongoing operational objectives with their vehicles. AWS provides a comprehensive set of tools and services for the automotive industry. IoT Jobs provides an integrated OTA support, IoT Device Defender device security and certificate management, and Fleet Hub allow the OEM to manage all vehicles seamlessly through the console. In addition to those tools and services, the true value add for OEMs is the downstream services that seamlessly connect with AWS IoT Core, such as Amazon DynamoDB, Amazon Kinesis Data Streams and Amazon S3.
 
  As this paper has demonstrated, using AWS IoT Core for some (or all) of the vehicle-to-cloud communication framework would provide the OEM with a secure, extensible and reliable platform that can support the use cases customers are demanding in today’s vehicles.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

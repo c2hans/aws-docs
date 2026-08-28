@@ -40,3 +40,7 @@ SMTP gateways configured for outbound email flow rules must support Transport La
 When you configure an SMTP gateway for use with an outbound email flow rule, outbound messages attempt to match the rule with an SMTP gateway. The message that match the rule are routed to the corresponding SMTP gateway, which then handles the rest of the email delivery.
 
 If Amazon WorkMail is unable to reach the SMTP gateway, the system bounces the email message back to the sender. If this occurs, follow the previous steps to correct the gateway settings.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

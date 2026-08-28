@@ -12,6 +12,8 @@ Each queue stores its job attachments in an Amazon S3 bucket that you own. Three
 
 Queues that share an Amazon S3 bucket and root prefix also share access to the job attachments stored there. Give each queue its own bucket and root prefix so that queue permission boundaries also apply to job attachments. For example, when QueueA and QueueB have separate buckets, an artist with access to only QueueA can't read QueueB's job attachments. If several queues belong to the same security boundary, such as the queues for one show, sharing a bucket between them is a reasonable simplification. The console sets up each queue with its own bucket and root prefix by default.
 
+Separate buckets keep job attachments separated in Amazon S3. On the worker host, a job runs code as the queue's operating system user. The job can write files to any location that user can write to, including locations that other queues' users can read. Separation on the host comes from the queue operating system users. For more information, see [Run jobs as dedicated OS users](job-run-as-user.md).
+
 To isolate your queues, you must configure the `Queue Role` to only allow queue access to the bucket and root prefix. In the following example, replace each {{placeholder}} with your resource-specific information.
 
 ------
@@ -132,3 +134,7 @@ You can add the following statement to your `Queue Role` to access custom softwa
 ```
 
 For more information about Amazon S3 security best practices, see [Security best practices for Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/security-best-practices.html) in the *Amazon Simple Storage Service User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

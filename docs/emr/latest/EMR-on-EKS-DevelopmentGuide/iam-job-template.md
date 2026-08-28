@@ -71,3 +71,7 @@ To enforce that a user or role is able to invoke `StartJobRun` operation only wh
 If the job template specifies a job template parameter inside the execution role ARN field, then the user will be able to provide a value for this parameter and thus be able to invoke `StartJobRun` using an arbitrary execution role. To restrict the execution roles the user can provide, see **Controlling access to the execution role** in [Using job execution roles with Amazon EMR on EKS](iam-execution-role.md).
 
 If no condition is specified in the above `StartJobRun` action policy for a given user or a role, the user or the role will be allowed to invoke `StartJobRun` action on the specified virtual cluster using an arbitrary job template that they have read access to or using an arbitrary execution role.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ To begin, [Get Signed Up](getting-started-sign-up.md).
 + [Step 2: Upload Data to Amazon CloudSearch for Indexing](getting-started-uploading-data.md)
 + [Step 3: Search Your Amazon CloudSearch Domain](getting-started-search.md)
 + [Step 4: Delete Your Amazon CloudSearch Movies Domain](getting-started-delete-domain.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -129,3 +129,7 @@ View details about updates to AWS managed policies for AWS Sign-In since this se
 | [ApplicationProvisioningPolicy](#security-iam-awsmanpol-ApplicationProvisioningPolicy) – New policy | Added a new AWS managed policy that grants comprehensive permissions for application provisioning and identity management operations, including IAM role and policy management, IAM Identity Center configuration, and Identity Store operations. | September 30, 2025 |
 | [AmazonManagedSignUpServicePolicy](#security-iam-awsmanpol-AmazonManagedSignUpServicePolicy) – New policy | Added a new AWS managed policy that grants permissions required for AWS account sign-up processes, including customer verification and payment setup operations. | September 30, 2025 |
 | AWS Sign-In started tracking changes | AWS Sign-In started tracking changes for its AWS managed policies. | September 30, 2025 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

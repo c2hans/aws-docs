@@ -57,3 +57,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 | Backport | [HIVE-25765](https://issues.apache.org/jira/browse/HIVE-25765): skip.header.line.count property skips rows of each block in FetchOperator when file size is larger |
 | Bug | Fix NPE on insert in certain scenarios when hive.stats.column.autogather and hive.groupby.skewindata are both enabled  |
 | Bug | Fix NPE when mapred.tasktracker.expiry.interval value is not set |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

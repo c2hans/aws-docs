@@ -153,3 +153,7 @@ Once the system confirms through data that the action was successful, the insigh
 **Provide feedback**: Use thumbs up/down icons to help the system improve future recommendations
 
 **Monitor outcomes**: Track whether accepted recommendations successfully resolve insights
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

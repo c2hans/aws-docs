@@ -100,3 +100,7 @@ Remember the following when you're working with slate and personalization thresh
 Slate configuration is mandatory when using VPAID ads. MediaTailor inserts slate to hold space for VPAID ads that the video player will insert. The slate duration might be slightly longer than the VPAID ad duration to accommodate user interactivity.
 
 The video player then handles the VPAID ad based on the client-side reporting metadata that MediaTailor returns, as described in [VPAID requirements](vast.md#vpaid). For information about client-side reporting, see [Client-side ad tracking](ad-reporting-client-side.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

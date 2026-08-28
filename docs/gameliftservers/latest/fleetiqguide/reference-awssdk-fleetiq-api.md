@@ -29,3 +29,7 @@ Use these operations to manage your game server deployments with FleetIQ optimiz
 + [DescribeGameServer](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DescribeGameServer.html) – Retrieve metadata for a game server. CLI command: [describe-game-server](https://docs.aws.amazon.com/cli/latest/reference/gamelift/describe-game-server.html)
 + [UpdateGameServer](https://docs.aws.amazon.com/gamelift/latest/apireference/API_UpdateGameServer.html) – Change game server metadata, health status, or utilization status. CLI command: [update-game-server](https://docs.aws.amazon.com/cli/latest/reference/gamelift/update-game-server.html)
 + [DeregisterGameServer](https://docs.aws.amazon.com/gamelift/latest/apireference/API_DeregisterGameServer.html) – Call from a terminating game server to prompt Amazon GameLift Servers FleetIQ to remove the game server from the game server group. CLI command: [deregister-game-server](https://docs.aws.amazon.com/cli/latest/reference/gamelift/deregister-game-server.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ For users to create and use data collection apps, the web experience IAM role fo
 + qapps:ExportQAppSessionData
 
 For more information, including a policy example, see [IAM permissions for using Amazon Q Apps](deploy-q-apps-iam-permissions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

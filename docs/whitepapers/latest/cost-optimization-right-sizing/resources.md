@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cost-optimization-rig
 + [This Is My Architecture videos](https://aws.amazon.com/this-is-my-architecture/?icmpid=link_from_docs_website)
 + [AWS Answers](https://aws.amazon.com/answers/?icmpid=link_from_docs_website)
 + [AWS Documentation](https://aws.amazon.com/documentation/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

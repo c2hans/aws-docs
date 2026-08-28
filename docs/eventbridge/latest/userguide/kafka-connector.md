@@ -18,3 +18,7 @@ The connector includes the following capabilities:
 +  Schema registry support for Avro and Protocol Buffers (Protobuf)
 
 The [Kafka Connector for Amazon EventBridge](https://github.com/awslabs/eventbridge-kafka-connector/blob/main/README.md) is available on GitHub. For detailed instruction on installing and configuring the connector using Amazon MSK Connect, see [Set up EventBridge Kafka sink connector for Amazon MSK Connect](https://docs.aws.amazon.com/msk/latest/developerguide/mkc-eventbridge-kafka-connector.html) in the *Amazon Managed Streaming for Apache Kafka Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

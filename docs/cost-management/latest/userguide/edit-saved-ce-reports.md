@@ -22,3 +22,7 @@ You can't edit the predefined reports. If you choose one of the predefined repor
 1. Choose **Save** to overwrite the existing report, or else choose **Save as a new report**.
 
 1. In the **Save to report library** dialog box, enter a name for your report, and then choose **Save report**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

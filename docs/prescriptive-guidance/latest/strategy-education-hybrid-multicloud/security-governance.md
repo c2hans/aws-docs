@@ -28,3 +28,7 @@ Educational institutions have a variety of compliance, governance, and cybersecu
   + Implement detection capabilities that help cyberincident responders detect, contain, and mitigate security breaches in a timely fashion.
 
 As with compliance, you must ensure that you have the resources, skill sets, and tools to detect, prevent, and respond to events in each environment. By focusing on a single, primary cloud provider, you can limit the resources that are required. Academic institutions that do not have a mature security operations team should look to independent software vendors, managed detection and response providers, and cybersecurity consultants for help in these areas.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

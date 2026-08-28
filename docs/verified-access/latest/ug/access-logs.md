@@ -19,3 +19,7 @@ When you enable logging, you need to configure a destination for the logs to be 
 + [Enable or disable Verified Access trust context](include-trust-context.md)
 + [OCSF version 0.1 log examples for Verified Access](ocsfv01-examples.md)
 + [OCSF version 1.0.0-rc.2 log examples for Verified Access](ocsfv1-examples.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Verified Access. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verified-access` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

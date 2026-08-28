@@ -46,3 +46,7 @@ This conversational approach makes the autonomous system's reasoning transparent
 Magentic‑One is an open‑source, generalist multi‑agent system designed to autonomously solve complex, multi‑step tasks across diverse environments, as described in the [Microsoft AI Frontiers blog](https://www.microsoft.com/en-us/research/articles/magentic-one-a-generalist-multi-agent-system-for-solving-complex-tasks/). At its core is the Orchestrator agent, which decomposes high‑level goals and tracks progress by using structured ledgers. This agent delegates subtasks to specialized agents (such as WebSurfer, FileSurfer, Coder, and ComputerTerminal) and adapts dynamically by re‑planning when necessary.
 
 The system is built on the AutoGen framework and is model‑agnostic, defaulting to GPT‑4o. It achieves state‑of‑the‑art performance across benchmarks like GAIA, AssistantBench, and WebArena—all without task‑specific tuning. Additionally, it supports modular extensibility and rigorous evaluation through AutoGenBench suggestions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

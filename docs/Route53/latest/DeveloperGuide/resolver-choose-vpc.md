@@ -99,3 +99,7 @@ When you create a Resolver endpoint, you can't specify a VPC that has the [insta
 You can still use VPC Resolver to resolve DNS queries that originate in a VPC. Create at least one VPC that has the instance tenancy attribute set to `default`, and specify that VPC when you create inbound and outbound endpoints.
 
 When you create a forwarding rule, you can associate it with any VPC, regardless of the setting for the instance tenancy attribute.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

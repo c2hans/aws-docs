@@ -52,3 +52,7 @@ This error occurs because there is a mismatch between the container name stored 
 
   1. Repair the certificate store with the new key container name. Refer to steps 12 to 14 in [ KSP Migration](ksp-migrate-to-sdk-5.md) for more details.
 +  **Resolution status: ** This issue has been fixed in Client SDK version 5.16.1. To resolve this problem, upgrade your Client SDK to version 5.16.1 or later.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ You've completed this tutorial. The Hello World component defers or acknowledges
 + [Deploy AWS IoT Greengrass components to devices](manage-deployments.md)
 + [Use the AWS IoT Device SDK to communicate with the Greengrass nucleus, other components, and AWS IoT Core](interprocess-communication.md)
 + [AWS IoT Greengrass Development Kit Command-Line Interface](greengrass-development-kit-cli.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

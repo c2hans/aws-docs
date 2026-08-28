@@ -20,6 +20,9 @@ Content-type: application/json
    "kmsKeyArn": "{{string}}",
    "locale": "{{string}}",
    "name": "{{string}}",
+   "preferences": {
+      "{{string}}" : {{boolean}}
+   },
    "tags": {
       "{{string}}" : "{{string}}"
    }
@@ -71,6 +74,13 @@ Length Constraints: Minimum length of 1. Maximum length of 255.
 Pattern: `[\p{L}\p{N}\p{P}\p{S}\p{Z}]+`
 Required: Yes
 
+ ** [preferences](#API_CreateAgentSpace_RequestSyntax) **   <a name="devopsagent-CreateAgentSpace-request-preferences"></a>
+The preferences to configure on the agent space. Preferences not provided take their default values.
+Type: String to boolean map
+Map Entries: Minimum number of 0 items. Maximum number of 25 items.
+Valid Keys: `elevatedActionsEnabled`
+Required: No
+
  ** [tags](#API_CreateAgentSpace_RequestSyntax) **   <a name="devopsagent-CreateAgentSpace-request-tags"></a>
 Tags to add to the AgentSpace at creation time.
 Type: String to string map
@@ -95,6 +105,9 @@ Content-type: application/json
       "kmsKeyArn": "string",
       "locale": "string",
       "name": "string",
+      "preferences": {
+         "string" : boolean
+      },
       "updatedAt": "string"
    },
    "tags": {
@@ -193,3 +206,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/devops-agent-2026-01-01/CreateAgentSpace)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/devops-agent-2026-01-01/CreateAgentSpace)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/devops-agent-2026-01-01/CreateAgentSpace)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

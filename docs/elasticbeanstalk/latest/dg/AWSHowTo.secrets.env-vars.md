@@ -286,3 +286,7 @@ The following options can serve as workarounds or solutions to the multiline iss
 + Upgrade your Amazon Linux 2 environment to Amazon Linux 2023. For more information, see [Migration from Amazon Linux 2 to Amazon Linux 2023](using-features.migration-al.generic.from-al2.md).
 + Remove newline characters from your secret values. One example approach is to Base64 encode your values before storing them in the secret store. Your application would then need to decode the value back into the original format when it references it from the environment secret variable.
 + Design your application code to retrieve the data directly from Secrets Manager or Systems Manager Parameter Store. For more information, see *Retrieving secrets* in [Using Secrets Manager](AWSHowTo.secrets.Secrets-Manager-and-Parameter-Store.md#AWSHowTo.secrets.Secrets-Manager) or *Retrieving parameters* [Using Systems Manager Parameter Store](AWSHowTo.secrets.Secrets-Manager-and-Parameter-Store.md#AWSHowTo.secrets.SSM-parmameter-store).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

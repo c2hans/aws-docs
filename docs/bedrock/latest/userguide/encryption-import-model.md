@@ -44,3 +44,7 @@ You have full access to your customer managed AWS KMS key. You can revoke access
 <a name="import-model-kms-grants-lifecycle"></a>
 + **Primary grants** have a long lifespan and remain active as long as the associated custom models are still in use. When a custom imported model is deleted, the corresponding primary grant is automatically retired.
 + **Secondary grants** are short-lived. They are automatically retired as soon as the operation that Amazon Bedrock performs on behalf of the customers is completed. For example, after a custom model import job is finished, the secondary grant that allowed Amazon Bedrock to encrypt the custom imported model will be retired immediately.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

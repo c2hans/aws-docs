@@ -18,3 +18,7 @@ The following table describes the fields from Amazon Kendra that you might see i
 | x-amz-kendra-passage-id | The ID of the returned passage. |
 | x-amz-kendra-document-id | The ID of the returned document. |
 | DocumentAttributes | Document attributes or metadata fields from Amazon Kendra. The returned query result from the knowledge base stores these as metadata key-value pairs. You can filter the results with metadata filtering from Amazon Bedrock. For more information, see [DocumentAttribute](https://docs.aws.amazon.com/kendra/latest/APIReference/API_DocumentAttribute.html). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -115,3 +115,7 @@ In this example, Deadline Cloud divides the 100 frames into chunks such as `1-10
 For more information, see the following topics:
 + [Group frames into chunks with task chunking on Deadline Cloud](examples-jb-task-chunking.md) – Ready-to-submit chunking samples, including a non-contiguous variant.
 + [How to submit a job to Deadline Cloud](submit-jobs-how.md) – Submit the job bundle to your queue.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

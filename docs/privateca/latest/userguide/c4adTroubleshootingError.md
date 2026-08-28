@@ -36,3 +36,7 @@ Connector for AD sends error messages for several reasons. For information on ea
 | 0x8FFFA018 | The SOAP message must contain a `to` header. | Review the header of the SOAP message. |
 | 0x8FFFA019 | Could not process the SOAP message due to an unrecognized header. | Review the header of the SOAP message. |
 | 0x8FFFA01A | The template specified the UPN attribute to be included in the certificate subject or the subject alternate name, but the attribute was not found in the AD object for the requester. | Add an UPN to the Active Directory object. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

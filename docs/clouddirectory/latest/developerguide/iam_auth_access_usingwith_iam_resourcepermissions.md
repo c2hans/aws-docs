@@ -81,3 +81,7 @@ To specify an action, use the `clouddirectory:` prefix followed by the API opera
 |  [UpdateTypedLinkFacet](http://docs.aws.amazon.com/clouddirectory/latest/APIReference/API_UpdateTypedLinkFacet.html)  | `clouddirectory:UpdateTypedLinkFacet` | \* |
 |  [UpgradeAppliedSchema](http://docs.aws.amazon.com/clouddirectory/latest/APIReference/API_UpgradeAppliedSchema.html)  | `clouddirectory:UpgradeAppliedSchema` | \* |
 |  [UpgradePublishedSchema](http://docs.aws.amazon.com/clouddirectory/latest/APIReference/API_UpgradePublishedSchema.html)  | `clouddirectory:UpgradePublishedSchema` | \* |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

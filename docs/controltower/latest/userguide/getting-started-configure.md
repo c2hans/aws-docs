@@ -20,3 +20,7 @@ In Landing Zone versions prior to 4.0, these accounts are named "Log Archive" an
 **Configuration choices that cannot be undone**
 + You cannot change your home Region after you've set up your landing zone.
 + If you're provisioning Account Factory accounts with VPCs, VPC CIDRs can't be changed after they are created.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

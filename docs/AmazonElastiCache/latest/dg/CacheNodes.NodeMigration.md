@@ -94,3 +94,7 @@ To migrate ElastiCache for Memcached to a different node type, you must create a
 + Create a new cluster with the new node type. For more information, see [Creating a Memcached cluster (console)](Clusters.Create-mc.md#Clusters.Create.CON.Memcached).
 + In your application, update the endpoints to the new cluster's endpoints. For more information, see [Finding a Cluster's Endpoints (Console) (Memcached)](Endpoints.md#Endpoints.Find.Memcached)
 + Delete the old cluster. For more information, see [Deleting a cluster in ElastiCache](Clusters.Delete.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

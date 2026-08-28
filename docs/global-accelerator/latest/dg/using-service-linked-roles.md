@@ -70,3 +70,7 @@ If you have disabled and deleted your accelerators but Global Accelerator hasn't
 <a name="security-iam-awsmanpol-updates"></a>
 
 For updates to `AWSGlobalAcceleratorSLRPolicy`, the AWS managed policy for the Global Accelerator service-linked role, see the [AWS managed policies updates table](security-iam-awsmanpol-aga.md#security-iam-awsmanpol-globalaccelerator-updates). You can also subscribe to automatic RSS alerts on the AWS Global Accelerator [Document history](WhatsNew.md) page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

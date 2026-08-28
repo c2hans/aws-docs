@@ -9,9 +9,9 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 
 Complete these steps to install the AWS Replication Agent on Linux source servers.
 
-1. Ensure that the necessary service roles have been created by clicking on the Reinitialize service permissions button on the AWS Transform MGN console's replication settings page. You must have the permissions necessary to create IAM roles in order for this operation to succeed.
+1. Ensure that the necessary service roles have been created by choosing the Reinitialize service permissions button on the AWS Transform MGN console's replication settings page. You must have the permissions necessary to create IAM roles in order for this operation to succeed.
 
-1. Download the agent installer with the wget command your Linux source server. This wget command downloads the Agent installer file - aws-replication-installer-init onto your server.
+1. Download the agent installer with the wget command on your Linux source server. This wget command downloads the Agent installer file - aws-replication-installer-init onto your server.
 
    The Agent installer follows this format: `https://aws-application-migration-service-<region>.s3.<region>.amazonaws.com/latest/linux/aws-replication-installer-init` . Replace `<region>` with the AWS Region into which you are replicating.
 
@@ -98,16 +98,16 @@ This flag may only be used when adding new source servers to MGN. You cannot use
 You can also enter these values as part of the installation script command parameters. If you do not enter these parameters as part of the installation script, you are prompted to enter them one by one as described above. (for example: `sudo chmod +x aws-replication-installer-init; sudo ./aws-replication-installer-init --region regionname --aws-access-key-id AKIAIOSFODNN7EXAMPLE --aws-secret-access-key wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY`).
 The AWS Access Key ID and AWS Secret Access Key values are hidden when entered into the installer.
 
-1. Once you have entered your credentials, the installer identifies volumes for replication. The installer displays the identified disks and prompt you to choose the disks you want to replicate.
+1. After you enter your credentials, the installer identifies volumes for replication. The installer displays the identified disks and prompts you to choose the disks you want to replicate.
 ![Terminal window showing disk selection prompt listing identified volumes for replication.](http://docs.aws.amazon.com/mgn/latest/ug/images/sourceservers-linuxagent3.png)
 
-   To replicate some of the disks, type the path of the disks, separated by a comma, as illustrated in the installer (such as: /dev/sda, /dev/sdb, and more). To replicate all of the disks, click **Enter**. The installer identifies the selected disks and print their size.
+   To replicate some of the disks, type the path of the disks, separated by a comma, as illustrated in the installer (such as: /dev/sda, /dev/sdb, and more). To replicate all of the disks, press **Enter**. The installer identifies the selected disks and prints their size.
 ![Terminal output showing selected disks with their reported sizes.](http://docs.aws.amazon.com/mgn/latest/ug/images/sourceservers-linuxagent4.png)
 
    The installer confirms that all disks were successfully identified.
 ![Terminal output confirming all disks were successfully identified.](http://docs.aws.amazon.com/mgn/latest/ug/images/sourceservers-linuxagent5.png)
 **Note**
-When identifying specific disks for replication, do not use apostrophes, brackets, or disk paths that do not exist. Type only existing disk paths. Each disk you selected for replication is displayed with the caption **Disk to replicate identified**. However, the displayed list of identified disks for replication may differ from the data you entered. This difference can due to several reasons:
+When identifying specific disks for replication, do not use apostrophes, brackets, or disk paths that do not exist. Type only existing disk paths. Each disk you selected for replication is displayed with the caption **Disk to replicate identified**. However, the displayed list of identified disks for replication may differ from the data you entered. This difference can be due to several reasons:
 The root disk of the source server is always replicated, whether you select it or not. Therefore, it always appears on the list of identified disks for replication.
 AWS Transform MGN replicates whole disks. Therefore, if you choose to replicate a partition, its entire disk appears on the list and is later replicated. If several partitions on the same disk are selected then that disk appears only once on the list.
 Incorrect disks may be chosen by accident. Ensure that the correct disks have been chosen.
@@ -122,3 +122,7 @@ Note that the returned disks need be replicated from the beginning. Any disk siz
 ![Terminal output showing installation complete with the source server ID displayed.](http://docs.aws.amazon.com/mgn/latest/ug/images/sourceservers-linuxagent7.png)
 
    You can review this process in real time on the **Source servers** page. [Learn more about the initial sync process](migration-dashboard.md#initiation).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

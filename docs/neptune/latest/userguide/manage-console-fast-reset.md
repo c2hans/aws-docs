@@ -185,3 +185,7 @@ The response is:
 | `ReadOnlyViolationException` | 400 | Writes are not permitted on a read replica instance | A fast reset request was sent to a reader or status endpoint |
 | `AccessDeniedException` | 403 | Missing Authentication Token | A fast reset request was sent without correct signatures to a DB endpoint with IAM-Auth enabled |
 | `ServerShutdownException` | 500 | Database reset is in progress. Please retry the query after the cluster is available. | When fast reset begins, existing and incoming Gremlin/Sparql queries fail. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

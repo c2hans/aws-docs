@@ -82,3 +82,7 @@ To associate an IAM role with your cluster, do the following.
 1. Choose **Save changes** to associate the IAM role with the cluster.
 
 Amazon Redshift modifies the cluster to complete the change, and the IAM role to which you previously granted Amazon Redshift permissions is now associated with your Amazon Redshift cluster. Your users now have the required permissions to import Amazon Redshift data into SageMaker Canvas.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

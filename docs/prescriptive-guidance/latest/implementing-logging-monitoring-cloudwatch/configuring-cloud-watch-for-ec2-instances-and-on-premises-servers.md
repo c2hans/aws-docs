@@ -79,3 +79,7 @@ For example, you could aggregate the memory used against the InstanceType dimens
 The following diagram shows a sample CloudWatch metrics configuration that uses a custom namespace, added dimensions, and aggregation by InstanceType.
 
 ![Example CloudWatch metrics configuration with CloudWatch agent.](http://docs.aws.amazon.com/prescriptive-guidance/latest/implementing-logging-monitoring-cloudwatch/images/guide-img/b9e7cf06-b902-4bab-ad2d-f312917302bd/images/cf29b866-3341-414c-b3fd-14ae5e4982df.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

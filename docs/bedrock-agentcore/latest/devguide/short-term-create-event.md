@@ -40,6 +40,78 @@ For storing binary format data, such as images and documents, or data that is un
 **Note**
 Conversational and JSON payloads are extracted into long-term memory. Blob payloads are stored in short-term memory only and are not extracted.
 
+Because `payload` is a list, a single event can carry more than one payload item and mix payload types. The following example shows a JSON request body that stores a conversational message, a JSON activity log, and a binary blob (a base64-encoded image) in one event:
+
+ **Example – Multi-payload event request**
+
+```
+{
+  "memoryId": "mem-12345abcdef",
+  "actorId": "agent-support-123/customer-456",
+  "sessionId": "session-789",
+  "eventTimestamp": 1718806000000,
+  "payload": [
+    {
+      "conversational": {
+        "content": {
+          "text": "Here's a photo of the camera I'm interested in."
+        },
+        "role": "USER"
+      }
+    },
+    {
+      "json": {
+        "content": {
+          "eventType": "product_viewed",
+          "productId": "cam-9921",
+          "category": "action-cameras",
+          "priceUsd": 349.99
+        }
+      }
+    },
+    {
+      "blob": "iVBORw0KGgoAAAANSUhEUg..."
+    }
+  ]
+}
+```
+
+## Extraction configuration
+<a name="short-term-event-extraction-config"></a>
+
+Use the `extractionConfig` parameter to configure how long-term memory extraction behaves for this event. Use this parameter to pass custom namespace variable values that the service substitutes into `namespaceTemplates` during extraction.
+
+ **namespaceVariables**
+A map of custom namespace variable keys to their values. If you defined [custom namespace variables](specify-long-term-memory-organization.md#specify-custom-namespace-variables) with the `namespaceKeys` parameter when creating the memory, pass their values here so the service can resolve the namespace hierarchy for long-term memory storage. All keys and values must be lowercase.
+
+The following example shows how to pass custom namespace variable values when creating an event:
+
+```
+{
+  "memoryId": "mem-12345abcdef",
+  "actorId": "user456",
+  "sessionId": "session789",
+  "eventTimestamp": 1692804206123,
+  "payload": [
+    {
+      "conversational": {
+        "content": {"text": "I need help with my deployment."},
+        "role": "USER"
+      }
+    }
+  ],
+  "extractionConfig": {
+    "namespaceVariables": {
+      "orgname": "engineering",
+      "teamname": "backend"
+    }
+  }
+}
+```
+
+**Note**
+If required values in `extractionConfig` are missing or invalid, the `CreateEvent` operation still succeeds and the event is persisted in short-term memory. However, long-term memory extraction may not be initiated for affected strategies. Set up vended logs to monitor for extraction failures.
+
 ## Event branching
 <a name="short-term-event-branching"></a>
 
@@ -58,14 +130,16 @@ Here’s an example of creating a branched event to represent an edited message:
 ```
 {
   "memoryId": "mem-12345abcdef",
-  "actorId": "/agent-support-123/customer-456",
+  "actorId": "agent-support-123/customer-456",
   "sessionId": "session-789",
   "eventTimestamp": 1718806000000,
   "payload": [
     {
-      "Conversational": {
-        "content": "I'm looking for a waterproof action camera for extreme sports.",
-        "role": "user"
+      "conversational": {
+        "content": {
+          "text": "I'm looking for a waterproof action camera for extreme sports."
+        },
+        "role": "USER"
       }
     }
   ],
@@ -75,3 +149,7 @@ Here’s an example of creating a branched event to represent an edited message:
   }
 }
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

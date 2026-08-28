@@ -26,3 +26,7 @@ Regardless of the approach you choose, creating a custom framework involves a se
 For instructions on how to create a custom framework, see the following resources.
 + [Creating a custom framework from scratch in AWS Audit Manager](create-custom-frameworks-from-scratch.md)
 + [Making an editable copy of an existing framework in AWS Audit Manager](create-custom-frameworks-from-existing.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

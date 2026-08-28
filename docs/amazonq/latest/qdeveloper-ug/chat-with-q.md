@@ -113,3 +113,7 @@ The following are example questions that demonstrate how Amazon Q can help you b
 + Show me a bar chart of potential savings by optimization recommendation
 
 To help you get started, Q recommends prompts when you start a new conversation. You can also view the list of supported prompts in the prompt library. To view prompts in the prompt library, choose the book icon in the chat panel header.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ You can view AWS Service Catalog metrics in the Amazon CloudWatch console. The A
 1. In the **Metrics** section in the left navigation, choose **Service Catalog**.
 
 1. Choose the metrics to view.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

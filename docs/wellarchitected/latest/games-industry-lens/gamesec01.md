@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 + [GAMESEC01-BP03 Use least privilege role policies that are tailored to specific job functions](gamesec01-bp03-use-least-privilege-role-policies-that-are-tailored-to-specific-job-functions.md)
 + [GAMESEC01-BP04 Use roles and federated access policies together with account level access policies to grant access to your AWS resources](gamesec01-bp04.md)
 + [GAMESEC01-BP05 Use a central identity provider](gamesec01-bp05.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

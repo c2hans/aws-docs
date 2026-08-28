@@ -34,10 +34,11 @@ The AWS provided client stores the configuration files in the following location
 
 **Topics**
 + [AWS provided client event logs](#macos-troubleshooting-client-vpn-connect)
++ [Profiles or preferences missing after upgrade to version 6.0](#macos-troubleshooting-profiles-missing)
++ [Installation fails when downgrading from version 6.0 or later](#macos-troubleshooting-downgrade-install-failed)
 + [Client cannot connect](#macos-troubleshooting-client-vpn-cannot-connect)
 + [Client is stuck in a reconnecting state](#macos-troubleshooting-client-vpn-stuck)
 + [Client cannot create profile](#macos-troubleshooting-client-vpn-cannot-create-profile)
-+ [Profiles or preferences missing after upgrade to version 6.0](#macos-troubleshooting-profiles-missing)
 + [Helper tool is required error](#macos-troubleshooting-helper-tool)
 + [Tunnelblick](#macos-troubleshooting-tunnelblick)
 + [Cipher algorithm 'AES-256-GCM' not found](#tunnelblick-cipher)
@@ -46,6 +47,42 @@ The AWS provided client stores the configuration files in the following location
 + [Expired certificate](#tunnelblick-certificate-expired)
 + [OpenVPN](#macos-troubleshooting-openvpn)
 + [Cannot resolve DNS](#macos-openvpn-dns)
+
+## Profiles or preferences missing after upgrade to version 6.0
+<a name="macos-troubleshooting-profiles-missing"></a>
+
+**Problem**
+After upgrading the AWS provided client to version 6.0 or later, one or more previously configured VPN profiles do not appear in the client, and preferences might be reset to their defaults.
+
+**Cause**
+Version 6.0 introduced a new architecture that stores configuration data in a new system-wide location. On first launch, the client automatically migrates profiles and preferences from the previous location. Migration is best-effort: if an individual profile cannot be migrated, it is skipped and the remaining profiles are still migrated. The client does not delete your original `.ovpn` configuration files.
+
+To find which profile was not migrated and why, look for the following entry in the daemon log.
+
+```
+Skipping profile due to migration error (partial migration)
+```
+
+**Solution**
+Download a new endpoint configuration file from your Client VPN endpoint and re-import it. For instructions on how to download the configuration file, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*. For instructions on how to add a profile, see [Connect to AWS Client VPN with an AWS provided client for macOS](client-vpn-connect-macos-connecting-how.md).
+
+If you cannot locate your endpoint or do not have access to the self-service portal, contact your VPN administrator to obtain a new configuration file.
+
+## Installation fails when downgrading from version 6.0 or later
+<a name="macos-troubleshooting-downgrade-install-failed"></a>
+
+**Problem**
+You have version 6.0 or later of the AWS provided client installed, and you try to install an earlier version (for example, 5.x) on top of it. The installer displays the following message and the installation does not complete.
+
+```
+The Installer encountered an error that caused the installation to fail. Contact the software manufacturer for assistance.
+```
+
+**Cause**
+The AWS provided client does not support installing an earlier version over a newer one (a downgrade), and doing so can leave the client in an unexpected state.
+
+**Solution**
+Install the latest version of the AWS provided client again to restore a working client. To move to an earlier version, first use the Uninstall AWS VPN Client application to remove the client. Then install the older version you want.
 
 ## Client cannot connect
 <a name="macos-troubleshooting-client-vpn-cannot-connect"></a>
@@ -93,20 +130,6 @@ If the Client VPN endpoint uses mutual authentication, the configuration (.ovpn)
 
 **Solution**
 Ensure that your Client VPN administrator adds the client certificate and key to the configuration file. For more information, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*.
-
-## Profiles or preferences missing after upgrade to version 6.0
-<a name="macos-troubleshooting-profiles-missing"></a>
-
-**Problem**
-After upgrading the AWS provided client to version 6.0 or later, previously configured VPN profiles do not appear in the client, and preferences might be reset to their defaults.
-
-**Cause**
-Version 6.0 introduced a new architecture that stores configuration data in a new system-wide location. On first launch, the client attempts to automatically migrate profiles and preferences from the previous location, but this migration can fail in some cases. The client does not delete your original `.ovpn` configuration files.
-
-**Solution**
-Download a new endpoint configuration file from your Client VPN endpoint and re-import it. For instructions on how to download the configuration file, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*. For instructions on how to add a profile, see [Connect to AWS Client VPN with an AWS provided client for macOS](client-vpn-connect-macos-connecting-how.md).
-
-If you cannot locate your endpoint or do not have access to the self-service portal, contact your VPN administrator to obtain a new configuration file.
 
 ## Helper tool is required error
 <a name="macos-troubleshooting-helper-tool"></a>
@@ -273,3 +296,7 @@ OpenVPN Connect is unable to resolve the Client VPN DNS name.
 
 **Solution**
 See the solution for [Unable to Resolve Client VPN Endpoint DNS Name](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/troubleshooting.html#resolve-host-name) in the *AWS Client VPN Administrator Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

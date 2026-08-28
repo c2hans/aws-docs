@@ -55,3 +55,7 @@ An example of replaying an asynchronous workflow is provided in [AWS Flow Framew
 For the most part, you don't need to be concerned with the details of the replay mechanism. It is basically something that happens behind the scenes. However, replay has two important implications for your workflow implementation.
 + Do not use workflow methods to perform long-running tasks, because replay will repeat that task multiple times. Even asynchronous workflow methods typically run more than once. Instead, use activities for long running tasks; replay executes activities only once.
 + Your workflow logic must be completely deterministic; every episode must take the same control flow path. For example, the control flow path should not depend on the current time. For a detailed description of replay and the determinism requirement, see [Nondeterminism](details.md#details.non).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

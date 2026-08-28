@@ -404,3 +404,7 @@ After you deregister from Audit Manager, the service will stop using the service
 <a name="slr-regions"></a>
 
 AWS Audit Manager supports using service-linked roles in all of the AWS Regions where the service is available. For more information, see [AWS service endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

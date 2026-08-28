@@ -11,3 +11,7 @@ If a request is made for an audience that does not exist on the channel, MediaTa
 
 **Example Getting a manifest for an audience**
 `https:// prefix>.channel-assembly.mediatailor.us-west-2.amazonaws.com/v1/channel/ExampleChannel/index_dash.mpd?aws.mediatailor.channel.{{audienceId}}=Seattle`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

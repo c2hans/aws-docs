@@ -296,3 +296,7 @@ In this step, you'll create an Amazon EMR Studio in the EMR Studio console and u
    1. Run Athena queries with the Query Editor.
 
    1. Run Spark jobs in the workspace using Jupyter notebook.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

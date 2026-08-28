@@ -8,3 +8,7 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkMa
 <a name="enable-interop"></a>
 
 Interoperability allows you to migrate from Microsoft Exchange and to use Amazon WorkMail as a subset of your corporate mailboxes. For more information, including how-to steps, see [Configure availability settings on Amazon WorkMail](enable_interop_wm.md) in the *Getting started* section of this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

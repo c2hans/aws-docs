@@ -21,3 +21,7 @@ Review templates can be shared with users or accounts, or they can be shared wit
 
 **Important**
 Before sharing a profile with an organization or organizational unit (OU), you must [enable AWS Organizations access](sharing.md#getting-started-sharing-orgs).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

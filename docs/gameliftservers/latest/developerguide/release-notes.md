@@ -22,7 +22,7 @@ Amazon GameLift Servers SDKs and plugins are open source. See [Get Amazon GameLi
   <tr><th></th><th>C++</th><th>C#</th><th>Unity (C#)</th><th>C++</th><th>Unreal (C++)</th><th>Go</th><th></th><th></th><th>C++</th><th>Unreal (C++)</th><th>C#</th><th>Unity (C#)</th><th></th></tr>
 </thead>
 <tbody>
-  <tr><td><a href="#release-notes-08042026">August 4, 2026 release notes</a></td><td><a href="https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.762">1.11.762</a> or later on GitHub</td><td>5.5.0</td><td>5.5.0</td><td>5.6.0</td><td>5.6.0</td><td>5.5.0</td><td>3.4.0</td><td>3.3.0</td><td>1.0.1</td><td>1.0.1</td><td>1.0.0</td><td>1.0.0</td><td>1.2.0</td></tr>
+  <tr><td><a href="#release-notes-08042026">August 4, 2026 release notes</a></td><td><a href="https://github.com/aws/aws-sdk-cpp/releases/tag/1.11.762">1.11.762</a> or later on GitHub</td><td>5.5.1</td><td>5.5.1</td><td>5.6.0</td><td>5.6.0</td><td>5.6.0</td><td>3.4.0</td><td>3.3.1</td><td>1.0.1</td><td>1.0.1</td><td>1.0.0</td><td>1.0.0</td><td>1.2.0</td></tr>
 </tbody>
 </table>
 
@@ -111,6 +111,14 @@ Amazon GameLift Servers SDKs and plugins are open source. See [Get Amazon GameLi
 <a name="release-notes-summary"></a>
 
 The following release notes are in chronological order, with the latest updates listed first. Amazon GameLift Servers was first released in 2016. For release notes dated earlier than those listed here, see the release date links in [SDK versions](#release-notes-history).
+
+### August 25, 2026: Amazon GameLift Servers Enhanced DDoS Protection
+<a name="release-notes-08252026"></a>
+
+Amazon GameLift Servers now offers an additional layer of distributed-denial-of-service (DDoS) protection for Linux-based EC2 and Container Fleets on SDKv5. Amazon GameLift Servers Enhanced DDoS Protection leverages the resiliency of the AWS network and provides automatic protections that we have tuned and proven effective for protecting gaming workloads from common network and transport layer attacks. This feature is enabled by default with no configuration required and no additional cost.
+
+****Learn more:****
++ [DDoS protection with Amazon GameLift Servers](ddos-protection-intro.md), *Amazon GameLift Servers Developer Guide*
 
 ### August 6, 2026: Amazon GameLift Servers adds 21 latest-generation EC2 instance types
 <a name="release-notes-08062026"></a>
@@ -1322,3 +1330,7 @@ Amazon GameLift Servers resources can now be created and managed through CloudFo
 **Learn more:**
 + [Amazon GameLift Servers resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_GameLift.html) in the *AWS CloudFormation User Guide*
 + [Manage Amazon GameLift Servers hosting resources using CloudFormation](resources-cloudformation.md) in the *Amazon GameLift Servers Developer Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

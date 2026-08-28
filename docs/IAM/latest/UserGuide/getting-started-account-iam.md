@@ -46,3 +46,7 @@ Activating IAM access alone doesn't grant any permissions for users or roles to 
 1. On the **Add permissions** page for the role, add permissions to list and view details about the Billing resources in your AWS account.
 
    The AWS managed policy [Billing](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/managed-policies.html#security-iam-awsmanpol-Billing) grants users permission to view and edit the Billing and Cost Management console. This includes viewing account usage, modifying budgets and payment methods. For more policy examples that you can attach to IAM roles to control access to your account’s billing information, see [AWS Billing policy examples](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-example-policies.html) in the *Billing and Cost Management User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

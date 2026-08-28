@@ -44,3 +44,7 @@ The following list provides an overview of the available frameworks so that you 
 + [PCI DSS V3.2.1](PCI.md)
 + [PCI DSS V4.0](pci-v4.md)
 + [SSAE-18 SOC 2](SOC2.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

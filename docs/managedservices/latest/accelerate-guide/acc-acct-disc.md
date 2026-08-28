@@ -22,3 +22,7 @@ To help you with the analysis and discovery of your account, AMS performs operat
 | Amazon EC2 Instance Evaluation | Identifies EC2 instances in your AWS account that are not running AWS Systems Manager Agent (SSM Agent) and that are not supported by AMS. |  + `EC2:DescribeInstances`<br />+ `EC2:DescribeImages`<br />+ `SSM:DescribeInstanceInformation`  |
 
 AMS Accelerate follows industry best practices to meet and maintain compliance eligibility. AMS Accelerate Discovery access to your account is recorded in AWS CloudTrail through the [AWSServiceRoleForSupport service-linked role](https://docs.aws.amazon.com/awssupport/latest/user/using-service-linked-roles-sup.html). This helps with monitoring and auditing requirements. For information about AWS CloudTrail, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,3 +45,7 @@ where:
 + **Step 1: Pull request (PR) merge**. A developer commits changes to Kubernetes manifests or Helm charts that are stored in a Git repository. When the PR has been reviewed and merged into the main branch, the desired state of the application is updated in source control.
 + **Step 2: Repository sync**. Weave GitOps runs within the Flux namespace in the EKS cluster and continuously monitors the configured Git repository. When it detects changes, it pulls the latest updates to reconcile the declared state.
 + **Step 3: Deployment to target namespace**. Weave GitOps compares the desired state from Git with the live state in the cluster. It then applies the necessary changes to the target workload namespace so that the application is deployed or updated accordingly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -79,3 +79,7 @@ We recommend the following approach to choosing the right table distribution sty
 |
 | Note: If you use automatic table optimization, you don't need to choose the distribution style of your table. For more information, see [Working with automatic table optimization](https://docs.aws.amazon.com/redshift/latest/dg/t_Creating_tables.html) in the Amazon Redshift documentation. To have Amazon Redshift choose the appropriate distribution style, specify `AUTO` for the distribution style. |
 | --- |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

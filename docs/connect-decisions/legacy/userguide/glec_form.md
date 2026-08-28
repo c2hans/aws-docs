@@ -37,3 +37,7 @@ To send a transport emissions data request form, follow the procedure below:
 1. Under **Selected partners**, choose **Send data request**.
 
 1. If the formatting in the .csv file is not in the correct format, the system automatically changes the data request *Status* to *Rework requested*. You can select the data request to view the information that needs to be reworked.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

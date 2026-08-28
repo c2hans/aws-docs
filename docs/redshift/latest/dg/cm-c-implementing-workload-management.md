@@ -94,3 +94,7 @@ With query priorities, when only the analytics workload is running on the cluste
 The timeout field is not available in automatic WLM. Instead, use the QMR rule, `query_execution_time`. For more information, see [WLM query monitoring rules](cm-c-wlm-query-monitoring-rules.md).
 The QMR action, HOP, is not applicable to automatic WLM. Instead, use the `change priority` action. For more information, see [WLM query monitoring rules](cm-c-wlm-query-monitoring-rules.md).
 Clusters use automatic WLM and manual WLM queues differently, which can lead to confusion with your configurations. For example, you can configure the priority property in automatic WLM queues but not in manual WLM queues. As such, avoid mixing automatic WLM queues and manual WLM queues within a parameter group. Instead, create a new parameter group when migrating to automatic WLM.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,3 +27,7 @@ Key advantages of transitioning from VMware to the AWS Cloud include the followi
 + **Faster time to market** – Rehosting accelerates cloud migration, enabling rapid deployment of new features and services to meet evolving business requirements and customer demands.
 
 The [AWS global infrastructure](https://aws.amazon.com/about-aws/global-infrastructure/) is built with industry-leading security measures and compliance standards to support customer workloads that require various regulatory compliance certifications. For more information about these security responsibilities, see the [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/shared-responsibility-model/) documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

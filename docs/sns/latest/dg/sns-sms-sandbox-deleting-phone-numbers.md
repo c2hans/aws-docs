@@ -27,3 +27,7 @@ You can only delete a phone number 24 hours after [verifying the phone number](s
    Ensure that 24 hours or more have passed since you verified or attempted to verify the destination phone number before proceeding with the deletion.
 
 1. Repeat these steps in each Region where you added the destination phone number and no longer plan to use it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

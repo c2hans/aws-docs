@@ -117,3 +117,7 @@ SageMaker Clarify jobs support distributed processing when two or more processin
 + **SageMaker Python SDK**: The `instance_count` is specified when using the [SageMakerClarifyProcessor](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) API or the [Processor](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_core.html) API.
 
 In distributed processing, you must allow communication between the different instances in the same processing job. To do that, configure a rule for your security group that allows inbound connections between members of the same security group. For information, see [Security group rules](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_SecurityGroups.html#SecurityGroupRules).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

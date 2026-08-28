@@ -116,3 +116,7 @@ When you use the `SendDataToWirelessDevice` API operation, the API returns a uni
 
 **Missing ARN error when sending downlink message**
 When sending a downlink message to your device from the queue, you can receive a missing Amazon Resource Name (ARN) error. This error might occur because the destination hasn't been specified correctly for the device that's receiving the downlink message. To resolve this error, check the destination details for your device.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

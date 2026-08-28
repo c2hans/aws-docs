@@ -129,3 +129,7 @@ Connecting services with **events** and **event-driven architecture** gives you 
 <a name="transition_next-steps"></a>
 + See [What is EDA?](https://aws.amazon.com/what-is/eda/) for advantages of a decoupled architecture.
 + Learn more about the advantages of modernizing monolithic applications in the [AWS Prescriptive Guidance enabling data persistence in microservices](https://docs.aws.amazon.com/prescriptive-guidance/latest/modernization-data-persistence/welcome.html) reference document.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

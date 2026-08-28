@@ -20,3 +20,7 @@ The following diagram shows a simple example of a small company. The company own
 ![Example of relationship between AWS accounts, users, and IAM groups.](http://docs.aws.amazon.com/IAM/latest/UserGuide/images/Relationship_Between_Entities_Example.diagram.png)
 
 After you create a user group, you can [View IAM groups](id_groups_manage_list.md), [Attach a policy to an IAM user group](id_groups_manage_attach-policy.md), and [Rename an IAM user group](id_groups_manage_rename.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

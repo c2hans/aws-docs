@@ -24,3 +24,7 @@ Use the phone number management **Inventory** page to assign Amazon Chime Busine
 1. Select the user, then choose **Assign**.
 
 When you change a phone number or phone number permissions, we recommend providing the user with their new or permissions information. Before users can access their new phone number or permissions features, they must sign out of their Amazon Chime account and sign in again.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

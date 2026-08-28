@@ -32,3 +32,7 @@ Limits the number of concurrent operations that can access the table index cache
 | db.influx.4xlarge | 16 | 24–32 |
 | db.influx.8xlarge | 32 | 32–48 |
 | db.influx.12xlarge\+ | 48\+ | 48–100 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

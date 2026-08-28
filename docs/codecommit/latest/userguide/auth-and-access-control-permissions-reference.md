@@ -278,3 +278,7 @@ Use the scroll bars to see the rest of the table.
 | UploadArchive | `codecommit:UploadArchive`<br />Required to allow the service role for CodePipeline to upload repository changes into a pipeline. This is an IAM policy permission only, not an API action that you can call. | arn:aws:codecommit:{{region}}:{{account-id}}:{{repository-name}} |
 | GetUploadArchiveStatus | `codecommit:GetUploadArchiveStatus`<br />Required to determine the status of an archive upload: whether it is in progress, complete, cancelled, or if an error occurred. This is an IAM policy permission only, not an API action that you can call. | arn:aws:codecommit:{{region}}:{{account-id}}:{{repository-name}} |
 | CancelUploadArchive | codecommit:CancelUploadArchiveRequired to cancel the uploading of an archive to a pipeline. This is an IAM policy permission only, not an API action that can be called. | arn:aws:codecommit:{{region}}:{{account-id}}:{{repository-name}} |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

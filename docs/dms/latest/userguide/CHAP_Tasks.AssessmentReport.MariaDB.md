@@ -416,3 +416,7 @@ For more information, see [Using a self-managed MySQL-compatible database as a s
 This premigration assessment validates whether views are used, as AWS DMS does not support views migration for MariaDB.
 
 For more information, see [Limitations on using a MySQL database as a source for AWS DMS](CHAP_Source.MySQL.md#CHAP_Source.MySQL.Limitations).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

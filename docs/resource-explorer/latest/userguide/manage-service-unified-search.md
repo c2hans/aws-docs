@@ -19,3 +19,7 @@ The account resources you can view in your Unified Search results depend on the 
 Unified Search always uses the default view in the AWS Region that contains the aggregator index to perform all searches when present.
 
 For more information about resourcer views, see [Permission tiers and user experiences](manage-immediate-resource-discovery-experience.md#immediate-permission-tiers).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resource Explorer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resource-explorer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ For AWS Data Exchange products, the FDP only applies to products with a public o
 For AWS Data Exchange products that have subscription verification enabled, providers need to approve the subscription request. For more information about subscription verification, see [Subscription verification for subscribers](https://docs.aws.amazon.com/data-exchange/latest/userguide/subscription-verification-sub.html) in the *AWS Data Exchange User Guide*.
 
 You're automatically enrolled in the FDP program when you sign up as an AWS Marketplace seller. To opt out, submit a support request to the [AWS Marketplace Seller Operations](https://aws.amazon.com/marketplace/management/contact-us/) team.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

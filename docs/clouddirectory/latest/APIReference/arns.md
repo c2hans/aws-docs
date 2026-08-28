@@ -37,3 +37,7 @@ The following examples are separated by ARN types and show how they can be const
 - **Directory Arn**
   - **Format or example:** Format / **Arn:** arn:aws:clouddirectory:us-west-2:{{Directory owner accountId}}:directory/{{directoryId}}
   - **Format or example:** Example / **Arn:** arn:aws:clouddirectory:us-west-2:12345678910:directory/ARIqk1HD-UjdtmcIrJHEvPI
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

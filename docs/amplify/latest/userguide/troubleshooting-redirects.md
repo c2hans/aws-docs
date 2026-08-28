@@ -43,3 +43,7 @@ You can use the following JSON to set up a reverse proxy to a dynamic endpoint.
 ```
 
 For a basic example of creating a reverse proxy for your Amplify app to a third-party API, see [Reverse proxy rewrite](redirect-rewrite-examples.md#reverse-proxy-rewrite).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

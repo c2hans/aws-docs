@@ -116,3 +116,7 @@ In this configuration, you first create a cluster with a cluster-dedicated KDC t
 Multiple clusters can use the same KDC in the same Kerberos realm. However, if the clusters concurrently run, then the clusters might fail if they use Kerberos ServicePrincipal names that conflict.
 
 If you have multiple concurrent clusters with the same external KDC, then ensure that the clusters use different Kerberos realms. If the clusters must use the same Kerberos realm, then ensure that the clusters are in different subnets, and that their CIDR ranges don’t overlap.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

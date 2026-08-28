@@ -63,3 +63,7 @@ The following table lists the elements returned in the response groups other tha
 | `HITDetail` | `AssignmentDurationInSeconds`<br />`AutoApprovalDelayInSeconds`<br />`CreationTime`<br />`Description`<br />`Expiration`<br />`Keywords`<br />`HITGroupId`<br />`HITLayoutId`<br />`HITReviewStatus`<br />`HITStatus`<br />`MaxAssignments`<br />`QualificationRequirement`<br />`RequesterAnnotation`<br />`Reward`<br />`Title`<br />For more information on these elements, see the [HIT](ApiReference_HITDataStructureArticle.md) data structure.  |
 | `HITQuestion` | `Question`<br />For more information on this elements, see the [HIT](ApiReference_HITDataStructureArticle.md) data structure.  |
 | `Parameters` | `Statistic`<br />`TimePeriod` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

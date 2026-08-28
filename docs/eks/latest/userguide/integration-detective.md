@@ -32,3 +32,7 @@ Before you can review findings, Detective must be enabled for at least 48 hours 
 1. Enter the cluster name or ARN and then choose **Search**.
 
 1. In the search results, choose the name of the cluster that you want to view activity for. For more information about what you can view, see [Overall Kubernetes API activity involving an Amazon EKS cluster](https://docs.aws.amazon.com/detective/latest/userguide/profile-panel-drilldown-kubernetes-api-volume.html) in the *Amazon Detective User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

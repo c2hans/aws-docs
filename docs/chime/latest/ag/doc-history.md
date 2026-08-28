@@ -41,3 +41,7 @@ The following table describes important changes to the *Amazon Chime Administrat
 | [Request user attachments](#doc-history) | Receive attachments uploaded into Amazon Chime by users. For more information, see [Request user attachments](https://docs.aws.amazon.com/chime/latest/ag/request-attachments.html), in the Amazon Chime Administrator Guide. | April 23, 2018 |
 | [View additional report data](#doc-history) | View additional report data. For more information, see [View reports](https://docs.aws.amazon.com/chime/latest/ag/view-reports.html), in the Amazon Chime Administrator Guide. | March 30, 2018 |
 | [Assign users Pro or Basic permissions](#doc-history) | Assign users Pro or Basic permissions. For more information, see [Manage user access and permissions](https://docs.aws.amazon.com/chime/latest/ag/manage-access.html), in the Amazon Chime Administrator Guide. | March 29, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -210,3 +210,7 @@ The standard Swift library `Foundation` is also imported because it's used by ma
 <a name="setup-nextsteps"></a>
 
 Now that your tools and environment are ready for you to begin developing with AWS SDK for Swift, see [Getting started with the AWS SDK for Swift](getting-started.md), which demonstrates how to create and build a Swift project using AWS services.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Swift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-swift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

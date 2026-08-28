@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Use Amazon GameLift to host your game servers and use the [out-of-the-box game server auto scaling capabilities](https://docs.aws.amazon.com/gamelift/latest/developerguide/fleets-manage-capacity.html) to manage this scaling process for you.
 
  The automatic scaling capabilities of Amazon GameLift are aware of active player sessions and can be configured to block the termination or scale-in of game server instances that are actively hosting players. For more information, see [Monitor Amazon GameLift Servers with Amazon CloudWatch](https://docs.aws.amazon.com/gamelift/latest/developerguide/monitoring-cloudwatch.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

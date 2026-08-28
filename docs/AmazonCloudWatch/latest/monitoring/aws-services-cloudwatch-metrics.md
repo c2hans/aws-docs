@@ -182,3 +182,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aws-s
 | Amazon WorkMail | `AWS/WorkMail` | [ Monitoring Amazon WorkMail with Amazon CloudWatch](https://docs.aws.amazon.com/workmail/latest/adminguide/monitoring-workmail-cloudwatch.html) |
 | Amazon WorkSpaces | `AWS/WorkSpaces` | [Monitor Your WorkSpaces Using CloudWatch Metrics](https://docs.aws.amazon.com/workspaces/latest/adminguide/cloudwatch-metrics.html) |
 | Amazon WorkSpaces Web | `AWS/WorkSpacesWeb` | [ Monitoring Amazon WorkSpaces Web with Amazon CloudWatch](https://docs.aws.amazon.com/workspaces-web/latest/adminguide/monitoring-cloudwatch.html) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

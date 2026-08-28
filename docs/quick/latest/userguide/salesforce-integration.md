@@ -182,3 +182,7 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **OAuth validation fails** – Verify that PKCE is enabled on the ECA and that the Callback URL exactly matches your Amazon Quick instance URL with `/sn/oauthcallback` appended.
 + **Missing scopes error** – Go back to the ECA configuration in Salesforce and ensure all required OAuth scopes are in the **Selected** list, not still in **Available**.
 + **"Connected App" option greyed out** – This is expected after Salesforce Spring '26. Use an External Client App instead. ECAs are the supported replacement.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

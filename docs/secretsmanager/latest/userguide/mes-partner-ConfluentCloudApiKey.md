@@ -6,7 +6,7 @@ source_url: https://docs.aws.amazon.com/secretsmanager/latest/userguide/mes-part
 <a name="mes-partner-ConfluentCloudApiKey"></a>
 
 ## Secret Value Fields
-<a name="w2aac27c11c15b3"></a>
+<a name="w2aac27c11c17b3"></a>
 
 The following are the fields that must be contained in the Secrets Manager secret:
 
@@ -36,7 +36,7 @@ environmentId
 (Optional) The Confluent Cloud Environment ID, for example `env-abcde`. Used when creating cluster-scoped keys.
 
 ## Secret Metadata Fields
-<a name="w2aac27c11c15b5"></a>
+<a name="w2aac27c11c17b5"></a>
 
 The following are the metadata fields for Confluent Cloud API Key:
 
@@ -50,7 +50,7 @@ adminSecretArn
 (Optional) The Amazon Resource Name (ARN) for the secret that contains the administrative Confluent Cloud API Key credentials used to rotate this secret. The admin API key must have CloudClusterAdmin or OrganizationAdmin role to create and delete API keys for Service Accounts. If omitted, the user secret's own credentials are used for self-rotation.
 
 ## Usage Flow
-<a name="w2aac27c11c15b7"></a>
+<a name="w2aac27c11c17b7"></a>
 
 The rotation supports two modes. In self-rotation mode (default), the user secret's own `apiKey`/`apiSecret` are used to authenticate Confluent API calls for key creation and deletion. The user secret's API key must have sufficient permissions to manage its own Service Account's keys. In admin-secret mode, a separate admin secret containing `apiKey`/`apiSecret` with admin permissions is used instead.
 
@@ -59,3 +59,7 @@ You can create your secret using the [CreateSecret](https://docs.aws.amazon.com/
 For customers opting to rotate their secrets using a separate set of admin credentials, create the Admin Secret in AWS Secrets Manager containing the admin `apiKey` and `apiSecret`. You must provide the ARN of this Admin Secret in the rotation metadata in a [RotateSecret](https://docs.aws.amazon.com/secretsmanager/latest/apireference/API_RotateSecret.html) call for your API key secret.
 
 During rotation, the driver creates a new API key for the target Service Account via the Confluent Cloud API, verifies the new key, updates the secret with new credentials, and deletes the old API key.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

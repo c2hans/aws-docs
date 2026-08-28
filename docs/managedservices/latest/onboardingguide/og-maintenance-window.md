@@ -12,3 +12,7 @@ You will want to create a maintenance window that considers different applicatio
 + Schedule a window outside of regular business hours and when the least traffic is expected on production servers.
 + Typically, infrastructure stacks require monthly updates.
 + Schedule a maintenance window for at least 300 minutes. Operating system patching takes 60-90 minutes, infrastructure stack patching takes 180-300 minutes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

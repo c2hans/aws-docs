@@ -16,3 +16,7 @@ Although bringing your own license might be more cost effective from a license p
 For Microsoft operating systems and software, we recommend that you take advantage of an [AWS Optimization and Licensing Assessment (AWS OLA)](https://aws.amazon.com/optimization-and-licensing-assessment/) to assess on-premises or cloud workloads. AWS OLA makes optimized suggestions for the right EC2 instances for your workloads, but it also reviews your Microsoft licensing position. AWS OLA can help you reduce compute and licensing costs.
 
 For more information about Microsoft licensing requirements and how to request a copy of your Microsoft License Statement (MLS), see [Microsoft licensing on AWS](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-microsoft-workloads-aws/licensing-microsoft-workloads.html) in AWS Prescriptive Guidance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,3 +10,7 @@ AWS Migration Hub is no longer open to new customers as of November 7, 2025. For
 Migration Hub is integrated with AWS CloudTrail. You can use CloudTrail to log, continuously monitor, and retain account activity for troubleshooting and auditing purposes. CloudTrail provides an event history of your AWS account activity, including actions taken through the AWS Management Console, AWS SDKs, command line tools.
 
 To learn more about using CloudTrail with Migration Hub, see [Logging Migration Hub API calls with AWS CloudTrail](logging-using-cloudtrail.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

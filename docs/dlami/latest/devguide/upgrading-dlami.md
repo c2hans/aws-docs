@@ -23,3 +23,7 @@ When attaching and moving Amazon EBS volumes between DLAMIs, you must have both 
 1. Attach the Amazon EBS volume to your new DLAMI. Follow the instructions from the Step 2 to attach the volume.
 
 1. After you verify that your data is available on your new DLAMI, stop and terminate your old DLAMI. For detailed clean-up instructions, see [Cleaning up a DLAMI instance](setup-cleanup.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

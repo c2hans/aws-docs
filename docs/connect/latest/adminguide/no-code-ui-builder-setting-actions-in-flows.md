@@ -14,3 +14,7 @@ In step-by-step guides, users must choose a button to proceed to a new page in g
 The following image shows an example of the **Action** section in the **Customize** panel of the no-code builder.
 
 ![The Action section of the Customize panel in the no-code UI builder.](http://docs.aws.amazon.com/connect/latest/adminguide/images/no-code-ui-builder-setting-actions-in-flows-example.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

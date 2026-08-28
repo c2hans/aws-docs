@@ -60,3 +60,7 @@ st_makeline
 -----------
  010200000008000000C3F5285C8F52534052B81E85EB113D407B14AE47E15A5340C3F5285C8F423D40E17A14AE475153408FC2F5285C4F3D40C3F5285C8F52534052B81E85EB113D40C3F5285C8F125640295C8FC2F58843407B14AE47E11A5640E17A14AE47A14340E17A14AE4711564048E17A14AEA74340C3F5285C8F125640295C8FC2F5884340
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

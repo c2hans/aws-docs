@@ -27,3 +27,7 @@ You can grant users, groups, or roles full control or read-only access to AWS We
 1. To grant read-only access, apply the ** WellArchitectedConsoleReadOnlyAccess** managed policy to the permission set or role. Principals with this role can only view resources.
 
 For more information on these policies, see [AWS managed policies for AWS Well-Architected Tool](security-iam-awsmanpol.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

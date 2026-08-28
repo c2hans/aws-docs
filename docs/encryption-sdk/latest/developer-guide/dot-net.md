@@ -54,3 +54,7 @@ The AWS Encryption SDK for .NET requires the SDK for .NET even if you aren't usi
 The AWS Encryption SDK for .NET does not generate any logs. Exceptions in the AWS Encryption SDK for .NET generate an exception message, but no stack traces.
 
 To help you debug, be sure to enable logging in the SDK for .NET. The logs and error messages from the SDK for .NET can help you distinguish errors arising in the SDK for .NET from those in the AWS Encryption SDK for .NET. For help with SDK for .NET logging, see [AWSLogging](https://docs.aws.amazon.com/sdk-for-net/v4/developer-guide/net-dg-config-other.html#config-setting-awslogging) in the *AWS SDK for .NET Developer Guide*. (To see the topic, expand the **Open to view .NET Framework content** section.)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

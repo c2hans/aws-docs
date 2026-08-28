@@ -55,3 +55,7 @@ Consider the following recommendations when using linked servers with Teradata O
 RDS for SQL Server currently doesn't replicate linked servers to the mirrored database server (or Always-On availability group secondary server) in a Multi-AZ deployment. If the linked servers are added before the configuration is changed to add mirroring or Always-On, then the linked servers are copied for the existing linked servers.
 
 Alternatively, you can create the linked servers on the primary instance, fail over to the high availability server instance and then create the linked servers again so that they are on both RDS for SQL Server instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

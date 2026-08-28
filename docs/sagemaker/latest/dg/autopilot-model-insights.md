@@ -239,3 +239,7 @@ The residual histogram shows the distribution of standardized residual values. A
 In the following graphic, the standardized residual values indicate that the model is fitting the data well. If the graph showed values far away from the center value, it would indicate that those values don't fit the model well.
 
 ![Standardized residual value close to zero, indicating that the model fits the data well.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/autopilot/autopilot-model-insights-residual-histogram.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

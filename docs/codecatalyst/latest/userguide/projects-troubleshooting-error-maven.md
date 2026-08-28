@@ -49,3 +49,7 @@ COPY —from=builder target/CustomerService-0.0.1.jar CustomerService-0.0.1.jar
 EXPOSE 80
 CMD ["java","-jar","-Dspring.profiles.active=prod","/CustomerService-0.0.1.jar", "—server.port=80"]
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

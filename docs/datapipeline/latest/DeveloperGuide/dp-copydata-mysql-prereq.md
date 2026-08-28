@@ -26,3 +26,7 @@ Make a note of the user name and the password you used for creating the MySQL in
   For more information, see [Create a Table](https://dev.mysql.com/doc/refman/8.0/en/creating-tables.html) in the MySQL documentation and the [MySQL Workbench product page](http://www.mysql.com/products/workbench/).
 + Create a topic for sending email notification and make a note of the topic Amazon Resource Name (ARN). For more information, see [Create a Topic](https://docs.aws.amazon.com/sns/latest/gsg/CreateTopic.html) in *Amazon Simple Notification Service Getting Started Guide*.
 + (Optional) This tutorial uses the default IAM role policies created by AWS Data Pipeline. If you would rather create and configure your IAM role policy and trust relationships, follow the instructions described in [IAM Roles for AWS Data Pipeline](dp-iam-roles.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

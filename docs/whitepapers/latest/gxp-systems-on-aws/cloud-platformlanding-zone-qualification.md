@@ -112,3 +112,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/cl
 <a name="performance-monitoring"></a>
 
  Amazon CloudWatch is a monitoring service for AWS Cloud resources and the applications you run on AWS. You can use CloudWatch to collect and track metrics, collect, and monitor log files, set alarms, and automatically react to changes in customer AWS resources. CloudWatch monitors and logs the behavior of the customer application landscape. CloudWatch can also trigger events based on the behavior of your application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

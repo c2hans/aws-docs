@@ -399,3 +399,7 @@ DATAPOINTS	0.0	2024-08-02T22:20:00+00:00	None
  During application development and debugging, don't leave client sessions or programming tools with connections open to the database. Aurora won't pause an instance if there are any user-initiated connections open, regardless of whether the connections aren't running any SQL statements or transactions. When one Aurora serverless instance in an Aurora cluster can't pause, other instances in the cluster might also be prevented from pausing. For more information, see [Situations where Aurora serverless doesn't auto-pause](#auto-pause-whynot).
 
  Aurora emits events when an Aurora serverless DB instance begins resuming, finishes resuming, and if the instance can't resume for some reason. For details about these events, see [DB instance events](USER_Events.Messages.md#USER_Events.Messages.instance).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

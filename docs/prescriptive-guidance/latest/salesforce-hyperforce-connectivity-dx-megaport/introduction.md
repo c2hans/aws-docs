@@ -24,3 +24,7 @@ This guide describes use cases to help Salesforce Hyperforce and AWS users confi
 [Megaport](https://www.megaport.com/) is an SDN platform and Direct Connect partner. Megaport provides a variety of network connectivity options for users who want fast, reliable connectivity to AWS and other cloud providers.
 
 This guide is for practitioners, architects, administrators, and operators of networking, cloud infrastructure, and Salesforce Hyperforce.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

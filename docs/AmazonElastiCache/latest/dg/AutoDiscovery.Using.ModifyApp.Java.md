@@ -66,3 +66,7 @@ public class TLSDemo {
 ```
 
 For more information about connecting with TLS, see [Creating a TLS Memcached client using Java](in-transit-encryption.md#in-transit-encryption-connect-java). For a Serverless cache, use the cache's Serverless endpoint on port 11211. The Serverless endpoint does not contain ".cfg" in the address. For a node-based cluster with TLS enabled, use the configuration endpoint that contains ".cfg".
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

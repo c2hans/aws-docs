@@ -31,3 +31,7 @@ You can also choose **Define from review template** from the **Define workload**
 1. (Optional) On the **Apply lenses** step, you may choose to apply additional lenses from **Custom lenses** or **Lens catalog** that were not already applied to the review template.
 
 1. Choose **Define workload**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,3 +59,7 @@ In MediaLive, you can delete a program that has no channel. You can delete a pro
 You can delete a In MediaLive, channel when the multiplex is running or idle. You don’t detach the channel from its program—there is no concept of detaching a channel from a program.
 
 To delete a channel, display the **Channel** page, and delete the channel in the usual way. For more information, see [Deleting a channel](editing-deleting-channel.md#deleting-a-channel).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

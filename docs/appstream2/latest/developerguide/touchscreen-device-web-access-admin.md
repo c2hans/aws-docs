@@ -11,3 +11,7 @@ WorkSpaces Applications supports gestures on touch-enabled iPads, Android tablet
 To enable support for gestures on touch-enabled devices, your WorkSpaces Applications image must use a version of the WorkSpaces Applications agent released on or after March 7, 2019. For more information, see [WorkSpaces Applications Agent Release Notes](agent-software-versions.md).
 
 For guidance that you can provide your users to help them get started with touch-enabled devices during their WorkSpaces Applications streaming sessions, see [Touchscreen Devices](web-browser-using-touchscreen-devices-user.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -202,3 +202,7 @@ For this reason, we recommend that you automate failover tasks. For example, you
 + [Creating a scalable disaster recovery plan with AWS Elastic Disaster Recovery](https://aws.amazon.com/blogs/storage/creating-a-scalable-disaster-recovery-plan-with-aws-elastic-disaster-recovery/) (AWS blog post)
 + [AWS Elastic Disaster Recovery - A Technical Introduction](https://explore.skillbuilder.aws/learn/course/internal/view/elearning/11123/aws-elastic-disaster-recovery-a-technical-introduction) (AWS Skill Builder course; requires login)
 + [AWS Elastic Disaster Recovery quick start guide](https://docs.aws.amazon.com/drs/latest/userguide/quick-start-guide-gs.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

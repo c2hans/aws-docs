@@ -28,3 +28,7 @@ For the bcp method, we spent 199 hours. This time includes:
 + 0.01 hours to run the generated script on Amazon RDS for SQL Server.
 + 27.88 hours to run the bcp statements for unloading data from on-premise SQL Server.
 + 171.1 hours to run the bcp statements for loading data into Amazon RDS for SQL Server.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

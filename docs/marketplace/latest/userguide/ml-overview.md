@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/ml-overview
 +  **Batch transform job** – In this method, a buyer stores datasets for inference in Amazon S3. When the batch transform job starts, SageMaker AI deploys the model, passes data from an S3 bucket to the model’s container, and then returns the results to an Amazon S3 bucket. When the job completes, SageMaker AI stops the job. For more information, see [Use Batch Transform](https://docs.aws.amazon.com/sagemaker/latest/dg/batch-transform.html).
 **Note**
  Both methods are transparent to the model because SageMaker AI passes data to the model and returns results to the buyer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

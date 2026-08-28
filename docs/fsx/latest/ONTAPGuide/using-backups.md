@@ -19,10 +19,12 @@ Amazon FSx doesn't support backing up data protection (DP) volumes, load sharing
 + [User-initiated backups](#user-initiated-backups)
 + [Copying tags to backups](#copy-tags-to-backups)
 + [Using AWS Backup with Amazon FSx](#aws-backup-and-fsx)
++ [Copying backups](copy-backups.md)
 + [Restoring backups to a new volume](#restoring-backups)
 + [Backup and restore performance](#backup-performance)
 + [Backing up SnapLock volumes](#snaplock-backup)
 + [Creating user-initiated backups](creating-backups.md)
++ [Copying backups within the same AWS account](copying-backups-same-account.md)
 + [Restoring a backup to a new volume](to-restore-backups.md)
 + [Restoring a subset of data](data-subset-restore.md)
 + [Monitoring progress when restoring a backup](monitor-backup-restore.md)
@@ -150,3 +152,7 @@ You can't back up a SnapLock FlexGroup volume.
 You can restore a SnapLock volume's backup as a SnapLock or a non-SnapLock volume. However, you can't restore a non-SnapLock volume's backup as a SnapLock volume.
 
 For more information, see [How SnapLock works](how-snaplock-works.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

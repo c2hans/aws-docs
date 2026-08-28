@@ -21,3 +21,7 @@ During migration planning, AWS Transform turns your discovered inventory and pla
 Some outputs depend on how far you are in planning. For example, application dependency diagrams use your network connection data. The wave Gantt chart and wave-level report summaries become available after wave planning completes. If a prerequisite is missing, AWS Transform tells you what is needed and can run the required step first.
 
 AWS Transform delivers diagrams as interactive HTML that you can filter and explore. By default, AWS Transform delivers reports as a self-contained HTML file. On request, AWS Transform can also generate a PDF document to share with stakeholders or a Microsoft PowerPoint (PPTX) slide deck to present. PDF and PowerPoint outputs are point-in-time snapshots of the same analysis.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

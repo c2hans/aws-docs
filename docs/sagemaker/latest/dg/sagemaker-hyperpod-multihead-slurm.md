@@ -57,3 +57,7 @@ The controller nodes access Slurm configurations and runtime state stored in the
 If there is a status change (Slurm controller is `ON` or `OFF`) in the Slurm controller nodes, Amazon SNS sends notifications to the admin for further action.
 
 This multiple controller nodes architecture eliminates the single point of failure of a single controller (head) node, enables fast and automatic failover recovery, and gives you control over the Slurm accounting database and configurations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

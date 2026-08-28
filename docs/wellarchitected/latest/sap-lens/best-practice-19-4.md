@@ -52,3 +52,7 @@ Backups are used to revert a system to a previous point in time and to guard aga
  For example, it is a valid strategy to use both database and file system backups. However, if the primary mechanism for recovery is using database restore tools, there might be opportunities to optimize costs by reducing the retention or deleting snapshot backups for some volumes.
 +  AWS Documentation: [Amazon EBS snapshots](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSSnapshots.html)
 +  AWS Documentation: [AWS Trusted Advisor best practice checklist](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/best-practice-checklist/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

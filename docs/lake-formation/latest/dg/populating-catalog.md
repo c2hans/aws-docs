@@ -23,3 +23,7 @@ All Iceberg tables in Amazon S3 are stored in the default Data Catalog having Ca
 + [Creating a database](creating-database.md)
 + [Creating tables](creating-tables.md)
 + [Building AWS Glue Data Catalog views](working-with-views.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

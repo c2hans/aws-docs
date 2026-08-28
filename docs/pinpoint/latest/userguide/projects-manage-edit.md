@@ -46,3 +46,7 @@ Use this setting to specify the maximum number of times a message can be sent to
 The number of days applied to the **Maximum number of messages across all journeys within a time frame** if not set to 0. The default setting is 0, which means that there is no limit on the number of days that endpoints in the journey can receive.
 
 1. When you finish, choose **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

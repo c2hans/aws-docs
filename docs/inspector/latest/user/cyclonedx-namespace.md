@@ -98,3 +98,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/cyclonedx-namespac
 | amazon:inspector:sbom\_generator:metadata:imds:instance\_name | The instance name as reported by the GCP metadata service (GCP only). |
 | amazon:inspector:sbom\_generator:metadata:host:open\_port:{{port}}:{{protocol}} | Indicates an open port of a runtime resource (i.e. EC2) |
 | amazon:inspector:sbom\_generator:hardened\_image:vendor | The vendor of a hardened container image |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

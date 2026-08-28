@@ -27,3 +27,7 @@ When you customize the test environment, you can specify the commands Device Far
 You have the option to use a custom test environment when you use the Device Farm console, AWS CLI, or Device Farm API to create a test run.
 
 For more information, see [Uploading a Custom Test Spec Using the AWS CLI](https://docs.aws.amazon.com/devicefarm/latest/developerguide/how-to-create-test-run.html#how-to-create-test-run-cli-step5) and [Creating a test run in Device Farm](how-to-create-test-run.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -61,3 +61,7 @@ Applications are private by default. In order to make your application public, f
 In some cases, you might not be able to find troubleshooting solutions in this section or through the [AWS Serverless Application Repository forums](https://forums.aws.amazon.com/forum.jspa?forumID=287). If you have AWS Premium Support, you can create a technical support case at [AWS Support](https://console.aws.amazon.com/support/home#/).
 
 Before you contact AWS Support, make sure to get the Amazon Resource Name (ARN) for the application that you have questions about. You can find the application ARN in the [AWS Serverless Application Repository console](https://console.aws.amazon.com/serverlessrepo/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Repository. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverlessrepo` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,7 +15,7 @@ The building blocks for real-time are located in a different namespace than the 
 ### Using a Script Tag
 <a name="broadcast-web-getting-started-imports-script"></a>
 
-The Web broadcast SDK is distributed as a JavaScript library and can be retrieved at [https://web-broadcast.live-video.net/1.38.1/amazon-ivs-web-broadcast.js](https://web-broadcast.live-video.net/1.38.1/amazon-ivs-web-broadcast.js).
+The Web broadcast SDK is distributed as a JavaScript library and can be retrieved at [https://web-broadcast.live-video.net/1.39.0/amazon-ivs-web-broadcast.js](https://web-broadcast.live-video.net/1.39.0/amazon-ivs-web-broadcast.js).
 
 The classes and enums defined in the examples below can be found on the global object `IVSBroadcastClient`:
 
@@ -121,3 +121,7 @@ window.microphoneStream = await navigator.mediaDevices.getUserMedia({
    audio: { deviceId: window.audioDevices[0].deviceId },
 });
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

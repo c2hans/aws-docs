@@ -243,3 +243,7 @@ The runbook creates a backup AMI and a password-enabled AMI as part of the autom
 You can locate these AMIs by searching on the Automation execution ID.
 
 For Linux, the new SSH private key for your instance is saved, encrypted, in Parameter Store. The parameter name is **/ec2rl/openssh/{{instance ID}}/key**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

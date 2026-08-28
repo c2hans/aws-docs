@@ -75,3 +75,7 @@ When you define an external ID for an object, such as when you create an asset m
 You can use external IDs in place of UUIDs in this fashion for many API operations in AWS IoT SiteWise, but not all. For example, the [GetAssetPropertyValue](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_GetAssetPropertyValue.html), **must** use UUIDs; it doesn't support external ID usage.
 
 To determine whether a particular API operation supports this usage, consult the [API Reference](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_Operations.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

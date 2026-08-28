@@ -30,3 +30,7 @@ When using a managed entity in multiple applications, all schema updates to the 
 **Joins**: Joins are not supported in DynamoDB. Tables are denormalized by design to avoid expensive join operations. To model one-to-many relationships, the child table contains an attribute referencing the parent table's primary key. Multi-table data queries involve looking up items from the parent table to retrieve details. We will not be supporting native Joins for Managed entities as part of the Preview milestone. As a workaround, we will introduce an automation step that can perform a data merge of 2 entities. This will be very similar to a one level look-up. We will not be supporting Sorting for Preview milestone.
 
 **Env Stage**: We will allow publishing to test but use the same managed store across both environments
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

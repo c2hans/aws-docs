@@ -141,3 +141,7 @@ Resources (CPU, memory, additional application servers, system copies for differ
 + Consider reserved instances or savings plans over on-demand instances if your requirement is to run 24-7, 365 days a year. Reserved instances provide up to 75% discount over on-demand instances. See [Amazon EC2 pricing](https://aws.amazon.com/ec2/pricing/).
 + Consider running occasionally required systems like training and sandbox on-demand for the duration required.
 + Monitor CPU and memory utilization overtime for other non-production systems like Dev/QA, and right-size them when possible.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ When you run a resilience test, the next generation of Resilience Hub performs t
 1. **Evaluates results** – Determines a pass or fail outcome based on whether your service met your success criteria during the test. You can review test results in the console or programmatically. A test report is generated for each run.
 
 Resilience tests are charged based on AWS FIS action-minute pricing. For details, see [AWS Fault Injection Service pricing](https://aws.amazon.com/fis/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

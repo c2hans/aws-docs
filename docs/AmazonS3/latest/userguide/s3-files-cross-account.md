@@ -251,3 +251,7 @@ Verify that the VPC peering connection status is **Active**. Verify that route t
 
 Permission denied on file operations
 Verify that the EC2 instance IAM role has both the `AmazonS3FilesClientFullAccess` managed policy and the inline S3 object access policy attached. Verify that the file system policy in Account A grants `s3files:ClientMount` and `s3files:ClientWrite` to the Account B role.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

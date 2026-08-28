@@ -48,3 +48,7 @@ The instance that loads the web page (Instance 1 or Instance 2) should change ev
 + In this example, two EC2 instances are assigned to a single target group. The EC2 instances have an Apache web server (`httpd`) installed, and the `index.html` page text on each EC2 instance is hardcoded to identify that instance.
 + The Application Load Balancer runs its internal round robin logic to determine which EC2 instance should receive the traffic.
 + Each time you reload the web page, the Application Load Balancer runs its routing logic, and the page displays **Instance 1 - TG1** or **Instance 2 - TG1**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ We recommend that you complete the following assessment tasks:
 + Generate [PostgreSQL diagnostic support scripts](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_SupportScripts.PostgreSQL.html), and then analyze the results to gain insights and anticipate the challenges of using AWS Database Migration Service (AWS DMS) for the migration.
 + Tune the `postgresql.conf` file to find out the optimal values for achieving the best performance of your instance sizes (that is, for disk IOPS, memory, and CPU).
 + Update the `pg_hba.conf` file so that both your application servers and bastion hosts connect to the same virtual private cloud (VPC).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

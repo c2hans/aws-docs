@@ -27,3 +27,7 @@ The following shows how to create a destination, and an AWS IoT rule and IAM rol
 + [How to create and use a destination](#iot-sidewalk-destination-how)
 + [Create a destination for your Sidewalk device](iot-sidewalk-destination-create.md)
 + [Create an IAM role and IoT rule for your destination](sidewalk-destination-rule-role.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,3 +38,7 @@ You can choose the following capacity units:
 This option can be easier than using Oracle RAC because with this option you don’t need to add or remove servers from the cluster. Also, you don’t need to spend on unused hardware, it can scale to even more than you thought you will need when the cluster was created.
 
 For more information, see [Amazon Aurora Serverless](https://aws.amazon.com/rds/aurora/serverless/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

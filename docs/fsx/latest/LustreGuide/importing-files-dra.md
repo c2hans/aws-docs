@@ -24,3 +24,7 @@ FSx for Lustre only imports S3 objects that have POSIX-compliant object keys. Bo
 
 **Note**
 FSx for Lustre doesn't support importing metadata for symbolic links (symlinks) from S3 Glacier Flexible Retrieval and S3 Glacier Deep Archive storage classes. Metadata for S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive objects that aren't symlinks can be imported (that is, an inode is created on the FSx for Lustre file system with the correct metadata). However, to read this data from the file system, you must first restore the S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive object. Importing file data directly from Amazon S3 objects in the S3 Glacier Flexible Retrieval or S3 Glacier Deep Archive storage class into FSx for Lustre isn't supported.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

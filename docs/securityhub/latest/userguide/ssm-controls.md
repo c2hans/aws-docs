@@ -218,3 +218,7 @@ The block public sharing setting for AWS Systems Manager (SSM) documents is an a
 <a name="ssm-7-remediation"></a>
 
 For information about enabling the block public sharing setting for AWS Systems Manager (SSM) documents, see [Block public sharing for SSM documents](https://docs.aws.amazon.com/systems-manager/latest/userguide/documents-ssm-sharing.html#block-public-access) in the *AWS Systems Manager User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

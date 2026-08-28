@@ -45,3 +45,7 @@ To create a bounding box or semantic segmentation label verification or adjustme
   + For video frames, the adjustment and verification labeling job lambda function ARNs end with `AdjustmentVideoObjectDetection` and `AdjustmentVideoObjectTracking` for video frame object detection and object tracking respectively.
 
 Ground Truth stores the output data from a label verification or adjustment job in the S3 bucket that you specified in the [`S3OutputPath`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_LabelingJobOutputConfig.html#SageMaker-Type-LabelingJobOutputConfig-S3OutputPath) parameter of the [`CreateLabelingJob`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateLabelingJob.html) operation. For more information about the output data from a label verification or adjustment labeling job, see [Label verification and adjustment data in the output manifest](sms-data-verify-manifest.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

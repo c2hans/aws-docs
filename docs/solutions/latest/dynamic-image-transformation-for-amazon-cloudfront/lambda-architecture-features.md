@@ -78,3 +78,7 @@ By default, this feature is deactivated. To activate this feature:
 
 **Note**
 Before activating this feature, if you use an S3 bucket policy in the fallback image S3 bucket, you must edit the bucket policy to allow the CustomResourceFunction and ImageHandlerFunction AWS Lambda functions to get the default fallback image object. For more information, see Adding a bucket policy by using the Amazon S3 console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

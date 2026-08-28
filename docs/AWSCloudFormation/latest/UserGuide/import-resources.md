@@ -23,3 +23,7 @@ CloudFormation supports importing a wide range of resources. For more informatio
 + [Manually import AWS resources](import-resources-manually.md)
 + [Automatically import AWS resources](import-resources-automatically.md)
 + [Reverting an import operation](resource-import-revert.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

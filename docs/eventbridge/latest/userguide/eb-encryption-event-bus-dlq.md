@@ -12,3 +12,7 @@ If you configure customer managed key encryption on an event bus, we recommend t
 ![A non-retriable error during event bus processing, sent to the event bus DLQ.](http://docs.aws.amazon.com/eventbridge/latest/userguide/images/cmkms-bus-dlq_eventbridge_conceptual.svg)
 
 For more information, including considerations when using DLQs, and instructions on setting permissions, see [Using dead-letter queues](eb-rule-dlq.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

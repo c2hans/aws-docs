@@ -23,3 +23,7 @@ AWS Key Management Service provides the following APIs for data retrieval.
 | <a name="kms-ListKeys"></a>[ListKeys](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListKeys.html) | Controls permission to view the key ID and Amazon Resource Name (ARN) of all AWS KMS keys in the account | List |
 | <a name="kms-ListResourceTags"></a>[ListResourceTags](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListResourceTags.html) | Controls permission to view all tags that are attached to an AWS KMS key | List |
 | <a name="kms-ListRetirableGrants"></a>[ListRetirableGrants](https://docs.aws.amazon.com/kms/latest/APIReference/API_ListRetirableGrants.html) | Controls permission to view grants in which the specified principal is the retiring principal. Other principals might be able to retire the grant and this principal might be able to retire other grants | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

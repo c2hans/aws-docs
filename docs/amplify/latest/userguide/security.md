@@ -21,3 +21,7 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Security event logging and monitoring in Amplify](monitoring-overview.md)
 + [Cross-service confused deputy prevention](cross-service-confused-deputy-prevention.md)
 + [Security best practices for Amplify](security-best-practices.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

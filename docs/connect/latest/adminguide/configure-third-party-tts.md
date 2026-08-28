@@ -73,3 +73,7 @@ In the **Voice provider** dropdown, choose the third-party text-to-speech provid
 + **Authentication errors**: Verify Secrets Manager and KMS permissions.
 + **Dynamic attributes**: Ensure runtime values resolve to valid provider parameters.
 + **High latency**: Validate provider region alignment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

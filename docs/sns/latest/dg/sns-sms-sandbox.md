@@ -24,3 +24,7 @@ New Amazon SNS SMS accounts are placed into an SMS sandbox. Use the following st
 1. **Register** your company. Some countries require you to register your company's identity to be able to purchase phone numbers or sender IDs and review the messages you send to recipients in their country. For information on which countries require registration, see [Supported countries and regions for SMS messaging with AWS End User Messaging SMS](https://docs.aws.amazon.com/sms-voice/latest/userguide/phone-numbers-sms-by-country.html) in the *AWS End User Messaging SMS User Guide*.
 
 1. **Send** your messages to a topic or mobile phone. For more information, see [Sending SMS messages using Amazon SNS](sms_sending-overview.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AWSConfigServiceRolePolicy-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: May 30, 2018, 23:31 UTC
-+ **Edited time:** July 30, 2026, 23:27 UTC
++ **Edited time:** August 27, 2026, 22:07 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AWSConfigServiceRolePolicy`
 
 ## Policy version
 <a name="AWSConfigServiceRolePolicy-version"></a>
 
-**Policy version:** v94 (default)
+**Policy version:** v95 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -282,6 +282,7 @@ The policy's default version is the version that defines the permissions for the
         "bedrock-agentcore:GetPolicy",
         "bedrock-agentcore:GetPolicyEngine",
         "bedrock-agentcore:GetPolicyEngineSummary",
+        "bedrock-agentcore:GetPolicyGeneration",
         "bedrock-agentcore:GetPolicySummary",
         "bedrock-agentcore:GetTokenVault",
         "bedrock-agentcore:GetWorkloadIdentity",
@@ -300,6 +301,7 @@ The policy's default version is the version that defines the permissions for the
         "bedrock-agentcore:ListPolicies",
         "bedrock-agentcore:ListPolicyEngines",
         "bedrock-agentcore:ListPolicyEngineSummaries",
+        "bedrock-agentcore:ListPolicyGenerations",
         "bedrock-agentcore:ListPolicySummaries",
         "bedrock-agentcore:ListTagsForResource",
         "bedrock-agentcore:ListWorkloadIdentities",
@@ -1200,14 +1202,7 @@ The policy's default version is the version that defines the permissions for the
         "iotevents:ListDetectorModels",
         "iotevents:ListInputs",
         "iotevents:ListTagsForResource",
-        "iotfleethub:DescribeApplication"
-      ],
-      "Resource" : "*"
-    },
-    {
-      "Sid" : "AWSConfigServiceRolePolicyStatementID2",
-      "Effect" : "Allow",
-      "Action" : [
+        "iotfleethub:DescribeApplication",
         "iotfleethub:ListApplications",
         "iotfleetwise:GetCampaign",
         "iotfleetwise:GetDecoderManifest",
@@ -1216,7 +1211,14 @@ The policy's default version is the version that defines the permissions for the
         "iotfleetwise:GetSignalCatalog",
         "iotfleetwise:GetStateTemplate",
         "iotfleetwise:GetVehicle",
-        "iotfleetwise:ListCampaigns",
+        "iotfleetwise:ListCampaigns"
+      ],
+      "Resource" : "*"
+    },
+    {
+      "Sid" : "AWSConfigServiceRolePolicyStatementID2",
+      "Effect" : "Allow",
+      "Action" : [
         "iotfleetwise:ListDecoderManifestNetworkInterfaces",
         "iotfleetwise:ListDecoderManifests",
         "iotfleetwise:ListDecoderManifestSignals",
@@ -2004,6 +2006,7 @@ The policy's default version is the version that defines the permissions for the
         "sagemaker:DescribeCluster",
         "sagemaker:DescribeClusterSchedulerConfig",
         "sagemaker:DescribeCodeRepository",
+        "sagemaker:DescribeComputeQuota",
         "sagemaker:DescribeContext",
         "sagemaker:DescribeDataQualityJobDefinition",
         "sagemaker:DescribeDeviceFleet",
@@ -2037,11 +2040,13 @@ The policy's default version is the version that defines the permissions for the
         "sagemaker:DescribeOptimizationJob",
         "sagemaker:DescribePartnerApp",
         "sagemaker:DescribePipeline",
+        "sagemaker:DescribePipelineExecution",
         "sagemaker:DescribeProcessingJob",
         "sagemaker:DescribeProject",
         "sagemaker:DescribeSpace",
         "sagemaker:DescribeStudioLifecycleConfig",
         "sagemaker:DescribeTrainingJob",
+        "sagemaker:DescribeTrainingPlan",
         "sagemaker:DescribeTrial",
         "sagemaker:DescribeTrialComponent",
         "sagemaker:DescribeUserProfile",
@@ -2057,6 +2062,7 @@ The policy's default version is the version that defines the permissions for the
         "sagemaker:ListClusters",
         "sagemaker:ListClusterSchedulerConfigs",
         "sagemaker:ListCodeRepositories",
+        "sagemaker:ListComputeQuotas",
         "sagemaker:ListContexts",
         "sagemaker:ListDataQualityJobDefinitions",
         "sagemaker:ListDeviceFleets",
@@ -2091,6 +2097,7 @@ The policy's default version is the version that defines the permissions for the
         "sagemaker:ListNotebookInstances",
         "sagemaker:ListOptimizationJobs",
         "sagemaker:ListPartnerApps",
+        "sagemaker:ListPipelineExecutions",
         "sagemaker:ListPipelines",
         "sagemaker:ListProcessingJobs",
         "sagemaker:ListProjects",
@@ -2098,6 +2105,7 @@ The policy's default version is the version that defines the permissions for the
         "sagemaker:ListStudioLifecycleConfigs",
         "sagemaker:ListTags",
         "sagemaker:ListTrainingJobs",
+        "sagemaker:ListTrainingPlans",
         "sagemaker:ListTrialComponents",
         "sagemaker:ListTrials",
         "sagemaker:ListUserProfiles",
@@ -2446,3 +2454,7 @@ The policy's default version is the version that defines the permissions for the
 <a name="AWSConfigServiceRolePolicy-learn-more"></a>
 + [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
 + [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Policy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-managed-policy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

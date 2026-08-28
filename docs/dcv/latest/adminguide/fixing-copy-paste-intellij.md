@@ -25,3 +25,7 @@ This change will prevent copy and paste from working with the Amazon DCV web cli
 1. Save and close the file.
 
 1. [Stop](managing-sessions-lifecycle-stop.md) and [restart](managing-sessions-start.md) the Amazon DCV session.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

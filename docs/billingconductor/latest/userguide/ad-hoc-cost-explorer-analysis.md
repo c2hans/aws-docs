@@ -22,3 +22,7 @@ To learn more about core workflows that Cost Explorer supports, see [Exploring y
 An AWS Organizations in a billing transfer billing group can analyze, forecast, and report pro forma costs in Cost Explorer. By default, their cost data in the primary view shows only pro forma data.
 
 For a list of AWS services that support pro forma costs, see [AWS services that support pro forma-based billing view costs](service-integrations-support-proforma.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing Conductor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query billingconductor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

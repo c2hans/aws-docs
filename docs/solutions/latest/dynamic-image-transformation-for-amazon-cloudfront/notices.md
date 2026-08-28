@@ -14,3 +14,7 @@ Dynamic Image Transformation for Amazon CloudFront is licensed under the terms o
 
 **Warning**
 Changes to origins, transformation policies, or mappings may take up to 5 minutes to propagate across all image processing tasks. During this period, some requests may still use the previous configuration. Configuration updates do not automatically refresh cached images. Cached images processed with previous settings will remain available until they expire or are manually invalidated.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

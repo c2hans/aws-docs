@@ -59,3 +59,7 @@ source_url: https://docs.aws.amazon.com/firehose/latest/dev/create-name.html
    + Snowflake
 
 1. For **Firehose stream name**, you can either use the name that the console generates for you or add a Firehose stream of your choice.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

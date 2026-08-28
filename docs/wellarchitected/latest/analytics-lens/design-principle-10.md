@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/de
 +  Amazon Redshift Database Developer Guide: [Creating data files for queries in Amazon Redshift](https://docs.aws.amazon.com/redshift/latest/dg/c-spectrum-data-files.html) [Spectrum](https://docs.aws.amazon.com/redshift/latest/dg/c-spectrum-data-files.html)
 +  Amazon EMR Release Guide: [Hudi](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-hudi.html)
 +  AWS Big Data Blog: [Apply record level changes from relational databases to Amazon S3 data lake](https://aws.amazon.com/blogs/big-data/apply-record-level-changes-from-relational-databases-to-amazon-s3-data-lake-using-apache-hudi-on-amazon-emr-and-aws-database-migration-service/) [using Apache Hudi on Amazon EMR and AWS Database Migration service](https://aws.amazon.com/blogs/big-data/apply-record-level-changes-from-relational-databases-to-amazon-s3-data-lake-using-apache-hudi-on-amazon-emr-and-aws-database-migration-service/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

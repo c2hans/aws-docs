@@ -90,3 +90,7 @@ Before your AWS account can share Data Catalog resources (catalogs, databases an
 For the data lake administrator and for principals whom the data lake administrator has granted permissions to, shared resources appear in the Data Catalog as if they are local (owned) resources. Extract, transform, and load (ETL) jobs can access the underlying data of shared resources.
 For shared resources, the **Tables** and **Databases** pages on the Lake Formation console display the owner's account ID.
 When the underlying data of a shared resource is accessed, CloudTrail log events are generated in both the shared resource recipient's account and the resource owner's account. The CloudTrail events can contain the ARN of the principal that accessed the data, but only if the recipient account opts in to include the principal ARN in the logs. For more information, see [Cross-account CloudTrail logging](cross-account-logging.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

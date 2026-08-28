@@ -109,3 +109,7 @@ The sample code for this pattern is available in the GitHub [Cross Account Code
 | --- | --- |
 | Step Functions execution is taking longer than expected. | Adjust the `MaxConcurrency` property of the map in the Step Function state machine to control how many CodeBuild projects can run in parallel. |
 | The execution of the CodeBuild jobs is taking longer than expected. | 1. Adjust the wait time values in the Step Functions state machine to minimize polling requests for job status. Use the expected execution time for the CodeBuild project.<br />2. Consider whether CodeBuild is the appropriate tool to be using. For example, the time required to initialize a CodeBuild job can be significantly longer than AWS Lambda. If high throughput and fast completion times are a requirement, consider migrating the business logic to AWS Lambda and using a fan-out architecture. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

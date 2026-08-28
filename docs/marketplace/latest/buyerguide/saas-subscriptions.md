@@ -26,3 +26,7 @@ To request a private offer from the seller, choose **Request a private offer** o
 Some products offer a Quick Launch deployment option, which reduces the time and resources that are required to configure, deploy, and launch software. These products are identified using a Quick Launch badge. For more information, see [Launching SaaS products with Quick Launch](quick-launch.md#saas-quick-launch).
 
 1. Go to [Marketplace subscriptions](https://console.aws.amazon.com/marketplace/home?region=us-east-1#/subscriptions) page to review your current subscriptions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ The following considerations might impact your use of IP address types:
 + If you migrate the endpoint type of an API from private to Regional, you must set the IP address type to dualstack. After the endpoint migration is complete, you can change the IP address type to IPv4. For more information, see [Change a public or private API endpoint type in API Gateway](apigateway-api-migration.md).
 + Your API can be mapped to a custom domain name with a different IP address type than your API. If you disable your default API endpoint, this might affect how callers can invoke your API.
 + You can't use an external definition file to configure your API's IP address type.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

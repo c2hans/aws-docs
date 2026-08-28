@@ -27,3 +27,7 @@ For example, if you need to access Amazon EC2 objects in multiple AWS Regions, c
 var ec2_regionA = new EC2({region: 'ap-southeast-2', maxAttempts: 15});
 var ec2_regionB = new EC2({region: 'us-west-2', maxAttempts: 15});
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for JavaScript. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -266,3 +266,7 @@ Every AWS account have a per-minute quota limiting the number of SQL statements 
 | --- | --- |
 | Asia Pacific (Tokyo) (ap-northeast-1)<br />Asia Pacific (Osaka) (ap-northeast-3)<br />Asia Pacific (Sydney) (ap-southeast-2)<br />Canada (Central) (ca-central-1)<br />Europe (Zurich) (eu-central-2)<br />Europe (Stockholm) (eu-north-1)<br />Europe (Milan) (eu-south-1)<br />Europe (Spain) (eu-south-2)<br />Europe (Ireland) (eu-west-1)<br />Europe (London) (eu-west-2)<br />Europe (Paris) (eu-west-3)<br />US East (Ohio) (us-east-2) | Up to 48 statements |
 | Europe (Frankfurt) (eu-central-1)<br />US East (N. Virginia) (us-east-1)<br />US West (Oregon) (us-west-2) | Up to 80 statements |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

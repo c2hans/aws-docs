@@ -41,3 +41,7 @@ When you've completed your test and you're ready to cut over to the target envir
    1. When all Agents have been uninstalled, delete the virtual private cloud (VPC) for the staging area. This deletes all the AWS resources that you created for replication.
 
 For more information about the cutover process, see [Performing a Migration Cutover](https://docs.cloudendure.com/#Configuring_and_Running_Migration/Performing_a_Migration_Cutover/Performing_a_Migration_Cutover.htm) in the CloudEndure documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

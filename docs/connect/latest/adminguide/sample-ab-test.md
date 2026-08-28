@@ -21,3 +21,7 @@ This flow shows how to perform an A/B call distribution based on a percentage. H
 1. After the contact gets routed, the **Play prompt** tells the customer which number the dice rolled.
 
 1. At the end of the sample, the **Transfer to flow** block transfers the customer back to the [Sample inbound flow](sample-inbound-flow.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

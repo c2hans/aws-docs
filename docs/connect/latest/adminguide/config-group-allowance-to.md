@@ -73,3 +73,7 @@ For example, your business provides time off in December. Here's how you might u
 + Adding value `0` allows them to specify blocked days. Connect Customer ignores a group allowance check if no value is specified.
 
 This allows the workforce managers to balance an agent's personal time off needs with business headcount needs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

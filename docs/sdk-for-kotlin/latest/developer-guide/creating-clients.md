@@ -77,3 +77,7 @@ DynamoDbClient.fromEnvironment().use { dynamoDbClient ->
 ```
 
 In the previous example, the lambda block receives a reference to the client that was just created. You can invoke operations on this client reference and when the block is completed— including by throwing an exception—the client is closed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Kotlin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-kotlin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

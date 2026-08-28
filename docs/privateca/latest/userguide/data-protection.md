@@ -26,3 +26,7 @@ The private keys for private CAs are stored in AWS managed hardware security mod
 <a name="connector-for-ad"></a>
 
 AWS Private CA Connector for AD stores customer configuration data regarding connectors, templates, directory registrations, service principal names, and template group access control entries. This data is encrypted in transit and at rest. Information about certificates issued through Connector for AD can be discovered using the [GetCertificate](https://docs.aws.amazon.com/privateca/latest/APIReference/API_GetCertificate.html) action in the AWS Private CA API. No information regarding the certificates issued, or regarding the client or machine requesting a certificate, is stored by AWS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ This section describes how to make requests to the two Route 53 APIs:
 + RPC APIs for domain registration and for Route 53 Resolver
 
 For each API, we describe the components of requests and the content of responses. We also describe how to authenticate requests.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

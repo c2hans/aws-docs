@@ -339,3 +339,7 @@ AWS Secrets Manager defines the following condition keys that can be used in the
 |   [secretsmanager:VersionStage](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html)  | Filters access by the list of version stages in the request | String |
 |   [secretsmanager:resource/AllowRotationLambdaArn](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html)  | Filters access by the ARN of the rotation Lambda function associated with the secret | ARN |
 |   [secretsmanager:resource/Type](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html)  | Filters access by the managed external secret type associated with the secret | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

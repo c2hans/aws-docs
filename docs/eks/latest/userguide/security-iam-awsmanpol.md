@@ -476,3 +476,7 @@ https://github.com/awsdocs/amazon-eks-user-guide/commits/mainline/latest/ug/secu
 | Added permissions to [AWSServiceRoleForAmazonEKSNodegroup](#security-iam-awsmanpol-awsserviceroleforamazoneksnodegroup). | Added `autoscaling:EnableMetricsCollection` permission to allow Amazon EKS to enable metrics collection. | December 13, 2021 |
 | Added permissions to [AmazonEKSClusterPolicy](#security-iam-awsmanpol-amazoneksclusterpolicy). | Added `ec2:DescribeAccountAttributes`, `ec2:DescribeAddresses`, and `ec2:DescribeInternetGateways` permissions to allow Amazon EKS to create a service-linked role for a Network Load Balancer. | June 17, 2021 |
 | Amazon EKS started tracking changes. | Amazon EKS started tracking changes for its AWS managed policies. | June 17, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

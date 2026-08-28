@@ -14,8 +14,8 @@ If the DB cluster is part of a global database with write forwarding turned on, 
 
 ## Limitations for RDS Proxy with global databases
 <a name="rds-proxy-gdb.limitations"></a>
-
-When the Aurora DB cluster has write forwarding turned on, RDS Proxy doesn't support the `SESSION` value for the `aurora_replica_read_consistency` variable. Setting this value can cause unexpected behavior.
++ When write forwarding is enabled on an Aurora MySQL Global Database secondary cluster, RDS Proxy doesn't support the `SESSION` value for the `aurora_replica_read_consistency` parameter. Setting this value can cause unexpected behavior.
++ When write forwarding is enabled on an Aurora PostgreSQL Global Database secondary cluster, RDS Proxy doesn't support the `SESSION` value for the `apg_write_forward.consistency_mode` parameter. Setting this value can cause unexpected behavior.
 
 ## How RDS Proxy endpoints work with global databases
 <a name="rds-proxy-gdb.endpoints"></a>
@@ -29,3 +29,7 @@ Global database switchover and failover operations both involve a role switch be
 RDS Proxy queues all requests through read/write endpoints and sends them to the writer instance of the new primary cluster as soon as it's available. It does so regardless of whether the switchover or failover operation has completed. During switchover or failover, the default endpoint of the proxy for the old primary cluster still accepts write operations. However, as soon as that cluster becomes a secondary cluster, all of the write operations fail. To learn how and when to perform specific global switchover or failover tasks, see the following topics:
 + Global database switchover – [Performing switchovers for Amazon Aurora global databases](aurora-global-database-disaster-recovery.md#aurora-global-database-disaster-recovery.managed-failover)
 + Global database failover – [Recovering an Amazon Aurora global database from an unplanned outage](aurora-global-database-disaster-recovery.md#aurora-global-database-failover)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

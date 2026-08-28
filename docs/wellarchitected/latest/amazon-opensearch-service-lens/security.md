@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 +  **Implement least privilege access controls:** Manage user access and monitor cluster configuration by using access control features like IAM policies or fine-grained access control.
 +  **Apply security updates regularly:** Protect your data from security vulnerabilities. To minimize the need for version upgrades, OpenSearch Service provides backward compatible security patches and upgrades for all supported versions of OpenSearch and OpenSearch.
 +  **Maintain compliance requirements:** OpenSearch Service maintain compliance with several industry standards, including SOC, PIC and HIPAA. These validations can help you meet your organization's compliance and governance requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

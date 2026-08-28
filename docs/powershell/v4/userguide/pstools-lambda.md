@@ -40,3 +40,7 @@ You are ready to start developing Lambda functions in PowerShell. For more infor
 +  [Setting Up a PowerShell Development Environment](https://docs.aws.amazon.com/lambda/latest/dg/lambda-powershell-setup-dev-environment.html)
 + [AWS Lambda Tools for Powershell on GitHub](https://github.com/aws/aws-lambda-dotnet/tree/master/PowerShell)
 +  [AWS Lambda Console](https://console.aws.amazon.com/lambda/home)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

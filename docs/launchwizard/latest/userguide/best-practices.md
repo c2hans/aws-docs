@@ -99,3 +99,7 @@ There are various considerations when choosing the right CA to obtain an SSL cer
 + *Resource Authorization Policies* – Remote Desktop Resource Authorization Policies (RD RAPs) allow you to specify the internal Windows instances that remote users can connect to through an RD Gateway instance. For example, you can choose specific computers joined to a domain, which administrators can connect to through the RD Gateway.
 
 This Launch Wizard deployment automatically sets up Connection and Resource Authorization Policies.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Launch Wizard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query launchwizard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

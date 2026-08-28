@@ -24,3 +24,7 @@ The following topics include instructions on how to create and manage users and 
 + [Resetting a Simple AD user password](simple_ad_manage_users_groups_reset_password.md)
 + [Creating a Simple AD group](simple_ad_manage_users_groups_create_group.md)
 + [Adding a Simple AD user to a group](simple_ad_manage_users_groups_add_user_to_group.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

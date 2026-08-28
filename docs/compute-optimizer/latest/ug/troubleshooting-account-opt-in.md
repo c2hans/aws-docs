@@ -62,3 +62,7 @@ Your Amazon S3 bucket must be set to block public access. For more information, 
 
 **You created a scripted or automatic export job but there is recommendation data missing from your Amazon S3 bucket.**
 Call the `DescribeRecommendationExportJobs` API to verify the final status of the export job. If the export job failed, try to call the `Export{{Resource}}Recommendations` API again. For more information, see [ DescribeRecommendationExportJobs](https://docs.aws.amazon.com/compute-optimizer/latest/APIReference/API_DescribeRecommendationExportJobs.html) in the *AWS Compute Optimizer API Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

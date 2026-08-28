@@ -48,3 +48,7 @@ For the 79 partially inheritable controls, the CRM specifies what AWS provides a
 <a name="automation"></a>
 
 With automation, you can implement infrastructure and application changes without manual intervention. You should also automate the security and compliance controls to the greatest extent possible so that evidence collection and monitoring operate continuously alongside your workloads. Automation also helps detect when controls drift from their intended configuration so that you can implement remediation steps in near real time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ In the preceding diagram
 It is worth noting that AWS Network Firewall can be also used by customers who want to consume SAP BTP services hosted by AWS connecting first to an AWS Transit Gateway with AWS Direct Connect, so that their end-to-end stay on the AWS backbone.
 
 For instructions to configure AWS Network Firewall, see [Getting started with AWS Network Firewall](https://docs.aws.amazon.com/network-firewall/latest/developerguide/getting-started.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

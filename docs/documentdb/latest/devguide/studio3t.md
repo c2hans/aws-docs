@@ -68,3 +68,7 @@ This Amazon EC2 instance should be in the same Amazon VPC and security group as 
 ![Connection Manager interface with Connect button highlighted.](http://docs.aws.amazon.com/documentdb/latest/devguide/images/studio3t/studio3t-finalconnect.png)
 
 Congratulations\! You are now successfully connected to your Amazon DocumentDB cluster through Studio 3T.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

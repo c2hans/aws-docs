@@ -59,3 +59,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 +  **Goal:** Assess the business and technical skills of your team and develop a training or hiring plan to fill in any skill or industry gaps in the existing team.
 +  **Outcome:** Create a list of skills gaps that need to be filled and determine what incremental resources will be needed to support your company (incorporating the sales, marketing, customer success, product, operations, or other resources identified throughout this modeling process). This captures all the staffing considerations that will need to be addressed by your business plan.
 +  **Key Decision Point:** Do you have the resources and skills needed to operate and support the SaaS offering? If not, do you have the budget to fill these gaps?
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

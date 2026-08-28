@@ -18,3 +18,7 @@ You incur standard [Amazon Athena charges](https://aws.amazon.com/athena/pricing
 + [Generate the CloudFormation template using the console](flow-logs-generate-template-console.md)
 + [Generate the CloudFormation template using the AWS CLI](flow-logs-generate-template-cli.md)
 + [Run a predefined query](flow-logs-run-athena-query.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

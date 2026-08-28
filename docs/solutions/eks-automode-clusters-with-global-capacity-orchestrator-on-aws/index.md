@@ -6,21 +6,21 @@ source_url: https://docs.aws.amazon.com/solutions/eks-automode-clusters-with-glo
 
 ## Overview
 
-This Guidance helps organizations deploy and manage machine learning inference workloads across multiple AWS Regions by automating capacity orchestration and providing a unified API for global Kubernetes cluster management. Platform engineers deploy a single AWS CDK application that provisions identical Amazon Elastic Kubernetes Service Auto Mode clusters across configured regions, connected through AWS Global Accelerator for intelligent traffic routing. Users submit Kubernetes manifests through a REST API or CLI with AWS IAM authentication—no manual cluster configuration required—while the platform automatically provisions GPU, AWS Trainium, AWS Inferentia, or CPU nodes on demand based on workload requirements. You gain simplified multi-region operations with automatic failover, reduced latency through global traffic optimization, and cost efficiency through on-demand node provisioning without pre-scaling infrastructure.
+This Guidance helps organizations deploy machine learning inference workloads across multiple AWS Regions by automating capacity orchestration and providing a unified API for global Kubernetes cluster management. Platform engineers deploy a single AWS CDK application that provisions identical Amazon EKS Auto Mode clusters across configured regions, connected through AWS Global Accelerator for intelligent traffic routing. Users submit Kubernetes manifests through a REST API or CLI with AWS IAM authentication—no manual cluster configuration required—while the platform automatically provisions GPU, AWS Trainium, AWS Inferentia, or CPU nodes on demand based on workload requirements. You gain simplified multi-region operations with automatic failover, reduced latency through global traffic optimization, and cost efficiency through on-demand node provisioning without pre-scaling infrastructure.
 
 ## Benefits
 
-### Deploy global AI infrastructure instantly
+### Eliminate idle GPU capacity costs
 
-Provision identical, production-grade EKS clusters across multiple regions with a single command. Eliminate per-region manual configuration and reduce deployment time from weeks to minutes.
+Provision GPU, Trainium, and Inferentia nodes on demand with automatic bin-packing and termination. Scale AI/ML infrastructure to zero when workloads complete, eliminating over-provisioned accelerator spend.
 
-### Scale accelerators on demand automatically
+### Deploy globally from one command
 
-Provision GPU, Trainium, and Inferentia nodes only when workloads require them, then scale to zero when idle. Reduce compute costs by avoiding pre-provisioned accelerator capacity.
+Manage identical multi-region EKS clusters through a single CDK application and unified API. Submit workloads without per-cluster kubeconfig while automatic failover routes to the nearest healthy region.
 
-### Ensure continuous AI workload availability
+### Enforce compliance across every region
 
-Route training and inference requests to the nearest healthy region automatically using anycast routing with built-in failover. Maintain workload continuity during regional outages without manual intervention.
+Apply a uniform five-layer security model validated against HIPAA, NIST 800-53, and PCI DSS to all clusters. Eliminate static credentials with dynamic pod-level IAM roles and daily-rotating secrets.
 
 ## How it works
 
@@ -84,6 +84,6 @@ Everything you need to launch this Guidance in your account is right here.
 
 - **Let's make it happen**: Ready to deploy? Review the sample code on GitHub for detailed deployment instructions to deploy as-is or customize to fit your needs.
 
-[Go to sample code](https://github.com/awslabs/global-capacity-orchestrator-on-aws)
+[Go to sample code](https://github.com/aws-solutions-library-samples/global-capacity-orchestrator-on-aws)
 
 [Read usage guidelines](/solutions/guidance-disclaimers/)

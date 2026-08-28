@@ -90,3 +90,7 @@ The [GetAssetPropertyAggregates](https://docs.aws.amazon.com/iot-sitewise/latest
 
 **Note**
  If your query range contains a `null` value TQVs, see [AssetPropertyValue](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_AssetPropertyValue.html) API. All statistics except count, results in a `null` response, similar to statistics for String TQVs. If your query range contains `Double.NaN` for double type TQVs, all calculations except count will result in a `Double.NaN`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

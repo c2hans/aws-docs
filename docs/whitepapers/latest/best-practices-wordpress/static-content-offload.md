@@ -12,3 +12,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpr
  This has the positive side effect of offloading this workload from your Lightsail instance and letting it focus on dynamic content generation. This reduces the load on the server and is an important step towards creating a stateless architecture (a prerequisite before implementing automatic scaling).
 
  You can subsequently configure Amazon S3 as an origin for CloudFront to improve delivery of those static assets to users around the world. Although WordPress isn’t integrated with Amazon S3 and CloudFront out-of-the-box, a variety of plugins add support for these services (for example, W3 Total Cache).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

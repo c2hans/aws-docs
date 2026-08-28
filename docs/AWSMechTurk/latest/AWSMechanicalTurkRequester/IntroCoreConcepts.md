@@ -44,3 +44,7 @@ A *reward* is the money you, as a requester, pay workers for satisfactory work t
 You can use *qualifications* to specify attributes of the workers eligible to work on your HITs. Qualifications can be either system-generated, such as qualifications based on location, or managed by you, based on past performance on your tasks.
 
 To learn more, see [Selecting eligible workers](SelectingEligibleWorkers.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

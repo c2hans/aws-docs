@@ -45,3 +45,7 @@ When testing the skill, invoke the skill with the invocation name before asking 
 
 **Note**
 If you want to publish your new QnABot on AWS skill to the Alexa skills store so that other users can access it, see [Submitting an Alexa Skill for Certification](https://developer.amazon.com/public/solutions/alexa/alexa-skills-kit/docs/publishing-an-alexa-skill). Unpublished skills are accessible only to Alexa devices registered to your Amazon account; published skills are available to anyone.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ Accurate and consistent labeling of anomalies is essential for effective model e
 + **Exclude uncertain periods:** If you're unsure whether a period is anomalous, leave it unlabeled. Ambiguous labels can confuse the model and degrade its accuracy over time.
 
 Find more details about how to add labels at [Label your data](adv-training-configs.md#ano-labeling-data).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

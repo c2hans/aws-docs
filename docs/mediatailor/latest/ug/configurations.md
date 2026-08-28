@@ -38,3 +38,7 @@ If you use a content delivery network (CDN) with MediaTailor, you must set up th
 MediaTailor supports the following codecs.
 + Audio codecs: mp4a, ac-3, and ec-3
 + Video codecs: h.264 (AVC), h.265 (HEVC), av01 (AV1)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

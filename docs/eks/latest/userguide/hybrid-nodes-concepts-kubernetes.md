@@ -258,3 +258,7 @@ Pod A -> CNI -> [VXLAN encapsulation] -> Node A network -> router or gateway -> 
 ```
 
 This allows the pod traffic to traverse the physical network infrastructure without requiring the physical network to understand pod IP routing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

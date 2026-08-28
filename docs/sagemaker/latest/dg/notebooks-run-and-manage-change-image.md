@@ -28,3 +28,7 @@ The following screenshot shows the menu from a Studio Classic notebook. The curr
 1. Wait for the kernel's status to show as idle, which indicates the kernel has started.
 
 For a list of available SageMaker images and kernels, see [Amazon SageMaker Images Available for Use With Studio Classic Notebooks](notebooks-available-images.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

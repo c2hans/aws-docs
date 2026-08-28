@@ -177,3 +177,7 @@ eksctl create iamserviceaccount --config-file=<path>
 +  [Introducing Fine-grained IAM Roles For Service Accounts](https://aws.amazon.com/blogs/opensource/introducing-fine-grained-iam-roles-service-accounts/)
 +  [EKS User Guide - IAM Roles For Service Accounts](https://docs.aws.amazon.com/eks/latest/userguide/access-policies.html#access-policy-permissions)
 +  [Mapping IAM users and role to Kubernetes RBAC roles](iam-identity-mappings.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

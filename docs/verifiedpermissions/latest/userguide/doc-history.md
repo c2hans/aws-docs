@@ -20,3 +20,7 @@ The following table describes the documentation releases for Verified Permission
 | [Authorization concepts and example](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/authorization.html) | Added information about authorization requests with Verified Permissions. | February 1, 2024 |
 | [AWS CloudFormation integration](https://docs.aws.amazon.com/verifiedpermissions/latest/userguide/cloudformation-verified-permissions.html) | Verified Permissions supports creating identity sources, policies, policy stores, and policy templates in CloudFormation. | June 30, 2023 |
 | [Initial release](#doc-history) | Initial release of the Amazon Verified Permissions User Guide | June 13, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

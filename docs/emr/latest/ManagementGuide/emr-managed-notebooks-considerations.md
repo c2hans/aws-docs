@@ -79,3 +79,7 @@ If you specify an encrypted location in Amazon S3 to store notebook files, you m
 
 **Using cookies with hosting domains**
 To augment the security for the off-console applications that you might use with Amazon EMR, the application hosting domains are registered in the Public Suffix List (PSL). Examples of these hosting domains include the following: `emrstudio-prod.us-east-1.amazonaws.com`, `emrnotebooks-prod.us-east-1.amazonaws.com`, `emrappui-prod.us-east-1.amazonaws.com`. For further security, if you ever need to set sensitive cookies in the default domain name, we recommend that you use cookies with a `__Host-` prefix. This helps to defend your domain against cross-site request forgery attempts (CSRF). For more information, see the [Set-Cookie](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie#cookie_prefixes) page in the *Mozilla Developer Network*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

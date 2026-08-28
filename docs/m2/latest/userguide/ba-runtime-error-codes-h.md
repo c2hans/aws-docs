@@ -16,3 +16,7 @@ CL Command pgm error codes, prefixed with `BA-H`.
 | BA-H2010 | Fatal | FILE parameter is required in command RMVM. Provide a valid FILE parameter to the RMVM command. The FILE parameter specifies the file from which the member should be removed. |  |
 | BA-H2011 | Fatal | Unexpected FILE parameter type in command RMVM. Ensure the FILE parameter is provided as a String or RecordAdaptable type. Check the command syntax and parameter types being passed to RMVM. |  |
 | BA-H2020 | Warn | File is not a database file. Lock operation ignored in command. Only database files can be locked. The file is a flatfile or does not exist. Verify the file name and library. |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

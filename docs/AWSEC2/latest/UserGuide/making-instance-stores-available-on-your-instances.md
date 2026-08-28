@@ -86,3 +86,7 @@ You can view the instance store volumes using Windows Disk Management. For more 
 1. On the Format Partition screen, specify whether to format the volume. If you choose to format the volume, choose the required file system and unit size, and specify a volume label.
 
 1. Choose **Next**, **Finish**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

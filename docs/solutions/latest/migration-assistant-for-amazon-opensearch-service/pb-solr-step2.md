@@ -122,3 +122,7 @@ Leave `skipEvaluateApproval` and `skipMigrateApproval` set to `false` for your f
 
 **Note**
 For a backfill-only run, do not configure a `replayerConfig` or any Capture and Replay phase. For a SolrCloud source where you need live write capture, configure the `traffic` section, `SolrToOpenSearchTransformProvider`, and `SolrTupleTransformProvider` as described in [Capture and replay live traffic from Solr](solr-capture-replay.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

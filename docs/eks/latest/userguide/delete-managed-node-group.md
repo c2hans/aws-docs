@@ -69,3 +69,7 @@ For more options, see [Deleting and draining nodegroups](https://eksctl.io/usage
 1. If `cli_pager=` is set in the CLI config, use the arrow keys on your keyboard to scroll through the response output. Press the `q` key when you’re finished.
 
    For more options, see the ` [delete-nodegroup](https://docs.aws.amazon.com/cli/latest/reference/eks/delete-nodegroup.html) ` command in the * AWS CLI Command Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

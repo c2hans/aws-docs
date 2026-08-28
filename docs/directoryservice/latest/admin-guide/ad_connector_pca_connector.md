@@ -65,3 +65,7 @@ For more information, see [View connector details](https://docs.aws.amazon.com/p
 Complete the following steps to confirm that AWS Private CA is issuing certificates to your self-managed Active Directory:
 + Restart your on-premises domain controllers.
 + View your certificates with Microsoft Management Console. For more information, see [Microsoft documentation](https://learn.microsoft.com/en-us/dotnet/framework/wcf/feature-details/how-to-view-certificates-with-the-mmc-snap-in).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -202,3 +202,7 @@ To ensure an optimal subscriber experience, we strongly advise against making an
   + AWS accounts that subscribe to your product but have not yet received access to the Lake Formation data permissions will fail to receive access.
 + We recommend not revoking granted AWS Lake Formation data permissions from AWS accounts with active subscriptions to published products containing AWS Lake Formation data sets. If you revoke granted data permissions from AWS accounts subscribed to your product, those accounts will lose access, creating a poor customer experience.
 + We recommend setting the cross account version in your AWS Glue Data Catalog to version 3 when publishing products containing AWS Lake Formation data sets. If you downgrade the cross account version of your Data Lake Catalog while having published products containing AWS Lake Formation data sets, the AWS accounts that subscribe to your product but have not yet received access to the Lake Formation data permissions may fail to get access to the data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

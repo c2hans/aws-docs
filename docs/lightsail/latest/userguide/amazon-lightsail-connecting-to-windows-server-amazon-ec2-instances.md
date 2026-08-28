@@ -104,3 +104,7 @@ Remote Desktop Connection is an RDP client that comes pre-installed on most Wind
 <a name="connecting-to-windows-server-amazon-ec2-instances-next-steps"></a>
 
 We recommend changing the administrator password for your Windows Server instance in Amazon EC2. It removes the association between the default Lightsail key pair and your Windows Server instance in Amazon EC2. For more information, see [Secure a Windows Server instance in Amazon EC2 created from a Lightsail snapshot](amazon-lightsail-securing-windows-server-amazon-ec2-instances.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

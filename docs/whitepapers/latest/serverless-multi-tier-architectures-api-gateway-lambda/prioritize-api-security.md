@@ -46,3 +46,7 @@ In all cases, traffic to your private API uses secure connections and does not l
 <a name="firewall-protection-using-aws-waf"></a>
 
 Internet-facing APIs are vulnerable to malicious attacks. AWS WAF is a web application firewall which helps protect APIs from such attacks. It protects APIs from common web exploits such as SQL injection and cross-site scripting attacks. You can use [AWS WAF](https://aws.amazon.com/waf/) with API Gateway to help protect APIs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

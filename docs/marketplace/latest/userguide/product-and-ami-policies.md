@@ -141,3 +141,7 @@ All AMIs must adhere to the following product usage policies:
   + The external resources must not require additional payment methods or costs and the setup of the connection must be automated.
 + Product software and metadata must not contain language that redirects users to other cloud platforms, additional products, or upsell services that aren't available in AWS Marketplace.
 + If your product is an add-on to another product or another ISV’s product, your product description must indicate that it extends the functionality of the other product and that without it, your product has very limited utility. For example, *This product extends the functionality of <product name> and without it, this product has very limited utility. Please note that <product name> might require its own license for full functionality with this listing.*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

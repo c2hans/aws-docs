@@ -26,3 +26,7 @@ Choose a metric that changes inversely proportional to a change in the capacity 
 + [Create a target tracking scaling policy](create-target-tracking-policy-cli.md)
 + [Delete a target tracking scaling policy](delete-target-tracking-policy.md)
 + [Use metric math](application-auto-scaling-target-tracking-metric-math.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

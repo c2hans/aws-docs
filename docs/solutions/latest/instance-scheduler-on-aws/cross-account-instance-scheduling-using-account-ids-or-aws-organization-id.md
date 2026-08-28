@@ -35,3 +35,7 @@ To apply automated start-stop schedules to resources in secondary accounts:
 Use AWS Systems Manager Parameter Store to store remote account IDs. You can store remote Account IDs as a list parameter where every item is an account ID, or as a string parameter that contains a comma-delimited list of remote account IDs. The parameter has the format {param:\_name\_} where the name is the name of the parameter in Parameter Store.
 
 To leverage this feature, you must launch the Instance Scheduler on AWS hub stack in the same account as your parameter store.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Instance Scheduler on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

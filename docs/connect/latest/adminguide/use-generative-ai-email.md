@@ -112,3 +112,7 @@ To ensure the best quality response from AI agents, implement the following best
 + Monitor AI agent performance through Amazon CloudWatch logs for:
   + Response feedback from your agents. For more information, see [TRANSCRIPT\_RESULT\_FEEDBACK](monitor-ai-agents.md#documenting-cw-events-ih).
   + Generated email responses shown to agents. For more information, see [TRANSCRIPT\_RECOMMENDATION](monitor-ai-agents.md#documenting-cw-events-ih).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

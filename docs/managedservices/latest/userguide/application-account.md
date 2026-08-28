@@ -27,3 +27,7 @@ Application accounts are provisioned through an RFC submitted from the Managemen
 + Create Application Account With VPC [ct-1zdasmc2ewzrs](https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-managed-management-account-create-application-account-with-vpc.html)
 + Create Accelerate Account [ct-2p93tyd5angmi](https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-managed-management-account-create-accelerate-account.html)
 + Create Customer-Managed Application Account [ct-3pwbixz27n3tn](https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-managed-management-account-create-customer-managed-application-account.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

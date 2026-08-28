@@ -230,3 +230,7 @@ Follow these security best practices when configuring IAM permissions for Amazon
 +  **Enable Amazon S3 bucket versioning:** Versioning must be enabled on your buckets. This is required for Amazon Location Jobs to function properly.
 +  **Use Amazon S3 bucket policies:** Add bucket policies to your Amazon S3 buckets for additional access control beyond IAM policies.
 +  **Monitor role usage:** Use to monitor when and how the execution role is used by Amazon Location Jobs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

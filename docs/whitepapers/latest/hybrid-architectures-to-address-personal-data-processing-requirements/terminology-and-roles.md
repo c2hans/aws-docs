@@ -11,3 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 +  **Personal data processing –** Any operation or set of operations performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organization, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination, or otherwise making available, alignment or combination, restriction, erasure or destruction.
 
  Typically, AWS customers or their end users are considered an Operator, because the AWS customers or their end users determine both the scope and the purpose of processing of personal data or other data in AWS services. AWS does not define the purpose or the scope of the processing, and processes any data that the customer uploads, transmits or processes on AWS services solely on behalf of the respective customer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ Because Amazon Keyspaces paginates results based on the number of rows that it r
 For example, if you set `PAGE SIZE` to 10 and Keyspaces evaluates 30 rows to process your `SELECT` query, Amazon Keyspaces will return three pages. If only a subset of the rows matched your query, some pages may have less than 10 rows. For an example how the `PAGE SIZE` of `LIMIT` queries can affect read capacity, see [Estimate the read capacity consumption of limit queries](limit_queries.md).
 
 For a comparison with Apache Cassandra pagination, see [Pagination](functional-differences.md#functional-differences.paging).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -1520,3 +1520,7 @@ The alternative text description of the image, which is used for accessibility p
 + **Width**: The width of the **Image viewer** component, specified as a percentage (%) or a fixed pixel value (e.g., 300px).
 + **Height**: The height of the **Image viewer** component, specified as a fixed pixel value.
 + **Background**: Allows you to set a background color or image for the **Image viewer** component.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

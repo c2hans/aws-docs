@@ -59,6 +59,8 @@ A namespace can have different levels of granularity:
 
 For example code, see [Enable long-term memory](long-term-enabling-long-term-memory.md).
 
+For more information about organizing long-term memories with namespaces, including custom namespace variables and IAM access control, see [Specify long-term memory organization with namespaces](specify-long-term-memory-organization.md).
+
 ### Restrict access with IAM
 <a name="memory-scope-iam"></a>
 
@@ -99,3 +101,7 @@ The following policy restricts access to retrieving memories to a specific names
   ]
 }
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

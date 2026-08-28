@@ -208,3 +208,7 @@ The following example illustrates how storage capacity and throughput capacity i
 <a name="measure-performance-cw"></a>
 
 You can use Amazon CloudWatch to measure and monitor your file system's throughput and IOPS. For more information, see [Monitoring with Amazon CloudWatch](monitoring-cloudwatch.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

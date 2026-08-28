@@ -143,3 +143,7 @@ Optionally, you can also specify the following parameters when you create an int
 To override the default configurations for applications, supply a coonfiguration object. You can use a shorthand syntax to provide the configuration, or you can reference the configuration object in a JSON file.
 
 Configuration objects consist of a classification, properties, and optional nested configurations. Properties consist of the settings that you want to override in that file. You can specify multiple classifications for multiple applications in a single JSON object. The configuration classifications that are available vary by Amazon EMR on EKS release. For a list of configuration classifications that are available for each release of Amazon EMR on EKS, see [Amazon EMR on EKS releases](emr-eks-releases.md). In addition to the configuration classifications listed for each release, interactive endpoints bring in the additional classification `jeg-config`. For more information, see [Jupyter Enterprise Gateway (JEG) configuration options](jeg-config-options.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

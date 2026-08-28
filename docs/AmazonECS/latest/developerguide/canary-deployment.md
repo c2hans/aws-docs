@@ -162,3 +162,7 @@ Ensure effective team coordination during canary deployments:
 + Deployment windows - Schedule canary deployments during business hours when teams are available to monitor and respond.
 + Communication channels - Establish clear communication channels for deployment status and issue escalation.
 + Role assignments - Define roles and responsibilities for monitoring, decision-making, and rollback execution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

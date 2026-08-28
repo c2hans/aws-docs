@@ -23,3 +23,7 @@ If you select HDR10 in the Color Space dropdown box, the HDR Master Display Info
 If you leave Force Color unchecked, these HDR Master Display Information fields still show values, but these values are not used. AWS Elemental Server instead uses metadata values from the incoming stream. You can view these values in the media info display after the job starts.
 
 ![An image of the AWS Elemental Server web interface.](http://docs.aws.amazon.com/elemental-server/latest/ug/images/input-adv2.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

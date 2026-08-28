@@ -385,3 +385,7 @@ The dashboard will dynamically update to display graphs for your selected metric
 This integrated monitoring approach allows you to track both standard EMR metrics and your custom metrics in a unified dashboard, making it easier to identify performance issues, resource constraints, or application bottlenecks without leaving the EMR console.
 
 ![EMR cluster monitoring dashboard showing CloudWatch metrics and filter options.](http://docs.aws.amazon.com/emr/latest/ManagementGuide/images/metrics_cloudwatch_metrics.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

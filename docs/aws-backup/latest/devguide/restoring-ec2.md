@@ -187,3 +187,7 @@ Or, the volumes attached to the source instance are unencrypted.
 **Issue: ** The volumes in the backup might be encrypted with single-Region AWS KMS keys that are not available in the destination Region. Or, the volumes attached to the source instance are unencrypted.
 
 **Solution: ** To resolve this issue, set the `encrypted` attribute to `true`, and override the KMS key in the `BlockDeviceMappings` with a KMS key in the destination Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

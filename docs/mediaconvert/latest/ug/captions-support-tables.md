@@ -14,3 +14,7 @@ For information about how to set up captions in your output, see [Setting up cap
 To look up whether MediaConvert supports your captions workflow, choose the topic from the following list that corresponds to your input captions. Find the table that corresponds to your video output container. Then find the row for your input captions. Check the supported output captions format column to see the available output captions formats.
 + If your primary MediaConvert input contains your captions, see [Supported input captions, within video containers](captions-support-tables-by-container-type.md).
 + If your captions are in a separate file, which you specify in your input captions selector, see [Supported input captions, within sidecar files](sidecar-captions-support-tables-by-container-type.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

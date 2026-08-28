@@ -50,3 +50,7 @@ Set how the Y-axis scales. The choices are **Linear** or **Logarithmic**. If you
 You can override a series to apply a transform to values on a graph (without affecting the underlying values or the values in tooltips, context menus, or legends). You have two transform options:
 + **Negative Y transform** – Flip the results to negative values on the Y axis.
 + **Constant** – Show the first value as a constant line.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

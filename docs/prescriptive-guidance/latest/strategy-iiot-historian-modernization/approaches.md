@@ -38,3 +38,7 @@ A modern, cloud-native historian approach focuses on number of activities, inclu
 + Enhance product quality with real-time analytics services that process data at the edge, such as AWS IoT SiteWise.
 
 For more information about the benefits of using AWS services to modernize historians in the cloud, see [Using AWS to modernize historians](using-aws.md) in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,3 +47,7 @@ The input has SRT captions in German and French. You want to convert the caption
 
    Although there are three outputs, they are all in the same output group, so the video/audio and two captions are kept together.
 ![Three output streams with name modifiers av, DE, and FR in a single output group.](http://docs.aws.amazon.com/elemental-server/latest/ug/images/example-easy-workflow-4.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

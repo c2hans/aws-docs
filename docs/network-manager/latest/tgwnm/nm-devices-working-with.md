@@ -34,3 +34,7 @@ View details about a device. On the device details page you can access tabs:
 + [Associate or disassociate a Connect peer](nm-devices-connect-peer.md)
 + [View VPNs](nm-devices-vpns.md)
 + [Monitor devices](nm-devices-monitoring.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -127,3 +127,7 @@ By default, [ Amazon EFS creates backups of data automatically](https://docs.aws
 It is best practice to keep this auto-backup active. Particularly in the case of accidental data deletion, this backup allows restoration of file system content to the date of the last recovery point created.
 
 In the unlikely event you wish to turn these off, the access policy must be changed from `"Effect": "Deny"` to `"Effect": "Allow"`. See the *Amazon EFS User Guide* for more information about turning [ automatic backups](https://docs.aws.amazon.com/efs/latest/ug/awsbackup.html#automatic-backups) on or off.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ View details about updates to AWS managed policies for AWS Cloud WAN since this 
 | --- | --- | --- |
 | [AWSNetworkManagerCloudWANServiceRolePolicy](#security-iam-AWSNetworkManagerCloudWANServiceRolePolicy) - New policy.  | Added a policy to allow Network Manager to access resources associated with your core network. | July 12, 2022 |
 | [AWSNetworkManagerServiceRolePolicy](#security-iam-AWSNetworkManagerServiceRolePolicy) - New policy. | Added a policy to allow Network Manager to access resources associated with your global networks. | December 3, 2019 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

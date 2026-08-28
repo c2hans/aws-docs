@@ -35,3 +35,7 @@ The default home page blogs widget might appear empty depending on your selected
 All functionality from the legacy home page (before re:Invent 2025) remains available through the Connect Customer navigation menu.
 
 For example, to use the test chat functionality, go to the Communications menu. For service level metrics, go to the **Analytics and optimization** menu, select **Dashboards and reports**, and open the **Queue and agent performance dashboard**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

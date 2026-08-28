@@ -57,3 +57,7 @@ In `BatchCreateDelegationByAssessment`, `roleType` can only be `RESOURCE_OWNER`.
 ## See also
 <a name="aws-properties-auditmanager-assessment-role--seealso"></a>
 + [Role](https://docs.aws.amazon.com/audit-manager/latest/APIReference/API_Role.html) in the *AWS Audit Manager API Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

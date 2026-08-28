@@ -29,3 +29,7 @@ You can choose the account where the Amazon MSK cluster resides. This can be one
 ****Topic****
 Specify the Apache Kafka topic from which you want your Firehose stream to ingest data. You cannot update this topic after Firehose stream creation completes.
 Firehose automatically decompresses Apache Kafka messages.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

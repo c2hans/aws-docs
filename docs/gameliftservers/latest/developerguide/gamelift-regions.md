@@ -97,3 +97,7 @@ For more information about setting up FlexMatch for your hosting solution, see t
 When using Amazon GameLift Servers for resources in the China (Beijing) Region, operated by Sinnet, or the China (Ningxia) Region, operated by NWCD, you must have a separate AWS (China) account. Be aware that some features are unavailable in the China Regions. For more information about using Amazon GameLift Servers in these Regions, see the following resources:
 +  [Amazon Web Services in China](https://www.amazonaws.cn/en/about-aws/china/)
 +  [Amazon GameLift Servers](https://docs.amazonaws.cn/en_us/aws/latest/userguide/gamelift.html) (Getting Started with Amazon Web Services in China)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

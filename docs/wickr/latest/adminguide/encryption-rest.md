@@ -231,3 +231,7 @@ Key events to monitor:
 + **GetPublicKey** — Occurs on the password recovery key when your `collect.py` script retrieves the public key for local ECDH encryption.
 
 Additionally, the Service Catalog product creates a CloudWatch dashboard (`WickrDataRetentionService-{{{networkId}}}`) that includes widgets for KMS key success metrics (Encrypt, GenerateDataKey, Decrypt operations) and a decryption error alarm that triggers when decryption failures are detected.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

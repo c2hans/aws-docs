@@ -157,3 +157,7 @@ If no public endpoint is specified in the current deployment, this URL returns a
  *Container deployment failures*
 
 The stack will drift if the deployment to your `ContainerService` fails. This is because the template will have a different deployment compared to the container service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

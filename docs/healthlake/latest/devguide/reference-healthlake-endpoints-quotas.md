@@ -168,3 +168,7 @@ The following table lists the default quotas for HealthLake Data Transformation 
 | Rate of ListDataTransformationJobs requests per account | Each supported Region: 1 | Yes | The maximum number of ListDataTransformationJobs requests that you can make per second per account. |
 | Rate of sync (real-time) conversion requests (TransformData) per account | Each supported Region: 1 | Yes | The maximum number of TransformData requests that you can make per second per account. |
 | Rate of ValidateSource per account | Each supported Region: 1 | Yes | The maximum number of ValidateSource requests that you can make per second per account. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

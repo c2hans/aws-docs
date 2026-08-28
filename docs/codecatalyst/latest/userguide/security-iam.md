@@ -257,3 +257,7 @@ This section provides a permissions reference for actions used with the account 
 | ListSpacesForIdentityCenterApplication | Required to view a list of CodeCatalyst spaces by IAM Identity Center application. This is an IAM policy permission only, not an API action. | arn:aws:codecatalyst:region:{{account\_ID}}:/identity-center-applications/{{identity-center-application\_ID}} |
 | SynchronizeIdentityCenterApplication | Required to synchronize an IAM Identity Center application with the backing identity store. This is an IAM policy permission only, not an API action. | arn:aws:codecatalyst:region:{{account\_ID}}:/identity-center-applications/{{identity-center-application\_ID}} |
 | UpdateIdentityCenterApplication | Required to update an IAM Identity Center application. This is an IAM policy permission only, not an API action. | arn:aws:codecatalyst:region:{{account\_ID}}:/identity-center-applications/{{identity-center-application\_ID}} |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

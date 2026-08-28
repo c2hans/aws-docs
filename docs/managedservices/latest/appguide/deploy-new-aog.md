@@ -263,3 +263,7 @@ To submit a request for a new CT, access the AMS console through the regular [AW
 <a name="test-new-ct-aog"></a>
 
 Once AWS Managed Services has created that new CT, you test it by submitting an RFC with it. If you worked with AMS to make the new CT pre-approved, then you can simply follow a standard RFC submission, and watch for the result (for details on submitting RFCs, see [Creating and Submitting an RFC](https://docs.aws.amazon.com/managedservices/latest/userguide/create-rfcs.html)). If the new CT is not pre-approved (you want to be sure that it is never run without explicit approval), then you will need to discuss its implementation with AMS each time you want to run it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -214,3 +214,7 @@ You can enable Advertise CA subject name on new and existing listeners. For more
 Elastic Load Balancing provides connection logs that capture attributes about the requests sent to your Application Load Balancers. Connection logs contain information such as the client IP address and port, client certificate information, connection results, and TLS ciphers being used. These connection logs can then be used to review request patterns, and other trends.
 
 To learn more about connection logs, see [Connection logs for your Application Load Balancer](load-balancer-connection-logs.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,3 +46,7 @@ AMS follows a set of practices for IT service management (ITSM) that focuses on 
 <a name="about-guide"></a>
 
 This user guide is intended for AMS Advanced customers with either a multi-account or single-account landing zone. For more details about the AMS landing zone offerings, see the [AMS Key Terms](https://docs.aws.amazon.com/managedservices/latest/userguide/key-terms.html); also see [Multi-Account Landing Zone architecture](https://docs.aws.amazon.com/managedservices/latest/userguide/malz-net-arch.html) and [Single-Account Landing Zone architecture](https://docs.aws.amazon.com/managedservices/latest/userguide/ams-net-arch.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

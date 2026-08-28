@@ -48,3 +48,7 @@ Complete the following steps to disable a metric alarm using the Lightsail conso
 1. Choose the metric for which you want to disable an alarm in the drop-down under the **Metrics Graphs** heading.
 
 1. Scroll down to the **Alarms** section of the page, locate the alarm you want to disable, and choose the toggle to disable it. Likewise, choose the toggle to enable it if it's disabled.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

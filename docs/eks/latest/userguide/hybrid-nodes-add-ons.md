@@ -222,3 +222,7 @@ The control plane needs to reach Metrics Server’s pod IP (or node IP if hostNe
 <a name="hybrid-nodes-add-ons-cert-manager"></a>
 
  `cert-manager` uses [webhooks](https://kubernetes.io/docs/reference/access-authn-authz/webhook/). If you run `cert-manager` on hybrid nodes, your on-premises pod CIDR must be routable on your on-premises network and you must configure your EKS cluster with your remote pod network. For more information, see [Configure webhooks for hybrid nodes](hybrid-nodes-webhooks.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

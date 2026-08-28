@@ -35,3 +35,7 @@ AWS provides its own managed extensions, including:
 + [AWS Parameters and Secrets](with-secrets-manager.md) – Securely retrieve parameters from AWS Systems Manager Parameter Store and secrets from AWS Secrets Manager in Lambda functions.
 
 For additional extensions samples and demo projects, see [AWS Lambda Extensions](https://github.com/aws-samples/aws-lambda-extensions).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

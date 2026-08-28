@@ -33,3 +33,7 @@ Full functionality of AWS DataSync is available in your AMS account.
 + To launch an AWS DataSync agent, submit an RFC with the Management \| Other \| Other \| Create (ct-1e1xtak34nx76) change type, requesting the agent be deployed. Provide the AWS DataSync Amazon EC2 AMI ID, instance type, subnet, security group; and either reference an existing Amazon EC2 keypair or request the creation of a new keypair.
 **Note**
 AMS provisions the AWS DataSync agent manually on behalf of customer, and doesn't require the WIGS ingestion process on the AWS DataSync Amazon EC2 AMI.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

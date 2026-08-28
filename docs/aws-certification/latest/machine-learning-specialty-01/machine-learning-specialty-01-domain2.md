@@ -28,3 +28,7 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/machine-learnin
 + Create graphs (for example, scatter plots, time series, histograms, box plots).
 + Interpret descriptive statistics (for example, correlation, summary statistics, p-value).
 + Perform cluster analysis (for example, hierarchical, diagnosis, elbow plot, cluster size).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

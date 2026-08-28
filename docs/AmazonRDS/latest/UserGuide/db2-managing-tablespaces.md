@@ -270,3 +270,7 @@ You can list all tablespace containers or specific tablespace containers by usin
    cast(container_id as smallint) as id,
    cast(container_name as varchar(60)) as container_path, container_type as type from table(mon_get_container('TBSP_1',-2)) order by member, tbsp_id,container_id"
    ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

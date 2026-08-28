@@ -53,3 +53,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/filesystem-slash-var.htm
  For more information, including how to configure two services to share the same private temporary directories, see the `systemd.exec(5)` man page.
 
  The [`/tmp`](filesystem-slash-tmp.md) and [`/var/tmp`](#filesystem-slash-var-tmp) paths are closely related and exist for different purposes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

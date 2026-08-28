@@ -289,3 +289,7 @@ aws bedrock create-evaluation-job --cli-input-json file://{{my_eval_job.json}}
 The example JSON file contains two `evaluatorModelConfig` objects. The one inside the `customMetricConfig` object specifies the evaluator model to be used with custom metrics. The other instance specifies the model to use for built-in metrics. Take care to specify these two objects correctly.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

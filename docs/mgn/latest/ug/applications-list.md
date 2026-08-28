@@ -27,7 +27,7 @@ The columns include:
   +  **In progress** – At least one of the application associated servers has started replication and not all of its servers completed migration.
   +  **Completed** – All the application associated servers completed migration (have been cut over).
 +  **Alerts** – This column shows whether any alerts exist for the application.
-  + **Stalled** – An application that has at least one server that is experiencing significant issues, such as a stall,.
+  + **Stalled** – An application that has at least one server that is experiencing significant issues, such as a stall.
   + **Lagging** – An application that has at least one server that is experiencing a temporary issue such as lag or backlog.
   + **Healthy** – A healthy active application.
 
@@ -41,3 +41,7 @@ The columns include:
 + [Delete application](delete-application.md)
 + [Manage applications](application-actions-menu.md)
 + [Filtering the Applications page](applications-filtering.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

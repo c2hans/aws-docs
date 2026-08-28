@@ -46,3 +46,7 @@ Using `-Maxsize`, you can define shadow copy storage as follows:
    ```
 
 You can limit the maximum number of shadow copies allowed on your file system by using the `Set-FSxShadowStorage` command with the `-MaxShadowCopyNumber` parameter and specifying a value from 1-500. By default, the maximum number of shadow copies is set to 20, as recommended for by Microsoft for active workloads.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

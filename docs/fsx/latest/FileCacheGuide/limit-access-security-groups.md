@@ -92,3 +92,7 @@ Add the following outbound rules to the security groups applied to your clients.
 | Custom TCP rule | TCP | 988 | Choose Custom and enter the security group IDs of the security groups associated with your Amazon File Cache file servers | Allow Lustre traffic between Amazon File Cache file servers and Lustre clients |
 | Custom TCP rule | TCP | 1018-1023 | Choose Custom and enter the security group IDs of the security groups that are applied to your Lustre clients | Allows Lustre traffic between Lustre clients |
 | Custom TCP rule | TCP | 1018-1023 | Choose Custom and enter the security group IDs of the security groups associated with your Amazon File Cache file servers | Allows Lustre traffic between Amazon File Cache file servers and Lustre clients |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

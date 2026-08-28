@@ -146,3 +146,7 @@ The code for this pattern is available in the GitHub [Automated Terraform Infras
 + [Managing your personal access tokens](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens)
 + [Understanding GitHub Actions](https://docs.github.com/en/actions/get-started/understand-github-actions)
 + [Quickstart for GitHub Actions](https://docs.github.com/en/actions/get-started/quickstart)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

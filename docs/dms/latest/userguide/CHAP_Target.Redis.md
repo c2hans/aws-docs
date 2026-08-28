@@ -164,3 +164,7 @@ The `--redis-settings` parameters follow:
 + `AuthType`–(Required) Indicates the type of authentication to perform when connecting to Redis OSS. Valid values include `none`, `auth-token`, and `auth-role`.
 
   The `auth-token` option requires an "{{AuthPassword}}" be provided, while the `auth-role` option requires "{{AuthUserName}}" and "{{AuthPassword}}" be provided.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

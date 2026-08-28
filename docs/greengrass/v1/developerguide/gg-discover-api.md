@@ -177,3 +177,7 @@ $ curl --cert 1a23bc4d56.cert.pem --key 1a23bc4d56.private.key https://greengras
 89012:thing/MyFirstGroup_Core","Connectivity":[{"Id":"AUTOIP_192.168.1.4_1","HostAddress":"192.168.1.5","PortNumber
 ":8883,"Metadata":""}]}],"CAs":["-----BEGIN CERTIFICATE-----\n{{cert-contents}}\n-----END CERTIFICATE-----\n"]}]}
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

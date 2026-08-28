@@ -14,3 +14,7 @@ The following table describes Neptune Streams exceptions.
 | `ThrottlingException` | 500 | Yes | Rate of requests exceeds the maximum throughput. |
 | `StreamRecordsNotFoundException` | 404 | No | The requested resource could not be found. The stream may not be specified correctly. |
 | `MemoryLimitExceededException` | 500 | Yes | The request processing did not succeed due to lack of memory, but can be retried when the server is less busy. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

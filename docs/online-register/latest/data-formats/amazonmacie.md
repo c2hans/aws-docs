@@ -51,3 +51,7 @@ Amazon Macie provides the following APIs for data retrieval.
 | <a name="macie2-ListSensitivityInspectionTemplates"></a>[ListSensitivityInspectionTemplates](https://docs.aws.amazon.com/macie/latest/APIReference/templates-sensitivity-inspections.html) | Retrieve a subset of information about the sensitivity inspection template for an account | List |
 | <a name="macie2-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/macie/latest/APIReference/tags-resourcearn.html) | Retrieve the tags for an Amazon Macie resource | Read |
 | <a name="macie2-SearchResources"></a>[SearchResources](https://docs.aws.amazon.com/macie/latest/APIReference/datasources-search-resources.html) | Retrieve statistical data and other information about AWS resources that Amazon Macie monitors and analyzes | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

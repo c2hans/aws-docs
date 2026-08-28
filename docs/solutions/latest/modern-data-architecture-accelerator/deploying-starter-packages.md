@@ -17,3 +17,7 @@ When deploying starter packages, consider the following:
 Before deploying any starter kit, address the `TODO` markers in each kit’s config files. In particular, the CDK Nag suppression blocks in `roles.yaml` (path varies by kit — for example, `govern/roles.yaml`, `governance/roles.yaml`, `shared/roles.yaml`, or `common/roles.yaml`) are commented out by default. Review each suppression, confirm the associated IAM permissions are acceptable for your environment, and uncomment the ones that apply. If you leave them commented, `mdaa synth`/`deploy` will fail CDK Nag compliance checks and the deployment will not proceed.
 
 The following sections provide detailed information about each available starter package, including architecture components, deployment instructions, and usage guidelines.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Modern Data Architecture Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

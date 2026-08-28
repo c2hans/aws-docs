@@ -67,3 +67,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/gs-data-lake-formats-delt
   +  To update the Data Catalog after the AWS Glue job execution, run or schedule a AWS Glue crawler. For more information, see [ How to specify configuration options for a Delta Lake data store](https://docs.aws.amazon.com/glue/latest/dg/crawler-configuration.html#crawler-delta-lake).
 +  **Partition keys** — Choose which columns to use as partitioning keys in the output. To add more partition keys, choose **Add a partition key**.
 +  Optionally, choose **Addtional options** to enter a key-value pair. For example, a key-value pair could be: **key**: timestampAsOf and **value**: 2023-02-24 14:16:18.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ By using the **Message templates** page, you can quickly find and open a specifi
 1. On the **Message templates** page, choose the template that you want to open. The template page opens and displays information about the template. It also displays the contents of the active version of the template.
 
 1. To view a different version of the template, use the version selector under **Template details** to choose the version that you want to view.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

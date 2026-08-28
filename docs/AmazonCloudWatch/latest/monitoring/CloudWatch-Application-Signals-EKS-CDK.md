@@ -354,3 +354,7 @@ Running CloudWatch Agent service using replica mode requires specific security g
    + {{APPLICATION\_SERVICE}} is the service of your application. It includes the two following containers:
      + `init`– A required container for initializing Application Signals.
      + `{{my-app}}`– This is the example application container in our documentation. In your actual workloads, this specific container might not exist or might be replaced with your own service containers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

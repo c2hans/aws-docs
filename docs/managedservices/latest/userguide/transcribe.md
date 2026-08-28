@@ -33,3 +33,7 @@ You must submit Risk Acceptance if you want to use customer-managed KMS Keys tha
 **Q: What are the prerequisites or dependencies to using Amazon Transcribe in my AMS account?**
 
 S3 must have access to the buckets with the name 'customer-transcribe\*'. KMS is required in order to use Amazon Transcribe if your S3 buckets are encrypted with KMS keys. If a bucket doesn’t need to be encrypted "KMStranscribeAllow" can be removed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

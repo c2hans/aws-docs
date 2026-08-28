@@ -325,3 +325,7 @@ A statement that inserts one or more rows into the external table by defining an
 <a name="r_CREATE_EXTERNAL_TABLE_examples_link"></a>
 
 A collection of examples is available at [Examples](r_CREATE_EXTERNAL_TABLE_examples.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

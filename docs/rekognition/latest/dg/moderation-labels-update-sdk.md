@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/rekognition/latest/dg/moderation-labels-
 | [go\_v2](https://d1m67pwji3rslw.cloudfront.net/sdk/aws_rekognition_go_v2.zip) | [Guide - GO V2.pdf](https://d1m67pwji3rslw.cloudfront.net/guide/Guide_GoV2.pdf) |
 | [DotNet](https://d1m67pwji3rslw.cloudfront.net/sdk/aws_rekognition_dotnet.zip) | [Guide - .NET.pdf](https://d1m67pwji3rslw.cloudfront.net/guide/Guide_DotNET.pdf) |
 | [php](https://d1m67pwji3rslw.cloudfront.net/sdk/aws_rekognition_php.zip) | [Guide - PHP.pdf](https://d1m67pwji3rslw.cloudfront.net/guide/Guide_PHP.pdf) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

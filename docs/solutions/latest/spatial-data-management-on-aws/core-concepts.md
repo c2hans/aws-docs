@@ -59,3 +59,7 @@ Connectors enable configuration-driven integration between the solution and exte
 Now that you understand the core concepts, you can proceed with deploying and configuring the solution:
 +  [Plan your deployment](plan-your-deployment.md) – Review deployment considerations and prerequisites
 +  [Deploy the solution](deploy-the-solution.md) – Deploy the solution to your AWS account
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

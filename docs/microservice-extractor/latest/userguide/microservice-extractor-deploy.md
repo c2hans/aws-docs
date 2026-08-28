@@ -24,3 +24,7 @@ To deploy the extracted service as an independent service, perform the following
 1. Push the Docker container image to Amazon Elastic Container Registry (Amazon ECR).
 
 1. Use CloudFormation to deploy the container image hosted in Amazon ECR to Amazon Elastic Container Service (ECS). For more information, see [Using Amazon ECR with Amazon ECS](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecr-repositories.html) and [Creating Amazon ECS resources with CloudFormation](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/creating-resources-with-cloudformation.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

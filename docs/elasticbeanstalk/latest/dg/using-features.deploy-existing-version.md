@@ -102,3 +102,7 @@ If you deploy often, consider using the [Elastic Beanstalk Command Line Interfac
 For deployments that depend on resource configuration changes or a new version that can't run alongside the old version, you can launch a new environment with the new version and perform a CNAME swap for a [blue/green deployment](using-features.CNAMESwap.md).
 
 To automate your build, test, and deployment processes, you can implement continuous integration and continuous deployment (CI/CD) with your Elastic Beanstalk environment. For more information, see [Implementing CI/CD integration with your Elastic Beanstalk environment](deployments.cicd.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

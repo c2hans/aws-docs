@@ -67,3 +67,7 @@ The following are the service endpoints and service quotas for this service.
 | Policy generation CloudTrail data size | Each supported Region: 25 Gigabytes | No | The maximum size of CloudTrail data per policy generation. |
 | Policy generation CloudTrail time range | Each supported Region: 90 | No | The maximum CloudTrail time range that you can select in days when you generate a policy. |
 | Policy generations per day | af-south-1: 5<br />ap-east-1: 5<br />ap-south-2: 5<br />ap-southeast-3: 5<br />ap-southeast-4: 5<br />ca-west-1: 5<br />eu-central-2: 5<br />eu-south-1: 5<br />eu-south-2: 5<br />Each of the other supported Regions: 50 | No | The maximum number of policy generations per day. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

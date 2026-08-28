@@ -14,9 +14,9 @@ When a guardrail evaluates context, it returns a confidence score between 0 and 
 
 The following table shows which AWS Regions have support for guardrails in policy:
 
-|  | US East (N. Virginia) | US East (Ohio) | US West (Oregon) | Europe (Frankfurt) | Europe (Ireland) | Europe (London) | Europe (Paris) | Europe (Stockholm) | Asia Pacific (Mumbai) | Asia Pacific (Singapore) | Asia Pacific (Sydney) | Asia Pacific (Tokyo) | Asia Pacific (Seoul) | Canada (Central) | South America (São Paulo) |  AWS GovCloud (US-West) |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Guardrails Support | ✅ | ❌ | ❌ | ❌ | ❌ | ✅ | ❌ | ✅ | ❌ | ❌ | ✅ | ✅ | ❌ | ❌ | ❌ | ❌ |
+|  | US East (N. Virginia) | US East (Ohio) | US West (N. California) | US West (Oregon) | Asia Pacific (Hyderabad) | Asia Pacific (Malaysia) | Asia Pacific (Mumbai) | Asia Pacific (Seoul) | Asia Pacific (Singapore) | Asia Pacific (Sydney) | Asia Pacific (Thailand) | Asia Pacific (Tokyo) | Canada (Central) | Europe (Frankfurt) | Europe (Ireland) | Europe (London) | Europe (Milan) | Europe (Paris) | Europe (Spain) | Europe (Stockholm) | South America (São Paulo) |  AWS GovCloud (US-West) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Guardrails Support | ✓ Yes | No | No | No | No | No | No | No | No | ✓ Yes | No | ✓ Yes | No | No | No | ✓ Yes | No | No | No | ✓ Yes | No | No |
 
 ## Before you begin
 <a name="policy-guardrails-before-you-begin"></a>
@@ -219,3 +219,7 @@ Note: Guardrails are non-deterministic. The same input can result in different o
 +  **No support for regex or pattern matching** — guardrails use ML scoring, not regular expressions
 +  **You cannot mix standard Cedar policies with guardrails** — `when guardrails {…​}` replaces `when {…​}`
 +  **A guardrail is required in a `when guardrails {…​}` block** — guardrails blocks must have at least one guardrail defined within
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

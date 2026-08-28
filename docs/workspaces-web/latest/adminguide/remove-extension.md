@@ -16,3 +16,7 @@ To edit domains or remove the extension, follow these steps.
 1. Remove or edit individual domains.
 
 1. Once removed, sessions will no longer synchronize cookies, even if the user has the WorkSpaces Secure Browser extension installed in their browser.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

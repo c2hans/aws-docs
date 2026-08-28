@@ -56,3 +56,7 @@ It can take up to 24 hours for AWS to start delivering reports to your S3 bucket
 You can configure EC2 Fast Launch for Windows AMIs that you own, or AMIs that are shared with you from the Amazon EC2 console, API, SDKs, [CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-imagebuilder-distributionconfiguration-fastlaunchconfiguration.html), or **ec2** commands in the AWS CLI. The following sections cover configuration steps for the Amazon EC2 console and AWS CLI.
 
 You can also create custom Windows AMIs that are configured for EC2 Fast Launch with EC2 Image Builder. For more information, see [Create distribution settings for a Windows AMI with EC2 Fast Launch enabled (AWS CLI)](https://docs.aws.amazon.com/imagebuilder/latest/userguide/cr-upd-ami-distribution-settings.html#cli-create-ami-dist-config-win-fast-launch).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

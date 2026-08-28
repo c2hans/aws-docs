@@ -15,3 +15,7 @@ By default, all files created inside a container write to a thin writable contai
  Amazon FSx for Windows File Server volumes is available for your Windows tasks on Amazon ECS with Amazon EC2 launch type. This provides fully managed Windows file servers backed by a Windows file system.
 
  Kubernetes supports many types of volumes. Ephemeral volume types have a lifetime of a pod, but persistent volumes exist beyond the lifetime of a pod. When a pod ceases to exist, Kubernetes destroys ephemeral volumes; however, Kubernetes does not destroy persistent volumes. For any kind of volume in a given pod, data is preserved across container restarts. For Amazon EKS, the Container Storage Interface (CSI) allows exposing storage systems/backends to containerized workloads as persistent storage. CSI driver provides an interface to manage the lifecycle of Amazon EBS, Amazon EFS, and Amazon FSx for persistent volumes. For more information, see [*Kubernetes Volumes*](https://kubernetes.io/docs/concepts/storage/volumes/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

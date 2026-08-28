@@ -28,3 +28,7 @@ The instance profile must have permissions to read SSM parameters. If the flag i
 Tag has a higher priority than the SSM parameter. You can turn off the PBIS update at the account level through the parameter, but turn it it for a single (or multiple) instance(s) by adding a tag `Key:skip_pbis_update`, `Value: false`.
 
 To configure any of the described options, follow the standard change management process in your AMS environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

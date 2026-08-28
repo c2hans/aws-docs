@@ -41,3 +41,7 @@ When you create tables and databases manually, Athena uses HiveQL data definitio
 To get started, you can use a tutorial in the Athena console or work through a step-by-step guide in the Athena documentation.
 + To use the tutorial in the Athena console, choose the information icon on the upper right of the console, and then choose the **Tutorial** tab.
 + For a step-by-step tutorial on creating a table and writing queries in the Athena query editor, see [Get started](getting-started.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

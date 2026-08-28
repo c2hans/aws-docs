@@ -151,3 +151,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
  During these scenarios, a member of an organization can manage automation rules with list, get, and delete operations in the AWS CLI or APIs.
 
  When an unlinked Region is made a linked Region, the delegated admin or standalone account can manage resources in a linked Region with list, get, and delete operations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

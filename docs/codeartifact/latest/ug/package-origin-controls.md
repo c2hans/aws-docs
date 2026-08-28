@@ -133,3 +133,7 @@ CodeArtifact doesn't allow publishing package versions that are present in reach
 1. The package origin control settings on `com.mycompany.mypackage` are **Publish: ALLOW** and **Upstream: BLOCK**. You can publish any version of `com.mycompany.mypackage` to your repository that do not already exist because package versions are not reachable.
 
 1. The package origin control settings on `com.mycompany.mypackage` are **Publish: BLOCK** and **Upstream: ALLOW**. You cannot publish any package versions directly to your repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ You should empirically test your mitigation strategies with processes such as [c
 You should also evaluate how well you performed the analysis through team retrospectives. Did everyone know what they were working on during the analysis? Did the number of failure modes you found through resilience analysis align with the team's expectations? Could you identify mitigations for all  the failure modes you discovered? Did the team find the process useful? Do you believe it will lead to improvements in the resilience of your workload?
 
 When real failure events happen that impact your workload's availability, record the specific failure mode, the components that were part of the failure, and the mitigation pattern that was used. Make this metadata searchable in your post-incident analysis tool so you can determine which failure modes and components to focus on in the future. Throughout this process, you can engage your AWS account team and solutions architects.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

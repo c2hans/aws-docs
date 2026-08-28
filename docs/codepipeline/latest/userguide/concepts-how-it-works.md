@@ -188,3 +188,7 @@ Inbound executions operate with the following considerations:
 + When an inbound execution has been stopped or has failed, it cannot be retried because there are no failed actions to retry. When an inbound execution has been stopped, and the transition is enabled, the stopped inbound execution does not continue into the stage.
 
 You can view or stop an inbound execution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

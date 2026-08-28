@@ -329,3 +329,7 @@ Your application needs the [background audio entitlement](https://developer.appl
 + If fewer than 60 frames are provided, the last frame is repeated until 60 frames are reached, regardless of the trim option’s value.
 + If more than 60 frames are provided and the trim option is `true`, the last N frames are dropped, where N is the remainder of the total number of submitted frames divided by 60.
 + If more than 60 frames are provided and the trim option is `false`, the last frame is repeated until the next multiple of 60 frames is reached.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

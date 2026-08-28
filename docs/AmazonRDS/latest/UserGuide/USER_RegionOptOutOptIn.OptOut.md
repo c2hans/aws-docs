@@ -12,3 +12,7 @@ When you opt out of an AWS Region, the following changes apply to your Amazon RD
 You are charged for snapshots in the Region while the Region is opted out.
 
 Opting out of a Region is a reversible action. Your resources are deleted only after taking a snapshot. After you opt back in to the Region, you can restore your resources using the snapshots.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

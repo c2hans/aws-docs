@@ -268,3 +268,7 @@ In AWS Marketplace Vendor Insights, an assessor is equal to a buyer, and a vendo
 | [AWSPrivateMarketplaceAdminFullAccess](#security-iam-awsmanpol-awsprivatemarketplaceadminfullaccess) — Update to an existing policy | AWS Marketplace removed unused permissions from the `AWSPrivateMarketplaceAdminFullAccess` policy. | August 27, 2021 |
 | [AWSMarketplaceFullAccess](#security-iam-awsmanpol-awsmarketplacefullaccess) — Update to an existing policy | AWS Marketplace removed a duplicate `ec2:DescribeAccountAttributes` permission from the `AWSMarketplaceFullAccess` policy. | July 20, 2021 |
 | AWS Marketplace started tracking changes | AWS Marketplace started tracking changes for its AWS managed policies. | April 20, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-
 |  [External tables](https://docs.oracle.com/cd/B19306_01/server.102/b14215/et_concepts.htm)  |  Up to 1 TB  |  Amazon RDS <br /> Amazon EC2 <br /> VMware Cloud on AWS  |  Scenarios where this is the standard method in use  |
 |  [Oracle RMAN](https://www.oracle.com/database/technologies/high-availability/rman.html)  |  Any size  |  Amazon EC2 <br /> VMware Cloud on AWS  |  Databases over 5 TB, or if database backup is already in [Amazon Simple Storage Service](https://aws.amazon.com/s3/) (Amazon S3)  |
 |  [Oracle GoldenGate](https://www.oracle.com/integration/goldengate/)  |  Any size  |  Amazon RDS <br /> Amazon EC2 <br /> VMware Cloud on AWS  |  Minimal downtime migration  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,7 +53,7 @@ Amazon EC2 provides two status checks: the **system status check**, which detect
 
 **Solution 3**: To resolve this issue, try the following:
 + Decrease the desired capacity of the Auto Scaling group to prevent it from trying to launch new instances. For more information, see [Manual scaling for Amazon EC2 Auto Scaling](ec2-auto-scaling-scaling-manually.md).
-+ Make sure you scale in your Auto Scaling group 30 minutes before the Capacity Block end time so that you do not encounter this error frequently. Make sure any lifecycle hooks have completed 30 minutes before the Capacity Block end time. For more information, see [Use Capacity Blocks for machine learning workloads](launch-template-capacity-blocks.md).
++ Make sure you scale in your Auto Scaling group 30 minutes before the Capacity Block end time so that you do not encounter this error frequently. Make sure any lifecycle hooks have completed 30 minutes before the Capacity Block end time. For more information, see [Target Capacity Blocks or interruptible Capacity Reservations from a launch template](capacity-reservation-create-asg-procedure.md#target-capacity-blocks-or-interruptible-capacity-reservations-from-a-launch-template).
 
 ## An instance was taken out of service in response to an ELB system health check failure
 <a name="ts-failed-elb-health-checks"></a>
@@ -80,3 +80,7 @@ Amazon EC2 provides two status checks: the **system status check**, which detect
 If you have a different issue, see the following AWS re:Post articles for additional troubleshooting help:
 +  [Why did Amazon EC2 Auto Scaling terminate an instance?](https://repost.aws/knowledge-center/auto-scaling-instance-how-terminated)
 +  [Why didn't Amazon EC2 Auto Scaling terminate an unhealthy instance?](https://repost.aws/knowledge-center/auto-scaling-terminate-instance)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

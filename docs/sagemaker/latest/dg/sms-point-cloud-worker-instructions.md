@@ -19,3 +19,7 @@ It is recommended that you complete your task using a Google Chrome or Firefox w
 + [3D point cloud semantic segmentation](sms-point-cloud-worker-instructions-semantic-segmentation.md)
 + [3D point cloud object detection](sms-point-cloud-worker-instructions-object-detection.md)
 + [3D point cloud object tracking](sms-point-cloud-worker-instructions-object-tracking.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

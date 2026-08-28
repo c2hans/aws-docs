@@ -26,3 +26,7 @@ Depending on your domain configuration, you might also need to sign requests to 
 OpenSearch Service supports public access domains, which can receive requests from any internet-connected device, and [VPC access domains](vpc.md), which are isolated from the public internet.
 
 If you enable the VPC egress option on a VPC domain, OpenSearch Service places requester-managed egress ENIs in your subnets to carry egress traffic from the domain. For more information, see [Routing domain egress traffic through your VPC](vpc-egress.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

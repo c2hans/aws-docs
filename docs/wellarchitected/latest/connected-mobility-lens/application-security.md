@@ -26,3 +26,7 @@ Start by identifying and creating a list of cybersecurity metrics and requiremen
  Implement secure coding, development process and architectural design following open standards guidelines such AUTOSAR and ASPICE (examples: input validation, buffer overflow protection, error handling to prevent attacks such as SQL injection and cross-site scripting and hardcoded credentials). Conduct code reviews and security audit of the code to identify security vulnerabilities that may be missed during development. Test and validate the software in simulated and real-world scenarios to check it is safe and reliable.
 
  You can leverage the [KPIT Cloud Native Engineering Workbench](https://aws.amazon.com/blogs/industries/accelerating-sdv-development-with-kpit-cloud-native-engineering-workbench-on-aws/) solution on AWS to help accelerate your software-defined vehicle (SDV) development and testing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

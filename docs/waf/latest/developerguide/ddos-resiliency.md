@@ -22,3 +22,7 @@ In addition to reviewing these examples, review and follow the applicable best p
 **Topics**
 + [Example Shield Advanced DDoS resiliency architecture for common web applications](ddos-resiliency-example-web.md)
 + [Example Shield Advanced DDoS resiliency architecture for TCP and UDP applications](ddos-resiliency-example-tcp-udp.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

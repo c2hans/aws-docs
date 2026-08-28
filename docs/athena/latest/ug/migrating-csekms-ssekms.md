@@ -82,3 +82,7 @@ aws athena start-query-execution \
 **Note**
 After you update the workgroup or client-side settings, any new data that you insert by write queries uses the SSE-KMS encryption instead of CSE-KMS. This is because query results encryption configurations also apply to newly inserted table data. Athena query result, metadata, and manifest files are also encrypted with SSE-KMS.
 Athena can still read tables with the `has_encrypted_data` table property even when there are a mix of CSE-KMS encrypted and SSE-S3/SSE-KMS objects.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

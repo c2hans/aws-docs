@@ -21,3 +21,7 @@ The following table describes the important changes to the documentation since t
 | Update | Made updates and fixes. | August 1, 2013 |
 | Update |  +  Made updates and fixes, including updates of the [setup instructions](setup.md) for Eclipse 4.3 and AWS SDK for Java 1.4.7. <br />+  Added a new set of tutorials for building starter scenarios   | June 28, 2013 |
 | New feature | The initial release of the AWS Flow Framework for Java. | February 27, 2012 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

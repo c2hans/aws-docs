@@ -37,3 +37,7 @@ If you plan to register OUs with a large number of accounts, you may encounter l
 **First-time limitations for accounts and opt-in Regions**
 
 If you plan to register OUs with a large number of accounts across multiple opt-in Regions *for the first time*, you may encounter limitations due to [Account Management quotas](https://docs.aws.amazon.com/accounts/latest/reference/quotas.html), which can lead to prolonged latency. Errors may occur during OU registration due to latency.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

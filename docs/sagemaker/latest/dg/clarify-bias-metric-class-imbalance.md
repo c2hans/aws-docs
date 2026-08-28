@@ -21,3 +21,7 @@ Where na is the number of members of facet *a* and nd the number for facet *d*. 
 + CI values near either of the extremes values of -1 or 1 are very imbalanced and are at a substantial risk of making biased predictions.
 
 If a significant facet imbalance is found to exist among the facets, you might want to rebalance the sample before proceeding to train models on it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

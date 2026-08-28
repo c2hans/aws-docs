@@ -46,3 +46,7 @@ If you are new to Migration Hub, you can refer to the following guides.
 <a name="pricing-migrationhub-orchestrator"></a>
 
 Migration Hub Orchestrator is available to you at no additional cost. You only pay for the AWS resources that you provision for migrations. For more information, see [AWS Migration Hub pricing](https://aws.amazon.com/migration-hub/pricing).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Hub Orchestrator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-orchestrator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

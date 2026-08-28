@@ -27,3 +27,7 @@ The goal of operational excellence is to get new features and bug fixes into cus
 + [MD\_OPS 2: How can you design data collection with your Māori customer(s) in mind?](md_ops-2-how-can-you-design-data-collection-with-your-māori-customers-in-mind.md)
 + [MD\_OPS 3: How do you use or share Māori data back with Māori?](md_ops-3-how-do-you-use-or-share-māori-data.md)
 + [Resources](md_ops-resources.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

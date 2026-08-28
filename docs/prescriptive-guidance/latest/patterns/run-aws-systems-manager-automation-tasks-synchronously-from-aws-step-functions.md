@@ -160,3 +160,7 @@ The following table provides sample output from the step function. It shows that
 | **  6** | `TaskSucceeded` | `StartAutomationWaitForCallBack` | - | 103835 | Mar 11, 2022 02:52:18.138 PM |
 | **  7** | `TaskStateExited` | `StartAutomationWaitForCallBack` | - | 103860 | Mar 11, 2022 02:52:18.163 PM |
 | **  8** | `ExecutionSucceeded` |  | - | 103897 | Mar 11, 2022 02:52:18.200 PM |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

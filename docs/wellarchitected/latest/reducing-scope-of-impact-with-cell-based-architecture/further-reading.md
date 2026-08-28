@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reducing-scope-of
 +  [re:Invent 2018: How AWS Minimizes the Blast Radius of Failures (ARC338)](https://www.youtube.com/watch?v=swQbA4zub20)
 +  [Physalia: Cell-based Architecture to Provide Higher Availability on Amazon EBS](https://www.youtube.com/watch?v=6IknqRZMFic&t=1s)
 +  [re:Invent 2022 - Camada Zero: A real-world architecture framework (PRT268)](https://www.youtube.com/watch?v=7IUgTNcPFlU&t=1309s)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

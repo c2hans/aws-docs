@@ -24,3 +24,7 @@ The number the call originated from.
 The physical address that was sent along with the call.
 
 For more information about calling 911, see this [FAQ](https://www.911.gov/calling-911/frequently-asked-questions/) about the national 911 program.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

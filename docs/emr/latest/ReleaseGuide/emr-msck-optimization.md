@@ -23,3 +23,7 @@ Hive implements this command as follows:
 When there are many partitions in the metastore, the step to check if a partition does not exist in the file system takes a long time to run because the file system's `exists` API call must be made for each partition.
 
 In Amazon EMR 6.5.0, Hive introduced a flag called `hive.emr.optimize.msck.fs.check`. When enabled, this flag causes Hive to check for the presence of a partition from the list of partition paths from the file system that is generated in step 2 above instead of making file system API calls. In Amazon EMR 6.8.0, Hive enabled this optimization by default, eliminating the need to set the flag `hive.emr.optimize.msck.fs.check`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

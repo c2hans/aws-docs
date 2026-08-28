@@ -20,3 +20,7 @@ The instances that are launched into the compute fleet are dynamically assigned.
 Both hostnames and fully-qualified domain names (FQDN) are created using Amazon Route 53 hosted zones. The FQDN is `$HOSTNAME.$CLUSTERNAME.pcluster`, where `$CLUSTERNAME` is the name of the [`[cluster]` section](cluster-definition.md) used for the cluster.
 
 To convert your configuration to a queue mode, use the [`pcluster-config convert`](pcluster-config.md#pcluster-config-convert) command. It writes an updated configuration with a single [`[queue]` section](queue-section.md) named `[queue compute]`. That queue contains a single [`[compute_resource]` section](compute-resource-section.md) that is named `[compute_resource default]`. The `[queue compute]` and `[compute_resource default]` has settings migrated from the specified [`[cluster]` section](cluster-definition.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

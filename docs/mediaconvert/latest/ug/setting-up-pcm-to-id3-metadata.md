@@ -57,3 +57,7 @@ Find additional information, including where each setting belongs in the job set
 + **Distributor ID** (`[distributorId](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-nielsenconfiguration-distributorId)`)
 + **Nielsen ID3**, for outputs in an **Apple HLS** output group (`[nielsenId3](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-m3u8settings-nielsenid3)`, child of `[m3u8Settings](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-containersettings-m3u8settings)`)
 + **Nielsen ID3**, for outputs in a **File group** output group (`[nielsenId3](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-m2tssettings-nielsenid3)`, child of `[m2tsSettings](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-containersettings-m2tssettings)`)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

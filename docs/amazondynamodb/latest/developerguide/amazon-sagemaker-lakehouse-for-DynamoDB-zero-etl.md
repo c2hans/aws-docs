@@ -23,3 +23,7 @@ Point-in-time recovery (PITR) must be enabled for the table, and you can apply t
 <a name="amazon-sagemaker-lakehouse-for-DynamoDB-zero-etl-cloudwatch-metrics"></a>
 
 Once an integration completes, you can see these CloudWatch metrics and EventBridge notifications generated in your account for each AWS Glue job. For more information, see [Monitoring an integration](https://docs.aws.amazon.com/glue/latest/dg/zero-etl-monitoring.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

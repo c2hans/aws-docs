@@ -324,3 +324,7 @@ For immediate containment, apply an IAM policy using the `aws:SignInSessionArn` 
 + [Sign-In with OAuth 2.0](oauth-sign-in-overview.md)
 + [AWS Sign-In condition keys reference](reference-signin-condition-keys.md)
 + [Connect an agent to AWS MCP Server](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/getting-started-aws-mcp-server.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

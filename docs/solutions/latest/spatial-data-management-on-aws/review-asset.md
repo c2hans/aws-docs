@@ -49,3 +49,7 @@ Assets are created in `Draft` state by default. After verifying the asset conten
 The asset is now marked as reviewed, indicating it has been validated and is ready for use by other team members with appropriate permissions.
 
 ![Asset details screen — mark reviewed actions menu](http://docs.aws.amazon.com/solutions/latest/spatial-data-management-on-aws/images/mark-reviewed.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

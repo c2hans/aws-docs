@@ -21,3 +21,7 @@ If your VPC is in a different Region from the IAM control plane Region, you must
 
 **Note**
 VPC peering connections can also route traffic between peered VPCs, but this method does not scale well with a large number of VPCs. Instead of VPC peering, we recommend AWS Transit Gateway peering attachments which improve VPC and on-premises network management through a scalable central hub. For more information about VPC peering connections, see [Work with VPC peering connections](https://docs.aws.amazon.com/vpc/latest/peering/working-with-vpc-peering.html) in the *Amazon VPC Peering Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

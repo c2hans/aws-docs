@@ -49,3 +49,7 @@ You can request a backup just before a storage scaling workflow begins or while 
 + If the backup is in progress (backup status is `CREATING`) and you request storage scaling, the storage scaling request is queued. The storage scaling workflow is started when Amazon FSx is transferring the backup to Amazon S3 (backup status is `TRANSFERRING`).
 
 If a storage scaling request is pending and a file system backup request is also pending, the backup task has higher precedence. The storage scaling task does not start until the backup task is finished.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

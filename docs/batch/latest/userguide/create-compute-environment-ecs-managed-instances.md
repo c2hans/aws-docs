@@ -164,3 +164,7 @@ After creating your compute environment, complete the following steps to run job
 1. Create a job definition with `platformCapabilities` set to `MANAGED_INSTANCES` and using `ecsProperties`. For more information, see [Job definitions on Amazon ECS Managed Instances](ecs-managed-instances-job-definitions.md).
 
 1. Submit a job to the job queue. For more information, see [Tutorial: submit a job](submit_job.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

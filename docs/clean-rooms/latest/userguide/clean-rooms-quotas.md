@@ -135,3 +135,7 @@ Your AWS account has the following quotas related to AWS Clean Rooms.
 | Query text length | 90 KB  | Maximum text length for a SQL query statement |
 | Query text length (using differential privacy) | 90 KB | Maximum text length for a SQL query statement using differential privacy |
 | Query run time | 24 hours | Maximum duration a query is run before timeout |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

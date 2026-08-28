@@ -167,3 +167,7 @@ For more information about connection pooling, see the following resources:
 <a name="wait-event.lw-lock-manager.actions.pg-version"></a>
 
 If your current version of RDS for PostgreSQL is lower than 12, upgrade to version 12 or higher. PostgreSQL versions 12 and later have an improved partition mechanism. For more information about version 12, see [PostgreSQL 12.0 Release Notes]( https://www.postgresql.org/docs/release/12.0/). For more information about upgrading RDS for PostgreSQL, see [Upgrades of the RDS for PostgreSQL DB engine](USER_UpgradeDBInstance.PostgreSQL.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

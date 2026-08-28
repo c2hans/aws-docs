@@ -23,3 +23,7 @@ The preceding architecture describes the integration option between Strands Agen
 ![SAP Joule agent orchestrating a Strands-built external tool agent via the Agent-to-Agent Protocol.](http://docs.aws.amazon.com/sap/latest/general/images/rise-agenticai-a2a.png)
 
 The most effective way in SAP is to have a Strands-built agent act as an external tool that an SAP Joule agent can call. With this approach, you can develop specialized, custom logic in Strands, which SAP Joule orchestrates within the business context of SAP applications. The preceding architecture describes how the [Agent-to-Agent](https://github.com/a2aproject/A2A) protocol works.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

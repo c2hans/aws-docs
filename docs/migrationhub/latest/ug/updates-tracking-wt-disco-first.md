@@ -22,3 +22,7 @@ See Step 2.a in *To determine if a migration update must be manually mapped to a
    1. If the **Mapped servers** column is populated for every row of migration updates, this means auto-mapping was supported by the migration tool and manual mapping is not required. To edit the server mapping, select the server, and then choose **Edit server mapping**.
 
    1. If one or more rows of the **Mapped servers** columns is *not* populated, this is an indication that manual mapping is required. Proceed to the next set of procedures.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

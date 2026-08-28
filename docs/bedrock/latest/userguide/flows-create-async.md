@@ -248,3 +248,7 @@ Consider the following when using flow executions:
 + Regularly poll your flow execution's status using [GetFlowExecution](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetFlowExecution.html) until your flow reaches a terminal state (which is anything other than `Running`).
 + When your flow execution reaches a terminal state, use [ListFlowExecutionEvents](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_ListFlowExecutionEvents.html) to get the results of your flow. For example, you might use these results to build some logic around your flow.
 + Get a snapshot of your flow execution using [GetExecutionFlowSnapshot](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_GetExecutionFlowSnapshot.html) to help with debugging if issues come up with the execution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

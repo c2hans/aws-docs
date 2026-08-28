@@ -96,3 +96,7 @@ At 2:54:00, the POIS sends a request to switch to input E at 2:55:30.
 Elemental Live ignores the request to switch to input D. Elemental Live can only have one request in its buffer, and the most recently received request always replaces any request already waiting.
 
 Therefore at 2:55:30, Elemental Live switches to input E.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

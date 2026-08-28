@@ -13,3 +13,7 @@ The information in the following section explains how to build an Amazon Chime S
 + [Creating a meeting for the Amazon Chime SDK](create-meeting.md)
 + [Creating an attendee for the Amazon Chime SDK](create-attendee.md)
 + [Sending a response to the client for the Amazon Chime SDK](send-response-to-client.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

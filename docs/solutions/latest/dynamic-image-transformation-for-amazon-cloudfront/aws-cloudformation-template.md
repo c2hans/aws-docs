@@ -26,3 +26,7 @@ We recommend deploying the optional demo UI when you first deploy the solution t
 **Note**
 If you have previously deployed this solution, see [Update the solution](update-the-solution.md) for update instructions.
 Dynamic Image Transformation for Amazon CloudFront version 6.0 and newer include significant changes, and you can’t update the solution from versions before 6.0 to version 6.0 or later. To use version 6.0 or later, launch a new stack using version 6.x of the CloudFormation template and [uninstall](uninstall-the-solution.md) your previous version of this solution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

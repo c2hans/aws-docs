@@ -65,3 +65,7 @@ To delete a 10DLC brand registration you must delete any 10DLC campaigns associa
 1. For each 10DLC campaign registration follow these directions to [release all phone numbers and delete a 10DLC campaign registration](#registrations-delete-10DLC-campaign).
 
 1. Once all 10DLC campaign registrations are deleted, choose **Delete registration** and in the window enter **delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

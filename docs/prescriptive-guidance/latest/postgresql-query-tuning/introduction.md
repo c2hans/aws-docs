@@ -22,3 +22,7 @@ This guide covers five use cases, with explanations and examples:
 + Subqueries or Common Table Expressions (CTEs)
 
 Each use case provides details of the initial run plan, how to analyze the plan to identify the problem, and a solution. Implementing these use cases typically results in faster response times for queries, reduced load on the server, and overall enhanced system efficiency. Those improvements can lead to a better user experience and increased system reliability.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

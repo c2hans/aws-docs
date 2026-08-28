@@ -108,3 +108,7 @@ To develop a risk mitigation strategy and plan, follow these steps:
 1. Track risk status on an ongoing basis.
 
 By focusing on these elements and best practices, you can develop a comprehensive risk mitigation strategy for your organization that supports cloud transformation, addresses potential roadblocks, and ensures a smoother transition to the cloud environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

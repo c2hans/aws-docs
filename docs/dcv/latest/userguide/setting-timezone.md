@@ -50,3 +50,7 @@ It will indicate if the feature is **Enabled** or **Disabled** under the menu it
 
   1. Click on the switch for **Time Zone Redirection**.
 ![Preferences dialog with General tab showing Time Zone Redirection toggle set to Enabled.](http://docs.aws.amazon.com/dcv/latest/userguide/images/TZR_web_circle.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

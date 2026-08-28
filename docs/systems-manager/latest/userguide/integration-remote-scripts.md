@@ -17,3 +17,7 @@ Note the following important details about running scripts from GitHub.
 + Systems Manager doesn't verify that your script is capable of running on a node. Before you download and run the script, verify that the required software is installed on the node. Or, you can create a composite document that installs the software by using either Run Command or State Manager,tools in AWS Systems Manager, and then downloads and runs the script.
 + You're responsible for ensuring that all GitHub requirements are met. This includes refreshing your access token, as needed. Make sure that you don't surpass the number of authenticated or unauthenticated requests. For more information, see the GitHub documentation.
 + GitHub Enterprise repositories are not supported.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -384,3 +384,7 @@ The network flows pulled from the Top Contributors API are scoped to a 1 hour ti
 + You must be running a minimum version of 1.1.0 for the NFM agent’s EKS add-on.
 + You have to use v6.21.0 or higher of the [Terraform AWS Provider](https://github.com/hashicorp/terraform-provider-aws) for support of Network Flow Monitor resources.
 + To enrich the network flows with pod metadata, your pods should be running in their own isolated network namespace, not the host network namespace.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

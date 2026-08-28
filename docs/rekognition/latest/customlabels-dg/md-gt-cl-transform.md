@@ -153,3 +153,7 @@ To run the code, you need Python version 3, or higher.<a name="md-procedure-mult
 Make sure Amazon Rekognition Custom Labels has access to the Amazon S3 bucket referenced in the `source-ref` field of the manifest file JSON lines. For more information, see [Accessing external Amazon S3 Buckets](su-console-policy.md#su-external-buckets). If your Ground Truth job stores images in the Amazon Rekognition Custom Labels Console Bucket, you don't need to add permissions.
 
 1. Follow the instructions at [Creating a dataset with a SageMaker AI Ground Truth manifest file (Console)](md-create-dataset-ground-truth.md#md-create-dataset-ground-truth-console) to create a dataset with the uploaded manifest file. For step 8, in **.manifest file location**, enter the Amazon S3 URL for the location of the manifest file. If you are using the AWS SDK, do [Creating a dataset with a SageMaker AI Ground Truth manifest file (SDK)](md-create-dataset-ground-truth.md#md-create-dataset-ground-truth-sdk).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

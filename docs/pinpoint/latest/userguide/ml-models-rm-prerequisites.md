@@ -77,3 +77,7 @@ When you set up a recommender model in Amazon Pinpoint, you specify how you want
 Finally, work with your administrator to create a policy that allows Amazon Pinpoint to invoke the Lambda function each time it sends messages that include recommendations from the model.
 
 For detailed information about using a Lambda function to process recommendations, see [Customizing recommendations with AWS Lambda](https://docs.aws.amazon.com/pinpoint/latest/developerguide/ml-models-rm-lambda.html) in the *Amazon Pinpoint Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

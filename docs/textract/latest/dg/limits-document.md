@@ -21,3 +21,7 @@ The following is a list of set quotas in Amazon Textract, which cannot be change
 | Characters | Amazon Textract detects the following characters:+  a-z <br />+  A-Z <br />+  0-9 <br />+  ä Ä ö Ö ü Ü ç Ç é É â Â ê Ê î Î ô Ô û Û à À è È ù Ù ë Ë ï Ï ü Ü á Á é É í Í ó Ó ú Ú ü Ü ñ Ñ ì Ì ò Ò ã Ã õ Õ <br />+  \! " \# $ % ' & ( ) \* \+ , - . / : ; = ? @ [ \\ ] ^ \_ ` { \| } \~ > < ° € £ ¥ ₹ ß ẞ ¿ ¡ € £ ¥ ₹ ø Ø œ Œ © ® ™ § ¹ ² ³ '  |
 |  AnalyzeID Specific Limits  |  AnalyzeID only supports US passports, and US driver's licenses.  |
 | Adapter Specific Limits |  +   Accepted dataset configuration for adapter training - Training: 5-2500, Test: 5-1000,  <br />+   Training/testing file format and size: JPG, PNG, PDF, TIFF.  <br />+   Maximum size of training/testing file is 10MB.  <br />+   Maximum size of annotation/pre-labeling file is 25MB.  <br />+   Maximum length of pre-labeling file array is 15.  <br />+   Max query response length - 128 characters  <br />+   Max number of queries per page - 30    |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

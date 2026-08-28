@@ -23,3 +23,7 @@ You can use the following guides to work with Amazon SageMaker programmatically:
 + SageMaker lakehouse architecture
   + [Lake Formation API reference](https://docs.aws.amazon.com/lake-formation/latest/APIReference/Welcome.html)
   + [Catalog objects API reference](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Sagemaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query next-generation-sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

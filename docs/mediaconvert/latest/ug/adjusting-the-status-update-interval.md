@@ -14,3 +14,7 @@ By default, AWS Elemental MediaConvert sends `STATUS_UPDATE` events to Amazon Ev
 1. In the **AWS integration** section on the right, for **Status update interval (sec)**, choose **interval, in seconds, between updates**.
 
 If you use the API or an SDK, you can find this setting in the JSON file of your job. The setting name is [statusUpdateInterval](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-createjobrequest-statusupdateinterval).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

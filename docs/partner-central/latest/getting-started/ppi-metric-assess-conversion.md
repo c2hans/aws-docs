@@ -35,3 +35,7 @@ High conversion rates indicate that you're:
 + Partner closely with AWS account teams during the sales cycle
 
 **Example:** If you've received Assess funding for 100 projects and 85 of them converted to signed migrations while 15 were lost, your win rate is 85/100 = 85%, earning you 3 points (High Performance Track).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

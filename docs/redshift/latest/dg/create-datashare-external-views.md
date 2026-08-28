@@ -149,3 +149,7 @@ The following details how costs are attributed for storing and scanning data lak
 + Amazon S3 costs for storage and operations, such as listing buckets, is billed to the account that owns each Amazon S3 bucket.
 
 For additional details regarding billing for Amazon Redshift Serverless, see [Billing for Amazon Redshift Serverless](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-billing.html). More billing and pricing information is available at [Amazon Redshift pricing](https://aws.amazon.com/redshift/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,3 +35,7 @@ KCL 3.5.x does not create separate worker metrics or coordinator state tables du
 <a name="kcl-migration-rollforward-redeploy"></a>
 
 After running the KCL Migration Tool for a roll forward, deploy your code with KCL 3.5.x Phase 2 configuration (`CLIENT_VERSION_CONFIG_COMPATIBLE_WITH_2X`) to your workers. Follow [Step 8: Complete the migration](kcl-migration-from-2-3.md#kcl-migration-from-2-3-finish) to complete your migration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

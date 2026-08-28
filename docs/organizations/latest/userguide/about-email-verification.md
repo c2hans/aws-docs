@@ -13,3 +13,7 @@ When you create an organization, if the management account has not been previous
 <a name="about-email-verification-verify"></a>
 
 Within 24 hours, follow the instructions in the email to verify your email address. If more than 24 hours have passed, see [Resending the verification email](about-email-verification-resend.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

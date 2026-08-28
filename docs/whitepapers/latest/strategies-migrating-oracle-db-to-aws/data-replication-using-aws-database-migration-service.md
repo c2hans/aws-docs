@@ -38,3 +38,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/strategies-migrating-
 1.  Point any applications at the new database in AWS and start.
 
  An alternative method is to use Oracle Data Pump for the initial load and DMS to replicate changes from the Oracle System Change Number (SCN) point where data dump stopped. More details on using AWS DMS can be found in the [documentation](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Task.CDC.html). To improve the performance of DMS replication, the schemas and tables can be grouped into multiple DMS tasks. DMS tasks support wildcard entries for the names of the schemas and tables.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

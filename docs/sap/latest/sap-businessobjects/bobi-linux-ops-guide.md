@@ -21,3 +21,7 @@ This guide is part of a content series that provides detailed information about 
 The purpose of this guide is to provide an overview of how to implement and operate SAP BusinessObjects (BO) Business Intelligence (BI) Platform (also referred in this document as SAP BOBI Platform) on Amazon Elastic Compute Cloud (Amazon EC2). This guide covers common AWS services and features that are relevant for SAP BusinessObjects BI platform. This guide is not an exhaustive list of all possible configuration options. It covers solutions common to typical deployment scenarios.
 
 This guide is not intended to replace the standard SAP BOBI Platform installation and administration guides, operating system, or relational database management system (RDBMS) documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

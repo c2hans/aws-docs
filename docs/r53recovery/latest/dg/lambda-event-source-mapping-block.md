@@ -49,16 +49,6 @@ This block supports both graceful and ungraceful execution modes. Ungraceful mod
 
 The Lambda event source mapping execution block enables or disables an event source mapping on a Lambda function. When the block is called during plan execution, Region switch invokes the Lambda `UpdateEventSourceMapping` API to perform the configured action (enable or disable) on the specified Lambda event source mapping. Region switch then waits until the event source mapping reaches the target state and updates the status of this step (complete or paused because of failure) before proceeding to the next step in the plan. If the mapping is already in the desired state, Region switch marks the step as complete immediately. When a plan containing this execution block configured for ungraceful execution is run in ungraceful mode, the plan skips the execution of this step.
 
-## What is evaluated as part of plan evaluation
-<a name="lambda-event-source-mapping-block-eval"></a>
+## See also
 
-When Region switch evaluates your plan, Region switch performs several checks on your Lambda event source mapping execution block configuration and permissions. Region switch verifies that the following is correct:
-+ The event source mapping exists in the Region embedded in the ARN.
-+ The Lambda function associated with the event source mapping exists.
-+ The event source mapping ARN's embedded Region is one of the plan's configured Regions.
-+ For enable actions: The Lambda function is not throttled (provisioned concurrency is not set to 0).
-+ For enable actions: The Lambda function is in an active state.
-
-Region switch also validates that the plan's IAM role has the required permissions for managing event source mappings. For more information about the required permissions for Region switch execution blocks, see [Identity-based policy examples for Region switch in ARC](security_iam_id-based-policy-examples-region-switch.md).
-
-The correct IAM permissions are essential for the proper functioning of the Lambda event source mapping execution block. If any of these validations fail, Region switch returns warnings that there are issues, and provides specific error messages to help you resolve the permissions or configuration issues.
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -237,3 +237,7 @@ If the game doesn’t load:
 + Ensure all pods are running: `kubectl get pods -n game-2048`
 + Check ingress status: `kubectl describe ingress -n game-2048`
 + Verify ALB health checks: Check the target group health in the AWS Console
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -68,3 +68,7 @@ The following diagram shows a VPC with two security groups and two subnets. The 
 + Both security groups use the default outbound rule, which allows all traffic.
 
 ![A VPC with two subnets, each associated with a different security group.](http://docs.aws.amazon.com/vpc/latest/userguide/images/security-group-details.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,3 +45,7 @@ State related APIs are supported only for the following states:
 | /eth/v1/node/version | Requests the Beacon node identify information about its implementation in a format similar to a [HTTP User-Agent](https://datatracker.ietf.org/doc/html/rfc7231#section-5.5.3) field. |
 | /eth/v1/node/syncing | Requests the Beacon node to describe if it's currently syncing, and if it's, what block it's up to. |
 | /eth/v1/node/health | Returns the Beacon node's health status in HTTP status codes. This is useful information for load balancers. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

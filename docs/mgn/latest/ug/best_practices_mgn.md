@@ -21,7 +21,7 @@ During the phases of your migration project, review these best practices to help
 ## Testing
 <a name="Testing"></a>
 
-1. Perform test at least two weeks before you plan to migrate your source servers. This time frame is intended for identifying potential problems and solving them, before the actual cutover takes place. After performing the test launch, validate connectivity to your test instances (using SSH for Linux or RDP for Windows), and perform acceptance tests for your application.
+1. Perform a test at least two weeks before you plan to migrate your source servers. This time frame is intended for identifying potential problems and solving them, before the actual cutover takes place. After performing the test launch, validate connectivity to your test instances (using SSH for Linux or RDP for Windows), and perform acceptance tests for your application.
 
 1. Ensure that you perform a Test before performing a cutover.
 
@@ -52,3 +52,7 @@ The following are the required steps to complete a successful migration implemen
 1. Perform a test for every server in advance, and report issues to AWS Transform MGN.
 
 1. Coordinate cutover windows with AWS Transform MGN in advance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

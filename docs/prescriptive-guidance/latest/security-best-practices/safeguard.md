@@ -26,3 +26,7 @@ AWS Backup Vault Lock ensures immutability and adds an additional layer of defen
 
 + AWS Backup Vault Lock has not yet been assessed for compliance with the Securities and Exchange Commission (SEC) rule 17a-4(f) and the Commodity Futures Trading Commission (CFTC) in regulation 17 C.F.R. 1.31(b)-(c).
 + AWS Backup Vault Lock takes effect immediately. It gives you a *minimum three-day (72-hour) cooling-off period* to delete or update its configuration before it permanently locks your vault. You can optionally extend the duration of this cooling-off period. Use this cooling-off period to test AWS Backup Vault Lock against your workloads and use cases. After your cooling-off period expires, neither you nor AWS Support can delete or otherwise alter AWS Backup Vault Lock or the contents of your locked vault. For more information, see the documentation on [AWS Backup Vault Lock](https://docs.aws.amazon.com/aws-backup/latest/devguide/vault-lock.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

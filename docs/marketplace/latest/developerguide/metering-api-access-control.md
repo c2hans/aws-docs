@@ -8,3 +8,7 @@ The AWS Marketplace API Reference was restructured. For more information about t
 <a name="metering-api-access-control"></a>
 
 To integrate the AWS Marketplace Metering API with AWS Marketplace, the service account must have a constrained AWS Identity and Access Management (IAM) policy. For more information, see [AWS Marketplace metering and entitlement API permissions](https://docs.aws.amazon.com/marketplace/latest/userguide/iam-user-policy-for-aws-marketplace-actions.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

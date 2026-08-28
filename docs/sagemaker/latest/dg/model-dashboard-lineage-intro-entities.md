@@ -29,3 +29,7 @@ For the **Model** entity, you see the same properties as listed for **DataSet** 
 <a name="model-dashboard-lineage-entity-queries"></a>
 
 Amazon SageMaker AI automatically generates graphs of lineage entities as you use them. However if you are running many iterations of an experiment and don't want to view every lineage graph, the AWS SDK can help you perform queries across all your workflows. For example, you can query your lineage entities for all the processing jobs that use an endpoint. Or, you can see all the downstream trails that use an artifact. For a list of all the queries you can perform, see [Querying Lineage Entities](querying-lineage-entities.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

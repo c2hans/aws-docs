@@ -19,3 +19,7 @@ Here are some considerations for managing read capacity:
 + If a table in one Region doesn’t usually receive read traffic but might have to absorb a large amount of read traffic after a failover, you can pre-warm the capacity of the to accept a higher level of read traffic.
 
 ARC has [ readiness checks](https://docs.aws.amazon.com/r53recovery/latest/dg/recovery-readiness.rules-resources.html) that can be useful for confirming that DynamoDB Regions have similar table settings and account quotas, whether or not you use Route 53 to route requests. These readiness checks can also help in adjusting account-level quotas to make sure they match.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

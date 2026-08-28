@@ -21,3 +21,7 @@ You can view tags associated with an **Analysis job**, a **Custom classification
 ![The Tags panel displays the current keys and values. You can modify tags, delete tags, or add a tag.](http://docs.aws.amazon.com/comprehend/latest/dg/images/modify-tags-3.png)
 
    When you're finished modifying your tags, select **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

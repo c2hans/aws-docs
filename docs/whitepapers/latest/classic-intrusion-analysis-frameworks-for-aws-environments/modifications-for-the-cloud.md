@@ -52,3 +52,7 @@ Defined in 2006 version of JP 3-13, as documented in Mitre, "Characterizing Effe
 |  Contain  |  The action of keeping something harmful under control or within limits.  |
 |  Respond  |  To react quickly to an adversary’s or another’s IO attack or intrusion.  |
 |  Restore  |  To bring information and information systems back to their original state.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

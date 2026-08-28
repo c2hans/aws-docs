@@ -264,3 +264,7 @@ After you add a custom file system to a domain, the domain users can attach the 
 ------
 
   SageMaker AI creates a symbolic link at the following path: `/home/sagemaker-user/custom-file-systems/{{file-system-type}}/{{file-system-id}}`. With this, the domain users can navigate to the custom file system from within their home directory, `/home/sagemaker-user`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

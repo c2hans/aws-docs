@@ -155,3 +155,7 @@ Choose reverse logarithmic scaling when you are searching a range that is highly
 Reverse logarithmic scaling works only for ranges that are entirely within the range 0<=x<1.0.
 
 For an example notebook that uses hyperparameter scaling, see these [Amazon SageMaker AI hyperparameter examples on GitHub](https://github.com/awslabs/amazon-sagemaker-examples/blob/master/hyperparameter_tuning).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

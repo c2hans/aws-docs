@@ -48,3 +48,7 @@ To update the priority of an S3 Batch Operations job using the AWS SDK for Java,
 For more information about job priority, see [Assigning job priority](#batch-ops-job-priority).
 
 For examples of how to update job priority with the AWS SDK for Java, see [Update the priority of a batch job](https://docs.aws.amazon.com/AmazonS3/latest/API/s3-control_example_s3-control_UpdateJobPriority_section.html) in the *Amazon S3 API Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

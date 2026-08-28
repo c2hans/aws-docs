@@ -76,3 +76,7 @@ The following IAM policy grants the permission to enable Streams ABAC and view i
       If you want to opt out after enabling Streams ABAC on the console, you can do so within the next seven calendar days of opting in. To opt out, choose **Disable** in the **Attribute-based access control for Streams** card on the **Settings** page.
 **Note**
 Updating the status of Streams ABAC is an asynchronous operation. If DynamoDB doesn't evaluate the tags in your policies right away, wait a few minutes and try again. Tag evaluation changes are eventually consistent.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -83,3 +83,7 @@ For more information, see [Integrating an AWS Lambda function into your Amazon L
 To use a different intent from the current intent, use the [PutSession](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_PutSession.html) operation. For example, if you decide that the first alternative is preferable to the intent that Amazon Lex V2 chose, you can use the `PutSession` operation to change intents so that the next intent that the user interacts with is the one that you selected.
 
 For more information, see [Understanding Amazon Lex V2 bot sessions](managing-sessions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

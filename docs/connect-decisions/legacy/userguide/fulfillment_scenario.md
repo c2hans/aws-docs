@@ -15,3 +15,7 @@ If the data fields *ship\_from\_site\_id*, *ship\_to\_site\_id*, and *channel\_i
 | ship\_from\_site\_id | Site at which inventory is managed | Store ID | Store ID | Fulfillment Center ID |
 | ship\_to\_site\_id | Site that received the order | Enter NULL to avoid forecast failure | Country, Region, State, or Zip – as applicable | External retailer sore ID, or Country, Region, State, or Zip – as applicable |
 | channel\_id | Map how an item is sold | Brick and mortar | E-commerce | E-commerce |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

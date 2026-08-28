@@ -346,3 +346,7 @@ EMR on EKS creates Kubernetes Service Accounts based on the job execution role n
 <a name="setting-up-enable-IAM-pod-identity-troubleshooting-creds-error"></a>
 
 One possible cause of this issue could be that the EKS cluster is configured under private subnets without correctly configuring PrivateLink for the cluster. Check if your cluster is in a private network and configure AWS PrivateLink to address the issue. For detailed instructions, refer to [Get started with Amazon EKS](https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html)..
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -111,3 +111,7 @@ The VPC endpoints for Amazon Bedrock must allow inbound traffic from the AI work
 
 **Policy explanation:**
 + **VPC Endpoint Security Group** – Allows inbound HTTPS traffic only from the AI workload security group, creating a secure communication channel between AI resources and Amazon Bedrock VPC endpoints
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

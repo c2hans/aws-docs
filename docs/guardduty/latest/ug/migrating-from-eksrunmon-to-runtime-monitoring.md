@@ -33,3 +33,7 @@ As a part of migrating to Runtime Monitoring, ensure to [Disable EKS Runtime Mon
 1. (Optional) if you want to clean any resource associated with the GuardDuty security agent, see [Disabling, uninstalling, and cleaning up resources in Runtime Monitoring](runtime-monitoring-agent-resource-clean-up.md).
 
 If you want to continue using EKS Runtime Monitoring without enabling Runtime Monitoring, see [EKS Runtime Monitoring in GuardDuty](eks-runtime-monitoring-guardduty.md). Based on your use case, choose the steps to configure EKS Runtime Monitoring for a standalone account or for multiple member accounts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

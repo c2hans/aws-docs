@@ -66,3 +66,7 @@ Lightsail load balancers created after January 12, 2021, operate in dual-stack m
 <a name="do-loadbalancer-instances-need-ipv6"></a>
 
 No. Load balancers accept both IPv4 and IPv6 traffic, and seamlessly convert it to IPv4 when communicating with the instances in the backend. Hence, instances behind a load balancer can either be dual-stack or IPv4 only.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

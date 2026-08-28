@@ -112,3 +112,7 @@ Access details about updates to AWS managed policies for Amazon EMR Serverless s
 | AmazonEMRServerlessServiceRolePolicy – Update to an existing policy | Amazon EMR Serverless added the new `Sid` `CloudWatchPolicyStatement` and `EC2PolicyStatement` to the [AmazonEMRServerlessServiceRolePolicy policy](https://docs.aws.amazon.com/emr/latest/EMR-Serverless-UserGuide/using-service-linked-roles.html#slr-permissions). | January 25, 2024 |
 | AmazonEMRServerlessServiceRolePolicy – Update to an existing policy | Amazon EMR Serverless added new permissions to allow Amazon EMR Serverless to publish aggregated account metrics for vCPU usage in the `"AWS/Usage"` namespace. | April 20, 2023 |
 | Amazon EMR Serverless started tracking changes | Amazon EMR Serverless started tracking changes for its AWS managed policies. | April 20, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

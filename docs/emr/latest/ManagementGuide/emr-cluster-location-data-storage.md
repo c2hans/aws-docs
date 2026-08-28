@@ -12,3 +12,7 @@ This section describes how to configure the region for a cluster, the different 
 + [Working with storage and file systems with Amazon EMR](emr-plan-file-systems.md)
 + [Prepare input data for processing with Amazon EMR](emr-plan-input.md)
 + [Configure a location for Amazon EMR cluster output](emr-plan-output.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

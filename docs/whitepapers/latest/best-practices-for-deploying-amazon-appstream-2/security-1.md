@@ -205,3 +205,7 @@ Where data loss is a concern, it’s important to cover off what a User can acce
  To learn more about restricting traffic to AWS services with WorkSpaces Applications, see the administration guide for [*creating and streaming from VPC endpoints*](https://docs.aws.amazon.com/appstream2/latest/developerguide/creating-streaming-from-interface-vpc-endpoints.html).
 
  When full public internet access is required, it’s a best practice to disable Internet Explorer Enhanced Security Configuration (ESC) on the Image Builder. For more information, see the WorkSpaces Applications administration guide to [*disable Internet Explorer enhanced security configuration*](https://docs.aws.amazon.com/appstream2/latest/developerguide/customize-fleets.html#customize-fleets-disable-ie-esc).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

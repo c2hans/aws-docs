@@ -18,7 +18,7 @@ EC2 Instance Connect is one of the options to connect to your Linux instance. Fo
 EC2 Instance Connect is available at no additional cost.
 
 **Region availability**
-EC2 Instance Connect is available in all AWS Regions except the AWS European Sovereign Cloud. It is not supported in Local Zones.
+EC2 Instance Connect is available in all AWS Regions except AWS European Sovereign Cloud (Germany). It is not supported in Local Zones.
 
 **Topics**
 + [Tutorial](ec2-instance-connect-tutorial.md)
@@ -29,3 +29,7 @@ EC2 Instance Connect is available in all AWS Regions except the AWS European Sov
 + [Uninstall EC2 Instance Connect](ec2-instance-connect-uninstall.md)
 
 For a blog post that discusses how to improve the security of your bastion hosts using EC2 Instance Connect, see [Securing your bastion hosts with Amazon EC2 Instance Connect](https://aws.amazon.com/blogs/infrastructure-and-automation/securing-your-bastion-hosts-with-amazon-ec2-instance-connect/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

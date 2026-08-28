@@ -28,3 +28,7 @@ The following table provides some high level considerations on deciding between 
 | Compliance and Security | (Depends) Low if there are strict compliance needs to completely segregate material vs non-material workloads. AMS standard preventative and detective controls in place. | (Depends) High as multiple multi-account landing zone could help achieve strict compliance requirements by completely segregating material vs non-material workloads. AMS standard preventative and detective controls in place. |
 
 **Recommendation**: Without strict Compliance or multi-Region need, starting with single AMS multi-account landing zone would strike a good balance among cost, security, operational excellence, and migration complexity. You can always setup additional landing zone, if any account or business constraints are encountered.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

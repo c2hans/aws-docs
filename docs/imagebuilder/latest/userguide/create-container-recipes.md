@@ -287,3 +287,7 @@ The following table lists common errors that you might encounter when you create
 | "Invalid S3 URI" | A malformed Amazon S3 path in dockerfileTemplateUri. | Use the format s3://{{bucket}}/{{key}}. |
 | "You cannot specify a platform override when using an Image Builder Image as your parent" | platformOverride with an Image Builder image ARN. | Remove platformOverride. Image Builder detects the platform from the parent image metadata. |
 | "You must specify an image OsVersion override when using ECR Repositories as your parent image for Windows Platform" | A Windows platformOverride without an OS version. | Add the imageOsVersionOverride field. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

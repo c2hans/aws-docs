@@ -56,3 +56,7 @@ For more information about logical replication with PostgreSQL, see the followin
 + [Enabling change data capture (CDC) using logical replication](CHAP_Source.PostgreSQL.md#CHAP_Source.PostgreSQL.Security)
 + [Using native CDC start points to set up a CDC load of a PostgreSQL source](CHAP_Source.PostgreSQL.md#CHAP_Source.PostgreSQL.v10)
 + [ Logical replication and logical decoding in Azure Database for PostgreSQL - Flexible Server](https://learn.microsoft.com/en-us/azure/postgresql/flexible-server/concepts-logical) in the [Azure Database for PostgreSQL documentation](https://learn.microsoft.com/en-us/azure/postgresql/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

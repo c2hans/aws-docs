@@ -60,3 +60,7 @@ Policy can be thought of as a set of rules for governing behaviors, i.e. behavi
 +  [AWS Inspector](https://aws.amazon.com/inspector/)
 +  [Kubernetes Security Review](https://github.com/kubernetes/community/blob/master/sig-security/security-audit-2019/findings/Kubernetes%20Final%20Report.pdf) A 3rd party security assessment of Kubernetes 1.13.4 (2019)
 +  [NeuVector by SUSE](https://www.suse.com/neuvector/) open source, zero-trust container security platform, provides compliance reporting and custom compliance checks
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

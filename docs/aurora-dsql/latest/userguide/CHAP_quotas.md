@@ -52,3 +52,7 @@ The following table describes the database limits in Aurora DSQL.
 | Maximum message size | 10 MiB | No | `08P01` | `FATAL: invalid message length` |
 
 For data type limits specific to Aurora DSQL, see [Supported data types in Aurora DSQL](working-with-postgresql-compatibility-supported-data-types.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

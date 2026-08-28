@@ -37,3 +37,7 @@ You can use UCS or SCF files to migrate a full configuration, and the following 
 | Easily editable in any Unix or Linux text editor. | You must understand the configuration and file structure to make the edits. |
 | The configuration file has the correct order of load operations. | You must know which parts of the file to remove to prevent one from overwriting device-specific configurations. |
 | You can easily find objects that are to be migrated. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

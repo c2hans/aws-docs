@@ -15,3 +15,7 @@ Organizations that treat cost as a first-class design constraint from the start 
 + [Agent cost visibility and attribution](agentcost05.html)
 + [Agent discovery and deployment cost optimization](agentcost06.html)
 + [Agent cost governance and continuous optimization](agentcost07.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

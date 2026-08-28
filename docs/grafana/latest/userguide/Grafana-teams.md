@@ -65,3 +65,7 @@ With *team sync*, you can set up synchronization between your authorization prov
 1. To synchronize with an IAM Identity Center group, enter the IAM Identity Center group ID. To synchronize with a group from a SAML based identity provider, enter the value of the attribute name entered in the **Assersion attribute groups** field in SAML configuration section on the Amazon Managed Grafana workspace configuration page.
 
 1. Choose **Add group**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

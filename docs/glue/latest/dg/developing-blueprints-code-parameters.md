@@ -40,3 +40,7 @@ The following are the permitted values for `type`:
 | S3Bucket | Amazon S3 bucket name only. Generates a bucket picker on the Create a workflow from <blueprint> page. |
 | IAMRoleArn | Amazon Resource Name (ARN) of an AWS Identity and Access Management (IAM) role. Generates a role picker on the Create a workflow from <blueprint> page. |
 | IAMRoleName | Name of an IAM role. Generates a role picker on the Create a workflow from <blueprint> page. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

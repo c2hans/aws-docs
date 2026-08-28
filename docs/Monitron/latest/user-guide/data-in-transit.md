@@ -8,3 +8,7 @@ Amazon Monitron is no longer open to new customers. Existing customers can conti
 <a name="data-in-transit"></a>
 
 Amazon Monitron uses TLS (Transport Layer Security) to encrypt data that is transferred between your sensors and Amazon Monitron.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

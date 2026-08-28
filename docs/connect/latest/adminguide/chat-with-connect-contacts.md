@@ -80,3 +80,7 @@ To get started, highlight the text you want to format, and then select a the for
 
 **Tip**
 Developers: Enable this feature from the chat user interface. For instructions, see [Enable text formatting in Connect Customer for your customer's chat experience](enable-text-formatting-chat.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

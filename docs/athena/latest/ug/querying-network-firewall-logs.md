@@ -12,3 +12,7 @@ You can configure AWS Network Firewall logging for traffic that you forward to y
 **Topics**
 + [Create and query a table for alert logs](querying-network-firewall-logs-sample-alert-logs-table.md)
 + [Create and query a table for netflow logs](querying-network-firewall-logs-sample-netflow-logs-table.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

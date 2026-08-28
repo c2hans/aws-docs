@@ -55,3 +55,7 @@ Several AWS-provided components depend on specific minor versions of the Greengr
   <tr><td><a href="iotsitewise-processor-component.md">IoT SiteWise processor</a></td><td>Processes data on the Greengrass core devices.</td><td>Generic</td><td>Linux, Windows</td><td>No</td><td>No</td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

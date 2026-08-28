@@ -148,3 +148,7 @@ The code for this pattern is available in the GitHub [UiPath RPA bot setup using
 + [UiPath documentation](https://docs.uipath.com/)
 + [Setting the Hostname in a SysPreped AMI](https://blog.brianbeach.com/2014/07/setting-hostname-in-syspreped-ami.html) (blog post by Brian Beach)
 + [How do I make Cloudformation reprocess a template using a macro when parameters change?](https://stackoverflow.com/questions/59828989/how-do-i-make-cloudformation-reprocess-a-template-using-a-macro-when-parameters) (Stack Overflow)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

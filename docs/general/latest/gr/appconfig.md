@@ -150,3 +150,7 @@ The following table contains AWS Region-specific endpoints that AWS AppConfig Da
 | Configurations received | 1 million (burst) per day if not using the AWS AppConfig agent | Yes |
 
 To request an increase for `GetLatestConfiguration`, `StartConfigurationSession`, or `Configurations received` contact Support. To improve performance, availability, and reduce costs, we recommended you cache configurations locally when using AWS AppConfig. [AWS AppConfig Agent](https://docs.aws.amazon.com/appconfig/latest/userguide/appconfig-agent-how-to-use.html) caches configurations on your behalf.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

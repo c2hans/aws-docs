@@ -70,3 +70,7 @@ When auto-labeling your documents, you specify the appropriate queries for your 
 When creating queries, consider the types of questions you will have to ask to retrieve the relevant data in your documents. For more information about this response structure, see [Query Response Structures](https://docs.aws.amazon.com/en_us/textract/latest/dg/queryresponse.html). For more information on best practices for queries, see [Best Practices for Queries](https://docs.aws.amazon.com/en_us/textract/latest/dg/bestqueries.html).
 
 You will need to train an adapter on representative samples of your documents. When you use the AWS Management Console for annotating the documents, the console prepares these files for you automatically.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

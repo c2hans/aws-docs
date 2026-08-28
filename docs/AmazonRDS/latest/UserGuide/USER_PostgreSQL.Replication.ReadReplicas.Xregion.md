@@ -38,3 +38,7 @@ You can use an RDS for PostgreSQL DB instance with version 14.1 or higher, `rpg-
 
 **Best practice for using cross-Region read replicas**
 + Before promoting a replica, create additional replicas. This will save time, and provide efficient handling of the workload.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

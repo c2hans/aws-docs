@@ -29,3 +29,7 @@ deadline bundle submit ./job_bundles/esmfold_predict/ \
 The first fold on a fresh worker downloads the 5.2 GB `facebook/esmfold_v1` weights into `<OutputDir>/.hf_cache/` (about three minutes on a `g5.2xlarge`). Subsequent fold tasks in the same job reuse the cache.
 
 To validate predictions against experimental references, place `<seq_id>.pdb` files in a directory and pass it as `ReferencePdbDir`. The `Validate` step writes `validation.csv` and a per-sequence `calibration.png`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

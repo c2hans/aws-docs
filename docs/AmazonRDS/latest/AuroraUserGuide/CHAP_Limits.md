@@ -112,3 +112,7 @@ For an Aurora MySQL DB cluster, the maximum table size is 64 tebibytes (TiB). Fo
 
 **Table space ID limits**
 The maximum table space ID for Aurora MySQL is 2147483647. If you frequently create and drop tables, make sure to be aware of your table space IDs and plan to use logical dumps. For more information, see [Logical migration from MySQL to Amazon Aurora MySQL by using mysqldump](AuroraMySQL.Migrating.ExtMySQL.mysqldump.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ The following sections show example commands to run the data retention bot Docke
 + `{{folder-name}}` with the folder name in the Amazon S3 bucket where messages and files will be stored.
 + `{{us-east-1}}` with the AWS Region of the resource you're specifying. For example, the Region of the AWS KMS master key or the Region of the Amazon S3 bucket.
 + `{{arn:aws:kms:us-east-1:111122223333:key/12345678-1234-abcde-a617-abababababab}}` with the Amazon Resource Name (ARN) of your AWS KMS master key to use to re-encrypt message files and files.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

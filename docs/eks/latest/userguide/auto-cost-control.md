@@ -227,3 +227,7 @@ For clusters with large or many nodes, this overlap can create periodic cost inc
 +  **Reduce maximum node lifetime** — Shorter expiry values (for example, 7 days) create more frequent but smaller replacement events. This spreads the cost more evenly over time rather than concentrating it.
 
 For more information about node lifecycle, see [Learn about Amazon EKS Auto Mode Managed instances](automode-learn-instances.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

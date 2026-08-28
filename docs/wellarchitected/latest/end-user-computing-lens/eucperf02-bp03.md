@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  Be sure to architect network solutions with low enough latency and sufficient bandwidth to support appropriate data access between desktops, applications, and any on-premises data sources.
 
  If your AWS EUC solution integrates with services offered by other cloud providers, such as email, collaboration tools, or SaaS applications, be sure to size internet connections or private networks accordingly to avoid high latency and bandwidth constraints.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

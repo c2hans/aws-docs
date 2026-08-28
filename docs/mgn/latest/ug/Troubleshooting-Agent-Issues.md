@@ -40,7 +40,7 @@ If your OS is indeed 64-bit, then there may be other elements blocking the insta
 ### Is having a mounted '/tmp' directory a requirement for the agent?
 <a name="Agent-TMP"></a>
 
-The simple requirement is just to have enough free space. There is no need for this to be a separate mount. The need for the '/tmp' requirement is actually only if '/tmp' is a separate mount. If '/tmp' is not a separate mount, then it would fall under '/', for which we have the 2 GiB free requirement. This allows for the '/tmp' to fall into this requirement.
+The simple requirement is just to have enough free space. There is no need for this to be a separate mount. The need for the '/tmp' requirement is actually only if '/tmp' is a separate mount. If '/tmp' is not a separate mount, then it would fall under '/', for which we have the 2 GB free requirement. This allows for the '/tmp' to fall into this requirement.
 
 ### Installation failed - old agent
 <a name="Installation-Failed-Old"></a>
@@ -85,7 +85,7 @@ If the installation failed on a Linux Source server, check the following:
 
 1. **Free Disk Space**
 
-   Free disk space on the root directory – verify that you have at least 3 GB of free disk on the root directory (/) of your Source Server. To check the available disk space on the root directory, run the following command: df -h /
+   Free disk space on the root directory – verify that you have at least 2 GB of free disk on the root directory (/) of your Source Server. To check the available disk space on the root directory, run the following command: df -h /
 
    Free disk space on the /tmp directory – for the duration of the installation process only, verify that you have at least 1 GB of free disk on the /tmp directory. To check the available disk space on the /tmp directory run the following command: df -h /tmp
 
@@ -180,7 +180,7 @@ If the installation failed on a Linux Source server, check the following:
 
       To download the matching *kernel-devel/linux-headers* package, navigate to these sites:
       + [RHEL and Centos](https://access.redhat.com/)
-      + [Oracle](https://access.redhat.com/)
+      + [Oracle Linux](https://yum.oracle.com/)
       +  [SUSE](https://scc.suse.com/packages?name=SUSE)
       +  [Debian](https://www.debian.org/distrib/packages/)
       + [Ubuntu](https://packages.ubuntu.com/)
@@ -268,7 +268,11 @@ This error (CERTIFICATE\_VERIFY\_FAILED) may indicate that the OS does not trust
 
 The MGN Agent logs are stored in agent.log.0:
 + **Linux:** /var/lib/aws-replication-agent/agent.log.0
-+ **Windows 64 bit:** Windows 64 bit: C:\\Program Files (x86)\\AWS Replication Agent\\agent.log.0
++ **Windows 64 bit:** C:\\Program Files (x86)\\AWS Replication Agent\\agent.log.0
 + **Windows 32 bit:** C:\\Program Files\\AWS Replication Agent\\agent.log.0
 
 In addition, you can review the installation log located in: <install\_path>\\aws\_replication\_agent\_installer.log
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

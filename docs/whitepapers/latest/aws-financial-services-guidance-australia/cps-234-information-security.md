@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
  To assist in meeting the CPS 234 requirements and CPG 234 observations, we recommend referring to APRA's [CPG 234](https://www.apra.gov.au/sites/default/files/cpg_234_information_security_june_2019.pdf), [APRA's August 2024 letter on Additional insights on common cyber resilience weaknesses](https://www.apra.gov.au/additional-insights-on-common-cyber-resilience-weaknesses) and [APRA's June 2024 letter on Security and adequacy of backups](https://www.apra.gov.au/security-and-adequacy-of-backups).
 
  See [Appendix 1: Key aspects of APRA CPS234](appendix-1-key-aspects-of-apra-cps234.md) for a summary of key aspects for CPS 234, and [Appendix 2: Key aspects of CPG 234](appendix-2-key-aspects-of-cpg-234.md) for key aspects of CPG 234.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

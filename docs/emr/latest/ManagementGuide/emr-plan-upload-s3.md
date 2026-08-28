@@ -141,3 +141,7 @@ We recommend that you enable a lifecycle configuration rule in Amazon S3 to remo
 <a name="w2aac28c11c17c11b7c11c11"></a>
 
 Depending on your workloads, specific types of usage of EMR clusters and applications on those clusters can result in a high number of requests against a bucket. For more information, see [Request rate and performance considerations](https://docs.aws.amazon.com/AmazonS3/latest/userguide/request-rate-perf-considerations.html) in the *Amazon Simple Storage Service User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

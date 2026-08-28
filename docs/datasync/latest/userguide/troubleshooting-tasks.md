@@ -214,3 +214,7 @@ You might run into one of the following errors while trying to monitor your Data
 | File path exceeds the maximum length of 4,096 characters. Cannot write to Task Report | None. DataSync can't transfer a file with a path that exceeds 4,096 bytes.<br />For more information, see [Storage system, file, and object limits](datasync-limits.md#file-system-limits). |
 | Failed to upload Task Report(s) to S3 due to an invalid bucket or IAM role | Check that the [DataSync IAM role](creating-task-report.md#task-report-access) has the right permissions to upload a task report to your S3 bucket. |
 | Execution error occurred prior to generating any Task Reports | Check your [CloudWatch logs](monitor-datasync.md) to identify why your task execution failed. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,3 +52,7 @@ Your SSP is a critical document in your CMMC assessment. It describes your syste
 Each SSP control narrative should address every lettered assessment objective for the requirement. For example, if a requirement has objectives [a] through [f] defined in NIST SP 800-171A, the narrative must cover all six. For partially inheritable controls, reference the CRM to delineate what AWS provides and what your organization implements.
 
 POA&Ms document controls that are not yet fully implemented. CMMC allows POA&Ms for eligible controls (see the SPRS scoring section above), but they must be closed within 180 days of your assessment. Each POA&M item should include the specific CMMC practice ID, a description of which assessment objectives are NOT MET, planned corrective actions, milestones with target dates, and required resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

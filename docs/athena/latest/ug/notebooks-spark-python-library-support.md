@@ -54,3 +54,7 @@ Athena uses the following guidelines for convenience packages:
 Athena deprecates a convenience package when it deprecates the Athena runtime that the package uses. Athena can deprecate packages sooner to limit the number of bundles that it supports.
 
 The convenience package deprecation schedule follows the Athena runtime deprecation schedule.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

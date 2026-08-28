@@ -17,3 +17,7 @@ If you are using grouped columns or rows in a pivot table, you can expand or col
 
    In the following screenshot, `Customer Region` and the `Enterprise` segment are expanded, and `SMB` and `Startup` are collapsed. When a group is collapsed, its data is summarized in the row or column.
 ![Revenue data table with Customer Region expanded showing APAC, EMEA, and US consumption channels.](http://docs.aws.amazon.com/quick/latest/userguide/images/pivot-table-collapse.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

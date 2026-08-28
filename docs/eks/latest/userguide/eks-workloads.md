@@ -17,3 +17,7 @@ Your workloads are deployed in containers, which are deployed in Pods in Kuberne
 + Create an [Application Load Balancer](alb-ingress.md) to balance application traffic across Pods. The application load balancer routes traffic at Layer 7 of the OSI model.
 + If you’re new to Kubernetes, this topic helps you [Deploy a sample application](sample-deployment.md).
 + You can [restrict IP addresses that can be assigned to a service](restrict-service-external-ip.md) with `externalIPs`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

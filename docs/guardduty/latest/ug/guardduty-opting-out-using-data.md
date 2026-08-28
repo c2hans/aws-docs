@@ -31,3 +31,7 @@ GuardDuty collects both commands (such as `curl`, `systemctl`, and `cron`) and t
 <a name="malware-protection-data-opt-out"></a>
 
 GuardDuty Malware Protection scans and detects malware contained in EBS volumes attached to your potentially compromised Amazon EC2 instance and container workloads, newly uploaded files in your selected Amazon S3 buckets, and backup resources. Currently, GuardDuty doesn't collect or use detected malware for service improvement. However, in the future, when GuardDuty Malware Protection identifies an EBS volume file, backup file, or an S3 file as being malicious or harmful, GuardDuty Malware Protection will collect and store this file to develop and improve its malware detections, and the GuardDuty service. This file may also be used to develop and improve other AWS security services. Your trust, privacy, and the security of your content are our highest priority, and ensure that our use complies with our commitments to you. For more information, see [Data Privacy FAQ](https://aws.amazon.com/compliance/data-privacy-faq/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,3 +33,7 @@ Other standards that we walk you through within other capabilities will allow yo
 + Determine what type of risk you can assign to your workloads, from those that need minimal governance, to those that are high risk, and will need board or CCoE approval to be deployed, updated, or removed
 
 Establishing capabilities and standardizing process across your organization following an operating model you define, enables your teams to start realizing the benefit and power of the cloud, and will allow them to innovate faster and focus on key business differentiators, freeing them for complex and repetitive administrative task to manage their environment(s).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

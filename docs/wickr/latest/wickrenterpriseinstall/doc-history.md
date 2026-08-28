@@ -18,3 +18,7 @@ The following table describes the documentation releases for Wickr Enterprise Au
 | [Ports to allowlist](#doc-history) | Port TCP/8443 has been added to the allowlist. For more information, see [Requirements](https://docs.aws.amazon.com/wickr/latest/wickrenterpriseinstall/getting-started.html#getting-started-requirements.html). | February 12, 2024 |
 | [Destroying resources and Ports to allowlist](#doc-history) | Instructions on how to destroy resources have been added. For more information, see [Destroying resources](https://docs.aws.amazon.com/wickr/latest/wickrenterpriseinstall/destroying-resources.html). Additionally, ports to allowlist has been added. For more information, see [Requirements](https://docs.aws.amazon.com/wickr/latest/wickrenterpriseinstall/getting-started.html#getting-started-requirements.html). | August 17, 2023 |
 | [Initial release](#doc-history) | Initial release of the Wickr Enterprise Automated Install Guide | August 4, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

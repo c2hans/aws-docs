@@ -146,3 +146,7 @@ The invocation result available in `$ctx.result` is as follows:
 The `$ctx.error` contains details about the error. The keys **data**, **unprocessedKeys**, and each table key that was provided in the request mapping template are guaranteed to be present in the invocation result. Items that have been deleted appear in the **data** block. Items that haven’t been processed are marked as *null* inside the data block and are placed inside the **unprocessedKeys** block.
 
 For a more complete example, follow the DynamoDB Batch tutorial with AppSync here [Tutorial: DynamoDB batch resolvers](tutorial-dynamodb-batch.md#aws-appsync-tutorial-dynamodb-batch).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

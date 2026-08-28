@@ -121,3 +121,7 @@ You can locate the **Directory ID**, **directory name**, and **DNS IP addresses*
 1. The command status will change from **Pending** to **Success** once the instances have successfully joined the domain. You can view the command output by selecting the **Instance ID** of the instance that joined the domain and **View output**.
 
 After completing either of these steps, you should now be able to join your EC2 instance to the domain. Once you do that, you can then log into your instance using a Remote Desktop Protocol (RDP) client with the credentials from your AWS Managed Microsoft AD user account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

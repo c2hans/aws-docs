@@ -16,3 +16,7 @@ To add the extension to an existing web portal, follow these steps.
 1. Enter the domain for cookie synchronization, choose **Add new domain**.
 
 1. Save your portal changes. The portals will prompt users to install the extension within 15 minutes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

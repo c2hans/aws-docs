@@ -23,3 +23,7 @@ ffmpeg -f concat -i filelist.txt -c copy output.mp4
 ```
 
 For more information about media concatenation pipelines, refer to [Creating media concatenation pipelines for Amazon Chime SDK meetings](create-concat-pipe.md) in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

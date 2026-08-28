@@ -23,3 +23,7 @@ To use Log Analytics, sign in to the [CloudWatch console](https://console.aws.am
 Log Analytics is the default experience. If you opt out, you can continue to use CloudWatch Logs Insights, Live Tail, and Contributor Insights as distinct experiences alongside Log Analytics, and you can switch back at any time to Log Analytics.
 
 Log Analytics uses the same pricing as its underlying capabilities: CloudWatch Logs Insights queries, Live Tail, and Contributor Insights. For pricing details, see [CloudWatch pricing](https://aws.amazon.com/cloudwatch/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

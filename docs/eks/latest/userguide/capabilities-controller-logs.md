@@ -109,3 +109,7 @@ After you configure log delivery, logs are delivered to your specified destinati
 <a name="_pricing"></a>
 
 CloudWatch Vended Logs charges apply for log delivery and storage based on your chosen delivery destination. CloudWatch Vended Logs enables reliable, secure log delivery with built-in AWS authentication and authorization at a reduced price compared to standard CloudWatch Logs. See the [Vended Logs section of the CloudWatch pricing page](https://aws.amazon.com/cloudwatch/pricing/) for more details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

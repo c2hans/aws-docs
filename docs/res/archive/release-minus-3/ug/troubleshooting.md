@@ -106,3 +106,7 @@ Detailed contents:
     + [(2024.04 - 2024.04.02) Linux virtual desktop may be stuck in the "RESUMING" status on reboot](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-linux-stuck-resuming)
     + [(2024.04.02 and earlier) Fails to sync AD users whose SAMAccountName attribute includes capital letters or special characters](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-samaccountname)
     + [(2024.04.02 and earlier) Private key for accessing the bastion host is invalid](res-troubleshooting-known-issues.md#res-troubleshooting-known-issues-2024x-private-key)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

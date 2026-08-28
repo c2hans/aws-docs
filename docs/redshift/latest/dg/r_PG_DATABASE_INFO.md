@@ -20,3 +20,7 @@ PG\_DATABASE\_INFO contains the following columns in addition to columns in PG\_
 | --- | --- | --- |
 | datid | oid | The object identifier (OID) used internally by system tables. |
 | datconnlimit | text | The maximum number of concurrent connections that can be made to this database. A value of -1 means no limit.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

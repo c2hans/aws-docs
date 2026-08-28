@@ -21,3 +21,7 @@ After running the command, make sure to refresh your SQL client tool list of obj
 For this exercise, accept the defaults. For information about more command options, see [CREATE DATABASE](https://docs.aws.amazon.com/redshift/latest/dg/r_CREATE_DATABASE) in the *Amazon Redshift Database Developer Guide*. To delete a database and its contents, see [DROP DATABASE](https://docs.aws.amazon.com/redshift/latest/dg/r_DROP_DATABASE) in the *Amazon Redshift Database Developer Guide*.
 
 After you have created the SALESDB database, you can connect to the new database from your SQL client. Use the same connection parameters as you used for your current connection, but change the database name to `SALESDB`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

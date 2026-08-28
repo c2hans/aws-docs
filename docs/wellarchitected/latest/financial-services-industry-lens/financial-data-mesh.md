@@ -23,3 +23,7 @@ The term *data mesh* refers to any architectural framework that enables access t
   +  Business domains provide access to prepared datasets to a centralized catalog and access management account where Lake Formation is used to access business domain datasets.
   +  The centralized catalog account manages access to business domain datasets by defining access policies to datasets from consumer accounts through Lake Formation cross-account data sharing.
 +  **Consumer accounts:** Data lake administrators in the consumer accounts use Lake Formation to manage granular access policies within their own account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

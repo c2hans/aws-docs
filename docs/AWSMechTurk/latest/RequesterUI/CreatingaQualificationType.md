@@ -20,3 +20,7 @@ The following procedure shows you how to create your own qualification type.
 The new qualification type appears in the list of **Qualification Types** on the **Manage Qualification Types** page. There is a short delay before the new qualification type appears in the list. You can refresh your browser to update the list.
 
 To assign Workers your new qualification type, see [Assign a qualification to a Worker](AssigningaQualificationTypetoaWorker.md) to a Worker.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -94,3 +94,7 @@ for row in rows:
 To run the same program against Amazon Keyspaces, you need to:
 +  **Add the cluster endpoint and port**: For example, the host can be replaced with a service endpoint, such as `cassandra.us-east-1.amazonaws.com` and the port number with: `9142`.
 +  **Add the TLS/SSL configuration**: For more information on adding the TLS/SSL configuration to connect to Amazon Keyspaces by using a Cassandra client Python driver, see [Using a Cassandra Python client driver to access Amazon Keyspaces programmatically](using_python_driver.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

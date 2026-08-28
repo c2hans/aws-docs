@@ -76,3 +76,7 @@ Existing exports continue with their original configuration and monthly updates 
 We publish data using the latest methodology version to ensure your estimated emissions are as accurate as possible. If you had an existing data export with data from previous versions, the data will continue to be available for you to reference, unless you delete it. There is no other way to retrieve old versions.
 
 If you configured your Data Export’s *File versioning* to *Overwrite*, we will only update your files if a data improvement is delivered within the same methodology version. If you want to keep all historical versions of your data, select *Create new* under *File versioning*. This will ensure your data is never overwritten.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,3 +46,7 @@ You might be asked to switch off your browser's popup blocker so you can access 
 1. To interact with a specific resource, open the context (right-click) menu for its name and choose one of the following options:
    + **Copy Identifier**: Copy the identifier for the specific resource to the clipboard. For example, the `AWS::DynamoDB::Table` resource can be identified using the `TableName` property.
    + **Preview**: View a read-only version of the JSON-formatted template that describes the resource.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

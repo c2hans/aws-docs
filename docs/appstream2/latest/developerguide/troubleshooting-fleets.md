@@ -112,3 +112,7 @@ You can use Group Policy to set the default home page in Internet Explorer for y
 <a name="troubleshooting-no-resources-available-new-streaming-session"></a>
 
 When a user ends a session, WorkSpaces Applications terminates the underlying instance and creates a new instance if needed to meet the desired capacity of the fleet. If a user tries to start a new session before WorkSpaces Applications creates the new instance and all other instances are in use, the user will receive an error stating that no streaming resources are available. If your users start and stop sessions frequently, consider increasing your fleet capacity. For more information, see [Fleet Auto Scaling for Amazon WorkSpaces Applications](autoscaling.md). Or, consider increasing the maximum session duration for your fleet and instructing your users to close their browser during periods of inactivity rather than ending their session.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

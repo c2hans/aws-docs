@@ -16,3 +16,7 @@ Wherever you implement the control, the goal is the same: manage risk. A range o
 ![Risk matrix showing likelihood levels from very unlikely to very likely against consequence levels from minimal to severe.](http://docs.aws.amazon.com/wellarchitected/latest/security-pillar/images/risk-matrix.png)
 
 *Figure 2: Risk level likelihood matrix*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

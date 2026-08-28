@@ -49,3 +49,7 @@ If you configure Amazon Pinpoint to invoke a Lambda function that processes reco
 1. Sends a version of the message that contains the personalized recommendations for each message recipient.
 
 To customize and enhance recommendations in this way, start by creating a Lambda function that processes the endpoint definitions sent by Amazon Pinpoint, and returns updated endpoint definitions. Next, assign a Lambda function policy to the function and authorize Amazon Pinpoint to invoke the function. Then, configure the recommender model in Amazon Pinpoint. When you configure the model, specify the function to invoke and define the recommended attributes to use.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

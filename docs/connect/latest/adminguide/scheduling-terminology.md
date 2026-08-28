@@ -54,3 +54,7 @@ The base structure of a shift, schedule window, daily shift activities that go i
 <a name="staffing-groups-defined"></a>
 
 A group or team of agents who are skilled to take specific types of contacts. For example, you might create one staffing group named General Enquiry, and another named Tier 2 Support.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

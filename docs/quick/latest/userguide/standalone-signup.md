@@ -129,3 +129,7 @@ When you sign up at aws.com/quick, Amazon Quick automatically:
 1. Provisions an **AWS account** that hosts your Quick resources – you don't need to access or manage this account.
 
 1. Sets up your Quick environment with default settings and built-in AI agents.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

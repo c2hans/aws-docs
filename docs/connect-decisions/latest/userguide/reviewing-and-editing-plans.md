@@ -52,3 +52,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/revie
 <a name="reviewing-and-editing-plans-edit-order-details"></a>
 
  Users can review the generated planned orders and make modifications such as adjusting quantities and updating the order start date and expected delivery date. By default, when a user makes an adjustment, the modified order is automatically marked as a firm order, indicating that it will be preserved during plan rerun. Once the orders are adjusted, the user needs to click on **Rerun** button to recalculate the supply plan such that the impact of these changes is reflected across the whole plan. During this rerun, the system respects these firmed orders and does not recalculate them, ensuring planner intent is maintained.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

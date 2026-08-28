@@ -29,3 +29,7 @@ The name of the generated AMI will follow the pattern `capa-ami-ubuntu-20.04-ver
 Set up a Harbor private registry AMI to include on the Snowball Edge device so you can use Amazon EKS Anywhere on the device without an external network connection. If you won't be using Amazon EKS Anywhere while the Snowball Edge device is disconnected from the external network, or if you have a private Kubernetes registry in an AMI to use on the device, you can skip this section.
 
 To create the Harbor local registry AMI, see [Build a Harbor AMI](https://github.com/aws-samples/aws-snow-tools-for-eks-anywhere/tree/main/container-registry-ami-builder#build-harbor-ami).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

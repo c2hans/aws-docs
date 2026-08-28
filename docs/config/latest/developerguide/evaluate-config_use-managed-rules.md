@@ -21,3 +21,7 @@ Before using managed rules, see [Considerations](evaluate-config.md#evaluate-con
 + [List of Managed Rules by Trigger Type](managed-rules-by-trigger-type.md)
 + [List of Managed Rules by Region Availability](managing-rules-by-region-availability.md)
 + [Creating Managed Rules With AWS CloudFormation Templates](aws-config-managed-rules-cloudformation-templates.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

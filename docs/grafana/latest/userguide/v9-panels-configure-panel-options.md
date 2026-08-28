@@ -95,3 +95,7 @@ Repeating panels require variables to have one or more items selected; you canno
    +  Choose **vertical** to arrange panels in a column. The width of repeated panels is the same as the original, repeated panel.
 
 1.  To propagate changes to all panels, reload the dashboard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

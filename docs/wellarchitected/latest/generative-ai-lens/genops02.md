@@ -15,3 +15,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 + [GENOPS02-BP01 Monitor all application layers](genops02-bp01.md)
 + [GENOPS02-BP02 Monitor foundation model metrics](genops02-bp02.md)
 + [GENOPS02-BP03 Implement solutions to mitigate the risk of system overload](genops02-bp03.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

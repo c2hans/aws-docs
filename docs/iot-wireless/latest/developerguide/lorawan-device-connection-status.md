@@ -187,3 +187,7 @@ To check the connection status using the API, use the [`GetWirelessDeviceStatist
 <a name="lorawan-device-connection-next-steps"></a>
 
 Now that you have connected your device and verified the connection status, you can observe the format of the uplink metadata recieved from the device by using the [ MQTT test client](https://console.aws.amazon.com/iot/home#/test) on the **Test** page of the AWS IoT console. For more information, see [View format of uplink messages sent from LoRaWAN devices](lorawan-uplink-metadata-format.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

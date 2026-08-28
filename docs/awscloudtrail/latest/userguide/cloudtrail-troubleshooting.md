@@ -51,3 +51,7 @@ To check whether a trail's SNS topic policy has an authorization failure:
 + From the AWS CLI, run the [get-trail-status](https://docs.aws.amazon.com/cli/latest/reference/cloudtrail/get-trail-status.html) command. If there's an authorization failure, the command output includes the `LastNotificationError` field with a value of `AuthorizationError`. To resolve the issue, fix the Amazon SNS topic policy. For information about the Amazon SNS topic policy, see [Amazon SNS topic policy for CloudTrail](cloudtrail-permissions-for-sns-notifications.md).
 
 For more information about SNS topics and subscribing to them, see [Getting started with Amazon SNS](https://docs.aws.amazon.com/sns/latest/dg/sns-getting-started.html) in the *Amazon Simple Notification Service Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

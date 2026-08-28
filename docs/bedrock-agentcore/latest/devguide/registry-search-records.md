@@ -266,3 +266,7 @@ To match any of several versions:
 <a name="registry-search-approved-only"></a>
 
 Only records in **Approved** status appear in search results and through the MCP endpoint. Records in Draft, Pending Approval, Rejected, or Deprecated status are not returned. If a recently approved record does not appear in results, see [Eventual consistency in AWS Agent Registry search](#registry-search-eventual-consistency).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

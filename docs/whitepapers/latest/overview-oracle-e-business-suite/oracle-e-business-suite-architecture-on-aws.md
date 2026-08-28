@@ -83,3 +83,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-bus
  Amazon S3 provides low cost, scalable, and highly durable storage and should be used for storing backups. You can use Oracle Recovery Manager (RMAN) to back up your database, then copy the data to Amazon S3. Additionally, if your database tier is on RDS Custom for Oracle, automated backups are enabled by default and can be retained up to 35 days. This includes daily snapshot backups and transaction logs backups. You can also take manual snapshots which can be retained as long as you need.
 
  Alternatively, you can use the Oracle Secure Backup (OSB) Cloud Module to back up your database. The OSB Cloud Module is fully integrated with RMAN features and functionality, and the backups are sent directly to Amazon S3 for storage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,3 +84,7 @@ Note that you need to have a default Amazon VPC set up in your AWS account in or
 When you stop your instance, it is powered down at its current state and is available for you to start again at any time. Stopping your instance will release its public IPv4 address, so it is recommended that you use static IPv4 addresses for instances that must retain the same IP after they are stopped and started. Note that the public IPv6 addresses attached to instances don't change even when instances are stopped and started.
 
 When you delete your instance, you are performing a destructive action. Unless you have created an instance snapshot, all of your instance data will be lost and you cannot recover it again. Automatic snapshots are also deleted with the instance unless you keep them by copying them as manual snapshots. The instance's public and private IP addresses will also be released. If you were using a static IPv4 address with that instance, the static IPv4 address is detached, but remains in your account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

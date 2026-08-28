@@ -29,3 +29,7 @@ You can decide whether to focus on these contacts to improve your contact center
 ![The contact audio recording and transcript, the location of non-talk time.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-non-talk-time-transcript.png)
 
 For more information, see [Search for non-talk time](search-conversations.md#nontalk-time-search).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -501,3 +501,7 @@ The following is an example AWS CloudTrail event for [CreateGrant](https://docs.
 When you use Amazon Bedrock to run a model customization job, you store the input files in your Amazon S3 bucket. When the job completes, Amazon Bedrock stores the output metrics files in the S3 bucket that you specifed when creating the job and the resulting custom model artifacts in an S3 bucket controlled by AWS.
 
 The output files are encrypted with the encryption configurations of the S3 bucket. These are encrypted either with [SSE-S3 server-side encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingServerSideEncryption.html) or with [AWS KMS SSE-KMS encryption](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingKMSEncryption.html), depending on how you set up the S3 bucket.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

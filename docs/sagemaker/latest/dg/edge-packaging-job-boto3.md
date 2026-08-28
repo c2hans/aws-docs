@@ -74,3 +74,7 @@ sagemaker_client.stop_edge_packaging_job(
 ```
 
 For a full list of Edge Manager APIs, see the [Boto3 documentation](https://boto3.amazonaws.com/v1/documentation/api/latest/index.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

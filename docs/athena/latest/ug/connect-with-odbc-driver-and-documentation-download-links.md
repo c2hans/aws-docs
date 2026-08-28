@@ -17,23 +17,23 @@ When you use the ODBC 1.x driver, be sure to note the following requirements:
 
 | Driver version | Download link |
 | --- | --- |
-| ODBC 1.2.3.1000 for Windows 32-bit | [Windows 32 bit ODBC driver 1.2.3.1000](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/SimbaAthenaODBC_1.2.3.1000/Windows/SimbaAthena_1.2.3.1000_32-bit.msi) |
-| ODBC 1.2.3.1000 for Windows 64-bit | [Windows 64 bit ODBC driver 1.2.3.1000](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/SimbaAthenaODBC_1.2.3.1000/Windows/SimbaAthena_1.2.3.1000_64-bit.msi) |
+| ODBC 1.3.7.10001 for Windows 32-bit | [Windows 32 bit ODBC driver 1.3.7.10001](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/SimbaAthenaODBC_1.3.7.10001/Windows/SimbaAthena_1.3.7.10001_32-bit.msi) |
+| ODBC 1.3.7.10001 for Windows 64-bit | [Windows 64 bit ODBC driver 1.3.7.10001](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/SimbaAthenaODBC_1.3.7.10001/Windows/SimbaAthena_1.3.7.10001_64-bit.msi) |
 
 ## Linux
 <a name="connect-with-odbc-linux"></a>
 
 | Driver version | Download link |
 | --- | --- |
-| ODBC 1.2.3.1000 for Linux 32-bit | [Linux 32 bit ODBC driver 1.2.3.1000](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/SimbaAthenaODBC_1.2.3.1000/Linux/simbaathena-1.2.3.1000-1.el7.i686.rpm) |
-| ODBC 1.2.3.1000 for Linux 64-bit | [Linux 64 bit ODBC driver 1.2.3.1000](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/SimbaAthenaODBC_1.2.3.1000/Linux/simbaathena-1.2.3.1000-1.el7.x86_64.rpm) |
+| ODBC 1.3.7.10001 for Linux 32-bit | [Linux 32 bit ODBC driver 1.3.7.10001](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/SimbaAthenaODBC_1.3.7.10001/Linux/simbaathena-1.3.7.10001.el8.i686.rpm) |
+| ODBC 1.3.7.10001 for Linux 64-bit | [Linux 64 bit ODBC driver 1.3.7.10001](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/SimbaAthenaODBC_1.3.7.10001/Linux/simbaathena-1.3.7.10001.el8.x86_64.rpm) |
 
 ## OSX
 <a name="connect-with-odbc-osx"></a>
 
 | Driver version | Download link |
 | --- | --- |
-| ODBC 1.2.3.1000 for OSX | [OSX ODBC driver 1.2.3.1000](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/SimbaAthenaODBC_1.2.3.1000/OSX/SimbaAthena_1.2.3.1000.dmg) |
+| ODBC 1.3.7.10001 for OSX | [OSX ODBC driver 1.3.7.10001](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/SimbaAthenaODBC_1.3.7.10001/OSX/SimbaAthena_1.3.7.10001.dmg) |
 
 ## Documentation
 <a name="connect-with-odbc-driver-documentation"></a>
@@ -41,8 +41,8 @@ When you use the ODBC 1.x driver, be sure to note the following requirements:
 | Content | Documentation link |
 | --- | --- |
 | Amazon Athena ODBC driver license agreement |  [License agreement](https://downloads.athena.us-east-1.amazonaws.com/agreement/ODBC/Amazon+Athena+ODBC+Driver+License+Agreement.pdf)  |
-| Documentation for ODBC 1.2.3.1000 | [ODBC driver installation and configuration guide version 1.2.3.1000](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/SimbaAthenaODBC_1.2.3.1000/docs/Simba+Amazon+Athena+ODBC+Connector+Install+and+Configuration+Guide.pdf) |
-| Release Notes for ODBC 1.2.3.1000 | [ODBC driver release notes version 1.2.3.1000](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/SimbaAthenaODBC_1.2.3.1000/docs/release-notes.txt) |
+| Documentation for ODBC 1.3.7.10001 | [ODBC driver installation and configuration guide version 1.3.7.10001](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/SimbaAthenaODBC_1.3.7.10001/docs/Simba+Amazon+Athena+ODBC+Connector+Install+and+Configuration+Guide.pdf) |
+| Release Notes for ODBC 1.3.7.10001 | [ODBC driver release notes version 1.3.7.10001](https://downloads.athena.us-east-1.amazonaws.com/drivers/ODBC/SimbaAthenaODBC_1.3.7.10001/docs/release-notes.txt) |
 
 ## ODBC driver notes
 <a name="connect-with-odbc-configuration"></a>
@@ -57,3 +57,7 @@ The `NonProxyHost` property specifies a comma-separated list of hosts that the c
 ```
 
 The `NonProxyHost` connection parameter is passed to the `CURLOPT_NOPROXY` curl option. For information about the `CURLOPT_NOPROXY` format, see [CURLOPT\_NOPROXY](https://curl.se/libcurl/c/CURLOPT_NOPROXY.html) in the curl documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

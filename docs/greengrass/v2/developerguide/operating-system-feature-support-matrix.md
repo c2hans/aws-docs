@@ -93,3 +93,7 @@ AWS IoT Greengrass can be installed and run in a systemd-enabled docker containe
 | Feature | Linux | Windows | Greengrass lite (Linux) |
 | --- | --- | --- | --- |
 | Use AWS IoT Device Tester for AWS IoT Greengrass V2 to validate IoT devices | <a name="polaris-yes-para"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  | <a name="polaris-yes-para"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-yes.png) Yes  | <a name="polaris-no-para"></a> ![](http://docs.aws.amazon.com/greengrass/v2/developerguide/images/icon-no.png) No  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

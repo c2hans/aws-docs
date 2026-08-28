@@ -978,3 +978,7 @@ Amazon Elastic MapReduce defines the following condition keys that can be used i
 |   [elasticmapreduce:ExecutionRoleArn](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-access-iam.html#emr-security)  | Filters access by whether the execution role ARN is provided with the action | ARN |
 |   [elasticmapreduce:RequestTag/${TagKey}](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-access-iam.html#emr-fine-grained-cluster-access)  | Filters access by whether the tag and value pair is provided with the action | String |
 |   [elasticmapreduce:ResourceTag/${TagKey}](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-plan-access-iam.html#emr-fine-grained-cluster-access)  | Filters access by the tag and value pair associated with an Amazon EMR resource | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

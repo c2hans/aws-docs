@@ -14,3 +14,7 @@ Auto Replenishment relies on the following inputs to make accurate and informed 
 + **Inventory policy** – Inventory policy is a key input to determine the target inventory level that is used to drive replenishment requirements. You can configure inventory policy at the most detailed product level, site level, or at an aggregate level such as product group, product segment, site, or region. Auto Replenishment supports absolute inventory level, days of cover, and service level inventory policies. You can define the target value for the configured inventory policy, and AWS Supply Chain uses the target value to determine the target inventory level.
 
   For more information on data fields required for supply planning, see [Supply Planning](entities-supply-planning.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

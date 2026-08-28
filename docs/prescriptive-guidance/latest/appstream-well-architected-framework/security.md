@@ -116,3 +116,7 @@ Develop and practice incident response plans by using automated tools to enable 
     + Response: Review clipboard and file transfer logs, adjust file transfer permissions, and update data protection policies.
 + Implement automated recovery processes for fleet instance replacement, security group restoration, user access reconfiguration, and application settings recovery.
 + Use AWS services for security management, such as AWS Security Hub CSPM for security findings and Amazon GuardDuty for threat detection.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

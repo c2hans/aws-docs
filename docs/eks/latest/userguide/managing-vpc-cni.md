@@ -46,3 +46,7 @@ To upgrade to VPC CNI v1.12.0 or later, you must upgrade to VPC CNI v1.7.0 first
 The following are considerations for using the feature.
 + Versions are specified as `major-version.minor-version.patch-version-eksbuild.build-number`.
 + Check version compatibility for each feature. Some features of each release of the Amazon VPC CNI plugin for Kubernetes require certain Kubernetes versions. When using different Amazon EKS features, if a specific version of the add-on is required, then it’s noted in the feature documentation. Unless you have a specific reason for running an earlier version, we recommend running the latest version.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

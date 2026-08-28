@@ -29,3 +29,7 @@ If the Systems Manager home page opens first, choose the menu icon (![Horizontal
 1. Choose **Save changes**.
 
 1. Once you update the parameter, StackSets should start deploying solution templates in the targeted OUs or accounts. [Review StackSets operation and instances.](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-concepts.html#stacksets-concepts-ops)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Quota Monitor for AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

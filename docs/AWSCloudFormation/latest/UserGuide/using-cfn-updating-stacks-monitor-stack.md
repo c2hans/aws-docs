@@ -59,3 +59,7 @@ If a resource update fails, CloudFormation rolls back any resources that it has 
 2011-09-30 09:37 PDT AWS::RDS::DBInstance MyDB UPDATE_IN_PROGRESS
 2011-09-30 09:37 PDT AWS::CloudFormation::Stack {{MyStack}} UPDATE_ROLLBACK_IN_PROGRESS The following resource(s) failed to update: [MyDB]
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

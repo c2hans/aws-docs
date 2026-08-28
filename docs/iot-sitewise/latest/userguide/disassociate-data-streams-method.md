@@ -41,3 +41,7 @@ To disassociate a data stream from an asset property, (identified by its `ID`s a
  The data stream is now disassociated from the asset property, and the alias is used to identify the data stream. The alias is no longer associated with the asset property, as it is now associated with the data stream.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

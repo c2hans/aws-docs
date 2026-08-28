@@ -23,3 +23,7 @@ Consult with your cloud center of excellence, legal team, compliance teams, and 
 In some situations, software, business, or support requirements for SAP might require you to deviate from the standard security patterns. Identify a process to agree and document any exceptions with a change advisory board or security design authority and reassess the process on a regular basis.
 
  AWS Documentation: [Change Management in the Cloud](https://docs.aws.amazon.com/whitepapers/latest/change-management-in-the-cloud/change-management-in-the-cloud.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

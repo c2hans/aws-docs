@@ -28,3 +28,7 @@ Financial institution customers are able to rely on AWS to provide resilient inf
 <a name="what-does-operational-resilience-mean-at-aws"></a>
 
  Operational resilience is the ability to provide continuous service through people, processes, and technology that are aware of and adaptive to constant change. It is a real-time, execution- oriented norm embedded in the culture of AWS that is distinct from traditional approaches in Business Continuity, Disaster Recovery, and Crisis Management, which rely primarily on centralized, hierarchical programs focused on documentation development and maintenance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

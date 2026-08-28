@@ -38,3 +38,7 @@ You can use the following AWS CLI commands to work with tags for actions, experi
 + [tag-resource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/fis/tag-resource.html) – Add tags to a resource.
 + [untag-resource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/fis/untag-resource.html) – Remove tags from a resource.
 + [list-tags-for-resource](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/fis/list-tags-for-resource.html) – List the tags for a specific resource.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

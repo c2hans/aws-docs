@@ -26,3 +26,7 @@ For an architectural overview, see [How Volume Gateway works](StorageGatewayConc
 In this User Guide, you can find a Getting Started section that covers setup information common to all gateway types. You can also find Volume Gateway setup requirements, and sections that describe how to deploy, activate, configure, and manage your Volume Gateway.
 
 The procedures in this User Guide primarily focus on performing gateway operations by using the AWS Management Console. If you want to perform these operations programmatically, see the *[AWS Storage Gateway API Reference](https://docs.aws.amazon.com/storagegateway/latest/APIReference/).*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

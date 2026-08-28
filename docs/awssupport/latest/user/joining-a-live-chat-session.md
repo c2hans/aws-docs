@@ -67,3 +67,7 @@ Messages sent to this channel outside of the chat thread are never seen by Suppo
 
 1. If the issue is resolved, you can choose Resolve case from the initial message for this thread.
 ![AWS Support chat interface showing a new case about Alexa services with no agent joined yet.](http://docs.aws.amazon.com/awssupport/latest/user/images/supportapp/thread-chat-parent-message.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

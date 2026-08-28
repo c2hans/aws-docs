@@ -11,3 +11,7 @@ To determine if your entire report is finalized, review the **bill/InvoiceId** c
 
 **Note**
 After your report is finalized, AWS might update the report if AWS applies refunds, credits, or support fees to your usage for the month. Because Developer, Business, and Enterprise Support are calculated based on final usage charges, those are reflected on the sixth or seventh of the month for the prior month’s report. AWS applies credits or refunds based on the terms of your agreement or contract with AWS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

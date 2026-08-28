@@ -110,3 +110,7 @@ The following table describes common issues and their resolutions.
 | Users see the standard AWS sign-in page | The idc\_url parameter is missing or was not saved correctly. | Verify the supplier URL contains ?idc\_url=<your-url> and confirm the change was saved. |
 | SSO page loads but authentication fails | The IAM Identity Center URL is incorrect or the user is not provisioned. | Verify the access portal URL by opening it directly in a browser. Confirm the user is provisioned in IAM Identity Center. |
 | Users prompted to sign in again during session | IAM Identity Center session duration is shorter than the punchout session. | Review session duration settings in IAM Identity Center under Settings, Authentication. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

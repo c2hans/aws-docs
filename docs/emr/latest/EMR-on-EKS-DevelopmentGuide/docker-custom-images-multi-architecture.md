@@ -63,3 +63,7 @@ You must create `arm64` images on `arm64` instances. Similarly, you must build `
    You can also build multi-architecture images without building on each specific instance type with the Docker `buildx` command. For more information, see [Leverage multi-CPU architecture support](https://docs.docker.com/desktop/multi-arch/).
 
 1. After you build the multi-architecture image, you can submit a job with the same `spark.kubernetes.container.image` parameter and point it to the image. In a heterogeneous cluster with both AWS Graviton-based and non-Graviton-based EC2 instances, the instance determines the correct architecture image based on the instance architecture that pulls the image.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ This feature improves the verification experience by making all documents of sup
 + If a user's access to a file is revoked after they've viewed it in a chat, once a resync is performed subsequent attempts to access the file will be denied with a clear error message.
 + If a file is updated after a chat reference, then once a resync is performed clicking the link will retrieve the current version of the file.
 + If a file is deleted and a resync is performed users will receive a clear error message indicating the file no longer exists.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

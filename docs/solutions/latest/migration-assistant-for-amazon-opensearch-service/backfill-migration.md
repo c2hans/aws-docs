@@ -15,3 +15,7 @@ This approach improves the migration experience by:
 + Simplifying the process of pausing and resuming a migration — RFS automatically resumes from the last checkpoint when restarted, already-migrated shards are skipped, and no data is duplicated
 
 Useful RFS tuning settings include `podReplicas` (number of RFS worker pods), `maxConnections` (bulk-indexer concurrency to the target), `documentsPerBulkRequest` and `documentsSizePerBulkRequest` (bulk request count and byte-size limits), `maxShardSizeBytes` (default 80 GiB and used to calculate ephemeral storage), `initialLeaseDuration` (default `PT1H`), `serverGeneratedIds` for Serverless collection compatibility, `allowedDocExceptionTypes` for expected document-level target errors, and sourceless migration options when `_source` is disabled or filtered.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

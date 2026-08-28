@@ -104,3 +104,7 @@ To learn more, see [Schedule for running security checks](https://docs.aws.amazo
 The following applies to both standard controls and custom controls that use AWS CloudTrail user activity logs as a data source.
 
 You can’t change the evidence collection frequency for controls that use activity logs from CloudTrail as a data source type. Audit Manager collects this evidence type from CloudTrail in a continuous manner. The frequency is continuous because user activity can happen at any time of the day.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

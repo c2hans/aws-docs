@@ -254,3 +254,7 @@ Do not negotiate ALPN. This is the default.
 
 **Enable ALPN Connections**
 You can enable ALPN connections when you create or modify a TLS listener. For more information, see [Add a listener](create-listener.md#add-listener) and [Update the ALPN policy](listener-update-certificates.md#update-alpn-policy).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ You can use all the many features in CloudWatch Logs to manage your audit logs. 
 To find all events that do not include the specified text, add a minus sign (-) before the text. For example, to find events that do not include `CN_CREATE_USER`, enter **-CN\_CREATE\_USER**.
 
 ![Filtering an event in an AWS CloudHSM audit log in CloudWatch Logs by its Opcode value.](http://docs.aws.amazon.com/cloudhsm/latest/userguide/images/cloudwatch-logs-event-filter.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

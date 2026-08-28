@@ -22,3 +22,7 @@ For information on how to configure your business catalog see [Tutorial: Configu
 + [Configuring controlled vocabularies in Amazon FinSpace](controlled-vocabularies.md)
 + [Configuring attribute sets in Amazon FinSpace](attribute-sets.md)
 + [Tutorial: Configuring a business data catalog in Amazon FinSpace](tutorial-build-business-catalog.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

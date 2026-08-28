@@ -51,3 +51,7 @@ You must use the `UpdateCampaign` API operation to approve the campaign before A
 1. (Optional) Create state templates. State templates are deployed to a vehicle. State templates provide a mechanism for Vehicle owners to track the state of their vehicle. For more information, see [Monitor the last known state of your vehicles](last-known-state.md).
 
 The Edge Agent software transfers vehicle data to AWS IoT Core using an MQTT topic that you choose. To send the data to AWS IoT FleetWise for campaigns, it uses the reserved topic `$aws/iotfleetwise/vehicles/{{vehicleName}}/signals`. For Last Known State, the Edge Agent uses the reserved topic `$aws/iotfleetwise/vehicles/{{vehicleName}}/last_known_states/data`. For more information about how the ingested data is processed, see [Visualize AWS IoT FleetWise vehicle data](process-visualize-data.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

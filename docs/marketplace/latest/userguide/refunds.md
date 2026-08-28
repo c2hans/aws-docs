@@ -341,3 +341,7 @@ You can't complete these steps unless you sign in as the root user or as an IAM 
 1. Create the support case. The support case is routed to the next available agent for assistance.
 
 To request a refund for 20 or more invoices or accounts, see [Requesting a bulk refund](#bulk-refund-process).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

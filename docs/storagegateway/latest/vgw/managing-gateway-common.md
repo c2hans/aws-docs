@@ -30,3 +30,7 @@ Following, you can find information about how to manage your Volume Gateway reso
 + [Deleting snapshots of your storage volumes](DeletingASnapshot.md) - Learn how to delete unnecessary snapshots when you no longer need them.
 + [Understanding Volume Statuses and Transitions](StorageVolumeStatuses.md) - Learn about the various volume status values that Storage Gateway reports to help determine whether a volume is functioning normally, or if there is a problem that might require action on your part.
 + [Moving your data to a new gateway instance](migrate-data.md) - Learn how to move data between gateways as your data and performance needs grow, or if you receive an AWS notification to migrate your gateway.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

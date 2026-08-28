@@ -82,3 +82,7 @@ Though AWS Transfer Family doesn't control how your storage data is encrypted at
 Learn more about how AWS storage services encrypt data at rest:
 + [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/userguide/serv-side-encryption.html)
 + [Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/encryption-at-rest.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

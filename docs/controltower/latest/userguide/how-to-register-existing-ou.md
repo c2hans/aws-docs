@@ -38,3 +38,7 @@ For a registered OU, you can provide compliance and security reports based on th
 
 **Note**
 One unusual situation can occur when AWS Control Tower displays OUs and their accounts. If you have created an account in a registered OU and then you subsequently move that enrolled account into another OU that’s not registered, particularly if you use AWS Organizations to move the account, you can see a result “1 of 0” accounts in your OU details page. Furthermore, you may have created another unenrolled account in that unregistered OU. If there’s an unregistered account, the console may read “1 of 1” for the OU. It will seem that the single (newly created) account is enrolled, but in fact it is not. You must enroll the new account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,3 +35,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hadoop-release-h
 + S3A filesystem introduces an optimization for glob status calls using [S3 prefix listing](https://docs.aws.amazon.com/AmazonS3/latest/userguide/using-prefixes.html) to accelerate list operations. By default, this feature is disabled and can be enabled by configuring `fs.s3a.prefix.listing.in.glob.status.enabled=true` in the core-site.xml file. When enabled, the optimization allows server-side filtering for globstatus calls like `fs.globstatus("s3://{{bucket}}/a*")`, improving list performance by by listing only the objects starting with `"a"`.
 + Add S3 request auditing to S3A, when enabled the information from fileSystemOwner object is used to populate the userAgent string with the user and user group fields making the S3 requests.
 + S3A adds support for Role mappings which helps determine which IAM role to use based on users, groups, or S3 prefixes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

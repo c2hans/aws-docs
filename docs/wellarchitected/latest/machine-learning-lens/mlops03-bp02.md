@@ -67,3 +67,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 +  [SageMaker AI Experiment Examples](https://github.com/aws/amazon-sagemaker-examples/tree/main/sagemaker-experiments)
 +  [SageMaker AI Model Registry Examples](https://github.com/aws/amazon-sagemaker-examples/tree/main/sagemaker-pipelines)
 +  [Amazon SageMaker AI processing](https://sagemaker.readthedocs.io/en/stable/amazon_sagemaker_processing.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

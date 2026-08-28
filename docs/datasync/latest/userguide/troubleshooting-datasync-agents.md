@@ -84,3 +84,7 @@ The channel number isn't a TCP/UDP port number. Instead, it makes an SSH (TCP 22
 1. Enter **exit** to log out of the DataSync local console.
 
 1. Follow the prompts to exit the local console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

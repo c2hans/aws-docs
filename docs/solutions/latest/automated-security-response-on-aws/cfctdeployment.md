@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/cfctdeployment.html
 ---
 
-# Control Tower (CT) deployment
+# AWS Control Tower (CT) deployment
 <a name="cfctdeployment"></a>
 
 The Customizations for AWS Control Tower (CfCT) guide is for administrators, DevOps professionals, independent software vendors, IT infrastructure architects, and systems integrators who want to customize and extend their AWS Control Tower environments for their company and customers. It provides information about customizing and extending the AWS Control Tower environment with the CfCT customization package.
@@ -61,7 +61,7 @@ Modify the AWS CodePipeline configuration to include the new build steps, artifa
 AWS Solutions use two buckets: a bucket for global access to templates, which is accessed via HTTPS, and regional buckets for access to assets within the region, such as Lambda code.
 
 **1. Configure the S3 Bucket**
-Pick a unique bucket name, e.g. asr-staging. Set two environment variables on your terminal, one should be the base bucket name with -reference as suffix, the other with your intended deployment region as suffix:
+Pick a unique bucket name, for example, asr-staging. Set two environment variables on your terminal, one should be the base bucket name with -reference as suffix, the other with your intended deployment region as suffix:
 
 ```
 export BASE_BUCKET_NAME=asr-staging-$(date +%s)
@@ -71,7 +71,7 @@ export ASSET_BUCKET_NAME=$BASE_BUCKET_NAME-$REGION
 ```
 
 **2. Environment Setup**
-In your AWS account, create two buckets with these names, e.g. asr-staging-reference and asr-staging-us-east-1. (The reference bucket will hold the CloudFormation templates, the regional bucket will hold all other assets like the lambda code bundle.) Your buckets should be encrypted and disallow public access
+In your AWS account, create two buckets with these names, for example, asr-staging-reference and asr-staging-us-east-1. (The reference bucket will hold the CloudFormation templates, the regional bucket will hold all other assets like the lambda code bundle.) Your buckets must be encrypted and must disallow public access
 
 ```
 aws s3 mb s3://$TEMPLATE_BUCKET_NAME/
@@ -120,20 +120,20 @@ Update the $TEMPLATE\_BUCKET\_NAME S3 bucket policy to include PutObject permiss
 }
 ```
 
-Alter the asset S3 bucket policy to include permissions. Assign this permission to an IAM role within the execute account that is authorized to write to the bucket. Repeat this setup for each regional asset bucket (e.g., asr-staging-us-east-1, asr-staging-eu-west-1, etc.), allowing deployments across multiple regions without needing to create the buckets in the Management account.
+Alter the asset S3 bucket policy to include permissions. Assign this permission to an IAM role within the execute account that is authorized to write to the bucket. Repeat this setup for each regional asset bucket (for example, asr-staging-us-east-1, asr-staging-eu-west-1, and so on), allowing deployments across multiple Regions without needing to create the buckets in the Management account.
 
 **4. Build Preparation**
 + Prerequisites:
   + AWS CLI v2
   + Python 3.11\+ with pip
   + AWS CDK 2.171.1\+
-  + Node.js 20\+ with npm
+  + Node.js 22\+ with npm
   + Poetry v2 with plugin to export
-+ Git clone [https://github.com/aws-solutions/automated-security-response-on-aws.git](https://github.com/aws-solutions/automated-security-response-on-aws.git)
++ Git clone [automated-security-response-on-aws GitHub repository](https://github.com/aws-solutions/automated-security-response-on-aws.git)
 
 First ensure that you’ve run npm install in the source folder.
 
-Next from the deployment folder in your cloned repo, run build-s3-dist.sh, passing the root name of your bucket (ex. mybucket) and the version you are building (ex. v1.0.0). We recommend using a semver version based on the version downloaded from GitHub (ex. GitHub: v1.0.0, your build: v1.0.0.mybuild)
+Next from the deployment folder in your cloned repo, run build-s3-dist.sh, passing the root name of your bucket (for example, mybucket) and the version you are building (for example, v1.0.0). Use a semver version based on the version downloaded from GitHub (for example, GitHub: v1.0.0, your build: v1.0.0.mybuild).
 
 ```
 chmod +x build-s3-dist.sh
@@ -146,18 +146,18 @@ export SOLUTION_VERSION=v1.0.0.mybuild
 
 ```
 cd deployment
-aws s3 cp global-s3-assets/  s3://$TEMPLATE_BUCKET_NAME/$SOLUTION_NAME/$SOLUTION_VERSION/ --recursive --acl bucket-owner-full-control
-aws s3 cp regional-s3-assets/  s3://$ASSET_BUCKET_NAME/$SOLUTION_NAME/$SOLUTION_VERSION/ --recursive --acl bucket-owner-full-control
+aws s3 cp global-s3-assets/  s3://$TEMPLATE_BUCKET_NAME/$SOLUTION_NAME/$SOLUTION_VERSION/ --recursive
+aws s3 cp regional-s3-assets/  s3://$ASSET_BUCKET_NAME/$SOLUTION_NAME/$SOLUTION_VERSION/ --recursive
 ```
 
 ## Step 2: Stacks deployment to AWS Control Tower
 <a name="step-2-cfn"></a>
 
 **1. Build manifest for ASR components**
-After deploying ASR artifacts to the S3 buckets, update the Control Tower [pipeline manifest](https://docs.aws.amazon.com/controltower/latest/userguide/cfcn-byo-customizations.html) to reference the new version, and then trigger the pipeline run, refer to: [controltower deployment](https://docs.aws.amazon.com/controltower/latest/userguide/deployment.html)
+After deploying ASR artifacts to the S3 buckets, update the AWS Control Tower [pipeline manifest](https://docs.aws.amazon.com/controltower/latest/userguide/cfcn-byo-customizations.html) to reference the new version, and then trigger the pipeline run. For more information, see [AWS Control Tower deployment](https://docs.aws.amazon.com/controltower/latest/userguide/deployment.html).
 
 **Important**
-To ensure correct deployment of the ASR solution, refer to the official AWS documentation for detailed information on the CloudFormation templates overview and parameters description. Info links below: [CloudFormation Templates](https://docs.aws.amazon.com/en_us/solutions/latest/automated-security-response-on-aws/aws-cloudformation-template.html) [Parameters overview Guide](https://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/deployment.html)
+For correct deployment of the ASR solution, refer to the official AWS documentation for detailed information on the CloudFormation templates overview and parameters description. Info links below: [CloudFormation Templates](aws-cloudformation-template.md) [Parameters overview Guide](deployment.md)
 
 The manifest for the ASR components looks like this:
 
@@ -249,14 +249,20 @@ resources:
         parameter_value: "no"
     deploy_method: stack_set
     deployment_targets:
-     accounts: # :type: list
+      accounts: # :type: list
         - <ACCOUNT_NAME> # and/or
         - <ACCOUNT_NUMBER>
-    organizational_units:
-      - <ORG UNIT>
+      organizational_units:
+        - <ORG UNIT>
     regions: # :type: list
       - <REGION_NAME>
 ```
 
 **2. Code pipeline update**
 Add a manifest file to a custom-control-tower-configuration.zip and run a CodePipeline, refer to: [code pipeline overview](https://docs.aws.amazon.com/controltower/latest/userguide/cfct-codepipeline-overview.html)
+
+You can verify the deployment by checking the AWS Control Tower pipeline status in the AWS CodePipeline console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

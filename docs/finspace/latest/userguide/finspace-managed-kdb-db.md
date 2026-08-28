@@ -10,3 +10,7 @@ After careful consideration, we decided to end support for Amazon FinSpace, effe
 A Managed kdb Insights database acts as a highly available and scalable repository to store your kdb data files so that they can be used with one or more historical database (HDB) clusters in FinSpace kdb. Data in a database may consist of either kdb objects, kdb splayed tables, or kdb partitioned tables. These represent different types of kdb table structures and each must follow a prescribed file and path layout. You can learn more about each of these structures [here](https://code.kx.com/q/database/).
 
 Data is loaded into a database by defining a changeset, which lets you import a file or set of files into a database. The files in the kdb database are placed into logical paths called the *Database paths*. Creating a database does not automatically load any data. You must add data to the kdb database through changesets.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

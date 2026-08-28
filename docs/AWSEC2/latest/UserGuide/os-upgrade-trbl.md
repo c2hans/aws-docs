@@ -18,3 +18,7 @@ If the instance does not pass all status checks after removing applications or s
 + Analyze [Windows Setup log files and event logs](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/windows-setup-log-files-and-event-logs?view=windows-11) for failures.
 
 For other issues or problems with an operating system upgrade or migration, we recommend reviewing the articles listed in [Before you begin an in-place upgrade](os-inplaceupgrade.md#os-upgrade-before).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

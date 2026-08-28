@@ -37,3 +37,7 @@ Each subsection provides practical implementation guidance for securing AI workl
 
 **Note**
 These network security configurations provide baseline patterns but may not suit all infrastructure architectures or compliance requirements. Adapt the examples to your specific network topology, traffic patterns, and data residency obligations. Validate that network controls don't disrupt legitimate AI operations and consult Amazon VPC and networking documentation for the latest features and best practices.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

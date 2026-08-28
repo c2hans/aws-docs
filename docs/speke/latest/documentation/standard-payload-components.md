@@ -31,3 +31,7 @@ The following example shows part of a sample request from the encryptor to the D
 The following example shows the corresponding response from the DRM key provider to the encryptor:
 
 ![ResponseIntro1](http://docs.aws.amazon.com/speke/latest/documentation/images/ResponseIntro1.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Packager and Encoder Key Exchange API Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query speke` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

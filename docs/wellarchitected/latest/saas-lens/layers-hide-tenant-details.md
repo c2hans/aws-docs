@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/layers-
  You’ll notice that our layer includes logging and metrics helpers that accept a JWT token. This allows each microservice to simply call these functions and supply the token without any concern for which tenant they are working with. Then, within the layer, the code uses the JWT token to resolve the tenant context and inject it into the log messages and metric events.
 
  This is just a snippet of how layers can be applied to hide tenant context. The real value is that the policies and mechanisms for injecting tenant context are completely removed from the developer experience. They’re also updated, versioned, and deployed separately. This allows these policies to be more centrally managed in your environment without introducing separate microservices that could add latency and create bottlenecks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -141,3 +141,7 @@ You can view the status of a cache by using the AWS Management Console, the AWS 
 | DELETING | An existing cache is being deleted. |
 | UPDATING | The cache is undergoing a customer-initiated update. |
 | FAILED | This status can mean either of the following:+ The cache has failed and cannot be recovered.<br />+  The cache couldn't be created.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

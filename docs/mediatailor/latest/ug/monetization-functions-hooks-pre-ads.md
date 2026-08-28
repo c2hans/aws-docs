@@ -53,3 +53,7 @@ This replaces the ADS URL and adds a custom header for the current ad break.
 <a name="monetization-functions-hooks-pre-ads-failure"></a>
 
 If a function attached to `PRE_ADS_REQUEST` fails for any reason, MediaTailor discards the function's output and proceeds as if no function were attached. The ADS request is sent using the original session and request parameters without modification.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

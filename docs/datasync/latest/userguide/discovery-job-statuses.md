@@ -36,3 +36,7 @@ Use the following table to understand whether DataSync Discovery recommendations
 | `FAILED` | DataSync Discovery couldn't generate recommendations. You can review your CloudWatch logs to identify the issue and try generating the recommendations again. |
 | `NONE` | Recommendations aren't available. You may see this status for a failed discovery job or issue with the storage resource. |
 |  `COMPLETED`  | DataSync Discovery currently doesn't support an AWS storage service that meets the needs of the storage resource. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

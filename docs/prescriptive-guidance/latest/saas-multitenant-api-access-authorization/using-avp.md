@@ -27,3 +27,7 @@ A centralized PDP with PEPs on APIs provides an easy option to create a robust a
 <a name="using-avp-cedar"></a>
 
 Amazon Verified Permissions uses the Cedar language to manage fine-grained permissions in your custom applications. With Verified Permissions, you can store Cedar policies in a central location, take advantage of low latency with millisecond processing, and audit permissions across different applications. You can also optionally integrate the Cedar SDK directly into your application to provide authorization decisions without using Verified Permissions. This option requires additional custom application development to manage and store policies for your use case. However, it can be a viable alternative, particularly in cases where access to Verified Permissions is intermittent or not possible because of inconsistent internet connectivity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

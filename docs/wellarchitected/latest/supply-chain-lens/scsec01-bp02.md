@@ -36,3 +36,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 1.  Configure AWS Audit Manager to automatically collect and organize evidence for regulatory compliance, simplifying audit preparation and demonstrating adherence to industry standards.
 
 1.  Integrate these services with your CI/CD pipelines and infrastructure as code to make sure security controls scale automatically with your supply chain workloads and maintain consistency across environments.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

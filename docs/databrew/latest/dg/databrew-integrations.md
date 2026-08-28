@@ -41,3 +41,7 @@ DataBrew writes output files to Amazon S3, and supports the following file forma
 | XML | .xml | .xml.snappy, .xml.gz, .xml.lz4, .xml.bz2, .xml.deflate, .xml.br |
 | JSON (JSON Lines format only) |  .json  | .json.snappy, .json.gz, .json.lz4, json.bz2, .json.deflate, .json.br |
 | Tableau Hyper | Not supported | Not applicable |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

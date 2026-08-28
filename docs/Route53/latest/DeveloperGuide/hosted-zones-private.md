@@ -41,3 +41,7 @@ If you want to route traffic for your domain on the internet, you use a Route 5
 + [Disassociating VPCs from a private hosted zone](hosted-zone-private-disassociate-vpcs.md)
 + [Deleting a private hosted zone](hosted-zone-private-deleting.md)
 + [VPC permissions](hosted-zone-private-vpc-permissions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

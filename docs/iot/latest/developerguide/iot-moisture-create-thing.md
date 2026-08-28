@@ -26,3 +26,7 @@ This is the only time you can download your certificate and private key.
 1. Choose **Attach a policy**.
 
 1. For **Add a policy for your thing**, choose **MoistureSensorPolicy**, and then choose **Register Thing**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

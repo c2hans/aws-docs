@@ -36,3 +36,7 @@ The **Inbound rules** screen drills down into the EC2 security group for the ins
 ![Amazon EC2 console displays Elastic Beanstalk security groups for each environment.](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-env-config-ec2-ec2console-sg-to-rule.png)
 
 For more information, see [ Change security groups for your instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/changing-security-group.html) and [ Elastic Load Balancing rules](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/security-group-rules-reference.html#sg-rules-elb) in the *Amazon EC2 User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

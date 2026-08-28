@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 + [OCSF Extension Usage Documentation](https://schema.ocsf.io/1.0.0/extensions/)
 + [OCSF Core Schema Reference](https://schema.ocsf.io/1.0.0/)
 + [OCSF Extensions Registry](https://github.com/ocsf/ocsf-schema/tree/main/extensions)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

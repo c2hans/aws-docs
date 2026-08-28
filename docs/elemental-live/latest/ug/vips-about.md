@@ -42,3 +42,7 @@ Typical use cases for the virtual input switching features are the following:
 + Both types of switching
 
   You might implement the SCTE-35-triggered switch scenario described previously, and also implement asynchronous input switching. To handle planned cutaways to file content, you can implement asynchronous input switching to handle unplanned cutaways to a file content. You can also implement synchronous input switching when you need to quickly drop the live stream and show a "please standby" file clip.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

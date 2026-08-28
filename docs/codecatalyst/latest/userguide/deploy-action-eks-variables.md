@@ -19,3 +19,7 @@ For information about referencing these variables in a workflow, see [Using pred
 | namespace | The Kubernetes namespace into which the cluster was deployed.<br />Example: `default` |
 | resources | Reserved. JSON-formatted metadata related to the resources deployed during the workflow run. |
 | server | The name of the API server endpoint that you can use to communicate with your cluster using management tools such as `kubectl`.<br />For more information about the API service endpoint, see [Amazon EKS cluster endpoint access control](https://docs.aws.amazon.com/eks/latest/userguide/cluster-endpoint.html) in the **Amazon EKS User Guide**.<br />Example: `https://{{random-string}}.gr7.us-west-2.eks.amazonaws.com` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

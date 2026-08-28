@@ -52,3 +52,7 @@ For more details, refer to the following information:
 + Well-Architected Framework [Security]: [Secure Operation](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/operating-your-workload-securely.html)
 + Well-Architected Framework [Security]: [Detection](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/detection.html)
 + Well-Architected Framework [Security]: [Protecting Compute](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/protecting-compute.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

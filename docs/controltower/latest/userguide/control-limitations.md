@@ -32,3 +32,7 @@ For the most updated information about controls and Region support, we recommend
 You can view the available Regions for each control in the AWS Control Tower console. You can view the available Regions programmatically with the [`GetControl`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_GetControl.html) and [`ListControls`](https://docs.aws.amazon.com/controlcatalog/latest/APIReference/API_ListControls.html) APIs from AWS Control Catalog.
 
 For information about AWS Security Hub CSPM controls from the **Service-Managed Standard: AWS Control Tower** that are not supported in certain AWS Regions, see "Unsupported Regions" in the [Security Hub CSPM standard](https://docs.aws.amazon.com/controltower/latest/controlreference/security-hub-controls.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

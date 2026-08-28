@@ -742,3 +742,7 @@ Common patterns for iterative training:
 <a name="model-customize-mtrl-job-results-best-practices"></a>
 + **Monitor checkpoint creation**. Use DescribeJob to track `ResumableCheckpoint` and `ModelCheckpoint` fields during training so you know what's available if you need to resume.
 + **Plan for failures on long jobs.** If a job has many steps, design your workflow to resume from checkpoints rather than restart from scratch.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

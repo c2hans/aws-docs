@@ -24,3 +24,7 @@ The version of AWS Glue used by the visual job must match the version that AWS G
 ![The screenshot shows the ID from the Machine learning transforms page.](http://docs.aws.amazon.com/glue/latest/dg/images/recording-matching-transform-2.png)
 
 1. (Optional) On the **Transform** tab, you can check the option to add the confidence scores. At the cost of extra computing, the model will estimate a confidence score for each match as an additional column.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -197,3 +197,7 @@ To run the migration across your fleet, use Systems Manager Run Command to execu
 To roll back, create a separate SSM document that stops AWS IoT Greengrass, removes the drop-in override, restores the original file ownership, reloads the systemd daemon, and restarts AWS IoT Greengrass as root. Run this document against the devices that you need to roll back.
 
 For more information about running commands on managed nodes, see [Running commands using Systems Manager Run Command](https://docs.aws.amazon.com/systems-manager/latest/userguide/run-command.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ In addition to Application Auto Scaling actions, your IAM policies must grant pe
 For information about how validation is performed, see [Permissions validation for Application Auto Scaling API calls on target resources](security_iam_permission_validation.md).
 
 Note that some permission issues can also be due to an issue with creating the service-linked roles used by Application Auto Scaling. For information about creating these service-linked roles, see [Service-linked roles for Application Auto Scaling](application-auto-scaling-service-linked-roles.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

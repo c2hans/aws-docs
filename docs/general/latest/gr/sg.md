@@ -108,3 +108,7 @@ Storage Gateway hardware appliance is supported in the following AWS Regions.
 | Total size of tapes in a virtual tape library in PiB | Each supported Region: 1 | No | Total size of all tapes in a virtual tape library (VTL) |
 
 For more information, see [Storage Gateway quotas](https://docs.aws.amazon.com/storagegateway/latest/userguide/resource-gateway-limits.html) in the *AWS Storage Gateway User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

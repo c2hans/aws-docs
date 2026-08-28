@@ -24,3 +24,7 @@ This section describes the components and AWS services that make up this solutio
 |  [AWS Identity and Access Management (IAM)](https://aws.amazon.com/iam/)  |  **Supporting.** Assigns granular access policies and permissions to services and users. |
 |  [AWS Systems Manager](https://aws.amazon.com/systems-manager/)  |  **Supporting.** Provides application-level resource monitoring and visualization of resource operations and cost data. |
 |  [AWS Elemental MediaPackage](https://aws.amazon.com/mediapackage/)  |  **Optional.** Creates video streams formatted to play on several devices from a single video input, and protects content from unauthorized use through content encryption and digital rights management. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Video on Demand on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

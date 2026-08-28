@@ -13,3 +13,7 @@ The following tutorials show you how to create and run experiments using AWS Fau
 + [Test Spot Instance interruptions](fis-tutorial-spot-interruptions.md)
 + [Simulate a connectivity event](fis-tutorial-disrupt-connectivity.md)
 + [Schedule a recurring experiment](fis-tutorial-recurring-experiment.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

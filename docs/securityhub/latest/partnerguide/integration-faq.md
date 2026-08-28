@@ -333,3 +333,7 @@ The following are common questions about setting up and maintaining an integrati
    If the customer runs Security Hub CSPM in three Regions, and the same IAM issue is detected in all three Regions, then send the finding to all three Regions.
 
    When an issue is resolved, send the update to the finding to all of the Regions where you sent the original finding.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

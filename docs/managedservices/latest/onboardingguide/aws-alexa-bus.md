@@ -34,3 +34,7 @@ There are no restrictions. Full functionality of Alexa for Business is available
 **Q: What Alexa for Business functionality requires separate RFCs?**
 
 To register an Alexa Voice Service (AVS) device with Alexa for Business, provide access to the Alexa built-in device maker. To do this, an IAM role needs to be created in the Alexa for Business console that can be deployed using the Management \| Other \| Other change type. This allows the AVS device maker to register and manage devices with Alexa for Business on your behalf.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

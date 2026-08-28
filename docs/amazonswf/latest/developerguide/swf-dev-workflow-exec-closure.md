@@ -20,3 +20,7 @@ A decider might also close the execution and logically continue it as a new exec
 Finally, you could terminate workflow executions directly from the Amazon SWF console or programmatically by using the `[TerminateWorkflowExecution](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_TerminateWorkflowExecution.html)` API. Termination forces closure of the workflow execution. Cancellation is preferred over termination, because your deciders can manage closure of the workflow execution.
 
 Amazon SWF terminates a workflow execution if the execution exceeds certain service-defined limits. Amazon SWF terminates a child workflow if the parent workflow has terminated and the applicable child policy indicates that the child workflow should also be terminated.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

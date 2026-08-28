@@ -18,3 +18,7 @@ This is the real-time observation and analysis of telemetry data. This capabilit
 + [[O.CM.8] Hold operational review meetings for data transparency](o.cm.8-hold-operational-review-meetings-for-data-transparency.md)
 + [[O.CM.9] Optimize alerts to prevent fatigue and minimize monitoring costs](o.cm.9-optimize-alerts-to-prevent-fatigue-and-minimize-monitoring-costs.md)
 + [[O.CM.10] Proactively detect issues using AI/ML](o.cm.10-proactively-detect-issues-using-aiml.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

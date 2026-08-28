@@ -77,3 +77,7 @@ The following table shows the mapping of protection types, `dataSources`, and `f
 </table>
 
 \*GetUsageStatistics uses its own `dataSource` names. For more information, see [Monitoring GuardDuty Usage and Estimating Costs](monitoring_costs.md) or [GetUsageStatistics](https://docs.aws.amazon.com/guardduty/latest/APIReference/API_GetUsageStatistics.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

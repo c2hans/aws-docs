@@ -71,3 +71,7 @@ The following are the service endpoints and service quotas for this service.
 The quota for **Number of pending invitations** applies to only *sending* accounts who share with accounts that are ***not*** part of sender's AWS Organization.
 There is no quota for how many pending invitations a receiving account can have.
 Invitations are not used when sharing between accounts that are part of the same AWS Organization and [resource sharing within that AWS Organization is turned on](https://docs.aws.amazon.com/ram/latest/userguide/getting-started-sharing.html#getting-started-sharing-orgs).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

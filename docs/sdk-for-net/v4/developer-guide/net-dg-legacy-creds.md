@@ -41,3 +41,7 @@ For a general discussion of how to securely manage AWS credentials, see [AWS sec
 + [Important warnings and guidance for credentials](#net-dg-config-creds-warnings-and-guidelines)
 + [Using the shared AWS credentials file](creds-file.md)
 + [Using the SDK Store (Windows only)](sdk-store.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

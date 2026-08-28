@@ -5,14 +5,14 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/assistan
 # Required permissions
 <a name="assistant-permissions"></a>
 
-Monitor users need the `bedrock:InvokeModelWithResponseStream` permission to use the assistant. When an administrator enables the assistant, Deadline Cloud automatically attaches the required IAM policy to the monitor user role.
+Monitor users need the `bedrock:InvokeModelWithResponseStream` permission to use the assistant. When an administrator enables the assistant, Deadline Cloud automatically attaches the required Amazon Bedrock IAM policy to the monitor user role.
 
 For information about Deadline Cloud IAM permissions, see [Identity-based policy examples for Deadline Cloud](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/security_iam_id-based-policy-examples.html).
 
-## IAM policy
+## Amazon Bedrock IAM policy
 <a name="assistant-bedrock-policy"></a>
 
-When an administrator enables the assistant, the following IAM policy is attached to the monitor user role. The policy grants permission to invoke models through cross-region inference profiles scoped to your monitor's geographic Region.
+When an administrator enables the assistant, the following IAM policy is attached to the monitor user role. The policy grants permission to invoke Amazon Bedrock models through cross-region inference profiles scoped to your monitor's geographic Region.
 
 ```
 {
@@ -47,12 +47,12 @@ When an administrator enables the assistant, the following IAM policy is attache
 }
 ```
 
-The policy only grants `bedrock:InvokeModelWithResponseStream` – no other actions are permitted.
+The policy only grants `bedrock:InvokeModelWithResponseStream` – no other Amazon Bedrock actions are permitted.
 
 ## Cross-region inference
 <a name="assistant-cross-region-inference"></a>
 
-The assistant uses [cross-region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) to optimize model availability and throughput. When you invoke the assistant, might route your request to a different AWS Region within the same geographic area to process the inference request.
+The assistant uses Amazon Bedrock [cross-region inference](https://docs.aws.amazon.com/bedrock/latest/userguide/cross-region-inference.html) to optimize model availability and throughput. When you invoke the assistant, Amazon Bedrock might route your request to a different AWS Region within the same geographic area to process the inference request.
 + Requests are routed to AWS Regions within a geographic boundary determined by your monitor's Region.
 + All data transmitted between Regions remains on the AWS network and does not traverse the public internet.
 + Data is encrypted in transit between AWS Regions.
@@ -76,4 +76,8 @@ The following table shows which geographic inference profile and destination Reg
 | ap-northeast-2 | global | ap-northeast-2 |
 | ap-southeast-1 | global | ap-southeast-1 |
 
-For Regions using the `global` inference profile prefix, might route requests to any supported commercial AWS Region worldwide.
+For Regions using the `global` inference profile prefix, Amazon Bedrock might route requests to any supported commercial AWS Region worldwide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

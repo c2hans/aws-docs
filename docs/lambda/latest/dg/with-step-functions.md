@@ -177,3 +177,7 @@ You can use the Step Functions [Distributed Map](https://docs.aws.amazon.com/ste
 While Step Functions can orchestrate CPU-intensive tasks, Lambda functions might not be suitable for these workloads due to their limited CPU resources. For computationally intensive operations within your workflows, consider these alternatives:
 + **Container orchestration:** Use Step Functions to manage Amazon Elastic Container Service (Amazon ECS) tasks for more consistent and scalable compute resources.
 + **Batch processing:** Integrate AWS Batch with Step Functions for managing compute-intensive batch jobs that require sustained CPU usage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -342,3 +342,7 @@ Use `Fn::ImportValue` when you need strong referential integrity within the same
 + *Protect referenced stacks and outputs.* Because `Fn::GetStackOutput` creates a weak reference, deleting the referenced stack does not prevent the consuming stack from being created or updated. However, subsequent operations that re-resolve the reference will fail. Use stack policies, deletion protection, or IAM policies to prevent accidental deletion of referenced stacks.
 + *Scope IAM roles narrowly.* When configuring the `RoleArn` for cross-account access, restrict the `DescribeStacks` permission to the specific stack ARN whenever possible.
 + *Be aware of resolution timing.* The referenced value is resolved at stack create or update time. If the source value changes, the consuming stack is not automatically updated. To pick up changes, perform an update on the consuming stack.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

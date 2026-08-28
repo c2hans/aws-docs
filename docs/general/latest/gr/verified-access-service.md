@@ -27,3 +27,7 @@ For the service endpoints for Amazon EC2, see [Amazon EC2 endpoints and quotas](
 |  Verified Access Groups  |  10  | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-3829BC77) |  The maximum number of Verified Access Groups that customers can create in the current Region.  |
 |  Verified Access Trust Providers  |  15  | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-AF309E5E) |  The maximum number of Verified Access Trust Providers that customers can create in the current Region.  |
 |  Verified Access Endpoints  |  50  | [Yes](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas/L-5D439CF7) |  The maximum number of Verified Access Endpoints that customers can create in the current Region.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

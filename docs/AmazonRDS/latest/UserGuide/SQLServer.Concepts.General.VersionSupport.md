@@ -52,3 +52,7 @@ The following table displays the planned schedule of deprecations for major engi
 | September 1, 2021 | Amazon RDS is starting to disable the creation of new RDS for SQL Server DB instances using Microsoft SQL Server 2012. For more information, see [Announcement: Amazon RDS for SQL Server ending support for SQL Server 2012 major versions](https://repost.aws/questions/QUFNiETqrMQ_WT_AXSxOYNOA). |
 | July 12, 2019 | The Amazon RDS team deprecated support for Microsoft SQL Server 2008 R2 in June 2019. Remaining instances of Microsoft SQL Server 2008 R2 are migrating to SQL Server 2012 (latest minor version available). <br />To avoid an automatic upgrade from Microsoft SQL Server 2008 R2, you can upgrade at a time that is convenient to you. For more information, see [Upgrading a DB instance engine version](USER_UpgradeDBInstance.Upgrading.md). |
 | April 25, 2019 | Before the end of April 2019, you will no longer be able to create new Amazon RDS for SQL Server database instances using Microsoft SQL Server 2008R2. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

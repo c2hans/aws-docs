@@ -99,9 +99,6 @@ If the optional `hpaName` field is not empty, Region switch patches the Horizont
 
 Make sure to configure any drift-correcting tool, such as GitOps tooling, to ignore the replica field for the resources in the patch, as well as the HorizontalPodAutoscaler field.
 
-## What is evaluated as part of plan evaluation
-<a name="eks-resource-scaling-block-eval"></a>
+## See also
 
-When Region switch evaluates your plan, Region switch performs several checks on your configured EKS execution block and permissions. Region switch verifies that the plan’s IAM role has the correct permissions to describe EKS clusters and list associated Access Entry policies. Region switch also validates that the IAM role is associated to the correct Access Entry policy, so that Region switch has the required permissions to act on the Kubernetes resources. Finally, Region switch confirms that the configured EKS clusters and Kubernetes resources exist.
-
-In addition, Region switch checks that it has successfully collected and stored the necessary monitoring data (Kubernetes replica count) and captures the number of running pods that are required to execute the Region switch plan.
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

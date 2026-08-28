@@ -31,3 +31,7 @@ $client = new S3Client([
 ```
 
 By default, if no credentials configuration is provided on the service client you wish to use, this provider will be called as a part of the `defaultProvider()` credentials chain. In this scenario, the region of the service client is automatically passed to the `login()` provider. Also in this scenario, the profile value passed to the login provider will be resolved by checking the `AWS_PROFILE` environment variable, before falling back to the profile `default`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for PHP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-php` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

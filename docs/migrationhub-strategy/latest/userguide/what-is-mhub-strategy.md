@@ -38,3 +38,7 @@ If this is your first time using Strategy Recommendations, we recommend that you
 + [AWS Schema Conversion Tool](https://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/CHAP_Installing.html) – You can use the AWS Schema Conversion Tool (AWS SCT) to convert your existing database schema from one database engine to another.
 + [Windows Web Application Migration Assistant](https://github.com/awslabs/windows-web-app-migration-assistant) – The Windows Web Application Migration Assistant for AWS Elastic Beanstalk is an interactive PowerShell utility that migrates ASP.NET and ASP.NET Core applications from on-premises IIS Windows servers to Elastic Beanstalk.
 +  [Babelfish for Aurora PostgreSQL](https://aws.amazon.com/rds/aurora/babelfish/) – Babelfish for Aurora PostgreSQL is a new capability for the Amazon Aurora PostgreSQL-Compatible Edition that enables Aurora to understand commands from applications written for the Microsoft SQL server.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Hub Strategy Recommendations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-strategy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

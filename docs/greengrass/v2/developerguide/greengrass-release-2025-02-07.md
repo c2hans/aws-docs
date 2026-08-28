@@ -26,3 +26,7 @@ The following table lists components provided by AWS that include new and update
 | Greengrass nucleus | Version 2.14.1 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.**Bug fixes and improvements**<br />   Fixes an issue where components weren't stopped properly on new installations of Greengrass.    |
 | Greengrass CLI | Version 2.14.1 of the [Greengrass CLI](greengrass-cli-component.md) is available.**Bug fixes and improvements**<br />   Version updated for Greengrass nucleus version 2.14.1 release.    |
 | Secure tunneling | Version 1.1.1 of the [secure tunneling](secret-manager-component.md) component is available.**Bug fixes and improvements**<br />   Adds a configuration to support Greengrass nucleus lite.    |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

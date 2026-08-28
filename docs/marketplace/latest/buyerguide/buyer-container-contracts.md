@@ -13,3 +13,7 @@ For example, you might purchase 10 user access licenses and 5 administrative lic
 In addition, some companies offer private container-based software products with a contract pricing model. A private offer typically has a fixed duration that you can't change.
 
 You can purchase a container-based software product contract using the product’s detail page on AWS Marketplace. If this option is available, **AMI with contract pricing** appears for **Delivery Method** on the product’s detail page. When you make the purchase, you will be directed to the product’s website for account setup and conﬁguration. The usage charges will then appear on your regular AWS account billing report.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,3 +13,7 @@ This guide provides best practices for operating SAP HANA systems that have been
 This guide assumes that you have a basic knowledge of AWS. If you are new to AWS, see the following on the AWS website before continuing:
 +  [AWS Getting Started Resource Center](https://aws.amazon.com/getting-started/)
 +  [What is Amazon EC2?](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/concepts.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

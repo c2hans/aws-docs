@@ -281,3 +281,7 @@ Name of the user. Cannot be a federated users, like IAM user or AWS IdC user.
 
 IAM\_ROLE 'arn:aws:iam::<account-id>:role/<role-name>'
 Use the Amazon Resource Name (ARN) for an IAM role that your cluster uses for authentication and authorization when user {{username}} runs queries on Redshift warehouses with federated permissions. This role needs to have the required permissions to run the query. We recommend using `[AmazonRedshiftFederatedAuthorization](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonRedshiftFederatedAuthorization.html)` AWS Managed Policy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

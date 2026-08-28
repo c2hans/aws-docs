@@ -25,3 +25,7 @@ When AWS collects customer data and determines the purposes and means of process
 AWS acts as a controller for operational metadata it generates or collects to operate services, manage accounts, bill customers and maintain security (such as account IDs, billing information, and security logs). AWS processes such metadata as described in the [AWS Privacy Notice](https://aws.amazon.com/privacy/).
 
 For metadata customers generate or configure through AWS services (customer-created metadata), AWS does not act as processor, since AWS retains control over processing locations and determines other related processing aspects for this metadata.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

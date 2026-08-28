@@ -36,3 +36,7 @@ App2Container communicates with AWS services using standard APIs when retrieving
 <a name="data-privacy-a2c"></a>
 
 App2Container does not store passwords, keys, or other secrets or customer-sensitive material. App2Container also ensures that no sensitive fields are contained in application logs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App2Container. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app2container` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

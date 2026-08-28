@@ -246,3 +246,7 @@ The following related resources can help you as you work with this action.
   + For GitLab.com, use the **GitLab** provider option in the console or the `CodestarSourceConnection` action with the `GitLab` provider in the CLI. See [GitLab.com connections](connections-gitlab.md).
 + To view a Getting Started tutorial that creates a pipeline with a Bitbucket source and a CodeBuild action, see [Getting started with connections](https://docs.aws.amazon.com/dtconsole/latest/userguide/getting-started-connections.html).
 + For a tutorial that shows you how to connect to a GitHub repository and use the **Full clone** option with a downstream CodeBuild action, see [Tutorial: Use full clone with a GitHub pipeline source](tutorials-github-gitclone.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

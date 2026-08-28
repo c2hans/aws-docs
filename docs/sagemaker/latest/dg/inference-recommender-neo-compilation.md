@@ -59,3 +59,7 @@ The general steps for creating an Inference Recommender job that includes Neo-op
 + Debug compilation failures, if any. For more information, see [Troubleshoot Neo Compilation Errors](https://docs.aws.amazon.com/sagemaker/latest/dg/neo-troubleshooting-compilation.html).
 
 For an example that demonstrates the previous workflow and how to get Neo-optimized recommendations using XGBoost, see the following [example notebook](https://github.com/aws/amazon-sagemaker-examples/blob/main/sagemaker-inference-recommender/xgboost/xgboost-inference-recommender.ipynb). For an example that show how to get Neo-optimized recommendations using TensorFlow, see the following [example notebook](https://github.com/aws/amazon-sagemaker-examples/blob/main/sagemaker-inference-recommender/inference-recommender.ipynb).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

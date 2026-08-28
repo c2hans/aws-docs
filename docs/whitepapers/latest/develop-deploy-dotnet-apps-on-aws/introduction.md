@@ -24,3 +24,7 @@ Rapid and continuous development and deployment of applications are critical asp
 AWS provides a reliable, scalable, and global infrastructure platform with a broad set of global cloud-based services. With over 200 services that can be provisioned quickly without upfront capital expenses, AWS provides the ideal environment to deploy existing .NET applications and create new, modern, and innovative .NET applications.
 
 This whitepaper focuses on the key AWS Services for developing and deploying .NET applications. For information on the full range of services, refer to the homepage on the [AWS website](https://aws.amazon.com/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

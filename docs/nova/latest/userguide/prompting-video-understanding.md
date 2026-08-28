@@ -64,3 +64,7 @@ Note that segmenting the video might also decrease latency as analysis is done i
 Videos can be large in size. Although we provide means to handle up to 1 GB files by uploading them to Amazon S3, making invocation payloads very lean, the models still needs to process a potentially large number of tokens. If you are using synchronous Amazon Bedrock calls such as Invoke or Converse, make sure your SDK is configured with an appropriate timeout.
 
 Regardless, Amazon S3 URI is the preferred way when latency is a factor. Segmenting videos as described in the previous section is another strategy. Pre-processing high-resolution and high-frame rate videos down can also save bandwidth and processing on the service size, lowering latency.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

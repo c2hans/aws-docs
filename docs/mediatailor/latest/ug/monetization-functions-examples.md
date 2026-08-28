@@ -16,3 +16,7 @@ This page provides complete, working function configurations for common use case
 | --- | --- |
 | [Example 1: Data enrichment](monetization-functions-examples-enrichment.md) | Fetch a LiveRamp identity envelope at session start and store it in player parameters. |
 | [Example 2: A/B traffic split](monetization-functions-examples-ab.md) | Split ad request traffic evenly between two ad decision server URLs for A/B testing. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

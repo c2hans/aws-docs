@@ -22,3 +22,7 @@ There are three ways to create users on a Slurm cluster, plus options for mappin
 + [Creating users on a Slurm cluster on SageMaker HyperPod](sagemaker-hyperpod-slurm-user-management-create-users.md)
 + [Mapping cluster users to IAM principals for access](sagemaker-hyperpod-slurm-user-management-iam-mapping.md)
 + [Integrate HyperPod clusters with Active Directory](sagemaker-hyperpod-slurm-user-management-active-directory.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

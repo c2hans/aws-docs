@@ -53,3 +53,7 @@ After you create a VPC endpoint association, complete these steps:
 1. Consider setting up logging for your firewall to track traffic through the new endpoint. For information about logging, see [Logging and monitoring in AWS Network Firewall](logging-monitoring.md).
 
 Remember, changes to your network configuration can affect your security posture. Always verify that your new endpoint is functioning as expected and that it complies with your organization's security policies.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

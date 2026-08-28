@@ -36,3 +36,7 @@ re:Post Private uses the HTTPS protocol to communicate with your client applicat
 <a name="key-management"></a>
 
 re:Post Private is integrated with AWS Key Management Service and supports AWS KMS keys. You can customize the data encryption settings for your private re:Post when you create it. To do so, you can either choose an existing AWS KMS key or [create a new AWS KMS key](https://docs.aws.amazon.com/kms/latest/developerguide/create-keys.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

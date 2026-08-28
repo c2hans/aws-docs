@@ -29,3 +29,7 @@ Don't choose this value unless your input video has embedded timecodes.
 Don't choose this value unless your input video has embedded timecodes.
   + **ZEROBASED**: The service sets the timecode of the first frame of the input to 00:00:00:00.
   + **SPECIFIEDSTART**: The service sets the timecode of the first frame of the input to the value that you specify in the setting **Start timecode**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

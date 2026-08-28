@@ -174,3 +174,7 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 + **Sign-in fails (Default OAuth app or Custom OAuth app)** – Verify that your Intuit account is active and that you can sign in to [quickbooks.intuit.com](https://quickbooks.intuit.com) on the Intuit website directly. For Custom OAuth app, confirm that the redirect URI in your Intuit Developer app matches the Amazon Quick callback URL.
 + **Invalid client credentials (Custom OAuth app)** – Verify that the Client ID and Client secret match the values in your Intuit Developer app. You can view your credentials from the app settings in the Intuit Developer portal.
 + **Insufficient permissions** – Verify that the scopes configured for your Intuit Developer app include the permissions required for the actions that you want to use. See [Recommended scopes](#quickbooks-oauth-scopes).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

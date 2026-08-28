@@ -134,3 +134,7 @@ Use the **update-compute-environment** command with an change to one or more of 
 <a name="infrastructure-updates-monitoring"></a>
 
 Monitor your infrastructure updates using the AWS Batch console to watch the compute environment status change to `UPDATING`, monitor instance replacement progress, and check for any failed updates. The update is successful once the compute environment state is `VAILD`. You can also use CloudWatch to track instance termination events and monitor job states during the update. With the AWS CLI, use the **describe-compute-environments** command to check status and monitor instance lifecycle events.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

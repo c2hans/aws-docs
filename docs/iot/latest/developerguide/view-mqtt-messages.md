@@ -115,3 +115,7 @@ This section describes how to use the AWS IoT MQTT client in the [AWS IoT consol
 
 1. Choose one MQTT client, in the **Publish to a topic** tab, in the **Topic name** field, enter the {{topicName}} of your message. In this example, use **topic1**. Try publishing the message a few times. From the **Subscriptions** list of both MQTT clients, you should be able to see that the clients receive the message using a random distribution. In this example, we publish the same message "Hello from AWS IoT console" three times. The MQTT client on the left received the message twice and the MQTT client on the right received the message once.
 ![The shared subscriptions flow with two clients to share a subscription to a topic and only one client will receive messages published to that topic using a random distribution.](http://docs.aws.amazon.com/iot/latest/developerguide/images/shared_subscriptions_test.gif)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

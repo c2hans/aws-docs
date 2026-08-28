@@ -353,3 +353,7 @@ In the next section ([Configuring Resolvers](https://docs.aws.amazon.com/appsync
 For more information regarding role policy configuration, see [Modifying a role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_modify.html) in the *IAM User Guide*.
 
 For more information regarding cross-account access of AWS Lambda resolvers for AWS AppSync, see [Building cross-account AWS Lambda resolvers for AWS AppSync](https://aws.amazon.com/blogs/mobile/appsync-lambda-cross-account/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

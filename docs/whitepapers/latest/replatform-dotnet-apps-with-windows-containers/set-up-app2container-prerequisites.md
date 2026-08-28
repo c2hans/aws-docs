@@ -73,3 +73,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-app
    ```
 
  With this step, you have set up your environment prerequisites, and are ready for App2Container installation on your environment. In the next section, you will install App2Container on your worker machine and set it up to start your containerization process.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

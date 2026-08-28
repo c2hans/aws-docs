@@ -147,3 +147,7 @@ The following steps show how to use `pg_hint_plan`.
    ```
 
    Now, when the original SQL statement runs, the optimizer chooses either an `Approved` or `Preferred` plan. If the minimum-cost plan isn't `Approved` or `Preferred`, then the optimizer chooses the `Preferred` plan.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

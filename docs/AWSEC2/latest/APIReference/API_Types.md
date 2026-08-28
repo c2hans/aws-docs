@@ -272,6 +272,7 @@ The following data types are supported:
 +  [FirewallStatelessRule](API_FirewallStatelessRule.md)
 +  [FleetBlockDeviceMappingRequest](API_FleetBlockDeviceMappingRequest.md)
 +  [FleetCapacityReservation](API_FleetCapacityReservation.md)
++  [FleetCapacityReservationTargetRequest](API_FleetCapacityReservationTargetRequest.md)
 +  [FleetData](API_FleetData.md)
 +  [FleetEbsBlockDeviceRequest](API_FleetEbsBlockDeviceRequest.md)
 +  [FleetIamInstanceProfileSpecificationRequest](API_FleetIamInstanceProfileSpecificationRequest.md)
@@ -410,7 +411,10 @@ The following data types are supported:
 +  [InstanceTopology](API_InstanceTopology.md)
 +  [InstanceTypeInfo](API_InstanceTypeInfo.md)
 +  [InstanceTypeInfoFromInstanceRequirements](API_InstanceTypeInfoFromInstanceRequirements.md)
++  [InstanceTypeItem](API_InstanceTypeItem.md)
 +  [InstanceTypeOffering](API_InstanceTypeOffering.md)
++  [InstanceTypeSpecification](API_InstanceTypeSpecification.md)
++  [InstanceTypeSpecificationRequest](API_InstanceTypeSpecificationRequest.md)
 +  [InstanceUsage](API_InstanceUsage.md)
 +  [IntegrateServices](API_IntegrateServices.md)
 +  [InternetGateway](API_InternetGateway.md)
@@ -688,6 +692,8 @@ The following data types are supported:
 +  [Reservation](API_Reservation.md)
 +  [ReservationFleetInstanceSpecification](API_ReservationFleetInstanceSpecification.md)
 +  [ReservationValue](API_ReservationValue.md)
++  [ReservedCapacityFallbackOptions](API_ReservedCapacityFallbackOptions.md)
++  [ReservedCapacityFallbackOptionsRequest](API_ReservedCapacityFallbackOptionsRequest.md)
 +  [ReservedCapacityOptions](API_ReservedCapacityOptions.md)
 +  [ReservedCapacityOptionsRequest](API_ReservedCapacityOptionsRequest.md)
 +  [ReservedInstanceLimitPrice](API_ReservedInstanceLimitPrice.md)
@@ -968,3 +974,7 @@ The following data types are supported:
 +  [VpnTunnelLogOptions](API_VpnTunnelLogOptions.md)
 +  [VpnTunnelLogOptionsSpecification](API_VpnTunnelLogOptionsSpecification.md)
 +  [VpnTunnelOptionsSpecification](API_VpnTunnelOptionsSpecification.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

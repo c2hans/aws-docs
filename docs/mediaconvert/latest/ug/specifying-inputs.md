@@ -120,3 +120,7 @@ This procedure relies on the concept of input and output timelines. For more inf
    1. Specify any additional clips. Multiple clips must be in chronological order and can't overlap; each **Start timecode** must come after the previous clip's **End timecode**.
 
       If you specify more than one input clip, they all appear in the output, one after the other, in the order that you specify them.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

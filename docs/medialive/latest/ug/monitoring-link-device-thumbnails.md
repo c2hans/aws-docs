@@ -12,3 +12,7 @@ You can view display thumbnails of the content that is currently being pushed to
 1. In the navigation pane, choose **Input devices**, find the card for the Link input device that you want. If there are many Link input devices, enter part of the name to filter the list.
 
    The card shows a thumbnail panel. If the device is pushing content and the device is connected to AWS (as shown in the **Connection state** field), the thumbnail refreshes every 5 seconds.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

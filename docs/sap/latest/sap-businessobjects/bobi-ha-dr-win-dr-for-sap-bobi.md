@@ -10,3 +10,7 @@ DR for SAP BusinessObjects BI Platform on the AWS Cloud refers to a scenario in 
 There are no restrictions in AWS for using LCM or Data Federation Services for your DR environment. Note that using LCM requires either consuming resources on the source system or provisioning an additional system to run promotion management jobs. This option might also result in a higher RPO depending on the frequency of promotion management jobs. See [Promotion Management Architecture](https://wiki.scn.sap.com/wiki/display/BOBJ/Promotion+Management+Architecture+%3A+processes+at+play+in+a+BI4+landscape) on the SAP Community Wiki for the high-level architecture for this option.
 
 In this guide, we’ll discuss the second option for handling DR, which is to copy the CMS database and FRS contents. Using variants of this option, you can build the complete primary system within your recovery time limits. This option doesn’t require resources from the primary system except for the backup copy of the database and file system.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,3 +35,7 @@ You can use tags to schedule patching. For information, see [AMS Advanced Patch 
   <tr><td><code>SupportPriority</code></td><td>One of six possible acronyms for Confidentiality, Integrity, or Availability; the order of the acronym is the priority. For example, I.C.A. would mean the order is Integrity, Confidentiality, Availability. Other acceptable values are C.I.A., C.A.I., I.A.C., A.C.I., and A.I.C.</td><td>Identify which type of support should be priority: Confidentiality, Integrity, or Availability.</td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

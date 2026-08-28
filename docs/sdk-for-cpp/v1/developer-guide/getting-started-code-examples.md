@@ -85,3 +85,7 @@ endforeach()
 1. A Visual Studio Debug Console window will open and display the output of the code.
 
 1. Press a key to close the window, or manually close the window, to terminate the program.  You can also set breakpoints in the code and when you click run again the breakpoints will be hit.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for C++. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-cpp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

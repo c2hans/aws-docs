@@ -15,3 +15,7 @@ You can choose the hostname of any individual source server on the source server
 + [Adding source servers to AWS DRS](adding-servers.md)
 + [AWS DRS source servers page](server-list.md)
 + [View server details with AWS DRS](server-details.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

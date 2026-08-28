@@ -337,3 +337,7 @@ Amazon EventBridge provides at-least-once delivery with a 24-hour retry window. 
 There is no additional Amazon Timestream for InfluxDB charge for publishing events. Standard pricing applies for downstream processing:
 + [Amazon EventBridge pricing](https://aws.amazon.com/eventbridge/pricing/) — for rule evaluation and event delivery to targets
 + Target service pricing applies based on which targets you configure (Lambda invocations, Amazon SQS messages, Amazon SNS deliveries, etc.)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

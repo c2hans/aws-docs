@@ -12,3 +12,7 @@ Amazon Neptune supports various methods for monitoring performance and usage:
 + **Publishing logs to Amazon CloudWatch Logs** – You can configure a Neptune DB cluster to publish audit log data to a log group in Amazon CloudWatch Logs. With CloudWatch Logs, you can perform real-time analysis of the log data, use CloudWatch to create alarms and view metrics, and use CloudWatch Logs to store your log records in highly durable storage. For more information, see [Neptune CloudWatch Logs](cloudwatch-logs.md).
 + **AWS CloudTrail** – Neptune supports API logging using CloudTrail. For more information, see [Logging Amazon Neptune API Calls with AWS CloudTrail](cloudtrail.md).
 + **Tagging** – Use tags to add metadata to your Neptune resources and track usage based on tags. For more information, see [Tagging Amazon Neptune resources](tagging.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

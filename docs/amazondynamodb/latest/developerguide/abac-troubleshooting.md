@@ -78,3 +78,7 @@ If ABAC was enabled for your account through Support, you won't be able to opt o
 You can opt out of ABAC yourself *only if* the following are true:
 + You used the self-service way of [opting in through the DynamoDB console](abac-enable-ddb.md#abac-enable-console).
 + You're opting out within seven calendar days of opting in.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

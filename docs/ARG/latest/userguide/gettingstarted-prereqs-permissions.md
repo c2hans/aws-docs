@@ -94,3 +94,7 @@ The `resource-groups:SearchResources` permission allows Tag Editor to list resou
 The `resource-explorer:ListResources` permission allows Tag Editor to list resources when you search resources without defining search tags.
 
 To use Resource Groups and Tag Editor in the console, you also need permission to run the `resource-groups:ListGroupResources` action. This permission is necessary for listing available resource types in the current Region. Using policy conditions with `resource-groups:ListGroupResources` is not currently supported.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Resource Groups. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ARG` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

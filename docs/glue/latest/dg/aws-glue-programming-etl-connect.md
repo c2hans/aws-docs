@@ -418,3 +418,7 @@ The following parameters are used generally when configuring bookmarks. They may
 + `jobBookmarkKeys` — Array of column names.
 + `jobBookmarkKeysSortOrder` — String defining how to compare values based on sort order. Valid values: `"asc"`, `"desc"`.
 + `useS3ListImplementation` — Used to manage memory performance when listing Amazon S3 bucket contents. For more information, see [Optimize memory management in AWS Glue](https://aws.amazon.com/blogs/big-data/optimize-memory-management-in-aws-glue/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

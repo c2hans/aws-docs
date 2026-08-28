@@ -27,3 +27,7 @@ This guide is based on an example scenario that assumes the following:
 + The data from the source environment is migrated from [Amazon Simple Storage Service (Amazon S3)](https://aws.amazon.com/s3/) to FSx for Windows File Server.
 
 The details of your use case may differ from this example scenario, but you can still use the recommendations and best practices in this guide to design an architecture that decouples data storage from your SAS servers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

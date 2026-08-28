@@ -66,3 +66,7 @@ To begin the implementation of the training plan, make sure that:
 1. Monitoring and reporting mechanisms are in place.
 
 The effective implementation of the training plan is critical for driving cloud adoption and achieving desired business outcomes. By following these best practices, using the AWS LNA, and implementing a comprehensive training plan, organizations can ensure that their workforce is properly skilled and prepared for the cloud transformation. This accelerates adoption and also maximizes the value realized from the cloud investment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

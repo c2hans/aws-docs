@@ -76,3 +76,7 @@ The unique identifier for the cache policy. For example: `2766f7b2-75c5-41c6-8f0
 
 `LastModifiedTime`  <a name="LastModifiedTime-fn::getatt"></a>
 The date and time when the cache policy was last modified.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

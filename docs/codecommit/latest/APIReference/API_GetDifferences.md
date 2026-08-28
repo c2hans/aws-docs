@@ -7,6 +7,8 @@ source_url: https://docs.aws.amazon.com/codecommit/latest/APIReference/API_GetDi
 
 Returns information about the differences in a valid commit specifier (such as a branch, tag, HEAD, commit ID, or other fully qualified reference). Results can be limited to a specified path.
 
+For line-level diff details, pass the `beforeBlob.blobId` and `afterBlob.blobId` values from a `Difference` object to [GetBlobDifferences](API_GetBlobDifferences.md).
+
 ## Request Syntax
 <a name="API_GetDifferences_RequestSyntax"></a>
 
@@ -250,3 +252,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/codecommit-2015-04-13/GetDifferences)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/codecommit-2015-04-13/GetDifferences)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/codecommit-2015-04-13/GetDifferences)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -115,3 +115,7 @@ For example, if the value of the `Frames` parameter is `1-10`, it defines 10 tas
 For more information about embedded files, sessions, and path-mapped locations, see [How jobs are run](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run) in the [Open Job Description specification](https://github.com/OpenJobDescription/openjd-specifications/wiki/How-Jobs-Are-Run).
 
 There are more examples of job templates in the [deadline-cloud-samples/job\_bundles](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles) repository, as well as the [template samples](https://github.com/OpenJobDescription/openjd-specifications/tree/mainline/samples) provided with the Open Job Descriptions specification.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

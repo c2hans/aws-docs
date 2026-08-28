@@ -69,3 +69,7 @@ You can create new accounts with specific policies, rules, and principles, based
 **Legacy habits** – Watch out for legacy user behavior that might affect new processes. For example:
 + Do agent devices predominantly connect over Wi-Fi today? If so, requiring wired connections will be a cultural shift for agents and might lead to poor compliance and call experience. An end-user education campaign might be required to drive this culture shift.
 + Do agents use other collaboration applications (such as Microsoft Teams or Zoom) on their devices? This can lead to conflicting demands for speaker and microphone devices on the device, such as when Connect Customer tries to deliver an incoming call while the agent is on another call. It can also lead to agents missing customer calls because they are busy making internal calls. We recommend removing other collaboration applications, where practical, to avoid call clashes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

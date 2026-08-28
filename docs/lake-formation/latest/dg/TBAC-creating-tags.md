@@ -48,3 +48,7 @@ You can create LF-Tags by using the AWS Lake Formation console, the API, or the 
 ------
 
  As tag creator , the principal gets `Alter` permission on this LF-Tag and can update or remove any tag value from this LF-Tag. The LF-Tag creator principal can also grant `Alter` permission to another principal to update and remove tag values on this LF-Tag.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

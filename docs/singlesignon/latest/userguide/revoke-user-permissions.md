@@ -46,3 +46,7 @@ AWS recommends you build automation to handle all steps except console-only oper
 If you disable a user’s access before stopping the user session (you completed step 7 without completing step 6), you can no longer stop the user session through the IAM Identity Center console. If you inadvertently disable user access before stopping the user session, you can re-enable the user, stop their session, and then disable their access again.
 
  You can now change the user's credentials if their password was compromised and [restore their assignments](useraccess.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

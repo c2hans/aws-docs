@@ -48,3 +48,7 @@ To show only certain records, enter search terms above the list of records. In a
 **Note**
 If the third label from the right contains one or more hyphens (such as `third-label.example.com`), and if you search for the part of the third label immediately before the hyphen (`third` in this example), Route 53 won't return any records. Instead, either include the hyphen (search for `third-`) or omit the character immediately before the hyphen (search for `third`).
 + For records that have four or more labels, you must specify the exact name of the record. No wildcard searches are supported. For example, if the hosted zone includes a record named label4.record1.example.com, you can find that record only if you specify **label4.record1.example.com** in the search field.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

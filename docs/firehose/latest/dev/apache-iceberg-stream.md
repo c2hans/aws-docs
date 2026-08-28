@@ -151,3 +151,7 @@ Firehose buffers incoming streaming data in memory to a certain size (**Bufferin
 You can configure server-side encryption, error logging, permissions, and tags for your Apache Iceberg Tables. For more information, see [Configure advanced settings](create-configure-advanced.md). You must add the IAM role that you created as part of the [Prerequisites to use Apache Iceberg Tables as a destination](apache-iceberg-prereq.md). Firehose will assume the role to access AWS Glue tables and write to Amazon S3 buckets.
 
 Firehose stream creation can take several minutes to complete. After you successfully create the Firehose stream, you can start ingesting data into it and can view the data in Apache Iceberg tables.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

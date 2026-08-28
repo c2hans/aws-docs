@@ -29,3 +29,7 @@ A robust monitoring and alerting solution contributes to the following key busin
 + Mitigating financial losses associated with unplanned service disruptions
 + Increasing developer productivity by helping them identify and resolve issues more quickly
 + Enhancing operational effectiveness and efficiency by increasing availability
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ Amazon Q Business supports data source connector configuration through both the 
 | [StartDataSourceSyncJobs](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_StartDataSourceSyncJobs.html) | Starts an Amazon Q Business data source sync job | [Starting data source connector sync jobs](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/supported-datasource-actions.html#start-datasource-sync-jobs) |
 | [StopDataSourceSyncJobs](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_StopDataSourceSyncJobs.html) | Stops an Amazon Q Business data source sync job | [Stopping data source connector sync jobs](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/supported-datasource-actions.html#end-datasource-sync-jobs) |
 | [ListDataSourceSyncJobs](https://docs.aws.amazon.com/amazonq/latest/api-reference/API_ListDataSourceSyncJobs.html) | Lists data source sync jobs | [Listing data source connector sync jobs](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/supported-datasource-actions.html#list-datasource-sync-jobs) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

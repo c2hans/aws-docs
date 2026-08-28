@@ -30,3 +30,7 @@ You must raise RFCs to create the following resources:
 + An SMTP user and IAM service role with PutEvents permission, to a Kinesis Firehose stream.
 + You must create new AWS resources such as S3 bucket, Firehose stream, SNS topic by using AMS change types in order for your Amazon SES rules and configuration sets' destinations to work with those resources.
 + SMTP credentials. To request new SMTP credentials, use the Change Type (Management \| Other \| Other \| Create). AMS creates the credentials and adds them to Secrets Manager for you.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

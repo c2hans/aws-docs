@@ -22,3 +22,7 @@ The correct number for the output is determined by the router, not by Conductor 
      If you added a 4 Quadrant-4k input in [Step D: Complete the Router Input Mappings](sdi-rou-input.md) and want to map those four inputs, choose the Quadrant 4k (HD-SDI) card. This maps all four inputs to the one output.
 
 1. Repeat the previous steps for each line to create all necessary output mappings.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

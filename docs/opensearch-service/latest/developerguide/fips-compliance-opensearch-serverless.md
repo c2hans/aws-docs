@@ -84,3 +84,7 @@ After creating the FIPS-compliant VPC endpoint, you can use it to access OpenSea
 To verify that your connections to OpenSearch Serverless are using FIPS-compliant cryptography, use AWS CloudTrail to monitor API calls made to OpenSearch Serverless. Check that the `eventSource` field in CloudTrail logs displays `aoss-fips.amazonaws.com` for API calls.
 
 For OpenSearch Dashboards access, you can use browser developer tools to inspect the TLS connection details and verify that FIPS-compliant cipher suites are being used.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

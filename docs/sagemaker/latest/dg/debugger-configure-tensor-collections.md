@@ -59,3 +59,7 @@ collection_configs=[
 
 **Tip**
 This tensor collection configuration object can be used for both [DebuggerHookConfig](https://docs.aws.amazon.com/sagemaker/latest/dg/debugger-configure-hook.html#debugger-configure-tensor-hook) and [Rule](https://docs.aws.amazon.com/sagemaker/latest/dg/use-debugger-built-in-rules.html#debugger-built-in-rules-configuration-param-change) API operations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

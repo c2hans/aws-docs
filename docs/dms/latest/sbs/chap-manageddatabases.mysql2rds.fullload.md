@@ -176,3 +176,7 @@ To ensure a valid dump file of logical backups in mysqldump and mydumper, don’
 While exporting the data with logical backups, it is recommended to exclude MySQL default schemas (mysql, performance\_schema, and information\_schema), functions, stored procedures, and triggers.
 Remove definers from schema files before uploading extracted data to Amazon RDS. For more information, see [How can I resolve definer errors](https://aws.amazon.com/premiumsupport/knowledge-center/definer-error-mysqldump).
 Any backup operation acquires a global read lock on all tables (using FLUSH TABLES WITH READ LOCK). As soon as this lock has been acquired, the binary log coordinates are read and the lock is released. For more information, see [Establishing a Backup Policy](https://dev.mysql.com/doc/mysql-backup-excerpt/5.7/en/backup-policy.html). For logical backups this step done at the beginning of the logical dump, however for physical backup (Percona XtraBackup) this step done at the end of backup.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,3 +33,7 @@ If the export is successful, you will see the following message:
 If the export was unsuccessful, you will see an error message. If you receive an error, try exporting again.
 
 ![Infrastructure Composer's Menu with Export canvas selected.](http://docs.aws.amazon.com/infrastructure-composer/latest/dg/images/aac_ref_15.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

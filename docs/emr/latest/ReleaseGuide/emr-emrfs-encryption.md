@@ -122,3 +122,7 @@ These properties can be configured using the `emrfs-site` configuration classifi
 | --- | --- | --- |
 | fs.s3.enableServerSideEncryption | false | When set to **true**, objects stored in Amazon S3 are encrypted using server-side encryption. If no key is specified, SSE-S3 is used. |
 | fs.s3.serverSideEncryption.kms.keyId | n/a | Specifies an AWS KMS key ID or ARN. If a key is specified, SSE-KMS is used. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ Your AWS account has the following quotas related to User Notifications.
 | Email contacts | 500 email contacts for each AWS account. | No | The maximum number of email contacts that you can add for each AWS account. |
 | Notification hubs | 3 hubs for each AWS account. | No | The maximum number of notification hubs you can add to each AWS account. |
 | Rate of source events for a given AWS account | 1 per second. | No | The maximum number of source events per second you can receive in each AWS account. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS User Notifications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query notifications` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

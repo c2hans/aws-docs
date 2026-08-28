@@ -687,3 +687,7 @@ To obtain your `{{AWS Region}}`, use the following instructions to ensure you ar
 1. On the **Domain details** page, verify that this is the existing domain.
 
 1. Expand the AWS Region dropdown list from the top right of the SageMaker AI console, and use the corresponding AWS Region ID to the right of your AWS Region name. For example, `us-west-1`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

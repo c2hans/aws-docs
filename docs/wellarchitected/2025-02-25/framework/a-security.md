@@ -15,3 +15,7 @@ The Security pillar encompasses the ability to protect data, systems, and assets
 + [Data protection](a-data-protection.md)
 + [Incident response](a-incident-response.md)
 + [Application security](a-appsec.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

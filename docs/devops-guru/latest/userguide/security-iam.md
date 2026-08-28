@@ -129,3 +129,7 @@ View details about updates to AWS managed policies and service-linked role for D
 | [AmazonDevOpsGuruReadOnlyAccess](security_iam_id-based-policy-examples.md#managed-read-only-access) – Update to an existing policy | The `AmazonDevOpsGuruReadOnlyAccess` managed policy now allows read-only access to the DevOps Guru `GetCostEstimation` and `StartCostEstimation` actions. | April 27, 2021 |
 | [AmazonDevOpsGuruServiceRolePolicy](https://docs.aws.amazon.com/devops-guru/latest/userguide/using-service-linked-roles.html#slr-permissions) – Update to an existing policy. | The `AWSServiceRoleForDevOpsGuru` role now allows access to the AWS Systems Manager `AddTagsToResource` and Amazon EC2 Auto Scaling `DescribeAutoScalingGroups` actions. | April 27, 2021 |
 | DevOps Guru started tracking changes | DevOps Guru started tracking changes for its AWS managed policies. | December 10, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

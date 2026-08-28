@@ -52,3 +52,7 @@ Each managed instance must have an AWS Identity and Access Management role that 
 
 **Note**
 If the default instance profile limit of 10 is reached, then AMS increases the limit to 20, so that the required instance profiles can be attached.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

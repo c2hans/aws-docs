@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  Design your workload to operate in a distributed, multi-Outpost deployment model, similar to architectural patterns used on AWS. Mitigate the risk of rack, data center, or AWS Availability Zone and Region failures by deploying infrastructure across multiple locations, carefully architecting applications to run across separate logical Outposts, and using distributed multi-Outpost deployment models.
 
  In [such architectures](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_fault_isolation_multiaz_region_system.html), while the application servers may be spread across different Outposts, customers can load balance traffic across Outposts during failover through their Application Load Balancers (ALB) and Amazon Route 53.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

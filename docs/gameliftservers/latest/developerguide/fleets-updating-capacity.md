@@ -71,3 +71,7 @@ Amazon GameLift Servers responds to the changes by deploying additional instance
 If your request is successful, Amazon GameLift Servers returns the fleet ID. If the new desired instances setting is outside the minimum and maximum limits, Amazon GameLift Servers returns an error.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

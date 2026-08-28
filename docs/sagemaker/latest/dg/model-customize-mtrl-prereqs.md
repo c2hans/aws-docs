@@ -502,3 +502,7 @@ The existing model customization Lambda permissions cover functions with *SageMa
 <a name="model-customize-mtrl-prereqs-other-setup"></a>
 + If you use a customer-managed VPC, see [Configure a VPC for multi-turn RL jobs](model-customize-mtrl-vpc.md).
 + If you use a customer-managed KMS key to encrypt job input and output, the execution role, caller role, and agent runtime role must have additional permissions. See [Encryption at rest for multi-turn reinforcement learning](model-customize-mtrl-encryption-at-rest.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

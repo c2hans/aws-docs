@@ -811,3 +811,7 @@ The following tables list the current and previous versions of the Amazon EKS op
 |  `1.28-2023.10.19`  |  `1.28.2`  |  `1.6.18`  |  `1.1.2`  | Upgraded `containerd` to `1.6.18`. Added new [bootstrap script environment variables](eks-optimized-windows-ami.md#bootstrap-script-configuration-parameters) (`SERVICE_IPV4_CIDR` and `EXCLUDED_SNAT_CIDRS`). |
 |  `1.28-2023-09.27`  |  `1.28.2`  |  `1.6.6`  |  `1.1.2`  | Fixed a [security advisory](https://github.com/advisories/GHSA-6xv5-86q9-7xr8) in `kubelet`. |
 |  `1.28-2023.09.12`  |  `1.28.1`  |  `1.6.6`  |  `1.1.2`  |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

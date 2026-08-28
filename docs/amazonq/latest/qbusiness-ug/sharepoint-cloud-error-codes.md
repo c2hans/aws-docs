@@ -97,3 +97,7 @@ The following table provides information about error codes you may see for the M
 | SPE-5133 | There was a problem while retrieving s3CertificateName. S3 Certificate Name might be empty or null. | When using certificate-based authentication, upload your authentication certificate to an S3 bucket and provide the certificate name and bucket details in the connector configuration. | S3 certificate configuration error | Console: Security Configuration |
 | SPE-5134 | There was a problem while retrieving s3BucketName. S3 Bucket Name might be empty or null | When using certificate-based authentication, upload your authentication certificate to an S3 bucket and provide the certificate name and bucket details in the connector configuration. | S3 bucket configuration error | Console: S3 Configuration |
 | SPE-5151 | Error parsing the field value. Size is over maximum allowed limit. | Reduce the field value size to within the maximum allowed limit. | Field size limit exceeded | Console: Field Configuration |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

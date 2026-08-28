@@ -84,3 +84,7 @@ The following information describes the results for each type of solution:
 + For document analysis, the results are categorized into **Raw text**, **Forms**, **Tables**, and **Signatures**. **Raw text** includes all of the extracted text, while **Forms**, **Tables**, and **Signatures** only include information on the form that falls into those categories. For example, **Tables** only includes information extracted from tables in the document. The identified fields are highlighted on the document image in the output.
 
 After previewing your results, you can choose **Download prediction** and download the results as a ZIP file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

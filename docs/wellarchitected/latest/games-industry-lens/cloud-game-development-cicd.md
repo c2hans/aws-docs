@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 1.  The Xcode portion of iOS builds is offloaded to Amazon EC2 Mac instances to sign, build, and export the .IPA file, splitting the process and reducing build times. AWS Secrets Manager holds provisioning profiles, private keys, and certificates.
 
 1.  Build artifacts are delivered to Amazon S3, which sends notifications of success or failure. AWS Device Farm enables automated testing for mobile devices.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

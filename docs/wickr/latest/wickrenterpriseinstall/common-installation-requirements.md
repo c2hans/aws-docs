@@ -116,3 +116,7 @@ tar xvf wickr-enterprise-ha-stable.tgz
 **Additional notes on the Wickr Enterprise embedded cluster**
 + **NAMESPACE**: Unlike most Wickr Enterprise installations, the embedded cluster installation installs the Wickr assets to the *kotsadm* namespace in kubernetes and not *wickr*. Modify any scripts or commands you have saved that use `-n wickr` for kubectl, helm or any other utility to use `-n kotsadm` instead.
 + **Interacting with the Kubernetes Cluster**: From the host machine, use the `./wickr-enterprise-ha` binary to create a shell with appropriate variables set to interact with the Kubernetes installation by running **./wickr-enterprise-ha shell**. This will provide the kubectl utility within the shell's PATH and set the appropriate kube config to the local installation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

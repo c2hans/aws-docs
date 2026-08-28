@@ -116,3 +116,7 @@ When you create a canary, the following resources are created:
 + Alarms with the name `Synthetics-Alarm-{{MyCanaryName}}`, if you want alarms to be created for the canary.
 + Lambda functions and layers, if you use a blueprint to create the canary. These resources have the prefix `cwsyn-{{MyCanaryName}}`.
 + CloudWatch Logs log groups with the name `/aws/lambda/cwsyn-{{MyCanaryName}} -{{randomId}}`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ AL2023 doesn't ship with the `log4j-cve-2021-44228-hotpatch` package.
  Users running their own `log4j` versions on Amazon Linux should ensure that they have updated to versions not affected by [CVE-2021-44228](https://alas.aws.amazon.com/cve/html/CVE-2021-44228.html) or [CVE-2021-45046](https://alas.aws.amazon.com/cve/html/CVE-2021-45046.html).
 
  AL2023 provides guidance on [Updating AL2023](updating.md) so that you can keep up to date with security patches. Security advisories are published on the [Amazon Linux Security Center](https://alas.aws.amazon.com/alas2023.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -44,3 +44,7 @@ Live transcription uses one stream to Amazon Transcribe or Amazon Transcribe Med
 The Amazon Transcribe and Amazon Transcribe Medical APIs offer a number of parameters when initiating streaming transcription, such as [StartStreamTranscription](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartStreamTranscription.html) and [StartMedicalStreamTranscription](https://docs.aws.amazon.com/transcribe/latest/dg/API_streaming_StartMedicalStreamTranscription.html). You can use t hose parameters in the `StartMeetingTranscription` API unless the Amazon Chime SDK predetermines the parameter’s value. For example, the `MediaEncoding` and `MediaSampleRateHertz` parameters are not available because the Amazon Chime SDK sets them automatically.
 
 Amazon Transcribe and Amazon Transcribe Medical validate the parameters, and that allows you to use new parameter values as soon as they become available. For example, if Amazon Transcribe Medical launches support for a new language, you only need to specify the new language value in the `LanguageCode` parameter.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

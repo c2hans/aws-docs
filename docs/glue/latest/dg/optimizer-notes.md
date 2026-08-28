@@ -72,3 +72,7 @@ The following considerations apply to the snapshot retention and the orphan file
 To resolve an `OversizedAllocationException` exception:
 + Reduce the batch size of the vectorized reader and check. The default batch size is 5000. This is controlled in the `read.parquet.vectorization.batch-size`.
   + If this doesn’t work even after multiple variations, turn off vectorization. This is controlled in the `read.parquet.vectorization.enabled`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

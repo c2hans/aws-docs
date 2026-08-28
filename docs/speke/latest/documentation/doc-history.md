@@ -32,3 +32,7 @@ The following table describes the changes to the SPEKE documentation.
 | Updates to Live and VOD workflow method call examples sections | Added missing X-Speke-Version response header in SPEKE v2 Live and VOD workflow method call examples sections. | January 13, 2023 |
 | Updates to DRM platform providers and Encryption contract section | Added new qualified partners to the SPEKE v2 column of the DRM platform provider list. Added two new examples of Encryption contracts, and changed SD max resolution to 1024x576 in all concerned examples. | January 27, 2022 |
 | Initial release | Initial release of Secure Packager and Encoder Key Exchange (SPEKE) version 2.0, a specification for communication between a content encryptor and a DRM key provider. The DRM key provider exposes a Secure Packager and Encoder Key Exchange API to handle incoming key requests. | September 7, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Packager and Encoder Key Exchange API Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query speke` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

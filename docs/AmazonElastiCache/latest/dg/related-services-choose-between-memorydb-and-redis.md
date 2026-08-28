@@ -16,3 +16,7 @@ When deciding whether to use ElastiCache or MemoryDB consider the following comp
 [Amazon Relational Database Service](https://aws.amazon.com/rds/)
 
 For further background information on the related Amazon Relational Database Service service, see [Amazon RDS](https://docs.aws.amazon.com/rds/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -118,3 +118,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
  Integration between LoRaWAN server and AWS IoT allows users to forward LoRaWAN device payloads to cloud applications, and send commands from cloud application to LoRaWAN devices. To implement this integration, customers can use AWS IoT Greengrass [AWS IoT Core Messaging IPC service](https://docs.aws.amazon.com/greengrass/v2/developerguide/ipc-iot-core-mqtt.html).
 
  For more information for implementing a customer-operated LoRaWAN server on the edge device, refer to [AWS IoT Greengrass V2 Community Component - The Things Stack LoRaWAN](https://github.com/awslabs/aws-greengrass-labs-component-for-the-things-stack-lorawan).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

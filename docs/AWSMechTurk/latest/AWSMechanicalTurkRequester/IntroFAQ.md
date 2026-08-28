@@ -92,3 +92,7 @@ You can post HITs using any language, provided you note the required language in
 + [Blog Tutorials](https://blog.mturk.com/tutorials/home) provide instruction on using Mechanical Turk for a variety of tasks.
 + The [Amazon Mechanical Turk Developer Forums](https://developer.amazonwebservices.com/connect/forum.jspa?forumID=11) provide questions and answers about Mechanical Turk.
 + [Mechanical Turk on Github](https://github.com/awslabs/mturk-api-samples) offers sample code and tutorials.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

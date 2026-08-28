@@ -15,3 +15,7 @@ CloudWatch metrics for an Amazon File Cache resource are organized into three ca
 + [Cache utilization metrics](utilization-metrics.md)
 
 All CloudWatch metrics for Amazon File Cache are published to the `AWS/FSx` namespace in CloudWatch. For each metric, Amazon File Cache emits a data point per disk per minute. To view aggregate cache details, you can use the `Sum` statistic. Note that the file servers behind your caches are spread across multiple disks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

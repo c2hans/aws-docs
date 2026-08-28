@@ -44,3 +44,7 @@ The trade-off decision requires balancing multiple factors, particularly service
 A positive balance might emerge even when factors seem to conflict. For example, a service might increase costs but provide enhanced scalability. This represents a positive balance where the improved effectiveness justifies the additional costs. Conversely, a reduction in capabilities might not be acceptable even if a service offers significant cost savings.
 
 You should balance all available information to determine an overall positive or negative outcome. Based on this analysis, you can make your trade-off decision.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

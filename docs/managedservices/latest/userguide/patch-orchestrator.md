@@ -22,3 +22,7 @@ After patches are installed on an instance, the instance is rebooted. Patch noti
 AMS is deprecating the monthly patch compliance reporting of instances with missing patches, and will not be sending monthly reports. This change has been made in view of the recently released self-serve operational reports that refresh every 24 hours and are available to you on demand and provide the most recent and granular data. To learn more about the reports, see Self-service reporting. To learn more about the reports, see [Self-service reports](self-service-reporting.md).
 
 For more information on the notifications, see [Patch notifications](patch-notifications.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

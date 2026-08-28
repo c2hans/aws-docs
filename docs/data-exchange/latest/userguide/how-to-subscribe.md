@@ -42,3 +42,7 @@ AWS Data Exchange Heartbeat is a free product. If you subscribe to a paid produc
 **Note**
 It can take a few minutes for your subscription to become active after you choose **Subscribe**. If you choose **Export** before the subscription is active, you are prompted to wait until it is complete. After your subscription is active, your export will begin.
 Navigating away from this page prior to your subscription becoming active will not prevent the subscription from processing. It will prevent your data export from occurring.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

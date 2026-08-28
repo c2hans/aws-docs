@@ -72,3 +72,7 @@ For example, consider an alarm that monitors a job that runs every 3 days at 10:
 1. At 12:03, the alarm evaluates again, sees the successful job, and returns to `OK` state.
 
 If the alarm instead uses a wall clock evaluation window, CloudWatch aligns the evaluation window to the wall clock boundary that matches the period in the alarm's selected time zone, rather than clamping to the top of each hour. For example, a multi-day alarm with a one-day period evaluates complete calendar days that end at midnight in the selected time zone, and an alarm with a one-week period evaluates complete calendar weeks. The window advances by one full period when each boundary is reached, so the alarm considers a newly completed calendar period only after that period ends. For more information, see [Alarm evaluation window](alarm-evaluation-window.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

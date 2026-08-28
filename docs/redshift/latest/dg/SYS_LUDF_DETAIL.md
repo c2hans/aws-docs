@@ -63,3 +63,7 @@ Sample output:
      100 |           1463 |     1544 |       111055 |                 0 |         0 |          0 |       2 | lambda_sum           | 2026-01-06 17:23:25.165898 | 2026-01-06 17:23:25.165898 |            414 |           1 |          2 |         277 |           18
 (1 row)
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

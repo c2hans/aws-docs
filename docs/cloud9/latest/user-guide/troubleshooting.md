@@ -936,3 +936,7 @@ node: /lib64/libc.so.6: version `GLIBC_2.28' not found (required by node)
  **Cause:** Potentially it could be Node.js version issues related to the instance being used.
 
  **Recommended solution:** Refer to the [Step 1: Install required tools](sample-nodejs.md#sample-nodejs-install) section for information on how to install Node.js for AWS Cloud9.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

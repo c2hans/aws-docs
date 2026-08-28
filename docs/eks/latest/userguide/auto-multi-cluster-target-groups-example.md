@@ -81,3 +81,7 @@ spec:
 ```
 
 With MultiCluster support enabled on both bindings, each cluster registers and deregisters only its own targets. Both clusters' nodes stay healthy in the single shared target group, and the load balancer distributes traffic across all of them.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

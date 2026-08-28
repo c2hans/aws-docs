@@ -26,3 +26,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 +  **Optimize storage tier:** Configure storage tiers effectively by implementing hot, warm, and cold architectures in your OpenSearch domain. You can use different storage options including Amazon EBS volumes, instance store volumes, UltraWarm, OR1/OR2 instances and Zero-ETL Direct query S3 data.
 +  **Implement reserved instances:** Use Reserved Instances for your OpenSearch domain to receive discounted pricing.
 +  **Monitor usage and cost:** Actively monitor the usage and cost of your OpenSearch domain to estimate and reduce your service costs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

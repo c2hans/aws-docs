@@ -35,3 +35,7 @@ For more information, see [Test suite versions](idt-test-suite-versions.md)
 <a name="idt-byotc-afr"></a>IDT for FreeRTOS combines a standardized configuration setup and result format with a test suite environment. This environment lets you develop custom test suites for your devices and device software. You can add custom tests for your own internal validation, or provide them to your customers for device verification.
 
 How you configure custom test suites determines the setting configurations that you must provide to your users to run your custom test suites. For more information, see [Develop and run your own IDT test suites](idt-custom-tests.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

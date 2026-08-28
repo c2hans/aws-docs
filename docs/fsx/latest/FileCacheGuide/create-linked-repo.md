@@ -50,3 +50,7 @@ For information about using the AWS Command Line Interface (AWS CLI) to create a
 1. When you finish adding DRAs, choose **Next**.
 
 1. Continue with the Amazon File Cache creation wizard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

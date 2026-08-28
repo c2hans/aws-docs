@@ -22,3 +22,7 @@ The following table describes the documentation for this release of AWS Data Exp
 | [Split cost allocation data and Amazon Managed Service for Prometheus](https://docs.aws.amazon.com/cur/latest/userguide/split-cost-allocation-data-resource-amp.html) | Split cost allocation data for Amazon EKS now supports metrics from Amazon Managed Service for Prometheus. | June 10, 2024 |
 | [Split cost allocation data integration with Amazon EKS](https://docs.aws.amazon.com/cur/latest/userguide/split-cost-allocation-data.html) | Extended the split cost allocation data feature to integrate with Amazon EKS. | April 16, 2024 |
 | [AWS Data Exports launched](https://docs.aws.amazon.com/cur/latest/userguide/what-is-data-exports.html) | AWS Data Exports enables you to create exports of the Cost and Usage Report (CUR) 2.0 using SQL for column selections and row filtering. This is the new and recommended way to receive your most detailed cost and usage data from AWS. | November 26, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ Declarative policies are enforced in each AWS service's control plane, which is 
 + [[CT.EC2.PV.8] Disallow inbound and outbound internet connections to your VPCs through an internet gateway (IGW) or egress-only internet gateway (EIGW)](ct-ec2-pv-8.md)
 + [[CT.EC2.PV.9] Disallow access to the EC2 serial console for all EC2 instances](ct-ec2-pv-9.md)
 + [[CT.EC2.PV.11] Disallow public sharing of Amazon Machine Images (AMIs)](ct-ec2-pv-11.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -156,3 +156,7 @@ AWS SDK transports may take many minutes to import. The transports are successfu
 
 SDK for SAP ABAP uses the `/AWS1/` namespace and does not modify SAP objects or any other objects in your system with the following exception.
 + AWS `auth` objects are in an **Auth Object Class**. Auth Object Classes are limited to four characters and do not support namespaces. SDK for SAP ABAP uses Auth Object Class is `YAW1`. If you already have an auth object class `YAW1` in transaction `SU21`, contact Support before installation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for SAP ABAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-sapabap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

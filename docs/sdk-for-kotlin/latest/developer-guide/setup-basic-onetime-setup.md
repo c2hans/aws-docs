@@ -138,3 +138,7 @@ As an alternative to [configuring IAM Identity Center single sign-on access](#se
 The SDK for Kotlin will access these temporary credentials when it create a service client and use them for each request. The settings for the IAM role chosen in step 5a determine [how long the temporary credentials are valid](/singlesignon/latest/userguide/howtosessionduration.html). The maximum duration is twelve hours.
 
 After the temporary credentials expire, repeat steps 4 through 7.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Kotlin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-kotlin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

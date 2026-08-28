@@ -38,3 +38,7 @@ The scale provides control over the scale of the map and defines the units (kilo
 <a name="customizing-static-maps-overlay"></a>
 
 You can add markers, lines to show routes, polygons to show areas, and more. To learn how it works, see [How to add a marker to a static map](add-marker-static-map.md), [How to add a line to a static map](how-to-add-line-static.md), or [How to add a route to a static map](how-to-add-route.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

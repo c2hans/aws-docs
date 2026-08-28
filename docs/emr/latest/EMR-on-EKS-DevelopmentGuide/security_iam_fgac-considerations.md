@@ -46,3 +46,7 @@ When you grant access to Lake Formation resources to an IAM role for EMR on EKS,
 + The `System` namespace should be protected. No user or resource or entity or tooling would be allowed to have any Kubernetes RBAC permissions on the Kubernetes resources in the `System` namespace.
 + No user or resource or entity except the EMR on EKS service should have access to `CREATE` access to POD, CONFIG\_MAP and SECRET in the `User` namespace.
 + `System` drivers and `System` executors contain sensitive data. So, Spark events, Spark driver logs, and Spark executor logs in the `System` namespace should not be forwarded to external log storage systems.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

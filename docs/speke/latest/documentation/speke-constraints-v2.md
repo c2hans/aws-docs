@@ -61,3 +61,7 @@ The following table summarizes the standard messages that must be returned by th
 | The encryption contract is malformed | Malformed encryption contract |
 | The encryption contract contradicts DRM security levels constraints | Requested CPIX encryption contract not supported |
 | The encryption contract doesn’t include any VideoFilter or AudioFilter element | Missing CPIX encryption contract |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Secure Packager and Encoder Key Exchange API Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query speke` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -238,3 +238,7 @@ By default, the proxy server in a Python environment serves any files in a folde
 | RACK\_ENV | Specifies what environment stage an application can be run in. Examples of common environments include development, production, test. | `production` | n/a |
 
 See [Environment variables and other software settings](environments-cfg-softwaresettings.md) for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

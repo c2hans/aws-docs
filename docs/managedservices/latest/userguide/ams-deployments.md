@@ -20,3 +20,7 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 + You can import your on-premises MS SQL database into a new database on your AMS-managed RDS SQL instance. You do this using a variety of AMS change types, and the Amazon RDS API, plus AWS consoles.
 
   For details, see the AMS Application Guide at [Database (DB) Import to MS SQL RDS](https://docs.aws.amazon.com/managedservices/latest/appguide/db-to-sql-rds.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

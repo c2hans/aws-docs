@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
  AWS Outposts provide fixed and finite capacity which cannot be quickly scaled to accommodate changes in demand. Outposts are instead configured to meet your unique data-residency requirements, and it is important to work with your AWS account team to engage AWS hybrid specialists to verify that both workload and sustainability requirements are considered to develop the most efficient Outposts configuration before ordering.
 
  Because Outposts are frequently used to migrate existing physical or virtual workloads from on-premises data-centers, and because these workloads are commonly over-provisioned, use tools such as the [AWS Migration Evaluator](https://aws.amazon.com/migration-evaluator/getting-started/) to correctly size Outposts for the actual observed demand, plus any margin for resiliency and growth.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

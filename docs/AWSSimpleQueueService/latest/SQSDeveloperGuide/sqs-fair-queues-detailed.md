@@ -53,3 +53,7 @@ For the concurrency share measure to work effectively, your consumers need to pr
 When using Lambda as a consumer through event source mapping, the number of in-flight messages depends on both Lambda function concurrency and batch size. Evaluate these settings together when sizing your consumers.
 
 When the number of in-flight messages is too low for the concurrency share threshold to trigger, the processing time share measure can still detect noisy neighbors. However, fair queues work best when consumers process enough messages concurrently for both measures to be evaluated.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ The following table describes the releases for Reachability Analyzer.
 | [Multi-account support](#doc-history) | Reachability Analyzer supports reachability analysis between AWS resources in different AWS accounts within an organization from AWS Organizations. | November 27, 2022 |
 | [New feature](#doc-history) | You can specify transit gateways as sources, destinations, and intermediate path components. | March 25, 2022 |
 | [Initial release](#doc-history) | This release introduces Reachability Analyzer. | December 10, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Virtual Private Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

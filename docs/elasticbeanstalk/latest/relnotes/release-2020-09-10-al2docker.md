@@ -37,3 +37,7 @@ The following tables list all supported platform branches for each platform. Onl
 | --- | --- | --- | --- |
 |  ** Docker AL2 version 3.1.2** <br /> * 64bit Amazon Linux 2 v3.1.2 running Docker *  | 2.0.20200905 | 19.03.6-ce | nginx 1.18.0 |
 |  ** Single Container Docker version 2.15.3** <br /> * 64bit Amazon Linux 2018.03 v2.15.3 running Docker 19.03.6-ce *  | 2018.03.0 | 19.03.6-ce | nginx 1.16.1 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 +  SAP Lens [Operational Excellence]: [Best Practice 1.1 - Implement prerequisites for monitoring SAP on AWS](best-practice-1-1.md)
 +  SAP Lens [Operational Excellence]: [Best Practice 1.2 - Implement infrastructure monitoring for SAP](best-practice-1-2.md)
 +  SAP Lens [Operational Excellence]: [Best Practice 1.3 - Implement application and database monitoring for SAP](best-practice-1-3.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

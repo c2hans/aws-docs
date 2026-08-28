@@ -28,3 +28,7 @@ Use the following dimensions to filter Amazon Translate metrics. Metrics are gro
 | --- | --- |
 | LanguagePair | Restricts the metrics to only those that contain the specified languages. |
 | Operation | Restricts the metrics to only those with the specified operation. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Translate. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query translate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

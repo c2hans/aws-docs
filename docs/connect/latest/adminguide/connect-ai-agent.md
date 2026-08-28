@@ -25,3 +25,7 @@ You can customize AI agents to meet your business needs. For example, you can:
 AI agents can be configured both in the Connect Customer UI as well as via API. For more information, see the [AI agents API Reference Guide](https://docs.aws.amazon.com/connect/latest/APIReference/API_Operations_Amazon_Connect_AI_Agents.html).
 
 Agent assist can be used in compliance with GDPR and is HIPAA eligible.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

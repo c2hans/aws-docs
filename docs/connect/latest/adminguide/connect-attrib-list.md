@@ -478,3 +478,7 @@ The following attribute stores the agent assist session ARN. A use case for this
 | Attribute | Description | Type | JSONPath Reference |
 | --- | --- | --- | --- |
 | SessionArn | The Amazon Resource Name (ARN) of an agent assist session. | Flow | $.Wisdom.SessionArn |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

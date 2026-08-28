@@ -26,3 +26,7 @@ You can set up 10DLC directly in the AWS End User Messaging SMS console. To set 
    After your 10DLC campaign is approved, you can request a phone number and associate that number with the approved 10DLC campaign. Each phone number can only be associated with a single 10DLC campaign. For more information on requesting a 10DLC phone number, see [Request a phone number in AWS End User Messaging SMS](phone-numbers-request.md) and [Associating a long code with a 10DLC campaign](registrations-10dlc-associate.md). There is a monthly recurring fee for leasing the phone number. This fee is shown on the purchase page.
 **Note**
 You are charged the monthly 10DLC number lease price regardless of status. For example, 10DLC numbers in a **Pending** state still generate a month fee. For more information about pricing, see [AWS End User Messaging Pricing](https://aws.amazon.com/end-user-messaging/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

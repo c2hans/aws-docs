@@ -181,3 +181,7 @@ Claude Platform on AWS charges appear on your AWS bill under the **Claude Platfo
 1. In CUR or AWS Cost Explorer, group by the `resourceTags/user:<tag-key>` column to break down spend by workspace tag.
 
 Workspace tags flow through to CUR line items for all Claude Platform on AWS usage. The same tag keys drive both IAM-based access control and cost allocation. See [Cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/cost-alloc-tags.html) in the AWS Billing documentation for setup steps and activation delays.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Claude Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query claude-platform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

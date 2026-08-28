@@ -32,7 +32,6 @@ Use the Region switch plan execution block to create parent workflows with paren
 
 This block supports both graceful and ungraceful execution modes. Ungraceful settings will start child plans with their ungraceful configuration. If Region switch block was executed gracefully, and then switched to ungraceful execution mode, any child plan will also switch to ungraceful execution mode.
 
-## What is evaluated as part of plan evaluation
-<a name="region-switch-plan-block-eval"></a>
+## See also
 
-If you share a plan across accounts, and the plan is no longer shared with the account of the parent plan, Region switch evaluation returns a warning that the plan is not valid.
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

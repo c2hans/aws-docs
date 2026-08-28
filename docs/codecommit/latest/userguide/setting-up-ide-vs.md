@@ -25,3 +25,7 @@ To use Visual Studio with CodeCommit, you need the following:
 + The AWS Toolkit for Visual Studio installed on the computer where you've installed Visual Studio. For more information, see [Setting Up the AWS Toolkit for Visual Studio](https://docs.aws.amazon.com/AWSToolkitVS/latest/UserGuide/getting-set-up.html).
 
 For more information on using AWS Toolkit for Visual Studio with CodeCommit, see [Using AWS CodeCommit with Visual Studio Team Explorer](https://docs.aws.amazon.com/toolkit-for-visual-studio/latest/user-guide/using-aws-codecommit-with-team-explorer.html) in the *Toolkit for Visual Studio User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

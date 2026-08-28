@@ -32,3 +32,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
  First, AWS customers configure a custom bidirectional callback in Sigfox Cloud. The callback specifies a REST API to be invoked each time an uplink message is sent. The REST API request will forward an uplink message to AWS Cloud. The REST API response can optionally contain a downlink payload. If the downlink payload is available in callback response, the Sigfox Cloud will send it to the Sigfox device.
 
  To implement a REST API endpoint, AWS customers can use an Application Load Balancer with a TLS certificate managed by the AWS Certificate Manager service. The Application Load Balancer can specify an AWS Lambda function as a target. Each time the REST API is invoked, the Lambda function will check if new downlink messages for the Sigfox devices are available and return a downlink message payload as a response. Amazon DynamoDB can be used by the customer’s applications to buffer the downlink message for the Sigfox device.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

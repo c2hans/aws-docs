@@ -37,3 +37,7 @@ When you create a load balancer, you must add one or more public subnets to the 
 
 **Network ACLs**
 The network ACLs for your VPC must allow traffic in both directions on the listener port and the health check port. For more information, see [Network ACLs for the instances for your Classic Load Balancer](elb-instances-network-acls.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

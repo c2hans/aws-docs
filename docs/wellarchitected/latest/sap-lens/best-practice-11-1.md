@@ -33,3 +33,7 @@ Monitoring for failures of the SAP application, AWS resources, and connectivity 
 
  The following monitoring solutions are available from the AWS Marketplace. You should evaluate these and other third-party tools.
 +  AWS Documentation: [Monitoring Solutions in AWS Marketplace](https://aws.amazon.com/marketplace/b/2649280011?ref_=mp_nav_category_2649280011)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

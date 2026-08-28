@@ -123,3 +123,7 @@ Sets the TTL in milliseconds for the cached items. When a cached secret exceeds 
 `public SecretCacheConfiguration withVersionStage(String versionStage)`
 
 Sets the version of secrets that you want to cache. For more information, see [Secret versions](whats-in-a-secret.md#term_version). Returns the updated `SecretCacheConfiguration` object with the new setting.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

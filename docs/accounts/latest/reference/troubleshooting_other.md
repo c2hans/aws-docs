@@ -30,3 +30,7 @@ If you are having trouble with a purchase made on Amazon.com, see [Amazon Custom
 <a name="troubleshoot-close-aws-account"></a>
 
 For help troubleshooting issues with closing your AWS account, see [Close an AWS account](manage-acct-closing.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

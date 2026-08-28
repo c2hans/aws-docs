@@ -115,3 +115,7 @@ Starting with versions 5.6.0 and 6.1.0, Babelfish includes support for the follo
 + STIsValid function output for both Geometry and Geography data might have some deviations compared to T-SQL. Due to this, the functions - STDistance, STContains, STInstersects, STDisjoint, STDimension, STArea, STEquals may also deviate from T-SQL for some cases ( returns output instead of throwing error ). This is due to the underlying PostGIS implementation. For more information, see [ST\_IsValid](https://postgis.net/docs/ST_IsValid.html).
 + For optimal performance, use built-in Geospatial data types, without creating additional layers of abstraction in Babelfish.
 + In Babelfish, Geospatial function names are used as keywords and will perform spatial operations only if used in the intended way.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

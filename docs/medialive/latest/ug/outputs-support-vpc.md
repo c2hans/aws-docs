@@ -24,3 +24,7 @@ The following table specifies which MediaLive containers can be delivered to a d
 | RTMP or RTMPS | A server on Amazon EC2 | Yes, if you associate Elastic IP addresses with the channel |
 | SRT | With a specified IP address (caller mode) or allocated IP addresses (listener mode) | Yes, if you associate Elastic IP addresses with the channel |
 | UDP | A server on Amazon EC2 | Yes, if you associate Elastic IP addresses with the channel |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

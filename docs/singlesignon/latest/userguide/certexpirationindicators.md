@@ -17,3 +17,7 @@ In the IAM Identity Center console, the **Applications** page displays status in
 1. Choose **Applications**.
 
 1. In the list of applications, review the status of the certificates in the list as indicated in the **Expires on** column.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -77,3 +77,7 @@ This error can happen when SageMaker AI fails to start a scan of your Docker con
 <a name="troubleshooting_resolution"></a>
 
 If this happens, open the [ Amazon ECR console](https://console.aws.amazon.com/ecr/repositories?region=us-east-2), find the repository where your image was uploaded to, choose the image, and then choose **Scan**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

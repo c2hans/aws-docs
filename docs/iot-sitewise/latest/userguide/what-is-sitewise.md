@@ -108,3 +108,7 @@ Food and beverage industry facilities handle a wide variety of food processing, 
 <a name="use-case-energy-utilities"></a>
 
 With AWS IoT SiteWise, you can resolve equipment issues easier and more efficiently. You can monitor asset performance remotely and in real time. Access historical equipment data from anywhere to pinpoint potential problems, dispatch accurate resources, and both prevent and fix issues faster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

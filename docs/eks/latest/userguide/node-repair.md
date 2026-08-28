@@ -116,3 +116,7 @@ This configuration does the following:
 + Repairs up to 3 nodes at a time
 + Overrides XID 64 errors (GPU memory remapping failure) to replace the node after 5 minutes. The default is reboot after 10 minutes.
 + Overrides XID 31 errors (GPU memory page fault) to take no action. The default is reboot after 10 minutes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

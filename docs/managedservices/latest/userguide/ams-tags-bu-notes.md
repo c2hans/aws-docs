@@ -42,3 +42,7 @@ The Tag Editor export populates a matrix of all tags against all resources, miss
 
 **Note**
 For information about exporting tags to a CSV file, see [ Find Resources to Tag -> Export Results to CSV](https://docs.aws.amazon.com/ARG/latest/userguide/find-resources-to-tag.html#tagging-resources-csv).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -278,3 +278,7 @@ If scaling up alone doesn't improve the situation, consider reducing your write 
 Once you've identified these collections, you might need to temporarily reduce write operations to them to allow garbage collection to catch up. During the recovery period, closely monitor the `AvailableMVCCIds` metric to ensure your actions are having the desired effect. Your cluster is considered healthy once the `AvailableMVCCIds` value returns to 1.5 billion or higher.
 
 Remember that these steps are preventive measures to help your system recover before it reaches a critical state. The sooner you take action after seeing the metric drop below 1.3 billion, the more likely you are to avoid any impact to your write operations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

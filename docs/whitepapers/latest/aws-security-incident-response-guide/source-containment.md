@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
  An example of source containment can be seen in the following diagram with an incident response analyst modifying a security group of an Amazon EC2 instance in order to restrict new connections to only certain IP addresses. As stated in the security groups bullet, existing tracked connections won’t be shut down as a result of changing security groups.
 
 ![Diagram showing a source containment example](http://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/images/source-containment-example.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

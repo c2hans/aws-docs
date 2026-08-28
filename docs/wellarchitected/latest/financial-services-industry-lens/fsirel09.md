@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 <a name="fsirel09-bp02"></a>
 
  When you develop a comprehensive strategy for backing up and restoring data, consider backing up your data into another AWS Region allowing you to recover quickly in the case of a disaster recovery scenario. For those applications with criticality, requiring them to operate in multiple Regions makes sure that you replicate your backups from the primary to the secondary Region. Copying backups between Regions can be done using custom tooling or the original features of various AWS services such as [Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_ReplicateBackups.html). Alternatively, management of backups between Regions, including the management of encryption keys for cross-Region replication, can be automated and performed using [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/cross-region-backup.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

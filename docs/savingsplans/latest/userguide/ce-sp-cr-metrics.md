@@ -29,3 +29,7 @@ For example, if you are running 10 identical instances with an On-Demand price o
 You can see your usage at an hourly, daily, or monthly granularity. Usage is calculated using your selected lookback period. You can customize your filters by member account, AWS Region, instance family, service, and cost category in the **Filters** section.
 
 If you’re a user in the management account, you can see the aggregated coverage for the entire Consolidated Billing family.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

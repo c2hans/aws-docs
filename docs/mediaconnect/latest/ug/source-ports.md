@@ -21,3 +21,7 @@ There is an exception to the port requirements for sources that use the Zixi pro
 | ST 2110 JPEG XS | Port | The port that you specify. This is the only port needed for the source. |
 | Zixi push | Port | For standard sources: MediaConnect automatically uses port 2088.**For VPC sources**: MediaConnect automatically assigns a port in the range of 2090-2099 when the source is created. The 2090-2099 port range is reserved exclusively for Zixi VPC sources and cannot be used by another source protocol. |
 | NDI**®** | Port | The ports that you specify for each media stream. If you don't specify a custom port, MediaConnect uses the default NDI discovery protocol (TCP-5959) to announce NDI sources on your network. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

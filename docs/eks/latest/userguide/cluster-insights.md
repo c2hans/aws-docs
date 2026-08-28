@@ -66,3 +66,7 @@ Insights with ERROR or UNKNOWN status block the rollback until the issue is reso
 <a name="_get_started"></a>
 
 To see the list of insight checks performed and any relevant issues that Amazon EKS has identified, you can use the AWS Management Console, the AWS CLI, AWS SDKs, and Amazon EKS `ListInsights` API operation. To get started, see [View cluster insights](view-cluster-insights.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

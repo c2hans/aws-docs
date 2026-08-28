@@ -65,3 +65,7 @@ aws --region us-east-1 kinesisanalyticsv2 update-application \
 **Process flow for ready state applications**
 
 ![The following diagram represents the recommended workflow to upgrade the application while in ready state. We assume that the application is stateful and that you enabled snapshots. For this workflow, on update, you restore the application from the latest snapshot that was automatically taken by Amazon Managed Service for Apache Flink when the application was stopped.](http://docs.aws.amazon.com/managed-flink/latest/java/images/in-place-update-while-ready.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

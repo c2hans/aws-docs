@@ -40,3 +40,7 @@ The following examples show graphs that are displayed in the new Amazon Redshift
 ![Horizontal dot graph in increments of days showing the number of concurrency scaling clusters that are actively processing queries.](http://docs.aws.amazon.com/redshift/latest/mgmt/images/workload-concurrency-concurrency-scaling-activity.png)
 + **Concurrency scaling usage**
 ![Horizontal line graph in increments of days showing the usage of concurrency scaling clusters that have active query processing activity.](http://docs.aws.amazon.com/redshift/latest/mgmt/images/workload-concurrency-concurrency-scaling-usage.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

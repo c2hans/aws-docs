@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-app
 # Migrations (including VMware)
 <a name="transform-app-vmware"></a>
 
-AWS Transform can help you migrate your virtual and bare metal server environments to Amazon EC2 by using generative AI, including VMware, Hyper-V, and other sources. An AI-powered agent accelerates each stage of your migration, from discovery and planning through network migration and server rehost, reducing the manual effort traditionally required for large-scale migrations. You interact with the agent through a conversational interface that guides you step by step, so you can focus on decisions rather than execution.
+AWS Transform can help you migrate your virtual and bare metal server environments to Amazon EC2 by using generative AI, including VMware, Hyper-V, and other sources. An AI-powered agent accelerates each stage of your migration, from discovery and planning through network migration and server rehost. This reduces the manual effort traditionally required for large-scale migrations. You interact with the agent through a conversational interface that guides you step by step, so you can focus on decisions rather than execution.
 
 ## Capabilities and key features
 <a name="transform-app-vmware-capabilities"></a>
@@ -28,3 +28,7 @@ AWS Transform supports migrating Windows and Linux servers of supported operatin
 AWS Transform orchestrates the entire migration lifecycle from a single interface. The following diagram displays an overview of the architecture.
 
 ![AWS Transform VMware architecture](http://docs.aws.amazon.com/transform/latest/userguide/images/atx-vm-architecture_v2.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

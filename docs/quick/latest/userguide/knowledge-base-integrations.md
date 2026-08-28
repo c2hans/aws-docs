@@ -115,3 +115,7 @@ Each sync run has a maximum runtime of 14 days. If a sync run is still in progre
 Maximum sync time exceeded: Please edit your sync configuration to reduce the number of files to be crawled and ingested. For web crawler data sources, we recommend using Web Search feature if you want to chat with public websites like wikipedia.org.
 
 If your sync run reaches this limit, edit your knowledge base to narrow the sync scope. For example, apply include or exclude filters, restrict the file types or folders being crawled, or split the content across multiple knowledge bases. For web crawler data sources, consider using the Web Search feature instead when your goal is to chat with large public websites.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ When you associate a virtual private gateway with a Direct Connect gateway, you 
 Consider the case where the VPC CIDR is 10.0.0.0/16. You can set the **Allowed prefixes** to 10.0.0.0/16 (the VPC CIDR value), or 10.0.0.0/15 ( a value that is wider than the VPC CIDR).
 
 Any virtual interface inside network prefixes advertised over Direct Connect are only propagated to Transit Gateways across Regions, not within the same Region. For more information on how allowed prefixes interact with virtual private gateways and Transit Gateways, see [Allowed prefixes interactions](allowed-to-prefixes.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

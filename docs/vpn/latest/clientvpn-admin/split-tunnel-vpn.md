@@ -33,3 +33,7 @@ Adding a 0.0.0.0/0 route to the Client VPN endpoint's route table when using spl
 You can enable split-tunnel on a new or existing Client VPN endpoint. For more information, see the following topics:
 + [Create an AWS Client VPN endpoint](cvpn-working-endpoint-create.md)
 + [Modify an AWS Client VPN endpoint](cvpn-working-endpoint-modify.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

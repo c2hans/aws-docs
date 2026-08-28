@@ -44,3 +44,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-cloud-dns-opti
  The main disadvantage of this solution is that it requires full zone transfer query so it isn’t appropriate for customers that run DNS servers that don’t support full zone transfer queries. Also, because this solution involves working with the Route 53 APIs, you must stay within the [Route 53 API limits](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/DNSLimitations.html#limits-api-requests).
 
  This solution does not provide a method for resolving EC2 records from on premises directly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

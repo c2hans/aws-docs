@@ -18,3 +18,7 @@ The following are connection options for Zendesk:
 + `IMPORT_DELETED_RECORDS`(String) - Default: FALSE. Used for read. To get the delete records while querying.
 + `ACCESS_TOKEN` - Access token to be used in the request.
 + `INSTANCE_URL` - URL of the instance where the user wants to run the operations. For example : https://{subdomain}/.zendesk.com
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

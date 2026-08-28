@@ -44,3 +44,7 @@ View details and about updates to AWS managed policies for Amazon Simple Email S
 | Amazon Simple Email Service updated a policy definition | Amazon Simple Email Service added ses:BatchGet\* to AmazonSESReadOnlyAccess managed policy—this will give access to the SES API BatchGetMetricData | Feb 16, 2024 |
 | Amazon Simple Email Service changed two policy definitions | Amazon Simple Email Service removed "via the AWS Management Console" from the end of the AmazonSESFullAccess and AmazonSESReadOnlyAccess definitions | May 3, 2023 |
 | Amazon Simple Email Service started tracking changes | Amazon Simple Email Service started tracking changes to its AWS managed policies | April 5, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

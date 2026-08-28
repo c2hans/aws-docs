@@ -66,3 +66,7 @@ The following table defines the `Opcode` values in an AWS CloudHSM audit log.
 | CN\_FIPS\_RAND | Generate a FIPS-compliant random number[1](#hsm-audit-log-note-1) |
 
 [1] Only gets logged for hsm1.medium clusters.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

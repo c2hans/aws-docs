@@ -44,3 +44,7 @@ Now you'll need to decide how to split up your data between the training subset 
 Now that you've configured your input data, the next step is to decide whether or not to use [data labels](labeling-data.md).
 
 If you already know that you do not want to label your data, you can skip ahead to [Starting the training process](reviewing-settings.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

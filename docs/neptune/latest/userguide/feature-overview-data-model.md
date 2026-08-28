@@ -18,3 +18,7 @@ Each quad is a statement that makes an assertion about one or more resources. A 
 The graph position `G` is used differently in the different stacks. For RDF data in Neptune, the `G` position contains a [named graph identifier](https://www.w3.org/TR/rdf11-concepts/#section-dataset). For property graphs in Gremlin, it is used to store the edge ID value in the case of an edge. In all other cases, it defaults to a fixed value.
 
 A set of quad statements with shared resource identifiers creates a graph.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

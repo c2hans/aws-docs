@@ -12,3 +12,7 @@ Through Firehose delivery streams, you can fan out Amazon SNS notifications to A
 For example, you can use this functionality to permanently store messages sent to a topic in an Amazon S3 bucket for compliance, archival, or other purposes. To do this, create a Firehose delivery stream with an Amazon S3 bucket destination, and subscribe that delivery stream to the Amazon SNS topic. As another example, to perform analysis on messages sent to an Amazon SNS topic, create a delivery stream with an OpenSearch Service index destination. You can then subscribe the Firehose delivery stream to the Amazon SNS topic.
 
 Amazon SNS also supports message delivery status logging for notifications sent to Firehose endpoints. For more information, see [Amazon SNS message delivery status](sns-topic-attributes.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

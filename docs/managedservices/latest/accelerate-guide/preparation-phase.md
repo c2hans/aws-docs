@@ -24,3 +24,7 @@ This documentation uses the NIST 800-61 definition of an **event** as any observ
 + Understand what log sources are available to you, where these are stored in your accounts and who has access to them.
 + Understand how to use CloudWatch Insights to Query Logs during investigations.
 + Understand the containment options available to you by resource (EC2, IAM, S3, and son on) and the consequences on your workload availability when in containment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -66,3 +66,7 @@ Attackers leverage processing power from devices to mine cryptocurrency. Crypto-
 Malware or ransomware restricts your control over your devices, and limits your device functionality. In the case of a ransomware attack, data access would be lost due to encryption the ransomware uses.
 ****Related metrics:****
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/iot-device-defender/latest/devguide/dd-detect-security-use-cases.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Device Defender. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-device-defender` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

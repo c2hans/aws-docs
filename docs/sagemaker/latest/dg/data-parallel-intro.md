@@ -67,3 +67,7 @@ SMDDP `AllGather` uses the following techniques to improve computational perform
 1. It adopts [low-latency GPU memory copy library based on NVIDIA GPUDirect RDMA technology (GDRCopy)](https://github.com/NVIDIA/gdrcopy) to coordinate local NVLink and EFA network traffic. GDRCopy, a low-latency GPU memory copy library offered by NVIDIA, provides low-latency communication between CPU processes and GPU CUDA kernels. With this technology, the SMDDP library is able to pipeline the intra-node and inter-node data movement.
 
 1. It reduces the usage of GPU streaming multiprocessors to increase compute power for running model kernels. P4d and P4de instances are equipped with NVIDIA A100 GPUs, which each have 108 streaming multiprocessors. While NCCL takes up to 24 streaming multiprocessors to run collective operations, SMDDP uses fewer than 9 streaming multiprocessors. Model compute kernels pick up the saved streaming multiprocessors for faster computation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

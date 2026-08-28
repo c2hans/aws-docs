@@ -562,3 +562,7 @@ You can also interact with applications installed on Amazon EMR clusters in many
 <a name="emr-gs-next-browse-blogs"></a>
 
 For sample walkthroughs and in-depth technical discussion of new Amazon EMR features, see the [AWS big data blog](https://aws.amazon.com/blogs/big-data/tag/amazon-emr/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

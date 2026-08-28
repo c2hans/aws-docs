@@ -232,3 +232,7 @@ The import operation fails if you modify existing parameters that initiate a cre
    1. Add the import targets to your template again, making sure that the template configurations match the actual configurations.
 
    1. Repeat steps 3 – 6 using the modified template to import the resources again.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

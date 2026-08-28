@@ -128,6 +128,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 | --- | --- | --- | --- | --- |
 |   [AddAttachmentsToSet](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_AddAttachmentsToSet.html)  | Grants permission to add one or more attachments to an AWS Support case |  |   | Write |
 |   [AddCommunicationToCase](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_AddCommunicationToCase.html)  | Grants permission to add a customer communication to an AWS Support case |  |   | Write |
+|   [AddRelatedItemToCase](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html)  | Grants permission to add a related item to an AWS Support case. This is an internally managed function |  |   | Write |
 |   [CreateCase](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_CreateCase.html)  | Grants permission to creates a new AWS Support case |  |   | Write |
 |   [DescribeAttachment](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeAttachment.html)  | Grants permission to describe attachment detail |  |   | Read |
 |   [DescribeCaseAttributes](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html)  | Grants permission to allow secondary services to read AWS Support case attributes.This is an internally managed function |  |   | Read |
@@ -137,6 +138,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 |   [DescribeCommunications](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeCommunications.html)  | Grants permission to list the communications and attachments for one or more AWS Support cases |  |   | Read |
 |   [DescribeCreateCaseOptions](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeCreateCaseOptions.html)  | Grants permission to describes the available options for creating a support case |  |   | Read |
 |   [DescribeIssueTypes](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html)  | Grants permission to return issue types for AWS Support cases |  |   | Read |
+|   [DescribeRelatedItems](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html)  | Grants permission to list the related items for an AWS Support case. This is an internally managed function |  |   | Read |
 |   [DescribeServices](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeServices.html)  | Grants permission to list AWS services and categories that applies to each service |  |   | Read |
 |   [DescribeSeverityLevels](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeSeverityLevels.html)  | Grants permission to list severity levels that can be assigned to an AWS Support case |  |   | Read |
 |   [DescribeSupportLevel](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html)  | Grants permission to return the support level for an AWS Account identifier |  |   | Read |
@@ -145,6 +147,8 @@ You can specify the following actions in the `Action` element of an IAM policy s
 |   [DescribeTrustedAdvisorCheckResult](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeTrustedAdvisorCheckResult.html)  | Grants permission to get the results of the Trusted Advisor check that has the specified check identifier |  |   | Read |
 |   [DescribeTrustedAdvisorCheckSummaries](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeTrustedAdvisorCheckSummaries.html)  | Grants permission to get the summaries of the results of the Trusted Advisor checks that have the specified check identifiers |  |   | Read |
 |   [DescribeTrustedAdvisorChecks](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_DescribeTrustedAdvisorChecks.html)  | Grants permission to get a list of all available Trusted Advisor checks, including name, identifier, category and description |  |   | Read |
+|   [DisconnectLiveContactForCase](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html)  | Grants permission to disconnect a live contact on AWS Support Center. This is an internally managed function |  |   | Write |
+|   [DownloadAttachment](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_GetAttachmentDownloadLink.html)  | Grants permission to get a presigned URL to download an attachment from an AWS Support case |  |   | Write |
 |   [GetInteraction](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_GetInteraction.html)  | Grants permission to retrieve personalized troubleshooting assistance for account and technical issues for a specific interaction |  |   | Read |
 |   [InitiateCallForCase](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html)  | Grants permission to initiate a call on AWS Support Center. This is an internally managed function |  |   | Write |
 |   [InitiateChatForCase](https://docs.aws.amazon.com/awssupport/latest/user/accessing-support.html)  | Grants permission to initiate a chat on AWS Support Center.This is an internally managed function |  |   | Write |
@@ -160,6 +164,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
 |   [StartInteraction](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_StartInteraction.html)  | Grants permission to start a specific interaction to receive personalized troubleshooting assistance for account and technical issues |  |   | Write |
 |   [UpdateCaseSeverity](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_UpdateCaseSeverity.html)  | Grants permission to update the severity for a single AWS Support case. This is an internally managed function |  |   | Write |
 |   [UpdateInteraction](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_UpdateInteraction.html)  | Grants permission to update a specific interaction to receive personalized troubleshooting assistance for account and technical issues |  |   | Write |
+|   [UploadAttachment](https://docs.aws.amazon.com/awssupport/latest/APIReference/API_GetAttachmentUploadLinks.html)  | Grants permission to get a presigned URL to upload an attachment to an AWS Support case |  |   | Write |
 
 ## Resource types defined by AWS Support
 <a name="list_support-resources-for-iam-policies"></a>
@@ -170,3 +175,7 @@ AWS Support does not support specifying a resource ARN in the `Resource` element
 <a name="list_support-policy-keys"></a>
 
 AWS Support has no service-specific condition keys that can be used in the `Condition` element of policy statements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

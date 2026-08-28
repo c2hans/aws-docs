@@ -14,3 +14,7 @@ This topic provides conceptual content about migrating from Microsoft SQL Server
 + [Amazon RDS on Outposts overview](chap-sql-server-aurora-pg.tools.rdsoutposts.md)
 + [Amazon RDS Proxy overview](chap-sql-server-aurora-pg.tools.rdsproxy.md)
 + [Amazon Aurora Serverless v1 overview](chap-sql-server-aurora-pg.tools.auroraserverless.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

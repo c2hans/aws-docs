@@ -16,3 +16,7 @@ Choose each domain to add a wave preference for it, and then choose **Save**. Yo
 When you're ready to finalize your domain preferences, choose **Send to AWS Transform**. AWS Transform incorporates the preferred plan into its recommendations. The revised plan is based on the preferred wave plan and additional considerations, such as dependencies between components.
 
 You can now refactor your code for each phase of the migration by using the finalized wave plans.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

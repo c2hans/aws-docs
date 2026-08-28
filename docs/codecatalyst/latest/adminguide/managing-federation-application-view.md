@@ -31,3 +31,7 @@ Make sure you are signed in to the AWS Management Console with the AWS account t
 1. In **Connected groups**, view the SSO groups that you have added to your space. The users in these groups can be viewed in the member lists in your CodeCatalyst space, projects, and teams.
 
 1. To make updates to your connected groups, choose **Edit Identity Center application**. You will be taken to IAM Identity Center where you can work with your Identity federation administrator to configure SSO users and groups for your instance in IAM Identity Center.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

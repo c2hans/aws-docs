@@ -120,3 +120,7 @@ In the CloudWatch API, the property is called `Attributes`. In the CloudWatch Lo
 | `Telemetry.SDK` | The fingerprint of OTEL SDK version for instrumented services. | Alphanumeric string with basic delimiters. | `opentelemetry,1.32.0-aws-SNAPSHOT,java,Auto` |
 | `Telemetry.Agent` | The fingerprint of the Agent used to collect and send telemetry data. | Alphanumeric string with basic delimiters. | `CWAgent/1.300026.3, ADOTCollector/1.x` |
 | `Telemetry.Source` | Specifies the point of application where the telemetry was collected or what was used for the source of telemetry data. | ServerSpan, ClientSpan, ProducerSpan, ConsumerSpan, LocalRoot Span, JMX, OS. | `ClientSpan, JMX` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

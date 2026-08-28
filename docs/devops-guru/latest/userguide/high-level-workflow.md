@@ -29,3 +29,7 @@ The Amazon DevOps Guru workflow can be broken down into three high level steps.
 1. In the third step, DevOps Guru integrates insight notification into your workflow to help you manage issues and quickly address them.
    + Insights generated in your AWS account are published to the Amazon Simple Notification Service (Amazon SNS) topic chosen during DevOps Guru setup. This is how you are notified as soon as an insight is created. For more information, see [Updating your notifications in DevOps Guru](update-notifications.md).
    + If you enabled AWS Systems Manager during DevOps Guru setup, each insight creates a corresponding OpsItem to help you track and manage the issues discovered. For more information, see [Updating AWS Systems Manager integration in DevOps Guru](update-settings.md#update-systems-manager-integration).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

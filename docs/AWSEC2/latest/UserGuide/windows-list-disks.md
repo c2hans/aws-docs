@@ -263,3 +263,7 @@ The following table describes how the Citrix PV and AWS PV drivers map non-NVME 
 | Bus Number 0, Target ID 23, LUN 0 | xvdx |
 | Bus Number 0, Target ID 24, LUN 0 | xvdy |
 | Bus Number 0, Target ID 25, LUN 0 | xvdz |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

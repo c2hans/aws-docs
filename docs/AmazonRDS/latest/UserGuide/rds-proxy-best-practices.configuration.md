@@ -236,3 +236,7 @@ Some MySQL database drivers, such as the MariaDB driver, use `session_track_*` v
 This manner of session state tracking can be meaningful when the client interacts with the server directly and implements its own session management features, such as session migration in multi-server environments. RDS Proxy implements its own state tracking mechanisms and doesn't use the information enabled by `session_track_*` variables, however setting those variables causes session pinning.
 
 If your database driver sets those variables, you can look for ways to disable the tracking functionality in the driver, switch to a different driver, or use session pinning filters to ignore the statements if it's safe to do so. For more details, see [Initialization queries and pinning filters](#rds-proxy-best-practices.configuration.pinning-filters).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

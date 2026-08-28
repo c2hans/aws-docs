@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/marketplace/latest/userguide/configure-a
     For more information on statuses, see [Machine learning product status](ml-product-lifecycle.md#ml-product-status).
 
  You can view and test your product listing while it's in **Limited visibility**. When you're ready to change the visibility of your product, see [Updating product visibility](ml-update-visibility.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

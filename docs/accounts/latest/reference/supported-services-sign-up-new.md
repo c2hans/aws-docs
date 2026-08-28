@@ -373,3 +373,7 @@ The following AWS services are not supported for our new AWS experience, unless 
 + Amazon Elastic VMware Service
 + Oracle Database@AWS
 + Red Hat OpenShift Service on AWS
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -156,3 +156,7 @@ Amazon Connect provides the following APIs for data retrieval.
 | <a name="connect-SearchVocabularies"></a>[SearchVocabularies](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchVocabularies.html) | Search vocabularies in a Amazon Connect instance | List |
 | <a name="connect-SearchWorkspaceAssociations"></a>[SearchWorkspaceAssociations](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchWorkspaceAssociations.html) | Search workspace associations in an Amazon Connect instance | Read |
 | <a name="connect-SearchWorkspaces"></a>[SearchWorkspaces](https://docs.aws.amazon.com/connect/latest/APIReference/API_SearchWorkspaces.html) | Search workspaces in an Amazon Connect instance | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

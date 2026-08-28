@@ -19,3 +19,7 @@ The Amazon SimpleDB service consists of a small group of API calls that provide 
 + **StartDomainExport—**Initiates the export of a Amazon SimpleDB domain to an Amazon S3 bucket
 + **GetExport—**Returns information for an existing domain export
 + **ListExports—**Lists all exports that were created, with paginated results that can be filtered by domain name
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

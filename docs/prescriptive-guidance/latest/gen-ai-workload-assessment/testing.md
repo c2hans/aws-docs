@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-work
 | Which process will be implemented for ongoing monitoring of model fairness post-deployment? | Regular fairness audits, automated bias detection systems, user feedback analysis, periodic retraining with updated datasets, and so on. |
 | How will you address intersectional biases in the generative AI model? | By using intersectional fairness analysis, subgroup testing, collaboration with domain experts on intersectionality, and so on. |
 | How will you test the model's performance across different languages and cultural contexts? | By using multilingual test sets, collaboration with cultural experts, localized fairness metrics, cross-cultural comparison studies, and so on. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

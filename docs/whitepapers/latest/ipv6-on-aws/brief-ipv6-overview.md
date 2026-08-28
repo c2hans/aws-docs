@@ -29,3 +29,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/brief-ipv
 +  **Address assignment** — IPv6 address can be assigned statically, using DHCPv6 and through Stateless Address Auto-Config (SLAAC), which makes use of the Media Access Control (MAC) address of the network interface to derive an IPv6 address for the node.
 +  **Error correction** — IPv6 does not support header checksum capability, as it considered redundant, being processed both at the lower layer protocol (Ethernet) and upper layer protocols (TCP/UDP).
 +  **Neighbor Discovery Protocol** — IPv6 defines Internet Control Message Protocol v6 (ICMPv6) messages to take the place of IPv4's ARP and other network discovery functions. It provides many improvements over IPv4, which includes Neighbor Unreachability Detection (NUD), improving packet delivery in the presence of failing routers, links, or mobile nodes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -7,8 +7,8 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/security-
 
 AWS Security Agent provides a number of security features to consider as you develop and implement your own security policies. The following best practices are general guidelines and don’t represent a complete security solution. Because these best practices might not be appropriate or sufficient for your environment, treat them as helpful considerations rather than prescriptions.
 
-## Use non-production environments for Continuum penetration testing
-<a name="_use_non_production_environments_for_continuum_penetration_testing"></a>
+## Use non-production environments for penetration testing
+<a name="_use_non_production_environments_for_penetration_testing"></a>
 
 AWS Security Agent uses a comprehensive suite of penetration testing tools from the Kali Linux distribution. These tools are designed to identify security vulnerabilities and may perform actions that modify application state, data, or system configurations.
 
@@ -61,7 +61,7 @@ AWS Security Agent can provide security guidance on code changes through pull re
 
 AWS Security Agent does not provide code security guidance for public repositories. It will not comment on public repositories or open-source projects where security findings would be publicly visible.
 
-AWS Security Agent penetration tests can review and remediate private and public repositories that you configured for the penetration test. If the repository is public, the remediation code will be provided as a downloadable diff file instead of a pull request.
+Penetration tests can review and remediate private and public repositories that you configured for the penetration test. If the repository is public, the remediation code will be provided as a downloadable diff file instead of a pull request.
 
 ## Accessible URLs
 <a name="_accessible_urls"></a>
@@ -94,3 +94,7 @@ The following table describes where your inference requests are processed based 
 | Southeast Asia — Asia Pacific (Singapore) – `ap-southeast-1`  | Any commercial AWS Region | Any commercial AWS Region |
 
 Cross-Region inference is always enabled and cannot be opted out of. Cross-Region inference is not impacted by customer policies in Service Control Policies (SCPs) or AWS Control Tower that restrict customer content to specific Regions. For more information about how AWS Security Agent protects your data during cross-Region processing, see [Cross-Region data processing](data-protection.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

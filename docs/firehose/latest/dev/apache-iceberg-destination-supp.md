@@ -144,3 +144,7 @@ The following section shows examples of different data types.
     "destination_column_1": "[{\"destination_nested_column_0\":\"bb00f8e6-db82-4241-a5c5-0d9c0d2f71a4\",\"destination_nested_column_1\":907.35345},{\"destination_nested_column_0\":\"2c77b702-d405-4fe1-beee-fb541d7ab833\",\"destination_nested_column_1\":544.0026},{\"destination_nested_column_0\":\"68389200-d6b1-413d-bcd9-fdb931708395\",\"destination_nested_column_1\":153.683},{\"destination_nested_column_0\":\"bc31cbaa-39cd-4e2f-b357-9ea9ce75532b\",\"destination_nested_column_1\":977.5165},{\"destination_nested_column_0\":\"b7d627f9-0d5b-41b7-903a-525488259fba\",\"destination_nested_column_1\":434.17215},{\"destination_nested_column_0\":\"06b6ec1e-1952-4582-b285-46aaf40064b8\",\"destination_nested_column_1\":580.33124},{\"destination_nested_column_0\":\"f04b3bbf-61ad-4c5c-8740-6f666f57c431\",\"destination_nested_column_1\":550.75793}]"
 }
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

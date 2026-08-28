@@ -15,3 +15,7 @@ To create a workflow in Amazon MWAA Serverless you need an Amazon S3 Bucket and 
 After you complete these steps, you're ready to use Amazon MWAA Serverless. Choose one of two paths:
 + Initialize a workflow using the AWS CLI (you must first upload your YAML workflow file to your S3 bucket). For more information, refer to [Manage workflows](workflows.md#workflows-manage).
 + Migrate a Python DAG to YAML using [dag-converter](https://pypi.org/project/python-to-yaml-dag-converter-mwaa-serverless/). For more information, refer to [Convert Python DAG to YAML definition](workflows-migrate.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

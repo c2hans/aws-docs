@@ -114,3 +114,7 @@ To immediately revoke rule engine access, do the following
 1. Remove iot.amazonaws.com from the [trust policy](https://docs.aws.amazon.com/iot/latest/developerguide/iot-create-role.html)
 
 1. Follow the steps to [revoke iot role sessions](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_revoke-sessions.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

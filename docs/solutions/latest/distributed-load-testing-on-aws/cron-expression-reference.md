@@ -66,3 +66,7 @@ The web console provides the following preset patterns that you can select direc
 + An expiry date is required for all recurring schedules. Tests will not run after the end of the expiry date (UTC).
 + The schedule timezone determines when the cron fires. Daylight Saving Time transitions are handled automatically. If a scheduled time does not exist due to a DST spring-forward transition, that occurrence is skipped.
 + The system validates the cron expression on both the web console and the API. If the expression does not match the accepted format, the test cannot be created.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

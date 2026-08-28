@@ -12,3 +12,7 @@ A supervisor can cancel or edit a time off request by choosing the **Cancel Requ
 An agent will see the updated time off status in their calendar and request drawer. The following image shows the status of Nikki Wolfe's time off requests. Her requests for Sick day off were Accepted.
 
 ![The agent calendar in the agent application, the status of time off requests for the agent.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cancel-edit-agent-view-to.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

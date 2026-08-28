@@ -28,3 +28,7 @@ If none of these actions resolves the issue, try the following:
 + View and copy your gateway MAC address and get in touch with your IT admin. See [Retrieving MAC address details](https://docs.aws.amazon.com/Monitron/latest/user-guide/mac-address-wifi-gateway.html).
 + Log out of the mobile app and restart it.
 + Do a factory reset of the gateway by turning the power off, then pressing and holding down the commissioning button on the side while you turn the power back on.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

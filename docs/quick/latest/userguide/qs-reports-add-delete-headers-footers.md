@@ -24,3 +24,7 @@ If you have removed the header or footer from your report but want them to be vi
 1. Navigate to the pixel perfect report that you want to add a header or footer to and choose **Insert** from the top menu.
 
 1. Choose **Add header** or **Add footer**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

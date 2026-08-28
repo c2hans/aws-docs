@@ -37,3 +37,7 @@ Hudi creates two tables in the Hive metastore for MoR: a table with the name tha
 When you register a Hudi table with the Hive metastore, you can query Hudi tables using Hive, Spark SQL or Presto as you would any other table. In addition, you can integrate Hudi with AWS Glue by configuring Hive and Spark to use the AWS Glue Data Catalog as the metastore. For MoR tables, Hudi registers the dataset as two tables in the Metastore: a table with the name that you specified, which is a read-optimized view, and a table with the same name appended with `_rt`, which is a real-time view.
 
 You register a Hudi table with the Hive metastore when you use Spark to create a Hudi dataset by setting the `HIVE_SYNC_ENABLED_OPT_KEY` option to `"true"` and providing other required properties. For more information, see [Work with a Hudi dataset](emr-hudi-work-with-dataset.md). In addition, you can use the hive\_sync\_tool command line utility to register a Hudi dataset as a table in your metastore, separately.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

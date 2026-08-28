@@ -68,3 +68,7 @@ The *Multi-party approval console* is located in the AWS Organizations console, 
 **Multi-party approval portal**  <a name="mpa-portal"></a>
 The *Multi-party approval portal*, or approval portal, is used by approvers to view team invitations and requests, respond to requests, and view operation history.
 The portal is an AWS managed application for AWS IAM Identity Center that is accessed by [approvers](#mpa-approver-term) through the link in the team invitation or requested operation email notification.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Multi-party approval. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mpa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

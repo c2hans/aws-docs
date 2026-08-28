@@ -223,3 +223,7 @@ To convert Ubuntu LTS to Ubuntu Pro, follow these steps:
 <a name="remove-subscription-ubuntu-pro"></a>
 
 License type conversion can only be used to convert from Ubuntu LTS to Ubuntu Pro. If you need to convert from Ubuntu Pro to Ubuntu LTS, you will need to raise a request to Support. For more information, see [Creating a support case](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html#creating-a-support-case).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

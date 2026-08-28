@@ -29,3 +29,7 @@ The FHIR specification offers native mechanisms for patient identity management 
 + **Person resource** – Serves as a cross-resource identity anchor, linking Patient, Practitioner, and RelatedPerson records that represent the same individual. This pattern is commonly used in regional or national patient index registries.
 
 You can use these FHIR-native patterns independently or in combination with an external EMPI or AWS Entity Resolution. This gives you flexibility to choose the identity management strategy that best fits your organization's governance and interoperability requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

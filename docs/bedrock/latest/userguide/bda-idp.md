@@ -142,3 +142,7 @@ When working with projects, you can create a version of a blueprint. A version i
 You can create a version using the `CreateBlueprintVersion` operation.
 
 The Amazon Bedrock console also lets you create and save blueprints. When you save a blueprint, it an ID is assigned to that blueprint. You can then publish the blueprint, which creates a snapshot version of that blueprint that can’t be edited. For example, if the blueprint associated to your project is “DocBlueprint”, the created project version will be “DocBlueprint\_1”. You will not be able to make any more changes to “DocBlueprint\_1”, but you can still edit the base blueprint. If you make changes to the blueprint and publish again a new version will be created, like “DocBlueprint\_2”. Blueprint versions can be duplicated and used as a base for a new blueprint.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

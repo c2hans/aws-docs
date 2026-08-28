@@ -54,3 +54,7 @@ If you accidentally delete the `rds-directoryservice-access-role`, you must have
 <a name="USER_SQLServerWinAuth.Restore"></a>
 
 You can restore a DB snapshot or do point-in-time recovery (PITR) for a SQL Server DB instance and then add it to a domain. Once the DB instance is restored, modify the instance using the process explained in [Step 5: Create or modify a SQL Server DB instance](USER_SQLServerWinAuth.SettingUp.md#USER_SQLServerWinAuth.SettingUp.CreateModify) to add the DB instance to a domain.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ Incident alerting is when monitoring tools generate alerts to notify your team a
 As best practices, the AWS Well-Architected Framework prescribes that you [use monitoring to generate alarm-based notifications](https://docs.aws.amazon.com/wellarchitected/latest/framework/perf_monitor_instances_post_launch_generate_alarms.html), and [monitor and alarm proactively](https://docs.aws.amazon.com/wellarchitected/latest/framework/perf_monitor_instances_post_launch_proactive.html). Use CloudWatch or a third-party monitoring service to set alarms that indicate when metrics are outside of expected boundaries.
 
 The purpose of alert management is to establish efficient, standardized procedures for handling IT-related events and incidents through logging, classification, action definition and implementation, closure, and post-incident review activities.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

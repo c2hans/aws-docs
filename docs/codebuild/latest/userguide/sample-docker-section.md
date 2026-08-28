@@ -14,3 +14,7 @@ This section describes sample integrations between Docker and AWS CodeBuild.
 | [Windows Docker builds sample for CodeBuild](sample-windows-docker-custom-image.md) | This sample builds and runs a Windows Docker image by using CodeBuild. |
 | ['Publish Docker image to an Amazon ECR image repository' sample for CodeBuild](sample-docker.md) | This sample produces as build output a Docker image and then pushes the Docker image to an Amazon Elastic Container Registry (Amazon ECR) image repository.  |
 | [Private registry with AWS Secrets Manager sample for CodeBuild](sample-private-registry.md) | This sample shows you how to use a Docker image that is stored in a private registry as your CodeBuild runtime environment. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

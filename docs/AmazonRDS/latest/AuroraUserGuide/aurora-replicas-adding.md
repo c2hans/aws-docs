@@ -112,3 +112,7 @@ For information about Auto Scaling Amazon Aurora with Aurora replicas, see the f
 + [Adding an auto scaling policy to an Amazon Aurora DB cluster](Aurora.Integrating.AutoScaling.Add.md)
 + [Editing an auto scaling policy for an Amazon Aurora DB cluster](Aurora.Integrating.AutoScaling.Edit.md)
 + [Deleting an auto scaling policy from your Amazon Aurora DB cluster](Aurora.Integrating.AutoScaling.Delete.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -57,3 +57,7 @@ If you have a specific date and time you want to request, provide the informatio
 
 **Note**
 Most carriers only support porting activity during their normal business hours. For detailed information about available porting dates and times for your country, see [Region requirements for ordering and porting phone numbers in Connect Customer](phone-number-requirements.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -101,3 +101,7 @@ This error occurs because the required libraries or executables for the SDK for 
   Add a call to either `AWSSDK_CPY_DYN_LIBS(SERVICE_LIST "" ${CMAKE_CURRENT_BINARY_DIR})` or `AWSSDK_CPY_DYN_LIBS(SERVICE_LIST "" ${CMAKE_CURRENT_BINARY_DIR}/${CMAKE_BUILD_TYPE})` to your `CMakeLists.txt` file to use this macro to do the copying for you. See [Creating a simple application using the AWS SDK for C\+\+](build-cmake.md) for an example.
 
   Choose the correct copy path for your build environment. Building via command line frequently puts the build output into a subfolder (`/Debug`), but Visual Studio and other IDEs often do not. Verify where your output executables are, and ensure the macro is copying to that location. When making these types of changes, it is good practice to delete the contents of your build output directory so that you get a clean starting point for the next build.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for C++. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-cpp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

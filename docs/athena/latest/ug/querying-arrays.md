@@ -21,3 +21,7 @@ Amazon Athena lets you create arrays, concatenate them, convert them to differen
 + [Convert arrays to strings](converting-arrays-to-strings.md)
 + [Use arrays to create maps](arrays-create-maps.md)
 + [Query arrays with complex types](rows-and-structs.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

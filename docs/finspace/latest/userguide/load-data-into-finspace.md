@@ -18,3 +18,7 @@ Data can be loaded into FinSpace from the following sources
 Data can be loaded using following methods
 +  [FinSpace web application](tutorial-load-data-analyze-finspace.md)
 +  [SDK to connect your data feeds](https://docs.aws.amazon.com/finspace/latest/data-api/fs-api-welcome.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,3 +84,7 @@ For example, this transform rewrites the request URL `https://www.example.com/dp
 | Status codes | Uses 301 (permanent) or 302 (temporary) | No status code change |
 | Processing | Browser-side | Server-side |
 | Common uses | Domain change, website consolidation, fixing broken links | Clean URLs for SEO, hide complex structures, provide legacy URL mapping |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

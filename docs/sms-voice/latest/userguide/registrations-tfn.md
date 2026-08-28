@@ -27,3 +27,7 @@ If you use AWS End User Messaging SMS to send messages to recipients in the Unit
 <a name="registrations-tfn-forbidden-use-cases"></a>
 
 Please be aware that AWS is limited in our ability to send any messages or register TFNs for some use cases. Certain use cases are blocked entirely (for example, use cases related to controlled substance, or phishing) and other might be subject to high levels of filtering (for example, high risk financial messages). You might be unable to register TFNs associated with restricted content use cases defined in [Prohibited message content](best-practices.md#best-practices-sms-message-content).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

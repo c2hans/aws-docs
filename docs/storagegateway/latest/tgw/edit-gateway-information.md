@@ -28,3 +28,7 @@ Changing a gateway's name will disconnect any CloudWatch alarms set up to monito
    + **Deactivate logging** – Do not use Amazon CloudWatch Logs to monitor your gateway.
 
 1. When you finish modifying the settings you want to change, choose **Save changes**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

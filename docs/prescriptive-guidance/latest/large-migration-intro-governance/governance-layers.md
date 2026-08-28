@@ -23,3 +23,7 @@ The following table describes the objectives and typical participants for each g
 | Application owner commit meetings | Confirm commitment to the wave that is scheduled to start | Application owners<br />Leads for partners or consultants<br />Migration lead<br />Communication lead<br />Custom migration lead |
 | Infrastructure and operations | Review the progress of the migration, review active issues, and decide whether escalation is required. Collaborate across workstreams and plan resources for the next sprint. | RACI-defined members<br />Migration lead<br />Lead architect<br />Consultants for the migration, applications, SQL, or other special workloads |
 | Migration business hours | Provide application owners with an open meeting to seek support or guidance. | Leads for partners or consultants<br />Application owners<br />Migration lead<br />Engagement manager |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,23 +20,25 @@ A single exposure finding contains issues identified in multiple remediation top
 + [Misconfiguration traits for Amazon SageMaker notebook instances](#sagemaker-misconfiguration)
   + [The Amazon SageMaker notebook instance has direct internet access enabled](#outbound-internet-enabled)
   + [The Amazon SageMaker notebook instance has root access enabled](#notebook-root-access-enabled)
++ [Sensitive data traits for Amazon SageMaker notebook instances](#sensitive-data)
+  + [The Amazon SageMaker notebook instance contains sensitive data](#sensitive-data-present)
 + [Impact traits for Amazon SageMaker notebook instances](#sagemaker-impact)
-  + [Full control privileged executor](#full-control-privileged-executor)
-  + [Direct policy escalation](#direct-policy-escalation)
-  + [Trust policy hijack](#trust-policy-hijack)
-  + [Data ransomware](#data-ransomware)
-  + [Remove restriction](#remove-restriction)
-  + [Pass role create executor](#pass-role-create-executor)
-  + [Swap role existing executor](#swap-role-existing-executor)
-  + [Role chain escalation](#role-chain-escalation)
-  + [Inject code privileged executor](#inject-code-privileged-executor)
-  + [Disable audit trail](#disable-audit-trail)
-  + [Access existing executor](#access-existing-executor)
-  + [Credential minting](#credential-minting)
-  + [Pass role data access](#pass-role-data-access)
-  + [Pass role task hijack](#pass-role-task-hijack)
-  + [Single hop data access](#single-hop-data-access)
-  + [Capability advancing](#capability-advancing)
+  + [Has full control privileged executor path](#has-full-control-privileged-executor-path)
+  + [Has direct policy escalation path](#has-direct-policy-escalation-path)
+  + [Has trust policy hijack path](#has-trust-policy-hijack-path)
+  + [Has data ransomware path](#has-data-ransomware-path)
+  + [Has remove restriction path](#has-remove-restriction-path)
+  + [Has pass role create executor path](#has-pass-role-create-executor-path)
+  + [Has swap role existing executor path](#has-swap-role-existing-executor-path)
+  + [Has role chain escalation path](#has-role-chain-escalation-path)
+  + [Has inject code privileged executor path](#has-inject-code-privileged-executor-path)
+  + [Has disable audit trail path](#has-disable-audit-trail-path)
+  + [Has access existing executor path](#has-access-existing-executor-path)
+  + [Has credential minting path](#has-credential-minting-path)
+  + [Has pass role data access path](#has-pass-role-data-access-path)
+  + [Has pass role task hijack path](#has-pass-role-task-hijack-path)
+  + [Has single hop data access path](#has-single-hop-data-access-path)
+  + [Has capability advancing path](#has-capability-advancing-path)
 
 ## Misconfiguration traits for Amazon SageMaker notebook instances
 <a name="sagemaker-misconfiguration"></a>
@@ -68,6 +70,38 @@ Take one or more of the following actions to address this exposure:
 **Additional considerations**
  If root access is required for specific tasks, consider using Amazon SageMaker Studio notebooks instead, which provide isolated container-based environments with more granular access controls. You can also use lifecycle configurations to pre-install required packages at instance creation time, reducing the need for root access during normal use.
 
+## Sensitive data traits for Amazon SageMaker notebook instances
+<a name="sensitive-data"></a>
+
+Here are the sensitive data traits for Amazon SageMaker notebook instances and suggested remediation steps.
+
+### The Amazon SageMaker notebook instance contains sensitive data
+<a name="sensitive-data-present"></a>
+
+ A data security scan has confirmed that sensitive data is present on the Amazon SageMaker notebook instance. An integrated data security product sets this trait. The product inspects the notebook files, outputs, and attached storage, and identifies content that requires protection. We report this trait in Security Hub consistently, regardless of which integrated product performed the inspection.
+
+ Sensitive data raises the impact of every other weakness on the same notebook instance. A permissive execution role, a direct internet egress path, or overly broad access exposes regulated or confidential content. A threat actor who reaches the notebook can read and copy those records from the notebook files, output cells, and saved checkpoints. The threat actor can then retain those records outside your environment. They can also use any credentials found in the notebook to authenticate to other systems.
+
+ Following security best practices, we recommend restricting access to notebook instances that hold sensitive data, and encrypting the attached storage at rest.
+
+Sensitive data can include:
++ Credentials – such as passwords, access keys, and connection strings
++ Personally identifiable information
++ Financial information – such as account numbers and payment card data
++ Confidential content requiring protection
+
+ Removing the sensitive data from the notebook is the only way to clear this trait. If the notebook must reference sensitive data, the following security best practices reduce the risk of exposure.
+
+**Review the sensitive data on the notebook instance**
+ In the exposure finding, open the resource with the hyperlink. This opens the affected notebook instance. Note the notebook instance name, the AWS account, and the AWS Region. Review the data security finding that reported the sensitive data to determine which notebook files, output cells, or checkpoints contain it.
+
+ Based on the type of sensitive data discovered, implement the appropriate security controls:
++  **Remove the sensitive values from the notebook** – Delete sensitive values from the notebook code and clear the output cells that contain them. Delete any saved checkpoints and exported copies that retain the values. Where a value must remain referenced, replace it with a tokenized or masked placeholder. For more information, see [Use Amazon SageMaker notebook instances](https://docs.aws.amazon.com/sagemaker/latest/dg/nbi.html) in the *Amazon SageMaker Developer Guide*.
++  **Rotate any exposed credentials** – If the notebook contained credentials, treat them as compromised. Disable and rotate the credentials, then review the audit logs of the affected system for use of the exposed values. Retrieve secrets at run time from AWS Secrets Manager through a narrowly scoped execution role instead of embedding them in notebook content. For more information, see [Rotate AWS Secrets Manager secrets](https://docs.aws.amazon.com/secretsmanager/latest/userguide/rotating-secrets.html) in the *AWS Secrets Manager User Guide*.
++  **Restrict who can open the notebook instance** – Grant access only to the IAM identities that need it. Scope the execution role to the specific actions and resources that the notebook uses. Control who can open the notebook by restricting the `sagemaker:CreatePresignedNotebookInstanceUrl` permission. For more information, see [Amazon SageMaker identity-based policy examples](https://docs.aws.amazon.com/sagemaker/latest/dg/security_iam_id-based-policy-examples.html#api-ip-filter) in the *Amazon SageMaker Developer Guide*.
++  **Encrypt the notebook storage at rest** – Attach an AWS KMS key to the notebook instance so that the storage volume holding the notebook files and checkpoints is encrypted at rest. Use a customer managed key so that you control the key policy. Grant `kms:Decrypt` on that key only to the identities that need to read the notebook. For more information, see [Protect data at rest using encryption](https://docs.aws.amazon.com/sagemaker/latest/dg/encryption-at-rest.html) in the *Amazon SageMaker Developer Guide*.
++  **Monitor access to the notebook instance** – Review AWS CloudTrail for `sagemaker:CreatePresignedNotebookInstanceUrl` calls and for access from unexpected identities or sources. For more information, see [Log Amazon SageMaker API calls with AWS CloudTrail](https://docs.aws.amazon.com/sagemaker/latest/dg/logging-using-cloudtrail.html) in the *Amazon SageMaker Developer Guide*.
+
 ## Impact traits for Amazon SageMaker notebook instances
 <a name="sagemaker-impact"></a>
 
@@ -75,82 +109,86 @@ Impact traits describe the potential blast radius of an exposure. Security Hub a
 
 Following standard security principles, grant least privilege by providing only the permissions required to perform a task. Replace broad policies with scoped-down policies that grant only the specific actions and resources needed. To identify unused permissions to remove, use IAM Access Analyzer to generate recommendations based on access history. For more information, see [Findings for external and unused access](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-findings.html) and [Apply least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) in the *IAM User Guide*.
 
-### Full control privileged executor
-<a name="full-control-privileged-executor"></a>
+### Has full control privileged executor path
+<a name="has-full-control-privileged-executor-path"></a>
 
 The associated principal can pass a role to and inject code into a compute resource that already has elevated permissions. This allows the principal to gain full control over the executor and perform any action that the executor's role permits.
 
-### Direct policy escalation
-<a name="direct-policy-escalation"></a>
+### Has direct policy escalation path
+<a name="has-direct-policy-escalation-path"></a>
 
 The associated principal can directly modify IAM policies to grant itself additional permissions, escalating its own privileges without intermediate resources.
 
-### Trust policy hijack
-<a name="trust-policy-hijack"></a>
+### Has trust policy hijack path
+<a name="has-trust-policy-hijack-path"></a>
 
 The associated principal can modify the trust policy of an IAM role to allow itself to assume that role, gaining the role's permissions.
 
-### Data ransomware
-<a name="data-ransomware"></a>
+### Has data ransomware path
+<a name="has-data-ransomware-path"></a>
 
 The associated principal can encrypt or delete data in a way that could be used for ransomware, such as encrypting Amazon S3 objects with a customer-managed AWS KMS key and then modifying the key policy.
 
-### Remove restriction
-<a name="remove-restriction"></a>
+### Has remove restriction path
+<a name="has-remove-restriction-path"></a>
 
 The associated principal can remove security restrictions such as permission boundaries, service control policies, or resource-based policy deny statements, expanding what other principals or the resource itself can do.
 
-### Pass role create executor
-<a name="pass-role-create-executor"></a>
+### Has pass role create executor path
+<a name="has-pass-role-create-executor-path"></a>
 
 The associated principal can create a new compute resource (such as a Lambda function or Amazon EC2 instance) and pass it a privileged role, effectively laundering its own permissions through the new resource.
 
-### Swap role existing executor
-<a name="swap-role-existing-executor"></a>
+### Has swap role existing executor path
+<a name="has-swap-role-existing-executor-path"></a>
 
 The associated principal can change the IAM role attached to an existing compute resource, replacing it with a more privileged role to escalate access.
 
-### Role chain escalation
-<a name="role-chain-escalation"></a>
+### Has role chain escalation path
+<a name="has-role-chain-escalation-path"></a>
 
 The associated principal can assume a sequence of roles, where each role in the chain has progressively broader permissions, ultimately reaching a highly privileged role.
 
-### Inject code privileged executor
-<a name="inject-code-privileged-executor"></a>
+### Has inject code privileged executor path
+<a name="has-inject-code-privileged-executor-path"></a>
 
 The associated principal can inject code into a running compute resource that has elevated permissions, executing arbitrary operations under that resource's privileged role.
 
-### Disable audit trail
-<a name="disable-audit-trail"></a>
+### Has disable audit trail path
+<a name="has-disable-audit-trail-path"></a>
 
 The associated principal can disable logging or monitoring services such as CloudTrail, effectively covering its tracks during or after an escalation.
 
-### Access existing executor
-<a name="access-existing-executor"></a>
+### Has access existing executor path
+<a name="has-access-existing-executor-path"></a>
 
 The associated principal can invoke or connect to an existing compute resource and use its attached role to perform privileged actions.
 
-### Credential minting
-<a name="credential-minting"></a>
+### Has credential minting path
+<a name="has-credential-minting-path"></a>
 
 The associated principal can create new long-term credentials (such as access keys or login profiles) for other principals, establishing persistent access paths that survive password rotations or session expirations.
 
-### Pass role data access
-<a name="pass-role-data-access"></a>
+### Has pass role data access path
+<a name="has-pass-role-data-access-path"></a>
 
 The associated principal can create a service resource and pass it a role that has access to sensitive data, gaining indirect access to that data through the new resource.
 
-### Pass role task hijack
-<a name="pass-role-task-hijack"></a>
+### Has pass role task hijack path
+<a name="has-pass-role-task-hijack-path"></a>
 
 The associated principal can pass a role to a scheduled or event-driven task (such as a Lambda function triggered by an event), allowing it to execute arbitrary code with that role's permissions.
 
-### Single hop data access
-<a name="single-hop-data-access"></a>
+### Has single hop data access path
+<a name="has-single-hop-data-access-path"></a>
 
 The associated principal can directly access sensitive data resources (such as Amazon S3 buckets or DynamoDB tables) through its existing permissions, without needing intermediate escalation steps.
 
-### Capability advancing
-<a name="capability-advancing"></a>
+### Has capability advancing path
+<a name="has-capability-advancing-path"></a>
 
 The associated principal has a privilege escalation path that advances its overall capabilities beyond what its directly assigned permissions would suggest. This is a general classification for paths that do not match a more specific pattern.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

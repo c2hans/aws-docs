@@ -36,3 +36,7 @@ To manage Service Quotas tags using the CLI or API, choose a management task and
 | Add tags to applied quotas | `aws service-quotas [tag-resource](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/tag-resource.html)` | [`TagResource`](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_TagResource.html)<br /> |
 | View tags for an applied quota | `aws service-quotas [list-tags-for-resource](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/list-tags-for-resource.html)` | `[ListTagsForResource](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_ListTagsForResource.html)`<br /> |
 | Delete existing tag values for applied quotas | `aws service-quotas [untag-resource](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/untag-resource.html)` | `[UntagResource](https://docs.aws.amazon.com/servicequotas/2019-06-24/apireference/API_UntagResource.html)`<br /> |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Service Quotas. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicequotas` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

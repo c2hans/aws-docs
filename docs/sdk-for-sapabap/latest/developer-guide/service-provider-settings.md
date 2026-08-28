@@ -20,3 +20,7 @@ Use the following steps to configure the Service Provider settings in client `00
    1. *Disable EC2 Metadata* – prevents the SDK from accessing EC2 instance metadata in all clients, even if an SDK Profile is configured to authenticate using EC2 instance metadata. The SDK raises an exception if an ABAP program attempts to access instance metadata using the SDK.
 
 1. Select **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for SAP ABAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-sapabap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -69,3 +69,7 @@ When making changes to your core network, some policy changes require making edi
 ## `routing-policies`
 <a name="regional-cloudwan-routing-policies-json"></a>
 + Adding/removing/modifying entries here will affect any resource that the routing policy is connected to this can be an attachment (see Attachment Policies), a segment sharing (See Segment Actions/Share), or between two edge locations (See Segment Actions/AssociateRoutingPolicy).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

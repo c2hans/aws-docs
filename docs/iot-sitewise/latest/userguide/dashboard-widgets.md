@@ -18,3 +18,7 @@ Widgets supports a wide range of features, including alarms, high-performance li
 + **Text** – The Text widget helps write text with various colors and fonts. You can create a link by associating a text with an URL. The **Properties** and **Thresholds** fields are not enabled for this widget.
 
 ![The IoT dashboard Project page with widgets shown.](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/ai-dashboard-widget-list.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

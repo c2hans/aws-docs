@@ -91,3 +91,7 @@ The following table outlines some of the differences between AWS Cloud9 and AWS 
 | AWS Cloud9 supports Ubuntu and AL2 OS platforms. | AWS Cloud9 on CodeCatalyst supports MDE Universal images and custom images which can include Ubuntu and AL2. For more information on this, see [Universal devfile images](https://docs.aws.amazon.com/codecatalyst/latest/userguide/devenvironment-universal-image.html) in the *Amazon CodeCatalyst User Guide*. |
 | Uploading and downloading is supported in AWS Cloud9 | Uploading and downloading is currently not supported for AWS Cloud9 on CodeCatalyst. Users will need to upload and download using Amazon S3 buckets. |
 | Collaboration is available in AWS Cloud9 | Collaboration is currently not available for AWS Cloud9 on CodeCatalyst. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

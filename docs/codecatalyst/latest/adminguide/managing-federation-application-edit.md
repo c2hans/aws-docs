@@ -29,3 +29,7 @@ Make sure you are signed in to the AWS Management Console with the AWS account t
 1. Under **Space administrators**, in **Assign additional administrators**, choose the users to which you want to assign the **Space administrator** role for your space. These are members of the SSO group who have individual permissions in CodeCatalyst.
 
 1. To make updates to your connected groups, choose **Manage in IAM Identity Center**. You will be taken to IAM Identity Center where you can work with your Identity federation administrator to configure SSO users and groups for your instance in IAM Identity Center.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,3 +25,7 @@ After you create a device profile, when you retrieve information about the profi
 1. Obtain the JSON file that contains the required information for provisioning your end device.
    + (Console) Download this file from the details page of the Sidewalk device that you created.
    + (API) Use the `GetDeviceProfile` and `GetWirelessDevice` API operations to retrieve information about your device profile and wireless device. Store the API response information as JSON files, such as {{`device_profile.json`}} and {{`wireless_device.json`}}.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

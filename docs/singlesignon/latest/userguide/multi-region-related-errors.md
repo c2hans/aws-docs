@@ -16,3 +16,7 @@ You must first create a replica key for your customer managed key in the Region 
 <a name="multi-region-issue-2"></a>
 
 If no IAM Identity Center users can sign into AWS managed applications in an additional Region after you added the Region in IAM Identity Center, confirm that you configured the additional Region's Assertion Consumer Service (ACS) URL in the external identity provider as described in [Step 3 (external identity providers only): Update external IdP setup](replicate-to-additional-region.md#update-external-idp-setup). Also, confirm your users have connectivity to the Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

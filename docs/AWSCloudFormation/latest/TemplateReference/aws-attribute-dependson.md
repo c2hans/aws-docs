@@ -249,3 +249,7 @@ Resources that make additional calls to AWS require a service role, which permit
 For example, imagine that you have a template with a deployment group resource, a service role, and the role's policy. When you create a stack, CloudFormation won't create the deployment group until it creates the role's policy. Without the dependency, CloudFormation can create the deployment group resource before it creates the role's policy. If that happens, the deployment group will fail to create because of insufficient permissions.
 
 If the role has an embedded policy, don't specify a dependency. CloudFormation creates the role and its policy at the same time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -114,3 +114,7 @@ To switch the axes of a visualization, use the axis configuration in the setting
 <a name="observability-logs-add-to-dashboard"></a>
 
 After you create a visualization, you can add it to a dashboard for ongoing monitoring. Choose **Save to dashboard** in the visualization toolbar, then select an existing dashboard or create a new one. The visualization is saved with its underlying PPL query so that it refreshes automatically when you open the dashboard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -325,7 +325,9 @@ Choose the link in the **AWS service** column to see the documentation for servi
   - com.amazonaws.{{region}}.eks
   - com.amazonaws.{{region}}.eks-auth
   - com.amazonaws.{{region}}.eks-fips
+  - com.amazonaws.{{region}}.eks-mcp
   - com.amazonaws.{{region}}.eks-proxy
+  - com.amazonaws.{{region}}.oidc-eks
 
 - ** [AWS Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/vpc-vpce.html) **
   - com.amazonaws.{{region}}.elasticbeanstalk
@@ -552,6 +554,7 @@ Choose the link in the **AWS service** column to see the documentation for servi
 
 - ** [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/configuration-vpc-endpoints.html)**
   - com.amazonaws.{{region}}.lambda
+  - com.amazonaws.{{region}}.lambda-microvm
 
 - **AWS Launch Wizard**
   - com.amazonaws.{{region}}.launchwizard
@@ -1158,3 +1161,7 @@ The following is example output. The complete output is not shown.
     "com.amazonaws.us-east-1.xray"
 ]
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

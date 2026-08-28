@@ -18,3 +18,7 @@ For more information, see [Instance purchasing options](https://docs.aws.amazon.
 + [Create a mixed instances group by manually choosing instance types](create-mixed-instances-group-manual-instance-type-selection.md)
 + [Configure an Auto Scaling group to use instance weights](ec2-auto-scaling-mixed-instances-groups-instance-weighting.md)
 + [Use multiple launch templates](ec2-auto-scaling-mixed-instances-groups-launch-template-overrides.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

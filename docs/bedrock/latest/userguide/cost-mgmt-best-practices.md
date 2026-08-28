@@ -47,3 +47,7 @@ A typical setup looks like this:
 + Tag [application inference profiles](cost-mgmt-application-inference-profiles.md) (for `bedrock-runtime`) or [projects](cost-mgmt-projects.md) and [workspaces](cost-mgmt-workspaces.md) (for `bedrock-mantle`) for application-level dollars.
 + Enable [model invocation logging](model-invocation-logging.md) and stamp [request metadata](cost-mgmt-request-metadata.md) in your shared client or gateway for per-prompt detail.
 + Reconcile log-derived costs against CUR periodically at the model and usage-type grain to confirm your token-rate-card calculations match your invoice.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

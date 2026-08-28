@@ -28,3 +28,7 @@ To port FreeRTOS to your device, follow the instructions in the topics below.
 1. [Porting the AWS IoT over-the-air (OTA) update library](afr-porting-ota.md)
 
 1. [Porting the Cellular Interface library](freertos-porting-cellular.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

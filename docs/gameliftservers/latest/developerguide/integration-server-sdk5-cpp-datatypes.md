@@ -488,3 +488,7 @@ The severity level of a log message. Values increase in severity from `Trace` (m
 + **Error** – Messages that indicate a recoverable error.
 + **Fatal** – The most severe level, used for unrecoverable errors.
 + **Off** – Disables all log callback dispatching.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

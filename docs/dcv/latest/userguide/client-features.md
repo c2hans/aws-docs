@@ -46,3 +46,7 @@ The following table compares the features that are supported by the Amazon DCV c
 5Supported in Chromium-based browsers only. This includes Google Chrome and Microsoft Edge version 79 and later. This doesn't include Firefox and Safari.
 
 For more information about the Amazon DCV server features, see [ Amazon DCV server features](https://docs.aws.amazon.com/dcv/latest/adminguide/servers.html#features) in the *Amazon DCV Administrator Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

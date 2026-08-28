@@ -48,3 +48,7 @@ You must first attach a Lambda function to your Amazon Lex V2 bot alias before y
       + To invoke the function for **intent fulfillment**, scroll to the **Fulfillment** section. Toggle the **Active** button to set the code hook to *active*. Expand the arrow next to **On successful fulfillment**, and select **Advanced options**. Select the check box next to **Use a Lambda function for fulfillment** under the **Fulfillment Lambda code hook** section to set the code hook to *enabled*.
 
 1. Once you set the conversation stages at which to invoke the Lambda function, **Build** the bot again to test the function.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

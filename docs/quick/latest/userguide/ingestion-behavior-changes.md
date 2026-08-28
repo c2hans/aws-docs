@@ -20,3 +20,7 @@ Datasets created in the new experience will typically contain more rows than the
 + Preservation of related data in unaffected columns
 
 This change enables analysts to identify and address data quality issues more effectively, rather than having problematic rows silently omitted from the dataset.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

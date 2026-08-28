@@ -26,3 +26,7 @@ Don't modify or delete these roles.
 | ams-container-connector-lambda-role-{{$region}} | AMS operators assume this role to access the cluster for any read-only operations. This role is used to access the Amazon EKS cluster through the AWSManagedServices-RunKubernetesScript document. |
 | EDIDeploymentFulfillmentRole EDIDeploymentFulfillmentIQRole | AMS operators use this role to deploy the EDI solution and IQ ingestion on the respective accounts. |
 | osdu-\*, \*edi\*, \*ediiq\* | Don't modify or delete roles or policies starting with or having the term “osdu”, “edi”, “ediiq” in their names. EDI services use these terms to connect between the AWS resources. These terms can be case sensitive. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Energy Data Insights on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query EDI` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

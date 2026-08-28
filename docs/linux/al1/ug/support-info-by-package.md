@@ -6675,3 +6675,7 @@ OpenJDK 1.8.0 reached EOL December 31, 2023.
   <tr><td>  <code>zziplib-utils</code> </td><td><img src="http://docs.aws.amazon.com/linux/al1/ug/images/icon-no.png" alt="" /> No</td><td>2023-12-31</td><td></td><td> <a href="./support-info-by-support-statement.html#support-info-by-support-statement-eol">Amazon Linux 1 EOL</a> </td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

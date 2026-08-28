@@ -418,3 +418,7 @@ Amazon DevOps Guru defines the following condition keys that can be used in the 
 | Condition keys | Description | Type |
 | --- | --- | --- |
 |   [devops-guru:ServiceNames](https://docs.aws.amazon.com/devops-guru/latest/APIReference/API_ServiceCollection.html)  | Filters access by API to restrict access to given AWS service names | ArrayOfString |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

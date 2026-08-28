@@ -211,6 +211,9 @@ The default endpoint for an API. For example: `https://abcdef.execute-api.us-wes
 `ApiId`  <a name="ApiId-fn::getatt"></a>
 The API identifier.
 
+`ExecuteApiArn`  <a name="ExecuteApiArn-fn::getatt"></a>
+Represents an Amazon Resource Name (ARN).
+
 ## Examples
 <a name="aws-resource-apigatewayv2-api--examples"></a>
 
@@ -292,3 +295,7 @@ HttpApi:
 ## See also
 <a name="aws-resource-apigatewayv2-api--seealso"></a>
 + [CreateApi](https://docs.aws.amazon.com/apigatewayv2/latest/api-reference/apis.html#CreateApi) in the *Amazon API Gateway Version 2 API Reference*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

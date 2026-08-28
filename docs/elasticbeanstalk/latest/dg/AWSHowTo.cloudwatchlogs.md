@@ -221,3 +221,7 @@ If an Elastic Beanstalk operation that concurrently launches a large number of i
 To resolve the throttling issue take one of the following actions:
 + Use a smaller batch size with rolling deployments to reduce concurrent updates.
 + Request an increase for your AWS account's Transaction Per Second (TPS) limit service quota for *CreateLogStream*. For more information, see [ CloudWatch Logs quotas](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch_limits_cwl.html) and [ Managing your CloudWatch Logs service quotas](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/cloudwatch_limits_cwl.html#service-quotas-manage) in the *Amazon CloudWatch Logs User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

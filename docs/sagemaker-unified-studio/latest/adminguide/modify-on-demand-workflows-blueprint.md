@@ -26,3 +26,7 @@ In order to support creating workflow environments in a shared VPC setup, where 
    This value defines whether the VPC endpoints configured for the environment are created and managed by the customer or by Amazon MWAA. If **Value** is set to **SERVICE**, Amazon MWAA creates and manages the required VPC endpoints in your VPC. If **Value** is set to **CUSTOMER**, you must create and manage the VPC endpoints for your VPC. If you choose to create an environment in a shared VPC, you must set this value to **CUSTOMER**.
 
 The domain users can then [create workflow environments](https://docs.aws.amazon.com/sagemaker-unified-studio/latest/userguide/create-workflow-environment.html) and the domain administrators then can follow the steps and procedures described [here](https://aws.amazon.com/blogs/big-data/introducing-shared-vpc-support-on-amazon-mwaa/) to automate deployment of Amazon Amazon MWAA environments using customer-managed endpoints in a VPC.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

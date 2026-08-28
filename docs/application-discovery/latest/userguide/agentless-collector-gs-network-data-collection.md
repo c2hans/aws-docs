@@ -15,3 +15,7 @@ The Network Data Collection module connects to the servers that the VMware vCent
 + [Setting up the Network Data Collection module](network-data-module-setup.md)
 + [Network data collection attempts](collection-attempts.md)
 + [Server status in the Network Data Collection module](network-data-collection-status.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Application Discovery Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query application-discovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

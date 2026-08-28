@@ -84,3 +84,7 @@ After you have created your space, you can perform the following tasks.
 + Work with workflows, repositories, and other resources in CodeCatalyst. See [Build, test, and deploy with workflows in CodeCatalyst](https://docs.aws.amazon.com//codecatalyst/latest/userguide/flows.html) in the* Amazon CodeCatalyst User Guide*.
 + Create teams in CodeCatalyst and import your users and groups into teams. See [Managing teams](https://docs.aws.amazon.com//codecatalyst/latest/userguide/managing-teams.html) in the *Amazon CodeCatalyst User Guide*.
 + Create issues and assign tasks to users and teams in CodeCatalyst. See [Issues in CodeCatalyst](https://docs.aws.amazon.com//codecatalyst/latest/userguide/managing-teams.html) in the *Amazon CodeCatalyst User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

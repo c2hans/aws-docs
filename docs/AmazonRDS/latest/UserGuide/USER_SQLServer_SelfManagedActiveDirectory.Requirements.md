@@ -63,3 +63,7 @@ Do not move computer objects that RDS for SQL Server creates in the Organization
 <a name="USER_SQLServer_SelfManagedActiveDirectory.Requirements.LDAPS"></a>
 
 Communication over LDAPS is recommended for RDS to query and access computer objects as well as SPNs in the domain controller. To use secure LDAP, use a valid SSL certificate on your domain controller that meets the requirements for secure LDAPS. If a valid SSL certificate does not exist on the domain controller, the RDS for SQL Server DB instance defaults to using LDAP. For more information on certificate validity, see [ Requirements for an LDAPS certificate](https://learn.microsoft.com/en-us/troubleshoot/windows-server/active-directory/enable-ldap-over-ssl-3rd-certification-authority#requirements-for-an-ldaps-certificate).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

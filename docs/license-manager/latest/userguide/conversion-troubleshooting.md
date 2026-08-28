@@ -38,3 +38,7 @@ To perform a license type conversion, the target instance must be in the stopped
 <a name="conversion-troubleshooting-failed-to-stop"></a>
 
 You must have permissions to perform the `StopInstances` EC2 API action on the target instance. Also, If stop protection is enabled on the target instance, the conversion process will fail. For more information, see [Disable stop protection for a running or stopped instance](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/Stop_Start.html#disable-stop-protection-on-running-or-stopped-instance) in the *Amazon Elastic Compute Cloud User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

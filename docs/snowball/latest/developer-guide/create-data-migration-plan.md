@@ -139,3 +139,7 @@ The country in the address must match the destination country for the device, an
 1. Review your information in **Plan details** and **Shipping, security, and notification preferences**, and edit if necessary.
 
 1.  Choose **Create data migration plan** to create the plan.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

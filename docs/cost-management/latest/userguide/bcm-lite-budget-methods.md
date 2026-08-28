@@ -34,3 +34,7 @@ At the beginning of each new period, AWS Budgets calculates your budget amount f
 When using auto-adjusting budgets, consider the following:
 + AWS Budgets doesn't include periods at the beginning of your baseline time range that don't have cost or usage data. This might impact your budget amount.
 + You see a temporary forecast while you're creating or editing a budget. After you save your budget, your auto-adjusted budget is set for the first time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

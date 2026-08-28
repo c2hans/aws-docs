@@ -15,3 +15,7 @@ The following sections provide troubleshooting tips for when you see errors in c
 + [Seeing nodes are in `DOWN` state with `Reason (Code:InsufficientInstanceCapacity)...`](compute-node-initialization-down-nodes-v3.md)
 + [Seeing `cannot change locale (en_US.utf-8) because it has an invalid name` in `slurm_resume.log`](compute-node-initialization-locale-v3.md)
 + [None of the previous scenarios apply to my situation](compute-node-initialization-not-found-v3.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,3 +28,7 @@ Choosing **Go to Notebook** or **Analyze in Notebook** will open Jupyter Lab in 
 The FinSpace PySpark Kernel comes with all the libraries required to access and work with data stored in FinSpace, including the Spark Cluster management API and time series analytics library. The FinSpace Cluster Management API is used to instantiate and connect the notebook instance to a dedicated Spark Cluster. FinSpace Spark clusters use Kerberos authentication for additional security. FinSpace provides with complete resource isolation when working with Spark Clusters.
 
 When a FinSpace PySpark Kernel is instantiated for the first time in a new notebook session, you can expect a startup time of about 3 to 5 minutes to allow bootstrapping of all dependencies on the image supporting the notebook.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,3 +37,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 <a name="net-auto"></a>
 
  Codify and version identity constructs such as roles, policies, and templates with infrastructure as code. Employ testing and linting to ensure coding standards are met within your continuous integration and continuous delivery (CI/CD) pipelines with tools like [cfn-guard](https://aws.amazon.com/blogs/mt/introducing-aws-cloudformation-guard-2-0/). Use [IAM Access Analyzer](https://docs.aws.amazon.com/IAM/latest/UserGuide/what-is-access-analyzer.html) policy validation to check for findings that include security warnings, errors, general warnings, and suggested changes to your IAM policies. Where appropriate, deploy and remove identity constructs for temporary access to the environment in an automated manner and prohibit deployment by individuals using the console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

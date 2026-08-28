@@ -18,3 +18,7 @@ The following are fleet usage metrics for single-session fleets.
 | RunningCapacity | The total number of instances currently running. Represents the number of concurrent streaming sessions that can be supported by the fleet in its current state.<br />This metric is provided for Always-On fleets only, and has the same value as the `ActualCapacity` metric. | [Fleet] | Average, Minimum, Maximum | Count |
 |  InsufficientCapacityError  | The number of session requests rejected due to lack of capacity.<br />You can set alarms to use this metric to be notified of users waiting for streaming sessions. | [Fleet] | Average, Minimum, Maximum, Sum | Count |
 |  InsufficientConcurrencyLimitError  | The number of Elastic fleet session requests rejected due to reaching max concurrent streaming capacity.<br />You can set alarms to use this metric to be notified of users waiting for streaming sessions. | [Fleet] | Average, Minimum, Maximum, Sum | Count |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

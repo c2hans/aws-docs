@@ -35,3 +35,7 @@ If you created your RDS Custom for Oracle DB instance before June 30, 2025, you 
 1. **Migrate your database** from the existing DB instance that doesn’t support Multi-AZ deployment to the newly created instance using one of following methods:
    + [Physical migration of Oracle databases to Amazon RDS Custom using Data Guard](https://aws.amazon.com/blogs//database/physical-migration-of-oracle-databases-to-amazon-rds-custom-using-data-guard/)
    + [Physical migration of Oracle databases to Amazon RDS Custom using RMAN duplication](https://aws.amazon.com/blogs//database/physical-migration-of-oracle-databases-to-amazon-rds-custom-using-rman-duplication/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

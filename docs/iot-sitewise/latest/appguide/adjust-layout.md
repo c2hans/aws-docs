@@ -17,3 +17,7 @@ The SiteWise Monitor application lets you to adjust the layout of your dashboard
 1. To change the size of a visualization, use the resize control in the lower right. Drag the corner to a new size and shape. Visualizations snap to the grid when resized, so you only have coarse control over the size.
 
 1. <a name="dashboard-save-changes"></a>After you finish editing the dashboard, choose **Save dashboard** to save your changes. The dashboard editor closes. If you try to close a dashboard that has unsaved changes, you're prompted to save them.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,9 @@ Create DMS instance, source, and target endpoints and test each endpoint.
 ## Enable DocumentDB compression
 <a name="migrate-qs-comp"></a>
 
-Enable compression by attaching a custom parameter group to your DocumentDB cluster and updating default\_collection\_compression parameter to enabled. See [Managing collection-level document compression](doc-compression.md) for more information.
+**Amazon DocumentDB 5.0:** Enable compression by attaching a custom parameter group to your Amazon DocumentDB cluster and setting the `default_collection_compression` parameter to `enabled`. See [Managing collection-level document compression](doc-compression.md) for more information.
+
+**Amazon DocumentDB 8.0:** Zstd compression is enabled by default. See [Managing dictionary-based compression in Amazon DocumentDB 8.0](dict-compression.md) for more information.
 
 ## Create a replication task
 <a name="migrate-qs-create"></a>
@@ -64,6 +66,10 @@ Use the AWS DMS console or create a custom dashboard ([dashboarder tool](https:/
 ## Additional information
 <a name="migrate-qs-info"></a>
 
-For more information about Amazon DocumentDB and AWS DMS, see: See for more information.
+For more information about Amazon DocumentDB and AWS DMS, see:
 + [Amazon DocumentDB migration runbook](docdb-migration-runbook.md)
 + [Migrating from MongoDB to Amazon DocumentDB](https://docs.aws.amazon.com/dms/latest/sbs/chap-mongodb2documentdb.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

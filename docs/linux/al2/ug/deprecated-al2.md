@@ -160,3 +160,7 @@ For more information about Python on Amazon Linux, see [Python in AL2](python.md
  In AL2023, the regular `ping` utility natively supports IPv6, and the separate `/bin/ping6` is no longer required. In AL2023, `/usr/sbin/ping6` is a symlink to the `/usr/bin/ping` executable.
 
  This change follows the broader community's adoption of newer `iputils` versions which provide this functionality, for example the [Ping IPv6 change in Fedora](https://fedoraproject.org/wiki/Changes/PingIpv6).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

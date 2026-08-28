@@ -16,3 +16,7 @@ The [AgentCore CLI](https://github.com/aws/agentcore-cli) is a Command Line Inte
 + [Get started with Instances](runtime-instances-getting-started.md)
 + [Get started with Amazon Bedrock AgentCore Runtime direct code deployment](runtime-get-started-code-deploy.md)
 + [Get started with bidirectional streaming using WebSocket](runtime-get-started-websocket.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

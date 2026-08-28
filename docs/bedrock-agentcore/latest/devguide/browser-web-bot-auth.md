@@ -128,3 +128,7 @@ Additional bot control vendors will be supported as partnerships are established
 +  **Performance Impact** : Signing requests adds minimal latency to HTTP requests.
 +  **Vendor Coverage** : The feature only works with websites that use supported bot control vendors. Websites using other anti-bot solutions may still present challenges.
 +  **Policy Dependent** : Even with authentication, website owners control their bot policies. Some sites may still restrict or monitor agent traffic based on their specific requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

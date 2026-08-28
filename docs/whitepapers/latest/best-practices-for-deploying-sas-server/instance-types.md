@@ -76,3 +76,7 @@ In previous SAS Viya deployments (for example, 3.5 prior) SAS CAS nodes, SPRE, a
  As mentioned previously, SAS Viya pricing is based on the user profile, including the number and types of users. For example, the data scientist role might need SAS Visual Data Science, a different compute family of instances and their corresponding node groups, whereas a business analyst role might need SAS Visual Analytics and Data Preparation.
 
  For details on base line recommendations, refer to the [Costs and Licenses section in the Migrating SAS Viya to the AWS Cloud guide](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sas-viya/licensing.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

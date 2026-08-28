@@ -133,3 +133,7 @@ The following statement includes policy statement examples you can add for DevOp
 <a name="security-traffic-privacy"></a>
 
  You can improve the security of your resource analysis and insight generation by configuring DevOps Guru to use an interface VPC endpoint. To do this, you do not need an internet gateway, NAT device, or virtual private gateway. It also is not required to configure PrivateLink, though it is recommended. For more information, see [DevOps Guru and interface VPC endpoints (AWS PrivateLink)](vpc-interface-endpoints.md). For more information about PrivateLink and VPC endpoints, see [AWS PrivateLink](https://aws.amazon.com/privatelink/) and [Accessing AWS services through PrivateLink](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_Introduction.html#what-is-privatelink).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

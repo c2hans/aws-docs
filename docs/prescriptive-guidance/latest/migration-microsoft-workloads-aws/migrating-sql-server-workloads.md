@@ -127,3 +127,7 @@ To refactor your SQL Server databases to one of these offerings, consider using 
 + [Migrating Microsoft SQL Server databases to the AWS Cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/welcome.html) (AWS Prescriptive Guidance)
 + [Migration and modernization strategies for your SQL Server workloads on AWS](https://aws.amazon.com/blogs/modernizing-with-aws/migration-modernization-strategies-sql-on-aws/) (AWS Blogs)
 + [SQL Server database migration methods](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-sql-server/methods.html) (AWS Prescriptive Guidance)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

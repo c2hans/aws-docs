@@ -26,3 +26,7 @@ Use AWS CloudTrail to capture detailed information about the calls made to the A
 **AWS Health Dashboard Notifications**
 AWS Health provides ongoing visibility into your resource performance and the availability of your AWS services and accounts. When you start an experiment, AWS FIS emits a notification to your AWS Health Dashboard. The notification is present for the duration of the experiment in each account that contains resources targeted in an experiment, including multi-account experiments. Multi-account experiments with only actions that do not include targets, such as `aws:ssm:start-automation-execution` and `aws:fis:wait`, will not emit a notification. Information about the role used to allow the experiment will be listed under **Affected resources**. To learn more about the AWS Health Dashboard, see [AWS Health Dashboard](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html) in the AWS Health User Guide.
 AWS Health delivers events on a *best effort* basis.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

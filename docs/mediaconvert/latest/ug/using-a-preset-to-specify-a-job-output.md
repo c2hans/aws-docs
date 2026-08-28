@@ -26,3 +26,7 @@ The **Preset** dropdown list shows only the presets that work with the type of o
 1. Repeat these steps for each output in your job that you want to specify with a preset.
 
 1. Finish creating the job as described in [Creating a job](getting-started.md#create-a-job).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

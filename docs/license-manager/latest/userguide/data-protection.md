@@ -21,3 +21,7 @@ We strongly recommend that you never put confidential or sensitive information, 
 <a name="encryption-rest"></a>
 
 License Manager stores data in an Amazon S3 bucket in the management account. The bucket is configured using Amazon S3 managed encryption keys (SSE-S3).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

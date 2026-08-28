@@ -51,3 +51,7 @@ View details about updates to AWS managed policies for Reachability Analyzer sin
 | [AmazonVPCReachabilityAnalyzerPathComponentReadPolicy](#AmazonVPCReachabilityAnalyzerPathComponentReadPolicy) – New policy | Added a policy that grants member accounts permission to view resources from across your organization. The policy is attached to a role that is deployed to member accounts when the management account enables trusted access for Reachability Analyzer using the console. | May 1, 2023 |
 | [AWSReachabilityAnalyzerServiceRolePolicy](#AWSReachabilityAnalyzerServiceRolePolicy) – New policy | Added a policy that is attached to a service-linked role that allows it to access AWS resources and integrate with AWS Organizations on your behalf. | November, 23, 2022 |
 | Reachability Analyzer started tracking changes | Reachability Analyzer started tracking changes for its AWS managed policies. | March 1, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Virtual Private Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

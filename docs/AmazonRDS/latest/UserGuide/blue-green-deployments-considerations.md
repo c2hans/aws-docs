@@ -42,6 +42,11 @@ The following general limitations apply to blue/green deployments:
   + Multi-AZ DB cluster deployments
 
     Blue/green deployments are supported for Multi-AZ DB instance deployments. For more information about Multi-AZ deployments, see [Configuring and managing a Multi-AZ deployment for Amazon RDS](Concepts.MultiAZ.md).
++ After you switch over a blue/green deployment, point-in-time recovery (PITR) history doesn't carry over to the new production DB instance. The green DB instance keeps its own resource ID. Its earliest restorable time starts when you created the green environment. You can't restore the new production DB instance to any point in time before that, including any time before switchover. The blue DB instance keeps its own PITR history and automated backups until you delete it. To restore the blue DB instance after switchover, use its resource ID (`DbiResourceId`), not its name. The name changes during switchover. For more information, see [Restoring a DB instance to a specified time for Amazon RDS](USER_PIT.md).
+
+**Important**
+Plan for this PITR reset if you have backup retention or recovery point objective (RPO) requirements. The new production DB instance can't reach a recovery point from before you created the green environment, and its PITR window reaches your full backup retention period only after enough time passes.
+To keep the ability to recover to a time before switchover, don't delete the blue DB instance immediately. Keep the blue DB instance running for at least the length of your required recovery window. A retained blue DB instance still incurs charges for compute and storage until you delete it.
 
 ### RDS for MySQL limitations for blue/green deployments
 <a name="blue-green-deployments-limitations-mysql"></a>
@@ -138,3 +143,7 @@ After you switch over a blue/green deployment, consider updating the resource ID
 
   The same behavior applies to DB instances and read replicas.
 + If you use resource tags for access control or operational management, you need to understand that tag changes aren't synchronized between blue and green environments until switchover. When you create a blue/green deployment, tags from the blue environment are copied to the green environment. After creation, any tag modifications that you make to either environment aren't automatically synchronized. During switchover, blue environment tags replace all tags in the green environment. Apply all necessary tags to the blue environment before you create the blue/green deployment, or reapply required tags to the new production environment after switchover. For more information about tags, see [Tagging Amazon RDS resources](USER_Tagging.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

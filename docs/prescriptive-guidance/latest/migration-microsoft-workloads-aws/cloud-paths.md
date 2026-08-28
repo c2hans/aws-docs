@@ -48,3 +48,7 @@ Replatforming is generally more cost-effective than rehosting. You can use repla
 <a name="when-to-refactor.0715bc0c-55b3-5093-b8dd-0083de7b14e5"></a>
 
 A refactor is generally the most cost-effective migration approach. Refactoring is a cloud-native approach that enables applications to rapidly adapt to new requirements by decoupling application components to improve on application resiliency. However, refactoring requires more advanced coding and automation skills. Refactoring also takes longer to implement because it involves rebuilding applications.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

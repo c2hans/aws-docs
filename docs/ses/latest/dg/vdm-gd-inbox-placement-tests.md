@@ -48,3 +48,7 @@ Your global deliverability subscription includes inbox placement tests each mont
 1. Choose the test name from the tests list to view its details.
 
 1. Review the **Test details** section for overall results and the **ISP breakdown** table for per-provider placement data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

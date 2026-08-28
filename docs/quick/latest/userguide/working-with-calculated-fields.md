@@ -18,3 +18,7 @@ You can add calculated fields to a dataset during data preparation or from the a
 + [Order of evaluation in Amazon Quick Sight](order-of-evaluation-quicksight.md)
 + [Using level-aware calculations in Quick Sight](level-aware-calculations.md)
 + [Calculated field function and operator reference for Amazon Quick](calculated-field-reference.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

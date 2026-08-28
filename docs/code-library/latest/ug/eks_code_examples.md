@@ -43,3 +43,7 @@ The following code examples show you how to use Amazon Elastic Kubernetes Servic
     + [`UpdateClusterVersion`](eks_example_eks_UpdateClusterVersion_section.md)
 + [Scenarios](eks_code_examples_scenarios.md)
   + [Getting started with managed kubernetes clusters](eks_example_eks_GettingStarted_034_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

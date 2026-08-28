@@ -28,3 +28,7 @@ For information about sending commands using other tools, see the following topi
 + [Running commands using a specific document version](run-command-version.md)
 + [Run commands at scale](send-commands-multiple.md)
 + [Canceling a command](cancel-run-command.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

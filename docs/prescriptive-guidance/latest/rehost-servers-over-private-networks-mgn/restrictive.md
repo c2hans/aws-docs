@@ -21,3 +21,7 @@ The main components of this architecture are:
 There's no network connectivity requirement from the staging environment subnet to the target subnets.
 + *Amazon VPC interface endpoints* for MGN, Amazon Elastic Compute Cloud (Amazon EC2), and Amazon S3 created in the staging environment, and an *Amazon S3 VPC gateway endpoint* that is accessible from the staging subnet.
 + And finally, [DNS resolver inbound endpoint ](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resolver.html#resolver-overview-forward-network-to-vpc)in the staging subnet. This is required for the source systems to resolve the fully qualified domain names (FQDNs) of the VPC endpoints into private IPs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

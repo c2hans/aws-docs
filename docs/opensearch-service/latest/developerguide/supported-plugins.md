@@ -64,3 +64,7 @@ In addition to the default plugins that come pre-installed, Amazon OpenSearch Se
 Note that for the [Sudachi plugin](https://github.com/WorksApplications/elasticsearch-sudachi), when you reassociate a dictionary file, it doesn't immediately reflect on the domain. The dictionary refreshes when the next blue/green deployment runs on the domain as part of a configuration change or other update. Alternatively, you can create a new package with the updated data, create a new index using this new package, reindex the existing index to the new index, and then delete the old index. If you prefer to use the reindexing approach, use an index alias so that there's no disruption to your traffic.
 
 Optional plugins use the `ZIP-PLUGIN` package type. For more information about optional plugins, see [Importing and managing packages in Amazon OpenSearch Service](custom-packages.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -122,3 +122,7 @@ Now add the CSS for the webpage. This will set the style of the text and placeho
 ![Browser window showing the Amazon Location Service quickstart web application with an empty map and JSON Response panel, before any API calls are made.](http://docs.aws.amazon.com/location/previous/developerguide/images/quickstart-blank.png)
 
 Next, you will add the map control to the application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

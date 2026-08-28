@@ -28,3 +28,7 @@ The following table provides information about error codes you may see for the M
 | MSE-5205 | Got exception from customer while accessing contacts. | Error occurred while fetching contacts from Microsoft Graph API. Check logs for more details. |
 | MSE-5206 | Error occurred while retrying API requests. | Error occurred while retrying API requests to fetch data from Microsoft Graph API.  |
 | MSE-5301 | Got exception from customer while running changelog mode. | Error occurred while handling changelog token. Refer logs or contact connector team for more information. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

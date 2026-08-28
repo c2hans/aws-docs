@@ -114,3 +114,7 @@ After installing the AWS CLI, there are many different tools you can use as you 
 + Using your preferred programming language, define infrastructure or architecture as code with the [Creating Amazon ECS resources using the AWS CDK](tutorial-ecs-web-server-cdk.md).
 + Define and manage all AWS resources in your environment with automated deployment using [Using Amazon ECS with AWS CloudFormation](ecs-with-cloudformation.md).
 + Use the complete [Creating Amazon ECS resources using the AWS Copilot command line interface](AWS_Copilot.md) end-to-end developer workflow to create, release, and operate container applications that comply with AWS best practices for infrastructure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

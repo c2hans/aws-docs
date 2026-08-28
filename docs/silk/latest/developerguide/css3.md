@@ -42,3 +42,7 @@ The viewport represents the display area available to the browser. The viewport 
  For more information on the `viewport` meta element, see the following resources:
 + [Learn about responsive web design](responsive-design.md)
 + [W3C: Viewport META Element](http://www.w3.org/TR/css-device-adapt/#viewport-meta-element)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Silk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query silk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

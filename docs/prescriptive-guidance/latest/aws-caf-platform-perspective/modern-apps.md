@@ -83,3 +83,7 @@ Another critical aspect of implementing microservices is the adoption of domain-
 Optimizing inter-service communication is also vital in a microservices-based application. By implementing advanced protocols such as gRPC or GraphQL, organizations can significantly enhance communication efficiency between services. These protocols offer capabilities such as type safety, low latency, and flexibility, which help improve the overall performance and maintainability of the application.
 
 An organization that adopts microservices provides an environment that fosters innovation, agility, and collaboration. The development teams are typically organized around business capabilities and have a strong focus on continuous integration and continuous delivery (CI/CD) practices. They are empowered to make decisions, experiment, and iterate quickly, and they embrace a culture of shared responsibility and accountability.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

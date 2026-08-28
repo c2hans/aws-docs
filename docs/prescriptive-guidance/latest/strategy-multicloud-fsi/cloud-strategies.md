@@ -10,3 +10,7 @@ AWS defines *cloud computing* as the on-demand delivery of IT resources over the
 + **Hybrid cloud** – This model distributes resources across an organization's own on-premises data center and at least one CSP. Typically, the purpose is to extend an organization's infrastructure into the cloud while maintaining private connectivity with existing internal systems that live on premises.
 + **Multicloud** – In this model, an organization runs significant workloads on multiple CSPs, excluding software as a service (SaaS) solutions. An organization might choose this option as a deliberate strategy or as an unintentional result of individual teams, departments, or staff members having their own CSP preferences.
 + **Hybrid multicloud** – In this model, hybrid and multicloud operations are not mutually exclusive, and many organizations use both operations. A discussion of this model is not within the scope of this paper.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

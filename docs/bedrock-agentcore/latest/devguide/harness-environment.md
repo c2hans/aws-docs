@@ -271,3 +271,7 @@ Learn more: [File system configurations for AgentCore Runtime](https://docs.aws.
 +  [Tools](harness-tools.md) - connect tools to your harness
 +  [Security and access controls](harness-security.md) - execution role policies and VPC configuration
 +  [API Documentation](harness-get-started.md#api-documentation)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ This guidance provides technical architecture patterns and AWS service capabilit
 
 **Note**
 The v0.2 foundation deploy ships a single-region instance of this governance layer — Lake Formation tag-based access control, Macie classification, CloudTrail data-event logging, and IAM Identity Center groups — as the `governance` stack described in [Platform foundation](platform-foundation.md). That foundation stack is the deployable starting point. The multi-region EU/global split described in this chapter (separate EU producer region for PII, global consumer regions with resource links to anonymized data) is pattern guidance for customers who need to extend beyond what the foundation ships out of the box. If your compliance requirements demand cross-border data sovereignty controls — EU Data Act, GDPR data residency, or China PIPL — this chapter describes the broader architectural pattern you would build on top of the foundation’s single-region core.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

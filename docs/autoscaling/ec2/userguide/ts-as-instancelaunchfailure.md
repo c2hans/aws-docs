@@ -200,11 +200,11 @@ For more information, see [Example 2: Key policy sections that allow cross-accou
 
 **Cause 1**: You've reached the limit on the number of instances that you can launch with a `targeted` On-Demand Capacity Reservation.
 
-**Solution 1**: Either increase the number of instances that you can launch with the `targeted` On-Demand Capacity Reservation, or use a Capacity Reservations group so that anything beyond the reserved capacity will launch as regular On-Demand capacity. For more information, see [Reserve capacity in specific Availability Zones with Capacity Reservations](use-ec2-capacity-reservations.md).
+**Solution 1**: Either increase the number of instances that you can launch with the `targeted` On-Demand Capacity Reservation, or use a Capacity Reservations group so that anything beyond the reserved capacity will launch as regular On-Demand capacity. For more information, see [Use Capacity Reservations in your Auto Scaling group](use-ec2-capacity-reservations.md).
 
 **Cause 2**: You've reached the limit on the number of instances that you can launch with a Capacity Block.
 
-With Capacity Blocks, you are constrained by the amount of capacity originally purchased. If you experience a higher number of launches than anticipated and use up all the capacity that you have available, this causes launches to fail. Terminating instances go through a lengthy clean up process before they're fully terminated. During this time, they can't be reused. This can also cause launches to fail. For more information, see [Use Capacity Blocks for machine learning workloads](launch-template-capacity-blocks.md).
+With Capacity Blocks, you are constrained by the amount of capacity originally purchased. If you experience a higher number of launches than anticipated and use up all the capacity that you have available, this causes launches to fail. Terminating instances go through a lengthy clean up process before they're fully terminated. During this time, they can't be reused. This can also cause launches to fail. For more information, see [Target Capacity Blocks or interruptible Capacity Reservations from a launch template](capacity-reservation-create-asg-procedure.md#target-capacity-blocks-or-interruptible-capacity-reservations-from-a-launch-template).
 
 **Solution 2**: To resolve the issue, try the following:
 + Keep the request as is. If a Capacity Block instance is terminating, you must wait several minutes for the instance to finish terminating and capacity to become available again. Amazon EC2 Auto Scaling continues to automatically make the launch request until capacity becomes available.
@@ -235,3 +235,7 @@ With Capacity Blocks, you are constrained by the amount of capacity originally p
 **Solution**: To resolve the issue, try the following:
 + If your current limits aren't adequate for your needs, you can request a quota increase on a per-Region basis. For more information, see [Amazon EC2 service quotas](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html) in the *Amazon EC2 User Guide*.
 + Submit a new request with a reduced number of instances (which you can increase at a later stage).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

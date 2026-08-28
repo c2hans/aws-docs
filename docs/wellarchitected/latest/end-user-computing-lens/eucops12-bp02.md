@@ -26,3 +26,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
   +  **Tool**s: Map out a matrix that identifies the right tools, metrics, and notification processes to verify that critical events are surfaced and distributed effectively to the appropriate teams and individuals.
   +  **Alert fatigue**: Filter out duplicate alerts and false positives, as they can lead to alert fatigue and loss of focus on important issues.
   +  **Geographic reporting**: For multi-Region deployments, dynamically adjust notification distribution lists to accommodate support in applicable time zones and geographic areas.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

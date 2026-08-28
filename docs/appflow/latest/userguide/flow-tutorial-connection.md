@@ -51,3 +51,7 @@ You now have a connection in the Amazon AppFlow console to your SaaS account. If
 For more information on connections, see the following resources:
 + [Managing connections](https://docs.aws.amazon.com/appflow/latest/userguide/connections.html) in the *Amazon AppFlow User Guide*.
 + [Salesforce](https://docs.aws.amazon.com/appflow/latest/userguide/salesforce.html) in the *Amazon AppFlow User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

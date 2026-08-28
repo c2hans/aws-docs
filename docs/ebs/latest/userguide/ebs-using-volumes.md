@@ -319,3 +319,7 @@ If you're mounting a volume that already has data on it (for example, a public d
 ![Review your settings and finish the wizard.](http://docs.aws.amazon.com/ebs/latest/userguide/images/windows-2016-new-simple-volume-wizard-finish.png)
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

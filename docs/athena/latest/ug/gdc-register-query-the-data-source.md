@@ -27,3 +27,7 @@ To query data catalogs from Athena, do one of the following.
   1. For **Database**, choose the database that contains the table that you want to query.
 
   1. Enter a query like `SELECT * FROM {{my_table}}`, and then choose **Run**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

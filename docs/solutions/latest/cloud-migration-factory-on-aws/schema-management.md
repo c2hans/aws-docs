@@ -146,3 +146,7 @@ The example data section provides the administrator with the ability to show the
 Example data shown in the **Intake form example data** property will be output in any intake template created where the attribute is included, when using the **Download, a template intake form** function, under **Migration Management > Import**.
 
 User interface example data and API example data are stored in the attribute, but not currently exposed in the web interface. These can be used in integrations and scripts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,3 +50,7 @@ source_url: https://docs.aws.amazon.com/freertos/latest/userguide/ota-failure-co
    ```
 
    In this example output, the "`reason`" in the "`detailsmap`" has two fields: the field shown as "0xEEEEEEEE" contains the generic error code from the OTA Agent; the field shown as "0xffffffff" contains the sub-code. The generic error codes are listed in [ https://docs.aws.amazon.com/freertos/latest/lib-ref/html1/aws\_\_ota\_\_agent\_8h.html](https://docs.aws.amazon.com/freertos/latest/lib-ref/html1/aws__ota__agent_8h.html). See error codes with the prefix "`kOTA_Err_`". The sub-code can be a platform specific code or provide more details about the generic error.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

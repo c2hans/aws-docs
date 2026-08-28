@@ -75,3 +75,7 @@ When migrating to a different instance family, make sure that the current instan
 +  You can separately modify your Amazon RDS DB instance to increase the allocated storage space or improve the performance by changing the storage type (such as General Purpose SSD to Provisioned IOPS SSD).
 +  Before you scale, make sure you have the correct licensing in place for commercial engines (SQL Server, Oracle), especially if you Bring Your Own License (BYOL).
 +  Determine when you want to apply the change. You have an option to apply it immediately or during the maintenance window specified for the instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

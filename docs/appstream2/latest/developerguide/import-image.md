@@ -173,3 +173,7 @@ These streaming tests will be executed in the background, you cannot connect to 
 1. **Import Image** – Review all the information you have entered and choose **Import Image**. Service will run compatibility checks to make sure AMI is compatible with WorkSpaces Applications.
    + If the static checks fail, you will receive an error straight away.
    + If the static checks pass, your import request will be submitted and depending upon the options you have selected it could take 30-60 min to create a new WorkSpaces Applications image with `type = "custom"` or `type = "BYOL"`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

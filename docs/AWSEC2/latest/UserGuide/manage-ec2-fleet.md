@@ -23,3 +23,7 @@ The fleet request remains active until it expires or you delete it. When you del
 + [Describe an EC2 Fleet, its instances, and its events](describe-ec2-fleet.md)
 + [Modify an EC2 Fleet](modify-ec2-fleet.md)
 + [Delete an EC2 Fleet request and the instances in the fleet](delete-fleet.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

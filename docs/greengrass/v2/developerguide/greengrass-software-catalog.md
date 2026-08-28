@@ -90,3 +90,7 @@ Each component has a public GitHub repository that you can explore. View the Gre
 To request a feature or report a bug, open a GitHub issue on the repository for that component. AWS doesn't provide support for community components. For more information, see the **CONTRIBUTING.md** file in each component's repository.
 
 Several AWS-provided components are also open source. For more information, see [Open source AWS IoT Greengrass Core software](open-source.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

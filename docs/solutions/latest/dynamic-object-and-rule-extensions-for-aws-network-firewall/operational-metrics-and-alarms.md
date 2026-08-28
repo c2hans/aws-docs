@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/dynamic-object-and-rule
 |  AWS DynamoDB  |  Unreachable  |  Trigger alarm in CloudWatch  |  \*  |
 
  Find the alarms configured for this solution by navigating to the CloudWatch console and selecting Alarms. By default, the alarms’ action is to send an email to the registered email address. Refer to [Update solution configuration](deployment.md#step-1.-update-solution-configuration) for information about how to configure alarms.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Object and Rule Extensions for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

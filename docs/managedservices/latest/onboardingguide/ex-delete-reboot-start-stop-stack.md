@@ -373,3 +373,7 @@ aws amscm create-rfc --change-type-id "ct-3dgbnh6gpst4d" --change-type-version "
 Stopped instances remain stopped unless you have scheduled restarts using the [AMS Resource Scheduler](https://docs.aws.amazon.com/managedservices/latest/ctref/ctex-resource-scheduler.html).
 
 If needed, see [EC2 instance stack stop fail](https://docs.aws.amazon.com/managedservices/latest/ctref/rfc-failures.html#rfc-valid-execute-ec2-stop).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ If MediaLive can't perform the maintenance during the maintenance window (red ma
 Each time MediaLive reschedules the maintenance event, the new date will appear in the Channels list in the MediaLive console, and on the Health Dashboard.
 
 During this retry period, you can change the maintenance window, but only if the channel is still in the maintenance event period (green bar).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

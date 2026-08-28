@@ -35,3 +35,7 @@ Pick the entry point that matches your role:
 + If you build pipelines that submit jobs or read results, start with [Identity-based policy examples for Deadline Cloud](security_iam_id-based-policy-examples.md) and [Secure job attachment and software buckets](job-attachment-queues.md).
 + If you want to control what jobs can access while they run, start with [Run jobs as dedicated OS users](job-run-as-user.md) for OS permissions and [Service roles](security-iam-service-roles.md) for the queue role that grants AWS permissions.
 + If you run customer-managed fleets, start with [Service roles](security-iam-service-roles.md) and [Secure worker hosts](worker-hosts.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

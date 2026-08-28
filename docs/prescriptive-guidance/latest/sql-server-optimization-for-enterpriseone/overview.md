@@ -14,3 +14,7 @@ The SQL Server buffer cache doesn't address the latency of write I/O. When an En
 Because many EnterpriseOne processes create record sets that might overlap with other open record sets, you should enable read committed snapshot isolation (RCSI) on each EnterpriseOne database to minimize blocking. When this feature is enabled, it can create a substantial I/O requirement for `tempdb`. `tempdb `is by nature ephemeral and doesn't require the durability of standard block storage. In most cases, local instance non-volatile memory express (NVMe) storage is the best choice for `tempdb`.
 
 The following sections of this guide explore these and other best practices for optimizing SQL Server for JD Edwards EnterpriseOne.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

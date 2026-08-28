@@ -32,3 +32,7 @@ For descriptions of all of the rule action options, see [Using rule actions in A
 + [AWS WAF CAPTCHA puzzles](waf-captcha-puzzle.md)
 + [How the AWS WAF CAPTCHA and Challenge rule actions work](waf-captcha-and-challenge-how-it-works.md)
 + [Best practices for using the CAPTCHA and Challenge actions](waf-captcha-and-challenge-best-practices.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

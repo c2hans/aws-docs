@@ -35,3 +35,7 @@ The `_variant` field identifies the flag variant assigned to the entity. When yo
 
 **Note**
 If the entity is not part of the experiment audience, or is part of the audience but is not currently exposed to the experiment (based on the experiment exposure percentage), the agent does not return an experiment treatment. Instead, it falls through to the flag value currently deployed to the environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

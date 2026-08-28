@@ -49,3 +49,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pi
 + [AWS re:Invent 2023 - Advanced integration patterns & trade-offs for loosely coupled systems ](https://www.youtube.com/watch?v=FGKGdUiZKto)
 + [AWS re:Invent 2022 - Delivering sustainable, high-performing architectures ](https://www.youtube.com/watch?v=FBc9hXQfat0)
 + [AWS re:Invent 2022 - Build a cost-, energy-, and resource-efficient compute environment ](https://www.youtube.com/watch?v=8zsC5e1eLCg)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

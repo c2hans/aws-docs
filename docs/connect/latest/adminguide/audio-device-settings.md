@@ -63,3 +63,7 @@ Following are the top tips for resolving issues with audio devices.
 + **Developers**: If you are embedding the CCP into a CRM or custom desktop, you can use either the **Audio device settings** security profile permission or [Connect Customer Streams](https://github.com/aws/amazon-connect-streams) to pass the `enableAudioDeviceSettings` parameter to enable audio device settings upon initialization. If either of those flags is true, the audio device settings user interface is displayed in **Settings** on the CCP.
 
   For granular permission, we recommend using the security profile permission. The Streams flag is supported for backward compatibility.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

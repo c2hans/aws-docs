@@ -200,3 +200,7 @@ You can manually create a service role using [AWS CLI commands](id_roles_create_
 1. Add the permissions that the service requires by attaching permissions policies to the role.
 
 1. Return to the service that requires the permissions and use the documented method to notify the service about the new service role.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

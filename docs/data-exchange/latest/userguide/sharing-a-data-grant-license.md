@@ -25,3 +25,7 @@ The following topics explain how to share licenses across accounts.
 Before you can share licenses, you must complete the following setup tasks:
 + In the AWS Data Exchange console, use the **Data Grant settings** page to enable integration with AWS Organizations.
 + Give AWS Data Exchange permission to read information about accounts in your organization and manage licenses on your behalf so that it can create the associated license grants when you share your licenses. For more information, see [Using service-linked roles for AWS Data Exchange](using-service-linked-roles-adx.md), in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

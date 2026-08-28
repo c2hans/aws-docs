@@ -115,3 +115,7 @@ To determine the number of vCPUs available on your RDS instance, see the vCPU sp
 MySQL assigns a dedicated tablespace to each session that creates a temporary table. This tablespace remains active until the database connection ends. To manage your resources more efficiently:
 + Implement connection pooling to limit the number of active temporary tablespaces.
 + Reuse existing connections instead of creating new ones for each operation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

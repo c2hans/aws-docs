@@ -37,3 +37,7 @@ This path returns Docker stats JSON for the specific Docker container. For more 
 
 `${ECS_CONTAINER_METADATA_URI}/task/stats`
 This path returns Docker stats JSON for all of the containers associated with the task. For more information about each of the returned stats, see [ContainerStats](https://docs.docker.com/reference/api/engine/latest/#tag/Container/operation/ContainerStats) in the Docker API documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

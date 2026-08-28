@@ -127,3 +127,7 @@ View details about updates to AWS managed policies for Service Quotas since this
 | [ServiceQuotasReadOnlyAccess](#security-iam-awsmanpol-POLICYNAME2) – New policy | Added a new AWS managed policy that allows users to view their AWS default quotas, applied quotas, and view current utilization of resources. | May 30, 2024 |
 | [ServiceQuotasServiceRolePolicy](#security-iam-awsmanpol-POLICYNAME3) – New policy | Added a new AWS managed policy that allows Service Quotas to create support cases on your behalf. | May 30, 2024 |
 | Service Quotas started tracking changes | Service Quotas started tracking changes for its AWS managed policies.  | May 30, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Service Quotas. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicequotas` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

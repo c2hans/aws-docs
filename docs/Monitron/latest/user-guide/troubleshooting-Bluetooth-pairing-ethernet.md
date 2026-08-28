@@ -24,3 +24,7 @@ In that case, tell your iOS device to "forget" its Bluetooth connection with the
 1. On the **Bluetooth** screen, choose the information icon next to the name of your Amazon Monitron Gateway.
 
 1. On the next screen, choose **Forget This Device**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ What all this means is that when migrating from a Neo4j causal cluster to Neptun
 + To scale read operations, [add read replica instances](feature-overview-db-clusters.md#feature-overview-read-replicas) or enable [Neptune Serverless](neptune-serverless.md) functionality.
 + To improve availability, distribute the primary instance and read replicas in your cluster over multiple Availability Zones (AZs).
 + To reduce any failover time, provision at least one read replica instance that can serve as a failover target for the primary. You can determine the order in which read replica instances are promoted to primary after a failure by [﻿assigning each replica a priority﻿](manage-console-add-replicas.md). It’s a best practice to ensure that a failover target has an instance class capable of handling your application’s write workload if promoted to primary.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

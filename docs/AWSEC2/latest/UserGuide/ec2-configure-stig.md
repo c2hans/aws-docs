@@ -29,3 +29,7 @@ Amazon EC2 provides the following methods to create STIG hardened instances:
 + [STIG hardening settings for EC2 instances](ec2-stig-settings.md)
 + [STIG hardening script downloads](ec2-stig-downloads.md)
 + [Use AWS Systems Manager to apply STIG settings to your instance](ec2-stig-ssm-cmd-doc.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

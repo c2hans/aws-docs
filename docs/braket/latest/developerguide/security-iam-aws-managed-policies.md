@@ -75,3 +75,7 @@ The following table provides details about updates to AWS managed policies for A
 |  [AmazonBraketFullAccess](#about-amazonbraketfullaccess) - Full access policy for Braket  |  Braket adjusted iam:PassRole permissions for AmazonBraketFullAccess to include the `service-role/` path. | November 29, 2021 |
 |  [AmazonBraketJobsExecutionPolicy](#about-amazonbraketjobsexecution) - Hybrid jobs execution policy for Amazon Braket Hybrid Jobs |  Braket updated the hybrid jobs execution role ARN to include the `service-role/` path. | November 29, 2021 |
 |  Braket started tracking changes |  Braket started tracking changes for its AWS managed policies. | November 29, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

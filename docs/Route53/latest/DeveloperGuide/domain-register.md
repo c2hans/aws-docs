@@ -137,3 +137,7 @@ For some TLDs, the verification email might not include the domain name in the s
 **Important**
 If you create records in a hosted zone other than the one that Route 53 creates automatically, you must update the name servers for the domain to use the name servers for the new hosted zone.
    + **Another DNS service** – Configure your new domain to route DNS queries to the other DNS service. Perform the procedure [Updating name servers to use another registrar](domain-register-other-dns-service.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

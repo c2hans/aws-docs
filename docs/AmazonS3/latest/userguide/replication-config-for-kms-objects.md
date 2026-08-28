@@ -644,3 +644,7 @@ In the replication configuration, you specify the IAM role that Amazon S3 can as
 <a name="replication-ex4-sdk"></a>
 
 For a code example that shows how to add a replication configuration, see [Using the AWS SDKs](replication-walkthrough1.md#replication-ex1-sdk). You must modify the replication configuration appropriately.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

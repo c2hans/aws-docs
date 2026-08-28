@@ -117,3 +117,7 @@ As you prepare for game launch, you'll need to fine-tune your hosting solutions.
   + Deploy new fleets with the new build.
   + Add the new fleets to your game session queue and remove the fleets with the previous build version.
   + When the fleets with the previous build are no longer hosting active game sessions, delete the CloudFormation stacks of those fleets.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

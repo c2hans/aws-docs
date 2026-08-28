@@ -104,3 +104,7 @@ Capacity Reservations have the following possible states.
 | delayed | (Future-dated Capacity Reservations only) Amazon EC2 encountered a delay in provisioning the requested future-dated Capacity Reservation. Amazon EC2 is unable to deliver the requested capacity by the requested start date and time. |
 | unsupported | (Future-dated Capacity Reservations only) Amazon EC2 can't support the future-dated Capacity Reservation request due to capacity constraints. You can view unsupported requests for 30 days. The Capacity Reservation will not be delivered. |
 | cancelling | (Future-dated Capacity Reservations only) The Capacity Reservation is being canceled. Capacity has been released but charges continue through the end of the reduced commitment period. The Capacity Reservation transitions to cancelled when the commitment ends. For more information, see [Cancellation charges](capacity-reservations-release.md#cr-cancellation-charges). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

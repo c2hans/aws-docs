@@ -79,3 +79,7 @@ The following are some of the common use cases that will help you make the best 
 + **Amazon Q doesn't recognize updated information when my thread updates.**
 
   Amazon Q only has access to your email thread right at the point you are viewing it. Similar to a photograph, this is all the information in the email thread is from the point it is viewed. To refresh the snapshot of your thread, go to the latest message in the thread.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

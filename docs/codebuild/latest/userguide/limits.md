@@ -123,3 +123,7 @@ Tag limits apply to tags on CodeBuild build projects and CodeBuild report group 
 | --- | --- |
 | Resource tag key names | Any combination of Unicode letters, numbers, spaces, and allowed characters in UTF-8 between 1 and 127 characters in length. Allowed characters are `+ - = . _ : / @`<br />Tag key names must be unique, and each key can only have one value. A tag key name cannot:+  begin with `aws:` <br />+  consist only of spaces <br />+  end with a space <br />+  contain emojis or any of the following characters: `? ^ * [ \ ~ ! # $ % & * ( ) > < \| " ' ` [ ] { } ;`  |
 | Resource tag values | Any combination of Unicode letters, numbers, spaces, and allowed characters in UTF-8 between 0 and 255 characters in length. Allowed characters are `+ - = . _ : / @`<br />A key can only have one value, but many keys can have the same value. A tag key value cannot contain emojis or any of the following characters:` ? ^ * [ \ ~ ! # $ % & * ( ) > < \| " ' ` [ ] { } ;` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

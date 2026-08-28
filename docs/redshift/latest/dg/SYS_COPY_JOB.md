@@ -24,3 +24,7 @@ SYS\_COPY\_JOB is visible to all users. Superusers can see all rows; regular use
 | job\_text | character(256) | The parameters of the COPY statement. |
 | is\_auto | integer | Indicates whether the COPY JOB is automatically run by Amazon Redshift. A 1 indicates true, 0 indicates false. |
 | on\_error\_suspend | integer | This information is for internal use only.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

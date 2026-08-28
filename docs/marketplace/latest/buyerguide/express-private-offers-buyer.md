@@ -91,3 +91,7 @@ The generated offer appears in your AWS Marketplace private offers page and the 
 In cases where your request doesn't meet the automated criteria, whether due to size, complexity, or other factors, you'll be directed to provide contact information through a sales-assisted workflow. This ensures you receive appropriate support from the seller's sales team for your specific requirements.
 
 Throughout the process, you'll receive standard AWS Marketplace notifications about your offer status, and you can manage all aspects of the offer through your AWS Marketplace console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

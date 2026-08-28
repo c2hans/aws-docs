@@ -110,3 +110,7 @@ Moving accounts between OUs is considered drift, and it must be resolved.
 If your landing zone is in a state of drift, the **Enroll account** feature in AWS Control Tower will not work. In that case, you must provision new accounts through AWS Service Catalog. For instructions, see [Provision accounts in the Service Catalog console, with Account Factory](provision-as-end-user.md).
 
 In particular, if you've made certain changes to your accounts by means of Service Catalog, such as changing the name of your portfolio, the **Enroll account** feature will not work.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

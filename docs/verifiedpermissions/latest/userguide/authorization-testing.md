@@ -60,3 +60,7 @@ You can make changes to policies, schema, and requests in your test environment 
 1. Change policies in ways that affect authorization decisions. For example, modify the policy with the description **Customer Role - Get Order** to remove the condition that the `User` must be the owner of the `Resource` and modify the request so that `Bob` wants to view the order.
 
 1. Change the schema to allow policies to make a more complex decision. Update the request entities so that Alice can satisfy the new requirements. For example, edit the schema to allow `User` to be a member of `ActiveUsers` or `InactiveUsers`. Update the policy so that only active users can view their own orders. Update the request entities so that Alice is an active or inactive user.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

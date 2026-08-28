@@ -26,3 +26,7 @@ The following table shows sample results.
 | 1 | awsdatacatalog | default | cloudtrail\_logs\_test2 | 2020 | 08 | 10 |
 | 2 | awsdatacatalog | default | cloudtrail\_logs\_test2 | 2020 | 08 | 11 |
 | 3 | awsdatacatalog | default | cloudtrail\_logs\_test2 | 2020 | 08 | 12 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

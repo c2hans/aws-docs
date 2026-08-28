@@ -29,3 +29,7 @@ Strong portfolio performance shows that you:
 + Solve obstacles/challenges to ensure migration completion
 
 **Example:** If your completed projects had a combined expected terminal ARR of $10M and you achieved $9.2M in actual map tagged spend, your portfolio success rate is 9.2/10 = 92%, earning you 3 points (High Performance Track).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

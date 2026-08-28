@@ -32,3 +32,7 @@ You must also create an input security group for the input. this input security 
    MediaLive adds the input to the list of inputs and automatically creates two destinations (one primary and one redundant). these destinations include the port 5000. for example, **rtp://198.51.100.10:5000** and **rtp://192.0.2.131:5000**. these are the two locations where the upstream system must push the source.
 
 1. make a note of these two addresses because you will need them in [Step 10: Start the upstream system and the channel](getting-started-step8.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

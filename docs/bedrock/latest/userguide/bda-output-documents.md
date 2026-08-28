@@ -565,3 +565,7 @@ When you receive your additional files from the additional file formats flag, yo
 ```
 
 Corners represent the detected corners of an image, used to form a homography of the document. This homography is used to rotate the image while maintaining its other properties.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

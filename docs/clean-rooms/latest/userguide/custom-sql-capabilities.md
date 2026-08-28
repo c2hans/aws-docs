@@ -43,3 +43,7 @@ The following table lists the supported and unsupported SQL constructs and funct
 |  + FIRST / FIRST\_VALUE functions<br />+ LAST / LAST\_VALUE functions<br />+ NTH\_VALUE function<br />+ CUME\_DIST function<br />+ PERCENT\_RANK function<br />+ NTILE function  | No | — | — |
 | Encryption and decryption functions |  + AES\_ENCRYPT function<br />+ AES\_DECRYPT function  | No | — | — |
 | Hyperloglog functions |  + HLL\_SKETCH\_AGG function<br />+ HLL\_UNION\_AGG function<br />+ HLL\_SKETCH\_ESTIMATE function<br />+ HLL\_UNION function  | No | — | — |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

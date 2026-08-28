@@ -19,3 +19,7 @@ The `Abort` command is supported with:
   + Accelerated computing: DL1 \| G4ad \| G4dn \| G5 \| G5g \| Inf1 \| P3dn \| P4d \| P4de \| VT1
 
 For more information, see section **5.1 Abort command** of the [ NVM Express Base Specification](https://nvmexpress.org/wp-content/uploads/NVM-Express-1_4-2019.06.10-Ratified.pdf).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

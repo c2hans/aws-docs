@@ -20,3 +20,7 @@ This section describes the components and AWS services that make up this solutio
 |  [AWS IAM](https://aws.amazon.com/iam/)  |  **Supporting.** Allows for fine-grained access permissions. |
 |  [AWS Systems Manager](https://aws.amazon.com/systems-manager/)  |  **Supporting.** Provides application-level resource monitoring and visualization of resource operations and cost data. |
 |  [AWS Elemental Link](https://aws.amazon.com/medialive/features/link/)  |  **Optional.** Device to connect a video source on-premises to MediaLive. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Live Streaming on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

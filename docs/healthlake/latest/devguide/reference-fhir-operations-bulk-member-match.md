@@ -692,3 +692,7 @@ Error details are available through the status polling endpoint and include:
 + [`$member-match` operation for HealthLake](reference-fhir-operations-member-match.md) — Individual member matching operation.
 + [FHIR R4 `$davinci-data-export` operation for HealthLake](reference-fhir-operations-davinci-data-export.md) — Bulk data export using Group resources.
 + [FHIR R4 `$operations` for HealthLake](reference-fhir-operations.md) — Complete list of supported operations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

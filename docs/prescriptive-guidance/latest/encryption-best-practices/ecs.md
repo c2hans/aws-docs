@@ -18,3 +18,7 @@ Consider the following encryption best practices for this service:
 + Where technically feasible, for enhanced security, configure [Amazon ECS interface VPC endpoints](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/vpc-endpoints.html) in AWS PrivateLink. Accessing these endpoints over a VPN connection encrypts data in transit.
 + Store sensitive materials, such as API keys or database credentials, securely. You can store these as encrypted parameters in Parameter Store, a capability of AWS Systems Manager. However, we recommend you use AWS Secrets Manager because this service allows you to automatically rotate secrets, generate random secrets, and share secrets across AWS accounts.
 + If users or applications in your data center or an external third party on the web are making direct HTTPS API requests to AWS services, sign those requests with temporary security credentials obtained from AWS Security Token Service (AWS STS).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

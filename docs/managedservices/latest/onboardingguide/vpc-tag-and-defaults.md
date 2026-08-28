@@ -11,3 +11,7 @@ For the most current information on AMS backup, see [Continuity management](http
 
 **Important**
 By default, EC2 stack backups are disabled (Backup = False). You can enable EC2 instance backups at the time of creation by adding a tag `Key: Backup, Value: True` when requesting an EC2 stack through an RFC (CT ct-14027q0sjyt1h). If you want to add the tag after the instance has been created, submit an RFC with the Management \| Advanced stack components \| EC2 instance stack \| Update CT (ct-38s4s4tm4ic4u).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

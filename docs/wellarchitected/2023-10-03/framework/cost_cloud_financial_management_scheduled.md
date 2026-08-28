@@ -34,3 +34,7 @@ AWS is constantly adding new capabilities so you can leverage the latest technol
  **Related examples:**
 +  [Amazon EC2 – 15 Years of Optimizing and Saving Your IT Costs](https://aws.amazon.com/blogs/aws-cost-management/amazon-ec2-15th-years-of-optimizing-and-saving-your-it-costs/)
 + [AWS News Blog - Price Reduction](https://aws.amazon.com/blogs/aws/category/price-reduction/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

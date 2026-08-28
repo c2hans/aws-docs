@@ -59,3 +59,7 @@ The **Allowed and Denied Users and Groups** lists are evaluated before ACLs, and
 After a user has mounted a file share, ACLs then provide more granular protection that controls which specific files or folders the user can access. For more information, see [Activating Windows ACLs on a new SMB file share](https://docs.aws.amazon.com/filegateway/latest/files3/smb-acl.html#enable-acl-new-fileshare).
 
 1. When you finish adding your entries, choose **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

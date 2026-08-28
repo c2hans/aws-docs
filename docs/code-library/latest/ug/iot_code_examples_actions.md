@@ -29,3 +29,7 @@ These excerpts call the AWS IoT API and are code excerpts from larger programs t
 + [`SearchIndex`](iot_example_iot_SearchIndex_section.md)
 + [`UpdateIndexingConfiguration`](iot_example_iot_UpdateIndexingConfiguration_section.md)
 + [`UpdateThing`](iot_example_iot_UpdateThing_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -113,3 +113,7 @@ Record changes to identity roles and permissions and implement alerts when detec
 To enable successful platform operations, establish and routinely review comprehensive metrics. Ensure that they align with organizational goals and stakeholder needs. Track both platform performance and improvement metrics, and combine operational parameters such as patch, backup, and compliance by using team enablement and tool adoption indicators.
 
 Use [CloudWatch cross-account observability](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-Unified-Cross-Account.html) for efficient metric management. This service streamlines data aggregation and visualization to enable informed decisions and targeted enhancements. Use these metrics as indicators of success and drivers of change to foster an environment of continuous improvement.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

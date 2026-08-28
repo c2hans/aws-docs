@@ -43,3 +43,7 @@ When you accept a data grant, you agree that your use of the underlying data set
 + [Access an AWS Data Exchange data set containing Amazon Redshift data sets](data-grant-access-redshift-data-sets.md)
 + [Access an AWS Data Exchange data set containing Amazon S3 data access](data-grant-access-s3-data-sets.md)
 + [Access an AWS Data Exchange data set containing AWS Lake Formation data sets (Preview)](data-grant-access-lake-formation-data-sets.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

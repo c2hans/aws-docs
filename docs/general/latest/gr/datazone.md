@@ -346,3 +346,7 @@ The following are the service endpoints and service quotas for this service.
 | Total EBS volume size in GB across all SageMaker Unified Studio Notebooks | Each supported Region: 500 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/datazone/quotas/L-0BA926FA)  | Total EBS volume size in GB across all SageMaker Unified Studio Notebooks |
 
 For details, see [Quotas for Amazon DataZone](https://docs.aws.amazon.com/datazone/latest/userguide/datazone-limits.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

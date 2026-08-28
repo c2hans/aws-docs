@@ -666,3 +666,7 @@ In this procedure, you create the export task for exporting logs from a log grou
 1. Choose **Export** to export your log data to Amazon S3.
 
 1. To view the status of the log data that you exported to Amazon S3, choose **Actions** and then **View all exports to Amazon S3**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

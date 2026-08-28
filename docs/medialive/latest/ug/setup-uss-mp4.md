@@ -10,3 +10,7 @@ An operator at the upstream server must set up the source content on the upstrea
   + If the MediaLive channel is a standard channel, the operator must set up two file sources. They must make sure that the two files are identical in terms of video resolution and bitrate.
   + If the MediaLive channel is a single-pipeline channel, the operator must set up one file source.
 + They set up to make the content available at the agreed URLs. These URLs are the URLs that you obtained [earlier in this section](setup-mp4-obtain-info.md), and that you configured into the MP4 input. They correspond to the URLs shown in [the diagram after this procedure](setup-result-mp4.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

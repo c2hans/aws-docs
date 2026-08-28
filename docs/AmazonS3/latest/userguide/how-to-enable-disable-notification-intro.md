@@ -92,3 +92,7 @@ When Amazon S3 detects an event of the specific type, it publishes a message wit
 For more information about configuring event notifications, see the following topics:
 + [Walkthrough: Configuring a bucket for notifications (SNS topic or SQS queue)](ways-to-add-notification-config-to-bucket.md).
 + [Configuring event notifications using object key name filtering](notification-how-to-filtering.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

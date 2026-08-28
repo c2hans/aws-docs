@@ -26,3 +26,7 @@ To create a new session, you must select a template already provided by the admi
 The newly created session will appear in the Sessions dashboard. It may take a few minutes to create the session. In that time, you won't be able to connect to or close the session.
 
 ![Sessions dashboard showing three available sessions with names, status, and owner columns.](http://docs.aws.amazon.com/dcv/latest/access-console/images/create-seesion-2.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -8,3 +8,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/salesforce-setup-jwt-bear
 Refer to Salesforce public documentation for enabling server-to-server integration with [OAuth 2.0 JSON Web Tokens](https://help.salesforce.com/s/articleView?id=sf.remoteaccess_oauth_jwt_flow.htm).
 
 Once you have created a JWT and configured the connected app appropriately in Salesforce, you can create a new Salesforce connection with the `JWT_TOKEN` key set in your Secrets Manager Secret. Set the OAuth grant type to **JWT Bearer Token** when creating the connection.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

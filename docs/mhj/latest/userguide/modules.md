@@ -70,3 +70,7 @@ You can change the order in which you want to perform a module relative to other
 1. Choose the radio button next to the name of the module that you want to move out of scope or into scope.
 
 1. Choose **Actions**, then choose the action that you want to perform on the module.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

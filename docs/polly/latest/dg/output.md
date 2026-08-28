@@ -25,3 +25,7 @@ The described word ("had") begins 373 milliseconds after the audio stream begins
 
 **Note**
 This metadata is for the `Joanna` voice-id. If you use another voice with the same input text, the metadata might differ.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Polly. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query polly` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cost-modeling-data-la
 +  **Storage** – These are the costs you pay for storing your raw data as it arrives.
 +  **Data transfer** – These are the costs you pay for moving the data. Costs can be either bandwidth charges, leased line, or offline transfer. It is worth noting the analytics services should be deployed in the same Region to avoid unnecessary inter-Region data transfer. This improves performance and reduces costs.
 +  **Managed service costs** – These are the costs you pay (usually per second or per hour) for the service you are using, if you chose a managed service from AWS (for example, AWS IoT or AWS Transfer for SFTP).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

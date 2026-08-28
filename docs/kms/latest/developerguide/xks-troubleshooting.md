@@ -456,3 +456,7 @@ When the proxy rejects a request due to an authorization failure, the related AW
 | --- |
 | The external key store proxy denied access to the operation. Verify that the user and the external key are both authorized for this operation, and try the request again. |
 + To resolve the error, use your external key manager or external key store proxy tools to determine why authorization failed. Then, update the procedure that caused the unauthorized request or use your external key store proxy tools to update the authorization policy. You cannot resolve this error in AWS KMS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

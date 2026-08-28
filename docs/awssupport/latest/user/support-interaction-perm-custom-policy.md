@@ -47,7 +47,7 @@ You can explicitly allow-list specific actions instead of using wildcards. The f
         "support-console:DeleteCaseDraft",
         "support-console:GetBanner",
         "support-console:DescribeDynamicHelp",
-        "support-console:CreateContact",
+        "support-console:CreateContact"
       ],
       "Resource": "*"
     }
@@ -66,3 +66,7 @@ Your IAM identity needs `iam:PassRole` on the `DevOpsAgentRole-AgentSpace` and `
 
 **Note**
 Using a custom policy requires ongoing maintenance as AWS Support releases new features. For more information about the Support Center Console API operations, see [Adding IAM policies for the Support Center Console API operations](support-console-access-control.md). For more information about each of the Support API operations, see [Manage access to AWS Support Center](accessing-support.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

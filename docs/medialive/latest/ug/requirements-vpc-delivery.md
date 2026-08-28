@@ -15,3 +15,7 @@ The following table shows the actions in IAM that relate to access for populatin
 | --- | --- | --- |
 | View the VPC subnets and VPC security groups on the MediaLive console. | EC2 | DescribeSubnets`DescribeSecurityGroups` |
 | View the Elastic IP addresses on the console. The console finds the Elastic IP addresses that have been allocated for use in your AWS account. | EC2 | DescribeAddresses |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ The walk stage focuses on operationalization. During this stage, your organizati
 The following are the phases in the walk stage:
 + [Operationalize](operationalize.md) – How do you prepare your people, technology, and processes for the cloud?
 + [Mature](mature.md) – How do you measure progress and success?
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

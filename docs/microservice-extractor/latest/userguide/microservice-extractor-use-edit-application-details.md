@@ -16,3 +16,7 @@ To edit the details of an application, perform the following steps.
 1. On the **Edit details** page, you can update the application **Name** and **Description**, the MSbuild path, and the option to **Analyze .NET Core Portability**.
 **Note**
 When you submit the updates, Microservice Extractor performs a new application analysis and refreshes the visualization of the application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

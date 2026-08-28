@@ -24,3 +24,7 @@ With a migration underway, you can track its progress status as well as details 
 1. When the data in the application's detail screen indicates migration has completed, and you've performed testing and verification, change the status from **In progress** to **Completed** from the **Update status** menu.
 
 1. Choose **Confirm**. A green confirmation message appears at the top of the screen, and the status label changes to **Completed**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

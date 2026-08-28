@@ -20,3 +20,7 @@ Contains a summary of the top 3 meetings along with meeting purpose, related cro
 | **calendarEvent** | The important calendar event or meeting that the user should focus on.<br />Calendar Event object:+  `startTime` — The start time of the event. <br />+  `endTime` — The end time of the event. <br />+  `eventUrl` — The URL for the calendar event on the ISV app.  |
 | **resources** | The list containing the other resources related to the generate the insight.<br />Resource object:+  `appName` — The app name to which the resource belongs. <br />+  `resourceTitle` — The resource title. <br />+  `resourceType` — The type of the resource. <br />The possible values are: `EMAIL \| EVENT \| MESSAGE \| TASK` <br />+  `resourceUrl` — The resource URL in the app. <br />+  `appIconUrl` — The image URL of the app to which the resource belongs.  |
 | **nextToken** | The pagination token to fetch the next set of insights. It’s an optional field which if returned null means there are no more insights to load. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

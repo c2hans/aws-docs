@@ -20,3 +20,7 @@ The examples include only the code needed to demonstrate each technique. The [co
 + [Using TransferManager for Amazon S3 Operations](examples-s3-transfermanager.md)
 + [Configuring an Amazon S3 Bucket as a Website](examples-s3-website-configuration.md)
 + [Use Amazon S3 client-side encryption](examples-crypto.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

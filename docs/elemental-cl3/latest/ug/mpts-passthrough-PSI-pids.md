@@ -41,3 +41,7 @@ To include passthrough streams, follow these steps:
 When passing through this type of stream, Elemental Statmux reads the PID of a passthrough table, to ensure that it doesn't conflict with other PIDs. But it treats the contents as a *black box*. Elemental Statmux doesn't perform any validation on the contents.
 
 It is your responsibility to make sure that all the SI/PSI tables are acceptable to the downstream system. It is your responsibility to ensure that the SI/PSI tables correctly reference the program and stream PIDs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

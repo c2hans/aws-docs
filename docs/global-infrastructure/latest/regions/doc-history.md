@@ -45,3 +45,7 @@ The following table describes the documentation releases for Regions and Zones.
 | [US West (N. California)](https://aws.amazon.com/about-aws/whats-new/2009/12/03/aws-launches-the-northern-california-region/) | Launched the US West (N. California) Region (`us-west-1`). | December 3, 2009 |
 | [Europe (Ireland)](https://aws.amazon.com/about-aws/whats-new/2008/12/10/amazon-ec2-crosses-the-atlantic/) | Launched the Europe (Ireland) Region (`eu-west-1`). | December 10, 2008 |
 | [US East (N. Virginia)](#doc-history) | Launched the US East (N. Virginia) Region (`us-east-1`). | August 25, 2006 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-infrastructure` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

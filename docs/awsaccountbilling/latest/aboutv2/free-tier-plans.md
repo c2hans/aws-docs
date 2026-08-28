@@ -36,3 +36,7 @@ Paid account plan also includes access to short-term trials for select AWS servi
 | No charges incur during usage | Pay for charges that exceed the credit balance |
 | Account closes when credits are depleted or when the plan duration ends | Account doesn't close when credits are depleted |
 | Not eligible for other promotional credits and discounts | Eligible for other promotional credits and discounts |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

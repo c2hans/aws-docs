@@ -71,3 +71,7 @@ The following example creates a data repository association that links an Amazon
 Amazon FSx returns the JSON description of the DRA immediately. The DRA is created asynchronously.
 
 You can use this command to create a data repository association even before the file system has finished creating. The request will be queued and the data repository association will be created after the file system is available.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -459,3 +459,7 @@ Unlike with data sets included in data products which are shared on AWS Marketpl
 1. If you're sure that you want to create the data grant and send it to the chosen recipient, choose **Create and send data grant**.
 
 You've now completed the manual portion of creating a data grant. The data grant appears on the **Sent data grants** tab on the **Sent data grants** page, with a status of **Pending acceptance** until the recipient account accepts it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

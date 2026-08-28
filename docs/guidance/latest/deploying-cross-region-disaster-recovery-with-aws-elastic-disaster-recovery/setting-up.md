@@ -63,3 +63,7 @@ Many companies maintain a risk register that tracks and quantifies potential ris
 <a name="setting-up-recovery"></a>
 
 In a cross-Region use case, most customers will want to return to the primary Region once they have confidence that the Region is no longer impaired and is considered stable. The process to return to the primary Region should be scheduled in advance and should be done during a planned maintenance window.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying Cross-Region Disaster Recovery with AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

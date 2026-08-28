@@ -53,3 +53,7 @@ AND product_category = 'Toys'
 ```
 
 For more information about this difference between querying Hive and Iceberg tables, see [How to write queries for timestamp fields that are also time-partitioned](data-types-timestamps.md#data-types-timestamps-how-to-write-queries-for-timestamp-fields-that-are-also-time-partitioned).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

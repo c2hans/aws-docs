@@ -35,3 +35,7 @@ The following table compares the security features supported in Solr and OpenSea
 + OpenSearch provides two methods for creating security assets: through its API or through the OpenSearch Dashboards user interface. Both approaches offer a straightforward implementation for security configuration management.
 
 To create users and roles from OpenSearch Dashboards, see [Defining users and roles](https://docs.opensearch.org/latest/security/access-control/users-roles/) in the OpenSearch documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

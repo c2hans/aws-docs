@@ -94,3 +94,7 @@ AWS Graviton instances provide the following key features:
 + **Performance** – Graviton2 processors, the second generation of AWS Graviton, offer significant improvements in terms of compute performance, memory throughput, and energy efficiency. They're ideal for CPU-intensive and memory-intensive workloads.
 + **Diverse instance types** – Graviton instances come in various families, such as t4g, m7g, c7g, and r7g, covering a range of use cases from general purpose to compute-optimized, memory-optimized, and burstable workloads.
 + **Amazon EKS node groups** – You can configure node groups that are managed by Amazon EKS or self-managed node groups to include Graviton-based instances. With this approach, you can run workloads that are optimized for ARM architecture on the same Kubernetes cluster alongside x86-based instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

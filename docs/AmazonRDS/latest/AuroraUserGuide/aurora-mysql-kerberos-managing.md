@@ -28,3 +28,7 @@ After you create or modify your DB cluster, it becomes a member of the domain. Y
 + `disabling-kerberos` – AWS is in the process of turning off Kerberos authentication on this DB cluster.
 
 A request to turn on Kerberos authentication can fail because of a network connectivity issue or an incorrect IAM role. For example, suppose that you create a DB cluster or modify an existing DB cluster and the attempt to turn on Kerberos authentication fails. In this case, reissue the modify command or modify the newly created DB cluster to join the domain.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

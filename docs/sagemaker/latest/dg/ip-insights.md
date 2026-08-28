@@ -62,3 +62,7 @@ The values for the `mini_batch_size`, `num_ip_encoder_layers`, `random_negative_
 <a name="ip-insights-sample-notebooks"></a>
 
 For a sample notebook that shows how to train the SageMaker AI IP Insights algorithm and perform inferences with it, see [An Introduction to the SageMaker AIIP Insights Algorithm ](https://sagemaker-examples.readthedocs.io/en/latest/introduction_to_amazon_algorithms/ipinsights_login/ipinsights-tutorial.html). For instructions how to create and access Jupyter notebook instances that you can use to run the example in SageMaker AI, see [Amazon SageMaker notebook instances](nbi.md). After creating a notebook instance, choose the **SageMaker AI Examples** tab to see a list of all the SageMaker AI examples. To open a notebook, choose its **Use** tab and choose **Create copy**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

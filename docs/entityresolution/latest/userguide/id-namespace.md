@@ -25,3 +25,7 @@ The following sections describe how to create an ID namespace source and an ID n
 + [Editing an ID namespace](edit-id-namespaces.md)
 + [Deleting an ID namespace](delete-id-namespace.md)
 + [Adding or updating a resource policy for an ID namespace](add-update-resource-policy-id-namespace.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Entity Resolution. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query entityresolution` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

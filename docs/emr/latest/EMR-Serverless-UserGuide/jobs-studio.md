@@ -95,3 +95,7 @@ From the **Job runs** tab on an application’s **Details** page, access job run
 **Cancel job** — To cancel a job run that is in the `RUNNING` state, choose this option. To learn more about job run transitions, refer to [Job run states](job-states.md).
 
 **Clone job** — To clone a previous job run and resubmit it, choose this option.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

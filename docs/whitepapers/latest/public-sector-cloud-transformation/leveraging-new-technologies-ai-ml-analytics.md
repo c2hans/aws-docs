@@ -18,3 +18,7 @@ For example, [Amazon SageMaker AI](https://aws.amazon.com/sagemaker/) is a fully
 Pre-trained AI services provide ready-made intelligence for your applications and workflows to help you improve business outcomes — based on the same technology used to power Amazon’s own businesses. You can build AI-powered applications without any machine learning expertise.
 
 AI services easily integrate with your applications to address common use cases such as personalized recommendations, modernizing your contact center, improving safety and security, and increasing customer engagement. Because AWS uses the same deep learning technology that powers Amazon.com and AWS ML services, you get quality and accuracy from continuously-learning APIs. And best of all, AI services on AWS don't require machine learning experience.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

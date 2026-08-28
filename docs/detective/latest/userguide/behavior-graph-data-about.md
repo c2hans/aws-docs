@@ -23,3 +23,7 @@ Each behavior graph contains data from one or more accounts. When an account ena
 + [Training period for new Detective behavior graphs](detective-data-training-period.md)
 + [Overview of the behavior graph data structure](graph-data-structure-overview.md)
 + [Source data used in a Detective behavior graph](detective-source-data-about.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

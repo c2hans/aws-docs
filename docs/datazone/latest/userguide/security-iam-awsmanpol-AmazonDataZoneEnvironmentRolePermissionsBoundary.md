@@ -17,3 +17,7 @@ The `AmazonDataZoneEnvironmentRolePermissionsBoundary` policy grants read and wr
 Amazon DataZone applies the `AmazonDataZoneEnvironmentRolePermissionsBoundary` AWS managed policy as a permissions boundary for all Amazon DataZone environment roles (owner and contributor). This permissions boundary restricts these roles to only allow access to the required resources and actions necessary for an environment.
 
 To view the permissions for this policy, see [AmazonDataZoneEnvironmentRolePermissionsBoundary](https://docs.aws.amazon.com/aws-managed-policy/latest/reference/AmazonDataZoneEnvironmentRolePermissionsBoundary.html) in the *AWS Managed Policy Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

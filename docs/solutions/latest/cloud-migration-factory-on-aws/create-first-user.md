@@ -72,3 +72,7 @@ If you launched the solution in an AWS Region other than US East (N. Virginia), 
 1. Sign in with your username and temporary password, then create a new password and choose **Change Password**.
 **Note**
 The password must be at least eight characters in length, including upper- and lower-case letters, numbers, and special characters.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

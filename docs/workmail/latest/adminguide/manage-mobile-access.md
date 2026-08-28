@@ -99,3 +99,7 @@ aws workmail {{get-mobile-device-access-effect}} --{{organization-id}} m-{{a123b
 Some mobile devices or clients may not report information for one or more fields, leaving the values empty. Rules can match against these devices by using the special value `$NONE` in a condition. For example, a rule with `DeviceTypes=["iphone", "ipad", "$NONE"]` will match devices that report a device type of `"iphone"` or `"ipad"`, or don't report a device type at all.
 
 Negative conditions such as `NotDeviceTypes` or `NotDeviceUserAgents` won't match these empty values. For example, a rule with `NotDeviceTypes=["android"]` will match devices that report a device type other than `"android"`. However, the rule won't match devices that don't report a device type at all.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

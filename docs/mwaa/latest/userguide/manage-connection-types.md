@@ -73,3 +73,7 @@ Use the following example to apply the HTTP connection template for a *Jdbc* con
 ![This image depicts the HTTP connection type for a Jdbc connection in the Apache Airflow UI.](http://docs.aws.amazon.com/mwaa/latest/userguide/images/airflow-connection-jdbc-v2.0.2.png)
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

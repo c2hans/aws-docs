@@ -199,3 +199,7 @@ Keep the following considerations in mind when using persistent storage:
 + A specific worker isn't guaranteed to receive the same volume it used previously. Any available volume in the same fleet and Availability Zone can be assigned.
 + If persistent storage cannot be provisioned (for example, due to quota limits), the job fails. Workers do not fall back to running without persistent storage.
 + You are billed for persistent storage based on the number of active volumes and their configuration. To control costs during idle periods, configure a TTL or remove the persistent storage configuration from your fleet.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

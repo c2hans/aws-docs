@@ -35,3 +35,7 @@ If you have been using Private Marketplace without Organizations integration or 
 To use the latest features, an administrator in the Organizations management account must create an integration for Private Marketplace. This is a prerequisite to use the AWS Marketplace console for managing Private Marketplace. The website for managing Private Marketplace will be deprecated on March 17, 2026. The integration is also required to use the features for organizational unit (OU) support and user request notifications noted in the following topics:
 [AWS Marketplace now supports managing Private Marketplace catalogs for organizational units](https://aws.amazon.com/about-aws/whats-new/2024/02/aws-marketplace-private-marketplace-catalogs-organizational-units/)
 [AWS Marketplace now supports notifications for Private Marketplace](https://aws.amazon.com/about-aws/whats-new/2024/10/aws-marketplace-notifications-private-marketplace/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

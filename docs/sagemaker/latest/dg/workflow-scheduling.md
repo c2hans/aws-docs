@@ -26,3 +26,7 @@ With Amazon SageMaker AI you can manage your entire ML workflow as you create da
 **SageMaker AI offers the following additional options for scheduling your workflows.**
 + [What is Amazon EventBridge Scheduler?](https://docs.aws.amazon.com/scheduler/latest/UserGuide/what-is-scheduler.html). The scheduling options discussed in this section include pre-built options available in SageMaker Canvas, Studio, and the SageMaker AI Python SDK. All options extend the features of Amazon EventBridge, and you can also create your own custom scheduling solution with EventBridge.
 + [Scheduled and event based executions for Feature Processor pipelines](feature-store-feature-processor-schedule-pipeline.md). With Amazon SageMaker Feature Store Feature Processing, you can configure your Feature Processing pipelines to run on a schedule or as a result of another AWS service event.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

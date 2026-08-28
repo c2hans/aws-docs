@@ -63,3 +63,7 @@ The partner updates their backend system to push events to AWS.
 The partner updates their user experience to enable the AWS customer to list and delete partner event buses associated with a given event generator.
 + Perform any required authentication checks to ensure that the SaaS administrator has appropriate permissions on the event generator, as determined by the partner.
 + Call the [`ListPartnerEventSources`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_ListPartnerEventSources.html) and [`DeletePartnerEventSource`](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_DeletePartnerEventSource.html) APIs, as appropriate, using the partner’s AWS credentials.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

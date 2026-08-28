@@ -35,3 +35,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/userguide/decis
 +  **Balance sensitivity:** Set thresholds that catch meaningful insights without generating excessive noise. Use preview to find the right balance between alert coverage and operational manageability.
 +  **Start simple, then expand:** Begin with a few key metrics and rules for your highest-priority monitoring needs. Once you’re comfortable with the configuration workflow, expand to additional monitoring areas.
 +  **Review and refine regularly:** After activating metrics and rules, monitor the quality and relevance of generated insights on your Planning Intelligence home page. Return to Monitoring Configuration to refine settings based on operational experience.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -547,3 +547,7 @@ The following table explains some potential reasons for certain errors when you 
 | File *filename* listed in Delta Lake manifest *manifest-path* was not found. | A file listed in the manifest wasn't found in Amazon S3.  |
 | Error fetching Delta Lake manifest. | The manifest wasn't found in Amazon S3.  |
 | Invalid S3 Path. | An entry in the manifest file isn't a valid Amazon S3 path, or the manifest file has been corrupted.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

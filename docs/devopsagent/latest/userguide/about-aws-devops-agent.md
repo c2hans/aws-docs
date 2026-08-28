@@ -46,7 +46,7 @@ AWS DevOps Agent continuously learns your environment, building deep understandi
 + **Application resource mapping** – Automatically discovers applications, their component services, and the resources that compose them. Maps these relationships into a dynamic, continuously updated topology.
 + **Continuous learning** – Release reviews get more relevant, investigations get faster, and recommendations more precise as the agent learns your environment over time.
 + **Extend capabilities with agent skills** – Add reusable, modular skills that encode your runbooks, architectural standards, and operational practices so the agent executes tasks consistently and reliably.
-+ **Built-in and custom integrations** – Works with Amazon CloudWatch, Datadog, Dynatrace, New Relic, Splunk, Grafana, GitHub, GitLab, Azure DevOps, ServiceNow, PagerDuty, Slack, and Microsoft Teams. Connect to private or remote MCP servers to extend further into proprietary systems.
++ **Built-in and custom integrations** – Works with Amazon CloudWatch, Datadog, Dynatrace, New Relic, Splunk, Grafana, GitHub, GitLab, Azure DevOps, ServiceNow, PagerDuty, and Slack. Connect to private or remote MCP servers to extend further into proprietary systems.
 + **Access from anywhere** – Operates as a remote server so other applications or agents can invoke release readiness checks, trigger investigations, or query operational health. Supports MCP, ACP, and A2A protocols.
 
 ## How AWS DevOps Agent works
@@ -65,3 +65,7 @@ AWS DevOps Agent automatically builds an application topology that maps your res
 + **Prevent recurring incidents** – Targeted recommendations address root causes and strengthen system resilience across observability, infrastructure, deployments, and application code.
 + **Improve operational efficiency** – Free your team from repetitive investigation and review tasks to focus on higher-value work.
 + **Work within existing workflows** – Integrates with your existing tools and processes without disruption, delivering results where your team already works.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

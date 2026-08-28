@@ -16,3 +16,7 @@ You must acquire a *Letter of Authorization* from SAP to setup a AWS Direct Conn
 When connecting your remote network directly to RISE using AWS Direct Connect, the cost for data transfer out (egress) is included in the RISE subscription. Costs associated to the capacity (the maximum rate that data can be transferred through a network connection) and the port hours (the time that a port is provisioned for your use with AWS or an [AWS Direct Connect Delivery Partners](https://aws.amazon.com/directconnect/partners/)) are not included in the RISE subscription. AWS Direct Connect does not have setup charges, and you may cancel at any time, however, services provided by your [AWS Direct Connect Delivery Partners](https://aws.amazon.com/directconnect/partners/) or other local service provider may have other terms and conditions that apply.
 
 For more information, see: [AWS Direct Connect Pricing](https://aws.amazon.com/directconnect/pricing/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

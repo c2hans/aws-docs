@@ -25,3 +25,7 @@ aws ssm get-parameter --name /aws/service/ec2-macos/{{sonoma}}/{{x86_64_mac}}/la
 ```
 
 For more information, see [Calling AMI public parameters for macOS](https://docs.aws.amazon.com/systems-manager/latest/userguide/parameter-store-public-parameters-ami.html#public-parameters-ami-macos) in the *AWS Systems Manager User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

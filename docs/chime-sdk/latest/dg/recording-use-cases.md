@@ -52,3 +52,7 @@ Your end users use the client application to control the call recording. For exa
 In this use case, the SIP media application records the audio tracks between the caller and SIP media application. Since the `call-id-1` leg is bridged to the `call-id-2` leg, the system records the audio on both legs, caller and called. The recording and the billing start when the `UpdateSipMediaApplicationCall` API invokes the `StartCallRecording` action. The recording and the billing stop when the `UpdateSipMediaApplicationCall` API invokes the `StopCallRecording` action. As a reminder, pausing the recording does not change its duration, and you're billed for all pauses.
 
 ![Diagram of a SIP media application recording on-demand with recording paused and resumed.](http://docs.aws.amazon.com/chime-sdk/latest/dg/images/sma-recording-on-demand.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

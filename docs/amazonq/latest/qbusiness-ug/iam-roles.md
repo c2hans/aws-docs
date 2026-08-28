@@ -24,3 +24,7 @@ The following topics provide details for the required policies. If you create IA
 + [IAM role for Amazon Q Business plugins](plugin-iam-role.md)
 + [IAM roles for custom document enrichment in Amazon Q Business](cde-iam-roles.md)
 + [IAM role for an Amazon Kendra retriever](kendra-retriever-iam-role.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

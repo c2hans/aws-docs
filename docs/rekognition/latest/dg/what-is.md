@@ -94,3 +94,7 @@ If you're a first-time user of Amazon Rekognition, we recommend that you read th
 1. **[Working with stored video analysis operations](video.md)** – This section provides information about using Amazon Rekognition with videos stored in an Amazon S3 bucket.
 
 1. **[Working with streaming video events](streaming-video.md)** – This section provides information about using Amazon Rekognition with streaming videos.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

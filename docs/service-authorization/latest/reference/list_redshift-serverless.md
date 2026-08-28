@@ -857,3 +857,7 @@ Amazon Redshift Serverless defines the following condition keys that can be used
 |   [redshift-serverless:snapshotId](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html)  | Filters access by the snapshot identifier | String |
 |   [redshift-serverless:tableRestoreRequestId](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html)  | Filters access by the table restore request identifier | String |
 |   [redshift-serverless:workgroupId](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html)  | Filters access by the workgroup identifier | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

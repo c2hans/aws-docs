@@ -21,3 +21,7 @@ To maintain the performance of the service and to ensure appropriate usage of Am
 + [Quotas for the bedrock-runtime endpoint](quotas-runtime.md)
 + [Quotas for the bedrock-mantle endpoint](quotas-mantle.md)
 + [Request an increase for Amazon Bedrock quotas](quotas-increase.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ To learn more about using a custom domain, see [Routing Traffic to an AWS Elasti
 **Important**
 If you terminate an environment, you must also delete any CNAME mappings that you created, as other customers can reuse an available hostname. Be sure to delete DNS records that point to your terminated environment to prevent a *dangling DNS entry*. A dangling DNS entry can expose internet traffic destined for your domain to security vulnerabilities. It can also present other risks.
 For more information, see [Protection from dangling delegation records in Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/protection-from-dangling-dns.html) in the *Amazon Route 53 Developer Guide*. You can also learn more about dangling DNS entries in [Enhanced Domain Protections for Amazon CloudFront Requests](https://aws.amazon.com/blogs/security/enhanced-domain-protections-for-amazon-cloudfront-requests/) in the *AWS Security Blog*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

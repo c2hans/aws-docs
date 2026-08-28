@@ -32,3 +32,7 @@ The code that is required if you want to transfer registration of this domain to
 **Name servers**
 The Route 53 servers that respond to DNS queries for this domain. We recommend that you don't delete Route 53 name servers.
 For information about adding, changing, or deleting name servers, see [Adding or changing name servers and glue records for a domain](domain-name-servers-glue-records.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

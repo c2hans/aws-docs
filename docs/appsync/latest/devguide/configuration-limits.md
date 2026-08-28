@@ -120,3 +120,7 @@ To add a resolver count limit, do the following:
 Like the query depth limit, exceeding the configured resolver limit causes the query to end with a `ResolverExecutionLimitReached` error on additional resolvers. In the image below, a query with a resolver count limit of *2* tries to process three resolvers. Because of the limit, the third resolver throws an error and doesn't run.
 
 ![GraphQL query with three resolvers showing error when resolver count limit of two is exceeded.](http://docs.aws.amazon.com/appsync/latest/devguide/images/resolver-count-limit.jpg)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

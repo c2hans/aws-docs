@@ -173,3 +173,7 @@ The output of the script is as follows.
 
   This might happen because your company can block connections to widely used repositories in Python and JavaScript communities. For more information, see [Installation Problems](https://jupyterlab.readthedocs.io/en/stable/getting_started/installation.html#installation-problems) on the JupyterLab website.
 + If you encounter a *connection refused* error when trying to connect to your development endpoint, you might be using a development endpoint that is out of date. Try creating a new development endpoint and reconnecting.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

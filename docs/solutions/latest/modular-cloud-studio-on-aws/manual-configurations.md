@@ -35,3 +35,7 @@ Use this configuration when you have deployed the FSx for Lustre storage module 
 1. Follow the instructions in [Mounting from an Amazon Electic Compute Cloud instance](https://docs.aws.amazon.com/fsx/latest/LustreGuide/mounting-ec2-instance.html) to mount the Amazon FSx for Lustre file system on Linux workstations.
 
 1. If using a data repository, follow [Using data repositories with Amazon FSx for Lustre](https://docs.aws.amazon.com/fsx/latest/LustreGuide/fsx-data-repositories.html) and [POSIX metadata support](https://docs.aws.amazon.com/fsx/latest/LustreGuide/posix-metadata-support.html) to customize access and permissions to the Lustre file system.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Solutions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

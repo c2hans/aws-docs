@@ -42,3 +42,7 @@ As per the [AWS Shared Responsibility Model](https://aws.amazon.com/compliance/s
 To reduce risk, you can do the following:
 +  **Amazon Bedrock Guardrails** : Use Amazon Bedrock Guardrails to check prompts being sent to or from AgentCore Memory. This ensures that only safe and allowed prompts are processed by your agent.
 +  **Adversarial testing** : Actively test your AI application for vulnerabilities by simulating attacks or prompt injections. This helps you find weak points and fix them before real threats occur.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

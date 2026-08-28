@@ -94,3 +94,7 @@ WHERE i.indexrelid = s.indexrelid and idx_scan = 0;
 ```
 
 All of these should not be implemented in a script to decide if indexes should be created or dropped in a production environment. The Oracle automatic indexes will first assess if a new index is needed and if so, it will create an invisible index and only after ensuring nothing is harmed, then the index will become visible. This process can’t be used in PostgreSQL to avoid any production performance issues as PostgreSQL doesn’t allow for indexes be created have them be invisible.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

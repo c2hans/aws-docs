@@ -23,3 +23,7 @@ You can use AWS WAF to inspect only the pseudo headers that are listed in the fo
 | `:authority` | `Host` header  | [Single header](waf-rule-statement-fields-list.md#waf-rule-statement-request-component-single-header) <br />[All headers](waf-rule-statement-fields-list.md#waf-rule-statement-request-component-headers) |
 | `:path` URI path | URI path  | [URI path](waf-rule-statement-fields-list.md#waf-rule-statement-request-component-uri-path) |
 | `:path` query | Query string | [Query string](waf-rule-statement-fields-list.md#waf-rule-statement-request-component-query-string)<br />[Single query parameter](waf-rule-statement-fields-list.md#waf-rule-statement-request-component-single-query-param)<br />[All query parameters](waf-rule-statement-fields-list.md#waf-rule-statement-request-component-all-query-params) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

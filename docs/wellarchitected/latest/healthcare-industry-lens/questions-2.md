@@ -38,3 +38,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
  Quantify the overall user-experience using metrics (like first image display time). Provision cloud services that are appropriate for each component’s performance requirements. For example, high IOPS EBS volumes may increase cost but may not improve user experience if the overall solution performance is limited by network connectivity.
 
  Further, collect data on medical image access frequency and use it to optimize the cost of storage through each image’s lifecycle. As noted above, medical images tend to be accessed frequently when created and then see less access with time. Decrease storage costs by moving images to lower-cost cloud storage tiers as access becomes less frequent.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

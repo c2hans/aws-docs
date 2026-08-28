@@ -222,3 +222,7 @@ When you create a permissions policy to restrict access to a resource, you can c
 ## Next Steps
 <a name="iam_next-steps"></a>
 + Work through the Getting Started Resource Center 30-45 min tutorial on [Setting Up Your AWS Environment](https://aws.amazon.com/getting-started/guides/setup-environment/) to properly set up your AWS account, secure the root user, create an IAM user, and setup AWS CLI and (optionally) Cloud9 environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

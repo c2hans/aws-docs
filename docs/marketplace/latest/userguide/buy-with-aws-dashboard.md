@@ -74,3 +74,7 @@ This section provides summary metrics and trend data for a specified date range.
 <a name="buy-with-aws-procurement-page-trends"></a>
 
 The charts display monthly or weekly trends for the metrics in [section 5](#buy-with-aws-engagements). Use the **Display data by** list to choose between monthly and weekly views.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

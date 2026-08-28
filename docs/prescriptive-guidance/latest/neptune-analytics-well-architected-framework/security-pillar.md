@@ -42,3 +42,7 @@ IAM authentication uses the [AWS Signature Version 4 (SigV4) protocol](https://d
 When you load data into the graph, [batch loading](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/batch-load.html) uses the IAM credentials of the caller. The caller must have permissions to download data from Amazon S3 with the trust relationship set up so that Neptune Analytics can assume the role to load the data into the graph from Amazon S3 files.
 
 [Bulk import](https://docs.aws.amazon.com/neptune-analytics/latest/userguide/bulk-import.html) can be performed either during graph creation (by the infrastructure team) or on an existing, empty graph (by the data engineering team that has permissions to start import tasks). In both cases, Neptune Analytics assumes the IAM role that the caller provides as input. This role gives it permission to read and list the contents of the Amazon S3 folder where input data is staged.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

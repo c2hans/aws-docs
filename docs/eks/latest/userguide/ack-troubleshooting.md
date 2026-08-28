@@ -155,7 +155,7 @@ The Capability Role needs `sts:AssumeRole` and `sts:TagSession` permissions for 
     {
       "Effect": "Allow",
       "Action": ["sts:AssumeRole", "sts:TagSession"],
-      "Resource": [.replaceable]`"arn:aws:iam::444455556666:role/cross-account-ack-role"`
+      "Resource": {{"arn:aws:iam::444455556666:role/cross-account-ack-role"}}
     }
   ]
 }
@@ -169,3 +169,7 @@ For detailed cross-account configuration, see [Configure ACK permissions](ack-pe
 +  [Configure ACK permissions](ack-permissions.md) - Configure IAM permissions and multi-account patterns
 +  [ACK concepts](ack-concepts.md) - Understand ACK concepts and resource lifecycle
 +  [Troubleshooting EKS Capabilities](capabilities-troubleshooting.md) - General capability troubleshooting guidance
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

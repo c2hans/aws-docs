@@ -70,3 +70,7 @@ You can update a hybrid directory in the Directory Service console to modify DNS
    To recover your hybrid directory administrator account, we need temporary access to a user. This access is provided through a secret from Secrets Manager. We use these credentials only once during recovery and don't store them. If your hybrid directory administrator account exists, you don't need to update this secret, even if you updated your self-managed Active Directory administrator user.
 
    1. **Admin credentials secret** – We create a hybrid directory administrator account when we create a hybrid directory. If you deleted this secret, enter your Secrets Manager secret for your self-managed AD administrator user.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

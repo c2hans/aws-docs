@@ -15,3 +15,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
  Use [AWS Identity and Access Management (IAM) Access Analyzer](https://aws.amazon.com/iam/features/analyze-access/) for all AWS accounts that are centrally managed through [AWS Organizations.](https://aws.amazon.com/organizations/) This allows security teams and administrators to uncover unintended access to resources from outside their AWS organization within minutes.
 
  You can proactively address whether any resource policies across any of your accounts violate your security and governance practices by allowing unintended access.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

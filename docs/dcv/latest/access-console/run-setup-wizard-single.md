@@ -56,3 +56,7 @@ Non-interactive mode is the manual setup mode for the Amazon DCV Access Console.
    + `mariadb-username`– A username you would like to use with MariaDB (if you choose MariaDB as your datastore).
    + `mariadb-password`– A password you would like to use the with MariaDB user (if you choose MariaDB as your datastore).
    + `admin-user`– The username of a user to grant administrative privileges for the Access Console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

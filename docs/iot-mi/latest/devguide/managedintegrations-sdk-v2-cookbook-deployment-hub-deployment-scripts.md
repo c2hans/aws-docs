@@ -154,3 +154,7 @@ sudo /usr/local/bin/deploy_iotshd_services_on_hub.sh
 ```
 
 The setup script will create necessary directories, set appropriate permissions, and deploy services automatically. If you're not using SSH/SCP, you must modify `copy_to_hub.sh` for your specific deployment method. Ensure all certificate files and configurations are properly set up before deployment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

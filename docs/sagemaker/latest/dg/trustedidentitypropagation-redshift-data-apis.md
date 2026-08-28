@@ -12,3 +12,7 @@ To connect Studio to Redshift Data API with trusted identity propagation enabled
 +  [Using Redshift Data API with trusted identity propagation](https://docs.aws.amazon.com/redshift/latest/mgmt/data-api-trusted-identity-propagation.html)
   + Ensure your execution role has relevant permissions for Redshift Data API. See [authorizing access](https://docs.aws.amazon.com/redshift/latest/mgmt/data-api-access.html) for more information.
 +  [Simplify access management with Amazon Redshift and AWS Lake Formation for users in an External Identity Provider](https://aws.amazon.com/blogs/big-data/simplify-access-management-with-amazon-redshift-and-aws-lake-formation-for-users-in-an-external-identity-provider/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

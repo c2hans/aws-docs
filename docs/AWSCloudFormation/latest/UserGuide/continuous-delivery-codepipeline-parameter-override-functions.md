@@ -178,3 +178,7 @@ The following related resources can help you as you work with these parameters.
 + For more information about the CloudFormation action parameters in CodePipeline, see the [CloudFormation deploy action configuration reference](https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference-CloudFormation.html) in the *AWS CodePipeline User Guide*.
 + For example template values by action provider, such as for the `Owner` field or the `configuration` fields, see the [Action structure reference](https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference.html) in the *AWS CodePipeline User Guide*.
 + To download example pipeline stack templates in YAML or JSON format, see [Tutorial: Create a pipeline with CloudFormation](https://docs.aws.amazon.com/codepipeline/latest/userguide/tutorials-cloudformation.html) in the *AWS CodePipeline User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

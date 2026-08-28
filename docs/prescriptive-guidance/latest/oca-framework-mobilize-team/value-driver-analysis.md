@@ -86,3 +86,7 @@ To develop a value driver map of your business or initiative, follow these steps
 1. Socialize value maps and cloud strategy with cross-functional leaders and middle management. Middle management typically plays a pivotal role in this activity, because they lead the largest number of employees and have to split their time between strategy and execution.
 
 1. Develop a measurement plan to demonstrate the effects of executing against cloud use cases (leading indicators) on value drivers (lagging indicators).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

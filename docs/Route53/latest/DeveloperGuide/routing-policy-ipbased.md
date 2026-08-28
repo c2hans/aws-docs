@@ -45,3 +45,7 @@ For information about values that you specify when you use the IP-based routing 
 + [Working with CIDR locations and blocks](resource-record-sets-working-with-cidr-locations.md)
 + [Deleting a CIDR collection](resource-record-sets-delete-cidr-collection.md)
 + [Moving geolocation routing to IP-based routing](resource-record-sets-move-geolocation-to-cidr.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

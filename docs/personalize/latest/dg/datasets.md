@@ -63,3 +63,7 @@ The data Amazon Personalize can use from user interactions with actions includes
 + Categorical metadata
 
 You import interactions data into an *Action interactions dataset*. You can't create next best action resources, including Actions and Action Interactions datasets, in a domain dataset group. For more details about Action interactions datasets, see [Action interaction data](action-interactions-datasets.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

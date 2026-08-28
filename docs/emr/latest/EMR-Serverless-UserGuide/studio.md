@@ -36,3 +36,7 @@ With the **Create application** page, create an EMR Serverless application by fo
    For more information about pre-initialized capacity, application limits, and application behavior, refer to [Configuring an application when working with EMR Serverless](application-capacity.md). For more information about network connectivity, refer to [Configuring VPC access for EMR Serverless applications to connect to data](vpc-access.md).
 
 1. To create the application, choose **Create application** .
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -61,3 +61,7 @@ The following table shows examples of serialized JSON request payloads and the c
 | '[{"A": 0, "B": 1}, {"A": 3, "B": 4}]' | Multi-records and key-value pairs. | “$records" | “$features\_kvp" |
 | ‘{"A": 0, "B": 1}' | Single record at a time and key-value pairs. | "$record" | "$features\_kvp" |
 | ‘{"A": 0, "nested": {"B": 1}}' | Alternatively, use the fully verbose record\_template for arbitrary structures. | "$record" | '{"A": "${A}", "nested": {"B": "${B}"}}' |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

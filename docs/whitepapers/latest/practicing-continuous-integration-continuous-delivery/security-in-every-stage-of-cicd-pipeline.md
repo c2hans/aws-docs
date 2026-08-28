@@ -61,3 +61,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/practicing-continuous
 <a name="redbluepurple-teaming"></a>
 
  Red/Blue/Purple teams are security experts with different roles to simulate real-life cyber-attacks. Their aim is to pinpoint system deficits, improve protection mechanisms and processes, and maximize the efficiency of the infrastructure while minimizing the risk. Red teams represent the attackers, blue teams operate as defenders, and purple teams include members from both teams to fulfill a multi-faceted approach and bring various perspectives for security.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

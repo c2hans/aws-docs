@@ -41,3 +41,7 @@ There are a few uncommon DASH players that explicitly require the video segmenta
 1. Consider cost trade-off.
 
    If you don't need to support players produced earlier than approximately 2013, and if you don't need to support the rare DASH players that require .mp4 video segments, you can include a single CMAF output group instead of both DASH ISO and Apple HLS. Creating a single CMAF package instead of separate DASH ISO and Apple HLS packages can also offer cost savings in your video storage and distribution. This is because you must store and distribute only one set of video and audio files.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

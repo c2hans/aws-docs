@@ -84,3 +84,7 @@ To delete a Resolver on Outpost, perform the following procedure.<a name="resolv
 1. Select the check box next to the VPC Resolver that is in operational state and choose **Delete**.
 
 1. In the **Delete VPC Resolver** dialog box, enter **delete** in the text box, and choose **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

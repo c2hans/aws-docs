@@ -108,3 +108,7 @@ The following steps demonstrate how to update an EMR Studio and set up workspace
 1. Enter or choose an AWS KMS to use to encrypt workspace notebooks and files in Amazon S3.
 
 1. Choose **Save Changes**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

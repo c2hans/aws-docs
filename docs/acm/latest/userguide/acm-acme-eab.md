@@ -164,3 +164,7 @@ Invalidate the EAB credentials. This does not affect existing ACME accounts crea
 
 Delete
 Remove the EAB resource entirely. Any ACME accounts already registered with the EAB continue to exist; deleting the EAB only prevents new ACME accounts from being registered with it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

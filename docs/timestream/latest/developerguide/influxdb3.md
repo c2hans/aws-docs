@@ -194,3 +194,7 @@ For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon
  Amazon Timestream for InfluxDB 3 enables you to place resources, such as DB clusters, and data in multiple locations. For Enterprise deployments with multi-node clusters, nodes are distributed across multiple Availability Zones to enhance availability.
 
  For information about AWS Regions where Amazon Timestream for InfluxDB 3 is available and the endpoints for each Region, see [Amazon Timestream endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/timestream.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

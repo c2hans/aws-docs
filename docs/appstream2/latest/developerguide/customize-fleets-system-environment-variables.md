@@ -30,3 +30,7 @@ If the image builder that you want to connect to is joined to an Active Director
    The changes to the system environment variables persist across your fleet instances and are available to streaming sessions launched from those instances.
 **Note**
 Setting AWS CLI credentials as system environment variables might prevent WorkSpaces Applications from creating the image.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,10 +11,10 @@ GitHub integration serves multiple purposes:
 
 **Note**
 This page covers cloud-hosted GitHub (github.com) and cloud-hosted GitHub Enterprise. For self-hosted GitHub Enterprise Server, see [Connect AWS Security Agent to GitHub Enterprise](connect-github-enterprise.md).
-+  **Continuum code review** - Automatically analyze the code changes in each pull request against your organizational security requirements, and run on-demand full-repository scans
-+  **Continuum threat modeling** - Provide application understanding by analyzing source code, data flows, and architecture
-+  **Continuum penetration testing context** - Provide application understanding for penetration testing by analyzing source code
-+  **Continuum automated remediation** - Submit pull requests with fixes for vulnerabilities discovered during security assessments
++  **Continuum for code review** - Automatically analyze the code changes in each pull request against your organizational security requirements, and run on-demand full-repository scans
++  **Continuum for threat modeling** - Provide application understanding by analyzing source code, data flows, and architecture
++  **Continuum for penetration testing context** - Provide application understanding for penetration testing by analyzing source code
++  **Continuum for automated remediation** - Submit pull requests with fixes for vulnerabilities discovered during security assessments
 
 Connecting GitHub to AWS Security Agent requires authorizing the AWS Security Agent GitHub App for your GitHub organization or user account, then registering the connection in the AWS Console.
 
@@ -171,8 +171,12 @@ A GitHub App can only be installed once to a GitHub account or GitHub organizati
 
 After connecting GitHub to AWS Security Agent:
 + Navigate to the Agent Space where you want to use these repositories
-+ Choose **Enable code review** or **Setup penetration testing** to connect specific repositories to your Agent Space and configure their usage (see [Enable Continuum code review](enable-code-review-scan.md) and [Enable Continuum penetration test](enable-penetration-test.md))
-+ Enable **Code review comments** to have AWS Security Agent analyze each pull request and post findings in GitHub (see [Review Continuum code security findings in pull requests](review-code-findings-github.md))
-+ Enable **Code remediation** to allow AWS Security Agent to submit pull requests with vulnerability fixes (see [Enable users to start remediation of Continuum penetration test and code review findings](enable-remediate-findings.md))
-+ Create threat models from connected repositories in the web application (see [Enable Continuum threat modeling](enable-threat-model.md))
++ Choose **Enable code review** or **Setup penetration testing** to connect specific repositories to your Agent Space and configure their usage (see [Enable code review](enable-code-review-scan.md) and [Enable penetration test](enable-penetration-test.md))
++ Enable **Code review comments** to have AWS Security Agent analyze each pull request and post findings in GitHub (see [Review code security findings in pull requests](review-code-findings-github.md))
++ Enable **Code remediation** to allow AWS Security Agent to submit pull requests with vulnerability fixes (see [Enable users to start remediation of penetration test and code review findings](enable-remediate-findings.md))
++ Create threat models from connected repositories in the web application (see [Enable threat modeling](enable-threat-model.md))
 + Review GitHub App permissions and repository access in your GitHub organization settings
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

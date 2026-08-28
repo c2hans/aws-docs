@@ -45,3 +45,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/cos
 +  [Event-driven architecture](https://aws.amazon.com/event-driven-architecture/)
 +  [How Statsig runs 100x more cost-effectively using Amazon ElastiCache (Redis OSS)](https://aws.amazon.com/blogs/database/how-statsig-runs-100x-more-cost-effectively-using-amazon-elasticache-for-redis/)
 +  [Best practices for working with AWS Lambda functions](https://docs.aws.amazon.com/lambda/latest/dg/best-practices.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

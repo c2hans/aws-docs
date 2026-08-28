@@ -65,3 +65,7 @@ For more information, see [https://spark.apache.org/docs/latest/sql-data-sources
 If you encounter this error you will get the following error message: `"Missing partition data: One of the configured tables is partitioned and one or more of the partitions does not have data".`
 
 Compare your data present in Amazon S3 with the partitions listed in the AWS Glue Data Catalog for the table. Delete partitions that don't have corresponding data in S3.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

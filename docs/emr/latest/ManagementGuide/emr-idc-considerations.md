@@ -6,6 +6,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-idc-consi
 <a name="emr-idc-considerations"></a>
 
 Consider the following points when you use IAM Identity Center with Amazon EMR:
++ Runtime role-based access control and Amazon EMR integration with AWS IAM Identity Center (trusted identity propagation) do not support High Availability (HA) clusters.
 + Trusted Identity Propagation through Identity Center is supported on Amazon EMR 6.15.0 and higher, and only with Apache Spark. Also, Trusted Identity Propagation through Identity Center using EMR Runtime Roles feature is supported on Amazon EMR 7.8.0 and higher, and only with Apache Spark.
 + To enable EMR clusters with trusted identity propagation, you must use the AWS CLI to create a security configuration that has trusted identity propagation enabled, and use that security configuration when you launch your cluster. For more information, see [Create an Identity Center enabled security configuration](emr-idc-start.md#emr-idc-start-securityconfig).
 + Fine-grained access controls using AWS Lake Formation that use Trusted Identity Propagation are available for Amazon EMR clusters on EMR version 7.2.0 and higher. Between EMR versions 6.15.0 and 7.1.0, only table-level access control, based on AWS Lake Formation, is available.
@@ -42,3 +43,7 @@ Consider the following points when you use IAM Identity Center with Amazon EMR:
   + `us-west-1` – US West (N. California)
   + `us-west-2` – US West (Oregon)
 + If the IAM Role for identity center role is accidentally deleted and recreated, the principal will have a different principal-id. Example {{NewRole}} would have principal-id {{456}} which would not match the recorded principal-id {{123}}. The only way to resolve this at this point is to re-set the principal in the downstream resource policies in every downstream account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,3 +13,7 @@ In order to complete this task, make sure that the project where you're creating
 1. On the **Data** explorer in the middle of the project page, choose the ellipsis icon to the right of your catalog, and then choose **Create database**.
 
 1. In the **Create database** pop up window, specify the name for the new database and then choose **Create database**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker lakehouse architecture. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-lakehouse-architecture` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

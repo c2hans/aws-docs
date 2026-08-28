@@ -72,3 +72,7 @@ Before you request and register your sender ID you must obtain a Singapore Uniqu
 1. Choose **Submit registration**.
 **Note**
 After your registration has been submitted you need to register the send ID with Singapore Network Information Centre (SGNIC). For more information on how to register, see [Registering a Sender ID with Singapore Network Information Centre (SGNIC)](registrations-sg-sgnic.md). Your registration will be considered complete once we have received signal from SGNIC.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

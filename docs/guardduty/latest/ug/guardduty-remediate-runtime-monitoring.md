@@ -69,3 +69,7 @@ When a GuardDuty finding indicates a task compromise, the image used to launch t
 1. Identify all of the tasks that are using this image.
 
 1. Stop all of the tasks that are using the compromised image. Update their task definitions so that they stop using the compromised image.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

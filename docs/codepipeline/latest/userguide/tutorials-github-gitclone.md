@@ -186,3 +186,7 @@ The initial pipeline run will fail because the CodeBuild service role must be up
    On the details page, choose the **Logs** tab. View the CodeBuild build output. The commands output the value of the entered variable.
 
    The commands output the `README.md` file contents, list the files in the directory, clone the repository, view the log, and archive the repository as a ZIP file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

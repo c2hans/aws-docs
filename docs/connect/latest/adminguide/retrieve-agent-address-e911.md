@@ -52,3 +52,7 @@ The following image shows an example of a [Create task](create-task-block.md) bl
 The following image shows the **Properties** page for a [Create task](create-task-block.md) block. It is configured to notify corporate security that an agent from the contact center has placed an E911 call.
 
 ![The properties page of a create task block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/e911-create-task-config.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

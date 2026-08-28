@@ -65,3 +65,7 @@ After the SMP library transforms a model, it changes the state dictionary (`stat
 For more information about saving checkpoints while using the tensor parallelism feature of SMP v2, see [Checkpointing using SMP](model-parallel-core-features-v2-checkpoints.md).
 
 For more information about fine-tuning a model applying the tensor parallelism feature of SMP v2, see [Fine-tuning](model-parallel-core-features-v2-fine-tuning.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

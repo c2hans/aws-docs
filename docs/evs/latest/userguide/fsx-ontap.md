@@ -23,3 +23,7 @@ The following FSx for NetApp ONTAP functionalities have been validated for use w
 | Guest-mounted iSCSI disks | Present FSx for ONTAP iSCSI LUNs directly to guest virtual machines running on Amazon EVS as in-guest connected storage. |
 | NetApp SnapCenter Plug-in for VMware vSphere (SCV) | Use NetApp SnapCenter Plug-in for VMware vSphere to provide application-consistent backup and restore operations for VMs and datastores running on Amazon EVS. |
 | Deployment using EVS Expansion VLAN | Deploy FSx for ONTAP external datastores using an Amazon EVS Expansion VLAN for dedicated storage network traffic, providing network isolation and improved performance. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

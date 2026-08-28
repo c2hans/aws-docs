@@ -90,3 +90,7 @@ If your Aurora MySQL cluster uses parallel query, you might see an increase in `
 Parallel query I/O costs for your query are metered at the storage layer, and will be the same or larger with parallel query turned on. Your benefit is the improvement in query performance. There are two reasons for potentially higher I/O costs with parallel query:
 + Even if some of the data in a table is in the buffer pool, parallel query requires all data to be scanned at the storage layer, incurring I/O costs.
 + Running a parallel query doesn't warm up the buffer pool. As a result, consecutive runs of the same parallel query incur the full I/O cost.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

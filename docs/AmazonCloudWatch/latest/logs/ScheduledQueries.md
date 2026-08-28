@@ -20,3 +20,7 @@ Scheduled queries support all three query languages available for log queries:
 + [Configuring S3 destinations for scheduled queries](scheduled-queries-s3-destination.md)
 + [Configuring lookup table destinations for scheduled queries](scheduled-queries-lookup-table-destination.md)
 + [Troubleshooting scheduled queries](scheduled-queries-troubleshooting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ For example, when you back up an Amazon EC2 volume, AWS Backup copies its group 
 + When an Amazon EC2 backup creates an image recovery point and a set of snapshots, AWS Backup copies tags to the resulting AMI. If AWS Backup can't copy the tags from the volumes associated with the Amazon EC2 instance to the resulting snapshots, the backup job fails.
 
 If you copy your backup to another AWS Region, AWS Backup copies all tags of the original backup to the destination AWS Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ AWS Managed Services (AMS) Customer Managed mode provides a governance model tha
 + Enablement of custom Service Control Policies.
 
 For example: If you want to run workloads on Ubuntu Pro, which is not an Operating System managed by AMS, you could use a customer managed account for hosting it. You can also consolidate workloads through customer managed accounts, to take advantage of the bulk discount on Reserved Instances/Sharing Plans available through sharing across an AWS organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

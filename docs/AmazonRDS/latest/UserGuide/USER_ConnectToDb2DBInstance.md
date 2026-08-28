@@ -19,3 +19,7 @@ Connecting to a Db2 database can fail if your RDS for Db2 DB instance doesn't ha
 + [Connecting to your Amazon RDS for Db2 DB instance with DBeaver](db2-connecting-with-dbeaver.md)
 + [Connecting to your Amazon RDS for Db2 DB instance with IBM Db2 Data Management Console](db2-connecting-with-ibm-data-management-console.md)
 + [Considerations for security groups with Amazon RDS for Db2](db2-security-groups-considerations.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

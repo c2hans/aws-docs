@@ -18,3 +18,7 @@ It's a best practice to follow the disposability principle and develop a fast st
 <a name="jdk-version"></a>
 
 Before JDK 8u131, the JVM did not recognize memory or CPU limits set by the Docker engine using flags. This means that whenever you run your application in a container, JVM "sees" the total number of processors available on the system, or in the case of virtual machines, the virtual system. The same is true for default memory limits: the JVM will look at the host's overall memory and use that for setting its defaults. Consequently, the JVM can claim more memory than the container platform allows it to, which results in ending the Java process by the container platform (Docker). One solution to this problem is to migrate your Java application to either Java 9 or 8u131\+ before containerizing. Java 10 and later versions have full container awareness and support.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

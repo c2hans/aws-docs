@@ -29,3 +29,7 @@ The provisioning of an end-user system to deliver applications marks the beginni
 + [EUCSEC14-BP02 Encrypt data in transit in your EUC environment](eucsec14-bp02.md)
 + [EUCSEC14-BP03 Limit egress channels available to users to only the required set of channels to perform their role](eucsec14-bp03.md)
 + [EUCSEC15-BP01 Encourage users to store data on long-term storage services](eucsec15-bp01.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

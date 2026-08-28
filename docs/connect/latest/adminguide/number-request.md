@@ -51,3 +51,7 @@ Do not attach any documents that contain personal information. After we review y
 1. The Connect Customer team will review your ticket and get back to you. They will provide a link to our secured storage (Amazon S3) so you can submit the required documents.
 
 After your request is approved, the exact number of requested phone numbers appear in your Connect Customer console for you to claim. You won't have access to all available numbers in that country.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -229,3 +229,7 @@ Amazon Application Recovery Controller - Zonal Shift defines the following condi
 |   [arc-zonal-shift:ResourceIdentifier](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonroute53applicationrecoverycontroller-zonalshift.html#amazonroute53applicationrecoverycontroller-zonalshift-policy-keys)  | Filters access by the resource identifier of the managed resource | String |
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/load-balancer-authentication-access-control.html#elb-condition-keys)  | Filters access by the tags associated with the managed resource | String |
 |   [elasticloadbalancing:ResourceTag/${TagKey}](https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/load-balancer-authentication-access-control.html#elb-condition-keys)  | Filters access by the tags associated with the managed resource | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

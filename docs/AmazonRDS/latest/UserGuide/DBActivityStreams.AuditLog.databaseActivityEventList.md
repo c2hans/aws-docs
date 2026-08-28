@@ -87,3 +87,7 @@ The following are `databaseActivityEventList` fields for Amazon RDS for SQL Serv
 | `substatementId` | integer | `sys.fn_get_audit_file.sequence_number` | An identifier to determine the sequence number for a statement. This identifier helps when large records are split into multiple records. |
 | `transactionId` | integer | `sys.fn_get_audit_file.transaction_id` | An identifier of a transaction. If there aren't any active transactions, the value is zero. |
 | `type` | string | Database activity stream generated | The type of event. The values are `record` or `heartbeat`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

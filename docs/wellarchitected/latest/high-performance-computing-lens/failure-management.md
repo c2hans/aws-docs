@@ -36,3 +36,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/high-performance-
  Create a Data Repository Association (DRA) between Amazon FSx for Lustre and Amazon S3.
 
  When using Amazon FSx for Lustre, create a data repository association (DRA) with an Amazon S3 bucket. Amazon Simple Storage Service (S3) allows users to store data in highly available, cost-effective object storage, with tiering to manage hot through cold data. Amazon S3 improves reliability by serving as a central repository for workload datasets. With a DRA between S3 and FSx for Lustre, by default, data is automatically transferred from Amazon S3 to Amazon FSx for Lustre when it is first accessed. Amazon FSx for Lustre also supports additional ways of [Importing changes from your data repository](https://docs.aws.amazon.com/fsx/latest/LustreGuide/importing-files-dra.html) and [Exporting changes to the data repository](https://docs.aws.amazon.com/fsx/latest/LustreGuide/export-changed-data-meta-dra.html) data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

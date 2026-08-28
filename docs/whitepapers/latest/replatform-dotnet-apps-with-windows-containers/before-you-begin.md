@@ -61,3 +61,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-app
 |  [AWS Toolkit for Azure DevOps](https://aws.amazon.com/vsts/)  |  Extension for Azure DevOps to deploy applications on AWS  |
 |  [AWS CLI](https://aws.amazon.com/cli/)  |  Unified tool to manage your AWS services  |
 |  [AWS Copilot CLI](https://aws.amazon.com/containers/copilot/)  |  Simple declarative set of commands to deploy containers  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

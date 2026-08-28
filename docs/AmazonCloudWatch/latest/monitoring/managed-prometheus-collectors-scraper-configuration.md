@@ -77,3 +77,7 @@ If your scraper is not collecting metrics as expected, check the following:
 + Make sure your targets respond on the configured `metrics_path` with valid Prometheus exposition format.
 
 For additional troubleshooting guidance, see [Troubleshooting managed collectors](https://docs.aws.amazon.com/prometheus/latest/userguide/AMP-troubleshooting.html) in the *Amazon Managed Service for Prometheus User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

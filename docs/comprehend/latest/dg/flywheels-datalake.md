@@ -61,3 +61,7 @@ Amazon Comprehend performs all the data creation and update operations for the d
 + Always use the Amazon Comprehend creation and update operations to add or modify data in the data lake. For example, use `CreateDataset` to provide training or test data and `StartFlywheelIteration` to generate evaluation data for model versions.
 + The data lake structure may evolve over time. Don't create downstream scripts or programs that rely explicitly on the data lake structure.
 + When you provide a data lake location for the flywheel, we recommend creating a common prefix for data related to all flywheels or using a different prefix for each flywheel. We don't recommend using the complete data lake path of one flywheel as the prefix for another flywheel.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

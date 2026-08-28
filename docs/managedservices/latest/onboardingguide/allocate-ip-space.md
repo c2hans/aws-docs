@@ -28,3 +28,7 @@ AWS accepts connectivity to the AMS environment via native AWS virtual private n
 
 **Note**
 AMS recommends redundant private VPN to DX connections. Your customer service delivery manager (CSDM) will assist in setting this up at the time of onboarding your account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

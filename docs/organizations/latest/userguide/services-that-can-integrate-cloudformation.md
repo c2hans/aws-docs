@@ -109,3 +109,7 @@ You can use the following AWS CLI commands or API operations to disable trusted 
 When you designate a member account as a delegated administrator for the organization, users and roles from that account can perform administrative actions for CloudFormation Stacksets that otherwise can be performed only by users or roles in the organization's management account. This helps you to separate management of the organization from management of CloudFormation Stacksets.
 
 For instructions on how to designate a member account as a delegated administrator of CloudFormation Stacksets in the organization, see [Register a delegated administrator](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-orgs-delegated-admin.html) in the *AWS CloudFormation User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

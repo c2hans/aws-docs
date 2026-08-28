@@ -40,3 +40,7 @@ Projects do not provide strong security isolation. To limit cross-domain and cro
 1. On the **Create project profile** page, in the **Project profile readiness** section, specify whether you want to enable this project profile on creation. Unless you check the **Enable project profile on creation** checkbox, your project profile is disabled and not available to use for Amazon SageMaker Unified Studio projects after its creation. Leaving a project profile in a disabled state upon creation gives you the opportunity to customize your blueprints before making the project profile available.
 
 1. Choose **Create project profile**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

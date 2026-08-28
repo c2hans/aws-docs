@@ -34,3 +34,7 @@ In OT or IIoT environments, consider partitioning the system under consideration
 When you build your environment in the AWS Cloud, use foundational services such as Amazon Virtual Private Cloud (Amazon VPC), VPC security groups, and network access control lists (network ACLs) to implement micro-segmentation. We recommend that you use multiple AWS accounts to help isolate IoT, IIoT, and OT applications, data, and business processes across your environment, and use AWS Organizations for better manageability and centralized insight.
 
 For more information, see the [Security Pillar – AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/welcome.html) and the AWS whitepaper [Organizing your AWS environment using multiple accounts.](https://docs.aws.amazon.com/whitepapers/latest/organizing-your-aws-environment/benefits-of-using-multiple-aws-accounts.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

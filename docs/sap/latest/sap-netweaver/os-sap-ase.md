@@ -22,3 +22,7 @@ If you plan to use Bring Your Own Subscription (BYOS) images provided by SUSE, e
 RHEL for SAP with High Availability and Update Services provides access to Red Hat Pacemaker cluster software for High Availability, extended update support, and the libraries that are required to run SAP HANA. For details, see [Red Hat Enterprise Linux for SAP offerings on Amazon Web Services FAQ](https://access.redhat.com/articles/3671571) in the Red Hat Knowledgebase.
 
 If you plan to use the BYOS model with RHEL, either through the Red Hat Cloud Access program or other means, ensure that you have access to a RHEL for SAP Solutions subscription. For details, see [Red Hat Enterprise Linux for SAP Solutions](https://docs.redhat.com/en/documentation/red_hat_enterprise_linux_for_sap_solutions) in the Red Hat documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -106,3 +106,7 @@ The number of times that recipients clicked links in transactional messages:
 + Total – The total number of clicks that occurred during the selected time period.
 + Change over period – The percentage of change between the number of clicks that occurred on the first and last days of the selected time period. If this value is an em dash (—), no clicks occurred on the first day of the time period. Amazon Pinpoint can't calculate the percentage of change if the value is zero (`0`) for the first day of the time period.
 If a message recipient clicks multiple links in a message or clicks the same link more than once, those clicks will be counted as one click if they occur within the same hour. Multiple clicks taking place at different hours will be counted as separate clicks. For example, if a link is clicked at 8:30 AM and 8:45 AM, it will count as one click but if the link is clicked at 8:30 AM and 9:05 AM, it will count as two clicks because the hour has changed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -411,3 +411,7 @@ After you're done with your sample game, shut down the server in Unity.
 1. In the game client, choose **Quit** or close the window to stop the game client.
 
 1. In Unity, in the **Local Testing** window, choose **Stop** or close the game server windows to stop the server.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

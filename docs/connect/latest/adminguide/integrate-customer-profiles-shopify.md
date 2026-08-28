@@ -201,3 +201,7 @@ After your connection is established, if it stops working, delete the integratio
 If an object fails to be sent, choose **Flow details** to learn more about what's gone wrong.
 
 You might need to delete the configuration and re-connect to the external application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

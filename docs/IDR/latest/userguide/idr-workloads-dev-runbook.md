@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/IDR/latest/userguide/idr-workloads-dev-r
 # Develop runbooks and response plans for responding to an incident in Incident Detection and Response
 <a name="idr-workloads-dev-runbook"></a>
 
-AWS Incident Detection and Response uses information captured from your IDR CLI onboarding to develop runbooks for the management of incidents affecting your workloads. Runbooks document steps Incident Managers take when responding to an incident. A response plan is mapped to at least one of your workloads. The incident management team creates these templates from the information provided by you during [workload onboarding](getting-started-idr.md#workload-onboarding).
+AWS Incident Detection and Response uses information captured during your workload onboarding to develop runbooks for the management of incidents affecting your workloads. Runbooks document steps Incident Managers take when responding to an incident. A response plan is mapped to at least one of your workloads. The incident management team creates these templates from the information provided by you during [workload onboarding](getting-started-idr.md#workload-onboarding).
 
 **Key outputs:**
 + Completion of your workload definition on AWS Incident Detection and Response.
@@ -160,3 +160,7 @@ This section provides an overview of the application/workload architecture for I
       + etc.
   + another-account
     + etc.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

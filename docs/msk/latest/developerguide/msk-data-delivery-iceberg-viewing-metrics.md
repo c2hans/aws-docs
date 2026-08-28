@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/msk/latest/developerguide/msk-data-deliv
 1. Choose a Channel to view its metrics dashboard.
 
 Alternatively, in the Amazon CloudWatch console, choose **Metrics**, then **All metrics**, choose the `AWS/Kafka` namespace, and filter by the `ChannelName` dimension.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

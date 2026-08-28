@@ -52,3 +52,7 @@ These are independent packages that perform the core functionality of collective
 The process group backends, specifically ProcessGroupNCCL and ProcessGroupGloo, implement the ProcessGroup APIs by invoking the APIs of their corresponding underlying libraries. Since we extend the third-party libraries' APIs, we have to invoke them properly and make code path switches based on customers' configurations.
 
 In addition to optimization code paths, we also change the process group backend to support in-process recovery.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -71,3 +71,7 @@ The new machine class will take effect at the next measurement interval and impa
 1. From the **Edit machine class** menu choose the new machine class you want to assign to the sensor and then select **Save changes**.
 **Note**
 The new machine class will take effect at the next measurement interval. The single-axis chart threshold will be updated.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,3 +55,7 @@ AWS Elemental MediaLive provides the following APIs for data retrieval.
 | <a name="medialive-ListSignalMaps"></a>[ListSignalMaps](https://docs.aws.amazon.com/medialive/latest/ug/monitor-with-workflow-monitor-configure-signal-maps-view.html) | List signal maps | List |
 | <a name="medialive-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/medialive/latest/ug/tagging.html) | List tags for channels, inputs, input security groups, multiplexes, reservations, nodes, clusters, networks, channel placement groups, SDI sources, signal maps, template groups, and templates | List |
 | <a name="medialive-ListVersions"></a>[ListVersions](https://docs.aws.amazon.com/medialive/latest/ug/medialive-versions.html) | List available versions of MediaLive | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

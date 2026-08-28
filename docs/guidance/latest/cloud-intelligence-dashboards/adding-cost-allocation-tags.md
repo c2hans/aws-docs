@@ -253,3 +253,7 @@ The CUDOS dashboard has a sheet titled **TAGsplorer** which has visuals that are
 <a name="summary"></a>
 
 We’ve shown you how you can customize your datasets, views and dashboards to have AWS and user tags that are enabled in Cost Explorer in your visualizations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

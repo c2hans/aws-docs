@@ -22,3 +22,7 @@ Choose tag-based rules only if you are using embedded dashboards and want to sec
 **Topics**
 + [Using row-level security with user-based rules to restrict access to a dataset](restrict-access-to-a-data-set-using-row-level-security.md)
 + [Using row-level security with tag-based rules to restrict access to a dataset when embedding dashboards for anonymous users](quicksight-dev-rls-tags.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

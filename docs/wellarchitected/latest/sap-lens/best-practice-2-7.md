@@ -15,3 +15,7 @@ Automate build, deployment, and testing of the workload. This reduces errors cau
 +  AWS Marketplace: [Products and Tools for DevOps](https://aws.amazon.com/marketplace/search/results?page=1&searchTerms=sap&category=45c68cc2-ccd6-426b-94bd-92a791004dc2)
 +  AWS Marketplace: [Products and Tools for Testing](https://aws.amazon.com/marketplace/search/results?searchTerms=SAP+Testing&category=b1cf3403-729a-4df1-908d-51105b3574a3)
 +  SAP on AWS Blog: [AWS DevOps tools for SAP, Part 1: Cloud Foundry](https://aws.amazon.com/blogs/awsforsap/aws-devops-tools-for-sap-part-1-cloud-foundry-apps/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -188,3 +188,7 @@ If you are currently leveraging an OIDC provider for Terraform in the AFT manage
 
 **Note**
  You're responsible for protecting the Terraform state file. Some input variables might contain sensitive values, such as a private `ssh` key or Terraform token. Depending on your deployment method, these values can be viewable as plain text in the Terraform state file. For more information, see [Sensitive data in State](https://www.terraform.io/docs/language/state/sensitive-data.html) on the HashiCorp website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

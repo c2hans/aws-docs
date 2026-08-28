@@ -65,3 +65,7 @@ This error occurs when a stream exceeds the maximum allowed session duration. Th
 
 **Number of concurrent streams increased too quickly**
 This is a rare cause. It can occur if you increase your number of concurrent streams too quickly, for example during load tests. This is a system-level protection mechanism with no adjustable quota. To resolve this error, retry with exponential backoff and gradually increase your number of concurrent streams. For more information about retry strategies, see [Retry behavior](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html) in the *AWS SDKs and Tools Reference Guide*. You can also visit [AWS re:Post](https://repost.aws/) or contact [AWS Premium Support](https://aws.amazon.com/premiumsupport/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

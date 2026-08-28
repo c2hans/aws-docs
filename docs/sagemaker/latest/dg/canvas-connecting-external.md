@@ -295,3 +295,7 @@ Before you can import data from a SaaS platform, your administrator must authent
 If you’re an administrator getting started with Amazon AppFlow for the first time, see [Getting started](https://docs.aws.amazon.com/appflow/latest/userguide/getting-started.html) in the *Amazon AppFlow User Guide*.
 
 To import data from a SaaS platform, you can follow the standard [Import tabular data](canvas-import-dataset.md#canvas-import-dataset-tabular) procedure, which shows you how to import tabular datasets into Canvas.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

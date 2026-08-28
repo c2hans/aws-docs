@@ -21,3 +21,7 @@ This section explains how to perform common scenarios using the Voice ID APIs.
 + [Create and edit a fraudster watchlist in Connect Customer Voice ID](voiceid-fraudster-watchlist.md)
 + [File schema for Fraudster Registration Job](fraudster-registration-schema.md)
 + [Connect Customer Streams APIs to integrate Voice ID](voiceid-streams-apis.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

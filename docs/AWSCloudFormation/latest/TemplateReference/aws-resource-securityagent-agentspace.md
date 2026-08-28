@@ -139,3 +139,7 @@ The date and time when the agent space was created, in ISO 8601 format. For exam
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The date and time when the agent space was last updated, in ISO 8601 format. For example: `2024-01-01T00:00:00Z`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,3 +47,7 @@ After **Automated instance configuration** is complete, you are able to:
 + Create incidents and service requests for Amazon EC2 instances and operating systems using the Support Center Console. For more information, see [Incident reports, service requests, and billing questions in AMS Accelerate](acc-supp-ex.md).
 + Access and audit Amazon EC2 logs
 + Obtain patch reports
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

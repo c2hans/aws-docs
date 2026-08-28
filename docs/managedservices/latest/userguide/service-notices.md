@@ -10,3 +10,7 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 AMS sends outbound service requests, or service notifications, when you need to act on, or be aware of, something that might impact your account or resources, including:
 + Infrastructure impact: AMS sends a service notification when there is an underlying AWS service impacting your infrastructure, and you need to take action before a certain date, or you may have an outage.
 + EC2 Hardware issues: AMS sends service notifications out for EC2 hardware issues that require you to reboot an EC2 instance before a certain date, or letting you know that AMS will reboot the instance for you. This is an important notice because reboot can cause an outage and you must respond with an acceptable date, or create an RFC with ct-09qbhy7kvtxqw, to reboot the instance yourself. A service notification like this automatically closes in five days if you do not respond.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

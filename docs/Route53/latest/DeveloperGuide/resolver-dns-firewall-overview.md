@@ -107,3 +107,7 @@ To implement Resolver DNS Firewall filtering in your Amazon Virtual Private Clou
 Resolver DNS Firewall is a Regional service, so objects that you create in one AWS Region are available only in that Region. To use the same rule group in more than one Region, you must create it in each Region.
 
 The AWS account that created a rule group can share it with other AWS accounts. For more information, see [Sharing Resolver DNS Firewall rule groups between AWS accounts](resolver-dns-firewall-rule-group-sharing.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

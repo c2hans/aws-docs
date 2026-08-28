@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/transforms-dropnull-field
 1.  Choose the data type in the drop-down field. Data types can either be String or Integer.
 **Note**
  Custom null values and their data types must match exactly in order for the fields to be recognized as null values and the fields removed. Partial matches where only the custom null value matches but the data type does not will not result in the fields being removed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

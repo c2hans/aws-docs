@@ -1011,3 +1011,7 @@ Records are split into manageable batches to avoid overwhelming memory or downst
 + Review [best practices](durable-best-practices.md) for writing deterministic code and optimizing performance
 + Learn about [testing durable functions](durable-testing.md) locally and in the cloud
 + Compare durable functions with Step Functions to understand when each approach is most effective. See [Durable functions or Step Functions](durable-step-functions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

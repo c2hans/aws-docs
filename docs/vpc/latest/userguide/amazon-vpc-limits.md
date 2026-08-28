@@ -140,3 +140,7 @@ For more information, see the following:
 + [Site-to-Site VPN quotas](https://docs.aws.amazon.com/vpn/latest/s2svpn/vpn-limits.html) in the *AWS Site-to-Site VPN User Guide*
 + [Traffic Mirroring quotas](https://docs.aws.amazon.com/vpc/latest/mirroring/traffic-mirroring-quotas.html) in the *Amazon VPC Traffic Mirroring Guide*
 + [Transit gateway quotas](https://docs.aws.amazon.com/vpc/latest/tgw/transit-gateway-quotas.html) in the *Amazon VPC Transit Gateways Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

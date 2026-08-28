@@ -28,3 +28,7 @@ Any large technological adoption agenda is a long journey, especially when adopt
 +  **Scale:** This phase focuses on scaling pilots in production to achieve broad, sustained value. Scaling here can mean not only the technical capabilities of solutions or initiatives, but also the reach of them through the business and towards your customers. This activity translates your activities into customer value.
 
 While you iterate through these cycles, recognize the limits of what you can achieve in a single cycle. It is important to be ambitious and aim high, but trying to do everything in the same cycle can lead to discouragement in the organization. This is why pairing a larger picture with many pragmatic and actionable steps and measurable KPIs on these smaller steps is crucial. Every step then brings the organization closer to its goal. Do not try to do everything at once. Rather, evolve the foundational capabilities and improve your AI readiness as you progress through your AI transformation journey.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ Both tools come by default on Amazon Linux 2 and Amazon Linux 2023. These tools 
   ```
 
    Validate that the MD5 hash listed here is the same as the MD5 hash in the section of the table above that corresponds to your instance's Linux OS version. After you validate both hashes against the table in the AWS documentation, you can be confident that the RPM you downloaded and installed is the safe, uncompromised version vended by AWS Ground Station.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

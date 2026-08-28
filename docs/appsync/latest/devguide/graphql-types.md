@@ -459,3 +459,7 @@ When calling the `trafficLights` enum, the argument(s) can only be `solidRed`, `
 <a name="union-interface-components"></a>
 
 See [Interfaces and unions](https://docs.aws.amazon.com/appsync/latest/devguide/interfaces-and-unions.html) in GraphQL.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

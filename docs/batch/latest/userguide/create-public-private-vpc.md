@@ -33,3 +33,7 @@ After you have created your VPC, consider the following next steps:
 + Create an AWS Batch job queue that's mapped to your new compute environment. For more information, see [Create a job queue](create-job-queue.md).
 + Create a job definition to run your jobs with. For more information, see [Create a single-node job definition](create-job-definition.md).
 + Submit a job with your job definition to your new job queue. This job lands in the compute environment that you created with your new VPC and subnets. For more information, see [Tutorial: submit a job](submit_job.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

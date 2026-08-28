@@ -158,3 +158,7 @@ Metric data points are collected by each session once per minute and published t
 | SessionLoggerEventDelivered | The number of events each delivered Session Logger file has. | [PortalId] | Average, Sum, Maximum, Minimum | Count |
 | SessionLoggerTargetNotFoundError | The number of log file deliveries that resulted in bucket not found. | [PortalId] | Average, Sum, Maximum, Minimum | Count |
 | SessionLoggerAccessDeniedError | The number of log file deliveries that resulted in permissions denied. | [PortalId] | Average, Sum, Maximum, Minimum | Count |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

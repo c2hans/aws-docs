@@ -80,3 +80,7 @@ The following is an example of a policy that restricts source traffic to a speci
 ```
 
  For an example policy using the `aws:ViaAWSService` global condition key, see [VPC endpoint policies and Amazon Keyspaces point-in-time recovery (PITR)](vpc-endpoints.md#VPC_PITR_restore).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

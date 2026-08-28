@@ -99,3 +99,7 @@ To ensure extra security, customers use this recovery account to carry out prote
 A team consists of **approvers** (effectively, the *parties* portion of Multi-party approval) who receive email notifications of protected operation requests. These emails confirm that an approval session has begun for the request. Approval is granted once the required minimum threshold of approval is reached. This threshold can be set as the **multi-party approval team** (“Team”) is created.
 
 Multi-party approval teams are managed through the Organizations **multi-party approval portal** (“portal”), an AWS managed application that provides identities a centralized location where approval team members can receive and respond to approval team invitations and operation requests.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -140,3 +140,7 @@ Testing your VMware HA configuration reboots your gateway VM and interrupts conn
 1. Choose **Exit**.
 
 You can find information about VMware HA events in the Amazon CloudWatch log groups. For more information, see [Getting Tape Gateway Health Logs with CloudWatch Log Groups](https://docs.aws.amazon.com/storagegateway/latest/tgw/GatewayMetrics-vtl-common.html#cw-log-groups-tape).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

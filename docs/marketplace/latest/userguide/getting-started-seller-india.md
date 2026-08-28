@@ -183,3 +183,7 @@ After you complete the preliminary steps, create the Channel Partner Private Off
 
 **Note**
 Sellers in India and DSORs can only send resale authorizations to channel partners in India. If you issue a resale authorization to a channel partner based outside India, the resale authorization fails. Your channel partner can only create CPPO in the same currency and can extend CPPOs to buyers in India only.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

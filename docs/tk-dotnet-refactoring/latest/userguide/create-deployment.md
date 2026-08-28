@@ -40,3 +40,7 @@ Complete the following steps to run a test deployment on AWS with Toolkit for .N
 1. Click **Test on AWS** to start the test deployment.
 
 To view the status of the deployment, open the **Extensions** menu in Visual Studio and select **AWS Toolkit for .NET Refactoring**, **View Deployments Running on AWS**. When the deployment is complete there will be a status update at the top of the Visual Studio window.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

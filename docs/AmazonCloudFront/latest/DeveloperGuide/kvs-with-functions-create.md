@@ -113,3 +113,7 @@ When you create a key value store, the data store can have the following status 
 | **Provisioning** | The key value store was created and CloudFront is processing the data source that you specified. |
 | **Ready** | The key value store was created and CloudFront successfully processed the data source that you specified. |
 | **Import failed** | CloudFront wasn't able to process the data source that you specified. This status can appear if your file format isn't valid or that it exceeds the size limit. For more information, see [File format for key-value pairs](kvs-with-functions-create-s3-kvp.md). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

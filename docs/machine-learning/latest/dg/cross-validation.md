@@ -81,3 +81,7 @@ For sample code that shows how to create a cross-validation and average the mode
 <a name="adjusting-models"></a>
 
 After you have cross-validated the models, you can adjust the settings for the next model if your model does not perform to your standards. For more information about overfitting, see [Model Fit: Underfitting vs. Overfitting](model-fit-underfitting-vs-overfitting.md). For more information about regularization, see [Regularization](training-parameters1.md#regularization). For more information on changing the regularization settings, see [Creating an ML Model with Custom Options](creating-ml-model-on-the-amazon-ml-console.md#creating-ml-model-using-custom-settings).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

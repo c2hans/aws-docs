@@ -71,3 +71,7 @@ $ aws verifiedpermissions is-authorized \
 ------
 
 However, there is a risk that the policy store alias might be deleted. In that case, the application's attempts to use the policy store alias name will fail, and you might need to recreate or update the policy store alias. To mitigate this risk, be cautious about giving principals permission to manage the policy store aliases that you use in your application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

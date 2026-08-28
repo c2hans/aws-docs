@@ -42,3 +42,7 @@ Choose **Update data sets** to manage any metadata around data sets including da
 If your offer is in a draft state, edit the offer by choosing the **Resume offer creation** action button at the top of the table.
 
 1. Choose **Edit** from the action buttons on the table and follow the instructions to update your offer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

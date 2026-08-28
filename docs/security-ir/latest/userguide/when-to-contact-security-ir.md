@@ -15,3 +15,7 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/when-to-con
 | **Onboarding Issues** | You are experiencing technical issues during the onboarding process for AWS Security Incident Response | Varies by support plan | [AWS Support case](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html#creating-a-support-case) |
 
  For all AWS-supported cases (Active Security Incident and Investigations and Inquiries), AWS Security Incident Response engineers will respond within 15 minutes for the first response. This response time applies only to the initial contact and does not apply to subsequent responses.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

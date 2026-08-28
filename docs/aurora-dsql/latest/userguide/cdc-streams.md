@@ -95,3 +95,7 @@ After CDC records arrive in your Kinesis data stream, you can process them direc
 | Self-managed consumers | Run Apache Kafka Connect with the Kinesis source connector, Apache Flink, or other stream processing frameworks to transform and route records. For Apache Flink on AWS, see [Configuring app input](https://docs.aws.amazon.com/managed-flink/latest/java/how-it-works-input.html) in the Amazon Managed Service for Apache Flink Developer Guide. |
 
 Each CDC record includes fields such as `source.schema`, `source.table`, and `op` that you can use to route and filter records in your processing logic. For the full record schema, see [Understanding CDC records](cdc-record-format.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

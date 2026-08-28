@@ -30,3 +30,7 @@ The following example illustrates how you can set up some common demand drivers 
 ![Demand drivers example](http://docs.aws.amazon.com/connect-decisions/legacy/userguide/images/demand_drivers_example2.png)
 
 When you provide leading indicators, Demand Planning highly recommends that you adjust the time series date. For example, say that a particular metric serves as a 20-day leading indicator with a 70% conversion rate. In this case, consider shifting the date in the time series by 20 days and then applying the appropriate conversion factor. While the learning model can learn patterns without such adjustments, aligning leading indicator data with corresponding outcome is more effective in pattern recognition. The magnitude of the value plays a significant role in this process, enhancing the model's ability to learn and interpret patterns accurately.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

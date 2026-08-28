@@ -39,3 +39,7 @@ arn:aws:codeguru-profiler:us-east-2:123456789012:profilingGroup/my*
 | PutPermission | `codeguru-profiler:PutPermission`<br />Required to update the list of principals for an action group in the resource policy of a profiling group. | `arn:aws:codeguru-profiler:{{region-ID}}:{{account-ID}}:profilingGroup/{{profiling-group-name}}` |
 | RemovePermission | `codeguru-profiler:RemovePermission`<br />Required to remove the permission of an action group from the resource policy of a profiling group. | `arn:aws:codeguru-profiler:{{region-ID}}:{{account-ID}}:profilingGroup/{{profiling-group-name}}` |
 | UpdateProfilingGroup | `codeguru-profiler:UpdateProfilingGroup`<br />Required to update a profiling group. | `arn:aws:codeguru-profiler:{{region-ID}}:{{account-ID}}:profilingGroup/{{profiling-group-name}}` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

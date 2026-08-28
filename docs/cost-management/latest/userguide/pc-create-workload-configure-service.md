@@ -47,3 +47,7 @@ The values in fields outside of Usage amount will not be saved and you will not 
 You can use the condensed configuration if you are familiar with usage types and operations of products that you want to model usage for. Usage types are the units that each service uses to measure the usage of a specific type of resource. For example, the BoxUsage:t2.micro(Hrs) usage type filters by the running hours of Amazon EC2 t2.micro instances. Operation are requests made to a service and tasks performed by a service, such as write and get requests to Amazon S3.
 
 Usage types and operation are available through the Price List API `GetProducts`. On Pricing Calculator console’s Condensed configuration, you will be able to find the usage types and operations in their respective dropdown without needing to query Price List API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

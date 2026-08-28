@@ -77,3 +77,7 @@ To learn more about implementing Scaling Policies, review [Scaling your Amazon A
  As a best practice to optimize the cost, shut down an Image Builder instance when it is not being used. CloudWatch Events rules can be used to schedule a daily job, such as invoking a Lambda function to stop image builder instances.
 
  You can keep your WorkSpaces Applications image up-to-date by using managed WorkSpaces Applications image updates. This update method provides the latest Windows operating system updates and driver updates, and the latest WorkSpaces Applications agent software. When using this method to update images, an Image Builder is automatically started, and stopped, as part of the managed service process.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

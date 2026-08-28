@@ -166,3 +166,7 @@ The following table describes common issues you might encounter when using BCP f
 | Permission denied errors | Make sure your database user has INSERT permissions for imports or SELECT permissions for exports on the target tables. |
 | Large file handling issues | Use batch processing with the -b option. Consider splitting large files into smaller chunks for better performance and error recovery. |
 | Character encoding problems | Ensure your data files use compatible character encoding. Use the -c option for character format or specify appropriate code pages. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

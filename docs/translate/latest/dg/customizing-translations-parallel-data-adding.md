@@ -95,3 +95,7 @@ You can monitor the ongoing status of the parallel data by using the `get-parall
 <a name="customizing-translations-parallel-data-adding-next"></a>
 
 Now that you have created a parallel data resource, you can apply it to a batch translation job to customize the output. To run a batch job, see [Running a batch translation job](async-start.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Translate. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query translate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

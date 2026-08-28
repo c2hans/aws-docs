@@ -321,3 +321,7 @@ AWS IoT Secure Tunneling connection have the following quotas:
 + The quota applies per AWS account, per day.
 
 If you encounter the AWS IoT secure tunneling error, wait for the daily quota reset or contact AWS support to request a quota-limit increase. For AWS support contact info, see the [AWS support contact portal](https://aws.amazon.com/contact-us/). For detailed information about AWS IoT secure tunneling, see the [AWS IoT secure tunneling](https://docs.aws.amazon.com/iot/latest/developerguide/secure-tunneling.html) topic in the *AWS IoT Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

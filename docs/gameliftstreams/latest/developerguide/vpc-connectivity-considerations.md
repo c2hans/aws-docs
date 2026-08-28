@@ -30,3 +30,7 @@ Before configuring VPC connectivity, consider the following:
 + **Additional latency**: Traffic routed through the transit gateway may experience slightly higher latency compared to direct connections.
 + **Cost**: Transit gateway attachments incur additional charges. See [AWS Transit Gateway pricing](https://aws.amazon.com/transit-gateway/pricing/) for details.
 + **Quota**: There is a default limit of 5 VPC transit configurations per account per Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

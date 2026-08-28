@@ -13,3 +13,7 @@ You can try the API by using the demonstration in the Amazon Textract console. F
 + [Step 1: Set Up an AWS Account and Create a User](setting-up.md)
 + [Step 2: Set Up the AWS CLI and AWS SDKs](setup-awscli-sdk.md)
 + [Step 3: Get Started Using the AWS CLI and AWS SDK API](get-started-exercise.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

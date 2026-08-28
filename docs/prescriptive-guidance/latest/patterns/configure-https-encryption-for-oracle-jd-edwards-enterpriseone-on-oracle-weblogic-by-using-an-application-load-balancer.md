@@ -93,3 +93,7 @@ The following diagram shows the JD Edwards EnterpriseOne, Application Load Balan
 + [Overview of Oracle WebLogic Server Proxy Plug-In](https://docs.oracle.com/middleware/1221/webtier/develop-plugin/overview.htm#PLGWL391)
 + [Installing WebLogic Server using the Infrastructure Installer](https://www.oracle.com/webfolder/technetwork/tutorials/obe/fmw/wls/12c/12_2_1/02-01-004-InstallWLSInfrastructure/installweblogicinfrastructure.html)
 + [Installing and Configuring Oracle HTTP Server ](https://docs.oracle.com/middleware/1221/core/install-ohs/toc.htm)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

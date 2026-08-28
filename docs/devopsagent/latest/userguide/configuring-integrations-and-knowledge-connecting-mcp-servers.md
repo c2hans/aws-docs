@@ -195,6 +195,8 @@ After registering an MCP server at the account level, you can configure which to
 
 AWS DevOps Agent will now be able to use the allowlisted tools from your MCP server during investigations in this Agent Space.
 
+To control whether the agent can invoke an MCP tool as a read-only or mutating action, you classify each tool. Tools you register programmatically without supplying `toolDetails` default to read-only, and the agent runs them without requesting approval. For more information about classifying MCP tools as read-only or mutating, see [Working with directed actions](working-with-devops-agent-working-with-directed-actions.md).
+
 ## Managing MCP server connections
 <a name="managing-mcp-server-connections"></a>
 
@@ -270,7 +272,7 @@ Cross-account access without a dedicated role works as follows:
 
 1. **Associate the MCP server with an Agent Space** – When you add the MCP server to an Agent Space, AWS DevOps Agent validates it using the **primary AWS account (monitor) role**. It assumes that role and calls `listTools` to confirm the server is reachable and the configuration is valid. The Agent Space must have a primary AWS account associated with it. That account's role must be able to invoke your MCP server.
 
-1. **During investigations** – When the agent uses the MCP server while operating on a specific account, it signs requests with that account's role — the **primary account role** for the primary account, and the corresponding **secondary account role** for each secondary account. Each primary or secondary account role that the agent will use with this MCP server must be able to invoke it.
+1. **During investigations** – When the agent uses the MCP server while operating on a specific account, it signs requests with that account's role, the **primary account role** for the primary account, and the corresponding **secondary account role** for each secondary account. Each primary or secondary account role that the agent will use with this MCP server must be able to invoke it.
 
 ### Requirements
 <a name="requirements"></a>
@@ -300,3 +302,7 @@ AWS DevOps Agent validates a role-less SigV4 MCP server when you associate it, u
 + Security in AWS DevOps Agent
 + Setting up an Agent Space
 + Prompt Injection Protection
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

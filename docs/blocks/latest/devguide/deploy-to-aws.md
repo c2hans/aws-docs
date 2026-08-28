@@ -118,3 +118,7 @@ npm run destroy
 <a name="deploy-next-steps"></a>
 + To configure custom domains, VPC settings, or other environment-specific infrastructure, see [The CDK layer](concepts.md#concepts-cdk-layer) in the Concepts topic.
 + To integrate AWS Blocks into an existing CDK application, see [Integrating with existing infrastructure](existing-infrastructure.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Blocks. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query blocks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

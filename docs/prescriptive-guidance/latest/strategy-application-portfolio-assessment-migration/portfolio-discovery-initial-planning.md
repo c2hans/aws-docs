@@ -53,3 +53,7 @@ The key is to understand who the stakeholders of this stage are and what data re
 + Assign a single-threaded leader to the application portfolio assessment workstream.
 + Consider using [Migration Evaluator](https://aws.amazon.com/migration-evaluator/) for your directional business case, or explore the AWS Partner Network tools and offerings for [TCO and AWS pricing](https://docs.aws.amazon.com/whitepapers/latest/how-aws-pricing-works/aws-pricingtco-tools.html).
 + Consider [AWS Professional Services](https://aws.amazon.com/professional-services/) and [AWS Partners](https://partners.amazonaws.com/) that could help you accelerate business outcomes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,3 +35,7 @@ The following code examples show how to use AWS Marketplace Catalog API with AWS
 + [Update the expiration date of a private offer to a future date](marketplace-catalog_example_marketplace-catalog_UpdateOfferExpirationDateOfPrivateOffer_section.md)
 + [Update the free trial duration of a public free trial offer for a SaaS product](marketplace-catalog_example_marketplace-catalog_UpdateFreeTrialDurationOfPublicFreeTrialOfferForSaasProduct_section.md)
 + [Update the refund policy of an offer](marketplace-catalog_example_marketplace-catalog_UpdateRefundPolicy_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ The OTA Agent included with FreeRTOS checks the version of any update and instal
 You must copy your firmware update into the Amazon S3 bucket that you created as described in [Create an Amazon S3 bucket to store your update](dg-ota-bucket.md). The name of the file you need to copy to Amazon S3 depends on the hardware platform you are using:
 + Texas Instruments CC3220SF-LAUNCHXL: `vendors/ti/boards/cc3220_launchpad/aws_demos/ccs/debug/aws_demos.bin`
 + Espressif ESP32: `vendors/espressif/boards/esp32/aws_demos/make/build/aws_demos.bin`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

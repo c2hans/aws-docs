@@ -52,3 +52,7 @@ API endpoint: `GET /organizations/{organizationId}/configurationChanges`
 Detection Finding maps to Meraki Assurance Alerts — alerts produced by Meraki's monitoring engine that analyze device telemetry and produce discrete alerts with IDs, severity, and a lifecycle status.
 
 API endpoint: `GET /organizations/{organizationId}/assurance/alerts`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

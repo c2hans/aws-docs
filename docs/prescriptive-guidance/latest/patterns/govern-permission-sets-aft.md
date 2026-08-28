@@ -177,3 +177,7 @@ The diagram shows the following workflow:
    + If the pull request is properly tagged.
 
 1. If the pull requests meets standards, GitHub Actions starts the AFT product workflow. It uses starts the `ct-aft-account-request` pipeline in AWS CodePipeline. This pipeline starts the `aft-account-provisioning-framework` custom state machine in Step Functions. This state machine works as previously described in the *Solution overview* section of this pattern.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

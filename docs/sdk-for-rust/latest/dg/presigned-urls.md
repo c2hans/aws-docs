@@ -132,3 +132,7 @@ let (signing_instructions, _signature) = sign(signable, &params)?.into_parts();
 let mut my_req = http::Request::new("...");
 signing_instructions.apply_to_request_http1x(&mut my_req);
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Rust. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-rust` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

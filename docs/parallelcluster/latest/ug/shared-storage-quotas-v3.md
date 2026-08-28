@@ -24,3 +24,7 @@ This table of quotas is added in AWS ParallelCluster version 3.2.0.
 **Note**
 If you use AWS Batch as a scheduler, FSx for Lustre is only available on the cluster head node.
 File Caches don't support AWS Batch schedulers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

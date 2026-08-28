@@ -68,3 +68,7 @@ If both **Contact search** and **View my contacts** permissions are granted, the
   This permission isn't required by conversational analytics but it's helpful as it provides more search options.
   + On the **Contact Search** page, you can access additional filters that allow you to search contacts by **Words or phrases**, such as "*thank you for your business*." For more information, see [Search for words or phrases](search-conversations.md#keyword-search).
 ![The add filters dropdown menu, the Words or phrases CL filter.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-search-words-phrases.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

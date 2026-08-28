@@ -56,3 +56,7 @@ A lightweight XML parser (a thin wrapper around *`tinyxml2`*). The [RAII pattern
 | --- |--- |
 | Header |  [`/aws/core/utils/xml/XmlSerializer.h`](https://github.com/aws/aws-sdk-cpp/tree/master/aws-cpp-sdk-core/include/aws/core/utils/xml/XmlSerializer.h)  |
 | API Documentation |  [`Aws::Utils::Xml`](https://docs.aws.amazon.com/sdk-for-cpp/latest/api/aws-cpp-sdk-core/html/namespace_aws_1_1_utils_1_1_xml.html)  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for C++. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-cpp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

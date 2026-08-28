@@ -153,3 +153,7 @@ Dashboard Building: The combination of `ListRevenueAttributions` and `ListRevenu
 + All monthly cost allocation entries for a specific Marketplace Offer across multiple Revenue Attribution IDs.
 + All cost allocation entries for the current billing month, to validate that totals do not exceed 100% per attribution.
 + All Revenue Attribution IDs that have at least one active allocation entry (`TotalRevenueAttributionAssociationCount > 0`).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

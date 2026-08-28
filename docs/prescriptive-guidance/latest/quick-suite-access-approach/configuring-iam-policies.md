@@ -11,3 +11,7 @@ Note the following actions when configuring policies that allow users to self-pr
 + `quicksight:CreateReader` allows a user to self-provision read-only access in Quick. For more information, see [Self-provisioning an Amazon Quick read-only user](https://docs.aws.amazon.com/quicksuite/latest/userguide/provisioning-users.html#self-service-read-only-users).
 + `quicksight:CreateUser` allows a user to self-provision author access in Quick. For more information, see [Self-provisioning an Amazon Quick author](https://docs.aws.amazon.com/quicksuite/latest/userguide/provisioning-users.html#self-service-access).
 + `quicksight:CreateAdmin` allows a user to self-provision administrative access in Quick. For more information, see [Self-provisioning an Amazon Quick administrator](https://docs.aws.amazon.com/quicksuite/latest/userguide/provisioning-users.html#assigning-the-admin).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

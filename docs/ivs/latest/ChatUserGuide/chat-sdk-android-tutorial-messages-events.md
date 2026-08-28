@@ -809,3 +809,7 @@ class MainActivity : AppCompatActivity() {
 ```
 
 Now you should be able to run your application\! (See [Build and run your app](https://developer.android.com/studio/run#basic-build-run).) Remember to have your backend server running when using the app. You can spin it up from the terminal at the root of our project with this command: `./gradlew :auth-server:run` or by executing the `auth-server:run` Gradle task directly from Android Studio.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

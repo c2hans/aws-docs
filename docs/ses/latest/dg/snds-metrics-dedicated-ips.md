@@ -59,3 +59,7 @@ This is an indicator that something in your sending behavior has triggered a neg
 **Q3. What actions will AWS Support take if my SNDS.SpamRate changes from a value of 0 (or 0.5) to 1?**
 
 AWS does not have any control over SNDS and therefore has no influence over SNDS. All mitigation requests need to filed directly with Outlook via their [New support request form](https://support.microsoft.com/en-us/supportrequestform/8ad563e3-288e-2a61-8122-3ba03d6b8d75).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

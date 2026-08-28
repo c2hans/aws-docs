@@ -25,3 +25,7 @@ There are no restrictions. Full functionality of Amazon Athena is available in y
 Athena has a major dependency on the AWS Glue service, as it uses the data catalog/metastore created with AWS Glue. Therefore, AWS Glue permissions are included in the successful Athena RFC.
 
 The role `customer_athena_console_role` has a prerequisite for an Amazon S3 bucket. To create a new bucket, use the automated CT `ct-1a68ck03fn98r` (Deployment \| Advanced stack components \| S3 storage \| Create). When you use this automated CT to create an S3 bucket for Athena, the bucket name must begin with prefix `athena-query-results-*`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

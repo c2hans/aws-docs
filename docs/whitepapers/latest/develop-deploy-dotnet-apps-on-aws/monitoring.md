@@ -14,3 +14,7 @@ Although structuring teams to include development and operations improves human 
 Designing a suitable approach to monitor .NET application behavior is relatively simple but requires a combination of approaches. Approaches include logging events and errors from your application and AWS resources, recording metrics, showing current status dashboards, sending and automating responses to alerts, and providing tracing to help isolate problems.
 
 While the traditional .NET monitoring approaches and third-party libraries still work in AWS, implementing a modern, approach generally requires introducing one or more additional AWS services or third-party tools. Although it’s not necessary to use all these tools, mature DevOps teams invariably use a multi-layered approach to monitor the system, track performance, and provide alerts when notable or exceptional events occur.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

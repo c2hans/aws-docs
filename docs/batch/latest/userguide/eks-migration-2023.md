@@ -28,3 +28,7 @@ Depending on how your compute environment is configured you can use one of the f
 + If you use a launch template or launch template override that specifies an AMI based on `EKS_AL2023` then you need to set [userdataType](https://docs.aws.amazon.com/batch/latest/APIReference/API_LaunchTemplateSpecification.html) to `EKS_NODEADM`.
 
   If you mismatch the `userdataType` and AMI then the node won't join the EKS cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

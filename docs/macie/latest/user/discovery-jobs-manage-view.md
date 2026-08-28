@@ -31,3 +31,7 @@ Follow these steps to review your job inventory by using the Amazon Macie consol
    + To remove a filter, choose the remove filter icon (![The remove filter condition icon, which is a circle that has an X in it.](http://docs.aws.amazon.com/macie/latest/user/images/icon-filter-remove.png)) for the filter to remove.
 
 1. To review additional settings and details for a particular job, choose the job's name. Then refer to the details panel. For information about these details, see [Reviewing configuration settings for a job](discovery-jobs-manage-settings.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

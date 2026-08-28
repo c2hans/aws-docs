@@ -37,3 +37,7 @@ For example, high-volume event ingestion workloads (such as IoT or telemetry), a
 + Minimizing gaps is more important than maximum throughput
 
 Workloads such as assigning account or reference numbers, where identifiers are generated less often and closer ordering is desirable, are better aligned with a cache size of 1.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

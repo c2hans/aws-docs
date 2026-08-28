@@ -884,3 +884,7 @@ The full comparison of RPM package versions is below.
 | `openssl-1:3.0.8-1.amzn2023.0.3` |
 | `sbsigntools-0.9.4-8.amzn2023.0.2` |
 | `system-release-2023.1.20230628-0.amzn2023` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

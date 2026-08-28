@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  If end users will be working from home, try to establish a minimum level of network connectivity that should provide a good user experience. Most home broadband connections are more than capable of delivering low latency for home working, but problems with home networks can be difficult to diagnose.
 
  Verify that endpoint devices can run the local client application (WorkSpaces or AppStream Client) that processes and displays the encrypted pixel stream which flows between the end user and the AWS EUC service connection points (streaming gateways). If the workload delivers collaboration tools such as Microsoft TEAMs, Zoom, or Webex, optimization capabilities will try to offload processing to the local endpoint device, which must be capable of handling this additional load.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,3 +39,7 @@ When adding users or administrators to the portal, avoid creating AWS Identity a
 + [Update a dashboard](update-dashboard.md)
 + [Delete a dashboard](delete-dashboard.md)
 + [Configure dashboard](configure-dashboard.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

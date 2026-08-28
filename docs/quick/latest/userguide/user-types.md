@@ -63,3 +63,7 @@ When your Amazon Quick account is integrated with IAM Identity Center, admin cap
 | **SPICE capacity** | ![](http://docs.aws.amazon.com/quick/latest/userguide/images/negative_icon.png) No | ![](http://docs.aws.amazon.com/quick/latest/userguide/images/success_icon.png) Yes |
 
 Admin and Admin Pro users have full reader and author capabilities but focus primarily on system administration to ensure efficient and secure operations for all users. For detailed information about author capabilities and subscription types, see [Amazon Quick pricing](https://aws.amazon.com/quicksuite/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

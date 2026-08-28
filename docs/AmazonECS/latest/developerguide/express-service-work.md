@@ -252,3 +252,7 @@ The following defaults are set by Express Mode and you can configure them in Ama
 Express Mode services automatically share resources when possible to optimize costs:
 + **Load balancer sharing** - Up to 25 Express Mode services in the same VPC can share an Application Load Balancer. Express Mode will provision additional Application Load Balancers as necessary depending on the amount of Express Mode services you have provisioned. And as you reduce the amount of Express Mode services in your VPC, Express Mode will also deprovision unused Application Load Balancers.This sharing reduces the effective cost per application as you deploy more Express Mode services.
 + **Cluster sharing** - Express Mode services can be grouped together in Amazon ECS Clusters. Express Mode services can also share Amazon ECS Clusters with Amazon ECS Services not managed by Express Mode.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

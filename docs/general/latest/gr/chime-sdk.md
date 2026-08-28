@@ -286,3 +286,7 @@ The following quotas apply only to legacy endpoints.
 | Amazon Chime SDK Media Pipelines – Rate limit for al media pipeline API requests in transactions per second | 10 | Yes | The maximum rate of all SDK media pipeline API requests that you can send in this account in the current Region This quota is for the Amazon Chime namespace. |
 |  Amazon Chime SDK Media Pipeline - Media capture API burst limit  | 10 | No | The maximum number of media capture pipeline requests that you can send in one burst. This quota is for the Amazon Chime namespace. This quota is for the Amazon Chime namespace. |
 | Amazon Chime SDK Media Pipeline - API rate limit | 10 | Yes | The maximum rate of all SDK media pipeline API requests that you can send in this account in the current Region. This quota is for the Amazon Chime namespace. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

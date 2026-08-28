@@ -112,3 +112,7 @@ git clone codecommit://{{CodeAccess}}@{{MyDemoRepo}}
 Git commit, push, and pull commands use regular Git syntax.
 
 When the user uses the AWS CLI and specifies the AWS CLI named profile associated with the rotating access credentials, results scoped to that profile are returned.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

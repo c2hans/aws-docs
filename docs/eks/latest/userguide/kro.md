@@ -88,3 +88,7 @@ To get started with the EKS Capability for kro:
 1. Create ResourceGraphDefinitions (RGDs) that define your custom APIs and resource compositions.
 
 1. Apply instances of your custom resources to provision and manage the underlying Kubernetes and AWS resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

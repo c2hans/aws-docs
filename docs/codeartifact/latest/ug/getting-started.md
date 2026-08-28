@@ -26,3 +26,7 @@ source_url: https://docs.aws.amazon.com/codeartifact/latest/ug/getting-started.h
 You can complete this tutorial using the AWS Management Console or the AWS Command Line Interface (AWS CLI). To follow the tutorial, you must first complete the following prerequisites:
 +  Complete the steps in [Setting up with AWS CodeArtifact](get-set-up-for-codeartifact.md).
 +  Install the npm CLI. For more information, see [Downloading and installing Node.js and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm) in the npm documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

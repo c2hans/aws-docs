@@ -133,3 +133,7 @@ AWS KMS supports the following key specs for KMS keys with imported key material
     + **Parameters:** Named curve only (SM2 keys with explicit parameters are rejected).
     + **Public point coordinates:** May be compressed, uncompressed, or projective.
     + Asymmetric key material must be BER-encoded or DER-encoded in Public-Key Cryptography Standards (PKCS) \#8 format that complies with [RFC 5208](https://datatracker.ietf.org/doc/html/rfc5208).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -109,3 +109,7 @@ The code for this pattern is available in the GitHub [Monitor AWS KMS keys disab
 <a name="get-amazon-sns-notifications-when-the-key-state-of-an-aws-kms-key-changes-additional"></a>
 
 Amazon SNS provides in-transit encryption by default. To align with security best practices, you can also enable server-side encryption for Amazon SNS by using an AWS KMS customer managed key.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

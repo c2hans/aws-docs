@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/choosing-an-aws-nosql
 +  **Fast querying** — Provides fast and efficient querying of your time series data, allowing you to quickly and easily analyze your data.
 +  **Integrations** — Integration with other AWS services, such as Amazon Kinesis, Amazon S3, and [Quick](https://aws.amazon.com/quicksight/), making it easy to collect, store and analyze your data.
 +  **Cost-effective** — Provides cost-effective storage and analysis of your time series data, with the ability to choose between standard and memory-optimized performance tiers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

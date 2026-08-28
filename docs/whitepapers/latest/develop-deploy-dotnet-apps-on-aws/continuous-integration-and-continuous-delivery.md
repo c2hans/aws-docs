@@ -12,3 +12,7 @@ Software development has always included a number of delivery activities, such a
 In the traditional delivery approach, when projects took months to deliver a functioning application, these activities were mostly manual. However, as the frequency of software delivery grows to multiple versions per week or per day, these undifferentiated activities become delivery bottlenecks.
 
 Continuous Integration and Continuous Delivery are the combination of tools and techniques to help overcome these bottlenecks by automating the integration and delivery of applications.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -119,3 +119,7 @@ The source code for this pattern is available on GitHub, in the [Amazon ECS Any
 + [Amazon ECS Anywhere Documentation](https://aws.amazon.com/ecs/anywhere/)
 + [Amazon ECS Anywhere Demo](https://www.youtube.com/watch?v=-eud6yUXsJM)
 + [Amazon ECS Anywhere Workshop Samples](https://github.com/aws-samples/aws-ecs-anywhere-workshop-samples)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,7 +22,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/deterministic-upgrades-u
 
  For information on restricting updates to those from a particular advisory, see [Applying security updates in-place](security-inplace-update.md)
 
- For patching in-place, you can use the `dnf` package manager. When you run the `dnf upgrade` command, the system checks for upgrades in the repository that the `releasever` variable specifies. A valid `releasever` is either {{latest}} or a date-stamped version such as {{2023.12.20260724}}.
+ For patching in-place, you can use the `dnf` package manager. When you run the `dnf upgrade` command, the system checks for upgrades in the repository that the `releasever` variable specifies. A valid `releasever` is either {{latest}} or a date-stamped version such as {{2023.12.20260817}}.
 
 You can change the value of `releasever` using one of the following methods. These methods are listed in descending system priority. This means that method 1 overrides methods 2 and 3, and method 2 overrides method 3.
 
@@ -281,3 +281,7 @@ $ sudo rm /etc/dnf/vars/releasever
  Rather than disabling deterministic updates, we recommend replacing instances with ones launched from a new AMI. If instance replacement is not an option, we recommend using tools such as [AWS Systems Manager Patch Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager.html) to orchestrate applying updates across a fleet. [EC2 Image Builder](https://docs.aws.amazon.com/imagebuilder/latest/userguide/) can also automatically build, patch, and test your own AMIs derived from AL2023 base images. You can also [Receive notifications on new updates](receive-update-notification.md) which can be used to trigger your own AMI building pipelines.
 
  Using `latest` in a pre-production environment, and then deploying to production using `latest` does *not* provide protection from any issue between an OS update and your application. A new AL2023 release can be at any point in time, and thus all uses of `latest` in production carry risk.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

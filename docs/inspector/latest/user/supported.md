@@ -144,19 +144,18 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/supported.html
 | Operating system | Version | CIS benchmark version |
 | --- | --- | --- |
 | Amazon Linux 2023 | AL2023 | 1.0.0 |
-| Red Hat Enterprise Linux (RHEL) | 8 | 3.0.0 |
+| Red Hat Enterprise Linux (RHEL) | 8 | 4.0.0 |
 | Red Hat Enterprise Linux (RHEL) | 9 | 2.0.0 |
-| Rocky Linux | 8 | 2.0.0 |
-| Rocky Linux | 9 | 1.0.0 |
+| Rocky Linux | 8 | 3.0.0 |
+| Rocky Linux | 9 | 2.0.0 |
 | SUSE Linux Enterprise Server | 15 | 2.0.1 |
-| Ubuntu (Bionic) | 18.04 | 2.2.0 |
 | Ubuntu (Focal) | 20.04 | 3.0.0 |
-| Ubuntu (Jammy) | 22.04 | 2.0.0 |
-| Ubuntu (Noble) | 24.04 | 1.0.0 |
-| Windows Server | 2016 | 3.0.0 |
-| Windows Server | 2019 | 4.0.0 |
-| Windows Server | 2022 | 4.0.0 |
-| Windows Server | 2025 | 1.0.0 |
+| Ubuntu (Jammy) | 22.04 | 3.0.0 |
+| Ubuntu (Noble) | 24.04 | 2.0.0 |
+| Windows Server | 2016 | 4.0.0 |
+| Windows Server | 2019 | 5.0.0 |
+| Windows Server | 2022 | 5.0.0 |
+| Windows Server | 2025 | 2.0.0 |
 
 ### Supported operating systems: Amazon Inspector Scan API
 <a name="supported-os-scan-inspector-scan"></a>
@@ -399,6 +398,7 @@ Deep inspection is not supported for Bottlerocket operating systems.
   + python3.11
   + python3.12
   + python3.13
+  + python3.14
 + Ruby
   + ruby2.7
   + ruby3.2
@@ -436,7 +436,12 @@ Deep inspection is not supported for Bottlerocket operating systems.
   + python3.11
   + python3.12
   + python3.13
+  + python3.14
 + Ruby
   + ruby2.7
   + ruby3.2
   + ruby3.3
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

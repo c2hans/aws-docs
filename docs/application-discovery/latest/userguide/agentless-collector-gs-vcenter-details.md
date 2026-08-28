@@ -28,3 +28,7 @@ You can choose **View servers in Migration Hub** on this page to open the Migrat
 The following are the guidelines for recommended length of data collection according to migration planning activities:
 + TCO (total cost of ownership) - 2 to 4 weeks
 + Migration planning - 2 to 6 weeks
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Application Discovery Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query application-discovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

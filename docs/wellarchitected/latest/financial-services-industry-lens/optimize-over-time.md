@@ -26,3 +26,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 + [FSICOST17: Are you continually reviewing your workload to provide the most cost-effective resources?](fsicost17.md)
 + [FSICOST18: Do you have specific workload modernization or refactoring goals in your cloud strategy?](fsicost18.md)
 + [FSICOST19: Do you use the cloud to drive innovation and operational excellence of your business model to impact both the top and bottom line?](fsicost19.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

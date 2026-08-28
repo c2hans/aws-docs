@@ -10,3 +10,7 @@ Proactively monitor your data in Amazon OpenSearch Service with alerting and ano
 **Topics**
 + [Configuring alerts in Amazon OpenSearch Service](alerting.md)
 + [Anomaly detection in Amazon OpenSearch Service](ad.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

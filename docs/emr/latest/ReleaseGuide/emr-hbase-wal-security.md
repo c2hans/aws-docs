@@ -26,3 +26,7 @@ From the AWS CLI, set the `--security-configuration` parameter when you use the 
 For more information, see [Encryption at rest for Amazon EMR WAL](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-data-encryption-options.html#emr-encryption-WAL) and [Use security configurations to set up cluster security](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-security-configurations.html) in the *Amazon EMR Management Guide*.
 
 For more security-related information about WAL, see [Using service-linked roles for write-ahead logging](https://docs.aws.amazon.com/emr/latest/ManagementGuide/using-service-linked-roles-wal.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

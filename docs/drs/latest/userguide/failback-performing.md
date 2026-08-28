@@ -280,3 +280,7 @@ When you fail back to the original source server, replication includes only the 
 If the original source server is healthy and you decide to fail back to it, it will undergo a rescan until it reaches the **Ready** status.
 
 You can tell whether you are failing back to the original or a new source server in the recovery instance details view under **Failback status**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -496,3 +496,7 @@ If one of the relations is a stream and the other is a finite relation, it is re
 For example, Orders is a stream and PriceList is a table. The effect of the join is to add price list information to the order.
 
 For information about creating a reference data source and joining a stream to a reference table, see [Example: Add Reference Data Source](https://docs.aws.amazon.com/kinesisanalytics/latest/dev/app-add-reference-data.html) in the *Amazon Kinesis Data Analytics Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

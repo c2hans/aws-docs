@@ -14,3 +14,7 @@ Run the pilot on a small index allowlist first, validate it, and only then widen
 
 **Important**
 Auto-generated document IDs are not preserved during replay. If your source application relies on Elasticsearch assigning `_id` values automatically, plan to validate document identity on the target before cutover. Backfill from a snapshot preserves the document IDs that exist in the snapshot.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ With EventBridge, you can monitor and respond programmatically to events emitted
 **Topics**
 + [Monitor your EC2 Fleet or Spot Fleet using CloudWatch](ec2-fleet-cloudwatch-metrics.md)
 + [Monitor and programmatically respond to the events emitted by your EC2 Fleet or Spot Fleet using Amazon EventBridge](monitor-ec2-fleet-using-eventbridge.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

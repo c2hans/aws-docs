@@ -74,3 +74,7 @@ So far in the modern data architecture pattern, this paper has placed the data w
  Storing this profile in a traditional RDBMS is challenging, because on large ecommerce web channels, there can be tens of thousands to millions of users, each with a varying set of attributes associated with their profile. To meet such large scale and constantly changing attributes, these user profiles must be stored in a highly scalable and flexible sub-second latency data store, to support the millions of API calls of the personalization engine for profile lookups.
 
  [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) delivers this performance, with millions of API call lookups in sub-second latency at any scale.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  Set up comprehensive monitoring using Amazon CloudWatch to keep track of the performance and health of your WorkSpaces and WorkSpaces Applications environments. Create alarms and automated responses to detect and remediate detected issues promptly.
 
  Continuously review and improve your architecture and operational procedures. Learn from historical incidents and update your strategies to help prevent future occurrences.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

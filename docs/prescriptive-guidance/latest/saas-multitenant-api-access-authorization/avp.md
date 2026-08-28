@@ -24,3 +24,7 @@ In Verified Permissions, you can express permissions by using a simple, human-re
 In Verified Permissions, you can create policies and automate them as part of provisioning. You can also create policies at runtime as part of application logic. As a best practice, you should use a continuous integration and continuous deployment (CI/CD) pipeline to administer, modify, and track policy versions when you create policies as part of tenant onboarding and provisioning. Alternatively, an application can administer, modify, and track policy versions; however, application logic doesn't inherently perform this functionality. To support these capabilities in your application, you must explicitly design your application to implement this functionality.
 
 If it's necessary to provide external data from other sources to reach an authorization decision, this data must be retrieved and provided to Verified Permissions as part of the authorization request. Additional context, entities, and attributes are not retrieved by default with this service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -110,3 +110,7 @@ Use the following procedure to learn how to add parameters to sheet titles and d
    The parameter is added to the sheet title or description and the parameter value appears in the text when you close the text box.
 
    For more information about adding sheet titles and descriptions, see [Adding a title and description to an analysis](adding-a-title-and-description.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

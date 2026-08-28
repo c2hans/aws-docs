@@ -18,3 +18,7 @@ The following information can help you troubleshoot common problems with issues 
 **Problem:** When creating an issue, the list of assignees is empty.
 
 **Possible fixes:** The list of assignees is directly linked to the CodeCatalyst users listed as members for the project. To verify that user profile access is functioning properly, choose the profile icon and then choose **User profile**. If the user profile information does not populate, check the health report for any incidents. If it does populate, file a service ticket.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

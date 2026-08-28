@@ -25,3 +25,7 @@ Ensure that you set the retention period for these backups to be greater than th
 
 **Tip**
 A backup frequency rule for a continuous backup is not the same as a periodic backup snapshot. Each backup plan, even one that doesn't create a snapshot, has a frequency you set (hourly, daily, weekly, or monthly as examples) for maintenance and syncing purposes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

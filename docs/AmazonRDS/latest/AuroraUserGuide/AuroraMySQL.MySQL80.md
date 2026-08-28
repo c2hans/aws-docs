@@ -76,3 +76,7 @@ In Aurora MySQL version 3.05 and higher, we've introduced optimizations that red
 During database startup, many internal memory components are initialized. The largest of these is the [InnoDB buffer pool](https://aws.amazon.com/blogs/database/best-practices-for-amazon-aurora-mysql-database-configuration/), which in Aurora MySQL is 75% of the instance memory size by default. Our testing has found that the initialization time is proportional to the size of InnoDB buffer pool, and therefore scales with the DB instance class size. During this initialization phase, the database can't accept connections, which causes longer downtime during restarts. The first phase of Aurora MySQL fast restart optimizes the buffer pool initialization, which reduces the time for database initialization and thereby reduces the overall restart time.
 
 For more details, see the blog [Reduce downtime with Amazon Aurora MySQL database restart time optimizations](https://aws.amazon.com/blogs/database/reduce-downtime-with-amazon-aurora-mysql-database-restart-time-optimizations/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

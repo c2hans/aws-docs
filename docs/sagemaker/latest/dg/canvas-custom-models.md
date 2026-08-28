@@ -36,3 +36,7 @@ To get started with building and generating predictions from a custom model, do 
   For numeric, categorical, and time series forecasting model types, you can clean and prepare your data with the [Data Wrangler feature](canvas-data-prep.md). In Data Wrangler, you can create a data flow and use various data preparation techniques, such as applying advanced transforms or joining datasets. For image prediction models, you can [Edit an image dataset](canvas-edit-image.md) to update your labels or add and delete images. Note that you can't use these features for multi-category text prediction models.
 + [Evaluate your model's performance](https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-evaluate-model.html) and determine how well it might perform on real-world data.
 + [Make single or batch predictions](https://docs.aws.amazon.com/sagemaker/latest/dg/canvas-make-predictions.html) with your model.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

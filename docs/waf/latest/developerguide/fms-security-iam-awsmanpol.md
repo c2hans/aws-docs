@@ -104,3 +104,7 @@ View details about updates to AWS managed policies for Firewall Manager since th
 | `FMSServiceRolePolicy` – Additional regions in China | AWS Firewall Manager has enabled `FMSServiceRolePolicy` for the BJS and ZHY regions in China. | 2021-08-12 |
 | `FMSServiceRolePolicy` – Update to the existing policy | Added new permissions to allow AWS Firewall Manager to manage Amazon Route 53 Resolver DNS Firewall.<br />This change allows Firewall Manager to configure Amazon Route 53 Resolver DNS Firewall associations. This permits you to use Firewall Manager to provide DNS Firewall protections for your VPCs throughout your organization in AWS Organizations. | 2021-03-17 |
 | Firewall Manager started tracking changes | Firewall Manager started tracking changes for its AWS managed policies. | 2021-03-02 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

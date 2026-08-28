@@ -254,3 +254,7 @@ For data preprocessing failures, Kinesis Data Analytics continues to retry Lambd
 + Kinesis Data Analytics application `MillisBehindLatest`: Indicates how far behind an application is reading from the streaming source.
 + Kinesis Data Analytics application `InputPreprocessing` CloudWatch metrics: Indicates the number of successes and failures, among other statistics. For more information, see [Amazon Kinesis Analytics Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/aka-metricscollected.html).
 + AWS Lambda function CloudWatch metrics and logs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

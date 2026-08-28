@@ -253,3 +253,7 @@ In the following policy examples, replace the placeholder values with your own v
 
 **Note**
 If your harness uses tools such as gateways, browsers, or code interpreters, those permissions are configured on the *harness execution role*, not the Step Functions execution role. For more information, see [Harness execution role permissions](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/harness-security.html) in the *Amazon Bedrock AgentCore User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -369,3 +369,7 @@ A successful match returns the `link_id` and `rule_id` of the first matching rul
 
 **Note**
 The `/resolve-link` endpoint evaluates rules in the same global priority order as live traffic. A 404 response indicates that no rule matches — review your rule conditions and priorities. See Troubleshooting inbound external links with custom domains if requests return unexpected results.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RTB Fabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rtb-fabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

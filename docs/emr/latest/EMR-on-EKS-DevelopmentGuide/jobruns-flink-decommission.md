@@ -73,3 +73,7 @@ This section covers most of the configurations that you can specify for your dec
 |  cluster.taskmanager.graceful-decommission.enabled  | Enable graceful decommission of Task Manager. |  true  |  true, false  |
 |  jobmanager.adaptive-scheduler.combined-restart.enabled  | Enable combined restart mechanism in Adaptive Scheduler. |  false  |  true, false  |
 |  jobmanager.adaptive-scheduler.combined-restart.window-interval  | The combined restart window interval to perfom merged restarts for the job. An integer without a unit is interpreted as milliseconds. |  1m  |  Examples: 30, 60s, 3m, 1h  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

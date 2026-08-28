@@ -109,3 +109,7 @@ To view transfer tasks in File Transfer, you must follow these steps in the AWS 
 1. On the **Transfer tasks** page, select the data transfer endpoint to view your transfer tasks.
 
 1. For endpoints that have pre-existing transfer tasks, these will be displayed under the **Transfer tasks** section. You can choose to view details of any transfer task from this list.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

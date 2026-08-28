@@ -151,3 +151,7 @@ When filtering events, Lambda ESM and EventBridge Pipes operate generally the sa
 Comparison operators enable you to construct event patterns that match against field values in events.
 
 For a complete list of the comparison operators supported for use in pipe filters, see [Comparison operators](eb-create-pattern-operators.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

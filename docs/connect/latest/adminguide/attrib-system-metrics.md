@@ -81,3 +81,7 @@ After a **Get queue metrics** block, add a [Check contact attributes](check-cont
 
 1. Choose **Add a condition** to enter the comparison for your routing decision. The following image shows the block configured to check whether contacts in queue is greater than 5.
 ![The Attribute to check section, the Conditions to check section.](http://docs.aws.amazon.com/connect/latest/adminguide/images/get-metrics-check-attributes-block.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

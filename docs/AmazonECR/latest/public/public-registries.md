@@ -29,3 +29,7 @@ Any active alias for your public registry can be used. This includes both the de
 If you've previously authenticated to Amazon ECR Public, if your auth token has expired you may receive an authentication error when attempting to do unauthenticated docker pulls from Amazon ECR Public. To resolve this issue, it may be necessary to run `docker logout public.ecr.aws` to avoid the error. This will result in an unauthenticated pull. For more information, see [Authentication issues](public-troubleshooting.md#public-troubleshooting-authentication).
 + You must authenticate your Docker client to your public registry so that you can use the **docker push** command to push images to the repositories in your public registry. For more information, see [Registry authentication in Amazon ECR public](public-registry-auth.md).
 + Repositories can be controlled with both IAM user access policies and repository policies. For more information about repository policies, see [Public repository policies in Amazon ECR Public](public-repository-policies.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

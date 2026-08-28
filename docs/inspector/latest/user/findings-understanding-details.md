@@ -69,3 +69,7 @@ Network reachability findings are only available for EC2 instances. See [Network
 + **Open port range** – The port range through which the EC2 instance could be accessed.
 + **Open network paths** – Shows the open access path to the EC2 instance. Select an item on the path for more information.
 + **Remediation** – Recommends a method for closing the open network path.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

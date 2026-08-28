@@ -190,3 +190,7 @@ For more information, see the following resources:
 + [elb-tls-https-listeners-only](https://docs.aws.amazon.com/config/latest/developerguide/elb-tls-https-listeners-only.html) in the AWS Config documentation
 + [Classic Load Balancer listeners should be configured with HTTPS or TLS termination](https://docs.aws.amazon.com/securityhub/latest/userguide/elb-controls.html#elb-3) in the Security Hub CSPM documentation
 + [Application Load Balancer should be configured to redirect all HTTP requests to HTTPS](https://docs.aws.amazon.com/securityhub/latest/userguide/elb-controls.html#elb-1) in the Security Hub CSPM documentation
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,6 +19,7 @@ Your VCF solution key must have enough cores to provide adequate core capacity f
 | --- | --- | --- |
 | i4i.metal | 64 | 256 |
 | i7i.metal-24xl | 48 | 192 |
+| i7i.metal-48xl | 96 | 384 |
 
 The vSAN license key must meet the instance-type-specific capacity requirement. The required capacity depends on the instance type selected:
 
@@ -26,6 +27,7 @@ The vSAN license key must meet the instance-type-specific capacity requirement. 
 | --- | --- |
 | i4i.metal | 110 TiB |
 | i7i.metal-24xl | 82 TiB |
+| i7i.metal-48xl | 164 TiB |
 
 Environment creation fails if you attempt to use undersized license keys.
 
@@ -54,3 +56,7 @@ New unexpired license keys must be assigned to vCenter Server before the license
 <a name="remove-vcf-license"></a>
 
 You can remove VCF license keys from the SDDC Manager inventory to reduce your core and vSAN capacity after deleting hosts in your environment. To remain in compliance with the licensing models of products that you use with vSphere, you must remove all unassigned license keys from the inventory. If you have split, merged, or upgraded license keys in the Broadcom Support Portal, you must remove the old license keys. For more information, see [Remove a license](https://techdocs.broadcom.com/us/en/vmware-cis/vsphere/vsphere/8-0/vcenter-and-host-management-8-0/license-management-host-management/managing-licenses-host-management/remove-a-license-host-management.html) in the VMware documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

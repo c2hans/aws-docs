@@ -48,3 +48,7 @@ MongoDB Atlas on AWS is a fully managed database as a service (DBaaS) that is hi
 + Cost optimization – AWS provides cost optimization tools that help you save money by analyzing your database usage patterns and identifying opportunities to optimize your spending. You can also user AWS Reserved Instances and other savings plans to get significant discounts on your MongoDB Enterprise Advanced clusters.
 + Backup and disaster recovery – AWS provides a full range of backup and disaster recovery capabilities that help protect your data in the event of a disaster. MongoDB Atlas on AWS provides continuous backups, point-in-time restores, and cross-Region replication to help make sure that your data is always safe and recoverable.
 + Seamless integrations – Integrations with other AWS services are seamless with MongoDB Atlas.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -99,3 +99,7 @@ The following errors may occur during change set processing and can be retrieved
 | INVALID\_DELIVERY\_OPTION\_IDS | Provide delivery option IDs that can be found in the product. IDs not found: [x] |
 | INVALID\_DELIVERY\_OPTION\_STATUS | The delivery option IDs [invalid\_ids] are invalid. Provide delivery options in the public state. |
 | ALL\_DELIVERY\_OPTIONS\_RESTRICTED | Provide fewer delivery options to restrict as at least one must remain in public state. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

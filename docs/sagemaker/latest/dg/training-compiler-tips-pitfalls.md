@@ -107,3 +107,7 @@ PyTorch/XLA defines a set of APIs to replace some of the existing PyTorch traini
 + PyTorch/XLA provides additional distributed training APIs. Failing to program the APIs properly causes gradients to be collected incorrectly, which causes a training convergence failure.
 
 To properly set up your PyTorch script and avoid the aforementioned incorrect API uses, see [Large Language Models Using PyTorch Directly (without the Hugging Face Transformers Trainer API)](training-compiler-pytorch-models.md#training-compiler-pytorch-models-non-trainer).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -107,3 +107,7 @@ Includes information about the journey that generated the event.
 | journey\_activity\_type | The event's journey activity type. This can be **EMAIL**, **SMS**, **PUSH**, **CONTACT\_CENTER**, or **CUSTOM**.  **VOICE **is not a supported journey activity type. <br />The `journey_activity_type` field is not present when `journey_send_status` is set to **QUIET\_TIME\_WAIT\_FINISHED**.  |
 | `journey_send_status_message` | The description of the status of the send event. |
 | journey\_send\_status\_code | The HTTP status code of the request. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

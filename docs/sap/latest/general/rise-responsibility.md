@@ -10,3 +10,7 @@ Under RISE with SAP, the SAP Enterprise Cloud Services (ECS) team manages the SA
 The primary task required for deploying RISE with SAP is to establish network connectivity to RISE with SAP VPC on AWS. As per the RISE with SAP agreement, you are responsible for establishing a connection to RISE.
 
 We recommend that you spend time understanding the available options on how to connect your on-premises network and/or existing AWS accounts to RISE with SAP VPC on AWS. Review the subsequent sections for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

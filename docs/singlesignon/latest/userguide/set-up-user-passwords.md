@@ -16,3 +16,7 @@ For users created in the Identity Center directory, administrators can manage pa
 + [Password requirements when managing identities in IAM Identity Center](password-requirements.md)
 + [Email one-time password to users created with API or CLI](userswithoutpwd.md)
 + [Reset the IAM Identity Center user password for an end user](reset-password-for-user.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

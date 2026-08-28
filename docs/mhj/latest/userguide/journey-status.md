@@ -24,3 +24,7 @@ A migration journey can have any of the status values that appear in the followi
 | Transferring | The recipient of a journey-ownership-transfer invitation has accepted the invitation, and the service is in the process of transferring the ownership. You cannot perform any actions on the journey until the transfer is complete. |
 | Transfer declined | The recipient of a journey-ownership-transfer invitation has declined the invitation. |
 | Transfer failed | The recipient of a journey-ownership-transfer invitation accepted the invitation, but then the transfer failed due to an internal issue. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

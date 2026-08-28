@@ -72,3 +72,7 @@ For more information, see the [AWS Support User Guide](https://docs.aws.amazon.c
 | US East (N. Virginia) | us-east-1 |  supportapp.us-east-1.amazonaws.com  | HTTPS |
 | US West (Oregon) | us-west-2 |  supportapp.us-west-2.amazonaws.com  | HTTPS |
 | Europe (Ireland) | eu-west-1 |  supportapp.eu-west-1.amazonaws.com  | HTTPS |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

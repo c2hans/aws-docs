@@ -16,3 +16,7 @@ For more info on developing with PHP in AWS, see the following resources:
 + [GitHub](https://github.com/aws/aws-sdk-php/) — Install the AWS SDK for PHP using GitHub.
 + [PHP Developer Center](https://aws.amazon.com/php/) — Tools, docs, and sample code to develop PHP applications on AWS.
 + [AWS SDK for PHP FAQs](http://docs.aws.amazon.com/aws-sdk-php/guide/latest/faq.html) — Get answers to commonly asked questions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

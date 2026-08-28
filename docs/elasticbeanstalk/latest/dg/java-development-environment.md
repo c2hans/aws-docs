@@ -58,3 +58,7 @@ If you just want to begin coding and don't need all of the features of an IDE, c
 
 **Note**
 On May 31, 2023, the [AWS Toolkit for Eclipse](https://docs.aws.amazon.com/toolkit-for-eclipse/v1/user-guide/welcome.html) reached end of life and is no longer supported by AWS. For additional details regarding the end of life cycle for the AWS Toolkit for Eclipse, see the [README.md](https://github.com/aws/aws-toolkit-eclipse) file on the AWS Toolkit for Eclipse GitHub repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

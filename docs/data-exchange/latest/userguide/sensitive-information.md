@@ -47,3 +47,7 @@ Eligible providers who have agreed to the AWS Business Associate Addendum, as we
 If you are not enrolled in the Extended Provider Program, listing a product with data or information described in Option 3 and Option 4 is a violation of our [Publishing guidelines for AWS Data Exchange](publishing-guidelines.md). AWS removes any product that breaches these guidelines and can suspend the provider from future use of the service.
 
 For more information about creating a product and setting the sensitivity status of the data, see [Step 5: Publish a new product](publish-data-product.md#publish-products).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

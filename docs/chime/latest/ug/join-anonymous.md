@@ -30,3 +30,7 @@ When you join anonymously, you automatically go to the Waiting Room. You remain 
 1. Remain in the Waiting Room until an authorized attendee admits you to the meeting.
 
 When you join a moderated meeting, you can't interact with other attendees until a moderator joins and starts the meeting.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

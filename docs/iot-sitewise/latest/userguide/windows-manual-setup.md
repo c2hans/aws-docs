@@ -21,3 +21,7 @@ Run all services (SiteWise Edge, InfluxDB, Node-RED, and Grafana) on the same ho
   + InfluxDB OSS v2. For installation steps, see [Install InfluxDB](https://docs.influxdata.com/influxdb/v2/install/).
   + Node-RED. For installation steps, see [Install Node-RED locally](https://nodered.org/docs/getting-started/local).
   + Grafana. For installation steps, see [Install Grafana](https://grafana.com/docs/grafana/latest/setup-grafana/installation/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

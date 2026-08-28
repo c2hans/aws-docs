@@ -13,3 +13,7 @@ Information can be logged to a private, customer-controlled data store for reten
 
 **Note**
 If you do not already have the Wickr Enterprise deployment package, see [Contact Us](https://wickr.com/contact-us/) for business inquiries.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

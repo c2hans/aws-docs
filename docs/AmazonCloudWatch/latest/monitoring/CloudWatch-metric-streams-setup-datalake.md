@@ -102,3 +102,7 @@ You can use AWS Cloud Development Kit (AWS CDK) to set up a metric stream.
 1. Create an IAM role that enables CloudWatch to write to the Firehose delivery stream. For more information about the contents of this role, see [Trust between CloudWatch and Firehose](CloudWatch-metric-streams-trustpolicy.md).
 
 1. Create the metric stream. The metric stream resource is available in AWS CDK as a Level 1 (L1) Construct named `CfnMetricStream`. For more information, see [ Using L1 constructs](https://docs.aws.amazon.com/cdk/latest/guide/constructs.html#constructs_l1_using.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

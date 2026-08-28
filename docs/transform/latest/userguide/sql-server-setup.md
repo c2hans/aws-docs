@@ -313,3 +313,7 @@ If your SQL Server database is hosted outside of AWS, ensure the following prere
 1. Create a secret in AWS Secrets Manager with the connection details for the external database. For more information, see [Step 2: Store credentials in AWS Secrets Manager](#store-credentials-secrets-manager).
 
 1. When prompted, provide the VPC ID and security group ID for connecting to the external database. AWS Transform prompts you for this information because the database hostname in the secret cannot be resolved within the AWS account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

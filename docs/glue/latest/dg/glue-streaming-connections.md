@@ -365,3 +365,7 @@ Use the following connection options for Kinesis streaming data sources:
 + `"producerRateLimit"` – (Optional) Used for Write. Default: 150 (%). Limits per-shard throughput sent from a single producer (such as your job), as a percentage of the backend limit.
 + `"collectionMaxCount"` – (Optional) Used for Write. Default: 500. Maximum number of items to pack into an PutRecords request.
 + `"collectionMaxSize"` – (Optional) Used for Write. Default: 5242880 (bytes). Maximum amount of data to send with a PutRecords request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

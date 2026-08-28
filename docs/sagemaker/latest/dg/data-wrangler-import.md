@@ -2133,3 +2133,7 @@ The dataset you query is located under the prefix (directory): athena/{{uuid}}/d
 For example, if your default bucket is `sagemaker-us-east-1-111122223333`, a single dataset queried from Athena is located in `s3://sagemaker-us-east-1-111122223333`/athena/{{uuid}}/data/{{example\_dataset.parquet}}.
 
 The subset of the dataset that is stored to preview dataframes in Data Wrangler is stored under the prefix: athena/.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ For more information, see the [Amazon EventBridge User Guide](https://docs.aws.a
 + [MediaConnect output status change event](monitoring-cloudwatch-events-output-status-change.md)
 + [MediaConnect flow content quality event](monitoring-eventbridge-events-content-quality.md)
 + [MediaConnect router input content quality event](monitoring-eventbridge-events-router-input-content-quality.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

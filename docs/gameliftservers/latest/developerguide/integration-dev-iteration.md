@@ -33,3 +33,7 @@ To get the Fast Build Update Tool and learn more about how to use it, visit the 
 + [Build a cloud-based test environment](integration-dev-iteration-cloud.md)
 + [Set up local testing with Amazon GameLift Servers Anywhere](integration-testing.md)
 + [Test your integration using Amazon GameLift Servers Local](integration-testing-local.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

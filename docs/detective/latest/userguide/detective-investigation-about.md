@@ -89,3 +89,7 @@ From an entity profile, you can pivot to other entity and finding profiles, to i
 Based on the results of your investigation, take the appropriate action.
 For a finding that is a false positive, you can archive the finding. From Detective, you can archive GuardDuty findings. For more details, see [Archiving an Amazon GuardDuty finding](https://docs.aws.amazon.com/detective/latest/userguide/finding-update-status.html).
 Otherwise, you take the appropriate action to address the vulnerability and mitigate damage. For example, you might need to update the configuration of a resource.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

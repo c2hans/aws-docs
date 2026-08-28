@@ -38,3 +38,7 @@ For Grafana workspaces that support Grafana version 9.x, see [Working in Grafana
 1. We recommend that you add a note to describe your changes before you choose **Save**. Notes are helpful if you need to revert the dashboard to a previous version.
 
 1.  To save the dashboard, choose **Save** in the upper-right corner of the screen.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

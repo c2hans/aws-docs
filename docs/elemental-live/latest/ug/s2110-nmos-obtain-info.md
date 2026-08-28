@@ -31,3 +31,7 @@ You and the NMOS operator might agree to this setup:
   + French Dolby Digital
   + Spanish Dolby Digital
 + SDP 3: Ancillary stream containing EIA-608 embedded captions, with English in CC1, French in CC2, and Spanish in CC3. CC4 is not used.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

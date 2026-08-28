@@ -46,3 +46,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-journey-framewor
 +  **Goal**: Evaluate performance, identify risks and opportunities, prioritize high-value products.
 +  **Outcome**: Optimize resource allocation across your product portfolio and align the product mix with your business strategy.
 +  **Key Decision Point**: Should the new SaaS solution be prioritized, what resources should be allocated for this effort?
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

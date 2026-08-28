@@ -35,3 +35,7 @@ Subscription is not required before first invocation due to auto-enablement, Ama
 The subscription process is usually complete within 10-15 minutes but can vary based on the requirements of the provider.
 
 The costs are for the software costs only. You will be billed a separate SageMaker AI infrastructure cost for the instance type and number of instances that you select.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

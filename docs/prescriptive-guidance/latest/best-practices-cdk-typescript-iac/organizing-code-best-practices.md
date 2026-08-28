@@ -27,3 +27,7 @@ The following TypeScript sample project, as shown in the following image, includ
 For example, the **compute** folder (residing in the **common** folder) holds all the logic for different compute constructs. New developers can easily add new compute constructs without impacting the other resources. All the other constructs won't need to create new resources internally. Instead, these constructs simply call the common construct factory. You can organize other constructs, such as storage, in the same way.
 
 Configurations contain environment-based data that you must decouple from the **common** folder where you keep the logic. We recommend that you place your common **config** data in a shared folder. We also recommend that you use the **utilities** folder to serve all the helper functions and clean up scripts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

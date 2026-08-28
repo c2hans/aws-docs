@@ -38,3 +38,7 @@ Delete widgets individually, or in a group by multi-selecting the widgets in the
 To delete widgets:
 + To delete a single widget, select the widget, and **Right-click** and choose **Delete**. You can also select, and click **X** on the right hand top corner to delete the widget.
 + To delete multiple widgets, select multiple widgets by **Shift \+ Left-click**, then **Right-click** and choose **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

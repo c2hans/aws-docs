@@ -31,3 +31,7 @@ Ensure that you meet all requirements for running a device on Siemens Industrial
 1. In the **Generate SiteWise Edge gateway configuration file** dialog box, choose **Generate and download**. AWS IoT SiteWise automatically generates a configuration file that you will use to configure the AWS IoT SiteWise Edge application.
 **Important**
 Keep your gateway configuration file as a backup in the event that you need to restore your AWS IoT SiteWise Edge application instance. You can securely save your SiteWise Edge gateway configuration file in [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) for this purpose. Secrets Manager securely stores, manages, and retrieves sensitive information. If you misplace or delete this configuration file, you won't be able to reconnect your AWS IoT SiteWise Edge application instance to its original gateway if you need to recover it. You'll need to create both a new gateway and a new configuration file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

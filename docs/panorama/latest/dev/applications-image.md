@@ -90,3 +90,7 @@ The JSON block in the output is an asset definition that the CLI adds to the pac
 ```
 
 In the assets folder, the descriptor and application image are named for their SHA-256 checksum. This name is used as a unique identifier for the asset when it is stored is Amazon S3.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

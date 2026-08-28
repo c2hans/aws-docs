@@ -109,3 +109,7 @@ After you create a volume, you can view the volume's monitoring graphs in the Am
 | Average write latency (ms/op) | `Avg(VolumeTotalWriteTime) × 1000`<br />For Nitro-based instances, the following formula derives Average Write Latency using [CloudWatch Metric Math](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html):<br />`(Sum(VolumeTotalWriteTime) / Sum(VolumeWriteOps)) * 1000`<br />The `VolumeTotalWriteTime` and `VolumeWriteOps` metrics are available in the EBS CloudWatch console. |
 
 For the average latency graphs and average size graphs, the average is calculated over the total number of operations (read or write, whichever is applicable to the graph) that completed during the period.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

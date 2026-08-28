@@ -27,3 +27,7 @@ Rapid7 supports the following AppFabric output schema and formats:
 Rapid7 supports the following AppFabric output location:
 + Amazon Simple Storage Service (Amazon S3)
   + To configure Rapid7 to receive data from the Amazon S3 bucket that contains your audit logs, follow the instructions in the [How to Monitor Your Amazon S3 Activity with InsightIDR](https://www.rapid7.com/blog/post/2019/08/07/how-to-monitor-your-aws-s3-activity-with-insightidr/) blog post on the Rapid7 Blog website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -79,3 +79,7 @@ A CNAME record redirects DNS queries for a record name regardless of the record 
 In the response to a dig or nslookup query, an alias record is listed as the record type that you specified when you created the record, such as A or AAAA. (The record type that you specify for an alias record depends on the resource that you're routing traffic to. For example, to route traffic to an S3 bucket, you specify A for the type.) The alias property is visible only in the Route 53 console or in the response to a programmatic request, such as an AWS CLI `list-resource-record-sets` command.
 **CNAME records**
 A CNAME record is listed as a CNAME record in response to dig or nslookup queries.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

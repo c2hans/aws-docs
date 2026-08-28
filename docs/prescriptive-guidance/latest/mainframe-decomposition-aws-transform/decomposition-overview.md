@@ -29,3 +29,7 @@ Before we explore seed identification, let's examine the main approaches to appl
 + **Feature-based decomposition** organizes the system around distinct feature sets. In a credit card example, this might include card application processing, payment processing, dispute resolution, rewards management, and statement generation. Each feature would have its own module with clear boundaries.
 + **Database decomposition** addresses the data layer specifically. Instead of using one massive database for the entire system, you split it based on function. A credit card system might have separate databases for customer profiles, transaction records, fraud detection patterns, and rewards data. Each database would be owned by its respective service.
 + **Event-driven architectures** structure the application around business events and their flows. In a credit card system, this creates a chain of events: A card swipe triggers an authorization event, which triggers a fraud check, which might trigger rewards calculations, and so on.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

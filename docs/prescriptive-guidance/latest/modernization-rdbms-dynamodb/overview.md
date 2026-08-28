@@ -106,3 +106,7 @@ DynamoDB currently supports cross-account backup and restore using AWS Backup, b
 The [AWS SDKs](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/GettingStarted.html) provide a simplified programming interface to AWS services and support for .NET, Java, JavaScript, Node.js, Python, PHP, and Ruby.
 
 You can choose from three patterns to access DynamoDB tables by using an AWS SDK: object persistence model (high-level interface), document interfaces, and low-level interfaces. For detailed information, see [Access patterns](access-patterns.md) later in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

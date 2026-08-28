@@ -51,3 +51,7 @@ Keep the following considerations in mind when you use combined licensing:
 + The order of license servers in the environment variable determines the priority. List the BYOL server first so that your existing licenses are consumed before UBL licenses.
 + On Windows workers, separate license server entries in environment variables with a semicolon (`;`) instead of a colon (`:`). For more information about configuring license environment variables, see [Connect customer-managed fleets to a license endpoint](cmf-ubl.md).
 + To use UBL fallback with customer-managed fleets, set up a license endpoint. For more information, see [Connect customer-managed fleets to a license endpoint](cmf-ubl.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

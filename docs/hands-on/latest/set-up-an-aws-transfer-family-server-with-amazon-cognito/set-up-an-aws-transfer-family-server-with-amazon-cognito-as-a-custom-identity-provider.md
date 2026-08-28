@@ -400,3 +400,7 @@ Paste the following commands in [AWS CloudShell](https://console.aws.amazon.com/
 <a name="conclusion"></a>
 
 In this tutorial, we introduced the AWS Transfer Family custom identity provider (IdP) solution for managing users and demonstrated how to deploy and use the solution with Amazon Cognito as identity provider. The combination of pre-built identity provider modules and flexibility to apply per-user settings to AWS Transfer Family sessions makes it a compelling option for customers implementing custom IdPs. Check out [AWS Transfer Family Custom IdP Solution](https://github.com/aws-samples/toolkit-for-aws-transfer-family) GitHub project for documentation on other supported identity providers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

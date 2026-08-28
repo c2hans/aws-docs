@@ -25,3 +25,7 @@ For information about changing settings once the node is already configured, see
 + [Configure Elemental Live notifications](config-wrkr-lv-cg-notifications.md)
 + [Enable user authentication](config-wrkr-lv-cg-auth.md)
 + [Add users](config-wrkr-lv-cg-users.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

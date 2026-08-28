@@ -24,6 +24,7 @@ DynamoDB Streams writes stream records in near-real time so that you can build a
 + [Enabling a stream](#Streams.Enabling)
 + [Reading and processing a stream](#Streams.Processing)
 + [DynamoDB Streams and Time to Live](time-to-live-ttl-streams.md)
++ [Tagging DynamoDB Streams](Tagging.Streams.md)
 + [Using the DynamoDB Streams Kinesis adapter to process stream records](Streams.KCLAdapter.md)
 + [DynamoDB Streams low-level API: Java example](Streams.LowLevel.Walkthrough.md)
 + [DynamoDB Streams and AWS Lambda triggers](Streams.Lambda.md)
@@ -155,3 +156,7 @@ Both methods empower you to stay on top of your DynamoDB Streams' evolving struc
 All data in DynamoDB Streams is subject to a 24-hour lifetime. You can retrieve and analyze the last 24 hours of activity for any given table. However, data that is older than 24 hours is susceptible to trimming (removal) at any moment.
 
 If you disable a stream on a table, the data in the stream continues to be readable for 24 hours. After this time, the data expires and the stream records are automatically deleted. There is no mechanism for manually deleting an existing stream. You must wait until the retention limit expires (24 hours), and all the stream records will be deleted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

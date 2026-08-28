@@ -28,3 +28,7 @@ You can use the data modeler to import and modify existing data models created u
 1. Choose **Save edits** to update the table.
 
 1. Continue to [Visualizing data models with NoSQL Workbench](workbench.vizualizer.md#workbench.datamodel.visualize) to visualize the data model that you updated.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

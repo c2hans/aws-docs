@@ -74,3 +74,7 @@ For more information, see [CREATE TYPE](https://docs.oracle.com/en/database/orac
 <a name="chap-oracle-aurora-mysql.tables.udt.mysql"></a>
 
 Currently, Amazon Aurora MySQL doesn’t provide a directly comparable alternative for user-defined types.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

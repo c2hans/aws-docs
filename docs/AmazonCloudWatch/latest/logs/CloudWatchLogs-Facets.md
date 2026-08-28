@@ -69,3 +69,7 @@ Facet management can be done using the field index policy. See [`field index`](h
 | 2 | PutAccountPolicy | Creates an account-level data protection policy, subscription filter policy, field index policy, transformer policy, or metric extraction policy that applies to all log groups or a subset of log groups in the account |
 | 3 | DeleteIndexPolicy | Deletes a log-group level field index policy that was applied to a single log group |
 | 4 | DeleteAccountPolicy | Deletes a CloudWatch Logs account policy |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

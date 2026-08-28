@@ -47,3 +47,7 @@ Amazon DCV offers the following features:
 There is no additional charge for using the Amazon DCV server on an Amazon EC2 instance. You pay the standard rates for the instance and other Amazon EC2 features that you use.
 
 Otherwise a license is required. For more information, see [Step 2: License the Amazon DCV Server](setting-up-license.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

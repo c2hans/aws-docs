@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 + [GAMEOPS03-BP03 Load test early and often](gameops03-bp03.md)
 + [GAMEOPS03-BP04 Adopt a deployment strategy that minimizes impact to players](gameops03-bp04.md)
 + [GAMEOPS03-BP05 Pre-scale infrastructure required to support peak requirements](gameops03-bp05.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

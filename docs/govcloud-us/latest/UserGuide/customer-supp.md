@@ -16,3 +16,7 @@ To sign up for AWS Customer Support for the AWS GovCloud (US) Region, go to the 
 Your support options are associated with your standard AWS account, but also apply to your AWS GovCloud (US) account. If you already have support on your standard AWS account, you aren’t required to sign up for support again.
 
 For more information about the differences with AWS Support in the AWS GovCloud (US) Regions, see [AWS Support](govcloud-support.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

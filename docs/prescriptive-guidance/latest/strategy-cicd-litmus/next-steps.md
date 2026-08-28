@@ -10,3 +10,7 @@ Use the [Litmus test for CI/CD pipelines](litmus-test-for-cicd-pipelines.md) sec
 *How do you know when you're finished? *Well, the answer is that a lot of organizations never actually finish. They stop somewhere along the way, at a suitable spot for their use case. Though a fully CI/CD pipeline is the best-case scenario, it depends heavily on the organizational situation and the stakeholders behind the decision. Stakeholders must decide which stage of the CI/CD implementation works best for their use case and how best to map the progression to the next phases.
 
 For more information about designing and building CI/CD pipelines, see [Resources](resources.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,3 +52,7 @@ By default, all data transmitted from the client computer running AWS ParallelCl
 + [Data protection in Amazon EFS](https://docs.aws.amazon.com/efs/latest/ug/efs-backup-solutions.html)
 + [Data protection in Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/dev/DataDurability.html)
 + [Data protection in FSx for Lustre](https://docs.aws.amazon.com/fsx/latest/LustreGuide/data-protection.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

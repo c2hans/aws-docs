@@ -28,3 +28,7 @@ Counters in this set are a subset of the ones in **DCV Server Connections**.
 | Received Bytes | Total number of bytes received via the channel |
 | Send Rate bits/sec | Rate in bits per second at which data is sent via the channel |
 | Sent Bytes | Total number of bytes sent via the channel |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ In the following sections, you can find step-by-step instructions for migrating 
 + [Step 7: Create a Migration Project](schema-conversion-sql-server-mysql-step-7.md)
 + [Step 8: Convert Database Objects](schema-conversion-sql-server-mysql-step-8.md)
 + [Step 9: Edit and Apply Your Converted Code](schema-conversion-sql-server-mysql-step-9.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ Loss of a single Amazon EC2 instance may result in the unavailability of a criti
 You should also consider the potential for logical data loss where the underlying hardware capacity still exists but the primary copies of the data have been corrupted or lost. This data loss could be due to malicious activity within your AWS account or due to human error.
 
 To protect against logical data loss, it is recommended that regular copies of the data are backed up to an Amazon S3 bucket. This bucket is replicated (using [Single-Region or Cross-Region replication](arch-guide-architecture-guidelines-and-decisions.md#arch-guide-s3-replication)) to another Amazon S3 bucket owned by a separate AWS account. With the appropriate AWS Identity and Access Management (IAM) controls between the two AWS accounts, this strategy ensures that not all copies of the data are lost due to malicious activity or human error.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

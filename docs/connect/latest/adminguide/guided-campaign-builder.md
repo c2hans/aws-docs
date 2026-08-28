@@ -428,3 +428,7 @@ After a campaign is running, you can stop it. You can also delete a campaign at 
 +  **Completed**: The campaign has finished running. All participants have entered the campaign and no participants are waiting to complete the campaign.
 
 ![Detailed view of campaign state options and actions available for campaign management.](http://docs.aws.amazon.com/connect/latest/adminguide/images/campaign-states-2.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

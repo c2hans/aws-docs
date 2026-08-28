@@ -117,3 +117,7 @@ devicetester_{{[linux | mac | win_x86-64]}} run-suite --group-id FreeRTOSVersion
 Starting in IDT v3.0.0, IDT checks online for newer test suites. For more information, see [Test suite versions](idt-test-suite-versions.md).
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

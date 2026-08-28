@@ -70,3 +70,7 @@ To create an alarm that performs an SSM Incident Manager action, you must have c
 1. Under **Preview and create**, confirm that the information and conditions are what you want, then choose **Create alarm**.
 
 You can also add alarms to a dashboard. For more information, see [Adding an alarm to a CloudWatch dashboard](add_alarm_dashboard.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

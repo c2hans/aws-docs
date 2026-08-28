@@ -56,3 +56,7 @@ You can copy Lightsail instance snapshots and block storage disk snapshots from 
 Here are a few additional steps you can perform after copying a snapshot to another Region in Lightsail:
 + Create a new instance from the copied snapshot after it’s available. For more information, see [Create an instance from a snapshot](lightsail-how-to-create-instance-from-snapshot.md).
 + Delete the source snapshot if you no longer need it. Otherwise, you will be billed for storing the snapshot.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,3 +28,7 @@ When your blue cluster is attached to RDS Proxy, the following process occurs du
 <a name="rds-proxy-blue-green-limitations"></a>
 + Your blue cluster must already be a target of the proxy before you create the blue/green deployment. You cannot add a blue cluster to an RDS Proxy after a blue/green deployment has been created for that cluster.
 + RDS Proxy with blue/green deployments is not supported for Aurora Global Databases.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

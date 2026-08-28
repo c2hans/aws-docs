@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/de
 | ☐ BP 5.2  |  Required  |  Implement least privilege policies for source and downstream systems.  |
 | ☐ BP 5.3  |  Required  |  Monitor the infrastructure changes and the user activities against the infrastructure.  |
 | ☐ BP 5.4  |  Required  |  Secure the audit logs that record every data or resource access in analytics infrastructure.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

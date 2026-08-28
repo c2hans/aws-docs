@@ -28,3 +28,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
  **Related video:**
 +  [Amazon Bedrock Guardrails: Implementing Custom Safeguards for Responsible AI Applications](https://aws.amazon.com/awstv/watch/02103dd95d3/)
 +  [AWS re:Inforce 2025 - Privacy-first generative AI: Establishing guardrails for compliance (COM224)](https://www.youtube.com/watch?v=GAjWNoxgkYY)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -157,3 +157,7 @@ Researchers can use machine learning models such as Bayesian networks to represe
 | Solution name  | Description  | Get started  |
 | --- | --- | --- |
 | Crop yield counterfactuals | Generate a counterfactual analysis of corn response to nitrogen. This solution learns the crop phenology cycle in its entirety using multi-spectral satellite imagery and [ground-level observations](https://www.sciencedirect.com/science/article/pii/S2352340921010283#tbl0001). | Find in Amazon SageMaker Studio Classic. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

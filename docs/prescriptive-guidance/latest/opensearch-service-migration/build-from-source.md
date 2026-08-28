@@ -22,3 +22,7 @@ Building from the source involves the following high-level steps:
 1. Configure an open-source tool (for example, Logstash or Fluent Bit) or a native AWS service (for example, AWS Lambda or AWS DMS) to convert data into JSON documents and load it periodically or continuously from the object store to the Amazon OpenSearch Service domain.
 
 For more information, see [Loading streaming data into Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/integrations.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

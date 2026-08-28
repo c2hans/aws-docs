@@ -17,3 +17,7 @@ Choose a Region to optimize your KPIs, including those related to performance, c
 +  An edge device might be on the move and it should connect to the closest Region to meet cost, network latency, and sustainability requirements.
 +  As per business and regulatory requirements, configure the critical part of the workload as active/active.
 +  Avoid short lived connections from the edge to avoid connection overhead of establishing a new connection.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

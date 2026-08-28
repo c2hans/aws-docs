@@ -26,3 +26,7 @@ The following table lists the major differences between each cluster mode:
 [1] See [Deprecation notifications](compliance-dep-notif.md#compliance-dep-notif-1) for details.
 
 Before choosing a cluster mode, note that a cluster’s mode (FIPS or non-FIPS) cannot be changed after it is created, so ensure you select the right mode for your needs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

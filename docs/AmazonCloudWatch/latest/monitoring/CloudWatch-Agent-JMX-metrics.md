@@ -306,3 +306,7 @@ Tomcat metrics are collected with the following dimensions:
 | [DEFAULT] | On Amazon EC2 by default, the host is also published as a dimension of metrics that are collected by the CloudWatch agent, unless you are using the `append_dimensions` field in the `metrics` section. See `omit_hostname` in the agent section of [Manually create or edit the CloudWatch agent configuration file](CloudWatch-Agent-Configuration-File-Details.md) for more information.<br />On Amazon EKS by default, k8s related context is also published as dimensions of metrics (`k8s.container.name`, `k8s.deployment.name`, `k8s.namespace.name`, `k8s.node.name`, `k8s.pod.name`, and `k8s.replicaset.name`). These can be filtered down using the `aggregation_dimensions` field. |
 | `proto_handler` | The `proto_handler` is an identifier for a connector, which is provided in the `<protocol>-<type>-<port>` format (for example, `http-nio-8080`). |
 | `direction` | The traffic direction. Possible values are `received` and `sent`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

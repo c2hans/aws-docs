@@ -58,3 +58,7 @@ You can either provide separate Docker images for the training algorithm and inf
 + Both Docker containers that you build and those provided by SageMaker AI can send messages to the `Stdout` and `Stderr` files. SageMaker AI sends these messages to Amazon CloudWatch logs in your AWS account.
 
 For more information about how to create SageMaker AI containers and how scripts are executed inside them, see the [SageMaker AI Training Toolkit](https://github.com/aws/sagemaker-training-toolkit) and [SageMaker AI Inference Toolkit](https://github.com/aws/sagemaker-inference-toolkit) repositories on GitHub. They also provide lists of important environmental variables and the environmental variables provided by SageMaker AI containers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

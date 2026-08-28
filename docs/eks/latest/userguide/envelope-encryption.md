@@ -165,3 +165,7 @@ Yes. Amazon EKS [supports using KMS key aliases](https://docs.aws.amazon.com/eks
 <a name="_can_i_still_backup_and_restore_my_cluster_resources_using_my_own_kubernetes_backup_solution"></a>
 
 Yes. You can use a Kubernetes backup solution (like [Velero](https://velero.io/)) for Kubernetes cluster disaster recovery, data migration, and data protection. If you run a Kubernetes backup solution that accesses the cluster resources through the API server, any data that the application retrieves will be decrypted before reaching the client. This will allow you to recover the cluster resources in another Kubernetes cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

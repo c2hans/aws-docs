@@ -31,3 +31,7 @@ When not asserted (high), the ExpressLink module is allowed to enter a low power
 
 **1.2.7**   Event (output) – Asynchronous Event Flag
 When asserted, the ExpressLink module indicates to the host processor that an event has occurred (disconnect error or message received on a subscribed topic) and a notification is available in the event queue waiting to be delivered. It is de-asserted when the event queue is emptied. A host processor can connect an interrupt input to this signal (rising edge) or can poll the event queue at regular intervals (see [7.2.1 EVENT? ⁞  Request the next event in the queue](elpg-event-handling.md#elpg-eventq-command)).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

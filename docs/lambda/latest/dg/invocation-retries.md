@@ -18,3 +18,7 @@ When you invoke a function indirectly, you need to be aware of the retry behavio
 + **Other accounts and clients** – When you grant access to other accounts, you can use [resource-based policies](access-control-resource-based.md) to restrict the services or resources they can configure to invoke your function. To protect your function from being overloaded, consider putting an API layer in front of your function with [Amazon API Gateway](services-apigateway.md). For information about handling API Gateway errors, see [Handling Lambda errors with an API Gateway API](services-apigateway-errors.md).
 
 To help you deal with errors in Lambda applications, Lambda integrates with services like Amazon CloudWatch and AWS X-Ray. You can use a combination of logs, metrics, alarms, and tracing to quickly detect and identify issues in your function code, API, or other resources that support your application. For more information, see [Monitoring, debugging, and troubleshooting Lambda functions](lambda-monitoring.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

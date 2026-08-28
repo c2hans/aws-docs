@@ -119,3 +119,7 @@ If you force the color space, some of it will be forced to be correct, but some 
 The best recommendation we can provide is to remove the metadata on the output side, as described in [scenario C](#color-space-scenario-remove).
 
 If you remove the metadata, Elemental Live might be able to handle the color space appropriately in the output. However, if the color map of the output is wrong in whole or in part, the video source was probably in a color space that Elemental Live can't handle.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

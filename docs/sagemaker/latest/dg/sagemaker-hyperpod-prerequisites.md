@@ -168,3 +168,7 @@ To enable Run As in your AWS account, follow the steps in [Turn on Run As suppor
 To start using SageMaker HyperPod and mapping data paths between the cluster and your FSx for Lustre ﬁle system, select one of the AWS Regions supported by SageMaker HyperPod. After choosing the AWS Region you prefer, you also should determine which Availability Zone (AZ) to use.
 
 If you use SageMaker HyperPod compute nodes in AZs different from the AZs where your FSx for Lustre ﬁle system is set up within the same AWS Region, there might be communication and network overhead. We recommend that you to use the same physical AZ as the one for the SageMaker HyperPod service account to avoid any cross-AZ traffic between SageMaker HyperPod clusters and your FSx for Lustre ﬁle system. Also, make sure that you have configured it with your VPC. If you want to use Amazon FSx as the main file system for storage, you must configure SageMaker HyperPod clusters with your VPC.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

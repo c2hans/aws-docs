@@ -11,3 +11,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 +  **IoT Thing** — AWS strongly recommends that a device is registered as a Thing in the Thing registry. A Thing is a cloud-based representation of a physical device that includes a unique name and static attributes.
 +  **X.509 Certificate** — Each Thing must have an attached X.509 certificate. The certificate should be unique to a single Thing. The X.509 certificate contains public information including the signing CA (source of trust), public key, and expiration date. The public key is part of an asymmetrical key pair which includes a private key that is only stored on the device to ensure secrecy.
 +  **IoT Policy** — An IoT Policy is a document that defines the actions that the device is authorized to perform. The IoT Policy must be attached to the X.509 Certificate. An IoT Policy can be shared among many devices with the use of policy variables.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

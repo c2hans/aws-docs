@@ -18,3 +18,7 @@ Additional third-party components might be integral to running business processe
 + Creating Amazon EBS-backed AMI images of key third-party systems, so you can launch them on demand in case of failures
 + Using multiple interfaces to control access to specific software components
 + Using multiple Availability Zones for critical third-party software components
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

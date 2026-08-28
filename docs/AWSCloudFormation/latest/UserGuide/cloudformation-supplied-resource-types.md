@@ -17,3 +17,7 @@ These resource types include:
 | StackSet | The `AWS::CloudFormation::StackSet` resource type creates or updates a CloudFormation StackSet, which is a container for stacks that can be deployed across multiple AWS accounts and Regions. | [Managing stacks with StackSets](what-is-cfnstacksets.md) |
 | Wait condition | The `AWS::CloudFormation::WaitCondition` resource type pauses stack creation or update until a specific condition is met, such as the successful completion of a long-running process or the availability of external resources.  | [Wait conditions](using-cfn-waitcondition.md) |
 | Wait condition handle | The `AWS::CloudFormation::WaitConditionHandle` resource type works together with the `AWS::CloudFormation::WaitCondition` resource type. It provides a presigned URL that's used to send signals indicating that a specific condition has been met. These signals allow the stack creation or update process to proceed. | [Wait conditions](using-cfn-waitcondition.md) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

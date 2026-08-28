@@ -27,3 +27,7 @@ To monitor push notification delivery status, we recommended you enable delivery
 <a name="channels-sms-best-practices-event-notifications"></a>
 
 For managing endpoints in an event driven fashion, you can make use of the [event notifications](application-event-notifications.md#application-event-notifications-sdk) functionality. This allows the configured Amazon SNS topic to fanout events to the subscribers such as a Lambda function, for platform application events of endpoint creation, deletion, updates, and delivery failures.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

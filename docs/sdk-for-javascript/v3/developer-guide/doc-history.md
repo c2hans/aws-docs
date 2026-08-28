@@ -35,3 +35,7 @@ The following table describes the important changes in the V3 release of the *AW
 | [AWS Elemental MediaConvert service examples updated](emc-examples.md) | Updated AWS Elemental MediaConvert service examples for AWS SDK for JavaScript V3. | October 20, 2020 |
 | [AWS Lambda service examples updated](lambda-examples.md) | Updated AWS Lambda service examples for AWS SDK for JavaScript V3. | October 20, 2020 |
 | [AWS SDK for JavaScript V3 Developer Guide preview](#doc-history) | Released pre-release version of the AWS SDK for JavaScript V3 Developer Guide. | October 19, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for JavaScript. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

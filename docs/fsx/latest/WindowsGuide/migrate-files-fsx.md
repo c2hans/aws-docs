@@ -19,3 +19,7 @@ To move data from an Amazon FSx file system using SSD storage to HDD storage, yo
 1. Take a backup of your SSD file system. For more information, see [Creating user-initiated backups](creating-backups.md).
 
 1. Restore the backup to a file system using HDD storage. For more information, see [Restoring backups to new file system](using-backups.md#restoring-backups).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

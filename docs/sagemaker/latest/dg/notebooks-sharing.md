@@ -64,3 +64,7 @@ The following are some important considerations about sharing and authentication
 <a name="notebooks-sharing-rtc"></a>
 
 A shared space consists of a shared JupyterServer application and a shared directory. A key benefit of a shared space is that it facilitates collaboration between members of the shared space in real time. Users collaborating in a workspace get access to a shared Studio Classic application where they can access, read, and edit their notebooks in real time. Real time collaboration is only supported for JupyterServer applications within a shared space. Users with access to a shared space can simultaneously open, view, edit, and execute Jupyter notebooks in the shared Studio Classic application in that space. For more information about shared spaced and real time collaboration, see [Collaboration with shared spaces](domain-space.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

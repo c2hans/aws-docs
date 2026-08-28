@@ -41,3 +41,7 @@ The following table lists the application versions that are available in each Am
 | Trino (PrestoSQL) | 479-amzn-1 | 476-amzn-1 | 475-amzn-0 | 470-amzn-0 | 467-amzn-2 | 467-amzn-1 | 467-amzn-0 | 457-amzn-0 | 446-amzn-0 | 446-amzn-0 | 442-amzn-0 | 436-amzn-0 | 435-amzn-0 | 426-amzn-1 |
 | Zeppelin | 0.11.1 | 0.11.1 | 0.11.1 | 0.11.1 | 0.11.1 | 0.11.1 | 0.11.1 | 0.11.1 | 0.11.1 | 0.11.1 | 0.11.1 | 0.10.1 | 0.10.1 | 0.10.1 |
 | ZooKeeper | 3.9.3-amzn-5 | 3.9.3-amzn-4 | 3.9.3-amzn-3 | 3.9.3-amzn-2 | 3.9.3-amzn-1 | 3.9.3-amzn-0 | 3.9.2-amzn-1 | 3.9.2-amzn-0 | 3.9.2-amzn-0 | 3.9.2-amzn-0 | 3.9.1-amzn-1 | 3.9.1-amzn-1 | 3.9.1-amzn-0 | 3.5.10 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

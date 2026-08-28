@@ -35,3 +35,7 @@ To install a specific version of the GDK CLI, replace {{versionTag}} with the ve
    + On Windows devices, add `{{PythonPath}}\\Scripts` to PATH, and replace {{PythonPath}} with the path to the Python folder on your device.
 
 You can now use the GDK CLI to create, build, and publish Greengrass components. For more information about how to use the GDK CLI, see [AWS IoT Greengrass Development Kit Command-Line Interface commands](greengrass-development-kit-cli-commands.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

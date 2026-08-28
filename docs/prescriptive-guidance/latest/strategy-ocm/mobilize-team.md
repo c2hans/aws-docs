@@ -199,3 +199,7 @@ Budgetary considerations must be given to change acceleration, organizational ch
 *When do you use it? *
 
 To support the creation of a robust budget, most change acceleration activities can be anticipated and planned in advance, with inputs from the Migration Readiness Assessment (MRA). Unplanned activities can surface throughout the cloud migration effort. These might require further investigation and assessment, and will require approval by the leadership team.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

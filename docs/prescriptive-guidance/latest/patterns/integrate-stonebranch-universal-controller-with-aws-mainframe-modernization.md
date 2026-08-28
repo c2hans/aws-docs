@@ -287,3 +287,7 @@ The code for this pattern is available in the [aws-mainframe-modernization-stone
 **Workflow status**
 
 ![FOOBAR task fails and the remaining three tasks are waiting.](http://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/images/pattern-img/01c6f9fa-87e6-459a-b694-5e03dd7f7952/images/5ea4e239-fbbe-4fa4-9ffa-b7a9443b7975.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ The Amazon VPC CNI plugin for Kubernetes provides networking for Pods. Use the f
 | Increase IP addresses for your node |  [Assign more IP addresses to Amazon EKS nodes with prefixes](cni-increase-ip-addresses.md)  |
 | Use security groups for Pod network traffic |  [Assign security groups to individual Pods](security-groups-for-pods.md)  |
 | Use multiple network interfaces for Pods |  [Attach multiple network interfaces to Pods](pod-multiple-network-interfaces.md)  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

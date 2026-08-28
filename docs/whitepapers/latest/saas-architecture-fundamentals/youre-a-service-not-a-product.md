@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  In this mode, we think about this SaaS service as we would with any other service we might consume. If we’re in a restaurant, we certainly care about the food, but we also care about the service. How quickly does your server come to your table, how often do they refill your water, how fast does the food come—these are all measures of the service experience. This is the same mindset and value system that should shape how we think about building a SaaS service.
 
  This *as-a-service* model should have a heavy influence on how you build your teams and your service. Your backlog of work will now put these experience attributes on equal or higher footing than features and functions. The business will also view these as foundational to the long-term growth and success of your SaaS offering.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

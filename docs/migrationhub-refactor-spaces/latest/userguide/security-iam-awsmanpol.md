@@ -789,3 +789,7 @@ View details about updates to AWS managed policies for Refactor Spaces since thi
 | [AWSMigrationHubRefactorSpacesFullAccess](#security-iam-awsmanpol-AWSMigrationHubRefactorSpacesFullAccess) – New policy made available at launch | The `AWSMigrationHubRefactorSpacesFullAccess` policy grants full access to Refactor Spaces, the Refactor Spaces console features and other related AWS services. | November 29, 2021 |
 | [MigrationHubRefactorSpacesServiceRolePolicy](using-service-linked-roles.md#slr-permissions) – New policy made available at launch | `MigrationHubRefactorSpacesServiceRolePolicy` provides access to AWS resources managed or used by AWS Migration Hub Refactor Spaces. The `AWSServiceRoleForMigrationHubRefactorSpaces` service-linked role uses this policy. | November 29, 2021 |
 | Refactor Spaces started tracking changes | Refactor Spaces started tracking changes for its AWS managed policies. | November 29, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub Refactor Spaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-refactor-spaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,7 +20,7 @@ To create your CloudWatch Events rules:
 
 1. For **Event source**, select **Event Pattern** as the event source, and then select **Build custom event pattern**.
 
-1. Paste one following event pattern into the text area, depending on the event rule you wish to create:
+1. Paste one of the following event patterns into the text area, depending on the event rule you wish to create:
 
    1. To catch all MGN events:
 
@@ -55,3 +55,7 @@ To create your CloudWatch Events rules:
 1. Choose **Configure details.**
 
 1. For **Rule definition**, type a name and description for your rule and choose **Create rule**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -11,3 +11,7 @@ See the following for more information about this feature.
 + [Writing to Kinesis Data Firehose Using Amazon MSK - Amazon Kinesis Data Firehose](https://docs.aws.amazon.com/firehose/latest/dev/writing-with-msk.html) in the *Amazon Data Firehose Developer Guide*
 + Blog: [Amazon MSK Introduces Managed Data Delivery from Apache Kafka to Your Data Lake](https://aws.amazon.com/blogs/aws/amazon-msk-introduces-managed-data-delivery-from-apache-kafka-to-your-data-lake/)
 + Lab: [Delivery to Amazon S3 using Firehose](https://catalog.us-east-1.prod.workshops.aws/workshops/c2b72b6f-666b-4596-b8bc-bafa5dcca741/en-US/amazon-data-firehose-integration)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

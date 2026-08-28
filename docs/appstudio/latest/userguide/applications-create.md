@@ -38,3 +38,7 @@ Use the following procedure to create an application in App Studio.
    1. In the **Connect to existing data** dialog box, add any existing data sources to your app by select the **Connector** that provides App Studio access to the data sources, then select the **Tablse**, and choose **Next**. You can skip this step and add data sources later by choosing **Skip**.
 
    1. Once your app is created, choose **Edit app** to start editing your app. To learn about building from an empty app, see [Tutorial: Start building from an empty app](getting-started-tutorial-empty.md). For general information about how building in App Studio works, see [How AWS App Studio works](how-it-works.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

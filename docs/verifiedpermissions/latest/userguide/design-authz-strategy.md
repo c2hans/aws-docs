@@ -133,3 +133,7 @@ Each multi-tenant application is different. Carefully compare the two approaches
 If your application doesn't require tenant-specific policies and uses a single [identity source](identity-sources.md#identity-sources.title), one shared policy store for all tenants is likely to be the most effective solution. This results in a simpler authorization flow and global policy management. Off-boarding a tenant using one shared policy store requires less effort because the application does not need to delete tenant-specific policies.
 
 But if your application requires many tenant-specific policies, or uses multiple [identity sources](identity-sources.md#identity-sources.title), per-tenant policy stores are likely to be most effective. You can control access to tenant policies with IAM policies that grant per-tenant permissions to each policy store. Off-boarding a tenant involves deleting their policy store; in a shared-policy-store environment, you must find and delete tenant-specific policies.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

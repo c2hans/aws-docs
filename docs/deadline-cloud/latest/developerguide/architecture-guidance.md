@@ -290,3 +290,7 @@ This integration pattern enables software vendors to provide enterprise-grade re
 <a name="hybrid-render-farm"></a>
 
 A studio that already runs a render farm on-premises can add cloud capacity to process peak workloads without buying more hardware. In a hybrid farm, your on-premises workers run as a customer-managed fleet, your cloud workers run as a service-managed fleet or a customer-managed fleet of Amazon EC2 instances, and both fleets share a queue. Because the setup differs across fleet types, you plan for job distribution, application environments, licensing, and asset access so that one queue works everywhere. For more information, see [Extend your on-premises render farm to the cloud](hybrid-rendering.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

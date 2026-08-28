@@ -16,3 +16,7 @@ To view the list of available Amazon EMR clusters from within Studio:
    The list displays clusters in the following stages: **Bootstrapping**, **Starting** **Running**, **Waiting**. You can narrow down the displayed clusters by their current status using the filter icon.
 
 1. Choose a particular **Running** cluster you want to connect to, and then refer to [Connect to an Amazon EMR cluster from SageMaker Studio or Studio Classic](connect-emr-clusters.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

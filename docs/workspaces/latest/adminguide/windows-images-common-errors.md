@@ -245,3 +245,7 @@ To Disable Bitlocker:
 By default, custom images reach out to "time.windows.com" as the default NTP server. If the NTP server is not reachable, time synchronization issues can occur, causing RDP/Skylight certificate validation failures and SSL connection problems that prevent WorkSpaces creation.
 
 If you encounter time synchronization issues, update the NTP server to use the Amazon Time Sync Service at 169.254.169.123. For more information, see [Configure the time for your Windows instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/configure-ec2-ntp.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

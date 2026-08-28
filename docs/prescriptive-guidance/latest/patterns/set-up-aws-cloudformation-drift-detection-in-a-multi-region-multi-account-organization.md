@@ -95,3 +95,7 @@ Because stack sets are made of stacks, you can use this solution. Stack instance
 <a name="attachments-735d0987-b953-47f8-a9bc-b02a88957ee5"></a>
 
 To access additional content that is associated with this document, download and unzip the following file: [attachment.zip](samples/p-attach/735d0987-b953-47f8-a9bc-b02a88957ee5/attachments/attachment.zip)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

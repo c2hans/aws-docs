@@ -77,3 +77,7 @@ Stream manager uses the stream's `sizeThresholdForMultipartUploadBytes` property
 + [Manage data streams on Greengrass core devices](manage-data-streams.md)
 + [Use StreamManagerClient to work with streams](work-with-streams.md)
 + [Export configurations for supported AWS Cloud destinations](stream-export-configurations.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

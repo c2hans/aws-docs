@@ -51,3 +51,7 @@ kubectl get pods --namespace kubecost
 1. To track costs at a cluster level, tag your Amazon EKS resources for billing. For more information, see [Tagging your resources for billing](eks-using-tags.md#tag-resources-for-billing).
    +  **Cost allocation** – View monthly Amazon EKS costs and cumulative costs for each of your namespaces and other dimensions over the past seven days. This is helpful for understanding which parts of your application are contributing to Amazon EKS spend.
    +  **Assets** – View the costs of the AWS infrastructure assets that are associated with your Amazon EKS resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

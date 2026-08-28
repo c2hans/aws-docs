@@ -106,3 +106,7 @@ You can register a delegated administrator using the Amazon S3 console, the AWS 
 
 **To deregister a delegated administrator for Amazon S3 Storage Lens**
 You can deregister a delegated administrator using the Amazon S3 console, the AWS CLI or any of the AWS SDKs. To deregister a delegated administrator using the Amazon S3 console, see [Deregistering a delegated administrator for S3 Storage Lens](https://docs.aws.amazon.com/AmazonS3/latest/user-guide/storage_lens_with_organizations.html#storage_lens_with_organizations_deregistering_delegated_admins) in the *Amazon Simple Storage Service User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

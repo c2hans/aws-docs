@@ -43,3 +43,7 @@ No, we don't recommend using the the default file share, **share**, as provision
 **Q: How can I create custom file shares for specific organizations in my business?**
 
 See [File Shares](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/managing-file-shares.html) for instructions on creating custom file shares. Restrict access on each file share using the principle of least privilege.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

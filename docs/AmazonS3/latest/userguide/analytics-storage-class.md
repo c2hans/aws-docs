@@ -129,3 +129,7 @@ Use the scroll bars to see the rest of the table.
 | CumulativeAccessRatio | Metric | Number | Cumulative access ratio. This ratio is used to represent the usage/byte heat on any given age group to help determine if an age group is eligible for transition to STANDARD\_IA.  |
 | ObjectAgeForSIATransition | Metric | Integer In Days  | This value exists only where the `AgeGroup=’ALL’` and storage class = STANDARD. It represents the observed age for transition to STANDARD\_IA. |
 | RecommendedObjectAgeForSIATransition  | Metric | Integer In Days  | This value exists only where the `AgeGroup=’ALL’` and storage class = STANDARD. It represents the object age in days to consider for transition to STANDARD\_IA after the `ObjectAgeForSIATransition` stabilizes. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

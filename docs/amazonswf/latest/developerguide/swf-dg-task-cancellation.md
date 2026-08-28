@@ -77,3 +77,7 @@ If you want the activity worker to indicate that the work for the activity task 
 When Amazon SWF receives the `RespondActivityTaskCompleted` or `RespondActivityTaskCanceled` request, it updates the workflow execution history and schedules a decision task to inform the decider.
 
 Program the decider to process the decision task and return any additional decisions. If the activity task is successfully canceled, program the decider to perform the tasks needed to continue or close the workflow execution. If the activity task isn't successfully canceled, program the decider to accept the results, ignore the results, or schedule any required cleanup.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

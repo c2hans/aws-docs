@@ -132,3 +132,7 @@ If you are using TLS 1.1 and below, you need to upgrade your tools to support th
 We require your TLS protocol to be TLS 1.2 and recommend TLS 1.3. The new domain does not support TLS 1.1 and TLS 1.0.
 
 We recommend that you review the new TLS policy: [ALB FS-1-2-Res-2019-08](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/create-https-listener.html#tls-security-policies). For reference, you can find the previous TLS policy here: [CloudFront TLSv1](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/secure-connections-supported-viewer-protocols-ciphers.html#secure-connections-supported-ciphers).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

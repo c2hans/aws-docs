@@ -45,3 +45,7 @@ You can add sample utterances in the intent editor, visual conversation builder,
 1. To edit and delete sample utterances, send an `UpdateIntent` request. The list of utterances you provide in the `sampleUtterances` field replaces the existing utterances.
 **Important**
 Any field that you leave blank in the `UpdateIntent` request will cause existing configurations in the intent to be deleted. Use the [DescribeIntent](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_DescribeIntent.html) operation to return the bot configuration and copy any configurations that you do not want to be deleted into the `UpdateIntent` request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

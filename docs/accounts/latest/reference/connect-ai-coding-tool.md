@@ -63,3 +63,7 @@ When you use our new AWS experience, your agent will install the AWS MCP server,
 + **High**: While you're building, the skill will provide a high level of support. It will suggest improvements or alternatives to your architecture.
 
 After you've made the connection between your AI coding tool and your project, make sure you always sign into your project before you log in using `aws login` with your agent.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

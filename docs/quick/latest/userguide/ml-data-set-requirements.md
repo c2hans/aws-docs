@@ -23,3 +23,7 @@ The data must have the following properties:
 + If you want to analyze anomalies or forecasts, you also need at least one date dimension.
 
 If you don't have a dataset to get started, you can download this sample dataset: [ML Insights Sample Dataset VI](samples/ml-insights.csv.zip). After you have a dataset ready, create a new analysis from the dataset.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

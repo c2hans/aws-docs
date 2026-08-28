@@ -219,3 +219,7 @@ You can set this parameter at the cluster level so that all instances remain con
 + Monitor detailed per-query and database counter metrics – Track metrics including `idle_in_transaction_count` (number of sessions in idle in transaction state) and `idle_in_transaction_max_time` (duration of the longest running idle transaction) to detect long-running transactions.
 + Configure `idle_in_transaction_session_timeout` – Set this parameter in your parameter group to automatically terminate idle transactions after a specified duration.
 + Proactive monitoring – Monitor for high occurrences of `LWLock:SubtransBuffer` and `LWLock:SubtransSLRU` wait events to detect subtransaction-related contention before it becomes critical.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

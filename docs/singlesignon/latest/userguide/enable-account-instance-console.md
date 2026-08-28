@@ -18,3 +18,7 @@ Enabling account instances of IAM Identity Center for member accounts is a one-t
 1. In the **Account instances of IAM Identity Center** section, choose **Enable account instances of IAM Identity Center**.
 
 1. In the **Enable account instances of IAM Identity Center** dialog box, confirm that you want to allow member accounts in your organization to create account instances by choosing **Enable**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

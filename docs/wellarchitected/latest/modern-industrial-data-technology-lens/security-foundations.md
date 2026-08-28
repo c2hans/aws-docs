@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 + [MIDASEC01-BP04 Automate monitoring and reporting with cloud-ready compliance tools](midasec01-bp04.md)
 + [MIDASEC01-BP05 Implement incident response playbooks](midasec01-bp05.md)
 + [MIDASEC01-BP06 Establish a communication protocol between IT and OT systems](midasec01-bp06.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

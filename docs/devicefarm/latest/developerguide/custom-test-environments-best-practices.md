@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/devicefarm/latest/developerguide/custom-
 
 **Security**
 +  ** Avoid storing or logging sensitive variables (like AWS keys) in your test spec file. ** Test spec files, the test spec generated scripts, and the test spec script's logs are all provided as downloadable artifacts at the end of the test execution. This may lead to the unintended exposure of secrets for other users in your account with read access to your test run.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

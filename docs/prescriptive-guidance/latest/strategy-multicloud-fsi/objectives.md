@@ -13,3 +13,7 @@ The adoption of a multicloud strategy is typically based on the following busine
 + **Generating business value** – The key reason why an FI should look to operate in multiple CSPs is when it *adds value* for the business. An example would be where a key service that enables value to your business is available on only one CSP.
 
 For more information about business drivers, see [Tenet 1](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-multicloud/tenet-1.html) in *Proven practices for developing a multicloud strategy*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

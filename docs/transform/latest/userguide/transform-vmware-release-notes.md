@@ -5,7 +5,9 @@ source_url: https://docs.aws.amazon.com/transform/latest/userguide/transform-vmw
 # Release notes
 <a name="transform-vmware-release-notes"></a>
 
-The following release notes cover the latest changes to [Migrations (including VMware)](transform-app-vmware.md). For a list of changes across the full AWS Transform service, see the [changelog](https://docs.aws.amazon.com/transform/latest/userguide/change-log.html). For supported AWS Transform regions, see [Supported Regions](https://docs.aws.amazon.com/transform/latest/userguide/regions.html). For supported target regions, see the [account connector setup page](https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-connect-target-account.html#transform-vmware-cta-supported-regions).
+The following release notes cover the latest changes to [Migrations (including VMware)](transform-app-vmware.md). For a list of changes across the full AWS Transform service, see the [changelog](https://docs.aws.amazon.com/transform/latest/userguide/change-log.html).
+
+For supported AWS Transform regions, see [Supported Regions](https://docs.aws.amazon.com/transform/latest/userguide/regions.html). For supported target regions, see the [account connector setup page](https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-connect-target-account.html#transform-vmware-cta-supported-regions).
 
 ## August 2026
 <a name="transform-vmware-release-notes-august-2026"></a>
@@ -76,3 +78,7 @@ The following release notes cover the latest changes to [Migrations (including V
 <a name="transform-vmware-release-notes-may-2025"></a>
 + Initial service launch of [Migrations (including VMware)](transform-app-vmware.md), providing end-to-end migration capabilities including [discovery](https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-discover-source-data.html), assessment, [migration planning](https://docs.aws.amazon.com/transform/latest/userguide/transform-vmware-review-groupings-and-waves.html), network migration, and server rehost.
 + Supported migration execution in 12 [target regions](https://docs.aws.amazon.com/transform/latest/userguide/transform-app-vmware-acct-connections.html): US East (N. Virginia), US West (Oregon), Canada (Central), South America (São Paulo), Europe (Frankfurt), Europe (London), Europe (Paris), Asia Pacific (Mumbai), Asia Pacific (Seoul), Asia Pacific (Tokyo), Asia Pacific (Singapore), and Asia Pacific (Sydney).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

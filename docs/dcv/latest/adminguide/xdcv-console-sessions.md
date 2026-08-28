@@ -117,3 +117,7 @@ If you need to revert to the stock X server:
 + **Ubuntu:** Remove the symlink and then run `dpkg-divert --package nice-xdcv --rename --remove /usr/bin/Xorg` to restore the original binary.
 + **RHEL/Rocky:** `systemctl disable --now xdcv-console.path xdcv-console-update.service`.
 + **Amazon Linux 2023:** `update-alternatives --remove X /usr/bin/Xdcv-console`, then restart gdm.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

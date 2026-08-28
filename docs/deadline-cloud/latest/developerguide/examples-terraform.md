@@ -18,3 +18,7 @@ terraform apply
 ```
 
 The [knfsd\_xregion\_cache](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/terraform/farm_templates/knfsd_xregion_cache) configuration on the GitHub website deploys a service-managed fleet that reads a distant NFS filer through a KNFSD read cache over a VPC resource endpoint. Use it as a starting point when your fleet caches reads from an on-premises or otherwise-distant filer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

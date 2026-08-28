@@ -83,3 +83,7 @@ GET wss://transcribestreaming.{{us-west-2}}.amazonaws.com:8443/medical-stream-tr
 ```
 
 For more information on creating pre-signed URIs, see [Setting up a WebSocket stream](streaming-setting-up.md#streaming-websocket).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

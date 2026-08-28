@@ -230,3 +230,7 @@ Your pipeline should have everything for running an end-to-end native AWS contin
 1. Choose your pipeline from the list.
 
 1. Watch the pipeline progress through its stages. Your pipeline should complete and your action pushes the Docker image to ECR that was created from your code change.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ To navigate to the **Dashboard**, choose **Dashboard** from the Migration Hub co
 | All applications | On the **Dashboard** in the **Discovery summary** section, under **Applications**, choose the number. | In the navigation pane, under **Migrate**, choose **Applications**. |
 | Application details | On the **Dashboard** in the **Most recently updated applications** section, choose the name of the application to see details. |  1.  In the navigation pane, under **Migrate**, choose **Applications**. <br />2.  In the **Application name** column, choose the name of the application.   |
 | Server details |  1.  On the **Dashboard** in the **Discovery summary** section, under **Servers**, choose the number. <br />2.  In the **Server info** column, choose the server name.   |  1.  In the navigation pane, under **Discover**, choose **Servers**. <br />2.  In the **Server info** column, choose the name of the server.   |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

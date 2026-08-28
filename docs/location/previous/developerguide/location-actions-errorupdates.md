@@ -262,3 +262,7 @@ Beginning August 1, 2023, the Amazon Location team is changing API error message
 | 402 | ServiceQuotaExceededException | Geofence collections per account exceeded quota limits. For more info, see https://aws.amazon.com/premiumsupport/knowledge-center/manage-service-limits/ | Geofence collection resources have exceeded the quota per account per region. For more information, see https://aws.amazon.com/premiumsupport/knowledge-center/manage-service-limits/. |
 | 409 | ConflictException | collection already exists: <GeofenceCollectionName> | Geofence Collection already exists: <GeofenceCollectionName>. |
 | 409 | ConflictException | Resource conflict error | Geofence already exists: <GeofenceName>. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

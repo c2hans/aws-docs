@@ -124,3 +124,7 @@ You are responsible for keeping your Amazon MWAA versions current. We urge you t
 Legacy versions are not generally available and we no longer support them. We might restrict access to any legacy version at any time if it poses a security or liability risk. Continuing on a legacy version might result in your content becoming unavailable, corrupted, or unrecoverable. SLA exceptions apply.
 Legacy environments and related software might contain bugs, errors, defects, and harmful components. We provide the legacy version as is, notwithstanding any contrary terms in your agreement.
 For more information about shared responsibility, see [Shared responsibility](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/shared-responsibility.html) in the *AWS Well-Architected Framework*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

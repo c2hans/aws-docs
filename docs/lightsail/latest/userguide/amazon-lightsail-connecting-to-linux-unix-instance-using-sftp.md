@@ -95,3 +95,7 @@ If you are using Windows, change the default file type to **All files** when sea
 ![FileZilla successfully connected to an instance in Lightsail.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-filezilla-sftp-successfully-connected.png)
 
    For more information about using FileZilla, including how to transfer files between your local computer and your instance, see the [FileZilla Wiki page](https://wiki.filezilla-project.org/Using).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

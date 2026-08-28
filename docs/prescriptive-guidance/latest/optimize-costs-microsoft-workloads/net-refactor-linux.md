@@ -49,3 +49,7 @@ After your application is ported to Linux, you can use [AWS App2Container](https
 + [AWS Porting Assistant for .NET is now open source tool](https://aws.amazon.com/blogs/opensource/open-sourcing-the-porting-assistant-for-net/) with the source code and compatibility analysis components of the assessment. This can encourage your developers to use and share .NET porting knowledge and best practices.
 + You can port .NET framework applications to modern .NET on Linux by using the AWS Toolkit for .NET Refactoring. For more information, see the [Accelerate .NET modernization with AWS Toolkit for .NET Refactoring](https://aws.amazon.com/blogs/modernizing-with-aws/aws-toolkit-for-net-refactoring-launch/) post on the Microsoft Workloads on AWS blog.
 + You can [accelerate containerization and migration of ASP.NET Core applications to AWS using AWS App2Container](https://aws.amazon.com/blogs/modernizing-with-aws/containerize-asp-net-core-applications-using-aws-app2container/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

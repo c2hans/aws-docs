@@ -85,3 +85,7 @@ Choose **Create** to create the knowledge base.
 <a name="onedrive-kb-admin-connection-sync"></a>
 
 After you choose **Create**, you are returned to the knowledge base list page. The knowledge base might take a few minutes to finish provisioning. Once creation is complete, an initial sync is automatically triggered. You do not need to start it manually.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

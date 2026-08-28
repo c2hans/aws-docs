@@ -16,3 +16,7 @@ Because your resources might fail at any time, we recommend creating frequent sn
 + [View and manage virtual computer and disk snapshots in Lightsail for Research](view-snapshots.md)
 + [Create a virtual computer or disk from a snapshot](create-computer-from-snapshot.md)
 + [Delete a snapshot in the Lightsail for Research console](delete-snapshot.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail for Research. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail-for-research` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

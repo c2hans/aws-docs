@@ -133,3 +133,7 @@ The following table lists gateway egress source metrics that AWS Elemental Media
 |  EgressBridgeSourceTSSyncLoss  | The number of times that a transport stream sync loss error occurred. This error happens after two or more consecutive transport stream byte errors.<br />Units: Count<br />Valid dimension sets:+  Bridge ARN, Bridge Source Name, Flow ARN <br />+  Gateway ARN, Instance ID, Availability Zone  |
 |  EgressBridgeSourceTotalPackets  | The total number of packets that were received.Units: Count<br />Valid dimension sets:+  Bridge ARN, Bridge Source Name, Flow ARN <br />+  Gateway ARN, Instance ID, Availability Zone  |
 |  EgressBridgeSourceTransportError  | The number of times that a primary transport error occurred. This error indicates that the transport stream packet is unusable. When this error occurs, ignore all other TR 101 290 errors for this packet.Units: Count<br />Valid dimension sets:+  Bridge ARN, Bridge Source Name, Flow ARN <br />+  Gateway ARN, Instance ID, Availability Zone  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

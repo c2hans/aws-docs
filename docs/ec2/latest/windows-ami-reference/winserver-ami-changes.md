@@ -26,3 +26,7 @@ EC2 metal instance sizes and some EC2 instance types do not support UEFI boot mo
 Note the following additional important differences for instances created from Windows Server 2016 and later AMIs.
 + By default, EC2Launch does not initialize secondary EBS volumes. You can configure EC2Launch to initialize disks automatically by either scheduling the script to run or by calling EC2Launch in user data. For the procedure to initialize disks using EC2Launch, see "Initialize Drives and Drive Letter Mappings" in [Configure EC2Launch](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2launch.html#ec2launch-config).
 + If you previously enabled CloudWatch integration on your instances by using a local configuration file (`AWS.EC2.Windows.CloudWatch.json`), you can configure the file to work with the SSM Agent on instances created from Windows Server 2016 and later AMIs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

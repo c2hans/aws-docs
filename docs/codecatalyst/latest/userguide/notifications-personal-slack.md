@@ -26,3 +26,7 @@ This option is not configurable unless a user with the **Space administrator** r
 If the connection status does not change, check to see if an error occurred connecting the Slack workspace. You might have to scroll up to see the error.
 
 1. To stop receiving personal Slack notifications, choose the connected Slack workspace, and then choose **Disconnect Slack ID**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

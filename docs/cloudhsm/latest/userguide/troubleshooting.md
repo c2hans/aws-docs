@@ -22,3 +22,7 @@ If you encounter problems with AWS CloudHSM, the following topics can help you r
 + [Custom IVs with non-compliant length for AES key wrap in AWS CloudHSM](troubleshooting-aes-keys.md)
 + [Resolving AWS CloudHSM cluster creation failures](troubleshooting-create-cluster.md)
 + [Retrieving AWS CloudHSM client configuration logs](troubleshooting-log-collection-script.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

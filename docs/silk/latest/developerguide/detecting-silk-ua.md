@@ -78,3 +78,7 @@ if (match) {
 We use logical OR `||` and the conditional operator `?` to provide appropriate default values in case of nonmatches. Of course, if you're doing user agent detection in a production website, you probably want to do something other than call the `alert()` method.
 
 To learn more about the Silk user agent, see [Learn about user agent strings](user-agent.md). To learn more about regular expressions in JavaScript, see [Regular Expressions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Regular_Expressions) and [RegExp](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RegExp) at the [Mozilla Developer Network](https://developer.mozilla.org/en-US/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Silk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query silk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

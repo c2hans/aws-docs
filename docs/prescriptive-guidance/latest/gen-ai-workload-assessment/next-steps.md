@@ -26,3 +26,7 @@ After you complete the generative AI workload assessment, follow these steps:
 1. **Get feedback on the proposed architecture**
    + Stakeholder engagement: Engage with stakeholders to present the proposed architecture and gather feedback.
    + Iterative improvement: Use the feedback to refine and improve the solution, and confirm that it meets the needs and expectations of all stakeholders.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

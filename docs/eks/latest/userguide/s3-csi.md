@@ -22,3 +22,7 @@ Static provisioning refers to using an existing Amazon S3 bucket that is specifi
 + Volumes mounted with the Mountpoint for Amazon S3 CSI driver don’t support all POSIX file-system features. For details about file-system behavior, see [Mountpoint for Amazon S3 file system behavior](https://github.com/awslabs/mountpoint-s3/blob/main/doc/SEMANTICS.md) on GitHub.
 
 For details on deploying the driver, see [Deploy the Mountpoint for Amazon S3 driver](s3-csi-create.md). For details on removing the driver, see [Remove the Mountpoint for Amazon S3 Amazon EKS add-on](removing-s3-csi-eks-add-on.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

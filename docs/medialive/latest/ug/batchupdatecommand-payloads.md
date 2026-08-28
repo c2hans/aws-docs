@@ -17,3 +17,7 @@ The JSON payload for the command is different for the different interfaces:
 + In the AWS SDKs, the JSON payload is represented by constructs that are suitable to that SDK language.
 
 To get more familiar with individual actions, we recommend that you use the MediaLive console to create an action. After you create the action, use the [DescribeSchedule](viewing-schedule-using-cli.md) command in the appropriate interface (for example, the AWS CLI or an SDK) to obtain the raw JSON payload for the entire schedule. You can then copy individual actions and save them as models to use when working programmatically.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -68,3 +68,7 @@ To learn how to configure a pipeline that continually tests a compiled app (such
 1. In the CodePipeline pane, choose **Save pipeline change**, and then choose **Save change**.
 
 1. To submit your changes and start a pipeline build, choose **Release change**, and then choose **Release**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

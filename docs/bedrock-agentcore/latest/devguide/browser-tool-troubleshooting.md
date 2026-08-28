@@ -261,3 +261,7 @@ The following table describes common errors when using the InvokeBrowser API for
 + Verify that coordinate values are within the session viewport dimensions. Use the `screenshot` action to capture the current screen and confirm the visible area.
 + Check that the browser session is still active and has not timed out.
 + Ensure your IAM identity has the `bedrock-agentcore:InvokeBrowser` permission.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,3 +55,7 @@ The high-level process flow for the guidance components deployed with the AWS Cl
 1. The [OpenSearch Dashboards](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/dashboards.html) can be used to view usage history, logged utterances, no hits utterances, positive user feedback, and negative user feedback, and also provides the ability to create custom reports.
 
 1. Using [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/), the admins can monitor service logs and use the CloudWatch dashboard created by QnABot to monitor deployment’s operational health.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

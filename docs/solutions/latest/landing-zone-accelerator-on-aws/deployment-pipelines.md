@@ -34,3 +34,7 @@ This AWS CloudFormation stack is deployed by the AWS CDK with the following reso
 + An AWS IAM service-linked role is created to allow [AWS CodeStar](https://aws.amazon.com/codestar/) notifications to publish CodePipeline pipeline run events to the Amazon SNS topics.
 + A CloudWatch alarm is created to alarm on pipeline processing failures.
 + An Amazon S3 bucket that’s used for pipeline artifact storage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

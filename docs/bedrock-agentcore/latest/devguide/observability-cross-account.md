@@ -185,3 +185,7 @@ You can filter data by account in the sessions and traces tables:
 +  [Get started with AgentCore Observability](observability-get-started.md)
 +  [View observability data for your Amazon Bedrock AgentCore agents](observability-view.md)
 +  [Observability Access Manager API Reference](https://docs.aws.amazon.com/OAM/latest/APIReference/Welcome.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

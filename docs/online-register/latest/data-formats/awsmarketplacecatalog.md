@@ -29,3 +29,7 @@ AWS Marketplace Catalog provides the following APIs for data retrieval.
 | <a name="aws-marketplace-ListTaxComplianceProfiles"></a>[ListTaxComplianceProfiles](https://docs.aws.amazon.com/marketplace/latest/APIReference/compliance-api-access-control.html) | List tax compliance profiles with optional filters | List |
 | <a name="aws-marketplace-ListVerificationEvidence"></a>[ListVerificationEvidence](https://docs.aws.amazon.com/marketplace/latest/APIReference/compliance-api-access-control.html) | List verification evidence resources with summary metadata | List |
 | <a name="aws-marketplace-ListVerifications"></a>[ListVerifications](https://docs.aws.amazon.com/marketplace/latest/APIReference/compliance-api-access-control.html) | List all verification statuses across jurisdictions and verification types | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

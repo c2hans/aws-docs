@@ -48,3 +48,7 @@ For installation instructions, see [Install Power BI Report Server](https://lear
 <a name="on-premises-data-gateway"></a>
 
 The Microsoft on-premises data gateway is a commonly-deployed component that can increase the security and performance of Power BI deployments. It allows the Power BI service to access privatized data sources, which are located in another facility and accessible by internal network connectivity between the data source and the data gateway. Although it is typically installed as a server component, you can also install a personal mode on your local computer as an application. This whitepaper focuses only on the standard (server) mode. For additional information, refer to [Connecting the Microsoft Power BI service to AWS data sources](https://docs.aws.amazon.com/en_us/whitepapers/latest/using-power-bi-with-aws-cloud/connecting-the-microsoft-power-bi-service-to-aws-data-sources.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ Within each category, Macie can detect multiple types of sensitive data. The top
 + [Detailed reference by sensitive data category](mdis-reference.md)
 
 For a list of managed data identifiers that we recommend for jobs, see [Managed data identifiers recommended for sensitive data discovery jobs](discovery-jobs-mdis-recommended.md). For a list of managed data identifiers that we recommend and are used by default for automated sensitive data discovery, see [Default settings for automated sensitive data discovery](discovery-asdd-settings-defaults.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ The conference calling system must be compatible with Amazon Chime to call in to
 <a name="video-configs"></a>
 
 You can share video from a web cam or a mobile device's built-in camera. You can use from the desktop and web app, as well as the mobile app. You can also use cameras connected to a conference call system compatible with Amazon Chime.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

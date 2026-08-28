@@ -68,3 +68,7 @@ Before you follow the steps here to setup the Wi-Fi connection, be sure you comp
 1. Wait until the software update status changes from **Installing software update** to **Software update installed successfully**.
 
 1. Note the IP address shown under **Wi-Fi network details**. You’ll need it to open the vehicle’s device control console after the initial setup and any subsequent modification of the Wi-Fi network settings.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

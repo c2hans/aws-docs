@@ -10,3 +10,7 @@ Each Connect Customer Customer Profiles domain has a single default Profile expl
 When you open Profile explorer, the board is read-only. To make changes, choose **Manage layouts** to create a new layout or edit an existing one. This keeps the layout your users see stable while you build and test changes.
 
 If your domain doesn't have a default layout yet, Profile explorer displays a system-provided starter layout until an administrator creates and sets a default. The first layout you save with **Set as default layout** selected becomes the default for your domain.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

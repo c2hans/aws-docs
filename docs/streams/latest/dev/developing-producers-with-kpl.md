@@ -66,3 +66,7 @@ Because the KPL may buffer records before sending them to Kinesis Data Streams, 
 <a name="developing-producers-with-kpl-when"></a>
 
 The KPL can incur an additional processing delay of up to `RecordMaxBufferedTime` within the library (user-configurable). Larger values of `RecordMaxBufferedTime` results in higher packing efficiencies and better performance. Applications that cannot tolerate this additional delay might need to use the AWS SDK directly. For more information about using the AWS SDK with Kinesis Data Streams, see [Develop producers using the Amazon Kinesis Data Streams API with the AWS SDK for Java](developing-producers-with-sdk.md). For more information about `RecordMaxBufferedTime` and other user-configurable properties of the KPL, see [Configure the Amazon Kinesis Producer Library](kinesis-kpl-config.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,3 +40,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-tr
 ## Additional resources
 <a name="additional-resources.8b787336-e973-54be-8716-b2957e3b0f31"></a>
 + [Defining the IT Operating Model, Document No. W17B](https://publications.opengroup.org/w17b) (The Open Group, September 2017)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -52,3 +52,7 @@ When choosing which alert rule type to use, consider the following comparison be
 | Use images in alert notifications | Yes | No |
 | Scaling | More resource intensive, depend on the database, and are likely to suffer from transient errors. They only scale vertically. | Store alert rules within the data source itself and allow for “infinite” scaling. Generate and send alert notifications from the location of your data. |
 | Alert rule evaluation and delivery | Alert rule evaluation and delivery is done from within Grafana, using an external Alertmanager; or both. | Alert rule evaluation and alert delivery is distributed, meaning there is no single point of failure. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

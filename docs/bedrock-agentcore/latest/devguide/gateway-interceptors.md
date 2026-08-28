@@ -41,3 +41,7 @@ When implementing interceptors, it’s important to follow security best practic
 1. Be sure to restrict your gateway execution role to have permissions only to invoke the specific lambda functions you are using as interceptors and not to give wild card lambda permissions to your execution role.
 
 1. Implement idempotent Lambda functions for your interceptors. The gateway may retry requests to interceptor Lambda functions in case of failures or timeouts. Ensure your interceptor logic can handle duplicate invocations safely by implementing idempotency keys, tracking processed requests, or designing stateless operations that produce consistent results when executed multiple times with the same input.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

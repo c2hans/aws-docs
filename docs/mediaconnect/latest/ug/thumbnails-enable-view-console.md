@@ -46,3 +46,7 @@ We recommend that you enable thumbnails on only one active flow at a time, and d
 You can disable thumbnails on an active or inactive flow. If the flow is active, you don't have to stop it first.
 
 Go to the flow **Details** page, choose the **Sources** tab, and move the **Thumbnails state** slider to **Disabled**. Then choose **Update**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

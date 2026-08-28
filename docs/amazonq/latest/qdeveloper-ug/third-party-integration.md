@@ -38,3 +38,7 @@ To get started, see [Quickstart: Installing, using features in GitHub, and incre
 <a name="third-party-context"></a>
 
 Amazon Q Developer enables you to create and maintain project-specific rules in GitLab or GitHub, which define coding standards and best practices for your team (such as requiring type hints in Python code or Javadoc comments in Java code). These rules, stored as Markdown files in the `{{project-root}}/.amazonq/rules` directory, ensure consistency across all developers regardless of experience level, and are automatically incorporated into context for Amazon Q Developer when developers interact with Amazon Q Developer within your project, ensuring all generated responses adhere to your established guidelines. For more information, see [Creating project rules for Amazon Q Developer in third-party platforms](third-party-context-project-rules.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

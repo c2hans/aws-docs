@@ -64,3 +64,7 @@ You can add message attributes to a new template you create or to an existing te
    + If you added message variables to a new template, choose **Save**.
    + If you added message variables to an existing template and you want to save your changes as a new version of the template, choose **Save as new version**.
    + If you added message variables to an existing template and you want to save your changes as an update to the most recent draft of the template, choose **Save**. If you want to update the draft and create a new version off of the draft, choose **Save as new version**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

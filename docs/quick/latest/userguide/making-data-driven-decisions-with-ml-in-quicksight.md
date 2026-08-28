@@ -32,3 +32,7 @@ With ML Insights, Amazon Quick Sight provides three major features:
 + [Creating autonarratives with Amazon Quick Sight](narratives-creating.md)
 + [Detecting outliers with ML-powered anomaly detection](anomaly-detection.md)
 + [Forecasting and creating what-if scenarios with Amazon Quick Sight](forecasts-and-whatifs.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ Required data:
 + **Stack IP address**: Get this by looking at the AMS console **Stacks** page for the stack you want to log into and then filtering on that stack ID in the EC2 console for your account. For a single EC2 instance, you can also use the AMS SKMS command For the AMS SKMS API reference, see the **Reports** tab in the AWS Artifact Console. to find the stack ID and then For the AMS SKMS API reference, see the **Reports** tab in the AWS Artifact Console. to find the stack IP address.
 
 Access the bastion IP address, either SSH or RDP, as appropriate, and log in using one of the following procedures.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

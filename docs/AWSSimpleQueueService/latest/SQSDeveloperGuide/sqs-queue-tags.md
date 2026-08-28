@@ -26,3 +26,7 @@ Tags are case-sensitive.
 A new tag with a key identical to that of an existing tag overwrites the existing tag.
 Tagging actions are limited to 30 TPS per AWS account. If your application requires a higher throughput, [submit a request](https://console.aws.amazon.com/servicequotas/home/services/sqs/quotas).
 For a full list of tag restrictions, see [Amazon SQS standard queue quotas](quotas-queues.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

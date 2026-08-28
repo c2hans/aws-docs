@@ -27,3 +27,7 @@ The topics in this section explain how to manage member accounts through invitat
 + [Deleting member accounts in Security Hub CSPM](securityhub-delete-member-accounts.md)
 + [Disassociating from a Security Hub CSPM administrator account](securityhub-disassociate-from-admin.md)
 + [Transitioning to Organizations to manage accounts in Security Hub CSPM](accounts-transition-to-orgs.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

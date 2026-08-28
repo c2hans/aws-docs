@@ -321,3 +321,7 @@ Additionally, the code contains the following:
 <a name="congratulations"></a>
 
 You have now connected your App to the Amplify backend and built a frontend allowing the users to create, edit, and delete notes. Users will also be able to upload an image and associate it with a note.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

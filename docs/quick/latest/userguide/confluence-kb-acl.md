@@ -125,3 +125,7 @@ For general ACL limitations and best practices, including ACL permanence, resear
 <a name="confluence-kb-acl-next-steps"></a>
 
 To verify document-level access controls and troubleshoot permission issues, see [Check document access (ACL verification)](sync-reports-observability.md#sync-reports-acl-verification). For information about setting up the Confluence knowledge base integration, see [Set up the knowledge base integration](confluence-knowledge-base.md#confluence-kb-setup).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

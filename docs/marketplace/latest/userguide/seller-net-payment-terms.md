@@ -85,3 +85,7 @@ When working with net payment terms, consider the following:
 + If you set terms less favorable than the buyer's standard AWS terms (for example, `Net 30` when the buyer has `Net 45`), the terms you set still apply. Buyers see the terms before accepting.
 + Payment terms only apply to buyers who pay by invoice. Credit card customers are charged immediately regardless of the configured terms.
 + Custom payment terms apply only to that specific agreement. The buyer's other AWS Marketplace purchases and AWS services continue to use their standard payment terms.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

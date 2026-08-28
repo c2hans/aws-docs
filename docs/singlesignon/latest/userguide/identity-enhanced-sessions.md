@@ -81,3 +81,7 @@ Identity-enhanced console sessions include the following three values:
 The values are the same, but obtained in different ways and added at different points of the process, depending on how the user signs in:
 + **IAM Identity Center (AWS access portal)**: In this case, the user's identity store user ID and ARN values are already provided in the active IAM Identity Center session. IAM Identity Center enhances the current session by adding only the session ID.
 + **Other sign-in methods**: If the user signs in to AWS as an IAM user, with an IAM role, or as a federated user with IAM, none of these values are provided. IAM Identity Center enhances the current session by adding the identity store user ID, identity store directory ARN, and the session ID.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

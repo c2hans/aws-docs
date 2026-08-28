@@ -35,3 +35,7 @@ The following diagram shows the process and an example architecture for containe
 1. The CI/CD pipeline pushes the Docker images to Amazon ECR.
 
 ![Diagram of the data center and the CI/CD pipeline and VPC in the AWS Cloud.](http://docs.aws.amazon.com/prescriptive-guidance/latest/containerize-java-a2c/images/guide-img/ace2956a-8fd7-4706-9472-ed4af12c70ed/images/a6422115-dafa-4c3b-94a1-8c6f489e711b.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

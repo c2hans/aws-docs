@@ -109,3 +109,7 @@ If you can't access your primary email inbox and you don't have a recovery email
 If you can't recover your AWS Builder ID through the self-service options, you can request help from Support. On the **Builder ID recovery options** page, choose **Need more help?** and follow the instructions to contact Support.
 
 To help verify your identity, provide as much detail as possible about your AWS Builder ID. If Support can't verify that you own the AWS Builder ID, Support can't recover your account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -44,3 +44,7 @@ Bootstrapping involves creating new AWS resources and might incur costs.
 1. Select the profile you want to use and choose **Bootstrap profile**.
 
 1. Wait for bootstrap status to change to "Active". This can take a few minutes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

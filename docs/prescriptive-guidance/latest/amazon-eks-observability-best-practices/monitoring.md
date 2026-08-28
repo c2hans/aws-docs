@@ -8,3 +8,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/amazon-eks-
 Monitoring in Amazon EKS provides critical visibility into the health, performance, and security of your Kubernetes workloads. Without proper monitoring, you risk service disruptions, security breaches, and inefficient resource utilization that can impact business operations and increase costs. Effective monitoring enables you to proactively identify and resolve issues, optimize resource usage, and maintain compliance requirements across your containerized applications. By implementing comprehensive monitoring solutions, you can ensure high availability, detect anomalies early, and make data-driven decisions for scaling and improving your Amazon EKS infrastructure.
 
 This section explores the various aspects of Amazon EKS monitoring, including different monitoring types, available tools, and best practices to help you build a robust monitoring strategy for your Kubernetes environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

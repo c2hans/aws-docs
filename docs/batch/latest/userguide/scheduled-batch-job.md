@@ -174,3 +174,7 @@ When you no longer need the schedule, delete it to stop submitting jobs and to a
 Deleting the schedule doesn't affect jobs that were already submitted. To stop a job that is already submitted or running, use the [TerminateJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_TerminateJob.html) API operation. To stop a service job, use the [TerminateServiceJob](https://docs.aws.amazon.com/batch/latest/APIReference/API_TerminateServiceJob.html) API operation.
 
 For more information about creating schedules, see [Getting started with Amazon EventBridge Scheduler](https://docs.aws.amazon.com/scheduler/latest/UserGuide/getting-started.html) in the *Amazon EventBridge Scheduler User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

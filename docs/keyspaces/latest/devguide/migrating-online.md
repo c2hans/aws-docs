@@ -38,3 +38,7 @@ By planning an online migration strategy with these components, you can transiti
 + [Validating data consistency during an online migration](migration-online-validation.md)
 + [Migrating the application during an online migration](migration-online-app-migration.md)
 + [Decommissioning Cassandra after an online migration](migration-online-decommission.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

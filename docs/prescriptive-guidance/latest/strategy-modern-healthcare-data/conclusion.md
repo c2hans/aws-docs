@@ -12,3 +12,7 @@ The ebook [The Data Driven Enterprise](https://aws.amazon.com/executive-insights
 For technical and architectural guidance, the [AWS for Health site](https://aws.amazon.com/health/) has organized these resources to help you find the right place to begin. This site includes [case studies](https://aws.amazon.com/health/case-studies/) for further exploration. It also includes [AWS Healthcare Competency Partners](https://aws.amazon.com/health/healthcare-partner-solutions/) for finding third-party support for your cloud data journey. Finally, it includes links to solutions and technologies that can help you implement key components of a health data architecture.
 
 To learn more about how AWS can help you implement a modern healthcare-data strategy, [connect with an AWS sales representative](https://pages.awscloud.com/HealthContactSales.html?languages=english) who specializes in the healthcare industry.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

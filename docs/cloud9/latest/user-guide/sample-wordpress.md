@@ -197,3 +197,7 @@ Web browsers display mixed content errors for a WordPress site if it's loading H
 **Important**
 By default, all web pages that you access in the application preview tab of the AWS Cloud9 IDE automatically use the HTTPS protocol. If a page's URI features the insecure `http` protocol, it's automatically replaced by `https`. And you can't access the insecure content by manually changing `https` back to `http`.
 For guidance on implementing HTTPS for your web site, see the [WordPress documentation](https://wordpress.org/support/article/https-for-wordpress/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

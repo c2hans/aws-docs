@@ -62,3 +62,7 @@ For instructions on how to customize this framework to support your specific req
 + [NIST Computer Security Resource Center](http://csrc.nist.gov)
 + [AWS Compliance page for NIST](https://aws.amazon.com/compliance/nist/)
 + [NIST Cybersecurity Framework - Aligning to the NIST CSF in the AWS Cloud ](https://d1.awsstatic.com/whitepapers/compliance/NIST_Cybersecurity_Framework_CSF.pdf)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -73,3 +73,7 @@ At this point, you've completed all of the tasks needed to launch and play your 
 1. Launch your game server. The game server will notify Amazon GameLift Servers when it is ready to host game sessions.
 
 1. Launch your game client and use the new functionality to start a new game session. This request is sent to Amazon GameLift Servers via the new backend service. In response, Amazon GameLift Servers, calls the game server, running on your local machine, to start a new game session. When the game session is ready to accept players, Amazon GameLift Servers provides connection information for the game client to join the game session.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ When you have a problem with AWS Data Pipeline, the most common symptom is that 
 + [Interpreting Pipeline Status Details](dp-pipeline-status.md)
 + [Locating Error Logs](dp-error-logs.md)
 + [Resolving Common Problems](dp-check-when-run-fails.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

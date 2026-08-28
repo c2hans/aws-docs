@@ -85,3 +85,7 @@ You can now use the updated experience to access AWS WAF functionality anywhere 
 1. In **Create and run CloudFormation stack to complete migration**, you can choose to go to the AWS CloudFormation console to create a stack from the template, to create the new protection pack (web ACL) and its resources. To do this, choose **Create CloudFormation stack**.
 
 After the automatic migration process completes, you're ready to proceed to the manual follow-up steps. See [Migrating a protection pack (web ACL): manual follow-up](waf-migrating-procedure-manual-finish.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

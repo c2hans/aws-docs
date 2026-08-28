@@ -24,3 +24,7 @@ The following Lightsail blueprints are compatible with an IPv6-only instance pla
 + [Redmine packaged by Bitnami](compare-options-choose-lightsail-instance-image.md#Redmine)
 
 For more information about Lightsail blueprints, see [Review the Lightsail instance blueprint offerings](compare-options-choose-lightsail-instance-image.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

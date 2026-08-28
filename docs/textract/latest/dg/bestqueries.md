@@ -85,3 +85,7 @@ When working with queries for multipage documents, you can use the `Page` parame
 + When using \* to indicate all pages, it must be the only element in the list.
 + You can use page intervals, such as `[“1-3”, “1-1”, “4-*”]`. Where `*` indicates last page of document.
 + Specified pages must be greater than 0 and less than or equal to the number of pages in the document.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

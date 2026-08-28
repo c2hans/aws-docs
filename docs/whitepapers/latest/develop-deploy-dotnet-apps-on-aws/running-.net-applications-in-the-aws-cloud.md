@@ -26,3 +26,7 @@ For new applications, consider serverless options for innovative and highly-elas
 For legacy .NET applications, virtual machines are often considered the natural choice, although the integration of [Docker with Windows](https://docs.docker.com/docker-for-windows/install/) means the use of containers is increasingly common. Containers have a number of benefits, including immutable deployment and improved resource utilization.
 
 Subsequent sections cover each of these compute choices in more detail. However, prior to choosing a compute environment, you must choose an operating system for hosting an application, and choose a suitable architectural style.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

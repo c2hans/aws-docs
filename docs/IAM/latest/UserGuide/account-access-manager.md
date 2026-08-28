@@ -15,7 +15,7 @@ Account access manager lets you assign AWS account access to users and groups in
 
 Account access manager enables you to assign your existing IAM roles to the users and groups you have synchronized into IAM Identity Center from your corporate source of identities. Using your existing IAM roles gives you extra flexibility to tailor user access, including:
 + Configure IAM role tags and use session tags for attribute-based access control (ABAC).
-+ Configure IAM role trust policy to restrict role assumption, enforce network-based conditions, or use IdP-asserted claims as trust policy conditions.
++ Configure IAM role trust policy to restrict role assumption or use IdP-asserted claims as trust policy conditions.
 + Configure IAM role paths to group roles logically and simplify administration. For more information, see [Configure IAM role paths to group roles logically and simplify administration](https://aws.amazon.com/blogs/security/optimize-aws-administration-with-iam-paths/).
 
 The following table compares the three account access options:
@@ -40,3 +40,7 @@ Your workforce can access AWS accounts through the AWS CLI using the [**aws logi
 
 **Account access APIs**
 Account access manager has its own API namespace, `account-access`, which is separate from the IAM API. You use this namespace in the AWS CLI and SDKs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

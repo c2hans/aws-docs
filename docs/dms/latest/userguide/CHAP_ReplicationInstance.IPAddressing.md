@@ -29,3 +29,7 @@ You can use the AWS DMS Console to create or modify a replication instance, and 
 + For mode information about IPv4 and IPv6 addresses, see [IP Addressing](https://docs.aws.amazon.com/vpc/latest/userguide/how-it-works.html#vpc-ip-addressing) in the *Amazon VPC User Guide*.
 + For more information about creating a replication instance using dual-stack mode, see [Creating a replication instance](CHAP_ReplicationInstance.Creating.md).
 + For mode information about modifying a replication instance, see [Modifying a replication instance](CHAP_ReplicationInstance.Modifying.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

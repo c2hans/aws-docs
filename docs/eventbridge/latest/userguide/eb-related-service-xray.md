@@ -26,3 +26,7 @@ You can pass the following trace header information through EventBridge:
 The trace header doesn't count towards the `PutEventsRequestEntry` event size. For more information, see [Calculating PutEvents event entry size](eb-putevents.md#eb-putevent-size).
 
  The following video demonstrates the use of X-Ray and EventBridge together:
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

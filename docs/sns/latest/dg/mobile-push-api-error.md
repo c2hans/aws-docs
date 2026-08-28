@@ -92,3 +92,7 @@ Errors that are returned by the Amazon SNS APIs for mobile push are listed in th
 | Target ARN is valid but does not belong to the user | The target ARN is valid, but does not belong to the user. | 403 | `Publish` |
 | Message format is invalid | The message format is invalid. | 400 | `Publish` |
 | Message size is larger than supported by protocol/end-service | The message size is larger than supported by the protocol/end-service. | 400 | `Publish` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

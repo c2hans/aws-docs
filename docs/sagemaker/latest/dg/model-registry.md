@@ -24,3 +24,7 @@ Catalog models by creating SageMaker Model Registry Model (Package) Groups that 
 + Add your Model Group into one or more Model Registry Collections.
 
 For details about how to create and work with models, model versions, and Model Groups, see [Model Registry Models, Model Versions, and Model Groups](model-registry-models.md). Optionally, if you want to further group your Model Groups into Collections, see [Model Registry Collections](modelcollections.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

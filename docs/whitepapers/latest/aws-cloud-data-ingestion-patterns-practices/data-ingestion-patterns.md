@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-cloud-data-ingest
 +  File format transformations while ingesting data files (for example, changing CSV format files on file share to Parquet on Amazon S3).
 
  The tools that can be used in each of the preceding patterns depend upon your use case. In many cases, the same tool can be used to meet multiple use cases. Ultimately, the decision on using the right tool for the right job will depend upon your overall requirements for data ingestion in the Modern Data architecture. An important aspect of your tooling will also be workflow scheduling and automation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

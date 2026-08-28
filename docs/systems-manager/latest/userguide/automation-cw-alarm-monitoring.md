@@ -82,3 +82,7 @@ aws ssm start-automation-execution \
 For automations running across multiple Accounts and Regions, you can configure alarm monitoring per target location using the `TargetLocationAlarmConfiguration` field within `TargetLocations`. The execution role in each target account (for example, `AWS-SystemsManager-AutomationExecutionRole`) must have `cloudwatch:DescribeAlarms` and `ssm:StopAutomationExecution` permissions.
 
 For more information about setting up cross-account roles, see [Setting up management account permissions for multi-Region and multi-account automation](running-automations-multiple-accounts-regions.md#setup-management-account-iam-roles).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

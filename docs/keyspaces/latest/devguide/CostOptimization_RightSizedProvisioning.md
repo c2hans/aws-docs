@@ -291,3 +291,7 @@ The query results obtained from the scripts above provide the data points requir
 When your table contains several low usage intervals, you can benefit from using Application Auto Scaling policies, either by scheduling Application Auto Scaling or by just configuring the default Application Auto Scaling policies for the table that are based on utilization.
 
 If you have a workload with a low utilization to high throttle ratio (**Max(ThrottleEvents)/Min(ThrottleEvents)** in the interval), this could happen when you have a very spiky workload where traffic increases significantly on specific days (or times of day), but is otherwise consistently low. In these scenarios, it might be beneficial to use [scheduled Application Auto Scaling](https://docs.aws.amazon.com/autoscaling/application/userguide/examples-scheduled-actions.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

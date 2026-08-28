@@ -243,3 +243,7 @@ To assign a Lambda function to an individual campaign, use the Amazon Pinpoint A
 + `Mode` – Set to `FILTER`. With this mode, Amazon Pinpoint invokes the function and waits for it to return the modified endpoints. After receiving them, Amazon Pinpoint sends the message. Amazon Pinpoint waits for up to 15 seconds before failing the message delivery.
 
 With `CampaignHook` settings defined for a campaign, Amazon Pinpoint invokes the specified Lambda function before sending the campaign's messages. Amazon Pinpoint waits to receive the modified endpoints from the function. If Amazon Pinpoint receives the updated endpoints, it proceeds with the message delivery, using the updated endpoint data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

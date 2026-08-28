@@ -26,3 +26,7 @@ Historical metrics reports have the following limits:
 + Historical and scheduled reports limit the quantity of data returned according to the number of cells with data (and not total rows \* columns in the report). A cell missing data is rendered as "-" on the reporting page.
 + Historical reports are limited to 120k cells of data. If the cell limit is exceeded, the data is truncated.
 + Scheduled reports are limited to 200k cells of data. If the cell limit is exceeded, the report fails.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

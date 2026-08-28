@@ -38,3 +38,7 @@ Connect Customer publishes SIP, streaming, and contact events. These events incl
 1.  You can search by custom contact attributes in the Connect Customer admin website to find the contact for the third-party call in the two Connect Customer instances.
 
 For information about how to create Connect Customer flow Lambda functions, see [Grant Connect Customer access to your AWS Lambda functions](connect-lambda-functions.md). For a list of all the supported contact attributes that you can access in your flow Lambda, see [List of available contact attributes in Connect Customer and their JSONPath references](connect-attrib-list.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

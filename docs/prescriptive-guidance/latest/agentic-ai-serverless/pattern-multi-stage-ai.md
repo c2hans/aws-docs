@@ -86,3 +86,7 @@ The multi-stage AI workflow pattern delivers value in the following areas:
 The multi-stage AI workflow pattern gives organizations a structured, scalable way to assemble complex AI pipelines, grounded in serverless principles and operational best practices.
 
 This pattern provides the backbone for building enterprise-grade, AI-enhanced workflows that are secure, observable, and easy to evolve over time. It supports various use cases, from ingesting documents and automating onboarding to analyzing risk and composing contextual outputs from multiple models.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

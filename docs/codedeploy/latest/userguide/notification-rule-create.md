@@ -85,3 +85,7 @@ If you want to use an existing Amazon SNS topic instead of creating a new one, i
        "Arn": "arn:aws:codestar-notifications:{{us-east-1}}:{{123456789012}}:notificationrule/dc82df7a-EXAMPLE"
    }
    ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

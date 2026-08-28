@@ -107,3 +107,7 @@ ID tokens represent a user’s attributes and have a high level of fine-grained 
 Access tokens represent a user’s permissions with OAuth 2.0 scopes. To add a layer of authorization or to set up requests for additional resources, evaluate the access token. For example, you can validate that a user is in the appropriate groups *and* carries a scope like `PetStore.read` that generally authorizes access to the API. User pools can add custom scopes to tokens with [resource servers](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-define-resource-servers.html) and with [token customization at runtime](https://docs.aws.amazon.com/cognito/latest/developerguide/user-pool-lambda-pre-token-generation.html#user-pool-lambda-pre-token-generation-accesstoken).
 
 See [Mapping Amazon Cognito tokens to schema](cognito-map-token-to-schema.md) and [Mapping OIDC tokens to schema](oidc-map-token-to-schema.md) for example policies that process claims in ID and access tokens.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ Following, you can find descriptions about how to embed visuals and dashboards u
 **Topics**
 + [Embedding Amazon Quick Sight visuals and dashboards for registered users with a 1-click embed code](embedded-analytics-1-click.md)
 + [Embedding Amazon Quick Sight visuals and dashboards for anonymous users with a 1-click embed code](embedded-analytics-1-click-public.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

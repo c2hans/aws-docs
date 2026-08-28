@@ -25,3 +25,7 @@ To view the source data for the queries, see [Sample Query Data Set](UsingSelect
 | select count(\*) from mydomain where Year > '1985' | Counts all items where "Year" is greater than "1985." | 3 |
 | select count(\*) from mydomain limit 500 | Counts all items in the domain, with a limit of 500. | 6 |
 | select count(\*) from mydomain limit 4 | Counts all items in the domain, with a limit of 4. | 4 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

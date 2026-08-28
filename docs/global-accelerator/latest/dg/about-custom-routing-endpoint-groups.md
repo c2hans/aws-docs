@@ -17,3 +17,7 @@ To learn more, see [How custom routing accelerators work in Global Accelerator](
 + [Add endpoint group](about-custom-routing-endpoint-groups.create-endpoint-group.md)
 + [Edit endpoint group](about-custom-routing-endpoint-groups.edit-endpoint-group.md)
 + [Remove endpoint group](about-custom-routing-endpoint-groups.remove-endpoint-group.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

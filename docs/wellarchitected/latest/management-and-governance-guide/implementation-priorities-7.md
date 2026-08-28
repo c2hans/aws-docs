@@ -67,3 +67,7 @@ For the member accounts, determine whether the software can operate centrally as
 <a name="src-procure"></a>
 
  Complement your existing procurement processes, with integration to AWS Marketplace. This is done by extending your procurement systems (Coupa or SAP Ariba) to Private Marketplace so your users can use the existing procurement and approval processes to obtain software. Create the appropriate IAM-managed permissions, use AWS Marketplace to generate the necessary information to configure your procurement solution, and finally configure your procurement solution to complete the integration. For example, you can [set up a punchout](https://docs.aws.amazon.com/marketplace/latest/buyerguide/procurement-system-integration-setup.html), attach purchase orders to your AWS invoices, and then align your procurement processes to use the standard provisioning solutions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ ADDF as a framework is delivered on an "AS-IS" BASIS, WITHOUT WARRANTIES OR COND
 <a name="open-source-sec-reviews"></a>
 
 ADDF is an open-source project that welcomes contributions. We invite all users to conduct their own security review of the framework and contribute by reporting any security-related findings. If you find an issue in the code, please follow the guidelines in [Security issue notifications](https://github.com/awslabs/autonomous-driving-data-framework/blob/main/CONTRIBUTING.md#security-issue-notifications) (ADDF documentation).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

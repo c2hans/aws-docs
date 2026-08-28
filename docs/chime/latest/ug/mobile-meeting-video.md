@@ -53,3 +53,7 @@ You can send messages directly to another attendee during a meeting. When you do
 
 You can copy another attendee's email address and use it email that attendee. You can also use their email address to add them to your contacts.
 + Choose the attendee's video tile. From the menu that appears, choose **Copy email address**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

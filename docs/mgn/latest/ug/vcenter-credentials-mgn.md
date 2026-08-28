@@ -15,20 +15,24 @@ You need to create at least one AWS Identity and Access Management (IAM) user, a
 
 1. From the **IAM** main page, choose **Users** from the left-hand navigation menu.
 
-1. You can either select an existing user or add a new user. To add a new user, click **Add user**.
+1. You can either select an existing user or add a new user. To add a new user, choose **Add user**.
 
-1. Give the user a **User name** and select the **Programmatic access** access type. Click **Next: Permissions**.
+1. Give the user a **User name** and select the **Programmatic access** access type. Choose **Next: Permissions**.
 
-1. Choose the **Attach existing policies directly** option. Search for **AWSApplicationMigrationVCenterClientPolicy** and **AWSApplicationMigrationAgentPolicy**. Select the policies and click **Next: Tags.**
+1. Choose the **Attach existing policies directly** option. Search for **AWSApplicationMigrationVCenterClientPolicy** and **AWSApplicationMigrationAgentPolicy**. Select the policies and choose **Next: Tags.**
 
-1. Add tags if you wish to use them and then click **Next: Review.**
+1. Add tags if you wish to use them and then choose **Next: Review.**
 
 1. Review the information. Ensure that the **Programmatic access** type is selected and that the correct policy is attached to the user. Choose **Create user**.
 
 1. A confirmation message appears and you can see the **Access key ID** and **Secret access key** that you need in order to install the AWS Replication Agent on your source servers.
 
-   To save this information as .csv file, click **Download .csv**.
+   To save this information as .csv file, choose **Download .csv**.
 
-   You can also access this information and re-generate your security credentials by navigating to **IM > Users > Your user**.
+   You can also access this information and re-generate your security credentials by navigating to **IAM > Users > Your user**.
 
    Open the **Security credentials** tab and scroll down to **Access keys**. Here you can manage your access keys (create, delete, and more).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

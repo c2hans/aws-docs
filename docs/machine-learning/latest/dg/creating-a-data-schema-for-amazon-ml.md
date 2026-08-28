@@ -192,3 +192,7 @@ When you use the Amazon ML console to create a datasource, Amazon ML uses simple
     If you plan to call the Amazon ML API to create your datasource, you can upload the schema file into Amazon S3, and then provide the URI to that file in the `DataSchemaLocationS3` attribute of the `CreateDataSourceFromS3` API. For more information, see [CreateDataSourceFromS3](https://docs.aws.amazon.com/machine-learning/latest/APIReference/API_CreateDataSourceFromS3.html).
 
     You can provide the schema directly in the payload of `CreateDataSource`\* `APIs` instead of first saving it to Amazon S3. You do this by placing the full schema string in the `DataSchema` attribute of `CreateDataSourceFromS3`, `CreateDataSourceFromRDS`, or `CreateDataSourceFromRedshift` APIs. For more information, see the [Amazon Machine Learning API Reference](https://docs.aws.amazon.com/machine-learning/latest/APIReference/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

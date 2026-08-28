@@ -32,3 +32,7 @@ AWS CodeConnections provides the following APIs for data retrieval.
 | <a name="codeconnections-StartAppRegistrationHandshake"></a>[StartAppRegistrationHandshake](https://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html#connections-permissions-actions-host-registration) | Associate a third party server, such as a GitHub Enterprise Server instance, with a Host | Read |
 | <a name="codeconnections-StartOAuthHandshake"></a>[StartOAuthHandshake](https://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html#permissions-reference-connections-handshake) | Associate a third party, such as a Bitbucket App installation, with a Connection | Read |
 | <a name="codeconnections-UseConnection"></a>[UseConnection](https://docs.aws.amazon.com/dtconsole/latest/userguide/security-iam.html#permissions-reference-connections-use) | Use a Connection resource to call provider actions | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

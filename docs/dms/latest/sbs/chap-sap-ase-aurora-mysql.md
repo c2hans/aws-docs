@@ -20,3 +20,7 @@ We use the **pubs2** database for SAP ASE as the example database in the rest of
 + [Preparation and assessment for migrating from SAP ASE to Amazon Aurora MySQL](chap-sap-ase-aurora-mysql.assessment.md)
 + [SAP ASE to Amazon Aurora MySQL database code conversion and data loading](chap-sap-ase-aurora-mysql.migration.md)
 + [Best practices for migrating from SAP ASE to Amazon Aurora MySQL](chap-sap-ase-aurora-mysql.bestpractices.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

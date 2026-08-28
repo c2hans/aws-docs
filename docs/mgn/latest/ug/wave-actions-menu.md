@@ -16,7 +16,7 @@ Use this menu to perform the following actions:
 +  **Launch test instances** – Choose this option to launch test instances for this wave servers.
 +  **Mark as "Ready for cutover"** – Choose this option to finalize testing for this wave after you have completed all the necessary tests in preparation for cutover.
 
-  Once the **Mark servers as "Ready for cutover"** dialog will appear, select whether you want to terminate the launched instances used for testing. It is recommended to terminate these instances, as you will be charged for them even though you will no longer need them. Check the **Yes, terminate launched instances (recommended)** box and choose **Continue**.
+  After you choose this option, the **Mark servers as "Ready for cutover"** dialog appears. Select whether you want to terminate the launched instances used for testing. It is recommended to terminate these instances, as you will be charged for them even though you will no longer need them. Check the **Yes, terminate launched instances (recommended)** box and choose **Continue**.
 +  **Revert to "ready for testing"** – Choose this option to revert a finalized test for this wave if you want to run additional tests before initiating a cutover.
 
   The **Revert testing** dialog will appear. Select whether you want to terminate the launched instances used for testing. It is recommended to terminate these instances, as you will be charged for them even though you will no longer need them. Check the **Yes, terminate launched instances (recommended)** box and choose **Revert**.
@@ -31,5 +31,9 @@ Use this menu to perform the following actions:
  This action is applicable if all the wave's associated servers are **Agentless snapshot based** and are in **Discovered** lifecycle state.
 + **Archive waves** – Choose this option to archive the selected waves. You should only archive waves for which you have already performed a cutover.
 **Important**
-A wave can be archived only if all servers that are part of in one of these states: archived, cutover or disconnected. If that is the case, the wave and its associated applications will be archived. The servers that are not yet archived (but can be) will also be archived.
+A wave can be archived only if all servers that are part of it are in one of these states: archived, cutover, or disconnected. If that is the case, the wave and its associated applications will be archived. The servers that are not yet archived (but can be) will also be archived.
 +  Archived waves will be removed from the main Waves page, but can still be accessed through the selector options.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

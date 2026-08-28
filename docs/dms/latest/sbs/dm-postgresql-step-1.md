@@ -212,3 +212,7 @@ In this section, you create an IAM role for homogeneous data migrations. AWS DMS
 \+ Replace {{your\_region}} with the name of your Region, such as `us-east-1`. . Choose **Update policy**.
 
 Use this IAM role when you create your instance profile in [Step 5](dm-postgresql-step-5.md) and your migration project in [Step 7](dm-postgresql-step-7.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

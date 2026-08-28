@@ -95,3 +95,7 @@ OpenSearch Serverless has the following limitations:
 + There are limits on the number of serverless resources that you can have in a single account and Region. See [OpenSearch Serverless quotas](https://docs.aws.amazon.com/general/latest/gr/opensearch-service.html#opensearch-limits-serverless).
 + The refresh interval for indexes in search and time series collections is approximately 10 seconds.
 + The number of shards, number of intervals, and refresh interval are not modifiable and are handled by OpenSearch Serverless. The sharding strategy is based off the collection type and traffic. For example, a time series collection scales primary shards based on write traffic bottlenecks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

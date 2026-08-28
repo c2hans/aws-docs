@@ -68,3 +68,7 @@ Here's an overview of the process:
 1. Follow the instructions in the email that you receive from Nominet.
 
 1. Log in to the Nominet website, and follow the instructions for canceling (deleting) a domain name.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

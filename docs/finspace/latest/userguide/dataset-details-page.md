@@ -61,3 +61,7 @@ This tab shows the schema of the dataset. The existing schema can only be edited
 This tab shows the list of permission groups that are entitled to use the dataset. From this section, you can assign new permission groups to the dataset by choosing **Assign Permission Group**.
 
 ![A screenshot of the dataset permissions tab in FinSpace.](http://docs.aws.amazon.com/finspace/latest/userguide/images/05-add-and-manage-data/dataset-permissions.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

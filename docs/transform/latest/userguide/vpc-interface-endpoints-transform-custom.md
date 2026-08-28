@@ -86,3 +86,7 @@ This section describes the process of using an on-premises computer to connect t
 1. [Create an interface VPC endpoint for AWS Transform custom.](#vpc-interface-endpoints-transform-custom-create)
 
 1. [Set up an inbound Amazon Route 53 endpoint.](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-to-vpc-interface-endpoint.html) This will enable you to use the DNS name of your AWS Transform custom endpoint from your on-premises device.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ Counters in this set are divided in two groups:
 | Encoding Time per Megapixel ms | Average time, in milliseconds, used to encode one million pixels | Milliseconds | session:encoder |
 | Frame Quality % | Average frame compression quality, expressed as a percentage | Percent | session:encoder |
 | Frame Compression Ratio % | Average frame compression ratio, defined as the ratio between the frame size, in bytes, and the size of the compressed frame | Percent | session:encoder |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -75,3 +75,7 @@ In the ancillary data, you configure the output to include or exclude embedded c
    In both cases, Elemental Live converts the messages to SCTE 104 messages in the SMPTE 2110 output. For general information about ad avail handling in Elemental Live, see [SCTE-35 and SCTE-104 message processing in Elemental Live](scte-message-processing.md).
 
 1. If you decide to include ad avail messages, identify the line where you want them to appear in the VANC of the video stream.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,3 +56,7 @@ aws ec2 delete-transit-gateway-policy-table-entry \
 
 **Note**
 You cannot delete a transit gateway route table that is referenced as a target by any policy table entry. Use `GetTransitGatewayPolicyTableEntries` with a `target-route-table-id` filter to identify referencing entries, then update or delete them before retrying the route table deletion. Unlike route entries (which are black-holed when a target attachment is deleted), policy table entries are not automatically cleaned up. They must be explicitly removed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -182,3 +182,7 @@ We recommend enabling attachment scanning to meet compliance requirements or sec
 <a name="problems-enabling-attachments"></a>
 
 If your agents report problems receiving and sending attachments in chat messages, see [Internal firewall or missing CORS policy prevents access to chat, email, task, or case attachments](ts-agent-attachments.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

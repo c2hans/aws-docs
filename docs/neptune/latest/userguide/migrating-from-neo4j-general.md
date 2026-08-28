@@ -31,3 +31,7 @@ In general, it isn't necessary to change your data model to migrate from Neo4j t
 + >Although Neptune has no drop-in replacement for the Neo4j Graph Data Science (GDS) library, Neptune supports graph analytics today through a variety of solutions. For example, several [sample notebooks](https://github.com/aws/graph-notebook/tree/main/src/graph_notebook/notebooks/01-Neptune-Database/03-Sample-Applications/06-Data-Science-Samples) demonstrate how to leverage the Neptune [integration with the AWS Pandas SDK](https://github.com/amazon-archives/fully-automated-neo4j-to-neptune) within Python environments to run analytics on graph data.
 
 Please reach out to AWS support or engage your AWS account team if you have questions. We use your feedback to prioritize new features that will meet your needs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

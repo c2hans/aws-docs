@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/gen-ai-work
 + [Choosing a generative AI service](https://docs.aws.amazon.com/decision-guides/latest/generative-ai-on-aws-how-to-choose/guide.html) (AWS decision guide)
 + [What is Amazon Bedrock? ](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html) (*Amazon Bedrock User Guide*)
 + [What is Amazon SageMaker AI? ](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)(*Amazon SageMaker AI Developer Guide*)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,3 +13,7 @@ AWS Systems Manager Agent (SSM Agent) processes Systems Manager requests and con
 + [Verifying the signature of SSM Agent](verify-agent-signature.md)
 + [Manually installing and uninstalling SSM Agent on EC2 instances for Linux](manually-install-ssm-agent-linux.md)
 + [Configuring SSM Agent to use a proxy on Linux nodes](configure-proxy-ssm-agent.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

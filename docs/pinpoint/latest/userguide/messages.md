@@ -22,3 +22,7 @@ To send a test message from the Amazon Pinpoint console, use the **Test messagin
 1. On the **All projects** page, choose the project that you want to send a test message for.
 
 1. In the navigation pane, choose **Test messaging**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

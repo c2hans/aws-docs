@@ -113,3 +113,7 @@ After the .csv file is uploaded, a banner is displayed indicating that the data 
 Before you can remove a shift rotation pattern, you must first remove all agents linked to the shift rotation pattern. You can unset up to 50 agents by using the **Staff rules** page.
 
 You can also use the bulk upload and download to quickly unset hundreds or even thousands of agents.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

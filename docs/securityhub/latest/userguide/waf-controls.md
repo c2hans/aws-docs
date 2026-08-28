@@ -269,3 +269,7 @@ Configuring CloudWatch metrics on AWS WAF rules and rule groups provides visibil
 <a name="waf-12-remediation"></a>
 
 To enable CloudWatch metrics on an AWS WAF rule group, invoke the [ UpdateRuleGroup](https://docs.aws.amazon.com/waf/latest/APIReference/API_UpdateRuleGroup.html) API. To enable CloudWatch metrics on an AWS WAF rule, invoke the [ UpdateWebACL](https://docs.aws.amazon.com/waf/latest/APIReference/API_UpdateWebACL.html) API. Set the `CloudWatchMetricsEnabled` field to `true`. When you use the AWS WAF console to create rules or rule groups, CloudWatch metrics are automatically enabled.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

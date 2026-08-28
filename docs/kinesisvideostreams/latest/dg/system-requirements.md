@@ -48,3 +48,7 @@ We have tested web cameras and RTSP cameras with the following devices and opera
 <a name="system-requirements-sdk"></a>
 
 Installing the [Upload to Kinesis Video Streams](producer-sdk.md) has a minimum storage requirement of 170 MB and a recommended storage requirement of 512 MB.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

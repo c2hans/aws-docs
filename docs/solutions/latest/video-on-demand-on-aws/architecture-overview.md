@@ -39,3 +39,7 @@ The high-level process flow for the solution components deployed with the AWS Cl
 1. An [Amazon CloudFront](https://aws.amazon.com/cloudfront/) distribution to deliver your video content to end users.
 
 1. An [Amazon SQS](https://aws.amazon.com/sqs/) queue to capture the workflow outputs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Video on Demand on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

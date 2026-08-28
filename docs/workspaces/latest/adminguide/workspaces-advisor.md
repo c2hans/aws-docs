@@ -127,3 +127,7 @@ For you to use the opt-out policy, your AWS accounts must be centrally managed b
 Opting out has the following effects:
 + WorkSpaces Advisor will delete the data that it collected and stored for service improvement purposes prior to your opt out (if any).
 + After you opt out, WorkSpaces Advisor will no longer collect or store this data for service improvement purposes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

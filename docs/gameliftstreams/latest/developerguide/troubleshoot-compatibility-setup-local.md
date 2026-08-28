@@ -54,3 +54,7 @@ Follow the instructions in [NVIDIA drivers installation](https://documentation.u
 <a name="troubleshoot-compatibility-setup-local-next-step"></a>
 
  With your local Ubuntu machine ready, the next step is to set up Proton. For instructions, refer to [Troubleshoot on Proton](troubleshoot-compatibility-wp-proton.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

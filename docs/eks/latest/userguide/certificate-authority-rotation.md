@@ -920,3 +920,7 @@ Applications and clients should be configured to trust a CA bundle rather than p
 <a name="_why_is_my_notification_timeline_different_from_what_this_documentation_describes"></a>
 
 If your cluster was created in 2018-2019, your cluster will receive automated notifications on an adjusted timeline. Your first notification will include the relevant dates and next steps specific to your cluster. The standard notification milestones are calculated relative to your cluster’s CA expiration date. For clusters in this range, those calculated dates precede the availability of this feature, so an adjusted schedule is applied.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

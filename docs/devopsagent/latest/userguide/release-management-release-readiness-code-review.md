@@ -30,6 +30,21 @@ The section also includes:
 
 **For GitLab:** Navigate to the **Code Review and Automated Testing** section in your GitLab integration settings and enable the capabilities for your projects. For detailed instructions, see [Configuring Code Review and Automated Testing](connecting-to-cicd-pipelines-connecting-gitlab.md).
 
+#### Controlling when automated reviews trigger
+<a name="controlling-when-automated-reviews-trigger"></a>
+
+By default, when **Auto trigger change review** is enabled, DevOps Agent runs a release readiness code review on every applicable pull request or merge request event, on any target branch. You can narrow this by adding trigger filters in the **Advanced settings** of the connection flow.
+
+With trigger filters, you can scope automated reviews by:
++ **Target branches** (required) — One or more branch names or patterns (regular expressions). The review triggers only when the pull request or merge request's target (base) branch matches. For example, `main` limits reviews to changes targeting the `main` branch, and `release/.*` matches any branch under `release/`.
++ **Trigger events** (optional) — Limit the review to specific events, such as when a pull request or merge request becomes ready for review. Leave this empty to match all applicable events.
+
+You combine these conditions into filter groups. Within a filter group, all conditions must match (AND). You can define multiple filter groups, and a review triggers when any group matches (OR). For example, you can review changes that become ready for review and that target `main` or any `release/*` branch. You can define up to 5 filter groups per repository or project, with up to 20 branch patterns per group.
+
+Trigger filters aren't fixed at setup time — you can return to the connection at any time, choose **Edit**, and update the filters under **Advanced settings**.
+
+For instructions on configuring trigger filters in GitHub, see [Advanced settings: trigger filters](connecting-to-cicd-pipelines-connecting-github.md). For instructions on configuring trigger filters in GitLab, see [Advanced settings: trigger filters](connecting-to-cicd-pipelines-connecting-gitlab.md).
+
 ### Step 2: Configure private VPC access for the verification testing environment (optional)
 <a name="step-2-configure-private-vpc-access-for-the-verification-testing-environment-optional"></a>
 
@@ -90,6 +105,8 @@ If issues are found, the coding agent is notified and can address them immediate
 When automated PR/MR reviews are enabled, the agent reviews every new pull request and merge request in your connected repositories. Reviews trigger when:
 + A new PR/MR is opened
 + New commits are pushed to an existing PR/MR
+
+By default, reviews trigger on all applicable events for all target branches. You can scope automated triggers to specific events (for example, only when a pull request or merge request becomes ready for review) and target branches by configuring trigger filters. For more information, see [Controlling when automated reviews trigger](#controlling-when-automated-reviews-trigger).
 
 Findings appear as inline comments on the affected lines of code, with the overall assessment posted as a PR/MR comment. You can configure whether findings block merges (required status check) or are advisory only.
 
@@ -249,3 +266,7 @@ Read-only operations such as `describe_*`, `get_*`, and `list_*` are permitted.
 <a name="sequential-phase-enforcement"></a>
 
 Release readiness review phases must execute in sequence. This ensures systematic and thorough evaluation and prevents incomplete assessments from skipped steps.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

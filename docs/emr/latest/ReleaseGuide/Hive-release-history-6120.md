@@ -110,3 +110,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 | Bug Fix | [HIVE-20714](https://issues.apache.org/jira/browse/HIVE-20714): SHOW tblproperties for a single property returns the value in the name column |
 | Bug Fix | [HIVE-24730](https://issues.apache.org/jira/browse/HIVE-24730): Shims classes override values from hive-site.xml and tez-site.xml silently |
 | Bug Fix | [HIVE-22055](https://issues.apache.org/jira/browse/HIVE-22055): select count gives incorrect result after loading data from text file |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

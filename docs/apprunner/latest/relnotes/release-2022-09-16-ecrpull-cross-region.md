@@ -17,3 +17,7 @@ AWS App Runner now supports using Amazon Elastic Container Registry (Amazon ECR)
 With this release, you can use Amazon ECR images from any AWS Region to create or update your App Runner service. For example, you can launch or update your App Runner service in the US East (N. Virginia) Region referencing an Amazon ECR image that's in the US West (Oregon) Region, without the need to store an Amazon ECR image in US East (N. Virginia).
 
 With this new feature, you can avoid additional costs and operational overhead caused by the Amazon ECR image replication that was required before this launch.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

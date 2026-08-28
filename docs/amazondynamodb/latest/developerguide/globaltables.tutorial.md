@@ -157,3 +157,7 @@ Follow these steps to create a global table `Music` using the AWS CLI. The follo
        --key '{"Artist": {"S":"item_1"},"SongTitle": {"S":"Song Value 1"}}' \
        --region eu-west-1
    ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

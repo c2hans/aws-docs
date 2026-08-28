@@ -20,3 +20,7 @@ Only data models that have been created with `SimpleStrategy` or `NetworkTopolog
 1. Choose **Commit** to update the Apache Cassandra cluster with the data model.
 
 ![Console screenshot that shows a connection to Apache Cassandra.](http://docs.aws.amazon.com/keyspaces/latest/devguide/images/workbench/key_nosql_cassandra.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

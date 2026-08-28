@@ -54,3 +54,7 @@ The following built-in transforms are available with AWS Glue Studio:
 +  **[Extract JSON path transform](transforms-extract-json-path.md)**: Extract new columns from a JSON string column.
 +  **[Extract string fragments from a regular expression](transforms-regex-extractor.md)**: Extract string fragments using a regular expression and create new column out of it, or multiple columns if using regex groups.
 + **[Custom transform](transforms-custom.md)**: Enter code into a text entry field to use custom transforms. The output is a collection of `DynamicFrames`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

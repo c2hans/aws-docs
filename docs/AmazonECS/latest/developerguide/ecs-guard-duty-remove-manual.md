@@ -20,3 +20,7 @@ The Key and Value are case sensitive and must exactly match the strings.
    For more information, see [Uninstalling the security agent manually](https://docs.aws.amazon.com/guardduty/latest/ug/managing-gdu-agent-ec2-manually.html#gdu-update-security-agent-ec2) in the *GuardDuty User Guide*.
 
 1. Delete the GuardDuty VPC endpoint for each cluster VPC. For more information about how to delete VPC endpoints, see [Delete an interface endpoint](https://docs.aws.amazon.com/vpc/latest/privatelink/delete-interface-endpoint.html) in the *AWS PrivateLink User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

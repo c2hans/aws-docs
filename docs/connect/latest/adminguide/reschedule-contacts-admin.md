@@ -45,3 +45,7 @@ To reschedule contacts programmatically, use the [UpdateContactSchedule](https:/
 1. Select the time and range to reschedule the contact. The scheduled time must be within 90 days of when the task was initiated, and before the task's expiry time.
 
 1. When the contact is rescheduled successfully, the page automatically refreshes with the new schedule time for the task.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

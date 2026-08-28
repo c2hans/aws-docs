@@ -16,3 +16,7 @@ Refer to this Splunk blog post [ How to stream AWS CloudWatch Logs to Splunk (Hi
 Here’s how the data input settings might look:
 
 ![Review page showing input configuration with name vpcFlowLogsViaLambdaInput and source type aws:cloudwatchlogs:vpcflow.](http://docs.aws.amazon.com/managedservices/latest/userguide/images/configure-Splunk-HEC.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

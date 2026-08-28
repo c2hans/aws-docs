@@ -27,3 +27,7 @@ The following table lists all the available AWS FIS options from the dropdown me
 | --- | --- |
 | Create experiment template | [Create an experiment template](https://docs.aws.amazon.com/fis/latest/userguide/create-template.html) |
 | Create an experiment from scenario | [Using a scenario](https://docs.aws.amazon.com/fis/latest/userguide/scenario-library.html#using-a-scenario) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ AWS Service Management Connector allows AWS Managed Services (AMS) Accelerate us
 You can use the available AWS CloudFormation templates for the JSM connector to configure your AWS account to enable AWS Service Catalog integration. For more information, see [Baseline Permissions](https://docs.aws.amazon.com/smc/latest/ag/jsd-baseline-permissions.html).
 
 For creation of SQS queue and EventBridge rule, use [ Connector for Jira Service Management - AWS Support Commercial Regions](https://servicecatalogconnector.s3.amazonaws.com/SM_ConnectorForJSMv1.9.0-AWS_Support_Configurations_Commercial.json) and [ Connector for Jira Service Management AWS Support GovCloud West Region](https://servicecatalogconnector.s3.amazonaws.com/SM_ConnectorForJSMv1.9.0-AWS_Support_Configurations_GovCloud.json).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

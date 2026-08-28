@@ -44,3 +44,7 @@ The SageMaker SDK also gives you the option to set intelligent defaults so that 
 | Name | The name of the notebook job step. | N/A | N/A | Parameter name. If unspecified, it is derived from the notebook file name. |
 | Display name | Your job name as it should appear in your list of pipeline executions. | N/A | N/A | Parameter display\_name. Defaults to None. |
 | Description | A description of your job. | N/A | N/A | Parameter description. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

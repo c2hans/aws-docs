@@ -58,3 +58,7 @@ Aurora DSQL can apply filters at multiple stages in the query path. Understandin
 | 1 | Index Condition | Applied while scanning the index. Limits how much data is read from storage and reduces the data sent to the compute layer. |
 | 2 | Storage Filter | Applied after data is read from storage but before it’s sent to compute. An example here is a ﬁlter on an include column of an index. Reduces data transfer but not the amount read. |
 | 3 | Query Processor Filter | Applied after data reaches the compute layer. All data must be transferred first, which increases latency and cost. Currently, Aurora DSQL cannot perform all ﬁltering and projection operations on storage, so some queries might be forced to fall back to this type of filtering. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

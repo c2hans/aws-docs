@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 **Topics**
 + [SCSUS07-BP01 Plan and design for automation for supply chain sustainability](scsus07-bp01.md)
 + [SCSUS08-BP01 Collect usage data to feed advanced analysis and ML models to better predict future resources needs](scsus08-bp01.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

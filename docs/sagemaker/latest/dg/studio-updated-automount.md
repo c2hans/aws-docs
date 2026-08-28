@@ -76,3 +76,7 @@ For custom setup, EFS creation and auto-mounting are enabled by default.
  **Error resolution**
 
  If SageMaker AI encounters an issue when auto-mounting the Amazon EFS user folder during application creation, the application is still created. However, in this case, SageMaker AI creates a file named `error.txt` instead of mounting the Amazon EFS folder. This file describes the error encountered, as well as steps to resolve it. SageMaker AI creates the `error.txt` file in the `user-default-efs` folder located in the `$HOME` directory of the application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

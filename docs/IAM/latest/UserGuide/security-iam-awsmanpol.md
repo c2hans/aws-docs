@@ -440,3 +440,7 @@ View details about updates to IAM and AWS managed policies since the service beg
 | [AccessAnalyzerServiceRolePolicy](https://console.aws.amazon.com/iam/home#policies/AccessAnalyzerServiceRolePolicy) – Added permissions | IAM Access Analyzer added new Amazon S3 actions to analyze metadata associated with multi-region access points. | September 2, 2021 |
 | [IAMAccessAnalyzerReadOnlyAccess](#security-iam-awsmanpol-IAMAccessAnalyzerReadOnlyAccess) – Added permissions | IAM Access Analyzer added a new action to grant `ValidatePolicy` permissions to allow you to use the policy checks for validation.<br />This permission is required by IAM Access Analyzer to perform policy checks on your policies. | March 16, 2021 |
 | IAM Access Analyzer started tracking changes | IAM Access Analyzer started tracking changes for its AWS managed policies. | March 1, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

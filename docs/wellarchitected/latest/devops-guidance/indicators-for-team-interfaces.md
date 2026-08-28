@@ -19,3 +19,7 @@ Implement mechanisms to enhance productivity within and across teams, providing 
 + [[OA.TI.9] Facilitate self-service collaboration through APIs and documentation](oa.ti.9-facilitate-self-service-collaboration-through-apis-and-documentation.md)
 + [[OA.TI.10] Choose interaction modes for improved efficiency and cost savings](oa.ti.10-choose-interaction-modes-for-optimal-efficiency-and-cost-savings.md)
 + [[OA.TI.11] Offer optional opportunities for cross-team collaboration](oa.ti.11-offer-optional-opportunities-for-cross-team-collaboration.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

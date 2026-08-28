@@ -49,3 +49,7 @@ The error message indicates that the fleet being deleted still has active instan
 
 **VPC actions are not authorized.**
 This issue only applies to fleets that you have specifically created VPC peering connections for (see [Set up VPC peering for Amazon GameLift Servers](vpc-peering.md). This scenario occurs because the process of deleting a fleet also includes deleting the fleet's VPC and any VPC peering connections. You must first get an authorization by calling the service API for Amazon GameLift Servers [ CreateVpcPeeringAuthorization()](https://docs.aws.amazon.com/gamelift/latest/apireference/API_CreateVpcPeeringAuthorization.html) or use the AWS CLI command `create-vpc-peering-authorization`. Once you have the authorization, you can delete the fleet.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

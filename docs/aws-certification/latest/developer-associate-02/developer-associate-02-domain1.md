@@ -47,3 +47,7 @@ source_url: https://docs.aws.amazon.com/aws-certification/latest/developer-assoc
 + Skill 1.3.7: Manage data lifecycles
 + Skill 1.3.8: Use data caching services
 + Skill 1.3.9: Use specialized data stores based on access patterns (for example, Amazon OpenSearch Service)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certification. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-certification` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

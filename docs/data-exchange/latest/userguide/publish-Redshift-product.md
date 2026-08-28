@@ -219,3 +219,7 @@ You can copy a public, private, published, or unpublished product. Custom oﬀer
 1. Select the **Actions** dropdown, and then choose **Create copy**.
 
 1. Continue through the **Publish a product** workflow, with details already filled in, based on the product you chose in Step 3. For more information, see [Step 5: Publish a new product](publish-data-product.md#publish-products).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,3 +38,7 @@ To log and monitor your AWS IoT Wireless resources, perform the following steps:
 1. Next, you can monitor your resources by viewing the log entries in the CloudWatch Logs console. For more information, see [View CloudWatch AWS IoT Wireless log entries](cwl-format.md).
 
 1. You can create filter expressions by using **Logs groups** but we recommend that you first create simple filters and view log entries in the log groups, and then go to CloudWatch Insights to create queries to filter the log entries depending on the resource or event you're monitoring. For more information, see [Use CloudWatch Insights to filter logs for AWS IoT Wireless](cwl-insights.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

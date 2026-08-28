@@ -20,3 +20,7 @@ Consider the following encryption best practices for these services:
 + Enable encryption by default for EBS volumes for your account in the current AWS Region. This enforces encryption of any new EBS volumes and snapshot copies. It has no effect on existing EBS volumes or snapshots. For more information, see [Enable encryption by default](https://docs.aws.amazon.com/ebs/latest/userguide/work-with-ebs-encr.html#encryption-by-default).
 + Encrypt the instance store root volume for an Amazon EC2 instance. This helps you protect configuration files and data stored with the operating system. For more information, see [How to protect data at rest with Amazon EC2 instance store encryption](https://aws.amazon.com/blogs/security/how-to-protect-data-at-rest-with-amazon-ec2-instance-store-encryption/) (AWS blog post)
 + In AWS Config, implement the [encrypted-volumes](https://docs.aws.amazon.com/config/latest/developerguide/encrypted-volumes.html) rule to automated checks that validate and enforce appropriate encryption configurations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ Additionally, the following system stored procedures are supported only for Amaz
 + [mysql.rds\_set\_external\_master\_gtid](mysql_rds_set_external_master_gtid.md)
 + [mysql.rds\_kill\_query\_id](mysql_rds_kill_query_id.md)
 + [mysql.rds\_execute\_operation](mysql_rds_execute_operation.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

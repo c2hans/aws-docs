@@ -17,3 +17,7 @@ The AWS Toolkit feature provides a convenient visual interface for working with 
 + [Working with AWS CodePipeline](codepipeline-repos.md)
 + [Working with CodeCatalyst](ide-toolkits-cloud9.md)
 + [Working with AWS CDK](cdk-explorer.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

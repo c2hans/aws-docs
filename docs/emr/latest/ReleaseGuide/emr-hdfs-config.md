@@ -16,3 +16,7 @@ When you use managed Scaling, auto-scaling, or choose to manually resize your cl
 | --- | --- | --- |
 | dfs.block.size | The size of HDFS blocks. When operating on data stored in HDFS, the split size is generally the size of an HDFS block. Larger numbers provide less task granularity, but also put less strain on the cluster NameNode. | 134217728 (128 MB) |
 | dfs.replication | The number of copies of each block to store for durability. Amazon EMR sets this value based on the number of core nodes the cluster is provisioned with. Adjust the value to meet your needs. To overwrite the default value, use the hdfs-site classification. | `1` for clusters that are provisioned with less than four core nodes<br />`2` for clusters that are provisioned with less than ten core nodes<br />`3` for all other clusters |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

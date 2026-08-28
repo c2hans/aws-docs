@@ -23,3 +23,7 @@ For a space that was created before April 20, 2023, you must create the role in 
 1. For the designated billing account for the space, the space administrator is recommended to purchase a Business Support or Enterprise Support plan for the AWS account. All members in the space will be able to manage support cases from Support for Amazon CodeCatalyst, and channels of support will be aligned to the Support plan you have purchased where integrations are completed.
 
 1. To create and manage support cases in CodeCatalyst, see [Creating a CodeCatalyst support case in CodeCatalyst](creating-a-support-case.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,3 +25,7 @@ Make sure that the corresponding config rule for each Compute Optimizer check is
   <tr><td><a href="https://aws.amazon.com/compute-optimizer/faqs/#topic-9">Idle Amazon RDS instance</a></td><td><b>AWSManagedServices-StopIdleRDSInstance</b><br />Stop an idle Amazon RDS instance. Supported engines are: MariaDB, Microsoft SQL Server, MySQL, Oracle, PostgreSQL. This document doesn't apply to Aurora MySQL and Aurora PostgreSQL. The instance will be stopped up to 7 days and relaunched automatically.</td><td>No preconfigured parameters are allowed.<br />No constraints</td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

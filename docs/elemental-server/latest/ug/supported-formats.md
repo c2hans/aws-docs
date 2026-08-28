@@ -67,3 +67,7 @@ Support for an input format and support for an output format doesn't mean that A
 | Teletext | From TS input: Captions in the EBU Teletext format.<br />From MXF file input: Captions in the EBU Teletext format.<br />For output: Captions in the EBU Teletext format. |
 | TTML | Caption files that are compliant with the standard “Timed Text Markup Language 1 (TTML1) (Second Edition).” |
 | WebVTT | Captions that are compliant with “webvtt: The Web Video Text Tracks Format” as defined by the W3C organization. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

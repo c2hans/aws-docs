@@ -67,3 +67,7 @@ Security Hub CSPM applies `OR` logic to filters that use the same attribute but 
    For an existing filter, you can change the filter match type or value. On a filtered finding list, choose the filter. In the **Edit filter** box, choose the new match type or value, and then choose **Apply**.
 
    To remove a filter, choose the **x** icon. The list is updated automatically to reflect the change.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

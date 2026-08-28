@@ -70,3 +70,7 @@ The AMI that you choose for a compute environment must match the architecture of
 All compute environments that are associated with a job queue must share the same architecture. AWS Batch doesn't support mixing compute environment architecture types in a single job queue.
 
 1. (Optional) Submit a sample job to your new job queue. For more information, see [Job definition examples](example-job-definitions.md), [Create a single-node job definition](create-job-definition.md), and [Tutorial: submit a job](submit_job.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

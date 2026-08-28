@@ -76,3 +76,7 @@ Each reporting interval serves double duty: share the right data with the right 
 1. **Strategic planning**:** **Set goals for next year's improvement, plan for new capabilities and integrations, allocate resources for continued development.
 
 1. **Knowledge sharing**:** **Document lessons learned and best practices, share success stories across the organization, contribute to industry knowledge and standards.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

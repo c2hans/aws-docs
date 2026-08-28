@@ -157,3 +157,7 @@ As a best practice, compile on the same operating system using tools like Docker
 If the missing library name starts with `libkvs`, see the section for "moved libraries" above to install the Kinesis Video Streams libraries from the host device to the target device.
 
 Otherwise, follow [Install software prerequisites](producersdk-cpp-rpi-software.md) to make sure all the open-source software prerequisites are installed on the target device.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

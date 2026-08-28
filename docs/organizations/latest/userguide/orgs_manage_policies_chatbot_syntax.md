@@ -430,3 +430,7 @@ The following policy allows restricted Amazon Q Developer in chat applications a
 
 **Additional details**
 + The `default` block at the bottom sets the client to be disabled, which disables Amazon Q Developer in chat applications across the organization unless overridden at a lower level. This means Amazon Chime is disabled in this example. This default also disables any new chat application that Amazon Q Developer in chat applications supports. For example, if Amazon Q Developer in chat applications supports a new chat application, this default disables that newly supported chat application as well.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,3 +37,7 @@ You can view the list of partners that are imported through the AWS Supply Chain
 1. To view your partners in a list or map view, use the **List** or **Map** toggle button on the right.
 
 1. Choose **Invite partners** to invite new partners from the dataset into the AWS Supply Chain network. For more information on inviting partners, see [Inviting partners](partner_network_dashboard.md#inviting_partners).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

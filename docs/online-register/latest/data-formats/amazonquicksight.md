@@ -26,7 +26,6 @@ Amazon QuickSight provides the following APIs for data retrieval.
 | <a name="quicksight-DescribeApprovalPolicy"></a>[DescribeApprovalPolicy](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeApprovalPolicy.html) | Describe an approval policy | Read |
 | <a name="quicksight-DescribeAssetBundleExportJob"></a>[DescribeAssetBundleExportJob](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAssetBundleExportJob.html) | Describe an asset bundle export job | Read |
 | <a name="quicksight-DescribeAssetBundleImportJob"></a>[DescribeAssetBundleImportJob](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAssetBundleImportJob.html) | Describe an asset bundle import job | Read |
-| <a name="quicksight-DescribeAutomationGroup"></a>[DescribeAutomationGroup](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAutomationGroup.html) | Describe an automation group | Read |
 | <a name="quicksight-DescribeAutomationJob"></a>[DescribeAutomationJob](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeAutomationJob.html) | Describe an automation job | Read |
 | <a name="quicksight-DescribeBrand"></a>[DescribeBrand](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeBrand.html) | Describe a brand | Read |
 | <a name="quicksight-DescribeBrandAssignment"></a>[DescribeBrandAssignment](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_DescribeBrandAssignment.html) | Describe a brand assignment | Read |
@@ -94,8 +93,8 @@ Amazon QuickSight provides the following APIs for data retrieval.
 | <a name="quicksight-ListApps"></a>[ListApps](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListApps.html) | List all apps in a QuickSight account | List |
 | <a name="quicksight-ListAssetBundleExportJobs"></a>[ListAssetBundleExportJobs](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListAssetBundleExportJobs.html) | List all asset bundle export jobs | List |
 | <a name="quicksight-ListAssetBundleImportJobs"></a>[ListAssetBundleImportJobs](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListAssetBundleImportJobs.html) | List all asset bundle import jobs | List |
-| <a name="quicksight-ListAutomationGroups"></a>[ListAutomationGroups](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListAutomationGroups.html) | List all automation groups in an account | List |
 | <a name="quicksight-ListBrands"></a>[ListBrands](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListBrands.html) | Lists all brands in an Amazon QuickSight account | List |
+| <a name="quicksight-ListCustomPermissionAssignments"></a>[ListCustomPermissionAssignments](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html) | List assignment information of the custom permission profile in an account | List |
 | <a name="quicksight-ListCustomPermissions"></a>[ListCustomPermissions](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListCustomPermissions.html) | List custom permissions resources in QuickSight account | List |
 | <a name="quicksight-ListCustomerManagedKeys"></a>[ListCustomerManagedKeys](https://docs.aws.amazon.com/quicksight/latest/user/key-management.html) | List all registered customer managed keys | List |
 | <a name="quicksight-ListDashboardVersions"></a>[ListDashboardVersions](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_ListDashboardVersions.html) | List all versions of a QuickSight Dashboard | List |
@@ -148,7 +147,6 @@ Amazon QuickSight provides the following APIs for data retrieval.
 | <a name="quicksight-SearchAgents"></a>[SearchAgents](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchAgents.html) | Search agents | List |
 | <a name="quicksight-SearchAnalyses"></a>[SearchAnalyses](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchAnalyses.html) | Search for a sub-set of analyses | List |
 | <a name="quicksight-SearchApps"></a>[SearchApps](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchApps.html) | Search for apps in a QuickSight account | List |
-| <a name="quicksight-SearchAutomationGroups"></a>[SearchAutomationGroups](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchAutomationGroups.html) | Search for automation groups in an account | List |
 | <a name="quicksight-SearchDashboards"></a>[SearchDashboards](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchDashboards.html) | Search for a sub-set of QuickSight Dashboards | List |
 | <a name="quicksight-SearchDataSets"></a>[SearchDataSets](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchDataSets.html) | Search for a sub-set of QuickSight DatSets | List |
 | <a name="quicksight-SearchDataSources"></a>[SearchDataSources](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchDataSources.html) | Search for a sub-set of QuickSight Data Sources | List |
@@ -160,3 +158,7 @@ Amazon QuickSight provides the following APIs for data retrieval.
 | <a name="quicksight-SearchSpaces"></a>[SearchSpaces](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchSpaces.html) | Search spaces | List |
 | <a name="quicksight-SearchTopics"></a>[SearchTopics](https://docs.aws.amazon.com/quicksight/latest/APIReference/API_SearchTopics.html) | Search for a sub-set of topics | List |
 | <a name="quicksight-SearchUsers"></a>[SearchUsers](https://docs.aws.amazon.com/quicksight/latest/user/iam-actions.html) | Search the QuickSight users belonging to this account | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

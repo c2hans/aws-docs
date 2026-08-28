@@ -31,3 +31,7 @@ SAP offers [RISE with SAP](https://www.sap.com/products/rise.html), a single-ten
 When evaluating the different managed service offerings available, understand the managed services partner’s approach to cost management. How can you work together to drive on-going cost optimization for your organization?
 
 This evaluation should include a regular review process. It might also benefit from incentives, such as a shared reward model, that encourage the partner to take ownership so that both parties financially benefit from the cost savings achieved.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

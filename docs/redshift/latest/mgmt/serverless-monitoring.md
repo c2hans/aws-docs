@@ -36,3 +36,7 @@ You can monitor your usage trends over time to:
 + Identify potential cost-saving opportunities like removing cold data.
 
 Use the SYS system views to monitor Amazon Redshift Serverless;. For more information about the SYS monitoring views, go to [SYS monitoring views](https://docs.aws.amazon.com/redshift/latest/dg/serverless_views-monitoring.html) in the Amazon Redshift Database Developer Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

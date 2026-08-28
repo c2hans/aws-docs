@@ -20,3 +20,7 @@ The registration application is a software product that is (ideally) completely 
 Note that the registration portal can be responsible for collecting additional end-user information, such as the end-user's location, and for including personally identifiable information that can be used by the application's location to select a target endpoint among several alterantives (if the OEM controls multiple AWS accounts). This also makes it possible to optimize the end-user experience and reduce latency (by selecting the most appopriate region, for example). The logic used, and any additional information optionally collected, are completely outside the scope of this document and are not essential to the onboarding process.
 
 For an example implementation of a basic (web) registration portal, refer to the [ claim provisioning reference implementation](samples/el-claim-provisioning-ref-impl.zip) (download).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT ExpressLink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-expresslink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

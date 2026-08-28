@@ -137,3 +137,7 @@ The list of data volume definitions for the daemon task.
 
 `DaemonTaskDefinitionArn`  <a name="DaemonTaskDefinitionArn-fn::getatt"></a>
 The full Amazon Resource Name (ARN) of the daemon task definition.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

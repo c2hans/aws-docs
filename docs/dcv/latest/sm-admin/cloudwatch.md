@@ -42,3 +42,7 @@ If your Broker is running on an Amazon EC2 instance, this parameter is optional.
    ```
 
 The Broker host must also have permission to call the `cloudwatch:PutMetricData` API. AWS credentials can be retrieved using one of the supported credential retrieval techniques. For more information, see [Supplying and Retrieving AWS Credentials](https://docs.aws.amazon.com/sdk-for-java/v2/developer-guide/credentials.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

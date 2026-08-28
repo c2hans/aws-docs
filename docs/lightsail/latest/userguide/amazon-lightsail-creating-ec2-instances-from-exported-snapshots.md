@@ -155,3 +155,7 @@ The following information is displayed for EC2 instances being created:
 The following information is displayed in the task monitor for EC2 instances that have been created:
 + **Created** is displayed if the Amazon EC2 resources were successfully created.
 + **Failed** is displayed if there was a problem creating EC2 instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

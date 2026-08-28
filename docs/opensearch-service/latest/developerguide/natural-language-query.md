@@ -51,3 +51,7 @@ You must also have the `indices:admin/mappings/get` and `read` index permissions
 Flow Framework is an OpenSearch plugin that provides a way to [automate OpenSearch configurations](https://opensearch.org/docs/latest/automating-configurations/index/) for use cases such as query generation and conversational chat. Because the plugin tracks the resources that enable the natural language query generation feature, the flow framework index stores a template for each domain that uses query assist.
 
 Flow Framework allows you to either select from a set of [predefined templates](https://opensearch.org/docs/latest/automating-configurations/workflow-templates/), or create your own automations for machine learning connectors, tools, agents, and other components that prepare OpenSearch as a backend for generative models.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

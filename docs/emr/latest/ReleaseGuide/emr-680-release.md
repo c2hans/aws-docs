@@ -339,3 +339,7 @@ Reconfiguration actions occur when you specify a configuration for instance grou
 | 2022-09-06 | Deployment complete | Amazon EMR 6.8 fully deployed to all [supported Regions](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/) |
 | 2022-09-06 | Initial publication | Amazon EMR 6.8 release notes first published |
 | 2022-08-31 | Initial release | Amazon EMR 6.8 released to limited commercial Regions |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,3 +50,7 @@ In Chrome, users can find managed bookmarks in the **Managed bookmarks** folder 
 1. Add **Tags** to your portal. You can use tags to search for or filter your AWS resources. Tags consist of a key and optional value and are associated with your portal resource. **This is optional.**
 
 1. Choose **Next** to continue.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

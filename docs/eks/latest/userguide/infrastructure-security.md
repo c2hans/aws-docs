@@ -32,3 +32,7 @@ You can enable private access to the Kubernetes API server so that all communica
 For more information about modifying cluster endpoint access, see [Modifying cluster endpoint access](cluster-endpoint.md#modify-endpoint-access).
 
 You can implement Kubernetes *network policies* with the Amazon VPC CNI or third-party tools such as [Project Calico](https://docs.tigera.io/calico/latest/about/). For more information about using the Amazon VPC CNI for network policies, see [Limit Pod traffic with Kubernetes network policies](cni-network-policy.md). Project Calico is a third party open source project. For more information, see the [Project Calico documentation](https://docs.tigera.io/calico/latest/getting-started/kubernetes/managed-public-cloud/eks/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

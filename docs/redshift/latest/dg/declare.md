@@ -44,18 +44,20 @@ Because of the potential negative performance impact of using cursors, we recomm
 Amazon Redshift cursors are supported with the following limitations:
 + Only one cursor at a time can be open per session.
 + Cursors must be used within a transaction (BEGIN … END).
-+ The maximum cumulative result set size for all cursors is constrained based on the cluster node type. If you need larger result sets, you can resize to an XL or 8XL node configuration.
++ The maximum cumulative result set size for all cursors is constrained based on the cluster node type. This is a cluster-wide total that is shared across all cursors that are open at the same time; a single cursor can use only part of it, because some capacity is reserved so that multiple cursors can run concurrently. If you need larger result sets, you can resize to a larger node configuration.
 
   For more information, see [Cursor constraints](#declare-constraints).
 
 ## Cursor constraints
 <a name="declare-constraints"></a>
 
-When the first row of a cursor is fetched, the entire result set is materialized on the leader node. If the result set doesn't fit in memory, it is written to disk as needed. To protect the integrity of the leader node, Amazon Redshift enforces constraints on the size of all cursor result sets, based on the cluster's node type.
+When the first row of a cursor is fetched, the entire result set is materialized on the leader node. If the result set doesn't fit in memory, it is written to disk as needed. To protect the integrity of the leader node, Amazon Redshift enforces constraints on the size of cursor result sets, based on the cluster's node type.
 
-The following table shows the maximum total result set size for each cluster node type. Maximum result set sizes are in megabytes.
+The value in the following table is a cluster-wide total, not a per-cursor limit. To make sure that multiple cursors can be open concurrently, a portion of this total capacity is reserved for concurrent use. As a result, a single cursor can't use the entire cumulative maximum on its own; the largest result set that one cursor can hold is less than the total shown in the table. An individual cursor can fail when its result set reaches this per-cursor boundary, even when the cluster's overall cursor capacity isn't fully used.
 
-| Node type | Maximum result set per cluster (MB) |
+The following table shows the maximum cumulative result set size for each cluster node type. Maximum result set sizes are in megabytes.
+
+| Node type | Maximum cumulative result set per cluster (MB) |
 | --- | --- |
 |  rg.12xlarge multiple nodes  | 7,200,000 |
 |  rg.4xlarge multiple nodes  | 1,600,000 |
@@ -164,3 +166,7 @@ SELECT message
       a 1
       a 3
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

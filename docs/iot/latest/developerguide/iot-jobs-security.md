@@ -29,3 +29,7 @@ The following shows how you authorize your users, cloud services, and devices to
 + [Required policy type for AWS IoT Jobs](#jobs-required-policy)
 + [Authorizing users and cloud services to use AWS IoT Jobs](iam-policy-users-jobs.md)
 + [Authorizing your devices to securely use AWS IoT Jobs on the data plane](iot-data-plane-jobs.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -140,3 +140,7 @@ For a current list of supported versions and editions, see [Oracle on Amazon RDS
 + [Analyzing performance management in Oracle SE using Amazon RDS for Oracle](https://aws.amazon.com/blogs/database/analyzing-performance-management-in-oracle-se-using-amazon-rds-for-oracle/)
 + [Managing your SQL plan in Oracle SE with Amazon RDS for Oracle](https://aws.amazon.com/blogs/database/managing-your-sql-plan-in-oracle-se-with-amazon-rds-for-oracle/)
 + [Implementing table partitioning in Oracle Standard Edition: Part 1](https://aws.amazon.com/blogs/database/implementing-table-partitioning-in-oracle-standard-edition-part-1/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

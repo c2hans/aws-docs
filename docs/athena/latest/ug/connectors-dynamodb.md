@@ -221,3 +221,7 @@ The costs for use of the connector depends on the underlying AWS resources that 
 + For an article on how to use the Athena DynamoDB connector to query data in DynamoDB with SQL and visualize insights in Quick, see the *AWS Big Data Blog* post [Visualize Amazon DynamoDB insights in Quick using the Amazon Athena DynamoDB connector and AWS Glue](https://aws.amazon.com/blogs/big-data/visualize-amazon-dynamodb-insights-in-amazon-quicksight-using-the-amazon-athena-dynamodb-connector-and-aws-glue/).
 + For an article on using the Amazon Athena DynamoDB connector with Amazon DynamoDB, Athena, and Quick to create a simple governance dashboard, see the *AWS Big Data Blog* post [Query cross-account Amazon DynamoDB tables using Amazon Athena Federated Query](https://aws.amazon.com/blogs/big-data/query-cross-account-amazon-dynamodb-tables-using-amazon-athena-federated-query/).
 + For additional information about this connector, visit [the corresponding site](https://github.com/awslabs/aws-athena-query-federation/tree/master/athena-dynamodb) on GitHub.com.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

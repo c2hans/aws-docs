@@ -37,3 +37,7 @@ Depending on your data retention requirements, for example how much historical d
   1. Within 90 days, both Cassandra and Amazon Keyspaces contain the same data and are expiring data at the same rate.
 
   This example illustrates how to avoid the step of uploading historical data by using TTL with an expiration date set to 60 days.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

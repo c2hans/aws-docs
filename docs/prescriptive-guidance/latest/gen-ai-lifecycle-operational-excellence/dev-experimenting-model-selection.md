@@ -16,3 +16,7 @@ We recommend the following to help you avoid common pitfalls when selecting a mo
 + **Don't over-optimize prematurely** – The PoC phase is about proving feasibility, not achieving perfect optimization.
 + **Don't ignore specialized models** – If you're working in a specific domain, test domain-specific models early.
 + **Don't assume bigger is better** – Sometimes a smaller, faster model with well-crafted prompts can outperform a larger model for specific tasks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

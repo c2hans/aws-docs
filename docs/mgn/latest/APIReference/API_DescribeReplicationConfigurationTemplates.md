@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/mgn/latest/APIReference/API_DescribeRepl
 # DescribeReplicationConfigurationTemplates
 <a name="API_DescribeReplicationConfigurationTemplates"></a>
 
-Lists all ReplicationConfigurationTemplates, filtered by Source Server IDs.
+Lists all ReplicationConfigurationTemplates, filtered by replication configuration template IDs.
 
 ## Request Syntax
 <a name="API_DescribeReplicationConfigurationTemplates_RequestSyntax"></a>
@@ -151,3 +151,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/mgn-2020-02-26/DescribeReplicationConfigurationTemplates)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/mgn-2020-02-26/DescribeReplicationConfigurationTemplates)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mgn-2020-02-26/DescribeReplicationConfigurationTemplates)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for ApplicationMigrationService. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

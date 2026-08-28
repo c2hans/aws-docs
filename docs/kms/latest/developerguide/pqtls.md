@@ -57,3 +57,7 @@ For more information about using hybrid post-quantum TLS in AWS KMS, see the fol
 + For information about the AWS Common Runtime HTTP Client, see [Configuring the AWS CRT-based HTTP client](https://docs.aws.amazon.com/sdk-for-java/latest/developer-guide/http-configuration-crt.html) in the *AWS SDK for Java 2.x Developer Guide*.
 + For information about the post-quantum cryptography project at the National Institute for Standards and Technology (NIST), see [Post-Quantum Cryptography](https://csrc.nist.gov/Projects/Post-Quantum-Cryptography).
 + For information about NIST post-quantum cryptography standardization, see [Post-Quantum Cryptography Standardization](https://csrc.nist.gov/Projects/post-quantum-cryptography/post-quantum-cryptography-standardization).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

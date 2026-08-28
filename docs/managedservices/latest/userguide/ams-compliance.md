@@ -32,3 +32,7 @@ These are the current compliance standards supported by AMS.
 <a name="ams-compliance-shared-response"></a>
 
 Security, including PCI compliance, is a [shared responsibility](https://aws.amazon.com/compliance/shared-responsibility-model/). It is important to understand that AMS compliance status does not automatically apply to applications that you run in the AWS Cloud. You need to ensure that your use of AWS services complies with the standards. For more details on how AMS works together with customers across specific activities, see the AMS [AMS responsibility matrix (RACI)](raci-table.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

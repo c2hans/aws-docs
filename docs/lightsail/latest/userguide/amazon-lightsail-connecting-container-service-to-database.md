@@ -120,3 +120,7 @@ To avoid ongoing charges, delete the following resources you created in this tut
 1. (Optional) If you created a WordPress instance in Step 4, delete it. For more information, see [Deleting an Amazon Lightsail instance](delete-an-amazon-lightsail-instance.md).
 
 1. (Optional) If you created a static IP address in Step 4, delete it. For more information, see [Delete a static IP address in Amazon Lightsail](how-to-delete-static-ip.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

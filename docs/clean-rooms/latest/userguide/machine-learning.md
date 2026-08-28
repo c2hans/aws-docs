@@ -114,3 +114,7 @@ Here are the steps that must be completed by the *data provider* to collaborate 
 1. After the model and data are associated and configured in Clean Rooms ML, the member with the ability to run queries provides an SQL query and selects the model algorithm to use.
 
  After model training is finished, that member initiates the export of model training artifacts or inference results. These artifacts or results are sent to the member with the ability to received trained model output. The results receiver must configure their `MachineLearningConfiguration` before they can receive model output.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

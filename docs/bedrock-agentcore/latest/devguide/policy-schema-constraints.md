@@ -59,3 +59,7 @@ The principal type depends on the authentication method configured for your Agen
 + Cannot access context fields other than `context.input` (`context.output` can only be used with guardrails)
 + Cannot use custom attributes on OAuthUser (use tags instead)
 + Cannot define new entity types in policies
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

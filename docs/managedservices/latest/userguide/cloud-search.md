@@ -27,3 +27,7 @@ Full functionality of Amazon CloudSearch is available in your AMS account. All A
 **Q: What are the prerequisites or dependencies to using Amazon CloudSearch in my AMS account?**
 
 Amazon CloudSearch depends on Amazon S3 working with Identity Providers to automatically analyze input data and determine the table fields. Access to Amazon S3 is not provided with this RFC, and must be requested separately in a service request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

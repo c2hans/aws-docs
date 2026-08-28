@@ -93,3 +93,7 @@ For detailed information about the Amazon SWF operations in each SDK, refer to t
 The AWS Flow Framework is an enhanced SDK for writing distributed, asynchronous programs that run as workflows on Amazon SWF. The framework is available for the Java programming language and provides classes for writing complex distributed programs.
 
 With the AWS Flow Framework, you use preconfigured types to map the definition of your workflow directly to methods in your program. The AWS Flow Framework supports standard object-oriented concepts, such as exception-based error handling. Programs written with the AWS Flow Framework can be created, run, and debugged entirely within your preferred editor or IDE. For more information, see the [AWS Flow Framework](https://aws.amazon.com/swf/flow/) website, and see [AWS Flow Framework for Java Developer Guide](https://docs.aws.amazon.com/amazonswf/latest/awsflowguide/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

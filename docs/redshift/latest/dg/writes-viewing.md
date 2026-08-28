@@ -62,3 +62,7 @@ For more information, see [DESC DATASHARE](r_DESC_DATASHARE.md) and [SHOW DATASH
 You can also use [SVV\_DATASHARES](r_SVV_DATASHARES.md), [SVV\_DATASHARE\_CONSUMERS](r_SVV_DATASHARE_CONSUMERS.md), and [SVV\_DATASHARE\_OBJECTS](r_SVV_DATASHARE_OBJECTS.md) to view the datashares, the objects within the datashare, and the datashare consumers.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

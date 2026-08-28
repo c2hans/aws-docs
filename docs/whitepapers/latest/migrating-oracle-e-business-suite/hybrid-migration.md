@@ -29,3 +29,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
  In this setup, the on-premises data center can be connected to the VMware Cloud on AWS environment using DX or IPsec VPN and the actual migrations are performed using VMware HCX
 
 ![Reference architecture diagram showing Oracle E-Business Suite Migration on VMWare Cloud on AWS](http://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-business-suite/images/vmware-hcx-migration.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

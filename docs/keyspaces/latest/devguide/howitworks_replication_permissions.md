@@ -24,3 +24,7 @@ The following is an example of the policy that grants the minimum required permi
 ```
 
 For additional IAM permissions for multi-Region keyspaces and tables, see the [Actions, resources, and condition keys for Amazon Keyspaces (for Apache Cassandra)](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonkeyspacesforapachecassandra.html) in the *Service Authorization Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -997,3 +997,7 @@ Amazon API Gateway Management V2 defines the following condition keys that can b
 |   [aws:RequestTag/${TagKey}](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html)  | Filters access by the presence of tag key-value pairs in the request | String |
 |   [aws:ResourceTag/${TagKey}](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html)  | Filters access by tag key-value pairs attached to the resource | String |
 |   [aws:TagKeys](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-tagging.html)  | Filters access by the presence of tag keys in the request | ArrayOfString |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

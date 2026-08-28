@@ -30,3 +30,7 @@ If an ElastiCache primary node can't become a replica of your Valkey or Redis OS
 + Ensure that the routing configuration for your VPC and subnets allows traffic between ElastiCache nodes and your Valkey or Redis OSS instances.
 + Ensure the security group attached to your Valkey or Redis OSS instances allows input bound traffic from ElastiCache nodes.
 + Check Valkey or Redis OSS logs for your instances for more information about failures specific to replication.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

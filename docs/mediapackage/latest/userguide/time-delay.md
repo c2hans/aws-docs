@@ -35,3 +35,7 @@ Clip start can’t be used with *start *and *end *parameters.
 Clip start and start parameters offer similar functionality, but have different practical purposes.
 + Clip start is used to ensure that content before the set time is blocked. The manifest continues to grow, up to the defined window duration.
 + Start is used to ensure that content before the set time is blocked. If used with an *end *parameter, the returned manifest ends at the specified time. If not used with an *end *parameter, the returned manifest continues to grow up to the value of the startover window.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

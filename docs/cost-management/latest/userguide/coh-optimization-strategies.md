@@ -88,3 +88,7 @@ The following table shows the full mapping of recommended actions and resource t
   - **Resource type:** EC2 Auto Scaling group / **Conditions:** With Graviton-compatible inferred workload type / **Implementation effort:** High / **Resource restart needed:** Yes / **Rollback possible:** Yes
   - **Resource type:** EC2 Auto Scaling group / **Conditions:** Without Graviton-compatible inferred workload type / **Implementation effort:** Very high / **Resource restart needed:** Yes / **Rollback possible:** Yes
   - **Resource type:** RDS DB instance / **Conditions:** All / **Implementation effort:** Medium / **Resource restart needed:** Yes / **Rollback possible:** Yes
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

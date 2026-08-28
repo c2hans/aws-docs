@@ -150,3 +150,7 @@ The `cli-sct-dms-cft.zip` file (attached) contains the complete source code for 
 <a name="attachments-5e041494-2e64-4f09-b6ec-0e0cba3a4972"></a>
 
 To access additional content that is associated with this document, download and unzip the following file: [attachment.zip](samples/p-attach/5e041494-2e64-4f09-b6ec-0e0cba3a4972/attachments/attachment.zip)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

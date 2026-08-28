@@ -99,3 +99,7 @@ OpenSearch Service can be configured within a virtual private cloud (VPC), or i
 + [JDBC input plugin](https://www.elastic.co/guide/en/logstash/current/plugins-inputs-jdbc.html)
 + [Logstash output plugin](https://github.com/awslabs/logstash-output-amazon_es)
 + [Amazon OpenSearch Service website](https://aws.amazon.com/elasticsearch-service/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

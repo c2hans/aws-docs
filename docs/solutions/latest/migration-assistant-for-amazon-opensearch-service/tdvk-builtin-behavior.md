@@ -34,3 +34,7 @@ The result is a complete, valid `knn_vector` mapping. A simplified example of th
 
 **Note**
 The exact `space_type`, `engine`, and parameter values depend on the source definition and the target version. Newer Amazon OpenSearch Service and Amazon OpenSearch Serverless NextGen targets receive additional vector compatibility transformations: legacy `index.knn.*` build settings are moved into field-level method configuration, `nmslib` engines are converted to `faiss` for OpenSearch 3.x targets, and Serverless targets receive Faiss HNSW mappings. Always confirm the final mapping on the target after metadata migration (see [Post-migration validation](tdvk-validation.md)).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

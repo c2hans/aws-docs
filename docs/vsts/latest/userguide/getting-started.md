@@ -123,3 +123,7 @@ For build agents running on Amazon Elastic Compute Cloud (Amazon EC2) instances,
 To use Amazon EC2 instance metadata credentials, the instance must have started with an instance profile that references a role that grants permissions to the task. This allows the role to make calls to AWS on your behalf. For more information, see [Using an IAM role to grant permissions to applications running on Amazon EC2 instances](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2.html).
 
 Set up an Amazon EC2 instance as a self-hosted Azure pipelines agent. For more infornmation, see [Azure Pipelines agent](https://docs.microsoft.com/en-us/azure/devops/pipelines/agents/agents) in the Microsoft Azure DevOps online documentation. After that's completed, AWS tasks can be added without setting any credentials explicitly. When running on a build machine, your IAM credentials are picked up automatically.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Microsoft Azure DevOps. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vsts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

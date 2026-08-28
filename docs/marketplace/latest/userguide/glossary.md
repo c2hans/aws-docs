@@ -214,3 +214,7 @@ A tax form required for non-US sellers (typically W-8BEN for individuals or W-8B
 A tax form required for US-based sellers that includes the Taxpayer Identification Number (TIN) and other tax information necessary for proper tax reporting.
 *See also:* [W-8 form](#glossary-w8-form), [Taxpayer Identification Number (TIN)](#glossary-tin)
 *Learn more:* [Step 2: Provide tax information](provide-tax-information.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,3 +53,7 @@ For information on other things to consider before you create a transit gateway-
 
 **After you accept a shared transit gateway attachment**
 The steps in this guide are only part of a larger process that involves AWS Network Firewall, AWS Transit Gateway, and AWS RAM. When a you complete the previous steps within the Network Firewall console, the transit gateway-attached firewall enters a `Pending` state. You can proceed to [Working with transit gateway-attached firewalls](working-with-tgw-firewalls.md) to begin configuring your transit gateway-attached firewall while you wait for the transit gateway owner to accept or reject it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

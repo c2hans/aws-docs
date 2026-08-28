@@ -122,3 +122,7 @@ A [service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_role
 If you choose a self-managed VPC endpoint, OpenSearch Ingestion requires a service-linked role called **AWSServiceRoleForOpensearchIngestionSelfManagedVpce**. For more information on these roles, their permissions, and how to delete them, see [Using service-linked roles to create OpenSearch Ingestion pipelines](slr-osis.md).
 
 OpenSearch Ingestion automatically creates the role when you create an ingestion pipeline. For this automatic creation to succeed, the user creating the first pipeline in an account must have permissions for the `iam:CreateServiceLinkedRole` action. To learn more, see [Service-linked role permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#service-linked-role-permissions) in the *IAM User Guide*. You can view the role in the AWS Identity and Access Management (IAM) console after it's created.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

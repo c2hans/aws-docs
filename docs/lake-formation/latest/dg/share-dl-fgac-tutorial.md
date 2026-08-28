@@ -160,3 +160,7 @@ This section shows how a user in Account B (`testuser1`), acting as a data stewa
 1. Sign into the AWS console in Account B as `testuser2`.
 
    On the Athena console ([https://console.aws.amazon.com/athena/](https://console.aws.amazon.com/athena/home)), you should see the database and table `acc_b_area_rl`. You can now run a query on the table to see the column value that `testuser2` has access to.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

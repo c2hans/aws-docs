@@ -76,3 +76,7 @@ For general content that has no specific time constraint, omit `TimeToLive` and 
 + Pair `TimeToLive` with a `FallbackConfiguration` for critical messages. This ensures the recipient receives the content on an alternative channel if the RCS delivery window closes.
 + Monitor TTL expiration events to track delivery success rates and tune your TTL values over time. For more information about event types, see [RCS message events](rcs-events.md).
 + For rich media messages (rich cards and carousels), consider a longer TTL to account for media download time. For information about rich messaging, see [Sending rich RCS messages](rcs-rich-messaging.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

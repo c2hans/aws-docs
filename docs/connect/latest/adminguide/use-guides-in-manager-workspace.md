@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/connect/latest/adminguide/use-guides-in-
 1. ContactFlowId: If 'Guide' is selected as the application namespace, choose the guide's contact flow ID to run in the component.
 
  When using the Connect application component, users can start the guide by choosing the "Begin" button, which will create the background chat contact to operate the guide. Once a guided workflow is completed, users can start the guide from the beginning of the flow by choosing the "Restart" button. Keep in mind that nesting the guide application component in a view already used in a guide is not supported. The guide in the Connect application component can only be embedded in a static view used as a page in persona-based Workspaces.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

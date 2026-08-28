@@ -57,3 +57,7 @@ You can access Amazon Inspector Classic and AWS programmatically by using the Am
 
 **AWS Command Line Tools**
 You can use the AWS command line tools to run commands at your system's command line to perform Amazon Inspector Classic tasks. The command line tools are also useful if you want to build scripts that perform AWS tasks. For more information, see the [Amazon Inspector Classic AWS Command Line Interface](http://docs.aws.amazon.com/cli/latest/reference/inspector/index.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

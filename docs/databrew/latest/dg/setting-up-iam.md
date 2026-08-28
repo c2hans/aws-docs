@@ -26,3 +26,7 @@ What we provide here is basic setup information. We recommend that you take time
 1. [Add users or groups for DataBrew](setting-up-iam-users-and-groups-for-databrew.md). A user or group with the correct permissions attached can access the DataBrew console.
 
 1. [Add a role with permissions to access data for DataBrew](setting-up-iam-role-to-use-in-databrew.md). A role with the correct permissions can access data on the user's behalf.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

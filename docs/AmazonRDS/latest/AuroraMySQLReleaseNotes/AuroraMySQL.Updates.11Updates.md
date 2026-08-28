@@ -58,3 +58,7 @@ The following are Amazon Aurora version 1 database engine updates:<a name="auror
 + [Aurora MySQL database engine updates: 2015-12-03 (version 1.4) (Deprecated)](AuroraMySQL.Updates.20151203.md)
 + [Aurora MySQL database engine updates: 2015-10-16 (versions 1.2, 1.3) (Deprecated)](AuroraMySQL.Updates.20151016.md)
 + [Aurora MySQL database engine updates: 2015-08-24 (version 1.1) (Deprecated)](AuroraMySQL.Updates.20150824.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

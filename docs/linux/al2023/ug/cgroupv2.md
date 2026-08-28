@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/cgroupv2.html
  There is extensive documentation regarding the [low-level Linux Kernel interfaces](https://docs.kernel.org/admin-guide/cgroup-v2.html), as well as [systemd cgroup delegation documentation](https://systemd.io/CGROUP_DELEGATION/).
 
  A common use case outside of containers is for creating `systemd` units that have limits placed on the system resources they can use. For more information, see [systemd.resource-control](https://www.freedesktop.org/software/systemd/man/systemd.resource-control.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ VMware vSphere is supported (both on-premises as well as VMware on AWS). Example
 <a name="drs-support-hyper-v"></a>
 
 Both Hyper-V and Microsoft Azure are supported. The AWS Replication Agent installation and replication follows the same process described in [Adding source servers.](https://docs.aws.amazon.com/drs/latest/userguide/adding-servers.html) For failback to Azure, review the [Building a disaster recovery site on AWS for workloads on Microsoft Azure](https://aws.amazon.com/blogs/storage/building-a-disaster-recovery-site-on-aws-for-workloads-on-microsoft-azure/) blog post.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

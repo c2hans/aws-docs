@@ -47,3 +47,7 @@ When deciding on the number of concurrent processes to run on an instance, keep 
 + Amazon GameLift Servers limits each instance to a [maximum number of concurrent processes](https://docs.aws.amazon.com/general/latest/gr/gamelift.html#limits_gamelift). The sum of all concurrent processes for a fleet's server process configurations can't exceed this quota.
 + To maintain acceptable performance levels, the Amazon EC2 instance type might limit the number of processes that can run concurrently. Test different configurations for your game to find the right number of processes for your preferred instance type.
 + Amazon GameLift Servers doesn't run more concurrent processes than the total number configured. This means that the transition from the previous runtime configuration to the new configuration might happen gradually.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

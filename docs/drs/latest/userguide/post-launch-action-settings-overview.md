@@ -96,3 +96,7 @@ Use the **Verify HTTP/HTTPS response** feature to conduct HTTP/HTTPS connectivit
 <a name="verify-tags"></a>
 
 Use the **Verify Tags** feature to validate that tags which have been defined in the launch template and on the source server are copied to the migrated server.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

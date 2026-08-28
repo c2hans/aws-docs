@@ -19,3 +19,7 @@ This release expands IPv6 support for AWS App Runner services by providing the d
 Starting with this release, you can use the *dualstack* option to configure incoming and outgoing network traffic to support IPv6 through both public and private endpoints. With this new release App Runner defaults outgoing public traffic to dual stack when you create a new service or when you deploy an update to an existing service.
 
 For more information about how to manage dual-stack support for your App Runner service, see [Networking with App Runner](https://docs.aws.amazon.com/apprunner/latest/dg/network.html) in the *AWS App Runner Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

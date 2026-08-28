@@ -12,3 +12,7 @@ Processes can be made more efficient by giving users the information that they n
 The embedding SDK allows for bi-directional interactions between your app and Quick Sight. Developers can respond to users changing parameters, switching sheets, clicking on datapoints, and more. From your app to Quick Sight, you can set parameters, Q search bar questions, and undo or reset the content state.
 
 To learn more about custom assets that can be configured in the embedding SDK, see [Dynamic filtering – set parameters, set filters](https://docs.aws.amazon.com/quicksight/latest/user/embedding-runtime-filtering.html) and [Respond to events – callbacks](https://docs.aws.amazon.com/quicksight/latest/user/embedding-custom-actions-callback.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick Sight. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quicksight` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ This solution includes data collection metrics to AWS. We use this data to bette
 
 **Note**
 You are responsible for the cost of the AWS services used while running this solution. For more information about costs, see the [Cost](cost.md) section in this guide. Also refer to the pricing webpage for each AWS service used in this solution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

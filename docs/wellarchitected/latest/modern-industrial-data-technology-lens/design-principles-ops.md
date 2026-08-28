@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 +  **Continuous improvement and optimization:** MIDA is designed with a culture of continuous improvement and optimization in mind. This allows the manufacturing team to regularly review performance metrics, identify bottlenecks, and implement enhancements that improve the overall reliability and efficiency of the data infrastructure.
 
  By incorporating these design principles, the modern industrial data architecture can deliver the operational excellence required to support the ever-evolving needs of modern manufacturing organizations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

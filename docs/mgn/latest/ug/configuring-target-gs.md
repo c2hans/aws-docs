@@ -12,7 +12,7 @@ After you have added your source servers to the AWS Transform MGN console, you w
 **Note**
 You can change the launch settings after a test or cutover instance has been launched. You will need to launch a new test or cutover instance for the new settings to take effect.
 
-You can access the launch settings by choosing on the source server name of a source server on the **Source servers** page.
+You can access the launch settings by choosing the source server name of a source server on the **Source servers** page.
 
 Within the individual server view, navigate to the **Launch settings** tab.
 
@@ -28,3 +28,7 @@ Launch settings are composed of the following:
 AWS Transform MGN automatically creates an **EC2 launch template** for each new source server. AWS Transform MGN bases the majority of the instance launch settings on this template. You can edit this template to fit your needs.
 
 [Learn more about Launch settings.](launch-settings.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

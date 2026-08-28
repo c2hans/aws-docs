@@ -31,3 +31,7 @@ It is recommended that you protect your API key usage by setting either an expir
 1. Choose **Show API key**, and copy the key value for use later in the tutorial. It will be in the form `v1.public.{{a1b2c3d4...}}`.
 **Important**
 You will need this key when writing the code for your application later in this tutorial.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

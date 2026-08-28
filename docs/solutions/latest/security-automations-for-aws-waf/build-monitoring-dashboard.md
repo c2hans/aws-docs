@@ -22,3 +22,7 @@ The dashboard displays the following metrics:
 +  **ELB Request Count** - Helps identify damage to the infrastructure. This metric shows if the attacker is bypassing the protection layer, or if you should review a CloudFront cache rule to increase the cache hit rate.
 +  **ELB Healthy Host** - You can use this as another system health check metric.
 +  **ASG CPU Utilization** - Helps identify if the attacker is bypassing CloudFront, AWS WAF, and Elastic Load Balancing. You can also use this metric to identify the damage of an attack.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Automations for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -304,3 +304,7 @@ Follow these practices to limit unnecessary access to the platform server:
 +  **Restrict localhost access in agent code** — Configure your agent and any networking tools to prevent unrestricted access to localhost. Agent code should not make arbitrary HTTP calls to localhost unless required for a specific integration.
 +  **Allowlist only required ports for sidecar setups** — If your architecture uses a container-in-container or sidecar pattern on localhost, explicitly allowlist only the specific ports your sidecar services use. Do not open broad localhost access.
 +  **Audit network tools for localhost reach** — Review any tools you provide to your agent (such as HTTP request tools or general networking utilities) to ensure they cannot make unintended requests to localhost endpoints. Apply URL filtering or allowlisting at the tool level.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

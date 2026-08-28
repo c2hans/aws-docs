@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/enable-threat-model.html
 ---
 
-# Enable Continuum threat modeling
+# Enable threat modeling
 <a name="enable-threat-model"></a>
 
 Configure your Agent Space to enable threat modeling by connecting source code repositories and configuring AWS resources. Threat modeling analyzes your application’s architecture and identifies security threats from source code, design documents, or both.
@@ -12,7 +12,7 @@ Setting up threat modeling configurations is an Agent Space-wide operation. The 
 After completing setup, users can create and run threat models in the AWS Security Agent web application.
 
 **Note**
-If you already have repositories or S3 buckets connected to your Agent Space (for example, through code review or penetration testing setup), threat modeling may already be enabled. You can go directly to the web application to create a threat model. See [Create a Continuum threat model](perform-threat-model.md).
+If you already have repositories or S3 buckets connected to your Agent Space (for example, through code review or penetration testing setup), threat modeling may already be enabled. You can go directly to the web application to create a threat model. See [Create a threat model](perform-threat-model.md).
 
 ## Prerequisites
 <a name="_prerequisites"></a>
@@ -22,8 +22,8 @@ Before you begin, ensure you have:
 + Permissions to configure integrations for your Agent Space
 + (Optional) A GitHub, GitLab, or Bitbucket organization with the AWS Security Agent app installed (see [Connect AWS Security Agent to GitHub repositories](connect-github.md), [Connect AWS Security Agent to GitLab repositories](connect-gitlab.md), or [Connect AWS Security Agent to Bitbucket repositories](connect-bitbucket.md))
 
-## Access the Continuum threat modeling setup wizard
-<a name="_access_the_continuum_threat_modeling_setup_wizard"></a>
+## Access the threat modeling setup wizard
+<a name="_access_the_threat_modeling_setup_wizard"></a>
 
 Navigate to the threat modeling configuration for your Agent Space.
 
@@ -106,6 +106,10 @@ After completing the threat modeling configuration:
 <a name="_next_steps"></a>
 
 After enabling threat modeling:
-+ Launch the web application to create and run threat models (see [Create a Continuum threat model](perform-threat-model.md))
++ Launch the web application to create and run threat models (see [Create a threat model](perform-threat-model.md))
 + Connect additional repositories or S3 buckets as your codebase grows
 + Connect Confluence to enable selecting pages as scope documents (see [Connect AWS Security Agent to Confluence](connect-confluence.md))
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -69,11 +69,6 @@ Here's how it works in practice:
 
 The combination of no control plane dependency (globally distributed data plane) and no impaired Region dependency (STOP pattern) makes this a highly available DNS failover mechanism when the customer is only operating from two Regions. See STOP pattern documented here: [ Creating disaster recovery mechanisms using Amazon Route 53](https://aws.amazon.com/blogs/networking-and-content-delivery/creating-disaster-recovery-mechanisms-using-amazon-route-53/).
 
-## What is evaluated as part of plan evaluation
-<a name="route53-health-check-block-eval"></a>
-
-When Region switch evaluates your plan, Region switch performs several checks on your Route 53 health check execution block configuration and permissions. Region switch verifies that health checks are attached to the DNS records specified in the execution block configuration. That is, Region switch verifies that the DNS records for a specific AWS Region are configured to use health checks for that Region.
-
 ## Comparing ARC routing controls and Route 53 health check execution blocks
 <a name="region-switch-compare-routing"></a>
 
@@ -94,3 +89,7 @@ Route 53 health check execution blocks do not depend on the control plane. Heal
 + Cost optimization is a priority. Route 53 health check execution blocks have lower cost than routing controls.
 
 Most customers start with Route 53 health check execution blocks as the default traffic routing mechanism and add routing controls only for their most critical applications that require the highest reliability for the traffic management mechanism.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

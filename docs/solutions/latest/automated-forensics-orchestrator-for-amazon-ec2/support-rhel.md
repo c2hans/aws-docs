@@ -30,3 +30,7 @@ To build a symbol:
 You will need a Red Hat subscription before you add this. For more information, refer to the [Linux platforms](https://www.redhat.com/en/store/linux-platforms) page.
 
 The `Forensic-Profile-Function` step function will build the symbol automatically. Once the symbol is built, the Guidance will support RHEL8.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Forensics Orchestrator for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

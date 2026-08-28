@@ -109,3 +109,7 @@ You manage your AWS accounts based on the type of AWS you're using. The followin
 | Manage accounts in India | [Manage accounts in India in AWS Settings](manage-accounts-india-in-aws-settings.md) | [Manage accounts in India](managing-accounts-india.md) |
 | Create an administrator user | Not applicable | [Sign up for AWS (advanced)](getting-started.md) |
 | Plan your account governance structure | Not applicable | [Plan your AWS account governance structure](plan-acct-structure.md) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -176,3 +176,7 @@ When a hung job is detected, the event appears in the following locations:
 + **Grafana**: If the HyperPod Observability add-on is installed, detection events appear in the Ray Train dashboard under the Hung job detection panel. For more information, see [Observability](sagemaker-hyperpod-ray-observability.md).
 
 Each detection event includes the job ID, the evidence that triggered the detection, and the action taken (`notify` or `cancel`).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -93,3 +93,7 @@ Do not enter trailing slashes because trailing slashes will cause errors when us
 <a name="conclusion"></a>
 
 In this task, you’ve learned how to create an S3 bucket and set up cross-origin resource sharing (CORS).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

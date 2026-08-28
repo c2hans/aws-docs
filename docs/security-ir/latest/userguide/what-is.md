@@ -218,3 +218,7 @@ Japanese language support is provided on a best-effort basis during business hou
   When you enable the monitoring and investigation feature, AWS Security Incident Response monitors Amazon GuardDuty findings from all active commercial AWS Regions. As a security best practice, AWS recommends enabling GuardDuty in all supported AWS Regions. This configuration allows GuardDuty to generate findings about unauthorized or unusual activity, even in AWS Regions where you don't actively deploy resources. By doing so, you enhance your overall security posture and maintain comprehensive threat detection coverage across your AWS environment.
 **Note**
 Amazon GuardDuty reports findings for configured regions. If you don't enable the service in a specific AWS Region, then alerts aren't available.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

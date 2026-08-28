@@ -13,3 +13,7 @@ The script adds a sudoers rule that allows `job-user` to run any command as root
 Granting passwordless sudo to `job-user` means that any job running on the worker can execute arbitrary commands as root. Only enable this script on fleets where you trust the jobs being submitted, and consider scoping the sudoers rule to specific commands when your use case allows it.
 
 This script is required by the Linux variant of the [SSH or RDP to a Deadline Cloud worker through Session Manager](examples-jb-ssh-to-worker.md) sample.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

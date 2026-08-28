@@ -161,3 +161,7 @@ Amazon SageMaker models are stored in an Amazon S3 bucket during training. By gr
 <a name="aws-waf"></a>
 
 AWS WAF web access control lists (web ACLs) must reside in the same account as the resources they are associated to, such as Amazon CloudFront distributions, Application Load Balancers, Amazon API Gateway REST APIs, and AWS AppSync GraphQL APIs. You can use AWS Firewall Manager to centrally manage AWS WAF web ACLs across your entire organization in AWS Organizations and across Regions. For more information, see [Getting started with AWS Firewall ManagerAWS WAF policies](https://docs.aws.amazon.com/waf/latest/developerguide/getting-started-fms.html) (Firewall Manager documentation).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

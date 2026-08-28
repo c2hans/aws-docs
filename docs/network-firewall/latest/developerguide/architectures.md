@@ -20,3 +20,7 @@ The following lists architectures and traffic types that Network Firewall doesn'
 + [Simple single zone architecture with an internet gateway using AWS Network Firewall](arch-single-zone-igw.md)
 + [Multi zone architecture with an internet gateway using AWS Network Firewall](arch-two-zone-igw.md)
 + [Architecture with an internet gateway and a NAT gateway using AWS Network Firewall](arch-igw-ngw.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

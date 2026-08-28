@@ -575,3 +575,7 @@ If ABAC is enabled for your AWS account, the tag keys passed in the `create-tabl
 ```
 An error occurred (AccessDeniedException) when calling the CreateTable operation: User: arn:aws:sts::123456789012:assumed-role/DynamoFullAccessRole/ProductManager is not authorized to perform: dynamodb:CreateTable on resource: arn:aws:dynamodb:us-east-1:123456789012:table/myMusicTable with an explicit deny in an identity-based policy.
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

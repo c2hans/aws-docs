@@ -41,3 +41,7 @@ A Step Function execution failure can occur due to maximum input or output size 
 +  **Scenario 2** - You scan 8,000 accounts with a maximum of 3 services in a job. If you add more accounts, you will reach maximum input or output size for a task, state, or execution quota of 262,144 bytes of data.
 
 To avoid reaching the quota for large-scale scans, we recommend that you define your batch size (number of accounts • number of services) per scan.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Account Assessment for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

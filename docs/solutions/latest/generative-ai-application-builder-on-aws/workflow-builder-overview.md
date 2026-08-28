@@ -23,3 +23,7 @@ Workflow Builder enables multi-agent orchestration by creating a supervisor agen
 **Note**
 Workflows require at least 1 Agent Builder use case as a specialized agent agent
 All specialized agents must be Agent Builder use cases deployed in GAAB
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Generative AI Application Builder on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

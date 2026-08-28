@@ -23,3 +23,7 @@ The **Date imported** value for a migrated server host key is set to the last mo
 The only key that was migrated is your oldest or only server host key. Any additional keys have their actual date from when you imported them. Additionally, the migrated key has a description that makes it easy to identify it as having been migrated.
 The migration occurred between September 2 and September 13. The actual migration date within this range depends on the Region of your server.
 ![Server details screen showing the Monitoring section..](http://docs.aws.amazon.com/transfer/latest/userguide/images/edit-server-details-additional.png)![Server details screen showing the Tags section.](http://docs.aws.amazon.com/transfer/latest/userguide/images/edit-server-details-monitoring.png)![Server details screen showing the Tags section.](http://docs.aws.amazon.com/transfer/latest/userguide/images/edit-server-details-tags.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

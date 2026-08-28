@@ -26,3 +26,7 @@ Many of these checks can help you assess the security posture of your Amazon Pin
 + Using AWS Identity and Access Management (IAM) users, groups, and roles to control access to Amazon Pinpoint resources.
 + Identifying IAM configurations and policy settings that might compromise the security of your AWS environment and Amazon Pinpoint resources.
 For more information, see [AWS Trusted Advisor](https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor.html) in the *Support User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

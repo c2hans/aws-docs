@@ -41,3 +41,7 @@ Learn by doing with these tutorials and videos:
 + **Blogs, videos, and whitepapers**: Find technical blogs, demo videos, and in-depth whitepapers. [Access resources](https://aws.amazon.com/rds/resources/).
 + **Hands-on labs**: Practice RDS configurations and deployments in a lab environment. [Access labs](https://aws.amazon.com/training/learn-about/databases/).
 + **AWS Online Tech Talks**: Join webinars hosted by AWS experts to learn about the latest features and best practices. [Explore tech talks](https://aws.amazon.com/events/online-tech-talks/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

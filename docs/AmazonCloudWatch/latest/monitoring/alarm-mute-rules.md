@@ -102,3 +102,7 @@ For information about viewing and managing muted alarms, see [Viewing and managi
 
  **Scenario 5: Muting alarm actions during planned company shutdowns** – One-time extended maintenance periods or company-wide shutdowns where all systems are intentionally offline for extended periods.
 +  At expression `at(2024-12-23T00:00)` with duration `P7D` - Mutes alarms for the entire week of December 23-29, 2024 during annual company shutdown.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

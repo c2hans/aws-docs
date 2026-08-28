@@ -115,3 +115,7 @@ For an introduction on how to create an API, see [Tutorial: Create a REST API wi
 + [Binary media types for REST APIs in API Gateway](api-gateway-payload-encodings.md)
 + [Invoke REST APIs in API Gateway](how-to-call-api.md)
 + [Develop REST APIs using OpenAPI in API Gateway](api-gateway-import-api.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

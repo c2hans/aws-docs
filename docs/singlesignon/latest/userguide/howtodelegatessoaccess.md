@@ -42,3 +42,7 @@ For more information, see [Set relay state for quick access to the AWS Managemen
 1. Follow the steps in [Assign user or group access to AWS accounts](assignusers.md) to assign the appropriate users and groups to the permission set that you just created.
 
 1. Communicate the following to the assigned users: When they sign in to the AWS access portal and choose the **Accounts** tab, they must choose the appropriate role name to be authenticated with the permissions that you just delegated.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

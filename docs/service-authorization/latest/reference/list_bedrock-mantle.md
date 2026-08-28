@@ -48,6 +48,12 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-mantle-aws_ResourceTag___TagKey_)
   - **Access level:** Write
 
+- **   [CountTokens](https://docs.aws.amazon.com/bedrock/latest/APIReference/#welcome)  **
+  - **Description:** Grants permission to count the tokens in an inference request
+  - **Resource types (\*required):** [project\*](#list_bedrock-mantle-resource-project)
+  - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-mantle-aws_ResourceTag___TagKey_)<br />[bedrock-mantle:Model](#list_bedrock-mantle-bedrock-mantle_Model)
+  - **Access level:** Read
+
 - **   [CreateCustomizedModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/#welcome)  **
   - **Description:** Grants permission to import a customized model with custom weights
   - **Resource types (\*required):** [customized-model\*](#list_bedrock-mantle-resource-customized-model)
@@ -67,7 +73,7 @@ You can specify the following actions in the `Action` element of an IAM policy s
   - **Access level:** Write
 
 - **   [CreateInference](https://docs.aws.amazon.com/bedrock/latest/APIReference/#welcome)  **
-  - **Description:** Grants permission to create a chat completion inference request
+  - **Description:** Grants permission to create an inference request
   - **Resource types (\*required):** [project\*](#list_bedrock-mantle-resource-project)
   - **Condition keys:** [aws:ResourceTag/${TagKey}](#list_bedrock-mantle-aws_ResourceTag___TagKey_)<br />[bedrock-mantle:Model](#list_bedrock-mantle-bedrock-mantle_Model)<br />[bedrock-mantle:ServiceTier](#list_bedrock-mantle-bedrock-mantle_ServiceTier)
   - **Access level:** Write
@@ -282,3 +288,7 @@ Amazon Bedrock Powered by AWS Mantle defines the following condition keys that c
 |   [bedrock-mantle:ProjectArn](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrockmantle.html#amazonbedrockmantle-policy-keys)  | Filters access by the ARN of the project being associated or referenced in cross-resource operations | String |
 |   [bedrock-mantle:ReservationArn](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrockmantle.html#amazonbedrockmantle-policy-keys)  | Filters access by the ARN of the reservation being referenced in cross-resource operations | String |
 |   [bedrock-mantle:ServiceTier](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonbedrockmantle.html#amazonbedrockmantle-policy-keys)  | Filters access by the specified ServiceTier | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

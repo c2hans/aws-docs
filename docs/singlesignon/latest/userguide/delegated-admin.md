@@ -75,19 +75,30 @@ If you create your users and groups directly in IAM Identity Center, rather than
 {
   "Version": "2012-10-17",
   "Statement": [
-  { "Effect": "Deny",
-    "Action": ["identitystore:CreateGroupMembership"],
-    "Resource": [ arn:${Partition}:identitystore:::group/${GroupId1},
-                  arn:${Partition}:identitystore:::group/${GroupId2}
-                 ]
-   }
-  ],
-  { "Effect": "Deny",
-    "Action": ["sso-directory:CreateBearerToken"],
-    "Resource": [ "*" ] }
+    {
+      "Effect": "Deny",
+      "Action": [
+        "identitystore:CreateGroupMembership"
+      ],
+      "Resource": [
+        "arn:{{partition}}:identitystore:::group/{{group-id-1}}",
+        "arn:{{partition}}:identitystore:::group/{{group-id-2}}"
+      ]
+    },
+    {
+      "Effect": "Deny",
+      "Action": [
+        "sso-directory:CreateBearerToken"
+      ],
+      "Resource": [
+        "*"
+      ]
+    }
   ]
 }
 ```
+
+Replace {{partition}} with your AWS partition (`aws`, `aws-cn`, or `aws-us-gov`), and replace {{group-id-1}} and {{group-id-2}} with the IDs of the identity store groups that you want to protect.
 
 ### Segregate IAM Identity Center configuration management from PermissionSet management
 <a name="delegated-admin-best-practices-configuration-management"></a>
@@ -117,3 +128,7 @@ You can create permissions sets that you assign to your IAM Identity Center admi
 Before you can register an account as a delegated administrator you must first have the following environment deployed:
 + AWS Organizations must be enabled and configured with at least one member account in addition to your default management account.
 + If your identity source is set to Active Directory, the [IAM Identity Center configurable AD sync](provision-users-from-ad-configurable-ADsync.md) feature must be enabled.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

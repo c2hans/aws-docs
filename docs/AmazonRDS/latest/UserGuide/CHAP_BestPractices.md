@@ -427,3 +427,7 @@ For information on creating DB instances programmatically, see the following res
 The 2023 AWS re:Invent conference included a presentation on new Amazon RDS features. A video of the presentation is available here:
 
 [![AWS Videos](http://img.youtube.com/vi/IFg8EZGtLsM?si=e7T7LzW616AMd3i3/0.jpg)](http://www.youtube.com/watch?v=IFg8EZGtLsM?si=e7T7LzW616AMd3i3)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

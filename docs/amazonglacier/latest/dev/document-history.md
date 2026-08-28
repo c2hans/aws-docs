@@ -38,3 +38,7 @@ The following table describes the important changes in each release of the *Amaz
 | Removed outdated URLs | Removed the URLs that pointed to the old security credentials page from code examples. | July 26, 2013 |
 | Support for range retrievals | Amazon Glacier now supports retrieval of specific ranges of your archives. You can initiate a job requesting Amazon Glacier to prepare an entire archive or a portion of the archive for subsequent download. When an archive is very large, you may find it cost effective to initiate several sequential jobs to prepare your archive. <br />For more information, see [Downloading an Archive in Amazon Glacier](downloading-an-archive.md). | November 13, 2012 |
 | New Guide | This is the first release of the *Amazon Glacier Developer Guide*.  | August 20, 2012 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Glacier. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonglacier` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

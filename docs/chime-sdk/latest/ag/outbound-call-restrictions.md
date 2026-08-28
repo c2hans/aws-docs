@@ -46,3 +46,7 @@ The Amazon Chime SDK has a zero-tolerance policy for calling into China. Amazon 
 <a name="service-assurance-china"></a>
 
 If Chinese carriers block major international routes without prior warning and impact the ability to call China, the exclusions in the [ Amazon Chime SDK Service Level Agreement](https://aws.amazon.com/chime/chime-sdk/sla/) take effect.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ Android and iPad clients aren't currently supported by DCV WorkSpaces.
 | File transfer support  | ✓ | ✗ | ✓ | ✓ | [File transfer support in the WorkSpaces client applications](file-transfer.md)Only available for personal and Windows WorkSpaces. Unavailable for pooled and Linux WorkSpaces. |
 | Idle disconnect timeout | ✓ | ✓ | ✓ | ✓ | [Configure idle disconnect timeout for DCV ](https://docs.aws.amazon.com/workspaces/latest/adminguide/group_policy.html#idle-disconnect)Not supported on Linux WorkSpaces. |
 | AWS Global Accelerator (AGA) support | ✓ | ✓ | ✓ | ✓ | On Windows and Mac client version 5.23.0 or greater. On Linux client version 2024.7 or greater. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

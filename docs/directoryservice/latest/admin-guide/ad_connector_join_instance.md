@@ -12,3 +12,7 @@ AD Connector is a directory gateway with which you can redirect directory reques
 
 **Note**
 Once you join an instance to your self-managed Active Directory (on-premises), the instance communicates directly with your Active Directory and bypasses AD Connector.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

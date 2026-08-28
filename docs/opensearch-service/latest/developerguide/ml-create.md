@@ -197,3 +197,7 @@ Amazon OpenSearch Service offers two additonal default workflow templates not av
 | --- | --- |
 | `semantic_search_with_local_model` | Configures [semantic search](https://opensearch.org/docs/2.14/search-plugins/semantic-search/) and deploys a pretrained model (`msmarco-distilbert-base-tas-b`). Adds a [`neural_query_enricher`](https://opensearch.org/docs/2.14/search-plugins/search-pipelines/neural-query-enricher/) search processor that sets a default model ID for neural queries and creates a linked k-NN index called 'my-nlp-index'. |
 | `hybrid_search_with_local_model` | Configures [hybrid search](https://opensearch.org/docs/2.14/search-plugins/hybrid-search/) and deploys a pretrained model (`msmarco-distilbert-base-tas-b`). Adds a [`neural_query_enricher`](https://opensearch.org/docs/2.14/search-plugins/search-pipelines/neural-query-enricher/) search processor that sets a default model ID for neural queries and creates a linked k-NN index called 'my-nlp-index'. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

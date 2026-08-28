@@ -37,3 +37,7 @@ When you run Modin and the AWS SDK for pandas together in a Ray environment, you
 <a name="edit-script-ray-gludc"></a>
 
 Managing your data through the Data Catalog in conjunction with Ray jobs is supported with the AWS SDK for pandas. For more information, see [Glue Catalog](https://aws-sdk-pandas.readthedocs.io/en/3.0.0rc2/tutorials/005%20-%20Glue%20Catalog.html) on the AWS SDK for pandas website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

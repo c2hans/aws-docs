@@ -233,3 +233,7 @@ For information on generating and using short-term API keys for Claude Platform 
 + For more information about using API keys with Claude Platform on AWS, see [Authentication](https://docs.aws.amazon.com/claude-platform/latest/userguide/authentication.html) in the *Claude Platform on AWS User Guide*.
 + For more information about using API keys with Amazon CloudWatch, see [Setting up bearer token authentication for Metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch-OTLP-MetricsBearerTokenAuth.html) in the *Amazon CloudWatch User Guide*.
 + For more information about using API keys with Amazon CloudWatch Logs, see [Setting up bearer token authentication](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/CWL_HTTP_Endpoints_BearerTokenAuth.html) in the *Amazon CloudWatch Logs User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

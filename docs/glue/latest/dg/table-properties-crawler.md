@@ -39,3 +39,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/table-properties-crawler.
 | aws:RawType | When a crawler store the data in the Data Catalog it translates the datatypes to Hive-compatible types, which many times causes the information on the native datatype to be lost. The crawler outputs the `aws:RawType` parameter to provide the native-level datatype. |
 | aws:RawColumnComment | If a comment is associated with a column in the database, the crawler outputs the corresponding comment in the catalog table. The comment string is truncated to 255 bytes.<br />Comments are not supported for Microsoft SQL Server. |
 | aws:RawTableComment | If a comment is associated with a table in the database, the crawler outputs corresponding comment in the catalog table. The comment string is truncated to 255 bytes.<br />Comments are not supported for Microsoft SQL Server. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

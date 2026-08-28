@@ -11,3 +11,7 @@ Every issue has a lifecycle. In CodeCatalyst, issues typically start as a draft 
 + You can move an issue between the backlog and the board.
 + You can move in-progress issue through various completion stages.
 + You can archive an issue that is completed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

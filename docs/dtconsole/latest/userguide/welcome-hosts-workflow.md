@@ -25,3 +25,7 @@ If you are creating a connection to an installed provider type, such as GitHub E
 Use the console to set up the host and change its status from `pending` to `available`.
 
 ![Diagram showing the workflow of creating a connection to third-party provider.](http://docs.aws.amazon.com/dtconsole/latest/userguide/images/Hosts-flowchart.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -70,3 +70,7 @@ implementation("software.amazon.cryptography:aws-database-encryption-sdk-dynamod
 To install the Java client-side encryption library for DynamoDB, clone or download the [aws-database-encryption-sdk-dynamodb](https://github.com/aws/aws-database-encryption-sdk-dynamodb/) GitHub repository.
 
 After you install the SDK, get started by looking at the example code in this guide and the [Java examples](https://github.com/aws/aws-database-encryption-sdk-dynamodb//tree/main/Examples/runtimes/java/DynamoDbEncryption/src/main/java/software/amazon/cryptography/examples) in the aws-database-encryption-sdk-dynamodb repository on GitHub.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

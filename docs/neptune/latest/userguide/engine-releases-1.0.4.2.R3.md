@@ -41,3 +41,7 @@ Before upgrading a DB cluster to version 1.0.4.2.R3, make sure that your project
 This patch release is optional unless your DB cluster is using one or more `R5d` instances. If your cluster has `R5d` instances, it will automatically be upgraded in the next maintenance window. Otherwise, it will not automatically be upgraded to this patch release.
 
 You can upgrade release `1.0.4.2.R2` to this `1.0.4.2.R3` release manually using the AWS CLI [apply-pending-maintenance-action](https://docs.aws.amazon.com/cli/latest/reference/neptune/apply-pending-maintenance-action.html) command (the [ApplyPendingMaintenanceAction](api-other-apis.md#ApplyPendingMaintenanceAction) API).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

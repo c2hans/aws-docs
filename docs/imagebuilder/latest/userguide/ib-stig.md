@@ -1185,3 +1185,7 @@ The following table describes important changes to the SCAP environment and sett
 | 2023 Q4 SCAP Updates |  +  scap-compliance-checker-windows version 2023.04.0 (SCC Version: 5.8) <br />+  scap-compliance-checker-windows version 2023.04.0 (SCC Version: 5.8)   | December 20, 2021 |
 | 2023 Q3 SCAP Updates |  +  scap-compliance-checker-windows version 2023.03.0 (SCC Version: 5.7.2) <br />+  scap-compliance-checker-linux version 2023.03.0 (SCC Version: 5.7.2   | November 13, 2023 |
 | Added SCAP components |  +  Created scap-compliance-checker-linux version 2021.04.0 (SCC Version: 5.4.2) <br />+  Created scap-compliance-checker-linux version 2021.04.0 (SCC Version: 5.4.2)   | December 20, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

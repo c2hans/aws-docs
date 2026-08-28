@@ -85,3 +85,7 @@ On the server side (not managed by the SDKs), there are two APIs, each with its 
 + **Control plane** — The [IVS Chat Control Plane API](https://docs.aws.amazon.com/ivs/latest/ChatAPIReference/Welcome.html) provides an interface for your own *backend applications* to manage and create chat rooms as well as the users who join them. Think of this as the admin panel for your app's chat experience that is managed by *your own backend*. There are control-plane operations that are responsible for creating the *chat token* that the data plane needs to authenticate to a chat room.
 
   **Important:** *The IVS Chat Client Messaging SDKs do not call any control-plane operations. You must have your backend set up to create chat tokens for you. Your front-end application must communicate with your backend to retrieve this chat token.*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ Before you can delete a site, you must delete all of the site's assets. The **Si
 1. Choose **Delete site**.
 
 ![Sites management interface showing a list of three site names and options to delete, edit, or add sites.](http://docs.aws.amazon.com/Monitron/latest/user-guide/images/webapp_delete-site-name.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

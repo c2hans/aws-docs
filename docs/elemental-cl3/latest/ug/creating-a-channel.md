@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/creating-a-chann
      For example, there might be a profile parameter for an interface. The interface field might be optional. In this field, you can enter a value. Or you can leave the field empty —Elemental Live will use the default interface.
 
 1. Choose **Save**. The channel is created. If you specified all the parameters, then the channel is ready to run: see [Starting and stopping a channel](starting-and-stopping-channels.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

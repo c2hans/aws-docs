@@ -49,3 +49,7 @@ If the ETL or Report code is available in scripts or hosted in third-party tools
 1. Fix any warnings and errors in the ETL or report code conversion.
 
 1. Insert the converted PL/pgSQL code back into the third-party ETL or reporting tool, unless they stay as flat files.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ To view the trace, send an [InvokeAgent](https://docs.aws.amazon.com/bedrock/lat
 If you enable the trace, in the [InvokeAgent](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_InvokeAgent.html) response, each `chunk` in the stream is accompanied by a `trace` field that maps to a [TracePart](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TracePart.html) object. Within the [TracePart](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_TracePart.html) is a `trace` field that maps to a [Trace](https://docs.aws.amazon.com/bedrock/latest/APIReference/API_agent-runtime_Trace.html) object.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

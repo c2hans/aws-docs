@@ -28,3 +28,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-app
 ![Diagram illustrating a code development pipeline and its interaction with the infrastructure](http://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-apps-with-windows-containers/images/development-pipeline.jpg)
 
  Now that you have an idea of the before and after state of the application that you will modernize in this guide, walk through the procedural guidance to complete this transformation quickly and safely.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,3 +49,7 @@ In the diagram:
 Additionally, you can create an outbound call, and subsequently invoke your AWS Lambda function for additional processing, using the [CreateSIPMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_CreateSipMediaApplicationCall.html) API. To use this API, you specify the provisioned **SIP media application ID** as a parameter.
 
 Finally, you can trigger your AWS Lambda function at any time while a call is active using the [UpdateSIPMediaApplicationCall](https://docs.aws.amazon.com/chime-sdk/latest/APIReference/API_UpdateSipMediaApplicationCall.html) API. To use the API, you specify the provisioned **SIP media application ID** as a parameter.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

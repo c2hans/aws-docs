@@ -27,3 +27,7 @@ Specify the format of the manifest that AWS Elemental MediaPackage delivers from
    + **None** – Omit all SCTE-35 ad markers from the output.
    + **Passthrough** – Copy the SCTE-35 ad markers directly from the input HLS input stream to the output.
    + **SCTE-35 Enhanced** – Generate ad markers and blackout tags based on the SCTE-35 input messages from the input stream.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

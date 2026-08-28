@@ -12,3 +12,7 @@ However, with fast inserts bulk loads with small batch sizes can lead to increas
 You enable trace flag 692 as a startup parameter using DB parameter groups. For more information, see [Parameter groups for Amazon RDS](USER_WorkingWithParamGroups.md).
 
 Trace flag 692 is supported for Amazon RDS on SQL Server 2016 and later. For more information on trace flags, see [DBCC TRACEON - trace flags](https://docs.microsoft.com/en-us/sql/t-sql/database-console-commands/dbcc-traceon-trace-flags-transact-sql) in the Microsoft documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

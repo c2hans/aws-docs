@@ -108,3 +108,7 @@ We recommend that you start with the following sections:
 + [Getting started with Lake Formation](getting-started-setup.md) — Get information about prerequisites, and complete important setup tasks.
 + [AWS Lake Formation tutorials](getting-started-tutorials.md) — Follow step-by-step tutorials to learn how to use Lake Formation.
 + [Security in AWS Lake Formation](security.md) — Understand how you can help secure access to data in Lake Formation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

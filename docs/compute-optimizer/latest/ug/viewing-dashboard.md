@@ -61,3 +61,7 @@ The ability to view optimization findings for resources in other accounts is ava
    + To filter findings on the dashboard to one or more AWS Regions, enter the name of the Region in the **Filter by one or more Regions** text box, or choose one or more Regions in the drop-down list that appears.
    + To clear the selected filters, choose **Clear filters** next to the filter.
    + To view optimization recommendations, choose the **View recommendations** link for one of the resource types displayed, or choose the number of resources listed next to a findings classification to view the resources for that classification. For more information, see [Viewing resource recommendations](viewing-recommendations.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

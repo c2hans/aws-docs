@@ -646,3 +646,7 @@ In Amazon S3, a lifecycle configuration is a set of rules that define actions fo
 <a name="s3-25-remediation"></a>
 
 To define a lifecycle configuration for an S3 directory bucket, create a lifecycle rule for the bucket. For more information, see [Creating and managing a lifecycle configuration for your directory bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/directory-bucket-create-lc.html) in the *Amazon Simple Storage Service User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

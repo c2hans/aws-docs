@@ -32,3 +32,7 @@ If necessary, you can troubleshoot issues by viewing the AWS IoT Greengrass core
  You can also view `GGShadowSyncManager.log` and `GGShadowService.log`. For more information, see [Troubleshooting AWS IoT Greengrass](gg-troubleshooting.md).
 
 Keep the client devices and subscriptions set up. You use them in the next module. You also run the same commands.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

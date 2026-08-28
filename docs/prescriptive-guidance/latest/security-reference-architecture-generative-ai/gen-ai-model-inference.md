@@ -206,3 +206,7 @@ Implement continuous monitoring through CloudWatch to identify performance degra
 Monitor [Amazon Bedrock Guardrails metrics](https://docs.aws.amazon.com/bedrock/latest/userguide/monitoring-guardrails-cw-metrics.html) to track how frequently content is filtered or blocked, providing visibility into potential security threats or policy violations. Analyze trends in guardrail activations to identify emerging attack patterns or areas where additional security controls may be needed.
 
 Use [AWS Step Functions](https://docs.aws.amazon.com/step-functions/latest/dg/welcome.html) to establish automated pipelines that orchestrate regular security assessments, performance benchmarks, and compliance validation. Configure these pipelines to run on a schedule or trigger based on specific events such as significant changes in usage patterns or the availability of new model versions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

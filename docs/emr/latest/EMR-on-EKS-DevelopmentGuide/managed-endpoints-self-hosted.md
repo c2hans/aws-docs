@@ -283,3 +283,7 @@ When you're ready to delete your self-hosted notebook, you can also delete the i
 1. Then, delete your interactive endpoint with the `delete-managed-endpoint` command. For steps to delete an interactive endpoint, see [Delete an interactive endpoint](delete-managed-endpoint.md). Initially, your endpoint will be in the **TERMINATING** state. Once all resources have been cleaned up, it transitions to the **TERMINATED** state.
 
 1. If you don’t plan to use the notebook security group that you created in [Create a security group](#managed-endpoints-self-hosted-security) for other Jupyter notebook deployments, you can delete it. See [Delete a security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/working-with-security-groups.html#deleting-security-group) in the Amazon EC2 User Guide for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -112,3 +112,7 @@ Customer keys are grouped by keys used to protect other keys and keys that prote
 | Card data preparation keys | EMV issuer master keys, EMV card keys and verification values, and card personalization data file protection keys are used to create data for individual cards for use by a card personalization provider. These keys and cryptographic validation data are also used by issuing banks, or issuers, for authenticating card data as part of authorizing transactions.  |
 | Payment network working keys | Often referred to as issuer working key or acquirer working key, these are the keys that encrypt transaction sent to or received from payment networks. These keys are rotated frequently by the network, often daily or hourly. These are PIN encryption keys (PEK) for PIN/Debit transactions.  |
 | Personal Identification Number (PIN) encryption keys (PEK) | Applications that create or decrypt PIN blocks use PEK to prevent storage or transmission of clear text PIN.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

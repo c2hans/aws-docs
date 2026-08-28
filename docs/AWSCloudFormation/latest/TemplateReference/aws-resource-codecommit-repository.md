@@ -66,7 +66,8 @@ The ID of the AWS Key Management Service encryption key used to encrypt and decr
 The input can be the full ARN, the key ID, or the key alias. For more information, see [Finding the key ID and key ARN](https://docs.aws.amazon.com/kms/latest/developerguide/find-cmk-id-arn.html).
 *Required*: No
 *Type*: String
-*Pattern*: `^[a-zA-Z0-9:/_-]+$`
+*Minimum*: `1`
+*Maximum*: `100`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `RepositoryDescription`  <a name="cfn-codecommit-repository-repositorydescription"></a>
@@ -74,6 +75,7 @@ A comment or description about the new repository.
 The description field for a repository accepts all HTML characters and all valid Unicode characters. Applications that do not HTML-encode the description and display it in a webpage can expose users to potentially malicious code. Make sure that you HTML-encode the description field in any application that uses this API to display the repository description on a webpage.
 *Required*: No
 *Type*: String
+*Minimum*: `1`
 *Maximum*: `1000`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
@@ -82,7 +84,6 @@ The name of the new repository to be created.
 The repository name must be unique across the calling AWS account. Repository names are limited to 100 alphanumeric, dash, and underscore characters, and cannot include certain characters. For more information about the limits on repository names, see [Quotas](https://docs.aws.amazon.com/codecommit/latest/userguide/limits.html) in the *AWS CodeCommit User Guide*. The suffix .git is prohibited.
 *Required*: Yes
 *Type*: String
-*Pattern*: `[\w\.-]+`
 *Minimum*: `1`
 *Maximum*: `100`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
@@ -130,6 +131,9 @@ When you pass the logical ID of this resource, the function returns the URL to u
 
 `Name`  <a name="Name-fn::getatt"></a>
 When you pass the logical ID of this resource, the function returns the repository's name.
+
+`RepositoryId`  <a name="RepositoryId-fn::getatt"></a>
+The ID of the repository.
 
 ## Examples
 <a name="aws-resource-codecommit-repository--examples"></a>
@@ -239,3 +243,7 @@ MyRepo:
       Events:
       - all
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

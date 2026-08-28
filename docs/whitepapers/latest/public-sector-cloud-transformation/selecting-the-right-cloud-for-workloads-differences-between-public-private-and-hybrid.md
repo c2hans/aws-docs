@@ -47,3 +47,7 @@ When an organization wants to leverage the cloud both for its efficiency and cos
 +  Organizations that demand greater operational flexibility and scalability. For them, mission critical data can be hosted on the private cloud and application development and testing can take place in the public cloud.
 
 Given today’s dynamic and increasingly complex business environment, organizations have to constantly reevaluate their cloud infrastructure, whether public, private, or hybrid, to ensure that the cloud delivers results. Because there are different security and management demands for each of these cloud models, organizations must ensure that they select their application candidates for the cloud wisely so that they can foster innovation and improve agility by leveraging their IT resources optimally.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
  Under the abstracted definitions of ontologies, including semantics and agnostic relationships, and metadata standardizing the virtual connectivity. In the physical “realm”, we can talk about connectivity in global scale; high throughput ingestion and streaming, databases; relational, non-relational or object storage.
 
  All of those aspects are connected via Digital Continuity with the help of Digital Threads and Orchestration with APIs, messaging, events and business logics as to be discussed in the following chapters.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

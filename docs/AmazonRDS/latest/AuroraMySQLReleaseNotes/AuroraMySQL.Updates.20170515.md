@@ -46,3 +46,7 @@ The zero-downtime patching (ZDP) feature attempts, on a *best-effort* basis, to 
 + MATCH() ... AGAINST queries that use a long string as an argument for AGAINST() could result in an error when run on an InnoDB table with a full-text search index. (Bug \#17640261)
 + Handling of SQL\_CALC\_FOUND\_ROWS in combination with ORDER BY and LIMIT could lead to incorrect results for FOUND\_ROWS(). (Bug \#68458, Bug \# 16383173)
 + ALTER TABLE does not allow to change nullability of the column if foreign key exists. (Bug \#77591)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

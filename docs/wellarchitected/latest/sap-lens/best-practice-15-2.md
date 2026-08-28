@@ -31,3 +31,7 @@ SAP provides specific guidance to optimize performance of an SAP system by modif
 | Oracle |  SAP Note: [2470718 – Oracle Database Parameter 12.2 / 18c / 19c](https://launchpad.support.sap.com/#/notes/2470718) [Requires SAP Portal Access]  |
 | Microsoft SQL Server |  SAP Note: [2779607 – Configuration Parameters for SQL Server 2019](https://launchpad.support.sap.com/#/notes/2779607) [Requires SAP Portal Access] , SAP Note: [2729848 – SAP Installation Media and SQL4SAP for SQL Server 2019](https://launchpad.support.sap.com/#/notes/2729848) [Requires SAP Portal Access]  |
 | SAP MaxDB |  SAP Note: [819641 – FAQ: SAP MaxDB performance](https://launchpad.support.sap.com/#/notes/819641) [Requires SAP Portal Access]  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

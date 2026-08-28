@@ -31,3 +31,7 @@ For a list of Region codes and endpoints supported in Amazon Q Business, see [Am
 | United States | US East (N. Virginia) (us-east-1)<br />US West (Oregon) (us-west-2) |
 | Europe | Europe (Frankfurt) (eu-central-1)<br />Europe (Ireland) (eu-west-1)<br />Europe (Paris) (eu-west-3) |
 | Australia | Asia Pacific (Tokyo) (ap-northeast-1)<br />Asia Pacific (Seoul) (ap-northeast-2)<br />Asia Pacific (Osaka) (ap-northeast-3)<br />Asia Pacific (Mumbai) (ap-south-1)<br />Asia Pacific (Singapore) (ap-southeast-1)<br />Asia Pacific (Sydney) (ap-southeast-2) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

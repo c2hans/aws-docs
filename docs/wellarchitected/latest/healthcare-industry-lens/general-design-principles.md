@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 +  **Adopt modern software communication protocols:** Healthcare has many standards, some of which do not embrace modern software practices, such as APIs. Where possible, use data standards and communication protocols in-line with best practices to align with both current standards and potential future standards.
 +  **Promote interoperability:** Unlock new product development opportunities and improve patient outcomes with architectures that facilitate secure, governed access to health data across silos.
 +  **Plan to recover from failures automatically:** Healthcare workloads enable the delivery of care to patients. Consequently, failures may negatively impact patients. Identify critical workloads and the key performance indicators (KPIs) that describe workload health. Design architectures with monitoring and automated recovery processes to ensure that systems meet availability requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

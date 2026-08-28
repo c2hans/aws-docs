@@ -102,3 +102,7 @@ By default, the SSL CA certificate is set to ../certs/cert.pem which points to t
 <a name="sdk-c-video"></a>
 
 This video demonstrates how to connect your camera and get started with Amazon Kinesis Video Streams for WebRTC.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams-webrtc-dg` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

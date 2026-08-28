@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-directo
 + [Forecasting with Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-forecast.html) (AWS Cost Management documentation)
 + [Managing your costs with AWS Budgets](https://docs.aws.amazon.com/cost-management/latest/userguide/budgets-managing-costs.html)(AWS Cost Management documentation)
 + [Optimizing LDAP Search Performance](https://flylib.com/books/en/1.434.1/optimizing_search_performance.html) (Flylib.com)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

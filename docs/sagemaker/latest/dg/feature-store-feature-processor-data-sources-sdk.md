@@ -18,3 +18,7 @@ The `FeatureGroupDataSource` is used to specify a feature group as an input data
 <a name="feature-store-feature-processor-data-sources-sdk-provided-sources"></a>
 
 The Feature Store Python SDK contain data source definitions that can be used to specify various input data sources for a Feature Processor. These include CSV, Parquet, and Iceberg table sources. For a full list of Feature Store provided data source definitions, see the [Feature Processor data source Feature Store Python SDK](https://github.com/aws/sagemaker-python-sdk/blob/master/src/sagemaker/feature_store/feature_processor/_data_source.py).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  For Amazon WorkSpaces Applications On-Demand and Always-On fleets, apply desired configuration settings to the instance used to create the Image for the associated fleet.
 
  After deployment, you can audit Amazon WorkSpaces Personal instances to determine if the expected and desired configuration of instances is in effect or whether this has been overridden or tampered with. Configuration management tools such as Ansible, Chef, and Puppet can help with this, as can PowerShell Desired State Configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

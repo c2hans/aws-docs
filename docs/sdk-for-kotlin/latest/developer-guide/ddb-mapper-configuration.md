@@ -108,3 +108,7 @@ Using `+=` preserves the default interceptors that power TTL and atomic counters
 <a name="ddb-mapper-configuration-related"></a>
 +  [Built-in features (TTL, atomic counters)](ddb-mapper-builtins.md): features implemented as default interceptors.
 +  [Get started with DynamoDB Mapper](ddb-mapper-get-started.md): creating a mapper.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Kotlin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-kotlin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

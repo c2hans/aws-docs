@@ -44,3 +44,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 +  **FSx and EFS configuration:** Enable Multi-AZ deployment and configure replication settings. Implement NTFS permissions and access control integration with AD. Monitor capacity, throughput, and latency using Amazon CloudWatch.
 +  **SQL Server HA on RDS:** Configure backup retention, point-in-time recovery, and automated backups. Implement cross-Region read replicas for geographic redundancy. Use AWS DMS for efficient data migration and replication.
 +  **Disaster recovery orchestration:** Define recovery time and point objectives (RTO and RPO) based on business requirements. Automate failover processes using AWS Systems Manager Runbooks and AWS Lambda. Implement alerting, monitoring, and regular DR testing procedures.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

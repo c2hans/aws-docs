@@ -32,3 +32,7 @@ When you perform this step, ensure the access URL includes `&_appLayoutMode=embe
    + Assign one of the following permissions:
      +  **Dashboards - Access**: Grants access to only the **Dashboards** tab.
      + OR **Access metrics - Access**: Grants permission to all the tabs on the **Dashboards** page, such as Real-time metrics reports and Historical metrics reports.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

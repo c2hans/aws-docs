@@ -15,3 +15,7 @@ Scenarios target an intermediate level of experience to help you understand serv
 + [Create and trigger a rule](eventbridge_example_eventbridge_Scenario_createAndTriggerARule_section.md)
 + [Send event notifications to EventBridge](eventbridge_example_s3_Scenario_PutBucketNotificationConfiguration_section.md)
 + [Use scheduled events to invoke a Lambda function](eventbridge_example_cross_LambdaScheduledEvents_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

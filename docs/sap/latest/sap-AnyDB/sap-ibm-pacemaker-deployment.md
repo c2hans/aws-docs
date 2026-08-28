@@ -1141,3 +1141,7 @@ We recommend you define your failure scenarios and test them on your cluster. Un
 + The Db2 HADR synchronization is working. This can be checked using `db2pd -hadr -db <DBSID>` and comparing the `LOG_FILE`, `PAGE`, and `POS` for primary and standby.
 + Refer to [Appendix 1](sap-ibm-pacemaker-appendix-1-testing-on-rhel-setup.md) for detailed test cases on RHEL setup.
 + Refer to [Appendix 2](sap-ibm-pacemaker-appendix-2-testing-on-sles-setup.md) for detailed test cases on SLES Setup
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

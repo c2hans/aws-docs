@@ -109,3 +109,7 @@ The following table represents the values of the columns taken into account to r
 |  Timeend  |  Optional name of the end date or time field. Could be a column with a native SQL dateor time data type or epoch value.  |
 |  Text  |  Event description field.  |
 |  Tags  |  Optional field name to use for event tags as a comma separated string.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

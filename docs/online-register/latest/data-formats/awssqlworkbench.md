@@ -41,3 +41,7 @@ AWS SQL Workbench provides the following APIs for data retrieval.
 | <a name="sqlworkbench-ListTabs"></a>[ListTabs](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html) | List tabs on your account | List |
 | <a name="sqlworkbench-ListTaggedResources"></a>[ListTaggedResources](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html) | List tagged resources | Read |
 | <a name="sqlworkbench-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/redshift/latest/mgmt/redshift-policy-resources.resource-permissions.html) | List the tags of an sqlworkbench resource | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

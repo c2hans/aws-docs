@@ -51,3 +51,7 @@ You can't provide both username/password and a domain join service account secre
   ```
 
   If the update action is successful, the service sends back an HTTP 200 response. The `AdminstrativeActions` object in the response describes the request and its status.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

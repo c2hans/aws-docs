@@ -21,3 +21,7 @@ This section references the procedures for assigning and modifying IP pools in a
 + **To assign an IP pool to a configuration set using the console**...
   + **while creating a new configuration set** – see [Sending IP pool](creating-configuration-sets.md#create-config-set-step-4) in Step 4 of [Create configuration sets](creating-configuration-sets.md)
   + **while modifying an existing configuration set** – select the **Edit** button in the **General details** panel of the selected configuration set, and follow the directions for [Sending IP pool](creating-configuration-sets.md#create-config-set-step-4) in Step 4 of [Create configuration sets](creating-configuration-sets.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,3 +46,7 @@ Use numbered points, clear transitions, and explicit summaries for better listen
 Include verbal cues like "Let me explain three key points" or "To summarize what we discussed" in your system prompt.
 
 `You are a friend. You and the user will engage in a spoken dialog exchanging the transcripts of a natural real-time conversation. Before sharing multiple ideas, give a preview like "I'm thinking of three reasons why..." and after completing a topic, use phrases like "That covers what I wanted to share about..." to signal topic transitions.`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

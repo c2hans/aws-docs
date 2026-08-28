@@ -567,3 +567,7 @@ To address this issue:
 1. Consider moving to a larger DB instance class that has more memory to accommodate your dictionary objects.
 
 By following these steps and understanding the memory allocation patterns, you can better manage memory usage in your Aurora MySQL DB instance and prevent potential performance issues due to memory pressure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -9,3 +9,7 @@ You can configure the receiver groups and inputs in an Elemental Live event or C
 + [Scenario A](input-2110.md): NMOS patching only. With this setup, the NMOS controller can send requests to Elemental Live that patch SDP files with new content. Elemental Live switches to processing the new content.
 + [Scenario B](s2110-nmos-scenario-patching-plus-failover.md): NMOS patching with hot backup. This scenario combines the patching from scenario A with support for Elemental Live hot backup. Hot backup lets Elemental Live automatically fail over from a failed input to another input.
 + [Scenario C](s2110-nmos-scenario-patching-nw-failover.md): NMOS patching with hot backup and network redundancy. This scenario combines scenario A with hot backup and the network redundancy that is set up between the upstream system (the content source) and Elemental Live.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

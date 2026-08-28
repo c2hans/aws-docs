@@ -29,3 +29,7 @@ source_url: https://docs.aws.amazon.com/personalize/latest/dg/getting-recommenda
 +  For information on scores for Personalized-Ranking-v2 and Personalized-Ranking recommendations, see [How personalized ranking scoring works](rankings.md#how-ranking-scoring-works).
 
  For batch inference jobs, item scores are calculated just as described in [How recommendation scoring works (custom resources)](recommendations.md#how-recommendation-scoring-works) and [How personalized ranking scoring works](rankings.md#how-ranking-scoring-works). You can view scores in the batch inference job's output JSON file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

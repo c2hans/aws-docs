@@ -26,3 +26,7 @@ The maximum transmission unit (MTU) of a network connection is the size, in byte
 
 **Important**
 If you associate your Transit Gateway with one or more Direct Connect gateways, the Autonomous System Number (ASN) used by the Transit Gateway and the Direct Connect gateway must be different. For example, if you use the default ASN 64512 for both the Transit Gateway and the Direct Connect gateway, the association request fails.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

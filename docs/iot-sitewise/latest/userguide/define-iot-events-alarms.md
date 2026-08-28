@@ -1136,3 +1136,7 @@ After you create the required resources in AWS IoT SiteWise and AWS IoT Events, 
      ```
 
 Your asset model now defines an alarm that detects in AWS IoT Events. The alarm monitors the target property in all assets based on this asset model. You can configure the alarm on each asset to customize properties such as the threshold or IAM Identity Center recipient for each asset. For more information, see [Configure alarms on assets in AWS IoT SiteWise](configure-alarms.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

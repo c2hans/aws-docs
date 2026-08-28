@@ -69,3 +69,7 @@ If you have an event that is configured to use an SDI input, you can easily adap
   There is no requirement to change any other fields: the event should now perform the same processing as previously.
 
 The video identified in the video selector and the audio identified in the audio selector are extracted from the TR-01 in the TS. The video and audio are processed in the usual way, as specified in the output sections of the event. The ancillary data (if used) is extracted from the SMPTE-2038 and processed as described in [Handling ancillary data in SMPTE 2038](smpte-2038.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -90,3 +90,7 @@ View details about updates to AWS managed policies for AWS FIS since this servic
 | [AmazonFISServiceRolePolicy](#security-iam-awsmanpol-AmazonFISServiceRolePolicy) – Update to an existing policy | Removed the events:ManagedBy condition for the events:DescribeRule action. | January 6, 2022 |
 | [AmazonFISServiceRolePolicy](#security-iam-awsmanpol-AmazonFISServiceRolePolicy) – Update to an existing policy | Added permissions to allow AWS FIS to retrieve history for the CloudWatch alarms used in stop conditions. | June 30, 2021 |
 | AWS FIS started tracking changes | AWS FIS started tracking changes to its AWS managed policies | March 1, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

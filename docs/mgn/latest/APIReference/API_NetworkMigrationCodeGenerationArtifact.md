@@ -24,7 +24,7 @@ Valid Values: `APPLICATION | NESTED_STACK | STACK`
 Required: No
 
  ** artifactType **   <a name="mgn-Type-NetworkMigrationCodeGenerationArtifact-artifactType"></a>
-The type of the artifact, such as CLOUDFORMATION\_TEMPLATE or TERRAFORM\_MODULE.
+The type of the generated artifact.
 Type: String
 Valid Values: `CDK_TYPESCRIPT | CLOUDFORMATION_TEMPLATE | CDKTF_TYPESCRIPT | TERRAFORM_CONFIGURATION | CDK_L2_TYPESCRIPT`
 Required: No
@@ -58,3 +58,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/mgn-2020-02-26/NetworkMigrationCodeGenerationArtifact)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/mgn-2020-02-26/NetworkMigrationCodeGenerationArtifact)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mgn-2020-02-26/NetworkMigrationCodeGenerationArtifact)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for ApplicationMigrationService. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

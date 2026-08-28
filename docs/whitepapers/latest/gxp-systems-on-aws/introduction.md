@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/in
  While the following content provides information on use of AWS services in GxP environments, you should ultimately consult with your own counsel to ensure that your GxP policies and procedures satisfy regulatory compliance requirements.
 
  Whitepapers containing more specific information about AWS products, privacy, and data protection considerations are available at [https://aws.amazon.com/compliance/](https://aws.amazon.com/compliance/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

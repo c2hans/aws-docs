@@ -32,3 +32,7 @@ Don't use a VPN connection.
 1. Plug Out the ISO before it reboots or it takes you back into the kickstart menu.
 
 1. You can now install any third-party packages. To obtain these packages, see [Working with RPM repository](migrate-topic-rpm-repository.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor File. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cf2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

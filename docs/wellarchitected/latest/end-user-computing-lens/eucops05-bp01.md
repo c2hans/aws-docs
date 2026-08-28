@@ -67,3 +67,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  **AWS Health dashboard**
 
  The [AWS Health dashboard](https://health.aws.amazon.com/health/status) provides insight into the health and availability of AWS services running across regions. Individual regional services can be filtered in the web page or added to an RSS feed reader for additional visibility.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

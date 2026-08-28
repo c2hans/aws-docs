@@ -51,3 +51,7 @@ Console access is not available for all resources. For more information, see [AW
 + **CloudFormation** – Supports configuring scaling using a CloudFormation template. For more information, see [Configure Application Auto Scaling resources using AWS CloudFormation](creating-resources-with-cloudformation.md).
 
 To connect programmatically to an AWS service, you use an endpoint. For information about endpoints for calls to Application Auto Scaling, see [Application Auto Scaling endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/as-app.html) in the *AWS General Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

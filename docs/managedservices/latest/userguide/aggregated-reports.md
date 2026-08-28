@@ -54,3 +54,7 @@ After you enable Aggregated SSR, aggregated reports are available from the next 
 To disable Aggregated SSR, open the [AWS Managed Services Console: Organization View](https://console.aws.amazon.com/managedservices/organization-access). Select **Disable trusted access**. After you disable trusted access for Aggregated SSR, your AMS self-service reports stop being aggregated at the organization level, across accounts. Also note that deactivation takes effect from the next reporting cycle onwards.
 
 After disabling Aggregated SSR, there is a wait before the reports in your AMS console appear as single-account reports. This delay occurs because the feature deactivation takes effect from the next reporting cycle onwards.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

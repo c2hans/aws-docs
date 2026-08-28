@@ -8,3 +8,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/instance-scheduler-on-a
 When you first deployed Instance Scheduler’s Hub template in AWS CloudFormation, a number of global configuration settings were selected as parameter inputs. These global configuration parameters can be updated at any time within the CloudFormation console.
 
 To update the global configuration of Instance Scheduler, log into the account/region containing your hub deployment and go to the AWS CloudFormation console. Find the Instance Scheduler Hub Stack and select ** *Update → Use Existing Template* **. Update any global configuration parameters you would like to change, and then select ** *next → next → submit* ** to perform a CloudFormation update of the relevant solution resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Instance Scheduler on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

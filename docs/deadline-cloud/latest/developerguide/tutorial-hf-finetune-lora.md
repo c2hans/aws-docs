@@ -236,3 +236,7 @@ The following resources provide additional information:
 + [LoRA paper (Hu et al., 2021)](https://arxiv.org/abs/2106.09685)
 + [Benchmark LLMs with vLLM and lm-evaluation-harness](tutorial-vllm-leaderboard.md)
 + [FLUX.2 Klein LoRA fine-tuning and image generation](flux2-klein-lora.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

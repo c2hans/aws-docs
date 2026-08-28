@@ -18,17 +18,8 @@ This service is available in the following AWS GovCloud (US) Regions:
 <a name="govcloud-diffs-11"></a>
 
 The following differences apply to Amazon Bedrock:
-+ Model availability for all regions, including AWS GovCloud (US), is available at [Model support by AWS Region](https://docs.aws.amazon.com/bedrock/latest/userguide/models-regions.html).
-+ The following models have FedRAMP and IL4/5 authorization
-  + All Titan Models
-  + Claude Sonnet 4.5
-  + Claude 3.7 Sonnet
-  + Claude 3.5 Sonnet v1
-  + Claude 3 Haiku
-  + Llama 3 8B
-  + Llama 3 70B
-+ Feature support for all regions, including AWS GovCloud (US), is available at [Feature support by AWS Region](https://docs.aws.amazon.com/bedrock/latest/userguide/features-regions.html).
-+ Bedrock Data Automation is currently available in AWS GovCloud (US-West).
++ Model availability for all regions, including AWS GovCloud (US), is available at [Regional availability by models](https://docs.aws.amazon.com/bedrock/latest/userguide/models-region-compatibility.html).
++ FedRAMP Class D certification and DoD CSP SRG IL-4 and IL-5 approvals are available at [Amazon Bedrock models - FedRAMP and DoD CSP SRG (IL4/IL5) certification status](https://aws.amazon.com/compliance/services-in-scope/FedRAMP/amazon-bedrock-models/).
 
 ## Documentation
 <a name="govcloud-docs-50"></a>
@@ -49,3 +40,7 @@ Amazon Bedrock model evaluation metadata is not permitted to contain export-cont
 +  IAM role Amazon Resource Names
 +  Amazon S3 bucket names and object prefixes
 + Resource tags
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

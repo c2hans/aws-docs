@@ -35,3 +35,7 @@ Spell Checker is designed with certain defaults or limits. The following is a li
 + Suggested spell corrections cannot be returned for words that include numbers. For example, 'how 2 not br8k ubun2'.
 + Suggested spell corrections cannot use words that don't appear in your indexed documents.
 + Suggested spell corrections cannot use words that are frequented less than 0.01 percent in your indexed documents. To change the 0.01% threshold, contact [Support](https://aws.amazon.com/contact-us/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

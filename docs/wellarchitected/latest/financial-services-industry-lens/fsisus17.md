@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
  Instead of creating separate instances to test several environments, use snapshots to test only the required workload using the same instance. You can queue your testing based on development priorities to reduce the use of test and staging instances.
 
  Use infrastructure as code (IaC) to snapshot generative AI development environments. Implement shared generative AI model testing environments rather than individual instances. Schedule automatic shutdown of unused generative AI development instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

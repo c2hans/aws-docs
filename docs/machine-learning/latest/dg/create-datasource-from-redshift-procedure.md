@@ -121,3 +121,7 @@ When you want to create a datasource that is similar to an existing datasource, 
 1. Review your settings, and then choose **Finish**.
 
 After you have created a datasource, you can use it to [create an ML model](creating-ml-model-on-the-amazon-ml-console.md). If you have already created a model, you can use the datasource to [evaluate an ML model](evaluating_models.md) or [generate predictions](interpreting_predictions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

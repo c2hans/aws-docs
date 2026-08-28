@@ -12,3 +12,7 @@ Complete the following procedure to add project members to an AWS service enviro
 1. Choose the **Projects** tab and then choose the project within a AWS service environment to which you want to add members.
 
 1. Choose **Add** and then, on the **Add members** page, find and add members from **IAM users**, **SSO users**, or **SSO groups**. Specify an assigned project role of either an **Owner**, a **Contributor**, a **Consumer**, a **Steward**, or a **Viewer**. When you're finished finding and adding members, choose **Add members**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

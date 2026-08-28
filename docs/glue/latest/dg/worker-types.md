@@ -162,3 +162,7 @@ Submit a new job using a different worker type and size.
 + Monitor CloudWatch metrics to understand resource utilization
 + Use appropriate worker counts based on data size and complexity
 + Consider data partitioning strategies to optimize worker efficiency
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

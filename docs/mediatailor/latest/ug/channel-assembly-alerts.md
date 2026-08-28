@@ -108,3 +108,7 @@ Then use the [ListAlerts](https://docs.aws.amazon.com/mediatailor/latest/apirefe
 When an alert occurs, view the alerts in the AWS Management Console, or use the AWS Command Line Interface (AWS CLI), AWS SDKs, or the MediaTailor Alerts API to determine the possible sources of the issue.
 
 After you resolve the issue, MediaTailor clears the alert.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

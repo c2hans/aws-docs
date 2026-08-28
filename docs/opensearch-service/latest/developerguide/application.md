@@ -39,3 +39,7 @@ For information about the latest features released for OpenSearch UI, see [Amazo
 + [Monitoring OpenSearch UI with Amazon CloudWatch](application-monitoring.md)
 + [Setting up a friendly URL for OpenSearch UI applications (self-service)](application-custom-domain.md)
 + [OpenSearch UI endpoints and quotas](opensearch-ui-endpoints-quotas.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

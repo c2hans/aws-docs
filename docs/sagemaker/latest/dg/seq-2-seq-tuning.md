@@ -49,3 +49,7 @@ You can tune the following hyperparameters for the SageMaker AI Sequence to Sequ
 | plateau\_reduce\_lr\_factor | ContinuousParameterRange | MinValue: 0.1, MaxValue: 0.5 |
 | plateau\_reduce\_lr\_threshold | IntegerParameterRange | [1-5] |
 | fixed\_rate\_lr\_half\_life | IntegerParameterRange | [10-30] |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -76,3 +76,7 @@ A feature group in `On-demand` mode will emit `ConsumedReadRequestsUnits` and `C
 Each AWS account has default service quotas or limits that are applied to help ensure availability and manage billing risks. For information about the default quotas and limits, see [Quotas, naming rules and data types](feature-store-quotas.md).
 
 In some cases, these limits may be lower than what is stated in the documentation. If you need higher limits, you can submit a request for an increase. It's a good idea to do so before reaching current limits to avoid interruptions to your work. For information about service quotas and how to request a quota increase, see [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

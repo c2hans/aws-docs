@@ -78,3 +78,7 @@ After we receive your request, we provide an initial response within 24 hours. W
 If we're able to provide you with a long code, we send you information about the costs associated with obtaining it. We also provide an estimate of the amount of time that's required to provision the long code. In many countries, we can provide you with a dedicated long code within 24 hours. However, in some countries and regions, it can take several weeks to obtain a dedicated long code for the SMS channel.
 
 To prevent our systems from being used to send unsolicited or malicious content, we must consider each request carefully. We might not be able to grant your request if your use case doesn't align with our policies.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,8 +5,8 @@ source_url: https://docs.aws.amazon.com/sagemaker/latest/dg/sms-workforce-manage
 # Using the Amazon Mechanical Turk Workforce
 <a name="sms-workforce-management-public"></a>
 
-**Note**
-Amazon SageMaker Mechanical Turk is no longer open to new customers. Existing customers can continue to use the service as normal. AWS continues to invest in security and availability improvements for Mechanical Turk, but we do not plan to introduce new features.
+**Amazon Mechanical Turk service closure**
+Amazon Mechanical Turk will permanently close on September 30, 2026. If you currently use the MTurk workforce option, we recommend that you review your affected workflows and transition to an alternative workforce option before September 30, 2026.
 
 The Amazon Mechanical Turk (Mechanical Turk) workforce provides the most workers for your [Amazon SageMaker Ground Truth](https://docs.aws.amazon.com/sagemaker/latest/dg/a2i.html) labeling job and [Amazon Augmented AI](https://docs.aws.amazon.com/sagemaker/latest/dg/a2i-use-augmented-ai-a2i-human-review-loops.html) human review task. The Amazon Mechanical Turk workforce is a world-wide resource. Workers are available 24 hours a day, 7 days a week. You typically get the fastest turnaround for your human review tasks and labeling jobs when you use the Amazon Mechanical Turk workforce.
 
@@ -140,3 +140,7 @@ This workforce is not supported under the following scenarios. In each scenario,
 + This workforce is not supported for Ground Truth video frame labeling jobs and 3D point cloud labeling jobs.
 + You cannot use this workforce if your input data contains personally identifiable information (PII).
 + Mechanical Turk is not available in some of the AWS special regions. If applicable, refer to the documentation for your special region for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

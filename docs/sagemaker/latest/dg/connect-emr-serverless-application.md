@@ -45,3 +45,7 @@ When you connect to an EMR Serverless application, its status transitions from e
 1. An active cell populates and runs. This cell contains the connection magic command to connect your notebook to your application.
 
    Once the connection succeeds, a message confirms the connection and the start of the Spark application. You can begin submitting your data processing jobs to your EMR Serverless application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

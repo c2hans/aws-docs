@@ -40,3 +40,7 @@ Restrictions apply to tags on Service Quotas resources, including:
 + Valid characters for tag key and value – a-z, A-Z, 0-9, space, and the following characters: \_ . : / = \+ - and @
 + Tag keys and values are case sensitive.
 + Don't use `aws:` as a prefix for tag keys. It is reserved for AWS use.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Service Quotas. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicequotas` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -287,3 +287,7 @@ To enable data capture on your HyperPod Inference deployments, configure the fol
 + Use `initialSamplingPercentage` to control the volume of captured data. Start with a lower percentage in production and increase as needed.
 + Use `payloadConfig.maxPayloadSizeKB` (Tier 3) to cap the size of captured payloads and control storage costs.
 + Specify a `kmsKeyId` for Tier 1 and Tier 3 if your workload requires encryption at rest with your own AWS KMS key.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

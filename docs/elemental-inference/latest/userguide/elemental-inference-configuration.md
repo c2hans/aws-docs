@@ -14,3 +14,7 @@ When you are ready, you must deliver the source media to Elemental Inference. El
 + [Step B: Format the source media](source-format.md)
 + [Step C: Deliver the source media](deliver-source.md)
 + [Step D: Query the metadata](query-metadata-query.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Inference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-inference` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

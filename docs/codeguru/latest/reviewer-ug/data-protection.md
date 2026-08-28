@@ -55,3 +55,7 @@ Encryption is an important part of CodeGuru Reviewer security. Data in transit a
 <a name="security-traffic-privacy"></a>
 
 You can improve the security of associated repositories and code reviews by configuring CodeGuru Reviewer to use an interface VPC endpoint. To do this, you don't need an internet gateway, NAT device, or virtual private gateway. It also is not required to configure AWS PrivateLink, though it is recommended. For more information, see [CodeGuru Reviewer and interface VPC endpoints (AWS PrivateLink)](vpc-interface-endpoints.md). For more information about AWS PrivateLink and VPC endpoints, see [What is AWS PrivateLink?](https://docs.aws.amazon.com/vpc/latest/privatelink/what-is-privatelink.html) in the *AWS PrivateLink Guide* and [Connect your VPC to services using AWS PrivateLink](https://docs.aws.amazon.com/vpc/latest/userguide/endpoint-services-overview.html) in the *Amazon VPC User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

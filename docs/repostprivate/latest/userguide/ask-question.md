@@ -40,3 +40,7 @@ You see the list of similar content from your private re:Post that might help so
 Your question is displayed under the **Questions** tab.
 
 The users in your private re:Post can answer your question. All answers for the question are displayed under the question. To accept an answer, choose **Accept Answer**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ AWS Lake Formation allows you to securely manage data in a datashare from Amazon
 + **Query support** – You can query Amazon Redshift datashares managed by Lake Formation with Amazon Redshift. Athena doesn't support querying Amazon Redshift datashares managed by Lake Formation.
 
  For more information on limitations when working with datashares in Amazon Redshift, see [Limitations for data sharing](https://docs.aws.amazon.com/redshift/latest/dg/datashare-overview.html#limitations-datashare) in the Amazon Redshift Database Developer Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

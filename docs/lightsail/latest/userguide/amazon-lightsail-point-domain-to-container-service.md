@@ -65,3 +65,7 @@ Complete the following procedure to add an address (A for IPv4 or AAAA for IPv6)
 1. Choose the save icon to save the record to your DNS zone.
 
    Repeat these steps to add additional DNS records for domains on your certificate that you are using with your container service. Allow time for changes to propagate through the Internet’s DNS. After a few minutes, you should see if your domain is pointing to your container service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

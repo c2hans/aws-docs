@@ -25,3 +25,7 @@ You can also view HBase in Hue. For example, the following shows the table, `t1`
 ![HMaster](http://docs.aws.amazon.com/emr/latest/ReleaseGuide/images/huehbase.png)
 
  For more information about Hue, see [Hue](emr-hue.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

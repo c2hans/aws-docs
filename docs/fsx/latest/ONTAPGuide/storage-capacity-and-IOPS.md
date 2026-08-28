@@ -118,3 +118,7 @@ The following limitations apply while decreasing SSD storage capacity of your fi
 + You can increase but not decrease throughput capacity for your file system
 + You cannot add HA pairs to your file system
 +  You cannot revert a volume to a previous state (using `volume snapshot restore`) while data in that volume is being moved to the new aggregate. However, you can run `volume snapshot restore` on other volumes that aren't being moved currently.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

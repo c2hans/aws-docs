@@ -130,3 +130,7 @@ aws ecs update-cluster-settings --cluster {{cluster-name}} --settings name=conta
 After you set this, all new clusters automatically use Container Insights. Update existing clusters to add Container Insights. For more information, see [Updating an Amazon ECS cluster](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/update-cluster-v2.html) in the *Amazon Elastic Container Service Developer Guide*.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

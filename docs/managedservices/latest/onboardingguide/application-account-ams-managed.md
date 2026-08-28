@@ -19,3 +19,7 @@ The amount of tasks performed by AMS depends on the Change Management mode that 
 For more information about change management and different modes, see [Change management modes](using-change-management.md).
 
 There are some AWS services that you can use in your AMS-managed account without AMS management. The list of these AWS services and how to add them into your AMS account are described in the [Self-service provisioning](https://docs.aws.amazon.com/managedservices/latest/userguide/self-service-provisioning-section.html) section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

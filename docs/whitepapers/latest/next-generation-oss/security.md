@@ -35,3 +35,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/next-generation-oss/s
  [Direct Connect](https://aws.amazon.com/directconnect/) makes it easy to establish a dedicated connection from a DSP on-premise network to its AWS VPCs, inclusive of VPCs running their OSS workloads. This provides a consistent network experience to support the transfer of network OAM data. DSPs can combine Direct Connect with [Site-to-Site VPN](https://aws.amazon.com/vpn/) to provide an end-to-end secure IPSec connection.
 
  Amazon VPC supports VPC sharing across accounts, allowing you to isolate OSS workloads from network workloads, and enabling the creation, modification, and deletion of OSS applications, in a collocated manner, to network workload without the ability to view, modify, or delete network resources. Network topologies are simplified by interconnecting shared Amazon VPCs using connectivity features, such as [AWSPrivateLink](https://aws.amazon.com/privatelink/), transit gateways, and VPC peering.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

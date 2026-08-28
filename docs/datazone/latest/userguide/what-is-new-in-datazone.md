@@ -177,3 +177,7 @@ Amazon DataZone has added an enhancement to the DefaultDataLake blueprint that p
 + The second change is in the portal. If you create an environment profile using the DefaultDataLake blueprint, you can also select the authorized projects that are allowed to use the environment profile for creating environments. By default, all projects are allowed to use the data lake environment profile, but you can restrict the environment profile to specific projects and also control what data can be published using the environments created with the profile.
 
 For more information, see [Create an environment profile](create-environment-profile.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

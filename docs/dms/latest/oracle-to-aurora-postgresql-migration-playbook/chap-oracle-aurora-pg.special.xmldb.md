@@ -342,3 +342,7 @@ id  ordinality  EMP_NAME  EMP_ID  salary_usd  manager_name
 | Validate schema using XSD | Not out-of-the-box but can create trigger before insert or delete and find tag with XPATH and try to cast the type of the value to know if it’s OK, then if something is wrong stop the insert or delete command | Supported |
 
 For more information, see [XML Type](https://www.postgresql.org/docs/13/datatype-xml.html) and [XML Functions](https://www.postgresql.org/docs/13/functions-xml.html) in the *PostgreSQL documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

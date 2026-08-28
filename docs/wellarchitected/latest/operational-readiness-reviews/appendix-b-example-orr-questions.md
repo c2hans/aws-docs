@@ -95,3 +95,7 @@ These are a few example questions that you can use to get started building your 
 | Would your workload be able to withstand the loss of an AZ without causing customer impact? Have you architected your workload to be [statically stable](https://aws.amazon.com/builders-library/static-stability-using-availability-zones/) during an AZ failure so that you do not have to make changes or deploy new capacity in response?  |
 | --- |
 | ☐ Yes \| No Risk <br />☐ No \| High Risk  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ You should not use quorum queues if you:
 + [Migrating from classic queues to quorum queues on Amazon MQ for RabbitMQ](quorum-queues-migration.md)
 + [Policy configurations for quorum queues for Amazon MQ for RabbitMQ](quorum-queues-policy-configurations.md)
 + [Best practices for quorum queues for Amazon MQ for RabbitMQ](quorum-queues-best-practices.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

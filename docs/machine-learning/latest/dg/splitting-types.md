@@ -44,3 +44,7 @@ A common pitfall in developing a high-quality ML model is evaluating the ML mode
 If your training and evaluation datasources have different data distributions, you will see an evaluation alert in your model evaluation. For more information about evaluation alerts, see [Evaluation Alerts](evaluation-alerts.md).
 
 You do not need to use random splitting in Amazon ML if you have already randomized your input data, for example, by randomly shuffling your input data in Amazon S3, or by using a Amazon Redshift SQL query's `random()` function or a MySQL SQL query's `rand()` function when creating the datasources. In these cases, you can rely on the sequential split option to create training and evaluation datasources with similar distributions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

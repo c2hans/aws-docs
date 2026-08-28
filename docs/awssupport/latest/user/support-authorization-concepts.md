@@ -82,3 +82,7 @@ AWS Support cancelled the request.
 Actions are service-specific operations that AWS Support can perform during support investigations, such as reading diagnostic logs or viewing operational metrics. Each action has a descriptive name, such as `rds:ReadClusterData` or `rds:ViewQueryLogsWithParameters`. You can view available actions for each service by using the `ListActions` and `GetAction` API operations. For more information, see [Discovering support actions](support-authorization-actions.md).
 
 Resources are identified by their ARN. When you scope a support permit, you specify the resource ARNs for which AWS Support can access service information, or you can permit access to service information for all resources in the Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

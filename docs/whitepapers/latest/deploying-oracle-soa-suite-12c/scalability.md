@@ -44,3 +44,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/deploying-oracle-soa-
 1.  **Configure Amazon EC2 Auto Scaling** – Next, you have to configure Amazon EC2 Auto Scaling to launch and terminate EC2 instances—or Oracle WebLogic Machines—based on the application workload.
 
 1.  **Configure WebLogic scaling scripts** – Finally, you create WebLogic Scripting Tool (WLST) scripts. These scripts create and add or remove the Managed Servers from the WebLogic Server Cluster when Amazon EC2 Auto Scaling launches or terminates EC2 instances in the Auto Scaling group.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

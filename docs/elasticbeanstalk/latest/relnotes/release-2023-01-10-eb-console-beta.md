@@ -33,3 +33,7 @@ We might modify some of the visual design details before the General Availabilit
 To try out our new console experience, open the [Elastic Beanstalk console](https://console.aws.amazon.com/elasticbeanstalk). In the **Regions** list, select **US East (N. Virginia) – us-east-1**. Then select the **Try the new console** button on the console banner to switch to the new console interface.
 
 ![Console screen with banner that includes try new console button.](http://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/images/2023-01-console-try-new-console-banner.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

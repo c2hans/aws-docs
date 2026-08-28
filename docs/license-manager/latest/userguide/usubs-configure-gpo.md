@@ -21,3 +21,7 @@ Log into your License Server as an administrator, and open the Local Group Polic
 1. Set the licensing mode for the Remote Desktop Session Host to `Per User`, and save.
 
 For more information about configuring your RDS License Server for License Manager, see [Step 3: Configure RDS license server](user-based-subscriptions-getting-started.md#usubs-configure-rds) in the Get started topic. For more information about configuration for Microsoft RDS session hosts, see [License Remote Desktop session hosts](https://learn.microsoft.com/en-us/windows-server/remote/remote-desktop-services/rds-license-session-hosts).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS License Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query license-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

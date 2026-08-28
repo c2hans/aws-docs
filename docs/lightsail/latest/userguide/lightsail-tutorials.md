@@ -31,3 +31,7 @@ This section covers the following topics related to Amazon Lightsail:
 Follow the links provided in each category to access step-by-step guides, best practices, and additional information on various aspects of working with Lightsail.
 
 Each topic covers information such as deploying applications, configuring networking, monitoring and logging, integrating with other AWS services, and more. By exploring this section, you can learn how to effectively utilize Lightsail, leverage its integration with other AWS services, and access a wealth of tutorials and resources to enhance your cloud computing experience.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

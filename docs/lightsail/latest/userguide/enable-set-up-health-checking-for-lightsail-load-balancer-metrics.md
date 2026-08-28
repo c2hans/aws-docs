@@ -26,3 +26,7 @@ You might want to customize your health check path. For example, if your home pa
 
 1. Type a valid path for your health check, and then choose **Save**.
 ![Customize the health check path](http://docs.aws.amazon.com/lightsail/latest/userguide/images/customize-health-checking-path.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

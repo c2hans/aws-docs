@@ -302,3 +302,7 @@ When you execute this command, the status of the alarm switches from `OK` to `AL
    If the value of `SendingEnabled` is `false`, then email sending for the configuration set is disabled, indicating that the Lambda function executed successfully.
 
 1. Complete the steps in [Part 4: Re-Enable Email Sending for the Configuration Set](#monitoring-sender-reputation-pausing-configuration-set-part-4) to re-enable email sending for the configuration set.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

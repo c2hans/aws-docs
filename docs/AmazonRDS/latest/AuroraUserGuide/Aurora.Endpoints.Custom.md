@@ -34,3 +34,7 @@ Instead of using one DB instance for each specialized purpose and connecting to 
 + [Editing a custom endpoint](aurora-endpoint-editing.md)
 + [Deleting a custom endpoint](aurora-endpoints-custom-deleting.md)
 + [AWS CLI examples for custom endpoints for Amazon Aurora](Aurora.Endpoint.Tutorial.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

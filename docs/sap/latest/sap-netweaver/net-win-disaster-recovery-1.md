@@ -39,3 +39,7 @@ You can increase IT resilience when you use AWS Elastic Disaster Recovery to rep
 For more information, see the following resources.
 +  [What is Elastic Disaster Recovery?](https://docs.aws.amazon.com/drs/latest/userguide/what-is-drs.html)
 +  [Disaster recovery for SAP workloads on AWS using AWS Elastic Disaster Recovery](https://docs.aws.amazon.com/sap/latest/general/dr-sap.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

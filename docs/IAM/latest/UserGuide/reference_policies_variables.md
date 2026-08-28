@@ -382,3 +382,7 @@ For more information about policies, see the following:
 +  [IAM JSON policy element reference](reference_policies_elements.md)
 +  [Policy evaluation logic](reference_policies_evaluation-logic.md)
 +  [OIDC federation](id_roles_providers_oidc.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

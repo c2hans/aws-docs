@@ -25,3 +25,7 @@ An Amazon VPC user must set up the VPC, and identify subnets and security groups
    + The ID of the VPC. For example: `vpc-3f139646`
    + The IDs of the two subnets. For example, one subnet might have this ID: `subnet-1122aabb`
    + The IDs of the security groups for the subnet or subnets. For example: `sg-51530134`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

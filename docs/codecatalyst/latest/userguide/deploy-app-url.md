@@ -145,3 +145,7 @@ If you're using another action to deploy your application, such as the build act
 
 **To verify that the application URL was added**
 + Start a workflow run, if it hasn't started automatically. The new run should have the app URL displayed as a clickable link in its workflow diagram. For more information about starting runs, see [Starting a workflow run manually](workflows-manually-start.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

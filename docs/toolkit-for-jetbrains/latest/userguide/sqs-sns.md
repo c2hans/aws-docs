@@ -19,3 +19,7 @@ You can't subscribe FIFO Amazon SQS queues to Amazon SNS topics.
 1. Right-click the queue you want to work with and choose **Subscribe to SNS topic...**.
 
 1. In the dialog box, from the drop-down menu, choose an Amazon SNS topic, and then choose **Subscribe**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

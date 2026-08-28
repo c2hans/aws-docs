@@ -86,3 +86,7 @@ The following is a sample analysis:
 The following is a sample analysis:
 
 ![A sample analysis worksheet.](http://docs.aws.amazon.com/managedservices/latest/accelerate-guide/images/tr-sample-analysis2.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

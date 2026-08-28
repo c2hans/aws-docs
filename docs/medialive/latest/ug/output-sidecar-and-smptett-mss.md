@@ -31,3 +31,7 @@ You set up the captions and video in the same output.
 | Language code, Language description | Language information for this specific caption | All formats | Optional. For information, choose the Info link next to each field. |
 | Accessibility, Caption DASH Roles, DVB DASH accessibility | Accessibility data | All formats | [Including accessibility data in captions in MediaLive](captions-accessibility.md) |
 | PIDs | PID assignment | Teletext | [PIDs for Teletext](complete-the-pids-for-teletext.md),  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -71,3 +71,7 @@ For more information, see the [ CloudWatch RUM web client documentation](https:/
 <a name="CloudWatch-RUM-unsigned"></a>
 
 By default, the RUM web client signs all requests sent to RUM. If you set `signing:false` in the client configuration, requests will be unsigned when they are sent to CloudWatch RUM. Data will be ingested to RUM only if there is a public resource based policy attached to the app monitor. For more information, see [Using resource-based policies with CloudWatch RUM](CloudWatch-RUM-resource-policies.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

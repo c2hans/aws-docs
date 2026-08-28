@@ -44,3 +44,7 @@ The [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable) pr
 + You want to use a TensorFlow version earlier than 1.11.
 
 For information about writing legacy mode TensorFlow scripts to use with the SageMaker AI Python SDK, see [TensorFlow SageMaker ModelTrainers and Models](https://github.com/aws/sagemaker-python-sdk/tree/v1.12.0/src/sagemaker/tensorflow#tensorflow-sagemaker-estimators-and-models).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

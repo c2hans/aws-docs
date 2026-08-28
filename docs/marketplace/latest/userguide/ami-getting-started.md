@@ -152,3 +152,7 @@ FPGA (Field Programmable Gate Array) products are specialized AMI products that 
 + While FPGA products can be offered on other instance types, the AFIs will only be loaded and provide hardware acceleration on F2 instance types. On other instance types, the AMI functions without the FPGA acceleration capabilities.
 
 FPGA products are ideal for compute-intensive workloads requiring specialized hardware acceleration such as genomics research, financial analytics, real-time video processing, big data analytics, and machine learning inference. The dynamic loading of AFIs enables buyers to use FPGA acceleration without managing the underlying FPGA infrastructure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

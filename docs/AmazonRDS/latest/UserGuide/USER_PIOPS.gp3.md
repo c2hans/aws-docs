@@ -70,3 +70,7 @@ To change the storage performance settings for a DB instance, use the Amazon RDS
 + `Iops` – The new IOPS rate for the DB instance, expressed in I/O operations per second.
 + `StorageThroughput` – The new storage throughput for the DB instance, expressed in MiBps.
 + `ApplyImmediately` – Set this option to `True` to apply changes immediately. Set this option to `False` (the default) to apply changes during the next maintenance window.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

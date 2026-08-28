@@ -135,3 +135,7 @@ The following table shows the Valkey commands that Mem0 uses internally to imple
 | Store memory | HSET mem:{id} memory "..." embedding [bytes] user\_id "user\_123" created\_at "..." | Stores a memory with its vector embedding |
 | Search memories | FT.SEARCH agent\_memory "\*=>[KNN 5 @embedding $query\_vec]" PARAMS 2 query\_vec [bytes] DIALECT 2 | Finds the most semantically similar memories |
 | Set expiration | EXPIRE mem:{id} 86400 | Sets TTL for memory entries |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

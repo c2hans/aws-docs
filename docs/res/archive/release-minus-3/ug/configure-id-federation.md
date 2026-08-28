@@ -212,3 +212,7 @@ If you used the provided [external resources](prerequisites.md#external-resource
 **Amazon CloudWatch Logs** — You can check your RES logs in CloudWatch Logs for errors or warnings. Your logs are in a log group with the name format `/{{res-environment-name}}/cluster-manager`.
 
 **Amazon Cognito documentation** — For more information about SAML integration with Amazon Cognito, see [Adding SAML identity providers to a user pool](https://docs.aws.amazon.com/cognito/latest/developerguide/cognito-user-pools-saml-idp.html) in the *Amazon Cognito Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

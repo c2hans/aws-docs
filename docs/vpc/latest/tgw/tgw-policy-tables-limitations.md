@@ -14,3 +14,7 @@ The following limitations apply to transit gateway policy tables at launch.
   If your design relies on TGW-advertised BGP routes, do not associate a policy table with the attachment until you have verified the impact on your routing topology.
 + **Attachment exclusivity** — an attachment can be associated with either a policy table or a route table, but not both. If you attempt to associate a policy table with an attachment that already has a route table associated, the request fails. Disassociate the route table first.
 + **System entry modification** — system-managed entries cannot be modified or deleted by customers at this time. These entries are managed entirely by AWS and are visible in the `GetTransitGatewayPolicyTableEntries` API response and in the console with a rule number of `*`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

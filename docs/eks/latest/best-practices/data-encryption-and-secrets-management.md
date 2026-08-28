@@ -141,3 +141,7 @@ For additional information about the AWS Secrets & Configuration Provider (ASCP)
 ## Tools and resources
 <a name="_tools_and_resources"></a>
 +  [Amazon EKS Security Immersion Workshop - Data Encryption and Secrets Management](https://catalog.workshops.aws/eks-security-immersionday/en-US/13-data-encryption-and-secret-management)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

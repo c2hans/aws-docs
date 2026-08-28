@@ -100,3 +100,7 @@ azuresql_write = glueContext.write_dynamic_frame.from_options(
 + `databaseName` — Used for Read/Write. Valid Values: Azure SQL database names. The name of the database in Azure SQL to connect to.
 + `dbtable` — Required for writing, required for reading unless `query` is provided. Used for Read/Write. Valid Values: Names of Azure SQL tables, or period separated schema/table name combinations. Used to specify the table and schema that identify the table to connect to. The default schema is "public". If your table is in a non-default schema, provide this information in the form `{{schemaName}}.{{tableName}}`.
 + `query` — Used for Read. A Transact-SQL SELECT query defining what should be retrieved when reading from Azure SQL. For more information, see the [Microsoft documentation](https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=azuresqldb-mi-current).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

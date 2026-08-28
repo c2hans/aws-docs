@@ -48,3 +48,7 @@ The creation of Amazon Omics Variant and Annotation stores automatically shares 
 1.  The imaging stack creates a hyperlink to a CloudFormation quick start, which can be launched to deploy the QuickSight (quicksight) stack. The QuickSight stack creates IAM and QuickSight resources necessary to interactively explore the multi-omics dataset.
 
  The example code includes the resources needed to prepare data for large-scale analysis and perform interactive queries against a multi-omics data lake.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Multi-Omics and Multi-Modal Data Integration and Analysis on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

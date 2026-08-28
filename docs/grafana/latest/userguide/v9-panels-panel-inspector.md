@@ -81,3 +81,7 @@ For Grafana workspaces that support Grafana version 8.x, see [Working in Grafana
 1.  Make adjustments, as necessary and re-run the query.
 
 1.  To download the query request and response data, click the **Copy to clipboard** icon and paste the results into another application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

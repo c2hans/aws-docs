@@ -58,3 +58,7 @@ If you are unable to access the scheduling tables by using Option 1, try using O
 | lambda\_function\_arn | String |  Yes  | The Lambda Function ARN invoked by Outbound Campaigns. |
 | lambda\_invocation\_result | String |  Yes  | The result of the Lambda Function invocation attempt. Set to SUCCESS: Outbound Campaigns successfully invoked the Lambda function and received a response, including [function errors](https://docs.aws.amazon.com/lambda/latest/api/API_Invoke.html#API_Invoke_ResponseSyntax) and malformed responses. Set to ERROR: Outbound Campaigns failed to invoke the Lambda function or couldn't confirm successful invocation (for example, timeout). |
 | orchestration\_event\_context\_subtype | String |  Yes  | Provides additional granularity for outbound campaign events indicating the specific reason a target was not reached. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

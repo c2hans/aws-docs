@@ -246,3 +246,7 @@ Before you delete an entire policy, you must delete all of the non-default versi
 1. When a version is deleted, it's no longer visible from the AWS Explorer.
 
 1. If only the default version of a policy is left, open the context (right-click) menu for the parent policy and choose **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

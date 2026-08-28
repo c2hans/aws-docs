@@ -25,3 +25,7 @@ To be notified about updates to this whitepaper, subscribe to the RSS feed.
 | [Whitepaper updated](#document-revisions) | Updated the Framework to include operational excellence pillar, and revised and updated the other pillars to reduce duplication and incorporate learnings from carrying out reviews with thousands of customers. | November 1, 2016 |
 | [Minor updates](#document-revisions) | Updated the Appendix with current Amazon CloudWatch Logs information. | November 1, 2015 |
 | [Initial publication](#document-revisions) | AWS Well-Architected Framework published. | October 1, 2015 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

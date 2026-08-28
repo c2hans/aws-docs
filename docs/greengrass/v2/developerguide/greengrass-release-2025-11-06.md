@@ -28,3 +28,7 @@ The following table lists components provided by AWS that include new and update
 | Shadow manager | Version 2.3.12 of the [shadow manager](shadow-manager-component.md) is available.**Bug fixes and improvements**<br />   Fixes an issue where deployments were blocked when more than 1024 device shadows were configured.    |
 | Log manager | Version 2.3.11 of the [log manager](log-manager-component.md) is available.**Bug fixes and improvements**<br />   Fixes an issue where Log Manager runtime configuration grew indefinitely with stale information of uploaded log files.    |
 | System log forwarder | Version 2.1.0 of the [system log forwarder](system-log-forwarder-component.md) is available.**Bug fixes and improvements**<br />   Updates the component recipe to properly support Greengrass nucleus.   Improved logging output when there are no logs to upload.   General bug fixes and improvements.    |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

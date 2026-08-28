@@ -23,3 +23,7 @@ Amazon Quick Sight's SPICE (Super-fast, Parallel, In-memory Calculation Engine) 
 + Use SPICE for workflows requiring SPICE-only features.
 + Choose SPICE to optimize performance for complex transformations and large datasets.
 + Consider DirectQuery for real-time data needs when SPICE-only features are not required.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

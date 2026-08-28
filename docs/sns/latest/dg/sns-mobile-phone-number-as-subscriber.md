@@ -40,3 +40,7 @@ All origination ID related configurations (creation, configuration updating, pro
 
 **[AWS End User Messaging SMS billing](https://aws.amazon.com/sns/sms-pricing/)**
 All SMS billing is done though AWS End User Messaging SMS. You can consolidate your AWS spend for your SMS workloads, while procuring and managing your SMS resources in one central location.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

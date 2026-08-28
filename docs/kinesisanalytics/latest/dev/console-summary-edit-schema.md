@@ -129,3 +129,7 @@ The modified schema appears in the editor and looks similar to the following.
 ![Screenshot of schema editor showing the modified schema.](http://docs.aws.amazon.com/kinesisanalytics/latest/dev/images/edit-schema-3.png)
 
 If your schema has many rows, you can filter the rows using **Filter by column name**. For example, to edit column names that start with `P`, such as a `Price` column, enter `P` in the **Filter by column name** box.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

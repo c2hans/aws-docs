@@ -24,3 +24,7 @@ To convert an existing Team account to an Enterprise account, claim one or more 
 After your account is converted to an Enterprise account, you can decide whether to connect an Active Directory instance through Directory Service. Connecting to an Active Directory instance allows your users to sign in to Amazon Chime using their Active Directory credentials. For more information, see [Connecting to your Active Directory](active_directory.md).
 
 If you don't connect to an Active Directory instance, your users can continue to sign in to Amazon Chime using Login with Amazon (LWA) or their Amazon.com account credentials.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

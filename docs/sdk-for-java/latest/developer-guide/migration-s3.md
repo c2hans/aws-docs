@@ -13,3 +13,7 @@ The AWS SDK for Java 2.x introduces significant changes to the S3 client, includ
 + [Migrate pre-signed URL downloads from AWS SDK for Java v1 to v2](migration-s3-presign-download.md)
 + [Changes in parsing Amazon S3 URIs from version 1 to version 2](migration-s3-uri-parser.md)
 + [Changes in the S3 Event Notifications API from version 1 to version 2](migration-s3-event-notification.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

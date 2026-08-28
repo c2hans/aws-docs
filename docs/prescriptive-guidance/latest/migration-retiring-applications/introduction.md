@@ -38,3 +38,7 @@ Retiring applications can cause uncertainty and a level of risk. Because institu
 To avoid this situation, you must fully understand all upstream dependencies of an application within your organization. This is especially important when you are working toward a business outcome, such as migrating workloads to the AWS Cloud so a data center can be closed by a defined date.
 
 Deploying this guide's six best practices and its data-driven methodology will help reduce this risk level when choosing to retire applications.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

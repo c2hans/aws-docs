@@ -24,3 +24,7 @@ The following table describes the documentation releases for AWS AppFabric.
 | [Added GitHub and ServiceNow as supported applications](#doc-history) | For more information about the new supported applications, see [Supported applications](https://docs.aws.amazon.com/appfabric/latest/adminguide/supported-applications.html). | October 31, 2023 |
 | [Started tracking AWS managed policies for AWS AppFabric](#doc-history) | For more information about the AWS managed policies for AppFabric, see [AWS managed policies for AWS AppFabric](https://docs.aws.amazon.com/appfabric/latest/adminguide/security-iam-awsmanpol.html). | June 27, 2023 |
 | [Initial release](#doc-history) | Initial release of the AWS AppFabric Administration Guide. | June 27, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

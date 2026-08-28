@@ -531,3 +531,7 @@ Example output:
 ```
 
 For examples of how to work with the AWS Control Tower baseline APIs, see [Examples for baseline API usage](https://docs.aws.amazon.com/controltower/latest/userguide/baseline-api-examples.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

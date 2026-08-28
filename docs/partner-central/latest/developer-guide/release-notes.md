@@ -28,3 +28,7 @@ This page contains a summary of the significant changes to the documentation for
 | Beta 2 |  +  Added API Reference Guide (Web Version): Released a new version of the API Reference Guide (Web Version). Note: This version requires a local webserver to be run after extraction for proper functionality.   | 2024-01-07 |
 | Beta 1 |  +  Added Boto3 (Initial Release): Launched the initial release of Boto3, a Python SDK for our services. <br />+  Added Beta Program Guide: Introduced a guide for participants in our Beta testing program. <br />+  Added API Reference Guide (PDF): Uploaded the first version of our API Reference Guide in PDF format, providing comprehensive documentation for our API.   | 2023-12-15 |
 | Beta 0 | This initial release provides a suite of functionalities to manage and optimize partner engagements and opportunities in AWS Partner Central. | 2023-11-15 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,3 +13,7 @@ Additionally, the following references provide pricing related to MCP Clients:
 +  **Other MCP Clients using Amazon Bedrock LLMs** – For more information, see {aws-url-bedrock-pricing}[Amazon Bedrock pricing] on the AWS website.
 
 For all other questions, contact your AWS account team.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MCP Servers for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mcp-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

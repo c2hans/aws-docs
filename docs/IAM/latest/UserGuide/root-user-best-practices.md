@@ -131,3 +131,7 @@ We recommend removing root user credentials from member accounts in your organiz
 + Trusted Advisor provides a security check so you know if MFA isn't enabled on the root user account. For more information, see [MFA on Root Account](https://docs.aws.amazon.com/awssupport/latest/user/security-checks.html#mfa-root-account) in the *AWS Support User Guide*.
 
 If you need to report a security issue on your account, see [Report Suspicious Emails](https://aws.amazon.com/security/report-suspicious-emails/) or [Vulnerability Reporting](https://aws.amazon.com/security/vulnerability-reporting/). Alternatively, you can [Contact AWS](https://aws.amazon.com/contact-us/) for assistance and additional guidance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

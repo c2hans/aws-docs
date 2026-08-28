@@ -52,3 +52,7 @@ Task nodes can provide the remaining 912 GiB of memory. For this example, your t
 `912 GiB/32 GiB = 28.5 task nodes`
 
 You can't have a fraction of a task node, so you need to round up to 29 task nodes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

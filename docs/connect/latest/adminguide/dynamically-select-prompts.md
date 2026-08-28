@@ -17,3 +17,7 @@ You can dynamically select which prompt to play by using an attribute.
 
 1. Connect the [Set contact attributes](set-contact-attributes.md) blocks to the **Play prompt** block. The following example shows how it might look if you added one of each block to test how this works.
 ![A flow with the set contact attributes block connected to the play prompt.](http://docs.aws.amazon.com/connect/latest/adminguide/images/play-prompt-properties-2-b.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

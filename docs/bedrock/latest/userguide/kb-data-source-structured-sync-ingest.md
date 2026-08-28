@@ -41,3 +41,7 @@ To stop a data ingestion job that is currently running, send a [StopIngestionJob
 
 **Important**
 If you use the Amazon Bedrock Knowledge Bases service role created for you in the console and then sync your data store before granting access to your database to the authentication role that you use, the sync will fail. This is because the authentication role hasn't been granted access to your data store. Grant the role access before syncing. For information about granting permissions to a role to access your data store, see [Allow knowledge base service role to access your data store](knowledge-base-prereq-structured.md#knowledge-base-prereq-structured-db-access).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

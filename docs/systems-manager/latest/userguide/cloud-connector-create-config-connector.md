@@ -14,7 +14,7 @@ The AWS Config connector automatically creates a service-linked role for federat
 
 **To create an AWS Config connector for Azure**
 
-1. Create the AWS Config connector. Replace {{TENANT\_ID}} with your Azure tenant ID and {{CLIENT\_ID}} with the application (client) ID of the Azure AD app you created for AWS Config.
+1. Create the AWS Config connector. Replace {{TENANT\_ID}} with your Azure tenant ID and {{CLIENT\_ID}} with the **Config Application (Client) ID** — the application (client) ID of the AWS Config Azure AD app that you noted in the Azure prerequisites (Step 6).
 
    ```
    aws configservice put-connector \
@@ -33,3 +33,7 @@ The AWS Config connector automatically creates a service-linked role for federat
    ```
    aws configservice list-connectors
    ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

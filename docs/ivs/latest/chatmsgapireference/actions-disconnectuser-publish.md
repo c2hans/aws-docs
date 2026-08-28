@@ -33,3 +33,7 @@ Disconnects another viewer from the Chat room. Use this in conjunction with the 
 | `RequestId` | No | An identifier optionally specified by your application for tracking purposes. If specified, this appears in corresponding subscribe operations. |
 | `Reason` | No | Reason for disconnecting the user. |
 | `UserId` | Yes | User ID of the user(s) to disconnect from the room. If multiple connections share this ID, all are disconnected. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,3 +65,7 @@ SHOW TEMPLATES FROM SCHEMA dev.s1 LIKE '%template' LIMIT 1;
 -----------------+-------------+---------------+----------------+---------------+-------------+----------------------------+----------------------------+------------------
  noload_template |      107686 | COPY          | alice          | dev           | s1          | 2025-12-16 19:31:17.370547 | 2025-12-16 19:31:17.370547 |              100
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

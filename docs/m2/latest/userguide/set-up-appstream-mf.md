@@ -186,3 +186,7 @@ When the WorkSpaces Applications objects have been deleted, the account administ
 The home folder for a given user is unique across all fleets, so you might need to retain it if other WorkSpaces Applications stacks are active in the same account.
 
 Finally, WorkSpaces Applications does not currently allow you to delete users using the console. Instead, you must use the service API with the CLI. For more information, see [User Pool Administration](https://docs.aws.amazon.com/appstream2/latest/developerguide/user-pool-admin.html) in the *Amazon WorkSpaces Applications Administration Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

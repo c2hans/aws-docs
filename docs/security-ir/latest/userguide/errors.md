@@ -38,3 +38,7 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/errors.html
  The input fails to satisfy the constraints specified by an AWS service.
 
  One or more of the data fields in your request did not meet validation and/or logical combination requirements. Please check that all resource ARNs complete, and that text values meet size and format constraints from the [AWS Security Incident Response API Reference Guide](https://docs.aws.amazon.com/security-ir/latest/APIReference/Welcome.html). Also check that any value updates are permitted. For example, changing a case from AWS supported to self-managed is not possible.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

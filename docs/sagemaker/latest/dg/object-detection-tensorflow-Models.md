@@ -24,3 +24,7 @@ The following models vary significantly in size, number of model parameters, tra
 | ResNet101 V1 FPN 1024 | `tensorflow-od1-ssd-resnet101-v1-fpn-1024x1024-coco17-tpu-8` | [TensorFlow Model Garden link](http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_resnet101_v1_fpn_1024x1024_coco17_tpu-8.tar.gz) |
 | ResNet152 V1 FPN 640 | `tensorflow-od1-ssd-resnet152-v1-fpn-640x640-coco17-tpu-8` | [TensorFlow Model Garden link](http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_resnet152_v1_fpn_640x640_coco17_tpu-8.tar.gz) |
 | ResNet152 V1 FPN 1024 | `tensorflow-od1-ssd-resnet152-v1-fpn-1024x1024-coco17-tpu-8` | [TensorFlow Model Garden link](http://download.tensorflow.org/models/object_detection/tf2/20200711/ssd_resnet152_v1_fpn_1024x1024_coco17_tpu-8.tar.gz) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

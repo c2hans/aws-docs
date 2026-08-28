@@ -108,3 +108,7 @@ You can use one of the following upgrade techniques. The amount of downtime your
 After the upgrade, you need to closely monitor your system (application and database) and make fine-tuning changes if necessary. Following the pre-upgrade steps closely will minimize the required changes needed. For more information, see [Troubleshooting Amazon Aurora MySQL database performance](aurora-mysql-troubleshooting.md).
 
 To learn more about the methods, planning, testing, and troubleshooting of Aurora MySQL major version upgrades, be sure to thoroughly read [Upgrading the major version of an Amazon Aurora MySQL DB cluster](AuroraMySQL.Updates.MajorVersionUpgrade.md), including [Troubleshooting for Aurora MySQL in-place upgrade](AuroraMySQL.Upgrading.Troubleshooting.md). Also, note that some instance types aren't supported for Aurora MySQL version 3. For more information, see [Amazon AuroraDB instance classes](Concepts.DBInstanceClass.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

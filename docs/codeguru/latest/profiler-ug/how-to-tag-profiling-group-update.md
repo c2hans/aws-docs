@@ -26,3 +26,7 @@ You can use the CodeGuru Profiler console to edit the tags associated with a pro
    + If you want to change the key of a tag, you can remove a tag and add a new one with the updated key name. Find the tag you want to remove, then choose **Remove**. Choose **Add a new tag**. In **Key**, enter a name for the tag. You can add an optional value for the tag in **Value**.
 
 1. When you have finished editing tags, choose **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

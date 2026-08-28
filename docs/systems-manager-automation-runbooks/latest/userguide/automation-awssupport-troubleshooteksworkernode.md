@@ -73,3 +73,7 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 +  `aws:assertAwsResourceProperty` - Confirms that the Amazon EKS cluster you specify in the `ClusterName` parameter exists and is in an `ACTIVE` state.
 +  `aws:assertAwsResourceProperty` - Confirms that the Amazon EC2 worker node you specify in the `WorkerID` parameter exists and is in a `running` state.
 +  `aws:executeScript` - Runs a Python script that helps identify possible causes for the worker node failing to join the cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -63,3 +63,7 @@ To get the Client ID and Client Secret you create a Oracle NetSuite client app:
    + "Deposit", "Items", "Item Fulfillment", "Make Journal Entry", "Purchase Order", "Subsidiaries", "Vendors", "Bills", "Vendor Return Authorization", "Track Time", "Customer Payment", "Custom Record Entries", "Custom Record Types", "REST Web Services", "OAuth 2.0 Authorized Applications Management", "Custom Entity Fields", "Log in using OAuth 2.0 Access Tokens".
 
 For more information see [OAuth 2.0](https://docs.oracle.com/en/cloud/saas/netsuite/ns-online-help/chapter_157769826287.html) in the NetSuite Applications Suite documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

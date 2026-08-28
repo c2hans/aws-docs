@@ -15,3 +15,7 @@ Consider creating dashboard widgets for:
 + *Infrastructure health* – Monitor `target-ip-count` and `healthy-target-ip-count` to track the availability of target endpoints. If [Health checks for Managed Endpoints](health-checks-for-managed-endpoints.md) are enabled, compare `healthy-target-ip-count` against `target-ip-count` to identify instances failing health checks.
 
 For information about creating CloudWatch dashboards, see [Creating a CloudWatch dashboard](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/create_dashboard.html) in the *Amazon CloudWatch User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RTB Fabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rtb-fabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

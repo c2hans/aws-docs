@@ -17,3 +17,7 @@ This scenario is excellent for labs and other class work that require users to a
  Consider a class with 25 students. The administrator creates 25 private keys and launches 25 Amazon EC2 instances—one instance for each student. The administrator shares the appropriate key or password with each student and provides instructions on how to log into their instance.
 
  In this case, students do not have access to the AWS Management Console, AWS Command Line Interface, or AWS APIs, which prevents them from accessing other AWS services. Each student gets a unique private key (Linux) or sign-in credentials (Windows) along with the public hostname or IP address of the instance that they can use to log in.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

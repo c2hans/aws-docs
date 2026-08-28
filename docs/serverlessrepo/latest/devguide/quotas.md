@@ -17,3 +17,7 @@ The following quotas apply to storage that is available for code packages and ap
 | --- | --- |
 | Free Amazon S3 storage for code packages (per AWS account per AWS Region) | 5 GB |
 | Application policy length | 6,144 characters |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Repository. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverlessrepo` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

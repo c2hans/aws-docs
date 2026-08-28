@@ -159,3 +159,7 @@ The output should be similar to the following.
 ![Disk space utilization after compression](http://docs.aws.amazon.com/prescriptive-guidance/latest/sql-server-optimization-for-enterpriseone/images/guide-img/1ded277e-59b3-4f6d-bcef-fa7d04f06c63/images/82337489-46e7-42f8-b1ba-23042f640953.png)
 
 In this example, you can see that space used dropped from 3,407 MB to 1,275 MB, which represents a 62 percent savings from compression. The savings for your database will vary based on how data is distributed among the tables in the database.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

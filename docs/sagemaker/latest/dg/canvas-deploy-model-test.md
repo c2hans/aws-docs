@@ -67,3 +67,7 @@ To chat with a deployed JumpStart foundation model, do the following:
 1. From the context menu, choose **Test deployment**.
 
 1. A new **Generate, extract and summarize content** chat opens with the JumpStart foundation model, and you can begin typing prompts. Note that prompts from this chat are sent as requests to your SageMaker AI Hosting endpoint.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

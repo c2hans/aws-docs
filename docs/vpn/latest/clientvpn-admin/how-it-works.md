@@ -236,3 +236,7 @@ If your Client VPN endpoint is configured for mutual authentication, you cannot 
 1. Create a Client VPN endpoint. For more information, see [Create an AWS Client VPN endpoint](cvpn-working-endpoint-create.md).
 
 1. Create an authorization rule that grants access to all or part of your network. For example, for a Client VPN endpoint that is used by administrators, you might create an authorization rule that grants access to the entire network. For more information, see [Add an authorization rule](cvpn-working-rule-authorize-add.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

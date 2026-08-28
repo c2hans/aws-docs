@@ -18,3 +18,7 @@ Different AMS modes work with Application accounts differently; to learn more ab
 To create your Customer Managed application account, see [ Management account \| Create Customer-Managed Application Account](https://docs.aws.amazon.com/managedservices/latest/ctref/deployment-managed-management-account-create-customer-managed-application-account.html).
 
 To delete a Customer Managed application account, use [ Management account \| Offboard Application Account](https://docs.aws.amazon.com/managedservices/latest/ctref/management-managed-management-account-offboard-application-account.html). (The [ Confirm Offboarding](https://docs.aws.amazon.com/managedservices/latest/ctref/management-managed-application-account-confirm-offboarding.html) CT does not apply to Customer Managed application accounts.)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

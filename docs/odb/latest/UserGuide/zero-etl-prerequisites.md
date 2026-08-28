@@ -190,3 +190,7 @@ The following example shows a secret for Autonomous Database on Dedicated Infras
 <a name="zero-etl-iam-permissions"></a>
 
 Create IAM policies that allow zero-ETL integration operations. The following example policy allows describe, create, update, and delete operations for an Exadata VM cluster. For an Autonomous VM cluster, use the value `cloud-autonomous-vm-cluster` instead of `cloud-vm-cluster` for the resource ARN.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

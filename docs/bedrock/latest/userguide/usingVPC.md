@@ -27,3 +27,7 @@ The following topics show how to set up VPC endpoint with the help of AWS Privat
 + [Set up a VPC](#create-vpc)
 + [Use interface VPC endpoints (AWS PrivateLink) to create a private connection between your VPC and Amazon Bedrock](vpc-interface-endpoints.md)
 + [(Example) Restrict data access to your Amazon S3 data using VPC](vpc-s3.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ The following list summarizes key updates we've made to AWS App Runner since it 
 + *Improved logging* – When actions take a long time to complete, we added more service logging and improved existing service log events. You now have more information about the progress, success, or failure of your service actions. You can more easily identify which step failed and take appropriate action to fix the issue.
 + *Custom path for IAM role* – You can now add the App Runner trust policies in AWS Identity and Access Management (IAM) roles defined in custom paths, and use such roles as App Runner service roles. This enables you to follow security best practices of your organization.
 + *Environment variable updates* – You can now update environment variables for existing services. Previously, to update environment variables or their values, you had to terminate and recreate your service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

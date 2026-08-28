@@ -15,7 +15,7 @@ The Web broadcast SDK enables participants to send and receive video. The SDK su
 + Get WebRTC statistics for each peer connection
 + All operations from the IVS low-latency streaming Web broadcast SDK
 
-**Latest version of Web broadcast SDK:** 1.38.1 ([Release Notes](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html#aug12-26-broadcast-web-rt))
+**Latest version of Web broadcast SDK:** 1.39.0 ([Release Notes](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-notes.html#aug27-26-broadcast-web-rt))
 
 **Reference documentation:** For information on the most important methods available in the Amazon IVS Web Broadcast SDK, see [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference). Make sure the most current version of the SDK is selected.
 
@@ -27,3 +27,7 @@ The Web broadcast SDK enables participants to send and receive video. The SDK su
 **Platform requirements**: See [Amazon IVS Broadcast SDK](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast.html) for a list of supported platforms
 
 **Note:** Publishing from a browser is convenient for end users because it does not require installing additional software. However, browser-based publishing is subject to the constraints and variability of browser environments. If you need to prioritize stability (for example, for event streaming), we generally recommend publishing from a non-browser source (e.g., OBS Studio or other dedicated encoders), which often have direct access to system resources and avoid browser limitations. For more on non-browser publishing options, see the [Stream Ingest](rt-stream-ingest.md) documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

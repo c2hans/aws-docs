@@ -13,3 +13,7 @@ There are several ways to create Data Catalog tables:
 + Create a table manually using the Lake Formation console, AWS Glue API, or AWS Command Line Interface (AWS CLI).
 + Create a table using Amazon Athena.
 + Create a resource link to a table in an external account. See [Creating resource links](creating-resource-links.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

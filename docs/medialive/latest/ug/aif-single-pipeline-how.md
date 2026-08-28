@@ -37,3 +37,7 @@ If there is a failure, the behavior is as follows:
 This diagram illustrates the flow after there is a failure upstream of the first input. MediaLive has failed over to the second input.
 
 ![Failover pair with active connection from second upstream server through standard-class input to pipeline and downstream system.](http://docs.aws.amazon.com/medialive/latest/ug/images/aif-single-input-failover.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

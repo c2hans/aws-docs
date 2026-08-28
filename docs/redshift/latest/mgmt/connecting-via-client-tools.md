@@ -18,3 +18,7 @@ This section provides some options for third-party tools to connect. Additionall
 + [Amazon Redshift RSQL variables](rsql-query-tool-variables.md)
 + [Amazon Redshift RSQL error codes](rsql-query-tool-error-codes.md)
 + [Amazon Redshift RSQL environment variables](rsql-query-tool-environment-variables.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

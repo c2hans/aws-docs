@@ -51,3 +51,7 @@ Cost allocation entries are managed per billing month. You can:
 + **Update last month's entry** until the 7th of the current month. This window gives you time to review actual usage in AWS Cost Explorer before finalizing the prior month's allocation.
 
 After the 7th of the current month, attribution for the prior billing month can no longer be modified. Updates to a current or future month's entry apply from the next monthly billing cycle. Historical attribution for prior months is not retroactively recalculated.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -196,3 +196,7 @@ The following table describes important changes to the documentation since the l
 | [Amazon Athena](#history) | Amazon Athena is now supported in the AWS GovCloud (US-West) Region. | February 6, 2019 |
 | [AWS Glue](#history) | AWS Glue is now supported in the AWS GovCloud (US-West) Region. See [AWS Glue](govcloud-glue.md). | February 6, 2019 |
 | [AWS IoT Device Defender](#history) | AWS IoT Device Defender is now supported in the AWS GovCloud (US) Region. See [AWS IoT Device Defender](govcloud-IotDevDefender.md). | November 14, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

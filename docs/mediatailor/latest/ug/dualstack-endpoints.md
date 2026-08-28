@@ -90,3 +90,7 @@ Keep the following in mind when you use dual-stack endpoints:
 + You don't need to change your playback configurations, ad decision server settings, or CDN configuration to use dual-stack endpoints.
 + If your CDN uses hostname-pattern-based routing, verify that your rules accommodate the `.api.aws` domain format.
 + Standard AWS guidance for dual-stack endpoints applies. For more information, see [Dual-stack and FIPS endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#dual-stack-endpoints) in the *AWS General Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

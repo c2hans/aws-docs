@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/tenant-
  The sources of the metric data you’ll want to capture could be somewhat diverse. As the diagram suggests, your solution might need to capture some of the metrics from native AWS sources (CloudWatch, for example). However, a significant portion of this data will come from the code that you instrument into your SaaS application. It’s here that you’ll want to invest in publishing metrics that best capture the insights that can maximize the business and operational value of your domain’s data.
 
  The data from these sources is typically represented with a common schema that can represent the different types of consumption in your application (counts, durations, features, etc.). In this example, this data is ingested with Amazon Data Firehose, which publishes the data to Amazon Redshift. Finally, Amazon Quick is used to build the different dashboards that are used across the organizations to view the trends of tenants and tiers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

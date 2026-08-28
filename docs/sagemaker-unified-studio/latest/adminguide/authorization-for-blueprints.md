@@ -20,3 +20,7 @@ You can perform the following procedure to manage the authorization configuratio
 1. In the Authorization tab, you can use the Add and Remove buttons to add or remove domain units. By adding a domain unit, you're allowing projects that belong to this domain unit to use this blueprint. By removing a domain unit, you're removing the ability to use this blueprint from projects that belong to this domain unit.
 
    You can use the **Cascade to all child domain units** toggle to apply the authorization setting that you're configuring to all the child domain units of the domain unit that you're adding or removing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

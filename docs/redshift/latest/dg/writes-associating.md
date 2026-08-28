@@ -72,3 +72,7 @@ The consumer security administrator must explicitly set `allow-writes` to true w
 You can change the association of a namespace for a datashare by calling `associate-data-share-consumer` again, with a different value. The old association is overwritten by the new association, so if you originally associate and set `allow-writes`, but associate and specify `no-allow-writes`, or simply do not specify a value, the consumer will have their write permissions revoked.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

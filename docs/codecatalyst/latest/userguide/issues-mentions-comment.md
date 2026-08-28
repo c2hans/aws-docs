@@ -32,3 +32,7 @@ A list of the top 5 items (users, source repositories, projects, etc) containing
 1. Choose the desired item you would like to mention. The pathway showing where the item is located will populate in the comment textbox.
 
 1. Finish your comment and choose **Send**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

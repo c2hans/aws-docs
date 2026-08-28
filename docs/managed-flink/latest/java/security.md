@@ -21,3 +21,7 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Resilience in Amazon Managed Service for Apache Flink](disaster-recovery-resiliency.md)
 + [Infrastructure security in Managed Service for Apache Flink](infrastructure-security.md)
 + [Security best practices for Managed Service for Apache Flink](security-best-practices.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -163,3 +163,7 @@ The status of the distribution.
  *Configuring cache behavior settings*
 
 The `CacheBehaviorSettings` parameter can be set only if the `DefaultCacheBehavior` parameter is set to `cache`, or if the `CacheBehaviors` parameter has a path with a `cache` behavior. If neither of those conditions are true, the `CacheBehaviorSettings` will not be set for the distribution and the stack will drift.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

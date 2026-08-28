@@ -89,3 +89,7 @@ When you upgrade to Python 3.12 or later Python runtimes, you might need to adju
 Python 3.12 and later Python runtimes offer improved graceful shutdown capabilities for functions with [external extensions](lambda-extensions.md). When Lambda shuts down an execution environment, it sends a `SIGTERM` signal to the runtime and then a `SHUTDOWN` event to each registered external extension. You can catch the `SIGTERM` signal in your Lambda function and clean up resources such as database connections that were created by the function.
 
 To learn more about the execution environment lifecycle, see [Understanding the Lambda execution environment lifecycle](lambda-runtime-environment.md). For examples of how to use graceful shutdown with extensions, see the [AWS Samples GitHub repository](https://github.com/aws-samples/graceful-shutdown-with-aws-lambda).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

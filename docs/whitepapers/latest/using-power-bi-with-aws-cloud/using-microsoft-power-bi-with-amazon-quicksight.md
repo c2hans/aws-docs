@@ -17,3 +17,7 @@ Customers considering using the Microsoft Power BI Suite with AWS are encouraged
 +  It’s easy to get started in small or large settings, with the ability to add users from a point-and-click interface within QuickSight. No external administrator intervention needed.
 +  Quick is powered by Super-fast, Parallel, In-memory Calculation Engine (SPICE) for a fast response time (in the milliseconds) and interactive visualizations. Datasets can currently scale up to 200 GB.
 +  Quick pricing is simple, inexpensive, and has two components: report authors and report readers. Report authors, who create and publish interactive dashboards, are priced per user. If users do not log in during a given month, there are no charges for those users. Report readers are charged per 30-minute session, with a maximum of $5.00 per reader per month. A free trial allows you to evaluate Quick without any charges. For more information, see [Amazon Quick Pricing](https://aws.amazon.com/quicksight/pricing/?nc=sn&loc=4).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ For more information about promoting read replicas, see [Promoting a read replic
 **Note**
 RDS for PostgreSQL doesn't support major version upgrades for cascading replicas. Before performing a major version upgrade, you need to remove cascading replicas. You can recreate them after completing the upgrade on your source DB instance and first-level replicas.
 For cascading read replicas, RDS for PostgreSQL supports 15 read replicas for each source DB instance at first level of replication, and 5 read replicas for each source DB instance at the second and third level of replication.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

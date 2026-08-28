@@ -147,3 +147,7 @@ The Connect assistant preserves your conversation history within a session so yo
 + The Connect assistant generates components available in the Connect Customer UI component library. It cannot create custom components outside this library.
 + Multi-step guide workflows (views that span multiple steps) require creating each view separately. You can maintain context across views by referencing prior conversations using the same session.
 + The Connect assistant does not have yet access to your existing flow configurations. Dynamic field references might need manual verification to match your specific flow setup.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

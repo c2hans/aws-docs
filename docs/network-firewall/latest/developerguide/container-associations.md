@@ -216,3 +216,7 @@ The following table describes the errors that container association API operatio
 | LimitExceededException | 400 | Account limit reached. |
 | ResourceNotFoundException | 400 | Container association with given ARN or name does not exist. |
 | ThrottlingException | 400 | Rate limit exceeded. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

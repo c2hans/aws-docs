@@ -99,3 +99,7 @@ The AWS Amplify Admin UI REST API includes the following operations.
 + [UpdateBackendStorage](backend-appid-storage-backendenvironmentname.md#UpdateBackendStorage)
 
   Updates an existing backend storage resource.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify Admin UI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify-admin-ui` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

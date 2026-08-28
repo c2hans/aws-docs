@@ -100,3 +100,7 @@ To connect to AWS with your existing credentials from the **Walkthrough of Appli
 1. VS Code displays the status of your authentication, notifying you if authentication is complete or your credentials are invalid.
 
 For detailed information on configuring your credentials for deployment with the AWS CLI, see the [Configure the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-configure.html) topic in the *AWS CLI* Developer Guide. For additional information about connecting to AWS from the AWS Toolkit using your existing credentials, see the [Connecting to AWS](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/connect.html) topic in this User Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

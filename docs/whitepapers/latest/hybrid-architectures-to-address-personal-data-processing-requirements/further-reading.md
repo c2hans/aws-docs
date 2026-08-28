@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-architectures-
 +  [AWS Well-Architected Reliability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html)
 +  [All you need to know about SAP’s Russia Data Residency Solution](https://blogs.sap.com/2017/06/13/all-you-need-to-know-about-saps-russia-data-residency-solution/)
 +  [Hybrid Cloud with AWS](https://d1.awsstatic.com/whitepapers/hybrid-cloud-with-aws.pdf?did=wp_card&trk=wp_card) (AWS whitepaper)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

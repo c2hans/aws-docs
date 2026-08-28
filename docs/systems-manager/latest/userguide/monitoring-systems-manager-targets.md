@@ -32,3 +32,7 @@ You can configure an EventBridge rule to run a Systems Manager Command document 
 + When an Auto Scaling group is about to end, a Run Command script could capture the log files from the node before it is ended.
 + When a new node is created in an Auto Scaling group, a Run Command target action could turn on the web server role or install software on the node.
 + When a managed node is found to be out of compliance, a Run Command target action could update patches on the node by running the `AWS-RunPatchBaseline` document.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

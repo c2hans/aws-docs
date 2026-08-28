@@ -39,3 +39,7 @@ The following characteristics and rules apply to NAT gateways:
   + To prevent potential packet loss when communicating with resources over the internet using a public NAT gateway, the MTU setting for your EC2 instances should not exceed 1500 bytes. For more information about checking and setting the MTU on an instance, see [Network MTU for your EC2 instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/network_mtu.html#set_mtu) in the *Amazon EC2 User Guide*.
   + NAT gateways support Path MTU Discovery (PMTUD) through FRAG\_NEEDED ICMPv4 packets and Packet Too Big (PTB) ICMPv6 packets.
   + NAT gateways enforce Maximum Segment Size (MSS) clamping for all packets. For more information, see [RFC879](https://datatracker.ietf.org/doc/html/rfc879).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

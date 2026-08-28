@@ -14,3 +14,7 @@ When selecting your cloud provider, ensure that you decide on your cloud strateg
 When you select your cloud provider, you can conduct risk and compliance assessments. Each cloud provider has different tools you can leverage to obtain those reports. [AWS Artifact](https://aws.amazon.com/artifact) is a self-service portal at no cost where you can get AWS compliance reports.
 
 When establishing a relationship with a cloud provider, you can benefit from procurement agreements. Ensure that you review and accept the terms included in these agreements, and if needed, consult with your legal team.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

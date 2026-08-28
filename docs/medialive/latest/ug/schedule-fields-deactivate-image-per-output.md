@@ -18,3 +18,7 @@ To understand how this statement is significant, consider this example. You migh
 | Outputs | Select the output or outputs where you want to deactivate a specific layer. |
 | Layer | Identify the layer that you want to deactivate. Enter a value 0 to 7. Default is 0. |
 | Fade out | Enter the time in milliseconds for the image to fade out. Default is 0 (no fade-out). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,3 +39,7 @@ The following sections describe how to manage permissions for AWS Migration Hub.
 +  [AWS Migration Hub roles and policies](policy-templates.md)
 +  [AWS Migration Hub API Permissions: Actions and Resources Reference](migrationhub-api-permissions-ref.md)
 +  [AWS Migration Hub Authentication and Access Control Explained](auth-and-access-explained.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

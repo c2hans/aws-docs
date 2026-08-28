@@ -39,13 +39,13 @@ In the event of an incident, you may find that you need to disable the solution 
 
 1. Under **Scan or query items**, select **Query**.
 
-1. Enter the control ID (for example, `Lambda.1`) in the **Partition key: controlId** field and click **Run**.
+1. Enter the control ID (for example, `Lambda.1`) in the **Partition key: controlId** field and choose **Run**.
 
-1. Select the returned item, then click **Actions > Edit item**.
+1. Select the returned item, then choose **Actions > Edit item**.
 
 1. Change the `automatedRemediationEnabled` attribute value to **False**.
 
-1. Click **Save and Close**.
+1. Choose **Save and Close**.
 
  **Scenario 2**: Disable automatic remediation for all controls
 
@@ -53,9 +53,9 @@ In the event of an incident, you may find that you need to disable the solution 
 
 1. Under **Scan or query items**, select **Scan** to view all controls.
 
-1. For each control with `automatedRemediationEnabled` set to **True**, select the item and click **Actions > Edit item**.
+1. For each control with `automatedRemediationEnabled` set to **True**, select the item and choose **Actions > Edit item**.
 
-1. Change the `automatedRemediationEnabled` attribute value to **False** and click **Save and Close**.
+1. Change the `automatedRemediationEnabled` attribute value to **False** and choose **Save and Close**.
 
 1. Repeat for all controls you wish to disable.
 
@@ -67,4 +67,8 @@ In the event of an incident, you may find that you need to disable the solution 
 
 1. Select the **default** event bus and search for `Remediate_with_ASR_CustomAction`.
 
-1. Select the rule and click the **Disable** button.
+1. Select the rule and choose the **Disable** button.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

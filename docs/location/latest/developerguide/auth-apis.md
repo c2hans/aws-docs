@@ -22,3 +22,7 @@ The following are common use cases for API key management operations.
 + **Add domain restrictions**: Update an existing key to restrict usage to specific web domains using referrer-based client restrictions.
 + **Audit key inventory**: List all keys in the account using `ListKeys` to identify unused or expiring keys for cleanup.
 + **Revoke a compromised key**: Deactivate a key immediately by updating its status with `UpdateKey`, then delete it after 90 days using `DeleteKey`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -66,3 +66,7 @@ Use this procedure for web applications.
    ```
 **Note**
 This procedure uses `rel=nofollow` to instruct robots to not access the honeypot URL. However, because the link is embedded externally, you can’t include a `robots.txt` file to explicitly disallow the link. It’s your responsibility to verify what tags work in your website environment. Don’t use `rel="nofollow"` if your environment doesn’t observe it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Automations for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

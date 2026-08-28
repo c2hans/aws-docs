@@ -487,3 +487,7 @@ For a complete list of breaking changes for your migration path, see the [Migrat
 Any time you apply a transformation to your data — such as changing index names, modifying field mappings, or splitting indexes with type mappings — these changes may need to be reflected in your client configurations. Run production-like queries against the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection before switching over actual production traffic. This verifies that clients can communicate with the target, locate the necessary indexes and fields, and retrieve expected results.
 
 For complex migrations involving multiple transformations, perform a trial migration with representative non-production data to fully test client compatibility.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

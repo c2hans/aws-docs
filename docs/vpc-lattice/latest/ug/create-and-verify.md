@@ -110,3 +110,7 @@ To create a TXT record using the AWS Management Console, see [Creating records b
 To check the verification status of your domain name, you can use the VPC Lattice console or the `get-domain-verification` command.
 
  Once you verify your domain name, it stays verified until you delete it. If you delete the TXT record from your DNS zone, VPC Lattice deletes the `verification-id` and you need to reverify the domain name. If you delete the TXT record in your DNS zone, VPC Lattice sets your domain name verification status to `UNVERIFIED`. This doesn’t impact any existing resource endpoints, service network endpoints, or service network VPC associations to your resource configurations. To reverify your domain name, start the domain name verification process over.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

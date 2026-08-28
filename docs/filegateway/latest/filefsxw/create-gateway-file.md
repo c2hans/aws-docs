@@ -148,3 +148,7 @@ This step is not required to complete the gateway configuration process. You can
 Now that you have created your gateway, you must attach a file system for it to use. For instructions, see [Attach an Amazon FSx for Windows File Server file system](https://docs.aws.amazon.com/filegateway/latest/filefsxw/attach-fsxw-filesystem.html).
 
 If you do not have an existing Amazon FSx file system to attach, you must create one. For instructions, see [Getting started with Amazon FSx](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/getting-started.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

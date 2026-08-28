@@ -191,3 +191,7 @@ We recommend that this value be greater than `iceLocalCandidateGatheringTimeout`
   In a reliable, high performance network setting with good system resources, you can decrease the value to help in faster connection establishment. Increasing the value could help reduce the network load, but the connection establishment could slow down.
 **Important**
 We don't recommend changing this default.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams-webrtc-dg` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

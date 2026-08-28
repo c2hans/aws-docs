@@ -14,3 +14,7 @@ You might want to use an HTTP custom integration if you need to transform client
 **Topics**
 + [Tutorial: Create a REST API with an HTTP proxy integration](api-gateway-create-api-as-simple-proxy-for-http.md)
 + [Tutorial: Create a REST API with an HTTP non-proxy integration](api-gateway-create-api-step-by-step.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

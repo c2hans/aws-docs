@@ -59,3 +59,7 @@ The User Store feature supports the following group management scenarios:
   A unique end user signing in to an Amazon Q Business application must see only chat responses generated from documents within groups they have access to. To support that objective, you can use Amazon Q to map your end users group membership details within each data source to their IdP group membership.
 **Note**
 Amazon Q Business doesn't interact or crawl this information from your IdP automatically. To ingest the relationship between data source groups and IdP groups, use the Amazon Q Business API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

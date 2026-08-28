@@ -583,3 +583,7 @@ Review the [Amazon EBS CSI migration frequently asked questions](https://docs.aw
 <a name="gonogo"></a>
 
  [GoNoGo](https://github.com/FairwindsOps/GoNoGo) is an alpha-stage tool to determine the upgrade confidence of your cluster add-ons.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

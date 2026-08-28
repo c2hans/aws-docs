@@ -32,3 +32,7 @@ Region switch supports the following execution blocks.
 | [Custom action Lambda execution block](custom-action-lambda-block.md) | Add a custom step for running a Lambda function, to enable custom actions. | Skip the step. |
 | [Amazon Route 53 health check execution block](route53-health-check-block.md) | Specifies the Regions that your application traffic will be redirected to during failover. | N/A |
 | [Lambda event source mapping execution block](lambda-event-source-mapping-block.md) | Add a step to enable or disable a Lambda event source mapping. | Skip the step. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

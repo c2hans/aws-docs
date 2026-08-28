@@ -173,3 +173,7 @@ The JSON key may not exist in the secret value. Verify the secret structure in t
 <a name="retrieving-secrets-ai-agents-ts-hook-not-blocking"></a>
 
 Hooks load at agent session start. If you installed the plugin mid-session, restart the agent session for the hook to activate.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

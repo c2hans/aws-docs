@@ -40,3 +40,7 @@ Before you can delete a pool you need to turn off Deletion protection and remove
   In the preceding command, replace {{pool-78ec067f62f94d57bd3bab991example}} with the unique ID or the Amazon Resource Name (ARN) of the pool. You can find both of these values by using the [describe-pools](https://docs.aws.amazon.com/cli/latest/reference/pinpoint-sms-voice-v2/describe-pools.html) operation.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

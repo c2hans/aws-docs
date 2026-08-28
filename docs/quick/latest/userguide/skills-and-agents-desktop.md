@@ -175,3 +175,7 @@ The following are examples of scheduled tasks you can create.
 + **Project monitor** – Daily at 5 PM, check a Slack channel for updates on a specific project and compile a summary.
 + **Meeting prep** – 15 minutes before each calendar meeting, gather relevant context from Slack, email, and files, and prepare a brief.
 + **Competitive monitor** – Weekly, search the web for news about specified companies and produce a summary report.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

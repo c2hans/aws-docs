@@ -22,3 +22,7 @@ EventBridge includes [schemas](eb-schema.md) for all AWS services that generate 
    A search returns matches for both the name and contents of the available schemas, and then displays which versions of the schema contain matches.
 
 1. Open an event schema by selecting the name of the schema.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eventbridge` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

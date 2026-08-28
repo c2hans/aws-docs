@@ -19,4 +19,8 @@ Choose **Yes** if you want to use a private IP. The IP is shown in brackets next
 Private IP is not supported for IPv6.
 Removing a private IP from a specific server's settings does not remove it from the launch template.
 If you chose **Yes**, ensure that the IP range of the subnet you set in the EC2 launch template includes the private IP address.
-If the both the source server and the test or cutover instance shares the same subnet though a VPN, then the source private IP is already in use, and the **Copy private IP** option should not be used.
+If both the source server and the test or cutover instance share the same subnet through a VPN, then the source private IP is already in use, and the **Copy private IP** option should not be used.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

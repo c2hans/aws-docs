@@ -43,3 +43,7 @@ If your directory is replicated in multiple regions, perform this update in each
 1. Choose **Add** to confirm the update.
 
 After initiating the update, the directory status changes to **Updating** during the update process The update typically takes 15-30 minutes to complete Once complete, the directory status returns to **Active**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

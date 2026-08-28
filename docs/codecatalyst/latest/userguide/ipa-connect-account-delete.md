@@ -32,3 +32,7 @@ An account that has been removed can be added again later, but you must create a
 1. Choose **Remove AWS account**. Confirm the deletion by entering the name in the field, and then choose **Remove**.
 
    A success banner displays, and the account connection is removed from the list of connections.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

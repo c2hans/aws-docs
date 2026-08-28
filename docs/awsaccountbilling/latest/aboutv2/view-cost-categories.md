@@ -66,3 +66,7 @@ For more information about these cost types, see [Exploring your data using Cost
 1. In the **Cost category preferences** dialog box, choose how to aggregate your costs.
 
 1. Choose **Confirm**. The page will refresh with the new cost type.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

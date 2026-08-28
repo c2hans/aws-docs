@@ -70,3 +70,7 @@ Use the IAM console, the AWS CLI, or the AWS API to delete the **AWSServiceRoleF
 <a name="regions-fast-launch-slr"></a>
 
 Amazon EC2 supports the EC2 Fast Launch service-linked role in all of the Regions where the Amazon EC2 service is available.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

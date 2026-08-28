@@ -43,3 +43,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/zoom-meetings-configuring
    Once the scopes are added choose **Continue** and the app is ready to use.
 
 For more information about OAuth 2.0 setup see [Integrations (OAuth apps)](https://developers.zoom.us/docs/integrations/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ The following table lists the hyperparameters that you can set for the Amazon Sa
 | sub\_sample | The fraction of the training data to sample for training per epoch.<br />**Optional**<br />Valid values: Float (min: 0.0, max: 1.0)<br />Default value: 1.0 |
 | tolerance | The maximum relative change in the loss function. Early stopping is triggered when change in the loss function drops below this value within the last `num_patience_epochs` number of epochs.<br />**Optional**<br />Valid values: Float (min: 1e-6, max: 0.1)<br />Default value: 0.001 |
 | weight\_decay |  The weight decay coefficient. Adds L2 regularization.<br />**Optional**<br />Valid values: Float (min: 0.0, max: 1.0)<br />Default value: 0.0 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

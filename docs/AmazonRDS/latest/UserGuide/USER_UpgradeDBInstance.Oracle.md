@@ -19,3 +19,7 @@ RDS for Oracle Databases 11g, 12c, and 18c are no longer supported. If you maint
 + [Upgrading the version of an RDS for Oracle DB instance](USER_UpgradeDBInstance.Oracle.Upgrading.md)
 + [Upgrading an Oracle DB snapshot](USER_UpgradeDBSnapshot.Oracle.md)
 + [Preparing for Oracle Database 21c end of support](USER_UpgradeDBInstance.Oracle.21c-end-of-support.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

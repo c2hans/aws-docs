@@ -144,3 +144,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  **User scenario:** We are an engineering company with significant requirements in terms of graphics processing for our development applications. How can Amazon WorkSpaces Applications deliver the performance we need to take advantage of application virtualization?
 
  Amazon WorkSpaces Applications offers several graphics instance types offering NVidia T4 GPUs with up to 64Gb memory, which is adequate for a wide range of engineering application needs. Furthermore, the Amazon DCV protocol used by Amazon AppStream 2.0 to deliver remote access to your applications is highly optimized to deliver the best performance for highly graphical applications over a wide range of network conditions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ Starting with OpenSearch version 2.9, you can use semantic search to help you un
 With OpenSearch Service, you can set up [AI connectors for AWS services](ml-amazon-connector.md) and [external services](ml-external-connector.md). Using the console, you can also create an ML model with a CloudFormation template. For more information, see [Using CloudFormation to set up remote inference for semantic search](cfn-template.md).
 
 For full documentation of semantic search, including a step-by-step guide to use semantic search, see [Semantic search](https://opensearch.org/docs/latest/search-plugins/semantic-search/) in the open source OpenSearch documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -332,3 +332,7 @@ For tasks hosted on Amazon EC2 instances, you can define one or more volumes on 
    When this task is run, the two containers mount the volumes, and the `command` in the `busybox` container writes the date and time to a file. This file is called `date` in each of the volume folders. The folders are then visible at the website displayed by the `web` container.
 **Note**
 Because the `busybox` container runs a quick command and then exits, it must be set as `"essential": false` in the container definition. Otherwise, it stops the entire task when it exits.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

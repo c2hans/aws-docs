@@ -15,3 +15,7 @@ Depending on which third-party repository provider you're using, see the followi
 + **GitHub repositories**: GitHub’s documentation [About status checks](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/collaborating-on-repositories-with-code-quality-features/about-status-checks) and [About protected branches](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/about-protected-branches).
 + **Bitbucket repositories**: Bitbucket’s documentation for [Using branch permissions](https://confluence.atlassian.com/bitbucketserver/using-branch-permissions-776639807.html) and [Take control with branch permissions in Bitbucket Cloud](https://bitbucket.org/blog/take-control-with-branch-restrictions).
 + **GitLab repositories**: GitLab’s documentation for [Auto merge](https://docs.gitlab.com/ee/user/project/merge_requests/auto_merge.html) and [Protected branches](https://docs.gitlab.com/ee/user/project/protected_branches.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

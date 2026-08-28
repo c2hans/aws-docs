@@ -50,3 +50,7 @@ To use GPUs in your containers, you need to use container images that contain th
 + `pytorch/pytorch:latest-cuda`: PyTorch with GPU support.
 
 For an example task definition for Amazon ECS on Amazon ECS Managed Instances that involves the use of GPUs, see [Specifying GPUs in an Amazon ECS task definition](ecs-gpu-specifying.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

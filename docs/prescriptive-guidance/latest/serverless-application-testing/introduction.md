@@ -121,3 +121,7 @@ You can minimize the effect of software bugs and configuration problems on costs
 A serverless architecture might include managed services that provide critical application functionality through API calls. For this reason, your development cycle should include tests that validate both the *happy path* (where interactions with these services behave as expected) and the *sad path* (where calls fail, return unexpected responses, or behave differently across environments). Without these tests in place, you may encounter issues that stem from differences between your local environment and the deployed environment. When that happens, you must spend additional time attempting to reproduce and verify a fix, because each iteration now requires validating changes against an environment that differs from your preferred setup.
 
 A proper serverless testing strategy improves your iteration time by providing accurate results for tests that include calls to other services.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

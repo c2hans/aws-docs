@@ -101,3 +101,7 @@ This section shows several example AWS Identity and Access Management (IAM) iden
 1. **(Optional) Policy for Test Workbench to encrypt and decrypt test set data** – If Test Workbench is configured to store test-set inputs and results in Amazon S3 buckets using a customer managed KMS key, Test Workbench will need both encryption and decryption permission to the KMS key. The below policy should be modified to update {{Region}}, {{AwsAccountId}}, and {{KmsKeyId}} where {{KmsKeyId}} is the ID of the customer managed KMS key.
 
 1. **(Optional) Policy for Test Workbench to decrypt audio files** – If Audio files are stored in the S3 bucket using customer managed KMS key, Test Workbench will need decryption permission to the KMS keys. The below policy should be modified to update {{Region}}, {{AwsAccountId}}, and {{KmsKeyId}} where {{KmsKeyId}} is the ID of the customer managed KMS key used to encrypt the audio files.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

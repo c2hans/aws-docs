@@ -20,3 +20,7 @@ AWS might use your utilization data to help improve the overall quality of Compu
 + [Metrics for Amazon ECS services on Fargate](ecs-fargate-metrics-analyzed.md)
 + [Metrics for commercial software licenses](license-metrics-analyzed.md)
 + [Aurora and RDS database metrics](rds-metrics-analyzed.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

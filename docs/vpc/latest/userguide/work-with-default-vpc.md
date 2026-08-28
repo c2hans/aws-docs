@@ -146,3 +146,7 @@ You can delete a default subnet or default VPC just as you can delete any other 
 If you delete your default VPC, you can create a new one. For more information, see [Create a default VPC](#create-default-vpc).
 
 If you delete a default subnet, you can create a new one. For more information, see [Create a default subnet](#create-default-subnet). To ensure that your new default subnet behaves as expected, modify the subnet attribute to assign public IP addresses to instances that are launched in that subnet. For more information, see [Modify the IP addressing attributes of your subnet](subnet-public-ip.md). You can only have one default subnet per Availability Zone. You cannot create a default subnet in a nondefault VPC.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

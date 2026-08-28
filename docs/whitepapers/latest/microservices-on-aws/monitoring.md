@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/
 ![Diagram showing a serverless architecture with monitoring components](http://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/serverless-arch-with-monitoring.png)
 
 ![A container-based architecture with monitoring components](http://docs.aws.amazon.com/whitepapers/latest/microservices-on-aws/images/container-arch-with-monitoring.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

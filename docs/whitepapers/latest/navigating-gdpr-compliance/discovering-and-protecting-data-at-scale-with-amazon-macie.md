@@ -22,3 +22,7 @@ Amazon Macie continually evaluates the objects inside the buckets and automatica
 *Figure 4 – Data inspections and finding example *
 
 In order to prevent sensitive data accidental disclosure, coming from log data in-transit such as credit card numbers or government ID’s logged by your systems, and applications, [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/) provides data protection account level policy. Account level policies work in combination with log group level policies, allowing you to select patterns of sensitive log data to detect and protect broadly across all log groups in an AWS account. By default, when a user views a log event that includes masked data, the sensitive data is replaced by asterisks according to the policy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

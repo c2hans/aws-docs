@@ -25,3 +25,7 @@ By using this guide, you can derive the following business outcomes:
 + **Cost savings on Oracle database licensing fees** – Downgrading to Standard Edition 2 reduces the total cost of running your applications.
 + **Reduced need for significant upfront costs** – Amazon RDS for Oracle offers the License Included option so that you pay only for what you use.
 + **Efficient assessment** – You can perform a bulk assessment of your databases to determine suitability for a downgrade to Standard Edition 2.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

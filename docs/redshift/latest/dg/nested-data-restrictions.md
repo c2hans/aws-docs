@@ -65,3 +65,7 @@ The following limitations apply to nested data:
   ```
 
   You can’t use an array or map in the `FROM` clause that itself comes from another array or map. To select arrays or other complex structures that are nested inside other arrays, consider using indexes in the `SELECT` statement.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

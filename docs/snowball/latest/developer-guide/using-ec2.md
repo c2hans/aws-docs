@@ -55,3 +55,7 @@ There are additional costs associated with using compute instances. For more inf
 To avoid accidentally deleting the Amazon EC2-compatible instances that you create on a device, don't shut down your instances from the operating system. For example, don't use the `shutdown` or `reboot` commands. Shutting down an instance from within the operating system has the same effect as calling the [terminate-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/terminate-instances.html) command.
 
 Instead, use the [stop-instances](https://docs.aws.amazon.com/cli/latest/reference/ec2/stop-instances.html) command to suspend Amazon EC2-compatible instances that you want to preserve.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

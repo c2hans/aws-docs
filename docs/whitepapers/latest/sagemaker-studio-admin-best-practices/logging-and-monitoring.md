@@ -156,3 +156,7 @@ To encrypt those logs with a custom AWS KMS key, you will first need to modify t
 +  Whether the request was made by another AWS service. For an example event, refer to the [Log SageMaker AI API Calls with CloudTrail](https://docs.aws.amazon.com/sagemaker/latest/dg/logging-using-cloudtrail.html) documentation.
 
 By default, CloudTrail logs the Studio execution role name of the user profile as the identifier for each event. This works if each user has their own execution role. If multiple users share the same execution role, you can use the `sourceIdentity` configuration to propagate the Studio user profile name to CloudTrail. Refer to [Monitoring user resource access from Amazon SageMaker AI Studio](https://docs.aws.amazon.com/sagemaker/latest/dg/monitor-user-access.html) to enable the `sourceIdentity` feature. In a shared space, all actions refer to the space ARN as the source, and you cannot audit through `sourceIdentity`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

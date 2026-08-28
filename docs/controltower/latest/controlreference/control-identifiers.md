@@ -75,3 +75,7 @@ The response includes the corresponding global ARN, but not the Regional ARN.
 For more information about how to find the resource identifier for an OU and its resources, see [Resource types defined by AWS Organizations](https://docs.aws.amazon.com/service-authorization/latest/reference/list_awsorganizations.html#awsorganizations-resources-for-iam-policies).
 
 To learn more about how to get information from an OU, see [the AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_DescribeOrganizationalUnit.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

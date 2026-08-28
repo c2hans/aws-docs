@@ -25,3 +25,7 @@ A session template is required to create sessions within the console. The sessio
 1. Review the template details for accuracy. To change the template, select **Edit** to go back to the **Configure template details** page.
 
 1. Select the **Create template** button.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

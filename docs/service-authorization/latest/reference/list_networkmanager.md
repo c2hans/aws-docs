@@ -1210,3 +1210,7 @@ AWS Network Manager defines the following condition keys that can be used in the
 |   [networkmanager:tgwRtbArn](https://docs.aws.amazon.com/vpc/latest/tgw/nm-security-iam.html)  | Filters access by which Transit Gateway Route Table can be used to create an attachment | ARN |
 |   [networkmanager:vpcArn](https://docs.aws.amazon.com/vpc/latest/tgw/nm-security-iam.html)  | Filters access by which VPC can be used to a create/update attachment | ARN |
 |   [networkmanager:vpnConnectionArn](https://docs.aws.amazon.com/vpc/latest/tgw/nm-security-iam.html)  | Filters access by which Site-to-Site VPN can be used to a create/update attachment | ARN |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

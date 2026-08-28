@@ -81,3 +81,7 @@ The following procedure walks you through scaling a node-based Memcached cluster
 1. In your application, update the endpoints to the new cluster's endpoints. For more information, see [Finding Endpoints (ElastiCache API)](Endpoints.md#Endpoints.Find.API).
 
 1. Delete the old cluster. For more information, see [Using the ElastiCache API](Clusters.Delete.md#Clusters.Delete.API).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

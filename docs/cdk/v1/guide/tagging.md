@@ -549,3 +549,7 @@ Aspects.Of(stack).Add(new PathTagger());
 
 **Tip**
 The logic of conditional tagging, including priorities, resource types, and so on, is built into the `Tag` class, so you can use these features when applying tags to arbitrary resources. Also, the `Tag` class only tags taggble resources, so you don't need to test whether a construct is taggable before applying a tag.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ AWS Config records separate changes for resource relationships that are *indirec
 For more information about direct and indirect relationships, see [What is a direct and an indirect relationship with respect to a resource?](https://docs.aws.amazon.com/config/latest/developerguide/faq.html#faq-0)
 
 You can find [a list of resource relationships](https://docs.aws.amazon.com/config/latest/developerguide/resource-config-reference.html) in the AWS Config documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

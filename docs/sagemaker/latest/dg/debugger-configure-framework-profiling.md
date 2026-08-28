@@ -25,3 +25,7 @@ Debugger saves the framework metrics in a default S3 bucket. The format of the d
 + [Default framework profiling](debugger-configure-framework-profiling-basic.md)
 + [Default system monitoring and customized framework profiling for target steps or a target time range](debugger-configure-framework-profiling-range.md)
 + [Default system monitoring and customized framework profiling with different profiling options](debugger-configure-framework-profiling-options.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

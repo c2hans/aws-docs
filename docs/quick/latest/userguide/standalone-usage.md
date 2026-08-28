@@ -2,16 +2,17 @@
 source_url: https://docs.aws.amazon.com/quick/latest/userguide/standalone-usage.html
 ---
 
-# Understanding usage on the Amazon Quick Plus plan
+# Understanding usage on the Amazon Quick Plus and Max plans
 <a name="standalone-usage"></a>
 
 Amazon Quick uses limits to keep your usage predictable and to spread heavy activity evenly across your billing month. Understanding how these limits work helps you avoid interruptions, decide when to enable more usage, and get the most from your plan.
 
 **Note**
-This page applies to Amazon Quick Free and Plus accounts created with email or social login at [aws.com/quick](https://aws.com/quick). It does not apply to Amazon Quick Professional or Enterprise plans managed through the AWS Management Console, which handle usage differently.
+This page applies to Amazon Quick Free, Plus, and Max accounts created with email or social login at [aws.com/quick](https://aws.com/quick). It does not apply to Amazon Quick Professional or Enterprise plans managed through the AWS Management Console, which handle usage differently.
 
 **Topics**
 + [How usage limits work](#standalone-usage-how-limits-work)
++ [Usage does not roll over](#standalone-usage-no-rollover)
 + [How to get more usage](#standalone-usage-get-more)
 + [Best practices to conserve usage](#standalone-usage-best-practices)
 
@@ -30,10 +31,15 @@ Quick measures your usage by the length and complexity of your work, the feature
 ### What to do when you hit a limit
 <a name="standalone-usage-what-to-do"></a>
 
-| Limit | Free plan | Plus plan |
+| Limit | Free plan | Plus and Max plans |
 | --- | --- | --- |
-| Session limit | Wait for the session window to refresh, or upgrade to Plus for more usage. | Wait for the session window to refresh, or enable additional usage to keep working. |
-| Monthly limit | Upgrade to Plus, or wait for the reset at the start of the next billing cycle. | Enable additional usage, or wait for the reset at the start of the next billing cycle. |
+| Session limit | Wait for the session window to refresh, or upgrade to Plus or Max for more usage. | Wait for the session window to refresh, or enable additional usage to keep working. |
+| Monthly limit | Upgrade to Plus or Max, or wait for the reset at the start of the next billing cycle. | Enable additional usage, or wait for the reset at the start of the next billing cycle. |
+
+## Usage does not roll over
+<a name="standalone-usage-no-rollover"></a>
+
+Your usage allocation resets at the start of each billing cycle. Unused usage from the previous cycle does not carry over, and no credit is issued for unused capacity. Make the most of your allocation each month.
 
 ## How to get more usage
 <a name="standalone-usage-get-more"></a>
@@ -50,6 +56,32 @@ If you need more usage, you can enable additional usage and set a maximum monthl
 
 1. Set your maximum monthly limit (spend cap).
 
+### How additional usage billing works
+<a name="standalone-usage-additional-billing"></a>
++ Additional usage is **off by default**. You must manually enable it in your account settings.
++ When you enable additional usage, you are required to set a **maximum monthly limit** (spending cap). This prevents unexpected charges.
++ When additional usage is enabled and your cap has not been reached, your work continues uninterrupted beyond your plan's included allocation.
++ Additional usage is billed at the end of your billing cycle as a separate line item on your invoice.
++ **When your spending cap is reached:** Usage pauses until your next billing cycle resets your allocation. You can also raise your cap or upgrade your plan to continue.
+
+### What happens when you upgrade with additional usage charges
+<a name="standalone-usage-additional-upgrade"></a>
+
+If you have accumulated additional usage charges and then upgrade to a higher plan mid-cycle, your usage is **recalculated against the new plan's higher allocation**.
++ The higher plan includes more capacity. If your total usage for the month now falls within the new plan's included allocation, your additional usage charges are reduced or eliminated.
++ You are only billed for usage that exceeds the new plan's allocation.
+
+**Example:** You are on the Plus plan and have used more than your plan's included allocation this month, so you have additional usage charges pending. You upgrade to a higher plan with a larger included allocation. Your month-to-date usage now falls within the new plan's allocation, so your additional usage charges are eliminated.
+
+**Tip**
+If your additional usage charges are approaching the price difference between your current plan and a higher plan, upgrading might lower your total bill and increase your included allocation.
+
+### Additional usage and downgrades
+<a name="standalone-usage-additional-downgrade"></a>
++ If you downgrade your plan, your current allocation remains in effect through the end of your billing cycle.
++ Downgrading does not recalculate your additional usage charges for the current cycle.
++ Your new, lower allocation takes effect at the start of your next billing cycle.
+
 ## Best practices to conserve usage
 <a name="standalone-usage-best-practices"></a>
 
@@ -57,3 +89,7 @@ Use the following practices to make your usage go further before you need to ena
 + **Start fresh for new tasks** – Start a new chat for a new topic. Long, growing conversations carry their whole history with each turn and consume more usage. A fresh chat is lighter.
 + **Match the thinking level to the task** – Use a lower thinking level for routine tasks, and reserve the highest thinking level for genuinely complex work. Higher thinking levels consume more usage.
 + **Be concise and specific** – Clear, scoped prompts avoid long back-and-forth and re-work, which saves usage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

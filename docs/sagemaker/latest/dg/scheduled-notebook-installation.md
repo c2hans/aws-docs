@@ -40,3 +40,7 @@ To install SageMaker Notebook Jobs, complete the following steps:
 1. Start JupyterLab with the command: `jupyter lab`.
 
 1. Verify that the Notebook Jobs widget (![Notebook Jobs scheduling icon.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/icons/notebook-schedule.png)) appears in your Jupyter notebook taskbar.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

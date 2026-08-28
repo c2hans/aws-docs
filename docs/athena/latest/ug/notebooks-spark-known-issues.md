@@ -112,3 +112,7 @@ For example, you might create a table in Athena for Spark in one of the followin
 Due to the known issue with open source Spark, queries from Athena SQL on the resulting tables might not succeed.
 
 **Suggested solution** – Try creating the table in Athena for Spark using Apache Hive syntax. For more information, see [CREATE HIVEFORMAT TABLE](https://spark.apache.org/docs/latest/sql-ref-syntax-ddl-create-table-hiveformat.html) in the Apache Spark documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

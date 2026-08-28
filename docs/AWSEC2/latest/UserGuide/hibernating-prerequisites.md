@@ -162,3 +162,7 @@ If you choose a Provisioned IOPS SSD volume type, you must provision the EBS vol
 For Spot Instances, the following requirements apply:
 + The Spot Instance request type must be `persistent`.
 + You can't specify a launch group in the Spot Instance request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -97,3 +97,7 @@ Alternatively, you could use [Amazon S3 Same-Region Replication (SRR)](https://d
 <a name="data-protection-key-rotation-imported"></a>
 
 AWS KMS does not recover or rotate your [imported key material](https://docs.aws.amazon.com/kms/latest/developerguide/importing-keys-conceptual.html#import-keys-protect). To rotate a KMS key with imported key material, you must [rotate the key manually](https://docs.aws.amazon.com/kms/latest/developerguide/rotate-keys.html#rotate-keys-manually).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

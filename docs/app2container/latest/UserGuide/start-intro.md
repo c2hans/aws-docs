@@ -659,3 +659,7 @@ To remove App2Container from your application server or worker machine, delete t
 To clean up your AWS profile, see [Removing Credential Profiles](https://docs.aws.amazon.com/powershell/latest/userguide/shared-credentials-in-aws-powershell.html#removing-credential-profiles) in the *AWS Tools for PowerShell User Guide*.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App2Container. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app2container` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

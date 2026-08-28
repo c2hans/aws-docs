@@ -71,3 +71,7 @@ To obtain the ARN for a standard, you can use the [GetEnabledStandards](https://
 ------
 
 After you disable a standard, Security Hub CSPM begins performing tasks to disable the standard in the account and the specified Region. This includes disabling all the controls that apply to the standard. To monitor the status of these tasks, you can [check the status of the standard](enable-standards.md#standard-subscription-status) for the account and Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

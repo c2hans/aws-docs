@@ -138,3 +138,7 @@ The code for this pattern is available in the GitHub [Observability Access Manag
 + [Resource: aws\_oam\_sink](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/oam_sink) (Terraform documentation)
 + [Data Source: aws\_oam\_link](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/data-sources/oam_link) (Terraform documentation)
 + [CloudWatchObservabilityAccessManager](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/oam.html) (AWS Boto3 documentation)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

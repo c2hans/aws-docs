@@ -34,3 +34,7 @@ You will need Port 80 open during gateway activation. The port is closed immedia
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/ec2-quicklaunch-settings.html)
    + **Configure storage**
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/filegateway/latest/files3/ec2-quicklaunch-settings.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

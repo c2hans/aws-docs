@@ -30,3 +30,7 @@ When analyzing the query summary, you can get further details by mapping the ope
 | Sort | SORT | Sorts rows or intermediate result sets as required by other subsequent operations (such as joins or aggregations) or to satisfy an ORDER BY clause. |
 | Unique | UNIQUE | Applies a SELECT DISTINCT clause or removes duplicates as required by other operations. |
 | Window | WINDOW | Computes aggregate and ranking window functions. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

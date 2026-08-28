@@ -44,3 +44,7 @@ For more information about using Amazon EKS optimized Bottlerocket AMIs, see the
 + To retrieve the latest IDs of the Amazon EKS optimized Bottlerocket AMIs, see [Retrieve recommended Bottlerocket AMI IDs](retrieve-ami-id-bottlerocket.md).
 + For details on compliance support, see [Meet compliance requirements with Bottlerocket](bottlerocket-compliance-support.md).
 + To build a custom Bottlerocket variant with a specific NVIDIA driver, see [Build a custom Bottlerocket AMI variant for Amazon EKS](bottlerocket-custom-variant.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ You can create an AWS Elemental Live profile using the XML from an existing prof
 1. Choose the **Upload XML** button. Choose **Browse** and navigate to the downloads folder on your computer. Open the XML file, then choose **Apply** to load the XML in the **New Profile** page.
 
 1. Update fields as required and save the profile.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

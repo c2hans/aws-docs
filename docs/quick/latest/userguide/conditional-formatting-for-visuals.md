@@ -71,3 +71,7 @@ For tables and pivot tables, you can set multiple conditions for fields or suppo
    + To cancel selections and return to the previous panel, choose **Cancel**.
    + To close the settings panel, choose **Close**.
    + To reset all settings on this panel, choose **Clear**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

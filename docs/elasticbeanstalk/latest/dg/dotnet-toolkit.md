@@ -159,3 +159,7 @@ To avoid incurring charges for unused AWS resources, you can terminate a running
 ![Elastic Beanstalk terminate environment dialog box](http://docs.aws.amazon.com/elasticbeanstalk/latest/dg/images/aeb-vs-terminate-confirm.png)
 **Note**
 When you terminate your environment, the CNAME associated with the terminated environment becomes available for anyone to use.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

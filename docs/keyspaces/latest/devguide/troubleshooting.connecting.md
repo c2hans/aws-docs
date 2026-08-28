@@ -411,3 +411,7 @@ Failed to import 1 rows: NoHostAvailable - , will retry later, attempt 3 of 100
 To resolve this error, you need to make sure that the data to be imported matches the table schema in Amazon Keyspaces. Review the import file for parsing errors. You can try using a single row of data by using an INSERT statement to isolate the error.
 
 The client automatically attempts to reestablish the connection.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

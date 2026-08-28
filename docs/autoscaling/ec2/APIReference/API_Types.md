@@ -30,6 +30,7 @@ The following data types are supported:
 +  [CpuPerformanceFactorRequest](API_CpuPerformanceFactorRequest.md)
 +  [CustomizedMetricSpecification](API_CustomizedMetricSpecification.md)
 +  [DesiredConfiguration](API_DesiredConfiguration.md)
++  [DistributionSegment](API_DistributionSegment.md)
 +  [Ebs](API_Ebs.md)
 +  [EnabledMetric](API_EnabledMetric.md)
 +  [FailedScheduledUpdateGroupActionRequest](API_FailedScheduledUpdateGroupActionRequest.md)
@@ -99,3 +100,7 @@ The following data types are supported:
 +  [TrafficSourceState](API_TrafficSourceState.md)
 +  [VCpuCountRequest](API_VCpuCountRequest.md)
 +  [WarmPoolConfiguration](API_WarmPoolConfiguration.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

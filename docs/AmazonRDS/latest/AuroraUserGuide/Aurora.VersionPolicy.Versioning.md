@@ -210,3 +210,7 @@ For more information about automatic minor version upgrades, see [Automatic mino
 Aurora versions use the `{{major}}.{{minor}}.{{patch}}` scheme. An Aurora patch version includes important fixes added to a minor version after its initial release (for example, Aurora MySQL 3.04.0, 3.04.1, ..., 3.04.3). While each new minor version provides new Aurora features, new patch versions within a specific minor version are primarily used to resolve important issues.
 
 For more information on patching, see [Maintaining an Amazon Aurora DB cluster](USER_UpgradeDBInstance.Maintenance.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

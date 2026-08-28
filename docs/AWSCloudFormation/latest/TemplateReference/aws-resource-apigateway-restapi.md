@@ -40,7 +40,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[Parameters](#cfn-apigateway-restapi-parameters)" : {{{{{Key}}: {{Value}}, ...}}},
       "[Policy](#cfn-apigateway-restapi-policy)" : {{Json}},
       "[SecurityPolicy](#cfn-apigateway-restapi-securitypolicy)" : {{String}},
-      "[Tags](#cfn-apigateway-restapi-tags)" : {{[ Tag, ... ]}}
+      "[Tags](#cfn-apigateway-restapi-tags)" : {{[ Tag, ... ]}},
+      "[Version](#cfn-apigateway-restapi-version)" : {{String}}
     }
 }
 ```
@@ -73,6 +74,7 @@ Properties:
   [SecurityPolicy](#cfn-apigateway-restapi-securitypolicy): {{String}}
   [Tags](#cfn-apigateway-restapi-tags): {{
     - Tag}}
+  [Version](#cfn-apigateway-restapi-version): {{String}}
 ```
 
 ## Properties
@@ -184,6 +186,12 @@ The Transport Layer Security (TLS) version \+ cipher suite for this RestApi.
 The key-value map of strings. The valid character set is [a-zA-Z\+-=.\_:/]. The tag key can be up to 128 characters and must not start with `aws:`. The tag value can be up to 256 characters.
 *Required*: No
 *Type*: Array of [Tag](aws-properties-apigateway-restapi-tag.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`Version`  <a name="cfn-apigateway-restapi-version"></a>
+A version identifier for the API.
+*Required*: No
+*Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 ## Return values
@@ -463,3 +471,7 @@ Resources:
 <a name="aws-resource-apigateway-restapi--seealso"></a>
 + [restapi:create](https://docs.aws.amazon.com/apigateway/latest/api/API_CreateRestApi.html) in the *Amazon API Gateway REST API Reference*
 + [Tutorial: Building a private REST API](https://docs.aws.amazon.com/apigateway/latest/developerguide/private-api-tutorial.html) in the *API Gateway Developer Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

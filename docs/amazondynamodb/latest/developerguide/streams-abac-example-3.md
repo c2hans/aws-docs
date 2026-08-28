@@ -51,3 +51,7 @@ If Streams ABAC isn't enabled for your AWS account, DynamoDB doesn't send the ta
 
 With Streams ABAC
 If Streams ABAC is enabled for your AWS account, the tag key `Department` is evaluated against the condition-based tag key `CostCenter` present in the Deny policy. The tag key `Department` doesn't match the tag key present in the Deny policy because of the `StringNotEquals` operator. Therefore, the `TagResource` action fails and returns an `AccessDeniedException`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

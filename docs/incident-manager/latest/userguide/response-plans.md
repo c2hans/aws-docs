@@ -183,3 +183,7 @@ When you integrate Incident Manager with PagerDuty, PagerDuty creates a correspo
    Tags are optional metadata that you assign to a resource. With tags, you can categorize a resource in different ways, such as by purpose, owner, or environment. For example, you might want to tag a response plan to identify the type of incident it is meant to mitigation, the types of escalation channels it contains, or the escalation plan that will be associated with it. For more information about tagging Incident Manager resources, see [Tagging resources in Incident Manager](tagging.md).
 
 1. Choose **Create response plan**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

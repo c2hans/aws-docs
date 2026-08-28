@@ -16,3 +16,7 @@ Retrieving information from an Amazon Redshift data warehouse involves running c
 + [Analyzing the query summary](c-analyzing-the-query-summary.md)
 + [Query performance improvement](query-performance-improvement-opportunities.md)
 + [Diagnostic queries for query tuning](diagnostic-queries-for-query-tuning.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

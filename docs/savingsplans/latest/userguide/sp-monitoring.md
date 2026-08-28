@@ -12,3 +12,7 @@ Monitoring is an important part of your Savings Plans usage. Understanding the S
 + [Using the Savings Plans utilization report](ce-sp-usingPR.md)
 + [Using the Savings Plans coverage report](ce-sp-usingCR.md)
 + [Using budgets for Savings Plans](sp-usingBudgets.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

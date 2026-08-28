@@ -181,3 +181,7 @@ Choose one of the following access methods to add and activate a trusted entity 
 ------
 
 After you activate an entity list or IP address list, it might take a few minutes for this list to be effective. For more information, see [Important considerations for GuardDuty lists](guardduty_upload-lists.md#guardduty-lists-entity-sets-considerations).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

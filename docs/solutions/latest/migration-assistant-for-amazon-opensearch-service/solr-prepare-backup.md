@@ -86,3 +86,7 @@ Inside each collection directory, the reader accepts the common Solr backup layo
 + One-level nested Solr 8/9 incremental layouts, such as `collection/innerName/zk_backup_N/`. The reader detects the nested data directory automatically.
 
 For metadata migration, the latest ZooKeeper backup for each collection must contain a config directory with one of `managed-schema.xml`, `managed-schema`, or `schema.xml`. If the schema file is missing, metadata migration falls back to an empty schema for that collection.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

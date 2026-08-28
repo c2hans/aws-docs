@@ -91,3 +91,7 @@ We recommend that you consider the following:
 + [Specifications for Amazon EC2 storage optimized instances](https://docs.aws.amazon.com/ec2/latest/instancetypes/so.html) (Amazon EC2 documentation)
 + [Protect your SQL Server workloads using NetApp SnapCenter with Amazon FSx for NetApp ONTAP](https://aws.amazon.com/blogs/storage/using-netapp-snapcenter-with-amazon-fsx-for-netapp-ontap-to-protect-your-sql-server-workloads/) (AWS Storage Blog)
 + [Amazon EC2 FAQ](https://aws.amazon.com/ec2/faqs/) (AWS product page)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

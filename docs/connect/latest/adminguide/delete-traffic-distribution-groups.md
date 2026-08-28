@@ -12,3 +12,7 @@ You cannot delete a traffic distribution group if phone numbers are claimed to i
 You cannot release numbers from a traffic distribution group by using the Connect Customer console.
 
 Your [DeleteTrafficDistributionGroup](https://docs.aws.amazon.com/connect/latest/APIReference/API_DeleteTrafficDistributionGroup.html) API call will fail with an `ResourceInUseException` if phone numbers are still claimed to the traffic distribution group.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

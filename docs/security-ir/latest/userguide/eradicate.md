@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/security-ir/latest/userguide/eradicate.h
 +  Can you replace the infected system with a new instance or resource, enabling a clean baseline while terminating the infected item?
 +  Have you removed all malware and other artifacts left behind by the unauthorized use, and hardened the affected systems against further attacks?
 +  Is there a requirement for forensics on the impacted resources?
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

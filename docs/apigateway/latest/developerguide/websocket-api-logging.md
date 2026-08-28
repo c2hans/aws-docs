@@ -124,3 +124,7 @@ Examples of some commonly used access log formats are shown in the API Gateway c
   ```
 
   The continuation characters (`\`) are meant as a visual aid. The log format must be a single line. You can add a newline character (`\n`) at the end of the log format to include a newline at the end of each log entry.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

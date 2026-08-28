@@ -81,3 +81,7 @@ Uploading data points individually is untenable because it could produce million
 | User Records per Kinesis Record | The number of logical user records aggregated into a single Kinesis Data Streams record.<br />Metric level: Detailed <br />Unit: Count  |
 | Amazon Kinesis Records per PutRecordsRequest | The number of Kinesis Data Streams records aggregated into a single `PutRecordsRequest`. Not available at shard level.<br />Metric level: Detailed <br />Unit: Count  |
 | User Records per PutRecordsRequest | The total number of user records contained within a `PutRecordsRequest`. This is roughly equivalent to the product of the previous two metrics. Not available at shard level.<br />Metric level: Detailed <br />Unit: Count  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

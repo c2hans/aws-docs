@@ -209,3 +209,7 @@ When you successfully start a human loop by invoking `StartHumanLoop` directly, 
 <a name="a2i-next-step-starthumanloop"></a>
 
 After starting a human loop, you can manage and monitor it with the Amazon Augmented AI Runtime API and Amazon CloudWatch Events. To learn more, see [Monitor and Manage Your Human Loop](a2i-monitor-humanloop-results.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

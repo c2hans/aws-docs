@@ -49,3 +49,7 @@ Context-aware processing: The model understands the conversation context and can
 + If the user changes their request, the model can acknowledge the original results while focusing on the new request
 
 No automatic cancellation: The system does not automatically cancel or ignore tool calls based on new user input. This ensures the model has complete information to make intelligent decisions about how to respond.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,3 +50,7 @@ These columns describe Spectrum-fleet concepts that do not exist on RG. On RG cl
 + **slowdown\_count**, **max\_concurrent\_slowdown\_count** — On RG, Amazon S3 slowdowns are tracked in STL\_S3CLIENT.
 
 For aggregated per-query metrics on RG clusters (partitions, files scanned, rows and bytes returned, file format, file location, listing and partition-fetch timing), you can also use the [SYS\_EXTERNAL\_QUERY\_DETAIL](SYS_EXTERNAL_QUERY_DETAIL.md) monitoring view.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

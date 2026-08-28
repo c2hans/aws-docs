@@ -41,3 +41,7 @@ For all of these steps, you sign in as an AWS Identity and Access Management (IA
 
 **Other information**
 + [Learn policy syntax for Security Hub policies and see policy examples](orgs_manage_policies_security_hub_syntax.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

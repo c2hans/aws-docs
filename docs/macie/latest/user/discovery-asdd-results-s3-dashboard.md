@@ -118,3 +118,7 @@ Individual statistics in this section are:
 Choose the value for a statistic to display additional details and, as applicable, remediation guidance. If you remediate access issues and classification errors, you can increase coverage of your Amazon S3 data during subsequent analysis cycles. For more information, see [Assessing automated sensitive data discovery coverage](discovery-coverage.md).
 
 Note that statistics in the **Coverage issues** section don't explicitly include data for sensitive data discovery jobs that you create and run. However, remediating coverage issues that affect automated sensitive data discovery is likely to also increase coverage by jobs that you subsequently run.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

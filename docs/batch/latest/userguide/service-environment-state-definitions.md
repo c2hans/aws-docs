@@ -24,3 +24,7 @@ After successful creation and validation, service environments transition from `
 Service environments transition from `VALID` to `INVALID` when configuration validation fails or when dependencies become unavailable. This can occur due to IAM role modifications, capacity limit changes that violate quotas, or external resource modifications that affect the service environment's ability to function. The status reason field provides specific details about what caused the invalid state.
 
 Service environments can transition back to `VALID` from `INVALID` once the underlying issues are resolved. This might involve updating IAM permissions, correcting capacity configurations, or restoring access to required AWS resources. The transition typically occurs automatically once AWS Batch detects that the configuration issues have been addressed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

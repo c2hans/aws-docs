@@ -70,3 +70,7 @@ Click the document icon to open a split view in Explore with the configured data
 The Service Graph view visualizes the span metrics (traces data for rates, error rates, and durations (RED)) and service graphs. Once the requirements are set up, this pre-configured view is immediately available.
 
 For more information, see [Tempo](tempo-data-source.md) data source page. You can also see the [service graph view page](https://grafana.com/docs/tempo/latest/metrics-generator/service-graph-view/) in the *Tempo documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,3 +49,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  [Getting Started with AWS for Games – Part I](https://skillbuilder.aws/learn/SHS7S514EG/getting-started-with-aws-for-games--part-i/351G9Y1AHA)
 +  [Game Server Hosting on AWS](https://skillbuilder.aws/learn/C5G653NPXR/game-server-hosting-on-aws/QPHRSD9SZQ)
 +  [AWS re:Invent 2023 – AWS Graviton: The Best price performance for your AWS workloads (CMP334)](https://www.youtube.com/watch?v=T_hMIjKtSr4)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -216,3 +216,7 @@ For more information about logs available in CloudWatch for HealthOmics runs, se
 
 **Note**
 Run metadata is not deleted from CloudWatch Logs even when you remove the run from HealthOmics. You can use CloudWatch to access metadata for runs that are no longer available through the HealthOmics API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

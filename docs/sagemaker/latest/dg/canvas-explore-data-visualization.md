@@ -55,3 +55,7 @@ You can use **Group by** to group the box plots by a third feature.
 The following image shows a box plot that uses **Group by**. In this example, the x and y-axes show `JobLevel` and `JobSatisfaction`, respectively, and the colored box plots are grouped by the `Department` feature.
 
 ![Screenshot of a box plot in the Data visualizer view of the Canvas application.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/canvas-eda-box-plot.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

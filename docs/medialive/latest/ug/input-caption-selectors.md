@@ -22,3 +22,7 @@ For each captions item that you want to extract or include, choose the **Add cap
 1. In **Selector Settings**, select the format of the captions asset to extract. Then complete the fields that apply to that format.
 
 For more information about setting up an input for captions, see [Including captions in a channel](captions.md), specifically [Create captions selectors in the inputs](identify-captions-in-the-input.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

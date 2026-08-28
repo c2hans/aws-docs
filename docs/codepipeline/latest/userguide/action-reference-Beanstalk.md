@@ -138,3 +138,7 @@ Actions:
 
 The following related resources can help you as you work with this action.
 + [Deploying a Flask application to Elastic Beanstalk](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html) – This tutorial walks you through the creation of your application and environment resources in Elastic Beanstalk using a sample Flask application. You can then build your pipeline with an Elastic Beanstalk deployment action that deploys your application from your source repository to your Elastic Beanstalk environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ There are two ways to define a workload. On the **Workloads** page in AWS WA Too
 1. Choose **Define workload from template**.
 
 1. Follow the instructions in [Defining a workload from a template in AWS WA Tool](define-workload-from-template.md) to create the workload from your review template.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

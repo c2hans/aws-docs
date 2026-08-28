@@ -430,3 +430,7 @@ You can access your RabbitMQ brokers using the following protocols with TLS enab
 RabbitMQ on Amazon MQ supports the following cipher suites:
 + TLS\_ECDHE\_RSA\_WITH\_AES\_256\_GCM\_SHA384
 + TLS\_ECDHE\_RSA\_WITH\_AES\_128\_GCM\_SHA256
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

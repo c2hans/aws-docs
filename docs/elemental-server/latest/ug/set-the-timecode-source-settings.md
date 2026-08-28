@@ -23,3 +23,7 @@ If you set both to **Embedded**, the timecodes in your captions files must begin
 1. On the **Create New Job** page, at the bottom of the **Input** section, find the **Timecode Config** section.
 
 1. For **Source** choose, choose the same value that you set for the input timecode source setting.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

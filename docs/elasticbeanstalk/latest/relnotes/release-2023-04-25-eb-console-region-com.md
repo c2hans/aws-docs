@@ -27,3 +27,7 @@ To manage and monitor the environments of your existing applications, the **Envi
 **Notes**
 The new Elastic Beanstalk console design will roll out to the AWS GovCloud (US) and China Regions at a later date.
 Both the new and old console were available for the beta release that was launched in the US East (N. Virginia) Region. Starting with today's release only the new console design is available in the US East (N. Virginia) Region and the other Regions where it has been released.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

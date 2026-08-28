@@ -46,3 +46,7 @@ As noted in prior sections, the total WCUs used in a rule group, protection pack
 In the AWS WAF console, you can see the capacity consumed when you add rules to your protection pack (web ACL), web ACL, or rule group. The console displays the current capacity units used as you add the rules.
 
 Through the API, you can check the maximum capacity requirements for the rules that you want to use in a protection pack (web ACL), web ACL, or rule group. To do this, provide the JSON listing of the rules to the check capacity call. For more information, see [CheckCapacity](https://docs.aws.amazon.com/waf/latest/APIReference/API_CheckCapacity.html) in the *AWS WAFV2 API Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

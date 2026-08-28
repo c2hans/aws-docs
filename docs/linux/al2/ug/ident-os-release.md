@@ -239,3 +239,7 @@ LOGO=ubuntu-logo
 + `VERSION` – Human-readable version with additional context like codenames or release types
 
  When writing cross-platform scripts, always use the machine-readable fields (`ID`, `VERSION_ID`, `ID_LIKE`) for logic and decisions, and use the human-readable fields (`PRETTY_NAME`, `NAME`) only for displaying information to users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

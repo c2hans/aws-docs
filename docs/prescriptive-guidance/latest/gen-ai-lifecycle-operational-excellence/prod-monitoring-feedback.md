@@ -58,3 +58,7 @@ The power of the feedback loop comes from correlating feedback with the full con
 + `feedback_comment` – An optional string for storing free-text user comments.
 
 This structured schema transforms feedback from a collection of isolated opinions into a powerful dataset that you can query for debugging, analysis, and the creation of new evaluation sets.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

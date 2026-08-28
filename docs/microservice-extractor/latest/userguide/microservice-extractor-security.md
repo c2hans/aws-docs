@@ -96,3 +96,7 @@ AWS Microservice Extractor for .NET provides security features to consider as yo
 
 **Implement least privilege access**
 When you attach the [IAM](#microservice-extractor-security-iam) policies as inline policies to your IAM user, grant only the permissions that are required to perform the specified task. Implementing least privilege access is fundamental in reducing security risk and the impact that could result from errors or malicious intent.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

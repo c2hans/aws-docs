@@ -15,3 +15,7 @@ Your target data provider can be an Amazon RDS DB instance or an Amazon Aurora D
 + [Using a MySQL compatible database as a target for homogeneous data migrations in AWS DMS](dm-data-providers-target-mysql.md)
 + [Using a PostgreSQL database as a target for homogeneous data migrations in AWS DMS](dm-data-providers-target-postgresql.md)
 + [Using an Amazon DocumentDB database as a target for homogeneous data migrations in AWS DMS](dm-data-providers-target-docdb.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

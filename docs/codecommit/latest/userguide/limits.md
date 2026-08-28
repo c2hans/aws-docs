@@ -42,3 +42,7 @@ The following table describes quotas in CodeCommit. For information about quotas
 | Repository tags | Tags are case sensitive. Maximum of 50 per resource. Tag names of exactly 40 hexadecimal characters are not allowed. |
 | Trigger names | Any combination of letters, numbers, periods, underscores, and dashes between 1 and 100 characters in length. Trigger names cannot contain spaces or commas. |
 | User names in commits made in the console | Any combination of allowed characters between 1 and 1,024 characters in length. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

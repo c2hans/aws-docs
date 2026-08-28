@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
  By tying together governance-focused, audit-friendly service features with such certifications, attestations, and audit standards, [AWS Compliance](https://aws.amazon.com/compliance/resources/) builds on traditional programs; helping customers to establish and operate in an AWS security control environment.
 
  For more information about other AWS certifications and attestations, see the [AWS Compliance Programs](https://aws.amazon.com/compliance/pci-data-privacy-protection-hipaa-soc-fedramp-faqs/) webpage. For information about general AWS security controls and service-specific security, see [Best Practices for Security, Identity, and Compliance](https://aws.amazon.com/architecture/security-identity-compliance/?cards-all.sort-by=item.additionalFields.sortDate&cards-all.sort-order=desc&awsf.content-type=*all&awsf.methodology=*all).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

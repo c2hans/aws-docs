@@ -76,3 +76,7 @@ The Amazon Q Drupal connector supports the following entities and the associated
 |  parentEntityId  |  dpl\_parent\_entity\_id  |  All Entities  |  Default  |  String  |
 |  visibility  |  dpl\_visibility  |  All Entities  |  Default  |  String  |
 |  viewId  |  dpl\_view\_id  |  All Entities  |  Default  |  String  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

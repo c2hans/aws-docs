@@ -16,3 +16,7 @@ The `com.amazonaws:ivs-chat-messaging` package implements the interface describe
 **Sample code:** See the Android sample repository on GitHub: [https://github.com/aws-samples/amazon-ivs-chat-for-android-demo](https://github.com/aws-samples/amazon-ivs-chat-for-android-demo)
 
 **Platform requirements:** Android 5.0 (API level 21) or greater is required for development.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

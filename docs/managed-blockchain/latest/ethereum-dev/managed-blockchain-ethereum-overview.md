@@ -15,3 +15,7 @@ Ethereum is a decentralized and programmable blockchain network on which users a
 Ethereum Mainnet has merged with the Beacon chain's proof-of-stake system. Ethereum nodes on Amazon Managed Blockchain (AMB) support this change and require no further action on your part. For more information on using the Consensus API to query the Beacon chain, see [Supported Consensus API methods](supported-consensus-apis.md). For more information on the merge, see [The Merge]( https://ethereum.org/en/upgrades/merge/) topic on the Ethereum website.
 
 This guide covers the how to create and manage Ethereum blockchain resources using Amazon Managed Blockchain (AMB) Access Ethereum. For information about working with AMB Access Hyperledger Fabric, see [Amazon Managed Blockchain (AMB) Hyperledger Fabric Developer Guide](https://docs.aws.amazon.com/managed-blockchain/latest/hyperledger-fabric-dev/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

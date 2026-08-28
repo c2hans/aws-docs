@@ -36,3 +36,7 @@ FLOOR returns null if any input argument is null.
 **Note**
 FLOOR ( <datetime expression> TO <timeunit> ) is an Amazon Kinesis Data Analytics extension.
 The STEP function is similar to FLOOR but can round values down to arbitrary intervals, such as 30 seconds. For more information, see [STEP](sql-reference-step.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ CI/CD pipeline design should account for critical deployment steps such as initi
 Every stage can be considered a separate task, allowing the incorporation of validation and deployment workflows adequate to support network service and cloud-native network functions. Run tasks can incorporate additional third-party tools such as traffic generators and simulators, enabling end-to-end network service validation.
 
 AWS provides a sophisticated [AWS Step Function](https://aws.amazon.com/step-functions/) (cloud-native state machine) service that natively integrates with other AWS Services, and also has the ability to integrate with external systems such as Jira or a test automation framework.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

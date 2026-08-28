@@ -21,3 +21,7 @@ Confirm that gang scheduling is enabled for your cluster. A Ray cluster needs it
 <a name="sagemaker-hyperpod-ray-task-governance-setup-verify"></a>
 
 Create a small `RayCluster` in an allocated namespace and confirm it reaches a running state. If it stays pending, confirm the namespace has a compute allocation with room for the declared cluster size.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

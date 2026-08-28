@@ -41,3 +41,7 @@ The following section presents a number of business use cases that are best solv
 | **Add the type-ahead search behavior for completion or predictions**<br />Supports cost efficient, label-only, and address component. | Autocomplete Suggest | [How to predict suggestions based on input](how-to-predict-suggestions.md) |
 | **Visualize Places search and/or geocode result on a map **All APIs return geocoordinates, except autocomplete.  | GetTile and GetStyleDescriptor with rendering engine (MapLibre) with Places API |  |
 | **Enhance, clean, normalize and standardize your address database**Supports address label, components, timezone, and more.  | Geocode, Reverse Geocode  |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

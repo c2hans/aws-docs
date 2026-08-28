@@ -62,3 +62,7 @@ Transactions and non-repudiation evidence can be stored and encrypted by using [
 Only the operational team should be permitted to access the environment. Any development activities should be streamlined through automatic continuous delivery to prevent any human access to the production environment. For auditing purposes, an additional role should be provisioned to access artifacts and compliance reports on the platform.
 
 AWS can help ensure that you meet regulatory and compliance standards. For more information, see [FINMA ISAE 3000 Type 2 Report](https://aws.amazon.com/compliance/finma/?nc1=h_ls) in the AWS documentation. You can also download relevant banking artifacts directly from [AWS Artifact](https://aws.amazon.com/artifact/), including FINMA Circular 2008/21, FINMA ISAE 3000 Type 2, FINMA Circular 2018/03, and Global Financial Services Regulatory Principles.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

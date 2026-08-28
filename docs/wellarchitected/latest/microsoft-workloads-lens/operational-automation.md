@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/microsoft-workloa
 + [MSFTOPS02-BP02 Implement infrastructure deployment and update automation for your Microsoft workload](msftops02-bp02.md)
 + [MSFTOPS02-BP03 Implement operating system image control](msftops02-bp03.md)
 + [MSFTOPS02-BP04 Leverage managed services for your Microsoft workload](msftops02-bp04.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

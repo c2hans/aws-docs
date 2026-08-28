@@ -73,3 +73,7 @@ When you want to change whether Lightsail automatically renews registration for 
 1. Choose the **Contact info** tab
 
 1. 5. In the **Automatic domain renewal** section, turn the toggle switch on or off to activate or deactivate automatic renewal for the domain’s registration period.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

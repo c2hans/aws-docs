@@ -34,3 +34,7 @@ When you use Sustainability for the first time, you'll be able to view the onboa
 1. On the **Compliance and Sustainability** page, choose **Next**.
 
    You can read through the page to understand what Sustainability offers, or you can choose **Next** to go the Sustainability dashboard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

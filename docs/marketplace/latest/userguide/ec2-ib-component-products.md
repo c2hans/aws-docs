@@ -13,3 +13,7 @@ A component defines the sequence of steps required to either customize an instan
 + Software packages, the dependencies that must be installed for the component to function correctly.
 
 Publishing Image Builder components on AWS Marketplace is supported using the AWS Marketplace Catalog API. For instructions to publish your component using the Catalog API, see [Work with EC2 Image Builder component products](https://docs.aws.amazon.com/marketplace/latest/APIReference/work-with-ec2-image-builder-products.html#publishing-ib-component-listing) in the *AWS Marketplace API Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

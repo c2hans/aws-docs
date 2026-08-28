@@ -156,3 +156,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/alas.html
  There is also a growing set of real-world examples of `updateinfo.xml` files in the [raw-historical-rpm-repository-examples](https://github.com/rpm-software-management/raw-historical-rpm-repository-examples) repository on GitHub.
 
  In case anything is unclear in the documentation, you can open an issue on the GitHub project so that we can answer the question and update the documentation appropriately. As Open Source projects, pull requests updating documentation are also welcome.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

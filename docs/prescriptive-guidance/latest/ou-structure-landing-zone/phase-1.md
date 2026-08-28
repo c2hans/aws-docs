@@ -35,3 +35,7 @@ Several considerations drove this initial design:
 + The company differentiates between five workload environments (development, validation, integration, training, and production). The company needed a playground for developing applications without the strict governance by AWS controls that production workloads required. Development OUs such as the Manufacturing-Dev OU were assigned for this purpose.
 + Workload automation was part of each application's ecosystem and did not need separation.
 + Infrastructure qualification (IQ) and GxP compliance processes did not require a distinction of AWS controls at the OU level.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

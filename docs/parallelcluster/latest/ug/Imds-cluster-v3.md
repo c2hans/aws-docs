@@ -23,3 +23,7 @@ For more information, see [Use IMDSv2](https://docs.aws.amazon.com/AWSEC2/latest
 [Update policy: If this setting is changed, the update is not allowed.](using-pcluster-update-cluster-v3.md#update-policy-fail-v3)
 Starting with AWS ParallelCluster 3.7.0, the `ImdsSupport` default value is `v2.0`. We recommend that you set `ImdsSupport` to `v2.0` and replace IMDSv1 with IMDSv2 in your custom actions calls.
 Support for [`Imds`](#Imds-cluster-v3) / [`ImdsSupport`](#yaml-cluster-Imds-ImdsSupport) is added with AWS ParallelCluster version 3.3.0.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

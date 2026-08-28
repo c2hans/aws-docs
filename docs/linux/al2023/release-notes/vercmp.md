@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/vercmp.html
 + [AL2023.11 upgrades from AL2023.10](vercmp-AL2023.10-AL2023.11.md)
 + [AL2023.12 upgrades from AL2023.11](vercmp-AL2023.11-AL2023.12.md)
 + [AL2023.12 upgrades from AL2023.12](vercmp-AL2023.12-AL2023.12.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

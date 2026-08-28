@@ -144,3 +144,7 @@ Valid status values for RPD connection recordings include the following:
 
 **Note**
 `ProcessingError` can be the result of the `ssm-guiconnect` service principal not having permission to upload objects to the S3 bucket after the connection has been established. Another potential cause is missing KMS permissions on the KMS key used for S3 bucket encryption.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

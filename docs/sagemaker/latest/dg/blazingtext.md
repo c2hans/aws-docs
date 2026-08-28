@@ -203,3 +203,7 @@ For the supervised text classification mode, a C5 instance is recommended if the
 <a name="blazingtext-sample-notebooks"></a>
 
 For a sample notebook that trains and deploys the SageMaker AI BlazingText algorithm to generate word vectors, see [Learning Word2Vec Word Representations using BlazingText](https://sagemaker-examples.readthedocs.io/en/latest/introduction_to_amazon_algorithms/blazingtext_word2vec_text8/blazingtext_word2vec_text8.html). For instructions for creating and accessing Jupyter notebook instances that you can use to run the example in SageMaker AI, see [Amazon SageMaker notebook instances](nbi.md). After creating and opening a notebook instance, choose the **SageMaker AI Examples** tab to see a list of all the SageMaker AI examples. The topic modeling example notebooks that use the Blazing Text are located in the **Introduction to Amazon algorithms** section. To open a notebook, choose its **Use** tab, then choose **Create copy**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

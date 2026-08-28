@@ -205,3 +205,7 @@ The performance of any application using Amazon Nova Canvas depends on the desig
  **Transparency: **Enabling stakeholders to make informed choices about their engagement with an AI system.
 
  **Governance: **Incorporating best practices into the AI supply chain, including providers and deployers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AI Service Cards. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ai` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

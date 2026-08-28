@@ -14,3 +14,7 @@ On the SaaS product page, you can view the list of your products. Depending on i
 + **Restricted** – If you want to stop new users from subscribing to your product, you can restrict the product by using the **Update visibility** change request. A **Restricted** status means that existing users can continue to use the product. However, the product will no longer be visible to the public or be available to new users.
 
 You can update your product at the **Staging**, **Limited**, and **Public** statuses. For more information, see [Updating product information](https://docs.aws.amazon.com/marketplace/latest/userguide/saas-product-settings.html#update-product-information).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

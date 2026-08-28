@@ -15,3 +15,7 @@ You can use organizational view and delegated administrator access to easily man
 For more information on ServiceNow integration using the SMC, see [Integrating AWS Health in ServiceNow](https://docs.aws.amazon.com/smc/latest/ag/sn-aws-health.html).
 
  For more information on JIRA Management Cloud integration using the SMC, see [AWS Health in JIRA](https://docs.aws.amazon.com/smc/latest/ag/cloud-sys-health.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query health` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

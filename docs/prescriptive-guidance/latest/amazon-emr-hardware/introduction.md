@@ -19,3 +19,7 @@ A Hadoop cluster is a specific type of computational cluster that is used for pr
 On Amazon EMR, *elasticity* refers to the dynamic resizing ability. You can automatically scale the cluster and make any changes that you need. You don't have to rely on your initial hardware design.
 
 This guide explains how to design your Amazon EMR cluster based on that elasticity, and it provides best practices to follow when choosing the hardware.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

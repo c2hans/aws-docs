@@ -64,3 +64,7 @@ To configure a PayPal connection:
 <a name="paypal-getting-oauth-20-credentials"></a>
 
 To call the Rest API, you'll need to exchange your client ID and client secret for an access token. For more information, see [Get started with PayPal REST APIs](https://developer.paypal.com/api/rest/) .
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

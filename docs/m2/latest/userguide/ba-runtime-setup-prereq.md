@@ -20,3 +20,7 @@ Before you begin to use the AWS Transform for mainframe Runtime, do the followin
 
 **Note**
 If you want to test the features of AWS Transform for mainframe Runtime , you can use the demo application `Planets Demo`, which you can download from [PlanetsDemo-v1.zip](https://d3lkpej5ajcpac.cloudfront.net/demo/bluage/PlanetsDemo-v1.zip).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

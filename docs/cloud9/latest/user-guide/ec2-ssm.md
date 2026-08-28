@@ -319,3 +319,7 @@ To prevent outbound and inbound traffic for the instance, create and configure A
 **Warning**
 Assume that you configure a security group that doesn't permit inbound or outbound networking traffic. Then, the EC2 instance that supports your AWS Cloud9 IDE doesn't have internet access. You need to create an [Amazon S3 endpoint for your VPC](#configure-s3-endpoint) to allow access to the dependencies that are contained in a trusted S3 bucket. In addition, some AWS services, such as AWS Lambda, might not work as intended without internet access.
 With AWS PrivateLink, there are data processing charges for each gigabyte processed through the VPC endpoint. This is regardless of the traffic’s source or destination. For more information, see [AWS PrivateLink pricing](https://aws.amazon.com/privatelink/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

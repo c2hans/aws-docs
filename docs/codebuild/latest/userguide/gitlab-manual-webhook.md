@@ -30,3 +30,7 @@ Use the following procedure to create a GitLab manual webhook.
    + Configure the individual events that will send a webhook payload to CodeBuild. For **Trigger**, choose from the following events: **Push events**, **Merge request events**, **Releases events**, and **Job events**. To learn more about event types supported by CodeBuild, see [GitLab webhook events](gitlab-webhook.md).
 
 1. Choose **Add webhook**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

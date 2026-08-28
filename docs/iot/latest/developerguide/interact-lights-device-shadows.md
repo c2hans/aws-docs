@@ -354,3 +354,7 @@ You can also subscribe to additional shadow topics to debug issues or learn more
 You can also choose to extend your application by using named shadows or by using additional hardware connected with the Raspberry Pi for the LEDs and observe changes to their state using messages sent from the terminal.
 
 For more information about the Device Shadow service and using the service in devices, apps, and services, see [AWS IoT Device Shadow service](iot-device-shadows.md), [Using shadows in devices](device-shadow-comms-device.md), and [Using shadows in apps and services](device-shadow-comms-app.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

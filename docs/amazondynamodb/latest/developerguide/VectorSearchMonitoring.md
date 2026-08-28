@@ -58,3 +58,7 @@ The minimum applies per request, not per index. A write that updates vectors in 
 As a result, low-dimension vectors do not meter proportionally lower. A vector with a small number of dimensions holds only a few bytes of 32-bit floating point data and is still metered at the 1 KB minimum.
 
 Above the minimum, `VectorSearchRequestBytes` reflects the vector data the search examines within the index, not the size of the query vector you supply. As a result, `VectorSearchRequestBytes` is larger than the query vector alone. Do not estimate vector index cost from dimension count. Use the `VectorSearchRequestBytes` and `VectorWriteRequestBytes` values returned by your own workload, or the corresponding CloudWatch metrics. Validate against a representative dataset before you size a workload.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

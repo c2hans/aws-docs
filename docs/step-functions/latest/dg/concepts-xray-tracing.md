@@ -303,3 +303,7 @@ If you have enabled X-Ray, but can't see any data in the X-Ray console, check th
 + Sampling rules allow sampling of data.
 + Since there can be a short delay before newly created or modified IAM roles are applied, check the trace or service maps again after a few minutes.
 + If you see **Data Not Found** in the X-Ray Traces panel, check your [ IAM account settings](https://console.aws.amazon.com/iam/home?#/account_settings) and ensure that AWS Security Token Service is enabled for the intended region. For more information, see [Activating and deactivating AWS STS in an AWS Region](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_credentials_temp_enable-regions.html#sts-regions-activate-deactivate) in the *IAM User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

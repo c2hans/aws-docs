@@ -33,3 +33,7 @@ After you have performed this procedure, you will have a list of video, audio, a
 | AudioE | Dolby Digital 2.0 in French | AAC 2.0  | Clone | Clone AudioD and change the audio selector (the reference to the source) to the selector for French. Perhaps also change other fields.Don't clone AuduioB because AudioB and AudioA have different output codecs. Therefore, there is no advantage to cloning. |
 | AudioF | Dolby Digital 2.0 in English | AAC 2.0 | Clone | Clone AuduioD and change the audio selector (the reference to the source) to the selector for English. Perhaps also change other fields.Don't clone AudioB because AudioB and AudioF have different output codecs. Therefore, there is no advantage to cloning. |
 | CaptionsD | DVB-Sub (object-style) converted from Teletext, in 6 languages.  | Teletext |  | Create this encode from scratch. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

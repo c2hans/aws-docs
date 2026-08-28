@@ -70,3 +70,7 @@ The third epic involves reconfiguring the new RHEL instance to use the Red Hat U
 + [AWS Application Migration Service (AWS MGN) User Guide](https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html)
 + [Get an AWS RHUI client package supporting IMDSv2](https://access.redhat.com/solutions/5009491) (Red Hat Knowledgebase article)
 + [Amazon EC2 launch templates](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-launch-templates.html) (Amazon EC2 documentation)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -114,3 +114,7 @@ You can set the HPO configuration for the `context_length` hyperparameter if you
  **Feature engineering of related data** - Experiment with different combinations of related time series and item metadata when training your model, and assess whether the additional information improves accuracy. Different combinations and transformations of related time series and item metadata will deliver different results.
 
  **CNN-QR does not forecast at the mean quantile ** – When you set `ForecastTypes` to `mean` with the [ CreateForecast](https://docs.aws.amazon.com/forecast/latest/dg/API_CreateForecast.html) API, forecasts will instead be generated at the median quantile (`0.5` or `P50`).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Forecast. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query forecast` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

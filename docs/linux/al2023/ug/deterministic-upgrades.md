@@ -61,3 +61,7 @@ When we publish a new version of the AL2023 repositories, all previous versions 
 This command starts an update using `dnf` from your current Amazon Linux release version to the release version that's specified in the command line. A list of the package updates is presented by `dnf`. Before the update is processed, you must confirm the update. After the update is complete, the new release version becomes the default release version that `dnf` uses for all future activities.
 
 For more information, see [Manage package and operating system updates in AL2023](managing-repos-os-updates.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

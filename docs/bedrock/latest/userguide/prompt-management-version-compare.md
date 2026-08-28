@@ -22,3 +22,7 @@ The Amazon Bedrock console offers a tool to let you compare versions of a prompt
    + Fields that don't exist in one version, but exist in the other, are marked by a minus (-) symbol and highlighted in red.
 
 1. To compare output model responses for the different versions, fill in the **Test variables** and choose **Run prompt**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

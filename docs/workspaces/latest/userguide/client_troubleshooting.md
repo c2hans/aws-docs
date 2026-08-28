@@ -262,9 +262,9 @@ If you're using a version of the Amazon WorkSpaces Windows client application pr
 
 To address these issues, we recommend upgrading to version 3.1.4 or later of the Windows client application. Starting with version 3.1.4, hardware acceleration is turned off by default in the Windows client application.
 
-However, if you need to enable hardware acceleration in version 3.1.4 or later, for example if you're experiencing slow performance when using the client, see [Manage hardware acceleration](amazon-workspaces-windows-client.md#windows_hardware_acceleration).
+However, if you need to enable hardware acceleration in version 3.1.4 or later, for example if you're experiencing slow performance when using the client, see [Hardware acceleration](https://docs.aws.amazon.com/workspaces/latest/adminguide/client-management-reference-windows.html#enabling-disabling-hardware-acceleration).
 
-If you need to use version 3.1.3 or earlier of the Windows client application, you can disable hardware acceleration in Windows. To disable hardware acceleration for version 3.1.3 or earlier, see [Managing Hardware Acceleration](amazon-workspaces-windows-client.md#hardware_acceleration_313). Disabling hardware acceleration in Windows might affect the performance of other Windows applications.
+If you need to use version 3.1.3 or earlier of the Windows client application, you can disable hardware acceleration in Windows. To disable hardware acceleration for version 3.1.3 or earlier, see [Hardware acceleration](https://docs.aws.amazon.com/workspaces/latest/adminguide/client-management-reference-windows.html#enabling-disabling-hardware-acceleration). Disabling hardware acceleration in Windows might affect the performance of other Windows applications.
 
 ## The WorkSpaces client for Windows prompts to update to a version that is already installed
 <a name="all_users_update_install"></a>
@@ -315,3 +315,7 @@ Users should complete one of the following procedures to uninstall the old versi
 <a name="media-feature-pack"></a>
 
 You might not have the Media Feature Pack installed on Windows, if you're using certain versions of Windows Operating System, such as Windows N. By default, the Media Feature Pack isn't installed on Windows N. To install it, see [ Media Feature Pack for N versions of Windows 10](https://www.microsoft.com/en-us/software-download/mediafeaturepack), choose **Install Instructions**, and follow the instructions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

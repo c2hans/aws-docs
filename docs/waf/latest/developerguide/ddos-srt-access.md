@@ -69,3 +69,7 @@ You don't need to do this for your AWS WAF web ACL logs. The SRT gains access to
 1. Choose **Save** to save your changes.
 
 You can also authorize the SRT through the API by creating an IAM role, attaching the policy AWSShieldDRTAccessPolicy to it, and then passing the role to the operation [AssociateDRTRole](https://docs.aws.amazon.com/waf/latest/DDOSAPIReference/API_AssociateDRTRole.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

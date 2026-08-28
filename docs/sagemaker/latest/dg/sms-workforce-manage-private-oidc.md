@@ -131,3 +131,7 @@ You can update, delete, and describe your OIDC IdP workforce using the SageMaker
   You can only update your OIDC IdP configuration when there are no work teams associated with your workforce. To learn how to delete work teams, see [Delete a work team](#sms-workforce-manage-private-oidc-workteam-delete).
 + [`DeleteWorkforce`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DeleteWorkforce.html) – Use this operation to delete your private workforce. If you have any work teams associated with your workforce, you must delete those work teams before you delete your work force. For more information, see [Delete a work team](#sms-workforce-manage-private-oidc-workteam-delete).
 + [`DescribeWorkforce`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_DescribeWorkforce.html) – Use this operation to list private workforce information, including workforce name, Amazon Resource Name (ARN), and, if applicable, allowed IP address ranges (CIDRs).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

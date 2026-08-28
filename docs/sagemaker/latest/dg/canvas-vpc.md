@@ -217,3 +217,7 @@ The user’s IAM role should now have permissions to access the VPC endpoints co
 If you are an administrator, you might want different users to have different VPC settings, or user-specific VPC settings. When you override the default VPC’s security group settings for a specific user, these settings are passed on to the SageMaker Canvas application for that user.
 
 You can override the security groups that a specific user has access to in your VPC when you set up a new user profile in Studio Classic. You can use the [CreateUserProfile](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateUserProfile.html) SageMaker API call (or [create\_user\_profile](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker.html#SageMaker.Client.create_user_profile) with the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html)), and then in the `UserSettings`, you can specify the `SecurityGroups` for the user.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

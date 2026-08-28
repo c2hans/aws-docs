@@ -151,3 +151,7 @@ This table describes the maximum number of transactions per second (TPS) that ca
 | `[UpdateScheduledAudit API TPS](https://console.aws.amazon.com/servicequotas/home/services/iot/quotas/L-211671C6)` | The maximum number of transactions per second (TPS) that can be made for the UpdateScheduledAudit API. | 5 | No |
 | `[UpdateSecurityProfile API TPS](https://console.aws.amazon.com/servicequotas/home/services/iot/quotas/L-2145354D)` | The maximum number of transactions per second (TPS) that can be made for the UpdateSecurityProfile API. | 10 | No |
 | `[ValidateSecurityProfileBehaviors API TPS](https://console.aws.amazon.com/servicequotas/home/services/iot/quotas/L-88D87918)` | The maximum number of transactions per second (TPS) that can be made for the ValidateSecurityProfileBehaviors API. | 10 | No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

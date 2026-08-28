@@ -170,3 +170,7 @@ The following are the advantages of using Weaviate:
 + It is open source and backed by a strong community.
 + It is built for hybrid search (both vectors and keywords).
 + You can deploy it on AWS as a managed software as a service (SaaS) offering or as a Kubernetes cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

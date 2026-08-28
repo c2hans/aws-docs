@@ -404,3 +404,7 @@ Advisor performs analysis of your cluster's workload and database schema continu
  Copying existing data to the new column can take time. We recommend that you implement each advisor recommendation when the cluster’s workload is light. Reference the list of available data types at [Data types](c_Supported_data_types.md).
 
  Note that Advisor doesn't provide recommendations when there isn't enough data or the expected benefit of changing the data type is small.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

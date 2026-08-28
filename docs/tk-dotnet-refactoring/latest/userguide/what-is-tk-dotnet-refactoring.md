@@ -84,3 +84,7 @@ The Amazon ECS on Fargate task will run the following two containers:
 <a name="linux-active-directory"></a>
 
 Microsoft Active Directory (AD) can act as Kerberos server. Linux Kerberos utilities are used to obtain an authentication token for the application that is ported to .NET Core. The application uses this token to authenticate itself to the dependent services.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

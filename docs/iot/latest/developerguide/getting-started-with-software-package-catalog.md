@@ -23,3 +23,7 @@ You can use the AWS IoT Core API operations to create and manage Software Packag
 + [Creating a software package and package version](creating-package-and-version.md)
 + [Deploying a package version through AWS IoT jobs](deploying-package-version.md)
 + [Associating a package version to an AWS IoT thing](associating-package-version.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

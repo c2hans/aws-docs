@@ -32,3 +32,7 @@ The following data types are supported by AWS Systems Manager Incident Manager C
 +  [TimeRange](API_SSMContacts_TimeRange.md)
 +  [ValidationExceptionField](API_SSMContacts_ValidationExceptionField.md)
 +  [WeeklySetting](API_SSMContacts_WeeklySetting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ The following table shows the models whose customized version you can copy and t
 | Meta | Llama 3.2 1B Instruct | meta.llama3-2-1b-instruct-v1:0 | eu-central-1<br />eu-west-1<br />eu-west-3<br />us-east-1<br />us-east-2<br />us-west-2 |
 | Meta | Llama 3.2 3B Instruct | meta.llama3-2-3b-instruct-v1:0 | us-east-1<br />us-east-2<br />us-west-2 |
 | Meta | Llama 3.2 90B Instruct | meta.llama3-2-90b-instruct-v1:0 | us-east-1<br />us-east-2<br />us-west-2 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

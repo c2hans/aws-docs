@@ -16,3 +16,7 @@ Verify your configuration for the following Group Policy settings. If required, 
 If you are using multi-session fleets, you also need the following Group Policy settings, in addition to the settings specified above.
 + **Computer Configuration > Policies > Windows Settings > Security Settings > Local Policies > User Rights Assignment > Allow log on through Remote Desktop Services** — Set this to **Not defined** or add the domain user/group to this list.
 + **Computer Configuration > Policies > Windows Settings > Security Settings > Local Policies > User Rights Assignment > Deny log on through Remote Desktop Services** — Set this to **Not defined** or make sure that domain users/groups are not included in the list.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

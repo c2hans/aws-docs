@@ -24,3 +24,7 @@ This document lists known issues that you might encounter when using the Amazon 
 + A rare audio-distortion issue may occur intermittently during a stage session, typically on calls of longer durations.
 
   **Workaround:** The participant with distorted audio can either leave and rejoin the session, or unpublish and republish their audio to fix the issue.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

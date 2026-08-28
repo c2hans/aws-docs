@@ -30,3 +30,7 @@ Use the AWS CloudFormation template to set up the parameters required to create 
 For a demonstration of how to integrate Amazon Detective with Amazon Security Lake using the Detective console, watch the following video:
 
 [![AWS Videos](http://img.youtube.com/vi/73ZurSZCZwA/0.jpg)](http://www.youtube.com/watch?v=73ZurSZCZwA)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Detective. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query detective` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

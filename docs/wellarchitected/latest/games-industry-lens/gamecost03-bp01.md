@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Configure Amazon S3 lifecycle policies to transition data between storage classes or use S3 Intelligent-Tiering as a default for automatic cost optimization with changing access patterns.
 +  Use S3 One Zone-Infrequent Access for transient game session data, such as telemetry and matchmaking records, to reduce storage costs by up to 20% while maintaining sufficient availability.
 +  For shared file system needs during development, use Amazon EFS to simplify storage management with elastic capacity and multiple storage classes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

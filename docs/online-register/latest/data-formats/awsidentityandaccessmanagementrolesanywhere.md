@@ -18,3 +18,7 @@ AWS Identity and Access Management Roles Anywhere provides the following APIs fo
 | <a name="rolesanywhere-ListSubjects"></a>[ListSubjects](https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_ListSubjects.html) | List subjects | List |
 | <a name="rolesanywhere-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_ListTagsForResource.html) | List tags for a resource | List |
 | <a name="rolesanywhere-ListTrustAnchors"></a>[ListTrustAnchors](https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_ListTrustAnchors.html) | List trust anchors | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

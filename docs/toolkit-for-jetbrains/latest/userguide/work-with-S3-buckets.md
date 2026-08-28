@@ -46,3 +46,7 @@ Because Amazon S3 allows your bucket to be used as a URL that can be accessed pu
 
 1. Enter the bucket's name to confirm the deletion, and then choose **OK**.
    + If the bucket contains objects, the bucket is emptied before deletion. A notification is displayed after the deletion is complete.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

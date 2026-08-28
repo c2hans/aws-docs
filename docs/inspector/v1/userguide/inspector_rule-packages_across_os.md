@@ -46,3 +46,7 @@ For more information about supported operating systems, see [Amazon Inspector Cl
 | Windows Server 2012 R2 | Supported | Supported | Supported |   | Deprecated |
 | Windows Server 2012 | Supported | Supported | Supported |   | Deprecated |
 | Windows Server 2008 R2 | Supported | Supported | Supported |   | Deprecated |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,3 +31,7 @@ This guide is aligned to existing resources related to this topic, including the
 This guide is best suited for company that wants or needs to transition to multiple AWS accounts. For startups, this need typically arises when you have found product-market fit, raised a round of funding, and are beginning to hire distinct engineering disciplines, such as infrastructure, development operations (DevOps), or security.
 
 Even if your company isn't ready to make this transition, you can still use this guide to understand the decisions that need to be made during the transition and begin to prepare.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

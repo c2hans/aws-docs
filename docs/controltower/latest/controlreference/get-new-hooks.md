@@ -22,3 +22,7 @@ Repeat this procedure for each OU that has proactive controls enabled, if those 
 
 **Important**
 The **Reset** function resets control drift. **Reset** operates differently for proactive controls than for any other type of control in AWS Control Tower. When you reset any enabled proactive control on an OU, all of the enabled proactive controls for that OU are reset. This behavior happens because the artifacts for all enabled proactive controls are bundled together, and they are deployed together, each time the `ResetEnabledControl` API is called.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

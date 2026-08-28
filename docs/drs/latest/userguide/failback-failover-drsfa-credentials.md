@@ -23,3 +23,7 @@ To create temporary credentials:
 <a name="failback-failover-drsfa-cloudwatch"></a>
 
 After generating credentials, create a CloudWatch log group named **DRS\_Mass\_Failback\_Automation**. If this log group does not exist or has the wrong name, the DRSFA client still works but does not send logs to CloudWatch. Learn more about working with log groups in the [Amazon CloudWatch Logs documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

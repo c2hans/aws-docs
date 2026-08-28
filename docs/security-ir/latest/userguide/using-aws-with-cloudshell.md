@@ -12,3 +12,7 @@ You [launch AWS CloudShell from the AWS Management Console](https://docs.aws.ama
 **Topics**
 + [Obtaining IAM permissions for AWS CloudShell](cloudshell-permissions.md)
 + [Interacting with Security Incident Response using AWS CloudShell](cshell-examples.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

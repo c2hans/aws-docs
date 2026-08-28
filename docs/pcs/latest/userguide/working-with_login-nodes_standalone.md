@@ -22,3 +22,7 @@ You can set up independent EC2 instances to interact with an AWS PCS cluster's S
 + [Step 4 – Retrieve and store the cluster secret](working-with_login-nodes_standalone_get-secret.md)
 + [Step 5 – Configure the connection to the AWS PCS cluster](working-with_login-nodes_standalone_configure-connection.md)
 + [Step 6 – (Optional) Test the connection](working-with_login-nodes_standalone_test.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

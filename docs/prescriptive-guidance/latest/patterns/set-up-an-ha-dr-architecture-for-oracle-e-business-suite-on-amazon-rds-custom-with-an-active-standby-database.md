@@ -95,3 +95,7 @@ SUCCESS   (status updated 58 seconds ago)
 + [Amazon RDS Custom for Oracle – New Control Capabilities in Database Environment](https://aws.amazon.com/blogs/aws/amazon-rds-custom-for-oracle-new-control-capabilities-in-database-environment/) (AWS News blog)
 + [Migrating Oracle E-Business Suite on AWS](https://d1.awsstatic.com/whitepapers/migrate-oracle-e-business-suite.pdf) (AWS whitepaper)
 + [Oracle E-Business Suite architecture on AWS](https://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-business-suite/oracle-e-business-suite-architecture-on-aws.html) (AWS whitepaper)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

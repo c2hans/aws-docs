@@ -32,3 +32,7 @@ You can only monitor domains that you've verified. For more information about ve
 The **Predictive inbox placement tests** section shows you how many Predictive inbox placement tests that you've performed in the current month. Your subscription includes 25 tests. You can purchase additional tests for an additional fee.
 
 For more information about Deliverability dashboard pricing, see [Amazon Pinpoint pricing](https://aws.amazon.com/pinpoint/pricing/#Deliverability_Dashboard).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

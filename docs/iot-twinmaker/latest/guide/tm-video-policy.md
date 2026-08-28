@@ -201,3 +201,7 @@ The Video Player panel in Grafana ingests data into the measurement property, na
 ```
 
 This statement restricts ingesting data to a specific property of your tagged AWS IoT SiteWise camera asset. For more information, see [How AWS IoT SiteWise works with IAM](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/security_iam_service-with-iam.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

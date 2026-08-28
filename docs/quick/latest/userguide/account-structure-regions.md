@@ -36,3 +36,7 @@ Your home Region is the AWS Region that you select when you set up your Amazon Q
 Your home Region also sets your default capacity behavior. Amazon Quick automatically creates your index in your home Region with auto-scaling, and your Index capacity allocation is billed against your home Region. If you provision Index capacity in Regions beyond your home Region, that capacity is billed as overage.
 
 For the list of supported Regions, and for how Amazon Q in Quick processes AI inference across Regions within your geography, see [AWS Regions, websites, IP address ranges, and endpoints](regions.md) and [Cross-Region inference for Australia, Japan, Europe, and the United States](regions.md#cross-region-inference).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

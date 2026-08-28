@@ -76,3 +76,7 @@ aws docdb create-db-cluster ^
 <a name="w2aac31c11c13c17"></a>
 
 With Amazon DocumentDB, you have the flexibility to choose your storage configuration for every database cluster you have. In order to properly allocate your clusters between standard and I/O-optimized, you can track your Amazon DocumentDB costs cluster-wise. To do so, you can add tags to existing clusters, enable cost allocation tagging in your [AWS Billing and Cost Management dashboard](https://aws.amazon.com/pricing/), and analyze your costs for a given cluster in the [AWS Cost Explorer Service](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/). For information on cost analysis, see our blog [Using cost allocation tags](https://aws.amazon.com/blogs/database/using-cost-allocation-tags-with-amazon-documentdb-with-mongodb-compatibility/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,3 +45,7 @@ Given two nodes, node1 and node2, the following examples are from the perspectiv
 + [Exporting working keys](as2805.workingkeys.export.md)
 + [Pin Translation](as2805.pintranslation.md)
 + [Mac Generation and Validation](as2805.mac.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,3 +39,7 @@ To modify or remove a Transfer team, do the following:
 1. To add or remove personnel, select the **personnel** tab and complete the steps described in the *How do I modify, add, or remove personnel from my account?* section of this FAQ.
 
 1. To add or cancel a reservation for the selected Transfer team, refer to the [Updating personnel on your Data Transfer Terminal account](addusers.md#edit-users) section of this FAQ.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Transfer Terminal. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datatransferterminal` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

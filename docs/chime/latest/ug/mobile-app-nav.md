@@ -34,3 +34,7 @@ The commands on the menu vary depending on the item that you tap. When you tap t
 When you join a meeting, a vertical ellipsis icon appears in the upper-right corner of the app window. ![Vertical ellipsis icon representing a menu or more options.](http://docs.aws.amazon.com/chime/latest/ug/images/mobile-kebab-menu.png)
 When you chat with someone or enter a chat room, a horizontal ellipsis icon appears in the upper-right corner. ![Horizontal ellipsis icon with three blue dots arranged horizontally.](http://docs.aws.amazon.com/chime/latest/ug/images/mobile-horiz-ellipse.jpg)
 Choosing either type of ellipsis opens a menu of options for meetings and chats. To learn more about these options, see [Additional meeting actions](mobile-mtg-options.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

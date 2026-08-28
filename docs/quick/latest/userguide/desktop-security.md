@@ -54,15 +54,18 @@ Amazon Quick on desktop uses industry-standard security practices for third-part
 
 The Amazon Quick desktop application makes outbound connections for discovery and data plane operations, remote configuration, application updates, and identity provider authentication. In restricted network environments, add the following domains to your allow list so that the application can operate.
 
-| Category | Domains | Purpose |
-| --- | --- | --- |
-| Amazon Quick Service | \*.quicksight.aws.amazon.com, \*.aws.dev | Discovery, data plane (inference, search, Quick resources) |
-| Remote configuration | \*.cloudfront.net | Feature flags, admin controls |
-| Auto-update | \*.cloudfront.net | Application updates |
-| Telemetry | cognito-identity.\*.amazonaws.com | Usage and operational telemetry |
-| Identity provider | Customer-specific (for example, login.microsoftonline.com or \*.okta.com) | OIDC authentication |
+| Category | Domains | Wildcard meaning | Purpose |
+| --- | --- | --- | --- |
+| Amazon Quick console | \*.quicksight.aws.amazon.com | \* = AWS Region (for example, us-east-1) | Web console, resource discovery |
+| Amazon Quick data plane | \*.dp.appintegrations.\*.prod.plato.ai.aws.dev | First \* = per-account cell ID. Second \* = AWS Region. | Inference, streaming, search |
+| Amazon Quick enterprise gateway | \*.desktop.enterprise.quick.aws.dev | \* = multi-level subdomain (<cell>.<stage>.<region>) | Enterprise account bidirectional streaming |
+| Remote configuration and updates | \*.cloudfront.net | \* = CloudFront distribution ID | Feature flags, application updates, Quick Apps content |
+| Telemetry | cognito-identity.\*.amazonaws.com | \* = AWS Region | Operational telemetry |
+| Identity provider | Customer-specific (for example, login.microsoftonline.com) | Not applicable | Enterprise SSO authentication |
 
-If the application cannot sign in, load content, or update in a restricted environment, verify that these domains are reachable, and check your firewall and VPN settings, which might block the required connections.
+For strict proxy environments that can't use wildcards, you can determine the account-specific cell hostname after you first sign in. It follows the pattern `<cell-id>.dp.appintegrations.<region>.prod.plato.ai.aws.dev`, where `<cell-id>` is a stable per-account identifier and `<region>` is the account's home region.
+
+If the application cannot sign in, load content, or update in a restricted environment, verify that these domains are reachable, and check your firewall and VPN settings.
 
 ## Privacy controls
 <a name="desktop-privacy-controls"></a>
@@ -73,3 +76,7 @@ Amazon Quick on desktop provides privacy controls that let you manage whether Qu
 <a name="desktop-clearing-data"></a>
 
 If you need to completely reset Amazon Quick on desktop, you can use the **Clear all data** option in **Settings** > **Customization** > **Danger zone**. This action is irreversible and removes all conversations, knowledge graph data, saved credentials, and user preferences. For more information, see [Danger zone](desktop-settings.md#desktop-settings-danger-zone).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

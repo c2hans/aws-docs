@@ -45,3 +45,7 @@ To get your account API endpoint, see [`MediaConvert.describeEndpoints`](https:/
 Make sure you specify the same Region in your code as the Region in the custom endpoint URI. A mismatch between the Region setting and the custom endpoint URI can cause API calls to fail.
 
 For more information on MediaConvert, see the [`AWS.MediaConvert`](https://docs.aws.amazon.com/AWSJavaScriptSDK/latest/AWS/MediaConvert.html) class in the API Reference or the * [AWS Elemental MediaConvert User Guide](https://docs.aws.amazon.com/mediaconvert/latest/ug/) *.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for JavaScript SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

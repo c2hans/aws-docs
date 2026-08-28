@@ -24,3 +24,7 @@ Input failback follows this rule:
 When the input becomes healthy, MediaLive might automatically switch to the healthy input:
 + If the currently active input is the secondary input, MediaLive either stays on the current input (if the **Input preference** setting is **EQUAL\_INPUT\_PREFERENCE**) or switches to the primary input (if the **Input preference** setting is **PRIMARY\_INPUT\_PREFERENCE**).
 + If the active input is the primary input, it always stays on the input.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

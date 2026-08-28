@@ -37,3 +37,7 @@ Use the following metrics to monitor the number of callbacks in your business:
 + [Callback contacts](metrics-definitions.md#callback-contacts): This metric represents the count of contacts that were initiated from a queued callback. That is, how many customers opted for queued callback.
 + [Callback contacts handled](metrics-definitions.md#callback-contacts-handled): This metric counts the contacts that were initiated from a queued callback and handled by an agent. That is, how many of the callbacks were answered.
 + [Callback attempts](metrics-definitions.md#callback-attempts): This metric represents the number of contacts where a callback was attempted, but the customer did not pick up.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

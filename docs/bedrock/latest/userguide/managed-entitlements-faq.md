@@ -114,3 +114,7 @@ A: Verify the recipient is checking License Manager in the us-east-1 Region. Con
 **Q: Why can't I activate a grant in my account?**
 
 A: Check that the grant is in Disabled or Pending Acceptance state. If you already have an active license for the same model, deactivate or delete it first. Make sure you have the `license-manager:CreateGrantVersion` IAM permission. For consolidated billing organizations, confirm you accepted the grant before attempting activation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

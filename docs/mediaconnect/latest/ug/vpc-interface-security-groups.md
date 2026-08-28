@@ -16,3 +16,7 @@ To ensure that content can flow between your VPC and MediaConnect, adhere to the
 | A VPC source and a VPC output from the same VPC interface | An inbound rule and an outbound rule that meet the requirements listed above.  | You can use one security group that has both rules or two security groups (one for each rule).<br />For CDI flows, the security group specified for the VPC interfaces must be self referential. Verify that the security group used has the same security group ID added to both inbound and outbound rules. |
 
 For more information about security groups, see the [Amazon VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_SecurityGroups.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

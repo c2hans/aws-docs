@@ -231,3 +231,7 @@ AMS provides several avenues for you to ask for help.
   1. Further escalation would be to the AMS Director: ams-director@amazon.com
 
   1. Finally, you are always able to reach the AMS VP: ams-vp@amazon.com
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

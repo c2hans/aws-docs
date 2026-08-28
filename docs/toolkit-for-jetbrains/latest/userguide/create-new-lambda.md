@@ -30,3 +30,7 @@ If the **Lambda** icon isn't displayed in the gutter next to the function handle
   After you choose **Create Function**, the AWS Toolkit for JetBrains creates a corresponding function in the Lambda service for the connected AWS account. If the operation succeeds, after you refresh **AWS Explorer**, the new function's name appears in the **Lambda** list.
 
 After you create the function, you can run (invoke) or debug the local version of the function or run (invoke) the remote version.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

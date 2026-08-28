@@ -255,3 +255,7 @@ This guide will use the Feature-First approach to structure the app. We will cre
 <a name="conclusion"></a>
 
 In this module, you learned how to create a Flutter app. You also learned how to set its folder structure using the Feature-First approach. Additionally, you created constant variables for the app to use to set its routes and colors. Finally, you used the Amplify CLI to provision a cloud backend for the app.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

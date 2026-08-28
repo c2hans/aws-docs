@@ -107,3 +107,7 @@ A *MessageAttribute* is a map of string keys to string values. A response from a
 + **CHIME.LEX.sessionState.sessionId** – A unique identifier for a conversation between the user and the bot. When a user starts a chat with your bot, Amazon Lex creates a session.
 For more information about Amazon Lex sessions and session states, refer to [SessionState](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_runtime_SessionState.html) in the *Amazon Lex API Reference*, and [Managing sessions](https://docs.aws.amazon.com/lexv2/latest/dg/using-sessions.html) in the *in the Amazon Lex V2 Developer Guide*
 For more information about the attributes that Amazon Lex V2 returns, refer to the [Amazon Lex Runtime V2](https://docs.aws.amazon.com/lexv2/latest/APIReference/API_Operations_Amazon_Lex_Runtime_V2.html) APIs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -124,3 +124,7 @@ Capturing and analyzing events from logs and metrics is crucial to gaining visib
 <a name="better-incident-response-and-investigative-handling.4798f15a-a8f3-5763-92fd-9dc4f6414c98"></a>
 
 Automation of detective control tools can increase the speed of detection, investigation, and recovery. Automated alerting and notifications based on defined conditions enable security analysts to investigate and respond appropriately. These responsive factors can help you identify and understand the scope of anomalous activity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ The solution provides a unified observability framework that seamlessly integrat
 PowerConnect for SAP on Dynatrace product [documentation details](https://www.dynatrace.com/hub/detail/powerconnect-for-sap-on-dynatrace-1/) comprehensive technical details along with installation and configuration steps. You can procure your [Dynatrace tenant from AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-si2angoettdnc?sr=0-1&ref_=beagle&applicationId=AWSMPContessa), along with obtaining PowerConnect license from Rhondos, via the [AWS marketplace](https://aws.amazon.com/marketplace/pp/prodview-bdpl5zjkasukg).
 
 Disclaimer: Dynatrace, Grail, and the Dynatrace logo are trademarks of the Dynatrace, Inc. group of companies. All other trademarks are the property of their respective owners.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

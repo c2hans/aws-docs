@@ -36,3 +36,7 @@ The following tutorial shows you how to create an AWS Systems Manager Parameter 
 [Use a base image parameter in your recipe](tutorial-ssm-parameters-recipe.md)
 
 You can also use Parameter Store parameters in AMI distribution settings to store your output image ID, and in custom components. For more information, see [Create and update AMI distribution configurations](cr-upd-ami-distribution-settings.md) for distributions, and [Use Systems Manager Parameter Store parameters](toe-user-defined-variables.md#toe-ssm-parameters) for custom components.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ The operating system that you installed on your virtual machine (VM) has a utili
 1. Repeat these steps for each VM.
    + Make sure to repeat step 1 for each AWS Elemental Conductor File activation key file that you want to generate: each key file must contain the hostname of the individual VM.
    + Make sure to use a different activation code on each VM.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor File. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cf2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

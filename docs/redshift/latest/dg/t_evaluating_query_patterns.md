@@ -16,3 +16,7 @@ To make good choices for distribution styles, you must understand the query patt
  Identify the tables that are used by the most costly queries, and evaluate their role in query runtime. Consider how the tables are joined and aggregated.
 
  Use the guidelines in this section to choose a distribution style for each table. When you have done so, create the tables and load them with data that is as close as possible to real data. Then test the tables for the types of queries that you expect to use. You can evaluate the query explain plans to identify tuning opportunities. Compare load times, storage space, and query runtimes to balance your system's overall requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -205,3 +205,7 @@ See the following documentation to learn more about using the AWS IoT applicatio
 + To learn more about using AWS IoT TwinMaker with the AWS IoT app kit, see [Create a customized web application using AWS IoT TwinMaker UI Components](tm-app-kit.md).
 + To learn more about using AWS IoT application kit, please visit [AWS IoT Application kit Github](https://github.com/awslabs/iot-app-kit) page.
 + For instructions on how to start a new web application using AWS IoT application kit, please visit the official [IoT App Kit](https://awslabs.github.io/iot-app-kit/?path=/docs/introduction--docs) documentation page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

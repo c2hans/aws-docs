@@ -34,3 +34,7 @@ To develop a custom blueprint in your CodeCatalyst space, you must be signed in 
    You can also view the blueprints SDK and sample blueprints for additional support when developing your custom blueprint. For more information, see the [open-source GitHub repository](https://github.com/aws/codecatalyst-blueprints).
 
 Custom blueprints provide preview bundles as a result of a successful synthesis. The project bundle represents the source code, configuration, and resources in a project, and it's used by CodeCatalyst deployment API operations to deploy into a project. If you want to continue developing your custom blueprint, rerun the blueprint synthesis process. For more information, see [Custom blueprints concepts](custom-bp-concepts.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

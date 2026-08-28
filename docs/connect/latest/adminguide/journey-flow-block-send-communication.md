@@ -124,3 +124,7 @@ You can use an **Invoke Lambda** block earlier in the journey flow to determine 
 ![The From field set dynamically with Namespace set to Lambda invocation, Key set to Result data, and Attribute set to sourcePhoneNumber.](http://docs.aws.amazon.com/connect/latest/adminguide/images/send-communication-dynamic-from-lambda.png)
 
 Your Lambda function can use any logic to determine the source address. Use any field name in the Lambda response, as long as it matches what you specify in the **From** field's dynamic reference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

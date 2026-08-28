@@ -45,3 +45,7 @@ using 10,000 samples:
 ```
 
 Make sure that your maximum row size doesn't exceed 1 MB. If it does, you have to break up the row or compress the data to bring the row size below 1 MB. In the next step of this tutorial, you use the average row size to provision the write capacity for the table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

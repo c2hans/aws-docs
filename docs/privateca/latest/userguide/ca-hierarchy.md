@@ -132,3 +132,7 @@ For more information about certificate templates, see [Use AWS Private CA certif
 <a name="using-cloudformation"></a>
 
 When you have settled on a design for your CA hierarchy, you can test it and put it into production using a AWS CloudFormation template. For an example of such a template, see [Declaring a Private CA Hierarchy](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-acmpca-certificateauthority.html#aws-resource-acmpca-certificateauthority--examples) in the *CloudFormation User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

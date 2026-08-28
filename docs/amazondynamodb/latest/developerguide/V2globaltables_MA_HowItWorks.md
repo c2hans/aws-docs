@@ -71,3 +71,7 @@ If `ReplicationLatency` exceeds 3 hours due to customer-induced issues on a repl
 + Denying the table's AWS KMS key permissions required to decrypt data
 
 DynamoDB sends an initial notification within 3 hours of elevated replication latency, followed by a second notification after 20 hours if the issue remains unresolved. If the problem is not corrected within the required time window, DynamoDB will automatically disassociate the replica from the global table. The affected replica will then be converted to a regional table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

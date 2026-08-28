@@ -56,3 +56,7 @@ To fix this problem for JetBrains, manually install AWS Toolkit for JetBrains fr
 To fix this problem for VS Code, check that you have latest version of VS Code and AWS Toolkit for Visual Studio Code installed. If you don't have the latest version, update and launch your Dev Environment. For more information, see [Amazon CodeCatalyst for VS Code](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/codecatalyst-service.html).
 
 To fix this problem for JetBrains, check that you have latest version of JetBrains and AWS Toolkit for JetBrains installed. If you don't have the latest version, update and launch your Dev Environment. For more information, see [Amazon CodeCatalyst for JetBrains](https://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/codecatalyst-overview.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

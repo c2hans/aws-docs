@@ -370,3 +370,7 @@ For more information about NCBI API keys and rate limits, see the [NCBI Datasets
 1. **Plan for Availability Zones.** Ensure that your subnets span the Availability Zones where HealthOmics operates to support workflow placement.
 
 1. **Use NAT gateways in each AZ.** For production workloads, deploy a NAT gateway in each Availability Zone to provide redundancy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

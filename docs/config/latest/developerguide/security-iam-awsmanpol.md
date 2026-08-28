@@ -250,3 +250,7 @@ View details about updates to AWS managed policies for AWS Config since this ser
 | [AWS\_ConfigRole](#security-iam-awsmanpol-AWS_ConfigRole) – Add ssm:ListDocuments permission and additional permissions for AWS resource types | This policy now grants permission to view information about AWS Systems Manager specified documents. This policy also now supports additional AWS resource types for AWS Backup, Amazon Elastic File System, Amazon ElastiCache, Amazon Simple Storage Service (Amazon S3), Amazon Elastic Compute Cloud (Amazon EC2), Amazon Kinesis, Amazon SageMaker AI, AWS Database Migration Service, and Amazon Route 53. These permission changes allow AWS Config to invoke the read-only APIs required to support these resource types.  | April 1, 2021 |
 | `AWSConfigRole` is deprecated | `AWSConfigRole` is deprecated. The replacement policy is `AWS_ConfigRole`. | April 1, 2021 |
 | AWS Config started tracking changes | AWS Config started tracking changes for its AWS managed policies. | April 1, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Config. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query config` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

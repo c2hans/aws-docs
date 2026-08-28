@@ -99,3 +99,7 @@ To minimize the duration of storage scaling and avoid reduction in write perform
 <a name="modifying-throughput-capacity"></a>
 
 Updating throughput capacity interrupts availability for a few minutes for Single-AZ file systems and causes failover and failback for Multi-AZ file systems. For Multi-AZ file systems, if there is ongoing traffic during failover and failback, any data changes made during this time will need to be synchronized between the file servers. The data synchronization process can take up to multiple hours for write-heavy and IOPS-heavy workloads. Although your file system will continue to be available during this time, we recommend scheduling maintenance windows and performing throughput capacity updates during idle periods when there is minimal load on your file system to reduce the duration of data synchronization. To learn more, see [Managing throughput capacity](managing-throughput-capacity.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ For details on offerings from AWS Partners, see:
 + AWS[ Migration Partner Solutions](https://aws.amazon.com/migration/partner-solutions/)
 + [Migration solutions in ](https://aws.amazon.com/marketplace/search/results?searchTerms=migration)AWS Marketplace
 + [A Tools Catalog for Accelerating Migration with Automation](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-tools/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

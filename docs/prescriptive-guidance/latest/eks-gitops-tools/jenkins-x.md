@@ -47,3 +47,7 @@ where:
 + **Step 1: Pull request (PR) merge**. A developer creates a pull request that includes changes to Kubernetes manifests, Helm charts, or application code that's stored in a Git repository. After review and approval, the PR is merged into the main branch and updates the desired state in source control.
 + **Step 2: Repository sync**. Jenkins X automatically triggers a CI/CD pipeline when it detects the change. The pipeline builds, tests, and promotes the application through different environments (for example, staging and production) by using GitOps principles.
 + **Step 3: Deployment to target namespaces**. Jenkins X updates the environment repositories (staging and production) with the new application versions. The cluster automatically reconciles the changes by pulling the latest manifests from Git and deploying the application to the appropriate namespaces.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

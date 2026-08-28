@@ -37,3 +37,7 @@ Workload identities are created automatically in several scenarios and can also 
 Workload identities are used to obtain workload access tokens that authorize agent access to credentials. For details about how workload identities are used in the authentication flow, see [Get workload access token](get-workload-access-token.md).
 
 Once you have created workload identities, you can use them to control access to credential providers. For information about implementing fine-grained access control, see [Scope down access to credential providers by workload identity](scope-credential-provider-access.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -69,3 +69,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
  Here, we have two tenants (Tenant 1 and Tenant 2) that are leveraging a silo model, and the remaining tenants are running in a pooled storage model. This is magically abstracted away by a data access layer that hides developers from the tenant’s underlying storage.
 
  Although this can add a level of complexity to your data access layer and management profile, it can also offer your business a way to tier your offering to represent the best of both worlds.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

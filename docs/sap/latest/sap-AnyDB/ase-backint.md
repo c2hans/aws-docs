@@ -95,3 +95,7 @@ All major and minor versions that are currently supported for SAP ASE are suppor
 <a name="ase-backint-regions"></a>
 
  AWS Backint agent is available in all commercial Regions. China (Beijing), China (Ningxia), and GovCloud are not supported.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

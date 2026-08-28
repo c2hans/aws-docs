@@ -86,3 +86,7 @@ Amazon EC2 features convertible RIs, however, Savings Plans should be used for a
 + [COST07-BP03 Select third-party agreements with cost-efficient terms](cost_pricing_model_third_party.md)
 + [COST07-BP04 Implement pricing models for all components of this workload](cost_pricing_model_implement_models.md)
 + [COST07-BP05 Perform pricing model analysis at the management account level](cost_pricing_model_master_analysis.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

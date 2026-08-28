@@ -57,3 +57,7 @@ View details about updates to AWS managed policies for Toolkit for .NET Refactor
 | [AWSRefactoringToolkitSidecarPolicy](#AWSRefactoringToolkitSidecarPolicy) – Updated policy | Added permissions to open a data channel to transfer files to the customer's container. | October 29, 2022 |
 | [AWSRefactoringToolkitFullAccess](#AWSRefactoringToolkitFullAccess) – New policy | Added the `AWSRefactoringToolkitFullAccess` policy. | October 25, 2022 |
 | [AWSRefactoringToolkitSidecarPolicy](#AWSRefactoringToolkitSidecarPolicy) – New policy | Added the AWSRefactoringToolkitSidecarPolicy policy. | October 25, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

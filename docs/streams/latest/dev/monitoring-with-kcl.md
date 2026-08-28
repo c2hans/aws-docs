@@ -259,3 +259,7 @@ The `ProcessTask` operation calls [GetRecords](https://docs.aws.amazon.com/kines
 | RecordProcessor.processRecords.Time | Time taken by the record processor’s `processRecords` method.<br />Metric level: Summary<br />Units: Milliseconds |
 | Success | Number of successful process task operations.<br />Metric level: Summary<br />Units: Count |
 | Time | Time taken for the process task operation.<br />Metric level: Summary<br />Units: Milliseconds |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

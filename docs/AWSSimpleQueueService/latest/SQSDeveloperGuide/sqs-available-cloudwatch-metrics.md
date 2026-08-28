@@ -89,3 +89,7 @@ Monitor SQS effectively using key metrics and CloudWatch alarms to detect queue 
 + Monitor `NumberOfEmptyReceives` to tune poll frequency and reduce API cost.
 + Use `ApproximateNumberOfGroupsWithInflightMessages` in FIFO queues to diagnose throughput limits.
 + Review [SQS quotas](sqs-quotas.md) to understand metric thresholds and service limits.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

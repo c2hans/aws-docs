@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/evaluate-do
 The general logic described in this guide applies to Oracle versions from 9i and later. However, AWS SCT supports only Oracle Database versions 10g and later. To identify feature usage in cases where AWS SCT is not supported, run SQL queries on the source database.
 
 For a current list of supported versions and editions, see [Oracle on Amazon RDS](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Oracle.html) in the AWS documentation. For details on pricing and supported instance classes, see [Amazon RDS for Oracle pricing](https://aws.amazon.com/rds/oracle/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

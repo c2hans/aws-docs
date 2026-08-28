@@ -20,3 +20,7 @@ When you want to run a state machine, AWS Batch opens the **New execution** page
 1. (Optional) Edit the state machine and choose **Start execution**.
 
 For more information about running state machines, see [Step Functions state machine execution concepts](https://docs.aws.amazon.com/step-functions/latest/dg/concepts-state-machine-executions.html) in the *AWS Step Functions Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -113,3 +113,7 @@ Output example:
 <a name="setup-audit-manager-next-steps"></a>
 
 After you enable Audit Manager, we recommend that you set up some recommended features and integrations for an optimal experience. For more information, see [Enabling the recommended features and AWS services for AWS Audit Manager](setup-recommendations.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

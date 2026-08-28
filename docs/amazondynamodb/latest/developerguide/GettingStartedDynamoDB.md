@@ -36,3 +36,7 @@ Before starting the Amazon DynamoDB tutorial, learn about the ways you can acces
 If you plan to interact with DynamoDB only through the AWS Management Console, you don't need an AWS access key. Complete the steps in [Signing up for AWS](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/SettingUp.DynamoWebService.html#SettingUp.DynamoWebService.SignUpForAWS), and then continue on to [Step 1: Create a table in DynamoDB](getting-started-step-1.md).
 If you don't want to sign up for a free tier account, you can set up [DynamoDB local (downloadable version)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DynamoDBLocal.html). Then continue on to [Step 1: Create a table in DynamoDB](getting-started-step-1.md).
 There are differences when working with CLI commands in terminals on Linux and Windows. The following guide presents commands formatted for Linux terminals (this includes macOS), and commands formatted for Windows CMD. Choose the command that best fits the terminal application you are using.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

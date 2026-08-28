@@ -63,3 +63,7 @@ To prepare data for upload to Amazon S3, your gateway also stores incoming data 
 You can take incremental backups, called *snapshots*, of your storage volumes. The gateway stores these snapshots in Amazon S3 as Amazon EBS snapshots. When you take a new snapshot, only the data that has changed since your last snapshot is stored. When the snapshot is taken, the gateway uploads the changes up to the snapshot point, then creates the new snapshot using Amazon EBS. You can initiate snapshots on a scheduled or one-time basis. A single volume supports queueing multiple snapshots in rapid succession, but each snapshot must finish being created before the next can be taken. When you delete a snapshot, only the data not needed for any other snapshot is removed.
 
 You can restore an Amazon EBS snapshot to an on-premises gateway storage volume if you need to recover a backup of your data. You can also use the snapshot as a starting point for a new Amazon EBS volume, which you can then attach to an Amazon EC2 instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

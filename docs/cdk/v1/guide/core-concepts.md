@@ -10,3 +10,7 @@ This is the AWS CDK v1 Developer Guide. The older CDK v1 entered maintenance on 
 This topic describes some of the concepts (the why and how) behind the AWS CDK. It also discusses the AWS Construct Library.
 
 AWS CDK apps are composed of building blocks known as [Constructs](constructs.md), which are composed together to form [stacks](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.Stack.html) and [apps](https://docs.aws.amazon.com/cdk/api/v2/docs/@aws-cdk_core.App.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

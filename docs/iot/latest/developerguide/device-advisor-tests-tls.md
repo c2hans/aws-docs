@@ -214,3 +214,7 @@ Validates that the device under test closes the connection if it's presented wit
 + **Pass** — The device under test refuses to complete the TLS handshake with AWS IoT. The device sends a TLS alert message before it closes the connection.
 + **Pass with warnings** — The device under test refuses to complete the TLS handshake with AWS IoT. However, it doesn’t send a TLS alert message before it closes the connection.
 + **Fail** — The device under test completes the TLS handshake with AWS IoT.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

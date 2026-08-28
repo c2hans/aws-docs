@@ -16,3 +16,7 @@ To prepare your training script and run training jobs with SageMaker Debugger to
 + [SageMaker Debugger interactive report for XGBoost](debugger-report-xgboost.md)
 + [Action on Amazon SageMaker Debugger rules](debugger-action-on-rules.md)
 + [Visualize Amazon SageMaker Debugger output tensors in TensorBoard](debugger-enable-tensorboard-summaries.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

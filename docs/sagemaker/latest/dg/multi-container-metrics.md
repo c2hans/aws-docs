@@ -23,3 +23,7 @@ The following table lists the per-container metrics for multi-container endpoint
 |  MemoryUtilizaton  |  The percentage of memory that is used by each container running on an instance. This value ranges from 0% to 100%. Similar as CPUUtilization, in endpoints with direct invocation, the number of MemoryUtilization metrics equals the number of containers in that endpoint. Units: Percent  |  EndpointName, VariantName, ContainerName  | aws/sagemaker/Endpoints |
 
 All the metrics in the previous table are specific to multi-container endpoints with direct invocation. Besides these special per-container metrics, there are also metrics at the variant level with dimension `[EndpointName, VariantName]` for all the metrics in the table expect `ContainerLatency`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

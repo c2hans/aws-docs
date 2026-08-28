@@ -73,3 +73,7 @@ See these topics for scenarios that use this block:
 + [Example chat scenario](web-and-mobile-chat.md#example-chat-scenario)
 + [Easily create and visualize post chat surveys with Connect Customer and Amazon Lex](https://aws.amazon.com/blogs/contact-center/easily-create-and-visualize-post-chat-surveys-with-amazon-connect-and-amazon-lex/)
 + [Building a contact survey solution for Connect Customer](https://catalog.workshops.aws/amazon-connect-contact-survey/en-US)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

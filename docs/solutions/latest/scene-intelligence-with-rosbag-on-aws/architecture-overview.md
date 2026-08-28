@@ -33,3 +33,7 @@ The high-level process flow for the solution components deployed with the CloudF
 1.  [Amazon EMR Serverless](https://aws.amazon.com/emr/serverless/) (with an Apache Spark job) applies business logic to the data and labels in Amazon S3. This generates metadata related to the object detection and LaneDet. Amazon EMR Serverless then writes the metadata to [DynamoDB](https://aws.amazon.com/dynamodb/) and another S3 bucket.
 
 1. An [AWS Lambda](https://aws.amazon.com/lambda/) function publishes new incoming DynamoDB data (metadata) to the [OpenSearch Service](https://aws.amazon.com/opensearch-service/) cluster. The end user accesses the OpenSearch Service cluster through a proxy on [Amazon Elastic Compute Cloud](https://aws.amazon.com/ec2/) (Amazon EC2) to submit queries against the metadata.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Scene Intelligence with Rosbag on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -213,3 +213,7 @@ View details about updates to AWS managed policies for Amazon AppFlow since this
 | [AmazonAppFlowFullAccess](#security-iam-awsmanpol-full) – Update to an existing policy | Amazon AppFlow now allows the `lambda:ListFunctions` action in the AmazonAppFlowFullAccess policy. | 03/01/2022 |
 | [AmazonAppFlowReadOnlyAccess](#security-iam-awsmanpol-readonly) – Update to an existing policy | Amazon AppFlow now allows the `appflow:DescribeConnector` and `appflow:ListConnectors` actions in the AmazonAppFlowReadOnlyAccess policy. | 03/01/2022 |
 | Amazon AppFlow started tracking changes | Amazon AppFlow started tracking changes for its AWS managed policies. | 03/26/2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

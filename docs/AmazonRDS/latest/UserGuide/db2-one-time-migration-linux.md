@@ -100,3 +100,7 @@ After you back up your database on Amazon S3 and create an automatic storage gro
    Use [rdsadmin.set\_configuration](db2-sp-managing-databases.md#db2-sp-set-configuration) to modify these values as needed. Properly configuring these parameters can significantly improve performance when restoring databases with large volumes of data. For most migration scenarios, we recommend setting `USE_STREAMING_RESTORE` to `TRUE` because it reduces storage requirements and can improve restoration speed.
 
 1. Restore your database by calling `rdsadmin.restore_database`. For more information, see [rdsadmin.restore\_database](db2-sp-managing-databases.md#db2-sp-restore-database).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

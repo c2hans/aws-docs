@@ -34,3 +34,7 @@ AWS Transfer for SFTP configuration is limited to resources without "AMS-" or "M
 **Q: What are the prerequisites or dependencies to using AWS Transfer for SFTP in my AMS account?**
 + You must have an Amazon S3 bucket with a name that contains the keyword "transfer" before creating the AWS Transfer for SFTP server and users.
 + To use a "Customer Identify Provider," you must deploy the API Gateway, Lambda function, and your user repository (AD, Secrets Manager, and so on). For more information, see [ Enable password authentication for AWS Transfer for SFTP using AWS Secrets Manager](https://aws.amazon.com/blogs/storage/enable-password-authentication-for-aws-transfer-for-sftp-using-aws-secrets-manager/) and [Working with Identity Providers](https://docs.aws.amazon.com/transfer/latest/userguide/authenticating-users.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

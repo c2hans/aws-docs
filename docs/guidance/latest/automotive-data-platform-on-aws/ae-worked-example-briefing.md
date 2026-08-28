@@ -85,3 +85,7 @@ That’s the whole setup. There is no separate step to write a query, choose a v
 <a name="scope-and-framing-2"></a>
 
 Like the ad hoc query pattern above, this is an illustration of the pattern, not a production deployment guide. The same IAM Identity Center and DataZone subscription prerequisites apply, plus whatever the organization’s data-freshness requirements are for the specific products a briefing agent depends on — a weekly OTA-campaign briefing needs `ota_campaigns` data no staler than the executive’s tolerance for "last week’s news."
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

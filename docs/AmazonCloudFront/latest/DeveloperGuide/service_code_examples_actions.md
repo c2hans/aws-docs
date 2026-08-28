@@ -25,3 +25,7 @@ These excerpts call the CloudFront API and are code excerpts from larger program
 + [`ListCloudFrontOriginAccessIdentities`](example_cloudfront_ListCloudFrontOriginAccessIdentities_section.md)
 + [`ListDistributions`](example_cloudfront_ListDistributions_section.md)
 + [`UpdateDistribution`](example_cloudfront_UpdateDistribution_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

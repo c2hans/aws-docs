@@ -405,3 +405,7 @@ aws iotsitewise cancel-enrichment-job \
 ```
 
 `CancelEnrichmentJob` is idempotent — calling it more than once for the same `jobId` returns the current status without error, as long as the job is not already in a non-CANCELLED terminal state (`COMPLETED`, `FAILED`, `TIMED_OUT`), in which case it returns `ConflictException`. Cancelling a RUNNING enrichment job might fail with an exception if data ingestion into the storage service has already begun.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

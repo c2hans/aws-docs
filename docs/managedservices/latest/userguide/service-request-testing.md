@@ -8,3 +8,7 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 <a name="service-request-testing"></a>
 
 When testing AMS service requests, we ask that you include in the subject text this flag: **AMSTestNoOpsActionRequired** to let AMS know that the service request is only for testing. When AMS operations engineers see that flag, they do not respond to the service request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

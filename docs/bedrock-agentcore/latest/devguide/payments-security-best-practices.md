@@ -99,6 +99,8 @@ The `payTo` address specifies the recipient wallet. AgentCore payments does not 
 +  **Prefer AgentCore Gateway** for endpoint discovery, because it provides verified `payTo` addresses through the x402 Bazaar.
 +  **Apply Cedar policies** to constrain which addresses an agent can pay.
 +  **Don’t cache addresses across sessions.** Always use the current merchant-provided address, validated against your allowlist.
++  **Recipient screening.** Session limits bound how much an agent can spend, not who it can pay. Use a wallet policy to deny payments to specific recipients. For Stripe (Privy), follow the [sanctions screening for payments](https://docs.privy.io/recipes/agent-integrations/x402-sanctions-screening) guidance on the Privy website. Coinbase automatically screens all transactions against the OFAC sanctions list.
++  **Use payment provider policies** to restrict wallet actions such as signing and transfer. For more information, see the [Stripe (Privy) policies documentation](https://docs.privy.io/controls/policies/overview) on the Privy website and the [Coinbase security and policies documentation](https://docs.cdp.coinbase.com/wallets/security-and-policies/security-overview) on the Coinbase website.
 
 ### Secure network access
 <a name="payments-security-network"></a>
@@ -134,3 +136,7 @@ For more information, see [Observability with Amazon CloudWatch](payments-observ
 + Audit budgets and reduce limits for agents that underspend.
 + Review Cedar policies and IAM roles quarterly.
 + Monitor wallet provider dashboards for unexpected delegation or funding activity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

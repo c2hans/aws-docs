@@ -21,3 +21,7 @@ If your data source isn't running on Amazon VPC and isn't accessible from the pu
 + [Set up an Amazon Kendra data source to connect to Amazon VPC](connector-vpc-setup.md)
 + [Connecting to a database in a VPC](vpc-example.md)
 + [Troubleshooting VPC connection issues](vpc-connector-troubleshoot.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

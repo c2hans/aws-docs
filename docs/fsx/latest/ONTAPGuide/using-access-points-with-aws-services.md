@@ -23,3 +23,7 @@ The following sample use cases walk through common integrations step by step. Ea
 + [Build a RAG application using Amazon Bedrock Knowledge Bases](tutorial-build-rag-with-bedrock.md)
 + [Run Spark jobs using Amazon EMR Serverless](tutorial-run-spark-with-emr-serverless.md)
 + [Stream video using CloudFront](tutorial-stream-video-with-cloudfront.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

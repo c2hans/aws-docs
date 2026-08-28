@@ -230,3 +230,7 @@ The following are common issues with health checks and steps to resolve them.
 **Possible causes:**
 + **Health check configuration not saved** – Verify that the `healthCheckConfig` is present in the gateway configuration by calling `GetResponderGateway`. See [Viewing health check configuration](#health-checks-viewing).
 + **Gateway still activating or updating** – After enabling or updating health checks, the health checking infrastructure requires a few minutes to deploy. Wait for the gateway status to return to **Active** and check the metric again.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RTB Fabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rtb-fabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

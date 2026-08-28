@@ -16,3 +16,7 @@ There are three main options for filtering shared models and notebooks:
 1. **Shared by my organization** – All models and notebooks that are shared to anyone in your organization
 
 You can also sort your models and notebooks based on the time they were last updated or by ascending or descending alphabetical order. Choose the filter icon (![Filter icon.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/jumpstart/jumpstart-filter-icon.png)) to further sort your selections.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

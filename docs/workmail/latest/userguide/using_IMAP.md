@@ -33,3 +33,7 @@ To send email, you also need to configure an outgoing SMTP server in your IMAP-c
 | **Outgoing username** | Email address associated with your Amazon WorkMail account |
 | **Outgoing password** | Your password |
 | **Outgoing server** | The endpoint matching the AWS Region where your mailbox is located:+  US West (Oregon) <br />smtp.mail.us-west-2.awsapps.com <br />+  US East (N. Virginia) <br />smtp.mail.us-east-1.awsapps.com <br />+  Europe (Ireland) <br />smtp.mail.eu-west-1.awsapps.com  If you don't know the AWS Region where your mailbox is located, contact your system administrator.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

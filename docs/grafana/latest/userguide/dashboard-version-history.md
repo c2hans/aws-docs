@@ -30,3 +30,7 @@ For Grafana workspaces that support Grafana version 9.x, see [Working in Grafana
  If you need to restore to a previously saved dashboard version, you can do so either by choosing the "Restore" button on the right of a row in the dashboard version list or by choosing **Restore to version <x>** appearing in the diff view. After you choose to restore, a pop-up box will prompt you to confirm the restoration.
 
  After restoring to a previous version, a new version will be created that containing the same exact data as the previous version, but with a different version number. This is indicated in the **Notes** column. This helps to ensure that your previous dashboard versions are not affected by the change.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

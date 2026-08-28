@@ -331,3 +331,7 @@ Otherwise, to avoid potential charges, and to remove the EC2 instance that has a
 <a name="tutorials_rotation-alternating_step-next"></a>
 + Learn how to [retrieve secrets in your applications](retrieving-secrets.md).
 + Learn about [other rotation schedules](rotate-secrets_schedule.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

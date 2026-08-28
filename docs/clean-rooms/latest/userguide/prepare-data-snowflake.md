@@ -66,3 +66,7 @@ Now that you have prepared your data tables in Snowflake, you are ready to:
 The tables can be queried after:
 + The collaboration creator has set up a collaboration in AWS Clean Rooms. For more information, see [Creating a collaboration](create-collaboration.md).
 + The collaboration creator has sent the collaboration ID to you as a participant in the collaboration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

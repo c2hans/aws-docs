@@ -275,3 +275,7 @@ To be able to access the Ethereum network, trusted clients need to be set up to 
 
 1. Note the instance ID. You need it later when you [Connect to EthStats and EthExplorer Using the Bastion Host](blockchain-bastion-host-connect.md).
 ![Green checkmark indicating successful instance launch with partially obscured instance ID.](http://docs.aws.amazon.com/blockchain-templates/latest/developerguide/images/bastion-instance.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Blockchain Templates. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query blockchain-templates` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

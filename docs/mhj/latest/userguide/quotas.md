@@ -31,3 +31,7 @@ This private preview release of Migration Hub Journeys comes with the following 
 | Number of individuals that are members of a migration journey | 100 | Yes |  |
 | Number of teams per migration space | 10 | Yes |  |
 | Number of individuals per team | 100 | Yes |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

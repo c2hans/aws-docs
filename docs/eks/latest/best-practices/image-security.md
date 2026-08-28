@@ -248,3 +248,7 @@ RUN apt-get update && apt-get install -y \
 +  [Notary v2](https://github.com/notaryproject/nv2)
 +  [Grafeas](https://grafeas.io/) An open artifact metadata API to audit and govern your software supply chain
 +  [NeuVector by SUSE](https://www.suse.com/neuvector/) open source, zero-trust container security platform, provides container, image and registry scanning for vulnerabilities, secrets and compliance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

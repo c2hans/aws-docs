@@ -42,3 +42,7 @@ The CloudFormation CLI performs the following contract tests for `delete` handle
 | `contract_delete_read` | Creates a resource, deletes the resource, and then reads the resource with the expectation that the read operation will fail with the `NotFound` error code. |
 | `contract_delete_list` | Creates a resource, deletes the resource, and then lists the resource with the expectation that the returned list doesn't contain the deleted resource. |
 | `contract_delete_delete` | Creates a resource, deletes the resource, and then deletes the resource again with the expectation that the second delete operation will fail with the `NotFound` error code. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

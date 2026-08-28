@@ -34,3 +34,7 @@ DELETE manager_id FROM "myGSGKeyspace".employees_tbl WHERE id='789-01-2345' AND 
 
 `DELETE` supports the following value as `update_parameter`:
 + `TIMESTAMP` – A `bigint` value representing the number of microseconds since the standard base time known as the epoch: January 1 1970 at 00:00:00 GMT.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

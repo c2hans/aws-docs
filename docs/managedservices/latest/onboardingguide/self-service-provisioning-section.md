@@ -17,3 +17,7 @@ There are some AWS services that you can use without AMS management, in your AMS
 Self-service provisioning services are offered as is, and you're responsible for managing them. AMS provides no alerts, monitoring, logging, or patching for the resources associated with those services. AMS provides IAM roles that enable you to use the service in your AMS account safely. AMS SLAs do not apply.
 
 For resources that you provision through self-service, AMS provides incident management, detective controls and guardrails, reporting, designated resources (Cloud Service Delivery Manager and Cloud Architect), security and access, and technical support through service requests. Additionally, where applicable, you assume responsibility for continuity management, patch management, infrastructure monitoring, and change management for resources provisioned or configured outside of the AMS change management system.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Logging Amazon Managed Service for Prometheus API calls using AWS CloudTrail](logging-using-cloudtrail.md)
 + [Set up IAM roles for service accounts](set-up-irsa.md)
 + [Using Amazon Managed Service for Prometheus with interface VPC endpoints](AMP-and-interface-VPC.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Service for Prometheus. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prometheus` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

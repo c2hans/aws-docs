@@ -40,3 +40,7 @@ To implement the A2A protocol in your agent architecture, take the following act
 1. **Test A2A in a mixed infrastructure environment **– Combine A2A peer negotiation with event routing that's native to AWS through Amazon EventBridge to evaluate hybrid coordination patterns.
 
 1. **Join the A2A community** – Engage with the [open working group](https://a2a-protocol.org/latest/community/) to stay up to date with extensions, security recommendations, and cross-vendor interoperability improvements, and [contribute to the development](https://github.com/a2aproject/A2A?tab=contributing-ov-file) of the protocol.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

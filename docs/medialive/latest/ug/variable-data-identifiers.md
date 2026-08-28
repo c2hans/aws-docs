@@ -48,3 +48,7 @@ This table describes where you can use the variable data identifiers from the pr
 | Channel – Archive, Microsoft Smooth output groups | Segment modifier field in an Output | All except $ra$, $rc$, $sn$ |
 | Channel – HLS output groups | Segment modifier field in an Output | All except $sn$ |
 | Schedule – HLS ID3 Segment Tagging action | Tag field | All |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

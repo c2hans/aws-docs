@@ -20,3 +20,7 @@ You can also manually update software installed on your notebook instance while 
 Updating kernels and some packages might depend on whether root access is enabled for the notebook instance. For more information, see [Control root access to a SageMaker notebook instance](nbi-root-access.md).
 
 You can check the [Personal Health Dashboard](https://aws.amazon.com/premiumsupport/technology/personal-health-dashboard/) or the security bulletin at [Security Bulletins](https://aws.amazon.com/security/security-bulletins/) for updates.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

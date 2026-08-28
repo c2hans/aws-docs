@@ -241,3 +241,7 @@ A typical SageMaker Studio deployment takes 15-25 minutes to complete. This incl
 **Can I deploy multiple SageMaker environments in the same AWS account?**
 
 Yes, you can. Each deployment creates resources with unique names based on the component name you provide in the template. However, be aware of AWS service quotas: Each account can have a limited number of SageMaker domains per Region, so [check your quotas](https://docs.aws.amazon.com/general/latest/gr/sagemaker.html#limits_sagemaker) before you create multiple environments.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ The migration options that are covered in this guide require the following setup
   + For the little-endian platform, these files are Db2 backup images and transaction logs.
   + For the big-endian platform, these are data files unloaded from user tables.
 + **Db2 command line processor** – The `CATALOG STORAGE ACCESS` command creates an alias for accessing Amazon S3 directly by using the `INGEST`, `LOAD`, `BACKUP DATABASE`, `RESTORE DATABASE`, and `ROLLFORWARD DATABASE` commands.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

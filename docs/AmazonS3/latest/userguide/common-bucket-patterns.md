@@ -41,3 +41,7 @@ To manage your bucket-per-use pattern and simplify your infrastructure managemen
 ![How to create a CloudFormation template customized to your application that defines settings for your S3 buckets.](http://docs.aws.amazon.com/AmazonS3/latest/userguide/images/create-stack-diagram.png)
 
 When building a workload with a bucket-per-use pattern, we recommend that you create the buckets in your account regional namespace. By creating buckets in your account regional namespace, you avoid competing for bucket names against others and have assurance that only your account can ever create buckets with your selected naming convention. For more information on account regional namespaces, see [Namespaces for general purpose buckets](gpbucketnamespaces.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

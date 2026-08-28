@@ -92,3 +92,7 @@ For more information about these API operations, choose any of the links in the 
 <a name="change-assessment-status-to-inactive-next-steps"></a>
 
 When you're certain that you no longer need your inactive assessment, you can clean up your Audit Manager environment by deleting the assessment. For instructions, see [Deleting an assessment in AWS Audit Manager](delete-assessment.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -304,3 +304,7 @@ Cesar Matias, Chief Technology Officer - Wappa
 "Xata has customers that require tenant isolation and want to build AI-driven applications that deliver low latency, highly relevant vector similarity searches to their users. In one particular case, Xata migrated a customer from Pinecone to using Amazon Aurora PostgreSQL-Compatible Edition with pgvector and realized a 65% cost reduction while meeting our query latency targets and providing additional functionality by being able to store the metadata in the same tables as the vector data. This resulted in a significant simplification of their application architecture."
 
 Monica Sarbu, CEO & Founder - Xata
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

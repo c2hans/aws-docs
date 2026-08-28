@@ -29,3 +29,7 @@ To publish a new version of an application that you have previously published, f
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/serverlessrepo/latest/devguide/serverlessrepo-how-to-publish-new-version.html)
 
 1. Choose **Publish version**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Repository. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverlessrepo` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

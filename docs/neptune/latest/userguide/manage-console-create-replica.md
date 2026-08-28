@@ -23,3 +23,7 @@ After creating the primary instance for your Neptune DB cluster, you can add add
 1. Choose **Create read replica** to create the Neptune replica instance.
 
 To remove a Neptune reader instance from a DB cluster, follow the instructions in [Deleting a DB instance in Amazon Neptune](manage-console-instances-delete.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

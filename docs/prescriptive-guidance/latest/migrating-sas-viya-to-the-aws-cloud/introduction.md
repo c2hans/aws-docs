@@ -38,3 +38,7 @@ This guide describes how to migrate SAS Viya to Amazon Web Service (AWS) and mod
 | Benchmarks | Contact the SAS Enterprise Excellence Center for benchmark information relevant to your site. |
 | **Compliance** | Security and compliance requirements | [Security Administration](https://go.documentation.sas.com/?cdcId=sasadmincdc&cdcVersion=v_001LTS&docsetId=calsecwlcm&docsetTarget=home.htm&locale=en) |
 | [AWS Compliance Programs](https://aws.amazon.com/compliance/programs) | [SAS Governance and Compliance Manager](https://support.sas.com/documentation/prod-p/gcm/index.html) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

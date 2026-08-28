@@ -120,3 +120,7 @@ If your campaign was denied for lead generation or affiliate marketing:
 
 **Note**
 **Note:** If your business model fundamentally involves collecting leads for other businesses, this use case is not eligible for A2P 10DLC regardless of how the registration is worded. Consider whether your messaging program can be restructured so that each end brand registers and messages independently.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

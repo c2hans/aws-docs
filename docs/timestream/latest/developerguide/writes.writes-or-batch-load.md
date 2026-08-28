@@ -26,3 +26,7 @@ Both solutions are secure, reliable, and performant.
 + Enriching databases with historical data (ingestion into new tables).
 + You have source data that changes slowly or not at all.
 + You have flexible wait times because a batch load task might be in a pending state until resources are available, especially if you load a very large amount of data. Batch load is suitable for data that doesn't need to be readily available for querying or analysis to add more clarity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

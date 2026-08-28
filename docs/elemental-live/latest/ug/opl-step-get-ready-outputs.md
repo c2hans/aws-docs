@@ -52,3 +52,7 @@ Make sure that you apply the features in the same way in every locked event. For
 <a name="opl-design-output-features-motion-gx"></a>
 
 We strongly recommend against combining motion graphic overlays and output locking. Frame accuracy can't apply to motion graphic overlays that are applied to the video content.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

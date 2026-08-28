@@ -117,3 +117,7 @@ The following list describes the pseudo parameters that you can specify using th
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/systems-manager/latest/userguide/maintenance-window-tasks-pseudo-parameters.html)
 **Note**
 If the AWS resource group you specify includes resource types that don't yield a `RESOURCE_ID` value, and aren't listed in the preceding table, then the `RESOURCE_ID` parameter isn't populated. An execution invocation will still occur for that resource. In these cases, use the `TARGET_ID` pseudo parameter instead, which will be replaced with the full ARN of the resource.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

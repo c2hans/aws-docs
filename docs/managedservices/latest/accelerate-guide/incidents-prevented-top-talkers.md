@@ -44,3 +44,7 @@ The Monitoring Top Talkers report presents the number of Amazon CloudWatch alert
 | First occurrence | First time that the alert was triggered |
 | Recent occurrence | The most recent time that the alert was triggered |
 | Alert Count  | Number of alerts generated between the first and recent occurrence |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

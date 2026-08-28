@@ -32,3 +32,7 @@ IsComplete "passenger_count" where "payment_type<>0"
  Note on CSV Data Formats: Blank rows on CSV columns can display multiple behaviors.
 +  If a column is of `String` type, the blank row will be recognized as an empty string and will not fail the `Completeness` rule.
 +  If a column is of another data type like `Int`, the blank row will be recognized as `NULL` and will fail the `Completeness` rule.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ NoSQL Workbench supports Ubuntu 12.04, Fedora 21, and Debian 8, or any newer ver
 There are two prerequisite pieces of software required for Ubuntu installs: `libfuse2` and `curl`.
 As of Ubuntu 22.04, libfuse2 is no longer installed by default. To solve this, run `sudo add-apt-repository universe && sudo apt install libfuse2` to install for the newest Ubuntu version.
 For cURL, run `sudo apt update && sudo apt upgrade && sudo apt install curl`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

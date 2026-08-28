@@ -38,3 +38,7 @@ In this step, you use the console to access the training results in the console.
 ![The test results page shows images with predicted labels and confidence scores.](http://docs.aws.amazon.com/rekognition/latest/customlabels-dg/images/get-started-image-test-results.jpg)
 
 1. Use the metrics to evaluate the performance of the model. For more information, see [Improving an Amazon Rekognition Custom Labels model](tr-improve-model.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

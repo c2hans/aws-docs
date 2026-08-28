@@ -264,3 +264,7 @@ Custom domains are only supported for AWS IoT Core data endpoints.
 <a name="VPC-availability"></a>
 
 AWS IoT Core Interface VPC endpoints are available in all [AWS IoT Core supported regions](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/). AWS IoT Core Interface VPC endpoints for AWS IoT Core credential provider are not supported in China Region and AWS GovCloud (US) Regions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

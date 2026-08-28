@@ -76,3 +76,7 @@ The following are known limitations of Incident Manager's cross-account function
 + Amazon Simple Notification Service topics can't be used cross-account. Amazon SNS topics must be created in the same Region and account as the response plan it's used in. We recommend using the management account to create all SNS topics and response plans.
 + Escalation plans can only be created using contacts in the same account. A contact that has been shared with you can't be added to an escalation plan in your account.
 + Tags applied to response plans, incident records, and contacts can only be viewed and modified from the resource owner account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

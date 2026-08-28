@@ -15,3 +15,7 @@ Adopt a code-centric approach across the development lifecycle for enhanced main
 + [[DL.EAC.5] Integrate technical and operational documentation into the development lifecycle](dl.eac.5-integrate-technical-and-operational-documentation-into-the-development-lifecycle.md)
 + [[DL.EAC.6] Use general-purpose programming languages to generate Infrastructure-as-Code](dl.eac.6-use-general-purpose-programming-languages-to-generate-infrastructure-as-code.md)
 + [[DL.EAC.7] Automate compute image generation and distribution](dl.eac.7-automate-compute-image-generation-and-distribution.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

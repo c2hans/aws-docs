@@ -14,3 +14,7 @@ With these formats, the source captions are supplied in a captions file that is 
   Enter a value in this field to push the captions earlier or later.
   + Enter a positive number to add to the times in the caption file. For example, enter **2** to add 2 seconds to all the times in the caption file.
   + Enter a negative number to subtract from the times in the caption file. For example, enter **-3** to remove 3 seconds from all the times in the caption file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

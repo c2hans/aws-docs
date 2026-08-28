@@ -111,3 +111,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/console-connections-jdbc-
 1.  If you are using a VPC, you must allow access to the AWS Glue endpoint by creating the interface endpoint and add it to your route table. For more information, see [ Creating an interface VPC endpoint for AWS Glue](https://docs.aws.amazon.com/glue/latest/dg/vpc-interface-endpoints.html#vpc-endpoint-create)
 
 1.  If you are using encryption in your Data Catalog, create the AWS KMS interface endpoint and add it to your route table. For more information, see [ Creating a VPC endpoint for AWS KMS](https://docs.aws.amazon.com/kms/latest/developerguide/kms-vpc-endpoint.html#vpce-create-endpoint).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

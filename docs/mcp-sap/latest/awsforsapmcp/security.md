@@ -35,3 +35,7 @@ When you use OAuth authentication flows, the OAuth scopes that you configure thr
 The MCP Server is designed to never store credentials on disk. Sensitive values, such as authentication or cross-site request forgery (CSRF) tokens, are automatically redacted from logs.
 +  **OAuth 2.0** — Access tokens are held in-memory only via the TokenStore dataclass. Tokens are not persisted to disk or written to any external store.
 +  **BASIC** — When using the BASIC authentication flow, SAP system credentials are retrieved from AWS Secrets Manager at runtime on each request. The credentials exist only in memory for the duration of the request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MCP Servers for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mcp-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

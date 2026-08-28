@@ -99,3 +99,7 @@ When invoking agents, include the appropriate session header to ensure requests 
  **MicroVM stickiness** : Amazon Bedrock AgentCore uses the session header to route requests to the same microVM instance. Clients must capture the session ID returned in the response and include it in all subsequent requests to ensure session affinity. Without a consistent session ID, each request may be routed to a new microVM, which may result in additional latency due to cold starts.
 
 For MCP protocol specifics including stateless and stateful modes, see [MCP session management and microVM stickiness](runtime-mcp-protocol-contract.md#mcp-session-management).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,3 +36,7 @@ The AWS Support Console offers five levels of incident priority that we translat
 <a name="what-is-problem-mgmt"></a>
 
 When AMS believes that an incident reveals a larger defect or misconfiguration and could recur, it is considered a problem rather than just an incident. In such cases, AMS undertakes analyses of the problem and offers suggestions to resolve the problem.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

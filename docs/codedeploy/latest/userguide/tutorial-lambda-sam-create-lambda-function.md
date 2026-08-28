@@ -123,3 +123,7 @@ The Lambda function returns the day, month, and year for yesterday, today, or to
 
 **Note**
  This Lambda function is also used in an AWS Cloud9 tutorial. AWS Cloud9 is a cloud-based integrated development environment. For information about how to create, execute, update, and debug this function in AWS Cloud9, see [AWS Lambda tutorial for AWS Cloud9](https://docs.aws.amazon.com/cloud9/latest/user-guide/tutorial-lambda.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

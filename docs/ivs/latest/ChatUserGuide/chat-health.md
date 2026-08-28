@@ -75,3 +75,7 @@ Amazon IVS Chat provides the following metrics in the **AWS/IVSChat** namespace.
 | `MessagingRequests` | None | The number of messaging requests made across all your rooms in a region.<br />Unit: Count<br />Valid statistics: Sum, Average, Maximum, Minimum |
 | `Requests` | Action | The number of requests made of a specific action type across all your rooms in a region.<br />Unit: Count<br />Valid statistics: Sum, Average, Maximum, Minimum |
 | `ResponseValidationErrors` | `Uri` | The number of response-validation errors of a specific message review handler across all your rooms in a region. A response-validation error occurs when the response from the message review handler is invalid. This may mean that the response could not be parsed or fails validation checks; e.g., an invalid review result or response values that are too long.<br />Unit: Count<br />Valid statistics: Sum, Average, Maximum, Minimum |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

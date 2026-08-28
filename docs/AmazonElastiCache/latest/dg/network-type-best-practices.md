@@ -22,3 +22,7 @@ Validated Clients:
 + [Redis Py ()](https://github.com/redis/redis-py) – [4.1.2](https://github.com/redis/redis-py/tree/v4.1.2)
 + [Lettuce](https://lettuce.io/) – [Version: 6.1.6.RELEASE](https://github.com/lettuce-io/lettuce-core/tree/6.1.6.RELEASE)
 + [Jedis](https://github.com/redis/jedis) – [Version: 3.6.0](https://github.com/redis/jedis/tree/jedis-3.6.0)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

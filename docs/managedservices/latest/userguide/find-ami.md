@@ -33,3 +33,7 @@ The AMS CLI must be installed for these commands to work. To install the AMS API
   aws amsskms list-amis --vpc-id {{VPC_ID}} --query "Amis.sort_by(@,&Name)[?starts_with(Name,'customer')].[Name,AmiId]" --filter Attribute=Platform,Value=windows --output table
   ```
 + For information about using CLI queries, see [ How to Filter the Output with the --query Option](https://docs.aws.amazon.com/cli/latest/userguide/controlling-output.html#controlling-output-filter) and the query language reference, [JMESPath Specification](http://jmespath.org/specification.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

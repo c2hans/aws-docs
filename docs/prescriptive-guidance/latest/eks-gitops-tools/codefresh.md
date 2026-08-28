@@ -39,3 +39,7 @@ The key differentiator of Codefresh in the GitOps area is its unified platform a
 Codefresh offers a platform for organizations that want to adopt GitOps methodologies within a broader CI/CD context, especially when working with Kubernetes and cloud-native technologies.
 
 For more information, see the [Codefresh documentation](https://codefresh.io/docs/gitops/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

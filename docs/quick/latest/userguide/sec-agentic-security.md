@@ -210,3 +210,7 @@ Retained context is part of the read surface described in [Two-condition model f
 + [AI guardrails in Amazon Quick](guardrails.md) – Built-in content safety screening and administrator-configured blocked words.
 + [Custom permissions](custom-permissions.md) – Role-based capability restriction and deny-by-default governance.
 + [Best practices for managing ACLs in knowledge bases](acl-best-practices-kb.md) – Document-level access control for knowledge bases, including fail-closed retrieval behavior.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

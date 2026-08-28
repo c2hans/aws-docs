@@ -18,3 +18,7 @@ You can't create another meeting bridge ID for those inactive meetings, or use t
 1. Create and schedule a new meeting, and invite the attendees from the old meeting. You can host the meeting, or ask someone else to host.
 
  For more information about canceling meetings, see [Canceling meetings](cancel-meeting.md). For more information about scheduling meetings, see the topics in [Scheduling meetings using Amazon Chime](chime-schedule-meetings.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

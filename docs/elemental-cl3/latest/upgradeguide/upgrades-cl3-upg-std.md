@@ -28,3 +28,7 @@ In this procedure, we show how to upgrade from version 3.23.5 to version 3.25.5.
 + [Step J: Add the secondary Conductor Live node](upg-std-add-sec.md)
 + [Step K: Start channels](upg-std-start.md)
 + [Step L: Re-enable high availability](upg-std-reenable.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

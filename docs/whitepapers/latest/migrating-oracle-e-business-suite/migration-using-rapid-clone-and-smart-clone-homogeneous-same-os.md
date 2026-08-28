@@ -29,3 +29,7 @@ Cloning from a later version of an OS to an earlier one is not supported.
  For more information on the Smart Clone procedure for migrating Oracle E-Business Suite, refer to [Cloning an Oracle E-Business Suite System](https://docs.oracle.com/cd/E24628_01/doc.121/e39873/T508706T512065.htm).
 
  Whether using Rapid Clone or Smart Clone, you can migrate the data from source to target using either Oracle RMAN, Data Guard, Data Pump, Transportable Tablespaces, or by directly copying the data files from the target database depending on the downtime available.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

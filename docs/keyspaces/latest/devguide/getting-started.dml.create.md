@@ -123,3 +123,7 @@ To create data in your `book_awards` table, use the `INSERT` statement to add a 
    ```
 
 To learn more about using `cqlsh COPY` to upload data from csv files to an Amazon Keyspaces table, see [Tutorial: Loading data into Amazon Keyspaces using cqlsh](bulk-upload.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

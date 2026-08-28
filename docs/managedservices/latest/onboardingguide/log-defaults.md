@@ -20,3 +20,7 @@ Log rotation is configured inside the instances. By default, operating system an
 The log agent inside the instances uploads the log online to CloudWatch Logs, from there the logs are archived to S3.
 
 The logs are stored in CloudWatch Logs and S3 in the raw format they are generated, there is no pre-processing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

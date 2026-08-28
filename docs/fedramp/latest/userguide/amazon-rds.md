@@ -976,3 +976,7 @@ For more information about AWS security best practices, see the following resour
 +  [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config.html) - Automated compliance monitoring and evaluation
 +  [AWS CloudTrail User Guide](https://docs.aws.amazon.com/cloudtrail/latest/userguide/cloudtrail-user-guide.html) - API logging and audit trail management
 +  [AWS Secrets Manager](https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html) - Credential management and rotation automation
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FedRamp Compliance Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fedramp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

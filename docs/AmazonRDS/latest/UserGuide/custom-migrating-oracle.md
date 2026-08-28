@@ -25,3 +25,7 @@ Oracle Data Guard
 In this technique, you back up a primary on-premises database and copy the backups to an Amazon S3 bucket. You then copy the backups to your RDS Custom for Oracle standby DB instance. After performing the necessary configuration, you manually switch over your primary database to your RDS Custom for Oracle standby database. To learn this technique, see the AWS blog post [Physical migration of Oracle databases to Amazon RDS Custom using Data Guard](https://aws.amazon.com/blogs/database/physical-migration-of-oracle-databases-to-amazon-rds-custom-using-data-guard/).
 
 For general information about logically importing data into RDS for Oracle, see [Importing data into Oracle on Amazon RDS](Oracle.Procedural.Importing.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

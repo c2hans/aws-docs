@@ -33,3 +33,7 @@ The following dimensions are used to refine the Resource usage metrics that are 
 | `Type` | The type of entity that is being reported. Currently, the only valid value for Amazon ECR resource usage metrics is `RESOURCE`. |
 | `Resource` | The type of resource that is running. Currently, Amazon ECR returns information on your resource usage for the following metrics.+  `RepositoryCount` <br />+  `ImagesPerRepositoryCount`  |
 | `ResourceId` | The identifier for the resource that incurred the usage. Currently, ResourceId is only relevant to `ImagesPerRepositoryCount` and its value is formatted as repository/your\_repository\_name. For example: "repository/my-repo" returns the number of images in repository with name "my-repo". |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

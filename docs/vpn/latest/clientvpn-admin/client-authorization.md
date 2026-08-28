@@ -27,3 +27,7 @@ Network-based authorization is implemented using authorization rules. For each n
 + [Security groups](#security-groups)
 + [Network-based authorization](#auth-rules)
 + [Create an endpoint security group rule](client-auth-rule-create.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

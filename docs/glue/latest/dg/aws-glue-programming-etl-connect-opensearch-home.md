@@ -167,3 +167,7 @@ glueContext.write_dynamic_frame.from_options(
 + `opensearch.query` — Used for Read. Valid Values: String escaped JSON or, when this string begins with `?`, the search part of a URL. An OpenSearch query that filters what should be retrieved when reading. For more information on using this parameter, consult the previous section [Reading from OpenSearch Service indexes](#aws-glue-programming-etl-connect-opensearch-read).
 + `pushdown` — Required if. Used for Read. Valid Values: boolean. Instructs Spark to pass read queries down to OpenSearch so the database only returns relevant documents.
 + `opensearch.read.field.as.array.include` — Required if reading array type data. Used for Read. Valid Values: comma separated lists of field names. Specifies fields to read as arrays from OpenSearch documents. For more information on using this parameter, consult the previous section [Reading from OpenSearch Service indexes](#aws-glue-programming-etl-connect-opensearch-read).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

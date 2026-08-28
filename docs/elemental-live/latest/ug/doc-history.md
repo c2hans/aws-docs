@@ -53,3 +53,7 @@ The following table describes the main changes to the documentation for AWS Elem
 | [Color space](hdr-working-with.md) | The section on handling color space has been completely revised. In addition, the section includes information for working with Dolby.  | June 15, 2021 |
 | [SMPTE 2110](SMPTE-ST-2110.md) | The user guide now includes sections about the existing support for SMPTE 2110 inputs and SMPTE 2110 outputs. | June 5, 2021 |
 | [Version 2.25 release](what-is-aws-elemental-live.md) | First release of the 2.25 software version. | February 5, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

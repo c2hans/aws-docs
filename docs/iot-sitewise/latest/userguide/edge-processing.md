@@ -39,3 +39,7 @@ You can use the AWS IoT SiteWise REST APIs and the AWS Command Line Interface (A
 + Your SiteWise Edge gateway certificate must be registered. You can find more information about registering your SiteWise Edge gateway certificate in the documentation for your SDK. For example, see the [Registering Certificate Bundles in Node.js](https://docs.aws.amazon.com/sdk-for-javascript/v2/developer-guide/node-registering-certs.html) in the *AWS SDK for Java 2.x Developer Guide*.
 
 For more information about querying data with AWS IoT SiteWise, see [Query data from AWS IoT SiteWise](query-industrial-data.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

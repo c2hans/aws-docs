@@ -26,3 +26,7 @@ Connect Customer Voice ID provides APIs for you manage Voice ID domains. You can
 1.  [UpdateDomain](https://docs.aws.amazon.com/voiceid/latest/APIReference/API_UpdateDomain.html): To update the name and encryption configuration for a domain, you can use the `UpdateDomain` Voice ID API. This API clobbers existing attributes, and you must provide both these fields.
 
    When you change the KMS key associated with the Voice ID domain, following the `UpdateDomain` call your domain's existing data will be asynchronously re-encrypted under the new KMS key. You can check status of this process from your domain's `ServerSideEncryptionUpdateDetails` attribute using the `DescribeDomain` API. While this update process is in progress, you must retain your old KMS key in an accessible state, otherwise this process might fail. After this process completes, the old KMS key might be safely retired.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

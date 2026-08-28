@@ -107,3 +107,7 @@ You should test the effects of the policy you've applied on the group or role to
 + Sign in to the CodeCommit console with an IAM user who is either a member of an IAM group that has the policy applied, or assumes a role that has the policy applied. In the console, add a file on the branch where the restrictions apply. You should see an error message when you attempt to save or upload a file to that branch. Add a file to a different branch. The operation should succeed.
 + Sign in to the CodeCommit console with an IAM user who is either a member of an IAM group that has the policy applied, or assumes a role that has the policy applied. Create a pull request that merges to the branch where the restrictions apply. You should be able to create the pull request, but get an error if you try to merge it.
 + From the terminal or command line, create a commit on the branch where the restrictions apply, and then push that commit to the CodeCommit repository. You should see an error message. Commits and pushes made from other branches should work as usual.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

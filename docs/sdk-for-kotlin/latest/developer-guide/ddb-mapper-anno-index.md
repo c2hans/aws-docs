@@ -36,3 +36,7 @@ The following annotation is not a schema annotation; it gates an opt-in API surf
 +  [Generate a schema from annotations](ddb-mapper-anno-schema-gen.md): how the annotations are used.
 +  [Manually define schemas](ddb-mapper-code-schemas.md): the converter and key types the annotations stand in for.
 +  [Built-in features (TTL, atomic counters)](ddb-mapper-builtins.md): runtime behavior of `@DynamoDbCounter` and `@DynamoDbTtlSeconds`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Kotlin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-kotlin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

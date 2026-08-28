@@ -32,3 +32,7 @@ For the Europe (Milan) Region, you must enable this Region before you can use it
 | Europe (Stockholm) (eu-north-1) | 13.48.66.148, 13.48.8.79, 13.53.78.182 |
 | Europe (Milan) (eu-south-1) | 18.102.28.105, 18.102.35.130, 18.102.8.116 |
 | AWS GovCloud (US-East) | 18.252.168.157, 18.252.207.77, 18.253.185.119 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

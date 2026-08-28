@@ -133,3 +133,7 @@ If **ENABLE\_REDACTING** is set to `true`, the Comprehend detected PII entities 
 ![image25](http://docs.aws.amazon.com/solutions/latest/qnabot-on-aws/images/image25.png)
 
 For more information, see [Personally Identifiable Information (PII) Rejection and Redaction](https://github.com/aws-solutions/qnabot-on-aws/blob/main/source/docs/PII_Detection_And_Redaction/README.md) in the GitHub repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

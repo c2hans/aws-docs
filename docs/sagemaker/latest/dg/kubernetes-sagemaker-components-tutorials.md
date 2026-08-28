@@ -283,3 +283,7 @@ When you're finished with your pipeline, you need to clean up your resources.
    ```
 
 1. Using your AWS account, log in to the SageMaker AI service. Manually stop all training, batch transform, and HPO jobs. Delete models, data buckets, and endpoints to avoid incurring any additional costs. Terminating the pipeline runs does not stop the jobs in SageMaker AI.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

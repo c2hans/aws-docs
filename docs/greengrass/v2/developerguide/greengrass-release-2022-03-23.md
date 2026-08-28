@@ -25,3 +25,7 @@ The following table lists AWS-provided components that include new and updated f
 | --- | --- |
 | Greengrass nucleus | Version 2.5.4 of the [Greengrass nucleus](greengrass-nucleus-component.md) is available.<a name="changelog-nucleus-2.5.4"></a>**Bug fixes and improvements**<br />   General bug fixes and improvements.    |
 | Lambda launcher | Version 2.0.10 of the [Lambda launcher](lambda-launcher-component.md) component is available.<a name="changelog-lambda-launcher-2.0.10"></a>**Bug fixes and improvements**<br />   General bug fixes and improvements.    |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

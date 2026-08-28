@@ -36,3 +36,7 @@ For additional monitoring features, use:
 These services work together to create a customized monitoring system for OpenSearch.
 
 For general monitoring guidelines, see [Operational best practices for Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/bp.html) in the AWS documentation. By following these guidelines and regularly reviewing and adjusting your monitoring setup, you can maintain a robust and effective monitoring system for your OpenSearch Service deployment. Remember to adapt these recommendations to your specific use case and requirements while maintaining alignment with AWS best practices.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

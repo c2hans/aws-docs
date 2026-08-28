@@ -22,3 +22,7 @@ The` Condition Keys `column specifies condition context keys that you can includ
 | `es`<br />(an event subscription) | arn:{{partition}}:rds:{{region}}:{{account-id}}:es:{{neptune-CustSubscriptionId }} | [aws:ResourceTag/{{tag-key}}](iam-admin-condition-keys.md#admin-aws_ResourceTag)<br />[rds:es-tag/{{tag-key}}](iam-admin-condition-keys.md#admin-rds_es-tag) |
 | `pg`<br />(a DB parameter group) | arn:{{partition}}:rds:{{region}}:{{account-id}}:pg:{{neptune-ParameterGroupName}} | [aws:ResourceTag/{{tag-key}}](iam-admin-condition-keys.md#admin-aws_ResourceTag)<br />[rds:pg-tag/{{tag-key}}](iam-admin-condition-keys.md#admin-rds_pg-tag) |
 | `subgrp`<br />(a DB subnet group) | arn:{{partition}}:rds:{{region}}:{{account-id}}:subgrp:{{neptune-DBSubnetGroupName}}} | [aws:ResourceTag/{{tag-key}}](iam-admin-condition-keys.md#admin-aws_ResourceTag)<br />[rds:subgrp-tag/{{tag-key}}](iam-admin-condition-keys.md#admin-rds_subgrp-tag) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ The following table shows the document formats that Amazon Q Business supports.
 | Plain text (TXT) | All text in the text document is extracted. |
 | Google Slides | By default, only plaintext content is extracted from Google Slides pages for ingestion. If enabled, Amazon Q Business can extract semantic information and insights from images and other visuals. Otherwise, images and other content aren't extracted. |
 | Google Docs  | By default, only plaintext content is extracted from Google Docs pages for ingestion. If enabled, Amazon Q Business can extract semantic information and insights from images and other visuals. Otherwise, images and other content aren't extracted. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

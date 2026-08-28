@@ -209,3 +209,7 @@ The nested virtualization setting is preserved during the following WorkSpace li
 + **Restore** — When you restore a WorkSpace, the nested virtualization setting is preserved and applied to the restored WorkSpace.
 + **Rebuild** — When you rebuild a WorkSpace, the nested virtualization setting is preserved and applied to the rebuilt WorkSpace.
 + **Migrate** — When you migrate a WorkSpace to a new bundle, the nested virtualization setting is carried over to the migrated WorkSpace, as long as the new bundle is compatible with nested virtualization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

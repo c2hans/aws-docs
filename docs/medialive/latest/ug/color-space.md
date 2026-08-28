@@ -43,3 +43,7 @@ This section provides procedures for dealing with complicated situations that in
 + Converting content that is a combination of supported and unsupported color spaces.
 
 These requirements often apply to content that is a VOD file that you are converting to a live stream. The VOD file might have been created by stitching together several different sources, each with a different color space. It might contain older content with an unknown color space and/or with missing or inaccurate metadata.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -102,3 +102,7 @@ The following Regions and engine versions are available for Aurora global databa
 | South America (São Paulo) | Version 18.3 and higher | Version 17.4 and higher | Version 16.1 and higher | Version 15.2 and higher | Version 14.3 and higher | Version 13.4 and higher | Version 12.8 and higher | Version 11.9 and version 11.13 and higher |
 | AWS GovCloud (US-East) | Version 18.3 and higher | Version 17.4 and higher | Version 16.1 and higher | Version 15.2 and higher | Version 14.3 and higher | Version 13.4 and higher | Version 12.8 and higher | Version 11.9 and version 11.13 and higher |
 | AWS GovCloud (US-West) | Version 18.3 and higher | Version 17.4 and higher | Version 16.1 and higher | Version 15.2 and higher | Version 14.3 and higher | Version 13.4 and higher | Version 12.8 and higher | Version 11.9 and version 11.13 and higher |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -73,3 +73,7 @@ For details about how to use the framework as well as additional information, se
 + The [Photo Asset Management project](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/PhotoAssetManager) on GitHub. Specifically, see the [PamApiAnnotations](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/dotnetv3/cross-service/PhotoAssetManager/PamApiAnnotations) folder and references to Lambda Annotations in the project [README](https://github.com/awsdocs/aws-doc-sdk-examples/blob/main/dotnetv3/cross-service/PhotoAssetManager/README.md).
 **Note**
 The preceding example is specific to V3 of the AWS SDK for .NET. If you use the example with V4 of the SDK (the latest version), you might need to make adjustments according to the information in [Migrating to version 4](net-dg-v4.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

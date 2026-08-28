@@ -316,3 +316,7 @@ For details, see [Working with Argo CD Projects](argocd-projects.md).
 +  [Use ApplicationSets](argocd-applicationsets.md) - Deploy to multiple clusters with ApplicationSets
 +  [Argo CD considerations](argocd-considerations.md) - Multi-cluster patterns and cross-account setup
 +  [Declarative Cluster Setup](https://argo-cd.readthedocs.io/en/stable/operator-manual/declarative-setup/#clusters) - Upstream cluster configuration reference
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

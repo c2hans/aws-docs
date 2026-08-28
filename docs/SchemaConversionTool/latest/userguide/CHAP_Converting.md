@@ -43,3 +43,7 @@ To convert your database schema to Amazon RDS, you take the following high-level
 + [Converting schemas using AWS SCT](CHAP_Converting.Manual.md) – If you have schema elements that can't be converted automatically, you have two choices: update the source schema and then convert again, or create equivalent schema elements in your target Amazon RDS DB instance.
 + [Updating and refreshing converted schemas in AWS SCT](CHAP_Converting.UpdateRefresh.md) – You can update your AWS SCT project with the most recent schema from your source database.
 + [Saving and applying converted schemas in AWS SCT](CHAP_Converting.SaveAndApply.md) – When you are ready, have AWS SCT apply the converted schema in your local project to your target Amazon RDS DB instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Schema Conversion Tool User Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query SchemaConversionTool` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ These tutorials walk you through different AWS IoT scenarios. Where appropriate,
 + [Retaining device state while the device is offline with Device Shadows](iot-shadows-tutorial.md)
 + [Tutorial: Creating a custom authorizer for AWS IoT Core](custom-auth-tutorial.md)
 + [Tutorial: Monitoring soil moisture with AWS IoT and Raspberry Pi](iot-moisture-tutorial.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

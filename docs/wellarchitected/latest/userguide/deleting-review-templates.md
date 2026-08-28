@@ -18,3 +18,7 @@ You may also select the name of the template and choose **Delete** from the revi
 1. Choose **Delete**.
 
 You cannot create a new workload from a review template that has been deleted. If you have shared a review template that you deleted with other IAM users, accounts, or organizations, they will not be able to create workloads from it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

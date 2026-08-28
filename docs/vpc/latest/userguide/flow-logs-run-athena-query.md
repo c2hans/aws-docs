@@ -37,3 +37,7 @@ The following is the complete list of Athena named queries. The predefined queri
 + **VpcFlowLogsTotalBytesTransferredPacketLevel** – The 50 pairs of packet-level source and destination IP addresses with the most bytes recorded.
 + **VpcFlowLogsTrafficFrmSrcAddr** – The traffic recorded for a specific source IP address.
 + **VpcFlowLogsTrafficToDstAddr** – The traffic recorded for a specific destination IP address.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

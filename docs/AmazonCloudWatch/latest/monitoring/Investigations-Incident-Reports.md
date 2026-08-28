@@ -54,3 +54,7 @@ Incident report generation is included at no additional charge for all CloudWatc
 + [Incident report terminology](Investigations-IncidentReports-terms.md)
 + [Generate a report from an investigation](Investigations-IncidentReports-Generate.md)
 + [Using 5 Whys analysis in incident reports](incident-report-5whys.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

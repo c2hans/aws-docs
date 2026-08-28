@@ -24,3 +24,7 @@ Disabling a control isn't a permanent action. Suppose you disable a control, and
 + [Disabling a control across standards](disable-controls-across-standards.md)
 + [Disabling a control in a specific standard](disable-controls-standard.md)
 + [Suggested controls to disable](controls-to-disable.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

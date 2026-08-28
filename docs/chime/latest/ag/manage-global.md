@@ -151,3 +151,7 @@ The following data is included in each report for each user in each Team or Ente
 + The number of meetings attended during the week
 + The number of meetings that the user hosted during the week
 + The number of messages sent (1:1, group, and chat room posts) during the week
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

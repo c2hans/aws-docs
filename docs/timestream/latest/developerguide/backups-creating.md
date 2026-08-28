@@ -64,3 +64,7 @@ To create an on-demand backup of a Timestream for LiveAnalytics table, follow th
 <a name="backups-scheduled"></a>
 
 To schedule a backup, refer to [Create a scheduled backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/create-a-scheduled-backup.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

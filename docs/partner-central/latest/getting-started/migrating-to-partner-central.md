@@ -43,3 +43,7 @@ Users who only require access to Skill Builder for AWS training and certificatio
 <a name="work-with-iam-admin"></a>
 
 The IAM Administrator should assign the appropriate managed policies to each user according to the mapping above. The process of onboarding users to IAM depends on a partner's AWS account access setup. Refer to Controlling access for AWS Partner Central users for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

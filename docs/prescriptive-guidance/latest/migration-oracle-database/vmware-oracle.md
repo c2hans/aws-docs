@@ -18,3 +18,7 @@ VMware Cloud on AWS is a good option for your Oracle database when:
 + You have a large number of databases and you need fast migration (for example, only a few hours) to the cloud without requiring any additional work from the migration team.
 
 For more information, see the blog posts [How to Migrate Oracle Workloads to VMware Cloud on AWS](https://aws.amazon.com/blogs/apn/how-to-migrate-oracle-workloads-to-vmware-cloud-on-aws/) and [Best Practices for Virtualizing Oracle RAC with VMware Cloud on AWS](https://aws.amazon.com/blogs/apn/virtualizing-oracle-rac-with-vmware-cloud-on-aws/) on the AWS Partner Network (APN) blog.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

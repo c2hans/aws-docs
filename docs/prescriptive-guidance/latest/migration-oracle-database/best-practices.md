@@ -87,3 +87,7 @@ When your database is on AWS, make sure that you are following best practices in
 + Set up automatic backups using [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html). You can also use Oracle Data Pump backups or take manual snapshots.
 + For high availability, set up the Amazon RDS Multi-AZ feature.
 + If you need read-only databases, [set up a Read Replica](rds-oracle.md#rds-oracle-replicas) within the same or across AWS Regions according to your needs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

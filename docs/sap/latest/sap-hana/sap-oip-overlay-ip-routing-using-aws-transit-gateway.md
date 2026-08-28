@@ -21,3 +21,7 @@ With Transit Gateway, you use route table rules which allow the overlay IP addre
  *Pricing for the AWS Transit Gateway*:
 
  AWS Transit Gateway [pricing](https://aws.amazon.com/transit-gateway/pricing/) is based on the number of connections made to the Transit Gateway per hour and the amount of traffic that flows through AWS Transit Gateway. For more information, see [AWS Transit Gateway Service Level Agreement](https://aws.amazon.com/transit-gateway/sla/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ This chapter discusses the lifecycle of a KMS key from creation to deletion, as 
 + [Enabling and disabling keys](enable-and-disable-key.md)
 + [Deleting keys](key-deletion.md)
 + [Rotating key material](rotate-customer-master-key.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

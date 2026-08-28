@@ -100,3 +100,7 @@ EC2 security groups do not function on elastic network interfaces that are attac
 If you are an NSX administrator, you can configure the following NSX features to secure network traffic:
 + VMware vDefend Gateway Firewall - Secures the network perimeter, protecting against external threats (north-south traffic). For more information, see [Add a Gateway Firewall Policy and Rule](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/security/gateway-firewall/add-a-gateway-firewall-policy-and-rule.html) in the VMware NSX documentation.
 + VMware vDefend Distributed Firewall - Protects against attacks originating from within an internal network (east-west traffic). For more information, see [Add a Distributed Firewall](https://techdocs.broadcom.com/us/en/vmware-cis/nsx/nsxt-dc/3-2/administration-guide/security/distributed-firewall/add-a-distributed-firewall.html) in the VMware NSX documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

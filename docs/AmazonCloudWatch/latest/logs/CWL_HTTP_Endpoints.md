@@ -66,3 +66,7 @@ All endpoints support both SigV4 and bearer token authentication:
 + **Streaming line-by-line logs?** Use ND-JSON Logs. Best for log pipelines that emit one event per line. Most flexible – accepts any JSON value type.
 + **Sending structured JSON payloads?** Use Structured JSON Logs. Best for applications that produce well-formed JSON objects or arrays.
 + **Already using OpenTelemetry?** Use OpenTelemetry Logs. Accepts OTLP JSON or Protobuf format and supports partial success responses with retry semantics.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

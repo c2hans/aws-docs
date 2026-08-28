@@ -87,3 +87,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
 +  GENSUS01: Resource optimization through serverless architecture
 +  GENSUS02: Efficient data processing for task analysis
 +  GENSUS03: Energy-efficient model selection
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

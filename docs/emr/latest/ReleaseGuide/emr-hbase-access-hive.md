@@ -51,3 +51,7 @@ You can only connect a Hive cluster to a single HBase cluster.
   ```
 
 For a more advanced use case and example combining HBase and Hive, see the AWS Big Data Blog post, [Combine NoSQL and massively parallel analytics using Apache HBase and Apache Hive on Amazon EMR](https://aws.amazon.com/blogs/big-data/combine-nosql-and-massively-parallel-analytics-using-apache-hbase-and-apache-hive-on-amazon-emr).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,3 +53,7 @@ Noninteractive mode is the manual setup mode for the Amazon DCV Access Console. 
    + `pam-service-name`– The name of the service to use for PAM authentication on the Authentication Server host. If you are installing on a RedHat-based host, use `system-auth`. If you are using Ubuntu/Debian, use `common-auth`.
    + `mariadb-username`– The username of the MariaDB user you created in Step 1 (if you choose MariaDB as your datastore).
    + `mariadb-password`– The password you chose for the MariaDB user you created in Step 1 (if you choose MariaDB as your datastore).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

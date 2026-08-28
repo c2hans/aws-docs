@@ -174,3 +174,7 @@ Amazon CloudWatch captures resource utilization metrics for your training jobs, 
 + **Training logs and artifacts in S3** – Your training job output and model artifacts remain accessible. These are independent of Profiler.
 + **Profiler trace data** – Historical profiling data remains in S3 under `rule-output/` until you delete it.
 + **CloudWatch metrics** – Historical system metrics already in CloudWatch are retained per your account's [retention settings](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/Working-with-log-groups-and-streams.html#SettingLogRetention).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

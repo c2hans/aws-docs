@@ -10,3 +10,7 @@ In Elasticsearch versions before 7.0, a single index could contain multiple mapp
 Migration Assistant resolves this with a built-in transformer that runs during metadata migration and document backfill. By default, the transformer unions legacy mapping types into the source index name. When you need to rename, merge, or drop routed data after the type layer is removed, configure the `TypeMappingSanitizationTransformerProvider` with exact `staticMappings` or pattern-based `regexMappings` across the affected phases. This page describes when type-mapping transformation applies, how to configure it, and how to validate the result.
 
 This work is part of the metadata phase. See [Migrate metadata](migrate-metadata.md) for the surrounding phase that creates index settings, mappings, templates, and aliases on the target.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

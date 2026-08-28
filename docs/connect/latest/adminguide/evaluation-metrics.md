@@ -124,3 +124,7 @@ This metric provides the number of evaluations performed with evaluation status 
 + Requires at least one filter from: queues, routing profiles, agents, or user hierarchy groups.
 + Based on submitted evaluation timestamp.
 + Data for this metric is available starting from January 10, 2025 0:00:00 GMT.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

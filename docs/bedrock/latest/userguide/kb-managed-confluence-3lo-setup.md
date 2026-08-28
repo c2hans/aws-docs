@@ -23,7 +23,7 @@ The generated secret ARN follows this pattern:
 arn:aws:secretsmanager:{{region}}:{{account-id}}:secret:bedrock-managedkb-oauth/{{your-prefix}}/{{connector-type}}/{{uuid}}
 ```
 
-**Permissions for the caller (CreateDataSource):** The IAM principal that calls `CreateDataSource` needs the following permissions on the secret:
+**Permissions for the caller (CreateDataSource):** The IAM principal that calls `CreateDataSource` needs the following permissions on the secret. The console user who signs in also needs Amazon Bedrock permissions to complete the user-managed setup (3LO) flow. For the complete set of IAM permissions the console user needs, see [IAM permissions for user-managed setup (3LO)](kb-managed-3lo-setup.md).
 
 ```
 {
@@ -104,3 +104,7 @@ Admin authorization applies per Atlassian site, not per organization. If your co
 1. Verify that your Confluence Cloud instance is accessible from your network.
 
 1. Try using a different browser or clearing your browser cache.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

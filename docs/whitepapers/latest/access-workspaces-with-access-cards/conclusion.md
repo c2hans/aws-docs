@@ -14,3 +14,7 @@ Specifically, you have completed the following:
 + Set up an Active Directory Enterprise Certificate Authority used to issue domain controller certificates.
 + Created an Amazon Directory AD Connector enabled to support smart card authentication. You registered the DoD root and intermediate certificate authorities with the AD Connector and associated a secondary OCSP address for each certificate using the AWS CLI.
 + Created an Amazon WorkSpaces WSP instance associated with the smart card-enabled Amazon Directory Service AD Connector, allowing for pre-authorization access using a CAC, as well as in-session pass-through use of CAC certificates to access protected content.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

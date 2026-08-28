@@ -12,3 +12,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/security-instance-replac
  When doing in-place patching, there are a lot of intermediary states between before and after applying updates, which is harder to test for all combinations of states.
 
  An OS update strategy of using instance replacement with deterministic updates fits well into blue/green, wave, and phase based deployment models.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

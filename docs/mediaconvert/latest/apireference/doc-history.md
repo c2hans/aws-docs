@@ -19,3 +19,7 @@ The following table describes important changes to this documentation.
 | New CMAF output group | cmafGroupSettings and its children added to schema, under OutputGroupSettings.  | June 12, 2018 |
 | New Getting Started Using SDKs or CLI | Added chapter that shows how to get your custom endpoint and send MediaConvert requests to it. Includes examples in various programming languages. | May 17, 2018 |
 | New AWS Elemental MediaConvert service release | Initial documentation for the AWS Elemental MediaConvert service. | November 27, 2017 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

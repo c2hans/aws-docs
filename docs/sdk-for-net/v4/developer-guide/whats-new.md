@@ -57,3 +57,7 @@ Preview 4 of the AWS SDK for .NET Version 4 was released on November 15, 2024. F
 **August 16, 2024: Blog post for preview 1 release for version 4**
 
 The AWS SDK for .NET Version 4 was released as a first preview on August 16, 2024. For more information about this preview, see the blog post [Preview 1 of AWS SDK for .NET V4](https://aws.amazon.com/blogs/developer/preview-1-of-aws-sdk-for-net-v4/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,7 @@ If you terminate an instance running in the Capacity Block before the reservatio
 
 1. Expand **Advanced details**, and for **Purchasing option**, choose **Capacity Blocks**. Then do one of the following:
    + To launch the instances into a specific Capacity Block, for **Capacity Reservation** choose **Specify Capacity Reservation**, and then select the Capacity Block.
-   + (*UltraServers only*) To launch the instances into an UltraServer Capacity Block resource group, for **Capacity Reservation** choose **Specify Capacity Reservation resource group**, and then select the resource group.
+   + (*UltraServers only*) To launch the instances into an UltraServer Capacity Block Capacity Reservation Resource Group, for **Capacity Reservation** choose **Specify Capacity Reservation Resource Group**, and then select the Capacity Reservation Resource Group.
 
 1. Choose **Launch instance**.
 
@@ -52,7 +52,7 @@ aws ec2 run-instances \
 --capacity-reservation-specification CapacityReservationTarget={CapacityReservationId={{capacity_block_id}}}
 ```
 
-The following example launches an instance into an UltraServer Capacity Block resource group.
+The following example launches an instance into an UltraServer Capacity Block Capacity Reservation Resource Group.
 
 ```
 aws ec2 run-instances \
@@ -88,7 +88,7 @@ New-EC2Instance `
 -CapacityReservationTarget_CapacityReservationId {{capacity_block_id}}
 ```
 
-The following example launches an instance into an UltraServer Capacity Block resource group.
+The following example launches an instance into an UltraServer Capacity Block Capacity Reservation Resource Group.
 
 ```
 New-EC2Instance `
@@ -107,3 +107,7 @@ New-EC2Instance `
 + To launch instances into a Capacity Block using EC2 Fleet, see [Tutorial: Configure your EC2 Fleet to launch instances into Capacity Blocks](ec2-fleet-launch-instances-capacity-blocks-walkthrough.md).
 + To set up an EKS managed node group with a Capacity Block, see [Create a managed node group with Capacity Blocks for ML](https://docs.aws.amazon.com/eks/latest/userguide/capacity-blocks-mng.html) in the **Amazon EKS User Guide**.
 + To set up AWS ParallelCluster using a Capacity Block, see [ML on AWS ParallelCluster](https://catalog.workshops.aws/ml-on-aws-parallelcluster/en-US).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

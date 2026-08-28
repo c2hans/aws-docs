@@ -21,3 +21,7 @@ After baselines for performance are established, system administrators must moni
 + Increased reporting requirements around business milestones (for example, after a large semi-annual sales kick-off)
 + On-boarding of a large new SAP user population within the business
 + Technology changes, such as infrastructure sizing, database patches, operating system version updates, or SAP software upgrades
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -134,3 +134,7 @@ Using [CloudWatch synthetic monitoring](https://docs.aws.amazon.com/AmazonCloudW
 **Suggestion 9.5.1:** Use Compute Optimizer for reviewing your performance metrics.
 
 AWS Compute Optimizer collects resource utilization data and helps avoid over-provisioning and under-provisioning resources such as [Amazon Elastic Compute Cloud](https://aws.amazon.com/ec2/) (EC2), [Amazon Elastic Block Store](https://aws.amazon.com/ebs/) (EBS) volumes, [Amazon Elastic Container Service](https://aws.amazon.com/ecs/) (ECS) services on [AWS Fargate](https://aws.amazon.com/fargate/), and [AWS Lambda functions](https://aws.amazon.com/lambda/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

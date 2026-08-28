@@ -21,3 +21,7 @@ If you use a feature listed above and the AWS CRT extention is not installed in 
 <a name="php-crt-install"></a>
 
 Instructions on how to install the AWS CRT extension are available on the main page of the [GitHub repository for the aws-crt-php](https://github.com/awslabs/aws-crt-php#aws-common-runtime-php-bindings).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for PHP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-php` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

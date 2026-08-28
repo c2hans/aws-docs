@@ -80,3 +80,7 @@ For all video renditions, audio is source passthrough.
 | --- | --- |
 | Greater than 480p30/60 and less than or equal to 1080p30/60, at 3.5 Mbps | Source encoding parameters (no ladder) |
 | 480p30/60 at 1.5 Mbps | Source encoding parameters (no ladder) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

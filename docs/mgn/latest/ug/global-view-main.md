@@ -51,21 +51,6 @@ As a management account, you can perform the following actions on multiple manag
 +  Disconnect servers from service
 +  Mark as archived
 +  Start/stop replication
-+ Change staging disk type
-+ Edit replication settings
-+ Launch settings – edit general launch settings only
-+ Post launch
-  + Deactivate the post-launch feature for this server
-  + Change deployment settings (test and cutover, test only, or cutover only)
-+ Start/stop replication
-+ Test and cutover drop-down menu:
-  +  Launch test
-  +  Mark as ready for cutover
-  + Revert to ready for testing
-  + Launch cutover
-  + Finalize cutover
-  + Revert to ready for cutover
-  + Terminate launch instances
 
 ## Applications
 <a name="global-view-source-servers-application"></a>
@@ -107,3 +92,7 @@ As a management account, you can perform the following actions on a single manag
 <a name="global-view-source-servers-import-export"></a>
 
 Use this feature to import and export your source servers, applications, and waves from a single or multiple accounts using the CSV template file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

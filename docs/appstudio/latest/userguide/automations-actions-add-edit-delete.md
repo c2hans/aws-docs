@@ -56,3 +56,7 @@ Use the following procedure to delete an action from an automation in an App Stu
 1. In the left-side **Automations** menu, choose the automation that contains the action you want to delete.
 
 1. In the canvas, choose the trash icon in the action you want to delete and choose **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

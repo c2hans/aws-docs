@@ -62,3 +62,7 @@ For information about enabling Object Lock on an existing bucket, see [ Enable O
 
 1. Review the **Delete objects: status** notification to confirm that the delete operation has been blocked due to the Object Lock policy.
 ![The Amazon S3 console, Delete objects status notification.](http://docs.aws.amazon.com/connect/latest/adminguide/images/s3-objectlock-failed.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

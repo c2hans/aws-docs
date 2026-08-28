@@ -55,3 +55,7 @@ AWS Organizations allows you to centrally govern your AWS accounts. You can perf
 + [AWS Compliance Solutions Guide](https://aws.amazon.com/compliance/solutions-guide)
 + [AWS Partner Solutions for Governance, Risk, and Compliance](https://aws.amazon.com/financial-services/partner-solutions/risk/)
 + [AWS Public Sector Partner Program](https://aws.amazon.com/partners/programs/public-sector/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -210,3 +210,7 @@ After you train your model to your target performance level, you can use your ad
  Be sure to delete adapter versions that you no longer need. To delete an adapter:
 + Go to the Adapters landing page, select the adapter, and choose **Delete**.
 + Type **Delete** into the text box, and then choose **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

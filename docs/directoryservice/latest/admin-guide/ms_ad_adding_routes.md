@@ -10,3 +10,7 @@ You can use AWS Directory Service for Microsoft Active Directory to take advanta
 Similarly, you must also enter the IP address information when routing traffic from your AWS Managed Microsoft AD on AWS to a peer AWS VPC, if the VPC uses public IP ranges.
 
 When you add the IP addresses as described in [Creating a trust relationship between your AWS Managed Microsoft AD and self-managed AD](ms_ad_setup_trust.md), you have the option of selecting **Add routes to the security group for this directory's VPC**. This option should be selected unless you have previously customized your [security group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-network-security.html#adding-security-group-rule) to allow the necessary traffic as shown below. For more information, see [Understand your directory's AWS security group configuration and use](ms_ad_best_practices.md#understandsecuritygroup).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

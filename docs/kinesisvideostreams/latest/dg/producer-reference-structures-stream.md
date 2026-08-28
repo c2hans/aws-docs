@@ -83,3 +83,7 @@ The **StreamMetrics** object is filled by calling `getKinesisVideoMetrics`.
 | overallViewSize  | UINT64 | The overall view size in bytes. |
 | currentFrameRate  | UINT64 | The observed frame rate for the current stream. |
 | currentTransferRate | UINT64 | The observed transfer rate in bytes per second for the current stream. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

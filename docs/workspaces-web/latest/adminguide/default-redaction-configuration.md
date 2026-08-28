@@ -21,3 +21,7 @@ You must set the default redaction configuration for all data types. You can cho
 + Advanced configuration
 
 The default value will apply to all data types, unless an override is applied at the data type level. URL enforcement uses similar logic to Chrome policy for managing allow and blocklists. For guidance using block and allow URLs, see [Allow or block access to websites](https://support.google.com/chrome/a/answer/7532419?hl=en#zippy=%2Clinux). For the best results, add URLs to these lists following Chrome's blocklist filter format. For more information, see [URL blocklist filter format](https://support.google.com/chrome/a/answer/9942583?_ga=2.44620960.505898626.1675896662-439274379.1675896662&visit_id=638114931513376779-3689089291&p=url_blocklist_filter_format&rd=1).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

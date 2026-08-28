@@ -53,3 +53,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/government-lens/a
 + [How AI and ML are helping tackle the global teacher shortage ](https://aws.amazon.com/blogs/publicsector/how-ai-and-ml-are-helping-tackle-the-global-teacher-shortage/)
 + [Improving school safety: How the cloud is helping K12 students in the wake of violent incidents in schools](https://aws.amazon.com/blogs/publicsector/improving-school-safety-how-cloud-helping-k12-students-wake-violence/)
 + [Heading into Hurricane Season ](https://aws.amazon.com/blogs/publicsector/heading-into-hurricane-season/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

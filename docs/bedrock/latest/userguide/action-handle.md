@@ -17,3 +17,7 @@ Select a topic to learn how to configure how fulfillment of the action group is 
 + [Configure Lambda functions to send information that an Amazon Bedrock agent elicits from the user](agents-lambda.md)
 + [Return control to the agent developer by sending elicited information in an InvokeAgent response](agents-returncontrol.md)
 + [Get user confirmation before invoking action group function](agents-userconfirmation.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

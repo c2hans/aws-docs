@@ -38,3 +38,7 @@ For detailed instructions on creating user-configured notifications, see [Step 1
 Your notifications are delivered to the delivery channel that you chose during configuration. You can also view notifications by choosing the bell icon in the console navigation bar. The bell icon shows a red badge when new notifications are available.
 
 For more information on viewing notifications, see [Step 2: Viewing notifications](https://docs.aws.amazon.com/notifications/latest/userguide/getting-started.html#getting-started-step2) in the *AWS User Notifications User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

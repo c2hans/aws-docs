@@ -56,3 +56,7 @@ For small files of up to 100 megabytes, data view creation takes approximately 2
    + **S3 path** – The location where the external data view is stored. This location is unique for every data view.
    + **Details** – Format options selected at the time of creating the data view.
    + **API Credentials** – The credentials required to access the external data view from the S3 location. These credentials are only valid for 60 minutes. After the credentials expire, you need to choose the refresh icon to generate new credentials.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

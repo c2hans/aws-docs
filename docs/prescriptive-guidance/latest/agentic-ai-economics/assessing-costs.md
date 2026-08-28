@@ -100,3 +100,7 @@ The following is an example list of cost drivers for risks and defects.
 | Cost of errors | $50–5,000 per error incident |
 | Human error impact | 2–15% of total operational cost |
 | Error rates and rework | 1.5–4 times original cost for corrections |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

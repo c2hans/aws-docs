@@ -34,8 +34,8 @@ The topology visualization in the Topology page in the Operator Web App offers m
 ### Learned
 <a name="learned"></a>
 
-Learned view is generated from the Agent Space understanding and pipeline skill and display structured summaries of your infrastructure. The following learned views are available:
-+ **Topology** – The default view, generated from the Agent Space Understanding skill. Displays a structured summary of your infrastructure organized by logical services and request paths.
+Learned views are built from the Agent Space Understanding and pipeline topology memory, and display structured summaries of your infrastructure. The following learned views are available:
++ **Topology** – The default view, built from the Agent Space Understanding memory. Displays a structured summary of your infrastructure organized by logical services and request paths.
 + **Pipeline** – Displays your CI/CD pipeline topology, showing deployment stages, actions, and their relationships to infrastructure resources. This view is only available when pipeline topology has been generated for your agent space.
 
 ### Others
@@ -71,7 +71,11 @@ While the application topology provides important context during investigations,
 
 To limit the resources the agent has access to, restrict the policy for the role assigned to the agent to access cross-account resources. For more information, see [Limiting Agent Access in an AWS Account](aws-devops-agent-security-limiting-agent-access-in-an-aws-account.md).
 
-## Topology and the Agent Space Understanding skill
-<a name="topology-and-the-agent-space-understanding-skill"></a>
+## Topology and the Agent Space Understanding memory
+<a name="topology-and-the-agent-space-understanding-memory"></a>
 
-The topology graph feeds into the Agent Space Understanding learned skill, which encodes a structured summary of your infrastructure for use during investigations. When topology discovery completes for a new agent space, the system automatically generates the Agent Space Understanding skill. For more information about learned skills, see [Learned Skills](about-aws-devops-agent-learned-skills.md).
+The topology graph feeds the Agent Space Understanding memory, which holds a structured summary of your infrastructure for use during investigations. When topology discovery completes for a new Agent Space, AWS DevOps Agent automatically generates the Agent Space Understanding memory. For more information, see [DevOps Agent Memories](about-aws-devops-agent-devops-agent-memories.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

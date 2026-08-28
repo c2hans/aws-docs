@@ -36,3 +36,7 @@ For more information about the AWS Python Driver and complete instructions for u
 The AWS ODBC Driver for MySQL is a client driver designed for the high availability of RDS for MySQL. The driver can exist alongside the MySQL Connector/ODBC driver and is compatible with the same workflows.
 
 For more information about the AWS ODBC Driver for MySQL and complete instructions for installing and using it, see the [Amazon Web Services (AWS) ODBC Driver for MySQL](https://github.com/aws/aws-mysql-odbc) GitHub repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

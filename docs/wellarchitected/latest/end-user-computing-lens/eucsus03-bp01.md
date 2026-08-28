@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  You can select a session duration to configure a maximum active session for a user, which defaults to 16 hours. Disconnect timeout and idle disconnect timeout determine when to log off an existing user session. By default, they are both configured at 15 minutes each. The default value can be reduced without disrupting the end user experience.
 
 For example, you can set the idle disconnect timeout for five minutes. You can set timecout configurations in the [fleet console](https://docs.aws.amazon.com/appstream2/latest/developerguide/set-up-stacks-fleets.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

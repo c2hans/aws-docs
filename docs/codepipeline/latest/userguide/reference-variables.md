@@ -386,3 +386,7 @@ For CodeBuild, CloudFormation, and Lambda actions, the variable keys are configu
 | Variable key | Example variable syntax |
 | --- | --- |
 | The Lambda action will produce as variables all key-value pairs that are included in the outputVariables section of the [PutJobSuccessResult API](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_PutJobSuccessResult.html) request. For a tutorial with a Lambda action that uses variables from an upstream action (CodeCommit) and generates output variables, see [Tutorial: Using variables with Lambda invoke actions](tutorials-lambda-variables.md). | \#{TestVariables.testRunId} |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

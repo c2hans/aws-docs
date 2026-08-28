@@ -26,3 +26,7 @@ To use the AWS CLI to create a deployment group, call the [create-deployment-gro
   + The names of the Classic Load Balancers, Application Load Balancers, or Network Load Balancers in Elastic Load Balancing to be used for instances registered in the replacement environment.
 **Warning**
 If you are configuring both an Auto Scaling group and an Elastic Load Balancing load balancer in your deployment group, and you want to [attach the load balancer to the Auto Scaling group](https://docs.aws.amazon.com/autoscaling/ec2/userguide/attach-load-balancer-asg.html), we recommend completing this attachment *before* creating the CodeDeploy deployment from this deployment group. Attempting to complete the attachment after creating the deployment may cause all the instances to become deregistered from the load balancer unexpectedly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

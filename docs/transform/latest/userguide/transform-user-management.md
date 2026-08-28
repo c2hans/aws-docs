@@ -67,3 +67,7 @@ To grant a user or role access to AWS Transform:
 1. Attach a policy that includes the `transform:AccessTransformProfile` action to the IAM user or role. For an example policy, see [Allow users to access AWS Transform with IAM credentials](security_iam_id-based-policy-examples.md#id-based-policy-examples-access-transform-webapp).
 
 To revoke access, remove the policy from the IAM user or role.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

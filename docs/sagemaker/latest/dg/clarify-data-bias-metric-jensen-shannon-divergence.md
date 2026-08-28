@@ -21,3 +21,7 @@ The range of JS values for binary, multicategory, continuous outcomes is [0, ln(
 + Positive values mean the label distributions diverge, the more positive the larger the divergence.
 
 This metric indicates whether there is a big divergence in one of the labels across facets.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

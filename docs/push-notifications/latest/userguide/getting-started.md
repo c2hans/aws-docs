@@ -10,3 +10,7 @@ In order to set up AWS End User Messaging Push so that it can send push notifica
 + For Firebase Cloud Messaging (FCM) credentials they can be obtained through the Firebase console, see [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging).
 + For Baidu credentials, see [Baidu](https://push.baidu.com/).
 + For Amazon Device Messaging (ADM) credentials, see [Obtain Credentials](https://developer.amazon.com/docs/adm/obtain-credentials.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Push. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query push-notifications` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

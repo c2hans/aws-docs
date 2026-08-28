@@ -17,3 +17,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 + [PERF01-BP05 Use policies and reference architectures](perf_architecture_use_policies_and_reference_architectures.md)
 + [PERF01-BP06 Use benchmarking to drive architectural decisions](perf_architecture_use_benchmarking.md)
 + [PERF01-BP07 Use a data-driven approach for architectural choices](perf_architecture_use_data_driven_approach.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

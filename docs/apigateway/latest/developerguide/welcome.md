@@ -82,3 +82,7 @@ For an introduction to Amazon API Gateway, see the following:
 + [Get started with API Gateway](getting-started.md), which provides a walkthrough for creating an HTTP API.
 + [Serverless land](https://serverlessland.com/video?tag=Amazon%20API%20Gateway), which provides instructional videos.
 + [Happy Little API Shorts](https://www.youtube.com/playlist?list=PLJo-rJlep0EDFw7t0-IBHffVYKcPMDXHY), which is a series of brief instructional videos.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

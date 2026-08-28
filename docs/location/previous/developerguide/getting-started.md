@@ -16,3 +16,7 @@ To begin learning about the Amazon Location APIs, use the following tutorial to 
 + [Create a web app to use Amazon Location Service](qs-web.md)
 + [Create an Android app to use Amazon Location Service](qs-android.md)
 + [Create an iOS app for Amazon Location Service](qs-ios.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

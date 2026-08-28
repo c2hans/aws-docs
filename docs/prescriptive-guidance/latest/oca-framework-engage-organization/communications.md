@@ -65,3 +65,7 @@ To begin implementing the communications plan:
 1. Establish monitoring mechanisms.
 
 The effective implementation of the communications plan is critical for driving cloud adoption and achieving desired business outcomes. By following these best practices, using the provided checklist, and maintaining ongoing leadership support, organizations can ensure that stakeholders remain informed, engaged, and committed throughout the cloud transformation process.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

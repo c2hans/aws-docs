@@ -18,3 +18,7 @@ Complete the following steps to create a flow that enables conversational analyt
 
 1. On the navigation menu, choose **Channels**, **conversational analytics connectors**. Choose the conversational analytics integration connector that you want to associate with the flow. In the **Flow name** field, start typing the name of your flow to display a list, and then choose the flow.
 ![The Connectors page, a list of available flows.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contactlens-connector-flow.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

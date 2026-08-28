@@ -182,3 +182,7 @@ Text(0, 0.5, 'counts')
 ```
 
 ![Bar chart showing the number of counts to different bitstrings, with the highest bar for "000" containing over 700 counts.](http://docs.aws.amazon.com/braket/latest/developerguide/images/demo-result.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

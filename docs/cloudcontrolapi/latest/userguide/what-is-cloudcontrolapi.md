@@ -53,3 +53,7 @@ The following table shows the Cloud Control API operations that you can use to t
 | [CancelResourceRequest](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_CancelResourceRequest.html) | [`cancel-resource-request`](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/cancel-resource-request.html) |
 | [GetResourceRequestStatus](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_GetResourceRequestStatus.html) | [`get-resource-request-status`](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/get-resource-request-status.html) |
 | [ListResourceRequests](https://docs.aws.amazon.com/cloudcontrolapi/latest/APIReference/API_ListResourceRequests.html) | [`list-resource-requests`](https://docs.aws.amazon.com/cli/latest/reference/cloudcontrol/list-resource-requests.html) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Control API. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudcontrolapi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

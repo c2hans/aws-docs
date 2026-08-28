@@ -34,3 +34,7 @@ Within each cluster, there are nodes, channel placement groups, and channels.
 When the MediaLive video engineer designs a channel, they specify the cluster for the channel, and the channel placement group within the cluster. The video engineer chooses the cluster and channel placement group carefully. This is not an ad-hoc decision.
 
 When the MediaLive operator runs the first channel in a channel placement group, MediaLive chooses a free node in the cluster to run the channel on. After that, whenever another channel in the channel placement group starts, it always runs on that node.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ When a phone number is released from your Connect Customer instance:
 If the phone number is associated with a flow, that flow will be deactivated until another number is associated with it.
 
 When customers call the phone number you have released, they will get a message that it is not a working phone number.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

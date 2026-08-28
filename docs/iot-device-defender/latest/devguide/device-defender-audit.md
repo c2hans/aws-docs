@@ -30,3 +30,7 @@ Non compliant audit checks with this severity often indicate security best pract
 <a name="device-defender-audit-severity-next-steps"></a>
 
 To understand the types of audit checks that can be performed, see [Audit checks](device-defender-audit-checks.md). For information about service quotas that apply to audits, see [Service Quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#limits_iot).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Device Defender. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-device-defender` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

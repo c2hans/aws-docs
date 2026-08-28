@@ -83,3 +83,7 @@ The output shows that the `status` has changed to `ACCEPTED`. The resources that
 <a name="getting-started-shared-use-resources"></a>
 
 After you accept the invitation to join a resource share, you can perform specific actions on the shared resources. These actions vary by resource type. For more information, see [Shareable AWS resources](shareable.md). The resources are available directly in each resource's service console and API/CLI operations. If the resource is regional, then you must use the correct AWS Region in the service console or API/CLI command. If the resource is global, then you must use the designated home Region, US East (N. Virginia), `us-east-1` To view the resource in AWS RAM, you must open the AWS RAM console to the AWS Region that the resource share was created in.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RAM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ram` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

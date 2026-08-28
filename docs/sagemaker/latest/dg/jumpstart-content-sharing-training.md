@@ -37,3 +37,7 @@ After providing the basic details about your model, you'll need to configure the
 1. Select an instance type. We recommend a GPU instance with more memory for training with large batch sizes. For a comprehensive list of SageMaker training instances across AWS Regions, see the **On-Demand Pricing** table in [Amazon SageMaker Pricing.](https://aws.amazon.com/sagemaker/pricing/)
 
 1. Provide metrics. Define metrics for a training job by specifying a name and a regular expression for each metric that your training monitors. Design the regular expressions to capture the values of metrics that your algorithm emits. For example, the metric `loss` might have the regular expression `"Loss =(.*?);"`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

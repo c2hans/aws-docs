@@ -21,3 +21,7 @@ Application Manager is a component of AWS Systems Manager. This section includes
 + [Tag resources in Application Manager](application-manager-working-tags.md)
 + [Working with CloudFormation templates and stacks in Application Manager](application-manager-working-stacks.md)
 + [Working with clusters in Application Manager](application-manager-working-clusters.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

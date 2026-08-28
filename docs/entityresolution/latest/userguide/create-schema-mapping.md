@@ -332,3 +332,7 @@ You can’t modify a schema mapping after you associate it with a workflow. You 
 After you create the schema mapping, you're ready to [create a matching workflow](create-matching-workflow.md) or [create an ID namespace](id-namespace.md).
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Entity Resolution. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query entityresolution` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

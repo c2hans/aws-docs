@@ -44,3 +44,7 @@ Because strong cryptography depends on truly unpredictable random number generat
 AWS KMS records the use and management of cryptographic keys in AWS CloudTrail logs. You can use AWS CloudTrail logs to inspect use of your cryptographic keys, including the use of keys by AWS services on your behalf.
 
 To achieve these goals, the AWS KMS system includes a set of AWS KMS operators and service host operators (collectively, “operators”) that administer “domains.” A domain is a Regionally defined set of AWS KMS servers, HSMs, and operators. Each AWS KMS operator has a hardware token that contains a private and public key pair that is used to authenticate its actions. The HSMs have an additional private and public key pair to establish encryption keys that protect HSM state synchronization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,3 +50,7 @@ For example, 0.265 divided by 0.00002 is 13250.
 The maximum and minimum luminance are given in units of **0.0001 candelas per square meter**. Your content provider might provide this value in candelas per square meter instead. If so, then convert these numbers by multiplying by 10,000, then entering the result in the web interface.
 
 For example, a value of 1000.0000 cd/m2 for max luminance would be converted to 10,000,000 and entered as that in the web interface.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

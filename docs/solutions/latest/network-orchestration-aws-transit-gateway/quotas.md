@@ -42,3 +42,7 @@ The solution creates a new transit gateway for each hub stack deployment unless 
 <a name="aws-transit-gateway-network-manager-quotas"></a>
 
 The solution creates a new [global network](https://docs.aws.amazon.com/network-manager/latest/tgwnm/what-are-global-networks.html) for each hub stack deployment unless you provide an existing global network ID in the hub template parameter **(Optional) Do you wish to use an existing global network? If yes, you must provide the global network id below.** Your account has default global network quota of five. Only one global network is recommended for all the other deployments in different AWS Regions in the hub account. Provide the global network ID created by the first deployment in the other deployments in different AWS Regions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Network Orchestration for AWS Transit Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -240,3 +240,7 @@ CodeGuru Profiler supports Spark, but does not have `-javaagent` support. The ag
 <a name="javaagent-other"></a>
 
 You can start any Java-based application by using the `-javaagent` command line option. If your runtime environment or hosting environment uses Java, consult your documentation to see how to customize the startup parameters for Java.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

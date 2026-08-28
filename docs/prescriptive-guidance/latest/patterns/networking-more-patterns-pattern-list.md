@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/ne
 + [Set up disaster recovery for Oracle JD Edwards EnterpriseOne with AWS Elastic Disaster Recovery](set-up-disaster-recovery-for-oracle-jd-edwards-enterpriseone-with-aws-elastic-disaster-recovery.md)
 + [Use BMC Discovery queries to extract migration data for migration planning](use-bmc-discovery-queries-to-extract-migration-data-for-migration-planning.md)
 + [Use Network Firewall to capture the DNS domain names from the Server Name Indication for outbound traffic](use-network-firewall-to-capture-the-dns-domain-names-from-the-server-name-indication-sni-for-outbound-traffic.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

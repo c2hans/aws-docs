@@ -25,3 +25,7 @@ Parameter Store centralizes configuration data such as environment variables, se
 + [Working with parameters in Parameter Store using Run Command commands](sysman-param-runcommand.md)
 + [Using native parameter support in Parameter Store for Amazon Machine Image IDs](parameter-store-ec2-aliases.md)
 + [Deleting parameters from Parameter Store](deleting-parameters.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

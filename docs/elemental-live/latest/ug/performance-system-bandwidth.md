@@ -36,3 +36,7 @@ Socket1 bandwidth: 19.0827 GB/s
 The following guidelines apply for system bandwidth:
 + Single-socket L8xx appliances have a maximum bandwidth of 90 GBps
 + Dual-socket L8xx appliances have a maximum bandwidth of 140 GBps
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

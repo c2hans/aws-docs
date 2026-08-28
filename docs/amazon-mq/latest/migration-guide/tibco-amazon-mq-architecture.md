@@ -29,3 +29,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/tibco-a
  In Amazon MQ, a *routed queue* as implemented by a TIBCO EMS server is not required.
  A network bridge from a topic to a queue can be used in TIBCO EMS architecture to avoid the naming issue with routed queues and to provide multi-hop capability between EMS servers using a Topic. In Amazon MQ, queue names are consistent and all topic/queue messages are shared among a [Networks of Brokers](https://docs.aws.amazon.com/amazon-mq/latest/developer-guide/network-of-brokers).
  Currently, Amazon MQ only supports JMS 1.1. Applications written for JMS 2.0 can be migrated to Amazon MQ using the [Qpid](https://qpid.apache.org/) JMS library, which uses *AMQP* instead of the default, higher-performing *Openwire* protocol. For more details, refer to the [Amazon MQ workshop](https://github.com/aws-samples/amazon-mq-workshop/tree/master/amqp-client).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

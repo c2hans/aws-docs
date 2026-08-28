@@ -53,3 +53,7 @@ Following, you can find a description of the possible status values.
 | RETRIEVED | The virtual tape has been retrieved from the archive. The retrieved tape is read-only. |
 
 For additional information about how to work with tapes and VTL devices, see [Managing tapes in your virtual tape library](managing-virtual-tapes-vtl.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

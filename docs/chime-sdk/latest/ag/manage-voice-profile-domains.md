@@ -19,3 +19,7 @@ The following topics explain how to create and manage voice profile domains.
 + [Deleting voice profile domains](delete-vp-domain.md)
 + [Using tags with voice profile domains](vp-domain-tags.md)
 + [Understanding the voice analytics consent notice](va-consent-notice.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,3 +46,7 @@ If you attempt to rerun a `CASCADE_FAILED` object and any of its dependencies ar
 <a name="dp-manage-cascade-backfills"></a>
 
 If you enable cascade failure and have a pipeline that creates many backfills, pipeline runtime errors can cause resources to be created and deleted in rapid succession without performing useful work. AWS Data Pipeline attempts to alert you about this situation with the following warning message when you save a pipeline: ` {{Pipeline_object_name}} has 'failureAndRerunMode' field set to 'cascade' and you are about to create a backfill with scheduleStartTime {{start_time}}. This can result in rapid creation of pipeline objects in case of failures. ` This happens because cascade failure can quickly set downstream activities as `CASCADE_FAILED` and shut down EMR clusters and EC2 resources that are no longer needed. We recommended that you test pipelines with short time ranges to limit the effects of this situation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

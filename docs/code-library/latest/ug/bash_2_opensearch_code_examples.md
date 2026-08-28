@@ -551,3 +551,7 @@ echo "4. Remember to delete resources when done to avoid charges"
   + [DeleteDomain](https://docs.aws.amazon.com/goto/aws-cli/es-2021-01-01/DeleteDomain)
   + [DescribeDomain](https://docs.aws.amazon.com/goto/aws-cli/es-2021-01-01/DescribeDomain)
   + [GetCallerIdentity](https://docs.aws.amazon.com/goto/aws-cli/sts-2011-06-15/GetCallerIdentity)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

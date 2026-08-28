@@ -182,3 +182,7 @@ The following parameter settings are shown for each parameter that's defined for
 + **Description** (*not editable*) – The parameter description
 + **Type** (*not editable*) – The data type for the parameter value.
 + **Value** – The value for the parameter. If you are using this component for the first time in this recipe, and a default value was defined for the input parameter, the default value appears in the **Value** box with greyed-out text. If no other value is entered, Image Builder uses the default value.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

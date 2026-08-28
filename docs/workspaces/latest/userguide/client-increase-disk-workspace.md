@@ -31,3 +31,7 @@ Increasing your WorkSpace disk size will increase the amount that your organizat
 1. A message displays information about the disk size increase process. Review the information, and choose **Close**.
 
 1. When the disk size increase is finished, you must [ restart the WorkSpace](client-restart-workspace.md) for the changes to take effect. Save any open files before restarting the WorkSpace.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,3 +41,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
 +  **Source code bucket** – This bucket hosts versions of the source code used by the [AWS CodeBuild](https://aws.amazon.com/codebuild/) stage to validate and deploy Network Firewall resources and update related resources.
 +  **CodePipeline artifacts bucket** – This bucket stores input and output artifacts created by the CodePipeline stages. CodePipeline zips and transfers the files for input or output artifacts as appropriate for the action type in the stage.
 +  **(Optional) Network Firewall log destination bucket** – This bucket stores the guidance's logs. This S3 bucket is only created if you select `Amazon S3` for the **Select the type of log destination for the Network Firewall** parameter when you [launch the stack](step-2-launch-the-stack.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Network Inspection on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

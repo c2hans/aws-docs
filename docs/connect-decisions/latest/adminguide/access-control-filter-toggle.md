@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/connect-decisions/latest/adminguide/acce
  The access view filter is considered a different type of filter, and so will not show in the filter chips in the exception and recommendation page. Users can still apply other filters the same way as before, including other product and sites filters
 
  Users can still access exceptions and recommendations for other products OR sites if they turn off the access view toggle, or they have the direct hyperlink to them
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

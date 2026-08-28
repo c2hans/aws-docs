@@ -18,3 +18,7 @@ If the SQL provided is valid, and the schemas match between view dialects, the A
 + [Validating the view generation status](views-api-usage-get-table.md)
 + [Asynchronous states and operations](views-api-usage-async-states.md)
 + [View creation failure scenarios during asynchronous operations](views-api-usage-errors.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ Download and install the AWS SDKs that you want to use. This guide provides exam
    To learn about setting up the SDK for JavaScript v3, see the [Get started with the AWS SDK for JavaScript](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/getting-started.html) topic in the *AWS SDK for JavaScript Developer Guide*.
 
    For code examples for Amazon Personalize, see [Amazon Personalize code examples for SDK for JavaScript v3](https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javascriptv3/example_code/personalize) in the [AWS SDK examples](https://github.com/awsdocs/aws-doc-sdk-examples) repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

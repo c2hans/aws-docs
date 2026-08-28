@@ -39,3 +39,7 @@ After you make a change to an Amazon Bedrock policy, check the effective policie
 <a name="communicate-and-train-bedrock"></a>
 
 Ensure your organizations understand the purpose and impact of your Amazon Bedrock policies. Provide clear guidance on Amazon Bedrock Guardrails behavior and what to expect.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

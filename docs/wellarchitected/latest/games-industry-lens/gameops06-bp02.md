@@ -39,3 +39,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  **Update testing scenarios:** Continuously create and update load test scenarios to validate new features and refactored functionalities, and verify that they reflect the current state of the game.
 +  **Evaluate load testing frameworks:** Adapt to new frameworks as needed to simulate user load, support new protocols, and align with the team's expertise and toolchains.
 +  **Optimize costs:** Start with managed AWS services for ease and convenience, then consider self-managing infrastructure for cost savings as the team grows more comfortable with the load testing process.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

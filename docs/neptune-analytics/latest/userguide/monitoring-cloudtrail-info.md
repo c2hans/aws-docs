@@ -65,3 +65,7 @@ source_url: https://docs.aws.amazon.com/neptune-analytics/latest/userguide/monit
 +  [ GetQuery ](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_GetQuery.html)
 +  [ ListQueries ](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_ListQueries.html)
 +  [ CancelQuery ](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CancelQuery.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune-analytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

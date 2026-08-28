@@ -45,3 +45,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-business-pers
 +  **Strategic delivery excellence** — Organizations that have strong delivery capabilities excel and compete well. These organizations ensure cultural adoption and successful implementation and organizational change. Constant innovation-driven portfolio initiatives help to stay on top of the operations and markets. Innovation is a continuous process everywhere in the organization.
 
  The operations teams focus on the change operation and the development side of the organization focuses on more exploratory and innovative initiatives towards evolution. There is a realization that the fastest and least expensive way for anything new and innovative is through setting up a new program or portfolio. Now it is possible to talk about real strategy delivery with required level of integration within organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

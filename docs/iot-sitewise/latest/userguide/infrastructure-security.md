@@ -12,3 +12,7 @@ You use AWS published API calls to access AWS IoT SiteWise through the network. 
 + Cipher suites with perfect forward secrecy (PFS) such as DHE (Ephemeral Diffie-Hellman) or ECDHE (Elliptic Curve Ephemeral Diffie-Hellman). Most modern systems such as Java 7 and later support these modes.
 
 SiteWise Edge gateways, which run on AWS IoT Greengrass, use X.509 certificates and cryptographic keys to connect and authenticate to the AWS Cloud. For more information, see [Device authentication and authorization for AWS IoT Greengrass](https://docs.aws.amazon.com/greengrass/v1/developerguide/device-auth.html) in the *AWS IoT Greengrass Version 1 Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,3 +47,7 @@ After you create a pixel perfect report in Amazon Quick Sight, you can change th
 1. Enter the margin values that you want your report to have, and then choose **Apply**.
 
 Margin values are applied to every page of a pixel perfect report. You can't set custom settings for specific pages in a report, but you can set custom margins for sections using section padding. For more information on section padding, see [Section padding](qs-reports-section-padding.md). Margin values are expressed in inches. The default margins for all reports are 0.5 inches.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

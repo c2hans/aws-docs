@@ -167,3 +167,7 @@ For more information on AWS Step Functions, see:
 While the AWS Flow Framework for Ruby manages some of the complexity of Amazon SWF, you can also use the Amazon SWF API directly. Using the API directly allows you to build workflows where you have full control over implementing tasks and coordinating them, without worrying about underlying complexities such as tracking their progress and maintaining their state.
 + [Amazon Simple Workflow Service Developer Guide](https://docs.aws.amazon.com/amazonswf/latest/developerguide/)
 + [Amazon Simple Workflow Service API Reference](https://docs.aws.amazon.com/amazonswf/latest/apireference/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

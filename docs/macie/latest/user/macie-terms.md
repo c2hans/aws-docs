@@ -242,3 +242,7 @@ For more information, see [Reviewing your S3 bucket inventory](monitoring-s3-inv
 For sensitive data discovery, Macie determines that an object is *unclassifiable* based on the object’s storage class, file name extension, and contents. An object is *unclassifiable* if: it doesn’t use a supported Amazon S3 storage class, it doesn’t have a file name extension for a supported file or storage format, or Macie wasn’t able to extract and analyze data from the object. For example, the object is a malformed file.
 
 For more information, see [Discovering sensitive data](data-classification.md) and [Supported storage classes and formats](discovery-supported-storage.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

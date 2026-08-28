@@ -52,3 +52,7 @@ Auto Scaling reacts to this change using its [Availability Zone rebalancing logi
 Always perform your Availability Zone evacuation first so traffic is only being split among the remaining Availability Zones
 Specify a [minimum healthy target count with DNS failover](https://docs.aws.amazon.com/elasticloadbalancing/latest/application/target-group-health.html) to match your required minimum target count for that Availability Zone.
 This will help ensure traffic is not sent to the Availability Zone you removed after instances start being terminated.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

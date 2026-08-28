@@ -35,3 +35,7 @@ To install and set up Amazon Q for the Toolkit for Visual Studio, see the [Getti
 To open an issue or view currently open issues, visit [https://github.com/aws/aws-toolkit-visual-studio/issues]( https://github.com/aws/aws-toolkit-visual-studio/issues).
 
 To learn more about Visual Studio, visit [https://visualstudio.microsoft.com/vs/](https://visualstudio.microsoft.com/vs/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

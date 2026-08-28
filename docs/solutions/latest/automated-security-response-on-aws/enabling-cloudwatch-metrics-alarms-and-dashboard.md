@@ -16,3 +16,7 @@ There are four CloudFormation template parameters for CloudWatch functionality.
 1.  **RemediationFailureAlarmThreshold** - The percentage of failing remediations in a period to raise an alarm.
 
 1.  **EnableEnhancedCloudWatchMetrics** - Set this parameter to `yes` to collect individual metrics per control ID. By default, this parameter is set to `no`, so that only metrics on the total number of remediations across all control IDs are collected. Individual metrics and alarms per control ID incur additional cost.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

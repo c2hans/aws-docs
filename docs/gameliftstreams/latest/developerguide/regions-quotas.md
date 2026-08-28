@@ -13,3 +13,7 @@ The service infrastructure is governed by three main categories of constraints:
 + Fixed service limitations
 
 These include restrictions on application sizes, number of applications per region, file management capacities, and GPU allocations across different stream classes and regions. The service implements specific API rate limits for various operations, ranging from 1 to 20 requests per second, ensuring stable service performance. Additionally, there are fixed service limitations concerning stream group configurations, GPU deployments, and application associations that apply uniformly across all customers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

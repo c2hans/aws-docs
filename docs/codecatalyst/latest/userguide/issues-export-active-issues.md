@@ -20,3 +20,7 @@ You can export issues in your current view into a .xlsx file. To export issues, 
 1. Choose the ellipses menu and choose **Export to Excel**.
 
 1. The .xlsx file downloads. By default, it is titled the name of the project and the date the export was completed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

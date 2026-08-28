@@ -76,3 +76,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/machine-learning-
 +  [End-to-End MLOps with Amazon SageMaker AI](https://github.com/aws-samples/amazon-sagemaker-mlops-workshop)
 +  [Controlling and auditing data exploration activities with SageMaker AI Studio and AWS Lake Formation](https://github.com/aws-samples/amazon-sagemaker-studio-audit)
 +  [SageMaker AI Feature Store Examples](https://github.com/aws/amazon-sagemaker-examples/tree/master/sagemaker-featurestore)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

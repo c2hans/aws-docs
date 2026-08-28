@@ -18,3 +18,7 @@ To view details about updates to the service-linked roles discussed in this topi
 **Topics**
 + [Authorizing AWS KMS to manage AWS CloudHSM and Amazon EC2 resources](authorize-kms.md)
 + [Authorizing AWS KMS to synchronize multi-Region keys](multi-region-auth-slr.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

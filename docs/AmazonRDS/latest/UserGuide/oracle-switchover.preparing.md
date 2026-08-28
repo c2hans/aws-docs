@@ -23,3 +23,7 @@ A *bystander replica* is a replica in the Oracle Data Guard configuration that i
 
   Assume that db\_maz is the primary database in a Multi-AZ deployment, and db\_saz is a Single-AZ replica. You initiate a switchover from db\_maz to db\_saz. Afterward, db\_maz is a Multi-AZ replica database, and db\_saz is a Single-AZ primary database. The new primary database is now unprotected by a Multi-AZ deployment.
 + In preparation for a cross-Region switchover, the primary database doesn't use the same option group as a DB instance outside of the replication configuration. For a cross-Region switchover to succeed, the current primary database and its read replicas must be the only DB instances to use the option group of the current primary database. Otherwise, Amazon RDS prevents the switchover.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

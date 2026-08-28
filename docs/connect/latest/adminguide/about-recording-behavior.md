@@ -69,3 +69,7 @@ Connect Customer uses the Amazon S3 [PutObject](https://docs.aws.amazon.com/Amaz
 You need to use an output device (headset or other device) that supports stereo output so you can hear both the agent and customer audio.
 
 Agent and customer recordings are presented in two separate channels. With a full headset, each side will play one channel. But for a one-ear headset, there isn't a mechanism to mix two channels into one.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

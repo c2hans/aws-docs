@@ -252,3 +252,7 @@ You can migrate existing imperative Spark scripts to SDP incrementally:
 1. Run both patterns in parallel during transition — SDP jobs and imperative jobs can coexist.
 
 SDP can reference any table accessible through the SparkSession, including existing Data Catalog tables, external tables, and cross-database references.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

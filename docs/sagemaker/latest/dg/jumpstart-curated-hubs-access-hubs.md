@@ -83,3 +83,7 @@ If a hub is shared across accounts, then the `HUB_NAME` must be the hub ARN. If 
    ```
 
 For more information on fine-tuning and deploying models that you have access to using the SageMaker Python SDK, see [Use foundation models with the SageMaker Python SDK](jumpstart-foundation-models-use-python-sdk.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,3 +39,7 @@ The following Node.js versions are no longer supported by the AWS CDK.
 | 18.x | 2025-05-30 | 2025-11-30 |
 | 16.x | 2023-09-11 | 2025-05-30 |
 | 14.x | 2023-04-30 | 2025-05-30 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -237,3 +237,7 @@ You should delete the service role if you're not using it in any AWS Region. Fir
   + [create-role](https://docs.aws.amazon.com/cli/latest/reference/iam/create-role.html)
   + [delete-role](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-role.html)
   + [delete-role-policy](https://docs.aws.amazon.com/cli/latest/reference/iam/delete-role-policy.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

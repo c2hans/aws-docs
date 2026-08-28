@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/partner-central/latest/developer-guide/w
 
 The AWS Partner Central API Reference was restructured. For more information about the supported API operations, see the [AWS Partner Central API Reference](https://docs.aws.amazon.com/partner-central/latest/APIReference/Welcome.html).
 
-# Working with your opportunities
+# Working with opportunities in the AWS Partner Central API
 <a name="working-with-your-opportunities"></a>
 
 ## What is an Opportunity?
@@ -78,3 +78,7 @@ The AWS Partner Central API Reference was restructured. For more information abo
  Once the opportunity is `Approved`, partners can continue to update the opportunity as needed using the `UpdateOpportunity` action, facilitating seamless co-selling activities.
 
  Partners should continue monitoring the `Opportunity Updated` events through Amazon EventBridge to remain updated on any changes. For more information on tracking AWS updates, refer to the "Working with opportunity updates" section. Partners can also update select fields based on the business validation rules.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

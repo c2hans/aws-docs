@@ -55,3 +55,7 @@ The following dimensions are supported for the DevOps Guru usage metrics.
 | `Class` | This is the class of the resource that is tracked. DevOps Guru uses this dimension with the value `None`. |
 | `Type` | This is type of the resource that is tracked. DevOps Guru uses this dimension with the value `API`. |
 | `Resource` | This is the name of the DevOps Guru operation. Valid values are: `ListInsights`, `ListAnomaliesForInsight`, `ListRecommendations`, `ListEvents`, `SearchInsights`, `DescribeInsight`, `DescribeAnomaly`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

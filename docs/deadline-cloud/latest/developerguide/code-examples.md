@@ -51,6 +51,7 @@ The repository also includes the following examples:
 + [Build a worker-equivalent Amazon Linux 2023 Docker image for Deadline Cloud](examples-container-al2023.md) — A Dockerfile that replicates the package set of the Deadline Cloud service-managed fleet (SMF) worker AMI on Amazon Linux 2023.
 + [Build a Blender Docker image for GPU rendering on Deadline Cloud](examples-container-blender.md) — A Dockerfile that packages Blender with the OpenJD adaptor and GPU support for Cycles rendering in a container.
 + [Upload files to Deadline Cloud job attachments](examples-upload-to-job-attachments.md) — A script that uploads files and directories from your workstation or server to Deadline Cloud job attachments storage.
++ [Set up a virtual workstation for Deadline Cloud with a script](examples-virtual-workstation.md) — Scripts that turn a fresh Linux or Windows workstation into a Deadline Cloud submission machine with a DCC, the submitter, and a pre-configured monitor profile.
 + [Enforce fixed license limits with a Deadline Cloud submission hook](examples-license-limits-hook.md) — A submission hook that enforces fixed license limits by combining the Deadline Cloud Limits feature with a pre-submission hook.
 + [AI agent skills for Deadline Cloud](examples-skills.md) — Reusable AI agent skills that walk an agent through writing job bundles, building conda packages, and creating Windows host configuration scripts.
 
@@ -74,5 +75,10 @@ The following resources help you author and run your own examples in Deadline Cl
 + [Build a worker-equivalent Amazon Linux 2023 Docker image for Deadline Cloud](examples-container-al2023.md)
 + [Build a Blender Docker image for GPU rendering on Deadline Cloud](examples-container-blender.md)
 + [Upload files to Deadline Cloud job attachments](examples-upload-to-job-attachments.md)
++ [Set up a virtual workstation for Deadline Cloud with a script](examples-virtual-workstation.md)
 + [Enforce fixed license limits with a Deadline Cloud submission hook](examples-license-limits-hook.md)
 + [AI agent skills for Deadline Cloud](examples-skills.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

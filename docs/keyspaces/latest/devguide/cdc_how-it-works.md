@@ -101,3 +101,7 @@ For more information about the CDC events captured by CloudTrail, see [Logging A
 <a name="CDC_how-it-works-tagging"></a>
 
 Amazon Keyspaces CDC streams are a taggable resource. You can tag a stream when you create a table programmatically using CQL, the AWS SDK, or the AWS CLI. You can also tag existing streams, delete tags, or view tags of a stream. For more information, see [Tag keyspaces, tables, and streams in Amazon Keyspaces](Tagging.Operations.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

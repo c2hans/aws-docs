@@ -196,3 +196,7 @@ After you set up Security Lake for an organization, the AWS Organizations manage
 As a user of the organization management account, you can disable trusted access for Security Lake in AWS Organizations. For instructions on disabling trusted access, see [How to enable or disable trusted access](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html#orgs_how-to-enable-disable-trusted-access) in the *AWS Organizations User Guide*.
 
 We recommend disabling trusted access if the delegated administrator's AWS account is suspended, isolated, or closed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

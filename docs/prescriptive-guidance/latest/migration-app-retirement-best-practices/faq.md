@@ -19,3 +19,7 @@ If you switch off an application without notifying anyone, it could cause a numb
 <a name="business-value"></a>
 
 An effective decommissioning process can help you realize the business value of a cloud migration in several ways. First, it can help you retire on-premises assets in an orderly and efficient manner, which can help minimize downtime and avoid disruptions to the business during the migration process. Second, an effective decommissioning process can help to ensure that all necessary data is migrated to the cloud and that any remaining data is properly backed up or disposed of. That means you can take full advantage of the benefits of the cloud, such as increased scalability and accessibility. Finally, an effective decommissioning process can help to reduce the overall costs of the migration by ensuring that you're only retiring and replacing assets that are necessary for the move to the cloud.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

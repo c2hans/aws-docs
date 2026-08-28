@@ -13,3 +13,7 @@ Before you can build real-time meeting clients with the Amazon Chime SDK, you mu
 + [Amazon Chime SDK client library for Windows](https://github.com/aws/amazon-chime-sdk-cpp). A C\+\+ library that helps you build Amazon Chime SDK applications on supported devices.
 
  To learn how to integrate your client application with the Amazon Chime SDK, see the actions in the client library `README.md` files. Use the demos to learn how to build specific media components for your application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

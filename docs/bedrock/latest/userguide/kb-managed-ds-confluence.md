@@ -51,3 +51,7 @@ Setting up a Confluence data source involves the following steps:
 1. **Connect the data source.** Create the Confluence data source in the knowledge base using the AWS Management Console or the API. See [Connect a Confluence data source](kb-managed-ds-confluence-connect.md).
 
 1. **(Optional) Enable document-level access control.** Filter query results by each user's Confluence permissions. Requires Basic authentication with Atlassian organization admin credentials. See [Document-level access controls](kb-managed-ds-confluence-acl.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

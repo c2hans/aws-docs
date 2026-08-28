@@ -84,3 +84,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
  **Related examples:**
 +  [AWS Health Dashboard ](https://aws.amazon.com/premiumsupport/technology/aws-health-dashboard/)
 + [ Example AWS status updates ](https://health.aws.amazon.com/health/status?eventID=arn:aws:health:global::event/IAM/AWS_IAM_OPERATIONAL_ISSUE/AWS_IAM_OPERATIONAL_ISSUE_91687_3F72CAD4902)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

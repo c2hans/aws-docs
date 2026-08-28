@@ -15,3 +15,7 @@ User preferences include:
 + When viewing, editing, or authoring code, whether to use a light background or a dark background in the code editor window.
 
 There is no one page for setting your preferences. Instead, wherever you change a preference in the console, such as how to view code changes, that change is saved and applied wherever appropriate.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

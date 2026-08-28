@@ -49,3 +49,7 @@ The following table includes a list of key concepts, features and their definiti
 | Labels and label matchers | Labels uniquely identify alert rules. They link alert rules to notification policies and silences, determining which policy should handle them and which alert rules should be silenced. |
 | Silences | Stop notifications from one or more alert instances. The difference between a silence and a mute timing is that a silence only lasts for only a specified window of time whereas a mute timing is meant to be recurring on a schedule. Uses label matchers to silence alert instances. |
 | Mute timings | Specify a time interval when you don’t want new notifications to be generated or sent. You can also freeze alert notifications for recurring periods of time, such as during a maintenance period. Must be linked to an existing notification policy. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

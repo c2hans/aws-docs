@@ -83,3 +83,7 @@ from stl_s3client where query> -1 limit 5;
       0 |     0 |     0 | 23449 | 2019-07-14 16:27:17.285307 | 616436837208980 | 616436837285306 | 2019-07-14 16:27:17.20898  | 2019-07-14 16:27:17.285306
       0 |     0 |     0 | 23449 | 2019-07-14 16:27:17.353853 | 616436837302216 | 616436837353851 | 2019-07-14 16:27:17.302216 | 2019-07-14 16:27:17.353851
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

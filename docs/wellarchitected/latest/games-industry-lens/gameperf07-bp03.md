@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
  Set up metrics to track how long your matchmaking service takes to find a suitable game session for players. Review matchmaking duration metrics regularly and correlate these times with player behavior and community sentiment. Use this data to develop suitable thresholds for matchmaking timeouts that can be included in your matchmaking rule configuration.
 
  For example, Amazon GameLift FlexMatch provides support for defining matchmaking request timeouts as well as creating matchmaking rules that can [allow requirements to relax over time](https://docs.aws.amazon.com/gamelift/latest/flexmatchguide/match-design-ruleset.html#match-rulesets-components-expansion). This feature allows you to create matchmaking that can adapt to make it straightforward to create matches and place players into game sessions when matches are difficult to find.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

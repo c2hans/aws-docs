@@ -32,3 +32,7 @@ The following table describes the important changes to the documentation since t
 | Updated content, inclusive language initiative | "Management account" not "Master account. | [IAM user role in AMS](defaults-user-role.md), "Policy examples" section |
 | Updated content, Tools account role names | Updated role name CustomerMigrationAccessRole to AWSManagedServicesMigrationRole. | [AWS Application Migration Service (AWS MGN)](tools-account-mgn.md) |
 | SALZ: Continuity management defaults | Updated link and removed obsolete information from [VPC tag and defaults](vpc-tag-and-defaults.md)  | February 28, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

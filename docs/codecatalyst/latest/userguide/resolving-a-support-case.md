@@ -22,3 +22,7 @@ If you belong to more than one space, choose a space in the top navigation bar.
 1. At the top of the page, choose the **?** icon, and then choose **Support for Amazon CodeCatalyst**.
 
 1. Choose the link for the support case that you want to manage. Choose **Resolve case**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

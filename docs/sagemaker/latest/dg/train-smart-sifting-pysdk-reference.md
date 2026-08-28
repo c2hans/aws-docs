@@ -77,3 +77,7 @@ The Main Sifting Dataloader iterator sifts out training samples from a dataloade
 + `model` (a PyTorch model object) – The original PyTorch model
 + `loss_impl` (a sifting loss function of `smart_sifting.loss.abstract_sift_loss_module.Loss`) – A sifting loss function that is configured with the `Loss` module and wraps the PyTorch loss function.
 + `log_batch_data` (bool) – Specify whether to log batch data. If set to `True`, SageMaker smart sifting logs the details of the batches that are kept or sifted. We recommend that you turn it on only for a pilot training job. When logging is on, the samples are loaded to GPU and transferred to CPU, which introduces overhead. The default value is `False`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ You delete the cluster.
 You change the managed shared storage configuration [`SharedStorage`](SharedStorage-v3.md) / [`Name`](SharedStorage-v3.md#yaml-SharedStorage-Name).
 You remove the managed shared storage from the configuration.
 We recommend that you back up your shared storage regularly to avoid the loss of data. You can define backups in your cluster with [`SharedStorage`](SharedStorage-v3.md) / [`FsxLustreSettings`](SharedStorage-v3.md#SharedStorage-v3-FsxLustreSettings) / [`AutomaticBackupRetentionDays`](SharedStorage-v3.md#yaml-SharedStorage-FsxLustreSettings-AutomaticBackupRetentionDays) and [`DailyAutomaticBackupStartTime`](SharedStorage-v3.md#yaml-SharedStorage-FsxLustreSettings-DailyAutomaticBackupStartTime). To learn how to manage data backups across AWS services, see [AWS Backup](https://docs.aws.amazon.com/aws-backup/latest/devguide/whatisbackup.html) in the *AWS Backup Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -196,3 +196,7 @@ You can tune this filtering method primarily by specifying the **Lower Cost-Accu
 +  **Labeling** – If you have labels, choose **I have labels**. If you do not have labels, you can still continue with the next step in generating a labeling file.
 +  **Generate labeling file** – AWS Glue extracts records from your source data and suggest potential matching records. You choose the Amazon S3 bucket to store the generated label file. Choose **Generate labeling file** to start the process. When done, choose **Download labeling file**. The downloaded file will have a column for labels where you can fill in the labels.
 +  **Upload labels from Amazon S3** – Choose the completed labeling file from the Amazon S3 bucket where the label file is stored. Then, choose to either append the labels to your existing labels or to overwrite your existing labels. Choose **Upload labeling file from Amazon S3**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

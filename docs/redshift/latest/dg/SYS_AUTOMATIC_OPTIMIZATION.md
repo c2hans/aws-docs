@@ -82,3 +82,7 @@ task_type  |    database    | object_type | object_ids |           status       
  VacuumSort | tpcds_100g_oob | table       | 155259     | Task completed successfully | Completed | 2025-12-22 07:27:15.943018
 (12 rows)
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

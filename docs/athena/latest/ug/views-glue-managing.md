@@ -35,3 +35,7 @@ Athena supports the following actions for AWS Glue Data Catalog views.
 | [SHOW CREATE VIEW](show-create-view.md) | Shows the SQL statement that creates the specified view. |
 | [SHOW VIEWS](show-views.md) | Lists the views in the specified database, or in the current database if you omit the database name. Use the optional `LIKE` clause with a regular expression to restrict the list of view names. You can also see the list of views in the left pane in the console. |
 | [SHOW COLUMNS](show-columns.md) | Lists the columns in the schema for a view. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ For more information about configuring SSO, see the following guides:
 + [AWS Wickr Single Sign-on (SSO) setup with Microsoft Entra (Azure AD)](https://docs.aws.amazon.com/wickr/latest/adminguide/entra-ad-sso.html)
 + [AWS Wickr Single Sign-on (SSO) setup with Okta](https://repost.aws/articles/ARqcPJ8MctR02Om4APlBEANw/aws-wickr-single-sign-on-sso-setup-with-okta)
 + [AWS Wickr Single Sign-on (SSO) setup with Amazon Cognito](https://repost.aws/articles/ARIOjROyJDTfutje_DJW9wWg/aws-wickr-single-sign-on-sso-setup-with-amazon-cognito)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

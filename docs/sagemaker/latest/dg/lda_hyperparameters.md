@@ -16,3 +16,7 @@ In the `CreateTrainingJob` request, you specify the training algorithm. You can 
 | max\_restarts | The number of restarts to perform during the Alternating Least Squares (ALS) spectral decomposition phase of the algorithm. Can be used to find better quality local minima at the expense of additional computation, but typically should not be adjusted. <br />**Optional**<br />Valid values: Positive integer<br />Default value: 10 |
 | max\_iterations | The maximum number of iterations to perform during the ALS phase of the algorithm. Can be used to find better quality minima at the expense of additional computation, but typically should not be adjusted. <br />**Optional**<br />Valid values: Positive integer<br />Default value: 1000 |
 | tol | Target error tolerance for the ALS phase of the algorithm. Can be used to find better quality minima at the expense of additional computation, but typically should not be adjusted. <br />**Optional**<br />Valid values: Positive float<br />Default value: 1e-8 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

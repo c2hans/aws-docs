@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 + [MAOPS 8: Are product teams from both organizations aligned with the deal rationale and how to organize themselves internally?](maops-8.md)
 + [MAOPS 9: How do combined product teams organize their product hypothesis, prototyping, and testing with customer validation?](maops-9.md)
 + [Resources](resources-ops.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

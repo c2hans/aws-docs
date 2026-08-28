@@ -55,3 +55,7 @@ If the queue associated with the limit has an associated fleet with a fleet capa
 
 **Important**
 Do not add the limit's amount requirement name as a `customAmounts` entry in your fleet's capabilities. If a fleet declares the amount as a capability, the fleet treats it as a per-worker resource and the queue-level limit is bypassed. The queue-limit association alone provides scheduling compatibility for jobs that require the limit.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

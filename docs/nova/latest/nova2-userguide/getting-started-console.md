@@ -32,3 +32,7 @@ The following example demonstrates how to use the text playground:
 1. To explore the video understanding capabilities of Amazon Nova, you can upload one video in MKV, MOV, or MP4 format that is less than or equal to 25 MB from your computer. You can use Amazon S3 for videos up to 1 GB. After the video is uploaded, you can ask Amazon Nova about the video.
 
 1. Choose **Run** to run inference on the model. The generated text appears below your prompt in the text panel.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

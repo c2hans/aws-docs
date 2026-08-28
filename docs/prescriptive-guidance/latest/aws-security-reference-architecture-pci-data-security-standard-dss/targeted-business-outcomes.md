@@ -30,3 +30,7 @@ In addition, the following guide describes architectural patterns that are align
 + AWS SRA – PCI DSS (this guide) provides guidance to help organizations design and operate a multi-account AWS environment that aligns with the Payment Card Industry Data Security Standard (PCI DSS)
 
 We recommend that you start with the AWS SRA – core architecture guide to understand the foundational architecture and then consult the complementary guides to take advantage of advanced functionality and implementations. For more information about this content set, refer to [AWS Security Reference Architecture](https://aws.amazon.com/prescriptive-guidance/security-reference-architecture/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

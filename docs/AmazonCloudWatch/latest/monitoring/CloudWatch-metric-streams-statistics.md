@@ -28,3 +28,7 @@ For more information, see [Amazon CloudWatch Pricing](https://aws.amazon.com/clo
 Some metrics do not support percentiles. Percentile statistics for these metrics are excluded from the stream and do not incur metric stream charges. An example of these statistics that do not support percentiles are some metrics in the `AWS/ECS` namespace.
 
 The additional statistics that you configure are streamed only if they match the filters for the stream. For example, if you create a stream that has only `EC2` and `RDS` in the include filters, and then your statistics configuration lists `EC2` and `Lambda`, then the stream includes `EC2` metrics with additional statistics, `RDS` metrics with only the default statistics, and doesn't include `Lambda` statistics at all.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -190,3 +190,7 @@ When you release an offer set, AWS Marketplace sends multiple notifications to h
 <a name="listing-fee-multi-product-offer-set"></a>
 
 Listing fees are calculated at the individual product level when the customer is billed for each product. Each private offer incurs listing fees based on the product, the vendor, and any selling authorization involved. For more information about listing fees for AWS Marketplace sellers, see the [Understanding listing fees for AWS Marketplace seller documentation](https://docs.aws.amazon.com/marketplace/latest/userguide/listing-fees.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

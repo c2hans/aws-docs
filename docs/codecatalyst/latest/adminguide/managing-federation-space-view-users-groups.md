@@ -17,3 +17,7 @@ Users or groups that are added to IAM Identity Center assignments usually appear
 1. To view users in each group, choose the group. To view application details in the AWS Management Console, choose **View application**.
 
    To view information in IAM Identity Center, choose **IAM Identity Center**. You will be taken to IAM Identity Center, where you can work with your Identity federation administrator to configure SSO users and groups for your instance in IAM Identity Center.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

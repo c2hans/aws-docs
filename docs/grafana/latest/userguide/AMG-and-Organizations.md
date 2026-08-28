@@ -44,3 +44,7 @@ If you are not an organization administrator, you must contact an administrator 
 If you create a workspace in a member account and you want that workspace to access resources from other AWS accounts in your organization, you must use customer managed permissions in the workspace. For more information, see [Customer-managed permissions](AMG-manage-permissions.md#AMG-customer-managed).
 
 To create a workspace in a member account, you must be signed in to an account that has the **AWSGrafanaAccountAdministrator**, **AWSSSOMemberAccountAdministrator**, and **AWSSSODirectoryAdministrator** policies. For more information, see [Grafana administrator in a member account using IAM Identity Center](security_iam_id-based-policy-examples.md#security_iam_id-based-policy-examples-admin-member).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

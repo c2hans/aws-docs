@@ -48,3 +48,7 @@ The following table tracks updates to Neptune managed policies starting from the
 | [NeptuneFullAccess](full-access-iam-managed-policy.md) (added permissions) | Added data-access permissions, and permissions for new global database APIs. | 2022-07-28 |
 | [NeptuneConsoleFullAccess](console-full-access-iam-managed-policy.md) (added permissions) | Added permissions for new global database APIs. | 2022-07-21 |
 | Neptune started tracking changes | Neptune began tracking changes to its AWS managed policies. | 2022-07-21 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

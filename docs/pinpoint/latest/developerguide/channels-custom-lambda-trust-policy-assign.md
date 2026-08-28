@@ -56,3 +56,7 @@ arn:aws:mobiletargeting:{{us-east-1}}:{{111122223333}}:apps/dbaf6ec2226f0a9a8615
 
 **Note**
 If you do restrict execution of the Lambda function to a specific campaign, you first have to create the function with a less restrictive policy. Next, you have to create the campaign in Amazon Pinpoint and choose the function. Finally, you have to update the execution policy to refer to the specified campaign.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -8,3 +8,7 @@ End of support notice: On March 31, 2027, AWS will end support for Amazon WorkMa
 <a name="authenticate_domain"></a>
 
 The Sender Policy Framework (SPF) is an email validation standard designed to combat email spoofing. *Spoofing* is the act of making an email sent by a malicious actor look like one sent by a legitimate user. For information about configuring SPF for your Amazon WorkMail-enabled domain, see [Authenticating email with SPF in Amazon SES](https://docs.aws.amazon.com/ses/latest/dg/send-email-authentication-spf.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

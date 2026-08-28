@@ -16,3 +16,7 @@ All notifications are sent using an email that you provided for patch notificati
 You can use named lists of contacts for non-resource based notifications, such as alerts based on GuardDuty or AWS Config. For example, you might have a list named `SecurityContacts` and another named `OperationsContacts`. AMS sends alarms and notifications to these lists.
 
 See [AWS Config Control Compliance report](acc-report-config-control-compliance.md) for more details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

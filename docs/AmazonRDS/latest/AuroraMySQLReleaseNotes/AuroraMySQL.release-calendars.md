@@ -59,6 +59,7 @@ Amazon RDS Extended Support charges apply only to certain minor versions after a
 | Aurora MySQL version | Aurora MySQL release date | Aurora MySQL end of standard support date |
 | --- | --- | --- |
 |  **8.4.7** (Compatible with Community MySQL 8.4.7) | May 21, 2026 | November 30, 2027 |
+|  **3.13** (Compatible with Community MySQL 8.0.45) | August 27, 2026 | August 27, 2027 |
 |  **3.12** (Compatible with Community MySQL 8.0.44) | February 17, 2026 | February 17, 2027 |
 |  **3.11** (Compatible with Community MySQL 8.0.43) | November 13, 2025 | November 13, 2026 |
 |  **3.10** (Compatible with Community MySQL 8.0.42) (LTS) | July 31, 2025 | April 30, 2028 |
@@ -73,3 +74,7 @@ LTS – Aurora MySQL long-term support (LTS) versions. For more information, see
  1 This minor version will continue to be available when the major version is in Amazon RDS Extended Support.
 
  2 Aurora MySQL 2.12 versions through 2.12.1 are compatible with MySQL version 5.7.40, and versions 2.12.2 and higher are compatible with MySQL version 5.7.44.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

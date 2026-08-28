@@ -25,3 +25,7 @@ The following table describes significant updates to *AWS Wavelength Developer G
 | Payment Card Industry Data Security Standard (PCI DSS)  | AWS Wavelength is now certified and compliant with the Payment Card Industry Data Security Standard (PCI DSS).  | January 19, 2021  |
 | [Wavelength Zones added](https://docs.aws.amazon.com/wavelength/latest/developerguide/available-wavelength-zones.html) | This release introduces new Wavelength Zones.  | September 22, 2020 |
 | Initial release | This release introduces AWS Wavelength. | August 6, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wavelength. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wavelength` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

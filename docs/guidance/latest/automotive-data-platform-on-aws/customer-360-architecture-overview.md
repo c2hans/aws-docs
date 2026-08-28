@@ -42,3 +42,7 @@ The solution uses 11 datasets:
  **Aggregated metrics**: 6. monthly\_kpis - NPS and health scores by month 7. operational\_kpis - Service quality metrics 8. issue\_categories - Issue breakdown by type 9. revenue\_streams - Revenue by stream 10. revenue\_trends - Revenue changes 11. at\_risk\_revenue - Revenue at risk by segment
 
  **Key metrics**: \* NPS: 52 → 42 (declining 1.5% monthly) \* Health Score: 65 → 56 (declining 1.5% monthly) \* Battery Issues: 15% → 40% (increasing 2% monthly)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

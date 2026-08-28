@@ -81,3 +81,7 @@ These values can be adjusted for the Multimodal Embeddings model hyperparameters
 + Learning rate - (min/max learning rate) – default: 5.00E-05, min: 5.00E-08, max: 1
 + Batch size - Effective batch size – default: 576, min: 256, max: 9,216
 + Max epochs – default: "auto", min: 1, max: 100
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

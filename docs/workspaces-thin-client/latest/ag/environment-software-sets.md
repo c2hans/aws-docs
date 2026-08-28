@@ -50,3 +50,7 @@ WorkSpaces Thin Client is an AWS End User Computing service that provides users 
 | 2.1.0 | 12-20-2023 |  + Adds a **Home** button to the device settings and enables support for Meta keys. This allows ends users to invoke the lock screen by pressing Meta\+L.  |
 | 2.0.1 | 12-06-2023 |  + Zero-day fix for Chromium's CVE-2024-6345 critical security issue.  |
 | 2.0.0 | 11-15-2023 |  + Initial release  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -49,3 +49,7 @@ You can create, access, and manage your transit gateways using any of the follow
 <a name="pricing"></a>
 
 You are charged hourly for each attachment on a transit gateway, and you are charged for the amount of traffic processed on the transit gateway. By default, data processing charges are allocated to the account that owns the source attachment. You can use flexible cost allocation to customize how these charges are allocated based on your organizational needs. For more information, see [AWS Transit Gateway pricing](https://aws.amazon.com/transit-gateway/pricing/) and [Flexible cost allocation](metering-policy.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

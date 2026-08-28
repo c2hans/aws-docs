@@ -75,3 +75,7 @@ The following table provides a list of the most common services. To search for o
 | AWS WAF | [ Testing and tuning your AWS WAF protections](https://docs.aws.amazon.com/waf/latest/developerguide/web-acl-testing.html) |
 | Amazon WorkMail | [Troubleshooting the Amazon WorkMail web application](https://docs.aws.amazon.com/workmail/latest/userguide/troubleshooting.html) |
 | Amazon WorkSpaces | [Troubleshooting Amazon WorkSpaces issues](https://docs.aws.amazon.com/workspaces/latest/adminguide/admin_troubleshooting.html) \| [Troubleshooting Amazon WorkSpaces client issues](https://docs.aws.amazon.com/workspaces/latest/adminguide/client_troubleshooting.html) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

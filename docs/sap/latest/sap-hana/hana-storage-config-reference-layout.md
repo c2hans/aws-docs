@@ -351,3 +351,7 @@ Suggested Storage Configuration:
 | HANA Backup | - | - | - | st1/efs |  | Optional and Workload Dependent. Review [HANA Backup](hana-storage-config-ebs.md#hana_backup)  |
 
  1 Xen instance types. We suggest migrating to a Nitro instance type.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -568,3 +568,7 @@ The following table provides information about important JSON keys to configure.
 | `secretArn` | The ARN of the secret containing the Smartsheet credentials required to connect Amazon Q Business to Smartsheet. | `string`<br />The minimum length is 20 and the maximum length is 2,048 characters. | Yes |
 | `type` | The type of the data source. | `string`<br />The only allowed value is:+  `SMARTSHEET`  | Yes |
 | `version` | The version of the template that's currently supported. | `string`<br />Must match the pattern "1.0.0". | No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

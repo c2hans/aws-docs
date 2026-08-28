@@ -124,3 +124,7 @@ When Security Hub CSPM findings are ingested, the system updates each finding wi
  When your account service quotas permit, AWS Security Incident Response attempts to deploy an [Amazon GuardDuty suppression rule](https://docs.aws.amazon.com/guardduty/latest/ug/findings_suppression-rule.html) or an [AWS Security Hub CSPM automation rule](https://docs.aws.amazon.com/securityhub/latest/userguide/automation-rules.html). These rules suppress future findings matching the type and source of known authorized activity (for example, source IP address, ASN, identity principal, or resource). AWS Security Hub CSPM rules are deployed with priority 10, which allows you to override these automations with self-defined rules if needed.
 
  In this way, AWS Security Incident Response tunes detection sources based on expected behavior in your AWS environment. Your Incident Response Team is notified of modifications to these rule-sets, and changes are rolled-back upon request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

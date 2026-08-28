@@ -24,3 +24,7 @@ This section describes the components and AWS services that make up this solutio
 |  [Amazon S3](https://aws.amazon.com/s3/)  |  **Optional.** Deploys Amazon S3 buckets to host the web UI assets. |
 |  [AWS WAF](https://aws.amazon.com/waf/)  |  **Optional.** Deploys AWS WAF web access control list (ACL) to protect AWS AppSync from common security events, such as SQL injection and cross-site scripting (XSS). |
 |  [Amazon CloudFront](https://aws.amazon.com/cloudfront/)  |  **Optional.** Deploys CloudFront with an Amazon S3 bucket as the origin. This restricts access to the Amazon S3 bucket so that it’s not publicly accessible and prevents direct access from the bucket. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Network Orchestration for AWS Transit Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

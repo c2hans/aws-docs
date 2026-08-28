@@ -62,3 +62,7 @@ Amazon Location Service supports several geometry types, including `Point`, `Mul
 <a name="overlaying-static-map-styling-properties"></a>
 
 Each geometry can be customized using various style properties, such as color, outline color, size, and more. These properties allow you to control the appearance of each geometry on the map, ensuring that the overlay aligns with your business requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

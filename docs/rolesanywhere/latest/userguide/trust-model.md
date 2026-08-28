@@ -383,3 +383,7 @@ Hex encoding example:
 Certificate revocation is supported through the use of imported certificate revocation lists (CRLs). Currently, certification revocation is only supported by the API and CLI. You can import a CRL that is generated from your CA using [`ImportCrl`](https://docs.aws.amazon.com/rolesanywhere/latest/APIReference/API_ImportCrl.html) API or [`import-crl`](https://docs.aws.amazon.com/cli/latest/reference/rolesanywhere/import-crl.html) CLI command. Certificates used for authentication will be checked for their revocation status.
 
  Callbacks to CRL Distribution Points (CDPs) or Online Certificate Status Protocol (OCSP) endpoints are not supported.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for IAM Roles Anywhere. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rolesanywhere` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

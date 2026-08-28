@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/saas-lens/bridge-
  This diagram highlights how the bridge model enables you to combine the silo and pool models. Here we have a monolithic architecture with classic web and application tiers. The web tier, for this solution, is deployed in a pool model that is shared by all tenants. While the web tier is shared, the underlying business logic and storage of our application are actually deployed in a silo model where each tenant has its own application tier and storage.
 
  If the monolith was broken into microservices, each of the various microservices in your system could leverage combinations of the silo and pool models. More detail on this approach will follow in the description of specifics of applying silo and pool models with different AWS constructs. The key takeaway here is that your view of the silo and pool models will be much more granular for environments that are decomposed into a collection of services that have varying isolation requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_Instanc
 # InstancesDistribution
 <a name="API_InstancesDistribution"></a>
 
-Use this structure to specify the distribution of On-Demand Instances and Spot Instances and the allocation strategies used to fulfill On-Demand and Spot capacities for a mixed instances policy.
+Use this structure to specify how a mixed instances policy distributes capacity across On-Demand, Spot, and supported Capacity Reservation types, and to specify the allocation strategies that are used to fulfill the capacity.
 
 When you define a mixed instances policy, this structure uses default values for unspecified parameters, except for `SpotMaxPrice`. However, we recommend that you review and customize the other parameters as needed and explicitly specify the allocation strategies. For help choosing allocation strategies, see [Allocation strategies](https://docs.aws.amazon.com/autoscaling/ec2/userguide/allocation-strategies.html) in the *Amazon EC2 Auto Scaling User Guide*.
 
@@ -13,6 +13,12 @@ When you modify `SpotAllocationStrategy`, `SpotInstancePools`, or `SpotMaxPrice`
 
 ## Contents
 <a name="API_InstancesDistribution_Contents"></a>
+
+ ** DistributionSegments.member.N **
+The Distribution Segments configuration. Each segment contains an ordered list of capacity types to prioritize.
+For more information, see [Use Distribution Segments to target multiple capacity types](https://docs.aws.amazon.com/autoscaling/ec2/userguide/use-distribution-segments.html) in the *Amazon EC2 Auto Scaling User Guide*.
+Type: Array of [DistributionSegment](API_DistributionSegment.md) objects
+Required: No
 
  ** OnDemandAllocationStrategy **
 The allocation strategy to apply to your On-Demand Instances when they are launched. Possible instance types are determined by the launch template overrides that you specify.
@@ -76,3 +82,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for C\+\+](https://docs.aws.amazon.com/goto/SdkForCpp/autoscaling-2011-01-01/InstancesDistribution)
 +  [AWS SDK for Java V2](https://docs.aws.amazon.com/goto/SdkForJavaV2/autoscaling-2011-01-01/InstancesDistribution)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/autoscaling-2011-01-01/InstancesDistribution)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

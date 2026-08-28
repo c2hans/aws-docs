@@ -67,3 +67,7 @@ The following data types are supported:
 +  [WorkerLogDelivery](API_WorkerLogDelivery.md)
 +  [WorkerLogDeliveryDescription](API_WorkerLogDeliveryDescription.md)
 +  [WorkerSetting](API_WorkerSetting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MSK Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query MSKC` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

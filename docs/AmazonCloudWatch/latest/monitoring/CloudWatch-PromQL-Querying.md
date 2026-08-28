@@ -158,3 +158,7 @@ You can also query CloudWatch PromQL data programmatically by calling the Promet
 The PromQL endpoint follows the pattern `https://monitoring.{{AWS Region}}.amazonaws.com/api/v1/{{operation}}`. For example, for the US East (N. Virginia) (us-east-1) Region, the endpoint for an instant query is `https://monitoring.us-east-1.amazonaws.com/api/v1/query`.
 
 For the full API reference, including supported operations, request parameters, and response formats, see [Prometheus-compatible APIs](CloudWatch-PromQL-APIs.md). For the list of AWS Regions where PromQL querying is available, see [Supported AWS Regions](CloudWatch-PromQL.md#CloudWatch-PromQL-Regions). For the IAM actions required for each operation, see [IAM permissions for PromQL](CloudWatch-PromQL.md#CloudWatch-PromQL-IAM).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

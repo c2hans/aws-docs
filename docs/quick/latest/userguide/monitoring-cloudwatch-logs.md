@@ -465,3 +465,7 @@ The following example shows a skipped document log where crawling was skipped du
 + **Encryption** – Use customer-managed AWS KMS keys for sensitive data.
 + **Access control** – Implement least-privilege IAM policies.
 + **Data retention** – Configure appropriate retention policies for your compliance requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

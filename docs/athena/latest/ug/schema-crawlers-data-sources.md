@@ -52,3 +52,7 @@ To have the AWS Glue crawler create two separate tables, set the crawler to have
 1. On the **Review and update** page, review the choices that you made. To edit a step, choose **Edit**.
 
 1.  Choose **Update**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

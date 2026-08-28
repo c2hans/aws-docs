@@ -29,3 +29,7 @@ In addition to those destinations, call analytics also supports real-time alerts
 
 **Note**
 When you create a call analytics configuration, you don't select a specific audio source. That allows you to reuse configurations across multiple audio sources. For example, a configuration can enable call recording and provide call transcription. You can then use the configuration with a Chime SDK Voice Connector and an audio stream via a Kinesis Video Stream. You can also share the configuration among multiple Voice Connectors. Each call analytics configuration is unique and identified by an ARN.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

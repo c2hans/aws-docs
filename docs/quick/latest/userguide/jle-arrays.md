@@ -21,3 +21,7 @@ JSON expression language allows generic array manipulation for the following fun
 + `unique` – Given an array returns only unique items inside this array.
 
   For example, `["unique", [1, 2, 2]]` returns `[1, 2]`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

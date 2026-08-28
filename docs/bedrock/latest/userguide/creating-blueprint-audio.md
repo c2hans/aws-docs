@@ -30,3 +30,7 @@ Below are some example fields for audio processing.
 | call\_categories | The category (or categories) of the call. Choose one or more from Billing, Tech support, Customer service, Account support, Sales, Complaints, Product issues, Service issues, General inquiries, Other. | inferred | [string] (Array of strings) |
 | spoken\_locations | Locations explicitly mentioned in the conversation, including cities, states, and countries. | extractive | [string] |
 | call\_opening | Did the agent greet the caller and introduce themselves at the beginning of the call?  | extractive | boolean |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

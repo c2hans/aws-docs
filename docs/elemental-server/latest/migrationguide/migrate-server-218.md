@@ -21,3 +21,7 @@ In this procedure, we show how to upgrade AWS Elemental Server version 2.17.5 to
 + [Step F: Install RHEL 9 on a AWS Elemental Server node](migrate-server-218-rhel9.md)
 + [Step G: Install worker software on a AWS Elemental Server node](migrate-server-218-install-software.md)
 + [Step H: Restore the database on a AWS Elemental Server node](migrate-server-218-install-restore.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

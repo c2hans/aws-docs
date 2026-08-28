@@ -248,3 +248,7 @@ For more information, see [Step 2: Choose data sources and classifiers](define-c
  Table properties, or parameters, as they are known in the AWS CLI, are unvalidated key and value strings. You can set your own properties on the table to support uses of the Data Catalog outside of AWS Glue. Other services using the Data Catalog may do so as well. AWS Glue sets some table properties when running jobs or crawlers. Unless otherwise described, these properties are for internal use, we do not support that they will continue to exist in their current form, or support product behavior if these properties are manually changed.
 
  For more information about table properties set by AWS Glue crawlers, see [Parameters set on Data Catalog tables by crawler](table-properties-crawler.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

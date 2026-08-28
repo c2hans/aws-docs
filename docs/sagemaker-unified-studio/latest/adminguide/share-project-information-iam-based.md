@@ -25,3 +25,7 @@ This feature simplifies user onboarding by providing all necessary access inform
 1. Paste the copied message into your preferred communication method (email, chat, documentation) to share with project members.
 
 The welcome message provides users with complete information needed to access their project, including login instructions and the specific IAM role they should use.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

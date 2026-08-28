@@ -81,3 +81,7 @@ Set `aws:SourceArn` to the stream ARN pattern for the cluster that uses the role
 ```
 
 After you create a stream, you can tighten `aws:SourceArn` to the exact stream ARN if the role serves a single stream. For a full explanation of the trust policy and permissions policy for CDC service roles, see [Configuring IAM](cdc-iam.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

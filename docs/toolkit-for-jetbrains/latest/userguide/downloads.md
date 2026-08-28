@@ -24,3 +24,7 @@ In addition to the AWS Toolkit for JetBrains, AWS also offers IDE Toolkits for V
 **Toolkit for Visual Studio links**
 + Follow this link to [Download the Toolkit for Visual Studio](https://marketplace.visualstudio.com/items?itemName=AmazonWebServices.aws-toolkit-vscode) from the Visual Studio Marketplace.
 + To learn more about the Toolkit for Visual Studio, see the [Toolkit for Visual Studio](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/welcome.html) User Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

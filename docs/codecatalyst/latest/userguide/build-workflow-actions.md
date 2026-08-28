@@ -57,3 +57,7 @@ Using the build action within a workflow has the following benefits:
 If you're using a build action to deploy your application, consider using a CodeCatalyst *deploy action* instead. Deploy actions perform behind-the-scenes configuration that you would otherwise have to write manually if you're using a build action. For more information on the available deploy actions, see [List of deploy actions](deploy.md#deploy-concepts-action-supported).
 
 You can also use AWS CodeBuild to build your applications. For more information, see [What is CodeBuild?](https://docs.aws.amazon.com/codebuild/latest/userguide/welcome.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

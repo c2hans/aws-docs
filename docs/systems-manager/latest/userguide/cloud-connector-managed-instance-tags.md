@@ -19,3 +19,7 @@ For example, to list all managed instances onboarded through a specific Cloud Co
 aws ssm describe-instance-information \
     --filters "Key=tag:CloudConnector,Values={{CLOUD_CONNECTOR_ID}}"
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ Make your description as detailed as possible. Include relevant resource informa
 When you provide as much detail as possible, you increase the chances that your case can be resolved quickly.
 
 You can also use the [AWS Support API](https://docs.aws.amazon.com/awssupport/latest/user/Welcome.html) with service code `service-ams-operations-report-incident` to report an incident.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

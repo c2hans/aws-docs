@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/enable-penetration-test.html
 ---
 
-# Enable Continuum penetration test
+# Enable penetration test
 <a name="enable-penetration-test"></a>
 
 Configure AWS Security Agent to run autonomous penetration tests on your applications. This setup enables AWS Security Agent to access your AWS resources, verify domain ownership, and perform comprehensive security testing that identifies exploitable vulnerabilities in your web applications and APIs.
@@ -32,7 +32,7 @@ In the first step of the wizard, specify the target domains you want to test and
    +  **DNS\_TXT** – Prove domain ownership by adding a TXT record to your domain’s DNS configuration.
    +  **HTTP\_ROUTE** – Prove domain ownership by hosting a verification file at a specific URL on your domain.
    +  **PRIVATE\_VPC** - Only usable for private VPC penetration testing. Verifies that the domain resolves to an IP in a private CIDR range
-   + For more information, see [Enable an application domain for Continuum penetration testing](enable-test-domain.md).
+   + For more information, see [Enable an application domain for penetration testing](enable-test-domain.md).
 
 1. Choose **Add another domain** to add additional domains (up to 20 total).
 
@@ -48,7 +48,7 @@ In the second step of the wizard, verify ownership of each domain you configured
 1. For each domain, select it and trigger verification based on your chosen method:
    +  **Route 53 domains (same AWS account)**: Choose **One-click verification**. AWS Security Agent automatically creates the DNS record and completes verification.
    +  **DNS TXT (other DNS providers)**: Copy the verification token, add the TXT record with your DNS registrar, then select the domain and choose **Verify**.
-   +  **HTTP route**: Place the verification token at the required route path on your web server, then select the domain and choose **Verify**. For details, see [Enable an application domain for Continuum penetration testing](enable-test-domain.md).
+   +  **HTTP route**: Place the verification token at the required route path on your web server, then select the domain and choose **Verify**. For details, see [Enable an application domain for penetration testing](enable-test-domain.md).
 
 1. Choose **Next** to proceed to optional configuration.
 
@@ -160,8 +160,8 @@ AWS Security Agent requires an IAM role to access your AWS resources (VPC, Cloud
 **Note**
 The default IAM role includes permissions for accessing VPC resources, CloudWatch log groups, Secrets Manager, Lambda functions, and other services required for penetration testing. It is recommended to use the default IAM role unless you have specific security requirements.
 
-## Step 4: Save and enable Continuum penetration testing
-<a name="_step_4_save_and_enable_continuum_penetration_testing"></a>
+## Step 4: Save and enable penetration testing
+<a name="_step_4_save_and_enable_penetration_testing"></a>
 
 After configuring all required settings, enable penetration testing for your AWS Security Agent agent.
 
@@ -181,3 +181,7 @@ After enabling penetration testing:
 + (Optional) Configure additional repositories for findings remediation
 
 For more information about running and managing penetration tests, see the AWS Security Agent web application documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

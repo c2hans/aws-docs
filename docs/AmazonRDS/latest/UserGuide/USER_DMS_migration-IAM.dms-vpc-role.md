@@ -22,3 +22,7 @@ You must create an IAM role for AWS DMS to manage the VPC settings for your reso
 1. In the **Name, review, and create** page, set the **Role name** to `dms-vpc-role` and choose **Create role**.
 
 This creates the role for the DMS to manage the VPC settings for the migration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

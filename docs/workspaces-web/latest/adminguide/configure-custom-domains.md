@@ -358,3 +358,7 @@ To test your configuration, follow these steps:
 1. Next, enter the portal URL in your browser, you should be redirected to the custom domain after logging in to your IdP.
 
 1. Finally, log in to your IdP and click on the application tile for your portal. You should be redirected to custom domain.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

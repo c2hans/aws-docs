@@ -35,3 +35,7 @@ You can connect with Trino using an available JDBC driver. For more information,
 <a name="emr-trino-monitoring"></a>
 
 You can monitor Amazon EMR clusters through the AWS Management Console. For more information, see [View and monitor an Amazon EMR cluster as it performs work](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-manage-view.html). Amazon EMR also sends its monitoring metrics to Amazon CloudWatch. For more information about monitoring an Amazon EMR cluster, see [Amazon CloudWatch events and metrics from Amazon EMR]().
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

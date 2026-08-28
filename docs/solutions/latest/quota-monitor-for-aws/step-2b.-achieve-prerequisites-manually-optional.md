@@ -16,3 +16,7 @@ Use the following procedure to manually fulfill prerequisites for the solution i
 
 **Note**
 The solution deploys service-managed StackSets. You must allow trusted access with AWS Organizations in the organization management account before you can use service-managed permissions on the AWS CloudFormation console (refer to [Enable trusted access with AWS Organizations](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-orgs-enable-trusted-access.html?icmpid=docs_cfn_console) in the *AWS CloudFormation User Guide*) or AWS Organizations console (refer to [Enabling trusted access with AWS CloudFormation Stacksets](https://docs.aws.amazon.com/organizations/latest/userguide/services-that-can-integrate-cloudformation.html#integrate-enable-ta-cloudformation) in the *AWS Organizations User Guide*).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Quota Monitor for AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

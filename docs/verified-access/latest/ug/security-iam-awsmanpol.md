@@ -29,3 +29,7 @@ View details about updates to AWS managed policies for Verified Access since thi
 | [AWSVPCVerifiedAccessServiceRolePolicy](#AWSVPCVerifiedAccessServiceRolePolicy) - Policy updated | Verified Access updated its managed policy to add security group resource to `ec2:CreateNetworkInterface` permission. | May 31, 2023 |
 | [AWSVPCVerifiedAccessServiceRolePolicy](#AWSVPCVerifiedAccessServiceRolePolicy) - New policy | Verified Access added a new policy to allow it to provision resources in your account that are required to use the service. | November 29, 2022 |
 | Verified Access started tracking changes | Verified Access started tracking changes for its AWS managed policies. | November 29, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Verified Access. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verified-access` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

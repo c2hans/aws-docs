@@ -292,3 +292,7 @@ The Minimal AMI includes the following packages that were added since the last r
 | `tzdata-2022g-1.amzn2022.0.1` |
 | `vim-data-9.0.1006-1.amzn2022.0.1` |
 | `vim-minimal-9.0.1006-1.amzn2022.0.1` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

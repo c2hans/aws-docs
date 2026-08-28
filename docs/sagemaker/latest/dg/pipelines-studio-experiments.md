@@ -38,3 +38,7 @@ Experiments integration was introduced in v2.41.0 of the [Amazon SageMaker Pytho
 1. Use search bar or **Filter** icon (![](http://docs.aws.amazon.com/sagemaker/latest/dg/images/jumpstart/jumpstart-filter-icon.png)) to filter the list to experiments created by a pipeline.
 
 1. Open an experiment name and view a list of runs created by the pipeline.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

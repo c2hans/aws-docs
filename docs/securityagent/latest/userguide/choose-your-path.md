@@ -5,20 +5,24 @@ source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/choose-yo
 # Choose your path
 <a name="choose-your-path"></a>
 
-Find the right starting point for what you want to do with AWS Security Agent. Use the table below to match your goal to a task, then go directly to that page. If you’re new to AWS Security Agent, read [What is AWS Security Agent?](what-is.md) first for a quick overview.
+Find the right starting point for what you want to do with AWS Security Agent. Use the table below to match your goal to a task, then go directly to that page. If you’re new to AWS Security Agent, read [What is AWS Security Agent (now part of AWS Continuum)?](what-is.md) first for a quick overview.
 
 | I want to…​ | Who | Start here |
 | --- | --- | --- |
-| Understand what AWS Security Agent does before setting it up | Everyone |  [What is AWS Security Agent?](what-is.md)  |
+| Understand what AWS Security Agent does before setting it up | Everyone |  [What is AWS Security Agent (now part of AWS Continuum)?](what-is.md)  |
 | Set up the service and create an Agent Space | Admin |  [Set up AWS Security Agent](setup-security-agent.md)  |
-| Test my live or deployed application for exploitable vulnerabilities | User |  [Quickstart: Run a Continuum penetration test](quickstart.md)  |
-| Scan my source code for vulnerabilities and policy violations | User |  [Quickstart: Run a Continuum code review](quickstart-code-review.md)  |
-| Model how my application could be attacked (STRIDE) | User |  [Quickstart: Run a Continuum threat model](quickstart-threat-model.md)  |
-| Get security feedback on a design before I write code | User |  [Create a Continuum design review](perform-design-review.md)  |
-| Scan code without leaving my IDE (Kiro or Claude Code) | Developer |  [Run Continuum code security scans from your IDE](code-review-ide-integration.md)  |
-| Scan only my changed lines before merging | Developer |  [Run a Continuum differential code scan with S3](run-diff-scan-s3.md)  |
-| Get automatic security comments on pull requests and merge requests | Admin |  [Enable Continuum code review](enable-code-review-scan.md)  |
+| Test my live or deployed application for exploitable vulnerabilities | User |  [Quickstart: Run a penetration test](quickstart.md)  |
+| Scan my source code for vulnerabilities and policy violations | User |  [Quickstart: Run a code review](quickstart-code-review.md)  |
+| Model how my application could be attacked (STRIDE) | User |  [Quickstart: Run a threat model](quickstart-threat-model.md)  |
+| Get security feedback on a design before I write code | User |  [Create a design review](perform-design-review.md)  |
+| Scan code without leaving my IDE (Kiro or Claude Code) | Developer |  [Run code security scans from your IDE](code-review-ide-integration.md)  |
+| Scan only my changed lines before merging | Developer |  [Run a differential code scan with S3](run-diff-scan-s3.md)  |
+| Get automatic security comments on pull requests and merge requests | Admin |  [Enable code review](enable-code-review-scan.md)  |
 | Review findings and decide what to fix first | User |  [Penetration test](review-penetration-findings.md), [Code review](review-code-scan-findings.md), [Threat model](review-threat-model-findings.md), [Design review](review-design-findings.md)  |
 
 **Note**
 AWS Security Agent uses three roles, which you can identify by the interface you work in: **Admin** works in the AWS Management Console (setup and configuration), **User** works in the web application (running assessments and reviewing findings), and **Developer** works in GitHub or an IDE such as Kiro or Claude Code. A single person can hold more than one role. For full definitions, see [How AWS Security Agent works](how-it-works.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

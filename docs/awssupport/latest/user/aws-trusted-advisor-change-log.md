@@ -14,6 +14,7 @@ For more information about the available checks, see the [AWS Trusted Advisor ch
 
 | Change date | Check name | Change description |
 | --- | --- | --- |
+| August 27, 2026 | Updated Security Hub CSPM checks in Trusted Advisor | Trusted Advisor supports only AWS Security Hub CSPM controls available through July 8, 2026. For more information, see [Viewing AWS Security Hub CSPM controls in AWS Trusted Advisor](https://docs.aws.amazon.com/awssupport/latest/user/security-hub-controls-with-trusted-advisor.html). |
 | February 19, 2026 | New [Idle NAT gateways](https://docs.aws.amazon.com/awssupport/latest/user/cost-optimization-checks.html#idle-nat-gateways) | Added a new check to identify idle or underutilized NAT gateways that might be candidates for cost optimization. |
 | January 9, 2026 | Deprecated 5 Cost Optimization Trusted Advisor checks | The following checks were deprecated:+ Savings Plan - vZ2c2W1srf<br />+ Amazon Relational Database Service (RDS) Reserved Instance Optimization - 1qazXsw23e<br />+ Amazon Redshift Reserved Node Optimization - 1qw23er45t<br />+ Amazon ElastiCache Reserved Node Optimization - h3L1otH3re<br />+ Amazon OpenSearch Service Reserved Instance Optimization - 7ujm6yhn5t |
 | December 18, 2025 | Updated [Amazon S3 Bucket Versioning](https://docs.aws.amazon.com/awssupport/latest/user/fault-tolerance-checks.html#amazon-s3-bucket-versioning) | Added a new **Alert criteria**:+ Yellow: Trusted Advisor doesn't have access to validate versioning |
@@ -649,3 +650,7 @@ Trusted Advisor removed the following check on February 18, 2020.
 | Check name | Check category | Check ID |
 | --- | --- | --- |
 | Service Limits | Performance | `eW7HH0l7J9` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

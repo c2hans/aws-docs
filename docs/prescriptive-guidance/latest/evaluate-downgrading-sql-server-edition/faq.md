@@ -64,3 +64,7 @@ For more information on the scaling implications of reserved DB instances, see [
 **Q. How do I know if Amazon RDS supports a specific SQL Server database feature?**
 
 **A.** The SQL Server features that Amazon RDS for SQL Server supports vary, depending on the edition of SQL Server. For information about the SQL Server features that Amazon RDS currently supports, see the [Amazon RDS User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SQLServer.html#SQLServer.Concepts.General.FeatureSupport).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

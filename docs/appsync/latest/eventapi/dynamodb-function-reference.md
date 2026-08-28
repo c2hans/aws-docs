@@ -23,3 +23,7 @@ The Amazon DynamoDB functions allow you to use JavaScript to store and retrieve 
 +  [Condition expressions](dynamodb-condition-expressions.md) — Learn more about condition expressions for PutItem, UpdateItem, and DeleteItem operations.
 +  [Transaction condition expressions](dynamodb-transaction-condition-expressions.md) — Learn more about condition expressions for TransactWriteItems operations.
 +  [Projections](dynamodb-projections.md) — Learn more about how to specify attributes in read operations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

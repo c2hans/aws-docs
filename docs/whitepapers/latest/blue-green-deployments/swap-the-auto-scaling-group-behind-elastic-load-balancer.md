@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/blue-green-deployment
 * Blue Auto Scaling group nodes in standby and decommission *
 
  This pattern’s traffic management capabilities aren’t as granular as the classic DNS, but you could still exercise control through the configuration of the Auto Scaling groups. For example, you could have a larger fleet of smaller instances with finer scaling policies, which would also help control costs of scaling. Because the complexities of DNS are removed, the traffic shift itself is more expedient. In addition, with an already warm load balancer, you can be confident that you’ll have the capacity to support production load.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

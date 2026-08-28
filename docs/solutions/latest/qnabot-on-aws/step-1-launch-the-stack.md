@@ -49,3 +49,7 @@ When the stack deployment is complete, the **Output** tab displays the following
 **Note**
 In addition to the primary AWS Lambda functions, this guidance includes the `solution-helper` Lambda function, which runs only during initial configuration or when resources are updated or deleted.
 When you run this guidance, the `solution-helper` Lambda function is not regularly active; however, you must not delete it because it is necessary to manage associated resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

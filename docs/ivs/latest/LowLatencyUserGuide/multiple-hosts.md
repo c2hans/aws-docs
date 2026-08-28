@@ -20,3 +20,7 @@ For more information about IVS Real-Time Streaming, see:
 + [IVS Real-Time Streaming User Guide](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/what-is.html)
   + The IVS Broadcast SDKs incorporate real-time functionality. See the Guides for those SDKs: [Web](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-web.html), [Android](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-android.html), and [iOS](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/broadcast-ios.html), especially the sections on "Publishing and Subscribing."
 +  [IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/Welcome.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

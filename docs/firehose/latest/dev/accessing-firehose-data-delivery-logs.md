@@ -26,3 +26,7 @@ You can view the error logs related to Amazon Data Firehose data delivery failur
 1. In the navigation pane, choose **Logs**.
 
 1. Choose a log group and log stream to view a list of error logs related to data delivery failure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

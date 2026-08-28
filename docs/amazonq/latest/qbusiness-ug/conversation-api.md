@@ -359,3 +359,7 @@ Each streaming request contains one or more data frames. There are two steps to 
 1. Combine raw `ChatInput` data with metadata to create the payload of your request.
 
 1. Combine the payload with a signature to form the event message that is sent to Amazon Q Business.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

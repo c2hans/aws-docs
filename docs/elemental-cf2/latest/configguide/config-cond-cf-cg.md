@@ -27,3 +27,7 @@ Perform these steps in the order that they are presented.
 1. Set the heartbeat for redundancy features: [Set Failover Timing for the Cluster](config-cond-cf-cg-failover.md)
 
 1. Enable optional Conductor File redundancy: [Configure Redundancy for AWS Elemental Conductor File Nodes](config-cond-cf-cg-redundancy.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor File. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cf2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

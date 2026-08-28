@@ -32,3 +32,7 @@ For additional restrictions, tips, and best practices, see the [Tagging AWS Reso
 Do not store confidential or other types of sensitive data in tags. Tags are accessible from many AWS services, including AWS Billing and Cost Management. They aren't intended to be used for sensitive data.
 
 To add and manage tags for Macie resources, you can use Macie or AWS Resource Groups. AWS Resource Groups is a service that's designed to help you group and manage AWS resources as a single unit instead of individually. If you use Macie, you can add tags to a resource when you create the resource. You can also add and manage tags for individual existing resources. If you use AWS Resource Groups, you can add and manage tags in bulk for multiple existing resources spanning multiple AWS services, including Macie. For more information, see the [Tagging AWS Resources User Guide](https://docs.aws.amazon.com/tag-editor/latest/userguide/tagging.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

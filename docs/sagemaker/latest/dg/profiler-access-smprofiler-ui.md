@@ -67,3 +67,7 @@ For domain, domain users, and Studio created before re:Invent 2023, Studio Class
 If you created a new domain and Studio after re:Invent 2023, launch the Studio Classic application within the Studio UI and then run the `DetailProfilerApp` function to launch the SageMaker Profiler UI application.
 
 Note that the `DetailedProfilerApp` function doesn’t work in other SageMaker AI machine learning IDEs, such as the SageMaker Studio JupyterLab application, the SageMaker Studio Code Editor application, and SageMaker Notebook instances. If you run the `DetailedProfilerApp` function in those IDEs, it returns a URL to the Profiler landing page in the SageMaker AI console, instead of a direct link to open the Profiler UI application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,10 +22,13 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::CloudFormation::PublicTypeVersion](aws-resource-cloudformation-publictypeversion.md)
 + [AWS::CloudFormation::Publisher](aws-resource-cloudformation-publisher.md)
 + [AWS::CloudFormation::ResourceDefaultVersion](aws-resource-cloudformation-resourcedefaultversion.md)
-+ [AWS::CloudFormation::ResourceScan](aws-resource-cloudformation-resourcescan.md)
 + [AWS::CloudFormation::ResourceVersion](aws-resource-cloudformation-resourceversion.md)
 + [AWS::CloudFormation::Stack](aws-resource-cloudformation-stack.md)
 + [AWS::CloudFormation::StackSet](aws-resource-cloudformation-stackset.md)
 + [AWS::CloudFormation::TypeActivation](aws-resource-cloudformation-typeactivation.md)
 + [AWS::CloudFormation::WaitCondition](aws-resource-cloudformation-waitcondition.md)
 + [AWS::CloudFormation::WaitConditionHandle](aws-resource-cloudformation-waitconditionhandle.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

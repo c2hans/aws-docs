@@ -87,3 +87,7 @@ The following are the service endpoints and service quotas for this service.
 | VPC endpoint associations per Availability Zone per Firewall | Each supported Region: 50 | No | The maximum number of VPC endpoint associations for a firewall per Availability Zone. |
 
 For more information, see [AWS Network Firewall quotas](https://docs.aws.amazon.com/network-firewall/latest/developerguide/quotas.html) in the *Network Firewall Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

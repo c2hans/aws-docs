@@ -34,3 +34,7 @@ Generally, bots are categorized as common or targeted:
 The most advanced and persistent targeted bots emulate human behavior by generating human-like mouse movements and clicks on a website. They are the most sophisticated and difficult to detect, but they are also the most expensive to operate.
 
 Often, an operator combines these techniques. This creates a game of constant pursuit, where you have to frequently change the protection and mitigation approach in order to adapt to the operator's latest techniques. These bots are considered to be an *advanced persistent threat (APT)*. For more information, see [Advanced persistent threat](https://csrc.nist.gov/glossary/term/advanced_persistent_threat) in the NIST resource center.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

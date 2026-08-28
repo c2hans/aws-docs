@@ -42,3 +42,7 @@ SAP portal access is required to access SAP Notes.
 SAPHanaSR-angi (SAP HANA SR - Advanced Next Generation Interface) is the latest unified high availability solution for managing SAP HANA System Replication in Pacemaker clusters, supported on RHEL 9.6 and newer. The solution consolidates the management of both scale-up and scale-out deployments into a single package and introduces technical improvements such as faster takeover times during filesystem failures, unresponsive HANA instances, and node failures in scale-out configurations.
 
 This document covers new implementations using SAPHanaSR-angi. For migrations from existing SAPHanaSR or SAPHanaSR-ScaleOut installations to SAPHanaSR-angi, refer to the Red Hat documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,3 +56,7 @@ The table below details the statuses that an attachment can reflect. These statu
 | Scanning | The document has been attached and is currently being scanned for compliance with Application Security. This status does not prevent submission of the Fund Request or Claim |
 | ScannedClean | The document has been attached, and scanning has been completed, no problems found |
 | Quarantined | The file was scanned and does not meet criteria set by Application Security. Usually this means it contains a formula that is not among the accepted set of formulas allowed by the tool. The document should be updated to remove formulas and reattached or converted to a PDF and reattached. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

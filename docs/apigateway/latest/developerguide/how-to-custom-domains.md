@@ -97,3 +97,7 @@ The following are next steps for custom domain names.
 + To learn how to use Route 53 health checks to control DNS failover from an API Gateway API, see [Configure custom health checks for DNS failover for an API Gateway API](dns-failover.md).
 
 If this is your first time creating a custom domain name, we recommend that you start with [Get certificates ready in AWS Certificate Manager](how-to-specify-certificate-for-custom-domain-name.md), to specify your certificate, and then [Set up a Regional custom domain name in API Gateway](apigateway-regional-api-custom-domain-create.md) to create a Regional custom domain name.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

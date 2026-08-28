@@ -38,3 +38,7 @@ sm_jobs_config:
 1. `inputs`: You can specify the paths for your training and validation data. The data source can be from a shared filesystem such as Amazon FSx or an Amazon S3 URL.
 
 1. `additional_estimator_kwargs`: Additional ModelTrainer arguments for submitting a training job to the SageMaker training job platform. For more information, see [Algorithm ModelTrainer](https://sagemaker.readthedocs.io/en/stable/api/training/algorithm.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

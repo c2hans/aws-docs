@@ -245,3 +245,7 @@ A CloudFormation template is stored in the S3 bucket. The template provisions th
 The AWS KMS key is used for data encryption by Amazon SNS and Amazon SQS for their messages. The security practices for [AwsSolutions-SNS2 and AwsSolutions-SQS2](https://github.com/cdklabs/cdk-nag/blob/main/RULES.md) recommend that you set up Amazon SNS and Amazon SQS with encryption. However, CloudWatch alarms don’t work with Amazon SNS when using an AWS managed key, so you must use a customer managed key in this case. For more information, see the [AWS Knowledge Center](https://aws.amazon.com/premiumsupport/knowledge-center/cloudwatch-receive-sns-for-alarm-trigger/).
 
 The SQS policy is used on the Amazon SQS queue to allow the created SNS topic to deliver the message to the queue. Without the SQS policy, the access will be denied. For more information, see the [Amazon SNS documentation](https://docs.aws.amazon.com/sns/latest/dg/subscribe-sqs-queue-to-sns-topic.html#SendMessageToSQS.sqs.permissions).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

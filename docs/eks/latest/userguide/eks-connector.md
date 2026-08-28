@@ -43,3 +43,7 @@ Using the Amazon EKS Connector requires the following two IAM roles:
 + You must create the Amazon EKS Connector agent IAM role. See [Amazon EKS connector IAM role](connector-iam-role.md) for details.
 
 To enable cluster and workload view permission for [IAM principals](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html#iam-term-principal), apply the `eks-connector` and Amazon EKS Connector cluster roles to your cluster. Follow the steps in [Grant access to view Kubernetes cluster resources on an Amazon EKS console](connector-grant-access.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

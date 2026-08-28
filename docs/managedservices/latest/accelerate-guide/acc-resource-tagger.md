@@ -60,3 +60,7 @@ You can update this profile by using the AWS Management Console, or through AWS 
 **Default configuration profile**:
 
 The default configuration profile document is internal to AMS Accelerate and it contains AMS Accelerate-supplied default rules that you can't modify or delete permanently. This profile can be updated at any time by AMS Accelerate and made available to you for review; any changes you have made to it are automatically deleted. If you want to modify or disable any of the default configuration rules you use the customization configuration profile, see [Resource Tagger use cases in AMS Accelerate](acc-rt-using.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

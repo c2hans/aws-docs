@@ -33,3 +33,7 @@ For new accounts and workloads, incorporate these recommendations from the desig
 + [NIST FIPS 204: Module-Lattice-Based Digital Signature Standard](https://nvlpubs.nist.gov/nistpubs/fips/nist.fips.204.pdf) (NIST documentation)
 + [IAM Roles Anywhere ML-DSA certificate support announcement](https://aws.amazon.com/about-aws/whats-new/2026/03/iam-roles-anywhere-post-quantum-digital-certificates/) (AWS What's New post)
 + [Post-quantum cryptography on AWS](https://aws.amazon.com/blogs/security/tag/post-quantum-cryptography/) (AWS Security Blog)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

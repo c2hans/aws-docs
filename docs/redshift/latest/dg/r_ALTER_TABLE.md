@@ -324,6 +324,8 @@ Table properties are case-sensitive.
 A property that sets the numRows value for the table definition. To explicitly update an external table's statistics, set the numRows property to indicate the size of the table. Amazon Redshift doesn't analyze external tables to generate the table statistics that the query optimizer uses to generate a query plan. If table statistics aren't set for an external table, Amazon Redshift generates a query execution plan. This plan is based on an assumption that external tables are the larger tables and local tables are the smaller tables.
 'skip.header.line.count'='*line\_count*'
 A property that sets number of rows to skip at the beginning of each source file.
+'format-version'='*version*'
+Specifies the Iceberg table format version. Possible values: '2' (default), '3'. Format version 3 supports additional capabilities such as default column values. At CREATE time, if not specified, Amazon Redshift creates the table as Iceberg v2. On an existing table, setting this property to '3' upgrades the table from v2 to v3.
 
 PARTITION ( *partition\_column*=*partition\_value* [, ...] SET LOCATION { 's3://*bucket*/*folder*' \| 's3://*bucket*/*manifest\_file*' }
 A clause that sets a new location for one or more partition columns.
@@ -358,3 +360,7 @@ For examples that show how to use the ALTER TABLE command, see the following.
 + [ALTER TABLE examples](r_ALTER_TABLE_examples_basic.md)
 + [ALTER EXTERNAL TABLE examples](r_ALTER_TABLE_external-table.md)
 + [ALTER TABLE ADD and DROP COLUMN examples](r_ALTER_TABLE_COL_ex-add-drop.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

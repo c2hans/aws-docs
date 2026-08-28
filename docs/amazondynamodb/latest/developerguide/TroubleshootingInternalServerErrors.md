@@ -53,3 +53,7 @@ Maintaining high availability and reliability of your applications is crucial in
 You should have CloudWatch alarms set on your DynamoDB tables to receive notifications for consistently high numbers of internal server errors instead of observing the metrics manually. This ties with the operational excellence pillar of the Well-Architected framework for any workload on AWS. See [Using the DynamoDB Well-Architected Lens to optimize your DynamoDB workload](bp-wal.md) to learn more about Well-Architecting your DynamoDB tables.
 
 When you create an alarm on the [SystemErrors](metrics-dimensions.md#SystemErrors) metric, specify both the `TableName` and `Operation` dimensions (or `TableName` and `GlobalSecondaryIndexName` for a global secondary index). DynamoDB emits `SystemErrors` per operation, not on `TableName` alone, so an alarm that specifies only `TableName` stays in the `INSUFFICIENT_DATA` state and never alerts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -8,3 +8,7 @@ This is the AWS CDK v1 Developer Guide. The older CDK v1 entered maintenance on 
 <a name="sam"></a>
 
 The AWS CDK and the AWS Serverless Application Model (AWS SAM) can work together to let you to locally build and test serverless applications defined in the CDK. For complete information, see [AWS Cloud Development Kit (AWS CDK)](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-cdk.html) in the AWS SAM Developer Guide. To install the SAM CLI, see [Installing the AWS SAM CLI](https://docs.aws.amazon.com/serverless-application-model/latest/developerguide/serverless-sam-cli-install.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -500,3 +500,7 @@ Using an LLM as a judge is an extension of using Lambda functions for Reinforcem
 | Lambda timeout | Extended timeout | Configure your Lambda function timeout up to the maximum of 15 minutes. The default setting is 3 seconds, which is insufficient for Amazon Bedrock model responses |
 | Lambda concurrency | Increased concurrency | The Lambda gets invoked in parallel during training. Increase concurrency to maximize available throughput |
 | Recipe configuration | Match Lambda settings | The concurrency limit must be configured in your recipe |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ Before you use AWS CodeBuild, you must answer these questions:
 After you have answered these questions, you should have the settings and resources you need to run a build successfully. To run your build, you can:
 + Use the AWS CodeBuild console, AWS CLI, or AWS SDKs. For more information, see [Run builds manually](run-build.md).
 + Create or identify a pipeline in AWS CodePipeline, and then add a build or test action that instructs CodeBuild to automatically test your code, run your build, or both. For more information, see [Use CodeBuild with CodePipeline](how-to-create-pipeline.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

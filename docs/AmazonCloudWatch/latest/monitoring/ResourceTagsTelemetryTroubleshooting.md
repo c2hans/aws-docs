@@ -33,3 +33,7 @@ After you enable the feature, CloudWatch begins enriching telemetry with tags. C
 After you disable the feature:
 + Metrics previously enriched with resource tags can still be discovered for up to 14 days.
 + Logs previously enriched with resource tags can still be queried until the log group's retention period expires.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -123,3 +123,7 @@ After creating your fleet from the configured image, verify the input method wor
 + **DaYi input method:** Chinese (Traditional, DaYi) uses the same `zh-Hant-TW` language pack as Bopomofo. After installing the Chinese (Traditional, Taiwan) language, both Bopomofo and DaYi IMEs are available for end users to select.
 + **Admin defaults vs. user-selectable:** This procedure makes the input methods functional for end users to select during sessions. The admin-configurable default input method (configured through Template User or Image Assistant) still supports only English (United States) and Japanese.
 + **Reboot consideration:** In most cases, a reboot is not required after adding a language. However, if the input method does not function correctly after installation, restart the Image Builder before creating the image.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ Following, you can find details and examples about IAM policies that you can use
 + [AwsGlueDataBrewDataResourcePolicy](iam-policy-for-data-resources-role.md)
 + [IAM policy to use Amazon S3 objects with DataBrew](iam-policy-to-use-s3-for-data-resource-role.md)
 + [IAM policy to use encryption with DataBrew](iam-policy-to-use-kms-encrypted-s3-for-data-resource-role.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

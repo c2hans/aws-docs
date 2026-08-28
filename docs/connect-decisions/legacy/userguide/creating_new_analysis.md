@@ -43,3 +43,7 @@ Select the blue Quick logo to navigate to the Quick menu to view the datasets or
 1. Choose **Publish dashboard**.
 
    You will see the new dashboard created under **Dashboards** and a new analysis created under **Analyses**. For more information on using Dashboards or Analyses, see [Amazon QuickSight](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

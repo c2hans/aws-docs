@@ -38,3 +38,7 @@ A rate-based rule in your web ACL, whether added by you or added by the Shield A
 + [AWS Shield mitigation logic for AWS Global Accelerator standard accelerators](ddos-event-mitigation-logic-gax.md)
 + [AWS Shield Advanced mitigation logic for Elastic IPs](ddos-event-mitigation-logic-adv-eip.md)
 + [AWS Shield Advanced mitigation logic for web applications](ddos-event-mitigation-logic-adv-web-app.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

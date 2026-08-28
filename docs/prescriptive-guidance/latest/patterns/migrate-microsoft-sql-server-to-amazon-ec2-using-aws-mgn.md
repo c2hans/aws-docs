@@ -130,3 +130,7 @@ This architecture uses AWS MGN to replicate data from an on-premises corporate d
 
 **Videos**
 + [Performing a Lift and Shift Migration with AWS Transform MGN](https://www.youtube.com/watch?v=tB0sAR3aCb4) (video)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

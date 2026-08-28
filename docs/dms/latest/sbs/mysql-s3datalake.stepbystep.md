@@ -530,3 +530,7 @@ In this walkthrough, we covered most prerequisites that help avoid configuration
 +  [Using Amazon S3 as a target](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.S3.html)
 
 If you observe issues when running your task, see [Troubleshooting migration tasks](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Troubleshooting.html) and [Best practices](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_BestPractices.html) in the AWS DMS public documentation, or reach out to AWS Support for further assistance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,3 +35,7 @@ A tag rule is a key-value pair that SageMaker AI uses to identify a Collection�
 Keep your Collection names short. The absolute path to any Collection must be 256 characters long or less.
 
 Model Groups, on the other hand, do not have tag rules but use tags. A Model Group’s tags include the tag rules for all the Collections which contain the Model Group. For example, if four Collections contain *model-group-1*, * model-group-1* has four tags. SageMaker AI allows a single AWS resource to have a maximum of 50 tags. Since two are pre-allocated for general purposes, a Model Group can have a maximum of 48 tags. In conclusion, a Model Group can belong to a maximum of 48 Collections.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -77,3 +77,7 @@ def main():
 <a name="running-strands-agentcore"></a>
 
 Now let’s run the same agent as above but instead of running on our local machine, this time let’s run it on AgentCore Runtime with AgentCore BrowserTool. Refer to [this guide](https://strandsagents.com/latest/documentation/docs/user-guide/deploy/deploy_to_bedrock_agentcore/) for instructions on deploying a Strands agent on AgentCore, and [this guide](https://builder.aws.com/content/32HpPjNanKLl7OZTpn48xhV0mSX/run-your-nova-act-workflow-on-amazon-bedrock-agentcore) for using Nova Act with AgentCore Browser Tool.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova Act. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova-act` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

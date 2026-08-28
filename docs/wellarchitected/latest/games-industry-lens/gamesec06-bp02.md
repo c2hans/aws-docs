@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Use Amazon Lookout for Metrics to help automatically detect and diagnose anomalies in key business and operational data
 +  Integrate Amazon Lookout for Metrics with data sources like the Game Analytics Pipeline, Amazon S3, or CloudWatch to monitor metrics such as revenue, logins, and retention.
 +  Use Amazon SageMaker AI to build, train, and host custom machine learning models for advanced use cases like cheat detection, fraud prevention, and content moderation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

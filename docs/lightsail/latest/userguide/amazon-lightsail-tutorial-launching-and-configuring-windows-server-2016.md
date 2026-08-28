@@ -139,3 +139,7 @@ Here are a few additional steps you can perform after launching a Windows Server
 + [Best practices for securing Windows Server-based Lightsail instances](best-practices-for-securing-windows-based-lightsail-instances.md)
 + [Creating and attaching a block storage disk to your Windows Server instance](create-and-attach-additional-block-storage-disks-windows.md)
 + [Extending the storage space of your Windows Server instance](extending-windows-server-storage-space-in-amazon-lightsail.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

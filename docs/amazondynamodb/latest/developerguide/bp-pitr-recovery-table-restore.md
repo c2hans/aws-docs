@@ -32,3 +32,7 @@ Consider the following when you put a restored table into service:
 + Delete the original table after the restored table has been fully configured and put into service.
 
 If restoring an MRSC global table, the newly restored table cannot be made into an MRSC table because only empty tables can be made into MRSC tables. One solution is to restore the table and then copy the data from the restored table into an empty MRSC table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

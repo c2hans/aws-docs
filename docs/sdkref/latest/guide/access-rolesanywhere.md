@@ -47,3 +47,7 @@ credential_process = ./aws_signing_helper credential-process --certificate {{/pa
  For optional parameters and additional helper tool details, see [IAM Roles Anywhere Credential Helper](https://github.com/aws/rolesanywhere-credential-helper#readme) on GitHub.
 
 For details on the SDK configuration setting itself and the process credential provider, see [Process credential provider](feature-process-credentials.md) in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdkref` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

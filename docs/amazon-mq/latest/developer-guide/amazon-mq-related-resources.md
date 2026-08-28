@@ -41,3 +41,7 @@ The following table lists useful resources for working with RabbitMQ.
 | [The RabbitMQ Getting Started Guide](https://www.rabbitmq.com/getstarted.html) | The official documentation of RabbitMQ. |
 | [RabbitMQ Client Libraries and Developer Tools](https://www.rabbitmq.com/devtools.html) | A guide to the officially supported client libraries and devloper tools for working with RabbitMQ using a variety of programming languages and platforms. |
 | [RabbitMQ Best Practices](https://www.cloudamqp.com/blog/2017-12-29-part1-rabbitmq-best-practice.html) | CloudAMQP's guide on best practices and recommendations for working with RabbitMQ. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

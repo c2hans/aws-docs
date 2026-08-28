@@ -18,13 +18,13 @@ You can attach `SageMakerStudioProjectProvisioningRolePolicy` to your users, gro
 <a name="SageMakerStudioProjectProvisioningRolePolicy-details"></a>
 + **Type**: Service role policy
 + **Creation time**: November 20, 2024, 21:58 UTC
-+ **Edited time:** June 04, 2026, 21:27 UTC
++ **Edited time:** August 24, 2026, 20:37 UTC
 + **ARN**: `arn:aws:iam::aws:policy/service-role/SageMakerStudioProjectProvisioningRolePolicy`
 
 ## Policy version
 <a name="SageMakerStudioProjectProvisioningRolePolicy-version"></a>
 
-**Policy version:** v81 (default)
+**Policy version:** v82 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -40,7 +40,8 @@ The policy's default version is the version that defines the permissions for the
       "Effect" : "Allow",
       "Action" : [
         "cloudformation:CreateStack",
-        "cloudformation:TagResource"
+        "cloudformation:TagResource",
+        "cloudformation:UntagResource"
       ],
       "Resource" : [
         "arn:aws:cloudformation:*:*:stack/DataZone*"
@@ -1982,15 +1983,14 @@ The policy's default version is the version that defines the permissions for the
       }
     },
     {
-      "Sid" : "SMAppDelete",
+      "Sid" : "SMApp",
       "Effect" : "Allow",
-      "Action" : "sagemaker:DeleteApp",
-      "Resource" : [
-        "arn:aws:sagemaker:*:*:app/*/*/codeeditor/*",
-        "arn:aws:sagemaker:*:*:app/*/*/CodeEditor/*",
-        "arn:aws:sagemaker:*:*:app/*/*/jupyterlab/*",
-        "arn:aws:sagemaker:*:*:app/*/*/JupyterLab/*"
+      "Action" : [
+        "sagemaker:CreateApp",
+        "sagemaker:AddTags",
+        "sagemaker:DeleteApp"
       ],
+      "Resource" : "arn:aws:sagemaker:*:*:app/*",
       "Condition" : {
         "Null" : {
           "aws:ResourceTag/AmazonDataZoneProject" : "false"
@@ -3039,3 +3039,7 @@ The policy's default version is the version that defines the permissions for the
 + [Adding and removing IAM identity permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_manage-attach-detach.html)
 + [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
 + [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Policy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-managed-policy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

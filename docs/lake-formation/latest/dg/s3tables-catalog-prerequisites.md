@@ -88,3 +88,7 @@ Select a location, and from the **Actions** menu, choose **Remove**.
 When prompted for confirmation, choose **Remove**.
 For detailed instructions on deregistering a data location, see the [Deregistering an Amazon S3 location](unregister-location.md) section.
 Then, follow the updated integration steps in the [Enabling Amazon S3 Tables integration](enable-s3-tables-catalog-integration.md) section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

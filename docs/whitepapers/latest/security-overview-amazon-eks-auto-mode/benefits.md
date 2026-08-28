@@ -12,3 +12,7 @@ EKS Auto Mode is a new operating model for Amazon EKS. In addition to the reduce
 + **Amazon EKS managed compute, networking, and storage capabilities**: Auto Mode provides managed capabilities for these functions, which shifts the responsibility for health and patching of the components that normally provide them to AWS.
 + **Frequent patching**: AWS is responsible for patching the components hosted on AWS infrastructure and the components in the Auto Mode node Amazon Machine Image (AMI).
 + **Limited node lifetime:** It's a best practice to treat Kubernetes nodes as ephemeral compute providers. Auto Mode builds upon that by stopping nodes from living longer than 21 days.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

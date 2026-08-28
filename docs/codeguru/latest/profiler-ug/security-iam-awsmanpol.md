@@ -137,3 +137,7 @@ View details about updates to AWS managed policies for CodeGuru Profiler since t
 | [AmazonCodeGuruProfilerAgentAccess ](#security-iam-awsmanpol-amazoncodeguruprofileragentaccess) – Updates to policy | CodeGuru Profiler reduced resource scope in order to improve application security.  | July 12, 2021 |
 | [AmazonCodeGuruProfilerAgentAccess ](#security-iam-awsmanpol-amazoncodeguruprofileragentaccess) – Updates to policy | CodeGuru Profiler added permissions needed for CodeGuru Profiler agent to Create a Profiling Group.  | April 1, 2021 |
 | CodeGuru Profiler started tracking changes | CodeGuru Profiler started tracking changes for its AWS managed policies. | March 25, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

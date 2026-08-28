@@ -52,3 +52,7 @@ The following information might help you troubleshoot access errors when connect
 + **Request a CodeCommit service quota increase in the AWS Support Center**
 
   To receive a service limit increase, you must confirm that you have already followed the suggestions offered here, including implementation of error retries or exponential backoff methods. In your request, you must also provide the AWS Region, Amazon Web Services account, and timeframe affected by the throttling issues.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

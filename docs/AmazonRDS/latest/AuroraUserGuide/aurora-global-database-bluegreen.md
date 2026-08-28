@@ -38,3 +38,7 @@ Global failover is supported during a blue/green switchover, but Global switchov
 When you initiate a global failover during an RDS blue/green switchover, the target region automatically rolls back to the blue environment or rolls forward to the green environment before the global failover occurs.
 
 For information on creating, viewing, switching, and deleting blue/green deployments, see [Using Amazon Aurora Blue/Green Deployments for database updates](blue-green-deployments.md). Follow the same workflow for Global Databases, with specific instructions noted in the relevant steps.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

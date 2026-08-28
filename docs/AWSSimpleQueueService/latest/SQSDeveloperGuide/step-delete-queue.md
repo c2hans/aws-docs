@@ -30,3 +30,7 @@ You can delete a queue even when it isn't empty. To delete the messages in a que
 Choose the appropriate method to delete your queue based on your needs:
 + AWS CLI: `[aws sqs delete-queue](https://docs.aws.amazon.com/cli/latest/reference/sqs/delete-queue.html)`
 + AWS API: `[DeleteQueue](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/APIReference/API_DeleteQueue.html)`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

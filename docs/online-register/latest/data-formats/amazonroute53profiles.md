@@ -17,3 +17,7 @@ Amazon Route 53 Profiles provides the following APIs for data retrieval.
 | <a name="route53profiles-ListProfileResourceAssociations"></a>[ListProfileResourceAssociations](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_ListProfileResourceAssociations.html) | List all the associations between the resources, such as DNS Firewall rule groups, private hosted zones, resolver rules, etc. for the given Profile ID | List |
 | <a name="route53profiles-ListProfiles"></a>[ListProfiles](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_ListProfiles.html) | List all the Profiles created by, and shared to the customer | List |
 | <a name="route53profiles-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/Route53/latest/APIReference/API_route53profiles_ListTagsForResource.html) | List all tags associated with the resource | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

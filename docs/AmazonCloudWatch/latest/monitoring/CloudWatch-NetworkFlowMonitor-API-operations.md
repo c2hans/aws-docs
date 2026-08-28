@@ -33,3 +33,7 @@ The following table lists Network Flow Monitor API operations that you can use w
 | Remove a tag from a resource. | See [UntagResource](https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_UntagResource)  | See [Edit a monitor in Network Flow Monitor](CloudWatch-NetworkFlowMonitor-configure-monitors-edit.md) |
 | Update a monitor to add or remove local or remote resources. | See [UpdateMonitor](https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_UpdateMonitor)  | See [Edit a monitor in Network Flow Monitor](CloudWatch-NetworkFlowMonitor-configure-monitors-edit.md) |
 | Modify a scope to add or remove resources that Network Flow Monitor will generate metrics on. | See [UpdateScope](https://docs.aws.amazon.com/networkflowmonitor/2.0/APIReference/API_UpdateScope)  | N/A |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

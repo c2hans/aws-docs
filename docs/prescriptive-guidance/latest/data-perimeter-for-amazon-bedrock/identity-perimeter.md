@@ -37,3 +37,7 @@ Each subsection provides practical implementation guidance, code examples, and b
 
 **Note**
 These identity perimeter examples provide foundational patterns but may not cover all organizational structures or authentication scenarios. Adapt the policies to your specific identity providers, compliance requirements, and multi-account architecture. Always test identity controls in non-production environments and consult IAM documentation for the latest policy syntax and condition keys.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

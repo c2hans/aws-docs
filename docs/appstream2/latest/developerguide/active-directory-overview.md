@@ -40,3 +40,7 @@ For your users to be authenticated to a domain, several steps must occur when th
 From the user's perspective, this process is transparent. The user starts by navigating to your organization's internal portal and is redirected to an WorkSpaces Applications application portal, without having to enter AWS credentials. Only an Active Directory domain password or smart card credentials are required.
 
 Before a user can initiate this process, you must configure Active Directory with the required entitlements and Group Policy settings and create a domain-joined application stack.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

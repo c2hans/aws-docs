@@ -63,3 +63,7 @@ Amazon Connect Customer flow logs provide real-time details about events in Amaz
 <a name="connect-2-remediation"></a>
 
 For information about enabling flow logs for an Amazon Connect Customer instance, see [Enable Amazon Connect Customer flow logs in an Amazon CloudWatch log group](https://docs.aws.amazon.com/connect/latest/adminguide/contact-flow-logs.html) in the *Connect Customer Administrator Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

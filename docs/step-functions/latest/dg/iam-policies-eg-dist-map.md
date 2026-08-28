@@ -188,3 +188,7 @@ The following IAM policy example grants permission to the `kms:Decrypt`, `kms:En
 For more information, see [Uploading a large file to Amazon S3 with encryption using an AWS KMS key](https://aws.amazon.com/premiumsupport/knowledge-center/s3-large-file-encryption-kms-key/) in the *AWS Knowledge Center*.
 
 If your IAM user or role is in the same AWS account as the KMS key, then you must have these permissions on the key policy. If your IAM user or role belongs to a different account than the KMS key, then you must have the permissions on both the key policy and your IAM user or role.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

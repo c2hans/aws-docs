@@ -25,3 +25,7 @@ This sample shows how you can use the **Change routing priority/age block** to r
 <a name="option2-sample-customer-queue-priority"></a>
 + The **Get Customer Input** block prompts the customer to press 2 to move behind existing contacts already in queue. This block gets the customer's input; it doesn't actually change the customer's priority.
 + If the customer presses 2, they go down the "Pressed 2" branch, which takes them to a different **Change routing priority/age** block. This block increases their routing age by 10 minutes. This has the effect of moving them ahead of others in the queue who have been waiting longer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

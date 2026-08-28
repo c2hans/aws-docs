@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
  Consider the relevance and application of the CIS AWS Foundations Benchmark available at [CIS Amazon Web Services Foundations](https://d1.awsstatic.com/whitepapers/compliance/AWS_CIS_Foundations_Benchmark.pdf) and [CIS Amazon Web Services Three-tier Web](https://d1.awsstatic.com/whitepapers/compliance/CIS_Amazon_Web_Services_Three-tier_Web_Architecture_Benchmark.pdf), as appropriate for your cloud journey and use cases. These industry-accepted best practices published by the Center for Internet Security go beyond the high-level security guidance already available, providing AWS users with clear, step-by-step implementation and assessment recommendations.
 
  Dive deeper into other governance and risk management practices as necessary based on your due diligence and risk assessment, using the tools and resources referenced throughout this document and in the [Additional resources](additional-resources.md) section that follows.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

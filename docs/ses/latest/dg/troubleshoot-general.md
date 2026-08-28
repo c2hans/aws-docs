@@ -15,3 +15,7 @@ As a service that is accessed through computers in data centers around the world
 Some areas in which you may notice a delay include:
 + **Creating and modifying configuration sets** – When you create or modify a configuration set (for example, if you [associate a dedicated IP pool with an existing configuration set](managing-ip-pools.md)), there may be a brief delay from the time that you create or modify it to the time those changes are active.
 + **Creating and modifying event destinations** – When you create or modify an event destination (for example, [to tell Amazon SES to send your email sending data to another AWS service](monitor-using-event-publishing.md)), there may be a delay between the time your created or modified the event destination and the time email sending events actually arrive at the specified destination.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -60,7 +60,7 @@ You can’t change the compute type after you create the runtime.
 
 1. From the runtime’s detail page, choose **Test** and provide a payload, or use the **View invocation code** snippet to call the agent from your own application.
 
-1. The first invocation for a new session provisions an EC2 instance in your account and launches the agent, so it takes longer than subsequent invocations. The instance appears in your account’s EC2 console.
+1. The first invocation for a new session provisions an EC2 instance in your account and launches the agent, so it typically takes longer than later invocations. Subsequent invocations to the same session are much faster. AgentCore provisions the instance as an [Amazon EC2 managed instance](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-managed-instances.html), which is hidden from your EC2 console views and `DescribeInstances` by default. For more information about managed instance visibility, see the [managed resource visibility setting](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/amazon-ec2-managed-instances.html#managed-resource-visibility-settings).
 
 1. Use the **Observability** metrics and **Logs and tracing** on the runtime’s detail page to monitor sessions, invocations, error rate, and resource consumption.
 
@@ -80,3 +80,7 @@ To avoid ongoing charges for the Amazon EC2 instances and Amazon EBS volumes pro
 +  [Instances](runtime-instances-how-it-works.md)
 +  [Compare compute types](runtime-instances-how-it-works.md#runtime-instances-compute-comparison)
 +  [Security model and permissions for Runtime Instances](runtime-instances-security.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

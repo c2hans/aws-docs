@@ -93,7 +93,7 @@ The NVIDIA DRA driver currently implements *user-mediated* time-slicing: a GPU i
  *System-mediated* time-slicing is when the driver shares a GPU across independent claims (including across namespaces) based on criteria the system defines rather than a claim you configure. For more information about system-mediated time-slicing, see [System-mediated time-slicing of GPUs (issue \#659)](https://github.com/kubernetes-sigs/dra-driver-nvidia-gpu/issues/659) and [pull request \#1257](https://github.com/kubernetes-sigs/dra-driver-nvidia-gpu/pull/1257) on GitHub.
 
 **Important**
-Time-slicing through the DRA driver requires the `TimeSlicingSettings` feature gate, which is an alpha feature disabled by default. If you request the `TimeSlicing` sharing strategy without enabling this feature gate, the driver fails to prepare the device and the Pod stays in `ContainerCreating` with a `FailedPrepareDynamicResources` event that reports `error validating GPU config: unknown GPU sharing strategy: TimeSlicing`. Enable the feature gate only if you accept the risks of using an alpha capability.
+Time-slicing through the DRA driver requires the `TimeSlicingSettings` feature gate, which is an alpha feature disabled by default. If you request the `TimeSlicing` sharing strategy without enabling this feature gate, the driver fails to prepare the device and the Pod stays in `ContainerCreating` with a `FailedPrepareDynamicResources` event that reports `error validating GPU config: unknown GPU sharing strategy: TimeSlicing`. Turn on the feature gate only if you accept the risks of using an alpha capability.
 
 ### Prerequisites
 <a name="_prerequisites"></a>
@@ -339,3 +339,7 @@ The shared-UUID check in this procedure demonstrates time-slicing most clearly w
    [pod/timeslicing-demo-xxxxxxxxxx-ccccc/cuda] GPU-c0583cce-87c5-c736-db7f-6d3128c84d03
    [pod/timeslicing-demo-xxxxxxxxxx-ddddd/cuda] GPU-c0583cce-87c5-c736-db7f-6d3128c84d03
    ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

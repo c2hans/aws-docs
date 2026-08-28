@@ -16,3 +16,7 @@ Queue error codes, prefixed with `BA-Q`.
 | BA-Q0001 | Warn | Invalid value for mq.connection.pool.share. Only true is supported to enable sharing of the JMS connection pool. The default behavior is that JMS connection pool share is disabled. Set mq.connection.pool.share: true in your configuration if you want to share the JMS connection pool. Remove the property to keep JMS connection pool share disabled. |  |
 | BA-Q1001 | Error | Failed to create connection pool. Check the pool connection configuration and resource availability, and ensure proper credentials are provided. |  |
 | BA-Q1002 | Error | Error closing factory. Verify that the factory is not in use and that all associated resources have been properly released. |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

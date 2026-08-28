@@ -90,3 +90,7 @@ For more information on writing event patterns, see [Event patterns](https://doc
 With Service Quotas Automatic Management, you can specify your custom applications as targets for EventBridge rules. This enables your applications to receive events from AWS services like Service Quotas. For more information, see [Creating rules that react to events](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-create-rule.html) in the *EventBridge User Guide*.
 
 For a full list of the AWS services that you can specify as targets, see [Target types](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-targets.html#eb-console-targets) in the *EventBridge Events Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Service Quotas. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicequotas` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

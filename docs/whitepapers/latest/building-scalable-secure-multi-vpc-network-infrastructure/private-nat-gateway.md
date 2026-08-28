@@ -14,3 +14,7 @@ The preceding ﬁgure shows two non-routable (overlapping CIDRs, `100.64.0.0/16`
 The private NAT gateway can also be used when your on-premises network restricts access to approved IPs. The on-premises networks of few customers are required by compliance to communicate only with private networks (no IGW) only through a limited contiguous block of approved IPs owned by the customer. Instead of allocating each instance a separate IP from the block, you can run large workloads on AWS VPCs behind each allow-listed IP using private NAT gateway. For details, refer to the [How to solve Private IP exhaustion with Private NAT Solution](https://aws.amazon.com/blogs/networking-and-content-delivery/how-to-solve-private-ip-exhaustion-with-private-nat-solution/) blog post.
 
 ![A diagram depicting how to use a private NAT gateway to provide approved IPs for on-premises network](http://docs.aws.amazon.com/whitepapers/latest/building-scalable-secure-multi-vpc-network-infrastructure/images/how-to-use-nat.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ You can also get stared using the Amazon A2I API by following a Jupyter Notebook
 
 **Note**
 AWS Region availability may differ when you use Augmented AI with other AWS services, such as Amazon Textract. Create Augmented AI resources in the same AWS Region that you use to interact with those AWS services. For AWS Region availability for all services, see the [Region Table](https://aws.amazon.com/about-aws/global-infrastructure/regional-product-services/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -353,3 +353,7 @@ You can also send messages with simulated senders and destinations. Simulator me
 <a name="user-pool-sms-settings-first-time-finish-user-pool"></a>
 
 Return to the browser tab where you were creating or [editing](signing-up-users-in-your-app.md#verification-configure) your user pool. Complete the procedure. When you have successfully added SMS configuration to your user pool, Amazon Cognito sends a test message to an internal phone number to verify that your configuration works. AWS End User Messaging SMS charges for each test SMS message.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -74,3 +74,7 @@ ACL misconfigurations do not produce explicit errors during retrieval. Retrieval
 | Retrieve returns 0 results, but the user has access in Confluence. | The Atlassian Admin API key is missing scopes, or the organizationId/directoryId is wrong, so user and group restrictions cannot be resolved. | Confirm the adminApiKey has read:directories:admin and read:workspaces:admin, and that organizationId and directoryId are correct. |
 | Crawl or sync fails. | The username or API token (password) is invalid. | Verify the BASIC username and API token in the secret. |
 | All users are denied after previously working. | The API token or admin API key expired or was revoked. | Rotate the affected credentials in the secret. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

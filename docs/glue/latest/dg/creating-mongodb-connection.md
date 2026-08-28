@@ -38,3 +38,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-mongodb-connecti
 After creating a AWS Glue MongoDB connection, you will need to perform the following steps before running your AWS Glue job:
 + When working with AWS Glue jobs in the visual editor, you must provide Amazon VPC connection information for your job to connect to MongoDB. Identify a suitable location in Amazon VPC and provide it to your AWS Glue MongoDB connection.
 + If you chose to create an Secrets Manager secret, grant the IAM role associated with your AWS Glue job permission to read {{secretName}}.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -323,3 +323,7 @@ There are too many JSON lines with terminal content errors.
 + Reduce the number of JSON Lines (images) with terminal content errors. For more information, see [Terminal manifest content errors](#tm-debugging-aggregate-errors).
 
 You can't use the Amazon Rekognition Custom Labels console to fix this error.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

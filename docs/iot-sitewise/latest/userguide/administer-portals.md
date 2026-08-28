@@ -32,3 +32,7 @@ For information about how to create a portal, see [Get started with AWS IoT Site
 + [Send email invitations to portal administrators](send-email-invitations-to-portal.md)
 + [Add or remove portal users in AWS IoT SiteWise](portal-change-users.md)
 + [Delete a portal in AWS IoT SiteWise](portal-delete-portal.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

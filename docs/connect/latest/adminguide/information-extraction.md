@@ -13,7 +13,7 @@ Information extraction is only available in [Amazon Connect Customer](https://do
 Extracted information is available in the following locations:
 + **Contact Control Panel (CCP)** — During after-call work.
 + **Contact details page** — After the contact ends.
-+ **Contact search** — You can filter and search contacts based on extracted information.
++ **Contact search** — Extracted information is displayed in the contact search results table.
 + **S3 files** — Extracted data is included in the conversational analytics output files stored in Amazon S3.
 + **API** — Via [ListRealtimeContactAnalysisSegments](https://docs.aws.amazon.com/connect/latest/APIReference/API_connect-contact-lens_ListRealtimeContactAnalysisSegments.html) (voice) and [ListRealtimeContactAnalysisSegmentsV2](https://docs.aws.amazon.com/connect/latest/APIReference/API_ListRealtimeContactAnalysisSegmentsV2.html) (chat).
 + **Amazon Kinesis** — Extracted information events are delivered to your Kinesis data stream in real time.
@@ -57,3 +57,7 @@ Information extraction operates on the raw contact content, before redaction is 
 <a name="information-extraction-pricing"></a>
 
 Information extraction is available in Amazon Connect Customer at no additional cost for voice and chat contacts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

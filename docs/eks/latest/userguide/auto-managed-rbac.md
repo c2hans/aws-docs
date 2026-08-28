@@ -62,3 +62,7 @@ The `eks:managed` group applies to all EKS Auto Mode managed controllers. Scope 
 <a name="_example"></a>
 
 For a step-by-step walkthrough that grants the EKS Auto Mode load balancer controller `get` on a named OIDC `Secret` — unblocking the `alb.ingress.kubernetes.io/auth-type: oidc` annotation on an ALB `Ingress` — see [Grant the EKS Auto Mode load balancer controller access to a specific Secret](auto-managed-rbac-example.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

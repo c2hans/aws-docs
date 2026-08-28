@@ -216,3 +216,7 @@ The Auto Scaling group will [automatically scale up](https://docs.aws.amazon.co
 ** 6. How to use TLSv1.2\_2021 or later for this Guidance? **
 
  Please go to the [CloudFront Console](https://us-east-1.console.aws.amazon.com/cloudfront/v3/home#/distributions) and configure a custom domain, which will allow you to select a Security policy for CloudFront after Guidance deployment. You need to prepare a domain name and a corresponding TLS certificate in order to use more secure TLS configurations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Data Transfer Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

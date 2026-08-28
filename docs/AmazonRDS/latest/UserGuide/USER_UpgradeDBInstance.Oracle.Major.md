@@ -79,3 +79,7 @@ Before you upgrade to Oracle Database 26ai, review the following changes:
   + For the NNE option, Amazon RDS has desupported older hash functions and cryptographic algorithms for Oracle Database 26ai. For more information, see [Oracle native network encryption](Appendix.Oracle.Options.NetworkEncryption.md).
 + RDS for Oracle doesn't support the OEM Database Express and OLAP options in Oracle Database 26ai. Oracle desupported OEM Database Express and deprecated OLAP in Oracle Database 26ai. For more information, see [Oracle Enterprise Manager Database Express](Appendix.Oracle.Options.OEM_DBControl.md) and [Oracle OLAP](Oracle.Options.OLAP.md).
 + RDS for Oracle doesn't support the Locator option in Oracle Database 26ai. Oracle Spatial supersedes Oracle Locator and includes its functionality. To use Locator functionality in Oracle Database 26ai, use the Oracle Spatial option instead. For more information, see [Oracle Locator](Oracle.Options.Locator.md) and [Oracle Spatial](Oracle.Options.Spatial.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

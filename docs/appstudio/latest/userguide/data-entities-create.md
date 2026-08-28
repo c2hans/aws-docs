@@ -96,3 +96,7 @@ Generate an entity, fields, data actions, and sample data based on the specified
 1. Choose **Generate an entity**. Your entity is now created, and you can see it in the left-hand **Entities** panel.
 
 1. Configure your new entity by following the procedures in [Configuring or editing an entity in an App Studio app](data-entities-edit.md). Note that because your entity was created with AI, your entity will already contain generated fields. Also, your entity will contain data actions if you selected the **Create data actions** checkbox during creation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ Organize and access your spatial data using a flexible resource model that suppo
 <a name="seamless-data-interoperability"></a>
 
 Define connectors to integrate your spatial data stored in Amazon S3 with various applications, APIs, and data processing jobs. Trigger actions and workflows based on events associated with your spatial assets, ensuring seamless data exchange across your pipeline.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

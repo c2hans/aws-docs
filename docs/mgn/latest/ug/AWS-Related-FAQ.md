@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/AWS-Related-FAQ.html
 
 NEW - You can now accelerate your migration and modernization with AWS Transform. Read [Getting Started](https://docs.aws.amazon.com/transform/latest/userguide/getting-started.html) in the *AWS Transform User Guide*.
 
-# AWS related
+# AWS related FAQs
 <a name="AWS-Related-FAQ"></a>
 
 This section contains answers to questions about AWS and AWS Transform MGN.
@@ -71,9 +71,9 @@ After the machine has been launched by AWS Transform MGN switching the AMI can b
 
 AWS Transform MGN automatically installs EC2Config. After installation, EC2Config automatically installs the SSM EC2 Configuration Service.
 
-CloudWatch, AWS Powershell or CLI are not automatically installed. This can be done by the combining the AWS Transform MGN APIs and the AWS APIs – you can use the AWS Transform MGN APIs to determine the EC2 instance IDs of the machines and then use AWS API/CLI to turn on the detailed monitoring. An alternative approach would be to do it via AWS API only based on the tags you associate with the machine. A third approach would be to do so from the post-launch script.
+CloudWatch, AWS PowerShell or CLI are not automatically installed. This can be done by combining the AWS Transform MGN APIs and the AWS APIs – you can use the AWS Transform MGN APIs to determine the EC2 instance IDs of the machines and then use AWS API/CLI to turn on the detailed monitoring. An alternative approach would be to do it via AWS API only based on the tags you associate with the machine. A third approach would be to do so from the post-launch script.
 
-AWS Transform MGN installs EC2Launch (Windows 2016 only). You will need to configure EC2Launch based on [these specific requirements](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2launch.html#ec2launch-config). This configuration step needs to be performed post Migration using the wizard in C:\\Program Data\\Amazon\\EC2-Windows\\Launch\\Settings\\Ec2LaunchSettings.exe on the test or cutover instance.
+AWS Transform MGN installs EC2Launch (Windows 2016 only). You will need to configure EC2Launch based on [these specific requirements](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2launch.html#ec2launch-config). This configuration step needs to be performed post Migration using the wizard in C:\\ProgramData\\Amazon\\EC2-Windows\\Launch\\Settings\\Ec2LaunchSettings.exe on the test or cutover instance.
 
 ## How long does it take to copy a disk from the AWS Transform MGN staging area to production?
 <a name="How-Long-Copy-Disk-Staging"></a>
@@ -98,7 +98,7 @@ The conversion server machines, just like the Replication servers are managed au
 ## Can I prevent AWS Transform MGN from cleaning up test instance resources in AWS?
 <a name="Can-Prevent-Clean-Up-Target-Resources"></a>
 
-AWS Transform MGN will, by default, removes any resources created during the test process either when requested by the user or when a new Test instance is launched.
+AWS Transform MGN will, by default, remove any resources created during the test process either when requested by the user or when a new Test instance is launched.
 
 To prevent this in AWS, you can [activate Termination Protection](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination) for the test or cutover instance, and the resources will not be removed upon a new instance launch.
 
@@ -107,7 +107,7 @@ To prevent this in AWS, you can [activate Termination Protection](http://docs.aw
 
 When launching test or cutover instances Windows Server may boot with all the disks as read-only.
 
-This a common issue that occurs when detaching and attaching data disks. This issue can be resolved using steps in [this Microsoft TechNet article](https://blogs.technet.microsoft.com/askcore/2011/06/02/my-disk-is-read-only-help/).
+This is a common issue that occurs when detaching and attaching data disks. This issue can be resolved using steps in [this Microsoft TechNet article](https://blogs.technet.microsoft.com/askcore/2011/06/02/my-disk-is-read-only-help/).
 
 ## What impacts the conversion and boot time of test and cutover instances?
 <a name="What-Impacts-Conversion-Boot-Time-Target"></a>
@@ -128,7 +128,7 @@ The first boot of Windows machines on AWS may take up to 45 minutes due to Windo
 **Note**
 This applies only when using Amazon EBS as the target storage type.
 
-The EBS volumes attached to the test or cutover instances are created from snapshots of convertered volumes. For any volume type that were created from snapshots, the storage blocks are pulled down from Amazon S3 and written to the volume before accessed by you. This process may take significant time and varies based on the EBS volume type. For additional details and EBS initialization options, refer to [Initialize Amazon EBS volumes](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-initialize.html)
+The EBS volumes attached to the test or cutover instances are created from snapshots of converted volumes. For any volume type that was created from snapshots, the storage blocks are pulled down from Amazon S3 and written to the volume before you access them. This process might take significant time and varies based on the EBS volume type. For additional details and EBS initialization options, refer to [Initialize Amazon EBS volumes](https://docs.aws.amazon.com/ebs/latest/userguide/ebs-initialize.html)
 
 ## What are the Amazon EBS volume limits for AWS Transform MGN?
 <a name="ebs-limits-faq"></a>
@@ -145,7 +145,7 @@ AWS Transform MGN conforms to the [Microsoft Licensing on AWS](https://aws.amazo
 
 If you use Amazon Virtual Private Cloud (Amazon VPC) to host your AWS resources, you can establish a private connection between your VPC and AWS Transform MGN. You can use this connection to allow AWS Transform MGN to communicate with your resources on your VPC without going through the public internet.
 
-Amazon VPC is an AWS service that you can use to launch AWS resources in a virtual network that you define. With a VPC, you have control over your network settings, such the IP address range, subnets, route tables, and network gateways. With VPC endpoints, the routing between the VPC and AWS services is handled by the AWS network, and you can use IAM policies to control access to service resources.
+Amazon VPC is an AWS service that you can use to launch AWS resources in a virtual network that you define. With a VPC, you have control over your network settings, such as the IP address range, subnets, route tables, and network gateways. With VPC endpoints, the routing between the VPC and AWS services is handled by the AWS network, and you can use IAM policies to control access to service resources.
 
 To connect your VPC to AWS Transform MGN, you define an *interface VPC endpoint* for AWS Transform MGN. An interface endpoint is an elastic network interface with a private IP address that serves as an entry point for traffic destined to a supported AWS service. The endpoint provides reliable, scalable connectivity to AWS Transform MGN without requiring an internet gateway, network address translation (NAT) instance, or VPN connection. For more information, see [What is Amazon VPC](https://docs.aws.amazon.com/vpc/latest/userguide/) in the *Amazon VPC User Guide*.
 
@@ -169,3 +169,7 @@ MGN events can be selected when defining a rule from the EventBridge console:
 ![Event source dropdown showing MGN filter with three MGN event types listed below.](http://docs.aws.amazon.com/mgn/latest/ug/images/EB-cw3.jpg)
 
 [Learn more about monitoring MGN](monitoring-overview.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

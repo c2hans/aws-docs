@@ -35,3 +35,7 @@ This table describes the different parameters within an Amazon SNS status.
 | DocumentLocation | Details about the document that was processed. Includes the file name and the Amazon S3 bucket that the file is stored in. |
 
 If the value of "Status" in the Amazon SNS notification is "Failed", this indicates something has gone wrong with your analysis job. In this case, check for an error message returned by the Amazon Textract API operation and ensure your document matches the quotas specified by[Set Quotas in Amazon Textract](limits-document.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

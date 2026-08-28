@@ -102,3 +102,7 @@ The following table shows the different types of tables created for S3 Storage L
 <a name="storage-lens-s3-tables-naming-next-steps"></a>
 + Learn about [Understanding S3 Storage Lens table schemas](storage-lens-s3-tables-schemas.md)
 + Learn about [Permissions for S3 Storage Lens tables](storage-lens-s3-tables-permissions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

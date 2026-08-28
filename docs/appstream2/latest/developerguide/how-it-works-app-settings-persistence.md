@@ -33,3 +33,7 @@ Files and folders created outside of these folders are saved within the VHD and 
 The entire VHD must be downloaded to the streaming instance before a streaming session can begin. For this reason, a VHD that contains a large amount of data can delay the start of the streaming session. For more information, see [Best Practices for Enabling Application Settings Persistence](best-practices-app-settings-persistence.md).
 
 When you enable application settings persistence, you must specify a settings group. The settings group determines which saved application settings are used for a streaming session from this stack. WorkSpaces Applications creates a new VHD file for the settings group that is stored separately within the S3 bucket in your AWS account. If the settings group is shared between stacks, the same application settings are used in each stack. If a stack requires its own application settings, specify a unique settings group for the stack.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

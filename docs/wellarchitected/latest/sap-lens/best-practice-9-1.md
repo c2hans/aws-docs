@@ -30,3 +30,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 Consider applying pattern recognition, anomaly detection, or both to security logs to assist in determining potential threats and events of importance to your SAP workload. AWS managed services, such as [AWS Security Hub CSPM](https://aws.amazon.com/security-hub/) and [Amazon GuardDuty](https://aws.amazon.com/guardduty/), can help, combined with third-party security solutions from the AWS Marketplace.
 +  AWS Video: [An Overview of AWS Security Hub CSPM](https://www.youtube.com/watch?v=oBac-GAoZJ8)
 +  AWS Documentation: [Getting started with GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_settingup.html?ref=wellarchitected)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,3 +43,7 @@ Keep in mind the following considerations and limitations for disrupting connect
 + **Maximum Targets:** There is a maximum number of subnets you can target per AWS FIS action. For more information, see [Service quotas for AWS Fault Injection Service](https://docs.aws.amazon.com/fis/latest/userguide/fis-quotas.html) in the *AWS FIS User Guide*.
 + **Access Methods:** The AWS FIS action only affects requests made through the internet or gateway virtual private cloud (VPC) endpoints. Requests from interface VPC endpoints (AWS PrivateLink) aren't supported.
 + **Regional Availability:** This feature is available only in [AWS Regions where S3 Express One Zone is supported](s3-express-Endpoints.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

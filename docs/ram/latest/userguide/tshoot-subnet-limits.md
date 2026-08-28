@@ -19,3 +19,7 @@ To address this, first check for other resource shares that might be sharing the
 
 **Note**
 AWS RAM doesn't automatically detect limit increase changes. You must re-associate the resource or principal to the resource share for RAM to detect the change.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RAM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ram` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -2342,3 +2342,7 @@ Use this key to verify that the action being authorized is an MCP Service action
 <a name="condition-keys-other"></a>
 
 AWS STS supports [SAML-based federation condition keys](reference_policies_iam-condition-keys.md#condition-keys-saml) and cross-service condition keys for [OIDC federation](reference_policies_iam-condition-keys.md#condition-keys-wif). These keys are available when a user who was federated using OIDC or SAML performs AWS operations in other services.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

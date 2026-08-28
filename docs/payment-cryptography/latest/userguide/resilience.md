@@ -32,3 +32,7 @@ Multiple integrity-enforcing mechanisms are deployed to ensure that the payment 
 The plaintext key material for your Payment Cryptography keys is protected extensively. The key material is encrypted in the HSM as soon as it is created, and the encrypted key material is immediately moved to secure storage. The encrypted key is retrieved and decrypted within the HSM just in time for use. The plaintext key remains in HSM memory only for the time needed to complete the cryptographic operation. Plaintext key material never leaves the HSMs; it is never written to persistent storage.
 
 For more information about the mechanisms that AWS Payment Cryptography uses to secure your keys, see AWS Payment Cryptography Cryptographic Details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

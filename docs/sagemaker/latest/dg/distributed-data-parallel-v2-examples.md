@@ -53,3 +53,7 @@ cd amazon-sagemaker-examples/training/distributed_training/pytorch/data_parallel
 + [HuggingFace Distributed Data Parallel Training in PyTorch on SageMaker AI - Distributed Question Answering](https://github.com/huggingface/notebooks/blob/master/sagemaker/03_distributed_training_data_parallelism/sagemaker-notebook.ipynb)
 + [HuggingFace Distributed Data Parallel Training in PyTorch on SageMaker AI - Distributed Text Summarization](https://github.com/huggingface/notebooks/blob/master/sagemaker/08_distributed_summarization_bart_t5/sagemaker-notebook.ipynb)
 + [HuggingFace Distributed Data Parallel Training in TensorFlow on SageMaker AI](https://github.com/huggingface/notebooks/blob/master/sagemaker/07_tensorflow_distributed_training_data_parallelism/sagemaker-notebook.ipynb)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

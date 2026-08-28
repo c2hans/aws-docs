@@ -62,3 +62,7 @@ SageMaker Training Compiler is compatible with SageMaker Debugger, but Debugger 
 **Q. Does SageMaker Training Compiler support custom containers (bring your own container)?**
 
 SageMaker Training Compiler is provided through AWS Deep Learning Containers, and you can extend a subset of the containers to customize for your use-case. Containers that are extended from AWS DLCs are supported by SageMaker Training Compiler. For more information, see [Supported Frameworks](https://docs.aws.amazon.com/sagemaker/latest/dg/training-compiler-support.html#training-compiler-supported-frameworks) and [Using the SageMaker AI Python SDK and Extending SageMaker AI Framework Deep Learning Containers](training-compiler-enable-tensorflow.md#training-compiler-enable-tensorflow-sdk-extend-container). If you need further support, reach out to the SageMaker AI team through [AWS Support](https://console.aws.amazon.com/support/) or [AWS Developer Forums for Amazon SageMaker AI](https://forums.aws.amazon.com/forum.jspa?forumID=285).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

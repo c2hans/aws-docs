@@ -140,3 +140,7 @@ To edit, share, or delete your connector, see [Managing existing integrations](i
 <a name="zendesk-troubleshooting-auth"></a>
 + **Sign-in fails** – Verify that your Zendesk account is active and that you can sign in to the [Zendesk sign-in page](https://www.zendesk.com/login/) on the Zendesk website. If your organization uses single sign-on (SSO), confirm that your identity provider is configured correctly.
 + **Access denied** – Confirm that your Zendesk user has an admin role with permissions to access tickets and support data. For API key connections, verify that the API token is valid and the associated email address is correct.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

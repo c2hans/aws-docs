@@ -34,3 +34,7 @@ Quick supports the following AppFabric output locations:
     1. Follow the instructions in [Using AWS Glue to connect to data sources in Amazon S3](https://docs.aws.amazon.com/athena/latest/ug/data-sources-glue.html) in the *Athena User Guide*.
 
     1. Follow the instructions in [Creating a dataset using Athena data](https://docs.aws.amazon.com/quicksight/latest/user/create-a-data-set-athena.html) in the *Quick User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

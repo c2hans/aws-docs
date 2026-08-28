@@ -28,3 +28,7 @@ The hexagonal architecture approach enables development teams to parallelize dev
 <a name="time-to-market"></a>
 
 Local unit testing improves the development feedback cycle and reduces the time to market for new products or features, especially when these contain complex business logic, as explained previously. Furthermore, increased code coverage by unit tests significantly reduces the risk of introducing regression bugs when you update or refactor the code base. Unit test coverage also enables you to continuously refactor the code base to keep it well organized, which speeds the onboarding process for new engineers. This is discussed further in the [*Quality by design*](improve-software-quality.md) section. Lastly, if the business logic is well isolated and tested, it enables developers to adapt quickly to changing functional and non-functional requirements. This is explained further in the [*Adapting to change*](adapt-to-change.md) section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

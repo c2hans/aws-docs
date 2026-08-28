@@ -94,3 +94,7 @@ These are credentials from the IAM user in the AWS Region, not the Snowball Edge
 This command is for an Amazon EC2-compatible instance running an Amazon Linux 2 AMI. For a Windows AMI, see [Install the AWS IoT Greengrass Core software](https://docs.aws.amazon.com/greengrass/v2/developerguide/install-greengrass-core-v2.html).
 
 When you are finished, you will have an AWS IoT Greengrass core running on your Snowball Edge device for your local use.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

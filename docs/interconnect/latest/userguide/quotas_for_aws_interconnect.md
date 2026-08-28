@@ -22,3 +22,7 @@ Your AWS account has the following quotas related to AWS Interconnect.
 | Interconnect Outstanding Requested Connections | 4 | The maximum number of AWS Interconnect Connections in the `requested` state allowed per account. |
 | Multicloud Connections Per Provider | 2 | The maximum number of AWS Interconnect multicloud Connections allowed per provider per account. |
 | Last Mile Connections Per Provider | 2 | The maximum number of AWS Interconnect last mile Connections allowed per provider per account. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Interconnect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query interconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ Most compute-bound HPC workloads see equivalent or better performance with SMT d
 + [Get compute node group details in AWS PCS](working-with_cng_get-details.md)
 + [Finding compute node group instances in AWS PCS](working-with_compute-instances.md)
 + [Run custom scripts with node lifecycle actions in AWS PCS](cng-node-lifecycle-actions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

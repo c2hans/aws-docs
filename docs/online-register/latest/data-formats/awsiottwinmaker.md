@@ -29,3 +29,7 @@ AWS IoT TwinMaker provides the following APIs for data retrieval.
 | <a name="iottwinmaker-ListSyncResources"></a>[ListSyncResources](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListSyncResources.html) | List all sync resources for a sync job | List |
 | <a name="iottwinmaker-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListTagsForResource.html) | List all tags for a resource | List |
 | <a name="iottwinmaker-ListWorkspaces"></a>[ListWorkspaces](https://docs.aws.amazon.com/iot-twinmaker/latest/apireference/API_ListWorkspaces.html) | List all workspaces | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

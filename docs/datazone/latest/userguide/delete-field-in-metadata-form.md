@@ -20,3 +20,7 @@ To delete a field in a metadata form, complete the following steps:
 1. On the form's details page, choose the field that you want to delete, then expand **Actions**, and choose **Delete**.
 
 1. Confirm deletion by choosing **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ SAP BusinessObjects BI Platform tiers are designed as follows to eliminate SPOFs
 <a name="bobi-ha-dr-win-ha-testing"></a>
 
  [SAP Note 1229417](https://me.sap.com/notes/1229417) provides four tests you must perform to ensure that the CMSs are clustered correctly and that cluster functionality is working. Additionally, when performing the tests, you must also ensure that your deployment can tolerate Availability Zone failure. You can confirm this by stopping all the servers in one Availability Zone and making sure that all the services are still available. To test the CMS database, you can perform the failover manually. In the [Amazon RDS console](https://console.aws.amazon.com/rds/), choose **Instances**, **Instance actions**, **Failover**. After all servers in one Availability Zone are shut down and database failover is complete, test the availability of the system and all the services. Repeat the same test for the second Availability Zone.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

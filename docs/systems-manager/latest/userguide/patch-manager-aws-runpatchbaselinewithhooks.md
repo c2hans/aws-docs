@@ -229,3 +229,7 @@ The value to provide for the `OnExitHookDocName` parameter is the name or Amazon
 The SSM document you specify is run after the managed node reboot operation and performs any actions supported by SSM Agent, such as a shell script to verify node health after the patching operation is complete. (For a list of actions, see [Command document plugin reference](documents-command-ssm-plugin-reference.md)). The default SSM document name is `AWS-Noop`, which doesn't perform any operation on the managed node.
 
 For information about creating a custom SSM document, see [Creating SSM document content](documents-creating-content.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

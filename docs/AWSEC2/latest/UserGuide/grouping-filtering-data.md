@@ -37,3 +37,7 @@ Capacity Manager aggregates your metrics based on the dimensions and date period
 
 **Note**
 When you group by a tag dimension, resources that do not have a value for that tag are included in a separate group with an empty value. This ensures that totals account for all resources, not only tagged ones.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

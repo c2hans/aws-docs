@@ -28,3 +28,7 @@ Amazon Keyspaces has a quota of 1,000 WCUs or WRUs per second/3,000 RCUs or RRUs
 <a name="common_errors_warnings"></a>
 
 If you're using Amazon Virtual Private Cloud and you connect to Amazon Keyspaces, the Cassandra driver might issue a warning message about the control node itself in the `system.peers` table. For more information, see [Common errors and warnings](vpc-endpoints.md#vpc_troubleshooting). You can safely ignore this warning.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,3 +25,7 @@ For additional information, see the following resources:
 + [Migration workflows](https://docs.aws.amazon.com/migrationhub-orchestrator/latest/userguide/migration-workflows.html) (Migration Hub Orchestrator documentation)
 + [Using Migration Hub Orchestrator to simplify and accelerate Microsoft SQL Server migrations](https://aws.amazon.com/blogs/modernizing-with-aws/aws-migration-hub-orchestrator-sql-server-migrations-to-aws/) (AWS blog post)
 + [Simplify migrating your Windows Server images with AWS Migration Hub Orchestrator](https://aws.amazon.com/blogs/modernizing-with-aws/simplify-migrating-your-windows-server-images-with-aws-migration-hub-orchestrator/) (AWS blog post)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

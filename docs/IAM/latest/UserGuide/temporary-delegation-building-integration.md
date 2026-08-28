@@ -215,3 +215,7 @@ Example: If you approve a 2-hour delegation request and release the token at 10:
 | 10:00 am | 12:10 pm | Failed (token expired) | 0 minutes |
 
 As shown in the table, exchanging the token later in the validity period results in less usable time for the product provider.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

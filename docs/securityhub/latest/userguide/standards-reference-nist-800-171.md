@@ -112,3 +112,7 @@ The following list specifies the controls that support NIST SP 800-171 Revision 
 + [[SNS.1] SNS topics should be encrypted at-rest using AWS KMS](sns-controls.md#sns-1)
 + [[SSM.2] Amazon EC2 instances managed by Systems Manager should have a patch compliance status of COMPLIANT after a patch installation](ssm-controls.md#ssm-2)
 + [[WAF.12] AWS WAF rules should have CloudWatch metrics enabled](waf-controls.md#waf-12)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

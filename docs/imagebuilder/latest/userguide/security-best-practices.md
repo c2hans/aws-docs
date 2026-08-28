@@ -692,3 +692,7 @@ The files that you create to skip a section of the clean up script should not in
 | `INSTANCE_LOG_FILES` | `/var/log/amazon/ec2/ec2-macos-init.log`<br />`/var/log/amazon/ec2/ena-ethernet.log`<br />`/var/log/amazon/ec2/system-monitoring.log` | `skip_cleanup_instance_log_files` |
 | `TOE_FILES` | `{{workingDirectory}}/TOE_*` | `skip_cleanup_toe_files` |
 | `SSM_LOG_FILES` | `/var/log/amazon/ssm/*` | `skip_cleanup_ssm_log_files` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

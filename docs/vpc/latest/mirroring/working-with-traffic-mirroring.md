@@ -20,3 +20,7 @@ You can work with traffic mirror targets, sessions, and filters by using the Ama
 + [Accept or delete a shared traffic mirror target](tm-share-accept.md)
 + [Create, modify, or delete a traffic mirror filter](create-traffic-mirroring-filter.md)
 + [Create, modify, or delete a traffic mirror session](create-traffic-mirroring-session.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

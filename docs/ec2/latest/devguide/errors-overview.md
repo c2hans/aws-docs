@@ -508,3 +508,7 @@ The following shows an example of an error response.
 The Amazon EC2 API follows an eventual consistency model, due to the distributed nature of the system supporting the API. This means that when you run an API command, the result may not be immediately visible to subsequent API commands, which can result in an error.
 
 For more information about eventual consistency and how to manage it, see [Eventual consistency](https://docs.aws.amazon.com/ec2/latest/devguide/eventual-consistency.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

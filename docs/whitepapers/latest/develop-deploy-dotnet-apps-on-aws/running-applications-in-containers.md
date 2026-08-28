@@ -56,3 +56,7 @@ AWS Fargate supports Linux containers and is a powerful option for running .NET 
 [AWS App2Container](https://aws.amazon.com/app2container/) is a tool provided by AWS to help you modernize .NET and Java applications into containerized applications. Containerizing existing applications requires you to identify application dependencies, network port configurations, and software delivery process. These tasks can be manual, time consuming, and error prone.
 
 Using App2Container, you simply select the applications you want to containerize, and A2C analyzes your applications and automatically generates a container image that is configured with the correct dependencies, network configurations, and deployment instructions for ECS or Kubernetes. A2C provisions, through CloudFormation, the cloud infrastructure and [CI/CD](https://en.wikipedia.org/wiki/CI/CD) pipelines required to deploy the containerized .NET or Java application into production.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

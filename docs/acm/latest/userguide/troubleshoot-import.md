@@ -18,3 +18,7 @@ You can import third-party certificates into ACM and associate them with [integr
 + Certificate support by integrated services might differ depending on whether the certificate is imported into IAM or into ACM.
 + The certificate must be valid when it is imported.
 + Detail information for all of your certificates is displayed in the console. By default, however, if you call the [ListCertificates](https://docs.aws.amazon.com/acm/latest/APIReference/API_ListCertificates.html) API or the [list-certificates](https://docs.aws.amazon.com/cli/latest/reference/acm/list-certificates.html) AWS CLI command without specifying the `keyTypes` filter, only `RSA_1024` or `RSA_2048` certificates are displayed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Certificate Manager (ACM). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query acm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

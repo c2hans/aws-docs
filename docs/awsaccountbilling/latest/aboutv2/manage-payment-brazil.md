@@ -38,3 +38,7 @@ The PIX QR code is active for 30 minutes. If the transaction time exceeds 30 min
 It takes up to two minutes to receive the payment confirmation from your bank. Your **Payments** page to reflect the changes as soon as the information is received.
 
 For any questions about your PIX payment, contact [Support](https://console.aws.amazon.com/support).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

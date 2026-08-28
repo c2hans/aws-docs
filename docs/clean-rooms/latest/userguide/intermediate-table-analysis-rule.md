@@ -55,3 +55,7 @@ The following table describes the validation rules for multi-party intermediate 
    Review the **Columns available for analysis** table, which shows the column name, type, and whether each column is allowed in query output.
 
 1. Choose **Configure analysis rule**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

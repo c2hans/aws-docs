@@ -58,3 +58,7 @@ To address this issue, install a later release of JetBrains (2023.2.1 or newer).
 If Amazon Q Developer Code Transformation fails to start at sign in and you receive the following error message (see image below), you need to re-authenticate your credentials. Re-authenticate, then initiate Amazon Q Developer Code Transformation.
 
 ![Transform failed error message indicating user is not authorized to make this call.](http://docs.aws.amazon.com/toolkit-for-jetbrains/latest/userguide/images/amazonqtransformfail2023.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

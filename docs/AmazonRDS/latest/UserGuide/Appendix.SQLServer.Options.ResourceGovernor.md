@@ -120,3 +120,7 @@ To perform a manual DB failover to confirm that the resource governor replicate,
 
 **Note**
 When using Resource governor on a read replica, you must manually ensure that resource governor has been configured on your read replica using Amazon RDS stored procedures after the option is added to the option group. Resource governor configurations do not automatically replicate to the read replica. Also, the workload on read replica is typically different than the primary instance. Hence, it's recommended to apply the resource configuration on the replica based on your workload and instance type. You can run these Amazon RDS stored procedures on read replica independently to configure resource governor on read replica.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

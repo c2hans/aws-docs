@@ -31,3 +31,7 @@ For more information on provisioned product status, see [Viewing Provisioned Pro
    1. (Optional) Select **Ignore errors**. If you select this option, Service Catalog stops managing the provisioned product even if it cannot delete the product's underlying resources.
 
    1. Choose **Terminate provisioned product**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

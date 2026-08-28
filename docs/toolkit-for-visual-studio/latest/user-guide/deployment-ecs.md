@@ -20,3 +20,7 @@ For more information about Amazon ECS, go to the [Elastic Container Service docu
 + [Specify AWS Credentials](deployment-ecs-specify-credentials.md)
 + [Deploy an ASP.NET Core 2.0 App (Fargate) (Legacy)](deployment-ecs-aspnetcore-fargate.md)
 + [Deploy an ASP.NET Core 2.0 App (EC2)](deployment-ecs-aspnetcore-ec2.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-visual-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

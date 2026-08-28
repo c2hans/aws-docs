@@ -83,3 +83,7 @@ Security Lake collects data from custom sources in addition to the following AWS
 + AWS WAFv2 Logs
 
 For more information about these sources, see [Collecting data from AWS services in Security Lake](internal-sources.md). You can consume the Amazon S3 objects in your security data lake by creating a subscriber that can read data in the OCSF schema. You can also query data by using Amazon Athena, Amazon Redshift, and third-party subscription services that integrate with AWS Glue.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

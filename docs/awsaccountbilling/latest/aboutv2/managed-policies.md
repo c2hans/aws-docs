@@ -100,3 +100,7 @@ View details about updates to AWS managed policies for AWS Billing since this se
 | [AWSPurchaseOrdersServiceRolePolicy](#security-iam-awsmanpol-AWSPurchaseOrdersServiceRolePolicy), [Billing](#security-iam-awsmanpol-Billing), and [AWSBillingReadOnlyAccess](#security-iam-awsmanpol-AWSBillingReadOnlyAccess) – Update to existing policies<br />[AWSAccountActivityAccess](#security-iam-awsmanpol-AWSAccountActivityAccess) – New AWS managed policy documented for AWS Billing | Added updated action set across all policies. | March 06, 2023 |
 | [AWSPurchaseOrdersServiceRolePolicy](#security-iam-awsmanpol-AWSPurchaseOrdersServiceRolePolicy) – Update to an existing policy | AWS Billing removed unnecessary permissions. | November 18, 2021 |
 | AWS Billing started tracking changes | AWS Billing started tracking changes for its AWS managed policies. | November 18, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

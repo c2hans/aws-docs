@@ -70,3 +70,7 @@ The task definition JSON that follows has a `logConfiguration` object specified 
 <a name="specify-log-config-next-steps"></a>
 + You can optionally set a retention policy for the log group by using the CloudWatch AWS CLI or API. For more information, see [put-retention-policy](https://docs.aws.amazon.com/cli/latest/reference/logs/put-retention-policy.html) in the *AWS Command Line Interface Reference*.
 + After you have registered a task definition with the `awslogs` log driver in a container definition log configuration, you can run a task or create a service with that task definition to start sending logs to CloudWatch Logs. For more information, see [Running an application as an Amazon ECS task](standalone-task-create.md) and [Creating an Amazon ECS rolling update deployment](create-service-console-v2.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

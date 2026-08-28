@@ -13,3 +13,7 @@ The following are limitations for the Adobe Analytics connector:
 + `Segment` entity: with filter value `includeType=“templates”`, filters on other fields are not working.
 + `Date Range` entity – filter on `curatedRsid` field is not working.
 + `Metric entity` entity – filter on segmentable field with “false” value gives result for both true and false value.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -61,3 +61,7 @@ To include `AWS::Lambda::Function` resources in a generated template, you must d
 1. Upload the code to a Amazon S3 bucket.
 
 1. Run an import operation with t he generated template and provide the bucket name and key as parameter values.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

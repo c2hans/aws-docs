@@ -28,4 +28,8 @@ To learn about the permissions required to call an Amazon Braket API action, see
  **Code examples from the Amazon Braket Tutorials GitHub repository:**
 +  [Amazon Braket Examples](https://github.com/amazon-braket/amazon-braket-examples)
 
-This document was last published on August 24, 2026.
+This document was last published on August 28, 2026.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

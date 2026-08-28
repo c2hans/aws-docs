@@ -74,3 +74,7 @@ If you have automatic deployments configured for App Runner, an update to your a
 To configure automatic deployments, use the following settings in the `deployment.json` file:
 Set `autoDeploymentsEnabled` to **true** to automatically deploy updates to App Runner when you deploy updates to Amazon ECR. *This is the default setting.*
 Set `autoDeploymentsEnabled` to **false** if you want to update App Runner manually, using the App Runner service console, API, SDKs, or AWS CLI.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App2Container. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app2container` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

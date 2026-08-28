@@ -93,3 +93,7 @@ Choose the user options icon (![User icon with a circular avatar placeholder and
  **Getting started**
 
  The **Getting started** tab includes information, guidance, and resources on how to begin with Studio. This includes a guided tour of the Studio UI, a link to documentation about Studio, and a selection of quick tips.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

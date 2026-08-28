@@ -15,3 +15,7 @@ You must install the Amazon Redshift ODBC driver on client computers accessing a
     + Windows Server 2025, 2022, 2019, 2016, or 2012.
   + 100 MB of available disk space.
   + Visual C\+\+ Redistributable for Visual Studio 2015 for 64-bit Windows installed. You can download the installation package at [ Download Visual C\+\+ Redistributable for Visual Studio 2022](https://visualstudio.microsoft.com/downloads/#microsoft-visual-c-redistributable-for-visual-studio-2022) on the Microsoft website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -298,3 +298,7 @@ To verify your AWS account, contact AWS Account Support — with the error messa
 <a name="misc-ivs-usage-cost"></a>
 
 While the exact cost of IVS usage cannot be determined before a stream session, a rough cost estimator is at: [https://ivs.rocks/calculator](https://ivs.rocks/calculator). Additional pricing information is at: [https://aws.amazon.com/ivs/pricing/](https://aws.amazon.com/ivs/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,3 +65,7 @@ If the StackSets deployment to an account fails and the message is "IAM role exi
 1. Under **IAM role deployments status**, choose **Retry role deployment**. The deployments can take several minutes to complete, depending on the number of member accounts in your organization.
 
 For a message other than "IAM role exists", open a case with AWS Support. For more information, see [Creating a support case](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html#creating-a-support-case) in the *Support User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Virtual Private Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

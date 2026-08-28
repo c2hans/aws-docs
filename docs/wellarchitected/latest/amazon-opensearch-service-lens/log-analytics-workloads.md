@@ -43,3 +43,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 1.  **Create visualizations and dashboards:** Create visualizations and dashboards using Amazon OpenSearch Service Dashboard. Dashboards provide a centralized view for monitoring various aspects of your application.
 
 1.  **Set up alerting:** Use the Amazon OpenSearch Service alerting plugin to receive notifications when specific log patterns or anomalies are detected. This proactive approach helps in identifying and addressing issues before they impact users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -110,3 +110,7 @@ After you create the policy, note the ARN of the policy. You need the ARN for a 
 <a name="export-cluster-data.Setup.XAcctBucket"></a>
 
 You can use S3 buckets across AWS accounts. For more information, see [Using a cross-account Amazon S3 bucket](aurora-export-snapshot.Setup.md#aurora-export-snapshot.Setup.XAcctBucket).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

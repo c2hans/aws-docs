@@ -41,3 +41,7 @@ SNS notifications for AWS Marketplace SaaS products are being replaced with Amaz
  The `Resource` ﬁeld is the Amazon Resource Name (ARN) of your Amazon SQS queue.
 
  For more information on message notification and queuing for your SaaS products, see [Subscribing an SQS queue to the SNS topic](saas-notification.md#subscribing-an-sqs-queue-to-the-sns-topic) and [Accessing the AWS Marketplace Metering and Entitlement Service APIs](saas-integration-metering-and-entitlement-apis.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

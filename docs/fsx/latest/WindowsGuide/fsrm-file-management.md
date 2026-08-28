@@ -15,3 +15,7 @@ For example, you can use PowerShell scripts on client machines to:
 You can access files properties using the `Get-FsrmClassification` command and take actions based on the values.
 
 To access FSRM classification properties or other FSRM metadata from client-side PowerShell scripts, the client machine must also have FSRM installed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

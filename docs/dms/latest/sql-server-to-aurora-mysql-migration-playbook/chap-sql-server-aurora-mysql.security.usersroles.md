@@ -157,3 +157,7 @@ The following table summarizes common security tasks and the differences between
 | Grant SELECT on a schema |  <pre>GRANT SELECT ON SCHEMA::<Schema Name> to <User Name></pre>  |  <pre>GRANT SELECT ON <Schema Name>.* TO <User Name></pre>  |
 
 For more information, see [What is IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html) and [IAM Identities (users, user groups, and roles)](https://docs.aws.amazon.com/IAM/latest/UserGuide/id.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

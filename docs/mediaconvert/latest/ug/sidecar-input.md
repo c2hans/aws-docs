@@ -41,3 +41,7 @@ When converting from SCC to SRT, MediaConvert first rounds the value you set for
 + [Use cases for time delta](time-delta-use-cases.md)
 + [Converting dual SCC input files to embedded captions](converting-dual-scc-input-files-to-embedded-captions.md)
 + [TTML style formatting](ttml-style-formatting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

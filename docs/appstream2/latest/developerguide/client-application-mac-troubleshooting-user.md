@@ -32,3 +32,7 @@ WorkSpaces Applications logs can be used by your administrator to identify and t
 If issues occur when you use the WorkSpaces Applications client for macOS, your WorkSpaces Applications version number and client ID can help your administrator and AWS support team with troubleshooting. To find the version of the WorkSpaces Applications client that you have installed, open the WorkSpaces Applications client. On the system menu bar, choose **Amazon WorkSpaces Applications** and **About Amazon AppStream 2.0**. The client version is displayed below the Amazon WorkSpaces Applications logo.
 
 To find the client ID of the WorkSpaces Applications client that you have installed, choose **Amazon WorkSpaces Applications** on the system menu bar, or navigate to the top-right corner of the **Connect** page and choose **Client Option**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

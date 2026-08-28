@@ -14,6 +14,7 @@ The following data types are supported:
 +  [AdditionalServiceDetails](API_AdditionalServiceDetails.md)
 +  [AdditionalServiceRegistrationStep](API_AdditionalServiceRegistrationStep.md)
 +  [AgentSpace](API_AgentSpace.md)
++  [ApprovalAction](API_ApprovalAction.md)
 +  [Asset](API_Asset.md)
 +  [AssetContent](API_AssetContent.md)
 +  [AssetFile](API_AssetFile.md)
@@ -68,6 +69,7 @@ The following data types are supported:
 +  [MCPServerSigV4Configuration](API_MCPServerSigV4Configuration.md)
 +  [MCPServerSigV4ServiceDetails](API_MCPServerSigV4ServiceDetails.md)
 +  [MCPServerSplunkConfiguration](API_MCPServerSplunkConfiguration.md)
++  [MCPToolDetail](API_MCPToolDetail.md)
 +  [Message](API_Message.md)
 +  [NewRelicApiKeyConfig](API_NewRelicApiKeyConfig.md)
 +  [NewRelicServiceAuthorizationConfig](API_NewRelicServiceAuthorizationConfig.md)
@@ -77,6 +79,7 @@ The following data types are supported:
 +  [PagerDutyConfiguration](API_PagerDutyConfiguration.md)
 +  [PagerDutyDetails](API_PagerDutyDetails.md)
 +  [PagerDutyOAuthClientCredentialsConfig](API_PagerDutyOAuthClientCredentialsConfig.md)
++  [PatternFilter](API_PatternFilter.md)
 +  [PendingMessage](API_PendingMessage.md)
 +  [PrivateConnectionMode](API_PrivateConnectionMode.md)
 +  [PrivateConnectionSummary](API_PrivateConnectionSummary.md)
@@ -136,8 +139,13 @@ The following data types are supported:
 +  [SourceAwsConfiguration](API_SourceAwsConfiguration.md)
 +  [Task](API_Task.md)
 +  [TaskFilter](API_TaskFilter.md)
++  [TriggerFilterGroup](API_TriggerFilterGroup.md)
 +  [UsageMetric](API_UsageMetric.md)
 +  [UserMessageBlock](API_UserMessageBlock.md)
 +  [UserReference](API_UserReference.md)
 +  [ValidationExceptionField](API_ValidationExceptionField.md)
 +  [Webhook](API_Webhook.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

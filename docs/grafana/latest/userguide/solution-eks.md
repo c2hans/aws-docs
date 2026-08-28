@@ -594,3 +594,7 @@ There are a few things that can cause the setup of the project to fail. Be sure 
   This command should list the CRDs related to the external secrets operator, including `clustersecretstores.external-secrets.io` and `externalsecrets.external-secrets.io`. If they are not listed, wait a few minutes and check again.
 
   Once the CRDs are registered, you can run `terraform apply` again to deploy the solution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

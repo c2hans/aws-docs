@@ -116,3 +116,7 @@ Each actuator definition includes:
 +  `unit` — Unit of measurement (if applicable)
 
 This design means new commands can be added by inserting a signal with an `actuator` attribute into the signal catalog — no code changes required.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

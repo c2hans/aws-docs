@@ -28,3 +28,7 @@ Canary release is a software development strategy in which a new version of an A
 <a name="custom-domain-names"></a>
 
 You can provide an intuitive business-friendly URL name to API instead of the URL provided by API Gateway. API Gateway provides features to configure custom domain for the APIs. With custom domain names, you can set up your API's hostname, and choose a multi-level base path (for example, `myservice`, `myservice/cat/v1`, or `myservice/dog/v2`) to map the alternative URL to your API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ AgentCore optimization connects evaluation findings to validated improvements th
    +  **Target-based variants:** Different gateway targets pointing to different runtime endpoints. Use when the change includes code changes, a framework upgrade, or when you want to compare entirely different agent implementations. Each variant can have its own online evaluation configuration.
 
 1.  **Deploy the winning variant and repeat:** Route 100% of traffic to the winning variant. New traces from the new baseline provide the foundation for the next iteration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

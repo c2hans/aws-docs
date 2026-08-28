@@ -91,3 +91,7 @@ A French-language informational keyword response. When a recipient sends “INFO
 The Canada launch registration requires a screen recording that demonstrates your RCS messaging experience. The recording should show the end-user experience of receiving and interacting with your RCS messages. Registrations submitted without a valid screen recording are rejected.
 
 For detailed video format and content requirements, see [Launch video requirements](rcs-compliance-video.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

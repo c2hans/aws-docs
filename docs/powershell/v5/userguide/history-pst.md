@@ -27,3 +27,7 @@ For additional information about changes and updates to the AWS Tools for PowerS
 | [What's new](whats-new.md) | Added information about the first preview release of the AWS Tools for PowerShell version 5. | November 18, 2024 |
 | [Information about EC2-Classic](#history-pst) | Removed information about EC2-Classic, which has been retired. | August 1, 2024 |
 | [Additional security considerations](additional-security-considerations.md) | Included information about potential logging of sensitive data. | April 16, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

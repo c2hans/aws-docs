@@ -185,3 +185,7 @@ The structure of a coverage issue is `Issue type:Extra information`. Typically, 
   <tr><td>EKS Addon Issue - <code>AccessDenied: admission webhook "validation.gatekeeper.sh" denied the request: [allowed-container-registries] container &lt;aws-guardduty-agent&gt; has an invalid image registry</code></td><td>Add the image registry for GuardDuty to the <code>allowed-container-registries</code> in your admission controller. For more information, see <i>ECR repository for EKS v1.8.1-eks-build.2</i> in <a href="runtime-monitoring-ecr-repository-gdu-agent.md">Amazon ECR repository hosting GuardDuty agent</a>.</td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

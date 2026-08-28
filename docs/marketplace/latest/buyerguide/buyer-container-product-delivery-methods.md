@@ -21,3 +21,7 @@ For a fulfillment option with a **Helm chart** delivery method, use the seller-p
 <a name="buyer-container-product-add-on-amazon-eks-delivery-method"></a>
 
 For a fulﬁllment option with an **Add-on for Amazon EKS** delivery method, use the Amazon EKS console or Amazon EKS CLI to launch the product. For more information about Amazon EKS add-ons, see [Amazon EKS add-ons](https://docs.aws.amazon.com/eks/latest/userguide/eks-add-ons.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

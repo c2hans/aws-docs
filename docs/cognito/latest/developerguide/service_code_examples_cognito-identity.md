@@ -26,3 +26,7 @@ For a complete list of AWS SDK developer guides and code examples, see [Using th
     + [`UpdateIdentityPool`](cognito-identity_example_cognito-identity_UpdateIdentityPool_section.md)
 + [Scenarios](service_code_examples_cognito-identity_scenarios.md)
   + [Create an Amazon Textract explorer application](cognito-identity_example_cross_TextractExplorer_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

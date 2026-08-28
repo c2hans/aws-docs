@@ -77,3 +77,7 @@ View details about updates to AWS managed policies for AWS Resilience Hub since 
 | [AWSResilienceHubAsssessmentExecutionPolicy](#security_iam_aws-assessment-policy) – Change | AWS Resilience Hub updated the AWSResilienceHubAsssessmentExecutionPolicy to grant Describe permissions to allow you to access resources on Amazon RDS while running assessments. | October 5, 2023 |
 | [AWSResilienceHubAsssessmentExecutionPolicy](#security_iam_aws-assessment-policy) – New | This AWS Resilience Hub policy provides access to other AWS services for running assessments. | June 26, 2023 |
 | AWS Resilience Hub started tracking changes | AWS Resilience Hub started tracking changes for its AWS managed policies. | June 15, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

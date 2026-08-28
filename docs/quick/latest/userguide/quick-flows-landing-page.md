@@ -19,3 +19,7 @@ The Flows library organizes your flows into three views:
 + **All Flows** — Every flow available in your organization.
 
 Use the search bar to find flows by name or description. For each flow, the context menu lets you open, duplicate, or delete it. Choose **Create flow** to start building a new flow. For more information, see [Creating flows](creating-flows.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,3 +42,7 @@ MediaPackage can modify how some of these elements are presented in the output m
 + Separate the manifest into multiple periods, to allow ad breaks. See [DASH manifest options in AWS Elemental MediaPackage](multi-period.md).
 + Reduce the length of the manifest to make processing and playback more efficient. See [Compacted DASH manifests](compacted.md).
 + Control what segment information is used in the media URL in the `SegmentTemplate` properties. See [DASH manifest segment template format](segtemp-format.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

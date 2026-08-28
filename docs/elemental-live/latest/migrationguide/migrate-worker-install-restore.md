@@ -102,3 +102,7 @@ For example, to specify the location of the certificate and the key:
 Read this section if the cluster was previously configured to use HTTP. Starting with versions 2.26.0 (and 3.26.0), HTTPS is always enabled by default. For more information, see [ current Release Notes](https://docs.aws.amazon.com/elemental-live/).
 
 You must open port 443 on every node to allow access to the web interfaces for the AWS Elemental software. See the section about opening ports in the [AWS Elemental Live Configuration Guide](https://docs.aws.amazon.com/elemental-live/latest/configguide/). When you save, the port is added and the firewall is started.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

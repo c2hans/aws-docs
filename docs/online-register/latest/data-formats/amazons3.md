@@ -93,3 +93,7 @@ Amazon S3 provides the following APIs for data retrieval.
 | <a name="s3-ListStorageLensConfigurations"></a>[ListStorageLensConfigurations](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListStorageLensConfigurations.html) | List Amazon S3 Storage Lens configurations | List |
 | <a name="s3-ListStorageLensGroups"></a>[ListStorageLensGroups](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListStorageLensGroups.html) | List S3 Storage Lens groups | List |
 | <a name="s3-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_ListTagsForResource.html) | List the tags attached to the specified resource | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

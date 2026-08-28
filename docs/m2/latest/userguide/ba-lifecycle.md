@@ -31,3 +31,7 @@ The following table summarizes EOL date for each major version.
 EOL date for major version 5 will be aligned with the availability for the next major version.
 
 To understand the support model of minor versions, refer [AWS Mainframe Modernization components lifecycle](lifecycle-m2.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

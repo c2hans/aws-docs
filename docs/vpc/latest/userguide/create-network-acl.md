@@ -115,3 +115,7 @@ For more information, see the following resources in the *AWS Firewall Manager D
 + [AWS Firewall Manager prerequisites](https://docs.aws.amazon.com/waf/latest/developerguide/fms-prereq.html)
 + [Setting up AWS Firewall Manager network ACL policies](https://docs.aws.amazon.com/waf/latest/developerguide/getting-started-fms-network-acl.html)
 + [Using network ACL policies with Firewall Manager](https://docs.aws.amazon.com/waf/latest/developerguide/network-acl-policies.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

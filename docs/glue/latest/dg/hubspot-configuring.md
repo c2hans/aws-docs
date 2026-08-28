@@ -128,3 +128,7 @@ Within app developer accounts, you can create developer test accounts to test ap
 
 **Note**
 The developer account is related to development activities such as API integration, and the app test account is used to see the data which is created or pulled by the developer account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

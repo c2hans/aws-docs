@@ -80,3 +80,7 @@ When the fine-tuning process is complete, JumpStart provides information about t
 <a name="jumpstart-config-defaults-training"></a>
 
 You can configure default values for parameters such as IAM roles, VPCs, and KMS keys to pre-populate for JumpStart model deployment and training. For more information, see, [Configure default values for JumpStart models](jumpstart-deploy.md#jumpstart-config-defaults).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

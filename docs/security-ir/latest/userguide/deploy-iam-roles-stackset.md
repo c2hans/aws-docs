@@ -35,3 +35,7 @@ Use the following procedure to create a StackSet with service-managed permission
 1. Review the settings and select the acknowledgment check box that confirms AWS CloudFormation might create IAM resources with custom names. Choose **Submit**.
 
 After the StackSet deployment completes, the containment roles are available in all accounts within your organization. For more information about managing StackSets, see [Update a StackSet with service-managed permissions](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacksets-orgs-manage-update.html) in the *AWS CloudFormation User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

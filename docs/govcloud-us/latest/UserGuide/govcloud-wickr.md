@@ -31,3 +31,7 @@ For AWS Services architected within the AWS GovCloud (US) Regions, the following
 + Email addresses of provisioned users within a network leave the AWS GovCloud (US) Regions in the normal course of service use. Do not enter export-controlled information into the email field when provisioning users.
 + Network names are visible to the AWS WickrGov service team as part of normal service function. Do not enter export-controlled or sensitive information into the network name field when creating a network.
 + When an AWS WickrGov network in AWS GovCloud (US) and an AWS Wickr network in an AWS commercial Region are federated, communications may be stored in either federated network’s data retention module if configured.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

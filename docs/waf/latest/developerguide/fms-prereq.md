@@ -22,3 +22,7 @@ Before you use Firewall Manager for the first time, perform the following steps 
 + [Using AWS Firewall Manager in Regions that are disabled by default](enable-disabled-region.md)
 
 After you follow these steps, you can configure Firewall Manager to begin protecting your resources. For more information, see [Setting up AWS Firewall Manager​ AWS WAF policies](getting-started-fms.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

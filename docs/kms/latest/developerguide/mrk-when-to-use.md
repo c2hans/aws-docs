@@ -19,3 +19,7 @@ Multi-Region keys also raise new security considerations:
   To verify data residency and data sovereignty with multi-Region keys, you need to implement access policies and compile AWS CloudTrail events across multiple Regions.
 
 To make it easier for you to manage access control on multi-Region keys, the permission to replicate a multi-Region key ([kms:ReplicateKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_ReplicateKey.html)) is separate from the standard permission to create keys ([kms:CreateKey](https://docs.aws.amazon.com/kms/latest/APIReference/API_CreateKey.html)). Also, AWS KMS supports several policy conditions for multi-Region keys, including `kms:MultiRegion`, which allows or denies permission to create, use, or manage multi-Region keys and `kms:ReplicaRegion`, which restricts the Regions into which a multi-Region key can be replicated. For details, see [Control access to multi-Region keys](multi-region-keys-auth.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

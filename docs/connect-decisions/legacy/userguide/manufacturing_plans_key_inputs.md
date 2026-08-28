@@ -10,3 +10,7 @@ Manufacturing Plans depends on various inputs to make accurate and informed calc
 + **Production process** – This process is used to model the production step for manufacturing finished goods. The sourcing rule contains a reference to the production process that's used to support the *Manufacture* type of rule. AWS Supply Chain only supports a single step manufacturing process. The component requirement date is determined based on production lead time and setup time, as defined in the production process entity. Lead time is the offset from the finished goods demand date, which is used to determine the requirement date for components.
 
   For information on data fields required for Supply Planning, see [Supply Planning](entities-supply-planning.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

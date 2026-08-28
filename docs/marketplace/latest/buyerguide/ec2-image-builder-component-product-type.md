@@ -16,3 +16,7 @@ EC2 Image Builder's integration with AWS Marketplace enables you to take advanta
 + Share golden images across your organization, ensuring that all EC2 images follow established security and regulatory requirements.
 + Ensure security with continuous vulnerability scanning of AWS Marketplace-sourced components.
 + Stay updated with notifications for new software versions and configure automatic updates for your golden images.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

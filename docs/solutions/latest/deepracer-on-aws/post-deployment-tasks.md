@@ -32,3 +32,7 @@ DeepRacer on AWS allows admins to set usage limits at both the deployment level 
 You can invite users to the deployment via the Manage instance page. For more information on how to invite users, please see the [Invite a user section](admin-functions.md#invite-a-user).
 
 After completing these initial configuration steps, you can begin using your DeepRacer on AWS deployment. For detailed information on how to use all features of the solution, see the [Use the solution](use-the-solution.md) guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

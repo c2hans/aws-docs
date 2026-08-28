@@ -121,3 +121,7 @@ For more information about joining an Amazon RDS for SQL Server to your Active D
 <a name="usecase1_rds_net"></a>
 
 You can integrate Amazon RDS for SQL Server with a basic .NET application and group Managed Service Accounts (gMSAs). For more information, see [How AWS Managed Microsoft AD Helps to Simplify the Deployment and Improve the Security of Active Directory-Integrated .NET Applications ](https://aws.amazon.com/blogs/security/how-aws-managed-microsoft-ad-helps-to-simplify-the-deployment-and-improve-the-security-of-active-directory-integrated-net-applications/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

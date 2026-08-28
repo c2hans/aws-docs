@@ -20,3 +20,7 @@ Cloud security at Amazon Web Services (AWS) is the highest priority. As an AWS c
 + [Enforcing a minimum TLS version](tls-version.md)
 + [S3 Encryption Client Migration (V1 to V2)](s3-encryption-migration-v1-v2.md)
 + [S3 Encryption Client Migration (V2 to V3)](s3-encryption-migration-v2-v3.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Ruby. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-ruby` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

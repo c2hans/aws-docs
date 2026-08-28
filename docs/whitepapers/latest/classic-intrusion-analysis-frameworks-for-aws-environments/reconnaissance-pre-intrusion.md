@@ -96,3 +96,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/classic-intrusion-ana
 |  [Amazon GuardDuty Partners](control-name-descriptions.md#amazon-guardduty-partners) <br /> (ID: Sec.Det.2)  |  These controls are a complement to Amazon GuardDuty.  |
 |  [AWS Security Hub CSPM Partners](control-name-descriptions.md#aws-security-hub-partners) <br /> (ID: Sec.Det.4)  |  AWS Security Hub CSPM APN Partner products are a complement to Amazon GuardDuty.  |
 |  [Amazon CloudWatch Events & Alarms \+ Amazon SNS \+ SIEM Solutions](control-name-descriptions.md#amazon-cloudwatch-events-alarms-amazon-sns-siem-solutions) <br /> (ID: Sec.Det.7)  |  These controls monitor, detect, visualize, receive notification about attacks, and respond to changes in your AWS resources.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

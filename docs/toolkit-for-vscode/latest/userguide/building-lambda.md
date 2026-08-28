@@ -16,3 +16,7 @@ The following topics decribe how to work with AWS Lambda in the AWS Toolkit for 
 + [AWS Lambda console to IDE](lambda-console-ide.md)
 + [AWS Lambda with LocalStack support](lambda-localstack.md)
 + [AWS Lambda remote debugging](lambda-remote-debug.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

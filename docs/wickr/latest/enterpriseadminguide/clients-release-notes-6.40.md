@@ -68,3 +68,7 @@ Fixed an issue where failed message errors would continue to appear after being 
 | Desktop version 6.40.16 > Desktop version 6.40.18<br />iOS version 6.40.7 > Desktop version 6.40.53 | Bug fix | August 5, 2024 |
 | Clients update | Updates to address vulnerability scan results and new features | July 29, 2024 |
 | Initial release | Initial release of July release notes | July 29, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

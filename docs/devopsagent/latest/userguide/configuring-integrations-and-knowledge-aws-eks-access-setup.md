@@ -33,3 +33,7 @@ To verify that the EKS access was configured correctly, navigate to the Operator
 <a name="troubleshooting"></a>
 
 If the agent can't reach your cluster, verify that the access entry is using the correct IAM role ARN shown in the setup dialog and that the **AmazonAIOpsAssistantPolicy** access policy is attached.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,3 +28,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
  After installing COTS software, performance metrics should be monitored during all aspects of the lifecycle, from testing through staging and production. Use [Amazon CloudWatch metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/working_with_metrics.html) to track your systems over time, including the configuration of alarms for high usage. Once performance metrics are collected, through each lifecycle stage, the compute and storage requirements can be adjusted to optimize performance.
 
  For more detail on monitoring, reviewing, and optimizing your workload, see the [Performance Efficiency Pillar whitepaper](https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/welcome.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

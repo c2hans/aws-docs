@@ -30,3 +30,7 @@ The VSOC should include security orchestration automation and response (SOAR) an
  **[CMSEC\_BP23.1] Mitigate and respond to potential incidents by creating and testing policies, procedures, and playbooks**
 
  During a potential vehicle security issue, it is necessary to attempt to automate and respond to an incident promptly. By using runbooks, you can automate several workflow tasks like notifying different stakeholders and creating a ticket. You must be able to contain the scope of the issue. Depending on the finding, you can issue APIs to AWS IoT Core where you can automate changing a certificate status based on the incident. If a vehicle is compromised, you can build a workflow that will inactivate or revoke a certificate and block communications to AWS IoT Core while you investigate the incident. You should follow your incident response procedure to then recover the vehicle back to a non-compromised state which can vary in complexity depending on the incident.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -69,3 +69,7 @@ Using AWS Backup has certain limitations:
  For more information about using AWS Backup for SQL Server backups, see the blog post [How to simplify Microsoft SQL Server backup using AWS Backup and VSS](https://aws.amazon.com/blogs/storage/how-to-simplify-microsoft-sql-server-backup-using-aws-backup-and-vss/).
 
  For information about using AWS Backup to do point-in-time recovery for Amazon RDS for SQL Server, see the blog post [Point-in-time recovery and continuous backup for Amazon RDS with AWS Backup](https://aws.amazon.com/blogs/storage/point-in-time-recovery-and-continuous-backup-for-amazon-rds-with-aws-backup/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

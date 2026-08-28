@@ -39,3 +39,7 @@ For S3 Object Lambda tutorials, see the following:
 For more information about standard access points, see [Managing access to shared datasets with access points](access-points.md).
 
 For information about working with buckets, see [General purpose buckets overview](UsingBucket.md). For information about working with objects, see [Amazon S3 objects overview](UsingObjects.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

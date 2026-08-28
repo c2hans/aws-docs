@@ -181,3 +181,7 @@ Detaching a file system doesn't delete your data in FSx for Windows File Server.
 1. For **Actions**, choose **Detach file system**. The confirmation dialog box appears.
 
 1. Verify that you want to detach the specified file systems, then type the word *detach* in the confirmation box and choose **Detach**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

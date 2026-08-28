@@ -211,3 +211,7 @@ You might need to request a limit increase to increase the instance type and siz
 This can happen if the application launch path is incorrect, and AppStream 2.0 can't launch the application. You can validate the application launch path by using Desktop View on the fleet to navigate the root volume. Validate that the application executable exists at the path specified.
 
 If you're not able to find the app block's VHD or setup script on the streaming instance, AppStream 2.0 might not have been able to download them from the S3 bucket. Validate that the VPC you specified has access to S3. For more information, see [Using Amazon S3 VPC Endpoints for WorkSpaces Applications Features](managing-network-vpce-iam-policy.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

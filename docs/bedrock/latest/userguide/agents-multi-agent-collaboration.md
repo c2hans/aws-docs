@@ -22,3 +22,7 @@ The supervisor agent uses the instructions you provide to understand the structu
 + **Collaborator agent 3** – Responsible for handling general questions.
 
  Each agent on the team, including the supervisor agent, is optimized for a specific use case, has all the capabilities of Amazon Bedrock Agents, including access to tools, action groups, knowledge bases, and guardrails. When you invoke the supervisor agent, it automatically creates and executes a plan across a set of collaborator agents and routes relevant requests and tasks to the appropriate collaborator agent.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

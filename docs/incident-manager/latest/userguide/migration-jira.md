@@ -25,3 +25,7 @@ Along with automated alert creation, Jira Service Management offers a range of f
 + [Set Up & manage incident stakeholders](https://support.atlassian.com/jira-service-management-cloud/docs/how-can-i-add-and-manage-internal-stakeholders/)
 
 For additional support, you can contact your Technical Account Manager or [an Atlassian sales representative](https://www.atlassian.com/enterprise/contact) for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 |  Cost Allocation and Incident Management  | example-inc:cost-allocation:CostCenter |  Monitor costs by cost center. This is an example of a dual use tag where the cost center is being used as an application code for incident logging  | 123-\*  |
 |  Backup Schedule  | example-inc:backup:schedule  |  Backup schedule of the resource  | Daily  |
 |  Playbook / Incident Management  | example-inc:incident-management:playbook  |  Documented playbook  | webapp/incident/playbook  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

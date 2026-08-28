@@ -116,3 +116,7 @@ To use CloudWatch monitoring to inform your decision of the `max_tokens` paramet
 1. Select a time duration and range parameters for the metrics to account for peak usage.
 
 1. From the dropdown menu labeled **Sum**, you can choose different metrics to observe your token usage. Examine these metrics to guide your decision on setting your `max_tokens` value.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

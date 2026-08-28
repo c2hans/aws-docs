@@ -24,3 +24,7 @@ When you create your case in the Support Center, be sure to include all the requ
 | --- | --- |
 | [Requesting a spending quota increase](https://docs.aws.amazon.com/sms-voice/latest/userguide/awssupport-spend-threshold.html) | Your spending quota determines how much money you can spend sending SMS messages through AWS End User Messaging SMS each month. |
 | [Open a case in support center for a sender ID](https://docs.aws.amazon.com/sms-voice/latest/userguide/awssupport-sender-id.html) | If you plan to send messages to recipients a country where sender IDs are required, you can request a sender ID by creating a new case in the Support Center. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

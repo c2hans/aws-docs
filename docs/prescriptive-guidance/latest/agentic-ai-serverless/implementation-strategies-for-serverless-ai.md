@@ -25,3 +25,7 @@ This section provides prescriptive best practices that apply across the entire g
 + Cost optimization strategies align model selection, execution patterns, and token control with business goals.
 
 By applying these best practices, enterprises can move beyond proof-of-concepts and toward AI-native cloud applications that are scalable, secure, explainable, and cost-effective. They can build applications with confidence with AWS serverless offerings and the foundation models available through Amazon Bedrock.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,3 +31,7 @@ It's a best practice to run this document using rate control. You can set the ra
 If you are unable to upgrade the package, follow the guidelines outlined by AWS Security at [ Using AWS security services to protect against, detect, and respond to the Log4j vulnerability](https://aws.amazon.com/blogs/security/using-aws-security-services-to-protect-against-detect-and-respond-to-the-log4j-vulnerability/). To mitigate vulnerabilities by removing the JndiLookup class functionality, run the Log4j hot patch inline with your Java application(s). For more information about the hot patch, see [Hotpatch for Apache Log4j](https://aws.amazon.com/fr/blogs/opensource/hotpatch-for-apache-log4j/).
 
 For questions about the output of the automation or how to proceed with additional mitigations, submit a service request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

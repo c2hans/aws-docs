@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-bus
  The database tier consists of an Oracle database that stores the data for Oracle E-Business Suite. This tier has the Oracle database run items and the Oracle database files that physically store the tables, indexes, and other database objects in the system.
 
  See the [Oracle E-Business Suite Concepts](https://docs.oracle.com/cd/E51111_01/current/acrobat/122oacg.pdf) guide for a deeper dive on the Oracle E-Business Suite architecture components.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

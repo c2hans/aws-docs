@@ -85,3 +85,7 @@ aws dynamodb list-tables --endpoint-url http://localhost:8000
 + Tagging is not supported in the downloadable version of DynamoDB.
 + The downloadable version of DynamoDB ignores the [Limit](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ExecuteStatement.html#DDB-ExecuteStatement-request-Limit) parameter in [ExecuteStatement](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_ExecuteStatement.html).
 + Vector indexes are not supported. `CreateTable` accepts the `VectorIndexes` parameter without error and then ignores it, so `DescribeTable` reports no vector index and `SearchVectors` is unavailable. Test vector index behavior against the DynamoDB web service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,3 +84,7 @@ To use output encryption with the API, set the `KMSEncryptionContext` parameter 
 You can use [AWS KMS condition keys](https://docs.aws.amazon.com/kms/latest/developerguide/policy-conditions.html#conditions-kms) with IAM policies to control access to a symmetric encryption KMS key based on the encryption context that was used in the request for a [cryptographic operation](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#cryptographic-operations). For an example encryption context policy, see [AWS KMS encryption context policy](security_iam_id-based-policy-examples.md#kms-context-policy).
 
 Using encryption context is optional, but recommended. For more information, see [ Encryption context](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#encrypt_context).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

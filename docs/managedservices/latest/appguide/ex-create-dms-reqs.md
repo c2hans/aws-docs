@@ -13,3 +13,7 @@ For each of the following AWS DMS walkthroughs, some data in common is needed.
 + `Name`: A name for the stack or stack component; this becomes the Stack Name.
 + `TimeoutInMinutes`: How many minutes are allowed for the creation of the stack before the RFC is failed. This setting will not delay the RFC execution, but you must give enough time (for example, don't specify `"5"`).
 + `ChangeTypeId`, `ChangeTypeVersion`, and `StackTemplateId`: These are required but vary per CT and their values are provided in each relevant section, following.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

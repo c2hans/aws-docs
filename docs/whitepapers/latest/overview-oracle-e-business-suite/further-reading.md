@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/overview-oracle-e-bus
 +  [AWS EBS-Optimized instances](https://aws.amazon.com/ebs/features/#ebsoptimized)
 +  [Oracle APPLLDM](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=120148827374708&parent=DOCUMENT&sourceId=2528000.1&id=1616827.1&_afrWindowMode=0&_adf.ctrl-state=1cmup46rx8_667) document (Sign in to Oracle required)
 +  [Working with RDS Custom for Oracle](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/working-with-custom-oracle.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

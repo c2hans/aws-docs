@@ -436,3 +436,7 @@ AWS Elemental MediaConvert defines the following condition keys that can be used
 |   [mediaconvert:HttpInputsAllowed](https://docs.aws.amazon.com/mediaconvert/latest/apireference/input-policies.html)  | Filters access by an HTTP input policy present in the account | Bool |
 |   [mediaconvert:HttpsInputsAllowed](https://docs.aws.amazon.com/mediaconvert/latest/apireference/input-policies.html)  | Filters access by an HTTPS input policy present in the account | Bool |
 |   [mediaconvert:S3InputsAllowed](https://docs.aws.amazon.com/mediaconvert/latest/apireference/input-policies.html)  | Filters access by an S3 input policy present in the account | Bool |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ After careful consideration, we decided to end support for Amazon FinSpace, effe
 1. Your connections to FinSpace are protected through the use of TLS. So that you can access the FinSpace notebook environment that runs on SageMaker Studio, you must allow access to HTTPS and WebSockets Secure (wss://) protocol. You will need to allow-list access to SageMaker to access the Notebook environment. An example for allow-listing string is `*.us-east-1.sagemaker.aws`. You may change the region depending on the region you have setup FinSpace.
 
 1. By default, FinSpace notebooks allow public internet access. You can request the access be blocked by contacting AWS support.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -155,3 +155,7 @@ View details about updates to AWS managed policies for MSK Connect since this se
 | --- | --- | --- |
 | MSK Connect updated read-only policy | MSK Connect updated the AmazonMSKConnectReadOnlyAccess policy to remove the restrictions on listing operations. | October 13, 2021 |
 | MSK Connect started tracking changes | MSK Connect started tracking changes for its AWS managed policies. | September 14, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

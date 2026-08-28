@@ -114,3 +114,7 @@ Create an interface endpoint for the cluster OIDC endpoint using the following s
 Each cluster has one OIDC issuer hostname, determined by the cluster’s IP family. IPv4 clusters, which are the default, use `oidc.eks.region-code.amazonaws.com`. IPv6 clusters use the dual-stack hostname `oidc-eks.region-code.api.aws`, which resolves to both IPv4 and IPv6 addresses. In the AWS China Regions, the dual-stack hostname is `oidc-eks.region-code.api.amazonwebservices.com.cn`.
 
 The interface endpoint registers both hostnames. With private DNS enabled (the default), each hostname resolves to your interface endpoint. Your cluster’s issuer URL therefore resolves to the endpoint whether the cluster uses the `oidc.eks.region-code.amazonaws.com` hostname or the dual-stack hostname. A client that follows a token’s issuer URL to fetch the discovery document and JWKS reaches the endpoint privately in either case.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

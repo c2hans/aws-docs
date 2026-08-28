@@ -90,3 +90,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reliability-pilla
  **Related examples:**
 +  [Disaster Recovery on AWS](https://disaster-recovery.workshop.aws/en/)
 +  [Elastic Disaster Recovery on AWS](https://catalog.us-east-1.prod.workshops.aws/workshops/080af3a5-623d-4147-934d-c8d17daba346/en-US)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

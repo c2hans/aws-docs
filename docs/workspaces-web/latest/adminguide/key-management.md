@@ -6,3 +6,7 @@ source_url: https://docs.aws.amazon.com/workspaces-web/latest/adminguide/key-man
 <a name="key-management"></a>
 
 You can supply your own Customer Managed AWS KMS Key to encrypt your customer information. If you don't supply one, WorkSpaces Secure Browser will use an AWS Owned Key. You can set your key using the AWS SDK.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

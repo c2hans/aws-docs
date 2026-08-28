@@ -15,3 +15,7 @@ source_url: https://docs.aws.amazon.com/databrew/latest/dg/jdbc-drivers.html
 | Snowflake | To see your Snowflake version, use [CURRENT\_VERSION](https://docs.snowflake.com/en/sql-reference/functions/current_version.html) as described in the Snowflake documentation. | To connect to Snowflake you need both of the following: + [Snowflake JDBC Driver](https://docs.snowflake.com/en/user-guide/jdbc-download.html)<br />+ [Snowflake Connector for Spark](https://docs.snowflake.com/en/user-guide/spark-connector.html) | Supported |
 
 To connect to databases or data warehouses that require a different version of the driver from what DataBrew natively supports, you can provide a JDBC driver of your choice. The driver must be compatible with JDK 8 or Java 8. For instructions on how to find the latest driver version for your database, see [Using drivers with AWS Glue DataBrew](dbms-driver-connections.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

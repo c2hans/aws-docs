@@ -142,3 +142,7 @@ You can edit the following identity and contact information programmatically for
 | Property | API | CLI |
 | --- | --- | --- |
 | Identify and contact information |  [UpdateUserIdentityInfo](https://docs.aws.amazon.com/connect/latest/APIReference/API_UpdateUserIdentityInfo.html)  | [update-user-identity-info](https://docs.aws.amazon.com/cli/latest/reference/connect/update-user-identity-info.html) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

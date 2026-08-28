@@ -65,3 +65,7 @@ With [AWS Global Accelerator](https://aws.amazon.com/global-accelerator/), illus
  With *write to one Region* Global Accelerator routing rules must send requests to the currently active Region. You can use health checks that artificially report a failure on any Region that’s not considered by your global system to be the active Region. As with DNS, it’s possible to use an alternative DNS domain name for routing read requests if the requests can be from any Region.
 
  With *write to your Region* mode, it’s best to avoid Global Accelerator unless you're also using compute-layer request routing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

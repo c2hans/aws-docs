@@ -23,7 +23,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[BuildType](#cfn-codebuild-project-projecttriggers-buildtype)" : {{String}},
-  "[FilterGroups](#cfn-codebuild-project-projecttriggers-filtergroups)" : {{[ [ , ... ], ... ]}},
+  "[FilterGroups](#cfn-codebuild-project-projecttriggers-filtergroups)" : {{[ Json, ... ]}},
   "[PullRequestBuildPolicy](#cfn-codebuild-project-projecttriggers-pullrequestbuildpolicy)" : {{PullRequestBuildPolicy}},
   "[ScopeConfiguration](#cfn-codebuild-project-projecttriggers-scopeconfiguration)" : {{ScopeConfiguration}},
   "[Webhook](#cfn-codebuild-project-projecttriggers-webhook)" : {{Boolean}}
@@ -36,8 +36,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [BuildType](#cfn-codebuild-project-projecttriggers-buildtype): {{String}}
   [FilterGroups](#cfn-codebuild-project-projecttriggers-filtergroups): {{
-    -
-    - }}
+    - Json}}
   [PullRequestBuildPolicy](#cfn-codebuild-project-projecttriggers-pullrequestbuildpolicy): {{
     PullRequestBuildPolicy}}
   [ScopeConfiguration](#cfn-codebuild-project-projecttriggers-scopeconfiguration): {{
@@ -61,7 +60,7 @@ A batch build
 `FilterGroups`  <a name="cfn-codebuild-project-projecttriggers-filtergroups"></a>
  A list of lists of `WebhookFilter` objects used to determine which webhook events are triggered. At least one `WebhookFilter` in the array must specify `EVENT` as its type.
 *Required*: No
-*Type*: Array of Array
+*Type*: Array of Json
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `PullRequestBuildPolicy`  <a name="cfn-codebuild-project-projecttriggers-pullrequestbuildpolicy"></a>
@@ -81,3 +80,7 @@ Contains configuration information about the scope for a webhook.
 *Required*: No
 *Type*: Boolean
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

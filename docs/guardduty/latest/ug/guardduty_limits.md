@@ -35,3 +35,7 @@ For quotas specific to Malware Protection for S3, see [Quotas in Malware Protect
 | Trusted IP sets (IP address list) | 1 | The maximum number of trusted IP address list that can be uploaded and activated per AWS account per Region.<br />You can't request a quota increase. |
 | Threat entity lists | 6 | The maximum number of threat entity lists that you can add per AWS account per Region.<br />You can't request a quota increase. |
 | Trusted entity list | 1 | The maximum number of trusted entity list that can be uploaded and activated per AWS account per Region.<br />You can't request a quota increase. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

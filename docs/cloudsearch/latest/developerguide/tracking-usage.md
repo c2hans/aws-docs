@@ -16,3 +16,7 @@ The AWS account activity page enables you to track your Amazon CloudSearch usage
 1. Choose **Amazon CloudSearch** from the services dropdown.
 
 1. Specify the information that you want to include in the report, then choose the download button for the data format that you want to download. Reports can be downloaded in XML or CSV format.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

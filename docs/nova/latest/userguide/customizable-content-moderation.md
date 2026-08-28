@@ -20,3 +20,7 @@ Amazon Nova customizable content moderation settings allow you to adjust safegua
 Nova customizable content moderation settings are available for the Lite and Pro models using the method in [Deploy a custom model for on-demand inference](https://docs.aws.amazon.com/bedrock/latest/userguide/deploy-custom-model-on-demand.html) in the Bedrock User Guide, in the us-east-1 (N. Virginia) region.
 
 To access customizable content moderation settings, contact your AWS Account Manager.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

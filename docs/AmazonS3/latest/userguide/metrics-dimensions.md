@@ -165,3 +165,7 @@ The following dimensions are used to refine the usage metrics that are published
 |  Service  | The name of the AWS service containing the resource. For Amazon S3 usage metrics, the value for this dimension is `S3`. |
 |  Type  | The type of entity that is being reported. Currently, the only valid value for Amazon S3 usage metrics is `Resource`. |
 |  Resource  | The type of resource that is running. Currently, the only valid value for Amazon S3 usage metrics is `GeneralPurposeBuckets`, which returns the number of general purpose buckets in an AWS account. General purpose buckets allow objects that are stored across all storage classes, except S3 Express One Zone. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

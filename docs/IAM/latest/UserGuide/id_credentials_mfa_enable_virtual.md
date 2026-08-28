@@ -77,3 +77,7 @@ Your AWS account root user and IAM users can register up to **eight** MFA device
 + To deactivate the device currently associated with another IAM user, see [Deactivate an MFA device](id_credentials_mfa_disable.md).
 + To add a replacement virtual MFA device for another IAM user, follow the steps in the procedure [Enable a virtual MFA device for an IAM user (console)](#enable-virt-mfa-for-iam-user) above.
 + To add a replacement virtual MFA device for the AWS account root user, follow the steps in the procedure [Enable a virtual MFA device for the root user (console)](enable-virt-mfa-for-root.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

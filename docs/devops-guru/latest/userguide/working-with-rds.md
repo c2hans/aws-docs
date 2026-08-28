@@ -11,3 +11,7 @@ DevOps Guru detects, analyzes, and provides recommendations for supported AWS r
 + [Overview of DevOps Guru for RDS](working-with-rds.overview.md)
 + [Enabling DevOps Guru for RDS](working-with-rds.enabling.md)
 + [Analyzing anomalies in Amazon RDS](working-with-rds.analyzing.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

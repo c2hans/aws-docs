@@ -22,3 +22,7 @@ The following steps summarize the initial connection experience for users in the
 1. After they sign in, the users can view their application catalogs.
 
 The login portal link provided in the welcome email should be saved for future use, as it does not change and is valid for all users in the user pool. The login portal URL and users in the user pool are managed on a per-Region basis.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

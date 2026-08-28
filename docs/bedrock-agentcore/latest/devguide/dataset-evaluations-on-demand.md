@@ -201,3 +201,7 @@ EvaluationResult
 Each entry in `results` is a raw response dict from the Evaluate API, containing fields like `value`, `label`, `explanation`, `context`, `tokenUsage`, and `ignoredReferenceInputFields`. See [Getting started with on-demand evaluation](getting-started-on-demand.md) for the full response format.
 
 A scenario with status `FAILED` means a structural problem occurred (agent invocation error, span collection failure). Individual evaluator errors within a `COMPLETED` scenario are recorded in the evaluator’s `results` list with `errorCode` and `errorMessage` fields.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

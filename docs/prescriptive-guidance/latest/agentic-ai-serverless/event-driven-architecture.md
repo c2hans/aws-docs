@@ -56,3 +56,7 @@ The following AWS services support event-driven architecture:
   + [AgentCore Memory](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/memory.html) – Provides persistent memory for storing conversation context, task results, and agent-specific state. Can complement or replace Amazon DynamoDB in certain patterns, depending on latency and size requirements.
   + [AgentCore Gateway](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway.html) – Enable agents to invoke external APIs, AWS services, and data sources through managed integrations, reducing custom connector code and improving observability.
   + [AgentCore built-in tools](https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/built-in-tools.html)** ** – Provides capabilities for code execution and web browsing within the AgentCore environments.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

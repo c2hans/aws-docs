@@ -24,3 +24,7 @@ For more information on database instance types, see [Amazon RDS Instance Types]
 If you require Direct connect, see the AMS single-account landing zone Onboarding Guide to create a Direct Connect connection.
 
 You will receive an onboarding questionnaire from your Cloud Service Delivery Manager (CSDM) containing questions about your desired configuration settings for your account. Work with your CSDM to complete the questionnaire before proceeding.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

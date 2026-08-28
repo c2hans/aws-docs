@@ -746,3 +746,7 @@ If a Deadline Cloud connector repeatedly fails, the connector’s failure policy
 +  [Job template elements](https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/build-job-bundle-template.html) — Deadline Cloud Developer Guide reference for job template syntax.
 +  [Deadline Cloud jobs](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/deadline-cloud-jobs.html) — Deadline Cloud User Guide overview of jobs, steps, tasks, and priorities.
 +  [Deadline Cloud security](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/security.html) — Deadline Cloud security model and shared responsibility documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

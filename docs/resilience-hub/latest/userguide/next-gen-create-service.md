@@ -48,3 +48,7 @@ The following table describes the available input source types that you can add 
 | Terraform state files | Your infrastructure is managed by Terraform (state file in Amazon S3). |
 | Resource tags | The service discovers resources by matching tags. A single tag-based input source with multiple tags discovers only resources that match all specified tags. Multiple tag-based input sources discover resources that match any of them. |
 | Amazon Elastic Kubernetes Service clusters | Your service runs on Amazon EKS. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

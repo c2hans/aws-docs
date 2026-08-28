@@ -53,3 +53,7 @@ When right clicking an element, you are able to edit, delete, and duplicate the 
 **Inline editing**
 
 The inline editing toggle enables you to lock or unlock the canvas panel. When turned off the canvas panel becomes *locked*, freezing elements in place and preventing unintended modifications.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

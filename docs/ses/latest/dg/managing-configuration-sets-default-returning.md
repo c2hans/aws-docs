@@ -20,3 +20,7 @@ aws sesv2 get-email-identity --email-identity {{ADDRESS-OR-DOMAIN}}
 In the preceding commands, replace {{ADDRESS-OR-DOMAIN}} with with email identity for which you wish to know the default configuration set, if any.
 
 If the command executes successfully, it provides a JSON object with the email identity details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

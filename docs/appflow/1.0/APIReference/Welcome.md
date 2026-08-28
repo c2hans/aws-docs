@@ -19,4 +19,8 @@ If you're new to Amazon AppFlow, we recommend that you review the [Amazon AppFlo
 
 Amazon AppFlow API users can use vendor-specific mechanisms for OAuth, and include applicable OAuth attributes (such as `auth-code` and `redirecturi`) with the connector-specific `ConnectorProfileProperties` when creating a new connector profile using Amazon AppFlow API operations. For example, Salesforce users can refer to the [*Authorize Apps with OAuth*](https://help.salesforce.com/articleView?id=remoteaccess_authenticate.htm) documentation.
 
-This document was last published on August 24, 2026.
+This document was last published on August 28, 2026.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AmazonAppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

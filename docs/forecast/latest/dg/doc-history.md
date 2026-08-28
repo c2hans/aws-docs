@@ -28,3 +28,7 @@ The following table describes important changes to the *Amazon Forecast Develope
 | [New Feature](#doc-history) | Forecast now supports the ability to specify forecast quantiles. For more information, see [CreateForecast](https://docs.aws.amazon.com/forecast/latest/dg/API_CreateForecast.html) in the Forecast API Guide. | November 22, 2019 |
 | [Amazon Forecast general availability](#doc-history) | Amazon Forecast is now available for general use. | August 21, 2019 |
 | [Amazon Forecast preview release](#doc-history) | This is the first preview release of the documentation for Amazon Forecast. | November 28, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Forecast. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query forecast` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

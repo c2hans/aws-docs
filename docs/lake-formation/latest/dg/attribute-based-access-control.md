@@ -20,3 +20,7 @@ For information on limitations, considerations, and supported AWS Regions, see [
 **Topics**
 + [Prerequisites for granting permissions using attributes](abac-prerequisites.md)
 + [Granting permissions using attribute-based access control](abac-granting-permissions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

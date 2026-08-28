@@ -83,3 +83,7 @@ Updated HIT #3 (M26ZN61JMT9E4MG0M94Z) to new HITTypeId SWZZPTZ7Y14ZY8WXNZH0
 4 HITS were updated
   Total load time: 2 seconds.
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

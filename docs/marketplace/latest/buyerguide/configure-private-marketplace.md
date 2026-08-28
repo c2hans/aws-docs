@@ -91,3 +91,7 @@ This step is optional.
 Review the settings for your Private Marketplace experience, and edit the settings as needed. When you are satisfied with your settings, choose **Create experience**.
 
 Private Marketplace starts a Catalog API change set with multiple change types to create and set up the experience. You can track the changes in the **Change sets** page. Your experience is ready when the **CreateExperience** change set shows **Succeeded** status. Depending on your selections and the size of your organization, your change set can take up to a few hours to complete. To view the updates, refresh the console after processing is complete.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

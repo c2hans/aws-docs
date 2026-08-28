@@ -19,3 +19,7 @@ When you use Spark Connect with AWS Glue interactive sessions, all communication
 Spark Connect sessions use short-lived bearer tokens for request authentication. These tokens are encrypted using AES-256-GCM with AWS KMS data keys and have a 5-minute time-to-live. Tokens are returned by the `GetSessionEndpoint` API and must be included in each gRPC request to the Spark Connect endpoint.
 
 Customer data (Spark queries, DataFrames, and results) flows in-transit only through the proxy chain and is not persisted by the proxy infrastructure. At-rest storage of session data on worker volumes uses default Amazon EBS encryption.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

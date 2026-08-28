@@ -178,3 +178,7 @@ Amazon EMR data can be filtered using any of the dimensions in the following tab
 | Dimension  | Description  |
 | --- | --- |
 | JobFlowId | The same as cluster ID, which is the unique identifier of a cluster in the form j-XXXXXXXXXXXXX. Find this value by clicking on the cluster in the Amazon EMR console.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

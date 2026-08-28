@@ -22,3 +22,7 @@ spark.sql("""{{YOUR_SQL}}""").show(n={{number}}, truncate={{number}}, vertical={
 + **n** `int`, optional. The number of rows to show.
 + **truncate** – `bool` or `int`, optional – If `true`, truncates strings longer than 20 characters. When set to a number greater than 1, truncates long strings to the length specified and right aligns cells.
 + **vertical** – `bool`, optional. If `true`, prints output rows vertically (one line per column value).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

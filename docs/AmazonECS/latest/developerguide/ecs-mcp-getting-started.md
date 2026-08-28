@@ -367,3 +367,7 @@ Do not pass secrets or sensitive information via allowed input mechanisms:
 <a name="ecs-mcp-next-steps"></a>
 
 For a complete list of tools and configurations, see [Amazon ECS MCP Server Tool Configurations](ecs-mcp-tool-configurations.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

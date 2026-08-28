@@ -14,3 +14,7 @@ To support customers in meeting these obligations, AWS maintains a broad complia
 + **The CISPE Code of Conduct**, a GDPR-approved pan-European compliance framework specifically for cloud infrastructure providers, under which over 100 AWS services have been independently certified.
 
 Together, these programs and commitments provide customers with validated evidence of the technical and organizational measures AWS has implemented and form a reliable foundation to support their own GDPR compliance efforts. Each of these elements is detailed in the sections below.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

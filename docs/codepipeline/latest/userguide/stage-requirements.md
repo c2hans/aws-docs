@@ -149,3 +149,7 @@ For more information and examples, see [Configure conditions for a stage](stage-
 Each condition has a rule set which is an ordered set of rules that are evaluated together. Therefore, if one rule fails in the condition, then the condition fails. You can override rule conditions at pipeline runtime.
 
 The available rules are provided in the Rule reference. For more information, see the Rule structure reference at [Rule structure reference](rule-reference.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

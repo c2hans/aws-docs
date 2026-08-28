@@ -67,3 +67,7 @@ The following are the steps for using mysqldump or mysqlpump to migrate a databa
 <a name="best-practices-mysqlpump-mysqldump"></a>
 + When you're restoring the database backup, disable the key checks, such as `FOREIGN_KEY_CHECKS`, at the session level in the target database . This increases the restoration speed.
 + Make sure the database user has sufficient [privileges](https://dev.mysql.com/doc/refman/8.0/en/privileges-provided.html) to create and restore the backup.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

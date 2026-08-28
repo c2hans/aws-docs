@@ -83,3 +83,7 @@ The **Daily projection** chart provides a projection of how the day will end by 
 This widget only supports comparing against short term forecasts for **Contact volume** and **Average handle time**.
 
 ![The Daily projection chart.](http://docs.aws.amazon.com/connect/latest/adminguide/images/intraday-daily-projection.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

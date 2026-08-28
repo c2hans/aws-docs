@@ -91,3 +91,7 @@ The following table describes the query parameters in the URL that provide authe
 | X-Amz-SignedHeaders | Lists the headers that you used to calculate the signature. The following headers are required in the signature calculations:+  The HTTP host header. <br />+  Any x-amz-\* headers that you plan to add to the request. <br />+  For SigV4a, X-Amz-Region-Set is required to specify the regions in which the request can be made. <br />For added security, you should sign all the request headers that you plan to include in your request. |
 | X-Amz-Signature | Provides the signature to authenticate your request. This signature must match the signature the service calculates; otherwise, the service denies the request. For example, `733255ef022bec3f2a8701cd61d4b371f3f28c9f193a1f02279211d48d5193d7`<br />Signature calculations are described in the following section. |
 | X-Amz-Security-Token | Optional credential parameter if using credentials sourced from the STS service. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

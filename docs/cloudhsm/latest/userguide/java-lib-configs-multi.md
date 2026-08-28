@@ -27,3 +27,7 @@ The following topics describe these configurations, and how to connect to multip
 + [Configure the AWS CloudHSM `CloudHsmProvider` class with a file (Default configuration)](java-lib-configs-default.md)
 + [Configure the AWS CloudHSM `CloudHsmProvider` class using code](java-lib-configs-using-code.md)
 + [Connect to multiple AWS CloudHSM clusters](java-lib-connecting-to-multiclusters.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -103,3 +103,7 @@ For more information on instruction-based fine-tuning, see the following example
 + [Introduction to SageMaker JumpStart - Text Generation with Mistral models](https://sagemaker-examples.readthedocs.io/en/latest/introduction_to_amazon_algorithms/jumpstart-foundation-models/mistral-7b-instruction-domain-adaptation-finetuning.html)
 + [Introduction to SageMaker JumpStart - Text Generation with Falcon models](https://sagemaker-examples.readthedocs.io/en/latest/introduction_to_amazon_algorithms/jumpstart-foundation-models/falcon-7b-instruction-domain-adaptation-finetuning.html)
 + [SageMaker JumpStart Foundation Models - HuggingFace Text2Text Instruction Fine-Tuning](https://sagemaker-examples.readthedocs.io/en/latest/introduction_to_amazon_algorithms/jumpstart-foundation-models/instruction-fine-tuning-flan-t5.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

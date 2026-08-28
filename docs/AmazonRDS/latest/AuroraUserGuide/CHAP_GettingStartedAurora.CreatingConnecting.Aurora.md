@@ -363,3 +363,7 @@ For more information about deleting a stack in CloudFormation, see [Deleting a s
 <a name="CHAP_GettingStartedAurora.ComputeConnect.Aurora"></a>
 
 You can also connect your Aurora MySQL DB cluster to a Lambda serverless compute resource. Lambda functions allow you to run code without provisioning or managing infrastructure. A Lambda function also allows you to automatically respond to code execution requests at any scale, from a dozen events a day to hundreds of per second. For more information, see [Automatically connecting a Lambda function and an Aurora DB cluster](lambda-rds-connect.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

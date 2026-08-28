@@ -52,3 +52,7 @@ This how-to guide is divided into the following modules. You must complete each 
 1. [Module 3: Add the Activity feature](module-3.md) (45 minutes): Add and display the activities of a trip using an Amplify GraphQL API.
 
 1. [Module 4: Add the Profile feature](module-4.md) (45 minutes): Create a profile for the user using an Amplify function and implement the logic and UI of creating, updating, and displaying the profile in the app.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

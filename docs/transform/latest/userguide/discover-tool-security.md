@@ -107,3 +107,7 @@ When you revoke access, deletion is scoped to the specific source:
 + Revoking Hyper-V access deletes only Hyper-V data. It does not affect VMware or imported server data.
 + Deleting imported servers removes them from inventory, but downstream collection data (network, database, OS metrics) is retained.
 + To remove all source-specific inventory data, you must revoke or delete each source independently. Downstream collection data (network, database, OS metrics) is retained even after all sources are revoked.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

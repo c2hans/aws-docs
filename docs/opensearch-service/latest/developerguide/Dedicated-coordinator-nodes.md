@@ -96,3 +96,7 @@ Use the following guidelines as a starting point for provisioning dedicated coor
 | Small (up to 50 nodes) | 3-5 nodes | General purpose |
 | Medium (50-100 nodes) | 5-9 nodes | Memory optimized |
 | Large (100\+ nodes) | 10-15 nodes | Memory optimized |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

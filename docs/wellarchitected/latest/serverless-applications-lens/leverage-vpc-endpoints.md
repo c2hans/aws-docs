@@ -16,3 +16,7 @@ If you use Amazon Virtual Private Cloud (Amazon VPC) to host your AWS resources,
 ![Diagram showing a Lambda function accessing Amazon SNS via NAT and Internet Gateways](http://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/lambda-function-accessing-amazon-sns-via-nat-and-internet-gateways.png)
 
 ![Diagram showing a Lambda function accessing Amazon SNS via interface endpoints](http://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/lambda-function-accessing-amazon-sns-via-interface-endpoints.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ This section applies when you set up the captions encode as described in [Step 1
   - **ARIB Captions PID:** Type a decimal or hexadecimal. / **Result:** This PID will be used for the captions.
   - **ARIB Captions PID:** Leave the default (507) / **Result:** The PID for captions will be 507.
   - **ARIB Captions PID:** Delete the default / **Result:** A PID will automatically be assigned during encoding; this value could be any number.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

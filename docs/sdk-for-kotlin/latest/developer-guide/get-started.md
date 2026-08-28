@@ -240,3 +240,7 @@ Now that you have the basics down, you can learn about the following:
 +  [Configuration of SDK for Kotlin](configuration.md)
 +  [Using the SDK for Kotlin](using.md)
 +  [Security for the SDK for Kotlin](security.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Kotlin. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-kotlin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ In this section, you can find the conventions that are used to write the syntax 
 | {{red italics}}  | Words in red italics indicate placeholders. Insert the appropriate value in place of the word in red italics.  |
 | . . .  | An ellipsis indicates that you can repeat the preceding element.  |
 | '  | Words in single quotation marks indicate that you must type the quotes.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

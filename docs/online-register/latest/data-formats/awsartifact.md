@@ -25,3 +25,7 @@ AWS Artifact provides the following APIs for data retrieval.
 | <a name="artifact-ListReportVersions"></a>[ListReportVersions](https://docs.aws.amazon.com/artifact/latest/APIReference/API_ListReportVersions.html) | List report versions in your account | List |
 | <a name="artifact-ListReports"></a>[ListReports](https://docs.aws.amazon.com/artifact/latest/APIReference/API_ListReports.html) | List reports in your account | List |
 | <a name="artifact-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/artifact/latest/APIReference/API_ListTagsForResource.html) | List all tags on an AWS Artifact resource | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

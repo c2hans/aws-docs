@@ -87,3 +87,7 @@ The following list describes the Workflow Studio features that are unavailable w
 + [TestState](test-state-isolation.md) API
 + Option to import or export workflow definitions from the **Actions** dropdown button in Workflow Studio. Instead, from the Infrastructure Composer **menu**, select **Open** > **Project folder**. Make sure that you've enabled the [local sync](https://docs.aws.amazon.com/application-composer/latest/dg/reference-features-local-sync.html) mode to automatically save your changes in the Infrastructure Composer canvas directly to your local machine.
 + **Execute** button. When you use Workflow Studio in Infrastructure Composer, Infrastructure Composer generates the IaC code for your workflow. Therefore, you must first deploy the template. Then, run the workflow in the console or through the AWS Command Line Interface (AWS CLI).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

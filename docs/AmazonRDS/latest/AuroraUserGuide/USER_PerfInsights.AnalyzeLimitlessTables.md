@@ -43,3 +43,7 @@ You might want to improve the performance of your Aurora PostgreSQL Limitless Da
 1. (Optional) To analyze DB load for an instance in your Aurora PostgreSQL Limitless Database, choose the instance name in the **Instances** column. To view the DB load for `DTR-2-2`, choose `DTR-2-2` in the **Instances** column.
 **Note**
 You can view Performance Insights metrics only for instances in an Aurora PostgreSQL Limitless Database.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

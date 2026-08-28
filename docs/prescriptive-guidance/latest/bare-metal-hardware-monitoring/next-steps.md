@@ -13,3 +13,7 @@ We recommend the following next steps:
 + In Amazon Managed Service for Prometheus, define and configure alerts for critical metrics and thresholds. To make sure that you receive timely notifications, you can integrate this monitoring solution with other incident management or communication tools, such as email, Slack, or PagerDuty.
 + Establish on-call rotations and escalation procedures so that your organization can effectively respond to any alerts.
 + In Amazon Managed Grafana, create custom dashboards that help you visualize key metrics and understand the overall health of your bare-metal hardware. Generate regular reports that help you analyze trends, identify potential issues, and plan for capacity or infrastructure changes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

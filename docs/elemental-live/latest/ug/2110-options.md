@@ -12,3 +12,7 @@ Elemental Live supports seamless protection switching (conforming with SMPTE 202
 + For outputs, you set up for SMPTE 2022-7 in the streams (Elemental Live outputs) in the SMPTE 2110 output group. Elemental Live will include two identical packet streams in each applicable stream.
 
 Note that in both the inputs and the outputs, seamless protection switching might be implemented in some streams but not others. For example, it might be implemented in the video streams but not the audio or ancillary data streams. Compare this to [NMOS](2110-and-nmos.md), where all the streams in an input or output either use NMOS or don't use NMOS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

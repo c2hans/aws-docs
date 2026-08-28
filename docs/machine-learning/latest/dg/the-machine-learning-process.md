@@ -21,3 +21,7 @@ The following table describes how to use the Amazon ML console to perform the ML
 | Feature selection | The Amazon ML learning algorithm can drop features that don't contribute much to the learning process. To indicate that you want to drop those features, choose the `L1 regularization` parameter when you create the ML model. |
 | Set a score threshold for prediction accuracy | Review the model's predictive performance in the evaluation report at different score thresholds, and then set the score threshold based on your business application. The score threshold determines how the model defines a prediction match. Adjust the number to control false positives and false negatives. |
 | Use the model | Use your model to get predictions for a batch of observations by using the Create Batch Prediction wizard.<br />Or, get predictions for individual observations on demand by enabling the ML model to process real-time predictions using the `Predict` API. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

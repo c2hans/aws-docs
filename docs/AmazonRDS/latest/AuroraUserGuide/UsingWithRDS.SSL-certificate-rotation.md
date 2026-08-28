@@ -239,3 +239,7 @@ done
 ------
 
 To learn more best practices about using SSL with Amazon RDS, see [ Best practices for successful SSL connections to Amazon RDS for Oracle ](https://aws.amazon.com/blogs/database/best-practices-for-successful-ssl-connections-to-amazon-rds-for-oracle/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

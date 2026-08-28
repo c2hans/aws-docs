@@ -46,6 +46,9 @@ Public events are reported service events that aren't specific to an account. Fo
 
 You can find public events from your AWS Health Dashboard and the AWS Health Dashboard – Service health.
 
+**Important**
+Public events are not available through AWS managed notifications in AWS User Notifications. To receive public events, you must create an Amazon EventBridge rule or a User-configured notification (UCN) within AWS User Notifications. For more information, see [Monitoring events in AWS Health with Amazon EventBridge](cloudwatch-events-health.md) and [Managing notifications in AWS User Notifications](https://docs.aws.amazon.com/notifications/latest/userguide/managing-notifications.html).
+
 If you have an account, see [Getting started with your AWS Health Dashboard](getting-started-health-dashboard.md).
 
 If you don't have an account, see [AWS Health Dashboard](aws-health-dashboard-status.md).
@@ -165,3 +168,7 @@ You can use this feature to aggregate all health events for AWS accounts in your
 <a name="user-notifications"></a>
 
 AWS Health integrates with [AWS User Notifications](https://docs.aws.amazon.com/notifications/latest/userguide/managed-notifications.html) so that you can easily receive and control notifications about events affecting your AWS accounts and services. User Notifications offers managed notifications for AWS Health events by default. You can configure these subscriptions to control how often you receive messages through time-based aggregation, what kinds of AWS Health events you get notified about, and where notifications are delivered. To get started, open User Notifications in the [AWS Management Console](https://console.aws.amazon.com/notifications). For more information, see [Manage AWS Health notifications in AWS User Notifications](manage-user-notifications.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query health` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

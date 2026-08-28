@@ -38,3 +38,7 @@ start_time           | end_time            | query_count | compute_seconds
  2025-09-16 00:00:00  | 2025-09-16 00:00:59 | 1           | 59
  2025-09-16 00:01:05  | 2025-09-16 00:01:58 | 2           | 53
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

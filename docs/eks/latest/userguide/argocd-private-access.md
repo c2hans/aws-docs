@@ -197,3 +197,7 @@ aws eks update-capability \
 + After you enable private access, the Argo CD endpoint is only reachable from within your VPC or networks connected to it (for example, through VPN or AWS Direct Connect).
 + The VPC endpoint must remain in the `available` state for private access to function. If you delete the VPC endpoint, you lose access to the Argo CD endpoint until you create a new endpoint and update the capability.
 +  AWS doesn’t currently support VPC endpoint policies for the `eks-capabilities` service endpoint.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

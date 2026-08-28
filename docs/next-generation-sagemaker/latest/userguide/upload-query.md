@@ -35,3 +35,7 @@ Download the file [sales-data.zip](samples/sales-data.zip).
 
 1. Choose the three-dot action menu next to the table, then choose **Preview data**. A SQL command to select the first 10 rows from the table runs, and the results are then displayed in the query editor window.
 ![Three-dot action menu under the sales-data dropdown.](http://docs.aws.amazon.com/next-generation-sagemaker/latest/userguide/images/screenshot-menu.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Sagemaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query next-generation-sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ This topic explains how you can use the AWS Elastic Beanstalk console to manage 
       +  Choose **Saved configurations** following the application name in the navigation pane to view and manage configurations saved from running environments.
 
         A saved configuration is a collection of settings that you can use to restore an environment's settings to a previous state, or to create an environment with the same settings. For more information see [Using Elastic Beanstalk saved configurations](environment-configuration-savedconfig.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

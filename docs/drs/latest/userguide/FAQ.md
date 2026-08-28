@@ -192,3 +192,7 @@ During some of the time it takes to transition from CloudEndure to DRS you will 
 
 **Note**
 Once you install the AWS Replication Agent on the source server, and until you remove that source server from the CloudEndure user console, you will be paying for the two services in parallel, and nearly twice for replication resources such as EBS, snapshots, and more.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

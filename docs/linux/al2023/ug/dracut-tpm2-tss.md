@@ -38,3 +38,7 @@ Install the missing tpm2 packages, and then rebuild the initramfs.
 
 **Note**
 AL2023 does not install the `tpm2-tools` and `tpm2-tss-fapi` packages by default, and there are no plans to include them in the default AL2023 AMIs. If you need the `systemd-pcrphase` dracut module, install these packages manually as shown above.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

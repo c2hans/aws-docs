@@ -38,3 +38,7 @@ The typical steps involved in developing a workflow with the AWS Flow Framework 
 1.  **Start executions**. An application starts a workflow instance by using the workflow client to call the workflow's entry point. You can also start workflows by using the Amazon SWF console. Regardless of how you start a workflow instance, you can use Amazon SWF console to monitor running workflow instance and examine the workflow history for running, completed, and failed instances.
 
 The [AWS SDK for Java](http://aws.amazon.com/sdkforjava/) includes a set of AWS Flow Framework for Java samples that you can browse and run by following the instructions in the readme.html file in the root directory. There are also a set of recipes —simple applications — that show how to handle a variety of specific programming issue, which are available from [AWS Flow Framework Recipes](https://aws.amazon.com/code/2535278400103493).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

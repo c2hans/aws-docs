@@ -22,3 +22,7 @@ User: arn:aws:iam::{{123456789012}}:user/{{mateojackson}} is not authorized to p
 ```
 
 For this example, ask your administrator to update your policies to allow you to access the `11112222333344445555666677778888` resource using the `wellarchitected:DeleteWorkload` action.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

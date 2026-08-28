@@ -25,3 +25,7 @@ Options for offline model evaluation include:
   Typically, the holdout dataset is of 20-30% of the training data.
 
 + **k-fold validation**—In this validation approach, you split the example dataset into *k* parts. You treat each of these parts as a holdout set for* k* training runs, and use the other *k*-1 parts as the training set for that run. You produce* k* models using a similar process, and aggregate the models to generate your final model. The value *k* is typically in the range of 5-10.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

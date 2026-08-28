@@ -65,3 +65,7 @@ For a compute resource to be listed, the same conditions must apply as when auto
 
 1. On the **Connectivity & security** tab, view the compute resources in the **Set up compute connection**.
 ![Connected compute resources.](http://docs.aws.amazon.com/AmazonElastiCache/latest/dg/images/ec2-elasticache-connected_resources.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

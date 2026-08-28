@@ -46,3 +46,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/security-at-the-edge/
  Similar to its high bar for security, AWS has high standards for compliance that extend to the edge. AWS regularly achieves third-party validation for thousands of global compliance requirements that are continually monitored to help customers meet standards for finance, retail, healthcare, government, and beyond.
 
  AWS customers also receive access to tools they can use to reduce the cost and time to run their own specific security assurance requirements. For example, some of the AWS key edge services, such as CloudFront, have many security standards and certifications, including PCI DSS Level 1, HIPAA, FedRamp, ISO 9001, 27001, 27017, 2701.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

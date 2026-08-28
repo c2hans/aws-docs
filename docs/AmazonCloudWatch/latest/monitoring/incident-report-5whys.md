@@ -207,3 +207,7 @@ The 5 Whys analysis integrates with other sections of your incident report to pr
 + **Lessons learned foundation** - Root causes identified through 5 Whys analysis directly inform the lessons learned and corrective actions sections
 
 This integration ensures consistency across your incident report and provides stakeholders with a complete, coherent narrative from initial symptoms through root cause to remediation plans.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,3 +54,7 @@ As a Security Hub member account, you must be signed in to the home Region to vi
 When cross-Region aggregation is enabled automation rules can only be created in the defined home Region. Any rule that you define applies to all linked Regions unless your rule criteria applies to specific regions. You must create separate automation rules for any region that is not a linked Region.
 
 Any rules that were created in the home Region, prior to enabling cross-Region aggregation, automatically become applicable in linked Regions. Rules previously created in linked Regions will no longer apply once an aggregator is created. Rules defined in linked Regions resume applying after the aggregator is deleted or the Region is no longer linked.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

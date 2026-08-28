@@ -112,3 +112,7 @@ The `pg_repack` is helpful in situations where `VACUUM FULL` might not be suitab
 The `REINDEX` command can be leveraged to address index bloat. `REINDEX` writes a new version of the index without the dead pages or the empty or nearly-empty pages, thereby reducing the space consumption of the index. For detailed information about the [`REINDEX`](https://www.postgresql.org/docs/current/sql-reindex.html) command, please refer to the REINDEX documentation.
 
 After removing bloat from tables and indexes, it may be necessary to increase the autovacuum frequency on those tables. Implementing aggressive autovacuum settings at the table level can help prevent future bloat from occurring. For more information, please refer to the documentation on [`Vacuuming and analyzing tables automatically`](https://docs.aws.amazon.com/prescriptive-guidance/latest/postgresql-maintenance-rds-aurora/autovacuum.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

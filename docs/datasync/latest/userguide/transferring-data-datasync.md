@@ -36,3 +36,7 @@ Setting up a DataSync transfer generally involves the following steps:
 + [Transferring to or from other cloud storage with AWS DataSync](transferring-other-cloud-storage.md)
 + [Creating a task for transferring your data](create-task-how-to.md)
 + [Starting a task to transfer your data](run-task.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

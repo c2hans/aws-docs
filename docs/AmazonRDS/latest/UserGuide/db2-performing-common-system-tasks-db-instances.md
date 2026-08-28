@@ -20,3 +20,7 @@ When you migrate to Amazon RDS for Db2, you can use custom database endpoint URL
 
 **Note**
 If you can't transfer your domain to Route 53, you can use your DNS provider to create a `CNAME` record for the RDS for Db2 database endpoint URL. Consult your DNS provider documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

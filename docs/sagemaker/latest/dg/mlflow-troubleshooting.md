@@ -73,3 +73,7 @@ The following features are currently not supported:
 + **[OpenTelemetry Integration](https://mlflow.org/docs/latest/genai/tracing/opentelemetry/)** – The OTEL-compatible traces ingestion endpoint is not available.
 
 If you attempt to use these features, you may encounter missing UI elements or unexpected errors. This is expected behavior in the Amazon SageMaker AI managed environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -87,3 +87,7 @@ You can avoid modifying every job by editing the conda queue environment for you
 Service-managed fleets enable flexible channel priority for conda by default. For a job requesting `blender=4.5` if Blender 4.5 is in both the new channel and the `deadline-cloud` channel, the package will be pulled from whichever channel is first in the channel list. If a specified package version is not found in the first channel then subsequent channels will be checked in order for the package version.
 
 For customer-managed fleets, you can enable the use of conda packages by using one of the [conda queue environment samples](https://github.com/aws-deadline/deadline-cloud-samples/blob/mainline/queue_environments/README.md) in the Deadline Cloud samples GitHub repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

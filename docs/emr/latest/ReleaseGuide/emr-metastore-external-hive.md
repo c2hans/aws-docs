@@ -17,3 +17,7 @@ You have two options for an external metastore:
 
 **Note**
 If you're using Hive 3 and encounter too many connections to Hive metastore, configure the parameter `datanucleus.connectionPool.maxPoolSize` to have a smaller value or increase the number of connection the database server can handle. The increased number of connections is due to the way Hive computes the maximum number of JDBC connections. To calculate the optimal value for performance, see [Hive Configuration Properties](https://cwiki.apache.org/confluence/display/Hive/Configuration+Properties#ConfigurationProperties-datanucleus.connectionPool.maxPoolSize.1).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

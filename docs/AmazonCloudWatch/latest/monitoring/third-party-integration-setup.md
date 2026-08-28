@@ -86,3 +86,7 @@ Data collected from third-party sources is mutated to adhere to the required sch
 Each integration requires platform-specific configuration to establish secure data delivery to your AWS environment.
 
 The following sections provide detailed setup procedures for supported third-party integrations. Each integration includes prerequisites, configuration steps, and validation procedures to make sure proper data flow.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

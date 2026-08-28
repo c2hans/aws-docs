@@ -66,3 +66,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/model-based-systems-e
  Look for the best balance between **open-shared data to better collaboration** and **access controls to ensure** that unintentional data is secure and not shared, mainly in the aerospace and defense industries.
 
  Using AWS, you can **provide identity and access management tools** that allow you to define granular access controls and guardrails in multiple levels including resources, end-points and users. You can also incorporate solutions to consider data residency while giving minimum privilege, federated access to your MBSE data globally in the way you define. To learn more about identity and access management, please [visit the AWS IAM site.](https://aws.amazon.com/iam/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

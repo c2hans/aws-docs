@@ -68,3 +68,7 @@ Release notes for Amazon EMR on EKS 6.13.0
 The following features are included with the 6.13 release of Amazon EMR on EKS.
 + **Amazon Linux 2023** - With Amazon EMR on EKS 6.13 and higher, you can launch Spark with AL2023 as operating system together with Java 17 runtime. To do this, use release label with `al2023` in its name. For example: `emr-6.13.0-java17-al2023-latest`. We recommend that you validate and run performance tests before you move your production workloads to AL2023 and Java 17.
 + **[Amazon EMR on EKS with Apache Flink](run-flink-jobs.md) (public preview)** - Amazon EMR on EKS releases 6.13 and higher support Apache Flink, available in public preview. With this launch, you can run your Apache Flink-based application along with other types of applications on the same Amazon EKS cluster. This helps improve resource utilization and simplify infrastructure management. If you already run big data frameworks on Amazon EKS, you can now let Amazon EMR automate your provisioning and management.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

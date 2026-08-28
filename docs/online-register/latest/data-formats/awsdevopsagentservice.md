@@ -46,3 +46,7 @@ AWS DevOps Agent Service provides the following APIs for data retrieval.
 | <a name="aidevops-ListTriggers"></a>[ListTriggers](https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_ListTriggers.html) | List triggers | List |
 | <a name="aidevops-ListWebhooks"></a>[ListWebhooks](https://docs.aws.amazon.com/devopsagent/latest/APIReference/API_ListWebhooks.html) | List webhooks for association | List |
 | <a name="aidevops-SearchServiceAccessibleResource"></a>[SearchServiceAccessibleResource](https://docs.aws.amazon.com/devopsagent/latest/APIReference/what-is.html) | Look up a registered service accessible resources | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

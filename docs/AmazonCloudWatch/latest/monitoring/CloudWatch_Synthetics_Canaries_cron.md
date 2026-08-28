@@ -42,3 +42,7 @@ You can refer to the following sample cron strings when you create a canary. The
 |  `0 8 1 * ? *`  | Run at 8:00 am (UTC) on the first day of each month |
 |  `0/10 * ? * MON-SAT *`  | Run every 10 minutes Monday through Saturday of each week |
 |  `0/5 8-17 ? * MON-FRI *`  | Run every five minutes Monday through Friday between 8:00 am and 5:55 pm (UTC)  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

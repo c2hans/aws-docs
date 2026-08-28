@@ -32,3 +32,7 @@ This is a permanent operation and can't be undone. You will lose all data on the
 ![Use the shortcut menu to show your disk snapshots and delete multiple disk snapshots](http://docs.aws.amazon.com/lightsail/latest/userguide/images/delete-disk-snapshot-multiple.png)
 
 1. Choose **Yes** to confirm that you want to delete the snapshots.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

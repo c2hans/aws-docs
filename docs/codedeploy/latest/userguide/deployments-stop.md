@@ -42,3 +42,7 @@ If **Stop deployment** and **Stop and roll back deployment** are unavailable, th
 <a name="deployments-stop-cli"></a>
 
 Call the [stop-deployment](https://docs.aws.amazon.com/cli/latest/reference/deploy/stop-deployment.html) command, specifying the deployment ID. To view a list of deployment IDs, call the [list-deployments](https://docs.aws.amazon.com/cli/latest/reference/deploy/list-deployments.html) command.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

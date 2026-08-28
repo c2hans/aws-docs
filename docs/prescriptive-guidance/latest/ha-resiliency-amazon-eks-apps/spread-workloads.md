@@ -194,3 +194,7 @@ For `consolidationPolicy`, you can use `WhenUnderutilized` or `WhenEmpty`:
 + When `consolidationPolicy` is set to `WhenEmpty`, Karpenter considers for consolidation only nodes that contain no workload pods.
 
 The Karpenter consolidation decisions are not based solely on CPU or memory utilization percentages that you might see in monitoring tools. Instead, Karpenter uses a more complex algorithm based on pod resource requests and potential cost optimizations. For more information, see the [Karpenter documentation](https://karpenter.sh/docs/concepts/disruption/#consolidation).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

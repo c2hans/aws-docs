@@ -24,3 +24,7 @@ aws s3 cp s3://DOC-EXAMPLE-SOURCE-BUCKET/ <Directory name that you created to pl
 On Amazon EC2, you have the following data encryption options:
 + **Encrypt data at rest on Amazon EC2** – To encrypt data at rest on the Amazon EC2 instances, you can use Amazon Elastic Block Store (Amazon EBS). With Amazon EBS encryption, you can encrypt your attached volumes and as their snapshots. The encryption uses AWS KMS keys. For more information, see the [AWS documentation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSEncryption.html).
 + **Encrypt data in transit on Amazon EC2** – AWS offers multiple encryption options to keep your data secure as it travels between your network and AWS. For more information, see the [AWS documentation](https://docs.aws.amazon.com/whitepapers/latest/logical-separation/encrypting-data-at-rest-and--in-transit.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

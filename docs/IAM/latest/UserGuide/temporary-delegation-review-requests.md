@@ -46,3 +46,7 @@ You must have the iam:AcceptDelegationRequest permission to approve temporary de
      + Choose *Reject* to deny access.
 
 1. The request list automatically refreshes to show the most current status information. You can also manually refresh the page to check for status updates.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

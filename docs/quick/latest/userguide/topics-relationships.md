@@ -79,3 +79,7 @@ The following limitations apply to defined relationships:
 
 **Note**
 When using Topics in Amazon Quick chat, the LLM-powered chat agent is not limited to inner joins. It can generate SQL with left joins, outer joins, unions, and subqueries based on your custom instructions. These join-type limitations apply only to the analysis sheet consumption path.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

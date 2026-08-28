@@ -254,3 +254,7 @@ To use this policy, replace the IAM service-role ARN in `"Principal"` with the A
 + [Control creation of SageMaker AI resources with condition keys](security_iam_id-based-policy-examples.md#sagemaker-condition-examples)
 + [Amazon SageMaker AI API Permissions: Actions, Permissions, and Resources Reference](api-permissions-reference.md)
 + [Configure security in Amazon SageMaker AI](security.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

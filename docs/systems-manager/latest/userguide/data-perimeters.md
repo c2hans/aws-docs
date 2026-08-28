@@ -46,3 +46,7 @@ For more information about data perimeters in AWS, see the following topics:
 + [Data perimeters on AWS](https://aws.amazon.com/identity/data-perimeters-on-aws/).
 + [Establish permissions guardrails using data perimeters](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_data-perimeters.html) in the *IAM User Guide*
 + [Service-specific guidance: AWS Systems Manager](https://github.com/aws-samples/data-perimeter-policy-examples/blob/main/service_specific_guidance/ssm-specific-guidance.md) and [Service-owned resources](https://github.com/aws-samples/data-perimeter-policy-examples/blob/main/service_owned_resources.md) in the *AWS Samples* repository on GitHub
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

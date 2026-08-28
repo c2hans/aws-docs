@@ -221,3 +221,7 @@ AWS End User Messaging does not impose a size limit on inbound media.
 + Process inbound media asynchronously using an AWS Lambda function triggered by your SNS topic.
 + Scope the IAM role to `s3:PutObject` only. The service does not require broader permissions.
 + Monitor CloudWatch metrics for media upload failures and set alarms to detect configuration issues.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

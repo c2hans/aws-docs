@@ -68,3 +68,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/modern-industrial
 +  [Implementing local processing with AWS IoT Greengrass ](https://docs.aws.amazon.com/greengrass/v2/developerguide/local-processing.html)
 +  [Data buffering with AWS IoT SiteWise Edge ](https://docs.aws.amazon.com/iot-sitewise/latest/userguide/edge-data-processing.html)
 +  [Designing resilient manufacturing applications with AWS IoT Core ](https://docs.aws.amazon.com/whitepapers/latest/designing-mqtt-topics-aws-iot-core/designing-mqtt-topics-aws-iot-core.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

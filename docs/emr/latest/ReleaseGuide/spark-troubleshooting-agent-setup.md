@@ -151,3 +151,7 @@ This should update `~/.kiro/settings/mcp.json` to include the MCP server configu
 ```
 
 See [Supported Interfaces](spark-troubleshooting-using-troubleshooting-agent.md#supported-interfaces) for the configuration guidance for different MCP clients like Kiro, Cline and GitHub CoPilot.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

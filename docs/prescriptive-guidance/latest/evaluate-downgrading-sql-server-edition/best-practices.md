@@ -20,3 +20,7 @@ The following best practices are recommended for assessing and downgrading your 
 <a name="best-practices-for-amazon-rds-for-sql-server.878f34bf-466c-57cc-9cb0-5051d7257bb1"></a>
 
 For best practices for working with Amazon RDS for SQL Server, see the [User Guide](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_BestPractices.html#CHAP_BestPractices.SQLServer) and view the [Deep dive on new features in Amazon RDS for SQL Server video](https://www.youtube.com/watch?v=R4Vj88iqu5s).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

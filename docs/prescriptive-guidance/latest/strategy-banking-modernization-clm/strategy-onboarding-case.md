@@ -15,3 +15,7 @@ A modernized customer journey for opening an account should include the followin
 + Avoid storing customer information in the cloud. This information must be transient and exist only during the customer engagement. After the account opening process is completed, you must delete the data and, if possible, provide some evidence of the deletion. Even if the dialog is interrupted, you must confirm that all personal data is deleted (no caching).
 + Avoid storing logs with personally identifiable information (PII).
 + Customers can be confident that no PII data is stored. If the services used are serverless, then no data or logs with personal data remain.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,3 +65,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-direct-connect-fo
    +  Switch with Switch Cloud Platform
 
 1.  **Port speed** — You will subscribe to a port speed from the data center. Although AWS Direct Connect is fixed at 1 Gbps, 10 Gbps, or 100 Gbps, data centers can provide a variety of different speeds over their private network connections.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

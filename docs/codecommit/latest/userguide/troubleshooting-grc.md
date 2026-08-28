@@ -62,3 +62,7 @@ For more information about remote helpers and Git, see the [Git documentation](h
 **Possible fixes:** The most common reason for this error is that you're running a distribution (distro) of Python that defines an EXTERNALLY-MANAGED marker file. The best solution for this is to create and use a virtual environment.
 
 For more information about externally managed environments and Python, see [Externally Managed Environments](https://packaging.python.org/en/latest/specifications/externally-managed-environments/#externally-managed-environments) and [Install packages in a virtual environment using pip and venv](https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/) in the Python documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

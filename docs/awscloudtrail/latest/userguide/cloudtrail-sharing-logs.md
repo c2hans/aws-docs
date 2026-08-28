@@ -355,3 +355,7 @@ def list_buckets_from_assumed_role(user_key, assume_role_arn, session_name):
 <a name="cloudtrail-sharing-logs-stop-sharing"></a>
 
 To stop sharing log files to another AWS account, delete the role that you created for that account. For information about how to delete a role, see [Deleting roles or instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_manage_delete.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

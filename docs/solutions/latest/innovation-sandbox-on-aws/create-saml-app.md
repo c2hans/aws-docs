@@ -21,8 +21,14 @@ In this step, you federate your Identity Provider (IdP) to IAM Identity Center t
    + Enter a **Display name** for the application, such as *MyISBApp*,
    + Enter a description.
 
-1. Under **Application metadata**, choose **Manually type your metadata values**, and provide the **Application ACS URL** and **Application SAML audience** values.
-   +  **Application ACS URL**: The URL of the CloudFront distribution (or alternate domain name associated with the distribution) from the Compute stack output appended with `/api/auth/login/callback`. For example: `<ISB_WEB_URL>/api/auth/login/callback` where `ISB_WEB_URL` is the CloudFront Distribution URL or alternate domain (for example: https://duyXXXXXXXeh.cloudfront.net/api/auth/login/callback). To view the Compute stack outputs, navigate to the **AWS CloudFormation > Stacks > Outputs** tab, in the account where you have deployed the Compute stack.
-   +  **Application SAML audience**: The audience used to identify the service provider (in this case, Innovation Sandbox web application) configured to consume the SAML assertion. For example: `Isb-<NAMESPACE>-Audience`.
+1. Under **Application metadata**, choose **Manually type your metadata values**, and provide temporary placeholder values for **Application ACS URL** and **Application SAML audience**. You will replace these with the real values after the Data stack is deployed.
+   +  **Application ACS URL**: Enter a temporary placeholder URL, such as `https://placeholder.example.com/saml2/idpresponse`. You will replace this with the `CognitoAcsUrl` output from the Data stack in [Update the SAML application configuration](update-saml-app-config.md).
+   +  **Application SAML audience**: Enter a temporary placeholder value, such as `urn:amazon:cognito:sp:placeholder`. You will replace this with the `CognitoAudience` output from the Data stack in [Update the SAML application configuration](update-saml-app-config.md).
 
 1. Choose **Submit**. The Application details page displays.
+
+1. Copy the **IAM Identity Center SAML metadata URL** from the application details page — you supply this as the `SamlMetadataUrl` parameter when you deploy the Data stack.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

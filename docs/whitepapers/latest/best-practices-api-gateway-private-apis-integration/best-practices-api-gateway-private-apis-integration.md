@@ -31,3 +31,7 @@ Publication date: **July 14, 2026** ([Document revisions](document-revisions.md)
  Compared to regional and edge-optimized API implementation, private API implementations and private integrations add additional components, such as interface VPC endpoints and load balancers. This can lead to additional complexity in application architectures.
 
  This whitepaper includes sample architectures to help understand private APIs, along with private integration implementation and best practices. It also covers security and cost optimizations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ To enter or paste an event pattern into the EventBridge console, choose the **En
 1. Choose **Next** and configure your target (for example, an Amazon SNS topic, Lambda function, or CloudWatch log group).
 
 1. Complete the rule creation workflow by choosing **Create rule**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

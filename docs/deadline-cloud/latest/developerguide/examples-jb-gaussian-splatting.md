@@ -33,3 +33,7 @@ deadline bundle gui-submit gsplat_pipeline
 On the *Job-specific settings* tab, select paths for both the input video file and the output `.ply` file.
 
 For a complete walkthrough that covers capturing a video, submitting and monitoring the job, and viewing the trained result, see [Train 3D Gaussian Splatting from your own video](tutorial-gsplat-pipeline.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

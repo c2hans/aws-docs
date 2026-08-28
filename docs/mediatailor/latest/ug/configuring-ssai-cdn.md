@@ -102,3 +102,7 @@ After completing your CDN setup, verify that your dynamic ad insertion workflow 
 1. Confirm that ad targeting parameters are being properly passed through the workflow
 
 For comprehensive testing and validation procedures, see [Testing and validation for CDN and MediaTailor integrations](cdn-integration-testing.md). For detailed information on monitoring your SSAI implementation, see [Monitor operations for CDN and MediaTailor integrations](ssai-cdn-monitor.md). To optimize performance, see [Optimize performance for CDN and MediaTailor integrations](ssai-cdn-performance.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

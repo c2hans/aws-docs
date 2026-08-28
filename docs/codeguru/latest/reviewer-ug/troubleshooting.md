@@ -153,3 +153,7 @@ Using an `aws-codeguru-reviewer.yml` file to suppress recommendations from CodeG
 + For incremental code reviews, monthly charges are based on the *maximum* number of lines of code reviewed during the month. For example, if your repository includes 150,000 lines of code and you initiate a full repository analysis code review, but later in the month, you add some files or directories to an `aws-codeguru-reviewer.yml` file in your repository and run a new code review of 50,000 lines of code, your monthly bill reflects the cost for reviewing the *larger* number: 150,000 lines of code.
 
 For more information about using an `aws-codeguru-reviewer.yml` file, see [Suppress recommendations](recommendation-suppression.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

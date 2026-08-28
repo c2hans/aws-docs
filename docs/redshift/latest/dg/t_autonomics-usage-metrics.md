@@ -13,3 +13,7 @@ The following system tables hold usage metrics about autonomics:
 + [SYS\_EXTRA\_COMPUTE\_FOR\_AUTOMATIC\_OPTIMIZATION](SYS_EXTRA_COMPUTE_FOR_AUTOMATIC_OPTIMIZATION.md) ‐ Use SYS\_EXTRA\_COMPUTE\_FOR\_AUTOMATIC\_OPTIMIZATION to see the amount of time that Amazon Redshift runs provisioned cluster autonomics operations in a given usage period.
 + [SYS\_AUTOMATIC\_OPTIMIZATION](SYS_AUTOMATIC_OPTIMIZATION.md) ‐ Use SYS\_AUTOMATIC\_OPTIMIZATION to see detailed information on autonomics operations for both provisioned clusters and serverless workgroups.
 + [SYS\_SERVERLESS\_USAGE](SYS_SERVERLESS_USAGE.md) ‐ Use SYS\_SERVERLESS\_USAGE to see the amount of time that Amazon Redshift runs serverless workgroup autonomics operations in a given usage period.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

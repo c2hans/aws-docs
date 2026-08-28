@@ -41,3 +41,7 @@ The overview page has the following three sections.
  This section shows the variants that you compared in the test. If you are satisfied by the performance of the shadow variant, based on the aforementioned metrics, you can promote the shadow variant to production, by choosing **Deploy shadow variant**. For more details about deploying a shadow variant, see [Promote a shadow variant](shadow-tests-complete.md#shadow-tests-complete-promote). You can also change the traffic sampling percentage, and continue testing, by choosing **Edit traffic**. For more details about editing a shadow variant, see [Edit a shadow test](shadow-tests-view-monitor-edit-individual.md). The following screenshot shows this section.
 
 ![Environment section of the overview page.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/juxtaposer/shadow-test-environment.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

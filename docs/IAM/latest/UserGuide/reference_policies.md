@@ -15,3 +15,7 @@ This reference includes the following sections.
 + [AWS global condition context keys](reference_policies_condition-keys.md) — This section includes a list of all the AWS global condition keys that you can use to limit permissions in an IAM policy.
 + [IAM and AWS STS condition context keys](reference_policies_iam-condition-keys.md) — This section includes a list of all the IAM and AWS STS condition keys that you can use to limit permissions in an IAM policy.
 + [Actions, Resources, and Condition Keys for AWS Services](https://docs.aws.amazon.com/reference_policies_actions-resources-contextkeys.html) — This section presents a list of all the AWS API operations that you can use as permissions in an IAM policy. It also includes the service-specific condition keys that can be used to further refine the request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

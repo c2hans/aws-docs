@@ -18,3 +18,7 @@ Use the "largest table" SQL Statements referenced to get comparative table sizes
 
  As storage costs are driven by usage, there are opportunities to optimize the baseline usage, in addition to the multiplier effect of copies and backups of files which are no longer useful for fault analysis.
 +  SAP Note: [2399996 - How-To: Configuring automatic SAP HANA Cleanup with SAP HANACleaner](https://launchpad.support.sap.com/#/notes/2399996) [Requires SAP Portal Access]
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -9,9 +9,9 @@ The following sections contain information about logging, and about problems tha
 
 **Topics**
 + [AWS provided client event logs](#aws-provided-client)
++ [Profiles or preferences missing after upgrade to version 6.0](#linux-troubleshooting-profiles-missing)
 + [DNS queries go to a default nameserver](#aws-client-dns-nameserver)
 + [OpenVPN (command line)](#open-vpn-command-line)
-+ [Profiles or preferences missing after upgrade to version 6.0](#linux-troubleshooting-profiles-missing)
 + [OpenVPN through Network Manager (GUI)](#open-vpn-network-manager-gui)
 
 ## AWS provided client event logs
@@ -39,6 +39,26 @@ For version 6.0 and later, the daemon logs are stored in the following location.
 For example, you can check the following log files to find errors in the DNS up/down scripts that cause the connection to fail:
 + `/var/log/aws-vpn-client/configure-dns-up.log`
 + `/var/log/aws-vpn-client/configure-dns-down.log`
+
+## Profiles or preferences missing after upgrade to version 6.0
+<a name="linux-troubleshooting-profiles-missing"></a>
+
+**Problem**
+After upgrading the AWS provided client to version 6.0 or later, one or more previously configured VPN profiles do not appear in the client, and preferences might be reset to their defaults.
+
+**Cause**
+Version 6.0 introduced a new architecture that stores configuration data in a new system-wide location. On first launch, the client automatically migrates profiles and preferences from the previous location. Migration is best-effort: if an individual profile cannot be migrated, it is skipped and the remaining profiles are still migrated. The client does not delete your original `.ovpn` configuration files.
+
+To find which profile was not migrated and why, look for the following entry in the daemon log.
+
+```
+Skipping profile due to migration error (partial migration)
+```
+
+**Solution**
+Download a new endpoint configuration file from your Client VPN endpoint and re-import it. For instructions on how to download the configuration file, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*. For instructions on how to add a profile, see [Connect to the provided AWS Client VPN for Linux](client-vpn-connect-linux-connecting.md).
+
+If you cannot locate your endpoint or do not have access to the self-service portal, contact your VPN administrator to obtain a new configuration file.
 
 ## DNS queries go to a default nameserver
 <a name="aws-client-dns-nameserver"></a>
@@ -126,20 +146,6 @@ Use the following steps to check that the DNS server is configured and working c
    dhcp-option DNS 192.168.0.2
    ```
 
-## Profiles or preferences missing after upgrade to version 6.0
-<a name="linux-troubleshooting-profiles-missing"></a>
-
-**Problem**
-After upgrading the AWS provided client to version 6.0 or later, previously configured VPN profiles do not appear in the client, and preferences might be reset to their defaults.
-
-**Cause**
-Version 6.0 introduced a new architecture that stores configuration data in a new system-wide location. On first launch, the client attempts to automatically migrate profiles and preferences from the previous location, but this migration can fail in some cases. The client does not delete your original `.ovpn` configuration files.
-
-**Solution**
-Download a new endpoint configuration file from your Client VPN endpoint and re-import it. For instructions on how to download the configuration file, see [Export Client Configuration](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/cvpn-working-endpoint-export.html) in the *AWS Client VPN Administrator Guide*. For instructions on how to add a profile, see [Connect to the provided AWS Client VPN for Linux](client-vpn-connect-linux-connecting.md).
-
-If you cannot locate your endpoint or do not have access to the self-service portal, contact your VPN administrator to obtain a new configuration file.
-
 ## OpenVPN through Network Manager (GUI)
 <a name="open-vpn-network-manager-gui"></a>
 
@@ -159,3 +165,7 @@ The `remote-random-hostname` flag is not honored, and the client cannot connect 
 
 **Solution**
 See the solution for [Unable to Resolve Client VPN Endpoint DNS Name](https://docs.aws.amazon.com/vpn/latest/clientvpn-admin/troubleshooting.html#resolve-host-name) in the *AWS Client VPN Administrator Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ You use AWS published API calls to access Amazon SageMaker AI through the networ
 <a name="mkt-container-scan"></a>
 
 To meet our security requirements, all the [pre-built SageMaker images](https://docs.aws.amazon.com/sagemaker/latest/dg-ecr-paths/sagemaker-algo-docker-registry-paths.html), including AWS Deep Learning Containers, the SageMaker AI machine learning framework containers, and the SageMaker AI built-in algorithm containers, and algorithms and model packages listed in AWS Marketplace are scanned for Common Vulnerabilities and Exposures (CVE). CVE is a list of publicly known information about security vulnerability and exposure. The National Vulnerability Database (NVD) provides CVE details such as severity, impact rating, and fix information. Both CVE and NVD are available for public consumption and free for security tools and services to use. For more information, see [CVE Frequently Asked Questions (FAQs)](https://www.cve.org/ResourcesSupport/FAQs).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

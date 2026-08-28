@@ -70,3 +70,7 @@ We recommend that you replicate logs to a centralized data lake that's located i
 + There is a dependency on automation and clear expectations on the baseline security controls combined with the application-specific controls.
 + Use services such as Firewall Manager and AWS Config to make sure that the deployed architecture is compliant with security best practices. In addition, configure AWS CloudTrail monitoring to detect any misconfigurations.
 + Aggregating logs and metrics in a central place for analysis might introduce complexities.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

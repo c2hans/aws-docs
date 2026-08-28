@@ -111,3 +111,7 @@ This would throw an error as `result` is an object. You would need to either cha
 <a name="invalid-requests"></a>
 
 When AWS AppSync is unable to process and send a request (due to improper data such as invalid syntax) to the field resolver, the response payload will return the field data with values set to `null` and any relevant errors.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -193,3 +193,7 @@ If you have a custom version of an AMI that is compatible with CodeDeploy, choos
 1. In the navigation bar, with **Auto Scaling Groups** selected, choose **CodeDeployDemo-AS-Group**, and then choose the **Instance Management** tab. Do not proceed until the value of **InService** appears in the **Lifecycle** column and the value of **Healthy** appears in the **Health Status** column.
 
 1. Install the CodeDeploy agent by following the steps in [ Install the CodeDeploy agent](https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-agent-operations-install.html) and using the `Name=CodeDeployDemo` instance tags.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

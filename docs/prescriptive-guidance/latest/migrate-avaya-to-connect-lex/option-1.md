@@ -53,3 +53,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/migrate-ava
 + Data** **can't be passed over a public switched telephone network (PSTN) line. This architecture depends on the exchange of customer data between the on-premises and AWS contact center systems, which can't be done over a PSTN line.
 + Additional costs are incurred for the duration of the active call session in Connect Customer and for call transfers to other telephonic systems.
 + Additional effort is required to build the flows in Connect Customer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

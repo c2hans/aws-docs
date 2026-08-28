@@ -81,3 +81,7 @@ Data Transfer Out charges for private interfaces and transit virtual interfaces 
 For publicly addressable AWS resources (for example, Amazon S3 buckets, Classic EC2 instances, or EC2 traffic that goes through an internet gateway), if the outbound traffic is destined for public prefixes owned by the same AWS payer account and actively advertised to AWS through a Direct Connect public virtual Interface, the Data Transfer Out (DTO) usage is metered toward the resource owner at Direct Connect data transfer rate.
 
 For more information, see [AWS Direct Connect Pricing](https://aws.amazon.com/directconnect/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

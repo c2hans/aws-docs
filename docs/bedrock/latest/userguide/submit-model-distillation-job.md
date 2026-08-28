@@ -137,3 +137,7 @@ The response returns a `jobArn` of the model distillation job.
 ## Next steps
 <a name="submit-model-distillation-next-steps"></a>
 + [Monitor your distillation job](model-customization-monitor.md). For more information on setting up on demand inference, see [Set up inference for a custom model](model-customization-use.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

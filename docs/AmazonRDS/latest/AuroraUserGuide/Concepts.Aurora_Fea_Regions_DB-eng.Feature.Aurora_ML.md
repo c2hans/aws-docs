@@ -116,3 +116,7 @@ The following Regions and engine versions are available for Aurora machine learn
 | South America (São Paulo) | Version 17.4 and higher | Version 16.1 and higher | Version 15.2 and higher | Version 14.3 and higher | Version 13.3 and higher | Version 12.4 and higher | Version 11.9, 11.12 and higher |
 | AWS GovCloud (US-East) | Version 17.4 and higher | Version 16.1 and higher | Version 15.2 and higher | Version 14.3 and higher | Version 13.3 and higher | Version 12.4 and higher | Version 11.9, 11.12 and higher |
 | AWS GovCloud (US-West) | Version 17.4 and higher | Version 16.1 and higher | Version 15.2 and higher | Version 14.3 and higher | Version 13.3 and higher | Version 12.4 and higher | Version 11.9, 11.12 and higher |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

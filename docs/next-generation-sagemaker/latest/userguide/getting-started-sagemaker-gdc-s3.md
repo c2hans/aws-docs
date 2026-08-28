@@ -447,3 +447,7 @@ For simplicity, in this topic, these steps create a table under a specific parti
 ![Image showing pie chart display for the data](http://docs.aws.amazon.com/next-generation-sagemaker/latest/userguide/images/gs-lakehouse-athena-visual.png)
 
 After you've finished querying the data, you can choose to view the queries in your query history and save them to share with other project members.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Sagemaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query next-generation-sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

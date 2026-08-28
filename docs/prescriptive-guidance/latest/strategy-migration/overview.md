@@ -63,3 +63,7 @@ For more information, see [Mobilize phase](mobilize-phase.md).
 The migrate phase uses the patterns, processes, tools, resources, and methodology defined and tested during the mobilize phase to migrate applications at scale. After using the best practices and lessons learned from the earlier phases, you can implement a migration factory, which is a blueprint of scaling implementation and operations, through automation and agile delivery.
 
 For more information, see [Migrate phase](migrate-phase.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

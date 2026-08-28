@@ -179,3 +179,7 @@ The number of days until the TLS certificate for your external key store proxy e
 When the certificate expires, AWS KMS cannot communicate with the external key store proxy. All data protected by KMS keys in your external key store becomes inaccessible until you renew the certificate.
 
 The certificate days to expire graph is derived from the [XksProxyCertificateDaysToExpire](monitoring-cloudwatch.md#metric-xks-proxy-certificate-days-to-expire) metric. We strongly recommend using this metric to create a CloudWatch alarm that notifies you about the upcoming expiration. Certificate expiration might prevent you from accessing your encrypted resources. Set the alarm to give your organization time to renew the certificate before it expires. For more information, see [Create an alarm for certificate expiration](xks-alarms.md#cert-expire-alarm).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

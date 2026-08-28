@@ -255,3 +255,7 @@ If you no longer need the experiment template, you can delete it.
 1. Select the experiment template, and choose **Actions**, **Delete experiment template**.
 
 1. When prompted for confirmation, enter **delete** and then choose **Delete experiment template**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

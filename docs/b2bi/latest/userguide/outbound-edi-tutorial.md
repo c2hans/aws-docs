@@ -48,3 +48,7 @@ Before starting this tutorial, review the [Prerequisites](b2b-tutorials.md#tutor
 + [Step 7: Monitor your outbound workflow](outbound-tutorial-step7-monitoring.md)
 + [Cleanup steps](outbound-tutorial-cleanup.md)
 + [Next steps](outbound-tutorial-conclusion.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS B2B Data Interchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query b2bi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,3 +55,7 @@ The CfCT pipeline requires several AWS CodePipeline stages to implement and upda
 1. **CloudFormation resource stage**
 
    The CloudFormation resource stage invokes the stack set state machine to deploy the resources specified in the list of accounts or organizational units (OUs), which you provided in the manifest file. The state machine creates the CloudFormation resources in the order that they are specified in the manifest file. To specify a resource dependency, arrange the order in which resources are specified in the manifest file. The order of resources within the manifest file is the only way to specify a dependency.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

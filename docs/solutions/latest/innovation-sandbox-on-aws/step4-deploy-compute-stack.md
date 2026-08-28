@@ -5,12 +5,12 @@ source_url: https://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-a
 # Step 4: Deploy the Compute stack
 <a name="step4-deploy-compute-stack"></a>
 
-In this step, you will deploy the compute resources required for the ISB application.
+In this step, you deploy the compute resources required for the ISB application.
 
 **Important**
 Ensure that you are logged in using the **Hub** account for deploying the Compute stack.
 
-1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and select the button to launch the `Compute` stack CloudFormation template.
+1. Sign in to the [AWS Management Console](https://aws.amazon.com/console/) and choose the button to launch the `Compute` stack CloudFormation template.
 
  [![Launch Stack](http://docs.aws.amazon.com/solutions/latest/innovation-sandbox-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?&templateURL=https://solutions-reference.s3.amazonaws.com/innovation-sandbox-on-aws/latest/InnovationSandbox-Compute.template&redirectId=ImplementationGuide)
 
@@ -25,10 +25,17 @@ The template launches in the US East (N.Virginia) Region by default. To launch t
 
 1. Choose **Next**.
 
-1. On the **Configure stack options** page, review and select to acknowledge the messages under Capabilities and transforms, and choose **Next**.
+1. On the **Configure stack options** page, review and choose to acknowledge the messages under Capabilities and transforms, and choose **Next**.
 
 1. On the **Review and create** page, review and confirm the settings.
 
 1. Choose **Submit** to deploy the stack.
 
    You can view the status of the stack in the AWS CloudFormation Console in the Status column. You should receive a **CREATE\_COMPLETE** status in approximately 60 minutes.
+
+**Note**
+New deployments of Innovation Sandbox on AWS start with maintenance mode turned **ON**. Only Innovation Sandbox Admin users can use the web application until an Admin completes the post-deployment configuration and turns maintenance mode off. For more information, see [Post-deployment configuration tasks](post-deployment-configuration-tasks.md) and [Managing maintenance mode](administrator-guide.md#maintenance-mode).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

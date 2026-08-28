@@ -42,3 +42,7 @@ For more information on managing access to Amazon RDS resources and your databas
 + [Master user account privileges](UsingWithRDS.MasterAccounts.md)
 + [Using service-linked roles for Amazon RDS](UsingWithRDS.IAM.ServiceLinkedRoles.md)
 + [Amazon VPC and Amazon RDS](USER_VPC.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

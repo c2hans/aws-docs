@@ -320,3 +320,7 @@ This reward function includes the following key design choices:
 + **Format is a small shaping signal.** The format coefficient (0.1) is 10% of the outcome reward, small enough that the model cannot profit from format compliance alone, but large enough to steer it toward parseable outputs.
 + **Wrong format with wrong answer is mildly penalized.** The -0.1 score creates a small gradient away from completely unstructured outputs, without overwhelming the learning signal.
 + **No answer is treated as incorrect with bad format.** If the model never produces an assistant message, the function returns 0.0, distinguishing it from the active penalty of -0.1 for a present but malformed response.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

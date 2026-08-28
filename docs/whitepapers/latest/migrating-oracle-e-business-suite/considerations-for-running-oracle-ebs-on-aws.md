@@ -47,3 +47,7 @@ There are a number of considerations for running Oracle E-Business Suite on AWS.
 +  Message queue-based integration using [Apache Kafka](https://kafka.apache.org/), [IBM MQ](https://www.ibm.com/products/mq), and so on with Oracle E-Business Suite.
 
  Consider the effort involved in services integration, and follow relevant support articles from [MyOracleSupport](https://support.oracle.com/) to integrate with these applications and third-party services.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

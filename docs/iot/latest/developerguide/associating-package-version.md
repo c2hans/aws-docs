@@ -38,3 +38,7 @@ Associating a package version to an AWS IoT thing doesn’t update or install so
 1.  Repeat these steps for each package and version that you want to associate to this thing.
 
 1.  When you’re finished, choose **Add package and version details**. The **Thing details** page opens and you can see the new package and version in the list.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

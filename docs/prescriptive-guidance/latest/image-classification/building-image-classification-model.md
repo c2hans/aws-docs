@@ -36,3 +36,7 @@ The following steps outline a simplified version for determining a modeling appr
 1. If none of these services address your use case, use a containerized solution in Amazon Elastic Container Service (Amazon ECS) or Amazon Elastic Kubernetes Service (Amazon EKS). For more information, see [Custom training jobs](custom-training-jobs.md) in this guide.
 
 Given certain requirements for your solution, it is possible to skip over these steps very quickly in some cases. For example, if an involved augmentation routine is required beyond one that can easily be accomplished by creating additional images, you can skip steps 1 and 2.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

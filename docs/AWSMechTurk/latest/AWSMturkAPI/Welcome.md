@@ -20,3 +20,7 @@ If you do not add a CORS configuration to the S3 buckets that contain your image
 |  [Data Structures](ApiReference_DataStructuresArticle.md)  | Alphabetical list of all Amazon Mechanical Turk data structures. |
 |  [Review Policies](ApiReference_ReviewPoliciesArticle.md)  | Description of Amazon Mechanical Turk Review Policies. |
 |  [Managing Notifications](ApiReference_NotificationReceptorAPIArticle.md)  | Description of how Amazon Mechanical Turk sends notification messages to your application. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

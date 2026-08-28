@@ -36,3 +36,7 @@ The following table recommends sizes for local disk storage for each AWS Storage
 **Note**
 You can configure one or more local drives for your cache up to the maximum capacity.
 When adding cache to an existing FSx File Gateway, it is important to create new disks on your virtual host (hypervisor or Amazon EC2 instance). Do not change the size of existing disks if the disks have been previously allocated as a cache.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

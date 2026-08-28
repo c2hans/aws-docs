@@ -42,3 +42,7 @@ You can view the major versions of your Db2 databases by running the [describe-d
 **Note**
 Major version upgrade through API or console is not currently supported. This capability will be available in a near future release.
 To manually perform a major version upgrade from RDS Db2 v11.5.9 to RDS Db2 v12.1.4, perform a full OFFLINE backup using the [rdsadmin.backup\_database](db2-sp-managing-databases.md#db2-sp-backup-database) stored procedure, then restore it to an existing RDS for Db2 v12.1.4 instance using the [rdsadmin.restore\_database](db2-sp-managing-databases.md#db2-sp-restore-database) stored procedure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

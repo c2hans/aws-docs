@@ -117,3 +117,7 @@ aws backup create-backup-plan --cli-input-json file://{{PATH-TO-FILE}}/{{test-ba
 ```
 
 Note that while some systems number the days of the week from 0 to 6, we number them from 1 to 7. For more information, see [Cron and rate expressions](https://docs.aws.amazon.com/eventbridge/latest/userguide/eb-scheduled-rule-pattern.html). For more information about timezones, see [TimeZone](https://docs.aws.amazon.com/location/latest/APIReference/API_TimeZone.html) in the *Amazon Location Service API reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

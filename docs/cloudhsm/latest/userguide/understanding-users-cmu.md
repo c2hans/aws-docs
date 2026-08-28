@@ -41,3 +41,7 @@ For more information, see the [HSM user permissions table for AWS CloudHSM Manag
 The appliance user (AU) can perform cloning and synchronization operations on your cluster's HSMs. AWS CloudHSM uses the AU to synchronize the HSMs in an AWS CloudHSM cluster. The AU exists on all HSMs provided by AWS CloudHSM, and has limited permissions. For more information, see the [HSM user permissions table for AWS CloudHSM Management Utility](user-permissions-table-cmu.md).
 
 AWS cannot perform any operations on your HSMs . AWS cannot view or modify your users or keys and cannot perform any cryptographic operations using those keys.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

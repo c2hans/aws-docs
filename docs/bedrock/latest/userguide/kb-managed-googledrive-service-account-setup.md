@@ -130,3 +130,7 @@ The `privateKey` value contains literal `\n` escape sequences from the JSON key 
 <a name="kb-managed-googledrive-sa-next"></a>
 
 After you store the secret, create the data source with `authType` set to `SERVICE_ACCOUNT`. See [Connect a Google Drive data source](kb-managed-ds-googledrive-connect.md). To filter query results by user permissions, see [Document-level access controls](kb-managed-ds-googledrive-acl.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

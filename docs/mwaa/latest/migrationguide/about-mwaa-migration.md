@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/mwaa/latest/migrationguide/about-mwaa-mi
  Before you attempt the migration tutorial, we recommend reviewing the following topics.
 +  [Explore Amazon MWAA network architecture](mwaa-architecture.md)
 +  [Key considerations for migrating to a new MWAA environment](key-considerations.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

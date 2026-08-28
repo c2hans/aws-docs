@@ -84,3 +84,7 @@ When upgrading the VPC CNI from a version older than v1.13.2, you must replace a
 Version v1.13.2 was a significant release that [introduced iptables-wrapper](https://github.com/aws/amazon-vpc-cni-k8s/pull/2402), which automatically detects the appropriate iptables backend (iptables-legacy or iptables-nft) for inserting chains and rules. This change aligned with the upstream Kubernetes decision to move away from the legacy backend due to performance limitations.
 
 Replacing nodes following an upgrade from a version older than v1.13.2 of the VPC CNI is required because introducing rules into both the iptables-legacy and iptables-nft backends can lead to unexpected behavior for traffic originating from non-primary ENIs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

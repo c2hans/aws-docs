@@ -13,3 +13,7 @@ If your source is Elasticsearch 7.0 or later, you can skip this page. If your so
 
 **Note**
 Elasticsearch 1.x and 2.x sources are backfill-only in Migration Assistant — live capture and replay are not supported for those versions. Type-mapping transformation still applies to the metadata migration and backfill phases for these older sources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ After you save the data source, you can use PromQL queries in Explore and dashbo
 ![Amazon Managed Grafana Explore view showing a PromQL query for container CPU usage rate with enriched AWS labels available as filters](http://docs.aws.amazon.com/grafana/latest/userguide/images/grafana-cloudwatch-promql.png)
 
 For more information about OpenTelemetry metrics ingestion and PromQL queries in Amazon CloudWatch, see [Introducing OpenTelemetry and PromQL support in Amazon CloudWatch](https://aws.amazon.com/blogs/mt/introducing-opentelemetry-promql-support-in-amazon-cloudwatch/) on the AWS Cloud Operations Blog.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

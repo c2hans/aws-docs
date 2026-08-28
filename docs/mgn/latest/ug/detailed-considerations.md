@@ -41,15 +41,15 @@ The following storage parameters: **Volume initialization rate**, **EBS card ind
 
     **Volume initialization rate** – Controls how fast a volume created from a snapshot is initialized, at a provisioned rate of 100–300 MiB/s. Use this for latency-sensitive workloads where you need the volume fully initialized quickly after launch. This setting is not supported on Outposts, Local Zones, or Wavelength Zones. AWS charges apply for provisioned initialization rate. If not set, no provisioned initialization is used and the volume initializes at default speed.
   + **EBS card index** – Assigns a volume to a specific EBS card on instance types with multiple EBS controllers. Use this to spread I/O across cards for higher aggregate throughput. This setting only has an effect on multi-card instance types (for example, `i4i.metal`, `r5b.24xlarge`). If not set, AWS automatically distributes volumes across available EBS cards.
-  + **Delete on termination** – Specifies whether an Amazon EBS volume is automatically deleted when the attached Amazon EC2 instance is terminated. Set this to **No** iif you want the volumes to persist after instance termination, for example to preserve data for rollback or to reattach the volume to another instance. Set this to **Yes** for data volumes when you want to avoid orphaned volumes that continue incurring storage costs.This setting takes effect only after cutover is finalized and the instance is under your ownership. If not explicitly configured, the default behavior is **Yes** for root volumes and **No** for additional volumes.
+  + **Delete on termination** – Specifies whether an Amazon EBS volume is automatically deleted when the attached Amazon EC2 instance is terminated. Set this to **No** if you want the volumes to persist after instance termination, for example to preserve data for rollback or to reattach the volume to another instance. Set this to **Yes** for data volumes when you want to avoid orphaned volumes that continue incurring storage costs.This setting takes effect only after cutover is finalized and the instance is under your ownership. If not explicitly configured, the default behavior is **Yes** for root volumes and **No** for additional volumes.
   + **Encrypted** – Set this to **Yes** if you are specifying a KMS key for the volume. If you are not using a per-volume KMS key, encryption is controlled through the [EBS Encryption](ebs-storage.md#ebs-encryption) section of the replication settings.
   + **KMS key** – You can specify a customer-managed KMS key to use for encrypting target volumes. If set, this key takes precedence over the key used during replication. If not set, the replication snapshot's KMS key is used. Ensure that your MGN launch role has `kms:CreateGrant`, `kms:Decrypt`, and `kms:GenerateDataKey` permissions on the specified key.
 + **Resource tags** – You can add up to 50 tags. These are transferred to your test and cutover instances. Note that these tags may interfere with other tags that have already been added to the source server. Launch template tags always take precedence over tags set in the MGN console or tags manually assigned to the server.
 + **Network interfaces** – The network interface is created by default based on your replication template. The network interface section is composed of the following fields:
   + **Device index** – **Do not** change or edit this field. The value should always be "**0**".
-  + **Network interface** – Use this option only if you want use a pre-existing ENI (Elastic Network Interface). The Launch Template overwrites certain ENI settings. Use this if you want to add an Elastic IP. You have to attach the Elastic IP to the ENI.
+  + **Network interface** – Use this option only if you want to use a pre-existing ENI (Elastic Network Interface). The Launch Template overwrites certain ENI settings. Use this if you want to add an Elastic IP. You have to attach the Elastic IP to the ENI.
 **Note**
-When selecting an pre-existing ENI, you must change the **Auto-assign public IP** value to **Don't include in launch template** for a successful target launch.
+When selecting a pre-existing ENI, you must change the **Auto-assign public IP** value to **Don't include in launch template** for a successful target launch.
   + **Description** – Add an optional description for the network interface (if chosen).
   + **Subnet** – Choose the subnet. This is the subnet within which the network interface is located and the test or cutover instance is launched. AWS Transform MGN selects the default VPC subnet by default (if one exists).
   + **Auto-assign public IP** - Choose whether you want the public IP to be auto-assigned.
@@ -68,3 +68,7 @@ If you have selected FSx for ONTAP as the target storage in Replication settings
   + Kernel
   + Nitro Enclave
   + Metadata accessible
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

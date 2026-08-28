@@ -14,3 +14,7 @@ For more information about viewing, downloading, and watching file-based databas
 + [Sending AuroraMySQL log output to tables](Appendix.MySQL.CommonDBATasks.Logs.md)
 + [Configuring Aurora MySQL binary logging](USER_LogAccess.MySQL.BinaryFormat.md)
 + [Accessing MySQL binary logs](USER_LogAccess.MySQL.Binarylog.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

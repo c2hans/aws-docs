@@ -32,3 +32,7 @@ You must submit a Request for Change (RFC) to AMS to delete or modify existing c
 **Q: What are the prerequisites or dependencies to using Certificate Manager?**
 
 Existing public DNS name, and access to create DNS CNAME records, but those do not need to be hosted in the managed account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

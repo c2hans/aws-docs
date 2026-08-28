@@ -40,3 +40,7 @@ Spark Catalyst Optimizer converts the initial query plan into an optimized query
 1. **Selected physical plans ­**– Spark Catalyst Optimizer selects the most cost-effective physical plan.
 
 1. **Optimized query plan** – Spark SQL runs the performance-optimized and cost-optimized query plan. Spark Memory Management tracks the memory usage and distributes memory between tasks and operators. The Spark Tungsten engine can substantially improve the memory and CPU efficiency for Spark applications. It also implements binary data model processing, and it operates directly on binary data. This bypasses the need for deserialization and significantly reduces the overhead associated with data conversion and deserialization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -86,3 +86,7 @@ To summarize, the Ignore flags make a difference only to the scenarios in this t
 If you selected Splice Insert as the Ad Avail mode, then you can assume that the SCTE-35 ad avail message not include the two restriction flags described above. Every SCTE-35 ad avail message should result in an ad avail.
 
 Therefore, if you know that input contains splice inserts (not time signals), you should leave both Elemental Live fields cleared.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

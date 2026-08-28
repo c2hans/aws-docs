@@ -36,3 +36,7 @@ The following cases are good candidates for using active-active clusters:
 + [Stopping Group Replication on a DB instance in an active-active cluster](mysql-active-active-clusters-stopping.md)
 + [Renaming a DB instance in an active-active cluster](mysql-active-active-clusters-renaming.md)
 + [Removing a DB instance from an active-active cluster](mysql-active-active-clusters-remove.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

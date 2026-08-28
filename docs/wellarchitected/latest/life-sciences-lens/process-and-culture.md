@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 + [LSPERF19-BP01 Implement infrastructure as code for consistent test environments](lsperf19-bp01.md)
 + [LSPERF19-BP02 Establish comprehensive performance metrics and evidence collection](lsperf19-bp02.md)
 + [LSPERF19-BP03 Schedule regular performance tests with production-representative data loads](lsperf19-bp03.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

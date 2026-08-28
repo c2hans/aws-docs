@@ -72,3 +72,7 @@ The AWS Deploy Tool has been released. This tool is an interactive tooling for t
 **2020-08-24: Version 3.5 of the SDK has been released**
 + Standardized the .NET experience by transitioning support for all non-Framework variations of the SDK to .NET Standard 2.0. See [Migrating to version 3.5](net-dg-v35.md) for more information.
 + Added paginators to many service clients, which make pagination of API results more convenient. For more information, see [Paginators](paginators.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

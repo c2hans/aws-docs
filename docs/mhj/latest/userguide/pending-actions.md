@@ -34,3 +34,7 @@ You don't have to respond through the email. You can go directly to the **Pendin
 1. In the **Pending journey transfers** tile, choose the radio button next to the transfer that you want to accept or reject, then choose **Accept** or **Reject**.
 
    If you choose **Accept**, specify the migration space where you want to put the journey, and then choose **Accept**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

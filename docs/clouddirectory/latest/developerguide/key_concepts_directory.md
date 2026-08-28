@@ -49,3 +49,7 @@ To create a policy object, use the [`CreateObject`](http://docs.aws.amazon.com/c
 + To list the policies that are attached to a particular object, use the [`ListObjectPolicies`](http://docs.aws.amazon.com/clouddirectory/latest/APIReference/API_ListObjectPolicies.html) API action.
 
 For a list of operations and the permissions required to perform each API action, see [Amazon Cloud Directory API Permissions: Actions, Resources, and Conditions Reference](iam_auth_access_usingwith_iam_resourcepermissions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

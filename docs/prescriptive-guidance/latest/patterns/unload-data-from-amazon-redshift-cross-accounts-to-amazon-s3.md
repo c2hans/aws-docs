@@ -201,3 +201,7 @@ After you unload the data from Amazon Redshift to Amazon S3, you can analyze it 
 [Amazon Athena](https://docs.aws.amazon.com/athena/latest/ug/getting-started.html) is a big data query service that's beneficial when you need to access large volumes of data. You can use Athena without having to provision servers or databases. Athena supports complex queries, and you can run it on different objects.
 
 As with most AWS services, the main benefit to using Athena is that it provides great flexibility in how you run queries without the added complexity. When you use Athena, you can query different data types, such as CSV and JSON, in Amazon S3 without changing the data type. You can query data from various sources, including outside AWS. Athena reduces complexity because you don't have to manage servers. Athena reads data directly from Amazon S3 without loading or changing the data before you run the query.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

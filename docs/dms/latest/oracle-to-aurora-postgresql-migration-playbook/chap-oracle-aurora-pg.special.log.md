@@ -209,3 +209,7 @@ The Amazon Aurora performance insights dashboard provides information about curr
 1. Specify the timeframe and the monitoring scope (Waits, SQL, Hosts and Users).
 
 For more information, see [Error Reporting and Logging](https://www.postgresql.org/docs/13/runtime-config-logging.html) and [pg\_stat\_statements](https://www.postgresql.org/docs/13/pgstatstatements.html) in the *PostgreSQL documentation* and [PostgreSQL database log files](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_LogAccess.Concepts.PostgreSQL.html) in the *Amazon RDS user guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

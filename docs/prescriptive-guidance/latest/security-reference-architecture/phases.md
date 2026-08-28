@@ -98,3 +98,7 @@ The AWS SRA, through the design of the [Security Tooling account](security-tool
 
 **Implementation example: **
 + The [AWS SRA code library](https://github.com/aws-samples/aws-security-reference-architecture-examples) provides a sample implementation of** **a** **[Detective Organization](https://github.com/aws-samples/aws-security-reference-architecture-examples/tree/main/aws_sra_examples/solutions/detective/detective_org), which automatically enables Amazon Detective by delegating administration to an account (for example, Audit or Security Tooling) and configures Detective for existing and future AWS Organizations accounts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

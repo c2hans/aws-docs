@@ -56,3 +56,7 @@ For more configuration options and advanced examples, see the [Elastic Beanstalk
 + [Elastic Beanstalk Deploy action](https://github.com/aws-actions/aws-elasticbeanstalk-deploy) on GitHub
 + [Configure AWS Credentials action](https://github.com/aws-actions/configure-aws-credentials) on GitHub
 + [Configuring OpenID Connect in Amazon Web Services](https://docs.github.com/en/actions/security-for-github-actions/security-hardening-your-deployments/configuring-openid-connect-in-amazon-web-services) (GitHub documentation)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

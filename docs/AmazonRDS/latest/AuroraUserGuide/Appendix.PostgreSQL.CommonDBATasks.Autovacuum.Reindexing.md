@@ -50,3 +50,7 @@ When the index is corrupted and autovacuum is attempting to run on the table, yo
    At this point, your session begins. It's important to note that autovacuum restarts immediately because this table is probably the highest on its list of work.
 
 1. Initiate your command in session two, and then end the autovacuum process in session 1.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

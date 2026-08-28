@@ -35,8 +35,8 @@ With the installer, you can install the following submitters:
 | [Adobe After Effects](adobe-after-effects.md) | 2024 - 2026 | Included | Not included | Included |
 | [Autodesk 3ds Max](autodesk-3ds-max.md) | 2024 - 2027 | Included | Not included | Not included |
 | [Autodesk Arnold for Cinema 4D](maxon-cinema-4d.md) | 4.8.4.1 | Included | Not included | Included |
-| [Autodesk Arnold for Maya](autodesk-maya.md) | 7.1 - 7.4 | Included | Included | Included |
-| [Autodesk Maya](autodesk-maya.md) | 2023 - 2026 | Included | Included | Included |
+| [Autodesk Arnold for Maya](autodesk-maya.md) | 7.1 - 7.5 | Included | Included | Included |
+| [Autodesk Maya](autodesk-maya.md) | 2023 - 2027 | Included | Included | Included |
 | [Autodesk VRED](autodesk-vred.md) | 2025 - 2026 | Included | Not included | Not included |
 | [Blender](blender.md) | 3.6 - 5.1 | Included | Included | Included |
 | [Chaos V-Ray for Maya](autodesk-maya.md) | 6 - 7 | Included | Included | Included |
@@ -269,3 +269,7 @@ The steps to load and launch the submitter are unique to each DCC. For the instr
 If you want a free DCC to test your setup with, Blender is a good choice. See the Blender [Installation](blender.md#blender-installation) instructions.
 
 After you submit a job from your DCC, your Deadline Cloud farm receives it and a compatible fleet processes it. To verify your setup, open the monitor and confirm that your job appears and completes. For information on how to view job progress in the monitor, see [Using the Monitor](https://docs.aws.amazon.com/deadline-cloud/latest/userguide/working-with-deadline-monitor.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,3 +45,7 @@ You can also find datasets by using the data browser on the **Catalog** page. Th
 You can search for related datasets by choosing the dataset attributes in the dataset attributes tags of the dataset result.
 
 To view the details of a dataset in the result, choose the name of the dataset that is displayed in bold.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

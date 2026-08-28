@@ -19,3 +19,7 @@ For general documentation on using Infrastructure Composer, see [How to compose]
 + [Locally sync and save your project in the Infrastructure Composer console](using-composer-project-local-sync.md)
 + [Import functions into Infrastructure Composer from the Lambda console](other-services-lambda.md)
 + [Export an image of Infrastructure Composer's visual canvas](reference-features-export.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

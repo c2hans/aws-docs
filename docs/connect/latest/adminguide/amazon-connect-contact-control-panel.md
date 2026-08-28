@@ -61,3 +61,7 @@ You can also resolve the issue by using Firefox or Edge as your browser.
 **Agents**: Contact your manager or the technical support provided by your company.
 
 **Connect Customer Administrators**: See [Troubleshooting Issues with the Contact Control Panel (CCP)](troubleshooting.md) for detailed troubleshooting steps. Or, log in to the [AWS Management Console](https://console.aws.amazon.com/console) (https://console.aws.amazon.com/console) using your AWS account. In the upper right corner of the page, choose **Support**, and open a support ticket.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

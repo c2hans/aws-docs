@@ -17,3 +17,7 @@ When you use the automated data setup, additional data formats can be used to ge
 | Video Classification | Video clips | .mp4, .ogg, and .webm |  <pre>{"source-ref": "{{s3:///example-video.mp4}}"}</pre>  |
 | Video Frame Object Detection, Video Frame Object Tracking (bounding boxes, polylines, polygons or keypoint) | Video frames and video frame sequence files (for Object Tracking) | **Video frames**: .jpg, .jpeg, .png<br />**Sequence files**: .json | Refer to [Create a Video Frame Input Manifest File](sms-video-manual-data-setup.md#sms-video-create-manifest). |
 | 3D Point Cloud Semantic Segmentation, 3D Point Cloud Object Detection, 3D Point Cloud Object Tracking | Point clouds and point cloud sequence files (for Object Tracking) | **Point clouds**: Binary pack format and ASCII. For more information see [Accepted Raw 3D Data Formats](sms-point-cloud-raw-data-types.md).<br />**Sequence files**: .json | Refer to [Input Manifest Files for 3D Point Cloud Labeling Jobs](sms-point-cloud-input-manifest.md). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

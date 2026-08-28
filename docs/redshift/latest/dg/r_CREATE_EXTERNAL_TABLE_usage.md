@@ -77,6 +77,8 @@ You can disable creation of pseudocolumns for a session by setting the *spectrum
 **Important**
 Selecting *$size* or *$path* incurs charges because Redshift Spectrum scans the data files in Amazon S3 to determine the size of the result set. For more information, see [Amazon Redshift Pricing](https://aws.amazon.com/redshift/pricing/).
 
+For Iceberg v3 tables, two additional pseudo-columns *\_row\_id* and *\_last\_updated\_sequence\_number* are available. For more information, see [Row lineage](iceberg-v3-features.md#iceberg-v3-row-lineage).
+
 ## Setting data handling options
 <a name="r_CREATE_EXTERNAL_TABLE_usage-data-handling"></a>
 
@@ -86,3 +88,7 @@ You can set table parameters to specify input handling for data being queried in
 + Replacement character to use when you specify REPLACE for the external table property `invalid_char_handling`.
 + Cast overflow handling in columns containing integer and decimal data. For more information, see the external table property `numeric_overflow_handling`.
 + Surplus\_bytes\_handling to specify input handling for surplus bytes in columns containing varbyte data. For more information, see the external table property `surplus_bytes_handling`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

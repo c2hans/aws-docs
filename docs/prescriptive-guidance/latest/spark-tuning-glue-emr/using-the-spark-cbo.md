@@ -12,3 +12,7 @@ Spark version 2.09 and later can use a cost-based optimizer (CBO). The CBO selec
 + Verify if CBO is choosing optimal plans by forcing the optimized plan and comparing the performance. Enable optimizer logging to compare the plans.
 + For better optimizations, use CBO in combination with partitioning, bucketing, and data skew hints. Partitioning can help CBO to scale.
 + To detect plan regressions early, continuously monitor query performance after enabling CBO.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

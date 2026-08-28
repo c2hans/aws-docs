@@ -74,3 +74,7 @@ To use a dualstack endpoint, use the `codeartifact.{{region}}.on.aws` endpoint.
 1. Publish the artifact by running the command: `clj -T:build deploy`
 
 For more information on modifying default repositories, see [Modifying the default repositories](https://clojure.org/reference/deps_and_cli#_modifying_the_default_repositories) in the *Clojure Deps and CLI Reference Rationale*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

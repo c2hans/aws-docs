@@ -185,3 +185,7 @@ By default, the DNS record type is the same as the IP address type. You can choo
 A service-defined DNS record IP type returns DNS records based on the service endpoint you call. If you use a service-defined DNS record IP type, make sure your service can handle variable calls from service endpoints. To see the DNS records supported by your interface endpoint, see the DNS names for your VPC endpoint in the AWS Management Console, or use [DescribeVpcEndpoints](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeVpcEndpoints.html).
 
 The DNS record IP type behavior is different for gateway endpoints. For more information, see [DNS record IP type for gateway endpoints](gateway-endpoints.md#gateway-endpoint-dns-record-ip-type).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

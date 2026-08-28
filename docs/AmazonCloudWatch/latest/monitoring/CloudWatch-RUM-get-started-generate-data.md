@@ -16,3 +16,7 @@ After you have generated some events, view them in the CloudWatch RUM dashboard.
 Data from user sessions might take up to 15 minutes to appear in the dashboard.
 
 If you don't see data 15 minutes after you generated events in the application, see [Troubleshooting CloudWatch RUM](CloudWatch-RUM-troubleshooting.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

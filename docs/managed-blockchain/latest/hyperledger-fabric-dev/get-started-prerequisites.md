@@ -92,3 +92,7 @@ This security group configuration is recommended for this tutorial only. Careful
 <a name="additional-considerations"></a>
 + All commands in the tutorial assume that you are using an Amazon EC2 instance with an Amazon Linux AMI. Unless noted otherwise, instructions also assume that you are running commands in the default home directory (`/home/ec2-user`). If you have a different configuration, modify instructions to fit your home directory as necessary.
 + Hyperledger Fabric 2.2 requires that a channel ID contain only lowercase ASCII alphanumeric characters, dots (.), and dashes (-). It must start with a letter, and must be fewer than 250 characters.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

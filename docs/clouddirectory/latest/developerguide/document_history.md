@@ -21,3 +21,7 @@ The following table describes the documentation changes since the last release o
 | [Compliance](https://docs.aws.amazon.com/clouddirectory/latest/developerguide/compliance.html) | Added information about HIPAA and PCI compliance. | July 14, 2017 |
 | [Typed links](https://docs.aws.amazon.com/clouddirectory/latest/developerguide/directory_objects_links.html#directory_objects_links_typedlink) | Added new typed links content for Amazon Cloud Directory. | May 31, 2017 |
 | [Amazon Cloud Directory service launch](https://docs.aws.amazon.com/clouddirectory/latest/developerguide/what_is_cloud_directory.html) | New directory type introduced. | January 26, 2017 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Directory. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clouddirectory` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

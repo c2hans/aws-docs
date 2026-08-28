@@ -27,3 +27,7 @@ You may choose to build a custom health check page that checks other dependent r
  Elasticity is a key characteristic of the AWS Cloud. You can launch more compute capacity (for example, web servers) when you need it and run less when you don't. [Amazon EC2 Auto Scaling](https://aws.amazon.com/ec2/autoscaling/) is an AWS service that helps you automate this provisioning to scale your Amazon EC2 capacity up or down according to conditions you define with no need for manual intervention. You can configure Amazon EC2 Auto Scaling so that the number of EC2 instances you’re using increases seamlessly during demand spikes to maintain performance and decreases automatically when traffic diminishes, so as to minimize costs.
 
  Elastic Load Balancing also supports dynamic addition and removal of Amazon EC2 hosts from the load-balancing rotation. Elastic Load Balancing itself also dynamically increases and decreases the load-balancing capacity to adjust to traffic demands with no manual intervention.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

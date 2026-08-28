@@ -87,3 +87,7 @@ npx skills add aws/agent-toolkit-for-aws/skills
 Skills work best with the AWS MCP Server, which provides authenticated API access, sandboxed script execution, and enterprise controls like CloudWatch metrics and IAM context keys. For production workflows, use the AWS MCP Server.
 
 Skills also work without the AWS MCP Server. When your agent does not have access to the AWS MCP Server, it can run the same AWS operations using the AWS CLI directly. Each skill includes instructions that work with both approaches.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Agent Toolkit for AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agent-toolkit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

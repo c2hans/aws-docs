@@ -83,3 +83,7 @@ If you're a first-time user of AWS or Amazon SageMaker AI, we recommend that you
 + [SageMaker geospatial Security and Permissions](geospatial-security-general.md)
 + [Types of compute instances](geospatial-instances.md)
 + [Data collections](geospatial-data-collections.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

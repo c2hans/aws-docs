@@ -114,3 +114,7 @@ The following example shows you how to use your local console to generate and di
 1. Enter `1` for Public or `2` for VPC endpoint as the network type.
 
 1. Enter `1` for Standard or `2` for Federal Information Processing Standard (FIPS) as the endpoint Type.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

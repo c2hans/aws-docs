@@ -405,3 +405,7 @@ Once you've completed this tutorial, consider taking the following actions to cl
 + Unassign Amazon Q from any issues no longer being worked on. If Amazon Q has finished its work on an issue or could not find a solution, make sure to unassign Amazon Q to avoid reaching the maximum quota for generative AI features. For more information, see [Managing generative AI features](https://docs.aws.amazon.com/codecatalyst/latest/adminguide/managing-generative-ai-features.html) and [Pricing](https://codecatalyst.aws/explore/pricing).
 + Move any issues where work is complete to **Done**.
 + If the project is no longer needed, delete the project.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

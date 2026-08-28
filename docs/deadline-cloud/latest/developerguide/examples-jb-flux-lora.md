@@ -8,3 +8,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/developerguide/exa
 The [flux2\_klein\_lora](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/flux2_klein_lora) job bundles use [diffusers](https://github.com/huggingface/diffusers) and [peft](https://github.com/huggingface/peft) to fine-tune Black Forest Labs' FLUX.2 Klein with LoRA, then generate images from text prompts with the trained adapter.
 
 For a complete walkthrough that covers prerequisites, training parameters, image generation, and cleanup, see [FLUX.2 Klein LoRA fine-tuning and image generation](flux2-klein-lora.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

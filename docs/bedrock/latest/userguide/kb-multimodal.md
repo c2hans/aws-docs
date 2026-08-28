@@ -84,3 +84,7 @@ The system returns references to complete files with timestamp metadata for audi
 + [Adding data sources and starting ingestion](kb-multimodal-add-data-source-and-ingest.md)
 + [Testing and querying multimodal knowledge bases](kb-multimodal-test-and-query.md)
 + [Troubleshooting multimodal knowledge bases](kb-multimodal-troubleshooting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

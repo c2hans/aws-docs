@@ -283,3 +283,7 @@ For this reason, we recommend that you remove encrypted secrets from the golden 
 <a name="when-secrets-are-a-hard-requirement.a43cb13e-9888-51eb-966b-de0c6031fd0d"></a>
 
 If your organization requires your production devices to be populated with secrets during manufacture, your production line needs a script or program that replicates the behavior of the secret manager component, to populate secrets on each production device. We don't recommend this approach because of its complexity and the possibility that your secrets might briefly be held in cleartext on your production programming station.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

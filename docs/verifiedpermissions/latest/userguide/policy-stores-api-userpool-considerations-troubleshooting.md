@@ -72,3 +72,7 @@ An API-linked policy store and the Lambda authorizer that it creates are a point
 When you add actions—paths and methods—to your API, you must update your policy store to be aware of the new actions. You must also update your Lambda authorizer to process authorization requests for the new actions. You can [start again with a new policy store](policy-stores-create.md) or you can update your existing policy store.
 
 To update your existing policy store, [locate your function](#policy-stores-api-userpool-considerations-troubleshooting-review-code). Examine the logic in the automatically-generated function and update it to process the new actions, attributes, or context. Then [edit your schema](schema-edit.md) to include the new actions and attributes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Verified Permissions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verifiedpermissions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

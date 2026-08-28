@@ -54,3 +54,7 @@ The following limitations apply when using Optimize CPU:
 + Optimize CPU offers different valid core settings depending on the instance class. For more details, see [DB instance classes that support Optimize CPU](SQLServer.Concepts.General.OptimizeCPU.Support.md).
 + Customizing the number of CPU cores is supported on instance sizes of `2xlarge` and above. With these instance types, the minimum number of vCPCU supported for Optimize CPU is 4.
 + Optimize CPU allows only 1 thread per core since Hyper-Threading is disabled for instances starting from 7th generation that support Optimize CPU.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

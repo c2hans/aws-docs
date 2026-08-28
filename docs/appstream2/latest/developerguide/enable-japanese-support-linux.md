@@ -159,3 +159,7 @@ To verify on image builder, first reboot the image builder by running the comman
 Create the image on the image builder. For more information, see [Tutorial: Create a Custom Linux-Based WorkSpaces Applications Image](tutorial-create-linux-image.md). Make sure to create default application settings, including the regional settings you just configured. For more information, see "Creating Default Application Settings for Your Users" in [Create Your Linux-Based Images](create-linux-based-images.md).
 
 All of the Linux fleet instances created from this image will have the same default time zone, locale, language, and input method settings that you configured for the image.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

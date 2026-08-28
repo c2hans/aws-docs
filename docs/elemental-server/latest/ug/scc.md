@@ -31,3 +31,7 @@ For example, your video file may have embedded timecodes that start at 00:05:00:
 **SMI, SRT, STL, TTML**: The start time in the captions file is slightly off. With these types of captions files, the start time for both the video file (containing video and audio), and the captions file is always 00:00:00.
 
 For example, the first instance of dialogue that requires captions might be at 00:06:15. But in the captions file, this time is marked as 00:06:18, and every other instance of captions is also off by 3 seconds. The solution is to subtract 3 seconds from the captions file. In this case, you would enter "-3" in the **Time delta** field.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

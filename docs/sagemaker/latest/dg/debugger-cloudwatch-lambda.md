@@ -26,3 +26,7 @@ You can run the following example notebooks, which are prepared for experimentin
 + [Access CloudWatch logs for Debugger rules and training jobs](debugger-cloudwatch-metric.md)
 + [Set up Debugger for automated training job termination using CloudWatch and Lambda](debugger-stop-training.md)
 + [Disable the CloudWatch Events rule to stop using the automated training job termination](debugger-disable-cw.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

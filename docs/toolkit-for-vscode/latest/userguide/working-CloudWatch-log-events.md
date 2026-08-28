@@ -44,3 +44,7 @@ With this option, you save to file only the log events that are currently displa
 You can also use the **Command Palette** to run **AWS Toolkit Save Current Log Stream Content**.
 
 1. Use the dialog box to select or create a download folder for the log file, and click **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

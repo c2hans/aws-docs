@@ -31,3 +31,7 @@ The following table compares ROSA with HCP and ROSA classic architecture models.
 | Cluster upgrades | The control plane and each machine pool can be upgraded separately. | The entire cluster must be upgraded at the same time. |
 | Minimum Amazon EC2 footprint | Two Amazon EC2 instances are needed to create a cluster. | Seven single-AZ or nine multi-AZ Amazon EC2 instances are needed to create a cluster. |
 |  AWS Regions  | For AWS Region availability, see [Red Hat OpenShift Service on AWS endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/rosa.html) in the * AWS General Reference Guide*. | For AWS Region availability, see [Red Hat OpenShift Service on AWS endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/rosa.html) in the * AWS General Reference Guide*. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Red Hat OpenShift Service on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rosa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

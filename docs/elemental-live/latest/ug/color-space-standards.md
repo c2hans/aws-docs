@@ -18,3 +18,7 @@ To read this table, find a color space in the first column, then read across to 
 | Dolby Vision 8.1. Both a Dolby Vision-compliant and an HDR10-compliant downstream player can handle the color space | rec.2020 | SMPTE ST 2084 (PQ) | Proprietary Dolby Vision metadata (RPU), on a per-frame basis, and SMPTE ST 2086 on a per-stream basis |
 
 Note that HDR10 and HLG use the same color space. They use different brightness functions and display metadata standards.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

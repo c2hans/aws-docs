@@ -36,3 +36,7 @@ Follow these best practices for successful Amazon ECS blue/green deployments:
 + Ensure your application can handle both blue and green service revisions running simultaneously.
 + Plan for sufficient cluster capacity to handle both service revisions during deployment.
 + Test your rollback procedures before implementing them in production.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

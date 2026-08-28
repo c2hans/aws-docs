@@ -12,3 +12,7 @@ The following table describes the important changes to the documentation since t
 | [Python and Bash operator support](#doc-history) | Added documentation for running custom Python code and shell scripts as workflow tasks using `PythonOperator` and `BashOperator`, including code packaging, pre-installed packages in the Amazon MWAA Serverless execution environment, and code versioning. Also added a code storage quota to the quotas page. | August 17, 2026 |
 | [Minor Updates](#doc-history) | Updated service quota to reflect the correct Max Xcom default value. | January 14, 2026 |
 | [Initial release](#doc-history) | Initial release of the Amazon MWAA Serverless service and user guide. | November 17, 2025 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

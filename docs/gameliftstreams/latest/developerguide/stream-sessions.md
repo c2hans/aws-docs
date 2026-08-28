@@ -107,3 +107,7 @@ If you need to force a stream session to terminate, you have the following optio
 If a client gets disconnected from a stream session without ending the session, it can reconnect to the session within the time specified by `ConnectionTimeoutSeconds` when the stream session was started. To reconnect to a session, you need the stream session's ID. For details, see [CreateStreamSessionConnection](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_CreateStreamSessionConnection.html) in the *Amazon GameLift Streams API Reference*. You can see an example of reconnecting to a stream session in the [React Starter Sample](https://github.com/aws-samples/sample-amazon-gamelift-streams-react-app).
 
 Reconnection is not available for stream sessions that are started by activating a stream URL. Because there is no reconnection, opening the stream URL again starts a completely new session and consumes another use from its `UsageLimit`. For more information, see [Share stream sessions with stream URLs](stream-urls.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

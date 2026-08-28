@@ -46,3 +46,7 @@ If you want to use OpenSearch Service APIs, you must install the latest version 
 <a name="opening-console"></a>
 
 Most of the console-oriented topics in this section start from the [OpenSearch Service console](https://console.aws.amazon.com/aos/home). If you aren't already signed in to your AWS account, sign in, then open the [OpenSearch Service console](https://console.aws.amazon.com/aos/home) and continue to the next section to continue getting started with OpenSearch Service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -245,3 +245,7 @@ Generally, you can use any data source that returns series with names representi
  It depends on the time range of your query. The important point is to know that the histogram bucketing that Grafana performs might be done on already aggregated and averaged data. For more accurate heatmaps, it's better to do the bucketing during metric collection or to store the data in OpenSearch, or in the other data source that supports doing histogram bucketing on the raw data.
 
  If you remove or lower the group by time (or raise maxDataPoints) in your query to return more data points, your heatmap is more accurate. But this can also put a heavy load on your CPU and memory. If the number of data points becomes unreasonably large, it might cause stalls and crashes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

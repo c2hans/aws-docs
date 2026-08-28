@@ -246,3 +246,7 @@ InputArtifacts:
 
 The following related resources can help you as you work with this action.
 + See [Tutorial: Deploy to Amazon EKS with CodePipeline](tutorials-eks-deploy.md) for a tutorial that demonstrates how to create an EKS cluster and Kubernetes manifest file to add the action to your pipeline.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

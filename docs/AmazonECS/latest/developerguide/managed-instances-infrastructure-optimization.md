@@ -44,3 +44,7 @@ Both infrastructure optimizations look for opportunities to terminate running in
 + If a new task is launched or an existing task is stopped on a particular instance during the waiting period, the timer resets from either the most recent task stop or new task creation time, and Amazon ECS Managed Instances re-evaluates for inefficiencies and takes actions if necessary after the new waiting period expires
 
 This configuration is optional. When not specified, ECS Managed Instances automatically determines optimal timing based on ECS Managed Instances default configuration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

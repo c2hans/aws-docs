@@ -37,3 +37,7 @@ The following are system-view topics and other documentation sections that are h
 + A transaction-lock conflict can be a possible source of query-performance issues. For information about transactions that currently hold locks on tables, see [SVV\_TRANSACTIONS](r_SVV_TRANSACTIONS.md).
 + [Identifying queries that are top candidates for tuning](https://docs.aws.amazon.com/redshift/latest/dg/diagnostic-queries-for-query-tuning.html#identify-queries-that-are-top-candidates-for-tuning) provides a troubleshooting query that helps you determine which recently-run queries were the most time consuming. This can help you focus your efforts on queries that need improvement.
 + If you want to explore query management further and understand how to manage query queues, [Workload management](cm-c-implementing-workload-management.md) shows how to do it. Workload management is an advanced feature and we recommend automated workload management in most cases.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ source_url: https://docs.aws.amazon.com/artifact/latest/ug/assurance-assistant-g
 | Citation | A reference to a specific statement in a verified AWS compliance document that supports an AI-generated response, allowing independent verification. |
 | IAM | AWS Identity and Access Management – the service used to manage permissions and access to AWS resources, including AWS Artifact features. |
 | Compliance inquiry | A record in Assurance Assistant that contains a submitted question or questionnaire and the AI-generated responses. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Artifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query artifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

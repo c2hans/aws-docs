@@ -12,3 +12,7 @@ The AWS Managed Services Maintenance Window (or Maintenance Window) performs mai
 *Your* maintenance window is when AMS will apply patching and you determine your maintenance window at onboarding. You can also agree to the proposed patching window provided in your patching service notification, or suggest a different window.
 
 For guidance on creating a maintenance window, see [Maintenance Window](https://docs.aws.amazon.com/managedservices/latest/onboardingguide/og-maintenance-window.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

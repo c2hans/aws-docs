@@ -51,3 +51,7 @@ When using Kraus operators, remember the following:
 + The total length does not exceed 22\*num\_qubits matrices. This means 4 matrices for 1 qubit and 16 for 2 qubits.
 + All supplied matrices are [completely positive trace preserving (CPTP)](https://github.com/aws/amazon-braket-sdk-python/blob/0d28a8fa89263daf5d88bc706e79200d8dc091a8/src/braket/circuits/quantum_operator_helpers.py#L94-L108).
 + The product of the Kraus operators with their transpose conjugates need to add up to an identity matrix.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

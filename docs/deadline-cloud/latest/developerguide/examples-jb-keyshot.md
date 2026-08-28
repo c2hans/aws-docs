@@ -19,3 +19,7 @@ The bundle expects one of the following:
 + All referenced files available through network storage or another method that isn't job attachments.
 
 To run this bundle, your queue needs KeyShot available through a queue environment. The [keyshot-2025 conda recipe](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/conda_recipes/keyshot-2025) in the samples repository builds a KeyShot conda package you can publish to your queue's S3 conda channel.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

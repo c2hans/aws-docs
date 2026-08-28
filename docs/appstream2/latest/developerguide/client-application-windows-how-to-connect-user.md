@@ -39,3 +39,7 @@ Follow these steps to connect to WorkSpaces Applications and start an applicatio
    + If your organization has enabled password authentication, enter your Active Directory domain password, and then choose **Password sign in**.
    + If your organization has enabled smart card authentication, select **Choose a smart card**, follow the instructions to choose your smart card certificate and enter your smart card PIN, and then choose **Smart card sign in**.
    + If your organization has enabled both authentication methods, either enter your Active Directory domain password and choose **Password sign in**, or select **Choose a smart card**, and follow the instructions to complete the smart card sign-in.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

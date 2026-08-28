@@ -56,3 +56,7 @@ Choose **Settings** to view some configuration options for your GraphQL API. Her
 
 **Note**
 The default authorization mode, `API_KEY`, uses an API key to test the application. This is the base authorization that's given to all newly created GraphQL APIs. We recommend that you use a different method for production. For the sake of the example in this section, we will only use the API key. For more information about the supported authorization methods, see [Security](security-authz.md#aws-appsync-security).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -76,3 +76,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
  The goal of the device lobby architecture is to enable device manufacturers or product teams to produce single-SKU IoT devices that can be easily and securely onboarded by service operators to any AWS account/Region by simply scanning a QR code.
 
  A reference implementation and quickstart guide for the Device Lobby architecture is available on the `aws-samples` Github repository, which includes a CloudFormation template, deployment scripts, admin console web app with QR reader, and sample device implementations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

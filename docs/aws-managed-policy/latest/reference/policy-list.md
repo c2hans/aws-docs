@@ -18,6 +18,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [AIDevOpsAgentActionsPolicy](AIDevOpsAgentActionsPolicy.md)
 + [AIDevOpsAgentFullAccess](AIDevOpsAgentFullAccess.md)
 + [AIDevOpsAgentReadOnlyAccess](AIDevOpsAgentReadOnlyAccess.md)
++ [AIDevOpsChannelAccessPolicy](AIDevOpsChannelAccessPolicy.md)
 + [AIDevOpsConstellationAccessPolicy](AIDevOpsConstellationAccessPolicy.md)
 + [AIDevOpsOperatorAppAccessPolicy](AIDevOpsOperatorAppAccessPolicy.md)
 + [AIDevOpsReleaseManagementVPCPolicy](AIDevOpsReleaseManagementVPCPolicy.md)
@@ -580,6 +581,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [AppRunnerNetworkingServiceRolePolicy](AppRunnerNetworkingServiceRolePolicy.md)
 + [AppRunnerServiceRolePolicy](AppRunnerServiceRolePolicy.md)
 + [AppStudioServiceRolePolicy](AppStudioServiceRolePolicy.md)
++ [AssuranceServiceRolePolicy](AssuranceServiceRolePolicy.md)
 + [AuroraDsqlServiceLinkedRolePolicy](AuroraDsqlServiceLinkedRolePolicy.md)
 + [AutoScalingConsoleFullAccess](AutoScalingConsoleFullAccess.md)
 + [AutoScalingConsoleReadOnlyAccess](AutoScalingConsoleReadOnlyAccess.md)
@@ -1589,3 +1591,7 @@ source_url: https://docs.aws.amazon.com/aws-managed-policy/latest/reference/poli
 + [WellArchitectedConsoleFullAccess](WellArchitectedConsoleFullAccess.md)
 + [WellArchitectedConsoleReadOnlyAccess](WellArchitectedConsoleReadOnlyAccess.md)
 + [WorkLinkServiceRolePolicy](WorkLinkServiceRolePolicy.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Policy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-managed-policy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,3 +43,7 @@ $ sudo dcv create-session test --user {{user}} --owner {{user}} --init {{init.sh
 ```
 
  Finally, you can launch a test application such for example `dcvgltest` (only in case you have the `nice-dcv-gltest` package installed) or `glxgears` to verify that an OpenGL or any other application is correctly working.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

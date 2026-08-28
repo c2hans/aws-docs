@@ -63,3 +63,7 @@ You can view and manage your online evaluation configurations through a visual i
 1. In the navigation pane, choose **Evaluation**.
 
 1. In the **Evaluation configurations** card, view the table that lists the evaluation configurations you have created.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

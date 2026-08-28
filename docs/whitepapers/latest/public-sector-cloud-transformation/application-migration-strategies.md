@@ -14,3 +14,7 @@ This is where you start to develop a [migration strategy](https://aws.amazon.com
 +  **Re-purchase** — Move from perpetual licenses to a software-as-a-service model. For example, move from a customer relationship management (CRM) to Salesforce.com, an HR system to Workday, or a content management system (CMS) to Drupal.
 +  **Retire** — Remove applications that are no longer needed. After you have completed discovery for your environment, ask who owns each application. As much as 10%-20% of an enterprise IT portfolio is no longer useful and can be turned off. These savings can boost your business case, direct your team’s attention to the applications people use, and reduce the number of applications you have to secure.
 +  **Retain (referred to as re-visit)** — Keep applications that are critical for the business but that require major refactoring before they can be migrated. You can revisit all applications that fall in this category at a later time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

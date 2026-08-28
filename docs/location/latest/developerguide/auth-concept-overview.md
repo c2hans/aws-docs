@@ -15,3 +15,7 @@ An AWS identity service that provides temporary, scoped credentials for both aut
 
 **AWS Identity and Access Management (IAM)**
 The AWS access management service for server-side applications, internal tools, and administrative operations. IAM provides full control over permissions using policies, roles, and temporary credentials via AWS STS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

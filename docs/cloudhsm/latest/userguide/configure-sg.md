@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/configure-sg.h
  The hsm2m.medium clusters introduces mTLS feature to restrict unauthorized users from connecting to the cluster. Unauthorized users will require a valid mTLS credentials to successfully connect to cluster before attempting zeroization.
 
  In the next step, you can [launch an Amazon EC2 instance](launch-client-instance.md) and connect it to your HSMs by [attaching the cluster security group](configure-sg-client-instance.md) to it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ The following Qwen models are available in Amazon Bedrock:
 | [Qwen3 Coder 480B A35B Instruct](model-card-qwen-qwen3-coder-480b-a35b-instruct.md) | Qwen3 Coder 480B A35B is Qwen's largest coding-specialized mixture-of-experts model with 480B total and 35B active parameters for software engineering tasks. |
 | [Qwen3 32B](model-card-qwen-qwen3-32b.md) | Qwen3 32B is Qwen's 32-billion parameter dense model with hybrid thinking modes for both fast responses and deep reasoning. |
 | [Qwen3 235B A22B 2507](model-card-qwen-qwen3-235b-a22b-2507.md) | Qwen3 235B A22B is Qwen's 235-billion parameter mixture-of-experts model with 22 billion active parameters, supporting text and code generation with a 128K context window. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

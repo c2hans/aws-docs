@@ -25,3 +25,7 @@ You can see how AWS SCT converts your source database schema to any supported ta
  If you use Babelfish for Aurora PostgreSQL as a target database platform, you can only create a database migration assessment report. For more information, see [Using the assessment report in the AWS Schema Conversion Tool](CHAP_AssessmentReport.md).
 
  If you use a virtual target database platform, you can save converted code to a file. For more information, see [Saving your converted schema to a file](CHAP_Converting.SaveAndApply.md#CHAP_Converting.Saving).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Schema Conversion Tool User Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query SchemaConversionTool` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

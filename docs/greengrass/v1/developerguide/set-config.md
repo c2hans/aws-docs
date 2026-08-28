@@ -469,3 +469,7 @@ Required by GPU devices. Contains [local resources](access-local-resources.md#lr
 **Note**
 The `/dev/shm` directory is an exception. It can be configured as a volume resource only.
 + For volume resources, specify `"type": "volume"`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

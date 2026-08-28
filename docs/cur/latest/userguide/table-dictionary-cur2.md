@@ -61,3 +61,7 @@ There are 125 possible columns in the CUR 2.0 table, grouped as follows:
 + **Split line item:** Data about split cost allocation for another line item.
 + **Capacity Reservation:** Data about capacity reservation that applies to the line item.
 + **Tags:** Data about user, account, cost category and resource tags.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

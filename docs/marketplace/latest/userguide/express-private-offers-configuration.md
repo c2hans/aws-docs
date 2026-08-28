@@ -111,3 +111,7 @@ Sellers may also choose to offer no discounts by setting the top-level maximum d
 <a name="express-private-offers-configuration-considerations"></a>
 
 Sellers should note several important limitations and considerations when configuring rate cards. The consumption component within a CCP product cannot be discounted through express private offer rate cards and maintains public offer pricing. Duration-based discounting is not supported in the initial release, and buyer-profile qualifications cannot discriminate based on protected characteristics or conflict with other offer configurations. When implementing complex dimension rules through buyer-profile qualifications, sellers should provide extremely specific natural language instructions to ensure accurate system interpretation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

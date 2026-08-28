@@ -21,3 +21,7 @@ If an app block with WorkSpaces Applications packaging was created, but the appl
    + If the selected app block builder was not associated with an app block builder, then it will be associated with the one you select, and the streaming session will launch. The app block builder remains associated with this app block after the session ends.
 
 1. After the app block builder streaming session starts, follow the steps in [Step 2: Create the Application Package](appstream-app-blocks-create.md#appstream-app-blocks-create-step2) to create your application package (VHD) and activate the app block.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,3 +50,7 @@ You can enable step-by-step Guides within Connect Customer chats to create inter
 
 **Note**
 You can also use Guides in chat with a custom build communications widget. For more information about adding step-by-step guides into your custom communications widget, see the [Connect Customer chat interface](https://github.com/amazon-connect/amazon-connect-chat-interface) on Github.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

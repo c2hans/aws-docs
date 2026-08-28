@@ -114,3 +114,7 @@ provider: efa;ofi_rxd
 <a name="your-algorithms-training-efa-run"></a>
 
  Once you’ve created an EFA-enabled container, you can run a training job with EFA using a SageMaker AI ModelTrainer the same way as you would with any other Docker image. For more information on registering your container and using it for training, see [Adapting Your Own Training Container](https://docs.aws.amazon.com/sagemaker/latest/dg/adapt-training-container.html#byoc-training-step5).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -565,3 +565,7 @@ After you complete the tutorial, you might want to explore the following topics:
 + Review [Mapping AWS Batch service job status to SageMaker AI status](service-job-status.md) to understand job state transitions.
 + Visit the [SageMaker AI Python SDK documentation](https://sagemaker.readthedocs.io/en/stable/) for more feature-rich ways to create and submit SageMaker Training jobs using Python.
 + Explore [SageMaker example notebooks](https://github.com/aws/amazon-sagemaker-examples) for more complex machine learning workflows.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

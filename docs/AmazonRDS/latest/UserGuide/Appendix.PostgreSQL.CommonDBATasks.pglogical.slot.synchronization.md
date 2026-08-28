@@ -35,3 +35,7 @@ By enabling slot synchronization, all of the failover logical replication slots 
 + `sync_replication_slots` must be `1` to enable automatic synchronization
 
 With a failover-enabled subscription slot and the above parameter values, when a standby is promoted, the subscriber can alter its subscription to this newly promoted instance and continue logical replication seamlessly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

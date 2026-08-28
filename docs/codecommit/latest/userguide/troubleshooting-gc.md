@@ -36,3 +36,7 @@ Save the file, and then open a new command line or terminal session before you a
 You may also have multiple credential helpers or managers set up on your computer, and your system might be defaulting to another configuration. To reset which credential helper is used as the default, you can use the **--system** option instead of **--global** or **--local** when running the **git config** command.
 
 For more information, see [For HTTPS users using Git credentials](setting-up-gc.md) and [Credential Storage](https://git-scm.com/book/en/v2/Git-Tools-Credential-Storage) in the Git documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

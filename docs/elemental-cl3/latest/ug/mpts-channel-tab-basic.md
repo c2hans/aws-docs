@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/elemental-cl3/latest/ug/mpts-channel-tab
 | Service Name, Provider Name | Enter this information if the source program doesn't include it. Or leave the field empty to use the information from the source program.Or leave the field empty if you don't want this program to appear in the SDT for the MPTS. |
 | Quality Priority Offset | Complete this field in one or more programs to assign relative priorities to the programs. |
 | **Min and Max Bitrate** | Typically leave these fields empty. Elemental Statmux will assign values for all the programs when you save the MPTS.<br /> |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

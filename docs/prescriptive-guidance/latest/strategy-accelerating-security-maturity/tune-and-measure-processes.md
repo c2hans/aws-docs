@@ -23,3 +23,7 @@ In your organization, use an agile approach that helps your organization keep up
 + To support continuous operations, where possible, align processes for cloud-based and on-premises environments.
 + To help individuals drill down and focus on one area, provide focused training instead of broad training.
 + Encourage people to think big, investigate "what ifs," and create backlogs (such as roadmaps or gaps).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

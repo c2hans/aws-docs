@@ -89,3 +89,7 @@ The following AWS CLI example creates a flow log that captures all traffic for t
 ```
 aws ec2 create-flow-logs --resource-type {{VPC}} --resource-ids {{vpc-00112233344556677}} --traffic-type ALL --log-destination-type {{s3}} --log-destination arn:aws:s3:::{{flow-log-bucket}}/{{custom-flow-logs}}/ --log-format '${version} ${vpc-id} ${subnet-id} ${instance-id} ${srcaddr} ${dstaddr} ${srcport} ${dstport} ${protocol} ${tcp-flags} ${type} ${pkt-srcaddr} ${pkt-dstaddr}'
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

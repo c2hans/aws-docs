@@ -57,3 +57,7 @@ The following table describes the documentation for this release of the AWS Well
 | [Updated functionality](#document-revisions) | This release supports upgrading the version of the framework used for a workload review. | May 1, 2019 |
 | [Updated functionality](#document-revisions) | This release adds the ability to specify non-AWS Regions when defining a workload. | February 14, 2019 |
 | [AWS Well-Architected Tool general availability](#document-revisions) | This release introduces the AWS Well-Architected Tool. | November 29, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

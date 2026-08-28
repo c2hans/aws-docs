@@ -35,3 +35,7 @@ Volumes are available in different price or performance characteristics based on
 <a name="kdb-volumes-consideration"></a>
 + When you delete a cluster, the data remains on the volume. If you don’t want this delete data before deleting the cluster.
 + You can access data mounted on a volume from within a cluster from the path `/opt/kx/app/shared/$VOLUME_NAME/$CLUSTER_NAME`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

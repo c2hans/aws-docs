@@ -258,3 +258,7 @@ The following example IAM policy grants permissions to the `cloudformation:GetHo
 
 **Note**
 You can configure Hooks to encrypt detailed invocation results stored in the cloud with your own AWS KMS keys. For information about how to set up the key policy and IAM permissions that you need when you use a customer managed key for encryption, see [AWS KMS key policy and permissions for encrypting CloudFormation Hooks results at rest](hooks-kms-key-policy.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -56,3 +56,7 @@ Macie automates discovery and reporting of sensitive data, such as personally id
 <a name="macie-2-remediation"></a>
 
 To create and configure automated sensitive data discovery jobs to analyze objects in S3 buckets, see [Configuring automated sensitive data discovery for your account](https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-account-manage.html) in the *Amazon Macie User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

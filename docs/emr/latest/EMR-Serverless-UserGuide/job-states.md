@@ -20,3 +20,7 @@ Job runs can have the following states:
 | Success | The job run has completed successfully. |
 | Cancelling | The CancelJobRun API has requested job run cancellation, or the job run has timed out. EMR Serverless is trying to cancel the job in the application and release the resources. |
 | Cancelled | The job run was cancelled successfully, and the resources that it used have been released. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

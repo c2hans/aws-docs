@@ -27,3 +27,7 @@ You can manage your AWS resources in a Local Zone using the following options:
 <a name="local-zones-pricing"></a>
 
 There's no additional charge for enabling Local Zones. You pay only for the resources that you deploy in your Local Zones. AWS resources in Local Zones have different prices than they do in parent AWS Regions. For more information, see [AWS Local Zones pricing](https://aws.amazon.com/about-aws/global-infrastructure/localzones/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Local Zones. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query local-zones` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

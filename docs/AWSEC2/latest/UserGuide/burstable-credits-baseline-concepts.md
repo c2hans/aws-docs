@@ -195,3 +195,7 @@ A `t3.large` instance, with 2 vCPUs, earns 36 credits per hour, resulting in a b
 The following graph provides an example of a `t3.large` with an average CPU utilization below the baseline.
 
 ![A graph of a t3.large instance with an average CPU utilization below baseline.](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/images/baseline-utilization.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

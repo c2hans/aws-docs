@@ -210,3 +210,7 @@ This section describes in detail the inputs, outputs, and processing of the Dire
 1. The Direct KMS Provider returns the output to the item encryptor.
 
 1. The item encryptor uses the signing key to verify the item. If it succeeds, it uses the symmetric encryption key to decrypt the encrypted attribute values. These operations use the encryption and signing algorithms specified in the actual material description. The item encryptor removes the plaintext keys from memory as soon as possible.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

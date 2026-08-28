@@ -91,3 +91,7 @@ Only the [Amazon Chime SDK Voice](https://docs.aws.amazon.com/chime-sdk/latest/A
 If you use the `Chime` namespace to create resources such as Voice Connectors and SIP media application, you can only do so in `us-east-1` and `us-west-2`, and you must use the `us-east-1` endpoint.
 
 In contrast, the `ChimeSDKVoice` namespace allows resource creation in all supported Regions, not just `us-east-1` and `us-west-2`. For more information about regional coverage, refer to [Available AWS Regions for the Amazon Chime SDK](sdk-available-regions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

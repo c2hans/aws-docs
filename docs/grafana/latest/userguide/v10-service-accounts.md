@@ -151,3 +151,7 @@ Ensure you have permission to create and edit service accounts. By default, the 
 1. Select the service account to which you want to assign a role. As an alternative, find the service account in the list view.
 
 1. Assign a role using the role picker to update.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

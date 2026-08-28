@@ -15,3 +15,7 @@ Before you launch the product, review the [cost](plan-your-deployment.md#plan-yo
 + [Create external resources](create-external-resources.md)
 + [Step 1: Launch the product](launch-the-product.md)
 + [Step 2: Sign in for the first time](first-sign-in.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

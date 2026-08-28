@@ -33,3 +33,7 @@ New users will no longer be prompted to enter a phone number when onboarding on 
 | Final release | Final notes with Replicated build number | September 25, 2023 |
 | Infrastructure update | Updates to address vulnerability scan results | September 25, 2023 |
 | Initial release | Initial release of September release notes | September 13, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

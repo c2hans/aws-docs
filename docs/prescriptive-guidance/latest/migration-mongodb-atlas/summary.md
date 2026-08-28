@@ -25,3 +25,7 @@ The following provides a summary of the MongoDB Atlas on AWS migration environme
 | Benchmarks | See [MongoDB Benchmark](https://www.mongodb.com/scale/mongodb-benchmark) on the MongoDB website. |
 | Compliance | Compliance certifications | + Health Insurance Portability and Accountability Act (HIPAA)<br />+ General Data Protection Regulation (GDPR)<br />+ System and Organization Controls (SOC)<br />+ EU-US Privacy Shield<br />+ ISO/IEC 27001:2013<br />+ Payment Card Industry Data Security Standard (PCI DSS)For details, see [AWS Compliance Programs](https://aws.amazon.com/compliance/programs/) on the AWS website and [MongoDB Trust Center](https://www.mongodb.com/cloud/trust) on the MongoDB website. |
 | Limitations | System limitations (minimum/maximum requirements) | See [Atlas Service Limits](https://www.mongodb.com/docs/atlas/reference/atlas-limits/) on the MongoDB website. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

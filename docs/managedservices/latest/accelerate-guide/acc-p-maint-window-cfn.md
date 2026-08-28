@@ -22,3 +22,7 @@ To create an AMS Accelerate patch maintenance window using AWS CloudFormation, f
    The stack may take up to a minute to create. Once the stack is created successfully, your patch maintenance window runs at the specified time. You can make changes to your patch maintenance window by creating and executing a CloudFormation change set (recommended) (for details on doing this, see [Creating stacks using changesets](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-create-stacks-changesets.html)), or by updating the patch maintenance window on the Systems Manager **Maintenance window** console ([https://console.aws.amazon.com/systems-manager/maintenance-windows](https://console.aws.amazon.com/systems-manager/maintenance-windows)).
 
 [![AWS Videos](http://img.youtube.com/vi/6fSfFeFn6Vc/0.jpg)](http://www.youtube.com/watch?v=6fSfFeFn6Vc)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

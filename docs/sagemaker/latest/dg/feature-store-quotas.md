@@ -43,3 +43,7 @@ For information about service quotas and how to request a quota increase, see [A
 +  **Event Time Features:** All feature groups have an event time feature with nanosecond precision. Any event time with lower than nanosecond precision will lead to backwards incompatibility. The feature can have a feature type of either String or Fractional.
   + A string event time is accepted in ISO-8601 format, in UTC time, conforming to the pattern(s): [yyyy-MM-dd'T'HH:mm:ssZ, yyyy-MM-dd'T'HH:mm:ss.SSSSSSSSSZ].
   + A fractional event time value is accepted as seconds from unix epoch. Event times must be in the range of [0000-01-01T00:00:00.000000000Z, 9999-12-31T23:59:59.999999999Z]. For feature groups in the `Iceberg` table format, you can only use String type for the event time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

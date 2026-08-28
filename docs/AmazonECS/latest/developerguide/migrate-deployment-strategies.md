@@ -29,3 +29,7 @@ Follow these best practices when migrating between deployment strategies:
 + **Monitor during transition**: Closely monitor your service during and after the migration to ensure it continues to operate correctly.
 + **Update documentation**: Update your deployment documentation to reflect the new deployment strategy.
 + **Consider traffic impact**: Understand how the update might impact traffic to your service and plan accordingly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -61,3 +61,7 @@ When your app is closed, for example, by closing the tab in the agent workspace,
 ```
 
 If you see these, then your app correctly integrates with the *Connect Customer Amazon Connect SDK* and the [The create event in Connect Customer agent workspace](integrating-with-agent-workspace-lifecycle-events-create.md) / [The destroy event in Connect Customer agent workspace](integrating-with-agent-workspace-lifecycle-events-destroy.md)destroy lifecycle events.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer Agent Workspace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agentworkspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

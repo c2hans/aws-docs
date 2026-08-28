@@ -64,3 +64,7 @@ The `s3:PutAccessPointPolicy` permission is required to create an optional acces
 After you attach an S3 access point to an Amazon FSx volume, all existing operations against the volume will continue to work as before. Restrictions that you include in an access point policy apply only to requests made through that access point. For more information, see [Configuring IAM policies for using access points](https://docs.aws.amazon.com/AmazonS3/latest/userguide/access-points-policies.html) in the *Amazon Simple Storage Service User Guide*.
 
 You can configure an access point policy when you create an access point attached to an FSx for ONTAP volume using the Amazon FSx console. To add, modify, or delete an access point policy on an existing S3 access point, you can use the S3 console, CLI, or API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

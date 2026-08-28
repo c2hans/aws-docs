@@ -15,3 +15,7 @@ Zendesk is a cloud-based help desk management solution offering customizable too
 + [Reading from Zendesk entities](zendesk-reading-from-entities.md)
 + [Zendesk connection options](zendesk-connection-options.md)
 + [Limitations](zendesk-limitations.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

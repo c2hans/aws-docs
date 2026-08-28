@@ -62,3 +62,7 @@ As with SQL Server, Aurora PostgreSQL does have the concept of an instance hosti
 Database options are related to the cluster-level parameters which are managed by the AWS Cluster Parameter Groups. You can find some SQL Server equivalent parameters at the instance level in the AWS Database Parameter Group.
 
 Datable options are being compared to AWS Database Parameter Group and Server Options are being compared to AWS Cluster Parameter Group. For more information, see [Server Options](chap-sql-server-aurora-pg.configuration.serveroptions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

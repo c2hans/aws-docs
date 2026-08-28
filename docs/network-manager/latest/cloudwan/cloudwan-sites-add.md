@@ -32,3 +32,7 @@ A site represents the physical location of your network, using location informat
 1. Choose **Create site**.
 
    Sites are created immediately and can be viewed on the global network dashboard. For more information on viewing sites on your global network dashboard, see [Access AWS Cloud WAN global network dashboards](cloudwan-visualize-networks-global.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

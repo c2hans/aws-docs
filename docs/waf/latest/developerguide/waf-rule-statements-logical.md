@@ -27,3 +27,7 @@ This table describes the logical rule statements and provides guidelines for cal
 | [AND logic](waf-rule-statement-type-and.md) | Combines nested statements with AND logic. | Based on nested statements |
 | [NOT logic](waf-rule-statement-type-not.md) | Negates the results of a nested statement. | Based on nested statement |
 | [OR logic](waf-rule-statement-type-or.md) | Combines nested statements with OR logic. | Based on nested statements |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -64,3 +64,7 @@ A partial workaround is to use encapsulating views as an abstraction layer for a
 Synonyms are often used in conjunction with Database Links, which are not supported by Aurora MySQL.
 
 For more information, see [MySQL Fully-Qualified Table Names](chap-oracle-aurora-mysql.special.dblinks.md), [Views](chap-oracle-aurora-mysql.special.views.md), [User-Defined Functions](chap-oracle-aurora-mysql.sql.udfs.md), and [Stored Procedures](chap-oracle-aurora-mysql.sql.stored.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

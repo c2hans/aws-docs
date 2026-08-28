@@ -157,3 +157,7 @@ Both services provide dashboards for visualizing attack patterns and traffic tre
    [Explore the workshop](https://catalog.us-east-1.prod.workshops.aws/workshops/6396761b-6d1f-4a4d-abf1-ffb69dee6995/en-US)
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Decision Guides. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query decision-guides` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

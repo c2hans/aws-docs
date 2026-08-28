@@ -25,7 +25,6 @@ The following differences apply to Amazon Route 53:
 + The customer managed key that you use with DNSSEC signing must be in AWS GovCloud (US-West).
 + The CloudWatch Logs log group for query logging must be in AWS GovCloud (US-West).
 +  CloudWatch metrics like DNSQueries can be found in AWS GovCloud (US-West).
-+ IP-based routing type is not available.
 + Route 53 [Traffic Flow](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/traffic-flow.html) is supported as follows:
   + You can create traffic policies using all routing policy types.
   + You can’t use CloudFront distributions as alias targets in traffic policies.
@@ -34,6 +33,7 @@ The following differences apply to Amazon Route 53:
  **Private Hosted Zones**
 + You can create private hosted zones in the AWS GovCloud (US). In general, the functionality is the same as for private hosted zones in the commercial version of Route 53.
 + Latency based, geolocation, and geoproximity routing types are not available in private hosted zones.
++ You cannot use IP-based routing policy for records in a private hosted zone.
 +  Route 53 Resolver delegation is not available.
 
  **Health Checking**
@@ -60,3 +60,7 @@ The control plane for Route 53 in the AWS GovCloud (US) is in the AWS GovCloud 
 
 For AWS Services architected within the AWS GovCloud (US) Regions, the following list explains how certain components of data may leave the AWS GovCloud (US) Regions in the normal course of the service offerings. The list can be used as a guide to help meet applicable customer compliance obligations. Data not included in the following list remains within the AWS GovCloud (US) Regions.
 + This service can generate metadata from customer-defined configurations. AWS suggests customers do not enter export-controlled information in console fields, descriptions, resource names, and tagging information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

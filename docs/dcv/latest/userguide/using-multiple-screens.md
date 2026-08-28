@@ -27,3 +27,7 @@ Make sure to follow the [prerequisites guide](https://docs.aws.amazon.com/dcv/la
 + [Extending full-screen across all monitors](full-screen-all-monitors.md)
 + [Extending full-screen across selected monitors](full-screen-selected-monitors.md)
 + [Exiting full screen on multiple monitors](exiting-full-screen-multiple-monitors.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -124,3 +124,7 @@ The following table displays service limits for EMR Studio.
 | Subnets | Maximum of 5 associated with each EMR Studio |
 | IAM Identity Center Groups | Maximum of 5 assigned to each EMR Studio |
 | IAM Identity Center Users | Maximum of 100 assigned to each EMR Studio |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

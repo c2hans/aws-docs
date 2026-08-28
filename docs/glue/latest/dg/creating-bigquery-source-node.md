@@ -40,3 +40,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/creating-bigquery-source-
    If you chose a query, you must provide the following **Custom Google BigQuery properties**:
    + Set `viewsEnabled` to true.
    + Set `materializationDataset` to a dataset. The GCP principal authenticated by the credentials provided through the AWS Glue connection must be able to create tables in this dataset.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

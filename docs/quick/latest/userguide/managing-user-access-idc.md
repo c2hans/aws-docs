@@ -87,3 +87,7 @@ The five-minute time period allows changes to propagate throughout the system.
 If a user is deleted from IAM Identity Center or Active Directory or is removed from a group that's associated with a role in Quick, the user no longer exists in Quick. You do not need to delete the user in the Quick application. The deleted user will appear in the **Inactive users** list in Quick until the first day of the following month. After that date passes, the user is automatically removed from the list.
 
 When a user is removed from your identity provider, the user's assets are not transferred or deleted automatically. Administrators can review deleted users and transfer their assets to another user. To transfer assets that no longer have an owner, see [Amazon Quick asset management](manage-qs-assets.md). For the full model of how user removal affects assets and data, see [User lifecycle and data handling in Amazon Quick](user-lifecycle-data-handling.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,3 +31,7 @@ You can use the suggestions from the investigation pane to help accelerate your 
 1. (Optional) To add additional telemetry sources or collaborate on the investigation with others, choose **Get started** in the information box at the bottom of the **Investigate** tab. You'll be guided through the investigation group configuration process. For more information, see [Configure CloudWatch investigations](Investigations-GetStarted.md)
 **Important**
 You must have the appropriate IAM permissions to create or access investigation groups. Users with read-only permissions will see information about requesting additional permissions from their administrators.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

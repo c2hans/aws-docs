@@ -48,3 +48,7 @@ This opens the AWS KMS dashboard. For more information about creating a KMS key,
 <a name="key-gateway-gg"></a>
 
 SiteWise Edge gateways run on AWS IoT Greengrass, and AWS IoT Greengrass core devices use public and private keys to authenticate with the AWS Cloud and encrypt local secrets, such as OPC UA authentication secrets. For more information, see [Key management](https://docs.aws.amazon.com/greengrass/v1/developerguide/key-management.html) in the *AWS IoT Greengrass Version 1 Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

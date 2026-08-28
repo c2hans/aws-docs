@@ -27,3 +27,7 @@ AWS App Runner added support for building and running web applications with the 
 +  Go 1
 
   For more information about using the platform and the runtime release information, see [Using the Go platform](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-go1.html) in the *AWS App Runner Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

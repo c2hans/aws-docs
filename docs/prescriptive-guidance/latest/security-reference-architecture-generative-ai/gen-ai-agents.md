@@ -209,3 +209,7 @@ Use AWS Key Management Service (AWS KMS) customer managed keys to encrypt the fo
 + [Sessions](https://docs.aws.amazon.com/bedrock/latest/userguide/encryption-kb.html#encryption-kb-runtime) in which you generate responses from querying a knowledge base
 + [Model invocation logs](https://docs.aws.amazon.com/bedrock/latest/userguide/model-invocation-logging.html#setup-s3-destination) in Amazon S3
 + Amazon S3 bucket that hosts the [data sources](https://docs.aws.amazon.com/AmazonS3/latest/userguide/UsingEncryption.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

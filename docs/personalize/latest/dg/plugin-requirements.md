@@ -18,3 +18,7 @@ Before you start personalizing results from OpenSearch, note the following guide
 + By default, the plugin assumes that the `_id` for an indexed document in OpenSearch matches the itemId in your Amazon Personalize data. If your OpenSearch data uses a different field that corresponds with your Amazon Personalize itemIds, you must specify the name of the field when you configure the plugin.
 + The userId that you use for a user making a query must match their userId in the data you import into Amazon Personalize.
 + The plugin re-ranks only the top 500 search results from OpenSearch. The remaining items are not re-ranked and end up at the bottom of the list.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ MV-HEVC is a Pro tier add-on feature. For information about feature tiers, see [
 + [Job settings to create an MV-HEVC output](setting-up-mv-hevc-job.md)
 + [MV-HEVC output requirements and limitations](mv-hevc-requirements.md)
 + [Supported encoding settings for MV-HEVC](mv-hevc-supported-encoding.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

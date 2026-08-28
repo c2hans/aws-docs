@@ -36,3 +36,7 @@ All of the italicized keywords are business and technical group structures that 
 Setting up governance mechanisms helps make tagging consistent and programmable across all AWS resources:
 + *Reactive governance* means finding resources that are not properly tagged. You can use tools such as the [Resource Groups Tagging API](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/overview.html), [AWS Config rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-rules.html), and custom scripts.
 + *Proactive governance* means that users are not allowed to create any untagged resources. You can use tools such as [AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/Welcome.html), [AWS Service Catalog](https://docs.aws.amazon.com/servicecatalog/latest/userguide/end-user-console.html), [tag policies](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_tag-policies.html) in AWS Organizations, or IAM resource-level permissions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

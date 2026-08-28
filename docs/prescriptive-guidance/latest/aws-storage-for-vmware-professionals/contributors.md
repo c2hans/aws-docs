@@ -15,3 +15,7 @@ Contributors to this guide include:
 ## Reviewer
 <a name="reviewer.dc03fb5a-a631-540b-bccd-6a3a842e943f"></a>
 + Himanshu Gupta, Delivery Consultant, AWS
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -130,3 +130,7 @@ The following tables contain contact analytics data.
 |  earned\_points  |  bigint  |  Yes  |  The total points earned for a question, section, or form.  |
 |  max\_base\_point  |  bigint  |  Yes  |  The maximum base points that can be earned for a question, section, or form, excluding bonus points.  |
 |  performance\_category  |  string  |  Yes  |  The performance category for a question, section, or form. Valid values: NEEDS\_IMPROVEMENT \| EXCEEDS\_EXPECTATION.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,6 +26,7 @@ The following table describes the quotas for AWS DevOps Agent.
 | Custom agent invocation timeout | 1 hour | No | The maximum duration for a single custom agent invocation. |
 | Memory stores per agent space | 50 | No | The maximum number of memory stores that can exist in a single agent space. |
 | Memories per memory store | 200 | No | The maximum number of individual memory files within a single memory store. |
+| Individual memory content size | 100 KB | No | The maximum size of a single memory file. |
 
 ## Requesting a quota increase
 <a name="requesting-a-quota-increase"></a>
@@ -33,3 +34,7 @@ The following table describes the quotas for AWS DevOps Agent.
 You can request a quota increase by using one of the following options:
 + **From the AWS Management Console** – Open the [Service Quotas console](https://console.aws.amazon.com/servicequotas/). In the navigation pane, choose **AWS services**. Select **DevOps Agent**, select a quota, and follow the directions to request a quota increase. For more information, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
 + **From the AWS CLI** – Use the [request-service-quota-increase](https://docs.aws.amazon.com/cli/latest/reference/service-quotas/request-service-quota-increase.html) AWS CLI command. For more information, see [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html) in the *Service Quotas User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

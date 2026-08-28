@@ -5,8 +5,8 @@ source_url: https://docs.aws.amazon.com/codedeploy/latest/userguide/codedeploy-a
 # Working with the CodeDeploy agent
 <a name="codedeploy-agent"></a>
 
-**Important**
-Version 2.0.0 of the CodeDeploy agent is being rolled out across AWS Regions and might not be available in all Regions yet. It is an opt-in upgrade. To upgrade to version 2.0.0, see [Install the CodeDeploy agent](codedeploy-agent-operations-install.md).
+**Version 2.0.x rollout status**
+Version 2.0.x of the CodeDeploy agent is being rolled out across AWS Regions and might not be available in all Regions yet. Version 2.0.0 is an opt-in upgrade. In order to upgrade to version 2.0.x from any older revisions, see [Install the CodeDeploy agent](codedeploy-agent-operations-install.md).
 
  The AWS CodeDeploy agent is a software package that, when installed and configured on an instance, makes it possible for that instance to be used in CodeDeploy deployments.
 
@@ -47,7 +47,7 @@ The CodeDeploy agent has been tested on the following Amazon EC2 AMI operating s
 + Windows Server 2016, 2019, 2022, 2025 (x86\_64)
 
 **Note**
-The following platforms have been tested only on the CodeDeploy agent version 2.0.0: Windows Server 2025, RHEL 10, Oracle Linux 8, 9, 10, Rocky Linux 9, 10, CentOS Stream 9, 10, SLES 15, Debian 11, 12, 13, and Ubuntu Server 24.04, 25.04, 26.04.
+The following platforms have been tested on the CodeDeploy agent version 2.0.x and later only: Windows Server 2025, RHEL 10, Oracle Linux 8, 9, 10, Rocky Linux 9, 10, CentOS Stream 9, 10, SLES 15, Debian 11, 12, 13, and Ubuntu Server 24.04, 25.04, 26.04.
 
 The CodeDeploy agent is available as open source for you to adapt to your needs. It can be used with other Amazon EC2 AMI operating systems. For more information, go to the [CodeDeploy agent](https://github.com/aws/aws-codedeploy-agent) repository in GitHub.
 
@@ -65,7 +65,7 @@ The CodeDeploy agent has been tested on the following on-premises operating syst
 + Ubuntu Server 16.04 LTS, 18.04 LTS, 20.04 LTS, 22.04 LTS, 24.04 LTS, 25.04, 26.04 LTS (x86\_64, aarch64)
 
 **Note**
-The following platforms have been tested only on the CodeDeploy agent version 2.0.0: Windows Server 2025, RHEL 10, Oracle Linux 8, 9, 10, Rocky Linux 9, 10, CentOS Stream 9, 10, SLES 15, Debian 11, 12, 13, and Ubuntu Server 24.04, 25.04, 26.04.
+The following platforms have been tested on the CodeDeploy agent version 2.0.x and later only: Windows Server 2025, RHEL 10, Oracle Linux 8, 9, 10, Rocky Linux 9, 10, CentOS Stream 9, 10, SLES 15, Debian 11, 12, 13, and Ubuntu Server 24.04, 25.04, 26.04.
 
 The CodeDeploy agent is available as open source for you to adapt to your needs. It can be used with other on-premises instance operating systems. For more information, go to the [CodeDeploy agent](https://github.com/aws/aws-codedeploy-agent) repository in GitHub.
 
@@ -84,13 +84,14 @@ Your instances must be running a supported version of the CodeDeploy agent. The 
 **Note**
 We recommend using the latest version of the CodeDeploy agent. If you're having issues, update to the latest version before contacting AWS Support. For upgrade information, see [Update the CodeDeploy agent](codedeploy-agent-operations-update.md).
 
-**Important**
-Version 2.0.0 of the CodeDeploy agent is being rolled out across AWS Regions and might not be available in all Regions yet. It is an opt-in upgrade. To upgrade to version 2.0.0, see [Install the CodeDeploy agent](codedeploy-agent-operations-install.md).
+**Version 2.0.x rollout status**
+Version 2.0.x of the CodeDeploy agent is being rolled out across AWS Regions and might not be available in all Regions yet. Version 2.0.0 is an opt-in upgrade. In order to upgrade to version 2.0.x from any older revisions, see [Install the CodeDeploy agent](codedeploy-agent-operations-install.md).
 
 The following table lists all releases of the CodeDeploy agent and the features and enhancements included with each version.
 
 | Version | Release date | Details |
 | --- | --- | --- |
+| 2.0.1 | August 24, 2026 | **Fixed**: On Windows, AppSpec file paths that begin with a backslash (`\`) or with more than one separator (for example, `//my-folder`) are now resolved inside the revision, not at the root of the drive.<br />For examples of supported `source` values, see [AppSpec 'files' section (EC2/On-Premises deployments only)](reference-appspec-file-structure-files.md). |
 | 2.0.0 | July 15, 2026 | **Changed**: The CodeDeploy agent is now Rust-based and ships as a single self-contained native binary. The Ruby runtime dependency has been dropped. Ruby is no longer required to install or run the agent. The agent is behavior-compatible with version 1.8.x by default; existing configuration files, AppSpec handling, lifecycle-hook semantics, on-disk layout, and deployment outcomes are unchanged unless noted below.<br />**Added**: Expanded operating-system support, including Windows Server 2025, RHEL 10, and Ubuntu Server 26.04, as well as additional Linux distributions and ARM (aarch64) variants. For the full list of platforms tested with this version, see [Operating systems supported by the CodeDeploy agent](#codedeploy-agent-supported-operating-systems).<br />**Added**: A `codedeploy-agent update` command for on-demand agent self-update.<br />**Added**: A local command port. This is an optional TCP management interface that listens only on the loopback address (127.0.0.1) for querying agent status and injecting commands locally. It is disabled by default and is enabled with `enable_command_port`.<br />**Changed**: The local deployment command is now `codedeploy-agent deploy-local`. The `codedeploy-local` command remains available for backward compatibility. All command options are preserved, and local paths, Amazon S3 (`s3://`), and GitHub bundle sources are still supported.<br />**Changed**: On Linux, the agent is managed by a native systemd unit (`codedeploy-agent.service`); the SysV init.d script is no longer installed. Use `systemctl` to manage the agent.<br />**Changed (security)**: TLS certificate verification is always enabled, and core dumps are disabled by default.<br />**Added**: Optional hardening settings that you can enable to meet your own security requirements. Each setting is turned off by default, and you enable the ones you want individually. You can reject bundles that contain symbolic links, path traversal, or unsafe permissions; restrict the environment of lifecycle event hooks; and restrict the permissions of agent directories and log files. For the full list, see [CodeDeploy agent configuration reference](reference-agent-configuration.md).<br />**Changed**: The command-line install script is now written in Bash (previously Ruby). It requires either `curl` or `wget`.<br />**Changed**: The install script for version 2.0.x is published under the `latestv2/` prefix in the regional `aws-codedeploy-{{region-identifier}}` buckets. The `latest/` prefix continues to serve the version 1.8.x install script.<br />**Changed**: AWS now publishes version 2.0.x as the `AWSCodeDeployAgentV2` Systems Manager Distributor package. The `AWSCodeDeployAgent` package continues to serve version 1.8.x.<br />**Removed**: The `ssl_verify_peer` configuration setting and the Ruby ProcessManager configuration keys.<br />**Important**: No automatic update path currently exists from version 1.8.x to 2.0.0. To upgrade to 2.0.0, install it with the `AWSCodeDeployAgentV2` Systems Manager Distributor package or run the regional `latestv2/install` script manually. For instructions, see [Install the CodeDeploy agent](codedeploy-agent-operations-install.md). |
 | 1.8.1 | February 3, 2026 | **Fixed**: S3 endpoint bugfix.<br />**Added**: Sectigo CA certificate to Windows CA list. |
 | 1.8.0 | July 31, 2025 | **Changed**: Upgraded the bundled Ruby to 3.2 in the CodeDeploy agent for Windows. |
@@ -243,3 +244,7 @@ The following is an example of the file and directory structure under the root d
 +  **deployment-logs** contains the following log files:
   +  **codedeploy-agent.yyyymmdd.log** files are created for each day there is a deployment. Each log file contains information about the day's deployments. These log files might be useful for debugging problems like a permissions issue. The log file is initially named `codedeploy-agent.log`. The next day, the date of its deployments is inserted into the file name. For example, if today is January 3, 2018, you can see information about all of today's deployments in `codedeploy-agent.log`. Tomorrow, on January 4, 2018, the log file is renamed `codedeploy-agent.20180103.log`.
   +  **codedeploy-agent-deployments.log** compiles the contents of `scripts.log` files for each deployment. The `scripts.log` files are located in the `logs` subfolder under each `Deployment ID` folder. The entries in this file are preceded by a deployment ID. For example, "`[d-ABCDEF123]LifecycleEvent - BeforeInstall`" might be written during a deployment with an ID of `d-ABCDEF123`. When `codedeploy-agent-deployments.log` reaches its maximum size, the CodeDeploy agent continues to write to it while deleting old content.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

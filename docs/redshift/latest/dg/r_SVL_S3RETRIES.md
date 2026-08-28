@@ -41,3 +41,7 @@ SELECT svl_s3retries.query, svl_s3retries.segment, svl_s3retries.node, svl_s3ret
 svl_s3retries.successful_fetches, svl_s3retries.file_size, btrim((svl_s3retries."location")::text) AS "location", btrim((svl_s3retries.message)::text)
 AS message FROM svl_s3retries;
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

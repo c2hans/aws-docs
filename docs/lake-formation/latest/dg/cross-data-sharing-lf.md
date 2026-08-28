@@ -14,3 +14,7 @@ When the data lake administrator of the recipient account accepts the AWS RAM sh
 However, the principals can't query the shared resources using Athena or Redshift Spectrum without a resource link. A resource link is an entity in the Data Catalog and is similar to a Linux-Symlink concept.
 
 The data lake administrator of the recipient account creates a resource link on the shared resource. The administrator grants `Describe` permissions on the resource link with the required permissions on the original shared resource to additional users. A user in recipient account can then use the resource link to query the shared resource using Athena and Redshift Spectrum. For more information about resource links, see [Creating resource links](creating-resource-links.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

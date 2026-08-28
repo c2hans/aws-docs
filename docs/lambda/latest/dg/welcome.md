@@ -36,3 +36,7 @@ While they share this foundation, they serve different use cases:
 | Scaling | Automatic – Lambda creates and destroys execution environments in response to traffic | Developer-controlled – you create, suspend, resume, and terminate MicroVMs through the API |
 | Lifecycle | Fully managed by Lambda | Developer-controlled; optional idle policies for automatic suspend-resume |
 | Pricing | Per-request \+ GB-seconds of execution time | Per-second of compute while running \+ snapshot storage while suspended |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

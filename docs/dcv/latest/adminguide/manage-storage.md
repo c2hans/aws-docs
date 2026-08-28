@@ -117,3 +117,7 @@ The `storage-root` value must be an absolute path on macOS.
 1. [Stop](manage-stop.md) and [restart](manage-start.md) the Amazon DCV server.
 
 1. Start the session and specify the `--storage-root` option. For more information, see [Starting Amazon DCV sessions](managing-sessions-start.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

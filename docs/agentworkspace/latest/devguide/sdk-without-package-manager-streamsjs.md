@@ -103,3 +103,7 @@ connect.core.initCCP(ccpContainer, {
 1. Instantiate SDK clients with `new AmazonConnectSDK.ContactClient(provider)`
 
 1. The `AppManagerPlugin` is only required if hosting Connect first-party apps
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer Agent Workspace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query agentworkspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

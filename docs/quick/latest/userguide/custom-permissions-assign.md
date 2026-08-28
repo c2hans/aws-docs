@@ -139,3 +139,7 @@ After you assign a custom permissions profile, you can verify which profile is a
 1. Quick displays the active profile name and the level at which it applies (user, role, or account).
 
 Use this feature to confirm that Deny by Default profiles are correctly applied and that precedence is working as expected.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

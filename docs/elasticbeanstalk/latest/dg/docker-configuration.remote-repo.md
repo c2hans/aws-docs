@@ -238,3 +238,7 @@ To enable Amazon ECR Public authentication, add the following permissions to you
 ------
 
 Once these permissions are attached to your instance profile, Elastic Beanstalk will automatically authenticate with Amazon ECR Public registries. You can reference Amazon ECR Public images using the standard `public.ecr.aws/{{registry-alias}}/{{repository-name:tag}}` format in your `Dockerrun.aws.json` file or Dockerfile.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

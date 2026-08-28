@@ -40,3 +40,7 @@ If you are implementing user authentication, you must also include three authori
 
 The request body contains XML content consisting of one `mpts_ids `element with the following.
 + Two `mpts_id` elements, each containing the ID of an MPTS output.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ For a complete list of AWS SAM CLI commands, see [AWS SAM CLI command referenc
 | **sam remote invoke** | Provides a way to interact with supported AWS resources in the AWS Cloud. |  + [Introduction to testing in the cloud with sam remote invoke](using-sam-cli-remote-invoke.md)<br />+ [sam remote invoke](sam-cli-command-reference-remote-invoke.md)  |
 | **sam remote test-event** | Provides a way to access and manage shareable test events for your AWS Lambda functions. |  + [Introduction to cloud testing with sam remote test-event](using-sam-cli-remote-test-event.md)<br />+ [sam remote test-event](sam-cli-command-reference-remote-test-event.md)  |
 | **sam sync** | Provides options to quickly sync local application changes to the AWS Cloud. |  + [Introduction to using sam sync to sync to AWS Cloud](using-sam-cli-sync.md)<br />+ [sam sync](sam-cli-command-reference-sam-sync.md)  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

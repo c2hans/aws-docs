@@ -18,3 +18,7 @@ AWS Managed Microsoft AD passwords expire after 42 days. For more information, s
 **Note**
 If the AD integration feature doesn't work as expected, the SSSD logs can provide useful diagnostic information for troubleshooting the issue. These logs are located in the `/var/log/sssd` directory on cluster nodes. By default, they're also stored in a cluster’s Amazon CloudWatch log group.
 For more information, see [Troubleshooting multi-user integration with Active Directory](troubleshooting-v3-multi-user.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

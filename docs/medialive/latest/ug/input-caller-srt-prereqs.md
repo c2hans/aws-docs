@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/medialive/latest/ug/input-caller-srt-pre
 1. If the content is encrypted, you must store the passphrase that the operator gave you. Someone in your organization must store the passphrase in a secret in AWS Secrets Manager. For more information, see [Create an AWS Secrets Manager secret](https://docs.aws.amazon.com/secretsmanager/latest/userguide/create_secret.html). Create a secret of type **Other type of secret**. The result of creating the secret is an ARN that looks like this:
 
    `arn:aws:secretsmanager:{{region}}:123456789012:secret:{{Sample-abcdef}}`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

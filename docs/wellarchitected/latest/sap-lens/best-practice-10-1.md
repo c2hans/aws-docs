@@ -38,3 +38,7 @@ Understand compliance or regulatory requirements for data residency and distance
 
  A full explanation of the terms can be found in the Well-Architected Framework [Reliability]: [Availability](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/availability.html). Additional information on reliability in SAP can be found in the whitepaper:
 +  AWS Documentation: [Architecture Guidance for Availability and Reliability of SAP on AWS](https://docs.aws.amazon.com/sap/latest/general/architecture-guidance-of-sap-on-aws.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

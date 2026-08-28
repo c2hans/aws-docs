@@ -168,3 +168,7 @@ In the table, the **Field** column indicates the name of the field on the Amazon
 | Sensitive data total count | `classificationDetails.result.\n`<br />`sensitiveData.detections.count` | The total number of occurrences of the type of sensitive data that was detected and produced the finding.<br />You can use this field to define a numeric range for a filter. |
 
 \* To specify multiple values for this field on the console, add a condition that uses the field and specifies a distinct value for the filter, and then repeat that step for each additional value. To do this with the API, use an array that lists the values to use for the filter.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

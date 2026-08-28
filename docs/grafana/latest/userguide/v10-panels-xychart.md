@@ -253,3 +253,7 @@ Choose from one of the following override options:
 + **Fields with values** – Select all fields returned by your defined reducer condition, such as **Min**, **Max**, **Count**, or **Total**.
 
 For more information, see [Configure field overrides](v10-panels-configure-overrides.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ We recommend you customize the following properties and leave the rest at defaul
 **Note**
 AMS occasionally releases features and fixes to keep AMS Resource Scheduler up to date in your account. When this happens, any customization that you make to the AMS Resource Scheduler stack via stack parameters are preserved.
 We strongly recommend against making any customization directly to any of the component resource of AMS Resource Scheduler. Doing so impacts Resource Scheduler functionality and AMS’s ability to keep it up to date.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

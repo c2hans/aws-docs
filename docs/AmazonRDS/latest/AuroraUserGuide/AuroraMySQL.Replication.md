@@ -86,3 +86,7 @@ The primary DB instance also records the `AuroraReplicaLagMaximum` and `AuroraRe
 If you need the most current value for Aurora Replica lag, you can check the `AuroraReplicaLag` metric in Amazon CloudWatch. The Aurora Replica lag is also recorded on each Aurora Replica of your Aurora MySQL DB cluster in the `information_schema.replica_host_status` table. For more information on this table, see [information\_schema.replica\_host\_status](AuroraMySQL.Reference.ISTables.md#AuroraMySQL.Reference.ISTables.replica_host_status).
 
 For more information on monitoring RDS instances and CloudWatch metrics, see [Monitoring metrics in an Amazon Aurora cluster](MonitoringAurora.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

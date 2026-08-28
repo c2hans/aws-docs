@@ -70,3 +70,7 @@ The following are the characteristics of this architecture and access approach:
 <a name="configuring-access.8c9624cb-468d-5096-954e-d3e58d9e6c94"></a>
 
 For instructions, see the [AWS IAM Identity Center Integration Guide for Amazon Quick](https://static.global.sso.amazonaws.com/app-b1262cec5a6d8194/instructions/index.htm). After you have configured IAM Identity Center as a trusted identity provider for the AWS account, create an IAM role that federated users can assume in order to access Quick. For instructions, see [Creating IAM roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create.html) in the IAM documentation. For more information about configuring the policies for Quick, see [Configuring IAM policies](configuring-iam-policies.md) in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -75,3 +75,7 @@ For more information about JVM heap sizes, see [Configuration](https://nightlies
 Buffer debloating can help applications with high backpressure. If your application experiences failed checkpoints/savepoints, enabling this feature could be useful. To do this, request a [support case](https://console.aws.amazon.com/support/home#/).
 
 For more information, see [The Buffer Debloating Mechanism](https://nightlies.apache.org/flink/flink-docs-release-1.15/docs/deployment/memory/network_mem_tuning/#the-buffer-debloating-mechanism) in the [Apache Flink documentation](https://nightlies.apache.org/flink/flink-docs-release-1.15/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed Service for Apache Flink. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-flink` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

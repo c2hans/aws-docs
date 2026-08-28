@@ -23,3 +23,7 @@ An [IAM role](id_roles.md) is an object in AWS Identity and Access Management (I
 The following resources can help you learn more about providing access to non-AWS workloads.
 + For more information about configuring IAM Roles Anywhere, see [What is AWS Identity and Access Management Roles Anywhere](https://docs.aws.amazon.com/rolesanywhere/latest/userguide/introduction.html) in the *IAM Roles Anywhere User Guide*.
 + To learn how to set up public key infrastructure (PKI) for IAM Roles Anywhere, see [IAM Roles Anywhere with an external certificate authority](https://aws.amazon.com/blogs/) in the *AWS Security Blog*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

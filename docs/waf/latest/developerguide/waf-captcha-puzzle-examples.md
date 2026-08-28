@@ -20,3 +20,7 @@ An audio puzzle provides background noise overlaid with spoken instructions abou
 The following screenshot shows the display for the audio puzzle choice.
 
 ![A screen contains the title "Solve the puzzle" and the text "Click play to listen to instructions". Below the text is an image that shows a Play button. Below the image is the text "Keyboard audio toggle: alt + space". Below is a title "Enter your response" with a text entry box below it. An open information box has the text "Solve by listening to the recording and typing your answer into the text box." At the bottom of the screen are options to load a different puzzle, toggle the information box into and out of view, and toggle to a visual puzzle. Also at the bottom is the button "Submit".](http://docs.aws.amazon.com/waf/latest/developerguide/images/CAPTCHAPuzzleAudio.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

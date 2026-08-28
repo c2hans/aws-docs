@@ -22,3 +22,7 @@ You need to configure your AWS credentials for AWS IoT Device Tester to communic
 + [Configure your AWS credentials](#cfg-aws-afr)
 + [Create a device pool in IDT for FreeRTOS](cfg-dt-dp.md)
 + [Configure build, flash, and test settings](cfg-dt-ud.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

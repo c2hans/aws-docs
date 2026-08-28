@@ -14,3 +14,7 @@ End of support notice: On September 30, 2026, AWS will discontinue support for A
 + [Virtual gateways](virtual_gateways.md)
 + [Virtual nodes](virtual_nodes.md)
 + [Virtual routers](virtual_routers.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Mesh. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query app-mesh` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -86,3 +86,7 @@ SiteWise Edge gateways run on AWS IoT Greengrass. AWS IoT Greengrass relies on U
 However, AWS IoT Greengrass does encrypt local copies of your OPC UA server secrets retrieved from Secrets Manager. For more information, see [Secrets encryption](https://docs.aws.amazon.com/greengrass/v1/developerguide/secrets.html#secrets-encryption) in the *AWS IoT Greengrass Version 1 Developer Guide*.
 
 For more information about encryption at rest on AWS IoT Greengrass cores, see [Encryption at rest](https://docs.aws.amazon.com/greengrass/v1/developerguide/encryption-at-rest.html) in the *AWS IoT Greengrass Version 1 Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -102,3 +102,7 @@ Before you create an RDS for Oracle replica, consider the following:
   ```
 + Block change tracking is supported for read-only replicas, but not for mounted replicas. You can change a mounted replica to a read-only replica, and then enable block change tracking. For more information, see [Enabling and disabling block change tracking](Appendix.Oracle.CommonDBATasks.BlockChangeTracking.md).
 + You can't create an Oracle read replica when the source database manages master user credentials with Secrets Manager.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

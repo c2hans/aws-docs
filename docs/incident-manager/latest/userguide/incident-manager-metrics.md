@@ -65,3 +65,7 @@ Incident Manager metrics use the `IncidentManager` namespace and provide metrics
 | `Across All Incidents` | View aggregate metrics for all incidents in the current AWS Region. |
 | `Response Plan name and Source` | View aggregate metrics for each combination of response plan and source. |
 | `Response Plan Name and Impact Level` | View aggregate metrics for each combination of response plan and level of severity. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -163,3 +163,7 @@ The following architecture diagram represents a PeopleSoft system running in a s
 + [Amazon RDS Custom for Oracle – New Control Capabilities in Database Environment](https://aws.amazon.com/blogs/aws/amazon-rds-custom-for-oracle-new-control-capabilities-in-database-environment/) (blog post)
 + [Integrate Amazon RDS Custom for Oracle with Amazon EFS](https://aws.amazon.com/blogs/database/integrate-amazon-rds-custom-for-oracle-with-amazon-efs/) (blog post)
 + [Configuring Amazon RDS as an Oracle PeopleSoft Database](https://d1.awsstatic.com/whitepapers/configuring-amazon-rds-as-peoplesoft-database.pdf) (AWS whitepaper)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

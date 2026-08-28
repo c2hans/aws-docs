@@ -64,3 +64,7 @@ When you installed the security agent with [Method 2 - Using Linux Package Manag
    After you run the command, you can also check the logs associated with the command.
 
 1. If you also want to delete the VPC endpoint that is associated with this security agent, then see [To delete a VPC endpoint](clean-up-guardduty-agent-resources-process.md#runtime-monitoring-delete-vpc-endpoint).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

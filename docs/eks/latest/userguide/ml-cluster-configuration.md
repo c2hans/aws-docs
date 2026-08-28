@@ -19,3 +19,7 @@ This section is designed to help you configure Amazon EKS clusters optimized for
 + [Run GPU-accelerated containers (Windows on EC2 G-Series)](ml-eks-windows-optimized-ami.md)
 + [Run machine learning training on Amazon EKS with Elastic Fabric Adapter](node-efa.md)
 + [Use AWS Inferentia instances with Amazon EKS for Machine Learning](inferentia-support.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -891,3 +891,7 @@ The following related resources can help you as you work with this action.
   + The [UpdateStackInstances](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_UpdateStackInstances.html) action brings stack instances up to date with the stack set for all specified regions within all specified accounts on a self-managed permission model, or within all specified deployment targets on a service-managed permission model. You can override parameters for the instances updated by this action. When you use this action to update a subset of instances, it does not change the status of other stack instances.
   + The [DescribeStackSetOperation](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackSetOperation.html) action returns the description of the specified stack set operation.
   + The [DescribeStackSet](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_DescribeStackSet.html) action returns the description of the specified stack set.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

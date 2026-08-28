@@ -237,3 +237,7 @@ ARN: `arn:aws:lambda:::function:GGStreamManager:1`
 `GGTES`
 The local token exchange service that retrieves IAM credentials defined in the Greengrass group role that local code uses to access AWS services.
 ARN: `arn:aws:lambda:::function:GGTES`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

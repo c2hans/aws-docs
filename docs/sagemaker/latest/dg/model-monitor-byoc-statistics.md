@@ -96,3 +96,7 @@ The schema defined in the `statistics.json` file specifies the statistical param
 The specified metrics are recognized by SageMaker AI in later visualization changes. The container can emit more metrics if required.
 [KLL sketch](https://datasketches.apache.org/docs/KLL/KLLSketch.html) is the recognized sketch. Custom containers can write their own representation, but it won’t be recognized by SageMaker AI in visualizations.
 By default, the distribution is materialized in 10 buckets. You can't change this.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

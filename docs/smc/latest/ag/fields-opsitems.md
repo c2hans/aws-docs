@@ -55,3 +55,7 @@ In this type of subjective mapping, we only change the target value if it is inc
 </table>
 
 You can find these mappings in a ServiceNow table *Priority Data Lookup*. While we can use this table to find the required values of **Impact** and **Urgency**, note that you can customize the mappings and also define new priority values. Additionally, you might want a specific priority in AWS to map to an entirely different priority in an Incident or Problem.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

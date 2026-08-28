@@ -58,3 +58,7 @@ In the following examples, the same message is sent to the same Amazon SQS queue
 <a name="message-atttributes-raw-message-delivery-sqs"></a>
 
 Amazon SNS supports the delivery of message attributes, which allow you to provide structured metadata items, such as timestamps, geospatial data, signatures, and identifiers, about the message. For Amazon SQS subscriptions with **Raw Message Delivery** enabled, a maximum of 10 message attributes can be sent. To send more than 10 message attributes, you must disable Raw Message Delivery. However, Amazon SNS discards messages with more than 10 message attributes directed towards Amazon SQS subscriptions with Raw Message Delivery enabled, treating them as client-side errors.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -197,3 +197,7 @@ What is your dashboard maturity level? Analyze your current dashboard setup and 
   + Create dashboard links, panel, or data links. Links can go to other dashboards or to external systems. For more information, refer to [Manage dashboard links](v12-dash-manage-dashboard-links.md).
   +  Add a [Dashboard list panel](v12-panels-dashboard-list.md). You can then customize what you see by doing tag or folder searches.
   + Add a [Text panel](v12-panels-dashboard-list.md) and use markdown to customize the display.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

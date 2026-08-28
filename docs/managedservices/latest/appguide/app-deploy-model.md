@@ -11,3 +11,7 @@ Considerations of how you plan your application deployments. See [What is my ope
 + Automated or manual? No deployment automation means no Auto Scale. If you request access and log in and manually update your application, and your update fails. AMS would expect you to rollback your update or alert us through a service request so we can assist you.
 + If automated, what is the framework? Scripts? Agent-based (puppet/chef)? Agentless (SALT/Ansible)? CodeDeploy? Agent-based and agentless deployment tooling require a separate instance be created and deployed as the master server for the tooling. AMS expects you to be aware of all of the elements necessary for successful application deployment tooling; however, we are happy to help with related infrastructure questions.
 + Do your Line-of-Business applications (those applications that you use to create and manage your applications) require patching?
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

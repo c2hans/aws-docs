@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 <a name="implementation-guidance-18"></a>
 
  Conduct tests that align with the expected use of the service. Work backwards from organizational objectives to conduct realistic tests. For example, consider any use case where remote users process invoices in an accounting application. Key metrics may include the number of invoices that each user processes per hour and their accuracy. A realistic test would include experienced application users processing actual invoices, using representative client devices under typical network conditions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

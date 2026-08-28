@@ -7,16 +7,16 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 # Editing the post-launch settings
 <a name="source-post-launch-settings-editing"></a>
 
-To edit the post-launch settings for a single source servers, check the box to the left of the Hostname of each source server for which you want to edit the post-launch settings, open the **Replication** menu, and choose **Edit post-launch settings**.
+To edit the post-launch settings for a single source server, check the box to the left of the Hostname of each source server for which you want to edit the post-launch settings, open the **Replication** menu, and choose **Edit post-launch settings**.
 
 Alternatively, when editing the settings for a single server, you can choose **Edit** from the **Post-launch settings** tab.
 
-These settings can be edited within the post-launch settings template. Once you have edited all your settings, click **Save template**.
+These settings can be edited within the post-launch settings template. Once you have edited all your settings, choose **Save template**.
 
 ## Types of post-launch actions
 <a name="source-post-launch-settings-table"></a>
 
-AWS MGN supports post-launch modernization actions, giving you the opportunity to move and improve. All post-launch actions are based on SSM documents (either public or ones you created) that can executed on your EC2 launch instances.
+AWS MGN supports post-launch modernization actions, giving you the opportunity to move and improve. All post-launch actions are based on SSM documents (either public or ones you created) that can be executed on your EC2 launch instances.
 
 There are 2 types of post-launch actions:
 + **Predefined post-launch actions** – These out-of-the box actions are based on public SSM documents that cannot be changed and have certain unchangeable parameters such as the platform name and order. Fields are prepopulated with the necessary values and only need to be activated or deactivated. For a list of the available actions, see [Predefined post-launch actions reference](predefined-post-launch-actions.md)
@@ -24,4 +24,8 @@ There are 2 types of post-launch actions:
 
 Use the **Filter by** options on the left-hand side to filter the available actions according to your preferences.
 
-Click the settings icon in the right-hand corner of the screen to alternate between card and list view, according to your preferences.
+Choose the settings icon in the right-hand corner of the screen to alternate between card and list view, according to your preferences.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

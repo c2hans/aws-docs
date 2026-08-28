@@ -108,3 +108,7 @@ For Maven packages in common use, new versions will typically be imported every 
 <a name="import-pv-multi-asset"></a>
 
 Both Maven and Python packages can have multiple assets per package version. This makes importing packages of these formats more complex than npm and NuGet packages, which only have one asset per package version. For descriptions of which assets are imported for these package types and how newly-added assets are made available, see [Requesting Python packages from upstreams and external connections](python-upstream-external-connections-request.md) and [Requesting Maven packages from upstreams and external connections](maven-upstream-external-connections-request.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

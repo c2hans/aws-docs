@@ -7,7 +7,7 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 # Review data replication status of the servers in a wave
 <a name="wave-source-server-migration-metrics-drs"></a>
 
-The source server **Data replication status** metric provides an aggregated overview of the data replication status of the wave's associated servers. You can look up an individual source server **Data replication status** status in the **Source servers** table.
+The source server **Data replication status** metric provides an aggregated overview of the data replication status of the wave's associated servers. You can look up an individual source server's **Data replication status** in the **Source servers** table.
 
 ![Pie chart showing data replication status: 66.7% Healthy (2 servers), 33.3% Initial sync (1 server).](http://docs.aws.amazon.com/mgn/latest/ug/images/app-8.png)
 
@@ -24,3 +24,7 @@ Source server's **Data replication status** can have one of the following values
 +  **Creating snapshot**
 +  **Paused**
 +  **Disconnected**
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

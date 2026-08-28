@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-mi
 + [AWS Prescriptive Guidance ](https://aws.amazon.com/prescriptive-guidance/)
 + [Connect Customer Administrator Guide](https://docs.aws.amazon.com/connect/latest/adminguide/what-is-amazon-connect.html)
 + [Connect Customer resources](https://aws.amazon.com/connect/resources/?amazon-connect-blogs-leadership.sort-by=item.additionalFields.createdDate&amazon-connect-blogs-leadership.sort-order=desc&amazon-connect-blogs-tech.sort-by=item.additionalFields.createdDate&amazon-connect-blogs-tech.sort-order=desc&whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

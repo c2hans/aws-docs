@@ -18,3 +18,7 @@ If you find that your current VPC peering connection requirements exceed the def
 | Expiry time for an unaccepted VPC peering connection request | 1 week (168 hours) | No |
 
 For more information about the rules for using VPC peering connections, see [VPC peering limitations](vpc-peering-basics.md#vpc-peering-limitations). For additional information about quotas for Amazon VPC, see [Amazon VPC quotas](https://docs.aws.amazon.com/vpc/latest/userguide/amazon-vpc-limits.html) in the *Amazon VPC User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

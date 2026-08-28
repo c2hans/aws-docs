@@ -59,3 +59,7 @@ The following are considerations for security policies for REST APIs in API Gate
 + API Gateway supports security policies on all APIs. However, you can only choose a security policy for REST APIs. API Gateway only supports the `TLS_1_2` security policy for HTTP or WebSocket APIs.
 + You can't update the security policy for an API from `TLS_1_0` to `TLS_1_2`.
 + Some security policies support both ECDSA and RSA cipher suites. If you use this type of policy with a custom domain name, the cipher suites match the customer-provided certificate key type, either RSA or ECDSA. If you use this type of policy with a REST API, the cipher suites match the cipher suites compatible with RSA certificate types.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

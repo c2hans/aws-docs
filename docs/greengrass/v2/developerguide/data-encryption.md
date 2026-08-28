@@ -13,3 +13,7 @@ Devices in a AWS IoT Greengrass environment often collect data that's sent to AW
 + [Encryption in transit](encryption-in-transit.md)
 + [Encryption at rest](encryption-at-rest.md)
 + [Key management for the Greengrass core device](key-management.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

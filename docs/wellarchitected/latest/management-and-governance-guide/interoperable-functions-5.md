@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/management-and-go
 +  **Service management** frameworks integrated to observability with operational tooling such as patch management and change and incident management.
 +  **Cloud Financial Management** with observability measures to alert for changes (including outliers in both upper and lower spend) in incurred and forecasted costs.
 +  **Sourcing and distribution** for both custom solutions and purchased solutions with specific logging integrated with your observability design.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

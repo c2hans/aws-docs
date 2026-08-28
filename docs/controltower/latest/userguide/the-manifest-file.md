@@ -35,3 +35,7 @@ version: 2021-03-15
 We strongly recommend you use the latest version. To update manifest properties in the latest version, refer to [Version upgrades for the CfCT manifest](cfct-compatibility.md).
 
 The next keyword shown in the previous example is the **resources** keyword. The **resources** section of the manifest file is highly structured. It contains a detailed list of AWS resources, which will be deployed automatically by the CfCT pipeline. These descriptions of resources and their available parameters are given in the next section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/automated-security-resp
 # Playbooks
 <a name="playbooks"></a>
 
-A set of remediations is grouped into a package called a *playbook*. Playbooks are installed, updated, and removed using this solution’s templates. For information about supported remediations in each playbook, refer to [Developer Guide → Playbooks](https://docs.aws.amazon.com/en_us/solutions/latest/automated-security-response-on-aws/playbooks-1.html). This solution currently supports the following playbooks:
+A set of remediations is grouped into a package called a *playbook*. Playbooks are installed, updated, and removed using this solution’s templates. For information about supported remediations in each playbook, refer to [Playbooks](playbooks-1.md) (in the Developer Guide). This solution currently supports the following playbooks:
 + Security Control, a playbook aligned with the Consolidated control findings feature of AWS Security Hub, published February 23, 2023.
 **Important**
 When [Consolidated control findings](deciding-where-to-deploy-each-stack.md#consolidated-controls-findings) are enabled in Security Hub, this is the only playbook that should be enabled in the solution.
@@ -22,3 +22,7 @@ After deploying the solution’s CloudFormation stacks, the playbooks are ready 
 <a name="centralized-logging"></a>
 
 Automated Security Response on AWS logs to a single CloudWatch Logs group, SO0111-ASR. These logs contain detailed logging from the solution for troubleshooting and management of the solution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

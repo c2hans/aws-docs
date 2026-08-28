@@ -56,3 +56,7 @@ You can create and retrieve Parameter Store parameters using the AWS Systems Man
 + AWS SDK – [Use GetParameter with an AWS SDK or AWS CLI](https://docs.aws.amazon.com/code-library/latest/ug/ssm_example_ssm_GetParameter_section.html) in the *AWS SDK Code Examples Code Library*
 
 For more information, see [AWS Systems Manager Parameter Store](https://docs.aws.amazon.com/systems-manager/latest/userguide/systems-manager-parameter-store.html) in the *AWS Systems Manager User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

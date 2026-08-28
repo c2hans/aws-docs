@@ -29,3 +29,7 @@ EMR Serverless doesn't support `HIVEQL` or `JDBC` as sync mode options for Hive 
    ```
 
 To learn more about Apache Hudi releases of Amazon EMR, refer to [Hudi release history](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hudi-release-history.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

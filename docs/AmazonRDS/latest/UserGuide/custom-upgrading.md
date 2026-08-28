@@ -93,3 +93,7 @@ When upgrading your RDS Custom for Oracle DB instance to a target CEV, make sure
 + The target CEV must use the installation parameter settings that are in the manifest of the current CEV. For example, you can't upgrade a database that uses the default Oracle home to a CEV that uses a nondefault Oracle home.
 + For database upgrades, the target CEV must use a new minor database version, not a new major version. For example, you can't upgrade from an Oracle Database 12c CEV to an Oracle Database 19c CEV. But you can upgrade from version 21.0.0.0.ru-2023-04.rur-2023-04.r1 to version 21.0.0.0.ru-2023-07.rur-2023-07.r1.
 + For OS upgrades, the target CEV must use a different AMI but have the same major version.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

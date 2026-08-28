@@ -94,3 +94,7 @@ The following table shows details about the messages that Amazon VPC Route Serve
 | BGP for Route Server Peer [PEER ID] is now [UP/DOWN]. | Route server peer BGP status change | Format: 2025-02-17T15:55:00Z | ROUTE\_SERVER\_PEER\_BGP\_STATUS\_CHANGE | Affected peer ID | UP or DOWN |
 | Message | When it is sent | timestamp | eventCode | routeServerPeerId | newBfdStatus |
 | BFD for Route Server Peer [PEER ID] is now [UP/DOWN]. | Route server peer BFD status change | Format: 2025-02-17T15:55:00Z | ROUTE\_SERVER\_PEER\_BFD\_STATUS\_CHANGE | Affected peer ID | UP or DOWN |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

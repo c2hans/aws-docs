@@ -40,3 +40,7 @@ If you don't receive the message in your application, consider the following:
 You can use AWS X-Ray with Amazon SNS to trace and analyze the messages that travel through your application. For more information, see [Amazon SNS and AWS X-Ray](https://docs.aws.amazon.com/xray/latest/devguide/xray-services-sns.html).
 
 For additional help, you can post your question to the [Amazon Rekognition forum](http://forums.aws.amazon.com/forum.jspa?forumID=234) or consider signing up for [AWS technical support](https://aws.amazon.com/premiumsupport/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

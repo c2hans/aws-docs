@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/replatform-dotnet-app
 1.  The ECS instances need permissions (through IAM policies) to communicate to the Systems Manager and Directory Service APIs. AWS recommends creating custom policies that take into account your system needs and security requirements. However, as a starting point, you can use the [following policies](https://docs.aws.amazon.com/systems-manager/latest/userguide/setup-instance-profile.html):
    +  `AmazonSSMManagedInstanceCore` — This AWS managed policy enables an instance to use Systems Manager service core functionality.
    +  `AmazonSSMDirectoryServiceAccess` — This AWS managed policy allows AWS Systems Manager Agent (SSM Agent) to access AWS Directory Service on your behalf for requests to join the Active Directory domain by the managed instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

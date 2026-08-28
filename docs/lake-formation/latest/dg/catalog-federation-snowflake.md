@@ -274,3 +274,7 @@ The `OAuth2ClientApplication` field is optional. If you omit it, the token reque
 + When you mount remote catalog with `CATALOG_CASING_FILTER='UPPERCASE_ONLY'` configuration, databases and tables with uppercase identifiers are federated but objects with lowercase identifiers are not.
 + You can reuse the same AWS Glue connection to create multiple federated catalogs. Deleting a catalog will not delete the associated connection. To delete a connection, please use AWS CLI `aws glue delete-connection` command and ensure all associated catalogs are deleted first.
 + Nested namespaces in Polaris catalog are not supported. That is, catalog federation can access remote Iceberg tables that follow a 3-part notation `catalog.database.table`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

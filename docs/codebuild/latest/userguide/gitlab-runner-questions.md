@@ -76,3 +76,7 @@ CodeBuild-hosted GitLab runners are supported in all CodeBuild regions. For more
 <a name="gitlab-runner-platform"></a>
 
 CodeBuild-hosted GitLab runners are supported on both Amazon EC2 and [AWS Lambda](lambda.md) compute. You can use the following platforms: Amazon Linux 2, Amazon Linux 2023, Ubuntu, and Windows Server Core 2019. For more information, see [EC2 compute images](ec2-compute-images.md) and [Lambda compute images](lambda-compute-images.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

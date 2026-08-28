@@ -11,3 +11,7 @@ To use OAuth authentication method, ensure the following setup is complete:
 + After creating the security integration, retain the following information for use when creating the Glue connection:
   + OAUTH\_CLIENT\_ID: This value should be provided as User Managed Client Application Client ID on the Glue connection creation page.
   + OAUTH\_CLIENT\_SECRET: This value should be stored in the AWS Secret used for the connection, under the key USER\_MANAGED\_CLIENT\_APPLICATION\_CLIENT\_SECRET.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

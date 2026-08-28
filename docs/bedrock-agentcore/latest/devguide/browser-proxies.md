@@ -571,3 +571,7 @@ Before configuring browser proxies, review these limitations to ensure the featu
 | Proxy changes | Proxy configuration is set once at session creation. Configuration changes at runtime are not supported. Create a new session to change proxy settings. |
 | Proxy rotation | Automatic proxy rotation for IP cycling or load distribution is not supported. Create new sessions to rotate proxies. |
 | Connection validation | Proxy connectivity is not validated at session creation. Connection errors appear at runtime. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

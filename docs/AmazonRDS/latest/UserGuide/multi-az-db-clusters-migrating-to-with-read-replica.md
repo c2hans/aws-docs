@@ -168,3 +168,7 @@ The following limitations apply to creating a Multi-AZ DB cluster read replica f
 + You can perform a major version upgrade on the source DB instance of a Multi-AZ DB cluster read replica, but replication to the read replica stops and can't be restarted.
 + The Multi-AZ DB cluster read replica doesn't support cascading read replicas.
 + For RDS for PostgreSQL, Multi-AZ DB cluster read replicas can't fail over.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

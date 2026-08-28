@@ -20,3 +20,7 @@ The Amazon Rekognition console allows you to use the Bulk Analysis and Custom Mo
 + [Step 2: Set up the AWS CLI and AWS SDKs](setup-awscli-sdk.md)
 + [Step 3: Getting started using the AWS CLI and AWS SDK API](get-started-exercise.md)
 + [Step 4: Getting started using the Amazon Rekognition console](getting-started-console.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

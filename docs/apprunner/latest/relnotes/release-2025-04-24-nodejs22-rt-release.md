@@ -26,3 +26,7 @@ This release provides the following versions and packages:
 + Packages: npm 10.9.2, yarn 1.22.22
 
 For details, see [ Node.js supported runtimes](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code-nodejs-releases.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

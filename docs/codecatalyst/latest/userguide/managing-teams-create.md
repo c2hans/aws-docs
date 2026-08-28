@@ -50,3 +50,7 @@ You cannot change this later. When you choose to manage team members by adding A
 1. Choose **Create**.
 **Note**
 When you choose to use SSO groups, note that the users in the SSO group are not pulled upon creation of the team. The users will need to have signed in to CodeCatalyst before they are visible in the list.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

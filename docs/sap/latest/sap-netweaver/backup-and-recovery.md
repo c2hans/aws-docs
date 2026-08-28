@@ -35,3 +35,7 @@ For SQL Server database backup, you can use one of the following methods:
 +  ** AWS Backup **for application-consistent backups via Microsoft’s Volume Shadow Copy Services (VSS). Ensure that the flag in the advanced backup settings is enabled:
 ![Advanced backup settings.](http://docs.aws.amazon.com/sap/latest/sap-netweaver/images/advanced-backup-settings.png)
 +  **Third-party backint tools:** Partners like Commvault, Veritas, and so on use SAP backint interface and store backups directly in Amazon S3 buckets.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ If the server you are connecting to uses SSL but doesn't require identity verifi
 1. Set the `PWD` property to the password corresponding to your Redshift username.
 
 1. Set the `SSLFactory` property to `com.amazon.redshift.ssl.NonValidatingFactory`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

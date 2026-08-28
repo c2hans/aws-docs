@@ -36,3 +36,7 @@ You can change which variables are generated using the `ResponseFilters` YAML pr
 The variables produced and set by the 'AWS Lambda invoke' action at run time are known as *predefined variables*.
 
 For information about referencing these variables in a workflow, see [Using predefined variables](workflows-using-predefined-variables.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

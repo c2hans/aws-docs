@@ -217,3 +217,7 @@ $ aws sqs receive-message --queue-url {{your-dlq-url}} --attribute-names All --m
 
 **Note**
 If you use [universal targets](managing-targets-universal.md), be aware that EventBridge Scheduler does not validate the contents of the `Input` field at schedule creation time. A schedule with invalid input parameters will be created successfully but will fail on every invocation. The DLQ message will contain the error code and message from the target service, which can help you identify the invalid parameter. For more information, see [Invalid universal target input configurations](troubleshooting.md#troubleshooting-usi-target-input).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EventBridge Scheduler. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query scheduler` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

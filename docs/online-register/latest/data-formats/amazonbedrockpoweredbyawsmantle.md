@@ -10,6 +10,7 @@ Amazon Bedrock Powered by AWS Mantle provides the following APIs for data retrie
 | Actions | Description | Access level |
 | --- | --- | --- |
 | <a name="bedrock-mantle-CallWithBearerToken"></a>[CallWithBearerToken](#welcome) | Make API calls using bearer token authentication | List |
+| <a name="bedrock-mantle-CountTokens"></a>[CountTokens](https://docs.aws.amazon.com/bedrock/latest/APIReference/#welcome) | Count the tokens in an inference request | Read |
 | <a name="bedrock-mantle-GetAccountDataRetention"></a>[GetAccountDataRetention](https://docs.aws.amazon.com/bedrock/latest/APIReference/#welcome) | Retrieve the account-wide data retention setting | Read |
 | <a name="bedrock-mantle-GetCustomizedModel"></a>[GetCustomizedModel](https://docs.aws.amazon.com/bedrock/latest/APIReference/#welcome) | Get customized model | Read |
 | <a name="bedrock-mantle-GetFile"></a>[GetFile](https://docs.aws.amazon.com/bedrock/latest/APIReference/#welcome) | Retrieve information about a specific file | Read |
@@ -26,3 +27,7 @@ Amazon Bedrock Powered by AWS Mantle provides the following APIs for data retrie
 | <a name="bedrock-mantle-ListProjects"></a>[ListProjects](https://docs.aws.amazon.com/bedrock/latest/APIReference/#welcome) | List projects | List |
 | <a name="bedrock-mantle-ListReservations"></a>[ListReservations](https://docs.aws.amazon.com/bedrock/latest/APIReference/#welcome) | List reservations | List |
 | <a name="bedrock-mantle-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/bedrock/latest/APIReference/#welcome) | List tags for a resource | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

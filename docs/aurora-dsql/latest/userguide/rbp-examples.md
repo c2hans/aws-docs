@@ -120,7 +120,7 @@ This policy restricts access to principals within a specific Organizational Unit
       ],
       "Resource": "arn:aws:dsql:us-east-1:123456789012:cluster/mydsqlclusterid0123456789a",
       "Condition": {
-        "StringNotLike": {
+        "ForAnyValue:StringNotLike": {
           "aws:PrincipalOrgPaths": "o-exampleorgid/r-examplerootid/ou-exampleouid/*"
         }
       }
@@ -151,7 +151,7 @@ For multi-Region clusters, each regional cluster maintains its own resource poli
       ],
       "Condition": {
         "StringNotEquals": {
-          "aws:SourceVpc": "vpc-east1-id"
+          "aws:SourceVpc": "vpc-0a1b2c3d4e5f67890"
         },
         "Null": {
           "aws:SourceVpc": "true"
@@ -179,7 +179,7 @@ For multi-Region clusters, each regional cluster maintains its own resource poli
       ],
       "Condition": {
         "StringEquals": {
-          "aws:SourceVpc": "vpc-east2-id"
+          "aws:SourceVpc": "vpc-0f9e8d7c6b5a43210"
         }
       }
     }
@@ -189,3 +189,7 @@ For multi-Region clusters, each regional cluster maintains its own resource poli
 
 **Note**
 Condition context keys may vary between AWS Regions (such as VPC IDs).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

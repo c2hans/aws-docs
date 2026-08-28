@@ -25,3 +25,7 @@ You can update the permissions of packages that are shared with 20 or fewer acco
 1. For **Edit permissions**, choose **Shared with specific accounts**.
 
 1. Under **Shared with specific accounts**, add AWS account numbers, one at a time. When you're finished, choose **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

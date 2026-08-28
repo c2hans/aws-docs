@@ -14,3 +14,7 @@ After enabling trusted access, add delegated administrator access to accounts in
 + [Disabling trusted access for S3 Storage Lens](storage_lens_with_organizations_disabling_trusted_access.md)
 + [Registering a delegated administrator for S3 Storage Lens](storage_lens_with_organizations_registering_delegated_admins.md)
 + [Deregistering a delegated administrator for S3 Storage Lens](storage_lens_with_organizations_deregistering_delegated_admins.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

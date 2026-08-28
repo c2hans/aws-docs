@@ -146,3 +146,7 @@ You can use the following AWS services with the S3 Express One Zone storage clas
 + [Amazon SageMaker Runtime Model Training](https://docs.aws.amazon.com/sagemaker/latest/dg/model-access-training-data.html) – Amazon SageMaker Runtime is a fully managed machine learning service. With SageMaker Runtime, data scientists and developers can quickly and easily build and train machine learning models, and then directly deploy them into a production-ready hosted environment.
 
  For more information on S3 Express One Zone, see [What is S3 Express One Zone?](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-one-zone.html) and [How is S3 Express One Zone different?](https://docs.aws.amazon.com/AmazonS3/latest/userguide/s3-express-differences.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

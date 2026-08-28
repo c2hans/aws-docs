@@ -84,3 +84,7 @@ The empty columns in some rows indicate that you need to update the **Vended log
 + The **Average queries per conversation** trend
 
   This bar chart calculates the average number of queries per conversation by dividing the total number of daily queries by the total number of conversations per day for the application environment. Conversations are listed on the left navigation pane of the web experience, and each conversation represents a collection of related chat messages. The chart indicates the average length of conversations, as measured by the total number of chat messages from the first to the last message in a given conversation thread.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

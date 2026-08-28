@@ -18,3 +18,7 @@ This is **expected behavior** if your account has [sharing within the AWS organi
 When this option is turned on and you share with another account in your organization, no invitations are sent and no acceptance is required. All organization accounts that you reference as principals in the resource share can immediately begin accessing the resources in the share.
 
 If your account has *not* turned on sharing within the AWS organization, then when you share with other accounts, even if they are in the same AWS organization, they are treated as standalone accounts. Invitations are sent and must be accepted before users can access the resources in the shares.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RAM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ram` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ In addition to the AWS global infrastructure, AWS Client VPN offers features to 
 <a name="high-availability"></a>
 
 You associate a target network with a Client VPN endpoint to enable clients to establish VPN sessions. Target networks are subnets in your VPC. Each subnet that you associate with the Client VPN endpoint must belong to a different Availability Zone. You can associate multiple subnets with a Client VPN endpoint for high availability.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

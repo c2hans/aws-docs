@@ -143,3 +143,7 @@ Yes, you can trigger the refresh of all Support Cases and it will generate summa
 <a name="how-often-are-summarizations-updated"></a>
 
 The summarization plugin automatically generates summaries of support case histories based on past communications. The data collection by default operates on a daily basis. Once the plugin is deployed, the summarization stack enriches cases with summaries right after daily collecting new data. Each day, data collection gathers all communications that have occurred since the previous collection. The Quick Sight dashboard updates data on the daily schedule as well. As a result, there may be up to a 24-hour delay between when a communication occurs and when it appears in the dashboard. We recommend using the AWS Support center to get the latest information on the status of the current cases.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

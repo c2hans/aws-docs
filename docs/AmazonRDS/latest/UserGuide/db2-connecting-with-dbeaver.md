@@ -71,3 +71,7 @@ You are now ready to run SQL commands.
 
 1. In the SQL results panel, view the results of your SQL queries.
 ![Window showing how to run a SQL command and view the results in DBeaver.](http://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/images/dbeaver-sql-run-example.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

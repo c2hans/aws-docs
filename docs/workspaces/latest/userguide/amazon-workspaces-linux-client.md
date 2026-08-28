@@ -37,7 +37,7 @@ The WorkSpaces Linux client version 2023.0.4395 for Ubuntu 22.04 is only availab
 Download and install the WorkSpaces Linux client application from [Amazon WorkSpaces Client Downloads](https://clients.amazonworkspaces.com/). Detailed installation instructions are included on the Linux client page on the Client Downloads site.
 
 ### 2023.x clients
-<a name="w2aab9c14b9c13b1"></a>
+<a name="w2aab9c20b9c13b1"></a>
 
 To launch the Linux client from the command line, use:
 
@@ -47,7 +47,7 @@ To launch the Linux client from the command line, use:
 When running a new client application, you will be prompted for your registration code, which is can be found in your welcome email. For existing customers, you can find the registration code under `/home/UserName/.local/share/Amazon Web Services/Amazon WorkSpaces/RegisterationList.json`.
 
 ### 3.x and 4.x clients
-<a name="w2aab9c14b9c13b3"></a>
+<a name="w2aab9c20b9c13b3"></a>
 
 To launch the Linux client from the command line, use:
 
@@ -76,7 +76,7 @@ An interruption of network connectivity causes an active session to be disconnec
 You can view your registration code and what Region your WorkSpace is in. You can specify whether you want the WorkSpaces client application to save your current registration code, and you can assign a name to your WorkSpace. You can also specify if you want Amazon WorkSpaces to keep you logged in to a WorkSpace until you quit or your login period expires.
 
 ### 2023.x clients
-<a name="w2aab9c14c13b5b1"></a>
+<a name="w2aab9c20c13b5b1"></a>
 
 **To manage your login information for a WorkSpace**
 
@@ -95,7 +95,7 @@ You can view your registration code and what Region your WorkSpace is in. You ca
 1. Choose **Save**.
 
 ### 3.x and 4.x clients
-<a name="w2aab9c14c13b5b3"></a>
+<a name="w2aab9c20c13b5b3"></a>
 
 **To manage your login information for a WorkSpace**
 
@@ -117,12 +117,12 @@ You can view your registration code and what Region your WorkSpace is in. You ca
 <a name="linux_views"></a>
 
 ### Full screen mode for 2023.x clients
-<a name="w2aab9c14c15b3b1"></a>
+<a name="w2aab9c20c15b3b1"></a>
 
 You can switch to full screen mode by selecting the full screen icon in the client application menu. While in full screen mode, you can switch back to window mode by moving the pointer to the top of the screen. The client application menu is displayed, and you can choose **Leave Full Screen** in the client application menu.
 
 ### Full screen mode for 3.x and 4.x clients
-<a name="w2aab9c14c15b3b3"></a>
+<a name="w2aab9c20c15b3b3"></a>
 
 You can switch to full screen mode by choosing **View**, **Enter Full Screen** in the client application menu.
 
@@ -134,12 +134,12 @@ You can also toggle full screen mode by pressing Ctrl\+Alt\+Enter.
 <a name="linux_client_lang"></a>
 
 ### 2023.x clients
-<a name="w2aab9c14c17b3b1"></a>
+<a name="w2aab9c20c17b3b1"></a>
 
 The WorkSpaces client automatically selects the default display language used by the operating system on your computer.
 
 ### 3.x and 4.x clients
-<a name="w2aab9c14c17b3b3"></a>
+<a name="w2aab9c20c17b3b3"></a>
 
 You can select the language displayed by the client by performing the following steps.
 
@@ -195,7 +195,7 @@ The desktop streaming connections to the WorkSpace require ports 4172 and 4195 t
 Proxy servers that require authentication with a sign-in credentials are not supported.
 
 ### Using a proxy server
-<a name="w2aab9c14c21b7"></a>
+<a name="w2aab9c20c21b7"></a>
 
 By default, the Linux client uses the proxy server that's specified in the device operating system settings. The first time the client is launched, the device operating system proxy server setting is used. If you select another option for the proxy server, that setting is used for subsequent launches of the client.
 
@@ -203,7 +203,7 @@ By default, the Linux client uses the proxy server that's specified in the devic
 In versions 3.0.0 through 3.1.4, if you specify a custom proxy server, a "No network" error might appear when you attempt to log in to your WorkSpace. If you want to use a custom proxy server with the Linux client, we recommend upgrading to version 3.1.5. If you can't upgrade, you can work around the issue by using the default operating system proxy server instead of specifying a custom proxy server in the Linux client.
 
 #### 2023.x clients
-<a name="w2aab9c14c21b7b7b1"></a>
+<a name="w2aab9c20c21b7b7b1"></a>
 
 #### To use a proxy server
 
@@ -212,7 +212,7 @@ In versions 3.0.0 through 3.1.4, if you specify a custom proxy server, a "No net
 1. In the **Connection Settings** dialog box, choose **Customize proxy server for WorkSpaces** , enter the proxy server URL or IP address, enter the port, and choose **Save**.
 
 #### 3.x and 4.x clients
-<a name="w2aab9c14c21b7b7b3"></a>
+<a name="w2aab9c20c21b7b7b3"></a>
 
 #### To use a proxy server
 
@@ -237,12 +237,12 @@ Clipboard supports a maximum uncompressed object size of 20 MB. For more informa
 To disconnect the Linux client application, you have several options.
 
 ### 2023.x clients
-<a name="w2aab9c14c27b5b1"></a>
+<a name="w2aab9c20c27b5b1"></a>
 + In theWorkSpaces streaming session, end the WorkSpace session by closing the window. In the dialog box, choose **Disconnect** to end your WorkSpace session. The client application will continue running if you want to login again.
 + In the WorkSpaces streaming session, end your WorkSpace session by clicking on the three-line menu icon and choosing **Disconnect**. The client application will continue running, which allows you to login again.
 
 ### 3.x and 4.x clients
-<a name="w2aab9c14c27b5b3"></a>
+<a name="w2aab9c20c27b5b3"></a>
 + In the Amazon WorkSpaces client application, go to **Amazon WorkSpaces**, and then choose **Disconnect WorkSpace**. Your WorkSpace session ends, but the client application continues running in case you want to log in again.
 + In the Amazon WorkSpaces client application, go to **Amazon WorkSpaces**, and then choose **Quit Amazon WorkSpaces**. Your WorkSpace session ends, and the client application closes.
 + In the Amazon WorkSpaces client application, close the WorkSpaces client window by clicking the close (X) button in the upper-right corner.
@@ -330,3 +330,7 @@ The following table describes the changes to each release of the Ubuntu 20.04 cl
 | 4.6.0 | June 21, 2023 |  + Improved client custom branding by storing assets in the same AWS Regions as provisioned WorkSpaces.<br />+ Resolved image auto-scaling issue with client custom branding logo files.<br />+ Fixed Japanese keyboard mapping issues.  |
 | 4.5.0 | December 27, 2022 |  + Resolved the issue of users being unable to disconnect from WorkSpaces when their network connectivity was lost or unavailable.<br />+ Updated PCoIP SDK for the WorkSpaces Linux client.  |
 | 4.4.0 | October 27, 2022 | Ubuntu 20.04 support. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

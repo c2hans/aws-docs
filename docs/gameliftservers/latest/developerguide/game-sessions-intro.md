@@ -58,3 +58,7 @@ Players want integrated features like voice chat, secure authentication, and per
 + **Players get streamlined authentication** – Amazon Cognito integration supports various identity providers and authentication methods while maintaining secure player identities across game sessions, with streamlined login processes for returning players.
 + **Players can persist their game progress across sessions** – Amazon DynamoDB integration can be used to store player progression, inventories, and persistent data with high-performance access that ensures minimal gameplay impact while supporting cross-session continuity.
 + **Players benefit from analytic insights** – Amazon Kinesis and Amazon Simple Storage Service (Amazon S3) integration processes game analytics to gather insights on player behavior and preferences, enabling real-time analytics that help developers adapt to changing player patterns and keep games fresh and engaging.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

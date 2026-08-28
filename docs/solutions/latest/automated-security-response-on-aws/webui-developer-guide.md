@@ -17,32 +17,32 @@ You must set the `ShouldDeployWebUI` parameter to "yes" when deploying the Admin
 
 The solution’s Web User Interface is a Single-Page Web Application hosted in your account by Amazon S3 and distributed by Amazon CloudFront. The solution also deploys a REST API using API Gateway to support operations in the Web UI.
 
-When the Admin stack is deployed, the solution’s Lambda functions begin loading all AWS Security Hub findings supported by the solution that are present in your Admin account into DynamoDB. Once this is complete, the Findings presented in the Web UI are kept in-sync with Security Hub in near real-time thanks to the EventBridge rules deployed by the solution.
+When the Admin stack is deployed, the solution’s Lambda functions begin loading all AWS Security Hub findings supported by the solution that are present in your Admin account into DynamoDB. Once this is complete, the Findings presented in the Web UI are kept in sync with Security Hub in near real-time thanks to the EventBridge rules deployed by the solution.
 
-Every week, the solution’s Lambda functions are triggered to refresh the DynamoDB table storing AWS Security Hub findings displayed in the Web UI. This ensures that stale data is cleaned up and our DynamoDB tables are kept up-to-date.. If you want to configure this baseline to run more or less often, modify the EventBridge Rule named `SO0111-ASR-SynchronizationFindingsLambdaWeeklyRule` located in your Admin account in the same region where you deployed the solution.
+Every week, the solution triggers its Lambda functions to refresh the DynamoDB table storing AWS Security Hub findings displayed in the Web UI. This is designed to clean up stale data and keep the DynamoDB tables up to date. If you want to configure this baseline to run more or less often, modify the EventBridge Rule named `SO0111-ASR-SynchronizationFindingsLambdaWeeklyRule` located in your Admin account in the same region where you deployed the solution.
 
 ## Run remediations directly in the Web UI
 <a name="webui-guide-findings-and-remediation"></a>
 
-![web ui findings page](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/web-ui-findings-page.png)
+![Web UI Findings page showing Security Hub findings table](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/web-ui-findings-page.png)
 
 On the **Findings** page, Admin or Delegated Admin users can view all AWS Security Hub findings supported by the solution for remediation. This includes findings for Security Hub member accounts onboarded with the Security Hub primary account. If the solution is also deployed in the aggregation region, then findings in any onboarded region will also be displayed. To view the list of findings supported by the solution, see the [playbooks section.](playbooks-1.md)
 
 Account Operator users will only be able to view findings which originate in AWS Accounts that they have access to as defined in their invitation. Additionally, they will only be able to run remediations for resources in the accounts they are associated with.
 
-To run remediations, select any number of items in the table and click **Actions > Remediate**. You can also **suppress** findings by clicking **Actions > Suppress**, which hides the selected findings from the default view. You can view suppressed findings at any time by clicking the **Show suppressed findings** toggle.
+To run remediations, select any number of items in the table and choose **Actions > Remediate**. You can also **suppress** findings by choosing **Actions > Suppress**, which hides the selected findings from the default view. You can view suppressed findings at any time by choosing the **Show suppressed findings** toggle.
 
-Once you have begun remediation for a finding, you can click the **Remediation Status** column while the remediation is either `In Progress` or `Failed` to be taken directly to that remediation on the **Execution History** page.
+Once you have begun remediation for a finding, you can choose the **Remediation Status** column while the remediation is either `In Progress` or `Failed` to be taken directly to that remediation on the **Execution History** page.
 
 ## Filter available findings and remediations
 <a name="webui-guide-filter-findings"></a>
 
 On both the **Findings** and **Execution History** pages, you can filter the data displayed in the table by any of the columns present in each respective table.
 
-For example, on the **Findings** page, you may filter on **Finding Type** to search for specific kinds of AWS Security Hub findings (e.g. Lambda.1 or Athena.4) by clicking the search bar and selecting **Finding Type**.
+For example, on the **Findings** page, you might filter on **Finding Type** to search for specific kinds of AWS Security Hub findings (such as Lambda.1 or Athena.4) by choosing the search bar and selecting **Finding Type**.
 
 **Note**
-Values that are autopopulated in the search bar do not represent a comprehensive list of available data. The suggested values for each search critera only represent the data currently fetched and displayed in the UI.
+Values that are autopopulated in the search bar do not represent a comprehensive list of available data. The suggested values for each search criteria only represent the data currently fetched and displayed in the UI.
 
 You may also combine multiple attributes in a single search. For example, you can apply both **Finding Type** and **Resource ID** in your search to perform a logical `AND` query. Additionally, you can apply multiple of the same filter criteria to perform a logical `OR` search, such as **Finding Type = Lambda.1** and **Finding Type = Athena.4**. The same principles apply to the **Execution History** page
 
@@ -63,9 +63,9 @@ All users must be invited by an Admin or Delegated Admin before they are able to
 
 Admins and Delegated Admins can also view, manage, and delete existing users. To see a list of all users, navigate to the **View Users** page.
 
-To manage an existing user, select the user from the table and click **Manage User**. You can then delete the user by clicking **Delete User**. If the user is an Account Operator, you can modify the list of AWS Account IDs they have access to in the context of the solution. Changing the permission type for an existing user is not currently supported.
+To manage an existing user, select the user from the table and choose **Manage User**. You can then delete the user by choosing **Delete User**. If the user is an Account Operator, you can modify the list of AWS Account IDs they have access to in the context of the solution. Changing the permission type for an existing user is not currently supported.
 
-Please note that Delegated Admins are only be able to view and manage Account Operator users.
+Delegated Admins can only view and manage Account Operator users.
 
 ## Integrating with external IdPs
 <a name="webui-guide-external-idps"></a>
@@ -78,14 +78,14 @@ Users must still be invited prior to signing in using any external IdP you confi
 ### Step 1 - Locate the solution’s user pool
 <a name="step-1-locate-the-solutions-user-pool"></a>
 
-In the Amazon Cognito console, locate the solution’s user pool named **SO0111-ASR-UserPool**.
+In the [Amazon Cognito console](https://console.aws.amazon.com/cognito/), locate the solution’s user pool named **SO0111-ASR-UserPool**.
 
-Click the user pool name **SO0111-ASR-UserPool** to be taken to the **overview** page. From there, select **Social and external providers** from the navigation bar.
+Choose the user pool name **SO0111-ASR-UserPool** to be taken to the **overview** page. From there, choose **Social and external providers** from the navigation bar.
 
 ### Step 2 - Add your identity provider
 <a name="step-2-add-your-identity-provider"></a>
 
-On the **Social and external providers** page, click the **Add identity provider** button on the top right.
+On the **Social and external providers** page, choose the **Add identity provider** button on the top right.
 
 Select either **OIDC** or **SAML**, depending on your identity provider.
 
@@ -101,9 +101,9 @@ Fill in the following fields for **SAML** providers:
 
 1.  **Metadata document**: Upload your SAML metadata document provided by your IdP.
 
-1. Under **Map attributes between your SAML provider and your user pool** click **Add another attribute**. For **User pool attribute** select `email` from the dropdown. For **SAML attribute**, enter the full name of the attribute where the user’s email address is stored in your SAML identity provider. For example, `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`.
+1. Under **Map attributes between your SAML provider and your user pool** choose **Add another attribute**. For **User pool attribute** select `email` from the dropdown. For **SAML attribute**, enter the full name of the attribute where the user’s email address is stored in your SAML identity provider. For example, `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress`.
 
-1. Click **Add identity provider** to save your changes.
+1. Choose **Add identity provider** to save your changes.
 
 Fill in the following fields for **OIDC** providers:
 
@@ -119,9 +119,9 @@ Fill in the following fields for **OIDC** providers:
 
 1.  **Setup method**: Select `Auto fill through issuer URL` and enter the **Issuer URL** from your OIDC provider. Alternatively, enter the values manually.
 
-1. Under **Map attributes between your OpenID Connect provider and your user pool** click **Add another attribute**. For **User pool attribute** select `email` from the dropdown. For **OpenID Connect attribute**, enter the full name of the attribute where the user’s email address is stored in your OIDC identity provider. For example, `email`.
+1. Under **Map attributes between your OpenID Connect provider and your user pool** choose **Add another attribute**. For **User pool attribute** select `email` from the dropdown. For **OpenID Connect attribute**, enter the full name of the attribute where the user’s email address is stored in your OIDC identity provider. For example, `email`.
 
-1. Click **Add identity provider** to save your changes.
+1. Choose **Add identity provider** to save your changes.
 
 **Important**
 You must add an attribute mapping for the `email` user pool attribute, even if your identity provider’s attribute name is also `email`.
@@ -131,9 +131,9 @@ You must add an attribute mapping for the `email` user pool attribute, even if y
 
 Navigate to the **App Clients** page and select the client named **SO0111-ASR-WebUI-UserPoolClient**.
 
-Click the **Login Pages** tab and under **Managed login pages configuration** click **Edit**.
+Choose the **Login Pages** tab and under **Managed login pages configuration** choose **Edit**.
 
-In the **Identity providers** field, add the identity provider you created in the previous step. Click **Save Changes**.
+In the **Identity providers** field, add the identity provider you created in the previous step. Choose **Save Changes**.
 
 ### Step 4 - Configure your identity provider
 <a name="step-4-configure-your-identity-provider"></a>
@@ -148,11 +148,15 @@ Depending on your provider type, allowlist one of the following Callback URLs:
 
 You should replace `<your-aws-account-id>` with the AWS Account ID where you have deployed the Admin stack, and `<aws-region>` with the region where you deployed the Admin stack.
 
-### Step 4 - Verify your integration
-<a name="step-4-verify-your-integration"></a>
+### Step 5 - Verify your integration
+<a name="step-5-verify-your-integration"></a>
 
 Navigate to the Web UI login page. Confirm that your custom identity provider is visible on the login page.
 
-To test the integration, invite a new user using the **Invite Users** page. Then, ensure the user can authenticate by clicking your custom identity provider on the Web UI login page.
+To test the integration, invite a new user using the **Invite Users** page. Then, ensure the user can authenticate by choosing your custom identity provider on the Web UI login page.
 
-Please note that the user’s profile in your custom IdP must be linked to the same email address provided in their invitation. In other words, the email address in your provider’s claims must match the invitation.
+The user’s profile in your custom IdP must be linked to the same email address provided in their invitation. In other words, the email address in your provider’s claims must match the invitation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

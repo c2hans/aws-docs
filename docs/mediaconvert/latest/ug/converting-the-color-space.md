@@ -25,3 +25,7 @@ Converting from SDR to HDR doesn't upgrade the dynamic range of the video conten
 + From any supported HDR format to any supported SDR color space
 **Note**
 When professional color graders convert an asset from HDR to SDR, they make artistic decisions about where to map colors from the larger space that don't exist in the smaller space. There is no standard formula to map these values automatically. The tone mapping technology that MediaConvert uses to do automatic conversion from HDR to SDR approximates the outcome of manually regrading from HDR to SDR. This automatic conversion works well with most content, but we recommend that you review your outputs to confirm the tone mapping results.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

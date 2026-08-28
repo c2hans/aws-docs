@@ -41,3 +41,7 @@ To build your own widget while using raw data from Customer Profiles, see the [G
 
 **Tip**
 When you customize the agent's workspace, you determine the URL agents will use to access their agent workspace, and it might very different from the one provided by Connect Customer. For example, your URL could be https://example-corp.com/agent-support-app.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

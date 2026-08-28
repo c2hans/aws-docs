@@ -56,3 +56,7 @@ Graphics Design instances will no longer be available from AWS after 12/31/2025 
 \* WorkSpaces Applications instance type and size quotas are per AWS account per AWS Region. If you have multiple fleets in the same Region that use the same instance type and size, the total number of instances in all fleets in that Region must be less than or equal to the applicable quota. To determine which instance types are available in which Regions or Availability Zones, see *Pricing by AWS Region – Always-On, On-Demand, app block builders, and image builder instances* in [WorkSpaces Applications Pricing](https://aws.amazon.com/appstream2/pricing/).
 
 For fleets that have **Default Internet Access** enabled, the quota is 100 fleet instances. If your deployment must support more than 100 concurrent users, use the [NAT gateway configuration](managing-network-internet-NAT-gateway.md) instead. For more information about enabling internet access for a fleet, see [Internet Access](internet-access.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

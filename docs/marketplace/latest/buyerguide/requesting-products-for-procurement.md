@@ -22,3 +22,7 @@ As a user, you can request that your administrator approve a product that is not
 1. Fill the details, and choose **Request product** to submit your request. If you are an administrator, you will be redirected to a the form that allows you to approve the product directly without creating a request.
 
 1. You will receive Amazon EventBridge events when a user in your account requests a product and when an administrator approves or declines the request. For more information, see [Private Marketplace notifications](configuring-notifications.md) for details on how you can configure email notifications for these events.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

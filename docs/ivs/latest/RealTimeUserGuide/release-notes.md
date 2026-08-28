@@ -7,6 +7,44 @@ source_url: https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/release-not
 
 This document contains all Amazon IVS Real-Time Streaming release notes, latest first, organized by date of release.
 
+## August 27, 2026
+<a name="aug27-26-broadcast-mobile-rt"></a>
+
+### Amazon IVS Broadcast SDK: Android 1.46.0, iOS 1.46.0 (Real-Time Streaming)
+<a name="aug27-26-broadcast-mobile-rt-1460"></a>
+
+| Platform | Downloads and Changes |
+| --- | --- |
+| [Android Broadcast SDK 1.46.0](broadcast-android.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.46.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.46.0/android/)+  Fixed a rare crash that could occur when calling `leave()` on a stage while it is handling a fatal error. <br />+  Introduced `RealTimeConnection` APIs that create a persistent connection across multiple stages, reducing time to video when users transition between stages. <br />+  Fixed a rare crash that could occur if OpenSL ES audio playback failed to start correctly. <br />+  Fixed rare playback and recording issues on some device models when using STUDIO or SUBSCRIBE\_ONLY audio use case presets.  |
+| [iOS Broadcast SDK 1.46.0](broadcast-ios.md) | **Download for real-time streaming: ** [https://broadcast.live-video.net/1.46.0/AmazonIVSBroadcast-Stages.xcframework.zip](https://broadcast.live-video.net/1.46.0/AmazonIVSBroadcast-Stages.xcframework.zip)<br />**Reference documentation:** [https://aws.github.io/amazon-ivs-broadcast-docs/1.46.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.46.0/ios/)+  Fixed a rare crash that could occur when calling `leave()` on a stage while it is handling a fatal error. <br />+  Introduced `IVSRealTimeConnection` APIs that create a persistent connection across multiple stages, reducing time to video when users transition between stages.  |
+
+#### Broadcast SDK Size: Android
+<a name="broadcast-1460-rt-sdk-size-android"></a>
+
+| Architecture | Compressed Size | Uncompressed Size |
+| --- | --- | --- |
+| arm64-v8a | 6.089 MB | 14.784 MB |
+| armeabi-v7a | 5.277 MB | 10.235 MB |
+| x86\_64 | 6.206 MB | 15.378 MB |
+| x86 | 6.481 MB | 16.010 MB |
+
+#### Broadcast SDK Size: iOS
+<a name="broadcast-1460-rt-sdk-size-ios"></a>
+
+| Architecture | Compressed Size | Uncompressed Size |
+| --- | --- | --- |
+| arm64 | 4.085 MB | 8.297 MB |
+
+## August 27, 2026
+<a name="aug27-26-broadcast-web-rt"></a>
+
+### IVS Broadcast SDK: Web 1.39.0 (Real-Time Streaming)
+<a name="aug27-26-broadcast-web-rt-1390"></a>
+
+| Platform | Downloads and Changes |
+| --- | --- |
+| [Web Broadcast SDK 1.39.0](broadcast-web.md) | **Reference documentation:** [https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Fixed an issue where Firefox users could not reconnect to a stage after being offline for an extended period. <br />+  Fixed a [RangeError](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/RangeError) that causes publishing to fail on Chrome 152\+ when simulcast was enabled.  |
+
 ## August 19, 2026
 <a name="aug19-26-connection-reuse-rt"></a>
 
@@ -1970,3 +2008,7 @@ We also added six fields to the Participant API object: `browserName`, `browserV
 Amazon Interactive Video Service (IVS) Real-Time Streaming enables you to deliver live streams with a latency that can be under 300 milliseconds from host to viewer.
 
 Major documentation changes accompany this release. The [ IVS documentation landing page](https://docs.aws.amazon.com/ivs/) now has separate sections for real-time streaming and low-latency streaming. Each section has its own User Guide and API Reference. For documentation details, see the Document History (for both [real-time](doc-history.md) and [low-latency](https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/doc-history.html) documentation changes). For real-time streaming, start with the [IVS Real-Time Streaming User Guide](https://docs.aws.amazon.com/ivs/latest/RealTimeUserGuide/what-is.html) and [IVS Real-Time Streaming API Reference](https://docs.aws.amazon.com/ivs/latest/RealTimeAPIReference/Welcome.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

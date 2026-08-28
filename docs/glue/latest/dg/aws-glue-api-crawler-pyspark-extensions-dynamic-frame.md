@@ -2520,3 +2520,7 @@ filtered_dyf = glueContext.create_dynamic_frame.from_options(
 <a name="aws-glue-api-crawler-pyspark-extensions-dynamic-frame-stageErrorsCount"></a>
 
 `stageErrorsCount` – Returns the number of errors that occurred in the process of generating this `DynamicFrame`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

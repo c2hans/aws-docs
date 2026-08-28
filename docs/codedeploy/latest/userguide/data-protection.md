@@ -45,3 +45,7 @@ The CodeDeploy agent initiates all communication with CodeDeploy over port 443. 
 <a name="key-management"></a>
 
 There are no encryption keys for you to manage. The CodeDeploy service model data is encrypted using an AWS owned key, owned and managed by CodeDeploy. For more information, see [AWS owned keys](https://docs.aws.amazon.com/kms/latest/developerguide/concepts.html#aws-owned-cmk).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ This section describes how to restore a database backup and how to disable backu
 **Topics**
 + [Restore a Backup](config-wrkr-sm-cg-bkup-restore.md)
 + [Disable Database Backups](config-wrkr-sm-cg-bkup-dis.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Statmux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-statmux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

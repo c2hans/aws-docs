@@ -10,3 +10,7 @@ The following image shows a reference pipeline for a Java-based application pipe
 ![A reference pipeline for a Java-based application pipeline](http://docs.aws.amazon.com/prescriptive-guidance/latest/devops-pipeline-accelerator/images/guide-img/e56ba347-e180-48ee-bbf9-0b76e10e70f2/images/5f936444-6c49-46bc-8bbb-2d74822393b8.png)
 
 Additional information about the use of DPA for applications is beyond the scope of this guide. For more information, see [Application pipeline](https://pipelines.devops.aws.dev/application-pipeline/index.html) in the *Deployment Pipeline Reference Architecture*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

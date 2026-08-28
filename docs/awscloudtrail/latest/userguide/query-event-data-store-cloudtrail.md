@@ -266,3 +266,7 @@ If an event contains a resource that doesn’t belong to the event Region, Cloud
 You can now run queries on your new event data store. The **Sample queries** tab provides example queries to get you started. For more information about creating and editing queries, see [Create or edit a query with the CloudTrail console](query-create-edit-query.md).
 
 You can also view the [managed dashboards](lake-dashboard-managed.md), or [create custom dashboards](lake-dashboard-custom.md) to visualize event trends. For more information about Lake dashboards, see [CloudTrail Lake dashboards](lake-dashboard.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

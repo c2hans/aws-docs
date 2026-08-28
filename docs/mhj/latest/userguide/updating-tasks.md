@@ -20,3 +20,7 @@ The details of a task include its title, status, due date, estimated effort, eff
 1. Choose the **Tasks** tab.
 
 1. Choose the tile that represents the task whose details you want to edit. A right pane appears and shows the properties of the task, some of which are editable in that pane. To edit the rest of the properties of the task, choose the external link icon that appears in the top-right corner of this task details pane.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

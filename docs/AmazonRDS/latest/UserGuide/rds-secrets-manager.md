@@ -741,3 +741,7 @@ When you have the secret ARN, you can view details about the secret using the [G
 <a name="rds-secrets-manager-availability"></a>
 
 Feature availability and support varies across specific versions of each database engine and across AWS Regions. For more information about version and Region availability with Secrets Manager integration with Amazon RDS, see [Supported Regions and DB engines for the Secrets Manager integration with Amazon RDS](Concepts.RDS_Fea_Regions_DB-eng.Feature.SecretsManager.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

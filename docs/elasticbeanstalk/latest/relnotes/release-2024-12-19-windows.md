@@ -82,3 +82,7 @@ Be aware that at the time these release notes are published, the new platform ve
 |  ** Windows Server Core 2019 with IIS 10.0 version 2.16.1**  | 2024.12.13 | 3.7.945.0 |  | 3.3.1345.0 | 3.6 | 3.3.13 |
 |  ** Windows Server 2016 with IIS 10.0 version 2.16.1**  | 2024.12.13 | 3.7.945.0 |  | 3.3.1345.0 | 3.6 | 3.3.13 |
 |  ** Windows Server Core 2016 with IIS 10.0 version 2.16.1**  | 2024.12.13 | 3.7.945.0 |  | 3.3.1345.0 | 3.6 | 3.3.13 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

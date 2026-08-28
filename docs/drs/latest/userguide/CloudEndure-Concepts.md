@@ -104,3 +104,7 @@ As "**Use most recent data**" requires an active network connection to the Sourc
 The **Any** and **All** selection criteria are available in the AWS Elastic Disaster Recovery Console when selecting a Point in Time Snapshot for a job that contains multiple Source Servers.
 + **Any** - Displays all of the PIT Snapshots available for all of the selected source servers. AWS Elastic Disaster Recovery will launch a drill instance for each source server that has a PIT snapshot taken at the chosen time. For any Source Server that does not have a corresponding PIT snapshot taken at the chosen time, a previous PIT Snapshot will be used.
 + **All** - Displays only PIT Snapshots that all selected Source Servers share. If there are no points in time that include all Source Servers, the list will be empty.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

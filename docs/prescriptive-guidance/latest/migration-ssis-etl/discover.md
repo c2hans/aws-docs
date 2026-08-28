@@ -30,3 +30,7 @@ This inventory might include the following information:
 + Flow: [Control flow](https://docs.microsoft.com/en-us/sql/integration-services/control-flow/control-flow) or [data flow](https://docs.microsoft.com/en-us/sql/integration-services/data-flow/data-flow)
 + Task: Name of the control flow task or data flow component
 + Count: Number of times a task was used in the SSIS package
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

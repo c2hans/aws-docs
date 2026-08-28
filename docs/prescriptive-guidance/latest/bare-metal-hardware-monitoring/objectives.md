@@ -21,3 +21,7 @@ Telegraf and the Redfish API can help you address the challenges of hardware hea
 + Because the Redfish API provides direct access to hardware components, it is crucial to implement robust authentication and authorization mechanisms. Telegraf can help you establish proper access control and security.
 + Telegraf supports various authentication methods that help you secure communication with Redfish API endpoints.
 + Enforcing fine-grained access control, based on defined roles and permissions, can help you mitigate potential security risks and allow access only to authorized personnel.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

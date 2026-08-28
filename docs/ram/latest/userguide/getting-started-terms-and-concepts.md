@@ -213,3 +213,7 @@ AWS handles all changes to AWS managed permissions. Such changes address new fun
 You handle all changes to customer managed permissions. You can create a new default version, set an older version as the default, or delete versions that are no longer associated with any resource shares. Each customer managed permission can have up to five versions.
 
 When you create or update a resource share, you can attach only the default version of the specified managed permission. For more information, see [Updating AWS managed permissions to a newer version](working-with-sharing-update-permissions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RAM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ram` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

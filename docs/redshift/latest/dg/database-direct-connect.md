@@ -47,3 +47,7 @@ The Amazon Redshift query editor v2 includes consumer databases in its connectio
 
 **Note**
 A new system database named `sys:internal` was added for internal maintenance. Some tools include this system database as a connectable database. However, you can't connect to it or run queries against its objects.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

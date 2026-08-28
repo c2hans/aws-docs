@@ -107,3 +107,7 @@ In addition, you can override your Lambda environment settings by using the foll
 </table>
 
 For more information, see [Build environment compute modes and types](build-env-ref-compute-types.md) and [Docker images provided by CodeBuild](build-env-ref-available.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

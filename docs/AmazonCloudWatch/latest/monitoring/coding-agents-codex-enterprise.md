@@ -41,3 +41,7 @@ On this path, identity and organizational attributes are emitted as OTel *resour
 <a name="coding-agents-codex-enterprise-more"></a>
 
 For the complete, continually updated guidance—including the CloudFormation templates, identity-federation setup, and fleet setup scripts—see the [guidance for Codex on Amazon Bedrock](https://github.com/openai-on-aws/guidance-codex) on GitHub. After the fleet is sending metrics, view the dashboards as described in [View the dashboards](coding-agents-insights.md#coding-agents-insights-view).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

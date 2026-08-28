@@ -46,3 +46,7 @@ For information about the underlying REST API, see [Delete Vault (DELETE vault)]
 <a name="deleting-vaults-sdk-java-example"></a>
 
 For a working code example, see [Example: Creating a Vault Using the AWS SDK for Java](creating-vaults-sdk-java.md#creating-vaults-sdk-java-example). The Java code example shows basic vault operations including create and delete vault.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Glacier. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonglacier` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

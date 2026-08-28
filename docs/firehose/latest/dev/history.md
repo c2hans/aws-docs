@@ -20,7 +20,7 @@ The following table describes the important changes to the Amazon Data Firehose 
 | Snowflake as a destination in new regions | Snowflake is now available as a destination in Asia Pacific (Singapore), Asia Pacific (Seoul), and Asia Pacific (Sydney). See [Configure destination settings for Snowflake](create-destination.md#create-destination-snowflake). | July 25, 2024 |
 | Restructured user guide sections | Simplified navigation for sections in user guide. See [Send data to a Firehose stream](basic-write.md) and [Troubleshoot errors in Amazon Data Firehose](troubleshooting.md). | July 5, 2024 |
 | Amazon Data Firehose integrates with AWS Secrets Manager | You can now access to your secrets and automate credential rotation securely with Secrets Manager. See [Authenticate with AWS Secrets Manager in Amazon Data Firehose](using-secrets-manager.md). | June 06, 2024 |
-| Added support for ingesting logs for Dynatrace | You can now send logs and events to Dynatrace for further analysis. See [Configure destination settings for Dynatrace](create-destination.md#create-destination-dynatrace). | April 18, 2024 |
+| Added support for ingesting logs for Dynatrace | You can now send logs and events to Dynatrace for further analysis. See [Configure destination settings for Dynatrace (Classic cloud platform)](create-destination.md#create-destination-dynatrace). | April 18, 2024 |
 | General Availability (GA) release for Snowflake as a destination | Snowflake is now generally available as a destination. See [Configure destination settings for Snowflake](create-destination.md#create-destination-snowflake). | April 17, 2024 |
 | Amazon Kinesis Data Firehose is now known as Amazon Data Firehose | Amazon Kinesis Data Firehose has rebranded to Amazon Data Firehose. See [What is Amazon Data Firehose?](what-is-this-service.md) | February 9, 2024 |
 | Added Snowflake as a destination (public preview) | You can create a Firehose stream with Snowflake as the destination. See [Configure destination settings for Snowflake](create-destination.md#create-destination-snowflake). | January 19, 2024 |
@@ -42,3 +42,7 @@ The following table describes the important changes to the Amazon Data Firehose 
 | New enhanced Kinesis agent | Updated [Configure Kinesis agent to send data](writing-with-agents.md). | April 11, 2016 |
 | New Kinesis agents | Added [Configure Kinesis agent to send data](writing-with-agents.md). | October 2, 2015 |
 | Initial release | Initial release of the Amazon Data Firehose Developer Guide. | October 4, 2015 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

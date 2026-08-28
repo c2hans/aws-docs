@@ -43,3 +43,7 @@ AWS Transform for mainframe Runtime is available for deployment on:
 Deploying on Amazon EC2 can be done directly in the instance or through a Docker containerized application, which is the preferred way when using Amazon ECS or Amazon EKS.
 
 For detailed deployment instructions, see [Set up AWS Transform for mainframe Runtime ](https://docs.aws.amazon.com/m2/latest/userguide/ba-runtime-setup.html) documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

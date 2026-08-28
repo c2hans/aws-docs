@@ -50,3 +50,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/best-pra
 + Log rotation, clean up, and archival
 
  Consider database and application log and trace files cleanups for your SAP environment, for example, SAP Note: [2399996 - Automating SAP HANA Cleanup](https://launchpad.support.sap.com/#/notes/2399996) [Requires SAP Portal Access]
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

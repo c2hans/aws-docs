@@ -18,3 +18,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 + [SEC10-BP06 Pre-deploy tools](sec_incident_response_pre_deploy_tools.md)
 + [SEC10-BP07 Run simulations](sec_incident_response_run_game_days.md)
 + [SEC10-BP08 Establish a framework for learning from incidents](sec_incident_response_establish_incident_framework.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

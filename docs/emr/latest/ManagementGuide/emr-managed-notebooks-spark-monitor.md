@@ -47,3 +47,7 @@ To view history server pages on the cluster primary node, you must set up an SSH
 The following is an example of the Spark job monitoring.
 
 ![alt_text](http://docs.aws.amazon.com/emr/latest/ManagementGuide/images/spark_monitoring_job_progress.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

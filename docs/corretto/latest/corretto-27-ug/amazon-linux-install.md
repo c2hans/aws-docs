@@ -32,9 +32,9 @@ java -version
 Expected output for 27.0.0:
 
 ```
-openjdk 27 2026-08-06
- OpenJDK Runtime Environment Corretto-27.0.0.33.1 (build 27+33-FR)
- OpenJDK 64-Bit Server VM Corretto-27.0.0.33.1 (build 27+33-FR, mixed mode, sharing)
+openjdk 27 2026-08-20
+ OpenJDK Runtime Environment Corretto-27.0.0.34.1 (build 27+34-FR)
+ OpenJDK 64-Bit Server VM Corretto-27.0.0.34.1 (build 27+34-FR, mixed mode, sharing)
 ```
 
  If you see a version string that doesn't mention `Corretto`, run the following command to change the default `java` or `javac` providers.
@@ -49,3 +49,7 @@ If using the JDK you should also run:
 ```
 sudo alternatives --config javac
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Corretto. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query corretto` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

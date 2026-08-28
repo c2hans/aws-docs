@@ -29,3 +29,7 @@ On the **Monitor details** tab, you can see details about the monitor, including
 You can choose to edit or delete a monitor from any page on the **Monitors** tab.
 
 As part of your regular use of Network Flow Monitor, we recommend that you periodically review the data on the **Workload insights** page to determine if there are new flows that show metrics anomalies that you want to track more closely over time. When you see a set of flows on the **Workload insights** page that you want to see details about, select the flows and create a monitor for them.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ In the following sections, you can find information about working with self-mana
 **Topics**
 + [Working with self-managed Active Directory with an Amazon RDS for SQL Server DB instance](USER_SQLServer_SelfManagedActiveDirectory.md)
 + [Working with AWS Managed Active Directory with RDS for SQL Server](USER_SQLServerWinAuth.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ In the **Network Settings** section of the AWS Management Console for Wickr you 
 + [What is ATAK?](what-is-atak.md)
 + [Ports and domains to allow list for your Wickr network](allow-list-ports-domains.md)
 + [GovCloud cross boundary classification and federation](govcloud-cross-boundary.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

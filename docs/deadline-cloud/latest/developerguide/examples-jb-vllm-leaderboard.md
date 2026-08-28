@@ -23,3 +23,7 @@ deadline bundle submit ./job_bundles/vllm_lm_eval_leaderboard/ \
 If your fleet does not scale up workers, the most common cause is an Deadline Cloud service quota. Confirm that you have headroom for *OnDemand G instance GPUs per region* and *OnDemand vCPUs per region* in the Service Quotas console.
 
 For a complete walkthrough that covers prerequisites, farm setup, custom models and benchmarks, and cleanup, see [Benchmark LLMs with vLLM and lm-evaluation-harness](tutorial-vllm-leaderboard.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

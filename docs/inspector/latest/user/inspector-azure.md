@@ -39,3 +39,7 @@ Amazon Inspector uses the following methods to scan Azure resources:
 + **Virtual Machines** – Amazon Inspector uses the Amazon Inspector VM Scanner agent to scan VMs for operating system and application vulnerabilities. You can choose between managed deployment (recommended) or manual installation. For more information about the agent, see [Amazon Inspector VM Scanner](inspector-vm-scanner.md).
 + **Function Apps** – Amazon Inspector automatically extracts and analyzes function code dependencies for known vulnerabilities.
 + **Container Registry images** – Amazon Inspector automatically scans container images stored in Azure Container Registry (ACR) for vulnerabilities in operating system packages and application dependencies.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

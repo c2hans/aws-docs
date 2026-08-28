@@ -38,3 +38,7 @@ Perform a route analysis of your AWS global network. You can only use Route Anal
 1. The results are displayed under **Results of route analysis**. If you specified **Middlebox appliance?**, choose **Yes **or **No** for each of the attachments to indicate the location of the appliances and to complete the route analysis.
 
    You can choose the ID of any of the resources in the path to view more information about the resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

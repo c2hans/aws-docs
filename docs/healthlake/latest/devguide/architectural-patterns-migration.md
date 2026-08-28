@@ -14,7 +14,7 @@ Before beginning any data migration, set up and validate HealthLake through a pr
 
 **To validate your HealthLake environment**
 
-1. Create a data store with your chosen authorization strategy (SMART on FHIR or AWS SigV4-only) and AWS KMS encryption key. The authorization configuration is specified as part of the create data store request. For more information, see [Creating a HealthLake data store](managing-data-stores-create.md) and .
+1. Create a data store with your chosen authorization strategy (SMART on FHIR or AWS SigV4-only) and AWS KMS encryption key. The authorization configuration is specified as part of the create data store request. For more information, see [Creating a HealthLake data store](managing-data-stores-create.md) and [Creating a SMART on FHIR enabled HealthLake data store](reference-smart-on-fhir-create-data-store.md).
 
 1. Set up your API Gateway proxy.
 
@@ -48,7 +48,7 @@ Set the `ValidationLevel` parameter based on your data quality posture:
 | structure-only | Resources are validated against R4, ignoring any referenced profiles. |
 | minimal | Resources are validated minimally, ignoring certain R4 rules. Resources that fail structure checks required for search/analytics are updated to include a warning extension for audit. |
 
-For more information about validation levels, see .
+For more information about validation levels, see [Importing FHIR data with AWS HealthLake](importing-fhir-data.md).
 
 ## Step 4: Validate the import
 <a name="architectural-patterns-migration-step4"></a>
@@ -75,3 +75,7 @@ Validate that all FHIR operations are working as expected. HealthLake provides m
 
 **Note**
 HealthLake supports R4 only. If your existing server runs STU3 or DSTU2, you must transform resources to R4 before import. AWS HealthLake Partners provide conversion tooling for non-R4 data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

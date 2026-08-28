@@ -99,3 +99,7 @@ The minutes are not transferred to the next month.
 There are no restrictions regarding channels:
 + For example, the reservation could be consumed based on the processing of one input from one channel and another input from a different channel.
 + There is no requirement that all the inputs or outputs in a given channel must be covered by a reservation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

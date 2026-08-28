@@ -57,3 +57,7 @@ VPC Resolver creates the following autodefined rules and associates them with yo
 
 **A rule for all other domains**
 VPC Resolver creates a "." (dot) rule that applies to all domain names that aren't specified earlier in this topic. The "." rule has a type of **Recursive**, which means that the rule causes VPC Resolver to act as a recursive resolver.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

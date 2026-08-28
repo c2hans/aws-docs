@@ -32,3 +32,7 @@ Follow these steps to review your usage and cost data in the Security Lake conso
 1. Select the time period for which you want to see usage and cost data. The default is the last 1 day.
 
 1. Select the **By data source** or **By accounts** tab to review usage and costs in detail.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

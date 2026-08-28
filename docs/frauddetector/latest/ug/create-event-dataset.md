@@ -153,3 +153,7 @@ The following are some of the common issues Amazon Fraud Detector comes across w
 <a name="dataset-storage"></a>
 
 After you gathered your dataset, you store your dataset internally using Amazon Fraud Detector or externally with Amazon Simple Storage Service (Amazon S3). We recommend that you choose where to store your dataset based on the model you use for generating fraud predictions. For more information on model types, see [Choose a model type](https://docs.aws.amazon.com/frauddetector/latest/ug/choosing-model-type.html). For more information on storing your dataset, see [Event data storage](event-data-storage.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

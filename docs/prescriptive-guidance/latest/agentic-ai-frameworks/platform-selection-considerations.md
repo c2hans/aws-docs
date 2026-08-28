@@ -12,3 +12,7 @@ When selecting or designing an agentic AI platform, organizations should conside
 + **Extensibility **– Choose platforms with modular architectures that allow new tools, models, or agents to be added over time.
 + **Observability **– Prefer platforms that provide detailed telemetry, traceability, and audit logs for agentic interactions.
 + **Cost efficiency **– Consider serverless or usage-based models to optimize cost for variable workloads.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

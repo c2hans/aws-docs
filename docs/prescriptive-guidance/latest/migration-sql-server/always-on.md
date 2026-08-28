@@ -18,3 +18,7 @@ For more information about distributed availability groups, see:
 + [Microsoft SQL Server documentation](https://docs.microsoft.com/en-us/sql/database-engine/availability-groups/windows/distributed-availability-groups),
 + [How to architect a hybrid Microsoft SQL Server solution using distributed availability groups](https://aws.amazon.com/blogs/database/how-to-architect-a-hybrid-microsoft-sql-server-solution-using-distributed-availability-groups/) on the AWS Database blog
 + [Migrate SQL Server to AWS using distributed availability groups](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-sql-server-to-aws-using-distributed-availability-groups.html) on the AWS Prescriptive Guidance website
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

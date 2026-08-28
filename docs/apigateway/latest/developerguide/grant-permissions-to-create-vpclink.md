@@ -64,3 +64,7 @@ For you or a user in your account to create and maintain a VPC link, you or the 
 1. Create or choose an IAM role and attach the preceding policy to the role.
 
 1. Assign the IAM role to you or a user in your account who is creating VPC links.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

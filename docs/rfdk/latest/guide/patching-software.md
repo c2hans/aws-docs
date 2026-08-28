@@ -11,3 +11,7 @@ On November 7, 2025, AWS Thinkbox Deadline 10 will enter maintenance mode. We re
 A render farm is only as secure as the software that is deployed and executing on it. Software vulnerabilities are continually being discovered by developers, users, and security researchers. The best way to mitigate the risk of vulnerable software is to adopt a patching strategy. The operating system and applications running on your render farm should be regularly patched and monitored for vulnerabilities. Please refer to the following documentation based on the platform of your instances:
 + Linux - [Managing software on your Amazon Linux instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/managing-software.html)
 + Windows - [Best practices for Windows on Amazon EC2](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/ec2-best-practices.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Render Farm Deployment Kit on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rfdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

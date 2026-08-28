@@ -28,3 +28,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-ac
 + [How to perform automated incident response in a multi-account environment](https://aws.amazon.com/blogs/security/how-to-perform-automated-incident-response-multi-account-environment/) in the AWS Security Blog
 + [AWS re:Inforce 2022 - Crawl, walk, run: Accelerating security maturity video](https://www.youtube.com/watch?v=Jj6s5pOqEc0) (YouTube)
 + [AWS re:Inforce 2022 - Crawl, walk, run: Accelerating security maturity presentation](https://d1.awsstatic.com/events/aws-reinforce-2022/GRC205_Crawl-walk-run-Accelerating-security-maturity.pdf) (PDF)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

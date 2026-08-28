@@ -10,3 +10,7 @@ The [worker\_reboot](https://github.com/aws-deadline/deadline-cloud-samples/tree
 When the worker starts, host configuration scripts run during the `STARTED` state. The Linux script issues a standard `reboot` command and sleeps for 60 seconds while the host shuts down to prevent the worker agent from starting job processing. A `rebooted` marker file indicates that a reboot was issued. On the second start, the Deadline Cloud agent begins processing jobs.
 
 The Windows script uses a marker file at `C:\deadline-rebooted` and issues `Restart-Computer -Force` if the marker file doesn't yet exist.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -202,3 +202,7 @@ These `npm` commands are not supported by CodeCatalyst package repositories.
 |  [token](https://docs.npmjs.com/cli/token)  | Manages your authentication tokens. | CodeCatalyst uses a different model for getting authentication tokens. For information, see [Configuring npm with CodeCatalyst](#npm-configure). |
 |  [unpublish](https://docs.npmjs.com/cli/unpublish)  | Removes a package from the registry. | CodeCatalyst does not support removing a package version from a repository by using the npm client. You can delete a package in the console. |
 |  [whoami](https://docs.npmjs.com/cli/whoami)  | Displays the npm user name. | CodeCatalyst uses a user model that is different from the public npmjs repository. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ If you train in local mode, you can't visualize metrics in CloudWatch.
 1. **Deploy RL models**—Finally, deploy the trained model on an endpoint hosted on SageMaker AI containers or on an edge device by using AWS IoT Greengrass.
 
 For more information on RL with SageMaker AI, see [Using RL with the SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,3 +33,7 @@ You can edit the following settings of the left-hand navigation of a preview or 
    1. To hide pages from the navigation of the app, drag the pages to the **Unlinked pages** section.****
 
    1. To reorder pages in the navigation of the app, drag them to the desired order in the **Linked pages** section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

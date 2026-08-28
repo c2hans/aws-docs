@@ -58,3 +58,7 @@ Terminate all resources in the running environment and remove the environment fr
 <a name="environments-dashboard-actions-restore"></a>
 
 Recreate a recently terminated environment with the same name, ID, and configuration. This action is available from the environment dashboard while the terminated environment still appears in the environments list. To restore an environment that no longer appears in the list, use the **Restore terminated environment** option on the application page. For more information, see [Rebuilding a terminated environment](environment-management-rebuild.md#environment-management-rebuild-terminated).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

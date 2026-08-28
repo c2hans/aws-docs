@@ -22,3 +22,7 @@ You can use the AWS IoT console or the AWS CLI to create an OTA update. The cons
 1. Create an OTA update.
 
 When you create an OTA update, you specify the image delivery protocol (MQTT or HTTP) or specify both to allow the device to choose. The FreeRTOS OTA agent on the device receives the updated firmware image and verifies the digital signature, checksum, and version number of the new image. If the firmware update is verified, the device is reset and, based on application-defined logic, commits the update. If your devices are not running FreeRTOS, you must implement an OTA agent that runs on your devices.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

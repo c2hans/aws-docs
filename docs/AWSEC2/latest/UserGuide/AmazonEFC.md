@@ -10,3 +10,7 @@ Amazon File Cache provides a fully managed, high-speed cache on AWS that makes i
 Amazon File Cache works with the most popular Linux AMIs, and is compatible with x86-based instance types and Graviton instance types. You can access your cache from your Amazon EC2 instances using the open-source Lustre client. You can mount your cache and then work with the files and directories in your cache using standard Linux commands. Amazon EC2 instances can access your cache from other Availability Zones within the same virtual private cloud (VPC), provided that your network configuration allows access across subnets within the VPC. You can also create a cache in a shared VPC.
 
 To get started, see [ Getting started with Amazon File Cache](https://docs.aws.amazon.com/fsx/latest/FileCacheGuide/getting-started.html) in the *Amazon File Cache User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

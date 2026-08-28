@@ -79,3 +79,7 @@ No, you should not use your AL2 gateway alongside your new AL2023 gateway after 
 
 **I'm having issues during migration. What should I do?**
 Contact [AWS Support](https://console.aws.amazon.com/support/home) for assistance. Our support team can help troubleshoot migration issues and guide you through the process.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query storagegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

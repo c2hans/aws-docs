@@ -15,3 +15,7 @@ You can use the AWS CodeBuild console, AWS CLI, or AWS SDKs to run a build in Co
 + [Start running builds automatically (AWS CLI)](run-build-cli-auto-start.md)
 + [Stop running builds automatically (AWS CLI)](run-build-cli-auto-stop.md)
 + [Run a build (AWS SDKs)](run-build-sdks.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

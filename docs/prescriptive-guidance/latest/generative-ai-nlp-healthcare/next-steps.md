@@ -34,3 +34,7 @@ For next steps, we recommend that healthcare IT managers, architects, and techni
 + [A Survey of Large Language Models for Healthcare: from Data, Technology, and Applications to Accountability and Ethics](https://arxiv.org/pdf/2310.05694)
 + [Large Language Models Are Poor Medical Coders — Benchmarking of Medical Code Querying](https://ai.nejm.org/doi/pdf/10.1056/AIdbp2300040)
 + [From Beginner to Expert: Modeling Medical Knowledge into General LLMs](https://arxiv.org/html/2312.01040v3)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

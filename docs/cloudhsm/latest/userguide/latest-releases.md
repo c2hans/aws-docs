@@ -227,3 +227,7 @@ Download version 5.18.0 software for Windows Server 2016 on x86\_64 architecture
 **Bug fixes/Improvements**
 + Resolved a known issue where the `key-reference` filter could not select session (ephemeral) keys in the CloudHSM CLI and JCE provider.
 + Improved throttling handling and automatic retry behavior across the Client SDKs, along with additional bug fixes and stability improvements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

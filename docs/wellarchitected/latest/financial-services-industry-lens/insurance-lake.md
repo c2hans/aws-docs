@@ -38,3 +38,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 1.  Quick dashboards and reports can pull data from the insurance lake on a real-time or scheduled basis.
 
 1.  Full DevSecOps (everything as code and everything as automated as possible) can be managed using AWS CodePipeline and related services.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,7 +40,7 @@ You can confirm that the correct email address is populated in the Emails array 
 ```
 "Emails": [
     {
-       "Value": "example@amazon.com",
+       "Value": "user@example.com",
        "Type": "work",
        "Primary": true
     }
@@ -56,3 +56,7 @@ The attribute mappings within your provider must be configured to map the user�
 | --- | --- | --- |
 | Microsoft Entra | mail | emails[type eq "work"] |
 | Okta | email | emails[type eq "work"] |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Innovation Sandbox on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

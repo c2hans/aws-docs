@@ -145,3 +145,7 @@ To clean up resources created in the previous tutorial, see [Step 4: Clean up re
 <a name="tutorials_rotation-single_step-next"></a>
 + Learn how to retrieve secrets in your applications. See [Get secrets from AWS Secrets Manager](retrieving-secrets.md).
 + Learn about other rotation schedules. See [Rotation schedules](rotate-secrets_schedule.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Secrets Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query secretsmanager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

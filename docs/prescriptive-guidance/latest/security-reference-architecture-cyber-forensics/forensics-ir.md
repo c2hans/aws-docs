@@ -29,3 +29,7 @@ To improve your security IR preparedness:
 + Prepare your IR tooling by running simulations.
 + Regularly test backup and recovery processes to make sure they are successful.
 + Use scenario-based playbooks, starting with common potential events related to AWS based on Amazon GuardDuty findings. For information about how to build your own playbooks, see the [Playbook resources](https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/appendix-b-incident-response-resources.html#playbook-resources) section of the *AWS Security Incident Response Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

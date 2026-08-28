@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/impleme
  The timeline for these steps varies per organization, as every organization is different and has unique challenges. However, following successful WAFRs performed with many customers at AWS, we recommend this phase to take between 90 and 180 days.
 
  If your list of HRIs and MRIs takes longer, re-prioritize them and come up with a shorter list so that you can start practicing the process to get some improvement. Then, repeat with your remaining items.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

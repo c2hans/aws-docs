@@ -19,3 +19,7 @@ All products that require AWS Marketplace subscriptions will be governed by Priv
 + If your organization already has subscriptions to products in AWS Marketplace, Private Marketplace will not block usage from these existing subscriptions. Users will not be blocked from launching new instances from existing subscriptions. Private Marketplace will only block new subscriptions or changes to existing subscriptions to products that are not approved in the experience that is governing the user.
 + Private Marketplace does not control what can be deployed in AWS accounts. If you want to control what can be deployed including products that are automatically entitled.
 + For the latest information on access to Amazon Bedrock models, see the [Amazon Bedrock User Guide](https://docs.aws.amazon.com/bedrock/latest/userguide/what-is-bedrock.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

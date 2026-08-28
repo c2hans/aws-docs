@@ -115,3 +115,7 @@ If you have Active Directory or Okta configured for your Enterprise account, use
 + Do one of the following:
   + From your Active Directory or Okta Administrator Dashboard, suspend the user or mark them inactive.
   + Remove the user from any Active Directory group that has Basic or Pro permissions assigned to it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

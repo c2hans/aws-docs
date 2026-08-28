@@ -37,3 +37,7 @@ Because two parties are required for this process, this section describes the ta
    1. If not satisfied with the migration, file a service request and reference the stack and RFC IDs; AMS will work with you to address your concerns.
 
 CloudEndure landing zone workload ingest process is described next.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

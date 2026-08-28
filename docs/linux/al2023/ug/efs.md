@@ -34,3 +34,7 @@ Amazon EFS supports the Network File System version 4 (NFSv4.1 and NFSv4.0) prot
   ```
 
  You can also mount the file system so that data in transit is encrypted using TLS, or by using the DNS name or mount target IP instead of the file system id. For more information, see [Mounting on Amazon Linux instances using the EFS mount helper](https://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-helper-ec2-linux.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

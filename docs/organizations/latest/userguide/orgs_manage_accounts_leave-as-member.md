@@ -96,3 +96,7 @@ If your account was created in the organization, then Organizations automaticall
 Member accounts can also be removed by a user in the management account with [remove-account-from-organization](https://docs.aws.amazon.com/cli/latest/reference/organizations/remove-account-from-organization.html) instead. For more information, see [Remove a member account from an organization](orgs_manage_accounts_remove.md#orgs_manage_accounts_remove-member-account).
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

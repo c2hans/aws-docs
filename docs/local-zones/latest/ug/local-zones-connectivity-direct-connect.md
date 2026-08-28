@@ -14,3 +14,7 @@ The following diagram shows a Direct Connect connection between a Local Zones an
 ![An AWS Region with a VPC. The VPC contains an Availability Zone and a Local Zone. Each zone has a private subnet. The diagram also shows an on-premise data center with a customer gateway outside the AWS Region. A Direct Connect connection facilitates traffic between the Local Zone and the data center.](http://docs.aws.amazon.com/local-zones/latest/ug/images/local-zones-direct-connect.png)
 
 During a hybrid cloud migration, you can migrate your applications to Local Zones while using Direct Connect to communicate back to other parts of your applications in the data center. An example is migrating the front end of an application to Amazon EC2, Amazon ECS, or Amazon EKS in a Local Zone and having the back-end database remain in the data center. Eventually, you can migrate the database to the Local Zone and the entire application to an AWS Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Local Zones. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query local-zones` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

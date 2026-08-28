@@ -46,3 +46,7 @@ You can only add one probe at a time and up to four probes per monitor.
 1. Choose **Add probe**.
 
    While the probe is being activated, the **State** shows **Pending**. It might take several minutes for the probe to become **Active**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

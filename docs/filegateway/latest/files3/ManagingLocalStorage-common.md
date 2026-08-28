@@ -11,3 +11,7 @@ The gateway virtual machine (VM) uses the local disks that you allocate on-premi
 + [Deciding the amount of local disk storage](decide-local-disks-and-sizes.md) - Learn how to determine the number and size of local cache disks to allocate for your File Gateway.
 + [Configuring additional cache storage](ConfiguringLocalDiskStorage.md) - Learn how to increase the cache storage capacity of your File Gateway as your application needs change.
 + [Using ephemeral storage with EC2 gateways](ephemeral-disk-cache.md) - Learn how to prevent data loss when using ephemeral disk storage with File Gateway.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

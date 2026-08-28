@@ -101,3 +101,7 @@ You will need to fetch the device token and use it to register an end-user mobil
    1.  Firebase Cloud Messaging (FCM) : Consult the FCM documentation on [Understanding message delivery](https://firebase.google.com/docs/cloud-messaging/understand-delivery?platform=android) for insights into your FCM usage.
 
    1.  Apple Push Notification service (APNs) : Review the APNs documentation section on [Viewing the status of push notifications using Metrics and APNs](https://developer.apple.com/documentation/usernotifications/viewing-the-status-of-push-notifications-using-metrics-and-apns) to monitor your notification status.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

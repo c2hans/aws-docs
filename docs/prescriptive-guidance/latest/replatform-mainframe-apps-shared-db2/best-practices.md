@@ -46,3 +46,7 @@ The elasticity of cloud computing introduces a paradigm shift that significantly
 In a cloud environment, organizations can scale their computing resources up or down in real time based on actual demand, which eliminates the need for overprovisioning to accommodate peak loads. This elasticity allows businesses to pay only for the resources they consume instead of investing in expensive hardware and software licenses to handle occasional spikes in usage.
 
 For details on how pricing works on AWS, see [AWS Pricing](https://aws.amazon.com/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

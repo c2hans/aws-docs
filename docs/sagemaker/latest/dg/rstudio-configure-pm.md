@@ -28,3 +28,7 @@ You can update the Package Manager URL used for your RStudio-enabled domain as f
  **CLI**
 
 The only way to update your Package Manager URL from the AWS CLI is to delete your domain and create a new one with the updated Package Manager URL.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

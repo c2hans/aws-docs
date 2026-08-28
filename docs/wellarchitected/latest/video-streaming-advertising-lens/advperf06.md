@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/video-streaming-a
 **Topics**
 + [ADVPERF06-BP01 Adopt a chipset-agnostic workload design for best availability of cloud resources and cost](advperf06-bp01.md)
 + [ADVPERF06-BP02 Optimize your intake request format (like HTTP/2 or HTTP/3) for faster processing ](advperf06-bp02.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

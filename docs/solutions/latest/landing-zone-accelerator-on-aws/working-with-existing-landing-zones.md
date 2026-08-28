@@ -49,3 +49,7 @@ If you encounter errors related to existing resource conflicts during your solut
 Existing SCPs in your environment can cause deployment of accelerator resources to fail. If the solution encounters an explicit deny from an SCP, ensure that the [conditions block](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_policies_scps_syntax.html#scp-syntax-condition) of your statements (if applicable) are updated to allow actions from the solution [administrative role](administrative-role.md) and roles using the **Accelerator Resource name prefix** parameter.
 
 Alternatively, you can migrate the management of your SCPs to the solution. This provides you the added benefit of using our [policy replacement variables](working-with-solution-specific-variables.md#policy-replacement-variables) in your policy documents to reference the aforementioned role names. For more information, see [Adding a service control policy (SCP)](performing-administrator-tasks.md#adding-a-service-control-policy-scp).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

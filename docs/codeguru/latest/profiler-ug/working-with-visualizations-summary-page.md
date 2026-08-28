@@ -56,3 +56,7 @@ CodeGuru Profiler discovers anomalies by analyzing trends in your profiling data
 <a name="working-with-visualizations-recommendations"></a>
 
 CodeGuru Profiler makes recommendations that you can use to optimize your applications. Any recommendations available are shown here along with details of the estimated impact on your overall application profile. Further details can be found on the linked report.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeGuru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeguru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

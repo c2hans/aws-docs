@@ -389,3 +389,7 @@ To learn more about the AWS SAM CLI and to begin building your own serverless a
 + [Tutorial: Deploy a Hello World application with AWS SAM](serverless-getting-started-hello-world.md) – Step-by-step instructions to download, build, and deploy a basic serverless application.
 + [The Complete AWS SAM Workshop](https://catalog.workshops.aws/complete-aws-sam/en-US) – A workshop designed to teach you many of the major features that AWS SAM provides.
 + [AWS SAM example applications and patterns](https://serverlessland.com/patterns?framework=AWS+SAM) – Sample applications and patterns from community authors that you can further experiment with.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

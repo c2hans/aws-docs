@@ -108,3 +108,7 @@ Now that you’ve confirmed you can connect to your database from your instance,
 After transferring your application data to your Aurora database, you should configure the application running on your LAMP instance to connect to your Aurora database. Connect to your LAMP instance using SSH, and access the application’s database configuration file. In the configuration file, define the endpoint address of your Aurora database, the database user name, and password. Following is an example configuration file.
 
 ![Application configuration file.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/lamp-aurora-application-config-file.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

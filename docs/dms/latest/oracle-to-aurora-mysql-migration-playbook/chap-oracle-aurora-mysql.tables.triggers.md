@@ -147,3 +147,7 @@ DROP TRIGGER PROJECTS_SET_NULL
 | Disable a trigger |  <pre>ALTER TRIGGER UpperNewDeleteOld<br />DISABLE;</pre>  | Not supported. Can be achieved by setting variables for each trigger to determine if it is turned off or turned on, and then checking the variable in an `IF` statement. |
 
 For more information, see [Trigger Syntax and Examples](https://dev.mysql.com/doc/refman/5.7/en/trigger-syntax.html) and [CREATE TRIGGER Statement](https://dev.mysql.com/doc/refman/5.7/en/create-trigger.html) in the *MySQL documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

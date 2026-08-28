@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
  Many organizations in the healthcare vertical operate on thin profit margins (or operate at a loss), which limits their capacity to make sustainability investments. Fortunately, the Well-Architected best practices for sustainability can also help to lower total cost of ownership for healthcare workloads. As presented below, organizations can decrease costs as they mitigate downstream environmental impacts, supporting better health across our communities.
 
  The [Well-Architected Sustainability pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html) offers an improvement process to guide efforts to minimize unfavorable environmental impacts for all cloud workloads. For healthcare workloads, the following considerations and best practices should also be considered.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

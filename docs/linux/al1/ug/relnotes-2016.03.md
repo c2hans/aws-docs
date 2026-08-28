@@ -272,3 +272,7 @@ Many of our packages have been re-synced to newer upstream versions. Some of the
 <a name="instance-types-2016.03"></a>
 
 [This compatibility table](relnotes-2015.09.md#instance-types-2015.09) shows which 2016.03 AMIs launch on each Amazon EC2 instance type.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -469,3 +469,7 @@ curl -s "https://{{your-neptune-endpoint}}:{{port}}/ml/dataprocessing?maxItems=3
 + **`neptuneIamRoleArn`**   –   (*Optional*) The ARN of an IAM role that provides Neptune access to SageMaker AI and Amazon S3 resources.
 
   *Type*: string. *Note*: This must be listed in your DB cluster parameter group or an error will occur.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

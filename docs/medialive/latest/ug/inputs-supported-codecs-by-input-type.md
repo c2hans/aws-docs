@@ -25,3 +25,7 @@ The following table lists the video and audio codecs that each type of MediaLive
 **HLS inputs**
 
 The audio and video assets can be multiplexed in a single stream. Or the audio can be in a separate audio rendition group. If you are using audio in a rendition group, the group can be selected by using the **Group ID** and **Name** that is in the **\#EXT-X-MEDIA** tag.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

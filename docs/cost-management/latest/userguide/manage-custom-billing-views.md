@@ -19,3 +19,7 @@ You can change the definition of an existing custom billing view at any time. On
 + [Managing shared access to custom billing views outside of your organization](manage-external-shared-access-custom-billing-views.md)
 
 You can control which accounts can access a custom billing view by modifying its associated resource share. Once you add an account to the resource share, the account gains access to the custom billing view. Once you remove an account from the resource share, the account loses access to the custom billing view.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

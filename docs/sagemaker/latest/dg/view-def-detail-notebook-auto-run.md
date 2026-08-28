@@ -33,3 +33,7 @@ In addition, this page provides shortcuts for the following actions:
 + **Run**: Run a single on-demand job from this job definition. This option also lets you specify different input parameters to your notebook before starting the job.
 + **Edit Job Definition**: Change the schedule of your job definition. You can select a different time interval, or you can opt for a custom schedule using cron syntax.
 + **Delete Job Definition**: Remove the job definition from the **Notebook Job Definitions** tab. Note that if a job is currently running for this definition, Studio does not stop it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

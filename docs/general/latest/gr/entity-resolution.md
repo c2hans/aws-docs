@@ -52,3 +52,7 @@ The following are the service endpoints and service quotas for this service.
 | Schema mappings | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/entityresolution/quotas/L-00E43259)  | The maximum number of schema mappings that you can create in this account in the current AWS Region. |
 
 For more information, see [AWS Entity Resolution quotas](https://docs.aws.amazon.com/entityresolution/latest/userguide/quotas.html) in the *AWS Entity Resolution User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

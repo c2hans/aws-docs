@@ -14,3 +14,7 @@ The following best practices for Amazon Monitron can help prevent security incid
 + Be aware that all project and site admins using the Amazon Monitron mobile app will have read access to all users in your organization who are listed in the user directory you choose when setting up your project. We strongly recommend using an isolated directory if you want to limit access to user organization information.
 + Because of the danger of phishing attacks, in which an attacker sends an email impersonating a Amazon Monitron project invitation email to your users, warn users to make sure that the directory name is visible on the login screen before they enter their sign-in credentials.
 + Because the Amazon Monitron mobile app runs on a smartphone and has access to your project, have all users enable screen lock to protect access when not in use.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Monitron. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Monitron` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

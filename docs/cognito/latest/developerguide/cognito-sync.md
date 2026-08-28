@@ -26,3 +26,7 @@ To learn more about Amazon Cognito Sync, see the following topics.
 + [Implementing push synchronization](push-sync.md)
 + [Implementing Amazon Cognito Sync streams](cognito-streams.md)
 + [Customizing workflows with Amazon Cognito Events](cognito-events.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

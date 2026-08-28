@@ -22,3 +22,7 @@ Let us say you have a business that has online funds transfer as one of its acti
 Amazon Fraud Detector uses components such as, training dataset, model, detector, rules, and outcomes to provide your business with a fraud evaluation logic.
 
 For information about the workflow you'll use for detecting fraud using Amazon Fraud Detector, see [Detecting fraud with Amazon Fraud Detector](frauddetector-workflow.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Fraud Detector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query frauddetector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

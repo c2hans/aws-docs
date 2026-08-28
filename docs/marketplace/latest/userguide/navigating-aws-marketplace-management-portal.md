@@ -23,3 +23,7 @@ In the homepage dashboard, you may see "not registered" as your Partner Account 
 <a name="ammp-nav-new-users"></a>
 
 If you have not registered for either AWS Marketplace or AWS Partner Central, proceed with the [Marketplace seller registration process](https://docs.aws.amazon.com/marketplace/latest/userguide/registration-process.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

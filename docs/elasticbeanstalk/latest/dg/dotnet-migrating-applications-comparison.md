@@ -80,3 +80,7 @@ While AWS Transform MGN offers powerful capabilities for large-scale server migr
 Choose the migration approach that best fits your specific requirements, considering factors such as scale, complexity, and your desired end-state architecture on AWS.
 
 For more information about AWS Transform MGN, see [What is AWS Transform MGN?](https://docs.aws.amazon.com/mgn/latest/ug/what-is-application-migration-service.html) in the AWS Transform MGN User Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
  An example of technique and access containment can be seen in the following diagram, with an incident responder rotating access keys or removing an IAM policy to prevent an IAM user from accessing an Amazon S3 bucket.
 
 ![Diagram showing a technique and access containment example](http://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/images/technique-and-access-containment.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

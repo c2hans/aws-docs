@@ -27,3 +27,7 @@ When you use Amazon Q generative SQL in Amazon Redshift, your content is stored 
 When you create an investigation with Amazon CloudWatch investigations, your content may be stored and processed in other Regions. For more information, see the [Security in CloudWatch investigations](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Investigations-Security.html#cross-region-inference) topic in the *Amazon CloudWatch User Guide*.
 
 With cross-region inferencing, your requests to Amazon Q Developer may be processed in a different Region within the geography where your content is stored. For more information, see [Cross-region inference](cross-region-processing.md#cross-region-inference).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

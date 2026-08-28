@@ -202,3 +202,7 @@ postgres=> select * from sys.jobs;
  ve32upmjz5dgdknpbleeca5tri | failed    | Found duplicate key while validating index for UCVs | INDEX_BUILD |     1259 |     26396 | public.idx_users_email | 2025-05-20 00:49:49+00 | 2025-05-20 00:49:56+00
 (2 rows)
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

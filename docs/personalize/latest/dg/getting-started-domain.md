@@ -16,3 +16,7 @@ When you finish the getting started exercise, to avoid incurring unnecessary cha
 + [Getting started with a Domain dataset group (SDK for Java 2.x)](domain-getting-started-java.md)
 + [Getting started with a Domain dataset group (SDK for Python (Boto3))](getting-started-domain-python.md)
 + [Getting started with a Domain dataset group (SDK for JavaScript v3)](getting-started-domain-js.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

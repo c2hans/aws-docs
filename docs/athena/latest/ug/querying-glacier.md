@@ -63,3 +63,7 @@ aws glue update-table \
 
 **Important**
 The AWS Glue `update-table` command works in overwrite mode, which means that it replaces the existing table definition with the new definition specified by the `table-input` parameter. For this reason, be sure to also specify all of the fields that you want to be in your table in the `table-input` parameter when you add the `read_restored_glacier_objects` property.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

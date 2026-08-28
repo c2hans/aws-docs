@@ -83,3 +83,7 @@ A standardized report format also provides readers with a sense of familiarity a
 <a name="implement-resilience-in-depth"></a>
 
 As discussed earlier, an advanced organization will implement multiple responses to an alarm. There is no guarantee that a response will be effective, so by layering responses an application will be better equipped to fail gracefully. We recommend that you implement at least two responses for each indicator to ensure that an individual response doesn't become a single point of failure that might lead to a DR scenario.  These layers should be created in serial order, so that a successive response is performed only if the previous response was ineffective. You shouldn't run multiple layered responses to a single alarm. Instead, use an alarm that indicates whether a response has been unsuccessful, and, if so, initiates the next layered response.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

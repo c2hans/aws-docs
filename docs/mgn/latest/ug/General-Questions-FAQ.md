@@ -129,7 +129,7 @@ MGN uses the following Private API resources as actions in the IAM Policy. [Lear
 + UpdateAgentReplicationProcessStateForMgn – Grants permission to update agent replication process state.
 + UpdateAgentSourcePropertiesForMgn – Grants permission to update agent source properties.
 + CreateVcenterClientForMgn – Grants permission to create a vCenter client.
-+ GetVcenterClientCommandsForMgn – Grants permission get a vCenter client.
++ GetVcenterClientCommandsForMgn – Grants permission to get vCenter client commands.
 + SendVcenterClientCommandResultForMgn – Grants permission to send vCenter client command result.
 + SendVcenterClientLogsForMgn – Grants permission to send vCenter client logs.
 + SendVcenterClientMetricsForMgn – Grants permission to send vCenter client metrics.
@@ -197,3 +197,7 @@ Therefore, if you are using a custom DNS, you will need to add a TCP port 53 to 
  Note that you cannot install the DRS and MGN agents on the same server at the same time. If you already installed the MGN agent on a server, and want to use DRS for migration, you must uninstall the MGN agent before installing the DRS agent.
 
  Note that there are costs associated with using the DRS service. For DRS pricing information see [AWS Elastic Disaster Recovery pricing](https://aws.amazon.com/disaster-recovery/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

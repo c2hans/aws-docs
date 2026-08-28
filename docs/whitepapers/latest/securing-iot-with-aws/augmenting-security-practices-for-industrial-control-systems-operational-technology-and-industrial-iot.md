@@ -71,3 +71,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/securing-iot-with-aws
    +  Perform threat and risk assessment of OT and IIoT, and supporting IT systems, and develop written procedures on how to return to the normal, well-defined, state of operation tailored to the assessment’s results.
    +  In business continuity and recovery plans, include third-party aspects.
    +  Conduct ongoing security testing across OT and IIoT periodically to test devices and OT systems, edge gateways, networks, and communication and cloud services.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

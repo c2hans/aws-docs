@@ -48,3 +48,7 @@ On the CloudWatch console you can view all MediaLive metrics for any range of ti
 1. On the choices on the right of the tab, specify the **Statistic** and the **Period**.
 
    When you choose the period, the graph refreshes to show the [maximum time range for that period](eml-metrics-gen-info.md#eml-metrics-about-time-range). If the graph is now empty on the left, you can adjust the timeline in the choices at the top right of the graph. Choose a lower number so that the full space is filled up. For example, change **1w** to **1d**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

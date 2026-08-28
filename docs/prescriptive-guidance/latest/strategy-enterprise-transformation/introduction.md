@@ -57,3 +57,7 @@ This gap in value realization underscores the need for a comprehensive and struc
 [2] [The race to cloud: Reaching the inflection point to long sought value](https://www.accenture.com/us-en/insights/cloud/cloud-outcomes-perspective) (Accenture research report, 2023)
 
 [3] [Change Management Success](https://www.prosci.com/change-management-success) (Prosci)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

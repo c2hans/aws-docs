@@ -30,3 +30,7 @@ source_url: https://docs.aws.amazon.com/dms/latest/sbs/bigquery-redshift-migrati
 1. For **Working folder**, enter the folder where the data extraction agent can store its data. Choose the project folder and make sure that you don’t need admin rights to write data to this folder.
 
 1. For **Enable SSL communication**, enter `no`. Then enter `yes` to confirm your choice. In this walkthrough, we don’t use SSL to connect to databases. If you use SSL, configure the agent.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

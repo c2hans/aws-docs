@@ -73,3 +73,7 @@ COPY --from=build /app/aspnetmvcapp/. ./
  The Amazon ECS container instances should be treated as [ephemeral](https://webapp.io/blog/what-is-an-ephemeral-environment/) servers. There is an option to use [EC2 Image Builder](https://aws.amazon.com/image-builder/) to build your own AMI with all of the necessary patches and security configuration. This service also enables you to include an additional step in the EC2 Image Builder pipeline to download and extract Docker images directly on the AMI, which reduces the time it takes to launch an EC2-based task on your Amazon ECS cluster.
 
  For more information on caching layer strategy, refer to [Speeding up Windows container launch times with EC2 Image Builder and image cache strategy](https://aws.amazon.com/blogs/containers/speeding-up-windows-container-launch-times-with-ec2-image-builder-and-image-cache-strategy/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

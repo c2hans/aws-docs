@@ -154,3 +154,7 @@ Step Functions accepts names for state machines, executions, activities, and lab
 
 **Note**
 You can also pass payloads while invoking Lambda from a state machine. For more information and examples about invoking Lambda by passing payload in the `Parameters` field, see [Invoke an AWS Lambda function with Step Functions](connect-lambda.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Step Functions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query step-functions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,3 +37,7 @@ Sign in with the same user that you set up in [Getting started with CodeDeploy](
 <a name="applications-delete-cli"></a>
 
 To use the AWS CLI to delete an application, call the [delete-application](https://docs.aws.amazon.com/cli/latest/reference/deploy/delete-application.html) command, specifying the application name. To view a list of application names, call the [list-applications](https://docs.aws.amazon.com/cli/latest/reference/deploy/list-applications.html) command.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeDeploy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codedeploy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

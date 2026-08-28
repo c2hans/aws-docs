@@ -458,3 +458,7 @@ The S3 bucket that you specify for the trail must have a bucket policy that allo
    ```
 
 The `readOnly: false` filter limits logging to write operations (PutMetricData), which includes all OTLP ingestion calls. To identify bearer token usage among these events, query your trail logs (through Athena or CloudTrail Lake) and filter by the IAM user name associated with your API key (for example, `cloudwatch-metrics-api-key-user`). Events from OTLP ingestion include `AdditionalEventData.protocol` set to `OTLP` in the event payload, which you can use in post-hoc queries to distinguish them from classic PutMetricData SDK calls.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

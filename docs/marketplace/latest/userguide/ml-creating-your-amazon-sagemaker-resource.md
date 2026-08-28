@@ -180,3 +180,7 @@ After you have set the tuning parameters, if any, you must set the specification
 The validation step only validates batch processing. It is up to you to validate that real-time processing works with your product.
 
  You have completed creating your algorithm product resources. Continue to [Listing your product in AWS Marketplace](ml-publishing-your-product-in-aws-marketplace.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

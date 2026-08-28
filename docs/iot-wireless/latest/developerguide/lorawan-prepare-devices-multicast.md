@@ -112,3 +112,7 @@ To get information about the values specified for these parameters, you can use 
 After you've configured the parameters, you can create multicast groups and FUOTA tasks to send downlink payload or update the firmware of your LoRaWAN devices.
 + For information about creating multicast groups, see [Create multicast groups and add devices to the group](lorawan-create-multicast-groups.md).
 + For information about creating FUOTA tasks, see [Create FUOTA task and provide firmware image](lorawan-fuota-create-task.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ Are there tag restrictions? Yes:
 + Allowed characters are Unicode letters, white space, numbers, and the following special characters: \+ - = . \_ : /
 
 Which AWS resource types support tags? See [ Now Organize Your AWS Resources by Using up to 50 Tags per Resource](https://aws.amazon.com/blogs/security/now-organize-your-aws-resources-by-using-up-to-50-tags-per-resource/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

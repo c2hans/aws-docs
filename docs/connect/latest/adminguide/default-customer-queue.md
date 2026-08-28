@@ -41,3 +41,7 @@ The following steps show how to change the default message customers hear when t
 
 1. Choose **Publish**. Connect Customer starts playing the new message almost immediately (it might take a few moments for it to fully take effect).
 ![The publish button on the flow designer.](http://docs.aws.amazon.com/connect/latest/adminguide/images/customize-default-contact-flow4.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

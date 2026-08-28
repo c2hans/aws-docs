@@ -30,6 +30,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ExternalDataFilteringAllowList](#cfn-lakeformation-datalakesettings-externaldatafilteringallowlist)" : {{[ DataLakePrincipal, ... ]}},
       "[MutationType](#cfn-lakeformation-datalakesettings-mutationtype)" : {{String}},
       "[Parameters](#cfn-lakeformation-datalakesettings-parameters)" : {{Json}},
+      "[ReadOnlyAdmins](#cfn-lakeformation-datalakesettings-readonlyadmins)" : {{[ DataLakePrincipal, ... ]}},
       "[TrustedResourceOwners](#cfn-lakeformation-datalakesettings-trustedresourceowners)" : {{[ String, ... ]}}
     }
 }
@@ -55,6 +56,8 @@ Properties:
     - DataLakePrincipal}}
   [MutationType](#cfn-lakeformation-datalakesettings-mutationtype): {{String}}
   [Parameters](#cfn-lakeformation-datalakesettings-parameters): {{Json}}
+  [ReadOnlyAdmins](#cfn-lakeformation-datalakesettings-readonlyadmins): {{
+    - DataLakePrincipal}}
   [TrustedResourceOwners](#cfn-lakeformation-datalakesettings-trustedresourceowners): {{
     - String}}
 ```
@@ -127,6 +130,14 @@ If you choose `REPLACE`, your current data lake settings will be replaced with t
 A key-value map that provides an additional configuration on your data lake. `CrossAccountVersion` is the key you can configure in the `Parameters` field. Accepted values for the `CrossAccountVersion` key are 1, 2, 3, and 4.
 *Required*: No
 *Type*: Json
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`ReadOnlyAdmins`  <a name="cfn-lakeformation-datalakesettings-readonlyadmins"></a>
+A list of AWS Lake Formation principals with only view access to the resources, without the ability to make changes. Supported principals are IAM users or IAM roles.
+*Required*: No
+*Type*: Array of [DataLakePrincipal](aws-properties-lakeformation-datalakesettings-datalakeprincipal.md)
+*Minimum*: `0`
+*Maximum*: `30`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `TrustedResourceOwners`  <a name="cfn-lakeformation-datalakesettings-trustedresourceowners"></a>
@@ -322,3 +333,7 @@ Resources:
         - "012345678910"
         - "109876543210"
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

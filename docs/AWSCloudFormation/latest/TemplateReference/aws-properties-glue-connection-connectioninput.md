@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[AthenaProperties](#cfn-glue-connection-connectioninput-athenaproperties)" : {{Json}},
-  "[AuthenticationConfiguration](#cfn-glue-connection-connectioninput-authenticationconfiguration)" : {{AuthenticationConfigurationInput}},
+  "[AuthenticationConfiguration](#cfn-glue-connection-connectioninput-authenticationconfiguration)" : {{AuthenticationConfiguration}},
   "[ConnectionProperties](#cfn-glue-connection-connectioninput-connectionproperties)" : {{Json}},
   "[ConnectionType](#cfn-glue-connection-connectioninput-connectiontype)" : {{String}},
   "[Description](#cfn-glue-connection-connectioninput-description)" : {{String}},
@@ -40,7 +40,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [AthenaProperties](#cfn-glue-connection-connectioninput-athenaproperties): {{Json}}
   [AuthenticationConfiguration](#cfn-glue-connection-connectioninput-authenticationconfiguration): {{
-    AuthenticationConfigurationInput}}
+    AuthenticationConfiguration}}
   [ConnectionProperties](#cfn-glue-connection-connectioninput-connectionproperties): {{Json}}
   [ConnectionType](#cfn-glue-connection-connectioninput-connectiontype): {{String}}
   [Description](#cfn-glue-connection-connectioninput-description): {{String}}
@@ -68,7 +68,7 @@ Connection properties specific to the Athena compute environment.
 `AuthenticationConfiguration`  <a name="cfn-glue-connection-connectioninput-authenticationconfiguration"></a>
 The authentication properties of the connection.
 *Required*: No
-*Type*: [AuthenticationConfigurationInput](aws-properties-glue-connection-authenticationconfigurationinput.md)
+*Type*: [AuthenticationConfiguration](aws-properties-glue-connection-authenticationconfiguration.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ConnectionProperties`  <a name="cfn-glue-connection-connectioninput-connectionproperties"></a>
@@ -143,7 +143,7 @@ The name of the connection.
 *Pattern*: `[\u0020-\uD7FF\uE000-\uFFFD\uD800\uDC00-\uDBFF\uDFFF\t]*`
 *Minimum*: `1`
 *Maximum*: `255`
-*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `PhysicalConnectionRequirements`  <a name="cfn-glue-connection-connectioninput-physicalconnectionrequirements"></a>
 The physical connection requirements, such as virtual private cloud (VPC) and `SecurityGroup`, that are needed to successfully make this connection.
@@ -174,3 +174,7 @@ The compute environments that the specified connection properties are validated 
 *Required*: No
 *Type*: Array of String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

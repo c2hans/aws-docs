@@ -46,3 +46,7 @@ You should expect the following outcomes after you decompose your monoliths into
 + An efficient transition of your monolithic application into a microservices architecture.
 + Rapid adjustments to fluctuating business demand without interrupting core activities, such as high scalability, improved resiliency, continuous delivery, and failure isolation.
 + Faster innovation, because each microservice can be individually tested and deployed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

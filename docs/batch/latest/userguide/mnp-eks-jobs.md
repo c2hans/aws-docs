@@ -14,3 +14,7 @@ You can use this feature to run Amazon EKS managed Kubernetes-specific high-perf
 + [Create an Amazon EKS MNP job definition](mnp-eks-create-eks-mnp-job-definition.md)
 + [Submit an Amazon EKS MNP job](mnp-eks-submit-eks-mnp-job.md)
 + [Override an Amazon EKS MNP job definition](mnp-eks-override-eks-mnp-job-definition.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

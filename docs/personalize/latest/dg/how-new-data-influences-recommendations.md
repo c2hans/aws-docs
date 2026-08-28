@@ -62,3 +62,7 @@ The following can increase recommendation relevance for new users:
 New actions are actions that you import since the latest training. They can come from either action interaction data or actions in an Actions dataset.
 
 With the Next-Best-Action recipe, Amazon Personalize automatically updates a solution version every two hours. After each update, Amazon Personalize considers new actions for recommendations as part of exploration. When considering the new action, Amazon Personalize considers any metadata for the action. However, this data will have a greater effect on recommendations only after you record action interactions for the action and fully retrain. For information about updates, see [Automatic updates](use-case-recipe-features.md#automatic-updates)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

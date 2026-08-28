@@ -260,3 +260,7 @@ To request a service quota increase for SageMaker training instances, you may do
 1. Enter the desired concurrent instance count into the **Increase quota value** box, and, if applicable, review it against the value provided for **Utilization**.
 
 1. When you are ready to submit the request, click **Request**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

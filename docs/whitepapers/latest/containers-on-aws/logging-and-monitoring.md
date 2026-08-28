@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/containers-on-aws/log
  [Amazon Managed Grafana](https://aws.amazon.com/grafana/) is a managed service for open-source Grafana. It simplifies interactive visualization and analysis for your data sources at scale. You can visualize, analyze, and alarm on your metrics, logs, and traces collected from multiple data sources in your observability system. This includes AWS services, third-party ISVs, and other resources in your environment.
 
  [AWS Distro for OpenTelemetry](https://aws.amazon.com/otel/) (ADOT) is a secure production-ready, AWS-supported distribution of the OpenTelemetry project, which provides a single set of open-source APIs, libraries, and agents to collect and correlate distributed traces and metrics. ADOT consists of SDKs, auto-instrumentation agents, collectors and exporters to send data to back-end services, including Amazon CloudWatch, X-Ray, and Amazon Managed Service for Prometheus.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

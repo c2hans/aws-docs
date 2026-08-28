@@ -40,3 +40,7 @@ It is critical that you understand the AWS shared responsibility model when you 
 AWS Well-Architected helps cloud architects build secure, high-performing, resilient, and efficient infrastructure for a variety of applications and workloads. The [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html) provides architectural best practices that help you design, build, and operate systems on AWS. This framework is built around six pillars: operational excellence, security, reliability, performance efficiency, cost optimization, and sustainability.
 
 AWS also provides a service for reviewing your workloads. The [AWS Well-Architected Tool](https://aws.amazon.com/well-architected-tool/) helps you review and assess your architecture by using the AWS Well-Architected Framework. It provides recommendations for making your workloads more reliable, secure, efficient, and cost-effective.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

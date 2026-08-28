@@ -33,3 +33,7 @@ Complete the following procedure to disable the AWS IAM Identity Center for Amaz
 1. SSO users will lose access to the Amazon DataZone domain.
 
 1. To re-enable AWS IAM Identity Center for the Amazon DataZone domain, choose the domain for which you want to re-enable AWS IAM Identity Center, and from the **Actions** menu, choose **Enable**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,7 +39,7 @@ The request does not use any URI parameters.
 The request accepts the following data in JSON format.
 
  ** [accountID](#API_DescribeSourceServers_RequestSyntax) **   <a name="mgn-DescribeSourceServers-request-accountID"></a>
-Request to filter Source Servers list by Accoun ID.
+Request to filter Source Servers list by Account ID.
 Type: String
 Length Constraints: Fixed length of 12.
 Pattern: `.*[0-9]{12,}.*`
@@ -211,11 +211,11 @@ If the action is successful, the service sends back an HTTP 200 response.
 The following data is returned in JSON format by the service.
 
  ** [items](#API_DescribeSourceServers_ResponseSyntax) **   <a name="mgn-DescribeSourceServers-response-items"></a>
-Request to filter Source Servers list by item.
+The list of returned Source Servers.
 Type: Array of [SourceServer](API_SourceServer.md) objects
 
  ** [nextToken](#API_DescribeSourceServers_ResponseSyntax) **   <a name="mgn-DescribeSourceServers-response-nextToken"></a>
-Request to filter Source Servers next token.
+The token of the next Source Server to retrieve.
 Type: String
 Length Constraints: Minimum length of 0. Maximum length of 2048.
 
@@ -250,3 +250,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/mgn-2020-02-26/DescribeSourceServers)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/mgn-2020-02-26/DescribeSourceServers)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/mgn-2020-02-26/DescribeSourceServers)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for ApplicationMigrationService. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

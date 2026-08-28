@@ -10,3 +10,7 @@ Malicious users may try to re-stream undesirable content (e.g., professional spo
 To constrain playback to specific origins and/or countries, use a playback restriction policy. Note that these policies can be used only with public channels. [Undesired Content and Viewers in IVS](undesired-content.md) also discusses the use of private channels to control undesired content.
 
 Note that playback restriction policies (such as geo-blocking) cannot be used simultaneously with playback authorization. If playback authorization is enabled for a channel, any configured playback restriction policies will be ignored. To enforce geo-restrictions on a private channel, validate the user's location within your token generation logic before issuing a playback token.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

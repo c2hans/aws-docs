@@ -166,3 +166,7 @@ View details about updates to AWS managed policies for AWS Proton since this ser
 | [AWSProtonDeveloperAccess](#security-iam-awsmanpol-AWSProtonDeveloperAccess) – New policy | AWS Proton added a new policy to provide developer role access to AWS Proton API operations and to the AWS Proton console. | June 09, 2021 |
 | [AWSProtonReadOnlyAccess](#security-iam-awsmanpol-AWSProtonReadOnlyAccess) – New policy | AWS Proton added a new policy to provide read-only access to AWS Proton API operations and to the AWS Proton console. | June 09, 2021 |
 | AWS Proton started tracking changes. | AWS Proton started tracking changes for its AWS managed policies. | June 09, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -101,3 +101,7 @@ For more information about the requirements and details of the Amazon DCV server
 | Port | The port of the Amazon DCV server endpoint (`Servers.Endpoints.Port` in the `DescribeServers` API). |
 | Web URL path | The web URL path of the Amazon DCV server endpoint. Available for the HTTP protocol only (`Servers.Endpoints.WebUrlPath` in the `DescribeServers` API). |
 | Tags | The tags assigned to the host server that the Amazon DCV server is running on (`Host.Tags` in the `DescribeServers` API). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

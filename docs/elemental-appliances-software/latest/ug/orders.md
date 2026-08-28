@@ -52,3 +52,7 @@ Each delivery address requires a contact name, phone number, and email address. 
 After you submit the quote, the **Quote and order history** page shows **Quote Confirmed**, and you receive a confirmation email. If additional quotes that are received in the same email are synced to your AWS account, they are marked as **Expired** so that no future action is taken on them. If you want to associate a quote with a different AWS account, submit a change request.
 
 If your order is for something physical that is shipped, you can see your tracking number on the quote details page. You will also receive an email from UPS with your tracking number and order details. The UPS **Transaction Reference Number** matches the **Confirmation number** in the **Details** section of your order in the console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Appliances and Software. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-appliances-software` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

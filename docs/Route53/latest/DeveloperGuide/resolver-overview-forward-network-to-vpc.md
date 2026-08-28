@@ -62,3 +62,7 @@ You might also need to include the glue records to make sure the DNS query is re
 1. Using the value that was returned by VPC Resolver, the application submits a request, for example, a request for an object in an Amazon S3 bucket.
 
 Creating an inbound endpoint doesn't change the behavior of VPC Resolver, it just provides a path from a location outside the AWS network to VPC Resolver.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

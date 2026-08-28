@@ -86,3 +86,7 @@ The following figure shows the target topology.
  If SIP connections are initiated, another option is to use [AWS Marketplace](https://aws.amazon.com/marketplace) commercial off-the-shelf software (COTS). The AWS Marketplace offers many products that can handle UDP and other types of layer four connection load balancing. COTS typically include support for high availability and commonly integrate with features, such as Amazon EC2 Auto Scaling, to further enhance availability and scalability. The following figure shows the target topology:
 
 ![A diagram depicting SIP-based RTC scalability with AWS Marketplace product.](http://docs.aws.amazon.com/whitepapers/latest/real-time-communication-on-aws/images/sip-based-rtc-scalability.jpg)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

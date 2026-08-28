@@ -1622,3 +1622,7 @@ To clean up, you can delete the AWS AppSync GraphQL API from the console.
 To delete the role associated with your DynamoDB table, select your data source in the **Data Sources** table and click **edit**. Note the value of the role under **Create or use an existing role**. Go to the IAM console to delete the role.
 
 To delete your DynamoDB table, click on the name of the table in the data sources list. This takes you to the DynamoDB console where you can delete the table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

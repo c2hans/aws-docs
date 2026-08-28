@@ -31,3 +31,7 @@ If you have additional questions, contact [AWS Support](https://aws.amazon.com/s
 + **How do I migrate off of .NET Modernization Tools?**
 
   No formal migration process is required. Existing projects can continue in Porting Assistant (PA) for .NET, AWS App2Container (A2C), AWS Toolkit for .NET Refactoring (TR), or AWS Microservice Extractor (ME) for .NET until completion. For new projects, you can start directly in AWS Transform, which provides all the familiar capabilities of .NET Modernization Tools with enhanced features. No data migration is needed, and [AWS Support](https://aws.amazon.com/support) is available to assist with the transition.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

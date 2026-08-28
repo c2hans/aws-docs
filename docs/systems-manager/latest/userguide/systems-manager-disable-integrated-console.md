@@ -25,3 +25,7 @@ If you can't access the delegated administrator account for Systems Manager, you
 
 **Note**
 If you don't know the value for {{configuration-manager-id}}, call the `ListConfigurationManagers` API action and filter the results using the `AWSQuickSetupType-SSM` type.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,3 +36,7 @@ You can view resources that are shared with your account by using the Lake Forma
 1. Do one of the following:
    + To see resources that you shared, in the navigation pane, under **Shared by me**, choose **Shared resources**.
    + To see resources that are shared with you, in the navigation pane, under **Shared with me**, choose **Shared resources**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

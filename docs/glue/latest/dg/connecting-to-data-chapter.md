@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/connecting-to-data-chapte
 + [Using files in Amazon S3 for the data source](edit-jobs-source-s3-files.md)
 + [Using a streaming data source](edit-jobs-source-streaming.md)
 + [References](edit-jobs-source-references.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

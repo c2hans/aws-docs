@@ -70,3 +70,7 @@ The worker agent sends operational metrics such as crash reports. You can opt ou
 <a name="cmf-network-private-connectivity"></a>
 
 You can use AWS PrivateLink to keep traffic between CMF worker hosts and Deadline Cloud within your VPC, without traversing the public internet. For on-premises workers, you can combine AWS PrivateLink with AWS Direct Connect (Direct Connect) or a VPN connection. For more information, see [Access AWS Deadline Cloud using an interface endpoint (AWS PrivateLink)](vpc-interface-endpoints.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

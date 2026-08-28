@@ -13,3 +13,7 @@ During WorkSpaces Secure Browser portal creation, you'll select a VPC in your ac
 We recommend you choose three subnets in different Availability Zones for availability and scaling consideration. For more information, see [Creating a new VPC for Amazon WorkSpaces Secure Browser](create-vpc.md).
 
 WorkSpaces Secure Browser doesn't assign any public IP address to streaming instances to enable internet access. This would make your streaming instances accessible from the internet. Therefore, any streaming instance connected to your public subnet won’t have internet access. If you want your WorkSpaces Secure Browser portal to have access to both public internet content and private VPC content, complete the steps in [Enabling unrestricted internet browsing for Amazon WorkSpaces Secure Browser (recommended)](unrestricted-internet-browsing.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

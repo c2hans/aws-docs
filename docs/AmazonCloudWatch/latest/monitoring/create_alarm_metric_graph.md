@@ -45,3 +45,7 @@ You can graph a metric and then create an alarm from the metric on the graph, wh
 1. Enter a name and description for the alarm. The name must contain only ASCII characters. Then choose **Next**.
 
 1. Under **Preview and create**, confirm that the information and conditions are what you want, then choose **Create alarm**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

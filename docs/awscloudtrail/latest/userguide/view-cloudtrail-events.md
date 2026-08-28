@@ -34,3 +34,7 @@ The following limitations apply to the event history.
 
   You can create a CloudTrail Lake event data store to query across multiple attributes and AWS Regions. You can also query across multiple AWS accounts in an AWS Organizations organization. In CloudTrail Lake, you can query multiple event types, including management events, data events, Insights events, AWS Config configuration items, Audit Manager evidence, and non-AWS events. CloudTrail Lake queries offer a deeper and more customizable view of events than simple key and value lookups on the **Event history** page, or by running `LookupEvents`. For more information, see [Working with AWS CloudTrail Lake](cloudtrail-lake.md) and [Create an event data store for CloudTrail events with the console](query-event-data-store-cloudtrail.md).
 + You cannot exclude AWS KMS or Amazon RDS Data API events from event history; settings that you apply to a trail or event data store do not apply to event history.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

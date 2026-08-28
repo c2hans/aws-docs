@@ -52,3 +52,7 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 +  `aws:executeAwsApi` - Encrypts the DynamoDB table you specify in the `TableName` parameter.
 +  `aws:waitForAwsResourceProperty` - Verifies the `Enabled` property for the DynamoDB table's `SSESpecification` is set to `true` .
 +  `aws:assertAwsResourceProperty` - Verifies the DynamoDB table is encrypted with the customer managed key specified in the `KMSKeyId` parameter.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

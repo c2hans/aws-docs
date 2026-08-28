@@ -74,3 +74,7 @@ Some services contain additional example categories that show how to leverage li
 + [Amazon Translate](powershell_translate_code_examples.md)
 + [AWS WAFV2](powershell_wafv2_code_examples.md)
 + [WorkSpaces](powershell_workspaces_code_examples.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ If you are a first-time user of the AWS AWS Snow Family service, we recommend th
 1. For equipment description and data, see [Snow Family device hardware description](hardware-information.md).
 
 1. When you're ready to get started, see [Getting started with Snow Family devices](getting-started.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Snow Family Device Guides. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

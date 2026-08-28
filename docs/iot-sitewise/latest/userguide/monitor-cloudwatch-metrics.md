@@ -79,3 +79,7 @@ AWS IoT SiteWise publishes gateway metrics for Classic streams, V2 gateways and 
 | Gateway.DataProcessor.MeasurementRejected (not available on MQTT-enabled, V3 gateways) | The number of measurements that were rejected, generated every minute.<br />Unit: Count<br />Dimensions: Reason |
 | Gateway.DataProcessor.MessagesRemaining (not available on MQTT-enabled, V3 gateways) | The number of messages remaining in a stream, generated every minute.<br />Unit: Count<br />Dimensions: StreamName |
 | Gateway.DataProcessor.ProcessingError (not available on MQTT-enabled, V3 gateways) | The number of processing errors, generated every minute.<br />Unit: Count<br />Dimensions: Reason |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

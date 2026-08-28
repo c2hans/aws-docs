@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
  **Evaluate the overall impact of applications, devices, and equipment**
 
  As documented in the [Sustainability pillar of the AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html), it is recommended to [optimize impact on customer devices and equipment](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/optimize-impact-on-customer-devices-and-equipment.html).  For example, as new features are released for a healthcare application, build those features as backward compatible, minimizing the need for new hardware.  Additionally, evaluate the potential impact of new or upgraded hardware requirements to minimize the overall impact when architecting new workloads or features.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

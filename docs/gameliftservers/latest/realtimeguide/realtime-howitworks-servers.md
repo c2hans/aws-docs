@@ -36,3 +36,7 @@ Amazon GameLift Servers Realtime provides functionality to manage groups of pla
 
 **Encryption with TLS certificates**
 With Amazon GameLift Servers Realtime, server authentication and data packet encryption are built into the service. You can choose to turn on these security features when you enable TLS certificate generation. When a game client tries to connect with a Realtime server, the server automatically responds with the TLS certificate, which the client validates. Amazon GameLift Servers encrypts TCP (WebSockets) traffic using TLS 1.2 and UDP traffic using DTLS 1.2.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

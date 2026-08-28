@@ -42,3 +42,7 @@ If you don't specify the sort order in the query statement, the default ordering
 The possible sort orders you can use in an ordering clause depend on the sort order assigned to each clustering column at table creation. Query results can only be sorted in the order defined for all clustering columns at table creation or the inverse of the defined sort order. Other possible combinations are not allowed.
 
 For example, if the table's `CLUSTERING ORDER` is (col1 ASC, col2 DESC, col3 ASC), then the valid parameters for `ORDER BY` are either (col1 ASC, col2 DESC, col3 ASC) or (col1 DESC, col2 ASC, col3 DESC). For more information on `CLUSTERING ORDER`, see `table_options` under [CREATE TABLE](cql.ddl.table.md#cql.ddl.table.create).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

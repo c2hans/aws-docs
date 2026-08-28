@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/responsible-ai-le
 1.  Define specific boundaries for system application. As an example, a financial AI advisor might serve only retail investors within certain portfolio sizes, using standardized investment products rather than complex instruments. Consider expertise requirements.
 
 1.  Document input and output restrictions to control risk exposure. Consider a customer service AI that accepts only structured inputs rather than free-text queries, which improves response reliability. Include clear guidance on system limitations and context for appropriate use.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

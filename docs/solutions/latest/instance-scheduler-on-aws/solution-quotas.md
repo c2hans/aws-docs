@@ -58,3 +58,7 @@ Your AWS account has AWS CloudFormation quotas that you should be aware of when 
 <a name="aws-lambda-quotas"></a>
 
 Your account has a default AWS Lambda Concurrent Execution quota of 1000. For larger deployments, we recommend deploying Instance Scheduler to a dedicated account to avoid competing with other workloads for Lambda concurrency. This value is adjustable. For more information, refer to [AWS Lambda Getting started guide](https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Instance Scheduler on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

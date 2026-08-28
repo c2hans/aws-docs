@@ -152,3 +152,7 @@ AWS CodeStar Notifications and AWS CodeConnections supports the use of temporary
 AWS CodeStar Notifications supports service-linked roles. For details about creating or managing AWS CodeStar Notifications and AWS CodeConnections service-linked roles, see [Using service-linked roles for AWS CodeStar Notifications](using-service-linked-roles.md).
 
 CodeConnections does not support service-linked roles.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

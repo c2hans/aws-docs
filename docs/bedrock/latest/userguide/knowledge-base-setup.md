@@ -405,3 +405,7 @@ If you plan to use metadata filtering with your MongoDB Atlas knowledge base, yo
 (Optional) To have Amazon Bedrock connect to your MongoDB Atlas cluster over AWS PrivateLink, see [ RAG workflow with MongoDB Atlas using Amazon Bedrock](https://www.mongodb.com/developer/products/atlas/rag-workflow-with-atlas-amazon-bedrock/).
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

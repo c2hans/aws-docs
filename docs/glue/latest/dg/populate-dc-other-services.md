@@ -42,3 +42,7 @@ With data registered with Lake Formation, you can securely share Data Catalog re
 You can query the table in Athena, and it will use the metadata from the Data Catalog to access and query your data files in Amazon S3.
 
  For more information, see [Creating databases and tables](https://docs.aws.amazon.com/athena/latest/ug/work-with-data.html) in the Amazon Athena User Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

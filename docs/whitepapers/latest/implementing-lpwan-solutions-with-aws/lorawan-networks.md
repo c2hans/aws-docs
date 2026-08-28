@@ -34,3 +34,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-so
  From a mobility standpoint, private LoRaWAN networks are especially beneficial for use cases with either stationary devices or devices having limited range of movement. If your use case requires LoRaWAN network coverage in wide geographical areas (for example, country-wide), a public LoRaWAN network might be a better solution.
 
  The cost, regulatory, and privacy considerations are not further detailed in this whitepaper.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

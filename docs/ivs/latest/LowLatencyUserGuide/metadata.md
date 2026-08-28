@@ -194,3 +194,7 @@ If desired, you can view the timed metadata embedded in your live stream, in the
 <a name="metadata-more-info"></a>
 
 See [Using Amazon Interactive Video Service Timed Metadata](https://aws.amazon.com/blogs/media/part-1-using-amazon-interactive-video-service-timed-metadata/), the first of a two-part blog series on using Amazon IVS timed metadata.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -187,3 +187,7 @@ Most data sources use regular expression patterns, which are inclusion or exclus
 For a list of other important JSON keys to configure, see [OneDrive template schema](https://docs.aws.amazon.com/kendra/latest/dg/ds-schemas.html#ds-onedrive-schema).
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kendra. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kendra` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

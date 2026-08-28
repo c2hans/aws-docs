@@ -298,3 +298,7 @@ The following table describes important changes to Amazon Neptune.
 | [New Neptune Quick Start](get-started-create-cluster.md) | Updated quick start with CloudFormation and the Gremlin Console tutorial. For more information, see [Amazon Neptune Quick Start Using CloudFormation](get-started.html). | June 19, 2018 |
 | [Amazon Neptune initial release](#doc-history) | This is the initial release of the Neptune User Guide. See also the release blog post, [Amazon Neptune Generally Available](https://aws.amazon.com/blogs/aws/amazon-neptune-generally-available/?nc1=b_rp). | May 30, 2018 |
 | [Introductory Neptune Blog Post](#doc-history) | See [Amazon Neptune – A Fully Managed Graph Database Service](https://aws.amazon.com/blogs/aws/amazon-neptune-a-fully-managed-graph-database-service/?nc1=b_rp). | November 29, 2017 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,7 +19,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 
 ```
 {
-  "[MetadataOperation](#cfn-glue-table-iceberginput-metadataoperation)" : {{String}},
+  "[IcebergTableInput](#cfn-glue-table-iceberginput-icebergtableinput)" : {{IcebergTableInput}},
+  "[MetadataOperation](#cfn-glue-table-iceberginput-metadataoperation)" : {{Json}},
   "[Version](#cfn-glue-table-iceberginput-version)" : {{String}}
 }
 ```
@@ -28,17 +29,25 @@ To declare this entity in your CloudFormation template, use the following syntax
 <a name="aws-properties-glue-table-iceberginput-syntax.yaml"></a>
 
 ```
-  [MetadataOperation](#cfn-glue-table-iceberginput-metadataoperation): {{String}}
+  [IcebergTableInput](#cfn-glue-table-iceberginput-icebergtableinput): {{
+    IcebergTableInput}}
+  [MetadataOperation](#cfn-glue-table-iceberginput-metadataoperation): {{Json}}
   [Version](#cfn-glue-table-iceberginput-version): {{String}}
 ```
 
 ## Properties
 <a name="aws-properties-glue-table-iceberginput-properties"></a>
 
+`IcebergTableInput`  <a name="cfn-glue-table-iceberginput-icebergtableinput"></a>
+Property description not available.
+*Required*: No
+*Type*: [IcebergTableInput](aws-properties-glue-table-icebergtableinput.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 `MetadataOperation`  <a name="cfn-glue-table-iceberginput-metadataoperation"></a>
 A required metadata operation. Can only be set to CREATE.
 *Required*: No
-*Type*: String
+*Type*: Json
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Version`  <a name="cfn-glue-table-iceberginput-version"></a>
@@ -46,3 +55,7 @@ The table version for the Iceberg table. Defaults to 2.
 *Required*: No
 *Type*: String
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

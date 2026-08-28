@@ -35,3 +35,7 @@ For instructions on how to configure a local user, see [Inviting users to access
 + For **IAM user**, choose **No**.
 + The user has seven days to accept the invitation. If they don't accept within this time period, you can resend the invitation email.
 + When the user accepts the invitation, they are prompted to set and confirm their password.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

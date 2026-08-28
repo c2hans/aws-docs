@@ -115,3 +115,7 @@ The following table describes the documentation for this release of Amazon DCV A
 | Amazon DCV Version 2023.1-57 | Amazon DCV Access Console has been updated for Amazon DCV 2023.1-57. For more information, see [2023.1-57--July 29, 2024](#2023.1-57). | August 1, 2024 |
 | Amazon DCV Version 2023.1-20 | NICE DCV Access Console has been updated for NICE DCV 2023.1-20. For more information, see [2023.1-20--June 26, 2024](#2023.1-20). | June 26, 2024 |
 | Initial release | First publication of this content. | June 13, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

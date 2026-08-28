@@ -788,3 +788,7 @@ local parsers = require("parsers")
 ```
 
  `require()` is restricted to your plugin's directory. You cannot load modules from other plugins or system paths. Third-party Lua libraries (e.g., from LuaRocks) are not supported — only local helper modules within the plugin directory can be loaded.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

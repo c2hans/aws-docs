@@ -391,3 +391,7 @@ with restore_duration.time():
 ```
 
 In Grafana, use the query `histogram_quantile(0.95, sum(rate(checkpoint_restore_duration_seconds_bucket[5m]) by (le))` to visualize P95 restore latency trends. To learn more, see [Prometheus Histogram Documentation](https://prometheus.io/docs/practices/histograms/) and [Prometheus Client Documentation](https://github.com/prometheus/client_python).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

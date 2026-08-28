@@ -20,3 +20,7 @@ For information about creating an Support case, see [Creating support cases and 
 <a name="open-rh-support-case-rosa"></a>
 
  ROSA includes Red Hat Premium Support. To receive Red Hat Premium Support, navigate to the [Red Hat Customer Portal](https://access.redhat.com/support/) and use the support case tool to create a support ticket. For more information, see [How to engage with Red Hat support](https://access.redhat.com/start/how-to-engage-red-hat-support).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Red Hat OpenShift Service on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rosa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

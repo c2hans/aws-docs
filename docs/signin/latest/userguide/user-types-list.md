@@ -93,3 +93,7 @@ This is only supported when you sign in to our new AWS experience.
 As an AWS Builder ID user, you specifically sign in to the AWS service or tool that you want to access. An AWS Builder ID user complements any AWS account you already have or want to create. An AWS Builder ID represents you as a person, and you can use it to access AWS services and tools without an AWS account. You also have a profile where you can see and update your information. For more information, see [Sign in with AWS Builder ID](sign-in-builder-id.md).
 
 AWS Builder ID is separate from your AWS Skill Builder subscription, an online learning center where you can learn from AWS experts and build cloud skills online. For more information about AWS Skill Builder, see [AWS Skill Builder](https://skillbuilder.aws/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

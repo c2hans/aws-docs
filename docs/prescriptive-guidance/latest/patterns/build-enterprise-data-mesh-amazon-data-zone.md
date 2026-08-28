@@ -176,3 +176,7 @@ When you use this solution, you can start small and scale as you progress in you
 You can reach out to AWS[ experts](https://aws.amazon.com/professional-services) for guidance on building data mesh  with Amazon DataZone.
 
 The modular nature of this solution supports building data management solutions with different architectures, such as data fabric and data lakes. In addition, based on the requirements of your organization, you can extend the solution to other Amazon DataZone data sources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

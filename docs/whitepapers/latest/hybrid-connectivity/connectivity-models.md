@@ -34,3 +34,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/hybrid-connectivity/c
 + [AWS DX – DXGW with VGW, Multi-Regions, and AWS Public Peering](aws-dx-dxgw-with-vgw-multi-regions-and-aws-public-peering.md)
 + [AWS DX – DXGW with AWS Transit Gateway, Multi-Regions, and AWS Public Peering](aws-dx-dxgw-with-aws-transit-gateway-multi-regions-and-aws-public-peering.md)
 + [AWS DX – DXGW with AWS Transit Gateway, Multi-Regions (more than 3)](aws-dx-dxgw-with-aws-transit-gateway-multi-regions-more-than-3.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

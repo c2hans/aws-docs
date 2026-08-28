@@ -40,3 +40,7 @@ When you add multiple triggers to the same cache behavior, you can use them to r
 When a CloudFront event triggers the execution of a Lambda function, the function must finish *before* CloudFront can continue.
 For example, if a Lambda function is triggered by a CloudFront viewer request event, CloudFront won't return a response to the viewer or forward the request to the origin until the Lambda function finishes running.
 This means that each request that triggers a Lambda function increases latency for the request, so you want the function to execute as fast as possible.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

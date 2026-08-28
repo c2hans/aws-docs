@@ -43,3 +43,7 @@ Note the following information about cross-Region inference:
 + All data transmitted during cross-Region operations remains on the AWS network and does not traverse the public internet. Data is encrypted in transit between AWS Regions.
 + CloudTrail logs all cross-Region inference requests in your source Region. Look for the `additionalEventData.inferenceRegion` field to identify where requests were processed.
 + AWS Services powered by Amazon Bedrock may also use CRIS. See service-specific documentation for more details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

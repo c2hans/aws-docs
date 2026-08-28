@@ -21,3 +21,7 @@ With the release of .NET 5, .NET is working to provide a uniform runtime to cust
 As the next generation after .NET Core, .NET 5 is now the recommended platform for modern scalable and high-performance applications, and, unlike .NET Framework, its design makes it ideal for targeting microservices architectures. You can run .NET 5 applications on AWS as direct deployments on Windows or Linux EC2 instances, on Windows or Linux containers running on EC2 instances, serverless Linux containers running on [AWS Fargate](https://aws.amazon.com/fargate/), or serverless [AWS Lambda](https://aws.amazon.com/lambda/) functions. These services are discussed in more detail in later sections of this whitepaper.
 
 Going forward in this whitepaper, whenever .NET 5 is mentioned, the same statements also apply to .NET Core. We explicitly call out any differences for .NET 5 and .NET Core use.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

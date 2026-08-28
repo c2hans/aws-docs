@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/d
 +  [AWS Observability Best Practices: Key Performance Indicators](https://aws-observability.github.io/observability-best-practices/guides/operational/business/key-performance-indicators/)
 +  [DevOps Research and Assessment (DORA)](https://dora.dev/)
 +  [SPACE](https://queue.acm.org/detail.cfm?id=3454124)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

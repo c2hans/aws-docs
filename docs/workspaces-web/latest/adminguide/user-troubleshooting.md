@@ -41,3 +41,7 @@ Click the down arrow icon next to the microphone or camera. The menu displays av
 *My web portal won’t launch when accessed directly from company's custom domain*
 
 If you are trying to launch a session using a non workspaces-web.com domain name like `acme.secureportal.mycompany.com`, make sure your browser has third party cookies enabled for the company domain you are accessing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ The two types of automated tests that are commonly referred to in deployment pip
 + **Dynamic application security test (DAST)** – These tests are also known as *penetration testing* or *pen testing*. They identify vulnerabilities, such as SQL injection or XSS in a provisioned test environment. Examples of DAST tools include [Zed Attack Proxy (ZAP)](https://www.zaproxy.org/) and [HCL AppScan](https://www.hcltechsw.com/appscan). For more information, see [Penetration Testing](https://aws.amazon.com/security/penetration-testing/).
 
 Not all fully CI/CD pipelines run all of these tests. However, at a minimum, a pipeline should run unit tests and SAST tests on the code base as well as integration and acceptance tests on a test environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

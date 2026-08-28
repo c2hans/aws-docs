@@ -94,3 +94,7 @@ To use TensorBoard with Amazon EMR, you must start TensorBoard on the cluster ma
 1. Set up access to web interfaces on the master node from trusted clients. For more information, see [View web interfaces hosted on Amazon EMR clusters](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-web-interfaces.html) in the *Amazon EMR Management Guide*.
 
 1. Open TensorBoard at `http://{{master-public-dns-name}}:6006`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

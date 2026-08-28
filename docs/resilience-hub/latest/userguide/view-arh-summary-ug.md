@@ -109,3 +109,7 @@ You can identify the details using the following:
 + **Apps not assessed** – Indicates the number of applications that are yet to be assessed against the resiliency policy.
 + **Resiliency score** – The overall resiliency score determined by AWS Resilience Hub for your application after running the assessment.
 + **Last assessment time** – Indicates the date and time when your application was last assessed successfully.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

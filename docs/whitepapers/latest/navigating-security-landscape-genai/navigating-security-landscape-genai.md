@@ -14,3 +14,7 @@ Publication date: **April 8, 2025** ([Document history](doc-history.md))
  Finally, this paper is intended to complement, and potentially reinforce, newly emerging generative AI security strategies such as OWASP Top 10 for LLM, MITRE ATLAS, and so on. AWS continues to participate in global standards bodies such as the [Coalition for Secure AI (CoSAI)](https://www.coalitionforsecureai.org/), [Frontier Model Forum](https://www.frontiermodelforum.org/), and more to provide insights.
 
  The following challenges represent a prescriptive point of view from the AWS proactive security team.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

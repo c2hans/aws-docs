@@ -148,3 +148,7 @@ View details about updates to AWS managed policies for AWS Clean Rooms since thi
 | [AWSCleanRoomsFullAccessNoQuerying](#security-iam-awsmanpol-fullaccess-noquery) – Update to existing policy | Added cleanrooms:CreateAnalysisTemplate, cleanrooms:GetAnalysisTemplate, cleanrooms:UpdateAnalysisTemplate, cleanrooms:DeleteAnalysisTemplate, cleanrooms:ListAnalysisTemplates, cleanrooms:GetCollaborationAnalysisTemplate, cleanrooms:BatchGetCollaborationAnalysisTemplate, and cleanrooms:ListCollaborationAnalysisTemplates to CleanRoomsAccess to enable the new analysis templates feature. | July 31, 2023 |
 | [AWSCleanRoomsFullAccessNoQuerying](#security-iam-awsmanpol-fullaccess-noquery) – Update to existing policy | Added cleanrooms:ListTagsForResource, cleanrooms:UntagResource, and cleanrooms:TagResource to CleanRoomsAccess to enable resource tagging. | March 21, 2023 |
 | AWS Clean Rooms started tracking changes | AWS Clean Rooms started tracking changes for its AWS managed policies. | January 12, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

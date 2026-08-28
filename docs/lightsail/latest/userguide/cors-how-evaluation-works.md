@@ -39,3 +39,7 @@ A unique identifier for the CORS rule.
 Specifies the amount of time in seconds that the browser can cache the response for a preflight request.
 
 For more information about these parameters, see [BucketCorsRule](https://docs.aws.amazon.com/lightsail/2016-11-28/api-reference/API_BucketCorsRule.html) in the *Amazon Lightsail API Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

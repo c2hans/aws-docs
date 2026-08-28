@@ -18,3 +18,7 @@ Contains a summary of important and suitable actions for a user based on emails,
 | **insightTitle** | The title of the generated insight. |
 | **createdAt** | When the insight was generated. |
 | **actions** | A list of actions recommend for the generated insight.<br />The action object contains the following parameters:+  `actionId` — The unique id for the generated action. <br />+  `actionIconUrl` — The icon URL for the app that the action is suggested to be executed in. <br />+  `actionTitle` — The title of the generated action. <br />+  `actionUrl` — The unique URL for the end user to view and execute the action in AppFabric’s user portal. <br />For executing actions, ISV apps will re-direct users to AppFabric user portal (pop up screen) using this URL. <br />+  `actionExecutionStatus` — An enum indicating the status of the action. <br />The possible values are: `EXECUTED \| NOT_EXECUTED`  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -139,3 +139,7 @@ Follow these best practices when using the `InvokeAgentRuntime` operation:
 + Use appropriate qualifiers to target specific agent versions or endpoints.
 + Implement authentication mechanisms when necessary using bearer tokens.
 + Use `InvokeAgentRuntimeCommand` for deterministic operations (tests, git, builds) instead of routing them through the agent’s LLM. See [Execute shell commands in AgentCore Runtime sessions](runtime-execute-command.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

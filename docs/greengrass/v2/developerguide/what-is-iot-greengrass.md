@@ -29,3 +29,7 @@ Next, follow the [getting started tutorial](getting-started.md) to try out the b
 <a name="existing-users"></a>
 
 End of support notice: On October 7, 2026, AWS will end support for AWS IoT Greengrass Version 1. After October 7, 2026, you will no longer be able to access the AWS IoT Greengrass V1 console or AWS IoT Greengrass V1 resources. For more information about how to move from version 1 to version 2, see [Migrate from AWS IoT Greengrass Version 1](migrate-from-v1.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

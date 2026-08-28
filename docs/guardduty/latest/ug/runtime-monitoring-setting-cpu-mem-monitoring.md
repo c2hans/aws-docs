@@ -31,3 +31,7 @@ After the GuardDuty security agent gets deployed and you assess that the coverag
 
 **Manage performance with security agent v1.5.0 and above**
 With security agent [v1.5.0 and above](https://docs.aws.amazon.com/guardduty/latest/ug/runtime-monitoring-agent-release-history.html#eks-runtime-monitoring-agent-release-history), when the insights indicate that the associated GuardDuty agent is reaching the assigned limits, you can configure specific parameters. For more information, see [Configure EKS add-on parameters](guardduty-configure-security-agent-eks-addon.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

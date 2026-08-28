@@ -147,3 +147,7 @@ If synchronization pauses and doesn't finish successfully, try reducing the `ha-
 +  [UpdateBrokerInput](https://docs.aws.amazon.com/amazon-mq/latest/api-reference/brokers-broker-id.html#brokers-broker-id-model-updatebrokerinput) – Use this broker property to update a broker instance type using the Amazon MQ API.
 + [Parameters and Policies](https://www.rabbitmq.com/parameters.html) (RabbitMQ Server Documentation) – Learn more about RabbitMQ parameters and policies on the RabbitMQ website.
 + [RabbitMQ Management HTTP API](https://pulse.mozilla.org/api/) – Learn more about the RabbitMQ management API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

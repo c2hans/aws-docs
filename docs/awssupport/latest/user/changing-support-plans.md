@@ -19,7 +19,7 @@ You can use the AWS Support Plans console to change your support plan for your A
 
    To downgrade your Business Support\+ plan, on the [Manage Support Plans](https://console.aws.amazon.com/support/plans/home) page, choose **Review downgrade** in the Basic Support plan section.
 
-   To upgrade to an AWS Enterprise Support or AWS Unified Operations plan, choose **Contact sales**.
+   To upgrade to an AWS Enterprise Support plan, see [Sign up for AWS Enterprise Support using self-service subscription](enterprise-support-sign-up.md). To upgrade to an AWS Unified Operations plan, choose **Contact sales**.
 
    To upgrade to an AWS Business Support\+ plan from Basic Support, complete the following steps:
 
@@ -42,3 +42,7 @@ If you sign up for a paid support plan, you’re responsible for a minimum one m
 For more information about AWS Support Plans, see the [AWS Support FAQs](https://aws.amazon.com/premiumsupport/faqs). You can also choose **Contact us** from the Support Plans console.
 
 To close your account, see [Closing an Account](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/close-account.html) in the *AWS Billing User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

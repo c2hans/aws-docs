@@ -10,10 +10,7 @@ Before you request a sender ID verify that they are available, see [Supported co
 For the rules of which sender ID is displayed when you send SMS messages to countries where Sender IDs are supported, compared to those where Sender IDs aren't supported, see [Sender ID display name rules](sender-id.md#channels-sms-countries-sender-id).
 
 **Note**
-Some countries require you to register your sender ID or open a support case to request the sender ID.
-**India sender ID registration** – Register a sender ID for use in India. For more information on completing the registration for see [India sender ID registration process in AWS End User Messaging SMS](registrations-sms-senderid-india.md).
-**Singapore sender ID registration** – Register a sender ID in Singapore. For more information on completing the registration for see [Singapore sender ID registration form](registrations-sg-form.md).
-**Request a Sender ID from Support** Senders are required to use a pre-registered alphabetic sender ID. To request a Sender ID from Support, [How to request a sender ID through Support](sender-id-awssupport-open.md). Some countries require senders to meet specific requirements or abide by certain restrictions to obtain approval. In these cases, Support might contact you for additional information after you submit your sender ID request. For a list of countries that require a support ticket to request a sender ID, see the Supports Sender IDs column in [Supported countries and regions for SMS messaging with AWS End User Messaging SMS](phone-numbers-sms-by-country.md).
+Some countries require you to register your sender ID before it can be used for sending. All countries with sender ID registration requirements have self-service registration forms available in the console. For the full list of countries and their registration walkthroughs, see [Registration forms](registrations-country.md).
 
 To request a sender ID using the AWS End User Messaging SMS console, follow these steps:
 
@@ -67,3 +64,7 @@ You must use **Resource policy** to share the sender ID with Amazon Pinpoint or 
    1. Choose **Complete registration** to finish registering the sender ID or **Register later**.
 **Important**
 You are still billed the recurring monthly lease fee regardless of registration status.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -111,3 +111,7 @@ The DynamoDB Encryption Client includes a[ MetaStore](most-recent-provider.md#ab
 **Learn more:**
 + Provider store: [Java](https://aws.github.io/aws-database-encryption-sdk-dynamodb/com/amazonaws/services/dynamodbv2/datamodeling/sdkv2/encryption/providers/store/ProviderStore.html), [Python](https://github.com/aws/aws-dynamodb-encryption-python/blob/master/src/dynamodb_encryption_sdk/material_providers/store/__init__.py)
 + MetaStore: [Java](https://aws.github.io/aws-database-encryption-sdk-dynamodb/com/amazonaws/services/dynamodbv2/datamodeling/sdkv2/encryption/providers/store/MetaStore.html), [Python](https://aws-dynamodb-encryption-python.readthedocs.io/en/latest/lib/materials_providers/metastore.html#module-dynamodb_encryption_sdk.material_providers.store.meta)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -75,3 +75,7 @@ From here, go to [Granting Programmatic Access](program-access.md) so you can fu
 <a name="setting-up-next-step-3"></a>
 
 [Step 3: Get Started Using the AWS CLI and AWS SDK API](get-started-exercise.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Textract. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query textract` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

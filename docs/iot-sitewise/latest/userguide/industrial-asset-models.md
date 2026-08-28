@@ -50,3 +50,7 @@ You can also update and delete existing assets, asset models, and component mode
 Your asset models may be very complex, for example when modeling a complicated piece of equipment that has many subcomponents. To help keep such asset models organized and maintainable, you can use custom composite models to group related properties or to re-use shared components. For more information, see [Custom composite models (components)](custom-composite-models.md).
 
 **Topics**
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

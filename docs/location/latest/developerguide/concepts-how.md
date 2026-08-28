@@ -66,3 +66,7 @@ Lists features that need to be explicitly enabled for route calculation.
 | --- | --- | --- | --- | --- | --- | --- |
 | HOV | Enable use of high occupancy vehicle lanes for route calculation. | Yes | Yes | Yes | No | No |
 | HOT | Enable use of high occupancy toll lanes for route calculation. | Yes | Yes | Yes | No | No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

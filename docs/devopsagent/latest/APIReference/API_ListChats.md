@@ -20,8 +20,8 @@ GET /agents/agent-space/{{agentSpaceId}}/chat/list?maxResults={{maxResults}}&nex
 The request uses the following URI parameters.
 
  ** [agentSpaceId](#API_ListChats_RequestSyntax) **   <a name="devopsagent-ListChats-request-uri-agentSpaceId"></a>
-Unique identifier for an agent space (allows alphanumeric characters and hyphens; 1-64 characters)
-Pattern: `[a-zA-Z0-9-]{1,64}`
+The unique identifier for the agent space to list chats from.
+Length Constraints: Minimum length of 1. Maximum length of 2048.
 Required: Yes
 
  ** [maxResults](#API_ListChats_RequestSyntax) **   <a name="devopsagent-ListChats-request-uri-maxResults"></a>
@@ -147,3 +147,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/devops-agent-2026-01-01/ListChats)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/devops-agent-2026-01-01/ListChats)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/devops-agent-2026-01-01/ListChats)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

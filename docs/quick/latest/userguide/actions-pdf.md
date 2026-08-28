@@ -9,3 +9,7 @@ source_url: https://docs.aws.amazon.com/quick/latest/userguide/actions-pdf.html
 + **Split PDF file** - Extracts pages from a PDF. Used to create a new PDF from selected pages of an original file.
 + **Merge PDF files** - Combines multiple PDF files. Used to create a single PDF from several documents by appending their pages.
 + **Get page count** - Gets the count of pages in a PDF. The number of pages can be used in subsequent steps to extract text from specific pages or split the PDF.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

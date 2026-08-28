@@ -106,3 +106,7 @@ Start and end parameters in the URL request for Microsoft Smooth Streaming conte
   ```
   https://cf98fa7b2ee4450e.mediapackage.us-east-1.amazonaws.com/out/v1/1f76b3b4f94c44a485c0e4e560afe50e/{{start}}/{{1513717228}}/{{end}}/{{1513720828}}/drama.ism/Manifest
   ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

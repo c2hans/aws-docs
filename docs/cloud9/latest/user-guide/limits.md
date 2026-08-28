@@ -40,3 +40,7 @@ When you download files from the AWS Cloud9 IDE to the local file system the spe
 | Maximum number of Amazon Elastic Block Store (Amazon EBS) volumes | 5,000<br />For more information, see [Amazon Elastic Block Store endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/ebs-service.html) in the *Amazon Web Services General Reference*. |
 | Maximum number of CloudFormation stacks | 200<br />For more information, see [Understand CloudFormation quotas](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cloudformation-limits.html) in the *AWS CloudFormation User Guide*. |
 | Amazon EC2 quotas | See [Amazon EC2 endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/ec2-service.html#limits_ec2) in the *Amazon Web Services General Reference*. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

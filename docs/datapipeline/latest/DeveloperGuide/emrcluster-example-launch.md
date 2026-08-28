@@ -24,3 +24,7 @@ The following example launches an Amazon EMR cluster using AMI version 1.0 and H
   "bootstrapAction" : ["s3://{{Region}}.elasticmapreduce/bootstrap-actions/configure-hadoop,arg1,arg2,arg3","s3://{{Region}}.elasticmapreduce/bootstrap-actions/configure-hadoop/configure-other-stuff,arg1,arg2"]
 }
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

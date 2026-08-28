@@ -51,3 +51,7 @@ TOUSER=cust_schema FILE=exp_file.dmp LOG=imp_file.log
 ```
 
  There are many optional arguments that can be passed to the exp and imp commands based on your needs. For details, see the [Oracle documentation](https://docs.oracle.com/cd/E11882_01/server.112/e22490/original_import.htm#SUTIL1637).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

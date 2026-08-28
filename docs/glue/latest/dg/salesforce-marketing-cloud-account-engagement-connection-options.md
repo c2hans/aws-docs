@@ -21,3 +21,7 @@ The following are connection options for Salesforce Marketing Cloud Account Enga
 + `INSTANCE_URL`(String) - (Required) Used for Read. A valid Salesforce Marketing Cloud Account Engagement instance URL.
 + `PARTITION_BY`(String) - (Required) Used for Read. The type of partitioning to be performed. "FIELD" is to be passed in case of field-based partitioning.
 + `TRANSFER_MODE`(String) - (Optional), Value to be used for running a job in ASYNC mode , if this option not provided job will run in SYNC mode.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

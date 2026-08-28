@@ -126,3 +126,7 @@ For more information about enabling trace context injection in Node.js for the l
 After redeploying your application, confirm that a log line now shows a populated `trace_id` (for example, by running `kubectl logs {{pod-name}}`). Then open a trace detail page in the Application Signals console and confirm that the correlated log entries appear at the bottom of the page.
 
 On Amazon EKS, logs are written to the Container Insights application log group (`/aws/containerinsights/{{cluster-name}}/application`, or `/aws/otel/containerinsights/{{cluster-name}}/application` when the OpenTelemetry Container Insights log path is enabled).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

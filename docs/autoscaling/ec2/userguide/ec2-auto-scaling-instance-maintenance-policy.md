@@ -14,3 +14,7 @@ An instance maintenance policy also helps you minimize any potential disruptions
 **Topics**
 + [Instance maintenance policy for Auto Scaling group](instance-maintenance-policy-overview-and-considerations.md)
 + [Set an instance maintenance policy on your Auto Scaling group](set-instance-maintenance-policy-on-group.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

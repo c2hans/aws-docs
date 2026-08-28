@@ -34,3 +34,7 @@ The following procedure shows how to create a test case.
 
 1. For each interaction group, specify an observe block to validate the expected interaction from the system with a matching type (Contains and Similarity match). Then, add check or actions blocks if necessary. For more information, see [Interaction groups](testing-simulation-concepts.md#testing-simulation-concepts-interaction-groups).
 ![Interaction 1 designer showing an Observe block with a dropdown menu to add check or action blocks.](http://docs.aws.amazon.com/connect/latest/adminguide/images/GIF/test-add-check-action-block-gif.gif)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,3 +13,7 @@ By default, Amazon WorkMail uses a subdomain of amazonses.com as the `MAIL FROM`
 A custom MAIL FROM domain is required when you enable AutoDiscover for iOS devices.
 
 For more information about custom `MAIL FROM` domains, see [ Amazon SES now supports custom MAIL FROM domains](https://aws.amazon.com/blogs/messaging-and-targeting/amazon-ses-now-supports-custom-mail-from-domains/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

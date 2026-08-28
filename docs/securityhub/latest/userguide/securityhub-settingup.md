@@ -147,3 +147,7 @@ There is a corresponding script to disable Security Hub CSPM across accounts and
 After enabling Security Hub CSPM, we recommend enabling security standards and controls to monitor your security posture. After you enable controls, Security Hub CSPM begins running security checks and generating control findings that help you detect misconfigurations in your AWS environment. To receive control findings, you must enable and configure AWS Config for Security Hub CSPM. For more information, see [Enabling and configuring AWS Config for Security Hub CSPM](securityhub-setup-prereqs.md).
 
 After enabling Security Hub CSPM, you can also leverage integrations between Security Hub CSPM and other AWS services and third-party solutions to see their findings in Security Hub CSPM. Security Hub CSPM aggregates findings from different sources and ingests them in a consistent format. For more information, see [Understanding integrations in Security Hub CSPM](securityhub-findings-providers.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

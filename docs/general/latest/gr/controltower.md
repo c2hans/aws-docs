@@ -65,3 +65,7 @@ AWS Control Tower has the following quotas.
 | Concurrent account operations quota | Each supported Region: 5 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/controltower/quotas/L-04D09B14)  | The maximum number of concurrent account operations that can be performed at the same time. Maximum: 10 |
 | Concurrent organization units (OUs) operations quota | Each supported Region: 1 | No | The maximum number of concurrent OU-related operations that can be performed at the same time. |
 | Number of accounts in a single OU quota | Each supported Region: 1,000 | No | The maximum number of AWS Control Tower managed accounts that can be present in one OU. If you add accounts beyond this limit, the OU registration process in AWS Control Tower cannot be performed. To learn more about the number of accounts per OU, review Regions and Stackset Limitations in the AWS Control Tower documentation. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

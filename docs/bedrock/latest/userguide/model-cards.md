@@ -30,3 +30,7 @@ With access to hundreds of top foundation models (FMs) to power your application
 |  ![Writer logo.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/models/writer.png)  | [Writer](model-cards-writer.md) | [Palmyra X4](model-card-writer-palmyra-x4.md), [Palmyra X5](model-card-writer-palmyra-x5.md), [Palmyra Vision 7B](model-card-writer-palmyra-vision-7b.md) |
 |  ![xAI logo.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/models/xai.png)  | [xAI](model-cards-xai.md) | [Grok 4.3](model-card-xai-grok-4-3.md)<br />[Grok 4.6](model-card-xai-grok-4-6.md) |
 |  ![Z.ai logo.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/models/zai.png)  | [Z.AI](model-cards-zai.md) | [GLM 4.7](model-card-zai-glm-4-7.md), [GLM 4.7 Flash](model-card-zai-glm-4-7-flash.md), [GLM 5](model-card-zai-glm-5.md) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

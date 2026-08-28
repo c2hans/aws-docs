@@ -40,3 +40,7 @@ If you are using a Link device as the source for a MediaConnect flow, you must a
 To remove the connection between a device an Elemental Link input, you can do either of these changes:
 + You can [Editing an input](edit-input.md) so that it is connected to a different device.
 + You can [delete the input](delete-input.md). Note that you can't modify an Elemental Link input so that it doesn't have a device connected to it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ See the following release notes to track the latest updates for the SageMaker sm
 
 **Migration to AWS Deep Learning Containers**
 + The SageMaker smart sifting library passed integration testing and is available in AWS Deep Learning Containers. To find a complete list of the pre-built containers with the SageMaker smart sifting library, see [Supported frameworks and AWS Regions](train-smart-sifting-what-is-supported.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

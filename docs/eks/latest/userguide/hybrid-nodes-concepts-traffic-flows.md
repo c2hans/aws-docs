@@ -720,3 +720,7 @@ The packet arrives at the EC2 instance and is delivered directly to Pod A throug
 This east-west traffic flow demonstrates why remote pod CIDRs must be properly configured and routable from both directions:
 + The VPC must have routes for the remote pod CIDRs pointing to the on-premises gateway
 + Your on-premises network must have routes for pod CIDRs that direct traffic to the specific nodes hosting those pods.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

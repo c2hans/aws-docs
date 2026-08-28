@@ -19,3 +19,7 @@ You can enable experimental features for specific AWS services in the **AWS** se
 1. Select the checkboxes for the experimental features you want to access prior to release. If you want to switch off an experimental feature, clear the relevant checkbox.
 
 1. After enabling experimental features, you can confirm by opening the **AWS Explorer** and choosing **Options** (the gear icon), **Experimental Features**. A checkmark beside the name of the feature indicates that it's available for use.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

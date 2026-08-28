@@ -132,3 +132,7 @@ The following trust policy allows only the CloudFormation service to assume the 
 <a name="associate-service-role-to-stack"></a>
 
 After a service role is created, you can associate it with a stack when you create the stack. For more information, see *Permissions* in [Setting AWS CloudFormation stack options](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-add-tags.html). Before you specify a service role, make sure that IAM principals have permissions to pass it. For more information, see [Granting an IAM principal permissions to use a CloudFormation service role](#permissions-use-cloudformation-service-role).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

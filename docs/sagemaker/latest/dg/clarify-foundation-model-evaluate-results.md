@@ -23,3 +23,7 @@ When your model evaluation job is complete, you can see how your model performed
 For information about interpreting the model evaluation results, see the topic that corresponds to the type of model evaluation job whose results you want to interpret:
 + [Understand the results of a human evaluation job](clarify-foundation-model-evaluate-results-human.md)
 + [Understand the results of an automatic evaluation job](clarify-foundation-model-evaluate-auto-ui-results.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

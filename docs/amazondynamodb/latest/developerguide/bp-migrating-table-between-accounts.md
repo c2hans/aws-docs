@@ -17,3 +17,7 @@ Import from Amazon S3 does not support tables with Local Secondary Indexes (LSIs
 **Topics**
 + [Migrate a table using AWS Backup for cross-account backup and restore](bp-migrating-table-between-accounts-backup.md)
 + [Migrate a table using export to S3 and import from S3](bp-migrating-table-between-accounts-s3.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

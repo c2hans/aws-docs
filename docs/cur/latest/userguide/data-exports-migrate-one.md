@@ -38,3 +38,7 @@ You can create an export with an SQL query. The export schema matches what you r
    1. Update the permissions of the target Amazon S3 bucket to allow Data Exports to write to the bucket. For more information, see [Setting up an Amazon S3 bucket for data exports](https://docs.aws.amazon.com/cur/latest/userguide/dataexports-s3-bucket.html).
 
 1. Direct your data ingestion pipeline to read data from the directory in the Amazon S3 bucket where your CUR 2.0 is being delivered.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

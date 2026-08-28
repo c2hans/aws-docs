@@ -39,3 +39,7 @@ The following procedure shows how to use the Athena console to create a workgrou
 1. (Optional) Use the Billing and Cost Management console to tag the workgroup with cost allocation tags. For more information, see [Using user-defined cost allocation tags](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/custom-tags.html) in the *AWS Billing User Guide*.
 
 1. (Optional) To get dedicated processing capacity for the queries in the workgroup, add the workgroup to a capacity reservation. You can assign one or more workgroups to a reservation. For more information, see [Manage query processing capacity](capacity-management.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -76,3 +76,7 @@ You can include up to 10,000 nested folders for a single import job.
     {"inputFile":"dicom_input/warningDicomFile1.dcm","importResponse":{"imageSetId":"12345612345612345678907890789012","imageSetVersion":1,"isPrimary":true,"warnings":[{"warning_reason_code":45330,"type":"InvalidOffsetTable","message":"The file was imported but contains an invalid offset table, may see issues when retrieving certain frames."}]}}
     ```
 + Import jobs are retained in the list of jobs for 90 days and then archived.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

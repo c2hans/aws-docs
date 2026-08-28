@@ -15,3 +15,7 @@ You can view a listing of your spaces and projects on the user home page. The us
 ![The user home page lists all spaces and projects where you are a member](http://docs.aws.amazon.com/codecatalyst/latest/userguide/images/user_home.png)
 
 1. Choose the space or project you want to open. If you do not see a space or project you expected to see, your might need to sign in as a different user.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

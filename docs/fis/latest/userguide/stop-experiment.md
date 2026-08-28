@@ -19,3 +19,7 @@ You can stop a running experiment at any time. When you stop an experiment, any 
 
 **To stop an experiment using the CLI**
 Use the [stop-experiment](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/fis/stop-experiment.html) command.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Fault Injection Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fis` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

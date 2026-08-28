@@ -114,8 +114,39 @@ To configure automated reviews:
 
 Once configured, any new merge request in a project with **Auto trigger change review** enabled will automatically trigger a release readiness code review. If **Automated verification testing** is also enabled, the review includes functional validation in a verification environment. For more information about code reviews, see [Release readiness code reviews](release-management-release-readiness-code-review.md).
 
+### Advanced settings: trigger filters
+<a name="advanced-settings-trigger-filters"></a>
+
+By default, a project with **Auto trigger change review** enabled runs a release readiness code review on every applicable merge request event, on any target branch. Use **Advanced settings** to add trigger filters that control exactly when automated reviews run for each project.
+
+Each filter is a *filter group* that combines two conditions:
++ **Target branches** (required) — One or more branch names or patterns, entered as regular expressions (for example, `main` or `release/.*`). The review triggers only when the merge request's target branch matches one of these patterns.
++ **Trigger events** (optional) — The merge request events that trigger a review: **Merge request ready for review** or **Merge request drafted**. Leave this empty to match all applicable events.
+
+Within a filter group, all conditions must match (AND). You can add multiple filter groups, and a review triggers when any group matches (OR).
+
+To configure trigger filters:
+
+1. Open the **Advanced settings** section in the connection flow. (To change filters on an existing connection, select the connection in the **Pipeline** section, choose **Edit**, and then open **Advanced settings**.)
+
+1. Find the project you want to configure and select the **Change review** tab.
+
+1. Choose **Add filter group**, then define the group's conditions:
+   + Under **Target branches**, enter a branch name or pattern and press Enter or choose **Add**. Repeat to add more patterns.
+   + (Optional) Under **Trigger events**, select **Merge request ready for review**, **Merge request drafted**, or both. Leave it empty to match all events.
+
+1. (Optional) Choose **Add filter group** again to express alternative conditions.
+
+1. Choose **Save** to apply your configuration.
+
+You can define up to 5 filter groups per project, with up to 20 patterns per group. Each pattern must be a valid regular expression of up to 256 characters. If you don't add any filter groups, reviews trigger on all applicable events for all target branches.
+
 ## Managing GitLab connections
 <a name="managing-gitlab-connections"></a>
 + **Updating access token** – If your access token expires or needs to be updated, you can rotate it without deregistering. On the **Capability Providers** page, select your GitLab registration, choose **Update** from the **Actions** menu, and enter the new token. Your Agent Space associations and project connections are preserved.
 + **Viewing connected projects** – In the AWS DevOps Agent console, select your Agent Space and go to the Capabilities tab to view connected projects in the Pipeline section.
 + **Removing GitLab connection** – To disconnect GitLab projects from an Agent Space, select the connection in the Pipeline section and choose **Remove**. To remove the GitLab registration completely, remove it from all Agent Spaces first, then delete the registration at the account level.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ rpm -qa | grep aws-sap
 To check the current version of DataProvider on **Windows**, go to **Services(Local)**, select ** AWS Data Provider for SAP**, and open **Properties**. You can see the current version in the Description field.
 
 ![Data sources for Data Provider for SAP](http://docs.aws.amazon.com/sap/latest/general/images/check-data-provider-on-windows.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

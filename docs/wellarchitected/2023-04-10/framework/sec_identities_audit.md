@@ -57,3 +57,7 @@ Audit and rotate credentials periodically to limit how long the credentials can 
  **Related examples:**
 + [ Well-Architected Lab - Automated IAM User Cleanup ](https://wellarchitectedlabs.com/security/200_labs/200_automated_iam_user_cleanup/)
 + [ Well-Architected Lab - Automated Deployment of IAM Groups and Roles ](https://wellarchitectedlabs.com/security/200_labs/200_automated_deployment_of_iam_groups_and_roles/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

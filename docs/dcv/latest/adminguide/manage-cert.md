@@ -80,3 +80,7 @@ If you use your own certificate and key, you must name your certificate `dcv.pem
 
 **Note**
 Beginning with Amazon DCV 2022.0, if you update a certificate file while the Amazon DCV server is running, the new certificate will be automatically reloaded. For previous versions of Amazon DCV you will need to manually [stop](manage-stop.md) and [restart](manage-start.md) the Amazon DCV server.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,3 +13,7 @@ This tutorial shows you how to export an Amazon Keyspaces table to an Amazon S3 
 + [Step 2: Run the export job](S3-tutorial-step2.md)
 + [Step 3: (Optional) Create a trigger to schedule the export job](S3-tutorial-step3.md)
 + [Step 4: (Optional) Cleanup](S3-tutorial-step4.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,3 +54,7 @@ You can use the create-protect-configuration command to create a new protect con
 Now you have created your protect configuration you need to edit the country rules list for SMS, MMS, and voice. To learn more about editing the country rules, see [Change a protect configuration country rules in AWS End User Messaging SMS](protect-configuration-edit-countries.md). Optionally you can associate the protect configuration with the *account default* protect configuration or a configuration set.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

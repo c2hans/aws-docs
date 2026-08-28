@@ -74,3 +74,7 @@ If you specify IAM roles that for job execution that have any additional permiss
 <a name="access-grants-considerations"></a>
 
 For important support, compatibility, and behavioral information when you use Amazon S3 Access Grants with Amazon EMR on EKS, see [S3 Access Grants considerations with Amazon EMR](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-access-grants-considerations.html) in the *Amazon EMR Management Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

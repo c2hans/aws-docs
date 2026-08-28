@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/Agentless-Replication-Rela
 
 NEW - You can now accelerate your migration and modernization with AWS Transform. Read [Getting Started](https://docs.aws.amazon.com/transform/latest/userguide/getting-started.html) in the *AWS Transform User Guide*.
 
-# Agentless replication related
+# Agentless replication related FAQs
 <a name="Agentless-Replication-Related-FAQ"></a>
 
 This section contains answers to questions about agentless replication.
@@ -90,8 +90,12 @@ You can learn more about installing the MGN vCenter Client as well as installati
 ## Can a proxy server be used between the source server and the AWS Transform MGN console?
 <a name="faq-agentless-proxy"></a>
 
-Yes. You can configure transparent proxy either by using an environment variable before the installation (Linux and Windows), or by using the --proxy-address flag in the Linux installer:
+Yes. You can configure transparent proxy either by using an environment variable before the installation, or by using the --proxy-address flag in the Linux installer:
 + Using the installer: ./aws-vcenter-client-installer-init.py --proxy-address http://PROXY:PORT/
 + Using environment variable: export https\_proxy=http://PROXY:PORT/; ./aws-vcenter-client-installer-init.py
 
 Make sure the proxy has a trailing forward slash (/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

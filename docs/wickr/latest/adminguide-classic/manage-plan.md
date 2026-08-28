@@ -31,3 +31,7 @@ The following limitations apply to the premium free trial:
 + Only one network for each AWS account can be enrolled in a premium free trial.
 + The guest user feature is not available during the premium free trial.
 + If a standard network has more than 30 users, it will not be possible to upgrade to a premium free trial.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

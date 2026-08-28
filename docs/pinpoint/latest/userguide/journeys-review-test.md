@@ -64,3 +64,7 @@ During the testing process, if you discover that you need to make changes to the
 + If your email templates include message variables that refer to endpoint attributes, make sure that your test participants have those same attributes. For example, if your email template refers to a `User.UserAttributes.FirstName` attribute, the endpoints in your test segment should also have that attribute.
 
 **Next**: [Publish a journey](journeys-publish.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

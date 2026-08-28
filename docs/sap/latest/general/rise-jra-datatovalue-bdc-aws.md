@@ -72,3 +72,7 @@ Here are the steps to integrate Amazon S3 with SAP Datasphere:
 This process allows SAP Datasphere to connect to S3, access non-sap data, and use that data in combination with internal SAP datasets via Data Flows. For detailed step by step, visit [Data integration between SAP Datasphere and in Amazon S3](https://github.com/SAP-samples/sap-bdc-explore-hyperscaler-data/blob/main/AWS/s3-integration.md).
 
 You can find out more from SAP Architecture Center under [Integration with AWS data sources](https://architecture.learning.sap.com/docs/ref-arch/a07a316077/1).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

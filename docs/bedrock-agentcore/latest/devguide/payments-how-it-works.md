@@ -135,3 +135,7 @@ When the agent uses the Machine Payments Protocol (MPP) instead of x402, the flo
 <a name="payments-how-it-works-observability"></a>
 
  [AgentCore Observability](observability.md) provides visibility across the entire payment lifecycle, delivering detailed logs, real-time dashboards, and actionable metrics that enable developers to monitor transaction success rates, track spending patterns, diagnose errors, and optimize payment performance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

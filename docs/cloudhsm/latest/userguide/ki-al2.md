@@ -22,3 +22,7 @@ You see the following error returned upon running the AWS CloudHSM [cloudhsm\_mg
   sudo yum update && yum install ncurses-compat-libs
   ```
 + **Resolution status:** This issue has been resolved in the AWS CloudHSM client 1.1.2 release. You must upgrade to this client to benefit from the fix.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

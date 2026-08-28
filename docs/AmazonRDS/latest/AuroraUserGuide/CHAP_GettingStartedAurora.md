@@ -16,3 +16,7 @@ Before you can create or connect to a DB cluster, make sure to complete the task
 + [Creating and connecting to an Aurora MySQL DB cluster](CHAP_GettingStartedAurora.CreatingConnecting.Aurora.md)
 + [Creating and connecting to an Aurora PostgreSQL DB cluster](CHAP_GettingStartedAurora.CreatingConnecting.AuroraPostgreSQL.md)
 + [Tutorial: Create a web server and an Amazon Aurora DB cluster](TUT_WebAppWithRDS.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

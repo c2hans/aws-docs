@@ -141,3 +141,7 @@ To see a trace map and graphs for an event, choose it from the impact timeline. 
 ![Impact analysis graph for an X-Ray insight.](http://docs.aws.amazon.com/xray/latest/devguide/images/console-insights-inspect-analysis.png)
 
 To take a deeper look at the traces involved in an incident, choose **Analyze event** on the **Inspect** page. You can use the **Analytics** page to refine the list of traces and identify affected users. For more information, see [Interacting with the Analytics console](xray-console-analytics.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS X-Ray. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query xray` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

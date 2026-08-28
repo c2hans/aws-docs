@@ -18,3 +18,7 @@ AWS BugBust provides the following APIs for data retrieval.
 | <a name="bugbust-ListProfilingGroups"></a>[ListProfilingGroups](https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html) | View the profiling groups that were imported into an event for players to work on | Read |
 | <a name="bugbust-ListPullRequests"></a>[ListPullRequests](https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html) | View the pull requests used by players to submit fixes to their claimed bugs in an event | Read |
 | <a name="bugbust-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/codeguru/latest/bugbust-ug/auth-and-access-control-permissions-reference.html) | Lists tag for a Bugbust resource | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

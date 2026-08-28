@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/cloudhsm/latest/userguide/sdk8-linux.htm
 + SDK 5.12 was the last release to provide CentOS 7 (7.8\+) platform support. For more information, see the [CentOS website](https://blog.centos.org/2023/04/end-dates-are-coming-for-centos-stream-8-and-centos-linux-7/).
 + SDK 5.12 was the last release to provide Red Hat Enterprise Linux 7 (7.8\+) platform support. For more information, see the [Red Hat website](https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux/rhel-7-end-of-maintenance).
 + SDK 5.4.2 was the last release to provide CentOS 8 platform support. For more information, see the [CentOS website](https://www.centos.org/centos-linux-eol/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

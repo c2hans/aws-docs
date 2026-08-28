@@ -54,3 +54,7 @@ You can also combine the previous two configurations to track balances for diffe
 + `Line item #1.3` with the start month Apr 2021, end month Apr 2021, `Line item type = AWS Marketplace Purchase`.
 
 Continue this configuration for May and June.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

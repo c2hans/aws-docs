@@ -12,3 +12,7 @@ Start by enabling your settings and permissions in Cost Explorer before using th
 **Prerequisites**
 + **Enable Cost Explorer**. Manage access to your Savings Plans by first enabling your Cost Explorer access. It can take up to 24 hours for the data required to create recommendations to become available. For more information, see [Controlling Access for Cost Explorer](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-access.html) in the *AWS Cost Management User Guide*.
 + **Enable purchases using APIs**. Managing IAM permissions for Savings Plans APIs are found in the [Savings Plans API Reference](https://docs.aws.amazon.com/savingsplans/latest/APIReference/Welcome.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

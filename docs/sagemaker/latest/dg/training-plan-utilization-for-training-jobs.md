@@ -87,3 +87,7 @@ SageMaker training managed warm-pool is compatible with SageMaker training plans
 + [Checkpoint your training job](#training-jobs-checkpointing)
 + [Create a training job using the SageMaker AI console](use-training-plan-for-training-jobs-using-console.md)
 + [Create a training job using the API, AWS CLI, SageMaker SDK](use-training-plan-for-training-jobs-using-api-cli-sdk.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -303,3 +303,7 @@ We recommend the following next steps:
 + [Best Practices for Tagging AWS Resources](https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practices/tagging-best-practices.html) (AWS Whitepapers)
 + [How to collect data from AWS Compute Optimizer and AWS Trusted Advisor across your AWS Organizations](https://www.youtube.com/watch?v=ekR6RSgqJ4Q) (YouTube)
 + [Optimizing performance and reducing licensing costs: Leveraging AWS Compute Optimizer for Amazon EC2 SQL Server instances](https://aws.amazon.com/blogs/modernizing-with-aws/optimizing-performance-and-reducing-licensing-costs-leveraging-aws-compute-optimizer-for-ec2-sql-server-instances/) (Microsoft Workloads on AWS blog)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ Additionally, you have access to the following insights in the AWS Glue console 
 + [Automating AWS Glue with EventBridge](automating-awsglue-with-cloudwatch-events.md)
 + [Monitoring AWS Glue resources](monitor-resource-metrics.md)
 + [Logging AWS Glue API calls with AWS CloudTrail](monitor-cloudtrail.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

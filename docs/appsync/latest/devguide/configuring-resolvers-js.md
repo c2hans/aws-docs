@@ -719,3 +719,7 @@ export function response(ctx) {
 ```
 
 In the request, we pass in the context of the request. Our `limit` is {{20}}, meaning we return up to 20 `Posts` in the first query. Our `nextToken` cursor is fixed to the first `Post` entry in the data source. These are passed to the args. The request then performs a scan from the first `Post` up to the scan limit number. The data source stores the result in the context, which is passed to the response. The response returns the `Posts` it retrieved, then sets the `nextToken` is set to the `Post` entry right after the limit. The next request is sent out to do the exact same thing but starting at the offset right after the first query. Keep in mind that these sorts of requests are done sequentially and not in parallel.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

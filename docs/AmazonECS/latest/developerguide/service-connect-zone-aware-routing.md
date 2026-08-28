@@ -74,3 +74,7 @@ Keep the following in mind when you use zone-aware routing:
 + Zone-aware routing is compatible with cross-account Service Connect namespaces shared through AWS Resource Access Manager.
 + Existing services (both client and server) require a one-time redeployment to activate zone-aware routing. After the initial redeployment, routing adjusts dynamically as endpoints change without further redeployments.
 + For the Amazon EC2 launch type, your container instances must use an Amazon ECS-optimized AMI version `20260323` or later.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

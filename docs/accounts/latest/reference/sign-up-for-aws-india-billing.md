@@ -133,3 +133,7 @@ To move your account to a different SOR, you must update the tax registration nu
 1. After the card is saved, choose **Set as default**.
 
    The **Default payment preferences** section alerts you that your previous default payment method is not eligible for use in the new SOR. Refresh the page after you add your payment card for this alert to disappear.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

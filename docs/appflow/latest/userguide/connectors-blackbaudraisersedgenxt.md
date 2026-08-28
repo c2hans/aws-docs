@@ -546,3 +546,7 @@ When you create a flow that uses Blackbaud Raiser's Edge NXT as the data source,
   - **** Field**:** Relation ID / **** Data type**:** String / **** Supported filters**:**
   - **** Field**:** Start / **** Data type**:** Struct / **** Supported filters**:**
   - **** Field**:** Type / **** Data type**:** String / **** Supported filters**:**
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

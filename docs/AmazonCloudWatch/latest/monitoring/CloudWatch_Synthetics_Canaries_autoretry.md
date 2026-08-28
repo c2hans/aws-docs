@@ -32,3 +32,7 @@ When you create or update a canary, you can configure your canaries to automatic
 Here are the limitations to configure auto retry.
 + Supported only on runtime versions `syn-nodejs-puppeteer-10.0 `or newer, ` syn-nodejs-playwright-2.0` or newer, or `syn-python-selenium-5.1` or newer, or `syn-nodejs-3.0` or newer.
 + Long running canaries which timeout after ten minutes are limited to one retry. All other canaries can support upto two retries
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ Here is the data that AWS Elemental Live has: The flow ARN. The Access key ID an
 
   MediaConnect in its turn uses the secret ARN to get the secret (the encryption key) from the Secrets Manager. Secrets Manager accepts the request from MediaConnect because MediaConnect has permission to get this secret; it has permission because it has been set up as a trusted entity with Secrets Manager. MediaConnect uses the encryption key to decrypt the video.
 + If the flow is not set up for encryption, MediaConnect instructs Elemental Live to deliver the video unencrypted. Secrets Manager is not involved.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

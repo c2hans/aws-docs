@@ -45,3 +45,7 @@ The DB cluster and DB instance parameters available to you in Aurora vary depend
 **Note**
  Aurora serverless uses both DB cluster parameter groups and DB parameter groups. With Aurora serverless, you can modify almost all of the configuration parameters. Aurora serverless overrides the settings of some capacity-related configuration parameters so that your workload isn't interrupted when Aurora serverless instances scale down.
  To learn more about Aurora Serverless configuration settings and which settings you can modify, see [Working with parameter groups for Aurora serverless](aurora-serverless-v2.setting-capacity.md#aurora-serverless-v2.parameter-groups).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

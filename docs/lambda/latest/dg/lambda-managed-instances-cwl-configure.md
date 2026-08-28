@@ -67,3 +67,7 @@ my-capacity-provider/managed-instances
 For your capacity provider to send logs to CloudWatch Logs, the operator role must have the [logs:PutLogEvents](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_PutLogEvents.html) permission. Lambda does not add this permission automatically. If the operator role doesn't already have it, add it before you create the capacity provider. This permission is included in the `AWSLambdaManagedEC2ResourceOperator` managed policy.
 
 For more information about the operator role, see [Lambda operator role for Lambda Managed Instances](lambda-managed-instances-operator-role.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

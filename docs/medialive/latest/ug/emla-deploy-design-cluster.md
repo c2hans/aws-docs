@@ -51,3 +51,7 @@ In this diagram, there are two clusters. Both clusters are associated with the s
 + In Cl-B, there is one active node and one backup node.
 
   In Cl-B there is only one channel placement group and only one channel. It's possible that this is a channel with high processing demands so that it requires its own node hardware, which means it belongs in a separate cluster. It's acceptable, there is no rule that a channel placement group must have more than one channel attached to it. There is only one active node in the cluster, for that single channel.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

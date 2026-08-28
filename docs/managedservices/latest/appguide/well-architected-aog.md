@@ -20,3 +20,7 @@ We recommend the following articles and whitepapers to help you understand the p
 + **Sustainability**: The sustainability pillar focuses on the ability to continually improve sustainability impacts by reducing energy consumption and increasing efficiency across all components of a workload by maximizing the benefits from the provisioned resources and minimizing the total resources required.
 
 [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html): Describes how AWS enables customers to assess and improve their cloud-based architectures and better understand the business impact of their design decisions. It addresses general design principles as well as specific best practices and guidance in six conceptual areas that AWS defines as the pillars of the Well-Architected Framework.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

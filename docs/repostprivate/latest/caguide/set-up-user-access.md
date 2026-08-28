@@ -8,3 +8,7 @@ End of support notice: On June 30, 2027, AWS will end support for AWS re:Post Pr
 <a name="set-up-user-access"></a>
 
 re:Post Private integrates with AWS IAM Identity Center to provide identity federation for your organization's workforce. Use IAM Identity Center to create or connect users from your organization and centrally manage their access across all their AWS accounts and applications. For more information about IAM Identity Center, see [ What is AWS IAM Identity Center (successor to AWS Single Sign-On)](https://docs.aws.amazon.com/singlesignon/latest/userguide/what-is.html). For more information about getting started with IAM Identity Center, see [Getting started](https://docs.aws.amazon.com/singlesignon/latest/userguide/getting-started.html). To use IAM Identity Center, you must also have AWS Organizations activated for the account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS re:Post Private. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query repostprivate` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

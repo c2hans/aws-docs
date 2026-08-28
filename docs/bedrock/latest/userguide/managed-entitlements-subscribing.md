@@ -42,3 +42,7 @@ After subscribing, AWS License Manager automatically creates a license for your 
 The license is always created in the us-east-1 region, regardless of which region you subscribed in. Always check License Manager in us-east-1 to view your licenses.
 
 If the license does not appear after 5 minutes, verify your subscription is active by going to AWS Marketplace Console, choosing Manage Subscriptions, and confirming your third-party Bedrock model subscription shows as Active.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

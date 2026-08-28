@@ -245,3 +245,7 @@ We recommend that you take the following next steps to optimize your costs by us
 + [Amazon Web Services and Microsoft: Frequently Asked Questions](https://aws.amazon.com/windows/faq/) (AWS documentation)
 + [License type conversions in License Manager](https://docs.aws.amazon.com/license-manager/latest/userguide/license-conversion.html) (AWS License Manager documentation)
 + [Deploying highly-available SQL Server on Amazon EC2 Dedicated Hosts](https://aws.amazon.com/blogs/mt/deploying-highly-available-sql-server-on-amazon-ec2-dedicated-hosts/) (AWS Cloud Operations & Migrations Blog)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

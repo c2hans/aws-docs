@@ -687,3 +687,7 @@ The following tables show the compute, memory, storage, and bandwidth specificat
 | db.t2.micro | 1 | Variable | 1 | EBS only | — | Low |
 
 \* These DB instance classes can support maximum performance for 30 minutes at least once every 24 hours. For more information on baseline performance of the underlying EC2 instance types, see [Amazon EBS-optimized instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html) in the *Amazon EC2 User Guide.*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

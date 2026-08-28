@@ -18,3 +18,7 @@ AWS SCT can convert schemas for the following source data warehouses to a suppor
 + [Connecting to a SQL Server Data Warehouse with the AWS Schema Conversion Tool](CHAP_Source.SQLServerDW.md)
 + [Connecting to a Teradata Data Warehouse with the AWS Schema Conversion Tool](CHAP_Source.Teradata.md)
 + [Connecting the AWS Schema Conversion Tool to Vertica databases](CHAP_Source.Vertica.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Schema Conversion Tool User Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query SchemaConversionTool` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

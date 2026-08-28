@@ -53,3 +53,7 @@ marketo_write = glueContext.write_dynamic_frame.from_options(
 
 **Note**
 For the `leads` and `customobjects` entities, Adobe Marketo provides endpoints to fetch metadata dynamically so the writable fields are identified from the Marketo API response.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

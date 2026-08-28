@@ -21,3 +21,7 @@ Deleting a workload cannot be undone. All data associated with the workload is p
 1. In the **Delete** window, choose **Delete** to confirm the deletion of the workload and its milestones.
 
 To prevent an entity from deleting workloads, attach a policy that denies `wellarchitected:DeleteWorkload` actions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

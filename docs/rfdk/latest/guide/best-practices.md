@@ -104,3 +104,7 @@ In addition to the above best practices it is recommended that you take a moment
 +  [AWS Fundamentals](https://aws.amazon.com/getting-started/fundamentals-core-concepts/)
 +  [Cloud Formation - Best Practices](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/best-practices.html)
 +  [Deadline - Render Farm Considerations](https://docs.thinkboxsoftware.com/products/deadline/10.2/1_User%20Manual/manual/considerations.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Render Farm Deployment Kit on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rfdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

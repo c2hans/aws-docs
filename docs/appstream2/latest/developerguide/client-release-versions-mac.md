@@ -9,6 +9,7 @@ The following table describes the latest updates that are available in released 
 
 | Client version | Release date | Changes |
 | --- | --- | --- |
+| 1.5.1 | 08-25-2026 |  +  Fixed an issue where expired authentication tokens could cause connection failures during session reconnection. <br />+  Updated the DCV SDK. <br />+  Other bug fixes and enhancements.   |
 | 1.5.0 | 07-09-2026 |  +  Fixed an issue that caused the streaming session to be positioned incorrectly when entering full screen on a non-primary display, when multiple displays are connected. <br />+  Improved the connection reliability during network interruption scenarios and in proxy environments. <br />+  Updated the DCV SDK. <br />+  Other bug fixes and enhancements.   |
 | 1.4.0 | 04-28-2026 |  +  Added support for URL redirection, enabling administrators to configure certain websites to be redirected from the streaming session to the local device's web browser. <br />+  Fixed an issue that was preventing copying and pasting from the clipboard between the local client device and the streaming session in some scenarios. <br />+  Updated the DCV SDK. <br />+  Other bug fixes and enhancements.   |
 | 1.3.0 | 02-10-2026 |  +  Added support for user pools, an alternative method for access management that provides a persistent portal for users. <br />+  Added streaming support for Ubuntu-based Elastic fleets. <br />+  Improved the SAML login flow to support your preferred browser, including Apple Safari, Google Chrome, Mozilla Firefox, and Microsoft Edge browsers. <br />+  Fixed an issue to sort applications in the catalog by application display name. <br />+  Fixed an issue that was preventing a streaming session from being redirected from the web browser to the client if the client application was not previously open. <br />+  Updated the DCV SDK. <br />+  Other bug fixes and enhancements.   |
@@ -16,3 +17,7 @@ The following table describes the latest updates that are available in released 
 | 1.1.0 | 06-02-2025 |  +  Accessibility fixes and improvements <br />+  Support for dynamic application providers <br />+  Support for client customizations   |
 | 1.0.1 | 03-25-2025 |  +  Bug fixes and improvements <br />+  Support for certificate-based authentication & multi-stack access for SAML instances   |
 | 1.0.0 | 12-19-2024 |  +  Initial release   |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

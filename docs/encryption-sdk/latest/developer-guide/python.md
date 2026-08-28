@@ -53,3 +53,7 @@ Versions 1.10.0 and 2.5.0 of the AWS Encryption SDK for Python pin the [cryptogr
 For the latest development version of the AWS Encryption SDK for Python, go to the [aws-encryption-sdk-python](https://github.com/aws/aws-encryption-sdk-python/) repository in GitHub.
 
 After you install the AWS Encryption SDK for Python, get started by looking at the [Python example code](python-example-code.md) in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

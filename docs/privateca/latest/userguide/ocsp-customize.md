@@ -64,3 +64,7 @@ In Route 53, create a DNS record that maps your custom CNAME to the URL of the 
  The default AWS Private CA OCSP responder URL is IPv4-only. To use OCSP over IPv6, configure a custom OCSP URL for your CA. The URL can be either:
 + The FQDN of the dualstack PCA OCSP responder, which takes the form `acm-pca-ocsp.{{region-name}}.api.aws`
 + A CNAME record that you have configured to point at the dualstack OCSP responder, as explained above.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -92,3 +92,7 @@ When logging is enabled, table logs are rotated, or log files are deleted, at re
   + When log tables are rotated, the current log table is copied to a backup log table and the entries in the current log table are removed. If the backup log table already exists, then it is deleted before the current log table is copied to the backup. You can query the backup log table. The backup log table for the `mysql.general_log` table is named `mysql.general_log_backup`. The backup log table for the `mysql.slow_log` table is named `mysql.slow_log_backup`.
   + You can rotate the `mysql.general_log` table by calling the `mysql.rds_rotate_general_logprocedure`. You can rotate the `mysql.slow_log` table by calling the `mysql.rds_rotate_slow_logprocedure`.
   + Table logs are rotated during a database version upgrade.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

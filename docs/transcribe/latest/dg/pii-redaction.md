@@ -20,3 +20,7 @@ The redaction feature does not meet the requirements for de-identification under
 For a video walkthrough of redacting and identifying PII, see:
 
 [![AWS Videos](http://img.youtube.com/vi/4H8dQoeLkyM/0.jpg)](http://www.youtube.com/watch?v=4H8dQoeLkyM)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

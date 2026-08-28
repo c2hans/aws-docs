@@ -44,3 +44,7 @@ These building blocks can then be used to construct complex deployment pipelines
 <a name="custom-scripts"></a>
 
 If you need functionalities beyond those provided through extensions published by AWS, or if you need more fine-grained control over your pipeline, you can use AWS CLI or AWS Tools for Windows PowerShell to create a custom task or step in Azure DevOps pipeline.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

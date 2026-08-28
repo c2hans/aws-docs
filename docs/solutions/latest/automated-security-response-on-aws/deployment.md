@@ -29,16 +29,16 @@ Use the following steps to deploy this solution on AWS.
  [Step 1: Launch the admin stack](#step-1)
 + Launch the `automated-security-response-admin.template` AWS CloudFormation template into your AWS Security Hub admin account.
 + Choose which security standards to install.
-+ Choose an existing Orchestrator log group to use (select `Yes` if `SO0111-ASR-Orchestrator` already exists from a previous installation).
++ Choose an existing Orchestrator log group to use (choose `Yes` if `SO0111-ASR-Orchestrator` already exists from a previous installation).
 
  [Step 2: Install the remediation roles into each AWS Security Hub member account](#step-2)
 + Launch the `automated-security-response-member-roles.template` AWS CloudFormation template into one Region per member account.
-+ Enter the 12-digit account IG for the AWS Security Hub admin account.
++ Enter the 12-digit account ID for the AWS Security Hub admin account.
 
  [Step 3: Launch the member stack](#step-3)
 + Specify the name of the CloudWatch Logs group to use with CIS 3.1-3.14 remediations. It must be the name of a CloudWatch Logs log group that receives CloudTrail logs.
-+ Choose whether to install the remediation roles. Install these roles only once per account.
-+ Select which playbooks to install.
++ Choose whether to install the remediation roles. Install these roles only once for each account.
++ Choose which playbooks to install.
 + Enter the account ID of the AWS Security Hub admin account.
 
  [Step 4: (Optional) Adjust the available remediations](#step-4)
@@ -65,8 +65,8 @@ You can choose to use a Jira API key in place of your password by providing your
 
    1. Add the ARN of this secret as input to the stack.
 
-       **"Provide a stack name Jira project information, and Jira API credentials.**
-![ticket system integration stack jira](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-jira.png)
+       **Provide a stack name, Jira project information, and Jira API credentials.**
+![Jira ticket system integration stack configuration](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-jira.png)
 
        **Jira Field Configuration**:
 
@@ -84,8 +84,8 @@ You can choose to use a Jira API key in place of your password by providing your
 
    1. Create a secret in Secrets Manager with the key `API_Key` and provide the secret ARN as input to the stack.
 
-       **Provide a stack name ServiceNow project information, and ServiceNow API credentials.**
-![ticket system integration stack servicenow](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-servicenow.png)
+       **Provide a stack name, ServiceNow project information, and ServiceNow API credentials.**
+![ServiceNow ticket system integration stack configuration](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/ticket-system-integration-stack-servicenow.png)
 
        **To create a custom integration stack**: Include a Lambda function that the solution orchestrator Step Functions can call for each remediation. The Lambda function should take the input provided by Step Functions, construct a payload according to the requirements of your ticketing system, and make a request to your system to create the ticket.
 
@@ -93,14 +93,14 @@ You can choose to use a Jira API key in place of your password by providing your
 <a name="step-1"></a>
 
 **Important**
-This solution includes data collection. We use this data to better understand how customers use this solution and related services and products. AWS owns the data gathered though this survey. Data collection is subject to the [AWS Privacy Notice](https://aws.amazon.com/privacy/).
+This solution includes data collection. We use this data to better understand how customers use this solution and related services and products. AWS owns the data gathered through this survey. Data collection is subject to the [AWS Privacy Notice](https://aws.amazon.com/privacy/).
 
 This automated AWS CloudFormation template deploys the Automated Security Response on AWS solution in the AWS Cloud. Before you launch the stack, you must enable Security Hub and complete the [prerequisites](#prerequisites).
 
 **Note**
-You are responsible for the cost of the AWS services used while running this solution. For more details, visit to the [Cost](cost.md) section in this guide, and refer to the pricing webpage for each AWS service used in this solution.
+You are responsible for the cost of the AWS services used while running this solution. For more details, see the [Cost](cost.md) section in this guide, and refer to the pricing webpage for each AWS service used in this solution.
 
-1. Sign in to the AWS Management Console from the account where the AWS Security Hub is currently configured, and use the button below to launch the `automated-security-response-admin.template` AWS CloudFormation template.
+1. Sign in to the AWS Management Console from the account where the AWS Security Hub is currently configured, and choose the button below to launch the `automated-security-response-admin.template` AWS CloudFormation template.
 
     [![automated-security-response-admin-template launch button](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=automated-security-response-on-aws-admin&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-admin.template&redirectId=ImplementationGuide)
 
@@ -131,9 +131,9 @@ You can view the status of the stack in the AWS CloudFormation console in the **
 ## Step 2: Install the remediation roles into each AWS Security Hub member account
 <a name="step-2"></a>
 
-The `automated-security-response-member-roles.template` StackSet must be deployed in only one Region per member account. It defines the global roles that allow cross-account API calls from the ASR Orchestrator step function.
+The `automated-security-response-member-roles.template` StackSet must be deployed in only one Region for each member account. It defines the global roles that allow cross-account API calls from the ASR Orchestrator step function.
 
-1. Sign in to the AWS Management Console for each AWS Security Hub member account (including the admin account, which is also a member). Select the button to launch the `automated-security-response-member-roles.template` AWS CloudFormation template. You can also [download the template](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-member-roles.template) as a starting point for your own implementation.
+1. Sign in to the AWS Management Console for each AWS Security Hub member account (including the admin account, which is also a member). Choose the button to launch the `automated-security-response-member-roles.template` AWS CloudFormation template. You can also [download the template](https://solutions-reference.s3.amazonaws.com/automated-security-response-on-aws/latest/automated-security-response-member-roles.template) as a starting point for your own implementation.
 
     [![Launch solution](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=automated-security-response-on-aws-member-roles&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member-roles.template&redirectId=ImplementationGuide)
 
@@ -158,11 +158,11 @@ The `automated-security-response-member-roles.template` StackSet must be deploye
 <a name="step-3"></a>
 
 **Important**
-This solution includes data collection. We use this data to better understand how customers use this solution and related services and products. AWS owns the data gathered though this survey. Data collection is subject to the AWS Privacy Policy.
+This solution includes data collection. We use this data to better understand how customers use this solution and related services and products. AWS owns the data gathered through this survey. Data collection is subject to the [AWS Privacy Notice](https://aws.amazon.com/privacy/).
 
 The `automated-security-response-member` stack must be installed into each Security Hub member account. This stack defines the runbooks for automated remediation. The admin for each member account can control what remediations are available via this stack.
 
-1. Sign in to the AWS Management Console for each AWS Security Hub member account (including the admin account, which is also a member). Select the button to launch the `automated-security-response-member.template` AWS CloudFormation template.
+1. Sign in to the AWS Management Console for each AWS Security Hub member account (including the admin account, which is also a member). Choose the button to launch the `automated-security-response-member.template` AWS CloudFormation template.
 
     [![automated-security-response-member.template, Launch solution](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/launch-button.png)](https://console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/new?stackName=automated-security-response-on-aws-member&templateURL=https:%2F%2Fs3.amazonaws.com%2Fsolutions-reference%2Fautomated-security-response-on-aws%2Flatest%2Fautomated-security-response-member.template&redirectId=ImplementationGuide)
 
@@ -200,13 +200,13 @@ If you want to remove specific remediations from a member account, you can do so
 1. Select **Update nested stack** and choose **Update stack**.
 
     **Update nested stack**
-![nested stack](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/nested-stack.png)
+![Update nested stack dialog](http://docs.aws.amazon.com/solutions/latest/automated-security-response-on-aws/images/nested-stack.png)
 
 1. Select **Use current template** and choose **Next**.
 
 1. Adjust the available remediations. Change the values for desired controls to `Available` and undesired controls to `Not available`.
 **Note**
-Turning off a remediation removes the solutions remediation runbook for the security standard and control.
+Turning off a remediation removes the solution’s remediation runbook for the security standard and control.
 
 1. On the **Configure stack options** page, choose **Next**.
 
@@ -215,3 +215,7 @@ Turning off a remediation removes the solutions remediation runbook for the secu
 1. Choose **Update stack**.
 
 You can view the status of the stack in the AWS CloudFormation console in the **Status** column. You should receive a CREATE\_COMPLETE status in approximately 15 minutes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Security Response on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

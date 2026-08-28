@@ -18,3 +18,7 @@ If you invite more than 300 individual users:
 + The **Attendees** panel and its subsections, such as **Invited** and **dropped**, can display a combined maximum of 300 items. If the panel reaches the 300-item limit, or 250 attendees connect to the meeting, new attendees receive a "meeting full" notice and can't join the meeting.
 
 For more information about running large meetings, see [Conducting large meetings using Amazon Chime](https://answers.chime.aws/articles/1062/conducting-large-meetings-using-amazon-chime.html), on the **Amazon Chime Help Center**. For more information about using auto-call, see [Using auto-call](chime-scheduling-best-practices.md#autocall), later in this section. For more information about the various Amazon Chime permissions, see the [Amazon Chime pricing page](https://aws.amazon.com/chime/pricing).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

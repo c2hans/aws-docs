@@ -20,3 +20,7 @@ After you create a dashboard with useful variables, you can copy these variables
 1. Choose the selection box and start typing the dashboard name that you want to copy the variable to.
 
 1. Select the dashboard name and choose **Copy variable**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

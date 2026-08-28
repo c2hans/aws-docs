@@ -56,3 +56,7 @@ View details about updates to AWS managed policies for AWS KMS since this servic
 | [AWSKeyManagementServiceMultiRegionKeysServiceRolePolicy](multi-region-auth-slr.md) – Update to existing policy | AWS KMS added a statement ID (`Sid`) field to the managed policy in policy version v2. | November 21, 2024 |
 | [AWSKeyManagementServiceCustomKeyStoresServiceRolePolicy](authorize-kms.md) – Update to existing policy | AWS KMS added the `ec2:DescribeVpcs`, `ec2:DescribeNetworkAcls`, and `ec2:DescribeNetworkInterfaces` permissions to monitor changes in the VPC that contains your AWS CloudHSM cluster so that AWS KMS can provide clear error messages in the case of failures. | November 10, 2023 |
 | AWS KMS started tracking changes | AWS KMS started tracking changes for its AWS managed policies. | November 10, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -47,6 +47,12 @@ Grok 4.3 is a reasoning-first model that offers always-on and configurable reaso
 | --- | --- | --- | --- |
 | In-Region | $1.25 | $2.50 | $0.20 |
 
+**AWS GovCloud (US-West)**
+
+| **Inference option** | **Input** | **Output** | **Cache read** |
+| --- | --- | --- | --- |
+| In-Region | $1.50 | $3.00 | $0.24 |
+
 *All prices are per 1 million tokens. Pricing shown is for the Standard tier. Grok 4.3 supports In-Region inference only.*
 
 **Priority and Flex tier support:** In addition to Standard, Grok 4.3 supports the Priority and Flex service tiers. Priority is billed at **1.75x** the Standard per-token rate (a 75% premium) and Flex at **0.5x** the Standard rate (a 50% discount); apply these multipliers to the Standard rates shown above. For details on each service tier, see [service tiers](service-tiers-inference.html).
@@ -83,6 +89,7 @@ Amazon Bedrock offers three inference options: **In-Region** keeps requests with
 | us-west-2 (Oregon) | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | us-east-1 (N. Virginia) | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 | us-east-2 (Ohio) | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
+| us-gov-west-1 (GovCloud West) | ![Green circle with white checkmark icon.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-yes.png) | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) | ![Red circle with white X icon indicating error, cancel, or close action.](http://docs.aws.amazon.com/bedrock/latest/userguide/images/icons/icon-no.png) |
 
 ## Quotas and Limits
 <a name="model-card-xai-grok-4-3-quotas"></a>
@@ -186,3 +193,7 @@ print(response)
   print(response.output_text)
   ```
 + **Default parameters** — Grok 4.3 uses defaults that differ from the standard OpenAI API specification: `temperature` defaults to `0.7` (not `1`), `top_p` defaults to `0.95` (not `1`), and `max_completion_tokens` defaults to `131072`. Adjust these values explicitly if your application requires different behavior.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

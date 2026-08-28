@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/financial-service
 <a name="fsiperf01-bp03"></a>
 
  Benchmark your existing solution and its components in order to understand their performance characteristics and capacity to exceed their current profiles. AWS services like AWS Lambda and CloudWatch can be useful tools for building, running and monitoring a load testing environment due to their low overhead for setup and extensive scaling capabilities. For more information, see [AWS Prescriptive Guidance for load testing](https://docs.aws.amazon.com/prescriptive-guidance/latest/load-testing/welcome.html) and [Distributed Performance Testing](https://aws.amazon.com/solutions/implementations/distributed-load-testing-on-aws/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

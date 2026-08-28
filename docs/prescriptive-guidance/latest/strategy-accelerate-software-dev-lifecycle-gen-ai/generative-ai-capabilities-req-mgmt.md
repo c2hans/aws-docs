@@ -19,3 +19,7 @@ The following table shows requirement management use cases that you can enhance 
 | Create user stories | Product owner |
 | Estimate the effort required for each use story and assign story points | Scrum Master |
 | Define acceptance criteria for each user story | Product owner |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

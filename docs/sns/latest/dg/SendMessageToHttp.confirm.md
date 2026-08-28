@@ -28,3 +28,7 @@ To confirm your Amazon SNS subscription, follow these steps to ensure your endpo
    1. Find your **subscription** in the list.
       + If confirmed, the `SubscriptionArn` will be displayed.
       + If still unconfirmed, it will show as `PendingConfirmation`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

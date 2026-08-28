@@ -437,3 +437,7 @@ To explore how to use and learn more about each of the available AWS container s
   Explore vetted solutions and architectural guidance for common use cases for containers.
 
   [Explore solutions](https://aws.amazon.com/solutions/compute/containers-orchestration-operations/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Decision Guides. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query decision-guides` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

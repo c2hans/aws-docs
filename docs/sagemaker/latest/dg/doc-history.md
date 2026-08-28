@@ -103,3 +103,7 @@ The following contains the document history of SageMaker AI.
 | [CloudTrail support](#doc-history) | Amazon SageMaker AI now supports [logging with AWS CloudTrail](https://docs.aws.amazon.com/sagemaker/latest/dg/logging-using-cloudtrail.html). | January 11, 2018 |
 | [DeepAR Forecasting algorithm](#doc-history) | Amazon SageMaker AI now supports the [DeepAR](https://docs.aws.amazon.com/sagemaker/latest/dg/deepar.html) algorithm for time series forecasting. | January 8, 2018 |
 | [SageMaker AI launch](#doc-history) | Amazon SageMaker AI launched at re:Invent 2017. | November 28, 2017 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ The following table describes significant changes to this guide.
 | Updates to [Security foundations](foundations.md) section | Updated the information about Well-Architected pillars and security design principles. | September 27, 2022 |
 | Added new guidance, updated and clarified existing guidance  | + Added information about [how to use the AWS SRA and key implementation guidelines](value.md).<br />+ Added architectural guidance for additional AWS services such as AWS Artifact, Amazon Inspector, AWS RAM, Amazon Route 53, AWS Control Tower, AWS Audit Manager, Directory Service, Amazon Cognito, and Network Access Analyzer.<br />+ Updated existing guidance to reflect new AWS service features and best practices. | July 25, 2022  |
 | Initial publication | — | June 23, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

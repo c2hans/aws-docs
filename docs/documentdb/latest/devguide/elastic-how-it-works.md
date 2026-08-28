@@ -115,3 +115,7 @@ db.foo.insert(
 
   In Amazon DocumentDB 4.0, `$indexOfCP` returns "0" when the `start` position is a number greater than `end` or the byte length of the string.
 + With elastic clusters, projection operations in `_id fields`, e.g., `{"_id.nestedField" : 1}`, return documents that only include the projected field. Meanwhile, in Amazon DocumentDB 4.0, nested field projection commands do not filter out any document.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

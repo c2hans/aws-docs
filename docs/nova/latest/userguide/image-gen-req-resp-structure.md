@@ -353,3 +353,7 @@ The `imageGenerationConfig` field is common to all task types except `BACKGROUND
 
 **Important**
 Resolution (`width` and `height`), `numberOfImages`, and `quality` all have an impact on the time it takes for generation to complete. The AWS SDK has a default `read_timeout` of 60 seconds which can easily be exceeded when using higher values for these parameters. Therefore, it is recommended that you increase the `read_timeout` of your invocation calls to at least 5 minutes (300 seconds). The code examples demonstrate how to do this.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -34,3 +34,7 @@ From the menu icon (![Three dots arranged horizontally, representing an ellipsis
 +  ![Save](http://docs.aws.amazon.com/redshift/latest/mgmt/images/qev2-floppy-disk.png) **Save version** – To create a version of the notebook. To see versions of a notebook, navigate to your saved notebooks and open **Version history**.
 +  ![Duplicate](http://docs.aws.amazon.com/redshift/latest/mgmt/images/qev2-duplicate.png) **Duplicate** – To create a copy of the notebook and open it in a new notebook tab.
 +  ![Shortcuts](http://docs.aws.amazon.com/redshift/latest/mgmt/images/qev2-key-command.png) **Shortcuts** – To display the shortcuts available when authoring a notebook.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

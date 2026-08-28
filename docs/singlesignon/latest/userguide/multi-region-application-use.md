@@ -50,3 +50,7 @@ All applications that propagate identity context to each other must be in the sa
 <a name="multi-region-customer-managed-applications"></a>
 
  IAM Identity Center supports SAML and OAuth2 [customer managed applications](customermanagedapps.md). You can choose to create them in any enabled Region of your IAM Identity Center instance. After you create one, you manage the application and its assignments to users and groups in the same Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,3 +55,7 @@ AWS IoT SiteWise provides the following API operations to create a bulk import j
 + [CreateBulkImportJob](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_CreateBulkImportJob.html) – Creates a new bulk import job.
 + [DescribeBulkImportJob](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_DescribeBulkImportJob.html) – Retrieves information about a bulk import job.
 + [ListBulkImportJob](https://docs.aws.amazon.com/iot-sitewise/latest/APIReference/API_ListBulkImportJobs.html) – Retrieves a paginated list of summaries of all bulk import jobs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

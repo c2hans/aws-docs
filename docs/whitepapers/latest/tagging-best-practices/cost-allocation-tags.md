@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/tagging-best-practice
 +  What was the impact of cost optimization efforts within particular workloads, applications, or products?
 
  Activating resource tags for cost allocation helps with the definition of measurement practices within the organization that can be used to provide the visibility of AWS usage that increases transparency into accountability for spend. It also focuses on creating an appropriate level of granularity with respect to cost and usage visibility and inﬂuencing cloud consumption behaviors through cost allocation reporting and KPI tracking.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

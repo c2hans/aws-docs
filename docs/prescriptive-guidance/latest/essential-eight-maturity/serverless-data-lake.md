@@ -42,3 +42,7 @@ For this workload, the application team takes the following actions to address t
 + The application team enables versioning and Amazon S3 Object Lock to help prevent objects from deletion or modification.
 + The application team relies on built-in Amazon S3 durability rather than replicating their entire dataset to another AWS Region.
 + The application team runs a copy of the workload in another AWS Region that meets their data sovereignty requirements. They use Amazon DynamoDB global tables and Amazon S3 [Cross-Region Replication](https://docs.aws.amazon.com/AmazonS3/latest/userguide/replication.html#crr-scenario) to replicate data automatically from the primary Region to the secondary Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ With Amazon EMR 7.0.0 and higher, Hue requires Python 3.9 or higher. When you us
 + Trino/Presto — Hue supports connecting to Trino and Presto data servers. With Amazon EMR 7.0.0 and higher, this connectivity is facilitated with `trino-python-client` and `presto-python-client` connectors. Releases lower than 7.0.0 use a JDBC connector through a JDBC gateway.
 + The Hue Dashboard is not supported.
 + PostgreSQL is not supported.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

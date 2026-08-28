@@ -75,3 +75,7 @@ Incident Manager provides a framework for reflecting on an incident, taking step
 + Changes to alerting. After an incident, your team might have noticed critical points in the metrics you can use to alert the team sooner about an incident.
 
 Incident Manager facilitates these potential improvements by using a set of post-incident analysis questions and action items alongside the incident timeline. To learn more about improvement through analysis, see [Performing a post-incident analysis in Incident Manager](analysis.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

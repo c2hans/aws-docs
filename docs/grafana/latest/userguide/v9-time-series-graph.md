@@ -80,3 +80,7 @@ You can override the stacking behavior to stack series in groups. For more infor
 **Fill below to**
 
 The **Fill below to** option fills the area between two series. This options is only available as a series or field override. Using this option you can fill the area between two series, rather than from the series line down to 0. For example, if you had two series called *Max* and *Min*, you could select the **Max** series and override it to **Fill below to** the **Min** series.. This would fill only the area between the two series lines.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,3 +13,7 @@ After changing the `neptune_streams` DB cluster parameter, you must reboot all D
 You can set the [neptune\_streams\_expiry\_days](parameters.md#parameters-db-cluster-parameters-neptune_streams_expiry_days) DB cluster parameter to control how many days, from 1 to 90, that stream records remain on the server before being deleted. The default is 7.
 
 Neptune Streams was initially introduced as an experimental feature that you enabled or disabled in Lab Mode using the DB Cluster `neptune_lab_mode` parameter (see [Neptune Lab Mode](features-lab-mode.md)). Using Lab Mode to enable Streams is now deprecated and will be disabled in the future.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

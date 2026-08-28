@@ -136,3 +136,7 @@ Ensure that your Amazon EVS host count per EVS environment quota is correctly se
  AWS provides support for Amazon EVS and its associated infrastructure services, including VMware Cloud Foundation (VCF). For VCF-specific configuration guidance, or issues related to other VMware products such as Aria Suite, HCX, or NSX, you can also contact Broadcom directly using your Broadcom support entitlement. For more information, see [Broadcom Support Portal](https://support.broadcom.com/).
 
 For troubleshooting guidance, see [Troubleshooting](troubleshooting.md). If you continue to experience issues after reviewing the troubleshooting guidance, contact AWS Support for further assistance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic VMware Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query evs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

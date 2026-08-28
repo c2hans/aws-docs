@@ -14,3 +14,7 @@ To subscribe, go to [AWS Marketplace](https://aws.amazon.com/marketplace) and fo
 You will not incur software charges for using this product, but you are still responsible for other AWS charges, including EC2 usage. If this is a "Bring Your Own License" product you must have a valid software license in order to use it.
 
 You can review information for this software at [CentOS 7 (x86\_64) - with Updates HVM](https://aws.amazon.com/marketplace/pp/ref=bill_eml_1?sku=aw0evgkw8e5c1q413zgy5pjce).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

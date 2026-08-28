@@ -50,3 +50,7 @@ To schedule a notebook job, complete the following steps.
        If you select a custom schedule, you use cron syntax in the expression box to specify your exact run date and time. The cron syntax is a space-separated list of digits, each of which represent a unit of time from seconds to years. For help with cron syntax, you can choose **Get help with cron syntax** under the expression box.
      + Choose **Create**.
      + The **Notebook Job Definitions** tab appears. Choose **Reload** to load your job definition into the dashboard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

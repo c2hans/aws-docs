@@ -23,3 +23,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/reliability-pilla
 + [REL08-BP03 Integrate resiliency testing as part of your deployment](rel_tracking_change_management_resiliency_testing.md)
 + [REL08-BP04 Deploy using immutable infrastructure](rel_tracking_change_management_immutable_infrastructure.md)
 + [REL08-BP05 Deploy changes with automation](rel_tracking_change_management_automated_changemgmt.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

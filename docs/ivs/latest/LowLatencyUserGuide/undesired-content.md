@@ -155,3 +155,7 @@ If you do not want to use [private channels](#undesired-content-private-channels
    ```
 
    For a new channel, include the `--playback-restriction-policy-arn` statement during [channel creation.](create-channel-cli.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

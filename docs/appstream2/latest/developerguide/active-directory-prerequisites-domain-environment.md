@@ -13,3 +13,7 @@ Your active directory domain environment must meet the following requirements.
 + When you register your Active Directory domain with WorkSpaces Applications, you must provide an organizational unit (OU) distinguished name. Create an OU for this purpose. The default Computers container is not an OU and cannot be used by WorkSpaces Applications. For more information, see [Finding the Organizational Unit Distinguished Name](active-directory-oudn.md).
 + The directories that you plan to use with WorkSpaces Applications must be accessible through their fully qualified domain names (FQDNs) through the virtual private cloud (VPC) in which your streaming instances are launched. For more information, see [Active Directory and Active Directory Domain Services Port Requirements](https://technet.microsoft.com/en-us/library/dd772723.aspx) in the Microsoft documentation.
 + Domain controller access can also be supported over IPv6, and require [DHCP options set updates](https://docs.aws.amazon.com/vpc/latest/userguide/VPC_DHCP_Options.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -140,3 +140,7 @@ To test this pattern in a sandbox environment, follow these steps:
 1. Create an application repository, and copy and paste the `checkov-scan.yaml` workflow to its `.github/workflows` folder. Add a secret to the repository that contains the PAT you created for organization read-only access. The default secret is `ORG_PAT`.
 
 1. Create a pull request that adds some Terraform or CloudFormation code to the application repository. Checkov should scan and return a result.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

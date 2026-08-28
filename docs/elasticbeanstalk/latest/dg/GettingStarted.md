@@ -391,3 +391,7 @@ You have successfully deployed a sample application to the AWS Cloud, uploaded a
 To learn how to use the **eb** command line tool to automate deploying your code to Elastic Beanstalk, We suggest continuing with the [QuickStart: Deploy a PHP application to Elastic Beanstalk](php-quickstart.md).
 
 Next, you might want to review how to set up HTTPS connection, see [Configuring HTTPS for your Elastic Beanstalk environment](configuring-https.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -109,3 +109,7 @@ If you see **Root access management is disabled**, enable trusted access for AWS
 <a name="enable-root-access_next-steps"></a>
 
 Once you've centrally secured privileged credentials for the member accounts in your organization, see [Perform a privileged task](id_root-user-privileged-task.md) to take privileged actions on a member account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

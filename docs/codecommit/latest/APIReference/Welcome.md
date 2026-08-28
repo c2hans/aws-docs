@@ -29,6 +29,7 @@ Branches, by calling the following:
 Files, by calling the following:
 +  [DeleteFile](API_DeleteFile.md), which deletes the content of a specified file from a specified branch.
 +  [GetBlob](API_GetBlob.md), which returns the base-64 encoded content of an individual Git blob object in a repository.
++  [GetBlobDifferences](API_GetBlobDifferences.md), which returns a structured, line-level diff between two blob versions in a repository, with optional surrounding context lines.
 +  [GetFile](API_GetFile.md), which returns the base-64 encoded content of a specified file.
 +  [GetFolder](API_GetFolder.md), which returns the contents of a specified folder or directory.
 +  [ListFileCommitHistory](API_ListFileCommitHistory.md), which retrieves a list of commits and changes to a specified file.
@@ -110,4 +111,8 @@ Triggers, by calling the following:
 
 For information about how to use AWS CodeCommit, see the [AWS CodeCommit User Guide](https://docs.aws.amazon.com/codecommit/latest/userguide/welcome.html).
 
-This document was last published on August 24, 2026.
+This document was last published on August 28, 2026.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

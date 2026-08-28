@@ -39,3 +39,7 @@ The [EC2 Spot Instance tutorial](how-to-spot-instances.md) shows you how to requ
 + [Regions and Availability Zones](using-regions-and-availability-zones.md)
 + [EC2 instances](how-to-ec2.md)
 + [Spot Instance tutorial](how-to-spot-instances.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

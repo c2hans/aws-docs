@@ -50,3 +50,7 @@ You can also use CloudFormation templates to create and manage S3 Files resource
 + [Creating access points for an S3 file system](s3-files-access-points-creating.md)
 + [Deleting access points for an S3 file system](s3-files-access-points-deleting.md)
 + [Tagging S3 Files resources](s3-files-tagging.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,3 +43,7 @@ s3://{{amzn-s3-demo-bucket1}}/{{prefix}}{{/yyyy}}/{{mm}}/{{dd}}/{{hh}}
 The date in this path is the date when the Ground Truth label is collected, and does not have to match the date when the inference was generated.
 
 After you create and upload the Ground Truth labels, include the location of the labels as a parameter when you create the monitoring job. If you are using AWS SDK for Python (Boto3), do this by specifying the location of Ground Truth labels as the `S3Uri` field of the `GroundTruthS3Input` parameter in a call to the `create_model_quality_job_definition` method. If you are using the SageMaker Python SDK, specify the location of the Ground Truth labels as the `ground_truth_input` parameter in the call to the `create_monitoring_schedule` of the `ModelQualityMonitor` object.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

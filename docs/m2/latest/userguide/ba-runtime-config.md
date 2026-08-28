@@ -107,3 +107,7 @@ Some project-specific additional configuration can also be added in a YAML confi
 + `gapwalk-utility-pgm.war`: contains support for ZOS utility programs and uses `application-utility-pgm.yaml` as its configuration.
 + `gapwalk-cl-command.war`: contains support for AS/400 utility programs and uses `application-cl-command.yaml` as its configuration.
 + `gapwalk-hierarchical-support.war`: contains IMS/MFS transaction support and uses `application-jhdb.yaml` as its configuration
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

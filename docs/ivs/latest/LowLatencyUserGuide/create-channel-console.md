@@ -55,3 +55,7 @@ Follow these steps to enable recording while creating a new channel:
    + In the **Playback configuration** area, note the **Playback URL**. You will use it later, to play back your stream.
 
 **Note**: To see SRT values (endpoint and passphrase), expand **Other ingest options** in the **Stream configuration** area.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

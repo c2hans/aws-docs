@@ -5,6 +5,9 @@ source_url: https://docs.aws.amazon.com/health/latest/ug/manage-user-notificatio
 # Manage AWS Health notifications in AWS User Notifications
 <a name="manage-user-notifications"></a>
 
+**Important**
+Public events are not available through AWS managed notifications in AWS User Notifications. To receive public events, you must create an Amazon EventBridge rule or a User-configured notification (UCN) within AWS User Notifications. For more information, see [Monitoring events in AWS Health with Amazon EventBridge](cloudwatch-events-health.md) and [Managing notifications in AWS User Notifications](https://docs.aws.amazon.com/notifications/latest/userguide/managing-notifications.html).
+
 AWS managed notifications in AWS User Notifications lets you receive and manage notifications about events that affect your AWS accounts and services. When you use AWS managed notifications in AWS User Notifications, you can specify which AWS Health event categories to receive, set up organizational view for emails, and get consolidated notifications instead of multiple similar emails.
 
 You can choose the following additional channels to receive your AWS Health events through AWS User Notifications:
@@ -73,3 +76,7 @@ No. The current plain text AWS Health emails are disabled after the migration co
 Health operations, Security, and Billing notifications correspond to AWS Health account notifications and scheduled changes that have the operations, security, and billing persona respectively. AWS Health events with more than one persona tag are sent through the Security and Billing categories. Account-specific issues include issue category health events that are specific to an AWS account.
 
 Public service events aren't available through AWS managed notifications.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query health` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

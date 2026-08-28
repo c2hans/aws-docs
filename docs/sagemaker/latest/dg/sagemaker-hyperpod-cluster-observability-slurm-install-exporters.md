@@ -38,3 +38,7 @@ On the head node, the script installs the Slurm exporter for Prometheus and the 
 Note that the lifecycle scripts are designed to install all the exporter packages as docker containers, so the Docker package also should be installed on both the head and compute nodes. The scripts for these components are conveniently provided in the [`utils`](https://github.com/aws-samples/awsome-distributed-training/tree/main/1.architectures/5.sagemaker-hyperpod/LifecycleScripts/base-config/utils) folder of the *Awsome Distributed Training GitHub repository*.
 
 After you have successfully set up your HyperPod cluster installed with the exporter packages, proceed to the next topic to finish setting up Amazon Managed Service for Prometheus and Amazon Managed Grafana.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

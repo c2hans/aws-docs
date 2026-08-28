@@ -247,3 +247,7 @@ Save your generated events locally and use other `sam local` subcommands to test
 For a list of all `sam local generate-event` options, see [sam local generate-event](sam-cli-command-reference-sam-local-generate-event.md).
 
 For a demo of using `sam local`, see [AWS SAM for local development. Testing AWS Cloud resources from local development environments](https://www.youtube.com/watch?v=NzPqMrdgD1s&list=PLJo-rJlep0ED198FJnTzhIB5Aut_1vDAd&index=24) in the *Serverless Land Sessions with SAM series on YouTube*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

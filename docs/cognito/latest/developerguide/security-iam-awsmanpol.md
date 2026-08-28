@@ -41,3 +41,7 @@ View details about updates to AWS managed policies for Amazon Cognito since this
 | AmazonCognitoPowerUser–Change | Added a new permission to allow Amazon Cognito to call Amazon Simple Email Service PutIdentityPolicy and ListConfigurationSets operations.This change allows Amazon Cognito user pools to update Amazon SES sending authorization policies and to apply Amazon SES configuration sets when you configure email sending in your user pool. | November 17, 2021 |
 | AmazonCognitoPowerUser–Change | Added a new permission to allow Amazon Cognito to call Amazon Simple Notification Service's `GetSMSSandboxAccountStatus` operation.<br />This change allows Amazon Cognito user pools to decide if you need to graduate out of the Amazon Simple Notification Service sandbox in order to send messages to all end users through user pools. | June 1, 2021 |
 | Amazon Cognito started tracking changes | Amazon Cognito started tracking changes for its AWS managed policies. | March 1, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

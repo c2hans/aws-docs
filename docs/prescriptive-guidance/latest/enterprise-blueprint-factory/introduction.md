@@ -50,3 +50,7 @@ The Enterprise Blueprint Factory helps your organization achieve the following b
 + Use version control to manage blueprint updates and share them with end users
 + Help end users self-serve the discovery and launch of blueprints
 + Oversee and audit the use of blueprints across the organization
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

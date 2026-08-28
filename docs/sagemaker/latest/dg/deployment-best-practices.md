@@ -24,3 +24,7 @@ If you are using an [Amazon Virtual Private Cloud (VPC)](https://docs.aws.amazon
 In general, to achieve more reliable performance, use more small [Instance Types](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html) in different Availability Zones to host your endpoints.
 
 **Deploy inference components for high availability.** In addition to the above recommendation for instance numbers, to achieve 99.95% availability, ensure that your inference components are configured to have more than two copies. In addition, in your managed auto scaling policy, set the minimum number of instances to two as well.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

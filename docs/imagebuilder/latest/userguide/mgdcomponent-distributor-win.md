@@ -143,3 +143,7 @@ Amazon and third parties provide public packages that you can install with Syste
 To view available packages in the AWS Management Console, log into the [AWS Systems Manager console](https://console.aws.amazon.com/systems-manager/;) and choose **Distributor** from the navigation pane. The **Distributor** page shows all of the packages that are available to you. For more information about listing available packages with the AWS CLI, see [View packages (command line)](https://docs.aws.amazon.com/systems-manager/latest/userguide/distributor-view-packages.html) in the *AWS Systems Manager User Guide*.
 
 You can also create your own private Systems Manager Distributor packages. For more information, see [Create a package](https://docs.aws.amazon.com/systems-manager/latest/userguide/distributor-working-with-packages-create.html) in the *AWS Systems Manager User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ You can use Amazon Bedrock with DynamoDB to provide serverless access to [founda
 This workshop enables you to integrate DynamoDB with OpenSearch to build generative AI applications. It also demonstrates the flexible querying capability across database engines to help you integrate DynamoDB and OpenSearch for traditional use cases. This workshop is one of the seven modules in the [Amazon DynamoDB Immersion Day](https://catalog.workshops.aws/dynamodb-labs/en-US). You can run this workshop in any AWS account.
 
 You can also refer to the following blog post about how to set up a Zero-ETL integration between DynamoDB and OpenSearch Service. This blog post also describes how to set up model connectors in OpenSearch Service to automatically generate embeddings using Amazon Bedrock for incoming data. [Vector search for Amazon DynamoDB with zero ETL for Amazon OpenSearch Service](https://aws.amazon.com/blogs/database/vector-search-for-amazon-dynamodb-with-zero-etl-for-amazon-opensearch-service/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

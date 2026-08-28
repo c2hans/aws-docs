@@ -16,3 +16,7 @@ Use the following AWS Elemental MediaPackage response headers to help you build 
 | `X-Amzn-Mediapackage-Endpoint-Id` | The manifest-name value in the API. | Use separately from, or in addition to, `X-Amzn-Mediapackage-Endpoint-UniqueId`, to identify a given endpoint in the CDN logs. Endpoint names are unique only within a given channel and region. |
 | `X-Amzn-Mediapackage-Endpoint-UniqueId` | The unique identifier of the endpoint. | Use separately from, or in addition to, `X-Amzn-MediaPackage-Endpoint-Id`, to identify a given endpoint in the CDN logs. Endpoint names are unique only within a given channel and region. Using `X-Amzn-Mediapackage-Endpoint-UniqueId` is also helpful for support requests. |
 | `X-Amzn-RequestId` | The unique identifier of the request. | Equivalent to `X-Amzn-MediaPackage-Request-Id` in MediaPackage V1. Using `X-Amzn-RequestId` is helpful for support requests. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

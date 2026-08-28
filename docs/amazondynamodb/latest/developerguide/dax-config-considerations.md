@@ -116,3 +116,7 @@ DAX performs metadata and negative caching. Understanding these caching behavior
 + **Negative caching** – If a cache miss occurs and the read from a DynamoDB table yields no matching items, DAX adds a negative cache entry in the respective item or query cache. This entry remains until the cache TTL duration expires or a write-through occurs. DAX continues to return this negative cache entry for future requests.
 
   If the negative caching behavior doesn't fit your application pattern, read the DynamoDB table directly when DAX returns an empty result. We also recommend that you set a lower TTL cache duration to avoid long-lasting empty results in the cache and improve consistency with the table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,3 +36,7 @@ ml.m5.4xlarge is the default instance type for Data Wrangler. You can use other 
 1. Choose **Request**.
 
 If your request is approved, AWS sends a notification to the email address associated with your account. You can also check the status of your request by choosing **Quota request history** on the **Service Quotas** page. Processed requests have a **Status** of **Closed**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

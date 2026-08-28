@@ -42,3 +42,7 @@ Each service crate has additional modules used for API inputs, such as the follo
  See the [API reference documentation](https://awslabs.github.io/aws-sdk-rust/) for the service crate for more detailed crate organization and information. For example, the `aws-sdk-s3` crate for the Amazon Simple Storage Service has several [Modules](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/#modules). Two of which are:
 + [`aws_sdk_s3::types`](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/types/index.html)
 + [`aws_sdk_s3::primitives`](https://docs.rs/aws-sdk-s3/latest/aws_sdk_s3/primitives/index.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Rust. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-rust` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

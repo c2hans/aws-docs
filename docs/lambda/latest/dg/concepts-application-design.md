@@ -134,3 +134,7 @@ One common approach is to provide each developer with an AWS account, and then u
 ![Diagram showing per-developer AWS accounts with isolated resources and separate concurrency limits.](http://docs.aws.amazon.com/lambda/latest/dg/images/application-design-figure-3.png)
 
 In this model, each developer has their own set of limits for the account, so their usage does not impact your production environment. This approach also allows developers to test Lambda functions locally on their development machines against live cloud resources in their individual accounts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

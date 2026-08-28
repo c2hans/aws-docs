@@ -66,3 +66,7 @@ One challenge OEMs face is identifying sensitive data coming from the vehicle to
  Once the campaigns have been executed in the vehicle, the destination of your data is determined by the campaign setup. For near-real time analytics and visualization dashboards of your data, Amazon Timestream would be the selected destination for telemetry data. When looking to create a performant data lake, centralized data storage and data processing pipelines, AWS IoT FleetWise offers storage in Amazon S3 with Apache Parquet or JSON data formats.
 
  With flexible data storage options using AWS IoT FleetWise, automotive companies can customize their usage of AWS in their connected vehicle platform to collect the data as they see fit; some data needs to be pulled real time for vehicle tracking use cases, other data can be batched and stored for further processing to fulfill predicative maintenance use cases where data can be loaded into machine learning (ML) models to help predict issues within the fleet before they happen.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

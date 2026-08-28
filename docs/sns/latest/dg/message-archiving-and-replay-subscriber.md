@@ -123,3 +123,7 @@ You can monitor replay messages using Amazon CloudWatch using the following metr
 | --- | --- |
 | **NumberOfReplayedNotificationsDelivered** | Provides the subscriber with the aggregate number of messages replayed from the topic archive, at 1-minute resolution. |
 | **NumberOfReplayedNotificationsFailed**  | Provides the subscriber with the aggregate number of messages replayed that failed to deliver from the topic archive, at 1-minute resolution. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

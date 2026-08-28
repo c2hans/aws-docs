@@ -20,3 +20,7 @@ This documentation helps you understand how to apply the shared responsibility m
 + [EULA](eula.md)
 + [Data protection in AWS Toolkit for .NET Refactoring](data-protection.md)
 + [AWS managed policies for AWS Toolkit for .NET Refactoring](security-iam-awsmanpol.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for NET Refactoring. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tk-dotnet-refactoring` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

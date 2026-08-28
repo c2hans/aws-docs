@@ -68,3 +68,7 @@ Amazon CloudWatch Logs provides the following APIs for data retrieval.
 | <a name="logs-TestMetricFilter"></a>[TestMetricFilter](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_TestMetricFilter.html) | Test the filter pattern of a metric filter against a sample of log event messages | Read |
 | <a name="logs-TestTransformer"></a>[TestTransformer](https://docs.aws.amazon.com/AmazonCloudWatchLogs/latest/APIReference/API_TestTransformer.html) | Test the transformer against a sample of log event messages | Read |
 | <a name="logs-Unmask"></a>[Unmask](https://docs.aws.amazon.com/AmazonCloudWatch/latest/logs/mask-sensitive-log-data.html) | Fetch unmasked log events that have been redacted with a data protection policy | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

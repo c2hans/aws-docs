@@ -54,3 +54,7 @@ The following table lists AWS-provided components that include new and updated f
 | Secret manager component | Version 2.2.2 of the [Secret manager component](cloudwatch-metrics-component.md) is available.<a name="changelog-nucleus-2.14.0"></a>**Bug fixes and improvements**<br />   Fixes an issue where secret manager doesn’t download the secrets configured with partial arns.    |
 | Secure tunneling component | Version 1.1.0 of the [Secure tunneling component](secure-tunneling-component.md) is available.<a name="changelog-nucleus-2.14.0"></a>**New features**<br />   Add recipe supports for Greengrass nucleus lite    |
 | CloudWatch metrics component | Version 1.1.0 of the [CloudWatch metrics component](cloudwatch-metrics-component.md) is available.<a name="changelog-nucleus-2.14.0"></a>**New features**<br />   Add recipe supports for Greengrass nucleus lite    |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

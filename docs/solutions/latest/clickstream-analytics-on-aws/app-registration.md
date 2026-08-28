@@ -28,3 +28,7 @@ After the data pipeline transitions to an **Active** state, register your applic
 1. You should now see tabs for SDK integration for different platforms. Choose the relevant tab to view detailed instructions on adding the SDK to your application. Follow the provided steps to integrate the SDK. For certain platforms, you can choose the **Download the config json file** button to obtain the configuration file.
 
 The pipeline update with the newly added application takes approximately 3 to 5 minutes. After the pipeline status returns to **Active**, it is ready to receive data from your application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Clickstream Analytics on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

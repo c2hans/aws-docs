@@ -58,3 +58,7 @@ To create an alarm that performs an SSM Incident Manager action, you must have c
  The alarm name must contain only UTF-8 characters. It can't contain ASCII control characters.
 
 1.  Under **Preview and create**, confirm that your alarm's information and conditions are correct, and choose **Create alarm**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

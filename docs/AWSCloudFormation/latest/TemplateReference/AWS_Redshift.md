@@ -13,10 +13,13 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 + [AWS::Redshift::ClusterSecurityGroup](aws-resource-redshift-clustersecuritygroup.md)
 + [AWS::Redshift::ClusterSecurityGroupIngress](aws-resource-redshift-clustersecuritygroupingress.md)
 + [AWS::Redshift::ClusterSubnetGroup](aws-resource-redshift-clustersubnetgroup.md)
-+ [AWS::Redshift::DataShare](aws-resource-redshift-datashare.md)
 + [AWS::Redshift::EndpointAccess](aws-resource-redshift-endpointaccess.md)
 + [AWS::Redshift::EndpointAuthorization](aws-resource-redshift-endpointauthorization.md)
 + [AWS::Redshift::EventSubscription](aws-resource-redshift-eventsubscription.md)
 + [AWS::Redshift::Integration](aws-resource-redshift-integration.md)
 + [AWS::Redshift::ScheduledAction](aws-resource-redshift-scheduledaction.md)
 + [AWS::Redshift::SnapshotSchedule](aws-resource-redshift-snapshotschedule.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 + [OPS10-BP05 Define a customer communication plan for service-impacting events](ops_event_response_push_notify.md)
 + [OPS10-BP06 Communicate status through dashboards](ops_event_response_dashboards.md)
 + [OPS10-BP07 Automate responses to events](ops_event_response_auto_event_response.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

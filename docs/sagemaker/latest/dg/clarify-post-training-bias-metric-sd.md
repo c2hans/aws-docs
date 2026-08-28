@@ -48,3 +48,7 @@ The range of values for the specificity difference between facets *a* and *d* fo
 + Positive values are obtained when there is higher specificity for facet *d* than for facet *a*. This suggests that the model finds less false positives for facet *d* than for facet *a*. A positive value indicates bias against facet *d*.
 + Values near zero indicate that the specificity for facets that are being compared is similar. This suggests that the model finds a similar number of false positives in both of these facets and is not biased.
 + Negative values are obtained when there is higher specificity for facet *a* than for facet *d*. This suggests that the model finds more false positives for facet *a* than for facet *d*. A negative value indicates bias against facet *a*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

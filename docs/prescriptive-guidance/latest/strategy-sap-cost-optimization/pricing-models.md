@@ -50,3 +50,7 @@ When reserved instances are assigned to a specific Availability Zone, they reser
 + **Convertible RIs** – This option is typically used for workloads that require flexibility for changing instance families, operating systems, or tenancies, so that you can take advantage of the latest hardware enhancements.
 
 For more information about this pricing model, see [Amazon EC2 Reserved Instances Pricing](https://aws.amazon.com/ec2/pricing/reserved-instances/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

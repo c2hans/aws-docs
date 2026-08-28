@@ -292,3 +292,7 @@ The absolute path to the configuration files within the `{{freertos}}` repo. Use
 
 **Note**
 To execute CMake test cases, you must provide the board name, vendor name, and either the `afrToolchainPath` or `compilerName`. You may also provide `cmakeToolchainPath` if you have a custom path to the CMake toolchain.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

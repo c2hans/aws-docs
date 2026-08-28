@@ -10,3 +10,7 @@ Data in real-time metrics reports is refreshed as follows:
 + Metrics such as **Active** and **Availability** refresh as activity occurs, with a small system delay for processing the activity.
 + Agent near real-time metrics, such as **Missed** and **Occupancy**, refresh as activity occurs, with a small delay for processing.
 + Contact near real-time metrics refresh about a minute after a contact ends.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

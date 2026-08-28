@@ -81,3 +81,7 @@ If the kernel is starting for the first time, expect a one-time delay of approxi
 
 1. The executed code shows the contents of the data view.
 ![A screenshot of notebook that shows the output of analyzing data views.](http://docs.aws.amazon.com/finspace/latest/userguide/images/02a-quickstart-load-data-into-finspace-and-analyze-it-in-notebook-environment/show-output.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

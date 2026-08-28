@@ -514,3 +514,7 @@ If you make a network policy `kind: NetworkPolicy` and it doesn’t affect the p
  **Issue**: Network policies applied to standalone pods may have inconsistent behavior.
 
  **Solution**: The Network Policy agent currently only supports pods that are deployed as part of a deployment/replicaset. If network policies are applied to standalone pods, there might be some inconsistencies in the behavior. This is documented at the top of this page, in the [Considerations](cni-network-policy.md#cni-network-policy-considerations), and in the [aws-network-policy-agent GitHub issue \#327](https://github.com/aws/aws-network-policy-agent/issues/327) on GitHub. Deploy pods as part of a deployment or replicaset for consistent network policy behavior.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

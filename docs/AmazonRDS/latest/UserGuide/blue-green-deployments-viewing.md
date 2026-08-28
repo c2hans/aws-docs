@@ -65,3 +65,7 @@ aws rds describe-blue-green-deployments \
 <a name="blue-green-deployments-viewing-api"></a>
 
 To view the details about a blue/green deployment by using the Amazon RDS API, use the [`DescribeBlueGreenDeployments`](https://docs.aws.amazon.com/AmazonRDS/latest/APIReference/API_DescribeBlueGreenDeployments.html) operation and specify the `BlueGreenDeploymentIdentifier`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

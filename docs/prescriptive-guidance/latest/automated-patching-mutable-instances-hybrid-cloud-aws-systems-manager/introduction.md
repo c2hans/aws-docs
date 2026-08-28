@@ -19,3 +19,7 @@ This guide assumes a good understanding of the following AWS services and concep
 + [AWS Lambda](https://docs.aws.amazon.com/lambda/latest/dg/welcome.html) – Lets you run code without provisioning or managing servers.
 + [Amazon Quick](https://docs.aws.amazon.com/quicksight/latest/user/welcome.html) – Lets you easily create and publish interactive dashboards, including machine learning (ML) Insights. You can access dashboards from any device and embed them into your applications, portals, and websites.
 + [Tagging](https://docs.aws.amazon.com/general/latest/gr/aws_tagging.html) – Lets you assign metadata to your AWS resources in the form of tags. Each tag is a label consisting of a user-defined key and value. Tags can help you manage, identify, organize, search for, and filter resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

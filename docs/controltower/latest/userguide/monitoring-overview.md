@@ -14,3 +14,7 @@ Monitoring is an important part of maintaining the reliability, availability, an
 **Tip: **You can view and query CloudTrail activity on an account through CloudWatch Logs and CloudWatch Logs Insights. This activity includes AWS Control Tower lifecycle events. CloudWatch Logs’ capabilities allow you to perform more granular and precise queries than you would normally be able to make using CloudTrail.
 
 For more information, see [Logging AWS Control Tower Actions with AWS CloudTrail](logging-using-cloudtrail.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

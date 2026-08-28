@@ -21,3 +21,7 @@ This guide can help you and your organization achieve the following objectives:
 + Understand the different approaches to manage user access to Quick
 + Identify the various access features in Quick that are important for your organization and align best with your processes and use case
 + Make an informed decision about which Quick access approach is the best for your organization
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

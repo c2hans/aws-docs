@@ -247,3 +247,7 @@ Adds support for AWS KMS multi-Region keys. For details, see [Using multi-Region
 The AWS Encryption CLI supports multi-Region keys beginning in version 3.0.*x*.
 Version 2.*x*.*x* of the AWS Encryption SDK for Python, AWS Encryption SDK for JavaScript, and the AWS Encryption CLI are in the [end-of-support phase](https://docs.aws.amazon.com/sdkref/latest/guide/maint-policy.html#version-life-cycle).
 For information about [support and maintenance](introduction.md#support) of this AWS Encryption SDK version in your preferred programming language, see the `SUPPORT_POLICY.rst` file in its [GitHub repository](introduction.md#esdk-repos).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

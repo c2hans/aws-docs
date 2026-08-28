@@ -175,3 +175,7 @@ This topic describes how to troubleshoot common Amazon SageMaker Studio Classic 
     ```
 
     In this case, the account does not have sufficient limits to create a Studio Classic application on the specified instance type. To resolve this, navigate to the Service Quotas console at [https://console.aws.amazon.com/servicequotas/](https://console.aws.amazon.com/servicequotas/). In that console, request to increase the `Studio KernelGateway Apps running on {{instance-type}} instance` limit. For more information, see [AWS service quotas](https://docs.aws.amazon.com/general/latest/gr/aws_service_limits.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

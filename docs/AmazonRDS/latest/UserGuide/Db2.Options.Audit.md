@@ -512,3 +512,7 @@ If logging data is missing from the Amazon S3 bucket, check the following:
 You can check the task status of your audit logging configuration by connecting to the database and running a SQL statement. For more information, see [Check the audit configuration](#db2-audit-check-config-status).
 
 You can also check events to find out more about why logs might be missing. For information about how to view events, see [Viewing logs, events, and streams in the Amazon RDS console](logs-events-streams-console.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

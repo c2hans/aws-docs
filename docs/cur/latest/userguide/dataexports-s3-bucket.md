@@ -49,3 +49,7 @@ For an Amazon S3 bucket that has access control list (ACL) enabled, Data Exports
 For newly-created S3 buckets, ACLs are disabled by default. For more information, see [Controlling ownership of objects and disabling ACLs for your bucket](https://docs.aws.amazon.com/AmazonS3/latest/userguide/about-object-ownership.html).
 
 If you see an **Invalid bucket** error in the **Data Exports** console page, verify that the policy and S3 bucket ownership haven’t changed since report setup.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

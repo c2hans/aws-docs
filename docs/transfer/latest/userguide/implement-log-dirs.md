@@ -105,3 +105,7 @@ remote open("/file"): No such file or directory
 To upload to any `directory/sub-directory`, you must explicitly map the path to the `sub-directory`.
 
 For more information about configuring logical directories and **chroot** for your users, including an AWS CloudFormation template that you can download and use, see [ Simplify your AWS SFTP Structure with chroot and logical directories](https://aws.amazon.com/blogs/storage/simplify-your-aws-sftp-structure-with-chroot-and-logical-directories/) in the AWS Storage Blog.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,3 +38,7 @@ You can't use AWS credits to pay the fee for extending the registration period f
    When Route 53 receives confirmation from the registry that they've updated your expiration date, Route 53 sends you an email to confirm that the expiration date has changed.
 
 1. If you encounter issues while extending the registration period for a domain, you can contact AWS Support for free. For more information, see [Contacting AWS Support about domain registration issues](domain-contact-support.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

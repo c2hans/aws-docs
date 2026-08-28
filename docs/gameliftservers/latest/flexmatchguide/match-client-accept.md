@@ -16,3 +16,7 @@ If you're using a matchmaker that has player acceptance turned on, add code to y
 1. **Report player responses to FlexMatch.** Report player responses by calling [AcceptMatch](https://docs.aws.amazon.com/gamelift/latest/apireference/API_AcceptMatch.html) with either accept or reject. All players in a matchmaking request must accept the match for it to go forward.
 
 1. **Handle tickets with failed acceptances.** A request fails when any player in the proposed match either rejects the match or fails to respond by the acceptance time limit. Tickets for players who did accept the match are automatically returned to the ticket pool. Tickets for players who did not accept the match move to FAILURE status and are no longer processed. For tickets with multiple players, if any players in the ticket did not accept the match, the entire ticket fails.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

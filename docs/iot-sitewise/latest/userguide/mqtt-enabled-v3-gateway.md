@@ -36,3 +36,7 @@ View the following topics to learn more about destinations and path filters in M
 + [Understand path filters for AWS IoT SiteWise Edge destinations](gw-destinations.md#destinations-path-filters)
 + [Add path filters to AWS IoT SiteWise Edge destinations](destinations-add-path-filters.md)
 + [Manage AWS IoT SiteWise Edge destinations](destinations-manage.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

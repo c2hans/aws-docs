@@ -25,16 +25,29 @@ awsdatacatalog.{{<database_name>}}.{{<table_name>}}
 For more information, see [Referencing Iceberg tables in Amazon Redshift](referencing-iceberg-tables.md).
 
 Consider the following when using `ALTER TABLE` statements:
-+ `ALTER TABLE` statements currently only support Iceberg v2 tables.
++ `ALTER TABLE` statements currently only support Iceberg v2 or v3 tables.
 + All `ALTER TABLE` statements are metadata-only operations.
 + `ALTER TABLE` statements don't support tables with complex type columns.
 
 **Contents**
++ [Upgrading to Iceberg v3](#iceberg-alter-table-upgrade-v3)
 + [ALTER TABLE RENAME COLUMN](#iceberg-alter-table-rename-column)
 + [ALTER TABLE ADD/DROP COLUMN](#iceberg-alter-table-add-drop-column)
 + [ALTER TABLE ALTER COLUMN](#iceberg-alter-table-alter-column)
 + [ALTER TABLE SET TABLE PROPERTIES](#iceberg-alter-table-set-properties)
 + [ALTER TABLE ADD, DROP, and REPLACE PARTITION FIELD](#iceberg-alter-table-partition-field)
+
+## Upgrading to Iceberg v3
+<a name="iceberg-alter-table-upgrade-v3"></a>
+
+You can upgrade an Iceberg v2 table to v3 using `ALTER TABLE SET TABLE PROPERTIES`:
+
+```
+ALTER TABLE {{iceberg_table}}
+SET TABLE PROPERTIES ('format-version' = '3');
+```
+
+For additional details, see [Upgrading from v2 to v3](iceberg-v3-features.md#iceberg-v3-upgrading).
 
 ## ALTER TABLE RENAME COLUMN
 <a name="iceberg-alter-table-rename-column"></a>
@@ -67,6 +80,40 @@ DROP [COLUMN] {{col_name}};
 `ADD COLUMN` is a metadata-only operation. The values of newly added columns on existing rows are `NULL`.
 
 `DROP COLUMN` drops a column from an existing Iceberg table. For partitioned tables, you can't drop a column that belongs to the current partition spec. You must remove the partition field that involves the column first before dropping the column. For more information, see [ALTER TABLE ADD, DROP, and REPLACE PARTITION FIELD](#iceberg-alter-table-partition-field).
+
+For Iceberg v3 tables, you can specify a default value when adding a column. Existing data files return the specified default instead of NULL for the newly added column without requiring a data rewrite. Default column values are supported only for Iceberg v3 tables. Amazon Redshift returns an error if you specify a default value on an Iceberg v2 table.
+
+```
+-- External schema notation
+ALTER TABLE my_external_schema.orders
+ADD COLUMN priority INT DEFAULT 0;
+
+-- Three-part notation (awsdatacatalog / Glue)
+ALTER TABLE awsdatacatalog.my_glue_db.orders
+ADD COLUMN priority INT DEFAULT 0;
+
+-- Three-part notation (S3 Table Buckets)
+ALTER TABLE "amzn-s3-demo-bucket@s3tablescatalog".my_namespace.orders
+ADD COLUMN priority INT DEFAULT 0;
+```
+
+For existing rows, the default value is filled in for the newly added column:
+
+```
+-- Existing table with rows
+SELECT id FROM my_external_schema.orders;
+--  1
+--  2
+
+-- Add a column with a default
+ALTER TABLE my_external_schema.orders
+ADD COLUMN status varchar DEFAULT 'active';
+
+-- Existing rows return the default without a data rewrite
+SELECT id, status FROM my_external_schema.orders;
+--  1 | active
+--  2 | active
+```
 
 ## ALTER TABLE ALTER COLUMN
 <a name="iceberg-alter-table-alter-column"></a>
@@ -102,6 +149,40 @@ For the full list of data type mappings between Amazon Redshift types and Iceber
 
 Widening the type of a column that belongs to the existing partition spec is not supported.
 
+For Iceberg v3 tables, you can set or remove a default value on an existing column:
+
+```
+ALTER TABLE {{iceberg_table}}
+ALTER COLUMN {{column_name}} SET DEFAULT {{literal_value}};
+
+ALTER TABLE {{iceberg_table}}
+ALTER COLUMN {{column_name}} DROP DEFAULT;
+```
+
+SET DEFAULT changes the default value of an existing column. The new default applies to data files written after the change. Existing data files continue to use the previous default.
+
+DROP DEFAULT removes the default value that is applied to new writes, equivalent to setting the default to NULL. Data files that do not contain the column continue to return the column's initial default value.
+
+```
+-- External schema notation
+ALTER TABLE my_external_schema.orders
+ALTER COLUMN status SET DEFAULT 'active';
+ALTER TABLE my_external_schema.orders
+ALTER COLUMN status DROP DEFAULT;
+
+-- Three-part notation (awsdatacatalog / Glue)
+ALTER TABLE awsdatacatalog.my_glue_db.orders
+ALTER COLUMN status SET DEFAULT 'active';
+ALTER TABLE awsdatacatalog.my_glue_db.orders
+ALTER COLUMN status DROP DEFAULT;
+
+-- Three-part notation (S3 Table Buckets)
+ALTER TABLE "amzn-s3-demo-bucket@s3tablescatalog".my_namespace.orders
+ALTER COLUMN status SET DEFAULT 'active';
+ALTER TABLE "amzn-s3-demo-bucket@s3tablescatalog".my_namespace.orders
+ALTER COLUMN status DROP DEFAULT;
+```
+
 ## ALTER TABLE SET TABLE PROPERTIES
 <a name="iceberg-alter-table-set-properties"></a>
 
@@ -114,6 +195,15 @@ SET TABLE PROPERTIES (
 This statement allows you to overwrite the default table property. Currently the only table property allowed for this statement is `compression_type`. You can overwrite it to use a different compression type for the Iceberg table Parquet files. Data inserted after the `ALTER` uses the new compression type.
 
 The possible values for `compression_type` are: `brotli`, `gzip`, `snappy`, `uncompressed`, and `zstd`.
+
+You can also upgrade an existing Iceberg v2 table to v3 by setting the format version:
+
+```
+ALTER TABLE {{iceberg_table}}
+SET TABLE PROPERTIES ('format-version' = '3');
+```
+
+For additional details, see [Upgrading from v2 to v3](iceberg-v3-features.md#iceberg-v3-upgrading).
 
 ## ALTER TABLE ADD, DROP, and REPLACE PARTITION FIELD
 <a name="iceberg-alter-table-partition-field"></a>
@@ -184,3 +274,7 @@ Consider the following limitations for these statements:
 
   After this `ALTER`, the table partition becomes `(month(ship_date), bucket(256, item_id))`.
 + The `void` transform is not supported in partition `ALTER` statements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

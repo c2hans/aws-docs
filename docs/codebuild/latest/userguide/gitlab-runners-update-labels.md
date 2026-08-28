@@ -48,3 +48,7 @@ If the custom image resides in a private registry, see [Configure a private regi
 `buildspec-override:{{<boolean>}}`
 + Example: `buildspec-override:true`
 + Allows the build to run buildspec commands in the `INSTALL`, `PRE_BUILD`, and `POST_BUILD` phases if set to `true`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

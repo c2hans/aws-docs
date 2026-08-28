@@ -24,3 +24,7 @@ Complete the following steps to enable agent assist.
 1. Choose **Confirm** to add **AMAZON.QinConnectIntent** intent support.
 **Important**
 You cannot use **AMAZON.QInConnectIntent** along with intents without specific utterances such as **AMAZON.QnAIntent**, **AMAZON.BedrockAgentIntent** in the same bot locale. For more information, see [AMAZON.QinConnectIntent](https://docs.aws.amazon.com/lexv2/latest/dg/built-in-intent-qinconnect.html) in the *Amazon Lex V2 Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -298,3 +298,7 @@ Amazon IVS provides the following metrics in the **AWS/IVS** namespace.
 | `LiveInputTime` | `Channel` | Filters `LiveInputTime` by channel. Channel values are the channel's `resource-id`, which is the last part of an [ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html).<br />Unit: Seconds<br />Valid statistic: Sum |
 | `RecordedTime` | — | Real-time duration of recorded video.<br />Unit: Seconds<br />Valid statistic: Sum |
 | `RecordedTime` | `Channel` | Filters `RecordedTime` by channel. Channel values are the channel's `resource-id`, which is the last part of an [ARN](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference-arns.html).<br />Unit: Seconds<br />Valid statistic: Sum |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

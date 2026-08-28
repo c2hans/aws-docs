@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  This gets more challenging as we look at how tenant isolation is realized across all the different SaaS architecture patterns. In some cases, isolation may be achieved by having entire stacks of resources dedicated to a tenant where network (or more coarse-grained) policies prevent cross-tenant access. In other scenarios, you may have pooled resources (items in an [Amazon DynamoDB](https://aws.amazon.com/dynamodb/) table) that require more fine-grained policies to control access to the resources.
 
  Any attempt to access a tenant resource should be scoped to just those resources that belong to that tenant. It’s the job of SaaS developers and architects to determine which combination of tools and technologies will support the isolation requirements of your specific application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

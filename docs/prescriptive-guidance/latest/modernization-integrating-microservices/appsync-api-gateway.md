@@ -22,3 +22,7 @@ Use API Gateway WebSocket APIs when:
 + You want to enable clients to have real-time persistent connections to AWS service integrations.
 + You want to manage WebSocket connections yourself. For example, you might want to allow other systems to send messages to a particular client after looking up their connection ID.
 + You want to use API Gateway features such as stage deployments or proxy integrations, or you want to configure your own subprotocols.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

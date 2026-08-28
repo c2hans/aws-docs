@@ -101,3 +101,7 @@ When calls go unanswered, you can use SMS to contact prospects. Try the followin
 By making data-driven decisions and continuously iterating, you'll have the best chance to deliver real business value. Treat each change to your outbound calling strategy as an experiment, and ensure you can measure and compare the effectiveness of your changes.
 
 One of the best things with Connect Customer is the service is readily available to experiment. You can establish a baseline, then compare any changes to help you to assess how you can succeed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

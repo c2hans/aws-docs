@@ -171,3 +171,7 @@ For full information on this role's permissions and how to delete it, see [Using
 <a name="vpc-egress-intro"></a>
 
 By default, a VPC domain accepts ingress from your VPC. Egress traffic from the domain, such as traffic to custom endpoints you configure on the domain, leaves over the public internet. If your workload requires that egress traffic flow through your own VPC instead, enable the egress option on your domain. For more information, see [Routing domain egress traffic through your VPC](vpc-egress.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,3 +28,7 @@ When you request an SSL/TLS certificate using ACM, ACM generates a public/privat
 VPC Lattice uses AWS TLS Connection Manager, a service that is only accessible only to AWS services, to secure and use your certificate's private keys. When you use your ACM certificate to create a VPC Lattice service, VPC Lattice associates your certificate with AWS TLS Connection Manager. We do this by creating a grant in AWS KMS against your AWS managed key. This grant allows TLS Connection Manager to use AWS KMS to decrypt your certificate's private key. TLS Connection Manager uses the certificate and the decrypted (plaintext) private key to establish a secure connection (SSL/TLS session) with clients of VPC Lattice services. When the certificate is disassociated from a VPC Lattice service, the grant is retired. For more information, see [Grants](https://docs.aws.amazon.com/kms/latest/developerguide/grants.html) in the *AWS Key Management Service Developer Guide*.
 
 For more information, see [Encryption at rest](data-protection.md#encryption-rest).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,6 +18,7 @@ Nextflow DSL2 is based on the Groovy programming language, so parameters are dyn
 + [Export task content](#exporting-task-content-nextflow)
 + [Generate Nextflow execution reports](#nextflow-execution-reports)
 + [Specify the Nextflow syntax version](#nextflow-syntax-version)
++ [Automatic syntax validation during workflow creation](#nextflow-automatic-validation)
 + [Using scratch storage efficiently in Nextflow](#nextflow-scratch-storage)
 + [Nextflow v26.04 release notes](#nextflow-v26-release-notes)
 
@@ -453,6 +454,18 @@ To run a workflow authored against the legacy (v1) parser, set `engineSettings.s
 
 For Nextflow v25.10.0 and earlier, HealthOmics does not support the v2 parser.
 
+## Automatic syntax validation during workflow creation
+<a name="nextflow-automatic-validation"></a>
+
+HealthOmics automatically runs the Nextflow built-in strict DSL2 linter (nf-lang/v2) when you create or update a Nextflow DSL2 workflow. This linter runs during `CreateWorkflow` and `CreateWorkflowVersion`. It applies to all supported DSL2 versions (v22.04, v23.10, v24.10, v25.10, and v26.04). DSL1 workflows are not linted.
+
+The linter operates in non-blocking mode. Lint findings don't prevent the workflow from becoming ACTIVE. Findings appear as structured JSON in the `statusMessage` field of the `GetWorkflow` response.
+
+**Note**
+The built-in linter validates your workflow definition syntax at creation time. It is distinct from the strict syntax *parser* available for Nextflow v26.04, which is controlled by `engineSettings.syntaxVersion` and affects runtime behavior. The linter checks syntax across all DSL2 versions at creation time, regardless of which parser the workflow uses at runtime. On Nextflow v22.04, v23.10, and v24.10 (legacy grammar), findings are advisory. On Nextflow v25.10 and v26.04, findings reflect strict mode syntax requirements.
+
+For more information about the lint output format and how to address findings, see [Workflow linters in HealthOmics](workflows-linter.md).
+
 ## Using scratch storage efficiently in Nextflow
 <a name="nextflow-scratch-storage"></a>
 
@@ -508,3 +521,7 @@ The following tables summarize HealthOmics support for new features, enhancement
 | listFiles() method | 26.04 | Deprecation warning | Replace with listDirectory(). |
 | nextflow.enable.strict flag | 26.04 | No longer needed | Remove from config. Strict mode is now the default. |
 | manifest.defaultBranch | 26.04 | No longer needed | Remove from config. HealthOmics does not use Git-based pipeline checkout and has never supported this option. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

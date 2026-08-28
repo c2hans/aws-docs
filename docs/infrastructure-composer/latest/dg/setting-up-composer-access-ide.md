@@ -25,3 +25,7 @@ The following is an example of accessing Infrastructure Composer from the Infras
 ![Infrastructure Composer being accessed through the AWS Toolkit for Visual Studio Code.](http://docs.aws.amazon.com/infrastructure-composer/latest/dg/images/aac_intro_07.gif)
 
 For more information on accessing Infrastructure Composer, see [ Accessing AWS Infrastructure Composer from the Toolkit](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/appcomposer-overview.html#appcomposer-overview-access).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

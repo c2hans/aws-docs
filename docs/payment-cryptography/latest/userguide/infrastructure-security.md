@@ -17,3 +17,7 @@ Additionally, requests must be signed using an access key ID and a secret access
 The security of the physical infrastructure that AWS Payment Cryptography uses is subject to the controls described in the Physical and Environmental Security section of Amazon Web Services: Overview of Security Processes. You can find more detail in compliance reports and third-party audit findings listed in the previous section.
 
 AWS Payment Cryptography is supported by dedicated commercial-off-the-shelf PCI PTS HSM-listed hardware security modules (HSMs). The key material for AWS Payment Cryptography keys is stored only in volatile memory on the HSMs, and only while the Payment Cryptography key is in use. HSMs are in access controlled racks within Amazon data centers that enforce dual control for any physical access. For detailed information about the operation of AWS Payment Cryptography HSMs, see AWS Payment Cryptography Cryptographic Details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Payment Cryptography. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query payment-cryptography` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

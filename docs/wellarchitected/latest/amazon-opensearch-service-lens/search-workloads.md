@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/amazon-opensearch
 1.  **Sort and rank:** You can use OpenSearch's scoring capabilities to verify that search results are relevant and displayed in an order that meets user expectations.
 
 1.  **Add synonym and typo handling:** You can add synonym support and handle typos with features like fuzziness to provide relevant results to users despite synonyms or minor spelling mistakes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

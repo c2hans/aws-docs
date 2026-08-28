@@ -14,3 +14,7 @@ AWS Identity and Access Management (IAM) is an AWS service that helps an adminis
 + [Example IAM policies for AWS RAM](security-iam-policies-examples.md)
 + [Example service control policies for AWS Organizations and AWS RAM](security-scp.md)
 + [Disabling resource sharing with AWS Organizations](security-disable-sharing-with-orgs.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RAM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ram` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

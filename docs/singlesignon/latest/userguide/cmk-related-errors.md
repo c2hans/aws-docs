@@ -69,3 +69,7 @@ To resolve this issue, grant all required KMS permissions to the user or IAM pri
 **Error:** "ERROR Code: 0001 - IdentityCenter service access is blocked. Reach out to your IdentityCenter admin for further steps."
 
 If users cannot log in to the AWS access portal and you have a customer managed key enabled in your IAM Identity Center instance, verify that the KMS key policy grants the necessary permissions to Identity Center and Identity Store. For more information, see [Baseline KMS key policy](baseline-KMS-key-policy.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,3 +43,7 @@ The following table lists the key attributes, possible values, defaults, and rel
 | wrap | Default: False | Yes | Yes, except for private keys. |
 | wrap-template | Values should use the attribute template to match the key wrapped using this wrapping key. | Yes | No |
 | wrap-with-trusted | Default: `False` | Yes | Yes |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -431,3 +431,7 @@ Be sure to include `file://` before the file name. It is required in this comman
 1. Watch the progress through the pipeline. Wait for a success message on the action that uses the resource associated with another AWS account.
 **Note**
 You will receive an error if you try to view details for the action while signed in with {{AccountA}}. Sign out, and then sign in with {{AccountB}} to view the deployment details in CodeDeploy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

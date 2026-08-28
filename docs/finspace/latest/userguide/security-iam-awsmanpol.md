@@ -66,3 +66,7 @@ View details about updates to AWS managed policies for FinSpace since this servi
 | [AWSFinSpaceServiceRolePolicy](#security-iam-awsmanpol-AWSFinSpaceServiceRolePolicy) – Updated policy | Updated the `AWSServiceRoleForFinSpace` policy to allow PutMetricData calls to AWS/Usage CloudWatch namespace. | November 17, 2023 |
 | [AWSFinSpaceServiceRolePolicy](#security-iam-awsmanpol-AWSFinSpaceServiceRolePolicy) – New policy | FinSpace added a new policy to enable access to AWS service and resources used or managed by Amazon FinSpace. | June 5, 2023 |
 | FinSpace started tracking changes | FinSpace started tracking changes for its AWS managed policies. | June 5, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

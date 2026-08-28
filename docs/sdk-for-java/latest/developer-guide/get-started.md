@@ -38,3 +38,7 @@ The sections in this topic walk you through the essential steps to begin buildin
     + [Success](get-started-tutorial.md#get-started-success)
     + [Cleanup](get-started-tutorial.md#cleanup)
   + [Next steps](get-started-tutorial.md#get-started-next)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

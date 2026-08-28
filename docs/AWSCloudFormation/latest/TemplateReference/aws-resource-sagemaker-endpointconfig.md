@@ -23,12 +23,16 @@ To declare this entity in your CloudFormation template, use the following syntax
   "Properties" : {
       "[AsyncInferenceConfig](#cfn-sagemaker-endpointconfig-asyncinferenceconfig)" : {{AsyncInferenceConfig}},
       "[DataCaptureConfig](#cfn-sagemaker-endpointconfig-datacaptureconfig)" : {{DataCaptureConfig}},
+      "[EnableNetworkIsolation](#cfn-sagemaker-endpointconfig-enablenetworkisolation)" : {{Boolean}},
       "[EndpointConfigName](#cfn-sagemaker-endpointconfig-endpointconfigname)" : {{String}},
+      "[ExecutionRoleArn](#cfn-sagemaker-endpointconfig-executionrolearn)" : {{String}},
       "[ExplainerConfig](#cfn-sagemaker-endpointconfig-explainerconfig)" : {{ExplainerConfig}},
       "[KmsKeyId](#cfn-sagemaker-endpointconfig-kmskeyid)" : {{String}},
+      "[MetricsConfig](#cfn-sagemaker-endpointconfig-metricsconfig)" : {{MetricsConfig}},
       "[ProductionVariants](#cfn-sagemaker-endpointconfig-productionvariants)" : {{[ ProductionVariant, ... ]}},
       "[ShadowProductionVariants](#cfn-sagemaker-endpointconfig-shadowproductionvariants)" : {{[ ProductionVariant, ... ]}},
-      "[Tags](#cfn-sagemaker-endpointconfig-tags)" : {{[ Tag, ... ]}}
+      "[Tags](#cfn-sagemaker-endpointconfig-tags)" : {{[ Tag, ... ]}},
+      "[VpcConfig](#cfn-sagemaker-endpointconfig-vpcconfig)" : {{VpcConfig}}
     }
 }
 ```
@@ -43,16 +47,22 @@ Properties:
     AsyncInferenceConfig}}
   [DataCaptureConfig](#cfn-sagemaker-endpointconfig-datacaptureconfig): {{
     DataCaptureConfig}}
+  [EnableNetworkIsolation](#cfn-sagemaker-endpointconfig-enablenetworkisolation): {{Boolean}}
   [EndpointConfigName](#cfn-sagemaker-endpointconfig-endpointconfigname): {{String}}
+  [ExecutionRoleArn](#cfn-sagemaker-endpointconfig-executionrolearn): {{String}}
   [ExplainerConfig](#cfn-sagemaker-endpointconfig-explainerconfig): {{
     ExplainerConfig}}
   [KmsKeyId](#cfn-sagemaker-endpointconfig-kmskeyid): {{String}}
+  [MetricsConfig](#cfn-sagemaker-endpointconfig-metricsconfig): {{
+    MetricsConfig}}
   [ProductionVariants](#cfn-sagemaker-endpointconfig-productionvariants): {{
     - ProductionVariant}}
   [ShadowProductionVariants](#cfn-sagemaker-endpointconfig-shadowproductionvariants): {{
     - ProductionVariant}}
   [Tags](#cfn-sagemaker-endpointconfig-tags): {{
     - Tag}}
+  [VpcConfig](#cfn-sagemaker-endpointconfig-vpcconfig): {{
+    VpcConfig}}
 ```
 
 ## Properties
@@ -70,6 +80,12 @@ Specifies how to capture endpoint data for model monitor. The data capture confi
 *Type*: [DataCaptureConfig](aws-properties-sagemaker-endpointconfig-datacaptureconfig.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
+`EnableNetworkIsolation`  <a name="cfn-sagemaker-endpointconfig-enablenetworkisolation"></a>
+Property description not available.
+*Required*: No
+*Type*: Boolean
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
 `EndpointConfigName`  <a name="cfn-sagemaker-endpointconfig-endpointconfigname"></a>
 The name of the endpoint configuration.
 *Required*: No
@@ -77,6 +93,12 @@ The name of the endpoint configuration.
 *Pattern*: `[a-zA-Z0-9](-*[a-zA-Z0-9]){0,62}`
 *Minimum*: `0`
 *Maximum*: `63`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`ExecutionRoleArn`  <a name="cfn-sagemaker-endpointconfig-executionrolearn"></a>
+Property description not available.
+*Required*: No
+*Type*: String
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ExplainerConfig`  <a name="cfn-sagemaker-endpointconfig-explainerconfig"></a>
@@ -100,6 +122,12 @@ For more information about local instance storage encryption, see [SSD Instance 
 *Pattern*: `[a-zA-Z0-9:/_-]*`
 *Minimum*: `0`
 *Maximum*: `2048`
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
+
+`MetricsConfig`  <a name="cfn-sagemaker-endpointconfig-metricsconfig"></a>
+The configuration for Utilization metrics.
+*Required*: No
+*Type*: [MetricsConfig](aws-properties-sagemaker-endpointconfig-metricsconfig.md)
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `ProductionVariants`  <a name="cfn-sagemaker-endpointconfig-productionvariants"></a>
@@ -126,6 +154,12 @@ For more information, see [Resource Tag](https://docs.aws.amazon.com/AWSCloudFor
 *Minimum*: `0`
 *Maximum*: `50`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+`VpcConfig`  <a name="cfn-sagemaker-endpointconfig-vpcconfig"></a>
+Specifies an Amazon Virtual Private Cloud (VPC) that your SageMaker jobs, hosted models, and compute resources have access to. You can control access to and from your resources by configuring a VPC. For more information, see [Give SageMaker Access to Resources in your Amazon VPC](https://docs.aws.amazon.com/sagemaker/latest/dg/infrastructure-give-access.html).
+*Required*: No
+*Type*: [VpcConfig](aws-properties-sagemaker-endpointconfig-vpcconfig.md)
+*Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 ## Return values
 <a name="aws-resource-sagemaker-endpointconfig-return-values"></a>
@@ -348,3 +382,7 @@ Outputs:
   EndpointName:
     Value: !GetAtt Endpoint.EndpointName
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

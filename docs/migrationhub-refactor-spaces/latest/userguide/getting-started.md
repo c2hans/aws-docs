@@ -16,3 +16,7 @@ This section describes how to get started with AWS Migration Hub Refactor Spaces
 + [Step 3: Share your environment](getting-started-share-environment.md)
 + [Step 4: Create a service](getting-started-create-service.md)
 + [Step 5: Create a route](getting-started-create-route.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub Refactor Spaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub-refactor-spaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

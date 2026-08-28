@@ -14,3 +14,7 @@ Once configured in your domain, account pools automatically provide account and 
 **Topics**
 + [Create an account pool with a custom handler source](account-pools-create-handler.md)
 + [Create an account pool with a static list of account and region pairs](account-pools-create-static.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

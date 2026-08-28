@@ -21,5 +21,10 @@ You can store your assets in a file system shared between your workers, or you c
 + [Use job attachments to share files](build-job-attachments.md)
 + [Create resource limits for jobs](build-job-limits.md)
 + [How to submit a job to Deadline Cloud](submit-jobs-how.md)
++ [Share job bundles on your queue](share-job-bundles.md)
 + [Schedule jobs in Deadline Cloud](build-jobs-scheduling.md)
 + [Modify a job in Deadline Cloud](build-jobs-modifying.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

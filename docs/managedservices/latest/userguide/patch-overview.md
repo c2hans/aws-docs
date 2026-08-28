@@ -87,3 +87,7 @@ With immutable infrastructures, the patching method is AMI replacement. Immutabl
 In case of failed updates, AMS performs an analysis to understand the cause of failure and communicates the outcome of the analysis to you. If the failure is attributable to AMS, we retry the updates if it's within the maintenance window. Otherwise, AMS creates service notifications for the failed instance update and waits for your instructions.
 
 For failures attributable to your system, you can submit a service request with a new patch RFC to update the instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

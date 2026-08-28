@@ -98,3 +98,7 @@ There isn't a unique API that manages dataset labels. If you create a dataset wi
 1. In the file, remove any label annotations. For more information, see [Importing image-level labels in manifest files](md-create-manifest-file-classification.md) and [Object localization in manifest files](md-create-manifest-file-object-detection.md).
 
 1. Use the file to update the dataset with the `UpdateDatasetEntries` API. For more information, see [Adding more images (SDK)](md-add-images.md#md-add-images-sdk).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

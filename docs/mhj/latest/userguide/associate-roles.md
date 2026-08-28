@@ -30,3 +30,7 @@ After you create an AWS account connection, you can associate IAM roles with it 
 1. In the connection page in the console, choose **Create and associate roles with journey**.
 
 1. Review the list of roles, and then choose **Create and associate roles**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MHJ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mhj` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -6,3 +6,7 @@ source_url: https://docs.aws.amazon.com/sns/latest/dg/SendMessageToHttp.retry.ht
 <a name="SendMessageToHttp.retry"></a>
 
 By default, if the initial delivery of the message fails, Amazon SNS attempts up to three retries with a delay between failed attempts set at 20 seconds. As discussed in [Step 1](SendMessageToHttp.prepare.md), your endpoint should have code that can handle retried messages. By setting the delivery policy on a topic or subscription, you can control the frequency and interval that Amazon SNS will retry failed messages. You can also specify the content type for your HTTP/S notifications in `DeliveryPolicy`. For more information, see [Creating an HTTP/S delivery policy](sns-message-delivery-retries.md#creating-delivery-policy).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

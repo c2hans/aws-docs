@@ -27,3 +27,7 @@ MRA is an AWS process of gaining insights about your enterprise's current cloud 
 <a name="how-to-guide.0cb89a15-2847-5d49-95ab-d884feb2dced"></a>
 
 [Evaluating migration readiness](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-readiness/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

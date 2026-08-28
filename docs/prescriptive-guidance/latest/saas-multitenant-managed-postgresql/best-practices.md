@@ -21,3 +21,7 @@ You can choose from three SaaS partitioning models that are applicable to Postgr
 <a name="use-row-level-security-for-pool-saas-partitioning-models.80e59ce8-584b-5282-91f0-bbd9745e99db"></a>
 
 Row-level security (RLS) is required to maintain tenant data isolation in a pool model with PostgreSQL. This is because there is no logical separation between infrastructure, PostgreSQL databases, or schemas on a per-tenant basis in a pool model. RLS centralizes the enforcement of isolation policies at the database level and removes the burden of maintaining this isolation from software developers. You can use RLS to limit database operations to a specific tenant. For more information and an example, see the section [Row-level security recommendations](rls.md) in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

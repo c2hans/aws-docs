@@ -74,3 +74,7 @@ Amazon Cognito validates the provider ID token with the following checks:
 1. Check that the timestamp in the `exp` claim is not before the current time.
 
 Your user pool validates the ID token, then attempts a request to the provider `userInfo` endpoint with the provider access token. It retrieves any user profile information that the scopes in the access token authorize it to read. Your user pool then searches for the user attributes that you have set as required in your user pool. You must create attribute mappings in your provider configuration for required attributes. Your user pool checks the provider ID token and the `userInfo` response. Your user pool writes all claims that match mapping rules to user attributes on the user pool user profile. Your user pool ignores attributes that match a mapping rule but aren't required and aren't found in the provider's claims.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

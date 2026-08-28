@@ -183,3 +183,7 @@ aws ecs deregister-container-instance \
     --container-instance arn:aws:ecs:{{us-east-1}}:{{111122223333}}:container-instance/a1b2c3d4-5678-90ab-cdef-11111EXAMPLE \
     --force
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

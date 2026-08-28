@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Assess operational overhead for hosting options, balancing control and management effort between self-hosted solutions like EC2, ECS, or EKS and managed services like Amazon Game Lift.
 +  Use EKS managed node groups for automation but implement lifecycle hooks or custom controllers if your game servers require longer termination periods than the default.
 +  Weigh the trade-offs between customization, visibility, and operational responsibility when selecting a game server solution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

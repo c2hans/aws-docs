@@ -37,3 +37,7 @@ aws glue update-crawler \
 <a name="crawler-configure-partition-indexes-usage-notes"></a>
 + Tables created by the crawler do not have the variable `partition_filtering.enabled` by default. For more information, see [AWS Glue partition indexing and filtering](https://docs.aws.amazon.com/athena/latest/ug/glue-best-practices.html#glue-best-practices-partition-index).
 + Creating partition indexes for encrypted partitions is not supported.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

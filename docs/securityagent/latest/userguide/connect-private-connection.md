@@ -179,3 +179,7 @@ Follow this pattern:
 <a name="_next_steps"></a>
 +  [Connect AWS Security Agent to GitLab Self-Managed](connect-gitlab-self-managed.md) - Connect a private GitLab instance
 +  [Connect AWS Security Agent to GitHub Enterprise](connect-github-enterprise.md) - Connect a private GitHub Enterprise instance
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

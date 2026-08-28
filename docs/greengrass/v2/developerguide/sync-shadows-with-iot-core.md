@@ -100,3 +100,7 @@ When the shadow manager synchronizes the shadow, it merges the changes according
   + When there's a merge conflict in a shadow's reported state, the shadow manager overwrites the conflicting section of the shadow in the AWS IoT cloud with the value from the local shadow document.
 + When you specify the `deviceToCloud` shadow sync direction, the shadow manager overwrites the conflicting section of the shadow in the AWS IoT cloud with the value from the local shadow document.
 + When you specify the `cloudToDevice` shadow sync direction, the shadow manager overwrites the conflicting section of the local shadow document with the value from the AWS IoT cloud.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

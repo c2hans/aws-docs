@@ -24,3 +24,7 @@ You can export content from a dashboard into a Portable Document Format file (PD
 1. Repeat the previous steps for each sheet that you want to export.
 
 You can also attach PDFs to dashboard email reports. For more information, see [Scheduling and sending Quick Sight reports by email](sending-reports.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

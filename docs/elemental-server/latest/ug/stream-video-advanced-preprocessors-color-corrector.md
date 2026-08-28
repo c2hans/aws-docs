@@ -46,3 +46,7 @@ AWS Elemental Server supports the following conversions:
 The HDR Master Display Information fields appear when you select “Force HDR 10” from the Color Space Conversion dropdown list. If you are converting to HDR10, use these fields to supply master display information metadata to be included in the output.
 
 ![An image of the AWS Elemental Server web interface.](http://docs.aws.amazon.com/elemental-server/latest/ug/images/color-correction-hdr-master-display-info.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

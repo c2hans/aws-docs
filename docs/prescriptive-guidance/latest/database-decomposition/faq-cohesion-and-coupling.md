@@ -52,3 +52,7 @@ Start with high-impact, low-risk changes that align with existing team expertise
 Handle multi-operation transactions through carefully designed service-level coordination. Implement saga patterns for complex distributed transactions. Break them into smaller, reversible steps that can be managed independently. For example, an order processing flow might be split into separate steps for inventory check, payment processing, and order creation, each with its own compensation mechanism.
 
 Where possible, redesign operations to be more atomic, which reduces the need for distributed transactions. When distributed transactions are unavoidable, implement robust tracking and compensation mechanisms to promote data consistency. Monitor transaction completion rates and implement clear error recovery procedures to maintain system reliability.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -96,3 +96,7 @@ Note that `GreeterActivitiesWorker` is just `GreeterWorker` without the `Workflo
 1. On your development system, use Eclipse to run `GreeterWorkflowWorker` and `GreeterMain`.
 
 Other than the fact that the activities are running on a different system than the workflow worker and workflow starter, the workflow works in exactly the same way as HelloWorldAsync. However, because `println` call that prints "Hello World\!" to the console is in the `say` activity, the output will appear on the system that is running the activities worker.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

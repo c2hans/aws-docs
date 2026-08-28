@@ -36,3 +36,7 @@ You can create a case either by choosing **\+ Case** from the **Cases** page or 
 Each case that is created is connected to a customer profile from your Connect Customer instance. While viewing the case details page, an agent can choose or tap the customer's name to open the associated Customer Profile in a different tab. Or, the agent can choose **More (...)** to copy the customer name or profile ID to the clipboard. On new case templates, the customer name appears by default on the case details page. You can rearrange this field on your case template, or even remove it entirely.
 
 ![The customer name, the more option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/cases-agent-application-customername.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

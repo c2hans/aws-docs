@@ -113,3 +113,7 @@ When you’re done with your cluster, ship all the nodes back to AWS. When we re
 + [AWS Snowball Edge resources](https://aws.amazon.com/snowball/resources/)
 + [Amazon S3 Compatible Storage on AWS Snowball Edge Compute Optimized Devices Now Generally Available](https://aws.amazon.com/blogs/aws/amazon-s3-compatible-storage-on-aws-snowball-edge-compute-optimized-devices-now-generally-available/)
 + [Getting started with Amazon S3 compatible storage on Snowball Edge on AWS Snowball Edge devices](https://aws.amazon.com/blogs/storage/getting-started-with-amazon-s3-compatible-storage-on-snowball-edge-devices/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

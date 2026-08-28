@@ -48,3 +48,7 @@ $ appium --version
 Note that when you select a software version, `devicefarm-cli` also switches the supporting tools for those languages, such as `pip` for Python and `npm` for NodeJS.
 
 For more information about the preinstalled software on the test host, see [Supported software within custom test environments](custom-test-environments-hosts-software.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

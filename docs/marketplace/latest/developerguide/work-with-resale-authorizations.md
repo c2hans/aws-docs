@@ -1385,3 +1385,7 @@ The following is information about the fields you see in the `DescribeEntity` re
   + **AgreementToken** (string) – Generated from content in ResaleAuthorization. It contains information about terms, rules, and proposer while creating an agreement. It's used for authorization checks and validations during procurement.
   + **Terms** (array of structures) – List of terms presented for acceptance.
   + **Rules** (array of structures) – List of rules or set of instructions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ Follow these steps to configure the setting for effort estimations for issues in
 
 1. In **Estimation** in the **Basic settings** section, choose how the estimation values will be displayed. The types of estimates available are **T-shirt sizing**, **Fibonacci sequencing**, or **Hide estimates**. When the estimation type is updated, no data will be lost and the estimation value of all issues will be converted automatically. The conversion mapping is shown in the following table.
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/codecatalyst/latest/userguide/issues-settings-estimation.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

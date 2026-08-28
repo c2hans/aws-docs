@@ -340,3 +340,7 @@ With customer-managed backup and restore, you have full control over your backup
 <a name="influxdb3-backup-pricing"></a>
 
 There is no additional charge for the customer-managed backup and restore feature. You pay only for the Amazon S3 storage used by your backups. Incremental backups reduce storage costs by capturing only changed data. For Amazon S3 storage pricing, see [Amazon S3 pricing](https://aws.amazon.com/s3/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

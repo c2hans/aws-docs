@@ -79,3 +79,7 @@ You can also sort the table by **Potential savings** or **Total optimizable spen
 1. **Why don't I see history in cost efficiency?**
 
    You will not see history if you are a new customer of Cost Optimization Hub and Compute Optimizer. If you are an existing customer but do not see the history, it could be because of lack of historical data. You should start seeing the history with continued usage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cost-management` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

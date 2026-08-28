@@ -78,3 +78,7 @@ By default, Amazon S3 doesn't replicate the following:
   If annotations are repeatedly deleted and recreated on the source with different names, the destination replica accumulates annotations over time because deletions are not replicated. This accumulation can eventually cause the destination to exceed the 1,000 annotation limit per object version.
 
   Annotation overwrites (updates to an existing annotation name) at the source are replicated to the destination. The destination annotation content stays current with the source.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

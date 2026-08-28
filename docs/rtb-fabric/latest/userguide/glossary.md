@@ -69,3 +69,7 @@ An adtech system that helps publishers manage and sell their ad inventory throug
 <a name="vpc-definition"></a>
 
 A logically isolated network in the AWS Cloud. This virtual network resembles a traditional network that you'd operate in your own data center, with the benefits of using the scalable infrastructure of AWS. For more information, see [Amazon Virtual Private Cloud (Amazon VPC).](http://aws.amazon.com/vpc/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RTB Fabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rtb-fabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

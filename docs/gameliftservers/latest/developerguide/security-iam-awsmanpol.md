@@ -43,3 +43,7 @@ View details about updates to AWS managed policies for Amazon GameLift Servers s
 | [GameLiftContainerFleetPolicy](#security-iam-awsmanpol-GameLiftContainerFleetPolicy) – Change | Amazon GameLift Servers added new permissions to retrieve the AWS Region of an Amazon S3 bucket. | February 5, 2024 |
 | [GameLiftContainerFleetPolicy](#security-iam-awsmanpol-GameLiftContainerFleetPolicy) – New policy | Amazon GameLift Servers added new permissions to enable game server containers to run on Amazon GameLift Servers managed fleets. | November 12, 2024 |
 | Amazon GameLift Servers started tracking changes | Amazon GameLift Servers started tracking changes for its AWS managed policies. | November 12, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

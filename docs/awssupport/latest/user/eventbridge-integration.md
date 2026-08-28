@@ -86,3 +86,7 @@ For more information on writing event patterns, see [Event patterns](https://doc
 For more information about how to use EventBridge with AWS Support, see the following resources:
 + [How to automate AWS Support API with Amazon EventBridge](https://aws.amazon.com/blogs/mt/how-to-automate-aws-support-api-with-amazon-eventbridge)
 + [AWS Support case activity notifier](https://github.com/aws-samples/aws-support-case-activity-notifier) on GitHub
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

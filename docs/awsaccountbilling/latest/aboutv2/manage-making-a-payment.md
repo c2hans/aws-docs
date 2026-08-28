@@ -46,3 +46,7 @@ Before making a payment, ensure that the payment method that you want to be auto
    If you receive an email saying that AWS failed the last attempt to charge your bank account, select the invoice to pay in the **Payments due** table. Then, choose **Complete payment** to pay the invoice. If you have questions about issues with charging your bank account or paying an overdue balance, create a case in the [Support Center](https://console.aws.amazon.com/support/home?#).
 
    If you pay by electronic funds transfer and your account payment is overdue, create a case in the [Support Center](https://console.aws.amazon.com/support/home?#).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

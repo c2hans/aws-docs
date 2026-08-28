@@ -165,3 +165,7 @@ On the mutually agreed port date and time, perform the following steps:
 1. After the Connect Customer team receives confirmation that the porting has been completed, we will perform final testing to confirm that the porting was successful and the phone number is receiving calls to Connect Customer.
 
 1. After we have completed our testing, we will notify you and ask you to verify the successful completion of the porting.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

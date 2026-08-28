@@ -52,3 +52,7 @@ Restoring an image typically takes up to 20 minutes, though it may complete fast
 When you describe images using the **describe-images** command, images that are being restored have an `image-status` of `ACTIVATING`. You can filter images by `image-status` with the value `ACTIVATING` to view images that are currently being restored.
 
 An alternative method to restore an archived image is to re-push the image to the repository. When you push an image that is currently archived, that image will be immediately restored and removed from the archive.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

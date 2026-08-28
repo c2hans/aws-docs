@@ -66,3 +66,7 @@ source_url: https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ad_d
 |  [Title](https://learn.microsoft.com/en-us/windows/win32/adschema/a-title)  | title | Job title | Title | Mutable | User | String | No |
 |  [WhenChanged](https://learn.microsoft.com/en-us/windows/win32/adschema/a-whenchanged)  | whenChanged | Last updated | None | ReadOnly | User, Group | String | No |
 |  [WWWHomePage](https://learn.microsoft.com/en-us/windows/win32/adschema/a-wwwhomepage)  | wWWHomePage | Home page URL | wWWHomePage | Mutable | User, Group | String | No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

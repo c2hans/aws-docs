@@ -21,3 +21,7 @@ AWS CloudTrail is a service that logs and filters events on your Amazon S3 sourc
 **Requirements:**
 + If you are not creating a trail, use an existing AWS CloudTrail trail for logging events in your Amazon S3 source bucket and sending filtered events to the EventBridge rule.
 + Create or use an existing S3 bucket where AWS CloudTrail can store its log files. AWS CloudTrail must have the permissions required to deliver log files to an Amazon S3 bucket. The bucket cannot be configured as a [Requester Pays](https://docs.aws.amazon.com/AmazonS3/latest/dev/RequesterPaysBuckets.html) bucket. When you create an Amazon S3 bucket as part of creating or updating a trail in the console, AWS CloudTrail attaches the required permissions to a bucket for you. For more information, see [Amazon S3 Bucket Policy for CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/create-s3-bucket-policy-for-cloudtrail.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

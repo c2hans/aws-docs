@@ -12,3 +12,7 @@ As an AMS customer, your organization has decided to separate application and in
 ![Diagram showing service design and operation phases with roles for application and infrastructure layers.](http://docs.aws.amazon.com/managedservices/latest/appguide/images/Sent-design-ops.png)
 
 AMS takes responsibility for your AWS infrastructure operations while your teams are responsible for your application operations. As the application and infrastructure design teams, you must understand who will be operating the application once it has been deployed to production in the AMS infrastructure. This guide covers common approaches to infrastructure design as it relates to application deployment and maintenance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

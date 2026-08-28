@@ -72,3 +72,7 @@ AWS query protocol will continue to be supported. You can continue using AWS que
 <a name="json-protocol-more-info"></a>
 
 You can find more information about JSON protocol at [AWS JSON 1.0 protocol](https://smithy.io/2.0/aws/protocols/aws-json-1_0-protocol.html) in the *Smithy* documentation. For more about Amazon SQS API requests using AWS JSON protocol, see [Making query API requests using AWS JSON protocol in Amazon SQS](sqs-making-api-requests-json.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

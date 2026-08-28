@@ -43,3 +43,7 @@ HealthLake provides a special search to match the criteria where `EntityText` an
 | infer-rxnorm-entity-text-concept-code | If there is at least one entity in the InferRxNorm sub-extension that matches the entityText and there is at least one conceptCode for that entity that matches the code. |
 | infer-rxnorm-entity-text-concept-score | If there is at least one entity in the InferRxNorm sub-extension that matches the entityText and there is at least one conceptScore for that entity that matches the score. |
 | infer-rxnorm-entity-concept-description-concept-score | If there is at least one concept within the entity in the InferRxNorm sub-extension that matches the concept description and the conceptScore. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

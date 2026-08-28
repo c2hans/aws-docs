@@ -19,3 +19,7 @@ With Amazon Quick Enterprise Edition, account admins can configure a secure, pri
 + [Configuring the VPC connection in the Amazon Quick console](vpc-creating-a-connection-in-quicksight-console.md)
 + [Configuring the VPC connection with the Amazon Quick CLI](vpc-creating-a-connection-in-quicksight-cli.md)
 + [Testing the connection to your VPC data source](vpc-creating-a-quicksight-data-source-profile.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

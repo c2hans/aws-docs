@@ -79,3 +79,7 @@ If you have created an environment with SSO, you will not get a temporary passwo
 This is the last time these credentials will be available to be copied. However, you can create new credentials at any time.
 
 You have successfully created a FinSpace environment configured with your SAML 2.0 IdP. Learn more about [managing users in SSO](managing-user-sso.md) and [permissions](managing-user-permissions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

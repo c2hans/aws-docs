@@ -53,3 +53,7 @@ You can plot the output into a chart using matplotlib. The chart shows the Bolli
 ![time series library 11](http://docs.aws.amazon.com/finspace/latest/userguide/images/07-prepare-and-analyze-data/time-series-library-11.png)
 
 FinSpace time series library is provided with `aws.finspace.timeseries.spark` package used when working with data that will be processed using a FinSpace Spark cluster in the FinSpace notebook.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

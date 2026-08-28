@@ -26,3 +26,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/iot-greengr
 ## Support
 <a name="support.0320557f-7562-5ad4-80f5-27b71282cb22"></a>
 + [repost.aws](https://repost.aws/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

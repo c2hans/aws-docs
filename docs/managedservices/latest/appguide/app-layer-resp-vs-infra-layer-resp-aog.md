@@ -12,3 +12,7 @@ By using AMS, your infrastructure, and all it needs for maintenance and growth, 
 With the help of application deployment tools, such as CodeDeploy and CloudFormation, or Chef, Puppet, Ansible, or Saltstack, your application deployment to your AMS-managed infrastructure can be fully automated.
 
 For details about what AMS does and does not do, see [What we do, what we do not do](ams-do-not-do.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

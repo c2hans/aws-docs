@@ -14,3 +14,7 @@ The `params` object in an export request can contain various fields, as describe
 + **`useIamAuth`**   –   If your DB cluster has [IAM authentication](iam-auth-enable.md) enabled, you must include this field set to `true`.
 
 The export process also provides several ways to filter the data you export (see [these examples](export-filtering-examples.md)).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

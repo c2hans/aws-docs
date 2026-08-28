@@ -27,3 +27,7 @@ In the following table, each row shows a valid combination of the two fields and
 | **FOLLOW**  | This field is ignored. | Passthrough. MediaLive doesn't change the color space metadata.  |
 | **REC\_601** or <br />**REC\_709** or<br />**HDR10** or<br />**HLG** or<br />**Dolby Vision 8.1** | **Force**  | Cleanup. MediaLive marks all the content as using the specified color space.  |
 | **REC\_601** or<br />**REC\_709** or<br />**HDR10** or<br />**HLG** or <br />**Dolby Vision 8.1** | **Fallback**  | Cleanup. MediaLive marks the content as using the specified color space only for portions of the content that are unmarked or marked as unknown or marked with an unsupported color space.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

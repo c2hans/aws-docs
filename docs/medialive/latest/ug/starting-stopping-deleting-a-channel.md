@@ -64,3 +64,7 @@ You can stop a running channel at any time.
 <a name="pause-channel"></a>
 
 You can also pause one or both the pipelines in a channel by adding a Pause action to the schedule for the channel. For more information, see [How pause and unpause actions work](x-actions-in-schedule-pause.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

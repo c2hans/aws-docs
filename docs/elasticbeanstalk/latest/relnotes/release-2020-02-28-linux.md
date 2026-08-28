@@ -130,3 +130,7 @@ Be aware that at the time these release notes are published, the new platform ve
 |  ** Ruby 2.5 with Passenger version 2.11.3** <br /> * 64bit Amazon Linux 2018.03 v2.11.3 running Ruby 2.5 (Passenger Standalone) *  | 2018.03.0 | Ruby 2.5.7-p157 | RubyGems 2.7.9 | Passenger 4.0.60 | 3.1.0 | nginx 1.16.1 |
 |  ** Ruby 2.4 with Puma version 2.11.3** <br /> * 64bit Amazon Linux 2018.03 v2.11.3 running Ruby 2.4 (Puma) *  | 2018.03.0 | Ruby 2.4.9-p354 | RubyGems 2.7.9 | Puma 2.16.0 | 3.1.0 | nginx 1.16.1 |
 |  ** Ruby 2.4 with Passenger version 2.11.3** <br /> * 64bit Amazon Linux 2018.03 v2.11.3 running Ruby 2.4 (Passenger Standalone) *  | 2018.03.0 | Ruby 2.4.9-p354 | RubyGems 2.7.9 | Passenger 4.0.60 | 3.1.0 | nginx 1.16.1 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

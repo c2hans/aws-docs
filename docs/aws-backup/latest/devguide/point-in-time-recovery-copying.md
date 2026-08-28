@@ -13,3 +13,7 @@ AWS Backup does not support on-demand copies of continuous backups.
 
 **Note**
 For database resources, ensure that your IAM role has the `rds:DeleteDBSnapshot` permission. AWS Backup temporarily creates a source snapshot during a point-in-time recovery (PITR) copy. After the copy completes, the service removes the snapshot. If the role lacks this permission, AWS Backup cannot remove the temporary snapshot. Instead, it creates an expired recovery point to prevent a snapshot leak. You must manually delete any expired recovery points that result from insufficient permissions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

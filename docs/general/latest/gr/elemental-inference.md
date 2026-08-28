@@ -50,3 +50,7 @@ The following are the service endpoints and service quotas for this service.
 | Total dictionaries per account | Each supported Region: 10 Count |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/elemental-inference/quotas/L-6FCCF60B)  | The maximum number of dictionaries that you can create in this account in the current AWS Region. |
 | Total feeds per account | Each supported Region: 1,000 Count | No | The maximum number of feeds that you can create in this account in the current AWS Region. |
 | Total outputs per feed | Each supported Region: 30 Count | No | The maximum number of outputs that you can create per feed in this account in the current AWS Region. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

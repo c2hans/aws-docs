@@ -29,3 +29,7 @@ The following example retrieves information for all runs launched in the specifi
 ```
 aws datapipeline list-runs --pipeline-id {{df-00627471SOVYZEXAMPLE}} --start-interval "2013-09-02","2013-09-11"
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

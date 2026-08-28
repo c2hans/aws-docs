@@ -123,3 +123,7 @@ Use [CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/
 <a name="9999999999999999ctlong-.7936da81-8f15-53df-8b36-fe7bf97d2269"></a>
 
 Use [CloudTrail](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-user-guide.html) to log all events on your AWS resources. Create a trail filtered on your training resources, including datasets on Amazon S3. This trail enables you to act on suspicious activity surrounding your resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

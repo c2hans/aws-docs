@@ -16,3 +16,7 @@ Instead of forcing you to become experts in multiple platforms, AWS simplifies m
 The cloud should empower your business strategy, not constrain it. By applying the principles outlined in this paper and leveraging AWS interoperability capabilities, you can build a cloud approach that maximizes value, minimizes unnecessary complexity, and positions your organization for long-term success in today's dynamic business environment.
 
 To learn more about AWS solutions that can help simplify management across hybrid and multicloud environments, see [AWS solutions for multicloud](https://aws.amazon.com/hybrid-multicloud/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

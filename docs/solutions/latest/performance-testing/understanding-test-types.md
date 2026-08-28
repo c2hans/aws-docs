@@ -135,3 +135,7 @@ Start with the simplest schedule: a smoke load test on every PR merge. This catc
 **Go Deeper**
 [Load testing applications](https://docs.aws.amazon.com/prescriptive-guidance/latest/load-testing/introduction.html) (AWS Prescriptive Guidance)
 [Validate system reliability with performance testing (QA.NT.2)](https://docs.aws.amazon.com/wellarchitected/latest/devops-guidance/qa.nt.2-validate-system-reliability-with-performance-testing.html) (Well-Architected DevOps Guidance)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Performance Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

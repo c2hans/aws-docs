@@ -101,3 +101,7 @@ The Light Engine runs the following workflow:
 1. Users query and visualize logs in Grafana, and Grafana uses Athena to query processed logs in Centralized Bucket.
 
    When any errors occur during data processing, notifications will be sent to the Simple Notification Service (Amazon SNS). You can configure Amazon SNS to deliver these notifications via SMS, email, or instant messaging, to be promptly informed of any issues that arise.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Logging with OpenSearch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

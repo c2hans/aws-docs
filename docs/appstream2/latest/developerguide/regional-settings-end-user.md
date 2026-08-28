@@ -19,3 +19,7 @@ You can configure regional settings so that your WorkSpaces Applications Windows
    + **Input method** — Determines the keystroke combinations that can be used to input characters in another language.
 
 Configuring regional settings is not yet supported for Linux streaming sessions. However, you can switch between different input methods available in your streaming sessions with shortcut key combinations specified by your administrator. The default shortcut key combinations are “Super \+ Space” and “Shift \+ Super \+ Space”. “Super” is the “Windows” key on a Windows keyboard or the “Command” key on an Apple keyboard. Always check with your administrators for the shortcut keys they specified when creating the image. For example, in [Tutorial: Enable Japanese Support for Your Linux Images](enable-japanese-support-linux.md), the shortcut key combinations have been changed to “Control \+ Space” and “Shift \+ Control \+ Space”.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -139,3 +139,7 @@ Your agent will need to have the appropriate security profile permissions to vie
 For more information on security profile permissions, see [Security profiles](https://docs.aws.amazon.com/connect/latest/adminguide/connect-security-profiles.html).
 
 Advanced users who want to build their own custom agent application and embedded customer profiles can use [StreamsJS](https://github.com/amazon-connect/amazon-connect-streams) which provides more customization over the agent application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

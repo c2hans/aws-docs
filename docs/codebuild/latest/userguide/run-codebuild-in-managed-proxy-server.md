@@ -70,3 +70,7 @@ Your JSON file may look similar to the following:
 <a name="use-managed-server-run-acb-fleet"></a>
 
  When running AWS CodeBuild reserved capacity fleets with your managed proxy server, CodeBuild will automatically set its `HTTP_PROXY` and `HTTPS_PROXY` environment variables with the managed proxy addresses. If your dependency software has its own configuration and does not adhere to the environment variables, you can refer to these values and update your software configuration in your build commands to properly route your build traffic through the managed proxy. For more information, see [Create a build project in AWS CodeBuild](create-project.md) and [Change build project settings in AWS CodeBuild](change-project.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

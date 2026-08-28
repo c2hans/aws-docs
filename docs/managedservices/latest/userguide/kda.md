@@ -27,3 +27,7 @@ Request access by submitting a Management \| AWS service \| Self-provisioned ser
 There are a few dependencies:
 + Amazon Managed Service for Apache Flink requires that Kinesis Data Streams or Firehose must be created prior to configuring an application with Managed Service for Apache Flink.
 + The resource-based policy permissions should indicate a particular input data source.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

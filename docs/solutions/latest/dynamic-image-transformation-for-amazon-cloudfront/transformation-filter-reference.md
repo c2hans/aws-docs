@@ -27,3 +27,7 @@ The ECS architecture supports a comprehensive set of image transformation filter
 |  **Strip EXIF**  |  `stripExif=true`  | Removes image metadata |
 |  **Tint**  |  `tint=aliceblue` `tint=[0,0,255,1]`  | Accepts color names or RGBA tuples |
 |  **Watermark**  |  `watermark=https://example.com/overlayImage.png,[15,15,0.1,0.4,0.4]`  | Expects a format of: [watermarkURL, [x, y, alpha, widthRatio, heightRatio]] Note: For security reasons, the origin the watermark image is hosted at must be configured as an origin within DIT. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

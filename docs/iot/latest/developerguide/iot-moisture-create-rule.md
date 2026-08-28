@@ -41,3 +41,7 @@ You might have to use a different value. After you have the code running on your
 1. For **SNS topic**, choose the topic that you created in [Step 3: Create an Amazon SNS topic and subscription](iot-moisture-create-sns-topic.md), **MoistureSensorTopic**, and leave the **Message format** as **RAW**. For **IAM role**, choose **Create a new role**. Enter a name for the role, for example, **LowMoistureTopicRole**, and then choose **Create role**.
 
 1. Choose **Next** to review and then choose **Create** to create the rule.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

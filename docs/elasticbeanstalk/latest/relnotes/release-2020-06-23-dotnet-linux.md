@@ -28,3 +28,7 @@ Be aware that at the time these release notes are published, the new platform ve
 |  Platform Version and *Solution Stack Name*   |  Framework  |  Proxy Server  |  AMI  |  AWS X‑Ray  |
 | --- | --- | --- | --- | --- |
 |  ** .NET Core on AL2 version 1.0.0** <br /> * 64bit Amazon Linux 2 v1.0.0 running .NET Core *  | .NET Core 3.1.5, supports 3.1.5, 2.1.19 | nginx 1.16.1 | 2.0.20200603 | 3.2.0 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

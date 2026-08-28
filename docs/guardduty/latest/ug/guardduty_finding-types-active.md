@@ -243,3 +243,7 @@ The following table shows all of the active finding types, grouped by their sour
 | [UnauthorizedAccess:Runtime/MetadataDNSRebind](findings-runtime-monitoring.md#unauthorizedaccess-runtime-metadatadnsrebind) | Instance, EKS cluster, ECS cluster, or container | Runtime Monitoring | High |
 | [UnauthorizedAccess:Runtime/TorClient](findings-runtime-monitoring.md#unauthorizedaccess-runtime-torclient) | Instance, EKS cluster, ECS cluster, or container | Runtime Monitoring | High |
 | [UnauthorizedAccess:Runtime/TorRelay](findings-runtime-monitoring.md#unauthorizedaccess-runtime-torrelay) | Instance, EKS cluster, ECS cluster, or container | Runtime Monitoring | High |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

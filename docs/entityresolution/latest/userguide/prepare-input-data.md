@@ -164,3 +164,7 @@ AWS Entity Resolution doesn't currently support Amazon S3 locations registered w
 You are now ready to:
 + [Create a schema mapping](create-schema-mapping.md) and then [create an ID mapping workflow for one AWS account](creating-id-mapping-workflow-same-account.md).
 + [Create an ID namespace source](create-id-namespace-source.md), [create an ID namespace target](create-id-namespace-target.md), and then [create an ID mapping workflow across two AWS accounts](creating-id-mapping-workflow-two-accounts.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Entity Resolution. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query entityresolution` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

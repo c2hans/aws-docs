@@ -81,3 +81,7 @@ Do not add Slurm settings specific to the target version while the fleet still c
 + [Combining version updates with configuration changes](#version_update-cluster-combined-changes)
 + [Update the scheduler version of an AWS PCS cluster](working-with_clusters_version_update_procedure.md)
 + [Troubleshooting AWS PCS cluster version updates](working-with_clusters_version_update_troubleshooting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

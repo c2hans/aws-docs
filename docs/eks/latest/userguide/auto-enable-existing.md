@@ -131,3 +131,7 @@ For more information, see [Update an Amazon EKS add-on](updating-an-add-on.md).
 <a name="_next_steps"></a>
 + To migrate Managed Node Group workloads, see [Migrate from EKS Managed Node Groups to EKS Auto Mode](auto-migrate-mng.md).
 + To migrate from Self-Managed Karpenter, see [Migrate from Karpenter to EKS Auto Mode using kubectl](auto-migrate-karpenter.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

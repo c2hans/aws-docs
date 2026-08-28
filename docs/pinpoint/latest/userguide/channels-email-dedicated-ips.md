@@ -78,3 +78,7 @@ By using dedicated IP addresses, you can isolate your sender reputation for diff
 When you use dedicated IP addresses, you can find the values of the addresses that send your mail in the **Dedicated IPs** page of the Amazon Pinpoint console. Dedicated IP addresses don't change.
 
 With shared IP addresses, you don't know the IP addresses that Amazon Pinpoint uses to send your mail, and they can change at any time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

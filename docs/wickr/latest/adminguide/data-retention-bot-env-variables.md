@@ -47,3 +47,7 @@ Use the following environment variable to specify the Amazon SNS details when yo
 
 Use the following environment variable to send data retention metrics to CloudWatch. If specified, the metrics will be generated every 60 seconds.
 + `WICKRIO_METRICS_TYPE` – Set the value of this environment variable to `cloudwatch` to send metrics to CloudWatch.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

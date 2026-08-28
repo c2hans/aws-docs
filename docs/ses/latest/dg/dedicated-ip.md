@@ -101,3 +101,7 @@ An IP address with a consistent history of sending email has a better reputation
 **Dedicated IP addresses (standard)**—you can find the values of the addresses that send your mail in the **Dedicated IPs** page of the SES console. This is because dedicated IP addresses are static.
 
 **Dedicated IP addresses (managed)**—SES will automatically configure the optimal number of dedicated IP addresses based on your sending patterns. While SES manages the automatic scaling of your IP pool, you can view all dedicated IP addresses currently allocated to your account through the SES console or API. The number of IPs in your pool will continue to dynamically increase or decrease based upon your sending demand.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

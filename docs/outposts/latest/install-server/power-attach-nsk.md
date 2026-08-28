@@ -35,3 +35,7 @@ If you are installing multiple servers at the same time, ensure that you do not 
 
    The following image shows the type of screwdriver you can use to attach the NSK to the server.
 ![Shows the type of screwdriver you can use to attach the NSK to the server. Also shows the type of screwdriver you can't use.](http://docs.aws.amazon.com/outposts/latest/install-server/images/outpost-nsk-attach.jpg)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

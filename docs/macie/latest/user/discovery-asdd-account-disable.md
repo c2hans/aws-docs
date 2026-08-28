@@ -97,3 +97,7 @@ while auto-enable is set to ALL.
 In the preceding response, the request failed because the member enablement setting for the organization is currently configured to enable automated sensitive data discovery for all accounts (`ALL`). To address the error, the Macie administrator must first change this setting to `NONE` or `NEW`. For information about this setting, see [Enabling automated sensitive data discovery](discovery-asdd-account-enable.md).
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ This function shouldn't be used for anything that needs high entropy randomness 
 ** `$util.math.randomWithinRange(Integer, Integer) : Integer` **
 Returns a random integer value within the specified range, with the first argument specifying the lower value of the range and the second argument specifying the upper value of the range.
 This function shouldn't be used for anything that needs high entropy randomness (for example, cryptography).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

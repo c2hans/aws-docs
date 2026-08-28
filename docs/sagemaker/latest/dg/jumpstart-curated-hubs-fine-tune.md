@@ -137,3 +137,7 @@ Your fine-tuning job should now begin.
 You can check on your fine-tuning job by viewing your training jobs, either in the SageMaker AI console or by using the [ListTrainingJobs](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_ListTrainingJobs.html) API.
 
 You can access your fine-tuned model artifacts at the Amazon S3 `output_path` that was specified in the `ModelTrainer` object (either the default SageMaker AI Amazon S3 bucket for the region, or a custom Amazon S3 path you specified, if applicable).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

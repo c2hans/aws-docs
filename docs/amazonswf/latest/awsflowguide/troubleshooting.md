@@ -116,3 +116,7 @@ In order to avoid this situation, use different task lists for each test. Also, 
 Amazon SWF enforces length constraints on API parameters. You will receive an `HTTP 400` error if your workflow or activity implementation exceeds the constraints. For example, when calling `recordActivityHeartbeat` on `ActivityExecutionContext` to send a heartbeat for a running activity, the string must not be longer than 2048 characters.
 
 Another common scenario is when an activity fails due to an exception. The framework reports an activity failure to Amazon SWF by calling [RespondActivityTaskFailed](https://docs.aws.amazon.com/amazonswf/latest/apireference/API_RespondActivityTaskFailed.html) with the serialized exception as details. The API call will report a 400 error if the serialized exception has a length greater than 32,768 bytes. To mitigate this situation, you can truncate the exception message or the causes to conform to the length constraint.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

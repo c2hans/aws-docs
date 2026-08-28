@@ -99,3 +99,7 @@ For Windows Server, three predefined patch baselines are provided. The patch bas
 + When you create an approval rule with multiple `Classification` and `Severity` values, patches are approved based on their available attributes. Packages with both `Classification` and `Severity` attributes will match the selected baseline values for both fields. Packages with only `Classification` attributes are matched only against the selected baseline `Classification` values. Severity requirements in the same rule are ignored for packages that don't have `Severity` attributes.
 
 For information about creating a patch baseline, see [Working with custom patch baselines](patch-manager-manage-patch-baselines.md) and [Tutorial: Patch a server environment using the AWS CLI](patch-manager-patch-servers-using-the-aws-cli.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

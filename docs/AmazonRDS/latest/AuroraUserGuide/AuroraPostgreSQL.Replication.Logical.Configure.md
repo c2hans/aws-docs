@@ -59,3 +59,7 @@ You can modify parameter values in a customer-created DB parameter group. you ca
       ```
 
 For an example of using logical replication to keep a database table synchronized with changes from a source Aurora PostgreSQL DB cluster, see [Example: Using logical replication with Aurora PostgreSQL DB clusters](AuroraPostgreSQL.Replication.Logical.PostgreSQL-Example.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

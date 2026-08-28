@@ -129,3 +129,7 @@ This versioning model allows for rapid iteration while maintaining traceability,
 <a name="applications-versioning-maintenance-operations"></a>
 
 App Studio may need to automatically republish your application to address certain maintenance tasks, operational activities, and to incorporate new software libraries. No action is needed from you, the builder, but end users may need to log back into the application. In certain situations, we may need you to republish your application to incorporate new features and libraries which we cannot automatically add ourselves. You will need to resolve any errors and review warnings before republishing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

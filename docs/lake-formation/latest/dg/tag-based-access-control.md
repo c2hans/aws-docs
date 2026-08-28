@@ -122,3 +122,7 @@ In this simple example, using five assignment operations and eight grant operati
 + [Managing LF-Tags for metadata access control](managing-tags.md)
 + [Managing LF-Tag expressions for metadata access control](managing-tag-expressions.md)
 + [Managing LF-Tag value permissions](TBAC-granting-tags.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

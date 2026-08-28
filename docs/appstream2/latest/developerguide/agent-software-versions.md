@@ -89,3 +89,7 @@ The following table describes the latest updates that are available in released 
 | 03-19-2018 |  +  Resolves an issue with minimizing the application window in certain environments <br />+  Works with these software components:   Amazon SSM Agent — 2.2.160.0    Amazon WDDM Hook Driver — 1.0.0.56   EC2Config service — 4.9.2400.0     |
 | 01-24-2018 |  +  Resolves an issue with the Alt Graph key not working on certain keyboard layouts <br />+  Works with these software components:   Amazon SSM Agent — 2.2.93.0    Amazon WDDM Hook Driver — 1.0.0.50   EC2Config service — 4.9.2262.0     |
 | 12-07-2017 |  +  Resolves issues with using ALT key combinations <br />+  Resolves an issue with file uploads from local computers to streaming sessions <br />+  Works with these software components:   Amazon SSM Agent — 2.2.93.0   Amazon WDDM Hook Driver — 1.0.0.21   EC2Config service — 4.9.2218.0     |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

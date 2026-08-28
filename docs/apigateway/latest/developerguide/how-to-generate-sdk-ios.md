@@ -399,3 +399,7 @@ The following procedure describes how to call the API methods in Swift app sourc
    ```
 
    The resulting display is `1 div 2 = 0.5`. Here, `div` is used in place of `/` because the [simple Lambda function](simple-calc-nodejs-lambda-function.md) in the backend does not handle URL encoded path variables.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -81,3 +81,7 @@ The AWS IoT Greengrass Secret Manager component fetches and caches secrets only 
    In the screen that appears, paste `[""]` in the **Reset paths** box, and update the AWS Secrets Manager ARNs in the **Configuration to merge** box.
 
    For more information, see [Reset updates](https://docs.aws.amazon.com/greengrass/v2/developerguide/update-component-configurations.html#reset-configuration-update).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

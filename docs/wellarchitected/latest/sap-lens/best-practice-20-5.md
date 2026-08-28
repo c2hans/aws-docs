@@ -31,3 +31,7 @@ AWS regularly releases new services and periodically reduces prices. Review new 
  Subscribe to the [SAP on AWS blog](https://aws.amazon.com/blogs/awsforsap/) and the [What’s New](https://aws.amazon.com/new/) feed for the latest announcements and news.
 
  See [Operational Excellence]: [Best Practice 4.4 - Perform regular workload reviews to optimize for resiliency, performance, agility, and cost](best-practice-4-4.md) for further information on continued optimization of your SAP workload.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

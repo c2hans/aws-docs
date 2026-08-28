@@ -39,3 +39,7 @@ The following table shows the Amazon ECR repository URIs where GuardDuty securit
 | Africa (Cape Town) | `379032919888.dkr.ecr.af-south-1.amazonaws.com` |
 | Asia Pacific (Melbourne) | `750462861327.dkr.ecr.ap-southeast-4.amazonaws.com` |
 | Israel (Tel Aviv) | `292660727137.dkr.ecr.il-central-1.amazonaws.com` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

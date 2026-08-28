@@ -22,3 +22,7 @@ Use the following mechanisms to properly manage your prompts throughout their li
 For more information about prompt management, see the following resources:
 + [Prompt versioning & management guide for building AI features](https://launchdarkly.com/blog/prompt-versioning-and-management/) (LaunchDarkly blog post)
 + [Prompt, agent, and model lifecycle management](https://docs.aws.amazon.com/prescriptive-guidance/latest/agentic-ai-serverless/prompt-agent-and-model.html) (AWS Prescriptive Guidance)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -19,3 +19,7 @@ If your instances run RDS for Oracle or RDS for SQL Server, you can add up to th
 + [I/O-intensive storage modifications](USER_PIOPS.IOIntensive.md)
 + [Modifying settings for General Purpose SSD (gp3) storage](USER_PIOPS.gp3.md)
 + [Using a dedicated log volume (DLV)](USER_PIOPS.dlv.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

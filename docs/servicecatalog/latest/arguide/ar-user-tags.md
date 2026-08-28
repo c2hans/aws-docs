@@ -24,3 +24,7 @@ As of September 18th, 2024 for **existing** AppRegistry users, the following beh
 + For existing AppRegistry applications, if you use the AppRegistry console to add a new resource to the application, AWS automatically applies the `awsApplication` tag to that new resource.
 + For new applications created in the AppRegistry console, AWS automatically applies the `awsApplication` tag to all resources added to the application.
 + For new applications created with myApplications in the AWS Management Console, AWS automatically applies the `awsApplication` tag to all resources added to the application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Catalog. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query servicecatalog` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

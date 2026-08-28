@@ -145,3 +145,7 @@ When to use each approach:
 + Use `Fn::GetStackOutput` when you need to reference outputs across accounts or Regions, or when you prefer not to manage explicit exports. Be aware that `Fn::GetStackOutput` creates a weak reference. If the referenced stack or output is deleted, the consuming stack is not notified, and subsequent operations that re-resolve the reference will fail.
 
 For more information, see [Fn::GetStackOutput](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-getstackoutput.html) in the *CloudFormation Template Reference Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

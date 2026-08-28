@@ -94,3 +94,7 @@ svc := s3.NewFromConfig(cfg, func(o *s3.Options) {
 | client.http.connections.usage | {connection} | UpDownCounter | The current state of connections in the pool. Uses a state dimension with a value of idle or acquired. |
 | client.http.do\_request\_duration | s | Histogram | The total time spent performing the HTTP request. |
 | client.http.time\_to\_first\_byte | s | Histogram | The time from sending the request to receiving the first response byte. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Go v2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-go` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

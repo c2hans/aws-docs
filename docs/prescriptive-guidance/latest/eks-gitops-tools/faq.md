@@ -64,3 +64,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/eks-gitops-
 **Q: What's the difference between using a GitOps tool and using **`kubectl apply`** with a CI/CD pipeline?**
 
 **A**: GitOps tools offer advantages over simple `kubectl apply` commands, including automated drift detection and reconciliation, improved security through pull-based deployments, better auditability, and more sophisticated deployment strategies. They also provide a more comprehensive approach to managing the entire cluster state.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

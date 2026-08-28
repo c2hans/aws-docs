@@ -78,3 +78,7 @@ The branch of the dependency that is used. If the package uses the release branc
 The SPDX license identifier of the library. For the full list, see [https://spdx.org/licenses/](https://spdx.org/licenses/). It should match the `LICENSE` file included in the root of the repository if it exists.
 + type: string
 + required: true
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

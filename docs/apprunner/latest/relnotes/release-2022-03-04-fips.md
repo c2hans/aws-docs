@@ -17,3 +17,7 @@ AWS App Runner added support for FIPS endpoints.
 AWS App Runner added support for FIPS endpoints in AWS Regions within the United States. For information about AWS compliance with FIPS, see [Federal Information Processing Standard (FIPS) 140-2](https://aws.amazon.com/compliance/fips/).
 
 For more information, see [AWS App Runner service endpoints](https://docs.aws.amazon.com/general/latest/gr/apprunner.html#apprunner_region) in the *Amazon Web Services General Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

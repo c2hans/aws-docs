@@ -24,3 +24,7 @@ We recommend that you follow these best practices when you design your container
 + Design your container so that its system requirements are built around CPU usage, system memory, and persistent storage.
 
 For more information on best practices, see [Principles of Container-based Application Design](https://kubernetes.io/blog/2018/03/principles-of-container-app-design/) in the Kubernetes documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ Your DLAMI comes preinstalled with several GPU monitoring tools. This guide also
 **Tip**
 Check out NVIDIA's developer blog for the latest info on using the CUDA tools installed your DLAMI:
 [Monitoring TensorCore utilization using Nsight IDE and nvprof](https://devblogs.nvidia.com/using-nsight-compute-nvprof-mixed-precision-deep-learning-models/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

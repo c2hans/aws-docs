@@ -31,3 +31,7 @@ This is not a complete list of active resources on your domain. For all active S
 |  [Studio Classic](studio.md)  |  +   [Stacks with CloudFormation](notebooks-run-and-manage-shut-down.md)  <br />+   [Clean Up Resources for Custom Images in Amazon SageMaker Studio Classic](studio-byoi-cleanup.md): images <br />+   [Stop a Training Job in Amazon SageMaker Studio Classic](studio-tasks-stop-training-job.md)  <br />+   [Delete a shared space](domain-space-delete.md)    |
 |  [Stacks in AWS CloudFormation](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/stacks.html)  |  [Deleting a stack on the AWS CloudFormation console](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/cfn-console-delete-stack.html)  |
 |  [TensorBoard in SageMaker AI](tensorboard-on-sagemaker.md)  |  [Delete unused TensorBoard applications](debugger-htb-delete-app.md)  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ The following examples walk you through typical captions scenarios. They refer t
 + [One Input Format to the Same Output Format, Multiple Outputs](use-case-3-one-input-format-to-several-outputs.md)
 + [One Input Format to Multiple Different Formats, One for Each Output](use-case-4-one-input-format-converted-to-different-formats-one-format-for-each-output.md)
 + [One Captions Output Shared Across an Adaptive Bitrate (ABR) Package](use-case-5-one-captions-output-shared-by-multiple-video-streams.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Server. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-server` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

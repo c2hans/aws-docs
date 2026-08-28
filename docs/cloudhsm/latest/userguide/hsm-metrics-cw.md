@@ -22,3 +22,7 @@ The `AWS/CloudHSM` namespace includes the following metrics:
 | InterfaceEth2OctetsInput [1](#metric-1) | The cumulative sum of incoming traffic to the HSM to date. |
 | InterfaceEth2OctetsOutput [1](#metric-1) | The cumulative sum of outgoing traffic to the HSM to date. |
 + [1] This metric is not available for hsm2m.medium.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

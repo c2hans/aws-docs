@@ -32,3 +32,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
  If the device maker does not want to maintain its own CA, but still wants to control the PKI for their assets, they can use CA services from third parties. These CA service companies generate an intermediate signer CA that is customized to the device maker’s specification or they sign certificates from their own root CA. Third-party CAs give the device maker the ability to generate and sign X.509 certificates, but the third party maintains the physical security of the CA. Hardware security module vendors typically offer this service to pre-provision their modules before shipping them to the contract manufacturer.
 
 ![A diagram depicting a third-party Certificate Authority with Hardware Security Modules.](http://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-provisioning/images/3P-certificate.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

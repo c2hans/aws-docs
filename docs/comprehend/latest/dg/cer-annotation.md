@@ -48,3 +48,7 @@ There are a number of things to consider to get the best result when using annot
 + Try and give the same data distribution for training as you expect to be using when you're actually detecting your custom entities (inference time). For example, at inference time, if you expect to be sending us documents that have no entities in them, this should also be part of your training document set.
 
 For additional suggestions, see [Improving custom entity recognizer performance](https://docs.aws.amazon.com/comprehend/latest/dg/cer-metrics.html#cer-performance).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

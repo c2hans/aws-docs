@@ -39,3 +39,7 @@ aws iot-managed-integrations create-event-log-configuration \
 ```
 
 After you call `CreateEventLogConfiguration`, logs are pushed to the `/aws/iotmanagedintegrations/EventLog` log group in CloudWatch Logs. Use [ListEventLogConfigurations](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_ListEventLogConfigurations.html) to view all configurations, or [GetEventLogConfiguration](https://docs.aws.amazon.com/iot-mi/latest/APIReference/API_GetEventLogConfiguration.html) to retrieve a specific configuration by ID.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,3 +45,7 @@ The process of installing and using the AWS Partner CRM connector follows these 
 1. Install the connector from the Salesforce AppExchange. Refer to [Installing the connector](install-connector.md), later in this section, for the installation steps.
 
 1. Configure the connector to exchange data with AWS Partner Central, AWS Marketplace, and earlier Amazon S3 integrations. The topics in [Configuring the CRM connector](configure-crm-connector.md) explain how to configure the connector for each type of integration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

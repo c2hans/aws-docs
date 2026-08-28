@@ -42,3 +42,7 @@ Restores can be faster and more cost-efficient if you exclude some or all indexe
 + Point-in-time recovery settings
 
 The time it takes you to restore a table varies based on multiple factors and isn't always correlated with the size of the table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

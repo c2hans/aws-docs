@@ -25,3 +25,7 @@ Not all AWS Partners can integrate by using PrivateLink. To determine whether yo
 + Data processing charges apply for each GB processed through the VPC endpoint, regardless of the traffic's source or destination.
 
 For more information, see [AWS PrivateLink pricing](https://aws.amazon.com/privatelink/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

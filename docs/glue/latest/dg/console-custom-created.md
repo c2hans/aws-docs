@@ -32,3 +32,7 @@ Use the content in this section to guide the process of writing your custom scri
 For more information about adding jobs in AWS Glue, see [Building visual ETL jobs](author-job-glue.md).
 
 For step-by-step guidance, see the **Add job** tutorial in the AWS Glue console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

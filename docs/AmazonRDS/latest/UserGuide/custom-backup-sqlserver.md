@@ -17,3 +17,7 @@ Although snapshot backups serve operationally as full backups, you are billed on
 + [Restoring an RDS Custom for SQL Server instance to a point in time](custom-backup.pitr-sqs.md)
 + [Deleting an RDS Custom for SQL Server snapshot](custom-backup-sqlserver.deleting.md)
 + [Deleting RDS Custom for SQL Server automated backups](custom-backup-sqlserver.deleting-backups.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

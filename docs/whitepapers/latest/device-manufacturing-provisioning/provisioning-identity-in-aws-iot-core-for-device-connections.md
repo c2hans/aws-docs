@@ -130,3 +130,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/device-manufacturing-
 <a name="use-cases-for-fleet-provisioning-by-claim"></a>
 
  Fleet provisioning by claim should only be used when it is not possible to provision unique credentials in the device, and when it is not possible to use the provisioning by trusted user option. Devices that enter insecure channels such as a third-party distributor should not use fleet provisioning by claim because of the risk in exposing the claim credentials that are common to every device prior to the initial connection to AWS IoT Core.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

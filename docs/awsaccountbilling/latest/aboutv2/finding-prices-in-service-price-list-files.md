@@ -162,3 +162,7 @@ The following procedure shows how to find prices for services with Reserved Inst
    If you don't know the SKU, search under **products** for the **usage type** and **operation**.
 
 You can find prices for **LeaseContractLength**, **PurchaseOption**, and **OfferingClass** for the same product.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

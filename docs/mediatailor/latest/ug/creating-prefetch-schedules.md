@@ -111,3 +111,7 @@ Only use variables that change per ad break (such as `scte.event_id`, `scte.segm
 1. Select **Add avail criteria**.
 
 Prefetch schedules automatically expire after the consumption window's end time. For diagnostic purposes, they remain visible for at least 7 days, after which MediaTailor automatically deletes them. Alternatively, you can manually delete a prefetch schedule at any time. For information about how to manually delete a prefetch schedule, see the following [Deleting prefetch schedules](deleting-prefetch-schedules.md) section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

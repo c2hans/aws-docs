@@ -31,3 +31,7 @@ The following table shows a similar list of Oracle databases that are early cand
 ![Sample AWS SCT report for Oracle databases that are early candidates to migrate to open-source database engines](http://docs.aws.amazon.com/prescriptive-guidance/latest/database-refactor-prioritization/images/guide-img/d514dcdf-d1f9-43a2-ac0b-46dc109cf9b2/images/0755a4a4-e948-48b5-863a-57c58f2b9ad7.png)
 
 The Oracle and SQL Server tables also provide vital information such as the schema name, the database version, the total number of objects, the size of the schema, and its conversion complexity. You can use this data to review and plan the migration based on your requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

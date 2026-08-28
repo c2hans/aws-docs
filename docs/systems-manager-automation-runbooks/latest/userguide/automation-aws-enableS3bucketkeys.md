@@ -56,3 +56,7 @@ The `AutomationAssumeRole` parameter requires the following actions to use the r
 + PutBucketKeysKMS (aws:executeAwsApi) - Sets the `BucketKeyEnabled` property to `true` for the specified S3 bucket using the specified `KmsKeyId`.
 + PutBucketKeysAES256 (aws:executeAwsApi) - Sets the `BucketKeyEnabled` property to `true` for the specified S3 bucket with AES256 encryption.
 + VerifyS3BucketKeysEnabled (aws:assertAwsResourceProperty) - Verifies that the Bucket Keys are enabled on the target S3 bucket.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

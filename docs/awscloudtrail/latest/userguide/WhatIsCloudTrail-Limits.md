@@ -37,3 +37,7 @@ The following table describes the resource quotas within CloudTrail.
 The [AWS General Reference](https://docs.aws.amazon.com/general/latest/gr/aws-service-information.html) lists the transactions per second (TPS) quota for AWS APIs. The transactions per second (TPS) quota for an API represents how many requests you can make per second for a given API without being throttled. For example, the TPS quota for the CloudTrail `LookupEvents` API is 2.
 
 For information about the TPS quota for each CloudTrail API, see [Service quotas](https://docs.aws.amazon.com/general/latest/gr/ct.html#limits_cloudtrail) in the *AWS General Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

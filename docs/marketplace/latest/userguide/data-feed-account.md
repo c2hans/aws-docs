@@ -33,3 +33,7 @@ The following shows an example of the account data feed. For readability, the da
 | xk0CSmiAm6PQ4QqEog9iiaochIzuPlkMfba7a1oDlZ | 444456660000 | Zf7oMzheGWpH | 25o3k46eN6eViOfFiiqtxwX8e3kaOiPalUiofjyFa3 |  |  |  |
 | 7nyo5jwTRoPlyX81vx9ji04eEwTurO1Ff8biQi88W8 | 555567679999 | 373vuQUqmQ8v | 5oJ6vTjSzMrrF2gvh2Vj9HfqiM800MuLEHmyFY5Lr42s8 | 5oJ6vTjSzMrrF2gvh2Vj9HfqiM800MuLEHmyFY5Lr42s8 | SE823935083345 |  |
 | VIeGa2t9j3MuxioH9wc8lsndXXCgGCGUreeXriocM5 | 73739998888 | 8SPxAYmi8MwX | NLUc5UeiMlGFTrDWCoftDPhDUF1oaSd8xgl5QM8Db7 | V5NhBYBiYogwy0WMhndGU4AfMggmuoTC2j7Pm8ZKKNNyT | DE469558025 |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ In cases where High priority incidents are impacting your critical workloads, AM
 **Note**
 Ephemeral data that is not part of the stack template or data restore is lost. AMS uses reasonable efforts to perform infrastructure restore while AWS service offerings are unavailable. Infrastructure restore is completed once AWS service offerings are available.
 If you don't authorize an infrastructure restore as recommended by AMS, you won't be eligible for a service credit for the AMS service commitment for incident resolution time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -70,3 +70,7 @@ To create an IAM policy using the AWS CLI, run the [create-policy](https://docs.
 
 **To create an IAM policy using AWS Tools for Windows PowerShell**
 To create an IAM policy using the AWS Tools for Windows PowerShell, run the [New-IAMPolicy](https://docs.aws.amazon.com/powershell/latest/reference/items/New-IAMPolicy.html) cmdlt using the JSON document above as a file in your current folder.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

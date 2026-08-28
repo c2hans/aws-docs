@@ -10,7 +10,7 @@ After you enable AWS Security Hub CSPM for your AWS account, you can view your s
 **Notes**
 From Trusted Advisor, you can view controls in the AWS Foundational Security Best Practices security standard *except* for controls that have the Category: Recover > Resilience. For a list of supported controls, see [AWS Foundational Security Best Practices controls](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-standards-fsbp-controls.html) in the *AWS Security Hub CSPM User Guide*.
 For more information about the Security Hub CSPM categories, see [Control categories](https://docs.aws.amazon.com/securityhub/latest/userguide/control-categories.html).
-Trusted Advisor onboarded Security Hub CSPM controls up to September 26, 2024. Controls released after September 26, 2024 are not yet onboarded to Trusted Advisor. You can find controls released after that date in the [Security Hub CSPM log](https://docs.aws.amazon.com/securityhub/latest/userguide/doc-history.html).
+Trusted Advisor onboarded Security Hub CSPM controls up to July 8, 2026. Controls released after July 8, 2026 are not yet onboarded to Trusted Advisor. You can find controls released after that date in the [Security Hub CSPM log](https://docs.aws.amazon.com/securityhub/latest/userguide/doc-history.html).
 
 **Topics**
 + [Prerequisites](#prerequisites-security-hub)
@@ -181,3 +181,7 @@ When the `RecordState` status changes to `ARCHIVED` for a finding, Trusted Advis
 <a name="security-hub-contact-support"></a>
 
 If you still have issues with this feature, you can create a technical support case in the [AWS Support Center](https://console.aws.amazon.com/support/home).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

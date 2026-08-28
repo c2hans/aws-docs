@@ -45,3 +45,7 @@ After you enable CORS support on your resource, you must deploy or redeploy the 
 
 **Note**
 If you cannot enable CORS support on your resource after following the procedure, we recommend that you compare your CORS configuration to the example API `/pets` resource. To learn how to create the example API, see [Tutorial: Create a REST API by importing an example](api-gateway-create-api-from-example.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

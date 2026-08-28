@@ -16,3 +16,7 @@ Mainframe modernization is a complex and critical initiative that demands specia
 + **Phased implementation**: Consider a phased approach to replatforming, where you gradually migrate applications while monitoring performance and addressing any issues that arise.
 + **Continuous optimization**: After replatforming, continuously monitor and optimize the performance of your applications and their interactions with the Db2 for z/OS database to ensure long-term success.
 + **Modernize at your pace**: Now that the workload is running on AWS and already taking advantage of the cloud, start planning the re-imagine phase of your modernization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

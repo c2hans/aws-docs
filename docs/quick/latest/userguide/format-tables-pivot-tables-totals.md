@@ -109,3 +109,7 @@ In pivot tables, you can apply any text, background color, and border styling yo
    + **Headers only**– Aplies styling options to all headers in the pivot table.
    + **Cells only**– Applies styling options to all cells that aren't headers in the pivot table.
    + **Headers and cells**– Applies styling options to all cells in the pivot table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

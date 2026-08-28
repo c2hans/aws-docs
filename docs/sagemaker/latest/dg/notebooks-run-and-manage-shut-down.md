@@ -62,3 +62,7 @@ A confirmation dialog box isn't displayed for kernel sessions or terminal sessio
    + To shut down all resources in a section, choose the **X** to the right of the section label. A confirmation dialog box is displayed. Choose **Shut down all** to proceed.
 **Note**
 When you shut down these Studio Classic resources, any additional resources created from Studio Classic, such as SageMaker AI endpoints, Amazon EMR clusters, and Amazon S3 buckets are not deleted. You must manually delete these resources to stop the accrual of charges. For information about finding resources that are accruing charges, see [Analyzing your costs with AWS Cost Explorer](https://docs.aws.amazon.com/cost-management/latest/userguide/ce-what-is.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

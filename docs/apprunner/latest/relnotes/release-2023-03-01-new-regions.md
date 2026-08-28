@@ -22,3 +22,7 @@ AWS App Runner is now available in the following AWS Regions:
 For more information on all the Regions supported by App Runner, see [AWS App Runner endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/apprunner.html) in the *AWS General Reference* guide.
 
 You pay standard AWS App Runner pricing. For more information about pricing, see [AWS App Runner Pricing](https://aws.amazon.com/apprunner/pricing).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

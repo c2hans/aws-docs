@@ -28,3 +28,7 @@ See the following topics to learn how to deploy and update a static website from
 + [Creating a bucket policy to deploy a static website from S3 using the AWS SDKs](deploy-with-sdks.md)
 + [Updating a static website deployed to Amplify from an S3 bucket](update-website-deployed-from-s3.md)
 + [Updating an S3 deployment to use a bucket and prefix instead of a .zip file](update-s3-zip-to-bucket.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,3 +10,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/sustaina
  As a rule, the recommendations in the SAP Lens cost optimization pillar will result in a more sustainable architecture for SAP workloads, except as called out in the following sections. To avoid duplication of recommendations, we advise that you review that pillar in addition to the best practices contained in this one.
 +  SAP Lens [Cost Optimization]: [Cost optimization](cost-optimization.md)
 +  AWS Documentation: [AWS Well-Architected Framework Sustainability Pillar](https://docs.aws.amazon.com/wellarchitected/latest/sustainability-pillar/sustainability-pillar.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

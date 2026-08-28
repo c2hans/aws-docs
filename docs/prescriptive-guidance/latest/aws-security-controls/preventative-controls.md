@@ -100,3 +100,7 @@ In AWS Identity and Access Management (IAM), a [permissions boundary](https://do
 <a name="risk-reduction.2183d541-722c-5a1a-8e0c-e7ffe9e1cffd"></a>
 + With growth, the number of requests to create and manage new roles and policies increases. It becomes more challenging to understand the context of what is required to manually create the permissions for each application. Establishing preventative controls acts as a baseline and helps prevent users from performing unintended actions, even if they were accidentally given access.
 + Applying preventative controls to access policies provides an additional layer to help protect data and assets.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

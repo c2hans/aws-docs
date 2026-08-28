@@ -67,3 +67,7 @@ Use the pipe separator (`|`) to chain multiple expressions together. For more in
 **Parameters**
 For expressions that use comparison operators or the `IN` operator, use the dollar sign ($) and a parameter name to add a placeholder parameter as a value. For example, `$GENRES`. For this example, when you get recommendations, you supply the genre or genres to filter by.
 You define a parameter name when you add it to an expression. The parameter name does not have to match the field name. We recommend that you use a parameter name that is similar to the field name and easy to remember. You use the parameter name (case sensitive) when you apply the filter to recommendations requests. For an example that shows how to apply a filter with placeholder parameters when using the AWS SDKS, see [Applying a filter (AWS SDKs)](filter-real-time.md#applying-filter-sdk).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

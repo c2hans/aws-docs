@@ -170,3 +170,7 @@ job = AwsQuantumJob.create(
 In the above hybrid job creation, `train_dp.py` is the modified algorithm script for using data parallelism. Keep in mind that data parallelism only works correctly when you modify your algorithm script according to the above section. If the data parallelism option is enabled without a correctly modified algorithm script, the hybrid job may throw errors, or each GPU may repeatedly process the same data slice, which is inefficient.
 
 If used correctly, using multiple instances can lead to orders of magnitude reduction in both time and cost. See the [ example notebook for more details](https://github.com/amazon-braket/amazon-braket-examples/blob/main/examples/hybrid_jobs/5_Parallelize_training_for_QML/Parallelize_training_for_QML.ipynb).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Braket. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query braket` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

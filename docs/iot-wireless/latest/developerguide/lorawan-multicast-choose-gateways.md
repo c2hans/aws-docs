@@ -80,3 +80,7 @@ In this example, the downlink message will be sent to the gateway with ID `a01b2
 After you've chosen the gateways to use, you can add devices to the multicast group and proceed to schedule a multicast session. For more information, see [Schedule a downlink message for your multicast group](lorawan-multicast-schedule-downlink.md).
 
 If you want to update the firmware of the devices in the multicast group, you can perform Firmware Updates Over-The-Air (FUOTA) with AWS IoT Core for LoRaWAN. In this case, as the FUOTA uses this multicast group, the FUOTA message will be sent to the gateways in the list that you specified. For more information about FUOTA, see [Firmware update over-the-air (FUOTA) for AWS IoT Core for LoRaWAN](lorawan-mc-fuota-overview.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

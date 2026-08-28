@@ -150,3 +150,7 @@ This pattern describes how to migrate an on-premises Microsoft SQL Server databa
 + [Join an Amazon EC2 instance to your AWS Managed Microsoft AD Active Directory](https://docs.aws.amazon.com/directoryservice/latest/admin-guide/ms_ad_join_instance.html)
 + [AWS Database Migration Service ](https://www.youtube.com/watch?v=zb4GcjEdl8U)(video)
 + [Introduction to Amazon EC2 – Elastic Cloud Server & Hosting with AWS](https://www.youtube.com/watch?v=TsRBftzZsQo) (video)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

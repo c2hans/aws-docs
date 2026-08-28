@@ -72,3 +72,7 @@ This is an earlier version of the AWS Well-Architected Framework. For the latest
 +  [Delete unused Amazon EBS volumes by using AWS Config and AWS SSM](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/delete-unused-amazon-elastic-block-store-amazon-ebs-volumes-by-using-aws-config-and-aws-systems-manager.html)
 +  [Automate continuous compliance at scale in AWS](https://aws.amazon.com/blogs/mt/automate-cloud-foundational-services-for-compliance-in-aws/)
 +  [IT Automations with AWS Lambda](https://aws.amazon.com/lambda/it-automation/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,3 +39,7 @@ Setting up a Cloud Center of Excellence (CCoE) is a strategic initiative that ca
 1. **Report regularly** – Provide regular reports and updates to senior leadership to demonstrate the value and impact of the CCoE on the organization's cloud adoption journey.
 
 1. **Promote feedback and adaptation** – Encourage feedback from stakeholders. Be ready to adapt and evolve the CCoE's strategy and activities based on changing business requirements and technology trends.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

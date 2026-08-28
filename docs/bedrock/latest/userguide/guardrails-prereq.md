@@ -16,3 +16,7 @@ Before creating your guardrail, consider preparing the following in advance:
 + Look at the list of personally identifiable information in [Remove PII from conversations by using sensitive information filters](guardrails-sensitive-filters.md) and consider which ones your guardrail should block or mask.
 + Consider regex expressions that might match sensitive information and consider which ones your guardrail should block or mask with the use of [Sensitive information filters](guardrails-sensitive-filters.md).
 + Develop the messages to send to users when the guardrail blocks a prompt or model response.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

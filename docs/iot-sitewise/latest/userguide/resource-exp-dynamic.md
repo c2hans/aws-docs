@@ -23,3 +23,7 @@ The SiteWise Monitor feature is no longer available to new customers. Existing c
 1. Save the dashboard. In the **Preview** mode, choose different assets from the drop down menu to monitor the properties under each asset, without reconstructing the data panels.
 
 ![The IoT dashboard Project page with dynamic assets shown.](http://docs.aws.amazon.com/iot-sitewise/latest/userguide/images/ai-dashboard-dynamic-assets.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

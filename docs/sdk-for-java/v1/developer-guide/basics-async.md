@@ -156,3 +156,7 @@ For example, you could provide an `ExecutorService` implementation that uses a c
 <a name="s3-asynchronous-access"></a>
 
 The [TransferManager](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/services/s3/transfer/TransferManager.html) class in the SDK offers asynchronous support for working with Amazon S3. `TransferManager` manages asynchronous uploads and downloads, provides detailed progress reporting on transfers, and supports callbacks into different events.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,3 +33,7 @@ Security requirements derived from the NIST Cybersecurity Framework (CSF). This 
 <a name="security-requirement-managed-packs-pci-dss"></a>
 
 Security requirements derived from the Payment Card Industry Data Security Standard (PCI DSS). This pack evaluates your application against control areas relevant to handling cardholder data, such as access control, encryption of data in transit and at rest, and logging. Enable this pack to align your design and code reviews with PCI DSS.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

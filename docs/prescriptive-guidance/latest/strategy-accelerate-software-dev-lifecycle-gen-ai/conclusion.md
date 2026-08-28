@@ -32,3 +32,7 @@ Once you've identified key priority areas, following resources can help you impl
 + [Generative AI-powered technology operations](https://aws.amazon.com/blogs/machine-learning/generative-ai-powered-technology-operations/) (AWS blog post)
 + [Modernize your Java application with Amazon Q Developer](https://aws.amazon.com/blogs/devops/modernize-your-java-application-with-amazon-q-developer/) (AWS blog post)
 + [Use Amazon Bedrock to generate, evaluate, and understand code in your software development pipeline](https://aws.amazon.com/blogs/machine-learning/use-amazon-bedrock-to-generate-evaluate-and-understand-code-in-your-software-development-pipeline/) (AWS blog post)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

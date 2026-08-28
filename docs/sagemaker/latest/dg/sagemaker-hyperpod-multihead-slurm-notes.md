@@ -60,3 +60,7 @@ For clusters created before Jan 24, 2025, you must first update your cluster sof
 
 1. To troubleshoot your cluster creation issues, check the failure message from the cluster details page in your SageMaker AI console. You can also use CloudWatch logs to troubleshoot cluster creation issues. From the CloudWatch console, choose **Log groups**. Then, search `clusters` to see the list of log groups related to your cluster creation.
 ![Image showing Amazon SageMaker HyperPod cluster log groups in the CloudWatch console.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/hyperpod/hyperpod-lifecycle-multihead-logs.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

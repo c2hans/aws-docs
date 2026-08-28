@@ -108,3 +108,7 @@ Connect your serial UART terminal to your device. You should see output that ind
 After the device downloads the updated firmware, it restarts and then installs the firmware. You can see what's happening in the UART terminal.
 
 For a tutorial that shows you how to use the console to create an OTA update, see [Over-the-air updates demo application](ota-demo.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

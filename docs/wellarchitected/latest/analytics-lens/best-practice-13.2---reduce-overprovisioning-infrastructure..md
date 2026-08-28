@@ -40,3 +40,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/analytics-lens/be
 + [ Easy analytics and cost optimization with Amazon Redshift Serverless ](https://aws.amazon.com/blogs/big-data/easy-analytics-and-cost-optimization-with-amazon-redshift-serverless/)
 + [ Amazon EMR Serverless cost estimator ](https://aws.amazon.com/blogs/big-data/amazon-emr-serverless-cost-estimator/)
 + [ Run queries 3x faster with up to 70% cost savings on the latest Amazon Athena engine ](https://aws.amazon.com/blogs/big-data/run-queries-3x-faster-with-up-to-70-cost-savings-on-the-latest-amazon-athena-engine/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

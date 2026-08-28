@@ -65,3 +65,7 @@ The following Suricata features have caveats for use with Network Firewall:
   drop http $HOME_NET any -> $EXTERNAL_NET any (msg:"example rule"; flow:to_server,established; http.host; content:"example.com"; sid:1; rev:1;)
   drop http2 $HOME_NET any -> $EXTERNAL_NET any (msg:"example rule"; flow:to_server,established; http.request_header; content:"authority|3a 20|example.com"; sid:2; rev:1;)
   ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

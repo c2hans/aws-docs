@@ -28,3 +28,7 @@ If you have any questions or concerns, AWS Support is available on the community
 <a name="AuroraMySQL.Updates.1176.Patches"></a>
 +  For an [ALTER TABLE](https://dev.mysql.com/doc/refman/5.6/en/alter-table.html) statement that renamed or changed the default value of a [BINARY](https://dev.mysql.com/doc/refman/5.6/en/binary-varbinary.html) column, the alteration was done using a table copy and not in place. (Bug \#67141, Bug \#14735373, Bug \#69580, Bug \#17024290)
 +  An outer join between a regular table and a derived table that is implicitly groups could cause a server exit. (Bug \#16177639)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

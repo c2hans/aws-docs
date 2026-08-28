@@ -75,3 +75,7 @@ No, there are no additional charges for enabling or using the Slurm REST API fea
   1. Check SchedMD's [documentation](https://slurm.schedmd.com/rest_clients.html) on the REST API specification.
 
   1. Check the Slurm controller logs for more detailed information on errors (see [Scheduler logs in AWS PCS](monitoring_scheduler-logs.md) for more details).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

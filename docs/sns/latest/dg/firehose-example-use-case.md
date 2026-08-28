@@ -29,3 +29,7 @@ To create the AWS resources for this use case, you can use the AWS Management Co
 + [Subscribing the delivery stream to the topic](firehose-example-subscribe-delivery-stream-to-topic.md)
 + [Testing and querying a configuration for effective data management](firehose-example-test-and-query.md)
 + [Automating message archiving with an CloudFormation template](firehose-example-cfn.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

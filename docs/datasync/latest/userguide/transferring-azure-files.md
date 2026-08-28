@@ -91,3 +91,7 @@ You can't specify an IP version 6 (IPv6) address.
    *Tags* are key-value pairs that help you manage, filter, and search for your locations. We recommend creating at least a name tag for your location.
 
 1. Choose **Create location**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

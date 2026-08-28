@@ -44,3 +44,7 @@ The effectiveness of cloud strategy at the holding company level depends on the 
 + Balance independence with efficiency. Consider shared services or purchasing agreements that benefit portfolio companies without constraining their operations.
 + Focus on business objectives first. Develop technology strategies that support your operating model rather than pursuing a multicloud strategy for its own sake.
 + Evaluate cloud strategies through the lens of portfolio management. Consider how cloud choices affect potential divestitures or future acquisitions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

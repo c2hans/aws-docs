@@ -207,11 +207,11 @@ If you encounter errors during your workflow, consult the following example erro
 
   **Resolution:** Install multiple versions of Python on SUSE12 SP5 by doing the following steps:
 
-  1. Run an update-alternatives command to create a symlink for Python 3 in '/usr/local/bin/' instead of directly using '/usr/bin/python3'. This commands will set Python 3.4 as the default version. The command is: `# sudo update-alternatives —install /usr/local/bin/python3 python3 /usr/bin/python3.4 5`
+  1. Run an update-alternatives command to create a symlink for Python 3 in '/usr/local/bin/' instead of directly using '/usr/bin/python3'. This commands will set Python 3.4 as the default version. The command is: `# sudo update-alternatives --install /usr/local/bin/python3 python3 /usr/bin/python3.4 5`
 
-  1. Add Python 3.6 to alternatives configuration by running the following command: `# sudo update-alternatives —install /usr/local/bin/python3 python3 /usr/bin/python3.6 2`
+  1. Add Python 3.6 to alternatives configuration by running the following command: `# sudo update-alternatives --install /usr/local/bin/python3 python3 /usr/bin/python3.6 2`
 
-  1. Change the alternative configuration to Python 3.6 by running the following command: `# sudo update-alternatives —config python3`
+  1. Change the alternative configuration to Python 3.6 by running the following command: `# sudo update-alternatives --config python3`
 
      The following output should be displayed:
 
@@ -235,7 +235,7 @@ If you encounter errors during your workflow, consult the following example erro
 
   **Resolution:** Test if endpoints are reachable from your SAP HANA database. If they cannot be reached, you can create Amazon VPC endpoints for AWS Secrets Manager and SSM for SAP.
 
-  1. Test access to Secrets Manager from Amazon EC2 host for HANA DB by running the following the command: `aws secretsmanager get-secret-value —secret-id hanaeccsbx_hbx_database_awsbkp` . If the command fails to return a value, the firewall is blocking access to Secrets Manager service endpoint. The log will stop at the step “Retrieving secrets from Secrets Manager”.
+  1. Test access to Secrets Manager from Amazon EC2 host for HANA DB by running the following the command: `aws secretsmanager get-secret-value --secret-id hanaeccsbx_hbx_database_awsbkp` . If the command fails to return a value, the firewall is blocking access to Secrets Manager service endpoint. The log will stop at the step “Retrieving secrets from Secrets Manager”.
 
   1. Test connectivity to SSM for SAP endpoint by running the command `aws ssm-sap list-registration` . If the command fails to return a value, the firewall is blocking access to the SSM for SAP endpoint.
 
@@ -327,3 +327,7 @@ Certain functionalities are not supported at this time:
 + Continuous backups (which use transaction logs) cannot be copied to other Regions or accounts. Snapshot backups can be copied to supported Regions and accounts from full backups.
 + Backup Audit Manager and reporting are not currently supported.
 + [Supported services by AWS Region](backup-feature-availability.md#supported-services-by-region) contains the currently supported Regions for SAP HANA database backups on Amazon EC2 instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

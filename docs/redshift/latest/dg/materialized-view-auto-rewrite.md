@@ -78,3 +78,7 @@ Following are limitations for using automatic query rewriting of materialized vi
 + If a query isn't automatically rewritten, check whether you have the SELECT permission on the specified materialized view and the [mv\_enable\_aqmv\_for\_session](r_mv_enable_aqmv_for_session.md) option is set to TRUE.
 
   You can also check if your materialized views are eligible for automatic rewriting of queries by inspecting STV\_MV\_INFO. For more information, see [STV\_MV\_INFO](r_STV_MV_INFO.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

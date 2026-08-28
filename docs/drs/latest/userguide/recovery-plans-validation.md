@@ -21,3 +21,7 @@ A server fails validation for any of the following reasons:
 Validation is all or nothing, and impact levels do not apply to it. If any server in the plan fails the validation that runs when the execution starts, the whole execution fails. AWS Elastic Disaster Recovery then recovers no servers at all, not even the servers that you marked **Optional**. If any server fails the revalidation at the start of a server step, that whole step fails, again regardless of impact level. AWS Elastic Disaster Recovery recovers none of the servers in that step.
 
 Before you run a plan in recovery mode, confirm that every server in it shows a healthy replication state and has recovery points available. Running the plan as a drill first is the most reliable way to find these problems early.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -129,3 +129,7 @@ To resolve this error, update the Lambda function’s environment variable `spil
 ```
 
 Alternatively, you can remove the Athena data source connector that you created earlier, and recreate it by using only `{bucket_name}` for `spill_bucket`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

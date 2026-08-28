@@ -12,3 +12,7 @@ This section describes how to migrate your application using one of the followin
 **Topics**
 + [Migration from Amazon Linux 2 to Amazon Linux 2023](using-features.migration-al.generic.from-al2.md)
 + [Migration from Amazon Linux AMI (AL1) to AL2 or AL2023](using-features.migration-al.generic.from-al1.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

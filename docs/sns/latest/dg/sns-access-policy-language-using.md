@@ -19,3 +19,7 @@ The following figure and table describe the general process of how access contro
 | 4 | The AWS service determines which policies are applicable to the request.<br />For example, Amazon SNS looks at all the available Amazon SNS policies and determines which ones are applicable (based on what the resource is, who the requester is, etc.). |
 | 5 | The AWS service evaluates the policies.<br />For example, Amazon SNS evaluates the policies and determines if the requester is allowed to use your topic or not. For information about the decision logic, see [Evaluation logic](sns-access-policy-language-evaluation-logic.md). |
 | 6 | The AWS service either denies the request or continues to process it. <br />For example, based on the policy evaluation result, the service either returns an "Access denied" error to the requester or continues to process the request. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -30,3 +30,7 @@ After careful consideration, we decided to end support for Amazon FinSpace, effe
 You can only add up to 50 tags to your user.
 
 1. Choose **Create kdb scaling group**. The scaling group creation process starts and the kdb environment details page opens where you can see the status of creation under the **Kdb scaling groups** tab.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

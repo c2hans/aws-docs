@@ -33,3 +33,7 @@ The gateway stamps the `aws:SourceArn` condition key with its gateway ARN on eve
 
 **Note**
 The gateway stamps `aws:SourceArn` in both outbound credential modes, so this policy works regardless of the mode you use. The `Principal` you specify differs by mode, because it must match the identity Memory authorizes: with `CALLER_IAM_CREDENTIALS`, that is the caller’s IAM identity; with `GATEWAY_IAM_ROLE`, it is the gateway execution role. For more information, see [How the outbound credential mode affects Memory access control](memory-gateway-connector.md#memory-gateway-connector-credential-modes) and [Resource-based policies for Amazon Bedrock AgentCore](resource-based-policies.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

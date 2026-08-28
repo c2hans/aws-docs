@@ -15,3 +15,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  Enhance the resilience of Amazon WorkSpaces and WorkSpaces Applications by configuring redundant networking components such as VPN connections or AWS Direct Connect links. This setup provides alternative paths for network traffic, mitigating the impact of network incidents and supporting continuous access to WorkSpaces environments. Verify that you have multiple AD controllers and connectors across multiple Availability Zones.
 
  Additionally, regularly monitor and test the redundant networking setup to check its effectiveness in maintaining continuous connectivity. Conduct failover tests and simulations to validate the redundancy configuration and identify any potential areas for improvement. By implementing redundant networking architecture, you can strengthen the resilience of your EUC environment and reduce the risk of downtime caused by network disruptions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

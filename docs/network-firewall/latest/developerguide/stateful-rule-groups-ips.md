@@ -36,3 +36,7 @@ The following are examples of the changes in that upgrade:
 + [Limitations and caveats for stateful rules in AWS Network Firewall](suricata-limitations-caveats.md)
 + [Best practices for writing Suricata compatible rules for AWS Network Firewall](suricata-best-practices.md)
 + [Examples of stateful rules for Network Firewall](suricata-examples.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

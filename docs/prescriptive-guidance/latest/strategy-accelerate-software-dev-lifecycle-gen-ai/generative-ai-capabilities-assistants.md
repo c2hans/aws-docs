@@ -26,3 +26,7 @@ The following table shows use cases that you can enhance with AI assistants and 
 | Provide recommendations for improving efficiency, reducing complexity, and enhancing security | Software developer |
 | Suggest optimizations for cloud resource usage, such as scaling recommendations or cost-saving strategies | Software developer, DevOps engineer, site reliability engineer, and solutions architect |
 | Generate new content, such as documentation based on code, user guides, or product feature releases | Software development team |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

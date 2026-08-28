@@ -26,3 +26,7 @@ With the exception of WorkSpaces Personal, VDIs only show a **Login initiated** 
 You can use the search bar above the table to find specific information in the table. You can also filter the table results by date and time.
 
 You can export the table to a csv file by selecting the **Export details** button.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

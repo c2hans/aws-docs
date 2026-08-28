@@ -80,3 +80,7 @@ The following are some of the common use cases that will help you make the best 
 + **I get the error, 'To use the Amazon Q Business Add-in your administrator needs to enable "Allow end users to send queries directly to the LLM" in the Amazon Q Business console'**.
 
   Contact your Admin or IT department with the error.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -57,3 +57,7 @@ The following table describes the releases for Application Load Balancers.
 | [Request tracing](#doc-history) | This release adds support for request tracing. | November 22, 2016 |
 | [Percentiles support for the TargetResponseTime metric](#doc-history) | This release adds support for the new percentile statistics supported by Amazon CloudWatch. | November 17, 2016 |
 | [New load balancer type](#doc-history) | This release of Elastic Load Balancing introduces Application Load Balancers. | August 11, 2016 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

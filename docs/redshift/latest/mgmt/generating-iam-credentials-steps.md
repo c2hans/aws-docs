@@ -361,3 +361,7 @@ Provide IdP details:
       + **User AutoCreate**
       + **DbGroups**
 For more information, see [JDBC and ODBC options for creating database user credentials](options-for-providing-iam-credentials.md#jdbc-and-odbc-options-for-database-credentials).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -72,3 +72,7 @@ If you want to manually specify how to partition your model across devices, use 
 + [Manual splitting with PyTorch](model-parallel-customize-training-script-pt.md#model-parallel-customize-training-script-pt-16-hvd)
 
 To use this option after making modifications, in Step 2, you'll need to set `auto_partition` to `False`, and define a `default_partition` in the ModelTrainer class of the SageMaker Python SDK. Any operation that is not explicitly placed on a partition through the `smp.partition` context manager is executed on the `default_partition`. In this case, the automated splitting logic is bypassed, and each operation is placed based on your specification. Based on the resulting graph structure, the model parallelism library creates a pipelined execution schedule automatically.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

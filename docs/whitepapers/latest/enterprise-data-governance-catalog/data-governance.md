@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/enterprise-data-gover
  A well-defined Data Catalog makes it easier to identify customer data distributed across various data assets, as a Data Catalog tags data and builds relationships between data attributes, enabling the organization to adhere to existing and future data regulatory compliances.
 
  An organization’s multiple business units collect customer communication channel preferences by email, phone call, or text message. The Data Catalog collects metadata associated with all the data stores which handle customer communication preferences. Using the Data Catalog, the organization’s business units can combine all the different rules for customer communication and interact effectively with customers, elevating satisfaction and trust.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

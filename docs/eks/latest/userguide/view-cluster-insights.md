@@ -332,3 +332,7 @@ For rollback readiness insights, the `describe-insight` command returns similar 
 If you find a rollback readiness insight with `"status": "ERROR"`, you must address the issue before performing the rollback, or use the `--force` flag to bypass insight checks. For more information about the rollback process, see [Roll back a cluster to a previous Kubernetes version](rollback-cluster.md).
 
 If an insight shows `UNKNOWN` status, EKS was unable to evaluate the insight. The rollback is blocked until the insight can be evaluated successfully, or you use the `--force` flag to bypass insight checks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

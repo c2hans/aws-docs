@@ -179,3 +179,7 @@ You can set standard min/max options to define hard limits of the Y-axis. For mo
 In some cases, you may want to display multiple y-axes. For example, if you have a dataset showing both temperature and humidity over time, you may want to show two y-axes with different units for these two series.
 
 You can do this by [adding field overrides](v12-panels-configure-overrides.md). Follow the steps as many times as required to add as many y-axes as you need.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

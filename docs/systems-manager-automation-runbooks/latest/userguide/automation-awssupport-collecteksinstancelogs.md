@@ -113,3 +113,7 @@ If `LogDestination` uses AWS KMS encryption, then an additional statement must b
 +  `aws:runCommand` - Gathers operating system and Amazon EKS related log files, compressing them into an archive in the `/var/log` directory.
 +  `aws:branch` - Confirms whether a value was specified for the `LogDestination` parameter.
 +  `aws:runCommand` - Uploads the log archive to the Amazon S3 bucket you specify in the `LogDestination` parameter.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager Automation Runbook Reference. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager-automation-runbooks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

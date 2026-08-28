@@ -119,3 +119,7 @@ Babelfish supports DDL exports for the following objects in the specified versio
 <a name="babelfish-ddl-exports-limitations"></a>
 + **Use escape hatches before recreating the objects with the exported DDLs** – Babelfish doesn't support all the commands in the exported DDL script. Use escape hatches to avoid errors caused when recreating the objects from the DDL commands in Babelfish. For more information on escape hatches, see [Managing Babelfish error handling with escape hatches](babelfish-strict.md)
 + **Objects containing CHECK constraints with explicit COLLATE clauses** – The scripts with these objects generated from a SQL Server database have different but equivalent collations as in the Babelfish database. For example, a few collations, such as sql\_latin1\_general\_cp1\_cs\_as, sql\_latin1\_general\_cp1251\_cs\_as, and latin1\_general\_cs\_as are generated as latin1\_general\_cs\_as, which is the closest Windows collation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

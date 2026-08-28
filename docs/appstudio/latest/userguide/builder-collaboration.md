@@ -38,3 +38,7 @@ In this example, `User A` is currently editing an app, and has shared it with `U
 When `User B` tries to edit the app, a dialog box will appear informing them that `User A` is currently editing the app, and that continuing will kick `User A` out of the application studio, and all changes will be saved. `User B` can choose to cancel and let `User A` continue, or continue and enter the application studio to edit the app. In this example, they choose to edit the app.
 
 When `User B` chooses to edit the app, `User A` receives a notification that `User B` has started editing the app, and their session has ended. Note that if `User A` had the app open in an inactive browser tab, they may not receive the notification. In this case, if they try to come back to the app and try to make an edit, they will receive an error message and be guided to refresh the page, which will return them to the list of applications.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

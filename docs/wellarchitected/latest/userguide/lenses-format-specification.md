@@ -229,3 +229,7 @@ If the question has three choices (`choice_1`, `choice_2`, and `choice_3`), thes
 + If either `choice_1` or `choice_2` is selected **and** `choice_3` is selected, there is medium risk.
 + If `choice_1` is **not** selected but `choice_3` is selected, there is also medium risk.
 + If none of these prior conditions were true, there is high risk.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

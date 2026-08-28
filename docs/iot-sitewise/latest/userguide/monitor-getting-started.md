@@ -32,3 +32,7 @@ You can follow a tutorial that walks through the steps required to set up a port
 + [Turn on alarms for your portals in AWS IoT SiteWise](monitor-enable-alarms.md)
 + [Enabling your AWS IoT SiteWise portal at the edge](monitor-enable-edge.md)
 + [Administer your SiteWise Monitor portals](administer-portals.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

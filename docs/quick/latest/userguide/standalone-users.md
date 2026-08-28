@@ -146,3 +146,7 @@ You can resend an invitation if the original email was not received, or cancel a
 
 **Important**
 Canceling an invitation does not affect users who have already accepted and are active in your account. To remove an active user, use the options available on the **Active** tab.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

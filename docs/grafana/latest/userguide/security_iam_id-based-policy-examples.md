@@ -94,3 +94,7 @@ To see the permissions granted to **AWSGrafanaWorkspacePermissionManagementV2**,
 To grant permissions for read actions, such as listing and viewing workspaces and opening the Grafana workspace console, assign the **AWSGrafanaConsoleReadOnlyAccess**, **AWSSSOReadOnly** and **AWSSSODirectoryReadOnly** policies to a user or IAM role.
 
 To see the permissions granted to **AWSGrafanaConsoleReadOnlyAccess**, see [AWS managed policy: AWSGrafanaConsoleReadOnlyAccess](security-iam-awsmanpol.md#security-iam-awsmanpol-AWSGrafanaConsoleReadOnlyAccess).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

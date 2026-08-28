@@ -19,3 +19,7 @@ With SSO, your users get one-click access to their FinSpace applications using t
 + [Tutorial: Creating an Amazon FinSpace environment with Okta SSO](tutorial-idp-okta-sso.md)
 + [Tutorial: Creating an Amazon FinSpace environment with IAM Identity Center](tutorial-idp-aws-sso.md)
 + [Tutorial: Creating an Amazon FinSpace environment with AD FS](tutorial-idp-ADFS-sso.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

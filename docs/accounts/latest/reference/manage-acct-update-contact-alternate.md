@@ -230,3 +230,7 @@ If you try to delete the same contact more than once, the first succeeds silentl
 You can use the context key `account:AlternateContactTypes` to specify which of the three contact types is allowed (or denied) by the IAM policy. For example, the following example IAM permission policy uses this condition key to allow the attached principals to retrieve, but not modify, only the `BILLING` alternate contact for a specific account in an organization.
 
 Because `account:AlternateContactTypes` is a multi-valued string type, you must use the [`ForAnyValue` or `ForAllValues` multi-value string operators](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_multi-value-conditions.html#reference_policies_multi-key-or-value-conditions).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Account Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query accounts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

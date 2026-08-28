@@ -109,3 +109,7 @@ In this example, we enter `bitnami_wordpress` because that is the name of the da
 At this point, your data is now in your new MySQL 5.7 database. Configure your application in a pre-production environment, and test the connection between your application and your new MySQL 5.7 database. If your application behaves as expected, then proceed to make the change to your application in the production environment.
 
 When you're finished with the migration, you should disable the public mode for your databases. You can delete your MySQL 5.6 database when you are certain you no longer need it. However, you should create a snapshot of your MySQL 5.6 database before you delete it. While you're at it, you should also create a snapshot of your new MySQL 5.7 database. For more information, see [Create a database snapshot](amazon-lightsail-creating-a-database-snapshot.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

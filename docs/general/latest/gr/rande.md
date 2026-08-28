@@ -157,3 +157,7 @@ For a list of services that support dual stack endpoints, see [AWS services that
 You can find endpoint information from the following sources:
 + To enable Regions that are disabled by default, see [Enable or disable AWS Regions in your account](https://docs.aws.amazon.com/accounts/latest/reference/manage-acct-regions.html) in the *AWS Account Management Reference Guide*.
 + For information about the AWS services and endpoints available in the China Regions, see [China (Beijing) Region Endpoints](https://docs.amazonaws.cn/en_us/general/latest/gr/endpoints-Beijing.html) and [China (Ningxia) Region Endpoints](https://docs.amazonaws.cn/en_us/general/latest/gr/endpoints-Ningxia.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

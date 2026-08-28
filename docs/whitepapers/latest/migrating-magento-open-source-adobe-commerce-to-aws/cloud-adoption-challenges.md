@@ -40,3 +40,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-ope
 <a name="vendor-management"></a>
 
  Organizations often lack resources to manage vendors and see cloud service providers an addition to that list. Also, getting the right documentation, contract management and compliance reports are other challenges that add to the complexity. AWS, however, simplifies these challenges with its self-service approach and availability of compliance reports online.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

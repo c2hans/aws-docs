@@ -32,3 +32,7 @@ In [transforms](transforms.md) and [metrics](metrics.md), you can use the follow
 | `sqrt(x)` | Returns the square root of `x`. |
 | `tan(x)` | Returns the tangent of `x`. |
 | `tanh(x)` | Returns the hyperbolic tangent of `x`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

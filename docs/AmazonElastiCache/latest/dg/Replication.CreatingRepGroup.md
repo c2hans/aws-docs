@@ -13,3 +13,7 @@ You cannot create a Valkey or Redis OSS (cluster mode enabled) cluster using an 
 
 **Option 2: [Creating a Valkey or Redis OSS replication group from scratch](Replication.CreatingReplGroup.NoExistingCluster.md)**
 Use this option if you don't already have an available Valkey or Redis OSS (cluster mode disabled) cluster to use as the cluster's primary node, or if you want to create a Valkey or Redis OSS (cluster mode enabled) cluster. See [Creating a Valkey or Redis OSS replication group from scratch](Replication.CreatingReplGroup.NoExistingCluster.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

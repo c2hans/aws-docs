@@ -80,3 +80,7 @@ Finally, remove customers who are completely unengaged from your customer lists.
 <a name="best-practices-whatsapp-appropriate-times"></a>
 
 Send messages during normal daytime business hours. If you send messages at dinner time or in the middle of the night, there's a good chance that your customers will unsubscribe from your lists to avoid being disturbed. You might want to avoid sending WhatsApp messages when your customers can't respond to them immediately.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging Social. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query social-messaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

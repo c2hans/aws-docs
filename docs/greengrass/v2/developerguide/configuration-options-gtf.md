@@ -43,3 +43,7 @@ Greengrass Testing Framework (GTF) enables you to configure certain parameters d
 + `test-results-xml` – Flag to determine if a resulting JUnit XML report is generated written to disk. Defaults to true.
 + `test-temp-path` – Directory to generate local test artifacts. Defaults to a random temp directory prefixed with gg-testing.
 + `timeout-multiplier` – Multiplier provided to all test timeouts. Default is 1.0.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

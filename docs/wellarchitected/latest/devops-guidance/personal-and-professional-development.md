@@ -11,3 +11,7 @@ Organizations that provide personal and professional growth opportunities are ab
 + [Indicators for personal and professional development](indicators-for-personal-and-professional-development.md)
 + [Anti-patterns for personal and professional development](anti-patterns-for-personal-and-professional-development.md)
 + [Metrics for personal and professional development](metrics-for-personal-and-professional-development.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

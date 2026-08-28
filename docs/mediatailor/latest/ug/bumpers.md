@@ -35,3 +35,7 @@ The following is an example of bumper ad behavior.
 In this example, start and end bumpers are enabled. The ad decision server has 50 seconds of personalized ads to fill a 70-second ad break. The 10-second start bumper plays at the start of the ad break, 50 seconds of ads plays, then the 10-second end bumper.
 
 ![This illustration shows an ad break filled with a start and end bumper and ads.](http://docs.aws.amazon.com/mediatailor/latest/ug/images/bumpers.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

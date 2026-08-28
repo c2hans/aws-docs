@@ -23,3 +23,7 @@ The types of users accessing your SAP system will determine the security control
  Network and/or location often contributes to the security risk profile and may determine whether the user is considered trusted or untrusted. Typically, this is coupled with the controls to prevent unauthorized access (refer to [Best Practice 6.1 - Ensure that security and auditing are built into the SAP network design](best-practice-6-1.md)).
 
 This can influence your design. For example, an untrusted internet user or device may require additional factors of authentication to access your SAP workload, when compared with a trusted user from your corporate network.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

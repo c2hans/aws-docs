@@ -274,3 +274,7 @@ If you have not yet onboarded to AWS Config, it might be faster to onboard using
 <a name="turning-on-resource-tracking-cfn"></a>
 
 For a CloudFormation template that turns on resource tracking, see [ Using AWS Backup Audit Manager with CloudFormation](https://docs.aws.amazon.com/aws-backup/latest/devguide/bam-cfn-integration.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Backup. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-backup` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

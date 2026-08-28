@@ -14,3 +14,7 @@ For example, suppose you have a table that has data sorted in column order. Many
 To view whether a query is using a multidimensional data layout key, see the `step_attribute` column of the [SYS\_QUERY\_DETAIL](SYS_QUERY_DETAIL.md) view. When the value is `multi-dimensional` then multidimensional data layout was used for the query.
 
 To prevent Amazon Redshift from using a multidimensional data layout sort key, choose a different table sort key option other than `SORTKEY AUTO`. For more information on SORTKEY options, see [CREATE TABLE](r_CREATE_TABLE_NEW.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

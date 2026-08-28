@@ -20,3 +20,7 @@ To enroll and customize accounts in the AWS Control Tower console.
 1. Complete the **Account factory customization** section using the same steps as 7-12 of the **Create account** procedure. For more information, see [Provision Account Factory accounts with AWS Service Catalog](https://docs.aws.amazon.com/controltower/latest/userguide/provision-as-end-user.html).
 
 You can view the status of your account progress on the **Organization** page. When your account enrollment is complete, the resources specified by the blueprint are already deployed within it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -146,3 +146,7 @@ Complete the following procedure to select the Secrets Manager secret you create
 + For **Service account**, choose the AWS Secrets Manager secret that contains your service account credentials. Complete the following steps to create the secret if you haven't already done so. The secret must be encrypted using a AWS Key Management Service customer managed key.
 
 Now that you've completed all of the fields within the **Active Directory Config** section of the **Create WorkSpaces Pool directory** page, you can continue to finish creating your WorkSpaces Pool directory. Go to [Step 4: Create WorkSpace Pool directory](create-directory-pools.md#saml-directory-create-wsp-pools-directory) and start on step 9 of the procedure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,3 +45,7 @@ You can create a database migration assessment report after you add the source d
    + A summary of conversion action items with an estimate of the effort required to convert an occurrence of the action item.
    + An executive summary with a number of action items categorized by the estimated time to convert.
 ![Database migration assessment report](http://docs.aws.amazon.com/SchemaConversionTool/latest/userguide/images/assessment_report.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Schema Conversion Tool User Guide. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query SchemaConversionTool` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ The Amazon Chime SDK allows you to use your own storage for message attachments,
 1. Create an IAM role for use by your Identity provider to vend credentials to users for attachments.
 
 The [sample application](https://github.com/aws-samples/amazon-chime-sdk/tree/main/apps/chat) provides an example of how to do this with Amazon S3, Amazon Cognito, and the Amazon Chime SDK.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

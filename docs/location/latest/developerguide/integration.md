@@ -32,3 +32,7 @@ Amazon Location Service is integrated with various AWS services for efficient au
 
 **Cost and billing**
 + **AWS Billing and Cost Management** – Service provides helps to you pay your bills and optimize your costs. Amazon Web Services bills your account for usage, which ensures that you pay only for what you use. For more information, see [Pricing model](pricing.md) or [Manage billing and costs with AWS Billing and Cost Management](manage-billing.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

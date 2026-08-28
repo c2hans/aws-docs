@@ -21,3 +21,7 @@ You can use [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/la
 <a name="q3"></a>
 
 We recommend that you maintain old and new jobs in parallel for a period of time until the performance, accuracy, and completeness of data are the same in both environments. You can also replicate reporting systems to connect and compare reports from both environments. You can decommission your SSIS jobs when the reports are identical.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

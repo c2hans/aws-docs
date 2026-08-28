@@ -78,3 +78,7 @@ Ensure human reviewers receive appropriate AI training and maintain current doma
 Create feedback loops to capture human reviewer insights for continuous model improvement.
 
 Implement monitoring and reporting on human override rates and patterns to identify potential model performance issues.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

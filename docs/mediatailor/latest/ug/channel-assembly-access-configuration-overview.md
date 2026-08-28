@@ -16,3 +16,7 @@ Here's an overview of how MediaTailor uses Secrets Manager access token authenti
    You can revoke access to the grant, or remove MediaTailor's access to the customer managed key at any time. For more information, see [RevokeGrant](https://docs.aws.amazon.com/kms/latest/APIReference/API_RevokeGrant.html) in the *AWS Key Management Service API Reference*.
 
 1. When a VOD source is created or updated, or used in a program, MediaTailor makes HTTP requests to the source locations to retrieve the source content manifests associated with the VOD sources in the source location. If the VOD source is associated with a source location that has an access token configured, the requests include the access token as an HTTP header value.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

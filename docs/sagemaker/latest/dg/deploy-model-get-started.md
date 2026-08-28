@@ -42,3 +42,7 @@ The following diagram shows the preceding workflow.
 You can perform these actions using the AWS console, the AWS SDKs, the SageMaker Python SDK, CloudFormation or the AWS CLI.
 
 For batch inference with batch transform, point to your model artifacts and input data and create a batch inference job. Instead of hosting an endpoint for inference, SageMaker AI outputs your inferences to an Amazon S3 location of your choice.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

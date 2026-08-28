@@ -127,3 +127,7 @@ The same pattern letters shown at first, above, in Date or Time Component order 
 | y | Year | Year | 1996; 96  |
 | z | Time zone | General | Pacific Standard Time; PST; GMT-08:00  |
 | Z | Time zone | RFC | -0800 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

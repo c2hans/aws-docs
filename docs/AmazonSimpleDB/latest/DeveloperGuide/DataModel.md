@@ -33,3 +33,7 @@ Unlike a spreadsheet, however, multiple values can be associated with a cell. Fo
 | Item\_07 | Motorcycle Parts, Clothing | Clothing | Leather Pants | Black | Small, Medium, Large |  |  |
 
 Regardless of how you store your data, Amazon SimpleDB automatically indexes your data for quick and accurate retrieval.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SimpleDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonSimpleDB` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

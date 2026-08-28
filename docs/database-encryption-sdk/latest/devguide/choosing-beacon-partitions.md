@@ -35,3 +35,7 @@ Using a single partition may be appropriate when:
 In these cases, configuring the attribute with a single partition is simpler and avoids additional query fan-out.
 
 In general, if an attribute is suitable for beaconization but exhibits skew, hot values, or anonymity constraints that cannot be met with a single partition, configuring multiple partitions provides a safer and more flexible solution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,3 +35,7 @@ This topic lists important changes to the AWS SDK for C\+\+ Developer Guide. For
 | [Managing Amazon S3 Access Permissions](examples-s3-access-permissions.md) | Various updates. | April 3, 2019 |
 | [Updates for building and for configuration variables](#document-history) | Updated the instructions for building the SDK. Updated the available AWS Client Configuration variables. | March 1, 2019 |
 | [*vcpkg* C\+\+ package manager](#document-history) | Updated the instructions for setting up the *vcpkg* C\+\+ package manager. | January 19, 2019 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for C++. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-cpp` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

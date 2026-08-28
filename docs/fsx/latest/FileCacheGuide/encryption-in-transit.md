@@ -12,3 +12,7 @@ Amazon File Cache encrypts traffic between the cache and your S3 data repositori
 You can explicitly prohibit some or all users in your organization from creating Amazon File Cache resources linked to NFSv3 file systems using the `fsx:NfsDataRepositoryEncryptionInTransitEnabled` and `fsx:NfsDataRepositoryAuthenticationEnabled` context keys to control access to the `CreateFileCache` API action. The following is an example of an AWS Organizations Service control policy (SCP) that prohibits creation of a Amazon File Cache resource linked to an NFSv3 data repository:
 
 For more information about IAM condition keys, see [Policy condition keys for File Cache](security_iam_service-with-iam.md#security_iam_service-with-iam-id-based-policies-conditionkeys).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

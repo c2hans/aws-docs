@@ -18,3 +18,7 @@ Following, you can find the other differences between Snowball Edge security gro
 + Only the parameters listed for AWS CLI actions and API calls are supported. These typically are a subset of those supported in EC2 VPC instances.
 
 For more information about supported AWS CLI actions, see [List of supported EC2-compatible AWS CLI commands on a Snowball Edge](using-ec2-endpoint.md#list-cli-commands-ec2-edge). For more information on supported API operations, see [Supported Amazon EC2-compatible API operations on a Snowball Edge](using-ec2-endpoint.md#using-ec2-adapter-supported-api).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

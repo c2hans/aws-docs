@@ -26,3 +26,7 @@ These are the detailed steps for downloading AWS Elemental software files from t
 1. If you are prompted to install the NetSession Interface download manager, click **download the installer** and run the executable.
 
 1. Select a location and save the files. Note the file location for later.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

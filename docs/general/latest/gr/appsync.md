@@ -171,3 +171,7 @@ The following are the service endpoints and service quotas for this service.
 | Graphql APIs - Rate of subscription invalidation requests | Each supported Region: 100 per second | No | The maximum number of invalidation requests per second per account per region |
 
 **Rate of request tokens** is the maximum number of request tokens per second in this account in the current Region. AWS AppSync allocates tokens to mutation and query requests based on the amount of resources (processing time and memory) that they consume. For more details on tokens, see [Using token counts to optimize your requests](https://docs.aws.amazon.com/appsync/latest/devguide/monitoring.html#aws-appsync-using-token-counts-to-optimize-requests) in the *AWS AppSync developer guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

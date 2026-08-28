@@ -119,3 +119,7 @@ This guidance can answer questions based on the content of web pages.
 1. Open the web UI, and ask ` "What is Lex?" `. QnABot on AWS provides an answer with a link to the Amazon Lex FAQ page.
 
 For more information on web page indexing, see the [README.md](https://github.com/aws-solutions/qnabot-on-aws/tree/main/source/docs/kendra_crawler_guide) file in the GitHub repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

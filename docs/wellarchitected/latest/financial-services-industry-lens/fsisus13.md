@@ -27,3 +27,7 @@ How do you avoid load spikes to reduce the provisioned capacity required for you
 +  Balance generative AI model response time requirements with energy efficiency.
 +  Implement cost-aware prompting strategies that may take slightly longer but use fewer resources.
 +  Use distributed generative AI inference when time permits to optimize resource utilization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ By default, map visuals are always zoomed based on the underlying data. When you
 
 **To zoom back to all the data**
 + On the map visual, choose the zoom to data icon. This icon appears when you pan or zoom in on a map.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

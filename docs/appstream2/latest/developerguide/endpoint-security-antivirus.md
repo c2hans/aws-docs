@@ -68,3 +68,7 @@ Endpoint security vendors provide instructions for use with virtual desktop envi
 <a name="endpoint-security-console-hygiene"></a>
 
 WorkSpaces Applications will create new unique instances each time a user connects beyond the idle and disconnect timeouts. The instances will have a unique name and will build up in endpoint security management condoles. Setting unused aged machines over 4 or more days old (or lower depending on WorkSpaces Applications session timeouts) to be deleted will minimize the number of expired instances in the console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

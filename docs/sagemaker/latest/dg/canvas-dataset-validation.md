@@ -22,3 +22,7 @@ The following table shows the issues that SageMaker Canvas checks for in your da
 | One or more column names contain double underscores | Rename the columns to remove any double underscores, and try again. |
 | None of the rows in your dataset are complete | Replace the missing values, or use a different dataset. |
 | Too many unique labels for the number of rows in your data | Check that you're using the right target column, increase the number of rows in your dataset, consolidate similar labels, or use a different dataset. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

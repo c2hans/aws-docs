@@ -165,3 +165,7 @@ The following list specifies which AWS Security Hub CSPM controls apply to the A
 + [[Transfer.5] Transfer Family certificates should be tagged](transfer-controls.md#transfer-5)
 + [[Transfer.6] Transfer Family connectors should be tagged](transfer-controls.md#transfer-6)
 + [[Transfer.7] Transfer Family profiles should be tagged](transfer-controls.md#transfer-7)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

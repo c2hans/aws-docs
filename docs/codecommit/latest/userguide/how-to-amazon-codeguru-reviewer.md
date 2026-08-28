@@ -15,3 +15,7 @@ For code review and security scanning capabilities, consider the following alter
 + **Amazon Inspector** — Automatically discovers and scans code repositories for software vulnerabilities. For more information, see [Amazon Inspector Code Security](https://docs.aws.amazon.com/inspector/latest/user/scanning-code.html).
 
 For more information about the CodeGuru Reviewer availability change, see [Amazon CodeGuru Reviewer availability change](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/codeguru-reviewer-availability-change.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

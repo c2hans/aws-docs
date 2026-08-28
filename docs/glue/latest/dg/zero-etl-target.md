@@ -538,3 +538,7 @@ After configuring the source and target resources, follow these steps to complet
      + Associate a new parameter group with `enable_case_sensitive_identifier = true`.
 
 Use the following to create the integration via API or CLI: [CreateIntegration API](https://docs.aws.amazon.com/glue/latest/webapi/API_CreateIntegration.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

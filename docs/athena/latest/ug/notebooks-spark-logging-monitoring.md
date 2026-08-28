@@ -55,7 +55,7 @@ aws athena start-session \
 ### Required permissions for managed logging
 <a name="notebooks-spark-logging-monitoring-managed-permissions"></a>
 
-If you provided a KMS key, you will need the following permissions in the permissions policy for the execution role.
+If you provided a KMS key, add the Athena service principal to the allow list in the KMS key permissions policy.
 
 ```
 {
@@ -67,7 +67,15 @@ If you provided a KMS key, you will need the following permissions in the permis
         "kms:DescribeKey"
     ],
     "Resource": "*",
-    "Effect": "Allow"
+    "Effect": "Allow",
+    "Principal":{
+        "Service":"athena.amazonaws.com"
+    },
+    "Condition": {
+        "StringEquals": {
+            "aws:SourceAccount": "YOUR_ACCOUNT_ID"
+        }
+    }
 }
 ```
 
@@ -329,3 +337,7 @@ aws athena update-work-group \
         }
     }'
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

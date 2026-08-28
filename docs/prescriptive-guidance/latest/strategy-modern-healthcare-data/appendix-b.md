@@ -54,3 +54,7 @@ Patients with conditions for which there is no approved treatment, especially ra
 Modern health records are multimodal. They contain traditional electronic health record (EHR) data, radiology records, genomic sequencing data, electron microscopy data, tissue samples, patient device data, and much more. As a result, patient medical records are often large and diverse. Patients might receive data from many providers and share that data with other providers and payers.
 
 Conveying large, complex data using physical media is no longer viable. Gaps in health records might result in poor quality of care and excess out-of-pocket expenses for patients. A modern healthcare-data strategy includes mechanisms that simplify the process of conveying multimodal health records between labs, providers, and payers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

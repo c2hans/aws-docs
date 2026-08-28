@@ -21,3 +21,7 @@ You can view information about the configuration of a channel on the **Channel d
    + For basic information about the configuration of the channel, choose the **Details** tab.
    + For a read-only view of the complete configuration of the channel (which you specified when you created or edited the channel), choose the **Settings** tab.
    + For a view of the raw JSON code for the channel configuration, choose the **Details** tab, and then choose **Advanced** details. You can copy this JSON code to your clipboard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

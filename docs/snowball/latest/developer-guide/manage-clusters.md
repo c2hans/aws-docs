@@ -26,3 +26,7 @@ An Amazon EC2 *cluster* is a group of devices that provision together as a clust
 1. (Optional) Enter a name to create a profile, and then choose **Save profile name**. You are directed to the dashboard, where you see all your clusters.
 
    You can now start using AWS services and managing your cluster. You manage instances in the cluster the same way you manage individual instances. For instructions, see [Managing AWS services on the Snowball Edge with AWS OpsHub](manage-services.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

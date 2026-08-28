@@ -27,3 +27,7 @@ The following shows how to create your multicast group and schedule a downlink m
 + [Choose participating gateways to receive multicast downlink messages](lorawan-multicast-choose-gateways.md)
 + [Monitor and troubleshoot your multicast groups](lorawan-multicast-status.md)
 + [Schedule a downlink message for your multicast group](lorawan-multicast-schedule-downlink.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

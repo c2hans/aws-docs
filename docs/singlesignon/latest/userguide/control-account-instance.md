@@ -56,3 +56,7 @@ Instead of preventing all account instance creation, this policy denies any atte
 + Attach this policy to your organization SCP to enforce centralized control over IAM Identity Center account instance creation.
 
   For instructions on attaching an SCP, see [Attaching and detaching service control policies](/organizations/latest/userguide/orgs_manage_policies_scps_attach.html) in the *AWS Organizations User Guide.*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

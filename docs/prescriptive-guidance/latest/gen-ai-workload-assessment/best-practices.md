@@ -64,3 +64,7 @@ Involve key stakeholders from the beginning to gain leadership buy-in and suppor
 <a name="iterate-and-learn.3974beb0-ec3f-5381-a8e9-dce89d45330f"></a>
 
 Adopt an incremental approach that lets you refine target solutions. Use feedback loops to continuously improve workload architecture and processes. Regularly assess the performance and impact of generative AI implementations, and adjust strategies as needed based on real-world results and evolving business needs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

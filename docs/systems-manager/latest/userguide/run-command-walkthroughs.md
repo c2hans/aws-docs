@@ -17,3 +17,7 @@ The walkthroughs in this section show you how to run commands with Run Command, 
 You can also view sample commands in the following references.
 + [Systems Manager AWS CLI Reference](https://docs.aws.amazon.com/cli/latest/reference/ssm/)
 + [AWS Tools for Windows PowerShell - AWS Systems Manager](https://docs.aws.amazon.com/powershell/latest/reference/items/SimpleSystemsManagement_cmdlets.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

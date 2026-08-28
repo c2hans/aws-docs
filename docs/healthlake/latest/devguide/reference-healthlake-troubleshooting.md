@@ -220,3 +220,7 @@ After you import data into a new HealthLake data store, the data may not be avai
 When sharing your search results from Athena with other AWS services, issues can occur when you use `json_extract[1]` as part of a SQL search query. To fix this issue, you must update to `CATVAR`.
 
 You might encounter this issue when trying to **Create** save results, a **Table** (static), or a **View** (dynamic).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

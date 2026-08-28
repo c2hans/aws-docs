@@ -158,3 +158,7 @@ The following are the suggested control mappings between this guide and the [OWA
 + [8.1 Implement comprehensive operational observability](best-practices-incident-response.md#best-practices-8-operational-observability) – Monitors resource consumption
 + [8.2 Establish emergency shutdown capabilities for high-risk scenarios](best-practices-incident-response.md#best-practices-8-emergency-shutdown) – Plans emergency shutdown for resource exhaustion
 + [8.3 Maintain business continuity plans for critical operations](best-practices-incident-response.md#best-practices-8-continuity-plans) – Plans response to resource attacks
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

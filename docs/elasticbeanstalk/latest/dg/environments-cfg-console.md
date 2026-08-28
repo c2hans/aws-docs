@@ -76,3 +76,7 @@ The tables lists each option as a combination of the **Namespace** and **Option*
 When you're done reviewing your changes, you can choose one of the following actions:
 + **Continue** – Go back to the **Configuration** overview page. You can then continue making changes or apply pending ones.
 + **Apply changes** – Apply the changes you made in any of the configuration categories to your environment. In some cases you're prompted to confirm a consequence of one of your configuration decisions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

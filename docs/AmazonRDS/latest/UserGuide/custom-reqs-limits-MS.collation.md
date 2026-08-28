@@ -536,3 +536,7 @@ You can set your collation to one of the values listed in the following table.
 | SQL\_Latin1\_General\_Pref\_CP437\_CI\_AS | Latin1-General, case-insensitive, accent-sensitive, kanatype-insensitive, width-insensitive for Unicode Data, SQL Server Sort Order 33 on Code Page 437 for non-Unicode Data |
 | SQL\_Latin1\_General\_Pref\_CP850\_CI\_AS | Latin1-General, case-insensitive, accent-sensitive, kanatype-insensitive, width-insensitive for Unicode Data, SQL Server Sort Order 43 on Code Page 850 for non-Unicode Data |
 | Thai\_CI\_AS | Thai, case-insensitive, accent-sensitive, kanatype-insensitive, width-insensitive |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

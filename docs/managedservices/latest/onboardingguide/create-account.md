@@ -20,3 +20,7 @@ If you plan to link your new account to a payer account for the purposes of cons
 
 **Important**
 It is critical that you ensure that an email address and phone number are associated with the account so you receive responses to potential security incidents. The phone number and email address for the account cannot be changed without resetting the account password, which is a significant undertaking for an AMS root account. To ensure that these values are stable, it is critical to select contact information not associated with individuals, which can change. Choose an email alias that can point to a group. Follow this same best practice in selecting a phone number: choose a number that can point to a group or to a number owned by the company and not an individual.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

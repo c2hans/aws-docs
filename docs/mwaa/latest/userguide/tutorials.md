@@ -12,3 +12,7 @@ This guide includes step-by-step tutorials to using and configuring an Amazon Ma
 + [Tutorial: Configuring private network access using a Linux Bastion Host](tutorials-private-network-bastion.md)
 + [Tutorial: Restricting an Amazon MWAA user's access to a subset of DAGs](limit-access-to-dags.md)
 + [Tutorial: Automate managing your own environment endpoints on Amazon MWAA](tutorials-customer-managed-endpoints.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

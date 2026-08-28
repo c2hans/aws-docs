@@ -34,3 +34,7 @@ You can view your live stream with:
 **Note**: Playback from the console consumes resources, and you will incur live-video output costs. To learn more, see [Live Video Output Costs](https://aws.amazon.com/ivs/pricing/#Live_Video_Output_Costs) on the IVS Pricing page.
 
 **Note**: After you start streaming, there is a short delay (up to 30 seconds, usually less) before your stream can be viewed in the console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

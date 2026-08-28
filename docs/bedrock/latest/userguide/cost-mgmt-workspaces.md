@@ -12,7 +12,7 @@ For cost attribution using the Responses or Chat Completions APIs on [`bedrock-m
 ## How cost attribution works
 <a name="cost-mgmt-workspaces-how-it-works"></a>
 
-You reference a workspace in a Messages API request by setting the `anthropic-workspace` HTTP header. Tags applied to the workspace are attached to the billing record for each request and appear as AWS cost allocation tags in CUR and Cost Explorer.
+You reference a workspace in a Messages API request by setting the `anthropic-workspace-id` HTTP header. Tags applied to the workspace are attached to the billing record for each request and appear as AWS cost allocation tags in CUR and Cost Explorer.
 
 For details on creating workspaces, managing tags, and using the Messages API with workspaces, see [Workspaces (Anthropic-compatible)](workspaces.md).
 
@@ -37,3 +37,7 @@ Tags can take up to 24 hours to appear in Cost Explorer and CUR after activation
 After tag activation, you can analyze Amazon Bedrock costs by workspace in the following tools:
 + **AWS Cost Explorer** – Filter by workspace tags to view cost trends over time. Group by tag to compare costs across workspaces.
 + **AWS Cost and Usage Reports (CUR 2.0)** – Query CUR data for line-item cost breakdowns by workspace tag.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

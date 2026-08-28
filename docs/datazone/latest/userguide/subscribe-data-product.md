@@ -18,3 +18,7 @@ To subscribe to or unsubscribe from a data product complete the following steps.
 1. On the data product's details page, choose **Subscribe**.
 
 1. Specify the project and the reason for subscribing and then choose **Subscribe**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

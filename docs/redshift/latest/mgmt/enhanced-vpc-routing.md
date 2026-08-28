@@ -36,3 +36,7 @@ There is no additional charge for using enhanced VPC routing. You might incur ad
 + [Controlling database traffic with VPC endpoints](enhanced-vpc-working-with-endpoints.md)
 + [Turning on enhanced VPC routing](enhanced-vpc-enabling-cluster.md)
 + [Accessing Amazon S3 buckets with Redshift Spectrum](spectrum-enhanced-vpc.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ Treat every pinned version as work you still owe. Pinning unblocks a release, bu
 Set version-range policies for shared packages. Define whether shared packages accept minor-version ranges or require exact pins. A written policy reduces ad-hoc decisions during migrations and makes pinning exceptions visible.
 
 Document your dependency governance model. Record who owns each shared package, who approves version bumps, and how cross-team migrations are coordinated. This removes ambiguity when multiple teams share the same dependency tree.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

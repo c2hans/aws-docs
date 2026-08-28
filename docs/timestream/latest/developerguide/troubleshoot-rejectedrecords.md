@@ -10,3 +10,7 @@ For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon
 If Timestream rejects records, you will receive a `RejectedRecordsException` with details about the rejection. Please refer to [Handling write failure](https://docs.aws.amazon.com/timestream/latest/developerguide/code-samples.write.html#code-samples.write.rejectedRecordException) for more information on how to extract this information from the WriteRecords response.
 
  All rejections will be included in this response **with the exception of updates to the magnetic store where the new record's version is less than or equal to the existing record's version**. In this case, Timestream will not update the existing record that has the higher version. Timestream will reject the new record with lower or equal version and write these errors asynchronously to your S3 bucket. In order to receive these asynchronous error reports, you should set the `MagneticStoreRejectedDataLocation` property in `MagneticStoreWriteProperties` on your table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

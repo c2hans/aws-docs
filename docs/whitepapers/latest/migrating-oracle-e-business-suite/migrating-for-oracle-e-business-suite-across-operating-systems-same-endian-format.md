@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-oracle-e-bu
 +  [2011169.1](https://support.oracle.com/epmos/faces/DocumentDisplay?_afrLoop=140393923515076&id=2011169.1&_adf.ctrl-state=ss7c2i22z_306) - Transportable Databases for Oracle E-Business Suite Release 12.2
 
  Transportable Database is the fastest way to migrate data between two platforms, because the process is fundamentally one of copying database files and then using Recovery Manager (RMAN) to convert data files (using the RMAN `convert database` command). The E-Business Suite Transportable Databases process for migration does, however, require that the source and target database be of the same release and patchset version.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

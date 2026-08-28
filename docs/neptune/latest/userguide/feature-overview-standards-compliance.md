@@ -13,3 +13,7 @@ These sections describe the standards as well as those areas where Neptune exten
 + [Gremlin standards compliance in Amazon Neptune](access-graph-gremlin-differences.md)
 + [SPARQL standards compliance in Amazon Neptune](feature-sparql-compliance.md)
 + [openCypher specification compliance in Amazon Neptune](feature-opencypher-compliance.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

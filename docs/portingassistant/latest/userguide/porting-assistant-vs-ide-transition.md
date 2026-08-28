@@ -11,3 +11,7 @@ AWS .NET Modernization Tools Porting Assistant (PA) for .NET, AWS App2Container 
 If the Porting Assistant for .NET Visual Studio IDE extension is not installed on Visual Studio, the transition process will include steps to download and install the extension.
 
 From the **Assessed Solutions** page of the standalone assessment tool, choose **Open the solution in IDE**. Visual Studio will open the solution and assessment that you performed using the standalone tool. Once the IDE extension opens, you can port the solution with contextual assistance. If your solution was at the assessment stage, all of the assessment details are shared with the IDE extension. If you started the automated porting of the solution in the standalone tool, the IDE loads the current state of porting.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Porting Assistant for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query portingassistant` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

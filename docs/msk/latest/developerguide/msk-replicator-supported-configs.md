@@ -10,7 +10,7 @@ The following are requirements for cluster types, Kafka versions, instance types
 ## Supported cluster types and versions
 <a name="msk-replicator-supported-cluster-types"></a>
 + MSK Replicator supports both MSK Provisioned clusters and MSK Serverless clusters in any combination as source and target clusters.
-+ MSK Replicator also supports self-managed Apache Kafka clusters (Kafka version 2.8.1 or later) with SASL/SCRAM or mTLS authentication as source clusters when replicating to Amazon MSK Provisioned clusters. For more information, see [Migrate from non-MSK Apache Kafka clusters to Amazon MSK Provisioned](msk-replicator-migrate-external.md).
++ MSK Replicator also supports self-managed Apache Kafka clusters (Kafka version 2.8.1 or later) with SASL/SCRAM, mTLS, or SASL/OAUTHBEARER (OAuth) authentication as source clusters when replicating to Amazon MSK Provisioned clusters. For more information, see [Migrate from non-MSK Apache Kafka clusters to Amazon MSK Provisioned](msk-replicator-migrate-external.md).
 + MSK Replicator is supported only on MSK clusters running Apache Kafka 2.7.0 or higher.
   + [Identical topic name replication](msk-replicator-topic-naming.md) requires an MSK cluster running Kafka version 2.8.1 or higher.
   + Self-managed Apache Kafka clusters require Kafka version 2.8.1 or later.
@@ -21,7 +21,7 @@ The following are requirements for cluster types, Kafka versions, instance types
 ## Authentication requirements
 <a name="msk-replicator-supported-auth"></a>
 + If you are using MSK Replicator with an MSK cluster, the cluster must have IAM access control turned on.
-+ If you are using MSK Replicator with a self-managed Apache Kafka cluster as the source, the self-managed cluster must have SASL/SCRAM or mTLS authentication enabled.
++ If you are using MSK Replicator with a self-managed Apache Kafka cluster as the source, the self-managed cluster must have SASL/SCRAM, mTLS, or SASL/OAUTHBEARER authentication enabled.
 + For cross-region replication, the source cluster must have multi-VPC private connectivity turned on for its IAM access control method.
 + For same-region replication, multi-VPC private connectivity is not required. The source cluster can still be accessed by other clients using the unauthenticated auth type.
 + MSK Serverless clusters require IAM access control and do not support Apache Kafka ACL replication.
@@ -31,3 +31,7 @@ The following are requirements for cluster types, Kafka versions, instance types
 + MSK Serverless supports replication of these topic configurations for target clusters during topic creation: `cleanup.policy`, `compression.type`, `max.message.bytes`, `retention.bytes`, `retention.ms`.
 + MSK Serverless supports only these topic configurations during topic configuration sync: `compression.type`, `max.message.bytes`, `retention.bytes`, `retention.ms`.
 + Replicator uses 83 compacted partitions on target MSK Serverless clusters. Make sure that target MSK Serverless clusters have a sufficient number of compacted partitions. See [MSK Serverless quota](limits.md#serverless-quota).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

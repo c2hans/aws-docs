@@ -36,3 +36,7 @@ The queue role needs Amazon ECR pull permissions (`ecr:BatchGetImage`, `ecr:GetD
 GPU rendering is automatic when the fleet has GPU instances. The queue environment conditionally adds `--gpus all --runtime=nvidia` based on whether the host has an NVIDIA GPU. CPU-only instances fall back to Cycles CPU rendering.
 
 For a job bundle that renders Blender scenes, see [Render Blender scenes on Deadline Cloud](examples-jb-blender-render.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

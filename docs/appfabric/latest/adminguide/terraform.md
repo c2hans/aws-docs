@@ -76,3 +76,7 @@ Enter a name that identifies this unique Terraform Cloud organization. AppFabric
 <a name="terraform-service-token"></a>
 
 AppFabric will request your service account token. The service account token in AppFabric is the organization API token you created in [Create an organization API token](#terraform-create-org-token).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

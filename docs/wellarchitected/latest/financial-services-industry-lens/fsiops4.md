@@ -53,3 +53,7 @@ Artifacts at foundational layers must go through a change control process so tha
 + and [AWS Config](https://aws.amazon.com/config/).
 
 These services monitor activity within your AWS account, including actions taken through the [AWS Management Console](https://aws.amazon.com/console/), [AWS SDKs](https://aws.amazon.com/developer/tools/), command line tools, and other AWS services. Once detected, you can automate the reactive action by defining workflows using [AWS EventBridge](https://aws.amazon.com/eventbridge/) integration and [AWS Config Rules](https://docs.aws.amazon.com/config/latest/developerguide/evaluate-config_use-managed-rules.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

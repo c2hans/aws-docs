@@ -15,3 +15,7 @@ With S3 Access Grants, you can create permission grants to your S3 data for AWS 
 + [List your S3 Access Grants instances](access-grants-instance-list.md)
 + [Associate or disassociate your IAM Identity Center instance](access-grants-instance-idc.md)
 + [Delete an S3 Access Grants instance](access-grants-instance-delete.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

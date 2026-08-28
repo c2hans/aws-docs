@@ -13,3 +13,7 @@ Amazon Q Developer also includes the following features to help you track and re
 +  *A dashboard* shows you aggregate user activity metrics of Amazon Q Developer Pro subscribers. For more information, see [Viewing Amazon Q Developer user activity on the dashboard](dashboard.md).
 +  *User activity reports* show you what individual users are up to in Amazon Q. For more information, see [Viewing the activity of specific users in Amazon Q Developer](q-admin-user-telemetry.md).
 +  *Prompt logs* provide you with a record of all the prompts that users enter into the Amazon Q chat in their integrated development environment (IDE). For more information, see [Logging users' prompts in Amazon Q Developer](q-admin-prompt-logging.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,3 +42,7 @@ Per the Assessment Guide and 32 CFR § 170.24, each requirement results in one o
 | MET | All assessment objectives are satisfied. Evidence must be in final form. Drafts, working guides, and unapproved policies are not accepted. |
 | NOT MET | One or more objectives are not satisfied. If the requirement is POA&M-eligible, it can be placed on a POA&M for remediation within 180 days. |
 | NOT APPLICABLE | The requirement does not apply to the system as scoped. Must be justified in the SSP. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

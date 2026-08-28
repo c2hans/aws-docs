@@ -40,3 +40,7 @@ If you don't terminate any Amazon SageMaker AI endpoints, batch transform jobs, 
 <a name="free-trials-for-saas-products"></a>
 
 Software as a service (SaaS) products in AWS Marketplace have free trials. SaaS free trials don't automatically convert into paid agreements. If you no longer want the free trial, you can let it expire. For more information, see [Subscribing to SaaS free trials](saas-free-trials.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

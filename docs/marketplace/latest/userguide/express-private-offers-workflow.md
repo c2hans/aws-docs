@@ -27,3 +27,7 @@ When buyers engage with the express private offer system, they begin by selectin
 The final phase of the workflow involves automated offer creation and routing decisions. The system evaluates buyer inputs against the seller's predefined criteria, including dimension selections, total contract value, and any profile-based qualifications. For qualified buyers, the system instantly generates a private offer incorporating all applicable discounts, calculated according to the seller's configuration.
 
 These offers are clearly identified with "express private offer" in their naming convention and follow standard AWS Marketplace private offer processes for notification and management. When buyers don't meet qualification criteria, such as exceeding the global TCV maximum or failing specific profile requirements, the system automatically redirects them to a sales-assisted workflow. This ensures that complex or high-value deals receive appropriate attention while maintaining the efficiency of the automated system for standard transactions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -36,3 +36,7 @@ To learn more about each subcommand, see the following:
 + **[Intro to sam local invoke](using-sam-cli-local-invoke.md)** – Initiate a one-time invocation of an AWS Lambda function locally.
 + **[Intro to sam local start-api](using-sam-cli-local-start-api.md)** – Run your Lambda functions using a local HTTP server.
 + **[Intro to sam local start-lambda](using-sam-cli-local-start-lambda.md)** – Run your Lambda functions using a local HTTP server for use with the AWS CLI or SDKs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

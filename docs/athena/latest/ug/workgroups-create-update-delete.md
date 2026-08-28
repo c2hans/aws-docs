@@ -20,3 +20,7 @@ In the Athena console at [https://console.aws.amazon.com/athena/](https://consol
 | [Use IAM policies to control workgroup access](workgroups-iam-policy.md) | Use IAM policies to control workgroup access. For example workgroup policies, see [Example workgroup policies](example-policies-workgroup.md). |
 | [Create an Athena workgroup that uses IAM Identity Center authentication](workgroups-identity-center.md) | To use IAM Identity Center identities with Athena, you must create an IAM Identity Center enabled workgroup. After you create the workgroup, you can use the IAM Identity Center console or API to assign IAM Identity Center users or groups to the workgroup. |
 | [Configure minimum encryption for a workgroup](workgroups-minimum-encryption.md) | Enforce a minimal level of encryption in Amazon S3 for all query results from the workgroup. Use this feature to ensure that query results are never stored in an Amazon S3 bucket in an unencrypted state. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

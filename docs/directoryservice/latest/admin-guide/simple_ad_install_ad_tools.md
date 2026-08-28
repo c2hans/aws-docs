@@ -44,3 +44,7 @@ Before you can begin this procedure, complete the following:
 ![Installing Microsoft AD Tools, the Add Roles and Features Wizard Features Tree with tools selected.](http://docs.aws.amazon.com/directoryservice/latest/admin-guide/images/ms-install-ad-tools.png)
 
 1. Review the information and choose **Install**. When the feature installation is finished, the Active Directory Domain Services and Active Directory Lightweight Directory Services Tools are available from the Start menu in the **Administrative Tools** folder.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -223,3 +223,7 @@ The following reasons may lead to issues in the configuration and disable cluste
 + When the writer DB instance is not set to promotion tier 0.
 + When more than one reader DB instances are set to promotion tier 0.
 + When the writer and one reader DB instances with promotion tier 0 doesn't have the same instance size.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

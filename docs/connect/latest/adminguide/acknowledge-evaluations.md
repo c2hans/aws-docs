@@ -52,3 +52,7 @@ Only the agent who was evaluated can acknowledge the evaluation.
 
 1. To view the acknowledgement note, select the acknowledged evaluation, and then choose the **view note** link.
 ![The Acknowledgement note.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-ack7.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

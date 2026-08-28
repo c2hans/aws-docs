@@ -65,3 +65,7 @@ Do not embed client credentials in user-facing applications.
   For Bitcoin networks, AMB Query API operations support both the transaction identifier (`transactionId`) and the transaction hash (`transactionHash`). The `transactionId` is a double-SHA hash of the transaction not including witness data. The `transactionHash` is a double-SHA hash of the transaction including witness data (also known as witness transaction id).
 
   When invoking the [`GetTransaction`](https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIReference/API_GetTransaction.html) or [`ListTransactionEvents`](https://docs.aws.amazon.com/managed-blockchain/latest/AMBQ-APIReference/API_ListTransactions.html) API operations for Bitcoin networks, you can specify either the `transactionId` or the `transactionHash`. Also, all AMB Query operations on Bitcoin networks that return either a `transactionId` or a `transactionHash` will include both values as a part of the response.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,3 +43,7 @@ sudo -u root dcv-session-manager-broker deactivate-software-statement --software
 ```
 Software statement EXAMPLEpZCIgOiAiYjc1NTVhN2QtNWI0MC00OTJhLWJjOTUtNmUzOWNhYzkxMDcxIiwKICAiaXNEXAMPLEQiIDogMTU5Njc5NTg4MS4wNjEwMDAwMDAsCiAgImJyb2tlclZlEXAMPLEiIDogIjEuMC4wIiwKICAiYWN0aXZlIiA6IHRydEXAMPLE deactivated
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

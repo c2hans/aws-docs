@@ -94,3 +94,7 @@ As mentioned above, you can configure in the evaluation form, who would be autom
 1. This will send an automated email notification to the user who had requested the review.
 
 ![Evaluation review in progress.](http://docs.aws.amazon.com/connect/latest/adminguide/images/evaluationforms-review-view.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

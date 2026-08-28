@@ -38,3 +38,7 @@ IAM Access Analyzer offers external access findings for free. There are charges 
 + [Logging IAM Access Analyzer API calls with AWS CloudTrail](logging-using-cloudtrail.md)
 + [IAM Access Analyzer filter keys](access-analyzer-reference-filter-keys.md)
 + [Using service-linked roles for AWS Identity and Access Management Access Analyzer](access-analyzer-using-service-linked-roles.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

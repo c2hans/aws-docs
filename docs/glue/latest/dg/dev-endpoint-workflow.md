@@ -15,3 +15,7 @@ To use an AWS Glue development endpoint, you can follow this workflow:
    + If you have the professional edition of the JetBrains [PyCharm Python IDE](https://www.jetbrains.com/pycharm/), connect it to a development endpoint and use it to develop interactively. If you insert `pydevd` statements in your script, PyCharm can support remote breakpoints.
 
 1. When you finish debugging and testing on your development endpoint, you can delete it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

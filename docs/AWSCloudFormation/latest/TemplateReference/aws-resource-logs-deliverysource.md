@@ -126,3 +126,7 @@ The status of the delivery source. A delivery source can have the status `ACTIVE
 
 `StatusReason`  <a name="StatusReason-fn::getatt"></a>
 The reason for the status of the delivery source. A status reason of `RESOURCE_DELETED` indicates that the resource associated with the delivery source has been deleted. Note: This value is defined for selective log types.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

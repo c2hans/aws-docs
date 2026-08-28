@@ -33,3 +33,7 @@ This tutorial shows how to submit data through the Amazon CloudSearch console, b
 To see how the data is formatted, choose **Download the generated document batch**. For more information about preparing your own data, see [Preparing Your Data](preparing-data.md).
 
  You now have a fully functional Amazon CloudSearch domain that you can start searching. Updates are applied continuously in the order they are received, so you can start searching your domain right away.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cloud Search. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudsearch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

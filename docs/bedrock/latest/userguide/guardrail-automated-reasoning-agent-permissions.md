@@ -38,3 +38,7 @@ The following example shows the complete statements list:
 
 **Note**
 The existing `AmazonBedrockAgentBedrockFoundationModelPolicy` on your agent's service role does not need to be modified. Only the `AmazonBedrockAgentBedrockApplyGuardrailPolicy` requires the changes described above.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

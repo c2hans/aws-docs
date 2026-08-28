@@ -10,8 +10,12 @@ Specifies a security policy for a REST API. If you create a security policy that
 ## `x-amazon-apigateway-security-policy` example
 <a name="openapi-extensions-security-policy-example"></a>
 
-The following example specifies `SecurityPolicy_TLS13_1_3_2025_0` for a REST API.
+The following example specifies `SecurityPolicy_TLS13_1_3_2025_09` for a REST API.
 
 ```
 "x-amazon-apigateway-security-policy": "SecurityPolicy_TLS13_1_3_2025_09"
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

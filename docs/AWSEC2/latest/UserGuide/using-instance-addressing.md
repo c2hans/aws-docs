@@ -167,3 +167,7 @@ Link-local addresses are well-known, non-routable IP addresses. Amazon EC2 uses 
 + [Amazon Route 53 Resolver](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-dns.html#AmazonDNS) (also known as the Amazon DNS server)
 + [Amazon Time Sync Service](set-time.md)
 + [AWS KMS servers](common-messages.md#activate-windows)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

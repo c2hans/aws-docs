@@ -30,3 +30,7 @@ The following table describes a common sync performance issue and how to resolve
 | Symptom | Likely cause | Fix |
 | --- | --- | --- |
 | Sync takes hours on large instances. | No catalog ID filtering is configured, so the connector crawls all active catalog items (100,000 or more on enterprise instances). | Use serviceCatalogFilter (with inclusionServiceCatalogSysIds) in filterConfiguration to scope the crawl to specific service catalogs. See [Connector parameters](kb-managed-ds-servicenow-connect.md#kb-managed-config-servicenow). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

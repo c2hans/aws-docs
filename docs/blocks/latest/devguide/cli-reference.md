@@ -68,3 +68,7 @@ Tears down all deployed resources.
 <a name="cli-further-reading"></a>
 
 For more information about advanced CLI options, environment variables, and CI/CD configuration, see [AWS Blocks CLI reference on GitHub](https://github.com/aws-devtools-labs/aws-blocks).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Blocks. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query blocks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

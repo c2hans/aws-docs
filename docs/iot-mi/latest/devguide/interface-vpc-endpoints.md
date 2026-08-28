@@ -16,3 +16,7 @@ You are not required to use AWS PrivateLink, but it's recommended. For more info
 + [Controlling access to services over VPC endpoints](vpc-endpoints-access-control.md)
 + [Pricing](vpc-endpoints-pricing.md)
 + [Limitations](vpc-endpoints-limitations.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Managed integrations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-mi` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

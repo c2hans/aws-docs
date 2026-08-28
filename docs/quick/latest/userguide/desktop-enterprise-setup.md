@@ -63,12 +63,97 @@ The complete procedure for each of these steps is documented on the page for you
 
 If you encounter problems during setup or sign-in, see [Troubleshooting enterprise sign-in for Amazon Quick on desktop](desktop-enterprise-setup-troubleshooting.md).
 
+## Managed deployment configuration
+<a name="desktop-enterprise-managed-deployment"></a>
+
+Administrators can configure and deploy Amazon Quick on desktop across an enterprise fleet using the following options.
+
+### Managed policies
+<a name="desktop-enterprise-mdm-policies"></a>
+
+Amazon Quick reads policies from vendor-neutral OS-managed locations. Any mobile device management (MDM) tool that can deliver a configuration profile (macOS) or registry policy (Windows) works without vendor-specific integration.
+
+| Policy | macOS location | Windows location | Effect |
+| --- | --- | --- | --- |
+| DisableSocialLogin | Preference domain com.aws.QuickWork.mac | HKLM\\SOFTWARE\\Policies\\Amazon\\Quick (REG\_DWORD) | Hides social sign-in, blocks it server-side, and hides "Sign up for free." This policy enforces enterprise SSO as the only authentication path. |
+
+Amazon Quick reads policy values at application startup.
+
+Deploy a configuration profile with preference domain `com.aws.QuickWork.mac`. The profile supports device scope (`/Library/Managed Preferences/com.aws.QuickWork.mac.plist`) or user scope.
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>DisableSocialLogin</key>
+    <true/>
+</dict>
+</plist>
+```
+
+Set the registry value at `HKLM\SOFTWARE\Policies\Amazon\Quick`. The Policies hive is not user-editable and survives application updates.
+
+```
+HKLM\SOFTWARE\Policies\Amazon\Quick
+  DisableSocialLogin  (REG_DWORD)  =  1
+```
+
+For MDM-specific deployment steps, see your provider's documentation:
++ [macOS preference file profiles](https://learn.microsoft.com/en-us/mem/intune/configuration/preference-file-settings-macos) on the Microsoft Intune website
++ [Application & Custom Settings](https://developer.jamf.com/jamf-pro/docs/application-custom-settings) on the Jamf Pro website
+
+### Proxy support
+<a name="desktop-enterprise-proxy-support"></a>
+
+Amazon Quick respects the operating system's proxy configuration (system proxy on Windows, Proxy Auto-Configuration on macOS). All application network traffic, including child processes, routes through the configured enterprise proxy automatically. You don't need to configure the proxy separately.
+
+### Application data paths
+<a name="desktop-enterprise-data-paths"></a>
+
+The following table lists the application data paths for each operating system.
+
+| OS | Path |
+| --- | --- |
+| macOS | \~/.quickwork/ |
+| Windows | %USERPROFILE%\\.quickwork\\ |
+
+This directory contains local user-specific settings and configurations.
+
+### Silent installation and fleet deployment
+<a name="desktop-enterprise-silent-install"></a>
+
+The installer supports silent mode.
+
+```
+.\Amazon-Quick-Setup.exe /S
+```
+
+The installer installs Amazon Quick for each user in `%LOCALAPPDATA%` and creates desktop and Start menu shortcuts.
+
+For Microsoft Intune deployment, wrap the installer using the [Microsoft Win32 Content Prep Tool](https://github.com/microsoft/Microsoft-Win32-Content-Prep-Tool) on the GitHub website, then upload as a Win32 app with install command `Amazon-Quick-Setup.exe /S`. For details, see [Prepare a Win32 app for Intune](https://learn.microsoft.com/en-us/mem/intune/apps/apps-win32-prepare) on the Microsoft Intune website.
+
+The application ships as a `.dmg`. For fleet deployment:
++ **Intune:** Upload the DMG directly as a macOS line-of-business app. See [Add a macOS DMG app to Intune](https://learn.microsoft.com/en-us/mem/intune/apps/lob-apps-macos-dmg) on the Microsoft Intune website.
++ **Jamf:** Upload the DMG and deploy via policy. See [Package Deployment](https://docs.jamf.com/10.30.0/jamf-pro/administrator-guide/Package_Deployment.html) on the Jamf Pro website.
+
+### Application updates
+<a name="desktop-enterprise-updates"></a>
+
+Amazon Quick delivers updates automatically over HTTPS. Updates are code-signed and apply for each user on the next restart. On macOS, updates use Apple notarization. On Windows, updates use Authenticode signing.
+
 **Topics**
 + [How enterprise sign-in works](#desktop-enterprise-how-it-works)
 + [Prerequisites](#desktop-enterprise-prerequisites)
 + [Setup process](#desktop-enterprise-process)
++ [Managed deployment configuration](#desktop-enterprise-managed-deployment)
 + [Set up enterprise sign-in with Microsoft Entra ID for Amazon Quick on desktop](desktop-enterprise-entra-id.md)
 + [Set up enterprise sign-in with Google Workspace for Amazon Quick on desktop](desktop-enterprise-google-workspace.md)
 + [Set up enterprise sign-in with Okta for Amazon Quick on desktop](desktop-enterprise-okta.md)
 + [Set up enterprise sign-in with Ping Identity for Amazon Quick on desktop](desktop-enterprise-ping-identity.md)
 + [Troubleshooting enterprise sign-in for Amazon Quick on desktop](desktop-enterprise-setup-troubleshooting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

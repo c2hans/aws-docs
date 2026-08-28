@@ -69,3 +69,7 @@ Yes. For more information on sender ID formatting rules, see [Considerations for
 If your Singapore Sender ID registration shows a status of **Revoke**, this indicates that your Sender ID registration has been suspended by the Singapore SMS Sender ID Registry (SSIR). To resolve this issue, you must contact the Singapore Network Information Centre (SGNIC) directly to obtain further details regarding your registration suspension.
 
 After you have resolved the issue with SGNIC, you can re-submit your existing registration through the AWS End User Messaging SMS console. You do not need to create a new registration request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

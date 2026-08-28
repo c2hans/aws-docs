@@ -43,3 +43,7 @@ The following shows an example of the Daily Usage data feed with key columns. Fo
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | 2025-01-15 | prod-abcd1234efgh5678 | agmnt-wxyz9876abcd5432 | us-east-1 | USE1\_InputTokenCount | units | 24.00 | USD | 12.00 | offer-mnop5432qrst7890 | 0.500000 | AWS Marketplace software usage\|us-east-1\|Million Input Tokens |
 | 2025-01-15 | prod-ijkl9876mnop1234 | agmnt-stuv5432wxyz9876 | us-west-2 | USE1\_InputTokenCount | units | 1000.00 | USD | 5.50 | offer-abcd9876efgh5432 | 0.005500 | AWS Marketplace software usage\|us-west-2\|API Calls |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

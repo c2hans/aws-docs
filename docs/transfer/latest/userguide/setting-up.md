@@ -23,3 +23,7 @@ To connect programmatically to an AWS service, you use an endpoint. For example,
 For more information about supported AWS Regions, endpoints, and service quotas, see [AWS Transfer Family endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/transfer-service.html) in the *Amazon Web Services General Reference*.
 
 For Transfer Family web apps, the supported regions are listed in [AWS Regions for Transfer Family web apps](web-app.md#webapp-regions). For quotas that pertain to Transfer Family web apps, see [Web app quotas](webapp-end-users.md#end-user-quotas).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

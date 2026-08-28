@@ -72,3 +72,7 @@ Rotation of ACM-managed certificates will be handled automatically by RTB Fabric
 Rotation of ACM-managed certificates will be handled automatically by RTB Fabric with no action required from you.
 + **Test before cutover.** After updating the configuration, verify the new certificate by sending a test request and inspecting the TLS handshake (for example, using `openssl s_client -servername bid.example.com -connect bid.example.com:443`).
 + **Maintain key type consistency.** If your original certificate uses ECDSA, continue using ECDSA for the renewed certificate.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS RTB Fabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rtb-fabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -231,3 +231,7 @@ To create a composite document, add the [`aws:runDocument`](documents-command-ss
 + For information about rebooting servers and instances when using Run Command to call scripts, see [Handling reboots when running commands](send-commands-reboot.md).
 + For more information about the plugins you can add to a custom SSM document, see [Command document plugin reference](documents-command-ssm-plugin-reference.md).
 + If you simply want to run a document from a remote location (without creating a composite document), see [Running documents from remote locations](documents-running-remote-github-s3.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

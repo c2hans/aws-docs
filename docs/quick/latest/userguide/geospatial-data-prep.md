@@ -51,3 +51,7 @@ Use the following procedures to add geospatial data types and hierarchies to you
 1. Continue by adding as many fields to the hierarchy as you need to.
 
    Your geospatial groupings appear in the **Fields** pane.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

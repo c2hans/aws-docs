@@ -217,3 +217,7 @@ Picture an application with a sign-in page where users can sign in with a userna
 You can use [AWS Lambda triggers](cognito-user-pools-working-with-lambda-triggers.md) to customize the way users authenticate. These triggers issue and verify their own challenges as part of the authentication flow.
 
 You can also use the admin authentication flow for secure backend servers. You can use the [user migration authentication flow](cognito-user-pools-using-import-tool.md) to make user migration possible without the requirement that your users to reset their passwords.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

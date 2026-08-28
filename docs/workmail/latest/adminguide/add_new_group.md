@@ -30,3 +30,7 @@ You can add groups from the Amazon WorkMail console.
 1. By default, the group is displayed in the global address list. To hide the group from the global address list, clear the **Show in global address list** check box.
 
 1. Choose **Add group**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

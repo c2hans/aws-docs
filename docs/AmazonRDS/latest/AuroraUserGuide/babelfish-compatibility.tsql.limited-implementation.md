@@ -31,3 +31,7 @@ As of version 1.2.0 of Babelfish, the following features currently have limited 
 + **CREATE OR ALTER VIEW / ALTER VIEW syntax** – The support for these syntax in Babelfish has the following limitations:
   + These statements cannot be used on views that have an INSTEAD-OF trigger attached.
   + These statements cannot be used on views that have another view based on this view.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

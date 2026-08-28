@@ -264,3 +264,7 @@ To upload manual evidence that supplements the automated evidence, see [Uploadin
 After the evidence is attached to the control, you—or a delegate of your choice—can review the evidence to see if it’s sufficient or if any remediation is necessary. For example, when you review this control, you might realize that you only partially meet its requirements. This could be the case if you have proof that access was revoked, but don’t have a copy of any exit interviews. You could delegate the control to an HR stakeholder, who can then upload a copy of the exit interview paperwork. Or, if no employees were terminated during the audit period, you can leave a comment that states why no signed paperwork is attached to the control.
 
 When you’re satisfied that you're in line with the control, mark the control as *Reviewed* and add the evidence to your assessment report. You can then share this report with auditors to demonstrate that the control is working as intended.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

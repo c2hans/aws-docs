@@ -886,3 +886,7 @@ AppFabric uses **Account Change**, **Authentication**, **User Access Management*
 <a name="security-lake-create-appfabric-ingestions"></a>
 
 To send data to Amazon Security Lake, you must create an ingestion in the AppFabric console that uses the Firehose delivery stream that you created earlier as the output location. For more information about configuring AppFabric ingestions to use Firehose as an output location, see the [Create an output location](prerequisites.md#create-output-location).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppFabric. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appfabric` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

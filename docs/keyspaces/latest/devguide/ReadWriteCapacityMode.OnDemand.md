@@ -51,3 +51,7 @@ To learn more about default quotas for your account and how to increase them, se
 If you create a new table with on-demand capacity mode enabled or switch an existing table to on-demand capacity mode for the first time, the table has the following previous peak settings, even though it hasn't served traffic previously using on-demand capacity mode:
 +  ** Newly created table with on-demand capacity mode:** The previous peak is 2,000 WRUs and 6,000 RRUs. You can drive up to double the previous peak immediately. Doing this enables newly created on-demand tables to serve up to 4,000 WRUs and 12,000 RRUs.
 +  **Existing table switched to on-demand capacity mode:** The previous peak is half the previous WCUs and RCUs provisioned for the table or the settings for a newly created table with on-demand capacity mode, whichever is higher.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

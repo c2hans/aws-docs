@@ -29,3 +29,7 @@ The following considerations apply to creating and using views in Athena:
 + You cannot use views to manage access control on data in Amazon S3. To query a view, you need permissions to access the data stored in Amazon S3. For more information, see [Control access to Amazon S3 from Athena](s3-permissions.md).
 + While querying views across accounts is supported in Athena engine version 3, you cannot create a view that includes a cross-account AWS Glue Data Catalog. For information about cross-account data catalog access, see [Configure cross-account access to AWS Glue data catalogs](security-iam-cross-account-glue-catalog-access.md).
 + The Hive or Iceberg hidden metadata columns `$bucket`, `$file_modified_time`, `$file_size`, and `$partition` are not supported for views in Athena. For information about using the `$path` metadata column in Athena, see [Getting the file locations for source data in Amazon S3](select.md#select-path).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

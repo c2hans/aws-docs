@@ -36,3 +36,7 @@ Waiters classes are in the same Maven artifact as the service.
 | Change | v1 | v2 |
 | --- | --- | --- |
 | Polling Strategy (max attempts and fixed delay) |  <pre>MaxAttemptsRetryStrategy maxAttemptsRetryStrategy = <br />        new MaxAttemptsRetryStrategy(10);<br /><br />FixedDelayStrategy fixedDelayStrategy = <br />        new FixedDelayStrategy(3);<br /><br />PollingStrategy pollingStrategy = <br />        new PollingStrategy(maxAttemptsRetryStrategy, <br />                fixedDelayStrategy);<br /><br />waiter.tableExists().run(<br />        new WaiterParameters<>(<br />            new DescribeTableRequest(tableName)), <br />                pollingStrategy);</pre>  |  <pre><br />FixedDelayBackoffStrategy fixedDelayBackoffStrategy = <br />        FixedDelayBackoffStrategy<br />            .create(Duration.ofSeconds(3));<br /><br />waiter.waitUntilTableExists(r -> r.tableName(tableName),<br />        c -> c.maxAttempts(10)<br />                .backoffStrategy(fixedDelayBackoffStrategy));</pre>  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

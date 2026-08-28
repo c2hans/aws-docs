@@ -229,3 +229,7 @@ All processors use a shared `KafkaConfig.withReconnect()` utility that applies r
 The FlinkStack creates CloudWatch alarms for processor health monitoring:
 +  **Downtime alarms** — Fire when a processor has more than 1 minute of downtime in a 5-minute window. Applied to all critical processors.
 +  **Idle processing alarms** — Fire when the FWTelemetryProcessor or TripProcessor processes 0 records in a 10-minute window, indicating a pipeline stall.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

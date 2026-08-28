@@ -87,3 +87,7 @@ You can also set the destination to any custom connectors that you create with t
 + [Access tokens](https://www.dynatrace.com/support/help/reference/dynatrace-concepts/access-tokens/) instructions in the Dynatrace documentation
 +  [Dynatrace API documentation](https://www.dynatrace.com/support/help/dynatrace-api/) for more information about the types of data you can extract from Dynatrace
 +  [Dynatrace is launch partner of Amazon AppFlow – a service for easy and secure data transfer](https://www.dynatrace.com/news/blog/dynatrace-integrates-with-amazon-appflow/) from *Dynatrace Resources*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

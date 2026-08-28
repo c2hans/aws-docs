@@ -31,7 +31,12 @@ The lifecycle of an AMI includes creating, copying, deprecating, disabling, and 
 + [Store and restore an AMI](ami-store-restore.md)
 + [AMI ancestry](ami-ancestry.md)
 + [AMI watermarks](ami-watermark.md)
++ [AMI allowed instance types](ami-allowed-instance-types.md)
 + [AMI usage](ec2-ami-usage.md)
 + [Deprecate an AMI](ami-deprecate.md)
 + [Disable an AMI](disable-an-ami.md)
 + [Deregister an AMI](deregister-ami.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

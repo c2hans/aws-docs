@@ -104,3 +104,7 @@ Note the little plus and minus signs next to the values in the columns and rows 
 1. Now that you know how to add controls, you might consider adding a control for a start date and end date to give users the ability to set the time being considered across all the visuals.
 
 1. Explore [Quick Sight forecast](https://docs.aws.amazon.com/quicksight/latest/user/forecasts-and-whatifs.html) features to see if you can forecast what your cost per API call will be in the future.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

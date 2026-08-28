@@ -62,3 +62,7 @@ The following are best practices and considerations for troubleshooting your tas
 + Use the command `df -Ph . | awk 'NR==2 {print $4}'` in a tasks script to determine the space currently available to the task and help identify situations where you might need to run the workflow with additional storage allocation.
 
 Including any of the preceding commands in a task script assumes that the task container also includes these commands and that they are on the `path` of the container environment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

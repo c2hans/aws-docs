@@ -32,3 +32,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/hybrid-clou
 + [Sharing Amazon EC2 in a multi account AWS environment: Part 2](https://aws.amazon.com/blogs/mt/best-practices-aws-outposts-in-a-multi-account-aws-environment-part-2/)
 + [AWS Direct Connect and AWS Local Zones interoperability patterns](https://aws.amazon.com/blogs/networking-and-content-delivery/aws-direct-connect-and-aws-local-zones-interoperability-patterns/)
 + [Deploy Amazon RDS on Amazon EC2 with Multi-AZ high availability](https://aws.amazon.com/blogs/database/deploy-amazon-rds-on-aws-outposts-with-multi-az-high-availability/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

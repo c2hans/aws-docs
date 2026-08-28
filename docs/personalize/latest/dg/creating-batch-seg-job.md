@@ -236,3 +236,7 @@ run();
 ------
 
 Processing the batch job might take a while to complete. You can check a job's status by calling [DescribeBatchSegmentJob](API_DescribeBatchSegmentJob.md) and passing a `batchSegmentJobArn` as the input parameter. You can also list all Amazon Personalize batch segment jobs in your AWS environment by calling [ListBatchSegmentJobs](API_ListBatchSegmentJobs.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

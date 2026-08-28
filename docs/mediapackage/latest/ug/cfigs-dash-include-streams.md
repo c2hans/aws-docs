@@ -19,3 +19,7 @@ To set minimum and maximum bitrates and sort the output, select **Enable stream 
 1. (Optional) For **Min video bitrate**, enter the minimum bitrate threshold (in bits per second) that video tracks must be at or above to be available for playback from this endpoint. This ensures that tracks are *at least* a certain bitrate.
 
 1. (Optional) For **Max video bitrate**, enter the maximum bitrate threshold (in bits per second) that video tracks must be at or below to be available for playback from this endpoint. This ensures that tracks are *no more than* a certain bitrate.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

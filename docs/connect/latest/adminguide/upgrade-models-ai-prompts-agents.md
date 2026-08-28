@@ -235,3 +235,7 @@ Replace {{AGENT\_TYPE}} with the use case type (for example, `ANSWER_RECOMMENDAT
 + **Region availability:** Model availability varies by AWS Region. Check the supported models table before selecting a model. For more information, see [Supported models for system/custom prompts](create-ai-prompts.md#cli-create-aiprompt).
 + **Session-level overrides:** AI agent versions set on sessions take precedence over assistant-level defaults, which take precedence over system defaults. If you set AI agent versions at the session level, you must also update those references.
 + **Reverting to system defaults:** To switch a use case back to the system AI agent using the admin website, navigate to *AI agent designer*, *AI agents*. In the *Default AI Agent Configurations* section, find the use case, select the system AI agent from the agent dropdown, choose the desired version or *Latest*, and choose *Save*. Using the CLI, run `list-ai-agents --origin SYSTEM` to find the system AI agent ID for the use case type, then set it using `update-assistant-ai-agent`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

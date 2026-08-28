@@ -23,3 +23,7 @@ Stacks can't be assigned to users if the stacks are associated with a fleet that
 1. By default, **Send email notification to user** is enabled. Clear this option if you do not want to send the notification email to users now.
 
 1. Choose **Assign stack**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

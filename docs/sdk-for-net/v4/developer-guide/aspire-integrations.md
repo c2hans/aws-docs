@@ -36,3 +36,7 @@ For additional information and details about how you can use the integrations th
 + Blog posts [Building and Debugging .NET Lambda applications with .NET Aspire (Part 1)](https://aws.amazon.com/blogs/developer/building-lambda-with-aspire-part-1/) and [Building and Debugging .NET Lambda applications with .NET Aspire (Part 2)](https://aws.amazon.com/blogs/developer/building-lambda-with-aspire-part-2/).
 + The [integrations-on-dotnet-aspire-for-aws](https://github.com/aws/integrations-on-dotnet-aspire-for-aws) repo on GitHub.
 + The detailed [README](https://github.com/aws/integrations-on-dotnet-aspire-for-aws/blob/main/src/Aspire.Hosting.AWS/README.md) for the [Aspire.Hosting.AWS](https://www.nuget.org/packages/Aspire.Hosting.AWS) NuGet package.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

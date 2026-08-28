@@ -48,3 +48,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  **User scenario:** We would like to provide some users with the ability to access a wider range of external web sites from some devices but are concerned about the propagation of viruses or malware inside of our organization.
 
  WorkSpaces Secure Browser is hosted by AWS in a secure environment, and each user's browsing instance is destroyed at the end of their session. Standard Chrome policies can be used to lock down each browser instance, and you can fully isolate the browsing environment and optionally have network traffic pass through a web proxy to further limit access to untrusted external sites. This solution significantly reduces the possibility of external browsing activities from compromising your production networks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

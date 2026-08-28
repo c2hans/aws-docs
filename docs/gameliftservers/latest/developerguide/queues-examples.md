@@ -228,3 +228,7 @@ aws gamelift create-game-session-queue \
 + **Managed fleet as overflow** – If your on-premises hardware reaches capacity, the queue falls back to the managed On-Demand fleet in us-east-1. This provides burst capacity without provisioning additional hardware.
 + **Player latency to custom locations** – If you use latency-based placement, players must report latency to the custom location names (for example, `custom-location-dallas`).
 + **Filter includes both custom and AWS locations** – If you use the filter, it must list every location where you want placements to occur. The Anywhere fleet's home Region does not implicitly include its custom locations in the filter, so you must list each custom location explicitly.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -73,3 +73,7 @@ By default, AWS Resilience Hub displays all the resource grouping recommendation
 1. Select one of the reasons for rejecting the resource grouping recommendation and then choose **Reject** in the **Reject resource grouping recommendation** dialog.
 
    AWS Resilience Hub displays an information alert confirming the same. If you have rejected only a subset of resource grouping recommendations, **Review resource grouping recommendations** section displays all the resource grouping recommendations that you have not accepted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

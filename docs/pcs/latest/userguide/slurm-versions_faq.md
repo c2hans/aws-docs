@@ -39,3 +39,7 @@ No, you can’t restart a suspended cluster. You can use your suspended cluster�
 
 **Can I request an extension beyond the 12-month grace period?**
 No, you can’t request an extension to run your cluster beyond the 12-month grace period. We provide the extended time to help you switch to a supported Slurm version. To avoid disruption to your cluster operations, we recommend you switch before your Slurm version reaches EOL.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

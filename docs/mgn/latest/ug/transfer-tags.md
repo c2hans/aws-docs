@@ -22,7 +22,11 @@ AWS Transform MGN automatically adds system tags to all resources.
 **Note**
 Transfer server tags only copies tags associated with the source servers in the AWS Transform MGN console, and does not copy the EC2 source server tags (in case of AWS to AWS migration)
 
- If you choose the **No** option, server tags are not transferred. You can always add tags from the Amazon EC2 console as described in [this EC2 article.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#tag-resources)%5C)
+ If you choose the **No** option, server tags are not transferred. You can always add tags from the Amazon EC2 console as described in [this EC2 article.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/Using_Tags.html#tag-resources)
 
 **Note**
 Tags that are added on the EC2 launch template take precedence over tags that are transferred directly from the source server.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -207,3 +207,7 @@ The following global constants are supported:
 <a name="error-types"></a>
 
 Throwing errors with `throw` is not supported. You can return an error by using `util.error()` function. You can include an error in your handler response by using the `util.appendError` function.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

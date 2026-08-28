@@ -25,3 +25,7 @@ After your host is created, it is in a **Pending** status. To move the host from
 ![Console screenshot showing the host setup is complete and in Available status.](http://docs.aws.amazon.com/dtconsole/latest/userguide/images/connections-create-host-register-complete.png)
 
 1. You can continue with creating your connection after the host is available. On the success banner, choose **Create connection**. Complete the steps in [Create a connection](connections-create-gheserver-console.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -161,3 +161,7 @@ https://smdataparallel.s3.amazonaws.com/binary/pytorch/2.0.1/cu118/2023-12-07/sm
 
 **Other changes**
 + Starting from this release, documentation for the SMDDP library is fully available in this *Amazon SageMaker AI Developer Guide*. In favor of the complete developer guide for SMDDP v2 housed in the *Amazon SageMaker AI Developer Guide*, documentation for the [additional reference for SMDDP v1.x](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) in the *SageMaker AI Python SDK documentation* is no longer supported. If you still need SMP v1.x documentation, see the following snapshot of the documentation at [SageMaker Python SDK v2.212.0 documentation](https://sagemaker.readthedocs.io/en/v2.212.0/api/training/distributed.html#the-sagemaker-distributed-data-parallel-library).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

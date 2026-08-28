@@ -31,3 +31,7 @@ The core device updates its credential storage at three times:
 When the Greengrass core device refreshes its credential store, it uses the [ ListClientDevicesAssociatedWithCoreDevice](https://docs.aws.amazon.com/greengrass/v2/APIReference/API_ListClientDevicesAssociatedWithCoreDevice.html) operation. Greengrass only refreshes the devices returned by this operation. To associate a client device with a core device, see [Associate client devices](associate-client-devices.md).
 
 To use the `ListClientDevicesAssociatedWithCoreDevice` operation, you must add permission for the operation to the AWS Identity and Access Management (IAM) role associated with the AWS account that runs AWS IoT Greengrass. For more information, see [Authorize core devices to interact with AWS services](device-service-role.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Greengrass. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query greengrass` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

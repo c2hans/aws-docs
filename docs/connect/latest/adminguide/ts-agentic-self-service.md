@@ -29,3 +29,7 @@ If your AI agent fails to invoke MCP tools during a conversation, check the foll
 
 If MCP tool calls return access denied errors, verify that the IAM roles have the required permissions:
 + **Amazon Bedrock AgentCore Gateway role** – The gateway's execution role must have permission to invoke the backend APIs or Lambda functions that your MCP tools connect to.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

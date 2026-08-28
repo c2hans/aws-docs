@@ -28,3 +28,7 @@ The following libraries and tools will help you work with Amazon Data Firehose p
 
   If your version of the AWS SDK for Java does not include samples for Amazon Data Firehose, you can also download the latest AWS SDK from [GitHub](https://github.com/aws/aws-sdk-java/tree/master/src/samples).
 + The [AWS Command Line Interface](https://docs.aws.amazon.com/cli/latest/userguide/) supports Amazon Data Firehose. The AWS CLI enables you to control multiple AWS services from the command line and automate them through scripts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

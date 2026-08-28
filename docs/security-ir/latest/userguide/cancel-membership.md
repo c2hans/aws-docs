@@ -24,3 +24,7 @@ Your membership is deleted and you won't further access to the cases on the memb
 
 **Important**
  After you cancel your membership, the service-linked roles `AWSServiceRoleForSecurityIncidentResponse` and `AWSServiceRoleForSecurityIncidentResponse_Triage` are not automatically deleted. You must manually delete these roles from all accounts that were within the scope of the AWS Security Incident Response service. For instructions, see [Deleting a service-linked role](https://docs.aws.amazon.com/IAM/latest/UserGuide/using-service-linked-roles.html#delete-service-linked-role) in the *IAM User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Incident Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-ir` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

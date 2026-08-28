@@ -15,3 +15,7 @@ To learn how to create an IAM identity-based policy using these example JSON pol
 + [AWS managed policy: AmazonChimeVoiceConnectorServiceLinkedRolePolicy](cvc-linked-role-policy.md)
 + [AWS managed policy: AmazonChimeSDKMediaPipelinesServiceLinkedRolePolicy](media-pipeline-service-linked-role-policy.md)
 + [Amazon Chime updates to AWS managed policies](security-iam-awsmanpol-updates.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

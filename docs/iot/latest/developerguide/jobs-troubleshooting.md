@@ -86,3 +86,7 @@ Confirm the correct API command is entered to avoid an error message stating the
 An error code 503 `ServiceUnavailable` indicates the error originated from the server side.
 + See [AWS Health Dashboard (all AWS services)](https://health.aws.amazon.com/health/status) for the current status of all AWS services.
 + See [AWS Health Dashboard (personal AWS account)](https://aws.amazon.com/premiumsupport/technology/aws-health-dashboard/) for the current status of your personal AWS account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

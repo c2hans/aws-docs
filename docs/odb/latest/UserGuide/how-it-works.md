@@ -229,3 +229,7 @@ Key differences from Autonomous Database on Dedicated Exadata Infrastructure:
 <a name="how-it-works.exadata-dbs"></a>
 
 Oracle Exadata is an engineered system that provides a high-performance platform for running Oracle databases. With Oracle Database@AWS, you use the AWS console to create the Oracle Exadata infrastructure and VM clusters that host the Exadata databases. You then use OCI APIs to create and manage the Oracle databases. For more information, see [Step 4: Create Oracle Exadata databases in Oracle Cloud Infrastructure](getting-started.md#getting-started-db).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Oracle Database at AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query odb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,3 +55,7 @@ Implement a standardized process across your organization to identify and remove
  **Related examples:**
 +  [Delete or terminate Amazon EC2 resources](https://aws.amazon.com/premiumsupport/knowledge-center/delete-terminate-ec2/)
 +  [Find out which user launched an Amazon EC2 instance](https://aws.amazon.com/premiumsupport/knowledge-center/ec2-user-launched-instance/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

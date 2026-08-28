@@ -42,3 +42,7 @@ The following example uses the AWS Lambda platform, but if you want to use conta
 
 **Note**
 The signatures generated when using cross-account signing are embedded with the signing profile ARN of the owner account. The owner account is the account that created the signing profile. For verifying signed Lambda .zip archives, you must configure your Lambda code signing configuration to use the signing profile version ARN of the owner account. For verifying signed container images, you must configure the Notation trust policy to use the signing profile ARN of the owner account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Signer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ If you are using AWS Organizations to manage accounts within AWS standard region
 You can create a new AWS Organizations within the AWS GovCloud (US) partition by creating a set of new accounts, creating a new AWS Organizations root within one of the new accounts, and inviting the other AWS GovCloud (US) accounts to the new AWS Organization. Follow the steps for [inviting accounts to an organization](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_manage_accounts_invites.html) here. This will result in separate AWS Organization, one in each partition.
 
 ![AWS Standard and GovCloud account structures with mapped relationships between regions.](http://docs.aws.amazon.com/govcloud-us/latest/UserGuide/images/org_std-govcloud.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

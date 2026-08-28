@@ -142,3 +142,7 @@ This example shows how to set up a limit for 5 V-Ray floating licenses and verif
 1. Submit the job. The scheduler allows at most 5 tasks with `amount.vray` to run concurrently across all jobs in the queue. Additional tasks remain in the `READY` state until a slot becomes available.
 
 To verify the limit is working, temporarily set `maxCount` to 1 and submit two jobs. The first job runs while the second remains in the `READY` state until the first completes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

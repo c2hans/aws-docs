@@ -26,3 +26,7 @@ You set up SCTE-35 markers in each output individually, but you enable or disabl
    If you specify an image here, the service inserts the image on all video frames inside the ad avail. If you don't specify an image, the service uses a black slate instead.
 
    Blanking images must be .png or .bmp files that are the same size or smaller, in pixels, as the output video resolution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

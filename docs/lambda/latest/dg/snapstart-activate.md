@@ -205,3 +205,7 @@ Lambda deletes snapshots when:
 + **Java runtimes only** — You don't invoke the function version for 14 days. After 14 days without an invocation, the function version transitions to the [Inactive](#snapstart-function-states) state. If you invoke the function version after 14 days, Lambda returns a `SnapStartNotReadyException` response and begins initializing a new snapshot. Wait until the function version reaches the [Active](#snapstart-function-states) state, and then invoke it again.
 
 Lambda removes all resources associated with deleted snapshots in compliance with the General Data Protection Regulation (GDPR).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

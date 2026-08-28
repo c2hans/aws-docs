@@ -33,3 +33,7 @@ Note that Elemental Live does not support rendition groups for video. They do su
 + [Examples of HLS rendition groups](hls-rendition-groups-examples.md)
 + [Creating HLS rendition groups](hls-rendition-groups-create.md)
 + [Sample HLS output group with audio rendition group event manifest](hls-rendition-groups-sample-manifest.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

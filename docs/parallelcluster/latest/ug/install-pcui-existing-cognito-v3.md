@@ -21,3 +21,7 @@ Complete the following steps to use an existing Amazon Cognito user pool with a 
    + `SNSRole`
 
 1. Deploy a new PCUI instance by using the quick-create link, and fill in all `External PCUI Amazon Cognito` parameters with the outputs that you copied. This prevents the new PCUI stack from creating a new pool and links it to the existing Amazon Cognito user pool that was created from a nested stack. You can deploy subsequent new PCUI instances that have the same parameter values, and you can link them to the Amazon Cognito user pool.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

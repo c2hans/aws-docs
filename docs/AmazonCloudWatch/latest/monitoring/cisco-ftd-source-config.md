@@ -147,3 +147,7 @@ This integration supports OCSF schema version v1.5.0 and transforms the followin
 **Authorize Session** contains the following [Syslog IDs](https://www.cisco.com/c/en/us/td/docs/security/firepower/Syslogs/fptd_syslog_guide/syslogs1.html):
 
 109100, 109101, 109102, 109103, 109104, 113003, 113011, 113034, 113036, 501101, 634001, 734001, 734003, 113015, 113018, 113030, 113031, 113032, 113041, 113042, 730002, 734002, 109016, 109018, 109019, 109020, 109029, 109030, 109032, 109033, 109034, 109035, 109036, 109037, 109038, 610101, 734004
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ When you use a security configuration with in-transit encryption, Amazon EMR doe
 In addition, with Amazon EMR release version 5.10.0 and later, you can set up [LDAP authentication](https://prestodb.io/docs/current/security/ldap.html) for client connections to the Presto coordinator using HTTPS. This setup uses secure LDAP (LDAPS). TLS must be enabled on your LDAP server, and the Presto cluster must use a security configuration with in-transit data encryption enabled. Additional configuration is required. The configuration options are different depending on the release version of Amazon EMR that you use. For more information, see [Using LDAP authentication for Presto on Amazon EMR](emr-presto-ldap.md).
 
 Presto on Amazon EMR uses port 8446 for internal HTTPS by default. The port used for internal communication must be the same port used for client HTTPS access to the Presto coordinator. The `http-server.https.port` property in the `presto-config` configuration classification specifies the port.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

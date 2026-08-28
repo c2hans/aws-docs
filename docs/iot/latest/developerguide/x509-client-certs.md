@@ -96,3 +96,7 @@ The table below shows how key algorithms are supported:
 To create a certificate using [CreateCertificateFromCSR](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateCertificateFromCsr.html), you can use a supported key algorithm to generate a public key for your CSR. To register your own certificate using [RegisterCertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCertificate.html) or [RegisterCertificateWithoutCA](https://docs.aws.amazon.com/iot/latest/apireference/API_RegisterCertificateWithoutCA.html), you can use a supported key algorithm to generate a public key for the certificate.
 
 For more information, see [Security policies](https://docs.aws.amazon.com/iot/latest/developerguide/transport-security.html#tls-policy-table).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

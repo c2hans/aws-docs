@@ -446,3 +446,7 @@ Replace {{<account-id>}} with a valid AWS account number, and {{<region>}} with 
 <a name="getting-started-tutorial-grant-revoke-redshift"></a>
 
 Amazon Redshift supports the ability to grant and revoke Lake Formation permissions on databases and tables using modified SQL statements. These statements are similar to the existing Amazon Redshift statements. For more information, see [GRANT](https://docs.aws.amazon.com/redshift/latest/dg/r_GRANT.html) and [REVOKE](https://docs.aws.amazon.com/redshift/latest/dg/r_REVOKE.html) in the *Amazon Redshift Database Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

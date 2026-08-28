@@ -250,3 +250,7 @@ Individual WorkSpaces Applications base image and WorkSpaces Applications agent 
 | [ SAML 2.0 support](external-identity-providers.html) | Created "Single Sign-on Access to WorkSpaces Applications Using SAML 2.0" and updated other content as needed. | February 15, 2017 |
 | [ Image builders](managing-image-builders.html) | Created "WorkSpaces Applications Image Builders" and updated other content as needed. | January 19, 2017 |
 | [ Initial documentation release](what-is-appstream.html) | Created the initial release of the Amazon WorkSpaces Applications Administration Guide. | December 01, 2016 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

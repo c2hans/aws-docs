@@ -33,3 +33,7 @@ The following rules apply:
 Elastic IP addresses are regional. For more information about using Global Accelerator to provision global IP addresses, see [Using global static IP addresses instead of regional static IP addresses](https://docs.aws.amazon.com/global-accelerator/latest/dg/about-accelerators.eip-accelerator.html) in the *AWS Global Accelerator Developer Guide*.
 
 For more information about pricing for Elastic IP addresses, see *Public IPv4 address* in [Amazon VPC Pricing](https://aws.amazon.com/vpc/pricing/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -46,3 +46,7 @@ AWS CloudShell environments currently include pre-installed software. To learn a
 <a name="migration-backup"></a>
 
 AWS CloudShell will continue to persist the user home directory. For more information, see [Service quotas and restrictions for AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/limits.html#persistent-storage-limitations). If you have any files or configurations stored in your home folder and if you want to create a backup for the same, complete [Step 6: Create a home directory backup](https://docs.aws.amazon.com/cloudshell/latest/userguide/getting-started.html#home-directory-backup).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

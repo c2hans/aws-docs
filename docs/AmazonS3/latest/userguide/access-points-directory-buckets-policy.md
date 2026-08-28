@@ -45,3 +45,7 @@ You can use the REST API `GetAccessPointPolicy`, `DeleteAccessPointPolicy`, and 
 <a name="access-points-directory-buckets-edit-policy-sdk"></a>
 
 You can use the AWS SDKs to view, delete, or edit an access point policy. For more information, see the list of supported SDKs for [GetAccessControlPolicy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_GetAccessPointPolicy.html#API_control_PutAccessPointPolicy_SeeAlso), [DeleteAccessControlPolicy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_DeleteAccessPointPolicy.html#API_control_PutAccessPointPolicy_SeeAlso), and [PutAccessControlPolicy](https://docs.aws.amazon.com/AmazonS3/latest/API/API_control_PutAccessPointPolicy.html#API_control_PutAccessPointPolicy_SeeAlso) in the Amazon Simple Storage Service API Reference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

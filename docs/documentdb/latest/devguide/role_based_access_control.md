@@ -792,3 +792,7 @@ In Amazon DocumentDB 4.0 and 5.0, the `ListCollection` and `ListDatabase` comman
 | restore | Grants a user the access needed to restore data. | `bypassDocumentValidation`<br />`changeCustomData`<br />`changePassword`<br />`collMod`<br />`createCollection`<br />`createIndex`<br />`createUser`<br />`dropCollection`<br />`dropRole`<br />`dropUser`<br />`getParameter`<br />`grantRole`<br />`find`<br />`insert`<br />`listCollections`<br />`modifyChangeStreams`<br />`revokeRole`<br />`remove`<br />`viewRole`<br />`viewUser`<br />`update` |
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

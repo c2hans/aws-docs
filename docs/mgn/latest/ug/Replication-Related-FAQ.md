@@ -4,7 +4,7 @@ source_url: https://docs.aws.amazon.com/mgn/latest/ug/Replication-Related-FAQ.ht
 
 NEW - You can now accelerate your migration and modernization with AWS Transform. Read [Getting Started](https://docs.aws.amazon.com/transform/latest/userguide/getting-started.html) in the *AWS Transform User Guide*.
 
-# Replication related
+# Replication related FAQs
 <a name="Replication-Related-FAQ"></a>
 
 This section contains answers to questions about data replication.
@@ -212,3 +212,7 @@ https://al2023-repos-{{region}}-de612dc2.s3.dualstack.{{region}}.amazonaws.com
 1. **Isolated subnets with a restrictive S3 VPC Gateway Endpoint policy**. Add `arn:aws:s3:::al2023-repos-{{region}}-de612dc2/*` to your endpoint policy to allow the replication server to download AL2023 packages.
 
 1. **Security or compliance policies that require pre-approval of new operating systems**. If your policy requires explicit approval of new operating systems or AMI IDs before they run in your account (for example, OS allowlisting, change management controls, or regulatory requirements), plan accordingly before August 15, 2026.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

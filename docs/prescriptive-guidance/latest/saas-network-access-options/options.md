@@ -18,3 +18,7 @@ For consumers on the AWS Cloud, services such as AWS PrivateLink offer significa
 + [SaaS consumers operating on-premises](options-onprem.md)
 + [SaaS consumers operating on other cloud service providers](options-other-csps.md)
 + [Supporting hybrid environments](options-hybrid.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

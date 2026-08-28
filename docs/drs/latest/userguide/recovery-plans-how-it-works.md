@@ -24,3 +24,7 @@ Because each server step launches its servers in parallel, a step takes as long 
 **Important**
 An execution must finish within 24 hours of the time it started. If it does not, AWS Elastic Disaster Recovery stops advancing the plan and marks the step that was running as `TIMED_OUT`. AWS Elastic Disaster Recovery does not cancel the recovery jobs that are already in progress, and those jobs run to completion. The steps after the timed-out step do not run, and you cannot resume the execution. To finish the recovery, start a new execution of the plan, or recover the remaining servers individually.
 Size your plans so that they finish well inside this limit. A step takes as long as its slowest server, so the practical ceiling is the sum of your server steps plus the sum of your wait steps.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

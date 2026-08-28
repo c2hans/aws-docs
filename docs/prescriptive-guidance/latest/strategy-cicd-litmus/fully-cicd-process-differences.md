@@ -33,3 +33,7 @@ The following image shows a trunk-based workflow. In a trunk-based workflow, dev
 ![A trunk-based workflow with feature branches and a main branch.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-cicd-litmus/images/guide-img/de5d2132-0072-4b65-b7ac-e1e4c4852e08/images/024c2b91-8247-4d1a-b049-7d208461bef5.png)
 
 Using this workflow, all environments are operating the same code base. There is no need for a hotfix branch for the upper environments because you can implement changes in the main branch without exposing unreleased features. The main branch is always assumed to be stable, free of defects, and ready to release. This helps you integrate it as a source for a CI/CD pipeline, which can automatically test and deploy your code base through all environments in your pipeline.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

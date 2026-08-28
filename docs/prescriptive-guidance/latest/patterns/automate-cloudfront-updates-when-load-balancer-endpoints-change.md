@@ -138,3 +138,7 @@ However, this workflow demonstrates a problem. The application deployments are h
 **Alternative solution**
 
 Another possible solution is to create an [external DNS](https://github.com/kubernetes-sigs/external-dns) for the ALB and then point it to the Amazon Route 53 private hosted zone endpoint in CloudFront. However, this approach adds another hop in the application flow, which might cause application latency. This pattern’s Lambda function solution doesn’t disrupt current flow.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

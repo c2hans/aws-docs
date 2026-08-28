@@ -36,3 +36,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/monitoring-river-leve
  The Lambda decoder function allows other applications and devices to subscribe to messages arriving via LoRaWAN through the use of the [MQTT](https://docs.aws.amazon.com/iot/latest/developerguide/mqtt.html) protocol and a designated topic. Depending on the precise use case, the Lambda function could be modified to undertake alternative tasks, such as directly invoking an [AWS SDK API](https://aws.amazon.com/tools/) call to forward data to other AWS services, or updating the device shadow.
 
 ![Diagram showing solution overview](http://docs.aws.amazon.com/whitepapers/latest/monitoring-river-levels-using-lorawan/images/solution-overview.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

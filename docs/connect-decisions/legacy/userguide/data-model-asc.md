@@ -89,3 +89,7 @@ For information on application datasets displayed in AWS Supply Chain Analytics,
 **Note**
 All fields marked as type *timestamp* should be in ISO 8601 format.
 The dataset that you ingest into AWS Supply Chain can only include the following special characters: ASCII 35 (number sign: \#), 36 (dollar sign: $), 37 (percent sign: %), 45 (hyphen: -), 46 (period: .), 47 (slash: /), 94 (caret), 95 (underscore: \_), 123 (left curly brace: { ), and 125 (right curly brace: }).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

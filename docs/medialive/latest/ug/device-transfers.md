@@ -62,3 +62,7 @@ If you are expecting to receive a device transfer, you should regularly check th
 1. In the list of transfers, choose the device that you want to accept, then choose **Accept** or **Reject**.
 
 1. In the navigation pane, choose **Input devices** again. The device now appears in the list of devices on the **Input devices** page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

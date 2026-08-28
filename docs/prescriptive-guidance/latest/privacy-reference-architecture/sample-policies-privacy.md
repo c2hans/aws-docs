@@ -17,3 +17,7 @@ This section contains the following sample policies:
 + [Grant access to specific Amazon DynamoDB attributes](grant-access-dynamodb-attributes.md)
 + [Restrict changes to VPC configurations](restrict-changes-vpc-configurations.md)
 + [Require attestation to use an AWS KMS key](require-attestation-for-kms-key.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

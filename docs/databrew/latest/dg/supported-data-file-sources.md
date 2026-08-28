@@ -21,3 +21,7 @@ CSV, Excel, and JSON files must be encoded with Unicode (UTF-8).<a name="dataset
 | JSON (JSON document and JSON lines) | `.json, .jsonl` | `.gz`<br />`.snappy`<br />`.lz4`<br />`.bz2`<br />`.deflate` |
 | Apache ORC | `.orc` | `.zlib`<br />`.snappy` |
 | Apache Parquet | `.parquet` | `.gz`<br />`.snappy`<br />`.lz4` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

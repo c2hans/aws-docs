@@ -21,3 +21,7 @@ If you use SDKs for development, the SDK clients will use the temporary credenti
 Authenticating via the login command is supported by both AWS CLI and Tools for PowerShell:
 + [Login for AWS local development using console credentials](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sign-in.html)
 + [Login using console credentials](https://docs.aws.amazon.com/powershell/v5/userguide/creds-idc.html#login-con-creds) in the AWS Tools for PowerShell user guide
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdkref` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

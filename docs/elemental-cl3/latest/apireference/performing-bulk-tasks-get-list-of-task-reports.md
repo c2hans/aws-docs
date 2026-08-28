@@ -57,3 +57,7 @@ with the following.
 1. Parse the response for the complete Boolean .
 
 1. Before that final resolution, you may want to check on the status of individual task items: send a [GET task\_reports/<task ID>](performing-bulk-tasks-get-one-task-report.md), passing in the ID you saved earlier. Parse the <tasks> array of the response for tasks that are not successful or failed. If necessary for a status of a channel, check the ID within the individual <task> for the channel.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

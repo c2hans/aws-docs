@@ -176,3 +176,7 @@ ORDER BY stream_id, segment_id, step_id;
      1553 |                    1 |         2 |          3 |      -1 |           | 2024-10-17 02:28:49.847013 | 2024-10-17 02:28:49.847485 | segment
 (8 rows)
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

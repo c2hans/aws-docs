@@ -68,3 +68,7 @@ The following is the changelog for platform version `1.0.0`.
 Platform version `1.0.0` is no longer available. For information about platform version deprecation, see [AWS Fargate Linux platform version deprecation](#platform-versions-retired).
 + Based on Amazon Linux 2017.09.
 + Initial release.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

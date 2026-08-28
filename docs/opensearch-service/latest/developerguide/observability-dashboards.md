@@ -256,3 +256,7 @@ The panel inspector helps you debug data and query issues. To open the inspector
 <a name="observability-dashboards-troubleshooting-browser"></a>
 
 For advanced troubleshooting, use your browser developer tools to inspect network requests. Open the **Network** tab, filter for API calls, and look for failed requests or slow responses. Check the response body for error messages that can help you identify the root cause.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

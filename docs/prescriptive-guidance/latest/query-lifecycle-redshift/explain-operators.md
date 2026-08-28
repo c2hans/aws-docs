@@ -77,3 +77,7 @@ The following operators also appear frequently in `EXPLAIN` output for routine q
 + **Subplan** – Used for certain subqueries
 + **Network** – Sends intermediate results to the leader node for further processing
 + **Materialize** – Saves rows for input to nested loop joins and some merge joins
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ Complete the following procedure to create actions in a custom AWS service envir
 1. On the AWS console links page, choose links (actions) from the **Popular AWS links** or the **Custom AWS links** sections to enable deep links to your Amazon S3 buckets, Amazon Athena workgroups, AWS Glue jobs, or to any other custom AWS console resource from this environment via the Amazon DataZone data portal.
 
 1. If you navigate to this environment in the data portal by using the **Data portal link** from the **Summary** section of this environment, you can see the deep links that you've added under the **Analytics tools** section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DataZone. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datazone` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

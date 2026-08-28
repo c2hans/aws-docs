@@ -128,3 +128,7 @@ View details about updates to AWS managed policies for Amazon SageMaker AI since
 | [AmazonSageMakerPipelinesIntegrations](#security-iam-awsmanpol-AmazonSageMakerPipelinesIntegrations) - Update to an existing policy | 3 |  Added permissions for `elasticmapreduce:RunJobFlows`, `elasticmapreduce:TerminateJobFlows`, `elasticmapreduce:ListSteps`, and `elasticmapreduce:DescribeCluster`. | February 17, 2023 |
 | [AmazonSageMakerPipelinesIntegrations](#security-iam-awsmanpol-AmazonSageMakerPipelinesIntegrations) - Update to an existing policy | 2 | Added permissions for `lambda:GetFunction`, `events:DescribeRule`, `events:PutRule`, `events:PutTargets`, `elasticmapreduce:AddJobFlowSteps`, `elasticmapreduce:CancelSteps`, and `elasticmapreduce:DescribeStep`. | April 20, 2022 |
 | AmazonSageMakerPipelinesIntegrations - New policy | 1 | Initial policy | July 30, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

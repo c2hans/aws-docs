@@ -88,3 +88,7 @@ Your `.ipa` package must be built for testing.
 1. Complete the remaining steps in the project creation process. You will select the devices that you want to test on and specify the device state.
 
 1. Choose **Create run**. Device Farm runs your test and shows the results in the console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

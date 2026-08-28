@@ -131,3 +131,7 @@ You can find virtual workshops by choosing the **Services** dropdown list and se
 <a name="Billing-gethelp"></a>
 
 If you have questions about any Billing features, there are many resources available for you. To learn more, see [Getting help with your bills and payments](billing-get-answers.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

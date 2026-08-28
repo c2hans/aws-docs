@@ -190,3 +190,7 @@ You must use `AWS_IAM` authorization for every method in your API, or else your 
 To troubleshoot this error, we first recommend that you check the policy syntax. For more information, see [Access policy language overview for Amazon API Gateway](apigateway-control-access-policy-language-overview.md). We also recommend that you check that all the principals specified are valid and haven’t been deleted.
 
 In addition, if your API is in an [opt-in Region](https://docs.aws.amazon.com/glossary/latest/reference/glos-chap.html?icmpid=docs_homepage_addtlrcs#optinregion), verify that all accounts in the resource policy have the Region enabled.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

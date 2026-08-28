@@ -321,3 +321,7 @@ The following metrics apply to the overall OpenSearch Ingestion system. These me
 | jvm.memory.used.value | The total amount of memory used, in bytes.<br />**Relevant statistics**: Average<br />**Dimension**: `PipelineName`, `area`, `id`signa |
 | jvm.memory.committed.value | The amount of memory that is committed for use by the Java virtual machine (JVM), in bytes.<br />**Relevant statistics**: Average<br />**Dimension**: `PipelineName`, `area`, `id` |
 | computeUnits | The number of Ingestion OpenSearch Compute Units (Ingestion OCUs) in use by a pipeline.<br />**Relevant statistics**: Max, Sum, Average<br />**Dimension**: `PipelineName` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

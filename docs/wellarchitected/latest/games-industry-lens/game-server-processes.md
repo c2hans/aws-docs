@@ -11,3 +11,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 
 +  An Amazon EC2 instance is used as a game server, also known as a game server instance. The game server hosts one or more game server processes, and each is running a copy of your game server build. Typically, multiple game server processes are running on a game server instance to utilize compute resources efficiently and reduce costs. When a game session is active and ready to host player sessions, its status is updated with the game backend (usually a matchmaking service) so that it can begin to be used to host players.
 +  The game backend can provide the player with the IP address and server port that is hosting a game session so that they can connect to play.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

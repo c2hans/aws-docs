@@ -287,3 +287,7 @@ query_id | user_query_hash | generic_query_hash | text
 ```
 
 `SELECT * FROM test_table;` and `SELECT col1 FROM test_table;` have the same user\_query\_hash value, since test\_table has only one column. `SELECT * FROM test_table WHERE col1=1;` and `SELECT * FROM test_table WHERE col1=2;` have different user\_query\_hash values, but identical generic\_query\_hash values, since the two queries are identical outside of the query literals 1 and 2.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

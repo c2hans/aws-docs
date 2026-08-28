@@ -167,3 +167,7 @@ Do not rely on the control planes of partitional services in your recovery path.
  Update your SDK and CLI configuration to use the Regional STS endpoints.
  Update your IAM role trust policies to accept SAML logins from multiple Regions. During a failure, update your IdP configuration to use a different Regional SAML endpoint if your preferred endpoint is impaired. Create break-glass users in case your IdP is impaired or unavailable.
  If you require data from the default S3 Storage Lens dashboard during a failure impacting the service in `us-east-1`, create an additional dashboard in an alternate home Region. You can also duplicate any other custom dashboards you have created in additional Regions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

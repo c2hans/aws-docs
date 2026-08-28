@@ -60,3 +60,7 @@ These use cases require strong governance and time-bound recycling processes to 
 + If you are using a distributed permissions model, where each account manages their own permissions, or a centralized permissions model through AWS CloudFormation StackSets, consider using IAM federation. If you are using a hybrid model that involves both centralized and distributed permissions, consider using IAM Identity Center. For more information, see [Identity providers and federation](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_providers.html) in the IAMdocumentation.
 + Services and features such as Amazon Q Developer Professional and AWS CLI version 2 have built-in support for IAM Identity Center. However, some of those capabilities aren't supported with IAM federation.
 + IAM Access Analyzer currently doesn't support the analysis of IAM Identity Center users actions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

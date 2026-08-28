@@ -18,3 +18,7 @@ If you are nearing the quota, consider requesting a quota increase. Otherwise, y
 
 **Note**
 If you are reviewing IAM roles in an account that is already using IAM Identity Center, you might notice role names beginning with “AWSReservedSSO\_”. These are the roles which the IAM Identity Center service has created in the account, and they came from assigning a permission set to the account.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

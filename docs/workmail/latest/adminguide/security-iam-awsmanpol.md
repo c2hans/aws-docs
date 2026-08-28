@@ -41,3 +41,7 @@ View details about updates to AWS managed policies for Amazon WorkMail since thi
 | --- | --- | --- |
 | AWS managed policy updates - Update to an existing policy | The `AmazonWorkMailReadOnlyAccess` and `AmazonWorkMailFullAccess` permissions were updated for Amazon WorkMail to support *audit logging*. For more information on the updated permissions, see [Amazon WorkMail identity-based policy examples](security_iam_id-based-policy-examples.md) and for information on audit logging, see [Enabling audit logging](audit-logging.md). | February 14, 2024 |
 | Amazon WorkMail started tracking changes | Amazon WorkMail started tracking changes for its AWS managed policies. | March 1, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

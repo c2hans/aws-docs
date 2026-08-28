@@ -9,6 +9,7 @@ The following table describes important changes to this documentation.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [New per-domain beacon metrics](monitoring-cloudwatch-metrics.md) | Added the `Avail.Impression.Fired`, `Avail.Impression.Retried`, `Avail.Impression.Recovered`, `Avail.Complete.Fired`, `Avail.Complete.Retried`, and `Avail.Complete.Recovered` metrics, and the `AdTrackingDomain` dimension. | August 11, 2026 |
 | [Added ADS timeout, personalization time budget, and concurrency settings](configurations-create.md#configurations-advanced-settings) | Added documentation for configurable ad decision server (ADS) request timeouts, personalization time budgets, and concurrency on playback configurations, including new prefetch timeout settings. | July 23, 2026 |
 | [Account-level dimensions for skipped ad reasons](monitoring-cloudwatch-metrics.md) | Added account-level (no dimensions) emissions for the `SkippedReason` metrics. | July 21, 2026 |
 | [New metric and account-level dimensions](monitoring-cloudwatch-metrics.md) | Added the `Avail.Complete` metric. Added account-level (no dimensions) emissions for the `Requests`, `AdsBilled`, `Avail.Impression`, `Avail.Complete`, `Avail.FilledDuration`, `Avail.Duration`, and `AdDecisionServer.Ads` metrics. | June 30, 2026 |
@@ -137,3 +138,7 @@ The following table describes important changes to this documentation.
 
 **Note**
 The AWS Media Services are not designed or intended for use with applications or in situations requiring fail‐safe performance, such as life safety operations, navigation or communication systems, air traffic control, or life support machines in which the unavailability, interruption or failure of the services could lead to death, personal injury, property damage or environmental damage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

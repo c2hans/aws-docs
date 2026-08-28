@@ -169,3 +169,7 @@ You can enter either the fully qualified name of your domain or the NetBIOS name
 Now that your instance has been joined to the Simple AD Active Directory domain, you can log into that instance remotely and install utilities to manage the directory, such as adding users and groups. The Active Directory Administration Tools can be used to create users and groups. For more information, see [Installing the Active Directory Administration Tools for Simple AD](simple_ad_install_ad_tools.md).
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

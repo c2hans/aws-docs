@@ -54,3 +54,7 @@ In the following steps, you create a user, create a subdirectory for the user, m
    The {{mount-target-DNS}} address identifies the remote EFS file system root.
 
 If you unmount this mount target, the user can't access the directory without remounting, which requires root permissions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

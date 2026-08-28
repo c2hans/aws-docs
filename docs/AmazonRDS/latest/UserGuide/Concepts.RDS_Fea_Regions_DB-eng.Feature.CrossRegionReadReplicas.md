@@ -71,3 +71,7 @@ Cross-Region read replicas with RDS for SQL Server are available in all Regions 
 + RDS for SQL Server 2019 (Version 15.00.4073.23 and higher)
 + RDS for SQL Server 2017 (Version 14.00.3281.6 and higher)
 + RDS for SQL Server 2016 (Version 13.00.6300.2 and higher)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

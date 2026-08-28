@@ -14,3 +14,7 @@ The communication between the edge console application and SiteWise Edge gateway
  In addition to TLS for secrecy and server authenticity, SiteWise Edge uses the SigV4 protocol to establish the authenticity of the edge console application. The SiteWise Edge connector on the SiteWise Edge gateway accepts and stores a password to be able to verify incoming connections from the edge console application, SiteWise Monitor application running within browsers, and other clients based on the AWS IoT SiteWise SDK.
 
 For more information about generating the password and server certificate, see [Manage SiteWise Edge gateways](manage-gateways-ggv2.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

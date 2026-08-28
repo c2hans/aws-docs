@@ -220,3 +220,7 @@ For more information, see the JSON schema in the [AWS Permission Sets module](ht
 **Tips**
 + You can use Terraform [import blocks](https://developer.hashicorp.com/terraform/language/import) to import an existing permission set to the solution.
 + You can use AFT to implement the AWS permission set pipeline in a delegated account. For more information, see [AFT Blueprints](https://awslabs.github.io/aft-blueprints/index.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ For more information about AWS Regions and Availability Zones, see [AWS Global I
 In addition to the AWS global infrastructure, AWS Cloud9 supports specific features to support your data resiliency and backup needs.
 + Integrate AWS Cloud9 with AWS CodeCommit, a version control service hosted by Amazon Web Services that you can use to privately store and manage assets (such as documents, source code, and binary files) in the cloud. For more information, see [Integrate AWS Cloud9 with AWS CodeCommit](https://docs.aws.amazon.com/codecommit/latest/userguide/setting-up-ide-c9.html) in the *AWS CodeCommit User Guide*.
 + Use the Git version control system on AWS Cloud9 development environments to back up files and data on a remote GitHub repository. For more information, see [Visual source control with Git panel](source-control-gitpanel.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

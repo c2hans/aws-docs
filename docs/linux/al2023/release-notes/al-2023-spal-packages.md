@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/linux/al2023/release-notes/al-2023-spal-packages.html
 ---
 
-# List of SPAL packages available as of the 2023.12.20260724 release
+# List of SPAL packages available as of the 2023.12.20260817 release
 <a name="al-2023-spal-packages"></a>
 
 **Important**
@@ -16,7 +16,7 @@ For more information, see [Semi-Permanent Additional Libraries (SPAL)](https://d
 **Note**
 SPAL also ships a debuginfo repository that contains both debuginfo and debugsource packages. For details, see [Installing SPAL debuginfo packages](https://docs.aws.amazon.com/linux/al2023/ug/configure-spal-repository.html#configure-spal-debuginfo-pkgs).
 
-The following list includes all SPAL packages for Amazon Linux 2023 release 2023.12.20260724.
+The following list includes all SPAL packages for Amazon Linux 2023 release 2023.12.20260817.
 
 ## SPAL repository
 <a name="list-packages"></a>
@@ -25,11 +25,11 @@ SPAL contains the following packages across different architectures.
 
 | Package Type | Count |
 | --- | --- |
-| Source | 3022 |
-| Total Binary RPMs | 15546 |
-|  aarch64 binary RPMs | 2857 |
-|  noarch binary RPMs | 9804 |
-|  x86\_64 binary RPMs | 2885 |
+| Source | 3029 |
+| Total Binary RPMs | 15578 |
+|  aarch64 binary RPMs | 2860 |
+|  noarch binary RPMs | 9831 |
+|  x86\_64 binary RPMs | 2887 |
 
 The following list includes SPAL packages for AL2023.
 
@@ -218,7 +218,7 @@ The following list includes SPAL packages for AL2023.
   <tr><td> <code>chromaprint</code> </td><td>src</td><td>1.5.1-1.5.spal2023-1.5.spal2023</td></tr>
   <tr><td> <code>libchromaprint</code> </td><td>aarch64, x86_64</td><td rowspan="2">1.5.1-1.5.spal2023</td></tr>
   <tr><td> <code>libchromaprint-devel</code> </td><td>aarch64, x86_64</td></tr>
-  <tr><td> <code>chromedriver</code> </td><td>aarch64, x86_64</td><td rowspan="5">149.0.7827.155-2.1.spal2023</td></tr>
+  <tr><td> <code>chromedriver</code> </td><td>aarch64, x86_64</td><td rowspan="5">150.0.7871.186-1.1.spal2023</td></tr>
   <tr><td> <code>chromium</code> </td><td>src, aarch64, x86_64</td></tr>
   <tr><td> <code>chromium-common</code> </td><td>aarch64, x86_64</td></tr>
   <tr><td> <code>chromium-headless</code> </td><td>aarch64, x86_64</td></tr>
@@ -479,7 +479,7 @@ The following list includes SPAL packages for AL2023.
   <tr><td> <code>file-roller</code> </td><td>src, aarch64, x86_64</td><td rowspan="2">44.6-1.1.spal2023</td></tr>
   <tr><td> <code>file-roller-nautilus</code> </td><td>aarch64, x86_64</td></tr>
   <tr><td> <code>firejail</code> </td><td>src, aarch64, x86_64</td><td>0.9.80-1.1.spal2023</td></tr>
-  <tr><td> <code>fish</code> </td><td>src, aarch64, x86_64</td><td>3.7.1-1.21.spal2023</td></tr>
+  <tr><td> <code>fish</code> </td><td>src, aarch64, x86_64</td><td>4.6.0-1.1.spal2023</td></tr>
   <tr><td> <code>flatpak-spawn</code> </td><td>aarch64, x86_64</td><td rowspan="3">1.0.6-2.5.spal2023</td></tr>
   <tr><td> <code>flatpak-xdg-utils</code> </td><td>src, aarch64, x86_64</td></tr>
   <tr><td> <code>flatpak-xdg-utils-tests</code> </td><td>aarch64, x86_64</td></tr>
@@ -511,7 +511,7 @@ The following list includes SPAL packages for AL2023.
   <tr><td> <code>frei0r-plugins-opencv</code> </td><td>aarch64, x86_64</td></tr>
   <tr><td> <code>frozen</code> </td><td>src</td><td>1.2.0-3.5.spal2023-3.5.spal2023</td></tr>
   <tr><td> <code>frozen-devel</code> </td><td>noarch</td><td>1.2.0-3.5.spal2023</td></tr>
-  <tr><td> <code>frr</code> </td><td>src, aarch64, x86_64</td><td rowspan="2">10.4.1-1.4.spal2023</td></tr>
+  <tr><td> <code>frr</code> </td><td>src, aarch64, x86_64</td><td rowspan="2">10.4.1-2.1.spal2023</td></tr>
   <tr><td> <code>frr-selinux</code> </td><td>noarch</td></tr>
   <tr><td> <code>fuse-overlayfs</code> </td><td>src, aarch64, x86_64</td><td>1.13-1.5.spal2023</td></tr>
   <tr><td> <code>fuse-sshfs</code> </td><td>src, aarch64, x86_64</td><td>3.7.3-2.5.spal2023</td></tr>
@@ -2150,6 +2150,8 @@ The following list includes SPAL packages for AL2023.
   <tr><td> <code>lua-basexx</code> </td><td>src, noarch</td></tr>
   <tr><td> <code>lua5.1-binaryheap</code> </td><td>noarch</td><td rowspan="2">0.4-7.1.spal2023</td></tr>
   <tr><td> <code>lua-binaryheap</code> </td><td>src, noarch</td></tr>
+  <tr><td> <code>lua5.1-bit32</code> </td><td>aarch64, x86_64</td><td rowspan="2">5.3.5.1-1.1.spal2023</td></tr>
+  <tr><td> <code>lua-bit32</code> </td><td>src, aarch64, x86_64</td></tr>
   <tr><td> <code>lua-bitop</code> </td><td>src</td><td>1.0.2-10.1.spal2023-10.1.spal2023</td></tr>
   <tr><td> <code>lua5.1-bitop</code> </td><td>aarch64, x86_64</td><td>1.0.2-10.1.spal2023</td></tr>
   <tr><td> <code>lua-compat53</code> </td><td>src</td><td>0.7-8.5.spal2023-8.5.spal2023</td></tr>
@@ -2489,7 +2491,7 @@ The following list includes SPAL packages for AL2023.
   <tr><td> <code>neofetch</code> </td><td>src, noarch</td><td>7.1.0-7.5.spal2023</td></tr>
   <tr><td> <code>neon</code> </td><td>src, aarch64, x86_64</td><td rowspan="2">0.35.0-3.3.spal2023</td></tr>
   <tr><td> <code>neon-devel</code> </td><td>aarch64, x86_64</td></tr>
-  <tr><td> <code>neovim</code> </td><td>src, x86_64</td><td>0.8.0-3.3.spal2023</td></tr>
+  <tr><td> <code>neovim</code> </td><td>src, aarch64, x86_64</td><td>0.8.0-4.1.spal2023</td></tr>
   <tr><td> <code>netavark</code> </td><td>src, aarch64, x86_64</td><td>1.17.1-1.3.spal2023</td></tr>
   <tr><td> <code>netcat</code> </td><td>src, aarch64, x86_64</td><td>1.238-1.1.spal2023</td></tr>
   <tr><td> <code>netcdf</code> </td><td>src, aarch64, x86_64</td><td rowspan="9">4.8.1-2.18.spal2023</td></tr>
@@ -4653,8 +4655,8 @@ The following list includes SPAL packages for AL2023.
   <tr><td> <code>rust-bindgen0.71+static-devel</code> </td><td>noarch</td></tr>
   <tr><td> <code>rust-bindgen0.71+which-rustfmt-devel</code> </td><td>noarch</td></tr>
   <tr><td> <code>rust-bindgen0.71-devel</code> </td><td>noarch</td></tr>
-  <tr><td> <code>rust-bindgen-cli</code> </td><td>src</td><td>0.71.1-2.3.spal2023-2.3.spal2023</td></tr>
-  <tr><td> <code>bindgen-cli</code> </td><td>aarch64, x86_64</td><td>0.71.1-2.3.spal2023</td></tr>
+  <tr><td> <code>rust-bindgen-cli</code> </td><td>src</td><td>0.72.1-1.1.spal2023-1.1.spal2023</td></tr>
+  <tr><td> <code>bindgen-cli</code> </td><td>aarch64, x86_64</td><td>0.72.1-1.1.spal2023</td></tr>
   <tr><td> <code>rust-bisection</code> </td><td>src</td><td>0.1.0-1.1.spal2023-1.1.spal2023</td></tr>
   <tr><td> <code>rust-bisection+default-devel</code> </td><td>noarch</td><td rowspan="2">0.1.0-1.1.spal2023</td></tr>
   <tr><td> <code>rust-bisection-devel</code> </td><td>noarch</td></tr>
@@ -10592,6 +10594,9 @@ The following list includes SPAL packages for AL2023.
   <tr><td> <code>rust-rsa+std-devel</code> </td><td>noarch</td></tr>
   <tr><td> <code>rust-rsa+u64_digit-devel</code> </td><td>noarch</td></tr>
   <tr><td> <code>rust-rsa-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rsconf</code> </td><td>src</td><td>0.3.0-1.1.spal2023-1.1.spal2023</td></tr>
+  <tr><td> <code>rust-rsconf+default-devel</code> </td><td>noarch</td><td rowspan="2">0.3.0-1.1.spal2023</td></tr>
+  <tr><td> <code>rust-rsconf-devel</code> </td><td>noarch</td></tr>
   <tr><td> <code>rust-rspec</code> </td><td>src</td><td>1.0.0-1.3.spal2023-1.3.spal2023</td></tr>
   <tr><td> <code>rust-rspec+default-devel</code> </td><td>noarch</td><td rowspan="2">1.0.0-1.3.spal2023</td></tr>
   <tr><td> <code>rust-rspec-devel</code> </td><td>noarch</td></tr>
@@ -10665,6 +10670,28 @@ The following list includes SPAL packages for AL2023.
   <tr><td> <code>rust-rustdct</code> </td><td>src</td><td>0.7.1-1.9.spal2023-1.9.spal2023</td></tr>
   <tr><td> <code>rust-rustdct+default-devel</code> </td><td>noarch</td><td rowspan="2">0.7.1-1.9.spal2023</td></tr>
   <tr><td> <code>rust-rustdct-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed</code> </td><td>src</td><td>8.11.0-1.1.spal2023-1.1.spal2023</td></tr>
+  <tr><td> <code>rust-rust-embed+debug-embed-devel</code> </td><td>noarch</td><td rowspan="7">8.11.0-1.1.spal2023</td></tr>
+  <tr><td> <code>rust-rust-embed+default-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed+deterministic-timestamps-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed+hex-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed+include-exclude-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed+interpolate-folder-path-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed-impl</code> </td><td>src</td><td>8.11.0-1.1.spal2023-1.1.spal2023</td></tr>
+  <tr><td> <code>rust-rust-embed-impl+debug-embed-devel</code> </td><td>noarch</td><td rowspan="7">8.11.0-1.1.spal2023</td></tr>
+  <tr><td> <code>rust-rust-embed-impl+default-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed-impl+deterministic-timestamps-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed-impl+include-exclude-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed-impl+interpolate-folder-path-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed-impl+shellexpand-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed-impl-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed-utils</code> </td><td>src</td><td>8.11.0-1.1.spal2023-1.1.spal2023</td></tr>
+  <tr><td> <code>rust-rust-embed-utils+debug-embed-devel</code> </td><td>noarch</td><td rowspan="5">8.11.0-1.1.spal2023</td></tr>
+  <tr><td> <code>rust-rust-embed-utils+default-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed-utils+globset-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed-utils+include-exclude-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-rust-embed-utils-devel</code> </td><td>noarch</td></tr>
   <tr><td> <code>rust-rustfft</code> </td><td>src</td><td>6.2.0-1.8.spal2023-1.8.spal2023</td></tr>
   <tr><td> <code>rust-rustfft+avx-devel</code> </td><td>noarch</td><td rowspan="5">6.2.0-1.8.spal2023</td></tr>
   <tr><td> <code>rust-rustfft+default-devel</code> </td><td>noarch</td></tr>
@@ -13387,6 +13414,11 @@ The following list includes SPAL packages for AL2023.
   <tr><td> <code>rust-wide+serde-devel</code> </td><td>noarch</td></tr>
   <tr><td> <code>rust-wide+std-devel</code> </td><td>noarch</td></tr>
   <tr><td> <code>rust-wide-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-widestring</code> </td><td>src</td><td>1.2.1-1.1.spal2023-1.1.spal2023</td></tr>
+  <tr><td> <code>rust-widestring+alloc-devel</code> </td><td>noarch</td><td rowspan="4">1.2.1-1.1.spal2023</td></tr>
+  <tr><td> <code>rust-widestring+default-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-widestring+std-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-widestring-devel</code> </td><td>noarch</td></tr>
   <tr><td> <code>rust-winnow</code> </td><td>src</td><td>1.0.3-1.1.spal2023-1.1.spal2023</td></tr>
   <tr><td> <code>rust-winnow+alloc-devel</code> </td><td>noarch</td><td rowspan="11">1.0.3-1.1.spal2023</td></tr>
   <tr><td> <code>rust-winnow+ascii-devel</code> </td><td>noarch</td></tr>
@@ -13561,6 +13593,9 @@ The following list includes SPAL packages for AL2023.
   <tr><td> <code>rust-xml-rs</code> </td><td>src</td><td>0.8.28-1.3.spal2023-1.3.spal2023</td></tr>
   <tr><td> <code>rust-xml-rs+default-devel</code> </td><td>noarch</td><td rowspan="2">0.8.28-1.3.spal2023</td></tr>
   <tr><td> <code>rust-xml-rs-devel</code> </td><td>noarch</td></tr>
+  <tr><td> <code>rust-xterm-color</code> </td><td>src</td><td>1.0.2-1.1.spal2023-1.1.spal2023</td></tr>
+  <tr><td> <code>rust-xterm-color+default-devel</code> </td><td>noarch</td><td rowspan="2">1.0.2-1.1.spal2023</td></tr>
+  <tr><td> <code>rust-xterm-color-devel</code> </td><td>noarch</td></tr>
   <tr><td> <code>rust-xz2</code> </td><td>src</td><td>0.1.7-1.4.spal2023-1.4.spal2023</td></tr>
   <tr><td> <code>rust-xz2+default-devel</code> </td><td>noarch</td><td rowspan="2">0.1.7-1.4.spal2023</td></tr>
   <tr><td> <code>rust-xz2-devel</code> </td><td>noarch</td></tr>
@@ -14053,7 +14088,7 @@ The following list includes SPAL packages for AL2023.
   <tr><td> <code>syslog-ng-snmp</code> </td><td>aarch64, x86_64</td></tr>
   <tr><td> <code>tagsoup</code> </td><td>src, noarch</td><td rowspan="2">1.2.1-28.1.spal2023</td></tr>
   <tr><td> <code>tagsoup-javadoc</code> </td><td>noarch</td></tr>
-  <tr><td> <code>tailscale</code> </td><td>src, aarch64, x86_64</td><td>1.58.2-1.1.spal2023</td></tr>
+  <tr><td> <code>tailscale</code> </td><td>src, aarch64, x86_64</td><td>1.94.2-1.1.spal2023</td></tr>
   <tr><td> <code>tcp_wrappers</code> </td><td>src, aarch64, x86_64</td><td rowspan="2">7.6-97.1.spal2023</td></tr>
   <tr><td> <code>tcp_wrappers-libs</code> </td><td>aarch64, x86_64</td></tr>
   <tr><td> <code>tcpreplay</code> </td><td>src, aarch64, x86_64</td><td>4.5.2-1.1.spal2023</td></tr>
@@ -14530,3 +14565,7 @@ The following list includes SPAL packages for AL2023.
   <tr><td> <code>zxing-cpp-devel</code> </td><td>aarch64, x86_64</td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

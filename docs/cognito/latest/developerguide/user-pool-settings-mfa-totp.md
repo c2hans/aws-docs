@@ -97,7 +97,9 @@ At this point, your user signs in with the time-based one-time password. The pro
 ### Remove the TOTP token
 <a name="user-pool-settings-mfa-totp-remove"></a>
 
-Finally, your app should allow your user to deactivate their TOTP configuration. Currently, you can't delete a user's TOTP software token. To replace your user's software token, associate and verify a new software token. To deactivate TOTP MFA for a user, call [SetUserMFAPreference](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SetUserMFAPreference.html) to modify your user to use no MFA, or only SMS MFA.
+Finally, your app should allow your user to deactivate their TOTP configuration. To delete your user's TOTP software token, use [AdminDeleteSoftwareToken](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_AdminDeleteSoftwareToken.html). After you delete your user's software token, they can no longer sign in with TOTP MFA and can register a new software token. Use this operation when your user loses access to their TOTP-generating device, for example a lost or reset phone. When your user pool requires MFA and no other factor is available, Amazon Cognito returns an `MFA_SETUP` challenge at your user's next sign-in. When your user has another factor available, such as SMS message MFA, sign-in falls back to that factor.
+
+If your user still has access to their TOTP-generating device, you don't need to delete their software token. Amazon Cognito disassociates the existing software token when your user verifies a new one. To deactivate TOTP MFA for your user, call [SetUserMFAPreference](https://docs.aws.amazon.com/cognito-user-identity-pools/latest/APIReference/API_SetUserMFAPreference.html) to modify your user to use no MFA, or only SMS MFA.
 
 1. Create an interface in your app for users who want to reset MFA. Prompt a user in this interface to enter their password.
 
@@ -121,3 +123,7 @@ The following screenshot shows an example AWS WAF rule that applies a CAPTCHA ac
 ![A screenshot of a AWS WAF rule that applies a CAPTCHA action to all requests that don't have a x-amzn-cognito-operation-name header value of AssociateSoftwareToken or VerifySoftwareToken.](http://docs.aws.amazon.com/cognito/latest/developerguide/images/cup-WAF-rule-TOTP.png)
 
 For more information about AWS WAF web ACLs and Amazon Cognito, see [Associate an AWS WAF web ACL with a user pool](user-pool-waf.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

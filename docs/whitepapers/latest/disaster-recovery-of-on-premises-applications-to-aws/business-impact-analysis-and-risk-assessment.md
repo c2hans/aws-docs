@@ -63,3 +63,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-of-
 +  **Success criteria** – For a disaster recovery implementation project, success is normally signified by a disaster recovery drill that achieves a failover according to the requirements of the disaster recovery plan.
 +  **Team resources** – Assign team members who are skilled in the resources you mapped for replication. For example, if you have a mix of Linux and Windows operating systems, then you need people who understand both operating systems.
 +  **Timelines** – Assign timelines to the implementation phase and to at least a single successful drill per application that will conclude the implementation. The disaster recovery implementation is done when all of the applications have had at least one successful drill.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

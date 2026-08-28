@@ -29,3 +29,7 @@ The following table lists the parameters in the agent configuration file.
 | log.rotation | No | daily | Specifies the log file rotation. Valid values are: +  `hourly`—Log files are rotated hourly. <br />+  `daily`—Log files are rotated daily.  |
 | log.max-file-size | No | 10485760 | When a log file size reaches the specified size in bytes, it will be rotated. A new log file will be created and further log events will be placed in the new file. |
 | log.rotate | No | 9 | The maximum number of log files preserved in the rotation. Each time a rotation happens and this number is reached, the oldest log file will be deleted. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

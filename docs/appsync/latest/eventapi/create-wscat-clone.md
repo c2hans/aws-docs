@@ -394,3 +394,7 @@ You can download the latest version of NodeJs [here](https://nodejs.org/en) or u
 **(Optional) Clean up**
 
    Once you are done with this tutorial, you can delete the API you created by going to the AWS AppSync console, selecting the API and choosing **Delete**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

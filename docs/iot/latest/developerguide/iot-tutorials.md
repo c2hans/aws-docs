@@ -22,3 +22,7 @@ To create your own solution software that meets your specific requirements using
 **Topics**
 + [Building demos with the AWS IoT Device Client](iot-tutorials-dc-intro.md)
 + [Building solutions with the AWS IoT Device SDKs](iot-tutorials-sdk-intro.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

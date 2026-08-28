@@ -71,3 +71,7 @@ For this step, follow the instructions in [Create a Pipeline in AWS CodePipeline
 After you create the pipeline, CodePipeline sends the current version of the source code in the repository through the pipeline to be built, tested, and deployed. Then, whenever you push source code changes from the AWS Cloud9 IDE to the repository, CodePipeline automatically sends those changes through the pipeline to be built, tested, and deployed.
 
 To view the pipeline, follow the instructions in [View Pipeline Details and History in AWS CodePipeline](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-view.html) in the *AWS CodePipeline User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

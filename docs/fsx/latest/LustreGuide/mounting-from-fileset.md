@@ -30,3 +30,7 @@ When using the Lustre fileset feature, keep the following in mind:
 + If you plan to mount several subdirectories from the same file system on the same host, be aware that this consumes more resources than a single mount point, and it could be more efficient to mount the file system root directory only once instead.
 
 For more information on the Lustre fileset feature, see the *Lustre Operations Manual* on the [Lustre documentation website](https://doc.lustre.org/lustre_manual.xhtml#SystemConfigurationUtilities.fileset).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

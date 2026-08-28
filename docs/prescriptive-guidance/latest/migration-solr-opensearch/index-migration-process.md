@@ -216,3 +216,7 @@ OSI provides a managed service for migrating your data to Amazon OpenSearch Serv
      The typical migration process starts from Solr, exports the data to JSON, places it in an S3 bucket, ingests it into OSI, and moves it to OpenSearch. By following this structured approach, you can implement OSI effectively while maintaining AWS best practices for performance, reliability, and operational excellence.
 
 So far, this section focused on how configurations can be rewired. The next section explains how data can be migrated.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

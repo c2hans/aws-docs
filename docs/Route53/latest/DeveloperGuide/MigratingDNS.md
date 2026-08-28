@@ -14,3 +14,7 @@ The process depends on whether you're currently using the domain:
 For both options, your domain should remain available during the entire migration process. However, in the unlikely event that there are issues, the first option lets you roll back quickly. With the second option, your domain could be unavailable for a couple of days.
 
 If you want to connect with an expert at AWS, visit [Sales support](https://aws.amazon.com/contact-us/sales-support/?pg=ln&sec=hs).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

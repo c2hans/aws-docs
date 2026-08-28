@@ -69,3 +69,7 @@ In this final example, you enable Insights on management and data events. The tr
   + The `write` management events are analyzed twice, once for the API call rate and once for the API error rate (30,000 \* 2=60,000). The `read` management events are analyzed once for the API error rate (270,000 \*1=270,000). The total management events analyzed is 330,000 (60,000 \+ 270,000).
   + The `read` and `write` data events are analyzed twice, once for the API call rate and once for the API error rate (400,000 \* 2). The total data events analyzed is 800,000.
   + You will incur costs for analyzing 1,130,000 management and data events for this trail.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

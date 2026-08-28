@@ -79,3 +79,7 @@ Before using the Slurm REST API, ensure you have:
   curl -X DELETE -H "Authorization: Bearer {{<jwt>}}" \
       http://{{<privateIpAddress>}}:6820/slurm/v0.0.43/job/{{<job-id>}}
   ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS PCS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pcs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

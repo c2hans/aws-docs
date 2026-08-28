@@ -23,7 +23,7 @@ Amazon Bedrock Guardrails offers the following PIIs to block or anonymize:
 + **General**
   + **ADDRESS**
 
-    A physical address, such as "100 Main Street, Anytown, USA" or "Suite \#12, Building 123". An address can include information such as the street, building, location, city, state, country, county, zip code, precinct, and neighborhood.
+    A physical address, such as "100 Main Street, Anytown, USA" or "Suite \#12, Building 123". An address can include information such as the street, building, location, city, state, country, county, zip code, precinct, and neighborhood. Isolated mentions of city, state, country are not considered as valid addresses.
   + **AGE**
 
     An individual's age, including the quantity and unit of time. For example, in the phrase "I am 40 years old," Amazon Bedrock Guardrails recognizes "40 years" as an age.
@@ -271,3 +271,7 @@ Content-type: application/json
 ```
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

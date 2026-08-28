@@ -18,3 +18,7 @@ Then to license (enable) the add-on package, follow the procedure that applies t
 + You might want to implement an add-on pack in an existing deployment, without needing to upgrade the software.
 
   Elemental Live provides you with a new license that you must install. See [Licensing an add-on package without upgrading](https://docs.aws.amazon.com/elemental-live/latest/configguide/config-live-lic-existing.html) in the Elemental Live Configuration Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

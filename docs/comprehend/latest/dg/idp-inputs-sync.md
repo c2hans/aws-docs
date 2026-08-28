@@ -83,3 +83,7 @@ The **Detail** field contains one of the following values:
 + UNSUPPORTED\_DOC\_TYPE – Document type is not supported. Check the file type and resubmit the request.
 + PAGE\_LIMIT\_EXCEEDED – Too many pages in the document. Check the number of pages in your file and resubmit the request.
 + TEXTRACT\_ACCESS\_DENIED\_EXCEPTION – Access denied to Amazon Textract. Verify that your account has permission to use the Amazon Textract [DetectDocumentText](https://docs.aws.amazon.com/textract/latest/dg/API_DetectDocumentText.html) and [AnalyzeDocument](https://docs.aws.amazon.com/textract/latest/dg/API_AnalyzeDocument.html) API operations and resubmit the request.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

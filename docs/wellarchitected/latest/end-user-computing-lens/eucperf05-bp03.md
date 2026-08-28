@@ -15,3 +15,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
  If any of the workloads you are migrating to AWS EUC services have been configured with and require high performance or additional high-density storage, carefully review the AWS instance types that provide higher performance storage. The Graphics G4 instance types offer a local NVMe instance store which may meet your requirements.
 
  This may also be an opportunity to review alternate networked AWS Storage solutions as they might provide the speed and density you require.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

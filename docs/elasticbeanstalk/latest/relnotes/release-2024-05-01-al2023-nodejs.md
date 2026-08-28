@@ -60,3 +60,7 @@ Be aware that at the time these release notes are published, the new platform ve
 | --- | --- | --- | --- | --- | --- |
 |  ** Node.js 20 AL2023 version 6.1.4** <br /> * 64bit Amazon Linux 2023 v6.1.4 running Node.js 20 *  | 2023.4.20240429 | 20.12.2 (10.5.0)<br /> Default version: 20.12.2 | nginx 1.24.0 (default), Apache 2.4.59 | 2.40.1 | 3.2.0 |
 |  ** Node.js 18 AL2023 version 6.1.4** <br /> * 64bit Amazon Linux 2023 v6.1.4 running Node.js 18 *  | 2023.4.20240429 | 18.18.2 (9.8.1)<br /> Default version: 18.18.2 | nginx 1.24.0 (default), Apache 2.4.59 | 2.40.1 | 3.2.0 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

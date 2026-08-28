@@ -76,7 +76,7 @@ Pattern: `^arn:aws.*`
  ** [Status](#API_DescribeFirewallMetadata_ResponseSyntax) **   <a name="networkfirewall-DescribeFirewallMetadata-response-Status"></a>
 The readiness of the configured firewall to handle network traffic across all of the Availability Zones where you have it configured. This setting is `READY` only when the `ConfigurationSyncStateSummary` value is `IN_SYNC` and the `Attachment` `Status` values for all of the configured subnets are `READY`.
 Type: String
-Valid Values: `PROVISIONING | DELETING | READY`
+Valid Values: `PROVISIONING | DELETING | READY | FAILED`
 
  ** [SupportedAvailabilityZones](#API_DescribeFirewallMetadata_ResponseSyntax) **   <a name="networkfirewall-DescribeFirewallMetadata-response-SupportedAvailabilityZones"></a>
 The Availability Zones that the firewall currently supports. This includes all Availability Zones for which the firewall has a subnet defined.
@@ -126,3 +126,7 @@ For more information about using this API in one of the language-specific AWS SD
 +  [AWS SDK for PHP V3](https://docs.aws.amazon.com/goto/SdkForPHPV3/network-firewall-2020-11-12/DescribeFirewallMetadata)
 +  [AWS SDK for Python](https://docs.aws.amazon.com/goto/boto3/network-firewall-2020-11-12/DescribeFirewallMetadata)
 +  [AWS SDK for Ruby V3](https://docs.aws.amazon.com/goto/SdkForRubyV3/network-firewall-2020-11-12/DescribeFirewallMetadata)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

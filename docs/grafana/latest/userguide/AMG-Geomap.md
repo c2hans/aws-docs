@@ -54,3 +54,7 @@ Similar to **Markers**, you are prompted with various options to determine which
 + **Weight values** configures the intensity of the heatmap clusters. Fixed value keeps a constant weight value throughout all data points. This value should be in the range of 0\~1. Similar to **Markers**, there is an alternate option in the dropdown to automatically scale the weight values depending on data values.
 +  **Radius** configures the size of the heatmap clusters.
 +  **Blur** configures the amount of blur on each cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

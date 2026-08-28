@@ -118,3 +118,7 @@ Note the following behavior with unique indexes:
 1. If you update an existing document so the new value of the indexed field matches the value of that field in another document, the update will fail with the following error: `E11000 duplicate key error collection: <collection> index: <index name>`
 
 1. If the indexed field is missing from a document, the value will be treated as null. Index builds, inserts, and updates will fail as described above if the indexed field is missing from two (or more) documents.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,3 +28,7 @@ The topics in this section explain how to integrate Security Hub CSPM with AWS O
 + [Automatically enabling Security Hub CSPM in new organization accounts](accounts-orgs-auto-enable.md)
 + [Manually enabling Security Hub CSPM in new organization accounts](orgs-accounts-enable.md)
 + [Disassociating Security Hub CSPM member accounts from your organization](accounts-orgs-disassociate.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

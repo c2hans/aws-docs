@@ -14,3 +14,7 @@ Match your organizational resilience requirements with resilience policies. A re
 + [Applying policies at user journey and service levels](next-gen-applying-policies.md)
 + [Policy inheritance and multi-level evaluation](next-gen-policy-inheritance.md)
 + [Managing and updating policies](next-gen-managing-policies.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

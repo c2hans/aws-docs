@@ -41,3 +41,7 @@ To use a command line interface to access your VPC, you can use the AWS Command 
 + [Supported VPC data sources](vpc-connection-supported-data-sources.md)
 + [Setting up a VPC to use with Amazon Quick](vpc-setup-for-quicksight.md)
 + [Finding information to connect to a VPC](vpc-finding-setup-information.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

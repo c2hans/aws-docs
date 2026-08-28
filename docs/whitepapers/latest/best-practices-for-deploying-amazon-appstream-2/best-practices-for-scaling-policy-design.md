@@ -47,3 +47,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
  “Insufficient Capacity Error” is a CloudWatch metric for WorkSpaces Applications fleets. This metric specifies the number of session requests rejected due to lack of capacity.
 
  When you make changes to your scaling policies, it is helpful to create a CloudWatch alarm to notify you when any Insufficient Capacity Errors occur. This enables you to quickly adjust your scaling policies to optimize availability for users. The administration guide gives detailed steps to [*monitor your WorkSpaces Applications resources*](https://docs.aws.amazon.com/appstream2/latest/developerguide/monitoring.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

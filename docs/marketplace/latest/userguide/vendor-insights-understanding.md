@@ -16,3 +16,7 @@ AWS Marketplace Vendor Insights gathers the evidence-based information from thre
   + Creating AWS Config rules and the AWS Audit Manager automated assessment.
   + Provisioning the AWS Identity and Access Management (IAM) role so that AWS Marketplace Vendor Insights can pull assessment results.
 + **Your ISO 27001 and SOC2 Type II report** – The control categories are mapped to controls in the International Organization for Standardization (ISO) and System and Organization Controls (SOC2) reports. When you share these reports with AWS Marketplace Vendor Insights, it can extract relevant evidence from these reports and present it on the dashboard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ Standard PostgreSQL import and export tools (pg\_dump, pg\_restore) work with Au
 <a name="aurora-features-commercial-migration"></a>
 
 [AWS DMS](https://aws.amazon.com/dms/) accelerates migrations from commercial database to Aurora with DMS Schema Conversion, which automatically assesses and converts schemas and source objects to be compatible with the target Aurora cluster. [DMS Serverless](https://aws.amazon.com/dms/features/) automates provisioning, monitoring, and scaling of migration resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS and Aurora Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rds` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

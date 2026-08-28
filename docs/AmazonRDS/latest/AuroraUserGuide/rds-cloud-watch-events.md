@@ -165,3 +165,7 @@ To test your rule, shut down an RDS DB instance. After waiting a few minutes for
    For more examples of RDS events in JSON format, see [Overview of events for Aurora](working-with-events.md#rds-cloudwatch-events.sample).
 
 1. (Optional) When you're finished, you can open the Amazon RDS console and start the instance that you stopped.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

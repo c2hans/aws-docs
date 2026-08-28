@@ -57,3 +57,7 @@ You can also use the `POSTLogger` component in the Amazon Chime SDK for JavaScri
 <a name="server-side-logging"></a>
 
 The Amazon Chime SDK for JavaScript also calls the `eventDidReceive` observer method with key meeting events, such as `MeetingStartFailed` and `MeetingFailed`. Meeting events often includes specific reasons for failures. For example, say that a large group of customers experience failures. Your web application can collect those meeting events, and then share them with us to troubleshoot the root cause. For more information about meeting events, see the [meeting event guide on GitHub](https://aws.github.io/amazon-chime-sdk-js/modules/meetingevents.html), and the [ Monitoring and troubleshooting with Amazon Chime SDK meeting events](https://aws.amazon.com/blogs/business-productivity/monitoring-and-troubleshooting-with-amazon-chime-sdk-meeting-events/) blog post.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

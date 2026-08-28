@@ -59,3 +59,7 @@ The following tables contain hardware specifications for Snowball Edge devices.
 | Nonoperational shock | Drop test (12 inches all sides \+ 24 inches one side) |
 | Nonoperational altitude | 0–12,000 meters |
 | Operational altitude | 0–3,000 meters (0–10,000 feet) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Snow Family Device Guides. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

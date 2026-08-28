@@ -35,3 +35,7 @@ Monitoring the health of your AWS hosted applications is key to ensuring applica
 After creating response plans, you can use your monitoring solutions to automatically track incidents the moment they happen in your environment. For more information about incident tracking and creation, see [Viewing incident details in the Incident Manager console](tracking.md).
 
 For more information about architecting secure, high-performing, resilient, and efficient infrastructure applications and workloads, see the [AWS Well-Architected](https://aws.amazon.com/architecture/well-architected/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

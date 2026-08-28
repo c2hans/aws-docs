@@ -16,3 +16,7 @@ After you've created your flow, you will be able to dynamically determine which 
 The following image shows the properties page for a [Set contact attributes](set-contact-attributes.md). It is configured to save the response in a user-defined attribute.
 
 ![The properties page of the Set contact attributes block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/dispo-codes-sq.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

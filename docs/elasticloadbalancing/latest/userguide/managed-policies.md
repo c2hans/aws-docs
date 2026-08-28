@@ -58,3 +58,7 @@ View details about updates to AWS managed policies for Elastic Load Balancing si
 | [ElasticLoadBalancingFullAccess](#ElasticLoadBalancingFullAccess) - New policy | Provides full access to Elastic Load Balancing and dependent services. | September 20, 2018 |
 | [ElasticLoadBalancingReadOnly](#ElasticLoadBalancingReadOnly) - New policy | Provides read-only access to Elastic Load Balancing and dependent services. | September 20, 2018 |
 | Elastic Load Balancing started tracking changes | Elastic Load Balancing started tracking changes for its AWS managed policies. | September 20, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Elastic Load Balancing. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticloadbalancing` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

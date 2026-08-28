@@ -123,3 +123,7 @@ The following are notification codes and resolution steps for issues with sessio
 **GOOGLE\_DRIVE\_MOUNTING\_FAILURE**
 **Message**: X session(s) encountered Google Drive mounting failures.
 **Resolution**: To troubleshoot this issue, check your network configuration and ensure the user has valid Google Workspace credentials. If you continue to encounter this error, contact AWS Support. For more information, see [AWS Support Center](https://console.aws.amazon.com/support/home#/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

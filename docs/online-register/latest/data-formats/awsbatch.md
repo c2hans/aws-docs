@@ -26,3 +26,7 @@ AWS Batch provides the following APIs for data retrieval.
 | <a name="batch-ListSchedulingPolicies"></a>[ListSchedulingPolicies](https://docs.aws.amazon.com/batch/latest/APIReference/API_ListSchedulingPolicies.html) | List AWS Batch scheduling policies in your account | Read |
 | <a name="batch-ListServiceJobs"></a>[ListServiceJobs](https://docs.aws.amazon.com/batch/latest/APIReference/API_ListServiceJobs.html) | List service jobs for a specified AWS Batch job queue in your account | List |
 | <a name="batch-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/batch/latest/APIReference/API_ListTagsForResource.html) | List tags for an AWS Batch resource in your account | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

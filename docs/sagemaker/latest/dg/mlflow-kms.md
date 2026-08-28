@@ -133,3 +133,7 @@ The following AWS KMS CloudTrail events are recorded for an MLflow App encrypted
 + `DescribeKey` and `CreateGrant` — Recorded when you create an MLflow App. SageMaker validates your key and creates the grant that allows your data at rest to be encrypted and decrypted on your behalf.
 + `GenerateDataKeyWithoutPlaintext`, `Encrypt`, and `Decrypt` — Recorded while the MLflow App is being provisioned and while it operates. The SageMaker underlying storage layer uses your customer managed key to encrypt and decrypt your data at rest. These requests are made by AWS services acting on your behalf through the grant, so the CloudTrail `userIdentity` element shows an AWS service as the caller rather than an IAM principal from your account.
 + `RetireGrant` — Recorded when you delete an MLflow App. The grants created for the app are retired so that your customer managed key can no longer be used for it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

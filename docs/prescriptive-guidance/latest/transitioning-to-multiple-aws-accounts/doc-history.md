@@ -21,3 +21,7 @@ The following table describes significant changes to this guide.
 | Security of egress traffic | We added [Best practices for securing egress traffic](centralized-egress.md#best-practices-egress). | October 6, 2022 |
 | Permissions boundaries | We improved the definition of a [permissions boundary](creating-a-permissions-boundary.md), and in the *Resources* section, we added a new link for more information about this topic. | September 22, 2022 |
 | Initial publication | — | September 6, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

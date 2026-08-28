@@ -48,3 +48,7 @@ You can also use `reserved-memory` parameter to reduce the amount of memory used
 For more information on Valkey and Redis-specific parameters in ElastiCache, see [Valkey and Redis OSS parameters](ParameterGroups.Engine.md#ParameterGroups.Redis).
 
 For information on creating and modifying parameter groups, see [Creating an ElastiCache parameter group](ParameterGroups.Creating.md) and [Modifying an ElastiCache parameter group](ParameterGroups.Modifying.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

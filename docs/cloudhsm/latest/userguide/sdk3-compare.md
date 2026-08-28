@@ -69,3 +69,7 @@ Key Storage Provider (KSP) is a cryptographic API specific to the Microsoft Wind
 For Client SDK 3, the CNG and KSP providers is a Windows only component that matches Windows base support. For more information, see [Windows support for AWS CloudHSM Client SDK 3](sdk3-windows.md).
 
 For Client SDK 5, the Key Storage Provider (KSP) is a Windows only component that matches Windows base support. For more information, see [Windows support for AWS CloudHSM Client SDK 5](sdk8-windows.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

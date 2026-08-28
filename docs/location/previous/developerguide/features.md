@@ -27,3 +27,7 @@ Amazon Location Service Geofences lets you give your application the ability to 
 **Trackers**
 Amazon Location Service Trackers lets you retrieve the current and historical location of devices that are running your tracking-enabled application. You can also link trackers with Amazon Location Service geofences to evaluate location updates from your devices against your geofences automatically. Trackers can help you reduce costs by filtering position updates that haven't moved before storing or evaluating them against geofences.
 When you use trackers, sensitive location information on your tracked devices does not leave your AWS account. This helps protect sensitive information from third parties, protect user privacy, and reduce security risks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ The integrated AWS Config controls in AWS Control Tower have **Elective** guidan
 + [More about detective controls](#more-about-detective)
 + [The Security Hub CSPM standard](security-hub-controls.md)
 + [Integrated AWS Config controls available in AWS Control Tower](config-controls.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ You can use the AWS Organizations console to centrally view and manage all of yo
 + Use SCPs to define the maximum permissions for the root, organizational units, and member accounts. SCPs can't be directly applied to the management account.
 + Use RCPs to define the maximum permissions for resources in member accounts. RCPs can't be directly applied to the management account.
 + Adhere to the [Best practices for AWS Organizations](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_best-practices.html) (AWS Organizations documentation).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

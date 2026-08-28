@@ -129,3 +129,7 @@ After you ensure that you have met the above prerequisites, you can install the 
 1. To be able to view the metrics in Amazon Managed Grafana dashboards, check the box labeled **Use an Amazon Managed Grafana workspace**. You can specify your own workspace or let the service create a new one for you.
 **Note**
 Amazon Managed Grafana isn't available in all AWS Regions in which Amazon Managed Service for Prometheus is available. However, you can set up a Grafana workspace in any AWS Region and configure it to get metrics data from a Prometheus workspace that resides in a different AWS Region. For information, see [Use AWS data source configuration to add Amazon Managed Service for Prometheus as a data source](https://docs.aws.amazon.com/grafana/latest/userguide/AMP-adding-AWS-config.html) and [Connect to Amazon Managed Service for Prometheus and open-source Prometheus data sources](https://docs.aws.amazon.com/grafana/latest/userguide/prometheus-data-source.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

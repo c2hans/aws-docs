@@ -83,3 +83,7 @@ You can specify one or more prefix lists as an inbound rule for requests to Amaz
 <a name="prefix-list-outpost-racks-lgw"></a>
 
 Each AWS Outposts rack provides a local gateway that allows you to connect your Outpost resources with your on-premises networks. You can group CIDRs that you frequently use in a prefix list and reference this list as a route target in your local gateway route table. For more information, see [Manage local gateway route table routes](https://docs.aws.amazon.com/outposts/latest/userguide/routing.html#manage-lgw-routes) in the *AWS Outposts User Guide for racks*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

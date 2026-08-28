@@ -96,3 +96,7 @@ To connect App Studio with Salesforce to enable builders to access and use Sales
 1. In **Operations**, select the Salesforce operations that your connector will support. The operations in this list are predefined and represent common tasks within Salesforce, such as creating, retrieving, updating, or deleting records from common objects.
 
 1. Choose **Create**. The newly created connector will appear in the **Connectors** list.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

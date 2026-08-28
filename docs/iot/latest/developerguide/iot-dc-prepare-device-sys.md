@@ -125,3 +125,7 @@ PuTTY isn't installed automatically on Windows. If it's not on your computer, yo
    ```
 
 After you have the Raspberry Pi's command line prompt in the terminal window and changed the password, you're ready to continue to [Install and verify required software on your device](iot-dc-prepare-device-sw.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

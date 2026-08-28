@@ -18,3 +18,7 @@ MediaPackage doesn't require customer data from you, so endpoints don't include 
 + [Creating a DASH endpoint](endpoints-dash.md)
 + [Creating a Microsoft Smooth Streaming endpoint](endpoints-smooth.md)
 + [Creating a CMAF endpoint](endpoints-cmaf.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V1. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

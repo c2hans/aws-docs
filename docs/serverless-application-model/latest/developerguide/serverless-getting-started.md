@@ -16,3 +16,7 @@ After installation is complete, you can optionally walk through the AWS SAM Hell
 + [Install the AWS SAM CLI](install-sam-cli.md)
 + [Tutorial: Deploy a Hello World application with AWS SAM](serverless-getting-started-hello-world.md)
 + [Converting Lambda Functions to AWS SAM Applications](convert-lambda-to-sam.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

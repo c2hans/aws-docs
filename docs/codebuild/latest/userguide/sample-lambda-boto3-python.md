@@ -170,3 +170,7 @@ If you want to extend this sample to manage other AWS resources using AWS CodeBu
 + Update the Python script to modify the new resources using Boto3.
 + Update the IAM role associated with your CodeBuild project to have permissions for the new resources.
 + Add any new environment variables associated with the new resources to your buildspec.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

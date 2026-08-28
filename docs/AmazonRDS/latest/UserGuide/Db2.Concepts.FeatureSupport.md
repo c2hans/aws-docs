@@ -88,3 +88,7 @@ RDS for Db2 supports Multi-AZ deployments, cross-Region automated backups, and r
 + Creation of non-fenced routines and migration of existing non-fenced routines by backing up and restoring data. For more information, see [Non-fenced routines](db2-known-issues-limitations.md#db2-known-issues-limitations-non-fenced-routines).
 + Creation of new non-automatic storage tablespaces. For more information, see [Non-automatic storage tablespaces during migration](db2-known-issues-limitations.md#db2-known-issues-limitations-non-automatic-storage-tablespaces).
 + External tables.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

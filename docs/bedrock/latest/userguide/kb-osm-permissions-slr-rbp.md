@@ -125,3 +125,7 @@ If your OpenSearch domain has a restrictive access policy, you can follow the in
 1. Edit the policy in the **JSON** tab and then update the policy similar to the [Sample resource-based policy](#kb-osm-permissions-rbp).
 
 1. You can now go back to the Amazon Bedrock console and provide the details for your OpenSearch domain and index as described in [Knowledge base setup for Managed Clusters](knowledge-base-setup.md#knowledge-base-setup-osm).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

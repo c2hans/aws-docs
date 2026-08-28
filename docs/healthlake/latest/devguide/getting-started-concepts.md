@@ -30,3 +30,7 @@ AWS HealthLake integrates with HIPAA eligible natural language processing (NLP) 
 <a name="concept-integrated-analytics"></a>
 
 AWS HealthLake goes beyond FHIR `search` and `bundle` APIs to provide integrated analytics for querying and analyzing large volumes of health data. During import, HealthLake automatically generates tables for SQL index and query. This enables you to gain actionable insights from complex healthcare data without requiring extensive data engineering work. For more information, see [Querying HealthLake data with Amazon Athena](integrating-athena.md) and [AWS HealthLake sample projects](reference-healthlake-sample-projects.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

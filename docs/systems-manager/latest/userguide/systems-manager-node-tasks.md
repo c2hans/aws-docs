@@ -15,3 +15,7 @@ The following topics describe how to complete common node tasks. You can use the
 + [Just-in-time node access using Systems Manager](systems-manager-just-in-time-node-access.md)
 + [Diagnosing and remediating](diagnose-and-remediate.md)
 + [Adjusting Systems Manager settings](settings-overview.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

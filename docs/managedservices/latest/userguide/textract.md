@@ -25,3 +25,7 @@ There are no restrictions for the use of Amazon Textract in your AMS account.
 **Q: What are the prerequisites or dependencies to using Amazon Textract in my AMS account?**
 
 You must request the creation of an S3 bucket by submitting an RFC Deployment \| Advanced stack components \|S3 storage \| Create (ct-1a68ck03fn98r).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

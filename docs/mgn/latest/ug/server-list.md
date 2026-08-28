@@ -46,7 +46,7 @@ The columns include:
   + **Percentage complete** – The percentage of the server's storage that was successfully replicated if the server is undergoing initial sync or a rescan.
   + **Lag** – Whether server is experiencing any lag. If it is; the lag time is indicated.
   + **Backlog** – Whether there is any backlog on the server (in MiB).
-+ **Last snapshot** – This column shows the time the last consistent snapshot was taken of the source server. Servers that are still in the initial sync process and those that have been disconnected do not show any info in this field. Healthy servers shows a recent snapshot. Unhealthy servers' last snapshot indicates the last time they were healthy.
++ **Last snapshot** – This column shows the time the last consistent snapshot was taken of the source server. Servers that are still in the initial sync process and those that have been disconnected do not show any info in this field. Healthy servers show a recent snapshot. Unhealthy servers' last snapshot indicates the last time they were healthy.
 + **Next step** – This column shows the next step that needs to be undertaken in order to successfully complete a cutover for the server. The information presented in this column changes based on the server's Migration lifecycle state and whether the server is experiencing any issues.
 
   This column shows a variety of next steps, including:
@@ -68,3 +68,7 @@ The columns include:
 + [Manage test and cutover instances](server-test-cutover-main.md)
 + [Source server migration metrics](source-server-migration-metrics.md)
 + [Filtering the source servers list](list-filtering.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

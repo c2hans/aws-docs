@@ -120,3 +120,7 @@ For instructions about enabling a delegated administrator account for Cost Optim
 To disable the delegated admin Cost Optimization Hub account using the Cost Optimization Hub console, see [ Delegate an administrator account](https://docs.aws.amazon.com/cost-management/latest/userguide/coh-delegated-admin.html) in the *AWS Cost Management User Guide*.
 
  To remove a delegated administrator using the AWS CLI, see [`deregister-delegated-administrator`](https://docs.aws.amazon.com/cli/latest/) in the *AWS Config CLI Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

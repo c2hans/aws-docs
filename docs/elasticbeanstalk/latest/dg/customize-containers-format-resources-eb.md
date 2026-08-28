@@ -39,3 +39,7 @@ Worker environments have resources for the SQS queue that buffers incoming reque
 + `AWSEBWorkerQueue` ([AWS::SQS::Queue](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html)) – The Amazon SQS queue from which the daemon pulls requests that need to be processed.
 + `AWSEBWorkerDeadLetterQueue` ([AWS::SQS::Queue](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-sqs-queues.html)) – The Amazon SQS queue that stores messages that cannot be delivered or otherwise were not successfully processed by the daemon.
 + `AWSEBWorkerCronLeaderRegistry` ([AWS::DynamoDB::Table](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-dynamodb-table.html)) – The Amazon DynamoDB table that is the internal registry used by the daemon for periodic tasks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

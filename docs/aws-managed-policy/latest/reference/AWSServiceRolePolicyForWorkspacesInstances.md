@@ -18,13 +18,13 @@ This policy is attached to a service-linked role that allows the service to perf
 <a name="AWSServiceRolePolicyForWorkspacesInstances-details"></a>
 + **Type**: Service-linked role policy
 + **Creation time**: June 11, 2025, 20:37 UTC
-+ **Edited time:** June 29, 2026, 23:42 UTC
++ **Edited time:** August 27, 2026, 18:57 UTC
 + **ARN**: `arn:aws:iam::aws:policy/aws-service-role/AWSServiceRolePolicyForWorkspacesInstances`
 
 ## Policy version
 <a name="AWSServiceRolePolicyForWorkspacesInstances-version"></a>
 
-**Policy version:** v3 (default)
+**Policy version:** v4 (default)
 
 The policy's default version is the version that defines the permissions for the policy. When a user or role with the policy makes a request to access an AWS resource, AWS checks the default version of the policy to determine whether to allow the request.
 
@@ -43,7 +43,8 @@ The policy's default version is the version that defines the permissions for the
         "ec2:DescribeInstances",
         "ec2:DescribeInstanceStatus",
         "ec2:DescribeTags",
-        "ec2:DescribeVolumes"
+        "ec2:DescribeVolumes",
+        "ec2:DescribeAvailabilityZones"
       ],
       "Resource" : "*"
     },
@@ -108,3 +109,7 @@ The policy's default version is the version that defines the permissions for the
 <a name="AWSServiceRolePolicyForWorkspacesInstances-learn-more"></a>
 + [Understand versioning for IAM policies](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_managed-versioning.html)
 + [Get started with AWS managed policies and move toward least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#bp-use-aws-defined-policies)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Policy. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aws-managed-policy` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

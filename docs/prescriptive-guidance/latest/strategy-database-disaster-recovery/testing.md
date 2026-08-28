@@ -36,3 +36,7 @@ Your DR solution should also manage [drift detection](https://docs.aws.amazon.co
 <a name="observability"></a>
 
 Improving observability positively impacts your preparation for testing. All DR solutions move data in the primary Region to the secondary (DR) Region. You can set up alerts for replication lag and backups, or put a process in place to perform daily checks that ensure that your data was copied to the DR Region successfully.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

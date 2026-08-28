@@ -63,3 +63,7 @@ To define alternate media on a new program:
 **Note**
 Alternate media only plays in the time frame of the program it is defined on. If all the alternate content overruns the default content, MediaTailor will truncate it. MediaTailor plays alternate media in the order in which it is defined. Live alternate-media start times will always take precedence and will truncate previously scheduled VOD sources or live sources. Any time that is not filled with alternate media for an audience will be filled withe the channel-defined filler slate
    + To define audience media for other audiences, select **Add** once again next to **Audiences**. Select the newly created audience, set the audience id and add alternate media as described above. Up to 5 audiences can have alternate media on any one program.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

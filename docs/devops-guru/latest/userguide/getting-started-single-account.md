@@ -29,3 +29,7 @@ If you choose to monitor applications in your current AWS account, choose which 
       +  Choose **Use an existing SNS topic ARN to specify an existing topic from another account**. Then, in **Enter an ARN for a topic**, enter the topic ARN. The ARN is the topic's Amazon Resource Name. You can specify a topic in a different account. If you use a topic in another account, you must add a resource policy to the topic. For more information, see [Permissions for Amazon SNS topics](sns-required-permissions.md).
 
 1.  Choose **Enable**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

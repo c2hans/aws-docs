@@ -24,3 +24,7 @@ When you establish a baseline for the portfolio, we recommend that you confirm a
 To establish a baseline version of the portfolio, including dependencies and migration strategies, use automated discovery tooling (see [Evaluating the need for discovery tooling](understanding-initial-assessment-data-requirements.md#discovery-tooling)). Complement the data with information gathered from key stakeholders such as application owners and infrastructure teams. Keep gathering data until you obtain a complete portfolio inventory that matches the attributes and level of fidelity outlined in the [data requirements section](understanding-complete-assessment-data-requirements.md) for this stage. The resulting dataset will be instrumental in driving the migration.
 
 Consider that, depending on the extent of your migration scope and the available tooling, this activity can take several weeks to complete.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

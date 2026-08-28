@@ -57,3 +57,7 @@ Change the owner by using the Route 53 console. See [Updating contact informati
 1. Both the old and new registrants must choose the link they receive in an email from *transfers@1api.net* to their listed email addresses. If this isn't completed within 14 days, you have to start the process again.
 
 1. After the responses are confirmed, the owner change in the registry will be processed in a short time without any further confirmation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

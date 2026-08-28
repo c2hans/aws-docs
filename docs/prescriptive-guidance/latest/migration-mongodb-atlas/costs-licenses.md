@@ -18,3 +18,7 @@ MongoDB Atlas can be purchased directly from AWS Marketplace, which simplifies t
 + [MongoDB Atlas for Government (US)](https://www.mongodb.com/products/platform/atlas-for-government)
 + [MongoDB Enterprise Advanced for AWS GovCloud](https://aws.amazon.com/marketplace/pp/prodview-izui66iqhb7ue?sr=0-3&ref_=beagle&applicationId=AWSMPContessa)
 + [MongoDB Professional Services](https://aws.amazon.com/marketplace/pp/prodview-hdelmkf7yknny?sr=0-1&ref_=beagle&applicationId=AWSMPContessa)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

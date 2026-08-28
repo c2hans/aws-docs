@@ -26,3 +26,7 @@ The following security best practices also address data protection in Amazon S3:
 + [Consider using Macie with Amazon S3](security-best-practices.md#macie)
 + [Identify and audit all your Amazon S3 buckets](security-best-practices.md#audit)
 + [Monitor Amazon Web Services security advisories](security-best-practices.md#advisories)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

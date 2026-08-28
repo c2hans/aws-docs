@@ -15,3 +15,7 @@ Continuous training means that the ML system automatically and continuously retr
 | **8.3 Retrain triggering: new training data** | Retraining is initiated by an incoming data threshold. The model can retrain from scratch or run updates incrementally. Given a specified amount of data in place, a training job kicks off. |
 | **8.4 Retrain triggering: model performance degradation** | This technique uses monitoring and observability to run model retraining, and it requires a mature level of automation. For example, accuracy lowers from a given range, which acts as a trigger for retraining a model on all or part of the data. |
 | **8.5 Retrain triggering: data distribution shift** | Monitoring data distribution shift provides a way set triggers to retrain the model when its underlying data changes. A violation set on [concept shift or data distribution shift](https://aws.amazon.com/blogs/machine-learning/detect-nlp-data-drift-using-custom-amazon-sagemaker-model-monitor/) initiates a model retraining job. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,3 +53,7 @@ It's usually a good idea to use [Learn about feature detection](feature-detectio
 ```
 
 The example tries to serve MP4 and then falls back to the WebM file. The browser will play the first compatible format. For more on graceful video degradation, see [Video for Everybody](http://camendesign.com/code/video_for_everybody); for more on HTML5 video, see [Video Element](html5-elements.md#video-element).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Silk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query silk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

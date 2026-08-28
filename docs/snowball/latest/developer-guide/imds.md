@@ -20,3 +20,7 @@ The examples in this section use the IPv4 address of the instance metadata servi
 **Topics**
 + [IMDS versions on a Snowball Edge](imds-versions.md)
 + [Examples of retrieving instance metadata using IMDSv1 and IMDSv2 on a Snowball Edge](imds-code-examples.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

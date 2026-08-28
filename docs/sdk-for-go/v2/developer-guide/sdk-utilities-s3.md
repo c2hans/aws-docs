@@ -421,3 +421,7 @@ resp, err := client.PutObject(context.TODO(), &s3.PutObjectInput{
 **Warning**
  Amazon S3 requires the content length to be provided for all object's uploaded to a bucket. Since the `Body` input parameter does not implement `io.Seeker` interface, the client will not be able to compute the `ContentLength` parameter for the request. The parameter must be provided by the application. The request will fail if the `ContentLength` parameter is not provided.
  Use the SDK's [Amazon S3 Upload Manager](#s3-upload-manager) for uploads that are not seekable and do not have a known length.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Go v2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-go` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

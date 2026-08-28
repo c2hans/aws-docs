@@ -273,3 +273,7 @@ The `get_test_run_artifacts` tool retrieves Amazon S3 bucket information for acc
 
 **Note**
 All MCP tools leverage existing API endpoints. No modifications to the underlying APIs are required to support MCP functionality.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

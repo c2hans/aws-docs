@@ -78,3 +78,7 @@ The contents of the AWS S3 bucket/folder will contain one or more folders, one f
 ![Automatic Config S3 Integrations](http://docs.aws.amazon.com/wickr/latest/wickrio/images/autoconfig-s3-integrations.png)
 
 The contents of each of the integration folders will be the software.tar.gz file that contains all of the integration files (see the section on developing your own custom bots).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

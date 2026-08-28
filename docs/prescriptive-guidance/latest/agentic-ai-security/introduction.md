@@ -30,3 +30,7 @@ This guide helps you do the following:
 <a name="about-series"></a>
 
 This guide is part of a series about agentic AI on AWS. For more information and to view the other guides in this series, see [Agentic AI](https://aws.amazon.com/prescriptive-guidance/agentic-ai/) on the AWS Prescriptive Guidance website.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

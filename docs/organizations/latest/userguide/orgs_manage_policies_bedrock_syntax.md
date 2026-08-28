@@ -84,3 +84,7 @@ List of models to enforce the guardrail on. When empty, applies enforcement to a
 
 `"excluded_models"` (Required)
 Models to exclude from enforcement of the guardrail. When empty, does not exclude any models from enforcement. If a model is present in both the included and excluded models lists, it is excluded.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -79,3 +79,7 @@ The BDA Console also allows you to easily test and preview the insights that BDA
 You can test a blueprint you have created and applied to a project by going to the Projects section of Data Automation and then selecting a project.
 
 Once you are on the project details page, select "Test". On the Test page you will be able to select a file and choose to process the file with either standard output or a blueprint you have created.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

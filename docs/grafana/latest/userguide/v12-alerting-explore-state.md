@@ -69,3 +69,7 @@ When evaluation of an alerting rule produces state `NoData` or `Error`, Grafana 
 | datasource\_uid | The UID of the data source that caused the state. |
 
 You can handle these alerts the same way as regular alerts by adding a silence, route to a contact point, and so on.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

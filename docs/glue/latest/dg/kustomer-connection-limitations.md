@@ -26,3 +26,7 @@ The following are limitations or notes for Kustomer:
 
     Another request can be triggered with filterExpression: `modifiedAt >= 2023-03-15T05:26:23.000Z`
 + As a SaaS behavior, the `CONTAINS` operator in Kustomer supports matching only on complete words and not partial matches within a word. For example: "body CONTAINS 'test record'" will match a record having 'test' in the 'body' field. However, "body CONTAINS 'test'" will not match a record having 'testAnotherRecord' in the 'body' field.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

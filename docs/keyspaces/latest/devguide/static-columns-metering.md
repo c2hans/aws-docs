@@ -20,3 +20,7 @@ For example, if your application writes 27 KBs of data per second and each write
 Amazon Keyspaces meters the reads of static and nonstatic data the same as reads of multiple rows. As a result, the price of reading static and nonstatic data in the same operation is based on the aggregate size of the data processed to perform the read.
 
 To learn how to monitor serverless resources with Amazon CloudWatch, see [Monitoring Amazon Keyspaces with Amazon CloudWatch](monitoring-cloudwatch.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

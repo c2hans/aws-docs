@@ -21,3 +21,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/end-user-computin
 +  Amazon WorkSpaces are deployed in a specific AWS Region with built-in redundancies to protect against component failures. This provides high availability and minimizes downtime.
 +  There is the potential for failures to impact your WorkSpaces environment. Therefore, you must take steps to implement resiliency if you need your WorkSpaces to be reliable.
 +  Spread awareness amongst the people designing, implementing, and operating your Amazon WorkSpaces about business objectives and the required reliability goals to achieve them. Leaders or system owners must provide training and guidance to verify that individuals understand and can design for the reliability requirements pertinent to their roles.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

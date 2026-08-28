@@ -75,3 +75,7 @@ The following are the service endpoints and service quotas for this service.
 | Samples per product | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/dataexchange/quotas/L-D8673932)  | The maximum number of samples per product. |
 
 For more information, see [AWS Data Exchange quotas](https://docs.aws.amazon.com/data-exchange/latest/userguide/limits.html) in the *AWS Data Exchange User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

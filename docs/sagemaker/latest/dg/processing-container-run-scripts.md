@@ -95,3 +95,7 @@ Before using the following examples, you need to have your own input data and a 
    ```
 
 You can use the same procedure with any other library or system dependencies. You can also use existing Docker images. This includes images that you run on other platforms such as [Kubernetes](https://kubernetes.io/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

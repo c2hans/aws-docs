@@ -267,3 +267,7 @@ To resolve this issue, do the following:
 1. Review the [information that you need to have](self-managed-AD-join.md#ad-info-for-svm-join) when joining an SVM to an AD.
 
 1. Reattempt joining the SVM to the Active Directory using [this procedure](join-svm-to-ad.md) with the correct organization unit.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

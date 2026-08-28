@@ -22,3 +22,7 @@ According to [Gartner](https://www.gartner.com/en/articles/what-is-platform-engi
 The goal of building an internal developer platform is to guide your developers with well-defined standards and patterns, from development to production. The platform should not negatively affect developer productivity, and it should automate, secure, and centralize their tools and capabilities.
 
 This guide helps you implement an internal developer platform on AWS. It focuses on the different platform capabilities and describes how to successfully build a platform that meets your business goals.  It also includes some modernization patterns that you can follow.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

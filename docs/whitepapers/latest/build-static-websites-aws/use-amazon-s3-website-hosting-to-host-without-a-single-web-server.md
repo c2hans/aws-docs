@@ -148,3 +148,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
  Popular websites that serve up large videos and images incur higher bandwidth charges. The *Estimating and Tracking AWS Spend* section of this document describes how you can estimate and track your costs.
 
  With Amazon S3, experimenting with new ideas is easy and cheap. If a website idea fails, the costs are minimal. For microsites, publish many independent microsites at once, run A/B tests, and keep only the successes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

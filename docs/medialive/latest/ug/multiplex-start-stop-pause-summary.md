@@ -16,3 +16,7 @@ The following table summarizes the start, stop and pause capabilities for the mu
 | Channel | Start | You can start a channel that is used in a multiplex at any time, including before you have started the multiplex. |
 |  | Stop | You can stop a channel without stopping the multiplex. You must stop a channel in order to edit it. |
 |  | Pause | You can't pause a channel that is used in a multiplex. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

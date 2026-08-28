@@ -147,3 +147,7 @@ When you call the function with AWS credentials that you obtain through Amazon C
 [AWS Lambda context object in Go](https://docs.aws.amazon.com/lambda/latest/dg/golang-context.html)
 [AWS Lambda context object in C\#](https://docs.aws.amazon.com/lambda/latest/dg/csharp-context.html)
 [AWS Lambda context object in PowerShell](https://docs.aws.amazon.com/lambda/latest/dg/powershell-context.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

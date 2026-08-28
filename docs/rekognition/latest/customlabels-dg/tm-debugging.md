@@ -98,3 +98,7 @@ Amazon Rekognition Custom Labels can generate the following non-terminal JSON Li
 + [The height and width of the bounding box is too small.](tm-debugging-json-line-errors.md#tm-error-ERROR_BOUNDING_BOX_TOO_SMALL)
 + [There are more bounding boxes than the allowed maximum.](tm-debugging-json-line-errors.md#tm-error-ERROR_TOO_MANY_BOUNDING_BOXES)
 + [No valid annotations found.](tm-debugging-json-line-errors.md#tm-error-ERROR_NO_VALID_ANNOTATIONS)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

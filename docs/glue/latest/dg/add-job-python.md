@@ -302,3 +302,7 @@ Resources:
 1.  In the **Job** details tab, set the Python version to `Python 3.9` and choose **Save**.
 
 1.  Ensure that your job script is compatible with Python 3.9 and that it runs successfully.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -10,3 +10,7 @@ This section discusses best practices and standards that you can follow when cod
 + [Using AWS Lambda to rotate secrets](rotate-secrets.md) – AWS Lambda can be scheduled to run automatically for rotation of secrets.
 + [Limiting access to secrets](limiting-access.md) – Restrict who can access secrets and how they access them.
 + [Using a hierarchical naming convention for secrets](naming-convention.md) – Define and use a naming convention that helps you manage secrets at scale.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

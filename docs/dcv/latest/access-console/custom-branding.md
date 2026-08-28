@@ -23,3 +23,7 @@ You can customize the appearance of the Amazon DCV Access Console by using the f
 | Login background image | Enables you to customize the background image on the login screen (login-bacgroud.svg). | Recommended dimensions: 1440 px x 1024 px |
 | Documentation URL | Enables you to specify a URL for a Documentation link. | Format: https://example.com or http://example.com |
 | Downloads URL | Enables you to specify a URL for a Downloads link, so that users can download the appropriate native client to stream their Amazon DCV session from. | Format: https://example.com or http://example.com |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -163,3 +163,7 @@ When a user sends a message, the Fleet Manager web application routes the reques
 The assistant adapts its behavior based on the authenticated user’s Cognito claims. A user with the default `fleet_driver` role receives driving-focused guidance — trip summaries, safety event explanations, and DTC context for their own vehicle. A user with `custom:role=service-advisor` in their Cognito profile receives a service-advisor persona, which provides broader cross-vehicle diagnostic context suited for workshop and service center use cases.
 
 The assistant capability requires the optional `cms-{stage}-bedrock-agents` stack. Deploy it with `make deploy-bedrock-agents` after the core platform is running. If the stack is not deployed, the assistant panel is present in the UI but the `/assistant/chat` endpoint is not available. See [Architecture details](architecture-details.md) for the BedrockAgentsStack configuration and the inference-profile IAM pattern required for cross-region model invocation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Connected Mobility on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

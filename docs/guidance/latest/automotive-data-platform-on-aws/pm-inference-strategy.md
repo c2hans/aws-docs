@@ -93,3 +93,7 @@ When used with CMS, the prediction pipeline integrates as follows:
 1. Both prediction alert types appear in the CMS Fleet Manager UI alongside rule-based maintenance alerts
 
 1. The CMS adapter (`source/lambda/cms_adapter.py`) transforms CMS canonical field names (`tire_pressure_fl`) to the per-tire format expected by the model
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

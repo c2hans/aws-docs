@@ -19,3 +19,7 @@ In Client SDK 3, if client-side synchronization fails, AWS CloudHSM makes a best
 **Resolution**: An HSM in your cluster contains unwanted key material that is not marked as unwanted. You must manually remove the key material. To manually delete unwanted key material, use key\_mgmt\_util (KMU) or an API from the PKCS \#11 library or the JCE provider. For more information, see [deleteKey](key_mgmt_util-deleteKey.md) or [Client SDKs](use-hsm.md).
 
 To make token keys more durable, AWS CloudHSM fails key creation operations that don't succeed on the minimum number of HSMs specified in client-side synchronization settings. For more information, see [Key Synchronization in AWS CloudHSM](manage-key-sync.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

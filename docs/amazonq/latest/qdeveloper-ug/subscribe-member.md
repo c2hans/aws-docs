@@ -92,3 +92,7 @@ You can't convert or merge an account instance of IAM Identity Center into an or
 + **A managed application** called **QDevProfile-{{region}}**, in IAM Identity Center. The application is associated with the Amazon Q Developer profile. Like the Amazon Q Developer profile, the application is created once and shared between all Amazon Q Developer Pro subscribers in your member account.
 **Note**
 Amazon Q can create the **QDevProfile-{{region}}** managed application in a maximum of 20 AWS accounts per AWS Region within an organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

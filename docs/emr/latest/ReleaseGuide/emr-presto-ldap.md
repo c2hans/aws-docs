@@ -213,3 +213,7 @@ Linux line continuation characters (\\) are included for readability. They can b
   --bootstrap-actions Name="Distribute LDAP server cert",Path="s3://amzn-s3-demo-bucket/LoadLDAPCert.sh" \
   --security-configuration MyPrestoLDAPSecCfg --configurations file://MyPrestoConfig.json
   ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

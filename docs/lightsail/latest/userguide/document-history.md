@@ -20,3 +20,7 @@ https://docs.aws.amazon.com/lightsail/latest/userguide/document_history.rss
 | [Blueprint quick start guide updates](https://docs.aws.amazon.com/lightsail/latest/userguide/quick-start-chapter.html) | Updated multiple quick start guides with revised snapshot and static IP related content. | October 2, 2025 |
 | [Lightsail AWS Region expansion](https://docs.aws.amazon.com/lightsail/latest/userguide/understanding-regions-and-availability-zones-in-amazon-lightsail.html) | Lightsail is now available in the Asia Pacific (Jakarta) Region. | July 31, 2025 |
 | [Lightsail started tracking documentation updates](#document-history) | Initial publication of this document history page. | July 30, 2025 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

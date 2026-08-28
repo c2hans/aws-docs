@@ -31,3 +31,7 @@ The named AWS service mapping for this pattern:
 +  **Amazon Managed Service for Apache Flink** — stateful keyed processing for steps 2 through 6: per-source normalization, windowing, stateful history, pattern detection, anomaly detection; Flink’s keyed state backend carries per-entity history without external coordination
 +  **Amazon ElastiCache for Redis / Valkey** — baseline store (step 8): sub-millisecond reads of per-entity profiles and expected-value ranges; also used as the latest-state cache for REST API consumers
 +  **Durable analytical sink** — Apache Iceberg on Amazon S3 via the platform foundation’s existing data-product pattern, or a customer’s own Glue/Athena configuration; this is where the quality-scored, reference-enriched telemetry lands for governed consumption
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for an Automotive Data Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

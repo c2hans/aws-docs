@@ -48,3 +48,7 @@ We recommend that you always import the **QnaUtility** example of questions set 
 |  `Admin.004`  | How do I troubleshoot and fix problems with Q and A Bot? | Use the content designer test tool to test a question, and check what items are returned, ranked in order of score. If the desired item does not have the highest score, then add the question to the item and run the test again. The desired item should now have the highest score. Ensure that you aren’t creating items with duplicate questions to avoid unpredictable responses. |
 |  `Admin.005`  | How can I find specific Q and A items in the Designer UI? | Use the filter feature in the **Questions** tab to filter the items list based on the ID field. Or use the **Test** tab to list all the items that match a question. |
 |  `Media.001`  | How can I include pictures in Q and A Bot answers? | Add an image attachment to the item using the content designer. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for QnABot on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

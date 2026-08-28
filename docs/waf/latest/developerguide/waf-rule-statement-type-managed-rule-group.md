@@ -32,3 +32,7 @@ You can narrow the scope of the requests that AWS WAF evaluates with the rule gr
 <a name="managed-rule-group-rule-statement-where-to-find"></a>
 + **Console** – During the process of creating a protection pack (web ACL), on the **Add rules and rule groups** page, choose **Add managed rule groups**, and then find and select the rule group that you want to use.
 + **API** – [ManagedRuleGroupStatement](https://docs.aws.amazon.com/waf/latest/APIReference/API_ManagedRuleGroupStatement.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

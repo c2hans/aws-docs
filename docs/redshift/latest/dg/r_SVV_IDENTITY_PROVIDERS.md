@@ -52,3 +52,7 @@ The sample output includes param descriptions for AWS IAM Identity Center:
  idc_name | awsidc | arn:aws:sso::123456789012:application/ssoins-12345f67fe123d4/apl-a0b0a12dc123b1a4 |   idc_namespc   | {"iam_role":"arn:aws:iam::123456789012:role/MyRedshiftRole","instance_arn":"arn:aws:sso:::instance/ssoins-12345f67fe123d4","is_lakehouse_app":"true"}        | t
 (1 row)
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

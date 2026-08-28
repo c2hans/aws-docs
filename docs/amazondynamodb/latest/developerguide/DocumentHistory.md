@@ -182,3 +182,7 @@ The following table describes important changes of the *DynamoDB Developer Guide
 | `ReturnedItemCount` metric added | A new metric, `ReturnedItemCount`, provides the number of items returned in the response of a Query or Scan operation for DynamoDB is available for monitoring through CloudWatch. | February 24, 2012 |
 | Added examples for incrementing values | DynamoDB supports incrementing and decrementing existing numeric values. Examples show adding to existing values in the "Updating an Item" sections at:<br />[Working with items: Java](JavaDocumentAPIItemCRUD.md).<br />[Working with items: .NET](LowLevelDotNetItemCRUD.md). | January 25, 2012 |
 | Initial product release | DynamoDB is introduced as a new service in Beta release. | January 18, 2012 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

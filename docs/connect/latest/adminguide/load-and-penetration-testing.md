@@ -60,3 +60,7 @@ Even with approval from AWS, you are responsible for:
 Any damages to AWS, other AWS customers, or external entities that are caused by your testing activities.
 Compliance with applicable laws in jurisdictions in which you operate, including laws and regulations governing cybersecurity or misuse of IT systems.
 Any load test run without approval from AWS will result in mitigation actions being taken against the AWS account up to and including suspension of service. Unauthorized testing might also be considered a violation of law and subject to criminal prosecution.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

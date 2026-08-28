@@ -36,3 +36,7 @@ user_id | query_id | child_query_sequence | sequence | text
 100     | 34899339 |   1                  |    2     |  \n            eventid,\n            buyerid\n    from sales\n)\nselect e.eventname,\n        v.venuename,\n        count(distinct(u.userid)) as unique_customers,\n        sum(s.pricepaid) as total_sal
 100     | 34899339 |   1                  |    3     |  es\nfrom venue as v inner join event e on v.venueid = e.venueid\ninner join sales s on e.eventid = s.eventid inner join users u on s.buyerid = u.userid\ngroup by 1,2\norder by 4 desc limit 100
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -216,3 +216,7 @@ Consider the following restrictions and best practices when working with Predict
 + **Retrying failed Predictor Explainability jobs **- If Forecast successfully creates a Predictor but the Predictor Explainability job fails, you can retry creating Predictor Explainability in the console or with the CreateExplainability operation.
 + **You cannot create Impact scores for specific time points and time series **- To view Impact scores for specific time points and time series, see [Forecast Explainability](forecast-explainability.md).
 + **Predictor Explainability visualizations are available for 90 days after creation** - To view the visualization after 90 days, retrain the predictor.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Forecast. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query forecast` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

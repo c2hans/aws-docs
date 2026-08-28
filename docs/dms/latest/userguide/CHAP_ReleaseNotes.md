@@ -48,6 +48,8 @@ AWS DMS version 3.6.0 is currently available in Asia Pacific (Sydney): ap-southe
 | PostgreSQL Read Replica Support for Change Data Capture (CDC) Replication | AWS DMS supports using PostgreSQL read replicas as source endpoints for Change Data Capture (CDC) replication, available with PostgreSQL version 16.x and later, starting with AWS DMS version 3.6.1. This feature allows you to leverage read replicas for CDC tasks. For more information, see [Using a PostgreSQL database as an AWS DMS source](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.PostgreSQL.html). |
 | Enhanced logging for missing target columns | Enhanced logging to inform customers about missing target table columns at default logging level. This improvement changes the logging level from VERBOSE to WARNING, making column discrepancy notifications more visible without requiring detailed debug settings. |
 | SQL Server Binary(16) to PostgreSQL UUID migration | Added support for migrating SQL Server Binary(16) data types to PostgreSQL UUID format. This enables seamless conversion of binary GUID data to native UUID types, improving data type compatibility between SQL Server and PostgreSQL endpoints. |
+| Amazon DocumentDB CDC start position | Added support for specifying a change data capture (CDC) start position for Amazon DocumentDB 3.6.0 sources. |
+| PostgreSQL UUID primary key validation | Added support for data validation of tables that use a PostgreSQL UUID column as the primary key. |
 
 AWS DMS version 3.6.1 includes the following resolved issues:
 
@@ -80,6 +82,44 @@ AWS DMS version 3.6.1 includes the following resolved issues:
 | Data validation memory leak issue | Fixed memory leak in data validation. This prevents out-of-memory failures during long-running validation tasks. |
 | SQL Server CHAR primary key validation false positive issue | Fixed false positive MISSING\_TARGET errors when validating SQL Server to PostgreSQL migrations with CHAR/NCHAR primary keys containing trailing spaces. |
 | S3 validation Athena database conflict issue | Fixed race condition when multiple tasks share S3 endpoints by isolating Athena databases per task. |
+| PostgreSQL target bulk-load security hardening | Improved the security of the PostgreSQL target bulk-load path. AWS DMS now runs the load utility directly rather than through a command shell, and validates connection-script and object-identifier inputs before use. |
+| Amazon S3 extra connection attributes issue | Fixed an issue for Amazon S3 endpoints where non-supported extra connection attributes could be applied. Only supported settings are now used. |
+| Amazon S3 resume folder path issue | Fixed an issue for Amazon S3 sources where resuming a task could misidentify the table name when the folder path contained a date partition, causing data to be read from the wrong location. |
+| Amazon S3 empty string handling issue | Fixed an issue for change data capture to Amazon S3 where empty string values were written as NULL. |
+| Amazon S3 orphaned CDC file retry issue | Fixed an issue for Amazon S3 sources where retries of orphaned CDC data files were not limited to the configured bucket folder. |
+| Amazon DocumentDB/MongoDB capture crash issue | Fixed an issue for Amazon DocumentDB/MongoDB sources where change capture could stop unexpectedly. |
+| Amazon DocumentDB/MongoDB change stream filter issue | Fixed an issue for Amazon DocumentDB/MongoDB sources where change stream filtering did not handle escaped wildcard characters in table names. |
+| Amazon DocumentDB/MongoDB CDC latency metric issue | Fixed an issue where the CDCLatencySource metric reported inflated source latency during idle periods. |
+| Amazon DocumentDB/MongoDB empty post-image issue | Fixed an issue where an empty change-stream post-image could cause the task to stop unexpectedly. |
+| Amazon DocumentDB empty field name issue | Fixed an issue for Amazon DocumentDB targets where rows with NULL or empty-string columns produced an "Empty field name" error. |
+| Oracle NULL column handling issue | Fixed an issue for Oracle sources where buffer management for NULL columns could cause data errors or task failures. |
+| Oracle LogMiner rollback reconnect issue | Fixed an issue for Oracle sources using LogMiner where an empty ROLLBACK could cause a repeated reconnect loop. |
+| Oracle all-NUL CHAR validation issue | Fixed an issue for Oracle-to-PostgreSQL migrations where data validation reported a false positive for Oracle CHAR columns containing only NUL (CHR(0)) characters. |
+| Oracle archived redo log probe issue | Fixed an issue for Oracle sources where archived redo log probing could reduce CDC reliability. |
+| Oracle disconnect handling issue | Fixed an issue for Oracle sources where the task could report errors at shutdown because internal threads were not stopped before disconnecting. |
+| Oracle array binding overflow issue | Fixed an issue for Oracle sources where an integer overflow during array binding could abort the task. |
+| PostgreSQL WAL stream shutdown issue | Fixed an issue for PostgreSQL sources where the task could stop unexpectedly at the tail of the write-ahead log (WAL) stream during shutdown. |
+| PostgreSQL timeout error logging update | Improved error logging for PostgreSQL timeout and termination errors (SQLSTATE 57P01/57014) to aid troubleshooting. |
+| PostgreSQL logical replication set name issue | Fixed an issue for PostgreSQL sources using logical replication where an internal replication set name could be truncated because its buffer did not account for the name prefix and null terminator. |
+| Amazon Redshift batch apply issue | Fixed an issue for Amazon Redshift targets where batch-apply CDC could fail with an XX000 equijoin predicate error after a task moved to a new replication instance. |
+| Amazon Redshift net-changes table issue | Fixed an issue for Amazon Redshift targets where quoted object names were not handled when dropping the intermediate net-changes table. |
+| Amazon Redshift parallel load error issue | Fixed an issue for Amazon Redshift targets where parallel full-load COPY errors were not propagated to the task, which could result in data loss. |
+| Amazon Redshift long object name issue | Fixed an issue for Amazon Redshift targets where metadata retrieval failed for object names longer than 63 characters. |
+| Amazon Redshift CDC file naming issue | Fixed an issue for Amazon Redshift targets where CDC data file naming could cause a column mismatch. |
+| SQL Server source connection issue | Fixed an issue for SQL Server sources where the auxiliary connection could be built with an invalid ODBC driver name, causing the task to fail to connect. |
+| SQL Server error 8134 handling issue | Fixed an issue for SQL Server sources where error 8134 (divide by zero) was not classified as a table-level error, causing full-load retry loops. |
+| Db2 LUW cached change issue | Fixed an issue for Db2 LUW sources where a cached change update could affect 0 rows. |
+| Db2 LUW LOAD utility path issue | Fixed an issue for Db2 LUW targets where the LOAD utility path was not resolved because the DB2INSTANCE/INSTHOME environment was not set for the task. |
+| SAP ASE password validation update | Added validation of the SAP ASE endpoint password for source and target endpoints. |
+| Replication process shutdown issue | Fixed an issue where the replication process could stop unexpectedly during shutdown. |
+| Partition ID warning log update | Removed a spurious partition-ID warning that appeared in task logs. |
+| Full-load reload completion issue | Fixed an issue where a full-load table could be marked complete while it was still queued for reload. |
+| Missing primary key handling issue | Fixed an issue where a data record missing primary key columns could cause the task to hang. |
+| Mixed-case TRUNCATE issue | Fixed an issue where TRUNCATE was not handled correctly for mixed-case schema and table names. |
+| Partition warning log update | Reduced the log severity of the "Could not find any partition" message from Error to Warning. |
+| Out-of-scope table creation issue | Fixed an issue where CREATE TABLE operations were processed for tables outside the task's selection scope. |
+| Transaction record memory leak issue | Fixed an issue where transaction records could cause a memory leak. |
+| Concurrent statement handling issue | Fixed an issue where concurrent statements on an internal connection could cause statement corruption. |
 
 ## AWS Database Migration Service 3.6.0 release notes
 <a name="CHAP_ReleaseNotes.DMS360"></a>
@@ -122,6 +162,7 @@ AWS DMS version 3.6.0 includes the following resolved issues:
 | Enhanced logging for missing target columns | Enhanced logging to inform customers about missing target table columns at default logging level. This improvement changes the logging level from VERBOSE to WARNING, making column discrepancy notifications more visible without requiring detailed debug settings. |
 | SQL Server Binary(16) to PostgreSQL UUID migration | Added support for migrating SQL Server Binary(16) data types to PostgreSQL UUID format. This enables seamless conversion of binary GUID data to native UUID types, improving data type compatibility between SQL Server and PostgreSQL endpoints. |
 | Support for PostgreSQL 17 | Introduced support for PostgreSQL version 17. For more information, see:+  [Using a PostgreSQL database as an AWS DMS source](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Source.PostgreSQL.html) <br />+  [Using a PostgreSQL database as a target for AWS Database Migration Service](https://docs.aws.amazon.com/dms/latest/userguide/CHAP_Target.PostgreSQL.html)  |
+| Amazon DocumentDB CDC start position | Added support for specifying a change data capture (CDC) start position for Amazon DocumentDB 3.6.0 sources. |
 
 AWS DMS version 3.5.4 includes the following resolved issues:
 
@@ -195,6 +236,37 @@ AWS DMS version 3.5.4 includes the following resolved issues:
 | Data validation memory leak issue | Fixed memory leak in data validation. This prevents out-of-memory failures during long-running validation tasks. |
 | SQL Server CHAR primary key validation false positive issue | Fixed false positive MISSING\_TARGET errors when validating SQL Server to PostgreSQL migrations with CHAR/NCHAR primary keys containing trailing spaces. |
 | S3 validation Athena database conflict issue | Fixed race condition when multiple tasks share S3 endpoints by isolating Athena databases per task. |
+| PostgreSQL target bulk-load security hardening | Improved the security of the PostgreSQL target bulk-load path. AWS DMS now runs the load utility directly rather than through a command shell, and validates connection-script and object-identifier inputs before use. |
+| Amazon S3 source storage growth issue | Fixed an issue for Amazon S3 sources where storage usage grew unexpectedly. |
+| Amazon S3 Parquet reader memory issue | Fixed an issue for Amazon S3 sources where the Parquet reader accumulated memory over time. |
+| Oracle partition query ordering update | Added deterministic ordering to the Oracle partitioning query for more reliable parallel full load. |
+| Db2 LUW source capture crash issue | Fixed an issue for Db2 LUW sources where the source-capture logging path could cause the task to stop unexpectedly. |
+| PostgreSQL large LOB handling issue | Fixed an issue for PostgreSQL targets where uploading a LOB value larger than 1 GB was not handled gracefully. |
+| Amazon S3 extra connection attributes issue | Fixed an issue for Amazon S3 endpoints where non-supported extra connection attributes could be applied. Only supported settings are now used. |
+| Amazon S3 resume folder path issue | Fixed an issue for Amazon S3 sources where resuming a task could misidentify the table name when the folder path contained a date partition, causing data to be read from the wrong location. |
+| Amazon S3 empty string handling issue | Fixed an issue for change data capture to Amazon S3 where empty string values were written as NULL. |
+| Amazon DocumentDB/MongoDB capture crash issue | Fixed an issue for Amazon DocumentDB/MongoDB sources where change capture could stop unexpectedly. |
+| Amazon DocumentDB/MongoDB change stream filter issue | Fixed an issue for Amazon DocumentDB/MongoDB sources where change stream filtering did not handle escaped wildcard characters in table names. |
+| Amazon DocumentDB/MongoDB CDC latency metric issue | Fixed an issue where the CDCLatencySource metric reported inflated source latency during idle periods. |
+| Amazon DocumentDB/MongoDB empty post-image issue | Fixed an issue where an empty change-stream post-image could cause the task to stop unexpectedly. |
+| Oracle NULL column handling issue | Fixed an issue for Oracle sources where buffer management for NULL columns could cause data errors or task failures. |
+| Oracle LogMiner rollback reconnect issue | Fixed an issue for Oracle sources using LogMiner where an empty ROLLBACK could cause a repeated reconnect loop. |
+| Oracle all-NUL CHAR validation issue | Fixed an issue for Oracle-to-PostgreSQL migrations where data validation reported a false positive for Oracle CHAR columns containing only NUL (CHR(0)) characters. |
+| PostgreSQL WAL stream shutdown issue | Fixed an issue for PostgreSQL sources where the task could stop unexpectedly at the tail of the write-ahead log (WAL) stream during shutdown. |
+| PostgreSQL timeout error logging update | Improved error logging for PostgreSQL timeout and termination errors (SQLSTATE 57P01/57014) to aid troubleshooting. |
+| Amazon Redshift batch apply issue | Fixed an issue for Amazon Redshift targets where batch-apply CDC could fail with an XX000 equijoin predicate error after a task moved to a new replication instance. |
+| Amazon Redshift net-changes table issue | Fixed an issue for Amazon Redshift targets where quoted object names were not handled when dropping the intermediate net-changes table. |
+| Amazon Redshift parallel load error issue | Fixed an issue for Amazon Redshift targets where parallel full-load COPY errors were not propagated to the task, which could result in data loss. |
+| Db2 LUW cached change issue | Fixed an issue for Db2 LUW sources where a cached change update could affect 0 rows. |
+| Db2 LUW LOAD utility path issue | Fixed an issue for Db2 LUW targets where the LOAD utility path was not resolved because the DB2INSTANCE/INSTHOME environment was not set for the task. |
+| SAP ASE password validation update | Added validation of the SAP ASE endpoint password for source and target endpoints. |
+| Replication process shutdown issue | Fixed an issue where the replication process could stop unexpectedly during shutdown. |
+| Full-load reload completion issue | Fixed an issue where a full-load table could be marked complete while it was still queued for reload. |
+| Missing primary key handling issue | Fixed an issue where a data record missing primary key columns could cause the task to hang. |
+| Mixed-case TRUNCATE issue | Fixed an issue where TRUNCATE was not handled correctly for mixed-case schema and table names. |
+| Partition warning log update | Reduced the log severity of the "Could not find any partition" message from Error to Warning. |
+| Transaction record memory leak issue | Fixed an issue where transaction records could cause a memory leak. |
+| Concurrent statement handling issue | Fixed an issue where concurrent statements on an internal connection could cause statement corruption. |
 
 ## AWS Database Migration Service 3.5.3 release notes
 <a name="CHAP_ReleaseNotes.DMS353"></a>
@@ -1047,3 +1119,7 @@ The issues resolved in AWS DMS 3.3.3 include the following:
 + Fixed an issue with validation for Oracle targets with schema names' case.
 + Fixed an issue with validation of IBM Db2 versions 9.7 and 10.
 + Fixed an issue for a task not stopping two times with `StopTaskCachedChangesApplied` and `StopTaskCachedChangesNotApplied` enabled.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

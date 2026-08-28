@@ -569,3 +569,7 @@ To learn more about using the `sam build` command, see the following:
 + **[Learning AWS SAM \| sam build \| E3 ](https://www.youtube.com/watch?v=vsAvRyLnB7Y)** – Serverless Land "Learning AWS SAM" series on YouTube.
 + **[AWS SAM build: how it provides artifacts for deployment (Sessions With SAM S2E8)](https://www.youtube.com/watch?v=bNbBd6XoDHg)** – Sessions with AWS SAM series on YouTube.
 + **[AWS SAM custom builds: How to use Makefiles to customize builds in SAM (S2E9)](https://www.youtube.com/watch?v=wpccutnSbAk)** – Sessions with AWS SAM series on YouTube.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

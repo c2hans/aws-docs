@@ -20,3 +20,7 @@ The previous section provided a path to migration. This section provides an anno
 | 3 | Transferred data is stored in Amazon S3 buckets. You can access data stored in Amazon S3 from an Amazon EC2 instance or nearly any AWS service. | 8 | Once your data is in AWS, you can leverage other services, such as data lakes, AI/ML, and analytics. |
 | 4 | Users access their environment through a remote desktop session or command line (ssh). | 9 | Isolating environments leads to enhanced security and limits third parties to only the data they need. |
 | 5 | All of the infrastructure needed for semiconductor design workflows is available on AWS. | 10 | Encryption is everywhere and can be enabled with your encryption keys. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

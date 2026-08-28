@@ -17,3 +17,7 @@ The following table describes significant changes to this guide.
 | Updates | Enhanced and clarified information throughout the guide to reflect the latest versions of AWS Glue, Amazon EMR, and Apache Iceberg. | July 14, 2025 |
 | Additions | Added a [new section](iceberg-firehose.md) on working with Iceberg tables by using Amazon Data Firehose. | February 20, 2025 |
 | Initial publication | — | April 30, 2024 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

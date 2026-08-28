@@ -20,3 +20,7 @@ If the project's source type is `GITLAB_SELF_MANAGED`, you will also need to spe
 1. When creating a group webhook, ensure that CodeBuild has permissions to create group level webhooks within GitLab. To do so, you can use CodeBuild OAuth though CodeConnections. For more information, see [GitLab access in CodeBuild](access-tokens-gitlab-overview.md).
 
    Note that group webhooks work with any of the existing GitLab webhook event types.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeBuild. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codebuild` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

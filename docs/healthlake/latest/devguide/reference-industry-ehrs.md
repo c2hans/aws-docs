@@ -58,3 +58,7 @@ source_url: https://docs.aws.amazon.com/healthlake/latest/devguide/reference-ind
  The following case studies demonstrate how EHR companies use HealthLake:
 +  [Greenway Health](https://aws.amazon.com/solutions/case-studies/latest-greenway-aws-healthlake-case-study/)
 +  [MEDHOST](https://aws.amazon.com/blogs/machine-learning/how-medhost-is-migrating-electronic-health-record-data-to-aws-for-compliance-and-gaining-valuable-insights/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ Turn on the inbound firewall rule "File and Printer Sharing (Echo Request - ICMP
 Check the IP address of the computer. Specifically, check if it's on the same subnet as the computer running DMS data collector and whether it responds to Address Resolution Protocol (ARP) requests.
 If the computer is on a different subnet, then the IP address of the gateway can't be resolved to the media access control (MAC) address.
 Also, check if the computer is switched off, disconnected from the network, or decommissioned.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

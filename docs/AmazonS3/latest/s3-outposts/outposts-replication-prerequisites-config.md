@@ -279,3 +279,7 @@ If you're creating the IAM service role manually, set the role path as `role/ser
 **Note**
 If objects in the source Outposts bucket are tagged, note the following:
 If the source Outposts bucket owner grants S3 on Outposts permission for the `s3-outposts:GetObjectVersionTagging` and `s3-outposts:ReplicateTags` actions to replicate object tags (through the IAM role), Amazon S3 replicates the tags along with the objects. For information about the IAM role, see [Creating an IAM role](#outposts-rep-pretwo).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

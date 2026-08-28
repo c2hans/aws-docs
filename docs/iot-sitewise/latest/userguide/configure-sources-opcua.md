@@ -25,3 +25,7 @@ Currently, AWS IoT SiteWise supports the following data source protocols:
 SiteWise Edge supports a wide range of industrial protocols through integration with data source partners. These partnerships enable connectivity with over 200 different protocols, accommodating various industrial systems and devices.
 
 For a list of available data source partners, see [SiteWise Edge gateway partner data source options](connect-partner-data-source.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

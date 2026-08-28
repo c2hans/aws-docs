@@ -20,3 +20,7 @@ Amazon Lookout for Vision provides the following APIs for data retrieval.
 | <a name="lookoutvision-ListProjects"></a>[ListProjects](https://docs.aws.amazon.com/lookout-for-vision/latest/APIReference/API_ListProjects.html) | List all projects | List |
 | <a name="lookoutvision-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/lookout-for-vision/latest/APIReference/API_ListTagsForResource.html) | List tags for a resource | Read |
 | <a name="lookoutvision-ListTrialDetections"></a>[ListTrialDetections](https://docs.aws.amazon.com/lookout-for-vision/latest/developer-guide/trial-detection.html) | List all anomaly detection jobs | List |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

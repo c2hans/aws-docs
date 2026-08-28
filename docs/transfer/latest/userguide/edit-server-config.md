@@ -264,3 +264,7 @@ When you stop a server to take it offline, currently you are still accruing serv
 While a server is starting up or shutting down, servers aren't available for file operations. The console doesn't show the starting and stopping states.
 
 If you find the error condition `START_FAILED` or `STOP_FAILED`, contact AWS Support to help resolve your issues.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -53,3 +53,7 @@ Amazon Comprehend Medical batch analysis (async) operations have the following q
 | Maximum number of active running batch jobs for each operation | 10 jobs |
 
  If your text is larger than the character quotas, use [segment.py](samples/segment.py.zip) to create smaller segments that can be analyzed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend Medical. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend-medical` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

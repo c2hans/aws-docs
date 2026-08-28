@@ -330,3 +330,7 @@ Once the ECS Express Mode service is running, follow Steps 3–5 in the migratio
 + [Updating resources outside of Express Mode](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/express-update-resources.html)
 + [Managing custom domain names for an App Runner service](manage-custom-domains.md)
 + [Amazon Route 53 weighted routing](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy-weighted.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

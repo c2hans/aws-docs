@@ -111,3 +111,7 @@ Optional fields:
 | icon | string | Name of the icon to show inside the node instead of the default stats. Only Grafana built in icons are allowed (see the available icons [here](https://developers.grafana.com/ui/latest/index.html?path=/story/docs-overview-icon--icons-overview)). |
 | nodeRadius | number | Radius value in pixels. Used to manage node size. |
 | highlighted | Boolean | Sets whether the node should be highlighted. Use, for example, to represent a specific path in the graph by highlighting several nodes and edges. Defaults to `false`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

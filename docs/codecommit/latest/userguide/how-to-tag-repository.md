@@ -20,3 +20,7 @@ In CodeCommit, the primary resource is a repository. You can use the CodeCommit 
 + [View tags for a repository](how-to-tag-repository-list.md)
 + [Edit tags for a repository](how-to-tag-repository-update.md)
 + [Remove a tag from a repository](how-to-tag-repository-delete.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

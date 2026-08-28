@@ -608,3 +608,7 @@ Amazon Transcribe defines the following condition keys that can be used in the `
 |   [transcribe:OutputEncryptionKMSKeyId](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazontranscribe.html#amazontranscribe-policy-keys)  | Filters access based on the KMS key id included in the request, provided in the form of a KMS key ARN | String |
 |   [transcribe:OutputKey](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazontranscribe.html#amazontranscribe-policy-keys)  | Filters access based on the output key included in the request | String |
 |   [transcribe:OutputLocation](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazontranscribe.html#amazontranscribe-policy-keys)  | Filters access based on the output location included in the request | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

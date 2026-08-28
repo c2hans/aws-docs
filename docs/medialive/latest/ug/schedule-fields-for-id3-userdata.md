@@ -14,3 +14,7 @@ This table shows the fields that apply for an action to perform a one-time inser
 |  Start type  | Fixed or Immediate. |
 | Date and time | If the **Start type** is **Fixed**, specify the UTC start time for the ID3 metadata item. The time should be at least 15 seconds in the future.<br />Note that the time is the wall clock time, not the timecode in the input. |
 | ID3 | Enter the ID3 metadata encoded as base64. The metadata must be fully formed ID3 metadata (including both a header and a frame, as per the ID3 2.4.0 specification). <br />The content of the `value` property can include MediaLive [variable data](variable-data-identifiers.md). MediaLive will examine the contents of the base64 and perform substitutions. For example, MediaLive will change **$dt$** to the date and time. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

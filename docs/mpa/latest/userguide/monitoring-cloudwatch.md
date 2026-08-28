@@ -27,3 +27,7 @@ The following tables list the metrics and dimensions for Multi-party approval.
 | `Class` | The class of resource that is being tracked. Multi-party approval usage metrics use this dimension with a value of `None`. |
 | `Type` | The type of entity that is being tracked. Currently, the only valid value for Multi-party approval is `Resource`. |
 | `Resource` | The type of resource that is being tracked. Currently, valid values include the following:IdentitySource, ApprovalTeam, and ApproversPerApprovalTeam |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Multi-party approval. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mpa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

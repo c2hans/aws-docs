@@ -25,3 +25,7 @@ For more information, see [Working with color space](hdr-working-with.md).
 Noise reducer filters add up to 10% density when compared to an output without noise reduction.
 
 For more information, see [Noise reduction](vq-noise-reduction.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

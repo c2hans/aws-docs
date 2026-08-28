@@ -43,3 +43,7 @@ select * from sys_integration_table_state_change;
  99108e72-1cfd-414f-8cc0-0216acefac77 | perfdb        | sbtest80t3s | sbtest18   | Synced    | {"txn_seq":9834,"txn_id":126597515} |                     | 2023-09-20 19:40:32.544084
  99108e72-1cfd-414f-8cc0-0216acefac77 | perfdb        | sbtest40t3s | sbtest23   | Synced    | {"txn_seq":9834,"txn_id":126597515} |                     | 2023-09-20 15:49:05.186209
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

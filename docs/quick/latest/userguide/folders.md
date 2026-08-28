@@ -34,3 +34,7 @@ Use the following topics to learn more about creating and configuring a folder o
 + [Permissions for Quick Sight shared folders](folders-security.md)
 + [Create and manage membership permissions for Quick Sight shared folders](sharing-folders.md)
 + [Creating Quick Sight scaled folders with the Quick Sight APIs](folders-scaled.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

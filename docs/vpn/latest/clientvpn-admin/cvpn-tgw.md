@@ -368,3 +368,7 @@ Consider the following when you use Transit Gateway integration with Client VPN:
   + To access the internet through Client VPN with Transit Gateway, without split tunnel, an attached VPC must have NAT configured.
     + **For IPv4**: Configure a NAT Gateway to replace Client VPN client IPs with a public IP address.
     + **For IPv6**: See [Centralized internet outbound traffic with IPv6](https://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/advanced-dual-stack-and-ipv6-only-network-designs.html#centralized-internet-outbound-traffic-with-ipv6).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

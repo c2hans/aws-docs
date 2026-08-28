@@ -166,3 +166,7 @@ DB snapshots are particularly valuable for the following use cases.
 +  Sharing data across different RDS accounts: DB snapshots can be shared across different AWS accounts, facilitating the transfer of data between accounts or regions. This is useful for collaborative projects or scenarios where data needs to be shared for various purposes. For more information, see [Sharing a DB snapshot for Amazon RDS](USER_ShareSnapshot.md).
 
 In this tutorial, you explored essential tasks for managing your DB instance throughout its lifecycle. You learned how to create a DB instance, add and update Amazon RDS tags, expand storage, and create read replicas. You also learned ways to build on these fundamental operations and manage your production environment effectively. This included establishing a development environment for testing and synchronizing it with the production environment for consistency. These tasks help maintain a resilient and scalable database infrastructure, ensuring your Amazon RDS environment operates efficiently.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,3 +27,7 @@ If you want to improve and enhance your observability posture, where and how do 
 + [Stage 1: Define your North Star](define-north-star.md)
 + [Stage 2: Implement observability](implement-observability.md)
 + [Stage 3: Inspect, adapt, and iterate](inspect-adapt-iterate.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

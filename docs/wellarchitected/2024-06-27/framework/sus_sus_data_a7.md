@@ -45,3 +45,7 @@ Adopt shared file systems or storage to avoid data duplication and allow for mor
 + [ Storage cost optimization with Amazon EFS ](https://www.youtube.com/watch?v=0nYAwPsYvBo)
 + [AWS re:Invent 2023 - What's new with AWS file storage](https://www.youtube.com/watch?v=yXIeIKlTFV0)
 + [AWS re:Invent 2023 - File storage for builders and data scientists on Amazon Elastic File System](https://www.youtube.com/watch?v=g0f6lrmEyRM)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

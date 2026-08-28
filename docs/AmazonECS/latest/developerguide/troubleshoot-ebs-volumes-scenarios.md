@@ -28,3 +28,7 @@ The following file system format scenarios result in this message.
 + The file system format that you specify during configuration isn't compatible with the [task's operating system](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_RuntimePlatform.html).
 + You configure an Amazon EBS volume to be created from a snapshot, and the snapshot's file system format isn't compatible with the task's operating system. For volumes created from a snapshot, you must specify the same filesystem type that the volume was using when the snapshot was created.
 You can utilize the Amazon ECS container agent logs to troubleshoot this message for EC2 tasks. For more information, see [Amazon ECS log file locations](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/logs.html) and [Amazon ECS log collector](https://docs.aws.amazon.com/AmazonECS/latest/developerguide/ecs-logs-collector.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

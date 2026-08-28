@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
  As malicious actors continue to target healthcare and health data owners with attacks such as ransomware, implement a data availability strategy to help reduce the potential impact. This can include backups that are stored in a separate AWS account with authorization controls in place to prevent modifying the backup (such as setting the backup as read only) or a [pilot light disaster recovery environment](https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html). Create specific policies, procedures, and playbooks for ransomware to prepare your organization.
 
  The [incident response section of the security pillar in the AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/security-pillar/incident-response.html) contains further details on preparing for and responding to security incidents in the cloud.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

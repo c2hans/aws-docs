@@ -33,7 +33,7 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
                            {
                                "Effect": "Allow",
                                "Principal": {
-                                   "AWS": "arn:aws:iam::{{111122223333}}:{{ROLE-NAME}}"
+                                   "AWS": "arn:aws:iam::{{111122223333}}:role/{{ROLE-NAME}}"
                                },
                                "Action": "sts:AssumeRole"
                            }
@@ -107,7 +107,7 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
                                        ],
                                        "Resource": [
                                            "arn:aws:s3:::{{aws-application-migration-service-us-east-2}}/latest/source-automation-client/linux/ssaf-client/ssaf_client",
-                                           "arn:aws:s3:::{{us-east-2}}/*"
+                                           "arn:aws:s3:::{{aws-application-migration-service-us-east-2}}/*"
                                        ],
                                        "Effect": "Allow"
                                    },
@@ -160,7 +160,7 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
 
    1. Choose **Next** again.
 
-   1. Acknowledge the required capabilities and choose on **Submit**.
+   1. Acknowledge the required capabilities and choose **Submit**.
 
    1. Wait for the stack to finish creation.
 
@@ -179,3 +179,7 @@ NEW - You can now accelerate your migration and modernization with AWS Transform
    1. Wait for the stack to finish creation.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

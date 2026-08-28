@@ -20,3 +20,7 @@ The Salesforce Online connector has the following known limitations:
 + The Salesforce Online connector only updates user status during connector syncs, meaning that any deactivated users are only deactivated in Amazon Q Business during the next connector sync. If a user is deactivated in Salesforce they may retain access through Amazon Q Business until the next sync.
 + The Salesforce Online connector respects hierarchies for custom object record access regardless of Salesforce settings, due to Salesforce API limitations. In other words, while Salesforce Online lets users disable Grant Access Using Hierarchies for custom objects, the role hierarchy will still apply for Amazon Q Business.
 + When Access Control Lists (ACLs) are enabled, the "Sync only new or modified content" option is not available due to Salesforce Online API limitations. We recommend using "Full sync" or "New, modified, or deleted content sync" modes instead, or disable ACLs if you need to use this sync mode.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

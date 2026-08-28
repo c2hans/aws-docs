@@ -25,3 +25,7 @@ Before you can add client-side functionality to your game, you need to do these 
   + Name of the matchmaking configuration resource.
   + The list of player attributes, which are defined in the rule set.
 + **Retrieve player data.** Set up a way to get relevant data for each player to include in your matchmaking requests. You need the player ID and player attribute values. If your rule set has latency rules or you want to use latency data when placing game sessions, collect latency data for each geographic location where the player is likely be slotted into a game. To obtain accurate latency measurements, use Amazon GameLift Servers's UDP ping beacons. These endpoints enable you to measure actual UDP network latency between player devices and each of the potential hosting locations, resulting in more accurate placement decisions than using ICMP pings. For more information on using UDP ping beacons to measure latency, refer to [UDP ping beacons](https://docs.aws.amazon.com/gameliftservers/latest/developerguide/reference-udp-ping-beacons.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

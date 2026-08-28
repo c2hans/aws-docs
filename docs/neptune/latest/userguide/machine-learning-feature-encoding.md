@@ -199,3 +199,7 @@ Here are some of the heuristics that Neptune ML uses in selecting the appropriat
   + Neptune ML first tries to encode the values as numeric features. if this succeeds, Neptune ML uses numerical encoding to create numeric vector features.
   + Otherwise, Neptune ML encodes the values as multi-categorical.
 + If Neptune ML cannot infer the data type of a property's values, Neptune MLdrops the property from the training graph.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

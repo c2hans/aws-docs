@@ -98,3 +98,7 @@ For more information about using the `Fn::GetAtt` intrinsic function, see [`Fn::
 
 `StorageProfileId`  <a name="StorageProfileId-fn::getatt"></a>
 The storage profile ID.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

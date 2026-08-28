@@ -28,3 +28,7 @@ For custom classification, use the [StartDocumentClassificationJob](https://docs
 For custom entity recognition, use the [StartEntitiesDetectionJob](https://docs.aws.amazon.com/comprehend/latest/APIReference/API_StartEntitiesDetectionJob.html) API request. Provide the **FlywheelArn** parameter instead of the **EntityRecognizerArn**.
 
 You can use the console to run asynchronous analysis jobs for [custom classification](analysis-jobs-custom-classifier.md) or [custom entity recognition](detecting-cer.md). When you create the job, enter the flywheel ARN in the **Recognizer model** or **Classifier model** field.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

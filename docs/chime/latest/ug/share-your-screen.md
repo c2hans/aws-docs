@@ -23,3 +23,7 @@ If you want others to see your mouse pointer while you present, you must share y
 1. Choose **Share**.
 
 Desktop users in the meeting see a **Shared screen** pop-up, and mobile users see an alert to either view or ignore the shared screen. Meeting attendees who view your shared screen can use their pointers to zoom in and out.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

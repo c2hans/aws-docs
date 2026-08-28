@@ -19,3 +19,7 @@ In the MediaConvert console, this means that you must delete the **Audio 1** tab
 | Sony XDCAM | Audio codec: Uncompressed WAV<br />Number of channels per track: 1<br />Number of tracks per output: Any even number from 2 through 16, or no audio at all<br />Bit depth: 16 bits or 24 bits; you must choose the same value for all audio tracks in the output<br />Sample rate: 48 kHz |
 | XDCAM RDD9 | Audio codec: Uncompressed WAV<br />Number of channels per track: 1<br />Number of tracks per output: 2, 4, or 8<br />Bit depth: 16 bits or 24 bits; you must choose the same value for all audio tracks in the output<br />Sample rate: 48 kHz |
 | D10 (SMPTE-386) | Audio codec: Uncompressed WAV<br />Number of channels per track: 4 or 8<br />Number of tracks per output: 1, or no audio at all<br />Bit depth: 16 bits or 24 bits; you must choose the same value for all audio tracks in the output<br />Sample rate: 48 kHz |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

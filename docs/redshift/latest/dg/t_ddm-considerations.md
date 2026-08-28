@@ -113,3 +113,7 @@ When using dynamic data masking, consider the following:
   For details on how to set and retrieve customized session context variables, go to [SET](r_SET.md), [SET\_CONFIG](r_SET_CONFIG.md), [SHOW](r_SHOW.md), [CURRENT\_SETTING](r_CURRENT_SETTING.md), and [RESET](r_RESET.md). For more information on modifying the server configuration in general, go to [Modifying the server configuration](cm_chap_ConfigurationRef.md#t_Modifying_the_default_settings).
 **Important**
  When using session context variables within DDM policies, the security policy is reliant on the user or role that invokes the policy. Be careful to avoid security vulnerabilities when using session context variables in DDM policies.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

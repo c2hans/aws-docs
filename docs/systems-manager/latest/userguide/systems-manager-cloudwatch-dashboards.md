@@ -13,3 +13,7 @@ Amazon CloudWatch dashboards are customizable home pages in the CloudWatch conso
 + A common view of critical resource and application measurements that can be shared by team members for faster communication flow during operational events.
 
 You can create dashboards by using the console, the AWS Command Line Interface (AWS CLI), or by using the CloudWatch `PutDashboard` API. For more information, see [Using Amazon CloudWatch dashboards](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/CloudWatch_Dashboards.html) in the *Amazon CloudWatch User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

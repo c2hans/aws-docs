@@ -199,3 +199,7 @@ If your only reason is the lack of a primary key, adding one is almost always th
 | Table has no suitable key (PostgreSQL 16\+) | Add a primary key or unique index. Using REPLICA IDENTITY FULL with implicit index selection is unreliable and should be a last resort |
 | Table has no suitable key (before PostgreSQL 16) | Add a primary key or unique index; avoid REPLICA IDENTITY FULL if possible |
 | Write-heavy workload with large/TOASTed columns | Avoid REPLICA IDENTITY FULL due to WAL volume amplification |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

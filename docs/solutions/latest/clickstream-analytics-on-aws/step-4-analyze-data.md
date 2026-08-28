@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/clickstream-analytics-o
 1. Choose **Exploration** in the left navigation pane. You can query the clickstream data by using the exploratory analytics models.
 
  Congratulations\! You have completed the getting started tutorial. You can explore the Analytic Studio or continue to learn more about this guidance later.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Clickstream Analytics on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

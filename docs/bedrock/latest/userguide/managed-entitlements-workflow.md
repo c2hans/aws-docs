@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/managed-entitle
 + Organization/OU grants: Management account can bulk-activate all grants, or recipients activate individually
 
 **Step 5 - Use the model**: After activation, you can invoke the model in your entitled account using the Amazon Bedrock console, AWS CLI, or AWS SDKs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

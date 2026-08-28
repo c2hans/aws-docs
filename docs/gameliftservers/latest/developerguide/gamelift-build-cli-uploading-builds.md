@@ -12,3 +12,7 @@ When creating a build and uploading your files, you have a couple of options:
 With both methods, Amazon GameLift Servers creates a new build resource with a unique build ID and other metadata. The build starts in the **Initialized** status. After Amazon GameLift Servers acquires the game server files, the build moves to **Ready** status.
 
 When the build is ready, you can deploy it to a new Amazon GameLift Servers fleet. For more information, see [Create an Amazon GameLift Servers managed EC2 fleet](fleets-creating.md).When Amazon GameLift Servers sets up the new fleet, it downloads the build files to each fleet instance and installs the build files.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

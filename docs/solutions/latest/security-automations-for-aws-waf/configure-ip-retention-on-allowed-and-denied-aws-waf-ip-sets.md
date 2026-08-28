@@ -39,3 +39,7 @@ Follow these steps to turn on IP retention:
 
 **Note**
 Depending on the time when DynamoDB deletes an item expired by TTL, the actual delete operation of an expired IP address from the AWS WAF IP set can vary. DynamoDB TTL deletion mainly depends on the size and activity level of a table. Expect a delay in the AWS WAF delete operation because of the potential delay in the DynamoDB delete operation. In general, the solution deletes expired IP addresses from the AWS WAF IP set shortly after DynamoDB TTL deletion. For more information, refer to [DynamoDB Time to Live (TTL)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/howitworks-ttl.html) in the *Amazon DynamoDB Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Security Automations for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

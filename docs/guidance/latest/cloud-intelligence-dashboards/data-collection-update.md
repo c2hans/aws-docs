@@ -171,3 +171,7 @@ Please carefully verify existence of default path on S3 when asked (mainly S3 bu
 <a name="post-update"></a>
 
 After deployment you can [check the execution state](data-collection-utilize-data.md#data-collection-utilize-data-check-execution) and refresh the data by triggering the execution of Step Functions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Intelligence Dashboards on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

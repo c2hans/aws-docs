@@ -32,3 +32,7 @@ The following procedures describe how to send log files before you sign in to an
 1. If you are not already connected to WorkSpaces Applications and streaming an application, use the WorkSpaces Applications client to start a streaming session.
 
 1. In the upper right of the WorkSpaces Applications session window, choose the **Profiles** icon, and then choose **Send Diagnostic Logs**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

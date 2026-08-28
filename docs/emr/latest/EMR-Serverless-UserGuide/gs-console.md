@@ -169,3 +169,7 @@ While the application you created should auto-stop after 15 minutes of inactivit
 To delete the application, navigate to the **List applications** page. Select the application that you created and choose **Actions → Stop** to stop the application. After the application is in the `STOPPED` state, select the same application and choose **Actions → Delete**.
 
 For more examples of running Spark and Hive jobs, see [Using Spark configurations when you run EMR Serverless jobs](jobs-spark.md) and [Using Hive configurations when you run EMR Serverless jobs](jobs-hive.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

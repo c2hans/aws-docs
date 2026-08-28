@@ -47,3 +47,7 @@ Consider [*P*, *Q*) as the range query for an archive of *N* megabytes (MB) and 
 + If *P* is an even number and *k* is the maximum number, where *P* can be written as 2*k* \* *X*, then there are at most *k* tree-hash aligned ranges that start with *P*. *X* is an integer greater than 0. The tree-hash aligned ranges fall in the following categories:
   + For each *i*, where (0 <= *i* <= *k*) and where *P* \+ 2*i* < *N*, then [*P*, *Q* \+ 2*i*) is a tree-hash aligned range.
   + *P* = 0 is the special case where *A* = 2[lgN]\*0
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Glacier. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonglacier` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

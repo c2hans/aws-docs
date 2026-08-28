@@ -12,3 +12,7 @@ Follow these best practices when using the strangler fig pattern, so you can ind
 + Select components that have scalability requirements, and start with one of these components.
 + Select a component that has frequent business requirement changes and frequent deployments.
 + To implement this pattern at scale on AWS, deploy the refactored ASMX services in a Windows container that is running in Amazon Elastic Container Service (Amazon ECS), and publish your modernized REST API by using Amazon API Gateway.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

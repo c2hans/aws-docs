@@ -46,3 +46,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/financial-services-gr
  When you run experiments, or if a subset of production workloads requires a specific instance type, grid schedulers typically enable tasks to be directed to the appropriate hardware through compute resource groups.
 
  To simplify instance selection, AWS also offers [attribute-based instance type selection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-fleet-attribute-based-instance-type-selection.html). With this feature, teams can express compute requirements in terms of: vCPUs, memory, storage, and more. Using these attributes, Amazon EC2 Auto Scaling or Amazon EC2 Fleet will choose the instances that fit the specified attributes. This removes the need to manually pick instance types, ensures access a broader range of capacity via Amazon EC2 Spot and automatically enables new instance types as they become available as long as they meet the criteria that you define.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

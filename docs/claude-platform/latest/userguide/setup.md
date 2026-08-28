@@ -67,3 +67,7 @@ When you’re signed in through the AWS Console, the Claude Console scopes to yo
 +  **"Signed in as a different account" after following the setup link:** Choose **Log out and continue**. The page reauthenticates you with the email address you entered.
 +  **"Not found" message during sign-in:** This message might appear briefly during redirect. You can dismiss it.
 +  **Usage page shows no data after your first API call:** Usage data can take a few minutes to appear in the Claude Console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Claude Platform on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query claude-platform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

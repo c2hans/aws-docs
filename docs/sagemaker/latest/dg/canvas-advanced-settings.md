@@ -94,3 +94,7 @@ Canvas supports the following time series forecasting algorithms:
 <a name="canvas-advanced-settings-time-series-quantiles"></a>
 
 For time series forecasting, SageMaker AI trains 6 model candidates with your target time series. Then, SageMaker AI combines these models using a stacking ensemble method to create an optimal forecasting model for a given objective metric. Each forecasting model generates a probabilistic forecast by producing forecasts at quantiles between P1 and P99. These quantiles are used to account for forecast uncertainty. By default, forecasts are generated for 0.1 (`p10`), 0.5 (`p50`), and 0.9 (`p90`). You can choose to specify up to five of your own quantiles from 0.01 (`p1`) to 0.99 (`p99`), by increments of 0.01 or higher.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

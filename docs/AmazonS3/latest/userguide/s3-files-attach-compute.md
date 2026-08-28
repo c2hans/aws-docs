@@ -12,3 +12,7 @@ S3 Files supports the following compute environments:
 + [AWS Lambda functions](s3-files-mounting-lambda.md)
 + [Amazon Elastic Kubernetes Service (Amazon EKS) clusters](s3-files-mounting-eks.md)
 + [Amazon Elastic Container Service (Amazon ECS) clusters](s3-files-mounting-ecs.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

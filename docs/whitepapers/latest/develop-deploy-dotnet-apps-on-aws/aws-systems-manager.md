@@ -26,3 +26,7 @@ Finally, you can use AWS Systems Manager [Automation](https://docs.aws.amazon.co
 +  Switch the new instance into online mode
 
 By specifying these steps in a Systems Manager Automation document, the steps can be saved as a reusable runbook, ensuring updates can be carried out consistently and shared between members of the development and operations teams.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

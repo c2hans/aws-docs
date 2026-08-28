@@ -52,3 +52,7 @@ Centralized outbound traffic is applicable if you require centralized traffic in
  Third, it relieves you of the burden of maintaining complex routing configurations.
 
  Also, pod networking is configured so that the pods can communicate with IPv4-based applications outside the cluster, allowing you to adopt the benefits of IPv6 on Amazon EKS without requiring that all dependent services deployed across your organization are first migrated to IPv6. For more information, refer to [Amazon EKS launches IPv6 support](https://aws.amazon.com/blogs/containers/amazon-eks-launches-ipv6-support/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

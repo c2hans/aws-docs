@@ -251,3 +251,7 @@ After consent is granted, any user in your organization can connect without bein
 
 **Note**
 To check whether your tenant restricts user consent, go to the Microsoft Entra admin center and choose **Enterprise applications**, **Consent and permissions**, **User consent settings**. If the setting is **Do not allow user consent**, an administrator must grant consent before users can use the connector.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

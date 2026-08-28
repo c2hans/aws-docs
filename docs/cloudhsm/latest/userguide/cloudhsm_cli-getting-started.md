@@ -10,3 +10,7 @@ With the CloudHSM CLI Command Line Interface (CLI), you can manage users in your
 **Topics**
 + [Install the CloudHSM CLI](w2aac23c15c13b7.md)
 + [Use the CloudHSM CLI](cloudhsm_cli-getting-started-use.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

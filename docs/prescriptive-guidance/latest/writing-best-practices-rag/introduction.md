@@ -24,3 +24,7 @@ The recommendations in this guide can help you achieve the following:
 + Help RAG applications to better understand domain-specific knowledge and context by providing clear definitions and explanations within source documents.
 + Facilitate easier maintenance and knowledge base updates for RAG applications by adhering to consistent formatting and structuring guidelines across source documents.
 + Improve the scalability of RAG solutions by breaking down large, monolithic documents into smaller, self-contained units that can be efficiently indexed and retrieved.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

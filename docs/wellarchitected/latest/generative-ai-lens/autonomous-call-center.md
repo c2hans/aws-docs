@@ -93,3 +93,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/generative-ai-len
  Start with high-volume, low-complexity scenarios to build confidence and demonstrate value quickly. Common starting points include business information requests, appointment scheduling, and order status inquiries. These scenarios typically have high success rates and clear ROI metrics.
 
  Gradually adding complexity in the automation of contact flows allows organizations to build expertise and customer acceptance over time. Begin with structured interactions before introducing sophisticated conversational AI. This approach reduces implementation risk and allows for learning from early customer feedback.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

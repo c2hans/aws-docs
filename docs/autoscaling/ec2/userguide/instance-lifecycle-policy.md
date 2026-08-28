@@ -34,3 +34,7 @@ source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/instance-lifec
 1.  **Retained instances await manual action.** Instances in retained states continue to incur standard Amazon EC2 charges. These instances don't count toward your Auto Scaling group's desired capacity, so Auto Scaling launches replacement instances to maintain the desired size. Auto Scaling features such as instance refresh and max instance lifetime will also ignore retained instances. This allows you to complete cleanup procedures manually, recover data, or investigate why automated shutdown failed before manually terminating the instance.
 
 1.  **Manual termination occurs.** After you complete the necessary actions on the retained instance, you need to call the `TerminateInstanceInAutoScalingGroup` API to terminate the instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

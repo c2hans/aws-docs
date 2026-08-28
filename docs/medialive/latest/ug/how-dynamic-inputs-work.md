@@ -16,3 +16,7 @@ To set up a dynamic input, you set up the all or part of the file URL with a var
 You can set up for dynamic content in MP4 file inputs and transport stream (TS) file inputs.
 
 The [procedure for setting up](ips-step-design-inputs.md) for input switching, later in this section, provides detailed information about deciding whether you should set up some inputs as dynamic inputs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

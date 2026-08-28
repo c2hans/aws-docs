@@ -134,3 +134,7 @@ Use the following procedure to configure your Jenkins project to invoke Automati
 
 1. In the Jenkins project, choose **Build Now**. Jenkins returns output similar to the following example.
 ![Sample command output in Jenkins software.](http://docs.aws.amazon.com/systems-manager/latest/userguide/images/sysman-ami-jenkins.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

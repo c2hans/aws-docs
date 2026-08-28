@@ -39,3 +39,7 @@ The following properties in the `access-console-handler.properties` file enable 
 + `jwt-role-claim-key` is the key that contains the user's role. The role value must match a configured role (e.g., Admin, User, Guest). Invalid roles fall back to the default role defined in `default-role` in the Handler configuration file.
 
 For more information about these and other Handler configuration parameters, see [Handler configuration files](https://docs.aws.amazon.com/dcv/latest/access-console/handler-config-files.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -152,3 +152,7 @@ When you're restoring an RDS for MariaDB database from a snapshot, you can only 
 + The snapshot was created from a database that was created *after* RDS Optimized Writes was released.
 + The snapshot is restored to a database that supports RDS Optimized Writes.
 + The restored database is associated with a parameter group that has the `rds.optimized_writes` parameter set to `AUTO`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

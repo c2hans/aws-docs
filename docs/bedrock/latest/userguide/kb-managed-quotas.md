@@ -21,6 +21,10 @@ The following quotas apply specifically to managed knowledge bases:
 | Maximum raw data storage per knowledge base | 10 TB | No |
 | Maximum query input characters per Retrieve or AgenticRetrieveStream request (English text) | 10,000 | No |
 | Maximum Retrieve requests per minute (RPM), per knowledge base | 600 (supports burst of 25 requests per second (RPS)) | Yes |
-| Maximum AgenticRetrieveStream requests per minute, per account | 60 | Yes |
+| Maximum AgenticRetrieveStream requests per minute, per account | 300 | Yes |
 
 To request adjustable quota increases, follow the steps at [Requesting a quota increase](https://docs.aws.amazon.com/servicequotas/latest/userguide/request-quota-increase.html), or contact your AWS account team.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

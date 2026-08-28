@@ -21,3 +21,7 @@ The **Improvement Plan** tab provides a list of recommended actions to improve y
 <a name="lenses-sharestab"></a>
 
 For a custom lens, the **Shares** tab provides a list of IAM principals that the lens has been shared with.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

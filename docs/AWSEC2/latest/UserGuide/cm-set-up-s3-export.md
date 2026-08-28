@@ -47,3 +47,7 @@ The following policy must be applied to your S3 bucket to allow Capacity Manager
 This bucket policy helps ensure that Capacity Manager data export files can be delivered securely to your bucket. Specifically:
 + Every time a Capacity Manager data export is delivered, AWS first confirms whether the bucket is still owned by the account that set up the export. If the bucket ownership has changed, the export will not be delivered. This helps to ensure the security of Capacity Manager data. This bucket policy allows AWS (`"Effect": "Allow"`) to check which account owns the bucket (`"Action": ["s3:ListBucket"]`).
 + The policy grants the Capacity Manager service (`"Service": "ec2.capacitymanager.amazonaws.com"`) permission to write export files (`"Action": "s3:PutObject"`) and read objects (`"Action": "s3:GetObject"`) to copy data to your bucket.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

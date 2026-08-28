@@ -457,3 +457,7 @@ XN Limit  (cost=1001055770628.63..1001055770628.65 rows=10 width=31)
                                 ->  XN Hash  (cost=87.98..87.98 rows=8798 width=4)
                                       ->  XN Seq Scan on event  (cost=0.00..87.98 rows=8798 width=4)
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

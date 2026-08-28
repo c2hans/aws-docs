@@ -201,3 +201,7 @@ To take advantage of ESM patches offered by Ubuntu Pro, please follow the proced
 <a name="uploaded-artifacts"></a>
 
 DeepRacer on AWS allows users to upload models downloaded from other instances to promote portability and allow submission of externally-trained models to races. All artifacts that are uploaded to DeepRacer on AWS are thoroughly scanned and validated using functions that are isolated from the rest of your AWS account using a VPC with least privilege permissions. Only after an artifact package passes these validations is it allowed to be stored in the system.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

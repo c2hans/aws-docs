@@ -27,3 +27,7 @@ You can change the Sleep mode setting by doing the following:
    + Never
 
 ![Power and Sleep dropdown menu showing time intervals from 5 minutes to Never, with 2 hours selected.](http://docs.aws.amazon.com/workspaces-thin-client/latest/ug/images/sleep.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -1523,3 +1523,7 @@ AWS Security Hub defines the following condition keys that can be used in the `C
 |   [securityhub:ASFFSyntaxPath/${ASFFSyntaxPath}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-asffsyntaxpath)  | Filters access by the specified fields and values in the request | String |
 |   [securityhub:OCSFSyntaxPath/${OCSFSyntaxPath}](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html#condition-keys-ocsfsyntaxpath)  | Filters access by the specified fields and values in the request | String |
 |   [securityhub:TargetAccount](https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub-access.html#conditions)  | Filters access by the AwsAccountId field that is specified in the request | String |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

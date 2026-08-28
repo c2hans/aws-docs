@@ -59,3 +59,7 @@ Voice ID creates two fields to refer to a caller:
 [Connect Customer Voice ID speaker APIs](https://docs.aws.amazon.com/voiceid/latest/APIReference/Welcome.html) accept either form of speaker identifiers, but only emit `GeneratedSpeakerId` in the Voice ID event streams and contact records. If you want to re-record the caller to redo the voiceprint, you can enroll the caller with the same `CustomerSpeakerId`.
 
  Similarly, Voice ID creates unique fraudster identifiers called `GeneratedFraudsterID` for every fraudster that you add to a watchlist in the domain. Voice ID returns the fraudster identifier if a fraudster is detected in a call when performing fraud risk detection.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

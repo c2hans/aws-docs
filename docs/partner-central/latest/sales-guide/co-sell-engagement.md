@@ -38,3 +38,7 @@ Keep your opportunity complete and current so AWS can accelerate the co-sell eng
 + **Partner solution:** Tag your registered AWS solution so the deal links to a validated offering.
 
 The agent can help you strengthen each of these. For details, see [Agents for opportunity management](partner-cosell-agent.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -82,3 +82,7 @@ aws eks associate-access-policy --cluster-name <cluster-name> --principal-arn <i
 ## Next steps
 <a name="_next_steps"></a>
 +  [Create a kubeconfig so you can use kubectl with an IAM identity](create-kubeconfig.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

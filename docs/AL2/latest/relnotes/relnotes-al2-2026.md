@@ -8,6 +8,7 @@ source_url: https://docs.aws.amazon.com/AL2/latest/relnotes/relnotes-al2-2026.ht
 The following are the release notes for Amazon Linux 2 for 2026.
 
 **Topics**
++ [2.0.20260825](relnotes-20260825.md)
 + [2.0.20260817](relnotes-20260817.md)
 + [2.0.20260803](relnotes-20260803.md)
 + [2.0.20260727](relnotes-20260727.md)
@@ -32,3 +33,7 @@ The following are the release notes for Amazon Linux 2 for 2026.
 + [2.0.20260202](relnotes-20260202.md)
 + [2.0.20260120](relnotes-20260120.md)
 + [2.0.20260109](relnotes-20260109.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux 2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AL2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

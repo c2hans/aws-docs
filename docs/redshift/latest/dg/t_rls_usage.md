@@ -88,3 +88,7 @@ Following are the limitations when working with RLS policies:
 +  Views with row-level security policies can't reference system tables and system views.
 +  A late-binding view that's referenced by a regular view can't be RLS protected.
 +  RLS-protected relations and nested data from data lakes can't be accessed in the same query.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

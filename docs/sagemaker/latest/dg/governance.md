@@ -36,3 +36,7 @@ For more information, see [Amazon SageMaker Model Dashboard](model-dashboard.md)
 Amazon SageMaker Assets is a new workflow that streamlines ML governance. It allows users to easily publish, share, and subscribe to ML assets and data assets, such as feature groups and Amazon Redshift tables.
 
 Administrators use Amazon DataZone to set up the databases and the ML infrastructure for users to share assets within Amazon SageMaker Studio. After set up, users can seamlessly share assets with each other without additional administrator overhead. For more information about Amazon SageMaker Assets, see [Controlled access to assets with Amazon SageMaker Assets](sm-assets.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

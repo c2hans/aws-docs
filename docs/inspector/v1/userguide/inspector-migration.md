@@ -56,3 +56,7 @@ When you delete an assessment template, all assessment runs, findings, and versi
 <a name="inspector-migration-step-3"></a>
 
 You can enable the new Amazon Inspector using the AWS Management Console or the new Amazon Inspector APIs. To get started with the new Amazon Inspector, see [Getting Started](https://docs.aws.amazon.com/inspector/latest/user/getting_started_tutorial.html) in the *Amazon Inspector User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

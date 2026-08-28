@@ -265,3 +265,7 @@ You can remove jobs that are no longer needed. You can delete one or more jobs i
 1. Verify that you want to delete the job by entering **delete**.
 
 You can also delete a saved job when you're viewing the **Job details** tab for that job in the visual editor.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

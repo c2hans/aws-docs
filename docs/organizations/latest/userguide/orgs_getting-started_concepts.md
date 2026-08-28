@@ -130,3 +130,7 @@ Declarative policies help you centrally configure and manage AWS services and th
 + **[Upgrade rollout policies](orgs_manage_policies_upgrade_rollout.md)** allow you to centrally manage and stagger automatic upgrades across multiple AWS resources and accounts in your organization.
 + **[Amazon S3 policies](orgs_manage_policies_s3.md)** allow you to centrally manage configurations for Amazon S3 resources at scale across the accounts in an organization.
 + **[AWS Shield Network Security Director policies](orgs_manage_policies_network_security_director.md)** allow you to centrally enable and manage AWS Shield Network Security Director across the accounts in an organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -142,3 +142,7 @@ After all the code is in place, the example has the following directory structur
 + [sam\_stacks](https://docs.aws.amazon.com/lambda/latest/dg/chapter-layers.html) – This folder contains the `shared.py` layer. A layer is a file archive that contains libraries, a custom runtime, or other dependencies. With layers, you can use libraries in your function without needing to include them in a deployment package.
 + *product-mock-service* – This folder contains all product-related Lambda functions and files.
 + *shopping-cart-service* – This folder contains all shopping-related Lambda functions and files.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

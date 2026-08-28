@@ -223,3 +223,7 @@ For a complete list of sync options, see the [Argo CD sync options documentation
 +  [Create Applications](argocd-create-application.md) - Create your first Application
 +  [Argo CD considerations](argocd-considerations.md) - EKS-specific patterns, Identity Center integration, and multi-cluster configuration
 +  [Argo CD Documentation](https://argo-cd.readthedocs.io/en/stable/) - Comprehensive Argo CD documentation including sync hooks, health checks, and advanced patterns
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

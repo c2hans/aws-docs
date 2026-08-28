@@ -36,3 +36,7 @@ Make sure that you use only data from normal (standard) operations. To do this, 
 To provide insight into past events, Lookout for Equipment uses labels that call out these events for the ML model. Providing this data is optional, but if it's available, it can help train your model more accurately and efficiently.
 
 For information about using labels, see [Understanding labeling](understanding-labeling.md) and [Labeling your data](labeling-data.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

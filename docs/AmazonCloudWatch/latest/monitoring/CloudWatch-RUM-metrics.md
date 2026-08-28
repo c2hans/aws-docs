@@ -66,3 +66,7 @@ You can configure extended metrics for your mobile application to provide additi
 | `WarmAppLaunchSatisfiedTransaction` | Count | The number of warm app launches that completed in less than 2 seconds, providing a satisfactory user experience. |
 | `WarmAppLaunchToleratedTransaction` | Count | The number of warm app launches that completed between 2 and 8 seconds, providing a tolerable, but not ideal, user experience. |
 | `WarmLaunchTime` | Milliseconds | Time taken to launch the application from background state.<br />For Android: Time from Application `onCreate` until the first Activity finishes creating.<br />For iOS: Time from `UIApplicationWillEnterForegroundNotification` until `didBecomeActiveNotification`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

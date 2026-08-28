@@ -2,46 +2,49 @@
 source_url: https://docs.aws.amazon.com/autoscaling/ec2/userguide/use-ec2-capacity-reservations.html
 ---
 
-# Reserve capacity in specific Availability Zones with Capacity Reservations
+# Use Capacity Reservations in your Auto Scaling group
 <a name="use-ec2-capacity-reservations"></a>
 
-Amazon EC2 On-Demand Capacity Reservations allow you to reserve compute capacity in specific Availability Zones. To start using Capacity Reservations with Auto Scaling, first you create a Capacity Reservation or a Capacity Reservation group in a specific Availability Zone. Then, you can add a Capacity Reservation preference to your Auto Scaling group when you create it or when you update an existing group.
+With Amazon EC2 Auto Scaling and Amazon EC2 Capacity Reservations, you can launch instances from your Auto Scaling group into reserved compute capacity. This page describes the Capacity Reservation types that Auto Scaling supports and helps you choose the approach that fits your workload.
 
-To create a Capacity Reservation, see [Create a Capacity Reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-create.html) in the *Amazon EC2 User Guide*. To create a Capacity Reservation group, see [Create a Capacity Reservation group](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-cr-group.html) in the *Amazon EC2 User Guide*.
+## What are Capacity Reservations?
+<a name="what-are-capacity-reservations"></a>
 
-## Capacity Reservation preference
-<a name="asg-capacity-reservation-preference"></a>
+A Capacity Reservation reserves Amazon EC2 compute capacity in a specific Availability Zone, so that capacity is available when your Auto Scaling group needs to launch instances. Amazon EC2 offers several types of Capacity Reservations that fit different workload patterns. For more information, see [Capacity Reservations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html) in the *Amazon EC2 User Guide*.
 
-Capacity Reservation preference helps you use Capacity Reservations efficiently by prioritizing reserved capacity in a Capacity Reservation before using On-Demand capacity. You can select from the following Capacity Reservation preference options:
-+ **Default** – Auto Scaling uses the Capacity Reservation preference from your launch template or an open Capacity Reservation.
-+ **None** – Auto Scaling will not launch instances into a Capacity Reservation. Instances will run in On-Demand capacity.
-+ **Capacity Reservations only** – Auto Scaling will only launch instances into a Capacity Reservation or Capacity Reservation group. If capacity isn't available, instances will fail to launch.
-+ **Capacity Reservations first** – Auto Scaling will launch instances into a Capacity Reservation or Capacity Reservation group. If capacity isn't available instances will run in On-Demand capacity.
+## Capacity Reservation types supported
+<a name="capacity-reservation-types-supported"></a>
 
-If you select Capacity Reservations only or Capacity Reservations first, you can specify a Capacity Reservation target.
+Auto Scaling supports the following Amazon EC2 Capacity Reservation types.
++ **On-Demand Capacity Reservations** – Reserve compute capacity in a specific Availability Zone with no term commitment. For more information, see [Capacity Reservations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-reservations.html) in the *Amazon EC2 User Guide*.
++ **Capacity Blocks** – Reserve GPU-based compute capacity for a fixed window, commonly used for machine learning training, fine-tuning, and inference. When the Capacity Block expires, Amazon EC2 terminates the instances running in it. For more information, see [Capacity Blocks for ML](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-capacity-blocks.html) in the *Amazon EC2 User Guide*.
++ **Interruptible Capacity Reservations** – Unused reserved capacity from your On-Demand Capacity Reservations, or interruptible reservations shared with you through AWS Resource Access Manager, in exchange for accepting a 2-minute reclamation notice. For more information, see [Interruptible Capacity Reservations](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/interruptible-capacity-reservations.html) in the *Amazon EC2 User Guide*.
 
-**Note**
-You must select a Capacity Reservation preference. Capacity Reservation target is optional.
+## How to use Capacity Reservations with your Auto Scaling group
+<a name="how-to-use-capacity-reservations"></a>
 
-**Considerations for Capacity Reservation preference and launch templates**
-Consider the following if you select Capacity Reservations only or Capacity Reservations first:
-+ If you select Capacity Reservations only or Capacity Reservations first, Auto Scaling will use the Capacity Reservation target specified in the Auto Scaling group instead of the Capacity Reservation target in the launch template.
-+ If you select Capacity Reservations only or Capacity Reservations first and you don't specify a Capacity Reservation target, Auto Scaling will use the launch template Capacity Reservation target or an open Capacity Reservation.
+Auto Scaling supports the following ways to consume Capacity Reservations. Choose based on your workload and the types of reservations you use.
 
-**Capacity Reservation target specification**
-If you select Capacity Reservations only or Capacity Reservations first, the following Capacity Reservation target options are available:
-+ **Open** – Auto Scaling will launch instances into any open Capacity Reservation. If you selected Capacity Reservations only and capacity isn't available, instances will fail to launch. If you selected Capacity Reservations first and capacity isn't available, instances will launch in On-Demand capacity.
-+ **Specify Capacity Reservation** – Auto Scaling will launch instances into the specified Capacity Reservation. If you selected Capacity Reservations only and capacity isn't available, instances will fail to launch. If you selected Capacity Reservations first and capacity isn't available, instances will launch in On-Demand capacity.
-+ **Specify Capacity Reservation resource group** – Auto Scaling will launch instances into an open Capacity Reservation in the specified Capacity Reservation resource group. If you selected Capacity Reservations only and capacity isn't available, instances will fail to launch. If you selected Capacity Reservations first and capacity isn't available, instances will launch in On-Demand capacity.
+| If you want to... | Use | Learn more |
+| --- | --- | --- |
+| Consume On-Demand Capacity Reservations from your Auto Scaling group | A Capacity Reservation preference and target on your Auto Scaling group | [Target Capacity Reservations from your Auto Scaling group](target-capacity-reservations.md) |
+| Mix On-Demand Capacity Reservations, Capacity Blocks for ML, interruptible Capacity Reservations, and On-Demand capacity in one group with priority ordering | A Capacity Reservation Resource Group with multiple Capacity Reservations or Capacity Blocks for ML targeted from your Auto Scaling group | [Use Distribution Segments to target multiple Capacity Reservation types](use-distribution-segments.md) |
+| Consume any mix of Capacity Blocks for ML or interruptible Capacity Reservations through a launch template | A market type on your launch template, and a Capacity Reservation target on your Auto Scaling group | [Target Capacity Blocks or interruptible Capacity Reservations from a launch template](capacity-reservation-create-asg-procedure.md#target-capacity-blocks-or-interruptible-capacity-reservations-from-a-launch-template) |
 
-## Availability Zone balance and Capacity Reservations
-<a name="az-balance-capacity-reservations"></a>
+If you want to launch instances into different types of Capacity Reservations across multiple instances, we recommend creating a Capacity Reservation Resource Group that contains different types of Capacity Reservations. You can then target the Capacity Reservation Resource Group from your Auto Scaling group using Distribution Segments, which lets you configure priority-based ordering with optional fallback to On-Demand capacity, all without modifying your launch template.
 
-Auto Scaling prioritizes Availability Zone balance even when you're using Capacity Reservations preferences. This means:
-+ With `capacity-reservations-first` – The Auto Scaling group will distribute instances evenly across AZs first, then use Capacity Reservations where available. If Capacity Reservations aren't available in an AZ, instances will launch as On-Demand to maintain AZ balance.
-+ With `capacity-reservations-only` – The Auto Scaling group will only use Capacity Reservations. This might result in uneven instance distribution across AZs based on where Capacity Reservations are available.
+If your Auto Scaling group uses only a single instance type and you don't want to migrate to a mixed instances policy, launch-template-based targeting continues to be supported for Capacity Blocks and interruptible Capacity Reservations.
 
-**Example**
-If you have 10 Capacity Reservations in AZ-a, 3 in AZ-b, 1 in AZ-c, and a desired capacity of 9 instances:
-+ Using `capacity-reservations-first` for 9 instances will result in 3 instances per AZ (maintaining AZ balance), with some instances potentially running as On-Demand.
-+ Using `capacity-reservations-only` for 9 instances will result in uneven distribution based on available Capacity Reservations.
+## Prerequisites
+<a name="capacity-reservations-prerequisites"></a>
+
+Before you can use Capacity Reservations in your Auto Scaling group, you must create the reservations that you want to use. Depending on the reservation type, see one of the following in the *Amazon EC2 User Guide*:
++ [Create a Capacity Reservation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-reservations-create.html) – for On-Demand Capacity Reservations
++ [Find and purchase Capacity Blocks](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/capacity-blocks-purchase.html) – for Capacity Blocks for ML
++ [Interruptible Capacity Reservations for capacity owners](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/interruptible-capacity-reservations.html#capacity-owner-considerations) – for interruptible Capacity Reservations
+
+If you intend to use multiple Capacity Reservations with one Auto Scaling group, you can also create a Capacity Reservation Resource Group. For more information, see [Capacity Reservation Resource Groups](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/create-cr-group.html) in the *Amazon EC2 User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

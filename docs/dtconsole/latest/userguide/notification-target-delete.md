@@ -43,3 +43,7 @@ Deleting a notification rule target removes the target from all notification rul
    ```
    aws codestar-notifications delete-target --target-address arn:aws:sns:{{us-east-1}}:{{123456789012}}:{{MyNotificationTopic}} --force-unsubscribe-all
    ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Developer Tools Console. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dtconsole` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

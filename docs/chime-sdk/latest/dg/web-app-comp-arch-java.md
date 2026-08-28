@@ -20,3 +20,7 @@ The Amazon Chime SDK client library for JavaScript is open-source and has a set 
 The Amazon Chime SDK also depends on the browser or Electron application to provide the Device Management APIs and the WebRTC implementation for an audio-video session.
 
 The source Amazon Chime SDK client library for JavaScript is in TypeScript, but you can use the TypeScript compiler to compile it to JavaScript. You can then bundle it using a module bundler such as Webpack. As a best practice, install the Amazon Chime SDK client library for JavaScript from the NPM registry, and then use it in a CommonJS environment. AWS also provides a rollup script for bundling the Amazon Chime SDK into a minified JS file in case you want to directly include it as a [ script tag in your HTML ](https://github.com/aws/amazon-chime-sdk-js/tree/master/demos/singlejs).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ The software development experience has a direct impact on the overall performan
 + **Compromised quality** –** **Fragmented testing and deployment processes increase the risk of software defects and vulnerabilities. This can negatively affect the overall quality of the delivered software.
 
 By investing in a well-designed software development experience, you can unlock significant benefits, such as faster time to market, improved software quality, enhanced software development team satisfaction, and greater business agility.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

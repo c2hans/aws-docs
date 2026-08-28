@@ -50,3 +50,7 @@ For zonal shift to successfully protect applications during Availability Zone im
 <a name="shift-completion-recovery"></a>
 
 When a zonal shift expires based on its configured duration or is manually canceled after the Availability Zone impairment resolves, the EndpointSlice controller automatically updates all EndpointSlices to reincorporate endpoints in the restored Availability Zone. Traffic gradually returns to the previously impacted zone as clients refresh endpoint information and establish new connections. This enables full cluster capacity utilization without requiring manual intervention or pod rescheduling.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

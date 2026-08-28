@@ -36,3 +36,7 @@ As an Amazon Redshift ML user, you can choose any of the following options to tr
 + Preprocessors, see [CREATE MODEL with user guidance](r_create_model_use_cases.md#r_user_guidance_create_model).
 + Hyperparameters, see [CREATE XGBoost models with AUTO OFF](r_create_model_use_cases.md#r_auto_off_create_model).
 + Bring your own model (BYOM), see [Bring your own model (BYOM) - local inference](r_create_model_use_cases.md#r_byom_create_model).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

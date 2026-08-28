@@ -32,3 +32,7 @@ To connect to public external package authorities such as Maven Central, npmjs.c
    For more information about changing the search order of upstream repositories, see [Editing the search order of upstream repositories](packages-upstream-repositories-search-order.md).
 
 When you've added an upstream repository, you can use a package manager that is connected to your local repository to fetch packages from the upstream repository. You do not need to update your package manager configuration. For more information about requesting package versions from an upstream repository, see [Requesting a package version with upstream repositories](packages-upstream-repositories-request.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

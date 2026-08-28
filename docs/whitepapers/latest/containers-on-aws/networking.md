@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/containers-on-aws/net
  Amazon ECS Service Connect is a feature in Amazon ECS that brings App Mesh-like capabilities in an integrated approach. Amazon ECS Service Connect provides service discovery, traffic resilience and observability out of the box for Amazon ECS-based containerized applications.
 
  Amazon VPC Lattice is a recently launched application networking service and is ideal for connecting micro-services that are distributed across a mix of Amazon EKS and Kubernetes, native Amazon EC2/ASG, and serverless environments (Lambda and Fargate). VPC Lattice is best suited to customers who prefer the automation of service discovery, traffic-management, authentication, authorization, and observability across VPCs and accounts without having to deploy and operate sidecar-based service-meshes and prefer not requiring any prior VPC networking experience in deploying their modern application architectures.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ ElastiCache for Valkey provides several capabilities that make it well suited as
 + **Built-in cache management** – Features such as TTL (time to live), eviction policies (`allkeys-lru`), and atomic operations help manage the memory lifecycle.
 + **Multiple data structures** – Valkey provides hashes, lists, strings, streams, JSON, and vectors — each optimized for different memory patterns. A single ElastiCache instance can support session state (hashes), conversation history (lists), tool result caching (strings with TTL), event logs (streams), and semantic memory (vectors).
 + **Scalability** – ElastiCache scales to handle millions of requests with consistent low latency, supporting applications with large numbers of concurrent users and agents.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

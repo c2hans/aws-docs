@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/connected-mobilit
 +  [AUTOSAR\_SWS\_DiagnosticLogAndTrace](https://www.autosar.org/fileadmin/standards/R22-11/CP/AUTOSAR_SWS_DiagnosticLogAndTrace.pdf) (PDF)
 + [AUTOSAR\_EXP\_SystemHealthMonitoring](https://www.autosar.org/fileadmin/standards/R21-11/FO/AUTOSAR_EXP_SystemHealthMonitoring.pdf) (PDF)
 + [Diagnostic Log and Trace daemon](https://github.com/COVESA/dlt-daemon#overview) (GitHub)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

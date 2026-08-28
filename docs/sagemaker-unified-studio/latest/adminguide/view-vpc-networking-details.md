@@ -26,3 +26,7 @@ To view VPC configurations, complete the following steps:
 1. To view additional VPC configuration details, choose the VPC ID link to open the Amazon VPC console.
 
 1. To view subnet configuration details, choose any subnet ID link to open the specific subnet in the Amazon VPC console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker Unified Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-unified-studio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

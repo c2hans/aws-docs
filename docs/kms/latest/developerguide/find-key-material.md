@@ -19,3 +19,7 @@ To find KMS keys and key material, use any of the following techniques.
 + [Find all keys for an AWS CloudHSM key store](find-all-kmsuser-keys.md) — How to find all keys in your cluster that serve as key material for the KMS keys in your AWS CloudHSM key store.
 + [Find the AWS CloudHSM key for a KMS key](find-handle-for-cmk-id.md) — How to find the key in your cluster that serves as key material for a particular KMS key in your AWS CloudHSM key store.
 + [Find the KMS key for an AWS CloudHSM key](find-label-for-key-handle.md) — How to find the KMS key for a particular key in your cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

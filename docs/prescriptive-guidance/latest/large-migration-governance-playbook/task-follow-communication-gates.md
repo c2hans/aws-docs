@@ -278,3 +278,7 @@ This gate is complete when you have performed the following project governance a
 + Cloud Ops has incorporated all application information into their technical management support tool.
 + You have sent the *hypercare complete communication email* to all stakeholders.
 + The infrastructure team has started to decommission any supporting infrastructure that is no longer needed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

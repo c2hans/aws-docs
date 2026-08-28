@@ -23,3 +23,7 @@ Publication date: **December 17, 2021** ([Document history](document-revisions.m
 ![Diagram showing various connectivity technologies, such as near field, short range, WiFi, cellular networks, and satellite networks.](http://docs.aws.amazon.com/whitepapers/latest/implementing-lpwan-solutions-with-aws/images/connectivity-tech.png)
 
  When building IoT solutions, a decision for any connectivity technology shall be based on the requirements of the use cases and applications. The next section explores a framework you can use to evaluate these requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

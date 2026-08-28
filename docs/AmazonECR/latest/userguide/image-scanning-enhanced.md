@@ -28,3 +28,7 @@ Consider the following before enabling Amazon ECR enhanced scanning.
 <a name="image-scanning-enhanced-duration"></a>
 
 After enabling enhanced scanning, Amazon ECR continually scans newly pushed images for the configured duration. By default, Amazon Inspector monitors your repositories until images are deleted or enhanced scanning is disabled. You can configure both push date duration (up to Lifetime) and re-scan duration in the Amazon Inspector console to suit your environment's needs. When the scan duration for a repository elapses, the scan status shows as `SCAN_ELIGIBILITY_EXPIRED`. For more information about configuring re-scan duration settings for Amazon ECR in Amazon Inspector, see [Configuring the Amazon ECR re-scan duration](https://docs.aws.amazon.com/inspector/latest/user/enable-disable-scanning-ecr.html#scan-duration-setting) in the *Amazon Inspector User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECR. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

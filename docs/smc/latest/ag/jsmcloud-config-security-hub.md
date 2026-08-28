@@ -15,3 +15,7 @@ Specifically, as a Jira administrator, you can use this integration to automatic
 
 **Note**
 If you are aggregating your Security Hub CSPM findings to a single management AWS account and have onboarded management to the connector, internal customers and Jira agents updates on the Finding issue will **not** be synched to the finding in Security Hub CSPM.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ Just like the operating system (OS), all application access should be governed u
 To learn more about domain trees and parent/child domains, see [How Domains and Forests Work](https://technet.microsoft.com/en-us/library/cc783351%28v=ws.10%29.aspx).
 
 The following rules illustrate a solution appropriate for a multi-domain forest trust with users located in child domains.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

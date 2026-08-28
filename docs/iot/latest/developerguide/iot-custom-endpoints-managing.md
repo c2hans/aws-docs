@@ -45,3 +45,7 @@ You may need to periodically replace your server certificate with an updated cer
 AWS IoT Core only picks up certificate updates under the following conditions.
 The new certificate has the same ARN as the old one.
 The new certificate has the same signing algorithm, common name, or subject alternative name as the old one.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

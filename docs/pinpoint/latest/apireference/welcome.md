@@ -63,3 +63,7 @@ X-Amzn-Trace-Id: Root=1-583b40bd-ca765532129bcbb6c5016375
 Amazon Pinpoint provides a resource-based API that uses Hypertext Application Language (HAL). HAL provides a standard convention for expressing the resources and relationships of an API as hyperlinks. Using HAL, you use HTTP methods—for example, GET, PUT, POST, DELETE—to submit requests and to receive information about the API in the response. Applications can use the information that's returned to explore the functionality of the API. For more information about HAL, see the draft [JSON Hypertext Application Language](http://tools.ietf.org/html/draft-kelly-json-hal-06) specification.
 
 To request a HAL response from Amazon Pinpoint, specify `application/hal+json` in the `Accept` request header.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

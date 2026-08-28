@@ -105,9 +105,9 @@ The version of the registry record.
 The identifier of the registry in which to create the record. You can specify either the registry ID or the registry Amazon Resource Name (ARN).
 *Required*: Yes
 *Type*: String
-*Pattern*: `^[a-zA-Z0-9]{12,16}$`
-*Minimum*: `12`
-*Maximum*: `16`
+*Pattern*: `^(arn:aws(-[^:]+)?:agent-registry:[a-z0-9-]+:[0-9]{12}:registry/)?[a-zA-Z0-9]{12,16}$`
+*Minimum*: `1`
+*Maximum*: `2048`
 *Update requires*: [Replacement](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-replacement)
 
 `Tags`  <a name="cfn-agentregistry-registryrecord-tags"></a>
@@ -156,3 +156,7 @@ The current lifecycle status of the registry record.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The timestamp when the registry record was last updated.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,3 +45,7 @@ After enabling automated agent configuration, verify the agent is running on you
 For information about reviewing coverage statistics for your Amazon EC2 instances, see [Reviewing coverage statistics](gdu-assess-coverage-ec2.md#review-coverage-statistics-ec2-runtime-monitoring).
 
 If the coverage status appears as **Unhealthy**, see [Troubleshooting Bottlerocket ECS-EC2 runtime coverage issues](gdu-assess-coverage-bottlerocket-ecs-ec2.md#bottlerocket-ecs-ec2-coverage-issues-troubleshoot).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

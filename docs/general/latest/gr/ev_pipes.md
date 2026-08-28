@@ -64,3 +64,7 @@ EventBridge Pipes has the following quotas. If you have requirements for higher 
 | Concurrent pipe executions per account |  +  AWS GovCloud (US-West) <br />+  AWS GovCloud (US-East) <br />+  China (Ningxia) <br />+  China (Beijing) <br />+  Asia Pacific (Osaka) <br />+  Africa (Cape Town) <br />+  Europe (Milan) <br />+  US East (Ohio) <br />+  Europe (Frankfurt) <br />+  US West (N. California) <br />+  Europe (London) <br />+  Asia Pacific (Sydney) <br />+  Asia Pacific (Tokyo) <br />+  Asia Pacific (Singapore) <br />+  Canada (Central) <br />+  Europe (Paris) <br />+  Europe (Stockholm) <br />+  South America (São Paulo) <br />+  Asia Pacific (Seoul) <br />+  Asia Pacific (Mumbai) <br />+  Asia Pacific (Hong Kong) <br />+  Middle East (Bahrain) <br />+  China (Ningxia) <br />+  China (Beijing) <br />+  Asia Pacific (Osaka) <br />+  Africa (Cape Town) <br />+  Europe (Milan)   | 1000 |
 | Concurrent pipe executions per account |  +  US East (N. Virginia) <br />+  US West (Oregon) <br />+  Europe (Ireland)   | 3000 |
 | Pipes per account | All | 1000 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

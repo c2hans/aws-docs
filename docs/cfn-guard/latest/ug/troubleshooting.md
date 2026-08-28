@@ -39,3 +39,7 @@ For more information about intrinsic functions, see the [intrinsic function refe
 <a name="troubleshooting-general"></a>
 + Verify that `string` literals don't contain embedded escaped strings. Guard doesn't support embedded escape strings in `string` literals. If your intent is to parse inline JSON strings, use the `json_parse()` function available in Guard 3.0.0 and later. For more information, see [Using built-in functions](writing-rules.md#built-in-functions).
 + Verify that your `!=` comparisons compare compatible data types. For example, a `string` and an `int` are not compatible data types for comparison. When performing `!=` comparison, if the values are incompatible, an error occurs internally. Currently, the error is suppressed and converted to `false` to satisfy the [PartialEq](https://doc.rust-lang.org/std/cmp/trait.PartialEq.html) trait in Rust.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation Guard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cfn-guard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

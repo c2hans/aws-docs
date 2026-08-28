@@ -219,3 +219,7 @@ If you used **None** (AMI-based configuration only) without an extension script,
 If you used **None** with an extension script, clean up the extension script files from the Amazon S3 bucket you specified.
 
 If you have tested running any workloads on the cluster, make sure if you have uploaded any data or if your job saved any artifacts to different S3 buckets or file system services such as Amazon FSx for Lustre and Amazon Elastic File System. To prevent any incurring charges, delete all artifacts and data from the storage or file system.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

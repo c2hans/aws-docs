@@ -40,3 +40,7 @@ When you configure the AWS CLI, you are prompted to specify an AWS Region. Choos
    If successful, this command displays a list of available CodeArtifact commands.
 
 Next, you can create an IAM user and grant that user access to CodeArtifact. For more information, see [Provision an IAM user](get-set-up-provision-user.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

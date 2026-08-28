@@ -26,3 +26,7 @@ Service quotas, also referred to as limits, are the maximum number of service re
 | mainframe Reforge Lines of Code | Each supported Region: 50,000,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/qt-platform/quotas/L-D322D236)  | The maximum number of lines of code for Reforge job objective in a calendar month |
 | mainframe Technical Document Generation Monthly Lines of Code | Each supported Region: 250,000,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/qt-platform/quotas/L-0BC013B2)  | The maximum number of lines of code for Technical Documentation Generation job objective in a calendar month |
 | mainframe Transform of Lines of Code | Each supported Region: 250,000,000 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/qt-platform/quotas/L-B5CFC3D3)  | The maximum number of lines of code for Refactor Code job objective in a calendar month |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -33,3 +33,7 @@ Operating system versions that are no longer supported by the vender are not gua
 + [Create a custom image and bundle for WorkSpaces Pools](pools-images-custom-image.md)
 + [Manage custom images and bundles for WorkSpaces Pools](pools-images-managing.md)
 + [Use session scripts to manage your users' streaming experience](pools-images-session-scripts.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

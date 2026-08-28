@@ -89,3 +89,7 @@ For more information about making requests using the REST API, see the following
 + [Making requests to dual-stack endpoints by using the REST API](#rest-api-dual-stack)
 + [Request redirection and the REST API](RESTRedirect.md)
 + [Request routing](UsingRouting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

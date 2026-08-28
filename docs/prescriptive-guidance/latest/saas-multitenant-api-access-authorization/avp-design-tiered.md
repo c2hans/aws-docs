@@ -19,3 +19,7 @@ The following diagram shows three tiers: `Standard Tier`, `Enterprise Tier`, and
 The application, deployment, and tenant onboarding in the premium tier are identical to the standard and enterprise tiers. The only difference is that the premium tier onboarding workflow begins with the provisioning of a new tier infrastructure.
 
 ![Amazon Verified Permissions tiered deployment model](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/30d8589a-484e-437f-98ab-4bf5b8591b28.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

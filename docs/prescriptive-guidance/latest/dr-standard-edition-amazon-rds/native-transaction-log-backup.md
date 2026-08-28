@@ -14,3 +14,7 @@ This solution uses logs copy to provide continuous replication across Regions, s
 The cost associated with this solution is higher because the Amazon RDS for SQL Server instance in the DR must be up and running all the time. Additionally, you will need a tracking instance of Amazon RDS for SQL Server.
 
 The failover is manual and not transparent to the application. After failover, you must modify the application connection settings or DNS values.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

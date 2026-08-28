@@ -211,3 +211,7 @@ Your pipeline should have everything for running an end-to-end native AWS contin
 1. Watch the pipeline progress through its stages. Your pipeline should complete and your action deploys the script on your instances.
 
 1. For more troubleshooting information, see [EC2 Deploy action fails with an error message `No such file`](troubleshooting.md#troubleshooting-ec2-deploy).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

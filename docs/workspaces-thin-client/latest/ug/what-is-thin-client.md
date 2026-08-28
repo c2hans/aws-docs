@@ -25,3 +25,7 @@ If you are a first-time user of WorkSpaces Thin Client, we recommend that you be
 <a name="acessing-servicename"></a>
 
 You can access your choice of Amazon WorkSpaces, Amazon WorkSpaces Secure Browser, or WorkSpaces Applications through the WorkSpaces Thin Client, and you can keep applications and data in the cloud for increased security and centralized administration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Thin Client. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-thin-client` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

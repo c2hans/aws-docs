@@ -21,3 +21,7 @@ Use a **Team** Cost Category to categorize cost and usage information associated
 <a name="cc-details-env"></a>
 
 Use a **Environment** Cost Category to categorize cost and usage information associated with the environment. Environment names such as “Development” will show as values under **costCategory/Environment**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

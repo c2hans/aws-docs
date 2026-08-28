@@ -18,3 +18,7 @@ To create a Studio app using training plans from the Studio UI, follow these ste
 1. Choose **Run space** to launch the app on the training plan capacity.
 
 ![Studio UI showing the Instance dropdown list with Available Training Plans section for selecting a training plan when configuring a JupyterLab space.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/training-plans/tp-create-studio-app.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

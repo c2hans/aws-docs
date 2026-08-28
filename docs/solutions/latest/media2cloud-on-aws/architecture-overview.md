@@ -36,3 +36,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/media2cloud-on-aws/arch
 1.  An [AWS IoT Core](https://aws.amazon.com/iot-core/) topic that allows the ingestion and analysis workflows to communicate with the front-end web application asynchronously through publish/subscribe MQTT messaging.
 
 1.  [Amazon Simple Notification Service](https://aws.amazon.com/sns/) (Amazon SNS) topics to allow Amazon Rekognition to publish job status in the video analysis workflow, and to support custom integration with customers’ system, by allowing the solution to publish `ingest_completed` and `analysis_completed` events.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Media2Cloud on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

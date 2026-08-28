@@ -49,3 +49,7 @@ Push notification services, such as APNs and FCM, maintain a connection with eac
 1. Use the device token and the `PlatformApplicationArn` to create a platform endpoint object (`EndpointArn`) using Amazon SNS. For more information, see [Setting up an Amazon SNS platform endpoint for mobile notifications](mobile-platform-endpoint.md).
 
 1. Use the `EndpointArn` to [publish a message to an app on a mobile device](mobile-push-send.md). For more information, see [Direct Amazon SNS mobile device messaging](mobile-push-notifications.md#mobile-push-send-directmobile) and the [Publish](https://docs.aws.amazon.com/sns/latest/api/API_Publish.html) API in the Amazon Simple Notification Service API Reference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -70,3 +70,7 @@ This tutorial helps you get started with the Long duration tests on Device Advis
 
 1.  The Long duration test provides an additional **Test log summary** on the side panel which displays all the important events occurring between the device and the broker in near real time. To view more in-depth detailed logs, click on **Test case log**.
 ![The Test log summary section on the page of the "Long Duration Demo" test.](http://docs.aws.amazon.com/iot/latest/developerguide/images/log-ld-ts.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

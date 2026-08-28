@@ -57,3 +57,7 @@ To provide the NHI value, Network Synthetic Monitor applies statistical correlat
 <a name="nw-monitor-ipv4-ipv6"></a>
 
 Network Synthetic Monitor provides availability and performance metrics over IPv4 or IPv6 networks, and can monitor either IPv4 or IPv6 addresses from dual-stack VPCs. Network Synthetic Monitor doesn't allow both IPv4 and IPv6 destinations to be configured in the same monitor; you can create separate monitors for IPv4-only and IPv6-only destinations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

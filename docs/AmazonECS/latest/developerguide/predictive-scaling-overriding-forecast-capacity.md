@@ -186,3 +186,7 @@ For example, the following cron expression runs the action every Tuesday at 6:30
 <a name="scheduling-scaling-see-also"></a>
 
 For more information about how to manage scheduled actions, see [Use scheduled actions to scale Amazon ECS services](service-autoscaling-schedulescaling.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

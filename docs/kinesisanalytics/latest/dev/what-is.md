@@ -41,3 +41,7 @@ If you are a first-time user of Amazon Kinesis Data Analytics, we recommend that
 1. **Explore the streaming SQL concepts.** For more information, see [Streaming SQL Concepts](streaming-sql-concepts.md).
 
 1. **Try additional examples.** For more information, see [Kinesis Data Analytics for SQL examples](examples.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

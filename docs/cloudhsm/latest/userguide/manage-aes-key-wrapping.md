@@ -56,3 +56,7 @@ The following table describes permitted values for IVs, which the wrapping algor
 | AES Key Wrap with Zero Padding  |  +  `CKM_CLOUDHSM_AES_KEY_WRAP_ZERO_PAD` (Vendor Defined Mechanism)    | AESWrap/ECB/ZeroPadding | aes-zero-pad | m = 6 |
 | AES Key Wrap with No Padding |  +  `CKM_CLOUDHSM_AES_KEY_WRAP_NO_PAD` (Vendor Defined Mechanism)   | AESWrap/ECB/NoPadding | aes-no-pad | m = 5 |
 | AES Key Wrap with PKCS \#5 Padding  |  +  `CKM_CLOUDHSM_AES_KEY_WRAP_PKCS5_PAD` (Vendor Defined Mechanism)   | AESWrap/ECB/PKCS5Padding | aes-pkcs5-pad | m = 4 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

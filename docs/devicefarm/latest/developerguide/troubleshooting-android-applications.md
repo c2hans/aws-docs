@@ -217,3 +217,7 @@ If you are testing an Android application and notice that certain windows in the
 This flag is often used by developers for pages in their application that contain sensitive information such as login pages. If you are seeing a black screen in place of your application's screen for certain pages like its login page, work with your developer(s) to obtain a build of the application that doesn't use this flag for testing.
 
 Additionally, note that Device Farm can still interact with application windows that have this flag. So, if your application's login page appears as a black screen, you may still be able to enter your credentials in order to log in to the application (and thus view pages not blocked by the `FLAG_SECURE` flag).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

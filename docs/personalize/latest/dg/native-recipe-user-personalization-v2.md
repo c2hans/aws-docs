@@ -69,3 +69,7 @@ The table provides the following information for each hyperparameter:
   <tr><td><code>apply_recency_bias</code></td><td>Determines whether the model should give more weight to the most recent item interactions data in your Item interactions dataset. The most recent interactions data might include sudden changes in the underlying patterns of interaction events. <br /> To train a model that places more weight on recent events, set <code>apply_recency_bias</code> to <code>true</code>. To train a model that equally weighs all past interactions, set <code>apply_recency_bias</code> to <code>false</code>.<br />Default value: <code>true</code><br />Range: <code>true</code> or <code>false</code><br />Value type: Boolean<br />HPO tunable: No</td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

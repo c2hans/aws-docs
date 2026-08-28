@@ -56,3 +56,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/life-sciences-len
 + [LSPERF16-BP01 Deploy intelligent traffic shaping with security-aware bandwidth allocation for different data types](lsperf16-bp01.md)
 + [LSPERF17-BP01 Measure baseline data transfer performance and evaluate how data sovereignty requirements affect latency](lsperf17-bp01.md)
 + [LSPERF17-BP02 Implement data classification-based transfer assessment with region-specific regulatory validation](lsperf17-bp02.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ The following table describes the important changes to the *Amazon MSK Replicato
 | --- | --- | --- |
 | Added ReplicationStartingPosition | Amazon MSK supports replication from earliest position in your source cluster's topics in addition to latest position. | March 14, 2024 |
 | Added Amazon MSK Replicator APIs | Amazon MSK Replicator supports replicating existing data on your topics across Amazon Managed Streaming for Apache Kafka (Amazon MSK) clusters. | Oct 27, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Streaming for Apache Kafka. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query msk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

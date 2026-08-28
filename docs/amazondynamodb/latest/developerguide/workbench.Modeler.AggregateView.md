@@ -23,3 +23,7 @@ The aggregate view in NoSQL Workbench for Amazon DynamoDB allows you to visualiz
 1. With **Aggregate view** selected, choose the three-dot icon and choose **Export aggregate view**
 
 1. An archive with PNG images of all tables and indexes is available for download.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

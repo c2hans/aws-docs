@@ -15,3 +15,7 @@ You can configure your application to include access to legacy utilities. You ca
 + [Structure of AWS Transform for mainframe managed applications](applications-m2-other-resources-structure.md)
 + [Configure access to utilities for managed applications](applications-m2-ba-utilities.md)
 + [Add configuration properties for the managed application with AWS Transform for mainframe engine](applications-m2-ba-config-props.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

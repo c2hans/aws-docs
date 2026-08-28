@@ -57,3 +57,7 @@ This process does not deploy any resources in the management account. If you are
 You can deploy to a maximum of 50,000 AWS CloudFormation stacks at a time. If you have a large organization that spans multiple Regions, you should deploy at the OU level in smaller batches.
 
 1. Read through the summary of acknowledgements before you choose **Create**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resource Explorer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resource-explorer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

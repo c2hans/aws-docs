@@ -24,3 +24,7 @@ After you are done with monitoring and experimenting with jobs in TensorBoard, s
 1. Type **delete** in the text box, then choose **Delete**.
 
 1. A blue message should appear at the top of the screen: **default is being deleted**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,3 +38,7 @@ SYS\_ANALYZE\_HISTORY is visible only to superusers. For more information, see [
 ---------+----------------+---------------+-------------+---------------------+----------+--------------+--------+----------------------------+----------+-----------------+------+---------------+---------------------------+---------------------
      101 |           8006 |           dev |      public | test_table_562bf8dc |   110427 |            f |   Full | 2023-09-21 18:33:08.504646 | 2023-09-21 18:33:24.296498 |    5 |             5 |                         0 | 2000-01-01 00:00:00
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

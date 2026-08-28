@@ -39,3 +39,7 @@ When selecting a game server to host a new game session, Amazon GameLift Servers
 1. Amazon GameLift Servers FleetIQ identifies all available game servers that are running on viable instances.
 
 You can turn on game session protection for a game server group to prevent the Auto Scaling group from terminating instances with actively running game sessions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -66,3 +66,7 @@ Training activities might include direct user training, training the trainers, t
 We recommend a *train the trainer* approach that involves your organization's in-house training staff. Your staff knows your organization's culture, and the training format and techniques that best suit your users. Project team members can take on subject matter expert (SME) roles to provide technical materials (such as user manuals, administrator console manuals, and screen guides) that can be used as source material for the train the trainer sessions. If your organization doesn't have a training team, project SMEs should train supervisors and lead support staff, who can then train the users of the contact center.
 
 We also recommend that system administrators and product owners take formal, instructor-led product training courses to gain a deeper understanding of the AWS environment and Connect Customer console, so they can use product features and troubleshoot effectively.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ Each time you make updates to an analysis and publish it, a new version of the A
 1. Select the version of the dashboard you are interested in. You can see when this version was published and which user published it.
 
 1. To revert to this version, select **Publish**. Click **Confirm** to publish the version.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -85,3 +85,7 @@ Leverage Amazon Location Service to track shipments and deliveries across your e
 **Location-based marketing**
 
 Unlock the power of location data to supercharge your geomarketing efforts. Use Amazon Location Service to set virtual boundaries around competitor locations, events, and high-traffic areas. Trigger personalized ads, offers, and notifications when customers enter these geofenced zones. Analyze foot traffic patterns to optimize ad placements and uncover prime sites for new business locations. Monitor customer movements within your own geofenced spaces to gain deeper insights on browsing behaviors and path-to-purchase. Combine real-time location tracking with precision geofencing to deliver hyper-targeted, contextual engagement that drives sales and loyalty in the physical world.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

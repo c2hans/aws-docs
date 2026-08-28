@@ -58,3 +58,7 @@ You cannot modify a managed dashboard, but you can save a copy as a custom dashb
 1. Choose **Create dashboard**.
 
 After you create the custom dashboard, you can [add widgets](lake-dashboard-custom-widgets.md), [remove widgets](lake-dashboard-custom-widgets-remove.md), and [set a refresh schedule](lake-dashboard-refresh.md) for the dashboard.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudTrail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awscloudtrail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

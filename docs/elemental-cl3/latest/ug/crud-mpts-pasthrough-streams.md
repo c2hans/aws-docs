@@ -43,3 +43,7 @@ Review the information:
   + If you completed the location fields the dialog, this tab shows the information you entered.
   + If you left the location fields empty on the dialog, Elemental Statmux has automatically generated a primary and backup multicast address. Give this information to your contact at the upstream system so that they can push the source MPTS to that location.
 + Select the **PID Controls** tab. All the PIDs that you entered on the dialog appear in the same entry.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

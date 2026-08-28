@@ -17,3 +17,7 @@ When you create your instance, you can choose from one of the following identity
 
   If you choose this option, the directory must be associated with your account, set up in Directory Service, and be active in the same Region in which you create your instance. If you plan to choose this option, you should prepare your directory before you create your Connect Customer instance. For more information, see [Use an existing directory for identity management in Connect Customer](directory-service.md).
 + **SAML 2.0-based authentication**—Choose this option if you want to use your existing network identity provider to federate users with Connect Customer. Users can only log in to Connect Customer by using the link configured through your identity provider. If you plan to choose this option, you should configure your environment for SAML before you create your Connect Customer instance. For more information, see [Configure SAML with IAM for Connect Customer](configure-saml.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

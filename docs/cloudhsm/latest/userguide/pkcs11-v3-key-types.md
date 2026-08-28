@@ -15,3 +15,7 @@ The PKCS \#11 library supports the following key types with AWS CloudHSM Client 
 | DES3 (Triple DES) | Generate 192-bit DES3 keys. See note [1](#pkcs11-v3-key-note) below for an upcoming change. |
 | GENERIC\_SECRET | Generate 1 to 64 bytes generic secrets. |
 + [1] In accordance with NIST guidance, this is disallowed for clusters in FIPS mode after 2023. For clusters in non-FIPS mode, it is still allowed after 2023. See [FIPS 140 Compliance: 2024 Mechanism Deprecation](compliance-dep-notif.md#compliance-dep-notif-1) for details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

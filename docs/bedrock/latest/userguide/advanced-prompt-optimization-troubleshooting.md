@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/bedrock/latest/userguide/advanced-prompt
 | Silent failure: inputVariables | Multiple keys in one inputVariables object | Use one key per object in the array |
 | ValidationException: placeholder mismatch | inputVariables keys don't match {{placeholders}} in template | Ensure keys exactly match placeholder names |
 | ValidationException: wrong bracket syntax | Used {variable} instead of {{variable}} | Use double curly brackets |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

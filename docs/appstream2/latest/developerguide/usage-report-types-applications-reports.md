@@ -19,3 +19,7 @@ Each application launch is described in a single record in an applications repor
 The applications report doesn’t include applications that are launched in other ways. For example, if you provide users with access to Windows Explorer, PowerShell, or the Windows desktop **Start** menu, and users use those tools to launch applications directly, or if another program or script launches an application, those application launches are not included in the applications report.
 
 Applications reports are generated daily according to UTC time within 24 hours of the close of the day that is the subject of the report. If a session spans more than one day, applications launched during the session are reflected in the applications report corresponding to the day in which the session ends. For information about the data included in applications reports, see [Applications Report Fields](usage-reports-fields-applications-reports.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

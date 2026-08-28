@@ -56,3 +56,7 @@ You can install the Active Directory Administration Tools using PowerShell. For 
 You can launch a directory administration EC2 instance in the AWS Management Console that already has the Active Directory Domain Services and Active Directory Lightweight Directory Services Tools installed by following the procedures in [Launching a directory administration instance in your AWS Managed Microsoft AD Active Directory](console_instance.md).
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

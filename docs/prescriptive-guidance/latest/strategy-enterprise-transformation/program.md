@@ -12,3 +12,7 @@ Setting a solid foundation with measurable key performance indicators (KPIs) is 
 The following diagram illustrates the AWS Enterprise Transformation program. The sub-sections that follow the diagram describe each phase in detail.
 
 ![AWS Enterprise Transformation program phases: Prioritize, Ready, Enable, Transform.](http://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-enterprise-transformation/images/guide-img/2d221fda-ae0d-490b-b51b-592f55e8b0d3/images/5c029dfc-e4f5-409f-ad13-c6e265157f28.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

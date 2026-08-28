@@ -64,3 +64,7 @@ You can now connect to Amazon Athena using ODBC drivers with single sign-on capa
 + [Troubleshoot the ODBC 2.x driver](odbc-v2-driver-troubleshooting.md)
 + [Amazon Athena ODBC 2.x release notes](odbc-v2-driver-release-notes.md)
 + [Previous versions of the Athena ODBC 2.x driver](odbc-v2-driver-previous-versions.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

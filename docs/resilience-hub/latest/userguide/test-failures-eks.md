@@ -21,3 +21,7 @@ The following are common Amazon Elastic Kubernetes Service (Amazon EKS) failures
 + Alarm assertion failed at the beginning of the experiment. This error occurs because the related alarm has no datapoint.
   + **Failure message:** `Assertion failed for the following alarms`. Lists all the alarms for which the assertion has failed.
   + **Remediation:** Ensure that Container Insights are correctly installed for the alarms and the alarm is not turned on (in `ALARM` state).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,3 +65,7 @@ Finding and correcting noncompliant tags is an iterative process for multiple re
 + An account's effective tag policy is updated whenever a tag policy is attached to or detached from it. The effective tag policy is also updated whenever changes occur to tag the policies that the account inherits.
 
 If you're signed in as the management account in the organization, you can also generate a report. This report shows information about all tagged resources in your organization's accounts. For more information, see [Evaluating organization-wide compliance](tag-policies-orgs-evaluating-org-wide-compliance.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Tagging and Tag Editor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query tag-editor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

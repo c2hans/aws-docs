@@ -72,3 +72,7 @@ The configuration is effective immediately once you create an invoice unit.
 1. Choose **Create invoice unit**.
 
 You can find the new invoice unit on the **invoice configuration** page. Choose the unit name to view its details or choose **Edit** to make changes. The invoice configuration page includes a snapshot history that shows billing transfers within each invoice unit for specific date ranges. The **Billing Transfers** tab displays all transfers and their associated invoice units.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsaccountbilling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

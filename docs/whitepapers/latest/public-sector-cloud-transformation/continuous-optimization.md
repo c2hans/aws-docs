@@ -52,3 +52,7 @@ Everything that can’t be deleted should be evaluated to ensure it isn’t over
 This category should be done less frequently, as it takes more effort and is less likely to produce results after the first pass. However, the first pass will likely produce significant results, so this step should be done at least once. After that a quarterly or annual review is a reasonable cadence. Look at each application and ensure that the architecture is as efficient as possible. If needed, ask your AWS account team to perform an AWS Well Architected Review.
 
 Managing costs in AWS can be a simple and productive process. Experiment with these ideas and invent new ones.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

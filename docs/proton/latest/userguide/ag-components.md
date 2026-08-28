@@ -111,3 +111,7 @@ As an added safety measure, AWS Proton requires that you update the component an
 *Why is this required?* A component is designed to be attached to a service instance. Your component might use service instance inputs for infrastructure resource naming and configuration. Changing the attached service instance could be disruptive to the component (in addition to possible disruption to the service instance, as described in the previous FAQ, [Why can't I delete my attached components?](#ag-components.faq.delete)). For example, it might cause renaming, and possibly even replacement, of resources defined in the component's IaC template.
 
 As an added safety measure, AWS Proton requires that you update the component and detach it from its service instance before you can attach it to another service instance. You can then validate the stability of both the component and the service instance before attaching the component to the new service instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

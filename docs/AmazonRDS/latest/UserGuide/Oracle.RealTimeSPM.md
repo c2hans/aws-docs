@@ -147,3 +147,7 @@ Consider the following when you use real-time SQL plan management:
 <a name="Oracle.RealTimeSPM.Resources"></a>
 + [DBMS\_SPM](https://docs.oracle.com/en/database/oracle/oracle-database/26/arpls/DBMS_SPM.html) in the Oracle Database documentation
 + [Managing SQL plan baselines](https://docs.oracle.com/en/database/oracle/oracle-database/26/tgsql/managing-sql-plan-baselines.html) in the Oracle Database documentation
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

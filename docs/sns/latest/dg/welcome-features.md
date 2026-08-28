@@ -33,3 +33,7 @@ By default, each subscriber receives every message published to the topic. To re
 
 ****Message security****
 Server-side encryption protects the contents of messages that are stored in Amazon SNS topics, using encryption keys provided by AWS KMS. For more information, see [Securing Amazon SNS data with server-side encryption](sns-server-side-encryption.md) You can also establish a private connection between Amazon SNS and your virtual private cloud (VPC). for more information, see [Securing Amazon SNS traffic with VPC endpoints](sns-internetwork-traffic-privacy.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

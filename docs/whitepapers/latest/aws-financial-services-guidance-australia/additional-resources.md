@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 +  [AWS Security Best Practices](https://aws.amazon.com/architecture/security-identity-compliance/)
 +  [AWS Risk and Compliance](https://docs.aws.amazon.com/whitepapers/latest/aws-risk-and-compliance/welcome.html)
 +  [AWS User Guide to Governance, Risk and Compliance for Responsible AI Adoption within Financial Services Industries](https://aws.amazon.com/blogs/security/introducing-the-aws-user-guide-to-governance-risk-and-compliance-for-responsible-ai-adoption-within-financial-services-industries/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

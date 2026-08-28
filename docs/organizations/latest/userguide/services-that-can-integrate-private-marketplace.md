@@ -126,3 +126,7 @@ Only an administrator in the organization management account can configure a del
 You can remove the delegated administrator using either the Private Marketplace console or API, or by using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation.
 
  To disable the delegated admin Private Marketplace account using the Private Marketplace console, see [Creating and managing a private marketplace](https://docs.aws.amazon.com/marketplace/latest/buyerguide/private-catalog-administration.html#private-marketplace-managing) in the *AWS Marketplace Buyer Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

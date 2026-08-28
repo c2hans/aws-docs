@@ -37,3 +37,7 @@ For this example, you can use the **Image-classification-full-training** example
 
 1. On the graph, choose an area that the metric's values to zoom in. You should see something like the following example.
 ![Zoomed in area in the graph.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/train-valid-acc.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

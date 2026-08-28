@@ -374,3 +374,7 @@ If you no longer need the build host, terminate the EC2 instance to avoid ongoin
 <a name="bottlerocket-custom-variant-summary"></a>
 
 This topic showed how to create a custom Bottlerocket variant with a different NVIDIA driver branch. The process involves copying an existing variant, changing one package reference, registering the new variant in the workspace and RPM specs, and running the build. The same approach applies to any customization: swapping kernel versions, adding packages, or creating variants for new Kubernetes releases.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

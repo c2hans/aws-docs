@@ -16,3 +16,7 @@ The optimal compute solution for a workload varies based on application design, 
 + [PERF02-BP04 Determine the required configuration by right-sizing](perf_select_compute_right_sizing.md)
 + [PERF02-BP05 Use the available elasticity of resources](perf_select_compute_elasticity.md)
 + [PERF02-BP06 Re-evaluate compute needs based on metrics](perf_select_compute_use_metrics.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

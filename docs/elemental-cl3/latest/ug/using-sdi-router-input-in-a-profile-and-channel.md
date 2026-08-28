@@ -24,3 +24,7 @@ To set up this field, follow this procedure. This procedure assumes that you hav
    + **SDI Router Input Router Input ID**: Note that the field name appears with this label. It doesn't appear with the label **Router Input ID**.
 
      From the list, choose one of the inputs on the router. This router is attached to the node that you chose.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

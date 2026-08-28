@@ -47,3 +47,7 @@ This table shows where the parameters mentioned in this section are located. The
 | Streams – Video > Advanced > CABAC | stream\_assembly/video\_description/h264\_settings>/cabac |
 | Streams – Video > Advanced > Slices | stream\_assembly/video\_description/{{codec}}/sliceswhere {{codec}} is one of the following:+  **h264\_settings** <br />+  **h265\_settings**  |
 | Streams – Video > Advanced > Density vs Quality | stream\_assembly/video\_description/{{codec}}/svqwhere {{codec}} is one of the following:+  **h264\_settings** <br />+  **h265\_settings**  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

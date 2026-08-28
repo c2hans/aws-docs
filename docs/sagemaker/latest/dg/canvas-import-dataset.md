@@ -203,3 +203,7 @@ On the **Version history** tab, you can see a list of all of the versions of you
 On the **Auto updates** tab, you can enable auto updates for the dataset and set up a configuration to update your dataset on a regular schedule. To learn more about setting up auto updates for a dataset, see [Configure automatic updates for a dataset](canvas-update-dataset-auto.md). The following screenshot shows the **Auto updates** tab with auto updates turned on and a list of auto update jobs that have been performed on the dataset.
 
 ![The Auto updates tab for dataset showing the auto updates turned on and a list of auto update jobs.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/canvas-auto-updates.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

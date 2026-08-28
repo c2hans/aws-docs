@@ -56,3 +56,7 @@ source_url: https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Datab
 +  The maximum number of regions allowed in the Database Insights Fleet Health Dashboard at a given time is 3.
 +  Only read operations are allowed from the Monitoring account. This means you cannot create performance analysis reports from the Monitoring account.
 +  When cross-account cross-region mode is enabled in the Fleet Health Dashboard, filtering by AWS Resource Tags and resource properties is not available.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

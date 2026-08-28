@@ -20,3 +20,7 @@ AWS Partner Central doesn't have a fixed release cadence, but updates typically 
 You must allocate resources for regular maintenance and upgrades to your CRM Integration. We recommend that every quarter, you designate two to four weeks of developer and sales operations time to upgrades and maintenance. The investment helps ensure that your integration works properly and uses the latest features provided by AWS.
 
 AWS usually informs Partner Alliance Leads about updates and associated timelines. Ensure open communication channels to receive updates in a timely manner.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

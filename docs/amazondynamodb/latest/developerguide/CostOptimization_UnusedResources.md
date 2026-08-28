@@ -275,3 +275,7 @@ If global tables are part of your disaster recovery strategy, one replica not re
 DynamoDB offers two styles of backup. Point-in-time recovery provides continuous backups for up to 35 days to help you protect against accidental writes or deletes while on-demand backup allows for snapshot creation which can be saved long term. You can set the recovery period to any value between 1 and 35 days. Both types of backups have costs associated with them.
 
 Refer to the documentation for [Backup and restore for DynamoDB](Backup-and-Restore.md) and [Point-in-time backups for DynamoDB](Point-in-time-recovery.md) to determine if your tables have backups enabled that may no longer be needed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

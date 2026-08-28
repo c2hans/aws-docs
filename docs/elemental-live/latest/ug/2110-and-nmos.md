@@ -21,3 +21,7 @@ An NMOS solution includes an NMOS controller and an optional NMOS registry. If y
 If you don't set up an NMOS solution, you still use SDP files:
 + For a SMPTE 2110 input, you must identify the server where the SDP files are stored. This can be any HTTP server. When you configure the input, you specify which SDP files contain information about the SMPTE 2110 stream.
 + For a SMPTE 2110 output, Elemental Live automatically creates the applicable SDP files. You must make these files accessible to the downstream system.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

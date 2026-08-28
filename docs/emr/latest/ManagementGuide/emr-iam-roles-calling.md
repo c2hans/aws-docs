@@ -28,3 +28,7 @@ If your application calls services in AWS directly, you need to update it to tak
 For more information about writing applications that use IAM roles, see [Granting applications that run on Amazon EC2 instances access to AWS resources](https://docs.aws.amazon.com/IAM/latest/UserGuide/role-usecase-ec2app.html).
 
 For more information about temporary security credentials, see [Using temporary security credentials](https://docs.aws.amazon.com/STS/latest/UsingSTS/using-temp-creds.html) in the *Using Temporary Security Credentials* guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,3 +84,7 @@ View details about updates to AWS managed policies for Feature Store since this 
 | [AmazonSageMakerFeatureStoreAccess](#security-iam-awsmanpol-AmazonSageMakerFeatureStoreAccess) - Update to an existing policy | 3 | Add `s3:GetObject`, `glue:GetTable`, and `glue:UpdateTable` permissions. | December 5, 2022 |
 | AmazonSageMakerFeatureStoreAccess - Update to an existing policy | 2 | Add `s3:PutObjectAcl` permission. | February 23, 2021 |
 | AmazonSageMakerFeatureStoreAccess - New policy | 1 | Initial policy | December 1, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

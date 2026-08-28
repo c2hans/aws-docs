@@ -21,3 +21,7 @@ Within the recipe adapter, you can customize the following files in the followin
 1. `utils`: Contains various utilities aimed at facilitating the management of a training job. It serves as a repository where for your own tools. You can use your own tools for tasks such as troubleshooting or benchmarking. You can also add your own personalized PyTorch Lightning callbacks within this folder. You can use PyTorch Lightning callbacks to seamlessly integrate specific functionalities or operations into the training lifecycle.
 
 1. `conf`: Contains the configuration schema definitions used for validating specific parameters in a training job. If you introduce new parameters or configurations, you can add your customized schema to this folder. You can use the customized schema to define the validation rules. You can validate data types, ranges, or any other parameter constraint. You can also define you own custom schema to validate the parameters.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,3 +31,7 @@ If you have any questions or concerns, AWS Support is available on the community
 +  Bug \#76349: memory leak in add\_derived\_key().
 +  Bug \#16862316: For partitioned tables, queries could return different results depending on whether Index Merge was used.
 +  Bug \#17588348: Queries using the index\_merge optimization (see [Index merge optimization](https://dev.mysql.com/doc/refman/5.6/en/index-merge-optimization.html)) could return invalid results when run against tables that were partitioned by HASH.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

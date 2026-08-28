@@ -40,3 +40,7 @@ After you've defined a workload in AWS Well-Architected Tool, you can document i
 1. Choose **Save and exit** at any time to save your changes and pause documenting your workload.
 
 After you've documented your workload, you can return to the questions to continuing reviewing it at anytime. For more information, see [Reviewing a workload with AWS Well-Architected Framework](continue-workflow-review.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

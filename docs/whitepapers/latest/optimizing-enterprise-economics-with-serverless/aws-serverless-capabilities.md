@@ -71,3 +71,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise
  Lambda Partners provide developer tooling solutions validated by AWS serverless experts against the AWS Well-Architected Framework. Customers can simplify their technology evaluation process and increase purchasing confidence, knowing these companies’ solutions have passed a strict AWS validation of security, performance, and reliability.
 
  Customers can ultimately reduce time to market with the assistance of qualified partners leveraging serverless technologies. For a complete list of AWS Lambda Ready Partners, visit our [AWS Partner Network page](https://aws.amazon.com/partners/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

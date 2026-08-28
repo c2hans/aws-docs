@@ -19,3 +19,7 @@ To use this script, you need:
 + A Windows GPU service-managed fleet with the latest GPU driver.
 
 For an After Effects job bundle that uses this fleet configuration, see [Render Adobe After Effects projects on Deadline Cloud](examples-jb-aftereffects.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

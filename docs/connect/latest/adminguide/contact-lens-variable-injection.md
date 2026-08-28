@@ -22,3 +22,7 @@ The following table lists each event source, and the JSONPath to use for fields 
 | OnSalesforceCaseCreate | $.ThirdParty.Salesforce.CaseCreate.CaseNumber<br />$.ThirdParty.Salesforce.CaseCreate.Name<br />$.ThirdParty.Salesforce.CaseCreate.Email<br />$.ThirdParty.Salesforce.CaseCreate.Phone<br />$.ThirdParty.Salesforce.CaseCreate.Company<br />$.ThirdParty.Salesforce.CaseCreate.Type<br />$.ThirdParty.Salesforce.CaseCreate.Reason<br />$.ThirdParty.Salesforce.CaseCreate.Origin<br />$.ThirdParty.Salesforce.CaseCreate.Subject<br />$.ThirdParty.Salesforce.CaseCreate.Priority<br />$.ThirdParty.Salesforce.CaseCreate.CreatedDate<br />$.ThirdParty.Salesforce.CaseCreate.Description |
 | OnZendeskTicketCreate | $.ThirdParty.Zendesk.TicketCreate.Id<br />$.ThirdParty.Zendesk.TicketCreate.Priority<br />$.ThirdParty.Zendesk.TicketCreate.CreatedAt |
 | OnZendeskTicketStatusUpdate | $.ThirdParty.Zendesk.TicketStatusUpdate.Id<br />$.ThirdParty.Zendesk.TicketStatusUpdate.Priority<br />$.ThirdParty.Zendesk.TicketStatusUpdate.CreatedAt |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

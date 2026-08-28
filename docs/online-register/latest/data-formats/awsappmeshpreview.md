@@ -25,3 +25,7 @@ AWS App Mesh Preview provides the following APIs for data retrieval.
 | <a name="appmesh-preview-ListVirtualRouters"></a>[ListVirtualRouters](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualRouters.html) | List existing virtual routers in a service mesh | List |
 | <a name="appmesh-preview-ListVirtualServices"></a>[ListVirtualServices](https://docs.aws.amazon.com/app-mesh/latest/APIReference/API_ListVirtualServices.html) | List existing virtual services in a service mesh | List |
 | <a name="appmesh-preview-StreamAggregatedResources"></a>[StreamAggregatedResources](https://docs.aws.amazon.com/app-mesh/latest/userguide/envoy.html) | Receive streamed resources for an App Mesh endpoint (VirtualNode/VirtualGateway) | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

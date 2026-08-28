@@ -69,3 +69,7 @@ To use CloudFront KeyValueStore, your CloudFront function must use [JavaScript r
 CloudFront Functions have a limit on the time they can take to run, measured as *compute utilization*. Compute utilization is a number between 0 and 100 that indicates the amount of time that the function took to run as a percentage of the maximum allowed time. For example, a compute utilization of 35 means that the function completed in 35% of the maximum allowed time.
 
 When you [test a function](test-function.md), you can see the compute utilization value in the output of the test event. For production functions, you can view the [compute utilization metric](viewing-cloudfront-metrics.md#monitoring-console.cloudfront-functions) on the [Monitoring page in the CloudFront console](https://console.aws.amazon.com/cloudfront/v4/home?#/monitoring), or in CloudWatch.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

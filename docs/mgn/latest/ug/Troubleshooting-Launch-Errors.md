@@ -46,7 +46,7 @@ The EC2 launch template does not automatically set a specific Subnet. As such, E
 This error mostly occurs when the conversion server is unable to communicate with the necessary AWS Endpoints for [staging area communication.](https://docs.aws.amazon.com/mgn/latest/ug/Network-Requirements.html#Communication-TCP-443-Staging)
 + Check if any network changes were made in the staging area that could affect the conversion server reaching the AWS Endpoints (firewall settings, DNS settings, security group settings, route table settings, and access control list settings).
 + Test TCP Port 443 connectivity with a test instance from the staging area subnet, to the [required endpoints.](https://docs.aws.amazon.com/mgn/latest/ug/Network-Requirements.html#Communication-TCP-443-Staging)
-+ If the issue persists after confirming network connectivity please [create a case](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html) with AWS Premium Support for further investigation.
++ If the issue persists after confirming network connectivity, [create a case](https://docs.aws.amazon.com/awssupport/latest/user/case-management.html) with AWS Premium Support for further investigation.
 
 ## Could not take up-to-date snapshot. Launching from snapshot taken on...
 <a name="up-to-date-snapshot"></a>
@@ -58,3 +58,7 @@ When a test or cutover instance is launched, AWS Transform MGN will attempt to c
 To launch a test or cutover instance with the most up-to-date data, determine why the latest snapshot could not be created. Common causes include the source server not having a "Healthy" status, or backlog/lag.
 
 Also check the CloudTrail Event History for errors on the CreateSnapshot and DescribeSnapshot API calls, which can prevent timely EBS snapshot creation. Resolving these underlying issues will allow successful creation of up-to-date snapshots for test and cutover instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

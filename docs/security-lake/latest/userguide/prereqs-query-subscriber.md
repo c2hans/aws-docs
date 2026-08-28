@@ -59,3 +59,7 @@ You can grant Lake Formation administrator permissions to your role by following
 For more information about changing permissions for data lake administrators, see [Create a data lake administrator](https://docs.aws.amazon.com/lake-formation/latest/dg/getting-started-setup.html#create-data-lake-admin) in the *AWS Lake Formation Developer Guide*.
 
 The IAM role must have `SELECT` privileges on the database and tables that you want to grant a subscriber access to. For instructions on how to do this, see [Granting Data Catalog permissions using the named resource method](https://docs.aws.amazon.com/lake-formation/latest/dg/granting-cat-perms-named-resource.html) in the *AWS Lake Formation Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

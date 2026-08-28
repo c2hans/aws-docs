@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpr
  Another option is to take advantage of a managed service such as [Amazon ElastiCache](https://aws.amazon.com/elasticache/) and avoid that operational burden. ElastiCache makes it easy to deploy, operate, and scale a distributed in-memory cache in the cloud. You can find information about how to connect to your ElastiCache cluster nodes in the [Amazon ElastiCache documentation](https://docs.aws.amazon.com/AmazonElastiCache/latest/mem-ug/WhatIs.html).
 
  If you are using Lightsail and wish to access an ElastiCache cluster in your AWS account privately, you can do so by using VPC peering. For instructions to enable VPC peering, refer to [Set up Amazon VPC peering to work with AWS resources outside of Amazon Lightsail](https://lightsail.aws.amazon.com/ls/docs/how-to/article/lightsail-how-to-set-up-vpc-peering-with-aws-resources).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -41,3 +41,7 @@ This endpoint is only available for tasks running as a Managed Daemon Service on
 `${ECS_CONTAINER_METADATA_URI_V4}/tasks/stats`
 This path returns Docker stats for all containers across all tasks running on the container instance. The response is a JSON array where each element contains a map of container IDs to their Docker stats for a given task. For more information about each of the returned stats, see [ContainerStats](https://docs.docker.com/engine/api/v1.30/#operation/ContainerStats) in the Docker API documentation.
 This endpoint is only available for tasks running as a Managed Daemon Service on Amazon ECS Managed Instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

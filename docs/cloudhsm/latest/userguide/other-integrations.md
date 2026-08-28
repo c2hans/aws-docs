@@ -18,3 +18,7 @@ AWS does not endorse or vouch for any third-party vendor.
 + **[F5 BIG-IP LTM](https://techdocs.f5.com)** supports AWS CloudHSM as a root of trust.
 + **[Cloudera Navigator Key HSM](https://www.cloudera.com)** allows you to use your CloudHSM cluster to create and store keys for Cloudera Navigator Key Trustee Server.
 + **[Venafi Trust Protection Platform](https://marketplace.venafi.com/details/aws-cloudhsm/)** provides comprehensive machine identity management for TLS, SSH, and code signing with AWS CloudHSM key generation and protection.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

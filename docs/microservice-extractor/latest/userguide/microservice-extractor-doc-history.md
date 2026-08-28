@@ -19,3 +19,7 @@ The following table describes the documentation for this release of AWS Microser
 | [.NET 7 support](microservice-extractor-supported-versions.md) | You can visualize and extract .NET version 7.0 applications using AWS Microservice Extractor for .NET. | November 15, 2022 |
 | [AWS Microservice Extractor for .NET integration with Porting Assistant for .NET](#microservice-extractor-doc-history) | You can leverage the functionality of Porting Assistant for .NET during the porting and extraction of your monolithic applications.  | November 15, 2022 |
 | [AWS Microservice Extractor for .NET general availability](#microservice-extractor-doc-history) | You can reduce the time and effort required to break down large, monolithic applications running on the AWS Cloud or on premises into smaller, independent services.  | November 30, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -159,3 +159,7 @@ If the operation fails, correct the error indicated by the exception, and try ag
 If you try to create an AWS CloudHSM key store with all of the same property values as an existing *disconnected* AWS CloudHSM key store, AWS KMS does not create a new AWS CloudHSM key store, and it does not throw an exception or display an error. Instead, AWS KMS recognizes the duplicate as the likely consequence of a retry, and it returns the ID of the existing AWS CloudHSM key store.
 
 **Next**: To use the AWS CloudHSM key store, [connect it to its AWS CloudHSM cluster](connect-keystore.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

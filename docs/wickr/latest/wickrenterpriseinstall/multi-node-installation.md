@@ -97,3 +97,7 @@ Enter the KOTS Admin password when requested, then perform the following procedu
 1. A popup appears, indicating the Config has been updated. Choose **Go to updated version**.
 
 1. On the updated version page, the currently installed version is displayed. A new line item is listed under installed versions with the designation **Config Change**. Choose **Deploy** to deploy this new version and enable the new calling node.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

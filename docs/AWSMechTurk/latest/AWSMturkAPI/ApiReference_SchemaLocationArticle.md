@@ -33,3 +33,7 @@ Beginning Tuesday, December 12th 2017 the [QuestionForm](ApiReference_QuestionFo
 | The [QuestionForm](ApiReference_QuestionFormDataStructureArticle.md) schemas  | 2017-11-06 |  [Download QuestionForm.zip](samples/QuestionForm.zip) |
 |  The [QuestionFormAnswers](ApiReference_QuestionFormAnswersDataStructureArticle.md) schemas  |  2005-10-01  |  [Download QuestionFormAnswers.zip](samples/QuestionFormAnswers.zip)  |
 |  The [AnswerKey](ApiReference_AnswerKeyDataStructureArticle.md) schemas schemas  |  2005-10-01  |  [Download AnswerKey.zip](samples/AnswerKey.zip)  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

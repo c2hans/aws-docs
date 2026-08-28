@@ -84,3 +84,7 @@ The Simple AD directory controllers are failing to replicate with one another. T
 
 **Troubleshooting**
 For more information about your VPC network requirements, see either AWS Managed Microsoft AD [Prerequisites for creating a AWS Managed Microsoft AD](ms_ad_getting_started.md#ms_ad_getting_started_prereqs), AD Connector [AD Connector prerequisites](ad_connector_getting_started.md#prereq_connector), or Simple AD [Simple AD prerequisites](simple_ad_getting_started.md#prereq_simple). If there is an unknown domain controller in your directory, you must demote it. If your VPC network setup is correct, but the error persists, please contact Support for more assistance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -65,3 +65,7 @@ Others are reported only in the CloudWatch logs. Common errors include the follo
    [10/17/2017 18:01:04 ERROR 140234860816192 train.py:48] cannot
                       copy sequence with size 785 to array axis with dimension 784
    ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

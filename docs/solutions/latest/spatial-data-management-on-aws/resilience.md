@@ -43,3 +43,7 @@ For true disaster recovery from regional failures, implement cross-region replic
 + NAT Gateways deployed in both AZs
 + Lambda functions can execute in either AZ
 + DynamoDB and S3 are inherently multi-AZ
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Spatial Data Management on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

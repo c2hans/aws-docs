@@ -44,3 +44,7 @@ You can use EventBridge rules to:
 For the complete event schema, event reference tables, setup instructions, common patterns, and troubleshooting guidance, see [Amazon Timestream for InfluxDB event notifications with Amazon EventBridge](influxdb-eventbridge-events.md).
 
 There is no additional charge for publishing events. Standard Amazon EventBridge pricing applies for rule evaluation and target delivery.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

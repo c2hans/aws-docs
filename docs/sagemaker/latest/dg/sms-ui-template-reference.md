@@ -14,3 +14,7 @@ As a starting point, you can use a template built using Crowd HTML Elements from
 These repositories include templates designed for audio, image, text, video, and other types of data labeling and annotation tasks.
 
 For more information about how to implement custom templates in Amazon SageMaker Ground Truth, see [Custom labeling workflows](sms-custom-templates.md). To learn more about custom templates in Amazon Augmented AI, see [Create Custom Worker Task Templates](a2i-custom-templates.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

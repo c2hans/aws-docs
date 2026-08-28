@@ -15,3 +15,7 @@ You can set up each output in the channel for different handling. For example, y
 + [Input requirements](color-space-simplified-supported-inputs.md)
 + [Output requirements](color-space-simplified-input-output-requirements.md)
 + [Handling of metadata when converting](color-space-simplified-options-metadata.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

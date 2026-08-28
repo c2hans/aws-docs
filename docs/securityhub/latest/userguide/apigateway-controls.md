@@ -249,3 +249,7 @@ A security policy is a predefined combination of minimum TLS version and cipher 
 <a name="apigateway-11-remediation"></a>
 
 To update the TLS security policy for an API Gateway domain name, see [How to change a security policy](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-security-policies-update.html) in the *Amazon API Gateway Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

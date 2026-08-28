@@ -86,3 +86,7 @@ To get the new [pricing](https://aws.amazon.com/grafana/pricing), we recommend t
 <a name="AMG-ws-mp-license-faq7"></a>
 
 Yes, you can associate that AWS Marketplace license and use it until it expires. That will happen within 30 days, unless you turned on autorenew. See the previous questions and answers for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

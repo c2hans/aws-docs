@@ -15,3 +15,7 @@ Having backups and redundant workload components in place is the start of your D
 + [REL13-BP03 Test disaster recovery implementation to validate the implementation](rel_planning_for_recovery_dr_tested.md)
 + [REL13-BP04 Manage configuration drift at the DR site or Region](rel_planning_for_recovery_config_drift.md)
 + [REL13-BP05 Automate recovery](rel_planning_for_recovery_auto_recovery.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,3 +28,7 @@ After you upgrade your Amazon EKS Anywhere AMI, you need to start a new Amazon E
 <a name="clean-up-resources-eks-a-clusters-snow"></a>
 
 If you create multiple clusters on your Snowball Edge devices and don't delete them correctly or if there is a problem in the cluster and the cluster creates replacement nodes after resuming, there will be resource leak. A sample script tool is available for you to modify and use to clean your Amazon EKS Anywhere admin instance and your Snowball Edge devices. See [Amazon EKS Anywhere on AWS Snow cleanup tools](https://github.com/aws-samples/aws-snow-tools-for-eks-anywhere/tree/main/cleanup-tools#eks-anywhere-on-snow-cleanup-tools).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

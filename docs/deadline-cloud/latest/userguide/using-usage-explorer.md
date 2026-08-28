@@ -79,3 +79,7 @@ Breakdown is minimized by default. To expand and display the results, select the
 You can also view the approximate runtime of your queues or fleets based on different intervals that you specify. The interval options are hourly, daily, weekly, and monthly. After you select an interval, the graph displays the approximate runtime of your queues or fleets.
 
 ![A bar chart showing the approximate runtime of a queue or fleet using a daily interval.](http://docs.aws.amazon.com/deadline-cloud/latest/userguide/images/usage-explorer-approximate-runtime.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

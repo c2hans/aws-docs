@@ -51,3 +51,7 @@ For more information above provisioning, see [User and group provisioning](users
 + [Connect a self-managed directory in Active Directory to IAM Identity Center](connectonpremad.md)
 + [Attribute mappings between IAM Identity Center and External Identity Providers directory](attributemappingsconcept.md)
 + [IAM Identity Center configurable AD sync](provision-users-from-ad-configurable-ADsync.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

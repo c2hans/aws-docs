@@ -110,3 +110,7 @@ For example:
 
 **Note**
 In addition to shared run storage, HealthOmics provides per-task ephemeral storage at `/tmp`. Redirecting scratch I/O to ephemeral storage can reduce demand on the shared run filesystem. For more information, see [Ephemeral storage for HealthOmics workflow tasks](workflows-ephemeral-storage.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthOmics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query omics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -88,3 +88,7 @@ You are charged for data transfer out from Amazon EC2 to the internet. For more 
 When you create an accelerated VPN connection, we create and manage two accelerators on your behalf. You are charged an hourly rate and data transfer costs for each accelerator. For more information, see [AWS Global Accelerator pricing](https://aws.amazon.com/global-accelerator/pricing/).
 
 There are no additional charges for using IPv6 addresses with your Site-to-Site VPN VPN connections.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

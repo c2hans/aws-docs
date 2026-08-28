@@ -16,7 +16,7 @@ Before installing the AWS Replication Agent on your source servers, ensure that 
   + [Supported Linux operating systems.](/mgn/latest/ug/Supported-Operating-Systems.html#Supported-Operating-Systems-Linux)
 + Ensure that your setup meets all networking requirements. [Learn more about network requirements.](preparing-environments.md)
 + Ensure MAC address stability – ensure that the MAC addresses of the source servers do not change upon a reboot or any other common changes in your network environment. AWS Transform MGN calculates the unique ID of the source server from the MAC address. When a MAC address changes, MGN is no longer able to correctly identify the source server. Consequently, replication stops. If this happens, you need to reinstall the AWS Replication Agent and start replication from the beginning.
-+ AWS Transform MGN does not support fully paravirtualized source servers. Source servers with partial paravirtualization, such as VMWare's paravirtualization of I/O devices, is supported.
++ AWS Transform MGN does not support fully paravirtualized source servers. Source servers with partial paravirtualization, such as VMWare's paravirtualization of I/O devices, are supported.
 + The AWS Replication Agent installer supports multipath.
 
 ### Source server requirements
@@ -40,7 +40,7 @@ Ensure that your Linux source server meets these installation requirements prior
   ```
 + Verify that you meet these disk space requirements:
   + At least 2 GB of free disk space on the root directory (/) of your source server for the installation. To check the available disk space on the root directory, run the `df -h /` command.
-  + At least 1 GB of free diskspace on the */tmp* directory for the duration of the installation process. To check the available disk space on the /tmp directory run the `df -h /tmp` command.
+  + At least 1 GB of free disk space on the */tmp* directory for the duration of the installation process. To check the available disk space on the /tmp directory run the `df -h /tmp` command.
   +  If `/boot` is a separate partition, ensure that it has a minimum of 50 MB free space needed for the installation. To check the available disk space on the /boot directory run the `df -h /boot` command.
 
     After you have entered the commands for checking the available disk space, the results are displayed as:
@@ -67,7 +67,7 @@ Ensure that your Linux source server meets these installation requirements prior
   This example illustrates the troubleshooting procedure:
 ![Terminal commands showing mount output filtered for tmp, then remounting and verifying.](http://docs.aws.amazon.com/mgn/latest/ug/images/agent66.png)
 + The AWS Transform MGN user needs to be either a root user or a user in the sudoers list.
-+ Ensure that the dhclient package is installed. If not, please install the package using:
++ Ensure that the dhclient package is installed. If not, install the package using:
 
    For Redhat/CentOS/Fedora/AmazonLinux:
 
@@ -101,7 +101,7 @@ Ensure that your Linux source server meets these installation requirements prior
 
   1. Identify the version of your *kernel-devel/linux-headers*.
 
-     To identify the version of your running kernel, run this command:
+     To identify the version of your installed kernel-devel/linux-headers packages, run this command:
 
      On RHEL/CENTOS/Oracle/SUSE:
 
@@ -178,5 +178,9 @@ Ensure that your source server operating system is supported. See [Supported Win
 Ensure that your source server meets the agent installation hardware requirements, including:
 + At least 2 GB of free disk space on the disk containing the "Program Files(x86)" directory
 + Install all available Windows updates on the server.
-+ A graceful reboot from the OS menu or Windows CLI of a Windows source server does not triggers a rescan in MGN once the source server is restarted. Hard reboots, disk changes, and crashes trigger a rescan.
++ A graceful reboot from the OS menu or Windows CLI of a Windows source server does not trigger a rescan in MGN once the source server is restarted. Hard reboots, disk changes, and crashes trigger a rescan.
 +  Mount points must be assigned a drive letter to be recognized by AWS Transform MGN. A folder path is not recognized.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

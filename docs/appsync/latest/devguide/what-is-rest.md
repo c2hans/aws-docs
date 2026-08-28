@@ -60,3 +60,7 @@ The basic function of a RESTful API is the same as browsing the internet. The cl
 1.  The server returns a response to the client. The response contains information that tells the client whether the request was successful. The response also includes any information that the client requested.
 
 The REST API request and response details vary slightly depending on how the API developers design the API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

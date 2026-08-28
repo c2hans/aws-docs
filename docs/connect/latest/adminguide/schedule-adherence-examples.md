@@ -91,3 +91,7 @@ The bold cells are changed due to the override. The cells are overridden because
   + **Last Activity: Work.** The Work adherence tolerance is overridden by the shift profile override. As a result:
     + Start time: Can start early at 12:50 PM or start late at 1:07 PM
     + End time: Can end 10 mins early at 4:50 PM or end late at 5:10 PM
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

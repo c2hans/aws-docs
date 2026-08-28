@@ -32,3 +32,7 @@ To stop this charge, you must disable the feature [in all outputs in the channel
 + Shared encodes: You might choose not to share encodes in a channel that you set up for smart crop because if you enable smart crop in one of the outputs that shares an encode, MediaLive automatically enables it in the other output that shares the encode. If you are setting up smart crop in an existing channel with shared encodes, see [Sharing a video encode](create-video-share.md) for information about how to uncouple the outputs.
 + You can't enable AFD in any video outputs where smart crop is enabled.
 + You can't insert dynamic image overlays in a channel where smart crop is enabled.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

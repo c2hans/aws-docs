@@ -22,3 +22,7 @@ Teams are also managed at the project/space level in CodeCatalyst. To learn more
 + [Removing a user from a team directly](managing-teams-remove-users.md)
 + [Adding an SSO group to a team](managing-teams-add-sso.md)
 + [Deleting a team](managing-teams-delete.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

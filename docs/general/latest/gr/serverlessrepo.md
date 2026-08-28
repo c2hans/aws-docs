@@ -47,3 +47,7 @@ The following are the service endpoints and service quotas for this service.
 | Public applications | Each supported Region: 100 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/serverlessrepo/quotas/L-38772E7B)  | The maximum number of public applications per AWS account per AWS region. |
 
 For more information, see [AWS Serverless Application Repository Quotas](https://docs.aws.amazon.com/serverlessrepo/latest/devguide/limits.html) in the *AWS Serverless Application Repository Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

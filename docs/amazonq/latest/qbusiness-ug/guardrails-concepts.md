@@ -14,3 +14,7 @@ The following are key terms to understand guardrails in Amazon Q Business:
 + **Global controls** – application environment level controls for controlling the sources that your application environment uses to generate responses (model knowledge and enterprise data, or enterprise data only). Global controls also define and control blocked phrases within your application environment.
 + **Topic controls** – Topic-specific controls to determine the web application environment's behavior when it encounters a mention of a blocked topic by an end user.
 + **Rules** – An application environment behavior logic configured to manage a controlled topic for a particular group of users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ If you are asked to send the plugin file for scanning, choose **No**.
 ![The Wickr Plugin option in the ATAK application.](http://docs.aws.amazon.com/wickr/latest/userguide/images/atak_load_plugin_prompt.png)
 
    The Wickr plugin for ATAK is now installed. Continue to the following [Pair ATAK with Wickr](pair-tak.md) section to finish the process.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

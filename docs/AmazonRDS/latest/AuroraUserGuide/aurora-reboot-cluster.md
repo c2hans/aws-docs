@@ -21,3 +21,7 @@ For Aurora PostgreSQL this behavior applies to the following versions:
 
 **Important**
  With the read availability feature, the reboot behavior is different in Aurora MySQL and Aurora PostgreSQL: the reader DB instances typically remain available while you reboot the writer instance. Then you can reboot the reader instances at a convenient time. You can reboot the reader instances on a staggered schedule if you want some reader instances to always be available. For more information, see [Rebooting an Aurora cluster with read availability](aurora-mysql-survivable-replicas.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

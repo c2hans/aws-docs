@@ -84,3 +84,7 @@ let s3 = aws_sdk_s3::Client::from_conf(conf);
 When you create a service configuration with `aws_sdk_s3::Config::builder()`, *no default configuration is loaded*. Defaults are only loaded when creating a config based on `aws_config::defaults`.
 
 There are some options that can only be configured on a specific service client type. The previous example shows an example of this by using the `endpoint_resolver` function on a Amazon S3 client.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Rust. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-rust` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

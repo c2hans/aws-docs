@@ -76,3 +76,7 @@ You can specify how a resource gateway does DNS resolution for resource configur
  If DNS resolution is IN\_VPC, you cannot attach resource configurations defined by ARN to the resource gateway. You cannot set DNS Resolution to IN\_VPC if the resource gateway uses IPv6-only subnets.
 
 A DNS server change in a Dynamic Host Configuration Protocol (DHCP) option set takes 24 hours to propagate to a resource gateway that uses IN\_VPC DNS resolution mode.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for VPC Lattice. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc-lattice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

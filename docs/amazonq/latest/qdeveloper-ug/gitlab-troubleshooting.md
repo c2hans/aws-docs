@@ -46,3 +46,7 @@ You need to reonboard to your GitLab instance to resync. For more information, s
 **Problem**: I'm trying to onboard to GitLab Duo with Amazon Q, but coming across the following issue: `Application could not be craeted by the AI Gateway: Error 400 - {"detail":"An error occured (ValidationException) when calling the CreateOAuthAppConnection operation: ProfileDoesNotExist"}`
 
 **Solution**: You need to first create an Amazon Q Developer profile through the Amazon Q Developer console. For more information, see [Set up GitLab Duo with Amazon Q](https://docs.gitlab.com/user/duo_amazon_q/setup/) in the *GitLab documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

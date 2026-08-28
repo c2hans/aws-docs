@@ -21,3 +21,7 @@ The following is guidance for using `IndexFaces` in common scenarios.
 + Index multiple different images of the same person, particularly with different face attributes (facial poses, facial hair, etc), create a user, and associate the different faces to that user to improve matching quality.
 + Include a review process so that failed matches can be indexed with the correct face identifier to improve subsequent face matching ability.
 + For information about image quality, see [Recommendations for facial comparison input images](recommendations-facial-input-images.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -168,3 +168,7 @@ In AWS Glue 2.0 - use version 2.4.3 of the Spark Avro plugin. You can find this 
 In AWS Glue 3.0 - use version 3.1.1 of the Spark Avro plugin. You can find this JAR on Maven Central, see [org.apache.spark:spark-avro\_2.12:3.1.1](https://search.maven.org/artifact/org.apache.spark/spark-avro_2.12/3.1.1/jar).
 
 To include extra JARs in a AWS Glue ETL job, use the `--extra-jars` job parameter. For more information about job parameters, see [Using job parameters in AWS Glue jobs](aws-glue-programming-etl-glue-arguments.md). You can also configure this parameter in the AWS Management Console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

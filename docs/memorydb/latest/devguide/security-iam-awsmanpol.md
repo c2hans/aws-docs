@@ -222,3 +222,7 @@ View details about updates to AWS managed policies for MemoryDB since this servi
 | [AmazonMemoryDBFullAccess](#iam.identitybasedpolicies.predefinedpolicies-fullaccess) – Adding policy | MemoryDB added new permissions to describe and list supported resources. These permissions are required for MemoryDB to query all of the supported resources in an account.  | 10/07/2021 |
 | [AmazonMemoryDBReadOnlyAccess](#iam.identitybasedpolicies.predefinedpolicies-readonly) – Adding policy | MemoryDB added new permissions to describe and list supported resources. These permissions are required for MemoryDB to create account-based applications by querying all of the supported resources in an account.  | 10/07/2021 |
 | MemoryDB started tracking changes | Service launch | 8/19/2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MemoryDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query memorydb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

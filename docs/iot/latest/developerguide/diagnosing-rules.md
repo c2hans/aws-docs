@@ -73,3 +73,7 @@ Review the object and property names used in the query with those used in the JS
 
 **Check to see if the JSON object or property names include reserved or numeric characters.**
 For more information about reserved characters in JSON object references in SQL queries, see [JSON extensions](iot-sql-json.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

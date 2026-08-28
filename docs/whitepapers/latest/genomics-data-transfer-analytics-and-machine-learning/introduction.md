@@ -27,3 +27,7 @@ To access guidance providing an AWS CloudFormation template to automate the depl
 |  **Data Access Patterns** <br /> AWS DataSync <br /> AWS Storage Gateway for files  |  **Secondary Analysis** <br /> AWS Step Functions <br /> AWS Batch  |  **Data Lakes** <br /> Amazon Athena <br /> AWS Glue  |
 |  **Cost Optimization** <br /> AWS DataSync <br /> Amazon S3  |  **Monitor & Alert** <br /> Amazon CloudWatch  |  **Machine Learning** <br /> Amazon SageMaker AI  |
 |   |  **DevOps** <br /> AWS CodeCommit <br /> AWS CodeBuild <br /> AWS CodePipeline  |  **DevOps** <br /> AWS CodeCommit <br /> AWS CodeBuild <br /> AWS CodePipeline  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

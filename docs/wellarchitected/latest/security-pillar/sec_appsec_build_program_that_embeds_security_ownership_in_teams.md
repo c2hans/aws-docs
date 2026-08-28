@@ -54,3 +54,7 @@ Build a program or mechanism that empowers builder teams to make security decisi
  **Related videos:**
 +  [Proactive security: Considerations and approaches](https://www.youtube.com/watch?v=CBrUE6Qwfag)
 +  [AppSec tooling and culture tips from AWS and Toyota Motor North America](https://www.youtube.com/watch?v=aznmbzgj6Mg)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

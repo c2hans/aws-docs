@@ -42,3 +42,7 @@ To find products with the Quick Launch experience enabled, use the **SaaS** and 
    + Manual — Use the instructions provided by the seller to configure your software.
 
 1. For **Step 4: Launch your software**, choose the **Launch software** button to launch your software.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

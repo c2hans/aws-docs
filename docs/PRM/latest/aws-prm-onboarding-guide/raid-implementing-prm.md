@@ -41,3 +41,7 @@ See [User Agent String](user-agent-implementation.md) for implementation details
 
 **Note**
 Only use a Revenue Attribution ID in your user agent string if you have not already implemented product-level PRM via user agent string. Multiple user agent identifiers are not supported. If you have already implemented product-level PRM via user agent string, use the deal-level overlay approach (Scenario 1) instead — no changes to your existing user agent string are required.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Revenue Measurement. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query PRM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

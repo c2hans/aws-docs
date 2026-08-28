@@ -72,3 +72,7 @@ Use template variables to create dashboards that can be reused for many differen
 Templating helps you drill down into your data. For example, you can drill down from all data to North America data, down to Texas data, and beyond. You can also share these dashboards across teams within your organization. If you create a great dashboard template for a popular data source, you can also contribute it to the whole community to customize and use.
 
 For more information, see [Variables](v10-dash-variables.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Grafana. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query grafana` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ For a list of supported services, see [AWS services that integrate with AWS Priv
 
 **Note**
 Gateway Load Balancer endpoints are helpful when privately sharing an application to users outside of the application's VPC or AWS account. For more information, see the **Establishing private connectivity between internal applications** section of this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

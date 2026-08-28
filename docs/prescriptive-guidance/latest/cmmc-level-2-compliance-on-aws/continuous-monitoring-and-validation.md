@@ -37,3 +37,7 @@ These are ways you can monitor your CUI boundary:
 + Implement data loss prevention controls on connected systems to help prevent CUI leakage and validate scope boundary
 
 You can automate responses by using AWS Config custom rules to monitor changes to security groups, Amazon VPC peering connections, and other resources that enforce segmentation boundaries. Attach AWS Config rules to Lambda responders to evaluate deviations and initiate automatic remediation when a change deviates from the defined CMMC segmentation boundaries.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

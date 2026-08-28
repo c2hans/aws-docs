@@ -83,3 +83,7 @@ Take note that Iceberg has a feature available to merge small files into larger 
 It's common for data to grow, which makes it imperative to track your data-access patterns and to move data appropriately as it ages or becomes irrelevant. This is because as data grows, query performance can degrade over time, mainly because of the sheer volume of data to scan when a query runs. Amazon S3 and other services offer guidance for data-lifecycle migration, which shows strategies for moving data to different storage locations as it becomes cold. There is also a storage cost benefit to doing this.
 
 In addition to data migration, you can use other strategies like removing source data that isn't relevant to the queries you're running. This can take some work, as it might mean changing your source-data schema. But its positive result is to reduce data volume and result in faster queries. For more information, see [Managing the lifecycle of objects](https://docs.aws.amazon.com/AmazonS3/latest/userguide/object-lifecycle-mgmt.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

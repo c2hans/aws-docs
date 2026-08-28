@@ -129,3 +129,7 @@ AWS CloudHSM KeyStore complies with the JCE [Class KeyStore](https://devdocs.io/
 + `store`
 
   Stores the key store to the given output stream as a PKCS12 file and secures it with the given password. In addition, it persists all loaded keys (which are set using `setKey` calls).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

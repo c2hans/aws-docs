@@ -41,3 +41,7 @@ There are several types of Amazon S3 buckets. Before creating a bucket, make sur
 + [Managing table bucket policies](s3-tables-bucket-policy.md)
 + [Working with AWS managed table buckets](s3-tables-aws-managed-buckets.md)
 + [Using tags with S3 table buckets](table-bucket-tagging.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

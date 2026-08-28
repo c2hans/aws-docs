@@ -38,3 +38,7 @@ The following sections define the mandatory and optional input request parameter
 When calling [`CreateTrainingPlan`](https://docs.aws.amazon.com/sagemaker/latest/APIReference/API_CreateTrainingPlan.html) API to reserve a particular training plan, you must provide the following values:
 + `TrainingPlanOfferingId`: The ID of the plan you are choosing. You can retrieve the ID of a plan offering in the response of your `SearchTrainingPlanOfferings` API call. Its format should start with `pto-*`.
 + `TrainingPlanName`: The name of the plan you are creating.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

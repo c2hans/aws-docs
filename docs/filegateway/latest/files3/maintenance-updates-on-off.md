@@ -25,3 +25,7 @@ The following procedure describes how to turn gateway updates on or off using th
 1. Choose **Save changes** when finished.
 
 You can verify the updated setting on the **Details** tab for the selected gateway in the Storage Gateway console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

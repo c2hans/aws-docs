@@ -26,3 +26,7 @@ Amazon Managed Blockchain provides the following APIs for data retrieval.
 | <a name="managedblockchain-ListProposalVotes"></a>[ListProposalVotes](https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/API_ListProposalVotes.html) | List all votes for a proposal, including the value of the vote and the unique identifier of the member that cast the vote for the given Amazon Managed Blockchain network | Read |
 | <a name="managedblockchain-ListProposals"></a>[ListProposals](https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/API_ListProposals.html) | List proposals for the given Amazon Managed Blockchain network | List |
 | <a name="managedblockchain-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/managed-blockchain/latest/APIReference/API_ListTagsForResource.html) | View tags associated with an Amazon Managed Blockchain resource | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -38,3 +38,7 @@ SEC 2: *Recommended Elliptic Curve Domain Parameters*, Standards for Efficient C
 *Use of Elliptic Curve Cryptography (ECC) Algorithms in Cryptographic Message Syntax (CMS)*, Brown, D., Turner, S., Internet Engineering Task Force, July 2010, [http://tools.ietf.org/html/rfc5753/](https://datatracker.ietf.org/doc/html/rfc5753/).
 
 *X9.62-2005: Public Key Cryptography for the Financial Services Industry: The Elliptic Curve Digital Signature Algorithm (ECDSA)*, American National Standards Institute, 2005.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

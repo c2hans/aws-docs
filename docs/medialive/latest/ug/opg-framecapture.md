@@ -11,3 +11,7 @@ When you create a AWS Elemental MediaLive channel, you might want to include a F
 + [Organize encodes in a Frame capture output group](design-framecapture-package.md)
 + [Coordinate with the downstream system](framecapture-op-origin-server-s3.md)
 + [Create a Frame capture output group](creating-framecapture-output-group.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,3 +45,7 @@ The Valkey MCP server provides four purpose-built tools for vector, semantic, te
 1. `aggregate` provides a structured pipeline builder for `FT.AGGREGATE`, with support for `GROUPBY`, `SORTBY`, `APPLY`, `FILTER`, and `LIMIT` stages.
 
 When debugging, the `search` and `aggregate` tools let agents inspect the actual contents of your datastore. Agents can review indexed data, sample matching documents, and validate search and aggregation results directly in the conversation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -55,3 +55,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-
  [SageMaker AI Lineage Tracking API](https://docs.aws.amazon.com/sagemaker/latest/dg/lineage-tracking.html) has lineage traversal, contexts, and associations among other concepts that help in creating a lineage history for all stages of SageMaker AI Pipelines, training jobs, endpoints, SageMaker AI processing jobs, and models, as shown in the following image. Lineage of feature engineering jobs can and should be tracked in the same way. Amazon SageMaker AI ML Lineage Tracking helps in storing information about all the stages of a ML workflow from data preparation to model deployment.
 
 ![A screenshot that shows tracking model lineage and pipeline lineage with Amazon SageMaker.](http://docs.aws.amazon.com/whitepapers/latest/accenture-ai-scaling-ml-and-deep-learning-models/images/tracking-model-lineage.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

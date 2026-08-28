@@ -168,3 +168,7 @@ Consider the following configurations:
 Consider the following configurations:
 +  Use [ termination lifecycle hooks ](https://docs.aws.amazon.com/autoscaling/ec2/userguide/lifecycle-hooks.html) to allow in-flight requests to complete.
 +  Consider using [ Spot Instances ](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-spot-instances.html) with capacity-optimized allocation strategy to further reduce costs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

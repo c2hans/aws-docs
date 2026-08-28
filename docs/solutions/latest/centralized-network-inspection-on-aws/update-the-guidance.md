@@ -61,3 +61,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/centralized-network-ins
  If you previously deployed this guidance, any updates made to the stack will require you to manually initiate CodePipeline to update to the Network Firewall log destination. The Network Firewall configuration should not be updated to manually release changes. To start the AWS CodePipeline manually, refer to [Start a pipeline manually](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipelines-rerun-manually.html) in the *AWS CodePipeline User Guide*.
 
  To modify the AWS Network Firewall, firewall policy, and rule groups, refer to [Configuring resources for network firewall](configuring-resources-for-network-firewall.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Network Inspection on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ As part of security best practices, here are some password guidelines recommende
 + Use unique passwords across all online accounts. Avoid re-using the same password for multiple accounts.
 + Avoid using common words or phrases related to your username, domain, organization, Amazon WorkMail service, AWS or the account type for which the password applies.
 + Use a password manager to securely store your password.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

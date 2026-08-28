@@ -68,3 +68,7 @@ Follow these steps to change the publication frequency by using the Amazon Macie
 1. In the **Publication of findings** section, under **Update frequency for policy findings**, choose how often you want Macie to publish updates to policy findings in other AWS services.
 
 1. Choose **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Macie. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query macie` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

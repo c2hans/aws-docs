@@ -22,3 +22,7 @@ To check your current rule configuration, you can test how the configuration beh
 1. Next to **Test configuration**, enter the full email addresses of both the sender and recipient that you want to test.
 
 1. Choose **Test**. The action to be taken for the provided email address is displayed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -111,3 +111,7 @@ Setting an SPN for your Amazon FSx file system will fail if an SPN for the DNS a
    ```
 
 1. Repeat the previous steps for each DNS alias that you've associated with the file system in [Step 1](step1-assign-dns-alias.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

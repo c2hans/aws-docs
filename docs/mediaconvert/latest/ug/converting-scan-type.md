@@ -55,3 +55,7 @@ If you use the API, CLI, or an SDK, specify the relevant settings in your JSON j
      + MPEG-2: `[telecine](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-mpeg2settings-telecine)`
      + Apple ProRes: `[telecine](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-proressettings-telecine)`
    + **Scan type** (`[InputScanType](https://docs.aws.amazon.com/mediaconvert/latest/apireference/jobs.html#jobs-prop-input-inputscantype)`)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

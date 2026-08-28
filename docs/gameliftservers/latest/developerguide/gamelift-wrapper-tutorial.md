@@ -326,3 +326,7 @@ For real-time log access or extended retention periods through CloudWatch:
 + [Experiment with FlexMatch matchmaking by creating a matchmaker and rule set for your game](https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/match-intro.html)
 + [Start working on functionality for your game client and backend service components, so players can make join requests and directly connect to game sessions](gamelift-sdk-client-api.md)
 + [When ready, move to a fully-integrated solution](gamelift-roadmap-managed.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

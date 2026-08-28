@@ -179,3 +179,7 @@ npx skills add aws-geospatial/amazon-location-agent-context -a codex
 
  The Kiro IDE (Power) and [For Claude Code and Cursor users](#ai-llms-install-plugin) installations include MCP configuration automatically. If you are using the Kiro CLI, [For other AI coding agents](#ai-llms-install-agent-skill), or [For direct context usage](#ai-llms-install-direct-context), configure the following server manually for full functionality:
 +  **[AWS MCP Server](https://docs.aws.amazon.com/aws-mcp/latest/userguide/what-is-aws-mcp-server.html)** – AWS API exploration, execution, and documentation access. For setup instructions, see [Getting started with the AWS MCP Server](https://docs.aws.amazon.com/aws-mcp/latest/userguide/getting-started-aws-mcp-server.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

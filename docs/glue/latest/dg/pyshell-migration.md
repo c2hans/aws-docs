@@ -37,3 +37,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/pyshell-migration.html
 <a name="pyshell-migration-to-amazon-sagemaker-ai"></a>
 
  Amazon SageMaker AI Training is a fully managed machine learning (ML) service offered by Amazon SageMaker AI that helps you efficiently train a wide range of ML models at scale. The core of Amazon SageMaker AI AI jobs is the containerization of ML workloads and the capability of managing AWS compute resources. If you prefer a serverless environment where there is no maximum timeout, Amazon SageMaker AI AI training jobs could be a good fit for you. However, the startup latency tends to be longer than AWS Glue Python Shell jobs. For jobs that are latency-sensitive, we recommend exploring other options.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

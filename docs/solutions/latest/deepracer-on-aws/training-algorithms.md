@@ -32,3 +32,7 @@ The SAC algorithm’s entropy maximization strategy has similar advantages to th
 Tune the amount of entropy in SAC by using the SAC alpha hyperparameter. The maximum SAC alpha entropy value (1.0) favors exploration. The minimum value (0.0) recovers the standard RL objective and neutralizes the entropy bonus that incentivizes exploration. A good SAC alpha value to begin experimenting with is 0.5. Tune accordingly as you iterate on your models.
 
 Try both PPO and SAC algorithms, experiment with their hyperparameters, and explore with them in different action spaces.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for DeepRacer on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

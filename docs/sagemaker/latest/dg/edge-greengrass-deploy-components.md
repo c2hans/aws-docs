@@ -103,3 +103,7 @@ Deploy your AWS IoT Greengrass components with the AWS IoT console.
 The deployment can take several minutes to complete. In the next step, check the component log to verify that the deployment completed successfully and to view the inference results.
 
 For more information about deploying components to individual devices or groups of devices, see [Deploy AWS IoT Greengrass components to devices](https://docs.aws.amazon.com/greengrass/v2/developerguide/manage-deployments.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

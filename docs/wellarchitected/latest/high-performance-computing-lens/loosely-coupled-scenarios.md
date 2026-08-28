@@ -29,3 +29,7 @@ AWS Batch is a fully managed service that helps you run large-scale compute work
 1.  Input and output data from each job is stored in an S3 bucket.
 
  AWS Batch can be used for data-light and data-intensive workloads. It also can be deployed in a single Availability Zone or across multiple Availability Zones for additional compute capacity or architecture resiliency. When using any multi-AZ architecture, consider the service and location for data storage to manage performance and data-transfer costs, especially for data-intensive workloads.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,3 +27,7 @@ This engine version is scheduled to be deprecated on February 28, 2023. For more
 +  Resolved an issue that could cause the database to stall, and subsequently restart or fail over due to a concurrency conflict between internal cleanup threads.
 +  Resolved an issue that could cause the cluster to become unavailable if the database restarted while holding XA transactions in prepared state, and then restarted again before those transactions were committed or rolled back. Prior to this fix, you can address the issue by restoring the cluster to a point in time before the first restart.
 +  Resolved an issue that could cause the InnoDB purge to become blocked if the database restarts while processing a DDL statement. As a result, the InnoDB history list length would grow and the cluster storage volume would keep growing until it fills up, making the database unavailable. Prior to this fix, you can mitigate the issue by restarting the database again to unblock purge.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -176,3 +176,7 @@ You set up the ancillary data stream to include embedded captions. You can optio
 1. If you want include embedded captions in the output, follow this procedure:
    + Make sure that you have set up the event so that the captions in the input are converted to embedded captions in the output (or that the embedded source captions are passed through). For information about setting up captions, see [Setting up for captions](setting-up-for-captions.md).
    + In the **Outputs **section for the ancillary data, for **CEA-608-E captions line number**, enter the line number that you identified when you [designed the ancillary data](s2110-out-design-workflow.md#2110-output-design-anc-data).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

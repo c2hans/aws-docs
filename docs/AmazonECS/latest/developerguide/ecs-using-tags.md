@@ -106,3 +106,7 @@ Additionally, you can turn on *Split Cost Allocation Data* to get task-level CPU
 
 **Note**
 If you've turned on reporting, it can take up to 24 hours before the data for the current month is available for viewing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

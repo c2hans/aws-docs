@@ -12,3 +12,7 @@ Testing has shown that this queue environment generally runs faster than the inl
 + py-rattler raises an error for a subset of syntax that conda accepts, such as `colmap=*=gpu*`.
 
 The error messages py-rattler produces when failing to solve for a virtual environment don't include as much detail as conda's. If you need more detailed solver errors during development, switch to one of the inline conda queue environments.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

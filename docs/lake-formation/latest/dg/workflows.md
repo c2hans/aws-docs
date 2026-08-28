@@ -11,3 +11,7 @@ With AWS Lake Formation, you can import your data using *workflows*. A workflow 
 + [Blueprints and workflows in Lake Formation](workflows-about.md)
 + [Creating a workflow](workflows-creating.md)
 + [Running a workflow](workflows-running.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

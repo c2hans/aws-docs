@@ -22,3 +22,7 @@ The following sections describe the management operations that are common to all
 + [Retrieving Object Descriptions](retrieving-object-descriptions.md)
 + [Updating Objects](updating-objects.md)
 + [Deleting Objects](deleting-objects.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

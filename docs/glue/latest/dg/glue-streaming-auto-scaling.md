@@ -72,3 +72,7 @@ You can also configure job runs with Auto Scaling using the [AWS Glue SDK](https
  In the above example, the system monitors a few completed micro-batches to make a decision on whether to scale up or down. Longer windows require autoscaling to respond more quickly within the microbatch, rather than waiting for a few micro batches. For these cases, you can use an additional configuration `--auto-scale-within-microbatch` to `true`. You can add this to the AWS Glue job properties in AWS Glue Studio as shown below.
 
 ![The screenshot shows job parameters for key and value. The Key field contains the value --auto-scale-within-microbatch and the Value field contains the value true.](http://docs.aws.amazon.com/glue/latest/dg/images/glue-autoscaling-job-parameters-studio.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ The following video introduces the DMS Schema Conversion user interface and help
 + [Convert your source code in DMS Schema Conversion](getting-started-convert.md)
 + [Apply the converted code for DMS Schema Conversion](getting-started-apply.md)
 + [Clean up and troubleshoot to work with DMS Schema Conversion](getting-started-clean-up.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

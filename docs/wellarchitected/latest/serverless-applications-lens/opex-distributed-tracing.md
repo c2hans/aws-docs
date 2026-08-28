@@ -24,3 +24,7 @@ Service Maps are helpful to understand integration points that need attention an
 Combined, subsegments and annotations can help you quickly identify performance statistics on specific operations and business transactions. Examples are a database query duration, or the durations of a supporting function which parses an image.
 
 ![Screen shot showing AWS X-Ray Trace with subsegments beginning with ##](http://docs.aws.amazon.com/wellarchitected/latest/serverless-applications-lens/images/aws-x-ray-trace-with-subsegements.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

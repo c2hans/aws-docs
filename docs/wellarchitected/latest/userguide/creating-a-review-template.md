@@ -38,3 +38,7 @@ You can also go to the **Lenses** section, select the lens, and choose **Answer 
 Once your review template is created, you can define a new workload from it.
 
 The **Overview** tab of the review template should reflect the total number of **Questions answered** in the **Template details** section, and the **Questions answered** for each lens in the **Lenses** section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

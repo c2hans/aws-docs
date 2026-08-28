@@ -25,3 +25,7 @@ The `CallCount` metric does not have a specified unit. The most useful statistic
 | `Class` | The class of resource being tracked. CloudWatch API usage metrics use this dimension with a value of `None`. |
 | `Type` | The type of resource being tracked. When the `Service` dimension is `CloudWatch`, the only valid value for `Type` is `API`. |
 | `Resource` | The name of the API operation. Valid values include the following:DeleteAlarms, DeleteDashboards, DescribeAlarmHistory, DescribeAlarms, GetDashboard, GetMetricData, GetMetricStatistics, ListMetrics, PutDashboard, and PutMetricData |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -67,21 +67,11 @@ To configure an Aurora Provisioned Scaling execution block, enter the following 
 
 Then, choose **Save step.**
 
-## What is evaluated as part of plan evaluation
-<a name="aurora-provisioned-scaling-block-eval"></a>
-
-When Region switch evaluates your plan, Region switch performs several checks on your Aurora Provisioned Scaling execution block configuration and permissions. Region switch verifies that the following is correct:
-+ Both instance ARNs are well-formed.
-+ At least one instance exists.
-+ Any existing instances belong to the expected cluster.
-+ Both cluster ARNs are well-formed and exist.
-+ Both clusters are members of the specified global cluster.
-
-Region switch also validates that the plan's IAM role has the required permissions for Aurora provisioned scaling. For more information about the required permissions for Region switch execution blocks, see [Aurora provisioned scaling execution block sample policy](security_iam_region_switch_aurora_provisioned_scaling.md).
-
-The correct IAM permissions are essential for the proper functioning of the Aurora Provisioned Scaling execution block. If any of these validations fail, Region switch returns warnings that there are issues, and provides specific error messages to help you resolve the permissions or configuration issues.
-
 ## Related resources
 <a name="aurora-provisioned-scaling-block-resources"></a>
 + [Aurora provisioned scaling execution block sample policy](security_iam_region_switch_aurora_provisioned_scaling.md)
 + [Amazon Aurora DB instance classes](https://docs.aws.amazon.com/AmazonRDS/latest/AuroraUserGuide/Concepts.DBInstanceClass.html) in the *Amazon Aurora User Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

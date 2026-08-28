@@ -19,3 +19,7 @@ JupyterLab 1 and JupyterLab 3 are no longer supported as of June 30, 2025. You c
 1.  From the list of notebook instances, select your notebook instance name.
 
 1.  On the **Notebook instance settings** page, view the **Platform Identifier** to see the JupyterLab version of the notebook.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,7 +13,7 @@ Amazon Bedrock gives you explicit control over whether your prompts and outputs 
 Your data retention configuration is yours to manage. If your account or project is configured for zero data retention (`data_retention_mode: none`) and you invoke a model that requires retention, Amazon Bedrock will block the request and return an error — you always control your retention policy.
 
 **Important**
-There is no data retention change to Claude models released before Claude Fable 5. We are committed to ensuring you are in full control over when and with whom your data is retained and shared. For a full list of models requiring data retention, see [Amazon Bedrock abuse detection](bedrock/latest/userguide/abuse-detection.html).
+There is no data retention change to Claude models released before Claude Fable 5. We are committed to ensuring you are in full control over when and with whom your data is retained and shared. For a full list of models requiring data retention, see [Amazon Bedrock abuse detection](abuse-detection.html).
 
 ## Data retention modes
 <a name="data-retention-modes"></a>
@@ -23,7 +23,7 @@ Data retention is controlled by a **mode** rather than a simple on/off toggle:
 | **Mode** | **Behavior** |
 | --- | --- |
 | default | Default means the data retention policy of the model applies. There is no change to previous model retention behavior; if ZDR applied previously, then ZDR still applies. Actual retention depends on the model — consult the model's terms for specifics. AWS may retain the data for safety and abuse-prevention purposes. The model provider does not receive it. On the Responses API, `store` defaults to `true` and may be set to either value.Setting `store=false` does not guarantee zero data retention. Some models may still retain data for safety review even when `store=false` — in this case, data is retained but is not retrievable by the customer through `GET /v1/responses/{id}`. If you require guaranteed zero retention, set `data_retention_mode` to `none`. |
-| provider\_data\_share | This mode allows Amazon Bedrock to retain and share your inference data with model providers per their requirements. It is required for access to certain models. See [Amazon Bedrock abuse detection](bedrock/latest/userguide/abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/). |
+| provider\_data\_share | This mode allows Amazon Bedrock to retain and share your inference data with model providers per their requirements. It is required for access to certain models. See [Amazon Bedrock abuse detection](abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/). |
 | none | Zero data retention. No request or response data is written to durable storage by AWS or shared with the model provider. On the Responses API, store defaults to false and store=true is rejected. Background mode is not available. Chat Completions and Messages requests are never retained. |
 | inherit | No opinion at this scope — defer to a broader scope. This is the default for new accounts and projects. |
 
@@ -151,7 +151,7 @@ Each model specifies which retention modes it permits through `allowed_modes`. I
 
 **Example:** Claude Fable 5 and Claude Mythos 5 require provider data sharing (`allowed_modes: ["provider_data_share"]`). Customers must explicitly set their data retention mode to `provider_data_share` before they can invoke these models. If your effective mode is `none` or `default`, these models will be unavailable.
 
-By setting `provider_data_share`, you are explicitly acknowledging instructing us to retain and share data with model providers per their requirements. It is required for access to certain models. See the [Abuse Detection page](bedrock/latest/userguide/abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/).
+By setting `provider_data_share`, you are explicitly acknowledging instructing us to retain and share data with model providers per their requirements. It is required for access to certain models. See the [Abuse Detection page](abuse-detection.html) and [AWS Service Terms](https://aws.amazon.com/service-terms/).
 
 **Note**
 At launch, there is no console UI for configuring data retention. Customers must use the API (see "Configuring data retention" above) or the Bedrock SDK.
@@ -256,7 +256,7 @@ This prevents anyone in the organization from setting data retention to anything
 
 For models requiring `provider_data_share` (currently Claude Mythos 5 and Claude Fable 5): user prompts and completions are shared with Anthropic and retained for up to 30 days for trust and safety purposes.
 
-For models under `default` mode: data may be retained for abuse detection purposes — see [Amazon Bedrock abuse detection](bedrock/latest/userguide/abuse-detection.html) for required retention details. For retention beyond abuse detection (e.g., Responses API with `store=true`), consult the model's documentation and terms.
+For models under `default` mode: data may be retained for abuse detection purposes — see [Amazon Bedrock abuse detection](abuse-detection.html) for required retention details. For retention beyond abuse detection (e.g., Responses API with `store=true`), consult the model's documentation and terms.
 
 If cross-region inference is enabled for these models, retained inputs and outputs are stored in destination regions (i.e., the region where your inference request is processed).
 
@@ -278,3 +278,7 @@ See [Anthropic Terms of Service](https://aws.amazon.com/legal/bedrock/third-part
 | --- | --- |
 | GET /data-retention | bedrock:GetAccountDataRetention |
 | PUT /data-retention | bedrock:PutAccountDataRetention |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

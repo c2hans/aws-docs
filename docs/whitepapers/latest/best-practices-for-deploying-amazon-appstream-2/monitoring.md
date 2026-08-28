@@ -39,3 +39,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-for-de
  Enable VPC flow logs to audit access into customer-managed resources. VPC flow logs can be [*published to CloudWatch Logs*](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs-cwl.html) to perform queries when auditing is required.
 
  Monitoring subnet IP allocation is important as WorkSpaces Applications fleets grow. Report on IP assignment by running the [*describe-subnets*](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/ec2/describe-subnets.html) CLI to report the available IP addresses in each subnet assigned to fleets. Ensure that your organization has sufficient IP address capacity to meet the demand of all fleets running at maximum capacity.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

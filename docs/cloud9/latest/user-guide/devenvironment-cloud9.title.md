@@ -134,3 +134,7 @@ If you encounter issues with your Dev Environment, see [ Troubleshooting problem
 When using Amazon CodeCatalyst AWS CLI from the terminal, you must ensure you set *AWS\_PROFILE=codecatalyst* before running any CodeCatalyst commands.
 
 If you encounter issues with your Dev Environment, see [ Troubleshooting problems with Dev Environments](https://docs.aws.amazon.com/codecatalyst/latest/userguide/devenvironments-troubleshooting.html) in the *Amazon CodeCatalyst guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

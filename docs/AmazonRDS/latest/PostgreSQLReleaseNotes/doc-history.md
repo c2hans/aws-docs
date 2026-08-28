@@ -9,6 +9,7 @@ The following table describes RDS for PostgreSQL releases.
 
 | Change | Description | Date |
 | --- |--- |--- |
+| [Amazon RDS for PostgreSQL versions 18.6, 17.11, 16.15, 15.19, and 14.24](#doc-history) | RDS for PostgreSQL now supports versions [18.6](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-versions.html#postgresql-versions-version186), [17.11](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-versions.html#postgresql-versions-version1711), [16.15](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-versions.html#postgresql-versions-version1615), [15.19](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-versions.html#postgresql-versions-version1519), and [14.24](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-versions.html#postgresql-versions-version1424). | August 25, 2026 |
 | [Amazon RDS for PostgreSQL versions 18.3-R2, 17.9-R2, 16.13-R2, 15.17-R2, and 14.22-R2](#doc-history) | Amazon RDS for PostgreSQL now supports versions 18.3-R2, 17.9-R2, 16.13-R2, 15.17-R2, and 14.22-R2. | July 20, 2026 |
 | [Amazon RDS for PostgreSQL Extended Support versions 13.23-RDS.20260224, 12.22-RDS.20260224 and 11.22-RDS.20260224](#doc-history) | RDS for PostgreSQL now supports Amazon RDS Extended Support 13.23-RDS.20260224, 12.22-RDS.20260224 and 11.22-RDS.20260224. | May 15, 2026 |
 | [Amazon RDS for PostgreSQL versions 18.4, 17.10, 16.14, 15.18 and 14.23](#doc-history) | RDS for PostgreSQL now supports versions [18.4](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-versions.html#postgresql-versions-version184), [17.10](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-versions.html#postgresql-versions-version1710), [16.14](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-versions.html#postgresql-versions-version1614), [15.18](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-versions.html#postgresql-versions-version1518), and [14.23](https://docs.aws.amazon.com/AmazonRDS/latest/PostgreSQLReleaseNotes/postgresql-versions.html#postgresql-versions-version1423). | May 14, 2026 |
@@ -107,3 +108,7 @@ The following table describes the important changes in each release of the *Amaz
 | New feature | Updated to support PostgreSQL versions 9.3.10 and 9.4.5 DB instances. | November 27, 2015 |
 | New feature | Updated to support PostgreSQL versions 9.4.4 and 9.3.9. | July 30, 2015 |
 | New feature | Updated to support PostgreSQL versions 9.3.6 and 9.4.1. | March 18, 2015 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

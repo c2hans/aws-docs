@@ -15,3 +15,7 @@ While you can't disable this layer of encryption, you can choose to use customer
 Amazon Bedrock automatically encrypts your agent's session information using AWS owned keys at no charge.
 AWS KMS charges apply for using a customer managed keys. For more information about pricing, see [AWS Key Management Service Pricing](https://aws.amazon.com/kms/pricing/).
 If you've created your agent *before* January 22, 2025 and want to use customer managed key for encrypting agent resources, follow instructions for [Encryption of agent resources for agents created before January 22, 2025](encryption-agents.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

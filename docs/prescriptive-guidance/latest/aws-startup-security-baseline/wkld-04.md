@@ -17,3 +17,7 @@ The following open-source tools can help prevent application secrets from being 
 These tools are open source and available at no charge.
 
 For guidance on detecting and remediating secrets that have already been exposed, see [WKLD.05 Detect and remediate when secrets are exposed](wkld-05.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

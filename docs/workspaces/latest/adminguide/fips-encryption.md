@@ -47,3 +47,7 @@ Refer to [step 3](#step3-fips) below for details on how to verify the directory.
 1. Choose **Update and Exit**.
 
 1. You can now create WorkSpaces from this directory that are FedRAMP authorized and DoD SRG compliant. To access these WorkSpaces, users must use one of the WorkSpaces client applications listed earlier in the [Requirements](#fedramp-requirements) section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

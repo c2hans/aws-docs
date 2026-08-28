@@ -24,3 +24,7 @@ Use of Amazon Lex V2 is subject to the [AWS Service Terms](https://aws.amazon.co
 + [Processing responses from an AppInstanceBot for Amazon Chime SDK messaging](process-response.md)
 + [Using rules to send events to Amazon EventBridge for Amazon Chime SDK messaging](event-bridge-alerts.md)
 + [Troubleshooting AppInstanceBots configured with Amazon Lex V2 bots for Amazon Chime SDK messaging](troubleshoot-lex-bots.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

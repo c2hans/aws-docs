@@ -20,3 +20,7 @@ This table specifies the codecs that are supported for each type of file input c
 | No Container  |  | DV/DVCPRO<br />H.264<br />H.265<br />MPEG-1<br />MPEG-2  |  |
 | QuickTime  |  | Uncompressed<br />Apple ProRes<br />AVC Intra 50/100<br />DivX/Xvid<br />DV/DVCPRO<br />H.262<br />H.264<br />JPEG 2000<br />MJPEG<br />MPEG-2<br />MPEG-4 part 2  | AAC  |
 | WAV  | WAV  | None  | Dolby E frames carried in PCM streams tagged with SMPTE-337  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ Introduce custom field-type transformation only after you have confirmed that th
 
 **Tip**
 Keep the `rules` array in your custom transformer as small as possible — add a rule only for a field type the built-ins do not already resolve. Re-running the pilot after each change makes it easy to confirm that the transformer produces exactly the mappings you expect on the Amazon OpenSearch Service domain or Amazon OpenSearch Serverless NextGen collection.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

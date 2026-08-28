@@ -168,3 +168,7 @@ When your Studio spaces can’t access external endpoints to download VS Code re
 1. (Optional) Extend the LCC script to support per-user VS Code server tarballs stored in user-specific Amazon S3 folders.
 
 1. (Optional) Maintain version-specific LCC scripts ([Example LCC script (LCC-install-VS Code-server-v1.100.2)](remote-access-local-ide-setup-vpc-no-internet.md#remote-access-local-ide-setup-vpc-no-internet-pre-packaged-vs-code-remote-server-and-extensions-example-lcc)) that you can attach to your spaces, ensuring compatibility between your local VS Code client and the remote server.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

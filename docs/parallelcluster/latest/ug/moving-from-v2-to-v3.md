@@ -432,3 +432,7 @@ $ pcluster ssh \
 <a name="imds-update"></a>
 
 Starting with version 3.0.0, AWS ParallelCluster introduced support for restricting access to the head node’s IMDS (and the instance profile credentials) to a subset of superusers, by default. For more information, see [`Imds` properties](HeadNode-v3.md#HeadNode-v3-Imds.properties).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

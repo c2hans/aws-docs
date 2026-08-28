@@ -49,3 +49,7 @@ The DynamoDB Encryption Client requires the [cryptography library](https://crypt
 You can get the latest development version of the DynamoDB Encryption Client from the [aws-dynamodb-encryption-python](https://github.com/aws/aws-dynamodb-encryption-python/) repository on GitHub.
 
 After you install the DynamoDB Encryption Client, get started by looking at the example Python code in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

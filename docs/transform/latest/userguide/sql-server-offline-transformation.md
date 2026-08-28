@@ -90,3 +90,7 @@ The following default limits apply to the offline workflow. Some limits are conf
 <a name="sql-server-offline-ts-provisioning"></a>
 + **Cannot create the Aurora cluster** — Complete the guided credential and networking prompts, and ensure the account has permission to create Aurora PostgreSQL.
 + **Some objects did not deploy** — Use the post-deployment options to fix remaining objects in the chat or in an IDE, then redeploy.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

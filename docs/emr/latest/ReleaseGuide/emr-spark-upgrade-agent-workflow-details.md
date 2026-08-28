@@ -40,3 +40,7 @@ At this point, the agent will orchestrate the upgrade using specialized tools (f
 1. **Runtime Fixes and Validation**: The agent will validate the application on the target EMR cluster and iteratively fix any runtime errors until validation is successful. Upon completion, you'll see a summary of all changes made for compatibility.
 
 1. **Summary for the upgrade**: Once the upgrade is complete, the agent will provide a summary of all code and configuration changes, dependency version updates, and any detected data quality mismatches for your review.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

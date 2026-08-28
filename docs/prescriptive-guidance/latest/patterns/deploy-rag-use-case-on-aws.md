@@ -162,3 +162,7 @@ As described in [Architecture](#deploy-rag-use-case-on-aws-architecture), we rec
 1. Create a peering connection by using [VPC peering](https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) or a [transit gateway](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-peering.html) to the application VPC.
 
 1. When configuring the `bedrock-runtime` boto3 client in any Lambda function outside of `us-east-1` or `us-west-1`, pass the private DNS name of the VPC endpoint for `bedrock-runtime` in `us-east-1` or us-west-1 as the `endpoint_url` to the boto3 client.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

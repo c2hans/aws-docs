@@ -183,3 +183,7 @@ Learn more about [Role trust and permissions](iam-roles.md#role-trust-and-permis
 | Opt-in Regions like Europe (Milan) and Africa (Cape Town) | https://cognito-identity.{{Region}}.amazonaws.com/.well-known/jwks\_uri |
 
 You can also extrapolate the *jwks\_uri* from the issuer or `iss` that you receive in the OpenID token from Amazon Cognito. The OIDC-standard discovery endpoint `<issuer>/.well-known/openid-configuration` lists a path to the *jwks\_uri* for your token.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Cognito. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cognito` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -80,3 +80,7 @@ GPU-acceleration reduces the time needed to create, update, and delete vector in
 Auto-optimize automatically discovers optimal trade-offs between search latency, quality, and memory requirements. Vector ingestion can apply auto-optimize recommendations during the ingestion process to ensure your vector indexes are optimally configured.
 
 For best results, consider enabling both GPU-acceleration and Auto-optimize when using vector ingestion to build large-scale vector databases.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ You can clone a schema mapping if you want to use an existing configuration to c
 1. On the **Group data** page, make any necessary changes and then choose **Next**.
 
 1. On the **Review and save** page, make any necessary changes and then choose **Clone schema mapping**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Entity Resolution. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query entityresolution` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

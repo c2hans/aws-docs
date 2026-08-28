@@ -28,3 +28,7 @@ After you enable dependency discovery, Next generation Resilience Hub performs t
 1. Continues monitoring hourly to detect new dependencies and update existing ones.
 
 1. Displays results for your service in the console under the "Assessments" tab.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -297,3 +297,7 @@ Keep the following in mind before you submit your product:
 + Use the AWS Marketplace Management Portal to submit your listing. From **Assets**, choose **File upload**, attach your file, and then choose **Upload**. After we receive your template and metadata, AWS starts processing your request.
 
 After you submit your listing, AWS Marketplace reviews and validates the product load form. Additionally, AWS Marketplace regionalizes AMIs and serverless applications, and updates the regional mapping for your CloudFormation template on your behalf. If any issues occur, the AWS Marketplace Seller Operations team will contact you by email.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

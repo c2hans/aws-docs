@@ -91,3 +91,7 @@ Service linked roles are required to configure hierarchy-based access control. I
 [See the AWS documentation website for more details](http://docs.aws.amazon.com/connect/latest/adminguide/hierarchy-based-access-control.html)
 
   If you do not disable access to these resources, users with hierarchy-based access controls on a particular resource that view these pages in the Connect Customer admin website might see an unrestricted list of users. For more information about how to manage permissions, see [List of security profile permissions](security-profile-list.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

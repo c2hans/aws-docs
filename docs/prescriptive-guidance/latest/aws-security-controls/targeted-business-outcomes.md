@@ -16,3 +16,7 @@ The following are common use cases for implementing security controls:
 + Your company has expanded into a geographical region that requires security controls, such as a region that requires compliance with General Data Protection Regulation (GDPR).
 
 After reading this guide, you should be familiar with the four types of security controls, understand how they are part of your security governance framework, and be prepared to start implementing and automating security controls in the AWS Cloud.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

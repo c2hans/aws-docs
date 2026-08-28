@@ -14,3 +14,7 @@ The prerequisite to [Prerequisites for container image access](prereq-runtime-mo
 + [ECR repository for EKS agent version 1.8.1 (`eks.build.1`)](eks-runtime-agent-ecr-image-uri-v1-8-1-build-1.md)
 + [ECR Repository for GuardDuty agent on AWS Fargate (Amazon ECS only)](ecs-runtime-agent-ecr-image-uri.md)
 + [ECR repository for GuardDuty agent on ECS-EC2 Bottlerocket](ecs-ec2-bottlerocket-runtime-agent-ecr-image-uri.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ Assume that Database Insights is turned on for your DB instance but isn't curren
 Whenever you turn the Performance Schema on or off, make sure to reboot the DB instance.
 
 For more information about modifying instance parameters, see [Modifying parameters in a DB parameter group in Amazon Aurora](USER_WorkingWithParamGroups.Modifying.md). For more information about the dashboard, see [Database Insights](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/USER_DatabaseInsights.html). For more information about the MySQL performance schema, see [MySQL Performance Schema](https://dev.mysql.com/doc/refman/8.0/en/performance-schema.html) (for 8.0) and [MySQL Performance Schema](https://dev.mysql.com/doc/refman/8.4/en/performance-schema.html) (for 8.4) in the MySQL documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

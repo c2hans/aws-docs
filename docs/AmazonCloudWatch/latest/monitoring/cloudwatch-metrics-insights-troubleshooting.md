@@ -110,3 +110,7 @@ To reduce the impact of this behaviour, try the following approaches:
 + **Use smaller aggregation periods.** Smaller periods (such as 1 minute or 5 minutes) more closely match the second-level resolution of tag timestamps, which minimizes the alignment gap and makes it more likely that all relevant data points are included.
 + **Use dimension-based filtering instead of tags.** If your use case allows it, filter by dimensions rather than tags. Dimension-based queries are not affected by this behaviour. For example, use `WHERE InstanceId = 'i-1234567890abcdef0'` instead of `WHERE tag."my-tag" = 'my-value'`.
 + **Query at a consistent granularity.** When comparing metric data across different time windows, use the same period to avoid unexpected differences caused by the alignment adjustment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

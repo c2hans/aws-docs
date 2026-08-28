@@ -72,3 +72,7 @@ Overall performance depends on the provisioned capacity of a Neptune Analytics g
 If possible, create the graph by importing data from an existing source such as Amazon S3 or an existing Neptune cluster or snapshot. [You can place bounds on mininum and maximum capacity](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_CreateGraphUsingImportTask.html). You can also [change provisioned capacity](https://docs.aws.amazon.com/neptune-analytics/latest/apiref/API_UpdateGraph.html) on an existing graph.
 
 Monitor CloudWatch metrics such as `NumQueuedRequestsPerSec`, `NumOpenCypherRequestsPerSec`, `GraphStorageUsagePercent`, `GraphSizeBytes`, and `CPUUtilization` to assess whether the graph is right-sized. Determine if more capacity is needed to support your graph size and load. For more information about how to interpret some of these metrics, see the [Operational excellence pillar](operational-excellence-pillar.md) section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

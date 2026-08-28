@@ -17,7 +17,6 @@ Rules give your devices the ability to interact with AWS services. Rules are ana
 + Capture a CloudWatch metric.
 + Change a CloudWatch alarm.
 + Send the data from an MQTT message to Amazon SageMaker AI to make predictions based on a machine learning (ML) model.
-+ Send a message to a Salesforce IoT Input Stream.
 + Start process of a Step Functions state machine.
 + Send message data to an asset property in AWS IoT SiteWise.
 + Send message data to a web application or service.
@@ -42,3 +41,7 @@ Before AWS IoT can perform these actions, you must grant it permission to access
 <a name="iot-troubleshoot-rule"></a>
 
 If you have an issue with your rules, we recommend that you activate CloudWatch Logs. You can analyze your logs to determine whether the issue is authorization or whether, for example, a WHERE clause condition didn't match. For more information, see [Setting Up CloudWatch Logs](https://docs.aws.amazon.com/iot/latest/developerguide/cloud-watch-logs.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

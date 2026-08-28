@@ -14,3 +14,7 @@ This topic guides you through using the Amazon SQS console to create and manage 
 + [Creating a standard queue](creating-sqs-standard-queues.md)
 + [Creating a FIFO queue](creating-sqs-fifo-queues.md)
 + [Common tasks](get-started.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Queue Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSSimpleQueueService` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

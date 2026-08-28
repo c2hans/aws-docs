@@ -33,3 +33,7 @@ The multi-skill feature moves beyond the previous model, which assumed that all 
 +  Generate your schedule. For detailed configuration instructions, please refer to [Generate, review, and publish a schedule](scheduling-publish-schedule.md).
 +  Amazon Connect generates a draft schedule that is hidden from agents until it is published. Schedulers can address warnings or failures and regenerate the draft schedule iteratively before publishing the final version. Amazon Connect independently calculates the required agent headcount for each demand group using forecasted contact volumes, then creates agent shifts according to demand group assignments. The calendar allows filtering by demand groups, displaying metrics and agents specific to the selected demand group.
 ![view schedule with demand groups.](http://docs.aws.amazon.com/connect/latest/adminguide/images/wfm-scheduling-multiskill-schedule.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

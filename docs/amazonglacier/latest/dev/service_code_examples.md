@@ -42,3 +42,7 @@ For a complete list of AWS SDK developer guides and code examples, see [Using Am
 + [Scenarios](service_code_examples_scenarios.md)
   + [Archive a file, get notifications, and initiate a job](example_glacier_Usage_UploadNotifyInitiate_section.md)
   + [Get archive content and delete the archive](example_glacier_Usage_RetrieveDelete_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Glacier. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonglacier` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

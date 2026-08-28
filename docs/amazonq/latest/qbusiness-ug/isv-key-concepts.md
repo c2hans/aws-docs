@@ -19,3 +19,7 @@ Amazon Q Business manages end user access to a customer's Amazon Q index using I
 
 Resource-based policy
 A resource-based policy is an IAM policy that's attached to a resource. Amazon Q Business attaches [a resource-based policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_identity-vs-resource.html) to an Amazon Q Business application environment during the data accessor setup. This policy grants the ISV's AWS account the necessary permissions to access content for the customer's end users from the customer's data sources through the `SearchRelevantContent` API operation. By attaching a resource-based policy to the data accessor's AWS account, it allows access to the Amazon Q index of the application environment. For more information, see [Data accessors](https://docs.aws.amazon.com/amazonq/latest/qbusiness-ug/data-accessors.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

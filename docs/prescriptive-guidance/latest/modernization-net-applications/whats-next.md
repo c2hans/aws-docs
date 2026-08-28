@@ -16,3 +16,7 @@ After you choose a migration and modernization strategy for your .NET applicatio
 + [Windows Web Application Migration Assistant](https://aws.amazon.com/blogs/devops/migrating-asp-net-applications-to-elastic-beanstalk-with-windows-web-application-migration-assistant/)
 + [AWS App2Container (A2C)](https://aws.amazon.com/app2container)
 + [Porting Assistant for .NET](https://aws.amazon.com/porting-assistant-dotnet/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ AWS Elemental Appliances and Software Activation Service provides the following 
 | <a name="elemental-activations-GetAssets"></a>[GetAssets](https://docs.aws.amazon.com/elemental-appliances-software/) | Describe assets associated to the requesting account | Read |
 | <a name="elemental-activations-GetProductAdvisories"></a>[GetProductAdvisories](https://docs.aws.amazon.com/elemental-appliances-software/) | Get all product advisories | Read |
 | <a name="elemental-activations-GetSoftwareVersions"></a>[GetSoftwareVersions](https://docs.aws.amazon.com/elemental-appliances-software/) | Describe available software versions | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

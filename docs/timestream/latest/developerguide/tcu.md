@@ -102,3 +102,7 @@ At periodic intervals, based on your ingest and query access patterns, Timestrea
 **Opting-in to use TCU pricing for your queries**
 As an existing user, you can do a one-time opt-in to use TCUs for better cost management and removal of per query minimum bytes metered. You can opt-in using the AWS Management Console or [UpdateAccountSettings](https://docs.aws.amazon.com/timestream/latest/developerguide/API_query_UpdateAccountSettings.html) API operation with the AWS SDK or AWS CLI. In the API operation, set the `QueryPricingModel` parameter to `COMPUTE_UNITS`.
 Opting into the compute-based pricing model is an irreversible change.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

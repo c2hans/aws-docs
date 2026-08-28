@@ -25,3 +25,7 @@ Use these data cleaning recipe steps to perform simple transformations on existi
 + [REPLACE\_BETWEEN\_DELIMITERS](recipe-actions.REPLACE_BETWEEN_DELIMITERS.md)
 + [REPLACE\_BETWEEN\_POSITIONS](recipe-actions.REPLACE_BETWEEN_POSITIONS.md)
 + [REPLACE\_TEXT](recipe-actions.REPLACE_TEXT.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

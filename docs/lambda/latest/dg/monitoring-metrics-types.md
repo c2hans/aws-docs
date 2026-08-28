@@ -154,3 +154,7 @@ The timestamp for the `FailedInvokeEventCount` metric represents the end of the 
 + `SumOffsetLag` – The sum of the offset lags across all partitions in the event source mapping.
 
 If your event source mapping is disabled, you won't receive event source mapping metrics. You might also see missing metrics if CloudWatch or Lambda is experiencing degraded availability.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

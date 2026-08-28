@@ -122,3 +122,7 @@ Use the Troubleshoot option to ask questions like "What errors should I focus on
 + **Download impacted data strategically**: Use the download option when you need to analyze all affected records beyond the preview, or when you need to provide the complete dataset to your data team.
 + **Use the AI teammate for complex issues**: The Troubleshoot option provides contextual assistance that adapts to your specific situation and configuration.
 + **Verify resolution**: After fixing data issues, manually mark errors as resolved to confirm your fix was successful and remove them from the Open list.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Decisions. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect-decisions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

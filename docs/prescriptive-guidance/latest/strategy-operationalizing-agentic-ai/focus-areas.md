@@ -20,3 +20,7 @@ To help establish the strategic role of agents, this section introduces foundati
 + [Focus area 4: Build trust through identity, guardrails, and observability](focus-areas-trust.md)
 + [Focus area 5: Manage the lifecycle](focus-areas-lifecycle.md)
 + [Focus area 6: Align agent models with business models](focus-areas-model-alignment.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

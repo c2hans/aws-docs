@@ -24,3 +24,7 @@ The diagram shows the following components:
 The reference architecture's approach makes it possible to standardize data sharing and consumption, and independently scale data producers and data consumers without growing your management overhead. The reference architecture also enables data production and distribution across different data producers. Any data producer can be part of the data lake, share their data, and contribute to the overall value provided by the data lake.
 
 This approach enables your organization to harvest data value throughout your lines of business and external data owners, without causing a bottleneck by constraining data collection and processing in a single pipeline.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

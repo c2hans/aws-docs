@@ -166,3 +166,7 @@ To optimize the throughput of your workload, Amazon Redshift might modify the pr
 + Automatic WLM is enabled.
 + Only one WLM queue is defined.
 + You have not defined query monitoring rules (QMRs) which set query priority. Such rules include the QMR metric `query_priority` or the QMR action `change_query_priority`. For more information, see [WLM query monitoring rules](cm-c-wlm-query-monitoring-rules.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

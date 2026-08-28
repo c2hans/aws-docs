@@ -36,3 +36,7 @@ If you use a non-stateful firewall to limit connectivity regarding the service l
 **Note**
 Instances in an Outpost can't use the service link to communicate with instances in another Outposts. Leverage routing through the local gateway or local network interface to communicate between Outposts.
 AWS Outposts racks are also designed with redundant power and networking equipment, including local gateway components. For more information, see [Resilience in AWS Outposts](https://docs.aws.amazon.com/outposts/latest/network-userguide/disaster-recovery-resiliency.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Outposts. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query outposts` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

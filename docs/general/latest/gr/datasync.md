@@ -82,3 +82,7 @@ The following table describes the quotas for DataSync tasks in a specific AWS ac
 | Maximum number of queued executions for a single task | 50 | No |
 | Maximum number of concurrent Enhanced mode task executions | 120 | No |
 | Number of days a task execution's history is retained | 30 | No |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

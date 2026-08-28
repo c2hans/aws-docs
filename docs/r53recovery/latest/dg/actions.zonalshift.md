@@ -17,3 +17,7 @@ For examples of how to use common zonal shift API operations with the AWS Comman
 | List managed resources | See [Supported resources](arc-zonal-shift.resource-types.md) | See [ListManagedResources](https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_ListManagedResources.html) |
 | Get managed resource | See [Supported resources](arc-zonal-shift.resource-types.md) | See [GetManagedResource](https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_GetManagedResource.html) |
 | Cancel a zonal shift | See [Updating or canceling a zonal shift](arc-zonal-shift.start-cancel.md#arc-zonal-shift.update-cancel) | See [CancelZonalShift](https://docs.aws.amazon.com/arc-zonal-shift/latest/api/API_CancelZonalShift.html) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

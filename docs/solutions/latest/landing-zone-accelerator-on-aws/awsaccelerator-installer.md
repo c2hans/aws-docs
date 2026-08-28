@@ -13,3 +13,7 @@ This pipeline runs the following stages:
 
 **Note**
 The Landing Zone Accelerator on AWS Installer and Core pipelines are separate by design. The functionality of the `AWSAccelerator-InstallerStack` has been minimized to purely support deployment of the Core pipeline, `AWSAccelerator-Pipeline`. This will allow you to update your version of the Landing Zone Accelerator on AWS by updating a single parameter through the AWS CloudFormation update stack console. See [Update the solution](update-the-solution.md) for more information.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -367,3 +367,7 @@ If you choose to use an existing service role instead of creating a new one, ens
 The Administrator, Agent developer, and Payment execution roles use a standard account trust policy allowing `arn:aws:iam::111122223333:root` to assume them.
 
 For example IAM policies, see [Identity and access management for Amazon Bedrock AgentCore](security-iam.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

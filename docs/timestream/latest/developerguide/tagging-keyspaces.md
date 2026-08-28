@@ -20,3 +20,7 @@ For similar capabilities to Amazon Timestream for LiveAnalytics, consider Amazon
 1.  Create tags by using [Tagging operations](https://docs.aws.amazon.com/timestream/latest/developerguide/Tagging.Operations.html).
 
  Finally, it is good practice to follow optimal tagging strategies. For information, see [AWS Tagging Strategies](https://d0.awsstatic.com/aws-answers/AWS_Tagging_Strategies.pdf).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ To get started via the EKS console, AWS Backup console, or CLI, ensure that your
 
 Ensure your EKS Clusters have the following settings:
 + EKS Cluster [authorization mode](https://docs.aws.amazon.com/eks/latest/userguide/setting-up-access-entries.html) set to API or API\_AND\_CONFIG\_MAP for AWS Backup to create [Access Entries](https://docs.aws.amazon.com/eks/latest/userguide/access-entries.html) to access the EKS cluster.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

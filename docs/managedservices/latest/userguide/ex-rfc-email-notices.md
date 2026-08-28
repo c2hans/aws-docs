@@ -20,3 +20,7 @@ aws amscm create-rfc --change-type-id <Change type ID>
 ```
 
 Add a similar line (`--notification "{\"Email\": {\"EmailRecipients\" : [\"email@example.com\"]}}"`) to any change type inline or template request in the RFC parameters part of the request, not the parameters part.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

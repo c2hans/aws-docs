@@ -55,3 +55,7 @@ Submit your request immediately after generating the code. If you generate the c
      1. On the **Register your user's security key** page, follow the instructions provided by your browser or platform.
 **Note**
 The experience varies based on the browser or platform. After your device is successfully registered, you can associate a friendly display name with your newly enrolled device. To to change the name, choose **Rename**, enter the new name, and then choose **Save**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -104,3 +104,7 @@ The following table shows how API Gateway applies the previous routing rules to 
 | `https://a.example.com` | Target API 1 | The `Host` header is `a.example.com`. This request matches routing rule `abc123`. |
 | `https://b.example.com` | Target API 2 | The `Host` header is `b.example.com`. This request matches routing rule `000zzz`. |
 | `https://testing.example.com` | Target API 3 | This matches the catch-all routing rule `efg456`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

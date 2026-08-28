@@ -52,3 +52,7 @@ Auto-generated observability dashboard. Define your metrics and Dashboard genera
 Locally, Dashboard is a no-op. On AWS, it provisions a CloudWatch Dashboard with widgets for each metric you emit. Best for teams that want out-of-the-box monitoring without manual dashboard setup.
 
 For more information, see [bb-dashboard on GitHub](https://github.com/aws-devtools-labs/aws-blocks/tree/main/packages/bb-dashboard).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Blocks. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query blocks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ To vend IAM credentials to Pods within a cluster, EKS Auto Mode nodes include bu
 Runtime monitoring observes and analyzes operating system level, networking, and file events to help you detect potential threats in the workloads in your environment. This can include detection of issues such as container breakouts, creation of reverse shells, or elevation of privileges.
 
 Because EKS Auto Mode nodes are fully Kubernetes conformant, runtime monitoring systems that are compatible with Kubernetes nodes should work with Auto Mode nodes. We recommend using [Amazon GuardDuty](https://docs.aws.amazon.com/guardduty/latest/ug/eks-runtime-monitoring-guardduty.html) or a third-party solution that is validated to work with Auto Mode for runtime monitoring. The full list of runtime issues that GuardDuty can detect is available in [GuardDuty Runtime Monitoring finding types](https://docs.aws.amazon.com/guardduty/latest/ug/findings-runtime-monitoring.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

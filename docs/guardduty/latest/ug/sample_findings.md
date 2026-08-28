@@ -50,3 +50,7 @@ The title of sample findings generated through these methods always begins with 
 To understand the finding details, such as finding severity and potentially compromised resource, associated with the generated findings, see [Severity levels of GuardDuty findings](guardduty_findings-severity.md) and [Finding details](guardduty_findings-summary.md).
 
 To generate some common findings based on a simulated activity in a dedicated and isolated AWS account within your environment, see [Test GuardDuty findings in dedicated accounts](guardduty_findings-scripts.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -37,3 +37,7 @@ However, in AMS multi-account landing zone, in order for AMS to effectively mana
 + NACLs are supported in multi-account landing zone Application accounts as long as they are only used as a "Deny" list. Additionally, they must have "Allow All" configured to ensure AMS monitoring and management operations.
 
 In large scale multi-account environments, you can also leverage features like centralized egress firewalls to control outbound traffic and/or AWS Transit Gateway routing tables in AMS multi-account landing zone to segregate network traffic among VPCs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -84,3 +84,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/gxp-systems-on-aws/su
  AWS develops and maintains customer support procedures that include metrics to verify performance. When you contact AWS to report that AWS services do not meet their quality objectives, your issue is investigated and, where required, commercially reasonable actions are taken to resolve it. Where AWS is the first to become aware of a customer impacting issue, procedures exist for notifying impacted customers according to their contract requirements and/or via the AWS Service Health Dashboard [http://status.aws.amazon.com/](http://status.aws.amazon.com/).
 
  You should ensure that your policies and procedures align to the customer support options provided by AWS. Additional details may be found in the [Customer Complaints](quality-infrastructure-and-support-processes.md#customer-complaints) and [Customer Training](software-development.md#customer-training) sections in this document.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -206,3 +206,7 @@ The following list summarizes the permissions that Professional subscribers have
 <a name="dataset-enrichment-summary"></a>
 
 Dataset Enrichment adds semantic metadata to datasets for AI-powered analysis. By investing a few minutes in adding descriptions, custom instructions, and metadata files, dataset authors can improve the accuracy of AI-powered Q&A while making their datasets more understandable and accessible to every consumer across the organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,3 +13,7 @@ This chapter covers security information specific to AMB Access Hyperledger Fabr
 + [Data Protection for Amazon Managed Blockchain (AMB) Hyperledger Fabric](managed-blockchain-data-protection.md)
 + [Authentication and Access Control for AMB Access Hyperledger Fabric](managed-blockchain-auth-and-access-control.md)
 + [Configuring Security Groups for Amazon Managed Blockchain (AMB) Hyperledger Fabric](managed-blockchain-security-sgs.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

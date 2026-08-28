@@ -59,3 +59,7 @@ Next, you create your cache. For this exercise, there are instructions about cre
 1. Choose **Create cache**.
 
 Now that you've created your cache, note its fully qualified domain name and mount name for a later step. You can find the fully qualified domain name and mount name for a cache by choosing the name of the cache in the **Caches** dashboard, and then choosing **Attach**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

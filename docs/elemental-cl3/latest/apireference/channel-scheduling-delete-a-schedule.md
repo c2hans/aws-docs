@@ -33,3 +33,7 @@ The system deletes the schedule but does not return a response. To confirm that 
     <error>Couldn't find Elemental::Live247::Schedule with id=13 [WHERE "live247_schedules"."schedulable_id" = 1 AND "live247_schedules"."schedulable_type" = 'Elemental::Live247::Channel']</error>
 </errors>
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

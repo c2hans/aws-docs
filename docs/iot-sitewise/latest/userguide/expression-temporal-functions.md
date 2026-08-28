@@ -157,3 +157,7 @@ If the value of `x` for 9:05 AM arrives before the value of `x` for 09:00 AM and
 | `x` | 10 | 20 |  | 30 |
 | `y` | 1 | 2 | 3 |  |
 | `z = x + y + pretrigger(y)` | `y` doesn't receive any data point before 09:00 AM. Therefore, `z` isn't calculated at 09:00 AM. | 23 = 20 \+ 2 \+ 1<br />`pretrigger(y)` equals 1. | 25 = 20 \+ 3 \+ 2<br />`x` doesn't receive a new data point. `pretrigger(y)` equals 2. | 36 = 30 \+ 3 \+ 3<br />`y` doesn't receive a new data point. Therefore, `pretrigger(y)` equals 3 at 09:15 AM. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

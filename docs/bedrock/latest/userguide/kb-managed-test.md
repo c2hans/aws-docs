@@ -17,3 +17,7 @@ Select a topic to learn more about it.
 + [Retrieve the content of documents from knowledge base](kb-test-get-document-content.md)
 + [Use agentic retrieval to query a knowledge base](kb-test-agentic-retrieve.md)
 + [Configure and customize queries for managed knowledge bases](kb-managed-test-config.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

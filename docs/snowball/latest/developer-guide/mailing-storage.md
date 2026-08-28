@@ -201,3 +201,7 @@ Each country has different shipping speeds available. These shipping speeds are 
 + **Dubai, United Arab Emirates** - You have access to Courier Express Saver shipping.
 + **United Kingdom (UK)** – When shipping within the UK, you have access to express shipping. Typically, Snowball Edge devices shipped express are delivered in about a day. In addition, you have access to standard shipping, which typically takes less than a week, one way.
 + **United States of America (US) and Canada** – When shipping in the US or in Canada, you have access to one-day shipping and two-day shipping.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

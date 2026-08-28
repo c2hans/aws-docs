@@ -68,3 +68,7 @@ EKS provides the following capability types:
 
  **kro (Kube Resource Orchestrator)**
  [kro (Kube Resource Orchestrator)](kro.md) enables you to create custom Kubernetes APIs that compose multiple resources into higher-level abstractions, allowing platform teams to define reusable patterns for common resource combinations. This enables platform teams to provide self-service capabilities with appropriate guardrails, allowing developers to provision complex infrastructure using simple, purpose-built APIs while maintaining organizational standards and best practices.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

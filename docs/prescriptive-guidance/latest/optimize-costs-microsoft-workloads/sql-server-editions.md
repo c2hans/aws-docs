@@ -162,3 +162,7 @@ If you're bringing your own license, then you have more flexibility. It's usuall
 + [sys.dm\_db\_persisted\_sku\_features (Transact-SQL)](https://learn.microsoft.com/en-us/sql/relational-databases/system-dynamic-management-views/sys-dm-db-persisted-sku-features-transact-sql?view=azuresqldb-current) (Microsoft Learn)
 + [Which Version of SQL Server Should You Use?](https://www.brentozar.com/archive/2019/01/which-version-of-sql-server-should-you-use/) (Brent Ozar Unlimited)
 + [AWS Pricing Calculator](https://calculator.aws/#/estimate?id=e138c18348afd3853a4874681c660bc1947ec5ca) (AWS)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

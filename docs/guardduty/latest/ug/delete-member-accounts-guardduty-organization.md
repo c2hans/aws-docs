@@ -54,3 +54,7 @@ Choose a preferred method to delete a member account from your GuardDuty organiz
    Replace {{12abc34d567e8fa901bc2d34EXAMPLE}} with the delegated GuardDuty administrator account detector ID and {{us-east-1}} by the Region where you want to remove this account. If you have a list of account IDs that you want to remove, separate them by a space character.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

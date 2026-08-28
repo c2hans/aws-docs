@@ -62,3 +62,7 @@ Visit the [nova-act](https://github.com/aws/nova-act) GitHub repository for inst
 The Nova Act AWS console provides a web-based interface to manage and monitor your deployed workflows. Create workflow definitions, view workflow runs with detailed execution traces, and analyze agent behavior through the observability hierarchy (runs → sessions → acts → steps). The console displays step execution data, observation and invocation loops, and provides access to artifacts stored in S3.
 
 Access the Nova Act AWS console through the [AWS Management Console](https://us-east-1.console.aws.amazon.com/nova-act/home).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova Act. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova-act` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

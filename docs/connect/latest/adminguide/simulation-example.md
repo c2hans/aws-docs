@@ -105,3 +105,7 @@ Choose each interaction group trace to view detailed results for each observe an
 Choose the **Contact ID** link to navigate to the Contact detail page. If the contact flow has automated agent interaction and automated interaction summary enabled, the simulation chat or voice call will be analyzed accordingly.
 
 ![Contact details page showing chat interaction overview, AI-generated insights, and transcript timeline.](http://docs.aws.amazon.com/connect/latest/adminguide/images/test-case-contact-details.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -219,3 +219,7 @@ In certain events, the user agent may not be known. In this case, CodeCatalyst w
 <a name="ipa-logging-connections-query"></a>
 
 You can create and manage queries for your CloudTrail logs using a query table in Amazon Athena. For more information about creating a query, see [Querying AWS CloudTrail logs](https://docs.aws.amazon.com/athena/latest/ug/cloudtrail-logs.html) in the *Amazon Athena User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

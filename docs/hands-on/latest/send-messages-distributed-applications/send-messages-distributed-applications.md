@@ -134,3 +134,7 @@ When you no longer need to use an Amazon SQS queue, we recommend that you delete
 <a name="conclusion"></a>
 
 You have created your first Amazon Simple Queue Service (Amazon SQS) message queue, sent messages to your queue, retrieved and deleted messages, and then deleted the queue. You are now ready to use Amazon SQS queues to store and move data between distributed application components and microservices.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Hands-on Tutorials. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query hands-on` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

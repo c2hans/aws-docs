@@ -195,3 +195,7 @@ In the case of participant replication, for the destination stage, existing stag
 | `SubscribeBitrate` | `Stage, SubscriberCountryCode` | Filters `SubscribeBitrate` by stage and subscriber’s country code.<br />Bits/second<br />Valid statistics: Average, Maximum, Minimum — Average number, largest number, or smallest number (respectively) of bitrate over the configured interval |
 | `SubscribeBitrate` | `SubscriberCountryCode` | Filters `SubscribeBitrate` by subscriber’s country code (ISO 3166-1 alpha-2).<br />Bits/second<br />Valid statistics: Average, Maximum, Minimum — Average number, largest number, or smallest number (respectively) of bitrate over the configured interval  |
 | `Subscribers` | `Stage` | Number of participants subscribed to the stage. Note that participants that are actively publishing and subscribing are counted as both publishers and subscribers.<br />Unit: Count<br />Valid statistics: Average, Maximum, Minimum |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -85,3 +85,7 @@ For a full list of changes, see [Redis OSS 2.8 release notes](https://raw.github
 + `SORT` with `ALPHA` now sorts according to local collation locale if no `STORE` option is used.
 
 For more information, see [ElastiCache versions for Redis OSS end of life schedule](engine-versions.md#deprecated-engine-versions).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

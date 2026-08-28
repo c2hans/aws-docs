@@ -110,8 +110,8 @@ Within the **Lifecycle** box, you can review the **Launch status** and **Last te
 + The **Launch status** field shows the time of the test instance launch. While the Testing instance is being launched, the **Launch status** field shows **Waiting**.
 + Once the test instance has been launched, the Launch status shows **Launched**. Wait for the instance to boot and then choose **View in EC2 console** link to open the EC2 console in a new tab, in order to view and monitor your launched test instance.
 + The AWS EC2 console opens in a new tab and automatically searches for and displays your test instance.
-+ The **Last test** field shows the date of the last test. To review the test launch details, click **Job ID**, which opens the job within the **Launch History** page in a new tab.
-+ On the main **Source servers** page, the **Migration lifecycle** column shows **Ready for testing** and the **Next step** column shows **Launch test instance**.
++ The **Last test** field shows the date of the last test. To review the test launch details, choose **Job ID**, which opens the job within the **Launch History** page in a new tab.
++ On the main **Source servers** page, the **Migration lifecycle** column shows **Test in progress** and the **Next step** column shows **Complete testing and mark as "Ready for cutover"**.
 + The server stays in the **Test in progress** Lifecycle state until you finalize your testing and mark the server as **Ready for cutover**.
 
 You can use these indicators to verify that your test instance was successfully launched::
@@ -122,9 +122,9 @@ You can use these indicators to verify that your test instance was successfully 
 <a name="ready-for-cutover1"></a>
 
 After you have finalized your testing, the Migration dashboard shows the **Ready for cutover** lifecycle state.
-+ The **Launch status** field shows the time of the last test instance launch. Click on the **View in EC2 console** link to open the EC2 console in a new tab in order to view and monitor your launched Test instance.
-+ The **Last test** field shows the date the last test was started. You can review the test launch details by clicking on the **Job ID**. This opens the relevant Job.
-+ The **Cutover** field shows the date of the last cutover instance launch, if applicable. You can review the cutover launch details by clicking on the **Job ID**. This opens the relevant Job.
++ The **Launch status** field shows the time of the last test instance launch. Choose the **View in EC2 console** link to open the EC2 console in a new tab in order to view and monitor your launched Test instance.
++ The **Last test** field shows the date the last test was started. You can review the test launch details by choosing the **Job ID**. This opens the relevant Job.
++ The **Cutover** field shows the date of the last cutover instance launch, if applicable. You can review the cutover launch details by choosing the **Job ID**. This opens the relevant Job.
 + On the **Source servers** page, the **Migration lifecycle** column shows **Ready for cutover** and the** Next step** column shows **Terminate test instance; Launch cutover instance**.
 
 The server stays in the **Ready for cutover** Lifecycle state until you launch a cutover instance.
@@ -133,9 +133,9 @@ The server stays in the **Ready for cutover** Lifecycle state until you launch a
 <a name="cutover-in-progress"></a>
 
 Once you have launched a cutover instance for your server, the Migration dashboard shows the **Cutover in progress** Lifecycle state.
-+ The **Launch status** field shows the last time of cutover launch. Click on the **View in EC2 console** link to open the EC2 console in a new tab in order to view and monitor your launched cutover instance.
-+ The **Last test** field shows the date the last test was started. You can review the test launch details by clicking on the **Job ID**. This opens the Job.
-+ The **Cutover** field shows the date of the last cutover instance launch. You can review the cutover launch details by clicking on the **Job ID**. This opens the Job.
++ The **Launch status** field shows the last time of cutover launch. Choose the **View in EC2 console** link to open the EC2 console in a new tab in order to view and monitor your launched cutover instance.
++ The **Last test** field shows the date the last test was started. You can review the test launch details by choosing the **Job ID**. This opens the Job.
++ The **Cutover** field shows the date of the last cutover instance launch. You can review the cutover launch details by choosing the **Job ID**. This opens the Job.
 + On the **Source servers** page, the **Migration lifecycle** column shows **Cutover in progress** and the **Next step** column shows **Complete the cutover**.
 
 The server stays in the **Cutover in progress** Lifecycle state until you complete the cutover.
@@ -144,9 +144,9 @@ The server stays in the **Cutover in progress** Lifecycle state until you comple
 <a name="cutover-stage"></a>
 
 Once you have completed your cutover instance launch for your server, the Migration dashboard shows the **Cutover complete** lifecycle state. This is the final state in the migration lifecycle. This state indicates that you have successfully migrated your source server to AWS.
-+ The **Launch status** field shows **Launched**. Click on the **View in EC2 console** link to open the EC2 console in a new tab in order to view and monitor your launched cutover instance.
-+ The **Last test** field shows the date the last test was started. You can review the test launch details by clicking on the **Job ID**. This opens the Job.
-+ The **Cutover** field shows the date you finalized your Cutover instance launch. You can review the cutover launch details by clicking on the **Job ID**. This opens the Job.
++ The **Launch status** field shows **Launched**. Choose the **View in EC2 console** link to open the EC2 console in a new tab in order to view and monitor your launched cutover instance.
++ The **Last test** field shows the date the last test was started. You can review the test launch details by choosing the **Job ID**. This opens the Job.
++ The **Cutover** field shows the date you finalized your Cutover instance launch. You can review the cutover launch details by choosing the **Job ID**. This opens the Job.
 + The AWS Transform MGN console automatically stops data replication for the source servers that were cutover in order to save resource costs.
 + On the **Source servers** page, the selected source servers' **Migration lifecycle** column shows the **Cutover complete** status, the **Data replication status** column shows **Disconnected** and the **Next step** column shows **Mark as archived**.
 
@@ -175,7 +175,7 @@ This panel also shows:
 + **Total replicated storage:** size of all disks being replicated for this source server, and how much has been copied to AWS (once initial sync is complete)
 + **Lag**: if you launch a recovery instance now, how far behind it will be from the state at the source. Normally this should be none.
 + **Backlog**: how much data has been written at source but has not yet been copied to AWS. Normally this should be none.
-+ **Last** **seen**: when is the last time the AWS Replication Agent communicated with the AWS DRS service or the replication server.
++ **Last** **seen**: when is the last time the AWS Replication Agent communicated with the AWS Transform MGN service or the replication server.
 
 If everything is working as it should and replication has finished initializing, the Data replication progress section shows a **Healthy** status.
 
@@ -199,7 +199,7 @@ The status includes:
 ## Review events and metrics in AWS CloudTrail
 <a name="events"></a>
 
-You can review AWS Transform MGN events and metrics in AWS CloudTrail. Click on **View CloudTrail Event** History to openAWS CloudTrail in a new tab.
+You can review AWS Transform MGN events and metrics in AWS CloudTrail. Choose **View CloudTrail Event** History to open AWS CloudTrail in a new tab.
 
 Learn more about [monitoring AWS MGN.](monitoring-overview.md)
 
@@ -251,7 +251,7 @@ This uninstalls the AWS Replication Agent from the source server and data replic
 
   On the **Archive X servers** dialog, select **Archive**.
 
-  To see your archived servers, open the **Preferences** menu by clicking the gear button. Select the **Show only archived servers** option and click **Confirm**. You can now see all of your archived servers. Unselect this option to see your non-archived servers.
+  To see your archived servers, open the **Preferences** menu by choosing the gear button. Select the **Show only archived servers** option and choose **Confirm**. You can now see all of your archived servers. Unselect this option to see your non-archived servers.
 
 ### Replication menu
 <a name="server-replication"></a>
@@ -265,12 +265,12 @@ The Replication menu allows you to manage data replication for your source serve
 The **Test and cutover menu** allows you to manage your test and cutover instances.
 + **Launch test instances** – Choose this option to launch a test instance for this server.
 
-  When the **Launch test instances for X** servers dialog appears, click **Launch** to begin the test.
+  When the **Launch test instances for X** servers dialog appears, choose **Launch** to begin the test.
 
   The AWS Transform MGN console indicates **1 launch job complete** after the test has been completed successfully.
 + **Finalize testing** – Choose the **Mark as "Ready for cutover"** option to finalize testing for this server after you have completed all of the necessary tests in preparation for cutover.
 
-  When the **Mark X servers as "Ready for cutover"** dialog appears, select whether you want to terminate the launched instances used for testing. We recommend that you terminate these instances, as you will be charged for them even though you no longer need them. Check the **Yes, terminate launched instances (recommended)** box and click **Continue**.
+  When the **Mark X servers as "Ready for cutover"** dialog appears, select whether you want to terminate the launched instances used for testing. We recommend that you terminate these instances, as you will be charged for them even though you no longer need them. Check the **Yes, terminate launched instances (recommended)** box and choose **Continue**.
 
   The AWS Transform MGN console indicates that testing has been finalized. The selected source servers' **Migration lifecycle** column shows the **Ready for cutover** status and the launched test instances are deleted if that option was selected.
 + **Revert to "ready for testing"** – Choose this option to revert a finalized test for this server if you want to run further tests prior to initiating a cutover.
@@ -280,16 +280,16 @@ The **Test and cutover menu** allows you to manage your test and cutover instanc
   The AWS Transform MGN console indicates that testing has been reverted. The selected source servers' **Migration lifecycle** column shows the **Ready for testing** status and the launched test instances are deleted if that option was selected.
 + **Launch cutover instances** – Choose this option to launch a cutover instance for this server after you have finalized all of your testing and are ready to initiate a cutover.
 
-  When the **Launch cutover instances for X** **servers** dialog appears, click **Launch** to begin the cutover.
+  When the **Launch cutover instances for X** **servers** dialog appears, choose **Launch** to begin the cutover.
 
   The AWS Transform MGN console indicates **1 launch job complete** after the cutover has been completed successfully.
 
   This changes your source servers' **Migration lifecycle** status to **Cutover in progress**, indicating that the cutover is in progress but has not yet been finalized.
 + **Finalize cutover** – Choose this option to finalize the cutover for this server after you have successfully performed a cutover.
 
-  This changes your source servers' **Migration lifecycle** status to **Cutover complete**, indicating that the cutover is complete and that the migration has been performed successfully. In addition, this stops data replication and cause all replicated data to be discarded. All AWS resources used for data replication are terminated.
+  This changes your source servers' **Migration lifecycle** status to **Cutover complete**, indicating that the cutover is complete and that the migration has been performed successfully. In addition, this stops data replication and causes all replicated data to be discarded. All AWS resources used for data replication are terminated.
 
-  When the **Finalize cutover for X servers** dialog appears, click **Finalize**.
+  When the **Finalize cutover for X servers** dialog appears, choose **Finalize**.
 
   The AWS Transform MGN console indicates **X servers cutover. Data replication has been stopped for servers** once the cutover has been completed successfully. The AWS Transform MGN console automatically stops data replication for the cutover source servers to save resource costs. The selected source servers' **Migration lifecycle** column shows the **Cutover** status, the **Data replication** column shows **Disconnected** and the **Next step** column states **Mark as archived**. The source servers have now been successfully migrated into AWS and can be archived.
 
@@ -299,11 +299,11 @@ This action does not uninstall the AWS Replication Agent from the source server.
 
   This reverts your source servers' **Migration lifecycle** to the **Ready for cutover** status, indicating that these servers have not undergone cutover.
 
-  When the **Revert cutover for X servers** dialog appears, click **Revert**.
+  When the **Revert cutover for X servers** dialog appears, choose **Revert**.
 + **Edit launch settings** – Use this option to edit the launch settings for this server. This redirects you to the **Launch settings** tab. [Learn more about Launch settings.](launching-target-servers.md)
 + **Terminate launched instance** – Choose this option if you want to delete your test or cutover instance for any reason at any time. This option can only be selected for a server that has a launched test or cutover instance.
 
-  When the **Terminate launched instance** dialog appears, click **Terminate**.
+  When the **Terminate launched instance** dialog appears, choose **Terminate**.
 + **Edit post-launch settings** – Choose this option to edit the post-launch settings for the selected source server or group of source servers. [Learn more about post-launch settings.](source-post-launch-settings.md)
 
 ### Alerts and errors
@@ -318,3 +318,7 @@ The AWS Transform MGN console is color-coded for ease of use.
 + Servers that are experiencing serious issues such as a loss of connection or a stall are characterized by the color red. You have to fix these issues for data replication to resume. The **Next actions** box provides additional information.
 
   For example, if a stall occurred during initiation, you would scroll down to** Replication initiation steps**, where the problematic step is marked with a red 'x'.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform MGN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mgn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

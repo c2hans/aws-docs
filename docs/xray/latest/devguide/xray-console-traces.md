@@ -148,3 +148,7 @@ The following image shows the **Overview** tab for a custom subsegment. The over
 ![Overview information about a subsegment including ID, parent ID, Name, times, errors, and faults.](http://docs.aws.amazon.com/xray/latest/devguide/images/scorekeep-PUTrules-customsubsegment-overview.png)
 
 The **Metadata** tab for a custom subsegment contains information in JSON format about resources used by that subsegment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS X-Ray. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query xray` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

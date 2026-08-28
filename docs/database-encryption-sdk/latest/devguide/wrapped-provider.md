@@ -130,3 +130,7 @@ When you decrypt an item, you pass in an unwrapping key and a signing key. A wra
 1. It returns the plaintext item encryption key, the signing key, and encryption and signing algorithms to the item encryptor.
 
 1. The item encryptor uses the signing key to verify the item. If it succeeds, it uses the item encryption key to decrypt the item. Then, it removes the plaintext keys from memory as soon as possible.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

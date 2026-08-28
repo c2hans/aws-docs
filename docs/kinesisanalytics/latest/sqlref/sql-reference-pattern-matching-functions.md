@@ -12,3 +12,7 @@ Amazon Kinesis Data Analytics features the following functions for log parsing:
 + [SYS\_LOG\_PARSE](sql-reference-sys-log-parse.md) processes entries commonly found in UNIX/Linux system logs.
 + [VARIABLE\_COLUMN\_LOG\_PARSE](sql-reference-variable-column-log-parse.md) splits an input string (its first argument, <character-expression>) into fields separated by a delimiter character or delimiter string.
 + [W3C\_LOG\_PARSE](sql-reference-w3c-log-parse.md) processes entries in W3C-predefined-format logs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -32,3 +32,7 @@ The following image shows an example of a chat contact. **System Message** appli
 1. For calls, if desired, choose the play prompt to listen to the recording. Or, choose the relevant part of the recording to listen to the portion you're interested in.
 
 1. For chats, if desired, use the graph to navigate to the portion of the transcript you're interested in.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

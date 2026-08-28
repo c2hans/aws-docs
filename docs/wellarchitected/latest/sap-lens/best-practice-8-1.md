@@ -48,3 +48,7 @@ Operating system encryption options include BitLocker, DM-crypt and SuSE Remote 
  Be aware that HANA data at rest encryption root keys can only be stored securely in the instance secure store in the file system (Instance SSFS) or within the SAP Data Custodian SaaS Solution. If using instance store the master key could be stored in [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/) with a rotation policy.
 +  SAP Note: [2154997 - Migration of hdbuserstore entries to ABAP SSFS](https://launchpad.support.sap.com/#/notes/2154997) [Requires SAP Portal Access]
 +  SAP Note: [2755815 - How to Ensure Recoverability of Hana's Data-At-Rest Encryption](https://launchpad.support.sap.com/#/notes/2755815) [Requires SAP Portal Access]
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

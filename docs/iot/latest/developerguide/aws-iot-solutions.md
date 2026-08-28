@@ -42,3 +42,7 @@ See how AWS IoT can provide integrated home automation solutions.
 See how AWS IoT can apply machine learning and edge computing to your home automation solution.
 
 For a list of solutions for industrial, consumer, and commercial use cases, see the [AWS IoT Solution Repository](https://aws.amazon.com/iot/solutions/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

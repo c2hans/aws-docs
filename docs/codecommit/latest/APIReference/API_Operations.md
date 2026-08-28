@@ -31,6 +31,7 @@ The following actions are supported:
 +  [EvaluatePullRequestApprovalRules](API_EvaluatePullRequestApprovalRules.md)
 +  [GetApprovalRuleTemplate](API_GetApprovalRuleTemplate.md)
 +  [GetBlob](API_GetBlob.md)
++  [GetBlobDifferences](API_GetBlobDifferences.md)
 +  [GetBranch](API_GetBranch.md)
 +  [GetComment](API_GetComment.md)
 +  [GetCommentReactions](API_GetCommentReactions.md)
@@ -85,3 +86,7 @@ The following actions are supported:
 +  [UpdateRepositoryDescription](API_UpdateRepositoryDescription.md)
 +  [UpdateRepositoryEncryptionKey](API_UpdateRepositoryEncryptionKey.md)
 +  [UpdateRepositoryName](API_UpdateRepositoryName.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

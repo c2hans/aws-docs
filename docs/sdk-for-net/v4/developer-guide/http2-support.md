@@ -96,3 +96,7 @@ Some bi-directional HTTP 2 operations, such as the `InvokeModelWithBidirectional
 <a name="http2-support-additional"></a>
 + AWS SDK for .NET support for HTTP 2 is available only in versions that target .NET 8 and above. It isn't available in versions that target .NET Framework.
 + For more detailed information, see [PR 3730](https://github.com/aws/aws-sdk-net/pull/3730) in the [aws-sdk-net](https://github.com/aws/aws-sdk-net) GitHub repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

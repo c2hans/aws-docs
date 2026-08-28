@@ -12,3 +12,7 @@ SMPTE 2022-6 inputs support resiliency, but they do so using SMPTE 2022-7. You c
 + In addition, if you have non-SMPTE 2022-6 (or non-SMPTE 2110) events set up on the appliance that use this bonded interface, you must modify the event configuration. You might be able to bond other interfaces on other cards in the appliance, and then use that bonded interface in those events. If you can’t do that, you must change the event configuration to not use a bonded interface.
 
  If you don't plan to implement redundant SMPTE 2022-6 inputs (or SMPTE 2110 inputs or outputs), you can retain the bonded interface on the appliance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

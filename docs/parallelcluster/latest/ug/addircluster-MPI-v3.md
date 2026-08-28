@@ -13,3 +13,7 @@ For example, in the [IntelMPI official documentation](https://www.intel.com/cont
 Known issue
 In the case where your MPI application relies on SSH as mechanism to spawn MPI jobs, it's possible to encounter a [known bug in Slurm](https://bugs.schedmd.com/show_bug.cgi?id=13385) that causes the wrong resolution of the directory user name to "nobody".
 Either configure your application to use Slurm as the MPI bootstrapping method or refer to [Known issues with username resolution](troubleshooting-v3-multi-user.md#troubleshooting-v3-multi-user-name-resolution) in the Troubleshooting section for further details and possible workarounds.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

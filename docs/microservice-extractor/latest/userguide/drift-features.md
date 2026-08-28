@@ -22,3 +22,7 @@ You can determine whether your application dependencies are compatible with .NET
 You can start refactoring older monolithic applications when you are not familiar with their original architecture or retrofitted features. The prescriptive guidance provided by AWS Microservice Extractor for .NET's automated recommendations reduces the time it takes to identify and refactor microservices from legacy applications.
 
 AWS Microservice Extractor for .NET's automated recommendations and prescriptive guidance allows you to start refactoring older monolithic applications when you are not familiar with their original architecture or retroffitted features. The prescriptive guidance and recommendations from AWS Microservice Extractor for .NET reduces the time it would normally take to refactor microservices from legacy applications.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Microservice Extractor for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query microservice-extractor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

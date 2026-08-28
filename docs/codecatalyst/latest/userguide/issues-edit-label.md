@@ -26,3 +26,7 @@ Use the following procedure to change the name or color of an existing label.
 1. The changed label is now visible in your list of available labels. You can also see how many issues are using that label.
 **Note**
 You can choose the number displayed next to each label to navigate to the **All issues** page and see all issues that contain that label.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

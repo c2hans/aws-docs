@@ -23,3 +23,7 @@ Contains an array of training-data configuration objects, each of which defines 
    For example, a training data configuration with the name "job-number-1" results in a training data configuration file named `job-number-1.json`.
 + **`targets`**   –   A JSON array of node and edge class label targets that represent the machine-learning class labels for training purposes. See [The targets field in a neptune\_ml object](machine-learning-neptune_ml-targets.md).
 + **`features`**   –   A JSON array of node property features. See [The features field in neptune\_ml](machine-learning-neptune_ml-features.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

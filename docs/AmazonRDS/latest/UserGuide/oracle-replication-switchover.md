@@ -108,3 +108,7 @@ If you perform a switchover to a cross-Region replica with different options, th
 
 **Note**
 Because the switchover changes only the database role, the new primary database isn't protected by Multi-AZ until you enable it. After the switchover completes, review the new primary database and, if needed, enable Multi-AZ and reconfigure any options (such as SSL, NNE, OEM, and OEM\_AGENT) that your application requires.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

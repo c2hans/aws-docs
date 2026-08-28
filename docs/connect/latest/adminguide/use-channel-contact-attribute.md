@@ -14,3 +14,7 @@ You can personalize the customer's experience based on the channel that they use
 
 1. The following image of the configured Check contact attributes block shows two branches: **CHAT** and **No Match**. If the customer is contacting you through chat, specify what should happen next. If the customer is contacting you through a call (No Match), specify the next step in the flow.
 ![A configured Check contact attributes block.](http://docs.aws.amazon.com/connect/latest/adminguide/images/channel-attribute-flow.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

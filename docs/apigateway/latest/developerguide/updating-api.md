@@ -39,3 +39,7 @@ The following table describes API configurations that don't require redeployment
 | [Stage](https://docs.aws.amazon.com/apigateway/latest/api/API_Stage.html) | For applicable properties and supported operations, see [stage:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateStage.html). The update does not require redeploying the API. |
 | [Usage](https://docs.aws.amazon.com/apigateway/latest/api/API_GetUsage.html) | For applicable properties and supported operations, see [usage:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateUsage.html). The update does not require redeploying the API. |
 | [UsagePlan](https://docs.aws.amazon.com/apigateway/latest/api/API_UsagePlan.html) | For applicable properties and supported operations, see [usageplan:update](https://docs.aws.amazon.com/apigateway/latest/api/API_UpdateUsagePlan.html). The update does not require redeploying the API. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

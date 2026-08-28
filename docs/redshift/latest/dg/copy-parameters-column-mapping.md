@@ -42,3 +42,7 @@ When loading from data files in JSON or Avro format, COPY automatically maps the
 In some cases, your column names and field names don't match, or you need to map to deeper levels in the data hierarchy. In these cases, you can use a JSONPaths file to explicitly map JSON or Avro data elements to columns.
 
 For more information, see [JSONPaths file](copy-parameters-data-format.md#copy-json-jsonpaths).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

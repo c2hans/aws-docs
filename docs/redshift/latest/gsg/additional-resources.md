@@ -25,3 +25,7 @@ For more information about Amazon Redshift Serverless, we recommend that you con
   + [Configuring manual workload management (WLM) queues](https://docs.aws.amazon.com/redshift/latest/dg/tutorial-configuring-workload-management.html): This tutorial describes how to configure manual workload management (WLM) in Amazon Redshift.
   + [Getting started with Amazon Redshift ML](https://docs.aws.amazon.com/redshift/latest/dg/getting-started-machine-learning.html): This section describes how users can create, train, and deploy machine learning models using familiar SQL commands.
 + [What's new](https://aws.amazon.com/redshift/whats-new): This webpage lists Amazon Redshift new features and product updates.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

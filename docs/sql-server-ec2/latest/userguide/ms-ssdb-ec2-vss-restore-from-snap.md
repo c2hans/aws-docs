@@ -181,3 +181,7 @@ These interact with Amazon EC2 APIs to create volumes from snapshots, attach the
 
 **Run Command Execution Steps**
 These use the `aws:RunCommand` action to execute commands on the target instance. If a failure occurs due to a run command execution, examine the step execution details. Under **Outputs**, select the **CommandId** link for the command to access the **Run command execution** page, where you can view the complete log for debugging purposes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SQL Server on Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sql-server-ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -121,3 +121,7 @@ The solution includes the following steps:
 <a name="migrate-iis-hosted-applications-to-amazon-ec2-by-using-appcmd-additional"></a>
 + The appcmd.exe backup includes: application pools, sites, global configuration, and IIS schema. It does not include web content files, SSL certificates, or shared configuration files.
 + For large-scale IIS farm migrations, consider using the PowerShell Web-Administration module for scripted backup and restore operations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

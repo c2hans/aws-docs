@@ -20,3 +20,7 @@ The script does the following:
 To change the swap size, edit `linux.sh` and update the `SWAP_SIZE` variable.
 
 For an alternative that changes the kernel's overcommit behavior instead of adding swap, see the [overcommit\_override\_for\_smf](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/host_configuration_scripts/overcommit_override_for_smf) script in the samples repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

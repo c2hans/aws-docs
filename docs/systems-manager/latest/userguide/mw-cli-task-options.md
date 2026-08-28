@@ -41,3 +41,7 @@ Task invocation parameters options for maintenance window tasks
 | **`AUTOMATION`** | `DocumentVersion`<br />`Parameters` |  <pre>"TaskInvocationParameters": {<br />        "Automation": {<br />            "DocumentVersion": "3",<br />            "Parameters": {<br />                "instanceid": [<br />                    "{{TARGET_ID}}"<br />                ]<br />            }<br />        }<br />    }</pre>  |
 | **`LAMBDA`** | `ClientContext`<br />`Payload`<br />`Qualifier` |  <pre>"TaskInvocationParameters": {<br />        "Lambda": {<br />            "ClientContext": "ew0KICAi--truncated--0KIEXAMPLE",<br />            "Payload": "{ \"targetId\": \"{{TARGET_ID}}\", \"targetType\": \"{{TARGET_TYPE}}\" }",<br />            "Qualifier": "$LATEST"<br />        }<br />    }</pre>  |
 | **`STEP_FUNCTIONS`** | `Input`<br />`Name` |  <pre>"TaskInvocationParameters": {<br />        "StepFunctions": {<br />            "Input": "{ \"targetId\": \"{{TARGET_ID}}\" }",<br />            "Name": "{{INVOCATION_ID}}"<br />        }<br />    }</pre>  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

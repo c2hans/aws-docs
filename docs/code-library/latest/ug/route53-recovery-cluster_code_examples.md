@@ -22,3 +22,7 @@ The following code examples show you how to use Amazon Route 53 Application Reco
   + [Actions](route53-recovery-cluster_code_examples_actions.md)
     + [`GetRoutingControlState`](route53-recovery-cluster_example_route53-recovery-cluster_GetRoutingControlState_section.md)
     + [`UpdateRoutingControlState`](route53-recovery-cluster_example_route53-recovery-cluster_UpdateRoutingControlState_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/userguide/lens-ca
 | SaaS | Focused on designing, deploying, and architecting your software as a service (SaaS) workloads in the AWS Cloud. |
 |  SAP  |  Design principles and best practices for SAP workloads in the AWS Cloud.  |
 | Serverless Applications | Best practices for build serverless workloads on AWS. Covers scenarios such as RESTful microservices, mobile app backends, stream processing, and web applications.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

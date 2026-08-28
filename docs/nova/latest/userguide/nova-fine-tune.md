@@ -27,3 +27,7 @@ Amazon Nova 2.0 is a model trained on a larger and more diverse dataset than Ama
 Choose Amazon Nova 1.0 when:
 + The use case requires standard language understanding without advanced reasoning
 + Performance has already been validated on Amazon Nova 1.0 and additional capabilities are not needed
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

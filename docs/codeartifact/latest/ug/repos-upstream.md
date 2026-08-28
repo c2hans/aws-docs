@@ -30,3 +30,7 @@ In CodeArtifact, upstream repositories and external connections behave mostly th
 1. There are separate API calls to add an upstream repository or an external connection.
 
 1. The package retention behavior is slightly different, as packages requested from upstream repositories are retained in those repositories. For more information, see [Package retention in intermediate repositories](repo-upstream-behavior.md#package-retention-intermediate-repositories).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

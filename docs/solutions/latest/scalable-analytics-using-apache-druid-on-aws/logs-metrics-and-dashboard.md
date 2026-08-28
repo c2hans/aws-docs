@@ -20,3 +20,7 @@ The guidance creates a metric namespace named `AWSSolutions/Druid` to store the 
 + Operating system metrics (e.g. CPU/memory/disk utilization)
 
 The guidance includes an Amazon CloudWatch dashboard named `druid-<cluster name>-ops-dashboard` configured to provide an overview of the health and operational status of all components in the guidance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Scalable Analytics Using Apache Druid on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

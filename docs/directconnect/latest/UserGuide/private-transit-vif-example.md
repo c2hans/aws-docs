@@ -18,3 +18,7 @@ If you change the CIDR range configuration of VIF C, routes that fall in to the 
 + VIF C (in us-west-1) advertises 172.16.0.0/24 and has an AS\_PATH attribute of 65001
 
 ![Private VIF Routing](http://docs.aws.amazon.com/directconnect/latest/UserGuide/images/private-vif-as-path-2.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

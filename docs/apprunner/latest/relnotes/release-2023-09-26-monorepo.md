@@ -19,3 +19,7 @@ AWS App Runner now offers you the option to designate a repository source direct
 If your source code management system doesn’t follow a monorepo architecture, you can continue to use the existing default root source directory for your deployment strategy. However, if you need more flexibility to designate your source code repository to a source directory other than the top-level repository directory, you can also benefit from this feature.
 
 For more information, see [App Runner service based on source code](https://docs.aws.amazon.com/apprunner/latest/dg/service-source-code.html) in the *AWS App Runner Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

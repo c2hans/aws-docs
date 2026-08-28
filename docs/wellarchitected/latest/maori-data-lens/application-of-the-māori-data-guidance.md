@@ -61,3 +61,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/maori-data-lens/a
  **How do you design and operate systems to minimise potential impacts on the environment?** This section focuses on considering the impacts of technology on the environment.
 +  Work with your customer to identify if they have specific sustainability goals, and identify what metrics are being used to measure attainment of those goals. Determine how you might produce data from the digital archive solution that can feed into the measurement of those metrics.
 + You may prompt the iwi to consider how the iwi can reduce carbon emissions by using AWS instead of alternatives like on-premise servers. You may wish to discuss with the iwi’s kaitiaki board the pros of using a monthly report from the AWS Customer Carbon Footprint Tool to monitor carbon emissions and set a 12 month goal to reduce carbon emissions associated with their use of AWS through optimisations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

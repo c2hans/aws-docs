@@ -133,3 +133,7 @@ There is no additional charge for AWS License Manager. For pricing information, 
   + SQL Server Reporting Services (SSRS)
 + BYOM does not currently support SQL Server 2019 engine version `15.00.4043.16.v1`. To use BYOM with SQL Server 2019, choose a different supported engine version.
 + BYOM supports SQL Server 2025 Enterprise Edition and Standard Edition starting with version `17.00.4045.5.v1`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

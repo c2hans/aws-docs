@@ -401,3 +401,7 @@ Unless the option is specified as optional, a handler MUST be able to handle the
 In addition to handling specific `@http` options, a handler MUST add a `User-Agent` header that takes the following form, where “3.X” can be replaced with `Aws\Sdk::VERSION` and “HandlerSpecificData/version …” should be replaced with your handler-specific User-Agent string.
 
  `User-Agent: aws-sdk-php/3.X HandlerSpecificData/version ...`
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for PHP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-php` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

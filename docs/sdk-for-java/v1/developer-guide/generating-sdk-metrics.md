@@ -92,3 +92,7 @@ Machine Metrics
 + See the [amazonaws/metrics package summary](https://docs.aws.amazon.com/sdk-for-java/v1/reference/com/amazonaws/metrics/package-summary.html) for a full list of the predefined core metric types.
 + Learn about working with CloudWatch using the AWS SDK for Java in [CloudWatch Examples Using the AWS SDK for Java](examples-cloudwatch.md).
 + Learn more about performance tuning in [Tuning the AWS SDK for Java to Improve Resiliency](https://aws.amazon.com/blogs/developer/tuning-the-aws-sdk-for-java-to-improve-resiliency) blog post.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

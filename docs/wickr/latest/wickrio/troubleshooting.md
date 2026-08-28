@@ -987,3 +987,7 @@ An Auto Scaling group with a minimum, maximum, and desired capacity of 1 automat
 **Use a container orchestrator**
 
 If your organization already uses a container orchestrator such as Amazon ECS, Amazon EKS, or a lightweight Kubernetes distribution, you can run the Wickr IO container as a managed task or pod with built-in health checks, automatic restarts, and log collection. This approach is recommended only if you already have orchestration infrastructure in place.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -42,3 +42,7 @@ If you update your AWS Control Tower landing zone from any version 2.X to any ve
 + Baseline enablement targets one OU at a time. Therefore, nested OUs are not updated automatically when the parent OU is updated. We recommend that you update the parent OU before you update the nested OUs.
 +  When you call the `UpdateEnabledBaseline` API or re-register an OU from the console, the OU retains all controls that were enabled before the baseline update.
 + When multiple baseline versions are compatible with your landing zone version, you must use the latest baseline version if you enable a baseline on an unmanaged OU.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

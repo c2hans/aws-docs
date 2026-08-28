@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Use Aurora read replica auto-scaling and DB snapshot exports to Amazon S3 for cost-efficient handling of fluctuating traffic and analytics needs.
 +  Optimize DynamoDB costs by starting with on-demand capacity for new workloads, transitioning to provisioned capacity with auto-scaling for predictable traffic, and removing unused LSIs and GSIs.
 +  Avoid inefficient Scan operations in favor of targeted queries, use Reserved Instances or Reserved Capacity, and use DynamoDB Streams with AWS Lambda for event processing.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

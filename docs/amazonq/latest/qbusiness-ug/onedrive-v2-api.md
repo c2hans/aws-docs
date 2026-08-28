@@ -169,3 +169,7 @@ The following table provides information about important JSON keys to configure 
 | connectionConfiguration | Configuration information for connecting to OneDrive: secretArn: The Amazon Resource Name (ARN) of an AWS Secrets Manager secret that contains authentication credentials. The secret must contain a JSON structure with the following keys: {"clientID": "OAuth Client ID", "clientSecret": "client secret"}. tenantId: The tenant ID in UUID format. authType: Authentication type, either "ENTRA\_APP\_ID" or "OAUTH2". |
 | type | The type of data source. Specify ONEDRIVEV3 as your data source type. |
 | version | The version of this template. Currently supported version is "2.0.0". |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

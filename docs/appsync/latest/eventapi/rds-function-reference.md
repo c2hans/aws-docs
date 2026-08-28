@@ -100,3 +100,7 @@ Note that `toJsonObject` returns an array of statement results. If you provided 
 <a name="utility-functions"></a>
 
 You can use the AWS AppSync RDS module's utility helpers to interact with your database. To learn more, see [Amazon RDS module functions](built-in-modules.md#built-in-rds-modules).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

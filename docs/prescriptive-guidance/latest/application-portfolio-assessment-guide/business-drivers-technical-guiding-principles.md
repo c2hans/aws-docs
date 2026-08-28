@@ -44,3 +44,7 @@ The following table provides an example of business drivers and technical guidin
 | Stay on premises, but increase agility and resiliency. | Improved competitiveness and uptime while remaining on premises | Number of deployments per day or month, new features release per quarter, SLAs, number of incidents | 1. Modernize systems by extending their functionality into the cloud.<br />2. Assess for rehosting or replatforming to AWS Outposts. |
 
 It is also important to define architectural principles that inform the migration strategies. For example, you might introduce an architectural principle for the AWS Cloud that all migrated applications must encrypt all communications. If this kind of principle is not currently applied on-premises, it forces migration teams to implement changes as part of migration, which affects effort and planning. Define all architectural principles and share them with the relevant teams.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

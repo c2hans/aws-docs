@@ -212,3 +212,7 @@ Running the `VACUUM `command with the `FULL` parameter rewrites the entire conte
 We recommend that you use `VACUUM FULL` when you have non-primary key tables, if your database can tolerate downtime.
 
 Because `VACUUM FULL` requires more locking than other operations, it is more expensive to run on crucial databases. To replace this method, you can use the `pg_repack `extension, which is described in the [next section](pg-repack.md). This option is similar to `VACUUM FULL` but requires minimal locking and is supported by both Amazon RDS for PostgreSQL and Aurora PostgreSQL-Compatible.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

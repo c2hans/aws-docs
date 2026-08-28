@@ -91,3 +91,7 @@ The following table describes important changes to the *AWS Cloud9 User Guide* b
 | Getting started instructions added for AWS account root users and advanced setup steps for teams | Added setup steps for using AWS Cloud9 with an AWS account root user. Added advanced setup steps for using AWS Cloud9 with teams. For more information, see [Setting up AWS Cloud9](setting-up.md). | December 5, 2017 |
 | Coverage expanded for environment requirements | Expanded coverage of requirements for an Amazon EC2 instance or your own server to connect to an AWS Cloud9 SSH development environment. For more information, see [SSH environment host requirements](ssh-settings.md). | December 4, 2017 |
 | Initial documentation release | This is the initial release of the *AWS Cloud9 User Guide*. | November 30, 2017 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,3 +43,7 @@ When the intent is recognized, the slot named "reservation-start-date" has its v
 1. If neither of the first two default values are used, then the slot doesn't have a default value and Amazon Lex V2 will elicit a value as usual.
 
 If a default value is used for the slot, the slot is not elicited even if it is required.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

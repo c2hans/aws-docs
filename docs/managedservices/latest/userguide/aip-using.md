@@ -28,3 +28,7 @@ The Create, Update, and Delete change types are always visible in your account, 
 + The Delete CT can not delete existing roles or policies that are not created with the AMS Automated IAM Provisioning Create CT.
 + The AMS Automated IAM Provisioning with read-write permissions feature isn't supported in Direct Change Mode roles. This means that you can't provision or update IAM roles and policies with read-write permissions using these roles.
 + AMS Automated IAM Provisioning with read-write permissions Create, Update, and Delete change types are not compatible with the ServiceNow Connector.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

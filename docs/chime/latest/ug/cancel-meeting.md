@@ -43,3 +43,7 @@ Your calendar app needs to send an iCalendar (.ics) file to **meet@chime.aws** t
 <a name="remove-self-not-organizer"></a>
 
 You own a meeting when you create and host that meeting, or when you have a delegate create the meeting for you. To remove yourself from a recurring meeting that you don't own, follow the steps in [ Removing yourself from a recurring meeting ](https://docs.aws.amazon.com/chime/latest/ug/remove-recurring.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

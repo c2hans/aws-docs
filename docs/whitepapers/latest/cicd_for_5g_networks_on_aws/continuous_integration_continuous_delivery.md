@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/cicd_for_5g_networks_
 With *Continuous Deployment*, revisions are deployed to a production environment automatically without explicit approval from a developer, making the entire software release process automated. This allows for a continuous customer feedback loop early in the product lifecycle.
 
 With Continuous Deployment, every change that is committed and passes automated tests is released to production automatically. Continuous Delivery is not meant to release every change that is committed and pass automated tests to production immediately, but to ensure that every change is ready to go to production.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

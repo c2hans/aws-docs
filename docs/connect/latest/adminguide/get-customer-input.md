@@ -525,3 +525,7 @@ See the following topics to learn more about Amazon Lex and adding prompts.
 + [Create conversational AI bots in Connect Customer](connect-conversational-ai-bots.md)
 + [How to use the same Amazon Lex bot for voice and chat](one-bot-voice-chat.md)
 + [Add text-to-speech to prompts in flow blocks in Amazon Polly](text-to-speech.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

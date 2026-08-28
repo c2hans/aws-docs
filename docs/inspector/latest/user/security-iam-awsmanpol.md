@@ -200,3 +200,7 @@ View details about updates to AWS managed policies for Amazon Inspector since th
 | [AmazonInspector2FullAccess](#security-iam-awsmanpol-AmazonInspector2FullAccess) – New policy | Amazon Inspector added a new policy to allow full access to Amazon Inspector functionality. | November 29, 2021 |
 | [AmazonInspector2ServiceRolePolicy](https://docs.aws.amazon.com/inspector/latest/user/security-iam-awsmanpol.html#security-iam-awsmanpol-AmazonInspector2ServiceRolePolicy) – New policy | Amazon Inspector added a new policy to allow Amazon Inspector to perform actions in other services on your behalf. | November 29, 2021 |
 | Amazon Inspector started tracking changes | Amazon Inspector started tracking changes for its AWS managed policies. | November 29, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -21,3 +21,7 @@ The following is a brief description of the example applications. They include c
 + [HelloWorldWorkflowAsync Application](getting-started-example-helloworldworkflowasync.md) modifies `HelloWorldWorkflow` to use an *asynchronous workflow* method.
 + [HelloWorldWorkflowDistributed Application](getting-started-example-helloworldworkflowdistributed.md) modifies `HelloWorldWorkflowAsync` so that the workflow and activity workers can run on separate systems.
 + [HelloWorldWorkflowParallel Application](getting-started-example-helloworldworkflowparallel.md) modifies `HelloWorldWorkflow` to run two activities in parallel.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Workflow Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonswf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

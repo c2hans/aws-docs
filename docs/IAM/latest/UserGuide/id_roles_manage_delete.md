@@ -174,3 +174,7 @@ When you use the IAM API to delete a role, you must first delete inline policies
 For general information about instance profiles, see [Use instance profiles](id_roles_use_switch-role-ec2_instance-profiles.md).
 
 For general information about service-linked roles, see [Create a service-linked role](id_roles_create-service-linked-role.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

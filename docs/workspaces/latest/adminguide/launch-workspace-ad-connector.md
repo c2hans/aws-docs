@@ -53,3 +53,7 @@ If you need to update your DNS server IP address after launching your WorkSpaces
 1. Choose **Create directory**.
 
 1. You will be brought back to the Create directory page on WorkSpaces console. The initial status of the directory is `Requested` and then `Creating`. When directory creation is complete (this might take a few minutes), the status is `Active`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

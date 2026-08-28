@@ -26,3 +26,7 @@ This solution provides an AWS CloudFormation Custom Resource that you can use to
  **Integration with Systems Manager Maintenance Windows**
 
 For Amazon EC2 instances, Instance Scheduler on AWS can integrate with [AWS Systems Manager](https://aws.amazon.com/systems-manager/) maintenance windows, defined in the same Region as those instances, to start and stop them in accordance with the maintenance window.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Instance Scheduler on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

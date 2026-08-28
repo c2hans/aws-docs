@@ -92,3 +92,7 @@ Whenever you call the `ToJson` method of the `Document` class, and then on the r
 For more information and examples of programming JSON with DynamoDB with the AWS SDK for .NET, see:
 +  [DynamoDB JSON Support](https://aws.amazon.com/blogs/developer/dynamodb-json-support/)
 +  [Amazon DynamoDB Update - JSON, Expanded Free Tier, Flexible Scaling, Larger Items](https://aws.amazon.com/blogs/aws/dynamodb-update-json-and-more/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for .NET. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-net` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

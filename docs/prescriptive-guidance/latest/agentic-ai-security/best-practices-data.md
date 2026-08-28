@@ -38,3 +38,7 @@ Authorization systems control access to organizational assets, and data is one o
 <a name="best-practices-5-data-loss"></a>
 
 [Data loss prevention (DLP)](https://aws.amazon.com/what-is/data-loss-prevention/) technology can act as an additional defense-in-depth layer for agentic AI systems. It can detect and prevent unauthorized data exfiltration. DLP implementations vary widely, and efficacy as a control can vary depending on the data type, volume, and baseline. If organizations have well-established DLP capabilities, extending these capabilities to support agentic AI systems can provide an efficient supplementary control.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

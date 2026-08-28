@@ -46,3 +46,7 @@ To express conditions, you use predefined condition keys. Amazon EFS has the fol
 <a name="file-system-policy-examples"></a>
 
 To view examples of Amazon EFS file system policies, see [Resource-based policy examples for Amazon EFS](security_iam_resource-based-policy-examples.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Elastic File System (EFS). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query efs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

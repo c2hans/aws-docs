@@ -46,3 +46,7 @@ Specify queries in a query string using a query syntax. The queries are passed t
 |  deviceDefender.<device-SecurityProfile>.disconnectBehavior.lastViolationTime>1634227200000  | Queries for things that are in violation for the behavior `disconnectBehavior` as defined in the security profile device-SecurityProfile with a last violation event after a specified epoch time.  |
 |  shadow.name.gps-tracker.reported.coordinates:geo\_distance,47.6204,-122.3491,15.5km | Queries for things that are within the radial distance of 15.5 km from the coordinates of 47.6204,-122.3491. This query string applies to when your location data is stored in a named shadow. |
 |  shadow.reported.coordinates:geo\_distance,47.6204,-122.3491,15.5km | Queries for things that are within the radial distance of 15.5 km from the coordinates of 47.6204,-122.3491. This query string applies to when your location data is stored in a classic shadow. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

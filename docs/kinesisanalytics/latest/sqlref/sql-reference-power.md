@@ -22,3 +22,7 @@ Returns the value of the first argument (the base) raised to the power of the se
 | POWER(-2,3) | -8 |
 | POWER(4,-2) | 1/16 ..or.. 0.0625 |
 | POWER(10.1,2.5) | 324.19285157140644 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

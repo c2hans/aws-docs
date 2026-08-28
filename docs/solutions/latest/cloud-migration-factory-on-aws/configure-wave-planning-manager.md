@@ -48,3 +48,7 @@ The import process is different, and requires the creation of a data source. For
 <a name="configure-rules"></a>
 
 Wave Planning Rules are a set of configurable guidelines that control how assets are processed during wave planning. WPM pre-defines a list of most frequently used rules as default rules, however you are also able to define your own custom rules based upon your data. To do this, see [this link](wave-planning-management.md#adding-planning-rules).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

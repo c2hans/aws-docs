@@ -117,3 +117,7 @@ Tool call results provide transparency into what the agent did during invocation
 + **Failed tool calls** – The tool returned an error. The agent may retry, try an alternative approach, or report the failure in its output.
 
 You can inspect individual tool calls and their results in the invocation trajectory to understand the agent's behavior, verify it accessed the correct resources, and troubleshoot unexpected results. For more information about viewing trajectories, see [Viewing an invocation trajectory](custom-agents-managing-custom-agents.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

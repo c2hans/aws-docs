@@ -36,3 +36,7 @@ Building serverless microservices on AWS enables you to not only take advantage 
   +  Understanding the semantics of abnormal behavior, which can be a security flag.
   +  Understanding errors, latency, and cache hits or misses to optimize configuration.
 +  This model provides a framework that is easy to deploy and maintain, and a secure environment that will scale as your needs grow.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

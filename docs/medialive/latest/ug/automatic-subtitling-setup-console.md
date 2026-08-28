@@ -44,3 +44,7 @@ Before configuring Smart Subtitles, you must create an Elemental Inference feed 
 In the MediaLive console, choose **Create new feed** in the Elemental Inference settings section. A side panel opens where you can configure the feed name, enable subtitling, and set the language code.
 In the Elemental Inference console, create a feed and add a subtitling output.
 Using the AWS CLI. For instructions, see [Elemental Inference features using AWS CLI](elemental-inference-cli.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

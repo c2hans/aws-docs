@@ -63,3 +63,7 @@ During database decomposition, maintaining backward compatibility is essential f
 A comprehensive rollback strategy is essential for safe database decomposition. Implement feature flags in your code to control which version of business logic is active. This allows you to instantly switch between the new and original implementations without deployment changes. This approach provides fine-grained control over the transition and helps you roll back quickly if issues arise. Keep the original logic as a verified backup, and maintain detailed rollback procedures that specify triggers, responsibilities, and recovery steps.
 
 Regularly test these rollback scenarios under various conditions to validate their effectiveness, and make sure that teams are familiar with emergency procedures. Feature flags also enable gradual rollouts by selectively enabling new functionality for specific user groups or transactions. This provides an additional layer of risk mitigation during the transition.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

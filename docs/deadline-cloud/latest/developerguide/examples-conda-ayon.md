@@ -21,3 +21,7 @@ At runtime, the job must provide the following environment variables:
 + `AYON_SERVER_URL` — URL of the AYON server.
 + `AYON_API_KEY` — API key for server authentication.
 + `AYON_BUNDLE_NAME` — Bundle name to resolve addons from.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

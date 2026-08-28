@@ -11,3 +11,7 @@ AWS AppConfig includes an internal or hosted configuration store. Configurations
 + You can store configurations in YAML, JSON, or as text documents.
 + There is no cost to use the store.
 + You can create a configuration and add it to the store when you create a configuration profile.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppConfig. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appconfig` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

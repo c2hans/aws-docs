@@ -20,3 +20,7 @@ The *workspaces-web* API namespace remains unchanged for backward compatibility.
 + UAL(User-Activity Logging) Kinesis stream prefix.
 
 In addition, existing portal URLs remain the same. URLs for portals created before May 20, 2024 used the format <UUID>.workspaces-web.com. WorkSpaces Secure Browser portals continue to use this format and the workspaces-web.com domain.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Secure Browser. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces-web` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

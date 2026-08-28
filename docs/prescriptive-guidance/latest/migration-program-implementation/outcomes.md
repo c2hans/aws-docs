@@ -16,3 +16,7 @@ Using this agile model, you can accelerate the path to achieving business outcom
 + **Training tools** – Train resources on AWS services, and provide hands-on migration experience.
 + **Operational runbook** – Validate the operating model by deploying, monitoring, and reporting on applications that are running on AWS (see [Modernizing Operations in the AWS Cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-operations-integration/)).
 + **Governance** – Manage migration scope, schedule, resource plan, issues and risks, and communications.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

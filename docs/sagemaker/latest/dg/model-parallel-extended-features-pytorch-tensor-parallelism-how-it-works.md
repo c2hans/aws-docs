@@ -49,3 +49,7 @@ When tensor parallelism is performed over data parallel ranks, a subset of the p
 The first figure shows a small model with a large `nn.Linear` module with data parallelism over the two tensor parallelism ranks. The `nn.Linear` module is replicated into the two parallel ranks.
 
 The second figure shows tensor parallelism applied on a larger model while splitting the `nn.Linear` module. Each `tp_rank` holds half the linear module, and the entirety of the rest of the operations. While the linear module runs, each `tp_rank` collects the relevant half of all data samples and passes it through their half of the `nn.Linear` module. The result needs to be reduce-scattered (with summation as the reduction operation) so that each rank has the final linear output for their own data samples. The rest of the model runs in the typical data parallel manner.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

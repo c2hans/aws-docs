@@ -85,3 +85,7 @@ You must have a Private Branch Exchange (PBX), Session Border Controller (SBC), 
 1. Do one of the following:
    + **For SIPREC** – Configure your PBX, SBC, or other voice infrastructure to fork RTP streams with SIPREC to the **Outbound host name** of your Voice Connector.
    + **For NBR** – Configure your PBX, SBC, or other voice infrastructure to fork RTP streams with NBR to the **Outbound host name** of your Voice Connector. Send an additional header or URI parameter of `X-Voice-Connector-Record-Only` with the value `true` in the `SIP INVITE`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -24,3 +24,7 @@ After metadata migration completes, confirm that vector fields were transformed 
 1. Compare result quality and, where it matters to your application, score values against the source. If ranking or scores differ in ways your application cannot tolerate, revisit the produced `method` and `space_type` and plan client-side adjustments before cutover.
 
 If the transformed mapping is not what you need — for example, you require a specific engine, space type, or HNSW tuning that the built-in transformation does not produce — you can supply a custom metadata transformer through `metadataTransforms` in the workflow configuration. Raw descriptor configurations can also use `transformerConfig`, `transformerConfigBase64`, or `transformerConfigFile`. For how custom transformers compose with the built-in ones, see [Migrate metadata](migrate-metadata.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Migration Assistant for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

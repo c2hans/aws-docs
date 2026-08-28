@@ -41,3 +41,7 @@ After completing this procedure it may still be necessary to uninstall your curr
 1. From the **Plugins** menu navigation, expand the **Settings (Manage Repositories, Configure Proxy or Install Plugin from Disk)** icon and choose **Manage Plugin Repositories**.
 
 1. From the **Manage Plugin Repositories** menu choose the **- (Remove)** icon and confirm the removal.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for JetBrains. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-jetbrains` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

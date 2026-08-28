@@ -30,3 +30,7 @@ The following format strings apply to functions such as TO\_NUMBER and TO\_CHAR.
 | SG  | Plus or minus sign in the specified position.  |
 | RN  | Roman numeral between 1 and 3999 (supported for TO\_CHAR only).  |
 | TH or th  | Ordinal number suffix. Does not convert fractional numbers or values that are less than zero.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

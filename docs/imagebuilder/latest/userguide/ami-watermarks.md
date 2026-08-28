@@ -141,3 +141,7 @@ Keep the following points in mind when you use AMI watermarks.
 + Watermarks from a source AMI plus watermarks defined in the recipe combine on the output AMI. The total cannot exceed 5. If the combined count exceeds 5, the build fails.
 + If you distribute a watermarked AMI to other Regions or accounts, the watermarks propagate automatically.
 + Image Builder validates that watermarked AMIs are not set to public at image creation time. If your recipe has watermarks (or the source AMI has watermarks) and the distribution configuration sets launch permissions to public, Image Builder returns an `InvalidParameterCombinationException` error.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

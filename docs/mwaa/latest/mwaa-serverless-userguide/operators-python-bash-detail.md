@@ -277,3 +277,7 @@ aws mwaa-serverless get-workflow-run \
 ```
 
 In the response, `RunState`, `TaskInstances`, and `Duration` are returned inside the `RunDetail` object. `RunId` and `RunType` are at the top level. Possible values for `RunState` are STARTING, QUEUED, RUNNING, SUCCESS, FAILED, TIMEOUT, STOPPING, and STOPPED. `TaskInstances` lists the individual task instances for the run.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow Serverless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

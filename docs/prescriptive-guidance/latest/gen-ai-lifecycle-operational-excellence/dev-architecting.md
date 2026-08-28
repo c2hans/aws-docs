@@ -120,3 +120,7 @@ The goal of governance during a PoC is to pragmatically address critical showsto
 + **Exit criteria** – Set clear thresholds for quality, latency, and cost, If results fail to meet these, pivot or end the PoC so that poor performance does not lead to wasted effort or sunk costs.
 + **Scoped testing** – Validate only the core components before you invest in full end-to-end integration. This reduces complexity and isolates potential failure points early.
 + **Operational readiness** – Address data quality and retrieval issues before prompt tuning, and track unit economics early. *Unit economics* are the per-request costs, which includes token usage, compute resources, and storage. Unit economics determine your application's financial viability at scale.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

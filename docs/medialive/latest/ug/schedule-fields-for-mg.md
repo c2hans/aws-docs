@@ -16,3 +16,7 @@ This table shows the fields that apply for an action to activate a motion graphi
 | Duration | Optional. The duration in milliseconds for the motion graphic to remain on the video. If you omit this field or set it to 0, the duration is unlimited and the motion graphic will remain until you create a deactivate action. |
 | URL | The URL of the motion graphics asset. This asset is always an HTML file. The URL follows this syntax:`<protocol>://<path>/<file>.html`<br />For example:<br />`https://example.com/ticker_tape.html` |
 | Credentials | Complete this section only if the server where the motion graphics asset is stored requires user authentication from MediaLive.<br />Enter the user name provided by the owner of the server. For the password, enter the name of the password stored on the AWS Systems Manager Parameter Store. Don't enter the password itself. For more information, see [Requirements for AWS Systems Manager password parameters](requirements-for-EC2.md). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

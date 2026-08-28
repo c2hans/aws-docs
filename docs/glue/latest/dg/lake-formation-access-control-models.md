@@ -18,3 +18,7 @@ The following table describes summary of how to choose between Fine-grained acce
 | Access Level | Column/row level | Full table |
 | Use Case | Queries and ETL with limited permissions | ETL |
 | Performance Impact | Requires system/user space transitions for access control evaluation, adding latency | Optimized performance |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

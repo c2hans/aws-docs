@@ -2,7 +2,7 @@
 source_url: https://docs.aws.amazon.com/securityagent/latest/userguide/perform-design-review.html
 ---
 
-# Create a Continuum design review
+# Create a design review
 <a name="perform-design-review"></a>
 
 Assess your design documents against organization security requirements by uploading files for AWS Security Agent to review. Design reviews help identify security issues early in the development lifecycle, enabling you to address architectural concerns when they are most cost-effective to resolve.
@@ -20,8 +20,8 @@ Before you begin, ensure you have:
 + Each file must be 2MB or smaller, with a combined total of 6MB across all files
 + Understanding of which security requirements are enabled for your organization
 
-## Step 1: Start creating a Continuum design review
-<a name="_step_1_start_creating_a_continuum_design_review"></a>
+## Step 1: Start creating a design review
+<a name="_step_1_start_creating_a_design_review"></a>
 
 Navigate to the design review creation page in the web application.
 
@@ -34,8 +34,8 @@ Navigate to the design review creation page in the web application.
 **Tip**
 You can view your organization’s enabled security requirements by navigating to the **Security requirements** page in the AWS Security Agent console. Select any enabled requirement to view its details. These requirements are used to analyze your design files.
 
-## Step 2: Name your Continuum design review
-<a name="_step_2_name_your_continuum_design_review"></a>
+## Step 2: Name your design review
+<a name="_step_2_name_your_design_review"></a>
 
 Provide a descriptive name that helps identify the purpose and scope of this design review.
 
@@ -65,8 +65,8 @@ A maximum of 5 files may be uploaded per design review. Each file must be 2MB or
 **Tip**
 For best results, include architecture diagrams, design specifications, and technical documentation that describe your system’s security-relevant components and data flows.
 
-## Step 4: Initiate the Continuum design review
-<a name="_step_4_initiate_the_continuum_design_review"></a>
+## Step 4: Initiate the design review
+<a name="_step_4_initiate_the_design_review"></a>
 
 After configuring all required information, initiate the security analysis of your design documents.
 
@@ -88,3 +88,7 @@ After starting your design review:
 + Share findings with your development team
 + Address identified security findings in your design
 + Update design documents and resubmit if needed
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,7 +29,7 @@ Aurora DSQL supports the following clauses of the `SELECT` command.
 | `INTERSECT` | `ALL` |
 | `EXCEPT` | `ALL` |
 | `OVER` | `RANK ()`, `PARTITION BY` |
-| `FOR UPDATE` |  Specify equality predicates on all primary key columns (for example, `WHERE pk = value`). If you use range, `IN`, `OR`, or other non-equality predicates, the query returns `ERROR: locking clause such as FOR UPDATE can be applied only on tables with equality predicates on the key`. <br /> Specify on a single table query. If you use joins or multiple tables, the query returns `ERROR: locking clause such as FOR UPDATE can be applied on a single table`.  |
+| `FOR { UPDATE \| KEY SHARE }` | Transaction limits apply. For more information, see [Cluster quotas and database limits in Amazon Aurora DSQL](CHAP_quotas.md). To understand how this impacts concurrent transactions, see [Concurrency control in Aurora DSQL](working-with-concurrency-control.md).  |
 
 ## Data Definition Language (DDL)
 <a name="dsql-ddl"></a>
@@ -91,6 +91,7 @@ Aurora DSQL supports the following PostgreSQL TCL commands.
 | `BEGIN` | [`WORK` \| `TRANSACTION`]<br />[`ISOLATION LEVEL REPEATABLE READ`]<br />[`READ WRITE` \| `READ ONLY`] |  |
 | `START TRANSACTION` | [`ISOLATION LEVEL REPEATABLE READ`]<br />[`READ WRITE` \| `READ ONLY`] |  |
 | `ROLLBACK` | [`WORK` \| `TRANSACTION`]<br />[`AND NO CHAIN`] | `ABORT` |
+| `SET CONSTRAINTS` | {`ALL` \| `{{name}} [, ...]`}<br />{`DEFERRED` \| `IMMEDIATE`} |  |
 
 ## Utility commands
 <a name="dsql-utility"></a>
@@ -98,3 +99,7 @@ Aurora DSQL supports the following PostgreSQL TCL commands.
 Aurora DSQL supports the following PostgreSQL utility commands:
 + `EXPLAIN`
 + `ANALYZE` (relation name only)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

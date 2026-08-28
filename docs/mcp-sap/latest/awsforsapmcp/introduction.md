@@ -49,3 +49,7 @@ The following steps describe the flow:
 1.  **Outbound authentication** — The AWS for SAP MCP Server uses outbound authentication to securely connect to SAP BTP Integration Suite API Management through OAuth 2.0.
 
 1.  **SAP backend data access** — The SAP BTP Destination Service routes the request to SAP S/4HANA or SAP ECC to retrieve data through OData APIs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MCP Servers for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mcp-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

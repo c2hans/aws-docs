@@ -35,3 +35,7 @@ These endpoints only need to be created once and are shared by the entire landsc
 
  **Per System:**
 + You should expect around 70,000 API calls a day per instance (with 6 disks attached. At **$0.01** per 1,000 calls, it is approximately **$21.00** per month. The API call number increases or decreases based on the number of disks that are attached.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

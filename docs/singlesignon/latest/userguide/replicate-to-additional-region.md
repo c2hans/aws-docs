@@ -42,7 +42,7 @@ Adding a Region in IAM Identity Center triggers automatic replication of IAM Ide
 
 1.  Choose **Add Region**.
 
-1.  In the **Regions for IAM Identity Center** section, monitor the Region status. Use the **Refresh** button (circular arrow) to check the latest Region status as needed. After the replication completes, proceed to Step 2.
+1.  In the **Regions for IAM Identity Center** section, monitor the Region status. Use the **Refresh** button (circular arrow) to check the latest Region status as needed. After the replication completes, proceed to Step 3.
 
 ------
 #### [ AWS CLI ]
@@ -63,7 +63,7 @@ aws sso-admin describe-region \
     --region-name eu-west-1
 ```
 
- When the Region status is ACTIVE, you can proceed to Step 2.
+ When the Region status is ACTIVE, you can proceed to Step 3.
 
 ------
 
@@ -126,3 +126,7 @@ You cannot promote an additional Region to be the primary or demote the primary 
  **Considerations:**
 +  **Global resource identifiers across enabled Regions** - Users, groups, permission sets, and other resources have the same identifiers across the enabled Regions.
 +  **Replication doesn't affect provisioned IAM roles** - Existing IAM roles provisioned from permission set assignments are used during account sign-in from any enabled Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

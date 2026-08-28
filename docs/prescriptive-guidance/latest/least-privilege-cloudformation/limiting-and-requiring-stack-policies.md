@@ -78,3 +78,7 @@ By including this policy statement in an SCP instead of a permissions boundary, 
 |
 | Note: SCPs and permissions boundaries are permissions guardrails that define the maximum available permissions for IAM principals in an account or organization. These policies do not grant permissions to the IAM principals. If you want to standardize the requirement that all IAM principals in your account or organization assign stack policies, you need to use both permission guardrails and the identity-based policies. |
 | --- |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

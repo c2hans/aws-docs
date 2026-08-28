@@ -81,3 +81,7 @@ Amazon Connect is available directly from the IAM Identity Center application ca
 After creating the domain, in the **Agents for patient engagement** section, choose **Open Application**. This launches the Amazon Connect Health application in your browser. If you don’t have a valid session, you are prompted to sign in with your configured identity provider.
 
 You can bookmark and share the application URL for direct access by authorized users.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connecthealth` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

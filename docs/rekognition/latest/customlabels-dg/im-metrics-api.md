@@ -29,3 +29,7 @@ The aggregate F1 score metric is returned directly by `DescribeProjectVersions`.
 + [Accessing the summary file and evaluation manifest snapshot (SDK)](im-access-summary-evaluation-manifest.md)
 + [Viewing the confusion matrix for a model](im-confusion-matrix.md)
 + [Reference: Training results summary file](im-summary-file.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

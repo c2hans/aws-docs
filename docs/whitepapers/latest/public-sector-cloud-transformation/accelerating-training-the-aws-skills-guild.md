@@ -33,3 +33,7 @@ A mix of the common workshops and training opportunities below will combine to f
 <a name="continuous-upskilling"></a>
 
 Organizations need individuals with cloud skills to help transform their business. As outlined previously in this guide, AWS Training and Certification helps you build and validate your cloud skills so you can get more out of the cloud. After your organization has the foundational elements of training and certifications, your cloud experts should access AWS additional learning opportunities by attending AWS events (such as re:Invent and Summits) and by tracking theAWS daily blog. Staying engaged will enable your cloud teams to stay up to speed on services and features as they roll out to customers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

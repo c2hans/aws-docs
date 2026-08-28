@@ -803,3 +803,7 @@ To specify the metadata options for an instance using CloudFormation, see the [A
 <a name="configure-IMDS-new-instances-tags-in-instance-metadata"></a>
 
 By default, instance tags are not accessible in the instance metadata. For each instance, you must explicitly allow access. If access is allowed, instance tag *keys* must comply with specific character restrictions, otherwise the instance launch will fail. For more information, see [Enable access to tags in instance metadata](work-with-tags-in-IMDS.md#allow-access-to-tags-in-IMDS).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ Before you or the delegate sender can send email to non-verified email addresses
 **Important**
 The AWS account of the delegate sender must be removed from the sandbox before it can be used to send email to or from non-verified addresses.
 If your account is in sandbox, you cannot send to email addresses that are not verified in your account, even if those domains or email addresses have been verified in the identity account
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

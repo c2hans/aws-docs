@@ -139,3 +139,7 @@ When planning a deployment with multiple gateways and SQL servers, consider the 
 + [Integrate an SAP ASE database to Amazon S3 using AWS Storage Gateway](https://aws.amazon.com/blogs/storage/integrate-an-sap-ase-database-to-amazon-s3-using-aws-storage-gateway/)
 + [How one AWS Hero uses AWS Storage Gateway for in-cloud backup](https://aws.amazon.com/blogs/storage/how-one-aws-hero-uses-aws-storage-gateway-for-in-cloud-backup/)
 + [S3 File Gateway cache sizing best practices](https://www.youtube.com/watch?v=-ibL1eEcROI)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

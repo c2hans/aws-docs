@@ -91,3 +91,7 @@ An **instance** is a logical container for all of your App Studio resources. It 
 <a name="concepts-trigger"></a>
 
 A **trigger** determines when, and on what conditions, an automation will run. Some examples of triggers are `On click` for buttons and `On select` for text inputs. The type of component determines the list of available triggers for that component. Triggers are added to [components](#concepts-component) and configured in the application studio.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

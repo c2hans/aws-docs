@@ -15,3 +15,7 @@ Scenarios target an intermediate level of experience to help you understand serv
 + [Create a REST API to track COVID-19 data](cloudformation_example_cross_ApiGatewayDataTracker_section.md)
 + [Creating your first infrastructure stack](cloudformation_example_cloudformation_GettingStarted_021_section.md)
 + [Getting started with managed kubernetes clusters](cloudformation_example_eks_GettingStarted_034_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

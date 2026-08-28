@@ -30,3 +30,7 @@ When you select an instance type with attached NVMe instance stores to host a St
 If an instance has more than 1 NVMe instance store attached to it, Studio creates a striped logical volume that spans all of the local disks attached. Studio then mounts this striped logical volume to the `/mnt/sagemaker-nvme` directory. As a result, the directory storage size is the sum of all NVMe instance store volume sizes attached to the instance.
 
 If the `/mnt/sagemaker-nvme` directory does not exist, verify that the instance type hosting your application has an attached NVMe instance store volume.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

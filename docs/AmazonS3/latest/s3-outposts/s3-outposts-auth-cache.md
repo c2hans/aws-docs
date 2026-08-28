@@ -26,3 +26,7 @@ S3 on Outposts does not cache authentication and authorization data for requests
 You can use AWS CloudTrail to validate that requests were signed with SigV4A. For more information on setting up CloudTrail for S3 on Outposts, see [Monitoring S3 on Outposts with AWS CloudTrail logs](S3OutpostsCloudtrail.md).
 
 After you have configured CloudTrail, you can verify how a request was signed in the `SignatureVersion` field of the CloudTrail logs. Requests that were signed with SigV4A will have a `SignatureVersion` set to `AWS4-ECDSA-P256-SHA256`. Requests that were signed with SigV4 will have `SignatureVersion` set to `AWS4-HMAC-SHA256`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Storage Service (S3). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonS3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

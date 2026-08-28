@@ -105,3 +105,7 @@ When you create your query, keep the following points in mind.
 + To extract data from nested JSON fields, use the Presto `json_extract` or `json_extract_scalar` functions. For more information, see [Extract JSON data from strings](extracting-data-from-JSON.md).
 + Make sure that all characters in the JSON fields are in lower case.
 +  For information about downloading query results, see [Download query results files using the Athena console](saving-query-results.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

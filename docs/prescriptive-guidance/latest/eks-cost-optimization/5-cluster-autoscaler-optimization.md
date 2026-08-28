@@ -38,3 +38,7 @@ For the complete scripts and manifests, see the [04-karpenter-cost-optimization]
 Set `scale-down-utilization-threshold` to 0.5, `scale-down-unneeded-time` to 5m, and use the `least-waste` expander. Monitor node count trends weekly, if it's flat while pod count fluctuates, your scale-down settings are too conservative.
 
 **Key takeaway: **The default Cluster Autoscaler settings are designed for safety, not cost. Tuning scale-down aggressiveness and using least-waste bin-packing can reduce node count by 20–40% without impacting workload availability.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -27,3 +27,7 @@ If you’re unsure what the number of expected VPN connections is for your Clien
 For more information about the rules and limitations for working with client CIDR ranges and target networks, see [Rules and best practices for using AWS Client VPN](what-is-best-practices.md).
 
 For more information about quotas for your Client VPN endpoint, see [AWS Client VPN quotas](limits.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

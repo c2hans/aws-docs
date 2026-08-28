@@ -88,3 +88,7 @@ The tables use the following abbreviations:
 | Duration | Duration of in-scope workload migration (months) | O | R | Medium-high |
 | Parallel cost | Time frame and rate at which as-is costs can be removed during migration | N/A | R | Medium-high |
 | Time frame and rate at which AWS products and services, and other infrastructure costs, are introduced during migration | N/A | R | Medium-high |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

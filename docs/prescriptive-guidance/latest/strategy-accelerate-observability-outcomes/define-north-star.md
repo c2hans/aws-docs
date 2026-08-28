@@ -56,3 +56,7 @@ It is important to establish and enforce escalation mechanisms, alert ownership,
 <a name="skills"></a>
 
 Identify the best way to upskill existing and new team members, reinforce the importance of observability, and foster a culture of continuous improvement. Based on your organization's needs, you can choose between pre-recorded, on-demand training or classroom training that is delivered by observability champions or specialists. Your AWS account team can deliver in-depth, hands-on training sessions such as the [One Observability Workshop](https://catalog.workshops.aws/observability/en-US) or [GameDays](https://aws.amazon.com/gameday/) to coach and improve observability skills and best practices. Additionally, incorporate mechanisms to reinforce best practices and to promote the standards defined by your organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

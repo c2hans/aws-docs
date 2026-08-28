@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/solutions/latest/guidance-for-multi-omic
   <tr><td> <ul><li>  <a href="https://aws.amazon.com/codepipeline/">AWS CodePipeline</a> </li></ul> </td><td> <ul><li> <a href="https://aws.amazon.com/lake-formation/">AWS Lake Formation</a> </li></ul> </td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Multi-Omics and Multi-Modal Data Integration and Analysis on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

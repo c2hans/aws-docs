@@ -15,3 +15,7 @@ The following are the prerequisites for using the network diagram in AWS Migrati
 The network diagram has the following limits:
 + Currently, data ingestion stops after 180 days.
 + The network diagram can visualize up to 1,500 server nodes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Migration Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query migrationhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

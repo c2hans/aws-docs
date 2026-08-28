@@ -15,3 +15,7 @@ Distributed systems rely on communications networks to interconnect components (
 + [REL05-BP05 Set client timeouts](rel_mitigate_interaction_failure_client_timeouts.md)
 + [REL05-BP06 Make systems stateless where possible](rel_mitigate_interaction_failure_stateless.md)
 + [REL05-BP07 Implement emergency levers](rel_mitigate_interaction_failure_emergency_levers.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

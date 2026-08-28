@@ -50,3 +50,7 @@ To view a list of your buckets in the Amazon S3 console, choose **View**. To sel
       If you want to use or create your own role, the role must include the required permissions and trust statements. For information about creating this role, see [Creating a custom service role to export diagnosis reports to S3](create-s3-export-role.md).
 
    1. Choose **Submit**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ Use the following procedure to add a component to a page in App Studio. For info
 1. Drag and drop the desired component from the panel onto the canvas. Alternatively, you can double-click on the component in the panel to automatically add it to the center of the current page.
 
 1. Now that you've added a component, use the right-side **Properties** panel to adjust its settings, such as the data source, layout, and behavior. For detailed information about configuring each component type, see [Components reference](components-reference.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS App Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstudio` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

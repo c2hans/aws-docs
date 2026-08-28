@@ -205,3 +205,7 @@ Time: 1.511 s, estimated 2 s
 There’s no substitute for an end-to-end test and logging to debug a production application. AWS AppSync lets you log errors and full request details using Amazon CloudWatch. Additionally, you can use the AWS AppSync console to test GraphQL queries, mutations, and subscriptions and live stream log data for each request back into the query editor to debug in real time. For subscriptions, the logs display connection-time information.
 
 To perform this, you need to have Amazon CloudWatch logs enabled in advance, as described in [Monitoring and logging](monitoring.md#aws-appsync-monitoring). Next, in the AWS AppSync console, choose the **Queries** tab and then enter a valid GraphQL query. In the lower-right section, click and drag the **Logs** window to open the logs view. At the top of the page, choose the play arrow icon to run your GraphQL query. In a few moments, your full request and response logs for the operation are streamed to this section and you can view then in the console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

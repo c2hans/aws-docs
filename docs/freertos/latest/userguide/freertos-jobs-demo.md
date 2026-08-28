@@ -93,3 +93,7 @@ The [ prvNextJobHandler](https://github.com/aws/amazon-freertos/blob/main/demos/
 <a name="freertos-jobs-demo-functionality-send-update"></a>
 
 The function [ prvSendUpdateForJob()](https://github.com/aws/amazon-freertos/blob/main/demos/jobs_for_aws/jobs_demo.c#L413-L457) calls `Jobs_Update()` from the Jobs library to populate the topic string used in the MQTT publish operation that immediately follows.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

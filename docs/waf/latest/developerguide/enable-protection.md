@@ -27,3 +27,7 @@ At the bottom of the **Enable protection settings** page, select the **Add field
 | `Query string` | Permanently transform the query string according to the specified option (hashing or subsitution). The transformed value will also be reflected in full Logs. |
 | `Single query argument` | Permanently transform the specified query arg value according to the specified option (hashing or subsitution). The transformed value will also be reflected in full Logs. |
 | `Single cookie` | Permanently transform the cookie value according to the specified option (hashing or subsitution). The transformed value will also be reflected in full Logs. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

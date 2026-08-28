@@ -20,7 +20,7 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
 {
   "[Clipping](#cfn-elementalinference-feed-outputconfig-clipping)" : {{ClippingConfig}},
-  "[Cropping](#cfn-elementalinference-feed-outputconfig-cropping)" : {{Json}},
+  "[Cropping](#cfn-elementalinference-feed-outputconfig-cropping)" : {{CroppingConfig}},
   "[Subtitling](#cfn-elementalinference-feed-outputconfig-subtitling)" : {{SubtitlingConfig}}
 }
 ```
@@ -31,7 +31,8 @@ To declare this entity in your CloudFormation template, use the following syntax
 ```
   [Clipping](#cfn-elementalinference-feed-outputconfig-clipping): {{
     ClippingConfig}}
-  [Cropping](#cfn-elementalinference-feed-outputconfig-cropping): {{Json}}
+  [Cropping](#cfn-elementalinference-feed-outputconfig-cropping): {{
+    CroppingConfig}}
   [Subtitling](#cfn-elementalinference-feed-outputconfig-subtitling): {{
     SubtitlingConfig}}
 ```
@@ -49,7 +50,7 @@ Specifies that this is a clipping output.
 Specifies that this is a cropping output. Enter empty brace brackets {} as the value.
 You might be creating this feed in order to pass it to AWS Elemental MediaLive, because you are using MediaLive to implement cropping. In this case, MediaLive will insert the cropping output in the feed that you pass. Don't include the output yourself when you create the feed.
 *Required*: No
-*Type*: Json
+*Type*: [CroppingConfig](aws-properties-elementalinference-feed-croppingconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `Subtitling`  <a name="cfn-elementalinference-feed-outputconfig-subtitling"></a>
@@ -57,3 +58,7 @@ Property description not available.
 *Required*: No
 *Type*: [SubtitlingConfig](aws-properties-elementalinference-feed-subtitlingconfig.md)
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

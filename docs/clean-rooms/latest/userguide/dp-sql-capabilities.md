@@ -44,3 +44,7 @@ AWS Clean Rooms Differential Privacy uses a general-purpose query structure to s
 | Literals | INTERVAL ‘1 SECOND' | INTERVAL '1' SECOND |
 | Row limiting | TOP n | LIMIT n |
 | Join |  +  USING <br />+  NATURAL   | ON clause should explicitly contain a join criterion. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -110,3 +110,7 @@ You can use the **Filter source servers by property or value ** search bar to fi
 Choose the Hostname of any of Source server from the list to open the Server Details view for that server. [Learn more about the Source Server details view. ](server-details.md)
 
 ![Source servers table with server1 hostname highlighted, showing 10 servers with various statuses.](http://docs.aws.amazon.com/drs/latest/userguide/images/launchhistory-serverdetails.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

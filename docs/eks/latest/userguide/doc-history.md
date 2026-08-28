@@ -331,3 +331,7 @@ https://docs.aws.amazon.com/eks/latest/userguide/doc-history.rss
 | [New Amazon EKS optimized AMI patched for `ALAS2-2018-1058`](https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-ami.html) | Amazon EKS has updated the Amazon EKS optimized AMI to address the CVEs that are referenced in [ALAS2-2018-1058](https://alas.aws.amazon.com/AL2/ALAS-2018-1058.html). | August 14, 2018 |
 | [Amazon EKS optimized AMI build scripts](https://docs.aws.amazon.com/eks/latest/userguide/eks-optimized-ami.html) | Amazon EKS has open-sourced the build scripts that are used to build the Amazon EKS optimized AMI. These build scripts are now available on GitHub. | July 10, 2018 |
 | [Amazon EKS initial release](#doc-history) | Initial documentation for service launch | June 5, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

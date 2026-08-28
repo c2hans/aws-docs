@@ -26,3 +26,7 @@ Before you can invoke Lambda functions from an Aurora MySQL DB cluster, make sur
 1. Configure your Aurora MySQL DB cluster to allow outbound connections to Lambda. For instructions, see [Enabling network communication from Amazon Aurora to other AWS services](AuroraMySQL.Integrating.Authorizing.Network.md).
 
     If the cluster is part of an Aurora global database, enable outbound connections for each Aurora cluster in the global database.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -23,3 +23,7 @@ This topic provides instructions for starting a long-lived remote PowerShell ses
    If your instance is not part of the Amazon FSx Active Directory domain, you are prompted to enter user credentials in a pop-up. Enter the credentials of the user that is a member of the FSx Administrators Group. If your instance is joined to the domain, you will not be asked for credentials.
 **Important**
 The Windows Remote PowerShell endpoint might change if you are using self-managed Active Directory configuration and change the service account without proper Active Directory Group Policy settings. For more information, see [Changing the Amazon FSx service account](changing-ad-service-account.md) for more details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

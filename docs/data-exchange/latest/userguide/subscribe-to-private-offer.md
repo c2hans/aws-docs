@@ -38,3 +38,7 @@ Private offers with a multiple payment schedule are not eligible for automatic r
 1. If you accept the terms of the offer, review and accept the acknowledgement, and then choose **Subscribe**.
 **Note**
 Your account is automatically invoiced according to the dates specified in the payment schedule.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Exchange. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query data-exchange` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

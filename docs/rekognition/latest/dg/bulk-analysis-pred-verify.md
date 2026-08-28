@@ -14,3 +14,7 @@ Bulk Analysis can also be leveraged through the [Rekognition console](https://co
 Currently, you can create adapters for use with the Rekognition Custom Moderation feature. By creating an adapter and providing it to the [DetectModerationLabels](https://docs.aws.amazon.com/rekognition/latest/APIReference/API_DetectModerationLabels.html) operation, you can achieve better accuracy for the content moderation tasks related to your specific use case.
 
 For more information about Custom Moderation, see [Enhancing accuracy with Custom Moderation](moderation-custom-moderation.md). See [Bulk analysis and verification](adapters-bulk-analysis.md) for an explanation of how to verify predictions made with Bulk analysis. For a tutorial covering how to use the Rekognition console to verify predictions and create an adapter, see [Custom Moderation adapter tutorial](using-adapters-tutorial.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Rekognition. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query rekognition` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

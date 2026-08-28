@@ -46,3 +46,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-governance-pe
  These capabilities enable enterprise stakeholders to obtain the information they require for informed strategic and tactical decisions about cloud resources. For example, AppRegistry enables senior leadership to get a full view of cloud deployments, the CCoE team to understand the full set of applications and resources provisioned, security team to identify resources involved in security events, and the risk and compliance team to obtain a view of all resources within an application that currently meet specific compliance certifications.
 
  We recommend that the application portfolio vision be a collaborative ongoing assessment by the technology and business leadership. Having an automated approach to assemble the technical metadata allows for accelerated and effective decision making.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

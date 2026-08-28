@@ -63,3 +63,7 @@ For full database and table creation syntax, see the following pages.
 + [CREATE TABLE](create-table.md)
 
 For more information about databases and tables in AWS Glue, see [Databases](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-databases.html) and [Tables](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-tables.html) in the *AWS Glue Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

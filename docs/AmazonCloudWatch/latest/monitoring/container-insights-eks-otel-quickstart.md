@@ -262,3 +262,7 @@ Use the following guidance to resolve common issues when you enable OTel Contain
 1. Verify that the IAM role has the `CloudWatchAgentServerPolicy` policy attached and that the trust policy allows `pods.eks.amazonaws.com`.
 
 1. If you use a VPC endpoint for CloudWatch, confirm that the endpoint policy allows the required actions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

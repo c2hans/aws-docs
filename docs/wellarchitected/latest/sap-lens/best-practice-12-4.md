@@ -21,3 +21,7 @@ A recovery test should also be planned in the event of a significant change in t
 
  You should have a complete set of tests defined to simulate the critical failure scenarios that would result in the need for a recovery. Recovery testing should be planned for during initial implementation and subsequently on a periodic basis or when required.
 +  SAP Lens [Operational Excellence]: [Best Practice 4.3 - Regularly test business continuity plans and fault recovery](best-practice-4-3.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

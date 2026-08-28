@@ -34,3 +34,7 @@ An Amazon RDS patch version includes important bug fixes added to an Amazon RDS 
 **YYYYMMDD**
 The date is when Amazon RDS created the patch version, for example, the 20240210 in 5.7.44-RDS.20240208.R2.20240210 or 11.22-RDS.20240208.R2.20240210.
 An Amazon RDS dated version is a security patch that includes important security fixes added to a minor version after its release. It doesn't include any fixes that might change an engine's behavior.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

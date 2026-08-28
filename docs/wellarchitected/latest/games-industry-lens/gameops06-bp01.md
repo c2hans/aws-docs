@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  **Capture game telemetry data:** Collect data on player activity, system usage, exceptions, and crashes to understand player interactions and identify issues.
 +  **Implement telemetry collection:** Use predefined game features or locations to collect telemetry data and send it to backend services, storing locally if the backend is unreachable.
 +  **Use AWS analytics solutions:** Use AWS services like the Game Analytics Pipeline for scalable data ingestion, storage, and analysis, as well as specialized big data processing and analytics services.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

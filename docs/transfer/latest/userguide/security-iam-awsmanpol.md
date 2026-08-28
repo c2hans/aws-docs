@@ -41,3 +41,7 @@ View details about updates to AWS managed policies for AWS Transfer Family since
 |  Documentation update  | Added sections for each of the Transfer Family managed policies. | January 27, 2022 |
 |  [AWSTransferReadOnlyAccess](#security-iam-awsmanpol-transferreadonlyaccess) – Update to an existing policy  | AWS Transfer Family added new permissions to allow the policy to read AWS Managed Microsoft AD. | September 30, 2021 |
 | AWS Transfer Family started tracking changes | AWS Transfer Family started tracking changes for its AWS managed policies. | June 15, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

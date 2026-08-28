@@ -226,3 +226,7 @@ We recommend caching these keys to avoid fetching them for every token verificat
 + **Issuer (iss):** Verify the issuer matches the AWS account(s) you trust. Maintain a list of trusted issuer URLs.
 
 Whenever possible, you should validate additional AWS-specific claims to implement fine-grained access control in your external service. For example, validate the org\_id claim to restrict access to IAM principals in your AWS Organization, check principal\_tags to enforce attribute-based access control (such as allowing only production environments or specific teams), or verify session context claims like lambda\_source\_function\_arn or ec2\_instance\_source\_vpc to restrict access based on the compute resource. Refer to [Understanding token claims](id_roles_providers_outbound_token_claims.md) for a full list of claims included in the token.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

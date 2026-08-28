@@ -12,3 +12,7 @@ However, raw capability is not enough. Intelligence without integration yields n
 At a foundational level, enterprises must rethink how intelligence is embedded into the fabric of operations. Agents must be designed to integrate with core systems, comply with enterprise policies, and deliver measurable value. They need to operate at scale, across departments, domains, and user contexts. Operationalizing agentic AI is ultimately about use; it's the difference between deploying AI that performs isolated tasks and deploying agents that evolve your business model.
 
 Agentic AI represents a new operating philosophy that requires a fundamental shift in how we approach systems, processes, and people to scale intelligence across the organization. Agents become strategic assets that amplify human capabilities. By integrating agentic AI into their operations, organizations can unlock insights that drive business value, augment human capabilities, and optimize complex workflows.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

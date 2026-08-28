@@ -11,3 +11,7 @@ Amazon Chime SDK sends system messages to all connected clients for events that 
 + `CREATE_CHANNEL_MEMBERSHIP` – This event signifies that a particular `AppInstanceUser` has been added as a member to the channel. The event also contains details of the new `AppInstanceUser`.
 + `DELETE_CHANNEL_MEMBERSHIP` – This event signifies that an `AppInstanceUser` has been removed from the channel. The event also contains the removed `AppInstanceUser` details.
 + `UPDATE_CHANNEL_MEMBERSHIP` – This event only applies to elastic channels. The event signifies that membership balancing transferred an `AppInstanceUser` from one sub-channel to another. The event also contains the `AppInstanceUser` details, plus the information about the sub-channel that the `AppInstanceUser` was transferred to.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

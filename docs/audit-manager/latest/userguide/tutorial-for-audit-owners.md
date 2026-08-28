@@ -110,3 +110,7 @@ Automated evidence is available 24 hours after you create the assessment. Audit 
 + **[Understanding AWS Audit Manager concepts and terminology](concepts.md) – **Provides definitions for the concepts and terminology used in Audit Manager.
 + [Video] Collect Evidence and Manage Audit Data Using AWS Audit Manager – Shows the assessment creation process that's described in this tutorial, and other tasks such as reviewing a control and generating an assessment report.
 [![AWS Videos](http://img.youtube.com/vi/G4yRj4nLwFI/0.jpg)](http://www.youtube.com/watch?v=G4yRj4nLwFI)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

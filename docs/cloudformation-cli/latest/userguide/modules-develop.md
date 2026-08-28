@@ -38,3 +38,7 @@ Follow these basic steps to develop and register a module project.
 When you register your module using `submit`, CloudFormation regenerates your module schema based on the template fragment in your project. You can't specify a schema file directly. To specify a module schema file when registering a module, use `[RegisterType](https://docs.aws.amazon.com/AWSCloudFormation/latest/APIReference/API_RegisterType.html)` in the CloudFormation API.
 
 For information about using modules in CloudFormation templates, see [Create reusable resource configurations with modules](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/modules.html) in the *CloudFormation Users Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudformation-cli` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

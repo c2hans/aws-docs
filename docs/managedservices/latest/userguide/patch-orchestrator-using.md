@@ -88,3 +88,7 @@ Patch failure alerts aren't created for instances that have unsupported operatin
 Patch Orchestrator also generates the following tags that can't be modified:
 + **AMSPatchGroup** – This tag is used for Patch Group tag value generation. You shouldn't modify the AMSPatchGroup. You can modify the "Patch Group" tag if you want to use a custom "Patch Group" value. Patch Orchestrator continues generating a value for AMSPatchGroup based on the tag-keys provided during onboarding, but won't modify the "Patch Group" tag value if it has been set to a custom value by you. To stop using a custom "Patch Group" value, you can set the value of "Patch Group" to match the AMSPatchGroup tag value.
 + **AMSDefaultPatchGroup** – This tag indicates whether an instance is part of the default maintenance window, with a value of either True or False. If an instance's Patch Group is not assigned to a maintenance window this value is set to True.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

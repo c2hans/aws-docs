@@ -17,3 +17,7 @@ This feature requires that you populate the following environment variables in t
 |  **REWRITE\_SUBSTITUTION**  |  `String`  | By default, this parameter is empty. If you overwrite this default value, use a substitution string for custom image requests using the rewrite function. For example, `filters:`. |
 
 You can use any of the Thumbor-supported filters listed in this section with the rewrite feature. The following sections provide examples.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Dynamic Image Transformation for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -59,3 +59,7 @@ To resolve issues with AWS WAF and custom identity providers:
 + Add the Transfer Family service principal (transfer.amazonaws.com) to an allowlist in your AWS WAF rules.
 + If using managed rule groups, review them for rules that might affect API authentication flows and consider disabling those specific rules.
 + Test your identity provider directly using the `TestIdentityProvider` API operation to verify it works correctly without AWS WAF interference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

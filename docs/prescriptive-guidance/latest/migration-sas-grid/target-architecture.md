@@ -23,3 +23,7 @@ While bastion hosts are included for traditional access patterns, consider [AWS 
 + [Amazon EC2 Auto Scaling](https://aws.amazon.com/ec2/autoscaling/) – Ensures that the number of bastion hosts and Remote Desktop gateway instances always matches the capacity you specify during launch.
 + [FSx for Lustre](https://docs.aws.amazon.com/fsx/latest/LustreGuide/what-is.html) – Integrates with Amazon S3 and makes it easy to process cloud datasets using the Lustre high-performance file system.
 + [Amazon S3](https://docs.aws.amazon.com/AmazonS3/latest/gsg/GetStartedWithS3.html) – Enables you to store and retrieve any amount of data at any time, from anywhere on the web.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

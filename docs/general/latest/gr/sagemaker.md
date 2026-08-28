@@ -2172,3 +2172,7 @@ Depending on your activities and resource usage over time, your Amazon SageMaker
 | ml.trn2.48xlarge for spot training job usage | Each supported Region: 0 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/sagemaker/quotas/L-674607CA)  | ml.trn2.48xlarge for spot training job usage |
 | ml.trn2.48xlarge for training job usage | Each supported Region: 0 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/sagemaker/quotas/L-5F11F714)  | ml.trn2.48xlarge for training job usage |
 | ml.trn2.48xlarge for training warm pool usage | Each supported Region: 0 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/sagemaker/quotas/L-94E6B40C)  | ml.trn2.48xlarge for training warm pool usage |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

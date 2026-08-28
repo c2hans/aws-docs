@@ -104,3 +104,7 @@ Send-SSMCommand -DocumentName "AWSEC2-ConfigureSTIG" -InstanceId "{{i-1234567890
 If successful, the command document installs the script and configures your instance. If the command execution failed, view the command output for details about why the execution failed.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ You can also implement the bridge model by using a single PostgreSQL database, w
 ![](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-managed-postgresql/images/guide-img/df8a9c2c-aa88-448f-93ca-fcf7168e9781/images/2d4e1ec5-eb37-4a28-8bd0-3037e467e3c9.png)
 
 The bridge model suffers from the same noisy neighbor and tenant performance isolation concerns as the pool model. It also incurs some additional operational and provisioning overhead by requiring either separate databases or schemas to be provisioned on a per-tenant basis. It requires effective monitoring to respond quickly to tenant performance concerns. It also requires application instrumentation to monitor tenant-specific usage. Overall, the bridge model can be viewed as an alternative to RLS that slightly augments the tenant onboarding effort by requiring new PostgreSQL databases or schemas. As with the silo model, an application or a data access layer will have to maintain a mapping of tenants to their associated PostgreSQL databases or schemas.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

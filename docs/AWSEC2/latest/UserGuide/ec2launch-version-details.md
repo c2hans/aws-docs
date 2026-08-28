@@ -71,3 +71,7 @@ The following table describes the released versions of EC2Launch.
 | 1.2.0 |  +  Update to display information about installed operating system (OS) in EC2 system log. <br />+  Update to display EC2Launch and SSM Agent version in EC2 system log. <br />+  Fixed minor issues.   |  |
 | 1.1.2 |  +  Update to display ENA driver information in EC2 system log. <br />+  Update to exclude Hyper-V from primary NIC filter logic. <br />+  Added AWS KMS server and port into registry key for KMS activation. <br />+  Improved wallpaper setup for multiple users. <br />+  Update to clear routes from persistent store. <br />+  Update to remove the z from Availability Zone in DNS suffix list. <br />+  Update to address an issue with the <runAsLocalSystem> tag in user data.   |  |
 | 1.1.1 | Initial release. |  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

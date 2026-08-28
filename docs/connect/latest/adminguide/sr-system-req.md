@@ -150,3 +150,7 @@ If you use [Rule-based redaction for screen recordings](rule-based-redaction-scr
 + **Local network access policy** – If agents use Chrome version 147 or later, Edge version 147 or later, or Firefox version 154 or later, deploy the browser enterprise policy to allow local network access from the Connect Customer CCP origin to 127.0.0.1:5431. For details, see [Browser enterprise policy for local network access](#browser-enterprise-policy).
 
 Display scaling from 100% through 200% is supported on single-monitor and multi-monitor workstations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

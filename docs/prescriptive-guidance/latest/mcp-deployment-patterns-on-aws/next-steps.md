@@ -20,3 +20,7 @@ Key architectural considerations while migrating from local to remote MCP deploy
 + **Cost Management:** Balance performance against infrastructure costs through appropriate sizing, usage tracking, cost allocation, and reserved capacity for predictable workloads.
 
 The following sections explore specific deployment patterns on AWS including Lambda with API Gateway for serverless deployments, ECS for containerized applications, and EKS for Kubernetes-based orchestration. Each pattern addresses different operational requirements, scaling needs, and team capabilities.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

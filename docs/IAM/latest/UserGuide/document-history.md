@@ -99,3 +99,7 @@ The following table describes major documentation updates for IAM.
 | [Amazon RDS for MySQL and Amazon Aurora databases](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_amazonrds.html) | Database administrators can associate database users with IAM users and roles and thus manage user access to all AWS resources from a single location. | April 24, 2017 |
 | [Service-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_create-service-linked-role.html) | Service-linked roles provide an easier and more secure way to delegate permissions to AWS services. | April 19, 2017 |
 | [Policy summaries](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_understand-policy-summary.html) | New policy summaries make it easier to understand permissions in IAM policies. | March 23, 2017 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -9,17 +9,18 @@ This is the new *CloudFormation Template Reference Guide*. Please update your bo
 
 **Resource types**
 + [AWS::SSM::Association](aws-resource-ssm-association.md)
-+ [AWS::SSM::AutomationExecution](aws-resource-ssm-automationexecution.md)
 + [AWS::SSM::CloudConnector](aws-resource-ssm-cloudconnector.md)
 + [AWS::SSM::Document](aws-resource-ssm-document.md)
 + [AWS::SSM::MaintenanceWindow](aws-resource-ssm-maintenancewindow.md)
 + [AWS::SSM::MaintenanceWindowTarget](aws-resource-ssm-maintenancewindowtarget.md)
 + [AWS::SSM::MaintenanceWindowTask](aws-resource-ssm-maintenancewindowtask.md)
-+ [AWS::SSM::ManagedInstance](aws-resource-ssm-managedinstance.md)
 + [AWS::SSM::OpsItem](aws-resource-ssm-opsitem.md)
 + [AWS::SSM::Parameter](aws-resource-ssm-parameter.md)
 + [AWS::SSM::PatchBaseline](aws-resource-ssm-patchbaseline.md)
 + [AWS::SSM::ResourceDataSync](aws-resource-ssm-resourcedatasync.md)
 + [AWS::SSM::ResourcePolicy](aws-resource-ssm-resourcepolicy.md)
 + [AWS::SSM::ServiceSetting](aws-resource-ssm-servicesetting.md)
-+ [AWS::SSM::Session](aws-resource-ssm-session.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

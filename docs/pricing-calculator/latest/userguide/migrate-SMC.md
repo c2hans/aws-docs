@@ -46,3 +46,7 @@ You might have Simple Monthly Calculator estimates saved previously that won't s
 
 **Note**
 You must generate new AWS Pricing Calculator sharable links if you make changes to your estimate. For more information, see [Sharing your estimate](save-share-estimate.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Pricing Calculator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pricing-calculator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

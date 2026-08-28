@@ -24,3 +24,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
 +  How often is CloudFront caching taking place?
 
  Amazon CloudFront reports can be used alongside other online analytics tools, and we encourage the use of multiple reporting tools. Note that some analytics tools may require you to embed client-side JavaScript in your HTML pages. Amazon CloudFront reporting does not require any changes to your web pages. See the [Amazon CloudFront Developer Guide](https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/reports.html) for more information on reports.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

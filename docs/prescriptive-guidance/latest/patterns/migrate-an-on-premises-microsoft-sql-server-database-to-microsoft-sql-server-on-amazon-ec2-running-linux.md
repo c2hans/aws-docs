@@ -83,3 +83,7 @@ This pattern describes how to migrate from an on-premises Microsoft SQL Server d
 + [How to configure SQL Server 2017 on Amazon Linux and Ubuntu AMIs](https://aws.amazon.com/blogs/database/configuring-sql-server-2017-on-amazon-linux-2-and-ubuntu-amis/)
 + [Installation of SQL tools on a Linux instance](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-setup-tools?view=sql-server-2017#RHEL)
 + [Backup and restoration from an on-premises Microsoft SQL Server database to Microsoft SQL Server on a Linux EC2 instance](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-migrate-restore-database?view=sql-server-2017#create-a-backup-on-windows)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

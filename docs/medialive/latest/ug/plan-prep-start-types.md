@@ -22,3 +22,7 @@ With the follow start type, the following rules apply:
 + You can't create two follow prepare actions that both follow the same reference switch and the same follow point. Therefore:
   + You *cannot* create action 2 and action 4 to both follow the start of action 1.
   + But you can create action 2 to follow the *start* of action 1, and action 4 to follow the *end* of action 1.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

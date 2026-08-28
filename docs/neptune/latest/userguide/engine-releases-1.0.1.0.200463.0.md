@@ -36,3 +36,7 @@ No new instances using this engine version will be created, beginning 2021-04-27
 <a name="engine-releases-200463-defects"></a>
 + Fixed a Gremlin bug where timeout was incorrectly being returned as an internal failure.
 + Fixed a SPARQL bug in which ORDER BY over a partial set of variables caused an Internal Server Error.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

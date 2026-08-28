@@ -90,3 +90,7 @@ This topic explains how to assign EBS Volumes when launching an Amazon EC2 Insta
     **Notes**
    + This is a sample command only, with a focus on block-device-mappings. Review instance requirements seperately. It can be helpful to explore the options in the Console and then generate and adjust the code to replicate the setup for future deployments.
    +  `iam-instance-profile` and `user-data` flags can be used to ensure connectivity via Systems Manager.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

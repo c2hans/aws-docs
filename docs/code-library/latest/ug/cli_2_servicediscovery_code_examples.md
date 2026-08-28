@@ -1356,3 +1356,7 @@ Output:
 ```
 For more information about updating a service, see [Updating an AWS Cloud Map service](https://docs.aws.amazon.com/cloud-map/latest/dg/editing-services.html) and [Shared AWS Cloud Map namespaces](https://docs.aws.amazon.com/cloud-map/latest/dg/sharing-namespaces.html) in the *AWS Cloud Map Developer Guide*.
 +  For API details, see [UpdateService](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/servicediscovery/update-service.html) in *AWS CLI Command Reference*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK Code Examples. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query code-library` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

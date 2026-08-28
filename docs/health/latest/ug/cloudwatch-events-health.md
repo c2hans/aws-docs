@@ -33,3 +33,7 @@ For samples of automation and customized alerts that you can create in response 
 + [Configuring Amazon Q Developer in chat applications to send notifications about events in AWS Health](receive-health-events-with-aws-chatbot-event-bridge.md)
 + [Running operations on EC2 instances automatically in response to events in AWS Health](automating-instance-actions.md)
 + [Reference: AWS Health events Amazon EventBridge schema](aws-health-events-eventbridge-schema.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Health. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query health` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

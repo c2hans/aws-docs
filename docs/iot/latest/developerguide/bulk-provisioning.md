@@ -21,3 +21,7 @@ The following bulk registration-related API operations might be useful:
 **Note**
 Only one bulk registration operation task can run at a time (per account).
 Bulk registration operations call other AWS IoT control plane API operations. These calls might exceed the [AWS IoT Throttling Quotas](https://docs.aws.amazon.com/general/latest/gr/iot-core.html#throttling-limits) in your account and cause throttle errors. Contact [AWS Customer Support](https://console.aws.amazon.com/support/home) to raise your AWS IoT throttling quotas, if necessary.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

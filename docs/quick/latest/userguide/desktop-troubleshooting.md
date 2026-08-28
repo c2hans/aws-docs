@@ -253,3 +253,7 @@ If the preceding troubleshooting steps don't resolve your issue, you can use the
 + **Export diagnostics** and share them with your support team.
 + Contact your organization's IT administrator for enterprise account issues.
 + Visit the Amazon Quick documentation for the latest guidance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

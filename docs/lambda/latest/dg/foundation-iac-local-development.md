@@ -200,3 +200,7 @@ To learn more about working with Lambda functions in Visual Studio Code, see the
 + [Working with AWS Lambda functions](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/building-lambda.html) in the AWS Toolkit for Visual Studio Code User Guide
 + [Working with serverless applications](https://docs.aws.amazon.com/toolkit-for-vscode/latest/userguide/serverless-apps.html) in the AWS Toolkit for Visual Studio Code User Guide
 + [Infrastructure as code](https://docs.aws.amazon.com/lambda/latest/dg/foundation-iac.html) in the Lambda Developer Guide
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

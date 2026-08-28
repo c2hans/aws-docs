@@ -245,3 +245,7 @@ source_url: https://docs.aws.amazon.com/linux/al2023/ug/resource-limiting-system
    Jan 31 23:20:28 ip-1-2-3-4.us-west-2.compute.internal systemd[1]: memcached.service: Main process exited, code=killed, status=9/KILL
    Jan 31 23:20:28 ip-1-2-3-4.us-west-2.compute.internal systemd[1]: memcached.service: Failed with result 'oom-kill'.
    ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

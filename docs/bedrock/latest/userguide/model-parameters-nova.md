@@ -17,3 +17,7 @@ To find the model ID for Amazon Nova models, see [Supported foundation models in
 Foundation models in Amazon Bedrock support input and output modalities, which vary from model to model. To check the modalities that Amazon Nova models support, see [Modality Support](https://docs.aws.amazon.com/nova/latest/userguide/modalities.html). To check which Amazon Bedrock features the Amazon Nova models support, see [Supported foundation models in Amazon Bedrock](models-supported.md). To check the AWS Regions that Amazon Nova models are available in, see [Supported foundation models in Amazon Bedrock](models-supported.md).
 
 When you make inference calls with Amazon Nova models, you must include a prompt for the model. For general information about creating prompts for the models that Amazon Bedrock supports, see [Prompt engineering concepts](prompt-engineering-guidelines.md). For Amazon Nova specific prompt information, see the [Amazon Nova prompt engineering guide](https://docs.aws.amazon.com/nova/latest/userguide/prompting.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -54,3 +54,7 @@ The option available to you is whether to process cryptographically (encrypt and
 For example, suppose that NULL in the `Middle Name` column in the cleartext indicates people without middle names. If you don't encrypt those values, you leak which rows in the encrypted table are used for people without middle names. That information might be an identifying signal for some people in some populations. But if you do cryptographically process NULL values, certain SQL queries act differently. For example, GROUP BY clauses will not group fingerprint NULL values in fingerprint columns together.
 
 For more information about the parameter for this scenario, see [Preserve NULL values parameter](crypto-computing-parameters.md#parameter-preservenulls).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

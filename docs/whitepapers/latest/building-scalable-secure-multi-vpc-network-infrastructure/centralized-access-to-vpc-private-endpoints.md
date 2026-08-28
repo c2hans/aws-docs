@@ -78,3 +78,7 @@ Inter-Region data transfer charges do apply when accessing endpoints across Regi
 +  **Trust data** – The security data that your trust provider sends to Verified Access, such as a user's email address or the group they belong to, is evaluated against your access policies each time an application request is received.
 
  More details can be found in [Verified Access blog posts](https://aws.amazon.com/blogs/networking-and-content-delivery/category/networking-content-delivery/aws-verified-access/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

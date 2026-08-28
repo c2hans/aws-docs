@@ -39,3 +39,7 @@ Perform the following steps to troubleshoot your cluster configuration strategy,
 1. Modify your instance type configurations and create a new cluster with your updated request.
 
 1. If the issue persists, use On-Demand capacity for your primary instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

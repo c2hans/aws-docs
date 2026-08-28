@@ -58,3 +58,7 @@ For time-shifted viewing to work with MediaPackage, ensure the following:
 When using time-shifted viewing, use consistent playback windows across player sessions rather than generating unique start or end times for each viewer. This yields better caching at the CDN and avoids potential throttling.
 
 For complete information about MediaPackage time-shifted viewing configuration and parameters, see [Time-shifted viewing with AWS Elemental MediaPackage](https://docs.aws.amazon.com/mediapackage/latest/ug/time-shifted.html) in the *AWS Elemental MediaPackage User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

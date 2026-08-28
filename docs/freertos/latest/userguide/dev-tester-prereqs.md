@@ -72,3 +72,7 @@ The `AWSIoTDeviceTesterForFreeRTOSFullAccess` managed policy contains the follow
 You might prefer to use the AWS CLI to perform some operations. If you don't have the AWS CLI installed, follow the instructions at [Install the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/installing.html).
 
 Configure the AWS CLI for the AWS Region you want to use by running **aws configure** from a command line. For information about the AWS Regions that support IDT for FreeRTOS, see [AWS Regions and Endpoints](https://docs.aws.amazon.com/general/latest/gr/rande.html#amazon-freertos-ota-control). For more information about **aws configure** see [ Quick configuration with **aws configure**](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html#cli-configure-quickstart-config).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for FreeRTOS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query freertos` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

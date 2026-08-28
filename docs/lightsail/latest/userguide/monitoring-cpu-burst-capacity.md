@@ -19,3 +19,7 @@ The remaining CPU burst capacity graph view can be switched between CPU burst ca
 + 5% CPU utilization in the sustainable zone for a 60-minute period, then it consumes CPU burst capacity minutes at a 5% rate in that period. The instance consumed 3 minutes of CPU burst capacity, and accrued 6 minutes, for a net accrual of 3 minutes.
 
 Alternately, if the instance has accrued 60 minutes of CPU burst capacity, then it can operate at 100% CPU utilization for 60 minutes, at 50% for 120 minutes, or at 25% at 150 minutes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

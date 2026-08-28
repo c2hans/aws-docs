@@ -507,3 +507,7 @@ For information about using the Device Farm API, see [Automating Device Farm](ap
 In the Device Farm console, the clock icon ![Device Farm scheduled a job.](http://docs.aws.amazon.com/devicefarm/latest/developerguide/images/df-run-calendar.png) changes to a result icon such as success ![The test succeeded.](http://docs.aws.amazon.com/devicefarm/latest/developerguide/images/df-run-success.png) when the run is complete. A report for the run appears as soon as tests are complete. For more information, see [Reports in AWS Device Farm](reports.md).
 
 To use the report, follow the instructions in [Viewing test reports in Device Farm](how-to-use-reports.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

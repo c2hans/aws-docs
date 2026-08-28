@@ -92,3 +92,7 @@ Update your multicast session only when required. These updates can cause a grou
 
   1. Specify the parameters **State date**, **Start time**, and **Session timeout**, similar to how you specified these parameters for your first downlink message.
 + To update the session schedule from the API or CLI, use the [`StartMulticastGroupSession`](https://docs.aws.amazon.com/iot-wireless/latest/apireference/API_StartMulticastGroupSession.html) API operation or the [`start-multicast-group-session`](https://docs.aws.amazon.com/cli/latest/reference/iotwireless/start-multicast-group-session) CLI command.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

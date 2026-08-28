@@ -250,3 +250,7 @@ To avoid incurring charges, you should delete any AWS resources that you created
 1. Finally, use the [Organizations console](https://console.aws.amazon.com/organizations/) to delete the OU named **TestCWEOU** that you created in step 5.
 
 That's it. In this tutorial, you configured EventBridge to monitor your organization for changes. You configured a rule that is triggered when users invoke specific AWS Organizations operations. The rule ran a Lambda function that logged the event and sent an email that contains details about the event.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

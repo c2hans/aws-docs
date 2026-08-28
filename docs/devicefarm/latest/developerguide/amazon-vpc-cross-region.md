@@ -208,3 +208,7 @@ You can create test runs that use the VPC endpoint configuration described in [s
 To create a scalable network using more than two VPCs, you can use Transit Gateway to act as a network transit hub to interconnect your VPCs and on-premises networks. To configure a VPC in the same region as Device Farm to use a Transit Gateway, you can follow the [Amazon VPC endpoint services with Device Farm](https://docs.aws.amazon.com/devicefarm/latest/developerguide/amazon-vpc-endpoints.html) guide to target resources in another region based on their private IP addresses.
 
 For more information about Transit Gateway, see [What is a transit gateway?](https://docs.aws.amazon.com/vpc/latest/tgw/what-is-transit-gateway.html) in the *Amazon VPC Transit Gateways Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

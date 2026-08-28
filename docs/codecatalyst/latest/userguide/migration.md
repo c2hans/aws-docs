@@ -445,3 +445,7 @@ Perform the following steps to delete a package repository in CodeCatalyst.
 All other resources stored in Amazon CodeCatalyst will be deleted when your space is deleted. This does not include resources and data created in other AWS or 3P services through the CodeCatalyst console. All resources created in services outside of CodeCatalyst console will need to be deleted through those services to stop accruing charges.
 
 If you have additional questions, please contact us at aws-codecatalyst-service@amazon.com or reach out through the Support Center in the Amazon CodeCatalyst console.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

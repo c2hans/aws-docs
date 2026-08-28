@@ -23,3 +23,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  Use multiple EC2 instance types to improve reliability and scaling options when hosting your game on EC2 or containers.
 +  Configure Amazon EC2 Auto Scaling or GameLift fleets with prioritized instance types and weights to optimize cost and performance.
 +  Test your game on various instance types to verify that performance meets requirements and adjust your hosting strategy accordingly****.****
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

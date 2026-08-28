@@ -113,3 +113,7 @@ DataflowEdges:
   - - arn:aws:groundstation:us-east-2:012345678910:config/dataflow-endpoint/33333333-3333-3333-3333-333333333333
     - arn:aws:groundstation:us-east-2:012345678910:config/antenna-uplink/44444444-4444-4444-4444-444444444444
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

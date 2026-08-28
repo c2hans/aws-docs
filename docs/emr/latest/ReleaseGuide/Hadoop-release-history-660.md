@@ -41,3 +41,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hadoop-release-h
 | Backport | [YARN-7266](https://issues.apache.org/jira/browse/YARN-7266): ATS 1.5 fails to start if RollingLevelDb files are corrupt or missing |
 | Backport | [YARN-9063](https://issues.apache.org/jira/browse/YARN-9063): ATS 1.5 fails to start if RollingLevelDb files are corrupt or missing |
 | Backport | [YARN-9848](https://issues.apache.org/jira/browse/YARN-9848): Revert YARN-4946 (RM should not consider an application as COMPLETED when log aggregation is not in a terminal state). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

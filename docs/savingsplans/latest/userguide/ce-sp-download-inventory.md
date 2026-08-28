@@ -16,3 +16,7 @@ You can download a CSV file with all of the detailed information for Savings Pla
 1. In the **Savings Plans** section, choose **Download CSV**.
 
    You can download all Savings Plans on your **Inventory** page, or select any number of Savings Plans before downloading the CSV file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Savings Plans. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query savingsplans` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ To query your Cost and Usage Reports data, you need to upload the data into your
 1. Choose **Load partitions**.
 
 If you don't upload your partitions, Athena returns either no results or an error message that indicates missing data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing and Cost Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cur` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

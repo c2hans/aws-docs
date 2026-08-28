@@ -41,3 +41,7 @@ We need to think about use cases that are critical in order to bring a good user
 +  Run code without provisioning or managing servers. You pay only for the compute time that you consume.
 +  API Gateway: For creating, deploying, and managing APIs along with serverless function to create serverless applications.
 +  Seamless adoption and upgrades: With serverless, deployments can be versioned, allowing for easy rollbacks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

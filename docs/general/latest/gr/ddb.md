@@ -151,3 +151,7 @@ DAX has the following quotas.
 | Subnet groups | Each supported Region: 50 | No | The maximum number of subnet groups in a single AWS region. |
 | Subnets per subnet group | Each supported Region: 20 | No | The maximum number of subnets per subnet group in a single AWS region. |
 | Total number of nodes | Each supported Region: 50 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/dax/quotas/L-AB139030)  | The maximum total number of nodes per AWS account in a single AWS region. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

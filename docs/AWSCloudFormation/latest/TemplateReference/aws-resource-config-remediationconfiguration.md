@@ -25,7 +25,7 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ConfigRuleName](#cfn-config-remediationconfiguration-configrulename)" : {{String}},
       "[ExecutionControls](#cfn-config-remediationconfiguration-executioncontrols)" : {{ExecutionControls}},
       "[MaximumAutomaticAttempts](#cfn-config-remediationconfiguration-maximumautomaticattempts)" : {{Integer}},
-      "[Parameters](#cfn-config-remediationconfiguration-parameters)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[Parameters](#cfn-config-remediationconfiguration-parameters)" : {{Json}},
       "[ResourceType](#cfn-config-remediationconfiguration-resourcetype)" : {{String}},
       "[RetryAttemptSeconds](#cfn-config-remediationconfiguration-retryattemptseconds)" : {{Integer}},
       "[TargetId](#cfn-config-remediationconfiguration-targetid)" : {{String}},
@@ -46,8 +46,7 @@ Properties:
   [ExecutionControls](#cfn-config-remediationconfiguration-executioncontrols): {{
     ExecutionControls}}
   [MaximumAutomaticAttempts](#cfn-config-remediationconfiguration-maximumautomaticattempts): {{Integer}}
-  [Parameters](#cfn-config-remediationconfiguration-parameters): {{
-    {{Key}}: {{Value}}}}
+  [Parameters](#cfn-config-remediationconfiguration-parameters): {{Json}}
   [ResourceType](#cfn-config-remediationconfiguration-resourcetype): {{String}}
   [RetryAttemptSeconds](#cfn-config-remediationconfiguration-retryattemptseconds): {{Integer}}
   [TargetId](#cfn-config-remediationconfiguration-targetid): {{String}}
@@ -92,7 +91,7 @@ For example, if you specify MaximumAutomaticAttempts as 5 with RetryAttemptSecon
 An object of the RemediationParameterValue. For more information, see [RemediationParameterValue](https://docs.aws.amazon.com/config/latest/APIReference/API_RemediationParameterValue.html).
 The type is a map of strings to RemediationParameterValue.
 *Required*: No
-*Type*: Object of [RemediationParameterValue](aws-properties-config-remediationconfiguration-remediationparametervalue.md)
+*Type*: Json
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
 `ResourceType`  <a name="cfn-config-remediationconfiguration-resourcetype"></a>
@@ -143,9 +142,6 @@ If you make backward incompatible changes to the SSM document, you must call Put
 When you pass the logical ID of this resource to the intrinsic `Ref` function, `Ref` returns the remediation action with the associated SSM document.
 
 For more information about using the `Ref` function, see [`Ref`](https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/intrinsic-function-reference-ref.html).
-
-### Fn::GetAtt
-<a name="aws-resource-config-remediationconfiguration-return-values-fn--getatt"></a>
 
 ## Examples
 <a name="aws-resource-config-remediationconfiguration--examples"></a>
@@ -209,3 +205,7 @@ BasicRemediationConfiguration:
         TargetType: "SSM_DOCUMENT"
         TargetVersion: "1"
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

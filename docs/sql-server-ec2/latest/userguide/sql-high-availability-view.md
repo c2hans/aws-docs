@@ -19,20 +19,47 @@ You can view the Amazon EC2 High Availability for SQL Server (SQL HA) current an
 ------
 #### [ AWS CLI ]
 
-To view the current SQL HA states for Amazon EC2 instances, use the [describe-instance-sql-ha-states](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-sql-ha-states.html) command. This command only shows the current SQL HA status of your onboarded instances.
+To view the current SQL HA states for Amazon EC2 instances, use the [describe-instance-sql-ha-states](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-sql-ha-states.html) command. This command returns only the instances that are currently enabled for SQL HA standby detection. If any instance ID that you specify is not currently enabled, the entire request fails and no states are returned.
 
 ```
 aws ec2 describe-instance-sql-ha-states \
---instance-ids {{instance_ids}}
+--instance-ids {{i-1234567890abcdef0}} {{i-0fedcba0987654321}}
 ```
 
-To view the historical SQL HA states for instances, use the [ describe-instance-sql-ha-history-states](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-sql-ha-history-states.html) command. This command returns your SQL HA instance state transitions in descending time order.
+To view the historical SQL HA states for instances, use the [ describe-instance-sql-ha-history-states](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-instance-sql-ha-history-states.html) command. This command returns your SQL HA instance state transitions in descending time order. Specify `--start-time` and `--end-time` in UTC, using the ISO 8601 format `YYYY-MM-DDThh:mm:ssZ`.
 
 ```
 aws ec2 describe-instance-sql-ha-history-states \
---instance-ids {{instance_ids}} \
---start-time {{period_start_timestamp}} \
---end-time {{period_end_timestamp}}
+--instance-ids {{i-1234567890abcdef0}} {{i-0fedcba0987654321}} \
+--start-time {{2026-08-01T00:00:00Z}} \
+--end-time {{2026-08-24T00:00:00Z}}
 ```
 
+You can run these commands from [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html), which comes with the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-chap-welcome.html) pre-installed.
+
 ------
+#### [ PowerShell ]
+
+To view the current SQL HA states for Amazon EC2 instances, use the [Get-EC2InstanceSqlHaState](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceSqlHaState.html) cmdlet. This cmdlet returns only the instances that are currently enabled for SQL HA standby detection. If any instance ID that you specify is not currently enabled, the entire request fails and no states are returned.
+
+```
+Get-EC2InstanceSqlHaState `
+-InstanceId '{{i-1234567890abcdef0}}','{{i-0fedcba0987654321}}'
+```
+
+To view the historical SQL HA states for instances, use the [ Get-EC2InstanceSqlHaHistoryState](https://docs.aws.amazon.com/powershell/latest/reference/items/Get-EC2InstanceSqlHaHistoryState.html) cmdlet. This cmdlet returns your SQL HA instance state transitions in descending time order. Specify `-StartTime` and `-EndTime` in UTC, using the ISO 8601 format `YYYY-MM-DDThh:mm:ssZ`.
+
+```
+Get-EC2InstanceSqlHaHistoryState `
+-InstanceId '{{i-1234567890abcdef0}}','{{i-0fedcba0987654321}}' `
+-StartTime '{{2026-08-01T00:00:00Z}}' `
+-EndTime '{{2026-08-24T00:00:00Z}}'
+```
+
+You can run these cmdlets from [AWS CloudShell](https://docs.aws.amazon.com/cloudshell/latest/userguide/welcome.html), which comes with [AWS Tools for PowerShell](https://docs.aws.amazon.com/powershell/latest/userguide/pstools-welcome.html) pre-installed. Run `pwsh` to start PowerShell.
+
+------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SQL Server on Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sql-server-ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

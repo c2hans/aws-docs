@@ -28,3 +28,7 @@ Hyperparameters are parameters that are set before a machine learning model begi
 | train\_only\_on\_top\_layer | If `"True"`, only the top classification layer parameters are fine-tuned. If `"False"`, all model parameters are fine-tuned.<br />Valid values: string, either: (`"True"` or `"False"`).<br />Default value: `"False"`. |
 | validation\_split\_ratio | The fraction of training data to randomly split to create validation data. Only used if validation data is not provided through the `validation` channel.<br />Valid values: float, range: [`0.0`, `1.0`].<br />Default value: `0.2`. |
 | warmup\_steps\_fraction | The fraction of the total number of gradient update steps, where the learning rate increases from 0 to the initial learning rate as a warm up. Only used with the `adamw` optimizer.<br />Valid values: float, range: [`0.0`, `1.0`].<br />Default value: `0.1`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

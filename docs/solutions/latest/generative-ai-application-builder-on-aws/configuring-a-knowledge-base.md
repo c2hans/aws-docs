@@ -19,3 +19,7 @@ Amazon Bedrock Knowledge Bases can be backed by a variety of different vector st
 + First [set up your data source](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-ds.html)
 + Then [set up a vector index for your knowledge base in a supported vector store](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-setup.html). Note that this can be skipped if you use the "Quick create a new vector store" option in Bedrock console during knowledge base creation.
 + Finally, you can [create the knowledge base](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-create.html) and [sync your configured data sources](https://docs.aws.amazon.com/bedrock/latest/userguide/knowledge-base-ingest.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Generative AI Application Builder on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -20,3 +20,7 @@ For details about setting up and using Internet Monitor for this use case, see t
 **Identify potential performance and internet connection issues for users on Amazon WorkSpaces**
 Internet Monitor provides you with the IP prefixes and ASN (typically, the internet service provider or ISP) for your users, which can be helpful to diagnose performance and internet connection issues for users to their WorkSpaces. You can also use this data to view your fleet as a whole and monitor your WorkSpaces user connections.
 For more information about how to use Internet Monitor for this use case, see the following blog post: [Using Internet Monitor with Amazon WorkSpaces Personal](https://aws.amazon.com/blogs/desktop-and-application-streaming/utilizing-cloudwatch-internet-monitor-with-amazon-workspaces-personal/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

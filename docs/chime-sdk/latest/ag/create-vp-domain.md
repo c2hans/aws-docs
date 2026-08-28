@@ -29,3 +29,7 @@ You must use a symmetric KMS key to encrypt all your domains. For more informati
 1. (Optional) Under **Tags**, choose **Add new tag**, then enter a key and optional value. Repeat as needed to add more tags.
 
 1. When finished, choose **Create voice profile domain**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

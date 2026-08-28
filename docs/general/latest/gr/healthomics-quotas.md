@@ -94,3 +94,7 @@ The table below shows the default values for each of the HealthOmics quotas.
 | Workflows - Transactions per second (TPS) for the StartRun operation | Each supported Region: 5 |  [Yes](https://console.aws.amazon.com/servicequotas/home/services/omics/quotas/L-24A3B174)  | The maximum transactions per second (TPS) for the StartRun operation in the current AWS region. Quota increase requests for values up to 10 are automatically approved. |
 
 For information about API operation quotas, see [ Quotas](https://docs.aws.amazon.com/omics/latest/dev/quotas.html) in the *HealthOmics User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

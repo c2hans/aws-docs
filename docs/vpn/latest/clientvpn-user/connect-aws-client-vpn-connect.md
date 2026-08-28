@@ -89,7 +89,6 @@ The AWS provided client supports the following OpenVPN directives. For more info
 + cryptoapicert
 + dev
 + dev-type
-+ bb
 + dhcp-option
 + ifconfig-ipv6
 + inactive
@@ -105,7 +104,6 @@ The AWS provided client supports the following OpenVPN directives. For more info
 + proto
 + pull
 + pull-filter
-+ rcvbuf
 + remote
 + remote-cert-tls
 + remote-random-hostname
@@ -115,8 +113,13 @@ The AWS provided client supports the following OpenVPN directives. For more info
 + route-ipv6
 + server-poll-timeout
 + static-challenge
-+ tap-sleep
 + tun-mtu
-+ tun-mtu-extra
 + verb
 + verify-x509-name
+
+**Note**
+Starting with version 6.0, the AWS provided client no longer supports the `rcvbuf`, `tap-sleep`, and `tun-mtu-extra` directives. When you upgrade from an earlier version, these directives are automatically removed from your existing profiles. Do not include them in profiles that you import in version 6.0 or later; otherwise the import fails.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

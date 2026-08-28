@@ -29,3 +29,7 @@ For more information on migrating Oracle databases to Amazon RDS for Oracle, see
 + [Migrating Oracle databases to the AWS Cloud](https://docs.aws.amazon.com/prescriptive-guidance/latest/migration-oracle-database/) (guide)
 + [Migrate an Oracle database from Amazon EC2 to Amazon RDS for Oracle using AWS DMS](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-oracle-database-from-amazon-ec2-to-amazon-rds-for-oracle-using-aws-dms.html) (pattern)
 + [Migrate an on-premises Oracle database to Amazon RDS for Oracle using Oracle Data Pump](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-an-on-premises-oracle-database-to-amazon-rds-for-oracle-using-oracle-data-pump.html) (pattern)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

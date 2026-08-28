@@ -42,3 +42,7 @@ The serialization library name for the Amazon Ion SerDe is `com.amazon.ionhivese
 + [Use CTAS and INSERT INTO to create Amazon Ion tables](ion-serde-using-ctas-and-insert-into-to-create-ion-tables.md)
 + [Amazon Ion SerDe property reference](ion-serde-using-ion-serde-properties.md)
 + [Use path extractors](ion-serde-using-path-extractors.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

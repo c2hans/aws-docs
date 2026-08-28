@@ -19,3 +19,7 @@ When applications need to scale out across multiple hosts, you need to be able t
   +  [**Node affinity**](https://kubernetes.io/docs/concepts/scheduling-eviction/taint-and-toleration/) is a property of pods that attracts them to a set of nodes (either as a preference or a hard requirement). Taints are the opposite; they allow a node to repel a set of pods. Tolerations are applied to pods, and allow (but do not require) the pods to schedule onto nodes with matching taints.
   +  [**Pod Priority**](https://kubernetes.io/docs/concepts/scheduling-eviction/pod-priority-preemption/) indicates the importance of a pod relative to other pods. If a pod can't be scheduled, try to preempt or evict lower priority pods to make scheduling of the pending pod possible.
 +  With **Fargate**, **App Runner**, and **Lambda**, you don't need to manage how to schedule your containers. Compute is provisioned for you automatically as required, based on the resource requirements you have configured. The containers are automatically scheduled on provisioned compute.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

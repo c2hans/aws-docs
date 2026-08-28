@@ -128,3 +128,7 @@ In the AWS SRA, AWS Security Hub CSPM, AWS Security Hub, Amazon GuardDuty, AWS C
 In addition to these services, AWS SRA includes two security-focused services, Amazon Detective and AWS Audit Manager, which support the integration and delegated administrator functionality in AWS Organizations. However, those are not included as part of the recommended services for account baselining. We have seen that these services are best used in the following scenarios:
 + You have a dedicated team or group of resources that perform those digital forensics and IT audit functions. Detective is best utilized by security analyst teams, and Audit Manager is helpful to your internal audit or compliance teams.
 + You want to focus on a core set of tools such as AWS Config, Amazon GuardDuty, AWS Security Hub, and AWS Security Hub CSPM at the start of your project, and then build on these by using services that provide additional capabilities.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

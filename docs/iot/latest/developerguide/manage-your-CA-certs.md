@@ -318,3 +318,7 @@ aws iot update-ca-certificate \
 Use the [**list-certificates-by-ca**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/list-certificates-by-ca.html) command to get a list of all registered client certificates that were signed by the specified CA. For each client certificate signed by the specified CA certificate, use the [**update-certificate**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/update-certificate.html) command to revoke the client certificate to prevent it from being used.
 
 Use the [**describe-ca-certificate**](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/iot/describe-ca-certificate.html) command to see the status of the CA certificate.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

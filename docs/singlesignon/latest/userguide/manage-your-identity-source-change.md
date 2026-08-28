@@ -36,3 +36,7 @@ If you replicated IAM Identity Center to additional Regions and want to change y
 1. Changing your identity source to Active Directory takes you to the **Settings** page. On the **Settings** page, do either of the following:
    + Choose **Start guided setup**. For information about how to complete the guided setup process, see [Guided setup](manage-sync-configurable-ADsync.md#manage-sync-guided-setup-configurable-ADsync).
    + In the **Identity source **section, choose **Actions**, and then choose **Manage sync** to configure your *sync scope*, the list of users and groups to sync.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

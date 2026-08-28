@@ -91,3 +91,7 @@ Once you create a map resource and you're ready to begin building location featu
 
 **Note**
 Most maps front end applications require unauthenticated access to the maps or other features of Amazon Location Service. Depending on your application, you might want to use AWS Signature v4 to authenticate requests, or you can use Amazon Cognito or Amazon Location API keys for unauthenticated use. To learn more about all of these options, see [Grant access to Amazon Location Service](how-to-access.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

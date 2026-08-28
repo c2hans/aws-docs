@@ -65,3 +65,7 @@ View details about updates to AWS managed policies for AWS Entity Resolution sin
 | AWSEntityResolutionConsoleFullAccess – Update to existing policy | Added CustomerProfilesIntegrationAccess to enable integration with Amazon Connect Customer Customer Profiles for automated match result processing. | December 15, 2025 |
 | AWSEntityResolutionConsoleFullAccess – Update to existing policy | Added ADXReadAccess and ManageEventBridgeRules to enable the provider services option in the matching workflow. | October 16, 2023 |
 | AWS Entity Resolution started tracking changes | AWS Entity Resolution started tracking changes for its AWS managed policies. | August 18, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Entity Resolution. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query entityresolution` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -366,3 +366,7 @@ When a job fails or is stopped: The last intermediate checkpoint is promoted to 
 <a name="model-customize-mtrl-model-packages-best-practices"></a>
 + **Monitor checkpoint creation** — use `DescribeJob` to track `ResumableCheckpoint` and `ModelCheckpoint` fields during training
 + **For long jobs, use iterative training** — if a job with many steps might fail, plan to resume from checkpoints rather than restarting from scratch
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

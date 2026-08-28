@@ -51,3 +51,7 @@ The following are the flow configuration settings.
 | multiLineStartPattern | The pattern for identifying the start of a record. A record is made of a line that matches the pattern and any following lines that don't match the pattern. The valid values are regular expressions. By default, each new line in the log files is parsed as one record. |
 | skipHeaderLines | The number of lines for the agent to skip parsing at the beginning of monitored files.<br />Value range: 0 or more<br />Default: 0 (zero) |
 | truncatedRecordTerminator | The string that the agent uses to truncate a parsed record when the record size exceeds the Amazon Data Firehose record size limit. (1,000 KB)<br />Default: `'\n'` (newline) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

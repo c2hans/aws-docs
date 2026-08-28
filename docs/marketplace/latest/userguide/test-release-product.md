@@ -49,3 +49,7 @@ After you have validated your software via Amazon EKS cluster as an add-on, you 
  For more information, see [Update the visibility for an Amazon EKS add-on](https://docs.aws.amazon.com/marketplace-catalog/latest/api-reference/container-products.html#update-delivery-option-visibility) in the *AWS Marketplace Catalog API Reference*.
 
 You can track the request from the **Requests** tab of the **Server products** page in the AWS Marketplace Management Portal. Ingestion times will vary.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

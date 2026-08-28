@@ -108,3 +108,7 @@ The enrollment process consists of these steps:
 + [AWS Control Tower workshop](https://catalog.workshops.aws/control-tower/) (self-paced workshop)
 + [What is AWS Control Tower?](https://www.youtube.com/watch?v=daLvEb44d5Q) (video)
 + [Provisioning Users in AWS Control Tower](https://www.youtube.com/watch?v=y_n9xN5mg1g) (video)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

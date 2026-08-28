@@ -61,3 +61,7 @@ source_url: https://docs.aws.amazon.com/prescriptive-guidance/latest/aws-control
 ### AWS Marketplace solutions
 <a name="aws-marketplace-solutions.66c34824-5154-50b6-947f-515fdff47def"></a>
 + [Solutions for AWS Control Tower in AWS Marketplace](https://aws.amazon.com/marketplace/solutions/control-tower) – AWS Marketplace offers of solutions for integrating third-party software with AWS Control Tower. These solutions help solve key infrastructure and operational use cases, including identity management, security for a multi-account environment, centralized networking, operational intelligence, and security information and event management (SIEM).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

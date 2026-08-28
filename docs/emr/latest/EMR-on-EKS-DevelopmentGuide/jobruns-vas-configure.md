@@ -65,3 +65,7 @@ When you set up vertical autoscaling, you can choose whether to scale CPU and me
 <a name="jobruns-vas-parameters-opt-bounds"></a>
 
 Optionally, you can also set boundaries on the CPU and memory resources. Choose a minimum and maximum value for these resources with the `dynamic.sizing.[memory/cpu].[min/max]` annotations when you enable autoscaling. By default, the resources have no limitations. Set the annotations as string values that represent a Kubernetes resource quantity. For example, set `dynamic.sizing.memory.max` to `4G` to represent 4 GB.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

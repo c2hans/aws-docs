@@ -36,3 +36,7 @@ The reliability pillar focuses on workloads performing their intended functions 
 + Monitor and manage AWS Managed Microsoft AD quotas. For more information, watch the [View and manage quotas for AWS services using service quotas](https://www.youtube.com/watch?v=ZTwfIIf35Wc) video on the AWS YouTube channel.
 + Make sure that a sufficient gap exists between the current quotas and the maximum usage to accommodate failover.
 + Accommodate fixed service quotas and constraints through your architecture.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

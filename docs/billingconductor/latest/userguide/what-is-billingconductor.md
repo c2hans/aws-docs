@@ -117,3 +117,7 @@ For more information, see [Transfer billing management to external accounts](htt
 A billing view helps you manage and control access to cost management data within your AWS environment. With billing views, cost management data is represented as an AWS resource. Through resource-based policies, you can configure what data is accessible to an account when using AWS Billing and Cost Management tools.
 Each billing view is identified by a unique Amazon Resource Name (ARN), which you can reference in identity-based policies to perform specific IAM actions on the cost management data contained in that billing view.
 For more information, see [Controlling cost management data access with Billing View](https://docs.aws.amazon.com/cost-management/latest/userguide/billing-view.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing Conductor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query billingconductor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -17,3 +17,7 @@ Consider redundancy and DR when planning your CA hierarchy. AWS Private CA is av
 1. You can create two root CAs in two different AWS Regions for redundancy and disaster recovery. With this configuration, each root CA operates independently in an AWS Region, protecting you in the event of a single-Region disaster. Creating redundant root CAs does, however, increase operational complexity: You will need to distribute both root CA certificates to the trust stores of browsers and operating systems in your environment.
 
 1. You can also create redundant subordinate CAs to deploy in each of your AWS Regions, and chain them to the same unique root CA in a single AWS Region. The benefit of this approach is that you need to distribute only a single root CA certificate to the trust stores in your environment. The limitation is that you don’t have a redundant root CA in the event of a disaster that affects the AWS Region in which your root CA exists.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Private Certificate Authority. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query privateca` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

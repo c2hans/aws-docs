@@ -84,3 +84,7 @@ You are charged on an hourly basis for each active traffic mirror session. You'l
  [Data transfer charges apply](https://docs.aws.amazon.com/cur/latest/userguide/cur-data-transfers-charges.html). If your traffic mirroring targets are behind a gateway or network load balancer, data processing for the load balancing services also applies.
 
 For information about pricing for Traffic Mirroring, see **Network Analysis** on the [Amazon VPC pricing](https://aws.amazon.com/vpc/pricing/) page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

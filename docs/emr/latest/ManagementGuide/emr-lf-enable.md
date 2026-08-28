@@ -154,3 +154,7 @@ For each IAM role that you plan to use as a runtime role, set the following trus
 For a detailed, end-to-end example, see [Introducing runtime roles for Amazon EMR steps](https://aws.amazon.com/blogs/big-data/introducing-runtime-roles-for-amazon-emr-steps-use-iam-roles-and-aws-lake-formation-for-access-control-with-amazon-emr/).<a name="iceberg-with-lake-formation-spark-catalog-integration-lf-ec2"></a>
 
 For information about how to integrate with Iceberg and AWS Glue Data Catalog for a multi-catalog hierarchy, see [Configure Spark to access a multi-catalog hierarchy in AWS Glue Data Catalog](https://docs.aws.amazon.com/emr/latest/ReleaseGuide/emr-multi-catalog.html#emr-lakehouse-using-spark-access).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

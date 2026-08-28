@@ -132,3 +132,7 @@ After an AWS account has been associated with a VMware Organization as the selle
   <tr><td> Service Level Agreement (SLA) </td><td> The Service Level Agreement (SLA) for VMware Cloud on AWS defines the service components that have an availability commitment as well as their associated targets. <br /> You may be eligible for an SLA credit if one of the service components is unavailable and breaches the target SLA. The amount of the SLA credit you may be eligible for is dependent on the monthly uptime percentage for the affected availability component. <br /> Read and bookmark the <a href="https://www.vmware.com/content/dam/digitalmarketing/vmware/en/pdf/support/vmw-cloud-aws-service-level-agreement.pdf">Service Level Agreement for VMware Cloud on AWS</a>. </td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

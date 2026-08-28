@@ -48,3 +48,7 @@ For more information about when to use Athena, consult the following resources:
 + [Amazon Athena features](https://aws.amazon.com/athena/features/)
 + [Amazon Athena FAQs](https://aws.amazon.com/athena/faqs/)
 + [Amazon Athena blog posts](https://aws.amazon.com/athena/resources/#Blog_posts)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

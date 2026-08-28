@@ -51,7 +51,7 @@ aws mwaa create-cli-token --name {{YOUR_ENVIRONMENT_NAME}}
 ## Using a curl script
 <a name="create-cli-token-curl"></a>
 
-The following example uses a curl script to call the [create-web-login-token](https://docs.aws.amazon.com/cli/latest/reference/mwaa/create-cli-token.html) command in the AWS CLI to invoke the Apache Airflow CLI through an endpoint on the Apache Airflow webserver.
+Use the following curl script to call the [create-cli-token](https://docs.aws.amazon.com/cli/latest/reference/mwaa/create-cli-token.html) command in the AWS CLI to invoke the Apache Airflow CLI through an endpoint on the Apache Airflow webserver and trigger a DAG.
 
 ------
 #### [ Apache Airflow v3 ]
@@ -67,14 +67,14 @@ After copying it to your clipboard, you might need to use **Edit > Paste** from 
    && CLI_RESULTS=$(curl -L --request POST "https://$WEB_SERVER_HOSTNAME/aws_mwaa/cli" \
    --header "Authorization: Bearer $CLI_TOKEN" \
    --header "Content-Type: text/plain" \
-   --data-raw "dags trigger YOUR_DAG_NAME --logical-date $(date -u +"%Y-%m-%dT%H:%M:%SZ")") \
+   --data-raw "dags trigger {{YOUR_DAG_NAME}} --logical-date $(date -u +"%Y-%m-%dT%H:%M:%SZ")") \
    && echo "Output:" \
    && echo $CLI_RESULTS | jq -r '.stdout' | base64 --decode \
    && echo "Errors:" \
    && echo $CLI_RESULTS | jq -r '.stderr' | base64 --decode
    ```
 
-1. Substitute the placeholders in {{red}} for the AWS Region for your environment, `{{YOUR_DAG_NAME}}`, and `{{YOUR_ENVIRONMENT_NAME}}`. For example, a host name for a public network resembles (without the *https://)*:
+1. Replace `{{YOUR_DAG_NAME}}` with the name of your DAG, `{{YOUR_ENVIRONMENT_NAME}}` with your environment name, and the AWS Region with your environment's Region. For example, a host name for a public network resembles (without the *https://)*:
 
    ```
    123456a0-0101-2020-9e11-1b159eec9000.c2.{{us-east-1}}.airflow.amazonaws.com
@@ -110,7 +110,7 @@ After copying it to your clipboard, you might need to use **Edit > Paste** from 
    && echo $CLI_RESULTS | jq -r '.stderr' | base64 --decode
    ```
 
-1. Substitute the placeholders in {{red}} for the AWS Region for your environment, `YOUR_DAG_NAME`, and `YOUR_ENVIRONMENT_NAME`. For example, a host name for a public network resembles (without the *https://)*:
+1. Replace `{{YOUR_DAG_NAME}}` with the name of your DAG, `{{YOUR_ENVIRONMENT_NAME}}` with your environment name, and the AWS Region with your environment's Region. For example, a host name for a public network resembles (without the *https://)*:
 
    ```
    123456a0-0101-2020-9e11-1b159eec9000.c2.{{us-east-1}}.airflow.amazonaws.com
@@ -130,7 +130,7 @@ After copying it to your clipboard, you might need to use **Edit > Paste** from 
 ## Using a bash script
 <a name="create-cli-token-bash"></a>
 
-The following example uses a bash script to call the [create-cli-token](https://docs.aws.amazon.com/cli/latest/reference/mwaa/create-cli-token.html) command in the AWS CLI to create an Apache Airflow CLI token.
+Use the following bash script to call the [create-cli-token](https://docs.aws.amazon.com/cli/latest/reference/mwaa/create-cli-token.html) command in the AWS CLI, create an Apache Airflow CLI token, and trigger a DAG.
 
 ------
 #### [ Apache Airflow v3 ]
@@ -139,13 +139,14 @@ The following example uses a bash script to call the [create-cli-token](https://
 
    ```
    # brew install jq
-   								aws mwaa create-cli-token --name {{YOUR_ENVIRONMENT_NAME}} | export CLI_TOKEN=$(jq -r .CliToken) && curl -L --request POST "https://{{YOUR_HOST_NAME}}/aws_mwaa/cli" \
-   								--header "Authorization: Bearer $CLI_TOKEN" \
-   								--header "Content-Type: text/plain" \
-   								--data-raw "dags trigger {{YOUR_DAG_NAME}} --logical-date $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
+   CLI_TOKEN=$(aws mwaa create-cli-token --name {{YOUR_ENVIRONMENT_NAME}} | jq -r '.CliToken') \
+   && curl -L --request POST "https://{{YOUR_HOST_NAME}}/aws_mwaa/cli" \
+   --header "Authorization: Bearer $CLI_TOKEN" \
+   --header "Content-Type: text/plain" \
+   --data-raw "dags trigger {{YOUR_DAG_NAME}} --logical-date $(date -u +"%Y-%m-%dT%H:%M:%SZ")"
    ```
 
-1. Substitute the placeholders in {{red}} for `YOUR_ENVIRONMENT_NAME`, `YOUR_HOST_NAME`, and `YOUR_DAG_NAME`. For example, a host name for a public network resembles (without the *https://)*:
+1. Replace `{{YOUR_ENVIRONMENT_NAME}}` with your environment name, `{{YOUR_HOST_NAME}}` with your webserver hostname, and `{{YOUR_DAG_NAME}}` with the name of your DAG. For example, a host name for a public network resembles (without the *https://)*:
 
    ```
    123456a0-0101-2020-9e11-1b159eec9000.c2.{{us-east-1}}.airflow.amazonaws.com
@@ -170,13 +171,14 @@ The following example uses a bash script to call the [create-cli-token](https://
 
    ```
    # brew install jq
-   aws mwaa create-cli-token --name {{YOUR_ENVIRONMENT_NAME}} | export CLI_TOKEN=$(jq -r .CliToken) && curl --request POST "https://{{YOUR_HOST_NAME}}/aws_mwaa/cli" \
+   CLI_TOKEN=$(aws mwaa create-cli-token --name {{YOUR_ENVIRONMENT_NAME}} | jq -r '.CliToken') \
+   && curl --request POST "https://{{YOUR_HOST_NAME}}/aws_mwaa/cli" \
    --header "Authorization: Bearer $CLI_TOKEN" \
    --header "Content-Type: text/plain" \
    --data-raw "dags trigger {{YOUR_DAG_NAME}}"
    ```
 
-1. Substitute the placeholders in {{red}} for `YOUR_ENVIRONMENT_NAME`, `YOUR_HOST_NAME`, and `YOUR_DAG_NAME`. For example, a host name for a public network resembles (without the *https://)*:
+1. Replace `{{YOUR_ENVIRONMENT_NAME}}` with your environment name, `{{YOUR_HOST_NAME}}` with your webserver hostname, and `{{YOUR_DAG_NAME}}` with the name of your DAG. For example, a host name for a public network resembles (without the *https://)*:
 
    ```
    123456a0-0101-2020-9e11-1b159eec9000.c2.{{us-east-1}}.airflow.amazonaws.com
@@ -338,3 +340,7 @@ The following example uses the [boto3 create\_cli\_token](https://boto3.amazonaw
 ## What's next?
 <a name="mwaa-cli-next-up"></a>
 + Explore the Amazon MWAA API operation used to create a CLI token at [CreateCliToken](https://docs.aws.amazon.com/mwaa/latest/API/API_CreateCliToken.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Workflows for Apache Airflow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mwaa` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

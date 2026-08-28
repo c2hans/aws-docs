@@ -18,3 +18,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/container-build-l
  **Implement a notification mechanism for updated parent images**
 
  If you’re using a team- or enterprise-wide image, you should implement a notification mechanism based as part of your CI/CD chain to distribute the information about a new parent image to the teams. The teams should build target images with the new parent images and measure the performance impact of the changes by running a proper test suite.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -205,3 +205,7 @@ Running EKS node groups on unsupported Kubernetes versions means those nodes no 
 <a name="eks-9-remediation"></a>
 
 To update an EKS node group, see [Update a managed node group for your cluster](https://docs.aws.amazon.com/eks/latest/userguide/update-managed-node-group.html) in the **Amazon EKS User Guide**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

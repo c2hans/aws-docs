@@ -14,3 +14,7 @@ Between the time a task is submitted and when the auto-approval delay is reached
 We recommend you only reject work when workers are clearly putting in no effort to submit an accurate response to your task. It's inappropriate to penalize a worker for submitting data incorrectly because you provided unclear instructions or they simply made a mistake in interpreting what you wanted them to do. Most workers zealously guard their approval rating and avoid doing work for requesters that they believe are in unfair in how they reject work.
 
 In the event that you reject an assignment but then discover that the issue was not the worker's fault, you can call [`ApproveAssignment`](https://docs.aws.amazon.com/AWSMechTurk/latest/AWSMturkAPI/ApiReference_ApproveAssignmentOperation.html) to reverse the rejection, but only for assignments submitted in the last 30 days that haven't been deleted.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Mechanical Turk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSMechTurk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

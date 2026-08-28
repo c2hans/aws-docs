@@ -230,3 +230,7 @@ If you delete an IAM resource an AWS service proxy relies on, that AWS service p
 1. Select **APIGatewayAWSProxyExecPolicy**, and then choose **Policy Actions**, **Delete**. When prompted, choose **Delete**.
 
  You have reached the end of this walkthrough. For more detailed discussions about creating API as an AWS service proxy, see [Tutorial: Create a REST API as an Amazon S3 proxy](integrating-api-with-aws-services-s3.md), [Tutorial: Create a calculator REST API with two AWS service integrations and one Lambda non-proxy integration](integrating-api-with-aws-services-lambda.md), or [Tutorial: Create a REST API as an Amazon Kinesis proxy](integrating-api-with-aws-services-kinesis.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

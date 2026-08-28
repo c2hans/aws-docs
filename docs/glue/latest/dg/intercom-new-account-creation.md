@@ -40,3 +40,7 @@ To get the **Client Id** and **Client Secret**, you create a developer account.
 1. Choose the **edit** and add redirect URIs. Add the your region-specific Redirect URL as `https://<aws-region>.console.aws.amazon.com/gluestudio/oauth`. For example, add `https://us-east-1.console.aws.amazon.com/gluestudio/oauth for the us-east-1 region`.
 
 1. Get the generated **Client Id** and **Client Secret** in the Basic Information Section.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

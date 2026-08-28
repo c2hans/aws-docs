@@ -131,3 +131,7 @@ When resetting the master user password via the AWS Management Console, CLI, or 
 **Aurora MySQL version 8.4 (starting in 8.4.7):** `rdsproxyadmin` is a protected user. The engine rejects `CREATE`, `DROP`, `RENAME`, `GRANT`, `REVOKE`, and `SET PASSWORD` operations against `rdsproxyadmin` at any host. For the full list of rejected operations and example errors, see [Reserved users in Aurora MySQL](AuroraMySQL.Security.md#AuroraMySQL.Security.ReservedUsers).
 
 If you created an `rdsproxyadmin` user in a version 3 cluster, see [Protected user enforcement for `rdsproxyadmin`](AuroraMySQL.Upgrade-v3-v84-security.md#AuroraMySQL.Upgrade-v3-v84-security.rdsproxyadmin) for pre-upgrade guidance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,3 +43,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/mergers-and-acqui
 +  Standardize infrastructure as code (IaC) and configuration management. Both companies should be using AWS tools and processes like AWS CloudFormation templates, AWS Code Pipeline, and configuration repositories to deploy and manage infrastructure.
 +  Integrate monitoring, logging, and alerting. Unify monitoring systems, logging pipelines, and alerting mechanisms into a single platform that provides visibility across both companies.
 +  Consolidate support models, including Control Tower service control policies (SCPs) by using alerting, and then enforcement. Determine how responsibility for supporting the combined infrastructure and applications are handled across development and operations, site reliability engineering (SRE), and support engineering teams to remove redundancies. The goal is to drive operational efficiency by standardizing across people, processes, and tools as much as possible during integration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

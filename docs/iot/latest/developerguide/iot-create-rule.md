@@ -197,42 +197,6 @@ The following is an example payload file with a rule that pushes data to an Amaz
 }
 ```
 
-The following is an example payload file with a rule that uses the Amazon SageMaker AI `machinelearning_predict` function to republish to a topic if the data in the MQTT payload is classified as a 1.
-
-```
-{
-	"sql": "SELECT * FROM 'iot/test' where machinelearning_predict('my-model', 'arn:aws:iam::123456789012:role/my-iot-aml-role', *).predictedLabel=1",
-	"ruleDisabled": false,
-	"awsIotSqlVersion": "2016-03-23",
-	"actions": [
-		{
-			"republish": {
-				"roleArn": "arn:aws:iam::123456789012:role/my-iot-role",
-				"topic": "my-mqtt-topic"
-			}
-		}
-	]
-}
-```
-
-The following is an example payload file with a rule that publishes messages to a Salesforce IoT Cloud input stream.
-
-```
-{
-	"sql": "expression",
-	"ruleDisabled": false,
-	"awsIotSqlVersion": "2016-03-23",
-	"actions": [
-		{
-			"salesforce": {
-				"token": "ABCDEFGHI123456789abcdefghi123456789",
-				"url": "https://ingestion-cluster-id.my-env.sfdcnow.com/streams/stream-id/connection-id/my-event"
-			}
-		}
-	]
-}
-```
-
 The following is an example payload file with a rule that starts an execution of a Step Functions state machine.
 
 ```
@@ -251,3 +215,7 @@ The following is an example payload file with a rule that starts an execution of
 	]
 }
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

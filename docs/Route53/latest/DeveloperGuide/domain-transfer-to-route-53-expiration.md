@@ -26,3 +26,7 @@ When you transfer a domain that has a geographic TLD (for example, .co.uk) to Ro
 | Americas | **.cl, .com.ar, .com.br** – The expiration date remains the same.<br />**.ca, .co, .mx, .us** – One year is added to the old expiration date. |
 | Asia/Oceania | **.com.au, .com.sg, .jp, .net.au, .sg** – The expiration date remains the same.<br />**.co.nz, .in, .net.nz, .org.nz ** – One year is added to the old expiration date. |
 | Europe | **.ch, .co.uk, .es, .fi, .me.uk, .org.uk, .se** – The expiration date remains the same.<br />**.berlin, .eu, .io, .me, .ruhr, .wien** – One year is added to the old expiration date.<br />**.be, .de, .fr, .it, .nl** – The new expiration date is one year after the date of transfer. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

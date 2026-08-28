@@ -250,3 +250,7 @@ To prevent unnecessary costs, delete the resources that you created as part of t
 <a name="private-api-tutorial-next-steps"></a>
 
 You can automate the creation and cleanup of all AWS resources involved in this tutorial. For a full example CloudFormation template, see [template.yaml](samples/private-api-full-template.zip).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon API Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apigateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,3 +39,7 @@ The date/time format for AWS Data Pipeline is Joda Time, which is a replacement 
 | `DateTime sunday(DateTime myDateTime)` | Creates a DateTime object for the previous Sunday, relative to the specified DateTime. If the specified DateTime is a Sunday, the result is the specified DateTime.<br />Example: `#{sunday(myDateTime)}`<br />Result: `"2011-05-22 17:10:00 UTC"` |
 | `int year(DateTime myDateTime)` | Gets the year of the DateTime value as an integer.<br />Example: `#{year(myDateTime)}`<br />Result: `2011` |
 | `DateTime yesterday(DateTime myDateTime)` | Creates a DateTime object for the previous day, relative to the specified DateTime. The result is the same as minusDays(1).<br />Example: `#{yesterday(myDateTime)}`<br />Result: `"2011-05-23T17:10:00z"` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

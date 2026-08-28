@@ -132,3 +132,7 @@ Follow these best practices when using selective optimization.
 + **Keep optimize blocks self-contained.** Place complete instructions or logical sections inside each block. Splitting mid-sentence is allowed but can produce awkward results.
 + **Use selective optimization when your prompt is already partially tuned.** If you have already tuned your safety constraints or output format instructions, freeze them so the optimizer focuses on the sections that still need work.
 + **Combine with multi-turn patterns.** In a monolithic multi-phase prompt (see [Optimizing multi-turn and staged prompts](advanced-prompt-optimization-advanced-topics.md#advanced-prompt-optimization-multi-turn)), use `<advpo:optimize>` to target only the phase instructions that need improvement while keeping conversation-handling boilerplate frozen.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

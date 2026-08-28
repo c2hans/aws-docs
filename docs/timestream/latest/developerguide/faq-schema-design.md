@@ -17,3 +17,7 @@ InfluxDB 3's columnar Parquet storage and Apache Arrow processing are specifical
 
 **What are the schema design best practices?**
 Key recommendations include: keep tag cardinality manageable, use meaningful measurement names, avoid encoding data in measurement names, use consistent tag naming conventions, and design your schema around your most common query patterns. See [Schema design recommendations for Timestream for InfluxDB 3](influxdb-schema-design-recommendations.md) for detailed guidance, and the [InfluxDB 3 schema design best practices](https://docs.influxdata.com/influxdb3/enterprise/write-data/best-practices/schema-design/) for additional recommendations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Timestream. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query timestream` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

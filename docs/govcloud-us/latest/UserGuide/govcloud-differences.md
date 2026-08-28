@@ -35,3 +35,7 @@ For all AWS GovCloud (US) accounts created after December 15, 2014, AWS CloudTra
 
 Multi-factor authentication
  AWS GovCloud (US) users can use the same FIDO security tokens or virtual authenticator apps as commercial users. However, if instead opting for a TOTP hardware token for MFA, AWS GovCloud (US) users need to use a special device. This is due to the separate authentication stack. For more information, see the list of AWS GovCloud (US)-supported MFA devices on the [Multi-Factor Authentication](https://aws.amazon.com/iam/details/mfa/) page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ If you attempt to delete the last conversational analytics connector without fir
 ![The left menu on the Connect Customer admin website, the conversational analytics option.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-connector-menuitem.png)
 
 1. You're done enabling the conversational analytics connector. Continue to the next step: [associate a conversational analytics connector with a flow](associate-contactlens-integration.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

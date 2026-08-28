@@ -11,3 +11,7 @@ There are three main types of advanced rules:
 + Advanced Protections that help detect suspicious DNS queries based on known threat signatures (for example, DGA) in DNS queries.
 + Advanced DNS threat and content categories that provide more granular control to block DNS queries based on the type of DNS threats (for example, spam, phishing) or web content (for example, adult content, social networking, gambling sites).
 + Partner Managed DNS protections from Palo Alto Networks Advanced DNS Security (requires AWS Marketplace subscription).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

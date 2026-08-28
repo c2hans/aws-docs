@@ -38,3 +38,7 @@ We recommend the following processes to diagnose and resolve problems with the E
   ElastiCache has a discussion forum where you can search for solutions to problems others have experienced along the way. To view the forum, see
 
    [https://forums.aws.amazon.com/](https://forums.aws.amazon.com/) .
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ElastiCache. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonElastiCache` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

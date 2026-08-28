@@ -9,3 +9,7 @@ Before you can use session credentials, you need:
 + A stream group created after July 16, 2026. Stream groups created before this date do not support session credentials. To use this feature, create a new stream group.
 + An IAM role with a name starting with `GameLiftStreams-` (for example, `GameLiftStreams-MyAppRole`), in the same AWS account as your stream group, with a trust policy that allows Amazon GameLift Streams to assume it.
 + An `iam:PassRole` permission in the IAM policy of the principal that calls [StartStreamSession](https://docs.aws.amazon.com/gameliftstreams/latest/apireference/API_StartStreamSession.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftstreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -127,3 +127,7 @@ Balance performance with cost efficiency:
 After optimizing performance with CloudFront features, consider these next steps:
 + Implement multi-Region resilience with MQAR (see [Implement multi-Region resilience for MediaTailor with MQAR](media-quality-resiliency.md))
 + Set up monitoring and troubleshooting (see [Monitor and troubleshoot your CloudFront and MediaTailor integration](monitoring-and-troubleshooting.md))
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

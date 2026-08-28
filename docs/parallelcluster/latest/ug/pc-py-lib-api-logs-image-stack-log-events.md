@@ -34,3 +34,7 @@ The start of the time range for log events, expressed in ISO 8601 format; for ex
 
 **`end_time`**
 The end of the time range for log events, expressed in ISO 8601 format; for example, `'2021-01-01T20:00:00Z'`. Events with a timestamp equal to, or later than, this time are not included.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS ParallelCluster. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query parallelcluster` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ Use this navigation table to quickly find answers to these questions:
 | Know how to plan for quotas for this solution. |  [Quotas](quotas.md)  |
 | Know which AWS Regions support this solution. |  [Supported AWS Regions](supported-aws-regions.md)  |
 | View or download the AWS CloudFormation templates included in this solution to automatically deploy the infrastructure resources (the "stack") for this solution. |  [AWS CloudFormation templates](aws-cloudformation-templates.md)  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

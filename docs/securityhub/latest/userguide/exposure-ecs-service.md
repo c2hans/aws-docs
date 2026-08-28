@@ -32,22 +32,22 @@ A single exposure finding contains issues identified in multiple remediation top
   + [The Amazon ECS service has a container with an End-Of-Life operating system](#end-of-life-operating-system-detected)
   + [The Amazon ECS service has a container with malicious software packages](#malicious-package)
 + [Impact traits for Amazon ECS services](#ecs-impact)
-  + [Full control privileged executor](#full-control-privileged-executor)
-  + [Direct policy escalation](#direct-policy-escalation)
-  + [Trust policy hijack](#trust-policy-hijack)
-  + [Data ransomware](#data-ransomware)
-  + [Remove restriction](#remove-restriction)
-  + [Pass role create executor](#pass-role-create-executor)
-  + [Swap role existing executor](#swap-role-existing-executor)
-  + [Role chain escalation](#role-chain-escalation)
-  + [Inject code privileged executor](#inject-code-privileged-executor)
-  + [Disable audit trail](#disable-audit-trail)
-  + [Access existing executor](#access-existing-executor)
-  + [Credential minting](#credential-minting)
-  + [Pass role data access](#pass-role-data-access)
-  + [Pass role task hijack](#pass-role-task-hijack)
-  + [Single hop data access](#single-hop-data-access)
-  + [Capability advancing](#capability-advancing)
+  + [Has full control privileged executor path](#has-full-control-privileged-executor-path)
+  + [Has direct policy escalation path](#has-direct-policy-escalation-path)
+  + [Has trust policy hijack path](#has-trust-policy-hijack-path)
+  + [Has data ransomware path](#has-data-ransomware-path)
+  + [Has remove restriction path](#has-remove-restriction-path)
+  + [Has pass role create executor path](#has-pass-role-create-executor-path)
+  + [Has swap role existing executor path](#has-swap-role-existing-executor-path)
+  + [Has role chain escalation path](#has-role-chain-escalation-path)
+  + [Has inject code privileged executor path](#has-inject-code-privileged-executor-path)
+  + [Has disable audit trail path](#has-disable-audit-trail-path)
+  + [Has access existing executor path](#has-access-existing-executor-path)
+  + [Has credential minting path](#has-credential-minting-path)
+  + [Has pass role data access path](#has-pass-role-data-access-path)
+  + [Has pass role task hijack path](#has-pass-role-task-hijack-path)
+  + [Has single hop data access path](#has-single-hop-data-access-path)
+  + [Has capability advancing path](#has-capability-advancing-path)
 
 ## Misconfiguration traits for Amazon ECS services
 <a name="ecs-service-misconfiguration"></a>
@@ -239,82 +239,86 @@ Impact traits describe the potential blast radius of an exposure. Security Hub a
 
 Following standard security principles, grant least privilege by providing only the permissions required to perform a task. Replace broad policies with scoped-down policies that grant only the specific actions and resources needed. To identify unused permissions to remove, use IAM Access Analyzer to generate recommendations based on access history. For more information, see [Findings for external and unused access](https://docs.aws.amazon.com/IAM/latest/UserGuide/access-analyzer-findings.html) and [Apply least-privilege permissions](https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html#grant-least-privilege) in the *IAM User Guide*.
 
-### Full control privileged executor
-<a name="full-control-privileged-executor"></a>
+### Has full control privileged executor path
+<a name="has-full-control-privileged-executor-path"></a>
 
 The associated principal can pass a role to and inject code into a compute resource that already has elevated permissions. This allows the principal to gain full control over the executor and perform any action that the executor's role permits.
 
-### Direct policy escalation
-<a name="direct-policy-escalation"></a>
+### Has direct policy escalation path
+<a name="has-direct-policy-escalation-path"></a>
 
 The associated principal can directly modify IAM policies to grant itself additional permissions, escalating its own privileges without intermediate resources.
 
-### Trust policy hijack
-<a name="trust-policy-hijack"></a>
+### Has trust policy hijack path
+<a name="has-trust-policy-hijack-path"></a>
 
 The associated principal can modify the trust policy of an IAM role to allow itself to assume that role, gaining the role's permissions.
 
-### Data ransomware
-<a name="data-ransomware"></a>
+### Has data ransomware path
+<a name="has-data-ransomware-path"></a>
 
 The associated principal can encrypt or delete data in a way that could be used for ransomware, such as encrypting Amazon S3 objects with a customer-managed AWS KMS key and then modifying the key policy.
 
-### Remove restriction
-<a name="remove-restriction"></a>
+### Has remove restriction path
+<a name="has-remove-restriction-path"></a>
 
 The associated principal can remove security restrictions such as permission boundaries, service control policies, or resource-based policy deny statements, expanding what other principals or the resource itself can do.
 
-### Pass role create executor
-<a name="pass-role-create-executor"></a>
+### Has pass role create executor path
+<a name="has-pass-role-create-executor-path"></a>
 
 The associated principal can create a new compute resource (such as a Lambda function or Amazon EC2 instance) and pass it a privileged role, effectively laundering its own permissions through the new resource.
 
-### Swap role existing executor
-<a name="swap-role-existing-executor"></a>
+### Has swap role existing executor path
+<a name="has-swap-role-existing-executor-path"></a>
 
 The associated principal can change the IAM role attached to an existing compute resource, replacing it with a more privileged role to escalate access.
 
-### Role chain escalation
-<a name="role-chain-escalation"></a>
+### Has role chain escalation path
+<a name="has-role-chain-escalation-path"></a>
 
 The associated principal can assume a sequence of roles, where each role in the chain has progressively broader permissions, ultimately reaching a highly privileged role.
 
-### Inject code privileged executor
-<a name="inject-code-privileged-executor"></a>
+### Has inject code privileged executor path
+<a name="has-inject-code-privileged-executor-path"></a>
 
 The associated principal can inject code into a running compute resource that has elevated permissions, executing arbitrary operations under that resource's privileged role.
 
-### Disable audit trail
-<a name="disable-audit-trail"></a>
+### Has disable audit trail path
+<a name="has-disable-audit-trail-path"></a>
 
 The associated principal can disable logging or monitoring services such as CloudTrail, effectively covering its tracks during or after an escalation.
 
-### Access existing executor
-<a name="access-existing-executor"></a>
+### Has access existing executor path
+<a name="has-access-existing-executor-path"></a>
 
 The associated principal can invoke or connect to an existing compute resource and use its attached role to perform privileged actions.
 
-### Credential minting
-<a name="credential-minting"></a>
+### Has credential minting path
+<a name="has-credential-minting-path"></a>
 
 The associated principal can create new long-term credentials (such as access keys or login profiles) for other principals, establishing persistent access paths that survive password rotations or session expirations.
 
-### Pass role data access
-<a name="pass-role-data-access"></a>
+### Has pass role data access path
+<a name="has-pass-role-data-access-path"></a>
 
 The associated principal can create a service resource and pass it a role that has access to sensitive data, gaining indirect access to that data through the new resource.
 
-### Pass role task hijack
-<a name="pass-role-task-hijack"></a>
+### Has pass role task hijack path
+<a name="has-pass-role-task-hijack-path"></a>
 
 The associated principal can pass a role to a scheduled or event-driven task (such as a Lambda function triggered by an event), allowing it to execute arbitrary code with that role's permissions.
 
-### Single hop data access
-<a name="single-hop-data-access"></a>
+### Has single hop data access path
+<a name="has-single-hop-data-access-path"></a>
 
 The associated principal can directly access sensitive data resources (such as Amazon S3 buckets or DynamoDB tables) through its existing permissions, without needing intermediate escalation steps.
 
-### Capability advancing
-<a name="capability-advancing"></a>
+### Has capability advancing path
+<a name="has-capability-advancing-path"></a>
 
 The associated principal has a privilege escalation path that advances its overall capabilities beyond what its directly assigned permissions would suggest. This is a general classification for paths that do not match a more specific pattern.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

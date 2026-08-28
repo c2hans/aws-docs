@@ -65,3 +65,7 @@ Full shutdown represents the final stage in the lifecycle of a service or featur
 | AWS Elemental MediaLive and MediaPackage – Isolated Regions | June 30, 2026 |
 | Amazon Chime SDK – Carrier Voice Focus | June 30, 2026 |
 | Amazon SageMaker AI – Ground Truth Plus | June 30, 2026 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

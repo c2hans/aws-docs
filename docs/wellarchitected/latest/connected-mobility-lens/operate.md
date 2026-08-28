@@ -24,3 +24,7 @@ Responding to disruptions is an important aspect of operating your connected mob
 ** [CMOPS\_BP5.3] Recover the application using runbooks and automation.**
 
  After identifying the issue, refer to the designated runbook for application recovery. Following the runbook instructions, you might need to shift to an alternate Availability Zone (AZ) if an AZ failed, or move to another Region in the case of a Region-wide failure. For example, if a crucial business component, with low RTO and RPO requirements, experiences a disruption, it is essential to refer to the disaster recovery runbook to facilitate the transition of your application.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

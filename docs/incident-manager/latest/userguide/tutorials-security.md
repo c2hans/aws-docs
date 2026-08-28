@@ -68,3 +68,7 @@ For this tutorial, we use a predefined pattern to create the EventBridge rule. T
 1. Review the details of the rule and choose **Create rule**.
 
 Now that you've created this EventBridge rule, security findings that match the attribute values you defined will create incidents in Incident Manager. You can triage, manage, monitor, and create post-incident analysis from these incidents.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query incident-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -400,3 +400,7 @@ For more information, see [OLAP Functions](chap-oracle-aurora-pg.sql.olap.md).
 | 5271 | The `GREATEST` function in converted code might produce different results compared to the source code. |
 | 5272 | The `LEAST` function in converted code might produce different results compared to the source code. |
 | 5622 |  AWS SCT converts the `dbms_transaction.local_transaction_id` function with the parameter set to true. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

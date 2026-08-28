@@ -62,3 +62,7 @@ Drawbacks to testing in the cloud include the following:
 + Testing in the cloud might be less feasible if you don't have high-speed internet access.
 + In regulated industries, enterprise security policies may restrict developer access to cloud environments, making it difficult or impossible to run cloud tests as part of a local development workflow.
 + Environment boundaries are often drawn at the stack level in shared accounts for developer environments, sometimes by using namespace type strategies such as using prefixes to identify ownership. For pre-production and production environments, boundaries are typically drawn at the account level to insulate workloads from noisy neighbor problems, to support least privilege security controls, and to protect sensitive data. The requirement to create isolated environments might place additional burdens on DevOps teams, especially if they're in an enterprise that has strict controls around accounts and infrastructure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

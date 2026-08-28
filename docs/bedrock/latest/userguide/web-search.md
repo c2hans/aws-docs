@@ -287,3 +287,7 @@ Web Search on Amazon Bedrock is integrated with AWS CloudTrail. CloudTrail captu
 <a name="web-search-acceptable-use"></a>
 
 If you use Web Search on Amazon Bedrock, Amazon Bedrock provides Web Search results (“Search Results”) to supported models, which the model may use to generate its response. You are responsible for your use, and any use by your end users, of model outputs that incorporate Search Results. You must retain and display the source citations and links provided in model outputs in any output you surface to your end users. You may not use Web Search to (a) extract, store, or reproduce content from Search Results in bulk, or (b) build or populate a competing index or database.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

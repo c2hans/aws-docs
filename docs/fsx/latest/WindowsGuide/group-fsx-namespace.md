@@ -53,3 +53,7 @@ Windows Server 2008 mode is the latest available option for Namespaces.
 1. From the **New Folder** dialog, choose **OK**. The new folder will be created under the namespace.
 
 1. Repeat the last four steps for other folders you want to share under the same namespace.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

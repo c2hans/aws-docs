@@ -12,3 +12,7 @@ The **AWS CDK service** enables you to work with [AWS Cloud Development Kit (AWS
 AWS CDK apps are composed of building blocks known as *[constructs](https://docs.aws.amazon.com/cdk/latest/guide/constructs.html)*. These building blocks include definitions for your CloudFormation stacks and the AWS resources within them. Using the **AWS CDK Explorer**, you can see the [stacks](https://docs.aws.amazon.com/cdk/latest/guide/stacks.html) and [resources](https://docs.aws.amazon.com/cdk/latest/guide/resources.html) that are defined in AWS CDK *tree view*. You can access this view in the Developer Tools pane within the AWS Cloud9 editor.
 
 This section provides information about how to access and use **AWS CDK ** in the AWS Cloud9 editor.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud9. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloud9` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

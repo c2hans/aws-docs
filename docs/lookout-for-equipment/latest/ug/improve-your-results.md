@@ -15,3 +15,7 @@ To improve the results, consider the following:
 + Are there data integrity issues with your sensor data? For example, do some of the sensors become nonfunctional during the training or evaluation data? In that case, consider dropping those sensors when you run the model. Alternatively, use a training-evaluation split that filters out the non-functional part of the sensor data.
 + Does the sensor data include uninteresting normal-operating modes, such as off-periods or ramp-up or ramp-down periods? Consider filtering those out of the sensor data.
 + We recommend that you avoid using data that contains monotonically increasing values, such as operating hours or mileage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lookout for Equipment. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lookout-for-equipment` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

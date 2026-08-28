@@ -16,3 +16,7 @@ Following, you can find descriptions of how to use the Amazon Quick Sight SDKs t
 + [Filtering data at runtime for Amazon Quick Sight embedded dashboards and visuals](embedding-runtime-filtering.md)
 + [Customize the look and feel of Amazon Quick Sight embedded dashboards and visuals](embedding-runtime-theming.md)
 + [Using the Amazon Quick Sight Embedding SDK to enable shareable links to embedded dashboard views](embedded-view-sharing.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

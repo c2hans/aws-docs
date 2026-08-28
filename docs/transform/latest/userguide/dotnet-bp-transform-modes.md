@@ -43,3 +43,7 @@ Modernization is inherently iterative, and you can expect to iterate with the ag
 <a name="dotnet-bp-code-alongside"></a>
 
 You can make your own code changes as you work with the agent. When stopped at a checkpoint, you can edit code files in Visual Studio. Your changes will be synced when you direct the agent to continue on.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

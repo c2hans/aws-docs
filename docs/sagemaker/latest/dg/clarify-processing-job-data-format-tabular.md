@@ -137,3 +137,7 @@ The configuration analysis for the previous dataset example should set the param
 Because SageMaker Clarify processing jobs don’t support endpoint request or endpoint response in Parquet format, you must specify the data format of the endpoint request by setting the analysis configuration parameter `content_type` to a supported format. For more information, see `content_type` in [Analysis Configuration Files](clarify-processing-job-configure-analysis.md).
 
 The Parquet data must have column names that are formatted as strings. Use the analysis configuration `label` parameter to set the label column name to indicate the location of the ground truth labels. All other columns are designated as features.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

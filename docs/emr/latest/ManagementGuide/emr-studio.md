@@ -47,3 +47,7 @@ This table lists updates to the Amazon EMR managed scaling capability.
 | February 23, 2023 | Added one-click IAM role creation for EMR Serverless job submission. Added ECR lookup for when you select a custom image for EMR Serverless applications. |
 | January 27, 2023 | Headless execution notebooks can track the progress of each cell execution with `%execute_notebook` magic. |
 | January 23, 2023 | Persistent application have been optimized for faster launch times. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

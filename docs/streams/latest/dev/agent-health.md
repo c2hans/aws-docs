@@ -18,3 +18,7 @@ The Kinesis Data Streams agent sends the following metrics to CloudWatch.
 | RecordSendAttempts | The number of records attempted (either first time, or as a retry) in a call to `PutRecords` over the specified time period.<br />Units: Count |
 | RecordSendErrors | The number of records that returned failure status in a call to `PutRecords`, including retries, over the specified time period.<br />Units: Count |
 | ServiceErrors | The number of calls to `PutRecords` that resulted in a service error (other than a throttling error) over the specified time period. <br />Units: Count |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query streams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -199,3 +199,7 @@ For detailed migration guidelines, visit: https://docs.aws.amazon.com/amplify/la
 Cause: Your SSR application was built using a deprecated Node.js version (14.x, 16.x, or 18.x). Effective September 15, 2025, Amplify blocks deployment of SSR applications that use these deprecated versions during the build process.
 
 Update your build environment to use Node.js 20 or later. For detailed instructions, see [I need to update my application's Node.js version](troubleshooting-general.md#update-node-version).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Amplify. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amplify` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

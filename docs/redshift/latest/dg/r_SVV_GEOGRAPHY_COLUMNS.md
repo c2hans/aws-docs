@@ -36,3 +36,7 @@ f_table_catalog  | f_table_schema  | f_table_name  | f_geography_column  | coord
 -----------------+-----------------+---------------+---------------------+-----------------+------+--------------
 dev              | public          | spatial_test  | test_geography      | 2               | 0    | GEOGRAPHY
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

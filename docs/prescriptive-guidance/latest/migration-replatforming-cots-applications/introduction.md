@@ -41,3 +41,7 @@ You should expect the following four outcomes after replatforming COTS and in-ho
 + Lower your overall application ownership costs by removing expensive, non-essential database editions or adopting open-source databases.
 + Reduce operational overhead by using AWS managed databases (for example, [Amazon Relational Database Service (Amazon RDS)](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/Welcome.html) or Aurora) to achieve higher levels of availability and reliability for your applications.
 + Make legacy applications more resilient by adopting cloud-native automation and monitoring features, such as [Amazon CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html) monitoring or Systems Manager-based OS patching.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

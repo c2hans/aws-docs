@@ -44,3 +44,7 @@ The basic steps are outlined here and the procedure is detailed in the AMS User 
 1. Create your CodeDeploy deployment group. CT: ct-2gd0u847qd9d2. Parameters include your CodeDeploy application name, ASG name, the configuration type name, and the service role ARN.
 
 1. Deploy the CodeDeploy application. CT: ct-2edc3sd1sqmrb. Parameters include your CodeDeploy application name, configuration type name, deployment group name, revision type, and the S3 bucket location where the CodeDeploy artifacts are.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

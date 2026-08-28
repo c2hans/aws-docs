@@ -232,3 +232,7 @@ After you've familiarized yourself with Amazon Nova, you can proceed to more adv
 1. Send the model a document and ask about its content. For more information, see [Document understanding](modalities-document.md).
 
 1. Provide the model with tools and make a request with a prompt to see it use the tool. For more information, see [Tool use (function calling) with Amazon Nova](tool-use.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

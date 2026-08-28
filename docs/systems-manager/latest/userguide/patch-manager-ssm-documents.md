@@ -175,3 +175,7 @@ To achieve the same result that you would from this legacy SSM document, use the
 If a reboot is initiated by the system on the node during patch installation (for example, to apply updates to firmware or features like SecureBoot), the patching document execution may be interrupted and marked as failed even though patches were successfully installed. This occurs because the SSM Agent cannot persist and resume the document execution state across external reboots.
 
 To verify patch installation status after a failed execution, run a `Scan` patching operation, then check the patch compliance data in Patch Manager to assess the current compliance state.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

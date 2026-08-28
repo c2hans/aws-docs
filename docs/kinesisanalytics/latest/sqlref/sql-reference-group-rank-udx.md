@@ -128,3 +128,7 @@ The `outputMax` parameter specifies the maximum number of rows to be returned fo
 By default, `group_rank` supports column pass through, as the example illustrates by using `c.*` as the standard shortcut directing pass through of all input columns in the order presented. You can, instead, name a subset using the notation "`c.columName`", allowing you to reorder the columns. However, using specific column names ties the UDX to a specific input set, whereas using the `c.*` notation allows the UDX to handle any input set.
 
 The `rankOutColumnName` parameter specifies the output column used to return ranks. This column name must match the column name specified in the `RETURNS` clause of the `CREATE FUNCTION` statement.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Kinesis Data Analytics. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisanalytics` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

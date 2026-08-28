@@ -18,3 +18,7 @@ Amazon CodeGuru Security provides the following APIs for data retrieval.
 | <a name="codeguru-security-ListFindingsMetrics"></a>[ListFindingsMetrics](https://docs.aws.amazon.com/codeguru/latest/security-api/API_ListFindingsMetrics.html) | Retrieve a list of account level findings metrics within a date range | List |
 | <a name="codeguru-security-ListScans"></a>[ListScans](https://docs.aws.amazon.com/codeguru/latest/security-api/API_ListScans.html) | Retrieve list of CodeGuru Security scan metadata | List |
 | <a name="codeguru-security-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/codeguru/latest/security-api/API_ListTagsForResource.html) | Retrieve a list of tags for a scan name ARN | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

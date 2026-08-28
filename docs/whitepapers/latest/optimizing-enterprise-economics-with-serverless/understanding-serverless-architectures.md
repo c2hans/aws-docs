@@ -60,3 +60,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/optimizing-enterprise
  Nonetheless, serverless architectures truly shine when planning disaster recovery sites, especially when compared to traditional data centers. Running a disaster recovery on-premises often doubles infrastructure costs as many servers are idle waiting for disaster to happen.
 
  Serverless disaster recovery sites can be set up quickly as well. Once serverless architectures have been defined with infrastructure as code using AWS native services such as AWS CloudFormation, an entire architecture can be duplicated in a separate region by running a few commands.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

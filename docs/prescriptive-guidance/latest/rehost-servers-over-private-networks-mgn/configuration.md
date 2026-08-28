@@ -110,3 +110,7 @@ aws-replication-installer-init.py --region <region> --aws-access-key-id <MGN_IAM
 ```
 
 The next section provides an example of configuring MGN, including all required VPC endpoints, and deploying the Agents by using VPC endpoints on Windows and Linux source servers. The section covers both manual and automated deployment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

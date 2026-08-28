@@ -16,3 +16,7 @@ You can limit the access users have to your Amazon S3 bucket by using temporary 
 + [Unloading encrypted data files](t_unloading_encrypted_files.md)
 + [Unloading data in delimited or fixed-width format](t_unloading_fixed_width_data.md)
 + [Reloading unloaded data](t_Reloading_unload_files.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

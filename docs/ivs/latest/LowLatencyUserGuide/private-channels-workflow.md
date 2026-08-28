@@ -29,3 +29,7 @@ The method described above — using a network request from the browser to fetch
 In the sections below, we describe how to make a channel private (enable playback authorization), generate and sign playback tokens, and work with playback key pairs.
 
 **Note:** In the console instructions below, if the left navigation menu is not displaying, you can open it by choosing the hamburger icon in the top left.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

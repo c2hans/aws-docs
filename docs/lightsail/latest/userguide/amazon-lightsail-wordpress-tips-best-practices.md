@@ -210,3 +210,7 @@ Caching reduces how often WordPress has to query the database and run PHP, which
 + **Page caching:** Install a caching plugin such as W3 Total Cache or WP Super Cache to serve static copies of your pages.
 + **Object caching:** If your site has many logged-in users, runs WooCommerce, or uses dynamic content that changes often (such as forums or membership areas), an object cache plugin (such as [Redis Object Cache](https://wordpress.org/plugins/redis-cache/) or APCu-based caches) stores frequently-used query results in memory and reduces repeated database lookups.
 + **A content delivery network (CDN):** Offload static assets (images, CSS, JavaScript) to a CDN such as [Lightsail Distribution](amazon-lightsail-creating-content-delivery-network-distribution.md) so they are not served by your instance.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -15,3 +15,7 @@ Amazon Neptune is a fully managed graph database service that makes it easy to b
 
 **Note**
 For AWS graph database reference architectures and reference deployment architectures, See [Amazon Neptune Resources](https://aws.amazon.com/neptune/developer-resources/). These resources can help inform your choices about graph data models and query languages, and accelerate your development process.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

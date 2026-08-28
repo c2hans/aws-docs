@@ -18,3 +18,7 @@ Amazon Keyspaces provides multi-Region replication if you need to replicate your
 
 **Point-in-time recovery (PITR)**
 PITR helps protect your Amazon Keyspaces tables from accidental write or delete operations by providing you continuous backups of your table data. For more information, see [Point-in-time recovery for Amazon Keyspaces](https://docs.aws.amazon.com/keyspaces/latest/devguide/PointInTimeRecovery.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

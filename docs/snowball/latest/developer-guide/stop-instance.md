@@ -21,3 +21,7 @@ Use the following steps to use AWS OpsHub to stop an Amazon EC2-compatible insta
 
 1. Choose the instance that you want to stop, choose the **Actions** menu, and choose **Stop**. The **State** changes to **Stopping**, and then to **Stopped** when done.
 ![Instance selection and Action menu showing Stop option](http://docs.aws.amazon.com/snowball/latest/developer-guide/images/opshub-stop-ec2-console.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

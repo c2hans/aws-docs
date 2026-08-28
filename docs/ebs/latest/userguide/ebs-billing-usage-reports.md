@@ -71,3 +71,7 @@ The following tables describe the codes for Amazon EBS that appear in your billi
 | Code | Description | Units | Granularity |
 | --- | --- | --- | --- |
 | {{region}}-EBS:FastSnapshotRestore | Data Services Unit-Hours (DSU-Hours) for snapshots enabled for fast snapshot restore (per AZ). | DSU-Hours | Per minute (one-hour minimum) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EBS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ebs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

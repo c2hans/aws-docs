@@ -28,3 +28,7 @@ Operations that could not be completed.
 Operations that experienced a timeout issue or an issue that prevented completion across all hosts. These operations may have flows missing from the results.
 
 1. Choose any completed operation to view the summary of results.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

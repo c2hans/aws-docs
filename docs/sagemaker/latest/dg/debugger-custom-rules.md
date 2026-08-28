@@ -23,3 +23,7 @@ To create Debugger custom rules, you need the following prerequisites.
 + [Prerequisites for creating a custom rule](#debugger-custom-rules-prerequisite)
 + [Use the `smdebug` client library to create a custom rule as a Python script](debugger-custom-rules-python-script.md)
 + [Use the Debugger APIs to run your own custom rules](debugger-custom-rules-python-sdk.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

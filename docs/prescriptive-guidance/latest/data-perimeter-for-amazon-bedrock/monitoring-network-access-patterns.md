@@ -60,3 +60,7 @@ fields @timestamp, srcaddr, dstaddr, dstport
 **Query explanation:**
 + **Traffic volume query** – Identifies sources generating high traffic to Amazon Bedrock endpoints, helping detect potential data exfiltration or misconfigured applications
 + **External connection query** – Detects AI workload subnets connecting to non-private IP addresses, indicating potential network perimeter violations
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

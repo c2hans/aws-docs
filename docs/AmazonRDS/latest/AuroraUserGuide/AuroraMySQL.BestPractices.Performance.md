@@ -232,3 +232,7 @@ While the `time_zone` parameter is dynamic (doesn't require a database server re
 Aurora MySQL limits values for virtual index IDs to 8 bits prevent an issue caused by the undo format in MySQL. If an index exceeds the virtual index ID limit, your cluster might not be available. When an index approaches the virtual index ID limit or when you attempt to create an index above the virtual index ID limit, RDS might throw error code `63955` or warning code `63955`. To address a virtual index ID limit error, we recommend you recreate your database with a logical dump and restore.
 
 For more information about logical dump and restore for Amazon Aurora MySQL, see [ Migrate very large databases to Amazon Aurora MySQL using MyDumper and MyLoader](https://aws.amazon.com/blogs/database/migrate-very-large-databases-to-amazon-aurora-mysql-using-mydumper-and-myloader/). Fore more information about accessing error logs in Amazon Aurora, see [Monitoring Amazon Aurora log files](USER_LogAccess.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

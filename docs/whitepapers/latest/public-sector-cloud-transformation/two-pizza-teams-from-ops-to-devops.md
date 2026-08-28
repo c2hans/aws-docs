@@ -32,3 +32,7 @@ To make the journey to the cloud smooth, efficient, and effective, technology co
 +  Finally, use the Dev Ops strategy of monitoring such as [Amazon CloudWatch](https://aws.amazon.com/cloudwatch/), and solid security practices such as [IAM](https://aws.amazon.com/iam/). With AWS as your partner, your DevOps principles bring agility to your business and IT organization and accelerate your journey to the cloud.
 
    For more information, see the [*Introduction to DevOps on AWS*](https://docs.aws.amazon.com/whitepapers/latest/introduction-devops-aws/introduction-devops-aws.pdf#introduction) whitepaper.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

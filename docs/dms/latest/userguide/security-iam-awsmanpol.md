@@ -423,3 +423,7 @@ View details about updates to AWS managed policies for AWS DMS since this servic
 | [AmazonDMSCloudWatchLogsRole](#security-iam-awsmanpol-AmazonDMSCloudWatchLogsRole) – Change | AWS DMS added the ARN for serverless resources to each of the permissions granted, to allow uploading AWS DMS replication logs from serverless replication configurations to CloudWatch Logs. | May 22, 2023 |
 | [AWSDMSFleetAdvisorServiceRolePolicy](#security-iam-awsmanpol-AWSDMSFleetAdvisorServiceRolePolicy) – New policy | AWS DMS Fleet Advisor added a new policy to allow publishing metric data points to Amazon CloudWatch. | March 6, 2023 |
 | AWS DMS started tracking changes | AWS DMS started tracking changes for its AWS managed policies. | March 6, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

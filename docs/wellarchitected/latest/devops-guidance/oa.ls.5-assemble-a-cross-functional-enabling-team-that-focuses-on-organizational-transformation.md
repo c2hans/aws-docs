@@ -14,3 +14,7 @@ To spread knowledge across the organizations and help individual teams adopt Dev
 **Related information:**
 +  [AWS Well-Architected Operational Excellence Pillar: Separated AEO and IEO with centralized governance and an internal service provider consulting partner](https://docs.aws.amazon.com/wellarchitected/latest/operational-excellence-pillar/separated-aeo-ieo-with-cent-gov-and-partner.html)
 +  [What is a cloud center of excellence and why should your organization create one?](https://aws.amazon.com/blogs/publicsector/what-is-cloud-center-excellence-why-should-your-organization-create-one/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

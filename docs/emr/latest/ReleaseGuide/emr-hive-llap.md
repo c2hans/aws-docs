@@ -120,3 +120,7 @@ yarn app -flex llap0 -component llap -1
 ```
 
 For more information, see [Flex a component of a service](https://hadoop.apache.org/docs/r3.2.1/hadoop-yarn/hadoop-yarn-site/yarn-service/QuickStart.html#Flex_a_component_of_a_service).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -22,3 +22,7 @@ This section shows you how to integrate Support in ServiceNow.
 | **Interval**, in minutes, between the execution of full synchronization | Default: **1440 min**  |
 | SQS Name created by the CloudFormation stack. The same name must be used for all accounts | Default: AwsServiceManagementConnectorForSupportQueue |
 | (Advanced mode) Enable an intermediate table (SMC Support Case table) to synchronize data to and from Support. Use caution; enabling an intermediate table replaces the default Incident table. | Default: False |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Service Management Connector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query smc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

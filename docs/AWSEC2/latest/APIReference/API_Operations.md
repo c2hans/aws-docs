@@ -756,6 +756,7 @@ The following actions are supported:
 +  [ReleaseIpamPoolAllocation](API_ReleaseIpamPoolAllocation.md)
 +  [ReplaceIamInstanceProfileAssociation](API_ReplaceIamInstanceProfileAssociation.md)
 +  [ReplaceImageCriteriaInAllowedImagesSettings](API_ReplaceImageCriteriaInAllowedImagesSettings.md)
++  [ReplaceImageInstanceTypeSpecification](API_ReplaceImageInstanceTypeSpecification.md)
 +  [ReplaceNetworkAclAssociation](API_ReplaceNetworkAclAssociation.md)
 +  [ReplaceNetworkAclEntry](API_ReplaceNetworkAclEntry.md)
 +  [ReplaceRoute](API_ReplaceRoute.md)
@@ -806,3 +807,7 @@ The following actions are supported:
 +  [UpdateSecurityGroupRuleDescriptionsEgress](API_UpdateSecurityGroupRuleDescriptionsEgress.md)
 +  [UpdateSecurityGroupRuleDescriptionsIngress](API_UpdateSecurityGroupRuleDescriptionsIngress.md)
 +  [WithdrawByoipCidr](API_WithdrawByoipCidr.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

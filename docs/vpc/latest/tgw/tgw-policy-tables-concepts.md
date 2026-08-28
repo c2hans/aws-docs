@@ -91,3 +91,7 @@ When traffic enters a transit gateway attachment that is associated with a polic
 + **Configure protocol before port ranges.** Protocol selection determines whether port range fields are active. Port ranges are only supported for TCP (`6`) and UDP (`17`). For ICMPv4 (`1`), GRE (`47`), or Any (`*`), port ranges are automatically set to Any (`*`).
 + **Account for system-managed entries.** If your policy table includes system-managed entries (for example, from AWS Cloud WAN), your customer-managed rules apply only to traffic that does not match a system-managed entry. Review all entries using `GetTransitGatewayPolicyTableEntries` to confirm your expected evaluation order.
 + **Verify your configuration with the API.** After making changes, use `GetTransitGatewayPolicyTableEntries` to view all entries in both entry types and confirm that rule numbers and match conditions are correct before routing live traffic.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

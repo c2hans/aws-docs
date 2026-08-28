@@ -54,3 +54,7 @@ With Neptune ML, you can use machine learning models that fall in two general ca
 + **Knowledge-Graph Embedding (KGE) models**   –   These include `TransE`, `DistMult`, and `RotatE` models. They only work for link prediction.
 
 **User defined models**   –   Neptune ML also lets you provide your own custom model implementation for all the types of tasks listed above. You can use the [Neptune ML toolkit](https://github.com/awslabs/neptuneml-toolkit) to develop and test your python-based custom model implementation before using the Neptune ML training API with your model. See [Custom models in Neptune ML](machine-learning-custom-models.md) for details about how to structure and organize your implementation so that it's compatible with Neptune ML's training infrastructure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

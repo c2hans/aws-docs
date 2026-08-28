@@ -48,3 +48,7 @@ The table below represents significant documentation milestones. We fix errors a
 | [ECS Patterns improvements](#doc-history) | Updates to reflect improvements to ECS Patterns module. | September 17, 2019 |
 | [New tagging API](#doc-history) | Update tagging topic to use new API. | August 13, 2019 |
 | [General availability](#doc-history) | The AWS CDK Developer Guide is released. | July 11, 2019 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

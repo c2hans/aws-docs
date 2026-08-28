@@ -39,3 +39,7 @@ Trend Micro Endpoint Protection (EPS) is the primary component within AMS for op
      1. Sign out of the account and confirm with your Cloud Architect that the procedure has been completed.
 
 At this point AMS deploys infrastructure into your AMS environment and the environment is ready for you to use once you have connected your network and set up your access.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

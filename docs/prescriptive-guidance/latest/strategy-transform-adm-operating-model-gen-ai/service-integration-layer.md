@@ -40,3 +40,7 @@ The following table provides the current state and a corresponding future state 
 The previous examples of future state with generative AI for the [business layer](business-layer.md) and the service integration layer are just the beginning. As AI technologies evolve, expect more innovative solutions to emerge. These advancements can help to enhance proactive, efficient, and automated IT service management and governance.
 
 Use these examples as a starting point for your organization's approach to generative AI transformation. Consider these examples along with your ADM operating model changes. Continuously evaluate new AI applications that align with your organization's needs and goals. This forward-thinking approach can help to keep you at the forefront of IT service management (ITSM) innovation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

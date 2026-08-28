@@ -15,3 +15,7 @@ Scenarios target an intermediate level of experience to help you understand serv
 + [Get started with a basic content distribution network](example_cloudfront_GettingStarted_section.md)
 + [Getting started with web application firewalls](example_wafv2_GettingStarted_052_section.md)
 + [Sign URLs and cookies](example_cloudfront_CloudFrontUtilities_section.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -13,3 +13,7 @@ MediaTailor can also use vended logs for flexibility in log delivery and volume 
 + [Permissions for Amazon CloudWatch Logs](monitoring-permissions.md)
 + ["As Run" log for AWS Elemental MediaTailor Channel Assembly](as-run-log.md)
 + [AWS Elemental MediaTailor ADS log analysis in Amazon CloudWatch Logs Insights](monitor-cloudwatch-ads-logs.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

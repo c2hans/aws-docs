@@ -22,3 +22,7 @@ Be aware that some Neptune features are not built for multi-tenancy scenarios. T
 + Having an API that maps the authentication token to a tenant ID and injects this filter into the query
 
 This guidance also applies to giving customers direct access to features such as [Neptune graph notebooks](https://docs.aws.amazon.com/neptune/latest/userguide/graph-notebooks.html), [Neptune graph-explorer](https://docs.aws.amazon.com/neptune/latest/userguide/visualization-graph-explorer.html), or [Neptune Streams](https://docs.aws.amazon.com/neptune/latest/userguide/streams.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

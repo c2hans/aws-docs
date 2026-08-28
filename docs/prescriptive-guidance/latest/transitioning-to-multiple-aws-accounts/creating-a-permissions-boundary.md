@@ -96,3 +96,7 @@ The following image shows how an authorized user, such as a developer, can creat
 ![User creating an IAM role that is subject to the permissions boundary in the member account.](http://docs.aws.amazon.com/prescriptive-guidance/latest/transitioning-to-multiple-aws-accounts/images/guide-img/b35f7443-fbaf-4ce8-bb48-32b6441d573f/images/76bc8b9a-7847-465b-92f4-9427011a76fb.png)
 
 The **CloudFormationRole** role has the [AdministratorAccess](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies_job-functions.html#jf_administrator) managed policy attached, but due to the **PermissionsBoundary** IAM policy, the **CloudFormationRole** role's effective permissions become equal to the **PermissionsBoundary** policy. The **PermissionsBoundary** policy references itself when allowing the `iam:CreateRole` action, which ensures that roles can be created only if the permissions boundary is applied.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

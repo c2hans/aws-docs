@@ -233,3 +233,7 @@ You cannot queue up more than 64 Neptune bulk load jobs at a time.
 Neptune only keeps track of the most recent 1,024 bulk load jobs.
 
 Neptune only stores the last 10,000 error details per job.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Neptune. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query neptune` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

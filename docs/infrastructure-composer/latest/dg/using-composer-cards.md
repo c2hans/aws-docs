@@ -17,3 +17,7 @@ This topic applies to using cards from the Infrastructure Composer Console, the 
 **Topics**
 + [Enhanced component cards in Infrastructure Composer](using-composer-cards-use-enhanced-component.md)
 + [Standard cards in Infrastructure Composer](using-composer-standard-cards.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

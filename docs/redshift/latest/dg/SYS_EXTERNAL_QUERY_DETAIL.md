@@ -71,3 +71,7 @@ Sample output.
    763251 |          0 | 2022-02-15 22:32:23.312448 | 2022-02-15 22:32:24.036023 |                3 |                    3 |             3 |         38203 |        2683414 |            |
    763254 |          0 | 2022-02-15 22:32:40.17103  | 2022-02-15 22:32:40.839313 |                3 |                    3 |             3 |         38203 |        2683414 |            |
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

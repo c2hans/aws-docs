@@ -12,3 +12,7 @@ Retrieval-Augmented Generation (RAG) complements long-term memory by providing a
 The key distinction lies in their complementary roles: long-term memory handles personal context and session continuity, while RAG provides current factual knowledge and domain expertise. Long-term memory answers "who is the user and what happened before," while RAG answers "what do trusted sources say currently." This separation allows agents to maintain personal relationships with users while ensuring access to accurate, authoritative information.
 
 By using long-memory and RAG together, your agent can deliver both personalized experiences through remembered context and reliable information through real- time knowledge retrieval. To your customers, your agents are both familiar and factually grounded.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -39,3 +39,7 @@ If you have already configured a Amazon Q Business application environment to us
 Note that disabling Q Apps in the web experience will not automatically revoke this grant because administrators can still list and delete Q Apps in the admin console, even though Q Apps web experience is disabled. But if you delete the Amazon Q Business application environment altogether, then both grants to `qbusiness` and `qapps` shall be revoked.
 
 You can always revoke access to both the grants or remove access to the customer managed key at any time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazonq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

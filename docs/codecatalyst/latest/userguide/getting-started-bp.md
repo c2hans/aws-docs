@@ -156,3 +156,7 @@ You can publish a preview version of your custom blueprint to your space if you 
 Navigate to the `Enable version {{[version number]}} at:` link provided to enable your custom blueprint. This link is provided when running the `yarn` command in [Step 3: Preview a custom blueprint](#getting-started-publish-bp).
 
 After creating, developing, previewing, and publishing your custom blueprint, you can publish and add the final blueprint version to your space's blueprints catalog. For more information, see [Publishing a custom blueprint to a space](publish-bp.md) and [Adding a custom blueprint to a space blueprints catalog](add-bp.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

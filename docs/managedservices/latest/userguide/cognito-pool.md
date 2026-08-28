@@ -35,3 +35,7 @@ You won't be able to create the Amazon Cognito user pools. That action requires 
 **Q: What are the prerequisites or dependencies to using Amazon Cognito user pools in my AMS account?**
 
 If you want to use Amazon SES to send messages and notifications by email to your user pools, they should already activate the Amazon SES service in the account, and already validate the email address that should be used in the "FROM" and "REPLY-TO" fields of the sent emails. For more information about validating email address using Amazon SES, see [Verifying Email Addresses in Amazon SES](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/verify-email-addresses.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

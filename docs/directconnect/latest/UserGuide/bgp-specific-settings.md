@@ -38,3 +38,7 @@ When configuring your virtual interface you must set an ASN. Direct Connect supp
 
 **Note**
 For public virtual interfaces, your ASN must be either a private ASN or a public ASN already registered and allowed for use with the virtual interface.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Direct Connect. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directconnect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

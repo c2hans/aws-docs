@@ -48,3 +48,7 @@ Required: Yes if **--ssl** is specified. Otherwise, this should not be used.
 **--cmu {{<ENI IP address>}}**
 Combines the `-a` and `-m` parameters into one parameter. Adds the specified HSM elastic network interface (ENI) IP address to AWS CloudHSM configuration files and then updates the CMU configuration file. Enter an IP address from any HSM in the cluster. For Client SDK 3.2.1 and earlier, see [Using CMU with Client SDK 3.2.1 and Earlier](understand-users.md#downlevel-cmu).
 Required: Yes
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

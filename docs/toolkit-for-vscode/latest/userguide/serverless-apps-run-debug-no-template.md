@@ -48,3 +48,7 @@ The Lambda handlers that are detected by CodeLens depend on the language and run
    If you're satisfied with the debug configuration, to start debugging, choose the green play arrow next to **RUN**.
 
    When the debugging sessions starts, the **DEBUG CONSOLE** panel shows debugging output and displays any values that the Lambda function returns. (When debugging AWS SAM applications, **AWS Toolkit** is selected as the **Output** channel in the **Output** panel.)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -62,13 +62,21 @@ The object prefix is an optional addition to the S3 object key that organizes yo
                     "Effect": "Allow",
                     "Principal": {"Service": "compute-optimizer.amazonaws.com"},
                     "Action": "s3:GetBucketAcl",
-                    "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}"
+                    "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}",
+                    "Condition": {
+                        "StringEquals": {"aws:SourceAccount": "{{myAccountID}}"},
+                        "ArnLike": {"aws:SourceArn": "arn:aws:compute-optimizer:{{myRegion}}:{{myAccountID}}:*"}
+                    }
                 },
                 {
                     "Effect": "Allow",
                     "Principal": {"Service": "compute-optimizer.amazonaws.com"},
                     "Action": "s3:GetBucketPolicyStatus",
-                    "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}"
+                    "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}",
+                    "Condition": {
+                        "StringEquals": {"aws:SourceAccount": "{{myAccountID}}"},
+                        "ArnLike": {"aws:SourceArn": "arn:aws:compute-optimizer:{{myRegion}}:{{myAccountID}}:*"}
+                    }
                 },
                 {
                     "Effect": "Allow",
@@ -110,13 +118,21 @@ If you don't want to specify an object prefix, use the following policy.
                     "Effect": "Allow",
                     "Principal": {"Service": "compute-optimizer.amazonaws.com"},
                     "Action": "s3:GetBucketAcl",
-                    "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}"
+                    "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}",
+                    "Condition": {
+                        "StringEquals": {"aws:SourceAccount": "{{myAccountID}}"},
+                        "ArnLike": {"aws:SourceArn": "arn:aws:compute-optimizer:{{myRegion}}:{{myAccountID}}:*"}
+                    }
                 },
                 {
                     "Effect": "Allow",
                     "Principal": {"Service": "compute-optimizer.amazonaws.com"},
                     "Action": "s3:GetBucketPolicyStatus",
-                    "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}"
+                    "Resource": "arn:aws:s3:::{{amzn-s3-demo-bucket}}",
+                    "Condition": {
+                        "StringEquals": {"aws:SourceAccount": "{{myAccountID}}"},
+                        "ArnLike": {"aws:SourceArn": "arn:aws:compute-optimizer:{{myRegion}}:{{myAccountID}}:*"}
+                    }
                 },
                 {
                     "Effect": "Allow",
@@ -150,3 +166,7 @@ Additionally, you can specify S3 buckets that are encrypted with either Amazon S
 + Troubleshooting — [Troubleshooting failed export jobs](troubleshooting-account-opt-in.md#troubleshooting-exports)
 + [Exported files](exported-files.md)
 + [Amazon Simple Storage Service User Guide](https://docs.aws.amazon.com/AmazonS3/latest/userguide/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

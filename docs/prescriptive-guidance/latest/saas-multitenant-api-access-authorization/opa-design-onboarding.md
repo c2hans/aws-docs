@@ -18,3 +18,7 @@ Alternatively, in a pooled SaaS model, if all tenants make authorization decisio
 ![OPA document model for generalized rules](http://docs.aws.amazon.com/prescriptive-guidance/latest/saas-multitenant-api-access-authorization/images/guide-img/1bc1ddcc-09fb-41af-88b1-99d94e62fa1f/images/922303d5-7628-4a1d-b7d2-222f84618d5e.png)
 
 Where possible, we recommend that you use generalized OPA rules and packages (or virtual documents) to make decisions based on standardized data provided by each tenant. This approach makes OPA easily scalable, because you only change the data provided to OPA for each tenant―not how OPA provides its decisions through its rules. It is only necessary to introduce a rules-per-tenant model when individual tenants require unique decisions or have to provide OPA with different data than other tenants.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

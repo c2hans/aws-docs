@@ -204,3 +204,7 @@ Using the **Visual editor**, the same policies display as follows:
 ![Cloud WAN attachment policy using the Visaul editor.](http://docs.aws.amazon.com/network-manager/latest/cloudwan/images/cloudwan-attachment-policy.png)
 
 Note that if an attachment policy uses the **and** condition, each condition appears on a separate row of the editor. In this example, since rule number 300 uses **region** and **attachment-type** conditions, each of those conditions appear on separate rows.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

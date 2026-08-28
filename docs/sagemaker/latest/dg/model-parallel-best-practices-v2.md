@@ -84,3 +84,7 @@ To run a SageMaker training job with model parallelism, make sure you have the r
 + To use Amazon S3 as a data channel, add [`AmazonS3FullAccess`](https://console.aws.amazon.com/iam/home#/policies/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAmazonS3FullAccess).
 + To use Docker, build your own container, and push it to Amazon ECR, add [`AmazonEC2ContainerRegistryFullAccess`](https://console.aws.amazon.com/iam/home#/policies/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAmazonEC2ContainerRegistryFullAccess).
 + To have a full access to use the entire suite of SageMaker AI features, add [`AmazonSageMakerFullAccess`](https://console.aws.amazon.com/iam/home#/policies/iam/home#/policies/arn%3Aaws%3Aiam%3A%3Aaws%3Apolicy%2FAmazonSageMakerFullAccess).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

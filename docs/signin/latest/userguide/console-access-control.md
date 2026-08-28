@@ -533,3 +533,7 @@ aws signin get-resource-policy --region <your-region>
 + **Cached sign-in page:** Browsers may cache the sign-in page. Clear your browser cache or use an incognito window to test policy changes.
 + **Conflicting statements:** If you have multiple permission statements, confirm they do not conflict with each other. Use `get-resource-policy` to review the consolidated policy.
 + **VPC endpoint policies:** AWS Sign-In policies work in conjunction with VPC endpoint policies. Both must allow the desired access.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sign-In. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query signin` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

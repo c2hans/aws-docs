@@ -13,3 +13,7 @@ If you have selected **Show Toolbar**, you can also enable or disable the microp
 
 **Note**
 If the video icon doesn't display in the WorkSpaces Applications toolbar, contact your WorkSpaces Applications administrator. Your administrator might need to perform additional configuration tasks, as described in [Real-Time Audio-Video](feature-support-real-time-av.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -28,3 +28,7 @@ The following rules apply:
 + The IPSec encryption and key exchange work the same way for both IPv4 and IPv6 VPNs.
 
 For more information about creating a VPN connection with IPv6 support, see [Create a VPN connection](SetUpVPNConnections.md#vpn-create-vpn-connection) in Get Started with Site-to-Site VPN.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

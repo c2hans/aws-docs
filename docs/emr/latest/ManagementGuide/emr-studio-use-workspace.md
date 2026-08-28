@@ -19,3 +19,7 @@ If you had EMR notebooks in the old Amazon EMR console, you can find them in the
    + **Launch with options** – Launch your Workspace with custom options. You can choose to launch in either Jupyter or JupyterLab, attach your Workspace to an EMR cluster, and select your security groups.
 **Note**
 Only one user can open and work in a Workspace at a time. If you select a Workspace that is already in use, EMR Studio displays a notification when you try to open it. The **User** column on the **Workspaces** page shows the user working in the Workspace.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

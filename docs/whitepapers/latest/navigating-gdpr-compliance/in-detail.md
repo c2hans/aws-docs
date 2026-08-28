@@ -135,3 +135,7 @@ As step 6 of its DTA, a customer must monitor, on an ongoing basis, developments
 **Additional resources**
 
 To help customers further understand how they can address their data protection requirements, customers are encouraged to read the risk, compliance and security whitepapers, best practices, checklists and guidance published on the AWS website. This material can be found at [http://aws.amazon.com/compliance](http://aws.amazon.com/compliance) and [http://aws.amazon.com/security.](http://aws.amazon.com/security)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

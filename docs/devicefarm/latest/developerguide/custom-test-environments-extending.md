@@ -14,3 +14,7 @@ For more information about custom test environments in Device Farm, see [Custom 
 + [Speeding up Appium-based tests in Device Farm through desired capabilities](custom-test-environments-extending-speed.md)
 + [Using Webhooks and other APIs after your tests run in Device Farm](custom-test-environments-extending-webhooks.md)
 + [Adding extra files to your test package in Device Farm](custom-test-environments-extending-files.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

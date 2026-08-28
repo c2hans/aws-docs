@@ -242,3 +242,7 @@ The following table provides version history updates for STIG settings that are 
 | 9/18/2020 | Windows Server 2019 STIG V1 R 5<br />Windows Server 2016 STIG V1 R 12<br />Windows Server 2012 R2 STIG Version 2 R 19<br />Internet Explorer 11 STIG V1 R 19<br />Microsoft .NET Framework 4.0 STIG V1 R 9<br />WindowsFirewall STIG V1 R 7 | Updated versions and applied STIGs. |
 | 12/6/2019 | Server 2012 R2 Core and Base V2 R17<br />Server 2016 Core and Base V1 R11<br />Internet Explorer 11 V1 R18<br />Microsoft .NET Framework 4.0 V1 R9<br />WindowsFirewall STIG V1 R17 | Updated versions and applied STIGs. |
 | 9/17/2019 | Server 2012 R2 Core and Base V2 R16<br />Server 2016 Core and Base V1 R9<br />Server 2019 Core and Base V1 R2<br />Internet Explorer 11 V1 R17<br />Microsoft .NET Framework 4.0 V1 R8 | Initial release. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

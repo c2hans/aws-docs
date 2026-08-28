@@ -25,3 +25,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/build-static-websites
  Most of the delay in accessing pages over the internet is due to the round-trip delay associated with establishing TCP connections (the infamous three-way TCP handshake) and the time it takes for TCP packets to be delivered across long Internet distances).
 
  In short, serve content as close to your users as possible. In our example, users in the USA will experience relatively fast page load times, whereas users in Singapore will experience slower page loads. Ideally, for the users in Singapore, you would want to serve up content as close to Singapore as possible.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

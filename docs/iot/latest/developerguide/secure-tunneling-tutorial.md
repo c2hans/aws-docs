@@ -43,3 +43,7 @@ This tutorial shows how to open a tunnel from the details page of a thing that y
 + [Tutorials in this section](#tunneling-tutorial-overview)
 + [Open a tunnel and start SSH session to remote device](secure-tunneling-tutorial-open-tunnel.md)
 + [Open a tunnel for remote device and use browser-based SSH](tunneling-tutorial-existing-tunnel.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -45,3 +45,7 @@ The following table describes important changes to the documentation for CodeArt
 | [Add information about creating Amazon S3 gateway endpoints to use CodeArtifact with Amazon VPC](#history) |  Added information about creating Amazon S3 gateway endpoints with the Amazon EC2 AWS CLI command. This documentation also contains information about the specific permissions that CodeArtifact requires to be used with Amazon VPC environments. See [Create the Amazon S3 gateway endpoint](create-s3-gateway-endpoint.md).  | August 12, 2020 |
 | [Publishing Maven artifacts with curl and publishing third-party Maven artifacts](#history) |  Added guidance for [Publishing with curl](maven-curl.md) and [Publish third-party artifacts](maven-mvn.md#publishing-third-party-artifacts).  | August 10, 2020 |
 | [General Availability (GA) release](#history) |  Initial version of the CodeArtifact User Guide.  | June 10, 2020 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

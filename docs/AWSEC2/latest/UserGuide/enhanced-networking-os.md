@@ -32,3 +32,7 @@ Set-NetAdapterRss -Name NIC3 -BaseProcessorGroup 1 -BaseProcessorNumber 16 -MaxP
 Note that these settings are persistent for each network adapter. If an instance is resized to one with a different number of vCPUs, you should reevaluate the RSS configuration for each enabled elastic network interface. The complete Microsoft documentation for the cmdlet can be found here: [Set-NetAdapterRss](https://learn.microsoft.com/en-us/powershell/module/netadapter/set-netadapterrss).
 
 Special note for SQL workloads: We also recommend that you review your I/O thread affinity settings along with your elastic network interface RSS configuration to minimize I/O and network contention for the same CPUs. See [Server configuration: affinity mask](https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/affinity-mask-server-configuration-option).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

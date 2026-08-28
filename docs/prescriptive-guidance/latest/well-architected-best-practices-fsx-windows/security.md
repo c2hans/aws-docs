@@ -43,3 +43,7 @@ To automate event notifications and responses you can use one or more of the fol
 ## Protect data in transit and at rest
 <a name="protect-data-in-transit-and-at-rest"></a>
 + To enforce in-transit encryption, limit access to only those clients that support the Server Message Block (SMB) protocol version 3.0 and higher. For more information, see [Managing encryption in transit](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/manage-encrypt-in-transit.html) in the Amazon FSx documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

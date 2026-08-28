@@ -42,3 +42,7 @@ The following list shows the sequence in which Amazon Quick Sight applies the co
    1. **Other category calculations**: This type of calculation only exists in line/bar/pie/donut charts. For more information, see [Display limits](working-with-visual-types.md#display-limits).
 
    1. **Totals and subtotals**: Totals and Subtotals are calculated in donut charts (only totals), tables (only totals) and pivot tables, if requested.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

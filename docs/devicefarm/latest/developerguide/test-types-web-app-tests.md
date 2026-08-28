@@ -17,3 +17,7 @@ Metering refers to billing for devices. By default, Device Farm devices are mete
 If you choose to start a run with a device pool that contains both iOS and Android devices, there are rules for metered and unmetered devices. For example, if you have five unmetered Android devices and five unmetered iOS devices, your web test runs use your unmetered devices.
 
  Here is another example: Suppose you have five unmetered Android devices and 0 unmetered iOS devices. If you select only Android devices for your web run, your unmetered devices are used. If you select both Android and iOS devices for your web run, the billing method is metered, and your unmetered devices are not used.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

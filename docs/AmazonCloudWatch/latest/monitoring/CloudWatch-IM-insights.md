@@ -30,3 +30,7 @@ To learn more about IP-based routing in Route 53, see [IP-based routing](https:
 By viewing the suggestions on this page, you can start planning configurations and deployments that can improve performance for your clients. Note that you might see a dash (-) instead of a value in a column, when data is not available to display.
 
 For more information about TTFB calculations, see [AWS calculations for TTFB and latency](CloudWatch-IM-inside-internet-monitor.md#IMCalculateTTFB). To review a specific example of how to improve performance, see [ Using Internet Monitor for a Better Gaming Experience](https://aws.amazon.com/blogs/gametech/using-cloudwatch-internet-monitor-for-a-better-gaming-experience/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

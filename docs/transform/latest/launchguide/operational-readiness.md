@@ -57,3 +57,7 @@ Optimize your AWS usage to ensure cost efficiency without compromising on perfor
 + **AWS Compute Optimizer**: This is a service that analyzes the configuration of your AWS resources and their utilization metrics to provide you with right-sizing recommendations. Use Compute Optimizer to right-size workloads according to your workload preferences through artificial intelligence and machine-learning-based analytics to reduce costs by up to 25%. By using [memory metrics ](https://docs.aws.amazon.com/compute-optimizer/latest/ug/metrics.html#cw-agent) collected by the CloudWatch agent, the recommendations for right-sizing EC2 instances are improved. For more information, see [Getting started with AWS Compute Optimizer](https://docs.aws.amazon.com/compute-optimizer/latest/ug/getting-started.html).
 
 For more information, contact your AWS account team.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

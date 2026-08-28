@@ -136,3 +136,7 @@ To responsibly manage the lifecycle of Lambda Managed Instances, Lambda requires
 **Deletion**: You can only delete this service-linked role after you have deleted all Lambda Managed Instances capacity providers in your account.
 
 For more information about service-linked roles, see [Using service-linked roles for Lambda](using-service-linked-roles.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lambda. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lambda` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

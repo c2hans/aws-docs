@@ -19,3 +19,7 @@ In AWS Resilience Hub, you can perform the following actions:
 + You can provision the selected alarms, SOPs, and AWS FIS experiments. To provision alarms, SOPs, and AWS FIS experiments, select the appropriate recommendation and enter a unique name. AWS Resilience Hub creates a template based on your selected recommendations. In **Templates**, you can access your created templates through an Amazon Simple Storage Service (Amazon S3) URL.
 + You can include or exclude selected alarms, SOPs, and AWS FIS experiments that were recommended for your application at any point of time. For more information see, [Including or excluding operational recommendations](exclude-recommend.md).
 + You can also search, create, add, remove, and manage tags, for an application and see all the tags associated with it.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

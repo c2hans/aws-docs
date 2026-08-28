@@ -80,3 +80,7 @@ You can add only a single node hierarchy (an asset and all assets that are subor
 ![The "Projects" page with "Remove all assets from project" button highlighted.](http://docs.aws.amazon.com/iot-sitewise/latest/appguide/images/project-remove-all-assets-console.png)
 
 1. In the dialog box, confirm that you want to remove the assets.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

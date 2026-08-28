@@ -163,3 +163,7 @@ The auto scaling feature of DJL Serving makes it easy to ensure that the models 
 + `cpu.maxWorkers`: Maximum number of workers for CPUs.
 
 For an end-to-end example of how to deploy a multi-model endpoint on SageMaker AI using a DJL Serving container, see the example notebook [Multi-Model-Inference-Demo.ipynb](https://github.com/deepjavalibrary/djl-demo/blob/master/aws/sagemaker/Multi-Model-Inference-Demo.ipynb).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

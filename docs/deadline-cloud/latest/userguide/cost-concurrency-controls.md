@@ -90,7 +90,7 @@ When a queue has more than one fleet, it distributes jobs evenly across those fl
 
 All of these controls are adjustable at any time. You can temporarily increase limits during periods of increased job activity. For example, before a delivery deadline you might raise a fleet's maximum worker count, increase a budget threshold, and add standby workers to reduce job start latency. After the deadline, lower the settings again.
 
-You can update fleet auto scaling settings and budgets from the Deadline Cloud console. To change capacity on a schedule, such as raising the standby worker count during working hours, use the sample CloudFormation template at [fleet\_standby\_scheduling](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/fleet_standby_scheduling) on GitHub. If you need more capacity than your account's service quotas allow, see [Quotas for Deadline Cloud](deadline-cloud-quotas.md).
+You can update fleet auto scaling settings and budgets from the Deadline Cloud console. To change capacity on a schedule, such as raising the standby worker count during working hours, use the sample CloudFormation template at [fleet\_standby\_scheduling](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/cloudformation/farm_templates/fleet_standby_scheduling) on GitHub. If you need more capacity than your account's service quotas allow, see [Service quotas and throttling for Deadline Cloud](deadline-cloud-quotas.md).
 
 ## Combine controls
 <a name="cost-concurrency-choosing"></a>
@@ -102,3 +102,7 @@ Set `--max-worker-count` on large jobs to reserve fleet capacity for other work.
 
 "I want a combination of cost control and fair sharing"
 Set a fleet maximum worker count, use per-job max worker counts for large jobs, and add a budget as a safety net. This combination gives you a peak capacity limit, per-job fairness, and a dollar backstop.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -71,3 +71,7 @@ The following table summarizes the actions that a Quick Sight user can take when
 The owner role is not supported for restricted shared folders.
 
 After you choose which folder type best fits your use case, see [Permissions for Quick Sight shared folders](folders-security.md) and [Create and manage membership permissions for Quick Sight shared folders](sharing-folders.md) to create folders and set up folder permissions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

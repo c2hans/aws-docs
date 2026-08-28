@@ -182,3 +182,7 @@ When writing, use the following connection options with `"connectionType": "kafk
 Additionally, you can fine-tune the Kafka sink as required by updating the [Kafka producer configuration parameters](https://kafka.apache.org/documentation/#producerconfigs). Note that there is no allow listing on connection options, all the key-value pairs are persisted on the sink as is.
 
 However, there is a small deny list of options that will not take effect. For more information, see [Kafka specific configurations](https://spark.apache.org/docs/latest/structured-streaming-kafka-integration.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

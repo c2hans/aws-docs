@@ -48,3 +48,7 @@ The following image shows a third-party app named Maps pinned in the agent works
   + **Temporary solution**: Update [Enterprise Chrome policies](https://support.google.com/chrome/a/answer/7679408?sjid=16745203858910744446-EU#upChromeBrsrBB117). Set the `BlockThirdPartyCookies` policy to `false` so that third-party cookie deprecation doesn't affect your agents.
   + **Permanent solution**: We recommend that app developers follow [best practices](https://developers.google.com/privacy-sandbox/3pcd) that will continue to pass third-party cookies.
 + You must have [integrated the application](3p-apps.md), and the agent must have [access to the application](assign-security-profile-3p-apps.md) through a security profile. The agent must also have access to the CCP for the **Apps** launcher to appear.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

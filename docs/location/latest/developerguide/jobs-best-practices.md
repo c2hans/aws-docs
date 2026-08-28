@@ -23,3 +23,7 @@ Follow these additional recommendations to group addresses and size job batches 
 Use the following recommendations to track costs and usage for Amazon Location Jobs APIs:
 + Track your Jobs API usage through AWS billing and cost management tools. Monitor the number of addresses processed, job frequency, and feature usage to understand your validation patterns and costs.
 + Set up billing alerts to notify you when usage exceeds expected thresholds, helping you manage costs proactively.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Location Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query location` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ Amazon S3 Vectors provides the following APIs for data retrieval.
 | <a name="s3vectors-ListVectorBuckets"></a>[ListVectorBuckets](https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_ListVectorBuckets.html) | Get a paginated list of all vector buckets in the account | List |
 | <a name="s3vectors-ListVectors"></a>[ListVectors](https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_ListVectors.html) | Get a paginated list of all vectors in a specified vector index | List |
 | <a name="s3vectors-QueryVectors"></a>[QueryVectors](https://docs.aws.amazon.com/AmazonS3/latest/API/API_S3VectorBuckets_QueryVectors.html) | Find approximate nearest neighbors within a specified search vector index for a given query vector | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

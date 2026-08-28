@@ -311,3 +311,7 @@ To produce the output image configured, you must initiate the image pipeline. Th
 1. Follow the directions in [Software Stacks (AMIs)](software-stacks.md) to register a software stack.
 
 1. For **AMI ID**, enter the AMI ID of the output image built in [Run Image Builder image pipeline](#run-image-pipeline).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Research and Engineering Studio. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query res` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

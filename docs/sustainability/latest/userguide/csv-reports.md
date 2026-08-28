@@ -21,3 +21,7 @@ You can also create a custom report by clicking **Download custom report** on th
 The columns available to select vary depending on the parameters you have set up for your report. For example, if you choose to aggregate data at the yearly granularity, the column usage\_year will be available, but not usage\_month or usage\_quarter. If you want the most granularity, aggregate by month.
 
 If you want to see the carbon per usage account under a given payer account, you can use the AWS Sustainability API or create a Data Export.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Sustainability. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sustainability` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

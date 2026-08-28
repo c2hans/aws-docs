@@ -13,3 +13,7 @@ Security Lake consumes AWS WAF logs directly from AWS WAF through an independent
 If you are using Amazon CloudFront distribution as the resource type in AWS WAF, you must select US East (N. Virginia) to ingest the global logs in Security Lake.
 
 AWS WAF logs is supported only in OCSF v1.1.0. For information about how Security Lake normalizes AWS WAF log events to OCSF, see the mapping reference in the [GitHub OCSF repository for AWS WAF logs (v1.1.0)](https://github.com/ocsf/examples/tree/main/mappings/markdown/AWS/v1.1.0/WAF).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Security Lake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query security-lake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -120,3 +120,7 @@ You can test the LDAPS connection to the AWS Managed Microsoft AD directory usin
 Before you test the LDAPS connection, you must wait up to 30 minutes for the subordinate CA to issue a certificate to your domain controllers.
 
 For additional details about server-side LDAPS and to see an example use case on how to set it up, see [How to Enable Server-Side LDAPS for Your AWS Managed Microsoft AD Directory](https://aws.amazon.com/blogs/security/how-to-enable-ldaps-for-your-aws-microsoft-ad-directory/) on the AWS Security Blog.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

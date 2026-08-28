@@ -60,3 +60,7 @@ The following table lists all available flow blocks, and whether they support ro
 |  [Transfer to phone number](transfer-to-phone-number.md) | Yes | No - Error branch | No - Error branch | No - Error branch |
 |  [Transfer to queue](transfer-to-queue.md)  | Yes | Yes | Yes | Yes |
 |  [Wait](wait.md) | No - Error branch | Yes | Yes | Yes |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

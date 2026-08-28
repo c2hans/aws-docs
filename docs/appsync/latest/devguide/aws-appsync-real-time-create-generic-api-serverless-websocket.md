@@ -101,3 +101,7 @@ subscription SubscribeToData {
 <a name="aws-appsync-real-time-enhanced-filtering-existing-apps"></a>
 
 In case you just need to implement a real-time feature in an existing application, this generic pub/sub API configuration can be easily integrated into any application or API technology. While there are advantages in using a single API endpoint to securely access, manipulate, and combine data from one or more data sources in a single network call with GraphQL, there’s no need to convert or rebuild an existing REST-based application from scratch in order to take advantage of AWS AppSync's real-time capabilities. For instance, you could have an existing CRUD workload in a separate API endpoint with clients sending and receiving messages or events from the existing application to the generic pub/sub API for real-time and pub/sub purposes only.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

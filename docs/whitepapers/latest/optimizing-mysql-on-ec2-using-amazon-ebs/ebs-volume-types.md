@@ -32,3 +32,7 @@ The older General Purpose SSD (gp2) volume is also a good option because it also
  To maximize the volume throughput, AWS recommends using an [EBS-optimized EC2 instance type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-optimized.html#current) (note that most new EC2 instances are EBS-optimized by default, with no extra charge). This provides dedicated throughput between your EBS volume and EC2 instance. As instance size and type affects volume throughput, choose an instance that has more channel bandwidth than the maximum throughput of the io1 volume.
 
  For example, an `r5.12xlarge` instance provides a maximum bandwidth of 9,500 MB/s. Therefore, it can more than handle the 1,187.5 MB/s maximum throughput of the io1 volume. Another approach to increasing io1 throughput is to configure RAID 0 on your EBS volumes. For more information about RAID configuration, refer to [RAID configuration](https://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/raid-config.html) in the *Amazon EC2 User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

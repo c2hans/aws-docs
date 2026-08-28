@@ -50,3 +50,7 @@ For other publishing options:
 + To automate builds using a Deadline Cloud package building queue, see [Automate package builds with Deadline Cloud](automate-package-builds.md). To build both Linux and Windows packages, use the `--all-platforms` option with the `submit-package-job` script.
 
 To render the turntable sample with Maya and Arnold, build both the [MtoA plugin](create-conda-recipe-mtoa-plugin.md) and [Maya adaptor](create-conda-recipe-maya-openjd.md) packages. After you publish all three packages, you can submit a test render job using the [turntable with Maya/Arnold](https://github.com/aws-deadline/deadline-cloud-samples/tree/mainline/job_bundles/turntable_with_maya_arnold) job bundle from the Deadline Cloud samples repository. See [Test your packages with a Maya render job](submit-render-maya-mtoa.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -96,3 +96,7 @@ The `$bulk-delete` operation logs as StartFHIRBulkDeleteJob and DescribeFHIRBulk
 + When `isHardDelete` is set to true, hard-deleted resources will not appear in search results or `_history` queries.
 + Resources being deleted through this operation may be temporarily inaccessible during processing
 + Storage metering is adjusted on historical versions only - deleteVersionHistory=false will not adjust datastore storage
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

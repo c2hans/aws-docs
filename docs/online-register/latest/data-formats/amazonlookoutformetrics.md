@@ -24,3 +24,7 @@ Amazon Lookout for Metrics provides the following APIs for data retrieval.
 | <a name="lookoutmetrics-ListAnomalyGroupTimeSeries"></a>[ListAnomalyGroupTimeSeries](https://docs.aws.amazon.com/lookoutmetrics/latest/api/API_ListAnomalyGroupTimeSeries.html) | Get a list of affected metrics for a measure in an anomaly group | List |
 | <a name="lookoutmetrics-ListMetricSets"></a>[ListMetricSets](https://docs.aws.amazon.com/lookoutmetrics/latest/api/API_ListMetricSets.html) | Get a list of datasets | List |
 | <a name="lookoutmetrics-ListTagsForResource"></a>[ListTagsForResource](https://docs.aws.amazon.com/lookoutmetrics/latest/api/API_ListTagsForResource.html) | Get a list of tags for a detector, dataset, or alert | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

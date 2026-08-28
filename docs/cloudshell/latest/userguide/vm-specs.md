@@ -253,3 +253,7 @@ In the procedure, you'll modify the `.bashrc` script so that your shell environm
    ```
 
    When the command line interface becomes available again, the prompt symbol has changed to `%` to indicate that you're now using the Z shell.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

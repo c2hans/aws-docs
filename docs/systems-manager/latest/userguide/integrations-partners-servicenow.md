@@ -18,3 +18,7 @@ You can perform the following tasks using ServiceNow:
 
 **Note**
 For information about how to integrate with ServiceNow, see [Configuring AWS service integrations](https://docs.aws.amazon.com/smc/latest/ag/sn-config-integ.html) in the *AWS Service Management Connector Administrator Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

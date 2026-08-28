@@ -76,3 +76,7 @@ The following are the service endpoints and service quotas for this service.
 | Rate of TagResource requests | Each supported Region: 10 per second | No | Maximum number of TagResource requests you can make per second, in this account in the current region |
 | Rate of UntagResource requests | Each supported Region: 10 per second | No | Maximum number of UntagResource requests you can make per second, in this account in the current region |
 | Rate of UpdateLink requests | Each supported Region: 10 per second | No | Maximum number of UpdateLink requests you can make per second, in this account in the current region |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

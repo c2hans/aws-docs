@@ -68,3 +68,7 @@ You can use AWS Lambda with CodePipeline for invoking an AWS Lambda function, as
 <a name="use-cases-cloudformation"></a>
 
 You can use CloudFormation with CodePipeline for continuous delivery and automation. For more information, see [Continuous Delivery with CodePipeline](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/continuous-delivery-codepipeline.html). CloudFormation is also used to create the templates for pipelines created in AWS CodeStar.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodePipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codepipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

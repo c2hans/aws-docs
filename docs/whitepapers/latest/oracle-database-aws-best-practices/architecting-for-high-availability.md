@@ -39,3 +39,7 @@ VMware Cloud on AWS vSAN supports Oracle ASM. Oracle ASM disk group files are cr
 <a name="flashgrid-cluster"></a>
 
  FlashGrid Cluster is a virtual cloud appliance that provides all infrastructure capabilities required for running Oracle RAC on Amazon EC2. This includes multicast support and shared storage. For maximizing database uptime SLA, FlashGrid Cluster allows spreading Oracle RAC nodes across different availability zones. FlashGrid Cluster is delivered as an AWS CloudFormation template with fully automated deployment of all infrastructure components and Oracle software. FlashGrid software and support fees are billed through AWS Marketplace. FlashGrid architecture details are available in the [whitepaper](https://www.flashgrid.io/docs/FlashGrid_Oracle_RAC_on_AWS.pdf). To launch a FlashGrid Cluster with Oracle RAC visit the [product page](https://www.flashgrid.io/products/flashgrid-for-oracle-rac-on-aws/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

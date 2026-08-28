@@ -57,3 +57,7 @@ Based on benchmark testing with the nyc\_taxi dataset, ZSTD compression achieved
 | Distance Amount p90 Agg Latency Improvement | 2% | 24.70% | 2% | 13.80% |
 
 For more details, refer to the [AWS OpenSearch blog](https://aws.amazon.com/blogs/big-data/optimize-storage-costs-in-amazon-opensearch-service-using-zstandard-compression/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon OpenSearch Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query opensearch-service` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

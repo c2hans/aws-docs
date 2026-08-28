@@ -343,3 +343,7 @@ AWS Proton attempts to re-mediate failure modes as follows.
 <a name="ag-svc-update-tagging"></a>
 
 When you add service instances as part of your service edit, AWS managed tags propagate to and are automatically created for the new instances and provisioned resources. If you create new tags, those tags are only applied to the new instances. Existing service customer managed tags also propagate to the new instances. For more information, see [AWS Proton resources and tagging](resources.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Proton. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query proton` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

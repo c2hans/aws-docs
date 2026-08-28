@@ -142,3 +142,7 @@ See the [`examples/`](https://github.com/eksctl-io/eksctl/tree/master/examples) 
 The dry-run feature enables generating a ClusterConfig file that skips cluster creation and outputs a ClusterConfig file that represents the supplied CLI options and contains the default values set by eksctl.
 
 More info can be found on the [Dry Run](dry-run.md) page.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

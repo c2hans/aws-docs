@@ -101,3 +101,7 @@ To add a local CPU memory tier that caches KV entries before they are written to
 ```
 
 When CPU offloading is enabled, KV cache entries are stored in CPU memory on the local node before being written to the cluster-wide Tiered Storage. This provides faster cache reads for replicas on the same node.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

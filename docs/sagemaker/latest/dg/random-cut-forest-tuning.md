@@ -29,3 +29,7 @@ You can tune a RCF model with the following hyperparameters.
 | --- | --- | --- |
 | num\_samples\_per\_tree | IntegerParameterRanges | MinValue: 1, MaxValue:2048 |
 | num\_trees | IntegerParameterRanges | MinValue: 50, MaxValue:1000 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

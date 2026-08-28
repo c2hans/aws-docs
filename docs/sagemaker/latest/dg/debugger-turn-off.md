@@ -43,3 +43,7 @@ If you disable it, you won't be able to collect output tensors and cannot debug 
   ```
 
   For more information about the estimator extension methods, see the [estimator.disable\_profiling](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) and [estimator.update\_profiler](https://sagemaker.readthedocs.io/en/stable/api/sagemaker_train.html) classmethods in the [Amazon SageMaker Python SDK](https://sagemaker.readthedocs.io/en/stable) documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

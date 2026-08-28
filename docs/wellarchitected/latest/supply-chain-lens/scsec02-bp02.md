@@ -36,3 +36,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/supply-chain-lens
 1.  Develop automated reporting workflows using Amazon EventBridge, AWS Lambda, and Quick to generate and distribute regular security posture summaries to stakeholders based on their roles and responsibilities.
 
 1.  Establish integration points between AWS security services and external SIEM or GRC systems to incorporate supply chain security data into enterprise-wide risk management processes.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

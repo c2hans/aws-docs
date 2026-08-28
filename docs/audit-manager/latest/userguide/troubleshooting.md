@@ -21,3 +21,7 @@ We encourage you to review the list of topics below, find the one that best matc
 + [Troubleshooting framework issues](framework-issues.md)
 + [Troubleshooting notification issues](notification-issues.md)
 + [Troubleshooting permission and access issues](permissions-issues.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Audit Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query audit-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -116,3 +116,7 @@ An [Amazon Elastic Block Store](https://aws.amazon.com/ebs/) (Amazon EBS) [stora
 +  There are limits on the resources consumed within a domain, such as number of instances launched by instance types, and number of user profiles that can be created. Refer to the [service quota page](https://docs.aws.amazon.com/general/latest/gr/sagemaker.html#limits_sagemaker) for a complete list of service limits.
 +  Customers can submit an enterprise support case with business justification to raise the default resource limits such as number of domains or user profiles, subjected to account-level guardrails.
 + Be sure to check the [Service Quotas console](https://console.aws.amazon.com/servicequotas/) for the most current quotas or limits on the number of concurrent apps allowed per account. Domains and user profile limits are dependent on the concurrent apps limit. For example, an account can have a single domain with 1,000 user profiles, or 20 domains with 50 user profiles each.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

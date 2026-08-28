@@ -72,3 +72,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/2025-02-25/framework/per
 +  [Distributed Load Tests](https://aws.amazon.com/solutions/implementations/distributed-load-testing-on-aws/)
 +  [Measure page load time with Amazon CloudWatch Synthetics](https://github.com/aws-samples/amazon-cloudwatch-synthetics-page-performance)
 +  [Amazon CloudWatch RUM Web Client](https://github.com/aws-observability/aws-rum-web)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

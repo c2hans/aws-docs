@@ -61,3 +61,7 @@ source_url: https://docs.aws.amazon.com/inspector/latest/user/scanning_resources
  Inspector only scans `ACTIVE` images in ECR container images. ECR container images in an `ARCHIVED` status are not scanned. To learn more about scanning behaviors, see [Scan behaviors for Amazon ECR scanning](scanning-ecr.md#ecr-scan-behavior).
 
  When an ECR container image's image status in ECR transitions to `ACTIVE`, Inspector uses the `lastActivatedAt` field to monitor rescan duration.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Inspector. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query inspector` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

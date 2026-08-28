@@ -121,3 +121,7 @@ Amazon MSK has the following integration with AWS modern data architecture for s
 +  Amazon MSK also offers Amazon MSK Connect, a managed Kafka Connect offering that you can use to move data from a wide variety of data sources and sinks. It can also be used for transformations using Single Message Transform (SMT) or develop custom logic.
 
 You can integrate Amazon MSK with Firehose using a Lambda function that processes process records in a Kafka topic annd deliver it to a Firehose delivery stream, which buffers data before delivering it to the destination such an Amazon S3 bucket that stores all events from the the Amazon MSK cluster for offline analysis.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

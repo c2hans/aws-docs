@@ -37,3 +37,7 @@ In the preceding example:
 + {{adType}} is either `avail` or `overlay`, based on the VAST response
 + {{trackingUri}} is the relative tracking endpoint for the MediaTailor session, in the format `../../../../tracking/{{hashed-account-id}}/{{origin-id}}/{{session-id}}`
 + {{customVastData}} is a value that MediaTailor extracts from the `creative_signaling` VAST extension. MediaTailor uses the contents of the CDATA node, if present. See the [Ad Decision Server (ADS) interactions](ad-id-ads-interactions.md) section for more details and a sample VAST response.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaTailor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediatailor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

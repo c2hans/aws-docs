@@ -21,3 +21,7 @@ To help control network traffic to your WorkSpaces Applications streaming instan
 + You can use SAML 2.0 to federate authentication to WorkSpaces Applications. For more information, see [Amazon WorkSpaces Applications Service Quotas](limits.md).
 **Note**
 For smaller WorkSpaces Applications deployments, you can use WorkSpaces Applications user pools. By default, user pools support a maximum of 50 users. For more information about WorkSpaces Applications quotas (also referred to as limits), see [Amazon WorkSpaces Applications Service Quotas](limits.md). For deployments that must support 100 or more WorkSpaces Applications users, we recommend using SAML 2.0.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

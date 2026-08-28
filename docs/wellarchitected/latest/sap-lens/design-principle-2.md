@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/sap-lens/design-p
 +  AWS Documentation: [AWS Developer Tools](https://aws.amazon.com/products/developer-tools/?ref=wellarchitected)
 +  AWS Documentation: [AWS Launch Wizard for SAP](https://docs.aws.amazon.com/launchwizard/latest/userguide/what-is-launch-wizard-sap.html#:~:text=AWS%20Launch%20Wizard%20for%20SAP%20is%20a%20service%20that%20guides,deploy%20SAP%20applications%20on%20AWS.)
 +  SAP on AWS Blog: [DevOps for SAP – Driving Innovation and Lowering Costs](https://aws.amazon.com/blogs/awsforsap/devops-for-sap-driving-innovation-and-lowering-costs/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

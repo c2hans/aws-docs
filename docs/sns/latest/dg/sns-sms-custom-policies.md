@@ -24,3 +24,7 @@ Use the following steps to manage custom IAM policies for Amazon SNS:
 1. Review the IAM policy configuration to ensure it aligns with your access control requirements. Once verified, **save** the policy changes.
 
 1. Attach the **custom IAM policy** to the relevant IAM users, groups, or roles within your AWS account. This grants them the permissions defined in the policy for managing Amazon SNS resources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

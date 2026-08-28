@@ -41,3 +41,7 @@ In the example for **sales.csv**, we run the following command.
 In this example, we don't specify an output file name (`--output={{sales-output.csv}}`). As a result, the default output file name `name-of-file.out.csv` was generated.
 
 You are now ready to verify the encrypted data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Clean Rooms. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query clean-rooms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -94,3 +94,7 @@ After your product is launched, the service must continue to respond to these sc
 1. After you have completed all the integration requirements and tested the solution, notify the AWS Marketplace Seller Operations team. They will then test the solution by verifying that you have successfully called the `GetEntitlements` API operation and sufficiently onboarded new customers. They will also verify that you have successfully sent metered records with the `BatchMeterUsage` API operation.
 
 After your integration and testing is complete, you can perform a final review and list your product on the public AWS Marketplace. For more information, see [Creating a SaaS product in AWS Marketplace](saas-create-product.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

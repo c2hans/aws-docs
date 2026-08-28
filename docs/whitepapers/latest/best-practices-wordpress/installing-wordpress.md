@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/best-practices-wordpr
 A [snapshot](https://lightsail.aws.amazon.com/ls/docs/overview/article/understanding-instance-snapshots-in-amazon-lightsail) is a way to create a backup image of your Lightsail instance. It is a copy of the system disk and also stores the original machine configuration (that is, memory, CPU, disk size, and data transfer rate). Snapshots can be used to revert to a known good configuration after a bad deployment or upgrade.
 
 This snapshot allows you to recover your server if needed, but also to launch new instances with the same customizations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

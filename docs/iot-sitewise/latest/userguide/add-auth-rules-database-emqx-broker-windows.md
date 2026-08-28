@@ -20,3 +20,7 @@ This section covers configuring authorization rules using the built-in database 
    The tool automatically creates and applies ACL rules allowing connections from localhost (127.0.0.1) to the broker. It allows access to all topics. This includes the IoT SiteWise OPC UA collector and IoT SiteWise publisher.
 
 1. Proceed to [Update the EMQX deployment configuration for authorization](update-emqx-broker-authorization.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

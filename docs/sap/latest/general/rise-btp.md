@@ -28,3 +28,7 @@ For AWS services across AWS Regions, you can create a VPC in the same AWS Region
 SAP Private Link Service is a paid service offered by SAP on SAP BTP. For more information, see [SAP Discovery Center – Services – SAP Private Link Service](https://discovery-center.cloud.sap/serviceCatalog/private-link-service).
 
 Cost associated to AWS Services in the AWS account - managed by the Customer to facilitate cross region connectivity for example the AWS Network Load Balancer, or Transit Gateway vary. For more information on price, see the dedicated pricing pages of the listed AWS Services.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ A Git repository may have any of the following status in the repository list. Fo
 | Link Failed | The Git repository failed to link to the notebook. You can try again to link it. |
 | Unlinking | The Git repository is being unlinked from the notebook. While the repository is **Unlinking**, you cannot stop the notebook. Unlinking a Git repository from a notebook only disconnects it from the remote repository; it doesn't delete any code from the notebook. |
 | Unlink Failed | The Git repository failed to unlink from the notebook. You can try again to unlink it. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

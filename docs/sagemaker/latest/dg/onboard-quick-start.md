@@ -76,3 +76,7 @@ Do you want to start SageMaker AI features right away, and do not intend to lear
   + [Machine learning environments offered by Amazon SageMaker AI](machine-learning-environments.md)
 
 RStudio requires Amazon EFS to be enabled on your domain. When using quick setup, EFS is not created by default and RStudio will not appear in the Applications section. To use RStudio with a quick setup domain, enable EFS creation through Domain Settings. Alternatively, you can onboard using the **Set up for organizations** ([Use custom setup for Amazon SageMaker AI](onboard-custom.md)) option and EFS creation is enabled by default during the Configure storage step.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

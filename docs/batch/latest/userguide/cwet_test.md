@@ -18,3 +18,7 @@ You can now test your EventBridge configuration by submitting a job to your job 
 1. On the navigation pane, choose **Logs** and select the log group for your Lambda function (for example, **/aws/lambda/**{{my-function}}).
 
 1. Select a log stream to view the event data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Batch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query batch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

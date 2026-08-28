@@ -33,3 +33,7 @@ Choose the **Format** drop-down menu, and select **All files** to view all file 
 
    Your import may take a few minutes or more depending on the size of the database backup file. After the import is complete, you should see a message similar to the following:
 ![Successful restore of PostgreSQL database backup file.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/amazon-lightsail-pgadmin-successful-restore.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

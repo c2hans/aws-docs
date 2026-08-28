@@ -637,3 +637,7 @@ Network isolation reduces the attack surface and prevents external access, there
 <a name="sagemaker-25-remediation"></a>
 
 When you create a model quality job definition, you can enable network isolation by setting the value for the `EnableNetworkIsolation` parameter to `True`. For more information about network isolation for SageMaker AI, see [Run training and inference containers in internet-free mode](https://docs.aws.amazon.com/sagemaker/latest/dg/mkt-algo-model-internet-free.html#mkt-algo-model-internet-free-isolation) in the *Amazon SageMaker AI Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

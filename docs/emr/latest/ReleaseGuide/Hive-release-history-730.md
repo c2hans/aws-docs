@@ -33,3 +33,7 @@ source_url: https://docs.aws.amazon.com/emr/latest/ReleaseGuide/Hive-release-his
 | hive-site | hive.llap.daemon.web.ssl.keystore.path |  | SSL certificate keystore location for LLAP daemon web UI. |
 | hive-site | hive.llap.daemon.web.ssl.keystore.password |  | SSL certificate keystore password for LLAP daemon web UI. |
 | hive-site | hive.metastore.hadoop.rpc.protection.override.to.authentication | false | When enabled, HMS always overrides the value for hadoop.rpc.protection for authentication in its set of configurations. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

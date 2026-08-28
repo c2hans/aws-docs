@@ -1401,3 +1401,7 @@ There are no i686 packages in the python3.8 AL2 Extra repository of Amazon Linux
 <a name="removed-i686-AL2023.12-AL2-ex2-collectd-python3"></a>
 
 There are no i686 packages in the collectd-python3 AL2 Extra repository of Amazon Linux 2.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Linux. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query linux` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

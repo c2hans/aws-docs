@@ -12,3 +12,7 @@ When you create an AWS Lambda function, you must create a special IAM role that 
 The execution role provides the Lambda function with the credentials it needs to run and to invoke other web services. As a result, you don't need to provide credentials to the Node.js code you write within a Lambda function.
 
 For more information about creating a Lambda execution role, see [Manage permissions: Using an IAM role (execution role)](https://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html#lambda-intro-execution-role) in the *AWS Lambda Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for JavaScript. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-javascript` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

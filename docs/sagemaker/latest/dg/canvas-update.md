@@ -31,3 +31,7 @@ Use the following procedure to log in to AWS, open Amazon SageMaker AI domain, a
 The following image shows the user profile page and highlights the **Delete app** action from the preceding procedure.
 
 ![Screenshot of the user profile page with the Delete app action highlighted.](http://docs.aws.amazon.com/sagemaker/latest/dg/images/studio/canvas/canvas-update-app-1.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -162,3 +162,7 @@ The following example task definition runs a lightweight inference container on 
 + You can include both fractional GPU instances (G6f) and full GPU instances (such as g5 or g6) in the same capacity provider. Amazon ECS routes tasks to the correct instance type based on the declared GPU value. You do not need separate capacity providers per GPU family.
 + You can use fractional GPU scheduling with Amazon ECS Managed Instances and Amazon ECS on Amazon EC2. Fargate and Amazon ECS Anywhere do not support fractional GPU scheduling.
 + For full GPU workloads, continue using integer values as before: `"value": "1"`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon ECS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonECS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

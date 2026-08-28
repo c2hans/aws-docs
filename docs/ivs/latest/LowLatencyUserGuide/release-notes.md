@@ -7,6 +7,44 @@ source_url: https://docs.aws.amazon.com/ivs/latest/LowLatencyUserGuide/release-n
 
 This document contains all Amazon IVS Low-Latency Streaming release notes, latest first, organized by date of release.
 
+## August 27, 2026
+<a name="aug27-26-broadcast-mobile-ll"></a>
+
+### Amazon IVS Broadcast SDK: Android 1.46.0, iOS 1.46.0 (Low-Latency Streaming)
+<a name="aug27-26-broadcast-mobile-ll-1460"></a>
+
+| Platform | Downloads and Changes |
+| --- | --- |
+| [Android Broadcast SDK 1.46.0](broadcast-android.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.46.0/android/](https://aws.github.io/amazon-ivs-broadcast-docs/1.46.0/android/)+  Bug fixes and stability improvements.  |
+| [iOS Broadcast SDK 1.46.0](broadcast-ios.md) | **Download for low-latency streaming:** [https://broadcast.live-video.net/1.46.0/AmazonIVSBroadcast.xcframework.zip](https://broadcast.live-video.net/1.46.0/AmazonIVSBroadcast.xcframework.zip) <br />**Reference documentation: **[https://aws.github.io/amazon-ivs-broadcast-docs/1.46.0/ios/](https://aws.github.io/amazon-ivs-broadcast-docs/1.46.0/ios/)+  Bug fixes and stability improvements.  |
+
+### Broadcast SDK Size: Android
+<a name="broadcast-1460-ll-sdk-size-android"></a>
+
+| Architecture | Compressed Size | Uncompressed Size |
+| --- | --- | --- |
+| arm64-v8a | 2.004 MB | 5.404 MB |
+| armeabi-v7a | 1.759 MB | 3.739 MB |
+| x86\_64 | 2.092 MB | 5.741 MB |
+| x86 | 2.113 MB | 5.523 MB |
+
+### Broadcast SDK Size: iOS
+<a name="broadcast-1460-ll-sdk-size-ios"></a>
+
+| Architecture | Compressed Size | Uncompressed Size |
+| --- | --- | --- |
+| arm64 | 1.024 MB | 2.248 MB |
+
+## August 27, 2026
+<a name="aug27-26-broadcast-web-ll"></a>
+
+### IVS Broadcast SDK: Web 1.39.0 (Low-Latency Streaming)
+<a name="aug27-26-broadcast-web-ll-1390"></a>
+
+| Platform | Downloads and Changes |
+| --- | --- |
+| [Web Broadcast SDK 1.39.0](broadcast-web.md) | **Reference documentation: **[https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference/](https://aws.github.io/amazon-ivs-web-broadcast/docs/sdk-reference)+  Bug fixes and stability improvements.  |
+
 ## August 19, 2026
 <a name="aug19-26-broadcast-android-ll"></a>
 
@@ -4682,3 +4720,7 @@ The Amazon Interactive Video Service (IVS) Player SDKs use [semantic versioning]
 | Web Player 1.0.0 | **NPM Package:** [https://www.npmjs.com/package/amazon-ivs-player](https://www.npmjs.com/package/amazon-ivs-player)<br />**Script asset: **[https://player.live-video.net/1.0.0/amazon-ivs-player.min.js](https://player.live-video.net/1.0.0/amazon-ivs-player.min.js)<br />**Video.js tech asset: **[https://player.live-video.net/1.0.0/amazon-ivs-videojs-tech.min.js](https://player.live-video.net/1.0.0/amazon-ivs-videojs-tech.min.js)<br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.0.0/web/](https://aws.github.io/amazon-ivs-player-docs/1.0.0/web/)<br />**Known Issues:**+  When playing a VOD on an iOS mobile browser (e.g. Safari or Chrome), seeking backwards will mute the player. To avoid this, call `player.setMuted(false)` after seeking. <br />+  When playing a VOD on an iOS mobile browser, seeking backwards works intermittently when directly selecting the desired position. To avoid this, drag the seek bar to the desired position. <br />+  When playing a VOD on an iOS mobile browser using the Video.js integration, the replay button does not work properly. To avoid this, hide the replay button when initializing Video.js: [https://videojs.com/guides/components/\#play-toggle](https://videojs.com/guides/components/#play-toggle).  |
 | Android Player 1.0.0 | **Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.0.0/android/](https://aws.github.io/amazon-ivs-player-docs/1.0.0/android/)<br />**Known Issue:** Backgrounding and foregrounding can cause audio/video de-synchronization for VOD playback on Android. |
 | iOS Player 1.0.0 | **Download:** <deprecated><br />**Reference documentation: **[https://aws.github.io/amazon-ivs-player-docs/1.0.0/ios/](https://aws.github.io/amazon-ivs-player-docs/1.0.0/ios/)<br />**Known Issues:** +  Backgrounding and foregrounding cause live and VOD playback failure. To avoid this, pause the stream when the `UIApplicationDidEnterBackgroundNotification` is received and resume play on the `UIApplicationDidBecomeActiveNotification`. <br />+  iOS 10 devices may experience a crash when returning from background. To avoid this, set the layerâ€™s `player` property to `nil` before entering the background.  |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

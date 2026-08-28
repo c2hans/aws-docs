@@ -132,3 +132,7 @@ The following are the service endpoints and service quotas for this service.
 | Voice engagement throttle quota | Each supported Region: 0.01 | No | The maximum number of voice engagements per contact per second that the service can send in this account in the current region |
 
 The unit for the API throttle quotas is requests per second.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ You must enable forecasting & agent scheduling at the Connect Customer instance 
 
 1. Within 24 hours the status will change to *Enabled* and forecasting & agent scheduling will be ready to use.
 ![The Enable capabilities section, the Status message is set to Enabled.](http://docs.aws.amazon.com/connect/latest/adminguide/images/wfm-enabled.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

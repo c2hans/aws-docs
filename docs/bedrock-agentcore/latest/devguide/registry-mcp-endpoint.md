@@ -450,3 +450,7 @@ You can use [mcp-proxy-for-aws](https://github.com/aws/mcp-proxy-for-aws) on the
 <a name="registry-mcp-develop-client"></a>
 
 For more code references of how to invoke the Registry MCP endpoint, including from popular IDEs like Kiro or Claude Code, please refer to sample code references in the public code repository.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

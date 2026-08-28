@@ -80,3 +80,7 @@ For a useful overview of troubleshooting using Performance Insights, see the blo
 Examine the other wait events associated with the `synch/mutex/innodb/trx_sys_mutex` wait event. Doing this can provide more information about the nature of the workload. A large number of transactions might reduce throughput, but the workload might also make this necessary.
 
 For more information on how to optimize transactions, see [Optimizing InnoDB Transaction Management](https://dev.mysql.com/doc/refman/5.7/en/optimizing-innodb-transaction-management.html) in the MySQL documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

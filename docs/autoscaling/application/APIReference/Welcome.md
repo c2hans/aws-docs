@@ -39,4 +39,8 @@ The documentation for each action shows the request syntax, the request paramete
 
 Application Auto Scaling uses the token bucket algorithm to implement API throttling. With this algorithm, your account has a bucket that holds a specific number of tokens. The number of tokens in the bucket represents your throttling limit at any given second. Application Auto Scaling throttles API requests based on a shared API bucket. For example, calls to the [DescribeScalableTargets](API_DescribeScalableTargets.md) and [DescribeScheduledActions](API_DescribeScheduledActions.md) API operations use tokens from the same bucket. Throttling means that Application Auto Scaling rejects a request because the request exceeds the service's limit for the number of requests per second. When a request is throttled, Application Auto Scaling returns a `RateExceeded` error. For more information, see [My Auto Scaling API calls are getting throttled. What can I do to avoid this?](http://aws.amazon.com/premiumsupport/knowledge-center/autoscaling-api-calls-throttled) in the AWS Knowledge Center.
 
-This document was last published on August 24, 2026.
+This document was last published on August 28, 2026.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -86,3 +86,7 @@ source_url: https://docs.aws.amazon.com/controltower/latest/userguide/account-tr
 +  [Update the AFT version](https://docs.aws.amazon.com/controltower/latest/userguide/update-aft-version.html)
 
  You can also trace and troubleshoot customization requests by using Amazon CloudWatch Logs Insights queries to filter logs containing your target account and customization request IDs. For more information, see [Troubleshooting with AFT account customization request tracing](https://docs.aws.amazon.com/controltower/latest/userguide/aft-account-customization-options.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

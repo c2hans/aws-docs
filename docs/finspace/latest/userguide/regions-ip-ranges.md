@@ -36,3 +36,7 @@ The following table provides supported regions and endpoints for Amazon FinSpace
 | US West (Oregon) | us-west-2 | finspace.us-west-2.amazonaws.com |
 | Canada (Central) | ca-central-1 | finspace.ca-central-1.amazonaws.com |
 | Europe (Ireland) | eu-west-1 | finspace.eu-west-1.amazonaws.com |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FinSpace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finspace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

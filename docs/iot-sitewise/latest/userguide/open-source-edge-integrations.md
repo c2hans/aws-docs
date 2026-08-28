@@ -81,3 +81,7 @@ Consider these additional factors when implementing open-source integrations wit
 <a name="open-source-troubleshoot"></a>
 
 For more information on troubleshooting topics related to open source integrations for SiteWise Edge gateways, see [Troubleshooting open-source integrations at the Edge](troubleshooting-gateway.md#open-source-troubleshooting).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

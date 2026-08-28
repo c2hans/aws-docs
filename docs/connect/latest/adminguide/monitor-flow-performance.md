@@ -112,3 +112,7 @@ When viewing metrics for previous flow versions:
 + Metrics are version-specific: Each published flow generates its own data while active.
 + Publishing a replacement version closes the previous data and opens a new one.
 + Only published versions collect metrics. Drafts are excluded from analytics.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

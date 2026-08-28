@@ -31,3 +31,7 @@ If you join a hosted meeting, you can't use the **Answer** control's options unt
 1. When the meeting calls you, the **Answer** control appears on the lock screen. Your device also plays a ring notification.
 
 1. From the **Answer** control, choose **Answer**. Your device may prompt you to unlock it before opening Amazon Chime.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

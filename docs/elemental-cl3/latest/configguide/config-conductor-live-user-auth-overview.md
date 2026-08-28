@@ -29,3 +29,7 @@ There are two ways to implement user authentication. For both types, the first t
   With this authentication, you enable authentication on the Conductor Live node.
 
   You create user credentials from an LDAP server that is external to the AWS Elemental nodes. The credentials that you assign to the users are stored on the LDAP server.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

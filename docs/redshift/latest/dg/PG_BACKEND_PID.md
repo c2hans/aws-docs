@@ -58,3 +58,7 @@ You can correlate PG\_BACKEND\_PID with the pid column in the following log tabl
 + [STV\_INFLIGHT](r_STV_INFLIGHT.md)
 + [STV\_LOCKS](r_STV_LOCKS.md) (lock\_owner\_pid)
 + [STV\_RECENTS](r_STV_RECENTS.md) (process\_id)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

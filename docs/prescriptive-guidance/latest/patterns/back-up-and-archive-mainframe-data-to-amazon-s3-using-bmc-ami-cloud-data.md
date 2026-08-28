@@ -152,3 +152,7 @@ The diagram shows the following workflow:
 + [How to Enable Mainframe Data Analytics on AWS Using Model9](https://aws.amazon.com/blogs/apn/how-to-enable-mainframe-data-analytics-on-aws-using-model9/) (AWS Partner Network Blog)
 + [AWS Direct Connect Resiliency Recommendations](https://aws.amazon.com/directconnect/resiliency-recommendation/?nc=sn&loc=4&dn=2) (AWS documentation)
 + [BMC AMI Cloud documentation](https://docs.bmc.com/docs/cdacv27/getting-started-1245343248.html) (BMC website)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

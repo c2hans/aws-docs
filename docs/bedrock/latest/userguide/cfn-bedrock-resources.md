@@ -29,3 +29,7 @@ Amazon Bedrock supports creating the following resources in CloudFormation.
 + [AWS::Bedrock::PromptVersion](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-bedrock-promptversion.html)
 
 For more information, including examples of JSON and YAML templates for [Amazon Bedrock agents](agents.md) or [Amazon Bedrock knowledge bases](knowledge-base.md), see the [Amazon Bedrock resource type reference](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/AWS_Bedrock.html) in the *AWS CloudFormation User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

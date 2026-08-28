@@ -15,3 +15,7 @@ When working with controls and OUs, consider the following properties:
 + Hook controls can now be deployed into any OU. The hook will deploy the AWSServiceRoleForControlTower Service Linked Role (SLR), into the account and activate the opt-in regions.
 
 For more information about how controls are applied to nested OUs, in AWS Control Tower, see [Nested Ous and controls](https://docs.aws.amazon.com/controltower/latest/userguide/nested-ous.html#nested-ous-and-controls).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

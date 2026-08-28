@@ -129,3 +129,7 @@ The following table describes how Elemental Live handles input failures, dependi
 This diagram illustrates scenario 1. Elemental Live stops ingesting input A and starts to ingest input B (the hot backup for input A). Note that both input A and input C are affected when the network goes offline, as shown in the diagram. The event starts to process the studio feed from network 2 instead of network 1.
 
 ![Network diagram showing RG1 inactive, RG2 active with Input B from Source 2, and Input D active.](http://docs.aws.amazon.com/elemental-live/latest/ug/images/2110-input-scenario-C-5.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

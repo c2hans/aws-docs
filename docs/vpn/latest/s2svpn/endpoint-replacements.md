@@ -33,3 +33,7 @@ AWS Site-to-Site VPN is a managed service, and periodically applies updates to y
 + When automated monitoring determines that a VPN tunnel endpoint is unhealthy
 
 AWS applies tunnel endpoint updates to one tunnel of your VPN connection at a time. During a tunnel endpoint update, your VPN connection might experience a brief loss of redundancy. It’s therefore important to configure both tunnels in your VPN connection for high availability.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS VPN. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpn` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

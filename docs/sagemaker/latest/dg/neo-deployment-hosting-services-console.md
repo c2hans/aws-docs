@@ -46,3 +46,7 @@ You must satisfy the [ prerequisites](https://docs.aws.amazon.com/sagemaker/late
 1. Choose **Save**.
 
 1. On the **New endpoint configuration** page, choose **Create endpoint configuration**, and then choose **Create endpoint**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

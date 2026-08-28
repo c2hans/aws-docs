@@ -40,3 +40,7 @@ If you are not based in the United States and your 10DLC brand registration fail
 1. Choose **Submit**.
 
 A support engineer will review your case and provide guidance on your registration issue. Response times depend on the severity level you selected and your support plan.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

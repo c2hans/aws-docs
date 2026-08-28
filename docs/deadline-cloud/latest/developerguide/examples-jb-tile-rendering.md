@@ -20,3 +20,7 @@ Renders a V-Ray scene by dividing the image into a configurable grid of regions 
 A companion job for the AWS blog post [Create a tile rendering job with modifications for AWS Deadline Cloud](https://aws.amazon.com/blogs/media/create-a-tile-rendering-job-with-modifications-for-aws-deadline-cloud/). The blog post walks through customizing the Deadline Cloud Maya adaptor and writing a tile rendering job template.
 
 Choose a tile count based on image size, scene complexity, and worker pool size. More regions create more parallelism but also add overhead. For small images, fewer regions can be faster. For large images and complex scenes, more regions can significantly reduce total render time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

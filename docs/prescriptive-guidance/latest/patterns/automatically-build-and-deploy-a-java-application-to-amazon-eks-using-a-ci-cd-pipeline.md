@@ -185,3 +185,7 @@ The code for this pattern is available in the GitHub [aws-codepipeline-devsecops
 + This pattern uses CodeGuru Reviewer as a static application security testing (SAST) tool for application code. You can also use this pipeline for other tools, such as SonarQube or Checkmarx. You can add the scan setup instructions for any of these tools to `buildspec/buildspec_secscan.yaml` to replace the CodeGuru scan instructions.
 **Note**
 As of November 7, 2025, you can't create new repository associations in Amazon CodeGuru Reviewer. To learn about services with capabilities similar to CodeGuru Reviewer, see [Amazon CodeGuru Reviewer availability change](https://docs.aws.amazon.com/codeguru/latest/reviewer-ug/codeguru-reviewer-availability-change.html) in the CodeGuru Reviewer documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -527,3 +527,7 @@ Amazon Kinesis Data Streams defines the following condition keys that can be use
 |   [kinesis:FisActionId](https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html)  | Filters access by the ID of an AWS FIS action | String |
 |   [kinesis:FisInjectPercentage](https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html)  | Filters access by the percentage of calls being affected by an AWS FIS action | Numeric |
 |   [kinesis:FisTargetArns](https://docs.aws.amazon.com/fis/latest/userguide/fis-actions-reference.html)  | Filters access by the ARN of an AWS FIS target | ArrayOfARN |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query service-authorization` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

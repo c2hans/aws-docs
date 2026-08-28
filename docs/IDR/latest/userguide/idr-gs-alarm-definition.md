@@ -17,3 +17,7 @@ When preparing alarms, we recommend the following best practices:
 For more information about defining and ingesting Amazon CloudWatch alarms see [Ingesting CloudWatch alarms](idr-gs-ingest-cw-alarms.md).
 
 For more information about ingesting third party Application Performance Monitoring alarms see [Ingesting Third Party Application Performance Monitoring Alarms](idr-gs-ingest-apm-alarms.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Incident Detection Response. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IDR` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,3 +25,7 @@ Implement a simple incident management process. You don't need complex framework
 The key is finding the sweet spot between vigilance and overhead. Use AWS tools to automate what you can, focus on monitoring metrics that impact customers, and keep your processes light enough to evolve as you grow.
 
 The next chapter explores how to foster a resilience mindset without sacrificing the speed and innovation that make startups special. At the end of the day, resilience is as much about people as it is about technology.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

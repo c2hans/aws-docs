@@ -14,3 +14,7 @@ The following best practices are general guidelines and don’t represent a comp
 + Be familiar with the [Shared Security Responsibility Model ](https://docs.aws.amazon.com/whitepapers/latest/aws-overview-security-processes/shared-security-responsibility-model.html) if you install third-party applications to the compute environment of AWS CloudShell.
 + Prepare rollback mechanisms before editing shell scripts that affect the user's shell experience. For more information about modifying the default shell environment, see [Modifying your shell with scripts](vm-specs.md#modifying-shell-scripts).
 + Store your code securely in a version control system.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

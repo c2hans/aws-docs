@@ -117,3 +117,7 @@ If you operate a service that relies on SageMaker training, it is highly recomme
 **If you are a client or a customer of a service that uses SageMaker AI training**
 
 If you are a client or customer of a service that uses SageMaker training, use your preferred method in the previous section to opt out of metadata collection.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -317,3 +317,7 @@ The following example shows how to share and unshare a key with crypto user (CU)
 + [Share a key using CloudHSM CLI](cloudhsm_cli-key-share.md)
 + [Unshare a key using CloudHSM CLI](cloudhsm_cli-key-unshare.md)
 + [Filter keys using CloudHSM CLI](manage-keys-cloudhsm-cli-filtering.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudHSM. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudhsm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

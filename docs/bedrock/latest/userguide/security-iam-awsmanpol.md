@@ -367,3 +367,7 @@ View details about updates to AWS managed policies for Amazon Bedrock since this
 | [AmazonBedrockFullAccess](#security-iam-awsmanpol-AmazonBedrockFullAccess) – New policy | Amazon Bedrock added a new policy to give users permissions to create, read, update, and delete resources. | December 12, 2023 |
 | [AmazonBedrockReadOnly](#security-iam-awsmanpol-AmazonBedrockReadOnly) – New policy | Amazon Bedrock added a new policy to give users read-only permissions for all actions. | December 12, 2023 |
 | Amazon Bedrock started tracking changes | Amazon Bedrock started tracking changes for its AWS managed policies. | December 12, 2023 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

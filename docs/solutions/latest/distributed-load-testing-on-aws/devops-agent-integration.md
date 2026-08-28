@@ -83,3 +83,7 @@ To get the most out of the AWS DevOps Agent integration, use it as part of an it
 
 **Note**
 Each test run supports one active investigation at a time. Archive a completed investigation from the **Investigations** tab before starting a new one on the same test run.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Distributed Load Testing on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

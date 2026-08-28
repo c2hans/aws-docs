@@ -16,3 +16,7 @@ Network Flow Monitor is intended for network operators and application developer
 Using a monitor, you can quickly visualize packet loss and latency of your network connections over a time frame that you specify. For each monitor, Network Flow Monitor also generates a network health indicator (NHI). The NHI value informs you whether there were AWS network issues for the network flows tracked by your monitor during the time period that you're evaluating. Using the NHI information, you can quickly decide whether to focus troubleshooting efforts on an AWS network issue or network problems originating with your workloads.
 
 To see an example of configuring and using Network Flow Monitor, see the following blog post: [ Visualizing network performance of your AWS Cloud workloads with Network Flow Monitor](https://aws.amazon.com/blogs/networking-and-content-delivery/visualizing-network-performance-of-your-aws-cloud-workloads-with-network-flow-monitor/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

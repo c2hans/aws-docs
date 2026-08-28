@@ -46,3 +46,7 @@ A common first step in implementing cost controls is to set up notifications whe
 +  [Create IAM Policy to control access to Amazon EC2 resources using Tags](https://aws.amazon.com/premiumsupport/knowledge-center/iam-ec2-resource-tags/)
 +  [Restrict the access of IAM Identity to specific Amazon EC2 resources](https://aws.amazon.com/premiumsupport/knowledge-center/restrict-ec2-iam/)
 +  [Slack integrations for Cost Anomaly Detection using Amazon Q Developer in chat applications](https://aws.amazon.com/aws-cost-management/resources/slack-integrations-for-aws-cost-anomaly-detection-using-aws-chatbot/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

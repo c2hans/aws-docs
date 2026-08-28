@@ -13,3 +13,7 @@ When using RLS policies in SQL statements, Amazon Redshift applies the following
 + For UPDATE, Amazon Redshift updates only the rows that are visible to you. If a policy restricts a subset of the rows in a table, then you can't update them.
 + For DELETE, you can delete only the rows that are visible to you. If a policy restricts a subset of the rows in a table, then you can't delete them. For TRUNCATE, you can still truncate the table.
 + For CREATE TABLE LIKE, tables created with the LIKE options won't inherit permission settings from the source table. Similarly, the target table won't inherit the RLS policies from source table.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

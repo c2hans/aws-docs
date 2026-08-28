@@ -11,3 +11,7 @@ When you create an AD Connector, Directory Service automatically creates and ass
 AD Connector instances are deployed across two Availability Zones in a Region by default and connected to your Amazon Virtual Private Cloud (VPC). AD Connector instances that fail are automatically replaced in the same Availability Zone using the same IP address.
 
 When you sign in to any AWS application or service integrated with an AD Connector (AWS IAM Identity Center included), the app or service forwards your authentication request to AD Connector which then forwards the request to a domain controller in your self-managed Active Directory for authentication. If you are successfully authenticated to your self-managed Active Directory, AD Connector then returns an authentication token to the app or service (similar to a Kerberos token). At this point, you can now access the AWS app or service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Directory Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query directoryservice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

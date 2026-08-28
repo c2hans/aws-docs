@@ -32,3 +32,7 @@ If you plan to use the IAM Identity Center directory as your identity source, an
 ![Console screenshot from AWS IAM Identity Center showing the Settings page with the Instance ARN circled.](http://docs.aws.amazon.com/transfer/latest/userguide/images/webapp-identity-center.png)
 
 1. Create one or more users and, optionally, groups, to use with your Transfer Family web app. If you're using an IAM Identity Center directory as your identity provider, you can also add users directly from the web app itself. For more information, see [Assign or add users or groups to a Transfer Family web app](webapp-add-users.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transfer Family. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transfer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

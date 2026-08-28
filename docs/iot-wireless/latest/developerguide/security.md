@@ -17,3 +17,7 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Data protection](data-protection.md)
 + [Identity and access management](security-iam.md)
 + [Infrastructure security and compliance validation](security-compliance-resiliency.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

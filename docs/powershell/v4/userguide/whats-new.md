@@ -32,3 +32,7 @@ Beginning with version 4.1.737 of the AWS Tools for PowerShell, the tools provid
 **November 18, 2024: Preview 1 release for version 5**
 
 Preview 1 of the AWS Tools for PowerShell version 5 was released on November 18, 2024. For more information about this preview, see the blog post [Preview 1 of AWS Tools for PowerShell V5](https://aws.amazon.com/blogs/developer/preview-1-of-aws-tools-for-powershell-v5/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Tools for PowerShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query powershell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

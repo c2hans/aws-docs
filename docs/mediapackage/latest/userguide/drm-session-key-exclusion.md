@@ -25,3 +25,7 @@ You can exclude session keys using two methods:
 
 **Note**
 If session key exclusion is enabled in the static configuration, it cannot be overridden using query parameters. This follows the standard MediaPackage pattern where static filters take precedence over dynamic parameters.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

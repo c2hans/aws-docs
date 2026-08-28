@@ -143,3 +143,7 @@ A newly created log analytics pipeline has one log source. You can add more log 
 1. Choose Create a source.
 
 1. Follow the instructions in [Instance Group](#instance-group-1), [Amazon EKS cluster](#amazon-eks-cluster-1), [Amazon S3](#amazon-s3-1), or [Syslog](#syslog-1) to create a log source according to your need.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Centralized Logging with OpenSearch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

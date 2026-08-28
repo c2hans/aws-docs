@@ -390,3 +390,7 @@ For release notes predating this document, which were published elsewhere on the
 | [Release: AWS Elastic Beanstalk support for enhanced health rule customization](https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-07-25-health-rules.html) | Elastic Beanstalk added the ability to ignore application HTTP 4xx errors when determining your environment's health. | July 25, 2018 |
 | [Release: AWS Elastic Beanstalk Windows Server platform update](https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-07-25-windows.html) | This release applies Windows July 2018 security updates to the Windows Server platform for Elastic Beanstalk, and updates platform configurations. The release also adds Amazon EC2 instance types in certain AWS Regions. | July 25, 2018 |
 | [Release: EB CLI 3.14.3](https://docs.aws.amazon.com/elasticbeanstalk/latest/relnotes/release-2018-07-19-ebcli-3_14_3.html) | The AWS Elastic Beanstalk Command Line Interface (EB CLI) released a new version with bug fixes and updates. | July 19, 2018 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

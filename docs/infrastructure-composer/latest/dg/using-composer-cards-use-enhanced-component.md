@@ -23,3 +23,7 @@ The **Resource properties** panel streamlines configuration and adds guiderails 
 
    The following image shows how this can be done:
 ![Selecting the Template View and modifying the infrastructure code from there.](http://docs.aws.amazon.com/infrastructure-composer/latest/dg/images/aac_ref_11.gif)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

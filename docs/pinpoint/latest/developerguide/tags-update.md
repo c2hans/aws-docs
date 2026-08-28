@@ -15,3 +15,7 @@ There are several ways to update (overwrite) a tag for an Amazon Pinpoint resour
 To update a tag for an Amazon Pinpoint project or for multiple resources at the same time, use the resource groups tagging operations of the AWS CLI or the [AWS Resource Groups Tagging API](https://docs.aws.amazon.com/resourcegroupstagging/latest/APIReference/Welcome.html). The Amazon Pinpoint API currently doesn’t provide direct support for either of those tasks.
 
 To update a tag for one resource, you can [remove the current tag](tags-remove.md) and [add a new tag](tags-add.md) by using the Amazon Pinpoint API.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -43,3 +43,7 @@ The following are the latest documentation updates for AWS Elastic Disaster Reco
 | Updated AWS managed policy | Updated the [AWSElasticDisasterRecoveryAgentPolicy ](security-iam-awsmanpol-AWSElasticDisasterRecoveryAgentPolicy.md) policy to support the kernel upgrade feature. | April 1, 2023 |
 | New AWS managed policy | Added the [AWSElasticDisasterRecoveryStagingAccountPolicy\_v2](security-iam-awsmanpol-AWSElasticDisasterRecoveryStagingAccountPolicy_v2.md) policy to support the recovery of source servers into a separate target account and to allow failing back. | December 11, 2022 |
 | Cross-Region failback and cross-Availability-Zone recovery | Added support for [cross-Region failback](failback-failover-region-region.md) and [cross-Availability-Zone recovery](failback-failover-cross-availability-zone-failback.md).  | November 27, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

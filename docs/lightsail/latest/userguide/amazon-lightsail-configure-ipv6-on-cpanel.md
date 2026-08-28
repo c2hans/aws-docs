@@ -107,3 +107,7 @@ Complete the following procedure to configure IPv6 on a cPanel & WHM instance in
 
    The result should look like the following example, which confirms that your instance is able to ping IPv6 addresses.
 ![Ping6 result.](http://docs.aws.amazon.com/lightsail/latest/userguide/images/lightsail-cpanel-ssh-ping6-result.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

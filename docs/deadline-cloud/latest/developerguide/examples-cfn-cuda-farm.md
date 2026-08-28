@@ -12,3 +12,7 @@ This template specializes the [Deploy a starter Deadline Cloud farm with CloudFo
 + The Linux CUDA fleet is required, and the Windows and Linux CPU fleets are removed.
 
 This template provisions the infrastructure that the [Train 3D Gaussian Splatting from video on Deadline Cloud](examples-jb-gaussian-splatting.md) and [Benchmark LLMs with vLLM and lm-evaluation-harness on Deadline Cloud](examples-jb-vllm-leaderboard.md) job bundles need.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

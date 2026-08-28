@@ -15,7 +15,7 @@ Note that the IVSBroadcastClient leverages [reflect-metadata](https://www.npmjs.
 ### Using a Script Tag​
 <a name="broadcast-web-how-to-install-script"></a>
 
-The Web broadcast SDK is distributed as a JavaScript library and can be retrieved at [https://web-broadcast.live-video.net/1.38.1/amazon-ivs-web-broadcast.js](https://web-broadcast.live-video.net/1.38.1/amazon-ivs-web-broadcast.js).
+The Web broadcast SDK is distributed as a JavaScript library and can be retrieved at [https://web-broadcast.live-video.net/1.39.0/amazon-ivs-web-broadcast.js](https://web-broadcast.live-video.net/1.39.0/amazon-ivs-web-broadcast.js).
 
 When loaded via `<script>` tag, the library exposes a global variable in the window scope named `IVSBroadcastClient`.
 
@@ -260,3 +260,7 @@ To unhide:
 let videoStream = client.getVideoInputDevice(VIDEO_DEVICE_NAME).source;
 videoStream.getVideoTracks()[0].enabled = true;
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon IVS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ivs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

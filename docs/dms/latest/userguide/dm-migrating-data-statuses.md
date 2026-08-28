@@ -22,3 +22,7 @@ For each data migration that you run, AWS DMS displays the **Status** in the AWS
 You can view log files if you select the check box for **Turn on CloudWatch logs** when you create your data migration.
 + `Deleting` – AWS DMS is deleting the data migration. AWS DMS sets this status after you choose to delete the data migration on the **Actions** menu.
 + `Maintenance` – AWS DMS puts a task in maintenance mode status when new image is deployed on the underlying serverless container associated with your data migration task.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

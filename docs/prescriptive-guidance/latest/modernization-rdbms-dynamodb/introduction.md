@@ -12,3 +12,7 @@ As an organization expands its business, the load on its information systems inc
 The first part of this guide provides an overview of DynamoDB features and benefits. The second part of the guide is based on a case study of an application that was migrated from an RDBMS (Microsoft SQL Server) to DynamoDB. It provides code examples to address two migration challenges: mapping relational data to the DynamoDB document structure and key-value collection, and changing the data access layer of the application to support create, read, update, and delete (CRUD) operations in DynamoDB.
 
 This guide is for program or project managers, database administrators, and database architects who are planning to migrate their RDBMS systems to DynamoDB to address their rapid application development (RAD) and high performance requirements. The guide assumes a basic understanding of relational databases and NoSQL concepts, but doesn't require DynamoDB skills or experience.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ AWS Data Pipeline uses certain characters that have a special meaning in pipelin
 | @ | Runtime field. This character is a field name prefix for a field that is only available when a pipeline runs. | @actualStartTime<br />@failureReason<br />@resourceStatus |
 | \# | Expression. Expressions are delimited by: "\#{" and "}" and the contents of the braces are evaluated by AWS Data Pipeline. For more information, see [Expressions](dp-pipeline-expressions.md). | \#{format(myDateTime,'YYYY-MM-dd hh:mm:ss')}<br />s3://amzn-s3-demo-bucket/\#{id}.csv |
 | \* | Encrypted field. This character is a field name prefix to indicate that AWS Data Pipeline should encrypt the contents of this field in transit between the console or CLI and the AWS Data Pipeline service. | \*password |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Data Pipeline. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datapipeline` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

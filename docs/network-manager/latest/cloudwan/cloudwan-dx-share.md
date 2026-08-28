@@ -34,3 +34,7 @@ The following steps guide you through creating a shared Direct Connect gateway a
 A Direct Connect gateway can be used for only one core network, and can't be used for any other Direct Connect gateway type. If the attachment between the Direct Connect gateway and the core network is removed, the gateway becomes available for other Direct Connect association types.
 
 1. Choose **Create attachment**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

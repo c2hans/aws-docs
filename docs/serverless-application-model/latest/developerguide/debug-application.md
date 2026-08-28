@@ -16,3 +16,7 @@ If your application includes one or more layers, when you locally run and debug 
 + [Locally debug functions with AWS SAM](serverless-sam-cli-using-debugging.md)
 + [Pass multiple runtime arguments when debugging with AWS SAM](serverless-sam-cli-using-debugging-additional-arguments.md)
 + [Validate your AWS SAM applications with CloudFormation Linter](validate-cfn-lint.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Serverless Application Model. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query serverless-application-model` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

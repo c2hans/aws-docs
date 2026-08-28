@@ -22,3 +22,7 @@ Access to Amazon File Cache by using the network is through AWS-published APIs. 
 <a name="inter-network-traffic-privacy-within-region"></a>
 
 An Amazon Virtual Private Cloud (Amazon VPC) endpoint for Amazon File Cache is a logical entity within a VPC that allows connectivity only to Amazon File Cache. The Amazon VPC routes API requests to Amazon File Cache and routes responses back to the VPC. For more information, see [VPC Endpoints](https://docs.aws.amazon.com/vpc/latest/userguide/vpc-endpoints.html) in the *Amazon VPC User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

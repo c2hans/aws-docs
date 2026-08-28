@@ -14,3 +14,7 @@ Before you create the channel, you must have an input security group that contai
    If you already have an input security group with the appropriate CIDR rules, you can reuse it. The same input security group can be used for both input security and channel security.
 
 1. Make a note of the input security group ID. You will need this when you create the channel.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

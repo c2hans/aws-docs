@@ -23,3 +23,7 @@ Use these basic column recipe actions to perform simple transformations on your 
 + [TO\_DOUBLE\_COLUMN](recipe-actions.TO_DOUBLE_COLUMN.md)
 + [TO\_NUMBER\_COLUMN](recipe-actions.TO_NUMBER_COLUMN.md)
 + [TO\_STRING\_COLUMN](recipe-actions.TO_STRING_COLUMN.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue DataBrew. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query databrew` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

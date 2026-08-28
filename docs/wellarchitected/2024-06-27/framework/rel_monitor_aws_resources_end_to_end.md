@@ -66,3 +66,7 @@ Trace requests as they process through service components so product teams can m
 + [AWS X-Ray](https://aws.amazon.com/xray/)
 + [ Amazon CloudWatch ](https://aws.amazon.com/pm/cloudwatch/)
 + [ Amazon Route 53 ](https://aws.amazon.com/route53/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

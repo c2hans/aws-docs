@@ -16,3 +16,7 @@ Amazon EC2 is a good migration option for your SQL Server database when:
 + You want to achieve higher IOPS and storage capacity than the current limits. For details, see [Amazon RDS DB instance storage](https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Storage.html) in the Amazon RDS documentation.
 
 For a list of currently supported SQL Server features and versions on Amazon EC2, see [Choosing between Amazon EC2 and Amazon RDS](comparison.md) later in this guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

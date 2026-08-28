@@ -24,3 +24,7 @@ Origin request policies and cache policies have settings that might appear to co
   <tr><td><b>Block list</b><br /><b>Note:</b> You cannot specify headers in a cache policy block list.</td><td>All query strings and cookies from the viewer request <i><b>except</b></i> those specified are included in the origin request.</td><td>All values from the viewer request are included in the origin request.</td><td>The values specified in the origin request policy are included in the origin request, even if those same values are specified in the cache policy block list. The origin request policy allow list overrides the cache policy block list.</td><td>All values from the viewer request <i><b>except</b></i> those specified in the cache policy or the origin request policy are included in the origin request.</td></tr>
 </tbody>
 </table>
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudFront. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudFront` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

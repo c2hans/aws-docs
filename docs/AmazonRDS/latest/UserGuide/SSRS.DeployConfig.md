@@ -28,3 +28,7 @@ After you have access to the web portal, you can deploy reports to it. You can u
 After you deploy a report to SSRS or PBIRS, you must configure the report data source. When you configure the report data source, ensure the following:
 + For RDS for SQL Server DB instances joined to AWS Directory Service for Microsoft Active Directory, use the fully qualified domain name (FQDN) as the data source name of the connection string. An example is `{{myssrsinstance.corp-ad.example.com}}`, where `{{myssrsinstance}}` is the DB instance name and `{{corp-ad.example.com}}` is the fully qualified domain name.
 + For RDS for SQL Server DB instances joined to self-managed Active Directory, use `{{.}}`, or `{{LocalHost}}` as the data source name of the connection string.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

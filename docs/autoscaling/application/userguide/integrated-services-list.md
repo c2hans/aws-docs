@@ -32,3 +32,7 @@ The following table lists the AWS services that you can use with Application Aut
 |  [Custom resources](services-that-can-integrate-custom.md)  |  ![](http://docs.aws.amazon.com/autoscaling/application/userguide/images/icon-no.png) No  |  ![](http://docs.aws.amazon.com/autoscaling/application/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/autoscaling/application/userguide/images/icon-yes.png) Yes  |  ![](http://docs.aws.amazon.com/autoscaling/application/userguide/images/icon-yes.png) Yes  |
 
 ¹ Console access for configuring scaling policies. Most services don't support configuring scheduled scaling from the console. Currently, only Amazon WorkSpaces Applications, ElastiCache, and Spot Fleet provide console access for scheduled scaling.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

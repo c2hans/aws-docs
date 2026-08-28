@@ -22,3 +22,7 @@ The following examples describe using the AMS console to submit an incident. Onc
 <a name="incident-testing"></a>
 
 When testing AMS incident submissions, we ask that you include in the subject text this flag: **AMSTestNoOpsActionRequired**. This flag lets AMS know that the incident submission is only for testing. When AMS operations engineers see that flag, they will not respond in any way to the incident submission.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -31,3 +31,7 @@ Verify that logging is turned on to assist in identifying the cause of failure. 
 
   This can occur with a particular request payload or Message type (E.g. Data for FCM, Silent for APNs). For example, if messages are received as alert/ notification payload but not as data/silent payload, check what the intended action is when a message type of data, notification, alert, or background is received on your application, and whether the application can handle the different message types.
 + To troubleshoot, incorporate log statements in your app’s message handler. For an example, see [FCM](https://firebase.google.com/docs/cloud-messaging/android/receive) and [APNs](https://developer.apple.com/documentation/uikit/uiapplicationdelegate/1623013-application). This will help determine whether the the notification is received by the device but not displayed in the system notifications tray.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Pinpoint. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query pinpoint` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

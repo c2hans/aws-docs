@@ -231,3 +231,7 @@ Resources:
 When you use CloudFormation to perform drift detection for `AccountAuditConfiguration`, it won't compare values that aren't part of the stack template. In `AccountAuditConfiguration`, specifying a configuration for every check is optional, and skipped checks are interpreted as disabled. To have accurate drift detection with CloudFormation, include configurations (enabled or disabled) for all the 14 audit checks in your template. For more information on the audit checks see [AWS::IoT::AccountAuditConfiguration AuditCheckConfigurations](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-iot-accountauditconfiguration-auditcheckconfigurations.html).
 
 For more information, see [Detecting unmanaged configuration changes to stacks and resources](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-stack-drift.html) in the *user guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -239,3 +239,7 @@ Token passthrough (`JWT_PASSTHROUGH`) is **not** the recommended approach for pr
 
 **Warning**
 The identity-forwarding configurations in this section rely solely on the downstream runtime to authorize requests; the gateway adds no authorization of its own. They are intended for testing, experimentation, and low-disruption onboarding. For a production gateway, enforce authorization at the gateway — configure JWT or IAM inbound authorization, attach a policy engine, or use an interceptor Lambda function. To ensure callers cannot bypass the gateway once you adopt it, see [Enforcing traffic through the gateway](gateway-target-http-runtime.md#gateway-target-http-runtime-source-validation).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

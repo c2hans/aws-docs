@@ -18,3 +18,7 @@ If you set up multiple Prometheus instances that monitor the same set of metrics
 + [Set up ingestion from a new Prometheus server using Helm](AMP-onboard-ingest-metrics-new-Prometheus.md)
 + [Set up ingestion from an existing Prometheus server in Kubernetes on EC2](AMP-onboard-ingest-metrics-existing-Prometheus.md)
 + [Set up ingestion from an existing Prometheus server in Kubernetes on Fargate](AMP-onboard-ingest-metrics-existing-Prometheus-fargate.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Service for Prometheus. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prometheus` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

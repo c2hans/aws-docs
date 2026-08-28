@@ -38,3 +38,7 @@ The .NET agent is flexible and you can freely customize the transformation plan,
 If a plan needs to be reviewed by multiple stakeholders, you can download the plan as a markdown file, share it, and later upload a customized plan.
 
 For example, you review the transformation plan, and decide you want the class library projects transformed to .NET Standard instead of .NET 10. In chat you say, "Revise the plan to transform all class libraries to .NET Standard 2.0" and the agent presents you with a revised plan.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

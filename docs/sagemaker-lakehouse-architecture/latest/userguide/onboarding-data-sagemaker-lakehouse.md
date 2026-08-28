@@ -63,3 +63,7 @@ Combining data from data warehouses and data lakes in the lakehouse architecture
 + **Streamlined connectivity** – Unified interface for connecting to diverse data sources.
 + **Fine-grained permissions** – Catalog, database, table, and column-level access controls.
 + **Cross-source analytics** – Support for ad hoc reporting and federated queries across multiple data sources.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker lakehouse architecture. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-lakehouse-architecture` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

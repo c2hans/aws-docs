@@ -11,3 +11,7 @@ To help you understand how AWS AppSync Events works, the following tutorials wal
 + [Persist user messages with a DynamoDB table integration](dynamodb-table-integration-tutorial.md)
 + [Create a wscat clone with with NodeJs and IAM auth](create-wscat-clone.md)
 + [Publishing from a NodeJS Lambda function with IAM auth](lambda-iam-auth.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

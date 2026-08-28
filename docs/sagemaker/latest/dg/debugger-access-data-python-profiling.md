@@ -80,3 +80,7 @@ The following methods are available for the `cProfileAnalysis` and `Pyinstrument
 The `cProfileAnalysis` class specific methods:
 +  `fetch_profile_stats_by_training_phase()` – Fetches and aggregates the Python profiling stats for every possible combination of start and end modes. For example, if a training and validation phases are done while detailed profiling is enabled, the combinations are `(PRE_STEP_ZERO, TRAIN)`, `(TRAIN, TRAIN)`, `(TRAIN, EVAL)`, `(EVAL, EVAL)`, and `(EVAL, POST_HOOK_CLOSE)`. All stats files within each of these combinations are aggregated.
 +  `fetch_profile_stats_by_job_phase()` – Fetches and aggregates the Python profiling stats by job phase. The job phases are `initialization` (profiling until step 0), `training_loop` (training and validation), and `finalization` (profiling after the hook is closed).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

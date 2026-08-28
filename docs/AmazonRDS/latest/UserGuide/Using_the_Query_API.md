@@ -24,3 +24,7 @@ For information about Amazon RDS Regions and endpoints, go to [Amazon Relational
 <a name="query-authentication"></a>
 
 You can only send Query requests over HTTPS, and you must include a signature in every Query request. You must use either AWS signature version 4 or signature version 2. For more information, see [ Signature Version 4 signing process](https://docs.aws.amazon.com/general/latest/gr/signature-version-4.html) and [ Signature version 2 signing process](https://docs.aws.amazon.com/general/latest/gr/signature-version-2.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

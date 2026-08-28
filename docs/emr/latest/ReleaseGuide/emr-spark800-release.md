@@ -76,6 +76,7 @@ The following release notes include information for Amazon EMR release 8.0.0 (em
 + Glue Managed Compaction is not supported on Iceberg tables that use the VARIANT data type.
 + AL2023 ships Python 3.9 as the system Python, but it is not supported for PySpark workloads.
 + The maximum number of steps you can add or cancel per request is 100.
++ Configuring `yarn.nodemanager.log-dirs` with a value of length longer than 512 characters will cause S3 log upload to fail.
 
 ### Migration from EMR 7.x (Spark 3.5.x)
 <a name="emrspark800-migration"></a>
@@ -215,3 +216,7 @@ Reconfiguration actions occur when you specify a configuration for instance grou
 | Date | Event | Description |
 | --- | --- | --- |
 | 2026-05-21 | Docs publication | Amazon EMR Spark 8.0.0 (emr-spark-8.0.0) release notes first published |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

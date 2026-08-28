@@ -90,3 +90,7 @@ aws apprunner update-service
 To rebuild your failed service using the App Runner API or AWS CLI, call the [UpdateService](https://docs.aws.amazon.com/apprunner/latest/api/API_UpdateService.html) API action without making any changes to source or configuration of your service. Choose to rebuild without making updates only if your service creation failed due a temporary issue with App Runner.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

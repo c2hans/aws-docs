@@ -12,4 +12,8 @@ The `visibleServices` and `visibleRegions` settings control only the appearance 
 
 For more information about UXC features and console procedures, see [Getting started with AWS User Experience Customization](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/getting-started-uxc.html). For information about required permissions, see [Identity and access management for AWS Management Console](https://docs.aws.amazon.com/awsconsolehelpdocs/latest/gsg/security_iam.html).
 
-This document was last published on August 24, 2026.
+This document was last published on August 28, 2026.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS User Experience Customization Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awsconsolehelpdocs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

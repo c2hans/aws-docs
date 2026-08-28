@@ -40,3 +40,7 @@ When you delegate multiple levels of subdomains in DNS, it is important to alway
 **Size of DNS response**
 Avoid creating large single responses. If responses are larger than 512 bytes, many DNS resolvers must retry over TCP instead of UDP, which can reduce reliability and lead to slower responses. We recommend using multivalue answer routing, which chooses eight healthy random IP addresses to keep responses within the 512 byte boundary.
 For more information, see [Multivalue answer routing](routing-policy-multivalue.md) and [DNS Reply Size Test Server](https://www.dns-oarc.net/oarc/services/replysizetest/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

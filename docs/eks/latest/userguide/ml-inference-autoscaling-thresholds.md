@@ -339,3 +339,7 @@ Using the metrics observed at the saturation point, you determine the thresholds
 +  **Scale-down** — the rate at which the autoscaler removes replicas after demand drops. Scale down more slowly than you scale up. For this example, scale down only when queue depth is `0` and p95 end-to-end latency is below 3 seconds for 5 minutes. This prevents the autoscaler from removing replicas during short pauses in traffic and helps avoid oscillation.
 
 These values provide a starting point for configuring autoscaling in the next section. Repeat this process for your own model, GPU type, and request patterns to determine the appropriate thresholds for your deployment.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

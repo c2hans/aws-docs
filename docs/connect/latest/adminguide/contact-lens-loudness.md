@@ -15,3 +15,7 @@ We recommend using loudness scores together with sentiments. Look for areas of t
 For example, the following is an image of a recording and transcript analysis. Spiked vertical bars indicate where the customer is talking loudly. The horizontal red bars indicate their sentiment is negative.
 
 ![The contact details page, loudness scores.](http://docs.aws.amazon.com/connect/latest/adminguide/images/contact-lens-amplitude.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

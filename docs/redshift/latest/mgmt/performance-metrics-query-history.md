@@ -59,3 +59,7 @@ The Amazon Redshift console graphs only contain data for the latest 100,000 quer
 ![Line graph showing the percentage of storage capacity used in increments of 15 minutes.](http://docs.aws.amazon.com/redshift/latest/mgmt/images/query-history-storage-capacity-used.png)
 + **Active database connections**
 ![Line graph showing the number of active database connections in increments of 15 minutes.](http://docs.aws.amazon.com/redshift/latest/mgmt/images/query-history-active-database-connections.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

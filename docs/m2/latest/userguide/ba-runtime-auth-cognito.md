@@ -168,3 +168,7 @@ Replace the following placeholders as described:
 1. For {{redirect-uri}} enter the URI that you specified for **Allowed callback URL**. In our example it is `http://localhost:8080/planetsdemo/login/oauth2/code/cognito`.
 
 You can now deploy your Gapwalk application and use the user created previously to sign in to your app.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -40,3 +40,7 @@ AWS Prescriptive Guidance has the following resources that can help you plan and
 + [Large migrations to the AWS cloud](https://aws.amazon.com/prescriptive-guidance/large-migrations/?large-migration-strategies.sort-by=item.additionalFields.sortText&large-migration-strategies.sort-order=desc&large-migration-playbooks.sort-by=item.additionalFields.sortText&large-migration-playbooks.sort-order=desc&large-migration-patterns.sort-by=item.additionalFields.sortText&large-migration-patterns.sort-order=desc)
 + [Strategy and best practices for AWS large migrations](https://docs.aws.amazon.com/prescriptive-guidance/latest/strategy-large-scale-migrations/welcome.html)
 + [Migrate shared file systems in an AWS large migration](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/migrate-shared-file-systems-in-an-aws-large-migration.html) – This resource includes an **SFS-Discovery-Workbook** that you can download and use to plan a migration at the file share level.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DataSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query datasync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

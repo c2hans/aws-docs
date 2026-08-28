@@ -17,3 +17,7 @@ You can use the AWS Device Farm console, AWS Command Line Interface (AWS CLI), o
 + [Viewing a list of runs in AWS Device Farm](how-to-view-runs-list.md)
 + [Creating a device pool in AWS Device Farm](how-to-create-device-pool.md)
 + [Analyzing test results in AWS Device Farm](analyzing-results.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Device Farm. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devicefarm` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -26,3 +26,7 @@ The following steps allow you to provide your users with the ability to create g
    For more information about quotas, see [Connect Customer quotas](amazon-connect-service-limits.md#connect-quotas).
 **Note**
 Disconnect flow workflows count as their own contacts, so if you are setting both a `DefaultFlowID` and `DisconnectFlowID`, they will be counted as two active contacts.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

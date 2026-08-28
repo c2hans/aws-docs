@@ -37,3 +37,7 @@ To get the license savings for your SQL HA workload, your environment must meet 
 + You must attach the **AWSEC2SqlHaInstancePolicy** managed policy to your instance role or use a custom role with the required permissions for the Amazon EC2 to access your instances, including permissions for AWS Systems Manager to run commands, access to AWS Secrets Manager for retrieving SQL Server credentials, and Amazon EC2 permissions to read instance metadata.
 + By default, AWS Systems Manager uses the built-in `[NT AUTHORITY\SYSTEM]` user to access SQL Server HA metadata. You will need to store secrets in AWS Secrets Manager only when your security policies have restricted or disabled the `[NT AUTHORITY\SYSTEM]` account.
 + Network connectivity allows AWS Systems Manager commands to reach your instances.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SQL Server on Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sql-server-ec2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

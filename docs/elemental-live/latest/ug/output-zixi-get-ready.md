@@ -20,3 +20,7 @@ Before you create a Zixi output in your event, perform the following preparation
   + Make sure that the administrator of the downstream system sets up to allow Elemental Live to access the destination. For example, they might need to open ports on the destination, or allow traffic from the public IP address of Elemental Live.
   + Tell the downstream destination the latency (in milliseconds) that you plan to configure into Elemental Live for packet loss and recovery. Packet recovery is a key feature of Zixi. The downstream destination should choose a latency value that is close to the value that you plan to use.
   +
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

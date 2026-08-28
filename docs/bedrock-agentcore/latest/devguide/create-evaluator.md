@@ -381,3 +381,7 @@ Writing well-structured evaluator instructions is critical for accurate assessme
 + Context Management: In your instruction, choose context placeholders strategically based on your specific requirements. Find the right balance between providing sufficient information and avoiding evaluator confusion. Adjust context depth according to your judge model’s capabilities and limitations.
 + Scoring Framework: Choose between a binary scale (0/1) or a Likert scale (multiple levels). Clearly define the meaning of each score level. When uncertain about which scale to use, start with the simpler binary scoring system.
 + Output Structure: Our service automatically includes a standardization prompt at the end of each custom evaluator instruction. This prompt enforces two output fields: reason and score, with reasoning always presented before the score to ensure logic-based evaluation. Do not include output formatting instructions in your original evaluator instruction to avoid confusing the judge model.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

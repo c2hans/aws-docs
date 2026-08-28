@@ -33,3 +33,7 @@ The following rules apply when using the Route Analyzer:
 + The transit gateways must be registered in your global network.
 + The Route Analyzer does not analyze security group rules or network ACL rules. To capture information about accepted and rejected IP traffic in your VPC, you can use [VPC flow logs](https://docs.aws.amazon.com/vpc/latest/userguide/flow-logs.html).
 + The Route Analyzer only returns information for the return path if it can successfully return information for the forward path.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

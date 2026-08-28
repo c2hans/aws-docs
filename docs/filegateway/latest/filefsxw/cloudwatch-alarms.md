@@ -33,3 +33,7 @@ The following table describes CloudWatch alarm states.
 | **Insufficient data** | The alarm has just started, the metric is not available, or not enough data is available for the metric to determine the alarm state. |
 | **None** | No alarms are created for the gateway. To create a new alarm, see [Create a custom CloudWatch alarm for your gateway](cloudwatch-alarms-create-alarm.md). |
 | **Unavailable** | The state of the alarm is unknown. Choose **Unavailable** to view error information in the **Monitoring** tab. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

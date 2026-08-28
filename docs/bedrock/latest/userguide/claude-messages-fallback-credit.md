@@ -106,3 +106,7 @@ When a fallback credit token is successfully redeemed, the retry request receive
 1. The retry is billed at reduced rates for the overlapping cached prefix.
 
 If the token is `null`, expired, or invalid — retry normally without it. The credit is a cost optimization, not a functional requirement for the retry to succeed.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

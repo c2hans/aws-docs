@@ -28,3 +28,7 @@ The following applies for principals:
 + Principals can only modify resources, such as load balancers, that they own themselves. They cannot modify resources specified in a cross-account attachment, because the resources belong to the resource owner.
 
 Although principals cannot modify the actual cross-account resources, based on a cross-account attachment, the resource owner can create an IAM role that provides permission to access the resource. Then, the owner can grant a principal permissions to assume the role, so that the principal can access the resource, however the owner has specified through the role's permissions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

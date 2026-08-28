@@ -37,3 +37,7 @@ The Amazon WorkSpaces API endpoint supports VPC endpoints in all AWS Regions whe
 To learn more about AWS PrivateLink, see the [AWS PrivateLink documentation](https://docs.aws.amazon.com/AmazonVPC/latest/UserGuide/VPC_Introduction.html#what-is-privatelink). For the price of VPC endpoints, see [VPC Pricing](https://aws.amazon.com/vpc/pricing/). To learn more about VPC and endpoints, see [Amazon VPC](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html).
 
 To see a list of Amazon WorkSpaces API endpoints by Region, see [WorkSpaces API Endpoints](workspaces-port-requirements.md#workspaces_api_endpoints).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

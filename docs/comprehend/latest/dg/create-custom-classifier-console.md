@@ -98,3 +98,7 @@ The console displays the **Classifiers** page. The new classifier appears in the
 If Amazon Comprehend encountered errors during creation or training, the status changes to `In error`. You can choose a classifier job in the table to get more information about the classifier, including any error messages.
 
 ![The custom classifier list.](http://docs.aws.amazon.com/comprehend/latest/dg/images/class-list.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

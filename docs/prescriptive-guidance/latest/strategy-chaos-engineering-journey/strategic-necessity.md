@@ -77,3 +77,7 @@ To address the prevention paradox, your organization can take specific steps to 
 + Break down prevention efforts into visible milestones and achievements.
 + Build institutional memory on why preventive measures exist and their historical importance.
 + Regularly educate stakeholders on the value of resilience and chaos engineering practices.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

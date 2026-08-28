@@ -17,3 +17,7 @@ Resources in AWS Panorama include devices, application node packages, and applic
 When you use the AWS Panorama Application CLI, AWS Command Line Interface, or AWS SDK with the AWS Panorama service, quotas apply to the number of API calls that you make. You can make up to 5 requests total per second. A subset of API operations that create or modify resources apply an additional limit of 1 request per second.
 
 For a complete list of quotas, visit the [Service Quotas console](https://console.aws.amazon.com/servicequotas/home/services/panorama/quotas), or see [AWS Panorama endpoints and quotas ](https://docs.aws.amazon.com/general/latest/gr/panorama.html) in the Amazon Web Services General Reference.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Panorama. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query panorama` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -14,3 +14,7 @@ The AWS Toolkit for Visual Studio Code provides support for [AWS Serverless Appl
 + [Running and debugging local Amazon API Gateway resources](debug-apigateway.md)
 + [Configuration options for debugging serverless applications](serverless-apps-run-debug-config-ref.md)
 + [Troubleshooting serverless applications](serverless-apps-troubleshooting.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Toolkit for Visual Studio Code. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query toolkit-for-vscode` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

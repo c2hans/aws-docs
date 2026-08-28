@@ -40,6 +40,7 @@ The following Local Zones are available in North America:
 | --- | --- | --- | --- | --- | --- | --- |
 | México (Querétaro) | us-east-1-qro-1a | use1-qro1-az1 | us-east-1-qro-1 | us-east-1 | use1-az1 | Mexico |
 | US East (Atlanta) 2 | us-east-1-atl-2a | use1-atl2-az1 | us-east-1-atl-2 | us-east-1 | use1-az5 | Georgia, United States of America |
+| US East (Atlanta) 2 | us-east-1-atl-2b | use1-atl2-az2 | us-east-1-atl-2 | us-east-1 | use1-az2 | Georgia, United States of America |
 | US East (Atlanta)\* | us-east-1-atl-1a | use1-atl1-az1 | us-east-1-atl-1 | us-east-1 | use1-az4 | Georgia, United States of America |
 | US East (Boston) | us-east-1-bos-1a | use1-bos1-az1 | us-east-1-bos-1 | us-east-1 | use1-az4 | Massachusetts, United States of America |
 | US East (Chicago) 2 | us-east-1-chi-2a | use1-chi2-az1 | us-east-1-chi-2 | us-east-1 | use1-az6 | Illinois, United States of America |
@@ -175,3 +176,7 @@ The following example shows an output of the `describe-availability-zones` comma
             "GroupLongName": "US West (Los Angeles)"
         }
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Local Zones. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query local-zones` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

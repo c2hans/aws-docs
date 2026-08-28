@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/nhs-cloud-security-gu
  **Applicable risk classes:** III-V
 
  The AWS CloudTrail service, described in greater detail in Principle 13, provides the basis for an auditing solution to record such access. It may be configured to capture AWS sign-in and API call events, and access to data stored in Amazon S3 buckets. In addition, the CloudWatch Logs service can be used to log instance-level data access, such as configuration files, etc. Finally, partner products from the AWS Marketplace can fulfil more specialised requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

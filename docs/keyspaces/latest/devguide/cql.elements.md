@@ -210,3 +210,7 @@ For single-field data types such as `float`, `int`, `UUID`, and `date`, you also
 | `uuid` | string | string | See [constants](#cql.elements.constants) for the UUID format. |
 | `varchar` | string | string | Uses JSON character escape `\u`. |
 | `varint` | integer, string | integer | Variable length; might overflow 32-bit or 64-bit integers in client-side decoder. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Keyspaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query keyspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

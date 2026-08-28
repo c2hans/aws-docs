@@ -58,3 +58,7 @@ The following table describes the documentation for this release of Compute Opti
 | [Recommendations export](#doc-history) | Recommendations can be exported to Amazon Simple Storage Service (Amazon S3). For more information, see [Exporting recommendations](https://docs.aws.amazon.com/compute-optimizer/latest/ug/exporting-recommendations.html). | June 10, 2020 |
 | [Self-service opt-out](#doc-history) | AWS Command Line Interface now supports self-service opt-out. For more information, see [Opting out your account](https://docs.aws.amazon.com/compute-optimizer/latest/ug/getting-started.html#account-opt-out). | April 6, 2020 |
 | [Service release](#doc-history) | Compute Optimizer released. | December 2, 2019 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Compute Optimizer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query compute-optimizer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

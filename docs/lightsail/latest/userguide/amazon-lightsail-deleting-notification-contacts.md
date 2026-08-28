@@ -63,3 +63,7 @@ Complete the following steps to delete notification contacts for Lightsail using
 There are a couple of additional tasks that you can perform after deleting your notification contacts:
 + Deleting notification contacts stops email and SMS text messaging notifications, but it does not stop notification banners from displaying in the Lightsail console. To stop notification banners, and to also stop email and SMS text messaging notifications, disable or delete the alarms that are causing them. For more information, see [Delete or disable metric alarms](amazon-lightsail-deleting-health-metric-alarms.md).
 + Add your email address and mobile phone number in Lightsail as notification contacts to start receiving email and SMS text messaging notifications again. For more information, see [Add notification contacts](amazon-lightsail-adding-editing-notification-contacts.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lightsail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lightsail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

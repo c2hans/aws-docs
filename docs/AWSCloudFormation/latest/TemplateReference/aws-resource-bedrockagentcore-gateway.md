@@ -36,7 +36,8 @@ To declare this entity in your CloudFormation template, use the following syntax
       "[ProtocolConfiguration](#cfn-bedrockagentcore-gateway-protocolconfiguration)" : {{GatewayProtocolConfiguration}},
       "[ProtocolType](#cfn-bedrockagentcore-gateway-protocoltype)" : {{}},
       "[RoleArn](#cfn-bedrockagentcore-gateway-rolearn)" : {{String}},
-      "[Tags](#cfn-bedrockagentcore-gateway-tags)" : {{{{{Key}}: {{Value}}, ...}}}
+      "[Tags](#cfn-bedrockagentcore-gateway-tags)" : {{{{{Key}}: {{Value}}, ...}}},
+      "[WafConfiguration](#cfn-bedrockagentcore-gateway-wafconfiguration)" : {{WafConfiguration}}
     }
 }
 ```
@@ -65,6 +66,8 @@ Properties:
   [RoleArn](#cfn-bedrockagentcore-gateway-rolearn): {{String}}
   [Tags](#cfn-bedrockagentcore-gateway-tags): {{
     {{Key}}: {{Value}}}}
+  [WafConfiguration](#cfn-bedrockagentcore-gateway-wafconfiguration): {{
+    WafConfiguration}}
 ```
 
 ## Properties
@@ -158,6 +161,12 @@ The tags for the gateway.
 *Maximum*: `256`
 *Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
 
+`WafConfiguration`  <a name="cfn-bedrockagentcore-gateway-wafconfiguration"></a>
+The AWS WAF configuration for the gateway. This configuration controls how the gateway behaves when the associated web ACL cannot be evaluated.
+*Required*: No
+*Type*: [WafConfiguration](aws-properties-bedrockagentcore-gateway-wafconfiguration.md)
+*Update requires*: [No interruption](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/using-cfn-updating-stacks-update-behaviors.html#update-no-interrupt)
+
 ## Return values
 <a name="aws-resource-bedrockagentcore-gateway-return-values"></a>
 
@@ -200,3 +209,10 @@ The status reasons for the target status.
 
 `UpdatedAt`  <a name="UpdatedAt-fn::getatt"></a>
 The date and time at which the target was updated.
+
+`WebAclArn`  <a name="WebAclArn-fn::getatt"></a>
+Property description not available.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudFormation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSCloudFormation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

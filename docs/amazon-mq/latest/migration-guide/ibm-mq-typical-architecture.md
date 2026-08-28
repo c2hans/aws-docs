@@ -34,3 +34,7 @@ source_url: https://docs.aws.amazon.com/amazon-mq/latest/migration-guide/ibm-mq-
  The **Multi-Instance queue manager** is comprised of a single queue manager with identical queues on both servers, and two distinct IP addresses. If failure is detected, a queue manager must be manually activated on the seconrd server and channel connections must be changed, resulting in possible service interruptions.
 
 To ensure disaster recovery, data is replicated in real-time to a separate server in a different location. In case of a disaster, manual effort is required to process the data stored on the Disaster Recovery (DR) server, and change channel connections, resulting in possible service interruptions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon MQ. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazon-mq` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

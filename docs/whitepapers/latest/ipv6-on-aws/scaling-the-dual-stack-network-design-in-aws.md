@@ -85,3 +85,7 @@ AWS Global Accelerator supports IPv6 dual-stack implementations.
 1.  As soon as the first byte arrives from the origin, CloudFront begins to respond the files to the viewer. CloudFront also adds the image file to the cache in the edge location based on the cache headers.
 
 ![This is a diagram that illustrates Amazon CloudFront dual-stack IPv4/IPv6 support.](http://docs.aws.amazon.com/whitepapers/latest/ipv6-on-aws/images/amazon-cloudfront-dual-stack-ipv4ipv6-support.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

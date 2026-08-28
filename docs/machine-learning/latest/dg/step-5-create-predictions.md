@@ -126,3 +126,7 @@ Each row of the batch result corresponds to a row in your batch input (an observ
 After analyzing the predictions, you can execute your targeted marketing campaign; for example, by sending fliers to everyone with a predicted score of `1`.
 
 Now that you have created, reviewed, and used your model, [clean up the data and AWS resources you created](step-6-clean-up.md) to avoid incurring unnecessary charges and to keep your workspace uncluttered.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Machine Learning. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query machine-learning` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

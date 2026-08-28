@@ -147,3 +147,7 @@ The Web Client host should also be able to send requests to the hosts the Handle
 1. Load your certificate onto the instance and take note of the path to the **certificate file**, **key file**, and **keystore** file.
 
    If you do not already have a certificate, you can create one. For more information, see [Generating a self-signed certificate](generate-certs.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

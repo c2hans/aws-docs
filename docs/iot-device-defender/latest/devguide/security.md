@@ -18,3 +18,7 @@ This documentation helps you understand how to apply the shared responsibility m
 + [Identity and access management for AWS IoT Device Defender](security-iam.md)
 + [Compliance validation for AWS IoT Device Defender](compliance-validation.md)
 + [Resilience in AWS IoT Device Defender](disaster-recovery-resiliency.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Device Defender. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-device-defender` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

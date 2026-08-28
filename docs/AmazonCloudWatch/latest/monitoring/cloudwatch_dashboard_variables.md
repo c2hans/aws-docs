@@ -34,3 +34,7 @@ Property variables apply to most use cases and are less complex to set up.
 + [Copying a variable to another CloudWatch dashboard](cloudwatch_dashboard_variables_copy.md)
 + [Tutorial: Creating a dashboard that uses a regular expression pattern to switch between AWS Regions](cloudwatch_dashboard_variables_pattern.md)
 + [Tutorial: Creating a CloudWatch Lambda dashboard with function name as the variable](cloudwatch_dashboard_variables_property.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

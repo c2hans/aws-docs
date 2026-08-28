@@ -50,3 +50,7 @@ The utility returns the reference measurements in the following JSON format:
 ```
 
 For a practical example of how to use the `nitro-tpm-pcr-compute` utility, see the `edit_boot_install.sh` script included in the [ sample Amazon Linux 2023 image description](build-sample-ami.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

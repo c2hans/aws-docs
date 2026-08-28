@@ -19,3 +19,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-financial-service
 +  Access to [proactive](https://aws.amazon.com/premiumsupport/technology-and-programs/proactive-services/) reviews, workshops, and deep dives.
 +  Full set of [checks](https://docs.aws.amazon.com/awssupport/latest/user/trusted-advisor-check-reference.html) and prioritized recommendations curated by your AWS account team with [AWS Trusted Advisor Priority](https://aws.amazon.com/premiumsupport/technology/trusted-advisor-priority/).
 +  24/7 phone, web, and chat access to Cloud Support Engineers.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -88,3 +88,7 @@ Architecture Description
 1. Older documents can be moved to [Amazon S3 Glacier](https://aws.amazon.com/s3/storage-classes/glacier/) for long-term archival.
 
 1. You can move files to different Amazon S3 storage classes using automated Lifecycle Management. For more information, see Using [Amazon S3 storage classes](https://docs.aws.amazon.com/AmazonS3/latest/userguide/storage-class-intro.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

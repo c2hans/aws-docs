@@ -54,3 +54,7 @@ Use the minimum amount of hardware for your workload to efficiently meet your bu
 + [AWS re:Invent 2023 - Smart savings: Amazon Elastic Compute Cloud cost-optimization strategies](https://www.youtube.com/watch?v=_AHPbxzIGV0)
 + [AWS re:Invent 2022 - Optimizing Amazon Elastic Kubernetes Service for performance and cost on AWS](https://www.youtube.com/watch?v=5B4-s_ivn1o)
 + [AWS re:Invent 2023 - Sustainable compute: reducing costs and carbon emissions with AWS](https://www.youtube.com/watch?v=0Bl1SDU2HxI)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -139,3 +139,7 @@ If you want to configure a delegated administrator account using the AWS CLI or 
 Only an administrator in the AWS Organizations management account can remove a delegated administrator account from the organization.
 
 You can remove the delegated administrator using either the Amazon Inspector console or API, or by using the Organizations `DeregisterDelegatedAdministrator` CLI or SDK operation. To remove a delegated administrator using the Amazon Inspector console, see [Removing a delegated administrator](https://docs.aws.amazon.com/inspector/latest/user/remove-delegated-admin.html) in the *Amazon Inspector User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

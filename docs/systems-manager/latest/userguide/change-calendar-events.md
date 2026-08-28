@@ -16,3 +16,7 @@ As an alternative to creating events directly in the Systems Manager console, yo
 + [Creating a Change Calendar event](change-calendar-create-event.md)
 + [Updating a Change Calendar event](change-calendar-update-event.md)
 + [Deleting a Change Calendar event](change-calendar-delete-event.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

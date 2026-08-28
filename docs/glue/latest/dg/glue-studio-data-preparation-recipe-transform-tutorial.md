@@ -46,3 +46,7 @@ source_url: https://docs.aws.amazon.com/glue/latest/dg/glue-studio-data-preparat
 ![The screenshot shows the Transform panel with steps added to your recipe. When done, choose Done Authoring Recipe or choose the add icon to add more steps to the recipe.](http://docs.aws.amazon.com/glue/latest/dg/images/author-recipe-done-authoring-recipe.png)
 
 1.  Choose **Save** at the top right side of your screen. Your recipe steps will not be saved until you save your job.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

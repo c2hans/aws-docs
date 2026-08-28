@@ -37,3 +37,7 @@ if last_model_explainability_monitor_execution:
 ```
 
 If your model is deployed to a real-time endpoint, you can see visualizations in SageMaker Studio of the analysis results and CloudWatch metrics by choosing the **Endpoints** tab, and then double-clicking the endpoint.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

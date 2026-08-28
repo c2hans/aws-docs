@@ -64,3 +64,7 @@ The following resources provide additional information about using OpenSearch.
 + For information about getting started with open source OpenSearch, see [Quickstart](https://opensearch.org/docs/quickstart).
 + For information about getting started with OpenSearch Service, see [Getting started with Amazon OpenSearch Service](https://docs.aws.amazon.com/opensearch-service/latest/developerguide/gsg.html) in the *Amazon OpenSearch Service Developer Guide*.
 + For information about the Personalized-Ranking recipes in Amazon Personalize, see [Personalized-Ranking-v2 recipe](native-recipe-personalized-ranking-v2.md) or [Personalized-Ranking recipe](native-recipe-search.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Personalize. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query personalize` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

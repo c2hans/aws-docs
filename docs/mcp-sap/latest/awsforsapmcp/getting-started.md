@@ -128,3 +128,7 @@ Additionally, SAP and IdP related OAuth2/OIDC/SAML configuration are required as
   + User consent (or admin consent) granted to the outbound app in Entra ID.
   + The AgentCore callback URL must be registered as a redirect URI in the outbound app’s configuration. This URL is auto-generated during deployment.
   + Certain MCP Clients might need a Three App setup. Three Entra ID app registrations include a Client app (for user authentication), a Resource app (representing AgentCore for token validation), and an Outbound app (for the token exchange to SAP). The Resource app performs the OBO exchange using its own credentials to obtain a token scoped to the Outbound app.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MCP Servers for SAP. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mcp-sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -5,7 +5,7 @@ source_url: https://docs.aws.amazon.com/deadline-cloud/latest/userguide/deadline
 # Deadline Cloud assistant
 <a name="deadline-cloud-assistant"></a>
 
-The Deadline Cloud assistant is an AI-powered troubleshooting tool built into the Deadline Cloud monitor. It uses generative AI through to help you diagnose render job failures by analyzing job configurations, task statuses, session logs, and CloudWatch data. The assistant runs in your browser and provides intelligent root cause analysis with actionable recommendations.
+The Deadline Cloud assistant is an AI-powered troubleshooting tool built into the Deadline Cloud monitor. It uses generative AI through Amazon Bedrock to help you diagnose render job failures by analyzing job configurations, task statuses, session logs, and CloudWatch data. The assistant runs in your browser and provides intelligent root cause analysis with actionable recommendations.
 
 **Important**
 The Deadline Cloud assistant is powered by generative AI. AI models generate the responses, and the responses might be inaccurate, incomplete, or outdated. Verify all recommendations before acting on them. Use of this feature is subject to the [AWS Service Terms](https://aws.amazon.com/service-terms/) and the [AWS Responsible AI Policy](https://aws.amazon.com/ai/responsible-ai/policy/).
@@ -17,6 +17,9 @@ The Deadline Cloud assistant is powered by generative AI. AI models generate the
 + [Required permissions](assistant-permissions.md)
 + [Security](assistant-security.md)
 + [Costs](assistant-costs.md)
-+ [Service quotas and throttling](assistant-service-quotas.md)
 + [Troubleshooting](assistant-troubleshooting.md)
 + [Additional resources](assistant-additional-resources.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

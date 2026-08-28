@@ -27,3 +27,7 @@ The following topics show you how to get started using the ARM64 DLAMI.
 + [Select a ARM64 DLAMI](#tutorial-arm64-select-dlami)
 + [Get Started](#tutorial-arm64-get-started)
 + [Using the ARM64 GPU PyTorch DLAMI](tutorial-arm64-pytorch.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Deep Learning AMI. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dlami` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

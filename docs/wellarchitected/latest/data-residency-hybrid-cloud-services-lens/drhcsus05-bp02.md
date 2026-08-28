@@ -17,3 +17,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/data-residency-hy
 <a name="implementation-guidance-61"></a>
 
  AWS Outposts supports [Amazon S3 for AWS Outposts](https://aws.amazon.com/s3/outposts/?whats-new-cards.sort-by=item.additionalFields.postDateTime&whats-new-cards.sort-order=desc), which can be used for on-premises shared object storage. The use of shared data provides data consistency and prevents the inefficient use of per-user or per-application data duplication. Where Amazon S3 for AWS Outposts is not deployed or is unsuitable for workload requirements, consider using self-managed or [AWS Marketplace](https://aws.amazon.com/marketplace/search/results?searchTerms=shared+storage) shared storage solutions that are compatible with [Amazon Elastic Block Store (EBS)](https://docs.aws.amazon.com/ebs/latest/userguide/what-is-ebs.html) on Outposts volume-types as their backing storage.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

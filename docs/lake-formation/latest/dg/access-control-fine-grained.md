@@ -16,3 +16,7 @@ With a data lake, the goal is to have fine-grained access control to data. In La
 Be aware of the following:
 By default, Lake Formation has the **Use only IAM access control** settings enabled for compatibility with existing AWS Glue Data Catalog behavior. We recommend that you disable these settings after you transition to using Lake Formation permissions. For more information, see [Changing the default settings for your data lake](change-settings.md).
 Data lake administrators and database creators have implicit Lake Formation permissions that you must understand. For more information, see [Implicit Lake Formation permissions](implicit-permissions.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -111,3 +111,7 @@ These are additional path filter requirements.
 + The uploaded files cannot be empty.
 + When using `#` as a wildcard, it must be the last character in the topic filter. For example, `topic/#` or as a standalone character at a particular topic level. However, note that `#` can also be used as a regular character within a topic level name, such as `factory/machine#1/topic`. For more information see [Special characters in path filter names](gw-destinations.md#path-filters-special-characters)
   + You can also use the `+` character. For example, use `factory/+/temp` to get all temperatures for factories instead of `factory/machine2/temp` and `factory/machine3/temp` individually.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -25,3 +25,7 @@ The lakehouse architecture provides the following key benefits:
 + **Real-time and batch processing** – Supports both streaming and historical analytics
 + **Direct file access** – Enables both SQL queries and programmatic data access
 + **Unified governance** – Consistent security and compliance across all data types
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker lakehouse architecture. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker-lakehouse-architecture` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

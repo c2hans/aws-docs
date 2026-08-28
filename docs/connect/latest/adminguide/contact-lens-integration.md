@@ -52,3 +52,7 @@ After your service quotas are requested and approved, conversational analytics i
   Only users who have these permissions will be able to access the conversational analytics connector on the Connect Customer admin website.
 + Create a flow to specify how to process the call audio including recording, live or post call analytics, and [associate the flow with the conversational analytics connector](associate-contactlens-integration.md).
 + Optionally, create a Lambda that can be invoked when the Connect Customer flow is triggered. Use the Lambda to parse the SIPREC request and additional call meta data, and take actions. For more information, see [Call metadata for conversational analytics integrations](callmetadata-contactlens-integration.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -48,3 +48,7 @@ The Amazon Chime SDK publishes usage metrics to the `AWS/Usage` namespace with t
 | Type | The type of entity being reported. The only valid value for Amazon Chime SDK usage metrics is `API`. |
 | Resource | The type of resource reporting the metric. For Amazon Chime SDK usage metrics, the value for this dimension is the name of the API. |
 | Class | The class of resource being tracked. The only valid value for Amazon Chime SDK metrics is `None`. |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Chime SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chime-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

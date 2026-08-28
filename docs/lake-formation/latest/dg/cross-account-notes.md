@@ -31,3 +31,7 @@ For more information about requesting a higher limit for the number of resource 
 **See also**
 [Lake Formation tag-based access control best practices and considerations](lf-tag-considerations.md)
 [`CREATE_TABLE`](lf-permissions-reference.md#perm-create-table) in the [Lake Formation permissions reference](lf-permissions-reference.md) for more cross-account access rules and limitations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Lake Formation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lake-formation` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

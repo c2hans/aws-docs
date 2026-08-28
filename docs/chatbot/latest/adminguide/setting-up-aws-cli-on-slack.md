@@ -54,3 +54,7 @@ You do not need to edit or change the Amazon SNS topics configuration for the ch
 
 **Important**
 If you have a large number of chat channels and you want to have the same command permissions across multiple channels, you can apply the configured Amazon Q Developer in chat applications role to any of your other chat channels without further modification. The IAM policies will be consistent across chat channels that support commands in your Amazon Q Developer in chat applications service.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q Developer in chat applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chatbot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

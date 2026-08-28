@@ -22,3 +22,7 @@ You can use the following `format_options` values with `format="grokLog"`:
 + `MISSING` — Specifies the signal to use in identifying missing values. The default is `'-'`.
 + `LineCount` — Specifies the number of lines in each log record. The default is `'1'`, and currently only single-line records are supported.
 + `StrictMode` — A Boolean value that specifies whether strict mode is turned on. In strict mode, the reader doesn't do automatic type conversion or recovery. The default value is `"false"`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Glue. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query glue` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

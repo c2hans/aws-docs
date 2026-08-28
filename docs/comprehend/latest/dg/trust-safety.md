@@ -255,3 +255,7 @@ You can use the Amazon Comprehend console or APIs to detect *personally identifi
 You can detect or redact the PII entities in the text. To detect PII entities, you can use real-time analysis or an asynchronous batch job. To redact the PII entities, you must use an asynchronous batch job.
 
  For more information, see [Personally identifiable information (PII)](pii.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

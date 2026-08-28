@@ -94,3 +94,7 @@ For more information, see the following:
 + [FSx for ONTAP quotas](https://docs.aws.amazon.com/fsx/latest/ONTAPGuide/limits.html) in the *FSx for ONTAP User Guide*
 + [FSx for OpenZFS quotas](https://docs.aws.amazon.com/fsx/latest/OpenZFSGuide/limits.html) in the *FSx for OpenZFS User Guide*
 + [FSx for Windows quotas](https://docs.aws.amazon.com/fsx/latest/WindowsGuide/limits.html) in the *Amazon FSx for Windows File Server User Guide*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query general` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

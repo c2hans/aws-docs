@@ -16,3 +16,7 @@ The topics in this section describe how to connect your HealthLake data store to
 + [Getting started](integrating-athena-getting-started.md)
 + [Querying with SQL](integrating-athena-query-sql.md)
 + [Example queries](integrating-athena-complex-filtering.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

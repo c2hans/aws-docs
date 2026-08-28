@@ -34,3 +34,7 @@ Partners receive a confirmation message that the value mappings were saved.
 1. If unmapped values exist in the partner’s organization, the **Additional APN Value** tab lets you map additional values to APN. This helps partners ensure that all applicable values in their organization are mapped to appropriate APN values.
 
 1. If a single value in the partner’s organization is mapped to more than one APN value, use the **Secondary APN Values** tab to set the default value for outbound integrations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Partner Central. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query partner-central` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

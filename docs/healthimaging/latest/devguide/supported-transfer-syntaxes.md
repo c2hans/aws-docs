@@ -54,3 +54,7 @@ If the `StoredTransferSyntaxUID` key does not exist or is set to `null`, you can
 | 1.2.840.10008.1.2.4.108\* | HEVC/H.265 Main 10 Profile / Level 5.1 |
 
 \*Retains original transfer syntax encoding during import
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthImaging. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthimaging` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

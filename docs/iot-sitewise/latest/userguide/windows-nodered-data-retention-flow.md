@@ -159,3 +159,7 @@ After configuring all components of the data retention flow, you need to deploy 
    For more information, see [Query in Data Explorer](https://docs.influxdata.com/influxdb/v2/query-data/execute-queries/data-explorer/) in the *InfluxData Documentation*.
 
 With both the data publish flow and data retention flow deployed, you now have a complete system that sends data to the AWS IoT SiteWise cloud while maintaining a local copy for immediate access and resilience. This dual-path approach ensures that you get the benefits of cloud-based analytics and storage while maintaining operational visibility at the edge.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

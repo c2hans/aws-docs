@@ -35,3 +35,7 @@ The following basic restrictions apply to tags.
 | Maximum value length | 256 Unicode characters in UTF-8 |
 | Prefix restriction | Don't use the `aws:` prefix in your tag names or values because it is reserved for AWS use. You can't edit or delete tag names or values with this prefix. Tags with this prefix don't count against the number of tags you can assign to a resource. |
 | Character restrictions | Tags may only contain Unicode letters, digits, white space, or these symbols: `_ . : / = + - @` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q Developer in chat applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chatbot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

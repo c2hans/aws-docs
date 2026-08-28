@@ -90,3 +90,7 @@ AWS IoT Core doesn't support the [SessionTicket TLS extension](https://www.ietf.
 LoRaWAN devices follow the security practices described in [LoRaWAN ™ SECURITY: A White Paper Prepared for the LoRa Alliance™ by Gemalto, Actility, and Semtech](https://lora-alliance.org/sites/default/files/2019-05/lorawan_security_whitepaper.pdf).
 
 For more information about transport security with LoRaWAN devices, see [LoRaWAN data and transport security](https://docs.aws.amazon.com/iot-wireless/latest/developerguide/iot-lorawan-security.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Core. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

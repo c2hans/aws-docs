@@ -96,3 +96,7 @@ When Slack actions fail because of authorization errors, the task fails with a d
 When actions fail because the AWS FinOps Agent Slack app is not a member of the connected channel, the post fails. Add the app to the channel from Slack to restore posting.
 
 For rate-limited requests (HTTP 429) or workspace unavailability (HTTP 5xx), the agent retries with exponential backoff up to three times before failing the task.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS FinOps Agent (preview). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query finops-agent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

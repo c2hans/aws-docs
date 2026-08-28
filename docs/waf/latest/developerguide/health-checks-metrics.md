@@ -40,3 +40,7 @@ For additional information about the metrics that are available for your protect
 + AWS Global Accelerator – [Using Amazon CloudWatch with AWS Global Accelerator](https://docs.aws.amazon.com/global-accelerator/latest/dg/cloudwatch-monitoring.html) in the AWS Global Accelerator Developer Guide.
 + Amazon Elastic Compute Cloud – [List the available CloudWatch metrics for your instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/viewing_metrics_with_cloudwatch.html) in the https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/.
 + Amazon EC2 Auto Scaling – [Monitoring CloudWatch metrics for your Auto Scaling groups and instances](https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-instance-monitoring.html) in the Amazon EC2 Auto Scaling User Guide.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -198,3 +198,7 @@ When planning a deployment with multiple gateways and file shares, consider the 
 **Note**
 We do not recommended creating multiple file shares that are mapped to the same Amazon S3 location from multiple gateways, unless at least one of them is read-only.
 Simultaneous writes to the same file from multiple gateways is considered a multi-writer scenario, which can cause data integrity issues.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

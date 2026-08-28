@@ -23,3 +23,7 @@ You can configure and deploy resources using CloudFormation templates to start u
    The tags will be associated in Workgroup as well as IAM Identity Center application.
 
 1. Using the created roles and application, you can use the Athena drivers immediately. To use JDBC driver, see [JDBC auth plugin connection parameters](jdbc-v3-driver-jwt-tip-credentials.md). To use ODBC driver, see [ODBC auth plugin connection parameters](odbc-v2-driver-jwt-tip.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Athena. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query athena` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

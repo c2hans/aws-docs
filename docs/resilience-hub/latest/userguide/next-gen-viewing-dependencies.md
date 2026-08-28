@@ -24,3 +24,7 @@ The dependency timeline shows when each dependency was first discovered and its 
 **Compute resource attribution**
 
 Next generation Resilience Hub attributes discovered dependencies to the specific compute resources – such as Amazon EC2 instances, Lambda functions, or containers – that make DNS queries to those dependencies. You can filter the dependency list by service (when viewing at the system level), criticality (hard, soft, or unclassified), type (AWS service, third-party, or internal), or location (AWS, third-party, or internal).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

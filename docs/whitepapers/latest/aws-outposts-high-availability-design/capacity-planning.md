@@ -56,3 +56,7 @@ Consult your AWS account team to validate your planned AWS Outposts rack slottin
 + Deploy N\+M servers for homogeneously or identical heterogeneously slotted servers.
 + Calculate the N\+M availability for each EC2 capacity pool and ensure that each pool meets your availability requirements.
 + Consider size compute capacity for use cases that require [ALB on AWS Outposts](https://aws.amazon.com/blogs/networking-and-content-delivery/configuring-an-application-load-balancer-on-aws-outposts/) and [Amazon Route 53 local Resolver](https://aws.amazon.com/blogs/aws/amazon-route-53-resolver-now-available-on-aws-outposts-rack/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

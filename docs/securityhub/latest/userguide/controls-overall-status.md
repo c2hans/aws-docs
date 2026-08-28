@@ -38,3 +38,7 @@ Security Hub CSPM typically generates the initial control status within 30 minut
 
 **Note**
 After enabling a control for first time, it can take up to 24 hours for control statuses to be generated in the China Regions and the AWS GovCloud (US) Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

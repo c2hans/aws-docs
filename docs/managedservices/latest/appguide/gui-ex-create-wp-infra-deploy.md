@@ -10,3 +10,7 @@ End of support notice: On June 30, 2027, AWS will end support for AMS Advanced. 
 Log in to the AWS Console for the target AMS account and then the AMS Console for the account.
 
 The following procedures describe creating an RDS database, a load balancer, and an Auto Scaling group in such a manner that you use the resource IDs to build the infrastructure.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

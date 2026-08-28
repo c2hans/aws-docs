@@ -211,3 +211,7 @@ SELECT * FROM "awsdatacatalog"."{{resource_link_database}}"."{{table_name}}" LIM
 <a name="glue-irc-best-practices"></a>
 + **Prefer automount for cross-Region deployments.** Automount handles cross-Region resolution transparently and requires no schema management overhead.
 + **Use same-Region deployment when external schemas are required.** If your workflow requires external schemas (for example, to control schema-level permissions or naming), ensure the AWS Glue federated catalog, Amazon Redshift compute, and source Amazon S3 bucket are all in the same Region.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

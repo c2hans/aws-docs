@@ -279,3 +279,7 @@ The dashboard provides insights on demand over the years based on the ingested d
 + Answer your immediate supply chain questions.
 
 For more information about using Amazon Q, see [Enabling Amazon Q in Supply Chain](https://docs.aws.amazon.com/aws-supply-chain/latest/userguide/enabling_QinASC.html) and [Using Amazon Q in Supply Chain](https://docs.aws.amazon.com/aws-supply-chain/latest/userguide/using_QinASC.html) in the Supply Chain documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

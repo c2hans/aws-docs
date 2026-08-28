@@ -445,3 +445,7 @@ Follow these security best practices when setting up zero-ETL integrations:
 +  **Restrict network access** – Configure VPC security groups to limit network access to only required resources.
 +  **Use resource policies** – Implement Amazon Redshift resource policies to control which sources can create integrations with your data warehouse.
 +  **Tag resources** – Apply tags to integrations and related resources for better organization and cost tracking.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

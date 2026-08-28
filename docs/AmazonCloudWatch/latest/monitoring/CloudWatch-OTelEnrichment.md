@@ -73,3 +73,7 @@ For more information, see [aws\_cloudwatch\_otel\_enrichment](https://registry.t
 To enable across multiple regions, create the same resource in each regional stack or invoke the API in each region of interest.
 
 After enrichment is enabled, you can start querying vended metrics through PromQL. See: [Querying vended AWS metrics with PromQL](CloudWatch-PromQL-Querying.md#CloudWatch-PromQL-Querying-Vended).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ When you make inference calls with Amazon Titan models, you include a prompt for
 + [Amazon Titan Image Generator G1 models](model-parameters-titan-image.md)
 + [Amazon Titan Embeddings G1 - Text](model-parameters-titan-embed-text.md)
 + [Amazon Titan Multimodal Embeddings G1](model-parameters-titan-embed-mm.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

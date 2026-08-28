@@ -89,3 +89,7 @@ Critical dependencies are required for the discovery tool to start. If they are 
 
 **Note**
 The installer checks system compatibility including glibc version and systemd availability. On systems with systemd 250 or later (Amazon Linux 2023, RHEL 9, Rocky 9, AlmaLinux 9, Ubuntu 24.04\+, Debian 12\+), the database encryption key is encrypted at rest using systemd-creds. On older systems, the encryption key is stored as a permission-protected file.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Transform. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transform` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

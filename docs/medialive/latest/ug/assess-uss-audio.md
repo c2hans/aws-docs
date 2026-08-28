@@ -29,3 +29,7 @@ For example, in the output, you might want the one language to be in coding mode
 Therefore you might choose to extract the following:
 + Spanish in Dolby Digital 5.1
 + French and English in AAC 2.0.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

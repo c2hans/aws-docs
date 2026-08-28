@@ -192,3 +192,7 @@ For **Tags - *optional***, add key and value pairs to the new cluster and manage
 After you complete the cluster configurations using either **Quick setup** or **Custom setup**, choose the following option to start resource provisioning and cluster creation.
 +  **Submit** - SageMaker AI will start provisioning the default configuration resources and creating the cluster.
 + **Download CloudFormation template parameters** - You will download the configuration parameter JSON file and run AWS CLI command to deploy the CloudFormation stack to provision the configuration resources and creating the cluster. You can edit the downloaded parameter JSON file if needed. If you choose this option, see more instructions in [Creating SageMaker HyperPod clusters using CloudFormation templates](smcluster-getting-started-eks-console-create-cluster-cfn.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

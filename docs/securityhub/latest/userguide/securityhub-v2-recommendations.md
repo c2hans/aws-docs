@@ -31,3 +31,7 @@ source_url: https://docs.aws.amazon.com/securityhub/latest/userguide/securityhub
 
 **Macie**
  When you [enable Macie](https://docs.aws.amazon.com/macie/latest/user/getting-started.html), you can detect additional exposures for your Amazon S3 buckets. We recommend configuring [automated sensitive data discovery](https://docs.aws.amazon.com/macie/latest/user/discovery-asdd-account-enable.html), so Macie can evaluate your Amazon S3 bucket inventory on a daily basis.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Security Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query securityhub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

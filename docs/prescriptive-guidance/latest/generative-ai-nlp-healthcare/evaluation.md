@@ -46,3 +46,7 @@ Understanding the medical task is critical. Metrics typically map to one of the 
   + [Metric for Evaluation of Translation with Explicit ORdering (METEOR)](https://docs.aws.amazon.com/sagemaker/latest/dg/clarify-accuracy-evaluation.html)
   + [Bilingual evaluation understudy (BLEU)](https://en.wikipedia.org/wiki/BLEU) (for translations)
   + [String distance](https://en.wikipedia.org/wiki/Cosine_similarity), also known as *cosine similarity*
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

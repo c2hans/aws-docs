@@ -34,3 +34,7 @@ If a role was used the **User name** field will indicate the name of the role us
 If this activity is a legitimate use of the AWS credentials, you can ignore the GuardDuty finding. The [https://console.aws.amazon.com/guardduty/](https://console.aws.amazon.com/guardduty/) console allows you to set up rules to entirely suppress individual findings so that they no longer appear. For more information, see [Suppression rules in GuardDuty](findings_suppression-rule.md).
 
 If you can't confirm if this activity is a legitimate use, it could be the result of a compromise to the particular access key - the IAM user's sign-in credentials, or possibly the entire AWS account. If you suspect your credentials have been compromised, review the information in [My AWS account may be compromised](https://repost.aws/knowledge-center/potential-account-compromise) to remediate this issue.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

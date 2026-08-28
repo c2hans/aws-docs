@@ -58,3 +58,7 @@ Review the information:
 + Select the **Stream Endpoints** tab. This tab shows the location of the source MPTS:
   + If you completed the location fields the dialog, this tab shows the information you entered.
   + If you left those fields empty, Elemental Statmux has automatically generated a primary and backup multicast address. Give this information to your contact at the upstream system so that they can push the source MPTS to that location.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Conductor Live 3. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-cl3` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

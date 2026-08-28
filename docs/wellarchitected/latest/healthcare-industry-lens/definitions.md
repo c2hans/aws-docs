@@ -11,3 +11,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
 +  **Consumer health and wellness:** Technology provider companies who develop, maintain, and market health and wellness solutions targeting consumers.
 +  **Standards setting organizations:** Organizations responsible for establishing industry standards that are common across healthcare. Examples include Health Level 7 (HL7) for healthcare interoperability and the Health Information Trust (HITRUST) Alliance for data protection.
 +  **Regulatory bodies:** Organizations, often geography specific (FDA, ONC, EMA), that define regulations for controls that healthcare organizations must adopt in order to operate within that geography.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

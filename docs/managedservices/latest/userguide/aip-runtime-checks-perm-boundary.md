@@ -18,3 +18,7 @@ You must provide a comprehensive list of deny actions for each update. The previ
 The list of deny actions must contain only actions to be denied. Allow actions aren't supported.
 The list of deny actions resides within the account as an IAM managed policy named `AWSManagedServicesIAMProvisionCustomerBoundaryPolicy`. The policy must not be attached to any role.
 The term *permission boundary* used to denote denied actions in AMS Automated IAM Provisioning has a different contextual meaning compared to the IAM permission boundary. The IAM permission boundary sets the maximum permission that a policy can grant at runtime to an IAM entity. For more information on IAM permission boundary see [Policy types](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html#access_policy-types) in the *AWS Identity and Access Management User Guide*. The permission boundary in AMS Automated IAM Provisioning prevents you from provisioning an IAM policy that contains a certain set of permissions, for example, a denied list of actions.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

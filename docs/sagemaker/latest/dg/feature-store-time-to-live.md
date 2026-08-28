@@ -42,3 +42,7 @@ sagemaker_client.update_feature_group(
 You can use the `DescribeFeatureGroup` API to view the default `TtlDuration`.
 
 To view the expiration times, `ExpiresAt` (in UTC time ISO-8601 format), while using the `GetRecord` or `BatchGetRecord` APIs you must set `ExpirationTimeResponse` to `ENABLED`. See the request and response syntax in the SDK for Python (Boto3) documentation for [`DescribeFeatureGroup`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker/client/describe_feature_group.html#describe-feature-group), [`GetRecord`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime/client/get_record.html#get-record), and [`BatchGetRecord`](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/sagemaker-featurestore-runtime/client/batch_get_record.html#batch-get-record) APIs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

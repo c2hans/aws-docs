@@ -62,3 +62,7 @@ Observability data:
 | Expected | Observed (screenshot) |
 | --- |--- |
 | LCP P99 should be under 4 seconds with the average under 2.5 seconds. |  ![Sample recovery results from chaos experiment.](http://docs.aws.amazon.com/prescriptive-guidance/latest/chaos-engineering-on-aws/images/guide-img/4119a10b-a241-4431-9681-0b62a5da1a70/images/5fafa73b-ee67-4d02-8daf-511ae18c44e1.png) |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

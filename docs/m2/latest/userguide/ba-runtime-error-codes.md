@@ -24,3 +24,7 @@ During the lifecyle of an application using the AWS Transform for mainframe Runt
 + [AWS Transform for mainframe Runtime Redis Error Codes](ba-runtime-error-codes-r.md)
 + [AWS Transform for mainframe Runtime Error Codes related to SQL](ba-runtime-error-codes-s.md)
 + [AWS Transform for mainframe Runtime Error Codes related to Utility Programs](ba-runtime-error-codes-u.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Mainframe Modernization. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query m2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

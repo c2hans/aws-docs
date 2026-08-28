@@ -14,3 +14,7 @@ AWS Data Pipeline is no longer available to new customers. Existing customers of
 +  [Tutorial: Launch an Amazon EMR job flow](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-launch-emr-jobflow.html)
 +  [Getting started: Process web logs with AWS Data Pipeline, Amazon EMR, and Hive](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-process-logs.html)
 +  [Tutorial: Amazon DynamoDB import and export using AWS Data Pipeline](https://docs.aws.amazon.com/datapipeline/latest/DeveloperGuide/dp-importexport-ddb.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EMR Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query emr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

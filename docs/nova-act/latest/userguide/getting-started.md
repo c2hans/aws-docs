@@ -29,3 +29,7 @@ Deploy your workflows to AWS using the IDE extension’s one-click deployment, o
 <a name="step-4-review-your-workflow-runs-in-the-nova-act-console"></a>
 
 Monitor your deployed workflows in the Nova Act AWS console to track execution, view detailed traces, and troubleshoot issues.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Nova Act. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query nova-act` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

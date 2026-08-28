@@ -80,3 +80,7 @@ Here's an example of the FaultTolerance category view on the Trusted Advisor con
 These checks and their results can also be viewed by referring the Trusted Advisor section of the AWS Support API.
 
 To learn more about setting up alarms using CloudWatch, see: [Creating Trusted Advisor alarms using CloudWatch](https://docs.aws.amazon.com/awssupport/latest/user/cloudwatch-metrics-ta.html). For a full set of Trusted Advisor Best Practice Checks, see: [AWS Trusted Advisor best practice checklist.](https://aws.amazon.com/premiumsupport/technology/trusted-advisor/best-practice-checklist/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

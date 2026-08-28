@@ -26,3 +26,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/migration-lens/we
 1.  **Maintain your operations during the migration to the Cloud**: Consider your current operations while you have a hybrid environment and once you are completely on cloud. Plan your monitoring, backup, and lifecycle management at level required by your organization for production workloads.
 
 1.  **Create the migration plans**: Split migration into smaller units (migration waves), where each unit could be an application or a group of applications. Move each unit, test, validate and repeat. Create or adapt operational runbooks, seeking to automate the process of early migration waves (mobilize) and apply these runbooks to scale the migration of each subsequent wave.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

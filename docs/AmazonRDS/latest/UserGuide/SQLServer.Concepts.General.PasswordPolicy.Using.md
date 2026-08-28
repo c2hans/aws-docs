@@ -76,3 +76,7 @@ RDS for SQL Server doesn't support password history policies. History policies p
 <a name="SQLServer.Concepts.General.PasswordPolicy.MAZPasswords"></a>
 
 The failed login attempt counter and lockout state for Multi-AZ instances does not replicate between nodes. In the event of a login being locked out when a Multi-AZ instance fails over, it is possible for the login to be already unlocked on the new node.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

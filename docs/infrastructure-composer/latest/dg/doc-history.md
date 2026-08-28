@@ -32,3 +32,7 @@ The following table describes important documentation releases for Infrastructur
 | [Updated topic on using other AWS services to deploy your application](#doc-history) | Use Infrastructure Composer to design deployment-ready serverless applications. Use AWS SAM to deploy your serverless application. To learn more, see [Using Infrastructure Composer with CloudFormation and AWS SAM](https://docs.aws.amazon.com/application-composer/latest/dg/other-services-cfn.html). | March 3, 2023 |
 | [Added serverless concepts section](#doc-history) | Learn about basic serverless concepts before using Infrastructure Composer. To learn more, see [Serverless concepts](https://docs.aws.amazon.com/application-composer/latest/dg/what-is-concepts.html). | March 2, 2023 |
 | [Public release](#doc-history) | Initial public release of Infrastructure Composer. | December 1, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Infrastructure Composer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query infrastructure-composer` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

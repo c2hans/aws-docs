@@ -13,3 +13,7 @@ Versioned data sources support `Sync` operations that allow you to retrieve all 
 AWS AppSync returns the `startedAt` field to the response mapping template for all `Sync` operations. The `startedAt` field is the moment, in epoch milliseconds, when the `Sync` operation started that you can store locally and use in another request. If a pagination token was included in the request, this value will be the same as the one returned by the request for the first page of results.
 
 For information about the format for `Sync` mapping templates, see [the mapping template reference](aws-appsync-resolver-mapping-template-reference-dynamodb-sync.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS AppSync. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appsync` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

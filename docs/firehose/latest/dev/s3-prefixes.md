@@ -73,3 +73,7 @@ The following rules apply to `Prefix` and `ErrorOutputPrefix` expressions.
 | `Prefix`: `myFirehose/DeliveredYear=!{timestamp:yyyy}/anyMonth/rand=!{firehose:random-string}`<br />`ErrorOutputPrefix`: `myFirehoseFailures/!{firehose:error-output-type}/!{timestamp:yyyy}/anyMonth/!{timestamp:dd}` | `Prefix`: `myFirehose/DeliveredYear=2018/anyMonth/rand=5abf82daaa5`<br />`ErrorOutputPrefix`: `myFirehoseFailures/processing-failed/2018/anyMonth/10` |
 | `Prefix`: `myPrefix/year=!{timestamp:yyyy}/month=!{timestamp:MM}/day=!{timestamp:dd}/hour=!{timestamp:HH}/`<br />`ErrorOutputPrefix`: `myErrorPrefix/year=!{timestamp:yyyy}/month=!{timestamp:MM}/day=!{timestamp:dd}/hour=!{timestamp:HH}/!{firehose:error-output-type}` | `Prefix`: `myPrefix/year=2018/month=07/day=06/hour=23/`<br />`ErrorOutputPrefix`: `myErrorPrefix/year=2018/month=07/day=06/hour=23/processing-failed` |
 | `Prefix`: `myFirehosePrefix/`<br />`ErrorOutputPrefix`: Unspecified | `Prefix`: `myFirehosePrefix/2018/08/27/`<br />`ErrorOutputPrefix`: `myFirehosePrefix/processing-failed/2018/08/27/` |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Data Firehose. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query firehose` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

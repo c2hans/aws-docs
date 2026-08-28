@@ -17,3 +17,7 @@ You can add up to 20 channels for your AWS account. If you already reached this 
 
 1. In the **Delete channel name** dialog box, choose **Delete**. You can add this channel to the AWS Support App again later.
 ![Dialog box to delete a Slack channel in the Support Center Console.](http://docs.aws.amazon.com/awssupport/latest/user/images/supportapp/delete-channel.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Support. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query awssupport` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

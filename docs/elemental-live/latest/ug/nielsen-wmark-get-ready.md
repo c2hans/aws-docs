@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/elemental-live/latest/ug/nielsen-wmark-g
 1. If you are setting up CBET watermarks, decide how you want to handle watermarks that are already in the source audio. The options are the following:
    + Remove all the existing watermarks and replace them with new ones.
    + Keep the existing watermarks. Elemental Live will insert new marks only in portions of the audio stream where there are no watermarks.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental Live. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elemental-live` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

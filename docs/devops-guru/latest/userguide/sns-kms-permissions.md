@@ -9,3 +9,7 @@ source_url: https://docs.aws.amazon.com/devops-guru/latest/userguide/sns-kms-per
 
 **Note**
 DevOps Guru currently supports encrypted topics for use within a single account. Using an encrypted topic across multiple accounts is not supported at this time.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DevOps Guru. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devops-guru` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

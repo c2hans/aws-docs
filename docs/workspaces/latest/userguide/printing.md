@@ -36,3 +36,7 @@ If you cannot print to your local printer from your WorkSpace, make sure that yo
 You can also use one of the following methods to print from a Windows or Linux WorkSpace:
 + If your organization exposes printers through Active Directory, you can connect your WorkSpace to printers on your internal company network.
 + Print to a file, transfer the file to your local desktop and print the file locally to an attached printer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

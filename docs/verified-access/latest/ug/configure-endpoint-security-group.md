@@ -35,3 +35,7 @@ We recommend that you keep your existing outbound rules.
 
 **To update the security group rules for your application using the AWS CLI**
 Use the [describe-verified-access-endpoints](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-verified-access-endpoints.html) command to get the ID of the security group and then use the [authorize-security-group-ingress](https://docs.aws.amazon.com/cli/latest/reference/ec2/authorize-security-group-ingress.html) command to add an inbound rule.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Verified Access. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query verified-access` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

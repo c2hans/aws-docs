@@ -20,3 +20,7 @@ If you want both types of watermarking, you must run your job twice. First creat
 + [Configuring PCM to ID3 metadata](setting-up-pcm-to-id3-metadata.md)
 + [Configuring Nielsen non-linear watermarking](setting-up-non-linear-watermarking.md)
 + [Nielsen SID/TIC server requirements in the AWS Cloud](how-mediaconvert-interacts-with-your-nielsen-sid-tic-server-in-the-aws-cloud.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaConvert. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediaconvert` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

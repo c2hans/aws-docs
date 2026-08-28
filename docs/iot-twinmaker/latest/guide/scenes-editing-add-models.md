@@ -20,3 +20,7 @@ To add models in your scene, you must first upload the models to the AWS IoT Twi
 ![A scene canvas with the "Light type" and "Color" controls displayed for the selected cookie mixer.](http://docs.aws.amazon.com/iot-twinmaker/latest/guide/images/CookieMixerInScene.png)
 **Note**
 Scenes have default ambient lighting. To avoid frame rate loss, consider limiting the number of additional lights placed in your scene.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT TwinMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-twinmaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

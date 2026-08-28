@@ -37,3 +37,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/games-industry-le
 +  [Understanding asynchronous messaging for microservices](https://aws.amazon.com/blogs/compute/understanding-asynchronous-messaging-for-microservices/)
 +  [Introduction to Scalable Game Development Patterns on AWS ](https://d1.awsstatic.com/whitepapers/aws-scalable-gaming-patterns.pdf)
 +  Implementing [Graceful Degradation](https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_mitigate_interaction_failure_graceful_degradation.html#:~:text=Implementing%20graceful%20degradation%20helps%20minimize%20the%20impact%20of,means%20considering%20potential%20failure%20modes%20during%20dependency%20design.)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

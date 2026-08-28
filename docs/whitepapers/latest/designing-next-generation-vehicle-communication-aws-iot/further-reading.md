@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/designing-next-genera
 +  [Connected Mobility on AWS](https://aws.amazon.com/automotive/solutions/connected-mobility/)
 +  [How Reply Built a Connected Vehicle Platform with AWS IoT and Amazon Alexa](https://aws.amazon.com/blogs/apn/how-reply-built-a-connected-vehicle-platform-with-aws-iot-and-amazon-alexa/)
 +  [People Tech Group Enables Digital Twin for Infotainment by Leveraging AWS IoT](https://aws.amazon.com/blogs/industries/peopletech-enabling-digital-twin-for-infotainment-by-leveraging-aws-iot/)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -16,3 +16,7 @@ To fix this error without reverting your account-wide permissions back to the de
 1. To grant the `MetricsEtlJobRole` **Super** permissions to all tables within the solution database, see [Granting table permissions using the named resource method](https://docs.aws.amazon.com/lake-formation/latest/dg/granting-table-permissions.html) in the *AWS Lake Formation Developer Guide*.
 
 1. Re-run any failed Glue jobs, making sure to pass in the `--object_keys` parameter with the failed parameter values from previous runs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Guidance for Deploying a Prebid Server on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

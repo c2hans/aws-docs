@@ -104,3 +104,7 @@ After [Testing an action](testing-action.md), validate the action.
 1. In the navigation pane, choose **CI/CD**, and then choose **Workflows**.
 
 1. Choose the workflow with the action that you want to validate, then view **Logs** to confirm a successful run.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CodeCatalyst. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecatalyst` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

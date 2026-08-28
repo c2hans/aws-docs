@@ -203,3 +203,7 @@ However, you can use other available options without requiring a dedicated deplo
 
 **Note**
 If you’re using [version 2](https://docs.aws.amazon.com/codepipeline/latest/userguide/pipeline-types.html#:~:text=V2%20type%20pipelines%20have%20the%20same%20structure) of AWS CodePipeline with proper triggers set up on the `hotfix` branch, you still require a dedicated process to address unscheduled requests. In version 2, you can set up triggers for either push or pull requests. The execution will either be queued or executed immediately, depending on the previous state of the pipeline. However, with a dedicated pipeline, the fixes are applied immediately to the production environment, ensuring that urgent issues are resolved without delay.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

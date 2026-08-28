@@ -25,3 +25,7 @@ If you change the name of a repository from the console, notifications created b
 1. In **Events**, choose **Rules**. In **Name**, paste the name of the rule created for the notification. Choose the rule, and in **Actions**, choose **Delete**.
 
 1. (Optional) To change or delete the Amazon SNS topic used for notifications after you delete notification settings, go to the Amazon SNS console at [https://console.aws.amazon.com/sns/v3/home](https://console.aws.amazon.com/sns/v3/home). For more information, see [Clean Up](https://docs.aws.amazon.com/sns/latest/dg/CleanUp.html) in [Amazon Simple Notification Service Developer Guide](https://docs.aws.amazon.com/sns/latest/dg/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for CodeCommit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codecommit` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

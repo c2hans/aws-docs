@@ -411,3 +411,7 @@ A client error (AccessDeniedException) occurred when calling the RemoveTagsFromR
 operation: User: arn:aws:iam::111122223333:user/dmstestusr is not authorized to perform:
 dms:RemoveTagsFromResource on resource: arn:aws:dms:us-east-1:111122223333:task:RB7N24J2XBUPS3RFABZTG3
 ```
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

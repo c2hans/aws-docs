@@ -31,3 +31,7 @@ Here's an overview of how you register a domain name with Amazon Route 53:
 For more information about how to register a domain name, see [Registering a new domain](domain-register.md).
 
 If you already registered a domain name with another registrar, you can transfer the domain registration to Route 53. This isn't required to use other Route 53 features. For more information, see [Transferring registration for a domain to Amazon Route 53](domain-transfer-to-route-53.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

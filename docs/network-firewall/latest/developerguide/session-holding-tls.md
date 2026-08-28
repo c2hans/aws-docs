@@ -30,3 +30,7 @@ For best results with session holding, configure TLS rules that match on SNI in 
 
 **Note**
 With session holding enabled, both `TLS.SNI`-based rules and L3/L4 rules become match candidates. This applies to the packet that contains the `TLS.SNI` when the Client Hello is sent. Because Network Firewall treats this packet as belonging to a not-established flow, Network Firewall can match rules that use keywords such as `flow:not_established`. Your L3/L4 rules must account for this flow state to avoid unexpected behavior.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Network Firewall. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query network-firewall` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

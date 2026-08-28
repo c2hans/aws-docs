@@ -21,3 +21,7 @@ There is an issue in the latest version of the Aurora MySQL engine. After upgrad
 + Fixed an issue in binary log recovery that resulted in longer recovery times for situations with large binary log index files which can happen if binary logs rotate very often.
 + Fixed an issue in the query optimizer that generated an inefficient query plan for partitioned tables.
 + Fixed an issue in the query optimizer due to which a range query resulted in a restart of the database engine.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -103,3 +103,7 @@ As part of the forensics process, data collection and investigation should be do
 
 **Design consideration:**
 + An organization's AWS KMS key policies should allow authorized IAM principals for forensics to use the key to decrypt data in the source account and re-encrypt it in the Forensics account. Use infrastructure as code (IaC) to centrally manage all your organization's keys in AWS KMS to help ensure that only authorized IAM principals have the appropriate and least privilege access. These permissions should exist on all KMS keys that can be used to encrypt resources on AWS that could be collected during a forensics investigation. If you update the KMS key policy after a security event, the subsequent resource policy update for a KMS key that's in use might impact your business. Additionally, permission issues can increase the overall mean time to respond (MTTR) for a security event.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

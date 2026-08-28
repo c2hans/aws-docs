@@ -10,3 +10,7 @@ AWS App Runner will no longer be open to new customers starting April 30, 2026. 
 The AWS App Runner release notes for the year 2022, starting with the latest first, are listed under this page in the table of contents.
 
 For a complete list of all AWS App Runner release notes, see [App Runner release notes](relnotes.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

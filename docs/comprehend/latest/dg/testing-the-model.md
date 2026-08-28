@@ -22,3 +22,7 @@ In the following example training data, there are five labels, DOCUMENTARY, DOCU
 For auto split (where Amazon Comprehend reserves 10 percent of the training data to use for testing), if the training data contains limited examples of a specific label, the test dataset may contain zero examples of that label. For instance, if the training dataset contains 1000 instances of the DOCUMENTARY class, 900 instances of SCIENCE\_FICTION, and a single instance of the ROMANTIC\_COMEDY class, the test dataset might contain 100 DOCUMENTARY and 90 SCIENCE\_FICTION instances, but no ROMANTIC\_COMEDY instances, as there is a single example available.
 
 After you finish training your model, the training metrics provide information that you can use to decide if the model is sufficiently accurate for your needs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Comprehend. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query comprehend` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

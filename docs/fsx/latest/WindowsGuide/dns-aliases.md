@@ -35,3 +35,7 @@ For more information about configure your file system to use DNS aliases, see th
 + [Configure service principal names (SPNs) for Kerberos](step2-configure-spn-kerberos.md)
 + [Update or create a DNS CNAME record](step4-configure-dns-cname.md)
 + [Enforcing Kerberos authentication using Group Policy Objects (GPOs)](enforce-kerberos.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

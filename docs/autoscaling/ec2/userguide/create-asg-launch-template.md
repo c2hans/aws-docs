@@ -74,7 +74,7 @@ To configure Amazon EC2 instances that are launched by your Auto Scaling group, 
 
    1. Under **Instance maintenance policy**, choose whether you want to create an instance maintenance policy. You can also create this policy after your create your Auto Scaling group. Follow the directions in [Set an instance maintenance policy](set-instance-maintenance-policy.md) to create the policy.
 
-   1. Under **Additional capacity settings**, **Capacity Reservation preference**, choose whether you want to use a Capacity Reservation preference. For more information, see [Reserve capacity in specific Availability Zones with Capacity Reservations](use-ec2-capacity-reservations.md).
+   1. Under **Additional capacity settings**, **Capacity Reservation preference**, choose whether you want to use a Capacity Reservation preference. For more information, see [Use Capacity Reservations in your Auto Scaling group](use-ec2-capacity-reservations.md).
 
    1. Under **Additional settings**, **Instance scale-in protection**, choose whether to enable instance scale-in protection. For more information, see [Use instance scale-in protection to control instance termination](ec2-auto-scaling-instance-protection.md).
 
@@ -93,3 +93,7 @@ To configure Amazon EC2 instances that are launched by your Auto Scaling group, 
 You can use one of the following commands:
 + [create-auto-scaling-group](https://awscli.amazonaws.com/v2/documentation/api/latest/reference/autoscaling/create-auto-scaling-group.html) (AWS CLI)
 + [New-ASAutoScalingGroup](https://docs.aws.amazon.com/powershell/latest/reference/items/New-ASAutoScalingGroup.html) (AWS Tools for Windows PowerShell)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Auto Scaling. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query autoscaling` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -103,3 +103,7 @@ View details about updates to AWS managed policies for HealthLake from the time 
 | [AmazonHealthLakeFullAccess](#security-iam-awsmanpol-AmazonHealthLakeFullAccess) | `AmazonHealthLakeFullAccess` policy required to allow full access to HealthLake. | November, 14, 2022 |
 | [AmazonHealthLakeReadOnlyAccess](#security-iam-awsmanpol-AmazonHealthLakeReadOnlyAccess)  | `AmazonHealthLakeReadOnlyAccess` policy required for read-only access to HealthLake. | November, 14, 2022 |
 | HealthLake started tracking changes | HealthLake started tracking changes for its AWS managed policies. | November, 14, 2022 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS HealthLake. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query healthlake` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

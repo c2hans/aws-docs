@@ -25,3 +25,7 @@ The instructions on this page apply to [AWS IAM Identity Center](https://aws.ama
 1. Below the username of the user whose access you want to disable, in the **General information** section, choose **Disable user access**.
 
 1. In the **Disable user access** dialog box, choose **Disable user access**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

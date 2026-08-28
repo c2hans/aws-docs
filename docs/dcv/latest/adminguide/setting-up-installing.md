@@ -17,3 +17,7 @@ Amazon DCV server for macOS is only supported on Amazon EC2 Apple silicon instan
 + [Installing the Amazon DCV Server on Windows](setting-up-installing-windows.md)
 + [Installing the Amazon DCV Server on Linux](setting-up-installing-linux.md)
 + [Installing the Amazon DCV Server on macOS](setting-up-installing-macos.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

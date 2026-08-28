@@ -15,3 +15,7 @@ The following tutorials present complete end-to-end procedures for common tasks 
 + [Create SAML IdP with CloudFormation](tutorial_saml-idp.md)
 + [Create SAML federated role with CloudFormation](tutorial_saml-federated-role.md)
 + [Create SAML IdP and federated role with CloudFormation](tutorial_saml-idp-and-federated-role.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Identity and Access Management. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query IAM` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

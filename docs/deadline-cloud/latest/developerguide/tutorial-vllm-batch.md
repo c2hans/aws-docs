@@ -134,3 +134,7 @@ The following resources provide additional information:
 + [Task chunking for job templates](build-job-bundle-chunking.md)
 + [Benchmark LLMs with vLLM and lm-evaluation-harness](tutorial-vllm-leaderboard.md)
 + [Open Job Description environments specification on GitHub](https://github.com/OpenJobDescription/openjd-specifications/wiki/2023-09-Template-Schemas#4-environment)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

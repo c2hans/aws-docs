@@ -38,3 +38,7 @@ To delete empty directories, see [Delete a directory for WorkSpaces Personal](de
 + [Update DNS servers for WorkSpaces Personal](update-dns-server.md)
 + [Delete a directory for WorkSpaces Personal](delete-workspaces-directory.md)
 + [Set up Active Directory Administration Tools for WorkSpaces Personal](directory_administration.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workspaces` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

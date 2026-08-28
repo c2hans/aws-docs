@@ -81,3 +81,7 @@ CloudShell manages access control through AWS Identity and Access Management (IA
 Because the container and the underlying instance share the same IAM credential scope, access beyond the container boundary provides no additional AWS permissions.
 
 [Back to list of security FAQs](#cloudshell-security-faqs)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CloudShell. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cloudshell` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

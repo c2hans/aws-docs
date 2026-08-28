@@ -38,3 +38,7 @@ The following instance-level metrics are available for HyperPod. These metrics a
 | node\_gpu\_memory\_utilization | Average GPU memory utilization across all instances | node\_gpu\_memory\_utilization |
 | node\_cpu\_utilization | Average CPU utilization across all instances | node\_cpu\_utilization |
 | node\_memory\_utilization | Average memory utilization across all instances | node\_memory\_utilization |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

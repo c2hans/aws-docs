@@ -425,3 +425,7 @@ You may need to adjust [capsfilter](https://gstreamer.freedesktop.org/documentat
 Common cases are asking for a `framerate` or `resolution` that the camera does not support. Use `gst-device-monitor-1.0` in the terminal to obtain the supported `framerates`, `resolutions`, and `formats`. You can use the [videoscale](https://gstreamer.freedesktop.org/documentation/videoconvertscale/videoscale.html?gi-language=c) GStreamer element to adjust the video resolution, and [videorate](https://gstreamer.freedesktop.org/documentation/videorate/?gi-language=c) to adjust the video frame rate.
 
 To inspect the supported formats for an individual GStreamer element, type `gst-inspect-1.0 element-name` in the terminal.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Kinesis Video Streams. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kinesisvideostreams` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

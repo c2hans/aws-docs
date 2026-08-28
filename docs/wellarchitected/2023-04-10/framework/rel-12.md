@@ -16,3 +16,7 @@ After you have designed your workload to be resilient to the stresses of product
 + [REL12-BP04 Test scaling and performance requirements](rel_testing_resiliency_test_non_functional.md)
 + [REL12-BP05 Test resiliency using chaos engineering](rel_testing_resiliency_failure_injection_resiliency.md)
 + [REL12-BP06 Conduct game days regularly](rel_testing_resiliency_game_days_resiliency.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

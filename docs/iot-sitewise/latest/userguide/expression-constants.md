@@ -19,3 +19,7 @@ If you define a variable with the same name as a constant, the variable override
 | `true` | Equivalent to the number 1. In AWS IoT SiteWise, Booleans convert to their number equivalents. |
 | `false` | Equivalent to the number 0. In AWS IoT SiteWise, Booleans convert to their number equivalents. |
 | `none` | Equivalent to no value. You can use this constant to output nothing as the result of a [conditional expression](expression-conditional-functions.md). |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT SiteWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-sitewise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

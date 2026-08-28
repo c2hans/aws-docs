@@ -15,3 +15,7 @@ Elastic Beanstalk added the ability to ignore application HTTP 4xx errors when d
 Elastic Beanstalk enhanced health reporting relies on a set of rules to determine the health of your environment. Some of these rules might not be appropriate for your particular application. A common case is when frequent HTTP client (4xx) errors are expected, for example, as a result of using client-side test tools. By default, Elastic Beanstalk concludes that something is wrong, and unnecessarily degrades your environment's health status.
 
 Today's release adds the ability to configure enhanced health monitoring to ignore application HTTP 4xx errors when determining the environment's health. For details, see [Configuring Enhanced Health Rules](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/health-enhanced-rules.html) in the *AWS Elastic Beanstalk Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

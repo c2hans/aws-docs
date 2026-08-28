@@ -90,3 +90,7 @@ Use this procedure when automatic billing group creation fails during billing tr
 1. For **Pricing plan**, choose a pricing plan to associate with the billing group. To create a pricing plan, see [Creating pricing plans](create-pricingplan.md).
 
 1. Choose **Create billing group**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Billing Conductor. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query billingconductor` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

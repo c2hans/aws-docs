@@ -24,3 +24,7 @@ Complete the following procedure to delete a security group.
 1. Type **confirm** in the pop-up window, and then choose **Delete**.
 
    When you delete a security group that has assigned users, those users are automatically added to the default security group. To modify the security group assigned to users see [Edit users in AWS Wickr network](edit-users.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -224,3 +224,7 @@ After you've enabled the public network, you can view the network coverage infor
 
 **Note**
 This feature uses the Amazon Location Service to display the coverage information of your devices on an Amazon Location map. Before using Amazon Location maps, review the Terms and Conditions for Amazon Location Service. Note that AWS may transmit your API queries to your chosen third party data provider, which may be outside of the AWS Region that you are currently using. For more information, see [AWS Service Terms](https://aws.amazon.com/service-terms/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT Wireless. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-wireless` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

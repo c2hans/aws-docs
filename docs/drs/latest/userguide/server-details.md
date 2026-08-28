@@ -22,3 +22,7 @@ You can also perform a variety of actions, control replication, and launch Recov
 The **Overview** box provides a basic overview of the server's status, including whether the server is ready for recovery, any pending actions, the last recovery result (if any), and a link to the Recovery instance (if one was launched for the server).
 
 ![Overview box showing Ready status, no pending actions, Successful last recovery result, and recovery instance ID.](http://docs.aws.amazon.com/drs/latest/userguide/images/drs-new-ss12-details-overview.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

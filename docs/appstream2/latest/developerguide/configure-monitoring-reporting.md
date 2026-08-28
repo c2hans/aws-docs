@@ -16,3 +16,7 @@ For more information, see the following:
 + [Creating custom logging and CloudWatch alerting in WorkSpaces Applications](https://aws.amazon.com/blogs/desktop-and-application-streaming/creating-custom-logging-and-amazon-cloudwatch-alerting-in-amazon-appstream-2-0/)
 + [Getting started with your AWS Health Dashboard – Your account health](https://docs.aws.amazon.com/health/latest/ug/getting-started-health-dashboard.html)
 + [Monitoring AWS Health events with EventBridge ](https://docs.aws.amazon.com/health/latest/ug/cloudwatch-events-health.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

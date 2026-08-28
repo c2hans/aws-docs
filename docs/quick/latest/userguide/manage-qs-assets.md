@@ -35,3 +35,7 @@ Here are some common reasons to use the asset manager:
    + Select one or more assets, then choose the **Transfer** button to transfer the selected assets from one user or group to another. The **Transfer** button only appears after you select at least one asset. A popup window displays transferring options to apply to the users or groups you specify.
 
 When you need to share a Amazon Quick asset with 100 or more users, consider using Amazon Quick groups. For more information on Amazon Quick groups, see [Creating and managing groups in Amazon Quick](https://docs.aws.amazon.com/quicksight/latest/user/creating-quicksight-groups.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -18,3 +18,7 @@ When key metrics indicate performance is degrading, have a process in place to r
  While the management of performance incidents involves the best practices on operations detailed in the Well-Architected Framework Operational Excellence pillar, the proactive detection and automated remediation of potential performance impairment can prevent deepening a performance problem and can improve the end-user experience. When automated processes for mitigating a performance issue are not possible, having a detailed runbook in place on how the operational team should respond to a performance issue can accelerate the response to a performance incident.
 +  SAP Lens [Operational Excellence]: [Best Practice 1.8 Use automated response and recovery techniques to react to monitoring alerts](best-practice-1-8.md)
 +  Well-Architected Framework [Operational Excellence]: [Best Practices: Operate](https://docs.aws.amazon.com/wellarchitected/latest/framework/oe-operate.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

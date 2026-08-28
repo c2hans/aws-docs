@@ -22,3 +22,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/saas-architecture-fun
  While data partitioning and tenant isolation are separate topics, the data partitioning strategies you choose are likely to be influenced by the isolation model of your data. For example, you might silo some storage because that approach best aligns with the requirements of your domain or customers. Or, you might choose silo because the pool model may not allow you to enforce isolation with the level of granularity that your solution requires.
 
  Noisy neighbor can also impact your approach to isolation. Some workloads or use cases in your application may need to be kept separate to limit impacts from other tenants or to meet service level agreements (SLAs).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

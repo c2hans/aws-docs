@@ -28,3 +28,7 @@ For detailed instructions on loading data from DynamoDB into Amazon Redshift, re
 + [Loading data from a DynamoDB table](https://docs.aws.amazon.com/redshift/latest/dg/t_Loading-data-from-dynamodb.html)
 + [The COPY command](https://docs.aws.amazon.com/redshift/latest/dg/r_COPY.html)
 + [COPY examples](https://docs.aws.amazon.com/redshift/latest/dg/r_COPY_command_examples.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DynamoDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query amazondynamodb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

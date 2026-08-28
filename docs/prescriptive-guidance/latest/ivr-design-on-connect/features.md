@@ -28,3 +28,7 @@ Connect Customer provides a graphical user interface (GUI)‒based, self-service
 <a name="9999999999999999lamlong--functions.2ee206b7-8f62-56e8-81c0-cc6a6c50ac31"></a>
 
 Flows let you interact with backend systems such as order management, CRMs, ticket systems, and databases by using an AWS Lambda flow block. [This integration](https://docs.aws.amazon.com/connect/latest/adminguide/connect-lambda-functions.html) enables self-service interactions on the IVR system with an increased containment rate. You can easily automate common customer use cases such as getting updates on order status or checking credit card balances. You can also use APIs to update customer preferences in your CRM, or create tickets on their behalf.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

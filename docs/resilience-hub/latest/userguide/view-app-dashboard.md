@@ -39,3 +39,7 @@ This section lists all the alarms that you have set up in Amazon CloudWatch to m
 <a name="view-app-experiments-dashboard"></a>
 
 This section lists all fault injection experiments that you have implemented in all the applications. For more information, see [Viewing AWS FIS experiments](view-fis-experiment.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Resilience Hub. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query resilience-hub` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -116,3 +116,7 @@ This topic describes important changes to the AWS SDK for Java Developer Guide o
 |  [Work with Amazon S3](examples-s3.md)  | Added getobjects example for Amazon S3. | August 7, 2017 |
 |  [Programming asynchronously using the AWS SDK for Java 2.x](asynchronous.md)  | Added async topic. | August 4, 2017 |
 | GA release of the [AWS SDK for Java 2.x](https://aws.amazon.com/sdk-for-java/)  |  AWS SDK for Java version 2 (v2) released. | June 28, 2017 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Java. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-java` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

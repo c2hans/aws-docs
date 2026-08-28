@@ -36,6 +36,7 @@ where action is one of:
     ALTER [ COLUMN ] column_name { SET GENERATED { ALWAYS | BY DEFAULT } | SET sequence_option | RESTART [ [ WITH ] restart ] } [...]
     ALTER [ COLUMN ] column_name DROP IDENTITY [ IF EXISTS ]
     ALTER [ COLUMN ] column_name SET STORAGE { PLAIN | EXTERNAL | EXTENDED | MAIN | DEFAULT }
+    ALTER CONSTRAINT constraint_name [ DEFERRABLE | NOT DEFERRABLE ] [ INITIALLY DEFERRED | INITIALLY IMMEDIATE ]
     ADD table_constraint NOT VALID
     ADD table_constraint_using_index
     DROP CONSTRAINT [ IF EXISTS ] constraint_name [ RESTRICT | CASCADE ]
@@ -44,12 +45,20 @@ where action is one of:
 and table_constraint is:
 
     [ CONSTRAINT constraint_name ]
-    CHECK ( expression )
+    { CHECK ( expression ) |
+      FOREIGN KEY ( column_name [, ... ] ) REFERENCES reftable [ ( refcolumn [, ... ] ) ]
+        [ MATCH FULL | MATCH SIMPLE ]
+        [ ON DELETE referential_action ] [ ON UPDATE referential_action ] }
+    [ DEFERRABLE | NOT DEFERRABLE ] [ INITIALLY DEFERRED | INITIALLY IMMEDIATE ]
 
 and table_constraint_using_index is:
 
     [ CONSTRAINT constraint_name ]
     UNIQUE USING INDEX index_name
+
+and referential_action in a FOREIGN KEY/REFERENCES constraint is:
+
+    { NO ACTION | RESTRICT | CASCADE | SET NULL [ ( column_name [, ... ] ) ] | SET DEFAULT [ ( column_name [, ... ] ) ] }
 ```
 
 ## Description
@@ -80,8 +89,11 @@ For guidance on how best to use identity columns based on workload patterns, see
 **`SET STORAGE { PLAIN | EXTERNAL | EXTENDED | MAIN | DEFAULT }`**
 This form sets the storage mode for a column. For details on the available storage modes, see [Storage mode](create-table-syntax-support.md#create-table-storage) on the [`CREATE TABLE`](create-table-syntax-support.md) page.
 
+**`ALTER CONSTRAINT`**
+This form alters the attributes of an existing foreign key constraint. You can change a foreign key constraint between `DEFERRABLE` and `NOT DEFERRABLE`, and set whether it defaults to `INITIALLY DEFERRED` or `INITIALLY IMMEDIATE`. For a description of these options, see [Deferrability](create-table-syntax-support.md#create-table-fk-deferrability) on the [`CREATE TABLE`](create-table-syntax-support.md) page.
+
 **`ADD {{table_constraint}} NOT VALID`**
-This form adds a new `CHECK` constraint to a table. In Aurora DSQL, `CHECK` constraints added via `ALTER TABLE ADD CONSTRAINT` must use the `NOT VALID` option. Aurora DSQL creates the constraint but doesn't immediately validate it against existing data. This allows the constraint to be added without scanning the entire table. The constraint applies immediately to all new rows and updates.
+This form adds a new `CHECK` or `FOREIGN KEY` constraint to a table. In Aurora DSQL, `CHECK` and `FOREIGN KEY` constraints added via `ALTER TABLE ADD CONSTRAINT` must use the `NOT VALID` option. Aurora DSQL creates the constraint but doesn't immediately validate it against existing data. This allows the constraint to be added without scanning the entire table. The constraint applies immediately to all new rows and updates.
 After adding a constraint with `NOT VALID`, use `ALTER TABLE ASYNC ... VALIDATE CONSTRAINT` to validate that existing data also satisfies the constraint. The validation runs as an asynchronous DDL job. You can monitor its progress using `sys.jobs`.
 
 **`ADD {{table_constraint_using_index}}`**
@@ -130,7 +142,7 @@ New name for the table.
 Data type of the new column.
 
 **{{table\_constraint}}**
-A `CHECK` constraint definition. In Aurora DSQL, `CHECK` constraints must be added with the `NOT VALID` option using `ALTER TABLE ADD CONSTRAINT`. See [`CREATE TABLE`](create-table-syntax-support.md) for the full `CHECK` constraint syntax.
+A `CHECK` or `FOREIGN KEY` constraint definition. In Aurora DSQL, these constraints must be added with the `NOT VALID` option using `ALTER TABLE ADD CONSTRAINT`. See [`CREATE TABLE`](create-table-syntax-support.md) for the full constraint syntax.
 
 **{{constraint\_name}}**
 Name of a new or existing constraint.
@@ -155,3 +167,7 @@ The `DROP COLUMN` form does not physically remove the column, but simply makes i
 If a dropped column is referenced as an `INCLUDE` column in the primary key, the primary key definition will be updated to remove the dropped column.
 
 A table in Aurora DSQL can have at most 255 active columns at one time and a maximum of 1600 columns over the lifetime of the table. Dropping a column does not reclaim its attribute number. It removes it from the set of active columns but the dropped column continues to count against the lifetime limit of 1600 columns. For more information, see [Database limits in Aurora DSQL](CHAP_quotas.md#SECTION_database-limits).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

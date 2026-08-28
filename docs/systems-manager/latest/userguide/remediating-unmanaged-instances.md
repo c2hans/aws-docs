@@ -38,3 +38,7 @@ For information about unmanaged instance counts on the **Review node insights** 
 + [Categories of diagnosable unmanaged EC2 instance issues](diagnosing-ec2-category-types.md)
 + [Running a diagnosis and optional remediation for unmanaged EC2 instances](running-diagnosis-execution-ec2.md)
 + [Scheduling a recurring scan for unmanaged EC2 instances](schedule-recurring-ec2-diagnosis.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

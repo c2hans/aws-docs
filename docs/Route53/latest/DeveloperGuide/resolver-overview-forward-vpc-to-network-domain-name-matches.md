@@ -18,3 +18,7 @@ The following domain names are not a match:
 + nadir.example.com
 
 If the domain name in a query matches the domain name in more than one rule (such as example.com and www.example.com), VPC Resolver routes outbound DNS queries using the rule that contains the most specific domain name (www.example.com).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Route 53. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query Route53` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

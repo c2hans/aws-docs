@@ -293,3 +293,7 @@ The following table describes the fields of a flow log record.
 | `reject_reason` | The reason traffic was not served. The value is `BPA` if traffic was not served due to VPC Block Public Access feature settings. Otherwise, the field is empty. |
 
 If a field does not apply for a specific record, the record displays a '-' symbol for that entry.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Global Accelerator. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query global-accelerator` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

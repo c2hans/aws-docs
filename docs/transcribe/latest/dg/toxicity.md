@@ -26,3 +26,7 @@ Toxic speech categories include:
  Toxicity detection is only available for batch transcriptions in US English `(en-US)`.
 
  View [example output](toxicity-using.md#toxicity-using-output.title) in JSON format.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Transcribe. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query transcribe` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

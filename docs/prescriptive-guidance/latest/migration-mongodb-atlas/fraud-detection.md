@@ -16,3 +16,7 @@ The following diagram shows an example reference architecture for detecting frau
 (Adapted with permission from the .)
 
 For more information, see the MongoDB blog post [Unmasking Deception: Harnessing the Power of MongoDB Atlas and Amazon SageMaker AI Canvas for Fraud Detection](https://www.mongodb.com/resources/products/unmasking-deception-harnessing-power-atlas-amazon-sage-maker-canvas-fraud-detection).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -100,3 +100,7 @@ Consider these points about SSD decreases before creating a SnapLock volume:
 These limitations exist because ONTAP enforces a minimum retention period of 6 months for the SnapLock audit log volume, which would prevent file system deletion during that period if a SnapLock volume were moved as part of an SSD decrease operation.
 
 If you need to decrease SSD capacity on a file system with SnapLock volumes, you would need to migrate your data to a new file system with smaller SSD capacity. For more information about SSD capacity decrease operations, including limitations and considerations, see [Updating file system SSD storage and IOPS](storage-capacity-and-IOPS.md#increase-primary-storage).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

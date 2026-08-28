@@ -23,7 +23,7 @@ The generated secret ARN follows this pattern:
 arn:aws:secretsmanager:{{region}}:{{account-id}}:secret:bedrock-managedkb-oauth/{{your-prefix}}/{{connector-type}}/{{uuid}}
 ```
 
-**Permissions for the caller (CreateDataSource):** The IAM principal that calls `CreateDataSource` needs the following permissions on the secret:
+**Permissions for the caller (CreateDataSource):** The IAM principal that calls `CreateDataSource` needs the following permissions on the secret. The console user who signs in also needs Amazon Bedrock permissions to complete the user-managed setup (3LO) flow. For the complete set of IAM permissions the console user needs, see [IAM permissions for user-managed setup (3LO)](kb-managed-3lo-setup.md).
 
 ```
 {
@@ -172,3 +172,7 @@ If you run into problems during user-managed setup, match the symptom against th
 <a name="kb-managed-sharepoint-3lo-next"></a>
 
 After you complete user-managed setup, create the data source with `authType` set to `MANAGED_OAUTH2`. See [Connect a SharePoint data source](kb-managed-ds-sharepoint-connect.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

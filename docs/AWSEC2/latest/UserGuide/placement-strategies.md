@@ -49,6 +49,7 @@ The following rules apply to cluster placement groups:
   + Traffic to and from Amazon S3 buckets within the same Region over the public IP address space or through a VPC endpoint can use all available instance aggregate bandwidth.
 + You can launch multiple instance types into a cluster placement group. However, this reduces the likelihood that the required capacity will be available for your launch to succeed. We recommend using the same instance type for all instances in a cluster placement group.
 + We recommend that you reserve capacity explicitly in the cluster placement group by creating an [On-Demand Capacity Reservation in the cluster placement group](cr-cpg.md). Note that you can't reserve capacity using zonal Reserved Instances, as they can't reserve capacity explicitly in a placement group.
++ Capacity Blocks do not support placement groups. For more information, see [Capacity Blocks for ML](ec2-capacity-blocks.md).
 + Network traffic to the internet and over an Direct Connect connection to on-premises resources is limited to 5 Gbps for cluster placement groups.
 
 ## Partition placement groups
@@ -125,3 +126,7 @@ The following rules apply to precision time placement groups:
 + If you start or launch an instance in a precision time placement group and there is insufficient hardware to provide access to the enhanced Amazon Time Sync Service, the request fails. Try again later or try a different Availability Zone.
 + You cannot delete a precision time placement group that is a parent of a cluster placement group.
 + There is no additional charge for using precision time placement groups.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

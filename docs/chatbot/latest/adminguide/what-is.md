@@ -59,3 +59,7 @@ To access Amazon CloudWatch metrics, Amazon Q Developer in chat applications req
 You access and configure Amazon Q Developer in chat applications through the Amazon Q Developer in chat applications console at [https://console.aws.amazon.com/chatbot/](https://console.aws.amazon.com/chatbot/).
 
 You can also access the Amazon Q Developer in chat applications app from the [Slack app directory](https://amzn-aws.slack.com/apps/A6L22LZNH-aws-chatbot?settings=1).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Q Developer in chat applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query chatbot` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

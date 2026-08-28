@@ -27,3 +27,7 @@ If your users have application settings data or home folders data stored in Amaz
 
 **WorkSpaces Applications Usage Reports**
 You can subscribe to WorkSpaces Applications usage reports to receive detailed reports about how your users are using the service. The reports include how long users stream and which applications they launch. For more information, see [WorkSpaces Applications Usage Reports](configure-usage-reports.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkSpaces Applications. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appstream2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

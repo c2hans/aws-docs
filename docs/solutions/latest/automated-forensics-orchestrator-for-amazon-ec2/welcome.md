@@ -19,3 +19,7 @@ This Guidance is intended for deployment in an enterprise by IT infrastructure a
 
 **Note**
 We make no claim as to the suitability of Automated Forensics Orchestrator for Amazon EC2 and EKS in the detection or investigation of crime, nor the ability of data or forensics evidence captured by this Guidance to be used in a court of law. You should independently evaluate the suitability of Automated Forensics Orchestrator for Amazon EC2 and EKS for your use case.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Automated Forensics Orchestrator for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

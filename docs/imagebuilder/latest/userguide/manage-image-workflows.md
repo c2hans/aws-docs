@@ -136,3 +136,7 @@ The following are express managed workflows:
 + **express-build-image** – Express Amazon-managed AMI build workflow that reduces build time. Waits only for the instance running state instead of full EC2 status checks, and skips image metadata collection.
 + **express-build-container** – Express Amazon-managed container build workflow that reduces build time. Waits only for the instance running state instead of full EC2 status checks.
 + **express-test-image** – Express Amazon-managed AMI test workflow that reduces test time. Waits only for the instance running state instead of full EC2 status checks, and skips security scan findings collection.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for EC2 Image Builder. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query imagebuilder` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

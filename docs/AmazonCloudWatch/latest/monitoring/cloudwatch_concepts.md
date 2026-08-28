@@ -219,3 +219,7 @@ When creating an alarm, select an alarm monitoring period that is greater than o
 For more information, see [Using Amazon CloudWatch alarms](CloudWatch_Alarms.md) and [Create an alarm from a metric on a graph](create_alarm_metric_graph.md).
 
 For OpenTelemetry metrics, you can create PromQL-based CloudWatch Alarms. These alarms use PromQL queries to define alarm conditions, using the same query language available in CloudWatch Query Studio.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon CloudWatch. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonCloudWatch` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

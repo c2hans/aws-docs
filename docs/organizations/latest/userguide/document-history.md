@@ -88,3 +88,7 @@ The following table describes major documentation updates for AWS Organizations.
 | [AWS added a service-linked role to all organization accounts](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html#orgs_integrate_services-using_slrs) | A service-linked role named `AWSServiceRoleForOrganizations` is added to all accounts in an organization to enable integration between AWS Organizations and other AWS services. | October 11, 2017 |
 | [You can now remove created accounts](#document-history) | Customers can now remove created accounts from their organization, with help from AWS Support. | June 15, 2017 |
 | [Service launch](https://docs.aws.amazon.com/organizations/latest/userguide/) | Initial version of the AWS Organizations documentation that accompanied the launch of the new service. | February 17, 2017 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Organizations. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query organizations` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

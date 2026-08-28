@@ -37,3 +37,7 @@ Use the following links to download the source code for certain open-source soft
 This product includes software developed by the OpenSSL project for use in the OpenSSL Toolkit ([http://www.openssl.org/](http://www.openssl.org/)). For the relevant licenses for all dependent third-party tools, see the following links:
 + For Amazon FSx File Gateway 2021-07-07 Release: [Third-Party License](https://s3.amazonaws.com/aws-storage-gateway-terms/fsx_smb/sgw-file-fsx-smb-third-party-licenses.txt).
 + For Amazon FSx File Gateway 2021-04-06 Release: [Third-Party License](https://s3.amazonaws.com/aws-storage-gateway-terms/fsx_smb/sgw-file-fsx-smb-20210406-third-party-licenses.txt).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Storage Gateway. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query filegateway` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

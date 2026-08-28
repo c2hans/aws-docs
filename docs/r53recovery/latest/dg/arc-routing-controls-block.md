@@ -39,15 +39,6 @@ By configuring a ARC routing control execution block, you can reroute applicatio
 
 This block does not support ungraceful execution mode.
 
-## What is evaluated as part of plan evaluation
-<a name="arc-routing-controls-block-eval"></a>
-
-When Region switch evaluates your plan, Region switch performs several checks on your routing controls execution block configuration and permissions. Region switch verifies that the specified routing controls are properly configured and accessible.
-
-Region switch also validates that the plan's IAM role has the required permissions for accessing and updating routing control states. For more information about the required permissions for Region switch execution blocks, see [Identity-based policy examples for Region switch in ARC](security_iam_id-based-policy-examples-region-switch.md).
-
-The correct IAM permissions are essential for the proper functioning of the routing control execution block. If any of these validations fail, Region switch returns warnings that there are issues, and provides specific error messages to help you resolve the permissions or configuration issues. This ensures that your plan has the necessary access to manage and interact with the ARC routing controls during when this step runs during a plan execution.
-
 ## Comparing ARC routing controls and Route 53 health check execution blocks
 <a name="region-switch-compare-routing"></a>
 
@@ -68,3 +59,7 @@ Route 53 health check execution blocks do not depend on the control plane. Heal
 + Cost optimization is a priority. Route 53 health check execution blocks have lower cost than routing controls.
 
 Most customers start with Route 53 health check execution blocks as the default traffic routing mechanism and add routing controls only for their most critical applications that require the highest reliability for the traffic management mechanism.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Application Recovery Controller. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query r53recovery` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -98,3 +98,7 @@ The following metrics are related to this insight:
 + `TruncateFinishedPoint` – The transaction number up to which undo truncation is performed. This CloudWatch metric is available only for Aurora MySQL version 2.11 and higher, and version 3.08 and higher.
 
 For more information on the CloudWatch metrics, see [Instance-level metrics for Amazon Aurora](Aurora.AuroraMonitoring.Metrics.md#Aurora.AuroraMySQL.Monitoring.Metrics.instances).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon RDS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AmazonRDS` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -164,3 +164,7 @@ SELECT relname, last_analyze FROM pg_stat_all_tables;
 | View last time statistics were collected |  <pre>select owner, table_name, last_analyzed;</pre>  |  <pre>select relname, last_analyze<br />  from pg_stat_all_tables;</pre>  |
 
 For more information, see [ANALYZE](https://www.postgresql.org/docs/13/sql-analyze.html) and [The Autovacuum Daemon](https://www.postgresql.org/docs/13/routine-vacuuming.html#AUTOVACUUM) in the *PostgreSQL documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

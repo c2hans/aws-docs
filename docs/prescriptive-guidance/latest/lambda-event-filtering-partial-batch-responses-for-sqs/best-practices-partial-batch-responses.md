@@ -57,3 +57,7 @@ This type of snowball anti-pattern—where each successive Lambda invocation wor
 To avoid creating a snowball anti-pattern when configuring partial batch responses, it's best to also create a dead-letter queue. This separate queue can store messages that aren't processed successfully and help you better manage the lifecycle of your application's unprocessed messages.
 
 For more information, see [Configure a dead-letter queue using the Amazon SQS console](https://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-configure-dead-letter-queue.html) in the *Amazon SQS Developer Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Prescriptive Guidance. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query prescriptive-guidance` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

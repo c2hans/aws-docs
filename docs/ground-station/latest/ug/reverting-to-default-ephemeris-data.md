@@ -27,3 +27,7 @@ source_url: https://docs.aws.amazon.com/ground-station/latest/ug/reverting-to-de
 +  *To remove unused azimuth elevation ephemerides:* Use [DeleteEphemeris](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_DeleteEphemeris.html) to delete azimuth elevation ephemerides that are no longer needed. Note that you cannot delete an ephemeris that is currently being used by a scheduled contact.
 
  To list all azimuth elevation ephemerides in your account, use [ListEphemerides](https://docs.aws.amazon.com/ground-station/latest/APIReference/API_ListEphemerides.html). Azimuth elevation ephemerides can be identified by the `ephemerisType` field, or by the presence of a `groundStation` field instead of a `satelliteId` field in the response.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Ground Station. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ground-station` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

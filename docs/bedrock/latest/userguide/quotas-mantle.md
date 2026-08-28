@@ -82,3 +82,7 @@ You can request increases to input-tokens-per-minute and output-tokens-per-minut
 The `bedrock-mantle` quotas are independent from the `bedrock-runtime` quotas. Traffic to `bedrock-runtime.{{region}}.amazonaws.com` and traffic to `bedrock-mantle.{{region}}.api.aws` consume separate quota allocations, even when calling the same underlying model.
 
 Custom inference profile quotas, batch inference quotas, and Provisioned Throughput allocations apply only to the `bedrock-runtime` endpoint and are not exposed on the `bedrock-mantle` endpoint.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

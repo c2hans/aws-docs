@@ -66,7 +66,7 @@ aws dsql create-cluster --policy '{
         "Resource": "*",
         "Action": ["dsql:DbConnect", "dsql:DbConnectAdmin"],
         "Condition": {
-            "StringNotEquals": { "aws:SourceVpc": "vpc-123456" }
+            "StringNotEquals": { "aws:SourceVpc": "vpc-1a2b3c4d5e6f7a8b9" }
         }
     }]
 }'
@@ -92,7 +92,7 @@ policy = {
         "Resource": "*",
         "Action": ["dsql:DbConnect", "dsql:DbConnectAdmin"],
         "Condition": {
-            "StringNotEquals": { "aws:SourceVpc": "vpc-123456" }
+            "StringNotEquals": { "aws:SourceVpc": "vpc-1a2b3c4d5e6f7a8b9" }
         }
     }]
 }
@@ -123,7 +123,7 @@ String policy = """
     "Resource": "*",
     "Action": ["dsql:DbConnect", "dsql:DbConnectAdmin"],
     "Condition": {
-      "StringNotEquals": { "aws:SourceVpc": "vpc-123456" }
+      "StringNotEquals": { "aws:SourceVpc": "vpc-1a2b3c4d5e6f7a8b9" }
     }
   }]
 }
@@ -138,3 +138,7 @@ System.out.println("Cluster created: " + response.identifier());
 ```
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Aurora DSQL. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query aurora-dsql` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

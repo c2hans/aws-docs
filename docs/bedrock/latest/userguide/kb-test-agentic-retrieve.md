@@ -228,3 +228,7 @@ Keep the following in mind when using agentic retrieval:
 + Restoring a session loads conversational events with a role of `USER` or `ASSISTANT`. AgentCore Memory also accepts the `TOOL` and `OTHER` roles, which a restore does not load. For more information, see [`Conversational`](https://docs.aws.amazon.com/bedrock-agentcore/latest/APIReference/API_Conversational.html) in the *Amazon Bedrock AgentCore API Reference*.
 + `retrievalConfigs` currently accepts at most one entry, and each entry accepts a maximum of 5 `metadataFilters` expressions.
 + A `persistenceMode` of `DEFAULT` requires `generateResponse` to be `true`, because the session persists the generated answer.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

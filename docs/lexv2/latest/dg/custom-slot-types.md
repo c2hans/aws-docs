@@ -36,3 +36,7 @@ When the value entered by the user is a synonym of a slot type value, the model 
 For each slot type, you can define a maximum of 10,000 values and synonyms. Each bot can have a total number of 50,000 slot type values and synonyms. For example, you can have 5 slot types, each with 5,000 values and 5,000 synonyms, or you can have 10 slot types, each with 2,500 values and 2,500 synonyms.
 
 A custom slot type should not have the same name as the built-in slot types. For example, a custom slot type should not be named with the reserved keywords of Date, Number, or Confirmation. These keywords are reserved for built-in slot types. For a list of all built-in slot types, see [Built-in slot types](built-in-slots.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Lex. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query lexv2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

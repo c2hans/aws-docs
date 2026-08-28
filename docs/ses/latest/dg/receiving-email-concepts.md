@@ -178,3 +178,7 @@ The possible values for the headers above are listed in:
 + [virus](receiving-email-notifications-contents.md#receiving-email-notifications-contents-virusverdict-object)
 
 Now that you have an understanding of the email receiving concepts, how it works, and it's use cases, you can get started by going to [Setting up email receiving](receiving-email-setting-up.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Email Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query ses` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

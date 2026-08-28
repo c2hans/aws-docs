@@ -180,3 +180,7 @@ This release provides new Linux-based platform versions for AWS Elastic Beanstal
 |  **Ruby 2.0 with Puma version 2.9.2** <br /> * 64bit Amazon Linux 2018.03 v2.9.2 running Ruby 2.0 (Puma) *  | 2018.03.0 | Ruby 2.0.0-p648 | RubyGems 2.6.13 | Puma 2.16.0 | 3.0.0 | nginx 1.14.1 |
 |  **Ruby 2.0 with Passenger version 2.9.2** <br /> * 64bit Amazon Linux 2018.03 v2.9.2 running Ruby 2.0 (Passenger Standalone) *  | 2018.03.0 | Ruby 2.0.0-p648 | RubyGems 2.6.13 | Passenger 4.0.60 | 3.0.0 | nginx 1.14.1 |
 |  **Ruby 1.9 with Passenger version 2.9.2** <br /> * 64bit Amazon Linux 2018.03 v2.9.2 running Ruby 1.9.3 *  | 2018.03.0 | Ruby 1.9.3-p551 | RubyGems 2.6.13 | Passenger 4.0.60 | 3.0.0 | nginx 1.14.1 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Beanstalk. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query elasticbeanstalk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

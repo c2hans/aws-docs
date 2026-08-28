@@ -30,3 +30,7 @@ You can create a maximum of 20 audio selectors in one channel.
    + If you choose **Audio track selection**, then choose **Add tracks** to add a selector for each track you want to extract.
    + If you choose **Audio pid selection**, enter the PID for the audio asset.
    + If you choose **Audio language selection**, enter the three-letter ISO code for the language of the audio asset to extract. Then complete **Language selection policy**.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

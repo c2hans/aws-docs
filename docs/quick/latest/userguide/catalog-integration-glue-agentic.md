@@ -16,3 +16,7 @@ The agentic experience provides the following capabilities for Data Catalog:
 AWS Glue Data Catalog does not store primary and foreign key relationships. However, the agent can recommend inferred relationships to create multi-dataset topics. Review these recommendations before accepting them.
 
 For details on the full agentic flow including discovery, creation, relationships, and semantic inheritance, see [The agentic catalog experience](catalog-integration-agentic-flow.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Quick. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query quick` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

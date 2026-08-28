@@ -32,3 +32,7 @@ You can enable guest users for individual security groups only. To enable guest 
 1. Choose **Save changes** to save the change and make it effective for the security group.
 
    Registered users in the specific security group in your Wickr network can now interact with guest users. For more information, see [Guest users](https://docs.aws.amazon.com/wickr/latest/userguide/guest-users.html) in the *Wickr User Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Wickr. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wickr` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,3 +50,7 @@ Download and complete the Amazon GameLift Servers launch questionnaire, which is
 + [Modify FlexMatch rules](https://docs.aws.amazon.com/gameliftservers/latest/flexmatchguide/match-intro.html) or [add hosting locations](gamelift-compute.md#gamelift-compute-location) based on player latency data and revised requirements.
 + Optimize the runtime configuration to run as many games sessions as possible on each computing resource. Maximizing performance efficiency in this way can directly affect your fleet costs, because you might be able to run more server processes with the same compute resources.
 + [Use your analytics data](monitoring-overview.md) to drive continued development, improve player experience and game longevity, and optimize monetization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GameLift Servers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query gameliftservers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

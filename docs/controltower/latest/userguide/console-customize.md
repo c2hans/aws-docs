@@ -32,3 +32,7 @@ For information about AWS Regions where CfCT has deployment limitations, see [Co
 
 **Create customized member accounts in the console**
 + You can create AWS Control Tower member accounts that are customized, and you can update existing member accounts to add customizations, from the AWS Control Tower console. For more information, see [Customize accounts with Account Factory Customization (AFC)](af-customization-page.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,3 +35,7 @@ In addition:
 + If it helps you achieve any specific compliance.
 + If you need to use Multi-Region.
 + If you have different on-prem ADs and Networks for Prod/Material vs Non-Prod/Non-Material workloads, to clearly segregate b/w the workloads.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

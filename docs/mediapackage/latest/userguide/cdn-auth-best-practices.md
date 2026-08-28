@@ -11,3 +11,7 @@ Implementing AWS Elemental MediaPackage CDN authorization effectively requires f
 + **Implement regular rotation** - Rotate your secrets periodically as part of your security best practices.
 + **Monitor authorization failures** - Set up alarms for unusual patterns of authorization failures, which could indicate attempted unauthorized access.
 + **Test rotation procedures** - Regularly test your secret rotation procedures to ensure smooth transitions during actual rotations.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

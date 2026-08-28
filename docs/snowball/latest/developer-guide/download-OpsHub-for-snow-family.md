@@ -13,3 +13,7 @@ AWS Snowball Edge is no longer available to new customers. New customers should 
 ![AWS Snowball resources website showing AWS OpsHub downloads.](http://docs.aws.amazon.com/snowball/latest/developer-guide/images/snow-resources-webpage.png)
 
 1. In the **AWS OpsHub** section, choose **Download** for your operating system, and follow the installation steps.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Snowball Edge. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query snowball` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

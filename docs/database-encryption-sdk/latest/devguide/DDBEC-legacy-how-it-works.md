@@ -45,3 +45,7 @@ To verify and decrypt an item, the DynamoDB Encryption Client needs the same com
 + **Information about how the item was encrypted and signed**, including the encryption and signing algorithms. The client gets these from the [material description attribute](DDBEC-legacy-concepts.md#legacy-material-description) in the item.
 
 The [item encryptor](DDBEC-legacy-concepts.md#item-encryptor) uses all of these elements to verify and decrypt the item. It also removes the material description and signature attributes. The result is a plaintext DynamoDB item.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Encryption SDK. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query database-encryption-sdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

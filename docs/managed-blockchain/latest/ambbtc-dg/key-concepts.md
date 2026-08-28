@@ -50,3 +50,7 @@ You can't use IAM policies to restrict access to individual Bitcoin JSON-RPCs.
 + **AWS CloudTrail logging support**
 
   You can configure CloudTrail to log your Bitcoin JSON-RPCs. For more information, see [Logging Amazon Managed Blockchain (AMB) Access Bitcoin events by using AWS CloudTrail](logging-using-cloudtrail.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Managed Blockchain. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managed-blockchain` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

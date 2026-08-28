@@ -28,3 +28,7 @@ The following procedure shows how to disassociate an Amazon Route 53 health che
 1. Walk through the rest of the pages until you finish the configuration.
 
 On the **Protections** page, the health check field for your resource is set to **-**, indicating no health check association.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

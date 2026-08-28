@@ -10,7 +10,7 @@ After creating a custom agent, you can edit its configuration, view its invocati
 ## Editing a custom agent
 <a name="editing-a-custom-agent"></a>
 
-You can edit a custom agent using the form or through Chat. The form lets you update the name, system prompt, and skills. To modify the agent's tools, use Chat.
+You can edit a custom agent using the form or through Chat. The form lets you update the name, system prompt, skills, and attached memory stores. To modify the agent's tools, use Chat.
 
 **To edit a custom agent using the form:**
 
@@ -26,14 +26,15 @@ You can edit a custom agent using the form or through Chat. The form lets you up
    + **Name** – Update the agent's identifier (same constraints as creation: lowercase, hyphens, maximum 64 characters).
    + **System prompt** – Revise the agent's instructions (minimum 10 characters, maximum 50,000 characters).
    + **Skills** – Add or remove skills using the search field.
+   + **Memory stores** – Add or remove the memory stores the agent can access, using the search field.
 
 1. Choose **Save**.
 
-Fields you do not modify retain their current values. The agent's assigned tools are preserved when editing through the form.
+Fields you do not modify retain their current values. The agent's assigned tools and attached memory stores are preserved unless you change them.
 
 **To edit a custom agent using Chat:**
 
-You can update any field — including tools — by asking Chat. For example:
+You can update any field — including tools and attached memory stores — by asking the agent in chat. For example:
 
 ```
 Update weekly-health-report to also check for Lambda function errors.
@@ -45,6 +46,10 @@ Add the use_kubectl tool to my cluster-audit-agent.
 
 ```
 Change the system prompt of certificate-checker to also report certificates expiring within 30 days.
+```
+
+```
+Attach the payments-runbook memory store to certificate-checker, and remove the directives store.
 ```
 
 Chat retrieves the current agent configuration, applies your requested changes, and confirms before saving. Fields you do not mention remain unchanged.
@@ -121,3 +126,7 @@ Delete the custom agent weekly-health-report.
 ```
 
 Chat confirms the agent name and type before deleting. If the agent has active triggers, they are removed along with the agent.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS DevOps Agent. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query devopsagent` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

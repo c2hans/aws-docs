@@ -25,3 +25,7 @@ Many decisions that you make after you've decided on a default action depend on 
 + Requests that originate from countries that either you don't do business in or are the frequent source of attacks
 + Requests that include fake values in the **User-Agent** header
 + Requests that appear to include malicious SQL code
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS WAF. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query waf` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

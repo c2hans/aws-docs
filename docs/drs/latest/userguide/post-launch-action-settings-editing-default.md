@@ -49,3 +49,7 @@ source_url: https://docs.aws.amazon.com/drs/latest/userguide/post-launch-action-
  The **Action parameters** change according to the specific SSM document that is selected. Note that for the instance ID parameter, you can choose to use the launch instance ID, in which case, AWS DRS dynamically populates the value. Some predefined actions, where applicable allow to use a dynamically populated value for the volumes. This value is dynamically populated by AWS DRS with the volumes of the instance being launched.
 
 After making the required changes, select **Save**, to save the changes and **Cancel** to abort them.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elastic Disaster Recovery. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query drs` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

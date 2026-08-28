@@ -32,3 +32,7 @@ Before starting any of these tutorials, enable IAM Identity Center. For more inf
 As an additional resource, you can use these video tutorials to learn more about setting up external identity providers:
 + [Migrating between external identity providers in AWS IAM Identity Center](https://www.youtube.com/watch?v=A87tSiBdSnU)
 + [Federating your existing AWS IAM Identity Center instance with Microsoft Entra ID](https://www.youtube.com/watch?v=iSCuTJNeN6c)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IAM Identity Center. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query singlesignon` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

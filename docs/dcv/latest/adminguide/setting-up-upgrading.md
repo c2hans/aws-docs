@@ -79,3 +79,7 @@ For information about the Amazon DCV server licensing compatibility requirements
 1. After the installation is complete, confirm that the Amazon DCV server configuration is still correct. Open the file that you copied in step 4 and compare it to the `/etc/dcv/dcv.conf` file.
 
 1. Test the Amazon DCV server by starting a new Amazon DCV session. For more information, see [Starting Amazon DCV sessions](managing-sessions-start.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DCV. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dcv` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

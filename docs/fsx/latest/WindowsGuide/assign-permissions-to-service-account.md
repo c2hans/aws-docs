@@ -65,3 +65,7 @@ The Amazon FSx service account or admin group must have the [privileges necessar
 1. Select **Apply**, and then select **OK**.
 
 1. Close the **Active Directory User and Computers** MMC snap-in.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon FSx. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query fsx` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

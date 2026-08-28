@@ -39,3 +39,7 @@ Amazon Cloud Directory provides the following APIs for data retrieval.
 | <a name="clouddirectory-ListTypedLinkFacetAttributes"></a>[ListTypedLinkFacetAttributes](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListTypedLinkFacetAttributes.html) | Return a paginated list of attributes associated with typed link facet | Read |
 | <a name="clouddirectory-ListTypedLinkFacetNames"></a>[ListTypedLinkFacetNames](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_ListTypedLinkFacetNames.html) | Return a paginated list of typed link facet names that exist in a schema | Read |
 | <a name="clouddirectory-LookupPolicy"></a>[LookupPolicy](https://docs.aws.amazon.com/directoryservice/latest/APIReference/API_LookupPolicy.html) | List all policies from the root of the Directory to the object specified | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

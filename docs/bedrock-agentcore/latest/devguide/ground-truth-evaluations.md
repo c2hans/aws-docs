@@ -667,3 +667,7 @@ For details on creating custom evaluators, see [Custom evaluators](custom-evalua
 
 **Note**
 Custom evaluators that use ground truth placeholders ( `{assertions}` , `{expected_response}` , `{expected_tool_trajectory}` ) cannot be used in online evaluation configurations, because online evaluations monitor live production traffic where ground truth values are not available.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Bedrock AgentCore. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query bedrock-agentcore` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

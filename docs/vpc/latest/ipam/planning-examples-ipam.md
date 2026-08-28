@@ -34,3 +34,7 @@ The following example shows an IPAM IPv6 pool hierarchy for multiple lines of bu
 The following example shows a resource planning pool hierarchy for multiple lines of business and dev/ prod subnet pools. For more information on subnet IP address space planning using IPAM, see [Tutorial: Plan VPC IP address space for subnet IP allocations](tutorials-subnet-planning.md).
 
 ![IPAM pool hierarchy example 4.](http://docs.aws.amazon.com/vpc/latest/ipam/images/ipam-example-pool-subnet-integ.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon VPC. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query vpc` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

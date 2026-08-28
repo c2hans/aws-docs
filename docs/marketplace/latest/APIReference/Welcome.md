@@ -76,7 +76,7 @@ For information about the permissions that you need to use this API, see [AWS Ma
 + Vendor-metered tagging: Supported allocation tagging
 
  *BatchMeterUsage*
-+ Submits the metering record for a set of customers. `BatchMeterUsage` API calls are captured by AWS CloudTrail. You can use CloudTrail to verify that the software as a subscription (SaaS) metering records that you sent are accurate by searching for records with the `eventName` of `BatchMeterUsage`. You can also use CloudTrail to audit records over time. For more information, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html).
++ Submits the metering record for a set of customers. `BatchMeterUsage` API calls are captured by AWS CloudTrail. You can use CloudTrail to verify that the software as a service (SaaS) metering records that you sent are accurate by searching for records with the `eventName` of `BatchMeterUsage`. You can also use CloudTrail to audit records over time. For more information, see the [AWS CloudTrail User Guide](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/cloudtrail-concepts.html).
 + Called from: SaaS applications
 + Supported product type: SaaS
 + Vendor-metered tagging: Supports allocation tagging
@@ -91,7 +91,7 @@ For information about the permissions that you need to use this API, see [AWS Ma
 
  **Entitlement and metering for paid container products**
 
- *RegisteredUsage*
+ *RegisterUsage*
 + Provides software entitlement and metering. Paid container software products sold through AWS Marketplace must integrate with the AWS Marketplace Metering Service and call the `RegisterUsage` operation. Free and Bring Your Own License model (BYOL) products for Amazon ECS or Amazon EKS aren't required to call `RegisterUsage`. However, you can do so if you want to receive usage data in your seller reports. For more information about using the `RegisterUsage` operation, see [Container-based products](https://docs.aws.amazon.com/marketplace/latest/userguide/container-based-products.html).
 + Called from: Paid container software products
 + Supported product type: Containers
@@ -106,3 +106,7 @@ For information about the permissions that you need to use this API, see [AWS Ma
 + Amazon EKS is supported in the following: us-east-1, us-east-2, us-west-1, us-west-2, eu-west-1, eu-central-1, eu-west-2, eu-west-3, eu-north-1, ap-east-1, ap-southeast-1, ap-northeast-1, ap-southeast-2, ap-northeast-2, ap-south-1, ca-central-1, sa-east-1.
 **Note**
 For questions about adding AWS Regions for metering, contact [AWS Marketplace Seller Operations](mailto://aws.amazon.com/marketplace/management/contact-us/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Marketplace. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query marketplace` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

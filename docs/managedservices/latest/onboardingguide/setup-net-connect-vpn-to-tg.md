@@ -12,3 +12,7 @@ To attach a VPN connection to your transit gateway, you must specify the custome
 You would need to provide the BGP ASN number, static public IP address and routing Option (Static or Dynamic). Once these details are provided, AMS would create the VPN attachment and associate the attachment with the on-prem Transit Gateway routing table.
 
 For more details on Transit Gateway attachments, see [Transit Gateway VPN Attachments](https://docs.aws.amazon.com/vpc/latest/tgw/tgw-vpn-attachments.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Managed Services. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query managedservices` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

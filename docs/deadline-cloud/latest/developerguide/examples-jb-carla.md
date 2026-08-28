@@ -22,3 +22,7 @@ deadline bundle gui-submit autonomous_driving_carla
 On the *Job-specific settings* tab, set the Container Image URI to your Amazon ECR image and configure the scenario parameters (ego speeds, NPC speeds, NPC distances) and camera viewpoints.
 
 For a complete walkthrough that covers building the Docker image, submitting and monitoring the job, and reviewing the captured sensor output, see [Run an autonomous driving simulation sweep with CARLA](tutorial-carla-simulation.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Deadline Cloud. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query deadline-cloud` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -50,3 +50,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/migrating-magento-ope
 <a name="optimization"></a>
 
  Previously made architecture decisions can also be revisited post-migration. For example, if you used a rehost approach, you can evaluate and re-platform post-migration services, or right-size services based on current and forecasted load. This period of time is an excellent period to evaluate potential opportunities for reserved instance purchases, which offer a discount to service cost in trade for commitment to use a service for a period of time (ideal for Amazon RDS, Amazon ElastiCache and permanent Amazon EC2 instances in production).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -29,3 +29,7 @@ The following script detaches all volumes attached to an instance, and then crea
 1. Download the [RestoreVssSnapshotSampleScript.zip](https://docs.aws.amazon.com/systems-manager/latest/userguide/samples/RestoreVssSnapshotSampleScript.zip) file and extract the file contents.
 
 1. Open `RestoreVssSnapshotSampleScript.ps1` in a text editor and edit the sample call at the bottom of the script with a valid EC2 instance ID and EBS snapshot ID, and then run the script from PowerShell.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EC2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query AWSEC2` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

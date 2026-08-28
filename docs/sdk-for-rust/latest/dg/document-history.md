@@ -16,3 +16,7 @@ This topic describes important changes to the AWS SDK for Rust Developer Guide o
 | [General availability of the AWS SDK for Rust](#document-history) | Updated the guide to include new security information, new and updated code examples, new details on unit testing with examples, and other new and updated content for the new General Availability release of the SDK. | November 27, 2023 |
 | [Enforcing a minimum TLS version](#document-history) | Added information about how to enforce a version of TLS in the SDK. | May 4, 2022 |
 | [AWS SDK for Rust developer preview release](#document-history) |  [Developer preview release](https://github.com/awslabs/aws-sdk-rust/releases)  | December 2, 2021 |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS SDK for Rust. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sdk-for-rust` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

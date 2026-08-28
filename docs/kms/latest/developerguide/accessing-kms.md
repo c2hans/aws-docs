@@ -75,3 +75,7 @@ When you perform AWS KMS API calls, there might be a brief delay before the chan
 We recommend that you configure a retry strategy on your AWS KMS clients to automatically retry operations after a brief waiting period. For more information, see [Retry behavior](https://docs.aws.amazon.com/sdkref/latest/guide/feature-retry-behavior.html) in the AWS SDKs and Tools Reference Guide.
 
 For grant related API calls, you can [use a grant token](using-grant-token.md) to avoid any potential delay and use the permissions in a grant immediately. For more information, see [Eventual consistency (for grants)](grants.md#terms-eventual-consistency).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS KMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query kms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

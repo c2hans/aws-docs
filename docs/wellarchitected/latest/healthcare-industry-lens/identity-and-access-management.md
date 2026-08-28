@@ -52,3 +52,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
  Control access to managed file systems through narrowly scoped security groups to prevent unauthorized resources from connecting to the file system.
 
  Sensitive data stored in managed database services, such as Amazon Aurora, Amazon Relational Database Service, Amazon Redshift, and Amazon DynamoDB, implement authorization rules using a combination of IAM permissions and any additional authorization mechanisms available in the AWS service. For example, Amazon Redshift supports access controls as the column-level to limit users access to columns that may contain sensitive data. The AWS documentation for each managed database service contains a section titled Identity and Access Management which documents the access configuration options.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

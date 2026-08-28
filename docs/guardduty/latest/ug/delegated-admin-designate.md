@@ -53,3 +53,7 @@ Choose a preferred access method to designate a delegated GuardDuty administrato
 1. (Recommended) repeat the preceding steps to designate the delegated GuardDuty administrator account in each AWS Region where you have GuardDuty enabled.
 
 ------
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon GuardDuty. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query guardduty` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -12,3 +12,7 @@ MediaLive has timecodes for the input pipeline and the output pipeline. The two 
 + [Configuring the start time for the output timecode](timecode-configure-source.md)
 + [Including timecode metadata in the output](timecode-configure-metadata.md)
 + [Burning the timecode into output](timecode-configure-burnin.md)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for MediaLive. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query medialive` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

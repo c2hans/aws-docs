@@ -160,3 +160,7 @@ How you define the output value depends on the action. For example, with `aws:ex
 In the JSON response object, the instance `State` is nested in an `Instances` object, which is nested in the `Reservations` object. To return the value of the instance `State`, use the following string for the `Selector` so the value can be used in our output: **$.Reservations[0].Instances[0].State.Name**.
 
 To reference an output value in subsequent actions of your runbook's workflow, the following format is used: `{{ {{StepName}}.{{NameOfOutput}} }}`. For example, **{{ GetInstanceState.InstanceState }}**. In the visual design experience, you can choose output values to use in subsequent actions using the dropdown for the input. When using outputs in subsequent actions, the data type of the output must match the data type for the input. In this example, the `InstanceState` output is a `String`. Therefore, to use the value in a subsequent action's input, the input must accept a `String`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Systems Manager. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query systems-manager` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

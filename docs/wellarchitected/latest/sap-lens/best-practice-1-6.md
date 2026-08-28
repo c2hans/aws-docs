@@ -24,3 +24,7 @@ Configure your workload to provide information about the status (for example, re
  An SAP workload is typically dependent on several foundational enterprise services to be healthy for business users. Consider these foundation services in your monitoring approach and tools. Example foundational services include Direct Connect for on-premises system connectivity, Active Directory for authentication/SSO, Network Time Protocol (NTP) for time synchronization, antivirus services and connectivity to an operating system patch repository (for example, Microsoft Windows Update or SUSE patching).
 +  AWS Documentation: [Collect metrics and logs from Amazon EC2 instances and on-premises servers with the CloudWatch Agent](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/Install-CloudWatch-Agent.html?ref=wellarchitected)
 +  AWS Documentation: [Enhanced monitoring capabilities for AWS Direct Connect](https://docs.aws.amazon.com/directconnect/latest/UserGuide/monitoring-cloudwatch.html)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

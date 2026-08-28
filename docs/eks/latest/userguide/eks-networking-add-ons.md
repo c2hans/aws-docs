@@ -39,3 +39,7 @@ When you deploy Kubernetes service objects of type `loadbalancer`, the controlle
 This controller lets you connect services across multiple Kubernetes clusters using the [Kubernetes gateway API](https://gateway-api.sigs.k8s.io/). The controller connects Kubernetes services running on Amazon EC2 instances, containers, and serverless functions by using the [Amazon VPC Lattice](https://docs.aws.amazon.com/vpc-lattice/latest/ug/what-is-vpc-service-network.html) service. For more information, see the [AWS Gateway API Controller](https://www.gateway-api-controller.eks.aws.dev/) documentation.
 
 For more information about add-ons, see [Amazon EKS add-ons](eks-add-ons.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon EKS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query eks` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

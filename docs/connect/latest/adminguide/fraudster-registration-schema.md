@@ -90,3 +90,7 @@ This is not an exhaustive list.
     + `NEW_FRAUDSTER`: The Fraudster was newly enrolled into the system.
   + `GeneratedFraudsterId`: The service-generated identifier for the fraudster who was registered. In case the `RegistrationStatus` is `DUPLICATE_SKIPPED`, this is the identifier of the fraudster already in the domain that is the closest match to the given fraudster.
   + `FraudsterSimilarityScore`: An optional field that is populated when the fraudster registration is skipped due to it being a duplicate. This represents the similarity of the given fraudster with the closest matching fraudster already existing in the domain.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

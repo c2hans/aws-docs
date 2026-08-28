@@ -13,3 +13,7 @@ source_url: https://docs.aws.amazon.com/sap/latest/sap-netweaver/sizing.html
 Since it is easy to scale up or scale down your Amazon EC2 instances on AWS, we recommend that you consider the following guidelines when sizing your SAP environment on AWS.
 + Do not add too much capacity to meet future demand.
 + Account for the SAP Quick Sizer buffer. SAP Quick Sizer tools provide sizing guidance based on assumptions that for 100% load (as per your inputs to tool) system use will not exceed 65%. Therefore, there is a fair amount of buffer already built into SAP Quick Sizer recommendation. See [SAP’s Quick Sizer guidance](https://apps.support.sap.com/sap(bD1lbiZjPTAwMQ==)/bc/bsp/sap/qs_oberflaeche/pdf1.htm?area=QSDOC&filename=QS_for_beg_classic.pdf) for details.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for SAP on AWS Technical Documentation. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sap` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

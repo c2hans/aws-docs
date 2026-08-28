@@ -318,3 +318,7 @@ To use refactoring effectively in CI/CD pipelines:
 For information on options and arguments for the CDK CLI `cdk refactor` command, see ` cdk refactor `.
 
 To get started with the CDK Toolkit Library’s `refactor` action, see [Perform programmatic actions using the CDK Toolkit Library](toolkit-library.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -182,3 +182,7 @@ Adding a TXT record that already contains the domain name, such as \_amazonses.e
 
 Amazon WorkMail reports that the MX record is **Inconsistent**
 When migrating from existing mail servers, the MX record might return a status of **Inconsistent**. Update your MX record to point to Amazon WorkMail instead of pointing to your previous mail server. The MX record is also returned as **Inconsistent** when a third-party email proxy is used along with Amazon WorkMail. If this is the case, it is safe to ignore the **Inconsistent** warning.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon WorkMail. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query workmail` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

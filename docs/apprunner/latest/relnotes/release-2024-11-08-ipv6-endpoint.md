@@ -34,3 +34,7 @@ In addition to public endpoint support, App Runner now extends IPv6 compatibilit
 
 **Note**
 The previous set of endpoints (apprunner.{{region}}.amazonaws.com) will remain active and continue to receive traffic; however, they support only IPv4.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for App Runner. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query apprunner` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

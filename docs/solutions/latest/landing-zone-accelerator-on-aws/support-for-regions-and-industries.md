@@ -28,3 +28,7 @@ The LZA Universal Configuration was designed in coordination with AWS teams repr
 The LZA Universal Configuration helps establish infrastructure readiness with security, compliance, and operational capabilities. It is important to note that the LZA solution will not, by itself, make your workload compliant, which is determined by customers and their compliance stakeholders. It provides the foundational infrastructure from which additional complementary solutions can be integrated.
 
 You must review, evaluate, assess, and approve the solution in compliance with your organization’s particular security features, tools, and configurations. It is the sole responsibility of you and your organization to determine which regulatory requirements are applicable and to make sure that you comply with all requirements. This solution does not help you comply with the non-technical administrative requirements.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Landing Zone Accelerator on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

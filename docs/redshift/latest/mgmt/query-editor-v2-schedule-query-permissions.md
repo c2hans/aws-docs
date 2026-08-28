@@ -59,3 +59,7 @@ For the IAM user logged into query editor v2, edit the IAM user using the IAM co
 
 For the IAM role that you specify to allow the scheduled query to run, edit the IAM role using the IAM console ([https://console.aws.amazon.com/iam/](https://console.aws.amazon.com/iam/)).
 + Attach the `AmazonRedshiftDataFullAccess` and `AmazonEventBridgeFullAccess` AWS managed policies to the IAM role. The `AmazonRedshiftDataFullAccess` managed policy only allows `redshift-serverless:GetCredentials` permission for Redshift Serverless workgroups that are tagged with the key `RedshiftDataFullAccess`.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Redshift. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query redshift` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

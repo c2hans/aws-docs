@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/multi-tenant-saas-sto
  Beyond the mechanics of achieving multitenancy, think about how the profile of each AWS storage technology can fit with the varying needs of your multitenant application’s functionality. Consider how tenants will access the data and how the shape of that data will need to evolve to meet the needs of your tenants. The more you can decompose your application into autonomous services, the better positioned you are to pick and choose separate storage strategies for each service.
 
  After exploring these services and portioning schemes, you should have a much better sense of the patterns and inflection points that will guide your selection of a multitenant storage strategy. AWS equips SaaS providers with a rich palette of services and constructs that can be combined to address any number of multitenant storage needs.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

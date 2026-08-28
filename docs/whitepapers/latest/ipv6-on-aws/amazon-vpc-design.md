@@ -63,3 +63,7 @@ Be aware that if you’re trying to add IPv6 to an existing or migrated workload
 The use of DHCP is optional, and you may statically configure the host OS with an IP address. However, the VPC anti-spoofing mechanism enforces the IP address configured on the network interface controller (NIC) to match the one configured on the underlying elastic network interface. AWS recommends enabling DHCP, even for resources that require static IP addresses, and managing static IP assignment at the elastic network interface level.
 
  The EC2 instances launched in IPv6-only subnets and the Elastic Network Interfaces (ENIs) attached to them are also assigned IPv6 addresses through the DHCPv6 options set, from the IPv6 CIDR block of your subnet. These instances do not require private IPv4 addresses to be assigned.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

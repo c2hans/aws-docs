@@ -14,3 +14,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/patterns-for-ingestin
  [AWS Transfer Family](https://aws.amazon.com/aws-transfer-family/) securely scales your recurring business-to-business file transfers to Amazon S3 and Amazon EFS using SFTP, FTPS, and FTP protocols.
 
  You can also write your own scripts using [AWS Command Line Interface (CLI)](https://aws.amazon.com/cli/) or [AWS SDK](https://aws.amazon.com/tools/) to transfer the exported files over to Amazon S3 at a regular interval.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

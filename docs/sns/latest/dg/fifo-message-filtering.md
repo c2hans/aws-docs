@@ -19,3 +19,7 @@ In the [auto parts price management example use case](fifo-example-use-case.md),
 SNS FIFO topics support a variety of matching operators, including attribute string values, attribute numeric values, and attribute keys. For more information, see [Amazon SNS message filtering](sns-message-filtering.md).
 
 SNS FIFO topics don't deliver duplicate messages to subscribed endpoints. For more information, see [Amazon SNS message deduplication for FIFO topics](fifo-message-dedup.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Simple Notification Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sns` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

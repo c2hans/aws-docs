@@ -189,3 +189,7 @@ For more information about `CreateOpsMetadata` and related APIs, see the [Amazon
 You can automate the process of patching your Launch Wizard instances with security and other types of updates. From the **Application information** page of the Application Manager console, choose **Patch**. You are taken to the SSM Patch Manager console **Patch now** page, where patch management options for your application instances are preselected.
 
 For more information about how Patch Manager determines which patches to install and how it installs them, see [How Patch Manager operations work](https://docs.aws.amazon.com/systems-manager/latest/userguide/patch-manager-how-it-works.html).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Launch Wizard. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query launchwizard` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

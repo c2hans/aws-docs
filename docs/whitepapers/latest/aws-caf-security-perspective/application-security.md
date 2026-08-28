@@ -55,3 +55,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-caf-security-pers
  Infrastructure should be ephemeral. Applications should rely [on blue/green deployments](https://docs.aws.amazon.com/prescriptive-guidance/latest/patterns/perform-a-canary-based-deployment-using-the-blue-green-strategy-and-aws-lambda.html) to roll out fixes, patches, and updates. Initiate [canary deployments](https://wa.aws.amazon.com/wellarchitected/2020-07-02T19-33-23/wat.concept.canary-deployment.en.html) for multiple releases per day across multiple teams. Make your application more security self-aware to perceive attackers attempting to bypass business logic or fuzzing input. Use CloudWatch Alarms to generate alerts.
 
  Resilience of your infrastructure should be tested using Chaos Engineering with [AWS Fault Injection Service](https://aws.amazon.com/fis/).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

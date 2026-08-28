@@ -20,3 +20,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/run-semiconductor-wor
 **QuickSight dashboard showing wafer defect types and foundry location **
 
  In this example, the dashboard shows the defect type and the location of the fab where the defect occurred. From this data, it appears that defects are occurring about the same rate and type across all of the fabs. If, for example, there was an increase in defects at a specific fab when fabrication started on your design, this may indicate a problem with the PDK or another design issue. With this insight, you can make decisions about designs in-flight, that could result in reduced re-spins and increased fabrication yields.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

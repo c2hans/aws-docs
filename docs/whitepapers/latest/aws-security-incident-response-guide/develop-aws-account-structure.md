@@ -16,3 +16,7 @@ source_url: https://docs.aws.amazon.com/whitepapers/latest/aws-security-incident
  The following diagram displays a sample account structure including a forensics OU with per-Region forensics accounts:
 
 ![Diagram of a per-region account structure for incident response](http://docs.aws.amazon.com/whitepapers/latest/aws-security-incident-response-guide/images/incident-response-account-structure.png)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Whitepapers. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query whitepapers` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

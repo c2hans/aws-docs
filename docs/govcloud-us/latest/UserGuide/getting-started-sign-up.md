@@ -73,3 +73,7 @@ Software vendors who want to be listed in the AWS Marketplace for AWS GovCloud (
 <a name="closing-accounts"></a>
 
 For instructions on how to close an AWS GovCloud (US) account, see [Closing an AWS GovCloud (US) account](Closing-govcloud-account.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS GovCloud (US). To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query govcloud-us` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

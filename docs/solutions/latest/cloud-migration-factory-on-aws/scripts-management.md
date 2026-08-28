@@ -214,3 +214,7 @@ Optional
  **UpdateUrl** - Provide a URL where the script package’s source is available for providing updates. Currently this is for reference only.
 
  **SchemaExtensions** - A list of attributes that the Python script requires to be in the schema to store output or retrieve additional data. Each attribute must be specified in the AWS CMF Attribute definition format. Required properties for each attribute are **Schema**, **Name, Description** and **Type**. All other properties are optional. Any new attributes will be automatically added to the schema when the script is initially loaded, and changes to SchemaExtensions will not be processed for new versions of the script. If this is required for a new script to be added, manual updates to the schema must be made.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Cloud Migration Factory on AWS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query solutions` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

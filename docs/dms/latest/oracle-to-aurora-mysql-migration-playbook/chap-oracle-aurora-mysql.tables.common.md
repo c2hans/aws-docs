@@ -315,3 +315,7 @@ Universal row identifier, or `UROWID`, is a single Oracle data type that support
  *Recommended actions*: MySQL doesn’t have a comparable data type. You can use `VARCHAR(n)` as a partial data type equivalent. However, if you are using `UROWID` data types in your code, modifications may be necessary.
 
 For more information, see [Schema Conversion Tool Documentation](https://docs.aws.amazon.com/SchemaConversionTool/index.html) and [Data Types](https://dev.mysql.com/doc/refman/5.7/en/data-types.html) in the *MySQL documentation*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Database Migration Service. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query dms` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

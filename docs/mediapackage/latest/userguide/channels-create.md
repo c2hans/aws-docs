@@ -71,3 +71,7 @@ You can't change the output locking mode after you create the channel. Non-epoch
 To permit downstream video players and content delivery networks (CDNs) to request content playback from MediaPackage, you must add an origin endpoint to a channel.
 
 For instructions on adding endpoints to a channel from the MediaPackage console, see [Working with origin endpoints in AWS Elemental MediaPackage](endpoints.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Elemental MediaPackage V2. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query mediapackage` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

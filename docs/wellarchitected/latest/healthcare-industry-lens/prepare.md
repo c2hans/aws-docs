@@ -88,3 +88,7 @@ source_url: https://docs.aws.amazon.com/wellarchitected/latest/healthcare-indust
  **Create and document a policy and procedure aligned to each control and safeguard**
 
  Organizations that are hosting and processing sensitive healthcare data should have a documented policy that aligns with each control or safeguard in place to secure the data. In addition, each policy should have an associated procedure document that outlines how the policy will be implemented. These policy and procedure documents will help educate employees on the safeguards used, and can help demonstrate your compliance posture to your stakeholders. These documents help create a stronger culture of compliance for your organization.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Well-Architected. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query wellarchitected` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

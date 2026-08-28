@@ -46,3 +46,7 @@ This tool helps your partners investigate their customer's Route 53 managed dom
 <a name="networking-vpc-overview"></a>
 
 The Amazon Virtual Private Cloud (Amazon VPC) Security Groups Lookup tool simplifies the task of listing all VPC security groups within your AWS account. It offers a quick and efficient way to gather essential information about the security groups in use, aiding in the management and oversight of your VPC configurations. Whether you need to verify security settings or ensure compliance, this tool provides an essential asset for VPC security management.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Diagnostic Tools. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query diagnostic-tools` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

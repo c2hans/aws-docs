@@ -22,3 +22,7 @@ Amazon CloudSearch provides the following APIs for data retrieval.
 | <a name="cloudsearch-ListTags"></a>[ListTags](https://docs.aws.amazon.com/cloudsearch/latest/developerguide/API_ListTags.html) | Displays all of the resource tags for an Amazon CloudSearch domain | Read |
 | <a name="cloudsearch-search"></a>[search](https://docs.aws.amazon.com/cloudsearch/latest/developerguide/configuring-access.html#cloudsearch-actions) | Allows access to the search operations | Read |
 | <a name="cloudsearch-suggest"></a>[suggest](https://docs.aws.amazon.com/cloudsearch/latest/developerguide/configuring-access.html#cloudsearch-actions) | Allows access to the suggest operations | Read |
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for none. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query online-register` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

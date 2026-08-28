@@ -23,3 +23,7 @@ However, when working with large arrays or multiple array fields within a collec
 + Create multi-key index if it is necessary and limit the number of fields in the array.
 + Limit the number of multi key indexes on the collection
 + Consider modifying your [data model](https://skillbuilder.aws/learn/B4KABYUY33/data-modeling-for-amazon-documentdb/2E2C6J83TQ)
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon DocumentDB. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query documentdb` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -230,3 +230,7 @@ You can create your AWS IoT Greengrass V2 Hello World component once you have ge
   ```
 
 For detailed information about creating a Hello World recipe, see [Create your first component](https://docs.aws.amazon.com/greengrass/v2/developerguide/getting-started.html#create-first-component) in the AWS IoT Greengrass documentation.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

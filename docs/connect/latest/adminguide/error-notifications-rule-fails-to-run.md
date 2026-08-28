@@ -66,3 +66,7 @@ For information about `ASSIGN_CONTACT_CATEGORY`, see [Error notifications: When 
 When an action fails, the error notification service collects the reason codes from the supported actions. For more information about the reason codes for Task and EventBridge action failures, see the following topics:
 + For reason codes for Task action failures, see [Errors](https://docs.aws.amazon.com/connect/latest/APIReference/API_StartTaskContact.html#API_StartTaskContact_Errors) in the **StartTaskContact** API topic in the *Connect Customer API Reference Guide*.
 + For reason codes for EventBridge action failures, see [Errors](https://docs.aws.amazon.com/eventbridge/latest/APIReference/API_PutEvents.html#API_PutEvents_Errors) in the **PutEvents** API topic in the *Amazon EventBridge API Reference Guide*.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon Connect Customer. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query connect` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

@@ -35,3 +35,7 @@ When you jump a baseline version, you must update accounts after your landing zo
 In contrast, if you upgrade from 3.1 to 3.3, you would have to update accounts, because the baseline version is 4.0, which encompasses 3.2 to 3.3.
 
 For more information about the relationship between landing zone versions and baselines, see [Compatibility of OU baselines and landing zone versions](table-of-baselines.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Control Tower. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query controltower` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

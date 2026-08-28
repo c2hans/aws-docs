@@ -35,3 +35,7 @@ For example, if you specify the `ContainerEntrypoint` to be `[python3, -v, /proc
 + You must use the exec form of the `ENTRYPOINT` instruction in your Dockerfile (`ENTRYPOINT` `["executable", "param1", "param2"])` instead of the shell form (`ENTRYPOINT`` command param1 param2`). This lets your processing container receive `SIGINT` and `SIGKILL` signals, which Processing uses to stop processing jobs with the `StopProcessingJob` API.
 + `/opt/ml` and all its subdirectories are reserved by SageMaker AI. When building your Processing Docker image, don't place any data required by your processing container in these directories.
 + If you plan to use GPU devices, make sure that your containers are nvidia-docker compatible. Include only the CUDA toolkit in containers. Don't bundle NVIDIA drivers with the image. For more information about nvidia-docker, see [NVIDIA/nvidia-docker](https://github.com/NVIDIA/nvidia-docker).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon SageMaker. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sagemaker` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

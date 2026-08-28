@@ -207,3 +207,7 @@ In general, Maven snapshots work in the same way as Maven release versions when 
 1. Don't publish builds of a snapshot version such as `1.0-SNAPSHOT` in `R`, if `1.0-SNAPSHOT` exists in `U`.
 
 1. Use CodeArtifact package origin controls to disable upstreams on that package in `R`. With the latter setting, you can publish builds of `1.0-SNAPSHOT` in `R`, but it will also prevent `R` from getting any other versions of that package from `U` that aren't already retained.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS CodeArtifact. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query codeartifact` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

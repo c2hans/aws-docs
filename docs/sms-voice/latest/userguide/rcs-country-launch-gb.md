@@ -112,3 +112,7 @@ The United Kingdom approval process includes the following steps:
 Because each carrier has an independent approval process, your agent may reach PARTIAL status (some carriers approved) before all carriers complete their review. You can begin sending RCS messages to recipients on approved carriers while waiting for remaining approvals.
 
 For general compliance guidance that applies to all countries, see [RCS country launch compliance guide](rcs-country-launch-compliance.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS End User Messaging SMS. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query sms-voice` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

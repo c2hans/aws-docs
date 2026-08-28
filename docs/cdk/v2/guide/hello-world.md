@@ -1506,3 +1506,7 @@ For additional resources, see the following:
 + Explore [Examples](https://github.com/aws-samples/aws-cdk-examples) of using the AWS CDK.
 
 The AWS CDK is an open-source project. To contribute, see to [Contributing to the AWS Cloud Development Kit (AWS CDK)](https://github.com/aws/aws-cdk/blob/main/CONTRIBUTING.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS Cloud Development Kit. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query cdk` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

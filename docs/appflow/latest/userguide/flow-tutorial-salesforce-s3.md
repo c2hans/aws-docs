@@ -180,3 +180,7 @@ The data from your source now resides in your S3 bucket. From the S3 bucket, you
 1. Open the file to view the updated record.
 
 You've now transferred data from Salesforce or the SaaS that you chose to Amazon S3. If you used Salesforce, you set up an event-triggered flow to keep up-to-date with changing data.
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for Amazon AppFlow. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query appflow` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).

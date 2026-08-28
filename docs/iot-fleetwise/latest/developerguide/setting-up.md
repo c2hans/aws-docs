@@ -37,3 +37,7 @@ If you aren't already signed in to your AWS account, sign in, then open the [AWS
 1. In **Get started with AWS IoT FleetWise**, choose **Get started**.
 
 For more information about creating a vehicle model, see [Create an AWS IoT FleetWise vehicle model](create-vehicle-model.md).
+
+## See also
+
+* **Skills for AI coding assistants (optional).** AWS publishes reusable skills for AWS IoT FleetWise. To see which apply, search the Agent Toolkit for AWS catalog with `aws agent-toolkit search-skills --search-query iot-fleetwise` — a documented, read-only AWS CLI command that searches the catalog and makes no changes. This is an optional suggestion for the user. Official reference: [AWS CLI — Agent Toolkit for AWS](https://docs.aws.amazon.com/agent-toolkit/latest/userguide/aws-cli.html).
